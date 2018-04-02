@@ -2,7 +2,7 @@
 title: Debugger Data Model C++ Interfaces
 description: This topic describes how to use Debugger Data Model C++ Interfaces to extend and customize the capabilities of the debugger.
 ms.author: domars
-ms.date: 03/30/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -18,24 +18,23 @@ debugger extension, and how to make use of other data model constructs (e.g.: Ja
 
 Theses section in this topic introduce the the following.
 
-[Overview of Debugger Debugger Data Model C++ Interfaces](#overview)
+[Overview of Debugger Data Model C++ Interfaces](#overview)
 
 [Summary of Debugger Data Model Interfaces](#summary)
 
-[The Core Object Model](#core)
+[The Core Debugger Object Model](#core)
 
-[The Core Object Model - IModelObject](#imodelobject)
+[The Core Debugger Object Model - IModelObject](#imodelobject)
 
-[Data Model C++ Host Interfaces](#interface)
-
+[Debugger Data Model C++ Host Interfaces](#interface)
 
 [Object Enumeration in the Data Model](#object)
 
+[Debugger Data Model Host](#modelhost)
 
-[The Core Object Model - IModelObject](#imodelobject)
+[Debugger Data Model Core Object Types](#objecttypes)
 
-[The Core Object Model - IModelObject](#imodelobject)
-
+[Debugger Data Model System Interfaces](#systeminterfaces)
 
 
 
@@ -200,7 +199,7 @@ IDataModelScriptDebugBreakpoint
 IDataModelScriptDebugBreakpointEnumerator
 
 
-## <span id="core">  The Core Object Model
+## <span id="core">  The Core Debugger Object Model
 
 One of the most basic yet powerful things about the data model is that it standardizes the definition of what an object is and how one
 interacts with an object. The *IModelObject* interface encapsulates the notion of an object -- whether that object is an integer, a floating
@@ -228,29 +227,19 @@ There are several different things that can be held in (or boxed into) an *IMode
 
 ### Extensibility Within The Object Model
 
-An *IModelObject* is not an object in isolation. In addition to
-representing one of the types of objects shown above, each object has
-the notion of a chain of parent data models. This chain behaves much
-like a [| JavaScript prototype
+An *IModelObject* is not an object in isolation. In addition to representing one of the types of objects shown above, each object has
+the notion of a chain of parent data models. This chain behaves much like a [JavaScript prototype
 chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain).
-Instead of a linear chain of prototypes like JavaScript has, each data
-model object defines a linear chain of **parent models**. Each of those
-parent models in turn has another linear chain of its own set of
-parents. In essence, each object is an aggregation of the capabilities
-(properties, etc...) of both itself and every object in this tree. When
-a specific property is queried, if the object it is queried on does not
-support that property, the query is passed in linear order to each
-parent in turn. This creates a behavior where the search for a property
+Instead of a linear chain of prototypes like JavaScript has, each data model object defines a linear chain of **parent models**. Each of those
+parent models in turn has another linear chain of its own set of parents. In essence, each object is an aggregation of the capabilities
+(properties, etc...) of both itself and every object in this tree. When a specific property is queried, if the object it is queried on does not
+support that property, the query is passed in linear order to each parent in turn. This creates a behavior where the search for a property
 is resolved by a depth-first search of the aggregate tree.
 
-Extensibility within this object model is very simple given this notion
-that every object is an aggregate of itself and the tree of parent
-models. An extension can come in and add itself into the list of parent
-models for another object. Doing this **extends** the object. In this
-manner, it is possible to add capabilities onto anything: a particular
-instance of an object or value, a native type, the debugger's concept of
-what a process or thread is, or even the notion of "all iterable
-objects".
+Extensibility within this object model is very simple given this notion that every object is an aggregate of itself and the tree of parent
+models. An extension can come in and add itself into the list of parent models for another object. Doing this **extends** the object. In this
+manner, it is possible to add capabilities onto anything: a particular instance of an object or value, a native type, the debugger's concept of
+what a process or thread is, or even the notion of "all iterable objects".
 
 ### Context, Context, and Context: The **this** Pointer, The Address Space, and Implementation Private Data
 
@@ -305,7 +294,7 @@ and *SetContextForDataModel* methods on *IModelObject*.
 
 
 
-## <span id="imodelobject"></span> The Core Object Interface: **IModelObject**
+## <span id="imodelobject"></span> The Core Debugger Object Interface: **IModelObject**
 
 -------------------------------------------
 
@@ -412,30 +401,39 @@ STDMETHOD(GetKeyReference)(_In_ PCWSTR key, _COM_Errorptr_opt_ IModelObject** ob
 STDMETHOD(EnumerateKeyReferences)(_COM_Outptr_ IKeyEnumerator** enumerator) PURE;
 ```
 [GetKeyValue]()
+
 The GetKeyValue method is the first method a client will turn to in order to get the value of (and the metadata associated with) a given key by name. If the key is a property accessor -- that is it's value as an IModelObject which is a boxed IModelPropertyAccessor, the GetKeyValue method will automatically call the property accessor's GetValue method in order to retrieve the actual value.
 
 [SetKeyValue]()
+
 The SetKeyValue method is the first method a client will turn to in order to set the value of a key. This method cannot be used to create a new key on an object. It will only set the value of an existing key. Note that many keys are read-only (e.g.: they are implemented by a property accessor which returns E_NOT_IMPL from it's SetValue method). This method will fail when called on a read only key. 
 
 [EnumerateKeyValues]()
+
 The EnumerateKeyValues method is the first method a client will turn to in order to enumerate all of the keys on an object (this includes all keys implemented anywhere in the tree of parent models). It is important to note that EnumerateKeyValues will enumerate any keys defined by duplicate names in the object tree; however -- methods like GetKeyValue and SetKeyValue will only manipulate the first instance of a key with the given name as discovered by the depth-first-traversal. 
 
 [GetKey]()
+
 The GetKey method will get the value of (and the metadata associated with) a given key by name. Most clients should utilize the GetKeyValue method instead. If the key is a property accessor, calling this method will return the property accessor (an IModelPropertyAccessor interface) boxed into an IModelObject. Unlike, GetKeyValue, this method will not automatically resolve the underlying value of the key by calling the GetValue method. That responsibility is the caller's. 
 
 [SetKey]()
+
 The SetKey method is the method a client will turn to in order to create a key on an object (and potentially associate metadata with the created key). If a given object already has a key with the given name, one of two behaviors will occur. If the key is on the instance given by this, the value of that key will be replaced as if the original key did not exist. If, on the other hand, the key is in the chain of parent data models of the instance given by this, a new key with the given name will be created on the instance given by this. This would, in effect, cause the object to have two keys of the same name (similar to a derived class shadowing a member of the same name as a base class). 
 
 [EnumerateKeys]()
+
 The EnumerateKeys method behaves similar to the EnumerateKeyValues method excepting that it does not automatically resolve property accessors on the object. This means that if the value of a key is a property accessor, the EnumerateKeys method will return the property accessor (an IModelPropertyAccessorInterface) boxed into an IModelObject rather than automatically calling the GetValue method. This is similar to the difference between GetKey and GetKeyValue. 
 
 [ClearKeys]()
+
 The ClearKeys method removes all keys and their associated values and metadata from the instance of the object specified by this. This method has no effect on parent models attached to the particular object instance. 
 
 [GetKeyReference]()
+
 The GetKeyReference method will search for a key of the given name on the object (or its parent model chain) and return a reference to that key given by an IModelKeyReference interface boxed into an IModelObject. That reference can subsequently be used to get or set the value of the key. 
 
 [EnumerateKeyReferences]()
+
 The EnumerateKeyReferences method behaves similar to the EnumerateKeyValues method excepting that it returns references to the keys it enumerates (given by an IModelKeyReference interface boxed into an IModelObject) instead of the value of the key. Such references can be used to get or set the underlying value of the keys. 
 
 
@@ -564,9 +562,9 @@ For more details about this context/state and its meaning, see the documentation
 
 
 
-## <span id="interface"></span> Data Model C++ Host Interfaces
+## <span id="interface"></span> Debugger Data Model C++ Host Interfaces
 
-**The Data Model Host**
+**The Debugger Data Model Host**
 
 The Debugger Data Model is designed to be a componentized system which can be hosted in a variety of different contexts. Normally, the Data Model is hosted in the context of a debugger application. In order to be a host of the data model, a number of interfaces need to be implemented to expose core aspects of the debugger: its targeting, its memory spaces, its evaluator, its symbolic and type system, etc... While these interfaces are implemented by any application wishing to host the data model, they are consumed by both the core data model as well as any extension which interoperates with the data model. 
 
@@ -615,6 +613,97 @@ DECLARE_INTERFACE_(IDebugHost, IUnknown)
 **GetHostDefinedInterface**
 
 The GetHostDefinedInterface method returns the host's main private interface, if such exists for the given host. For Debugging Tools for Windows, the interface returned here is an IDebugClient (cast to IUnknown). 
+
+[GetCurrentContext]()
+
+The GetCurrentContext method returns an interface which represents the current state of the debugger host. The exact meaning of this is left up to the host, but it typically includes things such as the session, process, and address space that is active in the user interface of the debug host. The returned context object is largely opaque to the caller but it is an important object to pass between calls to the debug host. When a caller is, for instance, reading memory, it is important to know which process and address space that memory is being read from. That notion is encapsulated in the notion of the context object which is returned from this method. 
+
+[GetDefaultMetadata]()
+
+The GetDefaultMetadata method returns a default metadata store that may be used for certain operations (e.g.: string conversion) when no explicit metadata has been passed. This allows the debug host to have some control over the way some data is presented. For example, the default metadata may include a PreferredRadix key, allowing the host to indicate whether ordinals should be displayed in decimal or hexadecimal if not otherwise specified. 
+
+Note that property values on the default metadata store must be manually resolved and must pass the object for which the default metadata is being queried. The GetKey method should be used in lieu of GetKeyValue. 
+
+**The Status Interface:** 
+
+[IDebugHostStatus]()
+
+The IDebugHostStatus interface allows a client of the data model or the debug host to inquire about certain aspects of the debug host's status. T
+
+[PollUserInterrupt]()
+
+The PollUserInterrupt method is used to inquire whether the user of the debug host has requested an interruption of the current operation. A property accessor in the data model may, for instance, call into arbitrary code (e.g.: a JavaScript method). That code may take an arbitrary amount of time. In order to keep the debug host responsive, any such code which may take an arbitrary amount of time should check for an interrupt request via calling this method. If the interruptRequested value comes back as true, the caller should immediately abort and return a result of E_ABORT. 
+
+
+**The Context Interface: IDebugHostContext**
+
+Context is one of the most important aspects of the data model and the underlying debug host. When you hold an object, it is important to be able to know where an object came from -- what process is it in, what address space is it associated with. Knowing this information allows the correct interpretation of things like pointer values. 
+An object of the type IDebugHostContext must be passed to many methods on the debug host. This interface can be acquired in a number of ways: 
+By getting the current context of the debugger: calling the GetCurrentContext method of IDebugHost
+By getting the context of an object: calling the GetContext method of IModelObject
+By getting the context of a symbol: calling the GetContext method of IDebugHostSymbol
+In addition, there are two values which have special meaning in the context of an IDebugHostContext interface which is either returned from or passed to a data model or debug host method: 
+nullptr: an indication that there is no context. It is perfectly valid for some objects to have no context. The Debugger object in the root namespace of the data model does not refer to anything within a specific process or address space. It has no context.
+USE_CURRENT_HOST_CONTEXT: a sentinel value indicating that one should use the current UI context of the debug host. This value will never be returned from the debug host. It may, however, be passed to any debug host method which takes an input IDebugHostContext in lieu of explicitly calling the GetCurrentContext method of IDebugHost. Note that explicitly passing USE_CURRENT_HOST_CONTEXT is often more performant than explicitly getting the current context. 
+The contexts of a host context are largely opaque to the caller. The only operation that a caller outside the core debug host can do with a host context is to compare it to another host context. 
+
+The IDebugHostContext interface is defined as follows: 
+
+```
+DECLARE_INTERFACE_(IDebugHostContext, IUnknown)
+{
+    STDMETHOD(IsEqualTo)(_In_ IDebugHostContext *pContext, _Out_ bool *pIsEqual) PURE;
+}
+```
+
+[IsEqualTo]()
+
+The IsEqualTo method compares a host context to another host context. If the two contexts are equivalent, an indication of this is returned. Note that this comparison is not interface equivalence. This compares the underlying opaque contents of the context itself. 
+
+[The Error Sink: IDebugHostErrorSink]()
+
+The IDebugHostErrorSink is a means by which a client can receive notifications of errors which occur during certain operations and route those errors where needed. 
+
+[ReportError]()
+
+The ReportError method is a callback on the error sink to notify it that an error has occurred and allow the sink to route the error to whatever UI or mechanism is appropriate. 
+
+[The Host Evaluator: IDebugHostEvaluator / IDebugHostEvaluator2]()
+
+One of the most important pieces of functionality which the debug host provides to clients is access to its language based expression evaluator. The IDebugHostEvaluator and IDebugHostEvaluator2 interfaces are the means to access that functionality from the debug host. 
+
+[EvaluateExpression]()
+
+The EvaluateExpression method allows requests the debug host to evaluate a language (e.g.: C++) expression and return the resulting value of that expression evaluation boxed as an IModelObject. This particular variant of the method only allows language constructs. Any additional functionality which is presented within the expression evaluator of the debug host that is not present in the language (e.g.: LINQ query methods) is turned off for the evaluation. 
+
+[EvaluateExtendedExpression]()
+
+The EvaluateExtendedExpression method is similar to the EvaluateExpression method except that it turns back on additional non-language functionality which a particular debug host chooses to add to its expression evaluator. For Debugging Tools for Windows, for example, this enables anonymous types, LINQ queries, module qualifiers, format specifiers, and other non-C/C++ functionality. 
+
+
+**IDebugHostEvaluator2 AssignTo**
+
+The AssignTo method performs assignment according to the semantics of the language being debugged. 
+
+The Host Extensibility Interface: IDebugHostExtensibility]()
+Certain functionality of the debug host is optionally subject to extensibility. This may, for instance, include the expression evaluator. The IDebugHostExtensibility interface is the means by which these extensibility points are accessed. 
+The interface is defined as follows: 
+
+```
+DECLARE_INTERFACE_(IDebugHostExtensibility, IUnknown)
+{
+    STDMETHOD(CreateFunctionAlias)(_In_ PCWSTR aliasName, _In_ IModelObject *functionObject) PURE;
+    STDMETHOD(DestroyFunctionAlias)(_In_ PCWSTR aliasName) PURE;
+}
+```
+
+[CreateFunctionAlias]()
+
+The CreateFunctionAlias method creates a "function alias", a "quick alias" for a method implemented in some extension. The meaning of this alias is host specific. It may extend the host's expression evaluator with the function or it may do something entirely different. 
+
+[DestroyFunctionAlias]()
+
+The DestroyFunctionAlias method undoes a prior call to the CreateFunctionAlias method. The function will no longer be available under the quick alias name. 
 
 
 
@@ -673,16 +762,253 @@ The Reset method resets the enumerator to the position it was at when it was fir
 The GetNext method both moves the enumerator forward and returns the native/language construct at that position in the enumeration. 
 
 
-## <span id="object"></span> Foo
+
+## <span id="modelhost"></span> The Debugger Data Model Host
 
 
-## <span id="object"></span> Foo
+The Debugger Data Model is designed to be a componentized system which can be hosted in a variety of different contexts. Normally, the Data Model is hosted in the context of a debugger application. In order to be a host of the data model, a number of interfaces need to be implemented to expose core aspects of the debugger: its targeting, its memory spaces, its evaluator, its symbolic and type system, etc... While these interfaces are implemented by any application wishing to host the data model, they are consumed by both the core data model as well as any extension which interoperates with the data model. 
+
+The set of core interfaces are: 
+
+Interface Name | Description
+|--------------|------------------|
+IDebugHost | The core interface to the debug host.
+IDebugHostStatus  | An interface allowing a client to query for the status of the host.
+IDebugHostContext  | An abstraction of a context within the host (e.g.: a particular target, a particular process, a particular address space, etc...)
+IDebugHostErrorSink  | An interface implemented by callers to receive errors from certain portions of the host and data model
+IDebugHostEvaluator / IDebugHostEvaluator2  | The debug host's expression evaluator.
+IDebugHostExtensibility  | An interface for extending the capabilities of the host or portions of it (such as the expression evaluator).
+
+The [type system and symbolic interfaces]() are: 
+
+Interface Name | Description
+|--------------|------------------|
+IDebugHostSymbols | Core interface which provides access to and resolution of symbols
+IDebugHostSymbol / IDebugHostSymbol2 | Represents a single symbol of any kind. The particular symbol is a derivation of this interface.
+IDebugHostModule | Represents a module loaded within a process. This is a kind of symbol.
+IDebugHostType / IDebugHostType2 | Represents a native/language type.
+IDebugHostConstant | Represents a constant within symbolic information (e.g.: a non-type template argument in C++)
+IDebugHostField | Represents a field within a structure or class.
+IDebugHostData | Represents data within a module (were this within a structure or class it would be an IDebugHostField)
+IDebugHostBaseClass | Represents a base class.
+IDebugHostPublic | Represents a symbol within the publics table of a PDB. This does not have type information associated with it. It is a name and address.
+IDebugHostModuleSignature | Represents a module signature -- a definition which will match a set of modules by name and/or version
+IDebugHostTypeSignature | Represents a type signature -- a definition which will match a set of types by module and/or name
 
 
-## <span id="object"></span> Foo
+**The Core Host Interface: *IDebugHost***
+
+The IDebugHost interface is the core interface of any data model host. It is defined as follows: 
+
+```
+DECLARE_INTERFACE_(IDebugHost, IUnknown)
+{
+    STDMETHOD(GetHostDefinedInterface)(_COM_Outptr_ IUnknown** hostUnk) PURE;
+    STDMETHOD(GetCurrentContext)(_COM_Outptr_ IDebugHostContext** context) PURE;
+    STDMETHOD(GetDefaultMetadata)(_COM_Outptr_ IKeyStore** defaultMetadataStore) PURE;
+}
+```
+
+[GetHostDefinedInterface]()
+
+The GetHostDefinedInterface method returns the host's main private interface, if such exists for the given host. For Debugging Tools for Windows, the interface returned here is an IDebugClient (cast to IUnknown). 
+
+[GetCurrentContext]()
+
+The GetCurrentContext method returns an interface which represents the current state of the debugger host. The exact meaning of this is left up to the host, but it typically includes things such as the session, process, and address space that is active in the user interface of the debug host. The returned context object is largely opaque to the caller but it is an important object to pass between calls to the debug host. When a caller is, for instance, reading memory, it is important to know which process and address space that memory is being read from. That notion is encapsulated in the notion of the context object which is returned from this method. 
+
+[GetDefaultMetadata]()
+
+The GetDefaultMetadata method returns a default metadata store that may be used for certain operations (e.g.: string conversion) when no explicit metadata has been passed. This allows the debug host to have some control over the way some data is presented. For example, the default metadata may include a PreferredRadix key, allowing the host to indicate whether ordinals should be displayed in decimal or hexadecimal if not otherwise specified. 
+Note that property values on the default metadata store must be manually resolved and must pass the object for which the default metadata is being queried. The GetKey method should be used in lieu of GetKeyValue. 
 
 
-## <span id="object"></span> Foo
+**The Status Interface: *IDebugHostStatus***
+
+The IDebugHostStatus interface allows a client of the data model or the debug host to inquire about certain aspects of the debug host's status. 
+
+The interface is defined as follows: 
+
+```
+DECLARE_INTERFACE_(IDebugHostStatus, IUnknown)
+{
+    STDMETHOD(PollUserInterrupt)(_Out_ bool* interruptRequested) PURE;
+}
+```
+
+[PollUserInterrupt]()
+
+The PollUserInterrupt method is used to inquire whether the user of the debug host has requested an interruption of the current operation. A property accessor in the data model may, for instance, call into arbitrary code (e.g.: a JavaScript method). That code may take an arbitrary amount of time. In order to keep the debug host responsive, any such code which may take an arbitrary amount of time should check for an interrupt request via calling this method. If the interruptRequested value comes back as true, the caller should immediately abort and return a result of E_ABORT. 
+
+
+**The Context Interface: *IDebugHostContext*** 
+
+Context is one of the most important aspects of the data model and the underlying debug host. When you hold an object, it is important to be able to know where an object came from -- what process is it in, what address space is it associated with. Knowing this information allows the correct interpretation of things like pointer values. 
+
+An object of the type IDebugHostContext must be passed to many methods on the debug host. This interface can be acquired in a number of ways: 
+By getting the current context of the debugger: calling the GetCurrentContext method of IDebugHost
+By getting the context of an object: calling the GetContext method of IModelObject
+By getting the context of a symbol: calling the GetContext method of IDebugHostSymbol
+
+In addition, there are two values which have special meaning in the context of an IDebugHostContext interface which is either returned from or passed to a data model or debug host method: 
+nullptr: an indication that there is no context. It is perfectly valid for some objects to have no context. The Debugger object in the root namespace of the data model does not refer to anything within a specific process or address space. It has no context.
+USE_CURRENT_HOST_CONTEXT: a sentinel value indicating that one should use the current UI context of the debug host. This value will never be returned from the debug host. It may, however, be passed to any debug host method which takes an input IDebugHostContext in lieu of explicitly calling the GetCurrentContext method of IDebugHost. Note that explicitly passing USE_CURRENT_HOST_CONTEXT is often more performant than explicitly getting the current context. 
+
+The contexts of a host context are largely opaque to the caller. The only operation that a caller outside the core debug host can do with a host context is to compare it to another host context. 
+
+The IDebugHostContext interface is defined as follows: 
+
+```
+DECLARE_INTERFACE_(IDebugHostContext, IUnknown)
+{
+    STDMETHOD(IsEqualTo)(_In_ IDebugHostContext *pContext, _Out_ bool *pIsEqual) PURE;
+}
+```
+
+[IsEqualTo]()
+The IsEqualTo method compares a host context to another host context. If the two contexts are equivalent, an indication of this is returned. Note that this comparison is not interface equivalence. This compares the underlying opaque contents of the context itself. 
+It is also important to note that this method checks for equivalence and not that one of the contexts is a subset or superset of the other. 
+
+
+**The Error Sink: *IDebugHostErrorSink*** 
+
+The IDebugHostErrorSink is a means by which a client can receive notifications of errors which occur during certain operations and route those errors where needed.
+
+[ReportError]()
+
+The ReportError method is a callback on the error sink to notify it that an error has occurred and allow the sink to route the error to whatever UI or mechanism is appropriate. 
+
+
+**The Host Evaluator: *IDebugHostEvaluator / IDebugHostEvaluator2*** 
+
+One of the most important pieces of functionality which the debug host provides to clients is access to its language based expression evaluator. The IDebugHostEvaluator and IDebugHostEvaluator2 interfaces are the means to access that functionality from the debug host. 
+
+
+The interfaces are defined as follows: 
+
+```
+DECLARE_INTERFACE_(IDebugHostEvaluator2, IDebugHostEvaluator)
+{
+    //
+    // IDebugHostEvaluator:
+    //
+    STDMETHOD(EvaluateExpression)(_In_ IDebugHostContext* context, _In_ PCWSTR expression, _In_opt_ IModelObject* bindingContext, _COM_Errorptr_ IModelObject** result, _COM_Outptr_opt_result_maybenull_ IKeyStore** metadata) PURE;
+    STDMETHOD(EvaluateExtendedExpression)(_In_ IDebugHostContext* context, _In_ PCWSTR expression, _In_opt_ IModelObject* bindingContext, _COM_Errorptr_ IModelObject** result, _COM_Outptr_opt_result_maybenull_ IKeyStore** metadata) PURE;
+    //
+    // IDebugHostEvaluator2:
+    //
+    STDMETHOD(AssignTo)(_In_ IModelObject* assignmentReference, _In_ IModelObject* assignmentValue, _COM_Errorptr_ IModelObject** assignmentResult, _COM_Outptr_opt_result_maybenull_ IKeyStore** assignmentMetadata) PURE;
+}
+```
+
+[EvaluateExpression]()
+
+The EvaluateExpression method allows requests the debug host to evaluate a language (e.g.: C++) expression and return the resulting value of that expression evaluation boxed as an IModelObject. This particular variant of the method only allows language constructs. Any additional functionality which is presented within the expression evaluator of the debug host that is not present in the language (e.g.: LINQ query methods) is turned off for the evaluation. 
+
+[EvaluateExtendedExpression]()
+
+The EvaluateExtendedExpression method is similar to the EvaluateExpression method except that it turns back on additional non-language functionality which a particular debug host chooses to add to its expression evaluator. For Debugging Tools for Windows, for example, this enables anonymous types, LINQ queries, module qualifiers, format specifiers, and other non-C/C++ functionality. 
+
+[IDebugHostEvaluator2 AssignTo]()
+
+The AssignTo method performs assignment according to the semantics of the language being debugged. 
+
+
+**The Host Extensibility Interface: *IDebugHostExtensibility*** 
+
+Certain functionality of the debug host is optionally subject to extensibility. This may, for instance, include the expression evaluator. The IDebugHostExtensibility interface is the means by which these extensibility points are accessed. 
+
+The interface is defined as follows: 
+
+```
+DECLARE_INTERFACE_(IDebugHostExtensibility, IUnknown)
+{
+    STDMETHOD(CreateFunctionAlias)(_In_ PCWSTR aliasName, _In_ IModelObject *functionObject) PURE;
+    STDMETHOD(DestroyFunctionAlias)(_In_ PCWSTR aliasName) PURE;
+}
+```
+
+[CreateFunctionAlias]()
+
+The CreateFunctionAlias method creates a "function alias", a "quick alias" for a method implemented in some extension. The meaning of this alias is host specific. It may extend the host's expression evaluator with the function or it may do something entirely different. 
+
+[DestroyFunctionAlias]()
+
+The DestroyFunctionAlias method undoes a prior call to the CreateFunctionAlias method. The function will no longer be available under the quick alias name. 
+
+
+## <span id="objecttypes"></span> Debugger Data Model Core Object Types
+
+
+An object in the data model is similar to the notion of Object in .NET. It is the generic container into which construct that the data model understands can be boxed. In addition to native objects and synthetic (dynamic) objects, there are a series of core object types which can be placed (or boxed) into the container of an IModelObject. The container in which most of these values are placed is a standard COM/OLE VARIANT with a number of additional restrictions placed upon what that VARIANT can contain. The most basic types of these are:
+
+- 8-bit unsigned and signed values (VT_UI1, VT_I1)
+- 16-bit unsigned and signed values (VT_UI2, VT_UI2)
+- 32-bit unsigned and signed values (VT_UI4, VT_I4)
+- 64-bit unsigned and signed values (VT_UI8, VT_I8)
+- Single and double precision floating point values (VT_R4, VT_R8)
+- Strings (VT_BSTR)
+- Booleans (VT_BOOL)
+
+In addition to these basic types, a number of core data model objects are placed into IModelObject defined by VT_UNKNOWN where the stored IUnknown is guaranteed to implement a specific interface. These types are: 
+
+- Property accessors (IModelPropertyAccessor)
+- Method objects (IModelMethod)
+- Key reference objects (IModelKeyReference or IModelKeyReference2)
+- Context objects (IDebugModelHostContext)
+
+Property Accessors (IModelPropertyAccessor)[edit | edit source]
+A property accessor in the data model is an implementation of the IModelPropertyAccessor interface which is boxed into an IModelObject. The model object will return a kind of ObjectPropertyAccessor when queried and the intrinsic value is a VT_UNKNOWN which is guaranteed to be queryable for IModelPropertyAccessor. In process, it is guaranteed to be statically castable to IModelPropertyAccessor. 
+
+GetValue[edit | edit source]
+The GetValue method is the getter for the property accessor. It is called whenever a client wishes to fetch the underlying value of the property. Note that any caller which directly gets a property accessor is responsible for passing the key name and accurate instance object (this pointer) to the property accessor's GetValue method. 
+
+SetValue[edit | edit source]
+The SetValue method is the setter for the property accessor. It is called whenever a client wishes to assign a value to the underlying property. Many properties are read-only. In such cases, calling the SetValue method will return E_NOTIMPL. Note that any caller which directly gets a property accessor is responsible for passing the key name and accurate instance object (this pointer) to the property accessor's SetValue method. 
+
+
+Methods (IModelMethod)[edit | edit source]
+A method in the data model is an implementation of the IModelMethod interface which is boxed into an IModelObject. The model object will return a kind of ObjectMethod when queried and the intrinsic value is a VT_UNKNOWN which is guaranteed to be queryable for IModelMethod. In process, it is guaranteed to be statically castable to IModelMethod. 
+All methods in the data model are dynamic in nature. They take as input a set of 0 or more arguments and return a single output value. There is no overload resolution and no metadata about parameter names, types, or expectations. 
+The IModelMethod interface is defined as follows: 
+DECLARE_INTERFACE_(IModelMethod, IUnknown)
+{
+    STDMETHOD(Call)(_In_opt_ IModelObject *pContextObject, _In_ ULONG64 argCount, _In_reads_(argCount) IModelObject **ppArguments, _COM_Errorptr_ IModelObject **ppResult, _COM_Outptr_opt_result_maybenull_ IKeyStore **ppMetadata) PURE;
+}
+Call[edit | edit source]
+The Call method is the way in which any method defined in the data model is invoked. The caller is responsible for passing an accurate instance object (this pointer) and an arbitrary set of arguments. The result of the method and any optional metadata associated with that result is returned. Methods which do not logically return a value still must return a valid IModelObject. In such a case, the IModelObject is a boxed no value. In the event a method fails, it may return optional extended error information in the input argument (even if the returned HRESULT is a failure). It is imperative that callers check for this. 
+
+Key References (IModelKeyReference or IModelKeyReference2)[edit | edit source]
+A key reference is, in essence, a handle to a key on a particular object. A client can retrieve such handle via methods such as GetKeyReference and use the handle later to get or set the value of the key without necessarily holding onto the original object. This type of object is an implementation of the IModelKeyReference or IModelKeyReference2 interface which is boxed into an IModelObject. The model object will return a kind of ObjectKeyReference when queried and then intrinsic value is a VT_UNKNOWN which is guaranteed to be queryable for IModelKeyReference. In process, it is guaranteed to be statically castable to IModelKeyReference. 
+The key reference interface is defined as follows: 
+DECLARE_INTERFACE_(IModelKeyReference2, IModelKeyReference)
+{
+    STDMETHOD(GetKeyName)(_Out_ BSTR* keyName) PURE;
+    STDMETHOD(GetOriginalObject)(_COM_Outptr_ IModelObject** originalObject) PURE;
+    STDMETHOD(GetContextObject)(_COM_Outptr_ IModelObject** containingObject) PURE;
+    STDMETHOD(GetKey)(_COM_Errorptr_opt_ IModelObject** object, _COM_Outptr_opt_result_maybenull_ IKeyStore** metadata) PURE;
+    STDMETHOD(GetKeyValue)(_COM_Errorptr_opt_ IModelObject** object, _COM_Outptr_opt_result_maybenull_ IKeyStore** metadata) PURE;
+    STDMETHOD(SetKey)(_In_opt_ IModelObject* object, _In_opt_ IKeyStore* metadata) PURE;
+    STDMETHOD(SetKeyValue)(_In_ IModelObject* object) PURE;
+    STDMETHOD(OverrideContextObject)(_In_ IModelObject* newContextObject) PURE;
+}
+GetKeyName[edit | edit source]
+The GetKeyName method returns the name of the key to which this key reference is a handle. The returned string is a standard BSTR and must be freed via a call to SysFreeString. 
+
+GetOriginalObject[edit | edit source]
+The GetOriginalObject method returns the instance object from which the key reference was created. Note that the key may itself be on a parent model of the instance object. 
+
+GetKey[edit | edit source]
+The GetKey method on a key reference behaves as the GetKey method on IModelObject would. It returns the value of the underlying key and any metadata associated with the key. If the value of the key happens to be a property accessor, this will return the property accessor (IModelPropertyAccessor) boxed into an IModelObject. This method will not call the underlying GetValue or SetValue methods on the property accessor. 
+
+GetKeyValue[edit | edit source]
+The GetKeyValue method on a key reference behaves as the GetKeyValue method on IModelObject would. It returns the value of the underlying key and any metadata associated with the key. If the value of the key happens to be a property accessor, this will call the underlying GetValue method on the property accessor automatically. 
+
+
+SetKey[edit | edit source]
+The SetKey method on a key reference behaves as the SetKey method on IModelObject would. It will assign the value of the key. If the original key was a property accessor, this will replace the property accessor. It will not call the SetValue method on the property accessor. 
+## <span id="object"></span> TBD
+
 
 
 ## <span id="related_topics"></span>Related topics
