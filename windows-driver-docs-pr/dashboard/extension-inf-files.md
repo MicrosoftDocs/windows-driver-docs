@@ -9,22 +9,19 @@ ms.technology: windows-devices
 
 # Working with Extension INFs in the Windows Hardware Dev Center Dashboard
 
-You can create shipping labels for your Extension INF files on the Windows Hardware Dev Center, enabling you to share and publish them like other submissions. This topic describes the process for packaging, submitting, and publishing these packages. For more information, see [Using an Extension INF file](https://docs.microsoft.com/windows-hardware/drivers/install/using-an-extension-inf-file).
+You can create shipping labels for your Extension INF files on the Windows Hardware Dev Center, enabling you to share and publish them like other submissions. This topic describes the process for packaging, submitting, and publishing these packages. For more information on how Extension INFs are created and installed, see [Using an Extension INF file](https://docs.microsoft.com/windows-hardware/drivers/install/using-an-extension-inf-file).
 
 ## Requirements for publishing Extension INFs to Windows Update 
 Publishing Extension INFs to Windows update requires you to select automatic driver promotion checkboxes on your shipping label. To see these checkboxes, you must first sign up for [driver flighting](https://docs.microsoft.com/windows-hardware/drivers/dashboard/driver-flighting). 
 
 > [!NOTE]
 > Note the following when publishing Extension INF files:
-> * All test systems must be running at least the RS3 [January 2018 Update](https://support.microsoft.com/help/4056892/windows-10-update-kb4056892) (10.0.16299.192) for Windows Update to offer Extension INFs.
-> * There is no installation order for when multiple Extension INFs apply to and are installed to a device.
-> * Extension INFs cannot be installed via Device Manager.  They can however be installed and uninstalled using [pnputil.exe](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/pnputil).  If you create your own setup application use pnputil.exe, and do not use dpinst.exe.
+> * For Windows Update to offer Extension INFs, all systems must be running at least the RS3 [January 2018 Update](https://support.microsoft.com/help/4056892/windows-10-update-kb4056892) (10.0.16299.192).
+> * Extension INFs cannot be acquired via Device Manager. They can only be manually acquired through the Windows Update settings page. 
 
+## Submitting and publishing Extension INFs
 
-
-## Creating, submitting and publishing Extension INFs
-
-This section describes how to create, submit, and publish an INF package. See the highlighted items and FAQ for information on common mistakes and frequently asked questions.
+This section describes how to submit and publish an INF package. See the highlighted items and FAQ for information on common mistakes and frequently asked questions.
 
 > [!IMPORTANT]
 > Microsoft recommends always creating a separate submission for each of your Extension INFs, and a separate submission containing only your base driver submission. Publishing your base driver and Extension INFs in a single submission will cause the following issues:
@@ -46,7 +43,7 @@ This section describes how to create, submit, and publish an INF package. See th
 3. Create and sign this HLKx package to make your base driver package.
 
     > [!NOTE]
-    > base driver packages must always be backwards compatible with existing extensions
+    > Base driver packages must always be backwards compatible with existing extensions
 
 #### Extension INF package
 
@@ -75,7 +72,7 @@ For example, when you create an ExtensionID for a new system part:
 * The ExtensionID will remain unchanged for the life of the part.
 
 > [!NOTE]
-> * If you don’t change the ExtensionID of a shipping label that was initially shared, the Hardware Dev Center Dashboard will reject your submission and inform you that the ExtensionID already belongs to another organization:
+> * If you use an ExtensionID that is not associated with your SellerID, the Hardware Dev Center Dashboard will reject your submission and inform you that the ExtensionID already belongs to another organization:
 > * For a given device, only one Extension INF is installed for each unique ExtensionID value. Therefore, if a device has multiple Extension INFs you will need a new ExtensionID for each one.  This also means if two Extension INFs target the same device with different ExtensionIDs, both Extension INFs will be applied. See [Using an Extension INF file](https://docs.microsoft.com/windows-hardware/drivers/install/using-an-extension-inf-file) for more information.
 >
 > If your organization manages projects and submissions for another organization, note the following:
