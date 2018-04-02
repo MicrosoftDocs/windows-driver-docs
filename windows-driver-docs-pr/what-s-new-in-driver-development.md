@@ -29,30 +29,32 @@ The following is a list of new feature highlights for driver development in Wind
 
 The following table shows the feature updates in Windows 10, by driver technology and version.
 
-| Driver | [version 1709](#version-1709) | [version 1703](#version-1703) |  [version 1607](#version-1607) |  [version 1507](#version-1507) |
-|---|:---:|:---:|:---:|:---:|
-| Audio | [![details](checkmark.png)](#audio-1709) | [![details](checkmark.png)](#audio-1703) | [![details](checkmark.png)](#audio)  |![not available](minus.png) |
-| ACPI | [![details](checkmark.png)](#acpi-1709) | ![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |
-| Biometric | [![details](checkmark.png)](#biometric-1709) | ![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |
-| Bluetooth | ![not available](minus.png) | [![details](checkmark.png)](#bluetooth-1703) | ![not available](minus.png) | [![details](checkmark.png)](#bluetooth) |
-| Buses and Ports | ![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#buses-and-ports) |
-| Camera | ![not available](minus.png) | [![details](checkmark.png)](#camera-1703) |[![details](checkmark.png)](#camera-1607) |[![details](checkmark.png)](#camera-1507)|
-| Cellular | ![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) | [![details](checkmark.png)](#cellular)|
-| Display | [![details](checkmark.png)](#display-1709) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#display)|
-| Hardware notifications | [![details](checkmark.png)](#hardware-notifications-1709) | ![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |
-| Human Interface Device (HID)| ![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#human-interface-device)|
-| Location | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#location-1607) |[![details](checkmark.png)](#location-1507) |
-| Near Field Communication | ![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#near-field-communication)|
-| Networking | [![details](checkmark.png)](#networking-1709) | [![details](checkmark.png)](#networking-1703)| ![not available](minus.png) |[![details](checkmark.png)](#networking-1507) |
-| POS | ![not available](minus.png) |[![details](checkmark.png)](#pos-1703) | ![not available](minus.png) | ![not available](minus.png) |
-| PCI | [![details](checkmark.png)](#pci-1709) | ![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |
-| Print | ![not available](minus.png) |![not available](minus.png) |[![details](checkmark.png)](#print-1607) |[![details](checkmark.png)](#print-1507)|
-| Pulse Width Modulation | [![details](checkmark.png)](#pwm-1709) | ![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |
-| Smart Card | ![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#smart-card) |
-| Storage | [![details](checkmark.png)](#storage-1709) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#storage) |
-| System-Supplied Driver Interfaces | ![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#system-supplied-driver-interfaces) |
-| USB | [![details](checkmark.png)](#usb-1709) | [![details](checkmark.png)](#usb-1703) | ![not available](minus.png) |[![details](checkmark.png)](#usb)|
-| WLAN | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#wlan-1607) |[![details](checkmark.png)](#wlan-1507)|
+| Driver | [version 1803](#version-1803) | [version 1709](#version-1709) | [version 1703](#version-1703) |  [version 1607](#version-1607) |  [version 1507](#version-1507) |
+|---|:---:|:---:|:---:|:---:|:--:|
+| Audio | ![not available](minus.png)| [![details](checkmark.png)](#audio-1709) | [![details](checkmark.png)](#audio-1703) | [![details](checkmark.png)](#audio)  |![not available](minus.png) |
+| ACPI |[![details](checkmark.png)](#acpi-1803) | [![details](checkmark.png)](#acpi-1709) | ![not available](minus.png) |![not available](minus.png) |![not available](minus.png) | ![not available](minus.png) |
+| Biometric |![not available](minus.png) |[![details](checkmark.png)](#biometric-1709) | ![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |
+| Bluetooth | ![not available](minus.png)|![not available](minus.png) | [![details](checkmark.png)](#bluetooth-1703) | ![not available](minus.png) | [![details](checkmark.png)](#bluetooth) |
+| Buses and Ports |![not available](minus.png) |![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#buses-and-ports) |
+| Camera | [![details](checkmark.png)](#camera-1803)|![not available](minus.png) | [![details](checkmark.png)](#camera-1703) |[![details](checkmark.png)](#camera-1607) |[![details](checkmark.png)](#camera-1507)|
+| Cellular | ![not available](minus.png)|![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) | [![details](checkmark.png)](#cellular)|
+| Display | [![details](checkmark.png)](#display-1803)|[![details](checkmark.png)](#display-1709) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#display)|
+| Hardware notifications | ![not available](minus.png)|[![details](checkmark.png)](#hardware-notifications-1709) | ![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |
+| Human Interface Device (HID)|![not available](minus.png) |![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#human-interface-device)|
+| Location | ![not available](minus.png)|![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#location-1607) |[![details](checkmark.png)](#location-1507) |
+|Mobile broadband |[![details](checkmark.png)](#mobilebroadband-1803)|[![details](checkmark.png)](#mobilebroadband-1709)|[![details](checkmark.png)](#mobilebroadband-1703)|![not available](minus.png)|![not available](minus.png)|
+| Near Field Communication |![not available](minus.png) |![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#near-field-communication)|
+| Networking | [![details](checkmark.png)](#networking-1803)|[![details](checkmark.png)](#networking-1709) | [![details](checkmark.png)](#networking-1703)| ![not available](minus.png) |[![details](checkmark.png)](#networking-1507) |
+| POS | ![not available](minus.png)|![not available](minus.png) |[![details](checkmark.png)](#pos-1703) | ![not available](minus.png) | ![not available](minus.png) |
+| PCI | ![not available](minus.png)|[![details](checkmark.png)](#pci-1709) | ![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |
+| Print | ![not available](minus.png)|![not available](minus.png) |![not available](minus.png) |[![details](checkmark.png)](#print-1607) |[![details](checkmark.png)](#print-1507)|
+| Pulse Width Modulation | ![not available](minus.png)|[![details](checkmark.png)](#pwm-1709) | ![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |
+| Smart Card |![not available](minus.png) |![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#smart-card) |
+| Storage | ![not available](minus.png)|[![details](checkmark.png)](#storage-1709) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#storage) |
+| System-Supplied Driver Interfaces | ![not available](minus.png)|![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#system-supplied-driver-interfaces) |
+| USB | ![not available](minus.png)|[![details](checkmark.png)](#usb-1709) | [![details](checkmark.png)](#usb-1703) | ![not available](minus.png) |[![details](checkmark.png)](#usb)|
+|WI-FI|[![details](checkmark.png)](#wifi-1803)|![not available](minus.png)|![not available](minus.png)|![not available](minus.png)|![not available](minus.png)|
+| WLAN | ![not available](minus.png)|![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#wlan-1607) |[![details](checkmark.png)](#wlan-1507)|
 
 ## What's new in driver development for Windows 10
 
@@ -203,8 +205,57 @@ In Windows 10, version 1709, several new routines to the Windows Kernel for driv
     * [RtlInitializeCorrelationVector](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt826273(v=vs.85).aspx)
     * [RtlValidateCorrelationVector](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt826274(v=vs.85).aspx)
 
+## <a href="" id="version-1803"></a>What's new in Windows 10, version 1803 (latest)
 
-## <a href="" id="version-1709"></a>What's new in Windows 10, version 1709 (latest)
+This section describes new features and updates for driver development in Windows 10, version 1803 (Windows 10 April 2018 Update).
+
+### <a href="" id="acpi-1803"></a>ACPI
+
+Windows 10, version 1803 includes updates to ACPI DDIs to support platform capabilities and physical device location.
+
+### <a href="" id="camera-1803"></a>Camera
+
+Updates to Camera driver development include:
+
+* [DShow (DirectShow) Bridge implementation guidance for UVC devices](https://docs.microsoft.com/en-us/windows-hardware/drivers/stream/dshow-bridge-implementation-guidance-for-usb-video-class-devices)
+* 360 camera video capture
+
+### <a href="" id="display-1803"></a>Display
+
+The following are updates to Display driver development in Windows 10, version 1803:
+
+
+### <a href="" id="networking-1803"></a>Networking
+
+This section outlines new features and improvements for Windows Networking driver development in Windows 10, version 1803.
+
+**NDIS**
+
+Updates to NDIS include:
+
+* Receive side scaling V2 updated to version 1.0
+* New Synchronous OID interface DDIs to work with filter drivers
+
+**Winsock Kernel**
+
+New Winsock kernel DDIs include:
+
+* WSK_RECEIVE_EX
+* WSK_RECEIVE_EX_EVENT
+* WSK_SEND_EX
+
+### <a href="" id="mobilebroadband-1803"></a>Mobile broadband
+
+In Mobile broadband, a new [WWAN_MODEM_CONFIG_ID](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wwan/ns-wwan-_wwan_modem_config_id) API was added to improve [MB low level UICC access](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/mb-low-level-uicc-access).
+
+As for Mobile Operators, Hotspot and AppID settings are now a part of [desktop COSA](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/desktop-cosa-apn-database-settings#desktop-cosa-only-settings). All pages under [UWP mobile broadband apps](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/uwp-mobile-broadband-apps) were modernized for Windows 10.
+
+### <a href="" id="wifi-1803"></a>Wi-fi
+
+Updates to Wi-fi driver development include a new [TLV for the Nic Auto Power Saver (NAPS) advanced power management feature](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/wdi-tlv-os-power-management-features) and updates to the platform level device recovery service (PLDR).
+
+
+## <a href="" id="version-1709"></a>What's new in Windows 10, version 1709
 
 This section describes new features and updates for driver development in Windows 10, version 1709.
 
@@ -270,11 +321,22 @@ In Windows 10, version 1709, there is support for hardware-agnostic support of n
 * [Hardware notifications support](https://docs.microsoft.com/en-us/windows-hardware/drivers/gpiobtn/hardware-notifications-support)
 * [Hardware notifications reference](https://msdn.microsoft.com/en-us/library/windows/hardware/dn789336)
 
+### <a href="" id="mobilebroadband-1709"></a>Mobile broadband
+
+The following is a list of new features for Windows Mobile Broadband and Mobile Operator Scenarios for driver development in Windows 10, version 1709:
+
+* [UICC reset](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/mb-uicc-reset-operations) and [modem reset](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/mb-modem-reset-operations)
+* [Protocol Configuration Operations (PCO)](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/mb-protocol-configuration-operations--pco-)
+* [Base stations information query](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/mb-base-stations-information-query-support)
+* [eSIM and MBIM ReadyState guidance](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/mb-esim-mbim-ready-state-guidance)
+
+
+In Windows 10, version 1709, the [desktop COSA documentation](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/planning-your-desktop-cosa-apn-database-submission) was updated to include new branding-related fields.
+See the list of [deprecated features](#deprecated-features) for other changes to Mobile Operator Scenarios.
+
 ### <a href="" id="networking-1709"></a>Networking
 
 This section outlines new features and improvements for Windows Networking driver development in Windows 10, version 1709.
-
-**NDIS**
 
 The following is a list of new and updated features for NDIS:
 
@@ -288,20 +350,6 @@ The following is a list of new and updated features for NDIS:
 * [Introduction to NDIS 6.80](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/introduction-to-ndis-6-80)
 * [Porting NDIS 6.x drivers to NDIS 6.80](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/porting-ndis-6-x-drivers-to-ndis-6-80)
 
-**Mobile Broadband**
-
-The following is a list of new features for Windows Mobile Broadband driver development in Windows 10, version 1709:
-
-* [UICC reset](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/mb-uicc-reset-operations) and [modem reset](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/mb-modem-reset-operations)
-* [Protocol Configuration Operations (PCO)](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/mb-protocol-configuration-operations--pco-)
-* [Base stations information query](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/mb-base-stations-information-query-support)
-* [eSIM and MBIM ReadyState guidance](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/mb-esim-mbim-ready-state-guidance)
-
-
-**Mobile Operator Scenarios**
-
-In Windows 10, version 1709, the [desktop COSA documentation](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/planning-your-desktop-cosa-apn-database-submission) was updated to include new branding-related fields.
-See the list of [deprecated features](#deprecated-features) for other changes to Mobile Operator Scenarios.
 
 ### <a href="" id="pci-1709"></a>Virtualized PCI
 
@@ -434,17 +482,21 @@ The following is a list of updates to Camera driver development in Windows 10, v
     - [KSCATEGORY_SENSOR_CAMERA](https://msdn.microsoft.com/en-us/library/windows/hardware/mt796964)
     - [KSCATEGORY_VIDEO_CAMERA](https://msdn.microsoft.com/en-us/library/windows/hardware/mt796965)
 
+### <a href="" id="mobilebroadband-1703"></a>Mobile broadband
+
+Updates to [**Mobile Broadband (MB)**](https://msdn.microsoft.com/windows/hardware/drivers/network/mobile-broadband--mb--design-guide) include improved [LTE attach features](https://msdn.microsoft.com/windows/hardware/drivers/network/mb-lte-attach-operations), support for [Multi-SIM Operations](https://msdn.microsoft.com/windows/hardware/drivers/network/mb-multi-sim-operations), support for [provisioning contexts](https://msdn.microsoft.com/windows/hardware/drivers/network/mb-provisioned-context-operations) into the modem, support for the [Specific Absorption Rate platform](https://msdn.microsoft.com/windows/hardware/drivers/network/mb-sar-platform-support), and support for [network blacklisting](https://msdn.microsoft.com/windows/hardware/drivers/network/mb-network-blacklist-operations).
+
+Updates to [**Mobile Operator Scenarios (MOs)**](https://msdn.microsoft.com/windows/hardware/drivers/mobilebroadband/apn-database) include a new database format called [COSA FAQ](https://msdn.microsoft.com/windows/hardware/drivers/mobilebroadband/cosa---faq), for MOs to provision Windows Desktop MB devices. See these topics for more updates:
+
+* [Planning your COSA/APN database submission](https://msdn.microsoft.com/windows/hardware/drivers/mobilebroadband/planning-your-apn-database-submission)
+* [Submitting the COSA/APN database update](https://msdn.microsoft.com/windows/hardware/drivers/mobilebroadband/submitting-the-apn-database-update)
+* [Testing your COSA/APN database submission](https://msdn.microsoft.com/windows/hardware/drivers/mobilebroadband/testing-your-apn-database-submission)
 
 ### <a href="" id="networking-1703"></a>Networking
 
-The following is a list of updates to Networking driver development in Windows 10, version 1703:
+Updates to Networking driver development in Windows 10, version 1703 includes a new type of socket called Stream Sockets, which support Linux networking applications on Windows. See [**Winsock Kernel**](https://msdn.microsoft.com/windows/hardware/drivers/network/winsock-kernel-socket-categories) for more info. New functions and structures include [WskConnectEx](https://msdn.microsoft.com/library/windows/hardware/mt799884), [WskListen](https://msdn.microsoft.com/library/windows/hardware/mt799885), [WSK_CLIENT_STREAM_DISPATCH](https://msdn.microsoft.com/library/windows/hardware/mt799886), and [WSK_PROVIDER_STREAM_DISPATCH](https://msdn.microsoft.com/library/windows/hardware/mt799887)
 
-* [**Winsock Kernel**](https://msdn.microsoft.com/windows/hardware/drivers/network/winsock-kernel-socket-categories) - Includes a new type of socket called Stream Sockets, which support Linux networking applications on Windows. New functions and structures include [WskConnectEx](https://msdn.microsoft.com/library/windows/hardware/mt799884), [WskListen](https://msdn.microsoft.com/library/windows/hardware/mt799885), [WSK_CLIENT_STREAM_DISPATCH](https://msdn.microsoft.com/library/windows/hardware/mt799886), and [WSK_PROVIDER_STREAM_DISPATCH](https://msdn.microsoft.com/library/windows/hardware/mt799887).
-* [**Mobile Broadband (MB)**](https://msdn.microsoft.com/windows/hardware/drivers/network/mobile-broadband--mb--design-guide) - Updates include improved [LTE attach features](https://msdn.microsoft.com/windows/hardware/drivers/network/mb-lte-attach-operations), support for [Multi-SIM Operations](https://msdn.microsoft.com/windows/hardware/drivers/network/mb-multi-sim-operations), support for [provisioning contexts](https://msdn.microsoft.com/windows/hardware/drivers/network/mb-provisioned-context-operations) into the modem, support for the [Specific Absorption Rate platform](https://msdn.microsoft.com/windows/hardware/drivers/network/mb-sar-platform-support), and support for [network blacklisting](https://msdn.microsoft.com/windows/hardware/drivers/network/mb-network-blacklist-operations).
-* [**Mobile Operator Scenarios (MOs)**](https://msdn.microsoft.com/windows/hardware/drivers/mobilebroadband/apn-database) - New database format called [COSA FAQ](https://msdn.microsoft.com/windows/hardware/drivers/mobilebroadband/cosa---faq), for MOs to provision Windows Desktop MB devices. See these topics for more updates:
-    * [Planning your COSA/APN database submission](https://msdn.microsoft.com/windows/hardware/drivers/mobilebroadband/planning-your-apn-database-submission)
-    * [Submitting the COSA/APN database update](https://msdn.microsoft.com/windows/hardware/drivers/mobilebroadband/submitting-the-apn-database-update)
-    * [Testing your COSA/APN database submission](https://msdn.microsoft.com/windows/hardware/drivers/mobilebroadband/testing-your-apn-database-submission)
+
 
 ### <a href="" id="pos-1703"></a>POS
 
@@ -624,3 +676,4 @@ The following table describes Windows driver development features that have been
 | GNSS/Location | [Geolocation driver sample for Windows 8.1](https://docs.microsoft.com/en-us/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample) and related documentation | Windows 10, version 1709 |
 | Mobile Operator Scenarios (Networking) | [AllowStandardUserPinUnlock](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/allowstandarduserpinunlock?branch=duncan_mos_rs3) | Windows 10, version 1709 |
 | Scan/Image | [WSD (Web Services for Devices) Challenger](https://docs.microsoft.com/en-us/windows-hardware/drivers/image/challenging-a-disconnected-scanner-with-the-wsd-challenger) functionality and related documentation | Windows 10, version 1709 |
+|Mobile Operators| Mobile broadband app experience apps with Sysdev metadata packages are deprecated in favor of MO UWP APPS and COSA. | Windows 10, version 1803|
