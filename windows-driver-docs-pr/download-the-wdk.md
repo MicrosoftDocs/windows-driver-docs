@@ -43,15 +43,19 @@ New for this release: The WDK installation will by default install the WDK Visua
 
 ## Enterprise WDK for Windows 10, version 1709 (EWDK) 
 
-The EWDK is a standalone self-contained command-line environment for building drivers. The EWDK includes the Visual Studio Build Tools, the SDK, and the WDK. There are two versions available: 
+The EWDK is a standalone self-contained command-line environment for building drivers. It includes the Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio Build Tools 15.6. 
 
-### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools 15.4 (Recommended)
+### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools 15.6 (Recommended)
 
-* [Download WDK for Windows 10, version 1709](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709-VS15-4)
+* [Download EWDK for Windows 10, version 1709](https://developer.microsoft.com/en-us/windows/hardware/license-terms-enterprise-wdk-1709-VS15-6)
+
+### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools 15.4
+
+* [Download EWDK for Windows 10, version 1709](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709-VS15-4)
 
 ### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools 15.2
 
-* [Download WDK for Windows 10, version 1709](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709)
+* [Download EWDK for Windows 10, version 1709](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709)
 
 To get started, mount the ISO and run **LaunchBuildEnv**.
 
