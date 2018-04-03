@@ -35,7 +35,7 @@ When you install Visual Studio, select the **Desktop development with C++** work
 For ARM/ARM64 driver development, choose **Individual components** and under **Compilers, build tools, and runtimes** select **Visual C++ compilers and libraries for ARM/ARM64**.
 
 
-### ![download icon](images/download-install.png) Step 2: Install WDK for Windows 10, version 1709
+### ![download icon](images/download-install.png) Step 2: Install WDK for Windows 10, version 1803
 
 * [Download WDK for Windows 10, version 1803](TBD) 
 
