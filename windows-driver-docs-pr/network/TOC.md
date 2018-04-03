@@ -514,6 +514,7 @@
 ##### [Filtering OID Requests in an NDIS Filter Driver](filtering-oid-requests-in-an-ndis-filter-driver.md)
 ##### [Generating OID Requests from an NDIS Filter Driver](generating-oid-requests-from-an-ndis-filter-driver.md)
 ##### [Filter Module Direct OID Requests](filter-module-direct-oid-requests.md)
+##### [Filter Module Synchronous OID Requests](filter-module-synchronous-oid-requests.md)
 #### [Filter Module PnP Event Notifications](filter-module-pnp-event-notifications.md)
 #### [Filter Module Status Indications](filter-module-status-indications.md)
 ### [NDIS Filter Driver Installation](ndis-filter-driver-installation.md)
