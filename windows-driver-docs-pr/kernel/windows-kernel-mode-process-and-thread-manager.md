@@ -16,7 +16,7 @@ The Windows kernel-mode process and thread manager handles the execution of all 
 
 If threads from different processes attempt to use the same resource at the same time, problems can occur. Windows provides several techniques to avoid this problem. The technique of making sure that threads from different processes do not touch the same resource is called *synchronization*. For more information about synchronization, see [Synchronization Techniques](synchronization-techniques.md).
 
-Routines that provide a direct interface to the process and thread manager are usually prefixed with the letters "**Ps**"; for example, **PsCreateSystemThread**. For a list of process and thread manager routines, see [Process and Thread Manager Routines](https://msdn.microsoft.com/library/windows/hardware/ff559917). For a list of routines that relate to processes, threads, and synchronization, see [Synchronization](https://msdn.microsoft.com/library/windows/hardware/ff564517).
+Routines that provide a direct interface to the process and thread manager are usually prefixed with the letters "**Ps**"; for example, **PsCreateSystemThread**. For a list of kernel DDIs, see [Windows kernel](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/_kernel/).
 
 ## <a name="best"></a>Best practices for implementing process and thread-related callback functions
 
@@ -36,7 +36,7 @@ This set of guidelines applies to these callback routines:
 -    Do not make blocking and/or Interprocess Communication (IPC) function calls. 
 -    Do not synchronize with other threads because it can lead to reentrancy deadlocks. 
 -    Use [System Worker Threads](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/system-worker-threads) to queue work especially work involving: 
-        -    Slow API’s or API’s that call into other process. 
+        -    Slow API’s or API’s that call into other process.
         -    Any blocking behavior which could interrupt threads in core services. 
 -    Be considerate of best practices for kernel mode stack usage. For examples, see [How do I keep my driver from running out of kernel-mode stack?](https://docs.microsoft.com/en-us/previous-versions/windows/hardware/design/dn613940(v=vs.85)) and [Key Driver Concepts and Tips](https://docs.microsoft.com/en-us/previous-versions/windows/hardware/design/dn614604(v%3dvs.85)).
 

@@ -191,6 +191,7 @@ You can include this step as part of your build process in a couple of ways:
 
 When you build the Eventdrv.sys sample, Visual Studio creates the necessary files for event tracing. It also adds the evntdrv.xml manifest to the list of Resources Files for the driver project. You can right click the manifest to view the Message Compiler property pages.
 
+
 **Using Visual Studio to add the instrumentation manifest** You can add the instrumentation manifest to the driver project and then configure the message compiler properties to build the necessary resource and header files.
 
 **To add the instrumentation manifest to the project using Visual Studio**
@@ -216,9 +217,10 @@ When you build the Eventdrv.sys sample, Visual Studio creates the necessary file
     | **RC File Path**                                | **$(IntDir)**   |
     | **Generated Files Base Name**                   | **$(Filename)** |
 
-     
 
-    By default, the message compiler uses the base name of the input file as the base name of the files that it generates. To specify a base name, set the **Generated Files Base Name** (-z) field. In the Eventdr.sys sample, the base name is set to *evntdrvEvents* so that it matches the name of the header file evntdrvEvents.h, which is included in evntdrv.c.
+By default, the message compiler uses the base name of the input file as the base name of the files that it generates. To specify a base name, set the **Generated Files Base Name** (-z) field. In the Eventdr.sys sample, the base name is set to *evntdrvEvents* so that it matches the name of the header file evntdrvEvents.h, which is included in evntdrv.c.
+
+[!NOTE] If you do not include the generated .rc file in your Visual Studio project, you may get error messages about resources not found when you install the manifest file.
 
 ## 4. Add the generated code to raise (publish) the events (register, unregister, and write events)
 

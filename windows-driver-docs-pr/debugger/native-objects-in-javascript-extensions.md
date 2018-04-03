@@ -30,7 +30,7 @@ For example the host.namespace.Debugger.Utility.Control.ExecuteCommand object ca
 
 ```
 var ctl = host.namespace.Debugger.Utility.Control;   
-var output = ctl.ExecuteCommand("u");
+var outputLines = ctl.ExecuteCommand("u");
 ```
 
 This topic describes how to work with common objects and provides reference information on their attributes and behaviors.
