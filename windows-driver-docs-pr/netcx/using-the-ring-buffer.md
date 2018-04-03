@@ -62,7 +62,7 @@ While a client driver that targets a device with an asynchronous I/O model, such
 
 Here is a typical sequence for a device driver with asynchronous I/O:
 
-1. [**NetRxQueueGetDatapathDescriptor**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrxqueue/nf-netrxqueue-netrxqueuegetdatapathdescriptor) or [**NetTxQueueGetDatapathDescriptor**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nettxqueue/nf-nettxqueue-nettxqueuegetdatapathdescriptor) to retrieve the queue's datapath descriptor.
+1. Call [**NetRxQueueGetDatapathDescriptor**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrxqueue/nf-netrxqueue-netrxqueuegetdatapathdescriptor) or [**NetTxQueueGetDatapathDescriptor**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nettxqueue/nf-nettxqueue-nettxqueuegetdatapathdescriptor) to retrieve the queue's datapath descriptor.
 2. Use the datapath descriptor to retrieve the queue's packet ring buffer by calling [NET_DATAPATH_DESCRIPTOR_GET_PACKET_RING_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-net_datapath_descriptor_get_packet_ring_buffer).
 3. Iterate on the packets in the ring buffer. Typically, do the following in a loop:
     1. Call [**NetRingBufferGetNextPacket**](netringbuffergetnextpacket.md).
@@ -70,4 +70,4 @@ Here is a typical sequence for a device driver with asynchronous I/O:
     3. Call [**NetRingBufferAdvanceNextPacket**](netringbufferadvancenextpacket.md).
 4. Call [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpackets.md).
 
-As asynchronous I/O completions come in, the client sets the **Completed** flag of the first associated [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) to **TRUE**. This enables [**NetRingBufferReturnCompletedPackets**](NetRingBufferReturnCompletedPackets.md) to complete packets.
+As asynchronous I/O completions come in, the client sets the **Completed** flag of the first associated [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) to **TRUE**. This enables [**NetRingBufferReturnCompletedPackets**](NetRingBufferReturnCompletedPackets.md) to complete packets. To access the first associated **NET_PACKET_FRAGMENT** of a packet, call the [NET_PACKET_GET_FRAGMENT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-net_packet_get_fragment) macro with the packet, the queue's datapath descriptor, and the *0* index parameters.

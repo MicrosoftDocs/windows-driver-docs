@@ -10,9 +10,19 @@ ms.technology: windows-devices
 
 Driver flighting in the Windows Hardware Dev Center dashboard enables you to distribute your driver within defined Windows Insider rings, while providing automatic monitoring and evaluation. A report of your driver's performance will be generated after the completion of a flight, enabling you to evaluate its critical functionality and update scenarios. Upon a successful flight and approval from Microsoft, the driver will be distributed publicly through Windows Update. 
 
+The following video provides an overview for the driver flighting program in more detail: 
+<iframe src="https://channel9.msdn.com/Events/WinHEC/WinHEC-Online/Start-Your-Driver-Flighting-The-benefit-of-Driver-Promotion/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+
 ## Signing up for driver flighting
 
-To sign up for driver flighting, submit a support ticket to the Windows Hardware Dev Center Dashboard. Within the ticket, specify the following:
+To sign up for driver flighting, submit a support ticket to the Windows Hardware Dev Center Dashboard. Support for the Hardware Dev Center is accessed in the upper-right corner of the browser window, as shown below:
+
+![The button for accessing Hardware Dev Center Support](images/support.jpg)
+
+> [!NOTE]
+> When signing up for driver flighting, make sure you are inside the Hardware Dev Center Dashboard. Clicking the support button from another area of the Dev Center will connect you with a non-dashboard support group.
+
+Within the ticket, specify the following:
 * The estimated number of existing devices that will be targeted by the driver
 * The estimated volume of promotion requests you will make per month
 * Your seller and/or publisher ID
