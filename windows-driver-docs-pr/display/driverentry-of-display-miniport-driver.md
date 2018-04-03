@@ -54,7 +54,7 @@ Remarks
 
 1.  Allocate a [**DRIVER\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff556169) structure, and set its **Version** member to DXGKDDI\_INTERFACE\_VERSION, which is defined in Dispmprt.h.
 
-2.  Fill in the remaining members of the [**DRIVER\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff556169) structure with pointers to the following functions, which are implemented by the display miniport driver:
+2.  Fill in the remaining members of the [**DRIVER\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff556169) structure with pointers to the following functions, which are implemented by the display miniport driver.
 
     -   [*DxgkDdiAcquireSwizzlingRange*](https://msdn.microsoft.com/library/windows/hardware/ff559582)
     -   [*DxgkDdiAddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff559586)
@@ -135,7 +135,6 @@ Remarks
     -   [*DxgkDdiUpdateActiveVidPnPresentPath*](https://msdn.microsoft.com/library/windows/hardware/ff560803)
     -   [*DxgkDdiUpdateOverlay*](https://msdn.microsoft.com/library/windows/hardware/ff560804)
 
-    Additional *DxgkDdiXxx* functions that can be implemented by display miniport drivers are described in the interfaces listed in [Kernel-Mode Interfaces Implemented By the Display Miniport Driver](https://msdn.microsoft.com/library/windows/hardware/hh451569).
 
 3.  Pass *DriverObject*, *RegistryPath*, and the filled in [**DRIVER\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff556169) structure to [**DxgkInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff560824).
 
@@ -144,6 +143,23 @@ Remarks
 The [**DRIVER\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff556169) structure does not need to remain in memory after **DriverEntry** returns.
 
 **DriverEntry** should be made pageable.
+
+For kernel mode display-only driver (KMDOD) interface, the [KMDDOD_INITIALIZATION_DATA](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dispmprt/ns-dispmprt-_kmddod_initialization_data) structure lists all functions that can be implemented by a KMDOD. All of these functions, except for the [DxgkDdiPresentDisplayOnly](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_presentdisplayonly) function, can also be implemented by a full display miniport driver.  The DriverEntry function of the kernel mode display-only driver (KMDOD) supplies function pointers to the display port driver by filling in all members of a KMDDOD_INITIALIZATION_DATA structure and then passing that structure to the [DxgkInitializeDisplayOnlyDriver](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dispmprt/nf-dispmprt-dxgkinitializedisplayonlydriver) function.
+
+Note that if a KMDOD does not support the VSync control feature, it should not implement certain functions—see Saving Energy with VSync Control.
+
+The following structures and enumeration are also used with kernel mode display-only drivers:
+
+* [D3DKMT_MOVE_RECT](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/d3dkmdt/ns-d3dkmdt-_d3dkmt_move_rect)
+* [D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_d3dkmt_present_display_only_flags)
+* [DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/d3dkmddi/ne-d3dkmddi-_dxgk_present_display_only_progress_id)
+* [DXGKARG_PRESENT_DISPLAYONLY](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgkarg_present_displayonly)
+* [DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgkargcb_present_displayonly_progress)
+
+
+>[!Note]
+>A KMDOD does not support the sleep power state. If it is placed in the sleep state, the driver will cause a system bugcheck to occur. There is no workaround available, by design.<br/>If the current display driver is not a Windows Display Driver Model (WDDM) 1.2 compliant driver, a KMDOD might fail to install, with error code 43 displayed. The KMDOD driver is actually installed, but it cannot be started. The workaround for this issue is to switch to the Microsoft Basic Display Adapter Driver before installing the KMDOD, or simply to reboot your system after installing the KMDOD.
+
 
 Requirements
 ------------
