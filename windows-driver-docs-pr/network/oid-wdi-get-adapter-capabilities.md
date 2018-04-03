@@ -135,6 +135,8 @@ If the adapter supports Wi-Fi Direct, both [**WDI\_TLV\_AP\_ATTRIBUTES**](https:
 </tr>
 <tr class="odd">
 <td><p>[<strong>WDI_TLV_OS_POWER_MANAGEMENT_FEATURES</strong>](wdi-tlv-os-power-management-features.md)</p></td>
+<td></td>
+<td></td>
 <td><p>Added in Windows 10, version 1803, WDI version 1.1.6.</p>
 <p>Used to enable advanced OS power management features.</p>
 </td>
