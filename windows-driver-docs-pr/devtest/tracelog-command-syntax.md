@@ -140,7 +140,7 @@ The **tracelog -stop** command both disables the trace providers and stops the t
 
 Tracelog uses the **EnableTrace** and **ControlTrace** functions to implement a **tracelog -stop** command. For more information about these functions, see the Microsoft Windows SDK documentation.
 
-When you use a **tracelog -stop GlobalLogger** command to stop a [Global Logger trace session](global-logger-trace-session.md), Tracelog stops the provider, but it does not reset the values of the registry entries. As a result, the Global Logger session restarts each time that you reboot the computer. To reset the values of the Global Logger registry entries, use **tracelog -remove**.
+If you start a [Boot-Time Global Logger session](boot-time-global-logger-session.md) which traces kernel events, you need to use the command **tracelog -stop "NT Kernel Logger"** to stop it. Otherwise, you can use the command **tracelog -stop GlobalLogger**. When you use either of the commands to stop a [Global Logger trace session](global-logger-trace-session.md), Tracelog stops the provider, but it does not reset the values of the registry entries. As a result, the Global Logger session restarts each time that you reboot the computer. To reset the values of the Global Logger registry entries, use **tracelog -remove**.
 
 <span id="-systemrundown__LoggerName_"></span><span id="-systemrundown__loggername_"></span><span id="-SYSTEMRUNDOWN__LOGGERNAME_"></span>**-systemrundown** \[*LoggerName*\]  
 Requests the SystemTraceProvider to log rundown events directed at *LoggerName* session. See [Configuring and Starting a SystemTraceProvider Session](https://msdn.microsoft.com/library/windows/desktop/jj883720) for information about starting a trace session.
