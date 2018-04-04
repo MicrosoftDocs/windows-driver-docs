@@ -65,7 +65,7 @@ The following example demonstrates the JSON request body for creating a new prod
 }
 ```
 
-For details about the fields in the request, refer to [Product resource](get-product-data.md/#product-resource).
+For details about the fields in the request, refer to [Product resource](get-product-data.md#product-resource).
 
 ### Request examples
 
@@ -120,8 +120,8 @@ The following example demonstrates the JSON response body returned by a successf
 
 ### Response body
 
-Refer to [Product resource](get-product-data.md/#product-resource)  for more details
+Refer to [Product resource](get-product-data.md#product-resource)  for more details
 
 ## Error codes
 
-For more info, see [Error codes](get-product-data.md/#error-codes).
+For more info, see [Error codes](get-product-data.md#error-codes).

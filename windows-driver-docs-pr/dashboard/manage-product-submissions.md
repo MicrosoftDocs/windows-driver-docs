@@ -33,15 +33,15 @@ Methods for managing product submissions
 
 1.	If you have not done so already, complete all the [prerequisites](dashboard-api.md) for the Microsoft Hardware APIs.
 
-2.	[Obtain an Azure AD access token](dashboard-api.md/#obtain-an-azure-ad-access-token). You must pass this access token to the methods in the Microsoft Store submission API. After you obtain an access token, you have 60 minutes to use it before it expires. After the token expires, you can obtain a new one.
+2.	[Obtain an Azure AD access token](dashboard-api.md#obtain-an-azure-ad-access-token). You must pass this access token to the methods in the Microsoft Store submission API. After you obtain an access token, you have 60 minutes to use it before it expires. After the token expires, you can obtain a new one.
 
 3.	[Create a new product](create-a-new-product.md)  by executing the following method in the Microsoft Hardware API. This creates a new in-progress product and allows you to submit packages for this product.
 https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/
-The response body contains a [Product resource](get-product-data.md/#product-resource) that includes the ID of this product.
+The response body contains a [Product resource](get-product-data.md#product-resource) that includes the ID of this product.
 
 4.	[Create a submission](create-a-new-submission-for-a-product.md)  for this product by executing the following method in the Microsoft Hardware API.  Use the ProductID created in the step above.
 https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productID}/submissions/
-The response body contains a [Submission resource](get-product-data.md/#submission-resource) which includes the ID of the submission, the shared access signature (SAS) URI for uploading the product (driver) package for the submission to Azure Blob storage. [!NOTE] > A SAS URI provides access to a secure resource in Azure storage without requiring account keys. For background information about SAS URIs and their use with Azure Blob storage, see [Shared Access Signatures, Part 1: Understanding the SAS model](https://azure.microsoft.com/documentation/articles/storage-dotnet-shared-access-signature-part-1)  and [Shared Access Signatures, Part 2: Create and use a SAS with Blob storage](https://azure.microsoft.com/documentation/articles/storage-dotnet-shared-access-signature-part-2/) .
+The response body contains a [Submission resource](get-product-data.md#submission-resource) which includes the ID of the submission, the shared access signature (SAS) URI for uploading the product (driver) package for the submission to Azure Blob storage. [!NOTE] > A SAS URI provides access to a secure resource in Azure storage without requiring account keys. For background information about SAS URIs and their use with Azure Blob storage, see [Shared Access Signatures, Part 1: Understanding the SAS model](https://azure.microsoft.com/documentation/articles/storage-dotnet-shared-access-signature-part-1)  and [Shared Access Signatures, Part 2: Create and use a SAS with Blob storage](https://azure.microsoft.com/documentation/articles/storage-dotnet-shared-access-signature-part-2/) .
 
 5.	**Upload your package** to the Azure Blob storage at the location specified by the SAS URI in the previous step.
 The following C# code example demonstrates how to upload a package to Azure Blob storage using the [CloudBlockBlob](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.storage.blob.cloudblockblob.aspx)  class in the Azure Storage Client Library for .NET. This example assumes that the package has already been written to a stream object.
@@ -71,5 +71,5 @@ The following code examples demonstrates how to use the Microsoft Hardware API:
 
 The Microsoft Hardware APIs methods for creating and managing product data use the following JSON data resources:
 
-* [Product resource](get-product-data.md/#product-resource)
-* [Submission resource](get-product-data.md/#submission-resource)
+* [Product resource](get-product-data.md#product-resource)
+* [Submission resource](get-product-data.md#submission-resource)

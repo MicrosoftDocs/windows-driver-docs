@@ -142,10 +142,10 @@ The following example demonstrates the JSON response body returned by a successf
 
 | Value | Type | Description |
 |:--|:--|:--|
-| value | array | An array of objects that contain information about each product that is registered to your account. For more information about the data in each object, see [Product resource](get-product-data.md/#product-resource). |
-| links | array | An array of objects with helpful links about the containing entity. Refer to [link object](get-product-data.md/#link-object)  for more details  |
+| value | array | An array of objects that contain information about each product that is registered to your account. For more information about the data in each object, see [Product resource](get-product-data.md#product-resource). |
+| links | array | An array of objects with helpful links about the containing entity. Refer to [link object](get-product-data.md#link-object)  for more details  |
 
 
 ## Error codes
 
-For more info, see [Error codes](get-product-data.md/#error-codes). 
+For more info, see [Error codes](get-product-data.md#error-codes). 

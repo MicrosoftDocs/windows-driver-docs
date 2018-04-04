@@ -102,8 +102,8 @@ The following example demonstrates the JSON response body returned by a successf
 
 ### Response body
 
-Refer to [Submission resource](get-product-data.md/#submission-resource)  for more details
+Refer to [Submission resource](get-product-data.md#submission-resource)  for more details
 
 ## Error codes
 
-For more info, see [Error codes](get-product-data.md/#error-codes).
+For more info, see [Error codes](get-product-data.md#error-codes).

@@ -88,4 +88,4 @@ The following example demonstrates the JSON response body returned by a successf
 
 ## Error codes
 
-For more info, see [Error codes](get-product-data.md/#error-codes).
+For more info, see [Error codes](get-product-data.md#error-codes).

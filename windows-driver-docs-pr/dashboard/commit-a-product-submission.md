@@ -72,4 +72,4 @@ After this step, use the method [get submission details](get-a-submission.md)  t
 
 ## Error codes
 
-For more info, see [Error codes](get-product-data.md/#error-codes).
+For more info, see [Error codes](get-product-data.md#error-codes).
