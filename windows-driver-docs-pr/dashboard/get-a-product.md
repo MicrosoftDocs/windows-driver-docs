@@ -14,7 +14,7 @@ Use this method in the Microsoft Hardware API to retrieve data for a specific pr
 
 ## Prerequisites
 
-If you have not done so already, complete all the [prerequisites](#manage-hardware-submissions-using-apis)  for the Microsoft Hardware APIs before trying to use any of these methods.
+If you have not done so already, complete all the [prerequisites](dashboard-api.md)  for the Microsoft Hardware APIs before trying to use any of these methods.
 
 ## Request
 
@@ -88,4 +88,4 @@ The following example demonstrates the JSON response body returned by a successf
 
 ## Error codes
 
-Refer [error codes](#error-codes)  for details.
+For more info, see [Error codes](get-product-data.md/#error-codes).

@@ -10,11 +10,11 @@ ms.technology: windows-devices
 
 # Create a new submission for a product
 
-Use this method in the Microsoft Hardware API to create a new submission for a product. Prior to using this method ensure you have created a new product. For details, see [create a new product](#create-a-new-product).
+Use this method in the Microsoft Hardware API to create a new submission for a product. Prior to using this method ensure you have created a new product. For details, see [create a new product](create-a-new-product.md).
 
 ## Prerequisites
 
-If you have not done so already, complete all the [prerequisites](#manage-hardware-submissions-using-apis)  for the Microsoft Hardware APIs before trying to use any of these methods.
+If you have not done so already, complete all the [prerequisites](dashboard-api.md) for the Microsoft Hardware APIs before trying to use any of these methods.
 
 ## Request
 
@@ -50,7 +50,7 @@ The following example demonstrates the JSON request body for creating a new subm
 }
 ```
 
-For details on the fields in the request, refer [submission resource](#submission-resource)
+For details about the fields in the request, refer to [Submission resource](get-product-data.md/#submission-resource).
 
 ### Request examples
 
@@ -98,8 +98,8 @@ The following example demonstrates the JSON response body returned by a successf
 
 ### Response body
 
-Refer [submission resource](#submission-resource)  for more details
+Refer to [Submission resource](get-product-data.md/#submission-resource) for more details.
 
 ## Error codes
 
-Refer [error codes](#error-codes)  for details.
+For more info, see [Error codes](get-product-data.md/#error-codes).

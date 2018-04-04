@@ -14,7 +14,7 @@ Use this method in the Microsoft Hardware API to create a new hardware product.
 
 ## Prerequisites
 
-If you have not done so already, complete all the [prerequisites](#manage-hardware-submissions-using-apis)  for the Microsoft Hardware APIs before trying to use any of these methods.
+If you have not done so already, complete all the [prerequisites](dashboard-api.md)  for the Microsoft Hardware APIs before trying to use any of these methods.
 
 ## Request
 
@@ -65,7 +65,7 @@ The following example demonstrates the JSON request body for creating a new prod
 }
 ```
 
-For details on the fields in the request, refer [product resource](#product-resource)
+For details about the fields in the request, refer to [Product resource](get-product-data.md/#product-resource).
 
 ### Request examples
 
@@ -120,8 +120,8 @@ The following example demonstrates the JSON response body returned by a successf
 
 ### Response body
 
-Refer [product resource](#product-resource)  for more details
+Refer to [Product resource](get-product-data.md/#product-resource)  for more details
 
 ## Error codes
 
-Refer [error codes](#error-codes)  for details.
+For more info, see [Error codes](get-product-data.md/#error-codes).

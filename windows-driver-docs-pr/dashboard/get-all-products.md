@@ -14,7 +14,7 @@ Use this method in the Microsoft Hardware API to retrieve data for all the produ
 
 ## Prerequisites
 
-If you have not done so already, complete all the [prerequisites](#manage-hardware-submissions-using-apis)  for the Microsoft Hardware APIs before trying to use any of these methods.
+If you have not done so already, complete all the [prerequisites](dashboard-api.md) for the Microsoft Hardware APIs before trying to use any of these methods.
 
 ## Request
 
@@ -142,10 +142,10 @@ The following example demonstrates the JSON response body returned by a successf
 
 | Value | Type | Description |
 |:--|:--|:--|
-| value | array | An array of objects that contain information about each product that is registered to your account. For more information about the data in each object, see [Product resource](#product-resource) . |
-| links | array | An array of objects with helpful links about the containing entity. Refer [link object](#link-object)  for more details  |
+| value | array | An array of objects that contain information about each product that is registered to your account. For more information about the data in each object, see [Product resource](get-product-data.md/#product-resource). |
+| links | array | An array of objects with helpful links about the containing entity. Refer to [link object](get-product-data.md/#link-object)  for more details  |
 
 
 ## Error codes
 
-Refer to [error codes](#error-codes)  for details. 
+For more info, see [Error codes](get-product-data.md/#error-codes). 

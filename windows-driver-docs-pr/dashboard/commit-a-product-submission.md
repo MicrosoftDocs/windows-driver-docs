@@ -14,9 +14,9 @@ Use this method in the Microsoft Hardware API to commit a new submission to Hard
 
 ## Prerequisites
 
-If you have not done so already, complete all the [prerequisites](#manage-hardware-submissions-using-apis)  for the Microsoft Hardware APIs before trying to use any of these methods.
+If you have not done so already, complete all the [prerequisites](dashboard-api.md) for the Microsoft Hardware APIs before trying to use any of these methods.
 
-Another prerequisite to commit a submission is to complete the upload of the driver package to the SAS URI provided while [creating a new submission](#create-a-new-submission-for-a-product) . For more information about how the commit operation fits into the process of submitting a product app by using the Microsoft Hardware API, see [manage product submissions](#manage-product-submissions) .
+Another prerequisite to commit a submission is to complete the upload of the driver package to the SAS URI provided while [creating a new submission](create-a-new-submission-for-a-product.md) . For more information about how the commit operation fits into the process of submitting a product app by using the Microsoft Hardware API, see [manage product submissions](manage-product-submissions.md) .
 
 ## Request
 
@@ -68,8 +68,8 @@ The following example demonstrates the JSON response body returned by a successf
 |:--|:--|:--|
 | commitStatus | string | The status of the submission. The value returned would be CommitStarted |
 
-After this step, use the method [get submission details](#get-a-submission)  to get the status of the submission.
+After this step, use the method [get submission details](get-a-submission.md)  to get the status of the submission.
 
 ## Error codes
 
-Refer [error codes](#error-codes)  for details.
+For more info, see [Error codes](get-product-data.md/#error-codes).

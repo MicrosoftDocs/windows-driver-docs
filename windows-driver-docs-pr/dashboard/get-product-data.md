@@ -8,91 +8,25 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Manage hardware submissions using APIs
+# Get product data
 
-Use the *Microsoft Hardware APIs* to programmatically query and create submissions for hardware products within your organization's Windows Dev Center account. These APIs are useful if your account manages many products, and you want to automate and optimize the submission process for these assets. These APIs use Azure Active Directory (Azure AD) to authenticate the calls from your app or service.
-The following steps describe the end-to-end process of using the Microsoft Hardware API:
-1.	These APIs can only be used by developer accounts that belong to the [Windows Hardware Dev Center program](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/get-started-with-the-hardware-dashboard).
-2.	Make sure that you have completed all the [prerequisites](#complete-prerequisites-for-using-the-microsoft-hardware-api).
-3.	Before you call a method in the Microsoft Hardware API, [obtain an Azure AD access token](#obtain-an-azure-ad-access-token). After you obtain a token, you have 60 minutes to use this token in calls to the Microsoft Store submission API before the token expires. After the token expires, you can generate a new token.
-4.	[Call the Microsoft Store submission API](#use-the-microsoft-hardware-api).
-
-
-
-## Complete prerequisites for using the Microsoft Hardware API
-Before you start writing code to call the Microsoft Hardware API, make sure that you have completed the following prerequisites.
-
-*	You (or your organization) must have an Azure AD directory and you must have [Global administrator](http://go.microsoft.com/fwlink/?LinkId=746654)  permission for the directory. If you already use Office 365 or other business services from Microsoft, you already have Azure AD directory. Otherwise, you can [create a new Azure AD in Dev Center](https://docs.microsoft.com/en-us/windows/uwp/publish/associate-azure-ad-with-dev-center#create-a-brand-new-azure-ad-to-associate-with-your-dev-center-account)  for no additional charge.
-
-*	You must [associate an Azure AD application with your Windows Dev Center account](https://docs.microsoft.com/en-us/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services#associate-an-azure-ad-application-with-your-windows-dev-center-account)  and obtain your tenant ID, client ID and key. You need these values to obtain an Azure AD access token, which you will use in calls to the Microsoft Hardware API.
-
-### How to associate an Azure AD application with your Windows Dev Center account
-Before you can use the Microsoft Hardware API, you must associate an Azure AD application with your Dev Center account, retrieve the tenant ID and client ID for the application and generate a key. The Azure AD application represents the app or service from which you want to call the Microsoft Hardware API. You need the tenant ID, client ID and key to obtain an Azure AD access token that you pass to the API.
-1.	In Dev Center, go to your **Account** settings, click **Manage** users, and [associate your organization's Dev Center account with your organization's Azure AD directory](https://docs.microsoft.com/en-us/windows/uwp/publish/associate-azure-ad-with-dev-center) .
-2.	In the **Manage users** page, click **Add Azure AD** applications, add the Azure AD application that represents the app or service that you will use to access submissions for your Dev Center account, and assign it the **Manager** role. If this application already exists in your Azure AD directory, you can select it on the **Add Azure AD applications** page to add it to your Dev Center account. Otherwise, you can create a new Azure AD application on the **Add Azure AD applications** page. For more information, see [Add Azure AD applications to your Dev Center account](https://docs.microsoft.com/en-us/windows/uwp/publish/add-users-groups-and-azure-ad-applications#azure-ad-applications) .
-3.	Return to the **Manage users** page, click the name of your Azure AD application to go to the application settings, and copy down the **Tenant ID** and **Client ID** values.
-4.	Click **Add new** key. On the following screen, copy down the **Key** value. You won't be able to access this info again after you leave this page. For more information, see [Manage keys for an Azure AD application](https://docs.microsoft.com/en-us/windows/uwp/publish/add-users-groups-and-azure-ad-applications#manage-keys).
-
-## Obtain an Azure AD access token
-
-
-Before you call any of the methods in the Microsoft Store submission API, you must first obtain an Azure AD access token that you pass to the **Authorization** header of each method in the API. After you obtain an access token, you have 60 minutes to use it before it expires. After the token expires, you can refresh the token, so you can continue to use it in further calls to the API.
-To obtain the access token, follow the instructions in [Service to Service Calls Using Client Credentials](https://azure.microsoft.com/documentation/articles/active-directory-protocols-oauth-service-to-service/)  to send an HTTP POST to the https://login.microsoftonline.com/<tenant_id>/oauth2/token endpoint. Here is a sample request.
-
-```
-POST https://login.microsoftonline.com/<tenant_id>/oauth2/token HTTP/1.1
-Host: login.microsoftonline.com
-Content-Type: application/x-www-form-urlencoded; charset=utf-8
-
-grant_type=client_credentials
-&client_id=<your_client_id>
-&client_secret=<your_client_secret>
-&resource=https://manage.devcenter.microsoft.com
-```
-
-For the *tenant_id* value in the POST URI and the *client_id* and *client_secret* parameters, specify the tenant ID, client ID and the key for your application that you retrieved from Dev Center in the previous section. For the *resource* parameter, you must specify https://manage.devcenter.microsoft.com.
-
-After your access token expires, you can refresh it by following the instructions [here](https://azure.microsoft.com/documentation/articles/active-directory-protocols-oauth-code/#refreshing-the-access-tokens) .
-
-## Use the Microsoft Hardware API
-
-After you have an Azure AD access token, you can call methods in the Microsoft Hardware API. The API includes many methods that are grouped into scenarios. To create or update submissions, you typically call multiple methods in the Microsoft Hardware API in a specific order. For information about each scenario and the syntax of each method, see the articles in the following table.
-
-| Scenario | Description |
-|:--|:--|
-| Drivers | Get, create and update drivers registered to your Dev Center Account. For more information about these methods, see the following articles:<ul><li>[Get product data](#get-product-data)</li><li>[Manage product submissions](#manage-product-submissions)</li></ul>|
-
-
-## Code examples
-
-The following articles provide detailed code examples that demonstrate how to use the Microsoft Hardware API:
-
-*	[C# sample: <link TBD>](https://docs.microsoft.com/en-us/windows/uwp/monetize/csharp-code-examples-for-the-windows-store-submission-api)
-
-## Additional help
-
-If you have questions about the Microsoft Store submission API or need assistance managing your submissions with this API, use the following resources:
-•	Visit our [support page](https://developer.microsoft.com/en-us/dashboard/account/help?returnUri=https://developer.microsoft.com/en-us/dashboard/hardware)  and request for help.
-
-## Get product data
-
-Use the following methods in *Microsoft Hardware APIs* to get data for hardware products registered to your Dev Center Account. For an introduction to Microsoft Hardware APIs, including prerequisites for using the API, see [Manage hardware submissions using APIs](#manage-hardware-submissions-using-apis).
+Use the following methods in *Microsoft Hardware APIs* to get data for hardware products registered to your Dev Center Account. For an introduction to Microsoft Hardware APIs, including prerequisites for using the API, see [Manage hardware submissions using APIs](dashboard-api.md).
 
 ```
 https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/
 ```
-Before you can use these methods, the product must already exist in your Dev Center account. To create or manage submissions for products, see the methods in [Manage product submissions](#manage-product-submissions)
+Before you can use these methods, the product must already exist in your Dev Center account. To create or manage submissions for products, see the methods in [Manage product submissions](manage-product-submissions.md).
 
 | Method | URI | Description |
 |:--|:--|:--|
-|GET	https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/	|[Get data for all your products](#get-all-products)|
-|GET	https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/{productID}	|[Get data for a specific product](#get-a-product)|
-|GET	https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/{productID}/submissions	|[Get data for all submissions of a product](#get-all-submissions)|
-|GET	https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/{productID}/submissions/{submissionId}	|[Get data for a specific submission of a product](#get-a-submission)|
+|GET	https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/	|[Get data for all your products](get-all-products.md)|
+|GET	https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/{productID}	|[Get data for a specific product](get-a-product.md)|
+|GET	https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/{productID}/submissions	|[Get data for all submissions of a product](get-all-submissions.md)|
+|GET	https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/{productID}/submissions/{submissionId}	|[Get data for a specific submission of a product](get-a-submission.md)|
 
 ## Prerequisites
 
-If you have not done so already, complete all the [prerequisites](#manage-hardware-submissions-using-apis) for the Microsoft Hardware APIs before trying to use any of these methods.
+If you have not done so already, complete all the [prerequisites](dashboard-api.md) for the Microsoft Hardware APIs before trying to use any of these methods.
 
 ## Data resources
 
@@ -149,7 +83,7 @@ This resource has the following values
 |:--|:--|:--|
 | Id | Long | The private product ID of the product |
 | sharedProductId | Long | The shared product ID of the product |
-| Links | array of objects | Refer [link object](#link-object)  for more details |
+| Links | array of objects | Refer to [link object](#link-object)  for more details |
 | isCommitted | Boolean | Indicates whether the product has at least one committed submission  |
 | isExtensionInf | Boolean | Indicates whether the product is an extension driver |
 | deviceMetadataIds | array of GUIDs | GUIDs which map device metadata submissions to the driver |
@@ -191,7 +125,7 @@ This resource has the following values
 |:--|:--|:--|
 | Id | long | The ID of the submission |
 | Productid | long | The private product ID to which this submission is associated |
-| Links | array of objects | Refer [link object](#link-object)  for more details |
+| Links | array of objects | Refer to [link object](#link-object)  for more details |
 | Name | string | The name of the submission |
 | Type | string | Indicates whether the submission is an initial or derived submission. Possible values are <ul><li>initial</li><li>derived</li></ul> |
 | workflowstatus | object | This is available only when retrieving details of a specific submission. This object depicts the status of the workflow for this submission. Refer [workflow status object](#workflow-status-object)  for more details  |
@@ -339,7 +273,7 @@ This object provides additional attributes about the product if it is of type RA
 
 ### List of Product Types
 
-A product can be of the following types. This information is used along with the Operating system to identify applicability
+A product can be of the following types. This information is used along with the Operating system to identify applicability.
 
 * All In One
 * All In One with Touch
@@ -422,7 +356,7 @@ A product can be of the following types. This information is used along with the
 
 ### List of Operating System Family Codes
 
-Given below is a list of Operating system Family Codes and their description
+The following table lists Operating system Family Codes and their descriptions.
 
 | ****OS Family Code**** | ****Description**** |
 |:--|:--|
@@ -454,7 +388,7 @@ Given below is a list of Operating system Family Codes and their description
 
 ### List of Operating System Codes
 
-Given below is a list of Operating System Codes and their description
+The following table lists Operating System Codes and their descriptions.
 
 | ****OS Code**** | ****Description**** |
 |:--|:--|
@@ -509,9 +443,7 @@ Given below is a list of Operating System Codes and their description
 
 ## Error codes
 
-These error codes are applicable to all web methods of the API.
-
-If the request cannot be successfully completed, the response will contain one of the following HTTP error codes.
+The error codes are applicable to all web methods of the API. If the request cannot be successfully completed, the response will contain one of the following HTTP error codes.
 
 | HTTP Status | Description |
 |:--|:--|
