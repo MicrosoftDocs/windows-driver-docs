@@ -1213,6 +1213,7 @@ Projected at the data model level via the Debugger.Models.Module data model. Thi
 
 The IDebugHostModule interface is defined as follows (ignoring methods that are generic to IDebugHostSymbol): 
 
+```
 DECLARE_INTERFACE_(IDebugHostModule, IDebugHostSymbol)
 {
     //
@@ -1225,6 +1226,7 @@ DECLARE_INTERFACE_(IDebugHostModule, IDebugHostSymbol)
     STDMETHOD(FindSymbolByRVA)(_In_ ULONG64 rva, _Out_ IDebugHostSymbol** symbol) PURE;
     STDMETHOD(FindSymbolByName)(_In_z_ PCWSTR symbolName, _Out_ IDebugHostSymbol** symbol) PURE;
 }
+```
 
 [GetImageName]()
 
