@@ -10,42 +10,89 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-[!include[RSSv2 Beta Prerelease](../rssv2-beta-prerelease.md)]
-
 # Receive Side Scaling Version 2 (RSSv2)
 
 [Receive Side Scaling](ndis-receive-side-scaling2.md) improves the system performance related to handling of network data on multiprocessor systems. NDIS 6.80 and later support RSS Version 2 (RSSv2), which extends RSS by offering dynamic, per-VPort spreading of queues.
-
-RSSv2 uses the NDIS 6.80 Synchronous OID request interface for some of its OIDs. For more info about Synchronous OID calls, see [Synchronous OID request interface](synchronous-oid-request-interface-in-ndis-6-80.md).
 
 ## Overview
 
 Compared to RSSv1, RSSv2 shortens the time between the measurement of CPU load and updating the indirection table. This avoids slowdown during high-traffic situations. To accomplish this, RSSv2 performs its actions at IRQL = DISPATCH_LEVEL, in the processor context of handling the request, and only operates on a subset of indirection table entries that point to the current processor. This means that RSSv2 can dynamically spread receive queues over multiple processors much more responsively than RSSv1.
 
-Two new OIDs, [OID_GEN_RECEIVE_SCALE_PARAMETERS_V2](oid-gen-receive-scale-parameters-v2.md) and [OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES](oid-gen-rss-set-indirection-table-entries.md), have been introduced in RSSv2 for miniport drivers to set proper RSS capabilities and control the indirection table respectively. OID_GEN_RECEIVE_SCALE_PARAMETERS_V2 is a Regular OID, while OID_GEN_RSS_SET_INDIRECTION_ENTRIES is a Synchronous OID that cannot return NDIS_STATUS_PENDING. For more info about these OIDs, see their individual reference pages. For more info about Synchronous OIDs, see [Synchronous OID request interface in NDIS 6.80](synchronous-oid-request-interface-in-ndis-6-80.md).
+Two OIDs, [OID_GEN_RECEIVE_SCALE_PARAMETERS_V2](oid-gen-receive-scale-parameters-v2.md) and [OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES](oid-gen-rss-set-indirection-table-entries.md), have been introduced in RSSv2 for miniport drivers to set proper RSS capabilities and control the indirection table respectively. OID_GEN_RECEIVE_SCALE_PARAMETERS_V2 is a Regular OID, while OID_GEN_RSS_SET_INDIRECTION_ENTRIES is a Synchronous OID that cannot return NDIS_STATUS_PENDING. For more info about these OIDs, see their individual reference pages. For more info about Synchronous OIDs, see [Synchronous OID request interface in NDIS 6.80](synchronous-oid-request-interface-in-ndis-6-80.md).
 
 ## RSSv2 terminology
 
-- RSSv2: The receive side scaling mechanism supported in Windows 10, version 1709 and later, described in this topic.
-- Scaling entity: The miniport adapter itself in Native RSS mode, or a VPort in RSSv2 mode.
-- ITE: An indirection table entry of a given scaling entity. The total number of ITEs per VPort cannot exceed **NumberOfIndirectionTableEntriesPerNonDefaultPFVPort** or **NumberOfIndirectionTableEntriesForDefaultVPort** in VMQ mode or 128 in the Native RSS case. **NumberOfIndirectionTableEntriesPerNonDefaultPFVPort** and **NumberOfIndirectionTableEntriesForDefaultVPort** are members of the [NDIS_NIC_SWITCH_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff566583) structure.
-- Scaling mode: The per-VPort vmswitch policy which controls how its ITEs are handled at runtime. This can be static (no ITE moves due to load changes) or dyanmic (expansion and coalescing depending on current traffic load).
-- Queue: An underlying hardware object (queue) that backs the ITE. Depending on the hardware and indirection table, the configuration queue may back multiple ITEs. The total number of queues, including one that is used by the default queue, cannot exceed the preconfigured limit typically set by an administrator.
-- Default queue: A queue which receives packets for which the hash cannot be calculated. Each VPort has a default queue.
-- Primary processor: A processor specified as the **ProcessorAffinity** member of the [NDIS_NIC_SWITCH_VPORT_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451597) structure during VPort creation.
-- Source CPU: The processor to which the ITE is currently mapped.
-- Target CPU: The processor to which the ITE is being re-mapped (using RSSv2).
-- Actor CPU: The processor on which RSSv2 requests are being made.
+This topic uses the following terms:
+
+| Term | Definition |
+| --- | --- |
+| RSSv1 | The first generation eceive side scaling mechanism. Uses [OID_GEN_RECEIVE_SCALE_PARAMETERS](oid-gen-receive-scale-parameters.md). |
+| RSSv2 | The second generation receive side scaling mechanism supported in Windows 10, version 1803 and later, described in this topic. |
+| Scaling entity| The miniport adapter itself in Native RSS mode, or a VPort in RSSv2 mode. |
+| ITE | An indirection table entry (ITE) of a given scaling entity. The total number of ITEs per VPort cannot exceed **NumberOfIndirectionTableEntriesPerNonDefaultPFVPort** or **NumberOfIndirectionTableEntriesForDefaultVPort** in VMQ mode or 128 in the Native RSS case. **NumberOfIndirectionTableEntriesPerNonDefaultPFVPort** and **NumberOfIndirectionTableEntriesForDefaultVPort** are members of the [NDIS_NIC_SWITCH_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff566583) structure. |
+| Scaling mode | The per-VPort vmswitch policy that controls how its ITEs are handled at runtime. This can be static (no ITE moves due to load changes) or dyanmic (expansion and coalescing depending on current traffic load). |
+| Queue | An underlying hardware object (queue) that backs an ITE. Depending on the hardware and indirection table, the configuration queue may back multiple ITEs. The total number of queues, including one that is used by the default queue, cannot exceed the preconfigured limit typically set by an administrator. |
+| Default processor | A processor that receives packets for which the hash cannot be calculated. Each VPort has a default processor.
+| Primary processor | A processor specified as the **ProcessorAffinity** member of the [NDIS_NIC_SWITCH_VPORT_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451597) structure during VPort creation. This processor can be updated at runtime and specifies where VMQ traffic is directed. |
+| Source CPU | The processor to which the ITE is currently mapped. |
+| Target CPU | The processor to which the ITE is being re-mapped (using RSSv2). |
+| Actor CPU | The processor on which RSSv2 requests are being made. |
 
 ## Advertising RSSv2 capability in a miniport driver
 
-Miniport drivers advertise RSSv2 support by setting the **CapabilitiesFlags** member of the [NDIS_RECEIVE_SCALE_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff567220) structure with the new *NDIS_RSS_CAPS_SUPPORTS_INDEPENDENT_ENTRY_MOVE* flag. This capability is required to enable RSSv2's Dynamic VMQ feature, along with the *NDIS_RECEIVE_FILTER_DYNAMIC_PROCESSOR_AFFINITY_CHANGE_SUPPORTED* flag that enables the older RSSv1 Dynamic VMQ feature for non-default VPorts (VMQs).
+Miniport drivers advertise RSSv2 support by setting the **CapabilitiesFlags** member of the [NDIS_RECEIVE_SCALE_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff567220) structure with the *NDIS_RSS_CAPS_SUPPORTS_INDEPENDENT_ENTRY_MOVE* flag. This capability is required to enable RSSv2's CPU load balancing feature, along with the *NDIS_RECEIVE_FILTER_DYNAMIC_PROCESSOR_AFFINITY_CHANGE_SUPPORTED* flag that enables RSSv1 dynamic balancing for non-default VPorts (VMQs).
 
-If a miniport adapter does not advertise RSSv2 capability, all VMQ-enabled VPorts will stay in static spreading mode even if these VPorts are requested to perform dynamic spreading. The old RSSv1 OID for configuration of RSS parameters, [OID_GEN_RECEIVE_SCALE_PARAMETERS](oid-gen-receive-scale-parameters.md), will be used for these VPorts that are still in static spreading mode.
+> [!NOTE]
+> Upper layer protocols assume that the primary processor of the default VPort can be moved for RSSv2 miniport drivers.
 
-Miniport drivers only need to implement one RSS control mechanism - either RSSv1 or RSSv2. If the driver advertises RSSv2 support, NDIS will convert RSSv1 OIDs to RSSv2 OIDs if necessary to congifure per-VPort spreading. The miniport driver must support the two new OIDs (OID_GEN_RECEIVE_SCALS_PARAMETERS_V2 and OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES) and modify the behavior of the older OID_GEN_RECEIVE_SCALE_PARAMETERS OID, which will be used only for Query requests in RSSv2 and not for setting RSS parameters.
+If a miniport adapter does not advertise RSSv2 capability, all VMQ-enabled VPorts stay in static spreading mode even if these VPorts are requested to perform dynamic spreading. The RSSv1 OID for configuration of RSS parameters, [OID_GEN_RECEIVE_SCALE_PARAMETERS](oid-gen-receive-scale-parameters.md), is used for these VPorts that are still in static spreading mode.
+
+Miniport drivers only need to implement one RSS control mechanism - either RSSv1 or RSSv2. If the driver advertises RSSv2 support, NDIS will convert RSSv1 OIDs to RSSv2 OIDs if necessary to congifure per-VPort spreading. The miniport driver must support the two new OIDs and modify the behavior of the RSSv1 OID_GEN_RECEIVE_SCALE_PARAMETERS OID as follows:
+
+- [OID_GEN_RECEIVE_SCALE_PARAMETERS](oid-gen-receive-scale-parameters.md) is used only for Query requests in RSSv2 and not for setting RSS parameters.
+- [OID_GEN_RECEIVE_SCALE_PARAMETERS_V2](oid-gen-receive-scale-parameters-v2.md) is a Query and a Set OID used for configuring the scaling entity's parameters such as the number of queues, the number of ITEs, RSS enablement/disablement, and hash key updates.
+- [OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES](oid-gen-rss-set-indirection-table-entries.md) is a Method OID used to perform modification of indirection table entries.
 
 ## Handling RSSv2 OIDs
 
-[OID_GEN_RECEIVE_SCALE_PARAMETERS_V2](oid-gen-receive-scale-parameters-v2.md) is a Regular OID and is handled the same as the older [OID_GEN_RECEIVE_SCALE_PARAMETERS](oid-gen-receive-scale-parameters.md) OID was in RSSv1. [OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES](oid-gen-rss-set-indirection-table-entries.md), however, is a Synchronous OID that cannot return NDIS_STATUS_PENDING. For more details for handling this OID, see its reference page.
+[OID_GEN_RECEIVE_SCALE_PARAMETERS](oid-gen-receive-scale-parameters.md) is only used to query the current RSS parameters of a given scaling entity. In RSSv1, this OID is used to set parameters. For RSSv2-capable miniport drivers, NDIS automatically performs this role conversion for the driver and issues the following two OIDs to set parameters instead.
 
+[OID_GEN_RECEIVE_SCALE_PARAMETERS_V2](oid-gen-receive-scale-parameters-v2.md) is a Regular OID and is handled the same as the OID_GEN_RECEIVE_SCALE_PARAMETERS OID was handled in RSSv1. This OID is not visible to NDIS light-weight filter drivers (LWFs) prior to NDIS 6.80.
+
+[OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES](oid-gen-rss-set-indirection-table-entries.md), however, is a [Synchronous OID](synchronous-oid-request-interface-in-ndis-6-80.md) that cannot return NDIS_STATUS_PENDING. This OID must be executed and completed in the processor context which originated the OID. Like OID_GEN_RECEIVE_SCALE_PARAMETERS_V2, it is also not visible to NDIS LWFs prior to NDIS 6.80. LWFs in NDIS 6.80 and later are not permitted to delay this OID or move to another processor. Its payload contains an array of simple "move ITE" actions, each of which contains a command to move a single ITE for a scaling entity to a different target CPU. Elements of the array can reference different scaling entities (VPorts).
+
+Each type of NDIS driver, miniport, filter, and protocol, have entry points to support the Synchronous OID request interface:
+
+| NDIS driver type | Synchronous OID handler(s) | Function to originate Synchronous OIDs |
+| --- | --- | --- |
+| Miniport | [*MiniportSynchronousOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-miniport_synchronous_oid_request) | N/A |
+| Filter | <ul><li>[*FilterSynchronousOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-filter_synchronous_oid_request)</li><li>[*FilterSynchronousOidRequestComplete*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-filter_synchronous_oid_request_complete)</li></ul> | [**NdisFSynchronousOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfsynchronousoidrequest) |
+| Protocol | N/A | [**NdisSynchronousOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndissynchronousoidrequest) |
+
+## RSS state transitions, ITE updates, and primary/default processors
+
+### Steering parameters
+
+In RSSv2, different parameters are used to steer traffic to the correct CPU depending on the RSS state (enabled or disabled). When RSS is disabled, only the primary processor is used for directing traffic. When RSS is enabled, both the default processor and all ITEs are used for directing traffic. These steering parameters are labele as "active" or "inactive", summarized in the following table:
+
+| Steering parameter | RSS disabled | RSS enabled |
+| --- | --- | --- |
+| Primary processor | Active | Inactive |
+| Default processor | Inactive | Active |
+| ITE[0..N] | Inactive | Active |
+
+When a steering parameter is in the *active* state, it directs the traffic. From the moment of an RSS state transition that makes a parameter *inactive*, miniport drivers must track changes to the parameter until the reverse transition activates it again. This means that a miniport driver needs to track all updates to the default processor and indirection table entries while RSS is disabled for that scaling entity. When RSS is enabled, the current tracked state for the default processor and indirection table should take effect.
+
+For example, consider the scenario when software vRSS is already enabled. In this case, the indirection table already exists in the upper layer protocol and is actively used by the upper layer's software spreading code. If, during hardware RSS enablement, all entries start pointing to the primary processor before the updates to *move* the indirection table entries are issued to and executed by the hardware, the primary processor may experience a short jam. If the miniport driver has tracked default processor and ITE information, it can direct traffic to where it is already expected by the upper layer.
+
+Note that while miniport drivers must track all updates to inactive steering parameters, they should defer validation of those parameters until the RSS state change attempts to make these parameters *active*. For example, with software spreading while RSS is disabled, upper layer protocols can use any processor for spreading (including outside the adapter's RSS set). The miniport dirver should fail the RSS state transition if it discovers that any tracked *inactive* steering parameters are invalid.
+
+### Initial state and updates to steering parameters
+
+The following table describes the initial state of the scaling entity after creation (for example, after VPort creation), as well as how the parameters can be updated:
+
+| Parameter | Description |
+| --- | --- |
+| Primary processor | <ul><li>Initialized with the **Affinity** processor specified during VPort creation.</li><li>Can be updated using the [OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES](oid-gen-rss-set-indirection-table-entries.md) OID with the **NDIS_RSS_SET_INDIRECTION_ENTRY_FLAG_PRIMARY_PROCESSOR** flag set.</li><li>Can be updated using the [OID_NIC_SWITCH_VPORT_PARAMETERS](oid-nic-switch-vport-parameters.md) OID with the **NDIS_NIC_SWITCH_VPORT_PARAMS_PROCESSOR_AFFINITY_CHANGED** flag set (this is the compatibility path for existing cmdlet's).</li><li>Can be read using the [OID_NIC_SWITCH_VPORT_PARAMETERS](oid-nic-switch-vport-parameters.md) OID with the **NDIS_NIC_SWITCH_VPORT_PARAMS_PROCESSOR_AFFINITY_CHANGED** flag (this is the compatibility path for existing cmdlet's).</li><li>Post-initialization moves of the primary processor do not affect the default processor or the contents of the indirection table.</li></ul> |
+| Default processor | <ul><li>Initialized with the **Affinity** processor specified during VPort creation.</li><li>Can be updated using the [OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES](oid-gen-rss-set-indirection-table-entries.md) OID with the **NDIS_RSS_SET_INDIRECTION_ENTRY_FLAG_DEFAULT_PROCESSOR** flag set.</li></ul> |
+| Indirection table | <ul><li>**NumberOfIndirectionTableEntries** is set to **1**.</li><li>The only entry is initialized with the **Affinity** processor specified during VPort creation.</li><li>Can be updated using the [OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES](oid-gen-rss-set-indirection-table-entries.md) OID.</li></ul> |

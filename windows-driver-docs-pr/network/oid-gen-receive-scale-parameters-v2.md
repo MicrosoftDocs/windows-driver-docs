@@ -10,7 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-[!include[RSSv2 Beta Prerelease](../rssv2-beta-prerelease.md)]
+
 
 # OID_GEN_RECEIVE_SCALE_PARAMETERS_V2
 
