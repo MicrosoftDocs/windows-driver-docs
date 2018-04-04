@@ -1,27 +1,36 @@
+---
+title: Get a product
+description: This method in the Microsoft Hardware API retrieves data for a specific product registered to your Windows Dev Center account.
+ms.author: windowsdriverdev
+ms.date: 04/05/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+---
+
 # Get a product
 
-Use this method in the Microsoft Hardware API to retrieve data for a
-specific product registered to your Windows Dev Center account.
+Use this method in the Microsoft Hardware API to retrieve data for a specific product registered to your Windows Dev Center account.
 
 ## Prerequisites
 
-If you have not done so already, complete all the
-[prerequisites](TBD) for the Microsoft Hardware APIs before trying to use any of these methods.
+If you have not done so already, complete all the [prerequisites](#manage-hardware-submissions-using-apis)  for the Microsoft Hardware APIs before trying to use any of these methods.
 
 ## Request
 
-This method has the following syntax. 
+This method has the following syntax. See the following sections for usage examples and descriptions of the header and request body.
 
-  | Method |  Request URI |
-  |-|-|
-  | GET  | `https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productID}` |
+|Method|Request URI|
+|:--|:--|
+|GET|https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productID}|
 
 ### Request header
 
 | Header | Type | Description |
-|-|-|-|
-| authorization | string | Required. The Azure AD access token in the form **Bearer**<em> \<token\></em>. |
-|  accept | string |  Optional. Specifies the type of content. Allowed value is "application/json" |
+|:--|:--|:--|
+| authorization | string | Required. The Azure AD access token in the form ****Bearer**** <token>. |
+| accept | string | Optional. Specifies the type of content. Allowed value is “application/json” |
+
 
 ### Request parameters
 
@@ -36,52 +45,47 @@ Do not provide a request body for this method.
 The following example demonstrates how to retrieve information about a specific product registered to your account.
 
 ```
-GET
-https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/14039471039847257 HTTP/1.1
-Authorization: Bearer \<your access token\>
+GET https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/14039471039847257 HTTP/1.1
+Authorization: Bearer <your access token>
 ```
 
 ## Response
 
-The following example demonstrates the JSON response body returned by a
-successful request for a specific product registered to a developer
-account. For more details about the values in the response body, see the
-following section.
+The following example demonstrates the JSON response body returned by a successful request for a specific product registered to a developer account. For more details about the values in the response body, see the following section.
 
-JSON Copy
+```json
 {
-\"id\": 9007199267351834,
-\"sharedProductId\": 1152921504606971100,
-\"links\": \[
-{
-\"href\":
-\"https://manage.devcenter.microsoft.com/api/v1/hardware/products/9007199267351834\",
-\"rel\": \"self\",
-\"method\": \"GET\"
-},
-{
-\"href\":
-\"https://manage.devcenter.microsoft.com/api/v1/hardware/products/9007199267351834/submissions\",
-\"rel\": \"get\_submissions\",
-\"method\": \"GET\"
+  "id": 9007199267351834,
+  "sharedProductId": 1152921504606971100,
+  "links": [
+    {
+      "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products/9007199267351834",
+      "rel": "self",
+      "method": "GET"
+    },
+    {
+      "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products/9007199267351834/submissions",
+      "rel": "get_submissions",
+      "method": "GET"
+    }
+  ],
+  "isCommitted": true,
+  "isExtensionInf": false,
+  "deviceMetadataIds": [],
+  "deviceType": "notSet",
+  "isTestSign": false,
+  "marketingNames": [],
+  "productName": "NewDriverHacked",
+  "selectedProductTypes": {},
+  "requestedSignatures": [
+    "WINDOWS_v100_X64_TH1_FULL",
+    "WINDOWS_v63_X64"
+  ],
+  "additionalAttributes": {},
+  "testHarness": "hlk"
 }
-\],
-\"isCommitted\": true,
-\"isExtensionInf\": false,
-\"deviceMetadataIds\": \[\],
-\"deviceType\": \"notSet\",
-\"isTestSign\": false,
-\"marketingNames\": \[\],
-\"productName\": \"NewDriverHacked\",
-\"selectedProductTypes\": {},
-\"requestedSignatures\": \[
-\"WINDOWS\_v100\_X64\_TH1\_FULL\",
-\"WINDOWS\_v63\_X64\"
-\],
-\"additionalAttributes\": {},
-\"testHarness\": \"hlk\"
-}
-
+```
 
 ## Error codes
-Refer to [Error codes](TBD) for details.
+
+Refer [error codes](#error-codes)  for details.

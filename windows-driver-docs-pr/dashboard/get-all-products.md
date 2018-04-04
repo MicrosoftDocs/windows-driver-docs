@@ -1,27 +1,35 @@
+---
+title: Get all products
+description: This method in the Microsoft Hardware API retrieves data for all products registered to your Windows Dev Center account.
+ms.author: windowsdriverdev
+ms.date: 04/05/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+---
+
 # Get all products
 
-Use this method in the Microsoft Hardware API to retrieve data for all
-the products registered to your Windows Dev Center account.
+Use this method in the Microsoft Hardware API to retrieve data for all the products registered to your Windows Dev Center account.
 
 ## Prerequisites
 
-If you have not done so already, complete all the
-[prerequisites](TBD) for the Microsoft Hardware APIs before trying to use any of these methods.
+If you have not done so already, complete all the [prerequisites](#manage-hardware-submissions-using-apis)  for the Microsoft Hardware APIs before trying to use any of these methods.
 
 ## Request
 
-This method has the following syntax. 
+This method has the following syntax. See the following sections for usage examples and descriptions of the header and request body.
 
-|  Method   |Request URI|
-|-|-|
-|GET      | `https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/`
+|Method|Request URI|
+|--|--|
+|GET|https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/|
 
 ### Request header
 
-|  Header    |      Type   |  Description  |
-|-|-|-|
-|  Authorization |   string |  Required. The Azure AD access token in the form **Bearer**<em>\<token\></em>.|
-|  accept   |       string   |Optional. Specifies the type of content. Allowed value is "application/json" |
+|Header|Type|Description|
+|--|--|--|
+|Authorization|string|Required. The Azure AD access token in the form **Bearer** <token>.|
+|accept|string|Optional. Specifies the type of content. Allowed value is “application/json”|
 
 ### Request parameters
 
@@ -33,122 +41,111 @@ Do not provide a request body for this method.
 
 ### Request examples
 
-The following example demonstrates how to retrieve information about all
-products that are registered to your account.
+The following example demonstrates how to retrieve information about all products that are registered to your account.
 
 ```
-GET
-https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/HTTP/1.1
-Authorization: Bearer \<your access token\>
+GET https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/ HTTP/1.1
+Authorization: Bearer <your access token>
 ```
 
 ## Response
 
-The following example demonstrates the JSON response body returned by a
-successful request for all the products that are registered to a
-developer account. For brevity, this example only shows the data for the
-first two products returned by the request. For more details about the
-values in the response body, see the following section.
+The following example demonstrates the JSON response body returned by a successful request for all the products that are registered to a developer account. For brevity, this example only shows the data for the first two products returned by the request. For more details about the values in the response body, see the following section.
 
 ```json
 {
-"value": [
-{
-"id": 9007199267351834,
-"sharedProductId": 1152921504606971100,
-"links": [
-{
-"href":
-"https://manage.devcenter.microsoft.com/api/v1/hardware/products/9007199267351834",
-"rel": "self",
-"method": "GET"
-},
-{
-"href":
-"https://manage.devcenter.microsoft.com/api/v1/hardware/products/9007199267351834/submissions",
-"rel": "get_submissions",
-"method": "GET"
-}
-],
-"isCommitted": true,
-"isExtensionInf": false,
-"deviceMetadataIds": [],
-"deviceType": "notSet",
-"isTestSign": false,
-"marketingNames": [],
-"productName": "NewDriverHacked",
-"selectedProductTypes": {},
-"requestedSignatures": [
-"WINDOWS_v100_X64_TH1_FULL",
-"WINDOWS_v63_X64"
-],
-"additionalAttributes": {},
-"testHarness": "hlk"
-},
-{
-"id": 9007199267351836,
-"sharedProductId": 1152921504606971100,
-"links": [
-{
-"href":
-"https://manage.devcenter.microsoft.com/api/v1/hardware/products/9007199267351835",
-"rel": "self",
-"method": "GET"
-},
-{
-"href":
-"https://manage.devcenter.microsoft.com/api/v1/hardware/products/9007199267351835/submissions",
-"rel": "get_submissions",
-"method": "GET"
-}
-],
-"isCommitted": true,
-"isExtensionInf": false,
-"announcementDate": "2016-10-22T00:00:00Z",
-"deviceMetadataCategory": "Input.Digitizer.Multitouch",
-"deviceMetadataIds": [],
-"deviceType": "internalExternal",
-"isTestSign": false,
-"marketingNames": [
-"MEU"
-],
-"productName": "Mew2?",
-"selectedProductTypes": {
-"windows_v100": "Touch",
-"windows81": "Unclassified"
-},
-"requestedSignatures": [
-"WINDOWS_v100_X64_TH1_FULL",
-"WINDOWS_v63_X64"
-],
-"additionalAttributes": {},
-"testHarness": "hlk"
-}
-],
-"links": [
-{
-"href":
-"https://manage.devcenter.microsoft.com/api/v1/hardware/products?pageSize=50",
-"rel": "self",
-"method": "GET"
-},
-{
-"href":
-"https://manage.devcenter.microsoft.com/api/v1/hardware/products?pageSize=50&continuationToken=PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTE2Ij8%2BPENvbnRpbnVhdGlvblRva2VuPjxWZXJzaW9uPjIuMDwvVmVyc2lvbj48VHlwZT5UYWJsZTwvVHlwZT48TmV4dFBhcnRpdGlvbktleT4xITQ4IWNIVmliR2x6YUdWeWN5MHdNREF3TURBd01EQXdNREF3TURBd01ESTVPVFl6T1RJdzwvTmV4dFBhcnRpdGlvbktleT48TmV4dFJvd0tleT4xITk2IWRYTmxjaTFrWld4bGRHVmtMVEF0SUNBZ0lDQWdTR0Z5WkhkaGNtVkVjbWwyWlhJdGNISnZaSFZqZEhNdE1EQXdNREF3TURBd09UQXdOekU1T1RJMk56TTNNakUyTkEtLTwvTmV4dFJvd0tleT48VGFyZ2V0TG9jYXRpb24%2BUHJpbWFyeTwvVGFyZ2V0TG9jYXRpb24%2BPC9Db250aW51YXRpb25Ub2tlbj4%3D",
-"rel": "next_link",
-"method": "GET"
-}
-]
+  "value": [
+    {
+      "id": 9007199267351834,
+      "sharedProductId": 1152921504606971100,
+      "links": [
+        {
+          "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products/9007199267351834",
+          "rel": "self",
+          "method": "GET"
+        },
+        {
+          "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products/9007199267351834/submissions",
+          "rel": "get_submissions",
+          "method": "GET"
+        }
+      ],
+      "isCommitted": true,
+      "isExtensionInf": false,
+      "deviceMetadataIds": [],
+      "deviceType": "notSet",
+      "isTestSign": false,
+      "marketingNames": [],
+      "productName": "NewDriverHacked",
+      "selectedProductTypes": {},
+      "requestedSignatures": [
+        "WINDOWS_v100_X64_TH1_FULL",
+        "WINDOWS_v63_X64"
+      ],
+      "additionalAttributes": {},
+      "testHarness": "hlk"
+    },
+    {
+      "id": 9007199267351836,
+      "sharedProductId": 1152921504606971100,
+      "links": [
+        {
+          "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products/9007199267351835",
+          "rel": "self",
+          "method": "GET"
+        },
+        {
+          "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products/9007199267351835/submissions",
+          "rel": "get_submissions",
+          "method": "GET"
+        }
+      ],
+      "isCommitted": true,
+      "isExtensionInf": false,
+      "announcementDate": "2016-10-22T00:00:00Z",
+      "deviceMetadataCategory": "Input.Digitizer.Multitouch",
+      "deviceMetadataIds": [],
+      "deviceType": "internalExternal",
+      "isTestSign": false,
+      "marketingNames": [
+        "MEU"
+      ],
+      "productName": "Mew2?",
+      "selectedProductTypes": {
+        "windows_v100": "Touch",
+        "windows81": "Unclassified"
+      },
+      "requestedSignatures": [
+        "WINDOWS_v100_X64_TH1_FULL",
+        "WINDOWS_v63_X64"
+      ],
+      "additionalAttributes": {},
+      "testHarness": "hlk"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products?pageSize=50",
+      "rel": "self",
+      "method": "GET"
+    },
+    {
+      "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products?pageSize=50&continuationToken=PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTE2Ij8%2BPENvbnRpbnVhdGlvblRva2VuPjxWZXJzaW9uPjIuMDwvVmVyc2lvbj48VHlwZT5UYWJsZTwvVHlwZT48TmV4dFBhcnRpdGlvbktleT4xITQ4IWNIVmliR2x6YUdWeWN5MHdNREF3TURBd01EQXdNREF3TURBd01ESTVPVFl6T1RJdzwvTmV4dFBhcnRpdGlvbktleT48TmV4dFJvd0tleT4xITk2IWRYTmxjaTFrWld4bGRHVmtMVEF0SUNBZ0lDQWdTR0Z5WkhkaGNtVkVjbWwyWlhJdGNISnZaSFZqZEhNdE1EQXdNREF3TURBd09UQXdOekU1T1RJMk56TTNNakUyTkEtLTwvTmV4dFJvd0tleT48VGFyZ2V0TG9jYXRpb24%2BUHJpbWFyeTwvVGFyZ2V0TG9jYXRpb24%2BPC9Db250aW51YXRpb25Ub2tlbj4%3D",
+      "rel": "next_link",
+      "method": "GET"
+    }
+  ]
 }
 ```
 
 ### Response body
 
-| Value   | Type   | Description |
-|-|-|-|
-|value |  array  | An array of objects that contain information about each product that is registered to your account. For more information about the data in each object, see [Product resource](TBD).|
-|  links |  array |  An array of objects with helpful links about the containing entity. Refer to [Link object](TBD) for more details.
+| Value | Type | Description |
+|:--|:--|:--|
+| value | array | An array of objects that contain information about each product that is registered to your account. For more information about the data in each object, see [Product resource](#product-resource) . |
+| links | array | An array of objects with helpful links about the containing entity. Refer [link object](#link-object)  for more details  |
+
 
 ## Error codes
 
-Refer to [Error codes](TBD) for details.
+Refer to [error codes](#error-codes)  for details. 
