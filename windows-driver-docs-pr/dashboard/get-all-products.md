@@ -50,8 +50,7 @@ developer account. For brevity, this example only shows the data for the
 first two products returned by the request. For more details about the
 values in the response body, see the following section.
 
-```
-JSON Copy
+```json
 {
 "value": [
 {
