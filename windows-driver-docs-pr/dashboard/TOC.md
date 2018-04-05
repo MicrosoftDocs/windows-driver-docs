@@ -27,6 +27,8 @@
 #### [Create a new product](create-a-new-product.md)
 #### [Create a new submission for a product](create-a-new-submission-for-a-product.md)
 #### [Commit a product submission](commit-a-product-submission.md)
+#### [Update submission data](update-submission-data.md)
+#### [Update product data](update-product-data.md)
 ## [Dashboard Administration](dashboard-administration.md)
 ### [Get started with the Hardware Program](get-started-with-the-hardware-dashboard.md)
 ### [Register for the Hardware Program](register-for-the-hardware-program.md)
