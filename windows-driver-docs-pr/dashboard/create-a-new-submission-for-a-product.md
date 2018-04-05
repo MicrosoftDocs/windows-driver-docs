@@ -22,7 +22,7 @@ This method has the following syntax. See the following sections for usage examp
 
 | Method | Request URI |
 |:--|:--|
-| POST | https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/{productID}/submissions |
+| POST | `https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/{productID}/submissions` |
 
 
 The productId in the method is the product for which the submission is intended.
@@ -31,7 +31,7 @@ The productId in the method is the product for which the submission is intended.
 
 | Header | Type | Description |
 |:--|:--|:--|
-| Authorization | String | Required. The Azure AD access token in the form ****Bearer**** <token>. |
+| Authorization | String | Required. The Azure AD access token in the form **Bearer** \<token\>. |
 | Accept | String | Optional. Specifies the type of content. Allowed value is “application/json” |
 
 

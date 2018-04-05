@@ -18,11 +18,11 @@ https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/
 Before you can use these methods, the product must already exist in your Dev Center account. To create or manage submissions for products, see the methods in [Manage product submissions](manage-product-submissions.md).
 
 | Method | URI | Description |
-|:--|:--|:--|
-|GET	https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/	|[Get data for all your products](get-all-products.md)|
-|GET	https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/{productID}	|[Get data for a specific product](get-a-product.md)|
-|GET	https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/{productID}/submissions	|[Get data for all submissions of a product](get-all-submissions.md)|
-|GET	https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/{productID}/submissions/{submissionId}	|[Get data for a specific submission of a product](get-a-submission.md)|
+|-|-|-|
+|GET |	`https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/`	|[Get data for all your products](get-all-products.md)|
+|GET |	`https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/{productID}`	|[Get data for a specific product](get-a-product.md)|
+|GET |	`https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/{productID}/submissions`	|[Get data for all submissions of a product](get-all-submissions.md)|
+|GET |	`https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/{productID}/submissions/{submissionId}`	|[Get data for a specific submission of a product](get-a-submission.md)|
 
 ## Prerequisites
 
@@ -92,7 +92,7 @@ This resource has the following values
 | marketingNames | array of strings | Marketing names or aliases of the product |
 | productName | String | The name of the driver as specified during creation |
 | selectedProductTypes | dictionary  | Key value pair where both are strings. <ul><li>**Key** represents the Operating System Family Code. For a list of Operating System Family Codes, see [list of OS family codes](#list-of-operating-system-family-codes).</li><li>**Value** represents the type of the product. For a list of type of products, see [product types](#list-of-product-types).</li></ul>|
-| requestedSignatures | array of strings | List of operating system signatures for which product is certified. For a list of all Operating systems, see [list of OS codes](#list-of-operating-system-family-codes)  |
+| requestedSignatures | array of strings | List of operating system signatures for which product is certified. For a list of all Operating systems, see [list of OS codes](#list-of-operating-system-codes)  |
 | additionalAttributes | Object | Refer [additional attributes object](#additional-attribute-object)  for more details. |
 | testHarness | string | The type of package which has been submitted. Possible values are <ul><li>hlk<li>hck</li><li>attestation</li><li>notset</li></ul>|
 | announcementDate | datetime | The date when the product will get included on the Windows Server Catalog |
@@ -149,7 +149,7 @@ This object has the following values
 
 | Value | Type | Description |
 |:--|:--|:--|
-| currentStep | string | The name of the current step in the overall workflow for this entity. <br>For ingestion/package submission the possible values are (description **in** parenthesis):<ul><li>packageInfoValidation (Validating **Package metadata and** contents)</li><li>preparation (Getting **package ready for** processing)</li><li>scanning (Scanning **package contents for** Malware)</li><li>validation (Validation **of test** results)</li><li>catalogCreation (Creating **a security catalog for** package)</li><li>manualReview (Undergoing **Manual** Review)</li><li>signing (Signing **the** binaries)</li><li>finalizeIngestion (Completing **the ingestion and getting signed files ready to download or** publish)</li></ul>|
+| currentStep | string | The name of the current step in the overall workflow for this entity. <br>For ingestion/package submission the possible values are (description in parenthesis):<ul><li>packageInfoValidation (*Validating Package metadata and contents*)</li><li>preparation (*Getting package ready for processing*)</li><li>scanning (*Scanning package contents for Malware*)</li><li>validation (*Validation of test results*)</li><li>catalogCreation (*Creating a security catalog for package*)</li><li>manualReview (*Undergoing Manual Review*)</li><li>signing (*Signing the binaries*)</li><li>finalizeIngestion (*Completing the ingestion and getting signed files ready to download or publish*)</li></ul>|
 | State | string | The state of the current step. Possible values are:<ul><li>notStarted</li><li>started</li><li>failed</li><li>completed</li></ul> |
 | Messages | array | An array of strings to provide messages about current step (especially in case of failure) |
 
@@ -358,7 +358,7 @@ A product can be of the following types. This information is used along with the
 
 The following table lists Operating system Family Codes and their descriptions.
 
-| ****OS Family Code**** | ****Description**** |
+| OS Family Code | Description |
 |:--|:--|
 | WindowsMe | Windows Me |
 | Windows2000 | Windows 2000 |
@@ -390,7 +390,7 @@ The following table lists Operating system Family Codes and their descriptions.
 
 The following table lists Operating System Codes and their descriptions.
 
-| ****OS Code**** | ****Description**** |
+| OS Code | Description |
 |:--|:--|
 | WindowsMe | Windows Me |
 | Windows2000 | Windows 2000 |

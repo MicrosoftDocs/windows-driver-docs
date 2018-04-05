@@ -22,14 +22,14 @@ This method has the following syntax. See the following sections for usage examp
 
 | Method | Request URI |
 |:--|:--|
-| POST | https://manage.devcenter.microsoft.com/api/v1.0/hardware/products |
+| POST | `https://manage.devcenter.microsoft.com/api/v1.0/hardware/products` |
 
 
 ### Request header
 
 | Header | Type | Description |
 |:--|:--|:--|
-| Authorization | string | Required. The Azure AD access token in the form ****Bearer**** <token>. |
+| Authorization | string | Required. The Azure AD access token in the form **Bearer** \<token\>. |
 | accept | string | Optional. Specifies the type of content. Allowed value is “application/json” |
 
 

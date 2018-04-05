@@ -22,13 +22,13 @@ This method has the following syntax. See the following sections for usage examp
 
 |Method|Request URI|
 |:--|:--|
-|GET|https://manage.devcenter.microsoft.com/ api/v1.0/hardware/products/{productID}/submissions|
+|GET| `https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/{productID}/submissions` |
 
 ### Request header
 
 |Header|Type|Description
 |:--|:--|:--|
-|Authorization|string|Required. The Azure AD access token in the form **Bearer** <token>.|
+|Authorization|string|Required. The Azure AD access token in the form **Bearer** \<token\>.|
 |accept|string|Optional. Specifies the type of content. Allowed value is “application/json”|
 
 ### Request parameters
@@ -45,7 +45,7 @@ The following example demonstrates how to retrieve information about all submiss
 
 
 ```
-GET https://manage.devcenter.microsoft.com/ api/v1.0/hardware/products/ 13635057453741329/submissions HTTP/1.1
+GET https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/13635057453741329/submissions HTTP/1.1
 Authorization: Bearer <your access token>
 ```
 

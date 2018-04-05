@@ -32,7 +32,7 @@ The productId in the method is the product for which the submission is intended.
 
 | Header | Type | Description |
 |:--|:--|:--|
-| Authorization | String | Required. The Azure AD access token in the form ****Bearer**** <token>. |
+| Authorization | String | Required. The Azure AD access token in the form **Bearer** \<token\>. |
 | accept | String | Optional. Specifies the type of content. Allowed value is “application/json” |
 
 ### Request parameters
@@ -48,7 +48,7 @@ Do not provide request body for this method.
 The following example demonstrates how to commit a submission.
 
 ```
-POST https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/14631253285588838/submissions/ 1152921504621465124/commit HTTP/1.1
+POST https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/14631253285588838/submissions/1152921504621465124/commit HTTP/1.1
 Authorization: Bearer <your access token>
 ```
 

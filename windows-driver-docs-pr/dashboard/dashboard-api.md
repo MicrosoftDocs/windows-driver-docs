@@ -15,7 +15,7 @@ The following steps describe the end-to-end process of using the Microsoft Hardw
 1.	These APIs can only be used by developer accounts that belong to the [Windows Hardware Dev Center program](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/get-started-with-the-hardware-dashboard).
 2.	Make sure that you have completed the prerequisites below.
 3.	Before you call a method in the Microsoft Hardware API, obtain an Azure AD access token, as illustrated below. After you obtain a token, you have 60 minutes to use this token in calls to the Microsoft Store submission API before the token expires. After the token expires, you can generate a new token.
-4.	Call the Microsoft Store submission API.
+4.	Call the Microsoft Hardware API.
 
 
 
@@ -36,7 +36,7 @@ Before you can use the Microsoft Hardware API, you must associate an Azure AD ap
 ## Obtain an Azure AD access token
 
 
-Before you call any of the methods in the Microsoft Store submission API, you must first obtain an Azure AD access token that you pass to the **Authorization** header of each method in the API. After you obtain an access token, you have 60 minutes to use it before it expires. After the token expires, you can refresh the token, so you can continue to use it in further calls to the API. To obtain the access token, follow the instructions in [Service to Service Calls Using Client Credentials](https://azure.microsoft.com/documentation/articles/active-directory-protocols-oauth-service-to-service/) to send an HTTP POST to the `https://login.microsoftonline.com/<tenant_id>/oauth2/token endpoint`. Here is a sample request.
+Before you call any of the methods in the Microsoft Store submission API, you must first obtain an Azure AD access token that you pass to the **Authorization** header of each method in the API. After you obtain an access token, you have 60 minutes to use it before it expires. After the token expires, you can refresh the token, so you can continue to use it in further calls to the API. To obtain the access token, follow the instructions in [Service to Service Calls Using Client Credentials](https://azure.microsoft.com/documentation/articles/active-directory-protocols-oauth-service-to-service/) to send an HTTP POST to the `https://login.microsoftonline.com/<tenant_id>/oauth2/token` endpoint. Here is a sample request.
 
 ```
 POST https://login.microsoftonline.com/<tenant_id>/oauth2/token HTTP/1.1
@@ -66,7 +66,7 @@ After you have an Azure AD access token, you can call methods in the Microsoft H
 
 The following sample provides detailed code that demonstrate how to use the Microsoft Hardware API:
 
-*	[C# sample](https://docs.microsoft.com/en-us/windows/uwp/monetize/csharp-code-examples-for-the-windows-store-submission-api)
+*	[C# sample](http://download.microsoft.com/download/C/F/4/CF404E53-87A0-4204-BA13-A64B09A237C1/HardwareApiCSharpSample.zip)
 
 ## Additional help
 
