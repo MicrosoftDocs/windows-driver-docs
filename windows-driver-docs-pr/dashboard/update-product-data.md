@@ -45,7 +45,7 @@ The following example demonstrates the JSON request body for updating a product.
 }
 ```
 
-For details about the fields in the request, refer to [product resource](get-product-data.md/#product-resource).
+For details about the fields in the request, refer to [product resource](get-product-data.md#product-resource).
 
 ### Request examples
 The following example demonstrates how to update a product.
@@ -62,5 +62,5 @@ The response will be empty with a HTTP status of 204.
 After this step, use the method [get product details](get-a-product.md) to get the updated details of the product.
 
 ## Error codes
-Refer to [Error codes](get-product-data.md/#error-codes) for details.
+Refer to [Error codes](get-product-data.md#error-codes) for details.
 
