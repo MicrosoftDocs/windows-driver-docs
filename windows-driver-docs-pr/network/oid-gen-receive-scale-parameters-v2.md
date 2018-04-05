@@ -10,27 +10,26 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-
-
 # OID_GEN_RECEIVE_SCALE_PARAMETERS_V2
 
-The OID_GEN_RECEIVE_SCALE_PARAMETERS_V2 OID is sent to RSSv2-capable miniport drivers to set run-time parameters, other than the indirection table, for a scaling entity. OID_GEN_RECEIVE_SCALE_PARAMETERS_V2 replaces the older [OID_GEN_RECEIVE_SCALE_PARAMETERS](oid-gen-receive-scale-parameters.md) OID from RSSv1 and is not visible to NDIS Light Weight Filters (LWFs) before NDIS 6.80. This OID is a Regular OID and can be issued as a Query or Set request. It is issued at IRQL = PASSIVE_LEVEL. It can target a given VPort, when the *NDIS_OID_REQUEST_FLAGS_VPORT_ID_VALID* flag is set at NIC switch creation. Otherwise, it targets the physical NIC in the Native RSS case.
+The OID_GEN_RECEIVE_SCALE_PARAMETERS_V2 OID is sent to RSSv2-capable miniport drivers to set run-time parameters, other than the indirection table, for a scaling entity. OID_GEN_RECEIVE_SCALE_PARAMETERS_V2 replaces the [OID_GEN_RECEIVE_SCALE_PARAMETERS](oid-gen-receive-scale-parameters.md) OID from RSSv1 and is not visible to NDIS Light Weight Filters (LWFs) before NDIS 6.80. This OID is a Regular OID and can be issued as a Query or Set request. It is issued at IRQL == PASSIVE_LEVEL. It can target a given VPort, when the *NDIS_OID_REQUEST_FLAGS_VPORT_ID_VALID* flag is set at NIC switch creation. Otherwise, it targets the physical NIC in the Native RSS case.
 
 As a Query, NDIS and overlying drivers can use OID_GEN_RECEIVE_SCALE_PARAMETERS_V2 to query the RSS parameters of a NIC. NDIS returns an [NDIS_RECEIVE_SCALE_PARAMETERS_V2](https://msdn.microsoft.com/library/windows/hardware/96EAB6EE-BF9A-46AD-8DED-5D9BD2B6F219) structure that defines the current RSS parameters.
 
 As a Set, the purpose of this OID is to perform the following actions:
 
-- Initially configure the scaling entity (a miniport adapter in Native RSS mode or a VPort in VMQ mode)
-- Enable or disable RSS
-- When in RSS mode, perform non-timing-critical management functions such as changing the hash key, number of queues, or number of indirection table entries
+- Initially configure the scaling entity (a miniport adapter in Native RSS mode or a VPort in VMQ mode).
+- Enable or disable RSS.
+- When in RSS mode, perform non-timing-critical management functions such as changing the hash key, hash type and hash function, number of queues, or number of indirection table entries for the scaling entity.
 
 ## Remarks
 
-Enabling RSS and setting RSS parameters can be performed in one step, using the **NDIS_RECEIVE_SCALE_PARAMETERS_V2** structure. After the upper layer enables RSS using this OID, the initial state of the scaling entity is as follows:
+Enabling RSS and setting RSS parameters can be performed in one step.. After the upper layer enables RSS using this OID, the initial state of the scaling entity is as follows:
 
-- **DefaultProcessor** is the same as **PrimaryProcessor**
-- All the indirection table entries (ITEs) also point to the **PrimaryProcessor** (as specified during VPort creation) in VMMQ mode, or to the **BasePRocessor** in Native RSS mode
-- Hash is being calculated and set in the corresponding OOB for all packets
+- The primary processor becomes *inactive*.
+- The default processor becomes *active*.
+- All the ITEs become *active*.
+- The miniport driver starts calculation of the RSS hash, setting of the corresponding OOB for all packets, and directing packets to a processor specified by the indirection table entry or default processor parameter.
 
 After RSS is enabled, the upper layer issues the [OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES](oid-gen-rss-set-indirection-table-entries.md) OID to move ITEs to different processors. In RSSv2, the **DefaultQueue** and **PrimaryProcessor** are also moved to a different processor using OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES.
 

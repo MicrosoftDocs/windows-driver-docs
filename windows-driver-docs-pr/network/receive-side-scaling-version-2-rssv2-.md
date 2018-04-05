@@ -73,7 +73,7 @@ Each type of NDIS driver, miniport, filter, and protocol, have entry points to s
 
 ### Steering parameters
 
-In RSSv2, different parameters are used to steer traffic to the correct CPU depending on the RSS state (enabled or disabled). When RSS is disabled, only the primary processor is used for directing traffic. When RSS is enabled, both the default processor and all ITEs are used for directing traffic. These steering parameters are labele as "active" or "inactive", summarized in the following table:
+In RSSv2, different parameters are used to steer traffic to the correct CPU depending on the RSS state (enabled or disabled). When RSS is disabled, only the primary processor is used for directing traffic. When RSS is enabled, both the default processor and all ITEs are used for directing traffic. These *steering parameters* are labele as "active" or "inactive", summarized in the following table:
 
 | Steering parameter | RSS disabled | RSS enabled |
 | --- | --- | --- |
@@ -83,9 +83,9 @@ In RSSv2, different parameters are used to steer traffic to the correct CPU depe
 
 When a steering parameter is in the *active* state, it directs the traffic. From the moment of an RSS state transition that makes a parameter *inactive*, miniport drivers must track changes to the parameter until the reverse transition activates it again. This means that a miniport driver needs to track all updates to the default processor and indirection table entries while RSS is disabled for that scaling entity. When RSS is enabled, the current tracked state for the default processor and indirection table should take effect.
 
-For example, consider the scenario when software vRSS is already enabled. In this case, the indirection table already exists in the upper layer protocol and is actively used by the upper layer's software spreading code. If, during hardware RSS enablement, all entries start pointing to the primary processor before the updates to *move* the indirection table entries are issued to and executed by the hardware, the primary processor may experience a short jam. If the miniport driver has tracked default processor and ITE information, it can direct traffic to where it is already expected by the upper layer.
+For example, consider the scenario when software vRSS is already enabled. In this case, the indirection table already exists in the upper layer protocol and is actively used by the upper layer's software spreading code. If, during hardware RSS enablement, all entries start pointing to the primary processor before the updates to *move* the indirection table entries are issued to and executed by the hardware, the primary processor might experience a short jam. If the miniport driver has tracked default processor and ITE information, it can direct traffic to where it is already expected by the upper layer.
 
-Note that while miniport drivers must track all updates to inactive steering parameters, they should defer validation of those parameters until the RSS state change attempts to make these parameters *active*. For example, with software spreading while RSS is disabled, upper layer protocols can use any processor for spreading (including outside the adapter's RSS set). The miniport dirver should fail the RSS state transition if it discovers that any tracked *inactive* steering parameters are invalid.
+Note that while miniport drivers must track all updates to inactive steering parameters, they should defer validation of those parameters until the RSS state change attempts to make these parameters *active*. For example, in the case of software spreading while hardware RSS is disabled, upper layer protocols can use any processor for spreading (including outside the adapter's RSS set). The upper layers ensure that, at the moment of RSS state transition, all *inactive* parameters are valid for the new RSS state. However, the miniport dirver should still validate the parameters and fail the RSS state transition if it discovers that any tracked *inactive* steering parameters are invalid.
 
 ### Initial state and updates to steering parameters
 
@@ -96,3 +96,32 @@ The following table describes the initial state of the scaling entity after crea
 | Primary processor | <ul><li>Initialized with the **Affinity** processor specified during VPort creation.</li><li>Can be updated using the [OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES](oid-gen-rss-set-indirection-table-entries.md) OID with the **NDIS_RSS_SET_INDIRECTION_ENTRY_FLAG_PRIMARY_PROCESSOR** flag set.</li><li>Can be updated using the [OID_NIC_SWITCH_VPORT_PARAMETERS](oid-nic-switch-vport-parameters.md) OID with the **NDIS_NIC_SWITCH_VPORT_PARAMS_PROCESSOR_AFFINITY_CHANGED** flag set (this is the compatibility path for existing cmdlet's).</li><li>Can be read using the [OID_NIC_SWITCH_VPORT_PARAMETERS](oid-nic-switch-vport-parameters.md) OID with the **NDIS_NIC_SWITCH_VPORT_PARAMS_PROCESSOR_AFFINITY_CHANGED** flag (this is the compatibility path for existing cmdlet's).</li><li>Post-initialization moves of the primary processor do not affect the default processor or the contents of the indirection table.</li></ul> |
 | Default processor | <ul><li>Initialized with the **Affinity** processor specified during VPort creation.</li><li>Can be updated using the [OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES](oid-gen-rss-set-indirection-table-entries.md) OID with the **NDIS_RSS_SET_INDIRECTION_ENTRY_FLAG_DEFAULT_PROCESSOR** flag set.</li></ul> |
 | Indirection table | <ul><li>**NumberOfIndirectionTableEntries** is set to **1**.</li><li>The only entry is initialized with the **Affinity** processor specified during VPort creation.</li><li>Can be updated using the [OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES](oid-gen-rss-set-indirection-table-entries.md) OID.</li></ul> |
+
+Updates to ITEs and the primary/default processors (using OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES) is invoked from the processor to which the corresponding entry currently points. For a given VPort, the upper layer ensures that no OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES OIDs to move ITEs or set the primary/default processors will be issued in these circumstances:
+
+1. While [OID_GEN_RECEIVE_SCALE_PARAMETERS_V2](oid-gen-receive-scale-parameters-v2.md) is in progress.
+2. After the VPort deletion sequence is initiated. For example, the upper layer issues the set filter OID only after the last OID to move ITEs is completed.
+
+### RSS disablement
+
+During RSS disablement, the upper layer protocol might choose to either point all the ITEs to the primary processor, then issue the OID to disable RSS, or it might choose to leave the indirection table as-is and disable RSS. In either case, receive traffic should target the primary processor.
+
+RSSv2 maintains a requirement from RSSv1 that permits the upper layer protocol to delete a VPort without first disabling RSS. The upper layer can set the receive filter on the VPort to zero, thus ensuring that no receive traffic flows through the VPort, then proceed with VPort deletion without disabling RSS. The upper layer guarantees that no OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES OIDs will be issued during or after VPort deletion.
+
+During both RSS disablement and VPort deletion, the miniport driver should take care of any pending internal operations that might exist because of previous queue moves.
+
+### RSSv2 invariants
+
+The upper layer protocol ensures that important invariants are not violated before performing management functions or ITE moves. For example:
+
+1. Before reducing the number of queues, the upper layer ensures that the indirection table does not reference more processors than the new number of queues for a VPort.
+2. The upper layer should not request an indirection table update that violates the currently configured number of queues for a VPort. The miniport driver should enforce this and return a failure.
+3. Before changing the number of indirection table entries for VMMQ-RESTRICTED adapters, the upper layer ensures that the contents of the indirection table are normalized to the power of 2.
+
+## Related links
+
+[OID_GEN_RECEIVE_SCALE_PARAMETERS_V2](oid-gen-receive-scale-parameters-v2.md)
+
+[OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES](oid-gen-rss-set-indirection-table-entries.md)
+
+[Synchronous OID request interface in NDIS 6.80](synchronous-oid-request-interface-in-ndis-6-80.md)
