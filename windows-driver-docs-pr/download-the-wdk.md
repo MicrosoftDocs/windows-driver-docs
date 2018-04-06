@@ -37,7 +37,7 @@ For ARM/ARM64 driver development, choose **Individual components** and under **C
 
 ### ![download icon](images/download-install.png) Step 2: Install WDK for Windows 10, version 1803
 
-* [Download WDK for Windows 10, version 1803](https://go.microsoft.com/fwlink/?linkid=871773) 
+* [Download WDK for Windows 10, version 1803](https://go.microsoft.com/fwlink/?linkid=871787) 
 
 New as of 1709 release: The WDK installation will by default install the WDK Visual Studio extension. This must be done in order for WDK VS integration to work. 
 
