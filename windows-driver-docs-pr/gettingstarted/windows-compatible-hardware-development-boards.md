@@ -35,7 +35,7 @@ For information on the latest supported development boards, see [IoT Device Opti
 
 -   **Simple Development for Windows Platforms**
 
-    SoC-based hardware development boards enable hardware manufacturers to develop and certify their Windows drivers without time-consuming purchase and licensing processes, and without the need for extensive engagement with Microsoft. Purchasing the boards is quick and easy, and development tips can be found in the MSDN community.
+    SoC-based hardware development boards enable hardware manufacturers to develop and certify their Windows drivers without time-consuming purchase and licensing processes, and without the need for extensive engagement with Microsoft. Purchasing the boards is quick and easy, and development tips can be found within the Microsoft developer community.
 
     [Watch the video](http://channel9.msdn.com/Events/Build/2014/2-536) to learn how Microsoft partnered with vendors like Intel to create easy onboarding opportunities for your off-SOC hardware.
 

@@ -84,7 +84,7 @@ You can install one of these versions of Windows on your Sharks Cove board:
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Windows_Embedded_8.1_Industry_Pro_with_Update__x86__-_DVD"></span><span id="windows_embedded_8.1_industry_pro_with_update__x86__-_dvd"></span><span id="WINDOWS_EMBEDDED_8.1_INDUSTRY_PRO_WITH_UPDATE__X86__-_DVD"></span>Windows Embedded 8.1 Industry Pro with Update (x86) - DVD</p></td>
-<td align="left"><p>This requires an MSDN subscription. We will refer to this as the full version.</p></td>
+<td align="left"><p>This requires a subscription. We will refer to this as the full version.</p></td>
 </tr>
 </tbody>
 </table>

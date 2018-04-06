@@ -28,8 +28,7 @@ To get started, be sure you have [Microsoft Visual Studio 2015](https://go.micro
 3.  In the middle pane, select **Kernel Mode Driver, Empty (KMDF)**.
 4.  In the **Name** field, enter "KmdfHelloWorld" for the project name.
 
-    **Note**  \*When you create a new KMDF or UMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
-
+    **Note**  When you create a new KMDF or UMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
      
 
 5.  In the **Location** field, enter the directory where you want to create the new project.
@@ -48,9 +47,7 @@ To get started, be sure you have [Microsoft Visual Studio 2015](https://go.micro
 
     **Note**  The file name extension is **.c**, not **.cpp**.
 
-     
-
-    Click **Add**. The Driver.c file is added under Source Files, as shown here.
+     Click **Add**. The Driver.c file is added under Source Files, as shown here.
 
     ![screen shot of the solution explorer window, showing the driver.c file added to the driver project](images/firstdriverkmdfsmall03.png)
 
@@ -84,15 +81,11 @@ To get started, be sure you have [Microsoft Visual Studio 2015](https://go.micro
         return status;
     }
     ```
-
 11. Save Driver.c.
 12. In the **Solution Explorer** window, right-click **Solution 'KmdfHelloWorld' (1 project)** and choose **Configuration Manager**. Choose a configuration and platform for both the driver project and the package project. For this exercise, we choose Debug and x64.
 
 13. In the **Solution Explorer** window, right-click **KmdfHelloWorld** and choose **Properties**. In **Wpp Tracing &gt; All Options**, set **Run Wpp tracing** to **No**. Click **Apply** and then **OK**.
-14. To build your driver and create a driver package, choose **Build Solution** from the **Build** menu. Visual Studio shows the build progress in the **Output** window. (If the **Output** window is not visible, choose **Output** from the **View** menu.)
-
-    When you have verified that the solution built successfully, you can close Visual Studio.
-
+14. To build your driver and create a driver package, choose **Build Solution** from the **Build** menu. Visual Studio shows the build progress in the **Output** window. (If the **Output** window is not visible, choose **Output** from the **View** menu.) When you have verified that the solution built successfully, you can close Visual Studio.
 15. To see the built driver, in File Explorer, go to your **KmdfHelloWorld** folder, and then to **C:\\KmdfHelloWorld\\x64\\Debug**. The folder includes:
 
     -   KmdfHelloWorld.sys -- the kernel-mode driver file

@@ -25,9 +25,7 @@ This topic includes reference material that will give you more details about som
 
 -   The Readme file that is provided with the sample code package provides a brief description of the key points of the Swap, SpeakerFill, and Compress samples.
 
--   The MSDN website provides detailed information and tutorials about [COM](http://go.microsoft.com/fwlink/p/?linkid=106293) and [UI development](http://go.microsoft.com/fwlink/p/?linkid=106294).
-
- 
+-   [COM](http://go.microsoft.com/fwlink/p/?linkid=106293) and [UI development](http://go.microsoft.com/fwlink/p/?linkid=106294) tutorials and information.
 
  
 

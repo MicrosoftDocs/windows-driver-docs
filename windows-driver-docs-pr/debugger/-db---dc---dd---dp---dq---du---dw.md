@@ -4,7 +4,7 @@ description: The db, dc, dd, dp, dq, du, and dw extensions display data at the s
 ms.assetid: d34eebb7-bc91-4bff-9787-d92f74195ee1
 keywords: ["db extension", "dc extension", "dd extension", "dp extension", "dq extension", "du extension", "dw extension", "memory, Display Physical ( d ) extensions", "db, dc, dd, dp, dq, du, dw Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 01/18/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,6 +57,22 @@ Specifies the first physical address to be displayed, in hexadecimal format. If 
 <span id="_______L_______Size______"></span><span id="_______l_______size______"></span><span id="_______L_______SIZE______"></span> **L** **** *Size*   
 Specifies the number of chunks of memory to display. The size of a chunk is determined by the precise extension used.
 
+### <span id="DLL"></span><span id="dll"></span>Environment
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><p><strong>Mode</strong></p></td>
+<td align="left"><p>Kernel Mode</p></td>
+</tr>
+</tbody>
+</table>
+
+
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
 <table>
@@ -66,13 +82,6 @@ Specifies the number of chunks of memory to display. The size of a chunk is dete
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p></p>
-Kext.dll
-Kdextx86.dll</td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
 <td align="left"><p>Kext.dll</p></td>
 </tr>
 </tbody>

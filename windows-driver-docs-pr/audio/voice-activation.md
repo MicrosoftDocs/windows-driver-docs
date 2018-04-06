@@ -1,9 +1,9 @@
 ---
 title: Voice Activation
-description: Cortana, the personal assistant technology introduced on Windows Phone 8.1, is now supported on Windows 10 devices.
+description: Cortana, the personal assistant technology introduced on Windows Phone, is supported on Windows 10 devices.
 ms.assetid: 0684EF32-AA76-418B-9027-1C067A8140E3
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 03/19/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Voice Activation
 
 
-Cortana, the personal assistant technology introduced on Windows Phone 8.1, is supported on Windows 10 devices. The Windows speech platform is used to power all of the speech experiences in Windows 10 such as Cortana and Dictation. Voice activation is a feature that enables users to invoke a speech recognition engine from various device power states by saying a specific phrase - "Hey Cortana". To create hardware that supports voice activation technology, review the information in this topic.
+Cortana, the personal assistant technology introduced on Windows Phone, is supported on Windows 10 devices. The Windows speech platform is used to power all of the speech experiences in Windows 10 such as Cortana and Dictation. Voice activation is a feature that enables users to invoke a speech recognition engine from various device power states by saying a specific phrase - "Hey Cortana". To create hardware that supports voice activation technology, review the information in this topic.
 
 **Note**  
 Implementing voice activation is a significant project and is a task completed by SoC vendors. OEMs can contact their SoC vendor for information on their SoC's implementation of voice activation.
@@ -99,7 +99,16 @@ To implement a hardware keyword spotter (HW KWS) SoC vendors must complete the f
 -   Review the hardware recommendation [Cortana Device Test Setup](https://msdn.microsoft.com/library/windows/hardware/dn957009). This topic provides test guidance of audio input devices intended for use with Microsoft’s Speech Platform.
 -	Support both staged and chained commands.
 -	Support “Hey Cortana” for each of the supported Cortana locales. 
+-	The APOs (Audio Processing Objects) must provide the following effects: 
+    -	AEC
+    -	AGC
+    -	NS
+-   Effects for Speech processing mode must be reported by the MFX APO.
+-	The APO may perform format conversion as MFX.   
+-	The APO must output the following format: 
+    -	16 kHz, 16-bit, mono, FLOAT.
 -   Optionally design any custom APOs to enhance the audio capture process. For more information, see [Windows Audio Processing Objects](windows-audio-processing-objects.md).
+
 
 ## <span id="Sample_Code_Overview"></span><span id="sample_code_overview"></span><span id="SAMPLE_CODE_OVERVIEW"></span>Sample Code Overview
 

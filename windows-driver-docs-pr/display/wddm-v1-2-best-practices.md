@@ -19,7 +19,7 @@ To deliver the best experience in Windows 8 and later, Windows takes advantage 
 -   Ensure the following cases are fully tested and work well with your system configurations:
     -   Compatible with Microsoft Basic Display Driver
     -   Updates on servers that don't need a reboot
--   Design new servers with WDDM hardware and adopt the relevant WDDM driver type that best suits your customerâ€™s needs.
+-   Design new servers with WDDM hardware and adopt the relevant WDDM driver type that best suits your customer's needs.
 -   Work with graphics hardware vendors to get certified WDDM 1.2 drivers for validation.
 -   For headless systems:
     -   System firmware should set the VGA Not Present flag in the IAPC\_BOOT\_ARCH field of the Fixed ACPI Description Table (FADT), and if there is any VBIOS, it should implement an empty mode list through the VESA BIOS Extensions (VBE).
