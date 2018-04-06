@@ -39,23 +39,16 @@ For ARM/ARM64 driver development, choose **Individual components** and under **C
 
 * [Download WDK for Windows 10, version 1803](TBD) 
 
-New for this release: The WDK installation will by default install the WDK Visual Studio extension. This must be done in order for WDK VS integration to work. 
+New as of 1709 release: The WDK installation will by default install the WDK Visual Studio extension. This must be done in order for WDK VS integration to work. 
 
 ## Enterprise WDK for Windows 10, version 1803 (EWDK) 
 
 The EWDK is a standalone self-contained command-line environment for building drivers. It includes the Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio Build Tools 15.6. 
 
-### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools 15.6 (Recommended)
+### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools 15.6
 
 * [Download EWDK for Windows 10, version 1803](TBD)
 
-### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools 15.4
-
-* [Download EWDK for Windows 10, version 1803](TBD)
-
-### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools 15.2
-
-* [Download EWDK for Windows 10, version 1803](TBD)
 
 To get started, mount the ISO and run **LaunchBuildEnv**.
 
