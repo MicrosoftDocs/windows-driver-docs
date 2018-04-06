@@ -114,13 +114,11 @@ Driver verifier includes new driver validation rules for the following technolog
 
 ### <a href="" id="windows-driver-frameworks"></a>Windows Driver Frameworks (WDF)
 
-**WDF in Windows 10, version 1709**
+**WDF in Windows 10, version 1803**
 
-In Windows 10, version 1709, the Windows Driver Framework (WDF) includes Kernel-Mode Driver Framework (KMDF) version 1.23 and User-Mode Driver Framework version 2.23. For infor on what's included in these framework versions, see [What's New for WDF Drivers in Windows 10](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/index).
+In Windows 10, version 1803, the Windows Driver Framework (WDF) includes Kernel-Mode Driver Framework (KMDF) version 1.25 and User-Mode Driver Framework version 2.25. For info on what's included in these framework versions, see [What's New for WDF Drivers in Windows 10](wdf/index.md).
 
-**WDF in Windows 10, version 1607**
-
-In Windows 10, version 1607, the WDF includes Kernel-Mode Driver Framework (KMDF) version 1.19 and User-Mode Driver Framework (UMDF) version 2.19. For info on what's included in these framework versions, see [What's New for WDF Drivers in Windows 10](wdf/index.md).
+To see what was added in previous versions of WDF, see [KMDF Version History](kmdf-version-history.md) and [UMDF Version History](umdf-version-history.md).
 
 ### Universal Windows drivers
 

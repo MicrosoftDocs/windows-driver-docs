@@ -12,7 +12,7 @@ keywords:
 - objects WDK KMDF
 - framework objects WDK KMDF
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 4/6/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 This topic summarizes the new features and improvements for Windows Driver Frameworks (WDF) drivers in Windows 10.
 
-Windows 10, version 1709 includes Kernel-Mode Driver Framework (KMDF) version 1.23 and User-Mode Driver Framework (UMDF) version 2.23.
+Windows 10, version 1803 (Redstone 4) includes Kernel-Mode Driver Framework (KMDF) version 1.25 and User-Mode Driver Framework (UMDF) version 2.25.
 
 You can use these framework versions to build drivers for:
 
@@ -30,6 +30,11 @@ You can use these framework versions to build drivers for:
 -   Windows Server 2016
 
 For version history, see [KMDF Version History](kmdf-version-history.md) and [UMDF Version History](umdf-version-history.md). Except where noted, UMDF references on this page describe version 2 functionality that is not available in UMDF version 1.
+
+## New in WDF for Windows 10, version 1803
+
+* [Building a WDF driver for multiple versions of Windows](building-a-wdf-driver-for-multiple-versions-of-windows.md).
+* [**WdfDeviceRetrieveDeviceDirectoryString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceretrievedevicedirectorystring)
 
 ## New in WDF for Windows 10, version 1709
 
