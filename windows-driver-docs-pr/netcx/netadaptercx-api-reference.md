@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # NetAdapterCx API reference
 
+[!include[netcx Beta Prerelease](../netcx-beta-prerelease.md)]
+
 This section contains API reference topics for Network Adapter WDF Class Extension (NetAdapterCx) client drivers.
 
 [NetAdapterCx callback functions](netadaptercx-callback-functions.md)

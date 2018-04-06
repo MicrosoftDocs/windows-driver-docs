@@ -1,9 +1,9 @@
 ---
-title: Network driver topics in SDK header files
-description: Network driver topics in SDK header files
+title: Kernel Mode SDK Topics for Network Drivers
+description: Kernel Mode SDK Topics for Network Drivers
 ms.assetid: E621615F-5A6A-4FB6-88D6-2DD11E2537B2
 keywords:
-- Network driver topics in SDK header files, kernel mode SDK network drivers, kernel mode Windows SDK network drivers, kernel mode Microsoft Windows SDK network drivers
+- Kernel Mode SDK Topics for Network Drivers, kernel mode SDK network drivers, kernel mode Windows SDK network drivers, kernel mode Microsoft Windows SDK network drivers
 ms.author: windowsdriverdev
 ms.date: 08/08/2017
 ms.topic: article
@@ -11,7 +11,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Network driver topics in SDK header files
+# Kernel Mode SDK Topics for Network Drivers
 
 This section lists header files and topics for kernel mode Windows network drivers. The header files in this section are included in the Windows Software Development Kit (SDK) instead of the Windows Driver Kit (WDK) as they are also shared with user mode networking applications.
 
