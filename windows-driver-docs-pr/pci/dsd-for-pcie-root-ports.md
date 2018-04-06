@@ -16,7 +16,7 @@ ms.technology: windows-devices
 In Windows 10 (Version 1803), new ACPI _DSD methods have been added to support Modern Standby and PCI hot plug scenarios:
 ## Directed Deepest Runtime Idle Power State (DDRIPS) support on PCIe Root Ports 
 
- This ACPI object must be implemented in the ACPI scope of every PCIe Root Port/slot that is accessible to the user on Modern Standby enabled desktop systems. 
+ This ACPI object must be implemented in the ACPI scope of every PCIe Root Port/slot that is accessible to the user on Modern Standby-enabled desktop systems. 
 
 ```
 Name (_DSD, Package () {
@@ -33,7 +33,7 @@ Name (_DSD, Package () {
 
 ## Identifying PCIe Root Ports supporting hot plug in D3
 
-This ACPI object allows the operating system to identify and power manage PCIe Root ports that are capable of handling hot plug events while in D3 state. If this object is not implemented on the a PCIe hot plug capable port, then the system does not power manage this port, if it has no children PCIe devices, causing the system to consume more power than necessary.
+This ACPI object allows the operating system to identify and power manage PCIe Root ports that are capable of handling hot plug events while in D3 state. If this object is not implemented on the a PCIe hot plug capable port, then the system does not power manage this port if it has no children PCIe devices, causing the system to consume more power than necessary.
 
 This object must be implemented on all PCIe Root Ports of Thunderbolt™ hierarchies, on Runtime D3 (RTD3) capable systems, in the Root Port ACPI device scope.
 

@@ -24,7 +24,7 @@ The following table lists the PCI Express features that can be controlled by the
 | PCI Express Advanced Error Reporting       | Optional                   |
 | PCI Express Capability Structure Control   | Mandatory                  |
 
-If the \_OSC method grants control of these features to the operating system, Windows enables the PCI Express Native Control feature. The PCI Express Native Control feature in Windows is not dependant on PCI Express Advanced Error Reporting (AER), and therefore platform support for PCI Express AER is optional.
+If the \_OSC method grants control of these features to the operating system, Windows enables the PCI Express Native Control feature. The PCI Express Native Control feature in Windows is not dependent on PCI Express Advanced Error Reporting (AER), and therefore platform support for PCI Express AER is optional.
 
 If the platform does not implement the \_OSC method, or if the \_OSC method communicates that operating system control of any of the PCI Express features listed in the table is not available and thus it does not grant control of the mandatory features above to the operating system, then Windows will not enable any of the advanced PCI Express features through PCI Express Native Control.
 
