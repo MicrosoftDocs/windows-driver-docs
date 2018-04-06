@@ -112,7 +112,7 @@ Driver verifier includes new driver validation rules for the following technolog
 -   Three new [Rules for NDIS Drivers](https://msdn.microsoft.com/library/windows/hardware/ff551713)
 -   New [Nullcheck rules](https://msdn.microsoft.com/en-us/library/windows/hardware/mt779099(v=vs.85).aspx) *Added in version 1703*
 
-### <a href="" id="windows-driver-frameworks"></a>Windows Driver Frameworks (WDF)
+### Windows Driver Frameworks (WDF)
 
 **WDF in Windows 10, version 1803**
 
