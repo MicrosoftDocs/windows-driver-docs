@@ -126,11 +126,20 @@ Driver verifier includes new driver validation rules for the following technolog
 
 In Windows 10, version 1803, the Windows Driver Framework (WDF) includes Kernel-Mode Driver Framework (KMDF) version 1.25 and User-Mode Driver Framework version 2.25. For info on what's included in these framework versions, see [What's New for WDF Drivers in Windows 10](wdf/index.md).
 
-To see what was added in previous versions of WDF, see [KMDF Version History](kmdf-version-history.md) and [UMDF Version History](umdf-version-history.md).
+To see what was added in previous versions of WDF, see [KMDF Version History](wdf/kmdf-version-history.md) and [UMDF Version History](wdf/umdf-version-history.md).
+
+The following topics are new for WDF:
+
+* [Building a WDF driver for multiple versions of Windows](wdf/building-a-wdf-driver-for-multiple-versions-of-windows.md)
+* [**WdfDeviceRetrieveDeviceDirectoryString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceretrievedevicedirectorystring)
 
 ### Universal Windows drivers
 
 This section describes new and updated features for Universal Windows drivers in Windows 10.
+
+**Universal Drivers in Windows 10, version 1803**
+
+See the latest recommendations for universal drivers in [Getting started with universal drivers](develop/getting-started-with-universal-drivers.md).
 
 **Universal Drivers in Windows 10, version 1709**
 
