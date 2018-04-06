@@ -28,6 +28,8 @@ pdbcopy OldPDB NewPDB -p [-f:Symbol] [-f:@TextFile] [Options]
 
 pdbcopy OldPDB NewPDB -p [-F:Symbol] [-F:@TextFile] [Options] 
 
+pdbcopy InputPDBFile -FixOption {[autofix|verbose]}
+
 pdbcopy /? 
 ```
 
@@ -64,8 +66,40 @@ Causes the new symbol file to have a different signature than the old file. Norm
 <span id="-vc6"></span><span id="-VC6"></span>**-vc6**  
 Causes PDBCopy to use mspdb60.dll instead of mspdb80.dll. This option is never required, because PDBCopy automatically looks for the proper version of mspdb\*.dll. By default, PDBCopy uses mspdb80.dll, which is the version used by Visual Studio .NET 2002 and later versions of Visual Studio. If your symbols were built using Visual Studio 6.0 or an earlier version, you can specify this command-line option so that PDBCopy will use mspdb60.dll instead. However, this is not required, since PDBCopy looks for the appropriate file even if this option is not used. Whichever version of mspdb\*.dll you use must be in the executable path of the Command Prompt window from which you launch PDBCopy.
 
+
+<span id="FIXOPTION"></span> **-FixOption**   
+
+The **-FixOption** reports whether InputPDBFile has the issue described in MSRC 42950.
+
+```
+pdbcopy InputPDBFile -FixOption {[autofix|verbose]}
+```
+
+Any combination of the following options can be used. The options are case-sensitive.
+
+*autofix* - Report whether InputPDBFile has the problem described in MSRC 42950, and if so, fix the problem
+
+*verbose* - Display details about the problem.
+
+For example:
+
+1.	pdbcopy.exe InputFile.PDB -fixoption 
+2.	pdbcopy.exe InputFile.PDB -fixoption verbose
+3.	pdbcopy.exe InputFile.PDB -fixoption autofix
+4.	pdbcopy.exe InputFile.PDB -fixoption verbose autofix
+
+Will do the following:
+
+1.	Report whether InputPDBFile has the issue described in MSRC 42950.
+2.	Report whether InputPDBFile has the issue described in MSRC 42950, and if so, display details about the problem.
+3.	Report whether InputPDBFile has the issue described in MSRC 42950, and if so, fix the problem.
+4.	Report whether InputPDBFile has the issue described in MSRC 42950, and if so, fix the problem and also display details about the problem.
+
+
 <span id="_______-_______"></span> **-?**   
 Displays help text for the PDBCopy command line.
+
+
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
