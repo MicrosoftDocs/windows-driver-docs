@@ -2,7 +2,7 @@
 title: Debugger Data Model C++ Interfaces
 description: This topic describes how to use Debugger Data Model C++ Interfaces to extend and customize the capabilities of the debugger.
 ms.author: domars
-ms.date: 04/03/2018
+ms.date: 04/06/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,7 +43,6 @@ Theses section in this topic introduce the the following.
 ## <span id="Overview"> Overview of Debugger Debugger Data Model C++ Interfaces
 
 The debugger data model is an extensible object model that is central to the way in which new debugger extensions (including those in JavaScript, NatVis, and C++) both consume information from the debugger and produce information that can be accessed from the debugger as well as other extensions. Constructs which are written to the data model APIs are available in the debugger's newer (dx) expression evaluator as well as from JavaScript extensions or other C++ extensions for that matter. 
-
 
 
 
@@ -234,7 +233,7 @@ There are several different things that can be held in (or boxed into) an *IMode
 
 An *IModelObject* is not an object in isolation. In addition to representing one of the types of objects shown above, each object has
 the notion of a chain of parent data models. This chain behaves much like a [JavaScript prototype
-chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain).
+chain](https://developer.mozilla.org/docs/Web/JavaScript/Inheritance_and_the_prototype_chain).
 Instead of a linear chain of prototypes like JavaScript has, each data model object defines a linear chain of **parent models**. Each of those
 parent models in turn has another linear chain of its own set of parents. In essence, each object is an aggregation of the capabilities
 (properties, etc...) of both itself and every object in this tree. When a specific property is queried, if the object it is queried on does not
