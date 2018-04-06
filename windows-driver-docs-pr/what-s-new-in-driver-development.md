@@ -49,6 +49,7 @@ The following table shows the feature updates in Windows 10, by driver technolog
 | PCI | ![not available](minus.png)|[![details](checkmark.png)](#pci-1709) | ![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |
 | Print | ![not available](minus.png)|![not available](minus.png) |![not available](minus.png) |[![details](checkmark.png)](#print-1607) |[![details](checkmark.png)](#print-1507)|
 | Pulse Width Modulation | ![not available](minus.png)|[![details](checkmark.png)](#pwm-1709) | ![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |
+| Sensors |[![details](checkmark.png)](#sensors-1803)|![not available](minus.png)|![not available](minus.png)|![not available](minus.png)|![not available](minus.png)|
 | Smart Card |![not available](minus.png) |![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#smart-card) |
 | Storage | ![not available](minus.png)|[![details](checkmark.png)](#storage-1709) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#storage) |
 | System-Supplied Driver Interfaces | ![not available](minus.png)|![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#system-supplied-driver-interfaces) |
@@ -226,6 +227,44 @@ Updates to Camera driver development include:
 
 The following are updates to Display driver development in Windows 10, version 1803:
 
+* **Indirect Display UMDF class extension** - The Indirect Display driver can pass the SRM to the rendering GPU and have a mechanism to query the SRM version being used.
+
+* **IOMMU hardware-based GPU isolation support** - Increases security by restricting GPU access to system memory.
+
+* **GPU paravirtualization support** - Enables display drivers to provide rendering capabilities to Hyper-V virtualized environments.
+
+* **Brightness** - A new brightness interface to support multiple displays that can be set to calibrated nit-based brightness levels.
+
+* **D3D11 bitstream encryption** - Additional GUIDS and parameters to D3D11 to support exposing CENC, CENS, CBC1, and CBCS with 8 or 16 byte initialization vectors.
+
+* **D3D11 and D3D12 video decode histogram** - A luminance histogram allows the media team to leverage fixed function hardware for histogram to improve tone mapping quality for HDR/EDR scenarios. Fixed function hardware is useful when GPU is already saturated in these scenarios and to enable parallel processing. This feature is optional and should only be implemented if fixed function hardware is available. This feature should not be implemented with 3D or Compute.
+
+* **D3D12 video decode** now supports Decode Tier II, indicating driver supports *Array of Textures* that enable applications to amortize allocation cost and reduce peak memory usage during resolution change.
+
+* **Tiled resource tier and LDA atomics** - A new cross node sharing tier to add support for atomic shader instructions working across linked adapter (LDA) nodes. This improves ISVs ability to implement multiple GPU rendering techniques like split frame rendering (SFR) and clearly advances the capabilities over what is possible in D3D11.
+
+* **GPU dithering support** - Drivers can report the ability to performing dithering on the wire signal for a given timing mode. This allows the OS to explicitly request dithering in scenarios where a higher effective bit depth is needed than is physically available on the monitor link, for example for HDR10 over HDMI 2.0.
+
+* **Post-processing color enhancement override** - Adds the ability for the OS to request that the driver temporarily disable any post-processing that enhances or alters display colors. This is to support scenarios where specific applications want to enforce colorimetrically accurate color behavior on the display, and safely coexist with OEM or IHV-proprietary display color enhancements.
+
+* **Direct3D12 and Video** - New API and DDI to provide access to the following capabilities:
+	* Hardware accelerated video decoding
+	* Content Protection
+	* Video processing
+
+* **DisplayID** - A new DDI, designed to allow the VESA’s DisplayID descriptor to be queried from a display controlled by a graphics adapter and shall support DisplayID v1.3 and DisplayID v2.0. The DDI is an extension of existing DxgkDdiQueryAdapterInfo DDI and shall be supported by all drivers with DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM2_3, including kernel mode display only drivers and indirect display drivers.
+
+* **GPU performance data** - Extensions to DdiQueryAdapterInfo will expose information such as temperature, fan speed, clock speeds for engines and memory, memory bandwidth, power draw, and voltages
+
+* Miscellaneous - A new SupportContextlessPresent driver cap to help IHV onboard new driver.
+
+* Improvements to External/Removable GPU support in the OS. As a first step to add better support, Dxgkrnl needs to determine if a GPU is “detachable”, i.e. hot-pluggable. For RS4 we would like to leverage the driver’s knowledge about this instead of building our own infrastructure. For this purpose, we are adding a “Detachable” bit to DXGK_ DRIVERCAPS struct. Driver will set this bit during adapter initialization if the adapter is hot-pluggable.
+
+* **Display Diagnostics** - Kernel mode device driver interface (DDI) changes to allow the driver for a display controller to report diagnostic events to the OS.  This provides a channel through which the driver can log events which would otherwise be invisible to the OS as the events are not a response to an OS request or something the OS needs to react to.
+
+* **Shared graphics power components** - Allows non-graphics drivers to participate in the power management of a graphics device.  A non-graphics driver will use a driver interface to manage one or more of these shared power components in coordination with the graphics driver.
+
+* **Shared texture improvements** - Includes increasing the types of textures that can be shared across processes and D3D devices. This design enables the frame server OS component to support monochrome with minimal memory copying.
 
 ### <a href="" id="networking-1803"></a>Networking
 
@@ -251,6 +290,10 @@ New Winsock kernel DDIs include:
 In Mobile broadband, a new [WWAN_MODEM_CONFIG_ID](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wwan/ns-wwan-_wwan_modem_config_id) API was added to improve [MB low level UICC access](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/mb-low-level-uicc-access).
 
 As for Mobile Operators, Hotspot and AppID settings are now a part of [desktop COSA](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/desktop-cosa-apn-database-settings#desktop-cosa-only-settings). All pages under [UWP mobile broadband apps](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/uwp-mobile-broadband-apps) were modernized for Windows 10.
+
+### <a href="" id="sensors-1803"></a>Sensors
+
+The SENSOR_CONNECTION_TYPES enumeration was added to clarify connection type properties.
 
 ### <a href="" id="wifi-1803"></a>Wi-fi
 
