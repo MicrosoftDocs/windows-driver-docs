@@ -12,7 +12,7 @@ keywords:
 - objects WDK KMDF
 - framework objects WDK KMDF
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 4/6/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -33,7 +33,8 @@ For version history, see [KMDF Version History](kmdf-version-history.md) and [UM
 
 ## New in WDF for Windows 10, version 1803
 
-See [Building a WDF driver for multiple versions of Windows](building-a-wdf-driver-for-multiple-versions-of-windows.md).
+* [Building a WDF driver for multiple versions of Windows](building-a-wdf-driver-for-multiple-versions-of-windows.md).
+* [**WdfDeviceRetrieveDeviceDirectoryString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceretrievedevicedirectorystring)
 
 ## New in WDF for Windows 10, version 1709
 

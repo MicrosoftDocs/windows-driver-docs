@@ -47,6 +47,7 @@ For information about the new features for UMDF drivers in Windows 10, see [Wha
 ## UMDF Version 2.25
 
 * [Building a WDF driver for multiple versions of Windows](building-a-wdf-driver-for-multiple-versions-of-windows.md)
+* [**WdfDeviceRetrieveDeviceDirectoryString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceretrievedevicedirectorystring)
 
 ## UMDF Version 2.23
 
