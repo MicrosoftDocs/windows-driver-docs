@@ -41,9 +41,41 @@ Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Wind
 
 -   Version 4.1
 
+-   Version 5.0
+
 Windows Server 2016 does not support Bluetooth.
 
 ## <span id="Which_Bluetooth_profiles_have_in-box_support_in_Windows_10_"></span><span id="which_bluetooth_profiles_have_in-box_support_in_windows_10_"></span><span id="WHICH_BLUETOOTH_PROFILES_HAVE_IN-BOX_SUPPORT_IN_WINDOWS_10_"></span>Which Bluetooth profiles have in-box support in Windows 10?
+
+Windows 10 (Version 1803) supports Bluetooth version 5.0 and the following Bluetooth user profiles:
+
+- Advanced Audio Distribution Profile (A2DP 1.2)
+- Audio/Video Control Transport Protocol Target (AVCTP 1.4)
+- Audio/Video Distribution Transport Protocol (AVDTP 1.2)
+- Audio/Video Remote Control Profile (AVRCP 1.6.1)
+- Battery Service over GATT Profile (1.0) 
+- Bluetooth LE Generic Attribute (GATT) Client
+- Bluetooth LE Generic Attribute (GATT) Server
+- Bluetooth Network Encapsulation Protocol (BNEP 1.0)
+- Device ID Profile (DID 1.3)
+- Device Information Service over GATT Profile (DIS 1.1)
+- Dial-up Networking Profile (DUN 1.1)
+- Generic Access Profile (GAP)
+- Generic Audio/Video Distribution Profile (GAVDP 1.2)
+- Hands-Free Profile (HFP 1.6) 
+- Hardcopy Cable Replacement Profile (HCRP 1.2)
+- HID over GATT Profile (HOGP 1.0) 
+- Human Interface Device (HID 1.1)
+- Human Interface Device Service (HIDS)
+- Interoperability (IOP)
+- Logical Link Control and Adaptation Protocol (L2CAP)
+- Object Push Profile (OPP 1.1)
+- Personal Area Networking User Profile (PANU 1.0)
+- RFCOMM (1.1 with TS 07.10)
+- Scan Parameters Profile Client over GATT Profile (ScPP 2.1)
+- Security Manager Protocol (SMP)
+- Serial Port Profile (SPP 1.2)
+- Service Discovery Protocol (SDP)
 
 
 **Windows 10 for desktop editions in-box Bluetooth profiles:**
