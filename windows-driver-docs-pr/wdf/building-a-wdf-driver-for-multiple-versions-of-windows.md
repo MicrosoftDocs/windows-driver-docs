@@ -6,10 +6,10 @@ WDF has always allowed you to build a driver once and use the resulting binary o
 
 This means that not only does your driver run on future versions of Windows, as it always has, but it also runs on past versions, back to Windows 10 version 1803.
 
-There are two steps to doing this: specifying build settings in Visual Studio, and performing a runtime check before each invocation of an API that may or may not be present.
+There are two steps to doing this: specifying build settings in Visual Studio, and performing a runtime check before invoking an API or accessing a structure or field that may or may not be present.
 
 **Note**:
-This feature is optional and a driver should only enable it to build a driver that uses the latest WDF functionality while remaining loadable on earlier versions of Windows that do not have this functionality.
+This feature is optional and a driver should only enable it to build a driver that uses the latest WDF functionality while remaining loadable on earlier versions of Windows that do not have the latest WDF functionality.
 
 If you do not set **Version Minor (Target Version)** or **Version Minor (Minimum Required)**, versioning remains the same as before.
 
@@ -51,7 +51,7 @@ WDF_IS_FIELD_AVAILABLE (
     );
 ```
 
-Consider the following example.  When WDF v29 is released, it adds a new API **WdfSomeNewFeature()**. If you set **Target Version** to 29 and **Minimum Required** to 25, the resulting driver loads on any framework version from 25 through 29 (and beyond, as long as major version doesn't change), calls version 25 APIs like before, and makes the following check before each call of any v29 API:
+Consider the following example.  When WDF v29 is released, it adds a new API: **WdfSomeNewFeature**. If you set **Target Version** to 29 and **Minimum Required** to 25, the resulting driver loads on any framework version from 25 through 29 (and beyond, as long as major version doesn't change), calls version 25 APIs like before, and makes the following check before each call of any v29 API:
 
 ```
 if (WDF_IS_FUNCTION_AVAILABLE(WdfSomeNewFeature)) {
@@ -59,30 +59,14 @@ if (WDF_IS_FUNCTION_AVAILABLE(WdfSomeNewFeature)) {
 }
 ```
 
-If you don't do the conditional check, you'll see the following:
+If you don't do the conditional check, you might see the following:
 -	If the API returns NTSTATUS, the call returns a failure code.
 -	If the API returns anything other than NTSTATUS:
     - KMDF: The machine bug checks.
     - UMDF: The WudfHost process crashes with a DriverStop error.
--	If Driver Verifier is enabled, the driver crashes as well. This helps to identify problem in a test environment.
+-	If Driver Verifier is enabled, the driver crashes as well. This helps to identify the problem in a test environment.
 -   Silent memory corruption (when accessing a structure or field).
 
 A driver crash contains the failed driver name, the framework name, and the failed API index. You can retrieve the name of API by looking up the value of WDFFUNCENUM in WdfFuncEnum.h.
 
 For more info about Visual Studio properties for WDF, see [Driver Model Settings Properties for Driver Projects](../develop/driver-model-settings-properties-for-driver-projects.md).
-
-<!--
-WdfDriverErrorReportApiMissing is for internal use only.
-
-
-goes on develop/driver-model-settings-properties-for-driver-projects.md:
--	KMDF Version Major: No change
--	KMDF Version Minor (Target Version): Equal to the old KMDF Version Minor property. It describes the Minor Version of KMDF that will be used when compiling your driver
--	KMDF Version Minor (Minimum Required): (new for RS4) It describes the Minimum Required Version of KMDF to load your driver
-
-WDF_STRUCTURE_SIZE is for internal use only. Instead, allocate the structure on the stack or pool using sizeof() if needed, and then call one of IS_AVAILABLE macro before accessing any new field.
-
-Always initialize WDF structures using the corresponding _INIT macro. Do not initialize manually, for example by using sizeof() to set the Size field.
--->
-
-
