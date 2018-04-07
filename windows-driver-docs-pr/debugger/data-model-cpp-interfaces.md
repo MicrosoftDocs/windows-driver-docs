@@ -22,11 +22,13 @@ Theses section in this topic introduce the the following.
 
 [Summary of Debugger Data Model Interfaces](#summary)
 
+
 [The Core Debugger Object Model](#core)
 
 [The Core Debugger Object Model - IModelObject](#imodelobject)
 
 [Debugger Data Model C++ Host Interfaces](#hostinterface)
+
 
 [Object Enumeration in the Data Model](#object)
 
@@ -593,8 +595,7 @@ IDebugHostType / IDebugHostType2  | Represents a native/language type.
 IDebugHostConstant  | Represents a constant within symbolic information (e.g.: a non-type template argument in C++)
 IDebugHostField  | Represents a field within a structure or class.
 IDebugHostData | Represents data within a module (were this within a structure or class it would be an IDebugHostField)
-IDebugHostBaseClass
-Represents a base class.
+IDebugHostBaseClass | Represents a base class.
 IDebugHostPublic  | Represents a symbol within the publics table of a PDB. This does not have type information associated with it. It is a name and address.
 IDebugHostModuleSignature | Represents a module signature -- a definition which will match a set of modules by name and/or version
 IDebugHostTypeSignature | Represents a type signature -- a definition which will match a set of types by module and/or name
@@ -627,9 +628,7 @@ The GetDefaultMetadata method returns a default metadata store that may be used 
 
 Note that property values on the default metadata store must be manually resolved and must pass the object for which the default metadata is being queried. The GetKey method should be used in lieu of GetKeyValue. 
 
-**The Status Interface:** 
-
-[IDebugHostStatus]()
+**The Status Interface: IDebugHostStatus** 
 
 The IDebugHostStatus interface allows a client of the data model or the debug host to inquire about certain aspects of the debug host's status. T
 
@@ -641,13 +640,18 @@ The PollUserInterrupt method is used to inquire whether the user of the debug ho
 **The Context Interface: IDebugHostContext**
 
 Context is one of the most important aspects of the data model and the underlying debug host. When you hold an object, it is important to be able to know where an object came from -- what process is it in, what address space is it associated with. Knowing this information allows the correct interpretation of things like pointer values. 
-An object of the type IDebugHostContext must be passed to many methods on the debug host. This interface can be acquired in a number of ways: 
-By getting the current context of the debugger: calling the GetCurrentContext method of IDebugHost
-By getting the context of an object: calling the GetContext method of IModelObject
-By getting the context of a symbol: calling the GetContext method of IDebugHostSymbol
+An object of the type IDebugHostContext must be passed to many methods on the debug host. This interface can be acquired in a number of ways:
+
+- By getting the current context of the debugger: calling the GetCurrentContext method of IDebugHost
+- By getting the context of an object: calling the GetContext method of IModelObject
+- By getting the context of a symbol: calling the GetContext method of IDebugHostSymbol
+
 In addition, there are two values which have special meaning in the context of an IDebugHostContext interface which is either returned from or passed to a data model or debug host method: 
-nullptr: an indication that there is no context. It is perfectly valid for some objects to have no context. The Debugger object in the root namespace of the data model does not refer to anything within a specific process or address space. It has no context.
-USE_CURRENT_HOST_CONTEXT: a sentinel value indicating that one should use the current UI context of the debug host. This value will never be returned from the debug host. It may, however, be passed to any debug host method which takes an input IDebugHostContext in lieu of explicitly calling the GetCurrentContext method of IDebugHost. Note that explicitly passing USE_CURRENT_HOST_CONTEXT is often more performant than explicitly getting the current context. 
+
+*nullptr*: an indication that there is no context. It is perfectly valid for some objects to have no context. The Debugger object in the root namespace of the data model does not refer to anything within a specific process or address space. It has no context.
+
+*USE_CURRENT_HOST_CONTEXT*: a sentinel value indicating that one should use the current UI context of the debug host. This value will never be returned from the debug host. It may, however, be passed to any debug host method which takes an input IDebugHostContext in lieu of explicitly calling the GetCurrentContext method of IDebugHost. Note that explicitly passing USE_CURRENT_HOST_CONTEXT is often more performant than explicitly getting the current context. 
+
 The contexts of a host context are largely opaque to the caller. The only operation that a caller outside the core debug host can do with a host context is to compare it to another host context. 
 
 The IDebugHostContext interface is defined as follows: 
