@@ -24,8 +24,6 @@ Theses section in this topic introduce the the following.
 
 ---
 
-- [The Core Debugger Object Model - IModelObject](#imodelobject)
-
 - [Debugger Data Model C++ Host Interfaces](#hostinterface)
 
 ---
@@ -1119,7 +1117,8 @@ The FindSymbolByRVA method will find a single matching symbol at the given relat
 
 The FindSymbolByName method will find a single global symbol of the given name within the module. If there is not a single symbol matching the given name, an error will be returned by this method. Note that this method will prefer returning a private symbol over a symbol in the publics table. 
 
-Access to the Type System: IDebugHostType2 / IDebugHostType]()
+
+**Access to the Type System: IDebugHostType2 / IDebugHostType**
 
 A given language/native type is described by the IDebugHostType2 or IDebugHostType interfaces. Note that some of the methods on these interfaces only apply for specific kinds of types. A given type symbol may refer to one of the following types as described by the TypeKind enumeration: 
 
@@ -1241,10 +1240,13 @@ STDMETHOD(GetPointerKind)(_Out_ PointerKind* pointerKind) PURE;
 STDMETHOD(GetMemberType)(_Out_ IDebugHostType** memberType) PURE;
 ```
 [GetPointerKind]()
+
 For types which are pointers, the GetPointerKind method returns the kind of pointer. This is defined by the PointerKind enumeration.
 
 [GetMemberType]()
+
 For types which are pointer-to-member (as indicated by a type kind of TypeMemberPointer), the GetMemberType method returns the class the pointer is a pointer-to-member of. 
+
 
 **IDebugHostType2/IDebugHostType Array Related Methods**
 
