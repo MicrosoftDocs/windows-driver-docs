@@ -18,27 +18,29 @@ debugger extension, and how to make use of other data model constructs (e.g.: Ja
 
 Theses section in this topic introduce the the following.
 
-[Overview of Debugger Data Model C++ Interfaces](#overview)
+- [Overview of Debugger Data Model C++ Interfaces](#overview)
 
-[Summary of Debugger Data Model Interfaces](#summary)
+- [The Core Debugger Object Model](#core)
 
+---
 
-[The Core Debugger Object Model](#core)
+- [The Core Debugger Object Model - IModelObject](#imodelobject)
 
-[The Core Debugger Object Model - IModelObject](#imodelobject)
+- [Debugger Data Model C++ Host Interfaces](#hostinterface)
 
-[Debugger Data Model C++ Host Interfaces](#hostinterface)
+- [Debugger Data Model Host](#modelhost)
 
+---
 
-[Object Enumeration in the Data Model](#object)
+- [Object Enumeration in the Data Model](#object)
 
-[Debugger Data Model Host](#modelhost)
+- [Debugger Data Model Core Object Types](#objecttypes)
 
-[Debugger Data Model Core Object Types](#objecttypes)
+---
 
-[Debugger Data Model System Interfaces](#systeminterfaces)
+- [Debugger Data Model System Interfaces](#systeminterfaces)
 
-[Debugger Data Model Metadata Interfaces](#metadatainterfaces)
+- [Debugger Data Model Metadata Interfaces](#metadatainterfaces)
 
 
 
@@ -667,17 +669,51 @@ DECLARE_INTERFACE_(IDebugHostContext, IUnknown)
 
 The IsEqualTo method compares a host context to another host context. If the two contexts are equivalent, an indication of this is returned. Note that this comparison is not interface equivalence. This compares the underlying opaque contents of the context itself. 
 
-[The Error Sink: IDebugHostErrorSink]()
 
-The IDebugHostErrorSink is a means by which a client can receive notifications of errors which occur during certain operations and route those errors where needed. 
+**The Error Sink: IDebugHostErrorSink**
+
+The IDebugHostErrorSink is a means by which a client can receive notifications of errors which occur during certain operations and route those errors where needed. The interface is defined as follows: 
+
+```
+enum ErrorClass
+{
+    ErrorClassWarning,
+    ErrorClassError
+}
+```
+
+```
+DECLARE_INTERFACE_(IDebugHostErrorSink, IUnknown)
+{
+    STDMETHOD(ReportError)(_In_ ErrorClass errClass, _In_ HRESULT hrError, _In_ PCWSTR message) PURE;
+}
+```
 
 [ReportError]()
 
 The ReportError method is a callback on the error sink to notify it that an error has occurred and allow the sink to route the error to whatever UI or mechanism is appropriate. 
 
-[The Host Evaluator: IDebugHostEvaluator / IDebugHostEvaluator2]()
+
+**The Host Evaluator: IDebugHostEvaluator / IDebugHostEvaluator2**
 
 One of the most important pieces of functionality which the debug host provides to clients is access to its language based expression evaluator. The IDebugHostEvaluator and IDebugHostEvaluator2 interfaces are the means to access that functionality from the debug host. 
+
+The interfaces are defined as follows: 
+
+```
+DECLARE_INTERFACE_(IDebugHostEvaluator2, IDebugHostEvaluator)
+{
+    //
+    // IDebugHostEvaluator:
+    //
+    STDMETHOD(EvaluateExpression)(_In_ IDebugHostContext* context, _In_ PCWSTR expression, _In_opt_ IModelObject* bindingContext, _COM_Errorptr_ IModelObject** result, _COM_Outptr_opt_result_maybenull_ IKeyStore** metadata) PURE;
+    STDMETHOD(EvaluateExtendedExpression)(_In_ IDebugHostContext* context, _In_ PCWSTR expression, _In_opt_ IModelObject* bindingContext, _COM_Errorptr_ IModelObject** result, _COM_Outptr_opt_result_maybenull_ IKeyStore** metadata) PURE;
+    //
+    // IDebugHostEvaluator2:
+    //
+    STDMETHOD(AssignTo)(_In_ IModelObject* assignmentReference, _In_ IModelObject* assignmentValue, _COM_Errorptr_ IModelObject** assignmentResult, _COM_Outptr_opt_result_maybenull_ IKeyStore** assignmentMetadata) PURE;
+}
+```
 
 [EvaluateExpression]()
 
@@ -688,11 +724,15 @@ The EvaluateExpression method allows requests the debug host to evaluate a langu
 The EvaluateExtendedExpression method is similar to the EvaluateExpression method except that it turns back on additional non-language functionality which a particular debug host chooses to add to its expression evaluator. For Debugging Tools for Windows, for example, this enables anonymous types, LINQ queries, module qualifiers, format specifiers, and other non-C/C++ functionality. 
 
 
-**IDebugHostEvaluator2 AssignTo**
+**IDebugHostEvaluator2**
+
+[AssignTo]()
 
 The AssignTo method performs assignment according to the semantics of the language being debugged. 
 
-The Host Extensibility Interface: IDebugHostExtensibility]()
+
+**The Host Extensibility Interface: IDebugHostExtensibility**
+
 Certain functionality of the debug host is optionally subject to extensibility. This may, for instance, include the expression evaluator. The IDebugHostExtensibility interface is the means by which these extensibility points are accessed. 
 The interface is defined as follows: 
 
@@ -711,62 +751,6 @@ The CreateFunctionAlias method creates a "function alias", a "quick alias" for a
 [DestroyFunctionAlias]()
 
 The DestroyFunctionAlias method undoes a prior call to the CreateFunctionAlias method. The function will no longer be available under the quick alias name. 
-
-
-
-## <span id="object"></span> Object Enumeration in the Data Model
-
-**Enumerating Objects in the Data Model**
-
-There are two core key enumeration interfaces in the data model: IKeyEnumerator and IRawEnumerator. While these are the two core interfaces, they can be used to enumerate objects in one of three styles: 
-
-*Keys* - The IKeyEnumerator interface can be acquired via a call to EnumerateKeys in order to enumerate the keys of an object and their values/metadata without resolving any underlying property accessors. This style of enumeration can return raw IModelPropertyAccessor values boxed into IModelObjects.
-
-*Values* - The IKeyEnumerator and IRawEnumerator interfaces can be acquired via calls to either EnumerateKeyValues or EnumerateRawValues in order to enumerate the keys/raw values on an object and their values/metadata. Any property accessors present in the enumeration are automatically resolved via a call to the underlying GetValue method during such an enumeration.
-
-*References* - The IKeyEnumerator and IRawEnumerator interfaces can be acquired via calls to either EnumerateKeyReferences or EnumerateRawReferences in order to enumerate references to the keys/raw values on an object. Such references can be saved and later used to get or set the underlying key or raw value.
-
-**KeyEnumerator: Enumeration of synthetic keys**
-
-The IKeyEnumerator interface is the single interface for the enumeration of all keys (by key, value, or reference) within an instance object and all the associated parent models in its parent model chain. The interface is defined as follows: 
-
-```
-DECLARE_INTERFACE_(IKeyEnumerator, IUnknown)
-{
-    STDMETHOD(Reset)() PURE;
-    STDMETHOD(GetNext)(_Out_ BSTR* key, _COM_Errorptr_opt_ IModelObject** value, _COM_Outptr_opt_result_maybenull_ IKeyStore** metadata) PURE;
-}
-```
-
-[Reset]()
-
-The Reset method resets the enumerator to the position it was at when it was first acquired (e.g.: before the first element in the enumeration). A subsequent call to GetNext will return the first enumerated key. 
-
-[GetNext]()
-
-The GetNext method both moves the enumerator forward and returns the key at that position in the enumeration.
-
-
-**IRawEnumerator: Enumeration of native or underlying language (C/C++) constructs**
-
-The IRawEnumerator interface is the single interface for the enumeration of all native/language constructs (by value or reference) within a object which represents a native construct within the address space of the debug target. 
-The interface is defined as follows: 
-
-```
-DECLARE_INTERFACE_(IRawEnumerator, IUnknown)
-{
-    STDMETHOD(Reset)() PURE;
-    STDMETHOD(GetNext)(_Out_opt_ BSTR* name, _Out_opt_ SymbolKind *kind, _COM_Errorptr_opt_ IModelObject** value) PURE;
-}
-```
-
-[Reset]()
-
-The Reset method resets the enumerator to the position it was at when it was first acquired (e.g.: before the first element in the enumeration). A subsequent call to GetNext will return the first enumerated native/language construct. 
-
-[GetNext]()
-
-The GetNext method both moves the enumerator forward and returns the native/language construct at that position in the enumeration. 
 
 
 
@@ -942,6 +926,64 @@ The CreateFunctionAlias method creates a "function alias", a "quick alias" for a
 [DestroyFunctionAlias]()
 
 The DestroyFunctionAlias method undoes a prior call to the CreateFunctionAlias method. The function will no longer be available under the quick alias name. 
+
+
+
+
+## <span id="object"></span> Object Enumeration in the Data Model
+
+**Enumerating Objects in the Data Model**
+
+There are two core key enumeration interfaces in the data model: IKeyEnumerator and IRawEnumerator. While these are the two core interfaces, they can be used to enumerate objects in one of three styles: 
+
+*Keys* - The IKeyEnumerator interface can be acquired via a call to EnumerateKeys in order to enumerate the keys of an object and their values/metadata without resolving any underlying property accessors. This style of enumeration can return raw IModelPropertyAccessor values boxed into IModelObjects.
+
+*Values* - The IKeyEnumerator and IRawEnumerator interfaces can be acquired via calls to either EnumerateKeyValues or EnumerateRawValues in order to enumerate the keys/raw values on an object and their values/metadata. Any property accessors present in the enumeration are automatically resolved via a call to the underlying GetValue method during such an enumeration.
+
+*References* - The IKeyEnumerator and IRawEnumerator interfaces can be acquired via calls to either EnumerateKeyReferences or EnumerateRawReferences in order to enumerate references to the keys/raw values on an object. Such references can be saved and later used to get or set the underlying key or raw value.
+
+**KeyEnumerator: Enumeration of synthetic keys**
+
+The IKeyEnumerator interface is the single interface for the enumeration of all keys (by key, value, or reference) within an instance object and all the associated parent models in its parent model chain. The interface is defined as follows: 
+
+```
+DECLARE_INTERFACE_(IKeyEnumerator, IUnknown)
+{
+    STDMETHOD(Reset)() PURE;
+    STDMETHOD(GetNext)(_Out_ BSTR* key, _COM_Errorptr_opt_ IModelObject** value, _COM_Outptr_opt_result_maybenull_ IKeyStore** metadata) PURE;
+}
+```
+
+[Reset]()
+
+The Reset method resets the enumerator to the position it was at when it was first acquired (e.g.: before the first element in the enumeration). A subsequent call to GetNext will return the first enumerated key. 
+
+[GetNext]()
+
+The GetNext method both moves the enumerator forward and returns the key at that position in the enumeration.
+
+
+**IRawEnumerator: Enumeration of native or underlying language (C/C++) constructs**
+
+The IRawEnumerator interface is the single interface for the enumeration of all native/language constructs (by value or reference) within a object which represents a native construct within the address space of the debug target. 
+The interface is defined as follows: 
+
+```
+DECLARE_INTERFACE_(IRawEnumerator, IUnknown)
+{
+    STDMETHOD(Reset)() PURE;
+    STDMETHOD(GetNext)(_Out_opt_ BSTR* name, _Out_opt_ SymbolKind *kind, _COM_Errorptr_opt_ IModelObject** value) PURE;
+}
+```
+
+[Reset]()
+
+The Reset method resets the enumerator to the position it was at when it was first acquired (e.g.: before the first element in the enumeration). A subsequent call to GetNext will return the first enumerated native/language construct. 
+
+[GetNext]()
+
+The GetNext method both moves the enumerator forward and returns the native/language construct at that position in the enumeration. 
+
 
 
 ## <span id="objecttypes"></span> Debugger Data Model Core Object Types
