@@ -35,7 +35,7 @@ The Windows Display Driver Model (WDDM) categorizes calls into the display minip
 
 -   [Child I/O Class](child-i-o-class.md)
 
- 
+-   [Display Class](display-class.md)
 
  
 
