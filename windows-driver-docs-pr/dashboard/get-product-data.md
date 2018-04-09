@@ -1,7 +1,8 @@
 ---
 title: Get product data
 description: These methods from the Microsoft Hardware APIs get data for hardware products registered to your Dev Center Account.
-ms.author: windowsdriverdev
+author: balapv
+ms.author: balapv
 ms.date: 04/05/2018
 ms.topic: article
 ms.prod: windows-hardware
