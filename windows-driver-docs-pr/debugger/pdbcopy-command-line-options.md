@@ -28,7 +28,7 @@ pdbcopy OldPDB NewPDB -p [-f:Symbol] [-f:@TextFile] [Options]
 
 pdbcopy OldPDB NewPDB -p [-F:Symbol] [-F:@TextFile] [Options] 
 
-pdbcopy InputPDBFile -FixOption {[autofix|verbose]}
+pdbcopy InputPDB Backup -CVE-2018-1037 [autofix|verbose]
 
 pdbcopy /? 
 ```
@@ -67,33 +67,35 @@ Causes the new symbol file to have a different signature than the old file. Norm
 Causes PDBCopy to use mspdb60.dll instead of mspdb80.dll. This option is never required, because PDBCopy automatically looks for the proper version of mspdb\*.dll. By default, PDBCopy uses mspdb80.dll, which is the version used by Visual Studio .NET 2002 and later versions of Visual Studio. If your symbols were built using Visual Studio 6.0 or an earlier version, you can specify this command-line option so that PDBCopy will use mspdb60.dll instead. However, this is not required, since PDBCopy looks for the appropriate file even if this option is not used. Whichever version of mspdb\*.dll you use must be in the executable path of the Command Prompt window from which you launch PDBCopy.
 
 
-<span id="FIXOPTION"></span> **-FixOption**   
+<span id="CVE-2018-1037"></span> **-CVE-2018-1037**   
 
-The **-FixOption** reports whether InputPDBFile has the issue described in MSRC 42950.
+The **-CVE-2018-1037** option reports whether InputPDBFile has the issue described in CVE-2018-1037.
 
 ```
-pdbcopy InputPDBFile -FixOption {[autofix|verbose]}
+pdbcopy InputFile Backup -CVE-2018-1037 [autofix|verbose]
 ```
 
 Any combination of the following options can be used. The options are case-sensitive.
 
-*autofix* - Report whether InputPDBFile has the problem described in MSRC 42950, and if so, fix the problem
+*autofix* - Report whether InputPDB has the problem described in CVE-2018-1037, and if so, fixes the problem.
 
-*verbose* - Display details about the problem.
+*verbose* - Displays the leaked memory content.
 
 For example:
 
-1.	pdbcopy.exe InputFile.PDB -fixoption 
-2.	pdbcopy.exe InputFile.PDB -fixoption verbose
-3.	pdbcopy.exe InputFile.PDB -fixoption autofix
-4.	pdbcopy.exe InputFile.PDB -fixoption verbose autofix
+1.	pdbcopy.exe InputFile.pdb BackUp.pdb -CVE-2018-1037   
+2.	pdbcopy.exe InputFile.pdp BackUp.pdb -CVE-2018-1037 verbose
+3.	pdbcopy.exe InputFile.pdp BackUp.pdb -CVE-2018-1037 autofix
+4.	pdbcopy.exe InputFile.pdp BackUp.pdb -CVE-2018-1037 verbose autofix
 
 Will do the following:
 
-1.	Report whether InputPDBFile has the issue described in MSRC 42950.
-2.	Report whether InputPDBFile has the issue described in MSRC 42950, and if so, display details about the problem.
-3.	Report whether InputPDBFile has the issue described in MSRC 42950, and if so, fix the problem.
-4.	Report whether InputPDBFile has the issue described in MSRC 42950, and if so, fix the problem and also display details about the problem.
+1.	Reports whether InputFile contains leaked process memory content.
+2.	Reports whether InputFile contains leaked process memory content, and if so, displays the leaked memory content.
+3.	Reports whether InputFile contains leaked process memory content, and if so, fixes the problem. It also makes a copy of the original InputFile.pdb in BackUp.pdb.
+4.	Reports whether InputFile contains leaked process memory content, and if so, fixes the problem and also displays the leaked memory content. It also makes a copy of the original InputFile.pdb in BackUp.pdb.
+
+If “InputFile.pdb” is good or option “autofix” is not specified, then “InputFile.pdb” won’t be updated by PDBCopy.exe and no backup will be created. In this case “InputFile.pdb” will remain as it was and the specified “backup.pdb” won’t be created (if it doesn’t exist) or overwritten (if it has already existed).
 
 
 <span id="_______-_______"></span> **-?**   
