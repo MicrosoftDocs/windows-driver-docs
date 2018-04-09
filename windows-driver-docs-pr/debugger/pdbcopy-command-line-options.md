@@ -69,33 +69,7 @@ Causes PDBCopy to use mspdb60.dll instead of mspdb80.dll. This option is never r
 
 <span id="CVE-2018-1037"></span> **-CVE-2018-1037**   
 
-The **-CVE-2018-1037** option reports whether InputPDBFile has the issue described in CVE-2018-1037 and optionally remediates the problem.
-
-```
-pdbcopy InputFile Backup -CVE-2018-1037 [autofix|verbose]
-```
-
-Any combination of the following options can be used. The options are case-sensitive.
-
-*autofix* - Report whether InputPDB has the problem described in CVE-2018-1037, and if so, fixes the problem.
-
-*verbose* - Displays the leaked memory content.
-
-For example:
-
-1.	pdbcopy.exe InputFile.pdb BackUp.pdb -CVE-2018-1037   
-2.	pdbcopy.exe InputFile.pdp BackUp.pdb -CVE-2018-1037 verbose
-3.	pdbcopy.exe InputFile.pdp BackUp.pdb -CVE-2018-1037 autofix
-4.	pdbcopy.exe InputFile.pdp BackUp.pdb -CVE-2018-1037 verbose autofix
-
-Will do the following:
-
-1.	Reports whether InputFile contains leaked process memory content.
-2.	Reports whether InputFile contains leaked process memory content, and if so, displays the leaked memory content.
-3.	Reports whether InputFile contains leaked process memory content, and if so, fixes the problem. It also makes a copy of the original InputFile.pdb in BackUp.pdb.
-4.	Reports whether InputFile contains leaked process memory content, and if so, fixes the problem and also displays the leaked memory content. It also makes a copy of the original InputFile.pdb in BackUp.pdb.
-
-If “InputFile.pdb” is good or option “autofix” is not specified, then “InputFile.pdb” won’t be updated by PDBCopy.exe and no backup will be created. In this case “InputFile.pdb” will remain as it was and the specified “backup.pdb” won’t be created (if it doesn’t exist) or overwritten (if it has already existed).
+Reports whether InputPDBFile has the issue described in CVE-2018-1037 and optionally remediates the problem. See [KB#######]() for more information and detailed usage information.
 
 
 <span id="_______-_______"></span> **-?**   
