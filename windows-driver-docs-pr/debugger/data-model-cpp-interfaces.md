@@ -1600,7 +1600,7 @@ DECLARE_INTERFACE_(IKeyStore, IUnknown)
    STDMETHOD(SetKey)(_In_ PCWSTR key, _In_opt_ IModelObject* object, _In_opt_ IKeyStore* metadata) PURE;
    STDMETHOD(GetKeyValue)(_In_ PCWSTR key, _COM_Errorptr_opt_ IModelObject** object, _COM_Outptr_opt_result_maybenull_ IKeyStore** metadata) PURE;
    STDMETHOD(SetKeyValue)(_In_ PCWSTR key, _In_ IModelObject* object) PURE;
-      STDMETHOD(ClearKeys)() PURE;
+   STDMETHOD(ClearKeys)() PURE;
 }
 ```
 
