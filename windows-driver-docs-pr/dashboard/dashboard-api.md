@@ -44,7 +44,7 @@ Before you can use the Microsoft Hardware API, you must associate an Azure AD ap
 
     ![an image showing the Hardware tab in the Roles section](images/hardware-tab-in-roles-section.png)
 
-    Ensure that **Driver Submitter** and **Shipping Label owner** is checked:
+    Ensure that **Driver Submitter** and **Shipping Label owner** are checked:
 
     ![an image showing the Driver Submitter and Shipping Label owner checkboxes](images/driver-submitter-and-shipping-label-owners-checkboxes.png)
 
