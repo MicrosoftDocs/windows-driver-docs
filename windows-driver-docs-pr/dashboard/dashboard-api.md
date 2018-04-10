@@ -32,6 +32,21 @@ Before you can use the Microsoft Hardware API, you must associate an Azure AD ap
 2.	In the **Manage users** page, click **Add Azure AD** applications, add the Azure AD application that represents the app or service that you will use to access submissions for your Dev Center account, and assign it the **Manager** role. If this application already exists in your Azure AD directory, you can select it on the **Add Azure AD applications** page to add it to your Dev Center account. Otherwise, you can create a new Azure AD application on the **Add Azure AD applications** page. For more information, see [Add Azure AD applications to your Dev Center account](https://docs.microsoft.com/en-us/windows/uwp/publish/add-users-groups-and-azure-ad-applications#azure-ad-applications) .
 3.	Return to the **Manage users** page, click the name of your Azure AD application to go to the application settings, and copy down the **Tenant ID** and **Client ID** values.
 4.	Click **Add new** key. On the following screen, copy down the **Key** value. You won't be able to access this info again after you leave this page. For more information, see [Manage keys for an Azure AD application](https://docs.microsoft.com/en-us/windows/uwp/publish/add-users-groups-and-azure-ad-applications#manage-keys).
+5.  Finally, ensure that the AD application has the required roles to manage and publish driver submissions. First, go to **Settings->Users** in the Hardware Dev Center.
+
+    ![an image showing the Users option on the Settings menu](images/settings-menu-users-option.png)
+
+    Click on **Azure AD applications** on the Users page.
+
+    ![an image showing the Azure AD applications tab](images/azure-ad-applications-tab.png)
+
+    Click on the name of the Azure AD application you associated. This will load the Azure AD application details page. In this page, click on **Hardware** under **Roles**.
+
+    ![an image showing the Hardware tab in the Roles section](images/hardware-tab-in-roles-section.png)
+
+    Ensure that **Driver Submitter** and **Shipping Label owner** is checked:
+
+    ![an image showing the Driver Submitter and Shipping Label owner checkboxes](images/driver-submitter-and-shipping-label-owners-checkboxes.png)
 
 ## Obtain an Azure AD access token
 
