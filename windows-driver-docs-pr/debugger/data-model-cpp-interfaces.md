@@ -992,7 +992,7 @@ DECLARE_INTERFACE_(IDebugHostSymbols, IUnknown)
 }
 ```
 
-CreateModuleSignature]()
+[CreateModuleSignature]()
 
 The CreateModuleSignature method creates a signature which can be used to match a set of specific modules by name and optionally, by version. 
 There are three components to a module signature: 
