@@ -2,7 +2,7 @@
 title: WinDbg Preview - Scripting Menu
 description: This section describes how to use scripting in the WinDbg preview debugger.
 ms.author: domars
-ms.date: 08/16/2017
+ms.date: 04/10/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 # WinDbg Preview - Scripting 
 
-This section describes how to how to use the scripting support in the WinDbg Preview.
+This section describes how to use the scripting support in the WinDbg Preview.
 
 ![Screen shot of scripting menu in debugger](images/windbgx-javascript-new-script.png)
 
