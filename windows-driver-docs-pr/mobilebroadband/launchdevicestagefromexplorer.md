@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # LaunchDeviceStageFromExplorer
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The LaunchDeviceStageFromExplorer element should be set to **false** because it does not apply to service metadata packages in Windows 8, Windows 8.1, and Windows 10.
 

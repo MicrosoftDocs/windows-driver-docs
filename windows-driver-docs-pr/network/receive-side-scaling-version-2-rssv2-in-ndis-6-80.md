@@ -10,7 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-[!include[RSSv2 Beta Prerelease](../rssv2-beta-prerelease.md)]
+
 
 # Receive Side Scaling Version 2 (RSSv2) in NDIS 6.80
 

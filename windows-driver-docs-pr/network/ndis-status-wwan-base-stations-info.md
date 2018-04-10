@@ -31,5 +31,5 @@ This notification uses the [NDIS_WWAN_BASE_STATIONS_INFO](https://msdn.microsoft
 
 [NDIS_WWAN_BASE_STATIONS_INFO](https://msdn.microsoft.com/library/windows/hardware/7C0E0903-F564-4F2B-95F9-FA8512FEF61B)
 
-[MB base stations information query operations](mb-uicc-reset-operations.md)
+[MB base stations information query operations](mb-base-stations-information-query-support.md)
 

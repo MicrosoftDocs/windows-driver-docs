@@ -21,7 +21,7 @@ For set requests, OID_WWAN_UICC_RESET uses the [NDIS_WWAN_SET_UICC_RESET](https:
 
 Unsolicited events are not applicable.
 
-For more info about passthrough actions and passthrough status, see [MB UICC reset operations](mb-uicc-reset-operations.md).
+For more info about passthrough actions and passthrough status, see [MB low level UICC access](mb-low-level-uicc-access.md).
 
 ## Requirements
 
@@ -42,5 +42,5 @@ For more info about passthrough actions and passthrough status, see [MB UICC res
 
 [NDIS_STATUS_WWAN_UICC_RESET_INFO](ndis-status-wwan-uicc-reset-info.md)
 
-[MB UICC reset operations](mb-uicc-reset-operations.md)
+[MB low level UICC access](mb-low-level-uicc-access.md)
 

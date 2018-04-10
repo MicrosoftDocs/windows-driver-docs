@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # Application (WindowsInfo)
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The Application element specifies the application ID for the app.
 

@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # ServiceDescription2
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The ServiceDescription2 element is not currently used.
 

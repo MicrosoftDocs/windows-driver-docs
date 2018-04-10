@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # DeviceNotificationHandlers
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The DeviceNotificationHandlers element specifies the device notification handlers.
 

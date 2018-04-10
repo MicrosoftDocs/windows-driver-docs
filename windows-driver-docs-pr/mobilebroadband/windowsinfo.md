@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # WindowsInfo
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The WindowsInfo element is the parent element of the [WindowsInfo XML schema](windowsinfo-xml-schema.md).
 
