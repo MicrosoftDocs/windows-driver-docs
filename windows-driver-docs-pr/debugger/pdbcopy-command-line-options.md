@@ -4,7 +4,7 @@ description: The PDBCopy command line uses the following syntax. The parameters 
 ms.assetid: a793f860-db21-41fb-a0d2-931812400f0d
 keywords: ["PDBCopy Command-Line Options Windows Debugging"]
 ms.author: domars
-ms.date: 04/09/2018
+ms.date: 04/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,7 +69,7 @@ Causes PDBCopy to use mspdb60.dll instead of mspdb80.dll. This option is never r
 
 <span id="CVE-2018-1037"></span> **-CVE-2018-1037**   
 
-Reports whether InputPDBFile has the issue described in CVE-2018-1037 and optionally remediates the problem. See [KB#######]() for more information and detailed usage information.
+Reports whether InputPDBFile has the issue described in CVE-2018-1037 and optionally remediates the problem. See [KB# 4131751 - PDBCopy tool](https://support.microsoft.com/help/4131751/pdbcopy-update-to-fix-pdb-security-issue) for more information and detailed usage information.
 
 
 <span id="_______-_______"></span> **-?**   
