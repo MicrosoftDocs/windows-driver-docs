@@ -137,11 +137,11 @@ The following interfaces are defined for this category:
 
 [IDebugHostSymbols]() 
 
-[IDebugHostSymbol]()  / IDebugHostSymbol2]() 
+[IDebugHostSymbol]()  / [IDebugHostSymbol2]() 
 
 [IDebugHostModule]() 
 
-[IDebugHostType]()  / IDebugHostType2]() 
+[IDebugHostType]()  / [IDebugHostType2]() 
 
 [IDebugHostConstant]() 
 
@@ -292,8 +292,6 @@ associated.
 
 This type of context is accessed through the *GetContextForDataModel*
 and *SetContextForDataModel* methods on *IModelObject*.
-
-
 
 
 
@@ -833,7 +831,7 @@ In addition to these basic types, a number of core data model objects are placed
 - Key reference objects (IModelKeyReference or IModelKeyReference2)
 - Context objects (IDebugModelHostContext)
 
-**Property Accessors *(IModelPropertyAccessor)***
+**Property Accessors:  *IModelPropertyAccessor***
 
 A property accessor in the data model is an implementation of the IModelPropertyAccessor interface which is boxed into an IModelObject. The model object will return a kind of ObjectPropertyAccessor when queried and the intrinsic value is a VT_UNKNOWN which is guaranteed to be queryable for IModelPropertyAccessor. In process, it is guaranteed to be statically castable to IModelPropertyAccessor. 
 
@@ -858,7 +856,7 @@ The GetValue method is the getter for the property accessor. It is called whenev
 The SetValue method is the setter for the property accessor. It is called whenever a client wishes to assign a value to the underlying property. Many properties are read-only. In such cases, calling the SetValue method will return E_NOTIMPL. Note that any caller which directly gets a property accessor is responsible for passing the key name and accurate instance object (this pointer) to the property accessor's SetValue method. 
 
 
-**Methods *(IModelMethod)***
+**Methods: *IModelMethod***
 
 A method in the data model is an implementation of the IModelMethod interface which is boxed into an IModelObject. The model object will return a kind of ObjectMethod when queried and the intrinsic value is a VT_UNKNOWN which is guaranteed to be queryable for IModelMethod. In process, it is guaranteed to be statically castable to IModelMethod. 
 All methods in the data model are dynamic in nature. They take as input a set of 0 or more arguments and return a single output value. There is no overload resolution and no metadata about parameter names, types, or expectations. 
@@ -877,7 +875,7 @@ DECLARE_INTERFACE_(IModelMethod, IUnknown)
 The Call method is the way in which any method defined in the data model is invoked. The caller is responsible for passing an accurate instance object (this pointer) and an arbitrary set of arguments. The result of the method and any optional metadata associated with that result is returned. Methods which do not logically return a value still must return a valid IModelObject. In such a case, the IModelObject is a boxed no value. In the event a method fails, it may return optional extended error information in the input argument (even if the returned HRESULT is a failure). It is imperative that callers check for this. 
 
 
-**Key References *(IModelKeyReference or IModelKeyReference2)***
+**Key References: *IModelKeyReference or IModelKeyReference2***
 
 A key reference is, in essence, a handle to a key on a particular object. A client can retrieve such handle via methods such as GetKeyReference and use the handle later to get or set the value of the key without necessarily holding onto the original object. This type of object is an implementation of the IModelKeyReference or IModelKeyReference2 interface which is boxed into an IModelObject. The model object will return a kind of ObjectKeyReference when queried and then intrinsic value is a VT_UNKNOWN which is guaranteed to be queryable for IModelKeyReference. In process, it is guaranteed to be statically castable to IModelKeyReference. 
 
@@ -932,7 +930,7 @@ The SetKeyValue method on a key reference behaves as the SetKeyValue method on I
 The OverrideContextObject method (only present on IModelKeyReference2) is an advanced method which is used to permanently alter the context object which this key reference will pass to any underlying property accessor's GetValue or SetValue methods. The object passed to this method will also be returned from a call to GetContextObject. This method can be used by script providers to replicate certain dynamic language behaviors. Most clients should not call this method. 
 
 
-**Context Objects *(IDebugHostContext)***
+**Context Objects: *IDebugHostContext***
 
 Context objects are opaque blobs of information that the debug host (in cooperation with the data model) associates with every object. It may include things such as the process context or address space the information comes from, etc... A context object is an implementation of IDebugHostContext boxed within an IModelObject. Note that IDebugHostContext is a host defined interface. A client will never implement this interface. 
 
@@ -1125,7 +1123,7 @@ The FindSymbolByRVA method will find a single matching symbol at the given relat
 The FindSymbolByName method will find a single global symbol of the given name within the module. If there is not a single symbol matching the given name, an error will be returned by this method. Note that this method will prefer returning a private symbol over a symbol in the publics table. 
 
 
-**Access to the Type System: IDebugHostType2 / IDebugHostType**
+**Access to the Type System: *IDebugHostType2 / IDebugHostType***
 
 A given language/native type is described by the IDebugHostType2 or IDebugHostType interfaces. Note that some of the methods on these interfaces only apply for specific kinds of types. A given type symbol may refer to one of the following types as described by the TypeKind enumeration: 
 
