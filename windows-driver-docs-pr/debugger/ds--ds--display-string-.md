@@ -19,7 +19,7 @@ api_type:
 # ds, dS (Display String)
 
 
-The **ds** and **dS** commands display a STRING, ANSI\_STRING, or UNICODE\_STRING structure. 
+The **ds** and **dS** commands display a STRING, ANSI\_STRING, or UNICODE\_STRING *structures*. 
 
 These commands do not display null-delimited character strings, but rather string structures.
 
