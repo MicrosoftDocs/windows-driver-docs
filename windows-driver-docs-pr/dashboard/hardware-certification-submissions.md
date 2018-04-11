@@ -169,7 +169,7 @@ This section displays certification information. Select **See more info** to exp
 </tbody>
 </table>
 
- 
+Submissions are automatically assigned Declaritive and Universal attributes based off the entire submission contents.  Therefore, if you want a Submission to be marked as Declaritive=True and/or Universal=True, **all** files and INFs that we check within the submission must be compliant.  For example, a merged HLK package that contains drivers for two different OS certifiations could have one set of drivers that are Declaritive and one set that are not.  In this case, the entire submission would be marked as Declarative=**False**.  Separate these into two submissions to ensure they are marked appropriately.
 
 If you want to add or update your announcement date, use the **Announcement date (UTC)** field and select **Submit**.
 
