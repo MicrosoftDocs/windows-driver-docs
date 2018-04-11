@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 A SDV rule list file is a text file that lists one or more [Static Driver Verifier rule](https://msdn.microsoft.com/library/windows/hardware/ff551714) or rule name patterns, with one rule or rule name pattern on each line. The rules can appear in any order and they are verified in the order that they appear. The file has an .sdv file name extension, such as Test.sdv.
 
-The rule that is listed on each line can be the name of one rule or it can be a wildcard character (\*), which represents all SDV rules. You can also use the wildcard character (\*) in a rule name to mean any character or characters.
+The rule that is listed on each line can be the name of one rule or it can be a wildcard character (\*), which represents all SDV rules.
 
 SDV includes a set of useful rule list files in the \\tools\\sdv\\samples\\rule\_sets\\wdm subdirectory of the WDK and you can create your own.
 
@@ -31,13 +31,6 @@ To use a rule list file in a command, see the [Static Driver Verifier commands (
 Typically, you would use a rule list file to specify multiple rules for a SDV verification that you cannot specify with a rule name pattern. It is also useful for batch and regression testing.
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
-
-The following sample rule list file directs SDV to run rules that begin with "Irql" or include "Cancel".
-
-```
-Irql*
-*Cancel*
-```
 
 The following sample rule list file lists a set of selected SDV rules.
 
