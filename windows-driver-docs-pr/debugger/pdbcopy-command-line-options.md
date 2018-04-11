@@ -4,7 +4,7 @@ description: The PDBCopy command line uses the following syntax. The parameters 
 ms.assetid: a793f860-db21-41fb-a0d2-931812400f0d
 keywords: ["PDBCopy Command-Line Options Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 04/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -27,6 +27,8 @@ pdbcopy OldPDB NewPDB [Options]
 pdbcopy OldPDB NewPDB -p [-f:Symbol] [-f:@TextFile] [Options] 
 
 pdbcopy OldPDB NewPDB -p [-F:Symbol] [-F:@TextFile] [Options] 
+
+pdbcopy InputPDB BackupPDB -CVE-2018-1037 [autofix|verbose]
 
 pdbcopy /? 
 ```
@@ -64,8 +66,16 @@ Causes the new symbol file to have a different signature than the old file. Norm
 <span id="-vc6"></span><span id="-VC6"></span>**-vc6**  
 Causes PDBCopy to use mspdb60.dll instead of mspdb80.dll. This option is never required, because PDBCopy automatically looks for the proper version of mspdb\*.dll. By default, PDBCopy uses mspdb80.dll, which is the version used by Visual Studio .NET 2002 and later versions of Visual Studio. If your symbols were built using Visual Studio 6.0 or an earlier version, you can specify this command-line option so that PDBCopy will use mspdb60.dll instead. However, this is not required, since PDBCopy looks for the appropriate file even if this option is not used. Whichever version of mspdb\*.dll you use must be in the executable path of the Command Prompt window from which you launch PDBCopy.
 
+
+<span id="CVE-2018-1037"></span> **-CVE-2018-1037**   
+
+Reports whether InputPDBFile has the issue described in CVE-2018-1037 and optionally remediates the problem. See [KB# 4131751 - PDBCopy tool](https://support.microsoft.com/help/4131751/pdbcopy-update-to-fix-pdb-security-issue) for more information and detailed usage information.
+
+
 <span id="_______-_______"></span> **-?**   
 Displays help text for the PDBCopy command line.
+
+
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
