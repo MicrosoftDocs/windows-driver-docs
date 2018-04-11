@@ -15,9 +15,7 @@ ms.technology: windows-devices
 
 # Tracelog Properties Display
 
-
 ## <span id="ddk_tracelog_display_tools"></span><span id="DDK_TRACELOG_DISPLAY_TOOLS"></span>
-
 
 Tracelog displays the properties of a trace session when you start, stop, update, or query the session.
 
@@ -127,14 +125,3 @@ The data comes from the EVENT\_TRACE\_PROPERTIES structure for the log session. 
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-

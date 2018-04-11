@@ -16,9 +16,7 @@ ms.technology: windows-devices
 
 # Tracelog Examples
 
-
 ## <span id="ddk_tracelog_examples_tools"></span><span id="DDK_TRACELOG_EXAMPLES_TOOLS"></span>
-
 
 The examples in this section show how to use Tracelog commands to control trace sessions. The topics include:
 
@@ -53,12 +51,3 @@ The examples in this section show how to use Tracelog commands to control trace 
 [Example 15: Measuring DPC/ISR Time](example-15--measuring-dpc-isr-time.md)
 
 [Example 16: Viewing Trace Messages in a Debugger](example-16--viewing-trace-messages-in-a-debugger.md)
-
- 
-
- 
-
-
-
-
-

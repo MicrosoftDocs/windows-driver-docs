@@ -41,9 +41,7 @@ Tracelog (Tracelog.exe) is an event tracing controller that runs in a Command Pr
 <div class="alert">
 <strong>Note</strong>  The Visual Studio environment variable, %WindowsSdkDir%, represents the path to the Windows kits directory where the kits are installed, for example, C:\Program Files (x86)\Windows Kits\8.1.
 </div>
-<div>
- 
-</div></td>
+</td>
 </tr>
 </tbody>
 </table>
@@ -55,9 +53,7 @@ Tracelog (Tracelog.exe) is an event tracing controller that runs in a Command Pr
 
 You can use Tracelog in a Command Prompt window as an event tracing controller.
 
-**Note**  To control a trace session on Windows Server 2003 and later versions of Windows, you must be a member of the Performance Log Users group or the Administrators group on the computer (**Run as administrator**).
-
- 
+**Note**  To control a trace session you must be a member of the Performance Log Users group or the Administrators group on the computer (**Run as administrator**).
 
 Tracelog features include:
 
@@ -79,22 +75,12 @@ Tracelog produces an event trace log (.etl) file that contains the trace message
 
 Tracelog controls kernel-mode and private (user-mode) trace sessions, and special sessions such as the [NT Kernel Logger trace session](nt-kernel-logger-trace-session.md) and the [Global Logger trace session](global-logger-trace-session.md).
 
-Tracelog runs on Windows 2000 and later versions of Windows.
+Tracelog runs on Windows 7 and later versions of Windows.
 
 Many of the features of Tracelog are also available in [TraceView](traceview.md), a tool included in the Windows Driver Kit (WDK) that has a graphical user interface in addition to a command-line interface.
 
 ## <span id="in_this_section"></span>In this section
 
-
 -   [**Tracelog Command Syntax**](tracelog-command-syntax.md)
 -   [Tracelog Displays](tracelog-displays.md)
 -   [Tracelog Examples](tracelog-examples.md)
-
- 
-
- 
-
-
-
-
-

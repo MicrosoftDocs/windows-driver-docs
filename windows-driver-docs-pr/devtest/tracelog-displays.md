@@ -13,7 +13,6 @@ ms.technology: windows-devices
 
 # Tracelog Displays
 
-
 Tracelog displays requested data at the command line. This section describes the elements of each display.
 
 [Tracelog Properties Display](tracelog-properties-display.md)
@@ -21,12 +20,3 @@ Tracelog displays requested data at the command line. This section describes the
 [Tracelog Enumguid Display](tracelog-enumguid-display.md)
 
 Tracelog also has customized displays for special trace sessions, such as the display of thread events in an NT Kernel Logger session.
-
- 
-
- 
-
-
-
-
-
