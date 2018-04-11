@@ -16,31 +16,35 @@ ms.technology: windows-devices
 
 The Windows Display Driver Model (WDDM) does not permit a call into one of the child I/O class functions in a reentrant fashion. That is, at the most, one thread can be running within one of the following functions per child device at a given time:
 
--   [*DxgkDdiQueryChildStatus*](https://msdn.microsoft.com/library/windows/hardware/ff559754)
+-   [*DxgkDdiQueryChildStatus*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_query_child_status)
 
--   [*DxgkDdiQueryDeviceDescriptor*](https://msdn.microsoft.com/library/windows/hardware/ff559761)
+-   [DxgkDdiQueryConnectionChange](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_queryconnectionchange)
 
--   [*DxgkDdiI2CReceiveDataFromDisplay*](https://msdn.microsoft.com/library/windows/hardware/ff559675)
+-   [*DxgkDdiQueryDeviceDescriptor*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_query_device_descriptor)
 
--   [*DxgkDdiI2CTransmitDataToDisplay*](https://msdn.microsoft.com/library/windows/hardware/ff559677)
+-   [*DxgkDdiDisplayDetectControl*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_displaydetectcontrol)
 
--   [*DxgkDdiOPMConfigureProtectedOutput*](https://msdn.microsoft.com/library/windows/hardware/ff559701)
+-   [*DxgkDdiI2CReceiveDataFromDisplay*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_i2c_receive_data_from_display)
 
--   [*DxgkDdiOPMCreateProtectedOutput*](https://msdn.microsoft.com/library/windows/hardware/ff559705)
+-   [*DxgkDdiI2CTransmitDataToDisplay*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_i2c_transmit_data_to_display)
 
--   [*DxgkDdiOPMDestroyProtectedOutput*](https://msdn.microsoft.com/library/windows/hardware/ff559708)
+-   [*DxgkDdiOPMConfigureProtectedOutput*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_opm_configure_protected_output)
 
--   [*DxgkDdiOPMGetCertificate*](https://msdn.microsoft.com/library/windows/hardware/ff559711)
+-   [*DxgkDdiOPMCreateProtectedOutput*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_opm_create_protected_output)
 
--   [*DxgkDdiOPMGetCertificateSize*](https://msdn.microsoft.com/library/windows/hardware/ff559715)
+-   [*DxgkDdiOPMDestroyProtectedOutput*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_opm_destroy_protected_output)
 
--   [*DxgkDdiOPMGetCOPPCompatibleInformation*](https://msdn.microsoft.com/library/windows/hardware/ff559720)
+-   [*DxgkDdiOPMGetCertificate*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_opm_get_certificate)
 
--   [*DxgkDdiOPMGetInformation*](https://msdn.microsoft.com/library/windows/hardware/ff559725)
+-   [*DxgkDdiOPMGetCertificateSize*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_opm_get_certificate_size)
 
--   [*DxgkDdiOPMGetRandomNumber*](https://msdn.microsoft.com/library/windows/hardware/ff559730)
+-   [*DxgkDdiOPMGetCOPPCompatibleInformation*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_opm_get_copp_compatible_information)
 
--   [*DxgkDdiOPMSetSigningKeyAndSequenceNumbers*](https://msdn.microsoft.com/library/windows/hardware/ff559735)
+-   [*DxgkDdiOPMGetInformation*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_opm_get_information)
+
+-   [*DxgkDdiOPMGetRandomNumber*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_opm_get_random_number)
+
+-   [*DxgkDdiOPMSetSigningKeyAndSequenceNumbers*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_opm_set_signing_key_and_sequence_numbers)
 
  
 
