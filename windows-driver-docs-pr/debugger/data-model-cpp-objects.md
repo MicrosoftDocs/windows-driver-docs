@@ -394,6 +394,140 @@ For more details about this context/state and its meaning, see the documentation
 
 
 
+
+## <span id="objecttypes"></span> Debugger Data Model Core Object Types
+
+
+An object in the data model is similar to the notion of Object in .NET. It is the generic container into which construct that the data model understands can be boxed. In addition to native objects and synthetic (dynamic) objects, there are a series of core object types which can be placed (or boxed) into the container of an IModelObject. The container in which most of these values are placed is a standard COM/OLE VARIANT with a number of additional restrictions placed upon what that VARIANT can contain. The most basic types of these are:
+
+- 8-bit unsigned and signed values (VT_UI1, VT_I1)
+- 16-bit unsigned and signed values (VT_UI2, VT_UI2)
+- 32-bit unsigned and signed values (VT_UI4, VT_I4)
+- 64-bit unsigned and signed values (VT_UI8, VT_I8)
+- Single and double precision floating point values (VT_R4, VT_R8)
+- Strings (VT_BSTR)
+- Booleans (VT_BOOL)
+
+In addition to these basic types, a number of core data model objects are placed into IModelObject defined by VT_UNKNOWN where the stored IUnknown is guaranteed to implement a specific interface. These types are: 
+
+- Property accessors (IModelPropertyAccessor)
+- Method objects (IModelMethod)
+- Key reference objects (IModelKeyReference or IModelKeyReference2)
+- Context objects (IDebugModelHostContext)
+
+**Property Accessors:  *IModelPropertyAccessor***
+
+A property accessor in the data model is an implementation of the IModelPropertyAccessor interface which is boxed into an IModelObject. The model object will return a kind of ObjectPropertyAccessor when queried and the intrinsic value is a VT_UNKNOWN which is guaranteed to be queryable for IModelPropertyAccessor. In process, it is guaranteed to be statically castable to IModelPropertyAccessor. 
+
+A property accessor is an indirect way to get a method call for getting and setting a key value in the data model. If a given key's value is a property accessor, the GetKeyValue and SetKeyValue methods will automatically notice this and call the property accessor's underlying GetValue or SetValue methods as appropriate. 
+
+The IModelPropertyAccessor interface is defined as follows: 
+
+```
+DECLARE_INTERFACE_(IModelPropertyAccessor, IUnknown)
+{
+    STDMETHOD(GetValue)(_In_ PCWSTR key, _In_opt_ IModelObject* contextObject, _COM_Outptr_ IModelObject** value) PURE;
+    STDMETHOD(SetValue)(_In_ PCWSTR key, _In_opt_ IModelObject* contextObject, _In_ IModelObject* value) PURE; 
+}
+```
+
+[GetValue]()
+
+The GetValue method is the getter for the property accessor. It is called whenever a client wishes to fetch the underlying value of the property. Note that any caller which directly gets a property accessor is responsible for passing the key name and accurate instance object (this pointer) to the property accessor's GetValue method. 
+
+[SetValue]()
+
+The SetValue method is the setter for the property accessor. It is called whenever a client wishes to assign a value to the underlying property. Many properties are read-only. In such cases, calling the SetValue method will return E_NOTIMPL. Note that any caller which directly gets a property accessor is responsible for passing the key name and accurate instance object (this pointer) to the property accessor's SetValue method. 
+
+
+**Methods: *IModelMethod***
+
+A method in the data model is an implementation of the IModelMethod interface which is boxed into an IModelObject. The model object will return a kind of ObjectMethod when queried and the intrinsic value is a VT_UNKNOWN which is guaranteed to be queryable for IModelMethod. In process, it is guaranteed to be statically castable to IModelMethod. 
+All methods in the data model are dynamic in nature. They take as input a set of 0 or more arguments and return a single output value. There is no overload resolution and no metadata about parameter names, types, or expectations. 
+
+The IModelMethod interface is defined as follows: 
+
+```
+DECLARE_INTERFACE_(IModelMethod, IUnknown)
+{
+    STDMETHOD(Call)(_In_opt_ IModelObject *pContextObject, _In_ ULONG64 argCount, _In_reads_(argCount) IModelObject **ppArguments, _COM_Errorptr_ IModelObject **ppResult, _COM_Outptr_opt_result_maybenull_ IKeyStore **ppMetadata) PURE;
+}
+```
+
+[Call]()
+
+The Call method is the way in which any method defined in the data model is invoked. The caller is responsible for passing an accurate instance object (this pointer) and an arbitrary set of arguments. The result of the method and any optional metadata associated with that result is returned. Methods which do not logically return a value still must return a valid IModelObject. In such a case, the IModelObject is a boxed no value. In the event a method fails, it may return optional extended error information in the input argument (even if the returned HRESULT is a failure). It is imperative that callers check for this. 
+
+
+**Key References: *IModelKeyReference or IModelKeyReference2***
+
+A key reference is, in essence, a handle to a key on a particular object. A client can retrieve such handle via methods such as GetKeyReference and use the handle later to get or set the value of the key without necessarily holding onto the original object. This type of object is an implementation of the IModelKeyReference or IModelKeyReference2 interface which is boxed into an IModelObject. The model object will return a kind of ObjectKeyReference when queried and then intrinsic value is a VT_UNKNOWN which is guaranteed to be queryable for IModelKeyReference. In process, it is guaranteed to be statically castable to IModelKeyReference. 
+
+The key reference interface is defined as follows: 
+
+```
+DECLARE_INTERFACE_(IModelKeyReference2, IModelKeyReference)
+{
+    STDMETHOD(GetKeyName)(_Out_ BSTR* keyName) PURE;
+    STDMETHOD(GetOriginalObject)(_COM_Outptr_ IModelObject** originalObject) PURE;
+    STDMETHOD(GetContextObject)(_COM_Outptr_ IModelObject** containingObject) PURE;
+    STDMETHOD(GetKey)(_COM_Errorptr_opt_ IModelObject** object, _COM_Outptr_opt_result_maybenull_ IKeyStore** metadata) PURE;
+    STDMETHOD(GetKeyValue)(_COM_Errorptr_opt_ IModelObject** object, _COM_Outptr_opt_result_maybenull_ IKeyStore** metadata) PURE;
+    STDMETHOD(SetKey)(_In_opt_ IModelObject* object, _In_opt_ IKeyStore* metadata) PURE;
+    STDMETHOD(SetKeyValue)(_In_ IModelObject* object) PURE;
+    STDMETHOD(OverrideContextObject)(_In_ IModelObject* newContextObject) PURE;
+}
+```
+
+[GetKeyName]()
+
+The GetKeyName method returns the name of the key to which this key reference is a handle. The returned string is a standard BSTR and must be freed via a call to SysFreeString. 
+
+[GetOriginalObject]()
+
+The GetOriginalObject method returns the instance object from which the key reference was created. Note that the key may itself be on a parent model of the instance object. 
+
+[GetContextObject]()
+
+The GetContextObject method returns the context (this pointer) which will be passed to a property accessor's GetValue or SetValue method if the key in question refers to a property accessor. The context object returned here may or may not be the same as the original object fetched from GetOriginalObject. If a key is on a parent model and there is a context adjustor associated with that parent model, the original object is the instance object on which GetKeyReference or EnumerateKeyReferences was called. The context object would be whatever comes out of the final context adjustor between the original object and the parent model containing the key to which this key reference is a handle. If there are no context adjustors, the original object and the context object are identical. 
+
+[GetKey]()
+
+The GetKey method on a key reference behaves as the GetKey method on IModelObject would. It returns the value of the underlying key and any metadata associated with the key. If the value of the key happens to be a property accessor, this will return the property accessor (IModelPropertyAccessor) boxed into an IModelObject. This method will not call the underlying GetValue or SetValue methods on the property accessor. 
+
+[GetKeyValue]()
+
+The GetKeyValue method on a key reference behaves as the GetKeyValue method on IModelObject would. It returns the value of the underlying key and any metadata associated with the key. If the value of the key happens to be a property accessor, this will call the underlying GetValue method on the property accessor automatically. 
+
+
+[SetKey]()
+
+The SetKey method on a key reference behaves as the SetKey method on IModelObject would. It will assign the value of the key. If the original key was a property accessor, this will replace the property accessor. It will not call the SetValue method on the property accessor. 
+
+
+[SetKeyValue]()
+
+The SetKeyValue method on a key reference behaves as the SetKeyValue method on IModelObject would. It will assign the value of the key. If the original key was a property accessor, this will call the underlying SetValue method on the property accessor rather than replacing the property accessor itself. 
+
+[OverrideContextObject]()
+
+The OverrideContextObject method (only present on IModelKeyReference2) is an advanced method which is used to permanently alter the context object which this key reference will pass to any underlying property accessor's GetValue or SetValue methods. The object passed to this method will also be returned from a call to GetContextObject. This method can be used by script providers to replicate certain dynamic language behaviors. Most clients should not call this method. 
+
+
+**Context Objects: *IDebugHostContext***
+
+Context objects are opaque blobs of information that the debug host (in cooperation with the data model) associates with every object. It may include things such as the process context or address space the information comes from, etc... A context object is an implementation of IDebugHostContext boxed within an IModelObject. Note that IDebugHostContext is a host defined interface. A client will never implement this interface. 
+
+For more information about context objects, see [Debugger Data Model C++ Host Interfaces](#hostinterface), in this topic. 
+
+
+
+
+
+
+
+
+
 ## <span id="modelmanager"> The Data Model Manager  
 
 ToDo: Import Content from Wiki
