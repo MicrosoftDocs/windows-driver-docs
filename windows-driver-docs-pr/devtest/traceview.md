@@ -31,9 +31,7 @@ TraceView is a [trace controller](trace-controller.md) and a [trace consumer](tr
 
 TraceView is located in the tools\\&lt;*Platform*&gt; subdirectory of the Windows Driver Kit (WDK), where &lt;*Platform*&gt; is either i386, amd64, or ia64.
 
-**Note**  TraceView runs on Microsoft Windows 2000 and later versions of Windows, although some features are restricted on Windows 2000. For more information about these restrictions, see [TraceView Limitations](traceview-limitations.md).
-
- 
+**Note**  TraceView runs on Microsoft Windows 7 and later versions of Windows.
 
 TraceView performs many of the functions of [Tracepdb](tracepdb.md), [Tracelog](tracelog.md), and [Tracefmt](tracefmt.md), the command-line tracing tools that are included in the WDK.
 
@@ -42,12 +40,3 @@ This section describes TraceView 2.0.15. It includes the following topics:
 [TraceView Overview](traceview-overview.md)
 
 [Using TraceView](using-traceview.md)
-
- 
-
- 
-
-
-
-
-

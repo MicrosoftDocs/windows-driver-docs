@@ -11,7 +11,6 @@ ms.technology: windows-devices
 
 # TraceView Basics
 
-
 This section explains how to use the basic features of TraceView.
 
 It includes:
@@ -19,12 +18,3 @@ It includes:
 [Preparing to Use TraceView](preparing-to-use-traceview.md)
 
 [Starting and Exiting TraceView](starting-and-exiting-traceview.md)
-
- 
-
- 
-
-
-
-
-

@@ -24,14 +24,10 @@ Use a Traceview control command to manage trace sessions, including starting and
 
 ```
     traceview {-start | -stop | -update | -enable | -disable | -flush | -q} SessionName [Parameters]
-
-   
 ```
 
 ```
     traceview {-enumguid | -l | -h | -x}
-
-   
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -67,9 +63,6 @@ Lists providers on the system that are [registered](registered-provider.md) with
 
 <span id="_______-l______"></span><span id="_______-L______"></span> **-l**   
 List all trace sessions running on the computer.
-
-<span id="_______-x______"></span><span id="_______-X______"></span> **-x**   
-Stops all trace sessions.
 
 ### <span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -150,13 +143,6 @@ This forced flush is in addition to the flushes that happen automatically whenev
 
 See also: **-flush**.
 
-<span id="_______-age_______AgeLimit______"></span><span id="_______-age_______agelimit______"></span><span id="_______-AGE_______AGELIMIT______"></span> **-age** *AgeLimit*   
-When used with **-star**t, **-age** specifies how long (in minutes) unused trace buffers are kept before they are freed. When used with **-update**, **-age** changes the age limit to the specified value.
-
-*Age Limit* specifies how long (in minutes) unused trace buffers are kept before they are freed. The default is 15 minutes.
-
-This parameter is valid only in Windows 2000.
-
 <span id="_______-paged______"></span><span id="_______-PAGED______"></span> **-paged**   
 Uses pageable memory for the trace message buffers. By default, event tracing uses nonpageable memory for buffers. Use only with **-start**.
 
@@ -211,12 +197,3 @@ You can use the TraceView -start command to start a [Global Logger trace session
 ```
 traceview -start GlobalLogger [parameters]
 ```
-
- 
-
- 
-
-
-
-
-

@@ -19,12 +19,10 @@ ms.technology: windows-devices
 
 # TraceView -parsepdb
 
-
 Use a **TraceView -parsepdb** command to create [trace message format files](trace-message-format-file.md) from data in a [PDB symbol file](pdb-symbol-files.md).
 
 ```
     traceview -parsepdb PDBfile [-p TMFPath] 
-
    
 ```
 
@@ -51,12 +49,3 @@ Comments
 TraceView also creates a [trace message control (.tmc) file](trace-message-control-file.md) for each [trace provider](trace-provider.md) in the source code. The TMC file contains the [control GUID](control-guid.md) and the trace levels of each trace provider represented in the PDB file. The name of the TMC file is the control GUID of the trace provider.
 
 If TraceView responds to a **-parsepdb** command only by displaying the **Press any key to exit** message, this might indicate that the required DLL have not been moved to the directory in which the TraceView executable file, traceview.exe, is located. For more information, see [Preparing to Use TraceView](preparing-to-use-traceview.md). This also might indicate that the PDB file does not have the required trace components. Confirm that the source code from which the PDB file was created is instrumented for software tracing.
-
- 
-
- 
-
-
-
-
-

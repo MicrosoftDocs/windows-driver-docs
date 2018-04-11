@@ -24,12 +24,10 @@ Use a **TraceView -process** command to format the binary trace messages in a [t
 
 ```
     traceview -process [EtlFile | -rt SessionName][Parameters]
-
    
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
 
 <span id="_______EtlFile______"></span><span id="_______etlfile______"></span><span id="_______ETLFILE______"></span> *EtlFile*   
 Specifies the event trace log (.etl) file that contains the trace messages. Enter the path (optional) and file name. The default is c:\\logfile.etl.
@@ -107,12 +105,3 @@ If TraceView cannot format a trace message, it raises an exception and displays 
 ```
 *****FormatMessage Header(Header) of EventTrace, parameter 23 raised an exception*****
 ```
-
- 
-
- 
-
-
-
-
-
