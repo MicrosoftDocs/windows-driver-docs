@@ -1,5 +1,5 @@
 ---
-title: Debugger Data Model C++ Interfaces
+title: Debugger Data Model C++ Additional Interfaces
 description: This topic describes how to use Debugger Data Model C++ Interfaces to extend and customize the capabilities of the debugger.
 ms.author: domars
 ms.date: 04/09/2018
@@ -14,6 +14,17 @@ This topic describes how to use Debugger Data Model C++ Interfaces to extend and
 
 This page is part of a series on which describes the interfaces accessible from C++, how to use them to build a C++ based
 debugger extension, and how to make use of other data model constructs (e.g.: JavaScript or NatVis) from a C++ data model extension.
+
+[Debugger Data Model C++ Interfaces Overview](data-model-cpp-interfaces-overview.md)
+
+[Debugger Data Model C++ Objects](data-model-cpp-objects.md)
+
+[Debugger Data Model C++ Additional Interfaces](data-model-cpp-additional-interfaces.md)
+
+[Debugger Data Model C++ Scripting](data-model-cpp-scripting.md)
+
+
+## Topic Orginization
 
 
 Theses section in this topic introduce the the following.
@@ -1630,7 +1641,7 @@ The SetKeyValue method is analogous to the SetKeyValue method on IModelObject. T
 The ClearKeys method is analogous to the ClearKeys method on IModelObject. It will remove every key from the given metadata store. This method has no effect on any parent store. 
 
 
-
+---
 
 ## <span id="related_topics"></span>Related topics
 
