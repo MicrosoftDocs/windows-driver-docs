@@ -105,3 +105,13 @@ This resource has the following values
 
 | Value | Type | Description |
 |:--|:--|:--|
+|id|long|The ID of the shipping label|
+|productId|long|The private product ID to which this shipping label is associated|
+|submissionId|long|The submission ID to which this shipping label is associated|
+|publishingSpecifications|object|Refer <link TBD> for more details|
+|recipientSpecifications|object|Refer <link TBD> for more details|
+|targeting|object|Refer <link TBD> for more details|
+|workflowStatus|object|This object depicts the status of the workflow for this submission. Refer [workflow status object](get-product-data.md#workflow-status-object)  for more details - TBD need to add morew status to Workflow object|
+|links|array of objects|Refer [link object](get-product-data.md#link-object)  for more details - TBD need to add more links for SL|
+|name|string|The name of the shipping label|
+|destination|string|Indicates the destination of the shipping label. Possible values are(description in parenthesis): <ul><li>anotherPartner (*this shipping label is for sharing the submission with another partner*)</li><li>windowsUpdate (*this shipping label is for publishing to Windows Update*)</li><li>notSet</li></ul>|
