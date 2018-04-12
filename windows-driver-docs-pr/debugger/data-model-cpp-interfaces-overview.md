@@ -400,12 +400,33 @@ The DestroyFunctionAlias method undoes a prior call to the CreateFunctionAlias m
 
 
 
-
 ## <span id="accessdatamodel"> Accessing the Data Model
 
-ToDo: Import Content from Wiki
+First and foremost, the data model extensibility APIs are designed to be neutral to the application (typically a debugger) which acts as a host of the data model. In theory, any application can host the data model by providing a set of host APIs that expose the type system of the application's debug target(s) and a set of projected objects into the namespace of the data model about what targets, processes, threads, etc... are in those debug target(s). 
 
-https://osgwiki.com/wiki/Accessing_the_Data_Model
+While the data model APIs -- those that begin IDataModel*, IDebugHost*, and the offshoots of IModelObject -- are designed to be portable, they do not define what a "debugger extension" is. Today, a component that wishes to extend Debugging Tools for Windows and the engine it provides must write an engine extension in order to get access to the data model. That engine extension needs only to be an engine extension in so much as that is the loading and bootstrapping mechanism for the extension. As such, a minimal implementation would provide: 
+
+- [DebugExtensionInitialize](): A method which utilizes a created IDebugClient to get access to the data model and sets up object model manipulations.
+- [DebugExtensionUninitialize](): A method which undoes the object model manipulations which were performed in DebugExtensionInitialize.
+- [DebugExtensionCanUnload](): A method which returns whether the extension can unload. If there are still live COM objects in the extension, it must indicate this. This is the debugger's equivalent of COM's DllCanUnloadNow. If this returns the S_FALSE indication of inability to unload, the debugger can query this later to see if an unload is safe or it may reinitialize the extension by calling DebugExtensionInitialize again. The extension must be prepared to handle both paths.
+- [DebugExtensionUnload](): A method which does any final cleanup required right before the DLL unloads
+
+*The Bridge Interface: IHostDataModelAccess*
+
+As mentioned, when DebugExtensionInitialize is called, it creates a debug client and gets access to the data model. Such access is provided by a bridge interface between the legacy IDebug* interfaces of Debugging Tools for Windows and the data model. This bridge interface is 'IHostDataModelAccess and is defined as follows: 
+
+```
+DECLARE_INTERFACE_(IHostDataModelAccess, IUnknown)
+{
+   STDMETHOD(GetDataModel)(_COM_Outptr_ IDataModelManager** manager, _COM_Outptr_ IDebugHost** host) PURE;
+}
+```
+
+[GetDataModel]()
+
+The GetDataModel method is the method on the bridge interface which provides access to both sides of the data model: 
+The debug host (the lower edge of the debugger) is expressed by the returned IDebugHost interface
+The data model's main component -- the data model manager is expressed by the returned IDataModelManager interface
 
 
 
