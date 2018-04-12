@@ -257,11 +257,11 @@ This object has the following values
 
 | Value | Type | Description |
 |:--|:--|:--|
-|bundleId|string|The architecture for which this hardware ID - operating system is applicable. Possible values are <ul><li></li><li></li><li></li></ul>|
+|bundleId|string|The architecture for which this hardware ID - operating system is applicable. Possible values are <ul><li>tbd</li><li>tbd</li><li>tbd</li></ul>|
 |infId|string|The name of the inf file which contains this hardware ID|
 |operatingSystemCode|string|The operating system applicable for this specific hardware ID - architecture combination. Refer [list of OS codes](get-product-data.md#list-of-operating-system-codes) for possible values.|
-|pnpString|string|The hardware ID|
-|distributionState|string||
+|pnpString|string|The hardware ID which is to be targeted.|
+|distributionState|string|Represents the current targeting status of this hardware ID. Possible values are (description in paranthesis):<ul><li>pendingAdd (*Add has been requested for this hardware ID and is in progress*)</li><li>pendingRemove (*A remove (expire) has been requested for this hardware ID and is in progress*)</li><li>added (*This hardware ID has been succesfully added as target in this shipping label*)</li><li>notSet (*No action has been taken or status has not been set on this hardware ID*)</li></ul>|
 
 
 ### CHIDs object
@@ -277,3 +277,5 @@ This object has the following values
 
 | Value | Type | Description |
 |:--|:--|:--|
+|chid|GUID|The CHID which needs to be targeted|
+|distributionState|string|Represents the current targeting status of this CHID. Possible values are (description in paranthesis):<ul><li>pendingAdd (*Add has been requested for this hardware ID and is in progress*)</li><li>pendingRemove (*A remove (expire) has been requested for this hardware ID and is in progress*)</li><li>added (*This hardware ID has been succesfully added as target in this shipping label*)</li><li>notSet (*No action has been taken or status has not been set on this hardware ID*)</li></ul>|
