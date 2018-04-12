@@ -15,7 +15,6 @@ ms.technology: windows-devices
 
 # Example 5: Enabling Trace Providers
 
-
 The following command enables a trace provider for a running trace session named "MyTrace":
 
 ```
@@ -48,12 +47,3 @@ tracelog -enable MyTrace -guid MyProvider.guid -flag 2 -level 2
 ```
 
 You can also use the **tracelog -enable** command to add more providers to the trace session and to re-enable providers that you have disabled by using a **tracelog -disable** command.
-
- 
-
- 
-
-
-
-
-

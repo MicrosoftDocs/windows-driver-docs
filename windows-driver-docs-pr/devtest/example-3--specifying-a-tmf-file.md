@@ -14,7 +14,6 @@ ms.technology: windows-devices
 
 # Example 3: Specifying a TMF File
 
-
 This example demonstrates the methods of specifying the TMF file used to format the trace messages:
 
 -   Use the **-tmf** parameter.
@@ -52,18 +51,9 @@ This example demonstrates the methods of specifying the TMF file used to format 
 
 If the TMF files specified by any of these methods do not include formatting instructions for the trace messages, [TraceView](traceview.md) writes the message to the output file with the "No Format Information found" error message. For example:
 
-```
+```text
 Unknown( 10): GUID=37753236-c81f-505e-d40a-128d3bb2b5ff (No Format Information found).
 Unknown( 11): GUID=37753236-c81f-505e-d40a-128d3bb2b5ff (No Format Information found).
 Unknown( 11): GUID=37753236-c81f-505e-d40a-128d3bb2b5ff (No Format Information found).
 ...
 ```
-
- 
-
- 
-
-
-
-
-

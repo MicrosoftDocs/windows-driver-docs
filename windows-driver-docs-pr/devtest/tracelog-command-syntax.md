@@ -24,15 +24,11 @@ Tracelog has commands (or actions) that start, stop, and control a [trace sessio
 
 **Note**  To control a trace session you must be a member of the Performance Log Users group or the Administrators group on the computer (**Run as administrator**).
 
- 
-
 ```
-    tracelog [actions] [options] | [-h | -help | -?]
-   
+    tracelog [actions] [options] | [-h | -help | -?] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
 
 For information about the Tracelog parameters, see \[[*actions*](#actions)\] \[[*options*](#options)\].
 
@@ -256,7 +252,7 @@ Enables the specified trace providers.
 
 If a file is specified, Tracelog will enable tracing for all the providers specified in the file. The file must be formatted as:
 
-```
+```text
 ; comment line
 guid1;matchanykeyword;level
 guid2;matchanykeyword;level
