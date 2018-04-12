@@ -2,7 +2,7 @@
 title: Debugger Data Model C++ Scripting
 description: This topic describes how to use Debugger Data Model C++ scripting to support automation with the debugger engine.
 ms.author: domars
-ms.date: 04/11/2018
+ms.date: 04/12/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -12,7 +12,8 @@ ms.technology: windows-devices
 
 This topic describes how to use Debugger Data Model C++ Debugger Data Model C++ scripting to support automation with the debugger engine using scripting.
 
-This is one topic on a series about the C++ Debugger Data Model
+This topic is part of a series which describes the interfaces accessible from C++, how to use them to build a C++ based
+debugger extension, and how to make use of other data model constructs (e.g.: JavaScript or NatVis) from a C++ data model extension.
 
 [Debugger Data Model C++ Interfaces Overview](data-model-cpp-interfaces-overview.md)
 
@@ -22,16 +23,18 @@ This is one topic on a series about the C++ Debugger Data Model
 
 [Debugger Data Model C++ Scripting](data-model-cpp-scripting.md)
 
-## Topic Organization
 
+## Topic Sections
 
-- [Script Management in the Debugger Data Model](#scriptmanangement)
+This topic includes the following sections.
 
-- [Debugger Data Model C++ Host Interfaces for Scripting](#hostinterfacesscript)
+[Script Management in the Debugger Data Model](#scriptmanangement)
 
-- [Debugger Data Model C++ Scripting Interfaces](#scriptinterface)
+[Debugger Data Model C++ Host Interfaces for Scripting](#hostinterfacesscript)
 
-- [Debugger Data Model C++ Script Debugging Interfaces](#debugscript)
+[Debugger Data Model C++ Scripting Interfaces](#scriptinterface)
+
+[Debugger Data Model C++ Script Debugging Interfaces](#debugscript)
 
 
 ## <span id="scriptmanangement"> Script Management in the Debugger Data Model 
@@ -582,9 +585,11 @@ DECLARE_INTERFACE_(IDataModelScriptDebugVariableSetEnumerator, IUnknown)
 }
 
 [Reset]()
+
 The Reset method resets the position of the enumerator to where it was immediately after creation -- that is, before the first element of the set. 
 
 [GetNext]()
+
 The GetNext method moves the enumerator to the next variable in the set and returns the variable's name, value, and any metadata associated with it. If the enumerator has hit the end of the set, the error E_BOUNDS is returned. Once the E_BOUNDS marker has been returned from the GetNext method, it will continue to produce E_BOUNDS when called again unless an intervening Reset call is made. 
 
 

@@ -2,7 +2,7 @@
 title: Debugger Data Model C++ Interfaces Overview
 description: This topic describes how to use Debugger Data Model C++ Interfaces to extend and customize the capabilities of the debugger.
 ms.author: domars
-ms.date: 04/11/2018
+ms.date: 04/12/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -10,9 +10,9 @@ ms.technology: windows-devices
 
 # Debugger Data Model C++ Interfaces Overview
 
-This topic describes how to use Debugger Data Model C++ Interfaces to extend and customize the capabilities of the debugger.
+This topic provides and overview of how to use Debugger Data Model C++ Interfaces to extend and customize the capabilities of the debugger.
 
-This page is part of a series on which describes the interfaces accessible from C++, how to use them to build a C++ based
+This topic is part of a series which describes the interfaces accessible from C++, how to use them to build a C++ based
 debugger extension, and how to make use of other data model constructs (e.g.: JavaScript or NatVis) from a C++ data model extension.
 
 [Debugger Data Model C++ Interfaces Overview](data-model-cpp-interfaces-overview.md)
@@ -25,20 +25,19 @@ debugger extension, and how to make use of other data model constructs (e.g.: Ja
 
 
 
-## Topic Orginization
+## Topic Sections
 
+This topic includes the following sections.
 
-Theses section in this topic introduce the the following.
+[Overview of Debugger Data Model C++ Interfaces](#overview)
 
-- [Overview of Debugger Data Model C++ Interfaces](#overview)
+[Summary of Debugger Data Model Interfaces](#summary)
 
-- [Summary of Debugger Data Model Interfaces](#summary)
+[Debugger Data Model C++ Host Interfaces](#hostinterface)
 
-- [Debugger Data Model C++ Host Interfaces](#hostinterface)
+[Accessing the Data Model](#accessdatamodel)
 
-- [Accessing the Data Model](#accessdatamodel)
-
-- [Debugger Data Model System Interfaces](#systeminterfaces)
+[Debugger Data Model System Interfaces](#systeminterfaces)
 
 
 
@@ -465,7 +464,7 @@ IDebugHostEvaluator / IDebugHostEvaluator2 | The debug host's expression evaluat
 IDebugHostExtensibility | An interface for extending the capabilities of the host or portions of it (such as the expression evaluator).
 
 
-**The Main Symbolic Interface: *IDebugHostSymbols***
+**The Main Symbolic Interface: IDebugHostSymbols**
 
 The IDebugHostSymbols interface is the main starting point to access symbols in the debug target. This interface can be queried from an instance of IDebugHost and is defined as follows: 
 
@@ -519,7 +518,7 @@ If the analysis cannot find a runtime type or cannot find a runtime type differe
 
 
 
-**The Core Individual Symbol Interface: *IDebugHostSymbol***
+**The Core Individual Symbol Interface: IDebugHostSymbol**
 
 Every symbol that can be returned from the data model host will derive in some fashion from IDebugHostSymbol. This is the core interface that every symbol implements regardless of the kind of symbol. Depending on the kind of symbol, a given symbol may implement a set of other interfaces which return attributes more unique to the particular kind of symbol represented by this interface. The IDebugHostSymbol2 / 
 IDebugHostSymbol interface is defined as follows: 
@@ -567,7 +566,7 @@ The GetContext method returns the context where the symbol is valid. While this 
 The EnumerateChildren method returns an enumerator which will enumerate all children of a given symbol. For a C++ type, for example, the base classes, fields, member functions, and the like are all considered children of the type symbol. 
 
 
-**The Module Interface: *IDebugHostModule***
+**The Module Interface: IDebugHostModule**
 
 The debugger's notion of a module that is loaded within some address space is represented in two distinct ways in the data model: 
 At the type system level via the IDebugHostModule interface. Here, a module is a symbol and core attributes of the module are interface method calls
@@ -615,7 +614,7 @@ The FindSymbolByRVA method will find a single matching symbol at the given relat
 The FindSymbolByName method will find a single global symbol of the given name within the module. If there is not a single symbol matching the given name, an error will be returned by this method. Note that this method will prefer returning a private symbol over a symbol in the publics table. 
 
 
-**Access to the Type System: *IDebugHostType2 / IDebugHostType***
+**Access to the Type System: IDebugHostType2 / IDebugHostType**
 
 A given language/native type is described by the IDebugHostType2 or IDebugHostType interfaces. Note that some of the methods on these interfaces only apply for specific kinds of types. A given type symbol may refer to one of the following types as described by the TypeKind enumeration: 
 
@@ -940,7 +939,7 @@ For fields which have a constant value defined within the symbolic information (
 If the given field does not have a constant value, the GetValue method will fail. 
 
 
-**Free Data Access: *IDebugHostData***
+**Free Data Access: IDebugHostData**
 
 Data in modules which is not a member of another type is represented by the IDebugHostData interface. That interface is defined as follows (ignoring methods generic to IDebugHostSymbol): 
 
@@ -988,7 +987,7 @@ DECLARE_INTERFACE_(IDebugHostBaseClass, IDebugHostSymbol)
 The GetOffset method returns the offset of the base class from the base address of the derived class. Such offset may be zero or may be a positive unsigned 64-bit value. 
 
 
-**Public Symbols: *IDebugHostPublic***
+**Public Symbols: IDebugHostPublic**
 
 Public symbols represent things in the public table within a symbol file. They are, in effect, export addresses. There is no type information associated with a public symbol -- only an address. Unless a public symbol is explicitly requested by the caller, the debug host prefers to return private symbols for every inquiry. A public symbol is expressed by the IDebugHostPublic interface which is defined as follows (ignoring methods which are generic to IDebugHostSymbol): 
 
@@ -1012,7 +1011,7 @@ For data which has an address, the GetLocation method will return the abstract l
 If the given public does not have a static location, the GetLocation method will fail. 
 
 
-**Module Signatures and Version Matching: *IDebugHostModuleSignature***
+**Module Signatures and Version Matching: IDebugHostModuleSignature**
 
 Module signatures represent a means to check whether a given module meets a set of criteria regarding naming and versioning. A module signature is created via the CreateModuleSignature method on IDebugHostSymbols. It can match the module name, and an optional range of version numbers for the module. Once such a signature is created, the client receives an IDebugHostModuleSignature interface which is defined as follows: 
 
@@ -1027,7 +1026,7 @@ DECLARE_INTERFACE_(IDebugHostModuleSignature, IUnknown)
 
 The IsMatch method compares a particular module (as given by an IDebugHostModule symbol) against a signature, comparing the module name and version to the name and version range indicated in the signature. An indication of whether the given module symbol matches the signature is returned. 
 
-**Type Signatures and Type Matching: *IDebugHostTypeSignature***
+**Type Signatures and Type Matching: IDebugHostTypeSignature**
 
 Type signatures represent a means to check whether a given type instance meets a set of criteria about the name of the type, the generic arguments to the type, and the module that the type is located within. A type signature is created via the CreateTypeSignature method on IDebugHostSymbols. Once such a signature is created, the client receives an IDebugHostTypeSignature interface which is defined as follows: 
 

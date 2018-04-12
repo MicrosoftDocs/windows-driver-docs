@@ -2,17 +2,17 @@
 title: Debugger Data Model C++ Additional Interfaces
 description: This topic describes how to use Debugger Data Model C++ Interfaces to extend and customize the capabilities of the debugger.
 ms.author: domars
-ms.date: 04/11/2018
+ms.date: 04/12/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Debugger Data Model C++ Interfaces
+# Debugger Data Model C++ Additional Interfaces
 
-This topic describes how to use Debugger Data Model C++ Interfaces to extend and customize the capabilities of the debugger.
+This topic describes some addtional interfacces associated with the Debugger C++ Data Model, such as metadata, concepts and object enumeration.
 
-This page is part of a series on which describes the interfaces accessible from C++, how to use them to build a C++ based
+This topic is part of a series which describes the interfaces accessible from C++, how to use them to build a C++ based
 debugger extension, and how to make use of other data model constructs (e.g.: JavaScript or NatVis) from a C++ data model extension.
 
 [Debugger Data Model C++ Interfaces Overview](data-model-cpp-interfaces-overview.md)
@@ -24,15 +24,15 @@ debugger extension, and how to make use of other data model constructs (e.g.: Ja
 [Debugger Data Model C++ Scripting](data-model-cpp-scripting.md)
 
 
-## Topic Orginization
+## Topic Sections
 
-These sections in this topic introduce the the following.
+This topic includes the following sections.
 
-- [Debugger Data Model Metadata Interfaces](#metadatainterfaces)
+[Debugger Data Model Metadata Interfaces](#metadatainterfaces)
 
-- [Object Enumeration in the Data Model](#object)
+[Object Enumeration in the Data Model](#object)
 
-- [Concepts in the Data Model](#concepts) 
+[Concepts in the Data Model](#concepts) 
 
 
 
@@ -61,7 +61,7 @@ ActionDescription | String | Only valid if the ActionName key is specified, this
 
 Note that while keys in the metadata store can have their own metadata (ad infiniteum), there is currently no use for such. Most callers will specify null for any metadata parameters in methods on the IKeyStore interface. 
 
-**The Core Metadata Interface: *IKeyStore***
+**The Core Metadata Interface: IKeyStore**
 
 The IKeyStore interface is defined as follows: 
 
