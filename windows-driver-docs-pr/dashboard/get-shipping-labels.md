@@ -110,7 +110,7 @@ This resource has the following values
 |submissionId|long|The submission ID to which this shipping label is associated|
 |publishingSpecifications|object|Refer [publishing specifications object](#publishing-specifications-object) for more details|
 |recipientSpecifications|array of objects|Refer [recipient specifications object](#recipient-specifications-object) for more details|
-|targeting|object|Refer <link TBD> for more details|
+|targeting|object|Refer [targeting object](#targeting-object) for more details|
 |workflowStatus|object|This object depicts the status of the workflow for this submission. Refer [workflow status object](get-product-data.md#workflow-status-object)  for more details - TBD need to add morew status to Workflow object|
 |links|array of objects|Refer [link object](get-product-data.md#link-object)  for more details - TBD need to add more links for SL|
 |name|string|The name of the shipping label|
