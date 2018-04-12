@@ -1,0 +1,107 @@
+---
+title: Get shipping label data
+description: These methods from the Microsoft Hardware APIs get data for shipping labels of hardware products registered to your Dev Center Account.
+author: balapv
+ms.author: balapv
+ms.date: 04/12/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+---
+# Get shipping label data
+
+Use the following methods in *Microsoft Hardware APIs* to get data for shipping labels of hardware products registered to your Dev Center Account. For an introduction to Microsoft Hardware APIs, including prerequisites for using the API, see [Manage hardware submissions using APIs](dashboard-api.md).
+
+```
+https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/
+```
+
+Before you can use these methods, the product and submission must already exist in your Dev Center account. To create or manage submissions for products, see the methods in [Manage product submissions](manage-product-submissions.md).
+
+| Method | URI | Description |
+|-|-|-|
+|GET |	`https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/`	|[Get data for all shipping labels of a submission](link-tbd)|
+|GET |	`https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/{shippingLabelId}`	|[Get data for a specific shipping label of a submission](link-tbd)|
+
+## Prerequisites
+
+If you have not done so already, complete all the [prerequisites](dashboard-api.md) for the Microsoft Hardware APIs before trying to use any of these methods.
+
+## Data resources
+
+The Microsoft Hardware APIs methods for getting shipping label  data use the following JSON data resources
+
+### ShippingLabel resource
+
+This resource represents a shipping label created for a submission of your product that is registered to your account.
+
+```json
+{
+  "id": 1152921504606978422,
+  "productId": 14461751976964157,
+  "submissionId": 1152921504621467613,
+  "publishingSpecifications": {
+    "goLiveDate": "2018-04-12T05:28:32.721Z",
+    "visibleToAccounts": [
+      27691110, 27691111
+    ],
+    "isAutoInstallDuringOSUpgrade": true,
+    "isAutoInstallOnApplicableSystems": true,
+    "isDisclosureRestricted": false,
+    "publishToWindows10s": false,
+    "additionalInfoForMsApproval": {
+      "microsoftContact": "abc@mcirosoft.com",
+      "validationsPerformed": "Validation 1",
+      "affectedOems": [
+        "OEM1", "OEM2"
+      ],
+      "isRebootRequired": false,
+      "isCoEngineered": true,
+      "isForUnreleasedHardware": true,
+      "hasUiSoftware": false,
+      "businessJustification": "This is a business justification"
+    }
+  },
+  "recipientSpecifications": {
+    "receiverPublisherId": "27691110",
+    "enforceChidTargeting": true
+  },
+  "targeting": {
+    "hardwareIds": [
+      {
+        "bundleId": "amd64",
+        "infId": "foo.inf",
+        "operatingSystemCode": "WINDOWS_v100_SERVER_X64_RS4_FULL",
+        "pnpString": "hid\\vid_dummy256f&pid_dummyc62f",
+        "distributionState": "pendingAdd"
+      }
+    ],
+    "chids": [
+      {
+        "chid": "346511cf-ccee-5c6d-8ee9-3c70fc7aae83",
+        "distributionState": "pendingAdd"
+      }
+    ],
+    "restrictedToAudience": "00000000-0000-0000-0000-000000000000"
+  },
+  "workflowStatus": {
+    "currentStep": "finalizePublishing",
+    "state": "completed",
+    "messages": [],
+    "errorReport": ""
+  },
+  "links": [
+    {
+      "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606978422",
+      "rel": "self",
+      "method": "GET"
+    }
+  ],
+  "name": "Shipping Label Name",
+  "destination": "windowsUpdate"
+}
+```
+This resource has the following values
+
+| Value | Type | Description |
+|:--|:--|:--|
