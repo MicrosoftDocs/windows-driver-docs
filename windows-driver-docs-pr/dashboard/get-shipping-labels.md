@@ -279,3 +279,7 @@ This object has the following values
 |:--|:--|:--|
 |chid|GUID|The CHID which needs to be targeted|
 |distributionState|string|Represents the current targeting status of this CHID. Possible values are (description in paranthesis):<ul><li>pendingAdd (*Add has been requested for this hardware ID and is in progress*)</li><li>pendingRemove (*A remove (expire) has been requested for this hardware ID and is in progress*)</li><li>added (*This hardware ID has been succesfully added as target in this shipping label*)</li><li>notSet (*No action has been taken or status has not been set on this hardware ID*)</li></ul>|
+
+## Error codes
+
+For more info, see [Error codes](get-product-data.md#error-codes). TBD - need to add SL error codes
