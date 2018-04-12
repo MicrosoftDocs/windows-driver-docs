@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Static Driver Verifier Error Codes
 
 
-The following table lists the error codes that Static Driver Verifier could return, and where possible, suggests methods for resolving them.
+The following table lists the error codes that Static Driver Verifier could return when running from the GUI, and where possible, suggests methods for resolving them.  These codes do not appear when running from the command line.
 
 | Code                                         | Description                                                                                                                                                                                                    |
 |----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

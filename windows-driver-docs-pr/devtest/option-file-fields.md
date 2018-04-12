@@ -23,12 +23,12 @@ The fields in the options file that you can change include the following:
 Specifies the maximum size of a driver that SDV will support (in terms of lines of code). The default value is 100K lines of code.
 
 <span id="SDV_SlamConfig_Timeout"></span><span id="sdv_slamconfig_timeout"></span><span id="SDV_SLAMCONFIG_TIMEOUT"></span>**SDV\_SlamConfig\_Timeout**  
-Limits the time SDV can spend verifying each rule. The value of this entry is an integer that represents a number of seconds. The minimum value is 10, the maximum value is 86400, and the default value is 2000 (33.34 minutes).
+Limits the time SDV can spend verifying each rule. The value of this entry is an integer that represents a number of seconds. The minimum value is 10, the maximum value is 86400, and the default value is 3000 (50 minutes).
 
 If SDV exceeds the per-rule time limit while verifying a rule, it terminates the verification and reports a **Timeout** in the [command-line output](command-line-output.md) and in Static Driver Verifier under the Results section on the **Main** tab.
 
 <span id="SDV_SlamConfig_Spaceout"></span><span id="sdv_slamconfig_spaceout"></span><span id="SDV_SLAMCONFIG_SPACEOUT"></span>**SDV\_SlamConfig\_Spaceout**  
-Limits the amount of virtual memory that SDV can consume when verifying each rule. The value of this entry is an integer in megabyte (MB) units. The minimum value is 100, the maximum value is 2000 (2 gigabytes (GB), and the default value is 400.
+Limits the amount of virtual memory that SDV can consume when verifying each rule. The value of this entry is an integer in megabyte (MB) units. The minimum value is 100, and the default value is 2500 MB (2.5 GB.)
 
 If SDV exceeds the virtual memory limit while verifying a rule, it terminates the verification and reports a **Spaceout** in the [command-line output](command-line-output.md) and in Static Driver Verifier under the Results section on the **Main** tab.
 

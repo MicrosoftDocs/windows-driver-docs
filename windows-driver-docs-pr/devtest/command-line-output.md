@@ -15,97 +15,92 @@ ms.technology: windows-devices
 # Command-Line Output
 
 
-When you submit a command to SDV, it displays a header with version information, status messages that indicate the success or failure of the command, and any error messages or warnings that might have been generated. A summary of the results of the verification appears at the bottom of the output.
+When you submit a command to SDV, it displays information about the command as it executes, status messages that indicate the success or failure of the command, and any error messages or warnings that might have been generated. A summary of the results of the verification appears at the bottom of the output.
 
-For example, the following illustration shows the command-line output from a command to verify the Fail\_Driver1 sample driver with the rules in the Config.sdv[rule list file](static-driver-verifier-rule-list-file.md). The Fail\_Driver1 sample driver, a driver with intentional coding errors, and the Config.sdv file are installed in the \\tools\\sdv\\sample\\fail\_drivers\\wdm\\fail\_driver1 subdirectory of the WDK.
+For example, the following illustration shows the command-line output from a command to verify the SDV-FailDriver-WDM sample driver with the [SpinLock](wdm-spinlock.md) rule. The SDV-FailDriver-WDM sample driver, a driver with intentional coding errors, is located in the \\tools\\sdv\\samples\\Sdv-FailDriver-WDM folder of the Windows Driver Samples.
 
-In this verification, SDV found four defects, one for each rule that it verified.
+In this verification, SDV found that the driver violated the rule.
 
 ```
-C:\Program Files (x86)\Windows Kits\8.0\Tools\sdv\samples\fail_drivers\wdm\fail_driver1>msbuild fail_driver1.vcxproj /t:sdv /p:inputs="/check=config.sdv" /p:configuration="Win8 beta release" /p:platform=win32
-Microsoft (R) Build Engine version 4.0.30319.17369
-[Microsoft .NET Framework, version 4.0.30319.17369]
+G:\Windows-driver-samples\tools\sdv\samples\SDV-FailDriver-WDM\driver>msbuild /p:Configuration=Release /p:Platform=x64 /t:sdv /p:inputs=/check:spinlock
+Microsoft (R) Build Engine version 15.6.82.30579 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 1/25/2012 12:24:58 PM.
-Project "c:\Program Files (x86)\Windows Kits\8.0\Tools\sdv\samples\fail_drivers\wdm\fail_driver1\fail_driver1.vcxproj"on node 1 (sdv target(s)).
-Sdv:
-  staticdv.exe /check=config.sdv
-  ---------------------------------------------------------------------
-  Microsoft (R) Windows (R) Static Driver Verifier Version 2.1.468.0
-  Copyright (C) Microsoft Corporation.  All rights reserved.
-  ---------------------------------------------------------------------
-  SDV is building for <Win8 beta release|win32>
-  Build     'fail_driver1'  ...Done
-  Scan      'fail_driver1'  ...Done
-  No reuse data to copy from previous SDV run.
-  Compile   'fail_driver1' for [sdv_flat_dispatch_harness] ...Done
-  Compile   'fail_driver1' for [sdv_flat_dispatch_startio_harness] ...Done
-  Compile   'fail_driver1' for [sdv_flat_simple_harness] ...Done
-  Compile   'fail_driver1' for [sdv_flat_simple_harness] ...Done
-  Compile   'fail_driver1' for [sdv_flat_simple_harness] ...Done
-  Compile   'fail_driver1' for [sdv_flat_simple_harness] ...Done
-  Compile   'fail_driver1' for [sdv_flat_simple_harness] ...Done
-  Compile   'fail_driver1' for [sdv_flat_simple_harness] ...Done
-  Compile   'fail_driver1' for [sdv_flat_harness] ...Done
-  Compile   'fail_driver1' for [sdv_flat_harness] ...Done
-  Compile   'fail_driver1' for [sdv_flat_harness] ...Done
-  PreCheck  'fail_driver1' for 'checkirpmjpnp' ...Running
-  PreCheck  'fail_driver1' for 'checkdriverunload' ...Running
-  PreCheck  'fail_driver1' for 'workerthread' ...Running
-  PreCheck  'fail_driver1' for 'checkadddevice' ...Running
-  PreCheck  'fail_driver1' for 'checkirpmjpnp'  ...Done
-  PreCheck  'fail_driver1' for 'checkadddevice'  ...Done
-  PreCheck  'fail_driver1' for 'checkdriverunload'  ...Done
-  PreCheck  'fail_driver1' for 'workerthread'  ...Done
-  PreCheck  'fail_driver1' for 'iocompletion' ...Running
-  PreCheck  'fail_driver1' for 'isrroutine' ...Running
-  PreCheck  'fail_driver1' for 'kedpcroutine' ...Running
-  PreCheck  'fail_driver1' for 'iodpcroutine' ...Running
-  PreCheck  'fail_driver1' for 'iodpcroutine'  ...Done
-  PreCheck  'fail_driver1' for 'iocompletion'  ...Done
-  PreCheck  'fail_driver1' for 'isrroutine'  ...Done
-  PreCheck  'fail_driver1' for 'kedpcroutine'  ...Done
-  PreCheck  'fail_driver1' for 'startioroutine' ...Running
-  PreCheck  'fail_driver1' for 'dispatchroutine' ...Running
-  PreCheck  'fail_driver1' for 'cancelroutine' ...Running
-  PreCheck  'fail_driver1' for 'dispatchroutine'  ...Done
-  PreCheck  'fail_driver1' for 'startioroutine'  ...Done
-  PreCheck  'fail_driver1' for 'cancelroutine'  ...Done
-  Compile   'fail_driver1' for [sdv_xflat_harness_cancel] ...Done
-  Compile   'fail_driver1' for [sdv_flat_simple_harness] ...Done
-  Compile   'fail_driver1' for [sdv_flat_simple_harness] ...Done
-  Compile   'fail_driver1' for [sdv_simple_harness_with_completion_no_cancel] ...Done
-  Compile   'fail_driver1' for [sdv_flat_harness] ...Done
-  Check     'fail_driver1' for 'spinlock' ...Running
-  Check     'fail_driver1' for 'irqlkesetevent' ...Running
-  Check     'fail_driver1' for 'lowerdriverreturn' ...Running
-  Check     'fail_driver1' for 'irqlioapclte' ...Running
-  Check     'fail_driver1' for 'irqlioapclte'  ...Done
-  Check     'fail_driver1' for 'spinlock'  ...Done
-  Check     'fail_driver1' for 'irqlkesetevent'  ...Done
- Check     'fail_driver1' for 'cancelspinlock' ...Running
-  Check     'fail_driver1' for 'cancelspinlock'  ...Done
-  Check     'fail_driver1' for 'lowerdriverreturn'  ...Done
-  SDV checked 11 properties(s).
-  SDV performed 5 check(s) with:
-        5  Defect(s)
-  Run this command to view the results:msbuild <driver project file> /p:configuration="<release configuration>" /p:platform=<Win32|x64> /t:Sdv /p:inputs="/view"
+Build started 3/30/2018 10:56:50 AM.
+Project "G:\Windows-driver-samples\tools\sdv\samples\SDV-FailDriver-WDM\driver\fail_driver1.vcxproj" on node 1 (sdv tar
+get(s)).
+sdv:
+  staticdv /check:spinlock
+  SDV: H:\Program Files\Windows Kits\10\TOOLS\SDV
+  SMV: H:\Program Files\Windows Kits\10\TOOLS\SDV\smv
+  SDVAP: H:\Program Files\Windows Kits\10\TOOLS\SDV\smv\analysisplugins\sdv
+  Build environment: msbuild
+  [INFO] Cleaning ...
+  [INFO] Setting interceptor platform to x64
+  [INFO] Setting platform to x86_amd64
+  [INFO] Validating XML against schema: H:\Program Files\Windows Kits\10\TOOLS\SDV\smv\bin\Config.xsd
+  [INFO] Running local scheduler with 8 threads
+  [INFO] Driver type found: wdm
+  [INFO] Currently reading and validating XML settings from H:\Program Files\Windows Kits\10\TOOLS\SDV\data\wdm\sdv-def
+  ault.xml
 
-  Merging results
-  Nothing to merge for c:\Program Files (x86)\Windows Kits\8.0\Tools\sdv\samples\fail_drivers\wdm\fail_driver1
-  SDV exit code: 0
-Done Building Project "c:\Program Files (x86)\Windows Kits\8.0\Tools\sdv\samples\fail_drivers\wdm\fail_driver1\fail_driver1.vcxproj" (sdv target(s)).
+  [INFO] 1 of 2 jobs remaining. Avg(s): 8.00. Std.Dev(s): 0.00
+  [INFO] 1 of 3 jobs remaining. Avg(s): 9.00. Std.Dev(s): 1.00
+  Scan ...Done
+
+  [INFO] 0 of 3 jobs remaining. Avg(s): 6.00. Std.Dev(s): 4.32
+
+  Building ...Done
+  [INFO] Using plugin SdvPlugin.SmvSdv for analysis.
+  [INFO] Running analysis on 11 precondition(s) & 1 rule(s) ...
+  [INFO] Checking preconditions...
+
+  [INFO] 10 of 15 jobs remaining. Avg(s): 7.20. Std.Dev(s): 3.66
+  [INFO] 10 of 16 jobs remaining. Avg(s): 7.50. Std.Dev(s): 3.40
+  [INFO] 11 of 17 jobs remaining. Avg(s): 7.50. Std.Dev(s): 3.40
+  [INFO] 10 of 18 jobs remaining. Avg(s): 9.13. Std.Dev(s): 4.08
+  [INFO] 11 of 19 jobs remaining. Avg(s): 9.13. Std.Dev(s): 4.08
+  [INFO] 10 of 20 jobs remaining. Avg(s): 11.30. Std.Dev(s): 5.68
+  [INFO] 11 of 21 jobs remaining. Avg(s): 11.30. Std.Dev(s): 5.68
+  [INFO] 11 of 22 jobs remaining. Avg(s): 12.18. Std.Dev(s): 6.09
+  [INFO] 10 of 22 jobs remaining. Avg(s): 11.92. Std.Dev(s): 5.89
+  [INFO] 10 of 23 jobs remaining. Avg(s): 12.15. Std.Dev(s): 5.72
+  [INFO] 10 of 24 jobs remaining. Avg(s): 12.64. Std.Dev(s): 5.79
+  [INFO] 7 of 25 jobs remaining. Avg(s): 13.50. Std.Dev(s): 5.80
+  [INFO] 7 of 25 jobs remaining. Avg(s): 13.50. Std.Dev(s): 5.80
+  [INFO] 7 of 25 jobs remaining. Avg(s): 13.50. Std.Dev(s): 5.80
+  [INFO] 7 of 25 jobs remaining. Avg(s): 13.50. Std.Dev(s): 5.80
+  [INFO] 6 of 25 jobs remaining. Avg(s): 13.42. Std.Dev(s): 5.65
+  [INFO] 5 of 25 jobs remaining. Avg(s): 13.75. Std.Dev(s): 5.69
+  [INFO] 4 of 25 jobs remaining. Avg(s): 13.95. Std.Dev(s): 5.63
+  [INFO] 3 of 25 jobs remaining. Avg(s): 14.09. Std.Dev(s): 5.53
+  [INFO] 2 of 25 jobs remaining. Avg(s): 14.13. Std.Dev(s): 5.42
+  [INFO] 1 of 25 jobs remaining. Avg(s): 14.17. Std.Dev(s): 5.30
+  [INFO] 0 of 25 jobs remaining. Avg(s): 14.20. Std.Dev(s): 5.20
+  [INFO] Precondition check(s) completed.
+  [INFO] Verifying rules...
+
+  [INFO] 1 of 27 jobs remaining. Avg(s): 13.65. Std.Dev(s): 5.78
+  [INFO] 1 of 28 jobs remaining. Avg(s): 13.37. Std.Dev(s): 5.86
+  [INFO] 0 of 28 jobs remaining. Avg(s): 13.21. Std.Dev(s): 5.81
+
+  [INFO] 1 defects found.
+  [INFO] Please review using '/view' argument for SDV.
+
+  [INFO] Total time taken 96 seconds
+  [INFO] Found 1 bugs!
+Done Building Project "G:\Windows-driver-samples\tools\sdv\samples\SDV-FailDriver-WDM\driver\fail_driver1.vcxproj" (sdv
+ target(s)).
 
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:02:12.14
+Time Elapsed 00:01:37.93
 ```
 
-After viewing the results summary to see which rules were violated, you can specify the **/view** option in an MSBuild command to see the Static Driver Verifier Report. For information about the command options, see [Static Driver Verifier commands (MSBuild)](-static-driver-verifier-commands--msbuild-.md). For information about the **Build** and **Check** steps in the output, see [Verification Process](verification-process.md).
+After viewing the results summary to see which rules were violated, you can specify the **/view** option in an MSBuild command to see the Static Driver Verifier Report. For information about the command options, see [Static Driver Verifier commands (MSBuild)](-static-driver-verifier-commands--msbuild-.md). For information about the **Scan**, **Build** and **Check** steps in the output, see [Verification Process](verification-process.md).
 
 The following table describes the results that can appear in the results summary.
 
