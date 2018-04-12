@@ -25,7 +25,9 @@ This is one topic on a series about the C++ Debugger Data Model
 
 ToDo: Import content
 
-## [Data Model C++ Scripting Interfaces](https://osgwiki.com/wiki/Data_Model_C%2B%2B_Scripting_Interfaces)
+## Data Model C++ Scripting Interfaces
+
+(https://osgwiki.com/wiki/Data_Model_C%2B%2B_Scripting_Interfaces)
 
 TBD
 
