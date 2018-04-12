@@ -17,7 +17,7 @@ For most function role types, SDV assumes that the driver has, at most, one call
 If a driver exceeds the maximum number of callback functions for a role type, SDV displays the following message.
 
 ```
-Static Driver Verifier found more than one entry point for &#39;  &#39;
+Static Driver Verifier found more than one entry point for '[role type]'
 ```
 
 If a function role type has more entry points than SDV supports, there is not necessarily something wrong with the driver. However, to obtain accurate verification results, you must edit the Sdv.-map.h file to remove the duplicate entries.
