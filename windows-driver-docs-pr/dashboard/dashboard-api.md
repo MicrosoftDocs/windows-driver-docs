@@ -74,14 +74,14 @@ After you have an Azure AD access token, you can call methods in the Microsoft H
 
 | Scenario | Description |
 |:--|:--|
-| Drivers | Get, create and update drivers registered to your Dev Center Account. For more information about these methods, see the following articles:<ul><li>[Get product data](get-product-data.md)</li><li>[Manage product submissions](manage-product-submissions.md)</li></ul>|
+| Drivers | Get, create and update drivers registered to your Dev Center Account. For more information about these methods, see the following articles:<ul><li>[Get product data](get-product-data.md)</li><li>[Manage product submissions](manage-product-submissions.md)</li><li>[Get shipping label data](get-shipping-labels.md)</li><li>[Manage shipping labels](manage-shipping-labels.md)</li></ul>|
 
 
 ## Code examples
 
 The following sample provides detailed code that demonstrate how to use the Microsoft Hardware API:
 
-*	[C# sample](http://download.microsoft.com/download/C/F/4/CF404E53-87A0-4204-BA13-A64B09A237C1/HardwareApiCSharpSample.zip)
+*	[C# sample](http://download.microsoft.com/download/C/F/4/CF404E53-87A0-4204-BA13-A64B09A237C1/HardwareApiCSharpSample.zip) **<font color=red>TBD - Need to update code sample to include Shipping Labels</font>**
 
 ## Additional help
 
