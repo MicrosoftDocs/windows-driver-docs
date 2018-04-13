@@ -81,7 +81,8 @@ After you have an Azure AD access token, you can call methods in the Microsoft H
 
 The following sample provides detailed code that demonstrate how to use the Microsoft Hardware API:
 
-*	[C# sample](http://download.microsoft.com/download/C/F/4/CF404E53-87A0-4204-BA13-A64B09A237C1/HardwareApiCSharpSample.zip) **<font color=red>TBD - Need to update code sample to include Shipping Labels</font>**
+*	[C# sample](http://download.microsoft.com/download/C/F/4/CF404E53-87A0-4204-BA13-A64B09A237C1/HardwareApiCSharpSample.zip) 
+**<font color="red">TBD - Need to update code sample to include Shipping Labels</font>**
 
 ## Additional help
 
