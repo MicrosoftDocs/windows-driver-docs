@@ -44,3 +44,99 @@ Request parameters are optional for this method.
 ### Request body
 
 Do not provide a request body for this method.
+
+### Request examples
+
+The following example demonstrates how to retrieve information about a specific product registered to your account.
+
+```
+GET https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/14461751976964156/submissions/1152921504621467600/shippingLabels/1152921504606980300 HTTP/1.1
+Authorization: Bearer <your access token>
+```
+
+## Response
+
+The following example demonstrates the JSON response body returned by a successful request for a specific shipping label. For more details about the values in the response body, see the following section.
+
+```json
+{
+  "id": 1152921504606978300,
+  "productId": 14461751976964156,
+  "submissionId": 1152921504621467600,
+  "publishingSpecifications": {
+    "goLiveDate": "2018-04-12T05:28:32.721Z",
+    "visibleToAccounts": [
+      27691110,
+      27691111
+    ],
+    "isAutoInstallDuringOSUpgrade": true,
+    "isAutoInstallOnApplicableSystems": true,
+    "isDisclosureRestricted": false,
+    "publishToWindows10s": false,
+    "additionalInfoForMsApproval": {
+      "microsoftContact": "abc@mcirosoft.com",
+      "validationsPerformed": "Validation 1",
+      "affectedOems": [
+        "OEM1",
+        "OEM2"
+      ],
+      "isRebootRequired": false,
+      "isCoEngineered": true,
+      "isForUnreleasedHardware": true,
+      "hasUiSoftware": false,
+      "businessJustification": "This is a business justification"
+    }
+  },
+  "targeting": {
+    "hardwareIds": [
+      {
+        "bundleId": "amd64",
+        "infId": "foo.inf",
+        "operatingSystemCode": "WINDOWS_v100_SERVER_X64_RS4_FULL",
+        "pnpString": "hid\\vid_dummy256f&pid_dummyc62f",
+        "distributionState": "pendingAdd"
+      },
+      {
+        "bundleId": "amd64",
+        "infId": "foo.inf",
+        "operatingSystemCode": "WINDOWS_v100_RS2_FULL",
+        "pnpString": "hid\\vid_dummy256f&pid_dummyc62f",
+        "distributionState": "pendingAdd"
+      }
+    ],
+    "chids": [
+      {
+        "chid": "346511cf-ccee-5c6d-8ee9-3c70fc7aae83",
+        "distributionState": "pendingAdd"
+      }
+    ],
+    "restrictedToAudience": "00000000-0000-0000-0000-000000000000"
+  },
+  "workflowStatus": {
+    "currentStep": "microsoftApproval",
+    "state": "started",
+    "messages": []
+  },
+  "links": [
+    {
+      "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606978459",
+      "rel": "self",
+      "method": "GET"
+    },
+    {
+      "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606978459",
+      "rel": "update_shippinglabel",
+      "method": "PATCH"
+    }
+  ],
+  "name": "VR_RS4Build_DualPublishCheck",
+  "destination": "windowsUpdate"
+}
+```
+### Response body
+
+Refer to [shipping label resource](get-shipping-labels.md#shippinglabel-resource)  for more details
+
+## Error codes
+
+For more info, see [Error codes](get-product-data.md#error-codes).
