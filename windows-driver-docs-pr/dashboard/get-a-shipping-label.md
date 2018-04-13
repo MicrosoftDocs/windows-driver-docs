@@ -39,7 +39,7 @@ Request parameters are optional for this method.
 
 |Name|Type|Description|
 |:--|:--|:--|
-| includeTargetingInfo | boolean | Optional. If this parameter is set to true, the shipping label returns the targeting details of the shipping label like hardware IDs and CHIDs. Refer [targeting object](get-shipping-lables.md#targeting-object) for more deatils |
+| includeTargetingInfo | boolean | Optional. If this parameter is set to true, the shipping label returns the targeting details of the shipping label like hardware IDs and CHIDs. Refer [targeting object](get-shipping-labels.md#targeting-object) for more deatils |
 
 ### Request body
 
