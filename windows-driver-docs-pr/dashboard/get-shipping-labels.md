@@ -111,8 +111,8 @@ This resource has the following values
 |publishingSpecifications|object|Refer [publishing specifications object](#publishing-specifications-object) for more details|
 |recipientSpecifications|array of objects|Refer [recipient specifications object](#recipient-specifications-object) for more details|
 |targeting|object|Refer [targeting object](#targeting-object) for more details|
-|workflowStatus|object|This object depicts the status of the workflow for this submission. Refer [workflow status object](get-product-data.md#workflow-status-object)  for more details - TBD need to add morew status to Workflow object|
-|links|array of objects|Refer [link object](get-product-data.md#link-object)  for more details - TBD need to add more links for SL|
+|workflowStatus|object|This object depicts the status of the workflow for this submission. Refer [workflow status object](get-product-data.md#workflow-status-object)  for more details - **<font color="red">TBD</font>** need to add morew status to Workflow object|
+|links|array of objects|Refer [link object](get-product-data.md#link-object)  for more details - **<font color="red">TBD</font>** need to add more links for SL|
 |name|string|The name of the shipping label|
 |destination|string|Indicates the destination of the shipping label. Possible values are(description in parenthesis): <ul><li>anotherPartner (*this shipping label is for sharing the submission with another partner*)</li><li>windowsUpdate (*this shipping label is for publishing to Windows Update*)</li><li>notSet</li></ul>|
 
@@ -238,7 +238,7 @@ This object has the following values
 |:--|:--|:--|
 |hardwareIds|array of objects|Refer [hardware ID object](#hardware-id-object) for more details|
 |chids|array of objects|Refer [CHID object](#chids-object) for more details|
-|restrictedToAudience|GUID|GUID which represents an audience. Audiences allow you to restrict this publication to machines with a particular configuration. As an example, the test audience will only be delivered to clients with a particular registry key installed. TBD - how will users know list of available SSRKs?|
+|restrictedToAudience|GUID|GUID which represents an audience. Audiences allow you to restrict this publication to machines with a particular configuration. As an example, the test audience will only be delivered to clients with a particular registry key installed. **<font color="red">TBD</font>** - how will users know list of available SSRKs?|
 
 ### Hardware ID object
 
@@ -257,7 +257,7 @@ This object has the following values
 
 | Value | Type | Description |
 |:--|:--|:--|
-|bundleId|string|The architecture for which this hardware ID - operating system is applicable. Possible values are <ul><li>tbd</li><li>tbd</li><li>tbd</li></ul>|
+|bundleId|string|The architecture for which this hardware ID - operating system is applicable. Possible values are <ul><li>**<font color="red">TBD</font>**</li><li>**<font color="red">TBD</font>**</li><li>**<font color="red">TBD</font>**</li></ul>|
 |infId|string|The name of the inf file which contains this hardware ID|
 |operatingSystemCode|string|The operating system applicable for this specific hardware ID - architecture combination. Refer [list of OS codes](get-product-data.md#list-of-operating-system-codes) for possible values.|
 |pnpString|string|The hardware ID which is to be targeted.|
@@ -282,4 +282,4 @@ This object has the following values
 
 ## Error codes
 
-For more info, see [Error codes](get-product-data.md#error-codes). TBD - need to add SL error codes
+For more info, see [Error codes](get-product-data.md#error-codes). **<font color="red">TBD</font>** - need to add SL error codes
