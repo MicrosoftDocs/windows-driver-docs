@@ -32,7 +32,7 @@
 #### [Update submission data](update-submission-data.md)
 #### [Update product data](update-product-data.md)
 ### [Get shipping label data](get-shipping-labels.md)
-#### [Get all shipping labels]get-all-shipping-labels.md)
+#### [Get all shipping labels](get-all-shipping-labels.md)
 ## [Dashboard Administration](dashboard-administration.md)
 ### [Get started with the Hardware Program](get-started-with-the-hardware-dashboard.md)
 ### [Register for the Hardware Program](register-for-the-hardware-program.md)
