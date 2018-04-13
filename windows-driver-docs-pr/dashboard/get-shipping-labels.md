@@ -21,7 +21,7 @@ Before you can use these methods, the product and submission must already exist 
 | Method | URI | Description |
 |-|-|-|
 |GET |	`https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/`	|[Get data for all shipping labels of a submission](get-all-shipping-labels.md)|
-|GET |	`https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/{shippingLabelId}`	|[Get data for a specific shipping label of a submission](link-tbd)|
+|GET |	`https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/{shippingLabelId}`	|[Get data for a specific shipping label of a submission](get-a-shipping-label.md)|
 
 ## Prerequisites
 
