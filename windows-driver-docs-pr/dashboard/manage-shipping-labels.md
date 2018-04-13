@@ -20,8 +20,8 @@ Methods for managing shipping labels
 
 | Method | URI | Description |
 |:--|:--|:--|
-|POST|`https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels`|Create a new shipping label - **link tbd**|
-|PATCH|`https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels/{shippingLabelId}`|Update a shipping label - **link tbd**|
+|POST|`https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels`|Create a new shipping label - **<font color="red">link TBD</font>**|
+|PATCH|`https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels/{shippingLabelId}`|Update a shipping label - **<font color="red">link TBD</font>**|
 
 ##Create a new shipping label
 
@@ -31,7 +31,7 @@ Methods for managing shipping labels
 
 3.	You should have created a product and submission in order to create a shipping label. Refer [manage product submissions](manage-product-submissions.md) for details on how to create a product and submission.
 
-4.  Create a new shipping label **link tbd** for this submission by executing the following method in the Microsoft Hardware API.  Use the ProductID and SubmissionID created in the step above.
+4.  Create a new shipping label **<font color="red">link TBD</font>** for this submission by executing the following method in the Microsoft Hardware API.  Use the ProductID and SubmissionID created in the step above.
     
     ```
     https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels
@@ -43,7 +43,7 @@ Methods for managing shipping labels
 
 The following code examples demonstrates how to use the Microsoft Hardware API:
 
-* [C# sample](http://download.microsoft.com/download/C/F/4/CF404E53-87A0-4204-BA13-A64B09A237C1/HardwareApiCSharpSample.zip) **tbd - add sample for shipping labels**
+* [C# sample](http://download.microsoft.com/download/C/F/4/CF404E53-87A0-4204-BA13-A64B09A237C1/HardwareApiCSharpSample.zip) **<font color="red">TBD</font>** - add sample for shipping labels
 
 ##Data resources
 
