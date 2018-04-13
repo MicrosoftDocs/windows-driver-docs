@@ -238,7 +238,7 @@ This object has the following values
 |:--|:--|:--|
 |hardwareIds|array of objects|Refer [hardware ID object](#hardware-id-object) for more details|
 |chids|array of objects|Refer [CHID object](#chids-object) for more details|
-|restrictedToAudience|GUID|GUID which represents an audience. Audiences allow you to restrict this publication to machines with a particular configuration. As an example, the test audience will only be delivered to clients with a particular registry key installed. **<font color="red">TBD</font>** - how will users know list of available SSRKs?|
+|restrictedToAudience|GUID|GUID which represents an audience. Audiences allow you to restrict this publication to machines with a particular configuration. As an example, the test audience will only be delivered to clients with a particular registry key installed. To get the audiences applicable to your organization refer to **<font color="red">Audience method - Link TBD</font>**|
 
 ### Hardware ID object
 
@@ -257,11 +257,13 @@ This object has the following values
 
 | Value | Type | Description |
 |:--|:--|:--|
-|bundleId|string|The architecture for which this hardware ID - operating system is applicable. Possible values are <ul><li>**<font color="red">TBD</font>**</li><li>**<font color="red">TBD</font>**</li><li>**<font color="red">TBD</font>**</li></ul>|
+|bundleId|string|ID which represents the bundle in which the hardware ID is present.|
 |infId|string|The name of the inf file which contains this hardware ID|
-|operatingSystemCode|string|The operating system applicable for this specific hardware ID - architecture combination. Refer [list of OS codes](get-product-data.md#list-of-operating-system-codes) for possible values.|
-|pnpString|string|The hardware ID which is to be targeted.|
+|operatingSystemCode|string|The operating system code applicable for this specific hardware ID - architecture combination. Refer [list of OS codes](get-product-data.md#list-of-operating-system-codes) for possible values.|
+|pnpString|string|The PNP ID or hardware ID which is to be targeted.|
 |distributionState|string|Represents the current targeting status of this hardware ID. Possible values are (description in paranthesis):<ul><li>pendingAdd (*Add has been requested for this hardware ID and is in progress*)</li><li>pendingRemove (*A remove (expire) has been requested for this hardware ID and is in progress*)</li><li>added (*This hardware ID has been succesfully added as target in this shipping label*)</li><li>notSet (*No action has been taken or status has not been set on this hardware ID*)</li></ul>|
+
+The hardware ID object should contain a valid combination of bundle ID, PNP ID, OS Code and INF name while creating a new shipping label. To get the allowed/valid combinations of these attributes, refer **<font color="red">helper object for PNP codes - LINK TBD</font>**
 
 
 ### CHIDs object
