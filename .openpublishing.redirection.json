@@ -1425,7 +1425,41 @@
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_shared_mem_offset",
       "redirect_document_id": true
     },
-    
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-nbl-add-media-specific-info.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndis_nbl_add_media_specific_info",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-nbl-add-media-specific-info-ex.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndis_nbl_add_media_specific_info_ex",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-nbl-get-media-specific-info.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndis_nbl_get_media_specific_info",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-nbl-get-media-specific-info-ex.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndis_nbl_get_media_specific_info_ex",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-nbl-remove-media-specific-info.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndis_nbl_remove_media_specific_info",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-nbl-remove-media-specific-info-ex.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndis_nbl_remove_media_specific_info_ex",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndissetnetbufferlistprotocolid.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndissetnetbufferlistprotocolid",
+      "redirect_document_id": true
+    },
 
     {
       "source_path": "windows-driver-docs-pr/network/net-buffer-structure-macros.md",
