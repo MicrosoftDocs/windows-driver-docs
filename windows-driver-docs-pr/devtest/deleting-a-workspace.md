@@ -14,7 +14,6 @@ ms.technology: windows-devices
 
 # Deleting a Workspace
 
-
 When you delete a workspace, you delete all of the saved trace session properties and configuration settings from TraceView.
 
 For information about stopping a workspace session or removing it from the display, see [Stopping and Removing a Workspace Session](stopping-and-removing-a-workspace-session.md).
@@ -30,12 +29,3 @@ For information about stopping a workspace session or removing it from the displ
 ### <span id="comment"></span><span id="COMMENT"></span>Comment
 
 You can delete only one workspace at a time.
-
- 
-
- 
-
-
-
-
-

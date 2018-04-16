@@ -16,7 +16,6 @@ ms.technology: windows-devices
 
 # Saving or Resaving a Workspace
 
-
 When you save a workspace, TraceView saves the current configuration of the trace session and its trace message display. You can save a new workspace or re-save an existing workspace with new properties.
 
 ### <span id="to_save_a_workspace"></span><span id="TO_SAVE_A_WORKSPACE"></span>To save a workspace
@@ -34,12 +33,3 @@ When you save a workspace, TraceView saves the current configuration of the trac
 2.  Click **Save Workspace**.
 
 3.  From the **Saved Workspaces** list, select the name of an existing workspace, and click **OK**.
-
- 
-
- 
-
-
-
-
-

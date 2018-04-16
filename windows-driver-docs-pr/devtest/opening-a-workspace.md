@@ -14,7 +14,6 @@ ms.technology: windows-devices
 
 # Opening a Workspace
 
-
 When you open a workspace for a trace session, TraceView starts a new trace session with the properties saved in the workspace. When you open a workspace for a trace log display, the display appears exactly as you configured it.
 
 ### <span id="to_open_a_workspace"></span><span id="TO_OPEN_A_WORKSPACE"></span>To open a workspace
@@ -28,12 +27,3 @@ When you open a workspace for a trace session, TraceView starts a new trace sess
 3.  Click **OK**.
 
 Because the paths and file names that are associated with a trace session are saved in the workspace, the files are reused and overwritten each time you open the workspace. To preserve your files, move or rename them after each trace session.
-
- 
-
- 
-
-
-
-
-

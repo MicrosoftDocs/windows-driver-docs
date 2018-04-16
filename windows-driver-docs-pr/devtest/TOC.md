@@ -980,7 +980,6 @@
 ##### [Joining a Trace Session](joining-a-trace-session.md)
 ##### [Removing a Trace Provider](removing-a-trace-provider.md)
 ##### [Setting Basic Trace Session Options](setting-basic-trace-session-options.md)
-###### [How to Set Basic Trace Session Options](how-to-set-basic-trace-session-options.md)
 ###### [Basic Trace Session Options](basic-trace-session-options.md)
 ##### [Selecting Flags and Levels](selecting-flags-and-levels.md)
 ###### [Opening the Tracing Flags and Level Selection dialog box](opening-the-tracing-flags-and-level-selection-dialog-box.md)

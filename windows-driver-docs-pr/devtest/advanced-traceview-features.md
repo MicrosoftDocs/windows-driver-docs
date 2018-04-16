@@ -11,7 +11,6 @@ ms.technology: windows-devices
 
 # Advanced TraceView Features
 
-
 This section describes the advanced features of TraceView and includes:
 
 [Creating Text Versions of Trace Logs](creating-text-versions-of-trace-logs.md)
@@ -21,12 +20,3 @@ This section describes the advanced features of TraceView and includes:
 [Filtering Trace Messages](filtering-trace-messages.md)
 
 [Using TraceView Workspaces](using-traceview-workspaces.md)
-
- 
-
- 
-
-
-
-
-
