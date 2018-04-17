@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 Static Driver Verifier (SDV) uses a set of interface rules and a model of the operating system to determine if the driver interacts correctly with the Windows operating system. SDV finds defects in driver code that could point to potential bugs in drivers.
 
-SDV can analyze kernel-mode drivers that conform to one of the following driver models: WDM, KMDF, NDIS, or Storport. For more information, see [Supported Drivers](supported-drivers.md) and [Determining if Static Driver Verifier supports your driver or library](determining-if-static-driver-verifier-supports-your-driver-or-library.md).
+SDV can analyze kernel-mode drivers that conform to one of the following driver models: WDM, KMDF, NDIS, or Storport. For more information, see [Supported Drivers](supported-drivers.md) and [Determining if Static Driver Verifier supports your driver or library](determining-if-static-driver-verifier-supports-your-driver-or-library.md).  Additionally, SDV provides limited support (a severely restricted rule set focused on general errors such as null dereferences) for drivers that do not follow the above driver models.
 
 ### <span id="preparing_your_source_code"></span><span id="PREPARING_YOUR_SOURCE_CODE"></span>
 

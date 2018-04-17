@@ -129,10 +129,6 @@ In general, there are a few key principles in regards to the ranking/targeting f
 
 No, you should keep the same Extension ID when making updates to your base driver.  The ExtensionID is used for version comparison and driver lineage identification.  It should not change within a driver's lineage. 
 
-**Do we need to create a new Extension INF submission every time we submit a base driver update?**
-
-Microsoft does not recommend creating additional ExtensionIDs or Extension INF submissions. 
-
 ### Manufacturing
 
 **Can we use an IHV-supplied Extension INF with their ExtensionID for manufacturing purposes?**
