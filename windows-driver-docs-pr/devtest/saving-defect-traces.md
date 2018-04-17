@@ -14,7 +14,6 @@ keywords:
 - export WDK Static Driver Verifier
 - Static Driver Verifier Report WDK
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -26,7 +25,7 @@ The Static Driver Verifier Defect Viewer has functionality that allows you to sa
 
 To save a trace, select "Save as..." from the file menu, or press Ctrl-S.  
 
-![screen shot of the defect viewer window, showing the location of the save functionality](devtest/images/sdv-savedefecttrace.png)
+![screen shot of the defect viewer window, showing the location of the save functionality](images/sdv-savedefecttrace.png)
 
 Then specify a folder where the trace folder ("sdvdefect") will be placed.
 
