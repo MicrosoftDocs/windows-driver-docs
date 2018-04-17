@@ -37,7 +37,7 @@ The productID and submissionID in the method represent the submission for which 
 
 ### Request parameters
 
-Do not provide request parameters for this method.
+Do not provide request parameters for this method. 
 
 ### Request body
 
