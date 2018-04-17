@@ -16,33 +16,20 @@ This topic describes how to use the \_OSI method in Advanced Configuration and P
 
 This information applies to the following operating systems:
 
-Windows 10, version 1703
-
-Windows 10, version 1607
-
-Windows Server Technical Preview
-
-Windows 10
-
-Windows Server 2012 R2
-
-Windows 8.1
-
-Windows Server 2012
-
-Windows 8
-
-Windows Server 2008 R2
-
-Windows 7
-
-Windows Server 2008
-
-Windows Vista
-
-Windows Server 2003
-
-Windows XP
+- Windows 10, version 1703
+- Windows 10, version 1607
+- Windows Server Technical Preview
+- Windows 10
+- Windows Server 2012 R2
+- Windows 8.1
+- Windows Server 2012
+- Windows 8
+- Windows Server 2008 R2
+- Windows 7
+- Windows Server 2008
+- Windows Vista
+- Windows Server 2003
+- Windows XP
 
 ## The \_OSI Method
 
@@ -61,7 +48,7 @@ Recent versions of the ACPI specification have extended the use cases of the \_O
 
 The \_OSI method is defined as follows:
 
-    \\\_OSI - Operating System Interfaces
+- \\\_OSI - Operating System Interfaces
 
 
 ### Argument
@@ -69,24 +56,20 @@ The \_OSI method is defined as follows:
 
 A string defined by and for each operating system. For example:
 
-    "Windows 2013" for Windows 8.1 and Windows Server® 2012 R2
-
-    "Windows 2012" for Windows 8 and Windows Server® 2012
-
-    "Windows 2009" for Windows 7 and Windows Server® 2008 R2
-
-    "Windows 2001" for Windows XP
-
-    "Windows 2001.1" for Windows Server 2003
+- "Windows 2013" for Windows 8.1 and Windows Server 2012 R2
+- "Windows 2012" for Windows 8 and Windows Server 2012
+- "Windows 2009" for Windows 7 and Windows Server 2008 R2
+- "Windows 2001" for Windows XP
+- "Windows 2001.1" for Windows Server 2003
 
 
 
 ### Return Value
 
+Return values are as follows:
 
-    0x00000000 if the operating system does not support the version in the argument.
-
-    0xFFFFFFFF if the operating system does support the version in the argument.
+- 0x00000000 if the operating system does not support the version in the argument.
+- 0xFFFFFFFF if the operating system does support the version in the argument.
 
 ## \_OSI Argument Details for Windows
 
