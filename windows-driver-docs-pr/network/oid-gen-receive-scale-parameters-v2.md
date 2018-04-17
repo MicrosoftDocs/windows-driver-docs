@@ -40,6 +40,17 @@ The upper layer will ensure that important invariants are not violated before pe
 - Before changing the number of queues, the upper layer will ensure that the indirection table does not reference more processors than configured for a VPort.
 Before changing the number of indirection table entries for VMMQ-RESTRICTED adapters, the upper layer will ensure that the content of the indirection table is normalized to the power of 2.
 
+### Error conditions and status codes
+
+This OID returns the following status codes when an error occurs:
+
+| Status code | Error condition |
+| --- | --- |
+| NDIS_STATUS_INVALID_LENGTH | The OID was malformed. |
+| NDIS_STATUS_NO_QUEUES | The number of queues is being changed when RSS is enabled, but the current indirection table references more processors than the new number of queues. |
+| NDIS_STATUS_INVALID_DATA | <ul><li>The indirection table is being reduced in size, but does not contain a power-of-two repeat pattern.</li><li>During an RSS state transition (to *on* or *off*), a processor from a steering parameter that becomes *active* does not belong to the adapter's RSS processor set. Note that *inactive* steering parameters are only tracking writes to the processor and are not enforced. Enforcement happens during RSS state transition when the parameter becomes *active*.</li></ul> |
+| NDIS_STATUS_INVALID_PARAMETER | Other fields, either in the header or the OID itself, contain invalid values. |
+
 ## Requirements
 
 | | |
