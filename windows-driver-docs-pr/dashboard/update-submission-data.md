@@ -1,7 +1,8 @@
 ---
 title: Update submission data
 description: This method, in the Microsoft Hardware API, updates details of a submission.
-ms.author: windowsdriverdev
+author: balapv
+ms.author: balapv
 ms.date: 04/05/2018
 ms.topic: article
 ms.prod: windows-hardware

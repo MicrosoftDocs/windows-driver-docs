@@ -9,22 +9,20 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Trace Viewer
+# Static Driver Verifier Defect Viewer
 
-
-The Trace Viewer displays a code trace through the path to the rule violation.
+The Static Driver Verifier Defect Viewer displays a code trace through the path to the rule violation.
 
 This section includes:
 
 [Understanding the Defect Viewer](understanding-the-defect-viewer.md)
 
-[Defect Viewer Actions](defect-viewer-actions.md)
+[Opening and Closing the Defect Viewer](opening-and-closing-the-defect-viewer.md)
+
+[Resizing the Defect Viewer Windows](resizing-the-defect-viewer-windows.md)
+
+[Changing the Text Size in the Defect Viewer](changing-the-text-size-in-the-defect-viewer.md)
+
+[Saving Defect Traces](saving-defect-traces.md)
 
  
-
- 
-
-
-
-
-

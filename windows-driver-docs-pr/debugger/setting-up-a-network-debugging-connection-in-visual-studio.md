@@ -4,7 +4,7 @@ description: You can use Microsoft Visual Studio to set up and perform kernel-mo
 ms.assetid: 4D442355-526A-4F39-8341-614BB7A41A3E
 keywords: ["network debugging visual studio", "ethernet debugging visual studio", "debugging over ethernet visual studio"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 04/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -12,6 +12,9 @@ ms.technology: windows-devices
 
 # Setting Up Kernel-Mode Debugging over a Network Cable in Visual Studio
 
+> [!IMPORTANT]  
+> This feature is not available in Windows 10, version 1507 and later versions of the WDK.
+>
 
 You can use Microsoft Visual Studio to set up and perform kernel-mode debugging over an Ethernet network. To use Visual Studio for kernel-mode debugging, you must have the Windows Driver Kit (WDK) integrated with Visual Studio. For information about how to install the integrated environment, see [Windows Driver Development](http://go.microsoft.com/fwlink/p?linkid=301383).
 
