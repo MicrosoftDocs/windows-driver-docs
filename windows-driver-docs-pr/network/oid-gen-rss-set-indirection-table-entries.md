@@ -12,7 +12,7 @@ ms.technology: windows-devices
 
 # OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES
 
-The OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES OID is sent to RSSv2-capable miniport drivers to perform moves of individual indirection table entries. This OID is a [Synchronous OID](synchronous-oid-request-interface-in-ndis-6-80.md), meaning it cannot return NDIS_STATUS_PENDING. It is issued as a Method request only, at IRQL == DISPATCH_LEVEL. 
+The OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES OID is sent to [RSSv2](receive-side-scaling-version-2-rssv2-.md)-capable miniport drivers to perform moves of individual indirection table entries. This OID is a [Synchronous OID](synchronous-oid-request-interface-in-ndis-6-80.md), meaning it cannot return NDIS_STATUS_PENDING. It is issued as a Method request only, at IRQL == DISPATCH_LEVEL. 
 
 This call uses the *XxxSynchronousOidRequest* entry point, where *Xxx* is either *Miniport* or *Filter* depending on the type of driver receiving the request. This entry point causes a system bug check if it sees an NDIS_STATUS_PENDING return status.
 
