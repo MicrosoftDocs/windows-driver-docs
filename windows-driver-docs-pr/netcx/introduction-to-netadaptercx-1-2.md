@@ -76,7 +76,7 @@ The following DDIs and data structures were updated in NetAdapterCx 1.2 to use a
 
 ## Packet extensions and offloads
 
-NetAdapterCx introduces packet extensions for each **NET_PACKET**, which provide space for NIC client drivers to store per-packet metadata. Attached to each packet's core descriptor, extensions are used by client drivers to share information with the upper layers. They can hold offload information for checksum, large send offload (LSO), and receive segment coalescence (RSC), or they can hold application-specific details.
+NetAdapterCx 1.2 introduces packet extensions for each **NET_PACKET**, which provide space for NIC client drivers to store per-packet metadata. Attached to each packet's core descriptor, extensions are used by client drivers to share information with the upper layers. They can hold offload information for checksum, large send offload (LSO), and receive segment coalescence (RSC), or they can hold application-specific details.
 
 For more information about packet descriptors and extensions, see [Packet descriptors and extensions](packet-descriptors-and-extensions.md).
 
@@ -100,7 +100,7 @@ The following DDIs and data structures are new in NetAdapterCx 1.2 for packet ex
 In version 1.2 of NetAdapterCx, NIC client drivers can now create, start, and stop multiple NETADAPTER objects per device object.
 
 - [NetAdapterStart](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstart)
-- [NetAdapterStop]((https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstop)
+- [NetAdapterStop](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstop)
 
 ## NetAdapter RSS
 

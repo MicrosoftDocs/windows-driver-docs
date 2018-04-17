@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # MultipleLocale
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The MultipleLocale element specifies if the service metadata package supports multiple locales or not.
 
