@@ -474,3 +474,8 @@ If there are functional validation failures, the response body will contain one 
 | UpdateUnauthorized | Cannot update the submission since the workflows have failed | Returned when trying to update a submission which has a failed workflow |
 | EntityNotFound | No submission found | Returned when trying to commit for a submission which does not exist |
 | EntityNotFound | Product not found | Returned when trying to create a submission for which a product does not exist |
+| InvalidInput | Extension drivers must be published as an Automatic update. Either of isAutoInstallDuringOSUpgrade or isAutoInstallOnApplicableSystems must be true. | Returned when a windows update shipping label for an extension INF is created without choosing isAutoInstallDuringOSUpgrade or isAutoInstallOnApplicableSystems |
+| InvalidInput | Chids are allowed only when HardwareIds are for operating systems Windows10 & Above. | Returned when a shipping label targeting OS less than windows 10 is created with CHID targeting. CHID targeting is applicable only for Windows 10 and above. |
+| InvalidInput | Cannot update the shipping label when another workflow is in progress. Please retry. | Returned when a shipping label is updated when a previous workflow is still in progress. |
+| RequestInvalidForCurrentState | Cannot create Publishing shipping label for inbox or system type. One can only share the shipping label. | Returned when windows update Shipping label is created on an inbox driver or a system. |
+| RequestInvalidForCurrentState | Submission is not yet ready to create shipping label. Please retry after some time. | Returned when a shipping label is created without waiting for preparation or pre-processing to complete. |
