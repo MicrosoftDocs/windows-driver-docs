@@ -1550,6 +1550,96 @@
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_make_net_luid",
       "redirect_document_id": true
     },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-isolation-parameters-get-first-routing-domain-entry.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_isolation_parameters_get_first_routing_domain_entry",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-routing-domain-entry-get-first-isolation-entry.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_routing_domain_entry_get_first_isolation_entry",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-routing-domain-entry-get-next.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_routing_domain_entry_get_next",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-routing-domain-isolation-entry-get-next.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_routing_domain_isolation_entry_get_next",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-nic-at-array-index.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_nic_at_array_index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-port-at-array-index.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_port_at_array_index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-port-property-custom-get-buffer.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_port_property_custom_get_buffer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-port-property-enum-info-get-next.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_port_property_enum_info_get_next",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-port-property-enum-info-get-property.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_port_property_enum_info_get_property",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-port-property-enum-parameters-get-first-info.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_port_property_enum_parameters_get_first_info",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-port-property-parameters-get-property.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_port_property_parameters_get_property",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-port-property-routing-domain-get-first-isolation-entry.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_port_property_routing_domain_get_first_isolation_entry",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-property-custom-get-buffer.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_property_custom_get_buffer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-property-enum-info-get-next.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_property_enum_info_get_next",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-property-enum-info-get-property.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_property_enum_info_get_property",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-property-enum-parameters-get-first-info.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_property_enum_parameters_get_first_info",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-property-parameters-get-property.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_property_parameters_get_property",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-port-destination-at-array-index.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndis_switch_port_destination_at_array_index",
+      "redirect_document_id": true
+    },
 
     {
       "source_path": "windows-driver-docs-pr/network/net-buffer-structure-macros.md",
@@ -1596,6 +1686,7 @@
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis",
       "redirect_document_id": false
     },
+
     {
       "source_path": "windows-driver-docs-pr/dashboard/extension-inf-files.md",
       "redirect_URL": "/windows-hardware/drivers/dashboard/submit-dashboard-extension-inf-files",
