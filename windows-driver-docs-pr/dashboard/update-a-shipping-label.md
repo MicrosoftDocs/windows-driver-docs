@@ -38,3 +38,47 @@ The productID, submissionID and shippingLabelId in the method represent the prod
 ### Request parameters
 
 Do not provide request parameters for this method. 
+
+### Request body
+
+The following example demonstrates the JSON request body a shipping label. Only the following types of changes can be made to a shipping label
+*   Add hardware IDs
+*   Remove/expire hardware IDs
+*   Add CHIDs
+*   Remove CHIDs
+*   Add audience
+*   Update/remove audience
+
+```json 
+{
+  "targetingInfo": {
+    "chids": [
+      {
+        "chid": "812fac65-9c26-473c-b3a9-1eb3803ac22c",
+        "action": "add"
+      },
+      {
+        "chid": "aed6336d-0958-444c-89b6-bf471191d6f0",
+        "action": "remove"
+      }
+    ],
+    "hardwareIds": [
+      {
+        "action": "remove",
+        "bundleId": "a2dfbcd8-1d4a-4885-90a3-2ac8360542da",
+        "infId": "iigd_extension.inf",
+        "operatingSystemCode": "WINDOWS_v100_X64_RS3_FULL",
+        "pnpString": "pci\\ven_8086&dev_5a85"
+      },
+      {
+        "action": "add",
+        "bundleId": "48140805-45a3-4a76-8818-e75c117adba9",
+        "infId": "iigd_extension.inf",
+        "operatingSystemCode": "WINDOWS_v100_X64_RS3_FULL",
+        "pnpString": "pci\\ven_8086&dev_5a85"
+      }
+    ],
+    "audience": "812fac65-9c26-473c-b3a9-1eb3803ac22c"
+  }
+}
+```
