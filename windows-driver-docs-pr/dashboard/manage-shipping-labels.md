@@ -21,7 +21,7 @@ Methods for managing shipping labels
 | Method | URI | Description |
 |:--|:--|:--|
 |POST|`https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels`|[Create a new shipping label](create-a-new-shipping-label.md)|
-|PATCH|`https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels/{shippingLabelId}`|Update a shipping label - **<font color="red">link TBD</font>**|
+|PATCH|`https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels/{shippingLabelId}`|[Update a shipping label](update-a-shipping-label.md)|
 
 ##Create a new shipping label
 
