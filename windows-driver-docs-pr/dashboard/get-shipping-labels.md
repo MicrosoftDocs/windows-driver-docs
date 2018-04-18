@@ -238,7 +238,7 @@ This object has the following values
 |:--|:--|:--|
 |hardwareIds|array of objects|Refer [hardware ID object](#hardware-id-object) for more details|
 |chids|array of objects|Refer [CHID object](#chids-object) for more details|
-|restrictedToAudience|GUID|GUID which represents an audience. Audiences allow you to restrict this publication to machines with a particular configuration. As an example, the test audience will only be delivered to clients with a particular registry key installed. To get the audiences applicable to your organization refer to **<font color="red">Audience method - Link TBD</font>**|
+|restrictedToAudience|GUID|GUID which represents an audience. Audiences allow you to restrict this publication to machines with a particular configuration. As an example, the test audience will only be delivered to clients with a particular registry key installed. To get the audiences applicable to your organization, refer [get audience](get-audience-data.md).|
 
 ### Hardware ID object
 
