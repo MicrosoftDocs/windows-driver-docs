@@ -86,7 +86,7 @@ For details about the fields in the request, refer to [shipping label resource](
 * *action* is required while updating CHIDs or HardwareIDs. 
 * *Audience* is an update only field - sending a value in this field will overwrite the previous value. Sending a blank will remove the previous value.
 * To get a list of audiences for your organization, refer [get audience](get-audience-data.md).
-* To get a list of legal hardware IDs, refer to **<font color="red">TBD</font>**
+* The hardware ID object should contain a valid combination of bundle ID, PNP ID, OS Code and INF name while creating a new shipping label. To get the allowed/valid combinations of these attributes for your submission (package), you can download the driver metadata file which is provided as a link when you get details of a submission. For more information refer to [driver package metadata](driver-package-metadata.md).
 
 ### Request examples
 The following example demonstrates how to update a product.
