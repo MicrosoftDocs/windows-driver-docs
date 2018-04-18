@@ -85,7 +85,7 @@ The following example demonstrates the JSON request body a shipping label. Only 
 For details about the fields in the request, refer to [shipping label resource](get-shipping-labels.md#shippinglabel-resource). Points to note 
 * *action* is required while updating CHIDs or HardwareIDs. 
 * *Audience* is an update only field - sending a value in this field will overwrite the previous value. Sending a blank will remove the previous value.
-* To get a list of valid audience, refer to **<font color="red">TBD</font>**
+* To get a list of audiences for your organization, refer [get audience](get-audience-data.md).
 * To get a list of legal hardware IDs, refer to **<font color="red">TBD</font>**
 
 ### Request examples
