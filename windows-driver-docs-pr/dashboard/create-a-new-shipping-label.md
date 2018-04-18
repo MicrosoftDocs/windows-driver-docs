@@ -106,7 +106,7 @@ For details about the fields in the request, refer to [shipping label resource](
 
 #### Populating targeting information
 
-The targeting object contains data which instructs Windows Update how the driver should be targeted in terms of hardware IDs and whether CHID or restrictions should be applied. The information provided here must be in line with what is declared in the INF file. Refer to **<font color="red">TBD</font>** to get the allowed combinations of hardware ID, OS code, bundle ID and inf name.
+The targeting object contains data which instructs Windows Update how the driver should be targeted in terms of hardware IDs and whether CHID or restrictions should be applied. The hardware ID object should contain a valid combination of bundle ID, PNP ID, OS Code and INF name while creating a new shipping label. To get the allowed/valid combinations of these attributes for your submission (package), you can download the driver metadata file which is provided as a link when you get details of a submission. For more information refer to [driver package metadata](driver-package-metadata.md).
 
 ### Request examples
 
