@@ -262,6 +262,7 @@ This object has the following values
 |operatingSystemCode|string|The operating system code applicable for this specific hardware ID - architecture combination. Refer [list of OS codes](get-product-data.md#list-of-operating-system-codes) for possible values.|
 |pnpString|string|The PNP ID or hardware ID which is to be targeted.|
 |distributionState|string|Represents the current targeting status of this hardware ID. Possible values are (description in paranthesis):<ul><li>pendingAdd (*Add has been requested for this hardware ID and is in progress*)</li><li>pendingRemove (*A remove (expire) has been requested for this hardware ID and is in progress*)</li><li>added (*This hardware ID has been succesfully added as target in this shipping label*)</li><li>notSet (*No action has been taken or status has not been set on this hardware ID*)</li></ul>|
+|action|string|This is applicable only while Update/patch of a shipping label. The possible values are: <ul><li>add</li><li>remove</li></ul> |
 
 The hardware ID object should contain a valid combination of bundle ID, PNP ID, OS Code and INF name while creating a new shipping label. To get the allowed/valid combinations of these attributes, refer **<font color="red">helper object for PNP codes - LINK TBD</font>**
 
