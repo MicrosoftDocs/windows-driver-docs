@@ -306,4 +306,4 @@ This object has the following values
 
 ## Error codes
 
-For more info, see [Error codes](get-product-data.md#error-codes). **<font color="red">TBD</font>** - need to add SL error codes
+For more info, see [Error codes](get-product-data.md#error-codes).
