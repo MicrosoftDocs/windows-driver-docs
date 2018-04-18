@@ -16,6 +16,7 @@ This topic describes how to use the \_OSI method in Advanced Configuration and P
 
 This information applies to the following operating systems:
 
+- Windows 10, version 1709
 - Windows 10, version 1703
 - Windows 10, version 1607
 - Windows Server Technical Preview
@@ -79,25 +80,25 @@ Windows operating systems return 0xFFFFFFFF if the argument to the \_OSI method 
 
 **\_OSI Strings for Windows Operating Systems**
 
-| Windows operating system version | \_OSI string         |
-|----------------------------------|----------------------|
-| Windows 10, version 1703         | "Windows 2017"       |
-| Windows 10, version 1607         | "Windows 2016"       |
-| Windows 10                       | "Windows 2015"       |
-| Windows Server Technical Preview | "Windows 2015"       |
-| Windows 8.1                      | "Windows 2013"       |
-| Windows Server 2012 R2           | "Windows 2013"       |
-| Windows 8                        | "Windows 2012"       |
-| Windows Server 2012              | "Windows 2012"       |
-| Windows 7                        | "Windows 2009"       |
-| Windows Server 2008 R2           | "Windows 2009"       |
-| Windows Vista                    | "Windows 2006"       |
-| Windows Vista SP1                | "Windows 2006 SP1"   |
-| Windows Server 2008              | "Windows 2006.1"     |
-| Windows XP                       | "Windows 2001"       |
-| Windows XP SP2                   | "Windows 2001 SP2"   |
-| Windows Server 2003              | "Windows 2001.1"     |
-| Windows Server 2003 SP1          | "Windows 2001.1 SP1" |
+| OSI String          | Target OS                     |
+|---------------------|-------------------------------|
+| Windows 2000        | Windows 2000                  |
+| Windows 2001        | Windows XP                    |
+| Windows 2001 SP1    | Windows XP SP1                |
+| Windows 2001.1      | Windows Server 2003           |
+| Windows 2001 SP2    | Windows XP SP2                |
+| Windows 2001.1 SP1  | Windows Server 2003 SP1       |
+| Windows 2006        | Windows Vista                 |
+| Windows 2006 SP1    | Windows Vista SP1             |
+| Windows 2006.1      | Windows Server 2008           |
+| Windows 2009        | Windows 7, Win Server 2008 R2 |
+| Windows 2012        | Windows 8, Win Server 2012    |
+| Windows 2013        | Windows 8.1                   |
+| Windows 2015        | Windows 10                    |
+| Windows 2016        | Windows 10, version 1607      |
+| Windows 2017        | Windows 10, version 1703      |
+| Windows 2017.2      | Windows 10, version 1709      |
+| Windows 2018        | Windows 10, version 1803      |
 
 
 ### Implementation Note
