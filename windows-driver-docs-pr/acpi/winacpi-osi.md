@@ -76,7 +76,7 @@ Return values are as follows:
 
 The table below lists the versions of Windows that ASL can identify by using the corresponding \_OSI string.
 
-Windows operating systems return 0xFFFFFFFF if the argument to the \_OSI method specifies an earlier version of Windows. For example, Windows 7 returns 0xFFFFFFFF for both "Windows 2009" (Windows 7) and "Windows 2006" (Windows Vista®).
+Windows operating systems return 0xFFFFFFFF if the argument to the \_OSI method specifies an earlier version of Windows. For example, Windows 7 returns 0xFFFFFFFF for both "Windows 2009" (Windows 7) and "Windows 2006" (Windows Vista).
 
 **\_OSI Strings for Windows Operating Systems**
 
@@ -98,7 +98,6 @@ Windows operating systems return 0xFFFFFFFF if the argument to the \_OSI method 
 | Windows 2016        | Windows 10, version 1607      |
 | Windows 2017        | Windows 10, version 1703      |
 | Windows 2017.2      | Windows 10, version 1709      |
-| Windows 2018        | Windows 10, version 1803      |
 
 
 ### Implementation Note
