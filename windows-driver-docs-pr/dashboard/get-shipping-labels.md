@@ -111,7 +111,7 @@ This resource has the following values
 |publishingSpecifications|object|Refer [publishing specifications object](#publishing-specifications-object) for more details|
 |recipientSpecifications|array of objects|Refer [recipient specifications object](#recipient-specifications-object) for more details|
 |targeting|object|Refer [targeting object](#targeting-object) for more details|
-|workflowStatus|object|This object depicts the status of the workflow for this shipping label. Refer [shipping label workflow status object](shipping-label-workflow-status-object)  for more details|
+|workflowStatus|object|This object depicts the status of the workflow for this shipping label. Refer [shipping label workflow status object](#shipping-label-workflow-status-object)  for more details|
 |links|array of objects|Refer [link object](get-product-data.md#link-object)  for more details - **<font color="red">TBD</font>** need to add more links for SL|
 |name|string|The name of the shipping label|
 |destination|string|Indicates the destination of the shipping label. Possible values are(description in parenthesis): <ul><li>anotherPartner (*this shipping label is for sharing the submission with another partner*)</li><li>windowsUpdate (*this shipping label is for publishing to Windows Update*)</li><li>notSet</li></ul>|
