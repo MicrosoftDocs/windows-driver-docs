@@ -20,7 +20,7 @@ Methods for managing shipping labels
 
 | Method | URI | Description |
 |:--|:--|:--|
-|POST|`https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels`|Create a new shipping label - **<font color="red">link TBD</font>**|
+|POST|`https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels`|[Create a new shipping label](create-a-new-shipping-label.md)|
 |PATCH|`https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels/{shippingLabelId}`|Update a shipping label - **<font color="red">link TBD</font>**|
 
 ##Create a new shipping label
@@ -31,7 +31,7 @@ Methods for managing shipping labels
 
 3.	You should have created a product and submission in order to create a shipping label. Refer [manage product submissions](manage-product-submissions.md) for details on how to create a product and submission.
 
-4.  Create a new shipping label **<font color="red">link TBD</font>** for this submission by executing the following method in the Microsoft Hardware API.  Use the ProductID and SubmissionID created in the step above.
+4.  [Create a new shipping label](create-a-new-shipping-label.md) for this submission by executing the following method in the Microsoft Hardware API.  Use the ProductID and SubmissionID created in the step above.
     
     ```
     https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels
