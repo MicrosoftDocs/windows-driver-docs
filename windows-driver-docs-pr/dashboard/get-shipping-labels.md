@@ -111,7 +111,7 @@ This resource has the following values
 |publishingSpecifications|object|Refer [publishing specifications object](#publishing-specifications-object) for more details|
 |recipientSpecifications|array of objects|Refer [recipient specifications object](#recipient-specifications-object) for more details|
 |targeting|object|Refer [targeting object](#targeting-object) for more details|
-|workflowStatus|object|This object depicts the status of the workflow for this submission. Refer [workflow status object](get-product-data.md#workflow-status-object)  for more details - **<font color="red">TBD</font>** need to add morew status to Workflow object|
+|workflowStatus|object|This object depicts the status of the workflow for this shipping label. Refer [shipping label workflow status object](shipping-label-workflow-status-object)  for more details|
 |links|array of objects|Refer [link object](get-product-data.md#link-object)  for more details - **<font color="red">TBD</font>** need to add more links for SL|
 |name|string|The name of the shipping label|
 |destination|string|Indicates the destination of the shipping label. Possible values are(description in parenthesis): <ul><li>anotherPartner (*this shipping label is for sharing the submission with another partner*)</li><li>windowsUpdate (*this shipping label is for publishing to Windows Update*)</li><li>notSet</li></ul>|
@@ -281,6 +281,26 @@ This object has the following values
 |:--|:--|:--|
 |chid|GUID|The CHID which needs to be targeted|
 |distributionState|string|Represents the current targeting status of this CHID. Possible values are (description in paranthesis):<ul><li>pendingAdd (*Add has been requested for this hardware ID and is in progress*)</li><li>pendingRemove (*A remove (expire) has been requested for this hardware ID and is in progress*)</li><li>added (*This hardware ID has been succesfully added as target in this shipping label*)</li><li>notSet (*No action has been taken or status has not been set on this hardware ID*)</li></ul>|
+
+### Shipping Label Workflow Status object
+
+This object represents the status of workflow for a given entity
+
+```json
+{
+      “currentStep": " Created",
+      " state": " completed",
+      " messages": []
+    }
+```
+
+This object has the following values
+
+| Value | Type | Description |
+|:--|:--|:--|
+| currentStep | string | The name of the current step in the overall workflow for this entity. <br>For shipping labels the possible values are (description in parenthesis):<ul><li>Created(*TBD*)</li><li>PreProcessShippingLabel(*TBD*)</li><li>FinalizePreProcessing(*TBD*)</li><li>PublishJobValidation(*TBD*)</li><li>UpdateGeneration(*TBD*)</li><li>Publishing(*TBD*)</li><li>FinalizePublishing(*TBD*)</li><li>FinalizeSharing(*TBD*)</li><li>ProcessSharing(*TBD*)</li><li>SharingExpiration(*TBD*)</li><li>MicrosoftApproval(*TBD*)</li></ul> |
+| State | string | The state of the current step. Possible values are:<ul><li>notStarted</li><li>started</li><li>failed</li><li>completed</li></ul> |
+| Messages | array | An array of strings to provide messages about current step (especially in case of failure) |
 
 ## Error codes
 
