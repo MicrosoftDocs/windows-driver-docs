@@ -174,7 +174,7 @@ This resource has the following values
 
 | Value | Type | Description |
 |:--|:--|:--|
-| value | array | An array of objects that contain information about each shipping label. For more information about the data in each object, see [shipping label resource](get-shipping-labels.md#shippingLabel-resource). |
+| value | array | An array of objects that contain information about each shipping label. For more information about the data in each object, see [shipping label resource](get-shipping-labels.md#shippinglabel-resource). |
 | links | array | An array of objects with helpful links about the containing entity. Refer to [link object](get-product-data.md#link-object)  for more details - **<font color="red">TBD</font>** add links specific to SL|
 
 ## Error codes
