@@ -1699,6 +1699,226 @@
       "source_path": "windows-driver-docs-pr/dashboard/extension-inf-files.md",
       "redirect_URL": "/windows-hardware/drivers/dashboard/submit-dashboard-extension-inf-files",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/netadaptercx-api-reference.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/#netadaptercx",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/netadaptercx-calback-functions.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/#netadaptercx",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/netadaptercx-structures.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/#netadaptercx",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/netadaptercx-methods.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/#netadaptercx",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/netadaptercx-enumerations.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/#netadaptercx",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/netadaptercx-macros.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/#netadaptercx",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/evt-net-adapter-create-rxqueue.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_create_rxqueue",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/evt-net-adapter-create-txqueue.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_create_txqueue",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/evt-net-adapter-preview-protocol-offload.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_preview_protocol_offload",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/evt-net-adapter-preview-wake-pattern.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_preview_wake_pattern",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/evt-net-adapter-set-capabilities.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/evt-net-request-default.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/nc-netrequestqueue-evt_net_request_default",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/evt-net-request-default-method.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/nc-netrequestqueue-evt_net_request_default_method",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/evt-net-request-default-query-data.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/nc-netrequestqueue-evt_net_request_default_query_data",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/evt-net-request-default-set-data.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/nc-netrequestqueue-evt_net_request_default_set_data",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/evt-net-request-method.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/nc-netrequestqueue-evt_net_request_method",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/evt-net-request-query-data.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/nc-netrequestqueue-evt_net_request_query_data",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/evt-net-request-set-data.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/nc-netrequestqueue-evt_net_request_set_data",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/evt-rxqueue-advance.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrxqueue/nc-netrxqueue-evt_rxqueue_advance",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/evt-rxqueue-cancel.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrxqueue/nc-netrxqueue-evt_rxqueue_cancel",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/evt-rxqueue-set-notification-enabled.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrxqueue/nc-netrxqueue-evt_rxqueue_set_notification_enabled",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/evt-txqueue-advance.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nettxqueue/nc-nettxqueue-evt_txqueue_advance",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/evt-txqueue-cancel.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nettxqueue/nc-nettxqueue-evt_txqueue_cancel",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/evt-txqueue-set-notification-enabled.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nettxqueue/nc-nettxqueue-evt_txqueue_set_notification_enabled",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/net-adapter-config.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_config",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/net-adapter-datapath-capabilities.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/net-adapter-link-layer-capabilities.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_link_layer_capabilities",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/net-adapter-link-state.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_link_state",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/net-adapter-physical-address.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/#netadaptercx",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/net-adapter-power-capabilities.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_power_capabilities",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/net-driver-globals.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadaptercxtypes/ns-netadaptercxtypes-_net_driver_globals",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/net-packet.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/net-packet-fragment.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet_fragment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/net-packet-context-attributes.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapterpacket/ns-netadapterpacket-_net_packet_context_attributes",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/net-packet-context-token.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/#netadaptercx",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/net-request-queue-config.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/ns-netrequestqueue-_net_request_queue_config",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/net-request-queue-method-handler.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/ns-netrequestqueue-_net_request_queue_method_handler",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/net-request-queue-query-data-handler.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/ns-netrequestqueue-_net_request_queue_query_data_handler",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/net-request-queue-set-data-handler.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/ns-netrequestqueue-_net_request_queue_set_data_handler",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/net-ring-buffer.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringbuffer/ns-netringbuffer-_net_ring_buffer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/net-rxqueue-buffer-layout-hint.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrxqueue/ns-netrxqueue-_net_rxqueue_buffer_layout_hint",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/net-rxqueue-config.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrxqueue/ns-netrxqueue-_net_rxqueue_config",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/net-rxqueue-dma-allocator-config.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_rx_capabilities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/net-txqueue-config.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nettxqueue/ns-nettxqueue-_net_txqueue_config",
+      "redirect_document_id": true
     }
   ]
 }
