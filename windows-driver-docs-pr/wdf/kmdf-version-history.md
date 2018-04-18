@@ -23,6 +23,7 @@ The following table shows the release history of the KMDF library:
 
 |KMDF version|Release method|Included in this version of Windows|Drivers using it run on|
 |--- |--- |--- |--- |
+|1.25|Windows 10, version 1803 WDK|Windows 10, version 1803 (Spring 2018 Update, Redstone 4)|Windows 10 version 1803|
 |1.23|Windows 10, version 1709 WDK|Windows 10, version 1709 (Fall Creators Update, Redstone 3)|Windows 10 version 1709|
 |1.21|Windows 10, version 1703 WDK|Windows 10, version 1703 (Creators Update, Redstone 2)|Windows 10 version 1703|
 |1.19|Windows 10, version 1607 WDK|Windows 10, version 1607 (Anniversary Update, Redstone 1)|Windows 10 version 1607, Windows Server 2016 and later|
@@ -41,6 +42,10 @@ You can use the Windows Driver Kit (WDK) with Microsoft Visual Studio 2015 to 
 For a complete list of callbacks and methods, and which frameworks and versions they apply to, see [Summary of WDF Callbacks and Methods](https://msdn.microsoft.com/library/windows/hardware/dn265591).
 
 For information about the new features for KMDF drivers in Windows 10, see [What's New for WDF Drivers](index.md).
+
+## KMDF Version 1.25
+
+* [Building a WDF driver for multiple versions of Windows](building-a-wdf-driver-for-multiple-versions-of-windows.md)
 
 ## KMDF Version 1.23
 

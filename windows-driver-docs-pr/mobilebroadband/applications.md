@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # Applications
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The Applications element specifies the apps that are associated with the Mobile Broadband hardware device.
 

@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # Version
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The Version element specifies the version of the application software that created the service metadata package.
 

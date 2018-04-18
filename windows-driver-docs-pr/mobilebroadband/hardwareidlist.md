@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # HardwareIdList (PackageInfo)
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The HardwareIDList element specifies one or more hardware identification strings for the service metadata package. Each string is specified by a [HardwareID](hardwareid.md) element.
 
