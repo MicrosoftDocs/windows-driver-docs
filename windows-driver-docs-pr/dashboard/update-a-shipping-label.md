@@ -66,14 +66,14 @@ The following example demonstrates the JSON request body a shipping label. Only 
       {
         "action": "remove",
         "bundleId": "a2dfbcd8-1d4a-4885-90a3-2ac8360542da",
-        "infId": "iigd_extension.inf",
+        "infId": "foo.inf",
         "operatingSystemCode": "WINDOWS_v100_X64_RS3_FULL",
         "pnpString": "pci\\ven_8086&dev_5a85"
       },
       {
         "action": "add",
         "bundleId": "48140805-45a3-4a76-8818-e75c117adba9",
-        "infId": "iigd_extension.inf",
+        "infId": "foo.inf",
         "operatingSystemCode": "WINDOWS_v100_X64_RS3_FULL",
         "pnpString": "pci\\ven_8086&dev_5a85"
       }
@@ -82,3 +82,25 @@ The following example demonstrates the JSON request body a shipping label. Only 
   }
 }
 ```
+For details about the fields in the request, refer to [shipping label resource](get-shipping-labels.md#shippinglabel-resource). Points to note 
+* *action* is required while updating CHIDs or HardwareIDs. 
+* *Audience* is an update only field - sending a value in this field will overwrite the previous value. Sending a blank will remove the previous value.
+* To get a list of valid audience, refer to **<font color="red">TBD</font>**
+* To get a list of legal hardware IDs, refer to **<font color="red">TBD</font>**
+
+### Request examples
+The following example demonstrates how to update a product.
+
+```json 
+PATCH https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/14461751976964156/submissions/1152921504621467600/shippingLabels/1152921504606980300 HTTP/1.1
+Authorization: Bearer <your access token>
+```
+
+## Response
+
+The response will be empty with a HTTP status of 204.
+
+After this step, use the method [get shipping label details](get-a-shipping-label.md) to get the updated details of the shipping label.
+
+## Error codes
+For more info, see [Error codes](get-product-data.md#error-codes). **<font color="red">TBD</font>** - need to add SL error codes
