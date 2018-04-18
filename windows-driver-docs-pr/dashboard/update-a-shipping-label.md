@@ -103,4 +103,4 @@ The response will be empty with a HTTP status of 204.
 After this step, use the method [get shipping label details](get-a-shipping-label.md) to get the updated details of the shipping label.
 
 ## Error codes
-For more info, see [Error codes](get-product-data.md#error-codes). **<font color="red">TBD</font>** - need to add SL error codes
+For more info, see [Error codes](get-product-data.md#error-codes).
