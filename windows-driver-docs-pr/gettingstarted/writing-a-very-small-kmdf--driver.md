@@ -28,7 +28,8 @@ To get started, be sure you have [Microsoft Visual Studio 2015](https://go.micro
 3.  In the middle pane, select **Kernel Mode Driver, Empty (KMDF)**.
 4.  In the **Name** field, enter "KmdfHelloWorld" for the project name.
 
-    **Note**  When you create a new KMDF or UMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
+    > [!NOTE]
+    > When you create a new KMDF or UMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
      
 
 5.  In the **Location** field, enter the directory where you want to create the new project.
@@ -45,7 +46,8 @@ To get started, be sure you have [Microsoft Visual Studio 2015](https://go.micro
 8.  In the **Solution Explorer** window, right-click **KmdfHelloWorld** and choose **Add &gt; New Item**.
 9.  In the **Add New Item** dialog box, select **C++ File**. For **Name**, enter "Driver.c".
 
-    **Note**  The file name extension is **.c**, not **.cpp**.
+    > [!NOTE]
+    > The file name extension is **.c**, not **.cpp**.
 
      Click **Add**. The Driver.c file is added under Source Files, as shown here.
 
@@ -57,96 +59,96 @@ Now that you've created your empty Hello World project and added the Driver.c so
 
 1. In Driver.c, start by including these headers:
 
-```C++
-#include <ntddk.h>
-#include <wdf.h>
-```
+    ```C++
+    #include <ntddk.h>
+    #include <wdf.h>
+    ```
 
-[Ntddk.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk) contains core Windows kernel definitions for all drivers, while [Wdf.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_wdf) contains definitions for drivers based on the Windows Driver Framework (WDF). 
+    [Ntddk.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk) contains core Windows kernel definitions for all drivers, while [Wdf.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_wdf) contains definitions for drivers based on the Windows Driver Framework (WDF). 
 
 2. Next, provide declarations for the two callbacks you'll use:
 
-```C++
-DRIVER_INITIALIZE DriverEntry;
-EVT_WDF_DRIVER_DEVICE_ADD KmdfHelloWorldEvtDeviceAdd;
-```
+    ```C++
+    DRIVER_INITIALIZE DriverEntry;
+    EVT_WDF_DRIVER_DEVICE_ADD KmdfHelloWorldEvtDeviceAdd;
+    ```
 
 3. Use the following code to write your *DriverEntry*:
 
-```C++
-NTSTATUS 
-DriverEntry(
-    _In_ PDRIVER_OBJECT     DriverObject, 
-    _In_ PUNICODE_STRING    RegistryPath
-)
-{
-    // NTSTATUS variable to record success or failure
-    NTSTATUS status = STATUS_SUCCESS;
-    
-    // Allocate the driver configuration object
-    WDF_DRIVER_CONFIG config;
-    
-    // Print "Hello World" for DriverEntry
-    KdPrintEx(( DPFLTR_IHVDRIVER_ID, DPFLTR_INFO_LEVEL, "KmdfHelloWorld: DriverEntry\n" ));
+    ```C++
+    NTSTATUS 
+    DriverEntry(
+        _In_ PDRIVER_OBJECT     DriverObject, 
+        _In_ PUNICODE_STRING    RegistryPath
+    )
+    {
+        // NTSTATUS variable to record success or failure
+        NTSTATUS status = STATUS_SUCCESS;
+        
+        // Allocate the driver configuration object
+        WDF_DRIVER_CONFIG config;
+        
+        // Print "Hello World" for DriverEntry
+        KdPrintEx(( DPFLTR_IHVDRIVER_ID, DPFLTR_INFO_LEVEL, "KmdfHelloWorld: DriverEntry\n" ));
 
-    // Initialize the driver configuration object to register the
-    // entry point for the EvtDeviceAdd callback, KmdfHelloWorldEvtDeviceAdd
-    WDF_DRIVER_CONFIG_INIT(&config, 
-                           KmdfHelloWorldEvtDeviceAdd
-                           );
+        // Initialize the driver configuration object to register the
+        // entry point for the EvtDeviceAdd callback, KmdfHelloWorldEvtDeviceAdd
+        WDF_DRIVER_CONFIG_INIT(&config, 
+                            KmdfHelloWorldEvtDeviceAdd
+                            );
 
-    // Finally, create the driver object
-    status = WdfDriverCreate(DriverObject, 
-                             RegistryPath, 
-                             WDF_NO_OBJECT_ATTRIBUTES, 
-                             &config, 
-                             WDF_NO_HANDLE
-                             );
-    return status;
-}
-```
+        // Finally, create the driver object
+        status = WdfDriverCreate(DriverObject, 
+                                RegistryPath, 
+                                WDF_NO_OBJECT_ATTRIBUTES, 
+                                &config, 
+                                WDF_NO_HANDLE
+                                );
+        return status;
+    }
+    ```
 
-[*DriverEntry*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) is the entry point for all drivers, like `Main()` is for many user mode applications. The job of *DriverEntry* is to initialize driver-wide structures and resources. In this example, you printed "Hello World" for *DriverEntry*, configured the driver object to register your *EvtDeviceAdd* callback's entry point, then created the driver object and returned. 
+    [*DriverEntry*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) is the entry point for all drivers, like `Main()` is for many user mode applications. The job of *DriverEntry* is to initialize driver-wide structures and resources. In this example, you printed "Hello World" for *DriverEntry*, configured the driver object to register your *EvtDeviceAdd* callback's entry point, then created the driver object and returned. 
 
-The driver object acts as the parent object for all other framework objects you might create in your driver, which include device objects, I/O queues, timers, spinlocks, and more. For more information about framework objects, see [Introduction to Framework Objects](../wdf/introduction-to-framework-objects.md).
+    The driver object acts as the parent object for all other framework objects you might create in your driver, which include device objects, I/O queues, timers, spinlocks, and more. For more information about framework objects, see [Introduction to Framework Objects](../wdf/introduction-to-framework-objects.md).
 
-> [!TIP]
-> For *DriverEntry*, we strongly recommend keeping the name as "DriverEntry" to help with code analysis and debugging.
+    > [!TIP]
+    > For *DriverEntry*, we strongly recommend keeping the name as "DriverEntry" to help with code analysis and debugging.
 
 4. Next, use the following code to write your *KmdfHelloWorldEvtDeviceAdd*:
 
-```C++
-NTSTATUS 
-KmdfHelloWorldEvtDeviceAdd(
-    _In_    WDFDRIVER       Driver, 
-    _Inout_ PWDFDEVICE_INIT DeviceInit
-)
-{
-    // We're not using the driver object,
-    // so we need to mark it as unreferenced
-    UNREFERENCED_PARAMETER(Driver);
+    ```C++
+    NTSTATUS 
+    KmdfHelloWorldEvtDeviceAdd(
+        _In_    WDFDRIVER       Driver, 
+        _Inout_ PWDFDEVICE_INIT DeviceInit
+    )
+    {
+        // We're not using the driver object,
+        // so we need to mark it as unreferenced
+        UNREFERENCED_PARAMETER(Driver);
 
-    NTSTATUS status;
+        NTSTATUS status;
 
-    // Allocate the device object
-    WDFDEVICE hDevice;    
+        // Allocate the device object
+        WDFDEVICE hDevice;    
 
-    // Print "Hello World"
-    KdPrintEx(( DPFLTR_IHVDRIVER_ID, DPFLTR_INFO_LEVEL, "KmdfHelloWorld: KmdfHelloWorldEvtDeviceAdd\n" ));
-    
-    // Create the device object
-    status = WdfDeviceCreate(&DeviceInit, 
-                             WDF_NO_OBJECT_ATTRIBUTES,
-                             &hDevice
-                             );
-    return status;
-}
-```
+        // Print "Hello World"
+        KdPrintEx(( DPFLTR_IHVDRIVER_ID, DPFLTR_INFO_LEVEL, "KmdfHelloWorld: KmdfHelloWorldEvtDeviceAdd\n" ));
+        
+        // Create the device object
+        status = WdfDeviceCreate(&DeviceInit, 
+                                WDF_NO_OBJECT_ATTRIBUTES,
+                                &hDevice
+                                );
+        return status;
+    }
+    ```
 
-[*EvtDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) is invoked by the system when it detects that your device has arrived. Its job is to initialize structures and resources for that device. In this example, you simply printed out a "Hello World" message for *EvtDeviceAdd*, created the device object, and returned. In other drivers you write, you might create I/O queues for your hardware, set up a *device context* storage space for device-specific information, or perform other tasks needed to prepare your device.
+    [*EvtDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) is invoked by the system when it detects that your device has arrived. Its job is to initialize structures and resources for that device. In this example, you simply printed out a "Hello World" message for *EvtDeviceAdd*, created the device object, and returned. In other drivers you write, you might create I/O queues for your hardware, set up a *device context* storage space for device-specific information, or perform other tasks needed to prepare your device.
 
-> [!TIP]
-> For the device add callback, notice how you named it with your driver's name as a prefix (*KmdfHelloWorld*EvtDeviceAdd). Generally, we recommend naming your driver's functions in this way to differentiate them from other drivers' functions. *DriverEntry* is the only one you should name exactly that.
+    > [!TIP]
+    > For the device add callback, notice how you named it with your driver's name as a prefix (*KmdfHelloWorld*EvtDeviceAdd). Generally, we recommend naming your driver's functions in this way to differentiate them from other drivers' functions. *DriverEntry* is the only one you should name exactly that.
 
 5. Your complete Driver.c now looks like this:
 
