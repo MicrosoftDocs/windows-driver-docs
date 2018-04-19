@@ -26,3 +26,4 @@
 #### [ACPI_METHOD_ARGUMENT_LENGTH_FROM_ARGUMENT](acpi-method-argument-length-from-argument.md)
 #### [ACPI_METHOD_NEXT_ARGUMENT](acpi-method-next-argument.md)
 #### [ACPI_MANIPULATE_LOCK_BUFFER](acpi-manipulate-lock-buffer.md)
+## [How to Identify the Windows Version in ACPI by Using _OSI](winacpi-osi.md)
