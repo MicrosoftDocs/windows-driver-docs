@@ -67,6 +67,8 @@ WDK requires Visual Studio, for more information more info on system requirement
 
 EWDK will additionally need .NET 4.6.1, for more information on what .NET runs on please review [.NET Framework system requirements](https://docs.microsoft.com/dotnet/framework/get-started/system-requirements). 
 
+To work with HAL Extensions, download and install the updated [Windows OEM HAL Extension Test Cert 2017 (TEST ONLY)](https://go.microsoft.com/fwlink/?linkid=872294) certificate after preparing your environment for development.
+
 You can use the WDK to develop drivers for these operating systems: 
 
 |Client OS|Server OS|
