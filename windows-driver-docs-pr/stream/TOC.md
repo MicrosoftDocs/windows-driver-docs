@@ -1,4 +1,5 @@
 # [Streaming media devices design guide](index.md)
+# [360 camera video capture](360-camera-video-capture.md)
 # [DShow Bridge implementation guidance for UVC devices](dshow-bridge-implementation-guidance-for-usb-video-class-devices.md)
 # [Camera class INF file setting for Universal camera drivers](camera-driver-inf-file-class-setting.md)
 # [USB Video Class (UVC) driver implementation checklist](uvc-driver-implementation-checklist.md)

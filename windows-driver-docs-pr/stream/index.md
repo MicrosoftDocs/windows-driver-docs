@@ -20,6 +20,7 @@ Use the guidance in this section to design and implement drivers for devices tha
 
 ## In this section
 
+-   [360 camera video capture](360-camera-video-capture.md) (new for Windows 10, version 1803)
 -   [DShow Bridge implementation guidance for UVC devices](dshow-bridge-implementation-guidance-for-usb-video-class-devices.md)
 -   [Camera class INF file setting for Universal camera drivers](camera-driver-inf-file-class-setting.md) (new for Windows 10, version 1709)
 -   [USB Video Class (UVC) driver implementation checklist](uvc-driver-implementation-checklist.md) (new for Windows 10, version 1703)
