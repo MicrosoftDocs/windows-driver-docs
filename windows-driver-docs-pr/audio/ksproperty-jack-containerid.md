@@ -49,8 +49,8 @@ This property can be supported on any bridge pin that is associated with one or 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin factory (via filter handle)</p></td>
-<td align="left"><p>KS_PIN</p></td>
-<td align="left"><p>GUID</p></td>
+<td align="left"><p>[<strong>KSP_PIN</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566722)</p></td>
+<td align="left"><p><strong>GUID</strong></p></td>
 </tr>
 </tbody>
 </table>

@@ -49,8 +49,8 @@ In Windows Vista and later, this property can be supported on any bridge pin tha
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin factory (via Filter handle)</p></td>
-<td align="left"><p>KS_PIN</p></td>
-<td align="left"><p>[KSMULTIPLE_ITEM](http://msdn.microsoft.com/library/windows/hardware/ff563441.aspx) followed by an array of [<strong>KSJACK_DESCRIPTION</strong>](ksjack-description.md) structures</p></td>
+<td align="left"><p>[<strong>KSP_PIN</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566722)</p></td>
+<td align="left"><p>[<strong>KSMULTIPLE_ITEM</strong>](http://msdn.microsoft.com/library/windows/hardware/ff563441.aspx) followed by an array of [<strong>KSJACK_DESCRIPTION</strong>](ksjack-description.md) structures</p></td>
 </tr>
 </tbody>
 </table>
