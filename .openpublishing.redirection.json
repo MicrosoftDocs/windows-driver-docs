@@ -1239,6 +1239,461 @@
       "source_path": "windows-driver-docs-pr/3dprint/microsoft-3d-printer-drivers.md",
       "redirect_URL": "/windows-hardware/drivers/3dprint/index",
       "redirect_document_id": true
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-checksum-bias.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_checksum_bias",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-current-mdl.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_current_mdl",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-current-mdl-offset.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_current_mdl_offset",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-data-length.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_data_length",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-data-offset.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_data_offset",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-data-physical-address.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_data_physical_address",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-first-mdl.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_first_mdl",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-list-coalesced-seg-count.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_list_coalesced_seg_count",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-list-context-data-size.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_list_context_data_size",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-list-context-data-start.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_list_context_data_start",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-list-dup-ack-count.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_list_dup_ack_count",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-list-first-nb.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_list_first_nb",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-list-flags.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_list_flags",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-list-get-hash-function.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_list_get_hash_function",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-list-get-hash-type.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_list_get_hash_type",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-list-get-hash-value.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_list_get_hash_value",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-list-info.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_list_info",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-list-miniport-reserved.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_list_miniport_reserved",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-list-nbl-flags.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_list_nbl_flags",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-list-next-nbl.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_list_next_nbl",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-list-protocol-reserved.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_list_protocol_reserved",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-list-receive-filter-id.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_list_receive_filter_id",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-list-receive-filter-vport-id.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_list_receive_filter_vport_id",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-list-receive-queue-id.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_list_receive_queue_id",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-list-set-hash-function.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_list_set_hash_function",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-list-set-hash-type.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_list_set_hash_type",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-list-set-hash-value.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_list_set_hash_value",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-list-status.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_list_status",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-list-switch-forwarding-detail.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_list_switch_forwarding_detail",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-miniport-reserved.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_miniport_reserved",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-next-nb.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_next_nb",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-protocol-reserved.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_protocol_reserved",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-shared-mem-flags.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_shared_mem_flags",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-shared-mem-handle.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_shared_mem_handle",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-shared-mem-length.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_shared_mem_length",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-shared-mem-next-segment.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_shared_mem_next_segment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-shared-mem-offset.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-net_buffer_shared_mem_offset",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-nbl-add-media-specific-info.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndis_nbl_add_media_specific_info",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-nbl-add-media-specific-info-ex.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndis_nbl_add_media_specific_info_ex",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-nbl-get-media-specific-info.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndis_nbl_get_media_specific_info",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-nbl-get-media-specific-info-ex.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndis_nbl_get_media_specific_info_ex",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-nbl-remove-media-specific-info.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndis_nbl_remove_media_specific_info",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-nbl-remove-media-specific-info-ex.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndis_nbl_remove_media_specific_info_ex",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndissetnetbufferlistprotocolid.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndissetnetbufferlistprotocolid",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndistestnblflag.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndistestnblflag",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndistestnblflags.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndistestnblflags",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndissetnblflag.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndissetnblflag",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndisclearnblflag.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisclearnblflag",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-set-net-buffer-list-cancel-id.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndis_set_net_buffer_list_cancel_id",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-get-net-buffer-list-cancel-id.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndis_get_net_buffer_list_cancel_id",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-current-processor-number.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndiscurrentprocessorindex",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-current-irql.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kegetcurrentirql",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-raise-irql-to-dispatch.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndis_raise_irql_to_dispatch",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-lower-irql.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndis_lower_irql",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-init-mutex.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndis_init_mutex",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-release-mutex.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndis_release_mutex",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-wait-for-mutex.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndis_wait_for_mutex",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-rss-hash-func-from-hash-info.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_rss_hash_func_from_hash_info",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-rss-hash-info-from-type-and-func.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_rss_hash_info_from_type_and_func",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-rss-hash-type-from-hash-info.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_rss_hash_type_from_hash_info",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-make-rid.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndis_make_rid",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-make-net-luid.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_make_net_luid",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-isolation-parameters-get-first-routing-domain-entry.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_isolation_parameters_get_first_routing_domain_entry",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-routing-domain-entry-get-first-isolation-entry.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_routing_domain_entry_get_first_isolation_entry",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-routing-domain-entry-get-next.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_routing_domain_entry_get_next",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-routing-domain-isolation-entry-get-next.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_routing_domain_isolation_entry_get_next",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-nic-at-array-index.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_nic_at_array_index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-port-at-array-index.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_port_at_array_index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-port-property-custom-get-buffer.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_port_property_custom_get_buffer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-port-property-enum-info-get-next.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_port_property_enum_info_get_next",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-port-property-enum-info-get-property.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_port_property_enum_info_get_property",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-port-property-enum-parameters-get-first-info.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_port_property_enum_parameters_get_first_info",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-port-property-parameters-get-property.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_port_property_parameters_get_property",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-port-property-routing-domain-get-first-isolation-entry.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_port_property_routing_domain_get_first_isolation_entry",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-property-custom-get-buffer.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_property_custom_get_buffer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-property-enum-info-get-next.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_property_enum_info_get_next",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-property-enum-info-get-property.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_property_enum_info_get_property",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-property-enum-parameters-get-first-info.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_property_enum_parameters_get_first_info",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-property-parameters-get-property.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/nf-ntddndis-ndis_switch_property_parameters_get_property",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-switch-port-destination-at-array-index.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndis_switch_port_destination_at_array_index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-declare-switch-net-buffer-list-context-type.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndis_declare_switch_net_buffer_list_context_type",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-structure-macros.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-list-structure-macros.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/net-buffer-list-flags-macros.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-net-buffer-send-and-receive-macros.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-interrupt-and-synchronization-macros.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/header-data-split-macros.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/receive-side-scaling-macros.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/sr-iov-macros.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/hyper-v-extensible-switch-macros.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/vmq-macros.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis",
+      "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/dashboard/extension-inf-files.md",

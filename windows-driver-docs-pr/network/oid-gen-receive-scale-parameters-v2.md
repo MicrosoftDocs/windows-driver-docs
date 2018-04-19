@@ -10,9 +10,11 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
+[!include[RSSv2 Beta Prerelease](../rssv2-beta-prerelease.md)]
+
 # OID_GEN_RECEIVE_SCALE_PARAMETERS_V2
 
-The OID_GEN_RECEIVE_SCALE_PARAMETERS_V2 OID is sent to RSSv2-capable miniport drivers to set run-time parameters, other than the indirection table, for a scaling entity. OID_GEN_RECEIVE_SCALE_PARAMETERS_V2 replaces the [OID_GEN_RECEIVE_SCALE_PARAMETERS](oid-gen-receive-scale-parameters.md) OID from RSSv1 and is not visible to NDIS Light Weight Filters (LWFs) before NDIS 6.80. This OID is a Regular OID and can be issued as a Query or Set request. It is issued at IRQL == PASSIVE_LEVEL. It can target a given VPort, when the *NDIS_OID_REQUEST_FLAGS_VPORT_ID_VALID* flag is set at NIC switch creation. Otherwise, it targets the physical NIC in the Native RSS case.
+The OID_GEN_RECEIVE_SCALE_PARAMETERS_V2 OID is sent to [RSSv2](receive-side-scaling-version-2-rssv2-.md)-capable miniport drivers to set run-time parameters, other than the indirection table, for a scaling entity. OID_GEN_RECEIVE_SCALE_PARAMETERS_V2 replaces the [OID_GEN_RECEIVE_SCALE_PARAMETERS](oid-gen-receive-scale-parameters.md) OID from RSSv1 and is not visible to NDIS Light Weight Filters (LWFs) before NDIS 6.80. This OID is a Regular OID and can be issued as a Query or Set request. It is issued at IRQL == PASSIVE_LEVEL. It can target a given VPort, when the *NDIS_OID_REQUEST_FLAGS_VPORT_ID_VALID* flag is set at NIC switch creation. Otherwise, it targets the physical NIC in the Native RSS case.
 
 As a Query, NDIS and overlying drivers can use OID_GEN_RECEIVE_SCALE_PARAMETERS_V2 to query the RSS parameters of a NIC. NDIS returns an [NDIS_RECEIVE_SCALE_PARAMETERS_V2](https://msdn.microsoft.com/library/windows/hardware/96EAB6EE-BF9A-46AD-8DED-5D9BD2B6F219) structure that defines the current RSS parameters.
 
@@ -39,6 +41,17 @@ The upper layer will ensure that important invariants are not violated before pe
 
 - Before changing the number of queues, the upper layer will ensure that the indirection table does not reference more processors than configured for a VPort.
 Before changing the number of indirection table entries for VMMQ-RESTRICTED adapters, the upper layer will ensure that the content of the indirection table is normalized to the power of 2.
+
+### Error conditions and status codes
+
+This OID returns the following status codes when an error occurs:
+
+| Status code | Error condition |
+| --- | --- |
+| NDIS_STATUS_INVALID_LENGTH | The OID was malformed. |
+| NDIS_STATUS_NO_QUEUES | The number of queues is being changed when RSS is enabled, but the current indirection table references more processors than the new number of queues. |
+| NDIS_STATUS_INVALID_DATA | <ul><li>The indirection table is being reduced in size, but does not contain a power-of-two repeat pattern.</li><li>During an RSS state transition (to *on* or *off*), a processor from a steering parameter that becomes *active* does not belong to the adapter's RSS processor set. Note that *inactive* steering parameters are only tracking writes to the processor and are not enforced. Enforcement happens during RSS state transition when the parameter becomes *active*.</li></ul> |
+| NDIS_STATUS_INVALID_PARAMETER | Other fields, either in the header or the OID itself, contain invalid values. |
 
 ## Requirements
 
