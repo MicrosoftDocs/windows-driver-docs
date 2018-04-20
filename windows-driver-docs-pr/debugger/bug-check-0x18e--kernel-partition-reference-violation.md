@@ -3,14 +3,14 @@ title: Bug Check 0x18E KERNEL_PARTITION_REFERENCE_VIOLATION
 description: The KERNEL_PARTITION_REFERENCE_VIOLATION bug check has a value of 0x0000018E.
 keywords: ["Bug Check 0x18E KERNEL_PARTITION_REFERENCE_VIOLATION",  "KERNEL_PARTITION_REFERENCE_VIOLATION"]
 ms.author: domars
-ms.date: 04/18/2018
+ms.date: 04/19/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
-- PROFILER_CONFIGURATION_ILLEGAL
+- KERNEL_PARTITION_REFERENCE_VIOLATION
 api_type:
 - NA
 ---
@@ -26,15 +26,14 @@ This error indicates that a partition was improperly dereferenced. This normally
 
 ## PROFILER\_CONFIGURATION\_ILLEGAL Parameters
 
-Arguments:
+The following parameters are displayed on the blue screen.
 
-Arg1: 0000000000000000, A partition with a non-zero hard reference count is being deleted.
-
-Arg2: 0000000000000000, Pointer to the partition.
-
-Arg3: 0000000000000000, Number of outstanding hard references.
-
-Arg4: 0000000000000000, Reserved.
+Parameter | Description 
+|---------|--------------|
+1 | A partition with a non-zero hard reference count is being deleted.
+2 |  Pointer to the partition.
+3 |  Number of outstanding hard references.
+4 |  Reserved.
  
 
  

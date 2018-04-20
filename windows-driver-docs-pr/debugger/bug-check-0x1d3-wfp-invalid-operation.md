@@ -1,0 +1,41 @@
+---
+title: Bug Check 0x1D3 WFP_INVALID_OPERATION 
+description: The WFP_INVALID_OPERATION  bug check has a value of 0x000001D3.
+keywords: ["Bug Check 0x1D3 WFP_INVALID_OPERATION",  "WFP_INVALID_OPERATION"]
+ms.author: domars
+ms.date: 04/19/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+topic_type:
+- apiref
+api_name:
+- WFP_INVALID_OPERATION 
+api_type:
+- NA
+---
+
+# Bug Check Bug Check 0x1D3: WFP_INVALID_OPERATION 
+
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
+The WFP_INVALID_OPERATION bug check has a value of 0x000001D3. 
+
+A Windows Filtering Platform callout performed an invalid operation.
+
+## WFP\_INVALID\_OPERATION Parameters
+
+Parameter | Description 
+|---------|--------------|
+1 | The subtype of the bugcheck.
+2 | Reserved
+3 | Reserved
+4 | Reserved
+
+ 
+
+ 
+
+
+
+
