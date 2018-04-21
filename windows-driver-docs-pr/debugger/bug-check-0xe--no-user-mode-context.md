@@ -21,14 +21,6 @@ api_type:
 
 The NO\_USER\_MODE\_CONTEXT bug check has a value of 0x0000000E.
 
-This bug check appears very infrequently.
+This bug check appears very infrequently. This occurs during the initialization of a user thread in kernel-mode. When the previous mode is user-mode and the thread's user context flag is zero, which means it's a system thread, the **NO_USER_MODE_CONTEXT** bug check occurs. When the user context flag is nonzero, this bug check does not occur.
 
 **Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
-
- 
-
- 
-
-
-
-
