@@ -29,7 +29,7 @@ Open your existing NDIS miniport driver project in Visual Studio and use the fol
 3. Remove NDIS preprocessor macros, like `NDIS650_MINIPORT=1`.
 4. Add the following headers to every source file (or to your common/precompiled header):
   
-  ```cpp
+  ```C++
   #include <ntddk.h>
   #include <wdf.h>
   #include <netadaptercx.h>
@@ -65,7 +65,7 @@ Open your existing NDIS miniport driver project in Visual Studio and use the fol
 
 Remove the call to [**NdisMRegisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563654) from [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff540807), and add the following:
 
-```cpp
+```C++
 WDF_DRIVER_CONFIG_INIT(&config, EvtDriverDeviceAdd);
 status = WdfDriverCreate(. . . );
 if (!NT_SUCCESS(status)) {
@@ -83,13 +83,13 @@ Next, you'll distribute code from *MiniportInitializeEx* into the appropriate WD
 
 For info on the callbacks you'll need to provide, see [Device initialization](device-initialization.md).
  
-[*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md) is where the client calls the methods equivalent to [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672). However, instead of calling one routine with a generic [**NDIS_MINIPORT_ADAPTER_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565920) structure, the client driver calls different functions to set different types of capabilities. For more info, see the Remarks section of [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md).
+[*EVT_NET_ADAPTER_SET_CAPABILITIES*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities) is where the client calls the methods equivalent to [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672). However, instead of calling one routine with a generic [**NDIS_MINIPORT_ADAPTER_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565920) structure, the client driver calls different functions to set different types of capabilities. For more info, see the Remarks section of [*EVT_NET_ADAPTER_SET_CAPABILITIES*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities).
 
 ## Creating queues to manage control requests
 
 Next, still in [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693), set up the object identifier (OID) path. The OID path is modeled like a WDF queue, but you'll be getting OIDs instead of WDFREQUESTs.
 
-There are two high level approaches you might take when porting this. The first option is to register a [*EVT_NET_REQUEST_DEFAULT*](evt-net-request-default.md) handler that receives OID requests in a very similar way to how a miniport driver receives requests from NDIS. This is the easiest port, since you'll likely just need to adjust a function signature from your old MINIPORT_OID_REQUEST handler.
+There are two high level approaches you might take when porting this. The first option is to register a [*EVT_NET_REQUEST_DEFAULT*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/nc-netrequestqueue-evt_net_request_default) handler that receives OID requests in a very similar way to how a miniport driver receives requests from NDIS. This is the easiest port, since you'll likely just need to adjust a function signature from your old MINIPORT_OID_REQUEST handler.
 
 The other option is to break apart your OID handler's switch statement and provide a separate handler for each individual OID. You might choose this option if your device requires OID-specific functionality.
 
@@ -153,12 +153,12 @@ The data path programming model has changed significantly. Here are some key dif
 
 * In the NetAdapter model, network traffic is no longer per adapter, as in NDIS, but rather per WDF queue. See [Creating I/O Queues](../wdf/creating-i-o-queues.md).
 * Instead of NET_BUFFER_LIST and NET_BUFFER pools, NetAdapterCx introduces a ring buffer that is comprised of net packets, which map to NDIS as follows:
-  * A [**NET_PACKET**](net-packet.md) is similar to a NET_BUFFER_LIST + NET_BUFFER.
-  * A [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) is similar to a memory descriptor list (MDL). Each [**NET_PACKET**](net-packet.md) has one or more of these.
+  * A [**NET_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet) is similar to a NET_BUFFER_LIST + NET_BUFFER.
+  * A [**NET_PACKET_FRAGMENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet_fragment) is similar to a memory descriptor list (MDL). Each [**NET_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet) has one or more of these.
   * For details on the replacement structures and how to use them, see [Transferring network data](transferring-network-data.md).
 * In NDIS 6.x, the miniport needs to handle start and pause semantics. In the NetAdapterCx model, this is no longer the case.
-* The [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md) callback is similar to [**MINIPORT_RETURN_NET_BUFFER_LISTS**](https://msdn.microsoft.com/library/windows/hardware/ff559437) in NDIS 6.x.
-* The [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) callback is similar to [**MINIPORT_SEND_NET_BUFFER_LISTS**](https://msdn.microsoft.com/library/windows/hardware/ff559440) in NDIS 6.x.
+* The [*EVT_RXQUEUE_ADVANCE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrxqueue/nc-netrxqueue-evt_rxqueue_advance) callback is similar to [**MINIPORT_RETURN_NET_BUFFER_LISTS**](https://msdn.microsoft.com/library/windows/hardware/ff559437) in NDIS 6.x.
+* The [*EVT_TXQUEUE_ADVANCE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nettxqueue/nc-nettxqueue-evt_txqueue_advance) callback is similar to [**MINIPORT_SEND_NET_BUFFER_LISTS**](https://msdn.microsoft.com/library/windows/hardware/ff559440) in NDIS 6.x.
 
 ## Device removal
 
@@ -176,9 +176,9 @@ Most `NdisXxx` functions can be replaced with a WDF equivalent. In general, you 
 
 For a list of function equivalents, see [NDIS-WDF function equivalents](ndis-wdf-function-equivalents.md).
 
-For functions with no WDF equivalent, the client can call [**NetAdapterWdmGetNdisHandle**](netadapterwdmgetndishandle.md) to retrieve an NDIS_HANDLE for use with NDIS functions. For example:
+For functions with no WDF equivalent, the client can call [**NetAdapterWdmGetNdisHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterwdmgetndishandle) to retrieve an NDIS_HANDLE for use with NDIS functions. For example:
 
-```c++
+```C++
 NdisGetRssProcessorInformation(NetAdapterWdmGetNdisHandle(NetAdapter), . . .);
 ```
 
