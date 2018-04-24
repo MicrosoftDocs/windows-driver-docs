@@ -39,6 +39,7 @@ Here are the values you might see for **Target Platform**, and what they mean:
 <p>A Universal Windows driver runs on the following Universal Windows Platform (UWP)-based editions of Windows 10:</p>
 <ul>
 <li>Windows 10 for desktop editions (Home, Pro, and Enterprise)</li>
+<li>Windows 10 in S-Mode</li>
 <li>Windows 10 Mobile</li>
 <li>Windows 10 IoT Core</li>
 <li>Windows Server 2016</li>

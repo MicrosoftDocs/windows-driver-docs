@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # Application
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The Application element specifies the name of the application software that created the device metadata package.
 

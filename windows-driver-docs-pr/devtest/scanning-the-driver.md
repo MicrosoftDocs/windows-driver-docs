@@ -23,7 +23,7 @@ Scanning the driver using the **/scan** command option is optional. If you do no
 
 During this scan, SDV tries to detect the driver entry points that it needs to verify the driver. It records the results of the scan in Sdv-map.h, a file that it creates in the driver's sources directory.
 
-However, it is very important that you review this file, either after the scan step or after the verification, to ensure that SDV has detected the correct entry points. If the entry points are missing or wrong, the verification might not be reliable. More importantly, if SDV cannot detect any entry points, it cannot verify the driver. For more information, see [No Entry Points Found](no-entry-points-found.md).
+However, it is very important that you review this file, either after the scan step or after the verification, to ensure that SDV has detected the correct entry points. If the entry points are missing or wrong, the verification might not be reliable. More importantly, if SDV cannot detect any entry points, it cannot verify the driver. 
 
 You only have to scan once for each driver. Thereafter, SDV retains the Sdv-map.h file for the driver for future verifications.
 

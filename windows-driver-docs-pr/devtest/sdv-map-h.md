@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Sdv-map.h is a header file that lists the driver entry points that SDV detected in the driver.
 
-SDV creates an Sdv-map.h file in the driver's sources directory when you use a **staticdv /scan** command to scan the driver's source code. SDV uses the function role type declarations to identify the entry points. If you do not use a **staticdv /scan** command, SDV creates an Sdv-map.h file when you use a **staticdv /rule** or **staticdv /config** command to run an SDV analysis.
+SDV creates an Sdv-map.h file in the driver's sources directory when you use a **staticdv /scan** command to scan the driver's source code. SDV uses the function role type declarations to identify the entry points. If you do not use a **staticdv /scan** command, SDV creates an Sdv-map.h file when you use a **staticdv /check** command to run an SDV analysis.
 
 If this file is inaccurate or incomplete, you can correct it, approve it, and then rescan and rerun the verification.
 
@@ -33,6 +33,8 @@ This section includes:
 [Sdv-map.h Format](format-of-the-sdv-map-h-file.md)
 
 [Approving Sdv-map.h](approving-the-sdv-map-h-file.md)
+
+[Duplicate Entry Points for a Function Role Type](duplicate-entry-points-for-a-function-role-type.md)
 
  
 

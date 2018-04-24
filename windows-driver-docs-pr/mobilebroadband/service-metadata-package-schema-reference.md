@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # Service metadata package schema reference
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 This section describes the XML schemas that are used to specify a service metadata package:
 

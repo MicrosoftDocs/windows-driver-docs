@@ -31,7 +31,7 @@ Cross-signed drivers are still permitted if any of the following are true:
 
 * The PC was upgraded from an earlier release of Windows to Windows 10, version 1607.
 * Secure Boot is off.
-* Driver was signed with cross-signing certificate issued prior to July 29th 2015.
+* Driver was signed with an end-entity certificate issued prior to July 29th 2015 that chains to a supported cross-signed CA.
 
 For more info, see [Driver Signing Changes in Windows 10, version 1607](https://blogs.msdn.microsoft.com/windows_hardware_certification/2016/07/26/driver-signing-changes-in-windows-10-version-1607/).
 
