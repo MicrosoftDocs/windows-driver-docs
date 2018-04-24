@@ -22,7 +22,7 @@ Starting in Windows 10, version 1809, the Windows Driver Kit (WDK) includes a Mo
 An MBB-NetAdapter client driver performs 3 categories of tasks based on its relationships with the framework:
 
 - Call [standard WDF APIs](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_wdf/) for common device tasks like Pnp and Power management.
-- Call [NetAdapterCx APIs](netadaptercx-api-reference.md) for common network device operations like transmitting or receiving network packets.
+- Call [NetAdapterCx APIs](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/) for common network device operations like transmitting or receiving network packets.
 - Call [MbbCx APIs](mbbcx-api-reference.md) for MBB-specific control path operations like MBIM message handling.
 
 Before you begin, you should familiarize yourself with these concepts:
