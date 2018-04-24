@@ -17,6 +17,7 @@ This section describes the general limitations of the SDV tool, some technical l
 This section includes:
 
 [Determining if Static Driver Verifier supports your driver or library](determining-if-static-driver-verifier-supports-your-driver-or-library.md)
+
 [Static Driver Verifier General Tool and Technical Limitations](static-driver-verifier-general-tool-and-technical-limitations.md)
 
 [Using the \_analysis\_assume Function to Suppress False Defects](using-the--analysis-assume-function-to-suppress-false-defects.md)

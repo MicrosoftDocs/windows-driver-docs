@@ -111,6 +111,7 @@
 ##### [Swizzling Range Class](swizzling-range-class.md)
 ##### [Overlay Class](overlay-class.md)
 ##### [Child I/O Class](child-i-o-class.md)
+##### [Display Class](display-class.md)
 #### [Threading and Synchronization Zero Level](threading-and-synchronization-zero-level.md)
 #### [Thread Synchronization and TDR](thread-synchronization-and-tdr.md)
 ### [Threading Model of User-Mode Display Driver](threading-model-of-user-mode-display-driver.md)
