@@ -105,7 +105,7 @@ To implement a hardware keyword spotter (HW KWS) SoC vendors must complete the f
 -   Effects for Speech processing mode must be reported by the MFX APO.
 -	The APO may perform format conversion as MFX.   
 -	The APO must output the following format: 
-    -	16 kHz, 16-bit, mono, FLOAT.
+    -	16 kHz, mono, FLOAT.
 -   Optionally design any custom APOs to enhance the audio capture process. For more information, see [Windows Audio Processing Objects](windows-audio-processing-objects.md).
 
 Hardware-offloaded keyword spotter (HW KWS) WoV Requirements
