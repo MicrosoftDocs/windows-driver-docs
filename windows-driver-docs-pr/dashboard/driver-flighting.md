@@ -74,7 +74,7 @@ After promoting your driver for shipping, Microsoft will evaluate your driver fo
 
 A driver can be rejected for several reasons. Most commonly, rejection is caused by improper driver targeting. These include:
 * targeting previous versions of Windows while also targeting Windows 10
-* not including one or more Computer Hardware IDs (CHIDs) in your shipping label
+* The device class you targeted may have specific CHID targeting requirements that you failed to properly follow.  Some device classes require CHID like Firmware and other classes forbid the use of CHID like Display.  Be sure you have entered your information correctly.
 * using hardware IDs that unintentionally targets other OEMs.
 
 ## Related topics
