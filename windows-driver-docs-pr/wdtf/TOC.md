@@ -9,6 +9,7 @@
 #### [Sample WDTF Scenarios](sample-wdtf-scenarios.md)
 ### [Controlling Targets](controlling-targets.md)
 ### [WDTF Quick Start](wdtf-quick-start-.md)
+### [Action interfaces](action-interfaces.md)
 ## [Triaging WDTF-based tests](triaging-wdtf-based-tests.md)
 ### [WDTF Object Logging](logging-and-tracing.md)
 #### [WDTF Object Name tags](wdtf-object-name-tags.md)
