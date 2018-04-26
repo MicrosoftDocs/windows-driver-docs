@@ -52,6 +52,17 @@ This version includes these updates.
 - Start-up performance improvements
 - Additional bug fixes
 
+## 1.0.1804.18003
+
+This version includes these updates.
+
+- Symbol status and cancellation improvements
+- Experimental notes window
+- Experimental faster source window
+- JSProvider API version 1.2
+- Minor changes and bug fixes
+
+
 ---
  
 ## See Also
