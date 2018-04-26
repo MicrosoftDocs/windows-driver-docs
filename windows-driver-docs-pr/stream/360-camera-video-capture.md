@@ -10,11 +10,11 @@ ms.technology: windows-devices
 
 # 360 camera video capture
 
-Windows 10, version 1803 provides support for 360 camera preview, capture, and record with existing MediaCapture APIs. This feature enables the platform to expose spherical frame sources (for example, equirectangular frames ), enabling apps to detect and handle 360 video camera streams as well as to provide a 360 capture experience.
+Windows 10, version 1803 provides support for 360 camera preview, capture, and record with existing MediaCapture APIs. This enables the platform to expose spherical frame sources (for example, equirectangular frames ), enabling apps to detect and handle 360 video camera streams as well as to provide a 360 capture experience.
 
 ## Overview
 
-An IHV can provide DMFT plugins (with or without custom UVC drivers) which will expose the spherical format of each stream and media type that emits spherical frames, as well as process the camera driver output and provide equirectangular frames with appropriate attribute and metadata.
+A 360 camera IHV can provide DMFT plugins (with or without custom UVC drivers) which will expose the spherical format of each stream and media type that emits spherical frames, as well as process the camera driver output and provide equirectangular frames with appropriate attribute and metadata.
 
 Most 360 cameras come with 2 sensors back-to-back and cover a 360 FoV with some overlap. An IHV would typically be capturing synchronously with the two fisheye sensors, unwarp and stitch the frames inside the DMFT to then output equirectangular frames.
 
@@ -28,16 +28,9 @@ These equirectangular frames can then be acquired and consumed by the apps via M
 
 -   For 360 photo capture, an application needs to explicitly add the appropriate standardized metadata that specifies its spherical format using available [WIC WinRT APIs](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/image-metadata).
 
-It is up to the IHV to implement a stream with a projected view and expose Pan/Tilt/Zoom controls.
+It is up to the 360 camera IHV to implement a stream with a projected view and expose Pan/Tilt/Zoom controls.
 
 The application may implement and insert an effect to generate a projection. The effect can leverage the attributes on the mediatype to identify equirectangular frames.
-
-
-## Packaging
-
-The IHVs will provide DMFT plugins with or without custom UVC driver.
-
-This package should be able to pass the basic HLK for UVC cameras.
 
 
 ## Architecture
@@ -47,13 +40,13 @@ The following diagram illustrates the relationship of the DMFT to the 360 camera
 
 ![360 camera stack](images/360-camera-stack.png)
 
-Camera IHVs will publish a DMFT that will expose 360 video streams providing spherical frames of a defined format. The DMFT can be installed and associated with the particular camera via the use of INF file for driver extension as described in the example .INF below.
+360 camera IHVs will publish a DMFT that will expose 360 video streams providing spherical frames of a defined format. The DMFT can be installed and associated with the particular camera via the use of INF file for driver extension as described in the example .INF below.
 
 The stitching and conversion to equirectangular frames can take place in the camera hardware or inside the DMFT. It may be preferable to leverage the DMFT for this purpose, as it will allow use of hardware resources like GPU for efficient processing. The DMFT will also populate the following stream and media type properties (as shown in the table below) to identify them as 360 content streams.
 
 Even if the IHV decides to have the stiching done in the camera hardware, a DMFT is still a mandatory requirement to populate the stream and media type attribute properties for 360 video.
 
-The following table shows the required stream atribute to indentify a spherical frame source:
+The following table shows the required stream attribute to identify a spherical frame source:
 
 <table>
 <thead>
