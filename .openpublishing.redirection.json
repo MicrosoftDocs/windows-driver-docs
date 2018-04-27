@@ -1244,6 +1244,21 @@
       "source_path": "windows-driver-docs-pr/dashboard/extension-inf-files.md",
       "redirect_URL": "/windows-hardware/drivers/dashboard/submit-dashboard-extension-inf-files",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/app-certification-submissions.md",
+      "redirect_URL": "https://blogs.msdn.microsoft.com/windows_hardware_certification/2018/04/19/win32-logo-certification-deprecation/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/certify-a-new-app.md",
+      "redirect_URL": "https://blogs.msdn.microsoft.com/windows_hardware_certification/2018/04/19/win32-logo-certification-deprecation/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/manage-app-certifications.md",
+      "redirect_URL": "https://blogs.msdn.microsoft.com/windows_hardware_certification/2018/04/19/win32-logo-certification-deprecation/",
+      "redirect_document_id": true
     }
   ]
 }
