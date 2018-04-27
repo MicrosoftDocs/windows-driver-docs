@@ -287,7 +287,7 @@ FilterSample.ServiceDesc = "Sample Upper Filter"
 
 ##  Submitting an extension INF for certification
 
-For detailed information on how to work with Extension INFs on Hardware Dev Center please see [Working with Extension INFs in the Windows Hardware Dev Center Dashboard](../dashboard/submit-dashboard-extension-inf-files.md)
+For detailed information on how to work with Extension INFs on the Hardware Dev Center, please see [Working with Extension INFs in the Windows Hardware Dev Center Dashboard](../dashboard/submit-dashboard-extension-inf-files.md).
 
 ## Related topics
 
