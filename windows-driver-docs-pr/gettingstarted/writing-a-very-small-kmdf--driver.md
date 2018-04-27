@@ -5,7 +5,7 @@ ms.assetid: B4200732-67B5-4BD9-8852-81387912A9A4
 keywords:
 - KMDF Hello World
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 04/20/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
