@@ -269,8 +269,8 @@ Windows 10, version 1803 supports Bluetooth version 5.0. For information about p
 
 Updates to Camera driver development include:
 
-* [DShow (DirectShow) Bridge implementation guidance for UVC devices](https://docs.microsoft.com/en-us/windows-hardware/drivers/stream/dshow-bridge-implementation-guidance-for-usb-video-class-devices)
-* 360 camera video capture
+* [DShow (DirectShow) Bridge implementation guidance for UVC devices](https://docs.microsoft.com/en-us/windows-hardware/drivers/stream/dshow-bridge-implementation-guidance-for-usb-video-class-devices) - Implementation guidance for configuring DShow Bridge for cameras and devices that comply with the USB Video Class (UVC) specification. The platform uses Microsoft OS Descriptors from the USB bus standard to configure DShow Bridge. The Extended Properties OS Descriptors are an extension of USB standard descriptors and are used by USB devices to return Windows specific device properties that are not enabled through standard specifications. 
+* [360 camera video capture](https://docs.microsoft.com/en-us/windows-hardware/drivers/stream/360-camera-video-capture) - Provides support for 360 camera preview, capture, and record with existing MediaCapture APIs. This enables the platform to expose spherical frame sources (for example, equirectangular frames ), enabling apps to detect and handle 360 video camera streams as well as to provide a 360 capture experience. 
 
 ### <a href="" id="display-1803"></a>Display
 
