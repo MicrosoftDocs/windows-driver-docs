@@ -17,6 +17,8 @@ Debugging Tools for Windows supports kernel debugging of a virtual machine. The 
 
 As an alternative to setting up debugging of a virtual machine manually, you can do the setup using Microsoft Visual Studio. For more information, see [Setting Up Kernel-Mode Debugging of a Virtual Machine in Visual Studio](setting-up-a-connection-to-a-virtual-machine-in-visual-studio.md).
 
+If the target virtual machine is running Windows 8 or later, you should set up kernel-mode debugging over virtual network, which has a much better performance. See [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md) for detailed steps. Don't use the method in this article unless the target is running Windows 7 or earlier, or your virtual network adapter is unsupported.
+
 The computer that runs the debugger is called the *host computer*, and the virtual machine being debugged is called the *target virtual machine*.
 
 ## <span id="Setting_Up_the_Target_Virtual_Machine"></span><span id="setting_up_the_target_virtual_machine"></span><span id="SETTING_UP_THE_TARGET_VIRTUAL_MACHINE"></span>Setting Up the Target Virtual Machine
