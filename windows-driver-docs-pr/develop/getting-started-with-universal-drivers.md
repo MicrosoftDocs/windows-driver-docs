@@ -3,7 +3,7 @@ ms.assetid: E109BD80-F9CB-4F1F-A6FD-1142E27EC6AD
 title: Getting Started with Universal Windows drivers
 description: Universal Windows drivers allow you to create one driver that runs on multiple device types, from embedded systems to tablets and PCs.
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 04/20/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -32,7 +32,7 @@ Universal drivers are distributed through Windows Update, and hardware support a
 When you write a universal driver package, there are four design principles to consider:
 
 * Declarative **("D")**: Install the driver using only declarative INF directives and do not include any co-installers, RegisterDlls, etc.
-* Componentized **("C")**: Optional customizations to the driver are separate from the base driver package, so that the base driver can be flighted and serviced independently from the customizations.
+* Componentized **("C")**: Edition-specific, OEM-specific and optional customizations to the driver are separate from the base driver package, so that the base driver, which provides only core device functionality, can be targeted, flighted and serviced independently from the customizations.
 * Hardware Support Apps **("H")**: Any user interface (UI) component associated with a universal driver must be packaged as a Hardware Support App (HSA) or preinstalled on the OEM device.  An HSA is an optional device-specific app that is paired with a driver.  The application can be a [Universal Windows Platform (UWP)](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide) or a [Desktop Bridge](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) app.  You must distribute and update an HSA through the Microsoft Store.  For details, see [Hardware Support App (HSA): Steps for Driver Developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md) and [Hardware Support App (HSA): Steps for App Developers](../devapps/hardware-support-app--hsa--steps-for-app-developers.md).
 * Universal API compliance **("U")**: Binaries in the universal driver package only call APIs and DDIs that are included in UWP-based editions of Windows 10. These DDIs are marked as **Universal** on the corresponding documentation reference pages. INF files use only universal INF syntax.
 
