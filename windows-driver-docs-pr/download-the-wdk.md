@@ -19,7 +19,7 @@ ms.technology: windows-devices
 The WDK is used to develop, test, and deploy Windows drivers. The latest public version of WDK is available below. Join the Windows Insider Program to get [WDK Insider Preview builds](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK). 
 
 * [Learn what's new in driver development](what-s-new-in-driver-development.md) 
-<!--* [Review known issues](https://go.microsoft.com/fwlink/?linkid=872986)-->
+* [Review known issues](https://go.microsoft.com/fwlink/?linkid=872986)
 
 ## WDK for Windows 10, version 1803
 
