@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Adding Boot Entries
 
 
-## <a name= ddk_adding_boot_entries_tools></a>
+<a name= ddk_adding_boot_entries_tools></a>
 
 The first step in customizing boot options in operating systems is to add a new *boot entry* for an operating system. A *boot entry* is a set of options that define a load configuration for an operating system or bootable program.
 
