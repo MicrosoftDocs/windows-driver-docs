@@ -62,11 +62,11 @@ The following diagram illustrates MBBCx-client driver message exchange flow.
 
 ![Mbim Message Exchange](images/mbim.png)
 
-### Synchronization of MBIM control message
+### Synchronization of MBIM control messages
 
 The MBBCx framework always serializes calls into the client driver's *EvtMbbDeviceSendMbimFragment* and *EvtMbbDeviceReceiveMbimFragment* callback functions. No new calls will be made by the framework until the client driver calls either **MbbRequestComplete** or **MbbRequestCompleteWithInformation**.
 
-While a client driver is guaranteed not to receive overlapped *EvtMbbDeviceSendMbimFragmen** or *EvtMbbDeviceReceiveMbimFragment* callbacks, it may receive multiple calls to them in succession before the response for a previous command is available from the device.
+While a client driver is guaranteed not to receive overlapped *EvtMbbDeviceSendMbimFragment* or *EvtMbbDeviceReceiveMbimFragment* callbacks, it may receive multiple calls to them in succession before the response for a previous command is available from the device.
 
 If the device is not in the *D0* state, the MBBCx framework will first bring the device to D0 (in other words, it calls calls [*EvtDeviceD0Entry*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry)) before it calls *EvtMbbDeviceSendMbimFragment* or *EvtMbbDeviceReceiveMbimFragment*. The MBBCx framework also guarantees that it will keep the device in the D0 state, meaning it will not call [*EvtDeviceD0Exit*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_exit), until the client calls **MbbRequestComplete** or **MbbRequestCompleteWithInformation**.
 
