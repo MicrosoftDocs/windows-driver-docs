@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # ServiceSpecificExtension
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The ServiceSpecificExtension element specifies the relative location of the MobileBroadbandInfo.xml file.
 

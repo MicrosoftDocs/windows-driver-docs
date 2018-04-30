@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # Purchase
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The Purchase element specifies the purchase mobile broadband profile file to use.
 

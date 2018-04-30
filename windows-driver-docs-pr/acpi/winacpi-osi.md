@@ -16,6 +16,7 @@ This topic describes how to use the \_OSI method in Advanced Configuration and P
 
 This information applies to the following operating systems:
 
+- Windows 10, version 1803
 - Windows 10, version 1709
 - Windows 10, version 1703
 - Windows 10, version 1607
@@ -98,6 +99,7 @@ Windows operating systems return 0xFFFFFFFF if the argument to the \_OSI method 
 | Windows 2016        | Windows 10, version 1607      |
 | Windows 2017        | Windows 10, version 1703      |
 | Windows 2017.2      | Windows 10, version 1709      |
+| Windows 2018        | Windows 10, version 1803      |
 
 
 ### Implementation Note

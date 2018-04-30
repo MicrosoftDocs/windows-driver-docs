@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # ServiceName
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The ServiceName element is not currently used.
 
