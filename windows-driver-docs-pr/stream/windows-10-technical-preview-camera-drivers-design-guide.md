@@ -17,16 +17,16 @@ The camera driver interface for Windows 10 is converged for all devices and use
 
 The universal camera driver model also contains new DDIs, including:
 
-* [Digital video stabilization](https://msdn.microsoft.com/library/windows/hardware/dn936754)
-* [Variable frame rate](https://msdn.microsoft.com/library/windows/hardware/dn917971)
-* [Face detection](https://msdn.microsoft.com/library/windows/hardware/dn917937)
-* [Video high dynamic range (HDR)](https://msdn.microsoft.com/library/windows/hardware/dn936752)
-* [Optical stabilization](https://msdn.microsoft.com/library/windows/hardware/dn917954)
-* [Scene analysis: photo HDR, flash no flash, ultra low light](https://msdn.microsoft.com/library/windows/hardware/dn917934)
-* [Capture stats: metadata framework/attributes, histograms](https://msdn.microsoft.com/library/windows/hardware/dn917945)
-* [Smooth zoom](https://msdn.microsoft.com/library/windows/hardware/dn936756)
-* [Hardware optimization hints](https://msdn.microsoft.com/library/windows/hardware/dn917956)
-* [Camera profiles](camera-driver-functions.md)
+* [Digital video stabilization](ksproperty-cameracontrol-extended-videostabilization.md)
+* [Variable frame rate](ksproperty-cameracontrol-extended-vfr.md)
+* [Face detection](ksproperty-cameracontrol-extended-facedetection.md)
+* [Video high dynamic range (HDR)](ksproperty-cameracontrol-extended-videohdr.md)
+* [Optical stabilization](ksproperty-cameracontrol-extended-ois.md)
+* [Scene analysis: photo HDR, flash no flash, ultra low light](ksproperty-cameracontrol-extended-advancedphoto.md)
+* [Capture stats: metadata framework/attributes, histograms](ksproperty-cameracontrol-extended-histogram.md)
+* [Smooth zoom](ksproperty-cameracontrol-extended-zoom.md)
+* [Hardware optimization hints](ksproperty-cameracontrol-extended-optimizationhint.md)
+* [Camera profiles](ksproperty-cameracontrol-extended-profile.md)
 
 ## Build a universal camera driver
 
@@ -41,7 +41,6 @@ For more information, see the following sections in the [Universal camera driver
 
 For more information about building AVStream minidrivers, see the following topics:
 
-* [Roadmap for Developing Streaming Minidrivers](https://msdn.microsoft.com/library/windows/hardware/ff568130)
 * [AVStream Overview](avstream-overview.md)
 * [Writing an AVStream Minidriver](writing-an-avstream-minidriver.md)
 

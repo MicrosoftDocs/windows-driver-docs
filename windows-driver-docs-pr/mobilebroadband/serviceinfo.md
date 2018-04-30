@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # ServiceInfo
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The ServiceInfo element is the parent element of the [ServiceInfo XML schema](serviceinfo-xml-schema.md).
 

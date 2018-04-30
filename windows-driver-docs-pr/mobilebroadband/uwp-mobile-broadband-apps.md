@@ -11,17 +11,15 @@ ms.technology: windows-devices
 
 # UWP mobile broadband apps
 
-
 The following sections are available in this topic:
 
--   [UWP apps](#wsa)
+- [UWP apps](#uwp-apps)
+- [UWP mobile broadband apps](#uwp-mobile-broadband-apps)
+- [UWP mobile broadband apps and MBAE apps](#uwp-mobile-broadband-apps-and-mbae)
 
--   [UWP mobile broadband apps](#mb)
+## UWP apps
 
-## <span id="wsa"></span><span id="WSA"></span>UWP apps
-
-
-UWP apps are full-screen apps that are tailored for the following:
+UWP apps are full-screen or windowed apps that are tailored for the following:
 
 -   Your users’ needs
 
@@ -35,15 +33,15 @@ UWP apps are optimized for touch, are aware of the user's location and identity,
 
 All UWP apps share the following features and benefits:
 
--   **Development platforms** UWP apps are built by using the Windows Software Development Kit for Windows 8 and the Windows Runtime APIs.
+-   **Development platforms** UWP apps are built by using the Windows Software Development Kit for Windows 10 and the Windows Runtime APIs.
 
 -   **Programming languages** You can build UWP apps by using JavaScript with an HTML and cascading style sheets (CSS) presentation layer, or by using C++ or C# with an Extensible Application Markup Language (XAML) presentation layer.
 
 -   **Touch optimization** Touch interaction support is built-in. You can design your mobile broadband app for touch, and Windows gives you keyboard, mouse, and graphical scaling support.
 
-For more info about UWP apps, see [Make great UWP apps](https://msdn.microsoft.com/library/windows/apps/hh464920).
+For more info about UWP apps, see [Getting started with Windows 10 apps](https://docs.microsoft.com/en-us/windows/uwp/get-started/).
 
-## <span id="mb"></span><span id="MB"></span>UWP mobile broadband apps
+## UWP mobile broadband apps
 
 
 A UWP mobile broadband app is a UWP app that is authored by mobile operators and is associated with a mobile broadband connection. In addition to the benefits of being a UWP app, this app has special access to privileged mobile broadband APIs.
@@ -58,16 +56,22 @@ A mobile broadband app provides the following benefits:
 
 This app does not provide connection management functionality, but instead provides account experience and branding for your service.
 
-**Important**  
-Your app must optimize for touch input and follow Windows 8 or Windows 8.1 UI design principles. For more info about how to design the user experience for mobile broadband apps, see [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md).
+> [!IMPORTANT]
+> Your app must optimize for touch input and follow Windows 10 UI design principles. For more info about how to design the user experience for mobile broadband apps, see [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md).
 
- 
+## UWP mobile broadband apps and MBAE
 
- 
+Mobile broadband app experience apps, or MBAE apps, are replaced in Windows 10, version 1803 and later by MO UWP apps. MO UWP apps are now part of COSA and don't require creating service metadata on the Windows Dev Center Hardware dashboard (Sysdev). Windows 8, Windows 8.1, and versions of Windows 10 before 1803 continue to use MBAE apps via service metadata published on Sysdev. 
 
- 
+In Windows 10, version 1803, MBAE apps work without having to migrate to COSA. However, we strongly recommend that mobile operators migrate to an MO UWP app and COSA. For details about COSA, see [COSA overview](cosa-overview.md). For more information about COSA settings, see [Desktop COSA/APN database settings](desktop-cosa-apn-database-settings.md).
 
+If the **AppID** setting is filled out in COSA, Windows will not check for a matching Sysdev metadata package to download your app. If **AppID** is not filled out, then Windows will check for a matching Sysdev metadata package to download your app.
 
+The following table provides information about the differences between MBAE and MO UWP apps.
 
+|   | Target platform | Delivery mechanism | Icon retrieval |
+| --- | --- | --- | --- |
+| MBAE | Windows 8, Windows 8.1, or Windows 10 | Sysdev metadata | Sysdev metadata or COSA if declared as part of the profile | 
+| MO UWP app | Windows 10 (preferably version 1803 and later with the same SDK version) | COSA database | COSA database |
 
-
+UI source code between MBAE and an MO UWP app might differ due to changes between Windows 8/Windows 8.1 and Windows 10 UI principles. Most business logic source code, however, should not require much change. For example, the code for accessing the back end and accessing mobile broadband information might be the same. However, MOs should validate each of the [Mobile broadband app scenarios](mobile-broadband-app-scenarios.md) accordingly.

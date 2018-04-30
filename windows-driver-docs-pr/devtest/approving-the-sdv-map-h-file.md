@@ -50,7 +50,7 @@ Unless SDV cannot find any entry points in the driver, it proceeds with its anal
 If SDV detects that there are wrong or non-existing function names in the Sdv-map.h file after the file has been approved, SDV exits and issues a warning message like the following example:
 
 ```
-Warning   &#39;driver&#39; It appears that your sdv-map.h file has an incorrect entry at this line "#define fun_IRP_MJ_PNP DispatchPnpNotExist". Please regenerate your sdv-map.h file.
+Warning 'driver' It appears that your sdv-map.h file has an incorrect entry at this line "#define fun_IRP_MJ_PNP DispatchPnpNotExist". Please regenerate your sdv-map.h file.
 ```
 
 To fix this error, delete the lines in the Sdv.map file that cause the error or regenerate the file.

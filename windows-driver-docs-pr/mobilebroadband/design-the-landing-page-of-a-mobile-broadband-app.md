@@ -60,7 +60,7 @@ You can provide links to other key pages on the landing page. For example, you c
 ## <span id="appnav"></span><span id="APPNAV"></span>App navigation
 
 
-When describing the landing page, it is important to consider navigation within the app. Your app will have multiple pages that have various purposes. Windows 8, Windows 8.1, and Windows 10 offer the following tools that can be used for navigation:
+When describing the landing page, it is important to consider navigation within the app. Your app will have multiple pages that have various purposes. Windows 10 offers the following tools that can be used for navigation:
 
 -   **Back button** The Back button can be used to return to the previous page in the app. For more information about the Back button styling, see [Quickstart: styling controls](https://msdn.microsoft.com/library/windows/apps/hh465498).
 

@@ -31,7 +31,7 @@ Cross-signed drivers are still permitted if any of the following are true:
 
 * The PC was upgraded from an earlier release of Windows to Windows 10, version 1607.
 * Secure Boot is off.
-* Driver was signed with cross-signing certificate issued prior to July 29th 2015.
+* Driver was signed with an end-entity certificate issued prior to July 29th 2015 that chains to a supported cross-signed CA.
 
 For more info, see [Driver Signing Changes in Windows 10, version 1607](https://blogs.msdn.microsoft.com/windows_hardware_certification/2016/07/26/driver-signing-changes-in-windows-10-version-1607/).
 
@@ -97,7 +97,6 @@ In addition to driver code signing, you also need to meet the PnP device install
 * [Installing an Unsigned Driver Package during Development and Test](installing-an-unsigned-driver-during-development-and-test.md)
 * [Signing Drivers for Public Release](signing-drivers-for-public-release--windows-vista-and-later-.md)
 * [Signing Drivers during Development and Test](signing-drivers-during-development-and-test.md)
-* [Digital Signatures for Kernel Modules on Windows](http://go.microsoft.com/fwlink/p/?linkid=184997)
 * [Troubleshooting Install and Load Problems with Signed Driver Packages](troubleshooting-install-and-load-problems-with-signed-driver-packages.md)
 
  

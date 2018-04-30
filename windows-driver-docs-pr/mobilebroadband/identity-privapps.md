@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # Identity (SoftwareInfo - priviliged applications)
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The Identity element specifies the publisher identity and application manifest name of the app.
 

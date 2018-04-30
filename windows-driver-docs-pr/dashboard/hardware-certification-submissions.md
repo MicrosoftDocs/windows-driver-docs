@@ -20,7 +20,8 @@ To test your device, download the [Windows Hardware Lab Kit (Windows HLK)](http:
 
 After you develop and test your product, you can submit the results with a hardware submission.
 
-**Note**  We strongly encourage you to include public driver symbols as part your HLK package. Including symbols will improve the data returned in your [driver reliability report](driver-failure-reporting.md) and are never shared externally.  See [Public Symbols and Private Symbols](../devtest/public-symbols-and-private-symbols.md) to learn how to create public symbols.  See [Step 8: Create a submission package](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/step-8-create-a-submission-package) to learn how to include symbols with your package.
+> [!NOTE]  
+> We strongly encourage you to include public driver symbols as part your HLK package. Including symbols will improve the data returned in your [driver reliability report](driver-failure-reporting.md) and are never shared externally.  See [Public Symbols and Private Symbols](../devtest/public-symbols-and-private-symbols.md) to learn how to create public symbols.  See [Step 8: Create a submission package](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/step-8-create-a-submission-package) to learn how to include symbols with your package. Note that any .pdb files in your submission will be removed before being published. 
 
  
 
@@ -169,7 +170,7 @@ This section displays certification information. Select **See more info** to exp
 </tbody>
 </table>
 
- 
+Submissions are automatically assigned Declaritive and Universal attributes based off the entire submission contents.  If you want a submission to be marked as `Declaritive=True` and/or `Universal=True`, all files and INFs within the submission must be compliant with the appropriate attribute(s).  For example, a merged HLK package can contain two driver sets for different OS certifiations. If one set is Declaritive and another set is not, the entire submission would be marked as `Declarative=False`. Each set should be seperated into two submissions to ensure they are marked appropriately. 
 
 If you want to add or update your announcement date, use the **Announcement date (UTC)** field and select **Submit**.
 

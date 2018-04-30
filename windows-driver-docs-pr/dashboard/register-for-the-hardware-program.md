@@ -43,7 +43,7 @@ There are five main steps to the Hardware Program registration.
 2.  Download signtool.exe
     -   signtool.exe is available as part of the [Windows SDK download](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk)
 
-3.  Sign and upload a file
+3.  Sign and upload the file provided to you within the **Sign and upload** portion of the registration process.
     > [!NOTE]
     > The following three steps no longer need to be completed within the same browser session.
     

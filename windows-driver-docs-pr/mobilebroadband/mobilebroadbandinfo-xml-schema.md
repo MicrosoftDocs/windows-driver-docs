@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # MobileBroadbandInfo XML schema
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 A service metadata package contains one MobileBroadbandInfo.xml document, which contains information that is specific to mobile broadband networks.
 

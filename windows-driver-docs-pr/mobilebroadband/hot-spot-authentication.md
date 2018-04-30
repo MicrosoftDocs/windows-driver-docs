@@ -12,9 +12,7 @@ ms.technology: windows-devices
 # Hot spot authentication
 
 
-You should offload data traffic to Wi-Fi hot spots whenever possible. Windows Connection Manager can automatically connect to Wi-Fi networks when they are available. To connect to Wi-Fi networks, you must provide hot-spot credentials to Windows. You can provide hot-spot credentials through account provisioning metadata, or you can use implement your own authentication in the app.
-
-For info about how you can enable hot-spot authentication by using your mobile broadband app, see [Using metadata to configure mobile broadband experiences](using-metadata-to-configure-mobile-broadband-experiences.md).
+You should offload data traffic to Wi-Fi hot spots whenever possible. Windows Connection Manager can automatically connect to Wi-Fi networks when they are available. To connect to Wi-Fi networks, you must provide hotspot credentials to Windows. You can provide hotspot credentials by implementing your own authentication in the app.
 
 ## <span id="related_topics"></span>Related topics
 
