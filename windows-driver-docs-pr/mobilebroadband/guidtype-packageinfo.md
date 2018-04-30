@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # GUIDType (PackageInfo)
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The GUIDType XML simple type specifies a GUID.
 

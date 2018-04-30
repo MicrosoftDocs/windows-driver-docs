@@ -25,6 +25,7 @@ This section contains WDI status notifications.
 -   [NDIS\_STATUS\_WDI\_INDICATION\_BSS\_ENTRY\_LIST](ndis-status-wdi-indication-bss-entry-list.md)
 -   [NDIS\_STATUS\_WDI\_INDICATION\_CAN\_SUSTAIN\_AP](ndis-status-wdi-indication-can-sustain-ap.md)
 -   [NDIS\_STATUS\_WDI\_INDICATION\_CHANGE\_OPERATION\_MODE\_COMPLETE](ndis-status-wdi-indication-change-operation-mode-complete.md)
+-   [NDIS_STATUS_WDI_INDICATION_CIPHER_KEY_UPDATED](ndis-status-wdi-indication-cipher-key-updated.md)
 -   [NDIS\_STATUS\_WDI\_INDICATION\_CLOSE\_COMPLETE](ndis-status-wdi-indication-close-complete.md)
 -   [NDIS\_STATUS\_WDI\_INDICATION\_CONNECT\_COMPLETE](ndis-status-wdi-indication-connect-complete.md)
 -   [NDIS\_STATUS\_WDI\_INDICATION\_CREATE\_PORT\_COMPLETE](ndis-status-wdi-indication-create-port-complete.md)

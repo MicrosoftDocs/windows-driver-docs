@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # SoftwareInfo XML Schema Definition
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The following is the namespace of the SoftwareInfo XML schema:
 

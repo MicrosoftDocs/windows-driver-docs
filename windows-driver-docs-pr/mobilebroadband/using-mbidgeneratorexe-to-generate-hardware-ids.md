@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # Using mbidgenerator.exe to generate hardware IDs
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 To generate hardware ID values for your service metadata package, you can use the MBIDGenerator.exe command-line tool, which is part of the SDK in Windows 8.1 and Windows 10.
 

@@ -36,7 +36,7 @@ You can use branding in the following places in your mobile broadband app:
 
     ![small tile](images/mb-fig2-start-screen-2x1-tile.png)
 
--   [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#setcharm) shows brand name
+-   [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#app-settings) shows brand name
 
 -   Uninstall user interface (UI) on the **Start** menu shows an icon and name
 
@@ -56,7 +56,7 @@ You can use branding in the following places in your mobile broadband app:
 
     ![windows connection manager](images/mb-fig5-wcm.png)
 
-For more info aboutWindows 8, Windows 8.1, and Windows 10 branding guidance, see [UWP app marketing guidelines](https://msdn.microsoft.com/library/windows/apps/hh694084).
+For more info about Windows 10 branding guidance, see [UWP app marketing guidelines](https://msdn.microsoft.com/library/windows/apps/hh694084).
 
 ## <span id="Quick_summary"></span><span id="quick_summary"></span><span id="QUICK_SUMMARY"></span>Quick summary
 
@@ -76,7 +76,7 @@ Inappropriate design for operator branding:
 
 -   [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#splash)
 
--   [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#setcharm)
+-   [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#app-settings)
 
 -   [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#tileandtoast)
 

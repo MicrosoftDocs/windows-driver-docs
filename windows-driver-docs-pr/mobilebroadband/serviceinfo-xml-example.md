@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # ServiceInfo XML Example
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The following XML document uses the [ServiceInfo XML schema](serviceinfo-xml-schema.md) to specify the attributes of the Contoso Wireless service:
 

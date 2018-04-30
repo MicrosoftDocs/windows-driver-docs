@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # TrustedCertificate (MobileBroadbandInfo)
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The TrustedCertificate element specifies the Subject Name and Issuer name of a trusted certificate.
 

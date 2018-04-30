@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # Application (SoftwareInfo)
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The Application element specifies the associated device notification handler.
 

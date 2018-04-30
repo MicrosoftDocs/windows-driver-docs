@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # IssuerName
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The IssuerName element specifies the Issuer Name of a trusted certificate.
 

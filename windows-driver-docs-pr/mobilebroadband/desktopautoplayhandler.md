@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # DesktopAutoplayHandler
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The DesktopAutoplayHandler element specifies a desktop app that should appear as the recommended AutoPlay action when the device is connected and no default action is set. The AutoPlay event is raised whenever a user plugs in a device.
 
