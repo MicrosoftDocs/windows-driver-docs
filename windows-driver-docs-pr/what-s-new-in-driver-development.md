@@ -329,26 +329,29 @@ This section outlines new features and improvements for Windows Networking drive
 
 Updates to NDIS include:
 
-* [Receive side scaling V2](https://docs.microsoft.com/windows-hardware/drivers/network/receive-side-scaling-version-2-rssv2-in-ndis-6-80) updated to version 1.0
-* New [Synchronous OID interface DDIs](https://docs.microsoft.com/windows-hardware/drivers/network/synchronous-oid-request-interface-in-ndis-6-80) to work with filter drivers
+* [Receive side scaling V2](https://docs.microsoft.com/windows-hardware/drivers/network/receive-side-scaling-version-2-rssv2-in-ndis-6-80) has been updated with further details about steering parameters
+* The [Synchronous OID interface](https://docs.microsoft.com/windows-hardware/drivers/network/synchronous-oid-request-interface-in-ndis-6-80) now supports NDIS light weight filter drivers
 
-The following topics are new:
+The following topics are new for the Network Adapter WDF class extension (NetAdapterCx):
 
 * [Introduction to NetAdapterCx 1.2](https://docs.microsoft.com/windows-hardware/drivers/netcx/introduction-to-netadaptercx-1-2)
 * [Packet descriptors and extensions](https://docs.microsoft.com/windows-hardware/drivers/netcx/packet-descriptors-and-extensions)
-	* Includes [multi-ring buffers](https://docs.microsoft.com/windows-hardware/drivers/netcx/packet-descriptors-and-extensions#storage-of-packet-descriptors)
-	* Includes [packet offloads](https://docs.microsoft.com/windows-hardware/drivers/netcx/packet-descriptors-and-extensions#predefined-packet-extension-constants-and-helper-methods) (part of extensions)
 * [Network data buffer management](https://docs.microsoft.com/windows-hardware/drivers/netcx/network-data-buffer-management)
-* [NetAdapterCx receive side scaling (preview)](https://docs.microsoft.com/windows-hardware/drivers/netcx/netadaptercx-receive-side-scaling-rss-)
+* [NetAdapterCx receive side scaling (RSS)](https://docs.microsoft.com/windows-hardware/drivers/netcx/netadaptercx-receive-side-scaling-rss-)
+
+Additionally, new topics are available for a preview-only feature, the Mobile Broadband class extension (MBBCx), which uses the NetAdapterCx model for mobile broadband connectivity.
+
 * [Mobile Broadband Class Extension (MBBCx)](https://docs.microsoft.com/windows-hardware/drivers/netcx/mobile-broadband-mbb-wdf-class-extension-mbbcx-)
     * [Writing an MBBCx client driver](https://docs.microsoft.com/windows-hardware/drivers/netcx/writing-an-mbbcx-client-driver)
-
+    * [MBBCx API reference](https://docs.microsoft.com/windows-hardware/drivers/netcx/mbbcx-api-reference)
 
 ### <a href="" id="mobilebroadband-1803"></a>Mobile broadband
 
-In Mobile broadband, a new [WWAN_MODEM_CONFIG_ID](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wwan/ns-wwan-_wwan_modem_config_id) API was added to improve [MB low level UICC access](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/mb-low-level-uicc-access).
+In mobile broadband, a new topic detailing [MB low level UICC access](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/mb-low-level-uicc-access) is available.
 
-As for Mobile Operators, Hotspot and AppID settings are now a part of [desktop COSA](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/desktop-cosa-apn-database-settings#desktop-cosa-only-settings). Mobile operators are strongly encouraged to transition from broadband app experience apps with [Sysdev metadata packages](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/service-metadata) to [MO UWP Apps](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/uwp-mobile-broadband-apps) and the [COSA database](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/desktop-cosa-apn-database-settings).
+### Mobile operators
+
+New Hotspot and AppID settings are now a part of [desktop COSA](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/desktop-cosa-apn-database-settings#desktop-cosa-only-settings). Mobile operators are strongly encouraged to transition from broadband app experience apps with [Sysdev metadata packages](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/service-metadata) to [MO UWP Apps](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/uwp-mobile-broadband-apps) and the [COSA database](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/desktop-cosa-apn-database-settings).
 
 ### <a href="" id="pci-1803"></a>PCIe
 
