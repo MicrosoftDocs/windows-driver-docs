@@ -391,22 +391,20 @@ To download and build the Echo sample audio driver, perform the following steps.
 
     Navigate to the folder that contains the built files for the Autosync driver:
 
-    *C:\\DriverSamples\\general\\echo\\kmdf\\driver\\AutoSync\\x64\\Debug*. The folder should contain these files:
+    *C:\\DriverSamples\\general\\echo\\kmdf\\driver\\AutoSync\\x64\\Debug*. 
+
+    The folder should contain these files:
 
     | File     | Description                                                                       |
     |----------|-----------------------------------------------------------------------------------|
     | Echo.sys | The driver file.                                                                  |
     | Echo.inf | An information (INF) file that contains information needed to install the driver. |
 
-     
-
     In addition, the echoapp.exe file was built and it should be located here: *C:\\DriverSamples\\general\\echo\\kmdf\\exe\\x64\\Debug*
 
     | File        | Description                                                                       |
     |-------------|-----------------------------------------------------------------------------------|
-    | EchoApp.exe | A command prompt executable test file that communicates with the echo.sys driver. |
-
-     
+    | EchoApp.exe | A command prompt executable test file that communicates with the echo.sys driver. |     
 
 8.  Locate a USB thumb drive or set up a network share to copy the built driver files and the test EchoApp from the host to the target system.
 
