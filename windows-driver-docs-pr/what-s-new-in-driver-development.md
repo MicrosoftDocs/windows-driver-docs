@@ -260,7 +260,7 @@ The [voice activation](https://docs.microsoft.com/en-us/windows-hardware/drivers
 
 Windows 10, version 1803 introduces support for Swift Pair. Users no longer need to navigate the Settings App and find their peripheral to pair. Windows can now do this for them by popping a notification when a new peripheral is nearby and ready. There are two sets of requirements to ensure your peripheral works with Swift Pair. One set is for the peripheral’s behavior, and another for the structure and values in a Microsoft defined vendor advertisement section. For more information, see:
 
-* [Bluetooth Swift Pair](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/components/bluetooth-swift-pair.md)
+* [Bluetooth Swift Pair](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/bluetooth-swift-pair)
 * [Bluetooth Features and Recommendations](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/bluetooth)
 
 Windows 10, version 1803 supports Bluetooth version 5.0. For information about profile support, see [Bluetooth Version and Profile Support in Windows 10](https://docs.microsoft.com/en-us/windows-hardware/drivers/bluetooth/general-bluetooth-support-in-windows).
