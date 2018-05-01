@@ -94,16 +94,16 @@ Now that you've created your empty Hello World project and added the Driver.c so
         // Initialize the driver configuration object to register the
         // entry point for the EvtDeviceAdd callback, KmdfHelloWorldEvtDeviceAdd
         WDF_DRIVER_CONFIG_INIT(&config, 
-                            KmdfHelloWorldEvtDeviceAdd
-                            );
+                               KmdfHelloWorldEvtDeviceAdd
+                               );
 
         // Finally, create the driver object
         status = WdfDriverCreate(DriverObject, 
-                                RegistryPath, 
-                                WDF_NO_OBJECT_ATTRIBUTES, 
-                                &config, 
-                                WDF_NO_HANDLE
-                                );
+                                 RegistryPath, 
+                                 WDF_NO_OBJECT_ATTRIBUTES, 
+                                 &config, 
+                                 WDF_NO_HANDLE
+                                 );
         return status;
     }
     ```
@@ -138,9 +138,9 @@ Now that you've created your empty Hello World project and added the Driver.c so
         
         // Create the device object
         status = WdfDeviceCreate(&DeviceInit, 
-                                WDF_NO_OBJECT_ATTRIBUTES,
-                                &hDevice
-                                );
+                                 WDF_NO_OBJECT_ATTRIBUTES,
+                                 &hDevice
+                                 );
         return status;
     }
     ```
@@ -152,7 +152,7 @@ Now that you've created your empty Hello World project and added the Driver.c so
 
 5. Your complete Driver.c now looks like this:
 
-    ```
+    ```C++
     #include <ntddk.h>
     #include <wdf.h>
     DRIVER_INITIALIZE DriverEntry;
@@ -176,16 +176,16 @@ Now that you've created your empty Hello World project and added the Driver.c so
         // Initialize the driver configuration object to register the
         // entry point for the EvtDeviceAdd callback, KmdfHelloWorldEvtDeviceAdd
         WDF_DRIVER_CONFIG_INIT(&config, 
-                            KmdfHelloWorldEvtDeviceAdd
-                            );
+                               KmdfHelloWorldEvtDeviceAdd
+                               );
 
         // Finally, create the driver object
         status = WdfDriverCreate(DriverObject, 
-                                RegistryPath, 
-                                WDF_NO_OBJECT_ATTRIBUTES, 
-                                &config, 
-                                WDF_NO_HANDLE
-                                );
+                                 RegistryPath, 
+                                 WDF_NO_OBJECT_ATTRIBUTES, 
+                                 &config, 
+                                 WDF_NO_HANDLE
+                                 );
         return status;
     }
 
@@ -209,9 +209,9 @@ Now that you've created your empty Hello World project and added the Driver.c so
         
         // Create the device object
         status = WdfDeviceCreate(&DeviceInit, 
-                                WDF_NO_OBJECT_ATTRIBUTES,
-                                &hDevice
-                                );
+                                 WDF_NO_OBJECT_ATTRIBUTES,
+                                 &hDevice
+                                 );
         return status;
     }
     ```
@@ -236,7 +236,6 @@ Next, you'll build your driver.
 
 ## <span id="Deploy_and_install_the_driver"></span><span id="deploy_and_install_the_driver"></span><span id="DEPLOY_AND_INSTALL_THE_DRIVER"></span>Deploy and install the driver
 
-
 Typically when you test and debug a driver, the debugger and the driver run on separate computers. The computer that runs the debugger is called the *host computer*, and the computer that runs the driver is called the *target computer*. The target computer is also called the *test computer*.
 
 So far you've used Visual Studio to build a driver on the host computer. Now you need to configure a target computer. Follow the instructions in [Provision a computer for driver deployment and testing (WDK 10)](provision-a-target-computer-wdk-8-1.md). Then you can deploy, install, load, and debug your driver:
@@ -250,15 +249,15 @@ So far you've used Visual Studio to build a driver on the host computer. Now you
 
     ![screen shot showing the kmdfhelloworld package property pages window with the deployment driver install selected ](images/vs2015-kmdf-hello-world-property-pages.png)
 
-    **Note**  In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the [device tree](device-nodes-and-device-stacks.md) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**.
-    You'll see the hardware ID in your driver's information (INF) file. In the **Solution Explorer** window, go to **KmdfHelloWorld &gt; Driver Files**, and double-click KmdfHelloWorld.inf. The hardware ID is located under \[Standard.NT$ARCH$\].
+    >[!NOTE]
+    > In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the [device tree](device-nodes-and-device-stacks.md) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**. You'll see the hardware ID in your driver's information (INF) file. In the **Solution Explorer** window, go to **KmdfHelloWorld &gt; Driver Files**, and double-click KmdfHelloWorld.inf. The hardware ID is located under \[Standard.NT$ARCH$\].
 
-    ```ManagedCPlusPlus
+    ```C++
     [Standard.NT$ARCH$]
     %KmdfHelloWorld.DeviceDesc%=KmdfHelloWorld_Device, Root\KmdfHelloWorld
     ```
 
-     
+
 
 7.  On the **Debug** menu, choose **Start Debugging**, or press **F5** on the keyboard.
 8.  Visual Studio first shows progress in the **Output** window. Then it opens the **Debugger Immediate** window and continues to show progress.
