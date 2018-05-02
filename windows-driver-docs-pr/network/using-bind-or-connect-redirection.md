@@ -158,7 +158,7 @@ To perform redirection asynchronously a callout driver must perform the followin
 
 5.  Send the classification handle and the writable layer data to another function for asynchronous processing. The remaining steps are performed in that function, not in the callout driver's implementation of [classifyFn](https://msdn.microsoft.com/library/windows/hardware/ff544887).
 
-#### From a worker thread
+#### From a worker function
 
 6.  Call [**FwpsAcquireWritableLayerDataPointer0**](https://msdn.microsoft.com/library/windows/hardware/ff550087) to get the writable data structure for the layer in which [classifyFn](https://msdn.microsoft.com/library/windows/hardware/ff544887) was called. Cast the *writableLayerData* out parameter to the structure corresponding to the layer, either [**FWPS\_BIND\_REQUEST0**](https://msdn.microsoft.com/library/windows/hardware/ff551221) or [**FWPS\_CONNECT\_REQUEST0**](https://msdn.microsoft.com/library/windows/hardware/ff551231).
 
