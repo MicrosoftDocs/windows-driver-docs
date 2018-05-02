@@ -302,7 +302,7 @@ Now that you have installed your KmdfHelloWorld driver on the target computer, y
 
 1. On the host computer, open a Command Prompt window as Administrator. Change to the WinDbg.exe directory. We will use the x64version of WinDbg.exe from the Windows Driver Kit (WDK) that was installed as part of the Windows kit installation. Here is the default path to WinDbg.exe:
 
-    *C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x64
+    *C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x64*
 
 2. Launch WinDbg to connect to a dernel debug session on the target computer by using the following command. The value for the port and key should be the same as what you used to provision the target computer. We'll use **50000** for the port and **1.2.3.4** for the key, the values we recommended during the deploy step. The *k* flag indicates that this is a kernel debug session.
 
@@ -319,8 +319,11 @@ Now that you have installed your KmdfHelloWorld driver on the target computer, y
 
 5. To let the target computer run again, choose **Go** from the **Debug** menu or press "g," then press "enter."
 6. To stop the debugging session, choose **Detach Debuggee** from the **Debug** menu.
+
     > [!IMPORTANT]
     > Make sure you let the target computer run again before exiting the debugger, or it will remain unresponsive because its kernel has been halted.
+
+For more information about remote debugging, see [Remote Debugging Using WinDbg](../debugger/remode-debugging-using-windbg.md).
 
 ## <span id="related_topics"></span>Related topics
 
