@@ -42,16 +42,12 @@ The layer at which redirection is performed determines the effect of the change.
 
 The redirect layers are only available for Windows 7 and later versions of Windows. Callout drivers that support classification at these layers must register using [**FwpsCalloutRegister1**](https://msdn.microsoft.com/library/windows/hardware/ff551143) or higher, not the older [**FwpsCalloutRegister0**](https://msdn.microsoft.com/library/windows/hardware/ff551140) function.
 
-**Important**  Redirection is not available for use with all types of network traffic. The types of packets that are supported for redirection are shown in the following list:
--   TCP
-
--   UDP
-
--   Raw UDPv4 without the header include option
-
--   Raw ICMP
-
- 
+> [!IMPORTANT]
+> Redirection is not available for use with all types of network traffic. The types of packets that are supported for redirection are shown in the following list:
+> - TCP
+> - UDP
+> - Raw UDPv4 without the header include option
+> - Raw ICMP
 
 ### Performing Redirection
 
@@ -121,7 +117,7 @@ To perform redirection inline a callout driver must perform the following steps 
     // callout allocated data, contains original destination information
     result = WSAIoctl(clientSock,
                       SIO_QUERY_WFP_CONNECTION_REDIRECT_CONTEXT,
-                      redirectRecords, …);
+                      redirectContext, …);
     // extract original destination IP and port from above context
     ```
 
