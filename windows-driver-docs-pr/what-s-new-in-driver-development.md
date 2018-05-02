@@ -25,7 +25,7 @@ The following is a list of new feature highlights for driver development in Wind
 * [Power Management Framework](#power-management-framework)
 * [System-Supplied Driver Interfaces](#system-supplied-driver-interfaces)
 * [WPP Software Tracing](#wpp-software-tracing)
-* [Windows Kernel](#windows-kernel)
+
 
 The following table shows the feature updates in Windows 10, by driver technology and version.
 
@@ -42,6 +42,7 @@ The following table shows the feature updates in Windows 10, by driver technolog
 | Driver security | [![details](checkmark.png)](#security-1803)| ![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#display)|
 | Hardware notifications | ![not available](minus.png)|[![details](checkmark.png)](#hardware-notifications-1709) | ![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |
 | Human Interface Device (HID)|![not available](minus.png) |![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#human-interface-device)|
+| Kernel | [![details](checkmark.png)](#kernel-1803)|[![details](checkmark.png)](#kernel-1709) | [![details](checkmark.png)](#kernel-1703) |![not available](minus.png) |![not available](minus.png) |
 | Location | ![not available](minus.png)|![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#location-1607) |[![details](checkmark.png)](#location-1507) |
 |Mobile broadband |[![details](checkmark.png)](#mobilebroadband-1803)|[![details](checkmark.png)](#mobilebroadband-1709)|[![details](checkmark.png)](#mobilebroadband-1703)|![not available](minus.png)|![not available](minus.png)|
 | Near Field Communication |![not available](minus.png) |![not available](minus.png) | ![not available](minus.png) | ![not available](minus.png) |[![details](checkmark.png)](#near-field-communication)|
@@ -190,59 +191,6 @@ The power management framework (PoFx) enables a driver to define one or more set
 -   [WppRecorderLogCreate](https://msdn.microsoft.com/library/windows/hardware/dn914615) (KMDF only)
 -   [WppRecorderDumpLiveDriverData](https://msdn.microsoft.com/library/windows/hardware/dn914612)
 
-### Windows Kernel
-
-This section describes new and updated features for Windows Kernel for drivers in Windows 10.
-
-**Windows Kernel for drivers in Windows 10, version 1803**
-
-This section describes the new and updates features for Windows kernel driver development in Windows 10, version 1803.
-
-A set of new APIs have been added to the kit to enable third parties to create their own KDNET extensibility modules or KdSerial transport layers. For sample code, see “Kernel Transport Samples” (ddk\samples\kdserial and ddk\samples\kdnet) in the Debuggers folder.
-
-Support was added to provide drivers with a sanctioned location (that the operating system knows about) where they can store file state.  With this approach, the system can associate files in that location with a device or driver.
-
-There are distinct locations to store file states specific to the internals of a driver and specific to a device. For drivers that have file state, you can decide if the state written to disk is:
-
-* Driver state ([IoGetDriverDirectory](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdriverdirectory)): global to the driver that might be controlling multiple devices), or
-
-* Device state ([IoGetDeviceDirectory](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdevicedirectory)): specific to the driver-controlled single device and other devices might have different values for similar state.
-
-Function drivers (FDO) can now negotiate additional power when their respective PCIe devices are in a D3Cold state. This includes:
-
-* Auxiliary power requirement [D3COLD_REQUEST_AUX_POWER](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nc-wdm-d3cold_request_aux_power).
-* Core power rail [D3COLD_REQUEST_CORE_POWER_RAIL](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nc-wdm-d3cold_request_core_power_rail).
-* Requirement for a fixed delay time between the message is received at the PCI Express Downstream Port and the time the platform asserts PERST# to the slot during the corresponding endpoint’s or PCI Express Upstream Port’s transition to D3cold while the system is in an ACPI operational state. See [D3COLD_REQUEST_PERST_DELAY](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nc-wdm-d3cold_request_perst_delay).
-
-NT services and kernel-mode and user-mode drivers can raise a custom trigger for a device by using the [RtlRaiseCustomSystemEventTrigger](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlraisecustomsystemeventtrigger) function. A custom trigger, owned by the driver developer, notifies system event broker to start an associated background task with it, which is identified by a custom trigger identifier.
-
-You can now register for active session change notification and get a callback when the notification is fired. As part of this notification, some data is also shared with the caller. This associated data is delivered via the [PO_SPR_ACTIVE_SESSION_DATA structure](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntpoapi/ns-ntpoapi-_po_spr_active_session_data).
-
-**Windows Kernel for drivers in Windows 10, version 1709**
-
-In Windows 10, version 1709, several new routines to the Windows Kernel for drivers have been added.
-
-* ExGetFirmwareType and ExIsSoftBoot &ndash; Executive library support routines.
-* [PsSetLoadImageNotifyRoutineEx](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt826267(v=vs.85).aspx) &ndash; An extended image notify routine for all executable images, including images that have a different architecture from the native architecture of the operating system.
-* [MmMapMdl](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt843504(v=vs.85).aspx) &ndash; A [memory manager](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/ff565757(v=vs.85).aspx) routine for mapping physical pages described by a memory descriptor list (MDL) into the system virtual address space.
-* [PoFxSetTargetDripsDevicePowerState ](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt826261(v=vs.85).aspx) &ndash; A PoFx routine to notify the power manager of the device's target device power state for DRIPS.
-* The following is a list of new options for the [ZwSetInformationThread](https://msdn.microsoft.com/library/windows/hardware/ff567101) routine, that are related to process policies:
-
-    * [PROCESS_MITIGATION_CHILD_PROCESS_POLICY](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt843940(v=vs.85).aspx)
-    * [PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt843941(v=vs.85).aspx)
-    * [PROCESS_READWRITEVM_LOGGING_INFORMATION](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt826264(v=vs.85).aspx)
-
-* [PsGetServerSiloActiveConsoleId](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-psgetserversiloactiveconsoleid) and [PsGetParentSilo](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt826265(v=vs.85).aspx) &ndash; New Silo APIs to get information about server silos that are created and destroyed on a machine.
-* The following is a list of new RTL functions for using correlation vector to reference events and the generated logs for diagnostic purposes.
-    * [CORRELATION_VECTOR](https://msdn.microsoft.com/En-US/Library/Windows/Hardware/mt826258)
-    * [RtlExtendCorrelationVector](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt826269(v=vs.85).aspx)
-    * [RtlIncrementCorrelationVector](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt826270(v=vs.85).aspx)
-    * [RtlInitializeCorrelationVector](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt826273(v=vs.85).aspx)
-    * [RtlValidateCorrelationVector](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt826274(v=vs.85).aspx)
-
-**Windows Kernel for drivers in Windows 10, version 1703**
-
-[Windows Kernel-Mode Process and Thread Manager](https://msdn.microsoft.com/en-us/library/windows/hardware/ff565772(v=vs.85).aspx) - Starting in Windows 10 version 1703, the Windows Subsystem for Linux (WSL) enables a user to run native Linux ELF64 binaries on Windows, alongside other Windows applications. For more information about WSL architecture and the user-mode and kernel-mode components that are required to run the binaries, see the posts on the [Windows Subsystem for Linux](https://blogs.msdn.microsoft.com/wsl/) blog.
 
 ## <a href="" id="version-1803"></a>What's new in Windows 10, version 1803 (latest)
 
@@ -260,7 +208,7 @@ The [voice activation](https://docs.microsoft.com/en-us/windows-hardware/drivers
 
 Windows 10, version 1803 introduces support for Swift Pair. Users no longer need to navigate the Settings App and find their peripheral to pair. Windows can now do this for them by popping a notification when a new peripheral is nearby and ready. There are two sets of requirements to ensure your peripheral works with Swift Pair. One set is for the peripheral’s behavior, and another for the structure and values in a Microsoft defined vendor advertisement section. For more information, see:
 
-* [Bluetooth Swift Pair](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/components/bluetooth-swift-pair.md)
+* [Bluetooth Swift Pair](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/bluetooth-swift-pair)
 * [Bluetooth Features and Recommendations](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/bluetooth)
 
 Windows 10, version 1803 supports Bluetooth version 5.0. For information about profile support, see [Bluetooth Version and Profile Support in Windows 10](https://docs.microsoft.com/en-us/windows-hardware/drivers/bluetooth/general-bluetooth-support-in-windows).
@@ -269,8 +217,8 @@ Windows 10, version 1803 supports Bluetooth version 5.0. For information about p
 
 Updates to Camera driver development include:
 
-* [DShow (DirectShow) Bridge implementation guidance for UVC devices](https://docs.microsoft.com/en-us/windows-hardware/drivers/stream/dshow-bridge-implementation-guidance-for-usb-video-class-devices) - Implementation guidance for configuring DShow Bridge for cameras and devices that comply with the USB Video Class (UVC) specification. The platform uses Microsoft OS Descriptors from the USB bus standard to configure DShow Bridge. The Extended Properties OS Descriptors are an extension of USB standard descriptors and are used by USB devices to return Windows specific device properties that are not enabled through standard specifications. 
-* [360 camera video capture](https://docs.microsoft.com/en-us/windows-hardware/drivers/stream/360-camera-video-capture) - Provides support for 360 camera preview, capture, and record with existing MediaCapture APIs. This enables the platform to expose spherical frame sources (for example, equirectangular frames ), enabling apps to detect and handle 360 video camera streams as well as to provide a 360 capture experience. 
+* [DShow (DirectShow) Bridge implementation guidance for UVC devices](https://docs.microsoft.com/en-us/windows-hardware/drivers/stream/dshow-bridge-implementation-guidance-for-usb-video-class-devices) - Implementation guidance for configuring DShow Bridge for cameras and devices that comply with the USB Video Class (UVC) specification. The platform uses Microsoft OS Descriptors from the USB bus standard to configure DShow Bridge. The Extended Properties OS Descriptors are an extension of USB standard descriptors and are used by USB devices to return Windows specific device properties that are not enabled through standard specifications.
+* [360 camera video capture](https://docs.microsoft.com/en-us/windows-hardware/drivers/stream/360-camera-video-capture) - Provides support for 360 camera preview, capture, and record with existing MediaCapture APIs. This enables the platform to expose spherical frame sources (for example, equirectangular frames ), enabling apps to detect and handle 360 video camera streams as well as to provide a 360 capture experience.
 
 ### <a href="" id="display-1803"></a>Display
 
@@ -320,6 +268,29 @@ The following are updates to Display driver development in Windows 10, version 1
 Updates to [Windows Driver Security Guidance](https://docs.microsoft.com/en-us/windows-hardware/drivers/driversecurity/)
 and the [Driver security checklist](https://docs.microsoft.com/en-us/windows-hardware/drivers/driversecurity/driver-security-checklist), which provides a driver security checklist for driver developers.
 
+### <a href="" id="kernel-1803"></a>Windows kernel
+
+This section describes the new and updates features for Windows kernel driver development in Windows 10, version 1803.
+
+A set of new APIs have been added to the kit to enable third parties to create their own KDNET extensibility modules or KdSerial transport layers. For sample code, see “Kernel Transport Samples” (ddk\samples\kdserial and ddk\samples\kdnet) in the Debuggers folder.
+
+Support was added to provide drivers with a sanctioned location (that the operating system knows about) where they can store file state.  With this approach, the system can associate files in that location with a device or driver.
+
+There are distinct locations to store file states specific to the internals of a driver and specific to a device. For drivers that have file state, you can decide if the state written to disk is:
+
+* Driver state ([IoGetDriverDirectory](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdriverdirectory)): global to the driver that might be controlling multiple devices), or
+
+* Device state ([IoGetDeviceDirectory](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdevicedirectory)): specific to the driver-controlled single device and other devices might have different values for similar state.
+
+Function drivers (FDO) can now negotiate additional power when their respective PCIe devices are in a D3Cold state. This includes:
+
+* Auxiliary power requirement [D3COLD_REQUEST_AUX_POWER](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nc-wdm-d3cold_request_aux_power).
+* Core power rail [D3COLD_REQUEST_CORE_POWER_RAIL](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nc-wdm-d3cold_request_core_power_rail).
+* Requirement for a fixed delay time between the message is received at the PCI Express Downstream Port and the time the platform asserts PERST# to the slot during the corresponding endpoint’s or PCI Express Upstream Port’s transition to D3cold while the system is in an ACPI operational state. See [D3COLD_REQUEST_PERST_DELAY](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nc-wdm-d3cold_request_perst_delay).
+
+NT services and kernel-mode and user-mode drivers can raise a custom trigger for a device by using the [RtlRaiseCustomSystemEventTrigger](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlraisecustomsystemeventtrigger) function. A custom trigger, owned by the driver developer, notifies system event broker to start an associated background task with it, which is identified by a custom trigger identifier.
+
+You can now register for active session change notification and get a callback when the notification is fired. As part of this notification, some data is also shared with the caller. This associated data is delivered via the [PO_SPR_ACTIVE_SESSION_DATA structure](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntpoapi/ns-ntpoapi-_po_spr_active_session_data).
 
 ### <a href="" id="networking-1803"></a>Networking
 
@@ -441,6 +412,29 @@ In Windows 10, version 1709, there is support for hardware-agnostic support of n
 
 * [Hardware notifications support](https://docs.microsoft.com/en-us/windows-hardware/drivers/gpiobtn/hardware-notifications-support)
 * [Hardware notifications reference](https://msdn.microsoft.com/en-us/library/windows/hardware/dn789336)
+
+
+### <a href="" id="kernel-1709"></a>Windows kernel
+
+In Windows 10, version 1709, several new routines to the Windows Kernel for drivers have been added.
+
+* ExGetFirmwareType and ExIsSoftBoot &ndash; Executive library support routines.
+* [PsSetLoadImageNotifyRoutineEx](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt826267(v=vs.85).aspx) &ndash; An extended image notify routine for all executable images, including images that have a different architecture from the native architecture of the operating system.
+* [MmMapMdl](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt843504(v=vs.85).aspx) &ndash; A [memory manager](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/ff565757(v=vs.85).aspx) routine for mapping physical pages described by a memory descriptor list (MDL) into the system virtual address space.
+* [PoFxSetTargetDripsDevicePowerState ](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt826261(v=vs.85).aspx) &ndash; A PoFx routine to notify the power manager of the device's target device power state for DRIPS.
+* The following is a list of new options for the [ZwSetInformationThread](https://msdn.microsoft.com/library/windows/hardware/ff567101) routine, that are related to process policies:
+
+    * [PROCESS_MITIGATION_CHILD_PROCESS_POLICY](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt843940(v=vs.85).aspx)
+    * [PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt843941(v=vs.85).aspx)
+    * [PROCESS_READWRITEVM_LOGGING_INFORMATION](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt826264(v=vs.85).aspx)
+
+* [PsGetServerSiloActiveConsoleId](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-psgetserversiloactiveconsoleid) and [PsGetParentSilo](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt826265(v=vs.85).aspx) &ndash; New Silo APIs to get information about server silos that are created and destroyed on a machine.
+* The following is a list of new RTL functions for using correlation vector to reference events and the generated logs for diagnostic purposes.
+    * [CORRELATION_VECTOR](https://msdn.microsoft.com/En-US/Library/Windows/Hardware/mt826258)
+    * [RtlExtendCorrelationVector](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt826269(v=vs.85).aspx)
+    * [RtlIncrementCorrelationVector](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt826270(v=vs.85).aspx)
+    * [RtlInitializeCorrelationVector](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt826273(v=vs.85).aspx)
+    * [RtlValidateCorrelationVector](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt826274(v=vs.85).aspx)
 
 ### <a href="" id="mobilebroadband-1709"></a>Mobile broadband
 
@@ -602,6 +596,11 @@ The following is a list of updates to Camera driver development in Windows 10, v
 * KSCategory_Xxx Device Interface Classes
     - [KSCATEGORY_SENSOR_CAMERA](https://msdn.microsoft.com/en-us/library/windows/hardware/mt796964)
     - [KSCATEGORY_VIDEO_CAMERA](https://msdn.microsoft.com/en-us/library/windows/hardware/mt796965)
+
+### <a href="" id="kernel-1703"></a>Windows kernel
+
+
+[Windows Kernel-Mode Process and Thread Manager](https://msdn.microsoft.com/en-us/library/windows/hardware/ff565772(v=vs.85).aspx) - Starting in Windows 10 version 1703, the Windows Subsystem for Linux (WSL) enables a user to run native Linux ELF64 binaries on Windows, alongside other Windows applications. For more information about WSL architecture and the user-mode and kernel-mode components that are required to run the binaries, see the posts on the [Windows Subsystem for Linux](https://blogs.msdn.microsoft.com/wsl/) blog.
 
 ### <a href="" id="mobilebroadband-1703"></a>Mobile broadband
 

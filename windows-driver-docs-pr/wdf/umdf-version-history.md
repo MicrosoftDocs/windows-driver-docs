@@ -27,7 +27,7 @@ The following table shows the release history of the UMDF library:
 
 |UMDF version|Release method|Included in this version of Windows|Drivers using it can run on|
 |--- |--- |--- |--- |
-|2.25|Windows 10, version 1803 WDK|Windows 10, version 1803 (Spring 2018 Update, Redstone 4)|Windows 10 version 1803|
+|2.25|Windows 10, version 1803 WDK|Windows 10, version 1803 (April 2018 Update, Redstone 4)|Windows 10 version 1803|
 |2.23|Windows 10, version 1709 WDK|Windows 10, version 1709 (Fall Creators Update, Redstone 3)|Windows 10 version 1709|
 |2.21|Windows 10, version 1703 WDK|Windows 10, version 1703 (Creators Update, Redstone 2)|Windows 10 version 1703|
 |2.19|Windows 10, version 1607 WDK|Windows 10, version 1607 (Anniversary Update, Redstone 1)|Windows 10, version 1607, Windows Server 2016 and later|
