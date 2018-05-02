@@ -71,7 +71,7 @@ To perform redirection inline a callout driver must perform the following steps 
 
     1.  Save the original destination in the local redirect context as shown in the following example:
 
-        ``` syntax
+        ```C++
         FWPS_CONNECT_REQUEST* connectRequest = redirectContext->connectRequest;
         // Replace "..." with your own redirect context size
         connectRequest->localRedirectContextSize = ...;
@@ -81,7 +81,7 @@ To perform redirection inline a callout driver must perform the following steps 
 
     2.  Modify the remote address as shown in the following example:
 
-        ``` syntax
+        ```C++
         // Ensure we don't need to worry about crossing any of the TCP/IP stack's zones
         if(INETADDR_ISANY((PSOCKADDR)&(connectRequest->localAddressAndPort)))
         {
@@ -103,7 +103,7 @@ To perform redirection inline a callout driver must perform the following steps 
 
 7.  In your proxy service (which could be in user mode or kernel mode), you should query redirect records and contexts as shown in the following example:
 
-    ``` syntax
+    ```C++
     BYTE* redirectRecords;
     BYTE redirectContext[CONTEXT_SIZE];
     listenSock = WSASocket(…);
@@ -123,7 +123,7 @@ To perform redirection inline a callout driver must perform the following steps 
 
 8.  In your proxy service (which could be in user mode or kernel mode), you should set redirect records on the proxy connection socket as shown in the following example to create a new outbound socket:
 
-    ``` syntax
+    ```C++
     proxySock = WSASocket(…);
     result = WSAIoctl(
                  proxySock,
@@ -137,28 +137,17 @@ To perform redirection inline a callout driver must perform the following steps 
 
 To perform redirection asynchronously a callout driver must perform the following steps:
 
+#### From classifyFn
+
 1.  Call [**FwpsRedirectHandleCreate0**](https://msdn.microsoft.com/library/windows/hardware/hh439681) to obtain a handle that can be used to redirect TCP connections. (This step is omitted for Windows 7 and earlier.)
 
 2.  In Windows 8 and later, you must query the redirection state of the connection by using the [**FwpsQueryConnectionRedirectState0**](https://msdn.microsoft.com/library/windows/hardware/hh439677) function in your callout driver.
 
 3.  Call [**FwpsAcquireClassifyHandle0**](https://msdn.microsoft.com/library/windows/hardware/ff550085) to obtain a handle that will be used for subsequent function calls. This step and steps 2 and 3 are performed in the callout driver's [classifyFn](https://msdn.microsoft.com/library/windows/hardware/ff544887) callout function.
 
-4.  Call [**FwpsAcquireWritableLayerDataPointer0**](https://msdn.microsoft.com/library/windows/hardware/ff550087) to get the writable data structure for the layer in which [classifyFn](https://msdn.microsoft.com/library/windows/hardware/ff544887) was called. Cast the *writableLayerData* out parameter to the structure corresponding to the layer, either [**FWPS\_BIND\_REQUEST0**](https://msdn.microsoft.com/library/windows/hardware/ff551221) or [**FWPS\_CONNECT\_REQUEST0**](https://msdn.microsoft.com/library/windows/hardware/ff551231).
+4.  Call [**FwpsPendClassify0**](https://msdn.microsoft.com/library/windows/hardware/ff551197) to put the classification in a pending state as shown in the following example:
 
-    Starting with Windows 8, if your callout driver is redirecting locally, you must call [**FwpsRedirectHandleCreate0**](https://msdn.microsoft.com/library/windows/hardware/hh439681) to fill in the **localRedirectHandle** member of the [**FWPS\_CONNECT\_REQUEST0**](https://msdn.microsoft.com/library/windows/hardware/ff551231) structure in order to make proxying work.
-
-5.  Store any callout-specific context information in a private context structure as shown in the following example:
-
-    ``` syntax
-    redirectContext->classifyHandle = classifyHandle;
-    redirectContext->connectRequest = connectRequest;
-    redirectContext->classifyOut = *classifyOut; // deep copy
-    // store original destination IP, port
-    ```
-
-6.  Call [**FwpsPendClassify0**](https://msdn.microsoft.com/library/windows/hardware/ff551197) to put the classification in a pending state as shown in the following example:
-
-    ``` syntax
+    ```C++
     FwpsPendClassify(
             redirectContext->classifyHandle,
             0,
@@ -167,15 +156,30 @@ To perform redirection asynchronously a callout driver must perform the followin
     classifyOut->rights &= ~FWPS_RIGHT_ACTION_WRITE;
     ```
 
-7.  Send the classification handle and the writable layer data to another function for asynchronous processing. The remaining steps are performed in that function, not in the callout driver's implementation of [classifyFn](https://msdn.microsoft.com/library/windows/hardware/ff544887).
+5.  Send the classification handle and the writable layer data to another function for asynchronous processing. The remaining steps are performed in that function, not in the callout driver's implementation of [classifyFn](https://msdn.microsoft.com/library/windows/hardware/ff544887).
+
+#### From a worker thread
+
+6.  Call [**FwpsAcquireWritableLayerDataPointer0**](https://msdn.microsoft.com/library/windows/hardware/ff550087) to get the writable data structure for the layer in which [classifyFn](https://msdn.microsoft.com/library/windows/hardware/ff544887) was called. Cast the *writableLayerData* out parameter to the structure corresponding to the layer, either [**FWPS\_BIND\_REQUEST0**](https://msdn.microsoft.com/library/windows/hardware/ff551221) or [**FWPS\_CONNECT\_REQUEST0**](https://msdn.microsoft.com/library/windows/hardware/ff551231).
+
+    Starting with Windows 8, if your callout driver is redirecting locally, you must call [**FwpsRedirectHandleCreate0**](https://msdn.microsoft.com/library/windows/hardware/hh439681) to fill in the **localRedirectHandle** member of the [**FWPS\_CONNECT\_REQUEST0**](https://msdn.microsoft.com/library/windows/hardware/ff551231) structure in order to make proxying work.
+
+7.  Store any callout-specific context information in a private context structure as shown in the following example:
+
+    ```C++
+    redirectContext->classifyHandle = classifyHandle;
+    redirectContext->connectRequest = connectRequest;
+    redirectContext->classifyOut = *classifyOut; // deep copy
+    // store original destination IP, port
+    ```
 
 8.  Make changes to the layer data as needed.
 
-9.  Call [**FwpsApplyModifiedLayerData0**](https://msdn.microsoft.com/library/windows/hardware/ff551137) to apply the changes made to the data.
+9.  Call [**FwpsApplyModifiedLayerData0**](https://msdn.microsoft.com/library/windows/hardware/ff551137) to apply the changes made to the data. Set the **FWPS_CLASSIFY_FLAG_REAUTHORIZE_IF_MODIFIED_BY_OTHERS** flag if you wish to be re-authorized in the event that another callout modifies the data further.
 
 10. Call [**FwpsCompleteClassify0**](https://msdn.microsoft.com/library/windows/hardware/ff551150) to complete the classify operation asynchronously as shown in the following example:
 
-    ``` syntax
+    ```C++
     FwpsCompleteClassify(
             redirectContext->classifyHandle,
             0,
@@ -194,7 +198,7 @@ The **FWPS\_RIGHT\_ACTION\_WRITE** flag should be set whenever a callout pends a
 
 In Windows 8 and later, your callout driver must query the redirection state of the connection (to see if your callout driver or another callout driver has modified it) by using the [**FwpsQueryConnectionRedirectState0**](https://msdn.microsoft.com/library/windows/hardware/hh439677) function. If the connection is redirected by your callout driver, or if it was previously redirected by your callout driver, the callout driver should do nothing. Otherwise, it should also check for local redirection as shown in the following example:
 
-``` syntax
+```C++
 FwpsAcquireWritableLayerDataPointer(...,(PVOID*)&connectRequest), ...);
 if(connectRequest->previousVersion->modifierFilterId != filterId)
 {
