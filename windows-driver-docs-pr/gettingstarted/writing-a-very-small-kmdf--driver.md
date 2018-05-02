@@ -276,7 +276,7 @@ With your Hello World driver deployed to the target computer, now you'll install
 
 1. On the host computer, navigate to the Tools folder in your WDK installation and locate the DevCon tool. For example, look in the following folder:
 
-    *C:\Program Files (x86)\Windows Kits\10.0\Tools\x64\devcon.exe*
+    *C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\x64\\devcon.exe*
 
     Copy the DevCon tool to your remote computer.
 
@@ -288,7 +288,7 @@ With your Hello World driver deployed to the target computer, now you'll install
         The INF file required for installing this driver is KmdfHelloWorld.inf. The INF file contains the hardware ID for installing the driver binary, *KmdfHelloWorld.sys*. Recall that the hardware ID, located in the INF file, is **Root\\KmdfHelloWorld**.
     2. Open a Command Prompt window as Administrator. Navigate to your driver package folder, then enter this command:
 
-        **devcon install kmdfhelloworld.inf root\kmdfhelloworld**
+        **devcon install kmdfhelloworld.inf root\\kmdfhelloworld**
 
         If you get an error message about *devcon* not being recognized, try adding the path to the *devcon* tool. For example, if you copied it to a folder on the target computer called *C:\\Tools*, then try using the following command:
 
@@ -323,7 +323,7 @@ Now that you have installed your KmdfHelloWorld driver on the target computer, y
 6. To stop the debugging session, choose **Detach Debuggee** from the **Debug** menu.
 
     > [!IMPORTANT]
-    > Make sure you use the "go" command to let the target computer run again before exiting the debugger, or it will remain unresponsive to your mouse and keyboard input because it is still talking to the debugger.
+    > Make sure you use the "go" command to let the target computer run again before exiting the debugger, or the target computer will remain unresponsive to your mouse and keyboard input because it is still talking to the debugger.
 
 For a detailed step-by-step walkthrough of the driver debugging process, see [Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md).
 
