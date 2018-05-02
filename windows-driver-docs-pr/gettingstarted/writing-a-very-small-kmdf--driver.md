@@ -323,6 +323,8 @@ Now that you have installed your KmdfHelloWorld driver on the target computer, y
     > [!IMPORTANT]
     > Make sure you let the target computer run again before exiting the debugger, or it will remain unresponsive because its kernel has been halted.
 
+For a detailed step-by-step walkthrough of the driver debugging process, see [Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md).
+
 For more information about remote debugging, see [Remote Debugging Using WinDbg](../debugger/remode-debugging-using-windbg.md).
 
 ## <span id="related_topics"></span>Related topics
