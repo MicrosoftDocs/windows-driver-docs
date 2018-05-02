@@ -65,7 +65,7 @@ Now you're ready to provision the target computer from the host computer in Visu
 
 3.  Select a type of debugging connection, and enter the required parameters.
 
-    For more information about setting up debugging over various types of connections, see [Setting Up Kernel-Mode Debugging in Visual Studio](http://go.microsoft.com/fwlink/p?linkid=389193) in the CHM or online documentation for [Debugging Tools for Windows](http://go.microsoft.com/fwlink/p/?linkid=223405).
+    For more information about setting up debugging over various types of connections, see [Setting Up Kernel-Mode Debugging Manually](../debugger/setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md) in the CHM or online documentation for [Debugging Tools for Windows](http://go.microsoft.com/fwlink/p/?linkid=223405).
 
 4.  The provisioning process takes several minutes and might automatically reboot the target computer once or twice. When provisioning is complete, click **Finish**.
 

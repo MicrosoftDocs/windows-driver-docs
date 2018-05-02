@@ -243,7 +243,9 @@ So far you've used Visual Studio to build a driver on the host computer. Now you
 1. Follow the instructions in [Provision a computer for driver deployment and testing (WDK 10)](provision-a-target-computer-wdk-8-1.md).
 
     > [!TIP]
-    > When you follow the steps to provision the target computer automatically using a network cable, take note of the port and key. You'll use them later in the debugging step. For this example, we recommend using **50000** as the port and **1.2.3.4** as the key.
+    > When you follow the steps to provision the target computer automatically using a network cable, take note of the port and key. You'll use them later in the debugging step. In this example, we'll use **50000** as the port and **1.2.3.4** as the key.
+    >
+    > In real driver debugging scenarios, we recommend using a KDNET-generated key. For more information about how to use KDNET to generate a random key, see the [Debug Drivers - Step by Step Lab (Sysvad Kernel Mode)](../debugger/debug-universal-drivers--kernel-mode-.md) topic.
 
 2.  On the host computer, open your solution in Visual Studio. You can double-click the solution file, KmdfHelloWorld.sln, in your KmdfHelloWorld folder.
 3.  In the **Solution Explorer** window, right-click the **KmdfHelloWorld** project, and choose **Properties**.
@@ -304,7 +306,7 @@ Now that you have installed your KmdfHelloWorld driver on the target computer, y
 
     *C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x64*
 
-2. Launch WinDbg to connect to a kernel debug session on the target computer by using the following command. The value for the port and key should be the same as what you used to provision the target computer. We'll use **50000** for the port and **1.2.3.4** for the key, the values we recommended during the deploy step. The *k* flag indicates that this is a kernel debug session.
+2. Launch WinDbg to connect to a kernel debug session on the target computer by using the following command. The value for the port and key should be the same as what you used to provision the target computer. We'll use **50000** for the port and **1.2.3.4** for the key, the values we used during the deploy step. The *k* flag indicates that this is a kernel debug session.
 
     **WinDbg -k net:port=50000,key=1.2.3.4**
 
@@ -321,7 +323,7 @@ Now that you have installed your KmdfHelloWorld driver on the target computer, y
 6. To stop the debugging session, choose **Detach Debuggee** from the **Debug** menu.
 
     > [!IMPORTANT]
-    > Make sure you let the target computer run again before exiting the debugger, or it will remain unresponsive because its kernel has been halted.
+    > Make sure you use the "go" command to let the target computer run again before exiting the debugger, or it will remain unresponsive to your mouse and keyboard input because it is still talking to the debugger.
 
 For a detailed step-by-step walkthrough of the driver debugging process, see [Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md).
 
