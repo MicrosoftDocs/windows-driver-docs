@@ -304,7 +304,7 @@ Now that you have installed your KmdfHelloWorld driver on the target computer, y
 
     *C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x64*
 
-2. Launch WinDbg to connect to a dernel debug session on the target computer by using the following command. The value for the port and key should be the same as what you used to provision the target computer. We'll use **50000** for the port and **1.2.3.4** for the key, the values we recommended during the deploy step. The *k* flag indicates that this is a kernel debug session.
+2. Launch WinDbg to connect to a kernel debug session on the target computer by using the following command. The value for the port and key should be the same as what you used to provision the target computer. We'll use **50000** for the port and **1.2.3.4** for the key, the values we recommended during the deploy step. The *k* flag indicates that this is a kernel debug session.
 
     **WinDbg -k net:port=50000,key=1.2.3.4**
 
