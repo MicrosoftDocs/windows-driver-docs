@@ -137,8 +137,6 @@ To perform redirection inline a callout driver must perform the following steps 
 
 To perform redirection asynchronously a callout driver must perform the following steps:
 
-#### From classifyFn
-
 1.  Call [**FwpsRedirectHandleCreate0**](https://msdn.microsoft.com/library/windows/hardware/hh439681) to obtain a handle that can be used to redirect TCP connections. (This step is omitted for Windows 7 and earlier.)
 
 2.  In Windows 8 and later, you must query the redirection state of the connection by using the [**FwpsQueryConnectionRedirectState0**](https://msdn.microsoft.com/library/windows/hardware/hh439677) function in your callout driver.
@@ -156,9 +154,10 @@ To perform redirection asynchronously a callout driver must perform the followin
     classifyOut->rights &= ~FWPS_RIGHT_ACTION_WRITE;
     ```
 
-5.  Send the classification handle and the writable layer data to another function for asynchronous processing. The remaining steps are performed in that function, not in the callout driver's implementation of [classifyFn](https://msdn.microsoft.com/library/windows/hardware/ff544887).
+> [!NOTE]
+> If you are targeting Windows 7, you must perform the following steps in a separate worker function. If you are targeting Windows 8 or later, you can perform all steps for asynchronous redirection from within the *classifyFn* and ignore Step 5.
 
-#### From a worker function
+5.  Send the classification handle and the writable layer data to another function for asynchronous processing. The remaining steps are performed in that function, not in the callout driver's implementation of [classifyFn](https://msdn.microsoft.com/library/windows/hardware/ff544887).
 
 6.  Call [**FwpsAcquireWritableLayerDataPointer0**](https://msdn.microsoft.com/library/windows/hardware/ff550087) to get the writable data structure for the layer in which [classifyFn](https://msdn.microsoft.com/library/windows/hardware/ff544887) was called. Cast the *writableLayerData* out parameter to the structure corresponding to the layer, either [**FWPS\_BIND\_REQUEST0**](https://msdn.microsoft.com/library/windows/hardware/ff551221) or [**FWPS\_CONNECT\_REQUEST0**](https://msdn.microsoft.com/library/windows/hardware/ff551231).
 
