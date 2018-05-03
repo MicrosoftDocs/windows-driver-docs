@@ -43,11 +43,10 @@ WinDbg works well in most situations, but there are times when you may want to u
 
 4. Determine how you will connect the target and host system.
 Typically, an Ethernet network connection is used to connect the target and host system. If you are doing early bring up work, or don't have an Ethernet connection on the device, other network connection options are available. For more information, see these topics:
-
--   [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
--   [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md)
--   [Setting Up Kernel-Mode Debugging using Serial over USB Manually](setting-up-kernel-mode-debugging-using-serial-over-usb-manually-.md)
--   [Setting Up Network Debugging of a Virtual Machine Host](setting-up-network-debugging-of-a-virtual-machine-host.md)
+   -   [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
+   -   [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md)
+   -   [Setting Up Kernel-Mode Debugging using Serial over USB Manually](setting-up-kernel-mode-debugging-using-serial-over-usb-manually-.md)
+   -   [Setting Up Network Debugging of a Virtual Machine Host](setting-up-network-debugging-of-a-virtual-machine-host.md)
 
 5. Choose either the 32-bit or 64-bit debugging tools.
 This choice is dependent on the version of Windows that is running on the target and host systems and whether you are debugging 32-bit or 64-bit code. For more information, see [Choosing the 32-Bit or 64-Bit Debugging Tools](choosing-a-32-bit-or-64-bit-debugger-package.md).
@@ -71,16 +70,12 @@ Over time, you will use different debug commands as you work in the debugger. Us
 There are a number of debugging extensions that provide parsing of domain specific data structures. For more information, see [Specialized Extensions](specialized-extensions.md).
 
 12. Learn about related Windows internals, such as memory usage, context, threads and processes. This documentation assumes a knowledge of Windows internals. Review resources such as this book to learn more about Windows Internals. 
-
-   - Windows Internals by Mark E. Russinovich, David A. Solomon and Alex Ionescu
+  -   Windows Internals by Mark E. Russinovich, David A. Solomon and Alex Ionescu
 
 13. Review additional debugging resources.
-
-   - Inside Windows Debugging: A Practical Guide to Debugging and Tracing Strategies in Windows® by Tarik Soulami
-
-   - Advanced Windows Debugging by Mario Hewardt and Daniel Pravat
-
-   - The Defrag Tools Show WinDbg Episodes 13-29 http://channel9.msdn.com/Shows/Defrag-Tools
+   -   Inside Windows Debugging: A Practical Guide to Debugging and Tracing Strategies in Windows® by Tarik Soulami
+   -   Advanced Windows Debugging by Mario Hewardt and Daniel Pravat
+   -   [The Defrag Tools Show WinDbg Episodes 13-29](http://channel9.msdn.com/Shows/Defrag-Tools)
 
 
 This section contains the following topics.
