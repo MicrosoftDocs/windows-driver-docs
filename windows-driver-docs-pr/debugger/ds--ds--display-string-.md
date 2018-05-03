@@ -4,7 +4,7 @@ description: The ds and dS commands display a STRING, ANSI_STRING, or UNICODE_ST
 ms.assetid: cb05e89c-6c83-476b-a577-a6aeefd8cdd6
 keywords: ["ds, dS (Display String) Windows Debugging"]
 ms.author: domars
-ms.date: 04/10/2018
+ms.date: 05/03/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -23,7 +23,7 @@ The **ds** and **dS** commands display a STRING, ANSI\_STRING, or UNICODE\_STRIN
 
 These commands do not display null-delimited character strings, but rather string structures.
 
-If you have the address of the characters of a Unicode string then use the du command instead. For more information, see [d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)](https://docs.microsoft.com/windows-hardware/drivers/debugger/d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor).
+If you have the address of the characters of a Unicode string then use the du command instead. Use the da command to display ASCII characters. For more information, see [d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)](https://docs.microsoft.com/windows-hardware/drivers/debugger/d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor).
 
 ```
 d{s|S} [/c Width] [Address]

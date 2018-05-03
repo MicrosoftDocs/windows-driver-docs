@@ -114,7 +114,6 @@ Kdexts.dll
 
 For information about [Driver Verifier](http://go.microsoft.com/fwlink/p/?linkid=120480), see the Windows Driver Kit (WDK) documentation.
 
-For more information and downloads, see the [Driver Verifier](http://go.microsoft.com/fwlink/p/?linkid=8753) on the Windows Hardware Developer Central (WHDC).
 
 Remarks
 -------
