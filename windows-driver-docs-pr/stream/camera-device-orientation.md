@@ -2,7 +2,7 @@
 
 Starting with Window 10, version 1607, all camera drivers are required to explicitly specify the camera orientation regardless if the camera is mounted in accordance with the [Minimum hardware requirements](https://docs.microsoft.com/en-us/windows-hardware/design/minimum/minimum-hardware-requirements-overview). 
 
-Specifically, a camera driver must set a newly introduced field, **Rotation**, in the ACPI \_PLD structure associated with a capture device interface:
+Specifically, a camera driver must set a new **Rotation** field in the ACPI \_PLD structure associated with a capture device interface:
 
 ```
 typedef struct _ACPI_PLD_V2_BUFFER {
@@ -50,17 +50,17 @@ One way to solve the problem is to use the ACPI \_PLD structure which already ha
 
 ![ACPI PLD panel field](images/acpi-pld-panel-field.png) 
 
-Definition of ACPI \_PLD Panel field (Rev. 5.0a)
+*Definition of ACPI \_PLD Panel field (Rev. 5.0a)*
 
 The next two diagrams illustrate the definition of each panel visually:
 
 ![Panel definitions - desktop](images/panel-definitions-desktop.png)
 
-Panel definitions for desktop PCs and most devices
+*Panel definitions for desktop PCs and most devices*
 
 ![Panel definitions - foldable devices](images/panel-definitions-foldable-devices.png)
 
-Panel definitions for foldable devices
+*Panel definitions for foldable devices*
 
 The concept of an ACPI *panel* is already adopted by Windows where:
 
