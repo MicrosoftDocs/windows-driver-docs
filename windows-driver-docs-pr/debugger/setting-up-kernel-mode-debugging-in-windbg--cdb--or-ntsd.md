@@ -4,7 +4,7 @@ description: This section describes how to set up kernel-mode debugging manually
 ms.assetid: 268DF246-46AA-4F4E-BCBB-FCA37A3C0353
 keywords: ["Kernel-mode debugging", "Setting up kernel-mode debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 05/03/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -32,7 +32,6 @@ This section describes how to set up kernel-mode debugging manually.
 
 [Setting Up Debugging (Kernel-Mode and User-Mode)](getting-set-up-for-debugging.md)
 
-[Setting Up Kernel-Mode Debugging in Visual Studio](setting-up-kernel-mode-debugging-in-visual-studio.md)
 
  
 
