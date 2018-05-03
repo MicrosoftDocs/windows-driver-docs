@@ -32,7 +32,7 @@ typedef struct _ACPI_PLD_V2_BUFFER {
      USHORT VerticalOffset;
      USHORT HorizontalOffset;
 
- } ACPI_PLD_V2_BUFFER, *PACPI_PLD_V\_BUFFER;
+ } ACPI_PLD_V2_BUFFER, *PACPI_PLD_V_BUFFER;
  ```
 
 For camera, the **Rotation** field in an ACPI \_PLD structure specifies the number of degrees ('0' for 0°, '2' for 90°, '4' for 180°, and '6' for 270°) a captured frame is rotated relative to the screen while the display is in its native orientation.
@@ -80,10 +80,9 @@ Instead of using the definition above "as is", we'll further refine it to avoid 
 
 ## Landscape Primary vs. Portrait Primary
 
-s
 Depending on the form factor, devices may be defined as Landscape Primary or Portrait Primary, this is defined as the value returned from [Windows.Graphics.Display.DisplayInformation.NativeOrientation](https://docs.microsoft.com/en-us/uwp/api/Windows.Graphics.Display.DisplayInformation#Windows_Graphics_Display_DisplayInformation_NativeOrientation) property.
 
-Regardless of whether a device is Landscape or Portrait Primary, the ACPI's definition of *origin* is always the lower left corner of the panel as the user is facing the panel. The recommended mounting orientation for camera sensors is such that the scan lines of the sensor goes from left to right horizontally from the ACPI panel's lower left corner (origin) to the lower right corner.
+Regardless of whether a device is Landscape or Portrait Primary, the ACPI definition of *origin* is always the lower left corner of the panel as the user is facing the panel. The recommended mounting orientation for camera sensors is such that the scan lines of the sensor goes from left to right horizontally from the ACPI panel's lower left corner (origin) to the lower right corner.
 
 This is the Reference Orientation of the sensor.
 
@@ -114,7 +113,7 @@ This is the *recommended* solution to non-Reference Orientation mounting of came
 
 This includes any DirectShow applications and most of the MF/MediaCapture based applications.
 
-![NOTE]
+> [!NOTE]
 > When Auto Correct is used, OEMs and IHVs must NOT advertise the actual orientation of the sensor via the \_PLD's Rotation field. In this case, the Rotation field must indicate the orientation after the correction: 0 degrees*.
 
 ### \_PLD Rotation
