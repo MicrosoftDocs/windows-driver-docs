@@ -2,7 +2,7 @@
 
 Starting with Window 10, version 1607, all camera drivers are required to explicitly specify the camera orientation regardless if the camera is mounted in accordance with the [Minimum hardware requirements](https://docs.microsoft.com/en-us/windows-hardware/design/minimum/minimum-hardware-requirements-overview). 
 
-Specifically, a camera driver must set a newly introduced field, *Rotation*, in the ACPI \_PLD structure associated with a capture device interface:
+Specifically, a camera driver must set a newly introduced field, **Rotation**, in the ACPI \_PLD structure associated with a capture device interface:
 
 ```
 typedef struct _ACPI_PLD_V2_BUFFER {
@@ -35,13 +35,11 @@ typedef struct _ACPI_PLD_V2_BUFFER {
  } ACPI_PLD_V2_BUFFER, *PACPI_PLD_V\_BUFFER;
  ```
 
-The definition of the Rotation field is defined as follow:
-
-- For camera, the Rotation field in an ACPI \_PLD structure specifies the number of degrees (‘0’ for 0°, ‘2’ for 90°, ‘4’ for 180°, and ‘6’ for 270°) a captured frame is rotated relative to the screen while the display is in its native orientation.
+For camera, the **Rotation** field in an ACPI \_PLD structure specifies the number of degrees ('0' for 0°, '2' for 90°, '4' for 180°, and '6' for 270°) a captured frame is rotated relative to the screen while the display is in its native orientation.
 
 Based on the value in the **Rotation** field, an application can perform additional rotation, if necessary, in order to render captured frames correctly.
 
-## Detailed Design
+## Design overview
 
 
 For those devices whose cameras and displays share the same housing or *enclosure*/*casing* (phones, tablets, notebooks, and all-in-one PCs), it is possible to have these peripherals be mounted on different surfaces (front/back, top/bottom, or left/right surface of an enclosure) with each of them being rotated by a fixed yet arbitrary degrees on its respective plane (typically limited to 0, 90, 180, or 270 degrees clockwise in practice). Note that traditional desktop PCs do not fall into this category as cameras and displays are typically connected as external peripherals and they can be physically manipulated in 3D space at runtime.
@@ -50,17 +48,17 @@ Consequently, an application needs a mechanism to describe the spatial relations
 
 One way to solve the problem is to use the ACPI \_PLD structure which already has the concepts of *surface* and *degrees of rotation* defined (see [http://www.uefi.org/acpi](http://www.uefi.org/acpi) for the full specification). For example, the \_PLD structure already has *panel* field which specifies the surface on which a peripheral reside:
 
-![ACPI PLD panel field](acpi-pld-panel-field.png) 
+![ACPI PLD panel field](images/acpi-pld-panel-field.png) 
 
 Definition of ACPI \_PLD Panel field (Rev. 5.0a)
 
 The next two diagrams illustrate the definition of each panel visually:
 
-![Panel definitions - desktop](panel-definitions-desktop.png)
+![Panel definitions - desktop](images/panel-definitions-desktop.png)
 
 Panel definitions for desktop PCs and most devices
 
-![Panel definitions - foldable devices](panel-definitions-foldable-devices.png)
+![Panel definitions - foldable devices](images/panel-definitions-foldable-devices.png)
 
 Panel definitions for foldable devices
 
@@ -72,30 +70,30 @@ The concept of an ACPI *panel* is already adopted by Windows where:
 
 The ACPI \_PLD structure also has a Rotation field defined as follow:
 
-![ACPI PLD rotation field](acpi-pld-rotation-field.png)
+![ACPI PLD rotation field](images/acpi-pld-rotation-field.png)
 
 *Definition of ACPI \_PLD Rotation field (Rev 5.0a)*
 
 Instead of using the definition above "as is", we'll further refine it to avoid ambiguity:
 
-- For camera, the Rotation field in an ACPI \_PLD structure specifies the number of degrees (‘0’ for 0°, ‘2’ for 90°, ‘4’ for 180°, and ‘6’ for 270°) a captured frame is rotated relative to the screen while the display is in its native orientation.
+- For camera, the Rotation field in an ACPI \_PLD structure specifies the number of degrees ('0' for 0°, '2' for 90°, '4' for 180°, and '6' for 270°) a captured frame is rotated relative to the screen while the display is in its native orientation.
 
 ## Landscape Primary vs. Portrait Primary
 
-
+s
 Depending on the form factor, devices may be defined as Landscape Primary or Portrait Primary, this is defined as the value returned from [Windows.Graphics.Display.DisplayInformation.NativeOrientation](https://docs.microsoft.com/en-us/uwp/api/Windows.Graphics.Display.DisplayInformation#Windows_Graphics_Display_DisplayInformation_NativeOrientation) property.
 
-Regardless of whether a device is Landscape or Portrait Primary, the ACPI’s definition of *origin* is always the lower left corner of the panel as the user is facing the panel. The recommended mounting orientation for camera sensors is such that the scan lines of the sensor goes from left to right horizontally from the ACPI panel’s lower left corner (origin) to the lower right corner.
+Regardless of whether a device is Landscape or Portrait Primary, the ACPI's definition of *origin* is always the lower left corner of the panel as the user is facing the panel. The recommended mounting orientation for camera sensors is such that the scan lines of the sensor goes from left to right horizontally from the ACPI panel's lower left corner (origin) to the lower right corner.
 
 This is the Reference Orientation of the sensor.
 
-![Landscape Primary - Sensor Scan Direction](landscape-primary-sensor-scan-direction.png)
+![Landscape Primary - Sensor Scan Direction](images/landscape-primary-sensor-scan-direction.png)
 
 *Landscape Primary : Sensor Scan Direction*
 
 Similarly, for Portrait Primary, the Reference Orientation of the sensor is as diagramed below:
 
-![Portrait Primary - Sensor Scan Direction](portrait-primary-sensor-scan-direction.png)
+![Portrait Primary - Sensor Scan Direction](images/portrait-primary-sensor-scan-direction.png)
 
 *Portrait Primary : Sensor Scan Direction*
 
@@ -117,7 +115,7 @@ This is the *recommended* solution to non-Reference Orientation mounting of came
 This includes any DirectShow applications and most of the MF/MediaCapture based applications.
 
 ![NOTE]
-> When Auto Correct is used, OEMs and IHVs must NOT advertise the actual orientation of the sensor via the \_PLD’s Rotation field. In this case, the Rotation field must indicate the orientation after the correction: 0 degrees*.
+> When Auto Correct is used, OEMs and IHVs must NOT advertise the actual orientation of the sensor via the \_PLD's Rotation field. In this case, the Rotation field must indicate the orientation after the correction: 0 degrees*.
 
 ### \_PLD Rotation
 
@@ -129,7 +127,7 @@ The following diagrams illustrate the values of the \_PLD Rotation field for eac
 
 **Rotation: 0 degree clockwise (Reference Orientation)**
 
-![Rotation - 0 degree clockwise - Reference Orientation](rotation-0-degree-reference-orientation.png)
+![Rotation - 0 degree clockwise - Reference Orientation](images/rotation-0-degree-reference-orientation.png)
 
 In the diagram above:
 
@@ -143,7 +141,7 @@ In the diagram above:
 
 **Rotation: 90 degrees clockwise**
 
-![Rotation - 90 degrees clockwise](rotation-90-degrees-clockwise.png)
+![Rotation - 90 degrees clockwise](images/rotation-90-degrees-clockwise.png)
 
 In this case, the content of the media buffer is rotated by 90 degrees clockwise compared to the original scene. As a result, the ACPI \_PLD Rotation field has a value of 2.
 
@@ -153,7 +151,7 @@ The application reading the \_PLD Rotation information would correct the image b
 
 **Rotation - 180 degrees clockwise**
 
-![Rotation - 180 degrees clockwise](rotation-180-degrees-clockwise.png)
+![Rotation - 180 degrees clockwise](images/rotation-180-degrees-clockwise.png)
 
 In this case, the content of the media buffer is rotated by 180 degrees clockwise compared to the original scene. As a result, the ACPI \_PLD Rotation field has a value of 4.
 
@@ -163,7 +161,7 @@ The application reading the \_PLD Rotation information would correct the image b
 
 **Rotation: 270 degrees clockwise**
 
-![Rotation - 270 degrees clockwise](rotation-270-degrees-clockwise.png)
+![Rotation - 270 degrees clockwise](images/rotation-270-degrees-clockwise.png)
 
 In this case, the content of the media buffer is rotated by 270 degrees clockwise compared to the original scene. As a result, the ACPI \_PLD Rotation field has a value of 6.
 
