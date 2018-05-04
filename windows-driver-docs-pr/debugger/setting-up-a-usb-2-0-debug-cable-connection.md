@@ -4,7 +4,7 @@ description: Debugging Tools for Windows supports kernel debugging over a USB 2.
 ms.assetid: 8dd0703a-ddcd-461f-b164-1c079a93bb3a
 keywords: ["setup, making a USB 2.0 cable connection", "cable connection, USB 2.0 debug cable", "USB 2.0 debugging connection", "USB 2.0 debugging connection, setting up the hardware", "USB 2.0 debugging connection, software requirements"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 05/03/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,8 +14,6 @@ ms.technology: windows-devices
 
 
 Debugging Tools for Windows supports kernel debugging over a USB 2.0 cable. This topic describes how to set up USB 2.0 debugging manually.
-
-As an alternative to setting up USB 2.0 debugging manually, you can do the setup using Microsoft Visual Studio. For more information, see [Setting Up Kernel-Mode Debugging over a USB 2.0 Cable in Visual Studio](setting-up-a-usb-2-0-cable-connection-in-visual-studio.md).
 
 The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*.
 
