@@ -106,7 +106,7 @@ You can use Control Panel to allow access through the Windows firewall. Open Con
 ## <span id="related_topics"></span>Related topics
 
 
-[Setting Up Network Debugging of a Virtual Machine Host](setting-up-a-network-debugging-of-a-virtual-machine-host.md)
+[Setting Up Network Debugging of a Virtual Machine Host](setting-up-network-debugging-of-a-virtual-machine-host.md)
  
 
  
