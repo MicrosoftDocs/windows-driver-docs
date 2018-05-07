@@ -24,7 +24,7 @@ Use the guidance in this section to design and implement drivers for devices tha
 -   [DShow Bridge implementation guidance for UVC devices](dshow-bridge-implementation-guidance-for-usb-video-class-devices.md)
 -   [Camera class INF file setting for Universal camera drivers](camera-driver-inf-file-class-setting.md) (new for Windows 10, version 1709)
 -   [USB Video Class (UVC) driver implementation checklist](uvc-driver-implementation-checklist.md) (new for Windows 10, version 1703)
-    [Camera Device Orientation](camera-device-orientation.md)
+-   [Camera Device Orientation](camera-device-orientation.md)
 -   [AVStream Minidrivers](avstream-minidrivers-design-guide.md)
 -   [Windows 2000 Kernel Streaming Model Design Guide](windows-2000-kernel-streaming-model-design-guide.md)
 -   [Kernel Streaming Proxy Plug-ins](kernel-streaming-proxy-plug-ins-design-guide.md)
