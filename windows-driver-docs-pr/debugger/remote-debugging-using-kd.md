@@ -1,9 +1,9 @@
 ---
 title: Remote Debugging Using KD
-description: Remote debuggng involves two debuggers running at two different locations.
+description: Remote debugging involves two debuggers running at two different locations.
 ms.assetid: 274CAB1D-DD3B-4ACD-919C-8B8C253BCE50
 ms.author: domars
-ms.date: 11/28/2017
+ms.date: 05/03/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -12,9 +12,11 @@ ms.technology: windows-devices
 # Remote Debugging Using KD
 
 
-Remote debuggng involves two debuggers running at two different locations. The debugger that performs the debugging is called the *debugging server*. The second debugger, called the *debugging client*, controls the debugging session from a remote location. To establish a remote session, you must set up the debugging server first and then activate the debugging client.
+Remote debugging involves two debuggers running at two different locations. The debugger that performs the debugging is called the *debugging server*. The second debugger, called the *debugging client*, controls the debugging session from a remote location. To establish a remote session, you must set up the debugging server first and then activate the debugging client.
 
-The code that is being debugged could be running on the same computer that is running the debugging server, or it could be running on a separate computer. If the debugging server is performing user-mode debugging, then the process that is being debugged can run on the same computer as the debugging server. If the debugging server is performing kernel-mode debugging, then the code being debugged would typcially run on a separate target computer.
+Remote debugging can be useful when you would like to involve someone else in looking at an issue, that you are debugging on a PC.
+
+The code that is being debugged could be running on the same computer that is running the debugging server, or it could be running on a separate computer. If the debugging server is performing user-mode debugging, then the process that is being debugged can run on the same computer as the debugging server. If the debugging server is performing kernel-mode debugging, then the code being debugged would typically run on a separate target computer.
 
 The following diagram illustrates a remote session where the debugging server, running on a host computer, is performing kernel-mode debugging of code that is running on a separate target computer.
 
