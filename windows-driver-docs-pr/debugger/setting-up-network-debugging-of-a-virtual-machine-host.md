@@ -26,8 +26,7 @@ If you decide to set up network debugging after the Hyper-V role has been instal
 
 ## <span id="related_topics"></span>Related topics
 
-
-[Setting Up Network Debugging in Visual Studio](setting-up-a-network-debugging-connection-in-visual-studio.md)
+[Setting Up Kernel-Mode Debugging of a Virtual Machine Manually](attaching-to-a-virtual-machine--kernel-mode-.md)
 
 [Setting Up a Network Connection Manually](setting-up-a-network-debugging-connection.md)
 

@@ -4,18 +4,16 @@ description: Debugging Tools for Windows supports kernel debugging of a virtual 
 ms.assetid: e863e664-8338-4bbe-953b-e000a6843db9
 keywords: ["virtual machine debugging", "Virtual PC debugging", "VMware debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 05/04/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Setting Up Kernel-Mode Debugging of a Virtual Machine Manually
+# Setting Up Kernel-Mode Debugging of a Virtual Machine Manually using a Virtual COM Port
 
 
 Debugging Tools for Windows supports kernel debugging of a virtual machine. The virtual machine can be located on the same physical computer as the debugger or on a different computer that is connected to the same network. This topic describes how to set up debugging of a virtual machine manually.
-
-As an alternative to setting up debugging of a virtual machine manually, you can do the setup using Microsoft Visual Studio. For more information, see [Setting Up Kernel-Mode Debugging of a Virtual Machine in Visual Studio](setting-up-a-connection-to-a-virtual-machine-in-visual-studio.md).
 
 The computer that runs the debugger is called the *host computer*, and the virtual machine being debugged is called the *target virtual machine*.
 
@@ -34,7 +32,6 @@ The computer that runs the debugger is called the *host computer*, and the virtu
 3.  In the virtual machine, configure the COM port to map to a named pipe. The debugger will connect through this pipe. For more information about how to create this pipe, see your virtual machine's documentation.
 
 ## <span id="starting_the_debugger"></span><span id="STARTING_THE_DEBUGGER"></span>Starting the Debugging Session Using WinDbg
-
 
 On the host computer, open WinDbg. On the **File** menu, choose **Kernel Debug**. In the Kernel Debugging dialog box, open the **COM** tab. Check the **Pipe** box, and check the **Reconnect** box. For **Baud Rate**, enter 115200. For **Resets**, enter 0.
 
@@ -114,8 +111,24 @@ If the target computer has stopped responding, the target computer is still stop
 
 Otherwise, the target computer continues running until the debugger orders it to break.
 
-**Note**  If you restart the virtual machine by using the VMWare facilities (for example, the reset button), exit WinDbg, and then restart WinDbg to continue debugging.
-During virtual machine debugging, VMWare often consumes 100% of the CPU.
+
+## <span id="Firewalls"></span>Troubleshooting Firewalls and Network Access Issues
+
+Your debugger (WinDbg or KD) must have access through the firewall. This can even be the case for virtual serial ports that are supported by network adapters.
+
+If you are prompted by Windows to turn off the firewall when the debugger is loaded, select all three boxes.
+
+Depending on the specifics of the VM in use, you may need to change the network settings for your virtual machines to bridge them to the Microsoft Kernel Network Debug Adapter. Otherwise, the virtual machines will not have access to the network.
+
+**Windows Firewall**
+
+You can use Control Panel to allow access through the Windows firewall. Open Control Panel > System and Security, and select Allow an app through Windows Firewall. In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*. Use the check boxes to allow those two applications through the firewall. Restart your debugging application (WinDbg or KD).
+
+
+## <span id="Third_Party_VMs"></span>Third Party VMs
+
+**VMWare**  
+If you restart the virtual machine by using the VMWare facilities (for example, the reset button), exit WinDbg, and then restart WinDbg to continue debugging. During virtual machine debugging, VMWare often consumes 100% of the CPU.
 
  
 
@@ -125,7 +138,7 @@ During virtual machine debugging, VMWare often consumes 100% of the CPU.
 [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
 
  
-
+[Setting Up Network Debugging of a Virtual Machine Host](setting-up-network-debugging-of-a-virtual-machine-host.md)
  
 
 
