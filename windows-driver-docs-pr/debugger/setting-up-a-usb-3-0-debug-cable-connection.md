@@ -3,7 +3,7 @@ title: Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually
 description: Debugging Tools for Windows supports kernel debugging over a USB 3.0 cable. This topic describes how to set up USB 3.0 debugging manually.
 ms.assetid: 9A9F5DA0-B98A-4C19-A723-67D06B2409B5
 ms.author: domars
-ms.date: 11/28/2017
+ms.date: 05/03/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -13,8 +13,6 @@ ms.technology: windows-devices
 
 
 Debugging Tools for Windows supports kernel debugging over a USB 3.0 cable. This topic describes how to set up USB 3.0 debugging manually.
-
-As an alternative to setting up USB 3.0 debugging manually, you can do the setup using Microsoft Visual Studio. For more information, see [Setting Up Kernel-Mode Debugging over a USB 3.0 Cable in Visual Studio](setting-up-a-usb-3-0-cable-connection-in-visual-studio.md).
 
 The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*.
 

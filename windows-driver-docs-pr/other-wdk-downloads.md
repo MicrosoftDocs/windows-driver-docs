@@ -130,7 +130,7 @@ Debugging Tools for Windows (WinDbg) are included in the WDK 8.1 Update, but you
 
 ## ![download icon](images/download-install.png) Remote Debugging client for Windows 8.1
 With the Windows Remote Debugging client, you can work remotely with developers from Microsoft, over the internet, to debug kernel-mode failures using the kernel debugger. 
-* [Learn more and prepare for remote debugging.](https://msdn.microsoft.com/library/windows/hardware/br230785)
+* [Learn more and prepare for remote debugging.](https://docs.microsoft.com/windows-hardware/drivers/dashboard/remote-debugging)
 * [Download the Remote Debugging client](http://go.microsoft.com/fwlink/p/?LinkId=316921) (English only)  
 
 ## ![download icon](images/download-install.png) WDK 8
