@@ -7,7 +7,7 @@ keywords:
 - previous versions
 - WDK
 ms.author: windowsdriverdev
-ms.date: 02/02/2018
+ms.date: 05/07/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
