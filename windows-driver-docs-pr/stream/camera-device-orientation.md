@@ -1,4 +1,19 @@
-# Driver Support for Camera Orientation
+---
+title: Driver support for camera orientation
+description: Provides information about how to explicitly specify the camera orientation on a device.
+ms.author: windowsdriverdev
+ms.date: 05/07/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+---
+
+# Driver support for camera orientation
+
+
+
+> [!IMPORTANT]
+> The Auto-correct method discussed later in this topic is the *recommended* solution to non-reference orientation mounting of camera sensors. This is to ensure app compatibility since the majority of the applications already written to use camera feeds do not know to check for, nor correct for rotation information. Please carefully review the information in the auto-correct section below.
 
 Starting with Window 10, version 1607, all camera drivers are required to explicitly specify the camera orientation regardless if the camera is mounted in accordance with the [Minimum hardware requirements](https://docs.microsoft.com/en-us/windows-hardware/design/minimum/minimum-hardware-requirements-overview). 
 
