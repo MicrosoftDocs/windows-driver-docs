@@ -9,7 +9,7 @@ keywords:
 - vendor-supplied drivers WDK audio
 - PortCls WDK audio , custom audio drivers
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Custom Audio Drivers
 
 
-Audio devices that are not UAA-compatible require vendor-supplied custom drivers. In addition, a UAA-compatible audio adapter can incorporate proprietary features that are not supported by the UAA class drivers; these features are accessible to applications only if the vendor provides a custom audio driver. Only the standard UAA features are accessible through the system-supplied UAA drivers. For information about UAA-supported features, see the white paper titled Universal Audio Architecture on the [audio technology](http://go.microsoft.com/fwlink/p/?linkid=8751) page on the WHDC website.
+Audio devices that are not UAA-compatible require vendor-supplied custom drivers. In addition, a UAA-compatible audio adapter can incorporate proprietary features that are not supported by the UAA class drivers; these features are accessible to applications only if the vendor provides a custom audio driver. Only the standard UAA features are accessible through the system-supplied UAA drivers. For information about UAA-supported features, see the [Universal Audio Architecture](http://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/UAA_Guidelines.doc) white paper.
 
 Two options are available to hardware vendors for writing custom audio drivers: developing a custom audio-adapter driver for use with the PortCls system driver (Portcls.sys), or developing a custom minidriver for use with the AVStream class system driver (Ks.sys).
 
