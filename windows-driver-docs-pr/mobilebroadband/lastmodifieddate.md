@@ -79,7 +79,7 @@ There are no child elements.
 
 -   The value of the LastModifiedDate element must represent the actual time that the metadata package was last changed.
 
--   Each time you submit your service metadata package to the Windows Dev Center Dashboard for distribution through Windows Metadata and Internet Services (WMIS), the WHDC Dashboard modifies the LastModifiedDate element after it validates your package.
+-   Each time you submit your service metadata package to the Windows Hardware Dev Center Dashboard for distribution through Windows Metadata and Internet Services (WMIS), the LastModifiedDate element is updated after your package is validated.
 
 The LastModifiedDate element is required.
 
