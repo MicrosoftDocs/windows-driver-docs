@@ -3,7 +3,7 @@ title: Boot Parameters to Test Drivers for Multiple Processor Group Support
 description: Boot Parameters to Test Drivers for Multiple Processor Group Support
 ms.assetid: 8ce311d6-a182-4d04-a453-81f6abe2043b
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -19,7 +19,7 @@ When a process is created, the process is assigned to a specific group. By defau
 
 Starting with Windows 7, an application or driver can make use of functions that extend the legacy APIs. These new group-aware functions accept a group number argument to unambiguously qualify a processor number or affinity mask, and therefore can manipulate processors outside of the calling thread's group. The interaction between drivers and components running in different groups within a computer introduces the potential for bugs when legacy APIs or DDIs are involved. You can use the legacy non-group-aware APIs on Windows 7 and Windows Server 2008 R2. However, driver requirements are more stringent. For functional correctness of drivers on computers that have more than one processor group, you must replace any DDI that either accepts a processor number or mask as a parameter without an accompanying processor group or returns a processor number or mask without an accompanying processor group. These legacy non-group-aware DDIs can perform erratically on a computer that has multiple process groups because the inferred group may be different than what the calling thread intended. Therefore, drivers that use these legacy DDIs and are targeted for Windows Server 2008 R2 must be updated to use the new extended versions of the interfaces. Drivers that do not call any functions that use processor affinity masks or processor numbers will operate correctly, regardless of the number of processors. Drivers that call the new DDIs can run on previous versions of Windows by including the procgrp.h header, calling [**WdmlibProcgrpInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff565629), and linking against the [Processor Group Compatibility Library](https://msdn.microsoft.com/library/windows/hardware/ff559909) (procgrp.lib).
 
-For more information on the new group-aware APIs and DDIs, download the white paper [Supporting System that Have More than 64 Logical Processors: Guideline for Developers](http://go.microsoft.com/fwlink/p/?linkid=147914) from WHDC.
+For more information on the new group-aware APIs and DDIs, download the white paper [Supporting System that Have More than 64 Logical Processors: Guideline for Developers](http://go.microsoft.com/fwlink/p/?linkid=147914).
 
  
 

@@ -19,7 +19,7 @@ keywords:
 - GUID Generator WDK
 - GUIDGen.exe WDK
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -77,8 +77,6 @@ The information in the following tables describes the tools that are useful for 
 <p><strong>WDK tool:</strong> No</p></td>
 <td align="left"><p>%Windir%\System32\Dccw.exe</p></td>
 <td align="left"><p>A calibration tool that lets users adjust their display color to be closer to the Windows and World Wide Web international standard red-green-blue (sRGB) color space.</p>
-<p>WHDC Documentation:</p>
-<p>[MCCS Use by Windows 7 Display Color Calibration Tool](http://go.microsoft.com/fwlink/p/?linkid=150003)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>GraphEdt (Graphedt.exe)</p>
