@@ -38,7 +38,7 @@ The primary differences between the WpdHelloWorldDriver and the WpdMultiTranspor
 
  
 
-To explore the capabilities of a multitransport driver and to test actual transport switching, you can install the [Device Enabling Kit](http://go.microsoft.com/fwlink/p/?linkid=146334) from the WHDC Web site and use the MTP simulator (*MtpSimUi.exe)* application. By using this application, you can install Microsoft's MTP driver, connect or disconnect from the emulated device, and switch transports.
+To explore the capabilities of a multitransport driver and to test actual transport switching, you can install the [Media Transfer Protocol Porting Kit](https://www.microsoft.com/download/details.aspx?id=19153) and use the MTP simulator (*MtpSimUi.exe)* application. By using this application, you can install Microsoft's MTP driver, connect or disconnect from the emulated device, and switch transports.
 
 ## <span id="related_topics"></span>Related topics
 
