@@ -439,7 +439,7 @@ The following table lists Operating System Codes and their descriptions.
 | Windows_v100_X64_RS3_Full | Windows 10 RS3 Client x64 |
 | Windows_v100_ARM64_RS3_Full | Windows 10 RS3 Client ARM64 |
 | Windows_v100Server_x64_RS3_Full | Windows Server RS3 x64 |
-| WINDOWS_v100_ARM64_RS3_FULL_PRE_RELEASE_CLOUD | Windows 10 S RS3 Client ARM64 Pre Release |
+| WINDOWS_v100_ARM64_RS3_FULL_PRE_RELEASE_CLOUD | Windows 10 in S mode RS3 Client ARM64 Pre Release |
 
 
 ## Error codes
