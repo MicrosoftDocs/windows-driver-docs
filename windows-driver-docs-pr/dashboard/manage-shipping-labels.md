@@ -13,15 +13,15 @@ ms.technology: windows-devices
 Use the following methods in *Microsoft Hardware APIs* to manage shipping lables for your submissions. For an introduction to Microsoft Hardware APIs, including prerequisites for using the API, see [Manage hardware submissions using APIs](dashboard-api.md).
 
 ```
-https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels
+https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels
 ```
 
 Methods for managing shipping labels
 
 | Method | URI | Description |
 |:--|:--|:--|
-|POST|`https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels`|[Create a new shipping label](create-a-new-shipping-label.md)|
-|PATCH|`https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels/{shippingLabelId}`|[Update a shipping label](update-a-shipping-label.md)|
+|POST|`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels`|[Create a new shipping label](create-a-new-shipping-label.md)|
+|PATCH|`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels/{shippingLabelId}`|[Update a shipping label](update-a-shipping-label.md)|
 
 ##Create a new shipping label
 
@@ -34,7 +34,7 @@ Methods for managing shipping labels
 4.  [Create a new shipping label](create-a-new-shipping-label.md) for this submission by executing the following method in the Microsoft Hardware API.  Use the ProductID and SubmissionID created in the step above.
     
     ```
-    https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels
+    https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels
     ```
     
     The response body contains a [shipping label resource](get-shipping-labels.md#shippinglabel-resource) which includes the ID for the newly created shipping label and other details.
