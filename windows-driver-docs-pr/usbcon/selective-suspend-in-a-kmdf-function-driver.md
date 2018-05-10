@@ -3,7 +3,7 @@ Description: This topic describes how KMDF function drivers support USB selectiv
 title: Selective suspend in USB KMDF function drivers
 author: windows-driver-content
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ After the device has been suspended, the framework automatically resumes the dev
 
 To resume the device, KMDF sends a power-up request down the device stack and then invokes the driver’s callback functions in the same way that it would for any other power-up sequence.
 
-For detailed information about the callbacks that are involved in the power-down and power-up sequences, see “Plug and Play and Power Management in WDF Drivers” on the WHDC Web site.
+For detailed information about the callbacks that are involved in the power-down and power-up sequences, see the [Plug and Play and Power Management in WDF Drivers](http://download.microsoft.com/download/5/d/6/5d6eaf2b-7ddf-476b-93dc-7cf0072878e6/WDF-pnpPower.docx) white paper.
 
 ## Supporting USB selective suspend in a KMDF function driver
 
