@@ -13,6 +13,7 @@ ms.technology: windows-devices
 
 # Signature Score
 
+This page describes the signature score for Windows drivers. Signature score is one of three scores comprised in a driver rank. Information on this page applies only to Windows Vista and later versions of the operating system.
 
 A driver rank is formatted as 0x*SSGGTHHH*, where the value of 0x*SS*000000 is the signature score, the value of 0x00*GG*0000 is the [feature score](feature-score--windows-vista-and-later-.md), and the value of 0x0000*THHH* is the [identifier score](identifier-score--windows-vista-and-later-.md).
 
