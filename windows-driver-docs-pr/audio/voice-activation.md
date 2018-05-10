@@ -3,7 +3,7 @@ title: Voice Activation
 description: Cortana, the personal assistant technology introduced on Windows Phone, is supported on Windows 10 devices.
 ms.assetid: 0684EF32-AA76-418B-9027-1C067A8140E3
 ms.author: windowsdriverdev
-ms.date: 04/16/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
