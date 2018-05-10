@@ -23,7 +23,7 @@ This method has the following syntax. See the following sections for usage examp
 
 | Method | Request URI |
 |:--|:--|
-| PATCH | `https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/{productID}/submissions/{submissionId}/shippingLabels/{shippingLabelId}` | 
+| PATCH | `https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}/submissions/{submissionId}/shippingLabels/{shippingLabelId}` | 
 
 The productID, submissionID and shippingLabelId in the method represent the product, submission and shipping label which needs to be updated.
 
@@ -92,7 +92,7 @@ For details about the fields in the request, refer to [shipping label resource](
 The following example demonstrates how to update a product.
 
 ```json 
-PATCH https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/14461751976964156/submissions/1152921504621467600/shippingLabels/1152921504606980300 HTTP/1.1
+PATCH https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14461751976964156/submissions/1152921504621467600/shippingLabels/1152921504606980300 HTTP/1.1
 Authorization: Bearer <your access token>
 ```
 
