@@ -52,14 +52,5 @@ Other sections cover the following topics:
 
 [Printer Driver Testing and Debugging](printer-driver-testing-and-debugging.md)
 
-If you are creating a driver for a multifunction printer (MFP), see the [Multifunction Printer Design Recommendations](http://go.microsoft.com/fwlink/p/?linkid=38442) white paper on the Windows Hardware and Device Central (WHDC) Web site. A typical multifunction printer can print and make copies, send and receive faxes, and scan in documents.
-
-For more information about printer driver design, development, and testing, see [Printing - Architecture and Driver Support](http://go.microsoft.com/fwlink/p/?linkid=69253).
-
- 
-
- 
-
-
 
 

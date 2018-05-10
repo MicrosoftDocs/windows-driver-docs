@@ -13,11 +13,9 @@ ms.technology: windows-devices
 # Scan Service (WS-SCAN)
 
 
-More information about WS-Scan can be found at this [WHDC website](http://www.microsoft.com/whdc/connect/rally/wsdspecs.mspx ).
+[Scan Service (WS-Scan) Schema](https://docs.microsoft.com/en-us/windows-hardware/drivers/image/scan-service--ws-scan--schema)
 
- 
 
- 
 
 
 
