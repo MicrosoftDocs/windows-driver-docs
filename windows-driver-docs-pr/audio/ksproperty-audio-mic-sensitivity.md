@@ -12,7 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 05/10/2017
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -23,7 +23,8 @@ ms.technology: windows-devices
 The KSPROPERTY\_AUDIO\_MIC\_SENSITIVITY property specifies the microphone sensitivity in decibels relative to full scale (dBFS) units.
 
 > [!NOTE]
-> KSPROPERTY\_AUDIO\_MIC\_SENSITIVITY is deprecated starting with Windows 10 Version 1803. Use [KSPROPERTY\_AUDIO\_MIC\_SENSITIVITY2]() instead.
+> KSPROPERTY\_AUDIO\_MIC\_SENSITIVITY is deprecated starting with Windows 10 Version 1803. 
+> Use [KSPROPERTY\_AUDIO\_MIC\_SENSITIVITY2](ksproperty-audio-mic-sensitivity2.md) instead.
 
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 

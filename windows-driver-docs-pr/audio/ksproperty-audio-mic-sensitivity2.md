@@ -49,8 +49,6 @@ The KSPROPERTY\_AUDIO\_MIC\_SENSITIVITY2 property specifies the microphone sensi
 </tbody>
 </table>
 
- 
-
 The property value (operation data) is of type LONG and contains sensitivity information in decibels relative to dBFS units. The sensitivity value uses the following scale. The value uses fixed point decimal representation. The data is stored as a 16.16 fixed point value. The upper 16 bits are used for the whole number of the value and the lower 16 bits are used for the fractional portion of the value.
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
@@ -64,7 +62,7 @@ The audio driver can obtain microphone sensitivity for each microphone. This pro
 
 For Windows 10 voice recognition experiences such as Cortana to accurately detect and analyze user’s voice on various devices with different microphones, the OS needs to know certain characteristics of the input signal. Based on that information, the OS can calculate effective sensitivity and apply appropriate gain to enhance input signal. For more information, see [Voice Activation](https://msdn.microsoft.com/library/windows/hardware/mt593238).
 
-KSPROPERTY\_AUDIO\_MIC\_SENSITIVITY2 is available beginning with Windows 10 Version 1803.
+KSPROPERTY\_AUDIO\_MIC\_SENSITIVITY2 is available beginning with Windows 10 Version 1803 and supersedes [KSPROPERTY\_AUDIO\_MIC\_SENSITIVITY](ksproperty-audio-mic-sensitivity.md).
 
 
 Requirements
