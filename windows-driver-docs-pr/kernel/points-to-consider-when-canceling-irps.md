@@ -5,7 +5,7 @@ description: Points to Consider When Canceling IRPs
 ms.assetid: 16a47033-7147-43a2-a9f8-a215f7e90ff1
 keywords: ["canceling IRPs, guidelines", "Cancel routines, guidelines", "cancelable IRPs WDK kernel", "current states WDK IRPs"]
 ms.author: windowsdriverdev
-ms.date: 06/16/2017
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -17,7 +17,7 @@ ms.technology: windows-devices
 ## <a href="" id="ddk-points-to-consider-when-canceling-irps-kg"></a>
 
 
-This section discusses guidelines for implementing a *Cancel* routine and handling cancelable IRPs. For more information about handling cancelable IRPs, see the [Flow of Control for Cancel-Safe IRP Queuing](http://go.microsoft.com/fwlink/p/?linkid=57844) white paper on the Microsoft Windows Hardware Developer Central (WHDC) website.
+This section discusses guidelines for implementing a *Cancel* routine and handling cancelable IRPs. For more information about handling cancelable IRPs, see the [Flow of Control for Cancel-Safe IRP Queuing](http://go.microsoft.com/fwlink/p/?linkid=57844).
 
 ### General Guidelines for All Cancel Routines
 

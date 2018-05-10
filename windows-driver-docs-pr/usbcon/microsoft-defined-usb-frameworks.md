@@ -3,7 +3,7 @@ Description: This topic describes the Microsoft-provided driver framework for US
 title: Microsoft-Defined USB Driver Frameworks
 author: windows-driver-content
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -20,7 +20,7 @@ Currently Microsoft provides the following driver frameworks for the following U
 
 -   USB biometric devices
 
-    Microsoft supports USB biometric devices (fingerprint readers) by providing the Windows Biometric Framework. For more information please see the [Windows Biometric Framework](http://www.microsoft.com/whdc/device/biometric/default.mspx) website.
+    Microsoft supports USB biometric devices (fingerprint readers) by providing the Windows Biometric Framework. For more information see [Biometric Framework overview](https://msdn.microsoft.com/en-us/library/windows/desktop/dd560897.aspx).
 
 ## Related topics
 [Microsoft-provided USB drivers](system-supplied-usb-drivers.md)  

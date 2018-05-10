@@ -28,7 +28,7 @@ Before you begin, make sure that you meet the following requirements:
 **Software requirements**
 
 -   Your host computer hosts your development environment and has Visual Studio Professional 2012.
--   Your host computer has the latest Windows Driver Kit (WDK) for Windows 8. The kit include headers, libraries, tools, documentation, and the debugging tools required to develop, build, and debug a KMDF driver. To get the latest version of the WDK, see [How to Get the WDK](http://www.microsoft.com/whdc/DevTools/WDK/WDKpkg.mspx).
+-   Your host computer has the latest Windows Driver Kit (WDK) for Windows 8. The kit include headers, libraries, tools, documentation, and the debugging tools required to develop, build, and debug a KMDF driver. To get the latest version of the WDK, see [Download the Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
 -   Your host computer has the latest version of debugging tools for Windows. You can get the latest version from the WDK or you can [Download and Install Debugging Tools for Windows](http://msdn.microsoft.com/windows/hardware/gg463009.aspx).
 -   Your target computer is running Windows Vista or a later version of Windows.
 -   Your host and target computers are configured for kernel debugging. For more information, see [Setting Up a Network Connection in Visual Studio](https://msdn.microsoft.com/library/windows/hardware/hh439353).

@@ -23,7 +23,7 @@ This method has the following syntax. See the following sections for usage examp
 
 |Method|Request URI|
 |:--|:--|
-|GET|https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/{productID}|
+|GET|https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}|
 
 ### Request header
 
@@ -46,7 +46,7 @@ Do not provide a request body for this method.
 The following example demonstrates how to retrieve information about a specific product registered to your account.
 
 ```
-GET https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/14039471039847257 HTTP/1.1
+GET https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14039471039847257 HTTP/1.1
 Authorization: Bearer <your access token>
 ```
 
@@ -60,12 +60,12 @@ The following example demonstrates the JSON response body returned by a successf
   "sharedProductId": 1152921504606971100,
   "links": [
     {
-      "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products/9007199267351834",
+      "href": "https://manage.devcenter.microsoft.com/v1/hardware/products/9007199267351834",
       "rel": "self",
       "method": "GET"
     },
     {
-      "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products/9007199267351834/submissions",
+      "href": "https://manage.devcenter.microsoft.com/v1/hardware/products/9007199267351834/submissions",
       "rel": "get_submissions",
       "method": "GET"
     }

@@ -30,6 +30,6 @@ Support for the WSMT is included in the following versions of Windows:
 
 ## Related resources
 
-[Windows SMM Security Mitigations Table (WSMT)](http://www.microsoft.com/whdc/system/platform/virtual) 
+[Windows SMM Security Mitigations Table (WSMT)](http://go.microsoft.com/fwlink/p/?LinkId=786943)
 
 
