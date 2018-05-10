@@ -3,7 +3,7 @@ Description: This topic summarizes the new features and improvements for Univers
 title: Windows 8 - What's new for USB
 author: windows-driver-content
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/0/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -121,7 +121,7 @@ Microsoft Visual Studio 2012 includes **USB User-Mode Driver** and **USB Kernel
 
 For more information, see [Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md). Extend your driver by performing [Common tasks for USB client drivers](wdk-resources-for-usb-driver-development.md).
 
-For information about how to implement UMDF and KMDF drivers, see the Microsoft Press book *Developing Drivers with the Windows Driver Foundation* or the [WHDC Web site](http://www.microsoft.com/whdc/driver/wdf/default.mspx).
+For information about how to implement UMDF and KMDF drivers, see the Microsoft Press book *Developing Drivers with the Windows Driver Foundation*.
 
 ## UASP driver
 

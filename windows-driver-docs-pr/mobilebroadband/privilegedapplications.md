@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # PrivilegedApplications
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The PrivilegedApplications element specifies the app that will be allowed to access privileged Mobile Broadband interfaces.
 

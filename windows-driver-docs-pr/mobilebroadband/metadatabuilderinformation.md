@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # MetadataBuilderInformation
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The MetadataBuilderInformation element specifies information about the application that created the device metadata package.
 

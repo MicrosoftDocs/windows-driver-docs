@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # AllowTethering
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The AllowTethering element specifies whether the user is always allowed, never allowed, or allowed after an entitlement check to use Internet sharing.
 

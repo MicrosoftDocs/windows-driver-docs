@@ -7,7 +7,7 @@ keywords:
 - previous versions
 - WDK
 ms.author: windowsdriverdev
-ms.date: 02/02/2018
+ms.date: 05/07/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -16,6 +16,44 @@ ms.technology: windows-devices
 # Other WDK downloads
 
 Use the [latest public versions of the Windows Driver Kit (WDK) and tools](download-the-wdk.md) to develop drivers. This topic contains information about earlier versions of the WDK and additional downloads for support purposes.
+
+## WDK for Windows 10, version 1709
+
+### ![download icon](images/download-install.png) Step 1: Install Visual Studio 2017 
+The following editions of Visual Studio 2017 support driver development: 
+
+* [Download Visual Studio Community 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15)
+* [Download Visual Studio Professional 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15) 
+* [Download Visual Studio Enterprise 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15)
+
+When you install Visual Studio, select the **Desktop development with C++** workload. The Windows 10 Software Development Kit (SDK) is automatically included, and is displayed in the right-hand **Summary** pane. 
+
+For ARM/ARM64 driver development, choose **Individual components** and under **Compilers, build tools, and runtimes** select **Visual C++ compilers and libraries for ARM/ARM64**.
+
+
+### ![download icon](images/download-install.png) Step 2: Install WDK for Windows 10, version 1709
+
+* [Download WDK for Windows 10, version 1709](https://go.microsoft.com/fwlink/p/?linkid=859232) 
+
+New for this release: The WDK installation will by default install the WDK Visual Studio extension. This must be done in order for WDK VS integration to work. 
+
+## Enterprise WDK for Windows 10, version 1709 (EWDK) 
+
+The EWDK is a standalone self-contained command-line environment for building drivers. It includes the Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio Build Tools 15.6. 
+
+### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools 15.6 (Recommended)
+
+* [Download EWDK for Windows 10, version 1709](https://developer.microsoft.com/en-us/windows/hardware/license-terms-enterprise-wdk-1709-VS15-6)
+
+### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools 15.4
+
+* [Download EWDK for Windows 10, version 1709](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709-VS15-4)
+
+### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools 15.2
+
+* [Download EWDK for Windows 10, version 1709](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709)
+
+To get started, mount the ISO and run **LaunchBuildEnv**.
 
 ## WDK for Windows 10, version 1703 
 
@@ -92,7 +130,7 @@ Debugging Tools for Windows (WinDbg) are included in the WDK 8.1 Update, but you
 
 ## ![download icon](images/download-install.png) Remote Debugging client for Windows 8.1
 With the Windows Remote Debugging client, you can work remotely with developers from Microsoft, over the internet, to debug kernel-mode failures using the kernel debugger. 
-* [Learn more and prepare for remote debugging.](https://msdn.microsoft.com/library/windows/hardware/br230785)
+* [Learn more and prepare for remote debugging.](https://docs.microsoft.com/windows-hardware/drivers/dashboard/remote-debugging)
 * [Download the Remote Debugging client](http://go.microsoft.com/fwlink/p/?LinkId=316921) (English only)  
 
 ## ![download icon](images/download-install.png) WDK 8

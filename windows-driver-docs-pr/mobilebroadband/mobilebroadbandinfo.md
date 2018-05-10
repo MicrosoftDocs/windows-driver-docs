@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # MobileBroadbandInfo
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The MobileBroadbandInfo element is the parent element of the [MobileBroadbandInfo XML schema](mobilebroadbandinfo-xml-schema.md).
 

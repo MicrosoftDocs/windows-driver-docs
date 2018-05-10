@@ -3,7 +3,7 @@ title: Setting Up Kernel-Mode Debugging using Serial over USB Manually for a Sha
 description: This topic describes setting up Kernel-Mode Debugging manually for a Sharks cove development board.
 ms.assetid: E6157263-74E8-4704-9668-B845043737A7
 ms.author: domars
-ms.date: 11/28/2017
+ms.date: 05/03/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -13,8 +13,6 @@ ms.technology: windows-devices
 
 
 The [Sharks Cove development board](http://go.microsoft.com/fwlink/p?linkid=403168) supports serial debugging over a USB cable.
-
-This topic describes how to set up serial debugging over a USB cable manually. As an alternative to setting up manually, you can do the setup using Microsoft Visual Studio. For more information, see [Setting Up Kernel-Mode Debugging using Serial over USB in Visual Studio](setting-up-kernel-mode-debugging-using-serial-over-usb-in-visual-studio.md).
 
 The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*. In this topic, the Sharks Cove board is the target computer.
 

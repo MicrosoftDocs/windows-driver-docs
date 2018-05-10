@@ -3,7 +3,7 @@ Description: This topic describes how UMDF function drivers support USB selectiv
 title: Selective suspend in USB UMDF drivers
 author: windows-driver-content
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -26,8 +26,6 @@ UMDF function drivers can support USB selective suspend in either of two ways:
 -   By relying on the WinUSB.sys driver, which Microsoft supplies, to handle selective suspend. WinUSB.sys is installed as part of the kernel-mode device stack during the installation of the UMDF USB driver. WinUSB.sys implements the underlying mechanisms for suspending and resuming USB device operation.
 
 Both approaches require only small amounts of code. The IdleWake sample that is provided in the WDK shows how to support selective suspend in a UMDF USB driver. You can find this sample in %WinDDK%\\BuildNumber\\Src\\Usb\\OsrUsbFx2\\ UMDF\\Fx2\_Driver\\IdleWake. The folder contains both PPO and non-PPO versions of the sample.
-
-For more information about UMDF and WinUSB.sys, see “Writing USB Drivers with WDF” on the WHDC Web site.
 
 UMDF drivers that support selective suspend must follow these guidelines:
 
