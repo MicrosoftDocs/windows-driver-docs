@@ -72,5 +72,5 @@ Windows operating system, Microsoft Windows Driver Kit (WDK), and Driver Develop
 |   |   | NDIS 6.70 coincided with a preview release of the Network Adapter WDF Class Extension, a.k.a. [NetAdapterCx](../netcx/index.md).<p>For more information about NDIS 6.70 features, see [Introduction to NDIS 6.70](introduction-to-ndis-6-70.md).</p> |
 | Windows 10, version 1709 | See [Download kits for Windows hardware development](http://go.microsoft.com/fwlink/p/?linkid=239721). | 6.80 | X | X | X |
 |   |   | For more information about NDIS 6.80 features, see [Introduction to NDIS 6.80](introduction-to-ndis-6-80.md). | 
-
-
+| Windows 10, version 1803 | See [Download kits for Windows hardware development](http://go.microsoft.com/fwlink/p/?linkid=239721). | 6.81 | X | X | X |
+|   |   | For more information about NDIS 6.81 features, see [Introduction to NDIS 6.81](introduction-to-ndis-6-80.md). |
