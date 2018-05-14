@@ -3,7 +3,7 @@ title: Opening a Dump File Using Visual Studio
 description: The procedures Opening a Dump File Using Visual Studio.
 ms.assetid: 3B7327FE-335F-46FB-94C3-75D5B52A295D
 ms.author: domars
-ms.date: 11/28/2017
+ms.date: 05/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -11,6 +11,9 @@ ms.technology: windows-devices
 
 # Opening a Dump File Using Visual Studio
 
+> [!IMPORTANT]  
+> This feature is not available in Windows 10, version 1507 and later versions of the WDK.
+>
 
 The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio. To get the integrated environment, first install Microsoft Visual Studio, and then install the Windows Driver Kit (WDK). For more information, see [Windows Driver Kit (WDK)](http://go.microsoft.com/fwlink/p?linkid=391063).
 
