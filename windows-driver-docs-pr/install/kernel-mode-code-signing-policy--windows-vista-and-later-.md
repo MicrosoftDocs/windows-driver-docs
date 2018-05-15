@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 Starting with new installations of Windows 10, version 1607, Windows will not load any new kernel mode drivers which are not signed by the Dev Portal.  To get your driver signed, follow these steps:
 
-1. [Get an EV Code Signing Certificate](https://msdn.microsoft.com/library/windows/hardware/hh801887.aspx). An EV Code Signing Certificate is required to establish a Dashboard account.
+1. [Get an EV Code Signing Certificate](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/get-a-code-signing-certificate). An EV Code Signing Certificate is required to establish a Dashboard account.
 2. Submit your new driver to the [Windows Hardware Developer Center Dashboard portal](https://sysdev.microsoft.com/hardware).
 
 There are two different ways to submit drivers to the portal.  For production drivers, you should submit HLK/HCK test logs, as described below.  For testing, you can submit your drivers for [attestation signing](../dashboard/attestation-signing-a-kernel-driver-for-public-release.md), which does not require HLK testing, but produces a package signed only for Windows 10.
