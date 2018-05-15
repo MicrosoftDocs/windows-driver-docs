@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # USB Short Packets
 
 
-## <a href="" id="ddk-usb-short-packets-ng"></a>
+
 
 
 USB passes data over the wire in the form of USB packets, which should not be confused with NDIS or networking packets. The maximum length of a USB packet to or from a USB endpoint is limited to the value of the **wMaxPacketSize** field of the endpoint's descriptor. For bulk pipes the maximum packet size is 64 bytes. Due to constraints of certain USB host controllers, there is a penalty associated with using short USB packets (for example, those of less then 64 bytes, when streaming data).

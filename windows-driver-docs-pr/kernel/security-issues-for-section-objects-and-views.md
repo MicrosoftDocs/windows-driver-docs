@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Security Issues for Section Objects and Views
 
 
-## <a href="" id="ddk-security-issues-for-section-objects-and-views-kg"></a>
+
 
 
 Drivers that create sections and views that are not to be shared with user mode must use the following protocol when they are working with sections and views:

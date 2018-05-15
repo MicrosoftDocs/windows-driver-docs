@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Introduction to Device Objects
 
 
-## <a href="" id="ddk-introduction-to-device-objects-kg"></a>
+
 
 
 The operating system represents devices by *device objects*. One or more device objects are associated with each device. Device objects serve as the target of all operations on the device.

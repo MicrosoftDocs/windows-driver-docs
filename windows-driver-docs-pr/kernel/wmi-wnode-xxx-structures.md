@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # WMI WNODE\_XXX Structures
 
 
-## <a href="" id="ddk-wmi-wnode-xxx-structures-kg"></a>
+
 
 
 WMI uses a set of standard data structures called **WNODE\_*XXX*** to pass data between user-mode data consumers and kernel-mode data providers such as drivers. If a driver handles WMI requests by calling [**WmiSystemControl**](https://msdn.microsoft.com/library/windows/hardware/ff565834), the driver is not required to read or write **WNODE\_*XXX*** structures. Otherwise, the driver must interpret the input **WNODE\_*XXX*** at **Parameters.WMI.Buffer** and/or write an output **WNODE\_*XXX*** to that location.

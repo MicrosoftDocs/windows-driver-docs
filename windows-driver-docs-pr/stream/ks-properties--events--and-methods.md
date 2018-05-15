@@ -26,7 +26,7 @@ ms.technology: windows-devices
 # KS Properties, Events, and Methods
 
 
-## <a href="" id="ddk-ks-properties-events-and-methods-ksg"></a>
+
 
 
 Kernel streaming architecture supports interaction between minidrivers and user-mode clients through [properties](ks-properties.md), [events](ks-events.md), and [methods](ks-methods.md). Using these constructs, clients of a KS object can get and set object state, register notification callbacks for events, and execute object methods.

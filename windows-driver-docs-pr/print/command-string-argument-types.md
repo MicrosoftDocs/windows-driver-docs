@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Command String Argument Types
 
 
-## <a href="" id="ddk-command-string-argument-types-gg"></a>
+
 
 
 When you include arguments in command strings, you must specify each argument's type. Each argument type specification is a single letter, preceded by a percent sign.

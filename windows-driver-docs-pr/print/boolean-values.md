@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Boolean Values
 
 
-## <a href="" id="ddk-boolean-values-gg"></a>
+
 
 
 Boolean values are defined as being equal to either of the predefined constants **TRUE** or **FALSE**. By convention, the symbolic names of all [printer attributes](printer-attributes.md) that accept Boolean values end with a question mark character, as the following example illustrates:

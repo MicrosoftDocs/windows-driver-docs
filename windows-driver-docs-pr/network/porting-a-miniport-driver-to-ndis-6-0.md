@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Porting a Miniport Driver to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-miniport-drivers-to-ndis-6-0-ng"></a>
+
 
 
 This section describes what is required to port an NDIS 5.*x* miniport driver to NDIS 6.0. The most significant changes to the miniport driver are illustrated with code samples.

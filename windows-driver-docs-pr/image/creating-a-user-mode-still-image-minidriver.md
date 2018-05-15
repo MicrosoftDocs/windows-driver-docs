@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Creating a User-Mode Still Image Minidriver
 
 
-## <a href="" id="ddk-creating-a-user-mode-still-image-minidriver-si"></a>
+
 
 
 All user-mode still image minidrivers must implement the interface methods defined by [IStiUSD COM Interface](istiusd-com-interface.md). This implementation is relatively easy, using the following procedure.

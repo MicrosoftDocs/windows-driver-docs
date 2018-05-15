@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # PnP Components
 
 
-## <a href="" id="ddk-pnp-components-kg"></a>
+
 
 
 The following figure shows the components that work together to support PnP.

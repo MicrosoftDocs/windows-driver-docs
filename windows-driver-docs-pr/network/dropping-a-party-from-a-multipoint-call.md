@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Dropping a Party from a Multipoint Call
 
 
-## <a href="" id="ddk-dropping-a-party-from-a-multipoint-call-ng"></a>
+
 
 
 A connection-oriented client that serves as the root of a multipoint call must eventually drop each party from that call with [**NdisClDropParty**](https://msdn.microsoft.com/library/windows/hardware/ff561629) or [**NdisClCloseCall**](https://msdn.microsoft.com/library/windows/hardware/ff561627).

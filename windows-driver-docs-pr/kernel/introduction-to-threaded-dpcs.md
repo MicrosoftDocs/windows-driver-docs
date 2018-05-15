@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Introduction to Threaded DPCs
 
 
-## <a href="" id="ddk-introduction-to-threaded-dpcs-kg"></a>
+
 
 
 Threaded DPCs are available in Windows Vista and later versions of Windows.

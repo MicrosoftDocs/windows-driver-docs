@@ -16,7 +16,7 @@ ms.technology: windows-devices
 This function is reserved for system use.
 
 
-## <a href="" id="ddk-cm-prob-legacy-service-no-devices-dg"></a>
+
 
 
 A driver was loaded but Windows cannot find the device.

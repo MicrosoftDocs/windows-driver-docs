@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Printer INF Files
 
 
-## <a href="" id="ddk-printer-inf-files-gg"></a>
+
 
 
 An extensive discussion of INF files is provided in [General Guidelines for INF Files](https://msdn.microsoft.com/library/windows/hardware/ff544975).

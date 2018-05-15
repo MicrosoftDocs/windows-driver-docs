@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Porting Protocol Driver OID Request Handling to CoNDIS 6.0
 
 
-## <a href="" id="ddk-porting-protocol-driver-oid-request-handling-to-condis-6-0-nd"></a>
+
 
 
 In NDIS 6.0, the [**NdisCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561711) function replaces the NDIS 5.x [**NdisCoRequest**](https://msdn.microsoft.com/library/windows/hardware/ff551877) function, and the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure replaces the [**NDIS\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff557179) structure.

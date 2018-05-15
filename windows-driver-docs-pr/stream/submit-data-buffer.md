@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Submit Data Buffer
 
 
-## <a href="" id="ddk-submitting-a-data-buffer-ksg"></a>
+
 
 
 With an open stream, a subunit driver can start to attach stream samples to AV/C Streaming. These samples can be either read or write operations, and they can be submitted in the same manner to the AV/C Streaming filter driver, *Avcstrm.sys*. This service is always asynchronous because of its dependency on the current stream state and stream data availability.

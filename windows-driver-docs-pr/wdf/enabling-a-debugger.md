@@ -29,7 +29,7 @@ You can use the following configurations to debug a User-Mode Driver Framework (
 
 You can use the latter two configurations together, running both a user-mode debugger on the target and a kernel-mode debugger on the host.
 
-## <a href="" id="bp"></a>Best Practices
+## Best Practices
 
 
 We recommend doing all UMDF driver testing with a kernel debugger attached.
@@ -88,7 +88,7 @@ To use debug mode, either use the F5 option in Visual Studio, or set the **Debug
 
 For detailed information about UMDF registry values, see [Registry Values for Debugging WDF Drivers (KMDF and UMDF)](registry-values-for-debugging-kmdf-drivers.md).
 
-## <a href="" id="kd"></a>Using WinDbg to remotely debug from a host machine (kernel-mode debugging)
+## Using WinDbg to remotely debug from a host machine (kernel-mode debugging)
 
 
 From a remote host, establish a kernel-mode debugging session and then set current process to the instance of Wudfhost that is hosting your driver. If you are debugging from a remote kernel debugger, you can set **HostProcessDbgBreakOnDriverStart** or **HostProcessDbgBreakOnDriverLoad** to 0x80000000 to specify no timeout, but break into the kernel debugger.

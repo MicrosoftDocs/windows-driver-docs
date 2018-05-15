@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Root Item
 
 
-## <a href="" id="ddk-wia-root-item-si"></a>
+
 
 
 A WIA root item is a folder item that represents the device itself. A WIA root item is marked with **WiaItemTypeRoot** and **WiaItemTypeDevice** and contains device attributes such as:

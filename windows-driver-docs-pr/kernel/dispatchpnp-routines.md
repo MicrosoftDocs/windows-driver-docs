@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # DispatchPnP Routines
 
 
-## <a href="" id="ddk-dispatchpnp-routines-kg"></a>
+
 
 
 A driver's [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine supports [Plug and Play](implementing-plug-and-play.md) by handling IRPs for the [**IRP\_MJ\_PNP**](https://msdn.microsoft.com/library/windows/hardware/ff550772) I/O function code. Associated with the **IRP\_MJ\_PNP** function code are several minor I/O function codes (see [Plug and Play Minor IRPs](https://msdn.microsoft.com/library/windows/hardware/ff558807)), some of which all drivers must handle and some of which can be optionally handled. The PnP manager uses these minor function codes to direct drivers to start, stop, and remove devices and to query drivers about their devices.

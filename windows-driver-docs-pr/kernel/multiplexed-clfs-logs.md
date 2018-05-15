@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Multiplexed CLFS Logs
 
 
-## <a href="" id="ddk-introduction-to-wmi-kg"></a>
+
 
 
 A *multiplexed log* serves as stable storage for several streams. A *dedicated log* serves as stable storage for a single stream. This topic discusses multiplexed logs. For information about dedicated logs, see [Dedicated CLFS Logs](dedicated-clfs-logs.md).

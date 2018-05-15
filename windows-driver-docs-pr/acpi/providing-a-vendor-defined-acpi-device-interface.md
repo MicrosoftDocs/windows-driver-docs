@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Providing a Vendor-Defined ACPI Device Interface
 
 
-## <a href="" id="ddk-providing-a-vendor-defined-acpi-device-interface-kg"></a>
+
 
 
 A vendor can provide an optional [*device interface*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-interface) and support for custom IOCTLs to operate an ACPI device's functional device object ([*FDO*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-fdo)).

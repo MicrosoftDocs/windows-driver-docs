@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # History of NDIS SGDMA
 
 
-## <a href="" id="ddk-ndis-sgdma-history-ng"></a>
+
 
 
 In NDIS versions prior to NDIS 6.0, NDIS obtains a scatter gather (SG) list for each packet before sending the packet to the miniport driver. NDIS also handles the case where the original attempt to get the SG list fails due to excessive fragmentation. In this case, NDIS double-buffers the packet to a contiguous buffer and tries again. HAL can also double-buffer the data to a physical address that the NIC supports if, for example, the physical address of the data is above the 32-bit maximum and the NIC does not support 64-bit DMA.

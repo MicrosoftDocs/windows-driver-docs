@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # WAN Packet Framing
 
 
-## <a href="" id="ddk-wan-packet-framing-ng"></a>
+
 
 
 This section provides information about WAN packet framing.

@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Filter Module OID Requests
 
 
-## <a href="" id="ddk-filter-module-oid-requests-ng"></a>
+
 
 
 NDIS defines object identifier (OID) values to identify adapter parameters, which include operating parameters such as device characteristics, configurable settings and statistics. For more information about OIDs, see [NDIS OIDs](https://msdn.microsoft.com/library/windows/hardware/ff566707).

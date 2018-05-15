@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Enabling Device Wake-Up
 
 
-## <a href="" id="ddk-enabling-device-wake-up-kg"></a>
+
 
 
 If a device supports wake-up, its power policy owner must be able to enable and disable wake-up for the device. A driver enables wake up by sending an [**IRP\_MJ\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff550784) request with minor function code [**IRP\_MN\_WAIT\_WAKE**](https://msdn.microsoft.com/library/windows/hardware/ff551766) and disables wake-up by canceling a previously sent **IRP\_MN\_WAIT\_WAKE**. A device can have only one **IRP\_MN\_WAIT\_WAKE** request pending at a time.

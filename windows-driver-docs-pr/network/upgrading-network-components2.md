@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Upgrading Network Components
 
 
-## <a href="" id="ddk-upgrading-network-componentsn-ng"></a>
+
 
 
 Network components are upgraded by the network configuration subsystem.

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Looking at an INF File
 
 
-## <a href="" id="ddk-looking-at-an-inf-file-dg"></a>
+
 
 
 The following example shows selected fragments from a system-supplied class installer's INF file to show how any INF file is made up of sections, each of which contains zero or more lines, some of which are entries that reference additional INF-writer-defined sections:

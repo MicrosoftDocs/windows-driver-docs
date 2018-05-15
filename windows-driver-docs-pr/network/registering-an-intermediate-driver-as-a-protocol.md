@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Registering an Intermediate Driver as a Protocol
 
 
-## <a href="" id="ddk-registering-an-intermediate-driver-as-a-protocol-ng"></a>
+
 
 
 An intermediate driver registers its *ProtocolXxx* functions with NDIS in the context of its [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) function by calling [**NdisRegisterProtocolDriver**](https://msdn.microsoft.com/library/windows/hardware/ff564520).

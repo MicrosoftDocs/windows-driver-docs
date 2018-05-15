@@ -28,7 +28,7 @@ This topic summarizes the new features and improvements for Universal Serial Bus
 
 For information about new features in USB in general, see [New for USB Drivers](https://msdn.microsoft.com/library/windows/hardware/hh451212).
 
-## <a href="" id="new-driver-stack-for-usb-3-0-devices"></a>New Driver Stack for USB 3.0 Devices
+## New Driver Stack for USB 3.0 Devices
 
 
 Windows 8 provides a new USB driver stack to support USB 3.0 devices. The new stack includes drivers that are loaded by Windows when a USB 3.0 device is attached to an xHCI host controller. The new drivers are based on [Kernel Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557405) (KMDF) and implement features defined in the USB 3.0 specification. The new drivers are as follows:
@@ -91,7 +91,7 @@ In addition to the routines in the preceding list, there are new KMDF-specific m
 -   The [**WdfUsbTargetDeviceCreateUrb**](https://msdn.microsoft.com/library/windows/hardware/hh439423) method (instead of [**USBD\_UrbAllocate**](https://msdn.microsoft.com/library/windows/hardware/hh406250)) to allocate an URB.
 -   The [**WdfUsbTargetDeviceCreateIsochUrb**](https://msdn.microsoft.com/library/windows/hardware/hh439420) method (instead of [**USBD\_IsochUrbAllocate**](https://msdn.microsoft.com/library/windows/hardware/hh406231))to allocate an URB for an isochronous transfer. Those calls allocate a variable-sized URB that is based on the number of isochronous packets required for the transfer. For more information about isochronous transfers, see [How to Transfer Data to USB Isochronous Endpoints](transfer-data-to-isochronous-endpoints.md).
 
-## <a href="" id="new-user-mode-i-o-control-requests-for-usb-3-0-hubs"></a>New User Mode I/O Control Requests for USB 3.0 Hubs
+## New User Mode I/O Control Requests for USB 3.0 Hubs
 
 
 Windows 8 provides the new IOCTLs that applications can use to retrieve information about USB 3.0 hubs and their ports. The new IOCTLs are as follows:
@@ -111,7 +111,7 @@ By sending the preceding I/O requests to the USB driver stack an application ret
 
 Device manufacturers can add "WINUSB" in the firmware (Microsoft OS feature descriptor) so that Windows recognizes the device as a WinUSB device. In Windows 8, Winusb.inf has been modified to include USB\\MS\_COMP\_WINUSB as a device identifier string. That modification enables Windows to automatically load Winusb.sys, as the function driver for the device, as soon as the device is detected. For more information, see [WinUSB Device](automatic-installation-of-winusb.md).
 
-## <a href="" id="new-visual-studio-templates-for-usb-client-drivers---new-for-beta-"></a>New Visual Studio templates for USB client drivers *(\*New for Beta)*
+## New Visual Studio templates for USB client drivers *(\*New for Beta)*
 
 
 Microsoft Visual Studio 2012 includes **USB User-Mode Driver** and **USB Kernel-Mode Driver** templates that generate starter code for a UMDF and KMDF USB client driver, respectively. The template code initializes the USB target device object to enable communication with the hardware. For more information, see the following topics:
@@ -133,7 +133,7 @@ Windows 8 includes a new USB storage driver that implements the USB Attached SC
 
 The Windows to Go feature allows Windows to boot from a flash drive or an external drive. You can boot with your copy of Windows from those drives on various machines.
 
-## <a href="" id="enhanced-debugging-and-diagnostic-capabilities-----"></a>Enhanced debugging and diagnostic capabilities
+## Enhanced debugging and diagnostic capabilities
 
 
 Windows 8 provides new USB 3.0 debugging tools to improve diagnosing USB issues faster. There are new USB 3.0 kernel debugger extensions that examine USB 3.0 host controller and device states. You can use USB WPP and event tracing to analyze USB interactions and troubleshoot USB device issues more easily. Windows 8 supports debugging over USB 3.0. For more information, see [Setting Up a USB 3.0 Connection Manually](https://msdn.microsoft.com/library/windows/hardware/hh439372).

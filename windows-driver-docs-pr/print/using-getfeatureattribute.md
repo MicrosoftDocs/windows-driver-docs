@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Using GetFeatureAttribute
 
 
-## <a href="" id="ddk-using-getfeatureattribute-gg"></a>
+
 
 
 This function is supported only for PPD features. If a certain attribute is not available, **GetFeatureAttribute** returns E\_INVALIDARG.

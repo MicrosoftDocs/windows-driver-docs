@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Handling the Port Deactivation PnP Event
 
 
-## <a href="" id="ddk-handling-the-port-deactivation-pnp-event-ng"></a>
+
 
 
 Overlying drivers must handle the **NetEventPortDeactivation** PnP event when a miniport driver deactivates an NDIS port. To notify overlying drivers about port deactivation events, NDIS propagates the port deactivation PnP event from the underlying miniport driver.

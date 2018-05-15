@@ -53,7 +53,7 @@ The NDIS\_STATISTICS\_INFO structure is defined as follows:
   
 ```
 
-## <a href="" id="ddk-oid-gen-statistics-nr"></a>
+
 
 
 This structure contains the following members:

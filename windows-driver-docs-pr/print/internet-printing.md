@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Internet Printing
 
 
-## <a href="" id="ddk-internet-printing-gg"></a>
+
 
 
 This section provides the following topics:

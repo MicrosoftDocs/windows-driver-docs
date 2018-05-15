@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Printer Attribute Format
 
 
-## <a href="" id="ddk-printer-attribute-format-gg"></a>
+
 
 
 To specify a printer attribute entry in a GPD file, use the following format:

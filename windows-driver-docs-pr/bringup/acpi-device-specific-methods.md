@@ -61,7 +61,7 @@ The [ACPI 5.0 specification](http://www.uefi.org/specifications) introduces seve
 
  
 
-## <a href="" id="other--dsms-defined-for-windows"></a>Other \_DSMs defined for Windows
+## Other \_DSMs defined for Windows
 
 
 To support device-class-specific communications between the driver stack in Windows and the platform firmware, Microsoft defines Device-Specific Methods (\_DSM) to be used with drivers.

@@ -40,7 +40,7 @@ It contains the following sections:
 
 For step-by-step directions on writing a simple KMDF-based USB client driver, see [How to write your first USB client driver (KMDF)](https://msdn.microsoft.com/library/windows/hardware/hh706187).
 
-## <a href="" id="creating-a-framework-usb-device-object"></a> Creating a USB device object
+##  Creating a USB device object
 
 
 To use the framework's USB I/O target objects (WDFUSBDEVICE, WDFUSBINTERFACE, and WDFUSBPIPE), your client driver must first call [**WdfUsbTargetDeviceCreateWithParameters**](https://msdn.microsoft.com/library/windows/hardware/hh439428) to create a USB device object. Typically, a driver calls **WdfUsbTargetDeviceCreateWithParameters** from its [*EvtDevicePrepareHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540880) callback function.
@@ -49,7 +49,7 @@ When the driver calls [**WdfUsbTargetDeviceCreateWithParameters**](https://msdn.
 
 After calling [**WdfUsbTargetDeviceCreateWithParameters**](https://msdn.microsoft.com/library/windows/hardware/hh439428), the driver can call [**WdfUsbTargetDeviceGetDeviceDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ff550090) and [**WdfUsbTargetDeviceRetrieveConfigDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ff550098) to obtain USB descriptors from the device. Those descriptors contain information about the device's first configuration, its interface settings, and their defined endpoints. (The USB descriptors are defined in the official USB specification.)
 
-## <a href="" id="selecting-a-device-configuration"></a>Configuring a USB Device
+## Configuring a USB Device
 
 
 The [**WdfUsbTargetDeviceCreateWithParameters**](https://msdn.microsoft.com/library/windows/hardware/hh439428) method also creates a framework USB interface object for each USB interface that the device's first configuration contains.
@@ -67,7 +67,7 @@ For related information, see:
 -   [How to select a configuration for a USB device](https://msdn.microsoft.com/library/windows/hardware/gg615081)
 -   [How to select an alternate setting in a USB interface](https://msdn.microsoft.com/library/windows/hardware/hh968309)
 
-## <a href="" id="obtaining-device-information"></a> Obtaining Device Information
+##  Obtaining Device Information
 
 
 After configuring a device, your client driver can call the following methods to obtain information about a USB device:
@@ -87,7 +87,7 @@ Determines if the device is connected.
 <a href="" id="wdfusbtargetdeviceretrievecurrentframenumber--kmdf-only-"></a>[**WdfUsbTargetDeviceRetrieveCurrentFrameNumber (KMDF only)**](https://msdn.microsoft.com/library/windows/hardware/ff550099)  
 Retrieves the current USB frame number.
 
-## <a href="" id="obtaining-a-device-s-unicode-strings"></a>Getting USB Descriptors
+## Getting USB Descriptors
 
 
 To obtain the Unicode strings that are contained in a USB device's descriptors, the driver can call any of the following methods:
@@ -107,7 +107,7 @@ Copies a Unicode string to a framework-supplied buffer.
 <a href="" id="---------wdfusbtargetdeviceformatrequestforstring--------"></a>[**WdfUsbTargetDeviceFormatRequestForString**](https://msdn.microsoft.com/library/windows/hardware/ff550086)  
 Formats a request for a Unicode string. The driver can call [**WdfRequestSend**](https://msdn.microsoft.com/library/windows/hardware/ff550027) to send the request synchronously or asynchronously.
 
-## <a href="" id="sending-a-control-transfer"></a> Sending a Control Transfer
+##  Sending a Control Transfer
 
 
 Your driver can call the following methods to send an I/O request that describes a standard, device class-specific, or vendor-specific USB control transfer.
@@ -120,7 +120,7 @@ Formats a request for a USB control transfer. The driver can call [**WdfRequestS
 
 For related information, see [How to send a USB control transfer](https://msdn.microsoft.com/library/windows/hardware/ff539261).
 
-## <a href="" id="resetting-and-power-cycling-a-device-s-port"></a> Resetting and Power-Cycling a Device's Port
+##  Resetting and Power-Cycling a Device's Port
 
 
 Your driver can call the following methods to reset or power-cycle the USB port that a device is connected to:
@@ -136,7 +136,7 @@ Formats a request to power-cycle a device's USB port. The driver must call [**Wd
 
 For related information, see [How to recover from USB pipe errors](https://msdn.microsoft.com/library/windows/hardware/hh968307).
 
-## <a href="" id="sending-a-urb-to-a-device"></a> Sending an URB to a Device
+##  Sending an URB to a Device
 
 
 If your KMDF driver communicates with its USB device by sending I/O requests that contain URBs, the driver can call the following methods:

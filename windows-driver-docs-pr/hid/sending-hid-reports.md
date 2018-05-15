@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Sending HID Reports
 
 
-## <a href="" id="ddk-sending-hid-reports-kg"></a>
+
 
 
 This section describes how user-mode applications and kernel-mode drivers send HID reports to a [HID collection](hid-collections.md).

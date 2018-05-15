@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Terminal Server Printing
 
 
-## <a href="" id="ddk-supporting-printers-on-terminal-servers-gg"></a>
+
 
 
 Microsoft Windows 2000 and later supports Terminal Services, a technology that allows multiple users to connect to a single server system. This server system is called a terminal server. For a detailed discussion of Terminal Services, see the Windows SDK documentation.

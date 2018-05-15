@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Default NDIS Port
 
 
-## <a href="" id="ddk-default-ndis-port-ng"></a>
+
 
 
 Port zero is reserved as the default port for a miniport adapter. If the *PortNumber* parameter of any function or the **PortNumber** member of any structure is set to zero, either the miniport driver did not allocate any ports, or the current activity is not port-specific.

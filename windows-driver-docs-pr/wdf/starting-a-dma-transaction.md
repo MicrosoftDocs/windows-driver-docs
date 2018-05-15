@@ -21,7 +21,7 @@ ms.technology: windows-devices
 
 \[Applies to KMDF only\]
 
-## <a href="" id="ddk-starting-a-dma-transaction-df"></a>
+
 
 
 After your driver has [created and initialized a DMA transaction](creating-and-initializing-a-dma-transaction.md), the driver can call the [**WdfDmaTransactionExecute**](https://msdn.microsoft.com/library/windows/hardware/ff547062) method to start the transaction. This method builds a scatter/gather list for the first [DMA transfer](dma-transactions-and-dma-transfers.md) that is associated with the transaction. Next, the method calls the [*EvtProgramDma*](https://msdn.microsoft.com/library/windows/hardware/ff541816) callback function that the driver registered for the transaction. The callback function [programs the DMA hardware](programming-dma-hardware.md) to start the transfer.

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Writing a DriverEntry Routine
 
 
-## <a href="" id="ddk-writing-a-driverentry-routine-kg"></a>
+
 
 
 Each driver must have a [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine, which initializes driver-wide data structures and resources. The I/O manager calls the **DriverEntry** routine when it loads the driver.

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Dispatch(Internal)DeviceControl in Class/Port Drivers
 
 
-## <a href="" id="ddk-dispatch-internal-devicecontrol-in-class-port-drivers-kg"></a>
+
 
 
 The higher-level driver of a class/port pair can sometimes complete IRPs in its [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287) routine. For example a class driver could, during initialization, gather and store information about the features of the underlying device, which might be sought in a subsequent [**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744) request, and thus save processing time by satisfying the request without passing it on to the underlying device driver. A class driver might also be designed to check the IRP's parameters and send only requests with valid parameters to the port driver.

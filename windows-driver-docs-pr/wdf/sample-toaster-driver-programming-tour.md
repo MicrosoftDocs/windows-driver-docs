@@ -134,7 +134,7 @@ This sample demonstrates how to open a device and perform I/O in kernel mode usi
 
 Also, this sample uses a passive timer to demonstrate asynchronous read and write to the target device. It also shows how to respond to a device change notification by registering [*EvtIoTargetQueryRemove*](https://msdn.microsoft.com/library/windows/hardware/ff541793)/[*EvtIoTargetRemoveCanceled*](https://msdn.microsoft.com/library/windows/hardware/ff541800)/[*EvtIoTargetRemoveComplete*](https://msdn.microsoft.com/library/windows/hardware/ff541806) on the I/O target object. You can use this technique if your driver talks to another device that your driver is not controlling. You install this driver as a root-enumerated device using Wdftoastmon.inf. Use the same steps for installation as the toaster bus driver.
 
-## <a href="" id="umdf-toaster"></a>UMDF Function Driver
+## UMDF Function Driver
 
 
 The WUDFToaster driver enables a user application (toast/notify.exe) to open the device interface that is registered by the driver and send read, write or IOCTL requests. This driver sample also shows how to register for PnP and Power events, set power policy ownership, and handle I/O requests. This is a minimal driver sample that is not intended for use in a production environment.

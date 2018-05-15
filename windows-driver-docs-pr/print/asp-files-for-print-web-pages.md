@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # ASP Files for Print Web Pages
 
 
-## <a href="" id="ddk-asp-files-for-print-web-pages-gg"></a>
+
 
 
 Print Web pages are created by using ASP files. Microsoft provides ASP files that create the following print Web pages:

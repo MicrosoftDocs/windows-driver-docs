@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Remote NDIS File Naming Conventions
 
 
-## <a href="" id="ddk-benefits-of-remote-ndis-ng"></a>
+
 
 
 In order to support legacy Remote NDIS devices, multiple Remote NDIS drivers have been included with various versions of Windows. The following table lists the Remote NDIS driver names used in each version of Windows.

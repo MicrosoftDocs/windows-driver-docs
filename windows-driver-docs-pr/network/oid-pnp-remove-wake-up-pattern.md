@@ -15,7 +15,7 @@ keywords:
 # OID\_PNP\_REMOVE\_WAKE\_UP\_PATTERN
 
 
-## <a href="" id="ddk-oid-pnp-remove-wake-up-pattern-nr"></a>
+
 
 
 The OID\_PNP\_REMOVE\_WAKE\_UP\_PATTERN OID requests the miniport driver to delete a wake-up pattern that it previously received in an [OID\_PNP\_ADD\_WAKE\_UP\_PATTERN](oid-pnp-add-wake-up-pattern.md) request. The wake-up pattern, along with its mask, is described by an [**NDIS\_PM\_PACKET\_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566756) structure.

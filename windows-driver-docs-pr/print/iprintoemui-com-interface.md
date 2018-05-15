@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # IPrintOemUI COM Interface
 
 
-## <a href="" id="ddk-iprintoemui-com-interface-gg"></a>
+
 
 
 The `IPrintOemUI` COM interface is the means by which the [printer interface DLL](printer-interface-dll.md) for Unidrv or Pscript5 communicates with a UI plug-in. The `IPrintOemUI` interface is implemented by each UI plug-in.

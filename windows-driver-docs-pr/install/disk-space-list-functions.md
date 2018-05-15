@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Disk-Space List Functions
 
 
-## <a href="" id="ddk-disk-space-list-functions-dg"></a>
+
 
 
 Disk-space list functions are used to create and modify disk-space lists. These lists can be used to calculate the total disk space that is required to handle the files that will be copied or deleted during the installation procedure.

@@ -17,7 +17,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-synchronizing-update-operations-ng"></a>
+
 
 
 The host stack synchronizes update operations as follows:

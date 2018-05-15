@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Still Image I/O
 
 
-## <a href="" id="ddk-still-image-i-o-si"></a>
+
 
 
 Still image devices can use the Microsoft-provided WDM-based kernel-mode drivers on SCSI and USB buses. You need to provide bus drivers for buses that are not supported by Microsoft drivers.

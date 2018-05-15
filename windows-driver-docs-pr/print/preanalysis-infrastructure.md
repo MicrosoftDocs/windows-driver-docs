@@ -22,7 +22,7 @@ ms.technology: windows-devices
 # Preanalysis Infrastructure
 
 
-## <a href="" id="ddk-preanalysis-infrastructure-gg"></a>
+
 
 
 The preanalysis infrastructure is a mechanism by which Unidrv forces banding on a print job so that the first band replay of each page is a band that contains the entire page. The preanalysis pass does not allow any rendering and is done only to enable analysis of the objects on the page before the objects are rendered.

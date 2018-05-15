@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # FsRtlAllocatePoolWithQuota
 
 
-## <a href="" id="ddk-fsrtlallocatepoolwithquota-if"></a>
+
 
 
 The **FsRtlAllocatePoolWithQuota** routine is obsolete, but is exported to support existing driver binaries. Use [**FsRtlAllocatePoolWithQuotaTag**](https://msdn.microsoft.com/library/windows/hardware/ff545665) instead.

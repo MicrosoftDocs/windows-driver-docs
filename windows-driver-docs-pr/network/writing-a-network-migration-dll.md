@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Writing a Network Migration DLL
 
 
-## <a href="" id="ddk-writing-a-network-migration-dll-ng"></a>
+
 
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.

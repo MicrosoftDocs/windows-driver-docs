@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Special Considerations for PCMCIA Memory Card Drivers
 
 
-## <a href="" id="ddk-special-considerations-for-pcmcia-memory-card-drivers-kg"></a>
+
 
 
 This section describes the following special considerations pertinent to the design and operation of a PCMCIA memory card driver:

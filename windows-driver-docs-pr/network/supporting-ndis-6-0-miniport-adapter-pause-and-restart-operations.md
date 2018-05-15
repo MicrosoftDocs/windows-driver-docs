@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Supporting NDIS 6.0 Miniport Adapter Pause and Restart Operations
 
 
-## <a href="" id="ddk-supporting-ndis-6-0-miniport-adapter-pause-and-restart-operations-"></a>
+
 
 
 The miniport adapter pause and restart capabilities are new features that are introduced in NDIS 6.0.

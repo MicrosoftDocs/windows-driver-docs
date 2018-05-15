@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Handling Device Power-Up IRPs
 
 
-## <a href="" id="ddk-handling-device-power-up-irps-kg"></a>
+
 
 
 Device power-up IRPs specify [**IRP\_MN\_SET\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551744) and a device power state that requires more power than the current device power state. Typically, a power-up IRP specifies the device working state **PowerDeviceD0**.

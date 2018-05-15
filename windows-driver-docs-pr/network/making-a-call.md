@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Making a Call
 
 
-## <a href="" id="ddk-making-a-call-ng"></a>
+
 
 
 The following figure shows a client making an outgoing call through a call manager.

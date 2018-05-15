@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Framework Object Collections
 
 
-## <a href="" id="ddk-framework-object-collections-df"></a>
+
 
 
 Drivers can group framework objects into collections that are represented by *framework collection objects*.

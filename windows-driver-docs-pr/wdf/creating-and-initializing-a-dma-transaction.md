@@ -21,7 +21,7 @@ ms.technology: windows-devices
 
 \[Applies to KMDF only\]
 
-## <a href="" id="ddk-creating-and-initializing-a-dma-transaction-df"></a>
+
 
 
 Before your driver can send an I/O request to a DMA device, the driver must:

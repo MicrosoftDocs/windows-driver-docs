@@ -25,7 +25,7 @@ The OID\_PNP\_CAPABILITIES OID requests a miniport driver to return the wake-up 
   
 ```
 
-## <a href="" id="ddk-oid-pnp-capabilities-nr"></a>
+
 
 
 The members of this structure contain the following information:

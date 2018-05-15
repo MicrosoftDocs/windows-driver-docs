@@ -21,7 +21,7 @@ ms.technology: windows-devices
 # Identifiers for IDE Devices
 
 
-## <a href="" id="ddk-identifiers-for-ide-devices-dg"></a>
+
 
 
 Identifiers for integrated device electronics (IDE) devices resemble SCSI identifiers. The device ID format is as follows:

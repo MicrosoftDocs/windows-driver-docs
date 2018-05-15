@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # HKLM\\SYSTEM\\CurrentControlSet\\Control Registry Tree
 
 
-## <a href="" id="ddk-the-hklm-system-currentcontrolset-control-tree-dg"></a>
+
 
 
 The **HKLM\\SYSTEM\\CurrentControlSet\\Control** registry tree contains information for controlling system startup and some aspects of device configuration. The following subkeys are of particular interest:

@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Basic Installation Operations
 
 
-## <a href="" id="ddk-basic-installation-operations-dg"></a>
+
 
 
 Installers can use the [general Setup functions](https://msdn.microsoft.com/library/windows/hardware/ff544985) and [device installation functions](https://msdn.microsoft.com/library/windows/hardware/ff541299) that are provided by SetupAPI to perform installation operations. These functions allow installers to search INF files for compatible drivers, to display driver choices to the user through selection dialog boxes, and to perform the actual driver installation.

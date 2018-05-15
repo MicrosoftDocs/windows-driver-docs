@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Device Setup Classes
 
 
-## <a href="" id="ddk-device-setup-classes-dg"></a>
+
 
 
 This section provides the following topics:

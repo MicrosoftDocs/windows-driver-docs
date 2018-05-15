@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Mapping a NET\_LUID Value to an Interface Index
 
 
-## <a href="" id="ddk-mapping-net-luid-values-to-interface-indexes-ng"></a>
+
 
 
 NDIS provides services to obtain the interface index for a given [**NET\_LUID**](https://msdn.microsoft.com/library/windows/hardware/ff568747) value, and vice versa. Note that the NET\_LUID value is the persistent identification for an interface, and the interface index that corresponds to a particular NET\_LUID value can change even if the computer does not restart (for example, when a filter module is attached and detached because the associated miniport adapter was disabled and reenabled).

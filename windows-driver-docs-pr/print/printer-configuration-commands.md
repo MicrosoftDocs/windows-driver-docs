@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Printer Configuration Commands
 
 
-## <a href="" id="ddk-printer-configuration-commands-gg"></a>
+
 
 
 The following table lists the printer configuration commands. All commands are specified using the [command entry format](command-entry-format.md).

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Determining Connection Offload Capabilities
 
 
-## <a href="" id="ddk-determining-connection-offload-capabilities-ng"></a>
+
 
 
 NDIS supports two categories of offload services: TCP/IP offload services that are enhanced forms of the NDIS 5.1 and earlier task offload services and connection offload services.

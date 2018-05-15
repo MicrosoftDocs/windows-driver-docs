@@ -9,7 +9,7 @@ keywords: ["HID reports WDK , extracting control data", "reports WDK HID , extra
 # Extracting Value Data by Specifying Its Usage
 
 
-## <a href="" id="ddk-extracting-value-data-by-specifying-its-usage-kg"></a>
+
 
 
 To extract value data from a HID report, an application or driver can use one of the following HID support routines:

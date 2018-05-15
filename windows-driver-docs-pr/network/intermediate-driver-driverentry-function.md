@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Intermediate Driver DriverEntry Function
 
 
-## <a href="" id="ddk-intermediate-driver-driverentry-function-ng"></a>
+
 
 
 An intermediate driver's initial required entry point must be explicitly named [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) so that the loader can properly identify it. All other exported driver functions, which are described in this section as *MiniportXxx* and *ProtocolXxx*, can have any vendor-specified name because they are passed as addresses to NDIS.

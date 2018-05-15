@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Map Registers
 
 
-## <a href="" id="physical-logical-and-virtual-address-mappings"></a>
+
 
 
 Drivers that perform DMA use three different address spaces, as shown in the following figure.

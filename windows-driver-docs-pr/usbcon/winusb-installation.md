@@ -21,7 +21,7 @@ This topic contains these sections:
 -   [Writing a custom INF for WinUSB installation](#inf)
 -   [How to create a driver package that installs Winusb.sys](#howto)
 
-## <a href="" id="automatic-installation-of--winusb-without-an-inf-file"></a>Automatic installation of WinUSB without an INF file
+## Automatic installation of WinUSB without an INF file
 
 
 As an OEM or independent hardware vendor (IHV), you can build your device so that the Winusb.sys gets installed automatically on Windows 8 and later versions of the operating system. Such a device is called a WinUSB device and does not require you to write a custom INF file that references in-box Winusb.inf.
@@ -30,7 +30,7 @@ When you connect a WinUSB device, the system reads device information and loads 
 
 For more information, see [WinUSB Device](automatic-installation-of-winusb.md).
 
-## <a href="" id="installing-winusb-by-specifying--the-system-provided-device-class"></a>Installing WinUSB by specifying the system-provided device class
+## Installing WinUSB by specifying the system-provided device class
 
 
 When you connect your device, you might notice that Windows loads Winusb.sys automatically (if the IHV has defined the device as a WinUSB Device). Otherwise follow these instructions to load the driver:
@@ -58,7 +58,7 @@ The preceding procedure does not add a device interface GUID for an app (UWP app
 
      
 
-## <a href="" id="inf"></a>Writing a custom INF for WinUSB installation
+## Writing a custom INF for WinUSB installation
 
 
 As part of the driver package, you provide an .inf file that installs Winusb.sys as the function driver for the USB device.
@@ -244,7 +244,7 @@ HKR,,DeviceInterfaceGUIDs, 0x10000,"{D696BFEB-1734-417d-8A04-86D01071C512}"
 
  
 
-## <a href="" id="howto"></a>How to create a driver package that installs Winusb.sys
+## How to create a driver package that installs Winusb.sys
 
 
 To use WinUSB as the device's function driver, you create a driver package. The driver package must contain these files:

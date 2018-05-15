@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Reporting Device Online Status
 
 
-## <a href="" id="ddk-reporting-device-online-status-si"></a>
+
 
 
 The WIA service checks a WIA device's online status by calling the [**IStiUSD::GetStatus**](https://msdn.microsoft.com/library/windows/hardware/ff543823) method. The WIA minidriver should check the hardware's current online state and report the results.

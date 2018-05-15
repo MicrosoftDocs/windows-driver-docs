@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Introduction to Cancel Routines
 
 
-## <a href="" id="ddk-introduction-to-cancel-routines-kg"></a>
+
 
 
 Any driver in which IRPs can be held in a pending state for an indefinite interval must have one or more [*Cancel*](https://msdn.microsoft.com/library/windows/hardware/ff540742) routines. For example, a keyboard driver might wait indefinitely for a user to press a key. Conversely, if a driver will never queue more IRPs than it can complete in five minutes, it probably does not need a *Cancel* routine.

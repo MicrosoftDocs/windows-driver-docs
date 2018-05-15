@@ -141,7 +141,7 @@ Kernel-Mode Driver Framework (KMDF) and User-Mode Driver Framework (UMDF) suppor
 
  
 
-## <a href="" id="pnp"></a>KMDF Callbacks for IRP\_MJ\_PNP
+## KMDF Callbacks for IRP\_MJ\_PNP
 
 
 The following table lists, in order of execution, the KMDF callbacks that correspond to the minor IRP codes for [**IRP\_MJ\_PNP**](https://msdn.microsoft.com/library/windows/hardware/ff550772). The arrows indicate whether a WDM FDO handles the IRP as it travels up or down the stack.
@@ -322,7 +322,7 @@ The following table lists, in order of execution, the KMDF callbacks that corres
 
  
 
-## <a href="" id="power"></a>KMDF Callbacks for IRP\_MJ\_POWER
+## KMDF Callbacks for IRP\_MJ\_POWER
 
 
 The following table lists, in order of execution, the KMDF callbacks that correspond to the minor IRP codes for [**IRP\_MJ\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff550784). The arrows indicate whether a WDM FDO handles the IRP as it travels up or down the stack.

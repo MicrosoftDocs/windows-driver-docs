@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Device-Specific Contexts
 
 
-## <a href="" id="ddk-device-specific-contexts-si"></a>
+
 
 
 Minidrivers can optionally make use of a private context for storing device-specific information. This device-specific context can reduce the number of times that a minidriver must call the device to obtain device information. There can be only one device-specific context for each driver item of a particular minidriver. When the driver item is no longer needed, the WIA service calls the minidriver's [**IWiaMiniDrv::drvFreeDrvItemContext**](https://msdn.microsoft.com/library/windows/hardware/ff543972) method to free all of the resources that are attached to the device-specific context.

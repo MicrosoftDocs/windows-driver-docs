@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Wait/Wake Callback Routines
 
 
-## <a href="" id="ddk-wait-wake-callback-routines-kg"></a>
+
 
 
 When a driver requests a wait/wake IRP, it must specify a callback routine so that it can return the device to the working state (D0) when the wake-up event occurs. After the wake-up event occurs and all drivers have completed the IRP, the system calls the callback routine passed to [**PoRequestPowerIrp**](https://msdn.microsoft.com/library/windows/hardware/ff559734).

@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # NDIS Miniport Drivers
 
 
-## <a href="" id="ddk-network-miniport-drivers-ng"></a>
+
 
 
 This section describes NDIS miniport drivers and includes the following topics:
