@@ -18,7 +18,7 @@ keywords:
 - audio devices, WaveCyclic
 - WaveCyclic, filter
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,7 +52,8 @@ The three types of wave filter operate as follows:
 
 WaveRT is preferred over WavePci and WaveCyclic. WavePci and WaveCyclic were used with earlier versions of Windows.
 
-A WaveRT filter can represent an audio device that resides on a system bus, such as PCI or PCI Express. The primary advantage of a WaveRT filter over a WaveCyclic or WavePci filter is that a WaveRT filter allows a user-mode client to exchange audio data directly with the audio hardware. In contrast, WaveCyclic and WavePci filters both require periodic software intervention by the driver, which increases the latency of the audio stream. In addition, audio devices both with and without scatter/gather DMA capabilities can be represented as WaveRT filters. For more information, see the white paper titled *A Wave Port Driver for Real-Time Audio Streaming* on the [audio technology](http://go.microsoft.com/fwlink/p/?linkid=8751) page on the WHDC website.
+A WaveRT filter can represent an audio device that resides on a system bus, such as PCI or PCI Express. The primary advantage of a WaveRT filter over a WaveCyclic or WavePci filter is that a WaveRT filter allows a user-mode client to exchange audio data directly with the audio hardware. In contrast, WaveCyclic and WavePci filters both require periodic software intervention by the driver, which increases the latency of the audio stream. In addition, audio devices both with and without scatter/gather DMA capabilities can be represented as WaveRT filters. For more information, see the [A Wave Port Driver for Real-Time Audio Streaming](http://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/WaveRTport.doc) white paper.
+
 
 ### <span id="wavert_filter"></span><span id="WAVERT_FILTER"></span>WaveRT Filters
 
@@ -66,7 +67,7 @@ A WaveRT filter is implemented as a port/miniport driver pair. In Windows Vista 
 
 The code example in [Subdevice Creation](subdevice-creation.md) illustrates this process. The port and miniport drivers communicate with each other through their [IPortWaveRT](https://msdn.microsoft.com/library/windows/hardware/ff536920) and [IMiniportWaveRT](https://msdn.microsoft.com/library/windows/hardware/ff536737) interfaces.
 
-For more information, see the white paper titled *A Wave Port Driver for Real-Time Audio Streaming* on the [audio technology](http://go.microsoft.com/fwlink/p/?linkid=8751) page on the WHDC website.
+For more information, see the [A Wave Port Driver for Real-Time Audio Streaming](http://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/WaveRTport.doc) white paper.
 
 ### <span id="Information_for_previous_versions_of_Windows"></span><span id="information_for_previous_versions_of_windows"></span><span id="INFORMATION_FOR_PREVIOUS_VERSIONS_OF_WINDOWS"></span>Information for previous versions of Windows
 
