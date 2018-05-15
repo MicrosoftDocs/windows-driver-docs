@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 This topics in this section describe how a KMDF driver for a bus-master DMA device processes an I/O request. If you are writing a KMDF driver that implements system-mode DMA, see [Supporting System-Mode DMA](supporting-system-mode-dma.md).
 
-## <a href="" id="ddk-how-to-program-an-i-o-request-for-a-dma-device-df"></a>
+
 
 
 Handling I/O requests in a KMDF driver for a bus-master DMA device requires code in several of the driver’s event callback functions, as shown in the following figure:

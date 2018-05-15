@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Determining the VMQ Capabilities of a Network Adapter
 
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 NDIS provides the interface to determine the VMQ capabilities of a network adapter, such as:

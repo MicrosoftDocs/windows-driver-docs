@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Opening and Using a Parallel Device
 
 
-## <a href="" id="ddk-opening-and-using-a-parallel-device-kg"></a>
+
 
 
 The system-supplied bus driver for parallel ports enforces exclusive access to a parallel device attached to a parallel port. If a parallel device is open, the parallel port bus driver fails any subsequent [**IRP\_MJ\_CREATE**](https://msdn.microsoft.com/library/windows/hardware/ff544131) requests for the device until the device has been closed. A client must open a parallel device before it sends other I/O requests to the device or calls the [parallel device callback routines](https://msdn.microsoft.com/library/windows/hardware/ff544275). A client must not attempt to communicate with a parallel device after the client has closed its file on a device. A client must close a device to allow other clients to access the device.

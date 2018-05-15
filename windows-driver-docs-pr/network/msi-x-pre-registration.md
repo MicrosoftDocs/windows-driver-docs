@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # MSI-X Pre-Registration
 
 
-## <a href="" id="ddk-msi-x-pre-registration-ng"></a>
+
 
 
 To support changing interrupt affinities for MSI-X or to remove message interrupt resources, a miniport driver must establish a resource-requirements filter function. This pre-registration step occurs before NDIS calls the [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function.

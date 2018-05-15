@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Supporting Point and Print
 
 
-## <a href="" id="ddk-supporting-point-and-print-gg"></a>
+
 
 
 This section provides the following topics that describe Windows 2000 and later Point and Print technology:

@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Setting Up the WIA Build Environment
 
 
-## <a href="" id="ddk-setting-up-the-wia-build-environment-si"></a>
+
 
 
 This section describes the files required to build Microsoft WIA minidrivers and microdrivers, and provides links to the general topics on how to build a driver. You can build a project from the command line using the Windows Driver Kit (WDK) build tools, or from within the Microsoft Visual Studio environment that comes with Microsoft Visual C++.

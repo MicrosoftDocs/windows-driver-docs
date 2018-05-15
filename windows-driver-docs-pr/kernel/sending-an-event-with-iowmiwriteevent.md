@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Sending an Event with IoWMIWriteEvent
 
 
-## <a href="" id="ddk-sending-an-event-with-iowmiwriteevent-kg"></a>
+
 
 
 A driver can call [**IoWMIWriteEvent**](https://msdn.microsoft.com/library/windows/hardware/ff550520) to send any event. The event can consist of a single item, a single instance, or all instances of a data block, and it can use dynamic instance names.

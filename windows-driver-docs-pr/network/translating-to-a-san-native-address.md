@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Translating to a SAN Native Address
 
 
-## <a href="" id="ddk-translating-to-a-san-native-address-ng"></a>
+
 
 
 The Windows Sockets switch always uses the [WSK address families](https://msdn.microsoft.com/library/windows/hardware/ff571151) to interact with a SAN service provider, not the SAN's native address family. Therefore, a proxy driver for a SAN service provider must translate between WSK address families and native addresses accordingly.

@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # SetupAPI Logging (Windows Server 2003, Windows XP, and Windows 2000)
 
 
-## <a href="" id="ddk-using-setupapi-logging-dg"></a>
+
 
 
 The Windows Setup and Device Installer Services, also known as SetupAPI, include the Windows functions that control Setup and device installation. As Setup proceeds, the [general Setup functions](https://msdn.microsoft.com/library/windows/hardware/ff544985) (**Setup***Xxx* functions) and [device installation functions](https://msdn.microsoft.com/library/windows/hardware/ff541299) (**SetupDi***Xxx* functions) create a log file that provides useful information for troubleshooting device installation problems.

@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Minidriver Flow of Control
 
 
-## <a href="" id="ddk-minidriver-flow-of-control-ksg"></a>
+
 
 
 The following set of steps is typically followed in initializing, using, and uninitializing streaming minidrivers. The following referenced commands and structures are described elsewhere in this documentation.

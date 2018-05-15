@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Installing Device-Specific Applications
 
 
-## <a href="" id="ddk-installing-device-specific-applications-dg"></a>
+
 
 
 If your distribution medium includes device-specific applications, you can use the following methods to install those applications:

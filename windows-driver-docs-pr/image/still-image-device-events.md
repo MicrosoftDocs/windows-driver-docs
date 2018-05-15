@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Still Image Device Events
 
 
-## <a href="" id="ddk-still-image-device-events-si"></a>
+
 
 
 A *still image device event* is a device-level occurrence that upper-level software should be notified about, if that software has requested such notification. The user-mode minidriver is responsible for defining most device events and delivering notifications when an event occurs. In general, events indicate that upper-level software is going to be required to perform some action.

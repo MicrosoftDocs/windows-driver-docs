@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Item Flags for Film Scanners
 
 
-## <a href="" id="ddk-wia-item-flags-for-film-scanners-si"></a>
+
 
 
 This topic lists the required WIA item flags for a scanner film item and scanner film child items (that is, frames). For a complete list of the WIA item flags and their definitions, see [**WIA\_IPA\_ITEM\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff551585).

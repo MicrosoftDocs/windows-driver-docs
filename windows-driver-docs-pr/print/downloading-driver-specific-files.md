@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Downloading Driver-Specific Files
 
 
-## <a href="" id="ddk-downloading-driver-specific-files-gg"></a>
+
 
 
 A client system creates a connection to a print server by calling **AddPrinterConnection**. This call results in a call to **GetPrinterDriver** on the server, which reads the [printer's INF file](printer-inf-files.md) in order to fill in a DRIVER\_INFO\_3 structure, followed by a call to **AddPrinterDriver**, with the DRIVER\_INFO\_3 structure as input. The **AddPrinterDriver** function causes all files listed in the DRIVER\_INFO\_3 structure to be sent to the client.

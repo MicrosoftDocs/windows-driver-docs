@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # WMI Event Tracing
 
 
-## <a href="" id="ddk-wmi-event-tracing-kg"></a>
+
 
 
 This section describes the WMI extensions to WDM (supported by Windows 2000 and later) that kernel-mode drivers, as information providers, can use to provide information to information consumers. Drivers typically provide information that a consumer uses to determine the driver's configuration and resource usage. In addition to the WMI extensions to WDM, a user-mode API supports providers or consumers of WMI event information—see the Windows SDK for more information.

@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Types of NDIS Miniport Drivers
 
 
-## <a href="" id="ddk-types-of-ndis-miniport-drivers-ng"></a>
+
 
 
 NDIS supports several basic types of miniport drivers. These NDIS miniport drivers are described in the following topics:

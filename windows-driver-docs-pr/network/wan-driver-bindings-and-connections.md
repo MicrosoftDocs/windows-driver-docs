@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # WAN Driver Bindings and Connections
 
 
-## <a href="" id="ddk-wan-driver-bindings-and-connections-ng"></a>
+
 
 
 This topic provides an overview of bindings and connections between NDISWAN, overlying protocol drivers, and the underlying WAN miniport drivers.

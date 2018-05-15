@@ -24,7 +24,7 @@ A Kernel-Mode Driver Framework (KMDF) or User-Mode Driver Framework (UMDF) drive
 
 The following tables describe what the retrieval methods return for IRP\_MJ\_READ, IRP\_MJ\_WRITE, and IRP\_MJ\_DEVICE\_CONTROL requests for buffered and direct I/O. Requests for neither I/O require special handling because the driver must retrieve the buffers while running in the context of the requesting user-mode process.
 
-## <a href="" id="read"></a>Buffers for IRP\_MJ\_READ Requests
+## Buffers for IRP\_MJ\_READ Requests
 
 
 To retrieve a buffer for a read request, a KMDF driver calls one of the **WdfRequestRetrieveOutput***Xxx* methods. The buffer that each of these methods returns varies, depending on whether the driver performs buffered or direct I/O. The following table describes the pointer that is returned by each method in WDM terms.
@@ -37,7 +37,7 @@ To retrieve a buffer for a read request, a KMDF driver calls one of the **WdfReq
 
  
 
-## <a href="" id="write"></a>Buffers for IRP\_MJ\_WRITE Requests
+## Buffers for IRP\_MJ\_WRITE Requests
 
 
 To retrieve a buffer for a write request, a KMDF driver calls one of the **WdfRequestRetrieveInput***Xxx* methods. The buffer that each of these methods returns varies, depending on whether the driver performs buffered or direct I/O. The following table describes the pointer that is returned by each method in WDM terms.
@@ -50,7 +50,7 @@ To retrieve a buffer for a write request, a KMDF driver calls one of the **WdfRe
 
  
 
-## <a href="" id="device-control"></a>Buffers for IRP\_MJ\_DEVICE\_CONTROL Requests
+## Buffers for IRP\_MJ\_DEVICE\_CONTROL Requests
 
 
 To retrieve a buffer for a device I/O control request, a KMDF driver calls either **WdfRequestRetrieveInputXxx** or **WdfRequestRetrieveOutputXxx** methods. The buffer that each of these methods returns varies, depending on whether the driver performs [buffered or direct I/O](https://msdn.microsoft.com/library/windows/hardware/ff540701), as shown in the following table:

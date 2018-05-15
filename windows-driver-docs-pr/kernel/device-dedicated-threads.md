@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Device-Dedicated Threads
 
 
-## <a href="" id="ddk-device-dedicated-threads-kg"></a>
+
 
 
 The driver of a slow device or a device that is seldom used (like the floppy controller) can solve many "waiting" problems by creating a device-dedicated system thread. Additionally, most file system drivers use system worker threads and supply worker-thread callback routines.

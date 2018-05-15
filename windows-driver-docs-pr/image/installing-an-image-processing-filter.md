@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Installing an Image Processing Filter
 
 
-## <a href="" id="ddk-installing-an-image-processing-filter-si"></a>
+
 
 
 The image processing filter is typically installed together with the WIA driver. In order to install the driver's image processing filter together with the driver, a small number of additions must be done to the driver's INF file. The following example shows an example of how an existing driver INF file can be modified to include the image processing filter.

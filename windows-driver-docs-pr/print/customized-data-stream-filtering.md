@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Customized Data Stream Filtering
 
 
-## <a href="" id="ddk-customized-data-stream-filtering-gg"></a>
+
 
 
 Unidrv allows customized code to perform final post-processing of image data before it is spooled. Such processing might consist of removing adjacent dots, or any other data filtering operation that Unidrv does not provide.

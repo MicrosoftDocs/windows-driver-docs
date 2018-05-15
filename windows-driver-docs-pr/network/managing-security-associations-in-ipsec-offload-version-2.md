@@ -17,7 +17,7 @@ ms.technology: windows-devices
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-managing-security-associations-in-ipsec-offload-version-2-ng"></a>
+
 
 
 After the TCP/IP transport determines that a NIC can perform IPsec offload version 2 (IPsecOV2) operations (see [Reporting a NIC's IPsec Offload Version 2 Capabilities](reporting-a-nic-s-ipsec-offload-version-2-capabilities.md)), the transport requests that the NIC's miniport driver add one or more security associations (SAs) to the NIC before the transport can offload IPsec tasks to the NIC. After adding SAs, the TCP/IP transport can also delete or update them. The IPsecOV2 interface requires the NDIS direct OID interface for add, delete, and update OIDs.

@@ -13,7 +13,7 @@ ms.assetid: eeb7dafd-fb44-4fb7-b5f0-314059ee0093
 # Plug and Play Minor IRPs
 
 
-## <a href="" id="ddk-plug-and-play-minor-irps-dr"></a>
+
 
 
 This section describes the PnP IRPs that are sent to drivers. All PnP IRPs have the major function code [**IRP\_MJ\_PNP**](irp-mj-pnp.md) and a minor function code indicating the particular PnP request.

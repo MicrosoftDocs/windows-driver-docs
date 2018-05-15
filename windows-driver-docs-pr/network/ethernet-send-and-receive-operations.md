@@ -21,7 +21,7 @@ ms.technology: windows-devices
 # Ethernet Send and Receive Operations
 
 
-## <a href="" id="ddk-ethernet-send-and-receive-operations-ng"></a>
+
 
 
 This section defines send and receive requirements for Ethernet drivers. For general information about send and receive operations, see [Send and Receive Operations](send-and-receive-operations.md).

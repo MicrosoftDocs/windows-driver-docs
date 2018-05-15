@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Control Channel Characteristics
 
 
-## <a href="" id="ddk-control-channel-characteristics-ng"></a>
+
 
 
 The Control channel for the device is its USB Control endpoint. A control message from the host to the device is sent as a SEND\_ENCAPSULATED\_COMMAND transfer. This transfer is defined in the following table.

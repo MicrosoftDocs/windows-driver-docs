@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Types of NDIS Ports
 
 
-## <a href="" id="ddk-ndis-port-types-ng"></a>
+
 
 
 NDIS ports can be one of the following types:

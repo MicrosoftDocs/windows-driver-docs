@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Synchronization Examples
 
 
-## <a href="" id="ddk-synchronization-examples-ksg"></a>
+
 
 
 The following examples illustrate what a minidriver needs to do regarding synchronization and includes examples of when synchronization should not be used:

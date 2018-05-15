@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Item Property and Location Changes
 
 
-## <a href="" id="ddk-wia-item-property-and-location-changes-si"></a>
+
 
 
 The simplest way to ensure application compatibility in Windows Vista and previous operating systems is to implement the WIA properties in the Windows XP and Windows Me locations *and* in the Windows Vista locations. Normally, WIA applications that are written for Windows Vista operate only with the WIA properties and locations added for Windows Vista, while applications that are written for Windows XP and Windows Me work only with the WIA properties and locations that are defined in those operating systems. Implementing the properties in both locations allows applications that are written for Windows Vista, Windows XP, and Windows Me to work with the same property set implementation.

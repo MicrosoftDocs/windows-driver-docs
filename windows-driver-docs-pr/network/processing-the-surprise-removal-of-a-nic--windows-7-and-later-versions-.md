@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Processing the Surprise Removal of a NIC (Windows 7 and Later Versions)
 
 
-## <a href="" id="ddk-processing-the-surprise-removal-of-a-nic-ng"></a>
+
 
 
 In Windows 7 and Windows Server 2008 R2 and later, NDIS may participate in the surprise removal of a network interface card (NIC) differently than it had in previous versions of Windows. NDIS performs a revised surprise removal procedure if any of the following conditions are true:

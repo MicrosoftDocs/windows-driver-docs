@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Handling Device Interface Change Events
 
 
-## <a href="" id="ddk-handling-device-interface-change-events-kg"></a>
+
 
 
 When a driver or a user-mode component enables or disables a device interface instance, the PnP manager calls all notification callback routines that are registered for **EventCategoryDeviceInterfaceChange** events on the device interface class. To indicate the reason for the notification, the PnP manager sets the **Event** member of the callback routine's *NotificationStructure* parameter to GUID\_DEVICE\_INTERFACE\_ARRIVAL or GUID\_DEVICE\_INTERFACE\_REMOVAL.

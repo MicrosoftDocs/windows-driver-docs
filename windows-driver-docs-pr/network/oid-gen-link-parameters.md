@@ -39,7 +39,7 @@ The NDIS\_LINK\_PARAMETERS structure is defined as follows:
   
 ```
 
-## <a href="" id="ddk-oid-gen-link-parameters--nr"></a>
+
 
 
 This structure contains the following members:

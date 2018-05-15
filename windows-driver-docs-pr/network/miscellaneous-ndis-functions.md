@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Miscellaneous NDIS Functions
 
 
-## <a href="" id="ddk-miscellaneous-ndis-6-0-functions-ng"></a>
+
 
 
 NDIS includes the following miscellaneous features and functions:

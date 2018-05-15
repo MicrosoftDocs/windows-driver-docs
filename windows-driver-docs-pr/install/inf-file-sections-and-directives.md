@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # INF File Sections and Directives
 
 
-## <a href="" id="ddk-inf-file-sections-and-directives-dr"></a>
+
 
 
 The following topics describe the sections and directives that can appear in INF files:

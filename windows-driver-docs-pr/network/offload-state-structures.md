@@ -17,7 +17,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-offload-state-structures-ng"></a>
+
 
 
 The following table indicates which structures a host stack uses to package offload state.

@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Porting Miniport Adapter Halt Operations to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-miniport-adapter-halt-operations-to-ndis-6-0-ng"></a>
+
 
 
 In NDIS 6.0 and later, the [*MiniportHaltEx*](https://msdn.microsoft.com/library/windows/hardware/ff559388) function replaces the NDIS 5.x [*MiniportHalt*](https://msdn.microsoft.com/library/windows/hardware/ff549451) function. *MiniportHaltEx* has a *HaltAction* parameter in addition to the *MiniportAdapterContext* parameter. The *HaltAction* parameter specifies the reason for halting the miniport adapter.

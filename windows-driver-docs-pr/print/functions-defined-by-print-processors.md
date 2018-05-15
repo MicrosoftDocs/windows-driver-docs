@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Functions Defined by Print Processors
 
 
-## <a href="" id="ddk-functions-defined-by-print-processors-gg"></a>
+
 
 
 Print processors must export the functions listed in the following table.

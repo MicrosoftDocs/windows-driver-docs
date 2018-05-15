@@ -22,7 +22,7 @@ ms.technology: windows-devices
 # Writing AVStream Minidrivers for Hardware
 
 
-## <a href="" id="ddk-writing-avstream-minidrivers-for-hardware-ksg"></a>
+
 
 
 In the vendor-supplied [*AVStrMiniDeviceStart*](https://msdn.microsoft.com/library/windows/hardware/ff556297), AVStream minidrivers that support hardware should first parse the resource list and then call [**IoConnectInterrupt**](https://msdn.microsoft.com/library/windows/hardware/ff548371) to register an interrupt service routine (ISR).

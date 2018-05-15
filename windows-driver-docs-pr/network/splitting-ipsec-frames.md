@@ -16,7 +16,7 @@ ms.technology: windows-devices
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-splitting-ipsec-frames-ng"></a>
+
 
 
 A NIC can split IPsec frames at the [beginning of the upper-layer-protocol header](splitting-frames-at-the-beginning-of-the-upper-layer-protocol-headers.md), the [beginning of the TCP payload](splitting-frames-at-the-tcp-payload.md), or the [beginning of the UDP payload](splitting-frames-at-the-udp-payload.md). The NIC should treat the IPsec information the same as an IPv4 option or IPv6 extension header.

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # COM-Based Rendering Plug-Ins
 
 
-## <a href="" id="ddk-com-based-rendering-plug-ins-gg"></a>
+
 
 
 To provide customized hooking functions, your COM-based rendering plug-in must implement the [**IPrintOemUni::EnableDriver**](https://msdn.microsoft.com/library/windows/hardware/ff554248) or [**IPrintOemPS::EnableDriver**](https://msdn.microsoft.com/library/windows/hardware/ff553212) method, which fills in a [**DRVENABLEDATA**](https://msdn.microsoft.com/library/windows/hardware/ff556206) structure with the address of each hooking function.

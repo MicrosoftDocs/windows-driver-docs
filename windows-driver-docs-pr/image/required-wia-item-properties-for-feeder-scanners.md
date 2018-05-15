@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Required WIA Item Properties for Feeder Scanners
 
 
-## <a href="" id="ddk-required-wia-item-properties-for-feeder-scanners-si"></a>
+
 
 
 The WIA feeder scanner item is required to support the following WIA properties:

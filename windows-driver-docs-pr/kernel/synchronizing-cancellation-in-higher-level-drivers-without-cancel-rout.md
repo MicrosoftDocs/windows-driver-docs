@@ -8,7 +8,7 @@ ms.assetid: 741d504e-7e61-4f60-a8cf-e4ea92f0654e
 # Synchronizing Cancellation in Higher-Level Drivers without Cancel Routines
 
 
-## <a href="" id="ddk-synchronizing-cancellation-in-higher-level-drivers-without-cancel-"></a>
+
 
 
 A higher-level driver can make no assumptions about whether or how existing lower-level drivers handle cancelable IRPs. As soon as any higher-level driver calls [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) for an IRP, it no longer owns that IRP and it can neither ascertain nor control processing of the IRP by lower-level drivers.

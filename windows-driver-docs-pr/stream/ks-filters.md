@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # KS Filters
 
 
-## <a href="" id="ddk-ks-filters-ksg"></a>
+
 
 
 A filter is a group of nodes that encapsulates a processing task to be performed on the data stream. [Pins](ks-pins.md) serve as input and output conduits on a filter.

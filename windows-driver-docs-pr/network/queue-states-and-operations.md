@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Queue States and Operations
 
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 For each queue, a network adapter must support the following set of operational states:

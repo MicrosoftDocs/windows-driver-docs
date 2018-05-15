@@ -8,7 +8,7 @@ ms.assetid: 702f2ad7-d3bb-4268-a0c8-fe6756e840e3
 # Testing and Troubleshooting WMI Driver Support
 
 
-## <a href="" id="ddk-testing-and-troubleshooting-wmi-driver-support-kg"></a>
+
 
 
 This section discusses techniques for testing your driver, and troubleshooting any problems that might occur.

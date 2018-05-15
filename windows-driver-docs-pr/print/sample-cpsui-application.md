@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Sample CPSUI Application
 
 
-## <a href="" id="ddk-sample-cpsui-application-gg"></a>
+
 
 
 Source code for CPSUISAM, a sample CPSUI application, is included in the \\src\\print directory of the WDK. The application causes CPSUI to call into the print spooler to create property sheet pages for the system's default printer. The application then creates an additional property sheet page, in order to illustrate some of the techniques that can be employed when using CPSUI to create a new page.

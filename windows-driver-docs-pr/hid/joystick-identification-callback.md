@@ -9,7 +9,7 @@ keywords: ["callbacks WDK joysticks", "joysticks WDK HID , ID requests", "ID req
 # Joystick Identification Callback
 
 
-## <a href="" id="ddk-joystick-identification-callback-di"></a>
+
 
 
 ```

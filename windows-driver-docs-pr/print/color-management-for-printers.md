@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Color Management for Printers
 
 
-## <a href="" id="ddk-color-management-for-printers-gg"></a>
+
 
 
 This section describes the operations that printer drivers must perform to support color management. The following topics are provided:

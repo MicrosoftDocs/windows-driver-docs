@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Requirements for Vendor-Supplied Parallel Drivers
 
 
-## <a href="" id="ddk-requirements-for-vendor-supplied-parallel-drivers-kg"></a>
+
 
 
 This section describes Microsoft Windows requirements for vendor-supplied drivers for parallel ports and devices attached to parallel ports.

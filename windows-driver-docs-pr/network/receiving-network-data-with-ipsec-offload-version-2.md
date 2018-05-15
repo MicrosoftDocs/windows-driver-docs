@@ -16,7 +16,7 @@ ms.technology: windows-devices
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-receiving-network-data-with-ipsec-offload-version-2-ng"></a>
+
 
 
 A NIC performs IPsec offload version 2 (IPsecOV2) processing on a receive packet as specified in a security association (SA) that was offloaded from the transport.

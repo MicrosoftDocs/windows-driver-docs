@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Network Interface Information
 
 
-## <a href="" id="ddk-network-interface-information-ng"></a>
+
 
 
 An interface provider supplies information about each registered interface by using the following data structures.

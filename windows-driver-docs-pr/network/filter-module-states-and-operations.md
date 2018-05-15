@@ -21,7 +21,7 @@ ms.technology: windows-devices
 # Filter Module States and Operations
 
 
-## <a href="" id="ddk-filter-module-states-and-operations-ng"></a>
+
 
 
 A filter driver must support the following operational states for each filter module (instance of a filter driver) that the driver manages:

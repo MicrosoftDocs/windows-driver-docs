@@ -19,7 +19,7 @@ ms.technology: windows-devices
 
  
 
-## <a href="" id="ddk-setting-the-dma-cpu-affinities-ng"></a>
+
 
 
 If a computer supports MSI-X, the NetDMA interface, while in the context of the [**NetDmaRegisterProvider**](https://msdn.microsoft.com/library/windows/hardware/ff568336) function, calls the NetDMA provider driver's [**ProviderSetDmaChannelCpuAffinity**](https://msdn.microsoft.com/library/windows/hardware/ff570402) function to specify the CPU affinities of the interrupts that are associated with DMA channels. The NetDMA interface passes the *ProviderSetDmaChannelCpuAffinity* function an array of [**NET\_DMA\_CHANNEL\_CPU\_AFFINITY**](https://msdn.microsoft.com/library/windows/hardware/ff568731) structures at the *CpuAffinityArray* parameter.

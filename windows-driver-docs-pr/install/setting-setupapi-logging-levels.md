@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Setting SetupAPI Logging Levels
 
 
-## <a href="" id="ddk-setting-setupapi-logging-levels-dg"></a>
+
 
 
 You can control the amount of information that is written to the SetupAPI log, either for all [*device installation applications*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) or for individual device installation applications.

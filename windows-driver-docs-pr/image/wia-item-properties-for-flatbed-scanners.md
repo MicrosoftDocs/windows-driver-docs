@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Item Properties for Flatbed Scanners
 
 
-## <a href="" id="ddk-wia-item-properties-for-flatbed-scanners-si"></a>
+
 
 
 This section describes the required and optional WIA item properties for a scanner flatbed item and child items. For a complete list of WIA common, camera-specific, and scanner-specific properties, see [WIA Properties](https://msdn.microsoft.com/library/windows/hardware/ff552739).

@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # DVD Decoder Related KS Properties
 
 
-## <a href="" id="ddk-dvd-decoder-related-ks-properties-ksg"></a>
+
 
 
 The following tables describe the kernel streaming property sets and their respective properties that are related to DVD Decoders:

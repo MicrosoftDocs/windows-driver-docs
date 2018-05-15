@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Setting the NDIS 6.0 Miniport Adapter Attributes
 
 
-## <a href="" id="ddk-setting-the-ndis-6-0-miniport-adapter-attributes-ng"></a>
+
 
 
 The [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) function replaces the [**NdisMSetAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff553619) and [**NdisMSetAttributesEx**](https://msdn.microsoft.com/library/windows/hardware/ff553623) functions. The driver passes miniport adapter configuration attributes to **NdisMSetMiniportAttributes**, including the medium type, flags, check-for-hang time, and interface type.

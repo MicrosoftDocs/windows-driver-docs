@@ -23,7 +23,7 @@ ms.technology: windows-devices
 # Writing a Network Print Provider
 
 
-## <a href="" id="ddk-writing-a-network-print-provider-gg"></a>
+
 
 
 Occasionally, a vendor might want to supply a [print provider](print-providers.md) to support a new network architecture. One possible way to supply new print provider functionality is to create an entirely new print provider that replaces the [local print provider](local-print-provider.md). In reality, however, this is a challenging and probably unnecessary task. An alternative is to create a partial print provider that works in conjunction with the local print provider.

@@ -102,7 +102,7 @@ The following table summarizes the PCIe features that are supported by different
 </table>
 
 
-## <a href="" id="ddk-pci-design-guide-kg"></a>
+
 
 
 ## In this section

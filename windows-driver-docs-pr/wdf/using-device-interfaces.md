@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Using Device Interfaces
 
 
-## <a href="" id="ddk-using-device-interfaces-df"></a>
+
 
 
 A *device interface* is a symbolic link to a Plug and Play (PnP) device that an application can use to access the device. A user-mode application can pass the interface's symbolic link name to an API element, such as the Microsoft Win32 **CreateFile** function. To obtain a device interface's symbolic link name, the user-mode application can call **SetupDi** functions. For more information about **SetupDi** functions, see [Using Device Interface Functions](https://msdn.microsoft.com/library/windows/hardware/ff553567).

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Errors in Direct I/O
 
 
-## <a href="" id="ddk-errors-in-direct-i-o-kg"></a>
+
 
 
 The most common direct I/O problem is failing to handle zero-length buffers correctly. Because the I/O manager does not create MDLs for zero-length transfers, a zero-length buffer results in a **NULL** value at **Irp-&gt;MdlAddress**.

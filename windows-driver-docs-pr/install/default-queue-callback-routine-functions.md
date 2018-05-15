@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Default Queue Callback Routine Functions
 
 
-## <a href="" id="ddk-default-queue-callback-routine-functions-dg"></a>
+
 
 
 If you associate a callback routine with a file queue, the callback routine will be called every time that the system performs one of the queued file operations. Typically, you can use the default queue callback routine, [**SetupDefaultQueueCallback**](https://msdn.microsoft.com/library/windows/desktop/aa376993), to handle these notifications.

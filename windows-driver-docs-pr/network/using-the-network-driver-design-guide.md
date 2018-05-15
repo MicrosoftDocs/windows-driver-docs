@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using the Network Driver Design Guide
 
 
-## <a href="" id="ddk-using-the-network-driver-design-guide-ng"></a>
+
 
 
 Microsoft Windows-based operating systems support several types of kernel-mode network drivers. The Network section of the Windows Driver Kit (WDK) documentation describes how to write these network drivers. This topic briefly describes the supported types of network drivers and explains which sections of the Network section you should read before writing each type of network driver.

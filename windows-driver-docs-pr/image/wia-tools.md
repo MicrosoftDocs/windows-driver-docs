@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Tools
 
 
-## <a href="" id="ddk-wia-ddk-tools-si"></a>
+
 
 
 The following table lists the WIA tools that available for WIA driver writers in the Windows Driver Development Kit (DDK) and the Windows Driver Kit (WDK). These tools assist in the driver development process and should be used when unit testing new drivers.

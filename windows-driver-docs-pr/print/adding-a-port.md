@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Adding a Port
 
 
-## <a href="" id="ddk-adding-a-port-gg"></a>
+
 
 
 Adding a port consists of storing the port's name and user-modifiable configuration information inside the port monitor server DLL's local storage or in the registry.

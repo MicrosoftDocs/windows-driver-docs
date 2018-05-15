@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Stream Class Registry Values
 
 
-## <a href="" id="ddk-stream-class-registry-values-ksg"></a>
+
 
 
 To install a minidriver under *Stream.sys*, the vendor must supply a device-specific INF file that complies with [generic INF file requirements](https://msdn.microsoft.com/library/windows/hardware/ff547433). In this file, minidrivers running under stream class can set special registry values in the device-specific [**AddReg**](https://msdn.microsoft.com/library/windows/hardware/ff546320) section. These registry entries serve as binary indicators: set them to hexadecimal value 01 to enable the capability.

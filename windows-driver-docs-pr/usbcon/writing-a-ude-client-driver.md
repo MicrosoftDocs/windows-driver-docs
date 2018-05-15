@@ -351,7 +351,7 @@ Controller_EvtControllerQueryUsbCapability(
 }
 ```
 
-## <a href="" id="device"></a>Create a virtual USB device
+## Create a virtual USB device
 
 
 A virtual USB device behaves similar to a USB device. It supports a configuration with multiple interfaces and each interface supports alternate settings. Each setting can have one more endpoints that are used for data transfers. All descriptors (device, configuration, interface, endpoint) are set by the UDE client driver so that the device can report information much like a real USB device.
@@ -600,7 +600,7 @@ The client driver changes the function state of the specified interface of the v
 A USB 3.0 device allows individual functions to enter lower power state. Each function is also capable of send a wake signal. The UDE class extension notifies the client driver by invoking [*EVT\_UDECX\_USB\_DEVICE\_SET\_FUNCTION\_SUSPEND\_AND\_WAKE*](https://msdn.microsoft.com/library/windows/hardware/mt595915). This event indicates a function power state change and informs the client driver of whether the function can wake from the new state. In the function, the class extension passes the interface number of the function that is waking up.
 The client driver can simulate the action of a virtual USB device initiating its own wake up from a low link power state, function suspend, or both. For a USB 2.0 device, the driver must call [**UdecxUsbDeviceSignalWake**](https://msdn.microsoft.com/library/windows/hardware/mt627982), if the driver enabled wake on the device in the most recent [*EVT\_UDECX\_USB\_DEVICE\_D0\_EXIT*](https://msdn.microsoft.com/library/windows/hardware/mt595911). For a USB 3.0 device, the driver must call [**UdecxUsbDeviceSignalFunctionWake**](https://msdn.microsoft.com/library/windows/hardware/mt627981) because the USB 3.0 wake feature is per-function. If the entire device is in a low power state, or entering such a state, **UdecxUsbDeviceSignalFunctionWake** wakes up the device.
 
-## <a href="" id="static"></a>Create simple endpoints
+## Create simple endpoints
 
 
 The client driver creates UDE endpoint objects to handle data transfers to and from the USB device. The driver creates simple endpoints after creating the UDE device and before reporting the device as plugged in.
@@ -706,7 +706,7 @@ exit:
 }
 ```
 
-## <a href="" id="dynamic"></a>Create dynamic endpoints
+## Create dynamic endpoints
 
 
 The client driver can create dynamic endpoints at the request of the UDE class extension (on behalf of the hub driver and client drivers). The class extension makes the request by invoking any of these callback functions:
@@ -801,7 +801,7 @@ This call is asynchronous. After the client is finished with the reset operation
 
  
 
-## <a href="" id="implement-queue-state-management-"></a>Implement queue state management
+## Implement queue state management
 
 
 The state of the framework queue object associated with a UDE endpoint object is managed by the UDE class extension. However, if the client driver forwards requests from endpoint queues to other internal queues, then the client must implement logic to handle changes in the endpoint’s I/O flow. These callback functions are registered with [**UdecxUsbEndpointInitSetCallbacks**](https://msdn.microsoft.com/library/windows/hardware/mt627985).

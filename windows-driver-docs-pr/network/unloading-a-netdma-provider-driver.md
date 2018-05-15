@@ -19,7 +19,7 @@ ms.technology: windows-devices
 
  
 
-## <a href="" id="ddk-unloading-a-netdma-provider-driver-ng"></a>
+
 
 
 The Plug and Play (PnP) manager calls a NetDMA provider driver's [**Unload**](https://msdn.microsoft.com/library/windows/hardware/ff564886) routine after all of the dynamic memory access (DMA) engines that the driver manages have been removed. For more information about removing DMA engines, see [Deregistering a NetDMA Provider](deregistering-a-netdma-provider.md).

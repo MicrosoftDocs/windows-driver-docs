@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # NDIS WAN Status Indications
 
 
-## <a href="" id="ddk-ndis-wan-status-indications-nr"></a>
+
 
 
 This section includes:

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Updating WMI Registration Information
 
 
-## <a href="" id="ddk-updating-wmi-registration-information-kg"></a>
+
 
 
 After its initial registration with WMI, a driver changes its registration information by calling [**IoWMIRegistrationControl**](https://msdn.microsoft.com/library/windows/hardware/ff550480) with one of the following actions:

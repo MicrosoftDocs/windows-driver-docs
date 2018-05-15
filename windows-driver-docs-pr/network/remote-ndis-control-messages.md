@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Remote NDIS Control Messages
 
 
-## <a href="" id="ddk-remote-ndis-control-messages-nr"></a>
+
 
 
 The following Remote NDIS control messages must be supported by an Ethernet 802.3 connectionless device:

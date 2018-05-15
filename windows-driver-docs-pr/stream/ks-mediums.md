@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # KS Mediums
 
 
-## <a href="" id="ddk-ks-mediums-ksg"></a>
+
 
 
 A *Medium* defines a type of communication bus. The minidriver indicates which mediums a pin supports by providing a pointer to an array of [**KSPIN\_MEDIUM**](https://msdn.microsoft.com/library/windows/hardware/ff563538) structures in the relevant [**KSPIN\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff563533) structure. A KSPIN\_MEDIUM identifies a specific connection on a communication bus.

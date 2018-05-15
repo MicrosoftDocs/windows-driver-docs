@@ -21,7 +21,7 @@ ms.technology: windows-devices
 # AVStream Allocators
 
 
-## <a href="" id="ddk-avstream-allocators-ksg"></a>
+
 
 
 The AVStream class driver uses an *Allocator* to allocate data buffers in units called *frames*. A frame is a chunk of continuous memory, the size of which is vendor-specified through the **AllocatorFraming** member of [**KSPIN\_DESCRIPTOR\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff563534).

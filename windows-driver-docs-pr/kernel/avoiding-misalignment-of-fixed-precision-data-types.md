@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Avoiding Misalignment of Fixed-Precision Data Types
 
 
-## <a href="" id="ddk-avoiding-misalignment-of-fixed-precision-data-types-kg"></a>
+
 
 
 Unfortunately, it is possible for a data type to have the same size, but different alignment requirements, for 32-bit and 64-bit programming. Thus not all IOCTL/FSCTL buffer misalignment problems can be avoided by changing pointer-precision data types to fixed-precision types. This means that kernel-mode driver IOCTLs and FSCTLs that pass buffers containing certain fixed-precision data types (or pointers to them) may also need to be thunked.

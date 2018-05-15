@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Functions Defined by Print Monitors
 
 
-## <a href="" id="ddk-functions-defined-by-print-monitors-gg"></a>
+
 
 
 The following sections list the functions that must be defined within print monitor DLLs.

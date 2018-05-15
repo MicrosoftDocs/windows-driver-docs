@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Sending Ethernet Frames
 
 
-## <a href="" id="ddk-sending-ethernet-frames-ng"></a>
+
 
 
 The Windows TCP/IP transport supports a set of requirements for sending Ethernet frames. Any driver (for example, a MUX intermediate driver or filter driver) that originates send requests or modifies the send requests of overlying drivers must support the requirements that the TCP/IP transport implements.

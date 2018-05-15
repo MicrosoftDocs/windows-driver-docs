@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # HKLM\\SYSTEM\\CurrentControlSet\\Services Registry Tree
 
 
-## <a href="" id="ddk-the-hklm-system-currentcontrolset-services-tree-dg"></a>
+
 
 
 The **HKLM\\SYSTEM\\CurrentControlSet\\Services** registry tree stores information about each service on the system. Each driver has a key of the form **HKLM\\SYSTEM\\CurrentControlSet\\Services\\***DriverName*. The PnP manager passes this path of a driver in the *RegistryPath* parameter when it calls the driver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine. A driver can store global driver-defined data under its key in the **Services** tree. Information that is stored under this key is available to the driver during its initialization.

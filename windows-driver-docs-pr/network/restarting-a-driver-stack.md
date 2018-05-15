@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Restarting a Driver Stack
 
 
-## <a href="" id="ddk-restarting-a-driver-stack-ng"></a>
+
 
 
 NDIS restarts a driver stack after operations such as inserting a filter module or adding a binding. A driver stack restart operation proceeds as follows:

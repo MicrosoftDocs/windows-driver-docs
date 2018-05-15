@@ -37,7 +37,7 @@ The technique that your driver uses to access a request's data buffers depends o
 
 A Kernel-Mode Driver Framework (KMDF) driver can use any of the three access methods. A User-Mode Driver Framework (UMDF) driver can use buffered or direct I/O for read, write, and IOCTL requests, and can [convert requests that specify the **METHOD\_NEITHER** method](managing-buffer-access-methods-in-umdf-drivers.md#using-neither-buffered-i-o-nor-direct-i-o-in-umdf-drivers).
 
-## <a href="" id="ddk-preprocessing-i-o-requests-df"></a>Specifying Buffer Access Method
+## Specifying Buffer Access Method
 
 
 <a href="" id="kmdf-drivers"></a>**KMDF Drivers**  
@@ -62,7 +62,7 @@ For information about framework memory objects, lookaside lists, MDLs, and local
 
 For information about when memory buffers are deleted, see [Memory Buffer Life Cycle](memory-buffer-life-cycle.md).
 
-## <a href="" id="buffered"></a> Accessing Data Buffers for Buffered I/O
+##  Accessing Data Buffers for Buffered I/O
 
 
 If your driver is using buffered I/O, its behavior changes depending on the type of data request and whether it's using KMDF or UMDF.
@@ -89,7 +89,7 @@ To retrieve the virtual address and length of the buffer, the driver calls [**Wd
 
 To allocate and build a memory descriptor list (MDL) for the buffer, a KMDF driver calls [**WdfRequestRetrieveInputWdmMdl**](https://msdn.microsoft.com/library/windows/hardware/ff550016) or [**WdfRequestRetrieveOutputWdmMdl**](https://msdn.microsoft.com/library/windows/hardware/ff550021).
 
-## <a href="" id="direct"></a> Accessing Data Buffers for Direct I/O
+##  Accessing Data Buffers for Direct I/O
 
 
 <a href="" id="kmdf-drivers"></a>**KMDF Drivers**  
@@ -106,7 +106,7 @@ To retrieve the virtual address and length of the buffer space, the driver calls
 
 If a device's drivers are using direct I/O, the I/O manager describes buffers by using MDLs. To retrieve a pointer to a buffer's MDL, a KMDF driver calls [**WdfRequestRetrieveInputWdmMdl**](https://msdn.microsoft.com/library/windows/hardware/ff550016) or [**WdfRequestRetrieveOutputWdmMdl**](https://msdn.microsoft.com/library/windows/hardware/ff550021). A UMDF driver cannot access MDLs.
 
-## <a href="" id="neither"></a> Accessing Data Buffers for Neither Buffered Nor Direct I/O
+##  Accessing Data Buffers for Neither Buffered Nor Direct I/O
 
 
 <a href="" id="kmdf-drivers"></a>**KMDF Drivers**  

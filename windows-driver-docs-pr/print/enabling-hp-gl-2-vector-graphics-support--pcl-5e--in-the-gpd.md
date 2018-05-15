@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Enabling HP-GL/2 Vector Graphics Support (PCL-5e) in the GPD
 
 
-## <a href="" id="ddk-enabling-hp-gl-2-vector-graphics-support-pcl-5e-in-the-gpd-gg"></a>
+
 
 
 To enable HP-GL/2 vector support on Windows XP, you must do two things:
