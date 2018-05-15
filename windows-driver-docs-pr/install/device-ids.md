@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 A device ID is a string reported by a device’s [*enumerator*](https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-enumerator). A device has only one device ID. A device ID has the same format as a [hardware ID](hardware-ids.md).
 
-## <a href="" id="ddk-device-ids-dg"></a>
+
 
 
 The Plug and Play (PnP) manager uses the device ID to create a subkey for a device under the registry key for the device's enumerator.

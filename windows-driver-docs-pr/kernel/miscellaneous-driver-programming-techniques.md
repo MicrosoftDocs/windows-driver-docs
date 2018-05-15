@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Miscellaneous Driver Programming Techniques
 
 
-## <a href="" id="ddk-driver-programming-techniques-kg"></a>
+
 
 
 This section contains various topics of interest to driver writers. It includes the following sections:

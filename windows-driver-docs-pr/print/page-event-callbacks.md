@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Page Event Callbacks
 
 
-## <a href="" id="ddk-page-event-callbacks-gg"></a>
+
 
 
 When a user interacts with a property sheet page, the operation system sends notification of such window events as a changed focus or a modified value. How a CPSUI application receives notification of a page's window events depends on how the application has defined the page:

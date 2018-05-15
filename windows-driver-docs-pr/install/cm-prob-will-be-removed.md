@@ -16,7 +16,7 @@ ms.technology: windows-devices
 This function is reserved for system use.
 
 
-## <a href="" id="ddk-cm-prob-will-be-removed-dg"></a>
+
 
 
 The system will remove the device.

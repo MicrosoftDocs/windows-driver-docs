@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Still Image Device Installers
 
 
-## <a href="" id="ddk-still-image-device-installers-si"></a>
+
 
 
 Microsoft provides a class installer for still image devices, with the following features:

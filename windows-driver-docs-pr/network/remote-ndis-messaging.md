@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Remote NDIS Messaging
 
 
-## <a href="" id="ddk-remote-ndis-messaging-ng"></a>
+
 
 
 There are two types of Remote NDIS messages: *control messages* and *data messages*. Control messages allow the host and Remote NDIS device to communicate with each other over the communication channel. Data messages contain the message data information needed for the communication between the host and device and are communicated over the data channel.

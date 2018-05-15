@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # KS Allocators
 
 
-## <a href="" id="ddk-ks-allocators-ksg"></a>
+
 
 
 An *Allocator* is a KS object that instantiates data buffers called *frames* for I/O requests. A frame is a chunk of continuous memory, the size of which is vendor-specified through the **AllocatorFraming** member of [**KSPIN\_DESCRIPTOR\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff563534).

@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Understanding TYMED
 
 
-## <a href="" id="ddk-understanding-tymed-si"></a>
+
 
 
 TYMED specifies the type of data transfer. The value of this member is derived from the [**WIA\_IPA\_TYMED**](https://msdn.microsoft.com/library/windows/hardware/ff551656) common item property. The data transfer specified can be either a memory-callback transfer or a file transfer. See the Microsoft Windows SDK documentation for more information about the TYMED\_XXX constants.

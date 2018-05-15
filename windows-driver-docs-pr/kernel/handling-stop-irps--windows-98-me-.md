@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Handling Stop IRPs (Windows 98/Me)
 
 
-## <a href="" id="ddk-handling-stop-irps-windows-98-me-kg"></a>
+
 
 
 On Windows 98/Me, the PnP manager can send stop IRPs for the following reasons:

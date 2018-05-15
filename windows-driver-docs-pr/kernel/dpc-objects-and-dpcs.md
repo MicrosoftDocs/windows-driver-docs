@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # DPC Objects and DPCs
 
 
-## <a href="" id="ddk-dpc-objects-and-dpcs-kg"></a>
+
 
 
 This section contains the following topics:

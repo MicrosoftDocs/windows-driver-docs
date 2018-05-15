@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Obtaining a PCMCIA\_INTERFACE\_STANDARD Interface
 
 
-## <a href="" id="ddk-obtaining-a-pcmcia-interface-standard-interface-kg"></a>
+
 
 
 This section describes how a driver can obtain a PCMCIA\_INTERFACE\_STANDARD interface for a PCMCIA memory card from the PCMCIA bus driver.

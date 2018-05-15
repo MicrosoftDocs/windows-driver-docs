@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using PnP Target Device Change Notification
 
 
-## <a href="" id="ddk-using-pnp-target-device-change-notification-kg"></a>
+
 
 
 A driver registers for **EventCategoryTargetDeviceChange** notification on a device so the driver can be notified when the device is about to be removed. For example, if a driver opens a handle to a device, the driver should register for **EventCategoryTargetDeviceChange** notification on the device so the driver can close its handle when the PnP manager needs to remove the device.

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Data Channel Characteristics
 
 
-## <a href="" id="ddk-data-channel-characteristics-ng"></a>
+
 
 
 The data channel for the device consists of the *Bulk* IN and OUT endpoints in the *Data Class* interface.

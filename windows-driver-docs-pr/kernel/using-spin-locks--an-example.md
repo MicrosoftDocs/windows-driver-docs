@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using Spin Locks: An Example
 
 
-## <a href="" id="ddk-using-spin-locks-an-example-kg"></a>
+
 
 
 Minimizing the time that a driver holds spin locks can significantly improve both the performance of the driver and of the system overall. For example, consider the following figure, which shows how an interrupt spin lock protects device-specific data that must be shared between an ISR and the [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) and [*DpcForIsr*](https://msdn.microsoft.com/library/windows/hardware/ff544079) routines in an SMP machine.

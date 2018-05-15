@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Installing a WIA Minidriver
 
 
-## <a href="" id="ddk-installing-a-wia-minidriver-si"></a>
+
 
 
 This section covers the following topics on the installation of a WIA minidriver:

@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Portability in Network Drivers
 
 
-## <a href="" id="ddk-portability-ng"></a>
+
 
 
 NDIS drivers should be written so that they are easily portable across all platforms that support Microsoft Windows operating systems. In general, porting from one hardware platform to another should only require recompilation with a system-compatible compiler.

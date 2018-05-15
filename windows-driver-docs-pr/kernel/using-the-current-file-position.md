@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using the Current File Position
 
 
-## <a href="" id="ddk-using-the-current-file-position-kg"></a>
+
 
 
 When you create or open a file, you can cause the I/O manager to create a current file-position pointer that is associated with the file handle. Once you have done so, you can read and write data to the current file position, and the I/O manager will automatically update the position by the number of bytes that were read or written.

@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Installing a Print Processor
 
 
-## <a href="" id="ddk-installing-a-print-processor-gg"></a>
+
 
 
 To install a print processor, an installation application must call the spooler's **AddPrintProcessor** function. To associate a print processor with a print queue, list its file name in an INF file in a PrintProcessor entry. This entry must be included for every print queue to which the print processor is to be associated. For more information, see [Printer INF Files](printer-inf-files.md).

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 This function is reserved for system use.
 
 
-## <a href="" id="ddk-cm-prob-need-restart-dg"></a>
+
 
 
 The system must be restarted.

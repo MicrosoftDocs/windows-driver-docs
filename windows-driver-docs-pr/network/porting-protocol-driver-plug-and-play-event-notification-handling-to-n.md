@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Porting Protocol Driver Plug and Play Event Notification Handling to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-protocol-driver-plug-and-play-event-notification-handling-"></a>
+
 
 
 In NDIS 6.0 protocol drivers, replace the NDIS 5.x [**ProtocolPnPEvent**](https://msdn.microsoft.com/library/windows/hardware/ff563243) function with the [*ProtocolNetPnPEvent*](https://msdn.microsoft.com/library/windows/hardware/ff570263) function.

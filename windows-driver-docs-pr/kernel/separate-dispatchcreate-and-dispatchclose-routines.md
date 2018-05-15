@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Separate DispatchCreate and DispatchClose Routines
 
 
-## <a href="" id="ddk-separate-dispatchcreate-and-dispatchclose-routines-kg"></a>
+
 
 
 A driver's *Dispatch* routines for [**IRP\_MJ\_CREATE**](https://msdn.microsoft.com/library/windows/hardware/ff550729) and [**IRP\_MJ\_CLOSE**](https://msdn.microsoft.com/library/windows/hardware/ff550720) requests might do nothing more than complete the input IRP with STATUS\_SUCCESS. For more information, see [Completing IRPs](completing-irps.md).

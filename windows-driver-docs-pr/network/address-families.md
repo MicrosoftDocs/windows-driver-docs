@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Address Families
 
 
-## <a href="" id="ddk-address-families-ng"></a>
+
 
 
 An *address family* (AF) represents an association between one of the following sets of drivers:

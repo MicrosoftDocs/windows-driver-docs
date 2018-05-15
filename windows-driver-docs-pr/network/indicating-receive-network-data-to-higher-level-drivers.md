@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Indicating Receive Network Data to Higher Level Drivers
 
 
-## <a href="" id="ddk-indicating-receive-packets-to-higher-level-drivers-ng"></a>
+
 
 
 A connectionless intermediate driver indicates receive network data to the next higher driver by calling the [**NdisMIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff563598) function. A connection-oriented intermediate driver indicates receive network data to the next higher driver by calling the [**NdisMCoIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff563561) function.

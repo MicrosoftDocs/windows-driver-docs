@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Design Goals for Kernel-Mode Drivers
 
 
-## <a href="" id="ddk-design-goals-for-kernel-mode-drivers-kg"></a>
+
 
 
 Kernel-mode drivers share many of the design goals of the operating system, particularly those of the system I/O manager. Kernel-mode drivers are designed to be:

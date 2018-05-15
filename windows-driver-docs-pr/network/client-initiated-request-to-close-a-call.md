@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Client-Initiated Request to Close a Call
 
 
-## <a href="" id="ddk-client-initiated-request-to-close-a-call-ng"></a>
+
 
 
 If a client is closing a multipoint call to which more than one party is still connected, it must first call [**NdisClDropParty**](https://msdn.microsoft.com/library/windows/hardware/ff561629) as many times as necessary to drop all but the last party from the call (see [Dropping a Party from a Multipoint Call](dropping-a-party-from-a-multipoint-call.md)).

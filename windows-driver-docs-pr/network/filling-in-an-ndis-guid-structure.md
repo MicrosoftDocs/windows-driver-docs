@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Filling in an NDIS\_GUID Structure
 
 
-## <a href="" id="ddk-filling-in-an-ndis-guid-structure-ng"></a>
+
 
 
 An NDIS\_GUID structure is defined as follows:

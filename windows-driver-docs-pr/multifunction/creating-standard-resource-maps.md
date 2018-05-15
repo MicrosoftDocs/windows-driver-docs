@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Creating Standard Resource Maps
 
 
-## <a href="" id="ddk-creating-standard-resource-maps-dg"></a>
+
 
 
 If a multifunction device's INF contains an [**INF DDInstall.LogConfigOverride section**](https://msdn.microsoft.com/library/windows/hardware/ff547339), the parent resources are implicitly numbered 00 through *nn* as they appear in the INF's *log-config-section* sections (see [**INF LogConfig Directive**](https://msdn.microsoft.com/library/windows/hardware/ff547448)). For example, consider a multifunction PC Card with the following INF *DDInstall*.**LogConfigOverride** section:

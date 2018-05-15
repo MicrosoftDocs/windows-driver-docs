@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Making Driver Code or Data Pageable
 
 
-## <a href="" id="ddk-making-driver-code-or-data-pageable-kg"></a>
+
 
 
 To make a driver routine pageable, you must make sure that it runs at IRQL &lt; DISPATCH\_LEVEL and that it does not acquire any spin locks.

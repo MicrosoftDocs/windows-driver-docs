@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Class Driver and Minidriver Definitions
 
 
-## <a href="" id="ddk-class-driver-and-minidriver-definitions-ksg"></a>
+
 
 
 A Microsoft-provided class driver is an intermediate driver designed to provide a simple interface between a vendor-written minidriver and the operating system. A minidriver is a hardware-specific DLL that uses a Microsoft-provided class driver to accomplish most actions through function calls, and provides only device-specific controls.

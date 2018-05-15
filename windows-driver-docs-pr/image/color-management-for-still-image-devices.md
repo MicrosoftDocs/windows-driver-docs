@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Color Management for Still Image Devices
 
 
-## <a href="" id="ddk-color-management-for-still-image-devices-si"></a>
+
 
 
 Vendors should provide one or more color profiles for each still image device. Color profile file names should be included in the vendor-supplied INF file. If your device generates sRGB data, you can specify the system-supplied standard color profile, *sRGB Color Space Profile.icm*. The installer copies the supplied file names to one of the [registry entries for still image devices](registry-entries-for-still-image-devices.md).

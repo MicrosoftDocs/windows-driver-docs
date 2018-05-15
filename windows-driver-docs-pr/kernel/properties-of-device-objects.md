@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Properties of Device Objects
 
 
-## <a href="" id="ddk-properties-of-device-objects-kg"></a>
+
 
 
 Each device object has certain properties that describe the device and how the device object interacts with the system. The device object properties include:

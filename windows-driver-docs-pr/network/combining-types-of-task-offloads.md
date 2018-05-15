@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Combining Types of Task Offloads
 
 
-## <a href="" id="ddk-combining-types-of-task-offloads-ng"></a>
+
 
 
 The following restrictions determine which combinations of NDIS 6.0 and later task offload services can be active on the system:

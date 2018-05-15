@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Object Names
 
 
-## <a href="" id="ddk-object-names-kg"></a>
+
 
 
 Kernel-mode objects are either named or unnamed. The *object name* is a Unicode string that both user-mode and kernel-mode components can use to refer to the object. For example, **\\KernelObjects\\LowMemoryCondition** is the name of the standard event object that signals when the amount of free memory in the system is low.

@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # NDIS Scatter/Gather DMA
 
 
-## <a href="" id="ddk-ndis-6-0-scatter-gather-dma-ng"></a>
+
 
 
 NDIS miniport drivers can use the [Scatter/Gather DMA](scatter-gather-dma2.md) (SGDMA) method to transfer data between a NIC and system memory. A successful DMA transfer requires the physical address of the data to be in an address range that the NIC supports. HAL provides a mechanism for drivers to obtain the physical address list for an MDL chain and, if necessary, will double-buffer the data to a physical address range.

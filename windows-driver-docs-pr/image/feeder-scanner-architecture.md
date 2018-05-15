@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Feeder Scanner Architecture
 
 
-## <a href="" id="ddk-feeder-scanner-architecture-si"></a>
+
 
 
 Scanner devices that have document feeder units must implement a feeder item in their WIA item tree if any images are to be produced from documents that are placed in the document feeder. The feeder item represents a programmable data source and produces images from documents that are placed in the scanner's document feeder scanning unit when a data transfer is requested from this item. The scanner feeder item should be located directly off the WIA root item and may contain one or more child items that represent the front and back pages of a document.

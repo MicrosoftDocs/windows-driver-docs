@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Features of Serial and Serenum
 
 
-## <a href="" id="ddk-features-of-serial-and-serenum-kg"></a>
+
 
 
 Starting with Windows 2000, the system-supplied Serial.sys and Serenum.sys drivers are available to manage serial controller devices that have hardware interfaces that are compatible with the 16550 universal asynchronous receiver-transmitter (UART). Serial.sys controls stand-alone serial ports, COM ports, and multiport boards. Serenum.sys enumerates devices that are connected to a serial port that is controlled by Serial.sys or a compatible serial driver.

@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # AV/C Streaming Overview
 
 
-## <a href="" id="ddk-av-c-streaming-ksg"></a>
+
 
 
 This section describes the AV/C Streaming filter driver, *Avcstrm.sys*, that Microsoft provides to assist with streaming media data from an AV/C subunit if that data is in either SDDV or MPEG2TS formats. These formats are the two most common methods for storing the digital data in the media signal.

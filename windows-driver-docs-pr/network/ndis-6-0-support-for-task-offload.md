@@ -21,7 +21,7 @@ ms.technology: windows-devices
 # NDIS 6.0 Support for Task Offload
 
 
-## <a href="" id="ddk-ndis-6-0-support-for-task-offload-ng"></a>
+
 
 
 NDIS 6.0 and later support updated versions of the following task offload services, which are provided by NDIS 5.1 and earlier drivers:

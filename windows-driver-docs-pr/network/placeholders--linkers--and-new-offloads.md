@@ -21,7 +21,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-placeholders-linkers-and-new-offloads-ng"></a>
+
 
 
 An [**NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff566469) structure in a state tree can perform one of several functions.

@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Data Out Endpoint Descriptor
 
 
-## <a href="" id="ddk-data-out-endpoint-descriptor-ng"></a>
+
 
 
 <table>

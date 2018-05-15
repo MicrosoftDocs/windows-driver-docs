@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Porting Miniport Adapter Shutdown Operations to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-miniport-adapter-shutdown-operations-to-ndis-6-0-ng"></a>
+
 
 
 The NDIS 6.0 or later miniport driver's shutdown function, [*MiniportShutdownEx*](https://msdn.microsoft.com/library/windows/hardware/ff559449), differs from the NDIS 5.x [**MiniportShutdown**](https://msdn.microsoft.com/library/windows/hardware/ff550533) function in that it receives a *ShutdownAction* parameter in addition to the *MiniportAdapterContext* parameter. The *ShutdownAction* parameter specifies the reason for shutting down the miniport driver.

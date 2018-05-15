@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Driver Event Support
 
 
-## <a href="" id="ddk-wia-driver-event-support-si"></a>
+
 
 
 There are two types of event mechanisms that WIA minidrivers can support:

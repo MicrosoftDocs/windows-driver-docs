@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Implementation Tips and Requirements for WDM Lower Edge
 
 
-## <a href="" id="ddk-implementation-tips-and-requirements-for-wdm-lower-edge-ng"></a>
+
 
 
 This topic describes tips and requirements for implementing an NDIS-WDM miniport driver. An NDIS-WDM miniport driver can call both NDIS and non-NDIS functions. These non-NDIS functions include, for example, WDM-kernel-mode support routines and functions for a particular bus-driver interface.

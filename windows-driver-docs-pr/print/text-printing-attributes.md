@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Text Printing Attributes
 
 
-## <a href="" id="ddk-text-printing-attributes-gg"></a>
+
 
 
 Text printing attributes are [general attributes](general-attributes.md) that specify characteristics of a printer's text printing capabilities. These attributes are divided into the following groups:

@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Creating IEEE 1394 Virtual Devices
 
 
-## <a href="" id="ddk-creating-ieee-1394-virtual-devices-kg"></a>
+
 
 
 Upper-level drivers and user-mode services can add or remove virtual 1394 devices by means of a device control request with an [**IOCTL\_IEEE1394\_API\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff537241) control code. The request contains an [**IEEE1394\_API\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff537204) structure whose **RequestNumber** member indicates the action to be taken (addition or removal) by the bus driver. Since a virtual device has no device ID or instance ID, the driver or the user program that requests that a virtual device be created, must supply the device ID and instance ID in an [**IEEE1394\_VDEV\_PNP\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff537206) structure.

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Supporting 32-Bit I/O in Your 64-Bit Driver
 
 
-## <a href="" id="ddk-supporting-32-bit-i-o-in-your-64-bit-driver-kg"></a>
+
 
 
 Windows on Windows (WOW64) enables Microsoft Win32 user-mode applications to run on 64-bit Windows. It does this by intercepting Win32 function calls and converting parameters from pointer-precision types to fixed-precision types as appropriate before making the transition to the 64-bit kernel. This conversion, which is called *thunking*, is done automatically for all Win32 functions, with one important exception: the data buffers passed to [**DeviceIoControl**](https://msdn.microsoft.com/library/windows/desktop/aa363216). The contents of these buffers, which are pointed to by the *InputBuffer* and *OutputBuffer* parameters, are not thunked, because their structure is driver-specific.

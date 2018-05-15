@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Read and Write Attribute Memory
 
 
-## <a href="" id="ddk-read-and-write-attribute-memory-kr"></a>
+
 
 
 This section describes how a PCMCIA driver can read and write the attribute memory on a PCMCIA memory card.

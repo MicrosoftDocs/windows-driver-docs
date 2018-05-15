@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Printer Features
 
 
-## <a href="" id="ddk-printer-features-gg"></a>
+
 
 
 Printer features are capabilities that can be controlled by the Unidrv driver. By listing a feature and its characteristics in a GPD file, you inform the Unidrv driver that your printer supports the feature.

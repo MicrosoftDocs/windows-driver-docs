@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Filter drivers
 
 
-## <a href="" id="ddk-ndis-filter-drivers-ng"></a>
+
 
 
 NDIS 6.0 introduced NDIS filter drivers. Filter drivers can monitor and modify the interaction between protocol drivers and miniport drivers. Filter drivers are easier to implement and have less processing overhead than NDIS intermediate drivers.

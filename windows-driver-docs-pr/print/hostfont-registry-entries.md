@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Hostfont Registry Entries
 
 
-## <a href="" id="ddk-hostfont-registry-entries-gg"></a>
+
 
 
 An OEM plug-in can notify the Pscript5 driver that the %hostfont%-ready PostScript interpreter has a set of fonts and CIDFonts that are available to use and are identical to those that the Pscript5 driver might download in the course of a print job. Notification of which fonts are to be handled this way is done by placing keys in the registry. The Pscript5 driver checks the registry for new information when its [**DrvEnablePDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556211) function is called. The plug-in can then ensure that the data is current before the PDEV is enabled.

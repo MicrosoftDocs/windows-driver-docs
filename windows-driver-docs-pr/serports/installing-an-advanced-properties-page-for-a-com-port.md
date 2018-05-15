@@ -21,7 +21,7 @@ ms.technology: windows-devices
 # Installing an Advanced Properties Page for a COM Port
 
 
-## <a href="" id="ddk-installing-an-advanced-properties-page-for-a-com-port-kg"></a>
+
 
 
 The advanced property page displays a default user dialog box for setting FIFO control parameters and selecting a COM port number. However, you can override the default dialog box by supplying a custom dialog box.

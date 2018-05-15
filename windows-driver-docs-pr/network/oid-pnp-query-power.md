@@ -15,7 +15,7 @@ keywords:
 # OID\_PNP\_QUERY\_POWER
 
 
-## <a href="" id="ddk-oid-pnp-query-power-nr"></a>
+
 
 
 The OID\_PNP\_QUERY\_POWER OID requests the miniport driver to indicate whether it can transition its network adapter to the low-power state specified in the *InformationBuffer*. The low-power state is specified as one of the following NDIS\_DEVICE\_POWER\_STATE values:

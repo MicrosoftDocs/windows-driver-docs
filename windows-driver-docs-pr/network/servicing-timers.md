@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Servicing Timers
 
 
-## <a href="" id="ddk-servicing-timers-ng"></a>
+
 
 
 NDIS calls the [**NetTimerCallback**](https://msdn.microsoft.com/library/windows/hardware/ff568351) function when an NDIS 6.0 timer fires. The *FunctionContext* parameter of this function contains a pointer to a driver-supplied context area. The default value for *FunctionContext* is specified in an [**NDIS\_TIMER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff567886) structure. The driver passed the structure to the [**NdisAllocateTimerObject**](https://msdn.microsoft.com/library/windows/hardware/ff561618) function to allocate and initialize the associated timer object.

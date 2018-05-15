@@ -19,7 +19,7 @@ ms.technology: windows-devices
 
 Microsoft provides a set of proprietary device classes and USB descriptors, which are called Microsoft OS Descriptors (MODs).
 
-## <a href="" id="ddk-microsoft-defined-usb-descriptors-kr"></a>
+
 
 
 Due to the rapid emergence of devices that contain multiple hardware functions, many manufacturers find that their devices do not fit comfortably into any of the current universal serial bus (USB) device classes. This deprives such manufacturers of one of the most attractive features of USB technology: the standardization of driver software (according to the class of the device). Microsoft Windows provides native class drivers for most of the devices that belong to standard USB device classes, and these drivers allow end users to easily attach such devices to the computer without needing to install special software.

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Selecting and Deselecting an IEEE 1284 Device Attached to a Parallel Port
 
 
-## <a href="" id="ddk-selecting-and-deselecting-an-ieee-1284-device-attached-to-a-parall"></a>
+
 
 
 A client can select and deselect an IEEE 1284.3 device attached to a parallel port by using the following internal device control requests:

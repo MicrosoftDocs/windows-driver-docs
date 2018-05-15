@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # HP-GL/2 Caveats
 
 
-## <a href="" id="ddk-hp-gl-2-caveats-gg"></a>
+
 
 
 1.  HP-GL/2 works only for the version of Unidrv that ships with Windows XP and later operating system releases (Windows XP Unidrv refers to the set of driver files that ship with Windows XP -- unidrv.dll, unidrvui.dll, unires.dll, and stdnames.gpd). It does not work on Windows 2000 Unidrv. If a Windows XP version of Unidrv is present on a machine running Windows 2000 (for example, when a Windows 2000 machine makes a point and print connection to a machine running Windows Server 2003 or later), then the driver uses HP-GL/2.

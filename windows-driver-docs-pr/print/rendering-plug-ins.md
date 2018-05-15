@@ -22,7 +22,7 @@ ms.technology: windows-devices
 # Rendering Plug-Ins
 
 
-## <a href="" id="ddk-rendering-plug-ins-gg"></a>
+
 
 
 The following topics describe how to customize printer rendering operations:

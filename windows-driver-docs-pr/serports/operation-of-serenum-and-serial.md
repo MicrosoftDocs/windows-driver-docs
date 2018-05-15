@@ -21,7 +21,7 @@ ms.technology: windows-devices
 # Operation of Serenum and Serial
 
 
-## <a href="" id="ddk-operation-of-serenum-and-serial-gg"></a>
+
 
 
 This section includes the following topics about operating Serenum and Serial:

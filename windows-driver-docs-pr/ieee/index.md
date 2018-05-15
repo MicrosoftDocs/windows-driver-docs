@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # IEEE 1394 bus driver design guide
 
 
-## <a href="" id="ddk-1394-design-guide-kg"></a>
+
 
 
 This section includes:

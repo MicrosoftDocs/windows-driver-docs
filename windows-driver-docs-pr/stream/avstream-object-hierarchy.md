@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # AVStream Object Hierarchy
 
 
-## <a href="" id="ddk-avstream-object-hierarchy-ksg"></a>
+
 
 
 An AVStream minidriver can expose many different types of filters through a hierarchy such as the one in the following diagram.

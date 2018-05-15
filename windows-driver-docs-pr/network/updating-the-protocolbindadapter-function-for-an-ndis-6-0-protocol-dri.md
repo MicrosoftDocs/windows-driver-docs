@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Updating the ProtocolBindAdapter Function for an NDIS 6.0 Protocol Driver
 
 
-## <a href="" id="ddk-updating-the-protocolbindadapter-function-forndis-6-0-nd"></a>
+
 
 
 In NDIS 6.0, the [*ProtocolBindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570220) function replaces the [*ProtocolBindAdapter*](https://msdn.microsoft.com/library/windows/hardware/ff562465) function. NDIS calls *ProtocolBindAdapterEx* to perform binding operations whenever an underlying miniport adapter, to which the protocol driver can bind, becomes available.

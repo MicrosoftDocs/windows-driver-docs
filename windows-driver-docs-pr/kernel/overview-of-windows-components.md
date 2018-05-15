@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Overview of Windows Components
 
 
-## <a href="" id="ddk-overview-of-windows-components-kg"></a>
+
 
 
 The following figure shows the major internal components of the Windows operating system.

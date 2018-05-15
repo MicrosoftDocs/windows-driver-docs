@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # CPSUI-Supported Window Controls
 
 
-## <a href="" id="ddk-cpsui-supported-window-controls-gg"></a>
+
 
 
 CPSUI supports a set of window controls that provide a consistent interface to the user. Use of these window controls is particularly important when creating property sheet pages for printer devices and documents, because users expect a consistent interface for all printers.

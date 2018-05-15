@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # WAN-Specific Capabilities of CoNDIS WAN Drivers
 
 
-## <a href="" id="ddk-wan-specific-capabilities-of-condis-wan-drivers-ng"></a>
+
 
 
 CoNDIS WAN drivers differ from a non-WAN CoNDIS drivers as follows:

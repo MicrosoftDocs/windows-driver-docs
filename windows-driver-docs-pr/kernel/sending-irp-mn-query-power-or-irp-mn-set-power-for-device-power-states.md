@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Sending IRP\_MN\_QUERY\_POWER or IRP\_MN\_SET\_POWER for Device Power States
 
 
-## <a href="" id="ddk-sending-irp-mn-query-power-or-irp-mn-set-power-for-device-power-st"></a>
+
 
 
 A device power policy owner sends a device query-power IRP ([**IRP\_MN\_QUERY\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551699)) to determine whether lower drivers can accommodate a change in device power state, and a device set-power IRP ([**IRP\_MN\_SET\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551744)) to change the device power state. (This driver can also send a wait/wake IRP to enable its device to awaken in response to an external signal; see [Supporting Devices that Have Wake-Up Capabilities](supporting-devices-that-have-wake-up-capabilities.md) for details.)

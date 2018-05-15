@@ -24,7 +24,7 @@ ms.technology: windows-devices
 
  
 
-## <a href="" id="ddk-netdma-drivers-ng"></a>
+
 
 
 The NetDMA interface provides a generic interface for memory-to-memory direct memory access (DMA) transfers. Although the interface is designed to copy packets that are received from high-performance network interface cards (NICs), you can also use the interface for other applications. There is no direct relationship between NetDMA and NDIS.
