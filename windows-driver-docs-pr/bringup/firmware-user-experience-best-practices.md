@@ -3,7 +3,7 @@ title: Firmware user experience (UX) best practices
 description: Firmware user experience (UX) best practices
 author: windows-driver-content
 ms.author: windowsdriverdev
-ms.date: 05/07/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -25,17 +25,17 @@ The **Related resources** links contain the most recent information on firmware 
 
 ## Related resources
 
-[Windows UEFI firmware update platform](https://msdn.microsoft.com/en-us/windows/hardware/drivers/bringup/windows-uefi-firmware-update-platform)                                           
- 
-[Seamless crisis prevention and recovery ](https://msdn.microsoft.com/en-us/library/windows/hardware/dn917851)                                                               
+[Windows UEFI firmware update platform](https://docs.microsoft.com/windows-hardware/drivers/bringup/windows-uefi-firmware-update-platform)
 
-[User experience for UEFI firmware updates](https://msdn.microsoft.com/en-us/windows/hardware/drivers/bringup/user-experience-for-uefi-firmware-updates)                                   
+[Seamless crisis prevention and recovery](https://docs.microsoft.com/windows-hardware/drivers/bringup/seamless-crisis-prevention-and-recovery)
 
-[Boot screen components](https://msdn.microsoft.com/en-us/windows/hardware/drivers/bringup/boot-screen-components)                                                                         
+[User experience for UEFI firmware updates](https://docs.microsoft.com/windows-hardware/drivers/bringup/user-experience-for-uefi-firmware-updates)
 
-[ESRT table definition](https://msdn.microsoft.com/windows/hardware/drivers/bringup/esrt-table-definition)    
+[Boot screen components](https://docs.microsoft.com/windows-hardware/drivers/bringup/boot-screen-components)
 
-[Validating Windows UEFI Firmware Update Platform Functionality](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/validating-windows-uefi-firmware-update-platform-functionality) 
+[ESRT table definition](https://docs.microsoft.com/windows-hardware/drivers/bringup/esrt-table-definition)
+
+[Validating Windows UEFI Firmware Update Platform Functionality](https://docs.microsoft.com/windows-hardware/manufacture/desktop/validating-windows-uefi-firmware-update-platform-functionality)
 
 
 
