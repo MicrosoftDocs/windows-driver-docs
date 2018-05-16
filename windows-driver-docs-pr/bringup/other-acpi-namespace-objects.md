@@ -4,7 +4,7 @@ author: windows-driver-content
 description: For some specific classes of device, there are requirements for additional ACPI namespace objects to appear under those devices in the namespace.
 ms.assetid: 41EA8C3D-F2C9-4BA9-A839-FCB66F271E3C
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -91,7 +91,7 @@ In addition to selective suspend, internal USB devices connected to XHCI control
 Windows needs to know the visibility and connect-ability of USB Ports on the system. This is required in order to provide accurate information to the user about ports and devices. Two objects, Physical Device Location (\_PLD) and USB Port Capabilities (\_UPC), are used for this purpose. For more information, see the following:
 
 -   Sections 6.1.6, "Device Identification Objects", and 9.13.1, "USB 2.0 Host Controllers and \_UPC and \_PLD", in the [ACPI 5.0 specification](http://www.uefi.org/specifications).
--   [Using ACPI to Configure USB Ports on a Computer](https://msdn.microsoft.com/library/windows/hardware/ff553550).
+-   [Using ACPI to Configure USB Ports on a Computer](https://docs.microsoft.com/windows-hardware/drivers/install/using-acpi-to-configure-usb-ports-on-a-computer).
 
 ## SD host controllers and devices
 
@@ -326,8 +326,8 @@ Windows supports docks and convertibles (clamshell/tablet combos) by the use of 
 
 -   GPIO ActiveBoth interrupts must be connected to an on-SoC GPIO controller (not to an SPB-connected GPIO controller).
 -   The GPIO controller must support level-mode interrupts and dynamic polarity reprogramming.
--   The GPIO controller driver must use ActiveBoth emulation provided by the [GPIO framework extension](http://go.microsoft.com/fwlink/p/?linkid=331021) (**GpioClx**).
--   If the asserted state ("Docked" or "Converted") is not asserted logic level low, the GPIO controller \_DSM method is required to override the GPIO driver stack's default behavior. For more information, see [GPIO controller devices](general-purpose-i-o--gpio-.md#controller).
+-   The GPIO controller driver must use ActiveBoth emulation provided by the [GPIO framework extension](https://docs.microsoft.com/en-us/windows-hardware/drivers/gpio/gpioclx-i-o-and-interrupt-interfaces) (**GpioClx**).
+-   If the asserted state ("Docked" or "Converted") is not asserted logic level low, the GPIO controller \_DSM method is required to override the GPIO driver stack's default behavior. For more information, see the **GPIO controller devices** section in the [General-purpose I/O (GPIO)](general-purpose-i-o--gpio-.md) topic.
 
 For more information, see [Hardware buttons for Windows 8 tablet and convertible devices](http://go.microsoft.com/fwlink/p/?linkid=331284).
 
