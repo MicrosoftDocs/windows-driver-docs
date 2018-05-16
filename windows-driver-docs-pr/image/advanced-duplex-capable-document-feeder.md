@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Advanced Duplex-Capable Document Feeder
 
 
-## <a href="" id="ddk-advanced-duplex-capable-document-feeder-si"></a>
+
 
 
 Advanced duplex scanning allows the application to independently configure the front and back page settings.

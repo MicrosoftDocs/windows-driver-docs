@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # IRP Processing Examples
 
 
-## <a href="" id="ddk-irp-processing-examples-kg"></a>
+
 
 
 The following sections describe how IRPs might be processed in two prototype drivers. One is a prototype of a lowest-level driver for a mass storage device. The other is a prototype for an intermediate-level [*mirror driver*](https://msdn.microsoft.com/library/windows/hardware/ff556308#wdkgloss-mirror-driver), which would exist above the lowest-level driver in a stack of storage drivers. (A mirror driver duplicates all write requests to multiple driver, and alternates read requests among the duplicate drives.)

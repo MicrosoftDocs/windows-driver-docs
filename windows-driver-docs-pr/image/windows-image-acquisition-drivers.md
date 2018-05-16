@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Windows Image Acquisition Drivers
 
 
-## <a href="" id="ddk-windows-image-acquisition-drivers-si"></a>
+
 
 
 The Microsoft Windows Image Acquisition (WIA) programming interface is a Still Image (STI) architecture for the Microsoft Windows Me, Windows XP, and later platforms. This documentation explains how to develop a WIA driver that supports communication to imaging devices such as digital cameras and scanners.

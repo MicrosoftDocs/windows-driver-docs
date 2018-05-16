@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Opening a Handle to a Registry-Key Object
 
 
-## <a href="" id="ddk-opening-a-handle-to-a-registry-key-object-kg"></a>
+
 
 
 To open a handle to a registry-key object, carry out the following two-step process:

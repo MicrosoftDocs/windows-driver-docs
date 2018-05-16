@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Feature Conflict Priority
 
 
-## <a href="" id="ddk-feature-conflict-priority-gg"></a>
+
 
 
 A feature's conflict priority identifies the priority that a feature should have when Unidrv's user interface code enforces [option constraints](option-constraints.md).

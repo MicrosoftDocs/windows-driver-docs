@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # StartIo Routines in Higher-Level Drivers
 
 
-## <a href="" id="ddk-startio-routines-in-higher-level-drivers-kg"></a>
+
 
 
 Any higher-level driver can have a [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) routine. However, such a driver is unlikely to be interoperable with existing lower-level drivers and is likely to exhibit poor performance characteristics.

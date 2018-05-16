@@ -1251,7 +1251,7 @@ The hardware ID formats in the preceding topics describe use the following conve
 
 If a USB composite device has an interface association descriptor (IAD) in its firmware, Windows enumerates interface collections as though each collection were a single device and assigns a single physical device object (PDO) to each interface collection and associates hardware and compatible identifiers (IDs) with the PDO. For a detailed description of IADs, see [USB Interface Association Descriptor](usb-interface-association-descriptor.md). This section describes the hardware IDs and compatible identifiers (IDs) assigned to interface collections associated with an IAD.
 
-## <a href="" id="hardware-ids"></a> Hardware IDs
+##  Hardware IDs
 
 
 `USB\VID_v(4)&PID_p(4)&Rev_r(4)&MI_z(2)`

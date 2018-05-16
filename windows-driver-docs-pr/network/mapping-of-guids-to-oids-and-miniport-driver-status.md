@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Mapping of GUIDs to OIDs and Miniport Driver Status
 
 
-## <a href="" id="ddk-mapping-of-guids-to-oids-and-miniport-driver-status-ng"></a>
+
 
 
 When WMI sends a WMI request to a miniport adapter (that is, when WMI sends an I/O request packet \[IRP\] to a functional device object that NDIS created), NDIS intercepts the request. NDIS does not forward the request to the miniport driver if NDIS already has the information that it requires to service the request. Otherwise, NDIS maps the WMI GUID to an OID and then queries or sets the OID.

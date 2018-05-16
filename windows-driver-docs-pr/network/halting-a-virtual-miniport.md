@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Halting a Virtual Miniport
 
 
-## <a href="" id="ddk-halting-a-virtual-miniport-ng"></a>
+
 
 
 If an NDIS intermediate driver calls the [**NdisIMDeinitializeDeviceInstance**](https://msdn.microsoft.com/library/windows/hardware/ff562721) function, NDIS calls the [*MiniportHaltEx*](https://msdn.microsoft.com/library/windows/hardware/ff559388) function for the affected virtual miniport. An intermediate driver usually calls **NdisIMDeInitializeDeviceInstance** from its [*ProtocolUnbindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570278) function.

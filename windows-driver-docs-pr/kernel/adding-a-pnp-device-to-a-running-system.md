@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Adding a PnP Device to a Running System
 
 
-## <a href="" id="ddk-adding-a-pnp-device-to-a-running-system-kg"></a>
+
 
 
 This section describes the sequence of events that occur when the system configures a PnP device that a user has added to a running machine. This discussion highlights the roles of the PnP manager, bus drivers, and function and filter drivers in enumerating and configuring a new device.

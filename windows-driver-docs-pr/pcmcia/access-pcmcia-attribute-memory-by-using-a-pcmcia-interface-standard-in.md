@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Access PCMCIA Attribute Memory by Using a PCMCIA\_INTERFACE\_STANDARD Interface
 
 
-## <a href="" id="ddk-access-pcmcia-attribute-memory-by-using-a-pcmcia-interface-standar"></a>
+
 
 
 This section describes how a driver can use a PCMCIA\_INTERFACE\_STANDARD interface to access attribute memory.

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Registering for Target Device Change Notification
 
 
-## <a href="" id="ddk-registering-for-target-device-change-notification-kg"></a>
+
 
 
 A driver registers for notification of PnP target device change events by calling [**IoRegisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff549526).

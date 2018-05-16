@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Optional Power Management OIDs
 
 
-## <a href="" id="ddk-optional-power-management-oids-ng"></a>
+
 
 
 For NDIS to consider a device power-management -- aware, it must respond to the three power management OIDs listed in the following table. If the device returns a failure status code in response to a query for [OID\_PNP\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569774), then the host will consider the device as not being power manageable. NDIS decides whether to query this OID based on the underlying bus technology that the Remote NDIS device is connected to. Some buses are power-manageable, such as USB, so it is expected that these types of Remote NDIS devices will support the minimal OIDs to be considered power-manageable.

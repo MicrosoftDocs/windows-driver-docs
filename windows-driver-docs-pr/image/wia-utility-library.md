@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Utility Library
 
 
-## <a href="" id="ddk-wia-utility-library-si"></a>
+
 
 
 The WIA Utility Library is a collection of helper functions and classes that a WIA minidriver can use to carry out frequently performed tasks. The **wiauDbg***Xxx* functions can be used to log trace messages, warning messages, and error messages when you are developing your WIA minidriver. Other functions in this library can be used for such purposes as getting data from the system registry, copying /converting strings in either ANSI or Unicode format, and calculating the dimensions of an image.

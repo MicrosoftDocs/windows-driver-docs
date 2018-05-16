@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Introduction to the Common Log File System
 
 
-## <a href="" id="ddk-introduction-to-wmi-kg"></a>
+
 
 
 The Common Log File System (CLFS) is a general-purpose logging service that can be used by software [*clients*](clfs-terminology.md#kernel-clfs-term-client) running in user-mode or kernel-mode. This documentation discusses the CLFS interface for kernel-mode clients. For information about the user-mode interface, see Common Log File System in the Microsoft Windows SDK.

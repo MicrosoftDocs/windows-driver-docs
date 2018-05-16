@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Event Reporting
 
 
-## <a href="" id="ddk-event-reporting-si"></a>
+
 
 
 The WIA architecture enables a still image device to notify the WIA minidriver when some action on the device occurs. For example, a scanner might have a push-button on its front panel, enabling the user to initiate a scan directly from the device. The WIA minidriver must be notified of this event so it can notify the WIA service. All running applications that have registered to receive this event are notified. Furthermore, if an application has registered to be started as a result of this event prior to the event, the WIA service starts that application.

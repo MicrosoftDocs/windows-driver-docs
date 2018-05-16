@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Handling a GUID\_TARGET\_DEVICE\_REMOVE\_CANCELLED Event
 
 
-## <a href="" id="ddk-handling-a-guid-target-device-remove-cancelled-event-kg"></a>
+
 
 
 If an [**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551705) request fails, the PnP manager sends an [**IRP\_MN\_CANCEL\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff550823) IRP to the drivers for the device. After the cancel-remove IRP completes successfully, the PnP manager calls any notification callback routines that registered for **EventCategoryTargetDeviceChange** on the device. The PnP manager specifies a *NotificationStructure*.**Event** of GUID\_TARGET\_DEVICE\_REMOVE\_CANCELLED.

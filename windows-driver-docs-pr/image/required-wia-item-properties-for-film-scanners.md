@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Required WIA Item Properties for Film Scanners
 
 
-## <a href="" id="ddk-required-wia-item-properties-for-film-scanners-si"></a>
+
 
 
 The WIA film scanner item is required to support the following WIA properties:

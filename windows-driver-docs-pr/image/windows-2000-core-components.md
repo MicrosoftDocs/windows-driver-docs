@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Windows 2000 Core Components
 
 
-## <a href="" id="ddk-windows-2000-core-components-si"></a>
+
 
 
 The still image core components on Windows 2000 are shown in the following figure.

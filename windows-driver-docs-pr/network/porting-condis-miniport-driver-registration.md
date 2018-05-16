@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Porting CoNDIS Miniport Driver Registration
 
 
-## <a href="" id="ddk-porting-condis-miniport-driver-registration-ng"></a>
+
 
 
 In NDIS 5.*x*, miniport drivers specify CoNDIS *MiniportXxx* functions when they call the [**NdisMRegisterMiniport**](https://msdn.microsoft.com/library/windows/hardware/ff553602) function during driver registration.

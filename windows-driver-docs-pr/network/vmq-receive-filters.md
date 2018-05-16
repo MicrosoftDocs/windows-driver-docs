@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # VMQ Receive Filters
 
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 A network virtual service provider (VSP) sets VMQ receive filters on VMQ receive queues. Such a filter includes a set of network header field tests. The network adapter hardware performs these tests on header fields in incoming packets to determine the receive queue assignments for the packets. Each filter that is set on a queue has a unique filter identifier for a network adapter. That is, the filter identifiers are not duplicated on different queues that the network adapter manages.

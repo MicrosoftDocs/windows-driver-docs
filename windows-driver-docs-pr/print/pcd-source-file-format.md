@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # PCD Source File Format
 
 
-## <a href="" id="ddk-pcd-source-file-format-gg"></a>
+
 
 
 All plotter device characteristics are specified using the following format:

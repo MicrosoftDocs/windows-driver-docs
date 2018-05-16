@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Protocol drivers
 
 
-## <a href="" id="ddk-ndis-protocol-drivers-ng"></a>
+
 
 
 A network protocol, which is the highest driver in the NDIS hierarchy of drivers, is often used as the lowest-level driver in a transport driver that implements a transport protocol stack, such as a TCP/IP stack. A *transport protocol driver* allocates packets, copies data from the sending application into the packet, and sends the packets to the lower-level driver by calling NDIS functions. A protocol driver also provides a protocol interface to receive incoming packets from the next lower-level driver. A transport protocol driver transfers received data to the appropriate client application.

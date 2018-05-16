@@ -15,7 +15,7 @@ keywords:
 # OID\_802\_3\_PERMANENT\_ADDRESS
 
 
-## <a href="" id="ddk-oid-802-3-permanent-address-nr"></a>
+
 
 
 The address of the NIC encoded in the hardware.

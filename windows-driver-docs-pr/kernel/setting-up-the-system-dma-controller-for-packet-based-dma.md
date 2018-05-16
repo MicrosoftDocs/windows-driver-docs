@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Setting Up the System DMA Controller for Packet-Based DMA
 
 
-## <a href="" id="ddk-setting-up-the-system-dma-controller-for-packet-based-dma-kg"></a>
+
 
 
 When [**AllocateAdapterChannel**](https://msdn.microsoft.com/library/windows/hardware/ff540573) transfers control to a driver's [*AdapterControl*](https://msdn.microsoft.com/library/windows/hardware/ff540504) routine, the driver "owns" the system DMA controller and a set of map registers. Then, the driver must set up the DMA controller for a transfer operation, as shown in the following figure.

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Hardware-Resident Fonts
 
 
-## <a href="" id="ddk-hardware-resident-fonts-gg"></a>
+
 
 
 If your printer contains hardware-resident fonts, you must provide specifications of font metrics for these fonts within .ufm or .ifi files.

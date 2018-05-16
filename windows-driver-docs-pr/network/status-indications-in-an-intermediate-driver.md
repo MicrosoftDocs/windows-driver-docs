@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Status Indications in an Intermediate Driver
 
 
-## <a href="" id="ddk-status-indications-in-an-intermediate-driver-ng"></a>
+
 
 
 The implementation of status indications in intermediate drivers is nearly identical to the implementation in protocol drivers. For more information about intermediate driver status indications, see [Status Indications in a Protocol Driver](status-indications-in-a-protocol-driver.md).

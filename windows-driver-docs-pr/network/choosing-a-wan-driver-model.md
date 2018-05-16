@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Choosing a WAN Driver Model
 
 
-## <a href="" id="ddk-choosing-a-wan-driver-model-ng"></a>
+
 
 
 Microsoft Windows 2000 and later operating systems support two WAN driver models: NDIS WAN and CoNDIS WAN.

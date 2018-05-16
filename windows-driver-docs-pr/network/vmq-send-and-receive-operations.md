@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # VMQ Send and Receive Operations
 
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 This section provides information about implementing send and receive operations in NDIS drivers that support VMQ.

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Installing Parallel Ports and Devices
 
 
-## <a href="" id="ddk-installing-parallel-ports-and-devices-kg"></a>
+
 
 
 This section describes device-specific information about installing parallel ports and devices in Microsoft Windows.

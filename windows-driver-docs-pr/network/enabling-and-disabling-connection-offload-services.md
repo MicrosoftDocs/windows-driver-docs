@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Enabling and Disabling Connection Offload Services
 
 
-## <a href="" id="ddk-enabling-and-disabling-connection-offload-services-ng"></a>
+
 
 
 Protocol drivers enable connection offload services with an object identifier (OID) request.

@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # KS Methods
 
 
-## <a href="" id="ddk-ks-methods-ksg"></a>
+
 
 
 Method sets are groups of related actions that kernel streaming clients can invoke on KS objects. For example, an allocator object could provide a method set containing methods that allocate and deallocate memory.

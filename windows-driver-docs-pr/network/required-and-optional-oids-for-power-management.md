@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Required and Optional OIDs for Power Management
 
 
-## <a href="" id="ddk-required-and-optional-oids-for-power-management-ng"></a>
+
 
 
 For a miniport driver, supporting power management involves supporting power management object identifiers (OIDs). For a detailed description of how miniport drivers process queries and sets to OIDs, see [Obtaining and SettingMiniport Driver Information and NDIS Support for WMI](obtaining-and-setting-miniport-driver-information-and-ndis-support-for.md).

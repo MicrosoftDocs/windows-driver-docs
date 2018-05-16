@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Device Properties
 
 
-## <a href="" id="ddk-device-properties-si"></a>
+
 
 
 All still image devices have specific characteristics that describe that device. For example, two characteristics of a flatbed scanner are its horizontal and vertical bed sizes. A possible characteristic of a digital still camera is its battery status, which indicates remaining battery life.

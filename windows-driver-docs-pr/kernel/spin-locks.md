@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Spin Locks
 
 
-## <a href="" id="ddk-spin-locks-kg"></a>
+
 
 
 This section contains the following topics:

@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Pscript User Interface
 
 
-## <a href="" id="ddk-pscript-user-interface-gg"></a>
+
 
 
 The Pscript user interface employs [CPSUI](common-property-sheet-user-interface.md) to create the following property sheet pages:

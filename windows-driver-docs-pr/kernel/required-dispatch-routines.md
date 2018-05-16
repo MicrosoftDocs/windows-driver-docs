@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Required Dispatch Routines
 
 
-## <a href="" id="ddk-required-dispatch-routines-kg"></a>
+
 
 
 Most drivers must handle the following *Dispatch* routines:

@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Initializing the Use of a SAN
 
 
-## <a href="" id="ddk-initializing-the-use-of-a-san-ng"></a>
+
 
 
 The following topics describe how to initialize the use of a SAN:

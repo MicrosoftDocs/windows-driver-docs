@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 You can design a driver or application that uses the [serial I/O request interface](serial-i-o-request-interface.md) to communicate with a peripheral device connected to a serial port. A serial port is a hardware communication interface on a serial controller, which is a 16550 UART or compatible device. To control a serial port to which a peripheral device is permanently connected, you can design a custom serial controller driver that works with version 2 of the serial framework extension (SerCx2), which replaces version 1 (SerCx). Or, to control a named serial port located on the case of a traditional PC, you can use the inbox Serial.sys and Serenum.sys drivers.
 
-## <a href="" id="ddk-serial-ports-and-devices-design-guide-kg"></a>
+
 
 
 ## In this section

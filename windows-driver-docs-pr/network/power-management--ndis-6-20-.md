@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Power Management (NDIS 6.20)
 
 
-## <a href="" id="ddk-ndis-6-20-power-management-ng"></a>
+
 
 
 This section describes the power management interface that was introduced with Windows 7 and NDIS 6.20. Starting with NDIS 6.20, power management enhancements are supported that reduce computer power consumption.

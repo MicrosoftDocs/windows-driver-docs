@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 The topic contains basic information about the USB samples that are available for download from the [Windows driver samples](http://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
 
-## <a href="" id="bus-samples"></a>USB Samples
+## USB Samples
 
 
 <table>

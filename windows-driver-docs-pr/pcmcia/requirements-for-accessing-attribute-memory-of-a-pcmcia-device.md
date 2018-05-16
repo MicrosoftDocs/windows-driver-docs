@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Requirements for Accessing Attribute Memory of a PCMCIA Device
 
 
-## <a href="" id="ddk-requirements-for-accessing-attribute-memory-of-a-pcmcia-device-kg"></a>
+
 
 
 This section describes the requirements for the following types of access to attribute memory of a PCMCIA device:

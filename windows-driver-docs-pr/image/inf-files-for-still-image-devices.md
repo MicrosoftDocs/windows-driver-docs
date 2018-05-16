@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # INF Files for Still Image Devices
 
 
-## <a href="" id="ddk-inf-files-for-still-image-devices-si"></a>
+
 
 
 The default class installer for still image devices, *sti\_ci.dll*, recognizes a special set of INF file entries. Within an INF file, these entries must be placed within a device's [**INF DDInstall Section**](https://msdn.microsoft.com/library/windows/hardware/ff547344). The entries are described in the following table.

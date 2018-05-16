@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Filter Module Send and Receive Operations
 
 
-## <a href="" id="ddk-filter-module-send-and-receive-operations-ng"></a>
+
 
 
 This section documents send and receive operations for NDIS 6.0 filter drivers. Filter drivers can initiate send requests and receive indications or filter the requests and indications of other drivers.

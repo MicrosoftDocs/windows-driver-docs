@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Device Manager Details Tab
 
 
-## <a href="" id="ddk-device-manager-details-tab-dg"></a>
+
 
 
 For Windows XP and later versions of Windows, Device Manager provides a **Details** tab for each device. This tab displays lots of information useful to driver developers and testers, and aids Microsoft Customer Support Services (CSS) in diagnosing customer problems. The tab's page displays [device identification strings](device-identification-strings.md), together with device and driver configuration information that can be useful when you debug drivers.

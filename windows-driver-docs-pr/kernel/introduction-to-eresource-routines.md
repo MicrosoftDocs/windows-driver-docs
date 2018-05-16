@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Introduction to ERESOURCE Routines
 
 
-## <a href="" id="ddk-introduction-to-eresource-routines-kg"></a>
+
 
 
 The system provides routines to acquire and release ERESOURCE structures, as well as to examine their current state.

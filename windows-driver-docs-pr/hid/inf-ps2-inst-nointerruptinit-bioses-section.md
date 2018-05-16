@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # INF PS2\_Inst.NoInterruptInit.Bioses Section
 
 
-## <a href="" id="ddk-inf-ps2-inst-nointerruptinit-bioses-section-kg"></a>
+
 
 
 **\[PS2\_Inst.NoInterruptInit.Bioses\]**

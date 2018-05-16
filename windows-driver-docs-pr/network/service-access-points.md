@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Service Access Points
 
 
-## <a href="" id="ddk-service-access-points-ng"></a>
+
 
 
 A *service access point* (SAP) identifies the characteristics of incoming calls of interest to a connection-oriented client. By registering a SAP with a call manager or MCM driver, a client indicates that the call manager or MCM driver should notify the client of all incoming calls addressed to that SAP.

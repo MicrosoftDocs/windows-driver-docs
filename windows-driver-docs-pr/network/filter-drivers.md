@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Faster filter drivers
 
 
-## <a href="" id="ddk-filter-drivers-ng"></a>
+
 
 
 The NDIS 6.x filter driver model supersedes the NDIS 5.x filter intermediate driver model. The new filter driver model enhances system performance in several ways:

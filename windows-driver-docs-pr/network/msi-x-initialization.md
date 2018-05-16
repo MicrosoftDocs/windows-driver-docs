@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # MSI-X Initialization
 
 
-## <a href="" id="ddk-msi-x-initialization-ng"></a>
+
 
 
 To support MSI-X, MSI initialization requires a pre-registration phase in which the miniport driver establishes a function that filters resource-requirements. This function can change the interrupt affinity for each MSI-X message or remove message interrupt resources if the driver will register for line-based interrupts in the [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function.

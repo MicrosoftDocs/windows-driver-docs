@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Network Interface Card Support
 
 
-## <a href="" id="ddk-network-interface-card-support-ng"></a>
+
 
 
 Windows Vista and later versions of the operating system support the following types of network interface cards:

@@ -24,7 +24,7 @@ ms.technology: windows-devices
 # Pscript Minidrivers
 
 
-## <a href="" id="ddk-pscript-minidrivers-gg"></a>
+
 
 
 Pscript minidrivers are created from .ppd files and .ntf files.

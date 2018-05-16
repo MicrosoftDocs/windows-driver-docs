@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # NDIS MDL Interface
 
 
-## <a href="" id="ddk-ndis-mdl-interface-nr"></a>
+
 
 
 This section includes:

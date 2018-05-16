@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Updating Bus-Specific Configuration Space Access for NDIS 6.0
 
 
-## <a href="" id="ddk-updating-bus-specific-configuration-space-access-for-ndis-6-0-ng"></a>
+
 
 
 To read or write to the bus configuration space, a miniport driver calls the [**NdisMGetBusData**](https://msdn.microsoft.com/library/windows/hardware/ff563591) or [**NdisMSetBusData**](https://msdn.microsoft.com/library/windows/hardware/ff563670) function, respectively. These functions replace the [**NdisReadPciSlotInformation**](https://msdn.microsoft.com/library/windows/hardware/ff554554) and [**NdisWritePciSlotInformation**](https://msdn.microsoft.com/library/windows/hardware/ff554871) functions.

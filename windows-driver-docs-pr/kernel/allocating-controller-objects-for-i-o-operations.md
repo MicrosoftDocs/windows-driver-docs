@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Allocating Controller Objects for I/O Operations
 
 
-## <a href="" id="ddk-allocating-controller-objects-for-i-o-operations-kg"></a>
+
 
 
 After a driver that uses a controller object has started its device, it is ready to process IRPs sent to its target device objects. Whenever an IRP requires the driver to program the physical device represented by the controller object for an I/O operation, the driver calls [**IoAllocateController**](https://msdn.microsoft.com/library/windows/hardware/ff548224). The following figure illustrates such a call.

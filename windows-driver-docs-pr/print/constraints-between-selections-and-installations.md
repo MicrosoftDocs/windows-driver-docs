@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Constraints between Selections and Installations
 
 
-## <a href="" id="ddk-constraints-between-selections-and-installations-gg"></a>
+
 
 
 Sometimes it is necessary to specify that a certain option cannot be selected if some other option is installed, or that a certain option cannot be selected if some other option is not installed. For example, a user should not be able to select tabloid paper if a printer's large format paper tray is not installed.

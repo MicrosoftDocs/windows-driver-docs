@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Directory Services for Printers
 
 
-## <a href="" id="ddk-directory-services-for-printers-gg"></a>
+
 
 
 When a user installs a network-shared printer, the Windows 2000 and later print folder, by default, also publishes the printer to the Windows 2000 (or later) Directory Services. Publication is accomplished by calling the spooler's **SetPrinter** function with an input structure of PRINTER\_INFO\_7, as described in the Microsoft Windows SDK documentation.

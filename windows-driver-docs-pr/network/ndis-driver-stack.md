@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # NDIS Driver Stack
 
 
-## <a href="" id="ddk-ndis-6-0-driver-stack-ng"></a>
+
 
 
 ### Basic Stack Configuration

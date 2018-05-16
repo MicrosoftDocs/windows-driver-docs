@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Simplified Reset Handling
 
 
-## <a href="" id="ddk-simplified-reset-handling-ng"></a>
+
 
 
 NDIS 6.0 and later drivers do not reset miniport adapters to cancel send or OID requests. Instead, NDIS provides send cancellation and OID request cancellation functions.

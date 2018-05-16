@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Image Processing Code Example
 
 
-## <a href="" id="ddk-image-processing-examples-si"></a>
+
 
 
 The following code example shows how to implement a simple image processing filter. This image processing filter supports brightness and contrast as well as the optional deskew and rotation properties.

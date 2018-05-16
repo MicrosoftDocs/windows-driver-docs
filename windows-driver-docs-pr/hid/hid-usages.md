@@ -31,7 +31,7 @@ ms.technology: windows-devices
 
 *HID usages* identify the intended use of HID controls and what the controls actually measure.
 
-## <a href="" id="ddk-hid-usages-kg"></a>
+
 
 
 The following concepts and terminology are used throughout the HID documentation in the WDK:

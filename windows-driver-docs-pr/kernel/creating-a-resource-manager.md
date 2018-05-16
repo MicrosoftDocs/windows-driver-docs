@@ -78,7 +78,7 @@ Steps 6 through 11 are typically performed in code that responds to requests fro
 
 Step 12 must be performed in your resource manager's final clean-up code, such as a kernel-mode driver's [*Unload*](https://msdn.microsoft.com/library/windows/hardware/ff564886) routine.
 
-## <a href="" id="kernel-creating-a-read-only-enlistment"></a> Creating a Read-Only Enlistment
+##  Creating a Read-Only Enlistment
 
 
 A *read-only enlistment* is an enlistment that does not receive any notifications from KTM. A resource manager can make any enlistment read-only by calling [**ZwReadOnlyEnlistment**](https://msdn.microsoft.com/library/windows/hardware/ff567074). This call causes KTM to stop delivering notifications to the resource manager.
@@ -97,7 +97,7 @@ There are two reasons why you might want your resource manager to call **ZwReadO
 
 After a resource manager has called **ZwReadOnlyEnlistment**, it can call [**ZwClose**](https://msdn.microsoft.com/library/windows/hardware/ff566417) to close the enlistment handle.
 
-## <a href="" id="kernel-creating-a-volatile-resource-manager"></a> Creating a Volatile-Resource Manager
+##  Creating a Volatile-Resource Manager
 
 
 A *volatile-resource manager* is a resource manager that does not maintain durable data. For example, you might create a volatile-resource manager to monitor data that the client sends, if the resource manager does not modify a durably stored database. Volatile-resource managers typically do not log transaction activity and therefore cannot perform recovery or rollback operations.

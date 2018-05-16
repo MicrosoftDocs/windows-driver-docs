@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Handling a System Query-Power IRP in a Filter or Function Driver
 
 
-## <a href="" id="ddk-handling-a-system-query-power-irp-in-a-filter-or-function-driver-k"></a>
+
 
 
 A filter or function driver (that is not the power policy owner for a device) should pass a system query-power IRP to the next-lower driver, in the following steps:

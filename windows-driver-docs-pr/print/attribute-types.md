@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Attribute Types
 
 
-## <a href="" id="ddk-attribute-types-gg"></a>
+
 
 
 Several types of attributes are defined, consisting of:

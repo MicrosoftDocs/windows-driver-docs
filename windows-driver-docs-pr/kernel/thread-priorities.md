@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Thread Priorities
 
 
-## <a href="" id="ddk-thread-priorities-kg"></a>
+
 
 
 Some drivers create their own driver- or device-dedicated system threads and set their thread's base priority to the lowest real-time priority value. Other highest-level drivers, particularly file system drivers, use system worker threads with a base priority that is usually set to the highest variable priority value. The kernel schedules a thread with the lowest real-time priority to run ahead of every thread with a variable priority, which includes almost every user-mode thread in the system.

@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # NET\_LUID Value
 
 
-## <a href="" id="ddk-format-of-a-net-luid-value-ng"></a>
+
 
 
 A [**NET\_LUID**](https://msdn.microsoft.com/library/windows/hardware/ff568747) value is a 64-bit value that identifies an NDIS network interface. The NET\_LUID data type is a union that can provide access to the NET\_LUID value as a single 64-bit value or as a structure that contains a NET\_LUID index and an interface type.

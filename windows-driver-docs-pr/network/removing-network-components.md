@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Removing Network Components
 
 
-## <a href="" id="ddk-removing-network-components-ng"></a>
+
 
 
 Network components are removed by the network configuration subsystem.

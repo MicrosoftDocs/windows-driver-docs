@@ -22,7 +22,7 @@ ms.technology: windows-devices
 # Connecting Between Pins of Filters for BDA Minidrivers
 
 
-## <a href="" id="ddk-connecting-between-pins-of-filters-for-bda-minidrivers-ksg"></a>
+
 
 
 To let pins of BDA filters connect to each other, BDA minidrivers for those filters must provide lists of data ranges for the pins as described in [Data Range Intersections in AVStream](data-range-intersections-in-avstream.md). In other words, pins of filters specify the data ranges they support to enable stream connections to pins of other filters that also support those data ranges.

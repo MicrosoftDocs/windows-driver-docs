@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Interpreting a Sample SetupAPI Log File
 
 
-## <a href="" id="ddk-interpreting-a-sample-setupapi-log-file-dg"></a>
+
 
 
 The sample logs below illustrate the information that is contained in a SetupAPI log file.

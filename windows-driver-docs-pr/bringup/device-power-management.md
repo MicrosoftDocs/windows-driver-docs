@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 The [ACPI 5.0 specification](http://www.uefi.org/specifications) defines a set of namespace objects to specify device power information for a device. For example, one set of objects can specify the power resources that a device requires in each supported device power state. Another object type can describe the ability of the device to wake from a low-power state in response to hardware events.
 
-## <a href="" id="win"></a>Device power management in Windows
+## Device power management in Windows
 
 
 While a system is running (that is, the system is in the ACPI-defined working state, S0), individual devices can make transitions between device power states, depending on activity, to save power. In traditional PC systems, ACPI-defined sleeping states (S1 through S4) are also used to save power, but these disconnected, high-latency sleep states are not used on Windows SoC platforms. Therefore, battery life is highly dependent on how platforms implement run-time device power management.
@@ -30,7 +30,7 @@ For peripheral devices that are not integrated into the SoC, Windows uses ACPI D
 
 As described in [Device power management in ACPI](#acpi), Windows supports the D3cold power management capabilities that are defined in the ACPI 5.0 specification. By using this support, devices, platforms and drivers can opt-in to having device power completely removed during run-time idle periods. This capability can significantly improve battery life. However, removing power must be supported by all affected components in order to be able to return to D0 successfully. For this reason, drivers (bus and function), as well as the platform itself, must indicate that they support it. For more information about D3cold driver opt-in, see [Supporting D3cold in a Driver](https://msdn.microsoft.com/library/windows/hardware/hh967717).
 
-## <a href="" id="acpi"></a>Device power management in ACPI
+## Device power management in ACPI
 
 
 Namespace devices support up to four device power states, numbered D0 (full-function, or "on") to D3 (no function, or "off"). Each state can have different power requirements, with higher-numbered states consuming less power than lower-numbered states. In addition, the D3 (off) state has two sub-states, D3hot and D3cold. The D3hot sub-state requires the device to remain accessible on its parent bus so that it can respond to bus-specific software commands. This requirement, and the power used to meet it, are removed in D3cold. Finally, a device can be armed to wake itself from a low-power state due to a hardware event, and, if necessary, to also bring the platform out of an idle state.

@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-introduction-to-ipsec-offload-version-2-ng"></a>
+
 
 
 IPsec offload version 2 (IPsecOV2) extends services that are provided in IPsec offload version 1 (IPsecOV1). For more information about IPsecOV1 offload and IPsec, see [IPsec Offload Version 1](ipsec-offload-version-1.md).
