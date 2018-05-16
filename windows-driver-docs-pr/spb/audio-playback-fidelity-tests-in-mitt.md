@@ -38,7 +38,7 @@ The audio module on the MITT board is used to detect errors that occur at the tr
 1.  Connect the audio adapter to **JC1** on the MITT board.
 2.  LineIn has the input from line out of the audio device on the system under test by using a 1/8” to 1/8” male to male cable. Other audio sources may be connected up with appropriate cabling.
 
-## <a href="" id="audio-playback-automation-tests--"></a>Audio playback automation tests
+## Audio playback automation tests
 
 
 1.  Create a folder on the system under test.

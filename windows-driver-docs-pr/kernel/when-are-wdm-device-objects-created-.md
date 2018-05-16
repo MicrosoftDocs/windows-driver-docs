@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # When Are WDM Device Objects Created?
 
 
-## <a href="" id="ddk-when-are-wdm-device-objects-created-kg"></a>
+
 
 
 This section describes each kind of device object and mentions when each is created.

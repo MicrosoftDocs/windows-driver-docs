@@ -18,7 +18,7 @@ ms.technology: windows-devices
 
  
 
-## <a href="" id="ddk-netdma-2-0-extensions-for-netdma-2-0-and-later-providers-nr"></a>
+
 
 
 This section includes the following topics:

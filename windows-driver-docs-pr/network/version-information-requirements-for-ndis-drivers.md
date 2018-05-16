@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Version Information Requirements for NDIS Drivers
 
 
-## <a href="" id="ddk-version-information-requirements-for-ndis-drivers-ng"></a>
+
 
 
 NDIS structures that provide version information have a **Header** member that is defined as an [**NDIS\_OBJECT\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff566588) structure and NDIS drivers must provide support for such version information.

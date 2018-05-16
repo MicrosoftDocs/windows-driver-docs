@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # WAN Miniport Driver Build Parameters
 
 
-## <a href="" id="ddk-wan-miniport-driver-build-parameters-ng"></a>
+
 
 
 This topics provides some information about defining build parameters for NDIS and CoNDIS WAN miniport drivers.

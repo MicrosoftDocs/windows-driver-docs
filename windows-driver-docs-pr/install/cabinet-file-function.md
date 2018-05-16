@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Cabinet File Function
 
 
-## <a href="" id="ddk-cabinet-file-function-dg"></a>
+
 
 
 A cabinet (CAB) file is a single file, usually with a .*cab* extension, that contains several compressed files as a file library. CAB files are used to organize the installation files that will be copied to the user's system. A compressed file can be spread over several CAB files.

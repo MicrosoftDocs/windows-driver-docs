@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # 'Hello World' Definition File
 
 
-## <a href="" id="ddk--hello-world-definition-file-si"></a>
+
 
 
 The definition file is used to export entry point functions. The *hellowld.def* file should contain the two following COM exports, **DllGetClassObject** and **DllCanUnloadNow**, which are described in the Microsoft Windows SDK documentation.

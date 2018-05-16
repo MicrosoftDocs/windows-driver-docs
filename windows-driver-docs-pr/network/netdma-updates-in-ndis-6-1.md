@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # NetDMA Updates in NDIS 6.1
 
 
-## <a href="" id="ddk-netdma-updates-ng"></a>
+
 
 
 The NetDMA interface provides offloading of direct memory access (DMA) to network interface cards (NICs) that support a NetDMA DMA engine. The Windows Server 2008 and Windows Vista with Service Pack 1 (SP1) operating systems add NetDMA versions 1.1 and 2.0. NDIS 6.1 and later drivers can use NetDMA version 1.0, 1.1, and 2.0 interfaces. These interfaces manage interactions with the DMA engine and manage DMA transfers at run-time.

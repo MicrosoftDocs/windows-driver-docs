@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # AddEuro
 
 
-## <a href="" id="ddk-addeuro-gg"></a>
+
 
 
 The Euro symbol, as shown in the following figure, is the currency symbol for the basic monetary unit used in countries/regions of the European Union.

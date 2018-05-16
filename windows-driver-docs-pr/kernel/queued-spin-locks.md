@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Queued Spin Locks
 
 
-## <a href="" id="ddk-queued-spin-locks-kg"></a>
+
 
 
 *Queued spin locks* are a variant of spin locks that are more efficient for high contention locks on multiprocessor machines. On multiprocessor machines, using queued spin locks guarantees that processors acquire the spin lock on a first-come first-served basis. Drivers for Windows XP and later versions of Windows should use queued spin locks instead of ordinary spin locks.

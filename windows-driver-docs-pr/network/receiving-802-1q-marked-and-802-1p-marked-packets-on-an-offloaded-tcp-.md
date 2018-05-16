@@ -16,7 +16,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-receiving-802-1q-and-802-1p-marked-packets-on-an-offloaded-tcp-con"></a>
+
 
 
 When processing a receive packet on an offloaded TCP connection, an offload target uses the 802.1Q information from the packet's 802.3ac header to decide whether the packet should be dropped, as described in the following algorithm:

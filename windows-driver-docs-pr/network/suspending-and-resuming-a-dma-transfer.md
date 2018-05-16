@@ -23,7 +23,7 @@ ms.technology: windows-devices
 
  
 
-## <a href="" id="ddk-suspending-and-resuming-a-dma-transfer-ng"></a>
+
 
 
 The NetDMA interface can call a NetDMA provider driver's [**ProviderSuspendDma**](https://msdn.microsoft.com/library/windows/hardware/ff570405) function, if any, to temporarily suspend any dynamic memory access (DMA) transfers that are in progress on a DMA channel. The NetDMA provider returns the physical address of the last DMA descriptor that it processed at the address that the *pLastDescriptor* parameter specifies in **ProviderSuspendDma**.

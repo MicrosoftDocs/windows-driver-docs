@@ -21,7 +21,7 @@ ms.technology: windows-devices
 # SetupAPI
 
 
-## <a href="" id="ddk-using-setupapi-functions-dg"></a>
+
 
 
 The Setup application programming interface (SetupAPI) is a system component that provides two sets of functions:

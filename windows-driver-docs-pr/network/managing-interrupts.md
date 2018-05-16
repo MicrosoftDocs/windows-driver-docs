@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Managing Interrupts
 
 
-## <a href="" id="ddk-managing-interrupts-ng"></a>
+
 
 
 Miniport drivers that manage interrupts for a network interface card (NIC) must register the interrupt and *MiniportXxx* functions for the interrupt.

@@ -17,7 +17,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-updating-cached-variables-ng"></a>
+
 
 
 Because the host stack owns and maintains cached variables, it must alert the offload target to any changes in the values of such variables. The host stack changes the values of cached variables with one or more update operations. The host stack can update cached variables in offloaded neighbor, path, and TCP connection state objects.

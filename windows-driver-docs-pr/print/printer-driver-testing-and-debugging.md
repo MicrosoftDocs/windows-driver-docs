@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Printer Driver Testing and Debugging
 
 
-## <a href="" id="ddk-printer-driver-testing-and-debugging-gg"></a>
+
 
 
 [Debugging Printer Drivers and Spooler Components](debugging-printer-drivers-and-spooler-components.md) presents information of use to developers of printer drivers and spooler components.

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # DispatchCreate, DispatchClose, and DispatchCreateClose Routines
 
 
-## <a href="" id="ddk-dispatchcreate-dispatchclose-and-dispatchcreateclose-routines-kg"></a>
+
 
 
 A driver's [*DispatchCreate*](https://msdn.microsoft.com/library/windows/hardware/ff543266) and [*DispatchClose*](https://msdn.microsoft.com/library/windows/hardware/ff543255) routines handle IRPs with I/O function codes of [**IRP\_MJ\_CREATE**](https://msdn.microsoft.com/library/windows/hardware/ff550729) and [**IRP\_MJ\_CLOSE**](https://msdn.microsoft.com/library/windows/hardware/ff550720), respectively. Alternatively, a combined [*DispatchCreateClose*](https://msdn.microsoft.com/library/windows/hardware/ff543270) routine can handle IRPs for both of these I/O function codes.

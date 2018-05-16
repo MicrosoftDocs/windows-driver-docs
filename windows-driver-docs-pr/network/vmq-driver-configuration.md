@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # VMQ Driver Configuration
 
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 This section describes the features that NDIS provides to determine the virtual machine queue (VMQ) capabilities of network adapters.

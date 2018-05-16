@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Required Items in WMI Classes
 
 
-## <a href="" id="ddk-required-items-in-wmi-classes-kg"></a>
+
 
 
 All class definitions except embedded classes must include the items **InstanceName** and **Active**, which must appear exactly as shown:

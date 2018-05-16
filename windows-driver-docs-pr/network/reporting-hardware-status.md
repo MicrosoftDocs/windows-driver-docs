@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Reporting Hardware Status
 
 
-## <a href="" id="ddk-reporting-hardware-status-ng"></a>
+
 
 
 A connectionless miniport driver indicates changes in hardware status to upper layers by calling [**NdisMIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563600). A connection-oriented miniport driver indicates changes by calling [**NdisMCoIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563562).

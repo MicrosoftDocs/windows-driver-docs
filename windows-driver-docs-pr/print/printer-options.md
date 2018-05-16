@@ -21,7 +21,7 @@ ms.technology: windows-devices
 # Printer Options
 
 
-## <a href="" id="ddk-printer-options-gg"></a>
+
 
 
 Printer options represent the states that can be assigned to [printer features](printer-features.md). For example, if a printer can use both letter-sized and legal-sized paper, then LETTER and LEGAL are specified as options for its PaperSize feature.

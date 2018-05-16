@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Porting Miniport Driver Send and Receive Operations to CoNDIS 6.0
 
 
-## <a href="" id="ddk-porting-miniport-driver-send-and-receive-operations-to-condis-6-0-"></a>
+
 
 
 Data transfer code paths in NDIS 6.0 have changed as follows:

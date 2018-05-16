@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # NDIS Network Interface Architecture
 
 
-## <a href="" id="ddk-ndis-network-interface-architecture-ng"></a>
+
 
 
 NDIS provides a set of services to support network interfaces and interface stacks. In the WDK, this set of services is referred to as *NDIS network interface (NDISIF)* services.

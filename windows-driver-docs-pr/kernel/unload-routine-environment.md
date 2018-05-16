@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Unload Routine Environment
 
 
-## <a href="" id="ddk-unload-routine-environment-kg"></a>
+
 
 
 The operating system unloads a driver when the driver is being replaced or when all of the devices that the driver services have been removed. The PnP manager calls a PnP driver's [*Unload*](https://msdn.microsoft.com/library/windows/hardware/ff564886) routine if the driver has no more device objects after it handles an [**IRP\_MN\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551738) request.

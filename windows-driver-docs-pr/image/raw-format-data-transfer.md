@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # RAW Format Data Transfer
 
 
-## <a href="" id="ddk-raw-format-data-transfer-si"></a>
+
 
 
 Beginning with Windows Vista, WIA supports the RAW format for data transfers. The advantage of the RAW format for WIA transfers is that it supports the full capabilities of your scan head.

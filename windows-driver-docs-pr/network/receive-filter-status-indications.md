@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Receive Filter Status Indications
 
 
-## <a href="" id="ddk-virtual-machine-queue-status-indications-nr"></a>
+
 
 
 This section describes the following NDIS status indications that can be used by a miniport driver miniport driver for receive filtering:

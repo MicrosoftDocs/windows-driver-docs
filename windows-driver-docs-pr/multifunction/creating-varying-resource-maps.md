@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Creating Varying Resource Maps
 
 
-## <a href="" id="ddk-creating-varying-resource-maps-dg"></a>
+
 
 
 While standard resource maps can only assign an entire parent resource to a child of a multifunction device, varying resource maps let you subdivide a parent resource among children enumerated by mf.sys. Varying resource maps are supported on Windows XP and later versions of the NT-based operating system.

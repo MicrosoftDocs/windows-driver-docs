@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Incoming Request to Close a Call
 
 
-## <a href="" id="ddk-incoming-request-to-close-a-call-ng"></a>
+
 
 
 When the remote client closes a call, the local call manager or MCM driver must indicate this incoming request to the local client. To indicate such a request, a call manager calls [**NdisCmDispatchIncomingCloseCall**](https://msdn.microsoft.com/library/windows/hardware/ff561670) with the *CloseStatus* set to NDIS\_STATUS\_SUCCESS (see the following figure).

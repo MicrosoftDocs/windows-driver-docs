@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Updating Web Page Information
 
 
-## <a href="" id="ddk-updating-web-page-information-gg"></a>
+
 
 
 The print server does not support server push for updating information about a print server Web page. Client pull operations are supported (assuming the user's browser recognizes HTML-specified "refresh" parameters) and can be included in customized pages. (For more information about client pull, refer to the appropriate HTML documentation.)

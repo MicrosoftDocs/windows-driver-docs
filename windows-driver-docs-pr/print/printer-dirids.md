@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Printer Dirids
 
 
-## <a href="" id="ddk-printer-dirids-gg"></a>
+
 
 
 When specifying target directories within INF files, directory identifiers (`dirids`) should be used. For more information, see [Using Dirids](https://msdn.microsoft.com/library/windows/hardware/ff553598).

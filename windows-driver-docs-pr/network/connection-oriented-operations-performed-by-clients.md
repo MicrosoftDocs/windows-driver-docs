@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Connection-Oriented Operations Performed by Clients
 
 
-## <a href="" id="ddk-connection-oriented-operations-performed-by-clients-ng"></a>
+
 
 
 A connection-oriented client:

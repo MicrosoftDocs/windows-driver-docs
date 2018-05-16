@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Canceling a Data Transfer by a Device
 
 
-## <a href="" id="ddk-canceling-a-data-transfer-by-a-device-si"></a>
+
 
 
 In the USB Still Image Capture Device Definition (SICDD), the device is allowed to cancel an operation at any time by returning less data than the host is expecting.

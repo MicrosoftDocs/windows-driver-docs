@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Specifying New Device Fonts in PCL XL Minidrivers
 
 
-## <a href="" id="ddk-specifying-new-device-fonts-in-pcl-xl-minidrivers-gg"></a>
+
 
 
 If you want to support new device fonts in a PCL XL minidriver, you must create [*Unidrv font metrics (UFM)*](https://msdn.microsoft.com/library/windows/hardware/ff556343#wdkgloss-unidrv-font-metrics--ufm-) files for those device fonts.

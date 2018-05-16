@@ -19,7 +19,7 @@ If you are writing a UMDF driver, you can specify *preferences* for the [buffer 
 -   [Retrieving the Access Method for an I/O Request](#retrieving-access-method)
 -   [Converting from Neither Buffered I/O nor Direct I/O](#using-neither-buffered-i-o-nor-direct-i-o-in-umdf-drivers)
 
-## <a href="" id="specifying-preferred-buffer-access-method"></a>Specifying a Preferred Buffer Access Method
+## Specifying a Preferred Buffer Access Method
 
 
 Starting in UMDF version 2.0, a UMDF driver calls [**WdfDeviceInitSetIoTypeEx**](https://msdn.microsoft.com/library/windows/hardware/dn265604) to register preferred access methods for read/write requests and for device I/O control requests.
@@ -42,7 +42,7 @@ The framework uses the following rules to determine which access method to use:
 
 -   For device I/O control requests, UMDF uses direct I/O only if the I/O control code (IOCTL) specifies direct I/O and only if all of the UMDF drivers for that device have called [**WdfDeviceInitSetIoTypeEx**](https://msdn.microsoft.com/library/windows/hardware/dn265604) to specify the direct access method.
 
-## <a href="" id="retrieving-access-method"></a>Retrieving the Access Method for an I/O Request
+## Retrieving the Access Method for an I/O Request
 
 
 Drivers use the same set of request object methods to access data buffers, regardless of the buffer access method. Therefore, most drivers typically do not need to know whether UMDF is using buffered I/O or direct I/O for an I/O request.
@@ -53,7 +53,7 @@ However, the driver might occasionally receive a buffer that uses buffered I/O. 
 
 A UMDF driver calls [**WdfRequestGetEffectiveIoType**](https://msdn.microsoft.com/library/windows/hardware/dn265616) to obtain an I/O request's buffer access method. As described above, the I/O type for a specific request may differ from the framework-assigned I/O type settings for a device.
 
-## <a href="" id="using-neither-buffered-i-o-nor-direct-i-o-in-umdf-drivers"></a> Converting from Neither Buffered I/O nor Direct I/O
+##  Converting from Neither Buffered I/O nor Direct I/O
 
 
 A UMDF driver cannot use the "neither" method.

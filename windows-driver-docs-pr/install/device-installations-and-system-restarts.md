@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Device Installations and System Restarts
 
 
-## <a href="" id="ddk-device-installations-requiring-a-reboot-dg"></a>
+
 
 
 Device installations should not force the user to restart the system unless absolutely necessary. The following circumstances are the only ones for which a system restart should be necessary:

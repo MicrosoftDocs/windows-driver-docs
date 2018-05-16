@@ -21,7 +21,7 @@ ms.technology: windows-devices
 # Customizing the Printer Details Web Page
 
 
-## <a href="" id="ddk-customizing-the-printer-details-web-page-gg"></a>
+
 
 
 If you want to replace the printer details page provided by Microsoft, you can provide one or more customized ASP files. If you replace the default page, you can also provide links to additional customized pages installed on the server, plus links to any other pages on the Web.

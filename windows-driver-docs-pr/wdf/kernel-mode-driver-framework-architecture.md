@@ -27,7 +27,7 @@ ms.technology: windows-devices
 # WDF Architecture
 
 
-## <a href="" id="ddk-windows-driver-framework-architecture-df"></a>
+
 
 
 WDF provides object-based interfaces for drivers. Framework-defined object interfaces consist of:

@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Introduction to WIA
 
 
-## <a href="" id="ddk-introduction-to-wia-si"></a>
+
 
 
 The Microsoft Windows Image Acquisition (WIA) interface is both an application programming interface (API) and a device driver interface (DDI). The WIA API is designed to allow applications to:

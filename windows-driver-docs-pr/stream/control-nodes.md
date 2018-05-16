@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Control Nodes
 
 
-## <a href="" id="ddk-control-nodes-ksg"></a>
+
 
 
 The following figure shows an example of one possible functional topology that receives digital broadcast content. It illustrates the operations necessary to:

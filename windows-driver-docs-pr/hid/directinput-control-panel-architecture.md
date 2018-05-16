@@ -9,7 +9,7 @@ keywords: ["property sheets WDK DirectInput , control panel structure", "game co
 # DirectInput Control Panel Architecture
 
 
-## <a href="" id="ddk-directinput-control-panel-architecture-di"></a>
+
 
 
 This section describes the basic structure of the DirectInput control panel extensible property sheets. This structure is explained in the following topics:

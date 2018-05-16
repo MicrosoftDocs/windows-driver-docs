@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # General Printing Commands
 
 
-## <a href="" id="ddk-general-printing-commands-gg"></a>
+
 
 
 *General printing commands* are those that can be associated with any type of printing. These commands are divided into the following groups:

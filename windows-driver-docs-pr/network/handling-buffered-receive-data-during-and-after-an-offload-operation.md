@@ -18,7 +18,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-handling-buffered-receive-data-during-and-after-an-offload-operati"></a>
+
 
 
 When the host stack initiates the offload of a TCP connection, there might be undelivered receive data on the connection. This data is data that the host stack has received off the wire, processed, and acknowledged but that it has not delivered to a client application--perhaps because no preposted receive buffers were available from the client application.

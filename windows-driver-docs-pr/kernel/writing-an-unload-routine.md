@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Writing an Unload Routine
 
 
-## <a href="" id="ddk-writing-an-unload-routine-kg"></a>
+
 
 
 Any driver that can be replaced, or unloaded and reloaded, while the system is running must have an [*Unload*](https://msdn.microsoft.com/library/windows/hardware/ff564886) routine. All WDM drivers must have *Unload* routines.

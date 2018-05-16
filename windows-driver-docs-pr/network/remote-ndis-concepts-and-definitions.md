@@ -30,7 +30,7 @@ ms.technology: windows-devices
 # Remote NDIS Concepts and Definitions
 
 
-## <a href="" id="ddk-remote-ndis-concepts-and-definitions-ng"></a>
+
 
 
 This section presents an overview of the Remote NDIS requirements on the communication channel and lower-layer drivers that are used to communicate between the host and the Remote NDIS device. Device state transitions and major operations such as initialization, halt and reset are also described in this section.

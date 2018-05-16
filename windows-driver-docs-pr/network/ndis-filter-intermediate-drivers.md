@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # NDIS Filter Intermediate Drivers
 
 
-## <a href="" id="ddk-ndis-filter-intermediate-drivers-ng"></a>
+
 
 
 **Note**  Filter intermediate drivers are not supported in NDIS 6.0 and later. You should use the NDIS filter driver interface instead. For more information about NDIS filter drivers, see [NDIS Filter Drivers](ndis-filter-drivers.md).

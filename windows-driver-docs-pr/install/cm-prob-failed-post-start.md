@@ -16,7 +16,7 @@ ms.technology: windows-devices
 This function is reserved for system use.
 
 
-## <a href="" id="ddk-cm-prob-failed-post-start-dg"></a>
+
 
 
 A driver has reported a device failure.

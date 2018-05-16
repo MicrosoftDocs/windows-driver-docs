@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Failure to Check a Driver's State
 
 
-## <a href="" id="ddk-failure-to-check-a-driver-s-state-kg"></a>
+
 
 
 In the following example, the driver uses the **ASSERT** macro to check for the correct device state in the checked build, but does not check device state in the free build:

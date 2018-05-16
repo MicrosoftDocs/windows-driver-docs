@@ -47,7 +47,7 @@ For more information, see [Common sensor properties](https://msdn.microsoft.com/
 
 If the sensor hardware subsystem is wake-capable, then it should make sure that it initiates wake up early enough to avoid buffer overruns.
 
-## <a href="" id="opt-ddsi"></a>Optional DDSI functions for data batching
+## Optional DDSI functions for data batching
 
 
 The device driver software interface (DDSI) functions are the interface between the driver and the class extension. To support data batching, a driver must implement the following DDSI function, so that the sensor class extension can set the batch latency.

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # SystemWake
 
 
-## <a href="" id="ddk-systemwake-kg"></a>
+
 
 
 The **SystemWake** member of [**DEVICE\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff543095) contains the lowest (least-powered) system power state from which the device can wake the system, or **PowerSystemUnspecified** if the device cannot wake the system.

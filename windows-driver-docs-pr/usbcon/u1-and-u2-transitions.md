@@ -83,7 +83,7 @@ The device, on the other hand, has accurate knowledge about its characteristics 
 
 For example, the device has sent a NRDY notification on one of its endpoints and knows that there will not be traffic for a while. In that case, the device can immediately initiate a transition to U1 or U2. Just before sending the ERDY notification, the device can bring the link back to U0 in preparation for sending that data. For details about this process, see section C.3.1 of the USB 3.0 specification.
 
-## <a href="" id="u1tou2"></a>Direct transition from U1 to U2
+## Direct transition from U1 to U2
 
 
 If the link is in U1, it is possible that the link can directly transition to U2 without entering U0 in between. That can occur regardless of which link partner initiated the transition to U1. However, the U1 to U2 transition can occur only if the U2 timeout on the DS port of the link is set to a value between 01H-FEH.

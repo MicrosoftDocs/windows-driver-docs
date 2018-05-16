@@ -18,7 +18,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-traversing-a-state-tree-ng"></a>
+
 
 
 After returning from the [*MiniportInitiateOffload*](https://msdn.microsoft.com/library/windows/hardware/ff559393) function, the offload target traverses the offload state tree that is referenced by the *OffloadBlockList* parameter. The offload target offloads the state from this tree to its own internal offload context areas.

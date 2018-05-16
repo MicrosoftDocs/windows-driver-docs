@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Using a Device Interface
 
 
-## <a href="" id="ddk-using-a-device-interface-dg"></a>
+
 
 
 Device interfaces are available to both kernel-mode components and user-mode applications. User-mode code can use **SetupDi***Xxx* functions to find out about registered, enabled device interfaces. See [SetupDi Device Interface Functions](using-device-installation-functions.md#ddk-setupdi-device-interface-functions-dg) for more information.

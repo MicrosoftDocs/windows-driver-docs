@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using Kernel Transaction Manager
 
 
-## <a href="" id="ddk-security-considerations-for-file-systems-if"></a>
+
 
 
 This section describes the kernel-mode interfaces of the kernel transaction manager (KTM). It contains the following topics:

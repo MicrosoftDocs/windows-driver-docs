@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Opening and Closing a Parallel Port
 
 
-## <a href="" id="ddk-opening-and-closing-a-parallel-port-kg"></a>
+
 
 
 Clients can share a parallel port. A client must open a file on a parallel port before the client can use other I/O requests or use the [parallel port callback routines](https://msdn.microsoft.com/library/windows/hardware/ff544307). A client must not attempt to communicate with a parallel port after the client has closed its file on the port.

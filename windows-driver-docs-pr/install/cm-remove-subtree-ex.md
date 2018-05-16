@@ -16,7 +16,7 @@ api_type:
 This function is reserved for system use.
 
 
-## <a href="" id="ddk-cm-remove-subtree-ex-dr"></a>
+
 
 
 This function is obsolete and no longer supported in Windows 2000 and later versions of Windows. Use [**CM_Query_And_Remove_SubTree_Ex**](https://msdn.microsoft.com/library/windows/hardware/ff539727) instead.

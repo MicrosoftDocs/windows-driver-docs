@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Storing and Transferring Thumbnail Data
 
 
-## <a href="" id="ddk-storing-and-transferring-thumbnail-data-si"></a>
+
 
 
 WIA thumbnail information is controlled by three WIA properties: [**WIA\_IPC\_THUMBNAIL**](https://msdn.microsoft.com/library/windows/hardware/ff552550), [**WIA\_IPC\_THUMBNAIL\_WIDTH**](https://msdn.microsoft.com/library/windows/hardware/ff552558), and [**WIA\_IPC\_THUMBNAIL\_HEIGHT**](https://msdn.microsoft.com/library/windows/hardware/ff552552). In Windows Me, and in Windows XP and later, the thumbnail data is 24-bits per pixel only.

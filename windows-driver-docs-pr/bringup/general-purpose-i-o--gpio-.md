@@ -19,7 +19,7 @@ The GPIO abstraction is supported by the [ACPI 5.0 Specification](http://www.uef
 
 To verify that your GPIO controller meets all Windows platform requirements, see [GPIO Controller Requirements Checklist](gpio-controller-requirements-checklist.md).
 
-## <a href="" id="controller"></a>GPIO controller devices
+## GPIO controller devices
 
 
 Windows supports GPIO controllers. GPIO controllers provide a variety of functions for peripheral devices, including interrupts, input signaling, and output signaling. GPIO capabilities are modeled as a GPIO controller device in the namespace. The [GPIO framework extension](https://msdn.microsoft.com/library/windows/hardware/hh439512) (GpioClx) models the GPIO controller device as being partitioned into some number of banks of pins. Each pin bank has 64 or fewer configurable pins. The banks in a GPIO controller are ordered relative to their pins' position within the controller-relative GPIO pin space. For example, bank 0 contains pins 0-31 on the controller, bank 1 contains pins 32-63, and so on. All banks have the same number of pins, except for the last bank, which might have fewer. Banks are significant for the ACPI firmware because the firmware must report the mapping of system interrupt resources to banks, as described in [GPIO namespace objects](#nsobj).
@@ -42,7 +42,7 @@ Logically, ActiveBoth signals have both an asserted and unasserted state, whethe
 
 To support emulated ActiveBoth, the GPIO controller driver must enable ("opt-in to") ActiveBoth emulation by implementing a [*CLIENT\_ReconfigureInterrupt*](https://msdn.microsoft.com/library/windows/hardware/hh698243) callback function, and by setting the **EmulateActiveBoth** flag in the basic information structure that the driver's [*CLIENT\_QueryControllerBasicInformation*](https://msdn.microsoft.com/library/windows/hardware/hh439399) callback function supplies to **GpioClx**. For more information, see [General-Purpose I/O (GPIO) Drivers](https://msdn.microsoft.com/library/windows/hardware/hh439508).
 
-## <a href="" id="nsobj"></a>GPIO namespace objects
+## GPIO namespace objects
 
 
 GPIO controllers, and the peripherals that connect to them, are enumerated by ACPI. The connection between them is described using GPIO Connection Resource Descriptors. For more information, see section 6.4.3.8, "Connection Descriptors", of the ACPI 5.0 specification.

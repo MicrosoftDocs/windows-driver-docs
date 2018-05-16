@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Failure to Check the Size of Buffers
 
 
-## <a href="" id="ddk-failure-to-check-the-size-of-buffers-kg"></a>
+
 
 
 When handling IOCTLs and FSCTLs that implement buffered I/O, a driver should always check the sizes of the input and output buffers to ensure that the buffers can hold all the requested data. If the request specifies FILE\_ANY\_ACCESS, as most driver IOCTLs and FSCTLs do, any caller that has a handle to the device has access to buffered IOCTL or FSCTL requests for that device, and could read or write data beyond the end of the buffer.

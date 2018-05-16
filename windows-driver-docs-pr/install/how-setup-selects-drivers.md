@@ -22,7 +22,7 @@ ms.technology: windows-devices
 # How Windows Selects Drivers
 
 
-## <a href="" id="ddk-how-setup-selects-drivers-dg"></a>
+
 
 
 This section describes how Windows locates and selects a function driver for a Plug and Play (PnP) device.

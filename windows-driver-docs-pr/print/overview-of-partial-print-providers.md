@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Overview of Partial Print Providers
 
 
-## <a href="" id="ddk-overview-of-partial-print-providers-gg"></a>
+
 
 
 A partial provider DLL typically implements customized versions of only the provider functions that manage print queues and print jobs. The partial provider executes only on the print client system and depends on the local print provider for driver management operations and for generating printer data. Multiple partial providers can exist on a client system.

@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Types of Filter Drivers
 
 
-## <a href="" id="ddk-differences-between-monitoring-and-modifying-filter-drivers-ng"></a>
+
 
 
 There are two primary types of filter drivers:

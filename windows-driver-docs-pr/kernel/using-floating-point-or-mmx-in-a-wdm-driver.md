@@ -34,7 +34,7 @@ Drivers for x86 systems can call [**KeSaveExtendedProcessorState**](https://msdn
 
 The 64-bit compiler does not use the MMX/x87 registers for floating point operations. Instead, it uses the SSE registers. x64 kernel mode code is not allowed to access the MMX/x87 registers. The compiler also takes care of properly saving and restoring the SSE state, therefore, calls to [**KeSaveExtendedProcessorState**](https://msdn.microsoft.com/library/windows/hardware/ff553238) and [**KeRestoreExtendedProcessorState**](https://msdn.microsoft.com/library/windows/hardware/ff553182) are unnecessary and floating point operations can be used in ISRs. Use of other extended processor features such as AVX, requires saving and restoring extended state. For more information see [Using extended processor features in Windows drivers](floating-point-support-for-64-bit-drivers.md).
 
-## <a href="" id="ddk-using-floating-point-or-mmx-in-a-wdm-driver-kg"></a>Example
+## Example
 
 
 The following example shows how a WDM driver should wrap its FPU access:

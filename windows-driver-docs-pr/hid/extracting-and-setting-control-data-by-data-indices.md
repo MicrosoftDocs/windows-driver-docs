@@ -9,7 +9,7 @@ keywords: ["HID reports WDK , setting control data", "reports WDK HID , setting 
 # Extracting and Setting Control Data by Data Indices
 
 
-## <a href="" id="ddk-extracting-and-setting-control-data-by-data-indices-kg"></a>
+
 
 
 To use [data indices](data-indices.md) to extract and set control data in a HID report, an application or driver can use the following HID support routines:

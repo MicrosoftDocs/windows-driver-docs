@@ -22,7 +22,7 @@ ms.technology: windows-devices
 # Command Attributes
 
 
-## <a href="" id="ddk-command-attributes-gg"></a>
+
 
 
 When specifying a printer command, you use attributes to provide Unidrv with the following information:

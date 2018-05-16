@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using Controller Objects
 
 
-## <a href="" id="ddk-controller-objects-kg"></a>
+
 
 
 This section describes the use of controller objects and [*ControllerControl*](https://msdn.microsoft.com/library/windows/hardware/ff542049) routines. It contains the following topics:

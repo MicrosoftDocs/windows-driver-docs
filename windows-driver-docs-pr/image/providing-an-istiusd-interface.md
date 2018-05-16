@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Providing an IStiUSD Interface
 
 
-## <a href="" id="ddk-providing-an-istiusd-interface-si"></a>
+
 
 
 WIA builds on STI. In order to ensure the integration of a WIA minidriver with STI, the minidriver must implement an interface derived from the [IStiUSD interface methods](https://msdn.microsoft.com/library/windows/hardware/ff543827). This interface must be present in a WIA minidriver. The **IStiUSD** interface is used for managing devices (such as loading a driver), and is the means by which the [IStiDevice interface methods](https://msdn.microsoft.com/library/windows/hardware/ff543755) communicates with still image devices. A minidriver must fully implement an interface derived from the [**IStiUSD::Initialize**](https://msdn.microsoft.com/library/windows/hardware/ff543824) method in order to be loaded by the WIA service.

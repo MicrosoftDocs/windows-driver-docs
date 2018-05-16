@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Freeing an NDIS Port
 
 
-## <a href="" id="ddk-freeing-ndis-ports-ng"></a>
+
 
 
 Your miniport driver must free all NDIS ports that it [allocates](allocating-an-ndis-port.md) for miniport adapters in its [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function. It can free a port any time by calling [**NdisMFreePort**](https://msdn.microsoft.com/library/windows/hardware/ff563588), except for the two cases noted below.

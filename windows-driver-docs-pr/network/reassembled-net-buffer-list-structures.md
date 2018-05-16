@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Reassembled NET\_BUFFER\_LIST Structures
 
 
-## <a href="" id="ddk-reassembled-net-buffer-structures-ng"></a>
+
 
 
 An NDIS driver can create a reassembled [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure from an existing NET\_BUFFER\_LIST structure. The reassembled structure references the original data from multiple source [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structures. Drivers can use this type of structure to efficiently combine many smaller buffers into a single large buffer.

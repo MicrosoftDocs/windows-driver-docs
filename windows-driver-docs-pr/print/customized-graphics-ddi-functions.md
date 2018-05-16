@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Customized Graphics DDI Functions
 
 
-## <a href="" id="ddk-customized-graphics-ddi-functions-gg"></a>
+
 
 
 Printer minidriver developers can extend the capabilities of the core printer driver graphics DDIs by implementing plug-in methods. A rendering plug-in can hook out some graphics DDI functions to provide customized implementations of the core printer driver functions. Developers of new printer rendering plug-ins should implement COM-based methods for their plug-ins. See [COM Interfaces for Rendering Plug-Ins](com-interfaces-for-rendering-plug-ins.md) for a list of the defined COM interfaces.

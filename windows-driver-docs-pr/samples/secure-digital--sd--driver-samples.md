@@ -21,7 +21,6 @@ The driver samples in this directory provide a starting point for writing a cust
 | Sample Name                          | Solution                                                    | Description                                                                                                                                                              |
 |--------------------------------------|-------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Standard SD Host Controller Miniport | [sdhc](http://go.microsoft.com/fwlink/p/?LinkId=617952)     | Provides a functional miniport implementation for a standard SD host controller.                                                                                         |
-| SDIO Driver                          | [sdiomars](http://go.microsoft.com/fwlink/p/?LinkId=617953) | A functional Secure Digital (SD) IO driver. It is a KMDF driver for a generic mars development board that implements the SDIO protocol without additional functionality. |
 
  
 

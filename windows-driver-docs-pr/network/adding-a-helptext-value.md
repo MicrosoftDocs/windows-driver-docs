@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Adding a HelpText Value
 
 
-## <a href="" id="ddk-adding-a-helptext-value-ng"></a>
+
 
 
 The INF file for a **NetTrans**, **NetClient**, or **NetService** network component that is visible in a user interface should add a **HelpText** value (REG\_SZ) to the component's **Ndi** key.

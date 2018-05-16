@@ -58,7 +58,7 @@ Formal Definition of the Get Request Schema
 </schema>
 ```
 
-## <a href="" id="get-response-schema"></a>The Get Response Schema
+## The Get Response Schema
 
 
 This example is the response to the Get request above. For the queries that succeded, the result is the value of the particular schema. The third query failed, so the result is an error code. Note that since the second query requested a property that has children, the response provides the name and value of all of the children.
