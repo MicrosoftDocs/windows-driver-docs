@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Cancel-Safe IRP Queues
 
 
-
+## <a href="" id="ddk-cancel-safe-irp-queues-kg"></a>
 
 
 Drivers that implement their own IRP queuing should use the *cancel-safe IRP queue* framework. Cancel-safe IRP queues split IRP handling into two parts:

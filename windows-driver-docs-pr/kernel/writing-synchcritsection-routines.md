@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Writing SynchCritSection Routines
 
 
-
+## <a href="" id="ddk-writing-synchcritsection-routines-kg"></a>
 
 
 Drivers use their [*SynchCritSection*](https://msdn.microsoft.com/library/windows/hardware/ff563928) routines for either of two basic purposes:

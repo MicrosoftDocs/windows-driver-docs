@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using Lookaside Lists
 
 
-
+## <a href="" id="ddk-using-lookaside-lists-kg"></a>
 
 
 Drivers that must allocate fixed-size buffers dynamically to perform on-demand I/O operations can use the **Ex*Xxx*LookasideListEx** or **Ex*Xxx*LookasideList** support routines. After such a driver initializes its lookaside list, the operating system will hold some number of dynamically allocated buffers of the given size in the driver's lookaside list, effectively reserving a set of reusable, fixed-size buffers for the driver. The format and contents of a driver's fixed-size buffers (also known as *entries*) in its lookaside list are driver-determined.

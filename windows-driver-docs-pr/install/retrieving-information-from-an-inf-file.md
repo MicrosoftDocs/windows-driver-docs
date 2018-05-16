@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Retrieving Information from an INF File
 
 
-
+## <a href="" id="ddk-retrieving-information-from-an-inf-file-dg"></a>
 
 
 Once you have a handle to an INF file, you can retrieve information from it in a variety of ways. Functions such as [**SetupGetInfInformation**](https://msdn.microsoft.com/library/windows/desktop/aa377383), [**SetupQueryInfFileInformation**](https://msdn.microsoft.com/library/windows/desktop/aa377416), and [**SetupQueryInfVersionInformation**](https://msdn.microsoft.com/library/windows/desktop/aa377418) retrieve information about the specified INF file.

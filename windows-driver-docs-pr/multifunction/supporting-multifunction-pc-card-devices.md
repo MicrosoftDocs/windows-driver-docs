@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Supporting Multifunction PC Card Devices
 
 
-
+## <a href="" id="ddk-supporting-multifunction-pc-card-devices-dg"></a>
 
 
 The PC Card multifunction standard specifies that a multifunction device has a set of configuration registers in attribute memory for each function. These registers allow the PCMCIA bus driver to, for example, enable each function independently and define a range of I/O resources that are exclusive to each function. The standard also specifies that a multifunction device contains, in attribute memory, the address of each set of configuration registers. These addresses enable the PCMCIA bus driver to program the configuration registers.

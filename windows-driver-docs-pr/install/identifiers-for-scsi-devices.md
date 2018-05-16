@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Identifiers for SCSI Devices
 
 
-
+## <a href="" id="ddk-identifiers-for-scsi-devices-dg"></a>
 
 
 The device ID format for a small computer system interface (SCSI) device is as follows:

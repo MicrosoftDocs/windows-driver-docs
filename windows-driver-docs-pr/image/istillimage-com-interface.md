@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # IStillImage COM Interface
 
 
-
+## <a href="" id="ddk-istillimage-com-interface-si"></a>
 
 
 The **IStillImage** COM interface provides access to the [Still Image Event Monitor](overview-of-sti-components.md#ddk-still-image-event-monitor-si) so applications can register themselves as "push-model aware". Applications can use this interface to obtain information about the system's still image devices.

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Synchronization Techniques
 
 
-
+## <a href="" id="ddk-synchronization-techniques-kg"></a>
 
 
 This section provides information about the techniques you can use to synchronize driver activities in a multiprocessor-safe manner. The following topics are discussed:

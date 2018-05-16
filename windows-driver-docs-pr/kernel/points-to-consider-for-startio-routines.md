@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Points to Consider for StartIo Routines
 
 
-
+## <a href="" id="ddk-points-to-consider-for-startio-routines-kg"></a>
 
 
 Keep the following points in mind when implementing a [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) routine:

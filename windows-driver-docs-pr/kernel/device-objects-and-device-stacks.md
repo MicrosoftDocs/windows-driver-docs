@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Device Objects and Device Stacks
 
 
-
+## <a href="" id="ddk-device-objects-and-device-stacks-kg"></a>
 
 
 This section discusses device objects and their arrangement in device stacks. It contains the following sections:

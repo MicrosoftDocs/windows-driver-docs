@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # IStiDeviceControl COM Interface
 
 
-
+## <a href="" id="ddk-istidevicecontrol-com-interface-si"></a>
 
 
 The **IStiDeviceControl** COM interface provides [User-Mode Still Image Minidrivers](overview-of-sti-components.md#ddk-user-mode-still-image-minidrivers-si) with access to information stored within the [Still Image Event Monitor](overview-of-sti-components.md#ddk-still-image-event-monitor-si). It also allows minidrivers to write information into the still image error log.

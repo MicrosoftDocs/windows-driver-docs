@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # PPD-Specific Interface
 
 
-
+## <a href="" id="ddk-ppd-specific-interface-gg"></a>
 
 
 The [IPrintCoreUI2 COM Interface](iprintcoreui2-com-interface.md) supports nine methods that a user interface plug-in can call to access information in [*PPD*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-postscript-printer-description--ppd-) files. Six of these methods are supported in the [IPrintCorePS2 COM Interface](iprintcoreps2-com-interface.md). This section describes the PPD-specific behavior of these methods.

@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Best Practices for the Design of PC Cards and Card Drivers
 
 
-
+## <a href="" id="ddk-best-practices-for-the-design-of-pc-cards-and-card-drivers-kg"></a>
 
 
 Vendors and developers should observe the following cautions in order to avoid problems related with interrupt sharing:

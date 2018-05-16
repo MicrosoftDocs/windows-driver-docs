@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Installing Scanning Functionality in an MFP with a Single PDO
 
 
-
+## <a href="" id="ddk-installing-scanning-functionality-in-an-mfp-with-a-single-pdo-si"></a>
 
 
 A special procedure is required to install scanning functionality in multifunction printers having only a single physical device object (PDO). If the device identifies itself as a printer, the printer's INF file can call the WIA co-installer in order to install the scanning functionality.

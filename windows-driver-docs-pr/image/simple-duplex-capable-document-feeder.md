@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Simple Duplex-Capable Document Feeder
 
 
-
+## <a href="" id="ddk-simple-duplex-capable-document-feeder-si"></a>
 
 
 Simple duplex scanning uses the same page settings for both front and back pages. Scanners that support duplexing should set the DUPLEX flag in the [**WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT**](https://msdn.microsoft.com/library/windows/hardware/ff551384) property.

@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Comments and Ignored Blocks
 
 
-
+## <a href="" id="ddk-comments-and-ignored-blocks-gg"></a>
 
 
 GPD files can contain comments. The format for a comment is as follows:

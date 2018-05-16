@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Differences in Initialization
 
 
-
+## <a href="" id="ddk-differences-in-initialization-ng"></a>
 
 
 A call manager is an NDIS protocol; therefore, it follows the initialization sequence for a connection-oriented protocol, but with one additional step. In its [*ProtocolBindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570220) handler, immediately after completing the initialization steps for a connection-oriented protocol, a call manager must register an address family by calling [**NdisCmRegisterAddressFamilyEx**](https://msdn.microsoft.com/library/windows/hardware/ff561685). The call to **NdisCmRegisterAddressFamilyEx**, in which a call manager registers its call manager functions, identifies the protocol as a call manager. The call manager must register an address family for each NIC to which it binds itself.

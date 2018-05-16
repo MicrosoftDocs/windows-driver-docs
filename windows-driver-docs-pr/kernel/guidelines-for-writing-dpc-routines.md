@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Guidelines for Writing DPC Routines
 
 
-
+## <a href="" id="ddk-guidelines-for-writing-dpc-routines-kg"></a>
 
 
 Keep the following points in mind when writing a [*DpcForIsr*](https://msdn.microsoft.com/library/windows/hardware/ff544079) or [*CustomDpc*](https://msdn.microsoft.com/library/windows/hardware/ff542972) routine:

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Handling an IRP\_MN\_QUERY\_STOP\_DEVICE Request (Windows 2000 and later)
 
 
-
+## <a href="" id="ddk-handling-an-irp-mn-query-stop-device-request-windows-2000-and-late"></a>
 
 
 An [**IRP\_MN\_QUERY\_STOP\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551725) request is handled first by the top driver in the device stack and then by each next lower driver. A driver handles stop IRPs in its [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine.

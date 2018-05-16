@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Setting the RSS CPU Configuration
 
 
-
+## <a href="" id="ddk-setting-the-rss-cpu-configuration-ng"></a>
 
 
 This section provides information about setting the RSS CPU configuration in Microsoft Windows Server 2003 with the Scalable Networking Pack and in Windows Server 2008. Information for Windows Server 2008 also applies to later versions.

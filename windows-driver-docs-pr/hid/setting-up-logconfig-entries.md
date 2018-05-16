@@ -9,7 +9,7 @@ keywords: ["INF files WDK joysticks , LogConfig entries", "LogConfig entries WDK
 # Setting Up LogConfig Entries
 
 
-
+## <a href="" id="ddk-setting-up-logconfig-entries-di"></a>
 
 
 Devices requiring system resources such as input/output (I/O) ports use a LogConfig entry in the install section to specify which configurations they can use. Some devices do not use resources of their own. Instead, they use another driver, such as the serial port driver, to communicate with the device. The DirectX 3.0 VJoyD differs from previous versions in its handling of analog game port I/O port requirements. Older versions worked only if at least one device had been configured with either one or two I/O port allocations with ports in the standard game port range 0x200 to 0x20f. (In addition, the second I/O range had to be a single port.) The newer VJoyD works if no game ports are configured to allow systems that have no game ports to use devices operated through minidrivers. (The second I/O range can now be more than one port.)

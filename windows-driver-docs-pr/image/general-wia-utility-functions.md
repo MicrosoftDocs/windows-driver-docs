@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # General WIA Utility Functions
 
 
-
+## <a href="" id="ddk-general-wia-utility-functions-si"></a>
 
 
 You can use the following functions to retrieve the driver item context, retrieve information from the system registry, and copy a string.

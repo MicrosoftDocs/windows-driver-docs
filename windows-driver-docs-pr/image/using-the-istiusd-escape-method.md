@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Using the IStiUSD Escape Method
 
 
-
+## <a href="" id="ddk-using-the-istiusd-escape-method-si"></a>
 
 
 The [**IStiUSD::Escape**](https://msdn.microsoft.com/library/windows/hardware/ff543815) method is called to pass information directly to the hardware. This method is supported only on Windows XP and later operating systems.

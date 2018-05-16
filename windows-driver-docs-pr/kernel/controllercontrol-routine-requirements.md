@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # ControllerControl Routine Requirements
 
 
-
+## <a href="" id="ddk-controllercontrol-routine-requirements-kg"></a>
 
 
 As its name implies, a [*ControllerControl*](https://msdn.microsoft.com/library/windows/hardware/ff542049) routine is associated with a controller object. When the *ControllerControl* routine executes, the hardware represented by the controller object is free and the controller extension generally is not being accessed by another driver routine unless the controller extension contains context that is shared with the driver's ISR.

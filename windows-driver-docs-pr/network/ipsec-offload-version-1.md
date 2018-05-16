@@ -16,7 +16,7 @@ ms.technology: windows-devices
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-
+## <a href="" id="ddk-ipsec-offload-version-1-ng"></a>
 
 
 This section describes the version 1 interface for offloading Internet protocol security (IPsec) tasks in NDIS 6.0 and later.

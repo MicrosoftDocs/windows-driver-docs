@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Levels of Support for PnP
 
 
-
+## <a href="" id="ddk-levels-of-support-for-pnp-kg"></a>
 
 
 The extent to which a device supports PnP depends on the PnP support in both the device hardware and the device drivers (see the following table).

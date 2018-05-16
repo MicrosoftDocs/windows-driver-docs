@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Access Attribute Memory of a PCMCIA Device
 
 
-
+## <a href="" id="ddk-access-attribute-memory-of-a-pcmcia-device-kg"></a>
 
 
 This section describes how drivers for PCMCIA devices in Microsoft Windows 2000 and later operating systems can access the attribute memory of a PCMCIA device:

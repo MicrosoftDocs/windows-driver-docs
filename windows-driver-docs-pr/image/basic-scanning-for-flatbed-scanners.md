@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Basic Scanning for Flatbed Scanners
 
 
-
+## <a href="" id="ddk-basic-scanning-for-flatbed-scanners-si"></a>
 
 
 A WIA application enumerates the root item and top-level child item in the scanner item tree to determine the supported features of the scanner. The application then uses this child item as the scanning source. For example, flatbed scanner items are used for scanning from the flatbed, while feeder items are used for scanning from the document feeder, and so on.

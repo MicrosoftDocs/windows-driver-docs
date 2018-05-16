@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Processing I/O Requests
 
 
-
+## <a href="" id="ddk-processing-i-o-requests-df"></a>
 
 
 When a driver [receives](receiving-i-o-requests.md) an I/O request, it can:

@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Device Descriptor
 
 
-
+## <a href="" id="ddk-device-descriptor-ng"></a>
 
 
 <table>

@@ -22,7 +22,7 @@ ms.technology: windows-devices
 # Sharing a Serial Device Interrupt
 
 
-
+## <a href="" id="ddk-sharing-a-serial-device-interrupt-kg"></a>
 
 
 Legacy COM ports on the same multiport board share a single interrupt. COM ports on a multiport board are identified by an index or a mask that associates a port with its corresponding device object.

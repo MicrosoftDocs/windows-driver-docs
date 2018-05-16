@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Item Flags for Feeder Scanners
 
 
-
+## <a href="" id="ddk-wia-item-flags-for-feeder-scanners-si"></a>
 
 
 This topic lists the required and optional WIA item flags for a scanner feeder item and scanner feeder child items (front and back page items). For a complete list of the WIA item flags and their definitions, see [**WIA\_IPA\_ITEM\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff551585).

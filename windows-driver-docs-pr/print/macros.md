@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Macros
 
 
-
+## <a href="" id="ddk-macros-gg"></a>
 
 
 The GPD language supports two types of macros:

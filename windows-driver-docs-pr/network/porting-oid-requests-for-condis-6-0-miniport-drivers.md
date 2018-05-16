@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Porting OID Requests for CoNDIS 6.0 Miniport Drivers
 
 
-
+## <a href="" id="ddk-porting-oid-requests-for-condis-6-0-miniport-drivers-ng"></a>
 
 
 In CoNDIS 6.0, the [**MiniportCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff559362) function replaces the NDIS 5.x [**MiniportCoRequest**](https://msdn.microsoft.com/library/windows/hardware/ff549413) function, and the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure replaces the [**NDIS\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff557179) structure.

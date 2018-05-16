@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Detecting an Idle Device
 
 
-
+## <a href="" id="ddk-detecting-an-idle-device-kg"></a>
 
 
 The power policy owner for each device is responsible for determining when the device is idle and can be put to sleep to conserve power. The policy owner has two options for detecting an idle device:

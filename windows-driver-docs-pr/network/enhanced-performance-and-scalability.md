@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Enhanced Performance and Scalability
 
 
-
+## <a href="" id="ddk-enhanced-performance-and-scalability-ng"></a>
 
 
 NDIS 6.0 introduced the following features to improve performance and scalability:

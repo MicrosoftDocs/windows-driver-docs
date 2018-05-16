@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Introduction to Rendering Plug-Ins
 
 
-
+## <a href="" id="ddk-introduction-to-rendering-plug-ins-gg"></a>
 
 
 When you add support for a new printer device to either the [Microsoft Universal printer driver](microsoft-universal-printer-driver.md) (Unidrv) or the [Microsoft PostScript printer driver](microsoft-postscript-printer-driver.md) (Pscript), you can implement COM interface methods to modify the data that the driver sends to the print spooler.

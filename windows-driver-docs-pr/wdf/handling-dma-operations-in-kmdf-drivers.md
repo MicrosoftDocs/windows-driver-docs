@@ -25,7 +25,7 @@ ms.technology: windows-devices
 
 This section describes how a Kernel-Mode Driver Framework (KMDF) driver converts I/O requests into direct memory access (DMA) operations. KMDF supports bus-master and system-mode DMA.
 
-
+## <a href="" id="ddk-handling-dma-operations-in-framework-based-drivers-df"></a>
 
 
 ## In this section

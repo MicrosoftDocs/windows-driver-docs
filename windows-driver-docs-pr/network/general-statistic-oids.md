@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # General Statistic OIDs
 
 
-
+## <a href="" id="ddk-general-statistic-oids-ng"></a>
 
 
 The following table lists the general statistic OIDs for Remote NDIS Ethernet devices.

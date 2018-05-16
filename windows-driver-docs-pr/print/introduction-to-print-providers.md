@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Introduction to Print Providers
 
 
-
+## <a href="" id="ddk-introduction-to-print-providers-gg"></a>
 
 
 **Warning**  

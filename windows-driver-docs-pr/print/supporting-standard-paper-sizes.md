@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Supporting Standard Paper Sizes
 
 
-
+## <a href="" id="ddk-supporting-standard-paper-sizes-gg"></a>
 
 
 Standard paper sizes are represented by the [standard options](standard-options.md) for the PaperSize feature.

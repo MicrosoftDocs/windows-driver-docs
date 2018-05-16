@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # PTP Required Commands
 
 
-
+## <a href="" id="ddk-ptp-required-commands-si"></a>
 
 
 PTP drivers must support commands marked as mandatory in the *Conformance Section* (chapter 14) of the PIMA15740 specification. The only exception is that the **GetNumObjects** command is not used. In other words, if a device is compliant with the PIMA15740 specification, it will work with Microsoft Windows Me, Windows XP, and later.

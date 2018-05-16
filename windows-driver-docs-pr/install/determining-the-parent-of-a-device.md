@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Determining the Parent of a Device
 
 
-
+## <a href="" id="ddk-determining-the-parent-of-a-device-dg"></a>
 
 
 Sometimes it is necessary to access the parent of a device. For example, the operation of some types of hardware devices depends on a fixed relationship between a specific parent and set of child devices. To uninstall such a hardware device, you must uninstall the parent in addition to all the child devices. To uninstall the parent, you must obtain a [**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure for the parent. A Universal Serial Bus (USB) composite device, such as, a multifunction printer, is such a device. It is represented in the system by a parent composite device and one or more child interface devices (see [USB Driver Stack Architecture](https://msdn.microsoft.com/library/windows/hardware/hh406256)). To uninstall a multifunction printer, you must uninstall its parent composite device in addition to all its child interface devices.

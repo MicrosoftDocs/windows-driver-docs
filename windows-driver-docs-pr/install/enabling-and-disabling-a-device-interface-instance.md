@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Enabling and Disabling a Device Interface Instance
 
 
-
+## <a href="" id="ddk-enabling-and-disabling-a-device-interface-instance-dg"></a>
 
 
 After successfully starting the device, the driver that registered the interface calls [**IoSetDeviceInterfaceState**](https://msdn.microsoft.com/library/windows/hardware/ff549700) to enable an interface instance. The driver passes the symbolic link name returned by [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506) together with the Boolean value **TRUE** to enable the interface instance.

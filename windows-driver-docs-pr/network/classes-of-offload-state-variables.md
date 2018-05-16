@@ -20,7 +20,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-
+## <a href="" id="ddk-classes-of-offload-state-variables-ng"></a>
 
 
 There are three classes of offload state variables:

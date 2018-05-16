@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Object Handle and Event Order
 
 
-
+## <a href="" id="ddk-object-handle-and-event-order-si"></a>
 
 
 When the Microsoft PTP WIA minidriver issues the **GetObjectHandles** command (see the PIMA 15740 standard), the camera must return the object handles in a specific order for the WIA Minidriver to build the WIA item tree correctly.

@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Introduction to GPD Files
 
 
-
+## <a href="" id="ddk-introduction-to-gpd-files-gg"></a>
 
 
 GPD files are used for creating [Unidrv minidrivers](unidrv-minidrivers.md). A Unidrv minidriver consists of a text-based generic printer description (GPD), which can be contained in one or more GPD files.

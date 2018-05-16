@@ -16,7 +16,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-
+## <a href="" id="ddk-receive-algorithm-ng"></a>
 
 
 The following three flowcharts illustrate the algorithm that the offload target must use to process each of the following events:

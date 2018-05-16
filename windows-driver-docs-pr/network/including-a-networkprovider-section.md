@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Including a NetworkProvider Section
 
 
-
+## <a href="" id="ddk-including-a-networkprovider-section-ng"></a>
 
 
 A **NetworkProvider** section specifies either a substitute device name for a **NetClient** component or a short name for use with the NetWare **net view** command, or both.

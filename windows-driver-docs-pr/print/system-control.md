@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # System Control
 
 
-
+## <a href="" id="ddk-system-control-gg"></a>
 
 
 System-controlled color management is the default color management type. It is also the recommended type for printers. If color management is enabled, GDI corrects the colors of all DIBs, pens, and brushes before sending them to the driver's printer graphics DLL, based on the input and output color spaces and installed ICC profiles.

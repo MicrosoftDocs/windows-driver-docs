@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Summary of Kernel-Mode Safe String Functions
 
 
-
+## <a href="" id="ddk-summary-of-kernel-mode-safe-string-functions-kg"></a>
 
 
 The following table summarizes the safe string functions that are available to kernel-mode drivers, and it indicates the C/C++ language runtime library functions that they replace. If a function's name contains **Cb**, the function treats strings as byte-counted. If a function's name contains **Cch**, the function treats strings as character-counted.

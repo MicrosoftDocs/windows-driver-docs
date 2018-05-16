@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA-TWAIN Compatibility
 
 
-
+## <a href="" id="ddk-wia-twain-compatibility-si"></a>
 
 
 If a device can have two or more drivers, test these drivers thoroughly for compatibility with each other. For example, if one driver leaves the device in an unusable state (such as the driver not sending the close session message in some protocol), the other driver might fail when it tries to communicate with the device. This situation happens often with serial devices.

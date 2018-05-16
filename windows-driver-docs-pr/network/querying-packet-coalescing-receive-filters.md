@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Querying Packet Coalescing Receive Filters
 
 
-
+## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
 
 
 Overlying drivers and applications can query packet coalescing receive filters that have been downloaded to a miniport driver by doing the following:

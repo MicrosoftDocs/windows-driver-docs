@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Failure to Validate Variable-Length Buffers
 
 
-
+## <a href="" id="ddk-failure-to-validate-variable-length-buffers-kg"></a>
 
 
 Drivers often accept input buffers with fixed headers and trailing variable length data, as in the following example:

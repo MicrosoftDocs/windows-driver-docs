@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Connection-Oriented NDIS
 
 
-
+## <a href="" id="ddk-connection-oriented-ndis-ng"></a>
 
 
 This section describes connection-oriented NDIS (CoNDIS). Most CoNDIS 6.0 and later driver operations have not changed from their CoNDIS 5.*x* versions. For more information about the differences between CoNDIS 5.x and CoNDIS 6.0, see [Porting CoNDIS 5.x Drivers to CoNDIS 6.0](porting-a-condis-5-x-driver-to-condis-6-0.md).

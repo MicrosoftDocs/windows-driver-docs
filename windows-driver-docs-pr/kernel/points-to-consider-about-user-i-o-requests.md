@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Points to Consider about User I/O Requests
 
 
-
+## <a href="" id="ddk-points-to-consider-about-user-i-o-requests-kg"></a>
 
 
 Keep the following points in mind when designing a kernel-mode driver:

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # DispatchDeviceControl and DispatchInternalDeviceControl Routines
 
 
-
+## <a href="" id="ddk-dispatchdevicecontrol-and-dispatchinternaldevicecontrol-routines-k"></a>
 
 
 A driver's [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287) and [*DispatchInternalDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543326) routines handle IRPs with I/O function codes of [**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744) and [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550766), respectively.

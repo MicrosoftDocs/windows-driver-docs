@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Installing and Configuring Still Image Components
 
 
-
+## <a href="" id="ddk-installing-and-configuring-still-image-components-si"></a>
 
 
 This section provides the following topics:

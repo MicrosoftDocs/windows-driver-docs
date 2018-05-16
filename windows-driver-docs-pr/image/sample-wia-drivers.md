@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Sample WIA Drivers
 
 
-
+## <a href="" id="ddk-sample-wia-drivers-si"></a>
 
 
 This section covers the WIA samples in the Windows Driver Development Kit (DDK), the Windows Driver Kit (WDK), and online. Most of these WIA samples are for Windows XP and later operating systems and are not compatible with Windows Me. Samples which are Windows Me compatible will be so noted. While WIA drivers for Windows XP may not work properly on Windows Me, WIA drivers written for Windows Me should work on Windows XP.

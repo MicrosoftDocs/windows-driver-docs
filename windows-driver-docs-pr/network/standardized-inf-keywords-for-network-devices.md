@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Standardized INF Keywords for Network Devices
 
 
-
+## <a href="" id="ddk-standardized-installation-keywords-for-ethernet-devices-ng"></a>
 
 
 This section provides information about standardized keywords that appear in the registry and are specified in INF files. NDIS 6.0 and later versions of NDIS support standardized keywords for miniport drivers in network devices.

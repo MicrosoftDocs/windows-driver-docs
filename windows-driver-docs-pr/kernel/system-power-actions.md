@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # System Power Actions
 
 
-
+## <a href="" id="ddk-system-power-actions-kg"></a>
 
 
 When the power manager sends an IRP to set or query the system power state, it specifies a system power state along with an additional parameter that gives information about the power state change. This parameter, passed at **Irp-&gt;Parameters.Power.ShutdownType**, is an enumerator of the POWER\_ACTION type. The enumerator characterizes the system power state request, as shown in the following table.

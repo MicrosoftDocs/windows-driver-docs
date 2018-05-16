@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Handling Unsupported or Unrecognized Power IRPs
 
 
-
+## <a href="" id="ddk-handling-unsupported-or-unrecognized-power-irps-kg"></a>
 
 
 If a driver does not support a particular power IRP, it must nevertheless pass the IRP down the device stack to the next-lower driver. A driver further down the stack might be prepared to handle the IRP and must have the opportunity to do so.

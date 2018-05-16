@@ -170,7 +170,7 @@ The default value is **CanUseFsContext**.
 
 UMDF versions 1.11 and later support the **UmdfFsContextUsePolicy** directive.
 
-
+## <a href="" id="umdf-service-install"></a>
 
 
 The following code example shows the required directives in a *UMDF-service-install* section.

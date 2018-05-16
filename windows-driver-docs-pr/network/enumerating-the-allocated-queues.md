@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Enumerating the Allocated Queues
 
 
-
+## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
 
 
 To get a list of all the receive queues that are allocated on a network adapter, an overlying driver issues an [OID\_RECEIVE\_FILTER\_ENUM\_QUEUES](https://msdn.microsoft.com/library/windows/hardware/ff569788) query OID request. After a successful return from the OID query request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to an [**NDIS\_RECEIVE\_QUEUE\_INFO\_ARRAY**](https://msdn.microsoft.com/library/windows/hardware/ff567205) structure that is followed by an [**NDIS\_RECEIVE\_QUEUE\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567204) structure for each queue.

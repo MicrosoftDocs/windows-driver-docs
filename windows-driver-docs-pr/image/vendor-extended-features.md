@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Vendor-Extended Features
 
 
-
+## <a href="" id="ddk-vendor-extended-features-si"></a>
 
 
 This section discusses vendor-extended features a PTP device can support the following and how to expose these extensions:

@@ -18,7 +18,7 @@ This section provides information about writing NDIS virtual machine queue (VMQ)
 
  
 
-
+## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
 
 
 A miniport driver that supports VMQ manages NICs that provide the VMQ hardware support. Such a NIC provides hardware services to filter incoming network data, and assign it to VM receive queues.

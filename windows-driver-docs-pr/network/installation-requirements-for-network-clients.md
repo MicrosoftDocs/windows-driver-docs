@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Installation Requirements for Network Clients
 
 
-
+## <a href="" id="ddk-installation-requirements-for-network-clients-ng"></a>
 
 
 This topic summarizes the installation requirements for network clients.

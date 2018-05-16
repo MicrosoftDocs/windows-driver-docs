@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Language Monitors
 
 
-
+## <a href="" id="ddk-language-monitors-gg"></a>
 
 
 Language monitors are user-mode DLLs that serve two purposes:

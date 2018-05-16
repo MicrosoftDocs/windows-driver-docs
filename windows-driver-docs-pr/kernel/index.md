@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Kernel-Mode Driver Architecture Design Guide
 
 
-
+## <a href="" id="ddk-km-design-guide-kg"></a>
 
 
 This section includes general concepts to help you understand kernel-mode programming and describes specific techniques of kernel programming. This section is divided into four parts:

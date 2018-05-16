@@ -27,7 +27,7 @@ The OID\_WAN\_CO\_GET\_INFO OID requests the miniport driver to return informati
   
 ```
 
-
+## <a href="" id="ddk-oid-wan-co-get-info-nr"></a>
 
 
 The members of this structure contain the following information:

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Avoiding NDIS Power Management Problems
 
 
-
+## <a href="" id="ddk-avoiding-ndis-power-management-problems-ng"></a>
 
 
 The following rules will help you avoid power-management problems with your network adapter:

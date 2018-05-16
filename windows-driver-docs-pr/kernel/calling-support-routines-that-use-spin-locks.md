@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Calling Support Routines That Use Spin Locks
 
 
-
+## <a href="" id="ddk-calling-support-routines-that-use-spin-locks-kg"></a>
 
 
 Calling [**KeAcquireSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff551917) or [**KeAcquireInStackQueuedSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff551899) sets the IRQL on the current processor to DISPATCH\_LEVEL until a corresponding call to [**KeReleaseSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff553145) or [**KeReleaseInStackQueuedSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff553130) restores the previous IRQL. Consequently, drivers must be executing at IRQL &lt;= DISPATCH\_LEVEL when they call **KeAcquireSpinLock** or **KeAcquireInStackQueuedSpinLock**.

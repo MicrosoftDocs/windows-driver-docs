@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Setting the Number of RSS Processors
 
 
-
+## <a href="" id="ddk-setting-the-number-of-rss-processors-ng"></a>
 
 
 Administrators should set the number of receive side scaling (RSS) processors to help the overall performance of a computer. Concurrent deferred procedure calls (DPCs) that are running on multiple CPUs enable distributed receive processing and remove the CPU bottleneck (for example, in high-speed NICs). However, multiple DPCs do create additional overhead. The interrupt and DPC processing overhead increases as more processors are used for RSS. Therefore, when RSS is active, the total CPU utilization across all CPUs increases. An administrator should select the number of CPUs that are used for RSS to avoid a situation where using RSS leaves less processing power for applications to use and does not improve network throughput.

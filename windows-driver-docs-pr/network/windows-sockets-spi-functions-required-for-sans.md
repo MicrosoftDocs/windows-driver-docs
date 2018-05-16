@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Windows Sockets SPI Functions Required for SANs
 
 
-
+## <a href="" id="ddk-windows-sockets-spi-functions-required-for-sans-ng"></a>
 
 
 This section describes the functions of the Windows Sockets SPI that a SAN service provider DLL must supply. These functions are defined in Ws2spi.h and are fully documented in the [Windows Sockets Direct Reference](https://msdn.microsoft.com/library/windows/hardware/ff565857) section:

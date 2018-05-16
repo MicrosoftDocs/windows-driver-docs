@@ -16,7 +16,7 @@ ms.technology: windows-devices
 
 Kernel-mode drivers should manage their hardware devices so that they are turned on and available for use when needed, but operate in a low-power mode and generate no unnecessary system activity when they are not being used. The [*power manager*](power-manager.md) is the Windows kernel component that is responsible for coordinating the power states of the devices in the hardware platform.
 
-
+## <a href="" id="ddk-power-management-kg"></a>
 
 
 The power manager instructs drivers when to prepare their devices to enter a low-power mode, and drivers receive notification from the power manager when their devices are turned back on. Drivers are responsible for reporting their power capabilities to the power manager. Drivers have the option of detecting when their devices are idle (and can be switched to a low-power mode) or relying on the power manager for such detection.

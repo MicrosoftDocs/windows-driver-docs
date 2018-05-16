@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # AV/C Overview
 
 
-
+## <a href="" id="ddk-av-c-subunit-drivers-ksg"></a>
 
 
 This section describes the Microsoft-supplied *Avc.sys* function driver that provides support for the IEEE 1394 Audio/Video Control (AV/C) protocol. This section also provides guidelines to develop AV/C subunit drivers for your AV/C-compliant device. Details of the AV/C protocol are available on the [1394 Trade Association's](http://go.microsoft.com/fwlink/p/?linkid=518448) website. Note that vendors might use the Microsoft-supplied drivers, *Msdv.sys* or *Mstape.sys*, to support their tape subunits, if applicable. These two class drivers make writing drivers for tape subunits unnecessary.

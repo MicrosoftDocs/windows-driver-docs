@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Top-Level Collections Opened by Windows for System Use
 
 
-
+## <a href="" id="ddk-top-level-collections-opened-by-windows-for-system-use-kg"></a>
 
 
 Windows opens the following [top-level collections](top-level-collections.md) for system use:

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Why Thunking Is Necessary
 
 
-
+## <a href="" id="ddk-why-thunking-is-necessary-kg"></a>
 
 
 Kernel-mode drivers must validate the size of any I/O buffer passed in from a user-mode application. If a 32-bit application passes a buffer containing pointer-precision data types to a 64-bit driver, and no thunking takes place, the driver will expect the buffer to be larger than it actually is. This is because pointer precision is 32 bits on 32-bit Microsoft Windows and 64 bits on 64-bit Windows. For example, consider the following structure definition:

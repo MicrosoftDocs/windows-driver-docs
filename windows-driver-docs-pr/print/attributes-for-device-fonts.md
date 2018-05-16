@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Attributes for Device Fonts
 
 
-
+## <a href="" id="ddk-attributes-for-device-fonts-gg"></a>
 
 
 The following table lists attributes describing the printer's support for device fonts.

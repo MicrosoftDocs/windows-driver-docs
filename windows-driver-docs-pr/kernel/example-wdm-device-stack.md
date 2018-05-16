@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Example WDM Device Stack
 
 
-
+## <a href="" id="ddk-example-wdm-device-stack-kg"></a>
 
 
 This section describes the device objects created by a possible set of drivers for USB hardware to illustrate WDM device objects and how they are layered.

@@ -25,7 +25,7 @@ ms.technology: windows-devices
 #  DirectX 5.0 Interface
 
 
-
+## <a href="" id="ddk-the-directx-5-0-interface-di"></a>
 
 
 VJoyD and any of its previous versions cannot recognize the DirectX 5.0, and later interfaces. So, it is imperative that a minidriver checks the version of VJoyD before it attempts to register. VJoyD does not support the standard version message. So, you must get the device descriptor block (DDB) for VJoyD to implement this manually, and then check the version marked in the DDB. For more information on how this can be implemented, see the sample driver for an example. Notice that the version marked in the DDB is not the same as the version marked in the version resource.

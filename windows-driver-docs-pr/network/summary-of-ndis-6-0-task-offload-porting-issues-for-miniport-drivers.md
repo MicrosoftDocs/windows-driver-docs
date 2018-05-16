@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Summary of NDIS 6.0 Task Offload Porting Issues for Miniport Drivers
 
 
-
+## <a href="" id="ddk-summary-of-ndis-6-0-task-offload-porting-issues-for-miniport-drive"></a>
 
 
 The following list summarizes the issues that you must consider when you port offload-capable miniport drivers to NDIS 6.0:

@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Looping Back NDIS Packets
 
 
-
+## <a href="" id="ddk-looping-back-ndis-packets-nr"></a>
 
 
 If the NDIS\_NBL\_FLAGS\_IS\_LOOPBACK\_PACKET flag in the **NblFlags** member of the [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure is set, the packet is a loopback packet. Protocol drivers and filter drivers can check this flag to determine if a packet is a loopback packet.

@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Dynamic Binding in an Intermediate Driver
 
 
-
+## <a href="" id="ddk-dynamic-binding-in-an-intermediate-driver-ng"></a>
 
 
 An intermediate driver must support dynamic binding to underlying miniport adapters by providing both a [*ProtocolBindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570220) and a [*ProtocolUnbindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570278) function.

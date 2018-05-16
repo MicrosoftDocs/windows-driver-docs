@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # RSS with Message Signaled Interrupts
 
 
-
+## <a href="" id="ddk-rss-with-message-signaled-interrupts-ng"></a>
 
 
 Miniport drivers can support message signaled interrupts (MSIs) to improve RSS performance. MSIs enable the NIC to request an interrupt on the CPU that will process the received data. For more information about NDIS support for MSI, see [NDIS MSI-X](ndis-msi-x.md).

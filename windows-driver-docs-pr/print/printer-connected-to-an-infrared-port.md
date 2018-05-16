@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Printer Connected to an Infrared Port
 
 
-
+## <a href="" id="ddk-printer-connected-to-an-infrared-port-gg"></a>
 
 
 Printers connected over an infrared (IR) port do not support Plug and Play using the 1284 device string. For a computer with an IR port, a service constantly polls for devices. When an IR Plug and Play printer is brought within range, a PDO is created under Enum\\Root\\ with a [*device ID*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-id) of the form HWP*nnnn*. The [*hardware ID*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hardware-id) of the [*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode) has a single entry of the form HWP*nnnn*.

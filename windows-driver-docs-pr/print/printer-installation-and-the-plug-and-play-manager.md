@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Printer Installation and the Plug and Play Manager
 
 
-
+## <a href="" id="ddk-printer-installation-and-the-plug-and-play-manager-gg"></a>
 
 
 The Plug and Play manager handles all Plug and Play events for the machine, and is generic to all devices. The Plug and Play manager is documented in [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125). [Introduction to Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff548102) gives an overview of Plug and Play installation, and of how the various kernel-mode and user-mode components interact.

@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Accessing an Operation Region
 
 
-
+## <a href="" id="ddk-accessing-an-operation-region-kg"></a>
 
 
 When a function driver registers an operation region handler, the driver must specify the access type ACPI\_OPREGION\_ACCESS\_AS\_COOKED. Cooked access supports transfer of information from an ACPI device to the device's function driver, but not from the function driver to the device.

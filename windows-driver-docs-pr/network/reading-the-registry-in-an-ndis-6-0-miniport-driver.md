@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Reading the Registry in an NDIS 6.0 Miniport Driver
 
 
-
+## <a href="" id="ddk-reading-the-registry-in-ndis-6-0-ng"></a>
 
 
 The [**NdisOpenConfigurationEx**](https://msdn.microsoft.com/library/windows/hardware/ff563717) function replaces the [**NdisOpenConfiguration**](https://msdn.microsoft.com/library/windows/hardware/ff553676) function. **NdisOpenConfigurationEx** receives as parameters an NDIS handle and a pointer to a configuration handle.

@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Overview of NDIS Support for Header Versions
 
 
-
+## <a href="" id="ddk-overview-of-ndis-support-for-header-versions-ng"></a>
 
 
 Many NDIS structures include structure version information. NDIS or NDIS drivers initialize the **Header** member in such structures as required for each structure. NDIS drivers should check the version information, if any, in each structure before they access the structure members.

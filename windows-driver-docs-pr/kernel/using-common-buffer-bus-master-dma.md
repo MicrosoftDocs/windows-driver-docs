@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using Common-Buffer Bus-Master DMA
 
 
-
+## <a href="" id="ddk-using-common-buffer-bus-master-dma-kg"></a>
 
 
 As described in [Using Bus-Master DMA](using-bus-master-dma.md), some drivers for bus-master DMA devices use common-buffer DMA exclusively, and some use common-buffer DMA in combination with packet-based DMA.

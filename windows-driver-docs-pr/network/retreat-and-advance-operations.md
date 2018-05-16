@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Retreat and Advance Operations
 
 
-
+## <a href="" id="ddk-retreat-and-advance-operations-ng"></a>
 
 
 NDIS provides retreat and advance functions to manipulate [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structures. [Retreat operations](retreat-operations.md) make more *used data space* available to the current driver. [Advance operations](advance-operations.md) release *used data space*.

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Raster Data Emission Commands
 
 
-
+## <a href="" id="ddk-raster-data-emission-commands-gg"></a>
 
 
 The following table lists the raster data emission commands. All commands are specified using the [command entry format](command-entry-format.md).

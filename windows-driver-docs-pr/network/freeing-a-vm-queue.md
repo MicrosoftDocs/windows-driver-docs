@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Freeing a VM Queue
 
 
-
+## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
 
 
 To free a receive queue, an overlying driver issues an [OID\_RECEIVE\_FILTER\_FREE\_QUEUE](https://msdn.microsoft.com/library/windows/hardware/ff569789) set OID request. The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to an [**NDIS\_RECEIVE\_QUEUE\_FREE\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567201) structure with a queue identifier of type **NDIS\_RECEIVE\_QUEUE\_ID**.

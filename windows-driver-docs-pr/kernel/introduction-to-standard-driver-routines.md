@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Introduction to Standard Driver Routines
 
 
-
+## <a href="" id="ddk-introduction-to-standard-driver-routines-kg"></a>
 
 
 Each kernel-mode driver is constructed around a set of system-defined, [standard driver routines](https://msdn.microsoft.com/library/windows/hardware/ff563842). Kernel-mode drivers process *I/O request packets* (IRPs) within these standard routines by calling system-supplied driver support routines.

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Specifying Device Types
 
 
-
+## <a href="" id="ddk-specifying-device-types-kg"></a>
 
 
 Each device object has a *device type*, which is stored in the **DeviceType** member of its [**DEVICE\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff543147) structure. The device type represents the type of underlying hardware for the driver.

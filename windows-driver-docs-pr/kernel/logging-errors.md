@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Logging Errors
 
 
-
+## <a href="" id="ddk-logging-errors-kg"></a>
 
 
 Drivers, like most Microsoft Windows system components, can log errors to the system event log. The errors are visible in the Event Viewer.

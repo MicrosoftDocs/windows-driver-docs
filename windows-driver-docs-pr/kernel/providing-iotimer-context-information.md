@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Providing IoTimer Context Information
 
 
-
+## <a href="" id="ddk-providing-iotimer-context-information-kg"></a>
 
 
 The *Context* pointer passed to [**IoInitializeTimer**](https://msdn.microsoft.com/library/windows/hardware/ff549344) identifies a context area where other driver routines, and the [*IoTimer*](https://msdn.microsoft.com/library/windows/hardware/ff550381) routine itself, can maintain state about timed operations. The I/O manager passes the *Context* pointer whenever it calls the *IoTimer* routine.

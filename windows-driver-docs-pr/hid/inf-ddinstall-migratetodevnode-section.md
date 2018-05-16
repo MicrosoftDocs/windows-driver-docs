@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # INF DDInstall.MigrateToDevNode Section
 
 
-
+## <a href="" id="ddk-inf-ddinstall-migratetodevnode-section-kg"></a>
 
 
 **\[***install-section-name***.MigrateToDevNode\]** |

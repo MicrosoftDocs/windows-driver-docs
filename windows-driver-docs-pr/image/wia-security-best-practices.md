@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Security Best Practices
 
 
-
+## <a href="" id="ddk-wia-security-best-practices-si"></a>
 
 
 This section discusses WIA best security practices in the following areas:

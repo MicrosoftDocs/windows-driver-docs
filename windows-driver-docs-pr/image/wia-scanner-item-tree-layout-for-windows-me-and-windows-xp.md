@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Scanner Item Tree Layout for Windows Me and Windows XP
 
 
-
+## <a href="" id="ddk-wia-scanner-item-tree-layout-for-windows-me-and-windows-xp-si"></a>
 
 
 A WIA scanner item tree for Windows Me and Windows XP consists of a root item and a single child item. The following diagram illustrates the WIA scanner item tree.

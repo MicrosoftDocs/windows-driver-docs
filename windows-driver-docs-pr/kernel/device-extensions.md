@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Device Extensions
 
 
-
+## <a href="" id="ddk-device-extensions-kg"></a>
 
 
 For most intermediate and lowest-level drivers, the device extension is the most important data structure associated with a device object. Its internal structure is driver-defined, and it is typically used to:

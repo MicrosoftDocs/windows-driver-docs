@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # System Working State S0
 
 
-
+## <a href="" id="ddk-system-working-state-s0-kg"></a>
 
 
 System power state S0, the system working state, has the following characteristics:

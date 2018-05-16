@@ -15,7 +15,7 @@ keywords:
 # OID\_PNP\_WAKE\_UP\_ERROR
 
 
-
+## <a href="" id="ddk-oid-pnp-wake-up-error-nr"></a>
 
 
 The optional OID\_PNP\_WAKE\_UP\_ERROR OID indicates the number of false wake-ups that are signaled by the miniport driver's network adapter. A false wake-up occurs when the network adapter wakes up the system when it shouldn't have. For example, the network adapter could erroneously wake up the system due to an inexact pattern match.

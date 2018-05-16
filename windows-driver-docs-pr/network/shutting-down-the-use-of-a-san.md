@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Shutting Down the Use of a SAN
 
 
-
+## <a href="" id="ddk-shutting-down-the-use-of-a-san-ng"></a>
 
 
 The following topics describe how to terminate the use of a SAN:

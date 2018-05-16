@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Other NDIS Features Available to CoNDIS WAN Drivers
 
 
-
+## <a href="" id="ddk-other-ndis-features-available-to-condis-wan-drivers-ng"></a>
 
 
 CoNDIS WAN miniport drivers or MCMs can take advantage of the following functionality:

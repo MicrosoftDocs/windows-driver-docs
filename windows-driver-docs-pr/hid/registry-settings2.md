@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Registry Settings
 
 
-
+## <a href="" id="ddk-registry-settings-di"></a>
 
 
 The registry is used by the joystick interface to store configuration, calibration, and user preference information. It is also used to store customized text for the calibration program. The Windows 95/98/Me joystick calibration program can be customized through the registry to provide instructions to the user during calibration that are specific to the joystick.

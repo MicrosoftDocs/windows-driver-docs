@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Using Device Manager
 
 
-
+## <a href="" id="ddk-using-device-manager-dg"></a>
 
 
 To start Device Manager, right-click the My Computer icon, select **Manage** from the menu, and select **Device Manager** from the System Tools that are listed in the resulting display.

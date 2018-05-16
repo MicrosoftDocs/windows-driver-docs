@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 If a system-supplied HID minidriver does not support a device's port or bus, a vendor supplied minidriver is required.
 
-
+## <a href="" id="ddk-driver-stacks-for-a-generic-hidclass-device-kg"></a>
 
 
 The following figure illustrates a driver stack for a generic HIDClass device (which might use optional and required vendor-supplied components).

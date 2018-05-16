@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # MSI-X Resource Filtering
 
 
-
+## <a href="" id="ddk-msi-x-resource-filtering-ng"></a>
 
 
 Miniport drivers must register a resource-requirements filter function if they support MSI-X and will change the interrupt affinity for each MSI-X message or will remove message interrupt resources.

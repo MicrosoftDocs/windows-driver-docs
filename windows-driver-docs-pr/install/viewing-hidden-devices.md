@@ -22,7 +22,7 @@ ms.technology: windows-devices
 # Viewing Hidden Devices
 
 
-
+## <a href="" id="ddk-viewing-hidden-devices-dg"></a>
 
 
 Device Manager lists the devices that are installed in the computer. By default, certain devices are not shown in the list. These *hidden devices* include:

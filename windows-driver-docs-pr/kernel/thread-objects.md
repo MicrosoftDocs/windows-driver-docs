@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Thread Objects
 
 
-
+## <a href="" id="ddk-thread-objects-kg"></a>
 
 
 This section contains the following topics:

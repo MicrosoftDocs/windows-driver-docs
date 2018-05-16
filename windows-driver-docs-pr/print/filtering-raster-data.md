@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Filtering Raster Data
 
 
-
+## <a href="" id="ddk-filtering-raster-data-gg"></a>
 
 
 If you want to provide customized postprocessing of the scan line data stream before it is spooled, you can do so by implementing the [**IPrintOemUni::FilterGraphics**](https://msdn.microsoft.com/library/windows/hardware/ff554252) method in a [rendering plug-in](rendering-plug-ins.md). There are no GPD file entries associated with this Unidrv feature.

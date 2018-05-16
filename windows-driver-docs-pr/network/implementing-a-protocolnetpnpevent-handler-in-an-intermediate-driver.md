@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Implementing a ProtocolNetPnPEvent Handler in an Intermediate Driver
 
 
-
+## <a href="" id="ddk-implementing-a-protocolpnpevent-handler-in-an-intermediate-driver-"></a>
 
 
 The implementation of a [*ProtocolNetPnPEvent*](https://msdn.microsoft.com/library/windows/hardware/ff570263) function in intermediate drivers is nearly identical to the implementation in protocol drivers. For more information about implementing a *ProtocolNetPnPEvent* handler in an intermediate driver, see [Handling PnP Events and PM Events in a Protocol Driver](handling-pnp-events-and-power-management-events-in-a-protocol-driver.md).

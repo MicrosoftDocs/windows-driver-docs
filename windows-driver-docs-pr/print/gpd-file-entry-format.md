@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # GPD File Entry Format
 
 
-
+## <a href="" id="ddk-gpd-file-entry-format-gg"></a>
 
 
 All GPD file entries conform to the following format:

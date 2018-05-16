@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using PnP Hardware Profile Change Notification
 
 
-
+## <a href="" id="ddk-using-pnp-hardware-profile-change-notification-kg"></a>
 
 
 A driver registers for **EventCategoryHardwareProfileChange** notification so the driver can be notified when the machine transitions from one hardware profile to another. For example, a driver can use this mechanism to be notified when a laptop is docked or undocked.

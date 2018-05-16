@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Flatbed Driver
 
 
-
+## <a href="" id="ddk-wia-flatbed-driver-si"></a>
 
 
 The system-supplied WIA Flatbed Driver and the vendor-supplied microdriver combine to make a WIA minidriver. The WIA Flatbed Driver receives requests from the WIA service and routes the requests to the WIA microdriver through the microdriver functions. The WIA Flatbed Driver sends requests to the WIA microdriver, which sends responses back to the WIA Flatbed Driver. The WIA Flatbed Driver then sends these responses to the WIA service.

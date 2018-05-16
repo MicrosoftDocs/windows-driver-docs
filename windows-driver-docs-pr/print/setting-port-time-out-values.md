@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Setting Port Time-Out Values
 
 
-
+## <a href="" id="ddk-setting-port-time-out-values-gg"></a>
 
 
 If you are writing a port monitor for a port that has modifiable time-out values, the time-out values should be initialized from within the monitor's [**OpenPort**](https://msdn.microsoft.com/library/windows/hardware/ff559593) function. For example the **OpenPort** function in Localmon.dll, the [sample port monitor](sample-port-monitor.md), calls the **SetCommTimeouts** function, described in the Microsoft Windows SDK documentation, for this purpose.

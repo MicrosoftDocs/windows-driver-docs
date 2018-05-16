@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Supporting Point and Print During Printer Installations
 
 
-
+## <a href="" id="ddk-supporting-point-and-print-during-printer-installations-gg"></a>
 
 
 To support Point and Print technology, it is necessary to indicate which driver-specific and queue-specific files need to be sent to a client when the client user connects to a print server. The following topics are provided:

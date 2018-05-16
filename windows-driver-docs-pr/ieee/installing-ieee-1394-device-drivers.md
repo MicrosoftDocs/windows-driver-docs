@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Installing IEEE 1394 Device Drivers
 
 
-
+## <a href="" id="ddk-installing-ieee-1394-device-drivers-kg"></a>
 
 
 This section provides installation information, specific to IEEE 1394 device drivers in Microsoft Windows 2000 and later operating systems.

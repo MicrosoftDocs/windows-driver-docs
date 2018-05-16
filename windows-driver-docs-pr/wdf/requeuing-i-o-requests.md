@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Requeuing I/O Requests
 
 
-
+## <a href="" id="ddk-requeuing-i-o-requests-df"></a>
 
 
 Drivers can requeue I/O requests that they obtain from an I/O queue. A driver can requeue a I/O request to another I/O queue that the driver has created for the same device. In addition, a [bus driver](https://msdn.microsoft.com/library/windows/hardware/ff540704) can requeue an I/O request from a child device's I/O queue to a parent device's I/O queue.

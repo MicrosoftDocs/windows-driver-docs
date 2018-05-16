@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Handling IRP\_MN\_QUERY\_POWER for Device Power States
 
 
-
+## <a href="" id="ddk-handling-irp-mn-query-power-for-device-power-states-kg"></a>
 
 
 A device query-power IRP queries about a change of state for a single device and is sent to all of the drivers in the stack for the device. Such an IRP specifies **DevicePowerState** in the **Power.Type** member of the I/O stack location.

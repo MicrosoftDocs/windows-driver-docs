@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # NDIS TCP/IP Offload Status Indications
 
 
-
+## <a href="" id="ddk-ndis-tcp-ip-offload-status-indications-nr"></a>
 
 
 This section includes:

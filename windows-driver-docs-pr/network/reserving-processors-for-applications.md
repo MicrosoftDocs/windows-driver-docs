@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Reserving Processors for Applications
 
 
-
+## <a href="" id="ddk-reserving-processors-for-applications-ng"></a>
 
 
 The receive side scaling (RSS) interface enables an administrator to reserve a set of processors for applications to use. The administrator can reserve a set of processors starting at logical CPU number 0 and ending at a specified CPU number. The RSS *base CPU number* is the CPU number of the first CPU that RSS can use. RSS cannot use the CPUs that are numbered below the base CPU number. For example, on a quad-core system with hyper-threading turned off, if base CPU number is set to 1, processors 1, 2, and 3 can be used for RSS.

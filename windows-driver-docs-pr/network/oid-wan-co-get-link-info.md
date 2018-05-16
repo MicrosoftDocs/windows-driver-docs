@@ -31,7 +31,7 @@ The OID\_WAN\_CO\_GET\_LINK\_INFO OID requests the miniport driver to return PPP
   
 ```
 
-
+## <a href="" id="ddk-oid-wan-co-get-link-info-nr"></a>
 
 
 The members of this structure contain the following information:

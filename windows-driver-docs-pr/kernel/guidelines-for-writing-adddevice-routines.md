@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Guidelines for Writing AddDevice Routines
 
 
-
+## <a href="" id="ddk-guidelines-for-writing-adddevice-routines-kg"></a>
 
 
 Consider the following design guidelines when writing an [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine:

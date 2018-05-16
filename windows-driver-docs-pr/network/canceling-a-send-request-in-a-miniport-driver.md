@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Canceling a Send Request in a Miniport Driver
 
 
-
+## <a href="" id="ddk-canceling-a-send-request-in-a-miniport-driver-ng"></a>
 
 
 The following figure illustrates a miniport driver cancel send operation.

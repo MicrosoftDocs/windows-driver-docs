@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Deserialized NDIS Miniport Drivers
 
 
-
+## <a href="" id="ddk-deserialized-ndis-miniport-drivers-ng"></a>
 
 
 All NDIS 6.0 and later drivers are *deserialized*.

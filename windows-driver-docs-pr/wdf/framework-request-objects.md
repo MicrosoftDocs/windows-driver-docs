@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Framework Request Objects
 
 
-
+## <a href="" id="ddk-framework-request-objects-df"></a>
 
 
 Framework request objects represent I/O requests that the I/O manager has sent to a driver. Framework-based drivers process each I/O request by calling [framework request object methods](https://msdn.microsoft.com/library/windows/hardware/dn265664).

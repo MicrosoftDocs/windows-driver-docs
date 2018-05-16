@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Connection-Oriented Timing Features
 
 
-
+## <a href="" id="ddk-connection-oriented-timing-features-ng"></a>
 
 
 Connection-oriented NDIS supports using a NIC's local time for scheduling the transmission of packets and for time-stamping send and receive packets.

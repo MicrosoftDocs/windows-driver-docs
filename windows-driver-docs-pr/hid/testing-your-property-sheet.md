@@ -9,7 +9,7 @@ keywords: ["property sheets WDK DirectInput , testing", "game controllers WDK Di
 # Testing Your Property Sheet
 
 
-
+## <a href="" id="ddk-testing-your-property-sheet-di"></a>
 
 
 It is highly recommended that you run the debug version of both DirectInput and the DirectInput control panel during the testing of your property sheet page. DirectX components are designed to issue useful errors and warning messages to the debug window/terminal.

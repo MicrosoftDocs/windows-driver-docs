@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Handling Socket Options and Control Codes for a SAN
 
 
-
+## <a href="" id="ddk-handling-socket-options-and-control-codes-for-a-san-ng"></a>
 
 
 The Windows Sockets switch, in conjunction with the TCP/IP provider, handles most **WSPGetSockOpt**, **WSPSetSockOpt**, and **WSPIoctl** calls initiated by applications. These requests are generally to set and retrieve options and operating parameters associated with an application's socket. The switch does not generally forward these calls to a SAN service provider except as described in the following sections.

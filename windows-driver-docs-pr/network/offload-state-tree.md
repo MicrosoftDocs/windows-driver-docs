@@ -17,7 +17,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-
+## <a href="" id="ddk-offload-state-tree-ng"></a>
 
 
 The host stack can link [**NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff566469) structures to create a tree of state objects. By conveying a state tree to an offload target, the host stack can efficiently offload or reference multiple TCP connections, the path and neighbor state objects that are associated with such connections, or both.

@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Troubleshooting Device and Driver Installations
 
 
-
+## <a href="" id="ddk-troubleshooting-device-installation-dg"></a>
 
 
 You can use the following guidelines to either verify that your device is installed correctly or diagnose problems with your device installation:

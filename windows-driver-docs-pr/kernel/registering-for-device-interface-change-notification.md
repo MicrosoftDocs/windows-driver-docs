@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Registering for Device Interface Change Notification
 
 
-
+## <a href="" id="ddk-registering-for-device-interface-change-notification-kg"></a>
 
 
 A driver registers for notification of device interface arrival and removal events by calling [**IoRegisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff549526).

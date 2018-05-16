@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Flushing Cached Data during DMA Operations
 
 
-
+## <a href="" id="ddk-flushing-cached-data-during-dma-operations-kg"></a>
 
 
 In some platforms, the processor and system DMA controller (or bus-master DMA adapters) exhibit cache coherency anomalies. The following guidelines enable drivers that use version 1 or 2 of the DMA operations interface (see [**DMA\_OPERATIONS**](https://msdn.microsoft.com/library/windows/hardware/ff544071)) to maintain coherent cache states across all supported processor architectures, including architectures that do not contain hardware to automatically enforce cache coherency.

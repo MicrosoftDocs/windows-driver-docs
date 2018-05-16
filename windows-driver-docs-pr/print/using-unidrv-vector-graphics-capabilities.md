@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Using Unidrv Vector Graphics Capabilities
 
 
-
+## <a href="" id="ddk-using-unidrv-vector-graphics-capabilities-gg"></a>
 
 
 On Microsoft Windows XP and later, Unidrv provides support for two types of vector graphics printers: HP-GL/2 monochrome (PCL-5e), or PCL XL monochrome (PCL-6). On Microsoft Windows Server 2003 and later, Unidrv also supports PCL XL color (PCL-6). There is also pseudovector graphics support for graphics printers that do not have vector rendering capabilities.

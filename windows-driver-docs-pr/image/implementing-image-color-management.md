@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Implementing Image Color Management
 
 
-
+## <a href="" id="ddk-implementing-image-color-management-si"></a>
 
 
 WIA relies on the Image Color Management (ICM) system provided in Microsoft Windows. ICM is described in the Microsoft Windows SDK documentation.

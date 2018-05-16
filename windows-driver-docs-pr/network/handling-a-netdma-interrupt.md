@@ -18,7 +18,7 @@ ms.technology: windows-devices
 
  
 
-
+## <a href="" id="ddk-handling-a-netdma-interrupt-ng"></a>
 
 
 If the NET\_DMA\_INTERRUPT\_ON\_COMPLETION flag in the **ControlFlags** member of the [**NET\_DMA\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff568734) structure is set, the dynamic memory access (DMA) engine generates an interrupt for the DMA channel after it processes the DMA descriptor. When this flag is cleared, the DMA engine does not generate an interrupt.

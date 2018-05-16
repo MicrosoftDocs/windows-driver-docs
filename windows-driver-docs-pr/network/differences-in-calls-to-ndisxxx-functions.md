@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Differences in Calls to NdisXxx Functions
 
 
-
+## <a href="" id="ddk-differences-in-calls-to-ndisxxx-functions-ng"></a>
 
 
 A call manager calls a different set of call manager functions than an MCM driver. A call manager calls **NdisCm*Xxx*** functions, and an MCM driver calls **NdisMCm*Xxx*** functions.

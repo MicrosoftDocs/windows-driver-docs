@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Installing Pages for a Manufacturer
 
 
-
+## <a href="" id="ddk-installing-pages-for-a-manufacturer-gg"></a>
 
 
 You can install a printer details page that is manufacturer-specific, for all the manufacturer's printer types that use the standard TCP/IP port monitor. To do so, place the page's ASP file, along with all subordinate files (such as .gif files or ASP files for linked pages), in the manufacturer's subdirectory (\\%windir%\\web\\printers\\&lt;Manufacturer&gt;). A customized setup program must be provided to accomplish this.

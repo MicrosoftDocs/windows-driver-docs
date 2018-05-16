@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # TWAIN and Raw RGB Format
 
 
-
+## <a href="" id="ddk-twain-and-raw-rgb-format-si"></a>
 
 
 When an application transfers an image whose format GUID is WiaImgFmt\_RAWRGB (defined in header file *wiadef.h*), the following properties on the image must contain the correct values for the image:

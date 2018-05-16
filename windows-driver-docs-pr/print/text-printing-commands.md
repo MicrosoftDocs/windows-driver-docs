@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Text Printing Commands
 
 
-
+## <a href="" id="ddk-text-printing-commands-gg"></a>
 
 
 Text printing commands are those that are associated with printing text. These commands are divided into the following groups:

@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # VMQ Components
 
 
-
+## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
 
 
 The following illustration shows the relationships among the various components in a virtual machine queue (VMQ) operating environment.

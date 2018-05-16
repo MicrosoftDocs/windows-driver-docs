@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Mapping PTP Format Codes to WIA Format GUIDs
 
 
-
+## <a href="" id="ddk-mapping-ptp-format-codes-to-wia-format-guids-si"></a>
 
 
 The format of an object is exposed through the [**WIA\_IPA\_FORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff551553) property as a GUID. The mapping between PTP format codes and WIA GUIDs is shown in the following table:

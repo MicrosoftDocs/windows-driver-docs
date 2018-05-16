@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Interface Descriptor for Communication Class Interface
 
 
-
+## <a href="" id="ddk-interface-descriptor-for-communication-class-interface-ng"></a>
 
 
 <table>

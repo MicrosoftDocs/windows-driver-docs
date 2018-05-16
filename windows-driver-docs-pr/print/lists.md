@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Lists
 
 
-
+## <a href="" id="ddk-lists-gg"></a>
 
 
 To assign a set of values to an attribute, use the LIST keyword. The format is:

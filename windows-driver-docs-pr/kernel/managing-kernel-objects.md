@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Managing Kernel Objects
 
 
-
+## <a href="" id="ddk-object-management-kg"></a>
 
 
 The Windows Object Manager controls *objects* that are part of the kernel-mode operating system. An object is a collection of data that the operating system manages.

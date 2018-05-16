@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Properties for WIA Video Minidrivers
 
 
-
+## <a href="" id="ddk-properties-for-wia-video-minidrivers-si"></a>
 
 
 The following properties are not implemented at this time. They are reserved by Microsoft for future use.

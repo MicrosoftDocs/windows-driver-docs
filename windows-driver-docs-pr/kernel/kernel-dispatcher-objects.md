@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Kernel Dispatcher Objects
 
 
-
+## <a href="" id="ddk-kernel-dispatcher-objects-kg"></a>
 
 
 This section includes the following topics:

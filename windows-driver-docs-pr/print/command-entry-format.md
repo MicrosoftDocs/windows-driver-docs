@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Command Entry Format
 
 
-
+## <a href="" id="ddk-command-entry-format-gg"></a>
 
 
 To specify a printer command entry in a GPD file, use the following format:

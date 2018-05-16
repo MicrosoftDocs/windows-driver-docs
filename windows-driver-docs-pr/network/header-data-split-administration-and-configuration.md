@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Header-Data Split Administration and Configuration
 
 
-
+## <a href="" id="ddk-header-data-split-administration-and-configuration-ng"></a>
 
 
 This section includes:

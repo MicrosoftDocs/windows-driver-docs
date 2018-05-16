@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Receive Side Scaling
 
 
-
+## <a href="" id="ddk-ndis-receive-side-scaling-ng"></a>
 
 
 Receive side scaling (RSS) improves the system performance related to handling of network data on multiprocessor systems.

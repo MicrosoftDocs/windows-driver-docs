@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Operating a Parallel Device Attached to a Parallel Port
 
 
-
+## <a href="" id="ddk-operating-a-parallel-device-attached-to-a-parallel-port-kg"></a>
 
 
 This section describes how a client, in particular, a vendor-supplied function driver for a parallel device, operates a parallel device attached to a parallel port.

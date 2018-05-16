@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # ExDisableResourceBoost
 
 
-
+## <a href="" id="ddk-exdisableresourceboost-if"></a>
 
 
 This routine is reserved for system use. Do not use this routine in your driver.

@@ -23,7 +23,7 @@ ms.technology: windows-devices
 
 This section describes the mechanisms that user-mode applications and kernel-mode drivers use for handling [HID reports](introduction-to-hid-concepts.md).
 
-
+## <a href="" id="ddk-handling-hid-reports-kg"></a>
 
 
 After an application or driver has connected to a HID collection, it can obtain HID reports from, or send reports to, the collection. For more information about how to handle HID reports, see the following topics:

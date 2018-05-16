@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # WMI and the Power Management Tab
 
 
-
+## <a href="" id="ddk-wmi-and-the-power-management-tab-kg"></a>
 
 
 Drivers that support power management can automatically enable the **Power Management** tab for the device property sheet in Device Manager. If a driver handles the GUID\_POWER\_DEVICE\_ENABLE or GUID\_POWER\_DEVICE\_WAKE\_ENABLE WMI class GUIDs, Device Manager displays a **Power Management** tab on the device property sheet. Certain controls on the property page are enabled depending on which WMI class GUIDs the driver supports.

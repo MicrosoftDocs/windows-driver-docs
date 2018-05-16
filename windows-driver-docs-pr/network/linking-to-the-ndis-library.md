@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Linking to the NDIS Library
 
 
-
+## <a href="" id="ddk-linking-to-the-ndis-library-ng"></a>
 
 
 The NDIS Library is packaged in Ndis.sys, a kernel-mode export library, as a set of functions, with emphasis on macros for maximum performance. (An export library is a .sys file that functions similarly to a dynamic-link library.) All NDIS drivers link themselves to the NDIS Library. The NDIS Library functions are described in the Network Reference sections of the Microsoft Windows Driver Kit (WDK) documentation.

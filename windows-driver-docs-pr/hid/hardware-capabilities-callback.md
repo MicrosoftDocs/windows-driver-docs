@@ -9,7 +9,7 @@ keywords: ["callbacks WDK joysticks", "joysticks WDK HID , capabilities", "hardw
 # Hardware Capabilities Callback
 
 
-
+## <a href="" id="ddk-hardware-capabilities-callback-di"></a>
 
 
 ```

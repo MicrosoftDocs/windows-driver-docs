@@ -9,7 +9,7 @@ keywords: ["joysticks WDK HID , axes", "virtual joystick drivers WDK HID , axes"
 # Axis Selection Overrides
 
 
-
+## <a href="" id="ddk-axis-selection-overrides-di"></a>
 
 
 The DirectX 8.0 release introduces a new mechanism to provide hardware vendors with limited ability to modify how DirectInput assigns axes for HID-compliant devices. The initial axis selection is made through an association between a HID usage page/usage pair on the device with an axis instance. The axis instance is described in an optional registry subkey under the **Axes** subkey for the device type key. (Note that the **Axes** subkey is also an optional key under the device type-key.) Within the **Axes** subkey, the Attributes value stores a DIOBJECTATTRIBUTES structure. Before DirectX 8.0, the **wUsagePage** and **wUsage** fields in the DIOBJECTATTRIBUTES structure assigned a HID usage page and usage to an object on a non-HID device. These members were ignored for HID-compliant devices.

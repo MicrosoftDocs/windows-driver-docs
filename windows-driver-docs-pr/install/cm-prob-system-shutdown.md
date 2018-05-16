@@ -16,7 +16,7 @@ ms.technology: windows-devices
 This function is reserved for system use.
 
 
-
+## <a href="" id="ddk-cm-prob-system-shutdown-dg"></a>
 
 
 The device is not available because the system is shutting down.

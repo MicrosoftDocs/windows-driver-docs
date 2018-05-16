@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Command Names
 
 
-
+## <a href="" id="ddk-command-names-gg"></a>
 
 
 The GPD language defines a unique command name for each common printer command. Additionally, it defines the CmdSelect command name for specifying commands used for selecting [printer options](printer-options.md).

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Stopping a Device
 
 
-
+## <a href="" id="ddk-stopping-a-device-kg"></a>
 
 
 The PnP manager directs drivers to stop a device in the following situations:

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Canceling a Wait/Wake IRP
 
 
-
+## <a href="" id="ddk-canceling-a-wait-wake-irp-kg"></a>
 
 
 Only the driver that sent a wait/wake IRP can cancel that IRP.

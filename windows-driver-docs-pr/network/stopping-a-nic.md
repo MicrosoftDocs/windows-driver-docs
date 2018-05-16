@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Stopping a NIC
 
 
-
+## <a href="" id="ddk-stopping-a-nic-ng"></a>
 
 
 The PnP manager stops a NIC so that it can reconfigure or rebalance the hardware resources that it assigned to the NIC. The following steps describe how NDIS participates in the stopping of a NIC:

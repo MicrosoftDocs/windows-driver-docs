@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Creating Property Sheet Pages for Printers
 
 
-
+## <a href="" id="ddk-creating-property-sheet-pages-for-printers-gg"></a>
 
 
 Printer interface DLLs, in conjunction with [CPSUI](common-property-sheet-user-interface.md), are responsible for creating the property sheet pages that users of Windows 2000 and later employ to view and modify configuration parameters associated with printers and print documents. Each printer interface DLL must provide a [**DrvDevicePropertySheets**](https://msdn.microsoft.com/library/windows/hardware/ff548542) function to create printer-specific pages, and a [**DrvDocumentPropertySheets**](https://msdn.microsoft.com/library/windows/hardware/ff548548) function to create document-specific pages.

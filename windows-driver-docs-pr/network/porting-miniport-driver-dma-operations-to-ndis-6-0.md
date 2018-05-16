@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Porting Miniport Driver DMA Operations to NDIS 6.0
 
 
-
+## <a href="" id="ddk-porting-miniport-driver-dma-operations-to-ndis-6-0-ng"></a>
 
 
 When compared with NDIS 5.*x*, NDIS 6.0 provides a much different interface for handling DMA. For information about the benefits of the NDIS 6.0 approach, see [NDIS 6.0 SGDMA Support](benefits-of-ndis-sgdma-support.md).

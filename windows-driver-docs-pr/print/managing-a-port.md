@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Managing a Port
 
 
-
+## <a href="" id="ddk-managing-a-port-gg"></a>
 
 
 Port management activities consist of [adding a port](adding-a-port.md), [configuring a port](configuring-a-port.md), and [deleting a port](deleting-a-port.md) in response to requests from applications (such as the print folder). These port management activities are handled by port monitors, not language monitors, and require Administrator privilege. There are special rules for [storing port configuration information](storing-port-configuration-information.md).

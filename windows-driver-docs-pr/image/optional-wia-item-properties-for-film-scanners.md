@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Optional WIA Item Properties for Film Scanners
 
 
-
+## <a href="" id="ddk-optional-wia-item-properties-for-film-scanners-si"></a>
 
 
 The WIA film scanner item can optionally support the following WIA properties:

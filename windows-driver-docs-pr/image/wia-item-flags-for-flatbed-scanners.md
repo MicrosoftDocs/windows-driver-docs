@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Item Flags for Flatbed Scanners
 
 
-
+## <a href="" id="ddk-wia-item-flags-for-flatbed-scanners-si"></a>
 
 
 This topic lists the required and optional WIA item flags for the root item and child items of a flatbed scanner item tree. For a complete list of the WIA item flags and their definitions, see [**WIA\_IPA\_ITEM\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff551585).

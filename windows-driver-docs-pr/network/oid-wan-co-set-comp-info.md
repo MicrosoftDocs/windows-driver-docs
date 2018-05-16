@@ -27,7 +27,7 @@ The protocol supplies a specification for the PPP compression scheme it selected
   
 ```
 
-
+## <a href="" id="ddk-oid-wan-co-set-comp-info-nr"></a>
 
 
 The members of this structure contain the following information:

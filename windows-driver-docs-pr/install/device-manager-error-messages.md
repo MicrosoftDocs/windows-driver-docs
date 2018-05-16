@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Device Manager Error Messages
 
 
-
+## <a href="" id="ddk-device-manager-error-messages-dg"></a>
 
 
 When Device Manager marks a device with a yellow exclamation point, it also provides an error message.

@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # NDIS Support for WMI
 
 
-
+## <a href="" id="ddk-ndis-support-for-wmi-ng"></a>
 
 
 Through NDIS, clients of Windows Management Instrumentation (WMI) can obtain and set information that NDIS and NDIS drivers service. WMI clients can also register to receive status updates.

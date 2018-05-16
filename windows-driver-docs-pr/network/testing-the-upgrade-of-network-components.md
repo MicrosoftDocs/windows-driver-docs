@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Testing the Upgrade of Network Components
 
 
-
+## <a href="" id="ddk-testing-the-upgrade-of-network-components-ng"></a>
 
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.

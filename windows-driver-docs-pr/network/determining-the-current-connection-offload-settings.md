@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Determining the Current Connection Offload Settings
 
 
-
+## <a href="" id="ddk-determining-the-current-connection-offload-settings-ng"></a>
 
 
 Protocol drivers can obtain the connection offload services with an object identifier (OID) request.

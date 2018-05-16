@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using Files In A Driver
 
 
-
+## <a href="" id="ddk-using-files-in-a-driver-kg"></a>
 
 
 The Microsoft Windows executive represents files by *file objects*, which are executive objects that are managed by the object manager. (Directories are also represented by file objects.)

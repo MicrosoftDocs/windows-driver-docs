@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Defining I/O Control Codes
 
 
-
+## <a href="" id="ddk-defining-i-o-control-codes-kg"></a>
 
 
 When defining new IOCTLs, it is important to remember the following rules:

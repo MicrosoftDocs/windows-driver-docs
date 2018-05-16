@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Mapping of NDIS Network Interfaces to NDIS OIDs
 
 
-
+## <a href="" id="ddk-ndis-network-interface-to-oid-mapping-ng"></a>
 
 
 To respond to NDIS interface object requests, NDIS interface providers can cache information that they obtain from underlying drivers and can also issue OID requests to obtain information about underlying interfaces.

@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Registry Settings for Serenum
 
 
-
+## <a href="" id="ddk-registry-settings-for-serenum-kg"></a>
 
 
 This topic describes the entry values that Serenum uses for an RS-232 port in Microsoft Windows 2000 and later.

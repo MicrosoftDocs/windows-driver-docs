@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-
+## <a href="" id="ddk-background-reading-on-udp-encapsulation-of-esp-packets-ng"></a>
 
 
 To comprehend this section, you must understand the Internet Key Exchange (IKE) and the UDP encapsulation of ESP packets, as specified in the following drafts published by the IP Security Working Group of the Internet Engineering Task Force (IETF):

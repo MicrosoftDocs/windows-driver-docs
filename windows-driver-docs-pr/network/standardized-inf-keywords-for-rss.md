@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Standardized INF Keywords for RSS
 
 
-
+## <a href="" id="ddk-standardized-inf-keywords-for-rss-ng"></a>
 
 
 The RSS interface supports [standardized INF keywords](standardized-inf-keywords-for-network-devices.md) that appear in the registry and are specified in INF files.

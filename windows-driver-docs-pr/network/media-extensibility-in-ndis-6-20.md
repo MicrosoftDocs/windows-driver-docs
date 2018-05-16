@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Media Extensibility in NDIS 6.20
 
 
-
+## <a href="" id="ddk-media-extensibility-in-ndis-6-20-ng"></a>
 
 
 NDIS 6.20 introduces additional media extensibility features. That is, the network layer of the driver stack is more media independent.

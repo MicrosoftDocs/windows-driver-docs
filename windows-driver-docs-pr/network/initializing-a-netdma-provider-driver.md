@@ -19,7 +19,7 @@ ms.technology: windows-devices
 
  
 
-
+## <a href="" id="ddk-initializing-a-netdma-provider-driver-ng"></a>
 
 
 When a NetDMA device becomes available, the Plug and Play (PnP) manager loads the NetDMA provider driver to manage the dynamic memory access (DMA) engine (if the driver is not already loaded). The PnP manager then calls the driver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine (which every driver must provide) after it loads the driver.

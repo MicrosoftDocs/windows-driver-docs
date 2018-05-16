@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Summary of INF Directives
 
 
-
+## <a href="" id="ddk-summary-of-inf-directives-dg"></a>
 
 
 The following list summarizes many (but not all) of the directives that can be used in INF files. INF directive names are case-insensitive. For example, **Addreg**, **addReg**, and **AddReg** are equally valid as directive specifications within an INF file.

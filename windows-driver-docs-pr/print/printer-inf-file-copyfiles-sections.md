@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Printer INF File CopyFiles Sections
 
 
-
+## <a href="" id="ddk-printer-inf-file-copyfiles-sections-gg"></a>
 
 
 When a printer INF file contains a file list section that is referenced by an [**INF CopyFiles directive**](https://msdn.microsoft.com/library/windows/hardware/ff546346), each file in the file list must be specified using the following format:

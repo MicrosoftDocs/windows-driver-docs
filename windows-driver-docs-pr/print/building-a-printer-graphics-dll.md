@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Building a Printer Graphics DLL
 
 
-
+## <a href="" id="ddk-building-a-printer-graphics-dll-gg"></a>
 
 
 When building a printer graphics DLL, you must be aware of the following differences between DLLs intended for user-mode execution and those intended for kernel-mode execution.

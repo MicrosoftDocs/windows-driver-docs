@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Starting a Filter Module
 
 
-
+## <a href="" id="ddk-starting-a-filter-module-ng"></a>
 
 
 To start a paused filter module, NDIS calls the filter driver's [*FilterSetModuleOptions*](https://msdn.microsoft.com/library/windows/hardware/ff549970) function, if any, followed by a call to the [*FilterRestart*](https://msdn.microsoft.com/library/windows/hardware/ff549962) function. The filter module enters the *Restarting* state at the start of execution in the *FilterRestart* function.

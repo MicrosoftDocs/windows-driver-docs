@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Software-based DVD Decoding
 
 
-
+## <a href="" id="ddk-software-based-dvd-decoding-ksg"></a>
 
 
 The following diagram demonstrates a completely software-based DVD decoding and playback solution, which is presently more common than hardware-based DVD decoding and playback.

@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Setting Port Authentication Parameters
 
 
-
+## <a href="" id="ddk-setting-port-authentication-parameters-ng"></a>
 
 
 NDIS and overlying drivers use an [OID\_GEN\_PORT\_AUTHENTICATION\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569623) OID set request to set the current state of an NDIS port. Miniport drivers that support NDIS ports must support this OID.

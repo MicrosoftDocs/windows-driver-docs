@@ -18,7 +18,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-
+## <a href="" id="ddk-processing-events-that-occur-during-an-offload-ng"></a>
 
 
 An offload target must be able to process the following events while an offload operation is in progress (that is, before the offload target's call to [**NdisMInitiateOffloadComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563604) has returned):

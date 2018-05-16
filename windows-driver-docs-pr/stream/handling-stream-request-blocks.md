@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Handling Stream Request Blocks
 
 
-
+## <a href="" id="ddk-handling-stream-request-blocks-ksg"></a>
 
 
 The operating system dispatches all I/O requests on the device to the class driver. The class driver in turn requests hardware-specific information from the minidriver by passing SRBs to the minidriver. The class driver specifies the operation it requests in the **Command** member of the stream request block.

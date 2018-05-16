@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Power IRPs for the System
 
 
-
+## <a href="" id="ddk-power-irps-for-the-system-kg"></a>
 
 
 A *system power IRP* specifies major IRP code [**IRP\_MJ\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff550784), one of the minor power IRP codes listed below, and the value **SystemPowerState** in the **Power.Type** member of the IRP stack. Only the power manager can send such an IRP; a driver cannot send a system power IRP.

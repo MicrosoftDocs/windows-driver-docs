@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using a CustomTimerDpc Routine
 
 
-
+## <a href="" id="ddk-using-a-customtimerdpc-routine-kg"></a>
 
 
 To disable a previously set timer object, a driver calls [**KeCancelTimer**](https://msdn.microsoft.com/library/windows/hardware/ff551970). This routine removes the timer object from the system's timer queue. Generally, the timer object is not set to the signaled state and the *CustomTimerDpc* routine is not queued for execution. However, if the timer is about to expire when **KeCancelTimer** is called, expiration might occur before **KeCancelTimer** has a chance to access the time queue, in which case signaling and DPC queuing will occur.

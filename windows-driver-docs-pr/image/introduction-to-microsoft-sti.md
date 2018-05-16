@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Introduction to Microsoft STI
 
 
-
+## <a href="" id="ddk-introduction-to-microsoft-sti-si"></a>
 
 
 Microsoft STI is made up of the following primary components:

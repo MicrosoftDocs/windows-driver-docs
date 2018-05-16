@@ -21,7 +21,7 @@ ms.technology: windows-devices
 # TCP/IP Offload
 
 
-
+## <a href="" id="ddk-tcp-ip-offload-ng"></a>
 
 
 To increase its performance, the Microsoft TCP/IP transport can offload tasks or connections to a NIC that has the appropriate TCP/IP-offload capabilities.

@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Item Trees
 
 
-
+## <a href="" id="ddk-wia-item-trees-si"></a>
 
 
 WIA items represent device data and device attributes. Imaging applications see a WIA device as a hierarchical tree of items, with the root item representing the device itself, and any child items representing programmable data sources, images, or folders that contain images. If the device data or device attributes represented by the items in an item tree are changed or configured without using WIA (for example, when a TWAIN driver deletes an image), the WIA item tree must be refreshed. For more information, see [WIA-TWAIN Compatibility](wia-twain-compatibility.md).

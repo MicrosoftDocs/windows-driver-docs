@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Header-Data Split Status Indications
 
 
-
+## <a href="" id="ddk-header-data-split-status-indications-nr"></a>
 
 
 This section includes:

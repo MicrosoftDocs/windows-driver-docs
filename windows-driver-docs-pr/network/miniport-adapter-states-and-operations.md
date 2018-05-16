@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Miniport Adapter States and Operations
 
 
-
+## <a href="" id="ddk-miniport-adapter-states-and-operations-ng"></a>
 
 
 For each adapter that it manages, an NDIS 6.0 or later miniport driver must support the following set of operational states:

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Point and Print DLLs
 
 
-
+## <a href="" id="ddk-point-and-print-dlls-gg"></a>
 
 
 You can optionally supply a special Point and Print DLL by associating its name with the **Module** registry value. This DLL must export the following two functions:

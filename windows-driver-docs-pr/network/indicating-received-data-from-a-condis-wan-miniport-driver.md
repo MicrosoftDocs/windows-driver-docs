@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Indicating Received Data from a CoNDIS WAN Miniport Driver
 
 
-
+## <a href="" id="ddk-indicating-received-data-from-a-condis-wan-miniport-driver-ng"></a>
 
 
 The following operations occur when a CoNDIS WAN miniport driver receives a network data packet:

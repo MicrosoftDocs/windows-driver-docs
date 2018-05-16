@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Describing a WIA Device Using WIA Items
 
 
-
+## <a href="" id="ddk-describing-a-wia-device-using-wia-items-si"></a>
 
 
 This topic applies to Windows Vista and later.

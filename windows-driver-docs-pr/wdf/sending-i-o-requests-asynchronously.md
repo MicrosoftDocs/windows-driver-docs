@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Sending I/O Requests Asynchronously
 
 
-
+## <a href="" id="ddk-sending-i-o-requests-asynchronously-df"></a>
 
 
 Before you can send an I/O request asynchronously to an I/O target, you must format the request. The following table lists the I/O target object methods that your driver can call to format I/O requests.

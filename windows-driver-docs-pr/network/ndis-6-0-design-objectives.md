@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # NDIS 6.0 Design Objectives
 
 
-
+## <a href="" id="ddk-ndis-6-0-design-objectives-ng"></a>
 
 
 Two major objectives have guided the design and development of NDIS 6.0:

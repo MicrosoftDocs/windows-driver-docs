@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Option Attributes for the Memory Feature
 
 
-
+## <a href="" id="ddk-option-attributes-for-the-memory-feature-gg"></a>
 
 
 The following table lists the attributes associated with the Memory feature. For more information about the Memory feature, see [Standard Features](standard-features.md).

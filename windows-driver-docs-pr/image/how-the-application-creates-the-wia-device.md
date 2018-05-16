@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # How the Application Creates the WIA Device
 
 
-
+## <a href="" id="ddk-how-the-application-creates-the-wia-device-si"></a>
 
 
 When an application intends to use a WIA device driver, it calls the **IWiaDevMgr::CreateDevice** method (described in the Microsoft Windows SDK documentation). The WIA service first calls [**IStiUSD::LockDevice**](https://msdn.microsoft.com/library/windows/hardware/ff543829) to lock the WIA driver for mutually exclusive access. Next, the WIA service calls [**IWiaMiniDrv::drvInitializeWia**](https://msdn.microsoft.com/library/windows/hardware/ff544986) to create the initial WIA item tree structure. Finally, the WIA service unlocks the device driver by calling [**IStiUSD::UnLockDevice**](https://msdn.microsoft.com/library/windows/hardware/ff543843).

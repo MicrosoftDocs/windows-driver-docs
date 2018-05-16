@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # CoNDIS Protocol Driver OID Requests
 
 
-
+## <a href="" id="ddk-condis-protocol-driver-oid-requests-ng"></a>
 
 
 CoNDIS protocol drivers, either clients or call managers, can query or set the operating parameters of miniport drivers and other protocol drivers. CoNDIS protocol drivers can also query or set information in miniport call managers (MCMs). For more information about OID requests and MCMs, see [CoNDIS MCM OID Requests](condis-mcm-oid-requests.md).

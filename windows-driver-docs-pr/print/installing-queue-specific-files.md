@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Installing Queue-Specific Files
 
 
-
+## <a href="" id="ddk-installing-queue-specific-files-gg"></a>
 
 
 At printer installation time, a vendor-supplied installation application can specify a set of files, of any type, to be associated with a particular print queue. The files are downloaded to each client that connects to the print server. The installation application specifies the files by placing values in the registry, as illustrated in the following table.

@@ -9,7 +9,7 @@ keywords: ["property sheets WDK DirectInput , control panel structure", "game co
 # Game Controller Control Panel
 
 
-
+## <a href="" id="ddk-game-controller-control-panel-di"></a>
 
 
 The basic architecture of the DirectInput control panel consists of the DirectInput game controller control panel, the abstraction-layer library that supports the **IDIGameCntrlPropSheet** COM interface, and a COM object for each game controller property sheet.

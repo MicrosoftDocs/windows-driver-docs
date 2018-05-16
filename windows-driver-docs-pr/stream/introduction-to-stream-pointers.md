@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Introduction to Stream Pointers
 
 
-
+## <a href="" id="ddk-introduction-to-stream-pointers-ksg"></a>
 
 
 In the older stream class model, the minidriver is responsible for maintaining its own data stream request block (SRB) queues. AVStream provides this functionality through stream pointer abstraction. A stream pointer is a reference to a specific AVStream data frame.

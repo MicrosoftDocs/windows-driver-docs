@@ -16,7 +16,7 @@ ms.technology: windows-devices
 This function is reserved for system use.
 
 
-
+## <a href="" id="ddk-cm-prob-held-for-eject-dg"></a>
 
 
 The device has been prepared for ejection.

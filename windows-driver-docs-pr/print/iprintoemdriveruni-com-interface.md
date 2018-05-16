@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # IPrintOemDriverUni COM Interface
 
 
-
+## <a href="" id="ddk-iprintoemdriveruni-com-interface-gg"></a>
 
 
 The `IPrintOemDriverUni COM` interface provides a rendering plug-in with access to utility operations supplied by the printer graphics DLL for Unidrv. These operations send a data stream to the print spooler, and obtain driver-managed information.

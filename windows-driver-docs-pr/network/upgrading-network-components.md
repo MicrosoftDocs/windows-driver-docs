@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Process for upgrading network components
 
 
-
+## <a href="" id="ddk-upgrading-network-components-ng"></a>
 
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (Service Pack 1 \[SP1\] and later), Microsoft Windows Server 2003, and later operating systems.

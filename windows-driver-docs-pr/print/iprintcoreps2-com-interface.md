@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # IPrintCorePS2 COM Interface
 
 
-
+## <a href="" id="ddk-iprintcoreps2-com-interface-gg"></a>
 
 
 The `IPrintCorePS2` COM interface provides a set of helper methods for Pscript5 render plug-ins. The following table lists and describes all of the methods defined by the `IPrintCorePS2` interface.

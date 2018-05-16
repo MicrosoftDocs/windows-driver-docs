@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Reporting WIA Minidriver Status
 
 
-
+## <a href="" id="ddk-reporting-wia-minidriver-status-si"></a>
 
 
 This section contains the following topics:

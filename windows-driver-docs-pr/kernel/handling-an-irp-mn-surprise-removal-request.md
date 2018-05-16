@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Handling an IRP\_MN\_SURPRISE\_REMOVAL Request
 
 
-
+## <a href="" id="ddk-handling-an-irp-mn-surprise-removal-request-kg"></a>
 
 
 The Windows 2000 and later PnP manager sends this IRP to notify drivers that a device is no longer available for I/O operations and has probably been unexpectedly removed from the machine ("surprise removal").

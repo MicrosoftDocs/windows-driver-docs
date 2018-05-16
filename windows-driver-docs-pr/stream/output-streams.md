@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Output Streams
 
 
-
+## <a href="" id="ddk-output-streams-ksg"></a>
 
 
 The following table describes the video port output stream media types used by DVDs:

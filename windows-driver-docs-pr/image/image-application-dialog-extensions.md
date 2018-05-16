@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Image Application Dialog Extensions
 
 
-
+## <a href="" id="ddk-image-application-dialog-extensions-si"></a>
 
 
 There are three mechanisms for extending WIA image application dialogs. These include:

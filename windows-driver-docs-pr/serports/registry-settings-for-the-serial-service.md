@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Registry Settings for the Serial Service
 
 
-
+## <a href="" id="ddk-registry-settings-for-the-serial-service-kg"></a>
 
 
 This topic describes the registry settings that Serial applies to all serial devices for which Serial is the function driver or a lower-level device filter driver.

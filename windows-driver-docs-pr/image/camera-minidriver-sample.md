@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Camera Minidriver Sample
 
 
-
+## <a href="" id="ddk-camera-minidriver-sample-si"></a>
 
 
 The wiadriverex directory in [WIA Driver Samples](http://go.microsoft.com/fwlink/p/?linkid=256210) for a sample WIA minidriver for a digital still camera.

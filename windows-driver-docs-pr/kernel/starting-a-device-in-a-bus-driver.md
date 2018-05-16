@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Starting a Device in a Bus Driver
 
 
-
+## <a href="" id="ddk-starting-a-device-in-a-bus-driver-kg"></a>
 
 
 A bus driver starts a child device (child [*PDO*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pdo)) with a procedure such as the following in its [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine:

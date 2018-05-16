@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Which Printer Details Page is Displayed?
 
 
-
+## <a href="" id="ddk-which-printer-details-page-is-displayed-gg"></a>
 
 
 When a user attempts to view a printer's details page, the server uses the following algorithm to determine which ASP file to read.

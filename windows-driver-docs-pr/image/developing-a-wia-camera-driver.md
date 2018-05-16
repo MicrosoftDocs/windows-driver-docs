@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Developing a WIA Camera Driver
 
 
-
+## <a href="" id="ddk-developing-a-wia-camera-driver-si"></a>
 
 
 A WIA camera driver developer can create any of the following three types of driver:

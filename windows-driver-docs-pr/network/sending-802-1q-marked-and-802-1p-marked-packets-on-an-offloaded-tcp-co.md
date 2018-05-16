@@ -16,7 +16,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-
+## <a href="" id="ddk-sending-802-1q-and-802-1p-marked-packets-on-an-offloaded-tcp-conne"></a>
 
 
 When processing a send packet on an offloaded TCP connection, an offload target uses the values of the **VlanId** and **UserPriority** members to determine whether an IEEE 802.3ac packet header, referred to as a [tag header](https://msdn.microsoft.com/library/windows/hardware/ff564233), should be included. The IEEE 802.3ac header contains a VLAN identifier value, a priority value, and a bit called CFI, which is always set to zero.

@@ -27,7 +27,7 @@ ms.technology: windows-devices
 # Learning About Miniport Drivers
 
 
-
+## <a href="" id="ddk-miniport-drivers-ng"></a>
 
 
 There are several types of miniport drivers. The following list describes which sections of the WDK documentation you should read, depending on the type of miniport driver that you are writing:

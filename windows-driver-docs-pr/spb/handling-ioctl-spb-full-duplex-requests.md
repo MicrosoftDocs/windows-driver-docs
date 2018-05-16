@@ -44,7 +44,7 @@ Although the [**IOCTL\_SPB\_EXECUTE\_SEQUENCE**](https://msdn.microsoft.com/libr
 
 In contrast, SpbCx treats the **IOCTL\_SPB\_FULL\_DUPLEX** request as a custom, driver-defined IOCTL request. SpbCx passes **IOCTL\_SPB\_FULL\_DUPLEX** requests to the SPB controller driver through the driver's [*EvtSpbControllerIoOther*](https://msdn.microsoft.com/library/windows/hardware/hh450805) callback function, which also handles any custom IOCTL requests that the driver supports. SpbCx does no parameter checking or buffer capture for these requests. The driver is responsible for any parameter checking or buffer capture that might be required for the IOCTL requests that the driver receives through its *EvtSpbControllerIoOther* function. To enable buffer capture, the driver must supply an [*EvtIoInCallerContext*](https://msdn.microsoft.com/library/windows/hardware/ff541764) callback function when the driver registers its *EvtSpbControllerIoOther* function. For more information, see [Using the **SPB\_TRANSFER\_LIST** Structure for Custom IOCTLs](https://msdn.microsoft.com/library/windows/hardware/hh974776).
 
-
+## <a href="" id="code-example"></a>
 
 
 Typically, the SPB controller driver validates the parameter values in an **IOCTL\_SPB\_FULL\_DUPLEX** request in the *EvtSpbControllerIoOther* function instead of in the *EvtIoInCallerContext* function. The following code example shows how the driver might implement parameter checking. In this example, the driver verifies that the following parameter requirements are satisfied:

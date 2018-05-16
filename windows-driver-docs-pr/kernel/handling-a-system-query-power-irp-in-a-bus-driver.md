@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Handling a System Query-Power IRP in a Bus Driver
 
 
-
+## <a href="" id="ddk-handling-a-system-query-power-irp-in-a-bus-driver-kg"></a>
 
 
 When a system query-power request reaches a bus driver (that is not the power policy owner for a device), the driver ensures that it can support a device power state that corresponds to the queried system power state and, if wake-up is enabled, that the queried system power state would not prevent its device from waking the system.

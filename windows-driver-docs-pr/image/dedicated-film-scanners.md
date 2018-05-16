@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Dedicated Film Scanners
 
 
-
+## <a href="" id="ddk-dedicated-film-scanners-si"></a>
 
 
 A *dedicated* film scanner is a scanner that performs only film scanning. This device has only a film scanning surface from which to scan and has the same requirements as a flatbed scanner with film scanning capabilities. That is, the film scanner item must exist and must contain the physical dimensions of the scanning area. This area can be a single scanning frame for film-feeder scanners or a template area.

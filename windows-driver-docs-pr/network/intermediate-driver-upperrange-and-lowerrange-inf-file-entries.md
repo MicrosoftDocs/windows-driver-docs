@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Intermediate Driver UpperRange And LowerRange INF File Entries
 
 
-
+## <a href="" id="ddk-intermediate-driver-upperrange-and-lowerrange-inf-file-entries-ng"></a>
 
 
 This topic describes how to use the **UpperRange** and **LowerRange** INF file entries to define NDIS intermediate driver binding relationships.

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Queuing and Dequeuing IRPs
 
 
-
+## <a href="" id="ddk-queuing-and-dequeuing-irps-kg"></a>
 
 
 Because the I/O manager supports asynchronous I/O within a multitasking and multithreaded system, I/O requests to a device can come in faster than its driver can process them to completion, particularly in multiprocessor machines. Consequently, IRPs bound to any particular device must be queued in the driver when its device is already busy processing another IRP.

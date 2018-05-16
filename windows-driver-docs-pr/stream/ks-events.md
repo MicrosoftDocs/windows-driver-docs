@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # KS Events
 
 
-
+## <a href="" id="ddk-ks-events-ksg"></a>
 
 
 If you are writing an AVStream minidriver, see [Event Handling in AVStream](event-handling-in-avstream.md).

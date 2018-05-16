@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Raster Data Compression Attributes
 
 
-
+## <a href="" id="ddk-raster-data-compression-attributes-gg"></a>
 
 
 There are no attributes associated with raster data compression.

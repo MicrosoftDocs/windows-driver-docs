@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # PCL Separator Page Escape Codes
 
 
-
+## <a href="" id="ddk-pcl-separator-page-escape-codes-gg"></a>
 
 
 The escape codes shown in the following table can be used when you create a PCL separator page.

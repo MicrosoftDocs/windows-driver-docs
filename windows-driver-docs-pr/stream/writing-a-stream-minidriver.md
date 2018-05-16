@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Writing a Stream Minidriver
 
 
-
+## <a href="" id="ddk-writing-a-stream-minidriver-ksg"></a>
 
 
 The main design goal of the stream class driver is to handle the work both of handling the operating system, which includes the intricacies of supporting multiprocessor machines, and of supporting kernel streaming semantics. It requires the minidriver to handle only the device-specific portion of any operation it must perform. The class driver allocates memory for the minidriver, performs bookkeeping for any NT kernel resources the minidriver may require, and (optionally) handles all synchronization issues.

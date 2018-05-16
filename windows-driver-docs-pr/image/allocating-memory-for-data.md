@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Allocating Memory for Data
 
 
-
+## <a href="" id="ddk-allocating-memory-for-data-si"></a>
 
 
 The WIA service relies on the information supplied in the [**MINIDRV\_TRANSFER\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff545250) structure to perform a proper data transfer. The members of this structure that are relevant to the WIA minidriver are:

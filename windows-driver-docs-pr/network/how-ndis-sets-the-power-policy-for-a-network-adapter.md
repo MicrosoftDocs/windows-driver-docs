@@ -22,7 +22,7 @@ ms.technology: windows-devices
 # How NDIS Sets the Power Policy for a Network Adapter
 
 
-
+## <a href="" id="ddk-how-ndis-sets-the-power-policy-for-a-nic-ng"></a>
 
 
 NDIS serves as the device power policy owner for each network device. As such, NDIS sets and administers the power policy for each network device. For more information about managing device power policy, see [Managing Device Power Policy](https://msdn.microsoft.com/library/windows/hardware/ff554355).

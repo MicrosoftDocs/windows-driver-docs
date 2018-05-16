@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Feature Entry Format
 
 
-
+## <a href="" id="ddk-feature-entry-format-gg"></a>
 
 
 To specify a printer feature entry in a GPD file, use the following format:

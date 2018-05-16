@@ -27,7 +27,7 @@ ms.technology: windows-devices
 # Converting East Asian AFM Files to NTF Files
 
 
-
+## <a href="" id="ddk-converting-east-asian-afm-files-to-ntf-files-gg"></a>
 
 
 To process an East Asian font's .afm file, Makentf.exe (discussed in [Converting AFM Files to NTF Files](converting-afm-files-to-ntf-files.md)) requires .map and .ps files to create a mapping table from Unicode to CID (character ID) for the font.

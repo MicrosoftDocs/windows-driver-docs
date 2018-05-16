@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Splitting DMA Transfer Requests
 
 
-
+## <a href="" id="ddk-splitting-transfer-requests-kg"></a>
 
 
 Any driver might need to split up a transfer request and carry out more than one DMA transfer operation to satisfy a given IRP, depending on the following:

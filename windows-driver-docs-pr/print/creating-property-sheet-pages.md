@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Creating Property Sheet Pages
 
 
-
+## <a href="" id="ddk-creating-property-sheet-pages-gg"></a>
 
 
 Property sheet pages created using CPSUI are made up of [property sheet options](property-sheet-options.md), where each option represents a user-modifiable value. Dialogs for property sheet options are created using a set of [CPSUI-supported window controls](cpsui-supported-window-controls.md) that let a user modify an option's value.

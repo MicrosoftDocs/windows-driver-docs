@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # CoNDIS MCM OID Requests
 
 
-
+## <a href="" id="ddk-condis-mcm-driver-oid-requests-ng"></a>
 
 
 Like other CoNDIS call managers, miniport call managers (MCMs) can query or set the operating parameters of CoNDIS client drivers. CoNDIS client drivers can query or set the call manager parameters or the miniport driver parameters of an MCM.

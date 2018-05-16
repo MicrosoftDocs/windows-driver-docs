@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Unloading a Filter Driver
 
 
-
+## <a href="" id="ddk-unloading-a-filter-driver-ng"></a>
 
 
 The driver object that is associated with an NDIS filter driver specifies an [*Unload*](https://msdn.microsoft.com/library/windows/hardware/ff564886) routine called *FilterDriverUnload*. The system can call the *FilterDriverUnload* routine when all the miniport adapters that the filter driver services have been removed.

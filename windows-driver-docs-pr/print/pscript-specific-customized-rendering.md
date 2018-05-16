@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Pscript-Specific Customized Rendering
 
 
-
+## <a href="" id="ddk-pscript-specific-customized-rendering-gg"></a>
 
 
 Pscript5 allows device-specific customized code to inject Postscript commands into the data stream that the Pscript5 driver sends to the printer device. If you want to provide this type of customized code, you must provide a rendering plug-in that implements the [**IPrintOemPS::Command**](https://msdn.microsoft.com/library/windows/hardware/ff553199) method.

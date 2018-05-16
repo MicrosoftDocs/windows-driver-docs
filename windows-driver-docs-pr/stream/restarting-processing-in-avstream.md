@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Restarting Processing in AVStream
 
 
-
+## <a href="" id="ddk-restarting-processing-in-avstream-ksg"></a>
 
 
 AVStream stops processing if any of the following conditions are true:

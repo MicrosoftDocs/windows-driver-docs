@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Filter Driver Buffer Management
 
 
-
+## <a href="" id="ddk-filter-driver-buffer-management-ng"></a>
 
 
 Filter drivers create buffers to copy network data obtained from other drivers, or to initiate send or receive operations.

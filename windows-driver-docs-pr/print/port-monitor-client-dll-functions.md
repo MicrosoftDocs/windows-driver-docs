@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Port Monitor Client DLL Functions
 
 
-
+## <a href="" id="ddk-port-monitor-client-dll-functions-gg"></a>
 
 
 The following table lists the functions that a port monitor UI DLL must define.

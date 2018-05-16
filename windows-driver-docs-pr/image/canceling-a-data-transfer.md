@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Canceling a Data Transfer
 
 
-
+## <a href="" id="ddk-canceling-a-data-transfer-si"></a>
 
 
 WIA applications and WIA minidrivers can cancel a data transfer at any time. A WIA minidriver can determine whether an application canceled the data transfer by checking the value returned by the [**IWiaMiniDrvCallBack::MiniDrvCallback**](https://msdn.microsoft.com/library/windows/hardware/ff543946) method. If the method returns S\_FALSE, the data transfer has been canceled. The WIA minidriver must stop all acquisition activity and return to an idle state. It is then ready for the next data transfer.

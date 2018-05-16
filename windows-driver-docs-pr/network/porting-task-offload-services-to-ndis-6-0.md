@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Porting Task Offload Services to NDIS 6.0
 
 
-
+## <a href="" id="ddk-porting-task-offload-services-to-ndis-6-0-ng"></a>
 
 
 NDIS TCP/IP offload services enable the offloading of network data processing to offload-capable network interface cards (NICs). NDIS 6.0 supports two categories of TCP/IP offload services: task offload services that are enhanced forms of the NDIS 5.1 and earlier task offload services, and connection offload services. This section describes NDIS 5.1-to-NDIS 6.0 task offload porting issues and describes NDIS 6.0 support for configuring TCP/IP offload services.

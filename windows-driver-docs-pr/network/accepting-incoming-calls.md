@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Accepting Incoming Calls
 
 
-
+## <a href="" id="ddk-accepting-incoming-calls-ng"></a>
 
 
 Before an application can accept an incoming call, it first must have a line open. A line is opened as a result of an application calling the TAPI **lineOpen** function. This TAPI-function call causes underlying drivers to encapsulate TAPI parameters in NDIS structures in order to prepare to receive an incoming call. After the CoNDIS WAN miniport driver receives an incoming call, the miniport driver must first create a virtual connection (VC) with the NDPROXY driver and then notify NDPROXY of the incoming call. NDPROXY in turn notifies the application through TAPI. The following list describes how the incoming call is set up, connected, and made:

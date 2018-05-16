@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Creating the Plug-In
 
 
-
+## <a href="" id="ddk-creating-the-plug-in-gg"></a>
 
 
 All printer driver plug-ins must define DllMain, DllGetClassObject, and DllCanUnloadNow functions. They must also implement the IClassFactory COM interface and one of the [IPrintOemUI](iprintoemui-com-interface.md), [IPrintOemUI2](iprintoemui2-com-interface.md), [IPrintOemUni](iprintoemuni-com-interface.md), [IPrintOemUni2](iprintoemuni2-com-interface.md), [IPrintOemUni3](iprintoemuni3-com-interface.md), [IPrintOemPS](iprintoemps-com-interface.md), or [IPrintOemPS2](iprintoemps2-com-interface.md) COM interfaces.

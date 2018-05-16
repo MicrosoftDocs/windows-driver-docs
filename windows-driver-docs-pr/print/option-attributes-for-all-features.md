@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Option Attributes for All Features
 
 
-
+## <a href="" id="ddk-option-attributes-for-all-features-gg"></a>
 
 
 The following table lists, in alphabetic order, the [option attributes](option-attributes.md) available for all features and describes their parameters.

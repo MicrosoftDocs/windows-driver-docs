@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using IoCompletion Routines
 
 
-
+## <a href="" id="ddk-using-iocompletion-routines-kg"></a>
 
 
 Higher-level drivers that monitor on an IRP-specific basis how lower-level drivers carried out particular requests can have one or more [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routines. Higher-level drivers that allocate IRPs to send requests to lower drivers must have an *IoCompletion* routine.

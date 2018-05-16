@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Porting Protocol Binding Operations to NDIS 6.0
 
 
-
+## <a href="" id="ddk-porting-protocol-binding-operations-to-ndis-6-0-nd"></a>
 
 
 As with NDIS 5.*x*, NDIS 6.0 protocol drivers can support multiple protocol bindings. A protocol binding is a binding instance of a protocol driver. A protocol binding binds an NDIS protocol driver to a miniport adapter. To initialize a protocol binding, NDIS 5.*x* calls the protocol driver's [**ProtocolBindAdapter**](https://msdn.microsoft.com/library/windows/hardware/ff562465) function. In NDIS 6.0, the [*ProtocolBindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570220) function replaces *ProtocolBindAdapter*.

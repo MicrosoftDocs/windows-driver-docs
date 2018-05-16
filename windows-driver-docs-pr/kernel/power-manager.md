@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Power Manager
 
 
-
+## <a href="" id="ddk-power-manager-kg"></a>
 
 
 The power manager is responsible for managing power usage for the system. It administers the system-wide power policy and tracks the path of power IRPs through the system.

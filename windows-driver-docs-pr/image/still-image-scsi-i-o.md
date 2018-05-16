@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Still Image SCSI I/O
 
 
-
+## <a href="" id="ddk-still-image-scsi-i-o-si"></a>
 
 
 This section contains additional information about SCSI control codes and the structures associated with these control codes.

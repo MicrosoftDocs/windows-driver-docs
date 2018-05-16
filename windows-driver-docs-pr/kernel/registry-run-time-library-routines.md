@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Registry Run-Time Library Routines
 
 
-
+## <a href="" id="ddk-registry-run-time-library-routines-kg"></a>
 
 
 To manipulate registry entries, drivers can call the **Rtl*Xxx*Registry*Xxx*** routines, which provide a simpler interface than the **Zw*Xxx*Key** routines. When doing so, the driver is not required to open and close handles; instead, the driver refers to keys by name.

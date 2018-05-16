@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using Power Manager Routines for Idle Detection
 
 
-
+## <a href="" id="ddk-using-power-manager-routines-for-idle-detection-kg"></a>
 
 
 The power manager provides support for idle detection through the [**PoRegisterDeviceForIdleDetection**](https://msdn.microsoft.com/library/windows/hardware/ff559721) and [**PoSetDeviceBusy**](https://msdn.microsoft.com/library/windows/hardware/ff559755) routines.

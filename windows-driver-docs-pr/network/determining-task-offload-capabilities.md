@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Determining Task Offload Capabilities
 
 
-
+## <a href="" id="ddk-determining-task-offload-capabilities-ng"></a>
 
 
 NDIS supports task offload services that are enhanced forms of the NDIS 5.1 and earlier task offload services. For more information about how to determine connection offload capabilities, see [Determining Connection Offload Capabilities](determining-connection-offload-capabilities.md).

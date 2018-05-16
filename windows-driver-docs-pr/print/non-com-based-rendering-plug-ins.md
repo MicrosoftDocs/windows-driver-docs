@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Non-COM-Based Rendering Plug-Ins
 
 
-
+## <a href="" id="ddk-non-com-based-rendering-plug-ins-gg"></a>
 
 
 A printer minidriver notifies the core driver of its capabilities by implementing the [**OEMEnableDriver**](https://msdn.microsoft.com/library/windows/hardware/ff557708) function, which fills in the members of a [**DRVENABLEDATA**](https://msdn.microsoft.com/library/windows/hardware/ff556206) structure. The **pdrvfn** member of this structure should be set with the array address of [**DRVFN**](https://msdn.microsoft.com/library/windows/hardware/ff556221) structures. Each element of this array should be initialized with a function index, and the address of one of the **OEM***Xxx* functions that the IHV is implementing, respectively. (For detailed descriptions of each of the **OEM***Xxx* functions, see [Non-COM-Based DDI Hook-Out Functions](https://msdn.microsoft.com/library/windows/hardware/ff557586).)

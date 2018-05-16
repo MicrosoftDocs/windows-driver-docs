@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Halftoning with Unidrv
 
 
-
+## <a href="" id="ddk-halftoning-with-unidrv-gg"></a>
 
 
 Halftoning operations can be controlled by either GDI or driver software, or by device hardware. The type that is used is dependent on the color format. The following topics discuss Unidrv's support for halftoning operations:

@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA-TWAIN Locking
 
 
-
+## <a href="" id="ddk-wia-twain-locking-si"></a>
 
 
 For a TWAIN driver and a WIA driver that use different locking mechanisms, when the WIA driver accesses the device, the TWAIN driver should not be able to simultaneously access the device. This can lead to such problems as corrupted images and failed transfers.

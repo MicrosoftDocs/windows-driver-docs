@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Shared Memory Resource Allocation
 
 
-
+## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
 
 
 To allocate shared memory resources for a VM queue, a miniport driver calls the [**NdisAllocateSharedMemory**](https://msdn.microsoft.com/library/windows/hardware/ff561616) function. For example, the miniport driver allocates shared memory when it receives the [OID\_RECEIVE\_FILTER\_QUEUE\_ALLOCATION\_COMPLETE](https://msdn.microsoft.com/library/windows/hardware/ff569793) OID. Also, a miniport driver can allocate shared memory for the default queue during network adapter initialization. For more information about allocating queues, see [Allocating a VM Queue](allocating-a-vm-queue.md).

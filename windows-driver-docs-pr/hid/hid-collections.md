@@ -32,7 +32,7 @@ A *HID collection* is a meaningful grouping of HID controls and their respective
 
 Controls should be grouped together if they are logically related or are functionally dependent on one another. For instance, a SHIFT key and a letter key on a keyboard should not belong to separate collections. Collections can have nested *subcollections*, also referred to as [link collections](link-collections.md). Report descriptors define one or more [top-level collections](top-level-collections.md), and the report items, associated with each collection, define one or more HID reports.
 
-
+## <a href="" id="ddk-hid-collections-kg"></a>
 
 
 Windows extends the concept of a HID collection to include the following:

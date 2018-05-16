@@ -21,7 +21,7 @@ ms.technology: windows-devices
 # Quality Management
 
 
-
+## <a href="" id="ddk-quality-management-ksg"></a>
 
 
 The kernel streaming architecture provides optional support for quality management. This mechanism adjusts flow control to match resource constraints and determines degradation needs in a filter graph. Quality management notifications are sent through a kernel-mode proxy.

@@ -21,7 +21,7 @@ ms.technology: windows-devices
 # Stream Pointers and Offsets
 
 
-
+## <a href="" id="ddk-stream-pointers-and-offsets-ksg"></a>
 
 
 A [**KSSTREAM\_POINTER**](https://msdn.microsoft.com/library/windows/hardware/ff567139) structure contains two [**KSSTREAM\_POINTER\_OFFSET**](https://msdn.microsoft.com/library/windows/hardware/ff567140) structures that index input and output positions within a frame. A minidriver can either manipulate these offsets or access the data at frame resolution.

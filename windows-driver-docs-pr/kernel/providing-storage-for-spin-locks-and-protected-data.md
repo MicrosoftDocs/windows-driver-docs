@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Providing Storage for Spin Locks and Protected Data
 
 
-
+## <a href="" id="ddk-providing-storage-for-spin-locks-and-protected-data-kg"></a>
 
 
 As part of device start-up, a driver must allocate resident storage for any spin-lock-protected data or resources and for corresponding spin locks in one of the following places:

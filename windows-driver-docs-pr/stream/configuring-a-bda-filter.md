@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Configuring a BDA Filter
 
 
-
+## <a href="" id="ddk-configuring-a-bda-filter-ksg"></a>
 
 
 A BDA minidriver processes method requests of the [KSMETHODSETID\_BdaDeviceConfiguration](https://msdn.microsoft.com/library/windows/hardware/ff563404) method set to configure a filter instance for the minidriver in the current filter graph.

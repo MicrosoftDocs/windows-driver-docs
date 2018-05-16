@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Updating the MiniportInitialize Function for NDIS 6.0
 
 
-
+## <a href="" id="ddk-updating-the-miniportinitialize-function-for-ndis-6-0-ng"></a>
 
 
 In NDIS 6.0, the [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function replaces the [*MiniportInitialize*](https://msdn.microsoft.com/library/windows/hardware/ff550472) function. *MiniportInitializeEx* initializes an adapter for network I/O operations. NDIS passes *MiniportInitializeEx* an [**NDIS\_MINIPORT\_INIT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff565972) structure. For more information about *MiniportInitializeEx* and this structure, see [Initializing an Adapter](initializing-a-miniport-adapter.md).

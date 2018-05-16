@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Intermediate Driver Network Data Management
 
 
-
+## <a href="" id="ddk-intermediate-driver-packet-management-ng"></a>
 
 
 An intermediate driver receives [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures with one or more associated MDLs from a higher-level driver to send over the network. The intermediate driver can pass the data through to the underlying driver by calling [**NdisSendNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff564535) if the driver has a connectionless lower edge, or by calling [**NdisCoSendNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff561728) if the driver has a connection-oriented lower edge. Alternatively, the intermediate driver can take some actions to modify either the contents of the chained buffers or the ordering or timing of the incoming data relative to other transmissions.

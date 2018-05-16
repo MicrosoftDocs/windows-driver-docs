@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # DVD Copyright Protection
 
 
-
+## <a href="" id="ddk-dvd-copyright-protection-ksg"></a>
 
 
 The following topics address copyright protection:

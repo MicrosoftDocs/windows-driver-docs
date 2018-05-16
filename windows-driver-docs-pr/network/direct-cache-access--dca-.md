@@ -26,7 +26,7 @@ ms.technology: windows-devices
 
  
 
-
+## <a href="" id="ddk-direct-cache-access--dca--ng"></a>
 
 
 *Direct cache access (DCA)* provides a mechanism for NetDMA clients to indicate that destination data is targeted for a CPU cache. DCA support is not present for NetDMA providers before version 2.0 and it is optional for NetDMA 2.0 and later providers. A NetDMA provider that supports DCA sets the NET\_DMA\_PROVIDER\_CHARACTERISTICS\_DCA\_SUPPORTED bit in the **Flags** member of the [**NET\_DMA\_PROVIDER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff568738) structure at the *ProviderCharacteristics* parameter of the [**NetDmaRegisterProvider**](https://msdn.microsoft.com/library/windows/hardware/ff568336) function.

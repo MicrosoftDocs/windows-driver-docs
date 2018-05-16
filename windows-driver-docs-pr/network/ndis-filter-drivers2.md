@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # NDIS Filter Drivers
 
 
-
+## <a href="" id="ddk-ndis-6-0-filter-drivers-ng"></a>
 
 
 NDIS filter drivers are supported in NDIS 6.0 and later. The following sections introduce filter drivers and describe how to write and install NDIS filter drivers:

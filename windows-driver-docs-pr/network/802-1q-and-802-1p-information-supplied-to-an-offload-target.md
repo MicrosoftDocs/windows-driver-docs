@@ -16,7 +16,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-
+## <a href="" id="ddk-802-1q-and-802-1p-information-supplied-to-an-offload-target-ng"></a>
 
 
 A filter driver, an intermediate driver, or NDIS can supply the following 802.1Q and 802.1p information to an offload target:

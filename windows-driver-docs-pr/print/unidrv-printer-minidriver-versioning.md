@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Unidrv Printer Minidriver Versioning
 
 
-
+## <a href="" id="ddk-unidrv-printer-minidriver-versioning-gg"></a>
 
 
 See [Specifying Printer Driver Version Numbers](print-driver-versioning.md).

@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Configuration of Plug and Play Serial Device that Requires a 16550 UART-Compatible Interface
 
 
-
+## <a href="" id="ddk-configuration-of-plug-and-play-serial-device-that-requires-a-16550"></a>
 
 
 This section describes the typical configuration of hardware, drivers, and device stacks that is used for serial devices that:

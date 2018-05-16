@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Overview of Spooler Notification
 
 
-
+## <a href="" id="ddk-overview-of-spooler-notification-gg"></a>
 
 
 Spooler notification consists of a set of COM interfaces for spooler-hosted print components that enable them to open a bidirectional or unidirectional data channel with applications running in sessions other than the spooler's session.

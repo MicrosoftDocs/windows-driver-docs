@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # WMI Class Names and Base Classes
 
 
-
+## <a href="" id="ddk-wmi-class-names-and-base-classes-kg"></a>
 
 
 WMI class names are case-insensitive, must start with a letter, and cannot begin or end with an underscore. All remaining characters must be letters, digits, or underscores.

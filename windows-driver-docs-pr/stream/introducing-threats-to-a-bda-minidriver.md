@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Introducing Threats to a BDA Minidriver
 
 
-
+## <a href="" id="ddk-introducing-threats-to-a-bda-minidriver-ksg"></a>
 
 
 The following paths can possibly introduce BDA minidriver threats:

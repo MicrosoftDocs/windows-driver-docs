@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Leading and Trailing Edge Stream Pointers
 
 
-
+## <a href="" id="ddk-leading-and-trailing-edge-stream-pointers-ksg"></a>
 
 
 By default, each AVStream queue contains a *leading edge* stream pointer. The leading edge points to new frames as they arrive into the queue. Specifically, the leading edge initially points to the first frame to arrive into the queue and does not move until the minidriver moves it. AVStream creates the leading edge, which then exists for the lifetime of the queue. Minidrivers can manipulate the leading edge using functions provided by Microsoft.

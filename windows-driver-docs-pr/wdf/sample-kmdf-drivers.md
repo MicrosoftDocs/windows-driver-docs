@@ -21,7 +21,7 @@ ms.technology: windows-devices
 
 This topic lists the Kernel-Mode Driver Framework (KMDF) sample drivers that you can download from the [Windows driver samples repository](https://github.com/Microsoft/Windows-driver-samples) on GitHub.
 
-
+## <a href="" id="ddk-sample-framework-based-drivers-df"></a>
 
 
 For information on building the samples, see [Building a Driver](https://msdn.microsoft.com/windows-drivers/develop/building_a_driver).

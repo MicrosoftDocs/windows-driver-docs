@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Plotter Driver Capabilities
 
 
-
+## <a href="" id="ddk-plotter-driver-capabilities-gg"></a>
 
 
 The Microsoft Plotter Driver (MSPlot) provides the following capabilities:

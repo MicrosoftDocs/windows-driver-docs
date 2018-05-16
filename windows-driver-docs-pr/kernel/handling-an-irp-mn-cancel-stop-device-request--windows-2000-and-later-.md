@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Handling an IRP\_MN\_CANCEL\_STOP\_DEVICE Request (Windows 2000 and later)
 
 
-
+## <a href="" id="ddk-handling-an-irp-mn-cancel-stop-device-request-windows-2000-and-lat"></a>
 
 
 An [**IRP\_MN\_CANCEL\_STOP\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff550826) request must be handled first by the parent bus driver for a device and then by each next higher driver in the device stack. A driver handles stop IRPs in its [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine.

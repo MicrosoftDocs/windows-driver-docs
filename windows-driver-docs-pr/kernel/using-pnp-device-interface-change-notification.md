@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using PnP Device Interface Change Notification
 
 
-
+## <a href="" id="ddk-using-pnp-device-interface-change-notification-kg"></a>
 
 
 A driver registers for **EventCategoryDeviceInterfaceChange** notification so the driver can be notified when device interfaces of a particular class arrive (are enabled) or are removed (disabled) on the machine. For example, a composite battery driver might register for notification of device interfaces of class battery so it can provide information to the operating system about total available battery power.

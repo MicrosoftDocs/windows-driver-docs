@@ -8,7 +8,7 @@ ms.assetid: 279913cb-90f1-411f-a23a-38af4c99638d
 # Completing IRPs in Dispatch Routines
 
 
-
+## <a href="" id="ddk-completing-irps-in-dispatch-routines-kg"></a>
 
 
 This section describes completing IRPs in dispatch routines, and contains the following topics:

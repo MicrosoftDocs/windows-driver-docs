@@ -19,7 +19,7 @@ ms.technology: windows-devices
 
  
 
-
+## <a href="" id="ddk-registering-a-netdma-provider-ng"></a>
 
 
 After a NetDMA provider driver successfully completes driver initialization and returns from its [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine, the Plug and Play (PnP) manager calls the NetDMA provider driver's [**AddDevice**](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine to add dynamic memory access (DMA) engines. The PnP manager calls **AddDevice** once for each DMA engine that it detected. For more information about the NetDMA provider driver's **DriverEntry** routine, see [Initializing a NetDMA Provider Driver](initializing-a-netdma-provider-driver.md).

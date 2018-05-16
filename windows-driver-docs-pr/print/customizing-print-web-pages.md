@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Customizing Print Web Pages
 
 
-
+## <a href="" id="ddk-customizing-print-web-pages-gg"></a>
 
 
 This section provides the following topics:

@@ -23,7 +23,7 @@ ms.technology: windows-devices
 # Printing a Print Job
 
 
-
+## <a href="" id="ddk-printing-a-print-job-gg"></a>
 
 
 After a port has been opened, as described in [Opening and Closing a Port](opening-and-closing-a-port.md), the spooler can send print jobs to the port.

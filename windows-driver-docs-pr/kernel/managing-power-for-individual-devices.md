@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Managing Power for Individual Devices
 
 
-
+## <a href="" id="ddk-managing-power-for-individual-devices-kg"></a>
 
 
 Drivers manage power for their devices by responding to [system power state](system-power-states.md) changes, detecting and shutting down idle devices, and powering up devices when they are needed.

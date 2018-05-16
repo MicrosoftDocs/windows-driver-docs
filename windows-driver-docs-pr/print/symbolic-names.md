@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Symbolic Names
 
 
-
+## <a href="" id="ddk-symbolic-names-gg"></a>
 
 
 A symbolic name is a character string used as an identifier. Symbolic names have the following characteristics:

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Locating ICC Profiles
 
 
-
+## <a href="" id="ddk-locating-icc-profiles-gg"></a>
 
 
 When color management is enabled, GDI searches for an appropriate ICC profile, using the following steps:

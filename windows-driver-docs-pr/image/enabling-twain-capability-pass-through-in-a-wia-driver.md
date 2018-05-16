@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Enabling TWAIN Capability Pass-Through in a WIA Driver
 
 
-
+## <a href="" id="ddk-enabling-twain-capability-pass-through-in-a-wia-driver-si"></a>
 
 
 To enable support for TWAIN capability pass-through, add the **WiaItemTypeTwainCapabilityPassThrough** flag to the [**WIA\_IPA\_ITEM\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff551585) property on the root item. This flag is defined in header file *wiatwcmp.h*.

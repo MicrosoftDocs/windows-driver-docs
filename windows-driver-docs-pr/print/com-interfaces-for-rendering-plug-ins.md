@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # COM Interfaces for Rendering Plug-Ins
 
 
-
+## <a href="" id="ddk-com-interfaces-for-rendering-plug-ins-gg"></a>
 
 
 The following COM interfaces are defined for communication between Microsoft's printer drivers and rendering plug-ins:

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Versioned Interfaces
 
 
-
+## <a href="" id="ddk-versioned-interfaces-ng"></a>
 
 
 NDIS 6.0 supports versioning for key structures. Also, many former function parameters are moved to structures. Moving the function parameters to versioned structures allows the function parameters to be changed in later NDIS versions without changing the function interface.

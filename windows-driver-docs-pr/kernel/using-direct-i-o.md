@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using Direct I/O
 
 
-
+## <a href="" id="ddk-using-direct-i-o-kg"></a>
 
 
 Drivers for devices that can transfer large amounts of data at a time should use direct I/O for those transfers. Using direct I/O for large transfers improves a driver's performance, both by reducing its interrupt overhead and by eliminating the memory allocation and copying operations inherent in buffered I/O.

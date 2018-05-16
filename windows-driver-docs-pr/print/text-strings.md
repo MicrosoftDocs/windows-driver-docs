@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Text Strings
 
 
-
+## <a href="" id="ddk-text-strings-gg"></a>
 
 
 Text strings are strings of literal characters, delimited by quotation marks. Strings used by [Unidrv minidrivers](unidrv-minidrivers.md) can be placed in either of two locations:

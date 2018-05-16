@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Architecture Overview
 
 
-
+## <a href="" id="ddk-wia-architecture-overview-si"></a>
 
 
 WIA is implemented as a Component Object Model (COM) out-of-process server to ensure the robust operation of client applications. WIA is available in Microsoft Windows Me, Windows XP and later. There are no plans to port all of the system components that WIA depends on to Windows 95/98 or to Windows 2000. For information about the imaging architecture used on Windows 95/98 and Windows 2000, see [Overview of Microsoft STI and Microsoft WIA](overview-of-microsoft-sti-and-microsoft-wia.md).

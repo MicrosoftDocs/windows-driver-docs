@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Minimum Requirements for Supporting Header-Data Split
 
 
-
+## <a href="" id="ddk-minimum-requirements-for-supporting-header-data-split-ng"></a>
 
 
 This topic summarizes the minimum requirements that a provider must meet to support header-data split. For a complete listing of the rules that apply to splitting Ethernet frames, see [Splitting Ethernet Frames](splitting-ethernet-frames.md).

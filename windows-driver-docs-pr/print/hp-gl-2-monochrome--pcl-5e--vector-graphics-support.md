@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # HP-GL/2 Monochrome (PCL-5e) Vector Graphics Support
 
 
-
+## <a href="" id="ddk-hp-gl-2-monochrome-pcl-5e-vector-graphics-support-gg"></a>
 
 
 HP-GL/2 monochrome (PCL-5e) vector graphics support in Unidrv running on Windows XP and later allows the printer driver to create job data in a format that is optimal for the device: vector graphics versus raster graphics. This normally results in less system overhead, less output data to transmit, and faster print throughput.

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Examining the AnswerFile
 
 
-
+## <a href="" id="ddk-examining-the-answerfile-ng"></a>
 
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.

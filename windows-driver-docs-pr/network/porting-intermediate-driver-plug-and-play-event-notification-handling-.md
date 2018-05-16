@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Porting Intermediate Driver Plug and Play Event Notification Handling to NDIS 6.0
 
 
-
+## <a href="" id="ddk-porting-intermediate-driver-plug-and-play-event-notification-handl"></a>
 
 
 Like NDIS 5.*x* intermediate drivers, NDIS 6.0 intermediate drivers receive network Plug and Play events and device Plug and Play events.

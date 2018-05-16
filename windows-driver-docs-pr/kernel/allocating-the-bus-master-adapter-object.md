@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Allocating the Bus-Master Adapter Object
 
 
-
+## <a href="" id="ddk-allocating-the-bus-master-adapter-object-kg"></a>
 
 
 To prepare for packet-based, bus-master DMA, a driver calls [**KeFlushIoBuffers**](https://msdn.microsoft.com/library/windows/hardware/ff552041) and [**AllocateAdapterChannel**](https://msdn.microsoft.com/library/windows/hardware/ff540573) after receiving an [**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff550794) or [**IRP\_MJ\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/ff550819). Before the driver calls these routines, its dispatch routine should check the validity of the IRP's parameters. It might also queue the IRP to another driver routine for further processing. The transfer request is the current IRP requiring a device I/O operation.

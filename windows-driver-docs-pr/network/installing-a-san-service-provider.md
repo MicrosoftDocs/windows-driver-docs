@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Installing a SAN Service Provider
 
 
-
+## <a href="" id="ddk-installing-a-san-service-provider-ng"></a>
 
 
 A SAN service provider is typically installed as a base Windows Sockets service provider that interfaces with the Windows Sockets switch. Although a SAN service provider can be installed for direct use by an application instead, the Windows Sockets Direct technology does not support using a SAN service provider in this manner. A SAN service provider that is installed for direct use by an application exports its native address family and protocol characteristics rather than those of TCP/IP protocol.

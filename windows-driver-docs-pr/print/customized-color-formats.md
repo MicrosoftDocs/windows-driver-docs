@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Customized Color Formats
 
 
-
+## <a href="" id="ddk-customized-color-formats-gg"></a>
 
 
 Unidrv supports several color formats, which are listed in [Handling Color Formats](handling-color-formats.md). For these formats, Unidrv converts GDI bitmaps into the correct format before sending it to the printer. If your printer accepts formats not supported by Unidrv, you must provide a rendering plug-in that implements the [**IPrintOemUni::ImageProcessing**](https://msdn.microsoft.com/library/windows/hardware/ff554261) method.

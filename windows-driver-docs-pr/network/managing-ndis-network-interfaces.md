@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Managing NDIS Network Interfaces
 
 
-
+## <a href="" id="ddk-managing-ndis-network-interfaces-ng"></a>
 
 
 NDIS network interface providers register network interfaces with NDIS. Before registering an interface, an interface provider obtains a [**NET\_LUID**](https://msdn.microsoft.com/library/windows/hardware/ff568747) value for that interface. NDIS assigns an interface index ( *IfIndex* in RFC 2863) to an interface when it is registered.

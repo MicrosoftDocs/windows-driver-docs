@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # AdapterControl Routine Requirements
 
 
-
+## <a href="" id="ddk-adaptercontrol-routine-requirements-kg"></a>
 
 
 At a minimum, an [*AdapterControl*](https://msdn.microsoft.com/library/windows/hardware/ff540504) routine must do the following:

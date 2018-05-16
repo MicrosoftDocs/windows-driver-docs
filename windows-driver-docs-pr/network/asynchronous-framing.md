@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Asynchronous Framing
 
 
-
+## <a href="" id="ddk-asynchronous-framing-ng"></a>
 
 
 The following diagram illustrates asynchronous framing with compression turned off.

@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Intermediate drivers
 
 
-
+## <a href="" id="ddk-ndis-intermediate-driver-ng"></a>
 
 
 As the following figure illustrates, intermediate drivers are typically layered between miniport drivers and transport protocol drivers.

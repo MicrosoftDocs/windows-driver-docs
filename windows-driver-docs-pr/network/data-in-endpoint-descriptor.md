@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Data In Endpoint Descriptor
 
 
-
+## <a href="" id="ddk-data-in-endpoint-descriptor-ng"></a>
 
 
 <table>

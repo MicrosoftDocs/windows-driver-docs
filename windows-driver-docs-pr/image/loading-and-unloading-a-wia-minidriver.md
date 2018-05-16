@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Loading and Unloading a WIA Minidriver
 
 
-
+## <a href="" id="ddk-loading-and-unloading-a-wia-minidriver-si"></a>
 
 
 After the WIA device driver is installed, the WIA service attempts to load it for the first time. The WIA minidriver's [**IStiUSD::Initialize**](https://msdn.microsoft.com/library/windows/hardware/ff543824) method is called and should perform the following tasks:

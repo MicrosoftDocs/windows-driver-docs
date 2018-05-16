@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Handling DIF Codes
 
 
-
+## <a href="" id="ddk-handling-dif-codes-dg"></a>
 
 
 [*Device installation applications*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) send [device installation function codes](https://msdn.microsoft.com/library/windows/hardware/ff541307) (DIF codes) to installers by calling [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922). This function, in turn, calls the installer's entry point function. For a description of installer entry points, see:

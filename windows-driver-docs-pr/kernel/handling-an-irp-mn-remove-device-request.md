@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Handling an IRP\_MN\_REMOVE\_DEVICE Request
 
 
-
+## <a href="" id="ddk-handling-an-irp-mn-remove-device-request-kg"></a>
 
 
 The PnP manager uses this IRP to direct drivers to remove a device's software representation (device objects, and so forth). The PnP manager sends this IRP when a device has been removed in an orderly fashion (for example, initiated by a user in the Unplug or Eject Hardware program), by surprise (a user pulls the device from its slot without prior warning), or when the user requests to update drivers.

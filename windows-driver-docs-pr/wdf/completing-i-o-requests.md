@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Completing I/O Requests
 
 
-
+## <a href="" id="ddk-completing-i-o-requests-df"></a>
 
 
 Every framework-based driver must eventually complete every I/O request that it receives from the framework. Drivers complete requests by calling the request object's [**WdfRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff549945), [**WdfRequestCompleteWithInformation**](https://msdn.microsoft.com/library/windows/hardware/ff549948), or [**WdfRequestCompleteWithPriorityBoost**](https://msdn.microsoft.com/library/windows/hardware/ff549949) method.

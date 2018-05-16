@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # NDIS General Status Indications
 
 
-
+## <a href="" id="ddk-ndis-general-status-indications-nr"></a>
 
 
 This section includes:

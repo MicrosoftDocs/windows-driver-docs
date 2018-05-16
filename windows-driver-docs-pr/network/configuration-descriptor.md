@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Configuration Descriptor
 
 
-
+## <a href="" id="ddk-configuration-descriptor-ng"></a>
 
 
 <table>

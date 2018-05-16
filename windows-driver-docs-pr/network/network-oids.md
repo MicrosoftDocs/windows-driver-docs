@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Network OIDs
 
 
-
+## <a href="" id="ddk-network-oids-ng"></a>
 
 
 A miniport driver maintains information about its capabilities and current status, as well as information about each miniport adapter that it manages. Each information type is identified by an object identifier (OID). OIDs are system-defined. NDIS handles many of the OID requests for miniport drivers and NDIS does not pass such requests on to the miniport driver. The miniport driver reports many of its capabilities, which were formerly reported in response to OID queries, in its attributes during initialization. For more information about reporting attributes, see [Initializing an Adapter](initializing-a-miniport-adapter.md).

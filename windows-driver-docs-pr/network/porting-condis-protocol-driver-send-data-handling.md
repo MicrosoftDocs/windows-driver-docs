@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Porting CoNDIS Protocol Driver Send Data Handling
 
 
-
+## <a href="" id="ddk-porting-ndis-protocol-driver-send-data-handling-nd"></a>
 
 
 In CoNDIS 6.0, the [**NdisCoSendNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff561728) function replaces the CoNDIS 5.x [**NdisCoSendPackets**](https://msdn.microsoft.com/library/windows/hardware/ff551890) function. **NdisCoSendNetBufferLists** sends a pointer to a linked list of [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures, each of which contains a linked list of [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structures. **NdisCoSendNetBufferLists** does not return a completion status. In CoNDIS 6.0, NDIS always completes a send operation asynchronously by calling the [**ProtocolCoSendNetBufferListsComplete**](https://msdn.microsoft.com/library/windows/hardware/ff570257) function.

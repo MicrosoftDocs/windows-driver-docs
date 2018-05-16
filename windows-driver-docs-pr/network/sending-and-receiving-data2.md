@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Sending and receiving data in CoNDIS
 
 
-
+## <a href="" id="ddk-sending-and-receiving-data-ng"></a>
 
 
 Transferring data involves sending or receiving packets over an established and activated VC.

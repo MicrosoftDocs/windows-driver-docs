@@ -9,7 +9,7 @@ keywords: ["joysticks WDK HID , axes", "virtual joystick drivers WDK HID , axes"
 # Special Case Mappings
 
 
-
+## <a href="" id="ddk-special-case-mappings-di"></a>
 
 
 Because of the complexity and variety of input devices available today, no single set of mappings can be used for all types of devices. DirectInput supports two special cases that are described in this section.

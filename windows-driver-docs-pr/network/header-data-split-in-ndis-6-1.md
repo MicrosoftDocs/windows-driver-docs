@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Header-Data Split in NDIS 6.1
 
 
-
+## <a href="" id="ddk-header-data-split-in-ndis-6-1-ng"></a>
 
 
 *Header-data split* services improve network performance by splitting the header and data in received Ethernet frames into separate buffers. By separating the headers and the data, these services enable the headers to be collected together into smaller regions of memory. Therefore, more headers fit into a single memory page and more headers fit into the system caches, so the overhead for memory accesses in the driver stack is reduced.

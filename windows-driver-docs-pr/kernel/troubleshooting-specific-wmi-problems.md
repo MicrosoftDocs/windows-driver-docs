@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Troubleshooting Specific WMI Problems
 
 
-
+## <a href="" id="ddk-troubleshooting-specific-wmi-problems-kg"></a>
 
 
 ### <a href="" id="driver-s-wmi-classes-do-not-appear-in-the--root-wmi-namespace"></a>Driver's WMI Classes Do Not Appear in the \\root\\wmi Namespace

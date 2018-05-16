@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Miniport Driver Hardware Reset
 
 
-
+## <a href="" id="ddk-hardware-reset-ng"></a>
 
 
 A miniport driver must register a [*MiniportResetEx*](https://msdn.microsoft.com/library/windows/hardware/ff559432) function with [**NdisMRegisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563654).

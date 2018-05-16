@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Indicating Received Ethernet Frames
 
 
-
+## <a href="" id="ddk-indicating-received-ethernet-frames-ng"></a>
 
 
 The Windows TCP/IP protocol driver imposes a set of requirements for receiving Ethernet frames. Any driver that originates receive indications of Ethernet frames or modifies receive indications of underlying drivers must support the general requirements that TCP/IP imposes. These drivers include Ethernet miniport drivers, MUX intermediate drivers, and filter drivers.

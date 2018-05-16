@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Link Collections
 
 
-
+## <a href="" id="ddk-link-collections-kg"></a>
 
 
 A *link collection* as a nested subcollection within a [top-level collection](top-level-collections.md). A top-level collection can have zero or more link collections.

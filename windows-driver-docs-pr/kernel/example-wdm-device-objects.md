@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Example WDM Device Objects
 
 
-
+## <a href="" id="ddk-example-wdm-device-objects-kg"></a>
 
 
 The following figure illustrates the device objects that represent the keyboard and mouse devices shown previously in the figure illustrating [Keyboard and Mouse Hardware Configurations](sample-device-and-driver-configuration.md#keyboard-and-mouse-hardware-configurations). The keyboard and mouse drivers shown in the figure illustrating [Keyboard and Mouse Driver Layers](sample-device-and-driver-configuration.md#keyboard-and-mouse-driver-layers) create these device objects by calling an I/O support routine ([**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397)).

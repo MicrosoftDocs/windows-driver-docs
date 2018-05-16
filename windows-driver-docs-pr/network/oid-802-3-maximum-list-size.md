@@ -15,7 +15,7 @@ keywords:
 # OID\_802\_3\_MAXIMUM\_LIST\_SIZE
 
 
-
+## <a href="" id="ddk-oid-802-3-maximum-list-size-nr"></a>
 
 
 NDIS and overlying protocol drivers use the OID\_802\_3\_MAXIMUM\_LIST\_SIZE OID request to query or set the maximum number of 6-byte multicast addresses that the miniport adapter's multicast address list can hold.

@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # CoNDIS Miniport Driver OID Requests
 
 
-
+## <a href="" id="ddk-condis-miniport-driver-oid-requests-ng"></a>
 
 
 NDIS calls a CoNDIS miniport driver's [**MiniportCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff559362) function to submit an OID request to query or set information in the driver. NDIS calls *MiniportCoOidRequest* either on its own behalf or on behalf of an overlying driver that called the [**NdisCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561711) function.

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # CoNDIS MCM Registration
 
 
-
+## <a href="" id="ddk-condis-mcm-registration-ng"></a>
 
 
 CoNDIS miniport call managers (MCMs) initialize like other miniport drivers and also must register additional CoNDIS entry points. For general information about miniport driver initialization, see [Initializing a Miniport Driver](initializing-a-miniport-driver.md).

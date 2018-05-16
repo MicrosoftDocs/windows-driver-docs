@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Compile Flags for WDM Lower Edge
 
 
-
+## <a href="" id="ddk-compile-flags-for-wdm-lower-edge-ng"></a>
 
 
 You must include the following compile flags in the Sources file for an NDIS-WDM miniport driver to build the NDIS-WDM miniport driver:

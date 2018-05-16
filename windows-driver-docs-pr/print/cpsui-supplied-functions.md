@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # CPSUI-Supplied Functions
 
 
-
+## <a href="" id="ddk-cpsui-supplied-functions-gg"></a>
 
 
 CPSUI provides the following two important functions for applications:

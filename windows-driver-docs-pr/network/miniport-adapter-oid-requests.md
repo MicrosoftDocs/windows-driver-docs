@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Miniport Adapter OID Requests
 
 
-
+## <a href="" id="ddk-oid-requests-for-an-adapter-ng"></a>
 
 
 NDIS defines object identifier (OID) values to identify miniport adapter parameters, which include operating parameters such as device characteristics, configurable settings and statistics. For more information about OIDs, see [NDIS OIDs](https://msdn.microsoft.com/library/windows/hardware/ff566707).

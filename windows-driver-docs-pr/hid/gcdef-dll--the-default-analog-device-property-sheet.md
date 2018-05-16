@@ -9,7 +9,7 @@ keywords: ["Gcdef.dll", "default analog device property sheet", "property sheets
 # Gcdef.dll, the Default Analog Device Property Sheet
 
 
-
+## <a href="" id="ddk-gcdef-dll-the-default-analog-device-property-sheet-di"></a>
 
 
 Hardware vendors who do not create their own control panel use the services of the default analog device property sheet supplied by Gcdef.dll. Any controller that does not have a **ConfigCLSID** key in the registry under its **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\MediaProperties\\PrivateProperties\\Joystick\\OEM\\***CONTROLLER\_NAME* entry uses this default property sheet. This property sheet contains the following two pages:

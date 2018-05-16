@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # External Naming of COM Ports
 
 
-
+## <a href="" id="ddk-external-naming-of-com-ports-kg"></a>
 
 
 By default, the Serial function driver creates a symbolic link name for a serial port and registers a GUID\_DEVINTERFACE\_COMPORT [*device interface*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-interface) for the port. By definition, a serial port is a [COM port](configuration-of-com-ports.md) only if it has a COM port device interface associated with it.

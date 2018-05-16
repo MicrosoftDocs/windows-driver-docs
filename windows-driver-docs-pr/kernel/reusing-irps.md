@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Reusing IRPs
 
 
-
+## <a href="" id="ddk-reusing-irps-kg"></a>
 
 
 Under certain circumstances, drivers can *reuse* IRPs. The driver can allocate a pool of memory buffers that it uses to hold IRPs as they need to be created.

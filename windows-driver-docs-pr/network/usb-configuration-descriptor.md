@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # USB Configuration Descriptor
 
 
-
+## <a href="" id="ddk-usb-configuration-descriptor-ng"></a>
 
 
 The device returns a Configuration Descriptor as defined in the USB Specification. See the USB Specification for details.

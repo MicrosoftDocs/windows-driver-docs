@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # NET\_BUFFER Structure
 
 
-
+## <a href="" id="ddk-net-buffer-structure-ng"></a>
 
 
 NDIS 6.0 and later [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structures are analogous to the [**NDIS\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff557086) structures used by NDIS 5.*x* and earlier drivers. Each NET\_BUFFER structure packages a packet of network data.

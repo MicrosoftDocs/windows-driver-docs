@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Enumerating Receive Filters on a Virtual Port
 
 
-
+## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
 
 
 After a virtual port (VPort) is created on the NIC switch of the network adapter, overlying drivers and user applications can do the following:

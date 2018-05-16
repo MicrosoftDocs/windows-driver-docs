@@ -22,7 +22,7 @@ ms.technology: windows-devices
 # Handling Windows Messages for Property Pages
 
 
-
+## <a href="" id="ddk-handling-windows-messages-for-property-pages-dg"></a>
 
 
 When a [device property page provider](types-of-device-property-page-providers.md) handles a request to create a property page for its device or device class, it returns the address of a dialog box procedure for the property page. The dialog box procedure must initialize the property page when it gets a WM_INITDIALOG message, and it must be prepared to handle changes to device properties when it gets a WM_NOTIFY message. The procedure can also handle any other such messages it may require, as described in the Microsoft Windows SDK documentation.

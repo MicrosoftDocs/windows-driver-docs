@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # PnP Driver's Unload Routine
 
 
-
+## <a href="" id="ddk-a-pnp-driver-s-unload-routine-kg"></a>
 
 
 A PnP driver must have an [*Unload*](https://msdn.microsoft.com/library/windows/hardware/ff564886) routine that removes any driver-specific resources, such as memory, threads, and events, that are created by the [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine. If there are no driver-specific resources to remove, the driver must still have an *Unload* routine but it can simply return.

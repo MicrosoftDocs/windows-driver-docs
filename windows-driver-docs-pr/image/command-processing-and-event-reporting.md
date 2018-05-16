@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Command Processing and Event Reporting
 
 
-
+## <a href="" id="ddk-command-processing-and-event-reporting-si"></a>
 
 
 WIA minidrivers can support command requests originating from a WIA application, or directly from the WIA service. Further, some still image devices have the ability to send notifications to the driver as a result of a user action. For example, a scanner with one or more front panel buttons can notify the driver when the user presses one of those buttons. This ability enables the driver to take some action. When the driver notifies the WIA service that a particular button has been pressed, the WIA service can launch a previously registered application to handle the event.

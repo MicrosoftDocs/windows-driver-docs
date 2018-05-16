@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Numeric Values
 
 
-
+## <a href="" id="ddk-numeric-values-gg"></a>
 
 
 All numeric values that you specify as entry values or parameter values in a GPD file must be integers. Decimal points are not allowed, except within text strings.

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Functions Defined by Print Providers
 
 
-
+## <a href="" id="ddk-functions-defined-by-print-providers-gg"></a>
 
 
 **Warning**  

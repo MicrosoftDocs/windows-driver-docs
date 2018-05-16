@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Handling IRP\_MN\_SET\_POWER for Device Power States
 
 
-
+## <a href="" id="ddk-handling-irp-mn-set-power-for-device-power-states-kg"></a>
 
 
 A device set-power IRP requests a change of state for a single device and is sent to all the drivers in the stack for the device. Such an IRP specifies **DevicePowerState** in the **Power.Type** member of the I/O stack location.

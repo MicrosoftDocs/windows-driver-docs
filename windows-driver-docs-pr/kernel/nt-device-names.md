@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # NT Device Names
 
 
-
+## <a href="" id="ddk-nt-device-names-kg"></a>
 
 
 A named device object has a name of the form **\\Device\\***DeviceName*. This is known as the *NT device name* of the device object.

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Defining and Exporting New GUIDs
 
 
-
+## <a href="" id="ddk-defining-and-exporting-new-guids-kg"></a>
 
 
 You define a new GUID for an item the driver exports to other system components, drivers, or applications. For example, you define a new GUID for a custom PnP event on one of its devices. To define and export a new GUID, you must do the following:

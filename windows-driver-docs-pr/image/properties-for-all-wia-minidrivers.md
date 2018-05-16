@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Properties for All WIA Minidrivers
 
 
-
+## <a href="" id="ddk-properties-for-all-wia-minidrivers-si"></a>
 
 
 ### Required Properties on Root or Child Items

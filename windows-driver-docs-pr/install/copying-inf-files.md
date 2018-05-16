@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Copying INF Files
 
 
-
+## <a href="" id="ddk-copying-infs-dg"></a>
 
 
 It is sometimes necessary to copy INF files during device installation so that Windows can find them without repetitively displaying user prompts. For example, the base INF file for a multifunction device might copy the INF files for the device's individual functions so that Windows can find these INF files without prompting the user each time it installs one of the device's functions.

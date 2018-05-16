@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Dispatch IRQL Tracking
 
 
-
+## <a href="" id="ddk-dispatch-irql-tracking-ng"></a>
 
 
 To improve system performance, some NDIS functions (for example, the [*MiniportSendNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/ff559440) function) include a dispatch level flag that indicates the current IRQL. The proper use of the dispatch level flag can help to avoid unnecessary attempts to set the IRQL.

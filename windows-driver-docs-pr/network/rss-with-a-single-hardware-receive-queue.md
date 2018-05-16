@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # RSS with a Single Hardware Receive Queue
 
 
-
+## <a href="" id="ddk-rss-with-a-single-hardware-receive-queue-ng"></a>
 
 
 Miniport drivers can support RSS for NICs that support RSS hash calculation and a single receive descriptor queue.

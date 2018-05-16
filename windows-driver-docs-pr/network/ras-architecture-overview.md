@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # RAS Architecture Overview
 
 
-
+## <a href="" id="ddk-ras-architecture-overview-ng"></a>
 
 
 The Remote Access Service (RAS) enables remote workstations to establish a dial-up connection to a LAN and access resources on the LAN as if the remote workstation were on the LAN. WAN miniport drivers provide the interface between RAS and wide area network (WAN) cards such as ISDN, X.25, and Switched 56 adapters.

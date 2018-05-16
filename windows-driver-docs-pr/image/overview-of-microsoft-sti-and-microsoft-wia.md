@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Overview of Microsoft STI and Microsoft WIA
 
 
-
+## <a href="" id="ddk-overview-of-microsoft-sti-and-microsoft-wia-si"></a>
 
 
 The imaging architecture in Microsoft Windows 2000 and Windows 95/98 consists of a low-level hardware abstraction, STI, and a high-level set of APIs known as TWAIN. In the Windows XP and Windows Me operating system versions, Microsoft introduces Windows Imaging Architecture (WIA), an imaging architecture that builds on STI. The following diagram illustrates these two imaging architectures.

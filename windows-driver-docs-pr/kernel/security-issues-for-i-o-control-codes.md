@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Security Issues for I/O Control Codes
 
 
-
+## <a href="" id="ddk-security-issues-for-i-o-control-codes-kg"></a>
 
 
 Secure processing of IRPs that contain I/O control codes depends on defining IOCTL codes properly and on carefully examining parameters that the driver receives with the IRP.

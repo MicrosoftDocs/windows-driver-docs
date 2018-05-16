@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # NDIS Port OID Requests
 
 
-
+## <a href="" id="ddk-ndis-ports-oid-requests-ng"></a>
 
 
 NDIS drivers can associate OID requests with NDIS ports. In such an OID request, the **PortNumber** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure is set to the target port number. The port number is zero if the OID request is for the default port. The overlying driver must ensure that a port is active before making any OID requests that specify a specific port number.

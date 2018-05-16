@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Flatbed Scanner Compatibility for Windows XP and Windows Me
 
 
-
+## <a href="" id="ddk-wia-flatbed-scanner-compatibility-for-windows-me-and-windows-xp-si"></a>
 
 
 The Windows Vista WIA item tree causes some compatibility problems in applications that are written for Windows XP and Windows Me.

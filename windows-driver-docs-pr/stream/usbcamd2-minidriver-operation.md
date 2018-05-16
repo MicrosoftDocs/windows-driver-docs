@@ -21,7 +21,7 @@ ms.technology: windows-devices
 # USBCAMD2 Minidriver Operation
 
 
-
+## <a href="" id="ddk-usbcamd-operation-ksg"></a>
 
 
 A USBCAMD2 camera minidriver generally operates as follows:

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # INF SharedDriver Entry
 
 
-
+## <a href="" id="ddk-inf-shareddriver-entry-kg"></a>
 
 
 **\[ControlFlags\]**

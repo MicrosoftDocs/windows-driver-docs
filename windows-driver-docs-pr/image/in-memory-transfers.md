@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # In-Memory Transfers
 
 
-
+## <a href="" id="ddk-in-memory-transfers-si"></a>
 
 
 **Note**  In-memory transfers are for operating systems prior to Windows Vista.

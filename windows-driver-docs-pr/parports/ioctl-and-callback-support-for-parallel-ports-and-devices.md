@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # IOCTL and Callback Support for Parallel Ports and Devices
 
 
-
+## <a href="" id="ddk-ioctl-and-callback-support-for-parallel-ports-and-devices-kg"></a>
 
 
 This section provides links to topics that describe how the system-supplied parallel drivers support operating parallel ports and devices attached to parallel ports.

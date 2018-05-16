@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Reporting Power Management Capabilities
 
 
-
+## <a href="" id="ddk--nr"></a>
 
 
 Miniport drivers that support NDIS 6.20 and later versions of NDIS report their hardware power management capabilities during initialization. NDIS reports the current capabilities to overlying NDIS protocol drivers during the bind operation. However, NDIS can hide some capabilities from the protocol driver. For example, NDIS might report different capabilities when a user disables some or all of the power management capabilities.

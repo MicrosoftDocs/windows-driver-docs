@@ -26,7 +26,7 @@ ms.technology: windows-devices
 # Functional Topology
 
 
-
+## <a href="" id="ddk-functional-topology-ksg"></a>
 
 
 To enable the building of broadcast receiver filter graphs in a way that works for all varieties of network types, and hardware and software implementations of, for example, tuners and decoders, Broadcast Architecture takes the familiar concept of a filter graph from DirectShow and abstracts it in the concept of a *functional topology*. A functional topology, like a filter graph, describes the series of transformations that occur on the incoming signal. However, unlike a filter graph, a functional topology does not describe any actual filters or software modules; or how an operation is implemented in software or hardware. Instead, it describes a configuration of abstract *control nodes*, each of which represents some common discrete operation.

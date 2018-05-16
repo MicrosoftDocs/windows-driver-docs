@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Identifiers for 1394 Devices
 
 
-
+## <a href="" id="ddk-identifiers-for-1394-devices-dg"></a>
 
 
 The 1394 bus driver constructs these identifiers for a device:

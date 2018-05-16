@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Using GetOptions and SetOptions
 
 
-
+## <a href="" id="ddk-using-getoptions-and-setoptions-gg"></a>
 
 
 **GetOptions** can be called to retrieve the driver's current setting for features whose keywords are listed in the buffer pointed to by the *pmszFeaturesRequested* input parameter.

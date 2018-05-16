@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # PCL XL (PCL-6) Vector Graphics Support
 
 
-
+## <a href="" id="ddk-pcl-xl-pcl-6-vector-graphics-support-gg"></a>
 
 
 Unidrv in Windows XP and later supports PCL XL monochrome graphics. Unidrv in Windows Server 2003 and later supports PCL XL color graphics.

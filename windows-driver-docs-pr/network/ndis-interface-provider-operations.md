@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # NDIS Interface Provider Operations
 
 
-
+## <a href="" id="ddk-ndis-interface-provider-operations-ng"></a>
 
 
 All NDIS drivers can register as interface providers. Whenever a driver (or the NDIS proxy interface provider) detects a new interface that is being introduced to the computer, it allocates a [**NET\_LUID**](https://msdn.microsoft.com/library/windows/hardware/ff568747) index, registers the interface, and retains the associated NET\_LUID value in persistent storage (such as the registry). The following list describes several examples of how a new interface can be introduced to a computer:

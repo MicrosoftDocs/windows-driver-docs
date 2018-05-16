@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Operating a Parallel Port
 
 
-
+## <a href="" id="ddk-operating-a-parallel-port-kg"></a>
 
 
 This section describes how a client, in particular, a vendor-supplied function driver for a parallel device, operates a parallel port.

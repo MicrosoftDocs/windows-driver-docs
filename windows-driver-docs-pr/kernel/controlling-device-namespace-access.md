@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Controlling Device Namespace Access
 
 
-
+## <a href="" id="ddk-controlling-device-namespace-access-kg"></a>
 
 
 In the Windows Driver Model (WDM), every device object has an associated *namespace*. Names in the device's namespace are paths that begin with the device's name. For a device named "\\*Device*\\*DeviceName*", its namespace consists of any name of the form "\\*Device*\\*DeviceName*\\*FileName*". (For a file system, *FileName* is an actual name of a file on the file system.)
