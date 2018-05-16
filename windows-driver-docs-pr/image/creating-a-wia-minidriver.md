@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Creating a WIA Minidriver
 
 
-## <a href="" id="ddk-creating-a-wia-minidriver-si"></a>
+
 
 
 A WIA minidriver should be able to do the following:

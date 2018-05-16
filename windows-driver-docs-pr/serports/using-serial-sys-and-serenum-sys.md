@@ -25,7 +25,7 @@ ms.technology: windows-devices
 # Using Serial.sys and Serenum.sys
 
 
-## <a href="" id="ddk-serial-devices-and-drivers-kg"></a>
+
 
 
 Starting with Windows 2000, the following system components are available for use with serial controller devices that have hardware interfaces that are compatible with the 16550 universal asynchronous receiver-transmitter (UART):

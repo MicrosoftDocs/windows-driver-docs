@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Using Device Installation Functions
 
 
-## <a href="" id="ddk-using-device-installation-functions-dg"></a>
+
 
 
 This section summarizes the [device installation functions](https://msdn.microsoft.com/library/windows/hardware/ff541299). By using the device installation functions, the installation software can perform the following types of operations:

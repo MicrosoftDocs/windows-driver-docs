@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Stream Pointers and IRP Cancellation
 
 
-## <a href="" id="ddk-stream-pointers-and-irp-cancellation-ksg"></a>
+
 
 
 If a frame has a locked stream pointer referencing it, the IRP that corresponds to this frame cannot be canceled. See [Locking and Unlocking Stream Pointers](locking-and-unlocking-stream-pointers.md).

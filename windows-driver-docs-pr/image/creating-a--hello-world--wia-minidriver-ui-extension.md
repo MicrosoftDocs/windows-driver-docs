@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Creating a "Hello World" WIA Minidriver UI Extension
 
 
-## <a href="" id="ddk-creating-a-hello-world-wia-minidriver-ui-extension-si"></a>
+
 
 
 A WIA minidriver UI extension is a simple DLL that exports a few functions and implements at least one of the four following COM interface identifiers (IID):

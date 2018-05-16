@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Powering Down a Device
 
 
-## <a href="" id="ddk-powering-down-a-device-kg"></a>
+
 
 
 Unless a device is enabled for wake-up, its drivers power it off when the system shuts down. Devices must always be powered off upon removal or surprise removal.

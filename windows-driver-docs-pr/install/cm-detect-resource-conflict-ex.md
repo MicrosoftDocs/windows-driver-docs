@@ -16,7 +16,7 @@ api_type:
 This function is reserved for system use.
 
 
-## <a href="" id="ddk-cm-detect-resource-conflict-ex-dr"></a>
+
 
 
 This function is obsolete and no longer supported in Windows 2000 and later versions of Windows. Use [**CM_Query_Resource_Conflict_List**](https://msdn.microsoft.com/library/windows/hardware/ff539760) instead.

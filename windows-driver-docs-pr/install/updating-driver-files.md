@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Updating Driver Files
 
 
-## <a href="" id="ddk-updating-driver-files-dg"></a>
+
 
 
 Drivers are updated whenever one of the following occurs:

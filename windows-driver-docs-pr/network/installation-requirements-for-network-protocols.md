@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Installation Requirements for Network Protocols
 
 
-## <a href="" id="ddk-installation-requirements-for-network-protocols-ng"></a>
+
 
 
 This topic summarizes the installation requirements for network protocols.

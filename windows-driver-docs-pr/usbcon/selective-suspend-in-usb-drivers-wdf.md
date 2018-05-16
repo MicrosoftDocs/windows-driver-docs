@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 A USB function driver supports runtime idle detection by implementing USB selective suspend. Here is content for driver developers about how to implement selective suspend in USB drivers that are based on the Windows® Driver Foundation (WDF).
 
-## <a href="" id="about"></a>About selective suspend
+## About selective suspend
 
 
 Selective suspend is the ability to power down and later resume an idle USB device while the computer to which it is attached remains in the working state (S0). For energy-efficient operation—especially on mobile PCs—all USB devices and drivers should support selective suspend. Powering down a device when it is idle, but while the system remains in the S0 state, has the following significant advantages:
@@ -39,7 +39,7 @@ The details of a function driver’s USB selective suspend code depend on whethe
 -   Use the user-mode driver framework (UMDF) to implement USB drivers whenever possible. User-mode drivers are less likely to corrupt system data and are simpler to debug than kernel-mode drivers.
 -   Use the kernel-mode driver framework (KMDF) only if the driver streams data through isochronous endpoints or requires other features or resources that are available only in kernel mode.
 
-## <a href="" id="ppo"></a>Power policy ownership, I/O queues, and selective suspend
+## Power policy ownership, I/O queues, and selective suspend
 
 
 The power policy owner (PPO) for a device stack is the driver that determines which power state the device should be in at any given time. Only one driver in each device stack can be the PPO. The function driver typically is the PPO for its device.

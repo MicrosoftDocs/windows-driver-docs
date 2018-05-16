@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Compiling an NDIS 6.1 Driver
 
 
-## <a href="" id="ddk-compiling-an-ndis-6-1-driver-ng"></a>
+
 
 
 The Build utility for Windows Server 2008 supports header versioning. Header versioning makes sure that NDIS 6.1 drivers use the appropriate NDIS 6.1 data structures at compile time. You must update the SOURCES file to indicate NDIS 6.1.

@@ -9,7 +9,7 @@ keywords: ["INF files WDK joysticks , AddReg entries", "AddReg entries WDK joyst
 # Setting Up AddReg Entries
 
 
-## <a href="" id="ddk-setting-up-addreg-entries-di"></a>
+
 
 
 The INF file also needs to set up registry entries in the section selected by the AddReg entry of the install section. For devices requiring a minidriver, the following need to be set up to make sure that the driver is properly associated with the multimedia system drivers:

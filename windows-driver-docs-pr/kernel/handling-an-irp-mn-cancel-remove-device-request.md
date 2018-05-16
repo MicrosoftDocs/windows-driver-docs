@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Handling an IRP\_MN\_CANCEL\_REMOVE\_DEVICE Request
 
 
-## <a href="" id="ddk-handling-an-irp-mn-cancel-remove-device-request-kg"></a>
+
 
 
 In response to an [**IRP\_MN\_CANCEL\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff550823) request, the drivers for a device must return the device to the state it was in prior to receiving the **IRP\_MN\_QUERY\_REMOVE\_DEVICE** request. Typically, drivers return the device to the started state.

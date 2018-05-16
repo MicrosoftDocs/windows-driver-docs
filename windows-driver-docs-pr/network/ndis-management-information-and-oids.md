@@ -22,7 +22,7 @@ ms.technology: windows-devices
 # NDIS Management Information and OIDs
 
 
-## <a href="" id="ddk-ndis-management-information-and-oids-ng"></a>
+
 
 
 Each miniport driver contains its own *management information base (MIB)*, which is an information block in which the driver stores dynamic configuration information and statistical information that a management entity can query or set. An Ethernet multicast address list is an example of configuration information. The number of broadcast packets received is an example of statistical information. Each information element within the MIB is referred to as an *object*. To refer to each such managed object, NDIS defines an *object identifier (OID)*. Therefore, if a management entity wants to query or set a particular managed object, it must provide the specific OID for that object.

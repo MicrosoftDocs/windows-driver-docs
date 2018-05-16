@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Using GetOptionAttribute
 
 
-## <a href="" id="ddk-using-getoptionattribute-gg"></a>
+
 
 
 This function is supported only for PPD features. If a certain attribute is not available, **GetOptionAttribute** returns E\_INVALIDARG.

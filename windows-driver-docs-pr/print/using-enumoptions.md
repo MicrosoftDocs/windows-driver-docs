@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Using EnumOptions
 
 
-## <a href="" id="ddk-using-enumoptions-gg"></a>
+
 
 
 A caller can use **EnumOptions** to retrieve a keyword list of options for supported driver features and any PPD features. For PPD features, **EnumOptions** is always supported and it returns the options defined by PPD.

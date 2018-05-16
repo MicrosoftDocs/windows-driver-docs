@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Porting Issues Checklist
 
 
-## <a href="" id="ddk-porting-issues-checklist-kg"></a>
+
 
 
 ### General

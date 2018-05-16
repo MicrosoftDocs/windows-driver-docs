@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Closing an Address Family
 
 
-## <a href="" id="ddk-closing-an-address-family-ng"></a>
+
 
 
 A connection-oriented client calls [**NdisClCloseAddressFamily**](https://msdn.microsoft.com/library/windows/hardware/ff561626) to delete the association between itself, a call manager, and a particular underlying NIC.

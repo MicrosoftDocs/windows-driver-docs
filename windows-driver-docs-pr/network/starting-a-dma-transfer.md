@@ -23,7 +23,7 @@ ms.technology: windows-devices
 
  
 
-## <a href="" id="ddk-starting-a-dma-transfer-ng"></a>
+
 
 
 The NetDMA interface calls a NetDMA provider driver's [**ProviderStartDma**](https://msdn.microsoft.com/library/windows/hardware/ff570404) function to start a dynamic memory access (DMA) transfer. The NetDMA interface can call *ProviderStartDma* at any time after a DMA channel is allocated. The NetDMA interface must call *ProviderStartDma* for the first DMA transfer after a channel reset or stop, or after the DMA channel is first allocated.

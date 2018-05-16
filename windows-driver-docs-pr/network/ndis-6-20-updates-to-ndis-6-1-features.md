@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # NDIS 6.20 Updates to NDIS 6.1 Features
 
 
-## <a href="" id="ddk-ndis-6-20-updates-to-ndis-6-1-features-ng"></a>
+
 
 
 NDIS 6.1 added the following interfaces to NDIS 6.0:

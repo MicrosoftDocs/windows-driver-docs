@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Securing a BDA Minidriver
 
 
-## <a href="" id="ddk-securing-a-bda-minidriver-ksg"></a>
+
 
 
 A BDA minidriver should be implemented with security in mind to prevent malicious code from being introduced into the operating system. Such malicious code could cause harmful effects to occur, for example, cause the operating system to blue screen. The following sections show how to prevent malicious code from being introduced into a BDA minidriver:

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Introduction to Adapter Objects
 
 
-## <a href="" id="ddk-introduction-to-adapter-objects-kg"></a>
+
 
 
 Any driver that uses direct I/O and DMA must create an adapter object. The adapter object represents either a DMA controller channel or port, or a bus-master device.

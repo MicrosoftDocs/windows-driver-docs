@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Sending NET\_BUFFER Structures from CoNDIS Drivers
 
 
-## <a href="" id="ddk-sending-net-buffer-structures-from-condis-drivers-ng"></a>
+
 
 
 The following figure illustrates a basic CoNDIS send operation, which involves a protocol driver, NDIS, and a miniport driver.

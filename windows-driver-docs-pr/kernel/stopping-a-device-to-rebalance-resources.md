@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Stopping a Device to Rebalance Resources
 
 
-## <a href="" id="ddk-stopping-a-device-to-rebalance-resources-kg"></a>
+
 
 
 The following figure shows the sequence of IRPs involved in stopping and restarting a device to rebalance resources.

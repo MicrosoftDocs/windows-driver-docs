@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Using Customized Compression
 
 
-## <a href="" id="ddk-using-customized-compression-gg"></a>
+
 
 
 If you want to supply a customized compression algorithm, you include a CmdEnableOEMComp command entry to specify the command that enables your algorithm. If your printer can disable compression, you can optionally include a CmdDisableCompression entry to specify the command that disables compression. You must also provide a [rendering plug-in](rendering-plug-ins.md) that implements the [**IPrintOemUni::Compression**](https://msdn.microsoft.com/library/windows/hardware/ff554224) method.

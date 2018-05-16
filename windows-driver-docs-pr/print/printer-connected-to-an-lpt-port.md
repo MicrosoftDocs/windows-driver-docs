@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Printer Connected to an LPT Port
 
 
-## <a href="" id="ddk-printer-connected-to-an-lpt-port-gg"></a>
+
 
 
 The LPT enumerator is an example of a [bus driver](https://msdn.microsoft.com/library/windows/hardware/ff540704). The LPT enumerator is capable of obtaining identification information from LPT port hardware that conforms to the *IEEE 1284 Extended Capabilities Port Protocol and ISA Interface Standard*.

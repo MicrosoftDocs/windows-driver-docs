@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # IStiDevice COM Interface
 
 
-## <a href="" id="ddk-istidevice-com-interface-si"></a>
+
 
 
 The **IStiDevice** COM interface provides applications with the ability to communicate with still image devices. Interface methods allow applications to send and receive data and commands, to run diagnostic tests, to receive notifications of [Still Image Device Events](still-image-device-events.md), and to obtain device capabilities and status information.

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Preinstalling Driver Packages
 
 
-## <a href="" id="ddk-pre-installing-driver-files-dg"></a>
+
 
 
 To preinstall driver files, your [*device installation application*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) should follow these steps:

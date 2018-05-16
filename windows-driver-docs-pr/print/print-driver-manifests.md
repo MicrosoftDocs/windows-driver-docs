@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Print Driver Manifests
 
 
-## <a href="" id="ddk-windows-xp-visual-style-gg"></a>
+
 
 
 A print driver package may contain two kinds of manifest:

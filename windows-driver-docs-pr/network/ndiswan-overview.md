@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # NDISWAN Overview
 
 
-## <a href="" id="ddk-ndiswan-overview-ng"></a>
+
 
 
 NDISWAN is a system-supplied NDIS intermediate driver that provides functionality such as data compression, encryption, loopback, and simple PPP framing that is used by WAN miniport drivers. WAN miniport drivers are therefore required to implement only those features that are specific to the medium (for example, Q931 signaling is required for ISDN).

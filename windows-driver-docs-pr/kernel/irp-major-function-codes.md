@@ -13,7 +13,7 @@ ms.assetid: 11c5b1a9-74c0-47fb-8cce-a008ece9efae
 # IRP Major Function Codes
 
 
-## <a href="" id="ddk-irp-major-function-codes-kr"></a>
+
 
 
 Each driver-specific I/O stack location ([**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659)) for every [**IRP**](https://msdn.microsoft.com/library/windows/hardware/ff550694) contains a major function code (**IRP\_MJ\_*XXX***), which tells the driver what operation it or the underlying device driver should carry out to satisfy the I/O request. Each kernel-mode driver must provide [*dispatch routines*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-dispatch-routine) for the major function codes that it must support.

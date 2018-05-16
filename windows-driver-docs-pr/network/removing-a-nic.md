@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Removing a NIC
 
 
-## <a href="" id="ddk-removing-a-nic-ng"></a>
+
 
 
 The following steps describe how NDIS participates in the removal of a NIC:

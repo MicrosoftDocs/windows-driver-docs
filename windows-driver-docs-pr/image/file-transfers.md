@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # File Transfers
 
 
-## <a href="" id="ddk-file-transfers-si"></a>
+
 
 
 **Note**   File transfers are for operating systems prior to Windows Vista.

@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Overview of NDIS Network Interfaces
 
 
-## <a href="" id="ddk-introduction-to-ndis-network-interfaces-ng"></a>
+
 
 
 NDIS network interfaces provide a consistent representation for all of the various network interfaces that Microsoft Windows supports. Without the NDIS network interface services, all network interfaces are not visible to the computer administrator, and the interfaces that are visible do not necessarily support the management information base (MIB). Also, NDIS network interface services enable the layering relationships between interfaces to be visible to the administrator.

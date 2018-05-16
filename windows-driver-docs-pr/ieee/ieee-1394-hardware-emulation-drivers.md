@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # IEEE 1394 Hardware Emulation Drivers
 
 
-## <a href="" id="ddk-ieee-1394-hardware-emulation-drivers-kg"></a>
+
 
 
 An emulation driver can emulate actual IEEE hardware by adding a unit directory to the system's Configuration ROM. The emulation driver then intercepts requests coming from external nodes and emulates the 1394 registers that are exposed by an actual hardware device.

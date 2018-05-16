@@ -22,7 +22,7 @@ ms.technology: windows-devices
 # Installing, Upgrading, and Removing the Component
 
 
-## <a href="" id="ddk-installing-upgrading-and-removing-the-component-ng"></a>
+
 
 
 When the network configuration subsystem installs, upgrades, or removes a network component, the subsystem also calls the component's notify object to complete the installation, upgrade, and removal. The component's notify object can be implemented to perform operations that the component might require. For example:

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Optional Dispatch Routines
 
 
-## <a href="" id="ddk-optional-dispatch-routines-kg"></a>
+
 
 
 Drivers might include the following dispatch routines:

@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Using General Setup Functions
 
 
-## <a href="" id="ddk-using-general-setup-functions-dg"></a>
+
 
 
 This section summarizes the general Setup functions. [*Device installation applications*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) can use these functions to do the following:

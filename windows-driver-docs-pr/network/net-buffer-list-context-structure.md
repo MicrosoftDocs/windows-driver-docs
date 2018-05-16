@@ -21,7 +21,7 @@ ms.technology: windows-devices
 # NET\_BUFFER\_LIST\_CONTEXT Structure
 
 
-## <a href="" id="ddk-net-buffer-list-context-structure-ng"></a>
+
 
 
 NDIS drivers use [**NET\_BUFFER\_LIST\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff568389) structures to store additional data that is associated with a [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure. The **Context** member of the NET\_BUFFER\_LIST structure is a pointer to a NET\_BUFFER\_LIST\_CONTEXT structure. The information stored in the NET\_BUFFER\_LIST\_CONTEXT structures is opaque to NDIS and other drivers in the stack.

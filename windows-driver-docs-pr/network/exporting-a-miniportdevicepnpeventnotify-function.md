@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Exporting a MiniportDevicePnPEventNotify Function
 
 
-## <a href="" id="ddk-exporting-a-miniportdevicepnpeventnotify--function-ng"></a>
+
 
 
 NDIS calls a miniport driver's [*MiniportDevicePnPEventNotify*](https://msdn.microsoft.com/library/windows/hardware/ff559369) function to notify the miniport driver of the following Plug and Play (PnP) events:

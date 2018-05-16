@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # AVStream Clocks
 
 
-## <a href="" id="ddk-avstream-clocks-ksg"></a>
+
 
 
 AVStream filters support clocks on pins.

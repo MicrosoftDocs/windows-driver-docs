@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Indicating CoNDIS WAN Miniport Driver Status
 
 
-## <a href="" id="ddk-indicating-condis-wan-miniport-driver-status-ng"></a>
+
 
 
 A CoNDIS WAN miniport driver calls [**NdisMCoIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563562) to indicate status changes up to bound protocol drivers. For more information about indicating status from a CoNDIS miniport driver or MCM, see [Indicating Miniport Driver Status](indicating-miniport-driver-status.md).

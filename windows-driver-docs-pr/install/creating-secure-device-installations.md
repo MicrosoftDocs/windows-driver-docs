@@ -22,7 +22,7 @@ ms.technology: windows-devices
 # Creating Secure Device Installations
 
 
-## <a href="" id="ddk-creating-secure-device-installations-dg"></a>
+
 
 
 When you create a [driver package](driver-packages.md), you must make sure that the installation of your device will always be performed in a secure manner. A secure device installation is one that does the following:

@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Handling Status Indications in a CoNDIS Protocol Driver
 
 
-## <a href="" id="ddk-handling-status-indications-in-a-condis-protocol-driver-ng"></a>
+
 
 
 Protocol drivers must supply a [**ProtocolCoStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff570258) function that NDIS calls when an underlying driver reports status.

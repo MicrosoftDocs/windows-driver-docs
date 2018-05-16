@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Flushing Cached Data during PIO Operations
 
 
-## <a href="" id="ddk-flushing-cached-data-during-pio-operations-kg"></a>
+
 
 
 On some platforms, the instruction and data caches in the processor exhibit cache coherency anomalies during PIO read operations.

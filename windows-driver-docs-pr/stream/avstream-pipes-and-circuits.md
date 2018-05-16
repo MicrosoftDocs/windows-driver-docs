@@ -27,7 +27,7 @@ ms.technology: windows-devices
 # AVStream Pipes and Circuits
 
 
-## <a href="" id="ddk-avstream-pipes-and-circuits-ksg"></a>
+
 
 
 A *pipe* is a set of AVStream filters that share a common [allocator](avstream-allocators.md).

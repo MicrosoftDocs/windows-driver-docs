@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Specifying Bundle Membership
 
 
-## <a href="" id="ddk-specifying-bundle-membership-ng"></a>
+
 
 > [!NOTE]
 > Bundle membership has been deprecated in Windows Vista and later. 

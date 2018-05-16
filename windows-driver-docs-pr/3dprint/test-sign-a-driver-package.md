@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 This section describes how to test-sign a driver package.
 
-## <a href="" id="test-sign-a-driver-package-"></a>Test-sign a driver package
+## Test-sign a driver package
 
 
 Use the following steps to test-sign a driver package using a test certificate:

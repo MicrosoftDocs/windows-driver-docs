@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Supporting Removable Media
 
 
-## <a href="" id="ddk-supporting-removable-media-kg"></a>
+
 
 
 File systems and removable-media device drivers share the responsibility for ensuring that the correct media is mounted when a file is opened on a removable-media device and that the correct media remains mounted during operations that access the media. Any intermediate driver layered between a file system and a removable-media device driver also shares this responsibility.

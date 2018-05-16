@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Calling Order for Minidriver Functions
 
 
-## <a href="" id="ddk-calling-order-for-minidriver-functions-si"></a>
+
 
 
 When a minidriver is started, it calls some of the older STI entry points, such as [**IStiUSD::Initialize**](https://msdn.microsoft.com/library/windows/hardware/ff543824), and [**IStiUSD::GetStatus**](https://msdn.microsoft.com/library/windows/hardware/ff543823). As soon as the first application attempts to communicate with the device, the WIA service calls [**IWiaMiniDrv::drvInitializeWia**](https://msdn.microsoft.com/library/windows/hardware/ff544986). It is in this function that the minidriver should construct the item tree.

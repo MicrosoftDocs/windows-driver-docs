@@ -27,7 +27,7 @@ Hardware vendors supply drivers to control their GPIO controllers. A GPIO contro
 
 A GPIO controller device has some number of GPIO pins. These pins can be physically connected to peripheral devices. GPIO pins can be configured as data inputs, data outputs, or interrupt request inputs. Typically, a GPIO pin is dedicated to a peripheral device, and not shared by two or more devices. Connections between GPIO pins and peripheral devices are fixed and cannot be changed by the user (for example, by removing a peripheral device and replacing it with another device). Thus, the assignment of GPIO pins to peripheral devices can be described in the platform firmware.
 
-## <a href="" id="gpio-block-diagram"></a>
+
 
 
 The following diagram shows the GPIO controller driver and GpioClx.

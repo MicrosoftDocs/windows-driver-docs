@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Creating KMDF Miniport Drivers
 
 
-## <a href="" id="ddk-using-windows-driver-framework-with-miniport-drivers-df"></a>
+
 
 
 Some miniport drivers can use Kernel-Mode Driver Framework, if the port/miniport architecture allows the miniport driver to communicate with other drivers by using WDM or framework interfaces. For example, [NDIS miniport drivers with a WDM lower edge](https://msdn.microsoft.com/library/windows/hardware/ff565954) can use the framework to implement the lower edge.

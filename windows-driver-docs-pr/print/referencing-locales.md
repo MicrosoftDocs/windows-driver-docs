@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Referencing Locales
 
 
-## <a href="" id="ddk-referencing-locales-gg"></a>
+
 
 
 ### Using GPD Files

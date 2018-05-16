@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Connecting and Disconnecting a WIA Application
 
 
-## <a href="" id="ddk-connecting-and-disconnecting-a-wia-application-si"></a>
+
 
 
 This section contains the following topics

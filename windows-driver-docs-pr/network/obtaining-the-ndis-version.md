@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Obtaining the NDIS Version
 
 
-## <a href="" id="ddk-obtaining-the-ndis-version-ng"></a>
+
 
 
 NDIS versions might not be the same as the operating system versions. For example, if you use the [**RtlGetVersion**](https://msdn.microsoft.com/library/windows/hardware/ff561910) and [**RtlVerifyVersionInfo**](https://msdn.microsoft.com/library/windows/hardware/ff563026) routines to get the operating system version, you do not get a guaranteed association with a particular NDIS version. Therefore, NDIS drivers must get the NDIS version and the operating system version separately. NDIS drivers can get the NDIS version with the [**NdisGetVersion**](https://msdn.microsoft.com/library/windows/hardware/ff562680) function.

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Stream Synchronization
 
 
-## <a href="" id="ddk-stream-synchronization-ksg"></a>
+
 
 
 DVD stream inputs may be composed of two or more streams. The stream class driver can handle synchronization transparently on behalf of the DVD decoder minidriver. For more information, see [Minidriver Synchronization](minidriver-synchronization.md). Programmers must still be aware of several factors affecting DVD streams, including:

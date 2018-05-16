@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using Timer Objects
 
 
-## <a href="" id="ddk-using-timer-objects-kg"></a>
+
 
 
 The following figure illustrates the use of a notification timer to set up a timeout interval for an operation and then wait while other driver routines process an I/O request.

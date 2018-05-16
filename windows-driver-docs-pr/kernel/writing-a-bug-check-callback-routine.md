@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Writing a Bug Check Callback Routine
 
 
-## <a href="" id="ddk-writing-a-bug-check-callback-routine-kg"></a>
+
 
 
 Drivers can register callback routines that the system executes when it issues a bug check.

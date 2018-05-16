@@ -15,7 +15,7 @@ keywords:
 # OID\_PNP\_ENABLE\_WAKE\_UP
 
 
-## <a href="" id="ddk-oid-pnp-enable-wake-up-nr"></a>
+
 
 
 As a set, the OID\_PNP\_ENABLE\_WAKE\_UP OID specifies the wake-up capabilities that a miniport driver should enable in a network adapter.
