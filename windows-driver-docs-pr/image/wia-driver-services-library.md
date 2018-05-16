@@ -24,7 +24,7 @@ A WIA minidriver calls most of these functions from its [IWiaMiniDrv Interface](
 
 The driver services library provides the following functions.
 
-## Building and Maintaining an Item Tree
+## <a href="" id="ddk-building-and-maintaining-an-item-tree-si"></a>Building and Maintaining an Item Tree
 
 
 <table>
@@ -68,7 +68,7 @@ The driver services library provides the following functions.
 
  
 
-## Logging Error and Trace Messages
+## <a href="" id="ddk-logging-error-and-trace-messages-si"></a>Logging Error and Trace Messages
 
 
 <table>
@@ -110,7 +110,7 @@ The driver services library provides the following functions.
 
  
 
-## Reading and Storing an Item's Properties
+## <a href="" id="ddk-reading-and-storing-an-item-s-properties-si"></a>Reading and Storing an Item's Properties
 
 
 <table>
@@ -266,7 +266,7 @@ The driver services library provides the following functions.
 
  
 
-## Updating and Transferring Data
+## <a href="" id="ddk-updating-and-transferring-data-si"></a>Updating and Transferring Data
 
 
 <table>

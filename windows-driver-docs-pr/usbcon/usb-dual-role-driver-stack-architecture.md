@@ -131,7 +131,7 @@ These USB OTG features are not supported in Windows:
 -   Host Negotiation Protocol (HNP).
 -   Attach Detection Protocol (ADP).
 
-## System configuration
+## <a href="" id="acpi"></a>System configuration
 
 
 In order to use the URS driver, you must create an ACPI definition file for your system. Additionally, there are some driver-related considerations that you must take into account.
@@ -235,7 +235,7 @@ The URS driver assigns Hardware IDs to the host and function stacks. These Hardw
 
 -   Function stack: URS\\ABCD1234&FUNCTION
 
-## Driver installation packages
+## <a href="" id="inf"></a>Driver installation packages
 
 
 3rd-party driver packages can take a dependency on this scheme, if necessary.

@@ -527,7 +527,7 @@ TERMINAL PROFILE, 3GPP
 
 TERMINAL PROFILE, Microsoft Requirements
 
-## SMS–PP
+## <a href="" id="sms-pp"></a>SMS–PP
 
 
 SMS PP, UICC responds with "61XX" (acknowledgement)

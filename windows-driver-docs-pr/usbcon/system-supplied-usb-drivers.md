@@ -23,7 +23,7 @@ Microsoft provides these set of drivers:
 -   For handling common function logic for USB devices. For more information, see [USB device-side drivers in Windows](usb-device-side-drivers-in-windows.md).
 -   For supporting Type-C connectors. For more information, see [USB connector manager class extension (UcmCx)](https://msdn.microsoft.com/library/windows/hardware/mt188011).
 
-## Other Microsoft-provided USB drivers
+## <a href="" id="other-microsoft-provided-usb-drivers-"></a>Other Microsoft-provided USB drivers
 
 
 <table>

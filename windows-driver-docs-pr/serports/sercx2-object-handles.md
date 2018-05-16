@@ -27,7 +27,7 @@ This topic describes the following object handles:
 
 Header: 2.0\Sercx.h
 
-##  SERCX2CUSTOMRECEIVE Object Handle
+## <a href="" id="SERCX2CUSTOMRECEIVE"></a> SERCX2CUSTOMRECEIVE Object Handle
 A **SERCX2CUSTOMRECEIVE** object handle is an opaque reference to a custom-receive object in version 2 of the serial framework extension (SerCx2).
 
 The **SerCx2CustomReceiveCreate** method creates a custom-receive object. 
@@ -50,7 +50,7 @@ For more information about PIO-receive objects, see [SERCX2PIORECEIVE Object Han
 For more information about system-DMA-receive objects, see [SERCX2SYSTEMDMARECEIVE Object Handle](#SERCX2SYSTEMDMARECEIVE).
 
 
-##  SERCX2CUSTOMRECEIVETRANSACTION Object Handle
+## <a href="" id="SERCX2CUSTOMRECEIVETRANSACTION"></a> SERCX2CUSTOMRECEIVETRANSACTION Object Handle
 A **SERCX2CUSTOMRECEIVETRANSACTION** object handle is an opaque reference to a custom-receive-transaction object in version 2 of the serial framework extension (SerCx2).
 
 The [SerCx2CustomReceiveTransactionCreate](https://msdn.microsoft.com/library/windows/hardware/dn265251) method creates a custom-receive-transaction object. 
@@ -75,7 +75,7 @@ For more information about custom-receive objects, see [SERCX2CUSTOMRECEIVE Obje
 
 Despite the similar lifetimes of custom-receive and custom-receive-transaction objects, these are defined as separate object types (and not combined into one type) to support the possible future expansion of the SerCx2 device driver interface.
 
-##  SERCX2CUSTOMTRANSMIT Object Handle
+## <a href="" id="SERCX2CUSTOMTRANSMIT"></a> SERCX2CUSTOMTRANSMIT Object Handle
 A SERCX2CUSTOMTRANSMIT object handle is an opaque reference to a custom-transmit object in version 2 of the serial framework extension (SerCx2).
 
 The [SerCx2CustomTransmitCreate](https://msdn.microsoft.com/library/windows/hardware/dn265256) method creates a custom-transmit object.h SerCx2 uses this object to manage I/O transactions that write data to the serial controller. 
@@ -96,7 +96,7 @@ The driver can create this object only under the following conditions:
 For more information about PIO-transmit objects, see [SERCX2PIOTRANSMIT Object Handle](#SERCX2PIOTRANSMIT). 
 For more information about system-DMA-transmit objects, see [SERCX2SYSTEMDMATRANSMIT Object Handle](#SERCX2SYSTEMDMATRANSMIT).
 
-##  SERCX2CUSTOMTRANSMITTRANSACTION Object Handle
+## <a href="" id="SERCX2CUSTOMTRANSMITTRANSACTION"></a> SERCX2CUSTOMTRANSMITTRANSACTION Object Handle
 A SERCX2CUSTOMTRANSMITTRANSACTION object handle is an opaque reference to a custom-transmit-transaction object in version 2 of the serial framework extension (SerCx2).
 
 The [SerCx2CustomTransmitTransactionCreate](https://msdn.microsoft.com/library/windows/hardware/dn265259) method creates a custom-transmit-transaction object. 
@@ -121,7 +121,7 @@ For more information about custom-transmit objects, see [SERCX2CUSTOMTRANSMIT Ob
 
 Despite the similar lifetimes of custom-transmit and custom-transmit-transaction objects, these are defined as separate object types (and not combined into one type) to support the possible future expansion of the SerCx2 device driver interface.
 
-##  SERCX2PIORECEIVE Object Handle
+## <a href="" id="SERCX2PIORECEIVE"></a> SERCX2PIORECEIVE Object Handle
 A SERCX2PIORECEIVE object handle is an opaque reference to a PIO-receive object in version 2 of the serial framework extension (SerCx2).
 
 The [SerCx2PioReceiveCreate](https://msdn.microsoft.com/en-us/library/windows/hardware/dn265264) method creates a PIO-receive object. 
@@ -140,7 +140,7 @@ The driver must create this object before creating either a system-DMA-receive o
 For more information about system-DMA-receive objects, see [SERCX2SYSTEMDMARECEIVE Object Handle](#SERCX2SYSTEMDMARECEIVE). 
 For more information about custom-receive objects, see [SERCX2CUSTOMRECEIVE Object Handle](#SERCX2CUSTOMRECEIVE).
 
-##  SERCX2PIOTRANSMIT Object Handle
+## <a href="" id="SERCX2PIOTRANSMIT"></a> SERCX2PIOTRANSMIT Object Handle
 A SERCX2PIOTRANSMIT object handle is an opaque reference to a PIO-transmit object in version 2 of the serial framework extension (SerCx2).
 
 The [SerCx2PioTransmitCreate](https://msdn.microsoft.com/library/windows/hardware/dn265269) method creates a PIO-transmit object. 
@@ -160,7 +160,7 @@ The driver must create this object before creating either a system-DMA-transmit 
 For more information about system-DMA-transmit objects, see [SERCX2SYSTEMDMATRANSMIT Object Handle](#SERCX2SYSTEMDMATRANSMIT). 
 For more information about custom-transmit objects, see [SERCX2CUSTOMTRANSMIT Object Handle](#SERCX2CUSTOMTRANSMIT).
 
-##  SERCX2SYSTEMDMARECEIVE Object Handle
+## <a href="" id="SERCX2SYSTEMDMARECEIVE"></a> SERCX2SYSTEMDMARECEIVE Object Handle
 A SERCX2SYSTEMDMARECEIVE object handle is an opaque reference to a system-DMA-receive object in version 2 of the serial framework extension (SerCx2).
 
 The [SerCx2SystemDmaReceiveCreate] (https://msdn.microsoft.com/library/windows/hardware/dn265279) method creates a system-DMA-receive object. 
@@ -181,7 +181,7 @@ The driver can create this object only under the following conditions:
 For more information about PIO-receive objects, see [SERCX2PIORECEIVE Object Handle](#SERCX2PIORECEIVE). 
 For more information about custom-receive objects, see [SERCX2CUSTOMRECEIVE Object Handle](#SERCX2CUSTOMRECEIVE).
 
-##  SERCX2SYSTEMDMATRANSMIT Object Handle
+## <a href="" id="SERCX2SYSTEMDMATRANSMIT"></a> SERCX2SYSTEMDMATRANSMIT Object Handle
 A SERCX2SYSTEMDMATRANSMIT object handle is an opaque reference to a system-DMA-transmit object in version 2 of the serial framework extension (SerCx2).
 
 The [SerCx2SystemDmaTransmitCreate](https://msdn.microsoft.com/library/windows/hardware/dn265288) method creates a system-DMA-transmit object. 

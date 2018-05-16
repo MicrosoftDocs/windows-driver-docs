@@ -19,7 +19,7 @@ The following table shows the device types that have Simple I/O plug-ins. The ta
 
 If your device type is not listed, you can create one, see [How to customize I/O for your device using the WDTF Simple I/O Action Plug-in](to-customize-i-o-for-your-device-using-the-wdtf-simple-i-o-action-plug-in.md)
 
-## Provided Simple I/O plugins and device requirements for testing and tips for troubleshooting
+## <a href="" id="-provided-io-plugin-list"></a>Provided Simple I/O plugins and device requirements for testing and tips for troubleshooting
 
 
 The following section lists the device types that have Simple I/O plug-ins. The section also indicates if there are specific requirements for testing the device. These are the same requirements you need to follow when you use the [Windows Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=254893). The section also shows tips you can use to troubleshoot and triage test failures.
@@ -364,7 +364,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
     -   For USB 2.0, see Microsoft Windows USB Core Team Blog - [ETW in the Windows 7 USB core stack](http://go.microsoft.com/fwlink/p/?linkid=266442)
     -   For USB 3.0, see the Microsoft Windows USB Core Team Blog - [How to Capture and Read USB ETW Traces in Windows 8]( http://go.microsoft.com/fwlink/p/?linkid=266443)
 
-## Device Fundamental tests that have specific device configuration requirements
+## <a href="" id="-devfund-test-req"></a>Device Fundamental tests that have specific device configuration requirements
 
 
 Before you run the following [Device Fundamental tests](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests), the devices on the test computer must be configured according to the requirements described for the specific device types. See the list of [the provided Simple I/O plug-ins and device requirements.](#-provided-io-plugin-list)

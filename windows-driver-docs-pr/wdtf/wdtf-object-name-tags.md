@@ -76,7 +76,7 @@ WDTF_SIMPLE_IO            : INFO  :  - Close(Generic volume (C:) STORAGE\VOLUME\
 
  
 
-## WDTF System Actions
+## <a href="" id="wdtf-system-actions-"></a>WDTF System Actions
 
 
 <table>
@@ -130,7 +130,7 @@ WDTF_SYSTEM               : INFO  : Returning from Hibernate. Elapsed time (hh:m
 
  
 
-## WDTF Device Actions
+## <a href="" id="wdtf-device-actions-"></a>WDTF Device Actions
 
 
 <table>

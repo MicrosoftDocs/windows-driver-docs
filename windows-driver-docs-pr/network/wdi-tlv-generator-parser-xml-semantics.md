@@ -48,7 +48,7 @@ The TLV generator/parser XML file is a list of messages, containers (TLVs), and 
     -   [Contents](#contents)
     -   [Example](#example)
 
-## `<message />`
+## <a href="" id="-message---"></a>`<message />`
 
 
 Describes a single top-level WDI message. There are only parser/generator functions for these message entries.
@@ -81,7 +81,7 @@ List of container references (`<containerRef />`). These are the different TLVs 
 </message>
 ```
 
-## `<containerRef />`
+## <a href="" id="-containerref---"></a>`<containerRef />`
 
 
 Reference to a `<container />` defined in the `<containers />` section.
@@ -109,12 +109,12 @@ None.
               type="WFDChannelContainer"/>
 ```
 
-## `<containers />`
+## <a href="" id="-containers---"></a>`<containers />`
 
 
 Describes all containers/TLVs used in WDI messages. Containers can be considered TLV buckets. There are 2 types: `<container />` and `<aggregateContainer />`.
 
-## `<container />`
+## <a href="" id="-container---"></a>`<container />`
 
 
 TLV Container for a single structure reference or named type. It is statically sized, but may be a C-style array as long as it is statically sized.
@@ -143,7 +143,7 @@ One of `<groupRef />` or `<namedType />`.
 </container>
 ```
 
-## `<groupRef />`
+## <a href="" id="-groupref---"></a>`<groupRef />`
 
 
 Reference to a property group (structure) defined in the `<propertyGroups />` section.
@@ -170,7 +170,7 @@ None.
 </container>
 ```
 
-## ` <namedType />`
+## <a href="" id="--namedtype---"></a>` <namedType />`
 
 
 Reference to a raw type exposed by wditypes.hpp or dot11wdi.h. Uses default serializer (memcpy), so use at your own risk because of padding issues.
@@ -197,7 +197,7 @@ None.
 </container>
 ```
 
-## `<aggregateContainer />`
+## <a href="" id="-aggregatecontainer---"></a>`<aggregateContainer />`
 
 
 TLV Container for many different containers. This is used for handling nested TLVs.
@@ -240,7 +240,7 @@ List of `<containerRef />`.
 </aggregateContainer>
 ```
 
-## `<propertyGroups />`
+## <a href="" id="-propertygroups---"></a>`<propertyGroups />`
 
 
 Describes all structures used in all containers. Structures can either be used by a `<container />`, or referenced by another `<propertyGroup />` (nested structures). They are defined independently of TLVs containers so they can be re-used. They do not have a TLV header.
@@ -251,7 +251,7 @@ These definitions are necessary as they help to solve padding issues with struct
 
  
 
-## Primitive Field Types (`<bool/> <uint8/> <uint16/> <uint32/> <int8/> <int16/> <int32/>`)
+## <a href="" id="primitive-field-types---bool----uint8----uint16----uint32----int8----int16----int32---"></a>Primitive Field Types (`<bool/> <uint8/> <uint16/> <uint32/> <int8/> <int16/> <int32/>`)
 
 
 These are the available primitive types, and are converted/marshalled appropriately by the generated code.
@@ -266,7 +266,7 @@ These are the available primitive types, and are converted/marshalled appropriat
 
 None
 
-## `<propertyGroup />`
+## <a href="" id="-propertygroup---"></a>`<propertyGroup />`
 
 
 An individual structure.

@@ -46,7 +46,7 @@ To determine whether the framework's verifier is enabled, set a breakpoint at a 
 
 For more information about the debugger extension commands, see [Debugger Extensions for Framework-based Drivers](debugger-extensions-for-kmdf-drivers.md).
 
-## Controlling the Verifier's Behavior
+## <a href="" id="verifier-reg-values"></a>Controlling the Verifier's Behavior
 
 
 We recommend that you use the [WDF Verifier control application](https://msdn.microsoft.com/library/windows/hardware/ff556129) to control the options below. However, you can directly modify the following values in the registry.

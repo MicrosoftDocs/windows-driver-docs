@@ -22,7 +22,7 @@ The [MuttUtil](muttutil.md) tool is included in the [MUTT software package](mutt
 
 If you are building a new system, here are the recommended USB HCK tests:
 
-## Stage 1—System bring-up
+## <a href="" id="stage1"></a>Stage 1—System bring-up
 
 
 -   [DF – Sleep with IO Before and After (Basic)](http://msdn.microsoft.com/library/windows/hardware/dn247481.aspx)
@@ -80,7 +80,7 @@ If you are building a new system, here are the recommended USB HCK tests:
 
  
 
-## Stage 2—System integration
+## <a href="" id="stage2"></a>Stage 2—System integration
 
 
 -   [DF - Reboot restart with IO before and after (Functional)](http://msdn.microsoft.com/library/windows/hardware/dn260266.aspx)
@@ -136,7 +136,7 @@ If you are building a new system, here are the recommended USB HCK tests:
 
  
 
-## Stage 3—System tuneup
+## <a href="" id="stage3"></a>Stage 3—System tuneup
 
 
 System 1

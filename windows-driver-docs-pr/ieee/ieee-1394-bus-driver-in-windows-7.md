@@ -46,7 +46,7 @@ The new 1394 bus driver tries to use asynchronous block transactions at faster b
 
 The 1394ohci.sys bus driver requires a physical layer (PHY) that supports IEEE-1394a or IEEE-1394b. It does not support a PHY that supports IEEE-1394-1995. This requirement is due to the 1394ohci.sys bus driver's exclusive use of short (arbitrated) bus resets.
 
-##  NODE\_DEVICE\_EXTENSION Structure Usage
+## <a href="" id="-node-device-extension-structure-usage"></a> NODE\_DEVICE\_EXTENSION Structure Usage
 
 
 A client driver can reference the device extension in the 1394 bus driver associated with the physical device object (PDO) for the device that the client driver controls. This device extension is described by the **NODE\_DEVICE\_EXTENSION** structure. In 1394ohci.sys, this structure remains at the same location as in the legacy 1394 bus driver, but the nonstatic members of the structure might not be valid. When a client driver uses the new 1394 bus driver, they must make sure that the data accessed in **NODE\_DEVICE\_EXTENSION** is valid. The static members of **NODE\_DEVICE\_EXTENSION** that contain valid data are **Tag**, **DeviceObject**, and **PortDeviceObject**. All other members **NODE\_DEVICE\_EXTENSION** are nonstatic, which the client driver must not reference.

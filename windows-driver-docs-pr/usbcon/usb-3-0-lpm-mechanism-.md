@@ -37,7 +37,7 @@ After remaining idle for a certain period of time, link partners progressively e
 
 The steps that are required by software, to send the link to U3, are identical to the steps required for USB 2.0 Selective suspend. The device must enter the suspended state when the link enters U3. As a result, the device is subject to similar restrictions as with USB 2.0 Selective Suspend. To overcome those limitations, the USB 3.0 specification defines U1 and U2 states.
 
-## Advantages of U1 and U2
+## <a href="" id="advantages-of-u1-and-u2-"></a>Advantages of U1 and U2
 
 
 U1 and U2 states are designed to complement Selective Suspend, which can lead to significant power savings. After the software configures the link partners for U1 or U2 transition, the hardware enters the states autonomously without any software intervention. The exit times from U1 and U2 are really fast (from microseconds to a few milliseconds) and have less of an impact on the performance of the devices. This allows for much better power management where links can enter and exit these states even when the device is in use.

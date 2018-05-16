@@ -27,7 +27,7 @@ UUID = **UUID\_MS\_HOSTSHUTDOWN**
 
 UUID Value = **883b7c26-985f-43fa-9804-27d7fb80959c**
 
-## Defined CIDs for UUID\_MS\_HOSTSHUTDOWN device service
+## <a href="" id="defined-cids-for-uuid-ms-hostshutdown-device-service"></a>Defined CIDs for UUID\_MS\_HOSTSHUTDOWN device service
 
 
 | CID                          | Minimum OS version       |
@@ -37,7 +37,7 @@ UUID Value = **883b7c26-985f-43fa-9804-27d7fb80959c**
 
  
 
-## CID\_MBIM\_MSHOSTSHUTDOWN
+## <a href="" id="cid-mbim-mshostshutdown"></a>CID\_MBIM\_MSHOSTSHUTDOWN
 
 
 This command informs the device that the host is shutting down. The MB device may lose power.
@@ -125,7 +125,7 @@ The following information summarizes the list of host sent CIDs/CMDs to the devi
 
  
 
-## CID\_MBIM\_MSHOSTPRESHUTDOWN
+## <a href="" id="cid-mbim-mshostpreshutdown"></a>CID\_MBIM\_MSHOSTPRESHUTDOWN
 
 
 This command notifies the MBIM modem that the system is undergoing pre-shutdown and it should finish all its operations, deregister from the network, and store necessary information to the host for flashless modem cases. The pre-shutdown notification is sent down when the host is preparing to enter S4 and S5 states and is waiting for all services to shut down appropriately.

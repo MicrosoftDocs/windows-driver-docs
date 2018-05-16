@@ -35,7 +35,7 @@ The following requirements must be met to ensure the proper encapsulation of Win
 
     The driver MUST return only the PAYLOAD of the matched NDEF messages to subscribers of this type.
 
-## “Windows:WriteTag.” Publications
+## <a href="" id="-windows-writetag---publications"></a>“Windows:WriteTag.” Publications
 
 
 A “Windows:WriteTag.” publication is a means for an app to simply write a Windows-typed payload to a tag.
@@ -45,7 +45,7 @@ A “Windows:WriteTag.” publication is a means for an app to simply write a Wi
 -   The common “\*:WriteTag” requirements described elsewhere apply.
 -   The “Windows.&lt;SomeSubType&gt;” publication requirements also apply to “Windows:WriteTag.&lt;SomeSubType&gt;” publications.
 
-## “LaunchApp:WriteTag” Publications
+## <a href="" id="-launchapp-writetag--publications"></a>“LaunchApp:WriteTag” Publications
 
 
 An “LaunchApp:WriteTag” publication is a means for an app to simply write a “Windows.windows.com/LaunchApp” message to a tag.

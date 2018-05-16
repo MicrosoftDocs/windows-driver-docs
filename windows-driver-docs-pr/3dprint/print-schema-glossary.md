@@ -14,13 +14,13 @@ ms.technology: windows-devices
 # Print schema glossary
 
 
-## A
+## <a href="" id="starts-with-a"></a>A
 
 
 **Assembly**  
 A model that contains two or more independently-defined objects that are connected or interlocked either during or after the 3D manufacturing process is complete. An assembly might be able to be reversed or the individual parts may be inseparably interlocked.
 
-## B
+## <a href="" id="starts-with-b"></a>B
 
 
 **Back**  
@@ -29,31 +29,31 @@ The maximum printable XZ plane of the print area or the correspondent maximum pl
 **Bottom**  
 The minimum printable XY plane of the print area or the correspondent minimum plane of a model bounding box, once transformed to the output coordinate space.
 
-## F
+## <a href="" id="starts-with-f"></a>F
 
 
 **Front**  
 The minimum printable XZ plane of the print area or the correspondent minimum plane of a model bounding box, once transformed to the output coordinate space.
 
-## L
+## <a href="" id="starts-with-l"></a>L
 
 
 **Left**  
 The minimum printable YZ plane of the print area or the correspondent minimum plane of a model bounding box, once transformed to the output coordinate space.
 
-## M
+## <a href="" id="starts-with-m"></a>M
 
 
 **Model**  
 The set of objects that are to be manufactured as part of a single job. This may include a single object, multiple instances of the same object, multiple different objects, or multiple objects in an assembly.
 
-## N
+## <a href="" id="starts-with-n"></a>N
 
 
 **Nozzle**  
 In a fused filament deposition device, the chamber and aperture from which molten filament is extruded.
 
-## R
+## <a href="" id="starts-with-r"></a>R
 
 
 **Raft**  
@@ -62,13 +62,13 @@ A raft is an extruded mesh designed to help a model adhere to a heated platform 
 **Right**  
 The maximum printable YZ plane of the print area or the correspondent maximum plane of a model bounding box, once transformed to the output coordinate space.
 
-## S
+## <a href="" id="starts-with-s"></a>S
 
 
 **Supports**  
 Fused filament deposition printers require supporting scaffolding for overhanging areas in the model so that filament does not fall to the platform or model below when it is extruded; this scaffolding is referred to as exterior supports.
 
-## T
+## <a href="" id="starts-with-t"></a>T
 
 
 **Tool**  

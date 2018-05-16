@@ -23,7 +23,7 @@ The simple I/O protocol is used by flashing tools to enable communication betwee
 
  
 
-## EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL
+## <a href="" id="efi-simple-winphone-io-protocol"></a>EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL
 
 
 This section provides a detailed description of **EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL**. This protocol enables simple communication between host and device in a pre-boot environment.

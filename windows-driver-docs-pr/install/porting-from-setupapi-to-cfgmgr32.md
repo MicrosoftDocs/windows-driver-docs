@@ -196,7 +196,7 @@ GetDevicePropertiesCfgmgr32(
 }
 ```
 
-## Get a list of interfaces, get the device exposing each interface, and get a property from the device
+## <a href="" id="get-a-list-of-interfaces--get-the-device-exposing-each-interface---and-get-a-property-from-the-device"></a>Get a list of interfaces, get the device exposing each interface, and get a property from the device
 
 
 This example gets a list of all interfaces in class GUID_DEVINTERFACE_VOLUME using [**SetupDiGetClassDevs**](https://msdn.microsoft.com/library/windows/hardware/ff551069). For each interface, it gets the device exposing the interface and gets a property of that device.

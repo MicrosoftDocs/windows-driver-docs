@@ -24,7 +24,7 @@ The input parameters to this call describe the memory buffer to use for the tran
 
 The resource requirements obtained from this call include the number of map registers and the size of the scatter/gather list that is needed to describe the data buffer for the transfer. In the subsequent call to the [**AllocateAdapterChannelEx**](https://msdn.microsoft.com/library/windows/hardware/hh406340) routine (see [step 3](#step-3)), the driver supplies the map register count as an input parameter.
 
-## Step 3: Request the required DMA resources
+## <a href="" id="step-3"></a>Step 3: Request the required DMA resources
 
 
 The driver calls the [**AllocateAdapterChannelEx**](https://msdn.microsoft.com/library/windows/hardware/hh406340) routine to allocate resources to assign to the DMA adapter object. These resources include a DMA channel and map registers.
@@ -56,7 +56,7 @@ If **CancelAdapterChannel** returns TRUE, the resource request is successfully c
 
 If **CancelAdapterChannel** returns FALSE, the resource request cannot be canceled because it was already granted. If an execution routine was supplied in the **AllocateAdapterChannelEx** call, this routine will be called.
 
-## Step 5: Initialize the DMA resources and start the DMA transfer
+## <a href="" id="step-5"></a>Step 5: Initialize the DMA resources and start the DMA transfer
 
 
 The driver calls [**MapTransferEx**](https://msdn.microsoft.com/library/windows/hardware/hh406521) to initialize the DMA resources and to start the DMA transfer. This call might occur in the same driver thread that calls **AllocateAdapterChannelEx**, or it might occur in the execution routine that the driver supplies to **AllocateAdapterChannelEx**. If more than one **MapTransferEx** call is required to transfer the entire DMA data buffer, a later **MapTransferEx** call might occur in the completion routine for the previous **MapTransferEx** call.
@@ -83,7 +83,7 @@ When a DMA transfer completes, the driver is notified in one of these two ways:
 -   Execution of the driver-supplied completion routine, for a subordinate device that uses a system DMA controller
 
 For a system DMA transfer, a driver can supply a completion routine to **MapTransferEx** as an input parameter.
-## Step 8: Flush any data that remains in the cache
+## <a href="" id="step-8"></a>Step 8: Flush any data that remains in the cache
 
 
 After the DMA transfer completes, the driver must call the [**FlushAdapterBuffersEx**](https://msdn.microsoft.com/library/windows/hardware/hh451102) routine to flush any data that remains in the cache. The driver must call **FlushAdapterBuffersEx** after every **MapTransferEx** call.

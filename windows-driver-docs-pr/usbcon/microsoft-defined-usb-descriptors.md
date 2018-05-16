@@ -71,7 +71,7 @@ For registry entries under that key, see [USB Device Registry Entries](usb-devic
 
 For additional information, see [Microsoft OS Descriptors](http://go.microsoft.com/fwlink/p/?linkid=617154).
 
-## What types of OS feature descriptors are supported by Windows?
+## <a href="" id="osfeatures"></a>What types of OS feature descriptors are supported by Windows?
 
 
 Any information to be stored as a feature descriptor must comply with one of the standard formats that Microsoft has defined. Additional feature descriptors cannot be defined or implemented without Microsoft consent. Microsoft has defined the following feature descriptors:

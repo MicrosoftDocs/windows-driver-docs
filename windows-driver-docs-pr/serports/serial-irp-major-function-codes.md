@@ -22,7 +22,7 @@ This topic documents the following serial IRP major function codes:
 
 Header: Wdm.h (include Wdm.h or Ntddk.h)
 
-##  IRP_MJ_CREATE
+## <a href="" id="irp_mj_create"></a> IRP_MJ_CREATE
 The [IRP_MJ_CREATE](https://msdn.microsoft.com/library/windows/hardware/ff550729) request opens a serial device.
 
 ### When Sent
@@ -71,7 +71,7 @@ The interrupt assigned to the device is in use by another open device.
 ### Operation
 A serial device must be opened before it can be used. A serial device is an exclusive device; only one file can be open on a port at any given time.
 
-##  IRP_MJ_DEVICE_CONTROL
+## <a href="" id="irp_mj_device_control"></a> IRP_MJ_DEVICE_CONTROL
 The IRP_MJ_DEVICE_CONTROL request operates a serial port.
 
 ### When Sent
@@ -95,7 +95,7 @@ Request specific
 ### Operation
 Request specific
 
-##  IRP_MJ_FLUSH_BUFFERS
+## <a href="" id="irp_mj_flush_buffers"></a> IRP_MJ_FLUSH_BUFFERS
 The [IRP_MJ_FLUSH_BUFFER](https://msdn.microsoft.com/library/windows/hardware/ff550760) request flushes the internal write buffer of a serial device.
 
 ### When Sent
@@ -133,7 +133,7 @@ Serial queued the request for later processing.
 Serial queues and starts processing write and flush requests in the order in which the requests are received. Serial completes a flush request after it calls **IoCompleteRequest** for all write requests that it received before a flush request. *However, completion of the flush request does not indicate that all the previously started write requests are completed by other drivers in the device stack.* For example, a filter driver might still be processing a write request. A client must check that a write request is completed by all drivers in the device stack before the client attempts to free or reuse a write request's IRP.
 
 
-##  IRP_MJ_INTERNAL_DEVICE_CONTROL
+## <a href="" id="irp_mj_internal_device_control"></a> IRP_MJ_INTERNAL_DEVICE_CONTROL
 The [IRP_MJ_INTERNAL_DEVICE_CONTROL](https://msdn.microsoft.com/library/windows/hardware/ff550766) request sets internal operating modes on a serial device.
 
 ### When Sent
@@ -157,7 +157,7 @@ Request specific
 Request specific
 
 
-##   IRP_MJ_PNP
+## <a href="" id="irp_mj_pnp"></a>  IRP_MJ_PNP
 The [IRP_MJ_PNP](https://msdn.microsoft.com/library/windows/hardware/ff550772) request supports Plug and Play. 
 
 ### When Sent
@@ -205,7 +205,7 @@ serial devices on a multiport ISA card share the same interrupt status register 
 
 For a description of the generic operation of Plug and Play requests, see [Plug and Play Minor IRPs](https://msdn.microsoft.com/library/windows/hardware/ff558807).
 
-##  IRP_MJ_POWER
+## <a href="" id="irp_mj_power"></a> IRP_MJ_POWER
 The [IRP_MJ_POWER](https://msdn.microsoft.com/library/windows/hardware/ff550784) request controls power management.
 
 ### When Sent
@@ -233,7 +233,7 @@ Serial is the default power policy owner for a serial device stack that uses Ser
 For more information about the generic operation of these requests, see [Rules for Handling Power IRPs](https://msdn.microsoft.com/library/windows/hardware/ff563629).
 
 
-##  IRP_MJ_QUERY_INFORMATION
+## <a href="" id="irp_mj_query_information"></a> IRP_MJ_QUERY_INFORMATION
 The [IRP_MJ_QUERY_INFORMATION](https://msdn.microsoft.com/library/windows/hardware/ff550788) request queries the end-of-file information for a serial device. 
 
 ### When Sent
@@ -282,7 +282,7 @@ Serial supports requests of type **FileStandardInformation** and **FilePositionI
 The standard file information is always set to zero or **FALSE**, as appropriate. The position information is always set to zero.
 
 
-##  IRP_MJ_READ
+## <a href="" id="irp_mj_read"></a> IRP_MJ_READ
 A [IRP_MJ_READ](https://msdn.microsoft.com/library/windows/hardware/ff550794) request transfers data from a serial device to a client.
 
 ### When Sent
@@ -326,7 +326,7 @@ A client can use time-out events to terminate a read request. Note, however, tha
 For more information about read and write time-outs, see [Setting Read and Write Timeouts for a Serial Device](https://msdn.microsoft.com/library/windows/hardware/ff547486).
 
 
-##  IRP_MJ_SET_INFORMATION
+## <a href="" id="irp_mj_set_information"></a> IRP_MJ_SET_INFORMATION
 The [IRP_MJ_SET_INFORMATION](https://msdn.microsoft.com/library/windows/hardware/ff550807) request sets the end-of-file information about a serial device.
 
 ### When Sent
@@ -368,7 +368,7 @@ Serial queued the request for later processing.
 Serial supports requests of type **FileEndOfFileInformation** and **FileAllocationInformation**. However, Serial does not actually set file information. The end-of-file position is always set to zero.
 
 
-##  IRP_MJ_SYSTEM_CONTROL
+## <a href="" id="irp_mj_system_control"></a> IRP_MJ_SYSTEM_CONTROL
 The [IRP_MJ_SYSTEM_CONTROL](https://msdn.microsoft.com/library/windows/hardware/ff550813) request supports WMI requests.
 
 ### When Sent
@@ -429,7 +429,7 @@ Serial WMI GUID Associated data structure
 The WMI name of a serial device is the value of the entry value **PortName** under the Plug and Play registry key for the device.
 
 
-##  IRP_MJ_WRITE
+## <a href="" id="irp_mj_write"></a> IRP_MJ_WRITE
 An [IRP_MJ_WRITE](https://msdn.microsoft.com/library/windows/hardware/ff550819) request transfers data from a client to a serial device.
 
 ### When Sent

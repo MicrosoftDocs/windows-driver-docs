@@ -56,7 +56,7 @@ If your client driver is based on [Kernel-Mode Driver Framework](https://msdn.mi
 
 For information about special considerations related to the configuration of devices that require firmware downloads, see [Configuring USB Devices that Require Firmware Downloads](configuring-usb-devices-that-require-firmware-downloads.md).
 
-## Limitations for Selecting a Configuration
+## <a href="" id="ddk-configuring-usb-devices-kg"></a>Limitations for Selecting a Configuration
 
 
 Certain restrictions apply if a client driver is using WDF objects or whether the device has a single interface or multiple interfaces. Consider the following restrictions before changing the default configuration:

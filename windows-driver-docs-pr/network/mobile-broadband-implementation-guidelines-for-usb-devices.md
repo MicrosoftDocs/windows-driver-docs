@@ -24,7 +24,7 @@ The information in this topic applies to:
 
 MBIM devices may require time to complete initialization when they receive MBIM OPEN message from the host. The device should wait for its initialization to complete before responding to the MBIM OPEN message. The device should not respond to the message with error status like MBIM\_STATUS\_BUSY and expect the host to poll the device with MBIM OPEN messages. Responding to MBIM OPEN with a status other than MBIM\_STATUS\_SUCCESS terminates the initialization process on the host.
 
-## Multi-carrier\\Multi-subscription
+## <a href="" id="multi-carrier-multi-subscription"></a>Multi-carrier\\Multi-subscription
 
 
 Please refer to **IHV Guidance for Implementing Multimode- and Multicarrier- Capable MB Devices** for details.
@@ -108,7 +108,7 @@ For basic IP information (as defined in MBIM section 10.5.20.1), the expected IP
 -   **DNS server information from RA** - The only IP Layer configuration mechanism for DNS server information (as defined in MBIM section 10.5.20.1) supported by Windows is DHCPv6. MBIM devices must configure DNS server information, even if present in RA, via MBIM\_CID\_IP\_CONFIGURATION.
 -   **Basic IP information and DNS server information from DHCPv6** - If a mobile network provides basic IP information and DNS server information (as defined in MBIM section 10.5.20.1) from DHCPv6, then MBIM devices must allow DHCPv6 packets to be forwarded to the host and must not intercept the DHCPv6 packets or provide the basic IP information and DNS server information present in the DHCPv6 packets via MBIM\_CID\_IP\_CONFIGURATION.
 
-## MBIM\_CID\_RADIO\_STATE
+## <a href="" id="mbim-cid-radio-state"></a>MBIM\_CID\_RADIO\_STATE
 
 
 MBIM devices must not fail MBIM\_CID\_RADIO\_STATE operations with status of MBIM\_STATUS\_SIM\_NOT\_INSERTED when SIM is not present. Radio operations must not be failed due to SIM absence.

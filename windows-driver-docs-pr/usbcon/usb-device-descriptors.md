@@ -23,7 +23,7 @@ The host obtains the device descriptor through a control transfer. In the transf
 -   [Getting the device descriptor](#getting--the-device-descriptor)
 -   [Sample device descriptor](#sample-device-descriptor)
 
-## Getting the device descriptor
+## <a href="" id="getting--the-device-descriptor"></a>Getting the device descriptor
 
 
 A Windows Driver Frameworks (WDF) client driver can obtain the device descriptor only after the framework USB target device object has been created.

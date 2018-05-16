@@ -49,7 +49,7 @@ There are two drivers that manage the operations of a function controller. The p
 
     [Developing Windows drivers for USB function controller](developing-windows-drivers-for-usb-function-controllers.md)
 
-## 2. Modify system ACPI to indicate to the function controller driver that the connector is a USB Type-C connector.
+## <a href="" id="2--modify-system-acpi-to-indicate-to-the-function-controller-driver-that-the-connector-is-a-usb-type-c-connector--"></a>2. Modify system ACPI to indicate to the function controller driver that the connector is a USB Type-C connector.
 
 
 This is done through an ACPI method defined in the ACPI 6.0 specification
