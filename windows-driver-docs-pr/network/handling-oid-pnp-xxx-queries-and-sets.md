@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Handling OID\_PNP\_Xxx Queries and Sets
 
 
-## <a href="" id="ddk-handling-oid-pnp-xxx-queries-and-sets-ng"></a>
+
 
 
 The virtual miniport of an intermediate driver must export the [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function. NDIS calls the intermediate driver's *MiniportOidRequest* function when an overlying driver that is bound to the intermediate driver's virtual miniport calls [**NdisOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff563710) to query or set information objects (OID\_*Xxx*). NDIS can also call *MiniportOidRequest* on its own behalf. For more information about miniport driver handling of sets and queries to information objects, see [Obtaining and Setting Miniport Driver Information and NDIS Support for WMI](obtaining-and-setting-miniport-driver-information-and-ndis-support-for.md).

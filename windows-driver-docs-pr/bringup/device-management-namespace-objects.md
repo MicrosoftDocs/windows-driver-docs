@@ -4,7 +4,7 @@ author: windows-driver-content
 description: The ACPI 5.0 specification defines several types of namespace objects that can be used to manage devices.
 ms.assetid: 26C3312D-B1B0-4843-BF4E-1B03630C0BDD
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,12 +15,12 @@ ms.technology: windows-devices
 
 The [ACPI 5.0 specification](http://www.uefi.org/specifications) defines several types of namespace objects that can be used to manage devices. For example, device identification objects contain identification information for devices that connect to buses, such as I2C, that do not support hardware enumeration of child devices. Other types of namespace objects can specify system resources, describe device dependencies, and indicate which devices can be disabled.
 
-## <a href="" id="winid"></a>Device identification in Windows
+## Device identification in Windows
 
 
 Windows Plug and Play finds and loads device drivers based on a device identifier provided by the enumerator of the device. Enumerators are bus drivers that know how to extract identification information from the device. Some buses (such as PCI, SD, and USB) have hardware-defined mechanisms to do this extraction. For buses that do not (such as the processor bus or a simple peripheral bus), ACPI defines identification objects in the namespace.
 
-The [Windows ACPI driver](https://msdn.microsoft.com/library/windows/hardware/ff540493), Acpi.sys, assembles the values found in these objects into a variety of device identifier strings that can identify a device very specifically, or quite generically, depending on the needs of the driver. Some of the string patterns created to identify ACPI-enumerated devices are:
+The [Windows ACPI driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/acpi-driver), Acpi.sys, assembles the values found in these objects into a variety of device identifier strings that can identify a device very specifically, or quite generically, depending on the needs of the driver. Some of the string patterns created to identify ACPI-enumerated devices are:
 
 ``` syntax
 ACPI\VEN_vvv[v]&DEV_dddd&SUBSYS_sss[s]nnnn&REV_rrrr
@@ -34,18 +34,18 @@ You can see the device identifiers that Windows creates for your device by openi
 
 Device identifiers should be used for INF matching only, and should never be parsed or processed by the device driver. If the device driver has a need to identify the specific hardware it was loaded for, the recommended method is to have the INF file set appropriate registry keys at install time. The driver can then access these keys during initialization to obtain the required information.
 
-## <a href="" id="acpiid"></a>Device identification in ACPI
+## Device identification in ACPI
 
 
-### <a href="" id="hardware-id---hid-"></a>Hardware ID (\_HID)
+### Hardware ID (\_HID)
 
 The minimum requirement for identifying a device in ACPI is the Hardware ID (\_HID) object. \_HID returns a string with the format of "ABC\[D\]*xxxx*", where "ABC\[D\]" is a 3- or 4-character string that identifies the manufacturer of the device (the "Vendor ID"), and *xxxx* is a hexadecimal number that identifies the specific device manufactured by that vendor (the "Device ID"). Vendor IDs must be unique across the industry. Microsoft allocates these strings to ensure that they are unique. Vendor IDs can be obtained from [Plug and Play ID - PNPID Request](http://go.microsoft.com/fwlink/p/?linkid=330999).
 
 **Note**  ACPI 5.0 also supports the use of PCI-assigned vendor IDs in \_HID and other identification objects, so you might not need to get a vendor ID from Microsoft. For more information about hardware identification requirements, see section 6.1.5, "\_HID (Hardware ID)", of the [ACPI 5.0 specification](http://www.uefi.org/specifications).
 
- 
 
-### <a href="" id="compatible-id---cid-"></a>Compatible ID (\_CID)
+
+### Compatible ID (\_CID)
 
 Microsoft has reserved the vendor ID "PNP" for devices that are compatible with inbox drivers shipped with Windows. Windows defines a number of device IDs for use with this vendor ID that can be used to load the Windows-provided driver for a device. A separate object, the Compatible ID (\_CID) object, is used to return these identifiers. Windows always prefers Hardware IDs (returned by \_HID) over Compatible IDs (returned by \_CID) in INF matching and driver selection. This preference allows the Windows-provided driver to be treated as a default driver if a vendor-provided device-specific driver is not available. The Compatible IDs in the following table are newly created for use with SoC platforms.
 
@@ -62,19 +62,19 @@ Microsoft has reserved the vendor ID "PNP" for devices that are compatible with 
 | PNP0D40       | SDA standard-compliant SD host controller             |
 | PNP0D80       | Windows-compatible system power management controller |
 
- 
 
-### <a href="" id="subsystem-id---sub---hardware-revision---hrv---and-class---cls-"></a>Subsystem ID (\_SUB), Hardware Revision (\_HRV), and Class (\_CLS)
+
+### Subsystem ID (\_SUB), Hardware Revision (\_HRV), and Class (\_CLS)
 
 ACPI 5.0 defines the \_SUB, \_HRV, and \_CLS objects that can be used along with the \_HID to create identifiers that more uniquely identify a specific version, integration, or hardware revision of a device, or to indicate membership in a PCI-defined device class. These objects are generally optional, but might be required by certain device classes in Windows. For more information about these objects, see section 6.1, "Device Identification Objects", of the [ACPI 5.0 specification](http://www.uefi.org/specifications).
 
 For serviceability, there is a Windows Hardware Certification Kit (HCK) requirement that device IDs on OEM systems be "four-part" IDs. The four parts are the vendor ID, the device ID, the subsystem vendor (OEM) ID, and the subsystem (OEM) device ID. Therefore, the Subsystem ID (\_SUB) object is required for OEM platforms.
 
-### <a href="" id="device-specific-method---dsm-"></a>Device-Specific Method (\_DSM)
+### Device-Specific Method (\_DSM)
 
 The \_DSM method is defined in section 9.14.1, "\_DSM (Device Specific Method)", of the [ACPI 5.0 specification](http://www.uefi.org/specifications). This method provides for individual, device-specific data and control functions that can be called by a device driver without conflicting with other such device-specific methods. The \_DSM for a particular device or device class defines a UUID (GUID) that is guaranteed not to clash with other UUIDs. For each UUID, there is a set of defined functions that the \_DSM method can implement to provide data or to perform control functions for the driver. Class-specific data and data formats are provided in separate device-class-specific specifications, and are also discussed in [ACPI Device-Specific Methods](acpi-device-specific-methods.md).
 
-### <a href="" id="address---adr--and-unique-id---uid-"></a>Address (\_ADR) and Unique ID (\_UID)
+### Address (\_ADR) and Unique ID (\_UID)
 
 There are three additional requirements for device identification:
 
@@ -82,7 +82,7 @@ There are three additional requirements for device identification:
 -   On platforms where multiple instances of a particular IP block are used, so that each block has the same device identification objects, the Unique Identifier (\_UID) object is necessary to enable the operating system to distinguish between blocks.
 -   No two devices in a particular namespace scope can have the same name.
 
-## <a href="" id="devconobj"></a>Device configuration objects
+## Device configuration objects
 
 
 For each device identified in the namespace, the system resources (memory addresses, interrupts, and so on) consumed by the device must also be reported by the Current Resource Settings (\_CRS) object. Reporting of multiple possible resource configurations (\_PRS) and controls for changing a device's resource configuration (\_SRS) are supported but optional.
@@ -111,7 +111,7 @@ If a driver supports orderly removal, and the device hardware can be disabled (t
 
 For more information, see sections 6.2.3 (\_DIS), 6.2.15 (\_SRS), and 6.3.7 (\_STA) of the [ACPI 5.0 specification](http://www.uefi.org/specifications).
 
-## <a href="" id="devdepend"></a>Device dependencies
+## Device dependencies
 
 
 Typically, there are hardware dependencies between devices on a particular platform. Windows requires that all such dependencies be described so that it can ensure that all devices function correctly as things change dynamically in the system (device power is removed, drivers are stopped and started, and so on). In ACPI, dependencies between devices are described in the following ways:
@@ -125,15 +125,15 @@ There can also be software dependencies between device drivers. These dependenci
 -   For driver-load-order dependencies, see [How To Control Device Driver Load Order](http://support.microsoft.com/kb/115486).
 -   For power-relations dependencies, see:
 
-    -   [**IoInvalidateDeviceRelations**](https://msdn.microsoft.com/library/windows/hardware/ff549353) routine (To trigger establishing power relations, call the **IoInvalidateDeviceRelations** routine with the **DEVICE\_RELATION\_TYPE** enum value **PowerRelations**.)
-    -   [**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](https://msdn.microsoft.com/library/windows/hardware/ff551670)
-    -   [Enumerating the Devices on a Bus](https://msdn.microsoft.com/library/windows/hardware/ff540819)
-    -   [Dynamic Enumeration](https://msdn.microsoft.com/library/windows/hardware/ff540812)
-    -   [**WdfDeviceInitSetPnpPowerEventCallbacks**](https://msdn.microsoft.com/library/windows/hardware/ff546135) method
+    -   [**IoInvalidateDeviceRelations**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioinvalidatedevicerelations) routine (To trigger establishing power relations, call the **IoInvalidateDeviceRelations** routine with the **DEVICE\_RELATION\_TYPE** enum value **PowerRelations**.)
+    -   [**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mn-query-device-relations)
+    -   [Enumerating the Devices on a Bus](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/enumerating-the-devices-on-a-bus)
+    -   [Dynamic Enumeration](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/dynamic-enumeration)
+    -   [**WdfDeviceInitSetPnpPowerEventCallbacks**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks) method
 
- 
 
- 
+
+
 
 
 

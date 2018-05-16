@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # ActiveX Objects for Print Web Pages
 
 
-## <a href="" id="ddk-activex-objects-for-print-web-pages-gg"></a>
+
 
 
 Three ActiveX objects, [Iasphelp](https://msdn.microsoft.com/library/windows/hardware/ff550742), [IOleCvt](https://msdn.microsoft.com/library/windows/hardware/ff551819), and [ISNMP](https://msdn.microsoft.com/library/windows/hardware/ff554396), are provided for print Web pages. ASP files can access each object through an Automation interface, by using a scripting language such as VBScript. The objects and interfaces are implemented in Oleprn.dll.

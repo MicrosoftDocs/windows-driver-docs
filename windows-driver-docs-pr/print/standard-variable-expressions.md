@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Standard Variable Expressions
 
 
-## <a href="" id="ddk-standard-variable-expressions-gg"></a>
+
 
 
 When you specify arguments in a command string, you can specify the argument value as an expression. This expression can perform operations using the current values of the [standard variables](standard-variables.md). Each standard variable expression within a command string is delimited by braces ( {, } ).

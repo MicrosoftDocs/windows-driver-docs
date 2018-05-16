@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Raster Data Compression Commands
 
 
-## <a href="" id="ddk-raster-data-compression-commands-gg"></a>
+
 
 
 The following table lists the raster data compression commands. All commands are specified using the [command entry format](command-entry-format.md).

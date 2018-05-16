@@ -29,7 +29,7 @@ Writing a driver that is customized to the device's requirements is the most fle
 -   [Can you use a Microsoft-provided driver?](#can-you-use-a-microsoft-provided-driver)
 -   [If you write a USB client driver, which driver model is best?](#if-you--write-a-usb-client-driver--which-driver-model-is-best-)
 
-## <a href="" id="can-you-use-a-microsoft-provided-driver"></a>Can you use a Microsoft-provided driver?
+## Can you use a Microsoft-provided driver?
 
 
 You might *not* need to write a driver if:
@@ -57,7 +57,7 @@ You might *not* need to write a driver if:
 
     In Windows 8, we've added a new compatible ID to the INF for WinUSB installation. If the device firmware contains that compatible ID, WinUSB is loaded by default as the function driver for the device. This means that hardware manufacturers are not required to distribute INF files for their WinUSB devices. For more information, see [WinUSB Device](automatic-installation-of-winusb.md).
 
-## <a href="" id="if-you--write-a-usb-client-driver--which-driver-model-is-best-"></a>If you write a USB client driver, which driver model is best?
+## If you write a USB client driver, which driver model is best?
 
 
 The answer depends on the design of your device. First, determine whether a particular driver model meets your requirements. Some design considerations are based on whether you want the USB device to be accessed by multiple concurrent applications and support data streaming through isochronous endpoints.

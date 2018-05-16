@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Handling Stop IRPs (Windows 2000 and Later)
 
 
-## <a href="" id="ddk-handling-stop-irps-windows-2000-and-later-kg"></a>
+
 
 
 Drivers that run only on Windows 2000 and later versions of Windows (WDM versions 0x10 and greater) receive stop IRPs only when the PnP manager rebalances resources. The following sections describe techniques such drivers should use in handling stop IRPs:

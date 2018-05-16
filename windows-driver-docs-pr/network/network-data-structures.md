@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Network Data Structures
 
 
-## <a href="" id="ddk-network-data-structures-ng"></a>
+
 
 
 Network data consists of packets of data that are sent or received over the network. NDIS provides data structures to describe and organize such data. The primary network data structures for NDIS 6.0 and later are:

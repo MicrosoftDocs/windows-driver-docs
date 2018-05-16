@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Determining When to Send a Wait/Wake IRP
 
 
-## <a href="" id="ddk-determining-when-to-send-a-wait-wake-irp-kg"></a>
+
 
 
 The driver that owns device power policy sends wait/wake IRPs on behalf of its device. Such a driver must send a wait/wake IRP when one of the following occurs:

@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Option Attributes for the ColorMode Feature
 
 
-## <a href="" id="ddk-option-attributes-for-the-colormode-feature-gg"></a>
+
 
 
 The following table lists the attributes associated with the ColorMode feature. For more information about the ColorMode feature, see [Standard Features](standard-features.md).

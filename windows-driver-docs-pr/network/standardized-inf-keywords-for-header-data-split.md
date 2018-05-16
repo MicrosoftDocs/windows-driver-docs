@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Standardized INF Keywords for Header-Data Split
 
 
-## <a href="" id="ddk-standardized-inf-keywords-for-header-data-split-ng"></a>
+
 
 
 A *standardized keyword* is defined to enable or disable support for header-data split for a miniport adapters.

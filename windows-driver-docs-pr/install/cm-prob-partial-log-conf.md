@@ -16,7 +16,7 @@ ms.technology: windows-devices
 This function is reserved for system use.
 
 
-## <a href="" id="ddk-cm-prob-partial-log-conf-dg"></a>
+
 
 
 The device is only partially configured.

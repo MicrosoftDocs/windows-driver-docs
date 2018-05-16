@@ -34,7 +34,7 @@ This topic includes the following information about how to handle an NDIS select
 
 [Canceling and Completing an NDIS Selective Suspend Idle Notification](#cancel)
 
-## <a href="" id="guidelines"></a>Guidelines for Handling the Call to *MiniportIdleNotification*
+## Guidelines for Handling the Call to *MiniportIdleNotification*
 
 
 NDIS and the miniport driver follow these steps when NDIS calls [*MiniportIdleNotification*](https://msdn.microsoft.com/library/windows/hardware/hh464092):
@@ -89,7 +89,7 @@ The miniport driver should perform the following operations until the network ad
 
      
 
-## <a href="" id="overview"></a>Guidelines for the Call to **NdisMIdleNotificationConfirm**
+## Guidelines for the Call to **NdisMIdleNotificationConfirm**
 
 
 NDIS and the miniport driver follow these steps when the miniport driver calls [**NdisMIdleNotificationConfirm**](https://msdn.microsoft.com/library/windows/hardware/hh451492):
@@ -142,7 +142,7 @@ NDIS and the miniport driver follow these steps when the miniport driver calls [
 
     After the IRP is completed, NDIS returns from the call to [**NdisMIdleNotificationConfirm**](https://msdn.microsoft.com/library/windows/hardware/hh451492).
 
-## <a href="" id="cancel"></a>Canceling and Completing an NDIS Selective Suspend Idle Notification
+## Canceling and Completing an NDIS Selective Suspend Idle Notification
 
 
 After the idle notification is issued, it can be canceled and completed in the following ways:

@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Remote NDIS OIDs
 
 
-## <a href="" id="ddk-remote-ndis-oids-ng"></a>
+
 
 
 This section lists the required and optional NDIS OIDs for Remote NDIS Ethernet devices. The list takes into account the unique properties of a Remote NDIS device and the Remote NDIS miniport driver, so the list is not identical to the list that a normal NDIS connectionless miniport driver would support. Some OIDs are both *set* and *query* OIDs; if a mandatory OID is defined as both, then it must be supported by a Remote NDIS device for both [REMOTE\_NDIS\_SET\_MSG](remote-ndis-set-msg.md) and [REMOTE\_NDIS\_QUERY\_MSG](remote-ndis-query-msg.md). For a detailed explanation of the OIDs, see the Microsoft Windows Driver Development Kit (DDK).

@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Group Parent
 
 
-## <a href="" id="ddk-group-parent-gg"></a>
+
 
 
 Property sheet pages can be grouped together by assigning them to a single *group parent*. You can create a group parent by calling CPSUI's [**ComPropSheet**](https://msdn.microsoft.com/library/windows/hardware/ff546207) function with a [**CPSFUNC\_INSERT\_PSUIPAGE**](https://msdn.microsoft.com/library/windows/hardware/ff546414) function code, and specifying PSUIPAGEINSERT\_GROUP\_PARENT as the **Type** member for an [**INSERTPSUIPAGE\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff551634) structure.

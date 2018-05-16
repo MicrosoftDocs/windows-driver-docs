@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # System-Supplied Parallel Drivers
 
 
-## <a href="" id="ddk-system-supplied-parallel-drivers-kg"></a>
+
 
 
 This section describes the following about the system-supplied parallel drivers for parallel ports and devices that are attached to parallel ports:

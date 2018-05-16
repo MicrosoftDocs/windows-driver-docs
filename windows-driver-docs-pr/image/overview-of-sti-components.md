@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Overview of STI Components
 
 
-## <a href="" id="ddk-overview-of-sti-components-si"></a>
+
 
 
 The following diagram illustrates the software components that compose Microsoft STI. Following the diagram is a component list.

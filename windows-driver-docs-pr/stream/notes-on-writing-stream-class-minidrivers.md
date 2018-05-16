@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Notes on Writing Stream Class Minidrivers
 
 
-## <a href="" id="ddk-notes-on-writing-stream-class-minidrivers-ksg"></a>
+
 
 
 -   Minidrivers must run on both Intel and non-Intel x86 processors, and therefore must be written in C (or other high-level language). Minidrivers should not contain assembly language source code.

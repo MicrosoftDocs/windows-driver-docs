@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # CoNDIS Registration
 
 
-## <a href="" id="ddk-condis-registration-ng"></a>
+
 
 
 To support CoNDIS, NDIS drivers must register the optional CoNDIS function entry points. NDIS drivers call the [**NdisSetOptionalHandlers**](https://msdn.microsoft.com/library/windows/hardware/ff564550) function to register optional services.

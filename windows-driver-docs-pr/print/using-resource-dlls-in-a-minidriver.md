@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Using Resource DLLs in a Minidriver
 
 
-## <a href="" id="ddk-using-resource-dlls-in-a-minidriver-gg"></a>
+
 
 
 Typically, printer drivers require the use of such resources as externally stored fonts, icons and other bitmaps, and localizable user interface text strings. Descriptions of these items are placed in a resource DLL, as described in the Microsoft Windows SDK documentation.

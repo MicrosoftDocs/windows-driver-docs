@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using System DMA
 
 
-## <a href="" id="ddk-using-system-dma-kg"></a>
+
 
 
 Drivers of subordinate DMA devices use one of the following types of system-provided DMA support:

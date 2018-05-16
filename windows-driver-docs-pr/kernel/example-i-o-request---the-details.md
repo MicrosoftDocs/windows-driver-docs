@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Example I/O Request - The Details
 
 
-## <a href="" id="ddk-example-i-o-request---the-details-kg"></a>
+
 
 
 The figure illustrating opening a file object shows an IRP with two I/O stack locations, but an IRP can have any number of I/O stack locations, depending on how many layered drivers will handle a given request.

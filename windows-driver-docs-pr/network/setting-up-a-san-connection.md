@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Setting Up a SAN Connection
 
 
-## <a href="" id="ddk-setting-up-a-san-connection-ng"></a>
+
 
 
 During connection setup, the Windows Sockets switch determines which service provider will service the TCP socket. This provider will handle most subsequent operations on the socket. Regardless of whether the switch chooses a SAN service provider, the TCP/IP provider exclusively handles a few types of setup operations.

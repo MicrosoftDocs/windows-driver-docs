@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Extended Example: Defining a "64Bit" Field
 
 
-## <a href="" id="ddk-extended-example-defining-a-64bit-field-kg"></a>
+
 
 
 The following example shows how to modify a 32-bit driver for 64-bit by adding a "64Bit" field to the IOCTL control code. Note that this example shows only the portions of the driver code that need to be modified.

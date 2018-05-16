@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Item Flags
 
 
-## <a href="" id="ddk-wia-item-flags-si"></a>
+
 
 
 This topic applies to Windows Vista and later.

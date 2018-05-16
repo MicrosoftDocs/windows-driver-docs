@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Customizing a WIA Driver
 
 
-## <a href="" id="ddk-customizing-a-wia-driver-si"></a>
+
 
 
 This section covers the following topics:

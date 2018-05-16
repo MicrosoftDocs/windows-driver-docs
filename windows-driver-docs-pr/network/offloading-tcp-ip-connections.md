@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Offloading TCP/IP Connections
 
 
-## <a href="" id="ddk-offloading-tcp-ip-connections-ng"></a>
+
 
 
 Offloading TCP/IP connections is supported in NDIS 6.0 and later.

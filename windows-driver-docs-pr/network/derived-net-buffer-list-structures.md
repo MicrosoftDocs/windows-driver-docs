@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Derived NET\_BUFFER\_LIST Structures
 
 
-## <a href="" id="ddk-derived-net-buffer-list-structures-ng"></a>
+
 
 
 NDIS provides functions that drivers can use to manage [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures that are derived from other NET\_BUFFER\_LIST structures. These functions are typically used by intermediate drivers.

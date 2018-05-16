@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Managing Hardware Priorities
 
 
-## <a href="" id="ddk-managing-hardware-priorities-kg"></a>
+
 
 
 The IRQL at which a driver routine executes determines which kernel-mode driver support routines it can call. For example, some driver support routines require that the caller be running at IRQL = DISPATCH\_LEVEL. Others cannot be called safely if the caller is running at any IRQL higher than PASSIVE\_LEVEL.

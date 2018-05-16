@@ -24,7 +24,7 @@ ms.technology: windows-devices
 # COM Port Database
 
 
-## <a href="" id="ddk-com-port-database-kg"></a>
+
 
 
 The system-supplied COM port database arbitrates the use of COM port numbers by [COM ports](configuration-of-com-ports.md) that are installed on the system. Microsoft Windows provides this component to facilitate installing COM ports and, in particular, to ensure that each port number is assigned, at most, to one port. The component consists of the database and a library containing functions that the installation software calls to access the database. All system-supplied installers for COM ports use the COM port database to obtain a COM port number. Although not a Plug and Play requirement, all vendor-supplied installers should also use the COM port database to obtain a COM port number.

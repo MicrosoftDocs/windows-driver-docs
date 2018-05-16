@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Initializing Spin Locks
 
 
-## <a href="" id="ddk-initializing-spin-locks-kg"></a>
+
 
 
 Before calling any support routine that requires access to a caller-supplied executive spin lock, a driver must call [**KeInitializeSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff552160) to initialize the corresponding executive spin lock. Support routines that require an initialized executive spin lock include the following:

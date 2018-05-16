@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Windows Sockets Direct Architecture
 
 
-## <a href="" id="ddk-windows-sockets-direct-architecture-ng"></a>
+
 
 
 Windows Sockets Direct provides a high-speed, high-performance connection between two network nodes on the same system area network (SAN) by mapping a SAN transport interface directly into an application process. This SAN connection enables user-mode processes to perform direct input and output (I/O) without copying across the user-kernel boundary.

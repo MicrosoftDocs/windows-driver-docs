@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # NDIS Intermediate Drivers
 
 
-## <a href="" id="ddk-ndis-intermediate-drivers-ng"></a>
+
 
 
 NDIS intermediate drivers interface between upper-level protocol drivers and miniport drivers. Some applications that might require an intermediate driver include:

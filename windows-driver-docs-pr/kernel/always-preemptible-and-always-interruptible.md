@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Always Preemptible and Always Interruptible
 
 
-## <a href="" id="ddk-always-preemptible-and-always-interruptible-kg"></a>
+
 
 
 The goal of the preemptible, interruptible design of the operating system is to maximize system performance. Any thread can be preempted by a thread with a higher priority, and any driver's interrupt service routine (ISR) can be interrupted by a routine that runs at a higher interrupt request level (IRQL).

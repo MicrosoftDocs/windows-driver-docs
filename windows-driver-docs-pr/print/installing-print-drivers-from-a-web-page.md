@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Installing Print Drivers from a Web Page
 
 
-## <a href="" id="ddk-installing-print-drivers-from-a-web-page-gg"></a>
+
 
 
 Before a user can send a job to a print queue that is visible by means of print Web pages, driver files must be sent from the print server and installed on the user's system. This installation operation occurs when a user views a print queue's Web page and then selects its installation page. (The installation page cannot be replaced with a customized page.)

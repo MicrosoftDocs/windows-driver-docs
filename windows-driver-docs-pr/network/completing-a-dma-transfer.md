@@ -23,7 +23,7 @@ ms.technology: windows-devices
 
  
 
-## <a href="" id="ddk-completing-a-dma-transfer-ng"></a>
+
 
 
 The NetDMA interface provides two methods for a NetDMA provider to complete a dynamic memory access (DMA) transfer:

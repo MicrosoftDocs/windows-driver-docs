@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Overview of NDIS versions
 
 
-## <a href="" id="ddk-ndis-versions-ng"></a>
+
 
 
 If you are writing an NDIS driver for more than one version of Microsoft Windows, be sure the features that you are using are supported on each Windows version. New features have been added to NDIS with each release. Other features became obsolete and were removed from later NDIS versions.

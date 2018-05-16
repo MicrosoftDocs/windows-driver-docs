@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Building and Testing BDA Drivers
 
 
-## <a href="" id="ddk-building-and-testing-bda-drivers-ksg"></a>
+
 
 
 The following sections describe how to build and test a Broadcast Driver Architecture (BDA) driver:

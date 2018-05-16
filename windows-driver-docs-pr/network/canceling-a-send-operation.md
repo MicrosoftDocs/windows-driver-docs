@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Canceling a Send Operation
 
 
-## <a href="" id="ddk-canceling-a-send-operation-ng"></a>
+
 
 
 The following figure illustrates canceling a send operation.

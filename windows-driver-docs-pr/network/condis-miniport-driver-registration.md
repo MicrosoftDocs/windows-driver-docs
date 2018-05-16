@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # CoNDIS Miniport Driver Registration
 
 
-## <a href="" id="ddk-condis-miniport-driver-registration-ng"></a>
+
 
 
 CoNDIS miniport drivers initialize like other miniport drivers and also must register additional CoNDIS entry points. For general information about miniport driver initialization, see [Initializing a Miniport Driver](initializing-a-miniport-driver.md).

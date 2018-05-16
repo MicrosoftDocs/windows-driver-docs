@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # How the Application Releases the WIA Device
 
 
-## <a href="" id="ddk-how-the-application-releases-the-wia-device-si"></a>
+
 
 
 When an application has no further need of a WIA device, it calls the **IWiaItem::Release** method (described in the Microsoft Windows SDK documentation). When the last reference to any WIA item is released, the WIA service calls the [**IWiaMiniDrv::drvUnInitializeWia**](https://msdn.microsoft.com/library/windows/hardware/ff545010) method. A WIA minidriver should use this method primarily to manage resources associated with all connected applications. When an application closes, the resources associated with its item tree are no longer needed. The WIA minidriver should keep track of all connected applications by incrementing a reference counter in [**IWiaMiniDrv::drvInitializeWia**](https://msdn.microsoft.com/library/windows/hardware/ff544986) and decrementing that reference counter in **IWiaMiniDrv::drvUnInitializeWia**. Freeing resources at this point can cause problems for other connected applications. When the reference counter reaches zero there are no more applications connected to the WIA minidriver. The minidriver should clean up any allocated resources it acquired during application connections.

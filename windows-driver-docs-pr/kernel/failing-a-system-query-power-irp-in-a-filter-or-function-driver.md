@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Failing a System Query-Power IRP in a Filter or Function Driver
 
 
-## <a href="" id="ddk-failing-a-system-query-power-irp-in-a-filter-or-function-driver-kg"></a>
+
 
 
 A filter or function driver (that is not the power policy owner for a device) can fail an [**IRP\_MN\_QUERY\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551699) request if either of the following is true:

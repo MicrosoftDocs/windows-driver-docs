@@ -9,7 +9,7 @@ keywords: ["HID reports WDK , extracting control data", "reports WDK HID , extra
 # Extracting Button Usages That Are Set to ON
 
 
-## <a href="" id="ddk-extracting-button-usages-that-are-set-to-on-kg"></a>
+
 
 
 To extract the [HID usages](hid-usages.md) of buttons that are set to ON (1), applications and drivers call one of the following HID support routines:

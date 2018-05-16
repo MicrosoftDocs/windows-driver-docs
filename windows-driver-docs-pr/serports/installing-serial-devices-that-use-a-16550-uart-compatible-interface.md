@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Installing Serial Devices that Use a 16550 UART-Compatible Interface
 
 
-## <a href="" id="ddk-installing-serial-devices-that-use-a-16550-uart-compatible-interfa"></a>
+
 
 
 To install a Plug and Play device that uses Serial as a lower-level device filter driver, do the following:

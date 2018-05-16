@@ -20,7 +20,7 @@ ms.technology: windows-devices
 
  
 
-## <a href="" id="ddk-native-802-11-wireless-lan-miniport-adapter-power-management-nr"></a>
+
 
 
 Beginning with NDIS 6.20, the operating system supports wake-on-Wireless-LAN operations. These operations reduce power consumption and are provided as part of the NDIS 6.20 power management interface. The NIC must be in Infrastructure Station mode and associated with an AP using either WPA2-Enterprise (WPA2) or WPA2-Personal (WPA2-PSK) authentication. In this configuration, while the computer is in a low-power state, the operating system lets the NIC handle Robust Security Network (RSN) group transient key (GTK) rekeying.

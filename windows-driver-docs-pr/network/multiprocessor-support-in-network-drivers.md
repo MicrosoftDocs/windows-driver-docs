@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Multiprocessor Support in Network Drivers
 
 
-## <a href="" id="ddk-multiprocessor-support-ng"></a>
+
 
 
 To write a portable driver for all Microsoft Windows versions, you need to write code to safely run on computers with multiple concurrently running processors. A network driver must be multiprocessor-safe and must use the provided NDIS library functions.

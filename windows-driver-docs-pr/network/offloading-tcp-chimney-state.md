@@ -20,7 +20,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-offloading-tcp-chimney-state-ng"></a>
+
 
 
 The Offloading TCP Chimney State section describes the process of offloading TCP chimney state to an offload target.

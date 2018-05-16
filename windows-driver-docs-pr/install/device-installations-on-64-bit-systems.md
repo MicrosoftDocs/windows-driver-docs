@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Device Installations on 64-Bit Systems
 
 
-## <a href="" id="ddk-installing-devices-on-64-bit-systems-dg"></a>
+
 
 
 If your device will be installed on both 32-bit platforms and 64-bit platforms, you must follow these steps when you create a [driver package](driver-packages.md):

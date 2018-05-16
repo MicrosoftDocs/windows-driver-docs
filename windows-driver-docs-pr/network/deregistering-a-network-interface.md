@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Deregistering a Network Interface
 
 
-## <a href="" id="ddk-deregistering-a-network-interface-ng"></a>
+
 
 
 An NDIS interface provider calls the [**NdisIfDeregisterInterface**](https://msdn.microsoft.com/library/windows/hardware/ff562700) function to indicate that a specified interface should be removed from the list of known interfaces on the computer, for example, because the interface has been uninstalled. Other reasons for deregistering interfaces are application-specific. To promote good resource management, interface providers should always deregister interfaces that are no longer useful.

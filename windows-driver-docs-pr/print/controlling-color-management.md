@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Controlling Color Management
 
 
-## <a href="" id="ddk-controlling-color-management-gg"></a>
+
 
 
 Color management for a printer can be controlled by an application, the system (GDI), the driver, or device hardware. The driver determines which component is managing color correction by examining flags within the [**BRUSHOBJ**](https://msdn.microsoft.com/library/windows/hardware/ff538261) and [**XLATEOBJ**](https://msdn.microsoft.com/library/windows/hardware/ff570634) structures that are passed to its implementations of graphics DDI drawing functions. The following flags are defined:

@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Registering and Deregistering DMA Channels
 
 
-## <a href="" id="ddk-registering-and-deregistering-dma-channels-ng"></a>
+
 
 
 An NDIS miniport driver calls the [**NdisMRegisterScatterGatherDma**](https://msdn.microsoft.com/library/windows/hardware/ff563659) function from its [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function to register a DMA channel with NDIS.

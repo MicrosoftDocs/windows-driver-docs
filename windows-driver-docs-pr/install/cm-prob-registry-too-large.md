@@ -16,7 +16,7 @@ ms.technology: windows-devices
 This function is reserved for system use.
 
 
-## <a href="" id="ddk-cm-prob-registry-too-large-dg"></a>
+
 
 
 The registry is too large.

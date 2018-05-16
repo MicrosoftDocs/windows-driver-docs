@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # DispatchQueryInformation Routines
 
 
-## <a href="" id="ddk-dispatchqueryinformation-routines-kg"></a>
+
 
 
 A driver's [*DispatchQueryInformation*](https://msdn.microsoft.com/library/windows/hardware/ff543364) routine handles IRPs for the [**IRP\_MJ\_QUERY\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff550788) I/O function code. Driver support for this I/O function code is optional, and typically appears in higher-level or file system drivers. This request is sent by the I/O manager and other operating system components, as well as other kernel-mode drivers. For example, it is sent when a user-mode application calls [**GetFileInformationByHandle**](https://msdn.microsoft.com/library/windows/desktop/aa364952), and when a kernel-mode component calls [**ZwQueryInformationFile**](https://msdn.microsoft.com/library/windows/hardware/ff567052).

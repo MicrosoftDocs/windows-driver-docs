@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 The topics in this section describe how a Windows Driver Frameworks (WDF) driver can forward an I/O request or create and send a new request to another driver, called an I/O target.
 
-## <a href="" id="ddk-using-i-o-targets-df"></a>
+
 
 
 ## In this section

@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Identifiers for ISAPNP Devices
 
 
-## <a href="" id="ddk-identifiers-for-isapnp-devices-dg"></a>
+
 
 
 Every ISAPNP card supports a readable resource data structure that describes the resources supported and those requested by the card. This structure supports the concept of multiple functions (or "logical devices") for ISA card. A separate set of "tags" or "descriptors" are associated with each function of the card. Using this tag information, the ISAPNP enumerator constructs two hardware identifiers, formatted as:

@@ -30,7 +30,7 @@ Windows 8 provides a KMDF-based HID miniport driver that implements version 1.0
 
  
 
-## <a href="" id="the-i2c-controller-driver"></a>The I²C Controller Driver
+## The I²C Controller Driver
 
 
 The I²C controller driver exposes a Serial Peripheral Bus (SPB) IOCTL interface to perform read and write operations. This driver provides the actual controller intrinsics (for example, I²C). The SPB Class Extension, on behalf of the controller driver, handles all interaction with the resource hub and implements necessary queues to manage simultaneous targets.

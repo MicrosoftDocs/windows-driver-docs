@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Font Cartridge Attributes
 
 
-## <a href="" id="ddk-font-cartridge-attributes-gg"></a>
+
 
 
 The following table contains attributes that can be included in a \*FontCartridge GPD entry.

@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Registry Settings for Serial
 
 
-## <a href="" id="ddk-registry-settings-for-serial-kg"></a>
+
 
 
 This section describes the following registry settings that Serial uses to configure a serial device:

@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Core Components
 
 
-## <a href="" id="ddk-wia-core-components-si"></a>
+
 
 
 The WIA components for Windows XP and Windows Me are shown in the following figure.

@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Locking and Unlocking Best Practices
 
 
-## <a href="" id="ddk-locking-and-unlocking-best-practices-si"></a>
+
 
 
 Locking for the STI portion of a WIA driver needs special attention. Even though an application can access the published STI interfaces directly, such direct access to the device can be misused. Locking techniques that are implemented improperly can leave a device open to a denial of service (DoS) attack.

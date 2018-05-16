@@ -24,7 +24,7 @@ ms.technology: windows-devices
 # Identifying a Printer's Color Capability
 
 
-## <a href="" id="ddk-identifying-a-printer-s-color-capability-gg"></a>
+
 
 
 To distinguish between color and noncolor (monochrome or grayscale) devices, Windows 2000 and later NT-based operating system versions call the [**DrvDeviceCapabilities**](https://msdn.microsoft.com/library/windows/hardware/ff548539) function, passing the DC\_COLORDEVICE constant in the call. This function returns 1 if the device supports color, and 0 if the device produces monochrome or grayscale output. It is recommended that all printer drivers support calls to **DrvDeviceCapabilities** for the DC\_COLORDEVICE constant.

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Specifying Exclusive Access to Device Objects
 
 
-## <a href="" id="ddk-specifying-exclusive-access-to-device-objects-kg"></a>
+
 
 
 If exclusive access to a device is enabled, only one handle to the device can be open at a time. For the I/O manager to enforce exclusive access to the device, the exclusive property must be set for the named device object in the device stack.

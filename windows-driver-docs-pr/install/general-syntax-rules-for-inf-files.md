@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # General Syntax Rules for INF Files
 
 
-## <a href="" id="ddk-general-syntax-rules-for-inf-files-dg"></a>
+
 
 
 An INF file is a text file organized into named sections. Some sections have system-defined names and some sections have names determined by the writer of the INF file.

@@ -9,7 +9,7 @@ keywords: ["HID reports WDK , setting control data", "reports WDK HID , setting 
 # Setting Value Data by Specifying Its Usage
 
 
-## <a href="" id="ddk-setting-value-data-by-specifying-its-usage-kg"></a>
+
 
 
 An application or driver can set a value in a properly-initialized HID report by calling one of the following HID support routines:

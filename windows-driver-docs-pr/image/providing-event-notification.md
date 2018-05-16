@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Providing Event Notification
 
 
-## <a href="" id="ddk-providing-event-notification-si"></a>
+
 
 
 The WIA service notifies a WIA minidriver of a supported device event by calling the [**IWiaMiniDrv::drvNotifyPnpEvent**](https://msdn.microsoft.com/library/windows/hardware/ff544998) method. In this method, the minidriver implements the device-specific functionality needed to respond to the event. The WIA service calls the **IWiaMiniDrv::drvNotifyPnpEvent** method only for an event the minidriver has indicated the device can support in the [**IWiaMiniDrv::drvGetCapabilities**](https://msdn.microsoft.com/library/windows/hardware/ff543977) method.

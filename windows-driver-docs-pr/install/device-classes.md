@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Device Classes
 
 
-## <a href="" id="ddk-device-classes-dg"></a>
+
 
 
 This section provides information about two device classes used to put devices and drivers into groups whose members have similar characteristics:

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Summary of Changes Required to Port a Miniport Driver to NDIS 6.0
 
 
-## <a href="" id="ddk-summary-of-changes-required-to-port-a-miniport-driver-to-ndis-6-0-"></a>
+
 
 
 This topic summarizes the changes that are required to port an NDIS 5.*x* miniport driver to NDIS 6.0. Porting earlier drivers is similar to porting NDIS 5.*x* drivers.

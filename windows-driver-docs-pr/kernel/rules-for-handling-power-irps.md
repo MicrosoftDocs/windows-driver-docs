@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Rules for Handling Power IRPs
 
 
-## <a href="" id="ddk-rules-for-handling-power-irps-kg"></a>
+
 
 
 Drivers that support power management must conform to certain rules pertaining to:

@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Public Interfaces
 
 
-## <a href="" id="ddk-public-interfaces-gg"></a>
+
 
 
 This section describes the public COM interfaces that make up spooler notification. The following topics are discussed.

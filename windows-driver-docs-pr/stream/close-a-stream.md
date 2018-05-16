@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Close a Stream
 
 
-## <a href="" id="ddk-closing-a-stream-ksg"></a>
+
 
 
 After a stream operation is completed, the data stream must be closed to free the resources that were allocated by the open stream request.

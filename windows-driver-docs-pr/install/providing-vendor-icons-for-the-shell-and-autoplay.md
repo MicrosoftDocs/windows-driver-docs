@@ -22,7 +22,7 @@ ms.technology: windows-devices
 # Providing Vendor Icons for the Shell and AutoPlay
 
 
-## <a href="" id="ddk-providing-vendor-icons-for-the-shell-and-autoplay-dg"></a>
+
 
 
 [AutoPlay](http://go.microsoft.com/fwlink/p/?linkid=12031) is an extension of the Shell, and is supported by Microsoft Windows XP and later versions of Windows. AutoPlay detects different types of content, such as audio or video files, on removable media or removable devices. AutoPlay can display custom icons for content and devices, and it can automatically start an application to play or display content when the system detects a medium or device.

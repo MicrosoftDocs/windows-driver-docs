@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Printer Data Files
 
 
-## <a href="" id="ddk-printer-data-files-gg"></a>
+
 
 
 Microsoft-supplied printer drivers make use of data files to describe individual printing devices. For more information, see the following:

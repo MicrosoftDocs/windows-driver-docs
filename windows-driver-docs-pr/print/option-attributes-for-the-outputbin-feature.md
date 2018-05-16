@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Option Attributes for the OutputBin Feature
 
 
-## <a href="" id="ddk-option-attributes-for-the-outputbin-feature-gg"></a>
+
 
 
 There are no attributes specifically associated with the OutputBin feature, although it is not uncommon to include an\*OutputOrderReversed? entry for a specific output bin. For more information about the OutputBin feature, see [Standard Features](standard-features.md).

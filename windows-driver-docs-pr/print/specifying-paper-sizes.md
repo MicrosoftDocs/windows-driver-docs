@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Specifying Paper Sizes
 
 
-## <a href="" id="ddk-specifying-paper-sizes-gg"></a>
+
 
 
 Unidrv supports three categories of paper sizes--standard paper sizes, vendor-defined paper sizes, and user-defined paper sizes.

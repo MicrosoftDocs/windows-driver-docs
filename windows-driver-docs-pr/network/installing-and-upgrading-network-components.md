@@ -26,7 +26,7 @@ ms.technology: windows-devices
 # Installing and Upgrading Network Components
 
 
-## <a href="" id="ddk-installing-and-upgrading-components-ng"></a>
+
 
 
 This section discusses installing and upgrading network components and it includes the following topics:

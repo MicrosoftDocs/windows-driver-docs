@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # MS-DOS Device Names
 
 
-## <a href="" id="ddk-ms-dos-device-names-kg"></a>
+
 
 
 This section contains the following subsections:

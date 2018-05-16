@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Windows Sockets SPI Extensions for SANs
 
 
-## <a href="" id="ddk-windows-sockets-spi-extensions-for-sans-ng"></a>
+
 
 
 This section provides a brief description of the SAN extension functions that a SAN service provider DLL must supply. These functions extend the Windows Sockets SPI for use with a SAN. The extended functions are defined in Ws2san.h and are fully documented in the [Windows Sockets Direct Reference](https://msdn.microsoft.com/library/windows/hardware/ff565857) section.

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 This function is reserved for system use.
 
 
-## <a href="" id="ddk-cm-prob-bios-table-dg"></a>
+
 
 
 The MPS table is bad and has to be updated.

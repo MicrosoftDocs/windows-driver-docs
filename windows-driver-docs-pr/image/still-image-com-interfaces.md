@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Still Image COM Interfaces
 
 
-## <a href="" id="ddk-still-image-com-interfaces-si"></a>
+
 
 
 Microsoft STI defines the following four COM interfaces:

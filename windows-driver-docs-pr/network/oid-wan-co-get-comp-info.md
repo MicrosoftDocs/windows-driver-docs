@@ -27,7 +27,7 @@ Compression information is returned in an NDIS\_WAN\_CO\_GET\_COMP\_INFO structu
   
 ```
 
-## <a href="" id="ddk-oid-wan-co-get-comp-info-nr"></a>
+
 
 
 The members of this structure contain the following information:

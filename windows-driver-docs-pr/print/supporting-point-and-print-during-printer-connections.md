@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Supporting Point and Print During Printer Connections
 
 
-## <a href="" id="ddk-supporting-point-and-print-during-printer-connections-gg"></a>
+
 
 
 When a user on a client system connects to a print server, driver-specific and queue-specific files must be sent from the server to the client. The following topics are provided:
