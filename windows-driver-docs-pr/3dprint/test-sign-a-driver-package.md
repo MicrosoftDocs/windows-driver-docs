@@ -4,7 +4,7 @@ author: windows-driver-content
 description: This section describes how to test-sign a driver package.
 ms.assetid: 3BC92099-A464-4C62-9EB7-DD6AA0D1FB03
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,12 +47,6 @@ Use the following steps to test-sign a driver package using a test certificate:
 
 4.  Sign the "FabrikamPrintDriverV4 Package" with the pfx file you created in step 2. The other projects do not need to be driver signed as this step is what creates the package.
 
-For more information, see [How to Test-Sign a Driver Package](https://msdn.microsoft.com/library/windows/hardware/ff546236.aspx).
-
- 
-
- 
-
-
+For more information, see [How to Test-Sign a Driver Package](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/how-to-test-sign-a-driver-package).
 
 
