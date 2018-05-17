@@ -7,7 +7,6 @@ keywords:
 - DiInstallDevice
 - DiInstallDriver
 - DiRollbackDriver
-- DiShowUpdateDevice
 - UpdateDriverForPlugAndPlayDevices
 - PnP WDK device installations , SetupAPI
 - Plug and Play WDK device installations , SetupAPI
@@ -76,14 +75,6 @@ A caller can also call **DiRollbackDriver** to do the following:
 -   Indicate to the caller whether a system restart is required to complete the installation.
 
 For more information about driver rollback, see information about Device Manager in Help and Support Center.
-
-### <a href="" id="dishowupdatedevice--windows-vista-and-later-versions-of-windows-"></a> DiShowUpdateDevice (Windows Vista and later versions of Windows)
-
-The [**DiShowUpdateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff544727) function displays the Hardware Update wizard for a specified device present in the system. The Hardware Update wizard will search, as directed by the user, for an updated driver on the user's computer, installation medium, or Windows Update.
-
-A caller can also direct **DiShowUpdateDevice** to indicate to the caller whether a system restart is required to complete the installation.
-
-For more information about how to update device drivers by using Hardware Update wizard, see information about Device Manager in Help and Support Center.
 
 ### <a href="" id="updatedriverforplugandplaydevices"></a> UpdateDriverForPlugAndPlayDevices
 
