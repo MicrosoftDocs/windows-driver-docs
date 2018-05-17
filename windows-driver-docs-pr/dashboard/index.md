@@ -1,6 +1,7 @@
 ---
 title: Windows Hardware Dev Center dashboard
-description: The Windows Hardware Dev Center dashboard allows you to submit hardware for certification, and code sign and publish your drivers to Windows Update.
+description: The Windows Hardware Dev Center Dashboard replaces the legacy (Sysdev) dashboard for most hardware tasks including hardware certification, collaborative driver development, and driver distribution through Windows Update.
+layout: LandingPage
 ms.assetid: da6fe9f5-7495-4aec-b6c2-c53402cb8ea0
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -11,47 +12,133 @@ ms.technology: windows-devices
 
 # Windows Hardware Dev Center dashboard
 
+The Windows Hardware Dev Center Dashboard replaces the legacy (Sysdev) dashboard for most hardware tasks including hardware certification, collaborative driver development, and driver distribution through Windows Update.
 
-The Windows Hardware Dev Center dashboard allows you to submit hardware for certification, and code sign and publish your drivers to Windows Update. You can also now use shipping labels to easily collaborate on driver development with your business partners.
-
-To get started watch our [introductory video series](http://go.microsoft.com/fwlink/?LinkID=828003) to learn more about the new dashboard. See [Get started with the Hardware Program](get-started-with-the-hardware-dashboard.md) for registering and using.
-
-## <span id="What_s_new_in_the_Windows_Hardware_Dev_Center_dashboard"></span><span id="what_s_new_in_the_windows_hardware_dev_center_dashboard"></span><span id="WHAT_S_NEW_IN_THE_WINDOWS_HARDWARE_DEV_CENTER_DASHBOARD"></span>What's new in the Windows Hardware Dev Center dashboard
-
-
-The Windows Hardware Dev Center dashboard replaces the [Hardware Dev Center (Sysdev)](dashboard-services.md) for most hardware tasks. The dashboard allows you to create and manage your submissions quickly and easily, with improved experiences for:
-
--   Using the dashboard API to programmatically work with submissions 
--   HCK/HLK device certification submissions
--   Publishing to Windows Update. You can now create shipping labels with promotions (critical and/or dynamic update) directly from the dashboard.
--   Sharing your driver with another company (Resell)
--   Customizing your driver after initial certification (DUA)
--   Managing your users and legal agreements
--   System/Hardware certification submissions
-
-## <span id="Currently_unsupported_tasks"></span><span id="currently_unsupported_tasks"></span><span id="CURRENTLY_UNSUPPORTED_TASKS"></span>Currently unsupported tasks
-
-
-You must continue to use [Hardware Dev Center (Sysdev)](dashboard-services.md) to complete the following tasks:
-
--   [WLK device certification submissions](https://go.microsoft.com/fwlink/?linkid=830380)
--   [Device Metadata](https://go.microsoft.com/fwlink/?linkid=830383)
--   [Remote Debugging](https://go.microsoft.com/fwlink/?linkid=830386) (WRD)
--   [Certified Products List](https://go.microsoft.com/fwlink/?linkid=830390)
-
-## <span id="Transition_timeframes"></span><span id="transition_timeframes"></span><span id="TRANSITION_TIMEFRAMES"></span>Transition timeframes
-
-
-This transition timeframe table contains estimates of when features will be available in the Windows Hardware Dev Center dashboard. Feature specific legal and administration tasks will transition when the feature transitions.
-
-| Task                                 | Transition timeframe | Documentation link (if available) |
-|--------------------------------------|----------------------|----------------------|
-| WLK device certification submissions | Mid 2018          | |
-| Attestation signing                  | Completed         | [Attestation signing a kernel driver for public release](https://docs.microsoft.com/windows-hardware/drivers/dashboard/attestation-signing-a-kernel-driver-for-public-release) |
-| Hardware certification submissions   | Completed          | [Hardware certification submissions](https://docs.microsoft.com/windows-hardware/drivers/dashboard/hardware-certification-submissions)
-| UEFI and LSA                         | Mid 2018           | |
-| Device metadata                      | Mid 2018      | |
-| Bug management                       | Migrated      | [Bug management](http://aka.ms/collaboratedocs) |
-| Remote debugging (WRD)               | Retiring      | |
-| Win32 app certification              | Retired      |  [Win32 logo certification deprecation](https://blogs.msdn.microsoft.com/windows_hardware_certification/2018/04/19/win32-logo-certification-deprecation/)|
-
+<ul class="cardsFTitle panelContent">
+    <li>        
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_upgrade.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Hardware Submissions</h3>
+                        <ul>
+                            <li><a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/create-a-new-hardware-submission">Create a new driver submission</a></li>
+                            <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/manage-your-hardware-submissions">Manage your hardware submissions</a></li>
+                            <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/driver-flighting">Driver flighting</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>        
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_deploy.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Driver distribution</h3>
+                        <ul>
+                            <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update">Publish a driver to windows update</a></li>
+                            <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/sharing-drivers-with-your-partners">Share a driver with a partner</a></li>
+                            <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/submit-dashboard-extension-inf-files">Working with extension INF files</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>        
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i__dev-ops.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Hardware dashboard API</h3>
+                        <ul>
+                            <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api">Manage hardware submissions using APIs</a></li>
+                            <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-product-data">Get product data</a></li>
+                            <li><a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/manage-product-submissions">Manage product submissions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>        
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_account-management.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Dashboard administration</h3>
+                        <ul>
+                            <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/register-for-the-hardware-program">Register for the hardware program</a></li>
+                            <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/adding-or-removing-users">Add or remove users</a></li>
+                            <li><a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/driver-failure-reporting">Report driver failures</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>        
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_portal.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Dashboard information</h3>
+                        <ul>
+                            <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/hardware-dashboard-faq">Hardware dashboard FAQ</a></li>
+                            <li><a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/">What’s new in the Hardware dashboard</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>        
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_library.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Legacy (Sysdev) dashboard</h3>
+                        <ul>
+                            <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata">Device metadata</a></li>
+                            <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/administration">Sysdev administration</a></li>
+                            <li><a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/windows-certified-products-list">Windows certified products list</a></li>
+                            <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/file-signing-services">File signing services</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
