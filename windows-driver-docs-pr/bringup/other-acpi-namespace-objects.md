@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 For some specific classes of device, there are requirements for additional Advanced Configuration and Power Interface (ACPI) namespace objects to appear under those devices in the namespace. This section lists the additional objects required for SoC-based platforms.
 
-## Processor identification objects
+## <a href="" id="pid"></a>Processor identification objects
 
 
 Processors must be enumerated in the ACPI namespace. Processors are declared under \\\_SB using the "Device" statement, as with other devices on the platform. Processor devices must contain the following objects:
@@ -23,7 +23,7 @@ Processors must be enumerated in the ACPI namespace. Processors are declared und
 -   \_HID: ACPI0007
 -   \_UID: A unique number that matches the processor's entry in the MADT.
 
-## Display-specific objects
+## <a href="" id="display"></a>Display-specific objects
 
 
 For more information about display-specific objects, see Appendix B, "Video Extensions", of the [ACPI 5.0 specification](http://www.uefi.org/specifications).
@@ -48,7 +48,7 @@ For more information about display-specific objects, see Appendix B, "Video Exte
 
  
 
-## USB host controllers and devices
+## <a href="" id="usb"></a>USB host controllers and devices
 
 
 USB host controllers are used on SoC platforms for connecting internal and external devices. Windows includes inbox drivers for standard USB host controllers that are compliant with the EHCI or XHCI specifications.
@@ -93,7 +93,7 @@ Windows needs to know the visibility and connect-ability of USB Ports on the sys
 -   Sections 6.1.6, "Device Identification Objects", and 9.13.1, "USB 2.0 Host Controllers and \_UPC and \_PLD", in the [ACPI 5.0 specification](http://www.uefi.org/specifications).
 -   [Using ACPI to Configure USB Ports on a Computer](https://docs.microsoft.com/windows-hardware/drivers/install/using-acpi-to-configure-usb-ports-on-a-computer).
 
-## SD host controllers and devices
+## <a href="" id="sd"></a>SD host controllers and devices
 
 
 SD host controllers are used on SoC platforms for access to storage as well as I/O devices. Windows includes an inbox driver for SDA-standard host controller hardware. For compatibility with this driver, an SD Host Controller device must comply with the SD Association's [SD Host Controller Specification](https://www.sdcard.org/developers/overview/host_controller/).
@@ -142,7 +142,7 @@ An embedded SD device namespace must also include:
 -   A Remove method (\_RMV) object that returns 0 (to indicate that the device cannot be removed).
 -   A \_CRS object for the sideband resources the device requires (such as GPIO pins or SPB connections), if any are required.
 
-## Imaging class devices (cameras)
+## <a href="" id="imaging"></a>Imaging class devices (cameras)
 
 
 Camera devices may be enumerated by the graphics driver or by USB. In either case, Windows needs to know the physical location of the camera so that the appropriate UI can be shown. To do this, camera devices that are built into the chassis of the system and have mechanically fixed direction are included in the ACPI namespace and provide the Physical Device Location (\_PLD) object. This requires:
@@ -256,7 +256,7 @@ Device (GPU0) {
 } // End of GPU0 device
 ```
 
-## HID-over-I²C devices
+## <a href="" id="i2c"></a>HID-over-I²C devices
 
 
 Windows includes a class driver for Human Interface Devices (HID). This driver enables generic support for a broad range of input devices (such as touch panels, keyboards, mice, and sensors). On SoC platforms, HID devices can be connected to the platform over I²C, and are enumerated by ACPI. For compatibility with the HID class support in Windows, the following namespace objects are used:
@@ -268,7 +268,7 @@ Windows includes a class driver for Human Interface Devices (HID). This driver e
     -   A GpioInt resource for interrupt(s)
 -   The HIDI2C \_DSM method for returning the HID Descriptor Register address in the device. For more information, see [HIDI2C Device-Specific Method (\_DSM)](hidi2c-device-specific-method---dsm-.md).
 
-## Button devices
+## <a href="" id="button"></a>Button devices
 
 
 For SoC platforms, Windows supports both the ACPI-defined Control Method Power Button, as well as a Windows-compatible five-button array. The power button, whether implemented as an ACPI Control Method Power Button or as part of the Windows-compatible Button Array, does the following:
@@ -319,7 +319,7 @@ For more information, see [Hardware buttons for Windows 8 tablet and convertible
 
 To support evolution of the Windows Button UI, Windows defines a Device-Specific Method (\_DSM) for the Windows Button Array device. For more information, see [Windows Button Array Device-Specific Method (\_DSM)](windows-button-array-device-specific-method---dsm-.md).
 
-## Dock and convertible PC sensing devices
+## <a href="" id="dock"></a>Dock and convertible PC sensing devices
 
 
 Windows supports docks and convertibles (clamshell/tablet combos) by the use of two sensing devices in the ACPI namespace. These devices are supported by the Windows inbox button driver. Note that the same requirements that apply to the Button Array device also apply to these devices:

@@ -29,7 +29,7 @@ ms.technology: windows-devices
 
 Describes a typical hardware design of a USB Type-C system and the Microsoft-provided drivers that support the hardware components.
 
-## Drivers for supporting USB Type-C components
+## <a href="" id="drivers"></a>Drivers for supporting USB Type-C components
 
 
 ![usb type-c software components](images/type-c-arch.png)

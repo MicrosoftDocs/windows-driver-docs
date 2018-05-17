@@ -26,7 +26,7 @@ ACPI device Id of a generic button device is ACPI0011. Windows loads the Microso
 
 For more information about the generic button device, visit the [Unified Extensible Firmware Interface](http://uefi.org/specifications) specifications web site, and download the *ACPI Specification Version 6.0* PDF document. Then use the left-hand pane to navigate to **Section 9.19**.
 
-## Sample buttons ACPI for phone/tablet
+## <a href="" id="acpi-button-phone"></a>Sample buttons ACPI for phone/tablet
 
 
 Example for describing buttons in ACPI for phone/tablet device running Windows 10 Mobile.
@@ -294,7 +294,7 @@ UCHAR ReportDescriptor[] = {
 };
 ```
 
-## Sample buttons ACPI for desktop
+## <a href="" id="acpi-button-desktop"></a>Sample buttons ACPI for desktop
 
 
 Example for describing buttons in ACPI for phone/tablet device running Windows 10 for desktop editions (Home, Pro, Enterprise, and Education).

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # State Transitions for PnP Devices
 
 
-
+## <a href="" id="ddk-state-transitions-for-pnp-devices-kg"></a>
 
 
 On a PnP system, a device transitions through various PnP states as it is configured, started, possibly stopped to rebalance resources, and possibly removed. This section provides an overview of the PnP device states. The overview is a road map for much of the PnP support required in a driver. Other parts of this documentation describe each state transition in detail.
