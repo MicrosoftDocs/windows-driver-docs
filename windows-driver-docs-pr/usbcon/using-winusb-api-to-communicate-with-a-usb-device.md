@@ -31,7 +31,7 @@ For more information about the template, see Write a Windows desktop app based o
 
 **Note**  WinUSB functions require Windows XP or later. You can use these functions in your C/C++ application to communicate with your USB device. Microsoft does not provide a managed API for WinUSB.
 
-## Prerequisites
+## <a href="" id="pre"></a>Prerequisites
 
 
 The following items apply to this walkthrough:
@@ -40,7 +40,7 @@ The following items apply to this walkthrough:
 -   You have installed Winusb.sys as the device's function driver. For more information about this process, see [WinUSB (Winusb.sys) Installation](winusb-installation.md).
 -   The examples in this topic are based on the [OSR USB FX2 Learning Kit device](http://www.osronline.com/). You can use these examples to extend the procedures to other USB devices.
 
-## Step 1: Create a skeleton app based on the WinUSB template
+## <a href="" id="setup"></a>Step 1: Create a skeleton app based on the WinUSB template
 
 
 To access a USB device, start by creating a skeleton app based on the WinUSB template included in the integrated environment of Windows Driver Kit (WDK) (with Debugging Tools for Windows) and Microsoft Visual Studio.You can use the template as a starting point.
@@ -49,7 +49,7 @@ For information about the template code, how to create, build, deploy, and debug
 
 The template enumerates devices by using [SetupAPI](https://msdn.microsoft.com/library/windows/hardware/ff550855) routines, opens a file handle for the device, and creates a WinUSB interface handle required for subsequent tasks. For example code that gets the device handle and opens the device, see [Template code discussion](how-to-write-a-windows-desktop-app-that-communicates-with-a-usb-device.md).
 
-## Step 2: Query the Device for USB Descriptors
+## <a href="" id="query"></a>Step 2: Query the Device for USB Descriptors
 
 
 Next, query the device for USB-specific information such as device speed, interface descriptors, related endpoints, and their pipes. The procedure is similar to the one that USB device drivers use. However, the application completes device queries by calling [**WinUsb\_GetDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ff540257).
@@ -193,7 +193,7 @@ done:
 }
 ```
 
-## Step 3: Send Control Transfer to the Default Endpoint
+## <a href="" id="control"></a>Step 3: Send Control Transfer to the Default Endpoint
 
 
 Next, communicate with the device by issuing control request to the default endpoint.
@@ -262,7 +262,7 @@ done:
 }
 ```
 
-## Step 4: Issue I/O Requests
+## <a href="" id="io"></a>Step 4: Issue I/O Requests
 
 
 Next, send data to the device's bulk-in and bulk-out endpoints that can be used for read and write requests, respectively. On the OSR USB FX2 device, these two endpoints are configured for loopback, so the device moves data from the bulk-in endpoint to the bulk-out endpoint. It does not change the value of the data or add any new data. For loopback configuration, a read request reads the data that was sent by the most recent write request. WinUSB provides the following functions for sending write and read requests:
