@@ -18,7 +18,7 @@ ms.technology: windows-devices
 
  
 
-
+## <a href="" id="ddk-netdma-2-0-extensions-for-netdma-1-1-and-later-providers-nr"></a>
 
 
 NetDMA 2.0 extends the NetDMA 1.0 interface to version 1.1. NetDMA 1.1 provider drivers can obtain the NetDMA version and also can indicate NetDMA Plug and Play (PnP) and power management events.

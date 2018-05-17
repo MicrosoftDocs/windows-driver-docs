@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Print Spooler Components
 
 
-
+## <a href="" id="ddk-customizing-print-spooler-components-gg"></a>
 
 
 This section explains how to customize print spooler components. The following topics are provided:

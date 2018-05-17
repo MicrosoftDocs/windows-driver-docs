@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Portable
 
 
-
+## <a href="" id="ddk-portable-kg"></a>
 
 
 All drivers must be portable across all Windows-supported hardware platforms. To achieve cross-platform portability, driver writers should:

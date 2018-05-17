@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Specifying NDIS Version Information
 
 
-
+## <a href="" id="ddk-specifying-ndis-version-information-ng"></a>
 
 
 This section provides an overview of the support that NDIS and NDIS drivers provide for NDIS version information.

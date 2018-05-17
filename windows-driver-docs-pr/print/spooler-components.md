@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Spooler Components
 
 
-
+## <a href="" id="ddk-spooler-components-gg"></a>
 
 
 This section provides the following topics:

@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # The IEEE 1394 Driver Stack
 
 
-
+## <a href="" id="ddk-the-ieee-1394-driver-stack-kg"></a>
 
 
 The following diagram illustrates the IEEE 1394 driver stack with the new 1394 bus driver and the Microsoft-supported 1394 client drivers.

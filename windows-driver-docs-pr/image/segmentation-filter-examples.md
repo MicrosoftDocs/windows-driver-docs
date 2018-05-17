@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Segmentation Filter Examples
 
 
-
+## <a href="" id="ddk-segmentation-filter-examples-si"></a>
 
 
 This section contains code examples to show how to implement and use segmentation filters.

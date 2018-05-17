@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Using Shared Memory in Network Drivers
 
 
-
+## <a href="" id="ddk-using-shared-memory-ng"></a>
 
 
 Miniport drivers for bus-master direct memory access (DMA) devices allocate shared memory for use by the network interface card (NIC) and the miniport driver.

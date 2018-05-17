@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # TEXT Data Type
 
 
-
+## <a href="" id="ddk-text-data-type-gg"></a>
 
 
 TEXT data consists solely of ANSI text. The print processor calls GDI to draw characters using the print device's default font, and sends the resulting RAW-formatted output to the spooler (by calling **WritePrinter**, described in the Microsoft Windows SDK documentation). The process is equivalent to opening the input file with Notepad and then printing the file. (This format is used for printers that do not print text characters.)

@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Film Scanners
 
 
-
+## <a href="" id="ddk-wia-film-scanners-si"></a>
 
 
 This section expands on the information that is presented in the [WIA Item Trees](wia-item-trees.md) section and explains the scanner film item trees. The WIA Item Trees section explains the process for defining a WIA device by using the WIA item tree; you should read that section before reading this section.

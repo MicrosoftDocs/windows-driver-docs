@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Describing Printer Memory Configurations
 
 
-
+## <a href="" id="ddk-describing-printer-memory-configurations-gg"></a>
 
 
 A Unidrv minidriver can contain descriptions of a printer's possible and default memory configurations, so that Unidrv can attempt to keep track of printer memory usage. Each memory configuration description includes values for both the total memory and available memory. Available memory can be used for downloading fonts, protecting pages, and other operations controlled by Unidrv.

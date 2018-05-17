@@ -18,7 +18,7 @@ ms.technology: windows-devices
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-
+## <a href="" id="ddk-impact-of-network-interface-changes-on-ipsec-offloads-ng"></a>
 
 
 The following events in the network interface affect the offloading of Internet protocol security (IPsec) tasks:

@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # IWiaDrvItem COM Interface
 
 
-
+## <a href="" id="ddk-iwiadrvitem-com-interface-si"></a>
 
 
 The [IWiaDrvItem interface](https://msdn.microsoft.com/library/windows/hardware/ff543896) provides methods that a WIA minidriver uses to manage a tree of **IWiaDrvItem** items. These methods allow a WIA minidriver to manipulate **IWiaDrvItem** objects. The **IWiaDrvItem** interface supplies the following methods.

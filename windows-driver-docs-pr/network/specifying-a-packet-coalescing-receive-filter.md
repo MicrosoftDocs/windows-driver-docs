@@ -28,7 +28,7 @@ The overlying driver downloads receive filters to the miniport driver by issuing
 
     For more information about how to initialize these structures, see [Specifying Header Field Tests](#specifying-header-field-test).
 
-## Specifying a Receive Filter
+## <a href="" id="specifying-receive-filter"></a>Specifying a Receive Filter
 
 
 An overlying driver specifies a packet coalescing receive filter by initializing an [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567181) structure with the configuration parameters for the filter. When it initializes the **NDIS\_RECEIVE\_FILTER\_PARAMETERS** structure, the overlying driver must follow these rules:
@@ -57,7 +57,7 @@ The overlying driver must order the header field tests in the field parameters a
 
 For example, before the overlying driver specifies the filter parameters for an IP version 4 (IPv4) protocol field, it must first specify the filter parameters for a MAC header protocol field (NdisMacHeaderFieldProtocol). In this manner, the driver specifies a header field test that verifies the field is set to the correct EtherType value (0x0800) for IPv4 packets. If the test fails, the adapter does not have to perform the test of the IPV4 protocol field.
 
-## Specifying Header Field Tests
+## <a href="" id="specifying-header-field-test"></a>Specifying Header Field Tests
 
 
 Each receive filter can specify one or more test criteria (*header field tests*). The network adapter performs these tests to determine whether a received packet should be coalesced in a hardware coalescing buffer on the adapter. Also, the overlying driver can specify separate filter tests for various media access control (MAC), IP version 4 (IPv4), and IP version 6 (IPv6) header fields.

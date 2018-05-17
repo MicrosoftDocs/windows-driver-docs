@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Introduction to Windows Drivers
 
 
-
+## <a href="" id="ddk-introduction-to-windows-drivers-kg"></a>
 
 
 This section introduces design concepts for Microsoft Windows drivers. It contains the following topics:

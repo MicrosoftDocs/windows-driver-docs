@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Cloning Stream Pointers
 
 
-
+## <a href="" id="ddk-cloning-stream-pointers-ksg"></a>
 
 
 Multiple stream pointers can reference a single frame. To duplicate a stream pointer, call [**KsStreamPointerClone**](https://msdn.microsoft.com/library/windows/hardware/ff567129).

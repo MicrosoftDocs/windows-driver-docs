@@ -19,7 +19,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-
+## <a href="" id="ddk-linking-path-state-objects-to-a-new-neighbor-state-object-ng"></a>
 
 
 When the next hop address changes--for example, because of a router failure that results in a failover to a new router with a new IP address--the host stack can relink the effected offloaded path state objects to a new neighbor state object that represents the new router. The sequence of relinking the effected offloaded path state objectsis as follows:

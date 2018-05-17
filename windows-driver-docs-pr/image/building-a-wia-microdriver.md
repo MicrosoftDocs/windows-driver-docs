@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Building a WIA Microdriver
 
 
-
+## <a href="" id="ddk-building-a-wia-microdriver-si"></a>
 
 
 The following header files and library files are required by all WIA microdrivers.

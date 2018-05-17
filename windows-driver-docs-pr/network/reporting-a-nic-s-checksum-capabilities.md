@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Reporting a NIC's Checksum Capabilities
 
 
-
+## <a href="" id="ddk-reporting-a-nic-s-checksum-capabilities-ng"></a>
 
 
 An NDIS miniport driver reports whether a NIC is currently configured to calculate and validate IP, TCP, and UDP checksums in an [**NDIS\_TCP\_IP\_CHECKSUM\_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff567878) structure. Miniport drivers must include the current checksum offload configuration in the [**NDIS\_MINIPORT\_ADAPTER\_OFFLOAD\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565930) structure. Miniport drivers call the [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) function from the [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function and pass in the information in NDIS\_MINIPORT\_ADAPTER\_OFFLOAD\_ATTRIBUTES.

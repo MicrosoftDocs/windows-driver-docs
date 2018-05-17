@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Locking Pageable Code or Data
 
 
-
+## <a href="" id="ddk-locking-pageable-code-or-data-kg"></a>
 
 
 Certain kernel-mode drivers, such as the serial and parallel drivers, do not have to be memory-resident unless the devices they manage are open. However, as long as there is an active connection or port, some part of the driver code that manages that port must be resident to service the device. When the port or connection is not being used, the driver code is not required. In contrast, a driver for a disk that contains system code, application code, or the system paging file must always be memory-resident because the driver constantly transfers data between its device and the system.

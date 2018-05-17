@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Debugging Printer Driver Components
 
 
-
+## <a href="" id="ddk-debugging-printer-driver-components-gg"></a>
 
 
 If you are developing a printer driver rendering plug-in or user interface plug-in, you can enable debug messages in these components. As explained in the Global Debug Variable section, you can use a global debug variable to control the level of detail in messages appearing in the debugger window.

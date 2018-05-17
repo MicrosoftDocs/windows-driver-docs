@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # System-Wide Overview of Power Management
 
 
-
+## <a href="" id="ddk-system-wide-overview-of-power-management-kg"></a>
 
 
 Power management requires support from system and device hardware and from system software and drivers. Required hardware support is covered in the industry specifications, as described in the previous section. This topic covers the software support—specifically, what drivers must do to conform to operating system requirements and to manage power as appropriate for their devices.

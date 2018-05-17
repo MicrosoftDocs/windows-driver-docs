@@ -46,7 +46,7 @@ To investigate, first set up a kernel-mode debugging session as described in [Ho
 -   Use [**!wdfkd.wdfdevicequeues**](https://msdn.microsoft.com/library/windows/hardware/ff565715) to check the status of the driver's queues.
 -   In a kernel-mode debugging session, you can use [**!wmitrace.logdump WudfTrace**](https://msdn.microsoft.com/library/windows/hardware/ff566159) to display the trace log.
 
-## Displaying the UMDF 2.0 IFR Log
+## <a href="" id="displaying-the--umdf-2-0-ifr-log"></a>Displaying the UMDF 2.0 IFR Log
 
 
 In a kernel-mode debugging session, you can use the [**!wdfkd.wdflogdump**](https://msdn.microsoft.com/library/windows/hardware/ff565805) extension command to display the Windows Driver Frameworks (WDF) In-flight Recorder (IFR) log records, if available.

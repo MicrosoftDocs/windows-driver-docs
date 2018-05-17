@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Implementing an NDIS 6.20 Driver
 
 
-
+## <a href="" id="ddk-implementing-an-ndis-6-20-driver-ng"></a>
 
 
 An NDIS 6.20 driver must report the correct NDIS version when it registers with NDIS.

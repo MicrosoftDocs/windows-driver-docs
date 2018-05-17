@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Enumeration Keywords
 
 
-
+## <a href="" id="ddk-enumeration-keywords-ng"></a>
 
 
 NDIS 6.0 and later versions of NDIS provide standardized enumeration keywords for miniport drivers of network devices. Enumeration keywords are associated with values that appear as a list in a menu.

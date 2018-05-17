@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Closed Captioning Streams
 
 
-
+## <a href="" id="ddk-closed-captioning-streams-ksg"></a>
 
 
 Support for closed captioning is required. The DVD decoder minidriver must provide closed captioning information for the Microsoft line 21 decoder filter. Implementations may not simply decode the closed captioning information inside the MPEG2 decoder and add it to the video stream. The DVD decoder minidriver must present the closed captioning pin as an output pin. After the stream is opened, the DVD decoder minidriver receives SRB\_READ\_DATA requests on the stream. The DVD decoder minidriver queues these requests until closed captioning data is available.

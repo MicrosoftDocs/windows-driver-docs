@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Enumerating Serenum Devices
 
 
-
+## <a href="" id="ddk-enumerating-serenum-devices-kg"></a>
 
 
 In Microsoft Windows 2000, boot time can be significantly delayed by the time it takes to automatically enumerate high-capacity multiport adapters (containing 16 or more ports). To address this issue, Windows XP and later supports the following enhancements:

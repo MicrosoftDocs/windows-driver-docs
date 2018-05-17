@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # ACPI BIOS
 
 
-
+## <a href="" id="ddk-acpi-bios-kg"></a>
 
 
 The integrated power management features supported by Microsoft Windows operating systems are available only on computers that have an Advanced Configuration and Power Interface (ACPI) BIOS.

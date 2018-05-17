@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Adding Interrupt Event Support
 
 
-
+## <a href="" id="ddk-adding-interrupt-event-support-si"></a>
 
 
 To properly set up your WIA driver to report interrupt events, do the following:

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Supporting Devices that Have Wake-Up Capabilities
 
 
-
+## <a href="" id="ddk-supporting-devices-that-have-wake-up-capabilities-kg"></a>
 
 
 Drivers for devices that can respond to external wake signals must be able to handle [**IRP\_MN\_WAIT\_WAKE**](https://msdn.microsoft.com/library/windows/hardware/ff551766) requests (*wait/wake IRPs*). The power policy owner for such a device must be able to send an **IRP\_MN\_WAIT\_WAKE** request.

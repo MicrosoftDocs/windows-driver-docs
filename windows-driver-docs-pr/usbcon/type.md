@@ -81,7 +81,7 @@ Generates various PnP sequences.
 <a href="" id="device-topology"></a>[Device Topology](#st4)  
 Tests a range of devices and topologies with the product.
 
-## FT Case 1: Device Enumeration
+## <a href="" id="ft1"></a>FT Case 1: Device Enumeration
 
 
 Applies to: System, dock, device
@@ -100,7 +100,7 @@ Applies to: System, dock, device
 6.  Disconnect the device (and dock if applicable) and observe changes in **Device Manager**. The dock and device should not appear in **Device Manager**. For more information, see [How to confirm device removal](#remove).
 7.  [Flip or reverse](#flip) the orientation of USB Type-C cable and repeat steps 3 through 6.
 
-## FT Case 2: System Boot
+## <a href="" id="ft2"></a>FT Case 2: System Boot
 
 
 Applies to: System, hub, device
@@ -136,7 +136,7 @@ Applies to: System, hub, device
     -   USB keyboard
     -   USB 3.0 flash drive
 
-## FT Case 3: System Power Transitions
+## <a href="" id="ft3"></a>FT Case 3: System Power Transitions
 
 
 Applies to: System, dock, device
@@ -158,7 +158,7 @@ Repeat this test for other available system power states: Sleep (S3), Hibernate 
 
  
 
-## FT Case 4: Selective Suspend
+## <a href="" id="ft4"></a>FT Case 4: Selective Suspend
 
 
 Applies to: Dock, device
@@ -177,7 +177,7 @@ Additional information of selective suspend can be found from the following sour
 -   [Selective suspend for HID over USB devices](https://msdn.microsoft.com/library/windows/hardware/jj131716)
 -   [Demystifying selective suspend]( http://go.microsoft.com/fwlink/p/?LinkId=623308)
 
-## FT Case 5: Dock Identification
+## <a href="" id="ft5"></a>FT Case 5: Dock Identification
 
 
 Applies to: Dock
@@ -190,7 +190,7 @@ Applies to: Dock
 
  
 
-## FT Case 6: Alternate Mode Negotiation
+## <a href="" id="ft6"></a>FT Case 6: Alternate Mode Negotiation
 
 
 Applies to: System, dock, device
@@ -208,7 +208,7 @@ Applies to: System, dock, device
 5.  Disconnect the device and observe changes in **Device Manager**. The hub and device should no longer appear in **Device Manager**. For more information, see [How to confirm device removal](#remove).
 6.  [Flip or reverse](#flip) the orientation of the USB Type-C cable and repeat steps 2-5.
 
-## FT Case 7: Charging and power delivery (PD)
+## <a href="" id="ft7"></a>FT Case 7: Charging and power delivery (PD)
 
 
 Applies to: System, dock, device that support USB power delivery protocol
@@ -232,7 +232,7 @@ Applies to: System, dock, device that support USB power delivery protocol
     1.  Connect device the device to a USB Type-C enabled system. Confirm the device receives power from the system.
     2.  (optional) Connect device the device to a USB Type-C enabled system. Confirm the device will charge the system.
 
-## FT Case 8: Role Swap
+## <a href="" id="ft8"></a>FT Case 8: Role Swap
 
 
 Applies to: System
@@ -245,7 +245,7 @@ Applies to: System
 4.  Perform necessary steps to swap roles.
 5.  Confirm current roles of each system have changed.
 
-## ST Case 1: System Power Transitions
+## <a href="" id="st1"></a>ST Case 1: System Power Transitions
 
 
 Applies to: System, dock, device
@@ -255,7 +255,7 @@ Applies to: System, dock, device
 3.  Run the [DF - Sleep with IO During (Certification)]( http://go.microsoft.com/fwlink/p/?LinkId=623311) test:
 4.  Repeat step 3 with a USB Type-C test device.
 
-## ST Case 2: Transfer Events
+## <a href="" id="st2"></a>ST Case 2: Transfer Events
 
 
 Applies to: System, dock, device
@@ -265,7 +265,7 @@ Applies to: System, dock, device
 3.  Run the [DF - Reboot Restart with IO Before and After](http://go.microsoft.com/fwlink/p/?LinkId=623312) test.
 4.  Repeat step 3 with a USB Type-C test device.
 
-## ST Case 3: Plug and Play
+## <a href="" id="st3"></a>ST Case 3: Plug and Play
 
 
 Applies to: System, dock, device
@@ -275,7 +275,7 @@ Applies to: System, dock, device
 3.  Run the [DF - Sleep and PnP with IO Before and After]( http://go.microsoft.com/fwlink/p/?LinkId=623313) test.
 4.  Repeat step 3 with a USB Type-C test device.
 
-## ST Case 4: Device Topology
+## <a href="" id="st4"></a>ST Case 4: Device Topology
 
 
 Applies to: System, dock, device
@@ -292,7 +292,7 @@ Applies to: System, dock, device
 
  
 
-## Functional system interoperability test plan
+## <a href="" id="ft-plan"></a>Functional system interoperability test plan
 
 
 Expected duration: 20 minutes
@@ -379,14 +379,14 @@ The full interoperability test plan covers a larger set of user scenarios. Run t
 
     ![usb type-c a/v adapter configuration](images/typec3.png)
 
-## How to confirm device addition
+## <a href="" id="add"></a>How to confirm device addition
 
 
 -   Identify the USB host controller to which your device is connected.
 -   Make sure that the new device appears under the correct node in **Device Manager**.
 -   For USB 3.0 hubs connected to a USB 3.0 port, expect to see two devices: one downstream of the USB 3.0 and another downstream of the full speed hub.
 
-## How to confirm device removal
+## <a href="" id="remove"></a>How to confirm device removal
 
 
 -   Identify your device in **Device Manager**.
@@ -394,7 +394,7 @@ The full interoperability test plan covers a larger set of user scenarios. Run t
 -   Confirm that the device is no longer present in **Device Manager**.
 -   For a USB 3.0 hub, check that both devices (SuperSpeed and companion hubs) are removed. Failure to remove a device in this case may be a device failure and should be investigated by all components involved to triage the appropriate root cause.
 
-## How to confirm device functionality
+## <a href="" id="function"></a>How to confirm device functionality
 
 
 -   If the device is a USB hub, make sure that the devices that are downstream of the hub are functional. Verify that other devices can be connected to available ports on the hub.
@@ -404,13 +404,13 @@ The full interoperability test plan covers a larger set of user scenarios. Run t
 -   If the device has multiple functions, such as scan & print, make sure to test both the scan and print functionality.
 -   If the device is a USB Type-C, confirm applicable USB and alternate modes are functional.
 
-## How to connect a device to a System
+## <a href="" id="connect"></a>How to connect a device to a System
 
 
 -   Make sure that USB 3.x devices use a USB 3.x cable appropriate to the test device.
 -   If the device is not recognized by the system, attempt to connect the device with a different cable of the same type to check for bad cables or connectors.
 
-## Troubleshooting system wake
+## <a href="" id="wake"></a>Troubleshooting system wake
 
 
 To troubleshoot a device that is not able to wake up the system:
@@ -444,7 +444,7 @@ Stop the trace by using this command:
 logman stop usbtrace -ets
 ```
 
-## Using an Analyzer to confirm Selective Suspend
+## <a href="" id="analyzer"></a>Using an Analyzer to confirm Selective Suspend
 
 
 To analyze USB 2.0 and 3.0 traffic, you will need a USB Analyzer device such as the LeCroy Voyager M3i, Advisor T3, or a TotalPhase Beagle 5000. These analyzers are capable of capturing and displaying link state information necessary to confirm selective suspend functionality.
@@ -473,7 +473,7 @@ Right-click the device and select **Properties**. Then select the **Power Manage
 
 To disable selective suspend, make sure the **Allow the computer to turn off this device** to save power checkbox is clear.
 
-## Flipping or reversing the USB Type-C cable
+## <a href="" id="flip"></a>Flipping or reversing the USB Type-C cable
 
 
 The USB Type-C cable is intended to maintain user functionality regardless of cable orientation. Flipping or reversing the cable is achieved by removing cable, rotating it 180 degrees and reinserting the cable.

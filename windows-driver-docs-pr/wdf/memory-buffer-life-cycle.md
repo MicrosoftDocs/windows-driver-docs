@@ -116,7 +116,7 @@ RequestCompletionRoutine(
 
 When the driver calls [**WdfRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff549945) from its completion callback, the framework deletes the memory object. The memory object handle that the driver retrieved is now invalid.
 
-## Scenario 3: Driver issues an I/O request that uses an existing memory object.
+## <a href="" id="drv-create-reuse"></a>Scenario 3: Driver issues an I/O request that uses an existing memory object.
 
 
 Some drivers issue their own I/O requests and send them to I/O targets, which are represented by I/O target objects. The driver can either create its own request object or [reuse a framework-created request object](reusing-framework-request-objects.md). Using either technique, a driver can reuse a memory object from a previous request. The driver must not change the underlying buffer, but it can pass a buffer offset when it formats the new I/O request.
@@ -131,7 +131,7 @@ When the framework formats the request to send to the I/O target, it takes out a
 
 When the new I/O request is complete, the framework calls the I/O completion callback that the driver set for this request. At this point, the I/O target object still holds a reference on the memory object. Therefore, in the I/O completion callback, the driver must call [**WdfRequestReuse**](https://msdn.microsoft.com/library/windows/hardware/ff550026) on the driver-created request object before it completes the original request from which it retrieved the memory object. If the driver does not call **WdfRequestReuse**, a bug check occurs because of the extra reference.
 
-## Scenario 4: Driver issues an I/O request that uses a new memory object.
+## <a href="" id="drv-create-new"></a>Scenario 4: Driver issues an I/O request that uses a new memory object.
 
 
 The framework provides three ways for drivers to create new memory objects, depending on the source of the underlying buffer. For more information, see [Using Memory Buffers](using-memory-buffers.md).
@@ -140,7 +140,7 @@ If the buffer is allocated by the framework or from a driver-created [lookaside 
 
 If the driver assigns a previously allocated buffer to a new memory object by calling [**WdfMemoryCreatePreallocated**](https://msdn.microsoft.com/library/windows/hardware/ff548712), the memory object does not own the buffer. In this case, the lifetime of the memory object and the lifetime of the underlying buffer are not related. The driver must manage the lifetime of the buffer and must not attempt to use an invalid buffer pointer.
 
-## Scenario 5: Driver reuses a request object that it created.
+## <a href="" id="drv-reuse"></a>Scenario 5: Driver reuses a request object that it created.
 
 
 A driver can reuse the request objects that it creates, but it must reinitialize each such object by calling [**WdfRequestReuse**](https://msdn.microsoft.com/library/windows/hardware/ff550026) before each reuse. For more information, see [Reusing Framework Request Objects](reusing-framework-request-objects.md).

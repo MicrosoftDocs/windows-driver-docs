@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Sample Code to Set Custom Properties
 
 
-
+## <a href="" id="ddk-sample-code-to-set-custom-properties-si"></a>
 
 
 To set a custom property, your application or custom UI might have code that looks similar to the following:

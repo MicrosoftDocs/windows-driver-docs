@@ -16,7 +16,7 @@ ms.technology: windows-devices
 
 This table describes the use cases is supported by Windows 10, and the additional tasks OEMs must perform for those use case to work.
 
-
+## <a href="" id="oem"></a>
 
 
 <table>

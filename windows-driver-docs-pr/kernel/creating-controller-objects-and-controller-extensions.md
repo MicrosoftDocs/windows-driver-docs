@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Creating Controller Objects and Controller Extensions
 
 
-
+## <a href="" id="ddk-creating-controller-objects-and-controller-extensions-kg"></a>
 
 
 If a driver uses a controller object, it must call [**IoCreateController**](https://msdn.microsoft.com/library/windows/hardware/ff548395) after it has created device objects and its device is ready for I/O, typically after receiving a PnP [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) request. The following figure illustrates the call.

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Getting an Adapter Object
 
 
-
+## <a href="" id="ddk-getting-an-adapter-object-kg"></a>
 
 
 At device start-up, a driver that uses system or bus-master DMA calls [**IoGetDmaAdapter**](https://msdn.microsoft.com/library/windows/hardware/ff549220) to get a pointer to an adapter object and to determine the maximum number of map registers available for each transfer operation. When a driver calls **IoGetDmaAdapter**, the I/O manager, in turn, calls the HAL to get the necessary platform-specific information.

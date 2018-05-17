@@ -34,7 +34,7 @@ To create a passive-level interrupt object, a driver must initialize a [**WDF\_I
 For additional information on setting the above members of the configuration structure, see [**WDF\_INTERRUPT\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff552347).
 For information about enabling and disabling passive-level interrupts, see [Enabling and Disabling Interrupts](enabling-and-disabling-interrupts.md).
 
-## Servicing a Passive-Level Interrupt
+## <a href="" id="servicing"></a>Servicing a Passive-Level Interrupt
 
 
 The [*EvtInterruptIsr*](https://msdn.microsoft.com/library/windows/hardware/ff541735) callback function, which runs at IRQL = PASSIVE\_LEVEL with the passive-level interrupt lock held, typically schedules an interrupt work item or interrupt DPC to process interrupt-related information at a later time. Framework-based drivers implement work item or DPC routines as [*EvtInterruptWorkItem*](https://msdn.microsoft.com/library/windows/hardware/hh406422) or [*EvtInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/ff541721) callback functions.
@@ -304,7 +304,7 @@ EvtIoInternalDeviceControl(
 }
 ```
 
-## Synchronizing a Passive-Level Interrupt
+## <a href="" id="synchronizing"></a>Synchronizing a Passive-Level Interrupt
 
 
 To prevent deadlock, follow these guidelines when writing a driver that implements passive-level interrupt handling:

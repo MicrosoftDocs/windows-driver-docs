@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Defining a Notify Class
 
 
-
+## <a href="" id="ddk-defining-a-notify-class-ng"></a>
 
 
 Notify classes must be implemented so that they inherit from the [**INetCfgComponentControl**](https://msdn.microsoft.com/library/windows/hardware/ff547725) interface. However, if notify objects perform certain operations their notify classes must also be implemented to inherit from the following interfaces:

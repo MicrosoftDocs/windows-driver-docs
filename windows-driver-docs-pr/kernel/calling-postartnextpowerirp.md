@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Calling PoStartNextPowerIrp
 
 
-
+## <a href="" id="ddk-calling-postartnextpowerirp-kg"></a>
 
 
 Beginning with Windows Vista, calling [**PoStartNextPowerIrp**](https://msdn.microsoft.com/library/windows/hardware/ff559776) is not required and a call to this routine performs no power management operation. However, in Windows Server 2003, Windows XP, and Windows 2000, after a driver processes a query-power IRP or a set-power IRP, the driver must call **PoStartNextPowerIrp** to notify the power manager that it is ready to receive another power IRP. Drivers must call **PoStartNextPowerIrp** while the IRP stack location points to the current driver and before calling [**PoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff559654).

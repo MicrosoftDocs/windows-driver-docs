@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Packet-Driven I/O with Reusable IRPs
 
 
-
+## <a href="" id="ddk-packet-driven-i-o-with-reusable-irps-kg"></a>
 
 
 The I/O manager, Plug and Play manager, and power manager use *I/O request packets* (IRPs) to communicate with kernel-mode drivers, and to allow drivers to communicate with each other.

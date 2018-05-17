@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Supporting Multifunction PCI Devices
 
 
-
+## <a href="" id="ddk-supporting-multifunction-pci-devices-dg"></a>
 
 
 If a multifunction PCI device conforms completely to the PCI multifunction standard, the PCI bus driver enumerates the individual functions. The PCI bus driver manages the fact that there is more than one function residing at a single device location. To the rest of the system, the individual functions operate like independent devices.

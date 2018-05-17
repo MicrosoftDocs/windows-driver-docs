@@ -58,7 +58,7 @@ To determine whether UMDF Verifier is enabled, set a breakpoint at a location af
 
 For more information about the debugger extension commands, see [Debugger Extensions for Framework-based Drivers](debugger-extensions-for-kmdf-drivers.md).
 
-## Controlling the Verifier's Behavior
+## <a href="" id="verifier-reg-values"></a>Controlling the Verifier's Behavior
 
 
 You can control the behavior of UMDF Verifier by modifying values in the registry. Alternatively, you can use the [WDF Verifier control application](https://msdn.microsoft.com/library/windows/hardware/ff556129) to set these values.

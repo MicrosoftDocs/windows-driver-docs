@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Including GUIDs in Driver Code
 
 
-
+## <a href="" id="ddk-including-guids-in-driver-code-kg"></a>
 
 
 To use GUIDs in a kernel-mode driver, you must do two things:

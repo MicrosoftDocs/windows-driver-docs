@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Properties for WIA Scanner Minidrivers
 
 
-
+## <a href="" id="ddk-properties-for-wia-scanner-minidrivers-si"></a>
 
 
 The following lists contains all of the WIA properties that are unique to WIA scanner minidrivers.

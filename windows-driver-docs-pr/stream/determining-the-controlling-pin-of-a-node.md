@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Determining the Controlling Pin of a Node
 
 
-
+## <a href="" id="ddk-determining-the-controlling-pin-of-a-node-ksg"></a>
 
 
 Unlike filters and pins, nodes do not have an associated file handle by which applications in Ring 3 can access them. Because nodes are internal components within a filter, they exist somewhere between the filter's input and output pins. The network provider must determine which filter pin to use, then use the pin to access a node. This filter pin is called the controlling pin for that node. To determine the controlling pin for each node in the BDA template connection list of a filter, the network provider queries the KSPROPERTY\_BDA\_CONTROLLING\_PIN\_ID property of the [KSPROPSETID\_BdaTopology](https://msdn.microsoft.com/library/windows/hardware/ff566561) property set. The BDA minidriver in turn calls the [**BdaPropertyGetControllingPinId**](https://msdn.microsoft.com/library/windows/hardware/ff556480) support function for each node. In this call, the minidriver passes a pointer to a [**KSP\_BDA\_NODE\_PIN**](https://msdn.microsoft.com/library/windows/hardware/ff566716) structure. This structure identifies the property request to retrieve the controlling pin for a specific node type and a pair of the filter's input and output pins. The BDA support library returns the identifier of the controlling pin for the node type.

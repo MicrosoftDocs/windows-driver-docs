@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Operations on VCs
 
 
-
+## <a href="" id="ddk-operations-on-vcs-ng"></a>
 
 
 All connection-oriented communication over the network occurs on virtual connections (VCs). The following VC operations are described in this section:

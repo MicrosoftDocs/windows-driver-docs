@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Driver Fundamentals
 
 
-
+## <a href="" id="ddk-wia-driver-fundamentals-si"></a>
 
 
 This section describes WIA driver fundamentals and the WIA driver architecture at a conceptual level. This section contains the following topics:

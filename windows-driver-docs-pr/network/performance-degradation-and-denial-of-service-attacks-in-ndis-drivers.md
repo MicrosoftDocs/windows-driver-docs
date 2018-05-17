@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Performance Degradation and Denial of Service Attacks in NDIS Drivers
 
 
-
+## <a href="" id="ddk-performance-degradation-and-denial-of-service-attacks-in-ndis-driv"></a>
 
 If an NDIS driver interrupt handler parses received packets, the interrupt handler implementation might lead to performance degradation and denial of service attacks. For example, a malicious user can target the computer by sending many packets so that the miniport driver is busy computing the checksum on bad packets in the interrupt handler.
 

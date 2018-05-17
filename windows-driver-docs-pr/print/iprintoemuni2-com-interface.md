@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # IPrintOemUni2 COM Interface
 
 
-
+## <a href="" id="ddk-iprintoemuni2-com-interface-gg"></a>
 
 
 The `IPrintOemUni2` COM interface contains all the methods of, and extends the capabilities of, the [IPrintOemUni COM Interface](iprintoemuni-com-interface.md).

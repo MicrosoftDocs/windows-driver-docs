@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Setting Up and Using Device Queues
 
 
-
+## <a href="" id="ddk-setting-up-and-using-device-queues-kg"></a>
 
 
 A driver sets up a device queue object by calling [**KeInitializeDeviceQueue**](https://msdn.microsoft.com/library/windows/hardware/ff552126) at driver or device initialization. After starting its device(s), the driver inserts IRPs into this queue by calling [**KeInsertDeviceQueue**](https://msdn.microsoft.com/library/windows/hardware/ff552180) or [**KeInsertByKeyDeviceQueue**](https://msdn.microsoft.com/library/windows/hardware/ff552178). The following figure illustrates these calls.

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Indicating Received Data from a Miniport Driver
 
 
-
+## <a href="" id="ddk-indicating-received-data-from-a-miniport-driver-ng"></a>
 
 
 The following figure illustrates a miniport driver receive indication.

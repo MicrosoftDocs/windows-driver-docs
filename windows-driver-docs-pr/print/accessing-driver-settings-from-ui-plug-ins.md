@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Accessing Driver Settings from UI Plug-Ins
 
 
-
+## <a href="" id="ddk-accessing-driver-settings-from-ui-plug-ins-gg"></a>
 
 
 A UI plug-in can obtain the current status of printer features and other internal information. The [**IPrintOemDriverUI::DrvGetDriverSetting**](https://msdn.microsoft.com/library/windows/hardware/ff553114) COM interface method is implemented within the printer interface DLL for Microsoft's printer drivers and can be called by UI plug-ins.

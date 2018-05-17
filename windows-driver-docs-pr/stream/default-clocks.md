@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Default Clocks
 
 
-
+## <a href="" id="ddk-default-clocks-ksg"></a>
 
 
 Kernel streaming minidrivers can call [**KsAllocateDefaultClockEx**](https://msdn.microsoft.com/library/windows/hardware/ff560955) to allocate and initialize a default clock structure. Alternatively, they can call [**KsAllocateDefaultClock**](https://msdn.microsoft.com/library/windows/hardware/ff560952), which is a wrapper for **KsAllocateDefaultClockEx** with default parameters for the nonclock members. Call [**KsCreateDefaultClock**](https://msdn.microsoft.com/library/windows/hardware/ff561644) after using **KsAllocateDefaultClockEx** to initialize the default clock.

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Introduction to NDIS 6.0
 
 
-
+## <a href="" id="ddk-introduction-to-ndis-6-0-ng"></a>
 
 
 NDIS 6.0 is the next major version of the Network Driver Interface Specification (NDIS) library. NDIS specifies a standard interface between kernel-mode network drivers and the operating system. NDIS also specifies a standard interface between layered network drivers, thereby abstracting lower-level drivers that manage hardware from upper-level drivers, such as network transports. NDIS 6.0 is included in the Windows Vista operating system.

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using Bus-Master DMA
 
 
-
+## <a href="" id="ddk-using-bus-master-dma-kg"></a>
 
 
 Drivers of bus-master DMA devices can use the following kinds of system-supplied DMA support:

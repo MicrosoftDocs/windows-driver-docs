@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Updating the DriverEntry Routine for an NDIS 6.0 Protocol Driver
 
 
-
+## <a href="" id="ddk-updating-the-driverentry-routine-for-ndis-6-0-protocol-drivers-nd"></a>
 
 
 Like NDIS 5.*x*, NDIS 6.0 protocol drivers register with NDIS in the [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine. In NDIS 6.0, the [**NdisRegisterProtocol**](https://msdn.microsoft.com/library/windows/hardware/ff554653) function is eliminated. To register the protocol driver with NDIS 6.0, call the [**NdisRegisterProtocolDriver**](https://msdn.microsoft.com/library/windows/hardware/ff564520) function.

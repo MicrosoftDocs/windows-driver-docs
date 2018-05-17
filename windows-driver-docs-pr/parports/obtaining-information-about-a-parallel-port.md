@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Obtaining Information About a Parallel Port
 
 
-
+## <a href="" id="ddk-obtaining-information-about-a-parallel-port-kg"></a>
 
 
 Before a client uses a parallel port, it can obtain information about the following:

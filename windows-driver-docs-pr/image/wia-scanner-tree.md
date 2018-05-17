@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Scanner Tree
 
 
-
+## <a href="" id="ddk-wia-scanner-tree-si"></a>
 
 
 The following figure shows a scanner and an image that it produced.

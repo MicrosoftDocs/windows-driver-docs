@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Support for Named VCs
 
 
-
+## <a href="" id="ddk-support-for-named-vcs-ng"></a>
 
 
 NDIS allows WMI clients to query and set information on a per-virtual connection (VC) basis for connection-oriented miniport adapters. WMI clients can also enumerate VCs. Before a WMI client can query or set information that is associated with a particular VC, a stand-alone call manager or connection-oriented client must name the VC by calling the [**NdisCoAssignInstanceName**](https://msdn.microsoft.com/library/windows/hardware/ff561692) function.

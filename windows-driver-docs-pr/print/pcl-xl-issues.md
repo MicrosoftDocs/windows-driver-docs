@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # PCL XL Issues
 
 
-
+## <a href="" id="ddk-pcl-xl-issues-gg"></a>
 
 
 -   Windows XP and later supports print optimization functionality on the **Advanced** tab of the printer property pages. If **Print Optimizations** are disabled, Unidrv prints PCL XL data in raster mode.

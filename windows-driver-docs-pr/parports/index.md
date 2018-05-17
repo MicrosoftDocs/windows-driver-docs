@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Parallel Device Driver Design Guide
 
 
-
+## <a href="" id="ddk-design-guide-para-kg"></a>
 
 
 This section includes:

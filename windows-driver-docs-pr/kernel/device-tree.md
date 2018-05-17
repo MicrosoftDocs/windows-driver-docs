@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Device Tree
 
 
-
+## <a href="" id="ddk-device-tree-kg"></a>
 
 
 The PnP manager maintains a device tree that keeps track of the devices in the system. The following figure shows the device tree for a sample system configuration.

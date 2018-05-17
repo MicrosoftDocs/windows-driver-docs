@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Developing a WIA Driver
 
 
-
+## <a href="" id="ddk-developing-a-wia-driver-si"></a>
 
 
 This section presents information about how to develop a WIA driver.

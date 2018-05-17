@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Registering Optional NDIS 6.0 Entry Points for Miniport Drivers
 
 
-
+## <a href="" id="ddk-registering-optional-ndis-6-0-entry-points-ng"></a>
 
 
 NDIS calls the [*MiniportSetOptions*](https://msdn.microsoft.com/library/windows/hardware/ff559443) function during a miniport driver call to the **NdisMRegisterMiniportDriver** function. If a driver does not register optional services, set the entry point for *MiniportSetOptions* to **NULL** in the [**NDIS\_MINIPORT\_DRIVER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff565958) structure. To overwrite the default entry points, the miniport driver calls the [**NdisSetOptionalHandlers**](https://msdn.microsoft.com/library/windows/hardware/ff564550) function from *MiniportSetOptions*.

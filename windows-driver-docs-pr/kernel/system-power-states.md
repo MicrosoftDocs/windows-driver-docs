@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # System Power States
 
 
-
+## <a href="" id="ddk-system-power-states-kg"></a>
 
 
 System power states describe the power consumption of the system as a whole. The operating system supports six system power states, referred to as S0 (fully on and operational) through S5 (power off). Each state is characterized by the following:

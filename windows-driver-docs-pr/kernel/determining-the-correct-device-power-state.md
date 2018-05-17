@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Determining the Correct Device Power State
 
 
-
+## <a href="" id="ddk-determining-the-correct-device-power-state-kg"></a>
 
 
 The power policy owner checks the [**DeviceState**](devicestate.md) array in the [**DEVICE\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff543095) structure to determine the valid range of device power states for each system power state. The array lists the highest device power state the underlying device can support for each system power state.

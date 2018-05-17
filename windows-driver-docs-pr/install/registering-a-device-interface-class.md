@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Registering a Device Interface Class
 
 
-
+## <a href="" id="ddk-registering-a-device-interface-class-dg"></a>
 
 
 There are three ways to register a device interface class:

@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Supporting Pause and Restart Operations in an NDIS 6.0 Intermediate Driver
 
 
-
+## <a href="" id="ddk-supporting-pause-and-restart-operations-in-an-ndis-6-0-intermediat"></a>
 
 All NDIS 6.0 intermediate drivers must support pause and restart operations. Unless noted otherwise, miniport driver and protocol driver pause and restart operations apply to intermediate drivers. For general information about pause and restart operations, see [Driver Stack Management](driver-stack-management.md).
 

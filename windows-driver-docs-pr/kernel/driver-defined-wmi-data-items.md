@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Driver-Defined WMI Data Items
 
 
-
+## <a href="" id="ddk-driver-defined-wmi-data-items-kg"></a>
 
 
 A data item in a class definition of WMI data or event block can be one of the following:

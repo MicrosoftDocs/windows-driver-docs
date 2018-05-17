@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # DVD Decoder Related KS Events
 
 
-
+## <a href="" id="ddk-dvd-decoder-related-ks-events-ksg"></a>
 
 
 The following tables describe the kernel streaming event set and its respective event that is related to DVD decoder hardware:

@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Minidriver Synchronization
 
 
-
+## <a href="" id="ddk-minidriver-synchronization-ksg"></a>
 
 
 Streaming minidriver developers have the option of allowing the class driver to handle synchronization. When minidrivers register themselves with the class driver, they can opt for class-driver-provided synchronization by setting the **TurnOffSynchronization** member of [**HW\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff559682) to **FALSE**.

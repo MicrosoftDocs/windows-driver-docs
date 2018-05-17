@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Implementing a Cancel Routine
 
 
-
+## <a href="" id="ddk-implementing-a-cancel-routine-kg"></a>
 
 
 The I/O manager calls a driver-supplied [*Cancel*](https://msdn.microsoft.com/library/windows/hardware/ff540742) routine with an input IRP to be canceled and a *DeviceObject* pointer that represents the target device for the I/O request.

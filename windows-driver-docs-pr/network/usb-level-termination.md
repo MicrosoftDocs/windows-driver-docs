@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # USB-Level Termination
 
 
-
+## <a href="" id="ddk-usb-level-termination-ng"></a>
 
 
 See the USB Specification for a description of generic USB bus-level termination.

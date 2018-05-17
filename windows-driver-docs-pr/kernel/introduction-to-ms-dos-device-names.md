@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Introduction to MS-DOS Device Names
 
 
-
+## <a href="" id="ddk-introduction-to-ms-dos-device-names-kg"></a>
 
 
 A named device object that is created by a non-WDM driver typically has an MS-DOS device name. An MS-DOS device name is a symbolic link in the object manager with a name of the form **\\DosDevices\\***DosDeviceName*.

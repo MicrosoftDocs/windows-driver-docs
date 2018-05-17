@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Pausing a Binding
 
 
-
+## <a href="" id="ddk-pausing-a-binding-ng"></a>
 
 
 After NDIS sends a protocol driver a network Plug and Play (PnP) pause event notification for a binding, the binding enters the Pausing state.

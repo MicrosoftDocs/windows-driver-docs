@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Connection-Oriented Operations Performed by Call Managers
 
 
-
+## <a href="" id="ddk-connection-oriented-operations-performed-by-call-managers-ng"></a>
 
 
 A call manager performs:

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # DispatchReadWrite Using Direct I/O
 
 
-
+## <a href="" id="ddk-dispatchreadwrite-using-direct-i-o-kg"></a>
 
 
 Any lower-level device driver that sets up its device objects for direct I/O satisfies a read request by returning data transferred from its device to system physical memory, which is described by the MDL at **Irp-&gt;MdlAddress**. It satisfies a write request by transferring data from system physical memory out to its device.

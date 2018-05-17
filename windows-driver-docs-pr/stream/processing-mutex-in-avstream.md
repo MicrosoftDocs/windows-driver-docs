@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Processing Mutex in AVStream
 
 
-
+## <a href="" id="ddk-processing-mutex-in-avstream-ksg"></a>
 
 
 The third mutex is the processing mutex. Individual filters and pins have their own processing mutexes. AVStream independently acquires the processing mutex before processing at the filter and pin level, in order to synchronize access to processing-related structures. AVStream also acquires the processing mutex during other operations including binding pins to a pipe section, sleep or wake power operations, and changing descriptors. Minidrivers can manually acquire the mutex to perform a synchronous operation, such as processing or descriptor modification. A minidriver should obtain the processing mutex before it makes any change that cannot happen at the same time as processing.

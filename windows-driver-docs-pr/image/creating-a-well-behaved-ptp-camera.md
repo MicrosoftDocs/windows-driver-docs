@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Creating a Well-Behaved PTP Camera
 
 
-
+## <a href="" id="ddk-creating-a-well-behaved-ptp-camera-si"></a>
 
 
 The following points must be considered to create a PTP camera that works properly with the Microsoft-supplied PTP WIA minidriver.

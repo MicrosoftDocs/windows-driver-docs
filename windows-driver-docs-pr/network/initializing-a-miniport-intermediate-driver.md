@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Initializing a Miniport-Intermediate Driver
 
 
-
+## <a href="" id="ddk-initializing-a-miniport-intermediate-driver-ng"></a>
 
 
 A miniport-intermediate driver combines a miniport driver for a virtual device, a protocol driver, and a miniport driver for a physical device. A miniport-intermediate driver functions similarly to an intermediate driver layered over a miniport driver. Such a driver allows an intermediate driver to communicate directly with an underlying miniport driver without incurring the performance penalties that might result with two separate drivers.

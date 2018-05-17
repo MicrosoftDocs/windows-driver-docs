@@ -26,7 +26,7 @@ ms.technology: windows-devices
 # Parallel Device Interfaces, Internal Names, and Symbolic Links
 
 
-
+## <a href="" id="ddk-parallel-device-interfaces-internal-names-and-symbolic-links-kg"></a>
 
 
 This section describes the device interfaces, internal names, and symbolic links that are created by the system-supplied parallel drivers for parallel ports and devices attached to parallel ports.

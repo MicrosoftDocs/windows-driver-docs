@@ -22,7 +22,7 @@ ms.technology: windows-devices
 # Dispatching Methods for I/O Requests
 
 
-
+## <a href="" id="ddk-dispatching-methods-for-i-o-requests-df"></a>
 
 
 When a driver calls [**WdfIoQueueCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547401) to create an I/O queue, it specifies a dispatching method for the queue. The framework provides three dispatching methods: [sequential](#sequential-dispatching), [parallel](#parallel-dispatching), and [manual](#manual-dispatching). The driver can specify any of these dispatching methods for any I/O queue, including a device's [default I/O queue](creating-i-o-queues.md).

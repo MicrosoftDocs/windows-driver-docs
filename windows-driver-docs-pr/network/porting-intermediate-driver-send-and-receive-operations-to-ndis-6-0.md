@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Porting Intermediate Driver Send and Receive Operations to NDIS 6.0
 
 
-
+## <a href="" id="ddk-porting-intermediate-driver-send-and-receive-operations-to-ndis-6-"></a>
 
 
 Like NDIS 5.*x* intermediate drivers, NDIS 6.0 intermediate drivers can originate or forward send requests and receive indications.

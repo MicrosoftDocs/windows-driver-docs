@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Samples and Tools
 
 
-
+## <a href="" id="ddk-wia-samples-and-tools-si"></a>
 
 
 This section discusses the WIA sample code and the WIA tools that are available to aid in the driver development and testing process.

@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Updating the NDIS 6.0 Protocol Driver characteristics Structure
 
 
-
+## <a href="" id="ddk-the-ndis-6-0-ndis-protocol-driver-characteristics-structure-nd"></a>
 
 
 Many entry points that are found in the NDIS 5.*x* NDIS\_PROTOCOL\_CHARACTERISTICS structure are removed from the NDIS 6.0 version of the structure. The NDIS 6.0 version of the structure is named [**NDIS\_PROTOCOL\_DRIVER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff566825).

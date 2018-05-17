@@ -19,12 +19,12 @@ Table structures and headers, including ID and checksum fields, are defined in t
 
 The idea behind these tables is to enable generic software to support standard intellectual property (IP) blocks that can be integrated into various platforms in diverse ways. With the table strategy, the platform-variable attributes of a particular platform are provided in a table, and used by generic software to adapt itself to the specific set of IP blocks integrated into the platform. This software can therefore be written once, thoroughly tested, and then optimized over time.
 
-## Root System Description Pointer (RSDP)
+## <a href="" id="rsdp"></a>Root System Description Pointer (RSDP)
 
 
 Windows depends on UEFI firmware to boot up the hardware platform. Hence, Windows will use the EFI system table to locate the RSDP, as described in section 5.2.5.2, "Finding the RSDP on UEFI Enabled Systems", of the [ACPI 5.0 specification](http://www.uefi.org/specifications). The platform firmware fills in the address of either the RSDT or XSDT in the RSDP. (If both table addresses are provided, Windows will prefer the XSDT. )
 
-## Root System Description Table (RSDT)
+## <a href="" id="rsdt"></a>Root System Description Table (RSDT)
 
 
 The RSDT (or XSDT) includes pointers to any other system description tables provided on the platform. Specifically, this table contains pointers to the following:
@@ -38,7 +38,7 @@ The RSDT (or XSDT) includes pointers to any other system description tables prov
 -   The base system description table (DSDT)
 -   Optionally, additional system description tables (SSDT)
 
-## Fixed ACPI Description Table (FADT)
+## <a href="" id="fadt"></a>Fixed ACPI Description Table (FADT)
 
 
 The Fixed ACPI Hardware Table (FADT) contains important information about the various Fixed Hardware features available on the platform. To support hardware-reduced ACPI platforms, ACPI 5.0 extends the FADT table definition as follows:
@@ -58,19 +58,19 @@ The Fixed ACPI Hardware Table (FADT) contains important information about the va
 
 All other FADT settings retain their meanings from the previous version, ACPI 4.0. For more information, see section 5.2.9, "Fixed ACPI Description Table (FADT)", of the [ACPI 5.0 specification](http://www.uefi.org/specifications).
 
-## Multiple APIC Description Table (MADT)
+## <a href="" id="madt"></a>Multiple APIC Description Table (MADT)
 
 
 In PC implementations of ACPI, the Multiple APIC Description Table (MADT) and PC-specific interrupt controller descriptors are used to describe the system interrupt model. For ARM-based SoC platforms, ACPI 5.0 adds descriptors for the ARM Holdings' Generic Interrupt Controller (GIC) and GIC Distributor. Windows includes inbox support for the GIC and GIC Distributor. For more information about these descriptors, see sections 5.2.12.14, "GIC Structure", and 5.2.12.15, "GIC Distributor Structure", of the [ACPI 5.0 specification](http://www.uefi.org/specifications).
 
 The interrupt controller descriptor structures are listed immediately after the Flags field in the MADT. For ARM platforms, one descriptor is listed for each GIC, followed by one for each GIC Distributor. The GIC corresponding to the boot processor must be the first entry in the list of interrupt controller descriptors.
 
-## Generic Timer Description Table (GTDT)
+## <a href="" id="gtdt"></a>Generic Timer Description Table (GTDT)
 
 
 As with the interrupt controller, there is a standard timer description table in ACPI. For ARM systems that utilize the GIT timer, ACPI's GTDT can be used to leverage the built-in support for the GIT in Windows.
 
-## Core System Resources Table (CSRT)
+## <a href="" id="csrt"></a>Core System Resources Table (CSRT)
 
 
 Core System Resources (CSRs) are shared hardware functions such as interrupt controllers, timers and DMA controllers to which the operating system must serialize access. Where industry standards exist for features such as timers and interrupt controllers (on both x86 and ARM architectures), Windows builds in support for these features based on the standard tables described in ACPI (for example, MADT and GTDT). However, until the industry converges on DMA controller interface standards, there is a need to support some non-standard devices in the operating system.
@@ -83,7 +83,7 @@ To support maintenance of HAL extensions, and to manage the system resources use
 
 For more information, see the [Core System Resources Table (CSRT) specification](http://acpica.org/related-documents).
 
-## Debug Port Table 2 (DBG2)
+## <a href="" id="dbg"></a>Debug Port Table 2 (DBG2)
 
 
 Microsoft requires a debug port on all systems. To describe the debug port(s) built into a platform, Microsoft defines the Debug Port Table 2 (DBG2) for ACPI. This table specifies one or more independent port(s) for debugging purposes. The presence of the DBG2 table indicates that the platform includes at least one debug port. This table includes information about the identity and configuration of the debug port(s). The table is located in system memory with other ACPI tables, and must be referenced in the ACPI RSDT table.
@@ -92,7 +92,7 @@ Windows uses the Port Type value in the DBG2 table to identify and load the Kern
 
 For more information, see the [Microsoft Debug Port Table 2 (DBG2) specification](http://go.microsoft.com/fwlink/p/?linkid=330996).
 
-## Differentiated System Description Table (DSDT)
+## <a href="" id="dsdt"></a>Differentiated System Description Table (DSDT)
 
 
 In ACPI, peripheral devices and system hardware features on the platform are described in the Differentiated System Description Table (DSDT), which is loaded at boot, or in Secondary System Description Tables (SSDTs), which are loaded at boot or loaded dynamically at run time. For SoCs, the platform configuration is typically static, so the DSDT might be sufficient, although SSDTs can also be used to improve the modularity of the platform description.
@@ -103,7 +103,7 @@ For more information about OpRegions, see section 5.5.2.4, "Access to Operation 
 
 Windows provides support for developing and debugging ASL code. The ASL compiler includes a disassembler to enable the implementer to load a namespace from a debugging target. The ASL compiler can then be used to reapply the namespace to the target for rapid prototyping and testing—without having to flash the system firmware. In addition, the Windows Kernel Debugger, in conjunction with a checked (CHK) version of the Acpi.sys driver, supports tracing and analyzing AML execution. For more information, see [The AMLI Debugger](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/introduction-to-the-amli-debugger).
 
-## Windows SMM Security Mitigations Table (WSMT)
+## <a href="" id="wsmt"></a>Windows SMM Security Mitigations Table (WSMT)
 
 
 The Windows SMM Security Mitigations Table (WSMT) specification contains details of an Advanced Configuration and Power Interface (ACPI) table that was created for use with Windows operating systems that support Windows virtualization-based security (VBS) features.

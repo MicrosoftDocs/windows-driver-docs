@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Adding WIA Properties to a WIA Item
 
 
-
+## <a href="" id="ddk-adding-wia-properties-to-a-wia-item-si"></a>
 
 
 Each WIA item contains WIA properties. An application reads and writes WIA item properties to configure the WIA minidriver. The WIA service calls the [**IWiaMiniDrv::drvInitItemProperties**](https://msdn.microsoft.com/library/windows/hardware/ff544989) method once for every item that the application accesses, to initialize that WIA minidriver item's properties. If an application does not read or write WIA properties on an item, this method is not called for that item. The item context that the *pWiasContext* parameter points to indicates which item will be initialized with WIA properties.

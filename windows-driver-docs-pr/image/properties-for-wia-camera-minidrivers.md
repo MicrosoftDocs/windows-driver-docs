@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Properties for WIA Camera Minidrivers
 
 
-
+## <a href="" id="ddk-properties-for-wia-camera-minidrivers-si"></a>
 
 
 The following is the complete list of all WIA properties unique to WIA camera minidrivers.

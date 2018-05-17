@@ -35,7 +35,7 @@ ms.technology: windows-devices
 
 Microsoft provides a USB Type-C Connector System Software Interface (UCSI) Specification-compliant driver. If your design includes an embedded controller, implement UCSI in your system's BIOS/EC and load the in-box UCSI driver (UcmUcsi.sys). Otherwise, you need to [write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md).
 
-## Drivers for supporting USB Type-C components for systems with embedded controllers
+## <a href="" id="drivers"></a>Drivers for supporting USB Type-C components for systems with embedded controllers
 
 
 Here is an example of a system with an embedded controller.

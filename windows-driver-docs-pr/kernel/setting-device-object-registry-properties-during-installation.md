@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Setting Device Object Registry Properties During Installation
 
 
-
+## <a href="" id="ddk-setting-device-object-registry-properties-during-installation-kg"></a>
 
 
 To set device object properties during installation, you must provide an INF file that specifies the properties. You can specify device object properties for either a device, or a device setup class.

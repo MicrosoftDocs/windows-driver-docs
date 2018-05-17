@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # DispatchDeviceControl in Higher-Level Drivers
 
 
-
+## <a href="" id="ddk-dispatchdevicecontrol-in-higher-level-drivers-kg"></a>
 
 
 Usually, the [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287) routine of a higher-level driver simply sets up the I/O stack location for the next-lower-level driver and passes the IRP on with [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336). The *DispatchDeviceControl* routine seldom checks the validity of parameters in the input IRP because the underlying device driver is assumed to have better information about how to handle each device-type-specific I/O control request.

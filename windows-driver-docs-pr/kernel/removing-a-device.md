@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Removing a Device
 
 
-
+## <a href="" id="ddk-removing-a-device-kg"></a>
 
 
 The PnP manager directs drivers to remove their device objects for a device when the device has been, or is being, physically removed from the machine. The PnP manager also sends a *remove* IRP when a user requests to update the drivers for a device and, on Windows 2000 and later, when the device is disabled or fails to start.

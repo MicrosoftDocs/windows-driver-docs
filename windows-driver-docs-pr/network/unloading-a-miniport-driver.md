@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Unloading a Miniport Driver
 
 
-
+## <a href="" id="ddk-unloading-a-miniport-driver-ng"></a>
 
 
 The driver object that is associated with an NDIS miniport driver specifies an [**Unload**](https://msdn.microsoft.com/library/windows/hardware/ff564886) routine. The system calls the *Unload* routine when all the devices that the driver services have been removed. NDIS provides the *Unload* routine for miniport drivers. NDIS calls a miniport driver's [*MiniportDriverUnload*](https://msdn.microsoft.com/library/windows/hardware/ff559378) function from the *Unload* routine.

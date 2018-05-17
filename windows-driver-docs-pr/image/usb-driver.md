@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # USB Driver
 
 
-
+## <a href="" id="ddk-usb-driver-si"></a>
 
 
 The kernel-mode still image driver for USB buses supports a single control endpoint, along with multiple interrupt, bulk IN, and bulk OUT endpoints. The control and interrupt endpoints are accessible using I/O control codes and [**DeviceIoControl**](https://msdn.microsoft.com/library/windows/desktop/aa363216). The bulk endpoints are accessible using **ReadFile** and **WriteFile**.

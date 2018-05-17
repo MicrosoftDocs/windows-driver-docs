@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Errors in Handling Cleanup and Close Operations
 
 
-
+## <a href="" id="ddk-errors-in-handling-cleanup-and-close-operations-kg"></a>
 
 
 Some drivers fail to distinguish the tasks required in [*DispatchCleanup*](https://msdn.microsoft.com/library/windows/hardware/ff543233) and [*DispatchClose*](https://msdn.microsoft.com/library/windows/hardware/ff543255) routines. The I/O manager calls a driver's *DispatchCleanup* routine when the last handle to a file object is closed. The *DispatchClose* routine is called when the last reference is released from the file object. A driver should not attempt to free resources in its *DispatchCleanup* routine that are attached to a file object or might be used by other *Dispatch*Xxx routines.

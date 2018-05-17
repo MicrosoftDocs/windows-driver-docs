@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Obtaining VMQ Information
 
 
-
+## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
 
 
 The VMQ interface includes OID requests and WMI GUIDs that allow overlying drivers and applications to obtain information about the underlying VMQ configuration.

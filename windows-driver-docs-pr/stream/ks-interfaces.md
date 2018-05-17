@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # KS Interfaces
 
 
-
+## <a href="" id="ddk-ks-interfaces-ksg"></a>
 
 
 An *Interface* is a descriptor parameter that defines how a pin communicates. The minidriver indicates which interfaces a pin supports by providing a pointer to an array of [**KSPIN\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff563537) structures in the relevant [**KSPIN\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff563533) structure. KS then uses this information for determining potential connectivity and graph building.

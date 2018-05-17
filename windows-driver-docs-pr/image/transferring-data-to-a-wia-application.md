@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Transferring Data to a WIA Application
 
 
-
+## <a href="" id="ddk-transferring-data-to-a-wia-application-si"></a>
 
 
 When an application initiates a data transfer, the WIA service calls the [**IWiaMiniDrv::drvAcquireItemData**](https://msdn.microsoft.com/library/windows/hardware/ff543956) method to perform the transfer. This method is responsible for acquiring data from the device and sending that data back to the application using the [**IWiaMiniDrvCallBack::MiniDrvCallback**](https://msdn.microsoft.com/library/windows/hardware/ff543946) method.

@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Driver Error Reporting for Windows Me and Windows XP
 
 
-
+## <a href="" id="ddk-wia-driver-error-reporting-for-windows-me-and-windows-xp-si"></a>
 
 
 A WIA minidriver has the ability to report extended error information to the WIA application in string form. After receiving an HRESULT error code, a WIA application can call the **IWiaItemExtras::GetExtendedErrorInfo** method (described in the Microsoft Windows SDK documentation) for a user-readable string that describes the details of an error. The string reported by this method should be localized into multiple languages.

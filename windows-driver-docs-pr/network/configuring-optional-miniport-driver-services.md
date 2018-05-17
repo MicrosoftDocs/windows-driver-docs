@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Configuring Optional Miniport Driver Services
 
 
-
+## <a href="" id="ddk-configuring-optional-miniport-driver-services-ng"></a>
 
 
 NDIS calls a miniport driver's [*MiniportSetOptions*](https://msdn.microsoft.com/library/windows/hardware/ff559443) function to allow the driver to configure optional services. NDIS calls *MiniportSetOptions* within the context of the miniport driver's call to the [**NdisMRegisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563654) function.

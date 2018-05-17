@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Printer Driver Support for Printer Directory Services
 
 
-
+## <a href="" id="ddk-printer-driver-support-for-printer-directory-services-gg"></a>
 
 
 Printer drivers are not responsible for publishing a print queue to Directory Services. The Microsoft Windows 2000 and later print folder creates a print queue object (by calling the spooler's **SetPrinter** function) during the process of installing the printer. (See [Publishing Print Queues](print-spooler-support-for-printer-directory-services.md#ddk-publishing-print-queues-gg).)

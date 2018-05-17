@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # 64-Bit Compiler
 
 
-
+## <a href="" id="ddk-64-bit-compiler-kg"></a>
 
 
 After you convert your 32-bit driver source code to use the [new data types](the-new-data-types.md), you can use the 64-bit compiler to identify any type-related problems that you initially missed. The first time you compile this code for 64-bit Windows, the compiler might generate many pointer-truncation or type-mismatch warnings. Use these warnings as a guide to make your code more robust. It is good practice to eliminate all warnings, especially pointer-truncation warnings.

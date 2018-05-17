@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Common Property Sheet User Interface
 
 
-
+## <a href="" id="ddk-cpsui-gg"></a>
 
 
 This section describes the Common Property Sheet User Interface (CPSUI). The following topics are provided:

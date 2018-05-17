@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Camera Driver UI Extension Sample
 
 
-
+## <a href="" id="ddk-camera-driver-ui-extension-sample-si"></a>
 
 
 The *extend* directory in the WDK contains a sample user interface extension for WIA digital still camera drivers.

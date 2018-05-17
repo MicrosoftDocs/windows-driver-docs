@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Driver Thread Context
 
 
-
+## <a href="" id="ddk-driver-thread-context-kg"></a>
 
 
 As shown in the [Processing IRPs in Layered Drivers](example-i-o-request---the-details.md#ddk-example-i-o-request---the-details-kg) figure, a file system is a two-part driver:

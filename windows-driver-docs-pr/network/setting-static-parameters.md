@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Setting Static Parameters
 
 
-
+## <a href="" id="ddk-setting-static-parameters-ng"></a>
 
 
 An INF file sets a static parameter only once. This parameter cannot be reconfigured through a properties page in the user interface.

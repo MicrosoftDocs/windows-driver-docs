@@ -27,7 +27,7 @@ In this topic, a USB Type-C system refers to a PC running Windows 10 for deskto
 -   [Display connection is limited](#-5)
 -   [These two PCs (mobile devices) can't communicate](#-6)
 
-## You might be able to fix your USB device
+## <a href="" id="-1"></a>You might be able to fix your USB device
 
 
 **Your USB device ran into a problem. Follow these steps to try to fix it. (Error code \_\_\_\_) **
@@ -66,7 +66,7 @@ In this topic, a USB Type-C system refers to a PC running Windows 10 for deskto
 
  
 
-## Device is charging slowly
+## <a href="" id="-2"></a>Device is charging slowly
 
 
 **To speed up charging, use the charger and cable that came with your device.**
@@ -114,7 +114,7 @@ In this topic, a USB Type-C system refers to a PC running Windows 10 for deskto
 
  
 
-## The USB device might not work
+## <a href="" id="-3"></a>The USB device might not work
 
 
 **Try connecting it to a PC.**
@@ -149,7 +149,7 @@ In this topic, a USB Type-C system refers to a PC running Windows 10 for deskto
 
  
 
-## Try improving the USB connection
+## <a href="" id="-4"></a>Try improving the USB connection
 
 
 **Make sure the device you are connecting to is supported and you are using the right cable.**
@@ -183,7 +183,7 @@ In this topic, a USB Type-C system refers to a PC running Windows 10 for deskto
 
  
 
-## Display connection is limited
+## <a href="" id="-5"></a>Display connection is limited
 
 
 **DisplayPort/MHL connection might not work. Try using a different cable.**
@@ -222,7 +222,7 @@ In this topic, a USB Type-C system refers to a PC running Windows 10 for deskto
 
  
 
-## These two PCs (mobile devices) can't communicate
+## <a href="" id="-6"></a>These two PCs (mobile devices) can't communicate
 
 
 **Try connecting one of them to a mobile device (PC) to achieve your goal.**

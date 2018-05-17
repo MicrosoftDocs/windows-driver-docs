@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # RunOnce Registry Key
 
 
-
+## <a href="" id="ddk-runonce-registry-entries-dg"></a>
 
 
 All versions of Windows support a registry key, **RunOnce**, which can be used to specify commands that the system will execute one time and then delete.

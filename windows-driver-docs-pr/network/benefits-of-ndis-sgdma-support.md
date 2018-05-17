@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Benefits of NDIS SGDMA Support
 
 
-
+## <a href="" id="ddk-ndis-6-0-sgdma-support-ng"></a>
 
 
 In the NDIS 6.0 and later SGDMA interface, NDIS does not map the data buffer before sending it down to the miniport driver. Instead, NDIS provides an interface for the driver to map the network data.

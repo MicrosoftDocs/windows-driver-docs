@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Data Item
 
 
-
+## <a href="" id="ddk-wia-data-item-si"></a>
 
 
 This topic applies to Windows Vista and later.

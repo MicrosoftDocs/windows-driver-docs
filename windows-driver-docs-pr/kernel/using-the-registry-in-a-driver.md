@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using the Registry in a Driver
 
 
-
+## <a href="" id="ddk-using-the-registry-in-a-driver-kg"></a>
 
 
 Drivers, like other system components, rely on the registry to store configuration information. The system itself uses the registry to store information about devices and drivers, and a driver can store additional information there for its own use.

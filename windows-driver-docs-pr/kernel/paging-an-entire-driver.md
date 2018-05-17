@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Paging an Entire Driver
 
 
-
+## <a href="" id="ddk-paging-an-entire-driver-kg"></a>
 
 
 A driver that uses the **MmLockPagable*Xxx*** support routines and specifies paged and discardable sections consists of nonpaged sections, paged sections, and an INIT section that is discarded after driver initialization.

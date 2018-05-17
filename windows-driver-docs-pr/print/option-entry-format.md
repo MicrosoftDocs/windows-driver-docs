@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Option Entry Format
 
 
-
+## <a href="" id="ddk-option-entry-format-gg"></a>
 
 
 To specify a printer option entry in a GPD file, use the following format:

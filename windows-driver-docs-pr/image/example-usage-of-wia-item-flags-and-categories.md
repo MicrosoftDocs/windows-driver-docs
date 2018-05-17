@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Example Usage of WIA Item Flags and Categories
 
 
-
+## <a href="" id="ddk-example-usage-of-wia-item-flags-and-categories-si"></a>
 
 
 This topic applies to Windows Vista and later.

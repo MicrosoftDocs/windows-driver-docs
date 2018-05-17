@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Setting Read and Write Timeouts for a Serial Device
 
 
-
+## <a href="" id="ddk-setting-read-and-write-timeouts-for-a-serial-device-kg"></a>
 
 
 A client can use an [**IOCTL\_SERIAL\_SET\_TIMEOUTS**](https://msdn.microsoft.com/library/windows/hardware/ff546772) request to set time-out values that the system-supplied Serial.sys driver uses for read and write requests. Serial.sys continues to transfer bytes until the requested number of bytes are transferred or a time-out event occurs.

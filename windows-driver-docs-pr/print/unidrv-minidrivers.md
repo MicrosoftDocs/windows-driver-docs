@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Unidrv Minidrivers
 
 
-
+## <a href="" id="ddk-unidrv-minidrivers-gg"></a>
 
 
 Unidrv minidrivers are text files that contain descriptions of printers. Each minidriver describes one printer type from one manufacturer. This text-based description is called a generic printer description (GPD), and each file is called a GPD file. Each minidriver consists of one or more GPD files.

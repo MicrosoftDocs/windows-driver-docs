@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Life Cycle of an Object
 
 
-
+## <a href="" id="ddk-life-cycle-of-an-object-kg"></a>
 
 
 This topic describes the "life cycle" of an object, that is, how objects are referenced and tracked by the object manager. This topic also describes how to make objects temporary or permanent.

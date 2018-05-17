@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Scanner Item Tree for Windows Vista
 
 
-
+## <a href="" id="ddk-wia-scanner-item-tree-for-windows-longhorn-si"></a>
 
 
 This section contains information about WIA item tree architecture for image scanner devices in Windows Vista and later versions of Windows. It also describes how to develop WIA minidrivers that are compatible with Windows Vista, Windows XP, and Windows Me.

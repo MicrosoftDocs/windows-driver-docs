@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Sample Kernel-Mode Drivers
 
 
-
+## <a href="" id="ddk-sample-kernel-mode-drivers-kg"></a>
 
 
 The WDK provides various sample kernel-mode drivers. After you have installed the WDK, the src\\general subdirectory contains sample driver code that is applicable to all kernel-mode drivers. These samples include the following:

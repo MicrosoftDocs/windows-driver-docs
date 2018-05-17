@@ -22,7 +22,7 @@ Here are the new features and improvements for Universal Serial Bus (USB) in Win
 -   [Improved USB diagnostic tools and debugger extensions](#improved-usb-diagnostic-tools-and-debugger-extensions-)
 -   [Related topics](#related-topics)
 
-## Windows Runtime USB API for developing UWP apps
+## <a href="" id="usb-sdk"></a>Windows Runtime USB API for developing UWP apps
 
 
 Windows Runtime provides a new namespace: [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466) (see [Writing apps for USB devices (UWP apps using C#/VB/C++)](https://msdn.microsoft.com/library/windows/apps/xaml/dn263144) for a brief overview). By using the namespace, you can write a UWP app that talks to a custom USB device.
@@ -67,7 +67,7 @@ These samples demonstrate the use of the [**Windows.Devices.Usb**](https://msdn.
 </tbody>
 </table>
 
-## Microsoft OS 2.0 descriptors for improved device enumerations 
+## <a href="" id="microsoft-os-2-0-descriptors-for-improved-device-enumeration"></a>Microsoft OS 2.0 descriptors for improved device enumerations 
  
 Microsoft OS 2.0 descriptors improve device identification and driver installation experience.
 
@@ -80,7 +80,7 @@ MS OS 2.0 descriptors specification provides these improvements:
 
 For information about the specification, see [Microsoft OS Descriptors for USB Devices](microsoft-defined-usb-descriptors.md).
 
-## Isochronous support for WinUSB
+## <a href="" id="usb-wdk"></a>Isochronous support for WinUSB
 
 
 The Microsoft-provided WinUSB (kernel-mode driver) now supports transfers to and from isochronous endpoints of a USB device
@@ -107,7 +107,7 @@ In Windows 8.1, the performance and reliability of both USB 3.0 and 2.0 driver 
 -   Devices can now recover faster than the default 10 millisecond specified in the USB 2.0 specification. Also, the host controller driver asserts resume signaling for less than the 20 milliseconds required in the USB 2.0 specification.
 -   USB 3.0 driver stack is now more reliable when performing control, bulk, and isochronous data transfers.
 
-## USB tests in the Hardware Certification Kit (HCK)
+## <a href="" id= "usb-tests-in-the-hardware-certification-kit-hck"></a>USB tests in the Hardware Certification Kit (HCK)
 
 -   These USB tests in the Hardware Certification Kit (HCK) have been improved. The device enumeration tests now have a new parameter that reduces manual intervention during testing using simplified topologies. The suspend tests have been improved logging capabilities.
 
@@ -121,7 +121,7 @@ In Windows 8.1, the performance and reliability of both USB 3.0 and 2.0 driver 
 
     MUTT hardware can be purchased from [JJG Technologies](http://jjgtechnologies.com/mutt.md). The device does not have installed firmware installed. To install firmware, download the MUTT software package from [this Web site](http://msdn.microsoft.com/windows/hardware/jj590752) and run MUTTUtil.exe. For more information, see the documentation included with the package.
 
-## Improved USB diagnostic tools and debugger extensions
+## <a href="" id="improved-usb-diagnostic-tools-and-debugger-extensions-"></a>Improved USB diagnostic tools and debugger extensions
 
 
 -   Kernel debugging extensions for USB 2.0 and 3.0 (USBKD.dll and USB3KD.dll) have been improved to have similar command pattern. Debugger extension for Usbccgp.sys is now available.

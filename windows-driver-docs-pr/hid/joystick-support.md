@@ -21,7 +21,7 @@ ms.technology: windows-devices
 # Joystick Support
 
 
-
+## <a href="" id="ddk-joystick-support-di"></a>
 
 
 There are differences from version to version in the type of joystick support that Microsoft DirectX offers. In Windows 95/98/Me, DirectX supports two methods to customize joystick capabilities: through custom entries in the Windows registry and through a virtual device driver (VxD) creation, which is called as *joystick minidriver*. The minidrivers that are used in DirectX versions 1.0, 2.0, and 3.0 support the original minidriver interface, with minor differences in the DirectX 3.0 interface. In addition to the original minidriver model, DirectX versions 5.0, and later, include an alternative driver interface that is generally described separately.

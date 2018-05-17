@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Using NDIS 6.1 Data Structures
 
 
-
+## <a href="" id="ddk-using-ndis-6-1-data-structures-ng"></a>
 
 
 NDIS can support multiple versions of the same data structure. NDIS 6.1 drivers that use updated structures in Windows Server 2008, Windows Vista with Service Pack 1 (SP1), or both operating systems must report the correct **Revision** member and **Size** member value in the [**NDIS\_OBJECT\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff566588) structure that is in the **Header** member of a structure, if any, when the drivers initialize NDIS 6.1 data structures.

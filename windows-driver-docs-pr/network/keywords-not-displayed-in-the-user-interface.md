@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Keywords Not Displayed in the User Interface
 
 
-
+## <a href="" id="ddk-keywords-not-displayed-in-the-user-interface-ng"></a>
 
 
 NDIS 6.0 and later versions of NDIS provide some standardized keywords for miniport drivers of network devices. These standardized keywords appear in INF files but not in the user interface.

@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Typical SetupAPI Usage
 
 
-
+## <a href="" id="ddk-typical-setupapi-usage-dg"></a>
 
 
 This section includes the following topics:

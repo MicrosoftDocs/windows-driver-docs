@@ -56,7 +56,7 @@ To communicate with MUTT devices, you need the MUTT software package. This packa
 
     ![mutt device](images/fig1-mutt-device.png)
 
-## MUTT Pack
+## <a href="" id="mutt-pack-"></a>MUTT Pack
 
 
 The MUTT Pack is a combination of a USB 2.0 hub and an FX2 device that controls the hub and acts as a downstream device.
@@ -99,7 +99,7 @@ This image shows how to use the jumper for powering the MUTT pack with an extern
 
  
 
-## SuperMUTT
+## <a href="" id="supermutt-"></a>SuperMUTT
 
 
 -   Based on the design of FX3 EZ-USB FX3.

@@ -22,7 +22,7 @@ ms.technology: windows-devices
 # AVStream Dispatch Tables
 
 
-
+## <a href="" id="ddk-avstream-dispatch-tables-ksg"></a>
 
 
 The AVStream dispatch table, [**KSDEVICE\_DISPATCH**](https://msdn.microsoft.com/library/windows/hardware/ff561693), is a set of function pointers to dispatch functions. A minidriver can extend the behavior provided by AVStream by providing callback routines that perform driver-specific tasks.

@@ -27,7 +27,7 @@ This section includes the following topics:
 
 [WHEA Changes for Windows 7](whea-changes-for-windows-7.md)
 
-## (*New*) WHEA Changes for Windows 8
+## <a href="" id="-new--whea-changes-for-windows-8"></a>(*New*) WHEA Changes for Windows 8
 
 
 Starting with Windows 8, the following changes have been made to Windows Hardware Error Architecture (WHEA)

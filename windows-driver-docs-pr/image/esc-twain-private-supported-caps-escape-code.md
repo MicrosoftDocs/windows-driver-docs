@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # ESC\_TWAIN\_PRIVATE\_SUPPORTED\_CAPS Escape Code
 
 
-
+## <a href="" id="ddk-esc-twain-private-supported-caps-escape-code-si"></a>
 
 
 In order to determine private TWAIN-supported capabilities, a TWAIN application notifies the TWAIN compatibility layer, which then sends the ESC\_TWAIN\_PRIVATE\_SUPPORTED\_CAPS escape code to the WIA driver's [**IStiUSD::Escape**](https://msdn.microsoft.com/library/windows/hardware/ff543815) method. The following pseudocode implementation of the **Escape** method demonstrates how it should respond to the ESC\_TWAIN\_PRIVATE\_SUPPORTED\_CAPS escape code to report private TWAIN-support capabilities.

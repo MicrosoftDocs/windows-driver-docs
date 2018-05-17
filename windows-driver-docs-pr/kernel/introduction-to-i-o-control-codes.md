@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Introduction to I/O Control Codes
 
 
-
+## <a href="" id="ddk-introduction-to-i-o-control-codes-kg"></a>
 
 
 I/O control codes (IOCTLs) are used for communication between user-mode applications and drivers, or for communication internally among drivers in a stack. I/O control codes are sent using IRPs.

@@ -9,7 +9,7 @@ keywords: ["force feedback drivers WDK HID , OEMForceFeedback settiings", "OEMFo
 # OEMForceFeedback Registry Settings
 
 
-
+## <a href="" id="ddk-oemforcefeedback-registry-settings-di"></a>
 
 
 New joystick registry entries are found under an OEM-specific key that is installed for each joystick device type under the key with the registry path **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\MediaProperties\\PrivateProperties\\Joystick\\OEM**. The data stored under this OEM-specific key is initialized when the device is first installed and then used for reference purposes only. In addition to the values defined for existing joystick devices, two new optional generic values and a set of force feedback specific values have been defined.

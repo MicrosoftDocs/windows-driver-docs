@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Printer Interface DLL
 
 
-
+## <a href="" id="ddk-printer-interface-dll-gg"></a>
 
 
 This section provides the following topics:

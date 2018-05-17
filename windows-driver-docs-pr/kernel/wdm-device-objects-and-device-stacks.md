@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # WDM Device Objects and Device Stacks
 
 
-
+## <a href="" id="ddk-wdm-device-objects-and-device-stacks-kg"></a>
 
 
 This section describes the types of devices objects that are defined by WDM, and explains their arrangement in device stacks. It contains the following topics:

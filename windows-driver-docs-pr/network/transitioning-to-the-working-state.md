@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Transitioning to the Working State
 
 
-
+## <a href="" id="ddk-transitioning-to-the-working-state-ng"></a>
 
 
 NDIS initiates the transition to the working power state (D0) by sending the miniport driver an [OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request that specifies state D0. The miniport driver must then perform any device-dependent operations needed to restore the network adapter to a working state. The miniport driver must also restore any hardware context--packet filters, multicast addresses, the current media access control (MAC) address, or wake-up patterns--that the network adapter might have lost.

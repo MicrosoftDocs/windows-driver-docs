@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Device Mutex in AVStream
 
 
-
+## <a href="" id="ddk-device-mutex-in-avstream-ksg"></a>
 
 
 Use the device mutex to synchronize objects in the hierarchy from the device down to the filters. Each AVStream device has a single associated device mutex. Creation and destruction of both filter factories and filters are synchronized with this mutex. Certain Plug and Play and power management operations are also synchronized with this mutex. The minidriver focuses on two main issues with regard to the device mutex.

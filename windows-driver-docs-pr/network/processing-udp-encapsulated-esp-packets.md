@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-
+## <a href="" id="ddk-processing-udp-encapsulated-esp-packets-ng"></a>
 
 
 When a NIC receives a UDP-encapsulated packet on port 4500, it checks whether the packet is an IKE (control) packet or an ESP (data) packet. For a description of the UDP encapsulation types for IKE and ESP packets, see [UDP-ESP Encapsulation Types](udp-esp-encapsulation-types.md).

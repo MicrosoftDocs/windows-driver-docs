@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # NetworkProvider and PrintProvider Sections in a Network INF File
 
 
-
+## <a href="" id="ddk-networkprovider-and-printprovider-sections-ng"></a>
 
 
 **NetClient** components are considered to be network providers because they provide network services to user applications. The Microsoft Client for Networks and the NetWare Client are examples of **NetClient** components.

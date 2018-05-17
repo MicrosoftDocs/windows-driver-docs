@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Transfer Contexts
 
 
-
+## <a href="" id="ddk-transfer-contexts-si"></a>
 
 
 A transfer context is a collection of information that describes a data transfer from the minidriver to an application. Information about the transfer is stored in a [**MINIDRV\_TRANSFER\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff545250) structure. A transfer context includes members that contain information about the image that is to be transferred: its size, resolution, color depth (number of bytes per pixel), type of compression, and image format. The WIA service obtains these values from the relevant WIA item properties before it calls the [**IWiaMiniDrv::drvAcquireItemData**](https://msdn.microsoft.com/library/windows/hardware/ff543956) method. The values are then stored in a MINIDRV\_TRANSFER\_CONTEXT structure and handed down to the driver for convenient access. This process eliminates the need for the driver to use the WIA service library routines to read these values from the application item context (that is, the WIA service context).

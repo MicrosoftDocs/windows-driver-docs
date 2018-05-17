@@ -27,7 +27,7 @@ ms.technology: windows-devices
 # AV/C Connection Scenarios
 
 
-
+## <a href="" id="ddk-connection-and-compatibility-management-enhancements-to-avc-sys-ks"></a>
 
 
 Before Windows Vista, the Connection and Compatibility Management (CCM) protocol in *Avc.sys* supported a single connection scenario, in which the computer acted as a controller for an external AV/C device to initiate data streaming from the device. For example, to begin streaming, the connection management in *Avc.sys* established a connection between a subunit on the device and the isochronous output plug of the device unit by using the connect and disconnect unit commands ([**AVC\_FUNCTION\_ACQUIRE**](https://msdn.microsoft.com/library/windows/hardware/ff554148) and [**AVC\_FUNCTION\_RELEASE**](https://msdn.microsoft.com/library/windows/hardware/ff554169), respectively). For more information about the AV/C specification and the CCM protocol, see the [1394 Trade Association](http://go.microsoft.com/fwlink/p/?linkid=518448) website.

@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Creating INF Files for Multiple Platforms and Operating Systems
 
 
-
+## <a href="" id="ddk-creating-inf-files-for-multiple-platforms-and-operating-systems-dg"></a>
 
 
 By using system-defined platform extensions to [INF file sections and directives](inf-file-sections-and-directives.md), you can create a single INF file for cross-platform installations. The extensions enable you to create *decorated* section names, which specify which sections and directives are relevant to each target platform and operating system. For example, you can create an INF file that installs a device only on x64-based systems, only on Itanium-based systems, only on x86-based systems, or on all systems that are supported by Windows 2000 and later versions of Windows.

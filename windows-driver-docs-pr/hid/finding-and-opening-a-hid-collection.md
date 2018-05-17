@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Finding and Opening a HID Collection
 
 
-
+## <a href="" id="ddk-finding-and-opening-a-hid-collection-kg"></a>
 
 
 This section describes how user-mode applications and kernel-mode drivers find and open a top-level [HID collection](hid-collections.md).

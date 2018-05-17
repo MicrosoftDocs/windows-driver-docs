@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Standard Variables
 
 
-
+## <a href="" id="ddk-standard-variables-gg"></a>
 
 
 The GPD language defines a set of standard variables that can be referenced within command strings, using the [command string format](command-string-format.md). The Unidrv driver assigns values to these variables. From the point of view of a GPD file, the variables are read-only.

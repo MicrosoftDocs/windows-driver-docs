@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Preparsed Data
 
 
-
+## <a href="" id="ddk-preparsed-data-kg"></a>
 
 
 *Preparsed data* is report descriptor data associated with a [top-level collection](top-level-collections.md). User-mode applications or kernel-mode drivers use preparsed data to extract information about specific HID controls without having to obtain and interpret a device's entire report descriptor. A user-mode application obtains a collection's preparsed data by using [**HidD\_GetPreparsedData**](https://msdn.microsoft.com/library/windows/hardware/ff539679) and a kernel-mode driver uses an [**IOCTL\_HID\_GET\_COLLECTION\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff541089) request.

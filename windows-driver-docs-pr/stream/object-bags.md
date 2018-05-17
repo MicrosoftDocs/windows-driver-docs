@@ -22,7 +22,7 @@ ms.technology: windows-devices
 # Object Bags
 
 
-
+## <a href="" id="ddk-object-bags-ksg"></a>
 
 
 AVStream manages a construct referred to as an object bag for each AVStream object visible to the minidriver. An object bag is a generic container for holding dynamically allocated memory associated with a given object.

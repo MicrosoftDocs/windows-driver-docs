@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # AddDevice Routines in Function or Filter Drivers
 
 
-
+## <a href="" id="ddk-adddevice-routines-in-function-or-filter-drivers-kg"></a>
 
 
 An [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine in a function or filter driver should take the following steps:

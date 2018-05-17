@@ -9,7 +9,7 @@ keywords: ["force feedback drivers WDK HID , user-mode functions", "user-mode fu
 # User-Mode Functions
 
 
-
+## <a href="" id="ddk-user-mode-functions-di"></a>
 
 
 DirectInput creates an instance of the force-feedback effect driver by creating the object named by the CLSID that is stored in the **OEMForceFeedback** registry subkey of the joystick type subkey.

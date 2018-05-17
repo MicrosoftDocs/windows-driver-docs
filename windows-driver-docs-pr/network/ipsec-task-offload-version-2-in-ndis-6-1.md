@@ -16,7 +16,7 @@ ms.technology: windows-devices
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-
+## <a href="" id="ddk-ipsec-task-offload-version-2-in-ndis-6-1-ng"></a>
 
 
 IPsec task offload provides offloading services for IPsec network data processing to IPsec offload-capable network interface cards (NICs). NDIS 6.1 and later support IPsec offload version 2 (IPsecOV2). IPsecOV2 extends support for additional crypto-algorithms, IPv6, and co-existence with large send offload (LSO).

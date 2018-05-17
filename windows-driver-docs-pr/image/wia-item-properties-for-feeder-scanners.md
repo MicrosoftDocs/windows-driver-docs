@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Item Properties for Feeder Scanners
 
 
-
+## <a href="" id="ddk-wia-item-properties-for-feeder-scanners-si"></a>
 
 
 This section lists the required and optional WIA item properties for a scanner feeder item and scanner feeder child items (front and back page items). For a complete list of WIA common, camera-specific, and scanner-specific properties, see [WIA Properties](https://msdn.microsoft.com/library/windows/hardware/ff552739).

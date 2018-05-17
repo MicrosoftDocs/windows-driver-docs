@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Handling Installable Features and Options
 
 
-
+## <a href="" id="ddk-handling-installable-features-and-options-gg"></a>
 
 
 Some of a printer's features or options might be installable. For example, a printer could accept an optional envelope feeder, which might or might not be currently attached. This envelope feeder must be described within a GPD file in two ways:

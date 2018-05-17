@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Optional WIA Item Properties for Feeder Scanners
 
 
-
+## <a href="" id="ddk-optional-wia-item-properties-for-feeder-scanners-si"></a>
 
 
 The WIA feeder scanner item can optionally support the following WIA properties:

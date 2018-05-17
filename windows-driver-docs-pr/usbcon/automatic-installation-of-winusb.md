@@ -34,7 +34,7 @@ Before Windows 8, to load Winusb.sys as the function driver, you needed to prov
 
 In Windows 8, the in-box Winusb.inf file has been updated to enable Windows to automatically match the INF with a WinUSB device.
 
-## WinUSB device installation by using the in-box Winusb.inf
+## <a href="" id="winusb-device-installation-by-using-the-in-box-winusb-inf"></a>WinUSB device installation by using the in-box Winusb.inf
 
 
 In Windows 8, the in-box Winusb.inf file has been updated. The INF includes an install section that references a compatible ID called "USB\\MS\_COMP\_WINUSB".

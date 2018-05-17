@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Sample Print Provider
 
 
-
+## <a href="" id="ddk-sample-print-provider-gg"></a>
 
 
 **Warning**  

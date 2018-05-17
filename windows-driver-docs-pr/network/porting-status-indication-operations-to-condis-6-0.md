@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Porting Status Indication Operations to CoNDIS 6.0
 
 
-
+## <a href="" id="ddk-condis-status-indication-operations-to-condis-6-0-ng"></a>
 
 
 The CoNDIS 6.0 status indication functions are similar to the NDIS 5. *x* status indication functions. The primary difference between the CoNDIS 6.0 interfaces and the NDIS 5. *x* interface is that the NDIS 6.0 functions incorporate the [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure.

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Specifying Device Characteristics
 
 
-
+## <a href="" id="ddk-specifying-device-characteristics-kg"></a>
 
 
 Each device object can have one or more device characteristics. Device characteristics are stored as flags in the **Characteristics** member of the device object's [**DEVICE\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff543147) structure.

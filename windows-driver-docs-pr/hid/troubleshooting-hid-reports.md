@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Troubleshooting HID Reports
 
 
-
+## <a href="" id="ddk-troubleshooting-hid-reports-kg"></a>
 
 
 This section describes the following most common problems that user-mode applications and kernel-mode drivers might encounter when attempting to extract or set [HID usages](hid-usages.md):

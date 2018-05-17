@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
  
 
-
+## <a href="" id="ddk-netdma-provider-services-ng"></a>
 
 
 The NetDMA interface requires *ProviderXxx* functions that the NetDMA provider driver supplies to service NetDMA requests. The *ProviderXxx* function entry points are defined in the [**NET\_DMA\_PROVIDER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff568738) structure that the NetDMA provider driver passes to the [**NetDmaRegisterProvider**](https://msdn.microsoft.com/library/windows/hardware/ff568336) function.

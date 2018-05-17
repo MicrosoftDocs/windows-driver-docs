@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # ASP Variables for Print Web Pages
 
 
-
+## <a href="" id="ddk-asp-variables-for-print-web-pages-gg"></a>
 
 
 Microsoft provides a set of ASP session variables for use by customized print Web pages. The following table lists the session variables. Customized ASP files must not modify these variables. As indicated, some variables are only valid if Microsoft's TCP/IP port monitor is being used for the printer.

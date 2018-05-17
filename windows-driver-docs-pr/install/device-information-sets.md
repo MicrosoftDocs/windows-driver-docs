@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Device Information Sets
 
 
-
+## <a href="" id="ddk-device-information-sets-dg"></a>
 
 
 In user mode, devices that belong to either [device setup classes](device-setup-classes.md) or [device interface classes](device-interface-classes.md) are managed by using *device information elements* and *device information sets.* A device information set consists of device information elements for all the devices that belong to some device setup class or device interface class.

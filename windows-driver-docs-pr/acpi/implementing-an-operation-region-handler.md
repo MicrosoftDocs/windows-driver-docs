@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Implementing an Operation Region Handler
 
 
-
+## <a href="" id="ddk-implementing-an-operation-region-handler-kg"></a>
 
 
 The driver must provide an operation region handler, which is a [**PACPI\_OP\_REGION\_HANDLER**](https://msdn.microsoft.com/library/windows/hardware/ff536153)-typed callback. The ACPI driver calls the operation handler to access the data fields in the driver's operation region. The combined operation of the function driver and the ACPI BIOS is vendor-defined and device-specific. In general, the function driver and the ACPI BIOS access indexes in an operation region that result in device-specific operations and return whatever information is appropriate.

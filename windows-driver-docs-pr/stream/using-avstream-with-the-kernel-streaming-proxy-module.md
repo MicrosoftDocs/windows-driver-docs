@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Using AVStream with the Kernel Streaming Proxy Module
 
 
-
+## <a href="" id="ddk-using-avstream-with-the-kernel-streaming-proxy-module-ksg"></a>
 
 
 Kernel-mode filters often are connected in user mode through the [Kernel Streaming Proxy](https://msdn.microsoft.com/library/windows/hardware/ff560877). This proxy makes a kernel-mode filter appear to user mode as a DirectShow filter.

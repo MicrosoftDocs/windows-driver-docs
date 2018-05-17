@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Identifiers for PCMCIA Devices
 
 
-
+## <a href="" id="ddk-identifiers-for-pcmcia-devices-dg"></a>
 
 
 For Personal Computer Memory Card International Association (PCMCIA) devices, the device ID can take several different forms. For devices that are not multifunctional, the device identifier is formatted as follows:

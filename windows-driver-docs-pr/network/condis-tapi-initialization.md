@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # CoNDIS TAPI Initialization
 
 
-
+## <a href="" id="ddk-condis-tapi-initialization-ng"></a>
 
 
 This section discusses how a CoNDIS WAN miniport driver enumerates its TAPI capabilities for applications. These TAPI capabilities consist of:

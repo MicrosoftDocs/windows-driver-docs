@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Calling IoCallDriver versus Calling PoCallDriver
 
 
-
+## <a href="" id="ddk-using-pocalldriver-kg"></a>
 
 
 Beginning with Windows Vista, a driver should call [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) instead of [**PoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff559654), to pass power IRPs to the next-lower driver. In Windows Server 2003, Windows XP, and Windows 2000, a driver must call **PoCallDriver**, not **IoCallDriver**, to pass power IRPs to the next-lower driver. Note, however, that drivers that use the same code to run both in Windows Vista and in earlier Windows versions, must call **PoCallDriver**, not **IoCallDriver**.

@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Splitting Frames at the TCP Payload
 
 
-
+## <a href="" id="ddk-splitting-frames-at-the-tcp-payload-ng"></a>
 
 
 NDIS miniport adapters that support header-data split must support splitting frames at the upper-layer-protocol header for TCP frames. However, if the TCP header does not contain any TCP options, the NIC should split the frame at the beginning of the TCP payload.

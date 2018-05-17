@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Camera Minidriver
 
 
-
+## <a href="" id="ddk-wia-camera-minidriver-si"></a>
 
 
 A minidriver is a full WIA minidriver as discussed in [Creating a WIA Minidriver](creating-a-wia-minidriver.md).

@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Registry Settings for a Plug and Play Serial Device
 
 
-
+## <a href="" id="ddk-registry-settings-for-a-plug-and-play-serial-device-kg"></a>
 
 
 This topic describes the registry settings that Serial uses as a function driver for a Plug and Play serial device. Serial also uses these settings as a lower-level device filter driver for a device that requires a 16550 UART-compatible interface.

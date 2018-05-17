@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Deleting a Port
 
 
-
+## <a href="" id="ddk-deleting-a-port-gg"></a>
 
 
 Deleting a port consists of removing the port's stored name and user-modifiable configuration information from the port monitor server DLL's local storage or from the registry.

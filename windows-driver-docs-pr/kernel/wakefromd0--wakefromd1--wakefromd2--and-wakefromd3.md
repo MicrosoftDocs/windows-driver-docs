@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3
 
 
-
+## <a href="" id="ddk-wakefromd0-wakefromd1-wakefromd2-and-wakefromd3-kg"></a>
 
 
 Each of these [**DEVICE\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff543095) structure members indicates whether the device can awaken in response to an external signal that arrives when the device is in the specified state.

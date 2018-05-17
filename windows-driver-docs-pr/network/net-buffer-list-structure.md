@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # NET\_BUFFER\_LIST Structure
 
 
-
+## <a href="" id="ddk-net-buffer-list-structure-ng"></a>
 
 
 A [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure packages a linked list of NET\_BUFFER structures.

@@ -24,7 +24,7 @@ This topic describes how NDIS and overlying drivers determine the NIC switch cap
 
 For more information on NIC switches, see [NIC Switches](nic-switches.md).
 
-## Reporting NIC Switch Capabilities during *MiniportInitializeEx*
+## <a href="" id="report"></a>Reporting NIC Switch Capabilities during *MiniportInitializeEx*
 
 
 When NDIS calls the miniport driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function, the driver provides the following NIC switch capabilities:
@@ -67,7 +67,7 @@ When NDIS calls the miniport driver's [*MiniportInitializeEx*](https://msdn.micr
 
 For more information about the adapter initialization process, see [Initializing a Miniport Adapter](initializing-a-miniport-adapter.md).
 
-## Querying NIC Switch Capabilities by Overlying Drivers
+## <a href="" id="query"></a>Querying NIC Switch Capabilities by Overlying Drivers
 
 
 NDIS passes the network adapter's currently enabled NIC switch capabilities to overlying drivers that bind to the network adapter in the following way:

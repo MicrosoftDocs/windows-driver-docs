@@ -23,7 +23,7 @@ The check signature protocol enables flashing tools to validate the signature on
 
  
 
-## EFI\_CHECKSIG\_PROTOCOL
+## <a href="" id="efi-checksig-protocol"></a>EFI\_CHECKSIG\_PROTOCOL
 
 
 This section provides a detailed description of the **EFI\_CHECKSIG\_PROTOCOL**.

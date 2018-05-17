@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # CoNDIS WAN Is More Flexible
 
 
-
+## <a href="" id="ddk-condis-wan-is-more-flexible-ng"></a>
 
 
 In the CoNDIS model, major functions (such as call management and data transfer) are compartmentalized into discrete components or subcomponents. This organization enables you to use system-supplied and third-party components and update functionality more easily.

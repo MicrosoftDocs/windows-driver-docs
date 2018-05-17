@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Filter Driver Services
 
 
-
+## <a href="" id="ddk-filter-driver-services-ng"></a>
 
 
 Filter drivers can provide the following services:

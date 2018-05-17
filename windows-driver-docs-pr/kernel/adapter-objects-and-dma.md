@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Adapter Objects and DMA
 
 
-
+## <a href="" id="ddk-adapter-objects-and-dma-kg"></a>
 
 
 This section describes adapter objects and [*AdapterControl*](https://msdn.microsoft.com/library/windows/hardware/ff540504) routines, and how they are used to control DMA operations. The section contains the following topics:

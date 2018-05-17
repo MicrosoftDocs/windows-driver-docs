@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # WMI Property Sheets
 
 
-
+## <a href="" id="ddk-wmi-property-sheets-kg"></a>
 
 
 A user-friendly driver allows users to control its settings through its **Device Manager** property sheet. See [Using Device Manager](https://msdn.microsoft.com/library/windows/hardware/ff553570) for a description of Device Manager.

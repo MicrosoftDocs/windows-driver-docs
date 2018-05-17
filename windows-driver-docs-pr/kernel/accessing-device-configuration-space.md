@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Accessing Device Configuration Space
 
 
-
+## <a href="" id="ddk-accessing-device-configuration-space-kg"></a>
 
 
 Some buses provide a way of accessing a special configuration space for each device attached to the bus. This section explains how a driver can get information from a target device's configuration space, provided the driver is loaded in the same driver stack as the driver for the target device, either as a function driver or a filter driver.

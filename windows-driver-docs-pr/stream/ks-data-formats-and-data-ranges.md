@@ -26,7 +26,7 @@ ms.technology: windows-devices
 # KS Data Formats and Data Ranges
 
 
-
+## <a href="" id="ddk-ks-data-formats-and-data-ranges-ksg"></a>
 
 
 KS pins specify data formats and ranges using the [**KSDATAFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff561656) and [**KSDATARANGE**](https://msdn.microsoft.com/library/windows/hardware/ff561658) structures. A data format specifies a single attribute of a data stream, for example an audio sampling size of 16 bits. A data range specifies multiple formats, for example an audio sampling range of 16-24 bits.

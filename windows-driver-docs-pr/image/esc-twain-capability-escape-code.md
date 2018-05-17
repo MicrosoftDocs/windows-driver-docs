@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # ESC\_TWAIN\_CAPABILITY Escape Code
 
 
-
+## <a href="" id="ddk-esc-twain-capability-escape-code-si"></a>
 
 
 To carry out a capability operation on a private TWAIN capability, a TWAIN application notifies the TWAIN compatibility layer, which then calls the WIA driver's [**IStiUSD::Escape**](https://msdn.microsoft.com/library/windows/hardware/ff543815) method, passing the ESC\_TWAIN\_CAPABILITY escape code. The pseudocode in the following example demonstrates how the **Escape** method should be implemented, and how it should respond to the escape code.

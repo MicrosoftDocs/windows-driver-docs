@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Using Default PCL XL Fonts
 
 
-
+## <a href="" id="ddk-using-default-pcl-xl-fonts-gg"></a>
 
 
 If you want to include the standard PCL XL fonts, you should include the standard resource DLL, *pclxl.dll*, that is part of the cab file. The following line, which should appear in the GPD, uses the \*ResourceDLL attribute to specify the resource DLL to be used.

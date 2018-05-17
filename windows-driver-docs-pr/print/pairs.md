@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Pairs
 
 
-
+## <a href="" id="ddk-pairs-gg"></a>
 
 
 To assign a pair of values to an attribute, use the PAIR keyword. The format is:

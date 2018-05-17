@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Miniport Adapter Direct OID Requests
 
 
-
+## <a href="" id="ddk-miniport-adapter-direct-oid-requests-ng"></a>
 
 
 To support the direct OID request path, miniport drivers provide *MiniportXxx* function entry points in the [**NDIS\_MINIPORT\_DRIVER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff565958) structure and NDIS provides **NdisM*Xxx*** functions for miniport drivers.

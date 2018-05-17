@@ -16,7 +16,7 @@ ms.technology: windows-devices
 
 To allow driver developers to write device drivers that are source-code compatible across all Microsoft Windows operating systems, the *Windows Driver Model* (WDM) was introduced. Kernel-mode drivers that follow WDM rules are called *WDM drivers*.
 
-
+## <a href="" id="ddk-introduction-to-wdm-kg"></a>
 
 
 All WDM drivers must do the following:

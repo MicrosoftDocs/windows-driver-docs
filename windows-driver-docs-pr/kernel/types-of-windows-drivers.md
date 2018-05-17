@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Types of Windows Drivers
 
 
-
+## <a href="" id="ddk-types-of-windows-drivers-kg"></a>
 
 
 There are two basic types of Microsoft Windows drivers:

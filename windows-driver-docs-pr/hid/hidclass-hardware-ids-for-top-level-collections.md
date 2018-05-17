@@ -31,7 +31,7 @@ This section specifies the hardware IDs that the HID class driver generates for 
 
 Vendors must use the formats that are designated as *vendor hardware ID formats* to identify top-level collections. All other [*device ID*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-id) formats are reserved for internal use only.
 
-
+## <a href="" id="ddk-hidclass-hardware-ids-for-top-level-collections-kg"></a>
 
 
 The hardware IDs that the HID class driver generates for a devnode depends on the following:

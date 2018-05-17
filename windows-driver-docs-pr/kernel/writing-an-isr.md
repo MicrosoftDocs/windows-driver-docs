@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Writing an ISR
 
 
-
+## <a href="" id="ddk-writing-an-isr-kg"></a>
 
 
 Drivers for physical devices that generate interrupts must have at least one interrupt service routine (ISR). The ISR must do whatever is appropriate to the device to dismiss the interrupt, possibly including stopping the device from interrupting. Then, it should do only what is necessary to save state and queue a DPC to finish the I/O operation at a lower priority (IRQL) than that at which the ISR executes.

@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Configuration of Plug and Play Serial Device Connected to an RS-232 Port
 
 
-
+## <a href="" id="ddk-configuration-of-plug-and-play-serial-device-connected-to-an-rs-23"></a>
 
 
 This section describes the typical configuration of hardware, drivers, and device stacks for Plug and Play serial devices and legacy pointer devices that are connected to an RS-232 port. This configuration can be used to support serial devices, such as mouse devices, pointing devices, graphic tablets, modems, and digital cameras.

@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Adding Image Format Support
 
 
-
+## <a href="" id="ddk-adding-image-format-support-si"></a>
 
 
 A WIA minidriver reports image formats to the WIA service in the [**IWiaMiniDrv::drvGetWiaFormatInfo**](https://msdn.microsoft.com/library/windows/hardware/ff543986) method.

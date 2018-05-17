@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Serial Device Control Requests
 
 
-
+## <a href="" id="ddk-serial-device-control-requests-kg"></a>
 
 
 Serial provides device control requests to control the operation of serial devices that support a 16550 UART-compatible interface.

@@ -15,7 +15,7 @@ keywords:
 # OID\_PNP\_WAKE\_UP\_PATTERN\_LIST
 
 
-
+## <a href="" id="ddk-oid-pnp-wake-up-pattern-list-nr"></a>
 
 
 The OID\_PNP\_WAKE\_UP\_PATTERN\_LIST OID is used by a protocol to query a list of the wake-up patterns currently set for the miniport driver's network adapter. A protocol specifies a wake-up pattern with [OID\_PNP\_ADD\_WAKE\_UP\_PATTERN](oid-pnp-add-wake-up-pattern.md).

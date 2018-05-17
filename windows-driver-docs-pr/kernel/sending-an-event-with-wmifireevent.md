@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Sending an Event with WmiFireEvent
 
 
-
+## <a href="" id="ddk-sending-an-event-with-wmifireevent-kg"></a>
 
 
 A driver can call [**WmiFireEvent**](https://msdn.microsoft.com/library/windows/hardware/ff565807) to send events that do not use dynamic instance names, and that base static instance names on a single base name string or the device instance ID of a PDO.

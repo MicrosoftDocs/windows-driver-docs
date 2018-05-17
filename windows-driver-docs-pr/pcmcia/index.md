@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # PCMCIA Bus Driver Design Guide
 
 
-
+## <a href="" id="ddk-pcmcia-design-guide-kg"></a>
 
 
 This section includes:

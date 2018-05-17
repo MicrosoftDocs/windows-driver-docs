@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # USBSCN9X Kernel-Mode Sample Driver
 
 
-
+## <a href="" id="ddk-usbscn9x-kernel-mode-sample-driver-si"></a>
 
 
 The *usbscn9x* directory in the Windows DDK contains a sample that shows how to write a WIA kernel-mode USB class driver to support scan for composite USB devices on Windows 98, Windows 98 SE and Windows Me. This sample should not be used for noncomposite USB devices, nor should it be used in Windows 2000, Windows XP and later operating system versions.

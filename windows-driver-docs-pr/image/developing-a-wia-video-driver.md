@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Developing a WIA Video Driver
 
 
-
+## <a href="" id="ddk-developing-a-wia-video-driver-si"></a>
 
 
 WIA supports video and video cameras. A video camera that is going to work with WIA should use the video drivers that ship with Windows Me, Windows XP and later operating system versions, or develop DirectShow video drivers. WIA relies on DirectShow to get still images from a video stream.

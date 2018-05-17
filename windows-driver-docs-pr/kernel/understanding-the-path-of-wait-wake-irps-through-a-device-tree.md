@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Understanding the Path of Wait/Wake IRPs through a Device Tree
 
 
-
+## <a href="" id="ddk-understanding-the-path-of-wait-wake-irps-through-a-device-tree-kg"></a>
 
 
 Within a single device stack, the power policy owner sends a wait/wake IRP and all drivers handle the wait/wake IRP, as outlined in [Overview of Wait/Wake Operation](overview-of-wait-wake-operation.md) and detailed in [Sending a Wait/Wake IRP](sending-a-wait-wake-irp.md) and [Receiving a Wait/Wake IRP](receiving-a-wait-wake-irp.md), respectively.

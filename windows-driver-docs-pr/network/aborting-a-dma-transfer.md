@@ -23,7 +23,7 @@ ms.technology: windows-devices
 
  
 
-
+## <a href="" id="ddk-aborting-a-dma-transfer-ng"></a>
 
 
 The NetDMA interface can call a NetDMA provider driver's [**ProviderAbortDma**](https://msdn.microsoft.com/library/windows/hardware/ff570392) function, if any, to abort all dynamic memory access (DMA) transfers that have been scheduled on a DMA channel.

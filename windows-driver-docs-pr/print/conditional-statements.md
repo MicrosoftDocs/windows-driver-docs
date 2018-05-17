@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Conditional Statements
 
 
-
+## <a href="" id="ddk-conditional-statements-gg"></a>
 
 
 The GPD language provides C-like conditional statements that allow you to describe dependencies that some printer attributes can have on a printer's configuration. For example, the margins and cursor origin for a page might depend on the page's orientation. The **\*Switch** and **\*Case** statements allow you to express such dependencies. The format of these statements is as follows:

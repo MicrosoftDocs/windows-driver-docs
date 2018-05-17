@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Virtual Machine Queue Architecture
 
 
-
+## <a href="" id="ddk-virtual-machine-queue-architecture-nr"></a>
 
 
 The NDIS virtual machine queue (VMQ) architecture provides advantages for virtualization such as:

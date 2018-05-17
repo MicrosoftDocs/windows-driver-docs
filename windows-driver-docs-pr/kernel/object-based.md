@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Object-Based
 
 
-
+## <a href="" id="ddk-object-based-kg"></a>
 
 
 The Microsoft Windows NT-based operating system is object-based. Various components in the executive define one or more object types. Each component exports kernel-mode support routines that manipulate instances of its object types. No component can directly access another component's objects. To use another component's objects, a component must call the exported support routines.

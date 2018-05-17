@@ -9,7 +9,7 @@ keywords: ["current registry settings WDK joysticks"]
 # Current Settings
 
 
-
+## <a href="" id="ddk-current-settings-di"></a>
 
 
 There are two parts to the current registry settings: a value to store, which is a replacement for the standard polling, and a key under which the capabilities, calibrated values, and minidriver data are stored.

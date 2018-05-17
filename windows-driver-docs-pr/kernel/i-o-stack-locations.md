@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # I/O Stack Locations
 
 
-
+## <a href="" id="ddk-i-o-stack-locations-kg"></a>
 
 
 The I/O manager gives each driver in a chain of layered drivers an I/O stack location for every IRP that it sets up. Each I/O stack location consists of an [**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659) structure.

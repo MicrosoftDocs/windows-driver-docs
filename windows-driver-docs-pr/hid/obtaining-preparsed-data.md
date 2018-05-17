@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Obtaining Preparsed Data
 
 
-
+## <a href="" id="ddk-obtaining-preparsed-data-kg"></a>
 
 
 This section describes how user-mode applications and kernel-mode drivers obtain a HID collection's [preparsed data](preparsed-data.md), which is an opaque structure that describes a collection's HID reports.

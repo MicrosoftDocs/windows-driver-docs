@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Introduction to Plug and Play
 
 
-
+## <a href="" id="ddk-introduction-to-plug-and-play-kg"></a>
 
 
 Plug and Play (PnP) is a combination of hardware and software support that enables a computer system to recognize and adapt to hardware configuration changes with little or no intervention by a user. A user can add devices to, and remove devices from, a computer system without having to do awkward and confusing manual configuration, and without having knowledge of intricate computer hardware. For example, a user can dock a portable computer and use the docking station keyboard, mouse, and monitor without making manual configuration changes.

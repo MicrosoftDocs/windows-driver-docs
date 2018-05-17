@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Specifying Driver Load Order
 
 
-
+## <a href="" id="ddk-specifying-driver-load-order-dg"></a>
 
 
 For most devices, the physical hierarchy of the devices on a computer determines the order in which Windows and the PnP manager load drivers. Windows and the PnP manager configure devices starting with the system root device, and then they configure the child devices of the root device (for example, a PCI adapter), the children of those devices, and so on. The PnP manager loads the drivers for each device as the device is configured, if the drivers were not previously loaded for another device.

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # MiniportXxx Functions
 
 
-
+## <a href="" id="ddk-miniportxxx-functions-ng"></a>
 
 
 The typical miniport driver uses a small number of functions to communicate through NDIS with the upper layers and hardware. Not all of these functions are required. For more information about which functions are optional, which are required, and why, see [Initializing a Miniport Driver](initializing-a-miniport-driver.md).

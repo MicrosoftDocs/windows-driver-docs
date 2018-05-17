@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Protocol Driver Reset Operations
 
 
-
+## <a href="" id="ddk-protocol-driver-reset-operations-ng"></a>
 
 
 Protocol drivers cannot initiate a reset operation in NDIS 6.0 and later versions.

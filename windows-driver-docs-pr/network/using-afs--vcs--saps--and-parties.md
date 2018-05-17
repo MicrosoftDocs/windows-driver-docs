@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Using AFs, VCs, SAPs, and Parties
 
 
-
+## <a href="" id="ddk-using-afs-vcs-saps-and-parties-ng"></a>
 
 
 Connection-oriented drivers create and use entities including address families (AFs), virtual connections (VCs), service access points (SAPs), and parties.

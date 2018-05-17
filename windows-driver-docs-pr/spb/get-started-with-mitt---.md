@@ -109,7 +109,7 @@ If MuttUtil returns an error while updating or installing the firmware,
 -   Check whether the power switch on the MITT board is on. If the board is powered, unplug and plug the USB cable from the board and run the command again.
 -   If the commands succeed but the seven segment does not show the firmware version, restart the MITT board by pressing the reset button or unplugging and plugging the USB and power cables. If the seven segment still does not show the version, run the command again.
 
-## Known issues and workaround
+## <a href="" id="known-issues-and-workaround-"></a>Known issues and workaround
 
 
 -   Connecting MITT directly to xHCI root hub on host computer is not recommended. Test may hang randomly with that setup. As a workaround, add a powered USB 2.0 hub between the xHCI port and MITT board.

@@ -24,7 +24,7 @@ ms.technology: windows-devices
 # Connection-Oriented Environment
 
 
-
+## <a href="" id="ddk-connection-oriented-environment-ng"></a>
 
 
 NDIS supports the following connection-oriented drivers:

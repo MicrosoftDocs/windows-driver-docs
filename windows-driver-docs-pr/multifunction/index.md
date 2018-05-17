@@ -23,7 +23,7 @@ ms.technology: windows-devices
 # Multifunction device driver design guide
 
 
-
+## <a href="" id="ddk-supporting-multifunction-devices-dg"></a>
 
 
 A *multifunction device* occupies one location on its parent bus but contains more than one function. Combination printer/scanner/fax devices and modem/network cards are common multifunction devices.

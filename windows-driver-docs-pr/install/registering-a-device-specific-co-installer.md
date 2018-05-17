@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Registering a Device-Specific Co-installer
 
 
-
+## <a href="" id="ddk-registering-a-device-specific-co-installer-dg"></a>
 
 
 To register a device-specific co-installer, add the following sections to the device's INF file:

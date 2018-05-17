@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Summary of Changes Required to Port an Intermediate Driver to NDIS 6.0
 
 
-
+## <a href="" id="ddk-summary-of-changes-required-to-port-an-intermediate-driver-to-ndis"></a>
 
 
 This topic summarizes the changes that are required to port an NDIS 5.*x* intermediate driver to NDIS 6.0. Porting earlier drivers is similar to porting NDIS 5.*x* drivers.

@@ -24,7 +24,7 @@ ms.technology: windows-devices
 
 The topics in this section describe how a Windows Driver Frameworks (WDF) driver creates framework interrupt objects to service hardware interrupts, and how your driver synchronizes access to interrupt data buffers.
 
-
+## <a href="" id="ddk-handling-hardware-interrupts-df"></a>
 
 
 ## In this section

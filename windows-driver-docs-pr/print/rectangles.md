@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Rectangles
 
 
-
+## <a href="" id="ddk-rectangles-gg"></a>
 
 
 To describe a rectangle in a GPD file, use the RECT keyword. The format is:

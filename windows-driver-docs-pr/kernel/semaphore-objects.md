@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Semaphore Objects
 
 
-
+## <a href="" id="ddk-semaphore-objects-kg"></a>
 
 
 Any driver can use a semaphore object to synchronize operations between its driver-created threads and other driver routines. For example, a driver-dedicated thread might put itself into a wait state when there are no outstanding I/O requests for the driver, and the driver's dispatch routines might set the semaphore to the Signaled state just after they queue an IRP.

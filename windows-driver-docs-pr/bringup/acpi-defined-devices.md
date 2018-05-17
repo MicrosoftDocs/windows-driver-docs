@@ -17,12 +17,12 @@ The [ACPI 5.0 specification](http://www.uefi.org/specifications) defines a numbe
 
 For more information, see section 9, "ACPI-Defined Devices and Device-Specific Objects", in the ACPI 5.0 specification.
 
-## Lid device
+## <a href="" id="lid"></a>Lid device
 
 
 This device describes and reports the status of a clamshell device's lid. For more information, see section 9.4, "Control Method Lid Device", in the [ACPI 5.0 specification](http://www.uefi.org/specifications). Lid device implementations use the GPIO-signaled ACPI event mechanism, which is described in section 5.6.5, "GPIO-Signaled ACPI Events", in the ACPI 5.0 specification.
 
-## Control method battery device
+## <a href="" id="battery"></a>Control method battery device
 
 
 This device describes, configures, and reports the status of the platform battery. For more information, see section 10.2, "Control Method Batteries", in the [ACPI 5.0 specification](http://www.uefi.org/specifications). Control Method Battery implementations on SoC platforms use the GPIO-signaled ACPI event mechanism, which is described in section 5.6.5, "GPIO-Signaled ACPI Events", in the ACPI 5.0 specification. Access to the battery and charging hardware is done by methods that operate through GPIO or SPB OpRegions, which are described in sections 5.5.2.4.4 and 5.5.2.4.5 of the ACPI 5.0 specification.
@@ -36,7 +36,7 @@ To support the passive thermal management of the battery by the platform, Micros
 -   [Battery Device-Specific Method](battery-device-specific-method.md)
 -   [Thermal zones](#thermal)
 
-## Control method time and alarm device
+## <a href="" id="time"></a>Control method time and alarm device
 
 
 ACPI 5.0 defines the operation and definition of the optional control method-based Time and Alarm device, which provides a hardware-independent abstraction and a more robust alternative to the Real Time Clock (RTC). For more information, see section 9.15, "PC/AT RTC/CMOS Devices", and section 9.18, "Time and Alarm Device", in the [ACPI 5.0 specification](http://www.uefi.org/specifications). If the standard PC RTC either is not implemented or is used as the RTC hardware backing the Time and Alarm device, the "CMOS RTC Not Present" bit of the FADT's Boot Architecture flags field must be set.
@@ -45,7 +45,7 @@ The time capabilities of the Time and Alarm device are required for platforms th
 
 The Time and Alarm device must be driven from the same time source as UEFI time services.
 
-## Thermal zones
+## <a href="" id="thermal"></a>Thermal zones
 
 
 To support ACPI thermal management, the system designer logically partitions a hardware platform into one or more physical regions called thermal zones. Sensor devices track the temperature in each thermal zone. When a thermal zone starts to overheat, the operating system can take actions to cool down the devices in the zone. These actions can be categorized as either passive cooling or active cooling.

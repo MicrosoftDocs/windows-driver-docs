@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Handling interrupts for NDIS miniport drivers
 
 
-
+## <a href="" id="ddk-handling-interrupts-ng"></a>
 
 
 NDIS calls the [*MiniportInterrupt*](https://msdn.microsoft.com/library/windows/hardware/ff559395) function when a NIC, or another device that shares the interrupt with the NIC, generates an interrupt.

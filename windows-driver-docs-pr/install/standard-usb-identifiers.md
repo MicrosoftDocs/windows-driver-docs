@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Standard USB Identifiers
 
 
-
+## <a href="" id="ddk-standard-usb-identifiers-dg"></a>
 
 
 <a href="" id="the-set-of-identifiers-generated-for-usb-devices-depends-on-whether-the-device-is-a-single-interface-device-or-a-multiple-interface-device-"></a>The set of identifiers generated for USB devices depends on whether the device is a single-interface device or a multiple-interface device.  

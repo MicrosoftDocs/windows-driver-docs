@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Introduction to Parallel Ports and Devices
 
 
-
+## <a href="" id="ddk-introduction-to-parallel-ports-and-devices-kg"></a>
 
 
 This section describes the following topics about the support that Microsoft Windows provides for parallel ports and devices:

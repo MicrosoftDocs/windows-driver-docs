@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Pscript Support for Stapling
 
 
-
+## <a href="" id="ddk-pscript-support-for-stapling-gg"></a>
 
 
 The Microsoft Pscript driver supports the following standard stapling features in [*PPD*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-postscript-printer-description--ppd-) files.

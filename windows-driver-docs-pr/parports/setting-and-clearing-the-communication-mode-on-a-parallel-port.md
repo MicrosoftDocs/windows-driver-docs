@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Setting and Clearing the Communication Mode on a Parallel Port
 
 
-
+## <a href="" id="ddk-setting-and-clearing-the-communication-mode-on-a-parallel-port-kg"></a>
 
 
 A client sets the communication mode on a parallel port by using the following internal device control requests:

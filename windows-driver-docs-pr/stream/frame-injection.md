@@ -23,7 +23,7 @@ ms.technology: windows-devices
 # Frame Injection
 
 
-
+## <a href="" id="ddk-frame-injection-ksg"></a>
 
 
 By default in AVStream, a requester acquires empty frames from an allocator and places them in a queue. The minidriver then fills frames either by [pin-centric processing](pin-centric-processing.md) or [filter-centric processing](filter-centric-processing.md). The frames move across a transport to the next object in the circuit, eventually completing the circuit and returning to the requester. AVStream then reuses the frames.

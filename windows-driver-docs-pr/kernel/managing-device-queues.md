@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Managing Device Queues
 
 
-
+## <a href="" id="ddk-managing-device-queues-kg"></a>
 
 
 The I/O manager usually (except for FSDs) creates an associated device queue object when a driver calls [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397). It also provides [**IoStartPacket**](https://msdn.microsoft.com/library/windows/hardware/ff550370) and [**IoStartNextPacket**](https://msdn.microsoft.com/library/windows/hardware/ff550358), which drivers can call to have the I/O manager insert IRPs into the associated device queue or call their [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) routines.

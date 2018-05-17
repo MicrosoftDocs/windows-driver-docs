@@ -50,7 +50,7 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 
  
 
-## **Common USB scenarios**
+## <a href="" id="scenarios"></a>**Common USB scenarios**
 
 
 **1—Get the device handle** for communication and use the retrieved handle or object to send data transfers.

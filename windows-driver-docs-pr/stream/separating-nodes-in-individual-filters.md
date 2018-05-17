@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Separating Nodes in Individual Filters
 
 
-
+## <a href="" id="ddk-separating-nodes-in-individual-filters-ksg"></a>
 
 
 The following figure of a sample DirectShow filter graph shows another way in which the control nodes can be represented as filters in a filter graph. In this sample, the tuner and demodulator control nodes are separated into individual filters. All other control nodes are as described in the [Combining Nodes in a Filter](combining-nodes-in-a-filter.md) section.

@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Listening for Connections on a SAN
 
 
-
+## <a href="" id="ddk-listening-for-connections-on-a-san-ng"></a>
 
 
 The following figure shows an overview of how the Windows Sockets switch sets a SAN socket to acknowledge and queue--that is, listen for--incoming connection requests from a remote peer. The topics that follow describe the listening process in more detail.

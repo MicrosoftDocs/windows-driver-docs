@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Standard Driver Routine Requirements
 
 
-
+## <a href="" id="ddk-standard-driver-routine-requirements-kg"></a>
 
 
 Keep the following points in mind when designing a kernel-mode driver:

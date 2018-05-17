@@ -20,7 +20,7 @@ ms.technology: windows-devices
 
 \[Applies to KMDF only\]
 
-
+## <a href="" id="ddk-using-common-buffers-df"></a>
 
 
 Drivers for DMA devices sometimes must allocate buffer space that both a device and the driver can access. For example, a device might write transfer information, such as byte counts, into this buffer space and the driver can read it to determine the number of bytes that were transferred. This type of buffer space is called a *common buffer*.

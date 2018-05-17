@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Providing CustomTimerDpc Context Information
 
 
-
+## <a href="" id="ddk-providing-customtimerdpc-context-information-kg"></a>
 
 
 The *DeferredContext* pointer passed to [**KeInitializeDpc**](https://msdn.microsoft.com/library/windows/hardware/ff552130) points to a context area where other driver routines, and the *CustomTimerDpc* routine itself, can maintain state. The kernel passes the *DeferredContext* pointer in every call to the DPC routine.

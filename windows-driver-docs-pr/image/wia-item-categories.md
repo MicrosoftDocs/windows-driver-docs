@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Item Categories
 
 
-
+## <a href="" id="ddk-wia-item-categories-si"></a>
 
 
 This topic applies to Windows Vista and later.

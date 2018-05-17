@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Miniport Driver Scatter/Gather DMA
 
 
-
+## <a href="" id="ddk-scatter-gather-dma-ng"></a>
 
 
 If an NDIS 6.0 miniport driver manages a NIC that supports bus-master DMA, the driver registers NDIS scatter/gather DMA (SGDMA) resources and manages scatter/gather lists.

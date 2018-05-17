@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Starting a NIC
 
 
-
+## <a href="" id="ddk-starting-a-nic-ng"></a>
 
 
 The following steps describe how NDIS participates in the starting of a NIC:

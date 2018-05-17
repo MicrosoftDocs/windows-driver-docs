@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Reusing Framework Request Objects
 
 
-
+## <a href="" id="ddk-reusing-framework-request-objects-df"></a>
 
 
 To improve performance, framework-based drivers that create and send lots of nearly identical asynchronous requests to an I/O target can reuse request objects instead of creating a new request object for each request. A driver can reuse a request object after the request has been completed.

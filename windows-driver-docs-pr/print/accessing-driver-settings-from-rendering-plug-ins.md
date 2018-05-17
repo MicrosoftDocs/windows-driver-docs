@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Accessing Driver Settings from Rendering Plug-Ins
 
 
-
+## <a href="" id="ddk-accessing-driver-settings-from-rendering-plug-ins-gg"></a>
 
 
 A rendering plug-in can obtain the current status of printer features and other internal driver information. The following COM interface methods are implemented within Microsoft's printer drivers and can be called by rendering plug-ins.

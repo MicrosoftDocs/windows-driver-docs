@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Initializing a General I/O Target
 
 
-
+## <a href="" id="ddk-initializing-a-general-i-o-target-df"></a>
 
 
 The framework initializes a driver's local I/O target for a device when the driver calls [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926). To retrieve a handle to a device's local I/O target, the driver calls [**WdfDeviceGetIoTarget**](https://msdn.microsoft.com/library/windows/hardware/ff546017).

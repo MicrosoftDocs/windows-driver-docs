@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Dedicated CLFS Logs
 
 
-
+## <a href="" id="ddk-introduction-to-wmi-kg"></a>
 
 
 A Common Log File System (CLFS) log can be either dedicated or multiplexed. A *dedicated log* serves as stable storage for a single stream. A *multiplexed log* serves as stable storage for several streams. This topic discusses dedicated logs. For information about multiplexed logs, see [Multiplexed CLFS Logs](multiplexed-clfs-logs.md).

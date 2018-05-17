@@ -22,7 +22,7 @@ ms.technology: windows-devices
 # User Interface Plug-Ins
 
 
-
+## <a href="" id="ddk-user-interface-plug-ins-gg"></a>
 
 
 This section contains the following topics that explain how to develop a user interface plug-in:

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Implementing Custom WMI Blocks
 
 
-
+## <a href="" id="ddk-implementing-custom-wmi-blocks-kg"></a>
 
 
 A driver can implement *custom blocks* that expose device-specific instrumentation. For example, a driver for a disk drive that can report temperature might implement a custom event block that notifies WMI clients when the drive's temperature increases beyond a safe threshold.

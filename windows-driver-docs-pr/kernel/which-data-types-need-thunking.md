@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Which Data Types Need Thunking
 
 
-
+## <a href="" id="ddk-which-data-types-need-thunking-kg"></a>
 
 
 The following table lists common data types that require thunking, along with their thunked equivalents.

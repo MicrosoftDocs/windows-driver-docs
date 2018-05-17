@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Adding Service-Related Values to the Ndi Key
 
 
-
+## <a href="" id="ddk-adding-service-related-values-to-the-ndi-key-ng"></a>
 
 
 If a component has an associated service (device driver), the *add-registry-section* referenced by the *DDInstall* section for that component must add a **Service** value to the Ndi key. The **Service** value is a REG\_SZ value that specifies the primary service associated with the component. The **Service** value must match the *ServiceName* parameter of the **AddService** directive that references the *service-install-section* for the primary service. For more information, see [INF DDInstall.Services Section](ddinstall-services-section-in-a-network-inf-file.md).

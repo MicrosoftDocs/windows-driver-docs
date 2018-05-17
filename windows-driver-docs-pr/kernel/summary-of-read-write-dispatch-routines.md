@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Summary of Read/Write Dispatch Routines
 
 
-
+## <a href="" id="ddk-summary-of-read-write-dispatch-routines-kg"></a>
 
 
 Keep the following points in mind when implementing a [*DispatchRead*](https://msdn.microsoft.com/library/windows/hardware/ff543376), [*DispatchWrite*](https://msdn.microsoft.com/library/windows/hardware/ff544034), or [*DispatchReadWrite*](https://msdn.microsoft.com/library/windows/hardware/ff543381) routine:

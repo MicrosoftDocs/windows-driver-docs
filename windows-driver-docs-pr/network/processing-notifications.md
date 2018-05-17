@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Processing Notifications
 
 
-
+## <a href="" id="ddk-processing-notifications-ng"></a>
 
 
 The network configuration subsystem sends notifications to notify objects at the following intervals:

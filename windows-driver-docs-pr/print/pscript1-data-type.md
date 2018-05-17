@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # PSCRIPT1 Data Type
 
 
-
+## <a href="" id="ddk-pscript1-data-type-gg"></a>
 
 
 PSCRIPT1 data is Postscript data that is targeted for printing on a non-Postscript printer. The print processor interprets the Postscript commands and writes the resulting RAW-formatted output to a file.

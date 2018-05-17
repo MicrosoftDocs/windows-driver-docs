@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Threaded DPCs
 
 
-
+## <a href="" id="ddk-threaded-dpcs-kg"></a>
 
 
 This section contains the following topics about threaded deferred procedure calls (DPCs):

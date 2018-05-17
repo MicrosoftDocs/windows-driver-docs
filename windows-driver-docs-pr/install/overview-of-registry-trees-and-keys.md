@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Registry Trees for Devices and Drivers
 
 
-
+## <a href="" id="ddk-driver-information-in-the-registry-dg"></a>
 
 
 The following trees in the registry are of particular interest to driver writers (where **HKLM** represents **HKEY_LOCAL_MACHINE**):

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Opening a Handle to a File
 
 
-
+## <a href="" id="ddk-opening-a-handle-to-a-file-kg"></a>
 
 
 To open a handle to a file, perform the following steps:

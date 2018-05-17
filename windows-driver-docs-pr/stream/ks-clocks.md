@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # KS Clocks
 
 
-
+## <a href="" id="ddk-ks-clocks-ksg"></a>
 
 
 If you are writing an AVStream minidriver, refer to [AVStream Clocks](avstream-clocks.md).

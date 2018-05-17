@@ -192,7 +192,7 @@ The power management framework (PoFx) enables a driver to define one or more set
 -   [WppRecorderDumpLiveDriverData](https://msdn.microsoft.com/library/windows/hardware/dn914612)
 
 
-## What's new in Windows 10, version 1803 (latest)
+## <a href="" id="version-1803"></a>What's new in Windows 10, version 1803 (latest)
 
 This section describes new features and updates for driver development in Windows 10, version 1803 (Windows 10 April 2018 Update).
 
@@ -347,7 +347,7 @@ New APIs were added to simulate detach for shared connectors. If a USB device is
 Updates to Wi-fi driver development include a new [TLV for the Nic Auto Power Saver (NAPS) advanced power management feature](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/wdi-tlv-os-power-management-features) and updates to the platform level device recovery service (PLDR).
 
 
-## What's new in Windows 10, version 1709
+## <a href="" id="version-1709"></a>What's new in Windows 10, version 1709
 
 This section describes new features and updates for driver development in Windows 10, version 1709.
 
@@ -558,7 +558,7 @@ Here are the structures that support the IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYP
 * [UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt843563(v=vs.85).aspx)
 
 
-## What's new in Windows 10, version 1703
+## <a href="" id="version-1703"></a>What's new in Windows 10, version 1703
 
 This section describes new and improved features for driver development in Windows 10, version 1703.
 
@@ -632,7 +632,7 @@ There is a new Gs1DWCode symbology to the [BarcodeSymbology enumeration](https:/
 
 Windows 10 version 1703 provides a new class extension (UcmTcpciCx.sys) that supports the Universal Serial Bus Type-C Port Controller Interface Specification. A USB Type-C connector driver does not need to maintain any internal PD/Type-C state. The complexity of managing the USB Type-C connector and USB Power Delivery (PD) state machines is handled by the system. You only need to write a client driver that communicates hardware events to the system through the class extension. For more information, see [USB Type-C Controller Interface driver class extensions reference](https://msdn.microsoft.com/library/windows/hardware/mt805826).
 
-## What's new in Windows 10, version 1607
+## <a href="" id="version-1607"></a>What's new in Windows 10, version 1607
 
 [Back to Top](#top)
 
@@ -680,7 +680,7 @@ Printer driver development in Windows 10, version 1607 includes [JSConstraintsDe
 
 In Windows 10, version 1607, there are new and updated topics for WLAN Device Driver Interface (WDI) version 1.0.21. For details, see [WDI doc change history](https://msdn.microsoft.com/library/windows/hardware/mt691980).
 
-## What's new in Windows 10, version 1507
+## <a href="" id="version-1507"></a>What's new in Windows 10, version 1507
 
 [Back to Top](#top)
 

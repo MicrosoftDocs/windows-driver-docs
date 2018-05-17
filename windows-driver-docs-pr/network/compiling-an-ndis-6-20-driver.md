@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Compiling an NDIS 6.20 Driver
 
 
-
+## <a href="" id="ddk-compiling-an-ndis-6-20-driver-ng"></a>
 
 
 The Build utility for Windows 7 and later supports header versioning. Header versioning makes sure that NDIS 6.20 drivers use the appropriate NDIS 6.20 data structures at compile time. You must update the SOURCES file to indicate NDIS 6.20.

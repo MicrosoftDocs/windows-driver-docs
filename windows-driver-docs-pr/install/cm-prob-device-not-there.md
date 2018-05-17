@@ -16,7 +16,7 @@ ms.technology: windows-devices
 This function is reserved for system use.
 
 
-
+## <a href="" id="ddk-cm-prob-device-not-there-dg"></a>
 
 
 The device does not seem to be present.

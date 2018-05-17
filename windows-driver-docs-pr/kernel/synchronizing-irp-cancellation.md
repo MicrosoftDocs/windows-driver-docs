@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Synchronizing IRP Cancellation
 
 
-
+## <a href="" id="ddk-synchronizing-irp-cancellation-kg"></a>
 
 
 From a driver's perspective, an IRP can be canceled at any time. IRP cancellation occurs asynchronously; therefore, drivers must be able to handle a number of potential race conditions, created if the IRP is canceled at any of the following points:

@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # TCP/IP Task Offload
 
 
-
+## <a href="" id="ddk-task-offload-ng"></a>
 
 
 To increase its performance, the Microsoft TCP/IP transport can offload tasks to a network interface card (NIC) that has the appropriate task offload capabilities.

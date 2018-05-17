@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Downloading Queue-Specific Files
 
 
-
+## <a href="" id="ddk-downloading-queue-specific-files-gg"></a>
 
 
 If a user decides to create a printer connection from his or her client system to a print server, and if an installation application has created the registry entries described in [Supporting Point and Print During Printer Installations](supporting-point-and-print-during-printer-installations.md), the following events occur:

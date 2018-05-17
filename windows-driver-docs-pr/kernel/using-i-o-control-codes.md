@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using I/O Control Codes
 
 
-
+## <a href="" id="ddk-using-i-o-control-codes-kg"></a>
 
 
 This section contains the following topics:

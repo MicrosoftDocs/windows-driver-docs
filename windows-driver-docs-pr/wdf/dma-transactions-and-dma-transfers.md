@@ -24,7 +24,7 @@ ms.technology: windows-devices
 
 \[Applies to KMDF only\]
 
-
+## <a href="" id="ddk-dma-transactions-and-dma-transfers-df"></a>
 
 
 To understand how the framework handles bus-master and system-mode DMA operations, you must know the following two terms:

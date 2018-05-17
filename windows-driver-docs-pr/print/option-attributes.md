@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Option Attributes
 
 
-
+## <a href="" id="ddk-option-attributes-gg"></a>
 
 
 When specifying [printer options](printer-options.md), you use attributes to provide Unidrv with the following information:

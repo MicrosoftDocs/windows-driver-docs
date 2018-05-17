@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Registering an Intermediate Driver as a Miniport Driver
 
 
-
+## <a href="" id="ddk-registering-an-intermediate-driver-as-a-miniport-ng"></a>
 
 
 An intermediate driver calls [**NdisMRegisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563654) to export its *MiniportXxx* functions. The *NdisMiniportDriverHandle* that is returned by **NdisMRegisterMiniportDriver** must be retained by the intermediate driver and input to NDIS when the driver calls [**NdisIMInitializeDeviceInstanceEx**](https://msdn.microsoft.com/library/windows/hardware/ff562727).

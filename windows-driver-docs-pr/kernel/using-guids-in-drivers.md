@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using GUIDs in Drivers
 
 
-
+## <a href="" id="ddk-using-guids-in-drivers-kg"></a>
 
 
 Drivers and other system components use *globally unique identifiers* (GUIDs) to identify a variety of items. System components define GUIDs for items such as [device setup classes](https://msdn.microsoft.com/library/windows/hardware/ff541509), PnP events, WMI events, and still image events. Driver writers can create GUIDs for items such as [device interface classes](https://msdn.microsoft.com/library/windows/hardware/ff541339), custom PnP events, and custom WMI events. Drivers and applications include header files that define the GUIDs that they use.

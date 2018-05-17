@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Applying WIA Property Settings to the Hardware
 
 
-
+## <a href="" id="ddk-applying-wia-property-settings-to-the-hardware-si"></a>
 
 
 When a WIA application initiates a data transfer, the WIA service gives the WIA minidriver the opportunity to apply current WIA property settings, and to apply any device-specific settings to the hardware. The WIA service then calls the [**IWiaMiniDrv::drvWriteItemProperties**](https://msdn.microsoft.com/library/windows/hardware/ff545020) method before it calls the [**IWiaMiniDrv::drvAcquireItemData**](https://msdn.microsoft.com/library/windows/hardware/ff543956) method. The latter method is called only when a WIA application initiates a data transfer. The WIA minidriver should use the WIA service functions to read the properties in its own driver item tree.

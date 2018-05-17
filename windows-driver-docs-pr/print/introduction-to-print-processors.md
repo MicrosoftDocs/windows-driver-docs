@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Introduction to Print Processors
 
 
-
+## <a href="" id="ddk-introduction-to-print-processors-gg"></a>
 
 
 Print processors are user-mode DLLs that are responsible for converting a print job's spooled data into a format that can be sent to a [*print monitor*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-print-monitor). They are also responsible for handling application requests to pause, resume and cancel print jobs.

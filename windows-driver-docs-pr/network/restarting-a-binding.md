@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Restarting a Binding
 
 
-
+## <a href="" id="ddk-restarting-a-binding-ng"></a>
 
 
 To restart a binding that is paused, NDIS sends the protocol driver a network Plug and Play (PnP) restart event notification. After the protocol driver receives the restart notification, the affected binding enters the Restarting state.

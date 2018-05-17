@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Functions Defined by Printer Graphics DLLs
 
 
-
+## <a href="" id="ddk-functions-defined-by-printer-graphics-dlls-gg"></a>
 
 
 Like all graphics drivers, printer graphics DLLs are responsible for defining the following graphics DDI functions. Following [**DrvEnableDriver**](https://msdn.microsoft.com/library/windows/hardware/ff556210), the initial driver entry point, the remaining functions are listed in alphabetical order. Note that because GDI calls **DrvEnableDriver** by name, its name appears in bold. GDI calls all other display driver functions by way of an array of function pointers that **DrvEnableDriver** returns.

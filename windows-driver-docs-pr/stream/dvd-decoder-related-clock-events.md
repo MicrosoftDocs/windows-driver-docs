@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # DVD Decoder Related Clock Events
 
 
-
+## <a href="" id="ddk-dvd-related-clock-events-ksg"></a>
 
 
 Any DVD decoder minidriver stream that supports a master clock for DVD playback must also support the following two clock events: [**KSEVENT\_CLOCK\_POSITION\_MARK**](https://msdn.microsoft.com/library/windows/hardware/ff561811) and [**KSEVENT\_CLOCK\_INTERVAL\_MARK**](https://msdn.microsoft.com/library/windows/hardware/ff561805). These events provide reference information to any component in the system when they need to synchronize any time during DVD playback. The GUID for the event set is [**KSEVENTSETID\_Clock**](https://msdn.microsoft.com/library/windows/hardware/ff561764).

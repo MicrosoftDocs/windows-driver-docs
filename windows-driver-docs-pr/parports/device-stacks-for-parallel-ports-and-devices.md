@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Device Stacks for Parallel Ports and Devices
 
 
-
+## <a href="" id="ddk-device-stacks-for-parallel-ports-and-devices-kg"></a>
 
 
 This section describes the device stacks created by the system-supplied parallel drivers for parallel ports and devices that are attached to parallel ports.

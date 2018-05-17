@@ -17,7 +17,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-
+## <a href="" id="ddk-initiate-offload-call-sequence-ng"></a>
 
 
 From the perspective of an offload target, an offload of TCP chimney state is initiated when NDIS calls the offload target's [*MiniportInitiateOffload*](https://msdn.microsoft.com/library/windows/hardware/ff559393) function. The *MiniportInitiateOffload* function inputs the following parameters:

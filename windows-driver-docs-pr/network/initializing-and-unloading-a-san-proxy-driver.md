@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Initializing and Unloading a SAN Proxy Driver
 
 
-
+## <a href="" id="ddk-initializing-and-unloading-a-san-proxy-driver-ng"></a>
 
 
 In addition to creating and initializing a device object for the driver object, the proxy driver's **DriverEntry** routine can register to be notified when NICs under the driver's control are either added or removed. For more information, see [Registering for SAN NIC Notifications](registering-for-san-nic-notifications.md).

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Other Benefits of CoNDIS WAN
 
 
-
+## <a href="" id="ddk-other-benefits-of-condis-wan-ng"></a>
 
 
 In addition to flexibility and simplicity, the CoNDIS WAN model provides the following benefits:

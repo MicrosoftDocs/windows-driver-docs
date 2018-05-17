@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Identifiers for PCI Devices
 
 
-
+## <a href="" id="ddk-identifiers-for-pci-devices-dg"></a>
 
 
 The following is a list of the [device identification string](device-identification-strings.md) formats that the PCI bus driver uses to report hardware IDs. When the Plug and Play (PnP) manager queries the driver for the hardware IDs of a device, the PCI bus driver returns a list of hardware IDs in order of increasing generality.

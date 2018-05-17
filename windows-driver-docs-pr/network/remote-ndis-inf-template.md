@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Remote NDIS INF Template
 
 
-
+## <a href="" id="ddk-remote-ndis-device-control-ng"></a>
 
 
 Microsoft provides an NDIS miniport driver, Rndismp.sys, which implements the Remote NDIS message set and communicates with generic bus transport drivers, which in turn communicate with the appropriate bus driver. This NDIS miniport driver is implemented and maintained by Microsoft and is distributed as part of all supported Windows versions. You can find it in the %SystemRoot%\\System32\\drivers directory.

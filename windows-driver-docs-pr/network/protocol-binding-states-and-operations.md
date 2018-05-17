@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Protocol Binding States and Operations
 
 
-
+## <a href="" id="ddk-protocol-binding-states-and-operations-ng"></a>
 
 
 An NDIS protocol driver must support the following operational states for each binding that the driver manages:

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Intermediate Driver Design Concepts
 
 
-
+## <a href="" id="ddk-intermediate-driver-design-concepts-ng"></a>
 
 
 This section provides some basic information to help you start writing an NDIS intermediate driver. To write an NDIS intermediate driver, you must understand the NDIS miniport driver and protocol driver operations and functions.

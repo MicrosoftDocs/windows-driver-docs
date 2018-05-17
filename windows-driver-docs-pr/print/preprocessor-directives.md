@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Preprocessor Directives
 
 
-
+## <a href="" id="ddk-preprocessor-directives-gg"></a>
 
 
 GPD files can contain preprocessor directives, which can be used to control conditional parsing of sections within the GPD file. The following table describes the preprocessor directives that can be used in GPD files.

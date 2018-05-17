@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # SDDL for Device Objects
 
 
-
+## <a href="" id="ddk-sddl-for-device-objects-kg"></a>
 
 
 The Security Descriptor Definition Language (SDDL) is used to represent security descriptors. Security for device objects can be specified by an SDDL string that is [placed in an INF file](https://msdn.microsoft.com/library/windows/hardware/ff540212) or passed to [**IoCreateDeviceSecure**](https://msdn.microsoft.com/library/windows/hardware/ff548407). The [Security Descriptor Definition Language](https://msdn.microsoft.com/library/windows/desktop/aa379567) is fully documented in the Microsoft Windows SDK documentation.

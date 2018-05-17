@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Receive Side Throttle in NDIS 6.20
 
 
-
+## <a href="" id="ddk-receive-side-throttle-in-ndis-6-20-ng"></a>
 
 
 NDIS 6.20 introduces receive-side throttle (RST) enhancements to reduce the possibility of disruptions during media playback in multimedia applications. RST support is mandatory for NDIS 6.20 and later drivers.

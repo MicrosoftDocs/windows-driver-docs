@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Creating Network INF Files
 
 
-
+## <a href="" id="ddk-creating-network-inf-files-ng"></a>
 
 
 A *network INF file* is based on the standard INF file format but also includes network-specific items, such as network-specific sections, directives, section entries, and values. The following description of network INF files assumes an understanding of base INF files. Read the description of base INF files before attempting to create a network INF file. For more information about base INF files, see [INF File Sections and Directives](https://msdn.microsoft.com/library/windows/hardware/ff547433).

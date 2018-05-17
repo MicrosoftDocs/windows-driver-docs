@@ -16,7 +16,7 @@ ms.technology: windows-devices
 This function is reserved for system use.
 
 
-
+## <a href="" id="ddk-cm-prob-driver-blocked-dg"></a>
 
 
 The system will not load the driver because it is listed in the [Windows Driver Protection](https://msdn.microsoft.com/windows-drivers/develop/distributing_a_driver_package_win8) database supplied by [Windows Update](https://msdn.microsoft.com/windows-drivers/develop/distributing_a_driver_package_win8)*.*

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Localizing MOF Files
 
 
-
+## <a href="" id="ddk-localizing-mof-files-kg"></a>
 
 
 Since WMI property qualifiers are often displayable strings, Windows XP and later versions of the operating system provide a mechanism for localizing these qualifiers.

@@ -22,7 +22,7 @@ ms.technology: windows-devices
 # Device Stacks for an ACPI Device
 
 
-
+## <a href="" id="ddk-device-stacks-for-an-acpi-device-kg"></a>
 
 
 This section describes the device stacks for an ACPI device that include an optional functional device object ([*FDO*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-fdo)) created by a vendor-supplied WDM function driver.

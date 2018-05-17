@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Writing an AddDevice Routine
 
 
-
+## <a href="" id="ddk-writing-an-adddevice-routine-kg"></a>
 
 
 Any driver that supports PnP must have an [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine. The *AddDevice* routine creates one or more device objects representing the physical, logical, or virtual devices for which the driver carries out I/O requests. It also attaches the device object to the device stack, so the device stack will contain a device object for each driver associated with the device.

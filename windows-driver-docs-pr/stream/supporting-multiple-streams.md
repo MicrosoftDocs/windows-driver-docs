@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Supporting Multiple Streams
 
 
-
+## <a href="" id="ddk-supporting-multiple-streams-ksg"></a>
 
 
 The minidriver describes the streams it supports in its [*StrMiniReceiveDevicePacket*](https://msdn.microsoft.com/library/windows/hardware/ff568463) routine, in response to a SRB\_GET\_STREAM\_INFO request. The **CommandData.StreamBuffer** points to the [**HW\_STREAM\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff559686) structure the minidriver should fill in with a description of the streams it supports.

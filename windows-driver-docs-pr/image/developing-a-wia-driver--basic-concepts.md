@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Developing a WIA Driver: Basic Concepts
 
 
-
+## <a href="" id="ddk-developing-a-wia-driver-basic-concepts-si"></a>
 
 
 This section introduces a number of basic concepts involved in the creation of WIA drivers. It contains the following topics:

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Local and Global MS-DOS Device Names
 
 
-
+## <a href="" id="ddk-local-and-global-ms-dos-device-names-kg"></a>
 
 
 The Microsoft Windows 2000 and later versions of the Windows NT-based operating system maintain multiple versions of the **DosDevices** directory.

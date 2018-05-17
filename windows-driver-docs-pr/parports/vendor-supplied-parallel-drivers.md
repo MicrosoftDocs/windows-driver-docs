@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Vendor-Supplied Parallel Drivers
 
 
-
+## <a href="" id="ddk-vendor-supplied-parallel-drivers-kg"></a>
 
 
 This section describes the following topics about how to operate and install parallel ports and devices in Microsoft Windows operating systems:

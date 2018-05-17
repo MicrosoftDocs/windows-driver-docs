@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # When to Complete an IRP
 
 
-
+## <a href="" id="ddk-when-to-complete-an-irp-kg"></a>
 
 
 A driver should initiate IRP completion when any of the following conditions is met:

@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Multipacket Messages
 
 
-
+## <a href="" id="ddk-multi-packet-messages-ng"></a>
 
 
 Multiple [**REMOTE\_NDIS\_PACKET\_MSG**](https://msdn.microsoft.com/library/windows/hardware/ff570635) messages may be sent in a single transfer, in either direction. A multipacket message is formed by concatenating multiple **REMOTE\_NDIS\_PACKET\_MSG** elements. The maximum length of such a transfer is governed by the *MaxTransferSize* parameter passed in the [**REMOTE\_NDIS\_INITIALIZE\_MSG**](https://msdn.microsoft.com/library/windows/hardware/ff570624) and response messages. The host will also limit the number of messages it bundles into a single transfer to the *MaxPacketsPerMessage* parameter returned by the device in the [**REMOTE\_NDIS\_INITIALIZE\_CMPLT**](https://msdn.microsoft.com/library/windows/hardware/ff570621) response message.

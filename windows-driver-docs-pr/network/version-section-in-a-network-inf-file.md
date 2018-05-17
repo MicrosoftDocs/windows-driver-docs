@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Version Section in a Network INF File
 
 
-
+## <a href="" id="ddk-version-section-ng"></a>
 
 
 The **Version** section in a network INF file is based on the generic [**INF Version section**](https://msdn.microsoft.com/library/windows/hardware/ff547502).

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Functions Defined by Printer Interface DLLs
 
 
-
+## <a href="" id="ddk-functions-defined-by-printer-interface-dlls-gg"></a>
 
 
 Printer interface DLLs export the functions listed in the following table.

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Setting Attributes on a Parallel Device
 
 
-
+## <a href="" id="ddk-setting-attributes-on-a-parallel-device-kg"></a>
 
 
 A client uses following device control requests to set the indicated operations of a parallel device:

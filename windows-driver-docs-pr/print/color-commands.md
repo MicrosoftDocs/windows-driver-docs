@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Color Commands
 
 
-
+## <a href="" id="ddk-color-commands-gg"></a>
 
 
 This topic describes the color commands for printing, and it contains the following sections:

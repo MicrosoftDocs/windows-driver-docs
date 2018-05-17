@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Access PCMCIA Attribute Memory by Using a BUS\_INTERFACE\_STANDARD Interface
 
 
-
+## <a href="" id="ddk-access-pcmcia-attribute-memory-by-using-a-bus-interface-standard-i"></a>
 
 
 This section describes how a PC Card or CardBus card driver can use the BUS\_INTERFACE\_STANDARD interface to access attribute memory.

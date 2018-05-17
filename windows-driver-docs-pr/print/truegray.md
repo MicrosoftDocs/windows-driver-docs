@@ -21,7 +21,7 @@ ms.technology: windows-devices
 # TrueGray
 
 
-
+## <a href="" id="ddk-truegray-gg"></a>
 
 
 The TrueGray feature checks RGB colors in text and vector graphics, but not in bitmaps. For colors that are gray (that is, colors whose red, green, and blue values are equal), the TrueGray feature translates the colors from the RGB color space to the color printer's gray color space before printing them. This feature is not available for monochrome printers.

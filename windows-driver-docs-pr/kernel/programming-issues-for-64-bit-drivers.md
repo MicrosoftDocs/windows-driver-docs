@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Programming Issues for 64-Bit Drivers
 
 
-
+## <a href="" id="ddk-64-bit-issues-kg"></a>
 
 
 This section discusses issues you need to be concerned about when developing drivers for 64-bit processing environments. It includes the following sections:

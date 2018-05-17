@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Types of WDM Device Objects
 
 
-
+## <a href="" id="ddk-types-of-wdm-device-objects-kg"></a>
 
 
 There are three kinds of WDM device objects:

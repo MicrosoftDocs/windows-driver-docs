@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Completing an Isochronous Data Transfer
 
 
-
+## <a href="" id="ddk-completing-an-isochronous-data-transfer-kg"></a>
 
 
 Once a device no longer needs to transfer data, the driver must inform the bus that the operation is complete, and then deallocate the isochronous resources it allocated when setting up.

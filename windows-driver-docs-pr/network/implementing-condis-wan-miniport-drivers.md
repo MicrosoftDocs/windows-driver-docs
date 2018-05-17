@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Implementing CoNDIS WAN Miniport Drivers
 
 
-
+## <a href="" id="ddk-implementing-condis-wan-miniport-drivers-ng"></a>
 
 
 CoNDIS WAN miniport drivers are the same as other CoNDIS drivers with the exception of features added to support WAN operations. For more information about connection-oriented NDIS, see [Connection-Oriented NDIS](connection-oriented-ndis.md). For more information about features that support WAN operations, see [WAN-Specific Capabilities of CoNDIS WAN Drivers](wan-specific-capabilities-of-condis-wan-drivers.md).

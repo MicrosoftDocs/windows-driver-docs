@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Writing a Reinitialize Routine
 
 
-
+## <a href="" id="ddk-writing-a-reinitialize-routine-kg"></a>
 
 
 Any driver that needs to initialize itself in stages can contain a [*Reinitialize*](https://msdn.microsoft.com/library/windows/hardware/ff561022) routine. A *Reinitialize* routine is called after the [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine has returned control and other drivers have initialized themselves. Typically, the *Reinitialize* routine performs tasks that must be done after another driver starts.

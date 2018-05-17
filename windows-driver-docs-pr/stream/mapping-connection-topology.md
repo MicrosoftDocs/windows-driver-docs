@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Mapping Connection Topology
 
 
-
+## <a href="" id="ddk-mapping-connection-topology-ksg"></a>
 
 
 In order for the BDA support library to provide properties and methods to applications in Ring 3 on behalf of a BDA minidriver, the BDA minidriver must provide a mapping of its connection topology to the BDA support library. The BDA minidriver provides this mapping in an array of [**BDA\_TEMPLATE\_CONNECTION**](https://msdn.microsoft.com/library/windows/hardware/ff556558) structures. The BDA minidriver passes this BDA\_TEMPLATE\_CONNECTION array in an array of [**KSTOPOLOGY\_CONNECTION**](https://msdn.microsoft.com/library/windows/hardware/ff567148) structures when it calls the [**BdaCreateFilterFactory**](https://msdn.microsoft.com/library/windows/hardware/ff556438) support function. See [Starting a BDA Minidriver](starting-a-bda-minidriver.md) for more information. This array provides a representation of all the possible connections between node and pin types that can be made within a filter or between a filter and adjoining filters.

@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Dynamically Generated Printer Commands
 
 
-
+## <a href="" id="ddk-dynamically-generated-printer-commands-gg"></a>
 
 
 Each time you specify a [printer command](printer-commands.md) in a [*GPD*](https://msdn.microsoft.com/library/windows/hardware/ff556283#wdkgloss-generic-printer-description--gpd-) file for a Unidrv minidriver, you can use one of the following two methods:

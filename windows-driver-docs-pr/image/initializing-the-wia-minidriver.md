@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Initializing the WIA Minidriver
 
 
-
+## <a href="" id="ddk-initializing-the-wia-minidriver-si"></a>
 
 
 The first step in implementing the [IWiaMiniDrv interface](https://msdn.microsoft.com/library/windows/hardware/ff545027) is to initialize the minidriver and create a hierarchical tree of driver items. To do this, the WIA service calls the [**IWiaMiniDrv::drvInitializeWia**](https://msdn.microsoft.com/library/windows/hardware/ff544986) method each time a client application intends to use the device. If two or more applications are simultaneously using the device, the WIA service calls this method for each application. In this method, the minidriver typically does the following:

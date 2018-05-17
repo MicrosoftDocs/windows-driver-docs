@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Registry Entries for Still Image Devices
 
 
-
+## <a href="" id="ddk-registry-entries-for-still-image-devices-si"></a>
 
 
 Microsoft STI makes use of several registry entries, some of which can be modified by vendor-supplied components.

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Failure to Validate Device Objects
 
 
-
+## <a href="" id="ddk-failure-to-validate-device-objects-kg"></a>
 
 
 Many drivers create more than one kind of device object by calling [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397). Some drivers create control device objects in their **DriverEntry** routines to allow applications to communicate with the driver, even before the driver creates an FDO. For example, file system drivers create device objects to handle file system notifications when they register themselves as file systems with **IoRegisterFileSystem**.

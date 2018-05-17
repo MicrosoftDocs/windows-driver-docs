@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # When to Complete an IRP in a Dispatch Routine
 
 
-
+## <a href="" id="ddk-when-to-complete-an-irp-in-a-dispatch-routine-kg"></a>
 
 
 Usually, drivers do not complete IRPs in their dispatch routines unless the parameters for the given request are invalid or, in a device driver, unless the particular **IRP\_MJ\_*XXX*** requires no device I/O operations.

@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Hardware-based DVD Decoding
 
 
-
+## <a href="" id="ddk-hardware-based-dvd-decoding-ksg"></a>
 
 
 The following diagram illustrates a hardware-based DVD decoding solution and how it fits into the Windows Driver Model (WDM) architecture. It shows the complete support for hardware decoders with existing DVD technologies under Microsoft Windows XP.

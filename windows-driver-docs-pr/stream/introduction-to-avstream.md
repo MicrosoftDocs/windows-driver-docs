@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Introduction to AVStream
 
 
-
+## <a href="" id="ddk-introduction-to-avstream-ksg"></a>
 
 
 This section includes the following topics:

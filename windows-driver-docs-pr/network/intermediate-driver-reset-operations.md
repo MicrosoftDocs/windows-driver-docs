@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Intermediate Driver Reset Operations
 
 
-
+## <a href="" id="ddk-intermediate-driver-reset-operations-ng"></a>
 
 
 An intermediate driver must be prepared to handle the situation where its outstanding sends on a binding to an underlying driver can be dropped because the underlying NIC is reset.

@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Maintaining a Network Interface Stack
 
 
-
+## <a href="" id="ddk-maintaining-network-interface-stacks-ng"></a>
 
 
 NDIS provides services to maintain the interface stack table (*ifStackTable* in RFC 2863). NDIS maintains the stack table for NDIS miniport adapters, NDIS 5.*x* filter intermediate drivers, and NDIS filter modules. NDIS also provides services to enable NDIS drivers to add and delete entries in this table. For MUX intermediate drivers, NDIS does not have access to the relationship between the virtual miniport interface and the protocol lower interface. Therefore, NDIS 6.0 MUX intermediate drivers must specify these internal interface relationships.

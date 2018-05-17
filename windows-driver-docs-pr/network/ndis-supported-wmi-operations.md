@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # NDIS-Supported WMI Operations
 
 
-
+## <a href="" id="ddk-ndis-supported-wmi-operations-ng"></a>
 
 
 NDIS supports the following WMI operations:

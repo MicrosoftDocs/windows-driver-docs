@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # WDTF Object Logging
 
 
-
+## <a href="" id="wdtf-logging"></a>
 
 
 WDTF Object *Logging* is a feature in WDTF that enables WDTF objects to write log messages to a common log file automatically. The name of the object logging file is called TestTextLog.log. WDTF Object logging has two key benefits. It simplifies test script authoring by using WDTF object methods to log the high level method call, the method's parameters, and the method's result. WDTF Object logging also improves diagnosability by providing a consistent mechanism for writing common log messages.

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # NDIS Timer Services
 
 
-
+## <a href="" id="ddk-ndis-6-0-timer-services-ng"></a>
 
 
 This section provides information about NDIS 6.0 timer services and includes:

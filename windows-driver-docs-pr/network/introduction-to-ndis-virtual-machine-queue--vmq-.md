@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Introduction to NDIS Virtual Machine Queue (VMQ)
 
 
-
+## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
 
 
 Many network adapters can support more than one unicast media access control (MAC) address for a network server. Therefore, the network adapter can receive network data frames with a destination MAC address that matches any of the unicast MAC addresses that are set on the network adapter hardware without being in promiscuous mode. Such hardware can allocate a receive queue for each MAC address and route incoming frames with a matching MAC address to the queue. This feature, coupled with the ability to allocate receive buffers for each queue from the memory address space that is assigned to each virtual machine, are the primary capabilities that are required for VMQ support.

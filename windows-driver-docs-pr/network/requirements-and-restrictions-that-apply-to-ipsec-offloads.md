@@ -16,7 +16,7 @@ ms.technology: windows-devices
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-
+## <a href="" id="ddk-requirements-and-restrictions-that-apply-to-ipsec-offloads-ng"></a>
 
 
 The following requirements and restrictions apply to Internet protocol security (IPsec) offloads:

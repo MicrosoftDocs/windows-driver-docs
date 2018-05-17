@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Handling Device Power-Down IRPs
 
 
-
+## <a href="" id="ddk-handling-device-power-down-irps-kg"></a>
 
 
 A device power-down IRP specifies the minor function code [**IRP\_MN\_SET\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551744) and a device power state (**PowerDeviceD0**, **PowerDeviceD1**, **PowerDeviceD2**, or **PowerDeviceD3**) that is less-powered or equal to the current device power state. Drivers must handle the power-down IRP as the IRP travels down the device stack. Higher-level drivers must handle the IRP before lower-level drivers. Drivers that have no device-specific tasks to perform should promptly pass the IRP to the next-lower driver.

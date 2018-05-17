@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Installing Legacy COM Ports
 
 
-
+## <a href="" id="ddk-installing-legacy-com-ports-kg"></a>
 
 
 The Serial function driver always configures a legacy serial port as a [COM port](configuration-of-com-ports.md).

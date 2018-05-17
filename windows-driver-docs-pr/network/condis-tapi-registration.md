@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # CoNDIS TAPI Registration
 
 
-
+## <a href="" id="ddk-condis-tapi-registration-ng"></a>
 
 
 This section discusses how a CoNDIS WAN miniport driver indicates that it supports TAPI services and how it sets up TAPI-specific communications with the NDISWAN and NDPROXY drivers.

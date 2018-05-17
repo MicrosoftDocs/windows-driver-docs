@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Additional Errors in Handling IRPs
 
 
-
+## <a href="" id="ddk-additional-errors-in-handling-irps-kg"></a>
 
 
 The following are additional errors that drivers sometimes make when handling IRPs.

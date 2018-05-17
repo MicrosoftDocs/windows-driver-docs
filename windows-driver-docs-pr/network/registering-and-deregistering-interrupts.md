@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Registering and Deregistering Interrupts
 
 
-
+## <a href="" id="ddk-registering-and-deregistering-interrupts-ng"></a>
 
 
 A miniport driver calls [**NdisMRegisterInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff563649) to register an interrupt. The driver allocates and initializes an [**NDIS\_MINIPORT\_INTERRUPT\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff566465) structure to specify the interrupt characteristics and function entry points. The driver passes the structure to **NdisMRegisterInterruptEx**.

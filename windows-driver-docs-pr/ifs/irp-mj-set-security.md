@@ -24,12 +24,12 @@ ms.technology: windows-devices
 
 The IRP\_MJ\_SET\_SECURITY request is sent by the I/O Manager. This request can be sent, for example, when a user-mode application has called a Win32 function such as **SetSecurityInfo**.
 
-## Operation: File System Drivers
+## <a href="" id="operation-fsd"></a>Operation: File System Drivers
 
 
 The file system driver should extract and decode the file object to determine whether it represents a user file or directory open. If it does, the driver should process the request and complete the IRP. Otherwise, the driver should complete the IRP as appropriate without processing the request.
 
-## Operation: File System Filter Drivers
+## <a href="" id="operation-filter"></a>Operation: File System Filter Drivers
 
 
 The filter driver should pass this IRP down to the next-lower driver on the stack.

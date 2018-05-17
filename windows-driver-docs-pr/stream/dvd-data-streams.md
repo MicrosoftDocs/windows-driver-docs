@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # DVD Data Streams
 
 
-
+## <a href="" id="ddk-dvd-data-streams-ksg"></a>
 
 
 DVD decoder minidrivers support both input and output data streams. Streams are uniquely defined by three GUIDs (major type, minor type, and specifier) and a format block. Stream formats are also referred to as media types. For more information about format blocks and media types, see DirectShow in the Microsoft Windows SDK documentation

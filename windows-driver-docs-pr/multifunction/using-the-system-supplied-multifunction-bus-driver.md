@@ -21,7 +21,7 @@ ms.technology: windows-devices
 # Using the System-Supplied Multifunction Bus Driver
 
 
-
+## <a href="" id="ddk-using-the-system-supplied-multifunction-bus-driver-dg"></a>
 
 
 If a device's underlying bus supports a multifunction bus standard, such as PC Card, the vendor for a multifunction device on an NT-based platform can use the system-supplied multifunction bus driver (mf.sys) to support the device.

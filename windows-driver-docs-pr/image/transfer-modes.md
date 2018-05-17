@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Transfer Modes
 
 
-
+## <a href="" id="ddk-transfer-modes-si"></a>
 
 
 The still image interfaces define two transfer modes − *status mode* and *data mode*. When a client of the **IStillImage** COM interface calls [**IStillImage::CreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff543778) to obtain access to a still image device, it specifies one (or both) of the transfer modes. Multiple clients can open a device in status mode, but only one client at a time is allowed to open a device in data mode.

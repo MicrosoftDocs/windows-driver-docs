@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Object Directories
 
 
-
+## <a href="" id="ddk-object-directories-kg"></a>
 
 
 An *object directory* is a named object that is used solely to contain other named objects. For example, the **\\Device** object directory contains the named device objects created by drivers.

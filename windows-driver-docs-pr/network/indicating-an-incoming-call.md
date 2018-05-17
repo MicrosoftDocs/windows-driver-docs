@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Indicating an Incoming Call
 
 
-
+## <a href="" id="ddk-indicating-an-incoming-call-ng"></a>
 
 
 A call manager or MCM driver is alerted to an incoming call by signaling messages from the network. From these signaling messages, the call manager or MCM driver extracts the call parameters for the call, including the SAP to which the incoming call is addressed.

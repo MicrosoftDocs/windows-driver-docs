@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Setting Up ControllerControl Routines
 
 
-
+## <a href="" id="ddk-setting-up-controllercontrol-routines-kg"></a>
 
 
 A driver's [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine must do the following when it receives an [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) request, to set up a [*ControllerControl*](https://msdn.microsoft.com/library/windows/hardware/ff542049) routine:

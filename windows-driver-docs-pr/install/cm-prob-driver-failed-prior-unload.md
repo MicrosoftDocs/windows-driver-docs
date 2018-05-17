@@ -16,7 +16,7 @@ ms.technology: windows-devices
 This function is reserved for system use.
 
 
-
+## <a href="" id="ddk-cm-prob-driver-failed-prior-unload-dg"></a>
 
 
 The driver could not be loaded because a previous instance is still loaded.

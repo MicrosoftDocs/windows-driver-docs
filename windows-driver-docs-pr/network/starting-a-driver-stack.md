@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Starting a Driver Stack
 
 
-
+## <a href="" id="ddk-starting-a-driver-stack-ng"></a>
 
 
 After the system detects a networking device, the system starts an NDIS driver stack for the device. The device can be a virtual device or a physical device. In either case, a driver stack start operation proceeds as follows:

@@ -9,7 +9,7 @@ keywords: ["property sheets WDK DirectInput , registering", "game controllers WD
 # Integration with Windows
 
 
-
+## <a href="" id="ddk-integration-with-windows-di"></a>
 
 
 Because the property sheet page is a COM object, it needs to be registered. This can be done by an INF file or through DirectInput's **IDirectInputJoyConfig8** interface. A sample INF file is part of the sample property sheet in the DirectX Driver Development Kit (DDK).

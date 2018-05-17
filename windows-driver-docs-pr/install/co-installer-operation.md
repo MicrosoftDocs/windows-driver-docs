@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Co-installer Operation
 
 
-
+## <a href="" id="ddk-co-installer-operation-dg"></a>
 
 
 Co-installers are called by SetupAPI, as shown in the following figure.

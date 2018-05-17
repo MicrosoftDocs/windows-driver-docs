@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using a System-Defined Callback Object
 
 
-
+## <a href="" id="ddk-using-a-system-defined-callback-object-kg"></a>
 
 
 The system defines three callback objects for driver use:

@@ -17,7 +17,7 @@ ms.technology: windows-devices
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-
+## <a href="" id="ddk-offloading-ipsec-tasks-in-the-receive-path-ng"></a>
 
 
 When a NIC performs Internet protocol security (IPsec) processing on a receive packet, it decrypts the packet if the packet contains an ESP payload and calculates the AH or ESP encryption checksums (or both) for the packet. Before indicating the [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure for the packet up to the TCP/IP transport, the miniport driver calls the [**NET\_BUFFER\_LIST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff568401) macro with an *\_Id* of **IPsecOffloadV1NetBufferListInfo** to obtain the [**NDIS\_IPSEC\_OFFLOAD\_V1\_NET\_BUFFER\_LIST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff565801) structure that is associated with a packet.

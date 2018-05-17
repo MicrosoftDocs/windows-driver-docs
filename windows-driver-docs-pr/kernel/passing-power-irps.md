@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Passing Power IRPs
 
 
-
+## <a href="" id="ddk-passing-power-irps-kg"></a>
 
 
 Power IRPs must be passed all the way down the device stack to the PDO to ensure that power transitions are managed cleanly. Drivers handle an IRP that reduces device power as the IRP travels down the device stack. Drivers handle an IRP that applies device power in [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routines as the IRP travels back up the device stack.

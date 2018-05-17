@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Non-RSS Receive Processing
 
 
-
+## <a href="" id="ddk-non-rss-receive-processing-ng"></a>
 
 
 Miniport drivers that do not support RSS handle receive processing as described in this topic.

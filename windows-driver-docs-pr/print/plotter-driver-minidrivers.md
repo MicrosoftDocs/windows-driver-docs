@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Plotter Driver Minidrivers
 
 
-
+## <a href="" id="ddk-plotter-driver-minidrivers-gg"></a>
 
 
 Model-specific minidrivers for the Microsoft Plotter Driver are vendor-supplied binary .pcd files created from text files that describe a device's characteristics.

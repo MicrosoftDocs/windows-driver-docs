@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Setting Device Object Properties in the Registry
 
 
-
+## <a href="" id="ddk-setting-device-object-properties-in-the-registry-kg"></a>
 
 
 Properties of device objects can be set in the registry as follows:

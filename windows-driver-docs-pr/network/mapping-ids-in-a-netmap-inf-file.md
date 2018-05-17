@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Mapping IDs in a Netmap.inf File
 
 
-
+## <a href="" id="ddk-mapping-ids-in-a-netmap-inf-file-ng"></a>
 
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.

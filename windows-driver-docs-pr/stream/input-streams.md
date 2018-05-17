@@ -22,7 +22,7 @@ ms.technology: windows-devices
 # Input Streams
 
 
-
+## <a href="" id="ddk-input-streams-ksg"></a>
 
 
 DVD input streams are provided to the minidriver as arrays of encrypted DVD PACKs. PACKs are as defined in the DVD specification. Note that the system clock reference (SCR) field of the PACK is set to zero because Microsoft's DVD architecture uses the "master clock" paradigm for audio and video synchronization. Typically, the audio stream of the DVD decoder minidriver provides the master clock. For more information, see [Master Clock](master-clock.md).

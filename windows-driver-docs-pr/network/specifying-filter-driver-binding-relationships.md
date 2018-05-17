@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Specifying Filter Driver Binding Relationships
 
 
-
+## <a href="" id="ddk-specifiying-filter-driver-binding-relationships-ng"></a>
 
 
 In a network driver INF file, the **UpperRange** entry lists the possible upper bindings and the **LowerRange** entry lists the possible lower bindings. These entries can contain various system-defined values.

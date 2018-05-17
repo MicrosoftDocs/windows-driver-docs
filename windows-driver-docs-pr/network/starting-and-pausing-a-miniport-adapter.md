@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Starting and Pausing a Miniport Adapter
 
 
-
+## <a href="" id="ddk-starting-and-pausing-an-adapter-ng"></a>
 
 
 NDIS pauses an adapter to stop data flow that could interfere with Plug and Play operations, such as adding or removing a filter driver, or requests, such as setting a packet filter or multicast address list on the NIC. For more information about how to modify a running driver stack, see [Modifying a Running Driver Stack](modifying-a-running-driver-stack.md).

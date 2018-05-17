@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Security Issues for WIA Drivers
 
 
-
+## <a href="" id="ddk-security-issues-for-wia-drivers-si"></a>
 
 
 Running services under a **LocalSystem** account can be dangerous, because **LocalSystem** is essentially Administrator and, therefore, has access to virtually any resource on the machine. Design flaws or buggy code in a service running under **LocalSystem** might result in an escalation of privilege for a destructive user. Windows XP introduced two new built-in service accounts, **LocalService** and **NetworkService**, specifically designed to mitigate the consequences of a service compromise. These two new accounts are restricted user accounts without any special privileges, except "Login as service".

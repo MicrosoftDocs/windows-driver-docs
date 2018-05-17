@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # WAN Miniport Drivers
 
 
-
+## <a href="" id="ddk-wan-miniport-drivers-ng"></a>
 
 
 This section describes CoNDIS WAN miniport drivers, CoNDIS WAN call managers, CoNDIS WAN miniport call managers (MCMs), and the environments in which they operate. These WAN drivers support the Remote Access Service (RAS) and the Point-to-Point Protocol (PPP) over such media as ISDN, Frame Relay, or Switched 56.

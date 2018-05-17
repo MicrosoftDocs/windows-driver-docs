@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 This topic identifies known issues in the tool outupt.
 
-## SENSOR\_PROPERTY\_DEVICE\_ID
+## <a href="" id="sensor-property-device-id"></a>SENSOR\_PROPERTY\_DEVICE\_ID
 
 
 The **SENSOR\_PROPERTY\_DEVICE\_ID** property, which the tool displays in the property list, corresponds to **SENSOR\_PROPERTY\_DEVICE\_PATH** property which is defined in the header file sensors.h.

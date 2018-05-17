@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Powering Up a Serial Device
 
 
-
+## <a href="" id="ddk-powering-up-a-serial-device-kg"></a>
 
 
 A serial device must be turned on (in the device power state **PowerDeviceD0**) for Serial to communicate with the device hardware. If the device is not turned on, Serial will attempt to turn on the device before the driver completes a request.

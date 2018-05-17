@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Industry Initiatives for Power Management
 
 
-
+## <a href="" id="ddk-industry-initiatives-for-power-management-kg"></a>
 
 
 The OnNow initiative defines hardware and software support required for power management.

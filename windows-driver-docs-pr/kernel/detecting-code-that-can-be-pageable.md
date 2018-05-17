@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Detecting Code That Can Be Pageable
 
 
-
+## <a href="" id="ddk-detecting-code-that-can-be-pageable-kg"></a>
 
 
 To detect code that runs at IRQL &gt;= DISPATCH\_LEVEL, use the [**PAGED\_CODE**](https://msdn.microsoft.com/library/windows/hardware/ff558773) macro. In debug mode, this macro generates a message if the code runs at IRQL &gt;= DISPATCH\_LEVEL. Add the macro as the first statement in a routine to mark the whole routine as paged code, as the following example shows:

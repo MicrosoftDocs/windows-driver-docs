@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Installing Serial Devices
 
 
-
+## <a href="" id="ddk-installing-serial-devices-kg"></a>
 
 
 This section includes the following topics about installing serial devices:

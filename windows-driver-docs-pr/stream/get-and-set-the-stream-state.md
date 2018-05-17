@@ -21,7 +21,7 @@ ms.technology: windows-devices
 # Get and Set the Stream State
 
 
-
+## <a href="" id="ddk-getting-and-setting-the-stream-state-ksg"></a>
 
 
 A subunit receives IOCTLs from a client application to get the current stream state or to set to a new stream state. When a data stream is created, it is initialized to the **KSSTATE\_STOP** state. The isochronous resource is allocated in the **KSSTATE\_ACQUIRE** state, and if it fails, it will return STATUS\_INSUFFICIENT\_RESOURCE (declared in *Ntstatus.h*) in the **KSSTATE\_PAUSE** state. Data streaming will commence in the **KSSTATE\_RUN** state.

@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Adding Document Feeder Support
 
 
-
+## <a href="" id="ddk-adding-document-feeder-support-si"></a>
 
 
 For information about adding automatic document feeder support to WIA item trees in Microsoft Windows Me and Windows XP see [WIA Scanner Item Tree Layout for Windows Me and Windows XP](wia-scanner-item-tree-layout-for-windows-me-and-windows-xp.md).

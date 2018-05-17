@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Configurable
 
 
-
+## <a href="" id="ddk-configurable-kg"></a>
 
 
 Today's peripheral devices must be *hardware-configurable*, and their drivers must be *software-configurable*.

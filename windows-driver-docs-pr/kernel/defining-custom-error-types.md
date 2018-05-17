@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Defining Custom Error Types
 
 
-
+## <a href="" id="ddk-defining-custom-error-types-kg"></a>
 
 
 Drivers can specify their own error types and error messages. To define a custom error message, you must first define a new IO\_ERR\_*XXX* value to specify as the **ErrorCode** member of the error log entry. The Event Viewer uses the IO\_ERR\_*XXX* value to look up the driver's error message.

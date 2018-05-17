@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Installation Requirements for Network Filter Intermediate Drivers
 
 
-
+## <a href="" id="ddk-installation-requirements-for-network-filter-intermediate-drivers-"></a>
 
 
 **Note**  Filter intermediate drivers are not supported in NDIS 6.0 and later. You should use the NDIS filter driver interface instead. For more information about NDIS filter drivers, see [NDIS Filter Drivers](ndis-filter-drivers.md).

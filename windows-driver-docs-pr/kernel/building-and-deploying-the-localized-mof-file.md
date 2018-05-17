@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Building and Deploying the Localized MOF File
 
 
-
+## <a href="" id="ddk-building-and-deploying-the-localized-mof-file-kg"></a>
 
 
 International versions of Windows XP and later versions of the operating system come in two flavors — single-language (localized) versions, and Multilanguage User Interface (MUI) versions. An MUI version of Windows can support several languages simultaneously.

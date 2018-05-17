@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Adding Bidirectional Communication
 
 
-
+## <a href="" id="ddk-adding-bidirectional-communication-gg"></a>
 
 
 The spooler provides support for bidirectional ("BiDi") communication between an application or driver and a printer. This support enables the application or driver to send one or more requests to the printer, and the printer to respond to these requests.

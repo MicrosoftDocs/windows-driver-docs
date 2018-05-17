@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Text Mode Phase of the Network Upgrade Process
 
 
-
+## <a href="" id="ddk-text-mode-phase-of-the-network-upgrade-process-ng"></a>
 
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.

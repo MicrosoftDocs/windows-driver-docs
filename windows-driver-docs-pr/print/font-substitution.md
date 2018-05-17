@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Font Substitution
 
 
-
+## <a href="" id="ddk-font-substitution-gg"></a>
 
 
 For printers that provide hardware-resident or cartridge fonts, a font substitution table can be specified. By providing a font substitution table, you specify hardware-resident or cartridge fonts that can be substituted for TrueType fonts that must be downloaded. When Unidrv receives text in such a TrueType font, it first checks to see if the font substitution table contains a hardware-resident substitution for the font. If Unidrv finds a substituted resident font, and if the font metrics (such as character set, weight, italic, orientation, and so on) are compatible, the resident font is used.

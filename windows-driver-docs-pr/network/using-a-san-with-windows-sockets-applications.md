@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Using a SAN with Windows Sockets Applications
 
 
-
+## <a href="" id="ddk-using-a-san-with-windows-sockets-applications-ng"></a>
 
 
 Windows Sockets applications can benefit from using a system area network (SAN). These applications can use a SAN to transfer data in bulk form and to drop data directly onto the SAN network, without copying across the user-kernel boundary, using a technology called [Windows Sockets Direct](windows-sockets-direct.md). Windows Sockets Direct lets these applications use a SAN transparently.

@@ -17,7 +17,7 @@ ms.technology: windows-devices
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-
+## <a href="" id="ddk-traversing-nats-and-napts-with-udp-encapsulated-esp-packets-ng"></a>
 
 
 Network address translators (NATs) and network address port translators (NAPTs) convert multiple private network addresses into one routeable IP public address and vice versa, thereby allowing many systems to share a single IP address. In this way, NATs and NAPTs help to alleviate the shortage of routeable IPv4 addresses.

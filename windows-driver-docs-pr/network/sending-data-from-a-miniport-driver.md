@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Sending Data from a Miniport Driver
 
 
-
+## <a href="" id="ddk-sending-data-from-a-miniport-driver-ng"></a>
 
 
 The following figure illustrates a miniport driver send operation.

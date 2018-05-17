@@ -17,7 +17,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-
+## <a href="" id="ddk-filling-in-the-queried-state-ng"></a>
 
 
 The offload target queries the state that is identified by the [**NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff566469) structures in the state tree. An NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST structure references state to be queried if its **MiniportOffloadContext** member points to a memory location that contains a non-NULL PVOID value. (For more information about the **MiniportOffloadContext** member, see [Storing and Referencing Offloaded State](storing-and-referencing-offloaded-state.md).) This PVOID value references the miniport offload context that contains the state to be queried.

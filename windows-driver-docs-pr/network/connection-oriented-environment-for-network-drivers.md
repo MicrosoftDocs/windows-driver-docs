@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Connection-Oriented Environment for Network Drivers
 
 
-
+## <a href="" id="ddk-connection-oriented-environment-for-network-drivers-ng"></a>
 
 
 Connection-oriented drivers are supported by the [Connection-Oriented NDIS (CoNDIS)](connection-oriented-ndis.md) interface.

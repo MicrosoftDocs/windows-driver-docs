@@ -22,7 +22,7 @@ This topic contains the following information:
 
 -   [Actions Performed by the PF Miniport Driver When *MiniportHaltEx* is Called](#miniport-driver)
 
-## Actions Performed by NDIS and Overlying Drivers Before *MiniportHaltEx* is Called
+## <a href="" id="overlying-drivers"></a>Actions Performed by NDIS and Overlying Drivers Before *MiniportHaltEx* is Called
 
 
 Before NDIS calls the PF miniport driver's [*MiniportHaltEx*](https://msdn.microsoft.com/library/windows/hardware/ff559388) function, it first does the following:
@@ -55,7 +55,7 @@ After all receive filters, nondefault VPorts, and VFs have been deleted from the
 
 -   After all NIC switches have been successfully deleted, NDIS calls the [*MiniportHaltEx*](https://msdn.microsoft.com/library/windows/hardware/ff559388) function of the PF miniport driver.
 
-## Actions Performed by the PF Miniport Driver When *MiniportHaltEx* is Called
+## <a href="" id="miniport-driver"></a>Actions Performed by the PF Miniport Driver When *MiniportHaltEx* is Called
 
 
 When NDIS calls *MiniportHaltEx*, the PF miniport driver must follow these steps:

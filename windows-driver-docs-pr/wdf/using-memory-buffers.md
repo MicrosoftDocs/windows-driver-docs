@@ -22,7 +22,7 @@ ms.technology: windows-devices
 # Using Memory Buffers
 
 
-
+## <a href="" id="ddk-referencing-memory-df"></a>
 
 
 Drivers typically use memory buffers to pass data to and from the framework and other drivers or to store information locally. This topic describes [framework memory objects](#using-framework-memory-objects), [lookaside lists](#using-lookaside-lists), [MDLs](#using-mdls), and [local buffers](#allocating-local-buffers).

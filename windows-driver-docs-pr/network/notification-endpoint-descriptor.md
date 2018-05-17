@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Notification Endpoint Descriptor
 
 
-
+## <a href="" id="ddk-notification-endpoint-descriptor-ng"></a>
 
 
 <table>

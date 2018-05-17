@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # GDI-Supplied Halftoning
 
 
-
+## <a href="" id="ddk-gdi-supplied-halftoning-gg"></a>
 
 
 If a specified color format is one for which the number of bits per pixel used for rendering the image (\*DrvBPP) is the same as the bits per pixel supported by the printer (\*DevBPP multiplied by \*DevNumOfPlanes), then halftoning operations are handled by GDI. An example is a \*DrvBPP value of four, with \*DevBPP equal to one and \*DevNumOfPlanes equal to four.

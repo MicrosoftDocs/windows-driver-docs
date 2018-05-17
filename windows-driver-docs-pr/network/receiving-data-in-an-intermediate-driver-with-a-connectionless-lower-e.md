@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Receiving Data in an Intermediate Driver with a Connectionless Lower Edge
 
 
-
+## <a href="" id="ddk-receiving-data-in-an-intermediate-driver-with-a-connectionless-low"></a>
 
 
 An intermediate driver with a connectionless lower edge must have a [**ProtocolReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff570267) function to receive network data.

@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Specifying Feature and Option Display Order
 
 
-
+## <a href="" id="ddk-specifying-feature-and-option-display-order-gg"></a>
 
 
 To control the order in which features and options are displayed on Unidrv-generated property sheet pages, include empty \*Feature and \*Option entries in the GPD file. These entries must be placed towards the beginning of the file, before the appearance of full \*Feature and \*Option entries, and before any other references to feature or option names. The order in which the empty entries are listed is the order in which the features and options appear on the property sheet pages. (Note, however, that options of the PaperSize feature are always listed in alphabetical order, and this order cannot be changed.)

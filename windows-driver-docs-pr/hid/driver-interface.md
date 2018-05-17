@@ -9,7 +9,7 @@ keywords: ["force feedback drivers WDK HID , methods supported"]
 # Driver Interface
 
 
-
+## <a href="" id="ddk-driver-interface-di"></a>
 
 
 If the force-feedback driver is COM-based, an instance of the driver is created by DirectInput. If the interface specified is "VJoyD", then the VJoyD minidriver is loaded by VJoyD. Both driver paths support the following exported methods:

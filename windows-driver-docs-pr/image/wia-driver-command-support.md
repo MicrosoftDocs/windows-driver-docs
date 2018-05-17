@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Driver Command Support
 
 
-
+## <a href="" id="ddk-wia-driver-command-support-si"></a>
 
 
 A WIA device command is a request sent by the WIA service (on behalf of the imaging application) to the WIA minidriver, instructing it to perform a particular action.

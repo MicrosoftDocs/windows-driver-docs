@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Implementing Flatbed Scanner Item Trees
 
 
-
+## <a href="" id="ddk-implementation-notes-on-flatbed-scanner-item-trees-si"></a>
 
 
 This section contains additional information about the flags and properties that you can use with flatbed scanners. It also contains basic scanning information for flatbed scanners.

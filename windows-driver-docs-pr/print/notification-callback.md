@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Notification Callback
 
 
-
+## <a href="" id="ddk-notification-callback-gg"></a>
 
 
 Any print component or listening application that is interested in receiving notifications must provide objects that expose the [IPrintAsyncNotifyCallback](http://go.microsoft.com/fwlink/p/?linkid=124755) interface. The interface inherits from **IUnknown** so that the clients of the spooler notification mechanism can implement either a COM or a C++ object.

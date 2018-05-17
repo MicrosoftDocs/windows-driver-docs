@@ -16,7 +16,7 @@ ms.technology: windows-devices
 This function is reserved for system use.
 
 
-
+## <a href="" id="ddk-cm-prob-invalid-data-dg"></a>
 
 
 Invalid [device IDs](device-ids.md) have been detected.

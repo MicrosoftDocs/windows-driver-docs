@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # DriverEntry's Optional Responsibilities
 
 
-
+## <a href="" id="ddk-driverentry-s-optional-responsibilities-kg"></a>
 
 
 Depending on the position of a particular driver in a chain of layered drivers, the nature of the underlying device, and the design of the driver, a [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine also can be responsible for the following:

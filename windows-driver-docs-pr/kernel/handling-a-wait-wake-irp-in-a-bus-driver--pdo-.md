@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Handling a Wait/Wake IRP in a Bus Driver (PDO)
 
 
-
+## <a href="" id="ddk-handling-a-wait-wake-irp-in-a-bus-driver-pdo--kg"></a>
 
 
 Like other power IRPs, each wait/wake IRP must be passed all the way down the device stack to the bus driver (PDO), which is ultimately responsible for completing the IRP. Upon receiving the IRP, the bus driver can either fail it immediately or hold it pending for later completion. The following are the steps the bus driver must take:

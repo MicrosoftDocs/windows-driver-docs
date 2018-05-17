@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Segmentation Filter
 
 
-
+## <a href="" id="ddk-wia-segmentation-filter-si"></a>
 
 
 This section provides information about Windows Image Acquisition (WIA) segmentation filters. WIA segmentation filters are available beginning with Windows Vista.

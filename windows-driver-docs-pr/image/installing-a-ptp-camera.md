@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Installing a PTP Camera
 
 
-
+## <a href="" id="ddk-installing-a-ptp-camera-si"></a>
 
 
 If your camera supports PTP, all you need to do is plug in your device to get it installed as a WIA device. The Microsoft PTP WIA Minidriver will do the rest.

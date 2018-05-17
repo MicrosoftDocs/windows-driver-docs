@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Filter Module Status Indications
 
 
-
+## <a href="" id="ddk-filter-module-status-indications-ng"></a>
 
 
 Filter drivers can supply a [*FilterStatus*](https://msdn.microsoft.com/library/windows/hardware/ff549973) function that NDIS calls when an underlying driver reports status. Filter drivers can also initiate status indications.

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Porting Miniport Adapter Check for Hang and Reset Operations to NDIS 6.0
 
 
-
+## <a href="" id="ddk-porting-miniport-adapter-check-for-hang-and-reset-operations-to-nd"></a>
 
 
 In NDIS 6.0 miniport drivers, replace the NDIS 5.x [**MiniportCheckForHang**](https://msdn.microsoft.com/library/windows/hardware/ff549367) function with the [*MiniportCheckForHangEx*](https://msdn.microsoft.com/library/windows/hardware/ff559346) function. Also, replace NDIS 5.x [*MiniportReset*](https://msdn.microsoft.com/library/windows/hardware/ff550502) function with the [*MiniportResetEx*](https://msdn.microsoft.com/library/windows/hardware/ff559432) function.

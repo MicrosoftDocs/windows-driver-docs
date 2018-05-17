@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Guidelines for Using SetupAPI
 
 
-
+## <a href="" id="ddk-guidelines-for-using-setupapi-dg"></a>
 
 
 The following are guidelines for using the [general Setup functions](https://msdn.microsoft.com/library/windows/hardware/ff544985) (**Setup***Xxx*) and [device installation functions](https://msdn.microsoft.com/library/windows/hardware/ff541299) (**SetupDi***Xxx*) that are provided by SetupAPI:

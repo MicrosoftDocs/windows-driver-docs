@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Minidriver Interfaces
 
 
-
+## <a href="" id="ddk-wia-minidriver-interfaces-si"></a>
 
 
 The WIA minidriver is a COM object that implements the standard **IUnknown** COM interface (which is described in the Microsoft Windows SDK documentation) and two additional WIA-specific interfaces: [IStiUSD](istiusd-com-interface.md) and [IWiaMiniDrv](https://msdn.microsoft.com/library/windows/hardware/ff545027).

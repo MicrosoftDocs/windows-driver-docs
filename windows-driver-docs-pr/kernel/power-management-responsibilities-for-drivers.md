@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Power Management Responsibilities for Drivers
 
 
-
+## <a href="" id="ddk-power-management-responsibilities-for-drivers-kg"></a>
 
 
 Drivers that support power management are responsible for:

@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Allocating and Freeing VM Queues
 
 
-
+## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
 
 
 This section includes the following topics:

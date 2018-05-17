@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Porting NDIS Protocol Driver Send Data Handling
 
 
-
+## <a href="" id="ddk-porting-ndis-protocol-driver-send-data-handling-nd"></a>
 
 
 In NDIS 6.0. the [**NdisSendNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff564535) function replaces the [**NdisSendPackets**](https://msdn.microsoft.com/library/windows/hardware/ff554715) function. **NdisSendNetBufferLists** sends a pointer to a linked list of [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures, each of which contains a linked list of [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structures. **NdisSendNetBufferLists** does not return a completion status. NDIS always completes a send operation asynchronously by calling the [**ProtocolSendNetBufferListsComplete**](https://msdn.microsoft.com/library/windows/hardware/ff570268) function.

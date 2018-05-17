@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Property Sheet Extensions
 
 
-
+## <a href="" id="ddk-property-sheet-extensions-si"></a>
 
 
 The Properties context menu item provides access to scanner or camera property sheets in either the Scanners and Cameras Control Panel folder for devices (root items) or the My Computer folder.

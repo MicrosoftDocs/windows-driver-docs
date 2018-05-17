@@ -19,7 +19,7 @@ ms.technology: windows-devices
 
 User-mode applications and kernel-mode drivers that are HID clients should always free any resources that are no longer required.
 
-
+## <a href="" id="ddk-freeing-resources-kg"></a>
 
 
 For example, a user-mode application must call [**SetupDiDestroyDeviceInfoList**](https://msdn.microsoft.com/library/windows/hardware/ff550996) with the handle to the device list that it obtained from [**SetupDiGetClassDevs**](https://msdn.microsoft.com/library/windows/hardware/ff551069) after completing its initialization and connection operations for a HIDClass device. Failure to call **SetupDiDestroyDeviceInfoList** causes a memory leak.

@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Notification Errors
 
 
-
+## <a href="" id="ddk-notification-errors-gg"></a>
 
 
 The members of the **PrintAsyncNotifyError** enumerated type are used to signify the type of error that occurred. The following table describes the possible error codes.

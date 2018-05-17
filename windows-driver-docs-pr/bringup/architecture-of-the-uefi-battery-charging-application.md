@@ -246,7 +246,7 @@ The following table illustrates how the UEFI battery charging application reacts
 
  
 
-## User experience
+## <a href="" id="ux"></a>User experience
 
 
 The following diagram shows how the UEFI battery charging application draws the UI to the screen if there is not enough charge in the battery, or if the device is in *power-off charging mode*.

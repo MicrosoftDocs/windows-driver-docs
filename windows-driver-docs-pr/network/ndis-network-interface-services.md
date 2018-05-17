@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # NDIS Network Interface Services
 
 
-
+## <a href="" id="ddk-ndis-network-interface-services-ng"></a>
 
 
 The NDIS network interfaces programming interface provides services to:

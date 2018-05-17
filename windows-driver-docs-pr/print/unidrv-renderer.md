@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Unidrv Renderer
 
 
-
+## <a href="" id="ddk-unidrv-renderer-gg"></a>
 
 
 The Unidrv renderer is implemented as a [printer graphics DLL](printer-graphics-dll.md) and thus exports functions defined by the Microsoft Device Driver Interface (DDI) for graphics drivers. When an application calls Graphics Device Interface (GDI) functions to send images to a printer device, the kernel-mode graphics engine calls the renderer's graphics DDI functions. These graphics DDI functions assist GDI in drawing a print job's page images.

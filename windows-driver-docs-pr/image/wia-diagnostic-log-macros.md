@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Diagnostic Log Macros
 
 
-
+## <a href="" id="ddk-wia-diagnostic-log-macros-si"></a>
 
 
 For error handling on Windows Vista and later operating systems, see [WIA Driver Error Recovery for Windows Vista](wia-driver-error-recovery-for-windows-vista.md).

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Registering a SAP
 
 
-
+## <a href="" id="ddk-registering-a-sap-ng"></a>
 
 
 If a client accepts incoming calls, its [**ProtocolClOpenAfCompleteEx**](https://msdn.microsoft.com/library/windows/hardware/ff570235) function usually registers one or more SAPs with the call manager by calling [**NdisClRegisterSap**](https://msdn.microsoft.com/library/windows/hardware/ff561648).

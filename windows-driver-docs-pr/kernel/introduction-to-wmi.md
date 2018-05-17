@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Introduction to WMI
 
 
-
+## <a href="" id="ddk-introduction-to-wmi-kg"></a>
 
 
 By making your driver a WMI provider, you can:

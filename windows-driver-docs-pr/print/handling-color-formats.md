@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Handling Color Formats
 
 
-
+## <a href="" id="ddk-handling-color-formats-gg"></a>
 
 
 Each color format that a printer supports is specified as an option to the ColorMode feature. By using [option attributes for the ColorMode feature](option-attributes-for-the-colormode-feature.md), you can describe each color format that your printer accepts. The following table illustrates the color data formats that Unidrv can handle.

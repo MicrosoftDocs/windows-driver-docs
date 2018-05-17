@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Introduction to NDIS Intermediate Drivers
 
 
-
+## <a href="" id="ddk-introduction-to-intermediate-drivers-ng"></a>
 
 
 NDIS driver stacks must include miniport drivers and protocol drivers and can also include intermediate drivers. Because intermediate drivers are optional, you must understand the relationships between miniport drivers, protocol drivers, and NDIS before addressing intermediate drivers.

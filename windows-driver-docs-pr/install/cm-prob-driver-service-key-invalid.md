@@ -16,7 +16,7 @@ ms.technology: windows-devices
 This function is reserved for system use.
 
 
-
+## <a href="" id="ddk-cm-prob-driver-service-key-invalid-dg"></a>
 
 
 Information in the registry's service key for the driver is invalid.

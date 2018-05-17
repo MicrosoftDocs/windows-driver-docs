@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Protocol Driver Design Concepts
 
 
-
+## <a href="" id="ddk-protocol-driver-design-concepts-ng"></a>
 
 
 The following topics describe how to implement a protocol driver:

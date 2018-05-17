@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Introduction to Receive Side Scaling
 
 
-
+## <a href="" id="ddk-introduction-to-receive-side-scaling-ng"></a>
 
 
 Receive side scaling (RSS) is a network driver technology that enables the efficient distribution of network receive processing across multiple CPUs in multiprocessor systems.

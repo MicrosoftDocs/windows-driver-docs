@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Port Monitor Server DLL Functions
 
 
-
+## <a href="" id="ddk-port-monitor-server-dll-functions-gg"></a>
 
 
 The following table lists the functions that a port monitor server DLL must define.

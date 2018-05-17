@@ -9,7 +9,7 @@ keywords: ["HID reports WDK , setting control data", "reports WDK HID , setting 
 # Setting Button State by Specifying Its Usage
 
 
-
+## <a href="" id="ddk-setting-button-state-by-specifying-its-usage-kg"></a>
 
 
 An application or driver can set the state of buttons in a properly-initialized HID report by calling one of the following HID support routines:

@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Allocating and Freeing Scatter/Gather Lists
 
 
-
+## <a href="" id="ddk-allocating-and-freeing-scatter-gather-lists-ng"></a>
 
 
 An NDIS miniport driver calls the [**NdisMAllocateNetBufferSGList**](https://msdn.microsoft.com/library/windows/hardware/ff562776) function in its [*MiniportSendNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/ff559440) function. The miniport driver calls **NdisMAllocateNetBufferSGList** once for each [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structure that it must map. After the resources become available and HAL has the SG list ready, NDIS calls the driver's [*MiniportProcessSGList*](https://msdn.microsoft.com/library/windows/hardware/ff559420) function. NDIS can call *MiniportProcessSGList* before or after the miniport driver's call to **NdisMAllocateNetBufferSGList** returns.

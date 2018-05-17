@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Using EnumFeatures
 
 
-
+## <a href="" id="ddk-using-enumfeatures-gg"></a>
 
 
 A caller can use **EnumFeatures** to retrieve a keyword list that contains currently supported driver features and all PPD features, in addition to the following, which Pscript treats as if they were features defined within PPD \*OpenUI/\*CloseUI structure keywords:

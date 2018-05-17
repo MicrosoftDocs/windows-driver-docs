@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Commands for Device Fonts
 
 
-
+## <a href="" id="ddk-commands-for-device-fonts-gg"></a>
 
 
 There are no commands associated with device fonts. For information about device font attributes, see [Attributes for Device Fonts](attributes-for-device-fonts.md).
