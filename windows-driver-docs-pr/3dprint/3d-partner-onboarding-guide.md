@@ -3,7 +3,7 @@ title: 3D print partner onboarding guide
 author: windows-driver-content
 description: This topic describes how to implement 3D printer drivers that are then published on Windows Update.
 ms.author: windowsdriverdev
-ms.date: 05/15/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -96,7 +96,7 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
 7. Publish and distribute the driver
 
-    - Follow the guidance in the [Windows Hardware Dev Center dashboard](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard) topics to publish your driver.
+    - Follow the guidance in the [Windows Hardware Dev Center dashboard](https://docs.microsoft.com/windows-hardware/drivers/dashboard) topics to publish your driver.
 
 
 

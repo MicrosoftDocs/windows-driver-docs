@@ -10,7 +10,7 @@ keywords:
 - macros WDK printer
 - global variables WDK debugging
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -32,9 +32,9 @@ Steps for debugging a user-mode driver and some general debugging tips are inclu
 
 To start debugging printer drivers and their components:
 
-1.  Install the latest debugging tools. See [Download Debugging Tools for Windows](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools)
+1.  Install the latest debugging tools. See [Download Debugging Tools for Windows](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools)
 
-2.  Install the correct symbols from [Windows Symbol Packages](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-symbols)
+2.  Install the correct symbols from [Windows Symbol Packages](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-symbols)
 
 **Note**   It is very important that you use the latest version of the debugger.
 

@@ -20,7 +20,7 @@ The [ACPI 5.0 specification](http://www.uefi.org/specifications) defines several
 
 Windows Plug and Play finds and loads device drivers based on a device identifier provided by the enumerator of the device. Enumerators are bus drivers that know how to extract identification information from the device. Some buses (such as PCI, SD, and USB) have hardware-defined mechanisms to do this extraction. For buses that do not (such as the processor bus or a simple peripheral bus), ACPI defines identification objects in the namespace.
 
-The [Windows ACPI driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/acpi-driver), Acpi.sys, assembles the values found in these objects into a variety of device identifier strings that can identify a device very specifically, or quite generically, depending on the needs of the driver. Some of the string patterns created to identify ACPI-enumerated devices are:
+The [Windows ACPI driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/acpi-driver), Acpi.sys, assembles the values found in these objects into a variety of device identifier strings that can identify a device very specifically, or quite generically, depending on the needs of the driver. Some of the string patterns created to identify ACPI-enumerated devices are:
 
 ``` syntax
 ACPI\VEN_vvv[v]&DEV_dddd&SUBSYS_sss[s]nnnn&REV_rrrr
@@ -125,11 +125,11 @@ There can also be software dependencies between device drivers. These dependenci
 -   For driver-load-order dependencies, see [How To Control Device Driver Load Order](http://support.microsoft.com/kb/115486).
 -   For power-relations dependencies, see:
 
-    -   [**IoInvalidateDeviceRelations**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioinvalidatedevicerelations) routine (To trigger establishing power relations, call the **IoInvalidateDeviceRelations** routine with the **DEVICE\_RELATION\_TYPE** enum value **PowerRelations**.)
-    -   [**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mn-query-device-relations)
-    -   [Enumerating the Devices on a Bus](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/enumerating-the-devices-on-a-bus)
-    -   [Dynamic Enumeration](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/dynamic-enumeration)
-    -   [**WdfDeviceInitSetPnpPowerEventCallbacks**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks) method
+    -   [**IoInvalidateDeviceRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioinvalidatedevicerelations) routine (To trigger establishing power relations, call the **IoInvalidateDeviceRelations** routine with the **DEVICE\_RELATION\_TYPE** enum value **PowerRelations**.)
+    -   [**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-device-relations)
+    -   [Enumerating the Devices on a Bus](https://docs.microsoft.com/windows-hardware/drivers/wdf/enumerating-the-devices-on-a-bus)
+    -   [Dynamic Enumeration](https://docs.microsoft.com/windows-hardware/drivers/wdf/dynamic-enumeration)
+    -   [**WdfDeviceInitSetPnpPowerEventCallbacks**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks) method
 
 
 
