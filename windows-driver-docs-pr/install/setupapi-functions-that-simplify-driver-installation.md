@@ -8,7 +8,6 @@ keywords:
 - DiInstallDriver
 - DiRollbackDriver
 - DiShowUpdateDevice
-- InstallSelectedDriver
 - UpdateDriverForPlugAndPlayDevices
 - PnP WDK device installations , SetupAPI
 - Plug and Play WDK device installations , SetupAPI
@@ -85,14 +84,6 @@ The [**DiShowUpdateDevice**](https://msdn.microsoft.com/library/windows/hardware
 A caller can also direct **DiShowUpdateDevice** to indicate to the caller whether a system restart is required to complete the installation.
 
 For more information about how to update device drivers by using Hardware Update wizard, see information about Device Manager in Help and Support Center.
-
-### <a href="" id="installselecteddriver"></a> InstallSelectedDriver
-
-The [**InstallSelectedDriver**](https://msdn.microsoft.com/library/windows/hardware/ff547654) function installs a specific driver that is preinstalled in the [driver store](driver-store.md) on a specific device present in the system. **InstallSelectedDriver** is provided to support the same basic operation that is performed by [**DiInstallDevice**](https://msdn.microsoft.com/library/windows/hardware/ff544710)**.**
-
-To maintain compatibility with earlier versions of Windows, Windows Vista and later versions of Windows support **InstallSelectedDriver**. However, starting with Windows Vista, installation applications should call **DiInstallDevice** instead.
-
-**InstallSelectedDriver** does not support all the options that **DiInstallDevice** supports.
 
 ### <a href="" id="updatedriverforplugandplaydevices"></a> UpdateDriverForPlugAndPlayDevices
 
