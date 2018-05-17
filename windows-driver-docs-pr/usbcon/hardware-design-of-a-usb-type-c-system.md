@@ -28,7 +28,7 @@ A typical USB Type-C system has these components:
 -   **Mux** SuperSpeed USB pairs to a port on the controller depending on the orientation detected by Type-C port controller. Mux SuperSpeed pairs and possibly SBU lines elsewhere (usually the Display module) when entering an alternate mode.
 -   **VBus/VConn** source is required. Most PMICs implement VBus/VConn control. Contact your SoC/PMIC vendor for details.
 
-## USB Type-C system design with an embedded controller
+## <a href="" id="emb"></a>USB Type-C system design with an embedded controller
 
 
 In addition to the components in the preceding list, a USB Type-C system can have an embedded controller. This intelligent microcontroller that acts as the Type-C and Power Delivery policy manager for the system.
@@ -45,7 +45,7 @@ For a system that has an embedded controller, load the Microsoft provided in-box
 
 [UCSI driver](ucsi.md). For information about the device stacks loaded for the driver, see [Drivers for supporting USB Type-C components for systems with embedded controllers](architecture--usb-type-c-in-a-windows-system.md#drivers).
 
-## USB Type-C system design
+## <a href="" id="hardware"></a>USB Type-C system design
 
 
 Here is an example of a USB Type-C system for a mobile device that does not have an embedded controller:

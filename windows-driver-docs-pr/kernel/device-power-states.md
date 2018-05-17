@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Device Power States
 
 
-
+## <a href="" id="ddk-device-power-states-kg"></a>
 
 
 A device power state describes the power state of a device in a computer, independently of the other devices in the computer. Device power states are named D0, D1, D2, and D3. D0 is the fully on state, and D1, D2, and D3 are low-power states. The state number is inversely related to power consumption: higher numbered states use less power. Starting with Windows 8, the D3 state is divided into two substates, D3hot and D3cold.
@@ -47,7 +47,7 @@ A driver or the power manager can request a device power state transition, and a
 
 [Handling IRP\_MN\_SET\_POWER for Device Power States](handling-irp-mn-set-power-for-device-power-states.md)
 
-
+## <a href="" id="power-state-diagram"></a>
 
 
 Like the system, a device can transition from the working state (D0) to any low-power state (D1, D2, or D3) and from any low-power state to the working state. The following diagram is a state graph that shows the valid device power state transitions.

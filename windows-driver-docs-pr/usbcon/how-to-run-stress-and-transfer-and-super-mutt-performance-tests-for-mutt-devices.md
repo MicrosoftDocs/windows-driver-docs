@@ -29,7 +29,7 @@ The .bat files as written will run the tests indefinitely. The tests should run 
 
 To exit all tests, press **Ctrl-C** in the command window. If the system does not generate a bugcheck during the run and exits cleanly from the command window, the test run is considered to be successful (or a positive run). If the tool does not exit cleanly, then it indicates that transfers are not completing and must be investigated.
 
-## How to run SuperMUTT performance tests
+## <a href="" id="supermutt-perf"></a>How to run SuperMUTT performance tests
 
 
 1.  Open an elevated command window on the test system that has a SuperMUTT attached to an xHCI controller.

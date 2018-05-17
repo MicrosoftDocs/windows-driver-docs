@@ -130,7 +130,7 @@ Starting with Windows 8, these additional properties are supported for user-mod
 
  
 
-## Windows 8.1 extended camera control properties
+## <a href="" id="win8-1-extended-props"></a>Windows 8.1 extended camera control properties
 
 
 Starting with Windows 8.1, the [KSPROPERTYSETID\_ExtendedCameraControl](https://msdn.microsoft.com/library/windows/hardware/dn567570) property set provides additional controls for camera photo sequencing. For more info on how to implement these controls, see these topics:
