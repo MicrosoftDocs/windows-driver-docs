@@ -9,7 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Get started with the Hardware dashboard program
+# Get started with the hardware dashboard program
 
 The Windows Hardware Dev Center Dashboard enables you to create and manage your system and driver submissions quickly and easily, with improved experiences for:
 
