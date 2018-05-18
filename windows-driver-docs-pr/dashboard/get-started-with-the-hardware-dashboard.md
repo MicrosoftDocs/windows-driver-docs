@@ -9,12 +9,27 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Get started with the Hardware program
+# Get started with the Hardware dashboard program
 
+The Windows Hardware Dev Center Dashboard enables you to create and manage your system and driver submissions quickly and easily, with improved experiences for:
 
-It's easy to get started with the Windows Hardware Dev Center program.
+* Using the dashboard API to programmatically work with submissions 
 
-## <span id="Register_for_the_Hardware_Program"></span><span id="register_for_the_hardware_program"></span><span id="REGISTER_FOR_THE_HARDWARE_PROGRAM"></span>Register for the Hardware Program
+* HCK/HLK device certification submissions
+
+* Publishing to Windows Update as either a critical and/or dynamic update using shipping labels
+
+* Sharing your driver with another company (Resell)
+
+* Customizing your driver after initial certification (DUA)
+
+* Managing your users and legal agreements
+
+* System/Hardware certification submissions
+
+To access the hardware dashboard, you need to register for hardware program.
+
+## Register for the hardware program
 
 
 Your company's administrator must [register](http://go.microsoft.com/fwlink/?LinkID=828002) for the Windows Hardware Dev Center program. See [Register for the Hardware Program](register-for-the-hardware-program.md) for additional information about the registration process.
