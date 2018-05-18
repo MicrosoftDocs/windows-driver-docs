@@ -24,7 +24,7 @@ ms.technology: windows-devices
 > | Device metadata                      | Mid 2018      | |
 > | Bug management                       | Migrated      | [Bug management](http://aka.ms/collaboratedocs) |
 > | Remote debugging (WRD)               | Retiring      | |
-> | Win32 app certification              | Retired      |  [Win32 logo certification deprecation]>>(https://blogs.msdn.microsoft.com/windows_hardware_certification/2018/04/19/win32-logo-certification-deprecation/)|
+> | Win32 app certification              | Retired      |  [Win32 logo certification deprecation](https://blogs.msdn.microsoft.com/windows_hardware_certification/2018/04/19/win32-logo-certification-deprecation/)|
 
 
 You can [certify your devices and apps for hardware certification](http://go.microsoft.com/fwlink/?LinkId=324025) using the legacy dashboard. You can also use the dashboard to manage submissions, track the performance of your device or app, and much more. To access the Dashboard, you’ll need [to register your company and get a code signing certificate](http://go.microsoft.com/fwlink/?LinkId=394273).
