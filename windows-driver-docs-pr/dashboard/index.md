@@ -53,7 +53,7 @@ The Windows Hardware Dev Center Dashboard replaces the legacy (Sysdev) dashboard
                     <div class="cardText">
                         <h3>Hardware Submissions</h3>
                         <ul>
-                            <li><a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/create-a-new-hardware-submission">Create a new driver submission</a></li>
+                            <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/create-a-new-hardware-submission">Create a new driver submission</a></li>
                             <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/manage-your-hardware-submissions">Manage your hardware submissions</a></li>
                             <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/driver-flighting">Driver flighting</a></li>
                         </ul>
@@ -138,7 +138,6 @@ The Windows Hardware Dev Center Dashboard replaces the legacy (Sysdev) dashboard
                         <h3>Dashboard information</h3>
                         <ul>
                             <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/hardware-dashboard-faq">Hardware dashboard FAQ</a></li>
-                            <li><a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/">What’s new in the Hardware dashboard</a></li>
                         </ul>
                     </div>
                 </div>
@@ -159,7 +158,7 @@ The Windows Hardware Dev Center Dashboard replaces the legacy (Sysdev) dashboard
                         <ul>
                             <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata">Device metadata</a></li>
                             <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/administration">Sysdev administration</a></li>
-                            <li><a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/windows-certified-products-list">Windows certified products list</a></li>
+                            <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/windows-certified-products-list">Windows certified products list</a></li>
                             <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/file-signing-services">File signing services</a></li>
                         </ul>
                     </div>
