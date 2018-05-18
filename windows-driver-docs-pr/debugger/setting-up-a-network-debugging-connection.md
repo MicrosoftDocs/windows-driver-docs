@@ -283,11 +283,14 @@ Windbg -k net:port=<yournetworkportnumber>,key=<key_output_from_kdnet>,target=::
 
 **NOTES**
 
-- Every debugger bcd setting that allows the hostip to be specified has a corresponding hostipv6 element.  There are 3.  One for boot and kernel debugging, one specific to kernel debugging, and one for hyper-v debugging.
+- Every debugger bcd setting that allows the hostip to be specified has a corresponding hostipv6 element.  There are three.  
 
-hostip - hostipv6.
-targethostip - targethostipv6
-hypervisorhostip - hypervisorhostipv6
+    IPv4 | IPv6 | Usage
+    |-----------|-----------|-----------|
+    hostip | hostipv6 | For boot and kernel debugging
+    targethostip | targethostipv6  | Specific to kernel debugging  
+    hypervisorhostip | hypervisorhostipv6  | For hyper-v debugging
+
 
 - If you set the hostipv6 style address for any of those kinds of debugging, it means you want and will get IPv6.
 

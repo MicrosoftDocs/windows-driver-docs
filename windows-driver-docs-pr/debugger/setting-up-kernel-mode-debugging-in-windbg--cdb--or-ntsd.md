@@ -19,12 +19,13 @@ This section describes how to set up kernel-mode debugging manually.
 
 
 -   [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md)
--   [Setting Up Kernel-Mode Debugging over a 1394 Cable Manually](setting-up-a-1394-cable-connection.md)
 -   [Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually](setting-up-a-usb-3-0-debug-cable-connection.md)
 -   [Setting Up Kernel-Mode Debugging over a USB 2.0 Cable Manually](setting-up-a-usb-2-0-debug-cable-connection.md)
 -   [Setting Up Kernel-Mode Debugging over a Serial Cable Manually](setting-up-a-null-modem-cable-connection.md)
 -   [Setting Up Kernel-Mode Debugging using Serial over USB Manually](setting-up-kernel-mode-debugging-using-serial-over-usb-manually-.md)
--   [Setting Up Kernel-Mode Debugging of a Virtual Machine Manually](attaching-to-a-virtual-machine--kernel-mode-.md)
+-   [Setting Up Kernel-Mode Debugging over a 1394 Cable Manually](setting-up-a-1394-cable-connection.md)
+-   [Setting Up Kernel-Mode Debugging of a Virtual Machine Host- KDNET](setting-up-network-debugging-of-a-virtual-machine-host.md)
+-   [Setting Up Kernel-Mode Debugging of a Virtual Machine Manually using a COM Port](attaching-to-a-virtual-machine--kernel-mode-.md)
 -   [Setting Up Local Kernel Debugging of a Single Computer Manually](setting-up-local-kernel-debugging-of-a-single-computer-manually.md)
 
 ## <span id="related_topics"></span>Related topics
