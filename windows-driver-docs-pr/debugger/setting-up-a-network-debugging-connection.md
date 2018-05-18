@@ -240,6 +240,7 @@ To use IpV6 with the debugger complete these steps.
 
 1. Ping your \<debughostname\> and note the IPv6 address that is reported on the Reply from output lines.Use this IPv6 address in place of x:y:z:p:d:q:r:n below
 
+TBD - Should we show the usage of KDNET to generate a proper key?
 
 2. Use BCDEdit to delete any existing ip address values in dbgsettings.
 
@@ -270,15 +271,15 @@ dhcp                    Yes
 The operation completed successfully.
 ```
 
-5. On the host machine use this command to start the debugger. 
+5. Reboot your target machine. 
+
+6. On the host machine use this command to start the debugger. 
 
 ```
 Windbg -k net:port=<yournetworkportnumber>,key=<key_output_from_kdnet>,target=::<YourIPv6Address> 
 ```
 
-5. Reboot your target machine. 
-
-6. The debugger should connect to the host debugger early during boot. You will know that KDNET is using an IPv6 connection because the IP addresses reported in the connected message will be IPv6 addresses instead of IPv4 addresses. 
+7. The debugger should connect to the host debugger early during boot. You will know that KDNET is using an IPv6 connection because the IP addresses reported in the connected message will be IPv6 addresses instead of IPv4 addresses. 
 
 
 **NOTES**
