@@ -160,6 +160,10 @@ Enabling network debugging on Intel(R) 82577LM Gigabit Network Connection.
 Key=2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
 ```
 
+> [!IMPORTANT]
+> Before using BCDEdit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC.
+> Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.
+
 5. Type this command to confirm that the dbgsettings are set properly.
 
 ```
@@ -180,7 +184,6 @@ Copy the auto generated unique key into a text file, to avoid having to type it 
 If you receive a pop-up message from the firewall, and you wish to use the debugger, unblock the types of networks that you desire.
 
 ![windows security alert - windows firewall has blocked some features of this app](images/debuglab-image-firewall-dialog-box.png)
-
  
 
 **&lt;- On the host system**

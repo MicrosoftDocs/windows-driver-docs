@@ -132,6 +132,10 @@ Approximate round trip times in milli-seconds:
 
 Enable kernel mode debugging on the target system by completing the following steps.
 
+> [!IMPORTANT]
+> Before using BCDEdit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC.
+> Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.
+
 1. On the target computer, open a Command Prompt window as Administrator. Enter this command to enable debugging.
 ```
 C:\> bcdedit /set {default} DEBUG YES

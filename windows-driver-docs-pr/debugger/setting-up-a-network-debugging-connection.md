@@ -4,7 +4,7 @@ description: Debugging Tools for Windows supports kernel debugging over an Ether
 ms.assetid: B4A79B2E-D4B1-42CA-9121-DEC923C76927
 keywords: ["Network debugging", "Ethernet debugging", "Docking station"]
 ms.author: domars
-ms.date: 05/03/2018
+ms.date: 05/18/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,7 +53,6 @@ Choose a port number that will be used for debugging on both the host and target
 **Note**  The range of port numbers that can be used for network debugging might be limited by your company's network policy. There is no way to tell from the host computer what the limitations are. To determine whether your company's policy limits the range of ports that can be used for network debugging, check with your network administrators.
 
  
-
 If you connect several target computers to a single host computer, each connection must have a unique port number. For example, if you connect 100 target computers to a single host computer, you can assign port 50000 to the first connection, port 50001 to the second connection, port 50002 to the third connection, and so on.
 
 **Note**  A different host computer could use the same range of ports (50000 through 50099) to connect to another 100 target computers.
@@ -66,6 +65,11 @@ If you connect several target computers to a single host computer, each connecti
 1.  Verify that the target computer has a supported network adapter.
 
 2.  Connect the supported adapter to a network hub or switch using standard CAT5 or better network cable. Do not use a crossover cable, and do not use a crossover port in your hub or switch.
+
+> [!IMPORTANT]
+> Before using BCDEdit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC.
+> Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.
+
 
 3.  In an elevated Command Prompt window, enter the following commands, where *w.x.y.z* is the IP address of the host computer, and *n* is a port number of your choice:
 
@@ -119,6 +123,56 @@ On the host computer, open a Command Prompt window. Enter the following command,
 
 If you are prompted about allowing KD to access the port through the firewall, allow KD to access the port for all the different network types.
 
+
+### <span id="Using_KDNET"></span><span id="using_kdnet"></span><span id="USING_KDNET"></span>Using KDNET.exe
+
+Use the KDNET.exe utility to generate a unique key by following these steps.
+
+1. Locate the WDK KDNET.exe and VerifiedNICList.xml files. By default it is located here.
+
+```
+C:\Program Files (x86)\Windows Kits\10\Debuggers\x64
+```
+
+Copy them to a network share or thumb drive, so that they will be available on the target computer.
+
+
+3. On the target computer, open a Command Prompt window as Administrator. Enter this command to validate that the NIC on the target PC is suported.
+
+```
+C:\KDNET>KDNet
+
+Network debugging is supported on the following NICs:
+busparams=0.25.0, Intel(R) 82579LM Gigabit Network Connection, KDNET is running on this NIC.kdnet.exe
+```
+
+
+4. Type this command to set the IP address of the host system. Use the IP address or the name of the host system. Pick a unique port address for each target/host pair that you work with, with in the range 50000-50039.
+
+```
+C:\>KDNet <HostComputerName> [DebugPort (50000-50039)] 
+
+NtQuerySystemInformation cannot query SystemKernelDebuggingAllowed on this OS.
+Enabling network debugging on Intel(R) 82577LM Gigabit Network Connection.
+Key=2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
+```
+3. Note down the key returned, or copy it into notepad .txt file.
+
+4. Restart the target PC. 
+
+5. To connect to the target PC use the following, where <YourPort> is the port you selected above between 50000-50039, and <YourKey> is the key that was returned by KDNet above.
+
+```
+C:\Debuggers\windbg -k net:port=<YourPort>,key=<YourKey> 
+```
+6. If the debugger does not connect use the ping command to verify connectivity and then refer to the troubleshooting steps below. 
+
+```
+C:\>Ping <HostComputerIPAddress> 
+```
+
+
+
 ### <span id="Allowing_the_debugger_through_the_firewall"></span><span id="allowing_the_debugger_through_the_firewall"></span><span id="ALLOWING_THE_DEBUGGER_THROUGH_THE_FIREWALL"></span>Allowing the debugger through the firewall
 
 When you first attempt to establish a network debugging connection, you might be prompted to allow the debugging application (WinDbg or KD) access through the firewall. Client versions of Windows display the prompt, but Server versions of Windows do not display the prompt. You should respond to the prompt by checking the boxes for all three network types: domain, private, and public. If you do not get the prompt, or if you did not check the boxes when the prompt was available, you must use Control Panel to allow access through the firewall. Open **Control Panel &gt; System and Security**, and click **Allow an app through Windows Firewall**. In the list of applications, locate Windows GUI Symbolic Debugger and Windows Kernel Debugger. Use the check boxes to allow those two applications through the firewall. Restart your debugging application (WinDbg or KD).
@@ -128,20 +182,17 @@ When you first attempt to establish a network debugging connection, you might be
 
 The kernel debugging driver on the target computer attempts to use Dynamic Host Configuration Protocol (DHCP) to get a routable IP address for the network adapter that is being used for debugging. If the driver obtains a DHCP-assigned address, then the target computer can be debugged by host computers located anywhere on the network. If the driver fails to obtain a DHCP-assigned address, it uses Automatic Private IP Addressing (APIPA) to obtain a local link IP address. Local link IP addresses are not routable, so a host and target cannot use a local link IP address to communicate through a router. In that case, network debugging will work if you plug the host and target computers into the same network hub or switch.
 
-## <span id="Creating_Your_Own_Key"></span><span id="creating_your_own_key"></span><span id="CREATING_YOUR_OWN_KEY"></span>Creating Your Own Key
 
+## <span id="Encryption_Key"></span><span id="encryption_key"></span><span id="ENCRYPTION_KEY"></span>Encryption key
 
-To keep the target computer secure, packets that travel between the host and target computers must be encrypted. We strongly recommend that you use an automatically generated encryption key (provided by **bcdedit** when you configure the target computer). However, you can choose to create your own key. Network debugging uses a 256-bit key that is specified as four 64-bit values, in base 36, separated by periods. Each 64-bit value is specified by using up to 13 characters. Valid characters are the letters a through z and the digits 0 through 9. Special characters are not allowed. The following list gives examples of valid (although not strong) keys:
-
--   1.2.3.4
--   abc.123.def.456
--   dont.use.previous.keys
+To keep the target computer secure, packets that travel between the host and target computers must be encrypted. We strongly recommend that you use an automatically generated encryption key (provided by **bcdedit** when you configure the target computer).Network debugging uses a 256-bit key that is specified as four 64-bit values, in base 36, separated by periods. Each 64-bit value is specified by using up to 13 characters. Valid characters are the letters a through z and the digits 0 through 9. Special characters are not allowed. 
 
 To specify your own key, open an elevated Command Prompt window on the target computer. Enter the following command, where *w.x.y.z* is the IP address of the host computer, and *n* is your port number, and *Key* is your key:
 
 **bcdedit /dbgsettings net hostip:***w.x.y.z* **port:***n* **key:***Key*
 
 Reboot the target computer.
+
 
 ## <span id="troubleshooting_tips_for_debugging_over_a_network_cable"></span><span id="TROUBLESHOOTING_TIPS_FOR_DEBUGGING_OVER_A_NETWORK_CABLE"></span>Troubleshooting Tips for Debugging over a Network Cable
 
@@ -181,8 +232,83 @@ If your target computer has more than one network adapter, you must specify the 
 
 Reboot the target computer.
 
-## <span id="related_topics"></span>Related topics
+## <span id="IPV6"></span><span id="ipv6"></span><span id="IPv6"></span>IPv6
 
+IPv6 support was added in June of 2018.
+
+To use IpV6 with the debugger complete these steps.
+
+1. Ping your \<debughostname\> and note the IPv6 address that is reported on the Reply from output lines.Use this IPv6 address in place of x:y:z:p:d:q:r:n below
+
+
+2. Use BCDEdit to delete any existing ip address values in dbgsettings.
+
+```
+bcdedit -deletevalue {dbgsettings} hostip
+```
+
+3. Set the IPv6 address of the host. There must not be any spaces in the hostipv6=x:y:z:p:d:q:r:n string. <YourPort> is the port you selected above between 50000-50039, and <YourKey> is the key that was returned by KDNet above.
+
+
+```
+bcdedit /dbgsettings net hostipv6:x:y:z:p:d:q:r:n port:<YourPort> key:<YourKey>
+```
+
+??? TBD - does upper/lower case matter?
+
+
+4. Type this command to confirm that the dbgsettings are set properly.
+
+```
+C:\> bcdedit /dbgsettings
+busparams               0.25.0
+key                     2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
+debugtype               NET
+hostipv6                  2001:db8:0:0:ff00:0:42:8329
+port                    50010
+dhcp                    Yes
+The operation completed successfully.
+```
+
+5. On the host machine use this command to start the debugger. 
+
+```
+Windbg -k net:port=<yournetworkportnumber>,key=<key_output_from_kdnet>,target=::<YourIPv6Address> 
+```
+
+5. Reboot your target machine. 
+
+6. The debugger should connect to the host debugger early during boot. You will know that KDNET is using an IPv6 connection because the IP addresses reported in the connected message will be IPv6 addresses instead of IPv4 addresses. 
+
+
+**NOTES**
+
+- Every debugger bcd setting that allows the hostip to be specified has a corresponding hostipv6 element.  There are 3.  One for boot and kernel debugging, one specific to kernel debugging, and one for hyper-v debugging.
+
+hostip - hostipv6.
+targethostip - targethostipv6
+hypervisorhostip - hypervisorhostipv6
+
+- If you set the hostipv6 style address for any of those kinds of debugging, it means you want and will get IPv6.
+
+- If you set the hostip style address for any of those kinds of debugging, it means you want and will get IPv4.
+
+- The target will only do IPv4 or IPv6, not both at the same time.
+
+- The host do will either one, and what is used, is under control of the target machine.
+
+- If the target= option on the debugger command line contains any : characters, the debugger will assume it is an IPv6 address, and will force use of IPv6 for that connection.
+
+- The debugger auto selects IPv4 or IPv6. The debugger determines if IPv4 or IPv6 is being used by the target machine, and connects automatically.
+
+- If you want to force IPv6 debugging in the debugger on the host, but you want the debugger to listen for a connection from the target, then you specify ,target=:: \<ipv6 address of 0\>.
+
+- If you want to force IPv4 debugging in the debugger on the host, but you want the debugger to listen for a connection from the target, then you specify ,target=0.0.0.0 (ipv4 address of 0)
+
+- If you specify ,target= and use a machine name, the debugger will convert that machine name into an IPv4 address and an IPv6 address, and will attempt to connect on both.
+
+
+## <span id="related_topics"></span>Related topics
 
 [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
 

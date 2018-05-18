@@ -19,6 +19,9 @@ The computer that runs the debugger is called the *host computer*, and the virtu
 
 ## <span id="Setting_Up_the_Target_Virtual_Machine"></span><span id="setting_up_the_target_virtual_machine"></span><span id="SETTING_UP_THE_TARGET_VIRTUAL_MACHINE"></span>Setting Up the Target Virtual Machine
 
+> [!IMPORTANT]
+> Before using BCDEdit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC.
+> Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.
 
 1.  In the virtual machine, in an elevated Command Prompt window, enter the following commands.
 

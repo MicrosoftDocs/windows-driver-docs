@@ -3,7 +3,7 @@ title: Setting Up Network Debugging of a Virtual Machine Host
 description: If your target computer is a virtual machine host, you can set up network debugging and still have network access for the virtual machines.
 ms.assetid: E4C4D2A1-2FB0-4028-8A52-30B8F4F738D0
 ms.author: domars
-ms.date: 11/28/2017
+ms.date: 05/18/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -23,6 +23,21 @@ Suppose you want to set up network debugging in the following situation.
 The best approach is to set up network debugging on the target computer before you install the Hyper-V role. Then the virtual machines will have access to the network.
 
 If you decide to set up network debugging after the Hyper-V role has been installed on the target computer, you must change the network settings for your virtual machines to bridge them to the Microsoft Kernel Network Debug Adapter. Otherwise, the virtual machines will not have access to the network.
+
+
+1. Type this command to confirm that the dbgsettings are set properly.
+
+```
+C:\> bcdedit /dbgsettings
+busparams               0.25.0
+key                     2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
+debugtype               NET
+hostip                  169.182.1.1
+port                    50010
+dhcp                    Yes
+The operation completed successfully.
+```
+
 
 ## <span id="related_topics"></span>Related topics
 
