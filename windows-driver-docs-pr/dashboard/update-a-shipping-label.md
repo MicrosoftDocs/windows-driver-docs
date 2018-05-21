@@ -23,7 +23,7 @@ This method has the following syntax. See the following sections for usage examp
 
 | Method | Request URI |
 |:--|:--|
-| PATCH | `https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}/submissions/{submissionId}/shippingLabels/{shippingLabelId}` | 
+| PATCH | `https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions/{submissionId}/shippingLabels/{shippingLabelId}` | 
 
 The productID, submissionID and shippingLabelId in the method represent the product, submission and shipping label which needs to be updated.
 
