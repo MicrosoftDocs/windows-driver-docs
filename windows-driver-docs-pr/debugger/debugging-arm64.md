@@ -3,7 +3,7 @@ title: Debugging ARM64
 description: Debugging ARM64
 keywords: ["Debugging ARM64", "Debugging", "ARM64"]
 ms.author: domars
-ms.date: 02/15/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,10 +63,6 @@ Visual Studio 15.5 Preview 1 and later supports running ARM32 apps using Univers
 
 Un-checking 'Just My Code' in Visual Studio debugging is not a supported scenario. 
 
-
-## Debugging ARM Limitations
-
-The Time Travel Debugging (TTD) feature is not supported on ARM based PCs. 
 
 
 ## See Also
