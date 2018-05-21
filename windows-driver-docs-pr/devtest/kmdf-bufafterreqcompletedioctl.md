@@ -2,6 +2,11 @@
 title: BufAfterReqCompletedIoctl rule (kmdf)
 description: The BufAfterReqCompletedIoctl rule specifies that within the EvtIoDeviceControl callback function, the I/O request buffer retrieved cannot be accessed after the I/O request is completed.
 ms.assetid: 24a7e993-af9c-4e90-9213-74778826326d
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["BufAfterReqCompletedIoctl rule (kmdf)"]
 topic_type:
 - apiref

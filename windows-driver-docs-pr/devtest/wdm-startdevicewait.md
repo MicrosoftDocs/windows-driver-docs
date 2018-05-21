@@ -2,6 +2,11 @@
 title: StartDeviceWait rule (wdm)
 description: The StartDeviceWait rule specifies that the driver should not call KeWaitForSingleObject in the context of start device IRP.
 ms.assetid: 99DFB919-916C-4D08-B00D-400C02E20388
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["StartDeviceWait rule (wdm)"]
 topic_type:
 - apiref

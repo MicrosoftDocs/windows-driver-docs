@@ -2,6 +2,11 @@
 title: InvalidReqAccessLocal rule (kmdf)
 description: The InvalidReqAccessLocal rule specifies that locally created requests are not accessed after they are completed or canceled.
 ms.assetid: d6bf222d-93b6-4dcd-8663-ca85a8a2d203
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["InvalidReqAccessLocal rule (kmdf)"]
 topic_type:
 - apiref

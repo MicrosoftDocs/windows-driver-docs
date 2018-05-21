@@ -2,6 +2,11 @@
 title: RemoveLockReleaseCleanup rule (wdm)
 description: The RemoveLockReleaseCleanup rule specifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used in strict alternation.
 ms.assetid: 410CB79D-ADDC-4308-B12E-151DA3815241
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["RemoveLockReleaseCleanup rule (wdm)"]
 topic_type:
 - apiref

@@ -2,6 +2,11 @@
 title: IrqlDispatch rule (storport)
 description: This rule verifies that the following routines are only called at IRQL DISPATCH\_LEVEL.
 ms.assetid: 93ABD54D-4D63-495A-917B-A387C9353969
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["IrqlDispatch rule (storport)"]
 topic_type:
 - apiref

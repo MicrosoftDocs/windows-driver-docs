@@ -2,6 +2,11 @@
 title: BCDEdit /emssettings
 description: The /emssettings option sets the global Emergency Management Services (EMS) settings for the computer. To enable or disable EMS, use the /ems option. The /emssettings option does not enable or disable EMS for any boot entry.
 ms.assetid: 010e852d-ff97-4280-b35b-f1881e249e42
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["BCDEdit /emssettings Driver Development Tools"]
 topic_type:
 - apiref

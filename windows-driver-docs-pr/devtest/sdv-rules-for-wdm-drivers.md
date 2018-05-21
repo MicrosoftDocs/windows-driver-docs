@@ -2,6 +2,11 @@
 title: Rules for WDM Drivers
 description: Rules for WDM Drivers
 ms.assetid: 4e8bc895-4f36-450c-8017-996df482b90d
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["Static Driver Verifier WDK , rules", "StaticDV WDK , rules", "SDV WDK , rules", "rules WDK Static Driver Verifier"]
 ---
 

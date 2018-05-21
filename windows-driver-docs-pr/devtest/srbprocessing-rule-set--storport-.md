@@ -2,6 +2,11 @@
 title: SrbProcessing rule set (Storport)
 description: Use these rules to verify that your driver correctly processes SRB requests.
 ms.assetid: A3BF2AA3-207F-4D74-94B0-6CA215341340
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SrbProcessing rule set (Storport)
