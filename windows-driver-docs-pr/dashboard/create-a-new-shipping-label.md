@@ -157,12 +157,12 @@ The following example demonstrates the JSON response body returned by a successf
   },
   "links": [
     {
-      "href": "https://manage.devcenter.microsoft.com/v1/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606997603",
+      "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606997603",
       "rel": "self",
       "method": "GET"
     },
     {
-      "href": "https://manage.devcenter.microsoft.com/v1/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606997603",
+      "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606997603",
       "rel": "update_shippinglabel",
       "method": "PATCH"
     }
