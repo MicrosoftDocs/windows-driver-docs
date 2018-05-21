@@ -64,7 +64,7 @@ If you connect several target computers to a single host computer, each connecti
 
 1.  Verify that the target computer has a supported network adapter.
 
-2.  Connect the supported adapter to a network hub or switch using standard CAT5 or better network cable. Do not use a crossover cable, and do not use a crossover port in your hub or switch.
+2.  Connect the supported adapter to a network hub or switch using an appropriate network cable. 
 
 > [!IMPORTANT]
 > Before using BCDEdit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC.
@@ -100,7 +100,7 @@ If you connect several target computers to a single host computer, each connecti
 ## <span id="Setting_Up_the_Host_Computer"></span><span id="setting_up_the_host_computer"></span><span id="SETTING_UP_THE_HOST_COMPUTER"></span>Setting Up the Host Computer
 
 
-Connect the network adapter of the host computer to a network hub or switch using standard CAT5 (or higher-level) network cable. Do not use a crossover cable, and do not use a crossover port in your hub or switch.
+Connect the network adapter of the host computer to a network hub or switch using an appropriate network cable. 
 
 ## <span id="Starting_the_Debugging_Session"></span><span id="starting_the_debugging_session"></span><span id="STARTING_THE_DEBUGGING_SESSION"></span>Starting the Debugging Session
 
