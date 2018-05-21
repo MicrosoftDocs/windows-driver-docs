@@ -60,12 +60,12 @@ The following example demonstrates the JSON response body returned by a successf
   "sharedProductId": 1152921504606971100,
   "links": [
     {
-      "href": "https://manage.devcenter.microsoft.com/v1/hardware/products/9007199267351834",
+      "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/9007199267351834",
       "rel": "self",
       "method": "GET"
     },
     {
-      "href": "https://manage.devcenter.microsoft.com/v1/hardware/products/9007199267351834/submissions",
+      "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/9007199267351834/submissions",
       "rel": "get_submissions",
       "method": "GET"
     }
