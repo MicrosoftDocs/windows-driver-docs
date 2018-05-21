@@ -57,7 +57,7 @@ The file has the following values:
 |:--|:--|:--|
 |BundleInfoMap|object|This is the parent. It is identified by a GUID and contains all details about the driver bundle. This value maps to the bundleID in the [hardware ID object](get-shipping-labels.md#hardware-id-object)|
 |Locales|array of strings|This is an array of applicable locales for the bundle|
-|InfInfoMap|array of objects|This is an array which describes each INF file within the bundle. The identifier of each item is the INF file name|
+|InfInfoMap|array of objects|This is an array which describes each INF file within the bundle. The identifier of each item is the INF file name. The INF name maps to the infID in the [hardware ID object](get-shipping-labels.md#hardware-id-object)|
 |DriverPackageFamilyId|string|ID of the driver package family|
 |InfClass|string|The device class or INF class of the driver|
 |DriverVersion|string|The version of the driver|
@@ -66,7 +66,7 @@ The file has the following values:
 |Provider|string|The provider for this driver|
 |ClassGuid|string|CLass GUID of the driver|
 |InstallationComputerHardwareIds|array of GUIDs|list of CHIDs to which this driver can be targeted|
-|OSPnPInfoMap|array of objects|Array of objects which maps an operating system to hardware IDs. The object has a base element which is the Operating system. Inside each operating system will be a list of PNP or Hardware IDs along with details|
+|OSPnPInfoMap|array of objects|Array of objects which maps an operating system to hardware IDs. The object has a base element which is the Operating system. Inside each operating system will be a list of PNP or Hardware IDs along with details. The operating system maps to operatingSystemCode in the [hardware ID object](get-shipping-labels.md#hardware-id-object) and the hardware ID maps to the pnpString|
 |Manufacturer|string|Manufacturer of the hardware ID|
 |DeviceDescription|string|Description of the hardware ID |
 |FeatureScore|string|Feature score for this driver|
