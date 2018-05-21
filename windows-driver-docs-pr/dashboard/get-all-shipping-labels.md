@@ -87,12 +87,12 @@ The following example demonstrates the JSON response body returned by a successf
       },
       "links": [
         {
-          "href": "https://manage.devcenter.microsoft.com/v1/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606980231",
+          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606980231",
           "rel": "self",
           "method": "GET"
         },
         {
-          "href": "https://manage.devcenter.microsoft.com/v1/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606980231",
+          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606980231",
           "rel": "update_shippinglabel",
           "method": "PATCH"
         }
@@ -115,12 +115,12 @@ The following example demonstrates the JSON response body returned by a successf
       },
       "links": [
         {
-          "href": "https://manage.devcenter.microsoft.com/v1/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606978460",
+          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606978460",
           "rel": "self",
           "method": "GET"
         },
         {
-          "href": "https://manage.devcenter.microsoft.com/v1/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606978460",
+          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606978460",
           "rel": "update_shippinglabel",
           "method": "PATCH"
         }
@@ -147,12 +147,12 @@ The following example demonstrates the JSON response body returned by a successf
       },
       "links": [
         {
-          "href": "https://manage.devcenter.microsoft.com/v1/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606978538",
+          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606978538",
           "rel": "self",
           "method": "GET"
         },
         {
-          "href": "https://manage.devcenter.microsoft.com/v1/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606978538",
+          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606978538",
           "rel": "update_shippinglabel",
           "method": "PATCH"
         }
@@ -163,7 +163,7 @@ The following example demonstrates the JSON response body returned by a successf
   ],
   "links": [
     {
-      "href": "https://manage.devcenter.microsoft.com/v1/hardware/products?pageSize=50",
+      "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products?pageSize=50",
       "rel": "self",
       "method": "GET"
     }
