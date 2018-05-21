@@ -55,7 +55,7 @@ The file has the following values:
 
 | Value | Type | Description |
 |:--|:--|:--|
-|BundleInfoMap|object|This is the parent. It is identified by a GUID and contains all details about the driver bundle.|
+|BundleInfoMap|object|This is the parent. It is identified by a GUID and contains all details about the driver bundle. This value maps to the bundleID in the [hardware ID object](get-shipping-labels.md#hardware-id-object)|
 |Locales|array of strings|This is an array of applicable locales for the bundle|
 |InfInfoMap|array of objects|This is an array which describes each INF file within the bundle. The identifier of each item is the INF file name|
 |DriverPackageFamilyId|string|ID of the driver package family|
