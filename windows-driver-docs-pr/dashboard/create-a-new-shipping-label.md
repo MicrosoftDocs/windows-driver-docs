@@ -23,7 +23,7 @@ This method has the following syntax. See the following sections for usage examp
 
 | Method | Request URI |
 |:--|:--|
-| POST | `https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}/submissions/{submissionId}/shippingLabels` | 
+| POST | `https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions/{submissionId}/shippingLabels` | 
 
 The productID and submissionID in the method represent the submission for which the shipping label is to be created.
 
@@ -113,7 +113,7 @@ The targeting object contains data which instructs Windows Update how the driver
 The following example demonstrates how to create a new product.
 
 ```
-POST https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}/submissions/{submissionId}/shippingLabels HTTP/1.1
+POST https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions/{submissionId}/shippingLabels HTTP/1.1
 Authorization: Bearer <your access token>
 ```
 
