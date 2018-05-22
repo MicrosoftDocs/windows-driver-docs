@@ -2551,11 +2551,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "windows-driver-docs-pr/dashboard/list-all-submissions.md",
-      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "windows-driver-docs-pr/dashboard/get-metadata-for-an-existing-submission.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
       "redirect_document_id": true
