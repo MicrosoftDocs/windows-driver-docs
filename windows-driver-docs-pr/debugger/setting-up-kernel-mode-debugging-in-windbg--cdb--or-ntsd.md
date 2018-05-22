@@ -4,7 +4,7 @@ description: This section describes how to set up kernel-mode debugging manually
 ms.assetid: 268DF246-46AA-4F4E-BCBB-FCA37A3C0353
 keywords: ["Kernel-mode debugging", "Setting up kernel-mode debugging"]
 ms.author: domars
-ms.date: 05/03/2018
+ms.date: 05/22/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -17,8 +17,8 @@ This section describes how to set up kernel-mode debugging manually.
 
 ## <span id="in_this_section"></span>In this section
 
-
--   [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md)
+-   [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)
+-   [Setting Up KDNET Network Kernel Debugging Manually](setting-up-a-network-debugging-connection.md)
 -   [Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually](setting-up-a-usb-3-0-debug-cable-connection.md)
 -   [Setting Up Kernel-Mode Debugging over a USB 2.0 Cable Manually](setting-up-a-usb-2-0-debug-cable-connection.md)
 -   [Setting Up Kernel-Mode Debugging over a Serial Cable Manually](setting-up-a-null-modem-cable-connection.md)
