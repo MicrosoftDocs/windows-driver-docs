@@ -4,7 +4,7 @@ description: Debugging Tools for Windows supports kernel debugging over an Ether
 ms.assetid: B4A79B2E-D4B1-42CA-9121-DEC923C76927
 keywords: ["Network debugging", "Ethernet debugging", "Docking station"]
 ms.author: domars
-ms.date: 05/18/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,20 +15,17 @@ ms.technology: windows-devices
 
 Debugging Tools for Windows supports kernel debugging over an Ethernet network. This topic describes how to set up Ethernet debugging manually.
 
-The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*. The host computer must be running Windows XP or later, and the target computer must be running Windows 8 or later.
+The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*. The host computer must be running Windows 7 or later, and the target computer must be running Windows 8 or later.
 
 Debugging over a network has the following advantages compared to debugging over other types of cable.
 
 -   The host and target computers can be anywhere on the local network.
 -   It is easy to debug many target computers from one host computer.
--   Network cable is inexpensive and readily available.
 -   Given any two computers, it is likely that they will both have Ethernet adapters. It is less likely that they will both have serial ports or both have 1394 ports.
 
 ## <span id="Supported_Network_Adapters"></span><span id="supported_network_adapters"></span><span id="SUPPORTED_NETWORK_ADAPTERS"></span>Supported Network Adapters
 
-
 The host computer can use any network adapter, but the target computer must use a network adapter that is supported by Debugging Tools for Windows. For a list of supported network adapters, see [Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md) and [Supported Ethernet NICs for Network Kernel Debugging in Windows 10](supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md).
-
 
 ## <span id="Determining_the_IP_Address_of_the_Host_Computer"></span><span id="determining_the_ip_address_of_the_host_computer"></span><span id="DETERMINING_THE_IP_ADDRESS_OF_THE_HOST_COMPUTER"></span>Determining the IP Address of the Host Computer
 
@@ -206,12 +203,13 @@ Your debugger (WinDbg or KD) must have access through the firewall. You can use 
 The range of port numbers that can be used for network debugging might be limited by your company's network policy. To determine whether your company's policy limits the range of ports that can be used for network debugging, check with your network administrator. On the target computer, open a Command Prompt window as Administrator and enter the command **bcdedit /dbgsettings**. The output will be similar to this.
 
 ```
+C:\> bcdedit /dbgsettings
 key                     XXXXXX.XXXXX.XXXXX.XXXXX
 debugtype               NET
-debugport               1
-baudrate                115200
-hostip                  10.125.4.86
+hostip                  169.168.1.1
 port                    50085
+dhcp                    Yes
+The operation completed successfully.
 ```
 
 Notice the value of **port**. For example, in the preceding output, the value of **port** is 50085. If the value of **port** lies outside the range allowed by your network administrator, enter the following command, where *w.x.y.z* is the IP address of the host computer, and *n* is a port number in the allowed range

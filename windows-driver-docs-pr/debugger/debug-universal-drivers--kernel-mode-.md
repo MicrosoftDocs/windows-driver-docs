@@ -31,12 +31,12 @@ You will need the following hardware to be able to complete the lab:
 
 You will need the following software to be able to complete the lab.
 
--   Microsoft Visual Studio 2015
+-   Microsoft Visual Studio 2017
 -   Windows Software Development Kit (SDK) for Windows 10
 -   Windows Driver Kit (WDK) for Windows 10
 -   The sample Sysvad audio driver for Windows 10
 
-For information on downloading and installing the WDK, see [Download the Windows Driver Kit (WDK)](https://developer.microsoft.com/windows/hardware/windows-driver-kit)
+For information on downloading and installing the WDK, see [Download the Windows Driver Kit (WDK)](https://developer.microsoft.com/windows/hardware/windows-driver-kit).
 
 ## <span id="sysvad_debugging_walkthrough_overview"></span>Sysvad debugging walkthrough
 
@@ -107,7 +107,7 @@ Ethernet adapter Ethernet:
 
 **-&gt; On the target system**
 
-4. Open a command prompt on the target system and use the **ping** command to confirm network connectivity between the two systems. Use the IP address of the host system you recorded instead of the one shown in the sample output.
+4. Open a command prompt on the target system and use the **ping** command to confirm network connectivity between the two systems. Use the actual IP address of the host system you recorded instead of 169.182.1.1 that is shown in the sample output.
 
 ```
 C:\> ping 169.182.1.1
@@ -129,8 +129,15 @@ To use the KDNET utility to enable kernel-mode debugging on the target system, p
 1. On the host system, locate the WDK KDNET directory. By default it is located here.
 
 ```
-C:\Program Files (x86)\Windows Kits\10\
+C:\Program Files (x86)\Windows Kits\10\Debuggers\x64
 ```
+
+> [!NOTE]
+> This labs assumes that both PCs are running a 64 bit version of Windowson both the target and host. 
+> If that is not the case, the best approach is to run the same "bitness" of tools on the host that the target is running. 
+For example if the target is running 32 bit Windows, run a 32 version of the debugger on the host. 
+> For more information, see [Choosing the 32-Bit or 64-Bit Debugging Tools](choosing-a-32-bit-or-64-bit-debugger-package.md).
+> 
 
 2. Locate these two files and copy them to a network share or thumb drive, so that they will be available on the target computer.
 
@@ -148,12 +155,11 @@ Network debugging is supported on the following NICs:
 busparams=0.25.0, Intel(R) 82579LM Gigabit Network Connection, KDNET is running on this NIC.kdnet.exe
 ```
 
-4. Type this command to set the IP address of the host system. Use the IP address of the host system that you recorded earlier, not the one shown. Pick a unique port address for each target/host pair that you work with, such as 50010.
+4. Type this command to set the IP address of the host system. Use the actual IP address of the host system you recorded instead of 169.182.1.1 that is shown in the sample output. Pick a unique port address for each target/host pair that you work with, such as 50010.
 
 ```
-C:\>kdnet TARGETPC 50010
+C:\>kdnet 169.182.1.1 50010
 
-NtQuerySystemInformation cannot query SystemKernelDebuggingAllowed on this OS.
 Enabling network debugging on Intel(R) 82577LM Gigabit Network Connection.
 Key=2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
 ```
@@ -176,10 +182,11 @@ The operation completed successfully.
 ```
 
 Copy the auto generated unique key into a text file, to avoid having to type it in on the host PC. Copy the text file with the key over to the host system.
+
 **Note**  
 **Firewalls and debuggers**
 
-If you receive a pop-up message from the firewall, and you wish to use the debugger, unblock the types of networks that you desire.
+If you receive a pop-up message from the firewall, and you wish to use the debugger, check **all three** of the boxes.
 
 ![windows security alert - windows firewall has blocked some features of this app](images/debuglab-image-firewall-dialog-box.png)
  

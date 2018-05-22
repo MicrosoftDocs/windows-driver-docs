@@ -111,7 +111,7 @@ Ethernet adapter Ethernet:
 
 **-&gt; On the target system**
 
-3. Open a command prompt on the target system and use the **ping** command to confirm network connectivity between the two systems. Use the IP address of the host system you recorded instead of the one shown in the sample output.
+3. Open a command prompt on the target system and use the **ping** command to confirm network connectivity between the two systems. Use the actual IP address of the host system you recorded instead of 169.182.1.1 that is shown in the sample output.
 
 ```
 C:\> ping 169.182.1.1
@@ -166,7 +166,7 @@ The operation completed successfully.
 **Note**  
 **Firewalls and debuggers**
 
-If you receive a pop-up message from the firewall, and you wish to use the debugger, unblock the types of networks that you desire.
+If you receive a pop-up message from the firewall, and you wish to use the debugger, uand you wish to use the debugger, check **all three** of the boxes.
 
 ![windows security alert - windows firewall has blocked some features of this app ](images/debuglab-image-firewall-dialog-box.png)
 
@@ -174,10 +174,18 @@ If you receive a pop-up message from the firewall, and you wish to use the debug
 
 **&lt;- On the host system**
 
-1. On the host computer, open a Command Prompt window as Administrator. Change to the WinDbg.exe directory. We will use the x64version of WinDbg.exe from the Windows Driver Kit (WDK) that was installed as part of the Windows kit installation.
+1. On the host computer, open a Command Prompt window as Administrator. We will use the x64 version of WinDbg.exe from the Windows Driver Kit (WDK) that was installed as part of the Windows kit installation. By default it is located here.
+
 ```
 C:\> Cd C:\Program Files(x86)\Windows Kits\10\Debuggers\x64 
 ```
+
+> [!NOTE]
+> This labs assumes that both PCs are running a 64 bit version of Windows on both the target and host. 
+> If that is not the case, the best approach is to run the same "bitness" of tools on the host that the target is running. 
+For example if the target is running 32 bit Windows, run a 32 version of the debugger on the host. 
+> For more information, see [Choosing the 32-Bit or 64-Bit Debugging Tools](choosing-a-32-bit-or-64-bit-debugger-package.md).
+> 
 
 2. Launch WinDbg with remote user debug using the following command. The value for the key and port match what we set earlier using BCDEdit on the target.
 ```
