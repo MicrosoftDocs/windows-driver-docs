@@ -1,6 +1,11 @@
 ---
 title: OutputBufferAPI rule (kmdf)
 ms.assetid: 868f08f8-b6c1-480e-a47e-de7b0c138b98
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 description: 
 keywords: ["OutputBufferAPI rule (kmdf)"]
 topic_type:

@@ -2,6 +2,11 @@
 title: WriteErrorLog rule (ndis)
 description: The WriteErrorLog rule specifies that if the NdisMAllocateSharedMemory function is called in the MiniportInitializeEx function, the driver should also call NdisWriteErrorLogEntry if the allocation fails.
 ms.assetid: b626f25a-3101-4c0a-b0a9-fef6ce964055
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["WriteErrorLog rule (ndis)"]
 topic_type:
 - apiref

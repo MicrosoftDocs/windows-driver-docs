@@ -2,6 +2,11 @@
 title: BCDEdit /bootdebug
 description: The /bootdebug boot option enables or disables boot debugging of the current or specified Windows operating system boot entry.
 ms.assetid: 85d0a25e-c411-4d7e-ae11-ce5bed1a37b8
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["BCDEdit /bootdebug Driver Development Tools"]
 topic_type:
 - apiref

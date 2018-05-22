@@ -2,6 +2,11 @@
 title: PowerIrpDDIs rule (wdm)
 description: The PowerIrpDDIs rule specifies that when a driver is processing a system or a device IRP\_MJ\_POWER with IRP\_MN\_SET\_POWER, it should not call DDIs that can only be call at PASSIVE\_LEVEL.
 ms.assetid: C56C73E5-75D6-427A-8582-24D6B1404A70
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["PowerIrpDDIs rule (wdm)"]
 topic_type:
 - apiref

@@ -2,6 +2,11 @@
 title: RemoveLockQueryMnRemove rule (wdm)
 description: The RemoveLockQueryMnRemove rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used correctly when processing IRP\_MJ\_PNP with MinorFunction IRP\_MN\_QUERY\_REMOVE\_DEVICE.
 ms.assetid: 593B8305-EA61-4857-9304-A8319A8E0017
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["RemoveLockQueryMnRemove rule (wdm)"]
 topic_type:
 - apiref

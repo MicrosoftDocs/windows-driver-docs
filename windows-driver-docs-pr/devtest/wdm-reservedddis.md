@@ -2,6 +2,11 @@
 title: ReservedDDIs rule (wdm)
 description: The ReservedDDIs rule verifies that drivers do not call any reserved functions.
 ms.assetid: ABED66EA-790B-4DE1-8128-000D15F6122D
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["ReservedDDIs rule (wdm)"]
 topic_type:
 - apiref

@@ -1,6 +1,11 @@
 ---
 title: NoIoQueuePurgeSynchronously rule (kmdf)
 ms.assetid: 9255C644-1141-4D9A-8B84-BF98FB9E262A
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 description: 
 keywords: ["NoIoQueuePurgeSynchronously rule (kmdf)"]
 topic_type:
