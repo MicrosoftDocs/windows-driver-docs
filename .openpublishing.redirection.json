@@ -2529,6 +2529,51 @@
       "source_path": "windows-driver-docs-pr/dashboard/manage-app-certifications.md",
       "redirect_URL": "https://blogs.msdn.microsoft.com/windows_hardware_certification/2018/04/19/win32-logo-certification-deprecation/",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/dashboard-submission-rest-api-reference.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/create-a-request.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/create-a-production-device-submission.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/list-all-submissions.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/get-metadata-for-an-existing-submission.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/get-assets-for-a-submission.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/get-a-specific-asset-within-a-submission.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/update-an-existing-submission.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/dashboard-submission-objects.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
     }
   ]
 }
