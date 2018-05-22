@@ -11,7 +11,7 @@ ms.technology: windows-devices
 
 # DIFx Guidelines
 
-The Driver Install Frameworks (DIFx) tools were removed from the Windows 10 Version 1607 WDK.  Instead, we recommend providing your driver as a standalone package that doesn't require an installer, ideally through Windows Update.  To add your driver to Windows Update, the first step is to submit your driver package to the [Sysdev Driver Portal](http://sysdev.microsoft.com).
+Starting in Windows 10 Version 1607 (Redstone 1), the Driver Install Frameworks (DIFx) tools are no longer included in the WDK.  Instead, we recommend providing your driver as a standalone package that doesn't require an installer, ideally through Windows Update.  To add your driver to Windows Update, the first step is to submit your driver package to the [Sysdev Driver Portal](http://sysdev.microsoft.com).
 
 If you choose to use DIFx anyway, you should be aware of a couple caveats:
 
