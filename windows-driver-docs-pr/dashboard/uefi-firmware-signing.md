@@ -9,22 +9,25 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# UEFI Firmware Signing
+# UEFI firmware signing
+
+UEFI signing is a service provided by the hardware dashboard that lets you sign UEFI firmware binaries, enabling them to be installed on Windows devices.
+
+> [!IMPORTANT]
+> Please note the following:
+> * LSA submissions require an extended validation (EV) code signing certificate. For more information about code signing certificates, see [Get a code signing certificate](get-a-code-signing-certificate.md).
+> * All UEFI submissions must be in a single, signed CAB file, and contain all UEFI files required for signing. 
+>   * This file should contain no folders and only the binaries to be signed. 
+> * The CAB file signature must match the Authenticode certificate for your organization. See [Authenticode digital signatures](https://docs.microsoft.com/windows-hardware/drivers/install/authenticode) for more information.
+>   * Depending on your certificate provider, you may need to use [SignTool](https://msdn.microsoft.com/library/windows/desktop/aa387764) or an external process.
+## Submit new UEFI firmware
 
 
-UEFI signing is a service provided by the Sysdev Legacy Dashboard that lets you to sign UEFI firmware binaries targeted to x86 or x64 computers, so they can be installed on Windows PCs.
+1.  Sign in to the dashboard with your Microsoft account and click **Hardware certification**.
 
-## <span id="To_submit_your_firmware"></span><span id="to_submit_your_firmware"></span><span id="TO_SUBMIT_YOUR_FIRMWARE"></span>To submit your firmware
-
-
-1.  Sign in to the dashboard with your Microsoft account, and then click **Hardware certification**.
-
-2.  On the **Hardware certification** page, in the **Create submissions** tile, click **Create UEFI submission**.
-
-    **Note**  
-    Before proceeding, you may be prompted to sign a legal agreement. To continue, review the document, add your signature, add the date, and then click **Submit**. Each organization only needs to sign this agreement once.
-
-     
+2.  On the **File Signing Services** page, click **Submit New UEFI**.
+    > [!NOTE]  
+    > You may be prompted to sign a legal agreement before creating a new LSA submission. Review and complete the agreement to continue. Every organization only needs to sign the agreement once.
 
 3.  All UEFI submissions must be in a single, signed CAB file and contain all the UEFI files for signing. The CAB file signature must match the Authenticode certificate on file for your company with dashboard. Depending on your certificate provider, you may need to use an external web portal or use signtool.
 
@@ -39,7 +42,7 @@ Submission packages should be a CAB library that contains no folders and only th
 
 When the dashboard completes processing your submission, it sends a results email to the work email address on file.
 
-## <span id="To_manage_your_firmware"></span><span id="to_manage_your_firmware"></span><span id="TO_MANAGE_YOUR_FIRMWARE"></span>To manage your firmware
+## To manage your firmware
 
 
 1.  Sign in to the dashboard with your Microsoft account, and then click **Hardware certification**.
@@ -52,10 +55,10 @@ When the dashboard completes processing your submission, it sends a results emai
 
 5.  On the **Details** view, you can see the status of your submission, and, if it's complete, download the signed binaries.
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
-[Microsoft UEFI CA Signing Policy Updates:](http://blogs.msdn.com/b/windows_hardware_certification/archive/2013/12/03/microsoft-uefi-ca-signing-policy-updates.aspx)
+[Microsoft UEFI CA Signing Policy Updates](http://blogs.msdn.com/b/windows_hardware_certification/archive/2013/12/03/microsoft-uefi-ca-signing-policy-updates.aspx)
 
 [Pre-Submission Testing for UEFI Submissions](http://blogs.msdn.com/b/windows_hardware_certification/archive/2013/12/03/pre-submission-testing-for-uefi-submissions.aspx)
 
