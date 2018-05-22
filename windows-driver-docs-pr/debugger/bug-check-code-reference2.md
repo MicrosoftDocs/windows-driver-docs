@@ -74,7 +74,7 @@ The following table shows the code and name of each bug check.
 | 0x0000002C | [**PORT\_DRIVER\_INTERNAL**](bug-check-0x2c--port-driver-internal.md)                                                                             |
 | 0x0000002D | [**SCSI\_DISK\_DRIVER\_INTERNAL**](bug-check-0x2d--scsi-disk-driver-internal.md)                                                                  |
 | 0x0000002E | [**DATA\_BUS\_ERROR**](bug-check-0x2e--data-bus-error.md)                                                                                         |
-| 0x0000002F | I[**NSTRUCTION\_BUS\_ERROR**](bug-check-0x2f--instruction-bus-error.md)                                                                           |
+| 0x0000002F | [**INSTRUCTION\_BUS\_ERROR**](bug-check-0x2f--instruction-bus-error.md)                                                                           |
 | 0x00000030 | [**SET\_OF\_INVALID\_CONTEXT**](bug-check-0x30--set-of-invalid-context.md)                                                                        |
 | 0x00000031 | [**PHASE0\_INITIALIZATION\_FAILED**](bug-check-0x31--phase0-initialization-failed.md)                                                             |
 | 0x00000032 | [**PHASE1\_INITIALIZATION\_FAILED**](bug-check-0x32--phase1-initialization-failed.md)                                                             |
