@@ -23,7 +23,7 @@ ms.technology: windows-devices
 
 The WIA minidriver uses the **WIA\_IPS\_MICR\_READER** property to report the locations where a Magnetic Ink Character Recognition (MICR) reader is available. The WIA client application can choose one of these locations in which to enable MICR detection.
 
-## <span id="ddk_wia_ipa_depth_si"></span><span id="DDK_WIA_IPA_DEPTH_SI"></span>
+
 
 
 Property Type: VT\_I4

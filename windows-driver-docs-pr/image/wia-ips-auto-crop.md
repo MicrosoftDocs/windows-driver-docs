@@ -23,7 +23,7 @@ ms.technology: windows-devices
 
 The **WIA\_IPS\_AUTO\_CROP** property is used to enable automatic detection and cropping by the device of the scan region. The WIA minidriver creates and maintains this property.
 
-## <span id="ddk_wia_ipa_depth_si"></span><span id="DDK_WIA_IPA_DEPTH_SI"></span>
+
 
 
 Property Type: VT\_I4
