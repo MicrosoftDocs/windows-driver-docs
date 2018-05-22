@@ -21,7 +21,7 @@ Please send aditional questions or comments to <SAUEFI@Microsoft.com>.
 
 > **A:** Specifically, for Windows 7 it is recommended to use Config \#2. You will need to enable the CSM and set default to UEFI boot, falling back to legacy boot only if needed. Secure Boot will need to be disabled.
 >
-> Windows 7 is not able to support Config \# 1. Windows 7 has a dependency on Int10 support for basic display when the high-res graphics driver is not available (for example, Bugcheck, Sleep transitions, etc.), a dependency satisfied by the CSM. You can boot Win7 in UEFI mode if a partial CSM is in place (enabled) providing Int10 support. If firmware defaults to UEFI boot mode leaving Int10 CSM enabled, then Win7 will install successfully in UEFI mode. Microsoft has also backported TPM 2.0 support to Windows 7 for when it is installed in UEFI mode (see [KB2920188](https://support.microsoft.com/en-us/kb/2920188)).
+> Windows 7 is not able to support Config \# 1. Windows 7 has a dependency on Int10 support for basic display when the high-res graphics driver is not available (for example, Bugcheck, Sleep transitions, etc.), a dependency satisfied by the CSM. You can boot Win7 in UEFI mode if a partial CSM is in place (enabled) providing Int10 support. If firmware defaults to UEFI boot mode leaving Int10 CSM enabled, then Win7 will install successfully in UEFI mode. Microsoft has also backported TPM 2.0 support to Windows 7 for when it is installed in UEFI mode. See this KB article for more information: [KB2920188](https://support.microsoft.com/en-us/kb/2920188).
 >
 > Microsoft recommends you should use Config \# 2; Legacy MBR Boot mode should not be used.
 
