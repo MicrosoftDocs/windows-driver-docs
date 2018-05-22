@@ -212,7 +212,7 @@ dhcp                    Yes
 The operation completed successfully.
 ```
 
-Notice the value of **port**. For example, in the preceding output, the value of **port** is 50085. If the value of **port** lies outside the range allowed by your network administrator, enter the following command, where *w.x.y.z* is the IP address of the host computer, and *n* is a port number in the allowed range
+Notice the value of port> In the preceding output, the value of port is 50085. If the value of port lies outside the range allowed by your network administrator, enter the following command, where *w.x.y.z* is the IP address of the host computer, and *n* is a port number in the allowed range
 
 **bcdedit /dbgsettings net hostip:***w.x.y.z* **port:***n*
 
@@ -238,8 +238,6 @@ To use IpV6 with the debugger complete these steps.
 
 1. Ping your \<debughostname\> and note the IPv6 address that is reported on the Reply from output lines.Use this IPv6 address in place of x:y:z:p:d:q:r:n below
 
-TBD - Should we show the usage of KDNET to generate a proper key?
-
 2. Use BCDEdit to delete any existing ip address values in dbgsettings.
 
 ```
@@ -248,13 +246,9 @@ bcdedit -deletevalue {dbgsettings} hostip
 
 3. Set the IPv6 address of the host. There must not be any spaces in the hostipv6=x:y:z:p:d:q:r:n string. <YourPort> is the port you selected above between 50000-50039, and <YourKey> is the key that was returned by KDNet above.
 
-
 ```
 bcdedit /dbgsettings net hostipv6:x:y:z:p:d:q:r:n port:<YourPort> key:<YourKey>
 ```
-
-??? TBD - does upper/lower case matter?
-
 
 4. Type this command to confirm that the dbgsettings are set properly.
 
@@ -269,13 +263,13 @@ dhcp                    Yes
 The operation completed successfully.
 ```
 
-5. Reboot your target machine. 
-
-6. On the host machine use this command to start the debugger. 
+5. On the host machine use this command to start the debugger. 
 
 ```
 Windbg -k net:port=<yournetworkportnumber>,key=<key_output_from_kdnet>,target=::<YourIPv6Address> 
 ```
+
+6. Reboot your target machine. 
 
 7. The debugger should connect to the host debugger early during boot. You will know that KDNET is using an IPv6 connection because the IP addresses reported in the connected message will be IPv6 addresses instead of IPv4 addresses. 
 
