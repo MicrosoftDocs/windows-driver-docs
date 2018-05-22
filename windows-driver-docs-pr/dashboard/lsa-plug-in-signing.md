@@ -8,34 +8,33 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# LSA plug-in signing
+# LSA plugin signing
 
 
-LSA file signing is a hardware dashboard service that lets you to digitally sign LSA plug-ins, enabling them to be installed on Windows devices.
+Local Security Authority (LSA) file signing is a hardware dashboard service that lets you to digitally sign LSA plugins, enabling them to be installed on Windows devices. For more information about LSA protection, see [Configuring additional LSA protection(https://docs.microsoft.com/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection).
 
-LSA submissions require an extended validation (EV) code signing certificate. For more information about code signing certificates, see [Get a code signing certificate](get-a-code-signing-certificate.md).
 
-## Submit an LSA plug in
+> [!IMPORTANT]
+> Please note the following:
+> * LSA submissions require an extended validation (EV) code signing certificate. For more information about code signing certificates, see [Get a code signing certificate](get-a-code-signing-certificate.md).
+> * All LSA submissions must be in a single, signed CAB file, and contain all the LSA plug-in files required for signing. 
+>   * This file should contain no folders and only the binaries to be signed. 
+> * The CAB file signature must match the EV code signing certificate for your organization. 
+
+
+## Submit an LSA plugin
 
 1.  Sign in to the hardware dashboard with your Microsoft account, and then click **File signing services**.
 
 2.  Click **Submit new LSA**.
+    > [!NOTE]  
+    > You may be prompted to sign a legal agreement before creating a new LSA submission. Review and complete the agreement to continue. Every organization only needs to sign the agreement once. 
+  
+3.  On the **New LSA submission** page, upload the CAB file you want to submit, and click **Submit**.
 
-    **Note**  
-    Before proceeding, you may be prompted to sign a legal agreement. To continue, review the document, add your signature, add the date, and then click **Submit**. Each organization only needs to sign this agreement once.
+4.  Once your submission has been processed, you’ll receive an email with the results.
 
-     
 
-3.  On the **Create LSA submission** page, browse to the CAB file that you want to submit, click **Upload**, and then click **Submit**.
-
-4.  When the Hardware Dev Center dashboard completes processing your submission, you’ll receive an email with the results.
-
-**Important**  
--   All LSA submissions must be in a single, signed CAB file and contain all the LSA plug-in files for signing.
-
--   The CAB file signature must match the EV code signing certificate on file for your company with Hardware Dev Center dashboard. For more information about code signing certificates, see [Get a code signing certificate](https://msdn.microsoft.com/library/windows/hardware/hh801887.aspx).
-
--   Submission packages should be a CAB library that contains no folders and only the binary files to be signed.
 
  
 
@@ -48,22 +47,3 @@ LSA submissions require an extended validation (EV) code signing certificate. Fo
 3.  Click the submission **ID** that you want to manage.
 
 4.  On the submission details page, you can see the status of your submission, and, if it's complete, click the **Download** link to download the signed binaries.
-
-## <span id="related_topics"></span>Related topics
-
-
-[Get a code signing certificate](https://msdn.microsoft.com/library/windows/hardware/hh801887.aspx)
-
-[Update a code signing certificate](https://msdn.microsoft.com/library/windows/hardware/br230783.aspx)
-
-[Establish a new company](https://msdn.microsoft.com/library/windows/hardware/br230795.aspx)
-
- 
-
- 
-
-
-
-
-
-
