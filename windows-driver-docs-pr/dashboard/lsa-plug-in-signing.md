@@ -15,12 +15,11 @@ LSA file signing is a hardware dashboard service that lets you to digitally sign
 
 LSA submissions require an extended validation (EV) code signing certificate. For more information about code signing certificates, see [Get a code signing certificate](get-a-code-signing-certificate.md).
 
-## <span id="Submit_an_LSA_plug_in"></span><span id="submit_an_lsa_plug_in"></span><span id="SUBMIT_AN_LSA_PLUG_IN"></span>Submit an LSA plug in
+## Submit an LSA plug in
 
+1.  Sign in to the hardware dashboard with your Microsoft account, and then click **File signing services**.
 
-1.  Sign in to the Hardware Dev Center dashboard with your Microsoft account, and then click **File signing services**.
-
-2.  On the **File signing services** page, in the **Create submissions** tile, click **Create LSA submission**.
+2.  Click **Submit new LSA**.
 
     **Note**  
     Before proceeding, you may be prompted to sign a legal agreement. To continue, review the document, add your signature, add the date, and then click **Submit**. Each organization only needs to sign this agreement once.
