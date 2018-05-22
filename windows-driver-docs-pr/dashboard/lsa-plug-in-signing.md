@@ -2,7 +2,6 @@
 title: LSA plug-in signing
 description: LSA plug-in signing
 ms.assetid: 7f0bc573-2616-499e-9a77-3e4f1d0ccbf3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -12,9 +11,9 @@ ms.technology: windows-devices
 # LSA plug-in signing
 
 
-LSA file signing is a service provided by Windows Dev Center hardware dashboard. This service allows you to digitally sign LSA plug-ins so that they can be installed on Windows computers.
+LSA file signing is a hardware dashboard service that lets you to digitally sign LSA plug-ins, enabling them to be installed on Windows devices.
 
-LSA submissions require an extended validation (EV) code signing certificate. For more information about code signing certificates, see [Get a code signing certificate](https://msdn.microsoft.com/library/windows/hardware/hh801887.aspx).
+LSA submissions require an extended validation (EV) code signing certificate. For more information about code signing certificates, see [Get a code signing certificate](get-a-code-signing-certificate.md).
 
 ## <span id="Submit_an_LSA_plug_in"></span><span id="submit_an_lsa_plug_in"></span><span id="SUBMIT_AN_LSA_PLUG_IN"></span>Submit an LSA plug in
 
