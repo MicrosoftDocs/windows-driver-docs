@@ -4,7 +4,7 @@ description: Debugging Tools for Windows supports kernel debugging over an Ether
 ms.assetid: B4A79B2E-D4B1-42CA-9121-DEC923C76927
 keywords: ["Network debugging", "Ethernet debugging", "Docking station", "Setting Up Kernel-Mode Debugging over a Network Cable Manually"]
 ms.author: domars
-ms.date: 05/22/2018
+ms.date: 05/23/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,13 @@ If you connect several target computers to a single host computer, each connecti
 ## <span id="Setting_Up_the_Target_Computer"></span><span id="setting_up_the_target_computer"></span><span id="SETTING_UP_THE_TARGET_COMPUTER"></span>Setting Up the Target Computer
 
 
-1.  Verify that the target computer has a supported network adapter.
+1.  Verify that the target computer has a supported network adapter. See these topics for mor einformation
+
+
+    - [Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md)
+
+    - [Supported Ethernet NICs for Network Kernel Debugging in Windows 10](supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md)
+ 
 
 2.  Connect the supported adapter to a network hub or switch using an appropriate network cable. 
 
@@ -128,7 +134,7 @@ If you are prompted about allowing WinDbg to access the port through the firewal
 
 ### <span id="Allowing_the_debugger_through_the_firewall"></span><span id="allowing_the_debugger_through_the_firewall"></span><span id="ALLOWING_THE_DEBUGGER_THROUGH_THE_FIREWALL"></span>Allowing the debugger through the firewall
 
-When you first attempt to establish a network debugging connection, you might be prompted to allow the debugging application (WinDbg or KD) access through the firewall. Client versions of Windows display the prompt, but Server versions of Windows do not display the prompt. You should respond to the prompt by checking the boxes for all three network types: domain, private, and public. If you do not get the prompt, or if you did not check the boxes when the prompt was available, you must use Control Panel to allow access through the firewall. Open **Control Panel &gt; System and Security**, and click **Allow an app through Windows Firewall**. In the list of applications, locate Windows GUI Symbolic Debugger and Windows Kernel Debugger. Use the check boxes to allow those two applications through the firewall. Restart your debugging application (WinDbg or KD).
+When you first attempt to establish a network debugging connection, you might be prompted to allow the debugging application (WinDbg or KD) access through the firewall. Client versions of Windows display the prompt, but Server versions of Windows do not display the prompt. You should respond to the prompt by checking the boxes for **all three** network types: domain, private, and public. If you do not get the prompt, or if you did not check the boxes when the prompt was available, you must use Control Panel to allow access through the firewall. Open **Control Panel &gt; System and Security**, and click **Allow an app through Windows Firewall**. In the list of applications, locate Windows GUI Symbolic Debugger and Windows Kernel Debugger. Use the check boxes to allow those two applications through the firewall. Restart your debugging application (WinDbg or KD).
 
 
 ## <span id="How_the_Debugger_Obtains_an_IP_Address_for_the_Target_Computer"></span><span id="how_the_debugger_obtains_an_ip_address_for_the_target_computer"></span><span id="HOW_THE_DEBUGGER_OBTAINS_AN_IP_ADDRESS_FOR_THE_TARGET_COMPUTER"></span>How the Debugger Obtains an IP Address for the Target Computer
