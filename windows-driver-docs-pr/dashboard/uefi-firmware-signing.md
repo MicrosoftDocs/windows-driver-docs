@@ -15,11 +15,13 @@ UEFI signing is a service provided by the hardware dashboard that lets you sign 
 
 > [!IMPORTANT]
 > Please note the following:
-> * LSA submissions require an extended validation (EV) code signing certificate. For more information about code signing certificates, see [Get a code signing certificate](get-a-code-signing-certificate.md).
-> * All UEFI submissions must be in a single, signed CAB file, and contain all UEFI files required for signing. 
->   * This file should contain no folders and only the binaries to be signed. 
+> * UEFI submissions require an extended validation (EV) code signing certificate. For more information about code signing certificates, see [Get a code signing certificate](get-a-code-signing-certificate.md).
+> * UEFI submissions must be in a signed CAB library, and contain all UEFI files required for signing. 
+>   * This file should contain no folders and only the .efi files to be signed. 
 > * The CAB file signature must match the Authenticode certificate for your organization. See [Authenticode digital signatures](https://docs.microsoft.com/windows-hardware/drivers/install/authenticode) for more information.
 >   * Depending on your certificate provider, you may need to use [SignTool](https://msdn.microsoft.com/library/windows/desktop/aa387764) or an external process.
+> * EFI ByteCode (EBC) files must be compiled using the /ALIGN:32 flag for processing to succeed.
+
 ## Submit new UEFI firmware
 
 
@@ -29,31 +31,13 @@ UEFI signing is a service provided by the hardware dashboard that lets you sign 
     > [!NOTE]  
     > You may be prompted to sign a legal agreement before creating a new LSA submission. Review and complete the agreement to continue. Every organization only needs to sign the agreement once.
 
-3.  All UEFI submissions must be in a single, signed CAB file and contain all the UEFI files for signing. The CAB file signature must match the Authenticode certificate on file for your company with dashboard. Depending on your certificate provider, you may need to use an external web portal or use signtool.
+3.  On the **New LSA submission** page, upload the CAB file you want to submit, and click **Submit**.
 
-4.  On the **Create UEFI** page, browse to find the CAB file that you want to submit, and then click **Submit**.
+4. Once your submission has been processed, you’ll receive an email with your submission ID.
 
-**Important**  
-EFI ByteCode (EBC) files must be compiled using the /ALIGN:32 flag for processing to succeed.
+## Manage your firmware submission
 
-Submission packages should be a CAB library that contains no folders and only the **\*.efi** files to be signed.
-
- 
-
-When the dashboard completes processing your submission, it sends a results email to the work email address on file.
-
-## To manage your firmware
-
-
-1.  Sign in to the dashboard with your Microsoft account, and then click **Hardware certification**.
-
-2.  On the **Hardware certification** page, in the **Manage submissions** tile, click **Manage submissions**.
-
-3.  On the **Manage submissions** page, select **UEFI** from the **Submission type** list.
-
-4.  Select the submission that you want to manage.
-
-5.  On the **Details** view, you can see the status of your submission, and, if it's complete, download the signed binaries.
+After signing in to the Hardware Dev Center Dashboard, you can [manage your firmware submission](manage-your-hardware-submissions.md) like any other dashboard submission. 
 
 ## Related topics
 

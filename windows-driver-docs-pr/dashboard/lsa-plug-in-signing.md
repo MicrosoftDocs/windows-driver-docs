@@ -32,18 +32,8 @@ Local Security Authority (LSA) file signing is a hardware dashboard service that
   
 3.  On the **New LSA submission** page, upload the CAB file you want to submit, and click **Submit**.
 
-4.  Once your submission has been processed, you’ll receive an email with the results.
+4.  Once your submission has been processed, you’ll receive an email with your submission ID.
 
+### Manage LSA submissions
 
-
- 
-
-### <span id="Manage_LSA_submissions"></span><span id="manage_lsa_submissions"></span><span id="MANAGE_LSA_SUBMISSIONS"></span>Manage LSA submissions
-
-1.  Sign in to Hardware Dev Center dashboard with your Microsoft account, and then click **Manage submissions** in the **Hardware certification** tile.
-
-2.  On the **Manage submissions** page, select **LSA** from the **Submission type** list, and then click **Apply**.
-
-3.  Click the submission **ID** that you want to manage.
-
-4.  On the submission details page, you can see the status of your submission, and, if it's complete, click the **Download** link to download the signed binaries.
+After signing in to the Hardware Dev Center Dashboard, you can [manage your LSA submission](manage-your-hardware-submissions.md) like any other dashboard submission. 
