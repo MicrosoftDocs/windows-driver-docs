@@ -12,9 +12,20 @@ ms.technology: windows-devices
 # Kiosk apps for assigned access: Best practices
 
 
-In Windows 10, you use the Lock framework and assigned access to create a kiosk app that enables users to interact with a single app on a device. This document describes how to implement a kiosk app and describes best practices. All sample code is written in C# but should be easily translatable to the language of your choice, because the underlying framework is Windows RT. This document is written for OEMs and ISVs who want to write kiosk apps for their customers.
+In Windows 10, you can use assigned access to create a kiosk app, which enables users to interact with just a single Universal Windows app on a device. This topic describes how to implement a kiosk app, and best practices.
 
-## <span id="Terms"></span><span id="terms"></span><span id="TERMS"></span>Terms
+There are two different experiences that assigned access provides:
+
+1. The single-app kiosk experience
+    1. Assign one app to an account. When a user logs in, they will have access to only this app and nothing else on the system. During this time, the kiosk device is locked, with the kiosk app running above the lock screen. This experience is often used for public-facing kiosk machines. see [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](https://docs.microsoft.com/windows/configuration/set-up-a-kiosk-for-windows-10-for-desktop-editions) for more information.
+
+2. THe multi-app kiosk experience (available in Windows 10, version 1709 and later)
+    1. You can assign one or more apps to an account. When a user logs in, the device will start in a restricted shell experience with access to only your selected apps. See [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps) for more information.
+
+> [!NOTE]
+> This article describes the single-app kiosk experience only. In the multi-app experience, selected apps run in a regular desktop context and require no special handling or modification.
+
+## Terms
 
 
 <table>
@@ -58,12 +69,17 @@ In Windows 10, you use the Lock framework and assigned access to create a kiosk
 
  
 
-## <span id="Under_the_hood"></span><span id="under_the_hood"></span><span id="UNDER_THE_HOOD"></span>Under the hood
+## The windows.aboveLockScreen extension
 
+Assigned access in Windows 10 leverages a lock framework. When an assigned access user logs in, a background task locks the desktop and launches a lock screen app, which runs the kiosk app above the lock. The app's behavior may differ, depending on whether it uses the windows.aboveLockScreen extension.
 
-Assigned access in Windows 10 leverages the new lock framework. When an assigned access user logs in, a background task locks the desktop and a lock screen app launches, which then runs the kiosk app above lock. The kiosk app is actually running as an above lock screen app.
+Using **windows.aboveLockScreen** enables your kiosk app to access the [LockApplicationHost](https://docs.microsoft.com/uwp/api/Windows.ApplicationModel.LockScreen.LockApplicationHost) runtime class, which enables the app to know when it is running above the lock. 
 
-When the lock framework launches the kiosk app above the lock and the app has the **windows.aboveLockScreen** extension, the lock framework automatically creates a new secondary view for the kiosk app and all content of the main view is rendered in the new secondary view. If the app does not have the **windows.aboveLockScreen** extension, no secondary view is created and the app launches as if it’s running normally.
+When the lock framework launches the kiosk app above the lock and the app has the **windows.aboveLockScreen** extension, the lock framework automatically creates a new secondary view for the kiosk app and all content of the main view is rendered in the new secondary view.
+
+If the app does not have the **windows.aboveLockScreen** extension, no secondary view is created and the app launches as if it’s running normally. Please note that in this case, the app will not have access to an instance of LockApplicationHost, and therefore will not be able to determine if it's running in a regular context, or for a kiosk experience. 
+
+Regardless of whether your app uses the extension, be sure to secure its data. See the [guidelines for assigned access apps](https://docs.microsoft.com/windows/configuration/guidelines-for-assigned-access-app#secure-your-information) for more information.
 
 Starting in Windows 10, version 1607, there is no longer a restriction on the Universal Windows Platform (UWP) extension, so most apps can be shown in **Settings** when user configures assigned access. However, there still are benefits of using the extension, detailed below .
 
