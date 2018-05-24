@@ -31,16 +31,13 @@
 #### [Commit a product submission](commit-a-product-submission.md)
 #### [Update submission data](update-submission-data.md)
 #### [Update product data](update-product-data.md)
+## [File signing LSA plugins and UEFI firmware](lsa-and-uefi-file-signing.md)
 ## [Dashboard Administration](dashboard-administration.md)
 ### [Get started with the Hardware Program](get-started-with-the-hardware-dashboard.md)
 ### [Register for the Hardware Program](register-for-the-hardware-program.md)
 ### [Driver failure reporting](driver-failure-reporting.md)
 ### [Adding or Removing Users](adding-or-removing-users.md)
 ### [Managing User Roles](managing-user-roles.md)
-
-## [File and Driver signing](file-signing-services.md)
-### [UEFI Firmware Signing](uefi-firmware-signing.md)
-### [LSA plug-in signing](lsa-plug-in-signing.md)
 ### [Get a code signing certificate](get-a-code-signing-certificate.md)
 ### [Update a code signing certificate](update-a-code-signing-certificate.md)
 
