@@ -2574,6 +2574,11 @@
       "source_path": "windows-driver-docs-pr/dashboard/dashboard-submission-objects.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/mobile-broadband-mbb-wdf-class-extension-mbbcx-.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/netcx/mobile-broadband-mbb-class-extension-mbbcx",
+      "redirect_document_id": true
     }
   ]
 }
