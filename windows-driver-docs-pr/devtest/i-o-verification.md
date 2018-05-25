@@ -75,6 +75,16 @@ Starting in Window Vista, the I/O Verification option checks for the following d
 
 -   Calling [**IoReleaseRemoveLock**](https://msdn.microsoft.com/library/windows/hardware/ff549560) or [**IoReleaseRemoveLockAndWait**](https://msdn.microsoft.com/library/windows/hardware/ff549567) with a tag parameter that differs from the tag parameter used in the corresponding [**IoAcquireRemoveLock**](https://msdn.microsoft.com/library/windows/hardware/ff548204) call.
 
+-   Calling [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) with interrupts disabled.
+
+-   Calling [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) at IRQL greater than DISPATCH\_LEVEL.
+
+-   Returning from a driver dispatch routine with interrupts disabled.
+
+-   Returning from a driver dispatch routine with a changed IRQL.
+
+-   Returning from a driver dispatch routine with APCs disabled. In this case, the driver might have called [**KeEnterCriticalRegion**](https://msdn.microsoft.com/library/windows/hardware/ff552021) more times than [**KeLeaveCriticalRegion**](https://msdn.microsoft.com/library/windows/hardware/ff552964), which is the primary cause for [**Bug Check 0x20**](https://msdn.microsoft.com/library/windows/hardware/ff557421) (KERNEL\_APC\_PENDING\_DURING\_EXIT) and [**Bug Check 0x1**](https://msdn.microsoft.com/library/windows/hardware/ff557419) (APC\_INDEX\_MISMATCH).
+
 Starting in Windows 7, the I/O Verification option checks for the following driver errors:
 
 -   Attempts to free IRPs by calling [**ExFreePool**](https://msdn.microsoft.com/library/windows/hardware/ff544590). IRPs must be freed with [**IoFreeIrp**](https://msdn.microsoft.com/library/windows/hardware/ff549113).
