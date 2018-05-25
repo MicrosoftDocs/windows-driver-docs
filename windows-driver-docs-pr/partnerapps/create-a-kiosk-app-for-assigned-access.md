@@ -85,7 +85,8 @@ When the lock framework launches the kiosk app above the lock and the app has th
 
 
 
-If the app does not have the **windows.aboveLockScreen** extension, no secondary view is created and the app launches as if it’s running normally. Additionally, the app will not have access to an instance of LockApplicationHost, and therefore will not be able to determine if it's running in a regular context, or for a kiosk experience. 
+If the app does not have the **windows.aboveLockScreen** extension, no secondary view is created and the app launches as if it’s running normally. Additionally, because the app will not have access to an instance of LockApplicationHost it won't be able to determine if it's running in a regular context, or for a kiosk experience. Not including the extension has benefits, such as being able to support [multiple monitors](#multiplemonitors)
+
 
 Regardless of whether your app uses the extension, be sure to secure its data. See the [guidelines for assigned access apps](https://docs.microsoft.com/windows/configuration/guidelines-for-assigned-access-app#secure-your-information) for more information.
 
@@ -136,7 +137,7 @@ if (rootFrame.Content == null)
 }
 ```
 
-### Multiple views, windows, and threads
+### Multiple views, windows, and threads <a name="multiplemonitors"></a>
 
 Starting in Windows 10, version 1803, [Multiple views](https://docs.microsoft.com/windows/uwp/design/layout/show-multiple-views) are supported in the kiosk experience for apps that do not have the **windows.aboveLockScreen** extension. To use multiple views, ensure the kiosk device’s **Multiple displays** option is set to **Extend these displays**.
 
