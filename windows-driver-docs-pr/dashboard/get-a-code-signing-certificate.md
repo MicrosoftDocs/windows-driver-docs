@@ -81,7 +81,7 @@ Before you can establish a Hardware Dev Center hardware dashboard account, you n
 
  
 
-### <span id="standardcode"></span><span id="STANDARDCODE"></span>Code signing certificates for Hardware Dev Center hardware dashboard
+### <span id="standardcode"></span><span id="STANDARDCODE"></span>Code signing certificates for Hardware Dev Center Dashboard
 
 There are two types of code signing certificates available today:
 
