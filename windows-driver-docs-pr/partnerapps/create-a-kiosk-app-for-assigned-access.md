@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Kiosk apps for assigned access: Best practices
 
 
-In Windows 10, you can use assigned access to create a kiosk app, which enables users to interact with just a single Universal Windows app on a device. This topic describes how to implement a kiosk app, and best practices.
+In Windows 10, you can use assigned access to create a kiosk device, which enables users to interact with just a single Universal Windows app. This topic describes how to implement a kiosk app, and best practices.
 
 There are two different experiences that assigned access provides:
 
@@ -71,7 +71,7 @@ There are two different experiences that assigned access provides:
 
 ## The windows.aboveLockScreen extension
 
-Assigned access in Windows 10 leverages a lock framework. When an assigned access user logs in, a background task locks the desktop and launches a lock screen app, which runs the kiosk app above the lock. The app's behavior may differ, depending on whether it uses the windows.aboveLockScreen extension.
+Assigned access in Windows 10 leverages the lock framework. When an assigned access user logs in, a background task locks the desktop and launches the kiosk app above the lock. The app's behavior may differ, depending on whether it uses the windows.aboveLockScreen extension.
 
 Using **windows.aboveLockScreen** enables your kiosk app to access the [LockApplicationHost](https://docs.microsoft.com/uwp/api/Windows.ApplicationModel.LockScreen.LockApplicationHost) runtime class, which enables the app to know when it is running above the lock (and therefore running as a kiosk experience). If an instance cannot be returned, the app is running in a regular desktop context. 
 
