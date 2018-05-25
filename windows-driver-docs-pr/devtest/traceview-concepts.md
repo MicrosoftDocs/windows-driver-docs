@@ -43,13 +43,13 @@ In TraceView, a *workspace* is a set of trace session properties and trace log d
 
 A workspace includes:
 
--   All properties of the trace session, including buffers, flags and the level, and the location of the trace log
+- All properties of the trace session, including buffers, flags and the level, and the location of the trace log
 
--   The location of the [program database (PDB) symbol file](pdb-symbol-files.md), [trace message format (TMF) file](trace-message-format-file.md), or TMF search path
+- The location of the [program database (PDB) symbol file](pdb-symbol-files.md), [trace message format (TMF) file](trace-message-format-file.md), or TMF search path
 
--   The path and file names of the TraceView listing file and summary file
+- The path and file names of the TraceView listing file and summary file
 
--   Filters
+- [Filters](filtering-trace-messages.md)
 
 When you open the workspace for a real-time trace session, TraceView starts a new trace session with the saved properties and configuration settings. When you open the workspace for a trace log display, the log appears exactly as you had configured it.
 
@@ -59,19 +59,19 @@ For more information, see [Using TraceView Workspaces](using-traceview-workspace
 
 To create a trace session, you must identify the trace providers and locate the formatting instructions for the binary trace messages that the providers generate. You can do this any one of the following ways:
 
--   Locate the executable binary for the source code that lines the providers. TraceView can extract all the information necessary to enable and format [TraceLogging](https://msdn.microsoft.com/library/windows/desktop/dn904636) and manifested ETW events. It will also attempt to locate the [PDB symbol file](pdb-symbol-files.md) to enable any [WPP Software Tracing](wpp-software-tracing.md) providers.
+- Locate the executable binary for the source code that lines the providers. TraceView can extract all the information necessary to enable and format [TraceLogging](https://msdn.microsoft.com/library/windows/desktop/dn904636) and manifested ETW events. It will also attempt to locate the [PDB symbol file](pdb-symbol-files.md) to enable any [WPP Software Tracing](wpp-software-tracing.md) providers.
 
--   Locate the [PDB symbol file](pdb-symbol-files.md) for the source code that includes [WPP Software Tracing](wpp-software-tracing.md) providers. TraceView can extract from the PDB file all of the information that it needs to identify the providers and format their trace messages.
+- Locate the [PDB symbol file](pdb-symbol-files.md) for the source code that includes [WPP Software Tracing](wpp-software-tracing.md) providers. TraceView can extract from the PDB file all of the information that it needs to identify the providers and format their trace messages.
 
--   Locate a [control GUID (.ctl) file](control-guid-file.md) for the provider and specify the [TMF file](trace-message-format-file.md) or the path to a directory where TMF files are stored.
+- Locate a [control GUID (.ctl) file](control-guid-file.md) for the provider and specify the [TMF file](trace-message-format-file.md) or the path to a directory where TMF files are stored.
 
--   Enter the [control GUID](control-guid.md) of the provider and specify the TMF file or the path to a directory where TMF files are stored.
+- Enter the [control GUID](control-guid.md) of the provider and specify the TMF file or the path to a directory where TMF files are stored.
 
-    If you enter a provider name preceded by an asterick (e.g. ```*SampleProvider```), TraceView will automatically turn the name into a GUID using a standard algorithm. Not all providers follow this standard.
+    If you enter a provider name preceded by an asterisk (e.g. ```*SampleProvider```), TraceView will automatically turn the name into a GUID using a standard algorithm. Not all providers follow this standard, but many, such as providers written using [.NET's EventSource](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.tracing.eventsource), do.
 
--   Select a [registered provider](registered-provider.md) from the list that TraceView assembles and specify the TMF file or the path to a directory where TMF files are stored.
+- Select a [registered provider](registered-provider.md) from the list that TraceView assembles and specify the TMF file or the path to a directory where TMF files are stored.
 
--   Select an [NT Kernel Logger Trace Session](nt-kernel-logger-trace-session.md), then select one or more operating system events to trace.
+- Select an [NT Kernel Logger Trace Session](nt-kernel-logger-trace-session.md), then select one or more operating system events to trace.
 
 ### <span id="Set_TMF_Search_Path_and_Select_TMF_Files_Options"></span><span id="set_tmf_search_path_and_select_tmf_files_options"></span><span id="SET_TMF_SEARCH_PATH_AND_SELECT_TMF_FILES_OPTIONS"></span>Set TMF Search Path and Select TMF Files Options
 
@@ -79,9 +79,9 @@ When enabling WPP providers, unless you have the [PDB symbol file](pdb-symbol-fi
 
 TraceView supports two methods:
 
--   Use the **Set TMF Search Path** option when you are not sure which TMF files to use for the trace provider. TraceView searches all of the TMF files in the specified directory and matches the message GUID of the message that is generated to the name of the TMF file. The TMF files must be located in the specified directory. TraceView does not search recursively.
+- Use the **Set TMF Search Path** option when you are not sure which TMF files to use for the trace provider. TraceView searches all of the TMF files in the specified directory and matches the message GUID of the message that is generated to the name of the TMF file. The TMF files must be located in the specified directory. TraceView does not search recursively.
 
--   Use the **Select TMF files** option when you know which TMF file to use for the trace provider, or when the TMF files you need are in different directories. You must also use this option if the name of the TMF file is not a [message GUID](message-guid.md), because TraceView cannot find it in a directory.
+- Use the **Select TMF files** option when you know which TMF file to use for the trace provider, or when the TMF files you need are in different directories. You must also use this option if the name of the TMF file is not a [message GUID](message-guid.md), because TraceView cannot find it in a directory.
 
 If the TMF files that are specified or those that TraceView finds in the specified directory do not match the trace messages that are generated by the trace provider, TraceView cannot format the messages. Instead, it displays the trace message GUID and the following error message:
 

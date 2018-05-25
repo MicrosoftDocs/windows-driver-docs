@@ -30,9 +30,7 @@ TraceView (TraceView.exe) configures and controls [trace sessions](trace-session
 
 TraceView is a [trace controller](trace-controller.md) and a [trace consumer](trace-consumer.md). You can use TraceView to enable, configure, start, update, and stop a tracing session; to display real-time or logged trace messages; to combine trace message from different providers in a single display; to filter a trace message display; and to convert trace messages into text format.
 
-TraceView is located in the tools\\&lt;*Platform*&gt; subdirectory of the Windows Driver Kit (WDK), where &lt;*Platform*&gt; is either i386, amd64, or ia64.
-
-**Note**  TraceView runs on Microsoft Windows 7 and later versions of Windows.
+TraceView is located in the tools\\&lt;*Platform*&gt; subdirectory of the Windows Driver Kit (WDK), where &lt;*Platform*&gt; is either x86, x64, arm, or arm64.
 
 This section describes the version of TraceView that ships in the Windows 10 Fall Creator's Update (1709) WDK and later. Earlier versions of Traceview may lack many of the features described here.
 
