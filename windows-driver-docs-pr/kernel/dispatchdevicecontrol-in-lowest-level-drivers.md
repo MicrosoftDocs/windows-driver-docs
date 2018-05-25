@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # DispatchDeviceControl in Lowest-Level Drivers
 
 
-## <a href="" id="ddk-dispatchdevicecontrol-in-lowest-level-drivers-kg"></a>
+
 
 
 An [**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744) request for a lowest-level driver requires that the driver either change the state of its device or provide information about the state of its device. Because most kinds of drivers are required to handle a number of I/O control codes, their [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287) routines usually contain a **switch** statement somewhat like the following:

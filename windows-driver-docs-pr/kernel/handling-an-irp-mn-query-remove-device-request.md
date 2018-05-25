@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Handling an IRP\_MN\_QUERY\_REMOVE\_DEVICE Request
 
 
-## <a href="" id="ddk-handling-an-irp-mn-query-remove-device-request-kg"></a>
+
 
 
 The PnP manager sends this IRP to inform drivers that a device is about to be removed from the machine and to ask whether the device can be removed without disrupting the machine. It also sends this IRP when a user requests to update drivers for the device.

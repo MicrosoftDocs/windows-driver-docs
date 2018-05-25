@@ -2,6 +2,11 @@
 title: MemAfterReqCompletedWrite rule (kmdf)
 description: The MemAfterReqCompletedWrite rule specifies that within the EvtIoWrite callback function, the framework memory object cannot be accessed after the I/O request is completed.
 ms.assetid: 5e3ba898-3132-4777-85e4-93b4c26a7efa
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["MemAfterReqCompletedWrite rule (kmdf)"]
 topic_type:
 - apiref

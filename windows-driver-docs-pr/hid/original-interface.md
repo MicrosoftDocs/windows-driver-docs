@@ -23,7 +23,7 @@ ms.technology: windows-devices
 #  Original Interface
 
 
-## <a href="" id="ddk-the-original-interface-di"></a>
+
 
 
 The following joystick minidriver callbacks are specific to the original interface:

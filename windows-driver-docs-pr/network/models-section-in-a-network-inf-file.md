@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Models Section in a Network INF File
 
 
-## <a href="" id="ddk-models-section-ng"></a>
+
 
 
 The **Models** section in a network INF file is based on the generic [**INF Models section**](https://msdn.microsoft.com/library/windows/hardware/ff547456).

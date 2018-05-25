@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Canceling a Send Request in a Filter Driver
 
 
-## <a href="" id="ddk-canceling-send-requests-in-a-filter-driver-ng"></a>
+
 
 
 Filter drivers can cancel send requests that were originated by the filter driver or that were originated by overlying drivers.

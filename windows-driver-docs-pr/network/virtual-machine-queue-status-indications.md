@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # VMQ Status Indications
 
 
-## <a href="" id="ddk-virtual-machine-queue-status-indications-nr"></a>
+
 
 
 This section describes the following NDIS status indications that can be used by a miniport driver that supports the virtual machine queue (VMQ) interface:

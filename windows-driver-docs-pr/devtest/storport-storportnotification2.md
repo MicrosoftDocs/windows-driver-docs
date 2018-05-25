@@ -2,6 +2,11 @@
 title: StorPortNotification2 rule (storport)
 description: This rule verifies that calls to StorPortNotification use only allowed (i.e. documented) notification types.
 ms.assetid: 74363E6D-1D1B-484D-A558-8996DFE02FA8
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["StorPortNotification2 rule (storport)"]
 topic_type:
 - apiref

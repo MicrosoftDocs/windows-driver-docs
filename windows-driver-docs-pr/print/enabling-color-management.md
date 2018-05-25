@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Enabling Color Management
 
 
-## <a href="" id="ddk-enabling-color-management-gg"></a>
+
 
 
 Color management can be enabled by either an application or a printer driver. Applications can enable color management by either of the following two methods:

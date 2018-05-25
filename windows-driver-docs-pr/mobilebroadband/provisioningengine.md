@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # ProvisioningEngine
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The ProvisioningEngine element specifies the trusted certificates. This allows operators to provision the PC with packages that are signed with a trusted certificate.
 

@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Sample BDA Drivers
 
 
-## <a href="" id="ddk-sample-bda-drivers-ksg"></a>
+
 
 
 The Windows Driver Kit (WDK) version 7600 that shipped with Windows 7 includes samples that show the principles and features of Broadcast Driver Architecture (BDA) and how a BDA minidriver uses the AVStream class driver. These samples are working implementations with source code that can serve as a starting point for you to write a proprietary BDA minidriver.

@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Sending I/O Requests Synchronously
 
 
-## <a href="" id="ddk-sending-i-o-requests-synchronously-df"></a>
+
 
 
 The following table lists the I/O target object methods that your driver can call to send I/O requests synchronously to an I/O target. For detailed information about how to use these methods, see the methods' reference pages.

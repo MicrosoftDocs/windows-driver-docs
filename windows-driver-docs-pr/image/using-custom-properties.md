@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Using Custom Properties
 
 
-## <a href="" id="ddk-using-custom-properties-si"></a>
+
 
 
 A WIA driver can define its own custom properties. Callers can manipulate custom properties just as they would normal WIA properties. However, only your application or custom UI module can access these custom properties.

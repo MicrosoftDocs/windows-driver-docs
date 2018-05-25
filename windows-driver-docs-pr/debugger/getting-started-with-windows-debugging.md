@@ -3,7 +3,7 @@ title: Getting Started with Windows Debugging
 description: This section covers how to get started with Windows Debugging. If your goal is to use the debugger to analyze a crash dump, see Crash dump analysis using the Windows debuggers (WinDbg).
 ms.assetid: 4981928E-A33D-4F60-AAA0-124C360B7E03
 ms.author: domars
-ms.date: 11/28/2017
+ms.date: 05/03/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,19 +43,10 @@ WinDbg works well in most situations, but there are times when you may want to u
 
 4. Determine how you will connect the target and host system.
 Typically, an Ethernet network connection is used to connect the target and host system. If you are doing early bring up work, or don't have an Ethernet connection on the device, other network connection options are available. For more information, see these topics:
-
--   [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
--   [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md)
--   [Setting Up Kernel-Mode Debugging using Serial over USB Manually](setting-up-kernel-mode-debugging-using-serial-over-usb-manually-.md)
--   [Setting Up Network Debugging of a Virtual Machine Host](setting-up-network-debugging-of-a-virtual-machine-host.md)
-
-If you wish to debug using Visual Studio, then refer to these topics.
-
--   [Setting Up Kernel-Mode Debugging in Visual Studio](setting-up-kernel-mode-debugging-in-visual-studio.md)
--   [Setting Up Kernel-Mode Debugging over a Network Cable in Visual Studio](setting-up-a-network-debugging-connection-in-visual-studio.md)
--   [Setting Up Kernel-Mode Debugging using Serial over USB in Visual Studio](setting-up-kernel-mode-debugging-using-serial-over-usb-in-visual-studio.md)
--   [Setting Up Kernel-Mode Debugging of a Virtual Machine in Visual Studio](setting-up-a-connection-to-a-virtual-machine-in-visual-studio.md)
--   [Setting Up User-Mode Debugging in Visual Studio](setting-up-user-mode-debugging-in-visual-studio.md)
+   -   [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
+   -   [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md)
+   -   [Setting Up Kernel-Mode Debugging using Serial over USB Manually](setting-up-kernel-mode-debugging-using-serial-over-usb-manually-.md)
+   -   [Setting Up Network Debugging of a Virtual Machine Host](setting-up-network-debugging-of-a-virtual-machine-host.md)
 
 5. Choose either the 32-bit or 64-bit debugging tools.
 This choice is dependent on the version of Windows that is running on the target and host systems and whether you are debugging 32-bit or 64-bit code. For more information, see [Choosing the 32-Bit or 64-Bit Debugging Tools](choosing-a-32-bit-or-64-bit-debugger-package.md).
@@ -77,6 +68,15 @@ Over time, you will use different debug commands as you work in the debugger. Us
 
 11. Use debugging extensions for specific technologies.
 There are a number of debugging extensions that provide parsing of domain specific data structures. For more information, see [Specialized Extensions](specialized-extensions.md).
+
+12. Learn about related Windows internals, such as memory usage, context, threads and processes. This documentation assumes a knowledge of Windows internals. Review resources such as this book to learn more about Windows Internals. 
+  -   Windows Internals by Mark E. Russinovich, David A. Solomon and Alex Ionescu
+
+13. Review additional debugging resources.
+   -   Inside Windows Debugging: A Practical Guide to Debugging and Tracing Strategies in Windows® by Tarik Soulami
+   -   Advanced Windows Debugging by Mario Hewardt and Daniel Pravat
+   -   [The Defrag Tools Show WinDbg Episodes 13-29](http://channel9.msdn.com/Shows/Defrag-Tools)
+
 
 This section contains the following topics.
 

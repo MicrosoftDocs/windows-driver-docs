@@ -16,7 +16,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-treatment-of-invalidated-state-objects-ng"></a>
+
 
 
 If the host stack requests to invalidate state, an offload target should respond as follows:

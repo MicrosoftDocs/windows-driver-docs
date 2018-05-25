@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Summary of Changes Required to Port a Protocol Driver to NDIS 6.20
 
 
-## <a href="" id="ddk-summary-of-changes-required-to-port-a-protocol-driver-to-ndis-6-20"></a>
+
 
 
 This topic summarizes the changes that are required to port an NDIS 6.*x* protocol driver to NDIS 6.20.

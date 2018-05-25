@@ -25,7 +25,7 @@ ms.technology: windows-devices
 # Processing a Print Job
 
 
-## <a href="" id="ddk-processing-a-print-job-gg"></a>
+
 
 
 When the spooler is ready to send a print job to a print processor, it calls the print processor's [**OpenPrintProcessor**](https://msdn.microsoft.com/library/windows/hardware/ff559604) function. This function performs initialization activities and returns a handle.

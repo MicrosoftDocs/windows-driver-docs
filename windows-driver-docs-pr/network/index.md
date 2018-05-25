@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Network Driver Design Guide
 
 
-## <a href="" id="ddk-network-design-guide-ng"></a>
+
 
 
 This Network Driver Design Guide describes how to design and create network device drivers for Windows operating systems beginning with Windows Vista.

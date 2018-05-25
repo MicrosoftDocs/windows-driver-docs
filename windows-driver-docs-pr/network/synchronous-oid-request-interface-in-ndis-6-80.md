@@ -39,9 +39,6 @@ The following table describes the differences between Regular OIDs, Direct OIDs,
 
 ## Filtering
 
-> [!WARNING]
-> In Windows 10, version 1709, Synchronous OID requests are supported only for miniport and protocol drivers. The information in this section is for informational purposes only to explain how Synchronous OID calls work. Filter drivers cannot make Synchronous OID request calls in Windows 10, version 1709.
-
 Like the other two types of OID calls, filter drivers have full control over the OID request in a Synchronous call. Filter drivers can observe, intercept, modify, and issue Synchronous OIDs. However, for efficiency, the mechanics of a Synchronous OID are somewhat different.
 
 ### Passthrough, interception, and origination
@@ -163,17 +160,17 @@ MyFilterSynchronousOidRequest(
 }
 ```
 
-If you want to intercept or modify a particular OID, you can do it by adding just a couple lines of code:
+If you want to intercept or modify a particular OID, you can do it by adding just a couple lines of code. The minimal Complete handler is even simpler:
 
 ```cpp
 VOID
 MyFilterSynchronousOidRequestComplete(
   NDIS_HANDLE FilterModuleContext,
-   NDIS_OID_REQUEST *OidRequest,
+  NDIS_OID_REQUEST *OidRequest,
   NDIS_STATUS *Status,
   PVOID CallContext)
 {
-
+  return;
 }
 ```
 
@@ -196,7 +193,6 @@ Therefore, just as with Direct OID requests, Synchronous OID calls can only be u
 For more info about implementing the Synchronous OID request interface in drivers, see the following topics:
 
 - [Miniport Adapter OID Requests](miniport-adapter-oid-requests.md)
+- [Filter Module OID Requests](filter-module-oid-requests.md)
 - [Protocol Driver OID Requests](protocol-driver-oid-requests.md)
-
-For Synchronous OID request interface API reference, see [NDIS 6.80 Synchronous OID request interface](https://msdn.microsoft.com/library/windows/hardware/0D10CFB5-01A4-4997-92AA-8D72A68CBCD2).
 

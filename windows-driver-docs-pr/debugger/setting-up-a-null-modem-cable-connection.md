@@ -4,7 +4,7 @@ description: Debugging Tools for Windows supports kernel debugging over a null-m
 ms.assetid: f7311928-bab1-4692-8dd6-5e464dd7127a
 keywords: ["setup, making a debug cable connection", "null-modem cable", "debug cable", "cable connection", "cable connection, debug (null-modem) cable)"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 05/03/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,8 +14,6 @@ ms.technology: windows-devices
 
 
 Debugging Tools for Windows supports kernel debugging over a null-modem cable. Null-modem cables are serial cables that have been configured to send data between two serial ports. They are available at most computer stores. Do not confuse null-modem cables with standard serial cables. Standard serial cables do not connect serial ports to each other. For information about how null-modem cables are wired, see [Null-Modem Cable Wiring](#null-modem-cable-wiring).
-
-This topic describes how to set up serial debugging manually. As an alternative to setting up serial debugging manually, you can do the setup using Microsoft Visual Studio. For more information, see [Setting Up Kernel-Mode Debugging over a Serial Cable in Visual Studio](setting-up-a-null-modem-cable-connection-in-visual-studio.md).
 
 The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*.
 

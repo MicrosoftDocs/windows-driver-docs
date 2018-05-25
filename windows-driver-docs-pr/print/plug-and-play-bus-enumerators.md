@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Plug and Play Bus Enumerators
 
 
-## <a href="" id="ddk-plug-and-play-bus-enumerators-gg"></a>
+
 
 
 The following sections provide information about Plug and Play bus enumeration on each of the following types of port:

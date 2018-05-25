@@ -220,7 +220,7 @@ The Debugger Command window is split into two panes. You type commands in the sm
 
 In the command entry pane, use the up arrow and down arrow keys to scroll through the command history. When a command appears, you can edit it or press **ENTER** to run the command.
 
-### <span id="KernelModeDebuggingCommandsAndTechniques"></span><span id="kernelmodedebuggingcommandsandtechniques"></span><span id="KERNELMODEDEBUGGINGCOMMANDSANDTECHNIQUES"></span>Section 2: Kernel mode debugging commands and techniques
+## <span id="KernelModeDebuggingCommandsAndTechniques"></span><span id="kernelmodedebuggingcommandsandtechniques"></span><span id="KERNELMODEDEBUGGINGCOMMANDSANDTECHNIQUES"></span>Section 2: Kernel mode debugging commands and techniques
 
 
 *In Section 2, you will use debug commands to display information about the target system.*
@@ -317,7 +317,7 @@ Unable to enumerate user-mode unloaded modules, Win32 error 0n30
 
 8. Because we have yet to set the symbol path and loaded symbols, limited information is available in the debugger.
 
-### <span id="Download"></span><span id="download"></span><span id="DOWNLOAD"></span>Section 3: Download and build the KMDF universal echo driver
+## <span id="Download"></span><span id="download"></span><span id="DOWNLOAD"></span>Section 3: Download and build the KMDF universal echo driver
 
 *In Section 3, you will download and build the KMDF universal echo driver.*
 
@@ -391,28 +391,26 @@ To download and build the Echo sample audio driver, perform the following steps.
 
     Navigate to the folder that contains the built files for the Autosync driver:
 
-    *C:\\DriverSamples\\general\\echo\\kmdf\\driver\\AutoSync\\x64\\Debug*. The folder should contain these files:
+    *C:\\DriverSamples\\general\\echo\\kmdf\\driver\\AutoSync\\x64\\Debug*. 
+
+    The folder should contain these files:
 
     | File     | Description                                                                       |
     |----------|-----------------------------------------------------------------------------------|
     | Echo.sys | The driver file.                                                                  |
     | Echo.inf | An information (INF) file that contains information needed to install the driver. |
 
-     
-
     In addition, the echoapp.exe file was built and it should be located here: *C:\\DriverSamples\\general\\echo\\kmdf\\exe\\x64\\Debug*
 
     | File        | Description                                                                       |
     |-------------|-----------------------------------------------------------------------------------|
-    | EchoApp.exe | A command prompt executable test file that communicates with the echo.sys driver. |
-
-     
+    | EchoApp.exe | A command prompt executable test file that communicates with the echo.sys driver. |     
 
 8.  Locate a USB thumb drive or set up a network share to copy the built driver files and the test EchoApp from the host to the target system.
 
 In the next section, you will copy the code to the target system, and install and test the driver.
 
-### <span id="Install"></span><span id="install"></span><span id="INSTALL"></span>Section 4: Install the KMDF echo driver sample on the target system
+## <span id="Install"></span><span id="install"></span><span id="INSTALL"></span>Section 4: Install the KMDF echo driver sample on the target system
 
 *In Section 4, you will use devcon to install the echo sample driver.*
 
@@ -452,7 +450,7 @@ Create a folder on the target for the built driver package (for example, *C:\\Ec
 
 Locate the .cer certificate on the host system, it is in the same folder on the host computer in the folder that contains the built driver files. On the target computer, right-click the certificate file, and click **Install**, then follow the prompts to install the test certificate.
 
-If you need more detailed instructions for setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](https://msdn.microsoft.com/windows-drivers/develop/preparing_a_computer_for_manual_driver_deployment).
+If you need more detailed instructions for setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](../develop/preparing-a-computer-for-manual-driver-deployment.md).
 
 **-&gt; On the target system**
 
@@ -500,7 +498,7 @@ Pattern Verified successfully
 Pattern Verified successfully
 ```
 
-### <span id="UseWinDbgToDisplayInformation"></span><span id="usewindbgtodisplayinformation"></span><span id="USEWINDBGTODISPLAYINFORMATION"></span>Section 5: Use WinDbg to display information about the driver
+## <span id="UseWinDbgToDisplayInformation"></span><span id="usewindbgtodisplayinformation"></span><span id="USEWINDBGTODISPLAYINFORMATION"></span>Section 5: Use WinDbg to display information about the driver
 
 *In Section 5, you will set the symbol path and use kernel debugger commands to display information about the KMDF echo sample driver.*
 
@@ -638,7 +636,7 @@ set ENABLE_OPTIMIZER=0
     0: kd> !ed nt!Kd_DEFAULT_MASK  0x00000000
     ```
 
-### <span id="DisplayingThePlugAndPlayDeviceTree"></span><span id="displayingtheplugandplaydevicetree"></span><span id="DISPLAYINGTHEPLUGANDPLAYDEVICETREE"></span>Section 6: Displaying Plug and Play device tree information
+## <span id="DisplayingThePlugAndPlayDeviceTree"></span><span id="displayingtheplugandplaydevicetree"></span><span id="DISPLAYINGTHEPLUGANDPLAYDEVICETREE"></span>Section 6: Displaying Plug and Play device tree information
 
 *In Section 6, you will display information about the echo sample device driver and where it lives in the Plug and Play device tree.*
 
@@ -724,7 +722,7 @@ This diagram shows a more complex device node tree.
 
  
 
-### <span id="WorkingWithBreakpoints"></span><span id="workingwithbreakpoints"></span><span id="WORKINGWITHBREAKPOINTS"></span>Section 7: Working with breakpoints and source code
+## <span id="WorkingWithBreakpoints"></span><span id="workingwithbreakpoints"></span><span id="WORKINGWITHBREAKPOINTS"></span>Section 7: Working with breakpoints and source code
 
 *In Section 7, you will set breakpoints and single step through kernel mode source code.*
 
@@ -945,7 +943,7 @@ The following are the commands that you can use to step through your code (with 
 
 For more information, see [Source Code Debugging in WinDbg](source-window.md) in the debugging reference documentation.
 
-### <span id="ViewingVariables"></span><span id="viewingvariables"></span><span id="VIEWINGVARIABLES"></span>Section 8: Viewing variables and call stacks
+## <span id="ViewingVariables"></span><span id="viewingvariables"></span><span id="VIEWINGVARIABLES"></span>Section 8: Viewing variables and call stacks
 
 *In Section 8, you will display information about variables and call stacks.*
 
@@ -1028,7 +1026,7 @@ To display the call stack, use the k\* commands.
 
 The call stack shows that the kernel (nt) called into Plug and Play code (PnP), that called driver framework code (WDF) that subsequently called the echo driver **DeviceAdd** function.
 
-### <span id="DisplayingProcessesAndThreads"></span><span id="displayingprocessesandthreads"></span><span id="DISPLAYINGPROCESSESANDTHREADS"></span>Section 9: Displaying processes and threads
+## <span id="DisplayingProcessesAndThreads"></span><span id="displayingprocessesandthreads"></span><span id="DISPLAYINGPROCESSESANDTHREADS"></span>Section 9: Displaying processes and threads
 
 ### <span id="Processes"></span><span id="processes"></span><span id="PROCESSES"></span>Processes
 
@@ -1408,7 +1406,7 @@ For more information about threads and processes, see the following references:
 
  
 
-### <span id="Section_10__IRQL__Registers_and_Ending_the_WinDbg_session"></span><span id="section_10__irql__registers_and_ending_the_windbg_session"></span><span id="SECTION_10__IRQL__REGISTERS_AND_ENDING_THE_WINDBG_SESSION"></span>Section 10: IRQL, Registers and Ending the WinDbg session
+## <span id="Section_10__IRQL__Registers_and_Ending_the_WinDbg_session"></span><span id="section_10__irql__registers_and_ending_the_windbg_session"></span><span id="SECTION_10__IRQL__REGISTERS_AND_ENDING_THE_WINDBG_SESSION"></span>Section 10: IRQL, Registers and Ending the WinDbg session
 
 ### <span id="IRQLRegistersMemory"></span><span id="irqlregistersmemory"></span><span id="IRQLREGISTERSMEMORY"></span>Viewing the saved IRQL
 
@@ -1463,7 +1461,7 @@ Be sure and use the **g** command to let the target computer run code, so that i
 
 For more information, see [Ending a Debugging Session in WinDbg](ending-a-debugging-session-in-windbg.md) in the debugging reference documentation.
 
-### <span id="WindowsDebuggingResources"></span><span id="windowsdebuggingresources"></span><span id="WINDOWSDEBUGGINGRESOURCES"></span>Section 11: Windows debugging resources
+## <span id="WindowsDebuggingResources"></span><span id="windowsdebuggingresources"></span><span id="WINDOWSDEBUGGINGRESOURCES"></span>Section 11: Windows debugging resources
 
 
 Additional information is available on Windows debugging. Note that some of these books will use older versions of Windows such as Windows Vista in their examples, but the concepts discussed are applicable to most versions of Windows.
@@ -1484,7 +1482,7 @@ The Defrag Tools Show WinDbg Episodes 13-29 <http://channel9.msdn.com/Shows/Defr
 
 OSR <https://www.osr.com/>
 
-### <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>Related topics
 
 
 [Standard Debugging Techniques](standard-debugging-techniques.md)

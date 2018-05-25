@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Attributes for Simulated Fonts
 
 
-## <a href="" id="ddk-attributes-for-simulated-fonts-gg"></a>
+
 
 
 The following table lists attributes describing the printer's support for simulated fonts.

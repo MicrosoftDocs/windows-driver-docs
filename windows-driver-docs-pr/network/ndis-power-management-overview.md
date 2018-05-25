@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # NDIS Power Management Overview
 
 
-## <a href="" id="ddk--nr"></a>
+
 
 
 This section provides an overview of the features that are provided with the power management interface that is introduced in Windows 7 for NDIS 6.20 drivers.

@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Obtaining HID Reports
 
 
-## <a href="" id="ddk-obtaining-hid-reports-kg"></a>
+
 
 
 This section describes how user-mode applications and kernel-mode drivers obtain HID reports from a [HID collection](hid-collections.md).

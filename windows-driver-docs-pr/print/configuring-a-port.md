@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Configuring a Port
 
 
-## <a href="" id="ddk-configuring-a-port-gg"></a>
+
 
 
 Configuring a port consists of modifying a port monitor server DLL's stored configuration information for a previously-added port.

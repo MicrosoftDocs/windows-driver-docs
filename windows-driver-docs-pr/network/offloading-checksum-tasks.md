@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Offloading Checksum Tasks
 
 
-## <a href="" id="ddk-offloading-checksum-tasks-ng"></a>
+
 
 
 NDIS supports offloading TCP/IP checksum tasks at run time.

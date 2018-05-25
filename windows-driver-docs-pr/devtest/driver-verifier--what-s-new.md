@@ -24,7 +24,12 @@ ms.technology: windows-devices
 ## Driver Verifier in Windows 10
 
 
-*Updated: July 29, 2015*
+*Updated: May 8, 2018*
+
+> [!IMPORTANT]
+> Starting in versions after Windows 10 1803, running Driver Verifier will no longer automatically enable Windows Driver Framework (WDF) verification. Please note the following:  
+> * You can still enable WDF verification as part of Driver Verifier's `/standard` flags. See [Driver Verifier Command Syntax](https://docs.microsoft.com/windows-hardware/drivers/devtest/verifier-command-line) for more information.
+> * This change will impact you if you are enabling DV with syntax `/flags 0x209BB` as WDF verification will no longer be automatically enabled.
 
 Starting with Windows 10, driver verifier includes new driver validation rules for the following technologies:
 

@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Required Flatbed Item Properties
 
 
-## <a href="" id="ddk-required-wia-item-properties-for-flatbed-scanners-si"></a>
+
 
 
 The WIA flatbed scanner item is required to support the following WIA properties:

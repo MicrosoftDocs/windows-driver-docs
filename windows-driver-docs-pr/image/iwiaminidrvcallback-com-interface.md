@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # IWiaMiniDrvCallBack COM Interface
 
 
-## <a href="" id="ddk-iwiaminidrvcallback-com-interface-si"></a>
+
 
 
 The [IWiaMiniDrvCallBack Interface](https://msdn.microsoft.com/library/windows/hardware/ff543943) provides one link in a communication chain between a minidriver and an application. Because a minidriver cannot communicate directly with an application, and vice versa, any communication between the two must go through an intermediary: the WIA service. To enable this communication, the application implements the **IWiaDataCallback** interface (described in the Microsoft Windows SDK documentation). This interface includes the **IWiaDataCallback::BandedDataCallback** method, which the WIA service can call. If an application provides this callback routine, the WIA service creates another callback, the [**IWiaMiniDrvCallBack::MiniDrvCallback**](https://msdn.microsoft.com/library/windows/hardware/ff543946) method, which it provides for use by the minidriver.

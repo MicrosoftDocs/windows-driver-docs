@@ -23,7 +23,7 @@ In previous versions of Windows, WDF and NDIS had individual advantages, but did
 
 With the NetAdapterCx model, conversely, you write a real WDF driver for your NIC. This means that your NetAdapterCx driver has access to full WDF functionality, as well as networking-specific APIs and I/O support from the NetAdapter class extension. As shown in the block diagram below, NetAdapterCx still works behind the scenes with NDIS, but it handles all the interaction with NDIS on your behalf.
 
-<img src="images/architecture.png" alt="NetAdapterCx architecture" title="NetAdapterCx architecture" style="width: 400px;"/>
+<img src="images/architecture.png" alt="NetAdapterCx architecture" title="NetAdapterCx architecture" width="600"/>
 
 ## Additional info
 
@@ -48,12 +48,14 @@ This section contains the following topics:
 * [Building a NetAdapterCx client driver](building-a-netadaptercx-client-driver.md)
 * [Device initialization](device-initialization.md)
 * [Accessing configuration information](accessing-configuration-information.md)
-* [Transferring network data](transferring-network-data.md)
 * [Handling control requests](handling-control-requests.md)
 * [Debugging a NetAdapterCx client driver](debugging-a-netadaptercx-client-driver.md)
+* [Transferring network data](transferring-network-data.md)
+* [NetAdapterCx receive side scaling (RSS)](netadaptercx-receive-side-scaling-rss-.md)
 * [Configuring power management](configuring-power-management.md)
 * [NDIS-WDF function equivalents](ndis-wdf-function-equivalents.md)
 * [Summary of objects](summary-of-objects.md)
 * [Power-up sequence for a NetAdapterCx client driver](power-up-sequence-for-a-netadaptercx-client-driver.md)
 * [Power-down sequence for a NetAdapterCx client driver](power-down-sequence-for-a-netadaptercx-client-driver.md)
 * [NetAdapterCx limitations](netadaptercx-limitations.md)
+* [Mobile Broadband (MBB) WDF class extension (MBBCx)](mobile-broadband-mbb-wdf-class-extension-mbbcx-.md)

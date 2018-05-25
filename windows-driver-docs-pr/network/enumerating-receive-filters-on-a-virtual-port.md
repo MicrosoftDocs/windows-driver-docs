@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Enumerating Receive Filters on a Virtual Port
 
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 After a virtual port (VPort) is created on the NIC switch of the network adapter, overlying drivers and user applications can do the following:
@@ -27,7 +27,7 @@ After a virtual port (VPort) is created on the NIC switch of the network adapter
 
 For more information on how to create a VPort, see [Creating a Virtual Port](creating-a-virtual-port.md).
 
-## <a href="" id="enumerate"></a>Enumerating Receive Filters
+## Enumerating Receive Filters
 
 
 To obtain a list of all receive filters that are set on a virtual port (VPort) of a NIC switch, overlying drivers and applications can issue object identifier (OID) method requests of [OID\_RECEIVE\_FILTER\_ENUM\_FILTERS](https://msdn.microsoft.com/library/windows/hardware/ff569787).
@@ -50,7 +50,7 @@ Before the overlying driver or user application issues this OID method request, 
 
 After a successful return from the OID method request of [OID\_RECEIVE\_FILTER\_ENUM\_FILTERS](https://msdn.microsoft.com/library/windows/hardware/ff569787), the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to an updated [**NDIS\_RECEIVE\_FILTER\_INFO\_ARRAY**](https://msdn.microsoft.com/library/windows/hardware/ff567179) structure that is followed by one or more [**NDIS\_RECEIVE\_FILTER\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567176) structures. Each **NDIS\_RECEIVE\_FILTER\_INFO** structure specifies the unique identifier for the receive filter that is set on the specified VPort.
 
-## <a href="" id="query"></a>Querying a Specific Receive Filter
+## Querying a Specific Receive Filter
 
 
 Overlying drivers or applications can issue an OID method request of [OID\_RECEIVE\_FILTER\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569792) to obtain the parameters of a specific filter on a VPort.

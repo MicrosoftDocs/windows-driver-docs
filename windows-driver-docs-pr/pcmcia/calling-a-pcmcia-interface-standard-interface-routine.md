@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Calling a PCMCIA\_INTERFACE\_STANDARD Interface Routine
 
 
-## <a href="" id="ddk-calling-a-pcmcia-interface-standard-interface-routine-kg"></a>
+
 
 
 This section describes how to call a PCMCIA\_INTERFACE\_STANDARD interface routine.

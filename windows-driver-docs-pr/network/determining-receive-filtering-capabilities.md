@@ -22,7 +22,7 @@ This topic describes how NDIS and overlying drivers determine the receive filter
 
  
 
-## <a href="" id="report"></a>Reporting Receive Filtering Capabilities during *MiniportInitializeEx*
+## Reporting Receive Filtering Capabilities during *MiniportInitializeEx*
 
 
 When NDIS calls the PF miniport driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function, the driver provides the following receive filtering capabilities:
@@ -81,7 +81,7 @@ When NDIS calls the miniport driver's [*MiniportInitializeEx*](https://msdn.micr
 
 For more information about the adapter initialization process, see [Initializing a Miniport Adapter](initializing-a-miniport-adapter.md).
 
-## <a href="" id="query"></a>Querying Receive Filtering Capabilities by Overlying Drivers
+## Querying Receive Filtering Capabilities by Overlying Drivers
 
 
 NDIS passes the network adapter's currently-enabled receive filtering capabilities to overlying drivers that bind to the network adapter in the following way:

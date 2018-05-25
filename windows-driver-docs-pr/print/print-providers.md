@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Print Providers
 
 
-## <a href="" id="ddk-print-providers-gg"></a>
+
 
 
 **Warning**  

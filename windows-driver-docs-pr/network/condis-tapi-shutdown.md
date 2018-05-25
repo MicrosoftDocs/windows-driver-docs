@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # CoNDIS TAPI Shutdown
 
 
-## <a href="" id="ddk-condis-tapi-shutdown-ng"></a>
+
 
 
 A TAPI session begins after a CoNDIS WAN miniport driver has enumerated its TAPI capabilities to an application. Within a session, one or more lines can be opened and one or more calls can be established. During the time a line is open, many calls can be established and then closed or dropped. During a session, one or more lines can go through transitions from open to closed many times. How a miniport driver handles such transitions is described in this section.

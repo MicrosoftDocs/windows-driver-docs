@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Improved Send and Receive Paths
 
 
-## <a href="" id="ddk-improved-send-and-receive-paths-ng"></a>
+
 
 
 The NDIS 6.0 send and receive paths have been improved as follows to enhance performance:

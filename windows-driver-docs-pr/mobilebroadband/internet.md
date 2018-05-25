@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # Internet
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The Internet element specifies the purchase mobile broadband profile file to use.
 

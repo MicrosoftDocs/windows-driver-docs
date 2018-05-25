@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Using SetupAPI To Verify Driver Authenticode Signatures
 
 
-## <a href="" id="ddk-using-setupapi-to-verify-driver-authenticode-signatures-dg"></a>
+
 
 
 You can use the following procedures to verify that a driver has a valid Authenticode [digital signature](digital-signatures.md). These procedures are supported starting with Microsoft Windows Server 2003.

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Customized Printer Setup Operations
 
 
-## <a href="" id="ddk-customized-printer-setup-operations-gg"></a>
+
 
 
 To provide customized printer setup operations for printers that are installed using Ntprint.dll, the default Windows 2000 and later printer class installer, you can include a **VendorSetup** INF entry in the printer's INF file.

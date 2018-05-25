@@ -4,7 +4,7 @@ description: Debugging Tools for Windows supports kernel debugging over a 1394 (
 ms.assetid: bcfc61a1-0315-451c-a279-f6305995b05f
 keywords: making a 1394 cable connection, 1394 connection, IEEE 1394 cable, FireWire cable
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 05/03/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -12,10 +12,13 @@ ms.technology: windows-devices
 
 # Setting Up Kernel-Mode Debugging over a 1394 Cable Manually
 
+> [!IMPORTANT]  
+> The 1394 transport is available for use in Windows 10, version 1607 and earlier. 
+> It is not available in later versions of Windows. You should transition your projects to other transports, such as KDNET using Ethernet. 
+> For more information about that transport, see [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md).
+>
 
 Debugging Tools for Windows supports kernel debugging over a 1394 (Firewire) cable. This topic describes how to set up 1394 debugging manually.
-
-As an alternative to setting up 1394 debugging manually, you can do the setup using Microsoft Visual Studio. For more information, see [Setting Up Kernel-Mode Debugging over a 1394 Cable in Visual Studio](setting-up-a-1394-cable-connection-in-visual-studio.md).
 
 The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*. The host and target computers must each have a 1394 adapter and must be running Windows XP or later. The host and target computers do not have to be running the same version of Windows.
 

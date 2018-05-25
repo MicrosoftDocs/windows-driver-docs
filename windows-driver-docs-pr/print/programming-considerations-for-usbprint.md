@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Programming Considerations for USBPRINT
 
 
-## <a href="" id="ddk-programming-considerations-for-usbprint-gg"></a>
+
 
 
 Usbprint.sys, together with USBMON, provides an interface very similar to that used by parallel printers. In many cases, it is possible for a single printer driver or language monitor to work correctly on both parallel and USB printers without modification. If a language monitor uses only the [**WritePort**](https://msdn.microsoft.com/library/windows/hardware/ff563792) and [**ReadPort**](https://msdn.microsoft.com/library/windows/hardware/ff561909) functions and the [**IOCTL\_PAR\_QUERY\_DEVICE\_ID**](https://msdn.microsoft.com/library/windows/hardware/ff544076) request, it will be portable between USB and parallel printers.

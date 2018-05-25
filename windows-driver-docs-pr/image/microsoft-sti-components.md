@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Microsoft STI Components
 
 
-## <a href="" id="ddk-microsoft-sti-components-si"></a>
+
 
 
 This section is broken into three parts:

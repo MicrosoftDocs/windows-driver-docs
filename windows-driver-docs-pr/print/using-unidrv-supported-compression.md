@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Using Unidrv-Supported Compression
 
 
-## <a href="" id="ddk-using-unidrv-supported-compression-gg"></a>
+
 
 
 If you include a CmdEnableTIFF4 command entry in your GPD file, Unidrv uses TIFF 4.0 compression.

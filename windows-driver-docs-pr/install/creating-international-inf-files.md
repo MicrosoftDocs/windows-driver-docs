@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Creating International INF Files
 
 
-## <a href="" id="ddk-creating-international-inf-files-dg"></a>
+
 
 
 Creating installations for international markets requires providing locale-specific INF files and, possibly, locale-specific driver files.

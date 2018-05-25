@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Access Permissions for WIA Drivers
 
 
-## <a href="" id="ddk-access-permissions-for-wia-drivers-si"></a>
+
 
 
 In order for a driver and another component to use the same named object, the correct permissions should be set for that object when it is created. Typically, this involves setting the appropriate DACL in that object's security descriptor.

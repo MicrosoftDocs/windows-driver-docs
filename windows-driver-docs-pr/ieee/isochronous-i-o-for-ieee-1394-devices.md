@@ -24,7 +24,7 @@ ms.technology: windows-devices
 # Isochronous I/O for IEEE 1394 Devices
 
 
-## <a href="" id="ddk-isochronous-i-o-for-ieee-1394-devices-kg"></a>
+
 
 
 Real-time multimedia devices such as digital cameras need large amounts of bandwidth to send data in a steady stream, but do not require guaranteed delivery. (For example, a dropped frame from a digital camera would degrade the quality of the signal, but it would not destroy its meaning.) For such devices, IEEE 1394 provides *isochronous* transfer, which provides guaranteed bandwidth, but does not guarantee delivery.

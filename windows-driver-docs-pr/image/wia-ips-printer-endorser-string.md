@@ -23,7 +23,7 @@ ms.technology: windows-devices
 
 The **WIA\_IPS\_PRINTER\_ENDORSER\_STRING** property is used to configure the text to be printed/endorsed. The WIA minidriver creates and maintains this property.
 
-## <span id="ddk_wia_ipa_depth_si"></span><span id="DDK_WIA_IPA_DEPTH_SI"></span>
+
 
 
 **Note**  This property replaces [**WIA\_DPS\_ENDORSER\_STRING**](wia-dps-endorser-string.md), which is now obsolete.

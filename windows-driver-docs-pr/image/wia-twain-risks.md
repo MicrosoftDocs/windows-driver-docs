@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA-TWAIN Risks
 
 
-## <a href="" id="ddk-wia-twain-risks-si"></a>
+
 
 
 If you have a TWAIN driver that uses the STI portion of your WIA driver, you need to be aware of the following:

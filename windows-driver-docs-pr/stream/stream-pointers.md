@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Stream Pointers
 
 
-## <a href="" id="ddk-stream-pointers-ksg"></a>
+
 
 
 [Introduction to Stream Pointers](introduction-to-stream-pointers.md)

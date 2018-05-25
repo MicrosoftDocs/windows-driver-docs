@@ -20,7 +20,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-layers-of-offload-state-ng"></a>
+
 
 
 As the following figure shows, the host stack offloads three layers of protocol state to an offload target.

@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # ServiceInfo XML Data Types
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 This section describes the XML data types that are defined by the [ServiceInfo XML schema](serviceinfo-xml-schema.md):
 

@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # IPrintOemPS COM Interface
 
 
-## <a href="" id="ddk-iprintoemps-com-interface-gg"></a>
+
 
 
 The `IPrintOemPS` COM interface is the means by which the [printer graphics DLL](printer-graphics-dll.md) for Pscript5 communicates with a rendering plug-in. The `IPrintOemPS` interface is implemented by each rendering plug-in.

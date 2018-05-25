@@ -14,16 +14,16 @@ ms.technology: windows-devices
 Use the following methods in *Microsoft Hardware APIs* to get data for hardware products registered to your Dev Center Account. For an introduction to Microsoft Hardware APIs, including prerequisites for using the API, see [Manage hardware submissions using APIs](dashboard-api.md).
 
 ```
-https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/
+https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/
 ```
 Before you can use these methods, the product must already exist in your Dev Center account. To create or manage submissions for products, see the methods in [Manage product submissions](manage-product-submissions.md).
 
 | Method | URI | Description |
 |-|-|-|
-|GET |	`https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/`	|[Get data for all your products](get-all-products.md)|
-|GET |	`https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/{productID}`	|[Get data for a specific product](get-a-product.md)|
-|GET |	`https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/{productID}/submissions`	|[Get data for all submissions of a product](get-all-submissions.md)|
-|GET |	`https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/{productID}/submissions/{submissionId}`	|[Get data for a specific submission of a product](get-a-submission.md)|
+|GET |	`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/`	|[Get data for all your products](get-all-products.md)|
+|GET |	`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}`	|[Get data for a specific product](get-a-product.md)|
+|GET |	`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions`	|[Get data for all submissions of a product](get-all-submissions.md)|
+|GET |	`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions/{submissionId}`	|[Get data for a specific submission of a product](get-a-submission.md)|
 
 ## Prerequisites
 
@@ -439,7 +439,7 @@ The following table lists Operating System Codes and their descriptions.
 | Windows_v100_X64_RS3_Full | Windows 10 RS3 Client x64 |
 | Windows_v100_ARM64_RS3_Full | Windows 10 RS3 Client ARM64 |
 | Windows_v100Server_x64_RS3_Full | Windows Server RS3 x64 |
-| WINDOWS_v100_ARM64_RS3_FULL_PRE_RELEASE_CLOUD | Windows 10 S RS3 Client ARM64 Pre Release |
+| WINDOWS_v100_ARM64_RS3_FULL_PRE_RELEASE_CLOUD | Windows 10 in S mode RS3 Client ARM64 Pre Release |
 
 
 ## Error codes

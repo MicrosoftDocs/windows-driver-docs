@@ -21,7 +21,7 @@ ms.technology: windows-devices
 # PCMCIA IRQ Routing on Windows XP
 
 
-## <a href="" id="ddk-pcmcia-irq-routing-on-windowsxp-kg"></a>
+
 
 
 There are two classes of PCMCIA cards which are supported by CardBus controllers:

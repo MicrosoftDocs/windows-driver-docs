@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Introduction to System Area Networks
 
 
-## <a href="" id="ddk-introduction-to-system-area-networks-ng"></a>
+
 
 
 A *system area network (SAN)* is a high-performance, connection-oriented network that can link a cluster of computers. A SAN delivers high bandwidth (1 Gbps or greater) with low latency. A SAN is typically switched by hubs that support eight or more nodes. The cable lengths between nodes on a SAN range from a few meters to a few kilometers.

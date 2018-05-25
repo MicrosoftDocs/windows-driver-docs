@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Registration and Deregistration of NDIS Miniport Drivers with WMI
 
 
-## <a href="" id="ddk-registration-and-deregistration-of-ndis-miniport-drivers-with-wmi-"></a>
+
 
 
 NDIS automatically registers each miniport adapter with WMI. A miniport driver does not have to explicitly register with WMI, because NDIS automatically registers for the associated miniport adapter after the miniport driver returns from the [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function.

@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
  
 
-## <a href="" id="ddk-allocating-a-netdma-channel-ng"></a>
+
 
 
 Before using a dynamic memory access (DMA) channel, the NetDMA interface calls the [**ProviderAllocateDmaChannel**](https://msdn.microsoft.com/library/windows/hardware/ff570393) function of the NetDMA provider driver to allocate and initialize the DMA channel.

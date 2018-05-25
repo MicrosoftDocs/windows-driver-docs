@@ -2,6 +2,11 @@
 title: IrqlDispatch rule (wdm)
 description: The IrqlDispatch rule specifies that the driver calls the following DDIs only when it is executing at IRQLÂ Â DISPATCH\_LEVEL.
 ms.assetid: f72d4f27-b488-4d0a-97b7-9cb40f00e346
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["IrqlDispatch rule (wdm)"]
 topic_type:
 - apiref

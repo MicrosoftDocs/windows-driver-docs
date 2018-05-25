@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Minidriver Best Practices
 
 
-## <a href="" id="ddk-wia-minidriver-best-practices-si"></a>
+
 
 
 This section consists of recommended tips for WIA minidriver developers. The following topics are discussed:

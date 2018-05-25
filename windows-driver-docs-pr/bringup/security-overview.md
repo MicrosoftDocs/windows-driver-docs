@@ -46,7 +46,7 @@ To create a secure device, the OEM should complete the following tasks.
 
  
 
-## <a href="" id="sdl"></a>SDL recommendations for OEMs
+## SDL recommendations for OEMs
 
 
 The Microsoft Security Development Lifecycle (SDL) is a set of best practices and associated tools that OEMs can use to improve the security of their products. SDL practices are organized by the phases of the traditional software development life cycle in which they are most effective. For example, threat modeling is most effective during software design.

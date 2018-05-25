@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Accessing TCP/IP Offload NET\_BUFFER\_LIST Information
 
 
-## <a href="" id="ddk-accessing-task-offload-net-buffer-list-information-ng"></a>
+
 
 
 NDIS versions 6.0 and later provide TCP/IP offload out-of-band (OOB) data in the **NetBufferListInfo** member of the [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure, which specifies a linked list of [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structures. The **NetBufferListInfo** member is an array of values that contain information that is common to all of the NET\_BUFFER structures in the list.

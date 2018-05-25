@@ -75,7 +75,7 @@
 ####### [Trusted Root Certification Authorities Certificate Store](trusted-root-certification-authorities-certificate-store.md)
 ####### [Trusted Publishers Certificate Store](trusted-publishers-certificate-store.md)
 ##### [Kernel-Mode Code Signing Policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md)
-#### [Windows 10 S Driver Requirements](Windows10SDriverRequirements.md)
+#### [Windows 10 in S mode Driver Requirements](Windows10SDriverRequirements.md)
 #### [Managing the Signing Process](managing-the-signing-process.md)
 ##### [Selecting the Appropriate Signature Type](selecting-the-appropriate-signature-type.md)
 ###### [Kernel-Mode Code Signing Requirements](kernel-mode-code-signing-requirements--windows-vista-and-later-.md)

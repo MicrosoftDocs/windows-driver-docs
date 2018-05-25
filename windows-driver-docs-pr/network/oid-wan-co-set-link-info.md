@@ -31,7 +31,7 @@ The OID\_WAN\_CO\_SET\_LINK\_INFO OID requests the miniport driver to set PPP fr
   
 ```
 
-## <a href="" id="ddk-oid-wan-co-set-link-info-nr"></a>
+
 
 
 The members of this structure contain the following information:

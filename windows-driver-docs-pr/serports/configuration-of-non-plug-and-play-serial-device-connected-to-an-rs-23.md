@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Configuration of Non-Plug and Play Serial Device Connected to an RS-232 Port
 
 
-## <a href="" id="ddk-configuration-of-non-plug-and-play-serial-device-connected-to-an-r"></a>
+
 
 
 This topic describes the typical configuration of hardware, drivers, and device stacks for legacy serial devices that are connected to an RS-232 port.

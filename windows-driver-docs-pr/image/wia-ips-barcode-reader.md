@@ -23,7 +23,7 @@ ms.technology: windows-devices
 
 The **WIA\_IPS\_BARCODE\_READER** property is used by the WIA minidriver to list the available barcode reader location (one/fixed or multiple) and by the application client to select one of these locations and enable barcode detection.
 
-## <span id="ddk_wia_ipa_depth_si"></span><span id="DDK_WIA_IPA_DEPTH_SI"></span>
+
 
 
 Property Type: VT\_I4

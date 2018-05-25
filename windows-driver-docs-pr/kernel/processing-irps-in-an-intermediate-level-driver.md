@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Processing IRPs in an Intermediate-Level Driver
 
 
-## <a href="" id="ddk-processing-irps-in-an-intermediate-level-driver-kg"></a>
+
 
 
 Higher-level drivers have a different set of standard routines than lowest-level device drivers, with an overlapping subset of standard routines common to both types of drivers.

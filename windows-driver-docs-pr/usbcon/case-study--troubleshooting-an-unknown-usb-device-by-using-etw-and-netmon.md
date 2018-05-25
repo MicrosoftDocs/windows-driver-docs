@@ -181,7 +181,7 @@ You can create custom filters in Netmon. The easiest method is to create a filte
 -   Right-click a field in the **Frame Summary** pane and select **Add \[field name\] to Display Filter**.
 
 You can change the operators (such as OR, AND, and ==) and the filter values to build the appropriate filter expressions.
-## <a href="" id="status-codes"></a>Understanding Error Events and Status Codes
+## Understanding Error Events and Status Codes
 
 
 In our unknown device example, most of the USB hub exceptions have a **fid\_DebugText** data of CreateDeviceFailure. It is not clear how serious the exception is, but the debug text gives a hint as to the cause: an operation related to the new device failed. For now, assume that the adjacent Create Device Failed events are redundant. The last two exceptions are CreateDeviceFailure\_Popup and GenErr\_UserIoctlFailed. The popup exception sounds like an error that was exposed to the user, but any and all of these errors could be related to the unknown device problem.

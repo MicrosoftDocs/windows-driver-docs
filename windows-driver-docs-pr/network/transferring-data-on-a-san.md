@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Transferring Data on a SAN
 
 
-## <a href="" id="ddk-transferring-data-on-a-san-ng"></a>
+
 
 
 Many system area networks (SANs) lack flow control; therefore, the Windows Sockets switch uses a lightweight session protocol to transfer data on a SAN. The following topics describe features of the switch's session protocol that enable data transfer operations for a SAN service provider:

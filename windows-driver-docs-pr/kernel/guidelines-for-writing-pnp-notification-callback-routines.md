@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Guidelines for Writing PnP Notification Callback Routines
 
 
-## <a href="" id="ddk-guidelines-for-writing-pnp-notification-callback-routines-kg"></a>
+
 
 
 The PnP manager calls notification callback routines at IRQL = PASSIVE\_LEVEL.

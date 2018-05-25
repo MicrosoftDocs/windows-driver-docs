@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Customized Options
 
 
-## <a href="" id="ddk-customized-options-gg"></a>
+
 
 
 Customized options are those that are not defined by predefined names in the GPD language. You must create unique names for these options.

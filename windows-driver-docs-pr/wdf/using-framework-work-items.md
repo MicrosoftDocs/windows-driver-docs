@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Using Framework Work Items
 
 
-## <a href="" id="ddk-using-framework-work-items-df"></a>
+
 
 
 A *work item* is a task that a driver performs in an [*EvtWorkItem*](https://msdn.microsoft.com/library/windows/hardware/ff541859) event callback function. These functions run asynchronously, at IRQL = PASSIVE\_LEVEL, in the context of a system worker thread.

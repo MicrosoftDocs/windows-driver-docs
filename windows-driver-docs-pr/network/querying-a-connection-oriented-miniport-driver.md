@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Querying a Connection-Oriented Miniport Driver
 
 
-## <a href="" id="ddk-querying-a-connection-oriented-miniport-driver-ng"></a>
+
 
 
 To query information objects that a connection-oriented miniport driver maintains, a bound protocol calls [**NdisCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561711) and passes an [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure that specifies the object (OID) that is being queried and that provides a buffer into which NDIS eventually writes the requested information. The call to **NdisCoOidRequest** causes NDIS to call the miniport driver's [*MiniportCoOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559362) function, which returns the requested information to NDIS. *MiniportCoOidRequest* can complete synchronously or asynchronously with a call to [**NdisCoOidRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff561716).

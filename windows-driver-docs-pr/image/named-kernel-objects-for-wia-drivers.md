@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Named Kernel Objects for WIA Drivers
 
 
-## <a href="" id="ddk-named-kernel-objects-for-wia-drivers-si"></a>
+
 
 
 The two most common problems that prevent WIA drivers and external components (such as bundled applications) from sharing named kernel objects are the permissions set for those objects and object namespaces.

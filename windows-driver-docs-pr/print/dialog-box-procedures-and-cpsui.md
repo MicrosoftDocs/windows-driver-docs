@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Dialog Box Procedures and CPSUI
 
 
-## <a href="" id="ddk-dialog-box-procedures-and-cpsui-gg"></a>
+
 
 
 A dialog box procedure is a callback function that handles window messages sent by the system. This type of [page event callback](page-event-callbacks.md) is required if you are creating a customized property sheet page that is not supplied by CPSUI. (You can also use dialog box procedures with [CPSUI-supplied pages and templates](cpsui-supplied-pages-and-templates.md), but use of a [CPSUI message handler](cpsui-message-handler.md) is recommended.) For more information about dialog box procedures, see DialogProc in the Microsoft Windows SDK documentation. Pointers to dialog box procedures are declared using the DLGPROC pointer type, also described in the Windows SDK documentation.

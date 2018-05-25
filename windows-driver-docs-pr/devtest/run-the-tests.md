@@ -16,9 +16,12 @@ ms.technology: windows-devices
 ## Description of the tests and configuration file
 You can find the data-driven SysFund tests at \<unzipped EWDK root>\Program Files\Windows Kits\10\Testing\Tests\Additional Tests\x64\DevFund\DataDriven.  The data-driven test suite consists of the following files:
 
--	Two test DLL’s which use the XML configuration file WDTFTest.xml:
+-	Five test DLL’s which use the XML configuration file WDTFTest.xml:
 
+    *	Sysfund_Device_IO_DataDriven.dll
     *	Sysfund_PNP_DisableEnable_With_IO_BeforeAndAfter_DataDriven.dll
+    *	Sysfund_PNP_RemoveAndRestartDevice_DataDriven.dll
+    *	Sysfund_RebootRestart_With_IO_During_DataDriven.dll
     *	Sysfund_Sleep_With_IO_BeforeAndAfter_DataDriven.dll
 -	Two utility DLL’s which use the XML configuration file WDTFTest.xml:
     *	Utility_DeviceStatusCheck_DataDriven.dll
@@ -26,11 +29,23 @@ You can find the data-driven SysFund tests at \<unzipped EWDK root>\Program File
 -	The XML configuration file:
         *	WDTFTest.xml
 
-**System - PNP (disable and enable) with IO before and after (reliability)**
+**System - Device I/O Test**
+-	Binary: Sysfund_Device_IO_DataDriven.dll
+-	This test sends I/O to all devices on the system
+
+**System - PNP (disable and enable) with IO before and after (Reliability)**
 -	Binary: Sysfund_PNP_DisableEnable_With_IO_BeforeAndAfter_DataDriven.dll
 -	[Documentation](https://msdn.microsoft.com/de-de/library/windows/hardware/dn941373(v=vs.85).aspx)
 
-**System - Sleep with IO before and after (reliability SysFund)** 
+**System - PNP Remove Device Test (Reliability)**
+-	Binary: Sysfund_PNP_RemoveAndRestartDevice_DataDriven.dll
+-	[Documentation](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/ead2222e-4485-4bfc-84cd-43ac0d2e8181)
+
+**System - Reboot Restart with IO During (Reliability)**
+-	Binary: Sysfund_RebootRestart_With_IO_During_DataDriven.dll
+-	[Documentation](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/6d6ed5ec-1765-4569-a7ac-20ed7869d89a)
+
+**System - Sleep with IO before and after (Reliability SysFund)** 
 -	Binary: Sysfund_Sleep_With_IO_BeforeAndAfter_DataDriven.dll
 -	[Documentation](https://msdn.microsoft.com/en-us/library/windows/hardware/dn940448(v=vs.85).aspx)
 

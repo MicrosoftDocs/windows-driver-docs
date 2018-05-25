@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Minidriver Troubleshooting
 
 
-## <a href="" id="ddk-wia-minidriver-troubleshooting-si"></a>
+
 
 
 By default, the WIA service logs errors to a file named *wiadebug.log* in the **%***windir***%** directory. The information that the WIA service places in this file can be very helpful during driver development. The following example depicts a typical problem and shows how the information in the *wiadebug.log* file can be used to find a solution to the problem.

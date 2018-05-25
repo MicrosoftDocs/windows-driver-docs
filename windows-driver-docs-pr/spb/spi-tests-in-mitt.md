@@ -51,7 +51,7 @@ SPI test modules that are included in the MITT software package can be used to t
 
     ![spi power](images/spi-power.png)
 
-## <a href="" id="test-driver-and-acpi-configuration--"></a>Test driver and ACPI configuration
+## Test driver and ACPI configuration
 
 
 Perform these steps on the system under test that has the I²C controller:
@@ -112,7 +112,7 @@ Perform these steps on the system under test that has the I²C controller:
 
     ```
 
-## <a href="" id="spi-automation-tests--"></a>SPI automation tests
+## SPI automation tests
 
 
 1.  Create a folder on the system under test.

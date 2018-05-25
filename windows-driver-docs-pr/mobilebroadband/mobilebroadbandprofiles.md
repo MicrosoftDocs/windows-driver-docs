@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # MobileBroadbandProfiles
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The MobileBroadbandProfiles element specifies the purchase and Internet mobile broadband profile files to use.
 

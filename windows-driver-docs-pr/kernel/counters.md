@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Counters
 
 
-## <a href="" id="ddk-counters-kg"></a>
+
 
 
 The system provides several driver support routines that return various count values.

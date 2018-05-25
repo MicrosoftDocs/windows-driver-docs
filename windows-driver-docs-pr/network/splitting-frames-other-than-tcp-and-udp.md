@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Splitting Frames Other Than TCP and UDP
 
 
-## <a href="" id="ddk-splitting-frames-other-than-tcp-and-udp-ng"></a>
+
 
 
 This section includes:

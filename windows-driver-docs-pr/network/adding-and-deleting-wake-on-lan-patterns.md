@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Adding and Deleting Wake on LAN Patterns
 
 
-## <a href="" id="ddk--nr"></a>
+
 
 
 To add a wake-on-LAN (WOL) pattern, NDIS protocol drivers issue an OID set request of [OID\_PM\_ADD\_WOL\_PATTERN](https://msdn.microsoft.com/library/windows/hardware/ff569764). The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to an [**NDIS\_PM\_WOL\_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768) structure. Protocol drivers should specify a WOL packet if that WOL packet is supported by a network adapter. When the network adapter does not support the WOL packet, the protocol driver should use the WOL bitmap wake method.

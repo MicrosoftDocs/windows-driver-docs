@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Setting the MofImagePath Registry Value
 
 
-## <a href="" id="ddk-setting-the-mofimagepath-registry-value-kg"></a>
+
 
 
 A driver's schema can be published by including a compiled MOF resource in a separate file, such as a DLL, and setting **MofImagePath** in the registry to the path of that file. A schema published in this way can be updated without recompiling the driver.

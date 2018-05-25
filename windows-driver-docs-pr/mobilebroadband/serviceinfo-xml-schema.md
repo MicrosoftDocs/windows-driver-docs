@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # ServiceInfo XML schema
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 A service metadata package contains one ServiceInfo.xml document, which contains detailed information about the service that Windows Connection Manager displays to the user.
 

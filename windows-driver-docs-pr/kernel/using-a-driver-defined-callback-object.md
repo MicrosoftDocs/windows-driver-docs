@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using a Driver-Defined Callback Object
 
 
-## <a href="" id="ddk-using-a-driver-defined-callback-object-kg"></a>
+
 
 
 To use a callback object defined by another driver, a driver opens the object, then registers a routine to be called when the callback is triggered, as shown in the following figure. The driver requesting notification must know the name of the callback object and must understand the semantics of the arguments passed to the callback routine.

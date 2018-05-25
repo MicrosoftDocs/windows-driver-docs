@@ -4,7 +4,7 @@ description: Converting Virtual Addresses to Physical Addresses
 ms.assetid: 5b3d19df-09cc-4131-ae64-5ce64d986df3
 keywords: ["virtual address", "virtual address, converting to physical address", "physical address", "physical address, converting from virtual address", "addresses", "addresses, converting virtual to physical", "memory, virtual addresses", "memory, physical addresses"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 05/04/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -12,13 +12,15 @@ ms.technology: windows-devices
 
 # Converting Virtual Addresses to Physical Addresses
 
-
 ## <span id="ddk_converting_virtual_addresses_to_physical_addresses_dbg"></span><span id="DDK_CONVERTING_VIRTUAL_ADDRESSES_TO_PHYSICAL_ADDRESSES_DBG"></span>
 
 
 Most debugger commands use virtual addresses, not physical addresses, as their input and output. However, there are times that having the physical address can be useful.
 
 There are two ways to convert a virtual address to a physical address: by using the **!vtop** extension, and by using the **!pte** extension.
+
+For an overview of virtual address in Windows, see [Virtual address spaces](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/virtual-address-spaces). 
+
 
 ### <span id="address_conversion_using__vtop"></span><span id="ADDRESS_CONVERSION_USING__VTOP"></span>Address Conversion Using !vtop
 

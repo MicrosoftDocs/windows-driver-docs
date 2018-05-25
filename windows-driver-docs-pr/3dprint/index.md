@@ -31,7 +31,7 @@ For the latest information about 3D printing in Windows 10, see the following r
 
 -   [3D printing on Windows](http://go.microsoft.com/fwlink/p/?LinkId=627554)
 -   [3D hardware partners](http://go.microsoft.com/fwlink/p/?LinkId=627548)
--   [3D Builder app](http://go.microsoft.com/fwlink/p/?LinkId=627556)
+-   [3D Builder resources](http://go.microsoft.com/fwlink/p/?LinkId=627556)
 -   [3D Builder user's guide](http://go.microsoft.com/fwlink/p/?LinkId=627557)
 -   [Channel 9 3D printing blog](http://go.microsoft.com/fwlink/p/?LinkId=624519)
 

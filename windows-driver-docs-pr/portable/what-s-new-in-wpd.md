@@ -11,7 +11,7 @@ ms.technology: windows-devices
 # What's New in WPD
 
 
-This topic summarizes the new features and improvements for Windows Portable Devices (WPD) in Windows 8.
+This topic summarizes the new features and improvements for Windows Portable Devices (WPD).
 
 ## <span id="The_NetMon_Tool"></span><span id="the_netmon_tool"></span><span id="THE_NETMON_TOOL"></span>The NetMon Tool
 

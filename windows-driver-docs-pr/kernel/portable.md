@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Portable
 
 
-## <a href="" id="ddk-portable-kg"></a>
+
 
 
 All drivers must be portable across all Windows-supported hardware platforms. To achieve cross-platform portability, driver writers should:
@@ -25,7 +25,7 @@ All drivers must be portable across all Windows-supported hardware platforms. To
 
 ### Coding Drivers in C
 
-All kernel-mode drivers should be written in C so that they can be recompiled with a system-compatible C compiler, relinked, and run on different Microsoft Windows platforms without rewriting or replacing any code. Most operating system components are coded entirely in C, with only small pieces of the HAL and kernel components written in assembly language, so that the operating system is readily portable across hardware platforms. You cannot use many C++ language constructs in kernel-mode drivers, so you should carefully evaluate using such constructs. For more information about issues that arise when drivers include C++ features, see the [C++ for Kernel Mode Drivers: Pros and Cons](http://go.microsoft.com/fwlink/p/?linkid=56294) white paper on the Windows Hardware Developer Central (WHDC) website.
+All kernel-mode drivers should be written in C so that they can be recompiled with a system-compatible C compiler, relinked, and run on different Microsoft Windows platforms without rewriting or replacing any code. Most operating system components are coded entirely in C, with only small pieces of the HAL and kernel components written in assembly language, so that the operating system is readily portable across hardware platforms. You cannot use many C++ language constructs in kernel-mode drivers, so you should carefully evaluate using such constructs. For more information about issues that arise when drivers include C++ features, see the [C++ for Kernel Mode Drivers: Pros and Cons](http://go.microsoft.com/fwlink/p/?linkid=56294) white paper.
 
 Drivers should not rely on the features of any particular system-compatible C compiler or C support library if those features are not guaranteed to be supported by other system-compatible compilers. In general, driver code should conform to the ANSI C standard and not depend on anything that this standard describes as "implementation-defined."
 

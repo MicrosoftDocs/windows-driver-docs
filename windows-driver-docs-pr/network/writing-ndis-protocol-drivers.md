@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Writing NDIS Protocol Drivers
 
 
-## <a href="" id="ddk-writing-ndis-protocol-drivers-ng"></a>
+
 
 
 This documentation provides an overview of protocol driver operations for NDIS 6.0 and later. NDIS protocol drivers provide *ProtocolXxx* functions that NDIS calls to initiate operations. NDIS provides **Ndis*Xxx*** functions that protocol drivers call to perform operations.

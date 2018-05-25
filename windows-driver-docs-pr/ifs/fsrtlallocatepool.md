@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # FsRtlAllocatePool
 
 
-## <a href="" id="ddk-fsrtlallocatepool-if"></a>
+
 
 
 The **FsRtlAllocatePool** routine is obsolete, but is exported to support existing driver binaries. Use [**FsRtlAllocatePoolWithTag**](https://msdn.microsoft.com/library/windows/hardware/ff545675) instead.
