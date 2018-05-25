@@ -1,9 +1,9 @@
 ---
 title: Bug Check 1A3 CALL_HAS_NOT_RETURNED_WATCHDOG_TIMEOUT_LIVEDUMP
-description: The CALL_HAS_NOT_RETURNED_WATCHDOG_TIMEOUT_LIVEDUMP bug check has a value of 0x000001A3.
+description: The CALL_HAS_NOT_RETURNED_WATCHDOG_TIMEOUT_LIVEDUMP live dump has a value of 0x000001A3.
 keywords: ["Bug Check 0x1A3 CALL_HAS_NOT_RETURNED_WATCHDOG_TIMEOUT_LIVEDUMP", "CALL_HAS_NOT_RETURNED_WATCHDOG_TIMEOUT_LIVEDUMP"]
 ms.author: domars
-ms.date: 04/19/2018
+ms.date: 05/25/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -22,7 +22,7 @@ api_type:
 
 A call has not returned within the timeout period.
 
-The CALL_HAS_NOT_RETURNED_WATCHDOG_TIMEOUT_LIVEDUMP bug check has a value of 0x000001A3. 
+The CALL_HAS_NOT_RETURNED_WATCHDOG_TIMEOUT_LIVEDUMP live dump has a value of 0x000001A3. 
 
 
 ## CALL\_HAS\_NOT\_RETURNED\_WATCHDOG\_TIMEOUT\_LIVEDUMP Parameters

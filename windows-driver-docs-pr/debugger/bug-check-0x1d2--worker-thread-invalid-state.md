@@ -3,7 +3,7 @@ title: Bug Check 0x1D2 WORKER_THREAD_INVALID_STATE
 description: The WORKER_THREAD_INVALID_STATE bug check has a value of 0x000001D2.
 keywords: ["Bug Check 0x1D2 WORKER_THREAD_INVALID_STATE", "WORKER_THREAD_INVALID_STATE"]
 ms.author: domars
-ms.date: 04/19/2018
+ms.date: 05/23/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -27,8 +27,19 @@ This error indicates that an executive worker thread is in an invalid state.
 
 Parameter | Description 
 |---------|--------------|
-1 | A worker thread in the process of terminating has outstanding I/O
+1 | Type of failure
 2 | Address of the worker thread
 3 | Reserved
 4 | Reserved
 
+
+
+**Parameter 1 Values**
+
+  0x0 : A worker thread in the process of terminating has outstanding I/O
+  
+  2 - Address of the worker thread
+  
+  3 - Reserved
+  
+  4 - Reserved

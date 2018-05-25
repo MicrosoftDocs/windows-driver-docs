@@ -3,7 +3,7 @@ title: Bug Check 0x1D3 WFP_INVALID_OPERATION
 description: The WFP_INVALID_OPERATION  bug check has a value of 0x000001D3.
 keywords: ["Bug Check 0x1D3 WFP_INVALID_OPERATION",  "WFP_INVALID_OPERATION"]
 ms.author: domars
-ms.date: 04/19/2018
+ms.date: 05/23/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,17 @@ Parameter | Description
 2 | Reserved
 3 | Reserved
 4 | Reserved
+
+
+**Parameter 1 Values**
+
+ 0x1 : Callout injected an NBL with multiple NET_BUFFERS inbound.
+
+  2 - Reserved.
+
+  3 - Pointer to NBL.
+
+  4 - Reserved.
 
  
 
