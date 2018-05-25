@@ -29,12 +29,3 @@ This section includes the following topics:
 [Can I preserve the last-error code before TraceMessage is called?](can-i-preserve-the-last-error-code-before-tracemessage-is-called-.md)
 
 [Do I need to call WPP\_CHECK\_FOR\_NULL\_STRING?](do-i-need-to-call-wpp-check-for-null-string-.md)
-
- 
-
- 
-
-
-
-
-

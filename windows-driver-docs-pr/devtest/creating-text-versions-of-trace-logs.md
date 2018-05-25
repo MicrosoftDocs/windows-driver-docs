@@ -51,20 +51,6 @@ While starting a trace log session, you can use the **Create Listing File** opti
 
 When you display the trace log, TraceView creates the listing file. For more information, see [Setting Trace Log Options](setting-trace-log-options.md).
 
-### <span id="converting_a_trace_log_to_text_format"></span><span id="CONVERTING_A_TRACE_LOG_TO_TEXT_FORMAT"></span>Converting a trace log to text format
-
-Use the [TraceView command-line interface](traceview-command-line-interface.md) to convert an event trace log (.etl) file to a text-formatted listing file by using the following command:
-
-```
-traceview -process ETLFile { -pdb PDBFile | -tmf TMFFile | -p TMFPath } [-o OutputFile] 
-```
-
-For example:
-
-```
-traceview -process mytrace.etl -p c:\tracetools -o mytrace.out
-```
-
 For more information, see [**TraceView -process**](traceview--process.md).
 
 ### <span id="copying_the_trace_message_list"></span><span id="COPYING_THE_TRACE_MESSAGE_LIST"></span> Copying the Trace Message List
@@ -78,12 +64,3 @@ This procedure gives you the most control over the display. You can copy the mes
 2.  Press CTRL+C. Or, right-click any cell of any selected messages and click **Copy**.
 
 The messages are copied in a tab-delimited format. You can paste them into a text file or spreadsheet file for saving and analysis.
-
- 
-
- 
-
-
-
-
-
