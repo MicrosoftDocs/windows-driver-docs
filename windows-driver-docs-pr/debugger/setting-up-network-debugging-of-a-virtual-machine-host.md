@@ -1,6 +1,6 @@
 ---
-title: Setting Up Network Debugging of a Virtual Machine - KDNET
-description: If your target computer is a virtual machine host, you can set up network debugging and still have network access for the virtual machines.
+title: Setting Up Network Debugging of a Virtual Machine KDNET
+description: This topic describes how to configure a kernel debugging connection to a Hyper-V virtual machine.
 ms.assetid: E4C4D2A1-2FB0-4028-8A52-30B8F4F738D0
 ms.author: domars
 ms.date: 05/29/2018
@@ -25,7 +25,7 @@ For information on how to create a VM, see [Create a Virtual Machine with Hyper-
 
 **An external virtual switch is defined** 
 
-To communicate with the VM a virtual external network switch can be used. For information on how to create external network switch , see [Create a virtual network](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/connect-to-network).
+To communicate with the VM a virtual external network switch can be used. For information on how to create external network switch, see [Create a virtual network](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/connect-to-network).
 
 
 **Secure Boot is Disabled**
@@ -159,7 +159,7 @@ For example if the target is running 32 bit Windows, run a 32 version of the deb
 
 1. Record the returned windbg command line, or copy it into a notepad .txt file or the command buffer.
 
-2. To connect to the target PC use the following in the non-virtual machine command window, where <YourPort> is the port you selected above between 50000-50039, and <YourKey> is the key that was returned by KDNet above.
+2. To connect to the target PC use the following in the non-virtual machine command window, where \<YourDebugPort\> is the port you selected above between 50000-50039, and \<YourKey\> is the unique key that was returned by KDNet above.
 
     ```
     C:\Debuggers\windbg -k net:port=<YourDebugPort>,key=<YourKey> 
