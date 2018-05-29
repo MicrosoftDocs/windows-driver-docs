@@ -1,0 +1,41 @@
+---
+title: Bug Check 0x1D0 ACPI_FIRMWARE_WATCHDOG_TIMEOUT  
+description: The ACPI_FIRMWARE_WATCHDOG_TIMEOUT bug check has a value of 0x000001D0.
+keywords: ["Bug Check 0x1D0 ACPI_FIRMWARE_WATCHDOG_TIMEOUT",  "ACPI_FIRMWARE_WATCHDOG_TIMEOUT"]
+ms.author: domars
+ms.date: 04/19/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+topic_type:
+- apiref
+api_name:
+- ACPI_FIRMWARE_WATCHDOG_TIMEOUT 
+api_type:
+- NA
+---
+
+# Bug Check Bug Check 0x1D0: ACPI\_FIRMWARE\_WATCHDOG\_TIMEOUT 
+
+
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
+The ACPI_FIRMWARE_WATCHDOG_TIMEOUT bug check has a value of 0x000001D0. 
+
+ACPI driver failed to complete an operation in expected alloted time.
+
+## ACPI\_FIRMWARE\_WATCHDOG\_TIMEOUT Parameters
+
+The following parameters are displayed on the blue screen.
+
+Parameter | Description 
+|---------|--------------|
+1 | Pointer to AMLI Context
+2 | Pointer to Unicode Name of the Aml Context
+3 | Pointer to ACPI Device Extension.
+4 | Pointer to ACPI Triage Block.
+
+
+
+
+
