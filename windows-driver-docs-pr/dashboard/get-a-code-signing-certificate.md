@@ -68,16 +68,20 @@ Before you can establish a Hardware Dev Center hardware dashboard account, you n
 <td><p>Windows Reference Design</p></td>
 <td><p>Standard or EV</p></td>
 </tr>
+<tr class="even">
+<td><p>Attestation Driver Signing</p></td>
+<td><p>EV</p></td>
+</tr>
 </tbody>
 </table>
 
  
-
-**Note**   Submissions will enforce the EV-only requirement later this year.
+> [!NOTE] 
+> The Hardware Dev Center dashboard will enforce mandatory EV certificates for submissions later this year.
 
  
 
-### <span id="standardcode"></span><span id="STANDARDCODE"></span>Code signing certificates for Hardware Dev Center hardware dashboard
+### <span id="standardcode"></span><span id="STANDARDCODE"></span>Code signing certificates for Hardware Dev Center Dashboard
 
 There are two types of code signing certificates available today:
 

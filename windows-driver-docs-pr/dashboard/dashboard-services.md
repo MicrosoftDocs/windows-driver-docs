@@ -18,9 +18,9 @@ ms.technology: windows-devices
 > | Task                                 | Transition timeframe | Documentation link (if available) |
 > |--------------------------------------|----------------------|----------------------|
 > | WLK device certification submissions | Mid 2018          | |
-> | Attestation signing                  | Completed         | [Attestation signing a kernel driver for public release](https://docs.microsoft.com/windows-hardware/drivers/dashboard/attestation-signing-a-kernel-driver-for-public-release) |
-> | Hardware certification submissions   | Completed          | [Hardware certification submissions](https://docs.microsoft.com/windows-hardware/drivers/dashboard/hardware-certification-submissions)
-> | UEFI and LSA                         | Mid 2018           | |
+> | Attestation signing                  | Completed         | [Attestation signing a kernel driver for public release](attestation-signing-a-kernel-driver-for-public-release.md) |
+> | Hardware certification submissions   | Completed          | [Hardware certification submissions](hardware-certification-submissions.md)
+> | UEFI and LSA                         | Completed           | | [File signing LSA plugins and UEFI firmware](lsa-and-uefi-file-signing.md)
 > | Device metadata                      | Mid 2018      | |
 > | Bug management                       | Migrated      | [Bug management](http://aka.ms/collaboratedocs) |
 > | Remote debugging (WRD)               | Retiring      | |
