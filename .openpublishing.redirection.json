@@ -878,12 +878,12 @@
     {
       "source_path": "windows-driver-docs-pr/dashboard/lsa-plug-in-signing.md",
       "redirect_URL": "/windows-hardware/drivers/dashboard/lsa-and-uefi-file-signing",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/dashboard/file-signing-services.md",
       "redirect_URL": "/windows-hardware/drivers/dashboard/lsa-and-uefi-file-signing",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/nfc/p2p-rf-data-exchagne-sequence.md",
