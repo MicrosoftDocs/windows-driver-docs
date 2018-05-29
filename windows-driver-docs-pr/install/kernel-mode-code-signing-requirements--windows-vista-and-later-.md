@@ -23,6 +23,11 @@ Starting with Windows Vista, the kernel-mode code signing policy controls wheth
 
 ### <a href="" id="kernel-mode-code-signing-requirements-for-public-release-of-a-driver"></a> Kernel-Mode Code Signing Requirements for Public Release of a Driver
 
+> [!NOTE]
+> Starting with Windows 10, version 1607, Windows will not load any new kernel mode drivers which are not signed by the Dev Portal.  To get your driver signed, follow these steps:
+> 1. [Register for the Windows Hardware Dev Center program](https://docs.microsoft.com/windows-hardware/drivers/dashboard/register-for-the-hardware-program). Note that an [EV code signing certificate](../get-a-code-signing-certificate) is required to establish a dashboard account.
+> 2. Perform [attestation signing](../attestation-signing-a-kernel-driver-for-public-release)  on your new kernal driver.
+
 <a href="" id="--------64-bit-versions-of-windows-starting-with-"></a> **64-bit versions of Windows starting with Windows Vista**  
 The kernel-mode code signing policy requires that a kernel-mode driver be signed as follows:
 
