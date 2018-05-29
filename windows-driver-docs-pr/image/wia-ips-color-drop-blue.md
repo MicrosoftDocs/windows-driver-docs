@@ -25,9 +25,9 @@ The **WIA\_IPS\_COLOR\_DROP\_BLUE** property is used to configure the amount of 
 
 
 
-Property Type: VT\_I4 | VT\_VECTOR & WIA\_PROP\_NONE
+Property Type: VT\_I4 | VT\_VECTOR 
 
-Valid Values: WIA\_PROP\_RANGE
+Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read/Write
 
