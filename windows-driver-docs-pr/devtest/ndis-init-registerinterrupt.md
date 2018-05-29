@@ -2,6 +2,11 @@
 title: Init\_RegisterInterrupt rule (ndis)
 description: The Init\_RegisterInterrupt rule specifies that the registration of interrupts, which usually happens during initialization, must be undone if something goes wrong in the initialization process or during the halting of the miniport driver.If NdisMRegisterInterruptEx is called at least one time during MiniportInitializeEx, the NdisMDeregisterInterruptEx function must be called at least one time in MiniportHaltEx.
 ms.assetid: f12cc1b9-396b-4351-ad13-c1750b54b709
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["Init_RegisterInterrupt rule (ndis)"]
 topic_type:
 - apiref

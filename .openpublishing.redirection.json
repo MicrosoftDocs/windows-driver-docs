@@ -871,6 +871,21 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "windows-driver-docs-pr/dashboard/uefi-firmware-signing.md",
+      "redirect_URL": "/windows-hardware/dashboard/lsa-and-uefi-file-signing",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/lsa-plug-in-signing.md",
+      "redirect_URL": "/windows-hardware/dashboard/lsa-and-uefi-file-signing",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/file-signing-services.md",
+      "redirect_URL": "/windows-hardware/dashboard/lsa-and-uefi-file-signing",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows-driver-docs-pr/nfc/p2p-rf-data-exchagne-sequence.md",
       "redirect_URL": "/windows-hardware/drivers/nfc/p2p-rf-data-exchange-sequence",
       "redirect_document_id": true
@@ -2528,6 +2543,56 @@
     {
       "source_path": "windows-driver-docs-pr/dashboard/manage-app-certifications.md",
       "redirect_URL": "https://blogs.msdn.microsoft.com/windows_hardware_certification/2018/04/19/win32-logo-certification-deprecation/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/dashboard-submission-rest-api-reference.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/create-a-request.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/create-a-production-device-submission.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/list-all-submissions.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/get-metadata-for-an-existing-submission.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/get-assets-for-a-submission.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/get-a-specific-asset-within-a-submission.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/update-an-existing-submission.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/dashboard-submission-objects.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/mobile-broadband-mbb-wdf-class-extension-mbbcx-.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/netcx/mobile-broadband-mbb-class-extension-mbbcx",
       "redirect_document_id": true
     }
   ]

@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Print Schema keywords for 3D manufacturing
 
 
-The Print Schema keywords for 3D manufacturing is a supplemental specification to the [Print Schema Specification](https://docs.microsoft.com/en-us/previous-versions/windows/hardware/design/dn641615(v=vs.85)). This specification requires understanding of the set of conventions defined in the Print Schema Specification, in particular Part 1 and Part 3 of that specification. This specification contains Print Schema keywords that are the 3D manufacturing analog of Part 2 of the Print Schema Specification. It describes the XML keywords used by developers of 3D manufacturing devices to define their device’s capabilities in the context of the Print Schema.
+The Print Schema keywords for 3D manufacturing is a supplemental specification to the [Print Schema Specification](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn641615(v=vs.85)). This specification requires understanding of the set of conventions defined in the Print Schema Specification, in particular Part 1 and Part 3 of that specification. This specification contains Print Schema keywords that are the 3D manufacturing analog of Part 2 of the Print Schema Specification. It describes the XML keywords used by developers of 3D manufacturing devices to define their device’s capabilities in the context of the Print Schema.
 
 A primary goal of this specification is to ensure the interoperability of independently created software and hardware systems that produce or consume Print Schema content for 3D manufacturing devices. Typically, these software and hardware systems discover each other through the Windows print infrastructure.
 

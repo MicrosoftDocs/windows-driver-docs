@@ -22,23 +22,16 @@ Device Guard and Credential Guard are optional features, that when implemented a
 
 ## Related resources
 
-[Device Guard deployment guide](https://technet.microsoft.com/itpro/windows/keep-secure/device-guard-deployment-guide)
+[Device Guard deployment guide](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)
 
-[Device Guard certification and compliance](https://technet.microsoft.com/en-us/library/mt219733)
+[Driver compatibility requirements](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/)
 
-[Device Guard overview (with links to firmware requirements)](https://technet.microsoft.com/itpro/windows/whats-new/device-guard-overview) 
+[What's new in Credential Guard?](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1507-and-1511)
 
-[Device.DevFund.Device Guard ](https://msdn.microsoft.com/en-us/library/windows/hardware/mt589731)
+[Hypervisor Code Integrity Readiness Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/b972fc52-2468-4462-9799-6a1898808c86)
 
-[Driver compatibility requirements](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/)                    
-[Filter.Driver.DeviceGuard ](https://msdn.microsoft.com/en-us/library/windows/hardware/mt589732)
+[Driver compatibility with Device Guard in Windows 10](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/)
 
-[What's new in Credential Guard?](https://technet.microsoft.com/en-us/itpro/windows/whats-new/credential-guard)                                                                          
-[Hypervisor Code Integrity Readiness Test](https://msdn.microsoft.com/en-us/library/windows/hardware/dn955152)
-                                                    
-[Driver compatibility with Device Guard in Windows 10](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/) 
-
-[Filter.Driver.DeviceGuard.DriverCompatibility](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/filter#filterdriverdeviceguarddrivercompatibility)  
 
 
 

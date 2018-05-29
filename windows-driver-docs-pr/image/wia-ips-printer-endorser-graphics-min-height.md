@@ -12,7 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 05/22/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -23,10 +23,10 @@ ms.technology: windows-devices
 
 The **WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS\_MIN\_HEIGHT** property along with [**WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS\_MAX\_HEIGHT**](wia-ips-printer-endorser-graphics-max-height.md), [**WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS\_MIN\_WIDTH**](wia-ips-printer-endorser-graphics-min-width.md), and [**WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS\_MAX\_WIDTH**](wia-ips-printer-endorser-graphics-max-width.md) are used to report the minimum and maximum dimensions, in pixels, of the images that can be uploaded to the Imprinter/Endorser to be rendered. The WIA minidriver creates and maintains this property.
 
-## <span id="ddk_wia_ipa_depth_si"></span><span id="DDK_WIA_IPA_DEPTH_SI"></span>
 
 
-Property Type: VT\_I4
+
+Property Type: VT\_UI4
 
 Valid Values: WIA\_PROP\_NONE
 

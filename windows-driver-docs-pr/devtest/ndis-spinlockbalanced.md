@@ -2,6 +2,11 @@
 title: SpinLockBalanced rule (ndis)
 description: The SpinLockBalanced rule verifies that the number of calls to functions that acquire a SpinLock are equal to the number of calls to functions that release the same SpinLock.
 ms.assetid: 61abb66e-b271-4102-828b-7e5ce77295c4
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["SpinLockBalanced rule (ndis)"]
 topic_type:
 - apiref

@@ -3,7 +3,7 @@ title: Voice Activation
 description: Cortana, the personal assistant technology introduced on Windows Phone, is supported on Windows 10 devices.
 ms.assetid: 0684EF32-AA76-418B-9027-1C067A8140E3
 ms.author: windowsdriverdev
-ms.date: 05/10/2018
+ms.date: 05/14/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,7 +73,7 @@ This glossary summarizes terms related to voice activation.
 | Voice Activation      | The scenario of providing keyword detection of a predefined activation keyphrase. For example, "Hey Cortana" is the Microsoft Voice Activation scenario. |
 |WoV                    | Wake-on-Voice – Technology that enables Voice Activation from a screen off, lower power state, to a screen on full power state. |
 |WoV from Modern Standby| Wake-on-Voice from a Modern Standby (S0ix) screen off state to a screen on full power (S0) state. |
-|Modern Standby |Windows Low Power Idle infrastructure - successor to Connected Standby (CS) in Windows 10. The first state of modern standby is when the screen is off. The deepest sleep state is when in DRIPS/Resiliency. For more information, see [Modern Standby](https://msdn.microsoft.com/en-us/library/windows/hardware/mt282515(v=vs.85).aspx)   |
+|Modern Standby |Windows Low Power Idle infrastructure - successor to Connected Standby (CS) in Windows 10. The first state of modern standby is when the screen is off. The deepest sleep state is when in DRIPS/Resiliency. For more information, see [Modern Standby](https://msdn.microsoft.com/library/windows/hardware/mt282515(v=vs.85).aspx)   |
 |KWS                    |Keyword spotter – the algorithm that provides the detection of “Hey Cortana” |
 | SW KWS                |Software keyword spotter – an implementation of KWS that runs on the host (CPU). For "Hey Cortana", SW KWS is included as part of Windows. |
 | HW KWS                | Hardware-offloaded keyword spotter – an implementation of KWS that runs offloaded on hardware. |

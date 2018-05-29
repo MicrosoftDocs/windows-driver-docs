@@ -3,7 +3,7 @@ title: Setting Up Network Debugging of a Virtual Machine - KDNET
 description: If your target computer is a virtual machine host, you can set up network debugging and still have network access for the virtual machines.
 ms.assetid: E4C4D2A1-2FB0-4028-8A52-30B8F4F738D0
 ms.author: domars
-ms.date: 05/25/2018
+ms.date: 05/29/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -11,7 +11,7 @@ ms.technology: windows-devices
 
 # Setting Up Network Debugging of a Virtual Machine - KDNET
 
-This topic describes how to configure a kernel debugging connection to a Hyper-V virtual machine.
+This topic describes how to configure a kernel debugging connection to a Hyper-V virtual machine (VM).
 
 
 ## Hyper-V Virtual Machine Assumptions
@@ -20,14 +20,12 @@ This topic makes the following assumptions about how your Hyper-V virtual machin
 
 **A Windows VM has been created and Windows is installed on the VM**
 
-For information on how to create a VM, see [Create a Virtual Machine with Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine)
+For information on how to create a VM, see [Create a Virtual Machine with Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine).
 
 
 **An external virtual switch is defined** 
 
 To communicate with the VM a virtual external network switch can be used. For information on how to create external network switch , see [Create a virtual network](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/connect-to-network).
-
-**The Windows debugger host is running on the same PC as the target virtual machine.**
 
 
 **Secure Boot is Disabled**
@@ -49,11 +47,13 @@ Re-enable secure boot after the BCDEdit setting have been configured by the KDNe
 ## Setting Up Network Debugging of a Virtual Machine - KDNET
 
 
-### Record the Host IP Address
+### Record the Host IP Address - Host Running on the same PC as the VM
+
+To run the host debugger on the same PC as the target virtual machine, follow these steps. 
 
 1. On the host computer, open a Command Prompt window and enter *IPConfig* to display the IP configuration. 
 
-2. In the command output, locate the Ethernet adapter that you configured as the External Virtual Switch
+2. In the command output, locate the Ethernet adapter that you configured as the External Virtual Switch.
 
     ```
     ...
@@ -62,7 +62,6 @@ Re-enable secure boot after the BCDEdit setting have been configured by the KDNe
 
     ...
 
-    Link-local IPv6 Address . . . . . : 2001:db8:0:0:ff00:0:42:8329
     IPv4 Address. . . . . . . . . . . : <YourHostIPAddress>
 
     ...
@@ -70,7 +69,34 @@ Re-enable secure boot after the BCDEdit setting have been configured by the KDNe
     ```
 3. Record the IPv4 address of the External Virtual Switch that will be used as the host address for debugging.
 
-4. to confirm connectivty between the target and the host computer open an elevated command prompt window on the target computer,and enter the following command, where *HostName* is the name of the host computer . 
+4. to confirm connectivty between the target and the host computer, open an elevated command prompt window on the target computer, and enter the following command, where *YourHostIPAddress* is the IP address of the host computer. 
+
+    ```
+    ping -4 <YourHostIPAddress>
+    ```
+
+
+### Record the Host IP Address - Host Running on a different PC as the VM
+
+To run the host debugger on a different PC from the PC that is running the  target virtual machine, follow these steps.
+
+1. On the host computer, open a Command Prompt window and enter *IPConfig* to display the IP configuration. 
+
+2. In the command output, locate the Ethernet adapter.
+
+    ```
+    ...
+
+    Ethernet adapter Ethernet:
+    ...
+
+   IPv4 Address. . . . . . . . . . . : <YourHostIPAddress>
+    ...
+
+    ```
+3. Record the IPv4 address of the Ethernet adapter that will be used as the host address for debugging.
+
+4. to confirm connectivty between the target and the host computer, open an elevated command prompt window on the target computer, and enter the following command, where *YourHostIPAddress* is the IP address of the host computer. 
 
     ```
     ping -4 <YourHostIPAddress>
@@ -109,10 +135,10 @@ For example if the target is running 32 bit Windows, run a 32 version of the deb
     busparams=0.25.0, Intel(R) 82579LM Gigabit Network Connection, KDNET is running on this NIC.kdnet.exe
     ```
 
-5. Type this command to set the IP address of the host system and generated a unique connection key. Use the IP address or the name of the host system. Pick a unique port address for each target/host pair that you work with, with in the range 50000-50039.
+5. Type this command to set the IP address of the host system and generated a unique connection key. Use the IP address or the name of the host system, or the wildcard address of 255.255.255.255.  Pick a unique port address for each target/host pair that you work with, with in the range 50000-50039. Because we will be using a unique key and port address for each host and target pair, we can use the wildcard hostip address of 255.255.255.255.
 
     ```
-    C:\>KDNet <HostComputerIPAddress> <YourDebugPort> 
+    C:\>KDNet 255.255.255.255 <YourDebugPort> 
 
     Enabling network debugging on Microsoft Hypervisor Virtual Machine.
     Key=3u8smyv477z20.2owh9gl90gbxx.3sfsihzgq7di4.nh8ugnmzb4l7
@@ -126,11 +152,10 @@ For example if the target is running 32 bit Windows, run a 32 version of the deb
 6. Re-enable BitLocker and secure boot when you're done configuring the debugger settings.
 
 
-7. The VM will be restarted after the debugger is running.
+7. The VM will be restarted after the debugger is loaded and running. 
 
 
 ## <span id="Starting_the_Debugging_Session"></span><span id="starting_the_debugging_session"></span><span id="STARTING_THE_DEBUGGING_SESSION"></span>Starting the Debugging Session
-
 
 1. Record the returned windbg command line, or copy it into a notepad .txt file or the command buffer.
 
@@ -146,7 +171,7 @@ When you first attempt to establish a network debugging connection, you might be
 
 4. After connecting to your VM, hit break on your debugger and you can start debugging. 
 
-5. If the debugger does not connect use the ping command to verify connectivity, and then refer to the troubleshooting steps below. 
+5. If the debugger does not connect, use the ping command to verify connectivity, and then refer to the troubleshooting steps below. 
 
     ```
     C:\>Ping <HostComputerIPAddress> 
@@ -159,16 +184,16 @@ When you first attempt to establish a network debugging connection, you might be
 *Something didn't work right and I'm not sure what...* 
 
 - Ensure you've let WinDbg through your firewall. 
-- For diagnostic information gathering purposes, try a different local hub/router. 
 - Confirm that you are using a unique Key that was generated by BCDEdit or KDNet.
+- Consider trying a different hub/router. 
+
+*Everything was working fine and now it's not working* 
+
+- Sometimes the routers/switch/hubs can get stuck. Unplug the power to router/switch/hub for ~60 seconds and then plug back in and reboot target machine. This fixes a number of issues and may need to to happen from time to time. 
 
 *My VMs don't have network connectivity*  
 
 - Open Virtual Switch Manager from Hyper-V Manager, select your existing Virtual Switch, and change the external network NIC to the Microsoft Kernel Debug Network Adapter by selecting it from the drop down box and then clicking OK in the Virtual Switch Manager dialog box.  After updating your Virtual Switch NIC, make sure to then shutdown and restart your VMs. 
-
-*Everything was working fine and now it's not working* 
-
-- Sometimes the routers/switch/hubs in your office can get stuck. Unplug the power to router/switch/hub for ~60 seconds and then plug back in and reboot target machine. This fixes a number of issues and may need to to happen from time to time. 
 
 
 

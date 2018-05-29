@@ -2,7 +2,7 @@
 title: 360 camera video capture
 description: Provides information about 360 camera video capture.
 ms.author: windowsdriverdev
-ms.date: 04/19/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -22,11 +22,11 @@ These equirectangular frames can then be acquired and consumed by the apps via M
 
 360 camera usage:
 
--   For previewing a 360 frame, an application does need to explicitly use the XAML [MediaPlayerElement](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.mediaplayerelement) for preview. An application also needs to explicitly handle UI interaction for panning around, via the [MediaPlaybackSphericalVideoProjetion.ViewOrientation](https://docs.microsoft.com/en-us/uwp/api/windows.media.playback.mediaplaybacksphericalvideoprojection) quaternion.
+-   For previewing a 360 frame, an application does need to explicitly use the XAML [MediaPlayerElement](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.mediaplayerelement) for preview. An application also needs to explicitly handle UI interaction for panning around, via the [MediaPlaybackSphericalVideoProjetion.ViewOrientation](https://docs.microsoft.com/uwp/api/windows.media.playback.mediaplaybacksphericalvideoprojection) quaternion.
 
--   For 360 video record, a capture application does not need to be configured explicitly for 360 content if it is using [MediaCapture WinRT APIs](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/basic-photo-video-and-audio-capture-with-mediacapture), as the spherical format is implicitly passed on to the record sink and written to the file header.
+-   For 360 video record, a capture application does not need to be configured explicitly for 360 content if it is using [MediaCapture WinRT APIs](https://docs.microsoft.com/windows/uwp/audio-video-camera/basic-photo-video-and-audio-capture-with-mediacapture), as the spherical format is implicitly passed on to the record sink and written to the file header.
 
--   For 360 photo capture, an application needs to explicitly add the appropriate standardized metadata that specifies its spherical format using available [WIC WinRT APIs](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/image-metadata).
+-   For 360 photo capture, an application needs to explicitly add the appropriate standardized metadata that specifies its spherical format using available [WIC WinRT APIs](https://docs.microsoft.com/windows/uwp/audio-video-camera/image-metadata).
 
 It is up to the 360 camera IHV to implement a stream with a projected view and expose Pan/Tilt/Zoom controls.
 
@@ -91,7 +91,7 @@ MF\_SD\_VIDEO\_SPHERICAL\_FORMAT to MFVideoSphericalFormat\_Unsupported(0). The 
 
 ## Platform guidance
 
-The platform already exposes all the stream attributes to the WinRT layer for applications via [MediaFrameSourceInfo.Properties](https://docs.microsoft.com/en-us/uwp/api/windows.media.capture.frames.mediaframesourceinfo), which can be searched for the MF\_SD\_VIDEO\_SPHERICAL GUID defined in the table above. However, most of the spherical configurations of platform elements will be managed implicitly by the platform. The properties can be queried by the application only for any extra functionality that the application developer may want to implement, for example, any custom effects that need to be inserted or removed depending on the sphericalness of the video.
+The platform already exposes all the stream attributes to the WinRT layer for applications via [MediaFrameSourceInfo.Properties](https://docs.microsoft.com/uwp/api/windows.media.capture.frames.mediaframesourceinfo), which can be searched for the MF\_SD\_VIDEO\_SPHERICAL GUID defined in the table above. However, most of the spherical configurations of platform elements will be managed implicitly by the platform. The properties can be queried by the application only for any extra functionality that the application developer may want to implement, for example, any custom effects that need to be inserted or removed depending on the sphericalness of the video.
 
 The platform bypasses the inbox effects like face detection, scene analyzer and video stabilization (if added) when it detects the stream attribute property value indicating a spherical frame source.
 
@@ -107,11 +107,11 @@ The platform also implicitly configures the MP4 sink to record a 360 video (pass
 
 ## Application guidance
 
-The application can use the [MediaPlayerElement](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.mediaplayerelement) XAML control, to leverage the 360 video spherical projection experience.
+The application can use the [MediaPlayerElement](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.mediaplayerelement) XAML control, to leverage the 360 video spherical projection experience.
 
-If the MF\_SD\_VIDEO\_SPHERICAL\_FORMAT property exists on the media type and is set to MFVideoSphericalFormat\_Equirectangular, the frames are then expected to be spherical and can be rendered appropriately via the [MediaPlayerElement](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.mediaplayerelement) XAML control. The application can query the spherical format detected by the media player by checking the properties of MediaPlaybackSphericalVideoProjection obtained from the media player playback session (objMediaPlayer.PlaybackSession.SphericalVideoProjection). The application has to set the **isEnabled** property to **TRUE** to start the spherical projection.
+If the MF\_SD\_VIDEO\_SPHERICAL\_FORMAT property exists on the media type and is set to MFVideoSphericalFormat\_Equirectangular, the frames are then expected to be spherical and can be rendered appropriately via the [MediaPlayerElement](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.mediaplayerelement) XAML control. The application can query the spherical format detected by the media player by checking the properties of MediaPlaybackSphericalVideoProjection obtained from the media player playback session (objMediaPlayer.PlaybackSession.SphericalVideoProjection). The application has to set the **isEnabled** property to **TRUE** to start the spherical projection.
 
-If the application implements its own custom spherical projection component, then it can query the frame source via its [MediaFrameSourceInfo.Properties](https://docs.microsoft.com/en-us/uwp/api/windows.media.capture.frames.mediaframesourceinfo) for the spherical stream level video properties as described in the table above. However, all platform element configuration like media player preview and record sink will be configured implicitly by the platform on detection of the spherical video properties exposed by the camera DMFT on stream and mediatype attribuites.
+If the application implements its own custom spherical projection component, then it can query the frame source via its [MediaFrameSourceInfo.Properties](https://docs.microsoft.com/uwp/api/windows.media.capture.frames.mediaframesourceinfo) for the spherical stream level video properties as described in the table above. However, all platform element configuration like media player preview and record sink will be configured implicitly by the platform on detection of the spherical video properties exposed by the camera DMFT on stream and mediatype attribuites.
 
 
 

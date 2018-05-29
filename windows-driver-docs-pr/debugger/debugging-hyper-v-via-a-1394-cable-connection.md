@@ -3,7 +3,7 @@ title: Debugging Hyper-V via a 1394 Cable Connection
 description: Debugging Hyper-V via a 1394 Cable Connection
 ms.assetid: da183635-8dc9-4092-b4c3-104304ee45f7
 ms.author: domars
-ms.date: 11/28/2017
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -11,8 +11,12 @@ ms.technology: windows-devices
 
 # Debugging Hyper-V via a 1394 Cable Connection
 
-
 ## <span id="ddk_opening_a_crash_dump_dbg"></span><span id="DDK_OPENING_A_CRASH_DUMP_DBG"></span>
+
+> [!IMPORTANT]  
+> The 1394 transport is available for use in Windows 10, version 1607 and earlier. 
+> It is not available in later versions of Windows. You should transition your projects to other transports, such as KDNET using Ethernet. 
+> For more information about that transport, see [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md).
 
 
 To debug the root partition or Windows hypervisor across a 1394 cable connection, use the following procedure.

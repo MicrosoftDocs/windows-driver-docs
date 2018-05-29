@@ -45,10 +45,10 @@ The Fixed ACPI Hardware Table (FADT) contains important information about the va
 
 -   The Flags field within the FADT (offset 112) has two new flags:
 
-    HARDWARE\_REDUCED\_ACPI  
+    HARDWARE\_REDUCED\_ACPI
     Bit offset 20. Indicates that ACPI hardware is not available on this platform. This flag must be set if the ACPI Fixed Hardware Programming Model is not implemented.
 
-    LOW\_POWER\_S0\_IDLE\_CAPABLE  
+    LOW\_POWER\_S0\_IDLE\_CAPABLE
     Bit offset 21. Indicates that the platform supports low-power idle states within the ACPI S0 system power state that are more energy efficient than any Sx sleep state. If this flag is set, Windows will not try to sleep and resume, but will instead use platform idle states and connected standby.
 
 -   The FADT Preferred\_PM\_Profile field (byte offset 45) has a new role entry, "Tablet". This role influences power management policy for the display and input, and affects the display of on-screen keyboards.
@@ -97,11 +97,11 @@ For more information, see the [Microsoft Debug Port Table 2 (DBG2) specification
 
 In ACPI, peripheral devices and system hardware features on the platform are described in the Differentiated System Description Table (DSDT), which is loaded at boot, or in Secondary System Description Tables (SSDTs), which are loaded at boot or loaded dynamically at run time. For SoCs, the platform configuration is typically static, so the DSDT might be sufficient, although SSDTs can also be used to improve the modularity of the platform description.
 
-ACPI defines an interpreted language (ACPI source language, or ASL) and an execution environment (ACPI virtual machine) for describing system devices and features, and their platform-specific controls, in an OS-agnostic way. ASL is used to define named objects in the ACPI namespace, and the [Microsoft ASL compiler](microsoft-asl-compiler.md) is used to produce ACPI machine language (AML) byte code for transmission to the operating system in the DSDT. The inbox [Windows ACPI driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/acpi-driver), Acpi.sys, implements the ACPI virtual machine and interprets the AML byte code. An AML object might simply return description information. Or, an AML object might be a method that performs computation or does I/O operations. A *control method* is an executable AML object that uses the operating system's device drivers to do I/O operations on the platform hardware. ASL uses OpRegions to abstract the various address spaces accessible in the operating system. Control methods perform I/O operations as a series of transfers to and from named fields declared in OpRegions.
+ACPI defines an interpreted language (ACPI source language, or ASL) and an execution environment (ACPI virtual machine) for describing system devices and features, and their platform-specific controls, in an OS-agnostic way. ASL is used to define named objects in the ACPI namespace, and the [Microsoft ASL compiler](microsoft-asl-compiler.md) is used to produce ACPI machine language (AML) byte code for transmission to the operating system in the DSDT. The inbox [Windows ACPI driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/acpi-driver), Acpi.sys, implements the ACPI virtual machine and interprets the AML byte code. An AML object might simply return description information. Or, an AML object might be a method that performs computation or does I/O operations. A *control method* is an executable AML object that uses the operating system's device drivers to do I/O operations on the platform hardware. ASL uses OpRegions to abstract the various address spaces accessible in the operating system. Control methods perform I/O operations as a series of transfers to and from named fields declared in OpRegions.
 
 For more information about OpRegions, see section 5.5.2.4, "Access to Operation Regions", in the [ACPI 5.0 specification](http://www.uefi.org/specifications). For more about ASL and control methods, see section 5.5, "ACPI Namespace", in the ACPI 5.0 specification.
 
-Windows provides support for developing and debugging ASL code. The ASL compiler includes a disassembler to enable the implementer to load a namespace from a debugging target. The ASL compiler can then be used to reapply the namespace to the target for rapid prototyping and testing—without having to flash the system firmware. In addition, the Windows Kernel Debugger, in conjunction with a checked (CHK) version of the Acpi.sys driver, supports tracing and analyzing AML execution. For more information, see [The AMLI Debugger](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/introduction-to-the-amli-debugger).
+Windows provides support for developing and debugging ASL code. The ASL compiler includes a disassembler to enable the implementer to load a namespace from a debugging target. The ASL compiler can then be used to reapply the namespace to the target for rapid prototyping and testing—without having to flash the system firmware. In addition, the Windows Kernel Debugger, in conjunction with a checked (CHK) version of the Acpi.sys driver, supports tracing and analyzing AML execution. For more information, see [The AMLI Debugger](https://docs.microsoft.com/windows-hardware/drivers/debugger/introduction-to-the-amli-debugger).
 
 ## Windows SMM Security Mitigations Table (WSMT)
 
@@ -116,9 +116,9 @@ Windows 10, version 1607
 
 For more information, see the [Windows SMM Security Mitigations Table (WMST) specification](http://go.microsoft.com/fwlink/p/?LinkId=786943).
 
- 
+�
 
- 
+�
 
 
 

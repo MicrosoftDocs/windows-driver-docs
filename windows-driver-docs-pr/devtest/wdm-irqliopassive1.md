@@ -1,6 +1,11 @@
 ---
 title: IrqlIoPassive1 rule (wdm)
 ms.assetid: c8960015-3b7c-4827-82dc-fd1225a376ea
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 description: 
 keywords: ["IrqlIoPassive1 rule (wdm)"]
 topic_type:

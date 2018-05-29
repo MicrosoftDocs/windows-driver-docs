@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Firmware WEG: Frequently asked questions (FAQ)
 
 
-The following FAQ came about due to the number of machines still using Windows 7.  
+The following FAQ came about due to the number of machines still using Windows 7.
 
 Please send aditional questions or comments to <SAUEFI@Microsoft.com>.
 
@@ -93,7 +93,7 @@ Please send aditional questions or comments to <SAUEFI@Microsoft.com>.
 
 **Q:** How is Secure Boot configured once the BIOS is switched to UEFI?
 
-> **A:** By default, for Win7 devices, Secure Boot is not implemented. If a system came with Windows 8 or higher, itâ€™s very likely that system would have Secure Boot configured as this was a Logo requirement. Secure Boot is only implemented on factory floor by the PC manufacturer. Please contact the PC manufacturer to see if they would be able to install Secure Boot on your system. You may need to send system back to PC manufacture to get this installed.
+> **A:** By default, for Win7 devices, Secure Boot is not implemented. If a system came with Windows 8 or higher, it's very likely that system would have Secure Boot configured as this was a Logo requirement. Secure Boot is only implemented on factory floor by the PC manufacturer. Please contact the PC manufacturer to see if they would be able to install Secure Boot on your system. You may need to send system back to PC manufacture to get this installed.
 
 **Q:** What is impact on a rollback/restore to Windows 7?
 
@@ -105,7 +105,7 @@ Please send aditional questions or comments to <SAUEFI@Microsoft.com>.
 
 **Q:** What is dependency/impact on 32-bit vs. 64-bit OS going from Legacy boot to UEFI and vice versa if the firmware is 64-bit UEFI or 32-bit UEFI?
 
-> **A:** One limitation of Windows UEFI boot is that you can only boot an OS "bitness" that matches the UEFI that is installed (see Question 7).Â  If you have a 32-bit UEFI, you can only install a 32-bit Windows on it.Â  64-bit Windows requires 64-bit UEFI or a CSM.Â  However, ifÂ a system is missing a CSM, you cannot boot Win7 64-bit Windows OS.
+> **A:** One limitation of Windows UEFI boot is that you can only boot an OS "bitness" that matches the UEFI that is installed (see Question 7).  If you have a 32-bit UEFI, you can only install a 32-bit Windows on it.  64-bit Windows requires 64-bit UEFI or a CSM.  However, if a system is missing a CSM, you cannot boot Win7 64-bit Windows OS.
 
 **Q:** Can you convert a system booting using Legacy MBR boot to GPT boot on the fly without impacting data?
 
@@ -114,7 +114,7 @@ Please send aditional questions or comments to <SAUEFI@Microsoft.com>.
 ## Related resources
 
 [UEFI Firmware](https://technet.microsoft.com/en-us/library/hh824898)
- 
+
 [Windows 10 Specifications - Microsoft](https://www.microsoft.com/en-US/windows/windows-10-specifications)
 
 [Update to add support for TPM 2.0 in Windows 7 and Windows Server 2008 R2](https://support.microsoft.com/en-us/kb/2920188)

@@ -21,11 +21,11 @@ Methods for managing product submissions
 
 | Method | URI | Description |
 |:--|:--|:--|
-| GET | `https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}` | [Get status/data for a specific product](get-a-product.md)  |
-| GET | `https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}/submissions/{submissionId}` |[Get status/data for a specific submission of a product](get-a-submission.md)   |
-| POST | `https://manage.devcenter.microsoft.com/v1.0/hardware/products` | [Create a new product](create-a-new-product.md)   |
-| POST | `https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}/submissions/` | [Create a new submission for a product](create-a-new-submission-for-a-product.md)  |
-| POST | `https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}/submissions/{submissionId}/commit` |[Commit a product submission](commit-a-product-submission.md)  |
+| GET | `https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}` | [Get status/data for a specific product](get-a-product.md)  |
+| GET | `https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions/{submissionId}` |[Get status/data for a specific submission of a product](get-a-submission.md)   |
+| POST | `https://manage.devcenter.microsoft.com/v1.0/my/hardware/products` | [Create a new product](create-a-new-product.md)   |
+| POST | `https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions/` | [Create a new submission for a product](create-a-new-submission-for-a-product.md)  |
+| POST | `https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions/{submissionId}/commit` |[Commit a product submission](commit-a-product-submission.md)  |
 
 
 ## Create and submit a product for signing

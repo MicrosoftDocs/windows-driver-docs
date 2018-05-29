@@ -23,7 +23,7 @@ ms.technology: windows-devices
 
 The **WIA\_IPS\_SCAN\_AHEAD** property is used to enable scan ahead in the hardware device (scan at highest possible speed, buffering scanned images in the scanner's internal memory, transferring buffered images in parallel to the client application at an equal or lower speed). The WIA minidriver creates and maintains this property.
 
-## <span id="ddk_wia_ipa_depth_si"></span><span id="DDK_WIA_IPA_DEPTH_SI"></span>
+
 
 
 **Note**  This property replaces [**WIA\_DPS\_SCAN\_AHEAD\_PAGES**](wia-dps-scan-ahead-pages.md), which is now obsolete.

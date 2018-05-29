@@ -23,7 +23,7 @@ ms.technology: windows-devices
 
 The **WIA\_IPS\_SUPPORTED\_BARCODE\_TYPES** property is used by the WIA minidriver to list all barcode types supported (understood) by the Barcode Reader. The supported barcode types are reported in a VT\_VECTOR array as a single value that contains multiple entries.
 
-## <span id="ddk_wia_ipa_depth_si"></span><span id="DDK_WIA_IPA_DEPTH_SI"></span>
+
 
 
 Property Type: VT\_I4 | VT\_VECTOR

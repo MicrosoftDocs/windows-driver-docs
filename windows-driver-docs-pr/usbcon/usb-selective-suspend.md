@@ -25,6 +25,12 @@ There are two different mechanisms for selectively suspending a USB device: idle
 
 Client drivers, for an interface on a composite device, that enable the interface for remote wakeup with a wait wake IRP (IRP\_MN\_WAIT\_WAKE), must use the idle request IRP ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://msdn.microsoft.com/library/windows/hardware/ff537270)) mechanism to selectively suspend a device.
 
+For information about remote wakeup, see:
+
+[Remote Wakeup of USB Devices](https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/remote-wakeup-of-usb-devices)
+
+[Overview of Wait/Wake Operation](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/overview-of-wait-wake-operation)
+
 The version of the Windows operating system determines the way drivers for non-composite devices enable selective suspend.
 
 -   Windows XP: On Windows XP all client drivers must use idle request IRPs ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://msdn.microsoft.com/library/windows/hardware/ff537270)) to power down their devices. Client drivers must not use WDM power IRPs to selectively suspend their devices. Doing so will prevent other devices from selectively suspending. See "USB Global Suspend"  for more information.

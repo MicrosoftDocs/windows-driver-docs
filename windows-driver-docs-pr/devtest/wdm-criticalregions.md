@@ -2,6 +2,11 @@
 title: CriticalRegions rule (wdm)
 description: The CriticalRegions rule specifies that the driver must call KeEnterCriticalRegion before calling KeLeaveCriticalRegion and that the driver calls KeLeaveCriticalRegion before any subsequent calls to KeEnterCriticalRegion. (Nested calls are permitted.).
 ms.assetid: 5976e24b-ca1c-440e-97c8-ccc2015d1172
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["CriticalRegions rule (wdm)"]
 topic_type:
 - apiref

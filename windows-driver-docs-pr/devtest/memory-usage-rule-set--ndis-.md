@@ -2,6 +2,11 @@
 title: Memory usage rule set (NDIS)
 description: Use these rules to verify that your driver correctly calls NDIS functions to allocate and free memory.
 ms.assetid: F28314C6-4B4D-479F-BB96-6850C8F98153
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Memory usage rule set (NDIS)

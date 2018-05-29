@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Old method - Windows 10, version 1607 and earlier
 
 
-In an upgrade scenario (Windows 7 to Windows 10); a technician needs to change OS and firmware from Windows 7 SPn Legacy boot+CSM to Win10 UEFI-CSM (minus CSM) and has Windows 7 SPn x64 installation media. 
+In an upgrade scenario (Windows 7 to Windows 10), a technician needs to change OS and firmware from Windows 7 SPn Legacy boot+CSM to Win10 UEFI-CSM (minus CSM) and has Windows 7 SPn x64 installation media.
 
 This process may look something like this (more details below):
 
@@ -30,13 +30,13 @@ This process may look something like this (more details below):
 
 5.  Boot to WinPE on the USB/CD/DVD device (**Secure Boot** must be disabled to boot to the alternative boot device).
 
-6.  Use Diskpart.exe to wipe clean primary boot disk. 
+6.  Use Diskpart.exe to wipe clean primary boot disk.
 
     **Note** If more than one disk is present, verify that disk 0 is the primary boot device before cleaning the disk, as this process will wipe all data on the disk.
 
 7.  There are several options at this point, and the IT Person may need to contact System OEM for specific instructions/configuration options.
 
-    a.  Insert clean installation media and run setup.exe. There is a possibility that the installation process will detect CSM and re-install in Legacy boot/BIOS mode.    
+    a.  Insert clean installation media and run setup.exe. There is a possibility that the installation process will detect CSM and re-install in Legacy boot/BIOS mode.
 
     b.  From step 5, still within Diskpart.exe with primary boot disk selected, run "Convert GPT"
 
