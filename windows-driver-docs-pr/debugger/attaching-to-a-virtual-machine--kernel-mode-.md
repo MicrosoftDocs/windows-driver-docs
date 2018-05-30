@@ -4,7 +4,7 @@ description: Debugging Tools for Windows supports kernel debugging of a virtual 
 ms.assetid: e863e664-8338-4bbe-953b-e000a6843db9
 keywords: ["virtual machine debugging", "Virtual PC debugging", "VMware debugging"]
 ms.author: domars
-ms.date: 05/04/2018
+ms.date: 05/29/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,8 +31,10 @@ The computer that runs the debugger is called the *host computer*, and the virtu
 
     where *n* is the number of a COM port on the virtual machine.
 
-2.  Reboot the virtual machine.
-3.  In the virtual machine, configure the COM port to map to a named pipe. The debugger will connect through this pipe. For more information about how to create this pipe, see your virtual machine's documentation.
+2.  In the virtual machine, configure the COM port to map to a named pipe. The debugger will connect through this pipe. For more information about how to create this pipe, see your virtual machine's documentation.
+
+3. Once the debugger is attached and running, reboot the target machine.
+
 
 ## <span id="starting_the_debugger"></span><span id="STARTING_THE_DEBUGGER"></span>Starting the Debugging Session Using WinDbg
 
@@ -105,7 +107,13 @@ To enable kernel debugging using a COM port on a generation 2 virtual machine, f
 
     **Set-VMComPort –VMName TestVM 1 \\\\.\\pipe\\TestPipe**
 
-For more information, see [Generation 2 Virtual Machine Overview](http://go.microsoft.com/fwlink/p/?Linkid=331326).
+
+3. Once the debugger is attached and running, stop and cold start the VM to activate the COM ports in the VM.　The emulated UARTS aren’t available for debugging unless at least one is actually configured with a pipe name and they cannot be hot-added.
+
+4. Re-enable secure boot, once you are done updating the configuration changes.
+
+For more information about Generation 2 VMs, see [Generation 2 Virtual Machine Overview](http://go.microsoft.com/fwlink/p/?Linkid=331326).
+
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
