@@ -1,10 +1,10 @@
 ---
-title: Setting Up Kernel-Mode Debugging of a Virtual Machine Manually
+title: Setting Up Kernel-Mode Debugging of a Virtual Machine Manually using a Virtual COM Port
 description: Debugging Tools for Windows supports kernel debugging of a virtual machine.
 ms.assetid: e863e664-8338-4bbe-953b-e000a6843db9
 keywords: ["virtual machine debugging", "Virtual PC debugging", "VMware debugging"]
 ms.author: domars
-ms.date: 05/29/2018
+ms.date: 05/30/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -12,12 +12,14 @@ ms.technology: windows-devices
 
 # Setting Up Kernel-Mode Debugging of a Virtual Machine Manually using a Virtual COM Port
 
+Debugging Tools for Windows supports kernel debugging of a virtual machine. The virtual machine can be located on the same physical computer as the debugger or on a different computer that is connected to the same network. This topic describes how to set up debugging of a virtual machine manually using a virtual COM Port via KDCOM.
 
-Debugging Tools for Windows supports kernel debugging of a virtual machine. The virtual machine can be located on the same physical computer as the debugger or on a different computer that is connected to the same network. This topic describes how to set up debugging of a virtual machine manually.
+Using KDNET virtual networking is a faster option and is recommended. For more information, see [Setting Up Network Debugging of a Virtual Machine with KDNET](setting-up-network-debugging-of-a-virtual-machine-host.md).
 
-The computer that runs the debugger is called the *host computer*, and the virtual machine being debugged is called the *target virtual machine*.
 
 ## <span id="Setting_Up_the_Target_Virtual_Machine"></span><span id="setting_up_the_target_virtual_machine"></span><span id="SETTING_UP_THE_TARGET_VIRTUAL_MACHINE"></span>Setting Up the Target Virtual Machine
+
+The computer that runs the debugger is called the *host computer*, and the virtual machine being debugged is called the *target virtual machine*.
 
 > [!IMPORTANT]
 > Before using BCDEdit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC.
@@ -145,10 +147,10 @@ If you restart the virtual machine by using the VMWare facilities (for example, 
 
 ## <span id="related_topics"></span>Related topics
 
+[Setting Up Network Debugging of a Virtual Machine with KDNET](setting-up-network-debugging-of-a-virtual-machine-host.md)
 
 [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
 
- 
 [Setting Up Network Debugging of a Virtual Machine Host](setting-up-network-debugging-of-a-virtual-machine-host.md)
  
 
