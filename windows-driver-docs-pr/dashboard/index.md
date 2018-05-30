@@ -122,7 +122,7 @@ The Windows Hardware Dev Center Dashboard enables you to create and manage your 
                         <ul>
                             <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-started-with-the-hardware-dashboard">Getting started with the hardware dashboard</a></li>
                             <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/hardware-dashboard-faq">Hardware dashboard FAQ</a></li>
-                            <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/lsa-and-uefi-file-signing">LSA and UEFI File signing services</a></li>
+                            <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/lsa-and-uefi-file-signing">LSA and UEFI file signing</a></li>
                         </ul>
                     </div>
                 </div>
