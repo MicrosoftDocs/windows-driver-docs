@@ -26,7 +26,7 @@ The **WIA\_IPS\_OVER\_SCAN** property is used to enable and configure over scann
 
 
 
-Property Type: VT\_UI4
+Property Type: VT\_I4
 
 Valid Values: WIA\_PROP\_LIST
 
