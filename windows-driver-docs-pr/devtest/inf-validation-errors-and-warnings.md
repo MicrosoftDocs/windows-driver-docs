@@ -16,11 +16,29 @@ This topic describes driver installation errors and warnings that can appear as 
 
 Starting in Visual Studio 2015 with WDK 10, when you build your driver, the following INF file errors can appear in the Error List pane. If you are running InfVerif.exe from the command line, the tool displays these errors at the command prompt, or in the HTML version of the results.
 
--   [Ignored lines in the INF file (1200-1299)](#err-12xx)
--   [Universal INF errors (1300-1309)](#err-130x)
+## Error Guidance
+InfVerif follows a general rule that the lower the error number, the more severe the issue.  Depending on the context in which InfVerif is invoked, errors codes may vary between a warning and an error.
+
+### Handling Errors
+Errors are considered critical and must be addressed.  A particular error code will be an error in the following conditions:
+-   The INF parser was unable to successfully interpret your INF
+-   The INF parser was able to interpret the INF if some default-value assumption was made (abiguous syntax)
+-   The arguments to InfVerif indicate some ruleset was applied to the INF (such as Universal)
+
+Warnings are not required to be fixed.  Typically an error code will be a warning in the following conditions:
+-   Syntax that may be incorrect, but has valid scenarios where it is appropriate
+-   Syntax that is valid for the given InfVerif parameters, but is an error in other modes, such as Universal
+
+Warnings may be ignored if the developer fully understands the message being reported.  For example, sections that are unreferenced by the INF parser will be receive error 2083, however this section may be in place to enable some external piece of code to open the INF and parse this section.  In such a case, the 2083 may be ignored.  If a given warning is not properly understood, it is likely indicative of some other INF parsing error.
+
+## Error Codes
+
+-   [Critical parsing errors (1000-1099)](#err-10xx)
+-   [Validations Errors (1100-1299)](#err-11xx)
+-   [Universal INF errors (1300-1319)](#err-130x)
 -   [Installation warnings (2000-2999)](#warning-2xxx)
 
-## Syntax errors in the INF file (1200-1299)<a name="err-12xx"></a>
+## Syntax errors in the INF file (1100-1299)<a name="err-11xx"></a>
 
 
 When you install a driver, Windows skips lines in the INF file that contain errors, but does not fail driver installation due to errors in this range. If the driver installs successfully, you might not notice that some lines were skipped.
