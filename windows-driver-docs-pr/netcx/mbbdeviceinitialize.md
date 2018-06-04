@@ -54,6 +54,5 @@ For more information, see [**Initialize the device**](writing-an-mbbcx-client-dr
 | --- | --- |
 | Target platform | Universal |
 | Minimum KMDF version | 1.27 |
-| Minimum NetAdapterCx version | 1.3 |
 | Header | Mbbcx.h |
 | IRQL | PASSIVE_LEVEL |
