@@ -55,6 +55,5 @@ To complete requests from the [*EvtMbbDeviceReceiveMbimFragment*](evt-mbb-device
 | --- | --- |
 | Target platform | Universal |
 | Minimum KMDF version | 1.27 |
-| Minimum NetAdapterCx version | 1.3 |
 | Header | Mbbcx.h |
 | IRQL | <= DISPATCH_LEVEL |

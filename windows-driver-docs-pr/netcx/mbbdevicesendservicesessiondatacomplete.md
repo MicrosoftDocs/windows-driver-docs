@@ -49,6 +49,5 @@ Client drivers must call this method from within the [*EvtMbbDeviceSendServiceSe
 | --- | --- |
 | Target platform | Universal |
 | Minimum KMDF version | 1.27 |
-| Minimum NetAdapterCx version | 1.3 |
 | Header | Mbbcx.h |
 | IRQL | PASSIVE_LEVEL |

@@ -53,6 +53,5 @@ The client driver typically calls this method from its [*EVT_WDF_DEVICE_PREPARE_
 | --- | --- |
 | Target platform | Universal |
 | Minimum KMDF version | 1.27 |
-| Minimum NetAdapterCx version | 1.3 |
 | Header | Mbbcx.h |
 | IRQL | PASSIVE_LEVEL |
