@@ -15,15 +15,11 @@ ms.technology: windows-devices
 
 # Changing Boot Parameters
 
-
-## <span id="ddk_changing_boot_parameters_tools"></span><span id="DDK_CHANGING_BOOT_PARAMETERS_TOOLS"></span>
-
-
 To enable and configure boot-related operating system features, such as debugging, you must add boot parameters to a boot entry for the operating system.
 
 To change boot parameters on a system running Windows, you can use BCDEdit.
 
-### <span id="using_bcdedit"></span><span id="USING_BCDEDIT"></span>Using BCDEdit
+## <span id="using_bcdedit"></span><span id="USING_BCDEDIT"></span>Using BCDEdit
 
 To add a boot configuration parameter to a boot entry, use the BCDEdit boot entry options to change global settings, such as **/ems**, **/debug**, **/dbgsettings**, or set individual parameters using the [**BCDEdit /set**](https://msdn.microsoft.com/library/windows/hardware/ff542202) options. For a complete list of BCDEdit options, at a command prompt, type **BCDEdit /?** or **BCDEdit /?** &lt;command&gt; to find help about a specific command.
 
@@ -63,12 +59,3 @@ nx                      OptIn
 pae                     ForceEnable
 debug                   Yes
 ```
-
- 
-
- 
-
-
-
-
-
