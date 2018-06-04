@@ -48,7 +48,7 @@ Some of the individual technologies have minidriver models. In a minidriver mode
 
 For an overview of minidriver models, see [Minidrivers and driver pairs](minidrivers-and-driver-pairs.md).
 
-Not every technology listed in [Device and driver technologies](https://msdn.microsoft.com/library/windows/hardware/ff557557) has a dedicated minidriver model. The documentation for a particular technology might advise you to use the [Kernel-Mode Driver Framework (KMDF)](https://msdn.microsoft.com/library/windows/hardware/ff557565); the documentation for another technology might advise you to use the [User-Mode Driver Framework (UMDF)](https://msdn.microsoft.com/library/windows/hardware/ff557565). The key point is that you should start by studying the documentation for your specific device technology. If your device technology has a minidriver model, you must use the minidriver model. Otherwise follow the advice in the your technology-specific documentation about whether to use the UMDF, KMDF, or the Windows Driver Model (WDM).
+Not every technology listed in [Device and driver technologies](https://msdn.microsoft.com/library/windows/hardware/ff557557) has a dedicated minidriver model. The documentation for a particular technology might advise you to use the [Kernel-Mode Driver Framework (KMDF)](https://docs.microsoft.com/windows-hardware/drivers/wdf/); the documentation for another technology might advise you to use the [User-Mode Driver Framework (UMDF)](https://docs.microsoft.com/windows-hardware/drivers/wdf/). The key point is that you should start by studying the documentation for your specific device technology. If your device technology has a minidriver model, you must use the minidriver model. Otherwise follow the advice in the your technology-specific documentation about whether to use the UMDF, KMDF, or the Windows Driver Model (WDM).
 
 ## <span id="Choosing_a_driver_model_for_a_device_filter_driver"></span><span id="choosing_a_driver_model_for_a_device_filter_driver"></span><span id="CHOOSING_A_DRIVER_MODEL_FOR_A_DEVICE_FILTER_DRIVER"></span>Choosing a driver model for a device filter driver
 
@@ -87,9 +87,9 @@ For help choosing a model for a file system minifilter driver, see [File System 
 ## <span id="related_topics"></span>Related topics
 
 
-[Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565)
+[Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
 
-[User-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565)
+[User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
 
  
 
