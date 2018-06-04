@@ -20,7 +20,7 @@
 ## [Power-up sequence for a NetAdapterCx client driver](power-up-sequence-for-a-netadaptercx-client-driver.md)
 ## [Power-down sequence for a NetAdapterCx client driver](power-down-sequence-for-a-netadaptercx-client-driver.md)
 ## [NetAdapterCx limitations](netadaptercx-limitations.md)
-## [Mobile Broadband (MBB) WDF class extension (MBBCx)](mobile-broadband-mbb-wdf-class-extension-mbbcx-.md)
+## [Mobile Broadband (MBB) WDF class extension (MBBCx)](mobile-broadband-mbb-wdf-class-extension-mbbcx.md)
 ### [Writing an MBBCx client driver](writing-an-MBBcx-client-driver.md)
 ### [MBBCx API reference](mbbcx-api-reference.md)
 #### [MBB_DEVICE_CONFIG_INIT](mbb-device-config-init.md)
