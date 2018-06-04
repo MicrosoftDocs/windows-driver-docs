@@ -54,7 +54,7 @@ Kbdclass and Mouclass each feature:
 
 -   Connection of a [class service callback routine](https://msdn.microsoft.com/library/windows/hardware/ff542274) that a function driver uses to transfer data from the input data buffer of the device to the data buffer of the class driver.
 
-## Configration of device objects
+## Configuration of device objects
 
 
 The following figure shows the configuration of device objects for a Plug and Play PS/2-style keyboard and mouse device. Each class driver creates an upper-level class [*filter device object*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-filter-device-object) (filter DO) that is attached to a function device object ([*FDO*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-fdo)) through an optional upper-level device filter DO. An upper-level device filter driver creates the upper-level device filter DO. I8042prt creates the function DO and attaches it to a physical device object ([*PDO*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pdo)) created by the root bus driver.
