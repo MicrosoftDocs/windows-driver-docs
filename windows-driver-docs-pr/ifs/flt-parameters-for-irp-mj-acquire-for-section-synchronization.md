@@ -32,6 +32,7 @@ typedef union _FLT_PARAMETERS {
   struct {
     FS_FILTER_SECTION_SYNC_TYPE SyncType;
     ULONG POINTER_ALIGNMENT     PageProtection;
+    PFS_FILTER_SECTION_SYNC_OUTPUT OutputInformation;
   } AcquireForSectionSynchronization;
   ...    ;
 } FLT_PARAMETERS, *PFLT_PARAMETERS;
@@ -40,29 +41,27 @@ typedef union _FLT_PARAMETERS {
 Members
 -------
 
-**AcquireForSectionSynchronization**  
-Structure containing the following members.
-
 **SyncType**  
-Specifies the type of synchronization requested for the section. This parameter must be one of two enumerated values:
-
-**SyncTypeCreateSection**
-
-**SyncTypeOther**
+* Specifies the type of synchronization requested for the section. This parameter must be one of two enumerated values:
+  * **SyncTypeCreateSection**
+  * **SyncTypeOther**
 
 **PageProtection**  
-Specifies the type of page protection requested for the section. Must be zero if SyncType**SyncType** is SyncTypeOther. Otherwise, one of the following flags, possibly combined with PAGE\_NOCACHE:
+* Specifies the type of page protection requested for the section. Must be zero if SyncType**SyncType** is SyncTypeOther. Otherwise, one of the following flags, possibly combined with PAGE\_NOCACHE:
 
-PAGE\_READONLY
+  * PAGE\_READONLY
 
-PAGE\_READWRITE
+  * PAGE\_READWRITE
 
-PAGE\_WRITECOPY
+  * PAGE\_WRITECOPY
 
-PAGE\_EXECUTE
+  * PAGE\_EXECUTE
 
-Remarks
--------
+**OutputInformation**
+*  Specifies information describing the attributes of the section that is being created.
+
+## Remarks
+
 
 The [**FLT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff544673) structure for IRP\_MJ\_ACQUIRE\_FOR\_SECTION\_SYNCHRONIZATION operations contains the parameters for an **AcquireForSectionSynchronization** operation represented by a callback data ([**FLT\_CALLBACK\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff544620)) structure. It is contained in an FLT\_IO\_PARAMETER\_BLOCK structure.
 
@@ -72,8 +71,8 @@ If the enumerated value of the **SyncType** member is set to **SyncTypeOther** (
 
 For more information about FSFilter callback operations, see the reference entry for [**FsRtlRegisterFileSystemFilterCallbacks**](https://msdn.microsoft.com/library/windows/hardware/ff547172).
 
-Requirements
-------------
+## Requirements
+
 
 <table>
 <colgroup>
