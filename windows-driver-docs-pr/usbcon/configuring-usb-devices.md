@@ -20,7 +20,7 @@ Device configuration refers to the tasks that the client driver performs to sele
 
 A WDM-based client driver can select any of the configurations in a USB device.
 
-If your client driver is based on [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565) or [User-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565), you should use the respective framework interfaces for configuring a USB device. If you are using the USB templates that are provided with Microsoft Visual Studio Professional 2012, the template code selects the first configuration and the default alternate setting in each interface.
+If your client driver is based on [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/) or [User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/), you should use the respective framework interfaces for configuring a USB device. If you are using the USB templates that are provided with Microsoft Visual Studio Professional 2012, the template code selects the first configuration and the default alternate setting in each interface.
 
 ## In this section
 

@@ -13,7 +13,7 @@ The Hardware Dev Center Dashboard lets you to digitally sign [Local Security Aut
 
 
 > [!IMPORTANT]
-> * File signing requires an extended validation (EV) code signing certificate. see [Get a code signing certificate](get-a-code-signing-certificate.md) for more information.
+> * File signing requires an [extended validation (EV) code signing certificate](get-a-code-signing-certificate.md).
 
 > * All LSA and UEFI submissions must be a single, signed CAB library file, and contain all files required for signing. 
 >   * This file should contain no folders and only the binaries or .efi files to be signed. 

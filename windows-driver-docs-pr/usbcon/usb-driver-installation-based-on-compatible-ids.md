@@ -27,7 +27,7 @@ ms.technology: windows-devices
 
 Microsoft-provided in-box driver (Usbser.sys) for your Communications and CDC Control device.
 
-In Windows 10, the driver has been rewritten by using the [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565) that improves the overall stability of the driver.
+In Windows 10, the driver has been rewritten by using the [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/) that improves the overall stability of the driver.
 
 -   Improved PnP and power management by the driver (such as, handling surprise removal).
 -   Added power management features such as [USB Selective Suspend](usb-selective-suspend.md).

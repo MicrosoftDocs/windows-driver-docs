@@ -48,6 +48,5 @@ For more information, see [**Handling MBIM control messages**](writing-an-mbbcx-
 | --- | --- |
 | Target platform | Universal |
 | Minimum KMDF version | 1.27 |
-| Minimum NetAdapterCx version | 1.3 |
 | Header | Mbbcx.h |
 | IRQL | <= DISPATCH_LEVEL |

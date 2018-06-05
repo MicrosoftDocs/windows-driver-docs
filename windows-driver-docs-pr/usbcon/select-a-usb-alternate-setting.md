@@ -24,7 +24,7 @@ For example, an interface exposes two isochronous and two bulk endpoints through
 
 Alternate settings can also be used to set bandwidth requirements. For an example, see the [USB Device Layout](usb-device-layout.md).
 
-Windows Driver Foundation (WDF) provides methods in [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565) and [User-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565) that the client driver can call to select a different alternate setting. KMDF client driver can select a setting by specifying the setting index, interface descriptor of the setting, or by submitting an URB that contains the request. UMDF client driver can only select an alternate setting by specifying its setting index.
+Windows Driver Foundation (WDF) provides methods in [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/) and [User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/) that the client driver can call to select a different alternate setting. KMDF client driver can select a setting by specifying the setting index, interface descriptor of the setting, or by submitting an URB that contains the request. UMDF client driver can only select an alternate setting by specifying its setting index.
 
 After a select-configuration request completes successfully, the previously active alternate setting is deactivated.
 
@@ -33,8 +33,8 @@ After a select-configuration request completes successfully, the previously acti
 
 ### Technologies
 
--   [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565)
--   [User-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565)
+-   [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
+-   [User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
 
 ### Prerequisites
 
