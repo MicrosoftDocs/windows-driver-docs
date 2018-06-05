@@ -252,7 +252,7 @@ To use WinUSB as the device's function driver, you create a driver package. The 
 -   WinUSB co-installer (Winusbcoinstaller.dll)
 -   KMDF co-installer (WdfcoinstallerXXX.dll)
 -   An .inf file that installs Winusb.sys as the device's function driver. For more information, see [Writing an .Inf File for WinUSB Installation](#inf).
--   A signed catalog file for the package. This file is required to install WinUSB on x64 versions of Windows Vista.
+-   A signed catalog file for the package. This file is required to install WinUSB on x64 versions of Windows starting with Vista.
 
 ![winusb installation package](images/winusb-package.jpg)
 

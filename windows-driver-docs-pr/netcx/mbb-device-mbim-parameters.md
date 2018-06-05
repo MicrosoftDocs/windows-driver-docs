@@ -54,5 +54,4 @@ Call [**MBB_DEVICE_MBIM_PARAMETERS_INIT**](mbb-device-mbim-parameters-init.md) t
 |     |     |
 | --- | --- |
 | Minimum KMDF version | 1.27 |
-| Minimum NetAdapterCx version | 1.3 |
 | Header | Mbbcx.h |
