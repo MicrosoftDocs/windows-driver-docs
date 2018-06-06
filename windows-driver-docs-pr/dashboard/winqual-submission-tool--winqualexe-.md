@@ -21,7 +21,7 @@ In addition, the use of Winqual.exe is applicable only to WLK.
 
 1.  Sign in to the dashboard with your Microsoft account.
 
-2.  Click **Hardware logo**, click **Downloads**, and then click **Winqual Submission Tool (WST)**.
+2.  On the left navigation menu, click on **Drivers**, in **Get the essentials** section down below, click **Winqual Submission Tool (WST)**.
 
 3.  In the **File Download - Security Warning** dialog box, click **Run**.
 
