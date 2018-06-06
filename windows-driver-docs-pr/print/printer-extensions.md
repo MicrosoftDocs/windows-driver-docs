@@ -27,7 +27,7 @@ And if an enterprise chooses to block printer extensions altogether, this can be
 ## Building a printer extension
 
 
-The [Printer Extension Sample](http://go.microsoft.com/fwlink/p/?LinkId=617945) in the Windows sample gallery shows how to build a printer extension using C#. In order to allow code sharing between UWP device apps and printer extensions, this sample uses two projects: PrinterExtensionLibrary (a C) and ExtensionSample (a printer extension that is dependent on the PrinterExtensionLibrary).
+The [Printer Extension Sample](http://go.microsoft.com/fwlink/p/?LinkId=617945) on GitHub shows how to build a printer extension using C#. In order to allow code sharing between UWP device apps and printer extensions, this sample uses two projects: PrinterExtensionLibrary (a C) and ExtensionSample (a printer extension that is dependent on the PrinterExtensionLibrary).
 
 The code snippets shown in this topic are all taken from the PrinterExtensionSample solution. If you are building a printer extension in C, C++ or some other COM-based language, the concepts are similar but the APIs must instead match those specified in *PrinterExtension.IDL*, which is included in the Windows Driver Kit. The code comments in the PrinterExtensionLibrary from the sample document also include code comments that indicate the underlying COM interface that a particular object corresponds to.
 
@@ -54,7 +54,7 @@ There are specified GUIDs that support each of the different entry points for pr
 | Print Preferences     | {EC8F261F-267C-469F-B5D6-3933023C29CC} |
 | Printer Notifications | {23BB1328-63DE-4293-915B-A6A23D929ACB} |
 
- 
+�
 
 Printer extensions that are installed outside of the printer driver need to be registered using the registry. This ensures that printer extensions can be installed regardless of the status of the spooler, or the v4 configuration module on the client machine.
 
@@ -64,7 +64,7 @@ This registration is only necessary on first install. The following example show
 
 **Note**  **\[OfflineRoot\]** is used as shorthand for HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Print\\OfflinePrinterExtensions.
 
- 
+�
 
 ``` syntax
 [OfflineRoot]
@@ -94,14 +94,14 @@ For example, the following set of keys would register a printer extension with t
            AppPath=”C:\Program Files\Fabrikam\pe.exe”
            \{PrinterDriverID1Guid}
                  \{EC8F261F-267C-469F-B5D6-3933023C29CC}
-            (default) = “1” 
+            (default) = “1”
                  \{23BB1328-63DE-4293-915B-A6A23D929ACB}
-            (default) = “1” 
+            (default) = “1”
            \{PrinterDriverID1Guid}
                  \{EC8F261F-267C-469F-B5D6-3933023C29CC}
-            (default) = “1” 
+            (default) = “1”
                  \{23BB1328-63DE-4293-915B-A6A23D929ACB}
-            (default) = “1” 
+            (default) = “1”
 ```
 
 To uninstall the same printer extension, the following set of keys should be specified.
@@ -112,14 +112,14 @@ To uninstall the same printer extension, the following set of keys should be spe
            AppPath=”C:\Program Files\Fabrikam\pe.exe”
            \{PrinterDriverID1Guid}
                  \{EC8F261F-267C-469F-B5D6-3933023C29CC}
-            (default) = “0” 
+            (default) = “0”
                  \{23BB1328-63DE-4293-915B-A6A23D929ACB}
-            (default) = “0” 
+            (default) = “0”
            \{PrinterDriverID1Guid}
                  \{EC8F261F-267C-469F-B5D6-3933023C29CC}
-            (default) = “0” 
+            (default) = “0”
                  \{23BB1328-63DE-4293-915B-A6A23D929ACB}
-            (default) = “0” 
+            (default) = “0”
 ```
 
 Since printer extensions can run in both a user-launched context and an event-launched context, it is useful to be able to determine the context in which your printer extension is operating. This can allow an app to, for example, not enumerate the status on all queues if it has been launched for a notification or print preferences. Microsoft recommends that printer extensions which are installed separately from the driver (e.g. with an MSI or setup.exe) should use command line switches either on the Start menu shortcuts, or the in the AppPath entry that was populated in the registry during registration. Since printer extensions that are installed with the driver are installed to the DriverStore, these will not be launched outside the print preferences or printer notifications events. Therefore specifying command line switches is unsupported in this case.
@@ -225,7 +225,7 @@ If the process for the printer extension has closed and not called the Complete 
 In order to retrieve device status information, printer extensions can use Bidi to query the print device. For example, to show ink status or other kinds of status about the device, printer extensions can use the IPrinterExtensionEventArgs.PrinterQueue.SendBidiQuery method to issue Bidi queries to the device. Getting the latest Bidi status is a two-step process involving setting up an event handler for the OnBidiResponseReceived event, and calling the SendBidiQuery method with a valid Bidi query. The following code snippet shows this two-step process.
 
 ```CSharp
-PrinterQueue.OnBidiResponseReceived += new 
+PrinterQueue.OnBidiResponseReceived += new
 EventHandler<PrinterQueueEventArgs>(OnBidiResponseReceived);
 PrinterQueue.SendBidiQuery("\\Printer.consumables");
 ```
@@ -276,7 +276,7 @@ Once the queues are enumerated, the event handler is called and status operation
 static void mgr_OnPrinterQueuesEnumerated(object sender, PrinterQueuesEnumeratedEventArgs e)
 {
     foreach (IPrinterExtensionContext pContext in e)
-    {    
+    {
         // show status
     }
 }
@@ -315,15 +315,15 @@ Printer extensions are always executed out of process from the process invoked t
 The Printer Extension Sample demonstrates how to create a UI that is generally launched as the topmost window. But in some cases, the UI will not be shown in the foreground, such as when the process that caused the UI to be invoked is running at a different integrity level, or when the process is compiled for a different processor architecture. In this case, the printer extension should call FlashWindowEx to request user permission to come to the foreground by flashing the icon in the taskbar.
 
 ## Related topics
-[Bidi Request and Response Schemas](http://msdn.microsoft.com/library/windows/desktop/dd183368.aspx)  
-[Data Binding Overview](http://msdn.microsoft.com/library/ms752347.aspx)  
-[How to send raw data to a printer by using Visual Basic .NET](http://support.microsoft.com/?kbid=322090)  
-[How to send raw data to a printer by using Visual C# .NET](http://support.microsoft.com/?kbid=322091)  
-[Improving Launch Performance for Your Desktop Applications](http://blogs.msdn.com/b/dotnet/archive/2012/03/20/improving-launch-performance-for-your-desktop-applications.aspx)  
-[Native Image Generator](http://msdn.microsoft.com/library/6t9t5wcf.aspx)  
-[Print Schema Interfaces](https://msdn.microsoft.com/library/windows/hardware/hh464019)  
-[Printer Extension Sample](http://go.microsoft.com/fwlink/p/?LinkId=617945)  
-[Windows Performance Analysis Tools](http://msdn.microsoft.com/performance/cc825801.aspx)  
+[Bidi Request and Response Schemas](http://msdn.microsoft.com/library/windows/desktop/dd183368.aspx)
+[Data Binding Overview](http://msdn.microsoft.com/library/ms752347.aspx)
+[How to send raw data to a printer by using Visual Basic .NET](http://support.microsoft.com/?kbid=322090)
+[How to send raw data to a printer by using Visual C# .NET](http://support.microsoft.com/?kbid=322091)
+[Improving Launch Performance for Your Desktop Applications](http://blogs.msdn.com/b/dotnet/archive/2012/03/20/improving-launch-performance-for-your-desktop-applications.aspx)
+[Native Image Generator](http://msdn.microsoft.com/library/6t9t5wcf.aspx)
+[Print Schema Interfaces](https://msdn.microsoft.com/library/windows/hardware/hh464019)
+[Printer Extension Sample](http://go.microsoft.com/fwlink/p/?LinkId=617945)
+[Windows Performance Analysis Tools](http://msdn.microsoft.com/performance/cc825801.aspx)
 
 
 
