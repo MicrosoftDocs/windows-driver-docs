@@ -13,7 +13,7 @@ ms.technology: windows-devices
 
 To prepare your hardware for certification, you must create and submit a **WQReady.xml** file. Submitting this file allows the dashboard to test your device and return a report on its performance. The report includes a detailed list of how the device compares to Windows standards.
 
-**To create your file**
+# Creating a WQReady.xml file
 
 1.  Download the [Windows Logo Kit (WLK)](http://go.microsoft.com/fwlink/p/?LinkId=219237). Be sure to test your driver or drivers with the appropriate certification kit on each operating system that you want certification for.
 
@@ -38,7 +38,7 @@ To prepare your hardware for certification, you must create and submit a **WQRea
 
      
 
-**To submit your file**
+## Submitting your file
 
 1.  Sign in to the Hardware Dev Center dashboard with your Microsoft account, and then click **Hardware compatibility**.
 
