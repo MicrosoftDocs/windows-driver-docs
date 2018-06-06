@@ -325,7 +325,7 @@ Windows supports docks and convertibles (clamshell/tablet combos) by the use of 
 
 -   GPIO ActiveBoth interrupts must be connected to an on-SoC GPIO controller (not to an SPB-connected GPIO controller).
 -   The GPIO controller must support level-mode interrupts and dynamic polarity reprogramming.
--   The GPIO controller driver must use ActiveBoth emulation provided by the [GPIO framework extension](https://docs.microsoft.com/en-us/windows-hardware/drivers/gpio/gpioclx-i-o-and-interrupt-interfaces) (**GpioClx**).
+-   The GPIO controller driver must use ActiveBoth emulation provided by the [GPIO framework extension](https://docs.microsoft.com/windows-hardware/drivers/gpio/gpioclx-i-o-and-interrupt-interfaces) (**GpioClx**).
 -   If the asserted state ("Docked" or "Converted") is not asserted logic level low, the GPIO controller \_DSM method is required to override the GPIO driver stack's default behavior. For more information, see the **GPIO controller devices** section in the [General-purpose I/O (GPIO)](general-purpose-i-o--gpio-.md) topic.
 
 For more information, see [Hardware buttons for Windows 8 tablet and convertible devices](http://go.microsoft.com/fwlink/p/?linkid=331284).
