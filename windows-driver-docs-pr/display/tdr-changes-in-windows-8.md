@@ -35,7 +35,7 @@ Starting with Windows 8, GPU timeout detection and recovery (TDR) behavior has 
 <td align="left">Mandatory</td>
 </tr>
 <tr class="even">
-<td align="left">[WHCK]( http://go.microsoft.com/fwlink/p/?linkid=258342) requirements and tests</td>
+<td align="left">[WHCK](http://go.microsoft.com/fwlink/p/?linkid=258342) requirements and tests</td>
 <td align="left"><p><strong>Device.Graphics…TDRResiliency</strong></p></td>
 </tr>
 </tbody>
@@ -148,7 +148,7 @@ Even if a driver has opted into the Windows 8 TDR behavior, there will be cases
 ## <span id="Hardware_certification_requirements"></span><span id="hardware_certification_requirements"></span><span id="HARDWARE_CERTIFICATION_REQUIREMENTS"></span>Hardware certification requirements
 
 
-For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation]( http://go.microsoft.com/fwlink/p/?linkid=258342) on **Device.Graphics…TDRResiliency**.
+For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](http://go.microsoft.com/fwlink/p/?linkid=258342) on **Device.Graphics…TDRResiliency**.
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 

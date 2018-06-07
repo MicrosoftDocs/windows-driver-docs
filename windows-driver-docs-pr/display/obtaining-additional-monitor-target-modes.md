@@ -50,7 +50,7 @@ For CRT monitors, DMM adds as an additional target mode the 640 x 480 x 60Hz sta
 
 ### <span id="dtv_and_hdtv_monitors"></span><span id="DTV_AND_HDTV_MONITORS"></span>**DTV and HDTV Monitors**
 
-For Digital Television (DTV) and High-Definition Television (HDTV) monitors, DMM adds as additional target modes all the standard DTV modes that are required by the [WHCK]( http://go.microsoft.com/fwlink/p/?linkid=258342) Automated Test GRAPHICS-0043, as shown in the following tables. A display miniport driver should prune all modes that are not supported by the display hardware.
+For Digital Television (DTV) and High-Definition Television (HDTV) monitors, DMM adds as additional target modes all the standard DTV modes that are required by the [WHCK](http://go.microsoft.com/fwlink/p/?linkid=258342) Automated Test GRAPHICS-0043, as shown in the following tables. A display miniport driver should prune all modes that are not supported by the display hardware.
 
 **59.95Hz DTV System:**
 
@@ -154,7 +154,7 @@ For Digital Television (DTV) and High-Definition Television (HDTV) monitors, DMM
 
  
 
-Miniport drivers written for Windows Vista should continue to conform with the [WHCK]( http://go.microsoft.com/fwlink/p/?linkid=258342) Automated Test GRAPHICS-0043 and add the additional DTV modes specified in these tables. Drivers written for Windows 7 only have to support the new **pfnGetAdditionalMonitorModeSet** and **pfnReleaseAdditionalMonitorModeSet** functions.
+Miniport drivers written for Windows Vista should continue to conform with the [WHCK](http://go.microsoft.com/fwlink/p/?linkid=258342) Automated Test GRAPHICS-0043 and add the additional DTV modes specified in these tables. Drivers written for Windows 7 only have to support the new **pfnGetAdditionalMonitorModeSet** and **pfnReleaseAdditionalMonitorModeSet** functions.
 
  
 

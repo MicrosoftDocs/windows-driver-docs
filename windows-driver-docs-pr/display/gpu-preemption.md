@@ -33,7 +33,7 @@ A new GPU preemption model is available starting with Windows 8. In this model 
 <td align="left">Mandatory</td>
 </tr>
 <tr class="even">
-<td align="left">[WHCK]( http://go.microsoft.com/fwlink/p/?linkid=258342) requirements and tests</td>
+<td align="left">[WHCK](http://go.microsoft.com/fwlink/p/?linkid=258342) requirements and tests</td>
 <td align="left"><p><strong>Device.Graphics…Preemption Test</strong></p>
 <p><strong>Device.Graphics…FlipOnVSyncMmIo</strong></p></td>
 </tr>
@@ -97,7 +97,7 @@ Create a robust driver that supports the Windows 8 GPU preemption model and pro
 ## <span id="Hardware_certification_requirements"></span><span id="hardware_certification_requirements"></span><span id="HARDWARE_CERTIFICATION_REQUIREMENTS"></span>Hardware certification requirements
 
 
-For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation]( http://go.microsoft.com/fwlink/p/?linkid=258342) on **Device.Graphics…Preemption Test** and **Device.Graphics…FlipOnVSyncMmIo**.
+For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](http://go.microsoft.com/fwlink/p/?linkid=258342) on **Device.Graphics…Preemption Test** and **Device.Graphics…FlipOnVSyncMmIo**.
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 
