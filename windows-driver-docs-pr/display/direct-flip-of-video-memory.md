@@ -39,7 +39,7 @@ The direct flip feature allows for special optimizations to the composition mode
 <td align="left">Mandatory</td>
 </tr>
 <tr class="even">
-<td align="left">[WHCK]( http://go.microsoft.com/fwlink/p/?linkid=258342) requirements and tests</td>
+<td align="left">[WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests</td>
 <td align="left"><p><strong>Device.Graphicsâ€¦DirectFlip</strong></p></td>
 </tr>
 </tbody>
@@ -72,7 +72,7 @@ These functions and structures are new or updated for Windows 8:
 ## <span id="Hardware_certification_requirements"></span><span id="hardware_certification_requirements"></span><span id="HARDWARE_CERTIFICATION_REQUIREMENTS"></span>Hardware certification requirements
 
 
-For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation]( http://go.microsoft.com/fwlink/p/?linkid=258342) on **Device.Graphicsâ€¦DirectFlip**.
+For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphicsâ€¦DirectFlip**.
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 

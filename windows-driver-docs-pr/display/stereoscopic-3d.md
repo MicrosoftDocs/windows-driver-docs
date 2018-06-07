@@ -33,7 +33,7 @@ Windows 8 provides a consistent API and device driver interface (DDI) platform 
 <td align="left">Optional</td>
 </tr>
 <tr class="even">
-<td align="left">[WHCK]( http://go.microsoft.com/fwlink/p/?linkid=258342) requirements and tests</td>
+<td align="left">[WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests</td>
 <td align="left"><p><strong>Device.Graphicsâ€¦ProcessingStereoscopicVideoContent</strong></p>
 <p><strong>Device.Display.Monitor.Stereoscopic3DModes</strong></p></td>
 </tr>
@@ -96,7 +96,7 @@ Stereo 3-D functionality can be enabled only on Microsoft DirectX 10â€“capa
 
 Although stereoscopic 3-D is an optional WDDM 1.2 feature, Direct3D 11 API support is required on all Windows 8 hardware. Therefore, WDDM 1.2 drivers (Full Graphics and Render devices) must support Direct3D 11 APIs by adding support for cross-process sharing of texture arrays. This requirement is to ensure that stereo apps don't have failures in mono modes.
 
-For more info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation]( http://go.microsoft.com/fwlink/p/?linkid=258342) on **Device.Graphicsâ€¦Processing Stereoscopic Video Content** and **Device.Display.Monitor.Stereoscopic 3D Modes**.
+For more info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphicsâ€¦Processing Stereoscopic Video Content** and **Device.Display.Monitor.Stereoscopic 3D Modes**.
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 
