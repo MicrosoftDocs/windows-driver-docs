@@ -69,6 +69,16 @@ Similarly, when creating a receive (Rx) queue, the client must provide pointers 
 
 See each of these pages for details on what the client needs to do in each event callback function.
 
+For a given packet queue, the OS guarantees  
+
 ## Polling model
 
-The NetAdapter data path is a polling model. This polling model is implemented by calling the client driver's queue advance callbacks. For code examples, see [*EVT_TXQUEUE_ADVANCE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nettxqueue/nc-nettxqueue-evt_txqueue_advance) and [*EVT_RXQUEUE_ADVANCE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrxqueue/nc-netrxqueue-evt_rxqueue_advance).
+![Polling Flow](images/polling.png)
+
+The NetAdapter data path is a polling model, and the polling operation on one packet queue is completely  This polling model is implemented by calling the client driver's queue advance callbacks. For code examples, see [*EVT_TXQUEUE_ADVANCE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nettxqueue/nc-nettxqueue-evt_txqueue_advance) and [*EVT_RXQUEUE_ADVANCE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrxqueue/nc-netrxqueue-evt_rxqueue_advance).
+
+The sequence of polling operation is as following:
+
+1. The OS gives buffers to the client driver 
+2. The client driver pro
+3. The client driver returns 
