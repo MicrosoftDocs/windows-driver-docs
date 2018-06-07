@@ -16,16 +16,39 @@ This topic describes driver installation errors and warnings that can appear as 
 
 Starting in Visual Studio 2015 with WDK 10, when you build your driver, the following INF file errors can appear in the Error List pane. If you are running InfVerif.exe from the command line, the tool displays these errors at the command prompt, or in the HTML version of the results.
 
--   [Ignored lines in the INF file (1200-1299)](#err-12xx)
--   [Universal INF errors (1300-1309)](#err-130x)
+## Error Guidance
+InfVerif follows a general rule that the lower the error number, the more severe the issue.  Depending on the context in which InfVerif is invoked, errors codes may vary between a warning and an error.
+
+### Handling Errors
+Errors are considered critical and must be addressed.  A particular error code will be an error in the following conditions:
+-   The INF parser was unable to successfully interpret your INF
+-   The INF parser was able to interpret the INF if some default-value assumption was made (abiguous syntax)
+-   The arguments to InfVerif indicate some ruleset was applied to the INF (such as Universal)
+
+Warnings are not required to be fixed.  Typically an error code will be a warning in the following conditions:
+-   Syntax that may be incorrect, but has valid scenarios where it is appropriate
+-   Syntax that is valid for the given InfVerif parameters, but is an error in other modes, such as Universal
+
+Warnings may be ignored if the developer fully understands the message being reported.  For example, sections that are unreferenced by the INF parser will be receive error 2083, however this section may be in place to enable some external piece of code to open the INF and parse this section.  In such a case, the 2083 may be ignored.  If a given warning is not properly understood, it is likely indicative of some other INF parsing error.
+
+-   Universal errors are reported as errors if:
+    -   In Visual Studio, you build your driver with target platform set to **Universal** or **Mobile**.
+    -   You run InfVerif.exe from the command line and specify the /u flag.
+-   Universal errors are reported as warnings if:
+    -   In Visual Studio, you build your driver with target platform set to **Desktop**.
+    -   You run InfVerif.exe from the command line and do not specify the /u flag.
+
+## Error Codes
+
+-   [Validations Errors (1100-1299)](#err-11xx)
+-   [Universal INF errors (1300-1319)](#err-130x)
 -   [Installation warnings (2000-2999)](#warning-2xxx)
 
-## Syntax errors in the INF file (1200-1299)<a name="err-12xx"></a>
+Not all error codes are listed below, as many have self-evident meanings. Errors in the 1000-1099 range are considered self-evident, as they are basic syntax errors.
 
+## Syntax errors in the INF file (1100-1299)<a name="err-11xx"></a>
 
-When you install a driver, Windows skips lines in the INF file that contain errors, but does not fail driver installation due to errors in this range. If the driver installs successfully, you might not notice that some lines were skipped.
-
-Errors in the 1200-1299 range correspond to lines in the INF file that would be ignored at driver installation. As such, they do not prevent the installation of your driver. But because they are skipped, your INF file may not be doing all the things that you expected.
+When you install a driver, Windows skips lines in the INF file that contain errors, if a default value will enable to the INF to parse successfully. Windows does not fail driver installation due to errors in this range, but errors in this range indicate that the behavior may change depending on OS version or SKU. In cases where the driver installs successfully, these errors indicate that there *are* circumstances where the driver may not install properly.
 
 <table>
 <colgroup>
@@ -39,6 +62,27 @@ Errors in the 1200-1299 range correspond to lines in the INF file that would be 
 </tr>
 </thead>
 <tbody>
+<tr class="even">
+<td align="left"><p><span id="_1100__DrvStore_CopyFile"></span><span id="_1100__drvstore_copyfile"></span><span id="_1100__DRVSTORE_COPYFILE"></span> <strong>1100: DriverStore Copyfile name mismatch</strong></p></td>
+<td align="left">
+<p>This error occurs when a file is copied or renamed from its original driver store name and location, to a different name and location in the driver store.  For example:</p>
+<div class="code">
+<pre>
+
+[SourceDisksFiles]
+DriverFile.sys=1,x64  
+
+[DestinationDirs]
+CopyFileSection=13,SubDirectory  
+  
+[CopyFileSection]
+DriverFile.sys
+</pre>
+</div>
+<p>The driver store maintains the original driver package directory structure.  In the above, the original location of DriverFile.sys is <INF location>\x64, but the CopyFiles places it in <INF location>\SubDirectory.  The same error would be shown if the file was renamed as part of the copy.</p>
+</td>
+</tr>
+    
 <tr class="odd">
 <td align="left"><p><span id="_1203__Section_not_found"></span><span id="_1203__section_not_found"></span><span id="_1203__SECTION_NOT_FOUND"></span> <strong>1203: Section not found</strong></p></td>
 <td align="left"><p>For example, the following INF syntax causes error 1203:</p>
@@ -69,7 +113,14 @@ Provider="Microsoft"
 </pre>
 </div></td>
 </tr>
+
 <tr class="odd">
+<td align="left"><p><span id="1212__invalid_section"></span><span id="1212_INVALID_SECTION"></span><strong>1212: Cannot have both [DefaultInstall] and [Manufacturer]</strong></p></td>
+<td align="left"><p>A single INF cannot contain both [DefaultInstall] and [Manufacturer].  This was previously allowed because PNP would not process [DefaultInstall], so the section was ignored.  PNP will handle [DefaultInstall] in the future, and as a consequence, the intended behavior is ambiguous.  INFs authored with both should remove one of the two sections.</p>
+</td>
+</tr>
+
+<tr class="even">
 <td align="left"><p><span id="1220__Cannot_directly_reference_a_section_defined_in_an_included_INF"></span><span id="1220__cannot_directly_reference_a_section_defined_in_an_included_inf"></span><span id="1220__CANNOT_DIRECTLY_REFERENCE_A_SECTION_DEFINED_IN_AN_INCLUDED_INF"></span><strong>1220: Cannot directly reference a section defined in an included INF</strong></p></td>
 <td align="left"><p>If your INF file references a [DDInstall](https://msdn.microsoft.com/library/windows/hardware/ff547344) section in an included INF, you must use the <strong>Needs</strong> directive. Any other directive that references a section from an included INF causes error 1220.</p>
 <p>In this example, the install section of A.INF references an equivalent install section in B.INF.</p>
@@ -102,12 +153,13 @@ AddReg = AddRegB
 </div>
 <p>The <strong>Needs</strong> directive must reference an equivalent install section to process in the current install section. For example, a Needs directive in [InstallSectionA.Services] should point to the .Services of another install section. The <strong>Needs</strong> directive may also be used to include the behavior of another DDInstall section of the same INF. Using the <strong>Needs</strong> directive on other types of sections may result in undesired behavior.</p></td>
 </tr>
-<tr class="even">
+
+<tr class="odd">
 <td align="left"><p><span id="1221__Cannot_modify_services_regkey__must_use_HKR"></span><span id="1221__cannot_modify_services_regkey__must_use_hkr"></span><span id="1221__CANNOT_MODIFY_SERVICES_REGKEY__MUST_USE_HKR"></span><strong>1221: Cannot modify services regkey, must use HKR</strong></p></td>
 <td align="left"><p>This error indicates that the INF file references a location in the services registry key, for example <strong>HKLM\SYSTEM\CurrentControlSet\Services\\<em>Service Name</em></strong>. When accessing the services key, you should instead use the relative root (<strong>HKR</strong>) to associate the registry value with the device or driver instance.</p>
 <p>When you use <strong>HKR</strong>, the registry value will not be present until the device is installed.</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p><span id="1230__missing_file_under_sourcedisksfiles_section_"></span><span id="1230__missing_file_under_sourcedisksfiles_section_"></span><span id="1230__MISSING_FILE_UNDER_SOURCEDISKSFILES_SECTION_"></span><strong>1230: Missing file 'xxxx' under [SourceDisksFiles] section.</strong></p></td>
 <td align="left"><p>This indicates that a file was specified as part of the driver package, but the source location of the file relative to the INF was not specified in a [SourceDisksFiles] section.</p>
 <div class="code">
@@ -118,7 +170,8 @@ filename=disk id
 </div>
 <p>Note that this error frequently occurs if architecture-decorated versions of [SourceDisksFiles] are specified (such as [SourceDisksFiles.amd64], but not all architectures supported by the INF have a [SourceDisksFiles] section.</p></td>
 </tr>
-<tr class="even">
+
+<tr class="odd">
 <td align="left"><p><span id="1233__Missing_directive_required_for_signature"></span><span id="1233__missing_directive_required_for_signature"></span><span id="1233__MISSING_DIRECTIVE_REQUIRED_FOR_SIGNATURE"></span><strong>1233: Missing directive required for signature</strong></p></td>
 <td align="left"><p>In the [Version] section, you must specify a CatalogFile directive (and associated catalog file) to receive a signature on a driver package.</p>
 <div class="code">
@@ -127,7 +180,8 @@ CatalogFile=wudf.cat
 </pre>
 </div></td>
 </tr>
-<tr class="odd">
+
+<tr class="even">
 <td align="left"><p><span id="1235__String_token_not_defined_in__Strings_"></span><span id="1235__string_token_not_defined_in__strings_"></span><span id="1235__STRING_TOKEN_NOT_DEFINED_IN__STRINGS_"></span><strong>1235: String token not defined in [Strings]</strong></p></td>
 <td align="left"><p>A specified string token has no definition in the [Strings] section. For example, the INF file specifies <em>%REG_DWORD%</em> in an <em>add-registry section</em> specified by an [<strong>AddReg</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546320) directive, but there is no corresponding REG_DWORD = 0x00010001 in the [[Strings]](https://msdn.microsoft.com/library/windows/hardware/ff547485) section.</p>
 <p>This error frequently occurs if your INF file specifies a registry value that contains an environment variable. For example:</p>
@@ -145,12 +199,18 @@ HKR,,DllPath,%%SystemRoot%%\System32\myDll.sys
 </pre>
 </div></td>
 </tr>
+
+<tr class="odd">
+<td align="left"><p><span id="1285__invalid_classinstall32_"></span><span id="1285__INVALID_CLASSINSTALL32_"></span><strong>1285: Cannot specify [ClassInstall32] section for Microsoft-defined class.</strong></p></td>
+<td align="left"><p>As of Win10, third-party INFs are not allowed to use a [ClassInstall32] in an INF of any inbox class.</p>
+</td>
+</tr>
 </tbody>
 </table>
 
 
 
-## Universal INF errors (1300-1309) <a name="err-130x"></a>
+## Universal INF errors (1300-1319) <a name="err-130x"></a>
 
 
 **Important**
@@ -205,19 +265,18 @@ AddReg = HKR,,CoInstallers32,0x00010000,"MyCoinstaller.dll"
 <td align="left"><p><span id="1307__Found_legacy_operation_with_non-system_target_path_"></span><span id="1307__found_legacy_operation_with_non-system_target_path_"></span><span id="1307__FOUND_LEGACY_OPERATION_WITH_NON-SYSTEM_TARGET_PATH_"></span><strong>1307: Found legacy operation with non-system target path</strong></p></td>
 <td align="left"><p>Error 1307 indicates that a file copy specifies a target that is not under %SystemRoot%.</p></td>
 </tr>
+    
+<tr class="even">
+<td align="left"><p><span id="1310_needs_extension_"></span><span id="1310_NEEDS_EXTENSION_"></span><strong>1310-1312: Incorrect section extension for a Needs directive</strong></p></td>
+<td align="left"><p>Needs directives effectively do a copy/paste of the needed section into the referencing section.  As a baseline validation, the extension of the section is matched up.  This means that a [DDInstall.Services] can only use the Needs directive on other [DDInstall.Services] sections.</p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><span id="1313_missing_includes_"></span><span id="1313_MISSING_INCLUDES_"></span><strong>1313-1314: Missing includes directive</strong></p></td>
+<td align="left"><p>In each section that uses a Needs directive, there must be a corresponding Includes directive to reference the INF that contains the target section.  Previously the Needs directive would be valid if the Include directive was in another INF section.</p></td>
+</tr>
 </tbody>
 </table>
-
-
-
-Whether these issues appear as errors or warnings depends on the following:
-
--   Issues with configurability are reported as errors if:
-    -   In Visual Studio, you build your driver with target platform set to **Universal** or **Mobile**.
-    -   You run InfVerif.exe from the command line and specify the /c flag.
--   Issues with configurability are reported as warnings if:
-    -   In Visual Studio, you build your driver with target platform set to **Desktop**.
-    -   You run InfVerif.exe from the command line and do not specify the /c flag.
 
 ## Installation warnings (2000-2999) <a name="warning-2xxx"></a>
 
