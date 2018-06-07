@@ -11,7 +11,7 @@ ms.technology: windows-devices
 
 # Porting NDIS 6.x drivers to NDIS 6.81
 
-NDIS 6.81 is substantially the same as NDIS 6.80. For detailed information about new features for NDIS 6.81, including implementation and compilation details specific to this version of NDIS, see [Introduction to NDIS 6.81](introduction-to-ndis-6-60.md).
+NDIS 6.81 is substantially the same as NDIS 6.80. For detailed information about new features for NDIS 6.81, including implementation and compilation details specific to this version of NDIS, see [Introduction to NDIS 6.81](introduction-to-ndis-6-81.md).
 
 If you are porting an NDIS 6.x driver to NDIS 6.81, you should be familiar with the changes to each version between your driver's version and 6.81. For more information about previous NDIS 6.x versions, see the following topics:
 
