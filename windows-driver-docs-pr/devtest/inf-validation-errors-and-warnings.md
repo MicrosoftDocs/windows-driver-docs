@@ -20,12 +20,12 @@ Starting in Visual Studio 2015 with WDK 10, when you build your driver, the foll
 InfVerif follows a general rule that the lower the error number, the more severe the issue.  Depending on the context in which InfVerif is invoked, errors codes may vary between a warning and an error.
 
 ### Handling Errors
-Errors are considered critical and must be addressed.  A particular error code will be an error in the following conditions:
+Errors are considered critical and must be addressed.  Errors are related to the following conditions:
 -   The INF parser was unable to successfully interpret your INF
--   The INF parser was able to interpret the INF if some default-value assumption was made (abiguous syntax)
--   The arguments to InfVerif indicate some ruleset was applied to the INF (such as Universal)
+-   The INF parser was able to interpret the INF if some default-value assumption was made (ambiguous syntax)
+-   The arguments to InfVerif indicate some rule set was applied to the INF (such as Universal)
 
-Warnings are not required to be fixed.  Typically an error code will be a warning in the following conditions:
+Warnings are not required to be fixed, and typically relate to the following conditions:
 -   Syntax that may be incorrect, but has valid scenarios where it is appropriate
 -   Syntax that is valid for the given InfVerif parameters, but is an error in other modes, such as Universal
 
@@ -48,7 +48,7 @@ Not all error codes are listed below, as many have self-evident meanings. Errors
 
 ## Syntax errors in the INF file (1100-1299)<a name="err-11xx"></a>
 
-When you install a driver, Windows skips lines in the INF file that contain errors, if a default value will enable to the INF to parse successfully. Windows does not fail driver installation due to errors in this range, but errors in this range indicate that the behavior may change depending on OS version or SKU. In cases where the driver installs successfully, these errors indicate that there *are* circumstances where the driver may not install properly.
+When you install a driver, Windows skips INF lines with errors if a default value enables success. Windows does not fail driver installation due to errors in this range, but errors in this range indicate that the behavior may change depending on OS version or SKU. In cases where the driver installs successfully, these errors indicate that there *are* circumstances where the driver may not install properly.
 
 <table>
 <colgroup>
@@ -65,7 +65,7 @@ When you install a driver, Windows skips lines in the INF file that contain erro
 <tr class="even">
 <td align="left"><p><span id="_1100__DrvStore_CopyFile"></span><span id="_1100__drvstore_copyfile"></span><span id="_1100__DRVSTORE_COPYFILE"></span> <strong>1100: DriverStore Copyfile name mismatch</strong></p></td>
 <td align="left">
-<p>This error occurs when a file is copied or renamed from its original driver store name and location, to a different name and location in the driver store.  For example:</p>
+<p>This error occurs when a file is copied or renamed from its original driver store name and location to a different name and location in the driver store.  For example:</p>
 <div class="code">
 <pre>
 
@@ -79,7 +79,7 @@ CopyFileSection=13,SubDirectory
 DriverFile.sys
 </pre>
 </div>
-<p>The driver store maintains the original driver package directory structure.  In the above, the original location of DriverFile.sys is <INF location>\x64, but the CopyFiles places it in <INF location>\SubDirectory.  The same error would be shown if the file was renamed as part of the copy.</p>
+<p>The driver store maintains the original driver package directory structure.  In the above, the original location of DriverFile.sys is <INF location>\x64, but CopyFiles places it in <INF location>\SubDirectory.  The same error would be shown if the file was renamed as part of the copy.</p>
 </td>
 </tr>
     
@@ -116,7 +116,7 @@ Provider="Microsoft"
 
 <tr class="odd">
 <td align="left"><p><span id="1212__invalid_section"></span><span id="1212_INVALID_SECTION"></span><strong>1212: Cannot have both [DefaultInstall] and [Manufacturer]</strong></p></td>
-<td align="left"><p>A single INF cannot contain both [DefaultInstall] and [Manufacturer].  This was previously allowed because PNP would not process [DefaultInstall], so the section was ignored.  PNP will handle [DefaultInstall] in the future, and as a consequence, the intended behavior is ambiguous.  INFs authored with both should remove one of the two sections.</p>
+<td align="left"><p>A single INF cannot contain both [DefaultInstall] and [Manufacturer].  This was previously allowed because PnP would not process [DefaultInstall], so the section was ignored.  PNP will handle [DefaultInstall] in the future, and as a consequence, the intended behavior is ambiguous.  INFs authored with both should remove one of the two sections.</p>
 </td>
 </tr>
 
