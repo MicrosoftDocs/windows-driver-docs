@@ -1,6 +1,41 @@
 {
   "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/dashboard/driver-distribution.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/manage-driver-distribution-in-windows-8-1-and-earlier.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/add-or-remove-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/manage-your-hardware-submissions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/usage-and-management-of-organization-vendor-ids.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/driver-signing-guidelines-for-isvs.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/windows-update-and-driver-distribution-support.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/windows-update-hardware-related-software-content-policy.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows-driver-docs-pr/devtest/boot-options-in-windows-vista-and-later.md",
       "redirect_URL": "/windows-hardware/drivers/devtest/boot-options-in-windows",
       "redirect_document_id": true
