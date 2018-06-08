@@ -16,7 +16,7 @@ This topic describes software requirements to support Microsoft Direct3D in Wind
 
 For Windows 8, independent hardware vendors must write a Windows Display Driver Model (WDDM) 1.2 driver that can support the relevant Direct3D feature level user-mode driver (UMD) device driver interfaces (DDIs).
 
-For example, Microsoft Direct3D 9â€“capable hardware must, at minimum, support the Direct3D version 9 DDI. These software requirements vary based on the Microsoft DirectX hardware level as specified in this table:
+For example, Microsoft Direct3D 9-capable hardware must, at minimum, support the Direct3D version 9 DDI. These software requirements vary based on the Microsoft DirectX hardware level as specified in this table:
 
 **DirectX software requirements**
 
