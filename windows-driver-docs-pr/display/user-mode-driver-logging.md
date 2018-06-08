@@ -19,7 +19,7 @@ To get a more actionable breakdown of video memory, the Windows Display Driver M
 | Minimum WDDM version                                                              | 1.2                              |
 | Minimum Windows version                                                           | 8                                |
 | Driver implementation—Full graphics and Render only                               | Mandatory                        |
-| [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests | **Device.Graphicsâ€¦UMDLogging** |
+| [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests | **Device.Graphics¦UMDLogging** |
 
  
 
@@ -48,7 +48,7 @@ Also see the Umdetw.h header.
 ## <span id="Hardware_certification_requirements"></span><span id="hardware_certification_requirements"></span><span id="HARDWARE_CERTIFICATION_REQUIREMENTS"></span>Hardware certification requirements
 
 
-For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphicsâ€¦UMDLogging**.
+For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphics ¦ UMDLogging**.
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 

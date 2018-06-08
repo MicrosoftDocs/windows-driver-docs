@@ -24,7 +24,7 @@ The virtual address translation for the case of two page table levels is shown i
 
 The GPU virtual address has [**DXGK\_GPUMMUCAPS**](https://msdn.microsoft.com/library/windows/hardware/dn906348)::**VirtualAddressBitCount** bits.
 
-The low bits \[0 â€“ 11\] represent an offset in bytes in a page. The next [**DXGK\_PAGE\_TABLE\_LEVEL\_DESC**](https://msdn.microsoft.com/library/windows/hardware/dn906832)::**PageTableIndexBitCount** bits represent the index of a page table entry in a leaf level page table.
+The low bits \[0 - 11\] represent an offset in bytes in a page. The next [**DXGK\_PAGE\_TABLE\_LEVEL\_DESC**](https://msdn.microsoft.com/library/windows/hardware/dn906832)::**PageTableIndexBitCount** bits represent the index of a page table entry in a leaf level page table.
 
 The number of entries in a page table is 2<sup>DXGK\_PAGE\_TABLE\_LEVEL\_DESC::PageTableIndexBitCount</sup> and the page table size is [**DXGK\_PAGE\_TABLE\_LEVEL\_DESC**](https://msdn.microsoft.com/library/windows/hardware/dn906832)::**PageTableSizeInBytes** bytes.
 

@@ -62,31 +62,35 @@ For any given architecture, a typical INF is decorated to install on any SKU in 
 
 [Models.NTamd64]
 <models entries>
+```
 
-In order to restrict this INF to install on client only, you need to add a ProductType of â€œ1â€ to the decoration. The number may be expressed as decimal or hexadecimalâ€¦ the documentation shows hexadecimal, but I will use decimal in the example for simplicity.
+In order to restrict this INF to install on client only, you need to add a ProductType of "1" to the decoration. The number may be expressed as decimal or hexadecimal. The documentation shows hexadecimal, but I will use decimal in the example for simplicity.
 
+``` syntax
 [Manufacturer]
 %MSFT%=Models,amd64...1
 
 ; models section for workstation
 [Models.NTamd64...1]
 <models entries>
+```
 
-For server, the syntax breaks it down to install on a client and a plain server. Each of these has its own product typeâ€¦ unfortunately the INF syntax needs you to specify both to cover both cases. Thus you need to duplicate the entire models section to really cover the server SKU:
+For server, the syntax breaks it down to install on a client and a plain server. Each of these has its own product type. Unfortunately the INF syntax needs you to specify both to cover both cases. Thus you need to duplicate the entire models section to really cover the server SKU:
 
+``` syntax
 [Manufacturer]
 %MSFT%=Models,amd64...1amd64...3
 
 ; models section for client
 [Models.NTamd64...1]
-IHV_DeviceName.XXX = â€œFoo Generic Device Name (Microsoft Corporation â€“ WDDM v1.2)â€
-IHV_DeviceName.YYY = â€œFoo Enthusiast Device Name (Microsoft Corporation â€“ WDDM v1.2)â€
+IHV_DeviceName.XXX = "Foo Generic Device Name (Microsoft Corporation - WDDM v1.2)"
+IHV_DeviceName.YYY = "Foo Enthusiast Device Name (Microsoft Corporation - WDDM v1.2)"
 <models entries>
 
 ; models section for Server
 [Models.NTamd64...3]
-IHV_DeviceName.XXX = â€œFoo Generic Name (Microsoft Corporation â€“ WDDM v1.2)â€
-IHV_DeviceName.ZZZ = â€œFoo Datacenter Name (Microsoft Corporation â€“ WDDM v1.2)â€
+IHV_DeviceName.XXX = "Foo Generic Name (Microsoft Corporation - WDDM v1.2)"
+IHV_DeviceName.ZZZ = "Foo Datacenter Name (Microsoft Corporation - WDDM v1.2)"
 <models entries>
 ```
 

@@ -25,7 +25,7 @@ The following code shows how to convert XR\_BIAS to float:
 ```
 float XRtoFloat( UINT XRComponent ) {
 // The & 0x3ff shows that only 10 bits contribute to the conversion. 
- return (float)( (XRComponent & 0x3ff) â€“ 0x180 ) / 510.f;
+ return (float)( (XRComponent & 0x3ff) - 0x180 ) / 510.f;
 }
 ```
 
