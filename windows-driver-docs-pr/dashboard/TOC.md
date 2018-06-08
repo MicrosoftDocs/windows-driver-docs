@@ -66,6 +66,5 @@
 #### [Host a Remote Debugging Session](host-a-remote-debugging-session.md)
 #### [Join a Remote Debugging Session](join-a-remote-debugging-session.md)
 #### [Known Issues with the Remote Debugging Client](known-issues-with-the-remote-debugging-client.md)
-
 ### [Windows Device Experience List](windows-device-experience-list.md)
 ### [Windows Certified Products List](windows-certified-products-list.md)
