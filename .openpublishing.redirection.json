@@ -1,8 +1,55 @@
 {
   "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/dashboard/administration.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/dashboard-administration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/before-you-sign-in.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/get-started-with-the-hardware-dashboard",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/create-and-manage-your-profile.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/register-for-the-hardware-program",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/manage-legal-agreements.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/dashboard-administration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/for-administrators.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/dashboard-administration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/establish-a-new-company.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/dashboard-administration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/driver-signing.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/attestation-signing-a-kernel-driver-for-public-release",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/manage-your-divisions.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/dashboard-administration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/manage-your-service-account-credentials.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/dashboard-administration",
+      "redirect_document_id": false
+    },
+
+
+    {
       "source_path": "windows-driver-docs-pr/dashboard/driver-distribution.md",
-      "redirect_URL": "/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/dashboard-administration",
       "redirect_document_id": true
     },
     {
