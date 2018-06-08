@@ -35,8 +35,6 @@ This section includes the following topics:
 -   [Low Power for Wake on LAN](low-power-for-wake-on-lan.md)
 -   [Low Power on Media Disconnect](low-power-on-media-disconnect.md)
 
-Starting with Windows 7, Native 802.11 Wireless LAN network adapters must support the NDIS 6.20 power management interface. For more information, see [Wake-on-Wireless LAN](wake-on-wireless-lan.md).
-
 **Note**  Starting with NDIS 6.30, the NDIS power management interface has been extended. For more information about the NDIS 6.30 extensions for power management, please review the information at [Power Management (NDIS 6.30 and Later)](https://msdn.microsoft.com/library/windows/hardware/hh440160).
 
  

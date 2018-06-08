@@ -33,8 +33,6 @@ A miniport driver must register a [*MiniportResetEx*](https://msdn.microsoft.com
 
 -   Clear out the data that is associated with any sends in progress. For example, on a ring buffer for a bus-master direct memory access (DMA) device, the pointers to send buffers should be cleared. Deserialized and connection-oriented miniport drivers must return NDIS\_STATUS\_REQUEST\_ABORTED for any queued send requests.
 
--   For 802.11 devices, perform the additional [hardware reset](driver-reset.md) procedures for the management of network connections and encryption keys.
-
 -   Restore the hardware state and the miniport driver's internal state to the state that existed before the reset operation.
 
 The miniport driver is responsible for restoring the hardware state of the device except for multicast addresses, packet filters, task offload settings, and wake up patterns. These setting are restored by either the miniport driver or NDIS. The miniport driver determines who is responsible for restoring these settings by returning a Boolean value in the *AddressingReset* parameter.
