@@ -50,7 +50,7 @@
     {
       "source_path": "windows-driver-docs-pr/dashboard/driver-distribution.md",
       "redirect_URL": "/windows-hardware/drivers/dashboard/dashboard-administration",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/dashboard/manage-driver-distribution-in-windows-8-1-and-earlier.md",
