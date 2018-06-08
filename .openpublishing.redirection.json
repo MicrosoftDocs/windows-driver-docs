@@ -36,12 +36,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "windows-driver-docs-pr/dashboard/windows-update-hardware-related-software-content-policy.md",
-      "redirect_URL": "/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update",
-      "redirect_document_id": true
-    },
-
-    {
       "source_path": "windows-driver-docs-pr/dashboard/reports.md",
       "redirect_URL": "/windows-hardware/drivers/dashboard/driver-failure-reporting",
       "redirect_document_id": true
