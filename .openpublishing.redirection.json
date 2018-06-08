@@ -8,7 +8,7 @@
     {
       "source_path": "windows-driver-docs-pr/dashboard/before-you-sign-in.md",
       "redirect_URL": "/windows-hardware/drivers/dashboard/get-started-with-the-hardware-dashboard",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/dashboard/create-and-manage-your-profile.md",
@@ -45,8 +45,26 @@
       "redirect_URL": "/windows-hardware/drivers/dashboard/dashboard-administration",
       "redirect_document_id": false
     },
-
-
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/get-started.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/get-started-with-the-hardware-dashboard",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/manage-hardware-submissions.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/manage-your-hardware-submissions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/test-sign-your-driver--legacy-.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/manage-your-hardware-submissions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/dashboard-faq.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-dashboard-faq",
+      "redirect_document_id": true
+    },
     {
       "source_path": "windows-driver-docs-pr/dashboard/driver-distribution.md",
       "redirect_URL": "/windows-hardware/drivers/dashboard/dashboard-administration",
@@ -60,7 +78,7 @@
     {
       "source_path": "windows-driver-docs-pr/dashboard/add-or-remove-drivers.md",
       "redirect_URL": "/windows-hardware/drivers/dashboard/manage-your-hardware-submissions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/dashboard/usage-and-management-of-organization-vendor-ids.md",

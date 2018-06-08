@@ -42,12 +42,7 @@
 ### [Managing User Roles](managing-user-roles.md)
 ### [Get a code signing certificate](get-a-code-signing-certificate.md)
 ### [Update a code signing certificate](update-a-code-signing-certificate.md)
-
 ## [Legacy Dashboard](dashboard-services.md)
-### [Get Started](get-started.md)
-### [Dashboard FAQ](dashboard-faq.md)
-#### [Manage Hardware Submissions](manage-hardware-submissions.md)
-#### [Test-Sign Your Driver (Legacy)](test-sign-your-driver--legacy-.md)
 ### [Device Metadata](device-metadata.md)
 #### [Create a Device Metadata Experience](create-a-device-metadata-experience.md)
 ##### [Creating a Preview Package](creating-a-preview-package.md)
