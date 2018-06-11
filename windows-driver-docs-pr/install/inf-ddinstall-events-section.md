@@ -1,5 +1,6 @@
 ---
 title: INF DDInstall.Events Section
+author: andylsn
 description: Each per-Models DDInstall.Events section contains one or more INF AddEventProvider directives that reference additional INF-writer-defined sections in an INF file.
 ms.assetid: 
 keywords:
@@ -34,7 +35,7 @@ AddEventProvider={ProviderGUID},event-provider-install-section
 [Needs=inf-section-name[,inf-section-name]...] 
 ```
 
-You can provide a *DDInstall***.Events** section with at least one **AddEventProvider** directive to register ETW ([Event Tracing for Windows](https://msdn.microsoft.com/en-us/library/windows/desktop/aa363668(v=vs.85).aspx)) providers.
+You can provide a *DDInstall***.Events** section with at least one **AddEventProvider** directive to register [Event Tracing for Windows](https://msdn.microsoft.com/library/windows/desktop/aa363668) (ETW) providers.
 
 ## Entries
 
@@ -42,7 +43,7 @@ You can provide a *DDInstall***.Events** section with at least one **AddEventPro
 This directive references an INF-writer-defined *event-provider-install-section* elsewhere in the INF file for the drivers of the devices covered by this *DDInstall* section. For more information, see [**INF AddEventProvider Directive**](inf-addeventprovider-directive.md).
 
 <a href="" id="include-filename-inf--filename2-inf----"></a>**Include=***filename***.inf**\[**,***filename2***.inf**\]...  
-This optional entry specifies one or more additional system-supplied INF files that contain sections needed to install this device. If this entry is specified, usually so is a **Needs** entry.
+This optional entry specifies one or more additional system-supplied INF files that contain sections needed to install this device. If this entry is specified, a **Needs** entry is also usually required.
 
 For more information about the **Include** entry and restrictions on its use, see [Specifying the Source and Target Locations for Device Files](specifying-the-source-and-target-locations-for-device-files.md).
 

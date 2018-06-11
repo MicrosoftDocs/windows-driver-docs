@@ -1,5 +1,6 @@
 ---
 title: INF AddEventProvider Directive
+author: andylsn
 description: An AddEventProvider directive is used within an INF DDInstall.Events section.
 ms.assetid:
 keywords:
@@ -20,7 +21,7 @@ ms.technology: windows-devices
 # INF AddEventProvider Directive
 
 
-An **AddEventProvider** directive is used within an [**INF *DDInstall*.Events section**](inf-ddinstall-services-section.md). It specifies characteristics of the ETW([Event Tracing for Windows](https://msdn.microsoft.com/en-us/library/windows/desktop/aa363668(v=vs.85).aspx)) providers associated with drivers.
+An **AddEventProvider** directive is used within an [**INF *DDInstall*.Events section**](inf-ddinstall-services-section.md). It specifies characteristics of the [Event Tracing for Windows](https://msdn.microsoft.com/library/windows/desktop/aa363668) (ETW) providers associated with drivers.
 
 ```
 [DDInstall.Events] 
@@ -33,7 +34,7 @@ AddEventProvider={ProviderGUID},event-provider-install-section
 
 
 <a href="" id="ProviderGUID"></a>*ProviderGUID*  
-Speficfies the GUID value that identifies the provider. This can be expressed as an explicit GUID value of the form {nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn} or as a %strkey% token defined to "{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}" in a Strings section of the INF file.
+Specifies the GUID value that identifies the provider. This can be expressed as an explicit GUID value of the form `{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}` or as a %strkey% token defined to `{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}` in a Strings section of the INF file.
 
 <a href="" id="event-provider-install-section"></a>*event-provider-install-section*  
 References an INF-writer-defined section that contains information for registering the provider for this device (or devices). For more information, see the following **Remarks** section.
@@ -59,12 +60,12 @@ ProviderName=name
 ...
 ```
 
-Each *event-provider-install-section* must have the **ProviderName**. Optionally, you can specify a list of channels for the provider by any combination of **ImportChannel(s)** and **AddChannel(s)**, each on a separate line. For more information about channel list in an INF file, see the following **Specifying Channel List** section. For more information about [Windows Event Log](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385780(v=vs.85).aspx) channels, see [Defining Channels](https://msdn.microsoft.com/en-us/library/windows/desktop/dd996911(v=vs.85).aspx).
+Each *event-provider-install-section* must have the **ProviderName**. Optionally, you can specify a list of channels for the provider by any combination of **ImportChannel(s)** and **AddChannel(s)**, each on a separate line. For more information about channel list in an INF file, see the following **Specifying Channel List** section. For more information about [Windows Event Log](https://msdn.microsoft.com/library/windows/desktop/aa385780) channels, see [Defining Channels](https://msdn.microsoft.com/library/windows/desktop/dd996911).
 
 ### Event-Provider-Install Section Entries and Values
 
 <a href="" id="providername-name"></a>**ProviderName**=*name*  
-Specifies the name of the provider. The name cannot be longer than 255 characters, and cannot contain the characters: '>', '<', '&', '"', '|', '\', ':', ''', '?', '*', or characters with codes less than 31. In addition, the name must follow the general constraints on file and registry key names. These constraints can be found at [Naming a File](https://msdn.microsoft.com/en-us/library/windows/desktop/aa365247(v=vs.85).aspx) and [Registry Element Size Limits](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724872(v=vs.85).aspx).
+Specifies the name of the provider. The name cannot be longer than 255 characters, and cannot contain the characters: '>', '<', '&', '"', '|', '\', ':', ''', '?', '*', or characters with codes less than 31. In addition, the name must follow the general constraints on file and registry key names. These constraints can be found at [Naming a File](https://msdn.microsoft.com/library/windows/desktop/aa365247) and [Registry Element Size Limits](https://msdn.microsoft.com/library/windows/desktop/ms724872).
 
 <a href="" id="resourcefile-path-to-file"></a>**ResourceFile**=*path-to-file*  
 Optionally specifies the path to the exe or dll that contains the provider's metadata resources, expressed as %dirid%\filename.
@@ -117,7 +118,7 @@ An **AddChannel** sub-directive can also reference a *channel-install-section* e
 [LoggingAutoBackup=0|1]
 ```
 
-For more information about channel attributes, see [ChannelType](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382741(v=vs.85).aspx) defined within [EventManifest Schema](https://msdn.microsoft.com/en-us/library/windows/desktop/aa384043(v=vs.85).aspx).
+For more information about channel attributes, see [ChannelType](https://msdn.microsoft.com/library/windows/desktop/aa382741) defined within [EventManifest Schema](https://msdn.microsoft.com/library/windows/desktop/aa384043).
 
 ### Channel-Install Section Entries and Values
 
@@ -131,7 +132,7 @@ Optionally specifies the default access permissions for the channel as one of th
 <a href="" id="0x3--Custom-"></a>**0x3** (Custom)  
 
 <a href="" id="access-access-string"></a>**Access**=*access-string*  
-Optionally specifies a [Security Descriptor Definition Language](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379567(v=vs.85).aspx) (SDDL) access descriptor that controls access to the log file that backs the channel.
+Optionally specifies a [Security Descriptor Definition Language](https://msdn.microsoft.com/library/windows/desktop/aa379567) (SDDL) access descriptor that controls access to the log file that backs the channel.
 
 This string controls read access to the file (the write permissions are ignored) if the **Isolation** is set to **0x1** (Application) or **0x2** (System), while it controls write access to the channel and read access to the file if the isolation attribute is set to **0x3** (Custom).
 
