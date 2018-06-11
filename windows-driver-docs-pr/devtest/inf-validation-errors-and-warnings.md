@@ -69,10 +69,9 @@ In cases where the driver installs successfully, these errors indicate that ther
 <tr class="even">
 <td align="left"><p><span id="_1100__DrvStore_CopyFile"></span><span id="_1100__drvstore_copyfile"></span><span id="_1100__DRVSTORE_COPYFILE"></span> <strong>1100: DriverStore Copyfile name mismatch</strong></p></td>
 <td align="left">
-<p>This error occurs when a file is copied or renamed from its original driver store name and location, to a different name and location in the driver store.  For example:</p>
+<p>This error occurs when a file is copied or renamed from its original driver store name and location to a different name and location in the driver store.  For example:</p>
 <div class="code">
 <pre>
-
 [SourceDisksFiles]
 DriverFile.sys=1,x64  
 
@@ -83,7 +82,7 @@ CopyFileSection=13,SubDirectory
 DriverFile.sys
 </pre>
 </div>
-<p>The driver store maintains the original driver package directory structure.  In the above, the original location of DriverFile.sys is <INF location>\x64, but the CopyFiles places it in <INF location>\SubDirectory.  The same error would be shown if the file was renamed as part of the copy.</p>
+<p>The driver store maintains the original driver package directory structure.  In the code above, the original location of DriverFile.sys is <pre><INF location>\x64</pre>, but the CopyFiles directive places it in <pre><INF location>\SubDirectory</pre>.  The same error would be shown if the file was renamed as part of the copy.</p>
 </td>
 </tr>
     
@@ -120,7 +119,7 @@ Provider="Microsoft"
 
 <tr class="odd">
 <td align="left"><p><span id="1212__invalid_section"></span><span id="1212_INVALID_SECTION"></span><strong>1212: Cannot have both [DefaultInstall] and [Manufacturer]</strong></p></td>
-<td align="left"><p>A single INF cannot contain both [DefaultInstall] and [Manufacturer].  This was previously allowed because PNP would not process [DefaultInstall], so the section was ignored.  PNP will handle [DefaultInstall] in the future, and as a consequence, the intended behavior is ambiguous.  INFs authored with both should remove one of the two sections.</p>
+<td align="left"><p>A single INF cannot contain both [DefaultInstall] and [Manufacturer].  INFs authored with both should remove one of the two sections.</p>
 </td>
 </tr>
 
@@ -273,7 +272,7 @@ AddReg = HKR,,CoInstallers32,0x00010000,"MyCoinstaller.dll"
     
 <tr class="even">
 <td align="left"><p><span id="1310_needs_extension_"></span><span id="1310_NEEDS_EXTENSION_"></span><strong>1310-1312: Incorrect section extension for a Needs directive</strong></p></td>
-<td align="left"><p>Needs directives effectively do a copy/paste of the needed section into the referencing section.  As a baseline validation, the extension of the section is matched up.  This means that a [DDInstall.Services] can only use the Needs directive on other [DDInstall.Services] sections.</p></td>
+<td align="left"><p>Needs directives effectively do a copy/paste of the needed section into the referencing section.  As a baseline validation, InfVerif compares the extension of the section.  This means that a [DDInstall.Services] can only use the Needs directive on other [DDInstall.Services] sections.</p></td>
 </tr>
 
 <tr class="odd">
