@@ -22,20 +22,20 @@ Most error codes can be either a warning or an error depending on the arguments 
 
 ### Handling Errors
 You must fix all errors in order to pass driver tests on the Hardware Dev Center dashboard. Errors are related to the following conditions:
--   The INF parser was unable to successfully interpret your INF
--   The INF parser was able to interpret the INF if some default-value assumption was made (ambiguous syntax)
--   The arguments to InfVerif indicate some rule set was applied to the INF (such as Universal)
+-   The INF parser is unable to successfully interpret your INF
+-   The INF parser is able to interpret the INF only by making a default value assumption (ambiguous syntax)
+-   The arguments to InfVerif indicate that a rule set should be applied to the INF (such as Universal)
 
-Warnings are not required to be fixed, and typically relate to the following conditions:
+While you don't need to fix warnings before submitting your driver on the Dev Center, we recommend taking the time to understand the issue being reported. If you don't understand a given warning, your INF might not always behave as you expect.
+
+Warnings are typically related to:
 -   Syntax that may be incorrect, but has valid scenarios where it is appropriate
--   Syntax that is valid for the given InfVerif parameters, but is an error in other modes, such as Universal
+-   Syntax that is valid for the given InfVerif parameters but is an error in other modes, such as Universal
 
-While you don't need to fix warnings before submitting your driver on the Dev Center, we recommend taking the time to understand the issue being reported.  For example, a section that is unreferenced by the INF parser results in warning 2083. However, the unreferenced section might exist to be parsed by external code.  In such a case, the 2083 can be ignored. If you don't understand a given warning, your INF might not always behave as you expect.
-
--   Universal errors are reported as errors if:
+Issues related to the Universal setting appear as errors if:
     -   In Visual Studio, you build your driver with target platform set to **Universal** or **Mobile**.
     -   You run InfVerif.exe from the command line and specify the /u flag.
--   Universal errors are reported as warnings if:
+Issues related to the Universal setting appear as warnings if:
     -   In Visual Studio, you build your driver with target platform set to **Desktop**.
     -   You run InfVerif.exe from the command line and do not specify the /u flag.
 
