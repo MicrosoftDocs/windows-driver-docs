@@ -30,7 +30,7 @@ Warnings are not required to be fixed, and typically relate to the following con
 -   Syntax that may be incorrect, but has valid scenarios where it is appropriate
 -   Syntax that is valid for the given InfVerif parameters, but is an error in other modes, such as Universal
 
-Warnings may be ignored if the developer fully understands the message being reported.  For example, a section that is unreferenced by the INF parser results in warning 2083, however the unreferenced section might exist to be parsed by external code.  In such a case, the 2083 can be ignored. If a given warning is not properly understood, it is likely indicative of some other INF parsing error.
+While you don't need to fix warnings before submitting your driver on the Dev Center, we recommend taking the time to understand the issue being reported.  For example, a section that is unreferenced by the INF parser results in warning 2083. However, the unreferenced section might exist to be parsed by external code.  In such a case, the 2083 can be ignored. If you don't understand a given warning, your INF might not always behave as you expect.
 
 -   Universal errors are reported as errors if:
     -   In Visual Studio, you build your driver with target platform set to **Universal** or **Mobile**.
