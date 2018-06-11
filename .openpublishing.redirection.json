@@ -4779,6 +4779,31 @@
       "source_path": "windows-driver-docs-pr/network/oid-dot11-wps-enabled.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-wps-enabled",
       "redirect_document_id": true
-    }    
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/history-of-ndis-sgdma.md.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/network/ndis-scatter-gather-dma",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/benefits-of-ndis-sgdma-support.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/network/ndis-scatter-gather-dma",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/registering-and-deregistering-dma-channels.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/network/ndis-scatter-gather-dma",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/allocating-and-freeing-scatter-gather-lists.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/network/ndis-scatter-gather-dma",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/scatter-gather-dma2.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/network/ndis-scatter-gather-dma",
+      "redirect_document_id": false
+    }
   ]
 }
