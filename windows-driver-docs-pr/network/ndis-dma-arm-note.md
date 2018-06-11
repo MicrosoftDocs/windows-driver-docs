@@ -6,4 +6,4 @@ title: Note to discourage NDIS DMA use on ARM/ARM64 processors
 >
 > For more information about WDF DMA, see [Handling DMA Operations in KMDF Drivers](../wdf/handling-dma-operations-in-kmdf-drivers.md).
 >
-> For more information about WDM DMA, see the DMA-related child topics of [Managing Input/Output for Drivers](../kernel/managing-input-output-for-drivers.md)
+> For more information about WDM DMA, see the DMA-related child topics of [Managing Input/Output for Drivers](../kernel/managing-input-output-for-drivers.md).
