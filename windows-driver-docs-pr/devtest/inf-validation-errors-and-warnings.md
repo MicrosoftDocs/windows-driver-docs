@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
-<!--error used for all things on the page, but some are errors and some are warnings?-->
+
 # INF Validation Errors and Warnings
 
 
@@ -49,7 +49,10 @@ Not all error codes are listed below, as many have self-evident meanings. Errors
 
 ## Syntax errors in the INF file (1100-1299)<a name="err-11xx"></a>
 
-When you install a driver, if errors are present in the INF file, Windows reverts to the default value for the setting. <!--so you can have errors and still succeed?-->Windows does not fail driver installation due to errors in this range, but errors in this range indicate that the behavior may change depending on OS version or SKU. In cases where the driver installs successfully, these errors indicate that there *are* circumstances where the driver may not install properly.
+While InfVerif failure means driver submission failure, driver installation may still succeed.
+This is because when you install a driver, if errors are present in the INF file, Windows also tries the default value for the setting.
+Windows does not fail driver installation due to errors in this range, but errors in this range indicate that the behavior may change depending on OS version or SKU.
+In cases where the driver installs successfully, these errors indicate that there *are* circumstances where the driver may not install properly.
 
 <table>
 <colgroup>
