@@ -35,6 +35,7 @@ Warnings are typically related to:
 Issues related to the Universal setting appear as errors if:
     -   In Visual Studio, you build your driver with target platform set to **Universal** or **Mobile**.
     -   You run InfVerif.exe from the command line and specify the /u flag.
+
 Issues related to the Universal setting appear as warnings if:
     -   In Visual Studio, you build your driver with target platform set to **Desktop**.
     -   You run InfVerif.exe from the command line and do not specify the /u flag.
