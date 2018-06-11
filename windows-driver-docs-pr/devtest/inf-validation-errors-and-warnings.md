@@ -42,13 +42,15 @@ Issues related to the Universal setting appear as warnings if:
 
 ## Error Codes
 
--   [Syntax errors in the INF file (1100-1299)](#err-11xx)
--   [Universal INF errors (1300-1319)](#err-130x)
--   [Installation warnings (2000-2999)](#warning-2xxx)
+Error codes come in the following classifications:
+
+-   [Syntax in the INF file (1100-1299)](#err-11xx)
+-   [Universal INF (1300-1319)](#err-130x)
+-   [Installation (2000-2999)](#warning-2xxx)
 
 Not all error codes are listed below, as many have self-evident meanings. Errors in the 1000-1099 range are considered self-evident, as they are basic syntax errors.
 
-## Syntax errors in the INF file (1100-1299)<a name="err-11xx"></a>
+## Syntax in the INF file (1100-1299)<a name="err-11xx"></a>
 
 While InfVerif failure means driver submission failure, driver installation may still succeed.
 This is because when you install a driver, if errors are present in the INF file, Windows also tries the default value for the setting.
@@ -215,7 +217,7 @@ HKR,,DllPath,%%SystemRoot%%\System32\myDll.sys
 
 
 
-## Universal INF errors (1300-1319) <a name="err-130x"></a>
+## Universal INF (1300-1319) <a name="err-130x"></a>
 
 
 **Important**
@@ -284,10 +286,10 @@ AddReg = HKR,,CoInstallers32,0x00010000,"MyCoinstaller.dll"
 </table>
 
 
-## Installation warnings (2000-2999) <a name="warning-2xxx"></a>
+## Installation (2000-2999) <a name="warning-2xxx"></a>
 
 
-Issues in the 2000-2999 range appears as warnings. Possible values include the following.
+Issues in the 2000-2999 range appear as warnings. Possible values include the following.
 
 <table>
 <colgroup>
