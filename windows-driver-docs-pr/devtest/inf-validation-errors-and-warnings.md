@@ -53,22 +53,13 @@ When you install a driver, if errors are present in the INF file, Windows revert
 |Error Code|Description|
 |--- |--- |
 |**1100: DriverStore Copyfile name mismatch**|This error occurs when a file is copied or renamed from its original driver store name and location to a different name and location in the driver store. For example:
-
-
-
-[SourceDisksFiles]
-DriverFile.sys=1,x64  
-
-[DestinationDirs]
-CopyFileSection=13,SubDirectory  
-
-[CopyFileSection]
-DriverFile.sys
-
-
-
-
-The driver store maintains the original driver package directory structure. In the above, the original location of DriverFile.sys is \x64, but CopyFiles places it in \SubDirectory. The same error would be shown if the file was renamed as part of the copy.|
+||`[SourceDisksFiles]`|
+||`DriverFile.sys=1,x64`|
+||`[DestinationDirs]`|
+||`CopyFileSection=13,SubDirectory`|
+||`[CopyFileSection]`|
+||`DriverFile.sys`|
+||The driver store maintains the original driver package directory structure. In the above, the original location of DriverFile.sys is \x64, but CopyFiles places it in \SubDirectory. The same error would be shown if the file was renamed as part of the copy.|
 |**1203: Section not found**|For example, the following INF syntax causes error 1203:
 
 
