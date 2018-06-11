@@ -10,7 +10,7 @@ keywords:
 - NICs WDK networking , system memory transfers
 - network interface cards WDK networking , s
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 06/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
