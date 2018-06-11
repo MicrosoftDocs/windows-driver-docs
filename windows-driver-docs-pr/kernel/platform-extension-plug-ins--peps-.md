@@ -31,7 +31,7 @@ Starting with Windows 10, the run-time power management framework (PoFx) suppor
 </tr>
 <tr class="even">
 <td><p>[Platform Performance Thresholds](platform-performance-thresholds.md)</p></td>
-<td><p>There are two types of performance thresholds â€“ static thresholds which remain fixed for the platform and dynamic thresholds that change at runtime. This topic describes the static performance thresholds of the platform and the allowed range for the dynamic threshold.</p></td>
+<td><p>There are two types of performance thresholds - static thresholds which remain fixed for the platform and dynamic thresholds that change at runtime. This topic describes the static performance thresholds of the platform and the allowed range for the dynamic threshold.</p></td>
 </tr>
 </tbody>
 </table>
