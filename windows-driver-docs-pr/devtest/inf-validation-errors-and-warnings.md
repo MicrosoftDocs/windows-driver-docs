@@ -83,7 +83,7 @@ CopyFileSection=13,SubDirectory
 DriverFile.sys
 </pre>
 </div>
-<p>The driver store maintains the original driver package directory structure.  In the code above, the original location of DriverFile.sys is <pre><INF location>\x64</pre>, but the CopyFiles directive places it in <pre><INF location>\SubDirectory</pre>.  The same error would be shown if the file was renamed as part of the copy.</p>
+<p>The driver store maintains the original driver package directory structure.  In the code above, the original location of DriverFile.sys is <i>INF location</i>\x64, but the CopyFiles directive places it in <i>INF location</i>\SubDirectory.  The same error would be shown if the file was renamed as part of the copy.</p>
 </td>
 </tr>
     
