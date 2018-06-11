@@ -17,10 +17,10 @@ This topic describes driver installation errors and warnings that can appear as 
 Starting in Visual Studio 2015 with WDK 10, when you build your driver, the following INF file errors can appear in the Error List pane. If you are running InfVerif.exe from the command line, the tool displays these errors at the command prompt, or in the HTML version of the results.
 
 ## Error Guidance
-InfVerif follows a general rule that the lower the error number, the more severe the issue.  Depending on the context in which InfVerif is invoked, errors codes may vary between a warning and an error.
+InfVerif follows a general rule that the lower the error number, the more severe the issue.  Depending on the context in which InfVerif is invoked, error codes may vary between a warning and an error.
 
 ### Handling Errors
-Errors are considered critical and must be addressed.  <!--or what?-->Errors are related to the following conditions:
+You must fix all errors in order to pass driver tests on the Hardware Dev Center dashboard. Errors are related to the following conditions:
 -   The INF parser was unable to successfully interpret your INF
 -   The INF parser was able to interpret the INF if some default-value assumption was made (ambiguous syntax)
 -   The arguments to InfVerif indicate some rule set was applied to the INF (such as Universal)
