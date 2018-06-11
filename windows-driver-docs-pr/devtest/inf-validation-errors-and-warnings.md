@@ -18,7 +18,7 @@ Starting in Visual Studio 2015 with WDK 10, when you build your driver, the foll
 
 ## Error Guidance
 InfVerif follows a general rule that the lower the error number, the more severe the issue.
-Most error codes can be either a warning or an error, depending on the context in which InfVerif is invoked.
+Most error codes can be either a warning or an error depending on the arguments supplied to InfVerif.
 
 ### Handling Errors
 You must fix all errors in order to pass driver tests on the Hardware Dev Center dashboard. Errors are related to the following conditions:
