@@ -13,6 +13,7 @@ ms.technology: windows-devices
 
 > [!IMPORTANT]  
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
+> Consequently, it is not available in the versions of Visual Studio that integrate with those newer versions of the WDK, namely, Visual Studio 2015 and later.
 >
 
 You can use Microsoft Visual Studio to set up and perform kernel-mode debugging of a virtual machine. The virtual machine can be located on the same physical computer as the debugger or on a different computer that is connected to the same network. To use Visual Studio for kernel-mode debugging, you must have the Windows Driver Kit (WDK) integrated with Visual Studio. For information about how to install the integrated environment, see [Windows Driver Development](http://go.microsoft.com/fwlink/p?linkid=301383).
