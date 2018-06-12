@@ -61,14 +61,14 @@ In the INF file, specify your custom capability as follows:
 
 ```
 [WDMPNPB003_Device.NT.Interfaces] 
-AddInterface= {B0823231-61F1-4685-85CA-8DF9DDDEBF6E},,AddInterfaceSection 
+AddInterface= {00001111-2222-3333-4444-555566667777},,AddInterfaceSection 
  
 [AddInterfaceSection] 
 AddProperty= AddInterfaceSection.AddProps 
  
 [AddInterfaceSection.AddProps] 
 ; DEVPKEY_DeviceInterface_UnrestrictedAppCapabilities 
-{026e516e-b814-414b-83cd-856d6fef4822}, 8, 0x2012,, “CompanyName.myCustomCapabilityNameTBD_YourStorePubId”
+{026e516e-b814-414b-83cd-856d6fef4822}, 8, 0x2012,, "CompanyName.myCustomCapabilityNameTBD_YourStorePubId"
 ```
 
 Or, do the following in the driver:
@@ -90,6 +90,8 @@ Status = WdfDeviceAssignInterfaceProperty(
     reinterpret_cast<PVOID>(customCapabilities)); 
 
 ```
+
+Replace **00001111-2222-3333-4444-555566667777** with the GUID for the interface to expose.  Replace **CompanyName** with your company name, **myCustomCapabilityNameTBD** with with an intercompany unique name, and **YourStorePubId** your publisher store ID. 
 
 For an example of the driver code shown immediately above, see the [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU).
 
