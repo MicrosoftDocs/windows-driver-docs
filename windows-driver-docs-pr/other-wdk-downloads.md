@@ -64,7 +64,7 @@ To get started, mount the ISO and run **LaunchBuildEnv**.
 
 These editions of Visual Studio 2015 support driver development. 
 
-* [Download Visual Studio Express for Desktop](https://go.microsoft.com/fwlink/p/?LinkId=691984)
+* [Download Visual Studio Express 2015 for Desktop](https://go.microsoft.com/fwlink/p/?LinkId=691984)
 * [Download Visual Studio Community 2015](https://go.microsoft.com/fwlink/p/?LinkId=534599)
 * [Download Visual Studio Professional 2015](https://go.microsoft.com/fwlink/p/?LinkId=619628)
 * [Download Visual Studio Enterprise 2015](https://go.microsoft.com/fwlink/p/?LinkId=619629)
@@ -98,9 +98,9 @@ You can also install the EWDK to build drivers and basic Win32 test applications
 ## ![download icon](images/download-install.png) WDK for Windows 10, version 1607
 
 1. Run Windows Update. 
-2. Install the version of Visual Studio that best suits your development needs. 
+2. Install the version of Visual Studio 2015 that best suits your development needs. 
 
-    * [Download Visual Studio Express for Desktop](https://go.microsoft.com/fwlink/p/?LinkId=691984)
+    * [Download Visual Studio Express 2015 for Desktop](https://go.microsoft.com/fwlink/p/?LinkId=691984)
     * [Download Visual Studio Community 2015](https://go.microsoft.com/fwlink/p/?LinkId=534599)
     * [Download Visual Studio Professional 2015](https://go.microsoft.com/fwlink/p/?LinkId=619628)
     * [Download Visual Studio Enterprise 2015](https://go.microsoft.com/fwlink/p/?LinkId=619629)
@@ -137,7 +137,7 @@ With the Windows Remote Debugging client, you can work remotely with developers 
 WDK 8 enables you to migrate earlier drivers to WDK 8.1 Update and Visual Studio 2013. Microsoft does not support WDK 8 and will make no further updates to this kit. You should use the latest versions of the WDK and Visual Studio to build drivers for Windows. 
 
 > [!IMPORTANT]
-> You must install [Visual Studio Professional 2012](https://go.microsoft.com/fwlink/p/?LinkID=255976) or [Visual Studio Ultimate](https://go.microsoft.com/fwlink/p/?LinkID=255982) before you install WDK 8. 
+> You must install [Visual Studio Professional 2012](https://go.microsoft.com/fwlink/p/?LinkID=255976) or [Visual Studio Ultimate 2012](https://go.microsoft.com/fwlink/p/?LinkID=255982) before you install WDK 8. 
 
 1. [Download WDK 8 (English only)](https://go.microsoft.com/fwlink/p/?LinkID=324284)
 2. [Download the WDK 8 redistributable components](https://go.microsoft.com/fwlink/p/?LinkID=253170) (English only) 
