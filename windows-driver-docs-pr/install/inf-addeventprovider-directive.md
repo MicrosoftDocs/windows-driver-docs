@@ -20,6 +20,7 @@ ms.technology: windows-devices
 
 # INF AddEventProvider Directive
 
+This directive is only available to [Windows Insiders](https://insider.windows.com/) via WDK Preview Builds.
 
 An **AddEventProvider** directive is used within an [**INF *DDInstall*.Events section**](inf-ddinstall-services-section.md). It specifies characteristics of the [Event Tracing for Windows](https://msdn.microsoft.com/library/windows/desktop/aa363668) (ETW) providers associated with drivers.
 
@@ -65,7 +66,7 @@ Each *event-provider-install-section* must have the **ProviderName**. Optionally
 ### Event-Provider-Install Section Entries and Values
 
 <a href="" id="providername-name"></a>**ProviderName**=*name*  
-Specifies the name of the provider. The name cannot be longer than 255 characters, and cannot contain the characters: '>', '<', '&', '"', '|', '\', ':', ''', '?', '*', or characters with codes less than 31. In addition, the name must follow the general constraints on file and registry key names. These constraints can be found at [Naming a File](https://msdn.microsoft.com/library/windows/desktop/aa365247) and [Registry Element Size Limits](https://msdn.microsoft.com/library/windows/desktop/ms724872).
+Specifies the name of the provider. The name cannot be longer than 255 characters, and cannot contain the characters: '>', '<', '&', '"', '|', '\', ':', ''', '?', '*', or characters with ASCII values less than 31. In addition, the name must follow the general constraints on file and registry key names. These constraints can be found at [Naming a File](https://msdn.microsoft.com/library/windows/desktop/aa365247) and [Registry Element Size Limits](https://msdn.microsoft.com/library/windows/desktop/ms724872).
 
 <a href="" id="resourcefile-path-to-file"></a>**ResourceFile**=*path-to-file*  
 Optionally specifies the path to the exe or dll that contains the provider's metadata resources, expressed as %dirid%\filename.
@@ -86,9 +87,9 @@ Optionally specifies a channel with a sub-directive that optionally references a
 
 ### Specifying Channel List
 
-You can specify a list of channels for the provider within its *event-provider-install-section*. You can import a channel or add a channel to the list and the order of these channels is preserved.
+You can specify a list of channels for the provider within its *event-provider-install-section*. You can import a channel or add a channel to the list and the order of these channels is preserved. For more info, see [Defining Channels](https://msdn.microsoft.com/library/windows/desktop/dd996911.
 
-The *channel-name* must be unique within the list of channels that the provider uses. The *channel-name* must be less that 255 characters and cannot contain the following characters: '>', '<', '&', '"', '|', '\', ':', '`', '?', '*', or characters with codes less than 31.
+The *channel-name* must be unique within the list of channels that the provider uses. The *channel-name* must be less that 255 characters and cannot contain the following characters: '>', '<', '&', '"', '|', '\', ':', '`', '?', '*', or characters with ASCII values less than 31.
 
 The *channel-type* can be specified as one of the following numeric values, expressed either in decimal or, as shown in the following list, in hexadecimal notation.
 

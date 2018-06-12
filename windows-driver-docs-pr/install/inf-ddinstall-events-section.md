@@ -20,6 +20,7 @@ ms.technology: windows-devices
 
 # INF DDInstall.Events Section
 
+This section is supported in Windows 10 version 1803 and later.
 
 Each per-Models *DDInstall***.Events** section contains one or more [**INF AddEventProvider directives**](inf-addeventprovider-directive.md) that reference additional INF-writer-defined sections in an INF file.
 
@@ -27,8 +28,8 @@ Each per-Models *DDInstall***.Events** section contains one or more [**INF AddEv
 [install-section-name.Events] |
 [install-section-name.nt.Events] |
 [install-section-name.ntx86.Events] |
-[install-section-name.ntia64.Events] |  (Windows XP and later versions of Windows)
-[install-section-name.ntamd64.Events]  (Windows XP and later versions of Windows)
+[install-section-name.ntia64.Events] |
+[install-section-name.ntamd64.Events]
  
 AddEventProvider={ProviderGUID},event-provider-install-section
 [Include=filename.inf[,filename2.inf]...]
@@ -64,7 +65,7 @@ For more information about how to use the system-defined **.nt**, **.ntx86**, **
 Examples
 --------
 
-This example shows the *install-section-name***.NT.Events** section and its event-provider-install-sections in the INF file.
+This example shows the *install-section-name***.Events** section and its event-provider-install-sections in the INF file.
 
 ```
 [Device_Inst.NT.Events]
