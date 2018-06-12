@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Accessing INF Files from a Device Installation Application
 
 
-## <a href="" id="ddk-accessing-inf-files-from-a-setup-application-dg"></a>
+
 
 
 Most INF files are used by system class installers and other [*device installation applications*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application). This section describes common operations that vendor-supplied device installation applications can perform on INF files by using the [general Setup functions](https://msdn.microsoft.com/library/windows/hardware/ff544985). For complete information about how to use these functions, see the Windows SDK documentation.

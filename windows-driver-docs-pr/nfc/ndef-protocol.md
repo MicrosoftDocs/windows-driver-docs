@@ -51,7 +51,7 @@ There are several requirements common for NDEF support on the drivers of all NFC
 -   The driver MUST write to tags in such a way that the previous contents is overwritten.
 -   If a “\*:WriteTag” payload is successfully written to a tag, the driver MUST trigger the [**IOCTL\_NFP\_GET\_NEXT\_TRANSMITTED\_MESSAGE**](https://msdn.microsoft.com/library/windows/hardware/jj853320) handling (as specified above) for that publication.
 
-## <a href="" id="publications-for--ndef-writetag-"></a>Publications for “NDEF:WriteTag”
+## Publications for “NDEF:WriteTag”
 
 
 This is a special type of publication that allows one or more NDEF messages to be written to an NFC Forum tag.
@@ -61,7 +61,7 @@ This is a special type of publication that allows one or more NDEF messages to b
 -   The common “\*:WriteTag” requirements described elsewhere apply.
 -   Because an NFC Forum tag can contain multiple NDEF messages, the driver MUST correctly accept “NDEF:WriteTag” publications that happen to have multiple concatenated NDEF messages as payload.
 
-## <a href="" id="publications-for--settagreadonly-"></a>Publications for “SetTagReadOnly”
+## Publications for “SetTagReadOnly”
 
 
 This publication allows for the client to lock a tag to read only. The provider must convert an already formatted NDEF read/write tag to Read only.
@@ -71,7 +71,7 @@ This publication allows for the client to lock a tag to read only. The provider 
 -   The driver must first check if the connected tag is NDEF compliant.
 -   If one or more “\*:.WriteTag” publications is enabled and the driver detects a writable tag, the driver MUST write to the tag first, adhering to the common “\*:WriteTag” requirements described elsewhere, and then convert the NDEF read/write tag to read only.
 
-## <a href="" id="empty-ndef-record---ndef-empty-"></a>Empty NDEF Record: “NDEF:Empty”
+## Empty NDEF Record: “NDEF:Empty”
 
 
 There is no type, ID, or payload in this message. It seems that subscriptions with the “NDEF:Empty” type do not make any sense from the point of view of a Windows client.
@@ -80,7 +80,7 @@ There is no type, ID, or payload in this message. It seems that subscriptions wi
 
 Subscriptions or publications with this type MUST be rejected by the proximity provider driver with STATUS\_INVALID\_PARAMETER.
 
-## <a href="" id="subscriptions-for-all-ndef-types---ndef-"></a>Subscriptions for all NDEF types: “NDEF”
+## Subscriptions for all NDEF types: “NDEF”
 
 
 Clients can subscribe to all received NDEF messages. Typically, if the application knows the type of message it’s interested in, it will subscribe to that type specifically. However, it is sometimes useful to subscribe to every NDEF message. For example, an application that can copy and write a duplicate NDEF Tag might find this useful.
@@ -89,7 +89,7 @@ Clients can subscribe to all received NDEF messages. Typically, if the applicati
 
 The driver MUST match subscriptions for “NDEF” with each NDEF Message it receives.
 
-## <a href="" id="subscriptions-for-external-ndef-rtd-types---ndef-ext--"></a>Subscriptions for External NDEF RTD Types: “NDEF:ext.”
+## Subscriptions for External NDEF RTD Types: “NDEF:ext.”
 
 
 Vendors can use a custom extensible RTD namespace to define the contents of their proprietary messages. This allows a client to subscribe to RTD external types defined not by the NFC Forum, but by the app or a third-party.
@@ -102,7 +102,7 @@ Concrete Example Type: “NDEF:ext.contoso.com:mytype”
 
 The driver MUST match subscriptions for “NDEF:ext.&lt;SomeExternalType&gt;” ONLY with received NDEF messages that have a TNF field value of 0x04 and that have a TYPE field that matches “&lt;SomeExternalType&gt;” based on the equivalence rules specified in \[NFC RTD\].
 
-## <a href="" id="subscriptions-for--ndef-mime--"></a>Subscriptions for “NDEF:MIME.”
+## Subscriptions for “NDEF:MIME.”
 
 
 Messages can use the MIME namespace to define the contents of the message.
@@ -115,7 +115,7 @@ Concrete Example Type: “NDEF:MIME.image/jpeg”
 
 The driver MUST match subscriptions for “NDEF:MIME.&lt;SomeMimeType&gt;” ONLY with received NDEF messages that have a TNF field value of 0x02 and that have a TYPE field that matches “&lt;SomeMimeType&gt;” based on the equivalence rules specified in \[NDEF\].
 
-## <a href="" id="subscriptions-for--ndef-wkt--"></a>Subscriptions for “NDEF:wkt.”
+## Subscriptions for “NDEF:wkt.”
 
 
 Messages can use the NFC Forum Well Known Type namespace to define the contents of the message.
@@ -125,7 +125,7 @@ Messages can use the NFC Forum Well Known Type namespace to define the contents 
 -   The driver MUST match subscriptions for “NDEF:wkt.&lt;SomeWellKnownType&gt;” ONLY with received NDEF messages that have a TNF field value of 0x01 and that have a TYPE field that matches “&lt;SomeWellKnownType&gt;” based on the equivalence rules specified in \[NDEF\].
 -   The driver MUST NOT validate well known types, so that future well known types can be defined by NFC Forum without requiring a driver update.
 
-## <a href="" id="subscriptions-for-unknown-ndef-type---ndef-unknown-"></a>Subscriptions for Unknown NDEF Type: “NDEF:Unknown”
+## Subscriptions for Unknown NDEF Type: “NDEF:Unknown”
 
 
 This allows a client to subscribe to an un-typed payload of data.

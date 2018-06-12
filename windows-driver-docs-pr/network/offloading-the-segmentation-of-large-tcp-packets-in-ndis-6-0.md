@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Offloading the Segmentation of Large TCP Packets in NDIS 6.0
 
 
-## <a href="" id="ddk-offloading-the-segmentation-of-large-tcp-packets-in-ndis-6-0-ng"></a>
+
 
 
 Offloading the segmentation of large TCP packets at run time in NDIS 6.0 is similar to NDIS 5.*x*. The primary differences are:

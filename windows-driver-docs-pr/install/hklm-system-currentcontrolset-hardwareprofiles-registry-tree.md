@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # HKLM\\SYSTEM\\CurrentControlSet\\HardwareProfiles Registry Tree
 
 
-## <a href="" id="ddk-the-hklm-system-currentcontrolset-hardwareprofiles-tree-dg"></a>
+
 
 
 The **HKLM\\SYSTEM\\CurrentControlSet\\HardwareProfiles** registry tree contains information about the hardware profiles on the system.

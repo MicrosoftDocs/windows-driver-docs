@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Avoid Polling Devices
 
 
-## <a href="" id="ddk-polling-a-device-kg"></a>
+
 
 
 A device driver should avoid polling its device unless absolutely necessary, and should never use a whole time-slice for polling. Polling a device is an expensive operation that makes any operating system compute-bound within the polling driver. A device driver that does much polling interferes with I/O operations on other devices and can make the system slow and unresponsive to users.

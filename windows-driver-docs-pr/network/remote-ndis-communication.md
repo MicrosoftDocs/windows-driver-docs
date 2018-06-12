@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Remote NDIS Communication
 
 
-## <a href="" id="ddk-remote-ndis-nr"></a>
+
 
 
 This section includes the following topics:

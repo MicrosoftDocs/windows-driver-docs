@@ -172,7 +172,7 @@ void RegisterForInterruptEvent(TypedEventHandler<UsbInterruptInPipe, UsbInterrup
 
 After the event handler is registered, it is invoked each time data is received in the associated interrupt pipe.
 
-## <a href="" id="step-4--unregister-the--event-handler-to-stop-receiving-data--interrupt-in-"></a>Step 4: Unregister the event handler to stop receiving data (Interrupt IN)
+## Step 4: Unregister the event handler to stop receiving data (Interrupt IN)
 
 
 After you are finished receiving data, unregister the event handler.

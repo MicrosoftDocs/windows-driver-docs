@@ -3,7 +3,7 @@ title: Setting Up User-Mode Debugging in Visual Studio
 description: There are two user-mode debuggers available in the Microsoft Visual Studio environment.
 ms.assetid: D36220DF-1ACB-4D8B-BC4C-1A6FCB54CA15
 ms.author: domars
-ms.date: 11/28/2017
+ms.date: 05/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -13,6 +13,10 @@ ms.technology: windows-devices
 
 
 There are two user-mode debuggers available in the Microsoft Visual Studio environment. One is the Windows User-Mode Debugger, which is included in Debugging Tools for Windows. The other is the Visual Studio Debugger, which is part of the Visual Studio product. This topic describes how to get set up to use the Windows User-Mode Debugger from within the Visual Studio environment.
+
+> [!IMPORTANT]  
+> This feature is not available in Windows 10, version 1507 and later versions of the WDK.
+>
 
 ## <span id="Debugging_a_User-Mode_Process_on_the_Local_Computer"></span><span id="debugging_a_user-mode_process_on_the_local_computer"></span><span id="DEBUGGING_A_USER-MODE_PROCESS_ON_THE_LOCAL_COMPUTER"></span>Debugging a User-Mode Process on the Local Computer
 

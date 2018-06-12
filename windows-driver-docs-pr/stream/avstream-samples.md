@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # AVStream Samples
 
 
-## <a href="" id="ddk-avstream-samples-ksg"></a>
+
 
 
 Source code and descriptions of two sample AVStream minidrivers are provided in the Windows Driver Kit samples download:

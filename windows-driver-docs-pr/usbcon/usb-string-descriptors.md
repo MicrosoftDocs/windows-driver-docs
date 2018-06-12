@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 Device, configuration, and interface descriptors may contain references to string descriptors. This topic describes how to get a particular string descriptor from the device.
 
-## <a href="" id="ddk-usb-string-descriptors-kg"></a>
+
 
 
 String descriptors are referenced by their one-based index number. A string descriptor contains one or more Unicode strings; each string is a translation of the others into another language.

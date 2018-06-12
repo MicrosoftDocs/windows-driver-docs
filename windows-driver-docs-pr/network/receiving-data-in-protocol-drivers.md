@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Receiving Data in Protocol Drivers
 
 
-## <a href="" id="ddk-receiving-data-in-protocol-drivers-ng"></a>
+
 
 
 The following figure illustrates a basic receive operation, which involves a protocol driver, NDIS, and underlying drivers in a driver stack.

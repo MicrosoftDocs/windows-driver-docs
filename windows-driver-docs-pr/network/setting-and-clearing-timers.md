@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Setting and Clearing Timers
 
 
-## <a href="" id="ddk-setting-and-clearing-timers-ng"></a>
+
 
 
 After allocating and initializing a timer with the [**NdisAllocateTimerObject**](https://msdn.microsoft.com/library/windows/hardware/ff561618) function, an NDIS 6.0 driver calls the [**NdisSetTimerObject**](https://msdn.microsoft.com/library/windows/hardware/ff564563) function to set a timer object to fire after a specified interval or periodically.

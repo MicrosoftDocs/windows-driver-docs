@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Printer Driver Architecture
 
 
-## <a href="" id="ddk-printer-driver-architecture-gg"></a>
+
 
 
 Print jobs are created by applications through calls to Microsoft Win32 GDI or, in Windows Vista, Windows Presentation Foundation (WPF) functions. The Win32 functions spool application data as [EMF](emf-data-type.md) records for later playback by the EMF [*print processor*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-print-processor), or they can immediately render a printable image for each document page. The WPF functions spool application data as an XPS spool file.

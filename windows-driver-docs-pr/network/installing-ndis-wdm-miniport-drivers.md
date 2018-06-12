@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Installing NDIS-WDM Miniport Drivers
 
 
-## <a href="" id="ddk-installing-ndis-wdm-miniport-drivers-ng"></a>
+
 
 
 When you implement the installation mechanism for an NDIS-WDM miniport driver, you should keep the following items in mind:

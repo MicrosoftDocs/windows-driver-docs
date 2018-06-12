@@ -1,5 +1,5 @@
 ---
-title: Switch from Legacy MBR disk to GPT disk with Windows 10 
+title: Switch from Legacy MBR disk to GPT disk with Windows 10
 description: Provides guidance to enable a seamless upgrade and enable the user to leverage new and improved security features of Windows 10.
 author: windows-driver-content
 ms.author: windowsdriverdev
@@ -10,7 +10,7 @@ ms.technology: windows-devices
 ---
 
 
-# Switch from Legacy MBR disk to GPT disk with Windows 10 
+# Switch from Legacy MBR disk to GPT disk with Windows 10
 
 
 To facilitate upgrading from downlevel operating systems, such as Windows 7, or transitioning from BIOS Boot to UEFI Boot for the enhanced security features. Microsoft has provided the following information. The steps in the following sections will enable a more seamless upgrade to Windows 10 and enable the user the ability to leverage the new and improved security features of Windows 10. For purposes of the below steps, we will refer to the GUID Partition Table as GPT, and Legacy Master Boot Record as Legacy MBR boot disks.
@@ -18,9 +18,9 @@ To facilitate upgrading from downlevel operating systems, such as Windows 7, or 
 These four configurations will be used:
 
 - Config \# 1 - UEFI boot without a Compatibility Support Module (CSM) or the CSM is disabled in firmware. Requires a GPT Hard Disk Drive (HDD).
-- Config \# 2 - UEFI boot with CSM enabled, booting from GPT HDD                                                                                
-- Config \# 3 - Legacy BIOS boot with CSM enabled, booting from Legacy MBR HDD                                                                  
-- Config \# 4 - UEFI boot with CSM enabled, booting from Legacy MBR HDD                                                                         
+- Config \# 2 - UEFI boot with CSM enabled, booting from GPT HDD
+- Config \# 3 - Legacy BIOS boot with CSM enabled, booting from Legacy MBR HDD
+- Config \# 4 - UEFI boot with CSM enabled, booting from Legacy MBR HDD
 
 ## Upgrade paths
 
@@ -56,7 +56,7 @@ These four configurations will be used:
 ## Related resources
 
 
-[Windows 10 Specification](https://www.microsoft.com/en-us/windows/Windows-10-specifications) 
+[Windows 10 Specification](https://www.microsoft.com/windows/Windows-10-specifications)
 
 
 

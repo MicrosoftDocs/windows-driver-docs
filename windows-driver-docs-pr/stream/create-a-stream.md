@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Create a Stream
 
 
-## <a href="" id="ddk-creating-a-stream-ksg"></a>
+
 
 
 A data stream context must be created before the AV/C Streaming filter driver, *Avcstrm.sys*, can provide services. The context points to an opaque structure that contains the requested data format, data-stream state, and properties, similar to a stream extension. A data format structure and the direction of the data flow are its input parameters. If the stream can be created successfully, it will return a stream context. This context is cached by the subunit driver and is used for subsequent AV/C Streaming requests.

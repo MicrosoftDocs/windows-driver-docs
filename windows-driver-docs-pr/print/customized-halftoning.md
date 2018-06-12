@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Customized Halftoning
 
 
-## <a href="" id="ddk-customized-halftoning-gg"></a>
+
 
 
 Unidrv allows you to perform halftoning operations using GDI, the printer device, or by customized driver code. This section explains how to perform halftoning operations in customized driver code.

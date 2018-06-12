@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Stopping a Driver Stack
 
 
-## <a href="" id="ddk-stopping-a-driver-stack-ng"></a>
+
 
 
 If a device is removed, NDIS stops a driver stack. A driver stack stop operation proceeds as follows:

@@ -2,6 +2,11 @@
 title: StorPortCompleteRequest rule (storport)
 description: This rule verifies that no calls to StorPortCompleteRequest are made by the miniport. Usage of the StorPortCompleteRequest is not recommended; miniports should instead call StorPortNotification with notificationType RequestComplete.
 ms.assetid: 6DDAC83F-C4D5-4600-B5F3-AA7F216BB797
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["StorPortCompleteRequest rule (storport)"]
 topic_type:
 - apiref

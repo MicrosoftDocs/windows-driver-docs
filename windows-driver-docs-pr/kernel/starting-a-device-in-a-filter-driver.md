@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Starting a Device in a Filter Driver
 
 
-## <a href="" id="ddk-starting-a-device-in-a-filter-driver-kg"></a>
+
 
 
 An upper-level filter driver might augment any of the start activities of the function driver.

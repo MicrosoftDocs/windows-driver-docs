@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Summary of INF Sections
 
 
-## <a href="" id="ddk-summary-of-inf-sections-dg"></a>
+
 
 
 The following summarizes the system-defined sections that can be used in INF files. System-defined section names are case-insensitive. For example, **version**, **VERSION**, and **Version** are equally valid section-names within an INF file.

@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # NDIS Port Send and Receive Operations
 
 
-## <a href="" id="ddk-ndis-ports-send-and-receive-operations-ng"></a>
+
 
 
 NDIS drivers can associate send and receive operations with NDIS ports.The port number in the *PortNumber* parameter of the NDIS send and receive functions identifies the target port of a send operation or the source port of a receive indication. If *PortNumber* is zero, the default port is used. When NDIS handles the default port and the miniport driver does not allocate any other ports, no NDIS drivers in the driver stack are required to do anything beyond always setting the *PortNumber* parameter to zero. For more information about allocating ports in a miniport driver, see [Allocating NDIS Ports](allocating-an-ndis-port.md).

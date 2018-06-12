@@ -24,7 +24,7 @@ ms.technology: windows-devices
 
 The topics in this section describe how a Kernel-Mode Driver Framework (KMDF) driver registers as a WMI data provider, responds to requests for instance data, and sends events to registered WMI clients.
 
-## <a href="" id="ddk-handling-wmi-in-framework-based-drivers-df"></a>
+
 
 
 ## In this section

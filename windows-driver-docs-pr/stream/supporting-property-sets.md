@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Supporting Property Sets
 
 
-## <a href="" id="ddk-supporting-property-sets-ksg"></a>
+
 
 
 Both the minidriver as a whole and individual streams can receive property requests. The minidriver supplies the property sets it supports in the **DevicePropertiesArray** of [**HW\_STREAM\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff559690). Each stream supplies the property sets it supports in the **StreamPropertiesArray** of the [**HW\_STREAM\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff559692) structure for that stream.

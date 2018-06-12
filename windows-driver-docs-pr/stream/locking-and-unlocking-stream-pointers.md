@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Locking and Unlocking Stream Pointers
 
 
-## <a href="" id="ddk-locking-and-unlocking-stream-pointers-ksg"></a>
+
 
 
 Each stream pointer maintains a lock status: either locked or unlocked.

@@ -8,7 +8,7 @@ ms.assetid: 55ea5606-39a9-4962-989f-29900d5ccac8
 # Driver Settings
 
 
-## <a href="" id="ddk-driver-settings-di"></a>
+
 
 
 These registry settings are set up during installation from the INF file, as described in [Creating an INF File](creating-an-inf-file.md), and during the device enumeration at boot time.

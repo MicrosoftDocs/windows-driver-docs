@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Header-Data Split Architecture
 
 
-## <a href="" id="ddk-header-data-split-architecture-ng"></a>
+
 
 
 A header-data split provider improves network performance by splitting the headers and data in received Ethernet frames into separate buffers. A header-data split provider includes a network interface card (NIC) and an NDIS 6.1 or later miniport driver that services the NIC.

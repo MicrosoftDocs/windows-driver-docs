@@ -83,7 +83,7 @@ nt[Architecture][.[OSMajorVersion][.[OSMinorVersion][.[ProductType][.SuiteMask]]
 ```
 Starting with Windows 10, version 1607 (Build 14310 and later), the format of the *TargetOSVersion* decoration is as follows:
 ```
-nt[Architecture][.[OSMajorVersion][.[OSMinorVersion][.[ProductType][.SuiteMask][.[BuildNumber]]]]]
+nt[Architecture][.[OSMajorVersion][.[OSMinorVersion][.[ProductType][.[SuiteMask][.[BuildNumber]]]]]
 ```
 
 Each field is defined as follows:

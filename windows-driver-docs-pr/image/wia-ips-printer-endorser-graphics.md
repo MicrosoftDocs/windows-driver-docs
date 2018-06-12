@@ -23,7 +23,7 @@ ms.technology: windows-devices
 
 The **WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS** property is used to report whether the Imprinter/Endorser item supports graphics and image data along with text. Graphics are typically used by the device to print/endorse near the text, or as a background image. The WIA minidriver creates and maintains this property.
 
-## <span id="ddk_wia_ipa_depth_si"></span><span id="DDK_WIA_IPA_DEPTH_SI"></span>
+
 
 
 Property Type: VT\_I4 (Boolean)

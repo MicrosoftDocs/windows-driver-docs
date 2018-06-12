@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Introduction to Spin Locks
 
 
-## <a href="" id="ddk-introduction-to-spin-locks-kg"></a>
+
 
 
 Spin locks are kernel-defined, kernel-mode-only synchronization mechanisms, exported as an opaque type: KSPIN\_LOCK. A spin lock can be used to protect shared data or resources from simultaneous access by routines that can execute concurrently and at IRQL &gt;= DISPATCH\_LEVEL in SMP machines.

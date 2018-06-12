@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Introduction to Printing
 
 
-## <a href="" id="ddk-introduction-to-printing-gg"></a>
+
 
 
 The Microsoft Windows 2000 and later printing architecture consists of a print spooler and a set of printer drivers. By calling device-independent functions, applications can create print jobs and send them to many devices. This includes laser printers, vector plotters, raster printers, and fax machines.

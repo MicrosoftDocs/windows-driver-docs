@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Securing and Releasing Ownership of Virtual Addresses
 
 
-## <a href="" id="ddk-securing-and-releasing-ownership-of-virtual-addresses-ng"></a>
+
 
 
 The proxy driver must secure ownership of the virtual addresses of user-mode buffers whenever the SAN service provider for the proxy driver caches those buffers. For more information about caching buffers, see [Caching Registered Memory](caching-registered-memory.md). The proxy driver secures ownership of a user-mode buffer, so that the operating system notifies the Windows Sockets switch if the buffer is released back to the operating system by an application. To secure ownership of a buffer, the proxy driver must call the [**MmSecureVirtualMemory**](https://msdn.microsoft.com/library/windows/hardware/ff556374) function. In this call, the proxy driver passes a pointer to the starting address of the buffer and the size, in bytes, of the buffer.

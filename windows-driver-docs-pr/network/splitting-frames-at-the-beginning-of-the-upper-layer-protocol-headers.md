@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Splitting Frames at the Beginning of the Upper Layer-Protocol Headers
 
 
-## <a href="" id="ddk-splitting-frames-at-the-beginning-of-the-upper-layer-protocol-head"></a>
+
 
 
 An *upper-layer protocol* is an IP transport protocol such as TCP, UDP, or ICMP.

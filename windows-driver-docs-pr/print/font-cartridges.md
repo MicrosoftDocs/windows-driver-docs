@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Font Cartridges
 
 
-## <a href="" id="ddk-font-cartridges-gg"></a>
+
 
 
 If your printer accepts font cartridges, cartridges can be described by \***FontCartridge** GPD file entries. This entry's format is:

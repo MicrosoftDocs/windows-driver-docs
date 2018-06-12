@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Root-Level-Only Attributes
 
 
-## <a href="" id="ddk-root-level-only-attributes-gg"></a>
+
 
 
 Root-level-only attributes are [general attributes](general-attributes.md) that describe such driver-specific characteristics as the names of resource files, help files, or additional included GPD files, along with specifications for the driver's master units, version number, and character code page.

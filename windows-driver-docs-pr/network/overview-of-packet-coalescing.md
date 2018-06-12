@@ -45,14 +45,3 @@ The following points apply to the support of packet coalescing by NDIS:
 -   NDIS supports packet coalescing for packets received on the default NDIS port (port 0) assigned to the physical network adapter. NDIS does not support packet coalescing on NDIS ports that are assigned to virtual network adapters. For more information, see [NDIS Ports](ndis-ports.md).
 
 -   NDIS supports packet coalescing for packets received on the default receive queue of the network adapter. This receive queue has an identifier of NDIS\_DEFAULT\_RECEIVE\_QUEUE\_ID.
-
--   NDIS does not support packet coalescing for native 802.11 miniport drivers that operate in extensible access point (ExtAP) mode. For more information about the ExtAP operation mode, see [Extensible Access Point Operation Mode](extensible-access-point-operation-mode.md).
-
- 
-
- 
-
-
-
-
-

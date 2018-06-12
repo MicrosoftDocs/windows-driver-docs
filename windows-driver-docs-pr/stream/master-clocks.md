@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Master Clocks
 
 
-## <a href="" id="ddk-master-clocks-ksg"></a>
+
 
 
 Minidrivers can synchronize streams to clocks created by other minidrivers; multiple streams can be synchronized to one clock. If the pin uses or produces such a *master clock*, the minidriver should support [**KSPROPERTY\_STREAM\_MASTERCLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff565713). Clients also can use this property to set the master clock for the pin. Pins that perform rendering and capturing operations frequently use a master clock. The minidriver is responsible for releasing clock references upon termination.

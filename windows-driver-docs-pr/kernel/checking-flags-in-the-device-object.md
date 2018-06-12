@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Checking Flags in the Device Object
 
 
-## <a href="" id="ddk-checking-flags-in-the-device-object-kg"></a>
+
 
 
 For each IRP requesting an I/O operation to/from removable media, a removable-media device driver must determine whether DO\_VERIFY\_VOLUME is already set in its **DeviceObject-&gt;Flags**. If this value is set, the driver must do the following:

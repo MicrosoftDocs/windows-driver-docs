@@ -2,6 +2,11 @@
 title: DDI usage rule set (Storport)
 description: Use these rules to verify that your driver correctly uses Storport DDIs correctly.
 ms.assetid: 858BBD97-4E3D-464A-B85F-358809431347
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DDI usage rule set (Storport)

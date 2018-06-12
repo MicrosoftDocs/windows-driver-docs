@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Installing Customized Print Web Pages
 
 
-## <a href="" id="ddk-installing-customized-print-web-pages-gg"></a>
+
 
 
 The methods used for installing customized print Web pages depend on whether you are installing pages that are specific to a printer type, specific to a manufacturer, or specific to a port monitor. See the following topics:

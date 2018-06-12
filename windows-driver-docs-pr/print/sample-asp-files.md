@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Sample ASP Files
 
 
-## <a href="" id="ddk-sample-asp-files-gg"></a>
+
 
 
 Sample ASP files are provided in the Windows Driver Kit (WDK). The samples are located in the \\Src\\Print\\QueueASP subdirectory of the directory tree that contains the WDK.

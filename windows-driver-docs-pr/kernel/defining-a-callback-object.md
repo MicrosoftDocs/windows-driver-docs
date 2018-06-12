@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Defining a Callback Object
 
 
-## <a href="" id="ddk-defining-a-callback-object-kg"></a>
+
 
 
 A driver can create a callback object, through which other drivers can request notification of conditions defined by the creating driver. The following figure shows the steps involved in defining a callback object.

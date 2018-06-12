@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Duplicating Socket Handles for a SAN
 
 
-## <a href="" id="ddk-duplicating-socket-handles-for-a-san-ng"></a>
+
 
 
 Multiple applications that run in different processes can use the Windows Sockets switch to perform operations on a shared underlying socket. However, only one application at a time can perform operations on that shared underlying socket.

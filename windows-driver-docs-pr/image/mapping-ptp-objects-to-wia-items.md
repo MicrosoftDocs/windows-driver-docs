@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Mapping PTP Objects to WIA Items
 
 
-## <a href="" id="ddk-mapping-ptp-objects-to-wia-items-si"></a>
+
 
 
 A WIA item is created for each PTP object present on a device. The driver displays the objects in the same hierarchy as they were reported in. For example, if all of the objects are reported under a folder named "XYZ", the pictures are displayed in Explorer under a folder named "XYZ".

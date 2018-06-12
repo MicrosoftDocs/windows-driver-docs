@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Raster Data Emission Attributes
 
 
-## <a href="" id="ddk-raster-data-emission-attributes-gg"></a>
+
 
 
 The following table lists attributes describing the printer's support for raster data emission.

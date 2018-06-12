@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Power Management (NDIS 6.0 and NDIS 6.1)
 
 
-## <a href="" id="ddk-power-management-for-ndis-miniport-drivers-ng"></a>
+
 
 
 This section describes the NDIS power management interface that was introduced with Windows XP and NDIS 5.1. This power management interface is supported in the following versions of NDIS:

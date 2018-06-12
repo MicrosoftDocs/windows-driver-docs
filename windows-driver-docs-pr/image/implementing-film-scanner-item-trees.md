@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Implementing Film Scanner Item Trees
 
 
-## <a href="" id="ddk-implementation-notes-on-film-scanner-item-trees-si"></a>
+
 
 
 This section contains additional information about flags and properties that you can use with film scanners. It also contains information about basic scanning for film scanners.

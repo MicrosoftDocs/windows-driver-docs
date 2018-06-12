@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Informing an Application of Item Tree Changes
 
 
-## <a href="" id="ddk-informing-an-application-of-item-tree-changes-si"></a>
+
 
 
 A minidriver for a WIA device must be able to inform applications associated with WIA devices of any changes to the device's item tree. For example, if an application displays a user interface showing thumbnails of the pictures on a camera, a WIA minidriver should be able to notify an application's user interface to not display thumbnails of pictures that the user has already deleted.

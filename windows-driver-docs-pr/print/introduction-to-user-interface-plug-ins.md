@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Introduction to User Interface Plug-Ins
 
 
-## <a href="" id="ddk-introduction-to-user-interface-plug-ins-gg"></a>
+
 
 
 When you add support for a new printer device to either the [Microsoft Universal printer driver](microsoft-universal-printer-driver.md) (Unidrv) or the [Microsoft PostScript printer driver](microsoft-postscript-printer-driver.md) (Pscript), you can customize the driver's user interface by modifying the printer property sheet or the document property sheet for your printer.

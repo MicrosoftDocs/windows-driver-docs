@@ -15,7 +15,7 @@ keywords:
 # OID\_802\_3\_CURRENT\_ADDRESS
 
 
-## <a href="" id="ddk-oid-802-3-current-address-nr"></a>
+
 
 
 The address the NIC is currently using.

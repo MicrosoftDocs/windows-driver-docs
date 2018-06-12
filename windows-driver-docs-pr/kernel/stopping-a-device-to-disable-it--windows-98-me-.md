@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Stopping a Device to Disable It (Windows 98/Me)
 
 
-## <a href="" id="ddk-stopping-a-device-to-disable-it-windows-98-me-kg"></a>
+
 
 
 On Windows 98/Me, the PnP manager issues stop IRPs when Device Manager disables the device. (Windows 2000 and later versions of Windows issue [remove IRPs](removing-a-device.md) in this situation).

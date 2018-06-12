@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # ControlFlags Section in a Network INF File
 
 
-## <a href="" id="ddk-controlflags-section-ng"></a>
+
 
 
 A **ControlFlags** section in a network INF file is based on the generic [**INF ControlFlags section**](https://msdn.microsoft.com/library/windows/hardware/ff546342).

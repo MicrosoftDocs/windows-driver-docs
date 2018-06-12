@@ -19,7 +19,7 @@ XML Paper Specification (XPS) rasterization on the GPU does not require any inde
 | Minimum WDDM version                                                              | 1.2                                               |
 | Minimum Windows version                                                           | 8                                                 |
 | Driver implementation—Full graphics and Display only                              | Mandatory                                         |
-| [WHCK]( http://go.microsoft.com/fwlink/p/?linkid=258342) requirements and tests | **Device.Graphicsâ€¦XPSRasterizationConformance** |
+| [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests | **Device.Graphics¦XPSRasterizationConformance** |
 
  
 
@@ -33,7 +33,7 @@ The XPS rasterizer is a system component used heavily by Windows print drivers t
 ## <span id="Hardware_certification_requirements"></span><span id="hardware_certification_requirements"></span><span id="HARDWARE_CERTIFICATION_REQUIREMENTS"></span>Hardware certification requirements
 
 
-For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation]( http://go.microsoft.com/fwlink/p/?linkid=258342) on **Device.Graphicsâ€¦XPSRasterizationConformance**.
+For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphics ¦ XPSRasterizationConformance**.
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 

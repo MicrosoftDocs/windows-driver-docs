@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Target Media for INF Files
 
 
-## <a href="" id="ddk-target-media-for-infs-dg"></a>
+
 
 
 An INF file specifies the target location for device files that have a [**DestinationDirs**](inf-destinationdirs-section.md) section. This section should always be specified in the same INF file as the section with the copy, rename, or delete statements.

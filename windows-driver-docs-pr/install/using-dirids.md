@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Using Dirids
 
 
-## <a href="" id="ddk-using-dirids-dg"></a>
+
 
 
 Many of the directories that appear in INF files can be expressed by using directory identifiers (*dirids*), which are numbers that identify specific directories. Applications can use, but cannot reassign the system-defined directories that are associated with *dirids* whose values are from -1 through 32767.

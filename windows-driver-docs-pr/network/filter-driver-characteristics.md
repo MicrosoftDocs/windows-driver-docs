@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Filter Driver Characteristics
 
 
-## <a href="" id="ddk-filter-driver-characteristics-ng"></a>
+
 
 
 Filter drivers have the following characteristics:

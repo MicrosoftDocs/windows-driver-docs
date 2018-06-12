@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Supporting Asynchronous I/O
 
 
-## <a href="" id="ddk-supporting-asynchronous-i-o-kg"></a>
+
 
 
 The I/O manager provides asynchronous I/O support so that the originator of an I/O request (usually a user-mode application but sometimes another driver) can continue executing, rather than wait for its I/O request to be completed. Asynchronous I/O support improves both the overall system throughput and the performance of any code that makes an I/O request.

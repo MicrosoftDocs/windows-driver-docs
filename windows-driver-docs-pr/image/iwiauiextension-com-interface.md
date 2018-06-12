@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # IWiaUIExtension COM Interface
 
 
-## <a href="" id="ddk-iwiauiextension-com-interface-si"></a>
+
 
 
 If you implement the [IWiaUIExtension interface](https://msdn.microsoft.com/library/windows/hardware/ff545078), you can implement none, some, or all the **IWiaUIExtension** methods. If a particular method returns E\_NOTIMPL, the system-provided alternative, and one is available, it is used instead.

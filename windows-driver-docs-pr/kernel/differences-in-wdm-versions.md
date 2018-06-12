@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Differences in WDM Versions
 
 
-## <a href="" id="ddk-differences-in-wdm-versions-kg"></a>
+
 
 
 The simplest way to ensure cross-system compatibility is to write a driver that uses only features that are supported by the lowest-numbered version of WDM. However, this is not always possible. Sometimes, drivers require additional code to take advantage of the features that are available in later versions of WDM, or to compensate for differences between Windows operating systems.

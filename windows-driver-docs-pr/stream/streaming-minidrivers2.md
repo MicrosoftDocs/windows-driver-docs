@@ -23,7 +23,7 @@ ms.technology: windows-devices
 # Streaming Minidrivers
 
 
-## <a href="" id="ddk-streaming-minidrivers-ksg"></a>
+
 
 
 **Note**   This section details the outdated *Stream.sys* class driver. With the release of Microsoft Windows XP, Microsoft supports *Stream.sys* only for existing drivers. As of this release, Microsoft recommends that vendors consider developing new video or audio/video multimedia drivers using the AVStream class driver model. See details in the [AVStream Overview](avstream-overview.md). If developing an audio-only driver, you should write an audio miniport driver under the Microsoft-provided *Portcls.sys* class driver. For details, see [Audio Miniport Drivers](https://msdn.microsoft.com/library/windows/hardware/ff536206).

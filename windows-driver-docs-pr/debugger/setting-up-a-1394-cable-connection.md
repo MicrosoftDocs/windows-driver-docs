@@ -12,6 +12,11 @@ ms.technology: windows-devices
 
 # Setting Up Kernel-Mode Debugging over a 1394 Cable Manually
 
+> [!IMPORTANT]  
+> The 1394 transport is available for use in Windows 10, version 1607 and earlier. 
+> It is not available in later versions of Windows. You should transition your projects to other transports, such as KDNET using Ethernet. 
+> For more information about that transport, see [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md).
+>
 
 Debugging Tools for Windows supports kernel debugging over a 1394 (Firewire) cable. This topic describes how to set up 1394 debugging manually.
 

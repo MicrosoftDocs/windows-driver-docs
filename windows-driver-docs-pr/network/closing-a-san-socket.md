@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Closing a SAN Socket
 
 
-## <a href="" id="ddk-closing-a-san-socket-ng"></a>
+
 
 
 After the Windows Sockets switch on either side of a connection calls a SAN service provider's [**WSPCloseSocket**](https://msdn.microsoft.com/library/windows/hardware/ff566273) function, the SAN service provider performs the following procedure to close a SAN socket:

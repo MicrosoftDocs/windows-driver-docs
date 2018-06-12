@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # DriverEntry Return Values
 
 
-## <a href="" id="ddk-driverentry-return-values-kg"></a>
+
 
 
 A [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine returns an [NTSTATUS value](ntstatus-values.md), either STATUS\_SUCCESS or an appropriate error status.

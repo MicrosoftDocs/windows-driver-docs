@@ -29,7 +29,7 @@ Writing a driver that is customized to the device's requirements is the most fle
 -   [Can you use a Microsoft-provided driver?](#can-you-use-a-microsoft-provided-driver)
 -   [If you write a USB client driver, which driver model is best?](#if-you--write-a-usb-client-driver--which-driver-model-is-best-)
 
-## <a href="" id="can-you-use-a-microsoft-provided-driver"></a>Can you use a Microsoft-provided driver?
+## Can you use a Microsoft-provided driver?
 
 
 You might *not* need to write a driver if:
@@ -57,14 +57,14 @@ You might *not* need to write a driver if:
 
     In Windows 8, we've added a new compatible ID to the INF for WinUSB installation. If the device firmware contains that compatible ID, WinUSB is loaded by default as the function driver for the device. This means that hardware manufacturers are not required to distribute INF files for their WinUSB devices. For more information, see [WinUSB Device](automatic-installation-of-winusb.md).
 
-## <a href="" id="if-you--write-a-usb-client-driver--which-driver-model-is-best-"></a>If you write a USB client driver, which driver model is best?
+## If you write a USB client driver, which driver model is best?
 
 
 The answer depends on the design of your device. First, determine whether a particular driver model meets your requirements. Some design considerations are based on whether you want the USB device to be accessed by multiple concurrent applications and support data streaming through isochronous endpoints.
 
 If you choose to write a driver, here are your options:
 
--   [User-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565) (UMDF)
+-   [User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/) (UMDF)
 
     UMDF provides device driver interfaces (DDIs) that a client driver can use to integrate with Windows components such as the Plug and Play Manager and Power Manager. UMDF also provides specialized target objects for USB devices, which abstract the hardware in user mode and simplify I/O operations for the driver. In addition to the UMDF interfaces, WDF provides enhanced debugger extensions and tracing tools for user-mode drivers. UMDF is based on the component object model (COM) and developing a user-mode driver is easier for a C++ developer.
 
@@ -83,7 +83,7 @@ If you choose to write a driver, here are your options:
 
      
 
--   [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565) (KMDF)
+-   [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/) (KMDF)
 
     KMDF was designed to make the driver models easy to extend to support new types of hardware. KMDF provides DDIs and data structures that make kernel-mode USB drivers easier to implement than the earlier Windows Driver Model (WDM) drivers. In addition, KMDF provides specialized input/output (I/O) targets that you can use to write a fully functional client driver that uses the Microsoft USB driver stack.
 

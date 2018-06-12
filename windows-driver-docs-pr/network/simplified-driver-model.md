@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Simplified Driver Model
 
 
-## <a href="" id="ddk-simplified-driver-model-ng"></a>
+
 
 
 The following NDIS 6.0 features simplify driver development:

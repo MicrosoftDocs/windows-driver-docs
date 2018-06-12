@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Overview of Wait/Wake Operation
 
 
-## <a href="" id="ddk-overview-of-wait-wake-operation-kg"></a>
+
 
 
 The operating system's wake-up mechanism works as shown in the following figure.

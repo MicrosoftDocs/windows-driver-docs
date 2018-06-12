@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Axis Selection
 
 
-## <a href="" id="ddk-axis-selection-di"></a>
+
 
 
 This section contains information about how DirectInput maps axes for use by DirectInput and Windows multimedia applications.

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # IoCompletion Routines for Wait/Wake IRPs
 
 
-## <a href="" id="ddk-iocompletion-routines-for-wait-wake-irps-kg"></a>
+
 
 
 The I/O manager calls a driver's wait/wake [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine after the next-lower driver in the device stack has completed the wait/wake IRP. Each function and filter (FDO) driver that handles a wait/wake IRP should set an *IoCompletion* routine for the IRP.

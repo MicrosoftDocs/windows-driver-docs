@@ -57,6 +57,5 @@ For more information and a code example, see [Creating the NetAdapter interface 
 | --- | --- |
 | Target platform | Universal |
 | Minimum KMDF version | 1.27 |
-| Minimum NetAdapterCx version | 1.3 |
 | Header | Mbbcx.h |
 | IRQL | PASSIVE_LEVEL |

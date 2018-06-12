@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Points to Consider When Canceling IRPs
 
 
-## <a href="" id="ddk-points-to-consider-when-canceling-irps-kg"></a>
+
 
 
 This section discusses guidelines for implementing a *Cancel* routine and handling cancelable IRPs. For more information about handling cancelable IRPs, see the [Flow of Control for Cancel-Safe IRP Queuing](http://go.microsoft.com/fwlink/p/?linkid=57844).

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using the Kernel Stack
 
 
-## <a href="" id="ddk-using-the-kernel-stack-kg"></a>
+
 
 
 The size of the kernel-mode stack is limited to approximately three pages. Therefore, when passing data to internal routines, drivers cannot pass large amounts of data on the kernel stack.

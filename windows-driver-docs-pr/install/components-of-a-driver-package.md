@@ -22,7 +22,7 @@ ms.technology: windows-devices
 # Components of a Driver Package
 
 
-## <a href="" id="ddk-components-of-a-driver-package-pg"></a>
+
 
 
 The following components are necessary to install and support a device on a Windows operating system:

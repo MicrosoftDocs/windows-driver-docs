@@ -18,7 +18,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-offload-block-lists-ng"></a>
+
 
 
 The basic building block of an [offload state tree](offload-state-tree.md) is the [**NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff566469) structure, which is also called an *offload block list*. The following figure shows the members of an NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST structure.

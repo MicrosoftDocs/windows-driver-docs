@@ -3,7 +3,7 @@ title: Build and submit a firmware package to Windows Update (WU)
 description: Build and submit a firmware package to Windows Update (WU)
 author: windows-driver-content
 ms.author: windowsdriverdev
-ms.date: 05/07/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -18,11 +18,11 @@ Because a firmware update is delivered as a driver package, it follows the same 
 
 1.  When the contents of the driver package are installed on the System Under Test (SUT), the device must pass the required Windows Hardware Lab Kit (HLK) tests. If there is not a test specifically for the firmware being tested, locate the most reasonable alternative and submit results with the HLK package as needed.
 
-2.  The driver package can then be submitted to the [Windows Dev Center Hardware Dashboard](https://sysdev.microsoft.com/en-US/Hardware/signup/) for signing.
+2.  The driver package can then be submitted to the [Windows Dev Center Hardware Dashboard](https://developer.microsoft.com/windows/hardware/dashboard-sign-in) for signing.
 
-3.  Once signed, the driver package is provided to the submitter where the submitter has the option to publish on Windows Update (WU) via the Hardware Dashboard (using the Driver Distribution feature). 
+3.  Once signed, the driver package is provided to the submitter where the submitter has the option to publish on Windows Update (WU) via the Hardware Dashboard (using the Driver Distribution feature).
 
-Publishing to WU is done via the [Hardware Dashboard](https://developer.microsoft.com/en-us/windows/hardware/dashboard-sign-in) using the Driver Distribution feature.
+Publishing to Windows Update is done via the [Hardware Dashboard](https://developer.microsoft.com/windows/hardware/dashboard-sign-in) using the Driver Distribution feature.
 
 Signing of the driver package is different from signing the UEFI firmware, though both need to be signed. Signing is via Hardware Dashboard using the file signing services feature. The signature on the driver package, delivered via security catalog, is used by Windows to verify the integrity of firmware.bin before handing it to UEFI. Windows does not provide the security catalog to the firmware. The signature on the UEFI firmware or device firmware update is validated by the platform firmware and is not checked by Windows. The IHV or OEM is responsible for ensuring the integrity and security of the firmware through signature verification, encryption, or other means. Review the [Microsoft UEFI CA Signing policy updates](https://blogs.msdn.microsoft.com/windows_hardware_certification/2013/12/03/microsoft-uefi-ca-signing-policy-updates/) link below for additional details.
 
@@ -38,7 +38,7 @@ On non-ARM systems,
 
 -   UEFI Secure Boot can then automatically be leveraged to verify the integrity of the capsule.
 
-**Note**  Windows does not allow OEM Verisign-signed firmware update packages, even in test environments. They must be test signed by Microsoft through the portal. 
+**Note**  Windows does not allow OEM Verisign-signed firmware update packages, even in test environments. They must be test signed by Microsoft through the portal.
 
 Update the firmware on your SUT device by installing the firmware update package.
 
@@ -65,33 +65,31 @@ If you follow this format, the submission should pass. To confirm the parent fol
 
 ## Related resources
 
-[Authoring a firmware update package](https://msdn.microsoft.com/en-us/windows/hardware/drivers/bringup/authoring-a-firmware-update-package)
+[Authoring a firmware update package](https://docs.microsoft.com/windows-hardware/drivers/bringup/authoring-a-firmware-update-package)
 
-[Certifying and signing the update package](https://msdn.microsoft.com/en-us/windows/hardware/drivers/bringup/certifying-and-signing-the-update-package)
+[Certifying and signing the update package](https://docs.microsoft.com/windows-hardware/drivers/bringup/certifying-and-signing-the-update-package)
 
-[Device.Fundamentals Reliability Testing Prerequisites](https://msdn.microsoft.com/en-us/library/windows/hardware/dn974452)     
+[Device.Fundamentals Reliability Testing Prerequisites](https://docs.microsoft.com/windows-hardware/test/hlk/testref/devicefundamentals-reliability-testing-prerequisites)
 
-[Driver Signing](https://msdn.microsoft.com/en-us/library/windows/hardware/dn962252)
+[Driver Signing](https://docs.microsoft.com/windows-hardware/drivers/dashboard)
 
-[Microsoft UEFI CA Signing Policy updates](https://blogs.msdn.microsoft.com/windows_hardware_certification/2013/12/03/microsoft-uefi-ca-signing-policy-updates/)                    
+[Microsoft UEFI CA Signing Policy updates](https://blogs.msdn.microsoft.com/windows_hardware_certification/2013/12/03/microsoft-uefi-ca-signing-policy-updates/)
 
-[View test results and log files](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914996)
+[View test results and log files](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/step-7-view-test-results-and-log-files)
 
-[Create a submission package](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914998)
+[Create a submission package](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/step-8-create-a-submission-package)
 
-[System and device firmware updates via a firmware driver package](https://msdn.microsoft.com/en-us/windows/hardware/drivers/bringup/system-and-device-firmware-updates-via-a-firmware-driver-package) 
+[System and device firmware updates via a firmware driver package](https://docs.microsoft.com/windows-hardware/drivers/bringup/system-and-device-firmware-updates-via-a-firmware-driver-package)
 
-[Troubleshooting Device Fundamentals Reliability Testing by using the Windows HLK](https://msdn.microsoft.com/en-us/library/windows/hardware/dn974540)
+[Troubleshooting Device Fundamentals Reliability Testing by using the Windows HLK](https://docs.microsoft.com/windows-hardware/test/hlk/testref/troubleshooting-device-fundamentals-reliability-testing-by-using-the-windows-hck)
 
-[UEFI Firmware Signing](https://msdn.microsoft.com/en-us/library/windows/hardware/hh973604)
+[Windows Hardware Certification blog](https://blogs.msdn.microsoft.com/windows_hardware_certification)
 
-[Windows Hardware Certification blog](https://blogs.msdn.microsoft.com/windows_hardware_certification/feed/)
+[Windows UEFI firmware update platform](https://docs.microsoft.com/windows-hardware/drivers/bringup/windows-uefi-firmware-update-platform)
 
-[Windows UEFI firmware update platform](https://msdn.microsoft.com/en-us/windows/hardware/drivers/bringup/windows-uefi-firmware-update-platform)
+[Windows Hardware Dev Center dashboard](https://developer.microsoft.com/windows/hardware/dashboard-sign-in)
 
-[Windows Hardware Dev Center dashboard](https://developer.microsoft.com/en-us/windows/hardware/dashboard-sign-in)
-
-[ESRT table definition ](https://msdn.microsoft.com/en-us/windows/hardware/drivers/bringup/esrt-table-definition)                   
+[ESRT table definition ](https://docs.microsoft.com/windows-hardware/drivers/bringup/esrt-table-definition)
 
 
 

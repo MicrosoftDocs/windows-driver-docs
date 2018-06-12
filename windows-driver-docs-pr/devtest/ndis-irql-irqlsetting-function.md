@@ -2,6 +2,11 @@
 title: Irql\_IrqlSetting\_Function rule (ndis)
 description: The Irql\_IrqlSetting\_Function rule specifies that the NDIS interrupt macros must be called at correct IRQL levels.
 ms.assetid: 47e62c7c-bd43-4b4a-b7d6-3f64a4b8a6c8
+ms.author: windowsdriverdev
+ms.date: 5/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["Irql_IrqlSetting_Function rule (ndis)"]
 topic_type:
 - apiref

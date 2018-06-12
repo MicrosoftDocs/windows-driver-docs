@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Optional Flatbed Item Properties
 
 
-## <a href="" id="ddk-optional-wia-item-properties-for-flatbed-scanners-si"></a>
+
 
 
 The WIA flatbed scanner item can optionally support the following WIA properties:

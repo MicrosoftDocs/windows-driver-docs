@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Process for installing network components
 
 
-## <a href="" id="ddk-installing-network-components-ng"></a>
+
 
 
 This section provides detailed information about the components and files that are used to install network components and how to create information (INF) files for them.

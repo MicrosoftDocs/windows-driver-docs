@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Framework Object Context Space
 
 
-## <a href="" id="ddk-framework-object-context-df"></a>
+
 
 
 *Object context space* is extra, nonpageable, memory space that a driver can allocate and assign to an object. Each framework-based driver can create one or more object-specific context spaces for every framework object that the driver receives or creates.

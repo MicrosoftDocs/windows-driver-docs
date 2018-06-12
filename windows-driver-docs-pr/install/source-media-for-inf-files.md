@@ -21,7 +21,7 @@ ms.technology: windows-devices
 # Source Media for INF Files
 
 
-## <a href="" id="ddk-source-media-for-infs-dg"></a>
+
 
 
 The methods that you should use to specify source media for device files depend on whether your INF files ship separately from the operating system or are included with the operating system.

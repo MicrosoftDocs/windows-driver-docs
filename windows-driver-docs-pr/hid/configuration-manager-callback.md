@@ -9,7 +9,7 @@ keywords: ["callbacks WDK joysticks", "configuration manager callbacks WDK joyst
 # Configuration Manager Callback
 
 
-## <a href="" id="ddk-configuration-manager-callback-di"></a>
+
 
 
 ```

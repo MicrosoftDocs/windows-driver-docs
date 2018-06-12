@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Easier-to-Write Filter Drivers
 
 
-## <a href="" id="ddk-easier-to-write-filter-drivers-ng"></a>
+
 
 
 NDIS 6.0 filter drivers are easier to write than the previous NDIS filter intermediate drivers.

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # PnP Driver Design Guidelines
 
 
-## <a href="" id="ddk-pnp-driver-design-guidelines-kg"></a>
+
 
 
 Plug and Play provides:

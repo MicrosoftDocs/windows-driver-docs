@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Properties for WIA File System Minidrivers
 
 
-## <a href="" id="ddk-properties-for-wia-file-system-minidrivers-si"></a>
+
 
 
 The following property is not implemented at this time. It is reserved by Microsoft for future use.

@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Implementing Printer Driver COM Interfaces
 
 
-## <a href="" id="ddk-implementing-printer-driver-com-interfaces-gg"></a>
+
 
 
 This section explains how to construct a plug-in, based on WDK-supplied sample code. It also explains the calling sequences used for communication between the printer drivers and plug-ins. This section includes the following topics:

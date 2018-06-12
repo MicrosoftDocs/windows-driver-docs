@@ -22,7 +22,7 @@ ms.technology: windows-devices
 # Isochronous Listen Options for IEEE 1394 Devices
 
 
-## <a href="" id="ddk-isochronous-listen-options-for-ieee-1394-devices-kg"></a>
+
 
 
 This section describes the various isochronous listen options.

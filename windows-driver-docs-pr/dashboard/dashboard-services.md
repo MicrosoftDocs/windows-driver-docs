@@ -9,10 +9,25 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Legacy Dashboard
+# Legacy (Sysdev) Dashboard
+
+> [!Note]
+> Until all services have been migrated to the Hardware Dev Center Dashboard, you must continue to use the legacy dashboard for tasks listed on the [dashboard landing page](index.md).    
+>
+> The following table contains estimates of when features will be available in the Windows Hardware Dev Center Dashboard. Feature-specific legal and administration tasks will transition with the feature. 
+> | Task                                 | Transition timeframe | Documentation link (if available) |
+> |--------------------------------------|----------------------|----------------------|
+> | WLK device certification submissions | Completed          | [Create a new WLK device certification submission](create-a-new-hardware-logo-submission.md) |
+> | Attestation signing                  | Completed         | [Attestation signing a kernel driver for public release](attestation-signing-a-kernel-driver-for-public-release.md) |
+> | Hardware certification submissions   | Completed          | [Hardware certification submissions](hardware-certification-submissions.md)
+> | UEFI and LSA                         | Completed           | | [File signing LSA plugins and UEFI firmware](lsa-and-uefi-file-signing.md)
+> | Device metadata                      | Mid 2018      | |
+> | Bug management                       | Completed      | [Bug management](http://aka.ms/collaboratedocs) |
+> | Remote debugging (WRD)               | Retiring      | |
+> | Win32 app certification              | Retired      |  [Win32 logo certification deprecation](https://blogs.msdn.microsoft.com/windows_hardware_certification/2018/04/19/win32-logo-certification-deprecation/)|
 
 
-You can [certify your devices and apps for hardware certification](http://go.microsoft.com/fwlink/?LinkId=324025) using the Hardware Dev Center Dashboard. You can also use the Dashboard to manage submissions, track the performance of your device or app, and much more. To access the Dashboard, you’ll need [to register your company and get a code signing certificate](http://go.microsoft.com/fwlink/?LinkId=394273).
+You can [certify your devices and apps for hardware certification](http://go.microsoft.com/fwlink/?LinkId=324025) using the legacy dashboard. You can also use the dashboard to manage submissions, track the performance of your device or app, and much more. To access the Dashboard, you’ll need [to register your company and get a code signing certificate](http://go.microsoft.com/fwlink/?LinkId=394273).
 
 <table>
 <colgroup>

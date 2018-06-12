@@ -1,6 +1,6 @@
 ---
 title: Adding Boot Entries
-description: Adding Boot Entries
+description: Adding Boot Entries in Windows Vista and later, Windows Server 2008 and later, and Windows Recovery Environment
 ms.assetid: 5027d7ea-6f8b-435a-849f-06727068d18b
 keywords:
 - boot options WDK , adding boot entries
@@ -17,8 +17,6 @@ ms.technology: windows-devices
 # Adding Boot Entries
 
 
-## <a name= ddk_adding_boot_entries_tools></a>
-
 The first step in customizing boot options in operating systems is to add a new *boot entry* for an operating system. A *boot entry* is a set of options that define a load configuration for an operating system or bootable program.
 
 You can have multiple boot entries for an operating system, each with a different set of boot parameters. Windows Installer creates a standard boot entry when you install an operating system, and you can create additional, customized boot entries for an operating system by editing the boot options.
@@ -27,13 +25,9 @@ You can add, delete, and change the options in the boot entry that Windows Insta
 
 To add a boot entry, copy an existing boot entry, and then modify the copy.
 
-This topic includes the following sections.
+This topic applies to Windows Vista and later, Windows Server 2008 and later, and Windows Recovery Environment.
 
--   [Adding a new boot entry in Windows 10, Windows 8.1, Windows 8, and Windows 7](#adding-a-new-boot-entry-in-windows-vista-and-later)
--   [Editing the boot menu in Windows 10, Windows 8.1, Windows 8, and Windows 7](#editing-the-boot-menu-in-windows-vista-and-later)
--   [Removing and deleting a boot entry in Windows 10, Windows 8.1, Windows 8, and Windows 7](#removing-a-boot-entry-in-windows-vista-and-later)
-
-### Adding a new boot entry in Windows 10, Windows 8.1, Windows 8, Windows 7, and Windows Vista <a name="adding-a-new-boot-entry-in-windows-vista-and-later"></a>
+## Adding a new boot entry <a name="adding-a-new-boot-entry-in-windows-vista-and-later"></a>
 
 In Windows, you use BCDEdit to modify your boot options. To add a new boot entry, open a Command Prompt window with elevated privileges (right click **Command Prompt** and click **Run as administrator** from the shortcut menu).
 
@@ -69,7 +63,7 @@ When you use the **/create** option, the new boot loader entries are not added t
 
 For information about the **/create** command parameters, type **bcdedit /? /create** in a Command Prompt window.
 
-### Editing the boot menu in Windows 10, Windows 8.1, Windows 8, Windows 7, and Windows Vista <a name="editing-the-boot-menu-in-windows-vista-and-later"></a>
+## Editing the boot menu <a name="editing-the-boot-menu-in-windows-vista-and-later"></a>
 
 In Windows, new boot loader entries are not added to the boot menu automatically. You can place the boot loader entries in any order.
 
@@ -93,7 +87,7 @@ You can also use the options **/addlast, /addfirst**, and **/remove** to order a
 bcdedit /displayorder {49916baf-0e08-11db-9af4-000bdbd316a0} /addlast
 ```
 
-### Removing and deleting a boot entry in Windows 10, Windows 8.1, Windows 8, Windows 7, and Windows Vista <a name="removing-a-boot-entry-in-windows-vista-and-later"></a>
+## Removing and deleting a boot entry <a name="removing-a-boot-entry-in-windows-vista-and-later"></a>
 
 The following command removes the {49916baf-0e08-11db-9af4-000bdbd316a0} boot entry item from the boot menu.
 
@@ -157,8 +151,3 @@ resumeobject            {d7094401-2641-11db-baba-00e018e2b8db}
 nx                      OptIn
 debug                   Yes
 ```
-
- 
-
- 
-

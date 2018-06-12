@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # DVD Decoder Support in Windows
 
 
-## <a href="" id="ddk-dvd-decoder-support-in-windows-ksg"></a>
+
 
 
 **Note**   This topic is intended for developers. For general information about DVD decoders for Windows, including a list of software decoders, see article Q306331, "[Supported software MPEG-2 DVD decoders in Windows Media Player for Windows XP and Windows Vista](http://go.microsoft.com/fwlink/p/?linkid=3100&ID=306331)," in the Microsoft Knowledge Base.

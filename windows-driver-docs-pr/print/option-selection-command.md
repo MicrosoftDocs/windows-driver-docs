@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Option Selection Command
 
 
-## <a href="" id="ddk-option-selection-command-gg"></a>
+
 
 
 The following table lists the option selection command. The command is specified using the [command entry format](command-entry-format.md).

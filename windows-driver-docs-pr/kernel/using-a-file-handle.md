@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using a File Handle
 
 
-## <a href="" id="ddk-using-a-file-handle-kg"></a>
+
 
 
 The following table lists the operations that drivers can perform on a file handle and the corresponding routines that carry out those operations.

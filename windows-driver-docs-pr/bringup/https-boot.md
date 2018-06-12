@@ -17,12 +17,10 @@ HTTP boot is a potential security risk, if implemented, vendors must use HTTPS.
 
 For reference, there is currently no support in Windows for HTTPS boot. Send email to <SAUEFI@Microsoft.com> if any questions or concerns, or if your company has an interest in this feature.
 
-For more information, see the section on **System.Fundamentals.Firmware.UEFISecureBoot** in [Hardware Compatibility Specification for Systems for Windows 10, version 1607](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/design/compatibility/systems).
-
-## Related resources 
+## Related resources
 
 
-[Hardware Compatibility Specification for Systems for Windows 10, version 1607](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/design/compatibility/systems) 
+[Windows Hardware Compatibility Program](https://docs.microsoft.com/windows-hardware/design/compatibility/)
 
 
 

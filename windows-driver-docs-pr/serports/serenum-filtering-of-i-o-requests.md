@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Serenum Filtering of I/O Requests
 
 
-## <a href="" id="ddk-serenum-filtering-of-i-o-requests-kg"></a>
+
 
 
 The following describes how Serenum filters I/O requests that are directed to a filter DO:

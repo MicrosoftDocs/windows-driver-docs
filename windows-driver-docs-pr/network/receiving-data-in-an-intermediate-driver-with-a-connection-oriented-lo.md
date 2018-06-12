@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Receiving Data in an Intermediate Driver with a Connection-Oriented Lower Edge
 
 
-## <a href="" id="ddk-receiving-data-in-an-intermediate-driver-with-a-connection-oriente"></a>
+
 
 
 If an intermediate driver is layered above a connection-oriented miniport driver, NDIS then calls the intermediate driver's [**ProtocolCoReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff570256) function to indicate received data.

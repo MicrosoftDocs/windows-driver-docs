@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Debugging Spooler Components
 
 
-## <a href="" id="ddk-debugging-spooler-components-gg"></a>
+
 
 
 This section provides information about how you can enable debug messages in spooler components. The first part of this section lists the debug variables used in spooler components. You can use these debug variables to cause debug messages originating in spooler components to be displayed. (Note that you must be working with checked builds of these components.)

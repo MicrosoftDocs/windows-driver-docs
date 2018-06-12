@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # AV/C Streaming Driver Stack
 
 
-## <a href="" id="ddk-av-c-streaming-device-stack-ksg"></a>
+
 
 
 Windows loads *Avcstrm.sys* between a subunit driver's functional device object (FDO) and the corresponding physical device object (PDO) created by *Avc.sys*. *Avcstrm.sys* resides between individual subunit drivers and the function driver, *Avc.sys*. *Avcstrm.sys* is installed as a lower-level filter driver to subunit drivers in order to provide its streaming services. The interface to the streaming service provided by *Avcstrm.sys* is based on the I/O request packet (IRP) model used by the WDM architecture, with a list of supported I/O control (IOCTL) functions. *Avcstrm.sys* can service a subunit driver that is based on either the Stream class or the AVStream interfaces. The AVStream driver model is the preferred interface to use. The following diagram illustrates where *Avcstrm.sys* fits into the AV/C driver stack.

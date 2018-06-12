@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # CoNDIS WAN Is Less Complex
 
 
-## <a href="" id="ddk-condis-wan-is-less-complex-ng"></a>
+
 
 
 CoNDIS defines objects that correspond to each of the logical entities that are involved in a connection. These entities include address families (AFs), virtual connections (VCs), service access points (SAPs), and parties.

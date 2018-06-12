@@ -16,21 +16,21 @@ ms.technology: windows-devices
 
 **MBR2GPT.EXE** converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows Preinstallation Environment (Windows PE) command prompt but can also be run from the full Windows 10 operating system (OS).
 
-For detailed description about the tool, including usage information and troubleshooting guidance, please review the documentation in the Technet article for [MBR2GPT](https://technet.microsoft.com/en-us/itpro/windows/deploy/mbr-to-gpt).
+For detailed description about the tool, including usage information and troubleshooting guidance, please review the documentation in the Technet article for [MBR2GPT](https://docs.microsoft.com/windows/deployment/mbr-to-gpt).
 
 ## Sample checklist when verifying conversion from BIOS/MBR to UEFI/GPT
 
-- Prior to running MBR2GPT                                                                                                               
-    - Run msinfo32 to verify the Machine is currently booted in BIOS mode                                                                                                     
-    - Run msinfo32 to verify the Windows 64-bit OS is installed                                                                                                               
-    - Make that the system disk has at most 3 primary partitions in MBR and at least one of the partitions is marked as Active.                                               
-    - Make sure that the device’s firmware supports UEFI boot by looking for the relevant setting(s) in the firmware menu, or by checking with the PC/firmware manufacturer   
-- After running MBR2GPT, but before booting into Windows 10 in UEFI mode                                                                                                  
-    - In the firmware menu, make sure that the boot mode setting is set to "UEFI Only" (or equivalent)                                                                        
-    - In the firmware menu, make sure that the Compatibility Support Module (CSM) is disabled and Secure Boot is enabled                                                      
-- After booting into Windows 10 in UEFI mode                                                                                                                              
-    - Run msinfo32 to verify the device is booted in UEFI mode and Secure Boot is enabled                                                                                     
-    - Verify that your line of business (LOB) applications are still functioning correctly                                                                                    
+- Prior to running MBR2GPT
+    - Run msinfo32 to verify the Machine is currently booted in BIOS mode
+    - Run msinfo32 to verify the Windows 64-bit OS is installed
+    - Make that the system disk has at most 3 primary partitions in MBR and at least one of the partitions is marked as Active.
+    - Make sure that the device’s firmware supports UEFI boot by looking for the relevant setting(s) in the firmware menu, or by checking with the PC/firmware manufacturer
+- After running MBR2GPT, but before booting into Windows 10 in UEFI mode
+    - In the firmware menu, make sure that the boot mode setting is set to "UEFI Only" (or equivalent)
+    - In the firmware menu, make sure that the Compatibility Support Module (CSM) is disabled and Secure Boot is enabled
+- After booting into Windows 10 in UEFI mode
+    - Run msinfo32 to verify the device is booted in UEFI mode and Secure Boot is enabled
+    - Verify that your line of business (LOB) applications are still functioning correctly
 
 **Note** System firmware can vary by manufacturer and by device. Contact the device manufacturer for assistance if you have questions or concerns.
 
@@ -49,7 +49,7 @@ For detailed description about the tool, including usage information and trouble
 5.  Reconfigure the firmware to boot in UEFI mode, enable Secure Boot, and disable CSM by:
 
     - Changing the relevant settings in the firmware menu
-    
+
     or
 
     - Running a tool provided by the PC or firmware manufacturer
@@ -71,7 +71,7 @@ For detailed description about the tool, including usage information and trouble
 6.  Reconfigure the firmware to boot in UEFI mode, enable Secure Boot, and disable CSM by:
 
     - Changing the relevant settings in the firmware menu
-    
+
     or
 
     - Running a tool provided by the PC or firmware manufacturer
@@ -100,11 +100,11 @@ Restore data and settings using USMT Load State.
 
 ## Troubleshooting
 
-Please refer to the MBR2GPT.EXE [Troubleshooting](https://docs.microsoft.com/en-us/windows/deployment/mbr-to-gpt#troubleshooting) documentation for information about log file locations and additional help. If you are automating the use of this tool via scripting or SCCM/MDT task sequences, you can script handlers for the returned codes that are discussed in the documentation.
+Please refer to the MBR2GPT.EXE [Troubleshooting](https://docs.microsoft.com/windows/deployment/mbr-to-gpt#troubleshooting) documentation for information about log file locations and additional help. If you are automating the use of this tool via scripting or SCCM/MDT task sequences, you can script handlers for the returned codes that are discussed in the documentation.
 
 ## Related resources
 
-[MBR2GPT.EXE](https://docs.microsoft.com/en-us/windows/deployment/mbr-to-gpt) 
+[MBR2GPT.EXE](https://docs.microsoft.com/windows/deployment/mbr-to-gpt)
 
 
 

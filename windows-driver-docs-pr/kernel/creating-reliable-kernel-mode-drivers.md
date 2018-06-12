@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Creating Reliable Kernel-Mode Drivers
 
 
-## <a href="" id="ddk-creating-reliable-kernel-mode-drivers-kg"></a>
+
 
 
 Drivers make up a significant percentage of the total code that executes in kernel mode. A kernel-mode driver is, in effect, a component of the operating system. Therefore, drivers that are reliable and secure contribute significantly to the overall trustworthiness of the operating system. To create a reliable kernel-mode driver, follow these guidelines:

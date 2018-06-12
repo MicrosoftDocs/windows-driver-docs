@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Overview of Wait/Wake IRP Completion
 
 
-## <a href="" id="ddk-overview-of-wait-wake-irp-completion-kg"></a>
+
 
 
 A wait/wake IRP completes when a wake-up signal arrives. The wake-up signal is device-specific but is generally a normal service event for the device. For example, an incoming ring might cause a sleeping modem to awaken.

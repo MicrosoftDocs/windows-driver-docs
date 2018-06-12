@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Adapter States of a Miniport Driver
 
 
-## <a href="" id="ddk-adapter-states-of-a-miniport-driver-ng"></a>
+
 
 
 For each miniport adapter that it manages, an [NDIS miniport driver](ndis-miniport-drivers2.md) must support the following set of operational states:

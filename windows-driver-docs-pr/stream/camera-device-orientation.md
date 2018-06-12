@@ -2,7 +2,7 @@
 title: Driver support for camera orientation
 description: Provides information about how to explicitly specify the camera orientation on a device.
 ms.author: windowsdriverdev
-ms.date: 05/07/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,7 +15,7 @@ ms.technology: windows-devices
 > [!IMPORTANT]
 > The Auto-correct method discussed later in this topic is the *recommended* solution to non-reference orientation mounting of camera sensors. This is to ensure app compatibility since the majority of the applications already written to use camera feeds do not know to check for, nor correct for rotation information. Please carefully review the information in the auto-correct section below.
 
-Starting with Window 10, version 1607, all camera drivers are required to explicitly specify the camera orientation regardless if the camera is mounted in accordance with the [Minimum hardware requirements](https://docs.microsoft.com/en-us/windows-hardware/design/minimum/minimum-hardware-requirements-overview). 
+Starting with Window 10, version 1607, all camera drivers are required to explicitly specify the camera orientation regardless if the camera is mounted in accordance with the [Minimum hardware requirements](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
 
 Specifically, a camera driver must set a new **Rotation** field in the ACPI \_PLD structure associated with a capture device interface:
 
@@ -63,7 +63,7 @@ Consequently, an application needs a mechanism to describe the spatial relations
 
 One way to solve the problem is to use the ACPI \_PLD structure which already has the concepts of *surface* and *degrees of rotation* defined (see [http://www.uefi.org/acpi](http://www.uefi.org/acpi) for the full specification). For example, the \_PLD structure already has *panel* field which specifies the surface on which a peripheral reside:
 
-![ACPI PLD panel field](images/acpi-pld-panel-field.png) 
+![ACPI PLD panel field](images/acpi-pld-panel-field.png)
 
 *Definition of ACPI \_PLD Panel field (Rev. 5.0a)*
 
@@ -81,7 +81,7 @@ The concept of an ACPI *panel* is already adopted by Windows where:
 
 -   A camera device interface is associated with a \_PLD structure with the Panel field being set accordingly if a capture device is statically mounted at a fixed location.
 
--   An application can retrieve the panel on which a capture device resides by calling the [Windows.Devices.Enumeration.DeviceInformation.EnclosureLocation.Panel](https://docs.microsoft.com/en-us/uwp/api/Windows.Devices.Enumeration.EnclosureLocation#Windows_Devices_Enumeration_EnclosureLocation_Panel) property.
+-   An application can retrieve the panel on which a capture device resides by calling the [Windows.Devices.Enumeration.DeviceInformation.EnclosureLocation.Panel](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.EnclosureLocation#Windows_Devices_Enumeration_EnclosureLocation_Panel) property.
 
 The ACPI \_PLD structure also has a **Rotation** field defined as follow:
 
@@ -95,7 +95,7 @@ Instead of using the definition above "as is", we'll further refine it to avoid 
 
 ## Landscape Primary vs. Portrait Primary
 
-Depending on the form factor, devices may be defined as Landscape Primary or Portrait Primary, this is defined as the value returned from [Windows.Graphics.Display.DisplayInformation.NativeOrientation](https://docs.microsoft.com/en-us/uwp/api/Windows.Graphics.Display.DisplayInformation#Windows_Graphics_Display_DisplayInformation_NativeOrientation) property.
+Depending on the form factor, devices may be defined as Landscape Primary or Portrait Primary, this is defined as the value returned from [Windows.Graphics.Display.DisplayInformation.NativeOrientation](https://docs.microsoft.com/uwp/api/Windows.Graphics.Display.DisplayInformation#Windows_Graphics_Display_DisplayInformation_NativeOrientation) property.
 
 Regardless of whether a device is Landscape or Portrait Primary, the ACPI definition of *origin* is always the lower left corner of the panel as the user is facing the panel. The recommended mounting orientation for camera sensors is such that the scan lines of the sensor goes from left to right horizontally from the ACPI panel's lower left corner (origin) to the lower right corner.
 

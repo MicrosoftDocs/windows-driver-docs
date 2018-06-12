@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Windows 2000 Kernel Streaming Model Design Guide
 
 
-## <a href="" id="ddk-windows-2000-kernel-streaming-model-ksg"></a>
+
 
 
 The following sections describe the Windows 2000 Kernel Streaming Model:

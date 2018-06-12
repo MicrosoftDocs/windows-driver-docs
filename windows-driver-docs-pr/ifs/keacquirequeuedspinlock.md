@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # KeAcquireQueuedSpinLock
 
 
-## <a href="" id="ddk-keacquirequeuedspinlock-if"></a>
+
 
 
 The **KeAcquireQueuedSpinLock** routine is reserved for system use.

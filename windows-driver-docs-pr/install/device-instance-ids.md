@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 A device instance ID is a system-supplied device identification string that uniquely identifies a device in the system. The Plug and Play (PnP) manager assigns a device instance ID to each device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) in a system's [device tree](https://msdn.microsoft.com/library/windows/hardware/ff543194).
 
-## <a href="" id="ddk-device-instance-ids-dg"></a>
+
 
 
 The format of this string consists of an [instance ID](instance-ids.md) concatenated to a [device ID](device-ids.md), as follows:

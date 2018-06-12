@@ -22,7 +22,7 @@ The following diagram shows how Windows Hello works with the new driver stack th
 
 ![windows hello and frameserver](images/windows-hello-device-model.png)
 
-## <a href="" id="face-authentication--ddis"></a>Face authentication DDIs
+## Face authentication DDIs
 
 
 There are two new face authentication DDI constructs available in Windows 10, version 1607 to support Windows Hello:
@@ -99,7 +99,7 @@ This removes the camera from **KSCATEGORY\_VIDEO**, which will block it from bei
 
 Both the **SkipCameraEnumeration** and **SensorCameraMode** entries should be placed in the **DDInstall.HW** section of the INF file.
 
-## <a href="" id="hlk-tests-for-kscategory-sensor-camera-to-assist-driver-testing"></a>HLK tests for KSCATEGORY\_SENSOR\_CAMERA to assist driver testing
+## HLK tests for KSCATEGORY\_SENSOR\_CAMERA to assist driver testing
 
 
 Hardware Logo Kit (HLK) testing is required for both IR and RGB camera modules. This testing verifies the basic functionality of RGB and IR cameras used for Windows Hello face authentication. The RGB camera requirements are already specified in the HLK test suite.

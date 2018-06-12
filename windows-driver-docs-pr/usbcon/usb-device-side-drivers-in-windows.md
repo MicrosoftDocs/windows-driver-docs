@@ -14,7 +14,7 @@ ms.technology: windows-devices
 
 Describes the architecture of the USB function stack.
 
-## <a href="" id="stack"></a>
+
 
 
 On a USB device, the USB function stack refers to a group of drivers that are enumerated by the Plug and Play Manager, when ACPI creates a USB device physical device object (PDO).

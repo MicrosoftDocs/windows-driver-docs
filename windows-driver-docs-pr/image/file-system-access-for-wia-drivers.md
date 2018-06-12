@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # File System Access for WIA Drivers
 
 
-## <a href="" id="ddk-file-system-access-for-wia-drivers-si"></a>
+
 
 
 If a driver needs to use files other than the ones provided by the WIA service during a file transfer, the driver must be careful about where these files are located and how they are accessed. Specifically, driver writers should be aware of the access permissions of the directories and files they use. Some examples of when drivers may need to read or write their own files include logging, calibration, and saving configuration.

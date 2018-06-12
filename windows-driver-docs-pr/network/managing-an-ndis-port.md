@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Managing an NDIS Port
 
 
-## <a href="" id="ddk-managing-ndis-ports-ng"></a>
+
 
 
 Interested NDIS drivers and user-mode applications can manage NDIS ports. NDIS provides services to help manage ports.

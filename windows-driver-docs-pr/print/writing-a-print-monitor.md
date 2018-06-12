@@ -21,7 +21,7 @@ ms.technology: windows-devices
 # Writing a Print Monitor
 
 
-## <a href="" id="ddk-writing-a-print-monitor-gg"></a>
+
 
 
 Print monitors are responsible for directing a print data stream from the print spooler to an appropriate port driver. Two types of print monitors are defined -- [language monitors](language-monitors.md) and [port monitors](port-monitors.md). This section describes both monitor types, and provides design and implementation guidelines.

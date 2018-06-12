@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Benefits of Remote NDIS
 
 
-## <a href="" id="ddk-benefits-of-remote-ndis-ng"></a>
+
 
 
 Remote NDIS is an extension of the well-understood and time-tested NDIS architecture. NDIS defines a function-call interface for device-specific NDIS miniport drivers. This interface defines primitives to send and receive network data, and to query and set configuration parameters and statistics. Remote NDIS leverages NDIS by defining a message wrapping for the NDIS miniport driver interface, thus moving the NDIS-handling code from a miniport driver into the device itself. In this and other ways, Remote NDIS allows for a wide range of device functionality and performance levels. The Remote NDIS model has many advantages:

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # GPD Value Types
 
 
-## <a href="" id="ddk-gpd-value-types-gg"></a>
+
 
 
 All [GPD file entries](gpd-file-entries.md) contain a value specification. The GPD language defines the following value types:

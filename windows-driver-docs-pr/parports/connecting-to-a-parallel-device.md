@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Connecting to a Parallel Device
 
 
-## <a href="" id="ddk-connecting-to-a-parallel-device-kg"></a>
+
 
 
 A client uses the [**IOCTL\_INTERNAL\_PARCLASS\_CONNECT**](https://msdn.microsoft.com/library/windows/hardware/ff544040) request to obtain a [**PARCLASS\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff544334) structure that contains:

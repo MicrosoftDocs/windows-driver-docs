@@ -26,17 +26,6 @@ This section includes the following topics:
 
 [WLAN feature information](wlan-feature-information.md)
 
-[Native 802.11 Wireless LAN](native-802-11-wireless-lan4.md)
-
 [WDI Miniport Driver Design Guide](wdi-miniport-driver-design-guide.md)
 
 [Wi-Fi Hotspot Offloading Guide](wi-fi-hotspot-offloading-guide.md)
-
- 
-
- 
-
-
-
-
-
