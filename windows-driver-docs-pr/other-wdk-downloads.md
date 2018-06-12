@@ -64,7 +64,7 @@ To get started, mount the ISO and run **LaunchBuildEnv**.
 
 These editions of Visual Studio 2015 support driver development. 
 
-* [Download Visual Studio Express for Desktop](https://go.microsoft.com/fwlink/p/?LinkId=691984)
+* [Download Visual Studio Express for Desktop](https://my.visualstudio.com/Downloads?q=visual%20studio%202015&wt.mc_id=o~msft~vscom~older-downloads)
 * [Download Visual Studio Community 2015](https://go.microsoft.com/fwlink/p/?LinkId=534599)
 * [Download Visual Studio Professional 2015](https://go.microsoft.com/fwlink/p/?LinkId=619628)
 * [Download Visual Studio Enterprise 2015](https://go.microsoft.com/fwlink/p/?LinkId=619629)
@@ -100,7 +100,7 @@ You can also install the EWDK to build drivers and basic Win32 test applications
 1. Run Windows Update. 
 2. Install the version of Visual Studio that best suits your development needs. 
 
-    * [Download Visual Studio Express for Desktop](https://go.microsoft.com/fwlink/p/?LinkId=691984)
+    * [Download Visual Studio Express for Desktop](https://my.visualstudio.com/Downloads?q=visual%20studio%202015&wt.mc_id=o~msft~vscom~older-downloads)
     * [Download Visual Studio Community 2015](https://go.microsoft.com/fwlink/p/?LinkId=534599)
     * [Download Visual Studio Professional 2015](https://go.microsoft.com/fwlink/p/?LinkId=619628)
     * [Download Visual Studio Enterprise 2015](https://go.microsoft.com/fwlink/p/?LinkId=619629)
