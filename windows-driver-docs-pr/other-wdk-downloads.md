@@ -118,7 +118,7 @@ WDK 8.1 Update has tools to build, test, debug, and deploy drivers for Windows 8
 > [!IMPORTANT]
 > Before installing WDK 8.1 Update, you need to install Visual Studio 2013. 
 
-1. [Download Visual Studio 2013](https://go.microsoft.com/fwlink/p/?LinkId=620683)
+1. [Download Visual Studio 2013](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202013)
 2. [Download WDK 8.1 Update](https://go.microsoft.com/fwlink/p/?LinkId=393659) (English only) 
 3. [Download the WDK 8.1 Update Test Pack](https://go.microsoft.com/fwlink/p/?LinkID=393660) (English only) 
 4. [Get driver samples for Windows 8.1](https://code.msdn.microsoft.com/windowshardware/Windows-Driver-Kit-WDK-81-cf35e953) 
