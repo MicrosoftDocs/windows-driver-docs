@@ -3,7 +3,7 @@ title: Download Debugging Tools for Windows - WinDbg
 description: This page provides downloads for the Windows Debugging tools, such as WinDbg.
 keywords: ["Windows Debugging Downloads", "WinDbg", "Download"]
 ms.author: domars
-ms.date: 02/05/2018
+ms.date: 06/12/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,10 @@ If you just need the Debugging Tools for Windows 10, and not WDK 10 or Visual St
 
 [Learn more about WinDbg and other debuggers (WinDbg, KD, CDB, NTSD)](https://docs.microsoft.com/windows-hardware/drivers/debugger/) 
 
+
+> [!TIP]
+> If the Windows SDK is already installed, use Add/Remove programs to modify the install to add *Debugging Tools for Windows*
+> 
 
 -------------------
 
