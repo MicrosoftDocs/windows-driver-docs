@@ -64,7 +64,7 @@ To get started, mount the ISO and run **LaunchBuildEnv**.
 
 These editions of Visual Studio 2015 support driver development. 
 
-* [Download Visual Studio Express 2015 for Desktop](https://go.microsoft.com/fwlink/p/?LinkId=691984)
+* [Download Visual Studio Express 2015 for Desktop](https://go.microsoft.com/fwlink/?linkid=875331)
 * [Download Visual Studio Community 2015](https://go.microsoft.com/fwlink/p/?LinkId=534599)
 * [Download Visual Studio Professional 2015](https://go.microsoft.com/fwlink/p/?LinkId=619628)
 * [Download Visual Studio Enterprise 2015](https://go.microsoft.com/fwlink/p/?LinkId=619629)
@@ -100,7 +100,7 @@ You can also install the EWDK to build drivers and basic Win32 test applications
 1. Run Windows Update. 
 2. Install the version of Visual Studio 2015 that best suits your development needs. 
 
-    * [Download Visual Studio Express 2015 for Desktop](https://go.microsoft.com/fwlink/p/?LinkId=691984)
+    * [Download Visual Studio Express 2015 for Desktop](https://go.microsoft.com/fwlink/?linkid=875331)
     * [Download Visual Studio Community 2015](https://go.microsoft.com/fwlink/p/?LinkId=534599)
     * [Download Visual Studio Professional 2015](https://go.microsoft.com/fwlink/p/?LinkId=619628)
     * [Download Visual Studio Enterprise 2015](https://go.microsoft.com/fwlink/p/?LinkId=619629)
@@ -118,7 +118,7 @@ WDK 8.1 Update has tools to build, test, debug, and deploy drivers for Windows 8
 > [!IMPORTANT]
 > Before installing WDK 8.1 Update, you need to install Visual Studio 2013. 
 
-1. [Download Visual Studio 2013](https://go.microsoft.com/fwlink/p/?LinkId=620683)
+1. [Download Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=875331)
 2. [Download WDK 8.1 Update](https://go.microsoft.com/fwlink/p/?LinkId=393659) (English only) 
 3. [Download the WDK 8.1 Update Test Pack](https://go.microsoft.com/fwlink/p/?LinkID=393660) (English only) 
 4. [Get driver samples for Windows 8.1](https://code.msdn.microsoft.com/windowshardware/Windows-Driver-Kit-WDK-81-cf35e953) 
