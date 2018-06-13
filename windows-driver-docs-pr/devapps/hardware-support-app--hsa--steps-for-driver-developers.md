@@ -61,7 +61,7 @@ In the INF file, specify your custom capability as follows:
 
 ```
 [WDMPNPB003_Device.NT.Interfaces] 
-AddInterface= {00001111-2222-3333-4444-555566667777},,AddInterfaceSection 
+AddInterface= {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz},,AddInterfaceSection 
  
 [AddInterfaceSection] 
 AddProperty= AddInterfaceSection.AddProps 
@@ -91,7 +91,7 @@ Status = WdfDeviceAssignInterfaceProperty(
 
 ```
 
-Replace **00001111-2222-3333-4444-555566667777** with the GUID for the interface to expose.  Replace **CompanyName** with your company name, **myCustomCapabilityNameTBD** with with an intercompany unique name, and **YourStorePubId** your publisher store ID. 
+Replace `zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz` with the GUID for the interface to expose.  Replace *CompanyName* with your company name, *myCustomCapabilityNameTBD* with a name that is unique within your company, and *YourStorePubId* with your publisher store ID. 
 
 For an example of the driver code shown immediately above, see the [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU).
 
