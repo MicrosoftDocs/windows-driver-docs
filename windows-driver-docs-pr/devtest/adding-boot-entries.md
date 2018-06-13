@@ -75,7 +75,7 @@ bcdedit /displayorder {ID} {ID} ...
 
 The ID is the GUID of the boot entry or a reserved identifier, such as **{current}**). Separate each identifier with a space. Be sure to include the braces ({}).
 
-For example, to add the DebugEntry boot entry to the boot menu after the **{current}** entry, use the following command:
+For example, to add the DebugEntry boot entry to the boot menu after the **{current}** entry, use the following command (remember to use `'{guid}'` in Windows PowerShell):
 
 ```
 bcdedit /displayorder {current} {49916baf-0e08-11db-9af4-000bdbd316a0}
