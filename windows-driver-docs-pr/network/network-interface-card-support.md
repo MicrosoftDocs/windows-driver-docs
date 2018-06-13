@@ -18,15 +18,17 @@ ms.technology: windows-devices
 
 # Network Interface Card Support
 
-To report a medium type for a Network Interface Card (NIC), a miniport driver passes a pointer to an [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923) structure in the *MiniportAttributes* parameter of the [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) function. A miniport driver calls **NdisMSetMiniportAttributes** from its [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function during initialization. Miniport drivers should set the *MiniportAttributes* attributes after setting the registration attributes in the [**NDIS\_MINIPORT\_ADAPTER\_REGISTRATION\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565934) structure and before setting any other attributes. Setting the *MiniportAttributes* attributes is mandatory. The driver sets the **MediaType** member of the **NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES** structure to the appropriate media type when setting the *MiniportAttributes* attributes.
+This topic describes the types of Network Interface Cards (NICs) that an NDIS miniport driver can manage, as well as how the different kinds of NICs affect the way a driver transfers network data.
+
+## Reporting a NIC's medium type to NDIS
+
+To report a medium type for a NIC, a miniport driver passes a pointer to an [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923) structure in the *MiniportAttributes* parameter of the [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) function. A miniport driver calls **NdisMSetMiniportAttributes** from its [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function during initialization. Miniport drivers should set the *MiniportAttributes* attributes after setting the registration attributes in the [**NDIS\_MINIPORT\_ADAPTER\_REGISTRATION\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565934) structure and before setting any other attributes. Setting the *MiniportAttributes* attributes is mandatory. The driver sets the **MediaType** member of the **NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES** structure to the appropriate media type when setting the *MiniportAttributes* attributes.
 
 When an overlying NDIS protocol driver calls [**NdisOpenAdapterEx**](https://msdn.microsoft.com/library/windows/hardware/ff563715) to bind to a specified miniport adapter, it provides a list of medium types on which it can operate. NDIS uses the information from the miniport driver and from the protocol driver to set up a binding. This binding provides the path for transferring network data up and down the driver stack.
 
-## Types of NICs and memory management
+## Physical NICs
 
-The steps that a miniport driver completes to initialize a miniport adapter and to send and receive network data can depend on the features of a device, as follows.
-
-### Physical NICs
+The steps that a miniport driver completes to initialize a miniport adapter and to send and receive network data can depend on the features of a physical device, as follows.
 
 - NDIS-WDM NICs
 
@@ -48,9 +50,9 @@ The steps that a miniport driver completes to initialize a miniport adapter and 
 
         A miniport driver that manages such a NIC uses the system DMA controller to manage the transfer of packet data to and from the network. Transfer of the data requires the cooperation of the host CPU.
 
-### Virtual NICs and miniports
+## Virtual NICs and miniports
 
-In a virtual machine, NDIS miniport drivers only manage memory with DMA if they control a virtual NIC that represents hardware. The following table explains the differences between a software-only virtual miniport and a virtual NIC.
+In a virtual machine, NDIS miniport drivers can manage either software-only resources as a virtual miniport, or they can manage a virtual NIC that represents hardware resources. The following table explains the differences between a virtual miniport and a virtual NIC.
 
 |   | Virtual miniport | Virtual NIC |
 | --- | --- | --- |
