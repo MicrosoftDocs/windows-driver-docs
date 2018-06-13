@@ -33,7 +33,7 @@ If you just need the Debugging Tools for Windows 10, and not WDK 10 or Visual St
 
 
 > [!TIP]
-> If the Windows SDK is already installed, use Add/Remove programs to modify the install to add *Debugging Tools for Windows*
+> If the Windows SDK is already installed, use Add/Remove programs to modify the install to add *Debugging Tools for Windows*.
 > 
 
 -------------------
