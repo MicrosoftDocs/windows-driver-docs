@@ -75,7 +75,7 @@ Or, do the following in the driver:
 
 ```c++
 WDF_DEVICE_INTERFACE_PROPERTY_DATA PropertyData = {}; 
-WCHAR customCapabilities[] = L”CompanyName.yourCustomCapabilityNameTBD_YourStorePubId\0”; 
+WCHAR customCapabilities[] = L”CompanyName.myCustomCapabilityNameTBD_YourStorePubId\0”; 
  
 WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT( 
    &PropertyData, 
