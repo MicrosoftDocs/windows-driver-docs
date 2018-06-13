@@ -177,7 +177,7 @@ The Wireless Handset Control Model (WHCM) interface collection in the preceding 
 
 The following figure illustrates the PDO configuration when both bit 0 and bit 1 of **CdcFlags** are set.
 
-![diagram illustrating an interface collection to device object mapping for cdcflags = 0x00010001](images/cdcflags wpd.png)
+![diagram illustrating an interface collection to device object mapping for cdcflags = 0x00010001](images/cdcflags-wpd.png)
 
 Because bit 0 of **CdcFlags** is set to 1, the USB generic parent driver creates a PDO for the WHCM interface collection. Because bit 1 of **CdcFlags** is set to 1, the USB generic parent driver groups the two OBEX collections together and generates a single PDO for both OBEX collections.
 
