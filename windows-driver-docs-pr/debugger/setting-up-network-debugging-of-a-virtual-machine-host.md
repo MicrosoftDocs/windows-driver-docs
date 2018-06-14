@@ -151,13 +151,12 @@ For example if the target is running 32 bit Windows, run a 32 version of the deb
 
 6. Re-enable BitLocker and secure boot when you're done configuring the debugger settings.
 
-
 7. The VM will be restarted after the debugger is loaded and running. 
 
 
 ## <span id="Starting_the_Debugging_Session"></span><span id="starting_the_debugging_session"></span><span id="STARTING_THE_DEBUGGING_SESSION"></span>Starting the Debugging Session
 
-1. Record the returned windbg command line, or copy it into a notepad .txt file or the command buffer.
+1. Copy it into a notepad .txt file or the command buffer.
 
 2. To connect to the target PC use the following in the non-virtual machine command window, where \<YourDebugPort\> is the port you selected above between 50000-50039, and \<YourKey\> is the unique key that was returned by KDNet above.
 
