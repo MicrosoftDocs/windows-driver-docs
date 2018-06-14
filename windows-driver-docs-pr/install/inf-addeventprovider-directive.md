@@ -87,7 +87,7 @@ Optionally specifies a channel with a sub-directive that optionally references a
 
 ### Specifying Channel List
 
-You can specify a list of channels for the provider within its *event-provider-install-section*. You can import a channel or add a channel to the list and the order of these channels is preserved. For more info, see [Defining Channels](https://msdn.microsoft.com/library/windows/desktop/dd996911).
+You can specify a list of channels for the provider within its *event-provider-install-section*. You can import a channel or add a channel to the list and the order of these channels is preserved. For more information, see [Defining Channels](https://msdn.microsoft.com/library/windows/desktop/dd996911).
 
 The *channel-name* must be unique within the list of channels that the provider uses. The *channel-name* must be less than 255 characters and cannot contain the following characters: '>', '<', '&', '"', '|', '\', ':', '`', '?', '*', or characters with ASCII values less than 31.
 
