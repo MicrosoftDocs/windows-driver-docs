@@ -26,7 +26,7 @@ The **WIA\_IPS\_OVER\_SCAN\_TOP** property along with [**WIA\_IPS\_OVER\_SCAN\_B
 
 
 
-Property Type: VT\_I4
+Property Type: VT\_UI4
 
 Valid Values: WIA\_PROP\_RANGE
 

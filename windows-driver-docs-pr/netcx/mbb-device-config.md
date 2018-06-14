@@ -57,5 +57,4 @@ Call [**MBB_DEVICE_CONFIG_INIT**](mbb-device-config-init.md) to intialize this s
 |     |     |
 | --- | --- |
 | Minimum KMDF version | 1.27 |
-| Minimum NetAdapterCx version | 1.3 |
 | Header | Mbbcx.h |

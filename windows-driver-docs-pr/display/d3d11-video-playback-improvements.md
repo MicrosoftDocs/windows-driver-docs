@@ -33,9 +33,9 @@ With wider adoption of Microsoft Direct3D 10 technologies in mainstream apps, s
 <td align="left">Mandatory for all WDDM 1.2 drivers with Microsoft Direct3D 10-, 10.1-, 11-, or 11.1-capable hardware (or later)</td>
 </tr>
 <tr class="even">
-<td align="left">[WHCK]( http://go.microsoft.com/fwlink/p/?linkid=258342) requirements and tests</td>
-<td align="left"><p><strong>Device.Graphicsâ€¦DX11 Video Decode FeatureLevel 9</strong></p>
-<p><strong>Device.Graphicsâ€¦DX11 VideoProcessing</strong></p></td>
+<td align="left"><a href="https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit">WHCK</a> requirements and tests</td>
+<td align="left"><p><strong>Device.Graphics ¦ DX11 Video Decode FeatureLevel 9</strong></p>
+<p><strong>Device.Graphics ¦ DX11 VideoProcessing</strong></p></td>
 </tr>
 </tbody>
 </table>
@@ -198,7 +198,7 @@ These device driver interfaces (DDIs) are new or updated for Windows 8:
 
 Direct3D 11 API support is required on all Windows 8 hardware.
 
-For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation]( http://go.microsoft.com/fwlink/p/?linkid=258342) on **Device.Graphicsâ€¦DX11 Video Decode FeatureLevel 9** and **Device.Graphicsâ€¦DX11 VideoProcessing**.
+For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphics ¦ DX11 Video Decode FeatureLevel 9** and **Device.Graphics ¦ DX11 VideoProcessing**.
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 

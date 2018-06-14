@@ -5,7 +5,7 @@ ms.assetid: E621615F-5A6A-4FB6-88D6-2DD11E2537B2
 keywords:
 - Kernel Mode SDK Topics for Network Drivers, kernel mode SDK network drivers, kernel mode Windows SDK network drivers, kernel mode Microsoft Windows SDK network drivers
 ms.author: windowsdriverdev
-ms.date: 08/08/2017
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -24,6 +24,5 @@ This section contains:
 
 * [Mstcpip.h](mstcpip-h.md)
 * [Ntddndis.h](ntddndis-h.md)
-* [Windot11.h](windot11-h.md)
 * [Ws2def.h](ws2def-h.md)
 

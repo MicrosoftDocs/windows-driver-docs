@@ -17,12 +17,12 @@ ms.technology: windows-devices
 > The following table contains estimates of when features will be available in the Windows Hardware Dev Center Dashboard. Feature-specific legal and administration tasks will transition with the feature. 
 > | Task                                 | Transition timeframe | Documentation link (if available) |
 > |--------------------------------------|----------------------|----------------------|
-> | WLK device certification submissions | Mid 2018          | |
+> | WLK device certification submissions | Completed          | [Create a new WLK device certification submission](create-a-new-hardware-logo-submission.md) |
 > | Attestation signing                  | Completed         | [Attestation signing a kernel driver for public release](attestation-signing-a-kernel-driver-for-public-release.md) |
 > | Hardware certification submissions   | Completed          | [Hardware certification submissions](hardware-certification-submissions.md)
 > | UEFI and LSA                         | Completed           | | [File signing LSA plugins and UEFI firmware](lsa-and-uefi-file-signing.md)
 > | Device metadata                      | Mid 2018      | |
-> | Bug management                       | Migrated      | [Bug management](http://aka.ms/collaboratedocs) |
+> | Bug management                       | Completed      | [Bug management](http://aka.ms/collaboratedocs) |
 > | Remote debugging (WRD)               | Retiring      | |
 > | Win32 app certification              | Retired      |  [Win32 logo certification deprecation](https://blogs.msdn.microsoft.com/windows_hardware_certification/2018/04/19/win32-logo-certification-deprecation/)|
 

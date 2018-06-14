@@ -11,7 +11,7 @@ ms.technology: windows-devices
 
 # KMDF Verifier Properties for Driver Package Projects
 
-Sets the properties for the KMDF Verifier (or framework verifier) on a remote computer. You can use these settings when you build and deploy a KMDF driver to a test computer. For information about KMDF drivers, see [Kernel-Mode Driver Framework](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff557565).
+Sets the properties for the KMDF Verifier (or framework verifier) on a remote computer. You can use these settings when you build and deploy a KMDF driver to a test computer. For information about KMDF drivers, see [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/).
 
 For more information about the framework verifier, see [Using the Framework's Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545540) and [WDF Verifier Control Application](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff556129).
 
@@ -86,7 +86,7 @@ For more information about the framework verifier, see [Using the Framework's Ve
 ## <span id="related_topics"></span>Related topics
 
 
-* [Kernel-Mode Driver Framework](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff557565)
+* [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
 * [Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448)
 * [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
  

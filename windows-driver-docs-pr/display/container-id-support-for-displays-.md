@@ -19,7 +19,7 @@ This topic describes Container ID support for displays—visual representation o
 | Minimum Windows Display Driver Model (WDDM) version                               | 1.2                                      |
 | Minimum Windows version                                                           | 8                                        |
 | Driver implementation—Full graphics and Display only                              | Mandatory                                |
-| [WHCK]( http://go.microsoft.com/fwlink/p/?linkid=258342) requirements and tests | **Device.Graphicsâ€¦ContainerIDSupport** |
+| [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests |  [Functional test for monitor container ID](https://docs.microsoft.com/windows-hardware/test/hlk/testref/2f657caa-368c-4531-8cec-8faf475125f4) |
 
  
 
@@ -63,7 +63,7 @@ In a few scenarios, the ownership of driving the display is transitioned between
 ## <span id="Hardware_certification_requirements"></span><span id="hardware_certification_requirements"></span><span id="HARDWARE_CERTIFICATION_REQUIREMENTS"></span>Hardware certification requirements
 
 
-For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation]( http://go.microsoft.com/fwlink/p/?linkid=258342) on **Device.Graphicsâ€¦ContainerIDSupport**.
+For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) on  [Functional test for monitor container ID](https://docs.microsoft.com/windows-hardware/test/hlk/testref/2f657caa-368c-4531-8cec-8faf475125f4).
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 

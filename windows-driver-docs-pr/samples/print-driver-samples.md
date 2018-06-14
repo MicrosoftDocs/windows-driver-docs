@@ -34,11 +34,6 @@ The driver samples in this directory provide a starting point for writing a cust
 | XPSDrv Driver and Filter         | [XPSDrvSmpl](http://go.microsoft.com/fwlink/p/?LinkId=617950)             | This sample is intended to provide a starting point for developing XPSDrv printer drivers and to illustrate the facility and potential of an XPSDrv print driver. This goal is accomplished by implementing a number of real-world features within a set of XPS print pipeline filters that are configured through a configuration plug-in that supports custom UI content and PrintTicket handling. |
 | XPS Rasterization Filter Service | [XpsRasFilter](http://go.microsoft.com/fwlink/p/?LinkId=617951)           | An XPSDrv filter that rasterizes fixed pages in an XPS document. Hardware vendors can modify this sample to build an XPSDrv filter that produces bitmap images for their printers or other display devices.                                                                                                                                                                                          |
 
- 
-
- 
-
- 
 
 
 

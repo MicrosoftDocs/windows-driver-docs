@@ -37,7 +37,7 @@ Starting in Windows 8, several features help to minimize or eliminate screen fl
 <td align="left">Mandatory</td>
 </tr>
 <tr class="even">
-<td align="left">[WHCK]( http://go.microsoft.com/fwlink/p/?linkid=258342) requirements and tests</td>
+<td align="left">[WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests</td>
 <td align="left"><p><strong>System.Client.Firmware.UEFI.GOP.Display</strong></p>
 <p><strong>Device.Graphics…PnpStopStartSupport</strong></p>
 <p><strong>Device.Graphics…DisplayOutputControl</strong></p></td>
@@ -54,7 +54,7 @@ All Windows 8 systems targeted for client SKUs must support the Unified Extensi
 
 **Hardware certification requirements**
 
-For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation]( http://go.microsoft.com/fwlink/p/?linkid=258342) on **System.Client.Firmware.UEFI.GOP.Display**.
+For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) on **System.Client.Firmware.UEFI.GOP.Display**.
 
 ## <span id="Transition_from_operating_system_to_driver"></span><span id="transition_from_operating_system_to_driver"></span><span id="TRANSITION_FROM_OPERATING_SYSTEM_TO_DRIVER"></span>Transition from operating system to driver
 
@@ -74,7 +74,7 @@ More details on PnP stop, including additional scenarios, are given in [Plug and
 
 **Hardware certification requirements**
 
-For more info about this handoff, refer to the relevant [WHCK documentation]( http://go.microsoft.com/fwlink/p/?linkid=258342) on **Device.Graphics…PnpStopStartSupport**.
+For more info about this handoff, refer to the relevant [WHCK documentation](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphics…PnpStopStartSupport**.
 
 ## <span id="Transition_to_operating_system_without_disabling_driver"></span><span id="transition_to_operating_system_without_disabling_driver"></span><span id="TRANSITION_TO_OPERATING_SYSTEM_WITHOUT_DISABLING_DRIVER"></span>Transition to operating system without disabling driver
 
@@ -83,7 +83,7 @@ Sometimes the operating system experiences an unrecoverable error and has to iss
 
 **Hardware certification requirements**
 
-For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation]( http://go.microsoft.com/fwlink/p/?linkid=258342) on **Device.Graphics…DisplayOutputControl**.
+For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphics…DisplayOutputControl**.
 
 ## <span id="Windows_8_firmware_mode_changes"></span><span id="windows_8_firmware_mode_changes"></span><span id="WINDOWS_8_FIRMWARE_MODE_CHANGES"></span>Windows 8 firmware mode changes
 

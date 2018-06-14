@@ -24,8 +24,6 @@ The INF file for a miniport driver that supports Network Direct kernel (NDK) mus
 
     **Note**   The miniport driver is automatically restarted after a change is made in the **Advanced** property page for the adapter.
 
-     
-
     ``` syntax
     HKR, Ndi\Params\*NetworkDirect,        ParamDesc,  0, "NetworkDirect Functionality"
     HKR, Ndi\Params\*NetworkDirect,        Type,       0, "enum"
@@ -34,21 +32,22 @@ The INF file for a miniport driver that supports Network Direct kernel (NDK) mus
     HKR, Ndi\Params\*NetworkDirect\enum,   "1",        0, "Enabled"
     ```
 
-
--   The INF file must specify the **\*NetworkDirectTechnology** keyword value as follows. Once the driver is installed, administrators can update the **\*NetworkDirectTechnology** keyword value in the **Advanced** property page for the adapter. The enumerations are mutually exclusive, meaning  the selection of a NetworkDirectTechnology value excludes all others.  This allows for the Platform to define strict  device behavior.  For devices where multiple transports can be supported concurrently, the **Undefined** allows for device specific behavior, such as retry/fallback to multiple transports.
+-   The INF file must specify the **\*NetworkDirectTechnology** keyword value as follows. Once the driver is installed, administrators can update the **\*NetworkDirectTechnology** keyword value in the **Advanced** property page for the adapter. The enumerations are mutually exclusive, meaning  the selection of a NetworkDirectTechnology value excludes all others.  This allows for the Platform to define strict device behavior.  
+-   For devices where multiple transports can be supported concurrently, the **Device Default** allows for device specific behavior, such as retry/fallback to multiple transports.
+-   A device must express only the supported transports.  The transport values are identifiers which map to WDK **NDK_RDMA_TECHNOLOGY**.  A redefinition of the identifiers is prohibited.
 
     **Note**   The miniport driver is automatically restarted after a change is made in the **Advanced** property page for the adapter.
 
     ```
     HKR, Ndi\Params\*NetworkDirectTechnology,        ParamDesc,  0,  "NetworkDirect Technology"
-    HKR, Ndi\Params\*NetworkDirectTechnology,        Default,    0,  "1"
+    HKR, Ndi\Params\*NetworkDirectTechnology,        Default,    0,  "0"
     HKR, Ndi\Params\*NetworkDirectTechnology,        Type,       0,  "enum"
-    HKR, Ndi\Params\*NetworkDirectTechnology\enum,   1,          0,  "Undefined"
-    HKR, Ndi\Params\*NetworkDirectTechnology\enum,   2,          0,  "iWARP"
-    HKR, Ndi\Params\*NetworkDirectTechnology\enum,   3,          0,  "InfiniBand"
-    HKR, Ndi\Params\*NetworkDirectTechnology\enum,   4,          0,  "RoCE"
-    HKR, Ndi\Params\*NetworkDirectTechnology\enum,   5,          0,  "RoCEv2"
-    HKR, Ndi\Params\*NetworkDirectTechnology,        Optional,   0,  "1"
+    HKR, Ndi\Params\*NetworkDirectTechnology\enum,   0,          0,  "Device Default"
+    HKR, Ndi\Params\*NetworkDirectTechnology\enum,   1,          0,  "iWARP"
+    HKR, Ndi\Params\*NetworkDirectTechnology\enum,   2,          0,  "InfiniBand"
+    HKR, Ndi\Params\*NetworkDirectTechnology\enum,   3,          0,  "RoCE"
+    HKR, Ndi\Params\*NetworkDirectTechnology\enum,   4,          0,  "RoCEv2"
+    HKR, Ndi\Params\*NetworkDirectTechnology,        Optional,   0,  "0"
     ```
 
     For more information about advanced properties, see [Specifying Configuration Parameters for the Advanced Properties Page](specifying-configuration-parameters-for-the-advanced-properties-page.md).

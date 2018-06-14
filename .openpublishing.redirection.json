@@ -872,18 +872,18 @@
     },
     {
       "source_path": "windows-driver-docs-pr/dashboard/uefi-firmware-signing.md",
-      "redirect_URL": "/windows-hardware/dashboard/lsa-and-uefi-file-signing",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/lsa-and-uefi-file-signing",
       "redirect_document_id": true
     },
     {
       "source_path": "windows-driver-docs-pr/dashboard/lsa-plug-in-signing.md",
-      "redirect_URL": "/windows-hardware/dashboard/lsa-and-uefi-file-signing",
-      "redirect_document_id": true
+      "redirect_URL": "/windows-hardware/drivers/dashboard/lsa-and-uefi-file-signing",
+      "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/dashboard/file-signing-services.md",
-      "redirect_URL": "/windows-hardware/dashboard/lsa-and-uefi-file-signing",
-      "redirect_document_id": true
+      "redirect_URL": "/windows-hardware/drivers/dashboard/lsa-and-uefi-file-signing",
+      "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/nfc/p2p-rf-data-exchagne-sequence.md",
@@ -2592,8 +2592,2193 @@
     },
     {
       "source_path": "windows-driver-docs-pr/netcx/mobile-broadband-mbb-wdf-class-extension-mbbcx-.md",
-      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/netcx/mobile-broadband-mbb-class-extension-mbbcx",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/netcx/mobile-broadband-mbb-wdf-class-extension-mbbcx",
       "redirect_document_id": true
-    }
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-wireless-lan4.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-wireless-lan4",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/roadmap-for-developing-native-802-11-wireless-lan-drivers.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/roadmap-for-developing-native-802-11-wireless-lan-drivers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/background-reading-on-802-11.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/background-reading-on-802-11",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/introduction-to-wireless-lan-networks.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/introduction-to-wireless-lan-networks",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/introduction-to-native-802-11.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/introduction-to-native-802-11",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-software-architecture.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-software-architecture",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-miniport-drivers2.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-miniport-drivers2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/introduction-to-native-802-11-miniport-drivers.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/introduction-to-native-802-11-miniport-drivers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extending-native-802-11-functionality.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extending-native-802-11-functionality",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extending-support-for-802-11-authentication-algorithms.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extending-support-for-802-11-authentication-algorithms",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extending-support-for-802-11-cipher-algorithms.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extending-support-for-802-11-cipher-algorithms",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extending-support-for-802-11-phy-configurations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extending-support-for-802-11-phy-configurations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-miniport-driver-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-miniport-driver-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-operation-modes.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-operation-modes",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extensible-access-point-operation-mode.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extensible-access-point-operation-mode",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extensible-station-operation-mode.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extensible-station-operation-mode",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/network-monitor-operation-mode.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/network-monitor-operation-mode",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-operating-states.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-operating-states",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extensible-access-point-operating-states.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extensible-access-point-operating-states",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extensible-station-operating-states.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extensible-station-operating-states",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/network-monitor-operating-states.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/network-monitor-operating-states",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-miniport-driver-initialization.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-miniport-driver-initialization",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/driverentry-requirements.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/driverentry-requirements",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/miniportinitializeex-requirements.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/miniportinitializeex-requirements",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-miniport-driver-registration.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-miniport-driver-registration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-miniport-driver-configuration.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-miniport-driver-configuration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-operational-configuration.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-operational-configuration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extensible-station-operational-configuration.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extensible-station-operational-configuration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/802-11-mac-configuration.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/802-11-mac-configuration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/automatic-mac-configuration.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/automatic-mac-configuration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/802-11-phy-configuration.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/802-11-phy-configuration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/dsss--hrdsss--and-erp-phy-configuration.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/dsss--hrdsss--and-erp-phy-configuration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ofdm-phy-configuration.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ofdm-phy-configuration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/fhss-phy-configuration.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/fhss-phy-configuration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ir-phy-configuration.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ir-phy-configuration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/automatic-phy-configuration.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/automatic-phy-configuration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/regulatory-domain-configuration.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/regulatory-domain-configuration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ihv-configuration-extensions.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ihv-configuration-extensions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/configuration-through-a-network-profile.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/configuration-through-a-network-profile",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-scan-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-scan-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/overview-of-scan-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/overview-of-scan-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/explicit-scan-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/explicit-scan-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/requesting-explicit-scan-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/requesting-explicit-scan-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/performing-explicit-scan-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/performing-explicit-scan-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/implicit-scan-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/implicit-scan-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/scanning-for-non-broadcast-ssids.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/scanning-for-non-broadcast-ssids",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/scanning-in-multiple-regulatory-domains.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/scanning-in-multiple-regulatory-domains",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-network-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-network-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/configuration-requirements-for-network-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/configuration-requirements-for-network-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/bss-network-candidate-list.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/bss-network-candidate-list",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/connection-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/connection-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/general-connection-operation-guidelines.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/general-connection-operation-guidelines",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/connection-operation-guidelines-for-infrastructure-bss-networks.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/connection-operation-guidelines-for-infrastructure-bss-networks",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/connection-operation-guidelines-for-independent-bss-networks.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/connection-operation-guidelines-for-independent-bss-networks",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/roaming-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/roaming-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/general-roaming-operation-guidelines.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/general-roaming-operation-guidelines",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/roaming-operation-guidelines-for-infrastructure-bss-networks.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/roaming-operation-guidelines-for-infrastructure-bss-networks",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/roaming-operation-guidelines-for-independent-bss-networks.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/roaming-operation-guidelines-for-independent-bss-networks",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/association-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/association-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/general-association-operation-guidelines.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/general-association-operation-guidelines",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/association-operation-guidelines-for-infrastructure-bss-networks.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/association-operation-guidelines-for-infrastructure-bss-networks",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/association-operation-guidelines-for-independent-bss-networks.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/association-operation-guidelines-for-independent-bss-networks",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/association-operation-guidelines-for-extensible-access-point--extap--m.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/association-operation-guidelines-for-extensible-access-point--extap--m",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/disassociation-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/disassociation-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/explicit-disassociation-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/explicit-disassociation-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/implicit-disassociation-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/implicit-disassociation-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/disconnection-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/disconnection-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/link-quality-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/link-quality-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/port-based-network-access.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/port-based-network-access",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/port-creation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/port-creation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/port-deletion.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/port-deletion",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-authentication-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-authentication-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/802-11-authentication-algorithms.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/802-11-authentication-algorithms",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/open-system-authentication.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/open-system-authentication",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/shared-key-authentication.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/shared-key-authentication",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/wpa.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/wpa",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/rsna-overview.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/rsna-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/rsna-preauthentication.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/rsna-preauthentication",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extensible-station-authentication-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extensible-station-authentication-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/querying-supported-authentication-algorithms.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/querying-supported-authentication-algorithms",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/enabling-authentication-algorithms.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/enabling-authentication-algorithms",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/authentication-guidelines.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/authentication-guidelines",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/rsna-preauthentication-guidelines.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/rsna-preauthentication-guidelines",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-cipher-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-cipher-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/802-11-cipher-key-types.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/802-11-cipher-key-types",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/default-keys.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/default-keys",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/key-mapping-keys.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/key-mapping-keys",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/per-station-default-keys.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/per-station-default-keys",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/802-11-cipher-algorithms.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/802-11-cipher-algorithms",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/wep.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/wep",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/tkip.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/tkip",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/aes-ccmp.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/aes-ccmp",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extensible-station-cipher-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extensible-station-cipher-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extensible-station-requirements-for-cipher-key-types.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extensible-station-requirements-for-cipher-key-types",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/querying-supported-cipher-algorithms.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/querying-supported-cipher-algorithms",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/enabling-cipher-algorithms.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/enabling-cipher-algorithms",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/specifying-cipher-keys.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/specifying-cipher-keys",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/encryption-guidelines.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/encryption-guidelines",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/decryption-exemptions.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/decryption-exemptions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/packet-decryption.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/packet-decryption",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/tkip-countermeasures.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/tkip-countermeasures",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-send-and-receive-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-send-and-receive-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/802-11-payload-encapsulation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/802-11-payload-encapsulation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-send-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-send-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/802-11-mac-header-management.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/802-11-mac-header-management",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/media-specific-oob-data-for-native-802-11-send-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/media-specific-oob-data-for-native-802-11-send-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extending-packet-data-during-send-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extending-packet-data-during-send-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/guidelines-for-native-802-11-send-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/guidelines-for-native-802-11-send-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-receive-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-receive-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/privacy-exemption-lists.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/privacy-exemption-lists",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/media-specific-oob-data-for-received-802-11-packets.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/media-specific-oob-data-for-received-802-11-packets",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/guidelines-for-native-802-11-extensible-station-receive-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/guidelines-for-native-802-11-extensible-station-receive-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/indicating-raw-802-11-packets.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/indicating-raw-802-11-packets",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/guidelines-for-802-11-promiscuous-receive-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/guidelines-for-802-11-promiscuous-receive-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/guidelines-for-indicating-received-802-11-packets.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/guidelines-for-indicating-received-802-11-packets",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-media-streaming.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-media-streaming",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ieee-802-11e-wmm-support.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ieee-802-11e-wmm-support",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-status-indications.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-status-indications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/general-status-indications.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/general-status-indications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-status-indications2.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-status-indications2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/general-native-802-11-indications.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/general-native-802-11-indications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extensible-access-point-indications.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extensible-access-point-indications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extensible-station-indications.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extensible-station-indications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ihv-specific-indications.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ihv-specific-indications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/dot11-assoc-status-status-codes.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/dot11-assoc-status-status-codes",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-oids.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-oids",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-oid-terminology.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-oid-terminology",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-extensible-ap-oids.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-extensible-ap-oids",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-extensible-ap-mib-objects.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-extensible-ap-mib-objects",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-extensible-station-oids.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-extensible-station-oids",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-extensible-station-mib-objects.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-extensible-station-mib-objects",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-network-monitor-oids.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-network-monitor-oids",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-operational-oids.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-operational-oids",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-operational-mib-objects.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-operational-mib-objects",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-mib-oids.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-mib-oids",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-ieee-mib-objects.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-ieee-mib-objects",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-virtual-wifi-oids.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-virtual-wifi-oids",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-statistics.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-statistics",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extensible-station-mac-statistics.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extensible-station-mac-statistics",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extensible-station-phy-statistics.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extensible-station-phy-statistics",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-power-management.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-power-management",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/nic-power-management.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/nic-power-management",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/radio-power-management.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/radio-power-management",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/querying-radio-power-states.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/querying-radio-power-states",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/setting-radio-power-states.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/setting-radio-power-states",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extensible-access-point-power-management.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extensible-access-point-power-management",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/802-11-power-management.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/802-11-power-management",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/wake-on-wireless-lan.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/wake-on-wireless-lan",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/wake-up-events.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/wake-up-events",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/nic-low-power-activities.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/nic-low-power-activities",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/resuming-from-low-power-state.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/resuming-from-low-power-state",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-reset--halt-and-shutdown-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-reset--halt-and-shutdown-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/mac-phy-reset.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/mac-phy-reset",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/mac-phy-reset-request.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/mac-phy-reset-request",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/mac-phy-reset-operation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/mac-phy-reset-operation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/mac-phy-reset-confirmation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/mac-phy-reset-confirmation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/driver-reset.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/driver-reset",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/driver-halt.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/driver-halt",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/driver-shutdown.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/driver-shutdown",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/virtual-wifi-in-kernel-mode.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/virtual-wifi-in-kernel-mode",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/virtual-wifi-initialization.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/virtual-wifi-initialization",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/supported-virtualization-configurations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/supported-virtualization-configurations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/virtual-wifi-implementation-guidelines.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/virtual-wifi-implementation-guidelines",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/inf-file-settings-for-virtual-wifi.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/inf-file-settings-for-virtual-wifi",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/the-lower-binding-interface-for-virtual-wifi.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/the-lower-binding-interface-for-virtual-wifi",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/specifying-virtual-wifi-bus-dependencies.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/specifying-virtual-wifi-bus-dependencies",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-wfd-status-indications.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-wfd-status-indications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-wfd-discover-complete.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-wfd-discover-complete",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-wfd-go-negotiation-confirmation-send-complete.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-wfd-go-negotiation-confirmation-send-complete",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-wfd-go-negotiation-request-send-complete.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-wfd-go-negotiation-request-send-complete",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-wfd-go-negotiation-response-send-complete.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-wfd-go-negotiation-response-send-complete",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/-ndis-status-dot11-wfd-group-operating-channel.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/-ndis-status-dot11-wfd-group-operating-channel",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-wfd-invitation-request-send-complete.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-wfd-invitation-request-send-complete",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-wfd-invitation-response-send-complete.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-wfd-invitation-response-send-complete",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-wfd-provision-discovery-request-send-complete.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-wfd-provision-discovery-request-send-complete",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-wfd-provision-discovery-response-send-complete.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-wfd-provision-discovery-response-send-complete",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-wfd-received-go-negotiation-confirmation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-wfd-received-go-negotiation-confirmation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-wfd-received-go-negotiation-request.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-wfd-received-go-negotiation-request",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-wfd-received-go-negotiation-response.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-wfd-received-go-negotiation-response",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-wfd-received-invitation-request.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-wfd-received-invitation-request",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-wfd-received-invitation-response.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-wfd-received-invitation-response",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-wfd-received-provision-discovery-request.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-wfd-received-provision-discovery-request",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-wfd-received-provision-discovery-response.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-wfd-received-provision-discovery-response",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-ihv-extensions.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-ihv-extensions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/overview-of-ihv-extensibility.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/overview-of-ihv-extensibility",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/installing-native-802-11-ihv-extensions.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/installing-native-802-11-ihv-extensions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-ihv-extensions-dll4.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-ihv-extensions-dll4",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-ihv-extensions-dll-overview.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-ihv-extensions-dll-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-ihv-extensibility-functions.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-ihv-extensibility-functions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-ihv-handler-functions.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-ihv-handler-functions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-ihv-extensions-dll-implementation-guidelines.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-ihv-extensions-dll-implementation-guidelines",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/dll-start-stop-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/dll-start-stop-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/dll-start-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/dll-start-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/dll-stop-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/dll-stop-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/802-11-wlan-adapter-management.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/802-11-wlan-adapter-management",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/802-11-wlan-adapter-arrival.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/802-11-wlan-adapter-arrival",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/802-11-wlan-adapter-removal.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/802-11-wlan-adapter-removal",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/802-11-wlan-adapter-reset.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/802-11-wlan-adapter-reset",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/802-11-wlan-adapter-communication-channel.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/802-11-wlan-adapter-communication-channel",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/network-profile-management.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/network-profile-management",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/network-profile-overview.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/network-profile-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/creating-network-profile-extensions.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/creating-network-profile-extensions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/validating-network-profile-extensions.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/validating-network-profile-extensions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/interaction-with-the-user.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/interaction-with-the-user",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/requesting-user-interaction.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/requesting-user-interaction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/processing-session-changes.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/processing-session-changes",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/pre-association-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/pre-association-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/pre-association-operation-overview.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/pre-association-operation-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/pre-association-operation-guidelines.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/pre-association-operation-guidelines",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/post-association-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/post-association-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/performing-a-post-association-operation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/performing-a-post-association-operation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/stopping-a-post-association-operation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/stopping-a-post-association-operation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/interface-to-the-native-802-11-802-1x-module.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/interface-to-the-native-802-11-802-1x-module",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/send-and-receive-operations3.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/send-and-receive-operations3",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ieee-ethertype-handling.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ieee-ethertype-handling",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/send-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/send-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/receive-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/receive-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/notification-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/notification-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/sending-notifications.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/sending-notifications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/receiving-notifications.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/receiving-notifications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/virtual-station.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/virtual-station",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-ihv-ui-extensions-dll2.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-ihv-ui-extensions-dll2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/windows-sdk-references.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/windows-sdk-references",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-ihv-ui-extensions-dll-overview.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-ihv-ui-extensions-dll-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/native-802-11-ihv-ui-extensions-com-interfaces.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-ihv-ui-extensions-com-interfaces",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extending-the-properties-for-wireless-network-profiles.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extending-the-properties-for-wireless-network-profiles",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extending-wireless-connection-properties.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extending-wireless-connection-properties",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extending-wireless-security-properties.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extending-wireless-security-properties",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extending-microsoft-802-1x-security-settings.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extending-microsoft-802-1x-security-settings",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extending-the-ui-for-proprietary-802-1x-security-methods.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extending-the-ui-for-proprietary-802-1x-security-methods",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extending-the-ui-for-standard-802-1x-security-methods.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extending-the-ui-for-standard-802-1x-security-methods",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extending-the-advanced-properties-for-wireless-network-adapters.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extending-the-advanced-properties-for-wireless-network-adapters",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/handling-requests-for-the-display-of-a-custom-ui.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/handling-requests-for-the-display-of-a-custom-ui",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/requesting-the-display-of-a-custom-ui.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/requesting-the-display-of-a-custom-ui",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/querying-for-the-display-of-a-custom-ui.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/querying-for-the-display-of-a-custom-ui",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/displaying-custom-ui-pages-within-a-balloon-notification.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/displaying-custom-ui-pages-within-a-balloon-notification",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/displaying-custom-ui-pages-within-the-network-connection-wizard.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/displaying-custom-ui-pages-within-the-network-connection-wizard",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/accessing-profile-and-context-data.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/accessing-profile-and-context-data",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/wi-fi-auto-power-save-mode.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/wi-fi-auto-power-save-mode",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/wi-fi-direct-miniport-initialization-and-configuration.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/wi-fi-direct-miniport-initialization-and-configuration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/wi-fi-direct-protocol-implementation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/wi-fi-direct-protocol-implementation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/wi-fi-direct-device-discovery.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/wi-fi-direct-device-discovery",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/wi-fi-direct-group-owner-negotiation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/wi-fi-direct-group-owner-negotiation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/wi-fi-direct-invitation-procedure.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/wi-fi-direct-invitation-procedure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/wi-fi-direct-group-owner-operation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/wi-fi-direct-group-owner-operation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/wi-fi-direct-client-operation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/wi-fi-direct-client-operation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/wi-fi-direct-provision-discovery.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/wi-fi-direct-provision-discovery",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/wi-fi-direct-reference-tables.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/wi-fi-direct-reference-tables",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/wi-fi-network-list-offload.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/wi-fi-network-list-offload",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/windot11-h.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/windot11-h",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/dot11-country-or-region-string.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/dot11-country-or-region-string",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/dot11-country-string.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/dot11-country-string",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/dot11-pmkid-value.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/dot11-pmkid-value",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-association-completion.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-association-completion",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-association-start.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-association-start",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-can-sustain-ap.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-can-sustain-ap",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-connection-completion.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-connection-completion",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-connection-start.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-connection-start",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-disassociation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-disassociation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-incoming-assoc-completion.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-incoming-assoc-completion",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-incoming-assoc-request-received.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-incoming-assoc-request-received",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-incoming-assoc-started.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-incoming-assoc-started",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-link-quality.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-link-quality",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-mpdu-max-length-changed.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-mpdu-max-length-changed",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-phy-frequency-adopted.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-phy-frequency-adopted",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-phy-state-changed.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-phy-state-changed",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-pmkid-candidate-list.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-pmkid-candidate-list",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-roaming-completion.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-roaming-completion",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-roaming-start.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-roaming-start",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-scan-confirm.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-scan-confirm",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-stop-ap.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-stop-ap",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-dot11-tkipmic-failure.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ndis-status-dot11-tkipmic-failure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-active-phy-list.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-active-phy-list",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-additional-ie.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-additional-ie",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-association-params.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-association-params",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-atim-window.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-atim-window",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-auto-config-enabled.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-auto-config-enabled",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-available-channel-list.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-available-channel-list",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-available-frequency-list.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-available-frequency-list",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-beacon-period.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-beacon-period",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-cca-mode-supported.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-cca-mode-supported",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-cca-watchdog-count-max.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-cca-watchdog-count-max",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-cca-watchdog-count-min.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-cca-watchdog-count-min",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-cca-watchdog-timer-max.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-cca-watchdog-timer-max",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-cca-watchdog-timer-min.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-cca-watchdog-timer-min",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-cf-pollable.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-cf-pollable",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-channel-agility-enabled.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-channel-agility-enabled",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-channel-agility-present.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-channel-agility-present",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-cipher-default-key.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-cipher-default-key",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-cipher-default-key-id.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-cipher-default-key-id",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-cipher-key-mapping-key.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-cipher-key-mapping-key",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-connect-request.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-connect-request",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-country-string.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-country-string",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-create-mac.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-create-mac",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-current-address.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-current-address",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-current-cca-mode.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-current-cca-mode",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-current-channel.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-current-channel",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-current-channel-number.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-current-channel-number",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-current-dwell-time.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-current-dwell-time",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-current-frequency.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-current-frequency",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-current-index.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-current-index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-current-operation-mode.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-current-operation-mode",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-current-optional-capability.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-current-optional-capability",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-current-pattern.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-current-pattern",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-current-phy-id.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-current-phy-id",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-current-reg-domain.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-current-reg-domain",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-current-set.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-current-set",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-current-tx-power-level.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-current-tx-power-level",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-data-rate-mapping-table.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-data-rate-mapping-table",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-delete-mac.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-delete-mac",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-desired-bss-type.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-desired-bss-type",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-desired-bssid-list.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-desired-bssid-list",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-desired-country-or-region-string.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-desired-country-or-region-string",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-desired-phy-list.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-desired-phy-list",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-desired-ssid-list.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-desired-ssid-list",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-disassociate-peer-request.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-disassociate-peer-request",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-disconnect-request.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-disconnect-request",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-diversity-selection-rx.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-diversity-selection-rx",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-diversity-support.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-diversity-support",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-dsss-ofdm-option-enabled.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-dsss-ofdm-option-enabled",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-dsss-ofdm-option-implemented.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-dsss-ofdm-option-implemented",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-dtim-period.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-dtim-period",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-ed-threshold.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-ed-threshold",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-ehcc-capability-enabled.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-ehcc-capability-enabled",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-ehcc-capability-implemented.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-ehcc-capability-implemented",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-ehcc-number-of-channels-family-index.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-ehcc-number-of-channels-family-index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-ehcc-prime-radix.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-ehcc-prime-radix",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-enabled-authentication-algorithm.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-enabled-authentication-algorithm",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-enabled-multicast-cipher-algorithm.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-enabled-multicast-cipher-algorithm",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-enabled-unicast-cipher-algorithm.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-enabled-unicast-cipher-algorithm",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-enum-association-info.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-enum-association-info",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-enum-bss-list.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-enum-bss-list",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-enum-peer-info.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-enum-peer-info",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-erp-pbcc-option-enabled.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-erp-pbcc-option-enabled",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-erp-pbcc-option-implemented.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-erp-pbcc-option-implemented",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-exclude-unencrypted.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-exclude-unencrypted",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-excluded-mac-address-list.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-excluded-mac-address-list",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-extsta-capability.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-extsta-capability",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-flush-bss-list.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-flush-bss-list",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-fragmentation-threshold.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-fragmentation-threshold",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-frequency-bands-supported.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-frequency-bands-supported",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-hardware-phy-state.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-hardware-phy-state",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-hidden-network-enabled.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-hidden-network-enabled",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-hop-algorithm-adopted.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-hop-algorithm-adopted",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-hop-modulus.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-hop-modulus",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-hop-offset.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-hop-offset",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-hop-time.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-hop-time",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-hopping-pattern.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-hopping-pattern",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-hr-cca-mode-supported.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-hr-cca-mode-supported",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-ibss-params.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-ibss-params",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-incoming-association-decision.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-incoming-association-decision",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-long-retry-limit.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-long-retry-limit",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-mac-address.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-mac-address",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-max-dwell-time.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-max-dwell-time",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-max-receive-lifetime.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-max-receive-lifetime",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-max-transmit-msdu-lifetime.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-max-transmit-msdu-lifetime",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-maximum-list-size.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-maximum-list-size",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-media-streaming-enabled.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-media-streaming-enabled",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-mpdu-max-length.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-mpdu-max-length",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-multi-domain-capability.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-multi-domain-capability",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-multi-domain-capability-enabled.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-multi-domain-capability-enabled",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-multi-domain-capability-implemented.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-multi-domain-capability-implemented",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-multicast-list.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-multicast-list",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-nic-power-state.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-nic-power-state",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-nic-specific-extension.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-nic-specific-extension",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-number-of-hopping-sets.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-number-of-hopping-sets",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-offload-network-list.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-offload-network-list",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-operation-mode-capability.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-operation-mode-capability",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-operational-rate-set.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-operational-rate-set",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-optional-capability.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-optional-capability",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-pbcc-option-implemented.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-pbcc-option-implemented",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-permanent-address.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-permanent-address",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-pmkid-list.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-pmkid-list",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-port-state-notification.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-port-state-notification",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-powermgmt-mode-auto-enabled.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-powermgmt-mode-auto-enabled",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-power-mgmt-mode-status.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-power-mgmt-mode-status",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-power-mgmt-request.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-power-mgmt-request",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-preferred-mac.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-preferred-mac",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-privacy-exemption-list.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-privacy-exemption-list",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-qos-params.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-qos-params",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-random-table-flag.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-random-table-flag",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-recv-sensitivity-list.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-recv-sensitivity-list",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-reg-domains-support-value.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-reg-domains-support-value",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-reset-request.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-reset-request",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-rf-usage.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-rf-usage",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-rts-threshold.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-rts-threshold",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-safe-mode-enabled.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-safe-mode-enabled",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-safe-mode-ht-enabled.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-safe-mode-ht-enabled",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-scan-request.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-scan-request",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-short-preamble-option-implemented.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-short-preamble-option-implemented",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-short-retry-limit.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-short-retry-limit",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-short-slot-time-option-enabled.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-short-slot-time-option-enabled",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-short-slot-time-option-implemented.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-short-slot-time-option-implemented",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-start-ap-request.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-start-ap-request",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-station-id.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-station-id",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-statistics.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-statistics",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-supported-country-or-region-string.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-supported-country-or-region-string",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-supported-data-rates-value.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-supported-data-rates-value",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-supported-dsss-channel-list.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-supported-dsss-channel-list",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-supported-multicast-algorithm-pair.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-supported-multicast-algorithm-pair",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-supported-ofdm-frequency-list.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-supported-ofdm-frequency-list",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-supported-phy-types.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-supported-phy-types",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-supported-power-levels.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-supported-power-levels",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-supported-rx-antenna.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-supported-rx-antenna",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-supported-tx-antenna.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-supported-tx-antenna",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-supported-unicast-algorithm-pair.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-supported-unicast-algorithm-pair",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-temp-type.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-temp-type",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-ti-threshold.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-ti-threshold",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-unicast-use-group-enabled.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-unicast-use-group-enabled",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-unreachable-detection-threshold.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-unreachable-detection-threshold",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-virtual-station-capability.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-virtual-station-capability",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-wfd-additional-ie.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-wfd-additional-ie",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/-oid-dot11-wfd-connect-to-group-request.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/-oid-dot11-wfd-connect-to-group-request",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-wfd-desired-group-id.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-wfd-desired-group-id",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-wfd-device-capability.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-wfd-device-capability",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-wfd-device-info.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-wfd-device-info",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-wfd-device-listen-channel.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-wfd-device-listen-channel",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-wfd-disconnect-from-group-request.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-wfd-disconnect-from-group-request",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-wfd-discover-request.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-wfd-discover-request",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-wfd-enum-device-list.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-wfd-enum-device-list",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-wfd-flush-device-list.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-wfd-flush-device-list",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-wfd-get-dialog-token.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-wfd-get-dialog-token",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/-oid-dot11-wfd-group-join-parameters.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/-oid-dot11-wfd-group-join-parameters",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-wfd-group-owner-capability.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-wfd-group-owner-capability",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-wfd-group-start-parameters.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-wfd-group-start-parameters",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-wfd-listen-state-discoverability.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-wfd-listen-state-discoverability",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-wfd-secondary-device-type-list.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-wfd-secondary-device-type-list",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-wfd-send-go-negotiation-confirmation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-wfd-send-go-negotiation-confirmation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-wfd-send-go-negotiation-request.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-wfd-send-go-negotiation-request",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-wfd-send-go-negotiation-response.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-wfd-send-go-negotiation-response",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-wfd-send-invitation-request.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-wfd-send-invitation-request",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-wfd-send-invitation-response.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-wfd-send-invitation-response",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/-oid-dot11-wfd-send-provision-discovery-request.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/-oid-dot11-wfd-send-provision-discovery-request",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-wfd-send-provision-discovery-response.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-wfd-send-provision-discovery-response",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-wfd-start-go-request.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-wfd-start-go-request",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-wfd-stop-discovery.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-wfd-stop-discovery",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/oid-dot11-wps-enabled.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/wireless/oid-dot11-wps-enabled",
+      "redirect_document_id": true
+    }    
   ]
 }

@@ -49,6 +49,5 @@ For more information, see [**Creating the NetAdapter interface for the PDP conte
 | --- | --- |
 | Target platform | Universal |
 | Minimum KMDF version | 1.27 |
-| Minimum NetAdapterCx version | 1.3 |
 | Header | Mbbcx.h |
 | IRQL | PASSIVE_LEVEL |

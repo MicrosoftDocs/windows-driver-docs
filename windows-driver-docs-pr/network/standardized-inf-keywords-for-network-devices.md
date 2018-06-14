@@ -74,8 +74,6 @@ In addition, standardized keywords that are specific to networking technologies 
 
 [INF File Settings for Filter Drivers](inf-file-settings-for-filter-drivers.md)
 
-[INF File Settings for Virtual WiFi](inf-file-settings-for-virtual-wifi.md)
-
 [INF Requirements for NDKPI](inf-requirements-for-ndkpi.md)
 
 [MB Miniport Driver INF Requirements](mb-miniport-driver-inf-requirements.md)
