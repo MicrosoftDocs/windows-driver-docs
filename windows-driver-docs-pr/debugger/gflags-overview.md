@@ -4,7 +4,7 @@ description: GFlags Overview
 ms.assetid: fa5c48bf-c0d0-4010-a101-381c692082bf
 keywords: ["GFlags, overview"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 06/12/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -17,6 +17,9 @@ ms.technology: windows-devices
 
 
 GFlags (gflags.exe), the Global Flags Editor, enables and disables advanced internal system diagnostic and troubleshooting features. You can run GFlags from a Command Prompt window or use its graphical user interface dialog box.
+
+For information on how to install and locate gflags.exe, see [GFlags](gflags.md).
+
 
 Use GFlags to activate the following features:
 
