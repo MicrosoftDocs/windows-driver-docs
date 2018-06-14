@@ -21,17 +21,21 @@ ms.technology: windows-devices
 
 Starting with Windows Vista, the kernel-mode code signing policy controls whether a kernel-mode driver will be loaded. The signing requirements depend on the version of the Windows operating system and on whether the driver is being signed for public release or by a development team during the development and test of a driver. There are also [signing requirements](pnp-device-installation-signing-requirements--windows-vista-and-later-.md) that pertain to the installation of a PnP device and driver.
 
+Virtual drivers have the same requirements as actual hardware drivers. In other words, they must comply with the requirements for the OS version for which they are targeted.
+
+For info about signing and dashboard submission, see [Get drivers signed by Microsoft for multiple Windows versions](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-drivers-signed-by-microsoft-for-multiple-windows-versions).
+
 ### <a href="" id="kernel-mode-code-signing-requirements-for-public-release-of-a-driver"></a> Kernel-Mode Code Signing Requirements for Public Release of a Driver
 
 > [!NOTE]
-> Starting with Windows 10, version 1607, Windows will not load any new kernel mode drivers which are not signed by the Dev Portal.  To get your driver signed, follow these steps:
+> In addition to the requirements on this page, starting with Windows 10, version 1607, Windows will not load any new kernel mode drivers which are not signed by the Dev Portal.  To get your driver signed, follow these steps:
 > 1. [Register for the Windows Hardware Dev Center program](https://docs.microsoft.com/windows-hardware/drivers/dashboard/register-for-the-hardware-program). Note that an [EV code signing certificate](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate) is required to establish a dashboard account.
 > 2. Perform [attestation signing](https://docs.microsoft.com/windows-hardware/drivers/dashboard/attestation-signing-a-kernel-driver-for-public-release)  on your new kernel driver.
 
 <a href="" id="--------64-bit-versions-of-windows-starting-with-"></a> **64-bit versions of Windows starting with Windows Vista**  
 The kernel-mode code signing policy requires that a kernel-mode driver be signed as follows:
 
--   A kernel-mode [*boot-start driver*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-boot-start-driver) must have an embedded [Software Publisher Certificate (SPC)](software-publisher-certificate.md) signature. This applies to any type of PnP or non-PnP kernel-mode boot-start driver.
+-   A kernel-mode boot-start driver must have an embedded [Software Publisher Certificate (SPC)](software-publisher-certificate.md) signature. This applies to any type of PnP or non-PnP kernel-mode boot-start driver.
 
 -   A non-PnP kernel-mode driver that is not a boot-start driver must have either a [catalog file](catalog-files.md) with an SPC signature or the driver file must include an embedded SPC signature.
 
