@@ -68,14 +68,14 @@ AddProperty= AddInterfaceSection.AddProps
  
 [AddInterfaceSection.AddProps] 
 ; DEVPKEY_DeviceInterface_UnrestrictedAppCapabilities 
-{026e516e-b814-414b-83cd-856d6fef4822}, 8, 0x2012,, "CompanyName.myCustomCapabilityNameTBD_YourStorePubId"
+{026e516e-b814-414b-83cd-856d6fef4822}, 8, 0x2012,, "CompanyName.myCustomCapabilityNameTBD_MyStorePubId"
 ```
 
 Or, do the following in the driver:
 
 ```c++
 WDF_DEVICE_INTERFACE_PROPERTY_DATA PropertyData = {}; 
-WCHAR customCapabilities[] = L”CompanyName.yourCustomCapabilityNameTBD_YourStorePubId\0”; 
+WCHAR customCapabilities[] = L”CompanyName.myCustomCapabilityNameTBD_MyStorePubId\0”; 
  
 WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT( 
    &PropertyData, 
@@ -91,7 +91,7 @@ Status = WdfDeviceAssignInterfaceProperty(
 
 ```
 
-Replace `zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz` with the GUID for the interface to expose.  Replace *CompanyName* with your company name, *myCustomCapabilityNameTBD* with a name that is unique within your company, and *YourStorePubId* with your publisher store ID. 
+Replace `zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz` with the GUID for the interface to expose.  Replace *CompanyName* with your company name, *myCustomCapabilityNameTBD* with a name that is unique within your company, and *MyStorePubId* with your publisher store ID. 
 
 For an example of the driver code shown immediately above, see the [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU).
 
