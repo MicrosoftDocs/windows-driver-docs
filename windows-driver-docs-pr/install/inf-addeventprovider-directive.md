@@ -53,7 +53,7 @@ An **AddEventProvider** directive must reference a named *event-provider-install
 [event-provider-install-section]
  
 ProviderName=name
-[ResourceFile=path-to-file]
+ResourceFile=path-to-file
 [MessageFile=path-to-file]
 [ParameterFile=path-to-file]
 (ImportChannel=channel-name) |
@@ -61,7 +61,7 @@ ProviderName=name
 ...
 ```
 
-Each *event-provider-install-section* must have the **ProviderName**. Optionally, you can specify a list of channels for the provider by any combination of **ImportChannel(s)** and **AddChannel(s)**, each on a separate line. For more information about channel list in an INF file, see the following **Specifying Channel List** section. For more information about [Windows Event Log](https://msdn.microsoft.com/library/windows/desktop/aa385780) channels, see [Defining Channels](https://msdn.microsoft.com/library/windows/desktop/dd996911).
+Each *event-provider-install-section* must have the **ProviderName** and the **ResourceFile**. Optionally, you can specify a list of channels for the provider by any combination of **ImportChannel(s)** and **AddChannel(s)**, each on a separate line. For more information about channel list in an INF file, see the following **Specifying Channel List** section. For more information about [Windows Event Log](https://msdn.microsoft.com/library/windows/desktop/aa385780) channels, see [Defining Channels](https://msdn.microsoft.com/library/windows/desktop/dd996911).
 
 ### Event-Provider-Install Section Entries and Values
 
@@ -69,7 +69,7 @@ Each *event-provider-install-section* must have the **ProviderName**. Optionally
 Specifies the name of the provider. The name cannot be longer than 255 characters, and cannot contain the characters: '>', '<', '&', '"', '|', '\', ':', ''', '?', '*', or characters with ASCII values less than 31. In addition, the name must follow the general constraints on file and registry key names. These constraints can be found at [Naming a File](https://msdn.microsoft.com/library/windows/desktop/aa365247) and [Registry Element Size Limits](https://msdn.microsoft.com/library/windows/desktop/ms724872).
 
 <a href="" id="resourcefile-path-to-file"></a>**ResourceFile**=*path-to-file*  
-Optionally specifies the path to the exe or dll that contains the provider's metadata resources, expressed as %dirid%\filename.
+Specifies the path to the exe or dll that contains the provider's metadata resources, expressed as %dirid%\filename.
 
 The *dirid* number is either a custom directory identifier or one of the system-defined directory identifiers described in [Using Dirids](using-dirids.md).
 
@@ -87,9 +87,9 @@ Optionally specifies a channel with a sub-directive that optionally references a
 
 ### Specifying Channel List
 
-You can specify a list of channels for the provider within its *event-provider-install-section*. You can import a channel or add a channel to the list and the order of these channels is preserved. For more info, see [Defining Channels](https://msdn.microsoft.com/library/windows/desktop/dd996911.
+You can specify a list of channels for the provider within its *event-provider-install-section*. You can import a channel or add a channel to the list and the order of these channels is preserved. For more info, see [Defining Channels](https://msdn.microsoft.com/library/windows/desktop/dd996911).
 
-The *channel-name* must be unique within the list of channels that the provider uses. The *channel-name* must be less that 255 characters and cannot contain the following characters: '>', '<', '&', '"', '|', '\', ':', '`', '?', '*', or characters with ASCII values less than 31.
+The *channel-name* must be unique within the list of channels that the provider uses. The *channel-name* must be less than 255 characters and cannot contain the following characters: '>', '<', '&', '"', '|', '\', ':', '`', '?', '*', or characters with ASCII values less than 31.
 
 The *channel-type* can be specified as one of the following numeric values, expressed either in decimal or, as shown in the following list, in hexadecimal notation.
 
@@ -161,47 +161,34 @@ This example shows the event-provider-install sections referenced by the **AddEv
 
 ```
 [foo_Event_Provider_Inst]
-ProviderName  = %foo.ProviderName%
-ResourceFile  = %13%\Project1.exe
-MessageFile   = %13%\Project1.exe
+ProviderName  = FooCollector
+ResourceFile  = %13%\FooResource.dll
+MessageFile   = %13%\FooMessage.exe
 
 [bar_Event_Provider_Inst]
-ProviderName  = %bar.ProviderName%
-ResourceFile  = %13%\Project2.exe
-MessageFile   = %13%\Project2.exe
-ParameterFile = %13%\Project3.exe
-ImportChannel = %bar.ChannelName1%
-AddChannel    = %bar.ChannelName2%,0x1,channel2_Inst    ; Admin type
-ImportChannel = %bar.ChannelName3%
-ImportChannel = %bar.ChannelName4%
-AddChannel    = %bar.ChannelName5%,0x4                  ; Debug type
+ProviderName  = BarCollector
+ResourceFile  = %13%\BarResource.exe
+MessageFile   = %13%\BarMessage.dll
+ParameterFile = %13%\BarParameter.dll
+ImportChannel = Microsoft-Windows-BaseProvider/Admin
+AddChannel    = Bar-Provider/Admin,0x1,bar_Channel2_Inst    ; Admin type
+ImportChannel = Microsoft-Windows-BaseProvider/Operational
+ImportChannel = Microsoft-Windows-SampleProvider/Admin
+AddChannel    = Bar-Provider/Debug,0x4                      ; Debug type
 
-[channel2_Inst]
-Isolation         = 2                                   ; System isolation
+[bar_Channel2_Inst]
+Isolation         = 2                                       ; System isolation
 Enabled           = 1
 Value             = 17
 LoggingMaxSize    = 20971520
-LoggingRetention  = 2                                   ; Sequential
+LoggingRetention  = 2                                       ; Sequential
 LoggingAutoBackup = 1
-
-[Strings]
-; ...
-foo.ProviderName = "FooCollector"
-bar.ProviderName = "BarCollector"
-bar.ChannelName1 = "Microsoft-Windows-BaseProvider/Admin"
-bar.ChannelName2 = "Bar-Provider/Admin"
-bar.ChannelName3 = "Microsoft-Windows-BaseProvider/Operational"
-bar.ChannelName4 = "Microsoft-Windows-SampleProvider/Admin"
-bar.ChannelName5 = "Bar-Provider/Debug"
-
 ```
 
 ## See also
 
 
 [***DDInstall*.Events**](inf-ddinstall-events-section.md)
-
-[**Strings**](inf-strings-section.md)
 
  
 

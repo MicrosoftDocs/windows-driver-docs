@@ -80,7 +80,6 @@ AddEventProvider={6d3fd9ef-bcbb-42d7-9fbd-1bf2d926b394},bar_Event_Provider_Inst
 
 [bar_Event_Provider_Inst]
 ; ...
-
 ```
 
 ## See also
