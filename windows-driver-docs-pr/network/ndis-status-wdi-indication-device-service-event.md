@@ -26,9 +26,9 @@ The miniport driver should send a separate notification for every device service
 
 | Type | Multiple TLV instances allowed | Optional | Description |
 | --- | --- | --- | --- |
-| WDI_TLV_DEVICE_SERVICE_PARAMS_DATA_BLOB |   | X | The information received from the IHV miniport driver. |
-| WDI_TLV_DEVICE_SERVICE_PARAMS_GUID |   |   | The GUID that identifies the device service to which this indication belongs (as defined by the IHV/OEM). |
-| WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE |   |   | The opcode specific to the device service. |
+| [WDI_TLV_DEVICE_SERVICE_PARAMS_DATA_BLOB](wdi-tlv-device-service-params-data-blob.md) |   | X | The information received from the IHV miniport driver. |
+| [WDI_TLV_DEVICE_SERVICE_PARAMS_GUID](wdi-tlv-device-service-params-guid.md) |   |   | The GUID that identifies the device service to which this indication belongs (as defined by the IHV/OEM). |
+| [WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE](wdi-tlv-device-service-params-opcode.md) |   |   | The opcode specific to the device service. |
 
 ## Requirements
 
