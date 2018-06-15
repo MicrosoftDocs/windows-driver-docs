@@ -35,7 +35,7 @@ AddEventProvider={ProviderGUID},event-provider-install-section
 
 
 <a href="" id="ProviderGUID"></a>*ProviderGUID*  
-Specifies the GUID value that identifies the provider. This can be expressed as an explicit GUID value of the form `{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}` or as a %strkey% token defined to `{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}` in a Strings section of the INF file.
+Specifies the GUID value that identifies the provider. This can be expressed as an explicit GUID value of the form `{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}` or as a %strkey% token defined to `{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}` in a [**Strings**](inf-strings-section.md) section of the INF file.
 
 <a href="" id="event-provider-install-section"></a>*event-provider-install-section*  
 References an INF-writer-defined section that contains information for registering the provider for this device (or devices). For more information, see the following **Remarks** section.
