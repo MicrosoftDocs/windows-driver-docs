@@ -1,10 +1,10 @@
 ---
 title: Setting Up KDNET Network Kernel Debugging Manually
-description: Debugging Tools for Windows supports kernel debugging over an Ethernet network.
+description: Debugging Tools for Windows supports kernel debugging over a network.
 ms.assetid: B4A79B2E-D4B1-42CA-9121-DEC923C76927
 keywords: ["Network debugging", "Ethernet debugging", "Docking station", "Setting Up Kernel-Mode Debugging over a Network Cable Manually"]
 ms.author: domars
-ms.date: 06/14/2018
+ms.date: 06/15/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,7 +64,7 @@ If you connect several target computers to a single host computer, each connecti
 ## <span id="Setting_Up_the_Target_Computer"></span><span id="setting_up_the_target_computer"></span><span id="SETTING_UP_THE_TARGET_COMPUTER"></span>Setting Up the Target Computer
 
 
-1.  Verify that the target computer has a supported network adapter. See these topics for mor einformation
+1.  Verify that the target computer has a supported network adapter. See these topics for more information.
 
 
     - [Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md)
@@ -248,10 +248,28 @@ To manually delete BCDEdit Entries, complete these steps.
 For more information, see [BCDEdit /deletevalue](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--deletevalue)
 
 
-
 ## <span id="Hyper_V"></span><span id="hyper_v"></span><span id="HYPER_V"></span>Hyper-V
 
+**Setting up Hyper-V**
+
 If you intend to install the Hyper-V role on the target computer, see [Setting Up Network Debugging of a Virtual Machine Host](setting-up-network-debugging-of-a-virtual-machine-host.md).
+
+For information on debugging a hyper-v Virtual Machine (VM), see [Setting Up Network Debugging of a Virtual Machine - KDNET](setting-up-network-debugging-of-a-virtual-machine-host.md)
+
+
+**Installing KDNET on the host OS when Hyper-V debugging is enabled**
+
+There is a specific situation, that is not too common, that can cause some confusion and what will appear as a networking failure. In this scenario:
+
+- Hyper-V has been enabled on the PC and the target VM is configured for debugging.
+
+- There is a need to configure the host OS to debug Windows that is supporting the VM. To do this, kdnet is configured in the host OS.
+
+Because kdnet will need exclusive access to the physical adapter, it will take over all access to the adapter.  When this occurs, the VM will no longer be able to access the network using the configured network adapters. If this occurs and you want to re-enable network access for the VMs, complete these steps.
+
+1. Open Virtual Switch Manager from Hyper-V Manager, select your existing Virtual Switch, and change the external network NIC to the *Microsoft Kernel Debug Network Adapter* by selecting it from the drop down box and then clicking OK in the Virtual Switch Manager dialog box. 
+
+2. After updating your Virtual Switch NIC, shutdown and restart your VMs.
 
 
 
