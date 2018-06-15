@@ -11,6 +11,16 @@ ms.technology: windows-devices
 
 # WDI doc change history
 
+## Windows 10, version 1809
+
+Documentation updated to WDI version 1.1.7.
+
+| Topic | Description |
+| --- | --- |
+| [**WDI_PHY_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_phy_type) | Added support for 802.11ax PHY. |
+| [**WDI_CONNECTION_QUALITY_HINT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_connection_quality_hint) | Changed the name of the **WDI_CONNECTION_QUALITY_HIGH_CHANNEL_AVAILABILITY** value to **WDI_CONNECTION_QUALITY_HIGH_THROUGHPUT**. No change to the description of this value. |
+| [NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT](ndis-status-wdi-indication-device-service-event.md) | Added support for unsolicited device service notifications. |
+
 ## Windows 10, version 1803
 
 Documentation updated to WDI version 1.1.6.
