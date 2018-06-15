@@ -54,7 +54,7 @@ The host computer can use any network adapter, but the target computer must use 
 
 ## <span id="Choosing_a_Port_for_Network_Debugging"></span><span id="choosing_a_port_for_network_debugging"></span><span id="CHOOSING_A_PORT_FOR_NETWORK_DEBUGGING"></span>Choosing a Port for Network Debugging
 
-Choose a port number that will be used for debugging on both the host and target computers. You can choose any number from 49152 through 65535, the recommended range is between 50000 and 50039. The port that you choose will be opened for exclusive access by the debugger running on the host computer. 
+Choose a port number that will be used for debugging on both the host and target computers. You can choose any number from 49152 through 65535. The recommended range is between 50000 and 50039. The port that you choose will be opened for exclusive access by the debugger running on the host computer. 
 
 **Note**  The range of port numbers that can be used for network debugging might be limited by your company's network policy. To determine whether your company's policy limits the range of ports that can be used for network debugging, check with your network administrators.
  
@@ -141,7 +141,7 @@ The  debugger  must have access through the firewall. You can use Control Panel 
 
 **Use Ping to test connectivity**
 
-If the debugger does not connect use the ping command to verify connectivity. 
+If the debugger does not connect use the ping command on the target PC to verify connectivity. 
 
    ```
    C:\>Ping <HostComputerIPAddress> 
