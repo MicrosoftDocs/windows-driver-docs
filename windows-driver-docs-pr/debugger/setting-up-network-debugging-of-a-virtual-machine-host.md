@@ -50,7 +50,7 @@ To allow the KDNET utility to update BCDEdit boot settings, temporarily disable 
 Re-enable secure boot after the BCDEdit setting have been configured by the KDNet utility.
 
 
-**4. Debugging Tools for Windows are installed**
+**4. Install the Debugging Tools for Windows**
 
 The debugging tools are used for the debugger and the kdnet utility and must be installed. For information on how to download and install the debugging tools, see [Download Debugging Tools for Windows](debugger-download-tools.md). 
 
@@ -130,18 +130,19 @@ For example, if the target is running 32 bit Windows, run a 32 version of the de
     Then restart this VM by running shutdown -r -t 0 from this command prompt.
     ```
 
-8. Re-enable BitLocker and secure boot when you're done configuring the debugger settings.
+8. Use CRTL+C to copy the provided windbg output into the command buffer. Doing this avoids attempting to write down the long key value that is returned.
 
-9. Because a VM with enhanced session support can timeout when it is left in a breakpoint, disable *Enhanced session* support using the **View** pull down menu in the VM. 
+9. Re-enable BitLocker and secure boot when you're done configuring the debugger settings.
 
-10. The VM will be restarted after the debugger is loaded and running. This process is described next. 
+10. Because a VM with enhanced session support can timeout when it is left in a breakpoint, disable *Enhanced session* support using the **View** pull down menu in the VM. 
+
+11. The VM will be restarted after the debugger is loaded and running. This process is described next. 
 
 
 ## <span id="Starting_the_Debugging_Session"></span><span id="starting_the_debugging_session"></span><span id="STARTING_THE_DEBUGGING_SESSION"></span>Starting the Debugging Session
 
-1. Copy the it into a notepad .txt file or the command buffer.
 
-2. To connect to the target PC paste the following in the non-virtual machine command window, where \<YourDebugPort\> is the port you selected above between 50000-50039, and \<YourKey\> is the unique key that was returned by KDNet above that you copied earlier.
+2. To connect to the target PC, use CTRL+V to paste in the main OS command window the windbg string that was returned by KDNet that you copied earlier.
 
     ```
     C:\Debuggers\windbg -k net:port=<YourDebugPort>,key=<YourKey> 
