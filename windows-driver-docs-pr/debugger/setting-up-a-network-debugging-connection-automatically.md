@@ -65,7 +65,7 @@ Use the kdnet.exe utility to automatically configure the  debugger settings on t
 
 1. Confirm that the Windows Debugging Tools are installed on the host system. For information on downloading and installing the debugger tools, see [Download Debugging Tools for Windows](debugger-download-tools.md). 
 
-2. Locate the *kdnet.exe* and *VerifiedNICList.xml* files. By default they are located here.
+2. Locate the *kdnet.exe* and *VerifiedNICList.xml* files. By default, they are located here.
 
    ```
    C:\Program Files (x86)\Windows Kits\10\Debuggers\x64
@@ -126,7 +126,7 @@ If you are prompted about allowing WinDbg to access the port through the firewal
 
 ## <span id="Restarting_Target"></span><span id="restarting_target"></span><span id="RESTARTING_TARGET"></span> Restarting the Target PC
 
-Once the debugger is connected, reboot the target computer. One way to do restart the PC is to use this command, from an administrators command prompt.
+Once the debugger is connected, reboot the target computer. One way to do restart the PC is to use this command, from an administrator's command prompt.
 
    ```
    shutdown -r -t 0 
@@ -136,7 +136,7 @@ Once the debugger is connected, reboot the target computer. One way to do restar
 
 **Debugging application must be allowed through firewall**
 
-The  debugger  must have access through the firewall. You can use Control Panel to allow access through the firewall. Open **Control Panel &gt; System and Security**, and click **Allow an app through Windows Firewall**. In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*. Use the check boxes to allow those two applications through the firewall. Scroll down and click **OK**, to save the firewall changes. Restart the debugger.
+The  debugger  must have access through the firewall. You can use Control Panel to allow access through the firewall. Open **Control Panel &gt; System and Security** and click **Allow an app through Windows Firewall**. In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*. Use the check boxes to allow those two applications through the firewall. Scroll down and click **OK**, to save the firewall changes. Restart the debugger.
 
 
 **Use Ping to test connectivity**
