@@ -32,20 +32,29 @@ Debugging over a network has the following advantages compared to debugging over
 The host computer can use any network adapter, but the target computer must use a network adapter that is supported by Debugging Tools for Windows. For a list of supported network adapters, see [Supported Ethernet NICs for Network Kernel Debugging in Windows 10](supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md) and [Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md).
 
 
+## <span id="Install_WDK"></span><span id="INSTALL_WDK"></span>Install the Debugging Tools for Windows
+
+Confirm that the Debugging Tools for Windows are installed on the host system. For information on downloading and installing the debugger tools, see [Download Debugging Tools for Windows](debugger-download-tools.md). 
+
+
 ## <span id="Determining_the_IP_Address_of_the_Host_Computer"></span><span id="determining_the_ip_address_of_the_host_computer"></span><span id="DETERMINING_THE_IP_ADDRESS_OF_THE_HOST_COMPUTER"></span>Determining the IP Address of the Host Computer
 
 
 Use one of the following procedures to determine the IP address of the host computer.
 
--   On the host computer, open a Command Prompt window and enter the following command:
+1. On the host computer, open a Command Prompt window and enter the following command:
 
-    **ipconfig**
+   ```
+   ipconfig
+   ```
 
     Make a note of the IPv4 address of the network adapter that you intend to use for debugging.
 
--   On the target computer, open a Command Prompt window and enter the following command, where *HostName* is the name of the host computer:
+2. On the target computer, open a Command Prompt window and enter the following command, where *YourIPAddress* is the IP address of the host computer:
 
-    **ping -4** *HostName*
+   ```
+   ping -4 <YourIPAddress>
+   ```
 
 
 ## <span id="Choosing_a_Port_for_Network_Debugging"></span><span id="choosing_a_port_for_network_debugging"></span><span id="CHOOSING_A_PORT_FOR_NETWORK_DEBUGGING"></span>Choosing a Port for Network Debugging
@@ -99,7 +108,7 @@ If you connect several target computers to a single host computer, each connecti
     bcdedit /set "{dbgsettings}" busparams b.d.f
     ```
 
-6.  The target PC will be reebooted after a kernel debugger is attached. This is described in the next section.
+6.  The target PC will be rebooted after a kernel debugger is attached. This is described in the next section.
 
 **Note**  If you intend to install the Hyper-V role on the target computer, see [Setting Up Network Debugging of a Virtual Machine Host](setting-up-network-debugging-of-a-virtual-machine-host.md).
 
@@ -133,16 +142,20 @@ If you are prompted about allowing WinDbg to access the port through the firewal
 
 ## <span id="Restarting_Target"></span><span id="restarting_target"></span><span id="RESTARTING_TARGET"></span> Restarting the Target PC
 
-Once the debugger is connected, reboot the target computer. One way to do restart the PC is to use this command, from an administrators command prompt.
+Once the debugger is connected, reboot the target computer. One way to do restart the PC is to use this command, from an administrator's command prompt.
 
    ```
    shutdown -r -t 0 
    ```
 
+When the target is restarted, the debugger in the host OS should connect. 
+
+After connecting to the target on the host, hit break on your debugger and you can start debugging. 
+
 
 ### <span id="Allowing_the_debugger_through_the_firewall"></span><span id="allowing_the_debugger_through_the_firewall"></span><span id="ALLOWING_THE_DEBUGGER_THROUGH_THE_FIREWALL"></span>Allowing the debugger through the firewall
 
-When you first attempt to establish a network debugging connection, you might be prompted to allow the debugging application (WinDbg or KD) access through the firewall. Client versions of Windows display the prompt, but Server versions of Windows do not display the prompt. You should respond to the prompt by checking the boxes for **all three** network types: domain, private, and public. If you do not get the prompt, or if you did not check the boxes when the prompt was available, you must use Control Panel to allow access through the firewall. Open **Control Panel &gt; System and Security**, and click **Allow an app through Windows Firewall**. In the list of applications, locate Windows GUI Symbolic Debugger and Windows Kernel Debugger. Use the check boxes to allow those two applications through the firewall. Restart your debugging application (WinDbg or KD).
+When you first attempt to establish a network debugging connection, you might be prompted to allow the debugging application (WinDbg or KD) access through the firewall. Client versions of Windows display the prompt, but Server versions of Windows do not display the prompt. You should respond to the prompt by checking the boxes for **all three** network types: domain, private, and public. If you do not get the prompt, or if you did not check the boxes when the prompt was available, you must use Control Panel to allow access through the firewall. Open **Control Panel &gt; System and Security** and click **Allow an app through Windows Firewall**. In the list of applications, locate Windows GUI Symbolic Debugger and Windows Kernel Debugger. Use the check boxes to allow those two applications through the firewall. Restart your debugging application (WinDbg or KD).
 
 
 ## <span id="How_the_Debugger_Obtains_an_IP_Address_for_the_Target_Computer"></span><span id="how_the_debugger_obtains_an_ip_address_for_the_target_computer"></span><span id="HOW_THE_DEBUGGER_OBTAINS_AN_IP_ADDRESS_FOR_THE_TARGET_COMPUTER"></span>How the Debugger Obtains an IP Address for the Target Computer
@@ -152,7 +165,7 @@ The kernel debugging driver on the target computer attempts to use Dynamic Host 
 
 ## <span id="Encryption_Key"></span><span id="encryption_key"></span><span id="ENCRYPTION_KEY"></span>Encryption key
 
-To keep the target computer secure, packets that travel between the host and target computers must be encrypted. We strongly recommend that you use an automatically generated encryption key (provided by **bcdedit** when you configure the target computer).Network debugging uses a 256-bit key that is specified as four 64-bit values, in base 36, separated by periods. Each 64-bit value is specified by using up to 13 characters. Valid characters are the letters a through z and the digits 0 through 9. Special characters are not allowed. 
+To keep the target computer secure, packets that travel between the host and target computers must be encrypted. We strongly recommend that you use an automatically generated encryption key (provided by **bcdedit** when you configure the target computer). Network debugging uses a 256-bit key that is specified as four 64-bit values, in base 36, separated by periods. Each 64-bit value is specified by using up to 13 characters. Valid characters are the letters a through z and the digits 0 through 9. Special characters are not allowed. 
 
 To specify your own key, open an elevated Command Prompt window on the target computer. Enter the following command, where *w.x.y.z* is the IP address of the host computer, and *n* is your port number, and *Key* is your key:
 
@@ -167,7 +180,7 @@ Reboot the target computer.
 
 **Debugging application must be allowed through firewall**
 
-When you first attempt to establish a network debugging connection, you might be prompted to allow the debugging application (WinDbg or KD) access through the firewall. Client versions of Windows display the prompt, but Server versions of Windows do not display the prompt. You should respond to the prompt by checking the boxes for **all three** network types: domain, private, and public. If you do not get the prompt, or if you did not check the boxes when the prompt was available, you must use Control Panel to allow access through the firewall. Open **Control Panel &gt; System and Security**, and click **Allow an app through Windows Firewall**. In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*. Use the check boxes to allow those two applications through the firewall. Scroll down and click **OK**, to save the firewall changes. Restart the debugger.
+When you first attempt to establish a network debugging connection, you might be prompted to allow the debugging application (WinDbg or KD) access through the firewall. Client versions of Windows display the prompt, but Server versions of Windows do not display the prompt. You should respond to the prompt by checking the boxes for **all three** network types: domain, private, and public. If you do not get the prompt, or if you did not check the boxes when the prompt was available, you must use Control Panel to allow access through the firewall. Open **Control Panel &gt; System and Security** and click **Allow an app through Windows Firewall**. In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*. Use the check boxes to allow those two applications through the firewall. Scroll down and click **OK**, to save the firewall changes. Restart the debugger.
 
 
 **Port number must be in range allowed by network policy**
@@ -221,15 +234,15 @@ When the host debugger is connected, reboot the target computer.
 
 ## <span id="Manually_delete"></span><span id="MANUALLY_DELETE"></span>Manually delete BCDEdit entries
 
-Manually deleting is not normally required, but is provided here as a troubleshooting procedure for unusual situations.
+Manually deleting is not normally required but is provided here as a troubleshooting procedure for unusual situations.
 
-Manually deleting entries is not necessary when using the KDNET utility. For more information, see [TBD]().
+Manually deleting entries is not necessary when using the kdnet utility. For more information, see [[Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
 
 To manually delete BCDEdit Entries, complete these steps.
 
 1. On the target computer, open a Command Prompt window as Administrator. 
 
-2. Enter this command to delete the BCDEDit debugging entries for KDNET ethernet transport for boot and kernel debugging.
+2. Enter this command to delete the BCDEDit debugging entries for KDNET network transport for boot and kernel debugging.
 
     ```
     bcdedit -deletevalue {dbgsettings} hostip
@@ -263,11 +276,11 @@ There is a specific situation, that is not too common, that can cause some confu
 
 - Hyper-V has been enabled on the PC and the target VM is configured for debugging.
 
-- There is a need to configure the host OS to debug Windows that is supporting the VM. To do this, kdnet is configured in the host OS.
+- There is a need to configure the host OS to debug Windows that is supporting the VM. To do this, KDNET is configured in the host OS.
 
-Because kdnet will need exclusive access to the physical adapter, it will take over all access to the adapter.  When this occurs, the VM will no longer be able to access the network using the configured network adapters. If this occurs and you want to re-enable network access for the VMs, complete these steps.
+Because KDNET will need exclusive access to the physical adapter, it will take over all access to the adapter.  When this occurs, the VM will no longer be able to access the network using the configured network adapters. If this occurs and you want to re-enable network access for the VMs, complete these steps.
 
-1. Open Virtual Switch Manager from Hyper-V Manager, select your existing Virtual Switch, and change the external network NIC to the *Microsoft Kernel Debug Network Adapter* by selecting it from the drop down box and then clicking OK in the Virtual Switch Manager dialog box. 
+1. Open the Virtual Switch Manager from Hyper-V Manager, select your existing Virtual Switch, and change the external network NIC to the *Microsoft Kernel Debug Network Adapter* by selecting it from the drop down box and then clicking OK in the Virtual Switch Manager dialog box. 
 
 2. After updating your Virtual Switch NIC, shutdown and restart your VMs.
 
@@ -275,7 +288,8 @@ Because kdnet will need exclusive access to the physical adapter, it will take o
 
 ## <span id="related_topics"></span>Related topics
 
-[Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
+[Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)
+
 
 [Supported Ethernet NICs for Network Kernel Debugging in Windows 10](supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md)
 
