@@ -236,29 +236,29 @@ When the host debugger is connected, reboot the target computer.
 
 Manually deleting is not normally required but is provided here as a troubleshooting procedure for unusual situations.
 
-Manually deleting entries is not necessary when using the kdnet utility. For more information, see [[Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
+Manually deleting entries is not necessary when using the kdnet utility. For more information, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
 
-To manually delete BCDEdit Entries, complete these steps.
+When you use bcdedit –deletevalue, you must provide a valid bcd element name. For more information, see [BCDEdit /deletevalue](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--deletevalue)
+
+To manually delete BCDEdit entries, complete these steps.
 
 1. On the target computer, open a Command Prompt window as Administrator. 
 
-2. Enter this command to delete the BCDEDit debugging entries for KDNET network transport for boot and kernel debugging.
+2. As and example., enter this command to delete the BCDEDit debugging entry for the host IP address.
 
     ```
     bcdedit -deletevalue {dbgsettings} hostip
     ```
 
-3. To delete entries for other transports, use the following commands.
+When you delete the hostip, you need to specify *target=* on the debugger command line. 
 
-    Usage | Command | 
-    |-----------|-----------|
-    | Specific to kernel debugging| bcdedit -deletevalue {dbgsettings} targethostip |   
-    | USB | bcdedit -deletevalue {dbgsettings} usb |
-    | Serial Port Debugging | bcdedit -deletevalue {dbgsettings} serial | 
-    | 1394 Debugging |bcdedit -deletevalue {dbgsettings} 1394 | 
-    | Hyper-v debugging | bcdedit -deletevalue {dbgsettings} hypervisorhostip  | 
-    
-For more information, see [BCDEdit /deletevalue](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--deletevalue)
+3. As another example, delete the port entry using this command.
+
+    ```
+    bcdedit -deletevalue {dbgsettings} port
+    ```
+
+When you delete the port entry, KDNET will use the default ICANN registered port of 5364.
 
 
 ## <span id="Hyper_V"></span><span id="hyper_v"></span><span id="HYPER_V"></span>Hyper-V
