@@ -53,3 +53,50 @@ The request size in bytes, to be used when performing pipelined read-aheads. Eac
 
 *ReadAheadGrowthPercentage* \[in\]  
 The growth of read ahead as a percentage of the data that has already been ready by the application so far. 
+
+
+Remarks
+-------
+
+None 
+
+Requirements
+------------
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><p>Target platform</p></td>
+<td align="left">[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+</tr>
+<tr class="even">
+<td align="left"><p>Version</p></td>
+<td align="left"><p>Available in Windows 8 and later versions of Windows.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Header</p></td>
+<td align="left">Ntifs.h (include Ntifs.h)</td>
+</tr>
+<tr class="even">
+<td align="left"><p>Library</p></td>
+<td align="left">NtosKrnl.lib</td>
+</tr>
+<tr class="odd">
+<td align="left"><p>DLL</p></td>
+<td align="left">NtosKrnl.exe</td>
+</tr>
+</tbody>
+</table>
+
+## See also
+
+
+[**CcSetReadAheadGranularityEx**](CcSetReadAheadGranularityEx.md)
+
+[**CcReadAhead**](https://msdn.microsoft.com/library/windows/hardware/ff539191)
+
+[**CcScheduleReadAhead**](https://msdn.microsoft.com/library/windows/hardware/ff539200)
