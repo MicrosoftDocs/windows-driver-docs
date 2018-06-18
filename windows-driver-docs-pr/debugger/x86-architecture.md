@@ -42,11 +42,11 @@ The x86 architecture consists of the following unprivileged integer registers.
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>ecx</strong></p></td>
-<td align="left"><p>Count register</p></td>
+<td align="left"><p>Counter register</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>edx</strong></p></td>
-<td align="left"><p>Double-precision register</p></td>
+<td align="left"><p>Data register - can be used for I/O port access and arithmetic functions</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>esi</strong></p></td>
