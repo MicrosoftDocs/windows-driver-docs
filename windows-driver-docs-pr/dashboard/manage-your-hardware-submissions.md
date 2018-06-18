@@ -102,19 +102,21 @@ After you submit your product for the Windows Hardware Compatibility Program for
 
 7.  Select the **Package** tab.
 
-8.  right-click the appropriate driver folder and then select **Replace Driver**.
+8.  Right-click the appropriate driver folder and then select **Replace Driver**.
 
 9.  Find and select the folder where your valid driver update files are located.
     > [!IMPORTANT]
-    > valid update file formats include:
+    > Invalid update file formats include:
+    >    * .exe
+    >    * .dll
+    >    * .sys
+
+    > Typical update file formats include, but are not limited to:
     >    * .inf
     >    * .txt,
     >    * .pdf
     
-    > invalid update file formats include:
-    >    * .exe
-    >    * .dll
-    >    * .sys
+    
  
 10. Select **Create Package**.
 
