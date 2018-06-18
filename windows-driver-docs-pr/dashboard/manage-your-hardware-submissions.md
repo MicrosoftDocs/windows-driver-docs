@@ -85,7 +85,10 @@ After you submit your product for the Windows Hardware Compatibility Program for
 
 1.  [Find the hardware submission](#find-a-hardware-submission) that you want to update.
 
-2.  Select **Download DUA shell**, and then select **Save**. Note: DUA is only available for driver submissions that include a driver.
+2.  Select **Download DUA shell**, and then select **Save**. 
+    > [!NOTE]
+    > * DUA is only available for driver submissions that include a driver.
+    > * To access your driver package's INF files, download the **signed driver package**
 
     ![screenshot of the dua download button](images/drivers-dua-upload-buttons.png)
 
@@ -99,21 +102,33 @@ After you submit your product for the Windows Hardware Compatibility Program for
 
 7.  Select the **Package** tab.
 
-8.  For each driver you want to update, right-click the appropriate driver folder and then select **Replace Driver**.
+8.  right-click the appropriate driver folder and then select **Replace Driver**.
 
-9.  Select **Create Package**.
+9.  Find and select the folder where your valid driver update files are located.
+    > [!IMPORTANT]
+    > valid update file formats include:
+    >    * .inf
+    >    * .txt,
+    >    * .pdf
+    
+    > invalid update file formats include:
+    >    * .exe
+    >    * .dll
+    >    * .sys
+ 
+10. Select **Create Package**.
 
-10. You will also need to sign your package, so select "Use the certificate store".
+11. Select "Use the certificate store" to sign your driver package package.
 
-11. Go to your hardware submission and select **Upload new** in the **Packages and signing properties** section.
+12. Go to your hardware submission and select **Upload new** in the **Packages and signing properties** section.
 
     ![screenshot of the upload new button](images/drivers-dua-upload-buttons.png)
 
-12. Choose a name for your updated driver package. You can use this name to organize your driver packages. Shipping Labels are associated to a specific driver package, so it is important to choose a unique name that you will recognize later.
+13. Choose a name for your updated driver package. Shipping Labels are tied to a specific driver package, so it is important to choose a unique name that you will recognize later.
 
-13. Upload your updated driver package.
+14. Upload your updated driver package.
 
-14. You can monitor the progress of your driver update with the progress tracker at the top of the page. Once all steps show a green check, the update is complete.
+15. You can monitor the progress of your driver update with the progress tracker at the top of the page. Once all steps show a green check, the update is complete.
 
 ## Registering an ExtensionId
 
