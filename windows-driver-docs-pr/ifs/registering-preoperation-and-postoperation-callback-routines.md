@@ -24,7 +24,7 @@ To register [**preoperation callback routines**](https://msdn.microsoft.com/libr
 
 Each FLT\_OPERATION\_REGISTRATION structure in the array, except for the last one, contains the following information:
 
--   The major function code for the operation
+-   The major function code for the operation. See [FLT_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_parameters) for information on I/O operations, and their request-type-specific parameters.
 
 -   For read and write operations (IRP\_MJ\_READ and IRP\_MJ\_WRITE), a set of flags that specify whether to ignore cached I/O or paging I/O or both for IRP-based I/O operations
 
