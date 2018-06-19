@@ -19,7 +19,7 @@ The following is a list of new feature highlights for driver development in Wind
 * [Open publishing](#open-publishing)
 * [Debugging Tools for Windows](#debugging-tools-for-windows)
 * [Driver Verifier](#driver-verifier)
-* [Windows Driver Frameworks](#windows-driver-frameworks)
+* [Windows Driver Frameworks](#windows-driver-frameworks-wdf)
 * [Universal Windows drivers](#universal-windows-drivers)
 * [Windows Compatible hardware development boards](#windows-compatible-hardware-development-boards)
 * [Power Management Framework](#power-management-framework)
@@ -29,7 +29,7 @@ The following is a list of new feature highlights for driver development in Wind
 
 The following table shows the feature updates in Windows 10, by driver technology and version.
 
-| Driver | [version 1803](#version-1803) | [version 1709](#version-1709) | [version 1703](#version-1703) |  [version 1607](#version-1607) |  [version 1507](#version-1507) |
+| Driver | [version 1803](#whats-new-in-windows-10-version-1803-latest) | [version 1709](#whats-new-in-windows-10-version-1709) | [version 1703](#whats-new-in-windows-10-version-1703) |  [version 1607](#whats-new-in-windows-10-version-1607) |  [version 1507](#whats-new-in-windows-10-version-1507) |
 |---|:---:|:---:|:---:|:---:|:--:|
 | Audio | [![details](checkmark.png)](#audio-1803)| [![details](checkmark.png)](#audio-1709) | [![details](checkmark.png)](#audio-1703) | [![details](checkmark.png)](#audio)  |![not available](minus.png) |
 | ACPI |[![details](checkmark.png)](#acpi-1803) | [![details](checkmark.png)](#acpi-1709) | ![not available](minus.png) |![not available](minus.png) |![not available](minus.png) | ![not available](minus.png) |
