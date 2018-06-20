@@ -286,7 +286,7 @@ Refer to these reference topics for information on each of the APO INF file sett
 
 [PKEY\_EFX\_ProcessingModes\_Supported\_For\_Streaming](https://msdn.microsoft.com/library/windows/hardware/mt238380)
 
-The following INF file samples shows how to register audio processing objects (APOs) for specific modes. They illustrate the possible combinations available from this list.
+The following INF file samples show how to register audio processing objects (APOs) for specific modes. They illustrate the possible combinations available from this list.
 
 -   PKEY\_FX\_StreamEffectClsid with PKEY\_SFX\_ProcessingModes\_Supported\_For\_Streaming
 -   PKEY\_FX\_ModeEffectClsid with PKEY\_MFX\_ProcessingModes\_Suppoted\_For\_Streaming
