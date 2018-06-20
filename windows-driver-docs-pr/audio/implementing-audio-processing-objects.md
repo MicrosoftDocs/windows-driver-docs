@@ -3,7 +3,7 @@ title: Implementing Audio Processing Objects
 description: This topic describes how to implement an audio processing object (APO). For general information about APOs, see Audio Processing Object Architecture.
 ms.assetid: 822FAF10-DAB3-48D1-B782-0C80B072D3FB
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 06/19/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -103,13 +103,12 @@ In Visual Studio locate the Solution Explorer. (If this is not already open, cho
 
 **SwapAPO Example Code**
 
-There are six projects in the SYSVAD sample Two projects are of primary interest to the APO developer.
+There are five projects in the SYSVAD sample, one of which is of primary interest to the APO developer.
 
 |                    |                                       |
 |--------------------|---------------------------------------|
 | **Project**        | **Description**                       |
 | SwapAPO            | Sample code for an example APO.       |
-| PropPageExtensions | Sample code for an APO property page. |
 
  
 
