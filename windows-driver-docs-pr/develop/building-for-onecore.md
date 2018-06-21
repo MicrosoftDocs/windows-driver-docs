@@ -22,21 +22,17 @@ By default, when you create a new UMDF v2 driver project, Visual Studio links to
 
 However, depending on your requirements, you might choose instead to link to one of the following:
 
->[!NOTE]
->If you link to `OneCoreUAP.lib` or `OneCore.lib`, you will get a slight load time performance boost over the downlevel options.
-
 |Library|Scenario|
 |-|-|
-|`OneCore.lib`|All editions of latest OS version, no UWP support|
-|`OneCoreUAP.lib`|UWP editions (Desktop, IoT, HoloLens, but not Nano Server) of latest OS version|
-|`OneCore_downlevel.lib`|Windows 7 and later, all editions of Windows 10, no UWP support|
-|`OneCoreUAP_downlevel.lib`|Windows 7 and later, UWP editions (Desktop, IoT, HoloLens, but not Nano Server) of Windows 10|
+|`OneCore.lib`|All editions of Windows 7 and later, no UWP support|
+|`OneCoreUAP.lib`|WIndows 7 and later, UWP editions (Desktop, IoT, HoloLens, but not Nano Server) of Windows 10|
 
-When you use a downlevel option, a subset of APIs compile fine but return errors on non-Desktop OneCore editions (for example Mobile or IoT).
+>[!NOTE]
+>To change linker options in Visual Studio, choose project properties and navigate to **Linker->Input->Additional Dependencies**.
 
-For example, the [**InstallApplication**](https://msdn.microsoft.com/library/aa374307) function returns `ERROR_ NOT_SUPPORTED` on non-Desktop OneCore editions.
+A subset of APIs compile fine but return errors on non-Desktop OneCore editions (for example Mobile or IoT).
 
-To change linker options in Visual Studio, choose project properties and navigate to **Linker->Input->Additional Dependencies**.
+For example, the [**InstallApplication**](https://msdn.microsoft.com/library/aa374307) function returns `ERROR_ NOT_SUPPORTED` on non-Desktop OneCore editions.  The [ApiValidator](validating-universal-drivers.md) tool also reports these problems. Read the next section to learn how to fix them.
 
 ## Fixing ApiValidator errors by using **IsApiSetImplemented**
 
@@ -45,13 +41,10 @@ If your code calls Win32 APIs, you might see the following ApiValidator errors:
 * `Error: <Binary Name> has unsupported API call to <Module Name><Api Name>`: If your app or base driver needs to run on modern and classic platforms, you must remove API calls in this category.
 * `Error: <Binary Name> has a dependency on <Module Name><Api Name> but is missing: IsApiSetImplemented("<contract-name-for-Module>)`: API calls in this category compile fine, but may not behave as expected at runtime, depending on the target operating system. To pass the U requirement of DCHU, wrap these calls with **IsApiSetImplemented**.
 
-that runs on Classic Windows editions and you want to adapt it to run on Modern Windows editions, you can call IsApiSetImplemented to test it first.
-
-
-
-
 This enables you to compile your code with no errors.  Then at runtime, if the target machine does not have the needed API, execution simply skips it.
 <!--should IsApiSetImplemented be doc'ed?-->
+
+The following code samples illustrate how to do this.
 
 ## Code sample: Direct usage of API, without evaluating for existence
 
