@@ -23,7 +23,7 @@ There are two steps to implementing a custom trigger. Specifically, the trigger 
 
 ### <span id="Creating_the_custom_trigger"></span><span id="creating_the_custom_trigger"></span><span id="CREATING_THE_CUSTOM_TRIGGER"></span>Creating the custom trigger
 
-A custom trigger is defined and raised within a native service or device driver through the **RaiseCustomSystemEventTrigger** function. It can then be registered for from a universal app and used to initiate a background task in relatively the same manner as a system defined trigger.
+A custom trigger is defined and raised within a native service or device driver through the **RtlRaiseCustomSystemEventTrigger** function. It can then be registered for from a universal app and used to initiate a background task in relatively the same manner as a system defined trigger.
 
 The following code excerpt illustrates how to raise a custom trigger.
 
@@ -34,16 +34,16 @@ CUSTOM_SYSTEM_EVENT_TRIGGER_CONFIG triggerConfig;
 CUSTOM_SYSTEM_EVENT_TRIGGER_INIT(&triggerConfig,
                                  GUID_MY_CUSTOMSYSTEMEVENTTRIGGERID);
 
-DWORD error = RaiseCustomSystemEventTrigger(&triggerConfig);
+NTSTATUS status = RtlRaiseCustomSystemEventTrigger(&triggerConfig);
 ```
 
-Within the code sample above, the GUID passed as a parameter to the **RaiseCustomSystemEventTrigger** function defines the identifier of the trigger that the app will register for when creating the background task. This identifier must be unique.
+Within the code sample above, the GUID passed as a parameter to the **RtlRaiseCustomSystemEventTrigger** function defines the identifier of the trigger that the app will register for when creating the background task. This identifier must be unique.
 
 ### <span id="Creating_a_background_task"></span><span id="creating_a_background_task"></span><span id="CREATING_A_BACKGROUND_TASK"></span>Creating a background task
 
 Creating a background task and registering it for a custom trigger is very similar to the process used for background tasks that work with the standard system triggers.
 
-1.  Begin by creating a Windows 10 Mobile app.
+1.  Begin by creating a UWP app.
 
 2.  Define the background task in the app manifest file as shown in the following example. Note that the **Type** attribute of the **Task** element is set to `“systemEvent”`
 
