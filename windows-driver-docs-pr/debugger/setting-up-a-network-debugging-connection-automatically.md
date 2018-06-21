@@ -103,7 +103,6 @@ Use the kdnet.exe utility to automatically configure the  debugger settings on t
    ```
    C:\>kdnet <HostComputerIPAddress> <YourDebugPort> 
    
-   NtQuerySystemInformation cannot query SystemKernelDebuggingAllowed on this OS.
    Enabling network debugging on Intel(R) 82577LM Gigabit Network Connection.
    Key=2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
    ```
@@ -126,7 +125,7 @@ If you are prompted about allowing WinDbg to access the port through the firewal
 
 ## <span id="Restarting_Target"></span><span id="restarting_target"></span><span id="RESTARTING_TARGET"></span> Restarting the Target PC
 
-Once the debugger is connected, reboot the target computer. One way to do restart the PC is to use this command, from an administrator's command prompt.
+Once the debugger is connected, reboot the target computer. One way to do restart the PC, is to use this command from an administrator's command prompt.
 
    ```
    shutdown -r -t 0 

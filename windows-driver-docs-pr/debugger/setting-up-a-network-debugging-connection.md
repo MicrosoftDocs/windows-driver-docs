@@ -4,7 +4,7 @@ description: Debugging Tools for Windows supports kernel debugging over a networ
 ms.assetid: B4A79B2E-D4B1-42CA-9121-DEC923C76927
 keywords: ["Network debugging", "Ethernet debugging", "Docking station", "Setting Up Kernel-Mode Debugging over a Network Cable Manually"]
 ms.author: domars
-ms.date: 06/15/2018
+ms.date: 06/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -244,7 +244,7 @@ To manually delete BCDEdit entries, complete these steps.
 
 1. On the target computer, open a Command Prompt window as Administrator. 
 
-2. As and example., enter this command to delete the BCDEDit debugging entry for the host IP address.
+2. As an example, enter this command to delete the BCDEdit debugging entry for the host IP address.
 
     ```
     bcdedit -deletevalue {dbgsettings} hostip
@@ -258,7 +258,7 @@ When you delete the hostip, you need to specify *target=* on the debugger comman
     bcdedit -deletevalue {dbgsettings} port
     ```
 
-When you delete the port entry, KDNET will use the default ICANN registered port of 5364.
+When you delete the port entry, KDNET will use the default ICANN registered debugger port of 5364.
 
 
 ## <span id="Hyper_V"></span><span id="hyper_v"></span><span id="HYPER_V"></span>Hyper-V
