@@ -3,7 +3,7 @@ title: Live Kernel-Mode Debugging Using WinDbg
 description: There are two ways you can use WinDbg to initiate a live kernel-mode debugging session.
 ms.assetid: CC911199-A16D-4B06-A5BE-FA476F916F21
 ms.author: domars
-ms.date: 11/28/2017
+ms.date: 06/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -19,39 +19,53 @@ There are two ways you can use WinDbg to initiate a live kernel-mode debugging s
 
 When WinDbg is in dormant mode, you can begin a kernel debugging session by choosing **Kernel Debug** from the **File** menu or by pressing CTRL+K. When the **Kernel Debugging** dialog box appears, click the appropriate tab: **NET**, **1394**, **USB**, **COM**, or **Local**. Each tab specifies a different connection method. For more information about the dialog box and its entries, see [File | Kernel Debug](file---kernel-debug.md).
 
-## <span id="Command_Prompt"></span><span id="command_prompt"></span><span id="COMMAND_PROMPT"></span>Command Prompt
 
+## <span id="Command_Prompt"></span><span id="command_prompt"></span><span id="COMMAND_PROMPT"></span>Command Prompt
 
 In a Command Prompt window, you can initiate a kernel-mode debugging session when you launch WinDbg. Enter one of the following commands:
 
-**windbg \[-y** *SymbolPath***\] -k net:port=***PortNumber***,key=***Key*
-**windbg \[-y** *SymbolPath***\] -k 1394:channel=***1394Channel***\[,symlink=***1394Protocol***\]**
-**windbg \[-y** *SymbolPath***\] -k usb:targetname=***USBString*
-**windbg \[-y** *SymbolPath***\] -k com:port=***ComPort***,baud=***BaudRate*
-**windbg \[-y** *SymbolPath***\] -k com:pipe,port=\\\\***VMHost***\\pipe\\***PipeName***\[,resets=0\]\[,reconnect\]**
-**windbg \[-y** *SymbolPath***\] -k com:***modem*
-**windbg \[-y** *SymbolPath***\] -kl**
-**windbg \[-y** *SymbolPath***\] -k**
+windbg \[-y *SymbolPath*\] -k net:port=*PortNumber*,key=*Key*\[,target=*TargetIPAddress*|*TargetMachineName*\] 
+
+windbg \[-y *SymbolPath*\] -k 1394:channel=*1394Channel*\[,symlink=*1394Protocol*\]
+
+windbg \[-y *SymbolPath*\] -k usb:targetname=*USBString*
+
+windbg \[-y *SymbolPath*\] -k com:port=*ComPort*,baud=*BaudRate*
+
+windbg \[-y *SymbolPath*\] -k com:pipe,port=\\\\*VMHost*\\pipe\\*PipeName*\[,resets=0\]\[,reconnect\]
+
+windbg \[-y *SymbolPath*\] -k com:*modem*
+
+windbg \[-y *SymbolPath*\] -kl
+
+windbg \[-y *SymbolPath*\] -k
+
 For more information, see [**WinDbg Command-Line Options**](windbg-command-line-options.md).
 
-## <span id="Environment_Variables"></span><span id="environment_variables"></span><span id="ENVIRONMENT_VARIABLES"></span>Environment Variables
 
+## <span id="Environment_Variables"></span><span id="environment_variables"></span><span id="ENVIRONMENT_VARIABLES"></span>Environment Variables
 
 For debugging over a serial (COM port) or 1394 connection, you can use environment variables to specify the connection settings.
 
 Use the following variables to specify a serial connection.
 
-**set \_NT\_DEBUG\_PORT =** *ComPort*
-**set \_NT\_DEBUG\_BAUD\_RATE =** *BaudRate*
+set \_NT\_DEBUG\_PORT = *ComPort*
+
+set \_NT\_DEBUG\_BAUD\_RATE = *BaudRate*
+
 Use the following variables to specify a 1394 connection.
 
-**set \_NT\_DEBUG\_BUS = 1394**
-**set \_NT\_DEBUG\_1394\_CHANNEL =** *1394Channel* ****
-**set \_NT\_DEBUG\_1394\_SYMLINK =** *1394Protocol* ****
+
+set \_NT\_DEBUG\_BUS = 1394**
+
+set \_NT\_DEBUG\_1394\_CHANNEL = *1394Channel* 
+
+set \_NT\_DEBUG\_1394\_SYMLINK = *1394Protocol*
+
 For more information, see [Kernel-Mode Environment Variables](kernel-mode-environment-variables.md).
 
-## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
 
+## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
 
 <span id="_______SymbolPath______"></span><span id="_______symbolpath______"></span><span id="_______SYMBOLPATH______"></span> *SymbolPath*   
 A list of directories where symbol files are located. Directories in the list are separated by semicolons. For more information, see [Symbol Path](symbol-path.md).
@@ -61,6 +75,24 @@ A port number to use for network debugging. You can choose any number from 49152
 
 <span id="_______Key______"></span><span id="_______key______"></span><span id="_______KEY______"></span> *Key*   
 The encryption key to use for network debugging. We recommend that you use an automatically generated key, which is provided by bcdedit when you configure the target computer. For more information, see [Setting Up a Network Connection Manually](setting-up-a-network-debugging-connection.md).
+
+<span id="_______TargetIp______"></span><span id="_______targetip______"></span><span id="_______TARGETIP______"></span> *TargetIPAddress*   
+The IPv4 address of the target machine. 
+
+When the target IP address is specified, this causes the debugger to initiate a connection to the specified target machine, by sending a special packet to the target, that will cause it to attempt to connect with that debugger. If the connection is successful, the target will drop any existing connection, and communicate only with this instance of the debugger. This allows you to take control of the debugging session away from an existing debugging connection.
+
+If the target IP address is not specified, the target will initiate a connection to the host IP address that was configured using the kdnet utility. For more information, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
+
+When the target PC is configured with a hostIP, and the debugger is being run on the machine with that host IP, there is no need to specify the target= parameter.
+
+When no ,target= is specified, the debugger will wait until the target sends it a packet before connecting.
+
+When ,target= is specified the debugger will send packets to the target repeatedly, attempting to connect.  About one packet every half a second or so.
+
+
+<span id="_______TargetName______"></span><span id="_______targetname______"></span><span id="_______TARGETNAME______"></span> *TargetMachineName*   
+The machine name of the target PC. To use the machine name, there must be only one network card installed and the DNS system on the network, must have the name associated with the IP address of the target PC.
+
 
 <span id="_______1394Channel______"></span><span id="_______1394channel______"></span><span id="_______1394CHANNEL______"></span> *1394Channel*   
 The 1394 channel number. Valid channel numbers are any integer between 0 and 62, inclusive. *1394Channel* must match the number used by the target computer, but does not depend on the physical 1394 port chosen on the adapter. For more information, see [Setting Up a 1394 Connection Manually](setting-up-a-1394-cable-connection.md).
@@ -83,13 +115,13 @@ When debugging a virtual machine, *VMHost* specifies the name of the physical co
 <span id="_______PipeName______"></span><span id="_______pipename______"></span><span id="_______PIPENAME______"></span> *PipeName*   
 The name of the pipe created by the virtual machine for the debugging connection.
 
-<span id="_______resets_0"></span><span id="_______RESETS_0"></span> **resets=0**  
+<span id="_______resets_0"></span><span id="_______RESETS_0"></span> resets=0  
 Specifies that an unlimited number of reset packets can be sent to the target when the host and target are synchronizing. This parameter is only needed when debugging certain kinds of virtual machines.
 
-<span id="_______reconnect"></span><span id="_______RECONNECT"></span> **reconnect**  
+<span id="_______reconnect"></span><span id="_______RECONNECT"></span> reconnect  
 Causes the debugger to automatically disconnect and reconnect the pipe if a read/write failure occurs. Additionally, if the named pipe is not found when the debugger is started, the reconnect parameter will cause it to wait for a pipe of this name to appear. This parameter is only needed when debugging certain kinds of virtual machines.
 
-<span id="_______-kl"></span><span id="_______-KL"></span> **-kl**  
+<span id="_______-kl"></span><span id="_______-KL"></span> -kl  
 Causes the debugger to perform local kernel-mode debugging. For more information, see [Local Kernel-Mode Debugging](performing-local-kernel-debugging.md).
 
 ## <span id="Examples"></span><span id="examples"></span><span id="EXAMPLES"></span>Examples
@@ -117,10 +149,17 @@ windbg -k
 
 The following command lines could be used to start WinDbg without any environment variables.
 
+
 **windbg -y d:\\mysymbols -k com:port=com2,baud=57600**
+
 **windbg -y d:\\mysymbols -k com:port=\\\\.\\com2,baud=115200**
+
 **windbg -y d:\\mysymbols -k 1394:channel=20,symlink=instance**
-**windbg -y d:\\mysymbols -k net:port=50000,key=***AutoGeneratedKey*
+
+**windbg -y d:\\mysymbols -k net:port=50000,key=AutoGeneratedKey**
+
+**windbg -y d:\\mysymbols -k net:port=50000,key=AutoGeneratedKey,target=TargetIPAddress**
+
 
 ## <span id="related_topics"></span>Related topics
 
