@@ -49,7 +49,9 @@ Debugging over a USB 2.0 cable requires the following hardware:
 
     **Note**  See [this remark](#what-if-usbview-shows-a-debug-capable-port) for an exception.
 
-     
+> [!IMPORTANT]
+> Before using BCDEdit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC.
+> Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.     
 
 6.  On the target computer, open a Command Prompt window as Administrator, and enter these commands:
 
