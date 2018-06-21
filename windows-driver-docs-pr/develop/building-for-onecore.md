@@ -22,6 +22,9 @@ By default, when you create a new UMDF v2 driver project, Visual Studio links to
 
 However, depending on your requirements, you might choose instead to link to one of the following:
 
+>[!NOTE]
+>If you link to `OneCoreUAP.lib` or `OneCore.lib`, you will get a slight load time performance boost over the downlevel options.
+
 |Library|Scenario|
 |-|-|
 |`OneCore.lib`|All editions of latest OS version, no UWP support|
@@ -29,24 +32,128 @@ However, depending on your requirements, you might choose instead to link to one
 |`OneCore_downlevel.lib`|Windows 7 and later, all editions of Windows 10, no UWP support|
 |`OneCoreUAP_downlevel.lib`|Windows 7 and later, UWP editions (Desktop, IoT, HoloLens, but not Nano Server) of Windows 10|
 
-When you use a downlevel option, a subset of APIs compile fine but return immediately on non-Desktop OneCore editions (for example Mobile or IoT).
+When you use a downlevel option, a subset of APIs compile fine but return errors on non-Desktop OneCore editions (for example Mobile or IoT).
 
-For example, the [**InstallApplication**](https://msdn.microsoft.com/library/aa374307) function returns ERROR_ NOT_SUPPORTED on non-Desktop OneCore editions.
-
-If you link to `OneCoreUAP.lib` or `OneCore.lib`, you will get a slight load time performance boost over the downlevel options.
+For example, the [**InstallApplication**](https://msdn.microsoft.com/library/aa374307) function returns `ERROR_ NOT_SUPPORTED` on non-Desktop OneCore editions.
 
 To change linker options in Visual Studio, choose project properties and navigate to **Linker->Input->Additional Dependencies**.
 
+## Fixing ApiValidator errors by using **IsApiSetImplemented**
+
+If your code calls Win32 APIs, you might see the following ApiValidator errors:
+
+* `Error: <Binary Name> has unsupported API call to <Module Name><Api Name>`: If your app or base driver needs to run on modern and classic platforms, you must remove API calls in this category.
+* `Error: <Binary Name> has a dependency on <Module Name><Api Name> but is missing: IsApiSetImplemented("<contract-name-for-Module>)`: API calls in this category compile fine, but may not behave as expected at runtime, depending on the target operating system. To pass the U requirement of DCHU, wrap these calls with **IsApiSetImplemented**.
+
+that runs on Classic Windows editions and you want to adapt it to run on Modern Windows editions, you can call IsApiSetImplemented to test it first.
+
+
+
+
+This enables you to compile your code with no errors.  Then at runtime, if the target machine does not have the needed API, execution simply skips it.
+<!--should IsApiSetImplemented be doc'ed?-->
+
+## Code sample: Direct usage of API, without evaluating for existence
+
+This code runs fine on classic Windows Desktop, but running it on a OneCore edition of the OS results in WTSEnumerateSessions failure : 78 or ERROR_CALL_NOT_IMPLEMENTED 120 (0x78).
+
+This code sample fails the U part of DCHU with the following ApiValidator errors:
+
+```
+ApiValidation: Error: FlexLinkTest.exe has a dependency on 'wtsapi32.dll!WTSEnumerateSessionsW' but is missing: IsApiSetImplemented("ext-ms-win-session-wtsapi32-l1-1-0")
+ApiValidation: Error: FlexLinkTest.exe has a dependency on 'wtsapi32.dll!WTSFreeMemory' but is missing: IsApiSetImplemented("ext-ms-win-session-wtsapi32-l1-1-0")
+ApiValidation: NOT all binaries are Universal
+```
+Here's the code:
+
+```
+#include <windows.h>
+#include <stdio.h>
+#include <Wtsapi32.h>
+
+int __cdecl wmain(int /* argc */, PCWSTR /* argv */ [])
+{
+    PWTS_SESSION_INFO pInfo = {};
+    DWORD count = 0;
+
+    if (WTSEnumerateSessionsW(WTS_CURRENT_SERVER_HANDLE, 0, 1, &pInfo, &count))
+    {
+        wprintf(L"SessionCount = %d\n", count);
+
+        for (ULONG i = 0; i < count; i++)
+        {
+            PWTS_SESSION_INFO pCurInfo = &pInfo[i];
+            wprintf(L"    %s: ID = %d, state = %d\n", pCurInfo->pWinStationName, pCurInfo->SessionId, pCurInfo->State);
+        }
+
+        WTSFreeMemory(pInfo);
+    }
+    else
+    {
+        wprintf(L"WTSEnumerateSessions failure : %x\n", GetLastError());
+    } 
+
+    return 0;
+}
+```
+
+## Code sample: Direct usage of API, after evaluating for existence
+
+This sample shows how to call **IsApiSetImplemented**. This sample passes the U part of DCHU with the following ApiValidator output:
+
+```
+ApiValidation: All binaries are Universal
+```
+
+Here's the code:
+
+```
+#include <windows.h>
+#include <stdio.h>
+#include <Wtsapi32.h>
+
+int __cdecl wmain(int /* argc */, PCWSTR /* argv */ [])
+{
+    PWTS_SESSION_INFO pInfo = {};
+    DWORD count = 0;
+
+    if (!IsApiSetImplemented("ext-ms-win-session-wtsapi32-l1-1-0"))
+    {
+        wprintf(L"IsApiSetImplemented on ext-ms-win-session-wtsapi32-l1-1-0 returns FALSE\n");
+    }
+    else
+    {
+        if (WTSEnumerateSessionsW(WTS_CURRENT_SERVER_HANDLE, 0, 1, &pInfo, &count))
+        {
+            wprintf(L"SessionCount = %d\n", count);
+
+            for (ULONG i = 0; i < count; i++)
+            {
+                PWTS_SESSION_INFO pCurInfo = &pInfo[i];
+                wprintf(L"    %s: ID = %d, state = %d\n", pCurInfo->pWinStationName, pCurInfo->SessionId, pCurInfo->State);
+            }
+
+            WTSFreeMemory(pInfo);
+        }
+        else
+        {
+            wprintf(L"WTSEnumerateSessions failure : %x\n", GetLastError());
+        }
+    }
+
+    return 0;
+}
+```
+
 ## Recommended actions
 
-Review the linker options above and update your Visual Studio project accordingly.
+* Review the linker options above and update your Visual Studio project accordingly.
+* Use the [ApiValidator](validating-universal-drivers.md) tool in the WDK.  This tool runs automatically when you build a driver in Visual Studio.
+* Use runtime testing to verify that your user-mode code runs as you expect on non-Desktop OneCore editions.  Note that stubbed APIs may generate different error codes.
 
-Use the [ApiValidator](validating-universal-drivers.md) tool in the WDK.  This tool runs automatically when you build a driver in Visual Studio.
+## See Also
 
-Use runtime testing to verify that your user-mode code runs as you expect on non-Desktop OneCore editions.  Note that stubbed APIs may generate different error codes.
-
-See also
----
-[OneCore](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows)
+* [Validating Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/validating-universal-drivers)
+* [OneCore](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows)
 
 <!--API BOILERPLATE: Compiles using onecore_downlevel.lib, but always returns ERROR_CALL_NOT_IMPLEMENTED on non-Desktop OneCore editions.-->
