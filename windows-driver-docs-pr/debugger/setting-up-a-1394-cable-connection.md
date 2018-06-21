@@ -26,6 +26,11 @@ The computer that runs the debugger is called the *host computer*, and the compu
 
 
 1.  Connect a 1394 cable to the 1394 controllers that you have chosen for debugging on the host and target computers.
+
+> [!IMPORTANT]
+> Before using BCDEdit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC.
+> Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.
+
 2.  In an elevated Command Prompt window, enter the following commands, where *n* is a channel number of your choice, from 0 through 62:
 
     **bcdedit /debug on**

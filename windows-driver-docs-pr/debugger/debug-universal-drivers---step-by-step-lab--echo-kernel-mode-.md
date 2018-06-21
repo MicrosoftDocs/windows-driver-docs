@@ -4,7 +4,7 @@ description: This lab introduces the WinDbg kernel debugger. WinDbg is used to d
 ms.assetid: 3FBC3693-4288-42BA-B1E8-84DC2A9AFFD9
 keywords: ["debug lab", "step-by-step", "ECHO"]
 ms.author: domars
-ms.date: 03/01/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,7 +50,7 @@ You will need the following hardware to be able to complete the lab.
 
 -   A laptop or desktop computer (host) running Windows 10
 -   A laptop or desktop computer (target) running Windows 10
--   A network cross over cable or a network hub and network cables to connect the two PCs
+-   A network hub/router and network cables to connect the two PCs
 -   Access to the internet to download symbol files
 
 You will need the following software to be able to complete the lab.
@@ -83,15 +83,13 @@ The PCs in this lab need to be configured to use an Ethernet network connection 
 
 This lab uses two PCs. Windows debugger runs on the *host* system and the KMDF Echo driver runs on the *target* system.
 
-The "&lt;-Host" on the left is connected using a cross over ethernet cable to the "-&gt;Target" on the right.
-
-The steps in the lab assume that you are using a cross over network cable, but the lab should also work if you can plug both the host and the target directly into a network hub.
+ Use a network hub/router and network cables to connect the two PCs.
 
 ![two pcs connected with a double arrow](images/debuglab-image-targethostdrawing1.png)
 
-To work with kernel mode applications and use WinDbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](https://msdn.microsoft.com/windows-drivers/develop/preparing_a_computer_for_manual_driver_deployment) and [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md).
+To work with kernel mode applications and use WinDbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](https://msdn.microsoft.com/windows-drivers/develop/preparing_a_computer_for_manual_driver_deployment) and [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
 
-### <span id="Configure__kernel_mode_debugging_using_a_crossover_ethernet_cable"></span><span id="configure__kernel_mode_debugging_using_a_crossover_ethernet_cable"></span><span id="CONFIGURE__KERNEL_MODE_DEBUGGING_USING_A_CROSSOVER_ETHERNET_CABLE"></span>Configure kernel–mode debugging using a crossover ethernet cable
+### <span id="Configure__kernel_mode_debugging_using_ethernet"></span><span id="configure__kernel_mode_debugging_using_ethernet"></span><span id="CONFIGURE__KERNEL_MODE_DEBUGGING_USING_ETHERNET"></span>Configure kernel–mode debugging using ethernet
 
 To enable kernel mode debugging on the target system, perform the following steps.
 
@@ -113,7 +111,7 @@ Ethernet adapter Ethernet:
 
 **-&gt; On the target system**
 
-3. Open a command prompt on the target system and use the **ping** command to confirm network connectivity between the two systems. Use the IP address of the host system you recorded instead of the one shown in the sample output.
+3. Open a command prompt on the target system and use the **ping** command to confirm network connectivity between the two systems. Use the actual IP address of the host system you recorded instead of 169.182.1.1 that is shown in the sample output.
 
 ```
 C:\> ping 169.182.1.1
@@ -132,6 +130,10 @@ Approximate round trip times in milli-seconds:
 
 Enable kernel mode debugging on the target system by completing the following steps.
 
+> [!IMPORTANT]
+> Before using BCDEdit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC.
+> Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.
+
 1. On the target computer, open a Command Prompt window as Administrator. Enter this command to enable debugging.
 ```
 C:\> bcdedit /set {default} DEBUG YES
@@ -147,7 +149,7 @@ C:\> bcdedit /set TESTSIGNING ON
 C:\> bcdedit /dbgsettings net hostip:192.168.1.1 port:50000 key:1.2.3.4
 ```
 
-**Warning**  To increase the security of the connection and decrease the risk of the random client debugger connection requests, consider using an auto generated random key. For more information, see [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md).
+**Warning**  To increase the security of the connection and decrease the risk of the random client debugger connection requests, consider using an auto generated random key. For more information, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
 
 4. Type this command to confirm that the dbgsettings they are set properly.
 
@@ -164,7 +166,7 @@ The operation completed successfully.
 **Note**  
 **Firewalls and debuggers**
 
-If you receive a pop-up message from the firewall, and you wish to use the debugger, unblock the types of networks that you desire.
+If you receive a pop-up message from the firewall, and you wish to use the debugger, uand you wish to use the debugger, check **all three** of the boxes.
 
 ![windows security alert - windows firewall has blocked some features of this app ](images/debuglab-image-firewall-dialog-box.png)
 
@@ -172,10 +174,18 @@ If you receive a pop-up message from the firewall, and you wish to use the debug
 
 **&lt;- On the host system**
 
-1. On the host computer, open a Command Prompt window as Administrator. Change to the WinDbg.exe directory. We will use the x64version of WinDbg.exe from the Windows Driver Kit (WDK) that was installed as part of the Windows kit installation.
+1. On the host computer, open a Command Prompt window as Administrator. We will use the x64 version of WinDbg.exe from the Windows Driver Kit (WDK) that was installed as part of the Windows kit installation. By default it is located here.
+
 ```
 C:\> Cd C:\Program Files(x86)\Windows Kits\10\Debuggers\x64 
 ```
+
+> [!NOTE]
+> This labs assumes that both PCs are running a 64 bit version of Windows on both the target and host. 
+> If that is not the case, the best approach is to run the same "bitness" of tools on the host that the target is running. 
+For example if the target is running 32 bit Windows, run a 32 version of the debugger on the host. 
+> For more information, see [Choosing the 32-Bit or 64-Bit Debugging Tools](choosing-a-32-bit-or-64-bit-debugger-package.md).
+> 
 
 2. Launch WinDbg with remote user debug using the following command. The value for the key and port match what we set earlier using BCDEdit on the target.
 ```
