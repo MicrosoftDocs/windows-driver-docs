@@ -482,7 +482,7 @@ A dialog box will appear indicating that the test driver is an unsigned driver. 
 
 ![windows security warning - windows can't verify the publisher of this driver software](images/debuglab-image-install-security-warning.png)
 
-For more detailed instructions, see [Configuring a Computer for Driver Deployment, Testing, and Debugging](http://msdn.microsoft.com/library/windows/hardware/hh698272.aspx).
+For more detailed instructions, see [Configuring a Computer for Driver Deployment, Testing, and Debugging](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
 
 After successfully installing the sample driver, you're now ready to test it.
 

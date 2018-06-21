@@ -277,6 +277,7 @@
 ### [CcSetLogHandleForFileEx](ccsetloghandleforfileex.md)
 ### [CcSetLoggedDataThreshold](ccsetloggeddatathreshold.md)
 ### [CcSetReadAheadGranularityEx](ccsetreadaheadgranularityex.md)
+#### [READ_AHEAD_PARAMETERS](read-ahead-parameters.md)
 ### [CcUnmapFileOffsetFromSystemCache](ccunmapfileoffsetfromsystemcache.md)
 ### [ExDisableResourceBoost](exdisableresourceboost.md)
 ### [FsRtlAllocatePool](fsrtlallocatepool.md)

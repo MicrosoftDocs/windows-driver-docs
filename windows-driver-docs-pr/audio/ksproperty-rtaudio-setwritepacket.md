@@ -12,7 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 06/19/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,16 +48,16 @@ KSPROPERTY\_RTAUDIO\_SETWRITEPACKET informs the driver that the OS has written v
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
 <td align="left"><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
-<td align="left"><p>[<strong>KSRTAUDIO_SETWRITEPACKET_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537497)</p></td>
+<td align="left"><p>[<strong>KSRTAUDIO_SETWRITEPACKET_INFO</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_setwritepacket_info)</p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-The property descriptor (instance data) is a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure. Before sending the request, the client loads the structure with values that indicate the preferred base address for the register.
+The property descriptor (instance data) is a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure. Before sending the request, the client loads the structure with values Before sending the request, the client loads the structure with values that indicate the packet number, packet length and other information.
 
-The property value is a structure of type [**KSRTAUDIO\_SETWRITEPACKET\_INFO**](https://msdn.microsoft.com/library/windows/hardware/mt786977).
+The property value is a structure of type [**KSRTAUDIO\_SETWRITEPACKET\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_setwritepacket_info).
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
