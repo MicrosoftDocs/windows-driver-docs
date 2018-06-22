@@ -30,7 +30,7 @@ During a scheduled update or when a user clicks **Check for updates** in the **
 
 ## Device plug-in ("Plug and Play")
 
-When a device is connected to a Windows system, [Plug and Play (PnP)](../kernel/introduction-to-plug-and-play.md) looks for a compatible driver already available locally on the system. If one exists, Windows installs it on the device. Otherwise, Windows looks on Windows Update for a compatible driver, first matching the highest ranking **Automatic** driver on Windows Update. If no **Automatic** driver is available for the device, Windows proceeds to the highest ranking **Optional** driver. To learn more about the selection process, see [How Windows Selects Drivers](../install/how-setup-selects-drivers.md).
+When a device is connected to a Windows system, [Plug and Play (PnP)](../kernel/introduction-to-plug-and-play.md) looks for a compatible driver already available locally on the system. If one exists, Windows installs it on the device. Otherwise, Windows looks on Windows Update for a compatible driver, first matching the highest ranking **Automatic** driver on Windows Update. If no **Automatic** driver is available for the device, Windows proceeds to the highest ranking **Optional** driver.
 
 The same logic applies when a device has no applicable drivers available in the Driver Store ("Driver Not Found") or if the only locally available driver is *generic*, i.e. a system-provided driver that provides only basic device functionality.
 
