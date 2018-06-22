@@ -63,12 +63,22 @@ A port number to use for network debugging. You can choose any number from 49152
 <span id="_______Key______"></span><span id="_______key______"></span><span id="_______KEY______"></span> *Key*   
 The encryption key to use for network debugging. We recommend that you use an automatically generated key, which is provided by bcdedit when you configure the target computer. For more information, see [Setting Up a Network Connection Manually](setting-up-a-network-debugging-connection.md).
 
-<span id="_______Target______"></span><span id="_______target______"></span><span id="_______Target______"></span> *TargetIPAddress*   
+
+<span id="_______TargetIp______"></span><span id="_______targetip______"></span><span id="_______TARGETIP______"></span> *TargetIPAddress*   
 The IPv4 address of the target machine. 
 
-When the target IP address is specified, this causes the debugger to initiate a connection to the specified target machine, by sending a special packet to the target, that will cause it to attempt to connect with that debugger. If the connection is successful, the target will drop any existing connection, and communicate only with this instance of the debugger. This allows you to take control of the debugging session away from an existing debugging connection.
+When the target= IP address is specified, this causes the debugger to initiate a connection to the specified target machine, by sending a special packet to the target, that will cause it to attempt to connect with that debugger. If the connection is successful, the target will drop any existing connection, and communicate only with this instance of the debugger. This allows you to take control of the debugging session away from an existing debugging connection.  
 
-If the target IP address is not specified, the target will initiate a connection to the host IP address that was configured using the kdnet utility. For more information, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
+When the target= IP address is not specified when WinDbg is started on the host, the debugger will wait until the target sends it a packet before connecting.  
+
+When the target PC is configured with a host IP address, the debugger will send packets to the target repeatedly approximately every half second, attempting to connect. The target will use the host IP address that was configured using the BCDEdit or the kdnet utility to initiate a connection to the host. 
+
+When the target is configured with a host IP address, and the debugger is being run on the machine with the configured host IP address, there is no need to specify the target= IP address parameter.
+
+For more information on configuring the host IP address on the target, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
+
+<span id="_______TargetName______"></span><span id="_______targetname______"></span><span id="_______TARGETNAME______"></span> *TargetMachineName*   
+The machine name of the target PC. To use the machine name, the DNS system on the network must have the machine name associated with the IP address of the target PC.
  
 <span id="_______1394Channel______"></span><span id="_______1394channel______"></span><span id="_______1394CHANNEL______"></span> *1394Channel*   
 The 1394 channel number. Valid channel numbers are any integer between 0 and 62, inclusive. *1394Channel* must match the number used by the target computer, but does not depend on the physical 1394 port chosen on the adapter. For more information, see [Setting Up a 1394 Connection Manually](setting-up-a-1394-cable-connection.md).
