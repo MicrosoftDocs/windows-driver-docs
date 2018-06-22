@@ -336,7 +336,7 @@ For information, see [ACPI Interface: Device Specific Data (_DSD) for PCIe Root 
 
 ### <a name="sensors-1803"></a>Sensors
 
-The [SENSOR_CONNECTION_TYPES enumeration](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/_sensors/) was added to clarify connection type properties.
+The [SENSOR_CONNECTION_TYPES enumeration](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ne-sensorsdef-sensor_connection_types) was added to clarify connection type properties.
 
 ### <a name="usb-1803"></a>USB
 
