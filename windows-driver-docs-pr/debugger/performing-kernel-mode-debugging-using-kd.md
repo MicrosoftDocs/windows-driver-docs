@@ -67,15 +67,12 @@ The encryption key to use for network debugging. We recommend that you use an au
 <span id="_______TargetIp______"></span><span id="_______targetip______"></span><span id="_______TARGETIP______"></span> *TargetIPAddress*   
 The IPv4 address of the target machine. 
 
-When the target= IP address is specified, this causes the debugger to initiate a connection to the specified target machine, by sending a special packet to the target, that will cause it to attempt to connect with that debugger. If the connection is successful, the target will drop any existing connection, and communicate only with this instance of the debugger. This allows you to take control of the debugging session away from an existing debugging connection.  
+When the target= IP address is specified, this causes the debugger to initiate a connection to the specified target machine, by sending a special packet to the target, that will cause it to attempt to connect with that debugger. The debugger will send packets to the target repeatedly approximately every half second, attempting to connect. If the connection is successful, the target will drop any existing connection, and communicate only with this instance of the debugger. This allows you to take control of the debugging session away from an existing debugging connection. 
 
-When the target= IP address is not specified when WinDbg is started on the host, the debugger will wait until the target sends it a packet before connecting.  
+When the target= IP address is not specified when WinDbg is started on the host, the debugger will wait until the target sends it a packet before connecting. When the target is configured with a hostIP address, it will send OFFER packets to the host every three seconds.  The OFFER packets allow the debugger to connect to the host when no target= address is specified. When the target is configured with a host IP address, and the debugger is being run on the machine with the configured host IP address, there is no need to specify the target= IP address parameter. 
 
-When the target PC is configured with a host IP address, the debugger will send packets to the target repeatedly approximately every half second, attempting to connect. The target will use the host IP address that was configured using the BCDEdit or the kdnet utility to initiate a connection to the host. 
+For more information on configuring the host IP address on the target, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md) and [Setting Up KDNET Network Kernel Debugging Manually](setting-up-a-network-debugging-connection.md).
 
-When the target is configured with a host IP address, and the debugger is being run on the machine with the configured host IP address, there is no need to specify the target= IP address parameter.
-
-For more information on configuring the host IP address on the target, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
 
 <span id="_______TargetName______"></span><span id="_______targetname______"></span><span id="_______TARGETNAME______"></span> *TargetMachineName*   
 The machine name of the target PC. To use the machine name, the DNS system on the network must have the machine name associated with the IP address of the target PC.
