@@ -15,4 +15,4 @@ ms.technology: windows-devices
 
 
 
-만약 디바이스와 드라이버 설치과정이 익숙하지 않은 경우,  [디바이스 와 드라이버 설치 로드맵](roadmap-for-device-and-driver-installation--windows-vista-and-later-.md) 문서를 복습하는 것을 추천드립니다. 또한 this process and its components에 대한 high-level overview 를 보고 싶은 경우, [Overview of Device and Driver Installation](overview-of-device-and-driver-installation.md)를 읽을 수도 있습니다.
+만약 디바이스와 드라이버 설치과정이 익숙하지 않은 경우,  [디바이스 와 드라이버 설치 로드맵](roadmap-for-device-and-driver-installation--windows-vista-and-later-.md) 문서를 복습하는 것을 추천드립니다. 또한 디바이스와 드라이버 설치과정과 그 구성요소에 대한 높은 수준의 개요를 보고 싶은 경우, [Overview of Device and Driver Installation](overview-of-device-and-driver-installation.md)를 읽을 수도 있습니다.
