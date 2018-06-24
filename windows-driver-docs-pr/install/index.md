@@ -1,6 +1,6 @@
 ---
-title: Device and Driver Installation
-description: This section explains how devices and drivers are installed in Windows.
+title: 디바이스와 드라이버 설치
+description: 이 섹션은 디바이스와 드라이버들이 윈도우에서 어떻게 설치되는지 설명해줍니다.
 ms.assetid: 5bb4d9d3-9dcb-4820-a6ad-0345f7645c82
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -11,13 +11,8 @@ ms.technology: windows-devices
 
 # Device and Driver Installation
 
-
-This section explains how devices and drivers are installed in Windows.
-
-If you are unfamiliar with the device and driver installation process, we recommend that you start by reviewing [Roadmap for Device and Driver Installation](roadmap-for-device-and-driver-installation--windows-vista-and-later-.md). You may also want to read [Overview of Device and Driver Installation](overview-of-device-and-driver-installation.md) for a high-level overview of this process and its components.
+이 섹션은 디바이스와 드라이버들이 윈도우에서 어떻게 설치되는지 설명해줍니다.
 
 
 
-
-
-
+만약 디바이스와 드라이버 설치과정이 익숙하지 않은 경우,  [디바이스 와 드라이버 설치 로드맵](roadmap-for-device-and-driver-installation--windows-vista-and-later-.md) 문서를 복습하는 것을 추천드립니다. 또한 this process and its components에 대한 high-level overview 를 보고 싶은 경우, [Overview of Device and Driver Installation](overview-of-device-and-driver-installation.md)를 읽을 수도 있습니다.
