@@ -19,10 +19,6 @@ ms.technology: windows-devices
 
 # Identifying Backup Files for Deleted Boot Entries
 
-
-## <span id="ddk_identifying_backup_files_for_deleted_boot_entries_tools"></span><span id="DDK_IDENTIFYING_BACKUP_FILES_FOR_DELETED_BOOT_ENTRIES_TOOLS"></span>
-
-
 Typically, you need to locate a boot entry backup file when a boot entry is inadvertently deleted.
 
 If a boot entry has been deleted from NVRAM, and the operating system is still installed, the boot loader file and the boot entry backup file for the installation still remain on the disk in the installation's directory on the EFI partition.
@@ -30,12 +26,3 @@ If a boot entry has been deleted from NVRAM, and the operating system is still i
 To find the boot entry backup file for a deleted entry, boot to the EFI shell, and search the EFI partition recursively for boot entry backup files using the command **dir boot\* /s**. Exclude from your results boot entry backup files that are in directories associated with boot entries already in NVRAM. To display the directory for an existing boot entry, use the **nvrboot d** (display) command.
 
 If there are multiple Boot*xxxx* files that are not associated with existing boot entries, use Nvrboot to import the entries from their backup files, and then delete the unwanted boot entries.
-
- 
-
- 
-
-
-
-
-
