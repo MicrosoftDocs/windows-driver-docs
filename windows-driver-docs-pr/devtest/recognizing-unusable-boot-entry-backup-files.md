@@ -14,10 +14,6 @@ ms.technology: windows-devices
 
 # Recognizing Unusable Boot Entry Backup Files
 
-
-## <span id="ddk_recognizing_unusable_boot_entry_backup_files_tools"></span><span id="DDK_RECOGNIZING_UNUSABLE_BOOT_ENTRY_BACKUP_FILES_TOOLS"></span>
-
-
 Unfortunately, boot entry backup copies are not always usable.
 
 In an EFI environment, applications and drivers identify disk partitions by a partition GUID. If the disk partition GUID changes for any reason, then the partition GUID in the boot entry backup copy is no longer valid and the EFI boot loader cannot use the backup copy to boot the system.
@@ -33,12 +29,3 @@ OsFilePath:       (null)
 ```
 
 In this case, you must recreate the boot entry by copying another boot entry from the operating system installation, and then changing the parameters.
-
- 
-
- 
-
-
-
-
-
