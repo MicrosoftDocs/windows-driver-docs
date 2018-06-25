@@ -20,15 +20,9 @@ ms.technology: windows-devices
 
 # Overview of the Boot.ini File
 
+\[This topic describes the boot options supported in Windows XP and Windows Server 2003. If you are changing boot options for modern versions of Windows, see [Boot Options in Windows Vista and Later](boot-options-in-windows-vista-and-later.md).\]
 
-\[This topic describes the boot options supported in Windows XP and Windows Server 2003. If you are changing boot options for Windows 8, Windows Server 2012, Windows 7, Windows Server 2008, or Windows Vista, see [Boot Options in Windows Vista and Later](boot-options-in-windows-vista-and-later.md).\]
-
-The Boot.ini file is a text file that contains the boot options for computers with BIOS firmware running NT-based operating system prior to Windows Vista. It is located at the root of the system partition, typically c:\\Boot.ini.
-
-## <span id="ddk_overview_of_the_boot_ini_file_tools"></span><span id="DDK_OVERVIEW_OF_THE_BOOT_INI_FILE_TOOLS"></span>
-
-
-The following sample shows the content of a typical Boot.ini file.
+The Boot.ini file is a text file that contains the boot options for computers with BIOS firmware running NT-based operating system prior to Windows Vista. It is located at the root of the system partition, typically c:\\Boot.ini. The following sample shows the content of a typical Boot.ini file.
 
 ```
 [boot loader]
@@ -39,11 +33,11 @@ multi(0)disk(0)rdisk(0)partition(1)\WINDOWS="Microsoft Windows XP Professional" 
 C:\CMDCONS\BOOTSECT.DAT="Microsoft Windows Recovery Console" /cmdcons
 ```
 
-The Boot.ini file has two main sections:
+Boot.ini has two main sections:
 
 -   The **\[boot loader\]** section contains option settings that apply to all boot entries on the system. The options include **timeout**, the boot menu time-out value, and **default**, the location of the default operating system.
 
-    The following sample shows the \[boot loader\] section of a Boot.ini file.
+    The following sample shows the \[boot loader\] section of Boot.ini.
 
     ```
     [boot loader]
@@ -55,7 +49,7 @@ The Boot.ini file has two main sections:
 
     A *boot entry* is a set of options that defines a load configuration for an operating system or bootable program. The boot entry specifies an operating system or bootable program and the location of its files. It can also include parameters that configure the operating system or program.
 
-    The following sample shows the \[operating systems\] section of a Boot.ini file on a computer with two operating systems, Microsoft Windows XP and Microsoft Windows 2000. It has two boot entries, one for each operating system.
+    The following sample shows the \[operating systems\] section of Boot.ini on a computer with two operating systems, Microsoft Windows XP and Microsoft Windows 2000. It has two boot entries, one for each operating system.
 
     ```
     [operating systems]
@@ -65,7 +59,7 @@ The Boot.ini file has two main sections:
 
 Each boot entry includes the following elements:
 
--   The location of the operating system. The Boot.ini file uses the Advanced RISC Computing (ARC) naming convention to display the path to the disk partition and directory where the operating system resides. For example:
+-   The location of the operating system. Boot.ini uses the Advanced RISC Computing (ARC) naming convention to display the path to the disk partition and directory where the operating system resides. For example:
     ```
     multi(0)disk(0)rdisk(0)partition(1)\WINDOWS
     ```
@@ -79,17 +73,8 @@ Each boot entry includes the following elements:
 
     For a list of boot parameters that are relevant to driver testing and debugging, see [Boot.ini Boot Parameter Reference](https://msdn.microsoft.com/library/windows/hardware/ff542248).
 
-You can have multiple boot entries for the same operating system, each with a different set of boot parameters. Windows creates a standard boot entry when you install the operating system, and you can create additional, customized entries for an operating system by editing the Boot.ini file.
+You can have multiple boot entries for the same operating system, each with a different set of boot parameters. Windows creates a standard boot entry when you install the operating system, and you can create additional, customized entries for an operating system by editing Boot.ini.
 
 Comment
 
-This document describes aspects of the Boot.ini file that are of special interest to driver developers and testers. For a more general description of the Boot.ini file, including a list of commonly used Boot.ini file parameters, see "Reviewing and Correcting Boot.ini Settings on x86-based Systems" in the [Microsoft Windows XP Professional Resource Kit Documentation](http://go.microsoft.com/fwlink/p/?linkid=10004).
-
- 
-
- 
-
-
-
-
-
+This document describes aspects of Boot.ini that are of special interest to driver developers and testers. For a more general description of Boot.ini, including a list of commonly used Boot.ini parameters, see "Reviewing and Correcting Boot.ini Settings on x86-based Systems" in the [Microsoft Windows XP Professional Resource Kit Documentation](http://go.microsoft.com/fwlink/p/?linkid=10004).
