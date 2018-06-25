@@ -336,7 +336,7 @@ For information, see [ACPI Interface: Device Specific Data (_DSD) for PCIe Root 
 
 ### <a name="sensors-1803"></a>Sensors
 
-The [SENSOR_CONNECTION_TYPES enumeration](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/_sensors/) was added to clarify connection type properties.
+The [SENSOR_CONNECTION_TYPES enumeration](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ne-sensorsdef-sensor_connection_types) was added to clarify connection type properties.
 
 ### <a name="usb-1803"></a>USB
 
@@ -589,7 +589,7 @@ For more information about what's new for Bluetooth, see [Bluetooth](https://msd
 
 The following is a list of updates to Camera driver development in Windows 10, version 1703:
 
-* [USB Video Class (VCC) driver implementation guide](https://msdn.microsoft.com/en-us/windows/hardware/drivers/stream/uvc-driver-implementation-checklist)
+* [USB Video Class (UVC) driver implementation guide](https://msdn.microsoft.com/en-us/windows/hardware/drivers/stream/uvc-driver-implementation-checklist)
 * [Microsoft extensions to USB Video Class 1.5 specification](https://msdn.microsoft.com/en-us/windows/hardware/drivers/stream/uvc-extensions-1-5)
 * [Device transform manager (DTM) events](https://msdn.microsoft.com/en-us/library/windows/hardware/mt797660)
 * [IMFDeviceTransform interface](https://msdn.microsoft.com/en-us/library/windows/hardware/mt797663)
