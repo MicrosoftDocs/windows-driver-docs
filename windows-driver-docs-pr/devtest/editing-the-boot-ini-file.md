@@ -36,7 +36,7 @@ Prior to Windows Vista, BIOS-based computers running Windows store boot options 
 
 ## <span id="bootcfg"></span><span id="BOOTCFG"></span>Bootcfg
 
-Bootcfg is a command-line tool that edits boot options on local and remote computers. Using the same Bootcfg commands and procedures, you can edit Boot.ini, the boot options in Extensible Firmware Interface Non-Volatile Random Access Memory (EFI NVRAM). Bootcfg is included in the `%Systemroot%\\System32` directory in Windows XP and Windows Server 2003. (The Bootcfg display is slightly different on systems that store boot options in EFI NVRAM, but the commands are the same.)
+Bootcfg is a command-line tool that can edit boot options on local and remote computers. Using the same Bootcfg commands and procedures, you can edit Boot.ini, as well as the boot options in Extensible Firmware Interface Non-Volatile Random Access Memory (EFI NVRAM). Bootcfg is included in the `%Systemroot%\\System32` directory in Windows XP and Windows Server 2003. (The Bootcfg display is slightly different on systems that store boot options in EFI NVRAM, but the commands are the same.)
 
 You can use Bootcfg to add, delete, and change all boot entry parameters and boot options; however, you cannot use it to set an indefinite boot time-out value. You can also use Bootcfg commands in a script or batch file to set boot options or to reset them after you replace or upgrade an operating system.
 
@@ -65,8 +65,14 @@ Use the following procedure to prepare Boot.ini for manual editing. This procedu
     ```
 
     System, hidden, and read-only attributes are removed from the file.
+    
+4.  Open the file in Notepad for editing. Since you are in Windows Command Prompt, the following command should do the trick quickly:
 
-4.  When your editing is complete, you can restore the file attributes to protect Boot.ini. However, Ntldr can use Boot.ini with any attribute set. To restore attributes, type the following in Windows Command Prompt:
+    ```
+    notepad.exe Boot.ini
+    ```
+
+5.  When your editing is complete, you can restore the file attributes to protect Boot.ini. However, Ntldr can use Boot.ini with any attribute set. To restore attributes, type the following in Windows Command Prompt:
 
     ```
     attrib +s +h +r Boot.ini
