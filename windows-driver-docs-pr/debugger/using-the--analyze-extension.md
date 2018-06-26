@@ -24,13 +24,10 @@ You should use the **-v** option for a fully verbose display of data. For detail
 
 This topic contains:
 
-A User-Mode !analyze -v Example
-
-A Kernel-Mode !analyze -v Example
-
-The Followup Field and the triage.ini File
-
-Additional !analyze Techniques
+- A User-Mode !analyze -v Example
+- A Kernel-Mode !analyze -v Example
+- The Followup Field and the triage.ini File
+- Additional !analyze Techniques
 
 ### <span id="ddk_a_user_mode_analyze_v_example_dbg"></span><span id="DDK_A_USER_MODE_ANALYZE_V_EXAMPLE_DBG"></span>A User-Mode !analyze -v Example
 
