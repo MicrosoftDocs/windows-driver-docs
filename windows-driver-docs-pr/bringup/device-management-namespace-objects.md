@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 The [ACPI 5.0 specification](http://www.uefi.org/specifications) defines several types of namespace objects that can be used to manage devices. For example, device identification objects contain identification information for devices that connect to buses, such as I2C, that do not support hardware enumeration of child devices. Other types of namespace objects can specify system resources, describe device dependencies, and indicate which devices can be disabled.
 
-## <a href="" id="winid"></a>Device identification in Windows
+## Device identification in Windows
 
 
 Windows Plug and Play finds and loads device drivers based on a device identifier provided by the enumerator of the device. Enumerators are bus drivers that know how to extract identification information from the device. Some buses (such as PCI, SD, and USB) have hardware-defined mechanisms to do this extraction. For buses that do not (such as the processor bus or a simple peripheral bus), ACPI defines identification objects in the namespace.
@@ -34,7 +34,7 @@ You can see the device identifiers that Windows creates for your device by openi
 
 Device identifiers should be used for INF matching only, and should never be parsed or processed by the device driver. If the device driver has a need to identify the specific hardware it was loaded for, the recommended method is to have the INF file set appropriate registry keys at install time. The driver can then access these keys during initialization to obtain the required information.
 
-## <a href="" id="acpiid"></a>Device identification in ACPI
+## Device identification in ACPI
 
 
 ### Hardware ID (\_HID)
@@ -82,7 +82,7 @@ There are three additional requirements for device identification:
 -   On platforms where multiple instances of a particular IP block are used, so that each block has the same device identification objects, the Unique Identifier (\_UID) object is necessary to enable the operating system to distinguish between blocks.
 -   No two devices in a particular namespace scope can have the same name.
 
-## <a href="" id="devconobj"></a>Device configuration objects
+## Device configuration objects
 
 
 For each device identified in the namespace, the system resources (memory addresses, interrupts, and so on) consumed by the device must also be reported by the Current Resource Settings (\_CRS) object. Reporting of multiple possible resource configurations (\_PRS) and controls for changing a device's resource configuration (\_SRS) are supported but optional.
@@ -111,7 +111,7 @@ If a driver supports orderly removal, and the device hardware can be disabled (t
 
 For more information, see sections 6.2.3 (\_DIS), 6.2.15 (\_SRS), and 6.3.7 (\_STA) of the [ACPI 5.0 specification](http://www.uefi.org/specifications).
 
-## <a href="" id="devdepend"></a>Device dependencies
+## Device dependencies
 
 
 Typically, there are hardware dependencies between devices on a particular platform. Windows requires that all such dependencies be described so that it can ensure that all devices function correctly as things change dynamically in the system (device power is removed, drivers are stopped and started, and so on). In ACPI, dependencies between devices are described in the following ways:
@@ -122,7 +122,7 @@ Typically, there are hardware dependencies between devices on a particular platf
 
 There can also be software dependencies between device drivers. These dependencies must also be described. For more information, see the following resources:
 
--   For driver-load-order dependencies, see [How To Control Device Driver Load Order](http://support.microsoft.com/kb/115486).
+-   For driver-load-order dependencies, see [Specifying Driver Load Order](https://docs.microsoft.com/windows-hardware/drivers/install/specifying-driver-load-order).
 -   For power-relations dependencies, see:
 
     -   [**IoInvalidateDeviceRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioinvalidatedevicerelations) routine (To trigger establishing power relations, call the **IoInvalidateDeviceRelations** routine with the **DEVICE\_RELATION\_TYPE** enum value **PowerRelations**.)
