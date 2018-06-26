@@ -3,6 +3,11 @@ title: Hardware notifications design guide
 author: windows-driver-content
 description: Describes support for key buttons (Power, Windows, volume and rotation lock) and other indicators in a standardized way, together with associated corresponding Windows Engineering Guidance (WEG).
 ms.assetid: E18DAA6C-C64D-40B3-A112-682A935655D0
+ms.author: windowsdriverdev
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hardware notifications design guide

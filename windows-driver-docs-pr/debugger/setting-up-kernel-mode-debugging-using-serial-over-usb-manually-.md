@@ -35,6 +35,9 @@ The computer that runs the debugger is called the *host computer*, and the compu
 
 ## <span id="Setting_Up_the_Sharks_Cove_Board_as_the_Target_Computer"></span><span id="setting_up_the_sharks_cove_board_as_the_target_computer"></span><span id="SETTING_UP_THE_SHARKS_COVE_BOARD_AS_THE_TARGET_COMPUTER"></span>Setting Up the Sharks Cove Board as the Target Computer
 
+> [!IMPORTANT]
+> Before using BCDEdit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC.
+> Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.
 
 1.  On the target computer (Sharks Cove board), open a Command Prompt window as Administrator, and enter these commands:
 

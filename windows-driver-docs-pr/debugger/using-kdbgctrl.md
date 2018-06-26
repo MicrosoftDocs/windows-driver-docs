@@ -4,7 +4,7 @@ description: Using KDbgCtrl
 ms.assetid: 386e8861-dd55-440c-9309-7e8cf6c27690
 keywords: ["KDbgCtrl", "KDbgCtrl, basic use", "DbgPrint buffer, changing buffer size", "DbgPrint buffer, KDbgCtrl utility"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,6 +58,10 @@ User-Mode Error Handling is enabled by default. To check the current setting val
 ### <span id="blocking_kernel_debugging"></span><span id="BLOCKING_KERNEL_DEBUGGING"></span>Blocking Kernel Debugging
 
 In some cases you might want to set up the target computer for kernel debugging, but wait to enable kernel debugging until after the target computer is started. You can do that by blocking kernel debugging.
+
+> [!IMPORTANT]
+> Before using BCDEdit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC.
+> Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.
 
 To block kernel debugging, set up the target computer by using commands similar to the following:
 

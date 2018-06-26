@@ -70,21 +70,6 @@ faPDL.dll =2
 Location="Fabrikam DVD"
 ```
 
-## Print Class Driver GenericDriverInstalled Properties
-
-
-Print class drivers need to specify that they are generic drivers in order to enable automatic upgrade to a newer print driver on the Windows Update site.
-
-**Note**  This property is allowed for print class drivers only.
-
- 
-
-For print class drivers, this property should be specified in the install section for the driver. This is a two-part declaration.
-
-1. Add the "AddProperty=GENERIC.AddProp" line to all install sections that are class drivers.
-
-2. Add the \[GENERIC.AddProp\] section. For example, add the "GenericDriverInstalled,,,,1" line under this section.
-
 ## INF Directives
 
 
@@ -93,8 +78,6 @@ The following table shows the list of printer-specific directives that are permi
 | Directive | Description                                         | Restrictions                                                                                                                                           | Usage        |
 |-----------|-----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
 | ClassVer  | Used to indicate that a printer class driver is v4. | V4 print drivers must specify ClassVer=4.0. V3 print drivers may specify ClassVer=3.0, but it is optional. No other values are supported at this time. | ClassVer=4.0 |
-
- 
 
 ## The DestinationDirs Keyword
 
