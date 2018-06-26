@@ -15,3 +15,15 @@ api_type:
 
 # NDIS_STATUS_WWAN_MPDP_LIST
 
+The **NDIS_STATUS_WWAN_MPDP_LIST** notification is sent by the Mobile Broadband WDF class extension (MBBCx) to inform the MB service about the completion of a previous [OID_WWAN_MPDP](oid-wwan-mpdp.md) query request.
+
+MBBCx does not send this notification as an unsolicited event.
+
+This notification uses the [**NDIS_WWAN_MPDP_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_mpdp_list) structure.
+
+## Requirements
+
+|   |   |
+| --- | --- |
+| Version | Windows 10, version 1809 |
+| Header | Ndis.h |

@@ -1,6 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_MPDP_STATE
-description: Miniport drivers use the NDIS_STATUS_WWAN_MPDP_STATE notification to inform the MB service about the completion of a previous OID_WWAN_MPDP query request.
+description: The NDIS_STATUS_WWAN_MPDP_STATE notification is sent by MBBCx to inform the MB service about the completion of a previous OID_WWAN_MPDP set request.
 ms.assetid: 59B8D9A0-FB22-4252-A24B-A9E58B068C4E
 keywords: ["NDIS_STATUS_WWAN_MPDP_STATE, Network Drivers Starting with Windows Vista"]
 topic_type:
@@ -15,3 +15,15 @@ api_type:
 
 # NDIS_STATUS_WWAN_MPDP_STATE
 
+The **NDIS_STATUS_WWAN_MPDP_STATE** notification is sent by the Mobile Broadband WDF class extension (MBBCx) to inform the MB service about the completion of a previous [OID_WWAN_MPDP](oid-wwan-mpdp.md) set request.
+
+MBBCx does not send this notification as an unsolicited event.
+
+This notification uses the [**NDIS_WWAN_MPDP_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_mpdp_state) structure.
+
+## Requirements
+
+|   |   |
+| --- | --- |
+| Version | Windows 10, version 1809 |
+| Header | Ndis.h |
