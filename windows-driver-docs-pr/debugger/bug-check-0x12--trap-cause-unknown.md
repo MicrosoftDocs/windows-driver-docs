@@ -4,7 +4,7 @@ description: The TRAP_CAUSE_UNKNOWN bug check has a value of 0x00000012. This in
 ms.assetid: 43cbcc34-9df0-4d5f-b823-1cc3cafaa811
 keywords: ["Bug Check 0x12 TRAP_CAUSE_UNKNOWN", "TRAP_CAUSE_UNKNOWN"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 06/26/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,15 +40,20 @@ The TRAP\_CAUSE\_UNKNOWN bug check has a value of 0x00000012. This indicates tha
 <tbody>
 <tr class="odd">
 <td align="left"><p>1</p></td>
-<td align="left"><p>The unexpected interrupt</p></td>
+<td align="left"><p>Type of TRAP_CAUSE_UNKNOWN</p>
+<p><B>VALUES</B></p>
+<p>1 - Unexpected interrupt. (Parameter 2 – Interrupt Vector)</p>
+<p>2 - Unknown floating point exception. </p>
+<p>3 - The enabled and asserted status bits (see processor definition).</p>
+</td>
 </tr>
 <tr class="even">
 <td align="left"><p>2</p></td>
-<td align="left"><p>The unknown floating-point exception</p></td>
+<td align="left"><p>Dependent on Arg1</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>3</p></td>
-<td align="left"><p>The enabled and asserted status bits. See the processor definition for details.</p></td>
+<td align="left"><p>Reserved</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>4</p></td>
