@@ -30,7 +30,7 @@ This topic describes how Windows automatically manages physical wireless connect
 
 Windows 8, Windows 8.1, and Windows 10 include a number of policies to control connection management. These policies are not exposed in the Windows user interface but can be configured by using the [WcmSetProperty](http://msdn.microsoft.com/library/windows/desktop/hh437602.aspx) API or Group Policy.
 
-### <span id="Minimize_simultaneous_connections"></span><span id="minimize_simultaneous_connections"></span><span id="MINIMIZE_SIMULTANEOUS_CONNECTIONS"></span>Minimize simultaneous connections
+### <span id="Minimize_simultaneous_connections"></span><span id="minimize_simultaneous_connections"></span><span id="MINIMIZE_SIMULTANEOUS_CONNECTIONS"></span>Minimize simultaneous connections - fMinimizeConnections
 
 This policy is on by default for Windows 8, Windows 8.1, and Windows 10. If this policy is disabled, the behavior is similar to that for Windows 7 in which each interface connects to the most preferred network in range, regardless of the connectivity state of other interfaces.
 
