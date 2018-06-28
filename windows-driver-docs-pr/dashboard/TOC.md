@@ -14,6 +14,7 @@
 ## [Manage driver distribution with shipping labels](manage-driver-distribution-by-submission.md)
 ### [Publishing restrictions](publishing-restrictions.md)
 ### [Publish a driver to Windows Update](publish-a-driver-to-windows-update.md)
+### [Understanding Windows Update Automatic and Optional Rules for Driver Distribution](understanding-windows-update-automatic-and-optional-rules-for-driver-distribution.md)
 ### [Share a driver with a partner](sharing-drivers-with-your-partners.md)
 ### [Expire a driver from Windows Update](expire-a-driver-from-windows-update.md)
 ### [View partner shipping labels for a shared driver](viewing-shipping-labels-for-your-shared-driver.md)

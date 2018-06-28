@@ -9,8 +9,8 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# What's new in driver development
-<a href="" id="top"></a>
+# <a name="top"></a>What's new in driver development 
+
 
 This section provides information about the new features and updates to Windows driver development in Windows 10.
 
@@ -19,7 +19,7 @@ The following is a list of new feature highlights for driver development in Wind
 * [Open publishing](#open-publishing)
 * [Debugging Tools for Windows](#debugging-tools-for-windows)
 * [Driver Verifier](#driver-verifier)
-* [Windows Driver Frameworks](#windows-driver-frameworks)
+* [Windows Driver Frameworks](#windows-driver-frameworks-wdf)
 * [Universal Windows drivers](#universal-windows-drivers)
 * [Windows Compatible hardware development boards](#windows-compatible-hardware-development-boards)
 * [Power Management Framework](#power-management-framework)
@@ -29,7 +29,7 @@ The following is a list of new feature highlights for driver development in Wind
 
 The following table shows the feature updates in Windows 10, by driver technology and version.
 
-| Driver | [version 1803](#version-1803) | [version 1709](#version-1709) | [version 1703](#version-1703) |  [version 1607](#version-1607) |  [version 1507](#version-1507) |
+| Driver | [version 1803](#whats-new-in-windows-10-version-1803-latest) | [version 1709](#whats-new-in-windows-10-version-1709) | [version 1703](#whats-new-in-windows-10-version-1703) |  [version 1607](#whats-new-in-windows-10-version-1607) |  [version 1507](#whats-new-in-windows-10-version-1507) |
 |---|:---:|:---:|:---:|:---:|:--:|
 | Audio | [![details](checkmark.png)](#audio-1803)| [![details](checkmark.png)](#audio-1709) | [![details](checkmark.png)](#audio-1703) | [![details](checkmark.png)](#audio)  |![not available](minus.png) |
 | ACPI |[![details](checkmark.png)](#acpi-1803) | [![details](checkmark.png)](#acpi-1709) | ![not available](minus.png) |![not available](minus.png) |![not available](minus.png) | ![not available](minus.png) |
@@ -178,7 +178,7 @@ For more info, see [Target platform on driver reference pages](https://msdn.micr
 
 Windows is now supported on more affordable boards such as the Raspberry Pi 2. Become a part of our early adopter community and load Windows on that board. For more information, see [Windows compatible hardware development boards](https://msdn.microsoft.com/library/windows/hardware/dn914597).
 
-### <a href="" id="power-management-framework"></a>Power Management Framework (PoFx)
+### <a name="power-management-framework"></a>Power Management Framework (PoFx)
 
 The power management framework (PoFx) enables a driver to define one or more sets of individually adjustable performance states for individual components within a device. The driver can use performance states to throttle a component's workload to provide just enough performance for its current needs. For more information, see [Component-Level Performance State Management](https://msdn.microsoft.com/library/windows/hardware/dn939352).
 
@@ -196,15 +196,15 @@ The power management framework (PoFx) enables a driver to define one or more set
 
 This section describes new features and updates for driver development in Windows 10, version 1803 (Windows 10 April 2018 Update).
 
-### <a href="" id="acpi-1803"></a>ACPI
+### <a name="acpi-1803"></a>ACPI
 
 Windows 10, version 1803 includes updates to ACPI DDIs to support platform capabilities and physical device location.
 
-### <a href="" id="audio-1803"></a>Audio
+### <a name="audio-1803"></a>Audio
 
 The [voice activation](https://docs.microsoft.com/en-us/windows-hardware/drivers/audio/voice-activation) topic was updated to include additional information on APO requirements.
 
-### <a href="" id="bluetooth-1803"></a>Bluetooth
+### <a name="bluetooth-1803"></a>Bluetooth
 
 Windows 10, version 1803 introduces support for Swift Pair. Users no longer need to navigate the Settings App and find their peripheral to pair. Windows can now do this for them by popping a notification when a new peripheral is nearby and ready. There are two sets of requirements to ensure your peripheral works with Swift Pair. One set is for the peripheral’s behavior, and another for the structure and values in a Microsoft defined vendor advertisement section. For more information, see:
 
@@ -213,14 +213,14 @@ Windows 10, version 1803 introduces support for Swift Pair. Users no longer need
 
 Windows 10, version 1803 supports Bluetooth version 5.0. For information about profile support, see [Bluetooth Version and Profile Support in Windows 10](https://docs.microsoft.com/en-us/windows-hardware/drivers/bluetooth/general-bluetooth-support-in-windows).
 
-### <a href="" id="camera-1803"></a>Camera
+### <a name="camera-1803"></a>Camera
 
 Updates to Camera driver development include:
 
 * [DShow (DirectShow) Bridge implementation guidance for UVC devices](https://docs.microsoft.com/en-us/windows-hardware/drivers/stream/dshow-bridge-implementation-guidance-for-usb-video-class-devices) - Implementation guidance for configuring DShow Bridge for cameras and devices that comply with the USB Video Class (UVC) specification. The platform uses Microsoft OS Descriptors from the USB bus standard to configure DShow Bridge. The Extended Properties OS Descriptors are an extension of USB standard descriptors and are used by USB devices to return Windows specific device properties that are not enabled through standard specifications.
 * [360 camera video capture](https://docs.microsoft.com/en-us/windows-hardware/drivers/stream/360-camera-video-capture) - Provides support for 360 camera preview, capture, and record with existing MediaCapture APIs. This enables the platform to expose spherical frame sources (for example, equirectangular frames ), enabling apps to detect and handle 360 video camera streams as well as to provide a 360 capture experience.
 
-### <a href="" id="display-1803"></a>Display
+### <a name="display-1803"></a>Display
 
 The following are updates to Display driver development in Windows 10, version 1803:
 
@@ -263,12 +263,12 @@ The following are updates to Display driver development in Windows 10, version 1
 
 * **Shared texture improvements** - Includes increasing the types of textures that can be shared across processes and D3D devices. This design enables the frame server OS component to support monochrome with minimal memory copying.
 
-### <a href="" id="security-1803"></a>Driver security
+### <a name="security-1803"></a>Driver security
 
 Updates to [Windows Driver Security Guidance](https://docs.microsoft.com/en-us/windows-hardware/drivers/driversecurity/)
 and the [Driver security checklist](https://docs.microsoft.com/en-us/windows-hardware/drivers/driversecurity/driver-security-checklist), which provides a driver security checklist for driver developers.
 
-### <a href="" id="kernel-1803"></a>Windows kernel
+### <a name="kernel-1803"></a>Windows kernel
 
 This section describes the new and updates features for Windows kernel driver development in Windows 10, version 1803.
 
@@ -292,7 +292,7 @@ NT services and kernel-mode and user-mode drivers can raise a custom trigger for
 
 You can now register for active session change notification and get a callback when the notification is fired. As part of this notification, some data is also shared with the caller. This associated data is delivered via the [PO_SPR_ACTIVE_SESSION_DATA structure](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntpoapi/ns-ntpoapi-_po_spr_active_session_data).
 
-### <a href="" id="networking-1803"></a>Networking
+### <a name="networking-1803"></a>Networking
 
 This section outlines new features and improvements for Windows Networking driver development in Windows 10, version 1803.
 
@@ -316,7 +316,7 @@ Additionally, new topics are available for a preview-only feature, the Mobile Br
     * [Writing an MBBCx client driver](https://docs.microsoft.com/windows-hardware/drivers/netcx/writing-an-mbbcx-client-driver)
     * [MBBCx API reference](https://docs.microsoft.com/windows-hardware/drivers/netcx/mbbcx-api-reference)
 
-### <a href="" id="mobilebroadband-1803"></a>Mobile broadband
+### <a name="mobilebroadband-1803"></a>Mobile broadband
 
 In mobile broadband, a new topic detailing [MB low level UICC access](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/mb-low-level-uicc-access) is available.
 
@@ -324,7 +324,7 @@ In mobile broadband, a new topic detailing [MB low level UICC access](https://do
 
 New Hotspot and AppID settings are now a part of [desktop COSA](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/desktop-cosa-apn-database-settings#desktop-cosa-only-settings). Mobile operators are strongly encouraged to transition from broadband app experience apps with [Sysdev metadata packages](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/service-metadata) to [MO UWP Apps](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/uwp-mobile-broadband-apps) and the [COSA database](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/desktop-cosa-apn-database-settings).
 
-### <a href="" id="pci-1803"></a>PCIe
+### <a name="pci-1803"></a>PCIe
 
 New ACPI _DSD methods have been added to support these Modern Standby and PCI hot plug scenarios:
 
@@ -334,15 +334,15 @@ New ACPI _DSD methods have been added to support these Modern Standby and PCI ho
 
 For information, see [ACPI Interface: Device Specific Data (_DSD) for PCIe Root Ports](https://docs.microsoft.com/en-us/windows-hardware/drivers/pci/dsd-for-pcie-root-ports).
 
-### <a href="" id="sensors-1803"></a>Sensors
+### <a name="sensors-1803"></a>Sensors
 
-The [SENSOR_CONNECTION_TYPES enumeration](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/sensorsdef/ne-sensorsdef-sensor_connection-types) was added to clarify connection type properties.
+The [SENSOR_CONNECTION_TYPES enumeration](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ne-sensorsdef-sensor_connection_types) was added to clarify connection type properties.
 
-### <a href="" id="usb-1803"></a>USB
+### <a name="usb-1803"></a>USB
 
 New APIs were added to simulate detach for shared connectors. If a USB device is attached to a host or have shared connector while the stack is being removed while the device is attached to a host or have shared connectors, you can simulate a detach event. At this point all attach/detach notification mechanisms are disabled. For more information, see [UfxDeviceNotifyFinalExit function](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ufxclient/nf-ufxclient-ufxdevicenotifyfinalexit).
 
-### <a href="" id="wifi-1803"></a>Wi-fi
+### <a name="wifi-1803"></a>Wi-fi
 
 Updates to Wi-fi driver development include a new [TLV for the Nic Auto Power Saver (NAPS) advanced power management feature](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/wdi-tlv-os-power-management-features) and updates to the platform level device recovery service (PLDR).
 
@@ -353,7 +353,7 @@ This section describes new features and updates for driver development in Window
 
 [Back to Top](#top)
 
-### <a href="" id="audio-1709"></a>Audio
+### <a name="audio-1709"></a>Audio
 
 The following is a list of updates to Windows Audio driver development in Windows 10, version 1709:
 
@@ -365,7 +365,7 @@ The following is a list of updates to Windows Audio driver development in Window
     * An updated keyword system overview
     * Updated information on wake on voice
 
-### <a href="" id="acpi-1709"></a>ACPI
+### <a name="acpi-1709"></a>ACPI
 
 The following is a list of new Advanced Configuration and Power Interface (ACPI) DDIs to support input/output buffers.
 
@@ -391,11 +391,11 @@ The following is a list of new Advanced Configuration and Power Interface (ACPI)
 * [GIC_ITS](https://msdn.microsoft.com/en-us/library/mt826395)
 
 
-### <a href="" id="biometric-1709"></a>Biometric
+### <a name="biometric-1709"></a>Biometric
 
 There are new signing requirements for Windows Biometric Drivers. For more information, see [Signing WBDI Drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/biometric/signing-wbdi-drivers).
 
-### <a href="" id="display-1709"></a>Display
+### <a name="display-1709"></a>Display
 
 The following is a list of new features for Windows Display driver development in Windows 10, version 1709.
 
@@ -406,7 +406,7 @@ The following is a list of new features for Windows Display driver development i
     2. Content protection
     3. Video processing
 
-### <a href="" id="hardware-notifications-1709"></a>Hardware notifications
+### <a name="hardware-notifications-1709"></a>Hardware notifications
 
 In Windows 10, version 1709, there is support for hardware-agnostic support of notification components such as LEDs and vibration mechanisms. For more information, see:
 
@@ -414,7 +414,7 @@ In Windows 10, version 1709, there is support for hardware-agnostic support of n
 * [Hardware notifications reference](https://msdn.microsoft.com/en-us/library/windows/hardware/dn789336)
 
 
-### <a href="" id="kernel-1709"></a>Windows kernel
+### <a name="kernel-1709"></a>Windows kernel
 
 In Windows 10, version 1709, several new routines to the Windows Kernel for drivers have been added.
 
@@ -436,7 +436,7 @@ In Windows 10, version 1709, several new routines to the Windows Kernel for driv
     * [RtlInitializeCorrelationVector](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt826273(v=vs.85).aspx)
     * [RtlValidateCorrelationVector](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt826274(v=vs.85).aspx)
 
-### <a href="" id="mobilebroadband-1709"></a>Mobile broadband
+### <a name="mobilebroadband-1709"></a>Mobile broadband
 
 The following is a list of new features for Windows Mobile Broadband and Mobile Operator Scenarios for driver development in Windows 10, version 1709:
 
@@ -449,7 +449,7 @@ The following is a list of new features for Windows Mobile Broadband and Mobile 
 In Windows 10, version 1709, the [desktop COSA documentation](https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/planning-your-desktop-cosa-apn-database-submission) was updated to include new branding-related fields.
 See the list of [deprecated features](#deprecated-features) for other changes to Mobile Operator Scenarios.
 
-### <a href="" id="networking-1709"></a>Networking
+### <a name="networking-1709"></a>Networking
 
 This section outlines new features and improvements for Windows Networking driver development in Windows 10, version 1709.
 
@@ -466,11 +466,11 @@ The following is a list of new and updated features for NDIS:
 * [Porting NDIS 6.x drivers to NDIS 6.80](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/porting-ndis-6-x-drivers-to-ndis-6-80)
 
 
-### <a href="" id="pci-1709"></a>Virtualized PCI
+### <a name="pci-1709"></a>Virtualized PCI
 
 There are new programming interfaces for writing a Physical Function driver for devices that conform to the PCI Express Single-Root I/O Virtualization (SR-IOV) specification. The interfaces are declared in Pcivirt.h. For more information, see [PCI virtualization](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt825211(v=vs.85).aspx).
 
-### <a href="" id="pwm-1709"></a>Pulse Width Modulation (PWM) Controllers
+### <a name="pwm-1709"></a>Pulse Width Modulation (PWM) Controllers
 
 In Windows 10, version 1709, to provide access to a Pulse width modulation (PWM) controller that is part of the SoC and memory-mapped to the SoC address space, you need to write a kernel-mode driver. For more information, see [PWM driver for an on-SoC PWM module](https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/pulse-width-controller%20driver?branch=spb).
 
@@ -479,7 +479,7 @@ To parse and validate pin paths and extract the pin number, kernel model drivers
 An app can send requests to the controller driver by sending [PWM IOCTLs](https://docs.microsoft.com/windows-hardware/drivers/spb/pulse-width-controller%20driver#pwm-ioctl-requests) requests.
 
 
-### <a href="" id="storage-1709"></a>Storage and File Systems
+### <a name="storage-1709"></a>Storage and File Systems
 
 In File Systems and Storage, the ufs.h header was added in Windows 10, version 1709 to provide additional support to Universal Flash Storage.
 
@@ -497,7 +497,7 @@ The following is a list of headers that were updated in Windows 10, version 1709
 * scsi.h
 * storport.h
 
-### <a href="" id="usb-1709"></a>USB
+### <a name="usb-1709"></a>USB
 
 This section describes the new features for USB in Windows 10, version 1709.
 
@@ -565,7 +565,7 @@ This section describes new and improved features for driver development in Windo
 [Back to Top](#top)
 
 
-### <a href="" id="audio-1703"></a>Audio
+### <a name="audio-1703"></a>Audio
 
 The following is a list of new topics for Audio driver development in Windows 10, version 1703:
 
@@ -575,7 +575,7 @@ The following is a list of new topics for Audio driver development in Windows 10
     - [KSPROPERTY_AUDIOMODULE_COMMAND](https://msdn.microsoft.com/library/windows/hardware/mt808141.aspx) property - Allows Audio Module clients to send custom commands to query and set parameters on Audio Modules.
     - [IPortClsNotifications](https://msdn.microsoft.com/library/windows/hardware/mt808133.aspx) - New Port Class Notifications that provide notification helpers to miniports, to support audio module communication.
 
-### <a href="" id="bluetooth-1703"></a>Bluetooth
+### <a name="bluetooth-1703"></a>Bluetooth
 
 The following is a list of updates to Bluetooth in Windows 10 version 1703:
 
@@ -585,11 +585,11 @@ The following is a list of updates to Bluetooth in Windows 10 version 1703:
 
 For more information about what's new for Bluetooth, see [Bluetooth](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/design/component-guidelines/bluetooth) and [Bluetooth LE pre-pairing](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/design/component-guidelines/bluetooth-prepairing).
 
-### <a href="" id="camera-1703"></a>Camera
+### <a name="camera-1703"></a>Camera
 
 The following is a list of updates to Camera driver development in Windows 10, version 1703:
 
-* [USB Video Class (VCC) driver implementation guide](https://msdn.microsoft.com/en-us/windows/hardware/drivers/stream/uvc-driver-implementation-checklist)
+* [USB Video Class (UVC) driver implementation guide](https://msdn.microsoft.com/en-us/windows/hardware/drivers/stream/uvc-driver-implementation-checklist)
 * [Microsoft extensions to USB Video Class 1.5 specification](https://msdn.microsoft.com/en-us/windows/hardware/drivers/stream/uvc-extensions-1-5)
 * [Device transform manager (DTM) events](https://msdn.microsoft.com/en-us/library/windows/hardware/mt797660)
 * [IMFDeviceTransform interface](https://msdn.microsoft.com/en-us/library/windows/hardware/mt797663)
@@ -597,12 +597,12 @@ The following is a list of updates to Camera driver development in Windows 10, v
     - [KSCATEGORY_SENSOR_CAMERA](https://msdn.microsoft.com/en-us/library/windows/hardware/mt796964)
     - [KSCATEGORY_VIDEO_CAMERA](https://msdn.microsoft.com/en-us/library/windows/hardware/mt796965)
 
-### <a href="" id="kernel-1703"></a>Windows kernel
+### <a name="kernel-1703"></a>Windows kernel
 
 
 [Windows Kernel-Mode Process and Thread Manager](https://msdn.microsoft.com/en-us/library/windows/hardware/ff565772(v=vs.85).aspx) - Starting in Windows 10 version 1703, the Windows Subsystem for Linux (WSL) enables a user to run native Linux ELF64 binaries on Windows, alongside other Windows applications. For more information about WSL architecture and the user-mode and kernel-mode components that are required to run the binaries, see the posts on the [Windows Subsystem for Linux](https://blogs.msdn.microsoft.com/wsl/) blog.
 
-### <a href="" id="mobilebroadband-1703"></a>Mobile broadband
+### <a name="mobilebroadband-1703"></a>Mobile broadband
 
 Updates to [**Mobile Broadband (MB)**](https://msdn.microsoft.com/windows/hardware/drivers/network/mobile-broadband--mb--design-guide) include improved [LTE attach features](https://msdn.microsoft.com/windows/hardware/drivers/network/mb-lte-attach-operations), support for [Multi-SIM Operations](https://msdn.microsoft.com/windows/hardware/drivers/network/mb-multi-sim-operations), support for [provisioning contexts](https://msdn.microsoft.com/windows/hardware/drivers/network/mb-provisioned-context-operations) into the modem, support for the [Specific Absorption Rate platform](https://msdn.microsoft.com/windows/hardware/drivers/network/mb-sar-platform-support), and support for [network blacklisting](https://msdn.microsoft.com/windows/hardware/drivers/network/mb-network-blacklist-operations).
 
@@ -612,13 +612,13 @@ Updates to [**Mobile Operator Scenarios (MOs)**](https://msdn.microsoft.com/wind
 * [Submitting the COSA/APN database update](https://msdn.microsoft.com/windows/hardware/drivers/mobilebroadband/submitting-the-apn-database-update)
 * [Testing your COSA/APN database submission](https://msdn.microsoft.com/windows/hardware/drivers/mobilebroadband/testing-your-apn-database-submission)
 
-### <a href="" id="networking-1703"></a>Networking
+### <a name="networking-1703"></a>Networking
 
 Updates to Networking driver development in Windows 10, version 1703 includes a new type of socket called Stream Sockets, which support Linux networking applications on Windows. See [**Winsock Kernel**](https://msdn.microsoft.com/windows/hardware/drivers/network/winsock-kernel-socket-categories) for more info. New functions and structures include [WskConnectEx](https://msdn.microsoft.com/library/windows/hardware/mt799884), [WskListen](https://msdn.microsoft.com/library/windows/hardware/mt799885), [WSK_CLIENT_STREAM_DISPATCH](https://msdn.microsoft.com/library/windows/hardware/mt799886), and [WSK_PROVIDER_STREAM_DISPATCH](https://msdn.microsoft.com/library/windows/hardware/mt799887)
 
 
 
-### <a href="" id="pos-1703"></a>POS
+### <a name="pos-1703"></a>POS
 
 The following is a list of new topics for POS in Windows 10, version 1703:
 
@@ -628,7 +628,7 @@ The following is a list of new topics for POS in Windows 10, version 1703:
 
 There is a new Gs1DWCode symbology to the [BarcodeSymbology enumeration](https://msdn.microsoft.com/en-us/library/windows/hardware/dn757474).
 
-### <a href="" id="usb-1703"></a>USB
+### <a name="usb-1703"></a>USB
 
 Windows 10 version 1703 provides a new class extension (UcmTcpciCx.sys) that supports the Universal Serial Bus Type-C Port Controller Interface Specification. A USB Type-C connector driver does not need to maintain any internal PD/Type-C state. The complexity of managing the USB Type-C connector and USB Power Delivery (PD) state machines is handled by the system. You only need to write a client driver that communicates hardware events to the system through the class extension. For more information, see [USB Type-C Controller Interface driver class extensions reference](https://msdn.microsoft.com/library/windows/hardware/mt805826).
 
@@ -649,7 +649,7 @@ The following is a list of new topics for Audio driver development in Windows 10
     * [**KSAUDIO\_PACKETSIZE\_CONSTRAINTS2**](https://msdn.microsoft.com/library/windows/hardware/mt761740)
 * [PKEY\_AudioEndpoint\_Default\_VolumeInDb](https://msdn.microsoft.com/library/windows/hardware/mt709031) &ndash; An INF key that provides the user a better experience when appropriate gain or attenuation is applied to the audio signal.
 
-### <a href="" id="camera-1607"></a>Camera
+### <a name="camera-1607"></a>Camera
 
 Camera driver development in Windows 10, version 1607 includes new and updated topics to support Windows Hello and face authentication:
 
@@ -658,7 +658,7 @@ Camera driver development in Windows 10, version 1607 includes new and updated t
 * [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEAUTH\_MODE**](https://msdn.microsoft.com/library/windows/hardware/mt742028)
 
 
-### <a href="" id="location-1607"></a>Location
+### <a name="location-1607"></a>Location
 
 Location driver development in Windows 10, version 1607 includes the following new GNSS Breadcrumb DDIs:
 
@@ -671,12 +671,12 @@ Location driver development in Windows 10, version 1607 includes the following n
 * [**IOCTL\_GNSS\_START\_BREADCRUMBING**](https://msdn.microsoft.com/library/windows/hardware/mt767993)
 * [**IOCTL\_GNSS\_STOP\_BREADCRUMBING**](https://msdn.microsoft.com/library/windows/hardware/mt767994)
 
-### <a href="" id="print-1607"></a>Print
+### <a name="print-1607"></a>Print
 
 Printer driver development in Windows 10, version 1607 includes [JSConstraintsDebug](https://msdn.microsoft.com/library/windows/hardware/mt740375), a command-line tool that provides debugging support for JavaScript Constraints while developing a V4 printer driver.
 
 
-### <a href="" id="wlan-1607"></a>WLAN
+### <a name="wlan-1607"></a>WLAN
 
 In Windows 10, version 1607, there are new and updated topics for WLAN Device Driver Interface (WDI) version 1.0.21. For details, see [WDI doc change history](https://msdn.microsoft.com/library/windows/hardware/mt691980).
 
@@ -694,7 +694,7 @@ In Windows 10, new [Microsoft-defined Bluetooth HCI extensions](https://msdn.mic
 
 Driver programming interfaces and in-box drivers for Simple Peripheral Bus (SPB) such as I2C and SPI, and GPIO are part of OneCoreUAP-based editions of Windows. Those drivers will run on both Windows 10 for desktop editions and Windows 10 Mobile, as well as other Windows 10 versions.
 
-### <a href="" id="camera-1507"></a>Camera
+### <a name="camera-1507"></a>Camera
 
 The camera driver DDIs have converged into a Universal Windows driver model, including new [camera DDIs](https://msdn.microsoft.com/library/windows/hardware/dn937081). Additional features include:
 
@@ -719,7 +719,7 @@ The [display driver model](https://msdn.microsoft.com/library/windows/hardware/f
 
 A new memory model is implemented that gives each GPU a per-process virtual address space. Direct addressing of video memory is still supported by WDDMv2 for graphics hardware that requires it, but that is considered a legacy case. IHVs are expected to develop new hardware that supports virtual addressing. Significant changes have been made to the DDI to enable this new memory model.
 
-### <a href="" id="human-interface-device"></a>Human Interface Device (HID)
+### <a name="human-interface-device"></a>Human Interface Device (HID)
 
 The new Virtual HID Framework (VHF) eliminates the need for writing a kernel-mode transport minidriver. The framework comprises a Microsoft-provided static library (Vhfkm.lib) that exposes programming elements used by your driver. It also includes a Microsoft-provided in-box driver (Vhf.sys) that enumerates one or more child devices and proceeds to build a virtual [Human Interface Device](https://msdn.microsoft.com/windows/hardware/drivers/hid/) (HID) tree.
 
@@ -728,21 +728,21 @@ The new Virtual HID Framework (VHF) eliminates the need for writing a kernel-mod
 * [Virtual HID Framework Methods](https://msdn.microsoft.com/library/windows/hardware/dn925053)
 * [Virtual HID Framework Structures](https://msdn.microsoft.com/library/windows/hardware/dn925054)
 
-### <a href="" id="location-1507"></a>Location
+### <a name="location-1507"></a>Location
 
 The Global Navigation Satellite System (GNSS) driver DDIs have converged to a [GNSS Universal Windows driver model](https://msdn.microsoft.com/library/windows/hardware/dn917815) (UMDF 2.0).
 
-### <a href="" id="near-field-communication"></a>Near Field Communication (NFC)
+### <a name="near-field-communication"></a>Near Field Communication (NFC)
 
 The [NFC DDIs](https://msdn.microsoft.com/library/windows/hardware/jj866056) have a new converged driver model to support mobile and desktop solutions.
 
 [NFC Class Extension](https://msdn.microsoft.com/library/windows/hardware/dn905534): A new NFC class extension driver is available. The NFC class extension driver implements all of the Windows-defined DDIs to interact with the NFC controller, secure elements, and remote RF endpoints.
 
-### <a href="" id="networking-1507"></a>Networking
+### <a name="networking-1507"></a>Networking
 
 The new [PacketDirect Provider Interface (PDPI)](https://msdn.microsoft.com/library/windows/hardware/dn931858) is available as an extension to the existing NDIS miniport driver model. The PDPI provides an I/O model that allows applications to manage their own buffers, poll processors, and directly manage sending and receiving packets over a miniport adapter. The combination of these capabilities allow the application to completely control its own contexts leading to a much higher packet-per-second (pps) ratio.
 
-### <a href="" id="print-1507"></a>Print
+### <a name="print-1507"></a>Print
 
 The print driver is updated with v4 Print driver improvements and changes to support wireless printing from mobile devices, as well as the following:
 
@@ -781,7 +781,7 @@ Here are the new features for USB in Windows 10. For more information, see [Win
 * Support for writing a driver for a host controller that is not xHCI specification-compliant or a virtual host controller. To write such a driver, see [Developing Windows drivers for USB host controllers](https://msdn.microsoft.com/library/windows/hardware/mt187811).
 * Support writing function controller driver by using USB function class extension (UFX). See [Developing Windows drivers for USB function controllers](https://msdn.microsoft.com/library/windows/hardware/mt187810).
 
-### <a href="" id="wlan-1507"></a>WLAN
+### <a name="wlan-1507"></a>WLAN
 
 WDI (WLAN Device Driver Interface) is a new [WLAN Universal Windows driver model](https://msdn.microsoft.com/library/windows/hardware/dn897672) that converges the WLAN drivers on Windows 10 for desktop editions and Windows 10 Mobile.
 
