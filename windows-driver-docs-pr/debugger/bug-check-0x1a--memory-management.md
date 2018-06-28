@@ -151,12 +151,16 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 <td align="left"><p>The MDL being created is flawed. This almost always means the driver calling <strong>MmProbeAndLockPages</strong> is at fault. Typically the driver is attempting to create a Write MDL when it is being asked to process a paging Read.</p></td>
 </tr>
 <tr class="even">
+<td align="left"><p>0x61949</p></td>
+<td align="left"><p>The IoPageFrameNode is null. Parameter 2 is PageFrameIndex.</p></td>
+</tr>
+<tr class="odd">
 <td align="left"><p>0x03030303</p></td>
 <td align="left"><p>The boot loader is broken. (This value applies only to Intel Itanium machines.)</p></td>
 </tr>
-<tr class="odd">
-<td align="left"><p>Other</p></td>
-<td align="left"><p>An unknown memory management error occurred.</p></td>
+<tr class="even">
+<td align="left"><p>0x03030308</p></td>
+<td align="left"><p>The range to remove (or truncate) is in use by the loader so it cannot be safely removed, so the system must issue a stop code.  Parameter 2 is HighestPhysicalPage.</p></td>
 </tr>
 </tbody>
 </table>
