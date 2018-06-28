@@ -19,11 +19,14 @@ There are several ways to run the DevFund and SysFund tests via the command-line
 
 Other methods for running the DevFund and SysFund tests include:
 
-- Hardware Lab Kit (HLK): The tests can be run from the command line on an [HLK client test machine]( [https://docs.microsoft.com/windows-hardware/test/hlk/testref/reproduce-the-test-failure-by-running-the-test-from-the-command-line](https://docs.microsoft.com/windows-hardware/test/hlk/testref/reproduce-the-test-failure-by-running-the-test-from-the-command-line))
-- Test machine &quot;provisioned&quot; through Visual Studio: [Running test via the command-line]( [https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1))
-- Enterprise Windows Driver Kit (EWDK- does not require Visual Studio): If Visual Studio is not installed and will not be used, [use the EWDK to run tests on the command-line]( [https://docs.microsoft.com/windows-hardware/drivers/devtest/configure-the-machine-for-testing](https://docs.microsoft.com/windows-hardware/drivers/devtest/configure-the-machine-for-testing))
+- Hardware Lab Kit (HLK): The tests can be run from the command line on an [HLK client test machine](https://docs.microsoft.com/windows-hardware/test/hlk/testref/reproduce-the-test-failure-by-running-the-test-from-the-command-line)
+
+- Test machine &quot;provisioned&quot; through Visual Studio: [Running test via the command-line](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1)
+
+- Enterprise Windows Driver Kit (EWDK- does not require Visual Studio): If Visual Studio is not installed and will not be used, [use the EWDK to run tests on the command-line](https://docs.microsoft.com/windows-hardware/drivers/devtest/configure-the-machine-for-testing)
 
 **Setup**
+
 
 Note that the following commands must be executed from an elevated/administrator command prompt because WDTF installation installs drivers on the system. The instructions below assume the system architecture is x64. The following steps may need to be adjusted for other architectures.
 
@@ -31,7 +34,7 @@ Note that the following commands must be executed from an elevated/administrator
 
 **Step 2** : The tests use the [TAEF](https://docs.microsoft.com/en-us/windows-hardware/drivers/taef/) service.  
 
-To install the TAEF service (Te.service), go to **%PROGRAMFILES(X86)%\Windows Kits\10\Testing\Runtimes\TAEF\x64** and run the following commands to get the service started:
+To install the TAEF service (Te.service), go to ```%PROGRAMFILES(X86)%\Windows Kits\10\Testing\Runtimes\TAEF\x64``` and run the following commands to get the service started:
 
 1. ```wex.services.exe /install:te.service``` (Verify te.service was installed successfully)
 
@@ -43,17 +46,24 @@ To install the TAEF service (Te.service), go to **%PROGRAMFILES(X86)%\Windows Ki
 
 Add this directory to the system PATH environment variable and restart the elevated command prompt.
 
-**Step 3** : Install [WDTF]( [https://docs.microsoft.com/en-us/windows-hardware/drivers/wdtf/](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdtf/)) by navigating to the location of the WDTF MSI (**%PROGRAMFILES(X86)%\Windows Kits\10\Testing\Runtimes\**) and installing the package for the desired architecture. Specify a location and name for the installation log file, **%USERPROFILE%\Desktop\WDTFInstall.log** in this example:
+**Step 3** : Install [WDTF](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdtf/) by navigating to the location of the WDTF MSI (```%PROGRAMFILES(X86)%\Windows Kits\10\Testing\Runtimes\```) and installing the package for the desired architecture. Specify a location and name for the installation log file, **%USERPROFILE%\Desktop\WDTFInstall.log** in this example:
 
+ 
+``` 
 cd %PROGRAMFILES(X86)%\Windows Kits\10\Testing\Runtimes\
+```
 
-msiexec /i &quot;Windows Driver Testing Framework (WDTF) Runtime Libraries-x64\_en-us.msi&quot; /l\* &quot;%USERPROFILE%\Desktop\WDTFInstall.log&quot;
+```
+msiexec /i "Windows Driver Testing Framework (WDTF) Runtime Libraries-x64\_en-us.msi" /l\* "%USERPROFILE%\Desktop\WDTFInstall.log"
+```
 
 The WDTF MSI installs WDTF to **%PROGRAMFILES%\Windows Kits\10\Testing\Runtimes\WDTF** since this example is using the 64-bit WDTF MSI even though the WDTF MSI was under **%PROGRAMFILES(X86)%**
+
 
 **Step 4** : Configure the machine for testing:
 
 - Configure the machine to collect full dumps or attach a kernel debugger.
+
 - Because the tests can potentially reboot the machine and need to control the sleep cycles, configure the machine to never sleep, never turn off display, and autologon to a test account (netplwiz.exe). Note that autologon should be used with caution.
 
 **Step 5** : Run the test.  The DevFund tests are located at **%PROGRAMFILES(X86)%\Windows Kits\10\Testing\Tests\Additional Tests\x64\DevFund**.
@@ -61,17 +71,20 @@ The WDTF MSI installs WDTF to **%PROGRAMFILES%\Windows Kits\10\Testing\Runtimes\
 The basic command for running a DevFund test is of the form:
 
 ```
-Te.exe Devfund\_&lt;testname&gt;.dll /name:&quot;&lt;test case name&gt;&quot; /p:&quot;DQ=DeviceID=&#39;&lt;Device Instance Path of device under test from Device Manager&gt;&#39;&quot; /RebootStateFile:state.xml
+Te.exe Devfund_<testname>.dll /name:"<test case name>" /p:"DQ=DeviceID='<Device Instance Path of device under test from Device Manager>'" /RebootStateFile:state.xml
 ```
 
 Where &lt;_test case name_&gt; is the name of the test in the test binary.
 
 The / **name** switch is optional. Since some test binaries contain multiple tests, the / **name** switch specifies which tests should be run. If unspecified, all tests contained in the test binary are executed in sequence. The list of tests in a test binary can be obtained by running the following command:
 
+```
 Te.exe Devfund\_&lt;testname&gt;.dll /list
+```
 
 For example, the Devfund\_PnPDTest.dll contains most of the PnP-related tests:
 
+```
 Te.exe Devfund\_PnPDTest\_WLK\_Functional.dll /list
 
 Test Authoring and Execution Framework v10.21 for x64
@@ -99,7 +112,11 @@ Test Authoring and Execution Framework v10.21 for x64
             PNPDTest::PNPDIFRemoveAndRescanParentDevice
 
             PNPDTest::DisableEnhancedDeviceTestingSupport
+```
+
 
 The command to run a single test from this test binary might look like this:
 
-c:\temp\Te.exe Devfund\_PnPDTest\_WLK\_Functional.dll /name:PNPDTest::PNPSurpriseRemoveAndRestartDevice\* /p:&quot;DQ=DeviceID=&#39;my\device\id&#39;&quot; /RebootStateFile:state.xml
+```
+c:\temp\Te.exe Devfund_PnPDTest_WLK_Functional.dll /name:PNPDTest::PNPSurpriseRemoveAndRestartDevice* /p:"DQ=DeviceID='my\device\id'" /RebootStateFile:state.xml
+```
