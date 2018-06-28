@@ -85,7 +85,7 @@
 ### [Configure the Machine for Testing](configure-the-machine-for-testing.md)
 ### [Run the Tests](run-the-tests.md)
 ## Additional Test Tools
-#### [IoSpy and IoAttack](iospy-and-ioattack.md)
+### [IoSpy and IoAttack](iospy-and-ioattack.md)
 #### [IoSpy](iospy.md)
 #### [IoAttack](ioattack.md)
 #### [How to Perform Fuzz Tests with IoSpy and IoAttack](how-to-perform-fuzz-tests-with-iospy-and-ioattack.md)
