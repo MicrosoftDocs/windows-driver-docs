@@ -4,7 +4,7 @@ description: The MEMORY_MANAGEMENT bug check has a value of 0x0000001A. This ind
 ms.assetid: 7d3ff54e-e61a-43fa-a378-fb8d32565586
 keywords: ["Bug Check 0x1A MEMORY_MANAGEMENT", "MEMORY_MANAGEMENT"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 06/28/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -93,6 +93,10 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 <td align="left"><p>0x3451</p></td>
 <td align="left"><p>The PTEs of a kernel thread stack that has been swapped out are corrupted.</p></td>
 </tr>
+<tr class="odd">
+<td align="left"><p>0x4477</p></td>
+<td align="left"><p>A driver tried to write to an unallocated address in the user space of the system process. Parameter 2 contains the address of the attempted write.</p></td>
+</tr>
 <tr class="even">
 <td align="left"><p>0x5003</p></td>
 <td align="left"><p>The working set free list is corrupt. This is probably a hardware error.</p></td>
@@ -101,9 +105,13 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 <td align="left"><p>0x5100</p></td>
 <td align="left"><p>The allocation bitmap is corrupt. The memory manager is about to overwrite a virtual address that was already in use.</p></td>
 </tr>
+<tr class="odd">
+<td align="left"><p>0x5200</p></td>
+<td align="left"><p>A page on a free pool SLIST has been corrupted. This can be the result of a write-after-free bug in a driver, or an overrun from a previous page. Parameter 2 contains the address of a free pool block. Parameter 4 contains the value that was expected to be at that address. Parameter 3 contains the actual value that was found.</p></td>
+</tr>
 <tr class="even">
 <td align="left"><p>0x8884</p></td>
-<td align="left"><p>(Windows 7only). Two pages on the standby list that were supposed to have identical page priority values do not, in fact, have identical page priority values. The differing values are captured in parameter 4.</p></td>
+<td align="left"><p>(Windows 7 only). Two pages on the standby list that were supposed to have identical page priority values do not, in fact, have identical page priority values. The differing values are captured in parameter 4.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x8888</p>
@@ -145,6 +153,10 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 <tr class="even">
 <td align="left"><p>0x61940</p></td>
 <td align="left"><p>A PDE has been unexpectedly invalidated.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x61941</p></td>
+<td align="left"><p>The paging hierarchy is corrupt. Parameter 2 is a pointer to the virtual address which caused the fault.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x61946</p></td>
