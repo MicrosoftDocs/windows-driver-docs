@@ -4,7 +4,7 @@ description: This topic covers how to enable postmortem debugging
 ms.assetid: ae116b60-fed2-4e1d-98a8-9fe83f460c50
 keywords: debugging. debug, Windbg, postmortem debugging, just-in-time debugging, JIT debugging, AeDebug registry key
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 06/20/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,6 +58,7 @@ Windows Error Reporting (WER) creates the postmortem debugger process using the 
 There are two primary registry values of interest, *Debugger* and *Auto*. The *Debugger* registry value specifies the command line for the postmortem debugger. The *Auto* registry value specifies if the postmortem debugger is automatically started, or if a confirmation message box is presented first.
 
 <span id="Debugger__REG_SZ_"></span><span id="debugger__reg_sz_"></span><span id="DEBUGGER__REG_SZ_"></span>**Debugger (REG\_SZ)**  
+
 This REG\_SZ value specifies the debugger that will handle postmortem debugging.
 
 The full path to the debugger must be listed unless the debugger is located in a directory that is in the default path.
@@ -81,14 +82,14 @@ When you manually edit the registry, do so very carefully, because improper chan
 
 **Example Command Line Usage**
 
-Many postmortem debuggers use a command line that includes -p and -e switches to indicate the parameters are a PID and Event (respectively). For example, installing WinDbg via windbg.exe -I creates the following values:
+Many postmortem debuggers use a command line that includes -p and -e switches to indicate the parameters are a PID and Event (respectively). For example, installing WinDbg via ```windbg.exe -I``` creates the following values:
 
 ```
 Debugger = "<Path>\WinDbg -p %ld -e %ld -g"
 Auto = 1
 ```
 
-There is flexibility in how the WER %ld %ld %p parameters can be used. For example. there is no requirement to specify any switches around or between the WER parameters. For example, installing [Windows Sysinternals ProcDump](https://technet.microsoft.com/sysinternals/dd996900.aspx) using procdump.exe -i creates the following values with no switches between the WER %ld %ld %p parameters:
+There is flexibility in how the WER %ld %ld %p parameters can be used. For example. there is no requirement to specify any switches around or between the WER parameters. For example, installing [Windows Sysinternals ProcDump](https://technet.microsoft.com/sysinternals/dd996900.aspx) using ```procdump.exe -i``` creates the following values with no switches between the WER %ld %ld %p parameters:
 
 ```
 Debugger = "<Path>\procdump.exe" -accepteula -j "c:\Dumps" %ld %ld %p
@@ -103,11 +104,13 @@ On a 64-bit platform, the Debugger (REG\_SZ) and Auto (REG\_SZ) registry values 
 
 On a 64-bit platform, use a 32-bit post-mortem debugger for 32-bit processes and a 64-bit debugger for 64-bit processes. This avoids a 64-bit debugger focusing on the WOW64 threads, instead of the 32-bit threads, in a 32-bit process.
 
-For many postmortem debuggers, including the Debugging Tools for Windows postmortem debuggers, this involves running the installation command twice; once with the x86 version and once with the x64 version. For example, to use WinDbg as the interactive postmortem debugger, the windbg.exe -I command would be run twice, once for each version.
+For many postmortem debuggers, including the Debugging Tools for Windows postmortem debuggers, this involves running the installation command twice; once with the x86 version and once with the x64 version. For example, to use WinDbg as the interactive postmortem debugger, the ```windbg.exe -I``` command would be run twice, once for each version.
 
 64-bit Installation:
 
-C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x64\\windbg.exe –I
+```
+C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\windbg.exe –I
+```
 
 This updates the registry key with these values.
 
@@ -118,7 +121,9 @@ Debugger = "C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\windbg.exe" -p 
 
 32-bit Installation:
 
-C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x86\\windbg.exe –I
+```
+C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\windbg.exe –I
+```
 
 This updates the registry key with these values.
 
@@ -126,6 +131,7 @@ This updates the registry key with these values.
 HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug
 Debugger = "C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\windbg.exe" -p %ld -e %ld –g
 ```
+
 
 ## <span id="Configuring"></span><span id="configuring"></span><span id="CONFIGURING"></span>Configuring Post Mortem Debuggers
 
@@ -136,14 +142,14 @@ The Debugging Tools for Windows debuggers all support being set as the postmorte
 
 **WinDbg**
 
-To set the postmortem debugger to WinDbg, run **windbg -I**. (The **I** must be capitalized.) This command will display a success or failure message after it is used. To work with both 32 and 64 bit applications, run the command for the both the 64 and 32 debuggers.
+To set the postmortem debugger to WinDbg, run ```windbg -I```. (The ```I``` must be capitalized.) This command will display a success or failure message after it is used. To work with both 32 and 64 bit applications, run the command for the both the 64 and 32 debuggers.
 
 ```
 C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\windbg.exe –I
 C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\windbg.exe –I
 ```
 
-This how the how the AeDebug registry entry will be configured when **windbg -I** is run.
+This is how the AeDebug registry entry will be configured when ```windbg -I``` is run.
 
 ```
 Debugger = "<Path>\WinDbg -p %ld -e %ld -g"
@@ -221,7 +227,7 @@ Like the [**.dump**](-dump--create-dump-file-.md) WinDbg command, ProcDump is ab
 
 ProcDump exits when the dump file capture completes, WER then reports the failure and the faulting process is terminated.
 
-Use procdump -i to install procdump and -u to uninstall ProcDump for both the 32 and 64 bit post mortem debugging.
+Use ```procdump -i``` to install procdump and -u to uninstall ProcDump for both the 32 and 64 bit post mortem debugging.
 
 ```
 <Path>\procdump.exe -i

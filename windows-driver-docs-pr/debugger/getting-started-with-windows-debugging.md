@@ -3,7 +3,7 @@ title: Getting Started with Windows Debugging
 description: This section covers how to get started with Windows Debugging. If your goal is to use the debugger to analyze a crash dump, see Crash dump analysis using the Windows debuggers (WinDbg).
 ms.assetid: 4981928E-A33D-4F60-AAA0-124C360B7E03
 ms.author: domars
-ms.date: 05/03/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,9 +43,9 @@ WinDbg works well in most situations, but there are times when you may want to u
 
 4. Determine how you will connect the target and host system.
 Typically, an Ethernet network connection is used to connect the target and host system. If you are doing early bring up work, or don't have an Ethernet connection on the device, other network connection options are available. For more information, see these topics:
+   -   [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)
    -   [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
-   -   [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md)
-   -   [Setting Up Kernel-Mode Debugging using Serial over USB Manually](setting-up-kernel-mode-debugging-using-serial-over-usb-manually-.md)
+   -   [Setting Up KDNET Network Kernel Debugging Manually](setting-up-a-network-debugging-connection.md)
    -   [Setting Up Network Debugging of a Virtual Machine Host](setting-up-network-debugging-of-a-virtual-machine-host.md)
 
 5. Choose either the 32-bit or 64-bit debugging tools.

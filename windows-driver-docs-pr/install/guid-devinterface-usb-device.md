@@ -50,6 +50,8 @@ The system-supplied USB hub driver registers instances of GUID_DEVINTERFACE_USB_
 
 The Microsoft Windows Driver Kit (WDK) includes the [USBVIEW sample application](http://go.microsoft.com/fwlink/p/?linkid=256205). The USBVIEW sample uses the obsolete identifier [**GUID_CLASS_USB_DEVICE**](guid-class-usb-device.md) to register to be notified of the arrival of instances of this device interface class.
 
+You must include initguid.h before including any header that declares a GUID by using the DEFINE_GUID macro.
+
 Requirements
 ------------
 
