@@ -30,7 +30,7 @@ Other methods for running the DevFund and SysFund tests include:
 
 Note that the following commands must be executed from an elevated/administrator command prompt because WDTF installation installs drivers on the system. The instructions below assume the system architecture is x64. The following steps may need to be adjusted for other architectures.
 
-**Step 1** : [Install Visual Studio and the Windows Driver Kit (WDK)](https://docs.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk))
+**Step 1** : [Install Visual Studio and the Windows Driver Kit (WDK)](https://docs.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk)
 
 **Step 2** : The tests use the [TAEF](https://docs.microsoft.com/en-us/windows-hardware/drivers/taef/) service.  
 
@@ -79,7 +79,7 @@ Where &lt;_test case name_&gt; is the name of the test in the test binary.
 The / **name** switch is optional. Since some test binaries contain multiple tests, the / **name** switch specifies which tests should be run. If unspecified, all tests contained in the test binary are executed in sequence. The list of tests in a test binary can be obtained by running the following command:
 
 ```
-Te.exe Devfund\_&lt;testname&gt;.dll /list
+Te.exe Devfund\<testname>.dll /list
 ```
 
 For example, the Devfund\_PnPDTest.dll contains most of the PnP-related tests:
