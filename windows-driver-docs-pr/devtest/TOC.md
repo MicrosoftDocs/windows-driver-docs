@@ -1070,7 +1070,7 @@
 ## [Kernel Mode Performance Monitoring](kernel-mode-performance-monitoring.md)
 ### [About Kernel Mode Performance Counters](about-kernel-mode-performance-counters.md)
 ### [Using Kernel Mode Performance Counters](using-kernel-mode-performance-counters.md)
-# Additional Driver Tools
+# [Additional Driver Tools](additional-driver-tools.md)
 ## [Tools for Building Drivers](tools-for-building-drivers.md)
 ### [WDK and Visual Studio build environment](wdk-and-visual-studio-build-environment.md)
 #### [MSBuild primer for WDK developers](msbuild-primer-for-wdk-developers.md)
