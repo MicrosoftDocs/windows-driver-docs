@@ -3,7 +3,7 @@ title: BCDEdit /set
 description: The BCDEdit /set command sets a boot entry option value in the Windows boot configuration data store (BCD) for Windows 7, Windows Server 2008, Windows 8, Windows 8.1,Windows 10, Windows Server 2012, and Windows Server 2012 R2.
 ms.assetid: e66d9c55-9a44-4de2-a1a4-634c7d550735
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 06/29/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -137,19 +137,8 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > <a href="" id="hypervisorbusparams-bus-device-function"></a>**hypervisorbusparams** *Bus***.***Device***.***Function*  
 > Defines the PCI bus, device, and function numbers of the debugging device. For example, 1.5.0 describes the debugging device on bus 1, device 5, function 0. Use this option when you are using either a 1394 cable, or a USB 2.0 or USB 3.0 debug cable for debugging.
 >
-> > [!NOTE]
-> > The option is available starting in Windows 8 and Windows Server 2012.
->
->  
->
 > <a href="" id="hypervisordebug---on---off--"></a>**hypervisordebug** \[ **On** | **Off** \]  
-> Controls whether the hypervisor debugger is enabled. For information about hypervisor debugging, see [Attaching to a Target Computer Running Hyper-V](https://msdn.microsoft.com/library/windows/hardware/ff538138).
->
-> <a href="" id="hypervisordebugport--port-"></a>**hypervisordebugport** *port*   
-> Specifies the port to use when debugging hypervisor over a serial connection. For information about hypervisor debugging, see [Attaching to a Target Computer Running Hyper-V](https://msdn.microsoft.com/library/windows/hardware/ff538138).
->
-> <a href="" id="hypervisordebugtype---serial---1394----net--"></a>**hypervisordebugtype** \[ **Serial** | **1394** | **Net** \]  
-> Specifies the type of debugging connection to use for hypervisor. For information about debugging Hyper-V, see [Attaching to a Target Computer Running Hyper-V](https://msdn.microsoft.com/library/windows/hardware/ff538138).
+> Controls whether the hypervisor debugger is enabled. 
 >
 > <a href="" id="serial"></a>**Serial**  
 > Specifies a serial connection for debugging. When the **Serial** option is specified, you also set the **hypervisordebugport** and **hypervisorbaudrate** options.

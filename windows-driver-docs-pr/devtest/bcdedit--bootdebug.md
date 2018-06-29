@@ -28,20 +28,22 @@ The **/bootdebug** boot option enables or disables boot debugging of the current
 
 ``` syntax
     bcdedit /bootdebug [{ID}] { on | off } 
-
    
 ```
 
 Parameters
 ----------
 
-<a href="" id="--------id-------"></a> **{***ID***}**   
+**{***ID***}**   
+
 The **{***ID***}** is the GUID that is associated with the boot entry. If you do not specify an **{***ID***}**, the command modifies the operating system that is currently active. If a boot entry is specified, the GUID associated with the boot entry must be enclosed in braces **{}**.
 
-<a href="" id="-------on------"></a> **on**   
+**on**   
+
 Enables boot debugging of the specified boot entry. If a boot entry is not specified, boot debugging is enabled for the current operating system.
 
-<a href="" id="-------off------"></a> **off**   
+**off**   
+
 Disables boot debugging of the specified boot entry. If a boot entry is not specified, boot debugging is disabled for the current operating system.
 
 ### Comments
