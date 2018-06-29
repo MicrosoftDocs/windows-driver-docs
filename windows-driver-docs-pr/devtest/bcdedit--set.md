@@ -3,7 +3,7 @@ title: BCDEdit /set
 description: The BCDEdit /set command sets a boot entry option value in the Windows boot configuration data store (BCD) for Windows 7, Windows Server 2008, Windows 8, Windows 8.1,Windows 10, Windows Server 2012, and Windows Server 2012 R2.
 ms.assetid: e66d9c55-9a44-4de2-a1a4-634c7d550735
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 06/29/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -131,27 +131,16 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 > For more information about using this option, see [Boot Parameters to Test Drivers for Multiple Processor Group Support](https://msdn.microsoft.com/library/windows/hardware/ff542298).
 >
-> <a href="" id="-------hal--------file------"></a> **hal** *file*   
+>  **hal** *file*   
 > Directs the operating system loader to load an alternate HAL file. The specified file must be located in the %SystemRoot%\\system32 directory.
 >
-> <a href="" id="hypervisorbusparams-bus-device-function"></a>**hypervisorbusparams** *Bus***.***Device***.***Function*  
+> **hypervisorbusparams** *Bus***.***Device***.***Function*  
 > Defines the PCI bus, device, and function numbers of the debugging device. For example, 1.5.0 describes the debugging device on bus 1, device 5, function 0. Use this option when you are using either a 1394 cable, or a USB 2.0 or USB 3.0 debug cable for debugging.
 >
-> > [!NOTE]
-> > The option is available starting in Windows 8 and Windows Server 2012.
+> **hypervisordebug** \[ **On** | **Off** \]  
+> Controls whether the hypervisor debugger is enabled. 
 >
->  
->
-> <a href="" id="hypervisordebug---on---off--"></a>**hypervisordebug** \[ **On** | **Off** \]  
-> Controls whether the hypervisor debugger is enabled. For information about hypervisor debugging, see [Attaching to a Target Computer Running Hyper-V](https://msdn.microsoft.com/library/windows/hardware/ff538138).
->
-> <a href="" id="hypervisordebugport--port-"></a>**hypervisordebugport** *port*   
-> Specifies the port to use when debugging hypervisor over a serial connection. For information about hypervisor debugging, see [Attaching to a Target Computer Running Hyper-V](https://msdn.microsoft.com/library/windows/hardware/ff538138).
->
-> <a href="" id="hypervisordebugtype---serial---1394----net--"></a>**hypervisordebugtype** \[ **Serial** | **1394** | **Net** \]  
-> Specifies the type of debugging connection to use for hypervisor. For information about debugging Hyper-V, see [Attaching to a Target Computer Running Hyper-V](https://msdn.microsoft.com/library/windows/hardware/ff538138).
->
-> <a href="" id="serial"></a>**Serial**  
+> **Serial**  
 > Specifies a serial connection for debugging. When the **Serial** option is specified, you also set the **hypervisordebugport** and **hypervisorbaudrate** options.
 >
 > ``` syntax
@@ -162,27 +151,22 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > bcdedit /set hypervisorlaunchtype auto
 > ```
 >
-> <a href="" id="1394"></a>**1394**  
-> Specifies an IEEE 1394 (FireWire) connection for debugging. When this option is used, the **hypervisorchannel** option should also be set. For information about debugging Hyper-V, see [Attaching to a Target Computer Running Hyper-V](https://msdn.microsoft.com/library/windows/hardware/ff538138).
+> **1394**  
+> Specifies an IEEE 1394 (FireWire) connection for debugging. When this option is used, the **hypervisorchannel** option should also be set. 
 >
-> <a href="" id="net"></a>**Net**  
-> Specifies an Ethernet network connection for debugging. When this option is used, the **hypervisorhostip** option must be also be set. For information about debugging Hyper-V, see [Attaching to a Target Computer Running Hyper-V](https://msdn.microsoft.com/library/windows/hardware/ff538138).
+> **Net**  
+> Specifies an Ethernet network connection for debugging. When this option is used, the **hypervisorhostip** option must be also be set. 
 >
-> <a href="" id="hypervisorbaudrate----9600---19200----38400---57600---115200--"></a>**hypervisorbaudrate** \[ **9600** | **19200** | **38400** | **57600** | **115200** \]  
-> Controls the baud rate to use for debugging hypervisor over a serial connection. For information about debugging Hyper-V, see [Attaching to a Target Computer Running Hyper-V](https://msdn.microsoft.com/library/windows/hardware/ff538138).
 >
-> <a href="" id="hypervisorchannel---channel---"></a>**hypervisorchannel** \[ *channel* \]  
-> Specifies the channel to use for debugging hypervisor over 1394. This option is only used when the **hypervisordebugtype** is 1394. Specifies the 1394 channel to use. The value for *channel* must be a decimal integer between 0 and 62, inclusive. For information about debugging Hyper-V, see [Attaching to a Target Computer Running Hyper-V](https://msdn.microsoft.com/library/windows/hardware/ff538138).
->
-> <a href="" id="hypervisorhostip--ip-address--"></a>**hypervisorhostip** *IP address*   
-> (Only used when the **hypervisordebugtype** is **Net**.) For debugging hypervisor over a network connection, specifies the IPv4 address of the host debugger. For information about debugging Hyper-V, see [Attaching to a Target Computer Running Hyper-V](https://msdn.microsoft.com/library/windows/hardware/ff538138).
+> **hypervisorhostip** *IP address*   
+> (Only used when the **hypervisordebugtype** is **Net**.) For debugging hypervisor over a network connection, specifies the IPv4 address of the host debugger. For information about debugging Hyper-V, see [Attaching to a Target Computer Running Hyper-V].
 >
 > > [!NOTE]
 > > The option is available starting in Windows 8 and Windows Server 2012.
 >
 >  
 >
-> <a href="" id="hypervisorhostport---port---"></a>**hypervisorhostport** \[ *port* \]  
+> **hypervisorhostport** \[ *port* \]  
 > (Only used when the **hypervisordebugtype** is **Net**.) For network debugging, specifies the port to communicate with on the host debugger. Should be 49152 or higher.
 >
 > > [!NOTE]
@@ -190,7 +174,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 >  
 >
-> <a href="" id="hypervisordhcp-----yes---no----"></a>**hypervisordhcp** \[ **yes** | **no** \]  
+> **hypervisordhcp** \[ **yes** | **no** \]  
 > Controls use of DHCP by the network debugger used with the hypervisor. Setting this to **no** forces the use of Automatic Private IP Addressing (APIPA) to obtain a local link IP address.
 >
 > > [!NOTE]
@@ -198,7 +182,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 >  
 >
-> <a href="" id="hypervisoriommupolicy-----default---enable------disable-"></a>**hypervisoriommupolicy** \[ **default** | **enable** | **disable**\]  
+> **hypervisoriommupolicy** \[ **default** | **enable** | **disable**\]  
 > Controls whether the hypervisor uses an Input Output Memory Management Unit (IOMMU).
 >
 > > [!NOTE]
@@ -206,13 +190,13 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 >  
 >
-> <a href="" id="hypervisorlaunchtype---off---auto--"></a>**hypervisorlaunchtype** \[ **Off** | **Auto** \]  
+> **hypervisorlaunchtype** \[ **Off** | **Auto** \]  
 > Controls the hypervisor launch options. If you are setting up a debugger to debug Hyper-V on a target computer, set this option to **Auto** on the target computer. For more information, see [Attaching to a Target Computer Running Hyper-V](https://msdn.microsoft.com/library/windows/hardware/ff538138). Information about [Hyper-V]( http://go.microsoft.com/fwlink/p/?linkid=271817) technology is available on Microsoft TechNet web site.
 >
-> <a href="" id="hypervisorloadoptions-noforcesnoop---yes---no--"></a>**hypervisorloadoptions NOFORCESNOOP** \[ **Yes** | **No** \]  
+> **hypervisorloadoptions NOFORCESNOOP** \[ **Yes** | **No** \]  
 > Specifies whether the hypervisor should enforce snoop control on system IOMMUs.
 >
-> <a href="" id="hypervisornumproc-number"></a>**hypervisornumproc** *number*  
+> **hypervisornumproc** *number*  
 > Specifies the total number of logical processors that can be started in the hypervisor.
 >
 > > [!NOTE]
@@ -220,7 +204,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 >  
 >
-> <a href="" id="hypervisorrootproc-number"></a>**hypervisorrootproc** *number*  
+> **hypervisorrootproc** *number*  
 > Specifies the maximum number of virtual processors in the root partition and limits the number of post-split Non-Uniform Memory Architecture (NUMA) nodes which can have logical processors started in the hypervisor.
 >
 > > [!NOTE]
@@ -228,7 +212,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 >  
 >
-> <a href="" id="hypervisorrootprocpernode-number"></a>**hypervisorrootprocpernode** *number*  
+> **hypervisorrootprocpernode** *number*  
 > Specifies the total number of virtual processors in the root partition that can be started within a pre-split Non-Uniform Memory Architecture (NUMA) node.
 >
 > > [!NOTE]
@@ -236,7 +220,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 >  
 >
-> <a href="" id="hypervisorusekey----key--"></a>**hypervisorusekey** \[ *key* \]  
+> **hypervisorusekey** \[ *key* \]  
 > (Only used when the **hypervisordebugtype** is **Net**.) For network debugging specifies the key with which to encrypt the connection. \[0-9\] and \[a-z\] allowed only.
 >
 > > [!NOTE]
@@ -244,7 +228,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 >  
 >
-> <a href="" id="hypervisoruselargevtlb----yes---no-"></a>**hypervisoruselargevtlb** \[ **yes** | **no**   
+> **hypervisoruselargevtlb** \[ **yes** | **no**   
 > Increases virtual Translation Lookaside Buffer (TLB) size.
 >
 > > [!NOTE]
@@ -252,7 +236,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 >  
 >
-> <a href="" id="-------increaseuserva--------megabytes------"></a> **increaseuserva** *Megabytes*   
+> **increaseuserva** *Megabytes*   
 > Specifies the amount of memory, in megabytes, for user-mode virtual address space.
 >
 > On 32-bit editions of Windows, applications have 4 gigabyte (GB) of virtual address space available. The virtual address space is divided so that 2 GB is available to the application and the other 2 GB is available only to the system.
@@ -261,10 +245,10 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 > See [4-Gigabyte Tuning (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb613473) for additional information about this feature.
 >
-> <a href="" id="-------kernel--------file-------"></a> **kernel** *file*   
+> **kernel** *file*   
 > Directs the operating system loader to load an alternate kernel. The specified file must be located in the %SystemRoot%\\system32 directory.
 >
-> <a href="" id="-------loadoptions-busparams-bus-device-function-------"></a> **loadoptions busparams=***Bus.Device.Function*   
+> **loadoptions busparams=***Bus.Device.Function*   
 > Specifies the target controller when multiple controllers exist. This syntax is appropriate when using either a 1394 cable or a USB 2.0 debug cable for debugging. *Bus* specifies the bus number, *Device* specifies the device number, and *Function* specifies the function number.
 >
 > > [!NOTE]
@@ -272,7 +256,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 >  
 >
-> <a href="" id="-------maxgroup---on---off--"></a> **maxgroup** \[ **on** | **off** \]  
+>  **maxgroup** \[ **on** | **off** \]  
 > Maximizes the number of groups created in a processor group configuration.
 >
 > The **maxgroup on** setting assigns NUMA nodes to groups in a manner that maximizes the number of groups for a particular computer. The number of groups created is either the number of NUMA nodes the computer has, or the maximum number of groups supported by this version of Windows, whichever is smaller. The default behavior (**maxgroup off)** is to pack the NUMA nodes tightly into as few groups as possible.
@@ -283,36 +267,36 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 > For more information about using this option, see [Boot Parameters to Test Drivers for Multiple Processor Group Support](https://msdn.microsoft.com/library/windows/hardware/ff542298).
 >
-> <a href="" id="nointegritychecks---on---off---"></a>**nointegritychecks** \[ **on** | **off** \]   
+> **nointegritychecks** \[ **on** | **off** \]   
 > Disables integrity checks. Cannot be set when secure boot is enabled. This value is ignored by Windows 7 and Windows 8.
 >
-> <a href="" id="-------nolowmem---on---off---"></a> **nolowmem** \[ **on** | **off** \]   
+>  **nolowmem** \[ **on** | **off** \]   
 > Controls the use of low memory. When **nolowmem on** is specified, this option loads the operating system, device drivers, and all applications into addresses above the 4 GB boundary, and directs Windows to allocate all memory pools at addresses above the 4 GB boundary. Note that the **nolowmem** option is ignored in Windows 8, Windows Server 2012, and later versions of Windows.
 >
-> <a href="" id="-------novesa----on---off---"></a> **novesa** \[ **on** | **off** \]   
+> **novesa** \[ **on** | **off** \]   
 > Indicates whether the VGA driver should avoid VESA BIOS calls. The option is ignored in Windows 8 and Windows Server 2012.
 >
-> <a href="" id="-------novga----on---off---"></a> **novga** \[ **on** | **off** \]   
+>  **novga** \[ **on** | **off** \]   
 > Disables the use of VGA modes in the OS. The option is available starting in Windows 8 and Windows Server 2012.
 >
-> <a href="" id="-------nx--optin--optout---alwayson--alwaysoff-"></a> **nx** \[**Optin |OptOut | AlwaysOn |AlwaysOff**\]  
+>  **nx** \[**Optin |OptOut | AlwaysOn |AlwaysOff**\]  
 > Enables, disables, and configures Data Execution Prevention (DEP), a set of hardware and software technologies designed to prevent harmful code from running in protected memory locations. For information about how to use the Control Panel to change the DEP settings, see the [Change Data Execution Prevention settings](http://go.microsoft.com/fwlink/p/?linkid=101144) page on the Windows Help and How-to website.
 >
-> <a href="" id="optin"></a>**Optin**  
+> **Optin**  
 > Enables DEP only for operating system components, including the Windows kernel and drivers. Administrators can enable DEP on selected executable files by using the Application Compatibility Toolkit (ACT).
 >
-> <a href="" id="optout"></a>**Optout**  
+> **Optout**  
 > Enables DEP for the operating system and all processes, including the Windows kernel and drivers. However, administrators can disable DEP on selected executable files by using **System** in **Control Panel**.
 >
-> <a href="" id="alwayson"></a>**AlwaysOn**  
+> **AlwaysOn**  
 > Enables DEP for the operating system and all processes, including the Windows kernel and drivers. All attempts to disable DEP are ignored.
 >
-> <a href="" id="alwaysoff"></a>**AlwaysOff**  
+> **AlwaysOff**  
 > Disables DEP. Attempts to enable DEP selectively are ignored.
 >
 > On Windows Vista, this parameter also disables Physical Address Extension (PAE). This parameter does not disable PAE on Windows Server 2008.
 >
-> <a href="" id="-------onecpu---on---off---"></a> **onecpu** \[ **on** | **off** \]  
+> **onecpu** \[ **on** | **off** \]  
 > Forces only the boot CPU to be used in a computer that has more than one logical processor.
 >
 > For example, the following command configures the current operating system loader to use one processor.
@@ -321,7 +305,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > bcdedit /set onecpu on 
 > ```
 >
-> <a href="" id="onetimeadvancedoptions---on---off---"></a>**onetimeadvancedoptions** \[ **on** | **off** \]  
+> **onetimeadvancedoptions** \[ **on** | **off** \]  
 > Controls whether the system boots to the legacy menu (F8 menu) on the next boot.
 >
 > > [!NOTE]
@@ -333,7 +317,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > bcdedit /set {current} onetimeadvancedoptions on 
 > ```
 >
-> <a href="" id="-------pae---default---forceenable---forcedisable--"></a> **pae** \[ **Default** | **ForceEnable** | **ForceDisable** \]  
+> **pae** \[ **Default** | **ForceEnable** | **ForceDisable** \]  
 > Enables or disables Physical Address Extension (PAE). When PAE is enabled, the system loads the PAE version of the Windows kernel.
 >
 > The **pae** parameter is valid only on boot entries for 32-bit versions of Windows that run on computers with x86-based and x64-based processors. On 32-bit versions of Windows (prior to Windows 8) , PAE is disabled by default. However, Windows automatically enables PAE when the computer is configured for hot-add memory devices in memory ranges beyond the 4 GB region, as defined by the Static Resource Affinity Table (SRAT). *Hot-add memory* supports memory devices that you can add without rebooting or turning off the computer. In this case, because PAE must be enabled when the system starts, it is enabled automatically so that the system can immediately address extended memory that is added between restarts. Hot-add memory is supported only on Windows Server 2008, Datacenter Edition; Windows Server 2008 for Itanium-Based Systems; and on the datacenter and enterprise editions of all later versions of Windows Server. Moreover, for versions of Windows prior to Windows Server 2008, hot-add memory is supported only on computers with an ACPI BIOS, an x86 processor, and specialized hardware. For Windows Server 2008 and later versions of Windows Server, it is supported for all processor architectures.
@@ -342,10 +326,10 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 > For more information about using the **pae** parameter and the other parameters that affect PAE configuration, see [Boot Parameters to Configure DEP and PAE](https://msdn.microsoft.com/library/windows/hardware/ff542275).
 >
-> <a href="" id="pciexpress---default---forcedisable-"></a>**pciexpress** \[ **default** | **forcedisable**\]  
+> **pciexpress** \[ **default** | **forcedisable**\]  
 > Enables or disables PCI Express functionality. If the computer platform supports the PCI Express features and the ACPI \_OSC method grants control of the features to the operating system, Windows enables the advanced features through the PCI Express Native Control feature (this is the default). Use the **forcedisable** option to override the advanced PCI Express features and use legacy PCI Express behavior. For more information, see [Enabling PCI Express Native Control in Windows](http://msdn.microsoft.com/library/windows/hardware/gg487424.aspx).
 >
-> <a href="" id="-------quietboot---on---off--"></a> **quietboot** \[ **on** | **off** \]  
+> **quietboot** \[ **on** | **off** \]  
 > Controls the display of a high-resolution bitmap in place of the Windows boot screen display and animation. In operating systems prior to Windows Vista, the **/noguiboot** serves a similar function.
 >
 > > [!NOTE]
@@ -353,7 +337,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 >  
 >
-> <a href="" id="-------removememory--------megabytes------"></a> **removememory** *Megabytes*   
+> **removememory** *Megabytes*   
 > Removes memory from the total available memory that the operating system can use.
 >
 > For example, the following command removes 256 MB of memory from the total available to the operating system associated with the specified boot entry.
@@ -362,10 +346,10 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > bcdedit /set {49916baf-0e08-11db-9af4-000bdbd316a0} removememory 256 
 > ```
 >
-> <a href="" id="-------sos---on---off--"></a> **sos** \[ **on** | **off** \]  
+> **sos** \[ **on** | **off** \]  
 > Controls the display of the names of the drivers as they load during the boot process. Use **sos on** to display the names. Use **sos off** to suppress the display.
 >
-> <a href="" id="-------testsigning---on---off--"></a> **testsigning** \[ **on** | **off** \]  
+>  **testsigning** \[ **on** | **off** \]  
 > Controls whether Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2008, or Windows Vista will load any type of test-signed kernel-mode code. This option is not set by default, which means test-signed kernel-mode drivers on 64-bit versions of Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2008, and Windows Vista will not load by default. After you run the BCDEdit command, restart the computer so that the change takes effect. For more information, see [Introduction to Test-Signing](https://msdn.microsoft.com/library/windows/hardware/ff547660).
 >
 > > [!NOTE]
@@ -373,10 +357,10 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 >  
 >
-> <a href="" id="tpmbootentropy----default---forceenable------forcedisable-"></a>**tpmbootentropy** \[ **default** | **ForceEnable** | **ForceDisable**\]  
+> **tpmbootentropy** \[ **default** | **ForceEnable** | **ForceDisable**\]  
 > Determines whether entropy is gathered from the trusted platform module (TPM) to help seed the random number generator in the operating system.
 >
-> <a href="" id="-------truncatememory--------address------"></a> **truncatememory** *address*   
+> **truncatememory** *address*   
 > Limits the amount of physical memory available to Windows. When you use this option, Windows ignores all memory at or above the specified physical address. Specify the *address* in bytes.
 >
 > For example, the following command sets the physical address limit at 1 GB. You can specify the address in decimal (1073741824) or hexadecimal (0x40000000).
@@ -385,7 +369,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > bcdedit /set {49916baf-0e08-11db-9af4-000bdbd316a0} truncatememory 0x40000000 
 > ```
 >
-> <a href="" id="tscsyncpolicy----default---legacy---enhanced--"></a>**tscsyncpolicy** \[ **Default** | **Legacy** | **Enhanced** \]  
+> **tscsyncpolicy** \[ **Default** | **Legacy** | **Enhanced** \]  
 > Controls the times stamp counter synchronization policy. This option should only be used for debugging.
 >
 > > [!NOTE]
@@ -393,10 +377,10 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 >  
 >
-> <a href="" id="-------usefirmwarepcisettings---yes---no--"></a> **usefirmwarepcisettings** \[ **yes** | **no** \]  
+>  **usefirmwarepcisettings** \[ **yes** | **no** \]  
 > Enables or disables the use of BIOS-configured peripheral component interconnect (PCI) resources.
 >
-> <a href="" id="-------useplatformclock---yes---no--"></a> **useplatformclock** \[ **yes** | **no** \]  
+>  **useplatformclock** \[ **yes** | **no** \]  
 > Forces the use of the platform clock as the system's performance counter.
 >
 > > [!NOTE]
@@ -404,10 +388,10 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 >  
 >
-> <a href="" id="-------uselegacyapicmode---yes---no--"></a> **uselegacyapicmode** \[ **yes** | **no** \]  
+>  **uselegacyapicmode** \[ **yes** | **no** \]  
 > Used to force legacy APIC mode, even if the processors and chipset support extended APIC mode.
 >
-> <a href="" id="-------useplatformtick---yes---no--"></a> **useplatformtick** \[ **yes** | **no** \]  
+>  **useplatformtick** \[ **yes** | **no** \]  
 > Forces the clock to be backed by a platform source, no synthetic timers are allowed. The option is available starting in Windows 8 and Windows Server 2012.
 >
 > > [!NOTE]
@@ -415,13 +399,13 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 >  
 >
-> <a href="" id="-------vga----on---off--"></a> **vga** \[ **on** | **off** \]  
+> **vga** \[ **on** | **off** \]  
 > Forces the use of a safe resolution. For example, on a computer running Windows 7, this option forces the use of 640x480 resolution. On a computer running Windows 8, this option forces the use of 800x600 resolution if it is available, or 640x480 if not.
 >
-> <a href="" id="xsavedisable---0---1--"></a>**xsavedisable** \[ **0** | **1** \]  
+> **xsavedisable** \[ **0** | **1** \]  
 > When set to a value other than zero (0), disables XSAVE processor functionality in the kernel.
 >
-> <a href="" id="x2apicpolicy---enable---disable---"></a>**x2apicpolicy** \[ **enable** | **disable** \]  
+> **x2apicpolicy** \[ **enable** | **disable** \]  
 > Enables or disables the use of extended APIC mode, if supported. The system defaults to using extended APIC mode if it is available.
 >
 > ### Comments
@@ -471,8 +455,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 >  
 >
-> [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bdevtest\devtest%5D:%20BCDEdit%20/set%20%20RELEASE:%20%281/17/2018%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
->
+
 
 
 
