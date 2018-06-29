@@ -6,6 +6,31 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "windows-driver-docs-pr/dashboard/host-a-remote-debugging-session.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/known-issues-with-the-remote-debugging-client.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/take-part-in-a-remote-debugging-session.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/join-a-remote-debugging-session.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/prepare-for-remote-debugging.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/index",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/dashboard/before-you-sign-in.md",
       "redirect_URL": "/windows-hardware/drivers/dashboard/get-started-with-the-hardware-dashboard",
       "redirect_document_id": false
