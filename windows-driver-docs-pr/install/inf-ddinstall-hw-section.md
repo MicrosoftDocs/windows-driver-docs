@@ -40,7 +40,7 @@ ms.technology: windows-devices
 
 
 <a href="" id="addreg-add-registry-section--add-registry-section----"></a>**AddReg=***add-registry-section*\[**,***add-registry-section*\]...  
-References one or more INF-writer-defined *add-registry-sections* elsewhere in the INF file for the devices covered by this *DDInstall***.HW** section. The *add-registry-section* typically installs filters and/or stores per-device information in the registry. An **HKR** specification in such an *add-registry-section* specifies the device's [*hardware key*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hardware-key).
+References one or more INF-writer-defined *add-registry-sections* elsewhere in the INF file for the devices covered by this *DDInstall***.HW** section. The *add-registry-section* typically installs filters and/or stores per-device information in the registry. An **HKR** specification in such an *add-registry-section* specifies the device's *hardware key*, a device-specific registry subkey that contains information about the device. A hardware key is also called a device key. For more info, see [Registry Trees and Keys for Devices and Drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/registry-trees-and-keys). A driver package can add settings via an INF by using an **HKR** specification in an add-registry-section referenced by a [DDInstall.HW section](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-ddinstall-hw-section). 
 
 For more information, see [**INF AddReg Directive**](inf-addreg-directive.md).
 
