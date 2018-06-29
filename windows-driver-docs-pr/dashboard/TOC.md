@@ -60,3 +60,5 @@
 #### [Service icon requirements](service-icon-requirements.md)
 #### [Service number](service-number.md)
 #### [Trusted certificates](trusted-certificates.md)
+## [Windows Device Experience List](windows-device-experience-list.md)
+## [Windows Certified Products List](windows-certified-products-list.md)
