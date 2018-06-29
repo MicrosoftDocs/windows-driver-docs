@@ -85,11 +85,11 @@ Te.exe Devfund\<testname>.dll /list
 For example, the Devfund\_PnPDTest.dll contains most of the PnP-related tests:
 
 ```
-Te.exe Devfund\_PnPDTest\_WLK\_Functional.dll /list
+Te.exe Devfund_PnPDTest_WLK_Functional.dll /list
 
 Test Authoring and Execution Framework v10.21 for x64
 
-    Devfund\_PnPDTest\_WLK\_Functional.dll
+    Devfund_PnPDTest_WLK_Functional.dll
 
         PNPDTest
 
