@@ -23,7 +23,7 @@ ms.technology: windows-devices
 ## <span id="in_this_section"></span>In this section
 
 -   [Device Fundamentals Tests](device-fundamentals-tests.md)
--   [Data-driven System Fundamentals tests](data-driven-system-fundamentals-test)
+-   [Data-driven System Fundamentals tests](data-driven-system-fundamentals-tests.md)
 -   [Windows Device Console (Devcon.exe)](devcon.md)
 -   [PnPUtil](pnputil.md)
 

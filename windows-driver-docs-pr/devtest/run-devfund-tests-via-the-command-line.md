@@ -1,9 +1,9 @@
 ---
 title: How to run the DevFund Tests via the command-line
-description: Overview of the System Fundamentals tests and associated utilities for Windows drivers
+description:The WDK provides the test binaries and tools which make it easy to run the Device Fundamentals tests from the command-line.
 keywords:
 - DevFund tests
-- data-driven tests
+- command-line
 ms.author: windowsdriverdev
 ms.date: 06/28/2018
 ms.topic: article

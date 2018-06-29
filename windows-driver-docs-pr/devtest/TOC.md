@@ -2,6 +2,7 @@
 # [Index of Windows Driver Kit Tools](index-of-windows-driver-kit-tools.md)
 # [Tools for Testing Drivers](tools-for-testing-drivers.md)
 ## [Device Fundamentals Tests](device-fundamentals-tests.md)
+### [How to run the DevFund Tests via the command-line](run-devfund-tests-via-the-command-line.md)
 ### [CHAOS Tests (Device Fundamentals)](chaos-tests--device-fundamentals-.md)
 ### [Coverage Tests (Device Fundamentals)](coverage-tests--device-fundamentals-.md)
 ### [CPUStress Tests (Device Fundamentals)](cpustress-tests--device-fundamentals-.md)
