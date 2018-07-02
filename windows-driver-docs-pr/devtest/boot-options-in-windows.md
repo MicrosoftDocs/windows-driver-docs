@@ -18,7 +18,7 @@ keywords:
 - boot loaders WDK
 - firmware-independent boot options WDK
 ms.author: windowsdriverdev
-ms.date: 06/29/2017
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,7 +28,7 @@ ms.technology: windows-devices
 
 The Windows boot loader architecture includes a firmware-independent boot configuration and storage system called *Boot Configuration Data* (BCD) and a boot option editing tool, BCDEdit (BCDEdit.exe). During development, you can use BCDEdit to configure boot options for debugging, testing, and troubleshooting your driver on computers running Windows 10, Windows 8, Windows Server 2012, Windows 7, and Windows Server 2008.
 
-**Important**  Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using BCDEdit could render your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings.
+[!IMPORTANT] Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using BCDEdit could render your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings.
 
 ## Boot Loading Architecture
 
@@ -46,7 +46,7 @@ When a computer with multiple boot entries includes at least one entry for Windo
 
 The boot loaders reside in the root directory of each Windows partition. Once selected, the boot loaders take over the boot process and load the operating system in accordance with the selected boot parameters.
 
-## <span id="boot_configuration_data"></span><span id="BOOT_CONFIGURATION_DATA"></span>Boot Configuration Data
+## Boot Configuration Data
 
 Windows boot options are stored in the Boot Configuration Data (BCD) store on BIOS-based and EFI-based computers.
 
@@ -60,7 +60,7 @@ BCD is easy to use. The BCD store, with its familiar object-and-element architec
 
 BCD includes its own set of boot options. Most of the Windows boot options that were used before BCD, such as **/debug**, **/maxmem**, and **/pae**, have been preserved; however, in some cases, the names of the options might have changed to better suite their function. For more information about these boot options, see [BCD Boot Options Reference](https://msdn.microsoft.com/library/windows/hardware/ff542205).
 
-## <span id="multiboot_scenarios"></span><span id="MULTIBOOT_SCENARIOS"></span>Multiboot Scenarios
+## Multiboot Scenarios
 
 If multiple Windows operating systems are installed on the computer, the Windows Boot Manager works with the booting components for older ("legacy") versions of Windows to interact with the user and start the selected operating system.
 
