@@ -11,7 +11,7 @@ keywords:
 - boot entry backups WDK
 - identifying backup files for boot entries
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -27,7 +27,7 @@ Use the **nvrboot d** (display) command or the **bootcfg** or **bootcfg query** 
 
 In the following example, the boot loader for a boot entry is stored on the EFI partition in the \\Microsoft\\WINNT50 subdirectory. The backup copy of the boot entry for this installation is a file named Boot*xxxx* in the same subdirectory.
 
-**Note**   The **Boot entry ID** field in Bootcfg and the boot entry number in Nvrboot do not display the EFI boot entry ID. The Bootcfg and Nvrboot IDs are line numbers that represent the order of the boot entry in the **Boot Entries** section and change when the entries are reordered.
+[!NOTE] The **Boot entry ID** field in Bootcfg and the boot entry number in Nvrboot do not display the EFI boot entry ID. The Bootcfg and Nvrboot IDs are line numbers that represent the order of the boot entry in the **Boot Entries** section and change when the entries are reordered.
 
 As shown in the following Bootcfg sample, the path to the boot loader file appears in the **BootFilePath** field.
 
