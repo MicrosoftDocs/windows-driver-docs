@@ -13,7 +13,7 @@ keywords:
 - boot entries WDK
 - Bootcfg tool
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -133,6 +133,6 @@ Enterprise</code></pre></td>
 
 In addition, there is an important element of an EFI boot entry that Bootcfg does not display, the *EFI boot entry ID*. The EFI boot entry is a unique identifier for an EFI boot entry. This identifier is assigned when the boot entry is created, and it does not change. It represents the boot entry in several lists, including the *BootOrder* array, and it is the name of the directory on disk in which the system stores data related to the boot entry, including backup copies of the boot entry. An EFI boot entry ID has the format, Boot*xxxx*, where *xxxx* is a hexadecimal number that reflects the order in which the boot entries are created.
 
-**Note**   The **Boot entry ID** field in Bootcfg and the boot entry number in Nvrboot do not display the EFI boot entry ID. The Bootcfg and Nvrboot IDs are line numbers that represent the order of the boot entry in the **Boot Entries** section and change when the entries are reordered.
+[!NOTE] The **Boot entry ID** field in Bootcfg and the boot entry number in Nvrboot do not display the EFI boot entry ID. The Bootcfg and Nvrboot IDs are line numbers that represent the order of the boot entry in the **Boot Entries** section and change when the entries are reordered.
 
 For a detailed description of boot options on Itanium-based systems, see the Extensible Firmware Interface Specification. You can download a copy of the specification from the [Intel Extensible Firmware Interface](http://go.microsoft.com/fwlink/p/?linkid=10596) website.
