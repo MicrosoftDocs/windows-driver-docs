@@ -12,7 +12,7 @@ keywords:
 - boot entry parameters WDK
 - boot parameters WDK
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -75,6 +75,3 @@ Each boot entry includes the following elements:
 
 You can have multiple boot entries for the same operating system, each with a different set of boot parameters. Windows creates a standard boot entry when you install the operating system, and you can create additional, customized entries for an operating system by editing Boot.ini.
 
-Comment
-
-This document describes aspects of Boot.ini that are of special interest to driver developers and testers. For a more general description of Boot.ini, including a list of commonly used Boot.ini parameters, see "Reviewing and Correcting Boot.ini Settings on x86-based Systems" in the [Microsoft Windows XP Professional Resource Kit Documentation](http://go.microsoft.com/fwlink/p/?linkid=10004).
