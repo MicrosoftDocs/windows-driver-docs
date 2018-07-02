@@ -14,9 +14,6 @@ ms.technology: windows-devices
 
 After you submit your product for the Windows Hardware Compatibility Program for Windows 10 (or the certification program for previous Windows versions), you can manage it through the dashboard.
 
--   [Find a hardware submission](#find-a-hardware-submission)
--   [Update an HCK hardware submission using the Driver Update Acceptable (DUA) process](#update-an-hck-hardware-submission-using-the-driver-update-acceptable-dua-process)
-
 ## Find a hardware submission
 
 1.  Sign in to the Windows Hardware Dev Center dashboard.
@@ -83,54 +80,7 @@ After you submit your product for the Windows Hardware Compatibility Program for
 
 ## Update an HCK hardware submission using the Driver Update Acceptable (DUA) process
 
-1.  [Find the hardware submission](#find-a-hardware-submission) that you want to update.
-
-2.  Select **Download DUA shell**, and then select **Save**. 
-    > [!NOTE]
-    > * DUA is only available for driver submissions that include a driver.
-    > * To access your driver package's INF files, download the **signed driver package**
-
-    ![screenshot of the dua download button](images/drivers-dua-upload-buttons.png)
-
-3.  Launch HCK Studio.
-
-4.  Select **Package**, and then select **Browse** to open the downloaded DUA shell package.
-
-5.  Select **Open as Driver Update package**.
-
-6.  Select **OK**.
-
-7.  Select the **Package** tab.
-
-8.  Right-click the appropriate driver folder and then select **Replace Driver**.
-
-9.  Find and select the folder where your valid driver update files are located.
-    > [!IMPORTANT]
-    > Invalid update file formats include:
-    >    * .exe
-    >    * .dll
-    >    * .sys
-
-    > Typical update file formats include, but are not limited to:
-    >    * .inf
-    >    * .txt,
-    >    * .pdf
-    
-    
- 
-10. Select **Create Package**.
-
-11. Select "Use the certificate store" to sign your driver package package.
-
-12. Go to your hardware submission and select **Upload new** in the **Packages and signing properties** section.
-
-    ![screenshot of the upload new button](images/drivers-dua-upload-buttons.png)
-
-13. Choose a name for your updated driver package. Shipping Labels are tied to a specific driver package, so it is important to choose a unique name that you will recognize later.
-
-14. Upload your updated driver package.
-
-15. You can monitor the progress of your driver update with the progress tracker at the top of the page. Once all steps show a green check, the update is complete.
+See [Create a driver only update package](https://docs.microsoft.com/windows-hardware/test/hlk/user/create-a-driver-only-update-package).
 
 ## Registering an ExtensionId
 
