@@ -10,7 +10,7 @@ keywords:
 - saving boot options
 - boot options WDK , backing up
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -19,24 +19,8 @@ ms.technology: windows-devices
 # Backing Up the Boot.ini File
 
 
-\[This topic describes the boot options supported in Windows XP and Windows Server 2003. If you are changing boot options for Windows 8, Windows Server 2012, Windows 7, Windows Server 2008, or Windows Vista, see [Boot Options in Windows Vista and Later](boot-options-in-windows-vista-and-later.md).\]
+[!IMPORTANT] This topic describes the boot options supported in Windows XP and Windows Server 2003. If you are changing boot options for modern versions of Windows, see [Boot Options in Windows Vista and Later](boot-options-in-windows-vista-and-later.md).
 
-When you install or upgrade an NT-based Windows operating system prior to Windows Vista, the Windows installer creates a new *Boot.ini* file for the computer. The new file retains some, but not all, of the changes you might have made to the file.
+When you install or upgrade to Windows XP, Windows Server 2003 or one their predecessors, the Windows installer creates a new *Boot.ini* file for the computer. The new file retains some, but not all, of the changes you might have made to the file. Thus, to preserve an edited *Boot.ini* file, make a backup copy before upgrading or installing an operating system. After an update completes, you can replace the new file with your backup copy. If you have installed a new operating system, you can copy customized entries from your backup copy and then paste them into the new *Boot.ini* file.
 
-To preserve an edited *Boot.ini* file, make a backup copy before upgrading or installing an operating system.
-
-## <span id="ddk_backing_up_the_boot_ini_file_tools"></span><span id="DDK_BACKING_UP_THE_BOOT_INI_FILE_TOOLS"></span>
-
-
-After an update completes, you can replace the new file with your backup copy. If you have installed a new operating system, you can copy customized entries from your backup copy and then paste them into the new *Boot.ini* file.
-
-An update or installation restores the default security attributes on the *Boot.ini* file, including the read-only attribute. To edit the file, use the Bootcfg command or change the file attributes. For more information, see [Editing the Boot.ini File](editing-the-boot-ini-file.md).
-
- 
-
- 
-
-
-
-
-
+An update or installation restores the default security attributes on Boot.ini, including the read-only attribute. To edit the file, use the Bootcfg command or change the file attributes. For more information, see [Editing the Boot.ini File](editing-the-boot-ini-file.md).

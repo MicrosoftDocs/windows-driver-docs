@@ -11,16 +11,13 @@ keywords:
 - boot options WDK , backing up
 - Nvrboot tool
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
 # Backing up Boot Options in EFI
-
-
-## <span id="ddk_backing_up_boot_options_in_efi_tools"></span><span id="DDK_BACKING_UP_BOOT_OPTIONS_IN_EFI_TOOLS"></span>
 
 
 When you install a 64-bit version of Windows, Setup automatically creates a boot entry for the installation and saves a backup copy of the boot entry to a binary file named Boot*xxxx*, where Boot*xxxx* is the NVRAM ID for the boot entry. Setup stores the boot entry backup copy in a new directory on the EFI partition, along with the EFI boot loader for the new installation.By default, the installation directory is in the \\EFI\\Microsoft\\ subdirectory.
@@ -31,13 +28,10 @@ To save backup copies of boot entries that you create and edit, and to save extr
 
 This section includes:
 
-[Exporting and Importing Boot Entries in EFI](exporting-and-importing-boot-entries-in-efi.md)
-
-[Identifying Backup Files for Existing Boot Entries](identifying-backup-files-for-existing-boot-entries.md)
-
-[Identifying Backup Files for Deleted Boot Entries](identifying-backup-files-for-deleted-boot-entries.md)
-
-[Recognizing Unusable Boot Entry Backup Files](recognizing-unusable-boot-entry-backup-files.md)
+- [Exporting and Importing Boot Entries in EFI](exporting-and-importing-boot-entries-in-efi.md)
+- [Identifying Backup Files for Existing Boot Entries](identifying-backup-files-for-existing-boot-entries.md)
+- [Identifying Backup Files for Deleted Boot Entries](identifying-backup-files-for-deleted-boot-entries.md)
+- [Recognizing Unusable Boot Entry Backup Files](recognizing-unusable-boot-entry-backup-files.md)
 
  
 
