@@ -19,6 +19,8 @@ The section includes the following topics about the operation of the HID class d
 -   Binding the operation of the HID class driver to a HID minidriver
 -   Communicating with a HID minidriver
 
+See [Creating WDF HID minidrivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/creating-umdf-hid-minidrivers) for more information.
+
 ### Operational features of the HID class driver
 
 The HID class driver does the following:

@@ -3,7 +3,7 @@ title: BCDEdit /dbgsettings
 description: The /dbgsettings option sets or displays the current global debugger settings for the computer.
 ms.assetid: df2fe55c-2752-4e0c-a4c0-004235b85e22
 ms.author: windowsdriverdev
-ms.date: 06/29/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ Specifies that the target machine and the host machine will use an Ethernet netw
 
 -   [Setting Up Kernel-Mode Debugging over a Network Cable Manually](https://msdn.microsoft.com/library/windows/hardware/hh439346)
 
-<a href="" id="-------local------"></a> **LOCAL**   
+**LOCAL**   
 The **LOCAL** option sets the global debugging option to local debugging. This is kernel-mode debugging on a single computer. In other words, the debugger runs on the same computer that is being debugged. With local debugging you can examine state, but not break into kernel mode processes that would cause the OS to stop running.
 
 For information on setting up local kernel mode debugging manually, see [Setting Up Local Kernel Debugging of a Single Computer Manually](https://msdn.microsoft.com/library/windows/hardware/dn553412).
