@@ -47,7 +47,7 @@ To allow the kdnet utility to update BCDEdit boot settings, temporarily disable 
 
 4. Click **OK** to save the settings.
 
-Re-enable secure boot when VM debugging is complete and appropriately manage the test VM, when this security feature is disabled.
+You can re-enable Secure Boot once you’re done debugging and you’ve disabled kernel debugging on the target VM.  
 
 
 **4. Install the Debugging Tools for Windows**
