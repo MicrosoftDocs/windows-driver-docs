@@ -11,7 +11,7 @@ keywords:
 - boot entry backups WDK
 - identifying backup files for boot entries
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
