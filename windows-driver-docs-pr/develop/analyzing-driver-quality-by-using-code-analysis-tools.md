@@ -3,7 +3,7 @@ ms.assetid: 0FEF982B-7FEE-47C8-A906-F881E9D8F3D7
 title: Analyzing a Driver Using Code Analysis and Verification Tools
 description: Code analysis and verification tools can help improve the stability and reliability of your driver by systematically analyzing the source code.
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -11,7 +11,7 @@ ms.technology: windows-devices
 
 # Analyzing a Driver Using Code Analysis and Verification Tools
 
-Code analysis and verification tools can help improve the stability and reliability of your driver by systematically analyzing the source code. The code analysis and verification tools can detect errors that are missed by the compiler and by conventional runtime testing. Additionally they can determine whether the driver correctly interacts with the Windows operating system kernel. Using Microsoft Visual Studio Ultimate 2012 and the Windows Driver Kit (WDK), you can configure the code analysis and verification tools to run as part of the build process, or you can schedule the tools to analyze your driver at a predetermined time.
+Code analysis and verification tools can help improve the stability and reliability of your driver by systematically analyzing the source code. The code analysis and verification tools can detect errors that are missed by the compiler and by conventional runtime testing. Additionally they can determine whether the driver correctly interacts with the Windows operating system kernel. Using Microsoft Visual Studio and the Windows Driver Kit (WDK), you can configure the code analysis and verification tools to run as part of the build process, or you can schedule the tools to analyze your driver at a predetermined time.
 
 ## <span id="C_C___Code_Analysis_Tool_for_Windows_Drivers"></span><span id="c_c___code_analysis_tool_for_windows_drivers"></span><span id="C_C___CODE_ANALYSIS_TOOL_FOR_WINDOWS_DRIVERS"></span>C/C++ Code Analysis Tool for Windows Drivers
 
@@ -44,7 +44,6 @@ For information about Static Driver Verifier, see:
 -   Overview: [Static Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff552808)
 -   How to: [Using Static Driver Verifier to find defects in drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454281)
 
-**Note**  In previous versions of the WDK, Static Driver Verifier was a stand-alone tool that you launched from a WDK Build Environment window.
 
  
 
