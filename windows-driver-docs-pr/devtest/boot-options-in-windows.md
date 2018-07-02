@@ -18,7 +18,7 @@ keywords:
 - boot loaders WDK
 - firmware-independent boot options WDK
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 06/29/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -82,14 +82,15 @@ To use BCDEdit, you must be a member of the Administrators group on the computer
 
 You can also use the System Configuration utility (MSConfig.exe) to change boot settings.
 
-To change boot options programmatically in Windows, use the Windows Management Instrument (WMI) interface to boot options. This BCD WMI interface is the best method to programmatically change the boot options. For information about the BCD WMI interface, see [Boot Configuration Data](http://go.microsoft.com/fwlink/p/?linkid=74322) in the Windows SDK documentation.
+To change boot options programmatically in Windows, use the Windows Management Instrument (WMI) interface to boot options. This BCD WMI interface is the best method to programmatically change the boot options. For information about the BCD WMI interface, see [Boot Configuration Data WMI Provider](https://msdn.microsoft.com/library/windows/desktop/bb986746(v=vs.85).aspx) in the Windows SDK documentation.
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 - [BCD Boot Options Reference](https://msdn.microsoft.com/library/windows/hardware/ff542205)
 - [Editing Boot Options](editing-boot-options.md)
 - [Using Boot Parameters](using-boot-parameters.md)
 - [Boot Configuration Data](http://go.microsoft.com/fwlink/p/?linkid=74322)
+
 
  
 
