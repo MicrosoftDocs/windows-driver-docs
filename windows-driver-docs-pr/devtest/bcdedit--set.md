@@ -3,7 +3,7 @@ title: BCDEdit /set
 description: The BCDEdit /set command sets a boot entry option value in the Windows boot configuration data store (BCD) for Windows 7, Windows Server 2008, Windows 8, Windows 8.1,Windows 10, Windows Server 2012, and Windows Server 2012 R2.
 ms.assetid: e66d9c55-9a44-4de2-a1a4-634c7d550735
 ms.author: windowsdriverdev
-ms.date: 06/29/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,14 +45,14 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 >  
 >
-> <a href="" id="datatype-value"></a>*datatype* *value*  
+>*datatype* *value*  
 >
 > The following list shows some useful *datatypes* and their associated *values*.
 >
-> <a href="" id="-------bootlog----yes---no--"></a> **bootlog** \[ **yes** | **no** \]  
+>  **bootlog** \[ **yes** | **no** \]  
 > Enables the system initialization log. This log is stored in the Ntbtlog.txt file in the %WINDIR% directory. It includes a list of loaded and unloaded drivers in text format.
 >
-> <a href="" id="-------bootmenupolicy----legacy---standard--"></a> **bootmenupolicy** \[ **Legacy** | **Standard** \]  
+>  **bootmenupolicy** \[ **Legacy** | **Standard** \]  
 > Defines the type of boot menu the system will use. ForWindows 10, Windows 8.1, Windows 8 and Windows RT the default is **Standard**. For Windows Server 2012 R2, Windows Server 2012, the default is **Legacy**. When **Legacy** is selected, the Advanced options menu (**F8**) is available. When **Standard** is selected, the boot menu will appear only under certain conditions: for example, if there is a startup failure, if you are booting up from a repair disk or installation media, if you have configured multiple boot entries, or if you manually configured the computer to use Advanced startup. When **Standard** is selected, the **F8** key is ignored during boot. Windows 8 PCs start up quickly so there isn't enough time to press **F8**. For more information, see [Windows Startup Settings (including safe mode)](http://go.microsoft.com/fwlink/p/?linkid=313921).
 >
 > > [!NOTE]
@@ -60,34 +60,34 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 >  
 >
-> <a href="" id="-------bootstatuspolicy--policy-"></a> **bootstatuspolicy** *policy*   
+>  **bootstatuspolicy** *policy*   
 > Controls the boot status policy. The boot status *policy* can be one of the following:
 >
-> <a href="" id="displayallfailures"></a>DisplayAllFailures  
+> DisplayAllFailures  
 > Displays all errors if there is a failed boot, failed shutdown, or failed checkpoint. The computer will fail over to the Windows recovery environment on reboot.
 >
-> <a href="" id="ignoreallfailures"></a>IgnoreAllFailures  
+> IgnoreAllFailures  
 > Ignore errors if there is a failed boot, failed shutdown, or failed checkpoint. The computer will attempt to boot normally after an error occurs.
 >
-> <a href="" id="ignoreshutdownfailures"></a>IgnoreShutdownFailures  
+> IgnoreShutdownFailures  
 > Only ignore errors if there is a failed shutdown. If there is a failed shutdown, the computer does not automatically fail over to the Windows recovery environment on reboot. This is the default setting for Windows 8.
 >
-> <a href="" id="ignorebootfailures"></a>IgnoreBootFailures  
+> IgnoreBootFailures  
 > Only ignore errors if there is a failed boot. If there is a failed boot, the computer does not automatically fail over to the Windows recovery environment on reboot.
 >
-> <a href="" id="ignorecheckpointfailures"></a>IgnoreCheckpointFailures  
+> IgnoreCheckpointFailures  
 > Only ignore errors if there is a failed checkpoint. If there is a failed checkpoint, the computer does not automatically fail over to the Windows recovery environment on reboot. The option is available starting with Windows 8 and Windows Server 2012.
 >
-> <a href="" id="displayshutdownfailures"></a>DisplayShutdownFailures  
+> DisplayShutdownFailures  
 > Displays errors if there is a failed shutdown. If there is a failed shutdown, the computer will fail over to the Windows recovery environment on reboot. Ignores boot failures and failed checkpoints. The option is available starting with Windows 8 and Windows Server 2012.
 >
-> <a href="" id="displaybootfailures"></a>DisplayBootFailures  
+> >DisplayBootFailures  
 > Displays errors if there is a failed boot. If there is a failed boot, the computer will fail over to the Windows recovery environment on reboot. Ignores shutdown failures and failed checkpoints. The option is available starting with Windows 8 and Windows Server 2012.
 >
-> <a href="" id="displaycheckpointfailures"></a>DisplayCheckpointFailures  
+> DisplayCheckpointFailures  
 > Displays errors if there is a failed checkpoint. If there is a failed checkpoint, the computer will fail over to the Windows recovery environment on reboot. Ignores boot and shutdown failures. The option is available starting with Windows 8 and Windows Server 2012.
 >
-> <a href="" id="bootux---disabled---basic----standard--"></a>**bootux** \[ **disabled** | **basic** | **standard** \]  
+> **bootux** \[ **disabled** | **basic** | **standard** \]  
 > Controls the boot screen animation. The possible values are disabled, basic, and standard.
 >
 > > [!NOTE]
@@ -103,7 +103,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 >  
 >
-> <a href="" id="disableelamdrivers---yes---no--"></a>**disableelamdrivers** \[ **yes** | **no** \]  
+> **disableelamdrivers** \[ **yes** | **no** \]  
 > Controls the loading of Early Launch Antimalware (ELAM) drivers. The OS loader removes this entry for security reasons. This option can only be triggered by using the F8 menu. Someone must be physically present (at the computer) to trigger this option.
 >
 > > [!NOTE]
@@ -111,7 +111,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 >  
 >
-> <a href="" id="forcelegacyplatform---yes---no--"></a>**forcelegacyplatform** \[ **yes** | **no** \]  
+> **forcelegacyplatform** \[ **yes** | **no** \]  
 > Forces the OS to assume the presence of legacy PC devices like CMOS and keyboard controllers.
 >
 > > [!NOTE]
@@ -119,12 +119,12 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 >  
 >
-> <a href="" id="-------groupsize--------maxsize------"></a> **groupsize** *maxsize*   
+>  **groupsize** *maxsize*   
 > Sets the maximum number of logical processors in a single processor group, where *maxsize* is any power of 2 between 1 and 64 inclusive. By default, processor groups have a maximum size of 64 logical processors. You can use this boot configuration setting to override the size and makeup of a computer's processor groups for testing purposes. [Processor groups](http://go.microsoft.com/fwlink/p/?linkid=155063) provide support for computers with greater than 64 logical processors. This boot option is available on 64-bit versions of Windows 7 and Windows Server 2008 R2 and later versions. This boot option has no effect on the 32-bit versions of Windows 7.
 >
 > Use the **groupsize** option if you want to force multiple groups and the computer has 64 or fewer active logical processors. For more information about using this option, see [Boot Parameters to Test Drivers for Multiple Processor Group Support](https://msdn.microsoft.com/library/windows/hardware/ff542298).
 >
-> <a href="" id="-------groupaware---on---off--"></a> **groupaware** \[ **on** | **off** \]  
+> **groupaware** \[ **on** | **off** \]  
 > Forces drivers to be aware of multiple groups in a multiple processor group environment. Use this option to help expose cross-group incompatibilities in drivers and components. [Processor groups](http://go.microsoft.com/fwlink/p/?linkid=155063) provide support for computers with greater than 64 logical processors. This boot option is available on 64-bit versions of Windows 7 and Windows Server 2008 R2 and later versions. This boot option has no effect on the 32-bit versions of Windows 7. You can use the **groupaware** option and the **groupsize** option to test driver compatibility to function with multiple groups when computer has 64 or fewer active logical processors.
 >
 > The **groupaware on** setting ensures that processes are started in a group other than group 0. This increases the chances of cross-group interaction between drivers and components. The option also modifies the behavior of the legacy functions, **KeSetTargetProcessorDpc**, **KeSetSystemAffinityThreadEx**, and **KeRevertToUserAffinityThreadEx**, so that they always operate on the highest numbered group that contains active logical processors. Drivers that call any of these legacy functions should be changed to call their group-aware counterparts (**KeSetTargetProcessorDpcEx**, **KeSetSystemGroupAffinityThread**, and **KeRevertToUserGroupAffinityThread**).
