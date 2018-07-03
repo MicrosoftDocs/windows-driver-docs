@@ -26,13 +26,13 @@ If you select the second checkbox, the driver is classified as **Automatic** (fo
 
 ## Automatic updates
 
-During a scheduled update or when a user clicks **Check for updates** in the **Updates & Security** settings menu, Windows Update distributes only the highest-ranking **Automatic** drivers that apply to the system's devices.  Windows Update does not distribute **Optional** drivers in these scenarios.
+During a scheduled update or when a user clicks **Check for updates** in the **Updates & Security** settings menu, Windows Update distributes only the highest-ranking **Automatic** drivers that apply to the system's devices.  Windows Update will only distribute **Optional** drivers in these scenarios if a device has no applicable drivers available in the Driver Store ("Driver Not Found") or if the only locally available driver is *generic*, i.e. a system-provided driver that provides only basic device functionality.
 
 ## Device plug-in ("Plug and Play")
 
 When a device is connected to a Windows system, [Plug and Play (PnP)](../kernel/introduction-to-plug-and-play.md) looks for a compatible driver already available locally on the system. If one exists, Windows installs it on the device. Otherwise, Windows looks on Windows Update for a compatible driver, first matching the highest ranking **Automatic** driver on Windows Update. If no **Automatic** driver is available for the device, Windows proceeds to the highest ranking **Optional** driver.
 
-The same logic applies when a device has no applicable drivers available in the Driver Store ("Driver Not Found") or if the only locally available driver is *generic*, i.e. a system-provided driver that provides only basic device functionality.
+The same logic applies when a plugged-in device has no applicable drivers available in the Driver Store ("Driver Not Found") or if the only locally available driver is *generic*.
 
 ## Device manager
 
@@ -45,11 +45,11 @@ Here's a table that summarizes the information above.
 The first column indicates which of the two checkboxes in the **Driver promotions** section are checked. 
 The first checkbox (**Automatically deliver and install this driver during Windows Upgrade**) is indicated by Dynamic Update, and the second (**Automatically deliver and install this driver on all applicable systems**) is indicated by Automatic. Windows Update is abbreviated WU.
 
-|Driver promotions boxes checked|Windows Update (scheduled or via Updates & Security|OS Upgrades|Connect New Device, no non-generic driver available locally|Device Manager|
+|Driver promotions boxes checked|Windows Update (scheduled or via Updates & Security|OS Upgrades|Connect New Device|Device Manager|
 |-|-|-|-|-|
 |Automatic only|Yes|No|Yes|Yes|
-|Dynamic Update only|Only if the local driver is generic or missing and WU has no **Automatic** driver|Yes|Only if the local driver is generic or missing and WU has no **Automatic** driver|Yes|
+|Dynamic Update only|Only if the local driver is generic/ missing, and WU has no applicable **Automatic** driver|Yes|Only if the local driver is generic/ missing, and WU has no applicable **Automatic** driver|Yes|
 |Both|Yes|Yes|Yes|Yes|
-|Neither|Only if the local driver is generic or missing and WU has no **Automatic** driver|No|Only if the local driver is generic or missing and WU has no **Automatic** driver|Yes|
+|Neither|Only if the local driver is generic/ missing, and WU has no applicable **Automatic** driver|No|Only if the local driver is generic/ missing, and WU has no applicable **Automatic** driver|Yes|
 
 <!--use word generic? or just condense descriptive text?-->
