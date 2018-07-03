@@ -3,7 +3,7 @@ title: PendedCompletedRequestEx rule (wdm)
 description: The PendedCompletedRequestEx rule specifies that the driver should not call IoCompleteRequest for a pending IRP.
 ms.assetid: CC65275D-DB67-428D-842A-82DB7EFA1969
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

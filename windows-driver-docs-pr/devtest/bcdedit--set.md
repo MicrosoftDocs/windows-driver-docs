@@ -3,7 +3,7 @@ title: BCDEdit /set
 description: The BCDEdit /set command sets a boot entry option value in the Windows boot configuration data store (BCD) for Windows 7, Windows Server 2008, Windows 8, Windows 8.1,Windows 10, Windows Server 2012, and Windows Server 2012 R2.
 ms.assetid: e66d9c55-9a44-4de2-a1a4-634c7d550735
 ms.author: windowsdriverdev
-ms.date: 07/02/2018
+ms.date: 07/03/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -37,7 +37,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 > ### Parameters
 >
-> <a href="" id="--id--"></a>\[**{***ID***}**\]  
+> \[**{***ID***}**\]  
 > The **{***ID***}** is the GUID that is associated with the boot entry. If you do not specify an **{***ID***}**, the command modifies the current operating system boot entry. If a boot entry is specified, the GUID associated with the boot entry must be enclosed in braces **{ }**. To view the GUID identifiers for all of the active boot entries, use the **bcdedit /enum** command. The identifier for the current boot entry is **{current}**. For more information about this option, use the following command: **bcdedit /? ID**
 >
 > > [!NOTE]
@@ -95,7 +95,7 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 >
 >  
 >
-> <a href="" id="-------disabledynamictick---yes---no--"></a> **disabledynamictick** \[ **yes** | **no** \]  
+> </a> **disabledynamictick** \[ **yes** | **no** \]  
 > Enables and disables dynamic timer tick feature. The option is available starting with Windows 8 and Windows Server 2012.
 >
 > > [!NOTE]

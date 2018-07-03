@@ -3,7 +3,7 @@ title: InitFreeDeviceCreateType4 rule (kmdf)
 description: The InitFreeDeviceCreateType4 rule specifies that a driver must call WdfDeviceInitFree if the driver encounters an error while it calls WdfDeviceCreate and if the driver received the WDFDEVICE\_INIT structure from a call to WdfControlDeviceInitAllocate.
 ms.assetid: 5a521053-5d31-4e4a-8a82-48206d506916
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

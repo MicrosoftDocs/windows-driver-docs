@@ -3,7 +3,7 @@ title: Irql\_Miscellaneous\_Function rule (ndis)
 description: The Irql\_Miscellaneous\_Function rule specifies that the NDIS functions must be called at correct IRQL levels.
 ms.assetid: ae1d0243-1db9-428f-a112-f438e2322ff2
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -3,7 +3,7 @@ title: BCDEdit /emssettings
 description: The /emssettings option sets the global Emergency Management Services (EMS) settings for the computer. To enable or disable EMS, use the /ems option. The /emssettings option does not enable or disable EMS for any boot entry.
 ms.assetid: 010e852d-ff97-4280-b35b-f1881e249e42
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 07/03/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -21,22 +21,22 @@ api_type:
 
 The **/emssettings** option sets the global Emergency Management Services (EMS) settings for the computer. To enable or disable EMS, use the **/ems** option. The **/emssettings** option does not enable or disable EMS for any boot entry.
 
-``` syntax
-    bcdedit /emssettings [ BIOS ] | [ EMSPORT: port | [EMSBAUDRATE: baudrate] ] 
+Syntax 
 
-   
+```
+    bcdedit /emssettings [ BIOS ] | [ EMSPORT: port | [EMSBAUDRATE: baudrate] ] 
 ```
 
 Parameters
 ----------
 
-<a href="" id="-------bios------"></a> **BIOS**   
+**BIOS**   
 Specifies that the system will use BIOS settings for the EMS configuration. This works only on systems that have EMS support provided by the BIOS.
 
-<a href="" id="-------emsport--------port------"></a> **EMSPORT:** *port*   
+ **EMSPORT:** *port*   
 Specifies the serial port to use as the EMS port. This parameter should not be specified with the **BIOS** option.
 
-<a href="" id="-------emsbaudrate---------baudrate------"></a> **EMSBAUDRATE:** *baudrate*   
+**EMSBAUDRATE:** *baudrate*   
 Specifies the serial baud rate to use for EMS. This command should not be specified with the BIOS. The *baudrate* is optional, and the default is 9,600 bps.
 
 ### Comments

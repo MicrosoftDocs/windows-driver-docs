@@ -3,7 +3,7 @@ title: IoSetCompletionRoutineExCheck rule (wdm)
 description: The IoSetCompletionRoutineExCheck rule specifies that the IoSetCompletionRoutineEx routine returns an NTSTATUS value.
 ms.assetid: 047298DB-851A-4406-AD6D-5A276960ABE4
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

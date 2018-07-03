@@ -3,7 +3,7 @@ title: BCDEdit Options Reference
 description: BCDEdit Options Reference
 ms.assetid: 351f8bc3-a228-48a4-bda8-69ee8521a5d3
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
