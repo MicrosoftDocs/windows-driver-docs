@@ -3,7 +3,7 @@ title: Irql\_Protocol\_Driver\_Function rule (ndis)
 description: The Irql\_Protocol\_Driver\_Function rule specifies that the NDIS functions for CoNDIS clients must be called at correct IRQL levels.
 ms.assetid: 9461c3d9-cb31-4ffd-b057-fd9978808c2f
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

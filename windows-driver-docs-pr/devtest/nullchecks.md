@@ -3,7 +3,7 @@ title: NullCheck rule (storport)
 description: The NullCheck rule verifies that a NULL value inside the driver code is not dereferenced later in the driver.
 ms.assetid: 9322B5F8-6681-4000-A64C-E66D2D4A5D6D
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
