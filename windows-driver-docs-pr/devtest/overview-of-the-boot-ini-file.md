@@ -12,7 +12,7 @@ keywords:
 - boot entry parameters WDK
 - boot parameters WDK
 ms.author: windowsdriverdev
-ms.date: 07/02/2018
+ms.date: 07/03/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -20,7 +20,8 @@ ms.technology: windows-devices
 
 # Overview of the Boot.ini File
 
-[!IMPORTANT] This topic describes the boot options supported in Windows XP and Windows Server 2003. If you are changing boot options for modern versions of Windows, see [Boot Options in Windows Vista and Later](boot-options-in-windows-vista-and-later.md).
+> [!IMPORTANT] 
+> This topic describes the boot options supported in Windows XP and Windows Server 2003. If you are changing boot options for modern versions of Windows, see [Boot Options in Windows Vista and Later](boot-options-in-windows-vista-and-later.md).
 
 The Boot.ini file is a text file that contains the boot options for computers with BIOS firmware running NT-based operating system prior to Windows Vista. It is located at the root of the system partition, typically c:\\Boot.ini. The following sample shows the content of a typical Boot.ini file.
 
