@@ -3,7 +3,7 @@ title: BCDEdit /set
 description: The BCDEdit /set command sets a boot entry option value in the Windows boot configuration data store (BCD) for Windows 7, Windows Server 2008, Windows 8, Windows 8.1,Windows 10, Windows Server 2012, and Windows Server 2012 R2.
 ms.assetid: e66d9c55-9a44-4de2-a1a4-634c7d550735
 ms.author: windowsdriverdev
-ms.date: 07/03/2018
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -21,7 +21,7 @@ BCDEdit /set
 
 The **BCDEdit /set** command sets a boot entry option value in the Windows boot configuration data store (BCD) for Windows 7, Windows Server 2008, Windows 8, Windows 8.1,Windows 10, Windows Server 2012, and Windows Server 2012 R2. Use the **BCDEdit /set** command to configure specific boot entry elements, such as kernel debugger settings, memory options, or options that enable test-signed kernel-mode code or load alternate hardware abstraction layer (HAL) and kernel files. To remove a boot entry option, use the [**BCDEdit /deletevalue**](bcdedit--deletevalue.md) command.
 
-> [!Caution]
+> [!CAUTION]
 > Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using the **BCDEdit /set** command could render your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings.
 
 > [!NOTE]
