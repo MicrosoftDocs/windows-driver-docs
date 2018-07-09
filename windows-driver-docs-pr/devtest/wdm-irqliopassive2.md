@@ -2,7 +2,7 @@
 title: IrqlIoPassive2 rule (wdm)
 ms.assetid: 36e449c2-9b24-4309-a4ac-af496cdc7b4f
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

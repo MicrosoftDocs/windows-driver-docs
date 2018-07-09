@@ -3,7 +3,7 @@ title: SpinLock rule (ndis)
 description: The SpinLock rule verifies the correct use of the NDIS spin lock interface.
 ms.assetid: 27A20B0C-A1B9-40E6-BA9D-64BB9F58B027
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

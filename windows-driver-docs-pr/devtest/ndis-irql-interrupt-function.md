@@ -3,7 +3,7 @@ title: Irql\_Interrupt\_Function rule (ndis)
 description: The Irql\_Interrupt\_Function rule specifies that the NDIS functions for interrupts must be called at correct IRQL levels.
 ms.assetid: a71eaa14-b1f8-4ef6-8dc4-5c0c0d168685
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -3,7 +3,7 @@ title: DeviceInitAPI rule (kmdf)
 description: For an FDO device, the framework device object initialization methods and the framework FDO initialization methods must be called before the driver calls the WdfDeviceCreate method for the device object.
 ms.assetid: 526807b8-748e-4bc1-b795-9971ed98509c
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

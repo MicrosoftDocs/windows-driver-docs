@@ -3,7 +3,7 @@ title: MarkPowerDown rule (wdm)
 description: The MarkPowerDown rule specifies that an IRP\_MJ\_POWER with IRP\_MN\_SET\_POWER for SystemPowerState IRP going from s0 to \ S1...S5\ is pended.
 ms.assetid: 5C35F607-1550-4B48-8325-8A01D522786F
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

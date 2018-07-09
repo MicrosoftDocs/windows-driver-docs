@@ -4,7 +4,7 @@ description: The UNMOUNTABLE_BOOT_VOLUME bug check has a value of 0x000000ED. Th
 ms.assetid: 7c4ab301-f110-4fc8-9ff8-242e0d2155fd
 keywords: ["Bug Check 0xED UNMOUNTABLE_BOOT_VOLUME", "UNMOUNTABLE_BOOT_VOLUME"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 06/26/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,6 +56,22 @@ The UNMOUNTABLE\_BOOT\_VOLUME bug check has a value of 0x000000ED. This indicate
 </tr>
 </tbody>
 </table>
+
+Resolution
+----------
+
+If you are debugging this error, use the !analyze -v extension. This extension displays relevant data specific error to the error.
+
+This bug check is typically related to the failure of the OS Boot storage device such as hard drive. To attempt to validate the file system and the recover the boot record the following troubleshooting steps may be helpful.  
+
+1. In Windows 10, use Troubleshoot > Advanced Options > Startup Repair. You may need to create bootable recovery media and boot from a USB drive or DVD to run the Windows Recovery Environment.
+2. From the command prompt in the Windows Recovery Environment use CHKDSK /r to attempt to repair the file system.  
+3. Use the bootrec command to fix master and boot records.    
+
+If these steps are not successful it is possible that the hard drive has failed. Some hard drive vendors provide diagnostic tools that may help confirm a hardware failure.
+
+
+
 
  
 

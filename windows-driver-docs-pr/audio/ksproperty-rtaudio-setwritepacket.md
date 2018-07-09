@@ -12,7 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 06/19/2018
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ KSPROPERTY\_RTAUDIO\_SETWRITEPACKET informs the driver that the OS has written v
 
  
 
-The property descriptor (instance data) is a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure. Before sending the request, the client loads the structure with values Before sending the request, the client loads the structure with values that indicate the packet number, packet length and other information.
+The property descriptor (instance data) is a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure. Before sending the request, the client loads the structure with values that include the packet number, packet length and other information.
 
 The property value is a structure of type [**KSRTAUDIO\_SETWRITEPACKET\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_setwritepacket_info).
 

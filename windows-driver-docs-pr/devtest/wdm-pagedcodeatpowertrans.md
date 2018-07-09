@@ -3,7 +3,7 @@ title: PagedCodeAtPowerTrans rule (wdm)
 description: The PagedCodeAtPowerTrans rule specifies that a driver should not call PAGED\_CODE while responding to a system IRP\_MJ\_POWER Irp (IRP\_MN\_SET\_POWER) and to a device IRP\_MJ\_POWER Irp (IRP\_MN\_SET\_POWER).
 ms.assetid: D94B0E13-9640-4FBF-B1E7-AF8DFED42542
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
