@@ -44,39 +44,17 @@ There are two types of floors and ceilings supported by the HDC Dashboard:
 
 2. In **Select PNPs**, select the Hardware ID and operating system combinations you wish to publish to. Note that a floor can be set for each Hardware ID, but a ceiling is applied to all IDs within the same shipping label. Additionally, the oldest operating system you select will automatically be selected as the floor for your label. 
 
-### Adding a floor
-
-1. You can add a floor (OS based driver expansion) for your driver’s distribution by clicking **Please expand operating systems for driver’s distribution here**, located below the label’s targeting information. 
-    ![A screen showing the dashboard screen to add a floor to a driver.](images/driver-floor-screen.png)
-
-    When you click the link, a list of operating systems appears that you can extend driver coverage to.
-
-    ![An image showing the operating systems available to expand coverage to.](images/driver-floor-screen-2.png)
-
-2.	After selecting the operating systems, you wish to expand coverage to, click Submit
-
-### Adding a ceiling
-
-1.	Below the CHID information, you can add a ceiling by selecting **Please specify a ceiling OS**, and selecting an operating system.
-
-    ![A screenshot of the ceiling options available to driver submissions.](images/driver-ceiling-screen.png)
-
-2. Select **Publish**
-
-> [!NOTE]
-> Note the following when adding a ceiling
-> * The ceiling option is enabled only for Hardware IDs that target Windows 10, and only after clicking Publish in the **Select PNPs** selection area.
-
-> * The ceiling you select should be higher than the PNP selections you made.
-
-## Restricting operating systems for driver distribution
+## Restricting driver distribution using floors and ceilings
 
 Restricting a driver's distribution lets you set an OS minimum or maximum level. For Attestation submissions, we use the OS you select at the time of submission as the initial minimum OS. The minimum OS level cannot be set below the drivers certified OS level. You must first use Expansion (described below) to go lower than these initial minimum levels.
+![A screen showing the dashboard screen to add a floor to a driver.](images/driver-floor-screen.png)
 
 ### OS Flooring
 *(Minimum OS requirement)*
 
 Use this option when you want a driver to only be offered at and above the listed operating system. For example, selecting an RS4 Floor would mean only systems running Windows 10 1803 (RS4) and above will be offered this driver.
+
+![An image showing the operating systems available to expand coverage to.](images/driver-floor-screen-2.png)
 
 ### OS Ceiling  
 *(Maximum OS requirement)*
@@ -84,11 +62,15 @@ Use this option when you want a driver to only be offered at and above the liste
 *Note: access to this feature is limited.*
 
 > [!IMPORTANT]
-> An OS Ceiling should only be set if there is a breaking change in the new OS that impacts basic functionality of the driver. A business justification is required when requesting an OS Ceiling.
+> * An OS Ceiling should only be set if there is a breaking change in the new OS that impacts basic functionality of the driver. A business justification is required when requesting an OS Ceiling.
+> * The ceiling option is enabled only for Hardware IDs that target Windows 10, and only after clicking Publish in the **Select PNPs** selection area.
+> * The ceiling you select should be higher than the PNP selections you made.
 
 Use this option when you want a driver to only be offered at or below the listed operating system. For example, selecting an RS3 Ceiling on a Windows 10 1607 RS1 certified driver would mean your driver would never be offered to systems running Windows 10 1803 (RS4) or above.
 
 The minimum OS level is determined by the Products Certified OS level, or the Attested OS level.  If you need to go below this, use driver expansion, described below.
+
+![A screenshot of the ceiling options available to driver submissions.](images/driver-ceiling-screen.png)
 
 ## Driver Expansion
 
@@ -100,6 +82,7 @@ The minimum OS level is determined by the Products Certified OS level, or the At
 > * You can only expand drivers that you submit. The receivers of a shared submission cannot expand drivers.
 > * Only Windows 8.1 drivers can be expanded to target Windows 10 systems.
 > * Expansion does not re-sign your driver or change your driver's certification level.
+> * You cannot expand a driver to a different CPU architecture (i.e. x86 > ARM)
 
 New OS level targeting options are available when creating a Shipping Label for Windows Update. These options enable you to “Expand” the driver coverage.
 
@@ -112,21 +95,6 @@ For example, If your driver is certified for Windows 10 RS3 (1709), clicking **E
 ![A screenshot of the driver expansion option.](images/new-pnp-nodes.png)
 
 ### Expanding a drivers distribution:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## FAQ
