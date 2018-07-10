@@ -19,7 +19,7 @@ IHVs, OEMs, and ODMs often need to change the distribution of a driver in Window
 
 * Extend its distribution to earlier, current or newer Windows versions.
 
-These distribution ranges are defined by a **floor** and **ceiling**. A floor describes the earliest Windows version the driver will be distributed to, and a ceiling marks the latest. By adding a floor, you can expand your driver’s distribution. By adding a ceiling, you can restrict it. Floors and ceilings are specified in [shipping labels](https://docs.microsoft.com/windows-hardware/drivers/dashboard/manage-driver-distribution-by-submission) within the Hardware Dev Center Dashboard for the following driver submission formats:
+These distribution ranges are defined by a **floor** and **ceiling**. A floor describes the earliest Windows version the driver will be distributed to, and a ceiling marks the latest. By adding a floor and ceiling, you can restrict your driver’s distribution. Floors and ceilings are specified in [shipping labels](https://docs.microsoft.com/windows-hardware/drivers/dashboard/manage-driver-distribution-by-submission) within the Hardware Dev Center Dashboard for the following driver submission formats:
 
 * .HLKX
 * .HCKX
@@ -68,6 +68,66 @@ There are two types of floors and ceilings supported by the HDC Dashboard:
 > * The ceiling option is enabled only for Hardware IDs that target Windows 10, and only after clicking Publish in the **Select PNPs** selection area.
 
 > * The ceiling you select should be higher than the PNP selections you made.
+
+## Restricting operating systems for driver distribution
+
+Restricting a driver's distribution lets you set an OS minimum or maximum level. For Attestation submissions, we use the OS you select at the time of submission as the initial minimum OS. The minimum OS level cannot be set below the drivers certified OS level. You must first use Expansion (described below) to go lower than these initial minimum levels.
+
+### OS Flooring
+*(Minimum OS requirement)*
+
+Use this option when you want a driver to only be offered at and above the listed operating system. For example, selecting an RS4 Floor would mean only systems running Windows 10 1803 (RS4) and above will be offered this driver.
+
+### OS Ceiling  
+*(Maximum OS requirement)*
+
+*Note: access to this feature is limited.*
+
+> [!IMPORTANT]
+> An OS Ceiling should only be set if there is a breaking change in the new OS that impacts basic functionality of the driver. A business justification is required when requesting an OS Ceiling.
+
+Use this option when you want a driver to only be offered at or below the listed operating system. For example, selecting an RS3 Ceiling on a Windows 10 1607 RS1 certified driver would mean your driver would never be offered to systems running Windows 10 1803 (RS4) or above.
+
+The minimum OS level is determined by the Products Certified OS level, or the Attested OS level.  If you need to go below this, use driver expansion, described below.
+
+## Driver Expansion
+
+> ![IMPORTANT]
+> Note the following when expanding your driver's distribution:
+> * Expansion can only be performed once per submission, and cannot be undone. Only expand your driver's distribution only when absolutely necessary.
+> * All shipping labels associated with expanded submission will list new PNP HWIDs that can be used to target **Windows 10 Client versions 1506 and 1511 (TH1)**. 
+> * Your Certified level for these newly created items will show as “Extended”.
+> * You can only expand drivers that you submit. The receivers of a shared submission cannot expand drivers.
+> * Only Windows 8.1 drivers can be expanded to target Windows 10 systems.
+> * Expansion does not re-sign your driver or change your driver's certification level.
+
+New OS level targeting options are available when creating a Shipping Label for Windows Update. These options enable you to “Expand” the driver coverage.
+
+![A screenshot of the driver expansion option.](images/driver-expansion.png)
+
+Expanding a driver submission's PnP choices enables the driver to target operating systems below the products certification level or Attested OS level. It also enables a Windows 8.1 driver to be offered to Windows 10 systems. 
+
+For example, If your driver is certified for Windows 10 RS3 (1709), clicking **Expand** will display new Hardware PnP choices for **Windows 10 Client versions 1506 and 1511 (TH1)** for each HWID listed in your INFs.  You can now publish these HWIDs as normal and also combine them with Floor and Ceiling options for further refinement (next slide).
+
+![A screenshot of the driver expansion option.](images/new-pnp-nodes.png)
+
+### Expanding a drivers distribution:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## FAQ
 
