@@ -217,7 +217,7 @@ HKR,,DllPath,%%SystemRoot%%\System32\myDll.sys
 ## Universal INF (1300-1319) <a name="err-130x"></a>
 
 >[!IMPORTANT]
->Your driver INF file is universal if you do not get any errors or warnings with error number in the range 130*xx*.
+>Your driver INF file is universal if you do not get any errors or warnings with error number in the range 13*xx*.
 
 The following errors and warnings are related to INF configurability:
 
