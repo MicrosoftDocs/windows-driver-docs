@@ -156,3 +156,5 @@ Method OIDs can be issued by a usermode application running in the Administrator
 
 - Most NDIS miniport drivers should not be involved in parsing packet payloads. In some cases, though, it may be necessary. If so, this code should be audited very carefully, as the driver is parsing data from an untrusted source.
 
+- As is standard when allocating kernel-mode memory, NDIS drivers should use appropriate [NX Pool Opt-In Mechanisms](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/nx-pool-opt-in-mechanisms). In WDK 8 and newer, the `NdisAllocate*` family of functions are properly opted in.
+
