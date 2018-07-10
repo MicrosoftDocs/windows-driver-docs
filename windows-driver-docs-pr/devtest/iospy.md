@@ -10,7 +10,7 @@ ms.technology: windows-devices
 ---
 
 > [!NOTE]
-> IoSpy and IoAttack no longer ships in the WDK after Windows 10 Version 1703.
+> IoSpy and IoAttack are no longer available in the WDK after Windows 10 Version 1703.
 >
 > As an alternative to these tools, consider using the fuzzing tests available in the HLK. Here are a few to consider.
 > 
