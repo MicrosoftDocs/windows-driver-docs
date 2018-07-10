@@ -47,6 +47,7 @@ There are two types of floors and ceilings supported by the HDC Dashboard:
 ## Restricting driver distribution using floors and ceilings
 
 Restricting a driver's distribution lets you set an OS minimum or maximum level. For Attestation submissions, we use the OS you select at the time of submission as the initial minimum OS. The minimum OS level cannot be set below the drivers certified OS level. You must first use Expansion (described below) to go lower than these initial minimum levels.
+
 ![A screen showing the dashboard screen to add a floor to a driver.](images/driver-floor-screen.png)
 
 ### OS Flooring
@@ -74,7 +75,7 @@ The minimum OS level is determined by the Products Certified OS level, or the At
 
 ## Driver Expansion
 
-> ![IMPORTANT]
+> [!IMPORTANT]
 > Note the following when expanding your driver's distribution:
 > * Expansion can only be performed once per submission, and cannot be undone. Only expand your driver's distribution only when absolutely necessary.
 > * All shipping labels associated with expanded submission will list new PNP HWIDs that can be used to target **Windows 10 Client versions 1506 and 1511 (TH1)**. 
