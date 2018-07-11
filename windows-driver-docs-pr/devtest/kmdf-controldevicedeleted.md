@@ -3,7 +3,7 @@ title: ControlDeviceDeleted rule (kmdf)
 description: The ControDeviceDeleted rule specifies that if a PnP driver creates a control device object, the driver must delete the control device object in one of the cleanup callback functions before the driver unloads.
 ms.assetid: 869f1c1c-8a9f-4e0b-bcbb-386e93663567
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

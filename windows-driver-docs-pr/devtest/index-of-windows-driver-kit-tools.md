@@ -605,7 +605,7 @@ The information in the following tables describes the tools that are useful for 
 <td align="left"><p>A command-line tool that is used to evaluate system energy efficiency.</p>
 <p>This tool is available in Windows 7 and later versions of Windows.</p>
 <p>Dev Center Documentation:</p>
-[Using PowerCfg to Evaluate System Energy Efficiency](http://go.microsoft.com/fwlink/p/?linkid=168800)
+[Using PowerCfg to Evaluate System Energy Efficiency](http://download.microsoft.com/download/7/E/7/7E7662CF-CBEA-470B-A97E-CE7CE0D98DC2/PowerCfg.docx)
 <p>For information about command options, type</p>
 <p></p>
 <p><strong>PowerCfg /?</strong></p></td>

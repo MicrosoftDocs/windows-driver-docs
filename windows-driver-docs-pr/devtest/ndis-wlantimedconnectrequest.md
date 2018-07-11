@@ -3,7 +3,7 @@ title: WlanTimedConnectRequest rule (ndis)
 description: The WlanTimedConnectRequest rule verifies that an OID\_DOT11\_CONNECT\_REQUEST is followed by a NDIS\_STATUS\_DOT11\_CONNECTION\_START within 10 seconds.
 ms.assetid: F40D92B1-CA48-4060-B9E2-A965900EAF7B
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

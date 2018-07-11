@@ -3,7 +3,7 @@ title: RemoveLockForwardRead2 rule (wdm)
 description: The RemoveLockForwardRead2 rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used correctly when forwarding a IRP using IoCallDriver to a another device.
 ms.assetid: 0C9284A5-6B32-469D-BF0D-1D1B74CADE46
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
