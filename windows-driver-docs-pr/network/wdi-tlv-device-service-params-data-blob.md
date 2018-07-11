@@ -22,7 +22,7 @@ WDI_TLV_DEVICE_SERVICE_PARAMS_DATA_BLOB is a TLV that contains information about
 
 ## Length
 
-The size, in bytes, of a UINT8 * the number of elements in the list.
+The size, in bytes, of a `(UINT8 * (the number of elements in the list))`.
 
 ## Values
 

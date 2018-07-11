@@ -1,7 +1,7 @@
 ---
-title: WDI_TLV_DEVICE_SERVICE_PARAMS_GUID
+title: WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE
 author: windows-driver-content
-description: WDI_TLV_DEVICE_SERVICE_PARAMS_GUID is a TLV that contains the opcode specific to the device service.
+description: WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE is a TLV that contains the opcode specific to the device service.
 ms.assetid: A0C9E728-E0E5-47C1-AEB8-E001057FA35A
 ms.author: windowsdriverdev 
 ms.date: 06/15/2018 
@@ -9,12 +9,12 @@ ms.topic: article
 ms.prod: windows-hardware 
 ms.technology: windows-devices 
 keywords:
- - WDI_TLV_DEVICE_SERVICE_PARAMS_GUID Network Drivers Starting with Windows Vista
+ - WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE Network Drivers Starting with Windows Vista
 ---
 
-# WDI_TLV_DEVICE_SERVICE_PARAMS_GUID
+# WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE
 
-WDI_TLV_DEVICE_SERVICE_PARAMS_GUID is a TLV that contains the opcode specific to the device service. This TLV is used in the [NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT](ndis-status-wdi-indication-device-service-event.md) status indication.
+WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE is a TLV that contains the opcode specific to the device service. This TLV is used in the [NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT](ndis-status-wdi-indication-device-service-event.md) status indication.
 
 ## TLV Type
 
