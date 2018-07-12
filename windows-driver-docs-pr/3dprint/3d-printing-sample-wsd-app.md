@@ -10,7 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# 3D printing sample WSD app
+#3D printing sample WSD app
 
 
 This section contains detailed instructions for building and deploying the web service device (WSD) sample application with the included 3D print driver.
