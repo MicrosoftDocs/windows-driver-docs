@@ -26,7 +26,7 @@ A **DriverVer** directive specifies version information for drivers installed by
 [Version] |
 [DDInstall]
  
-DriverVer=mm/dd/yyyy[,w.x.y.z] 
+DriverVer=mm/dd/yyyy,w.x.y.z 
 ```
 
 ## Entries
@@ -38,9 +38,9 @@ This value specifies the date of the "[driver package](driver-packages.md)", whi
 The date must be specified in month/day/year order. The month and day must contain two digits, and the year must contain four digits. A hyphen (-) can be used as the date field separator instead of the slash (/).
 
 <a href="" id="w-x-y-z"></a>*w.x.y.z*  
-This value specifies an optional version number. If a value is specified, *w* is required but *x*, *y*, *z*, and their preceding period characters are optional.
+This value specifies a version number.
 
-If specified, *w*, *x*, *y*, and *z* must each be an integer that is greater than or equal to zero and less than 65535.
+*w*, *x*, *y*, and *z* must each be an integer that is greater than or equal to zero and less than 65535.
 
 For Windows XP SP1, Windows Server 2003 and later versions of Windows, this value is also *used* by Setup, in combination with the driver rank and date, to select a driver for a device. For more information, see [How Windows Selects Drivers](how-setup-selects-drivers.md).
 
