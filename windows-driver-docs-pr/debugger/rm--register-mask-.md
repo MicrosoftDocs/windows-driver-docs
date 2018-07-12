@@ -4,7 +4,7 @@ description: The rm command modifies or displays the register display mask. This
 ms.assetid: b3203bf3-b614-490b-8cbd-6abb291a801a
 keywords: ["rm (Register Mask) Windows Debugging"]
 ms.author: domars
-ms.date: 07/11/2018
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -147,9 +147,23 @@ The following *Mask* bits are supported for an x86-based processor or an x64-bas
 <td align="left"><p>0x800</p></td>
 <td align="left"><p>Displays the AVX XMM registers in decimal integers.</p></td>
 </tr>
+<tr class="even">
+<td align="left"><p></p>12</td>
+<td align="left"><p></p>0x1000</td>
+<td align="left"><p>Displays the AVX-512 zmm0-zmm31 registers in floating point format.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>13</p></td>
+<td align="left"><p>0x2000</p></td>
+<td align="left"><p>Displays the AVX-512 zm00-zmm31 registers in integer format.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>14</p></td>
+<td align="left"><p>0x4000</p></td>
+<td align="left"><p>Displays the AVX-512 k0-k7 registers.</p></td>
+</tr>
 </tbody>
 </table>
-
  
 
 The following *Mask* bits are supported for an Itanium-based processor.
@@ -200,47 +214,67 @@ The following *Mask* bits are supported for an Itanium-based processor.
 </tbody>
 </table>
 
+## Examples
 
-The following *Mask* bits are supported for processors with AVX-512 support.
+Enable the integer state and segment registers.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Bit</th>
-<th align="left">Value</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p></p>
-TBD</td>
-<td align="left"><p></p>
-0x1000</td>
-<td align="left"><p>Displays the zmm0-zmm31 registers in floating point format</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>TBD</p></td>
-<td align="left"><p>0x2000</p></td>
-<td align="left"><p>Displays the zm00-zmm31 registers in integer format</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>TBD</p></td>
-<td align="left"><p>0x4000</p></td>
-<td align="left"><p>Displays the k0-k7 registers.</p></td>
-</tr>
-</tbody>
-</table>
- 
+```
+0: kd> rm 0x00a
+0: kd> rm
+Register output mask is a:
+       2 - Integer state (64-bit)
+       8 - Segment registers
+```
 
- 
 
- 
+Enable 0x1000 (Displays the AVX-512 zmm0-zmm31 registers in floating point format).
+
+```
+0: kd> rm 0x100a
+0: kd> rm
+Register output mask is 100a:
+       2 - Integer state (64-bit)
+       8 - Segment registers
+    1000 - AVX-512 ZMM registers
+```
+
+
+Enable mask 0x2000 (Displays the  AVX-512 zmm00-zmm31 registers in integer format).
+
+```
+0: kd> rm 0x200a
+0: kd> rm
+Register output mask is 200a:
+       2 - Integer state (64-bit)
+       8 - Segment registers
+    2000 - AVX-512 ZMM Integer registers
+```
+
+
+Enable all AVX-512 register masks:
+
+```
+0: kd> rm 0x700a
+0: kd> rm
+Register output mask is 700a:
+       2 - Integer state (64-bit)
+       8 - Segment registers
+    1000 - AVX-512 ZMM registers
+    2000 - AVX-512 ZMM Integer registers
+    4000 - AVX-512 Opmask registers
+```
+
+If you try and set a register mask on hardware that does not support it, the invalid bits of the register mask will be ignored.
+
+```
+kd> rm 0x100a
+Ignored invalid bits 1000
+kd> rm
+Register output mask is a:
+      2 - Integer state (64-bit)
+       8 - Segment registers
+
+```
 
 
 
