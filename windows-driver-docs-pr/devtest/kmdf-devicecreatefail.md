@@ -3,7 +3,7 @@ title: DeviceCreateFail rule (kmdf)
 description: The DeviceCreateFail rule specifies that EVT\_WDF\_DRIVER\_DEVICE\_ADD returns an error status when the call to WdfDeviceCreate fails.
 ms.assetid: 07272d72-d9a2-42b2-b89b-c7bc903c1425
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

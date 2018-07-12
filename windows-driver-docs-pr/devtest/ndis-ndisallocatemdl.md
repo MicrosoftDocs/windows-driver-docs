@@ -3,7 +3,7 @@ title: NdisAllocateMdl rule (ndis)
 description: The NdisAllocateMdl rule specifies that NdisAllocateMdl and NdisFreeMdl are called in alternate order. The ultimate goal is to make sure all MDLs are freed when MiniportHaltEx ends.
 ms.assetid: 8146E72B-0B63-4224-9677-5E6FEFCEB745
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
