@@ -3,7 +3,7 @@ title: NdisTimedDataHang rule (ndis)
 description: The NdisTimedDataHang rule verifies that an NDIS miniport driver processes any pending send requests for NET\_BUFFER\_LIST structures within 22 seconds.
 ms.assetid: CDFC9C23-B065-4916-BF1C-5429B6B57A23
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

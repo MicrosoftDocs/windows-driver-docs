@@ -214,16 +214,10 @@ HKR,,DllPath,%%SystemRoot%%\System32\myDll.sys
 </tbody>
 </table>
 
-
-
-
 ## Universal INF (1300-1319) <a name="err-130x"></a>
 
-
-**Important**
-If you do not get any errors or warnings with error number 130*x* and error text ("Found legacy *Xxx* operation..."), your driver INF file is universal.
-
-
+>[!IMPORTANT]
+>Your driver INF file is universal if you do not get any errors or warnings with error number in the range 13*xx*.
 
 The following errors and warnings are related to INF configurability:
 

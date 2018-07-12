@@ -3,7 +3,7 @@ title: ObsoleteDDIs rule (wdm)
 description: The ObsoleteDDIs rule specifies that drivers should not call FsRtlPrivateLock. This function is obsolete. Use FsRtlFastLock instead.
 ms.assetid: 5C49270A-7AD1-4762-921E-7925006D0400
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

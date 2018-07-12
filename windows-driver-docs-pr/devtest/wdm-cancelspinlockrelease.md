@@ -3,7 +3,7 @@ title: CancelSpinlockRelease rule (wdm)
 description: The CancelSpinlockRelease rule specifies that calls to IoAcquireCancelSpinLock and IoReleaseCancelSpinLock are used in strict alternation. That is, every call to IoAcquireCancelSpinLock must have a corresponding call to IoReleaseCancelSpinLock.
 ms.assetid: dba280c7-18ac-4d87-8d45-d30c214ef90e
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

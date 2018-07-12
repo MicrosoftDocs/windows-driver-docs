@@ -3,11 +3,30 @@ title: How to Perform Fuzz Tests with IoSpy and IoAttack
 description: This topic describes how to perform fuzz tests by using the IoSpy and IoAttack tools
 ms.assetid: f800e962-2a0f-4039-a479-395a62428b06
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 07/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
+
+
+> [!NOTE]
+> IoSpy and IoAttack are no longer available in the WDK after Windows 10 Version 1703.
+>
+> As an alternative to these tools, consider using the fuzzing tests available in the HLK. Here are a few to consider.
+> 
+> [DF - Fuzz random IOCTL test (Reliability)](https://docs.microsoft.com/windows-hardware/test/hlk/testref/236b8ad5-0ba1-4075-80a6-ae9dafb71c94)
+>
+> [DF - Fuzz sub-opens test (Reliability)](https://docs.microsoft.com/windows-hardware/test/hlk/testref/92bf534e-aa48-4aeb-b3cd-e46fb7cc7d80)
+>
+> [DF - Fuzz zero length buffer FSCTL test (Reliability)](https://docs.microsoft.com/windows-hardware/test/hlk/testref/5f5f6c7e-d5db-4ff1-8cee-da47203ab070)
+>
+> [DF - Fuzz random FSCTL test (Reliability)](https://docs.microsoft.com/windows-hardware/test/hlk/testref/e529e34e-076a-4978-926f-7eca333e8f4d)
+>
+> [DF - Fuzz Misc API test (Reliability)](https://docs.microsoft.com/windows-hardware/test/hlk/testref/fb305d04-6e8c-4dfc-9984-9692df82fbd8)
+>
+> You can also use the [Kernel synchronization delay fuzzing](https://docs.microsoft.com/windows-hardware/drivers/devtest/kernel-synchronization-delay-fuzzing) that is included with Driver Verifier.
+>
 
 # How to Perform Fuzz Tests with IoSpy and IoAttack
 

@@ -4,7 +4,7 @@ description: The rm command modifies or displays the register display mask. This
 ms.assetid: b3203bf3-b614-490b-8cbd-6abb291a801a
 keywords: ["rm (Register Mask) Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 07/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -200,6 +200,42 @@ The following *Mask* bits are supported for an Itanium-based processor.
 </tbody>
 </table>
 
+
+The following *Mask* bits are supported for processors with AVX-512 support.
+
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Bit</th>
+<th align="left">Value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p></p>
+TBD</td>
+<td align="left"><p></p>
+0x1000</td>
+<td align="left"><p>Displays the zmm0-zmm31 registers in floating point format</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>TBD</p></td>
+<td align="left"><p>0x2000</p></td>
+<td align="left"><p>Displays the zm00-zmm31 registers in integer format</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>TBD</p></td>
+<td align="left"><p>0x4000</p></td>
+<td align="left"><p>Displays the k0-k7 registers.</p></td>
+</tr>
+</tbody>
+</table>
  
 
  

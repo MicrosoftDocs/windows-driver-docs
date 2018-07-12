@@ -1,6 +1,173 @@
 {
   "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/dashboard/administration.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/dashboard-administration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/host-a-remote-debugging-session.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/known-issues-with-the-remote-debugging-client.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/take-part-in-a-remote-debugging-session.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/join-a-remote-debugging-session.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/prepare-for-remote-debugging.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/before-you-sign-in.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/get-started-with-the-hardware-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/create-and-manage-your-profile.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/register-for-the-hardware-program",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/manage-legal-agreements.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/dashboard-administration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/for-administrators.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/dashboard-administration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/establish-a-new-company.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/dashboard-administration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/driver-signing.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/attestation-signing-a-kernel-driver-for-public-release",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/dashboard-services.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/manage-your-divisions.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/dashboard-administration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/manage-your-service-account-credentials.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/dashboard-administration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/get-started.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/get-started-with-the-hardware-dashboard",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/manage-hardware-submissions.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/manage-your-hardware-submissions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/test-sign-your-driver--legacy-.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/manage-your-hardware-submissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/dashboard-faq.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-dashboard-faq",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/driver-distribution.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/dashboard-administration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/manage-driver-distribution-in-windows-8-1-and-earlier.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/add-or-remove-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/manage-your-hardware-submissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/usage-and-management-of-organization-vendor-ids.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/driver-signing-guidelines-for-isvs.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/windows-update-and-driver-distribution-support.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/windows-update-hardware-related-software-content-policy.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/reports.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/driver-failure-reporting",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/browse-reports.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/driver-failure-reporting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/manage-subscriptions.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/driver-failure-reporting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/windows-error-reporting-getting-started.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/driver-failure-reporting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/how-wer-collects-and-classifies-error-reports.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/driver-failure-reporting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/debugging-oca-minidump-files.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/driver-failure-reporting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/providing-solutions-to-reported-errors.md",
+      "redirect_URL": "/windows-hardware/drivers/dashboard/driver-failure-reporting",
+      "redirect_document_id": false
+    },
+
+
+    {
       "source_path": "windows-driver-docs-pr/devtest/boot-options-in-windows-vista-and-later.md",
       "redirect_URL": "/windows-hardware/drivers/devtest/boot-options-in-windows",
       "redirect_document_id": true

@@ -4,7 +4,7 @@ author: windows-driver-content
 description: System on a Chip (SoC) integrated circuits make extensive use of general-purpose I/O (GPIO) pins.
 ms.assetid: 9EB4EFC3-B94E-42C9-9FC7-12DF4AD01622
 ms.author: windowsdriverdev
-ms.date: 05/16/2018
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -19,7 +19,7 @@ The GPIO abstraction is supported by the [ACPI 5.0 Specification](http://www.uef
 
 To verify that your GPIO controller meets all Windows platform requirements, see [GPIO Controller Requirements Checklist](gpio-controller-requirements-checklist.md).
 
-## <a href="" id="controller"></a>GPIO controller devices
+## GPIO controller devices
 
 
 Windows supports GPIO controllers. GPIO controllers provide a variety of functions for peripheral devices, including interrupts, input signaling, and output signaling. GPIO capabilities are modeled as a GPIO controller device in the namespace. The [GPIO framework extension](https://docs.microsoft.com/windows-hardware/drivers/gpio/gpio-driver-support-overview) (GpioClx) models the GPIO controller device as being partitioned into some number of banks of pins. Each pin bank has 64 or fewer configurable pins. The banks in a GPIO controller are ordered relative to their pins' position within the controller-relative GPIO pin space. For example, bank 0 contains pins 0-31 on the controller, bank 1 contains pins 32-63, and so on. All banks have the same number of pins, except for the last bank, which might have fewer. Banks are significant for the ACPI firmware because the firmware must report the mapping of system interrupt resources to banks, as described in **GPIO namespace objects** section below.
@@ -36,13 +36,14 @@ Logically, ActiveBoth signals have both an asserted and unasserted state, whethe
 2.  To minimize the risk of I/O errors, Windows prefers the use of memory-mapped GPIO controllers instead of SPB-connected GPIO controllers. In fact, for the Windows Button Array device (PNP0C40), it is required that the ActiveBoth GPIO interrupts for this device connect to a memory-mapped GPIO controller, and not to an SPB-connected one. To determine which button interrupts must be ActiveBoth, see the **Button devices** sectionin the [Other ACPI namespace objects](other-acpi-namespace-objects.md) topic.
 3.  To establish a deterministic initial state for ActiveBoth interrupt signals, the Windows GPIO device stack guarantees that the first interrupt generated after connection of the interrupt by the driver will always be for the signal's asserted state. The stack further assumes that the asserted state of all ActiveBoth interrupt lines is logic level low (the ActiveLow edge) by default. If this is not the case on your platform, you can override the default by including the GPIO controller Device-Specific Method (\_DSM) in the controller's namespace. For more information about this method, see [GPIO Controller Device-Specific Method (\_DSM)](gpio-controller-device-specific-method---dsm-.md).
 
-**Note**  The third requirement in the preceding list implies that the driver for a device that uses ActiveBoth might receive an interrupt immediately after initializing (connecting to) the interrupt, if the signal at the GPIO pin is in the asserted state at that time. This is possible, and even likely for some devices (for example, headphones), and must be supported in the driver.
+> [!NOTE]
+> The third requirement in the preceding list implies that the driver for a device that uses ActiveBoth might receive an interrupt immediately after initializing (connecting to) the interrupt, if the signal at the GPIO pin is in the asserted state at that time. This is possible, and even likely for some devices (for example, headphones), and must be supported in the driver.
 
  
 
 To support emulated ActiveBoth, the GPIO controller driver must enable ("opt-in to") ActiveBoth emulation by implementing a [*CLIENT\_ReconfigureInterrupt*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gpioclx/nc-gpioclx-gpio_client_reconfigure_interrupt) callback function, and by setting the **EmulateActiveBoth** flag in the basic information structure that the driver's [*CLIENT\_QueryControllerBasicInformation*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gpioclx/nc-gpioclx-gpio_client_query_controller_basic_information) callback function supplies to **GpioClx**. For more information, see [General-Purpose I/O (GPIO) Drivers](https://docs.microsoft.com/windows-hardware/drivers/gpio).
 
-## <a href="" id="nsobj"></a>GPIO namespace objects
+## GPIO namespace objects
 
 
 GPIO controllers, and the peripherals that connect to them, are enumerated by ACPI. The connection between them is described using GPIO Connection Resource Descriptors. For more information, see section 6.4.3.8, "Connection Descriptors", of the ACPI 5.0 specification.
@@ -86,7 +87,7 @@ GeneralPurposeIO OpRegions (see section 5.5.2.4.4 of the ACPI 5.0 specification)
 
 Fields in an OpRegion can be declared anywhere in the namespace and accessed from any method in the namespace. The direction of accesses to a GeneralPurposeIO OpRegion is determined by the first access (read or write) and cannot be changed.
 
-> [!NOTE]  
+> [!NOTE]
 > Because OpRegion access is provided by the GPIO controller device driver (the "OpRegion Handler"), methods must take care not to access an OpRegion until the driver is available. ASL code can track the state of the OpRegion handler by including a Region (\_REG) method under the GPIO controller device (see section 6.5.4 of the ACPI 5.0 specification). Additionally, the OpRegion Dependencies (\_DEP) object (see section 6.5.8 of the ACPI 5.0 specification) can be used under any device that has a method accessing GPIO OpRegion fields, if needed. See the **Device dependencies** section in the [Device management namespace objects](device-management-namespace-objects.md) topic for a discussion of when to use \_DEP. It is important that drivers are not assigned GPIO I/O resources that are also assigned to GeneralPurposeIO OpRegions. Opregions are for the exclusive use of ASL control methods.
 
  

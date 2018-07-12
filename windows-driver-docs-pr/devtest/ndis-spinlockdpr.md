@@ -3,7 +3,7 @@ title: SpinLockDpr rule (ndis)
 description: The SpinLockDpr rule verifies the correct use of the NDIS spin lock interface.This rule specifies that calls to NdisDprAcquireSpinLock are made only when the spin lock is in the unlocked state.
 ms.assetid: 60056fae-54d1-4365-bcb5-02c63e4fb521
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
