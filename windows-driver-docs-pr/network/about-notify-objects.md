@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # About Notify Objects
 
 
-## <a href="" id="ddk-about-notify-objects-ng"></a>
+
 
 
 A notify object processes notifications that the network configuration subsystem sends to the object on behalf of a specific network component. This network component owns the notify object. Network components that can own a notify object are:

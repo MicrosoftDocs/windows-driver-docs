@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Value Capability Arrays
 
 
-## <a href="" id="ddk-value-capability-arrays-kg"></a>
+
 
 
 A *value capability array* contains information about the value usages supported by a [top-level collection](top-level-collections.md) for a specific type of HID report. Information about a collection's value capability arrays is contained in its [**HIDP\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff539697) structure.

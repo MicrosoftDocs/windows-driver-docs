@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # MUX Intermediate Driver Installation
 
 
-## <a href="" id="ddk-mux-intermediate-driver-installation-ng"></a>
+
 
 
 This topic provides an overview of MUX intermediate driver installation issues. For additional information about the structure of intermediate driver INF files, see [Installation Requirements for Network MUX Intermediate Drivers](installation-requirements-for-network-mux-intermediate-drivers.md).

@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # General OIDs
 
 
-## <a href="" id="ddk-general-oids-ng"></a>
+
 
 
 The following table lists the general OIDs for Remote NDIS Ethernet devices.

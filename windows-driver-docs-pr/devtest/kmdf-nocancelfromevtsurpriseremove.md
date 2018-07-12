@@ -2,6 +2,11 @@
 title: NoCancelFromEvtSurpriseRemove rule (kmdf)
 description: The NoCancelFromEvtSurpriseRemove rule specifies that WDF Drivers shouldn’t cancel requests from the EvtDeviceSurpriseRemoval callback function, instead self-managed I/O callback functions should be used.
 ms.assetid: 15C95BD4-6D19-4CCA-9B2E-679B2F3058F1
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["NoCancelFromEvtSurpriseRemove rule (kmdf)"]
 topic_type:
 - apiref

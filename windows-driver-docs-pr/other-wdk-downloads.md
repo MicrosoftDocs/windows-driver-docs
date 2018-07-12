@@ -7,7 +7,7 @@ keywords:
 - previous versions
 - WDK
 ms.author: windowsdriverdev
-ms.date: 02/02/2018
+ms.date: 05/07/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -16,6 +16,44 @@ ms.technology: windows-devices
 # Other WDK downloads
 
 Use the [latest public versions of the Windows Driver Kit (WDK) and tools](download-the-wdk.md) to develop drivers. This topic contains information about earlier versions of the WDK and additional downloads for support purposes.
+
+## WDK for Windows 10, version 1709
+
+### ![download icon](images/download-install.png) Step 1: Install Visual Studio 2017 
+The following editions of Visual Studio 2017 support driver development: 
+
+* [Download Visual Studio Community 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15)
+* [Download Visual Studio Professional 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15) 
+* [Download Visual Studio Enterprise 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15)
+
+When you install Visual Studio, select the **Desktop development with C++** workload. The Windows 10 Software Development Kit (SDK) is automatically included, and is displayed in the right-hand **Summary** pane. 
+
+For ARM/ARM64 driver development, choose **Individual components** and under **Compilers, build tools, and runtimes** select **Visual C++ compilers and libraries for ARM/ARM64**.
+
+
+### ![download icon](images/download-install.png) Step 2: Install WDK for Windows 10, version 1709
+
+* [Download WDK for Windows 10, version 1709](https://go.microsoft.com/fwlink/p/?linkid=859232) 
+
+New for this release: The WDK installation will by default install the WDK Visual Studio extension. This must be done in order for WDK VS integration to work. 
+
+## Enterprise WDK for Windows 10, version 1709 (EWDK) 
+
+The EWDK is a standalone self-contained command-line environment for building drivers. It includes the Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio Build Tools 15.6. 
+
+### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools 15.6 (Recommended)
+
+* [Download EWDK for Windows 10, version 1709](https://developer.microsoft.com/en-us/windows/hardware/license-terms-enterprise-wdk-1709-VS15-6)
+
+### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools 15.4
+
+* [Download EWDK for Windows 10, version 1709](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709-VS15-4)
+
+### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools 15.2
+
+* [Download EWDK for Windows 10, version 1709](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709)
+
+To get started, mount the ISO and run **LaunchBuildEnv**.
 
 ## WDK for Windows 10, version 1703 
 
@@ -26,7 +64,7 @@ Use the [latest public versions of the Windows Driver Kit (WDK) and tools](downl
 
 These editions of Visual Studio 2015 support driver development. 
 
-* [Download Visual Studio Express for Desktop](https://go.microsoft.com/fwlink/p/?LinkId=691984)
+* [Download Visual Studio Express 2015 for Desktop](https://go.microsoft.com/fwlink/?linkid=875331)
 * [Download Visual Studio Community 2015](https://go.microsoft.com/fwlink/p/?LinkId=534599)
 * [Download Visual Studio Professional 2015](https://go.microsoft.com/fwlink/p/?LinkId=619628)
 * [Download Visual Studio Enterprise 2015](https://go.microsoft.com/fwlink/p/?LinkId=619629)
@@ -60,9 +98,9 @@ You can also install the EWDK to build drivers and basic Win32 test applications
 ## ![download icon](images/download-install.png) WDK for Windows 10, version 1607
 
 1. Run Windows Update. 
-2. Install the version of Visual Studio that best suits your development needs. 
+2. Install the version of Visual Studio 2015 that best suits your development needs. 
 
-    * [Download Visual Studio Express for Desktop](https://go.microsoft.com/fwlink/p/?LinkId=691984)
+    * [Download Visual Studio Express 2015 for Desktop](https://go.microsoft.com/fwlink/?linkid=875331)
     * [Download Visual Studio Community 2015](https://go.microsoft.com/fwlink/p/?LinkId=534599)
     * [Download Visual Studio Professional 2015](https://go.microsoft.com/fwlink/p/?LinkId=619628)
     * [Download Visual Studio Enterprise 2015](https://go.microsoft.com/fwlink/p/?LinkId=619629)
@@ -80,7 +118,7 @@ WDK 8.1 Update has tools to build, test, debug, and deploy drivers for Windows 8
 > [!IMPORTANT]
 > Before installing WDK 8.1 Update, you need to install Visual Studio 2013. 
 
-1. [Download Visual Studio 2013](https://go.microsoft.com/fwlink/p/?LinkId=620683)
+1. [Download Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=875331)
 2. [Download WDK 8.1 Update](https://go.microsoft.com/fwlink/p/?LinkId=393659) (English only) 
 3. [Download the WDK 8.1 Update Test Pack](https://go.microsoft.com/fwlink/p/?LinkID=393660) (English only) 
 4. [Get driver samples for Windows 8.1](https://code.msdn.microsoft.com/windowshardware/Windows-Driver-Kit-WDK-81-cf35e953) 
@@ -92,14 +130,14 @@ Debugging Tools for Windows (WinDbg) are included in the WDK 8.1 Update, but you
 
 ## ![download icon](images/download-install.png) Remote Debugging client for Windows 8.1
 With the Windows Remote Debugging client, you can work remotely with developers from Microsoft, over the internet, to debug kernel-mode failures using the kernel debugger. 
-* [Learn more and prepare for remote debugging.](https://msdn.microsoft.com/library/windows/hardware/br230785)
+* [Learn more and prepare for remote debugging.](https://docs.microsoft.com/windows-hardware/drivers/dashboard/remote-debugging)
 * [Download the Remote Debugging client](http://go.microsoft.com/fwlink/p/?LinkId=316921) (English only)  
 
 ## ![download icon](images/download-install.png) WDK 8
 WDK 8 enables you to migrate earlier drivers to WDK 8.1 Update and Visual Studio 2013. Microsoft does not support WDK 8 and will make no further updates to this kit. You should use the latest versions of the WDK and Visual Studio to build drivers for Windows. 
 
 > [!IMPORTANT]
-> You must install [Visual Studio Professional 2012](https://go.microsoft.com/fwlink/p/?LinkID=255976) or [Visual Studio Ultimate](https://go.microsoft.com/fwlink/p/?LinkID=255982) before you install WDK 8. 
+> You must install [Visual Studio Professional 2012](https://go.microsoft.com/fwlink/p/?LinkID=255976) or [Visual Studio Ultimate 2012](https://go.microsoft.com/fwlink/p/?LinkID=255982) before you install WDK 8. 
 
 1. [Download WDK 8 (English only)](https://go.microsoft.com/fwlink/p/?LinkID=324284)
 2. [Download the WDK 8 redistributable components](https://go.microsoft.com/fwlink/p/?LinkID=253170) (English only) 

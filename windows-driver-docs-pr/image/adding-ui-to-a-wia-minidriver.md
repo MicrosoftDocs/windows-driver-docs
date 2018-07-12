@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Adding UI to a WIA Minidriver
 
 
-## <a href="" id="ddk-adding-ui-to-a-wia-minidriver-si"></a>
+
 
 
 You can add extended UI or replace UI components for a WIA minidriver by installing a separate DLL with the WIA minidriver. Unlike a TWAIN driver, a WIA driver's UI component is separate from the actual WIA minidriver. For Microsoft Windows Me, Windows XP, and later, the UI components run in the application's process, while the WIA minidriver runs in the WIA service's process. So, a WIA driver might not directly show UI; only the WIA UI extension modules of the driver might show UI.

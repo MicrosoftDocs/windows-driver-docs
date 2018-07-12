@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Servicing Interrupts
 
 
-## <a href="" id="ddk-servicing-interrupts-kg"></a>
+
 
 
 This section contains the following sections:

@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Spooler Notification
 
 
-## <a href="" id="ddk-spooler-notification-gg"></a>
+
 
 
 This feature is available in Windows Vista and later.

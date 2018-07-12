@@ -16,7 +16,7 @@ ms.technology: windows-devices
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-offloading-the-processing-of-udp-encapsulated-esp-packets-ng"></a>
+
 
 
 This section describes the offloaded processing of UDP-encapsulated ESP packets.

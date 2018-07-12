@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Dispatch Routines and IRQLs
 
 
-## <a href="" id="ddk-dispatch-routines-and-irqls-kg"></a>
+
 
 
 Most drivers' dispatch routines are called in an arbitrary thread context at IRQL = PASSIVE\_LEVEL, with the following exceptions:

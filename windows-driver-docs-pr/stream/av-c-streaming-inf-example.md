@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # AV/C Streaming INF Example
 
 
-## <a href="" id="ddk-installing-subunit-devices-ksg"></a>
+
 
 
 The function driver's INF file (during the subunit device driver installation) installs *Avcstrm.sys* as a lower-filter driver on the driver stack. The INF file includes an ".*hw*" section to perform installation of a device. The following code example demonstrates how to add *Avcstrm.sys* as a lower-filter driver on either Windows 2000 or later operating systems or Windows Millennium Edition, Windows 98, or Windows 95 or later operating systems, using "Subunit" as the install section name:

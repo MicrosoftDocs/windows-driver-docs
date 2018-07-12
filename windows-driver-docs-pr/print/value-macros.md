@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Value Macros
 
 
-## <a href="" id="ddk-value-macros-gg"></a>
+
 
 
 A value macro is used to specify a set of one or more values that you want to insert individually and repeatedly into a GPD file. Values can be any of the [GPD value types](gpd-value-types.md).

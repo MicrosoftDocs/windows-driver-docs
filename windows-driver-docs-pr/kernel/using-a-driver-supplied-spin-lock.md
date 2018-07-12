@@ -5,7 +5,7 @@ description: Using a Driver-Supplied Spin Lock
 ms.assetid: e81d5c93-47d6-407c-80a2-b2d55f9eb717
 keywords: ["spin locks WDK kernel", "driver-supplied spin locks WDK kernel", "global cancel spin locks WDK kernel"]
 ms.author: windowsdriverdev
-ms.date: 06/16/2017
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using a Driver-Supplied Spin Lock
 
 
-## <a href="" id="ddk-using-a-driver-supplied-spin-lock-kg"></a>
+
 
 
 Drivers that manage their own queues of IRPs can use a driver-supplied spin lock, instead of the system cancel spin lock, to synchronize access to the queues. You can improve performance by avoiding use of the cancel spin lock except when absolutely necessary. Because the system has only one cancel spin lock, a driver might sometimes have to wait for that spin lock to become available. Using a driver-supplied spin lock eliminates this potential delay and makes the cancel spin lock available for the I/O manager and other drivers. Although the system still acquires the cancel spin lock when it calls the driver's [*Cancel*](https://msdn.microsoft.com/library/windows/hardware/ff540742) routine, a driver can use its own spin lock to protect its queue of IRPs.
@@ -191,7 +191,7 @@ VOID IrpCancelRoutine(IN PDEVICE_OBJECT DeviceObject, IN PIRP Irp)
 
 The I/O manager always acquires the global cancel spin lock before it calls a *Cancel* routine, so the first task of the *Cancel* routine is to release this spin lock. It then acquires the spin lock that protects the driver's queue of IRPs, removes the current IRP from the queue, releases its spin lock, completes the IRP with STATUS\_CANCELLED and no priority boost, and returns.
 
-For more information about canceling spin locks, see the [Cancel Logic in Windows Drivers](http://go.microsoft.com/fwlink/p/?linkid=59531) white paper on the Microsoft Windows Hardware Developer Central (WHDC) website.
+For more information about canceling spin locks, see the [Cancel Logic in Windows Drivers](http://go.microsoft.com/fwlink/p/?linkid=59531) white paper.
 
  
 

@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Windows Sockets Direct Component Operation
 
 
-## <a href="" id="ddk-windows-sockets-direct-component-operation-ng"></a>
+
 
 
 This sections describes Windows Sockets Direct operations, including the operation of the Windows Sockets switch, a SAN service provider, and the SAN service provider's associated proxy driver.

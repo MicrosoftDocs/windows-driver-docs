@@ -18,7 +18,7 @@ keywords:
 # Power Management Status Indications
 
 
-## <a href="" id="ddk-ndis-6-20-power-management-status-indications-nr"></a>
+
 
 
 This section includes the reference topics for the status indications that are used in the NDIS 6.20 power management interface. This interface is supported in NDIS 6.20 and later.

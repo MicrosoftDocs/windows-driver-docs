@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Hardware Resources
 
 
-## <a href="" id="ddk-hardware-resources-kg"></a>
+
 
 
 Hardware resources are the assignable, addressable bus paths that allow peripheral devices and system processors to communicate with each other. Hardware resources typically include I/O port addresses, interrupt vectors, and blocks of bus-relative memory addresses.

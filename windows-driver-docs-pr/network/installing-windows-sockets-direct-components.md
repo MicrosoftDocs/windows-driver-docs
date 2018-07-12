@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Installing Windows Sockets Direct Components
 
 
-## <a href="" id="ddk-installing-windows-sockets-direct-components-ng"></a>
+
 
 
 The following topics describe how Windows Sockets Direct components (that is, the Windows Sockets switch and individual SAN service providers) are installed:

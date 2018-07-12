@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Vendor-Extended Properties
 
 
-## <a href="" id="ddk-vendor-extended-properties-si"></a>
+
 
 
 A **PropCode** entry in the **DeviceData** INF file section (see the example in [Vendor-Extended Features](vendor-extended-features.md)) lists all the vendor-extended property codes, separated by commas. For each property code, an entry of the form **PropCode***XXXX* must be present, where XXXX is the code value in uppercase hexadecimal. The entry should list the WIA property code and text description (which does not need to be localized) enclosed in quotes.

@@ -2,6 +2,11 @@
 title: KsIrqlPinCallbacks rule ()
 description: The KsIrqlPinCallbacks rule specifies that a kernel-stream (KS) miniport driver returns from a KS Pin callback function with the same IRQL that it had when it was called.
 ms.assetid: B2C1413A-9B94-499A-A15C-A943065F7CA1
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["KsIrqlPinCallbacks rule ()"]
 topic_type:
 - apiref

@@ -2,6 +2,11 @@
 title: RemoveLockReleasePnp rule (wdm)
 description: The RemoveLockReleasePnp rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used in strict alternation. Moreover, at the end of the dispatch routine the driver should not hold the remove lock.
 ms.assetid: CAD7AA1D-61AF-46E0-A5D2-8C1E44B7A7B1
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["RemoveLockReleasePnp rule (wdm)"]
 topic_type:
 - apiref

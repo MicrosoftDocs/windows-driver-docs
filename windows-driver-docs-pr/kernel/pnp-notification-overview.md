@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # PnP Notification Overview
 
 
-## <a href="" id="ddk-pnp-notification-overview-kg"></a>
+
 
 
 The PnP manager provides a mechanism for drivers and applications to be notified when certain events occur on a specific device or on the system in general. A driver can register for notification of the following categories of events:

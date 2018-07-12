@@ -27,7 +27,7 @@ The steps for the driver developer are described in [Hardware Support App (HSA):
 
 ## Getting Started
 
-First, install the latest version of Visual Studio and create a UWP app project.  To build a UWP app with a custom capability, you'll need Windows SDK version 10.0.15063 (Windows 10 Creators Update) or later. For more help getting configured, see [Develop UWP apps using Visual Studio](https://developer.microsoft.com/en-us/windows/apps/develop).
+First, install the latest version of Visual Studio and create a UWP app project.  To build a UWP app with a custom capability, you'll need Windows SDK version 10.0.15063 (Windows 10 Creators Update) or later. Your project file must also specify version 10.0.15063 or higher. For more help getting configured, see [Develop UWP apps using Visual Studio](https://developer.microsoft.com/en-us/windows/apps/develop).
 
 Starting in Windows 10 version 1709, you can specify that a Universal Windows Platform (UWP) app should only load if a specific driver is present.  To learn how, see [Pairing a driver with a UWP app](../install/pairing-app-and-driver-versions.md).
 

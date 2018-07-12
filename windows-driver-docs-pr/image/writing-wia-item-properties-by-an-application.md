@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Writing WIA Item Properties by an Application
 
 
-## <a href="" id="ddk-writing-wia-item-properties-by-an-application-si"></a>
+
 
 
 When a WIA application writes to a WIA property (and updates the value stored in the property), the WIA service gives the WIA minidriver the opportunity to validate incoming values by calling the [**IWiaMiniDrv::drvValidateItemProperties**](https://msdn.microsoft.com/library/windows/hardware/ff545017) method. The WIA minidriver compares the incoming values to any current values by reading the properties in its own driver item tree. The WIA service library provides functions for accessing these values.

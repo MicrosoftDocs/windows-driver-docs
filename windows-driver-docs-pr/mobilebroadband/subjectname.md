@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # SubjectName
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The SubjectName element specifies the Subject Name of a trusted certificate.
 

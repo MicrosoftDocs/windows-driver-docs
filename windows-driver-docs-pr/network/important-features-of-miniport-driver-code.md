@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Important Features of Miniport Driver Code
 
 
-## <a href="" id="ddk-important-features-of-miniport-driver-code-ng"></a>
+
 
 
 This section introduces major features of miniport driver code. These features are described in the following topics:

@@ -9,7 +9,7 @@ keywords: ["property sheets WDK DirectInput , creating", "game controllers WDK D
 # Creating Your Property Sheet
 
 
-## <a href="" id="ddk-creating-your-property-sheet-di"></a>
+
 
 
 This example demonstrates many aspects of DirectInput and provides a good starting point for your own custom property sheet.

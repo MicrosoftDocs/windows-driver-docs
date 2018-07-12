@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Minidriver Debugging
 
 
-## <a href="" id="ddk-wia-minidriver-debugging-si"></a>
+
 
 
 WIA drivers execute inside the WIA service process. Therefore, in order to perform user-mode debugging of these drivers, you must connect the debugger to the WIA service. There are several different ways to do this; this topic presents two of them. (See Debugging Services in the Microsoft Windows SDK documentation for additional information).

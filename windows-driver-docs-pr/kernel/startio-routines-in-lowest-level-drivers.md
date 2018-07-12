@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # StartIo Routines in Lowest-Level Drivers
 
 
-## <a href="" id="ddk-startio-routines-in-lowest-level-drivers-kg"></a>
+
 
 
 The I/O manager's call to a driver's dispatch routine is the first stage in satisfying a device I/O request. The [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) routine is the second stage. Every device driver with a *StartIo* routine is likely to call [**IoStartPacket**](https://msdn.microsoft.com/library/windows/hardware/ff550370) from its [*DispatchRead*](https://msdn.microsoft.com/library/windows/hardware/ff543376) and [*DispatchWrite*](https://msdn.microsoft.com/library/windows/hardware/ff544034) routines, and usually for a subset of the I/O control codes it supports in its [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287) routine. The **IoStartPacket** routine adds the IRP to the device's system-supplied device queue or, if the queue is empty, immediately calls the driver's *StartIo* routine to process the IRP.

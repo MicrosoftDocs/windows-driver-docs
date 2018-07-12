@@ -46,7 +46,7 @@ The IHV can define certain Microsoft operating system (OS) feature descriptors t
 <a href="" id="setting-a-container-id-for-an-external-device-by-using-microsoft-os-descriptors"></a>Setting a container ID for an external device by using Microsoft OS descriptors  
 See [Setting a container ID](#container).
 
-## <a href="" id="container"></a>Setting a container ID
+## Setting a container ID
 
 
 [Container IDs for USB Devices](https://msdn.microsoft.com/library/windows/hardware/ff540084)  

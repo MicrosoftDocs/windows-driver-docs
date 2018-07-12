@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # NDIS Power Management Overview
 
 
-## <a href="" id="ddk--nr"></a>
+
 
 
 This section provides an overview of the features that are provided with the power management interface that is introduced in Windows 7 for NDIS 6.20 drivers.
@@ -28,8 +28,6 @@ The NDIS 6.20 power management interface supports:
 For information about the WOL event sequences that NDIS uses to set a low-power state and restore full power, see [Low Power for Wake on LAN](low-power-for-wake-on-lan.md).
 
 The NDIS 6.20 power management also supports:
-
--   NDIS 6.20 WOL WLAN enhancements. If necessary, a network adapter can handle IEEE 802.11 group temporal key (GTK) rekey requests in a low-power state. For more information about WLAN enhancements, see [Native 802.11 Wireless LAN Miniport Adapter Power Management](wake-on-wireless-lan.md).
 
 -   NDIS 6.20 can return the network adapter to a full-power state when the media connects. The operating system puts the network adapter in a low-power state when the media is disconnected. For more information about setting a low-power state when media disconnects, see [Low Power on Media Disconnect](low-power-on-media-disconnect.md).
 

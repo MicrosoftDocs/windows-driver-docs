@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Writing NDIS Miniport Drivers
 
 
-## <a href="" id="ddk-writing-ndis-miniport-drivers-ng"></a>
+
 
 
 This section provides an overview of miniport driver operations for NDIS. NDIS miniport drivers provide *MiniportXxx* functions that NDIS calls to initiate operations. NDIS provides **Ndis*Xxx*** functions that miniport drivers call to perform operations.

@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # DispatchCleanup Routines
 
 
-## <a href="" id="ddk-dispatchcleanup-routines-kg"></a>
+
 
 
 A driver's [*DispatchCleanup*](https://msdn.microsoft.com/library/windows/hardware/ff543233) routine handles IRPs for the [**IRP\_MJ\_CLEANUP**](https://msdn.microsoft.com/library/windows/hardware/ff550718) I/O function code.

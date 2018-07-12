@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # FLT\_PARAMETERS for IRP\_MJ\_RELEASE\_FOR\_SECTION\_SYNCHRONIZATION
 
 
-## <a href="" id="ddk-flt-parameters-for-irp-mj-release-for-section-synchronization-if"></a>
+
 
 
 There are no parameters for IRP\_MJ\_RELEASE\_FOR\_SECTION\_SYNCHRONIZATION.

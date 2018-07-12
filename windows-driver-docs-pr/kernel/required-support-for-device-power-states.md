@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Required Support for Device Power States
 
 
-## <a href="" id="ddk-required-support-for-device-power-states-kg"></a>
+
 
 
 Consult the relevant Device Class Power Management Reference Specification to find out which device power states are defined for the class of device with which you are working with and what the operational requirements are for each state. These specifications are available at the [ACPI / Power Management](http://go.microsoft.com/fwlink/p/?linkid=57185) website.

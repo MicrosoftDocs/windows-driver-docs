@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # NDIS 6.0 Task Offload Porting Issues
 
 
-## <a href="" id="ddk-ndis-6-0-task-offload-porting-issues-ng"></a>
+
 
 
 This section summarizes how you can port NDIS drivers that provide offload services to NDIS 6.0. NDIS 6.0 supports the task offload services that NDIS 5.1 supports, enhances the NDIS 5.1 services, and provides additional offload services that are not included in NDIS 5.1 and earlier versions. To enable NDIS 5.1 and earlier drivers to exist in a driver stack with NDIS 6.0 drivers, NDIS provides translation services.

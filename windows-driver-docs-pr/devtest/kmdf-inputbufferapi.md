@@ -1,6 +1,11 @@
 ---
 title: InputBufferAPI rule (kmdf)
 ms.assetid: 11388ffa-633d-4129-9693-a351ec8b0735
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 description: 
 keywords: ["InputBufferAPI rule (kmdf)"]
 topic_type:

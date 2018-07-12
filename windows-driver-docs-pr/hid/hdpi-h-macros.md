@@ -15,7 +15,7 @@ This topic documents the following macros:
 * [**HidP\_UnsetButtons**](#HidPUnsetButtons)
 
 
-## <a href="" id="HidPGetButtons"></a> HidP\_GetButtons
+##  HidP\_GetButtons
 
 
 The **HidP\_GetButtons** macro is a mnemonic alias for the [**HidP\_GetUsages**](https://msdn.microsoft.com/library/windows/hardware/ff539742) routine.
@@ -25,7 +25,7 @@ The **HidP\_GetButtons** macro is a mnemonic alias for the [**HidP\_GetUsages**]
         HidP_GetUsages(Rty, UPa, LCo, ULi, ULe, Ppd, Rep, RLe)
 ```
 
-## <a href="" id="HidPGetButtonsEx"></a> HidP\_GetButtonsEx
+##  HidP\_GetButtonsEx
 
 
 The **HidP\_GetButtonsEx** macro is an mnemonic alias for the [**HidP\_GetUsagesEx**](https://msdn.microsoft.com/library/windows/hardware/ff539745) routine.
@@ -36,7 +36,7 @@ The **HidP\_GetButtonsEx** macro is an mnemonic alias for the [**HidP\_GetUsages
 ```
 
 
-## <a href="" id="HidPSetButtons"></a> HidP\_SetButtons
+##  HidP\_SetButtons
 
 
 The **HidP\_SetButtons** macro is a mnemonic alias for the [**HidP\_SetUsages**](https://msdn.microsoft.com/library/windows/hardware/ff539792) routine.
@@ -46,7 +46,7 @@ The **HidP\_SetButtons** macro is a mnemonic alias for the [**HidP\_SetUsages**]
         HidP_SetUsages(Rty, Up, Lco, ULi, ULe, Ppd, Rep, Rle)
 ```
 
-## <a href="" id="HidPUnsetButtons"></a> HidP\_UnsetButtons
+##  HidP\_UnsetButtons
 
 
 The **HidP\_UnsetButtons** macro is a mnemonic alias for the [**HidP\_UnsetUsages**](https://msdn.microsoft.com/library/windows/hardware/ff539819) routine.

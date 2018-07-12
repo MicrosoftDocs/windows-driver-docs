@@ -30,7 +30,7 @@ MSBDD can use the video BIOS to manage modes and resolutions on a single monitor
 
     For example, a user has an older platform that is currently in working condition although it has no in-box graphics driver support for Windows 8. The user upgrades to Windows 8 and uses MSBDD for the setup, installation, and to retrieve an IHV driver if one is available.
 
--   â€¢ Driver installation, in the following cases:
+-   Driver installation, in the following cases:
     -   When a user is installing a new WDDM IHV driver, MSBDD is used during the transition (from the point when the old WDDM IHV driver is uninstalled to the point before the new IHV driver is installed).
     -   When a user encounters problems installing the latest WDDM IHV driver, the user or system can disable the current graphics driver and fallback to using MSBDD.
 -   Driver upgrade: By using MSBDD, there is no need to go through a system reboot when upgrading to the IHV-recommended driver.

@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Combined Language and Port Monitor
 
 
-## <a href="" id="ddk-combined-language-and-port-monitor-gg"></a>
+
 
 
 Specialized printer hardware can be supported by a single customized print monitor that acts as a combined language and port monitor. If such a monitor requires user interaction to obtain configuration parameters, it must be divided into a UI DLL and a server DLL, following the model for [port monitors](port-monitors.md). Language-related functionality belongs in the server DLL.

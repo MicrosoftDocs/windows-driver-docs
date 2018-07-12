@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Named Device Objects
 
 
-## <a href="" id="ddk-named-device-objects-kg"></a>
+
 
 
 A device object, like all object manager objects, can be named or unnamed. When a user-mode application makes an I/O request, it specifies the target of the operation by name. The object manager resolves the name to determine the destination of the I/O request.

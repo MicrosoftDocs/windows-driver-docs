@@ -59,7 +59,7 @@ After being submitted to the Windows Hardware Dev Center Dashboard, you can prom
     > [!IMPORTANT] 
     > Please note the following:
     > * It is recommended to avoid requiring a reboot after driver installation. 
-    > * Drivers that deploy UI and/or software during installation are not windows 10 S compliant, and cannot be flighted to this operating system.
+    > * Drivers that deploy UI and/or software during installation are not Windows 10 in S mode compliant, and cannot be flighted to this operating system.
     > * A co-engineering driver is a driver being developed for an unreleased version of Windows. co-engineering drivers: 
     >    * will only be distributed to applicable devices in the Microsoft insider program during the flighting process.
     >    * Will not be distributed to devices that are not a part of the Microsoft insider program after a successful flight.

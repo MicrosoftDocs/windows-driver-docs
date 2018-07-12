@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Printer Graphics DLL
 
 
-## <a href="" id="ddk-printer-graphics-dll-gg"></a>
+
 
 
 This section provides the following topics:

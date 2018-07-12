@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Porting Protocol Driver Status Indication Handling to CoNDIS 6.0
 
 
-## <a href="" id="ddk-porting-protocol-driver-status-indication-handling-to-condis-6-0-n"></a>
+
 
 
 In CoNDIS 6.0, the [**ProtocolCoStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff570258) function replaces the NDIS 5.x [**ProtocolCoStatus**](https://msdn.microsoft.com/library/windows/hardware/ff563235) function. Status indication parameters are packaged within an [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure that contains the source handle, status code, buffer, and size.

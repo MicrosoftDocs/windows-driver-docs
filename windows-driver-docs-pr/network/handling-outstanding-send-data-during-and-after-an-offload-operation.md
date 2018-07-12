@@ -19,7 +19,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-handling-outstanding-send-data-during-and-after-an-offload-operati"></a>
+
 
 
 When the host stack initiates the offload of a TCP connection, there might be outstanding send data on the connection. This data can include:

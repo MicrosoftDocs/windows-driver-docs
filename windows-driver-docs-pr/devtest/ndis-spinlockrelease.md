@@ -2,6 +2,11 @@
 title: SpinLockRelease rule (ndis)
 description: The SpinLockRelease rule specifies that a driver must not release a spin lock (NdisReleaseSpinLock) without first acquiring it.
 ms.assetid: D9E69C92-6EB4-4981-A7FE-3B987BC84C97
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["SpinLockRelease rule (ndis)"]
 topic_type:
 - apiref

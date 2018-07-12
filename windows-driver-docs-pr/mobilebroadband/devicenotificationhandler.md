@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # DeviceNotificationHandler
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The DeviceNotificationHandler element specifies a device notification handler. A device notification handler allows you to run code in response to events, such as mobile network operator administrative SMS or USSD notifications, even if the Microsoft Store app is not running. For more information about implementing a notification handler, see the [Mobile Operator Notifications](http://go.microsoft.com/fwlink/?linkid=242062) white paper.
 

@@ -19,17 +19,6 @@ The Port Class Library (portcls.sys) implements a variety of helper objects that
 
 The following interfaces are described in this section:
 
-[IDmaChannel](https://msdn.microsoft.com/library/windows/hardware/ff536547)
-
-Used to manage a DMA channel for a master or subordinate device. The channel has an associated common buffer and usage parameters.
-
-[IDmaChannelSlave](https://msdn.microsoft.com/library/windows/hardware/ff536548)
-
-A DMA channel with specialized operations for subordinate devices.
-
-[IDmaOperations](https://msdn.microsoft.com/library/windows/hardware/ff536566)
-
-Encapsulates the DMA operations that are accessed through the table of function pointers in a [**DMA\_OPERATIONS**](https://msdn.microsoft.com/library/windows/hardware/ff544071) structure.
 
 [IDrmPort](https://msdn.microsoft.com/library/windows/hardware/ff536571)
 

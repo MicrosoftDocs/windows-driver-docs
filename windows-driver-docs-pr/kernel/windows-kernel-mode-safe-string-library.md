@@ -10,7 +10,7 @@ ms.assetid: a54cd20c-2c2d-462d-b9fc-112e99562e52
 
 One of the major problems in software security is related to the vulnerability of working with strings. To provide greater security, Windows provides a safe string library.
 
-Safe string library routines are prefixed with the letters "**Rtl**"; for a list of all safe string library routines for the kernel, see [Safe String Library Routines](https://msdn.microsoft.com/library/windows/hardware/ff563648).
+Safe string library routines are prefixed with the letters "**Rtl**"; for a list of all safe string library routines for the kernel, see [Safe String Library Routines](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/_kernel/#run-time-library-rtl-routines).
 
 For more information about using safe strings, see [Using Safe String Functions](using-safe-string-functions.md).
 

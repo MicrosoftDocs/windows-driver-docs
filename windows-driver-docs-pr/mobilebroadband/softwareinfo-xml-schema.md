@@ -11,6 +11,7 @@ ms.technology: windows-devices
 
 # SoftwareInfo XML schema
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 A metadata package contains one SoftwareInfo.xml document, which contains information that the operating system downloads a UWP app. This information results in privileged access for apps.
 

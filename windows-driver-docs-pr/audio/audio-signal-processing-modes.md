@@ -3,7 +3,7 @@ title: Audio Signal Processing Modes
 description: Drivers declare the supported audio signal processing modes for each device.
 ms.assetid: 104275F8-2302-484B-B673-7448CAA1F793
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/14/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -168,7 +168,7 @@ Applications have no visibility into how many modes are present, with the except
 
 Applications should request the optimal audio effect processing, regardless of the audio hardware configuration. For example, tagging a stream as Communications will let Windows know to pause background music.
 
-For more information about the static audio stream categories, see [AudioCategory enumeration](https://msdn.microsoft.com/en-US/library/windows/apps/windows.ui.xaml.media.audiocategory.aspx) and [MediaElement.AudioCategory property](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.mediaelement.audiocategory.aspx).
+For more information about the static audio stream categories, see [AudioCategory enumeration](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.media.audiocategory.aspx) and [MediaElement.AudioCategory property](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.mediaelement.audiocategory.aspx).
 
 ## <span id="CLSIDs_for_System_Effects"></span><span id="clsids_for_system_effects"></span><span id="CLSIDS_FOR_SYSTEM_EFFECTS"></span>CLSIDs for System Effects
 

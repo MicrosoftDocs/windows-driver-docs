@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Registry Settings for a Legacy COM Port
 
 
-## <a href="" id="ddk-registry-settings-for-a-legacy-com-port-kg"></a>
+
 
 
 This topic describes the registry settings that Serial uses with legacy [COM ports](configuration-of-com-ports.md). Serial always configures a legacy serial device as a COM port.

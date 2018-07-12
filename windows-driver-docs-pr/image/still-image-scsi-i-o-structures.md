@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Still Image SCSI I/O Structures
 
 
-## <a href="" id="ddk-still-image-scsi-i-o-structures-si"></a>
+
 
 
 The following table lists and describes all of the structures associated with the I/O Control Codes recognized by the kernel-mode still image driver for SCSI buses.

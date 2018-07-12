@@ -16,7 +16,7 @@ ms.technology: windows-devices
 This function is reserved for system use.
 
 
-## <a href="" id="ddk-cm-prob-failed-driver-entry-dg"></a>
+
 
 
 The driver returned failure from its **DriverEntry** routine.

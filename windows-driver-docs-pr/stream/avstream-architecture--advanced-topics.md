@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # AVStream Architecture: Advanced Topics
 
 
-## <a href="" id="ddk-avstream-architecture-advanced-topics-ksg"></a>
+
 
 
 This section contains the following information:

@@ -2,6 +2,11 @@
 title: StorPortTimer rule (storport)
 description: The HW\_TIMER routine must be defined if a call to StorPortNotification(RequestTimerCall) is made.
 ms.assetid: 863AA6C2-A3EC-41F9-88D9-6852A42D2636
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["StorPortTimer rule (storport)"]
 topic_type:
 - apiref

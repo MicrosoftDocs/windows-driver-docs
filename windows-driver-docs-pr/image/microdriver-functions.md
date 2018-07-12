@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Microdriver Functions
 
 
-## <a href="" id="ddk-microdriver-functions-si"></a>
+
 
 
 The WIA Flatbed Driver responds to requests from the WIA service by calling the WIA microdriver functions. These functions must be implemented by every vendor-supplied microdriver and consist of the following:

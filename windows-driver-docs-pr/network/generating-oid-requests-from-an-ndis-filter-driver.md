@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Generating OID Requests from an NDIS Filter Driver
 
 
-## <a href="" id="ddk-generating-oid-requests-from-an-ndis-filter-driver-ng"></a>
+
 
 
 A filter driver can originate OID query or set requests to underlying drivers by calling the [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830) function.

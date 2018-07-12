@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # USB-Level Initialization
 
 
-## <a href="" id="ddk-usb-level-initialization-ng"></a>
+
 
 
 The host issues standard USB requests to obtain a set of standard USB descriptors for the device. The relevant portions of those descriptors are given below. See the USB Specification for generic USB device initialization.

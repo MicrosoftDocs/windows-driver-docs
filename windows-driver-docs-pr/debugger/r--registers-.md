@@ -4,7 +4,7 @@ description: The r command displays or modifies registers, floating-point regist
 ms.assetid: c0d0af2f-1852-47a4-8f01-95f6ec198112
 keywords: ["r (Registers) Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 07/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,6 +58,15 @@ Displays the AVX YMM registers. This option is equivalent to **M 0x200**.
 
 <span id="_______YI______"></span><span id="_______yi______"></span> **YI**   
 Displays the AVX YMM integer registers. This option is equivalent to **M 0x400**.
+
+<span id="_______YI______"></span><span id="_______yi______"></span> **Z**   
+Displays the AVX-512 YMM registers (zmm0-zmm31) in floating point format. 
+
+<span id="_______YI______"></span><span id="_______yi______"></span> **ZI**   
+Displays the AVX-512 YMM registers (zmm0-zmm31) in integer format. 
+
+<span id="_______YI______"></span><span id="_______yi______"></span> **K**   
+Display the AVX-512 Opmask predicate registers (K0-K7).
 
 <span id="______________"></span> **?**   
 (Pseudo-register assignment only) Causes the pseudo-register to acquire typed information. Any type is permitted. For more information about the **r?** syntax, see [Debugger Command Program Examples](debugger-command-program-examples.md).

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Responding to Sets and Queries in an Intermediate Driver
 
 
-## <a href="" id="ddk-responding-to-sets-and-queries-in-an-intermediate-driver-ng"></a>
+
 
 
 Because an NDIS intermediate driver is bound to an overlying NDIS driver, it can also receive queries and sets from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function. In some cases, the intermediate driver just passes such requests through to the underlying miniport driver. Otherwise, it can respond to these queries and sets as appropriate to the medium that it exports at its upper edge. Note that an intermediate driver must always pass through any OID\_PNP\_*Xxx* requests that it receives from an overlying NDIS driver to the underlying miniport driver. NDIS 6.0 intermediate drivers can also cancel OID requests.

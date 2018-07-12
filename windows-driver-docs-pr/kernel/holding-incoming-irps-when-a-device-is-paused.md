@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Holding Incoming IRPs When A Device Is Paused
 
 
-## <a href="" id="ddk-holding-incoming-irps-when-a-device-is-paused-kg"></a>
+
 
 
 The drivers for a device must pause the device when its resources are being rebalanced. During resource rebalancing, some drivers pause the device in response to an [**IRP\_MN\_QUERY\_STOP\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551725) request and other drivers delay pausing the device until they receive the [**IRP\_MN\_STOP\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551755) request. In either case, the device must be paused when the **IRP\_MN\_STOP\_DEVICE** succeeds.

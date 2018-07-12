@@ -3,7 +3,7 @@ title: GNSS driver architecture
 description: Provides an overview of GNSS UMDF 2.0 driver architecture, I/O considerations, and discusses several types of tracking and fix sessions.
 ms.assetid: 11B54F92-DC84-4D74-9BBE-C85047AD2167
 ms.author: windowsdriverdev
-ms.date: 02/07/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,7 +31,7 @@ The components in the diagram are described here:
 
 -   **GNSS adapter:** This is a singleton COM object that implements the **IGnssAdapter** COM interface. Test applications and internal components of the location service instantiates this object and use the GNSS device through the **IGnssAdapter** interface. The GNSS positioning engine component of the location service implements the COM class that exposes the **IGnssAdapter** interface. The location service exposes a factory mechanism to test and other out-of-process applications for instantiating a singleton COM object of the GNSS adapter COM class within the location service. Out-of-process applications use the COM interface pointer to program against the GNSS driver.
 
-    > [!NOTE] 
+    > [!NOTE]
     > COM handles proxy the interface pointer to the out-of-process applications so that the applications treats the **IGnssAdapter** interface pointer as an in-process COM object, but the calls are actually handled by the singleton GNSS adapter object within the location service.
 
     The GNSS positioning engine uses the internal GNSS adapter object for providing location-specific functionality to the location service. The GNSS adapter opens a file handle to the GNSS driver using the **CreateFile** API, then wraps the GNSS native APIs calls into appropriate **DeviceIoControl** calls, maintains the state machine with the GNSS driver object, and maintains the state of the various incoming requests from the upper layers. This component interacts directly with the underlying GNSS device stack through the public GNSS IOCTL interface defined in this document. The GNSS device is logically treated as an exclusive resource and hence the singleton GNSS adapter controls all access to the GNSS device.
@@ -39,7 +39,7 @@ The components in the diagram are described here:
     > [!NOTE]
     > Certain white-box driver test applications can also use the GNSS driver IOCTL interface directly in a non-production environment instead of using the GNSS adapter through the GNSS private APIs. However, these test applications will have to implement their own state machine and processing to mimic certain functionalities of the GNSS adapter.
 
-     
+
 
 -   **GNSS driver:** An IHV-delivered driver implemented using UMDF 2.0. The GNSS driver supports the GNSS **DeviceIoControl** APIs by interfacing with the actual GNSS hardware. The GNSS driver also works as a mediator/integrator for the SUPL functions.
 
@@ -48,7 +48,7 @@ The components in the diagram are described here:
 ## Support for GNSS devices and drivers that follow the legacy Windows model
 
 
-The location platform in Windows 10 supports GNSS devices integrated via the legacy Sensors v1.0 class driver (see [Writing a location sensor driver](writing-a-location-sensor-driver.md)) or integrated via the new GNSS DDI described in thr [GNSS driver reference](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/gnssdriver).
+The location platform in Windows 10 supports GNSS devices integrated via the legacy Sensors v1.0 class driver (see [Writing a location sensor driver](writing-a-location-sensor-driver.md)) or integrated via the new GNSS DDI described in thr [GNSS driver reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gnssdriver).
 
 Therefore, Windows devices with a GNSS device that integrate with the Sensor v1.0 class extension model that existed in Windows 7, Windows 8, and Windows 8.1 are expected to continue working in Windows 10 without the need of any changes. It is strongly recommended for these drivers (and any new drivers) to be published to Windows Update to improve the upgrade process for our users.
 
@@ -115,7 +115,7 @@ The act of retrieving position information from the GNSS driver happens through 
 
 2.  **Get device position (fix data):** Once a fix session is started, the GNSS adapter issues control code [**IOCTL\_GNSS\_GET\_FIXDATA**](https://msdn.microsoft.com/library/windows/hardware/dn917731) to start waiting for a fix from the driver. When a new position information is available from the engine , the GNSS driver responds to this pending get fix request.
 
-    > [!NOTE] 
+    > [!NOTE]
     > If fix session type is LKG fix (rather than current fix), the position information comes from the driver’s cache.
 
     The GNSS adapter makes sure that an asynchronous I/O request is always available for the GNSS driver to return the fix data when available. Depending on the nature of the fix, if more fix data is expected, the GNSS adapter issues another I/O request (using the same IOCTL) and this sequence continues till no more data will be available or the fix session is stopped.
@@ -128,7 +128,7 @@ The act of retrieving position information from the GNSS driver happens through 
 
 The GNSS DDI supports geofence offloading scenarios using a set of IOCTLs defined in this specification. A special capability flag is defined for the driver to indicate this support, this flag must only be set if the GNSS stack supports geofencing natively (i.e. it implements geofencing in the GNSS chip rather than in the application processor). If the driver does not natively support geofence, the flag shall not be set. The HLOS already supports a suboptimal application processor (AP)-based geofence tracking engine; while this solution is not as power optimized as a native solution can be, it is well tested and optimized, thus it should not be replaced by a equivalent solution implemented in the AP.
 
-> [!NOTE] 
+> [!NOTE]
 > Geofence tracking by the HLOS requires the application processor to wake up periodically to detect geofence breaches, thereby draining power even when fences are not breached. Therefore, this implementation is considered to be suboptimal.
 
 The HLOS also uses the AP-based geofence tracking as a failover mechanism when the underlying driver is unable to track geofences due to low signal conditions or other transient errors, upon error notifications received from the native geofence tracking solution.
@@ -206,7 +206,7 @@ Logging messages with WPP software tracing is similar to using Windows event log
 
 The IHV supplied GNSS stack (the GNSS driver, the GNSS device/engine) is required to support the various mobile operator positioning protocols (SUPL, UPL, CP, and so on). Failure to do so means that the device will not pass acceptance from mobile operators and will significantly limit where the device can be commercialized.
 
-> [!NOTE] 
+> [!NOTE]
 > Support for these protocols and compliance with mobile operator requirements is mandatory in order to ship devices for certain mobile operators. The support for mobile operator protocols may not be essential for most non-phone platforms, specially if the platform does not include mobile broadband (MBB) support.
 
 All implementation pieces are abstracted in the IHV stack and the Microsoft HLOS components are agnostic to:
@@ -222,21 +222,21 @@ To facilitate the implementation of the mobile operator protocols and reduce the
 
 1.  **Configuration:** The mobile operators provision the device and change configuration using the configuration mechanism imposed by the OMA protocol standards. E.g., SUPL standard requires the SUPL configuration to be done based on the UICC and/or be done using the SUPL OMA configuration profile information obtained via OMA-DM or OMA-CP.
 
-    > [!NOTE] 
+    > [!NOTE]
     > Certain functionality available in phone for configuration purposes (OMA-DM and OMA CP) was not available in other platforms until Windows 10. Starting in Windows 10 all platforms can support SUPL configuration via the SUPL Configuration Service Provider (CSP), as far as the new GNSS DDI is used. The provisioning injected through the CSP can come from the image itself (through provxml or multivariant) or from the mobile operator via OMA-DM or OMA-CP.
 
     Windows 10 defines a proprietary technology, device management using a Configuration Service Provider (CSP), for interpreting and extracting the configuration data. Microsoft provides a CSP for consuming the OMA configuration and pushing the configuration to the GNSS driver through the GNSS adapter.
 
-    > [!NOTE] 
+    > [!NOTE]
     > Alternatively, the IHV can also write user-mode component to consume the mobile operator configuration specification using the phone-specific device management technology (CSPs). However, this will be an additional burden on IHV and not recommended.
 
     Only one SUPL configuration is supported in a system, including in cases of dual SIM devices. Microsoft provides the functionality to reconfigure SUPL based on UICC and on UICC change. In addition to this, in case of the device roaming, the HLOS re-configures the SUPL client to work in standalone mode. This document defines the IOCTLs for pushing such configuration data for a variety of mobile operation protocols (SUPL 1.0 and 2.0, v2UPL, and so on).
 
-2.  **User consent UI:** To meet privacy requirements, certain network initiated positioning requests need user consent. IHVs are not allowed to write UI for platform components. Hence the GNSS adapter handles the UI for user consent on behalf of the GNSS driver. The notification IOCTLs for the GNSS driver to request a UI popup, and the IOCTLs for the GNSS adapter to convey the user response to such a request are defined in [GNSS driver IOCTLs](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/gnssdriver).
+2.  **User consent UI:** To meet privacy requirements, certain network initiated positioning requests need user consent. IHVs are not allowed to write UI for platform components. Hence the GNSS adapter handles the UI for user consent on behalf of the GNSS driver. The notification IOCTLs for the GNSS driver to request a UI popup, and the IOCTLs for the GNSS adapter to convey the user response to such a request are defined in [GNSS driver IOCTLs](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gnssdriver).
 
 In order to implement a fully functional SUPL client the IHV stack will need to make use of interfaces or general functionality available in/through the OS platform. The following is the list of functionality available in Windows 10 that IHVs can leverage to implement their SUPL client:
 
-> [!NOTE] 
+> [!NOTE]
 >  None of the this functionality is part of the location platform or the GNSS DDI, but it is included here for clarification and to help GNSS driver developers understand what can be leveraged from the OS to implement the SUPL functionality.
 
 ![SUPL client interaction with a GNSS driver](images/gnss-architecture-6.png)
@@ -329,7 +329,7 @@ The sequence description is as follows:
 
 9.  The GNSS adapter closes the driver file handle using the **CloseHandle** API.
 
-The GNSS IOCTLs and associated data structures are described in detail in the [GNSS driver reference](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/gnssdriver/).
+The GNSS IOCTLs and associated data structures are described in detail in the [GNSS driver reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gnssdriver/).
 
 ## Distance-based tracking session
 
@@ -575,7 +575,7 @@ The following table provides some scenarios for handling single shot and time-ba
 </tbody>
 </table>
 
- 
+
 
 If there are simultaneously both a time-based and a distance-based tracking session, the GNSS engine accuracy tracking can be set to work with the smallest of the two. The following table also provide some guidelines for the case of disparate values for the accuracy required when there are simultaneous single shot and tracking sessions:
 
@@ -685,11 +685,11 @@ If there are simultaneously both a time-based and a distance-based tracking sess
 </tbody>
 </table>
 
- 
 
- 
 
- 
+
+
+
 
 
 

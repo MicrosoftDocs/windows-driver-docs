@@ -23,7 +23,7 @@ ms.technology: windows-devices
 # Broadcast Driver Architecture Drivers
 
 
-## <a href="" id="ddk-broadcast-driver-architecture-drivers-ksg"></a>
+
 
 
 Broadcast Driver Architecture (BDA) drivers control hardware that manipulate a digital broadcast signal. The following sections describe how to design BDA drivers:

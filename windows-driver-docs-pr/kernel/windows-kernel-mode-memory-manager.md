@@ -20,7 +20,7 @@ For more detailed information about memory management for drivers, see [Memory M
 
 Routines that provide a direct interface to the memory manager are usually prefixed with the letters "**Mm**"; for example, **MmGetPhysicalAddress**. For a list of memory manager routines, see [Memory Manager Routines](https://msdn.microsoft.com/library/windows/hardware/ff554435).
 
-For lists of memory manager routines sorted by functionality, see [Memory Allocation and Buffer Management](https://msdn.microsoft.com/library/windows/hardware/ff554422).
+For lists of memory manager routines sorted by functionality, see [Memory Allocation and Buffer Management](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/_kernel/#memory-allocation-and-buffer-management).
 
  
 

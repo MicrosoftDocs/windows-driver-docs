@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Plotter Driver Components
 
 
-## <a href="" id="ddk-plotter-driver-components-gg"></a>
+
 
 
 MSPlot components consist of DLLs and binary data files, as illustrated in the following diagram.

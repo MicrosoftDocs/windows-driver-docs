@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Querying or Setting Information
 
 
-## <a href="" id="ddk-querying-or-setting-information-ng"></a>
+
 
 
 CoNDIS protocol drivers and NDIS can send OID requests to underlying drivers. CoNDIS protocol drivers and miniport call managers (MCMs) can also send OID requests to other protocol drivers.

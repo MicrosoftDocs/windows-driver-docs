@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Remote NDIS To USB Mapping
 
 
-## <a href="" id="ddk-remote-ndis-to-usb-mapping-ng"></a>
+
 
 
 This section includes the following topics:

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 
 There are three kinds of WDM drivers: bus drivers, function drivers, and filter drivers.
 
-## <a href="" id="ddk-types-of-wdm-drivers-kg"></a>
+
 
 
 -   A [bus driver](bus-drivers.md) drives an individual I/O bus device and provides per-slot functionality that is device-independent. Bus drivers also detect and report child devices that are connected to the bus.

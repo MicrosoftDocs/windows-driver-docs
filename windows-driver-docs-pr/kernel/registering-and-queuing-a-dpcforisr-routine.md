@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Registering and Queuing a DpcForIsr Routine
 
 
-## <a href="" id="ddk-registering-and-queuing-a-dpcforisr-routine-kg"></a>
+
 
 
 A driver registers a [*DpcForIsr*](https://msdn.microsoft.com/library/windows/hardware/ff544079) routine for a device object by calling [**IoInitializeDpcRequest**](https://msdn.microsoft.com/library/windows/hardware/ff549307) after it has created the device object. The driver can make this call from its [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine, or from [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) code that handles [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) requests.

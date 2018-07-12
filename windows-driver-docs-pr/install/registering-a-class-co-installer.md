@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Registering a Class Co-installer
 
 
-## <a href="" id="ddk-registering-a-class-co-installer-dg"></a>
+
 
 
 To register a co-installer for every device of a particular setup class, create a registry entry like the following under the **HKLM\\System\\CurrentControlSet\\Control\\CoDeviceInstallers** subkey:

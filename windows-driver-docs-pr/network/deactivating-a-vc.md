@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Deactivating a VC
 
 
-## <a href="" id="ddk-deactivating-a-vc-ng"></a>
+
 
 
 A call manager calls [**NdisCmDeactivateVc**](https://msdn.microsoft.com/library/windows/hardware/ff561657) as an essential step in closing either an outgoing or incoming call, typically after the packet exchange with network components that tears down the call (see [Client-Initiated Request to Close a Call](client-initiated-request-to-close-a-call.md) and [Incoming Request to Close a Call](incoming-request-to-close-a-call.md)). An MCM driver does the same thing by calling [**NdisMCmDeactivateVc**](https://msdn.microsoft.com/library/windows/hardware/ff562818).

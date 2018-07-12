@@ -463,7 +463,7 @@ FWPS_LAYER_NAME_RESOLUTION_CACHE_V6</p>
 <p>FWPS_LAYER_INBOUND_MAC_FRAME_ETHERNET</p>
 </td>
 <td>
-<p>The beginning of the ethernet header.</p>
+<p>The beginning of the IP header.</p>
 </td>
 </tr>
 <tr>
@@ -471,7 +471,7 @@ FWPS_LAYER_NAME_RESOLUTION_CACHE_V6</p>
 <p>FWPS_LAYER_OUTBOUND_MAC_FRAME_ETHERNET</p>
 </td>
 <td>
-<p>The beginning of the ethernet header.</p>
+<p>The beginning of the MAC header.</p>
 </td>
 </tr>
 <tr>

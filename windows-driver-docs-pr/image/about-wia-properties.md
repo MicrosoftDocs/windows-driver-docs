@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WIA Properties
 ms.assetid: 3f8cc03d-9bc2-4f2b-bccb-f055049a3d4c
 ms.author: windowsdriverdev
-ms.date: 01/24/2018
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -25,7 +25,7 @@ WIA properties can be divided into the following functional categories:
 
 [Properties for WIA File System Minidrivers](properties-for-wia-file-system-minidrivers.md)
 
-> [!NOTE]  
+> [!NOTE]
 > The properties of any device that have no effect should be marked either read-only (required properties) or removed (all others).
 
  

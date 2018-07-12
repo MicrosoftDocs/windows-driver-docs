@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Introduction to NDIS Miniport Drivers
 
 
-## <a href="" id="ddk-introduction-to-ndis-miniport-drivers-ng"></a>
+
 
 
 This section introduces miniport drivers for Windows Vista and later versions of the operating system. This section includes the following topics:

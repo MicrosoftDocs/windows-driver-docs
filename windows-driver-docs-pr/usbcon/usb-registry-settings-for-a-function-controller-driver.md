@@ -100,7 +100,7 @@ All OEMs must set the **idVendor**, **idProduct**, **ManufacturerString**, and *
 
  
 
-## <a href="" id="usbfn-configurations-registry-key"></a>USBFN\\Configurations registry key
+## USBFN\\Configurations registry key
 
 
 This table describes the values that OEMs can modify for subkeys under **HKEY\_LOCAL\_MACHINE\\CurrentControlSet\\Control**\\**USBFN**\\**Configurations**. Each subkey represents a different USB configuration. If the OEM wants to create their own interface, the OEM must define a new configuration which contains the interfaces to be used. To do this, create a subkey under **HKEY\_LOCAL\_MACHINE\\CurrentControlSet\\Control**\\**USBFN**\\**Configurations** that uses the name of the configuration and populate the subkey with the values in this table. Additionally, for the USB driver to use the new configuration, the **CurrentConfiguration** value (described in the preceding table) must be set to the name of the configuration subkey.
@@ -139,7 +139,7 @@ This table describes the values that OEMs can modify for subkeys under **HKEY\_L
 
  
 
-## <a href="" id="usbfn-interfaces-registry-key"></a>USBFN\\Interfaces registry key
+## USBFN\\Interfaces registry key
 
 
 This table describes the values that OEMs can modify for subkeys under **HKEY\_LOCAL\_MACHINE\\CurrentControlSet\\Control**\\**USBFN**\\**Interfaces**.
@@ -155,7 +155,7 @@ Each subkey represents a different USB interface. To define an interface, create
 
  
 
-## <a href="" id="usbfn-alternates-registry-key"></a>USBFN\\Alternates registry key
+## USBFN\\Alternates registry key
 
 
 The alternates subkey is used to define a single interface that has one or more alternate interfaces. This table describes the values that OEMs can modify for subkeys under **HKEY\_LOCAL\_MACHINE\\CurrentControlSet\\Control**\\**USBFN**\\**Alternates**.
@@ -170,7 +170,7 @@ Each subkey represents a different interface. To define an interface with altern
 
  
 
-## <a href="" id="usbfn-associations-registry-key"></a>USBFN\\Associations registry key
+## USBFN\\Associations registry key
 
 
 OEMs can specify associations by defining Interface Association Descriptors (IADs). Each IAD allows multiple interfaces to be grouped into a single function. This table describes the values that OEMs can modify for subkeys under **HKEY\_LOCAL\_MACHINE\\CurrentControlSet\\Control**\\**USBFN**\\**Associations**.

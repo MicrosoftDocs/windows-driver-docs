@@ -17,7 +17,7 @@ ms.technology: windows-devices
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-reporting-a-nic-s-ipsec-capabilities-ng"></a>
+
 
 
 An NDIS miniport driver specifies the current Internet protocol security (IPsec) offload configuration of a NIC in an [**NDIS\_IPSEC\_OFFLOAD\_V1**](https://msdn.microsoft.com/library/windows/hardware/ff565796) structure.Miniport drivers must include the current IPsec offload configuration in the [**NDIS\_MINIPORT\_ADAPTER\_OFFLOAD\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565930) structure. Miniport drivers call the [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) function from the [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function and pass in the information in NDIS\_MINIPORT\_ADAPTER\_OFFLOAD\_ATTRIBUTES.

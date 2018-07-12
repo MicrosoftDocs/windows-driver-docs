@@ -28,7 +28,7 @@ ms.technology: windows-devices
 # TCPMON Xcv Commands
 
 
-## <a href="" id="ddk-tcpmon-xcv-commands-gg"></a>
+
 
 
 This section describes the commands that can be specified in a call to the [**XcvData**](https://msdn.microsoft.com/library/windows/hardware/ff564255) or [**XcvDataPort**](https://msdn.microsoft.com/library/windows/hardware/ff564258) function, when it is communicating with the standard TCP/IP port monitor (TCPMON). Each command is specified by the *pszDataName* string in the call to these functions. Certain commands require an input buffer, or an output buffer, or both. The *pInputData* and *pOutputData* parameters of these functions hold the addresses of these buffers.

@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Allocating Backfill for the Data Buffer
 
 
-## <a href="" id="ddk-allocating-backfill-for-the-data-buffer-ng"></a>
+
 
 
 NDIS specifies the amount of data backfill space that the miniport driver should allocate in the **BackfillSize** member of the [**NDIS\_HD\_SPLIT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565694) structure. For more information about setting header-data split attributes, see [Initializing a Header-Data Split Provider](initializing-a-header-data-split-provider.md).

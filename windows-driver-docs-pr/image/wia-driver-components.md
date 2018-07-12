@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA Driver Components
 
 
-## <a href="" id="ddk-wia-driver-components-si"></a>
+
 
 
 The WIA minidriver can be viewed as two logical layers:

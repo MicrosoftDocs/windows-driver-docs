@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Adding Polling Event Support
 
 
-## <a href="" id="ddk-adding-polling-event-support-si"></a>
+
 
 
 To properly set up your WIA driver to report polling events, do the following:

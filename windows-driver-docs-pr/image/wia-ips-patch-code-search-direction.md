@@ -23,7 +23,7 @@ ms.technology: windows-devices
 
 The **WIA\_IPS\_PATCH\_CODE\_SEARCH\_DIRECTION** property is used to configure the direction (relative to the scan direction) in which the device searches for patch codes on each scan document page.
 
-## <span id="ddk_wia_ipa_depth_si"></span><span id="DDK_WIA_IPA_DEPTH_SI"></span>
+
 
 
 Property Type: VT\_I4

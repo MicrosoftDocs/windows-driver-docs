@@ -4,13 +4,17 @@ description: To perform kernel-mode debugging in Microsoft Visual Studio
 ms.assetid: 6E77843F-4907-4193-B987-92BD0719AE10
 keywords: ["kernel-mode debugging visual studio"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 05/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
 # <span id="debugger.performing_kernel-mode_debugging_using_visual_studio"></span>Kernel-Mode Debugging in Visual Studio
+
+> [!IMPORTANT]  
+> This feature is not available in Windows 10, version 1507 and later versions of the WDK.
+>
 
 
 To perform kernel-mode debugging in Microsoft Visual Studio:

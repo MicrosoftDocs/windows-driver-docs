@@ -16,7 +16,7 @@ Before you can establish a Hardware Dev Center hardware dashboard account, you n
 ## <span id="Step_1__Determine_which_type_of_code_signing_certificate_you_need"></span><span id="step_1__determine_which_type_of_code_signing_certificate_you_need"></span><span id="STEP_1__DETERMINE_WHICH_TYPE_OF_CODE_SIGNING_CERTIFICATE_YOU_NEED"></span>Step 1: Determine which type of code signing certificate you need
 
 
--   Microsoft accepts standard code signing and extended validation (EV) code signing certificates from partners enrolled and authorized for Kernel Mode Code Signing as part of the Microsoft Trusted Root Certificate Program. Please see <http://aka.ms/rootcert> for more information. If you already have an approved standard or EV certificate from one of these authorities, you can use it to establish a Hardware Dev Center hardware dashboard account. If you don’t have a certificate, you’ll need to buy a new one.
+-   Microsoft accepts standard code signing and extended validation (EV) code signing certificates from partners enrolled and authorized for Kernel Mode Code Signing as part of the Microsoft Trusted Root Certificate Program. If you already have an approved standard or EV certificate from one of these authorities, you can use it to establish a Hardware Dev Center hardware dashboard account. If you don’t have a certificate, you’ll need to buy a new one.
 
 -   The table below provides the details of the Certificate requirements for each of the dashboard services.
 
@@ -68,16 +68,20 @@ Before you can establish a Hardware Dev Center hardware dashboard account, you n
 <td><p>Windows Reference Design</p></td>
 <td><p>Standard or EV</p></td>
 </tr>
+<tr class="even">
+<td><p>Attestation Driver Signing</p></td>
+<td><p>EV</p></td>
+</tr>
 </tbody>
 </table>
 
  
-
-**Note**   Submissions will enforce the EV-only requirement later this year.
+> [!NOTE] 
+> The Hardware Dev Center dashboard will enforce mandatory EV certificates for submissions later this year.
 
  
 
-### <span id="standardcode"></span><span id="STANDARDCODE"></span>Code signing certificates for Hardware Dev Center hardware dashboard
+### <span id="standardcode"></span><span id="STANDARDCODE"></span>Code signing certificates for Hardware Dev Center Dashboard
 
 There are two types of code signing certificates available today:
 

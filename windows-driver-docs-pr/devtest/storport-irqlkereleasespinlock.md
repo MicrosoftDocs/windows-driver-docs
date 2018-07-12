@@ -2,6 +2,11 @@
 title: IrqlKeReleaseSpinLock rule (storport)
 description: This rule verifies that KeReleaseSpinLock is called at IRQL DISPATCH\_LEVEL only. It must also set the IRQL to the previous IRQL level. Typically this call would be preceded by a call to KeAcquireSpinLock.
 ms.assetid: A1AEE8C9-F5F1-4BBE-8291-1E61D73AFC6A
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["IrqlKeReleaseSpinLock rule (storport)"]
 topic_type:
 - apiref

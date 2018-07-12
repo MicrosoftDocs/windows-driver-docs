@@ -2,6 +2,11 @@
 title: IoBuildSynchronousFsdRequestWaitTimeout rule (wdm)
 description: The IoBuildSynchronousFsdRequestWaitTimeout rule reports a defect if it detects that this driver will wait indefinitely until the lower driver returns, as the IRP’s event is required to be signaled in the completion routine.
 ms.assetid: 8344C597-BD71-4953-95F0-F912C31EF52A
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["IoBuildSynchronousFsdRequestWaitTimeout rule (wdm)"]
 topic_type:
 - apiref

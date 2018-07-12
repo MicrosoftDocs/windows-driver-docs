@@ -50,6 +50,8 @@ The system-supplied port driver for a USB host controller registers instances of
 
 The Microsoft Windows Driver Kit (WDK) includes the [USBVIEW sample application](http://go.microsoft.com/fwlink/p/?linkid=256205). The USBVIEW uses the obsolete identifier [**GUID_CLASS_USB_HOST_CONTROLLER**](guid-class-usb-host-controller.md) to enumerate instances of this device interface class.
 
+You must include initguid.h before including any header that declares a GUID by using the DEFINE_GUID macro.
+
 Requirements
 ------------
 
@@ -61,7 +63,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td align="left"><p>Header</p></td>
-<td align="left">Usbiodef.h (include Usbiodef.h)</td>
+<td align="left">Usbiodef.h (include Usbiodef.h, initguid.h)</td>
 </tr>
 </tbody>
 </table>

@@ -18,7 +18,7 @@ SECURITY\_INFORMATION
 typedef ULONG SECURITY_INFORMATION, *PSECURITY_INFORMATION;
 ```
 
-## <a href="" id="ddk-security-information-if"></a>
+
 
 
 A value of type SECURITY\_INFORMATION is used to identify the object-related security information being set or queried. This security information includes:

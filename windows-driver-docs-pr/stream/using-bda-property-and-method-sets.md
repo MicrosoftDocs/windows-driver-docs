@@ -32,7 +32,7 @@ ms.technology: windows-devices
 # Using BDA Property and Method Sets
 
 
-## <a href="" id="ddk-using-bda-property-and-method-sets-ksg"></a>
+
 
 
 The following sections show how BDA property and method sets are used to implement a BDA minidriver:
