@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 For rendering, the v4 printer driver can utilize the existing rendering capabilities of a Print Class driver.
 
-To utilize the existing rendering capabilities of a print class driver, a v4 printer driver can use the **RequiredClass** v4 manifest directive. Using the **RequiredClass** directive causes the driver to include all the files from the specified class driver, using the driver name and the friendly name of the device as a key. That is the mechanism for linking a print class driver to a model-specific printer driver.
+To utilize the existing rendering capabilities of a print class driver, a v4 printer driver can use the **RequiredClass** v4 manifest directive. Using the **RequiredClass** directive causes the driver to include all the files from the specified class driver, using the driver/friendly name of the device and its GUID as key. That is the mechanism for linking a print class driver to a model-specific printer driver.
 
 For example, a company called Fabrikam with a print class driver named *PCL5e*, could use the following sample print driver manifest to link their print class driver to their printer driver:
 
