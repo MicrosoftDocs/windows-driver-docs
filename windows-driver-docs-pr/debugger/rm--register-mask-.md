@@ -166,54 +166,6 @@ The following *Mask* bits are supported for an x86-based processor or an x64-bas
 </table>
  
 
-The following *Mask* bits are supported for an Itanium-based processor.
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Bit</th>
-<th align="left">Value</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p></p>
-0
-1</td>
-<td align="left"><p></p>
-0x1
-0x2</td>
-<td align="left"><p>Displays the basic integer registers. (Setting one or both of these bits has the same effect.)</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>2</p></td>
-<td align="left"><p>0x4</p></td>
-<td align="left"><p>Displays the floating-point registers.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>3</p></td>
-<td align="left"><p>0x8</p></td>
-<td align="left"><p>Displays the high, floating-point registers (<strong>f32</strong> to <strong>f127</strong>).</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>4</p></td>
-<td align="left"><p>0x10</p></td>
-<td align="left"><p>Displays the user debug registers.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>5</p></td>
-<td align="left"><p>0x20</p></td>
-<td align="left"><p>(Kernel mode only) Displays the KSPECIAL_REGISTERS.</p></td>
-</tr>
-</tbody>
-</table>
-
 ## Examples
 
 Enable the integer state and segment registers.
