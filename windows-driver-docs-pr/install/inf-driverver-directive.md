@@ -40,7 +40,7 @@ The date must be specified in month/day/year order. The month and day must conta
 <a href="" id="w-x-y-z"></a>*w.x.y.z*  
 This value specifies a version number.
 
-*w*, *x*, *y*, and *z* must each be an integer that is greater than or equal to zero and less than 65535.
+Each of *w*, *x*, *y*, and *z* must be an integer that is greater than or equal to zero and less than 65535.
 
 For Windows XP SP1, Windows Server 2003 and later versions of Windows, this value is also *used* by Setup, in combination with the driver rank and date, to select a driver for a device. For more information, see [How Windows Selects Drivers](how-setup-selects-drivers.md).
 
