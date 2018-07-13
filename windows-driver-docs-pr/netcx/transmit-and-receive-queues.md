@@ -81,6 +81,6 @@ For code examples, see [*EVT_TXQUEUE_ADVANCE*](https://docs.microsoft.com/window
 
 The sequence of a polling operation is as follows:
 
-1. The OS gives buffers to the client driver 
-2. The client driver pro
-3. The client driver returns 
+1. The OS gives buffers to the client driver for either transmitting or receiving.
+2. The client driver programs the packets to hardware.
+3. The client driver returns the completed packets to the OS.
