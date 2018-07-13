@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Obtaining the Parent of a Device in the Device Tree
 
 
-## <a href="" id="ddk-obtaining-the-parent-of-a-device-in-the-device-tree-dg"></a>
+
 
 
 This topic describes how to obtain an [**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure for the parent of a device that has a device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) in the device tree.

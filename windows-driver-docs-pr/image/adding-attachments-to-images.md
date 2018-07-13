@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Adding Attachments to Images
 
 
-## <a href="" id="ddk-adding-attachments-to-images-si"></a>
+
 
 
 When an item is marked with **WiaItemTypeHasAttachments**, this means that the item has associated attachments, which are stored as child items. This is not the same as an item of type **WiaItemTypeFolder**. The main differences are:

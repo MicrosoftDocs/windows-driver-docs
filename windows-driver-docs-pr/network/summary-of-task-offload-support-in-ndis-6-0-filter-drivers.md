@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Summary of Task Offload Support in NDIS 6.0 Filter Drivers
 
 
-## <a href="" id="ddk-summary-of-task-offload-support-in-ndis-6-0-filter-drivers-ng"></a>
+
 
 
 NDIS 6.0 filter drivers can modify the task offload services that an underlying driver stack reports. You must consider the following issues when you create offload-aware filter drivers:

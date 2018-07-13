@@ -9,7 +9,7 @@ keywords: ["INF files WDK joysticks , device class setting"]
 # Setting the Device Class
 
 
-## <a href="" id="ddk-setting-the-device-class-di"></a>
+
 
 
 Joysticks fall under the MEDIA class, the one titled "Sound, video and game controllers" under the Add New Hardware control panel. The class-related sections should be copied from either the examples or the Joystick.inf file.

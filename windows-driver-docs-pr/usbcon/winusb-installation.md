@@ -3,7 +3,7 @@ Description: Install WinUSB (Winusb.sys) in the device's kernel-mode stack as th
 title: WinUSB (Winusb.sys) Installation
 author: windows-driver-content
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -252,7 +252,7 @@ To use WinUSB as the device's function driver, you create a driver package. The 
 -   WinUSB co-installer (Winusbcoinstaller.dll)
 -   KMDF co-installer (WdfcoinstallerXXX.dll)
 -   An .inf file that installs Winusb.sys as the device's function driver. For more information, see [Writing an .Inf File for WinUSB Installation](#inf).
--   A signed catalog file for the package. This file is required to install WinUSB on x64 versions of Windows Vista.
+-   A signed catalog file for the package. This file is required to install WinUSB on x64 versions of Windows starting with Vista.
 
 ![winusb installation package](images/winusb-package.jpg)
 
@@ -263,7 +263,7 @@ To use WinUSB as the device's function driver, you create a driver package. The 
 
  
 
-1.  Install the [Windows Driver Kit](http://www.microsoft.com/whdc/devtools/wdk/WDKpkg.mspx).
+1.  [Download the Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk) and install it.
 2.  Create a driver package folder on the machine that the USB device is connected to. For example, c:\\UsbDevice.
 3.  Copy the WinUSB co-installer (WinusbcoinstallerX.dll) from the **WinDDK\\***BuildNumber***\\redist\\winusb** folder to the driver package folder.
 

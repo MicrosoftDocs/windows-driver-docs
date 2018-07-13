@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Preventing BDA Minidriver Threats
 
 
-## <a href="" id="ddk-preventing-bda-minidriver-threats-ksg"></a>
+
 
 
 The threats that can be [introduced into a BDA minidriver](introducing-threats-to-a-bda-minidriver.md) can be prevented in the following ways:

@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Print Spooler Architecture
 
 
-## <a href="" id="ddk-print-spooler-architecture-gg"></a>
+
 
 
 The Microsoft Windows 2000 and later print spooler is made up of a set of Microsoft-supplied and optional vendor-supplied components, with responsibilities that include:

@@ -3,7 +3,7 @@ title: Implementing Audio Processing Objects
 description: This topic describes how to implement an audio processing object (APO). For general information about APOs, see Audio Processing Object Architecture.
 ms.assetid: 822FAF10-DAB3-48D1-B782-0C80B072D3FB
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 06/19/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -103,13 +103,12 @@ In Visual Studio locate the Solution Explorer. (If this is not already open, cho
 
 **SwapAPO Example Code**
 
-There are six projects in the SYSVAD sample Two projects are of primary interest to the APO developer.
+There are five projects in the SYSVAD sample, one of which is of primary interest to the APO developer.
 
 |                    |                                       |
 |--------------------|---------------------------------------|
 | **Project**        | **Description**                       |
 | SwapAPO            | Sample code for an example APO.       |
-| PropPageExtensions | Sample code for an APO property page. |
 
  
 
@@ -286,7 +285,7 @@ Refer to these reference topics for information on each of the APO INF file sett
 
 [PKEY\_EFX\_ProcessingModes\_Supported\_For\_Streaming](https://msdn.microsoft.com/library/windows/hardware/mt238380)
 
-The following INF file samples shows how to register audio processing objects (APOs) for specific modes. They illustrate the possible combinations available from this list.
+The following INF file samples show how to register audio processing objects (APOs) for specific modes. They illustrate the possible combinations available from this list.
 
 -   PKEY\_FX\_StreamEffectClsid with PKEY\_SFX\_ProcessingModes\_Supported\_For\_Streaming
 -   PKEY\_FX\_ModeEffectClsid with PKEY\_MFX\_ProcessingModes\_Suppoted\_For\_Streaming

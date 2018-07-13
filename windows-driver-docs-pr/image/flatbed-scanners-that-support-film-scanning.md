@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Flatbed Scanners that Support Film Scanning
 
 
-## <a href="" id="ddk-flatbed-scanners-that-support-film-scanning-si"></a>
+
 
 
 The following figure illustrates a possible WIA item tree of a flatbed scanner that supports film scanning by using the flatbed platen as the film scanning surface. The figure also illustrates the physical device and documents.

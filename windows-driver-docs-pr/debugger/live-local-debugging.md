@@ -27,6 +27,10 @@ windbg [-y SymbolPath] -kl
 
 In Windows Vista and later, local kernel debugging requires the computer to be booted with the **/debug** option. Open a Command Prompt Window as Administrator, and enter **bcdedit /debug on**. Reboot the computer.
 
+> [!IMPORTANT]
+> Before using BCDEdit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC.
+> Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.
+
 In Windows Vista and later, local kernel debugging requires the debugger to be run as Administrator.
 
 Live local debugging is extremely useful for debugging issues that are difficult to reproduce when the debugger is attached; however, anything that requires knowledge of time sensitive information, including packet, IRP, and SRB data, is unlikely to work unless the problem is a hang or a stall.

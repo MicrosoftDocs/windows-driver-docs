@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Porting Protocol Driver Send and Receive Operations to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-protocol-driver-send-and-receive-operations-to-ndis-6-0-nd"></a>
+
 
 
 Data transfer code paths in NDIS 6.0 have changed as follows:

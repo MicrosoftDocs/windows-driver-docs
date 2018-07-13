@@ -19,7 +19,7 @@ ms.technology: windows-devices
 The WDK is used to develop, test, and deploy Windows drivers. The latest public version of WDK is available below. Join the Windows Insider Program to get [WDK Insider Preview builds](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK). 
 
 * [Learn what's new in driver development](what-s-new-in-driver-development.md) 
-<!--* [Review known issues](https://go.microsoft.com/fwlink/?linkid=872986)-->
+* [Review known issues](https://go.microsoft.com/fwlink/?linkid=872986)
 
 ## WDK for Windows 10, version 1803
 
@@ -37,7 +37,7 @@ For ARM/ARM64 driver development, choose **Individual components** and under **C
 
 ### ![download icon](images/download-install.png) Step 2: Install WDK for Windows 10, version 1803
 
-* [Download WDK for Windows 10, version 1803](https://go.microsoft.com/fwlink/?linkid=871787) 
+* [Download WDK for Windows 10, version 1803](https://go.microsoft.com/fwlink/?linkid=873060) 
 
 New as of 1709 release: The WDK installation will by default install the WDK Visual Studio extension. This must be done in order for WDK VS integration to work. 
 

@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Specific Requirements for Device Property Page Providers (Co-Installers)
 
 
-## <a href="" id="ddk-handling-dif-addpropertypage-advanced-requests-dg"></a>
+
 
 
 A [co-installer](writing-a-co-installer.md) that provides one or more custom device property pages must handle the [**DIF_ADDPROPERTYPAGE_ADVANCED**](https://msdn.microsoft.com/library/windows/hardware/ff543656) device installation function (DIF) code. Device Manager issues this request when a user clicks on the **Properties** tab of a device in Device Manager or in Control Panel.

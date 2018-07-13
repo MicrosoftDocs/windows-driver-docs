@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Specifying Parameters for an Incoming Call
 
 
-## <a href="" id="ddk-specifying-parameters-for-an-incoming-call-ng"></a>
+
 
 
 When indicating an incoming call with **Ndis(M)CmDispatchIncomingCall**, a call manager or MCM that supports voice streaming must specify the following values in the [**CO\_CALL\_MANAGER\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff545381) structure:

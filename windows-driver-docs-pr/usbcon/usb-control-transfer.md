@@ -232,8 +232,8 @@ You can see the structure of transactions and packets by using any USB analyzer,
 
 ### Related Technologies
 
--   [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565)
--   [User- Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565)
+-   [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
+-   [User- Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
 -   [WinUSB](winusb.md)
 
 ## Prerequisites
@@ -655,7 +655,7 @@ VOID  GetFirmwareVersion(
 }  
 ```
 
-## <a href="" id="how-to-send-a-control-transfer-for-get-status---umdf"></a>How to send a control transfer for GET\_STATUS - UMDF
+## How to send a control transfer for GET\_STATUS - UMDF
 
 
 This procedure shows how a client driver can send a control transfer for a GET\_STATUS command. The recipient of the request is the device and the request obtains information in bits D1-D0. For more information, see Figure 9-4 in the USB specification.

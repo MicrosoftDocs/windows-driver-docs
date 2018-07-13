@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Writing a Print Processor
 
 
-## <a href="" id="ddk-writing-a-print-processor-gg"></a>
+
 
 
 This section provides the following topics:

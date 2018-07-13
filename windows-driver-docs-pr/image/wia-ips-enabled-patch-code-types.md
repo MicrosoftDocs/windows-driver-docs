@@ -23,7 +23,7 @@ ms.technology: windows-devices
 
 The **WIA\_IPS\_ENABLED\_PATCH\_CODE\_TYPES** property is used to select the enabled patch codes for which the Patch Code Reader will search in the current session. These patch codes can be some or all the values that the WIA minidriver reports for [**WIA\_IPS\_SUPPORTED\_PATCH\_CODE\_TYPES**](wia-ips-supported-patch-code-types.md). The order of the values in the array specifies the priority order in which the respective patch codes are to be searched.
 
-## <span id="ddk_wia_ipa_depth_si"></span><span id="DDK_WIA_IPA_DEPTH_SI"></span>
+
 
 
 Property Type: VT\_I4 | VT\_VECTOR

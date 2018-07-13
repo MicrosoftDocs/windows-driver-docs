@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Sending a Device Set-Power IRP in Response to a System Set-Power IRP
 
 
-## <a href="" id="ddk-sending-a-device-set-power-irp-in-response-to-a-system-set-power-i"></a>
+
 
 
 The device power policy owner should take the following steps to respond to a system set-power IRP:

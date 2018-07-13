@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # ACE
 
 
-## <a href="" id="ddk-ace-if"></a>
+
 
 
 An ACE is an access-control entry (ACE) in an access-control list (ACL).

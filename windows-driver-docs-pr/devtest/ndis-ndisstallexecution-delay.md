@@ -2,6 +2,11 @@
 title: NdisStallExecution\_Delay rule (ndis)
 description: The NdisStallExecution\_Delay rule specifies that NdisStallExecution must never be called by using a value for MicrosecondsToStall that is greater than 50 microseconds.
 ms.assetid: 4c9368d0-4da7-4adc-bc63-4f21af90b682
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["NdisStallExecution_Delay rule (ndis)"]
 topic_type:
 - apiref

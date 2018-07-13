@@ -13,7 +13,7 @@ keywords:
 - EFI boot entry IDs WDK
 - identifiers WDK boot options
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -21,21 +21,8 @@ ms.technology: windows-devices
 
 # Exporting and Importing Boot Entries in EFI
 
-
-## <span id="ddk_exporting_and_importing_boot_entries_in_efi_tools"></span><span id="DDK_EXPORTING_AND_IMPORTING_BOOT_ENTRIES_IN_EFI_TOOLS"></span>
-
-
 Use the **nvrboot x** (export) command to create a backup copy of a boot entry. Design a naming and storage convention that will make it easy to find the backup copy files when you need them.
 
 Use the **nvrboot i** (import) command to import boot entries from the backup copies that you exported or from the Boot*xxxx* boot entry backup files that Setup created.
 
 Imported boot entries always receive new EFI boot entry IDs. For example, if you export a copy of Boot0003, and then import the copy into NVRAM, the imported boot entry receives a new boot entry ID, such as Boot000A.
-
- 
-
- 
-
-
-
-
-

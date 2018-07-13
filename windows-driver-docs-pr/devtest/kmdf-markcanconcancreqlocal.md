@@ -2,6 +2,11 @@
 title: MarkCancOnCancReqLocal rule (kmdf)
 description: The MarkCancOnCancReqLocal rule specifies that WdfRequestMarkCancelable method cannot be called two consecutive times on the same I/O request.
 ms.assetid: f09158bd-272c-480b-bf25-036f11c96ad8
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["MarkCancOnCancReqLocal rule (kmdf)"]
 topic_type:
 - apiref

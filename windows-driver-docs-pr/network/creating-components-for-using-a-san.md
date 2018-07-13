@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Creating Components for Using a SAN
 
 
-## <a href="" id="ddk-creating-components-for-using-a-san-ng"></a>
+
 
 
 Windows Sockets applications can benefit from using a system area network (SAN). To use a SAN, these applications must have a SAN service provider DLL and a proxy driver for that DLL.

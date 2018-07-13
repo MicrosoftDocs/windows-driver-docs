@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Rectangle Area Fill Attributes
 
 
-## <a href="" id="ddk-rectangle-area-fill-attributes-gg"></a>
+
 
 
 The following table lists attributes describing the printer's support for filling rectangle areas.

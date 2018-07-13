@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # IWiaLog COM Interface
 
 
-## <a href="" id="ddk-iwialog-com-interface-si"></a>
+
 
 
 The [**IWiaLog interface**](https://msdn.microsoft.com/library/windows/hardware/ff543935) is obsolete in Microsoft Windows XP and later and is no longer supported. Use the WIA Diagnostic Log Macros instead.

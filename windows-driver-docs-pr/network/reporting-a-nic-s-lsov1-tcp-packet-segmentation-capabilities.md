@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Reporting a NIC's LSOV1 TCP-Packet-Segmentation Capabilities
 
 
-## <a href="" id="ddk-reporting-a-nic-s-lsov1-tcp-packet-segmentation-capabilities-ng"></a>
+
 
 
 An NDIS miniport driver specifies the current large send offload version 1 (LSOV1)-TCP-packet-segmentation configuration of a NIC in an [**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_V1**](https://msdn.microsoft.com/library/windows/hardware/ff567883) structure.Miniport drivers must include the current LSOV1 offload configuration in the [**NDIS\_MINIPORT\_ADAPTER\_OFFLOAD\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565930) structure. Miniport drivers call the [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) function from the [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function and pass in the information in NDIS\_MINIPORT\_ADAPTER\_OFFLOAD\_ATTRIBUTES.

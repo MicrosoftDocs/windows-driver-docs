@@ -2,6 +2,11 @@
 title: RemoveLockReleaseClose rule (wdm)
 description: The rule RemoveLockReleaseClose verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used in strict alternation. Moreover, at the end of the dispatch routine the driver should not hold the remove lock.
 ms.assetid: C59C1DF7-9359-4F7D-9477-8FAEF0714421
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["RemoveLockReleaseClose rule (wdm)"]
 topic_type:
 - apiref

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Minidriver-Supplied Halftoning
 
 
-## <a href="" id="ddk-minidriver-supplied-halftoning-gg"></a>
+
 
 
 If a specified color format is one for which the number of bits per pixel used for rendering the image (\*DrvBPP) is greater than the bits per pixel supported by the printer (\*DevBPP multiplied by \*DevNumOfPlanes), then you must provide customized halftoning capabilities.

@@ -21,7 +21,7 @@ This topic describes how you can analyze why the reflector terminated the driver
 
 The most common reason for the reflector to terminate the host process is the expiration of UMDF [host process timeouts](how-umdf-enforces-time-outs.md).
 
-## <a href="" id="post-mortem-analysis-using-dump-files"></a>Using Dump Files
+## Using Dump Files
 
 
 For many crashes, dump file details are sufficient to determine why the termination occurred. To review dump file information, follow these steps:
@@ -39,7 +39,7 @@ For many crashes, dump file details are sufficient to determine why the terminat
 
 3.  Look at the state of the threads at the time of termination.
 
-## <a href="" id="live-debugging"></a>Using the Debugger
+## Using the Debugger
 
 
 In other cases, you might need to attach to a live kernel-mode target to determine why the reflector terminated the host process. To set up your debugging session, follow the steps described in [How to Enable Debugging of a UMDF Driver](enabling-a-debugger.md#kd).

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # DDInstall Section in a Network INF File
 
 
-## <a href="" id="ddk-ddinstall-section-ng"></a>
+
 
 
 A *DDInstall* section in a network INF file is based on the generic [**INF DDInstall section**](https://msdn.microsoft.com/library/windows/hardware/ff547344).

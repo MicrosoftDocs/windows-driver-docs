@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Handling Queries in a CoNDIS WAN Miniport Driver
 
 
-## <a href="" id="ddk-handling-queries-in-a-condis-wan-miniport-driver-ng"></a>
+
 
 
 This topic provides an overview of the requirements for handling queries in a CoNDIS WAN miniport driver. An upper-layer driver calls [**NdisCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561711) with a query request to determine WAN-specific capabilities and current status of a CoNDIS WAN miniport driver and the miniport driver's NIC.

@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # AV/C Driver Stacks
 
 
-## <a href="" id="ddk-peer-and-virtual-avc-sys-driver-stacks-ksg"></a>
+
 
 
 As AV/C devices are added to and removed from the IEEE 1394 bus, the Plug and Play manager loads and unloads the corresponding subunit drivers. Vendors implement unique AV/C subunit functionality by writing a subunit driver that Windows loads onto the IEEE 1394 stack above *Avc.sys*. *Avc.sys* uses functionality provided by the underlying IEEE 1394 and IEC-61883 drivers to control devices and to connect and manage plugs. For more information about these underlying driver stacks, see [The IEEE 1394 Driver Stack](https://msdn.microsoft.com/library/windows/hardware/ff538867) and [IEC-61883 Client Drivers](https://msdn.microsoft.com/library/windows/hardware/ff537188).

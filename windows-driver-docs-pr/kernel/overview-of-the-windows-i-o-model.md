@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Overview of the Windows I/O Model
 
 
-## <a href="" id="ddk-overview-of-the-windows-i-o-model-kg"></a>
+
 
 
 Every operating system has an implicit or explicit I/O model for handling the flow of data to and from peripheral devices. One feature of the Microsoft Windows I/O model is its support for asynchronous I/O. In addition, the I/O model has the following general features:

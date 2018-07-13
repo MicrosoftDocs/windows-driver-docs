@@ -2,6 +2,11 @@
 title: BCDEdit /debug
 description: The /debug boot option enables or disables kernel debugging of the Windows operating system associated with the specified boot entry or the current boot entry.
 ms.assetid: 013ec247-f2ca-4918-9dfa-8b1348d0b4e5
+ms.author: windowsdriverdev
+ms.date: 07/02/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["BCDEdit /debug Driver Development Tools"]
 topic_type:
 - apiref
@@ -30,13 +35,13 @@ The **/debug** boot option enables or disables kernel debugging of the Windows o
 Parameters
 ----------
 
-<a href="" id="--------id-------"></a> **{***ID***}**   
+**{***ID***}**   
 The **{***ID***}** is the GUID that is associated with the boot entry. If you do not specify an **{***ID***}**, the command modifies the operating system that is currently active. If a boot entry is specified, the GUID associated with the boot entry must be enclosed in braces **{ }**.
 
-<a href="" id="-------on------"></a> **on**   
+ **on**   
 Enables kernel debugging of the specified boot entry. If a boot entry is not specified, kernel debugging is enabled for the current operating system.
 
-<a href="" id="-------off------"></a> **off**   
+**off**   
 Disables kernel debugger of the specified boot entry. If a boot entry is not specified, kernel debugging is disabled for the current operating system.
 
 ### Comments

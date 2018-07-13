@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
  
 
-## <a href="" id="ddk-writing-a-netdma-provider-driver-ng"></a>
+
 
 
 The NetDMA interface provides a standard interface for NetDMA provider drivers. NetDMA provider drivers enable higher-level applications to use direct memory access (DMA) to move blocks of memory. By using a DMA engine to move memory, you free the CPU to perform other tasks.

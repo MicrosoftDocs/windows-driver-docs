@@ -2,6 +2,11 @@
 title: NdisOidDoubleComplete rule (ndis)
 description: The NdisOidDoubleComplete rule specifies that an NDIS miniport driver must not call the NdisMOidRequestComplete routine twice for the same OID.
 ms.assetid: 876A3D3C-554F-4D71-AD1B-F568D0AD6C0D
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["NdisOidDoubleComplete rule (ndis)"]
 topic_type:
 - apiref

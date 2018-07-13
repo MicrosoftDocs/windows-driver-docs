@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Framework File Objects
 
 
-## <a href="" id="ddk-using-framework-file-objects-df"></a>
+
 
 
 When an application or a driver attempts to access a device, typically by creating or opening a file, the operating system sends a file creation request to the driver stack. When the application or driver has finished using the device, the system sends file cleanup and close requests to the driver stack. The [request types](https://msdn.microsoft.com/library/windows/hardware/ff552503) of these three requests are **WdfRequestTypeCreate**, **WdfRequestTypeCleanup**, and **WdfRequestTypeClose**, respectively.

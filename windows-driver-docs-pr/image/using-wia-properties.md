@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Using WIA Properties
 
 
-## <a href="" id="ddk-using-wia-properties-si"></a>
+
 
 
 This section contains the following topics:

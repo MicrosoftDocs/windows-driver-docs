@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Setting Up a Transfer Operation
 
 
-## <a href="" id="ddk-setting-up-a-transfer-operation-kg"></a>
+
 
 
 When [**AllocateAdapterChannel**](https://msdn.microsoft.com/library/windows/hardware/ff540573) transfers control to a driver's [*AdapterControl*](https://msdn.microsoft.com/library/windows/hardware/ff540504) routine, it has allocated a set of map registers. However, the driver must map system physical memory for the current IRP's transfer request to the bus-master adapter's logical address range, as follows:

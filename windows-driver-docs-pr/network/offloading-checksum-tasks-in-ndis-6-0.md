@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Offloading Checksum Tasks in NDIS 6.0
 
 
-## <a href="" id="ddk-offloading-checksum-tasks-in-ndis-6-0-ng"></a>
+
 
 
 Offloading TCP/IP checksum tasks at run time in NDIS 6.0 is similar to NDIS 5.*x*. The primary differences are:

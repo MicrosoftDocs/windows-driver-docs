@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # WIA DDI Interfaces
 
 
-## <a href="" id="ddk-wia-ddi-interfaces-si"></a>
+
 
 
 The WIA device driver interface (DDI) supplies the following interfaces and functions to developers of WIA minidrivers:

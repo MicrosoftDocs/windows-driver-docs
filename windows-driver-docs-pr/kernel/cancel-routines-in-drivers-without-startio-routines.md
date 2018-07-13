@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Cancel Routines in Drivers without StartIo Routines
 
 
-## <a href="" id="ddk-cancel-routines-in-drivers-without-startio-routines-kg"></a>
+
 
 
 The I/O manager maintains the **CurrentIrp** field in a device object only if IRPs are queued in the associated device queue object.

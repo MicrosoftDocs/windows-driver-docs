@@ -3,7 +3,7 @@ title: 3D print partner onboarding guide
 author: windows-driver-content
 description: This topic describes how to implement 3D printer drivers that are then published on Windows Update.
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,7 +46,7 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
     - Ensure the device firmware has a unique Vendor ID and Product ID (VID/PID) allocated by the [USB Implementers Forum (USB-IF)](http://www.usb.org). For USBSER devices, we strongly recommended that you use a unique serial number to prevent conflicts on a USB port changes.
 
-2. Install Microsoft tools and SDKs 
+2. Install Microsoft tools and SDKs
 
     - Download and install [Visual Studio Community Edition](https://go.microsoft.com/fwlink/p/?LinkId=534599)
 
@@ -54,7 +54,8 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
     - Download and install the [3D printing SDK](http://go.microsoft.com/fwlink/p/?LinkId=394375)
 
-        - **Note** The 3D printing SDK will be installed in C:\\Program Files (x86)\\Microsoft SDKs\\3D Printing.
+> [!NOTE]
+> The 3D printing SDK will be installed in C:\\Program Files (x86)\\Microsoft SDKs\\3D Printing.
 
 3. Implement the USB driver
 
@@ -62,7 +63,8 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
     - If the printer is using the Microsoft Slicer, the Hardware ID that it creates must be **Enum\\3DPrint\\MS3DPrint**
 
-**Note** If the the printer is using a custom slicer, continue with steps 4-7
+> [!NOTE]
+> If the the printer is using a custom slicer, continue with steps 4-7.
 
 4. Build the Fabrikam driver (slicer template only)
 
@@ -94,10 +96,8 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
 7. Publish and distribute the driver
 
-    - Follow the steps in these topics to publish your driver:
-        
-        - [Purchase an extended validation (EV) code signing certificate](https://msdn.microsoft.com/library/windows/hardware/hh801887(v=vs.85).aspx)
+    - Follow the guidance in the [Windows Hardware Dev Center dashboard](https://docs.microsoft.com/windows-hardware/drivers/dashboard) topics to publish your driver.
 
-        - [Publish the driver using the designated workflow](https://msdn.microsoft.com/library/windows/hardware/br230778(v=vs.85).aspx)
+
 
 

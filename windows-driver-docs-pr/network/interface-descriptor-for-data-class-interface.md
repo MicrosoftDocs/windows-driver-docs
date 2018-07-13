@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Interface Descriptor for Data Class Interface
 
 
-## <a href="" id="ddk-interface-descriptor-for-data-class-interface-ng"></a>
+
 
 
 <table>

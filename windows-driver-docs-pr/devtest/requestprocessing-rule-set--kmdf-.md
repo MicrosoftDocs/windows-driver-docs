@@ -2,6 +2,11 @@
 title: RequestProcessing rule set (KMDF)
 description: Use these rules to verify that your driver correctly completes or cancels I/O request packets (IRP).
 ms.assetid: 25162982-6A98-4018-82B3-8DD3E0A0A002
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # RequestProcessing rule set (KMDF)

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Defining Automation Tables
 
 
-## <a href="" id="ddk-defining-automation-tables-ksg"></a>
+
 
 
 An automation table for a filter, pin, or node is what describes the properties and methods supported by the filter, pin, or node. If a BDA minidriver supplies a property or method handler that is already implemented by AVStream, the BDA minidriver's implementation supersedes AVStream's.

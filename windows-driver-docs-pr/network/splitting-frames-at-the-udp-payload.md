@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Splitting Frames at the UDP Payload
 
 
-## <a href="" id="ddk-splitting-frames-at-the-udp-payload-ng"></a>
+
 
 
 NDIS miniport adapters that support header-data split must support splitting frames at the upper-layer-protocol header for UDP frames. However, the NIC must first try to split the frame at the beginning of UDP payload.

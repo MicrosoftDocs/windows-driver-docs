@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Supporting RSS in Intermediate Drivers or Filter Drivers
 
 
-## <a href="" id="ddk-supporting-rss-in-intermediate-drivers-or-filter-drivers-ng"></a>
+
 
 
 All intermediate drivers and filter drivers should, at a minimum, pass on OID requests, other requests, and status indications. Intermediate drivers or filter drivers should provide additional driver-specific support for receive side scaling (RSS) if the driver does any of the following:

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Spooler Notification Terminology
 
 
-## <a href="" id="ddk-spooler-notification-terminology-gg"></a>
+
 
 
 The following terms are used in the discussion of asnychronous spooler notification.

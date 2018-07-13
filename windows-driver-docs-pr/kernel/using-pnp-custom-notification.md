@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using PnP Custom Notification
 
 
-## <a href="" id="ddk-using-pnp-custom-notification-kg"></a>
+
 
 
 A driver can use the target device change notification mechanism to be notified of custom events on a device.

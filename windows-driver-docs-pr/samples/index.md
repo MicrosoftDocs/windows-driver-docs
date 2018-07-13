@@ -32,7 +32,6 @@ Starting with Windows 10, the [Windows driver samples repository](http://go.mic
 -   [Human interface devices (HID) driver samples](human-interface-devices--hid--driver-samples.md)
 -   [Input driver samples](input-driver-samples.md)
 -   [Networking driver samples](networking-driver-samples.md)
--   [Near field communication (NFC) driver samples](near-field-communication--nfc--driver-samples.md)
 -   [Near field proximity (NFP) driver samples](near-field-proximity--nfp--driver-samples.md)
 -   [Power framework (PoFx) driver samples](power-framework--pofx--driver-samples.md)
 -   [Point of service (POS) driver samples](point-of-service--pos--driver-samples.md)

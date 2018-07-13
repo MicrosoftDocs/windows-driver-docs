@@ -16,7 +16,7 @@ ms.technology: windows-devices
 This function is reserved for system use.
 
 
-## <a href="" id="ddk-cm-prob-not-configured-dg"></a>
+
 
 
 There is a device on the system for which there is no **ConfigFlags** registry entry. This means no driver is installed. Typically this means an INF file could not be found.

@@ -23,7 +23,7 @@ ms.technology: windows-devices
 
 The **WIA\_IPS\_MULTI\_FEED** property is used to configure the action to be performed by the WIA minidriver when a multiple feed condition is detected at the device. The WIA minidriver creates and maintains this property.
 
-## <span id="ddk_wia_ipa_depth_si"></span><span id="DDK_WIA_IPA_DEPTH_SI"></span>
+
 
 
 Property Type: VT\_I4

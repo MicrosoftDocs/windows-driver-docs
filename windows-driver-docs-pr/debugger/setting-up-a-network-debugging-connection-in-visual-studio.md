@@ -4,7 +4,7 @@ description: You can use Microsoft Visual Studio to set up and perform kernel-mo
 ms.assetid: 4D442355-526A-4F39-8341-614BB7A41A3E
 keywords: ["network debugging visual studio", "ethernet debugging visual studio", "debugging over ethernet visual studio"]
 ms.author: domars
-ms.date: 04/10/2018
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -18,7 +18,7 @@ ms.technology: windows-devices
 
 You can use Microsoft Visual Studio to set up and perform kernel-mode debugging over an Ethernet network. To use Visual Studio for kernel-mode debugging, you must have the Windows Driver Kit (WDK) integrated with Visual Studio. For information about how to install the integrated environment, see [Windows Driver Development](http://go.microsoft.com/fwlink/p?linkid=301383).
 
-As an alternative to using Visual Studio to set up Ethernet debugging, you can do the setup manually. For more information, see [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md).
+As an alternative to using Visual Studio to set up Ethernet debugging, you can do the setup automatically. For more information, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
 
 Debugging over an Ethernet network has the following advantages compared to debugging over other types of cable:
 
@@ -32,12 +32,12 @@ The computer that runs the debugger is called the *host computer*, and the compu
 ## <span id="Supported_network_adapters"></span><span id="supported_network_adapters"></span><span id="SUPPORTED_NETWORK_ADAPTERS"></span>Supported network adapters
 
 
-The host computer can use any wired or wireless network adapter, but the target computer must use a network adapter that is supported by Debugging Tools for Windows. For a list of supported network adapters, see [Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md).
+The host computer can use any wired or wireless network adapter, but the target computer must use a network adapter that is supported by Debugging Tools for Windows. For a list of supported network adapters, see [Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md) and [Supported Ethernet NICs for Network Kernel Debugging in Windows 10](supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md).
 
 ## <span id="Configuring_the_host_and_target_computer"></span><span id="configuring_the_host_and_target_computer"></span><span id="CONFIGURING_THE_HOST_AND_TARGET_COMPUTER"></span>Configuring the host and target computer
 
 
-1.  Connect the network adapter of the target computer to a network hub or switch using standard CAT5 (or higher-level) network cable. Do not use a crossover cable, and do not use a crossover port in your hub or switch. Connect the network adapter of the host computer to a network hub or switch using a standard cable or a wireless connection.
+1.  Connect the network adapter of the target computer to a network hub or switch using and appropriate network cable. Connect the network adapter of the host computer to a network hub or switch using a standard cable or a wireless connection.
 2.  Begin configuring your host and target computers as described in [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/library/windows/hardware/dn745909).
 3.  On the host computer, in Visual Studio, when you come to the Computer Configuration dialog box, select **Provision computer and choose debugger settings**.
 4.  For **Connection Type**, choose **Network**.
@@ -66,6 +66,9 @@ The host computer can use any wired or wireless network adapter, but the target 
 
 ## <span id="Verifying_dbgsettings_on_the_Target_Computer"></span><span id="verifying_dbgsettings_on_the_target_computer"></span><span id="VERIFYING_DBGSETTINGS_ON_THE_TARGET_COMPUTER"></span>Verifying dbgsettings on the Target Computer
 
+> [!IMPORTANT]
+> Before using BCDEdit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC.
+> Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.
 
 On the target computer, open a Command Prompt window as Administrator, and enter these commands:
 
@@ -152,6 +155,8 @@ Reboot the target computer.
 
 
 [Setting Up Kernel-Mode Debugging in Visual Studio](setting-up-kernel-mode-debugging-in-visual-studio.md)
+
+[Supported Ethernet NICs for Network Kernel Debugging in Windows 10](supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md)
 
 [Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md)
 

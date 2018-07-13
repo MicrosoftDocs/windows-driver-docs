@@ -18,7 +18,7 @@ This topic describes the USB client driver verifier feature of the USB 3.0 drive
 -   [How to enable the USB client driver verifier](#how-to-enable-the-usb-client-driver-verifier)
 -   [Configuration settings for the USB client driver verifier](#configuration--settings-for-the-usb-client-driver-verifier)
 
-## <a href="" id="what-is--the-usb-client-driver-verifier"></a>What is the USB client driver verifier
+## What is the USB client driver verifier
 
 
 The *USB client driver verifier* is a feature of the USB 3.0 driver stack, included in Windows 8. When the verifier is enabled, the USB driver stack fails or modifies certain operations performed by a client driver. Those failures simulate error conditions that might be otherwise difficult to find and can lead to undesirable results later. The simulated failures give you the opportunity to make sure that your driver is able to deal with failures gracefully. The client can deal with errors through error handling code or exercise a different code path.
@@ -54,7 +54,7 @@ HKEY_LOCAL_MACHINE
 
 The **UsbVerifierEnabled** registry entry takes a DWORD value. When **UsbVerifierEnabled** is 1, the USB client driver verifier is enabled; 0 disables it. If the [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448) is enabled for the client driver and **UsbVerifierEnabled** is 0, the USB client driver verifier is disabled.
 
-## <a href="" id="configuration--settings-for-the-usb-client-driver-verifier"></a>Configuration settings for the USB client driver verifier
+## Configuration settings for the USB client driver verifier
 
 
 When the verifier is enabled, the USB driver stack keeps track of URBs that the client driver allocates by calling **USBD\_xxxUrbAllocate** routines (see [USB Routines](https://msdn.microsoft.com/library/windows/hardware/ff540134#client)). If the client driver leaks any URB, the USB driver stack uses that information to cause a bugcheck through the [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448). In that case, use the **!usbanalyze -v** command to determine the cause of the leak.

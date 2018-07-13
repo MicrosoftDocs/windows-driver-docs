@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Adding and Dropping Parties
 
 
-## <a href="" id="ddk-adding-and-dropping-parties-ng"></a>
+
 
 
 A connection-oriented client can add a party to an outgoing multipoint call that it initiated with [**NdisClMakeCall**](https://msdn.microsoft.com/library/windows/hardware/ff561635). A connection-oriented client can also delete a party from a multipoint call either at its own discretion or at the request of the remote party to be dropped.

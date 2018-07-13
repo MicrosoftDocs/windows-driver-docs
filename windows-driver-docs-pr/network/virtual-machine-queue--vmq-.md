@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Virtual Machine Queue (VMQ)
 
 
-## <a href="" id="ddk-virtual-machine-queue--vmq--nr"></a>
+
 
 
 This section describes the NDIS virtual machine queue (VMQ) interface. The VMQ interface supports Microsoft Hyper-V network performance improvements in NDIS 6.20 and later in Windows Server 2008 R2 and later versions of Windows Server.

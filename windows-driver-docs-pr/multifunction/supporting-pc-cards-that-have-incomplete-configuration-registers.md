@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Supporting PC Cards That Have Incomplete Configuration Registers
 
 
-## <a href="" id="ddk-supporting-pc-cards-that-have-incomplete-configuration-registers-d"></a>
+
 
 
 If a multifunction 16-bit PC Card device does not have configuration registers for each function, the vendor of such a device can use the system-supplied multifunction bus driver (mf.sys) but must provide a custom INF file and support for the individual functions.

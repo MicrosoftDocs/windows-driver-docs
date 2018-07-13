@@ -12,13 +12,13 @@ ms.technology: windows-devices
 # Windows Certified Products List
 
 
-The [Windows Certified Products List](http://sysdev.microsoft.com/hardware/lpl/) is a comprehensive list of certified devices and systems.
+The Windows Certified Products List is a comprehensive list of certified devices and systems.
 
 You can find devices and systems by filtering the list or by running a search for a specific product name.
 
 
 > [!IMPORTANT]
-> The Windows Certified Products List only exists on the legacy dashboard, and does not include submissions made through the Windows Hardware Dev Center Dashboard. 
+> The Windows Certified Products List is offline as Sysdev has retired.  It will be returning in the Fall 2018.
 
 
 ### <span id="To_find_a_product_by_searching"></span><span id="to_find_a_product_by_searching"></span><span id="TO_FIND_A_PRODUCT_BY_SEARCHING"></span>To find a product by searching

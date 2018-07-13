@@ -14,6 +14,11 @@ ms.technology: windows-devices
 
 This article provides answers to frequently asked questions about the Windows Hardware Dev Center dashboard.
 
+## <span id="How_do_I_contact_Hardware_Dev_Center_Dashboard_Support_"></span><span id="how_do_i_contact_hardware_dev_center_dashboard_support_"></span><span id="HOW_DO_I_CONTACT_HARDWARE_DEV_CENTER_DASHBOARD_SUPPORT_"></span>How do I contact Hardware Dev Center Dashboard Support?
+
+If you are having problems accessing the Dashboard or need Dashboard Support please open a support ticket here: https://developer.microsoft.com/en-us/windows/support.  Select **Contact us** then **Dashboard issue** from the dropdown.
+
+
 ## <span id="Can_I_associate_multiple_certificates_with_a_dashboard_account_"></span><span id="can_i_associate_multiple_certificates_with_a_dashboard_account_"></span><span id="CAN_I_ASSOCIATE_MULTIPLE_CERTIFICATES_WITH_A_DASHBOARD_ACCOUNT_"></span>Can I associate multiple certificates with a dashboard account?
 
 

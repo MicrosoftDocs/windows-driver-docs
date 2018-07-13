@@ -25,7 +25,7 @@ ms.technology: windows-devices
 # Common Control Nodes and Filters
 
 
-## <a href="" id="ddk-common-control-nodes-and-filters-ksg"></a>
+
 
 
 The types of control nodes and filters that are shown in the figures in the [Control Nodes, Filters and Hardware](control-nodes--filters-and-hardware.md) section are common to the reception of digital satellite, terrestrial, and cable broadcasts. However, you can create other node types and filters for a wide variety of broadcast media and devices as well. It is important to remember that each control node need not correspond to a single BDA device filter. In some cases, a single BDA device filter can encapsulate more than one control node.

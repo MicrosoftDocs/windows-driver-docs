@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Functionality of the PCMCIA\_INTERFACE\_STANDARD Interface
 
 
-## <a href="" id="ddk-functionality-of-the-pcmcia-interface-standard-interface-kg"></a>
+
 
 
 This section describes the functionality of the PCMCIA\_INTERFACE\_STANDARD interface that PCMCIA bus driver supports in Windows 2000 and later operating systems. The PCMCIA\_INTERFACE\_STANDARD interface provides a set of routines that can be called directly by a PCMCIA driver. These interface routines support the following operations:

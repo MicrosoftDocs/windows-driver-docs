@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Security Issues with NDIS Virtual Machine (VM) Shared Memory
 
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 This topic discusses the potential security issues involved with allocating shared memory from a virtual machine (VM) for virtual machine queue (VMQ) receive buffers. The topic includes the following sections:

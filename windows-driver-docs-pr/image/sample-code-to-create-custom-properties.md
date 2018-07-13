@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Sample Code to Create Custom Properties
 
 
-## <a href="" id="ddk-sample-code-to-create-custom-properties-si"></a>
+
 
 
 To create a custom property, your WIA driver might have code that looks similar to the following:

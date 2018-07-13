@@ -75,7 +75,7 @@ WMCDC devices consist of multiple functions that are grouped into *logical hands
 
 The Windows WMCDC architecture uses native Windows drivers to manage the functions of your WMCDC device. For example, you can use the Windows telephony application program interface (TAPI) subsystem to manage the voice and data/fax modem functions of your device and the Windows network driver interface specification (NDIS) subsystem to manage the device's Ethernet LAN function. Furthermore, you can manage some functions, such as an Object Exchange Protocol (OBEX) function, in user-mode software with the assistance of the [WinUSB](winusb.md) (Winusb.sys).
 
-The following figure shows an example driver stack for a WMCDC device.
+This image shows an example driver stack for a WMCDC device.
 
 ![sample device configuration and driver stack](images/wmcdc-architecture.png)
 
@@ -177,7 +177,7 @@ The Wireless Handset Control Model (WHCM) interface collection in the preceding 
 
 The following figure illustrates the PDO configuration when both bit 0 and bit 1 of **CdcFlags** are set.
 
-![diagram illustrating an interface collection to device object mapping for cdcflags = 0x00010001](images/cdcflags wpd.png)
+![diagram illustrating an interface collection to device object mapping for cdcflags = 0x00010001](images/cdcflags-wpd.png)
 
 Because bit 0 of **CdcFlags** is set to 1, the USB generic parent driver creates a PDO for the WHCM interface collection. Because bit 1 of **CdcFlags** is set to 1, the USB generic parent driver groups the two OBEX collections together and generates a single PDO for both OBEX collections.
 
@@ -1251,7 +1251,7 @@ The hardware ID formats in the preceding topics describe use the following conve
 
 If a USB composite device has an interface association descriptor (IAD) in its firmware, Windows enumerates interface collections as though each collection were a single device and assigns a single physical device object (PDO) to each interface collection and associates hardware and compatible identifiers (IDs) with the PDO. For a detailed description of IADs, see [USB Interface Association Descriptor](usb-interface-association-descriptor.md). This section describes the hardware IDs and compatible identifiers (IDs) assigned to interface collections associated with an IAD.
 
-## <a href="" id="hardware-ids"></a> Hardware IDs
+##  Hardware IDs
 
 
 `USB\VID_v(4)&PID_p(4)&Rev_r(4)&MI_z(2)`

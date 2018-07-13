@@ -20,10 +20,16 @@ The USB selective suspend feature allows the hub driver to suspend an individual
 
 There are two different mechanisms for selectively suspending a USB device: idle request IRPs ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://msdn.microsoft.com/library/windows/hardware/ff537270)) and set power IRPs ([**IRP\_MN\_SET\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551744)). The mechanism to use depends on the operating system and the type of device: composite or non-composite.
 
-## <a href="" id="------selecting-a-selective-suspend-mechanism"></a> Selecting a Selective Suspend Mechanism
+##  Selecting a Selective Suspend Mechanism
 
 
 Client drivers, for an interface on a composite device, that enable the interface for remote wakeup with a wait wake IRP (IRP\_MN\_WAIT\_WAKE), must use the idle request IRP ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://msdn.microsoft.com/library/windows/hardware/ff537270)) mechanism to selectively suspend a device.
+
+For information about remote wakeup, see:
+
+[Remote Wakeup of USB Devices](https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/remote-wakeup-of-usb-devices)
+
+[Overview of Wait/Wake Operation](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/overview-of-wait-wake-operation)
 
 The version of the Windows operating system determines the way drivers for non-composite devices enable selective suspend.
 

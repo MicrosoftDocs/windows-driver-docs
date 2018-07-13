@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Handling a System Query-Power IRP in a Device Power Policy Owner
 
 
-## <a href="" id="ddk-handling-a-system-query-power-irp-in-a-device-power-policy-owner-k"></a>
+
 
 
 When a device power policy owner receives an [**IRP\_MN\_QUERY\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551699) for a system power state, it responds by passing down the query and, in an [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine, sending an **IRP\_MN\_QUERY\_POWER** for a device power state. When all drivers in the stack have completed the device query, the device power policy owner completes the system query.

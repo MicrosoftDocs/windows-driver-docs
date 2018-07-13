@@ -68,7 +68,7 @@ The Hidclass/Mshidkmdf pair enumerates [Top-Level Collections (TLC)](top-level-c
 
 Queries and consumes the TLCs that are reported by the HID device stack.
 
-## <a href="" id="header-and-library-requirements-"></a>Header and library requirements
+## Header and library requirements
 
 This procedure describes how to write a simple HID source driver that reports headset buttons to the operating system. In this case, the driver that implements this code can be an existing KMDF audio driver that has been modified to act as a HID source reporting headset buttons by using VHF.
 
@@ -97,7 +97,7 @@ UCHAR HeadSetReportDescriptor[] = {
 };
 ```
 
-## <a href="" id="create-a-virtual-hid-device-"></a>Create a virtual HID device
+## Create a virtual HID device
 
 Initialize a [**VHF\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/dn925044) structure by calling the [**VHF\_CONFIG\_INIT**](https://msdn.microsoft.com/library/windows/hardware/dn925046) macro and then call the [**VhfCreate**](https://msdn.microsoft.com/library/windows/hardware/dn925036) method. The driver must call **VhfCreate** at PASSIVE\_LEVEL after the [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926) call, typically, in the driver's [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function.
 
@@ -187,7 +187,7 @@ Error:
 }
 ```
 
-## <a href="" id="submit"></a>Submit the HID input report
+## Submit the HID input report
 
 Submit the HID input report by calling [**VhfReadReportSubmit**](https://msdn.microsoft.com/library/windows/hardware/dn925040).
 

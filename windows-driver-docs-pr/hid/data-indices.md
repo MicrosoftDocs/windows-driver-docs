@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Data Indices
 
 
-## <a href="" id="ddk-data-indices-kg"></a>
+
 
 
 The HID parser assigns a *data index* that uniquely identifies each usage described in a top-level collection's [button capability arrays](button-capability-arrays.md) and [value capability arrays](value-capability-arrays.md). Conceptually, a data index is a zero-based array index that a user-mode application or kernel-mode driver can use to access individual control data in a report. The parser assigns a unique set of data indices to each report type supported by each top-level collection.

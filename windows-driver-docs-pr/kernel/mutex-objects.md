@@ -8,7 +8,7 @@ ms.assetid: e2142b6d-f460-4f80-be0f-e00b5d43731c
 # Mutex Objects
 
 
-## <a href="" id="ddk-mutex-objects-kg"></a>
+
 
 
 This section includes the following topics:

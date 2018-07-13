@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Using Session Protocol
 
 
-## <a href="" id="ddk-using-session-protocol-ng"></a>
+
 
 
 The Windows Sockets switch uses its session protocol to transfer data over a SAN connection. If the switch transfers a small amount of data, it transfers that data within a control message. Each control message consists of a header and an optional payload of application data. If the switch transfers a large amount of data, it transfers that data using RDMA operations.

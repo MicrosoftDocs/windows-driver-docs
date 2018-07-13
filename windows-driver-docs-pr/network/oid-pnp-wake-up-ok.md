@@ -15,7 +15,7 @@ keywords:
 # OID\_PNP\_WAKE\_UP\_OK
 
 
-## <a href="" id="ddk-oid-pnp-wake-up-ok-nr"></a>
+
 
 
 The optional OID\_PNP\_WAKE\_UP\_OK OID indicates the number of valid wake-ups that are signaled by the miniport driver's NIC. A valid wake-up occurs when the NIC wakes up the system in response to a valid pattern match or magic packet.

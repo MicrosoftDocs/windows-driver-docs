@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Configuration of COM Ports
 
 
-## <a href="" id="ddk-configuration-of-com-ports-kg"></a>
+
 
 
 Starting with Windows 2000, a COM port is a type of serial port that complies with the following additional requirements:

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Initializing a BDA Minidriver
 
 
-## <a href="" id="ddk-initializing-a-bda-minidriver-ksg"></a>
+
 
 
 A BDA minidriver is initialized similarly to other AVStream minidrivers. The BDA minidriver's DriverEntry function calls the AVStream [**KsInitializeDriver**](https://msdn.microsoft.com/library/windows/hardware/ff562683) function to initialize the BDA minidriver's driver object. In this call, the BDA minidriver passes a pointer to a [**KSDEVICE\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff561691) structure that specifies characteristics of the device, which can include:

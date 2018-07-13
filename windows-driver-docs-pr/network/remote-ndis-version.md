@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # Remote NDIS Version
 
 
-## <a href="" id="ddk-remote-ndis-version-ng"></a>
+
 
 
 The following table defines the Remote NDIS protocol version identifiers exchanged between host and device.

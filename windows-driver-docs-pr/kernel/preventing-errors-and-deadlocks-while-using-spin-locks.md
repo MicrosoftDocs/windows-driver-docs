@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Preventing Errors and Deadlocks While Using Spin Locks
 
 
-## <a href="" id="ddk-preventing-errors-and-deadlocks-while-using-spin-locks-kg"></a>
+
 
 
 While a driver routine holds a spin lock, it cannot cause a hardware exception or raise a software exception without bringing down the system. In other words, a driver's ISR and any *SynchCritSection* routine that the driver supplies in a call to [**KeSynchronizeExecution**](https://msdn.microsoft.com/library/windows/hardware/ff553302) must not cause a fault or trap, such as a page fault or an arithmetic exception, and cannot raise a software exception. A routine that calls [**KeAcquireSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff551917) or [**KeAcquireInStackQueuedSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff551899) also cannot cause a hardware exception or raise a software exception until it has released its executive spin lock and is no longer running at IRQL = DISPATCH\_LEVEL.

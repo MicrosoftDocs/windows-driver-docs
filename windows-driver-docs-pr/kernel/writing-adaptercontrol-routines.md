@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Writing AdapterControl Routines
 
 
-## <a href="" id="ddk-writing-adaptercontrol-routines-kg"></a>
+
 
 
 Most drivers of DMA devices have an [*AdapterControl*](https://msdn.microsoft.com/library/windows/hardware/ff540504) routine, which is responsible for initiating DMA operations. (Drivers that do not require *AdapterControl* routines include those that [use scatter/gather DMA](using-scatter-gather-dma.md) and those that [use common-buffer, bus-master DMA](using-common-buffer-bus-master-dma.md).)

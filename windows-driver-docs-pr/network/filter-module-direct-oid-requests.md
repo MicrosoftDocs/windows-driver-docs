@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Filter Module Direct OID Requests
 
 
-## <a href="" id="ddk-filter-module-direct-oid-requests-ng"></a>
+
 
 
 To support the direct OID request path, filter drivers provide *FilterXxx* function entry points in the [**NDIS\_FILTER\_DRIVER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff565515) structure and NDIS provides **NdisF*Xxx*** functions for filter drivers.

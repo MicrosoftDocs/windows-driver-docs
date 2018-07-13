@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Responding to Check-Verify Requests from the File System
 
 
-## <a href="" id="ddk-responding-to-check-verify-requests-from-the-file-system-kg"></a>
+
 
 
 At its discretion, the file system can send an IRP to the device driver's Dispatch entry point for [**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744) requests with **Parameters.DeviceIoControl.IoControlCode** in the I/O stack location set to the following:

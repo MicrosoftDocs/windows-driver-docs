@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Querying a Connectionless Miniport Driver
 
 
-## <a href="" id="ddk-querying-a-connectionless-miniport-driver-ng"></a>
+
 
 
 To query OIDs that a connectionless miniport driver maintains, a bound protocol calls [**NdisOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff563710) and passes an [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure that specifies the object (OID) that is being queried and that points to a buffer into which NDIS eventually writes the requested information.

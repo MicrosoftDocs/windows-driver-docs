@@ -1,7 +1,12 @@
 ---
 title: IrqlExApcLte2 rule (wdm)
-description: The IrqlExApcLte2 rule specifies that the driver calls the following routines only at IRQL�  APC\_LEVEL.
+description: The IrqlExApcLte2 rule specifies that the driver calls the following routines only at IRQL�  APC\_LEVEL.
 ms.assetid: 5800ec58-2084-4092-9614-dd631458c7dd
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["IrqlExApcLte2 rule (wdm)"]
 topic_type:
 - apiref

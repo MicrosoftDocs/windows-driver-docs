@@ -2,6 +2,11 @@
 title: StorPortAllocatePool2 rule (storport)
 description: This rule verifies that the miniport must not attempt to call StorPortAllocatePool on an allocated buffer without deallocating it first.
 ms.assetid: 3ECEDFDA-AE04-4DAC-926C-FB19CD955A38
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["StorPortAllocatePool2 rule (storport)"]
 topic_type:
 - apiref

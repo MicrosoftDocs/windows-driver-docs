@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # General Techniques for Testing WMI Driver Support
 
 
-## <a href="" id="ddk-general-techniques-for-testing-wmi-driver-support-kg"></a>
+
 
 
 ### WMI Client Tools

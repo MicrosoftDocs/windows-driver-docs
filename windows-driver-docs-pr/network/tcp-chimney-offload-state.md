@@ -19,7 +19,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-tcp-chimney-offload-state-ng"></a>
+
 
 
 The TCP Chimney Offload State section describes the TCP chimney protocol state that the host stack offloads to an offload target. The offload target uses the offloaded state to process offloaded TCP connections.

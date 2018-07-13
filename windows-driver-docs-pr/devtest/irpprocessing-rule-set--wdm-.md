@@ -2,6 +2,11 @@
 title: IrpProcessing rule set (WDM)
 description: Use these rules to verify that your driver correctly processes I/O request packets (IRP).
 ms.assetid: C11F1FD7-DA41-4A72-A0EB-97C1D79ECC21
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IrpProcessing rule set (WDM)

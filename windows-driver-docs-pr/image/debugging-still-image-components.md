@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Debugging Still Image Components
 
 
-## <a href="" id="ddk-debugging-still-image-components-si"></a>
+
 
 
 To aid the debugging of vendor-supplied still image components, the still image event monitor's behavior can be modified with command-line options, using the **Run** option of the **Start** menu. The following options are available:

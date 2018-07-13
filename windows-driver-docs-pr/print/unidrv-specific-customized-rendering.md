@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Unidrv-Specific Customized Rendering
 
 
-## <a href="" id="ddk-unidrv-specific-customized-rendering-gg"></a>
+
 
 
 The following topics provide information about the types of operations that [*Unidrv*](https://msdn.microsoft.com/library/windows/hardware/ff556343#wdkgloss-unidrv) allows rendering plug-ins to perform:

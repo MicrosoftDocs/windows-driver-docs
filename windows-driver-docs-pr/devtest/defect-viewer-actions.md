@@ -2,6 +2,11 @@
 title: Defect Viewer Actions
 description: Defect Viewer Actions
 ms.assetid: c711a927-6fab-45de-be8b-da706991da36
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Defect Viewer Actions

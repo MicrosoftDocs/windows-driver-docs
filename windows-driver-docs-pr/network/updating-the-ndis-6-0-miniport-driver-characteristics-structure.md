@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Updating the NDIS 6.0 Miniport Driver Characteristics Structure
 
 
-## <a href="" id="ddk-the-ndis-6-0-ndis-miniport-driver-characteristics-structure-ng"></a>
+
 
 
 Many entry points in the NDIS 5.*x* NDIS\_MINIPORT\_CHARACTERISTICS structure have been removed from the NDIS 6.0 version of the structure. The NDIS 6.0 version of the structure is named [**NDIS\_MINIPORT\_DRIVER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff565958).

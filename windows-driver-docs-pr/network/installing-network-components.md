@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Installing Network Components
 
 
-## <a href="" id="ddk-installing-network-componentsn-ng"></a>
+
 
 
 Network components are installed by the network configuration subsystem.

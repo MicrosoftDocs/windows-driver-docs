@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # When Should Code and Data Be Pageable?
 
 
-## <a href="" id="ddk-when-should-code-and-data-be-pageable-kg"></a>
+
 
 
 You can make all or part of your driver pageable. Paging driver code can reduce the size of the driver's load image, thus freeing system space for other uses. It is most practical for drivers of sporadically used devices, such as modems and CD-ROMs, or for parts of drivers that are rarely called.

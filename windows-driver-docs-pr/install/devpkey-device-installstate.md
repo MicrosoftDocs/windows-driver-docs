@@ -30,7 +30,7 @@ The DEVPKEY_Device_InstallState device property represents the installation stat
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property-data-type identifier</strong></p></td>
-<td align="left"><p>[<strong>DEVPROP_TYPE_INT32</strong>](devprop-type-int32.md)</p></td>
+<td align="left"><p>[<strong>DEVPROP_TYPE_UINT32</strong>](devprop-type-uint32.md)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Property access</strong></p></td>

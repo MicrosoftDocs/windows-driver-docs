@@ -28,10 +28,10 @@ The Microsoft Windows operating systems use a network architecture that is based
 
 Microsoft Windows network drivers implement the bottom four layers of the OSI Reference Model:
 
-## <a href="" id="physical-layer"></a>Physical Layer  
+## Physical Layer  
 The physical layer is the lowest layer of the OSI model. This layer manages the reception and transmission of the unstructured raw bit stream over a physical medium. It describes the electrical/optical, mechanical, and functional interfaces to the physical medium. The physical layer carries the signals for all of the higher layers. In Windows, the physical layer is implemented by the network interface card (NIC), its transceiver, and the medium to which the NIC is attached.
 
-## <a href="" id="data-link-layer"></a>Data Link Layer  
+## Data Link Layer  
 The data link layer is further divided by Institute of Electrical and Electronics Engineers (IEEE) into two sublayers: logical link control (LLC) and media access control (MAC).
 
 ### LLC

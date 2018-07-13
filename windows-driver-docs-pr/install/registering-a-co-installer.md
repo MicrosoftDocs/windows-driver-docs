@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Registering a Co-installer
 
 
-## <a href="" id="ddk-registering-a-co-installer-dg"></a>
+
 
 
 A co-installer can be registered for a single device or for all the devices in a particular setup class. A device-specific co-installer is registered dynamically through the INF file when one of its devices is installed. A class co-installer is registered manually or by a Custom Device Installation Application and an INF.

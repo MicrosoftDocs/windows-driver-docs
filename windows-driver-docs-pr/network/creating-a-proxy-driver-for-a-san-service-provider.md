@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Creating a Proxy Driver for a SAN Service Provider
 
 
-## <a href="" id="ddk-creating-a-proxy-driver-for-a-san-service-provider-ng"></a>
+
 
 
 A proxy driver for a SAN service provider is a kernel-mode driver that performs tasks required by the Windows Sockets switch and the SAN service provider. Such tasks include managing memory and determining the IP addresses of network interface controllers (NICs) that are under the proxy driver's control. The proxy driver is not required to be a Windows Driver Model (WDM) driver. That is, it is not required to support Plug and Play or power management. For more information about developing a kernel-mode driver, see [Kernel-Mode Driver Components](https://msdn.microsoft.com/library/windows/hardware/ff553213).

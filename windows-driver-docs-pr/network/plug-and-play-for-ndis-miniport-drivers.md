@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Plug and Play for NDIS Miniport Drivers
 
 
-## <a href="" id="ddk-plug-and-play-for-ndis-miniport-drivers-ng"></a>
+
 
 
 This section describes:

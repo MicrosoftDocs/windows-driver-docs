@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Virtual Connection Context
 
 
-## <a href="" id="ddk-virtual-connection-context-ng"></a>
+
 
 
 Before making a call, a connection-oriented client requests a connection-oriented miniport driver to set up a virtual connection (VC) over which packets can be transmitted or received. Similarly, before indicating an incoming call to a connection-oriented client, a call manager or integrated miniport call manager (MCM) driver requests the miniport driver to set up a VC for the incoming call.

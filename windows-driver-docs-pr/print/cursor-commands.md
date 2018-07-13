@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Cursor Commands
 
 
-## <a href="" id="ddk-cursor-commands-gg"></a>
+
 
 
 The [printer commands](printer-commands.md) in the following table control cursor movement. All commands are specified using the [command entry format](command-entry-format.md).

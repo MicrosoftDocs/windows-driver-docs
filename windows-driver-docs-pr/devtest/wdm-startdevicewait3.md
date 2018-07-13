@@ -2,6 +2,11 @@
 title: StartDeviceWait3 rule (wdm)
 description: The StartDeviceWait3 rule specifies that the driver should not call KeWaitForSingleObject in the context of start device IRP.
 ms.assetid: 7567E44C-3300-400C-A37A-67D309A3F840
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["StartDeviceWait3 rule (wdm)"]
 topic_type:
 - apiref

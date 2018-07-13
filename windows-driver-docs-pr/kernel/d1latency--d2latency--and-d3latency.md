@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # D1Latency, D2Latency, and D3Latency
 
 
-## <a href="" id="ddk-d1latency-d2latency-and-d3latency-kg"></a>
+
 
 
 The **D1Latency**, **D2Latency**, and **D3Latency** members of [**DEVICE\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff543095) contain the approximate time, in 100-microsecond units, that the device requires to return to the D0 state from each of the sleeping states. A driver should specify a latency time of zero for any device power state that it does not support.

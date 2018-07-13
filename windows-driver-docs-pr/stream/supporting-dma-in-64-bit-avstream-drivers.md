@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Supporting DMA in 64-Bit AVStream Drivers
 
 
-## <a href="" id="ddk-supporting-dma-in-64-bit-avstream-drivers-ksg"></a>
+
 
 
 AVStream supports DMA on 32-bit and 64-bit addressable devices.

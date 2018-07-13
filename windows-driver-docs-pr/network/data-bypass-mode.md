@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Data Bypass Mode
 
 
-## <a href="" id="ddk-data-bypass-mode-ng"></a>
+
 
 
 The filter driver *data bypass mode* can provide improved system performance. NDIS does not call *FilterXxx* functions that are bypassed. For example, if the send and receive services are not required for a given filter application, the filter driver can bypass the send and receive functions.

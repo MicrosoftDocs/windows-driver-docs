@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Introduction to Image Processing Filters
 
 
-## <a href="" id="ddk-introduction-to-image-processing-filters-si"></a>
+
 
 
 The image processing filter is a WIA extension. The image processing filter serves two primary purposes:

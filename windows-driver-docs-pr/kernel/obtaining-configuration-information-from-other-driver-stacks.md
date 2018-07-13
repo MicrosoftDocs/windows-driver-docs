@@ -14,7 +14,7 @@ ms.technology: windows-devices
 # Obtaining Configuration Information from Other Driver Stacks
 
 
-## <a href="" id="ddk-obtaining-configuration-information-from-other-driver-stacks-kg"></a>
+
 
 
 At times you need to obtain information from the configuration space of a device whose driver is on a stack other than the one that your driver is on. For instance, suppose you want to set a bit in the configuration space of a PCI-to-PCI bridge and you do not have a pointer to the PDO of the bridge. Although the operating system enumerates PCI-to-PCI bridges and creates a PDO for every bridge on the system, it does not register device interfaces for these devices. Therefore, you cannot use the device interface mechanism to access the configuration space of these bridges. For more information about device interfaces see [Introduction to Device Interfaces](https://msdn.microsoft.com/library/windows/hardware/ff549460).

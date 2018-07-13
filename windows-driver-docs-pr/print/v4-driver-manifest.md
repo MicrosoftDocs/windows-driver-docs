@@ -4,7 +4,7 @@ author: windows-driver-content
 description: The v4 print driver manifest contains printer-specific setup directives and is used in conjunction with an INF file.
 ms.assetid: 187A10B7-2AAC-46D9-998C-C8724D8E3862
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,11 +57,12 @@ The following table shows the directives that are used in the DriverConfig secti
 </tr>
 <tr class="even">
 <td><p><strong>RequiredClass</strong></p>
-<p>Causes this driver to include all files from a defined class driver using the driver/friendly name of the device as a key. This is the mechanism for linking a printclass driver to a model specific driver.</p></td>
+<p>Causes this driver to include all files from a defined class driver using the driver/friendly name of the device and its GUID as key. This is the mechanism for linking a printclass driver to a model specific driver.</p></td>
 <td><p>The RequiredClass directive cannot be used by a class driver. When you use RequiredClass, you should avoid file name collisions between the printer driver and the Print Class driver to which you're linking.</p>
 <p>Although files with similar names won't overwrite each other, it may be difficult during troubleshooting, to distinguish between the class driver package file and the file from the v4 printer driver.</p></td>
-<td><p>RequiredClass=</p>
-<p>&quot;Fabrikam PCL5e Class Driver&quot;</p></td>
+<td><p>Example:</p>
+<p>RequiredClass=</p>
+<p>&quot;Fabrikam PCL5e Class Driver&quot;,{E771FD8A-DDB6-47ba-BF85-0337950BEF58}</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DriverFile</strong></p>

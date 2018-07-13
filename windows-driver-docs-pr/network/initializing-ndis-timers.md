@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Initializing NDIS Timers
 
 
-## <a href="" id="ddk-initializing-ndis-timers-ng"></a>
+
 
 
 The [**NDIS\_TIMER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff567886) structure defines characteristics of a one-shot or periodic timer. Any NDIS driver can have more than one timer. Each timer object is associated with a different [**NetTimerCallback**](https://msdn.microsoft.com/library/windows/hardware/ff568351) function that is specified in the **TimerFunction** member. NDIS calls the associated *NetTimerCallback* function when the timer expires.

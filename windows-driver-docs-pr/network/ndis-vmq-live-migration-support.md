@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # NDIS VMQ Live Migration Support
 
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 To support live migration, a virtual machine (VM) can be paused at any instruction or pending I/O boundary. That is, the VM might not finish pending receive requests. So, the network virtual service provider (VSP) returns all of the received packets to the underlying network adapter that the VM did not return.

@@ -24,7 +24,7 @@ ms.technology: windows-devices
 
  
 
-## <a href="" id="ddk-managing-netdma-interrupts-ng"></a>
+
 
 
 With the NetDMA interface, you can complete dynamic memory access (DMA) operations with an interrupt service routine (ISR). For general information about servicing interrupts in Microsoft Windows drivers, see [Servicing Interrupts](https://msdn.microsoft.com/library/windows/hardware/ff563737).

@@ -2,6 +2,11 @@
 title: SpinlockDpc rule (kmdf)
 description: The SpinlockDpc rule specifies that calls to KeAcquireSpinLock or KeAcquireSpinLockRaiseToDpc and KeReleaseSpinlock are used in strict alternation.
 ms.assetid: 77DA365C-7717-45B6-B8AD-9686B880AB50
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["SpinlockDpc rule (kmdf)"]
 topic_type:
 - apiref
