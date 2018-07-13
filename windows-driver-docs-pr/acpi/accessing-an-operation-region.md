@@ -15,7 +15,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Accessing an Operation Region
+#Accessing an Operation Region
 
 
 
