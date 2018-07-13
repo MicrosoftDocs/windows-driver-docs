@@ -64,6 +64,8 @@
 #### [Life Cycle of a Storport Driver](life-cycle-of-a-storport-driver.md)
 #### [History of Storport](history-of-storport.md)
 #### [Capabilities Provided by Storport](capabilities-provided-by-storport.md)
+##### [Storport driver support routines](storport-driver-support-routines.md)
+##### [Storport driver miniport routines](storport-driver-miniport-routines.md)
 #### [Storport’s Interface with the Storage Class Driver](storport-s-interface-with-the-storage-class-driver.md)
 ##### [Storport's SRB Interface with the Storage Class Driver](storport-s-srb-interface-with-the-storage-class-driver.md)
 ##### [Negotiating Claim and Release Device Requests with Storport](negotiating-claim-and-release-device-requests-with-storport.md)
