@@ -2,7 +2,7 @@
 title: Debugger Data Model C++ Interfaces Overview
 description: This topic provides an overview of the Debugger Data Model C++ Interfaces to extend and customize the capabilities of the debugger.
 ms.author: domars
-ms.date: 07/12/2018
+ms.date: 07/13/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,41 +60,41 @@ The following interfaces are defined for this category:
 
 *Bridges Between DbgEng and the Data Model*
 
-[IHostDataModelAccess]() 
+[IHostDataModelAccess](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-ihostdatamodelaccess?branch=rs5) 
 
 *Main Interfaces* 
 
-[IModelObject]() 
+[IModelObject](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-imodelobject?branch=rs5) 
 
-[IKeyStore]() 
+[IKeyStore](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-ikeystore?branch=rs5) 
 
-[IModelIterator]() 
+[IModelIterator](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-imodeliterator?branch=rs5) 
 
-[IModelPropertyAccessor]() 
+[IModelPropertyAccessor](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-imodelpropertyaccessor?branch=rs5) 
 
-[IModelMethod]() 
+[IModelMethod](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-imodelmethod?branch=rs5) 
 
-[IKeyEnumerator]() 
+[IKeyEnumerator](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-ikeyenumerator?branch=rs5) 
 
-[IRawEnumerator]() 
+[IRawEnumerator](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-irawenumerator?branch=rs5) 
 
-[IModelKeyReference]()  / [IModelKeyReference2]() 
+[IModelKeyReference](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-imodelkeyreference?branch=rs5)  / [IModelKeyReference2](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-imodelkeyreference2?branch=rs5) 
 
 *Concept Interfaces*
 
-[IStringDisplayableConcept]() 
+[IStringDisplayableConcept](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-istringdisplayableconcept?branch=rs5) 
 
-[IIterableConcept]() 
+[IIterableConcept](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-iiterableconcept?branch=rs5) 
 
-[IIndexableConcept]() 
+[IIndexableConcept](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-iindexableconcept?branch=rs5) 
 
-[IPreferredRuntimeTypeConcept]() 
+[IPreferredRuntimeTypeConcept](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-ipreferredruntimetypeconcept?branch=rs5) 
 
-[IDataModelConcept]() 
+[IDataModelConcept](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelconcept?branch=rs5) 
 
-[IDynamicKeyProviderConcept]() 
+[IDynamicKeyProviderConcept](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idynamickeyproviderconcept?branch=rs5) 
 
-[IDynamicConceptProviderConcept]() 
+[IDynamicConceptProviderConcept](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idynamicconceptproviderconcept?branch=rs5) 
 
 
 **Management of Data Models and Extensibility**
