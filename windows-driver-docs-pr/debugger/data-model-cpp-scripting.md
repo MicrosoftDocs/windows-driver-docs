@@ -2,7 +2,7 @@
 title: Debugger Data Model C++ Scripting
 description: This topic describes how to use Debugger Data Model C++ scripting to support automation with the debugger engine.
 ms.author: domars
-ms.date: 07/12/2018
+ms.date: 07/13/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -124,7 +124,7 @@ The interfaces involved from the host's perspective here are:
 Interface | Description
 |---------|------------|
 IDebugHostScriptHost | The interface which indicates the capability of the debug host to take part in the scripting environment. This interface allows for the creation of contexts which inform scripting engines of where to place objects.
-IDataModelScriptHostContext | A host interface which is used by the script provider as a container for the contents of the script. How the contents of a script surface other than the manipulations that it performs to the object model of the debugger application is up to the particular debug host. This interface allows the script provider to get information about where to place its contents. See Data Model C++ Scripting Interfaces for more information.
+IDataModelScriptHostContext | A host interface which is used by the script provider as a container for the contents of the script. How the contents of a script surface other than the manipulations that it performs to the object model of the debugger application is up to the particular debug host. This interface allows the script provider to get information about where to place its contents. See [Data Model C++ Scripting Interfaces](#scriptinterface) later in this topic for more information.
 
 
 **The Debug Host's Script Host: IDebugHostScriptHost**
@@ -583,12 +583,15 @@ The EnumerateArguments method returns a variable set (represented by an IDataMod
 
 **Looking at Variables: IDataModelScriptDebugVariableSetEnumerator**
 
-A set of variables in the script being debugged (whether those in a particular scope, the locals of a function, the arguments of a function, etc...) is represented by a variable set defined through the IDataModelScriptDebugVariableSetEnumerator interface: 
+A set of variables in the script being debugged (whether those in a particular scope, the locals of a function, the arguments of a function, etc...) is represented by a variable set defined through the IDataModelScriptDebugVariableSetEnumerator interface:
+
+```
 DECLARE_INTERFACE_(IDataModelScriptDebugVariableSetEnumerator, IUnknown)
 {
     STDMETHOD(Reset)() PURE;
     STDMETHOD(GetNext)(_Out_ BSTR *variableName, _COM_Outptr_opt_ IModelObject **variableValue, _COM_Outptr_opt_result_maybenull_ IKeyStore **variableMetadata) PURE;
 }
+```
 
 [Reset]()
 
