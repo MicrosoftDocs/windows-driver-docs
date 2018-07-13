@@ -16,7 +16,7 @@ ms.technology: windows-devices
 
 # Installing preview versions of the Windows Driver Kit (WDK)
 
-This page contains installation instructions for Insider Preview (pre-release) versions of the Windows Driver Kit (WDK). You can find the actual downloads for the latest pre-release version of the WDK and the EWDK at [https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK).  For info about the latest **released** versions of the WDK, see [Download the Windows Driver Kit (WDK)](download-the-wdk.md). For downloads of earlier versions of the WDK, see [Other WDK downloads](other-wdk-downloads.md).  
+This page contains installation instructions for Insider Preview (pre-release) versions of the Windows Driver Kit (WDK). You can find the actual downloads for the latest pre-release version of the WDK and the EWDK at [https://www.microsoft.com/software-download/windowsinsiderpreviewWDK](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK).  For info about the latest **released** versions of the WDK, see [Download the Windows Driver Kit (WDK)](download-the-wdk.md). For downloads of earlier versions of the WDK, see [Other WDK downloads](other-wdk-downloads.md).  
 
 ## Install Windows Driver Kit (WDK) Insider Preview
 
@@ -44,11 +44,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\StrongName\Verification\*,31bf
 
 ### 3. Install SDK Insider Preview 
 
-[Get SDK Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK)
+[Get SDK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK)
 
 ### 4. Install WDK Insider Preview
 
-[Get WDK Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK)
+[Get WDK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK)
 
 > [!Note]   
 > During installation you will see the Visual Studio installer install the WDK Visual Studio Extensions. 
