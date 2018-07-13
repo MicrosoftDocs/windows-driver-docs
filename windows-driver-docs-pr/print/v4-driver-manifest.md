@@ -4,7 +4,7 @@ author: windows-driver-content
 description: The v4 print driver manifest contains printer-specific setup directives and is used in conjunction with an INF file.
 ms.assetid: 187A10B7-2AAC-46D9-998C-C8724D8E3862
 ms.author: windowsdriverdev
-ms.date: 07/12/2018
+ms.date: 07/13/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ The following table shows the directives that are used in the DriverConfig secti
 <p>Although files with similar names won't overwrite each other, it may be difficult during troubleshooting, to distinguish between the class driver package file and the file from the v4 printer driver.</p></td>
 <td><p>Example:</p>
 <p>RequiredClass=</p>
-<p>&quot;Fabrikam PCL5e Class Driver&quot;,{E771FD8A-DDB6-47ba-BF85-0337950BEF58}</p></td>
+<p>&quot;Fabrikam PCL5e Class Driver&quot;,{9343720D-B67E-4451-B93F-6F721C439771}</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DriverFile</strong></p>
