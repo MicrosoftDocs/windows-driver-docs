@@ -73,11 +73,13 @@ For a given packet queue, the OS guarantees
 
 ## Polling model
 
+The NetAdapter data path is a polling model, and the polling operation on one packet queue is completely independent of other queues. The polling model is implemented by calling the client driver's queue advance callbacks, as shown in the following figure:
+
 ![Polling Flow](images/polling.png)
 
-The NetAdapter data path is a polling model, and the polling operation on one packet queue is completely  This polling model is implemented by calling the client driver's queue advance callbacks. For code examples, see [*EVT_TXQUEUE_ADVANCE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nettxqueue/nc-nettxqueue-evt_txqueue_advance) and [*EVT_RXQUEUE_ADVANCE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrxqueue/nc-netrxqueue-evt_rxqueue_advance).
+For code examples, see [*EVT_TXQUEUE_ADVANCE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nettxqueue/nc-nettxqueue-evt_txqueue_advance) and [*EVT_RXQUEUE_ADVANCE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrxqueue/nc-netrxqueue-evt_rxqueue_advance).
 
-The sequence of polling operation is as following:
+The sequence of a polling operation is as follows:
 
 1. The OS gives buffers to the client driver 
 2. The client driver pro
