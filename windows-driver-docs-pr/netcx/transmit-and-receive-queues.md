@@ -69,7 +69,7 @@ Similarly, when creating a receive (Rx) queue, the client must provide pointers 
 
 See each of these pages for details on what the client needs to do in each event callback function.
 
-For a given packet queue, the OS guarantees  
+For a given packet queue, the OS guarantees
 
 ## Polling model
 
