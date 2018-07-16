@@ -4,7 +4,7 @@ author: windows-driver-content
 description: For rendering, the v4 printer driver can utilize the existing rendering capabilities of a Print Class driver.
 ms.assetid: F8178988-1C11-4B21-B250-6626528E0AE5
 ms.author: windowsdriverdev
-ms.date: 07/12/2018
+ms.date: 07/13/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -23,7 +23,7 @@ For example, a company called Fabrikam with a print class driver named *PCL5e*, 
 [DriverConfig]
 DataFile=FAPDL.gpd
 RequiredFiles=UNIRES.DLL,STDNAMES.GPD,STDDTYPE.GDL,STDSCHEM.GDL,STDSCHMX.GDL,MSXPSINC.GPD
-RequiredClass="Fabrikam PCL5e Class Driver",{E771FD8A-DDB6-47ba-BF85-0337950BEF58} ; This links the print class driver to this printer driver
+RequiredClass="Fabrikam PCL5e Class Driver",{9343720D-B67E-4451-B93F-6F721C439771} ; This links the print class driver to this printer driver
 ResourceFile=FARC.dll
 PropertyBag=FAProperty.dpb
 PrinterDriverID={GUID}
