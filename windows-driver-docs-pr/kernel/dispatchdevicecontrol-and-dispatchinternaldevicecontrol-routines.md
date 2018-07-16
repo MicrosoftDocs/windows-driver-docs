@@ -14,12 +14,10 @@ ms.technology: windows-devices
 # DispatchDeviceControl and DispatchInternalDeviceControl Routines
 
 
+A driver's dispatch routines (see [**DRIVER_DISPATCH**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)) handle IRPs with I/O function codes of [**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744) and [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550766), respectively.
 
+For every common type of peripheral device, the system defines a set of I/O control codes for **IRP\_MJ\_DEVICE\_CONTROL** requests. New drivers for each type of device must support these requests. In most cases, these public I/O control codes for each type of device are not exported to user-mode applications. 
 
-
-A driver's [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287) and [*DispatchInternalDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543326) routines handle IRPs with I/O function codes of [**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744) and [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550766), respectively.
-
-For every common type of peripheral device, the system defines a set of I/O control codes for **IRP\_MJ\_DEVICE\_CONTROL** requests. New drivers for each type of device must support these requests. In most cases, these public I/O control codes for each type of device are not exported to user-mode applications.
 
 Some of these system-defined I/O control codes are used by higher-level drivers that create IRPs for the underlying device driver by calling [**IoBuildDeviceIoControlRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548318). Others are used by Win32 components to communicate with an underlying device driver by calling the Win32 function [**DeviceIoControl**](https://msdn.microsoft.com/library/windows/desktop/aa363216) (described in Microsoft Windows SDK documentation) which, in turn, calls a system service. The I/O manager sets up an IRP, and stores the major function code **IRP\_MJ\_DEVICE\_CONTROL** and the given I/O control code in the [**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659) structure at **Parameters.DeviceIoControl.IoControlCode**. Then, the I/O manager calls the *DispatchDeviceControl* routine of the highest-level driver in the chain.
 
