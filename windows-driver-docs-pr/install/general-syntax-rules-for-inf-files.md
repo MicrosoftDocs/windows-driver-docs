@@ -103,7 +103,6 @@ The following syntax rules govern the required and optional contents of INF file
 
     -   The following syntax is valid and is equivalent to `CopyFiles = "SomeDirectory\",SomeFile ; comment`.
 
-
         ```
         CopyFiles = "SomeDirectory\"\ ; comment 
         ,SomeFile
