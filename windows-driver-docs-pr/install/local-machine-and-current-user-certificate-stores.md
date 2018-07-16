@@ -14,15 +14,21 @@ ms.technology: windows-devices
 
 Each of the system certificate stores has the following types:
 
-<a href="" id="local-machine-certificate-store"></a>Local machine certificate store  
+## Local machine certificate store
+
 This type of certificate store is local to the computer and is global to all users on the computer. This certificate store is located in the registry under the HKEY_LOCAL_MACHINE root.
 
-<a href="" id="current-user-certificate-store"></a>Current user certificate store  
+## Current user certificate store
+
 This type of certificate store is local to a user account on the computer. This certificate store is located in the registry under the HKEY_CURRENT_USER root.
+
+>[!NOTE]
+>For registry locations, see [System Store Locations](https://docs.microsoft.com/windows/desktop/seccrypto/system-store-locations).
 
 Be aware that all current user certificate stores inherit the contents of the local machine certificate stores. For example, if a certificate is added to the local machine [Trusted Root Certification Authorities certificate store](trusted-root-certification-authorities-certificate-store.md), all current user Trusted Root Certification Authorities certificate stores also contain the certificate.
 
-**Note**  The driver signing verification during Plug and Play (PnP) installation requires that root and Authenticode certificates, including [test certificates](test-certificates.md), are located in a local machine certificate store.
+>[!NOTE]
+>The driver signing verification during Plug and Play (PnP) installation requires that root and Authenticode certificates, including [test certificates](test-certificates.md), are located in a local machine certificate store.
 
  
 
