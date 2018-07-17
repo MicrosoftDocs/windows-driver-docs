@@ -31,7 +31,7 @@ The device's drivers are not installed.
 
 ### Recommended Resolution (Windows 2000 and later versions of Windows)
 
-Reinstall the device's drivers.
+Please visit the website of the company that manufactures the device and look for the most recent drivers for this device.
 
  
 
