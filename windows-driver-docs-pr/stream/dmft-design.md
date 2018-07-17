@@ -232,6 +232,8 @@ Device MFTs must support the following interfaces:
 
 - [IMFRealtimeClientEx](https://msdn.microsoft.com/library/windows/desktop/hh448047)
 
+- [IMFMediaEventGenerator] (https://docs.microsoft.com/en-us/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator)
+
 - [IMFShutdown](https://msdn.microsoft.com/library/windows/desktop/ms703054)
 
 ### Notification Requirements
