@@ -95,9 +95,6 @@ For example, If your driver is certified for Windows 10 RS3 (1709), clicking **E
 
 ![A screenshot of the driver expansion option.](images/new-pnp-nodes.png)
 
-### Expanding a drivers distribution:
-
-
 ## FAQ
 
 **When would I need to specify a floor or ceiling for a version of Windows that has been released?**
