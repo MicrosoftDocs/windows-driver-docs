@@ -5,7 +5,7 @@ ms.assetid: 85A819E2-6352-4DE9-9689-3DCEB9B0AAD8
 keywords:
 - WDF Network Adapter Class Extension Receive Side Scaling, NetAdapterCx receive side scaling, NetAdapterCx RSS, NetAdapter RSS
 ms.author: windowsdriverdev
-ms.date: 03/05/2018
+ms.date: 07/13/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,7 +42,8 @@ To get started with RSS in NetAdapterCx, follow these steps:
     2. *[EvtNetAdapterReceiveScalingDisable](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nc-netreceivescaling-evt_net_adapter_receive_scaling_disable)*
     3. *[EvtNetAdapterReceiveScalingSetHashSecretKey](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nc-netreceivescaling-evt_net_adapter_receive_scaling_set_hash_secret_key)*
     4. *[EvtNetAdapterReceiveScalingSetIndirectionEntries](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nc-netreceivescaling-evt_net_adapter_receive_scaling_set_indirection_entries)*
-4. Pass the initialized RSS capabilities structures to the [NetAdapterSetReceiveScalingCapabilities](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nf-netreceivescaling-netadaptersetreceivescalingcapabilities) method in your *[EvtNetAdapterSetCapabilities](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities)* callback function.
+4. Set the RSS capabilities structure's **SynchronizeSetIndirectionEntries** as appropriate.
+5. Pass the initialized RSS capabilities structures to the [NetAdapterSetReceiveScalingCapabilities](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nf-netreceivescaling-netadaptersetreceivescalingcapabilities) method.
 
 ## Enabling and disabling RSS
 
@@ -53,11 +54,7 @@ After you set RSS capabilities in the *[EvtNetAdapterSetCapabilities](https://do
 
 ### Enabling RSS
 
-NetAdapterCx enables RSS by invoking your driver's *[EvtNetAdapterReceiveScalingEnable](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nc-netreceivescaling-evt_net_adapter_receive_scaling_enable)* callback. In the context of this callback, you typically get any information you need to turn RSS on, then enable control bits in your hardware. You can call these helper methods to get required information:
-
-- [NetAdapterGetReceiveScalingProtocoltypes](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nf-netreceivescaling-netadaptergetreceivescalingprotocoltypes)
-- [NetAdapterGetReceiveScalingHashType](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nf-netreceivescaling-netadaptergetreceivescalinghashtype)
-- [NetAdapterGetReceiveScalingHashSecretKey](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nf-netreceivescaling-netadaptergetreceivescalinghashsecretkey)
+NetAdapterCx enables RSS by invoking your driver's *[EvtNetAdapterReceiveScalingEnable](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nc-netreceivescaling-evt_net_adapter_receive_scaling_enable)* callback. In the context of this callback, you typically enable control bits in your hardware. 
 
 For a code example of enabling RSS, see *[EvtNetAdapterReceiveScalingEnable](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nc-netreceivescaling-evt_net_adapter_receive_scaling_enable)*.
 
