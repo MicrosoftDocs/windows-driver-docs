@@ -21,7 +21,7 @@ keywords:
 - editors WDK boot options
 - boot options WDK , editing
 ms.author: windowsdriverdev
-ms.date: 07/02/2018
+ms.date: 07/03/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,8 @@ ms.technology: windows-devices
 # Editing the Boot.ini File
 
 
-[!IMPORTANT] This topic describes the boot options supported in Windows XP and Windows Server 2003. If you are changing boot options for modern versions of Windows, see [Boot Options in Windows Vista and Later](boot-options-in-windows-vista-and-later.md).
+> [!IMPORTANT] 
+> This topic describes the boot options supported in Windows XP and Windows Server 2003. If you are changing boot options for modern versions of Windows, see [Boot Options in Windows Vista and Later](boot-options-in-windows-vista-and-later.md).
 
 Prior to Windows Vista, BIOS-based computers running Windows store boot options in a Boot.ini text file. You can edit Boot.ini using Bootcfg (`bootcfg.exe`), a tool included in Windows XP and Windows Server 2003, or using a text editor such as Notepad. Bootcfg is documented in Windows Help and Support. You can also view and change some boot options in Control Panel under System. In the System Properties dialog box, on the Advanced tab, click Settings under **Startup and Recovery**. Because this functionality is limited, it is not discussed in this section. For information about the **Startup and Recovery** dialog box, see Help and Support Center.
 

@@ -3,7 +3,7 @@ title: DoubleKeSetEvent rule (storport)
 description: This rule verifies that KeSetEvent is not called twice on the same event object. If the same event object is passed to the routine, the driver fails the rule.
 ms.assetid: A9BA2D40-865B-4BD4-86A3-78D695F2DB4D
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
