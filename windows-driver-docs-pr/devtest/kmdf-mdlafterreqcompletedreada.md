@@ -3,7 +3,7 @@ title: MdlAfterReqCompletedReadA rule (kmdf)
 description: The MdlAfterReqCompletedReadA rule specifies that within the EvtIoRead callback function, the memory descriptor list (MDL) object retrieved cannot be accessed after the I/O request is completed.
 ms.assetid: 3e7c40a0-882e-45eb-8cf1-bee1096379ad
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

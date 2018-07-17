@@ -1,19 +1,23 @@
 ---
-title: Setting Up Kernel-Mode Debugging Manually
-description: This section describes how to set up kernel-mode debugging manually.
+title: Setting Up Kernel-Mode Debugging
+description: This section describes how to set up kernel-mode debugging.
 ms.assetid: 268DF246-46AA-4F4E-BCBB-FCA37A3C0353
 keywords: ["Kernel-mode debugging", "Setting up kernel-mode debugging"]
 ms.author: domars
-ms.date: 05/22/2018
+ms.date: 06/22/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# <span id="debugger.setting_up_kernel-mode_debugging_in_windbg__cdb__or_ntsd"></span>Setting Up Kernel-Mode Debugging Manually
+# <span id="debugger.setting_up_kernel-mode_debugging_in_windbg__cdb__or_ntsd"></span>Setting Up Kernel-Mode Debugging
 
 
-This section describes how to set up kernel-mode debugging manually.
+This section describes how to set up kernel-mode debugging.
+
+>[!TIP]
+>The recommended approach is to use network (KDNET) debugging and use the kdnet utility to configure that automatically. For more information, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
+   
 
 ## <span id="in_this_section"></span>In this section
 

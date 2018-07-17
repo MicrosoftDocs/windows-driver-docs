@@ -3,7 +3,7 @@ title: NdisMNetPnPEventInOIDRequest rule (ndis)
 description: This rule checks that NdisMNetPnPEvent is not called in the context of an OID request.
 ms.assetid: BC069325-FFC4-452D-9B07-C39C2F942B64
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

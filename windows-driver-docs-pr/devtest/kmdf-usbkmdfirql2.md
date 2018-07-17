@@ -3,7 +3,7 @@ title: UsbKmdfIrql2 rule (kmdf)
 description: The UsbKmdfIrql2 rule specifies that a KMDF driver should not call USB-specific DDIs at the incorrect IRQL level.
 ms.assetid: D514B902-8F29-4D77-A26F-57DA43A045E8
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@
 ## [Choosing the 32-Bit or 64-Bit Debugging Tools](choosing-a-32-bit-or-64-bit-debugger-package.md)
 ## [Debugging Environments](debuggers-in-the-debugging-tools-for-windows-package.md)
 ## [Setting Up Debugging (Kernel-Mode and User-Mode)](getting-set-up-for-debugging.md)
-### [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
+### [Setting Up Kernel-Mode Debugging](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
 #### [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)
 #### [Setting Up KDNET Network Kernel Debugging Manually](setting-up-a-network-debugging-connection.md)
 #### [Setting Up Kernel-Mode Debugging over a 1394 Cable Manually](setting-up-a-1394-cable-connection.md)

@@ -3,7 +3,7 @@ title: MdlAfterReqCompletedIoctlA rule (kmdf)
 description: The MdlAfterReqCompletedIoctlA rule specifies that within the EvtIoDeviceControl callback function, the memory descriptor list (MDL) cannot be accessed after the I/O request is completed.
 ms.assetid: 694d3370-d739-4d6b-abc1-636eb90ea0b3
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
