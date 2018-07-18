@@ -3,7 +3,7 @@ title: StorPortSpinLock4 rule (storport)
 description: This rule is the release counterpart of StorPortSpinLock. It is similar to the SpinLockRelease rule.
 ms.assetid: D6003108-7B97-48A5-9A8B-007DEFB5DF6C
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -3,7 +3,7 @@ title: StorPortStartIo rule (storport)
 description: Waits or data allocation must never be performed in the miniport's StartIo routine.
 ms.assetid: 88CC6D8E-A493-4094-B30B-F6AE67A84B0F
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -3,7 +3,7 @@ title: CompleteCanceledReq rule (kmdf)
 description: The CompleteCanceledReq rule specifies that if the request has already been canceled, the request is no longer valid, and the driver should not complete it.
 ms.assetid: 8c7b10d1-a273-4831-b5c2-dbb44a600142
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

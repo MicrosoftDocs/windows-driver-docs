@@ -18,7 +18,7 @@ keywords:
 - boot loaders WDK
 - firmware-independent boot options WDK
 ms.author: windowsdriverdev
-ms.date: 07/02/2018
+ms.date: 07/03/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,7 +28,8 @@ ms.technology: windows-devices
 
 The Windows boot loader architecture includes a firmware-independent boot configuration and storage system called *Boot Configuration Data* (BCD) and a boot option editing tool, BCDEdit (BCDEdit.exe). During development, you can use BCDEdit to configure boot options for debugging, testing, and troubleshooting your driver on computers running Windows 10, Windows 8, Windows Server 2012, Windows 7, and Windows Server 2008.
 
-[!IMPORTANT] Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using BCDEdit could render your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings.
+> [!IMPORTANT] 
+> Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using BCDEdit could render your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings.
 
 ## Boot Loading Architecture
 

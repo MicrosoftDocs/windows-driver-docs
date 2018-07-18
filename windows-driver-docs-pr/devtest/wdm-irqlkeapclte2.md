@@ -2,7 +2,7 @@
 title: IrqlKeApcLte2 rule (wdm)
 ms.assetid: 585d741d-543f-421b-be48-28f48d68fc4d
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

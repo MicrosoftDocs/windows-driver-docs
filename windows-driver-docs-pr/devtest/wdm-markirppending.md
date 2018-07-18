@@ -3,7 +3,7 @@ title: MarkIrpPending rule (wdm)
 description: The MarkIrpPending rule specifies that whenever a driver dispatch routine calls IoMarkIrpPending, the driver returns STATUS\_PENDING when the dispatch routine ends. See MarkIrpPending2 for a complimentary specification.
 ms.assetid: cbf5484e-2806-4df6-bdfb-98acfe5d214c
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
