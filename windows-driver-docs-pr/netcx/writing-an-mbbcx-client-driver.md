@@ -49,6 +49,10 @@ Unlike other types of NetAdapterCx drivers, MBB client drivers must not create t
 
 Next, the client driver must call [**MbbDeviceSetMbimParameters**](mbbdevicesetmbimparameters.md), typically in the [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function that follows.
 
+This message flow diagram illustrates the initialization process.
+
+![MBBCx client driver initialization process](images/mbbcx_initializing.png)
+
 ## Handling MBIM control messages
 
 MBBCx uses the standard MBIM control commands defined in MBIM specification Rev 1.0, sections 8, 9, and 10, for the control plane. Commands and responses are exchanged through a set of callback functions provided by the client driver and APIs provided by MBBCx. MBBCx mimics the operational model of an MBIM device, as defined in MBIM specification Rev 1.0, section 5.3, by using these function calls:
