@@ -1,5 +1,5 @@
 ---
-title: NetAdapterCx Offloads
+title: NetAdapterCx hardware offloads
 description: NetAdapterCx offloads
 ms.assetid: 85A819E2-6352-4DE9-9689-3DCEB9B0AAD8
 keywords:
@@ -11,7 +11,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# NetAdapterCx offloads
+# NetAdapterCx hardware offloads
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
