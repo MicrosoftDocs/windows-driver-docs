@@ -82,8 +82,6 @@ The minimum OS level is determined by the Products Certified OS level, or the At
 
 New OS level targeting options are available when creating a Shipping Label for Windows Update. These options enable you to “Expand” the driver coverage.
 
-![A screenshot of the driver expansion option.](images/driver-expansion.png)
-
 Expanding a driver submission's PnP choices enables the driver to target operating systems below the products certification level or Attested OS level. It also enables a Windows 8.1 driver to be offered to Windows 10 systems. 
 
 For example, If your driver is certified for Windows 10 RS3 (1709), clicking **Expand** will display new Hardware PnP choices for **Windows 10 Client versions 1506 and 1511 (TH1)** for each HWID listed in your INFs.  You can now publish these HWIDs as normal and also combine them with Floor and Ceiling options for further refinement (next slide).
