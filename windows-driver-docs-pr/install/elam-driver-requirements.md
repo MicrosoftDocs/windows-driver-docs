@@ -36,7 +36,6 @@ Because an AM driver does not own any devices, it is necessary to install the AM
 
 ## Backup Driver Installation
 
-
 To provide a recovery mechanism in the event that the ELAM driver is inadvertently corrupted, the ELAM installer also installs a copy of the driver in a backup location. This will allow WinRE to retrieve the clean copy and recover the installation.
 
 The installer reads the backup file location from the **BackupPath** key stored in
@@ -46,6 +45,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\EarlyLaunch
 ```
 
 The installer then places the backup copy in the folder specified in the regkey.
+
 ## AM Driver Initialization
 
 
@@ -54,37 +54,44 @@ The Windows boot loader, Winload, loads all boot-start drivers and their depende
 ## AM Driver Callback Interface
 
 
-The kernel PnP manager provides new callback functionality to ELAM drivers. Existing registry callbacks are also available. The ELAM drivers can use the callbacks to provide the PnP manager with a description of every boot image (driver and dependent DLL), and it can classify every boot image as a known good binary, known bad binary, or an unknown binary. Using operating system policy and the classification provided by the AM driver, PnP either initializes the boot image or skips the initialization of the boot image.
+The ELAM drivers use callbacks to provide the PnP manager with a description of every boot-start driver and dependent DLL, and it can classify every boot image as a known good binary, known bad binary, or an unknown binary.
 
-**Registry Callbacks**
+The default operating system policy is not to initialize known bad drivers and DLLs. Policy can be configured and is measured by Winload as part of boot attestation.
 
-The Early Launch drivers can use registry callbacks to monitor and validate the configuration data used as input for each boot-start driver. The configuration data is stored in the System registry hive, which is loaded by Winload and is available at the time of boot driver initialization. These callbacks are valid through the lifetime of the ELAM driver and will be unregistered when the driver is unloaded. The callback functions, [**CmRegisterCallbackEx**](https://msdn.microsoft.com/library/windows/hardware/ff541921), [**CmRegisterCallback**](https://msdn.microsoft.com/library/windows/hardware/ff541918), and [**CmUnRegisterCallback**](https://msdn.microsoft.com/library/windows/hardware/ff541928), as well as the associated type and structure definitions, are documented online.
+PnP uses policy and the classification provided by the AM driver to decide whether to initialize each boot image.
 
-**Boot Driver Callbacks**
+### Registry Callbacks
 
-The PnP manager exposes new callbacks to ELAM drivers. The callbacks enable an AM driver to classify every boot-start driver and dependent DLL as known good, known bad, or unknown. The PnP manager uses the classification with operating system policy to decide whether a boot-start driver or dependent DLL should be initialized. By default, known bad drivers and DLLs are not initialized. Policy can be configured to load known bad images or to not initialize unknown images. The operating system policy can be configured and is measured by Winload as part of boot attestation. The same callback is also used to provide status updates from Windows to an ELAM driver, including when all boot-start drivers have been initialized and the callback facility is no longer functional. All callback functions, types, and structures are documented online.
+The Early Launch drivers can use registry or boot driver callbacks to monitor and validate the configuration data used as input for each boot-start driver. The configuration data is stored in the System registry hive, which is loaded by Winload and is available at the time of boot driver initialization. These callbacks are valid through the lifetime of the ELAM driver and will be unregistered when the driver is unloaded. For more info, see:
 
-**Callback Registration**
+* [**CmRegisterCallbackEx**](https://msdn.microsoft.com/library/windows/hardware/ff541921)
+* [**CmRegisterCallback**](https://msdn.microsoft.com/library/windows/hardware/ff541918)
+* [**CmUnRegisterCallback**](https://msdn.microsoft.com/library/windows/hardware/ff541928)
 
-The ELAM driver can use the [**IoRegisterBootDriverCallback**](https://msdn.microsoft.com/library/windows/hardware/hh439379) and [**IoUnRegisterBootDriverCallback**](https://msdn.microsoft.com/library/windows/hardware/hh439394) functions to register and unregister for the boot driver callbacks.
+### Boot Driver Callbacks
 
-**Callback Function**
+Use [**IoRegisterBootDriverCallback**](https://msdn.microsoft.com/library/windows/hardware/hh439379) and [**IoUnRegisterBootDriverCallback**](https://msdn.microsoft.com/library/windows/hardware/hh439394) to register and unregister a [*BOOT_DRIVER_CALLBACK_FUNCTION*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nc-ntddk-boot_driver_callback_function).
 
-The Boot Driver Callback Facility leverages the EX Callback interface defined in the WDK and documented online. The format of the callback function shares its definition with [**EX_CALLBACK_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff560903), receiving a pointer to a context structure registered with the API as the first input parameter and receiving a callback type and a system-provided context structure for the specific callback type.
+This callback provides status updates from Windows to an ELAM driver, including when all boot-start drivers have been initialized and the callback facility is no longer functional.
 
-An error returned from a status update callback is treated as a fatal error and leads to a system bug check. This provides an ELAM driver the ability to indicate when a state is reached outside of AM policy. For example, if an AM runtime driver was not loaded and initialized, the Early Launch driver can fail the prepare-to-unload callback to prevent Windows from entering a state without an AM driver loaded.
-
-An image is treated as unknown when an error is returned from the initialize image callback. Unknown drivers are initialized or have their initialization skipped based on OS policy.
+### Callback Type
 
 The [**BDCB_CALLBACK_TYPE enumeration**](https://msdn.microsoft.com/library/windows/hardware/hh406352) describes two types of callbacks:
 
 -   Callbacks that provide status updates to an ELAM driver (BdCbStatusUpdate)
 -   Callbacks used by the AM driver to classify boot-start drivers and dependent DLLs before initializing their images (BdCbInitializeImage)
 
-The two callback types have unique context structures that provide additional information specific to the callback. The context structure for the status update callback contains a single enumerated type describing the Windows callout. The context structure for the initialize image callback is more complex, containing hash and certificate information for each loaded image. The structure additionally contains a field that is treated as an output parameter, where the AM driver writes the classification type for the driver.
+The two callback types have unique context structures that provide additional information specific to the callback.
+
+The context structure for the status update callback contains a single enumerated type describing the Windows callout.
+
+The context structure for the initialize image callback is more complex, containing hash and certificate information for each loaded image. The structure additionally contains a field that is an output parameter where the AM driver stores the classification type for the driver.
+
+An error returned from a status update callback is treated as a fatal error and leads to a system bug check. This provides an ELAM driver the ability to indicate when a state is reached outside of AM policy. For example, if an AM runtime driver was not loaded and initialized, the Early Launch driver can fail the prepare-to-unload callback to prevent Windows from entering a state without an AM driver loaded.
+
+An image is treated as unknown when an error is returned from the initialize image callback. Unknown drivers are initialized or have their initialization skipped based on OS policy.
 
 ## Malware Signatures
-
 
 The malware signature data is determined by the AM ISV, but should include, at a minimum, an approved list of driver hashes. The signature data is stored in the registry in a new “Early Launch Drivers” hive under HKLM that is loaded by Winload. Each AM driver has a unique key in which to store their signature binary large object (BLOB). The registry path and key has the format:
 
@@ -180,44 +187,9 @@ PNP_INITIALIZE_BAD_DRIVERS 0x7
 
 If a boot driver is skipped due to the initialization policy, the Kernel continues to attempt to initialize the next boot driver in the list. This continues until either the drivers are all initialized, or the boot failed because a boot driver that was skipped was critical to the boot. If the crash occurs after the disk stack is started, then there is a crash dump, and it contains some information about the reason or the crash, to include information about missing drivers. This can be used in WinRE to determine the cause of the failure and to attempt to remediate.
 
-## ELAM Driver Backup
-
-
-When the ELAM driver is installed, a backup copy of the driver must also be installed. The back-up location will be stored in the **BackupPath** key stored in
-
-```
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\EarlyLaunch
-```
-
-In the event of a failure to load or initialize the primary driver due to a corruption, WinRE looks in this location to restore the driver from the backup copy.
-
 ## ELAM and Measured Boot
 
 
-If the ELAM driver detects a policy violation (a rootkit, for example), it can invalidate the PCRs that indicated that the system was in a good state by using the Tbsi_Revoke_Attestation() function:
+If the ELAM driver detects a policy violation (a rootkit, for example), it should immediately call [**Tbsi_Revoke_Attestation**](https://docs.microsoft.com/windows/desktop/api/tbs/nf-tbs-tbsi_revoke_attestation) to invalidate the PCRs that indicated that the system was in a good state. The function returns an error if there is a problem with measured boot, for example no TPM on the system.
 
-```
-TBS_RESULT WINAPI
-Tbsi_Revoke_Attestation();
-```
-
-**Parameters**:
-
-None
-
-**Return value**:
-
-If the function succeeds, the function returns TBS_SUCCESS (0).
-
-**Remarks**:
-
-This function extends PCR by an unspecified value and increments the event counter in the TPM. Both actions are necessary, so the trust is broken in all quotes that are created from here forward. As a result, the Measured Boot logs will not reflect the current state of the TPM for the remainder of the time that the TPM is powered up, and remote systems will not be able to form trust in the security state of the system.
-
- 
-
- 
-
-
-
-
-
+**Tbsi_Revoke_Attestation** is callable from kernel mode. It extends PCR[12] by an unspecified value and increments the event counter in the TPM. Both actions are necessary, so the trust is broken in all quotes that are created from here forward. As a result, the Measured Boot logs will not reflect the current state of the TPM for the remainder of the time that the TPM is powered up, and remote systems will not be able to form trust in the security state of the system.
