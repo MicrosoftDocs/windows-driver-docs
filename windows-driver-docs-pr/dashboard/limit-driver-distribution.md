@@ -48,14 +48,10 @@ There are two types of floors and ceilings supported by the HDC Dashboard:
 
 Restricting a driver's distribution lets you set an OS minimum or maximum level. For Attestation submissions, we use the OS you select at the time of submission as the initial minimum OS. The minimum OS level cannot be set below the drivers certified OS level. You must first use Expansion (described below) to go lower than these initial minimum levels.
 
-![A screen showing the dashboard screen to add a floor to a driver.](images/driver-floor-screen.png)
-
 ### OS Flooring
 *(Minimum OS requirement)*
 
 Use this option when you want a driver to only be offered at and above the listed operating system. For example, selecting an RS4 Floor would mean only systems running Windows 10 1803 (RS4) and above will be offered this driver.
-
-![An image showing the operating systems available to expand coverage to.](images/driver-floor-screen-2.png)
 
 ### OS Ceiling  
 *(Maximum OS requirement)*
@@ -71,7 +67,6 @@ Use this option when you want a driver to only be offered at or below the listed
 
 The minimum OS level is determined by the Products Certified OS level, or the Attested OS level.  If you need to go below this, use driver expansion, described below.
 
-![A screenshot of the ceiling options available to driver submissions.](images/driver-ceiling-screen.png)
 
 ## Driver Expansion
 
