@@ -29,8 +29,6 @@
 #### [MbbDeviceInitialize](mbbdeviceinitialize.md)
 #### [MbbDeviceSetMbimParameters](mbbdevicesetmbimparameters.md)
 #### [MbbDeviceResponseAvailable](mbbdeviceresponseavailable.md)
-#### [MbbDeviceArmWake](mbbdevicearmwake.md)
-#### [MbbDeviceDisarmWake](mbbdevicedisarmwake.md)
 #### [MbbDeviceSendServiceSessionDataComplete](mbbdevicesendservicesessiondatacomplete.md)
 #### [MbbDeviceReceiveServiceSessionData](mbbdevicereceiveservicesessiondata.md)
 #### [MbbAdapterInitialize](mbbadapterinitialize.md)

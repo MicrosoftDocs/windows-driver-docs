@@ -25,8 +25,6 @@ This topic contains API reference topics for Mobile Broadband WDF Class Extensio
 - [MbbDeviceInitialize](mbbdeviceinitialize.md)
 - [MbbDeviceSetMbimParameters](mbbdevicesetmbimparameters.md)
 - [MbbDeviceResponseAvailable](mbbdeviceresponseavailable.md)
-- [MbbDeviceArmWake](mbbdevicearmwake.md)
-- [MbbDeviceDisarmWake](mbbdevicedisarmwake.md)
 - [MbbDeviceSendServiceSessionDataComplete](mbbdevicesendservicesessiondatacomplete.md)
 - [MbbDeviceReceiveServiceSessionData](mbbdevicereceiveservicesessiondata.md)
 - [MbbAdapterInitialize](mbbadapterinitialize.md)
