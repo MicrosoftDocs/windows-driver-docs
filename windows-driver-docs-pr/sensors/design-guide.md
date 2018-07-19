@@ -17,35 +17,12 @@ This section describes the architecture and the implementation of the universal 
 
 ## In this section
 
+|Topic|Description|
+|---|---|
+|[Overview of universal sensor driver model](overview-of-converged-sensor-driver-model.md)|In Windows 10, the sensor driver stacks for Desktop and Mobile devices have been merged to create a universal sensor driver model.|
+|[Windows sensor driver features](windows-sensor-driver-features.md)|This section provides information about the features that have been developed for sensor drivers for Windows 10 and later operating systems.|
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[Overview of universal sensor driver model](overview-of-converged-sensor-driver-model.md)</p></td>
-<td><p>In Windows 10, the sensor driver stacks for Desktop and Mobile devices have been merged to create a universal sensor driver model.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Windows sensor driver features](windows-sensor-driver-features.md)</p></td>
-<td><p>This section provides information about the features that have been developed for sensor drivers for Windows 10 and later operating systems.</p></td>
-</tr>
-</tbody>
-</table>
 
- 
-
- 
-
- 
 
 
 

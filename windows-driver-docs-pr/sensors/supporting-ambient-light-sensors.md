@@ -30,31 +30,31 @@ Another point of difference between Windows 8 and Windows 7 is that the earlier
 
 The following pseudo code demonstrates the correct handling of possible types for SENSOR\_DATA\_TYPE\_LIGHT\_LEVEL\_LUX.
 
-```ManagedCPlusPlus
+```cpp
 SetLuxChangeSensitivity(PROPVARIANT var)
 {
     if (var.vt == VT_UNKNOWN)
     {
         CComPtr<IPortableDeviceValues> spValues;
         PROPVARIANT entry;
-        
+
         //
         // Var is a pointer to an IPortableDeviceValues
         // container. Cast and iterate through its entries.
         //
-        
+
         spValues = static_cast<IPortableDeviceValues*>(pVar->punkVal);
-        
+
         foreach entry in spValues
-        {         
+        {
             //
             // Note: omitting check for SENSOR_DATA_TYPE_LIGHT_LEVEL_LUX key
             //
-            
+
             if (entry.vt == VT_R4)
             {
                 //
-                // VT_R4 is the expected type for 
+                // VT_R4 is the expected type for
                 // SENSOR_DATA_TYPE_LIGHT_LEVEL_LUX.
                 // Reference entry.fltVal.
                 //
@@ -69,7 +69,7 @@ SetLuxChangeSensitivity(PROPVARIANT var)
             else
             {
                 //
-                // All other types are invalid. 
+                // All other types are invalid.
                 // Return an error accordingly.
                 //
             }
@@ -78,7 +78,7 @@ SetLuxChangeSensitivity(PROPVARIANT var)
     else if (var.vt == VT_UI4)
     {
         //
-        // Top level type of VT_UI4 is deprecated for 
+        // Top level type of VT_UI4 is deprecated for
         // SENSOR_PROPERTY_CHANGE_SENSITIVITY, but use it anyway.
         // Reference entry.ulVal.
         //
@@ -86,7 +86,7 @@ SetLuxChangeSensitivity(PROPVARIANT var)
     else
     {
         //
-        // All other types are invalid. 
+        // All other types are invalid.
         // Return an error accordingly.
         //
     }
@@ -94,7 +94,7 @@ SetLuxChangeSensitivity(PROPVARIANT var)
 ```
 
 ## Related topics
-[Sensor Driver Development Basics](sensor-driver-development-basics.md)  
+[Sensor Driver Development Basics](sensor-driver-development-basics.md)
 
 
 

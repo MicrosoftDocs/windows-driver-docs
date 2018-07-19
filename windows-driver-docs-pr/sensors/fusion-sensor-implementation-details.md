@@ -13,11 +13,10 @@ ms.technology: windows-devices
 # Fusion sensor implementation details
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
-
 This section provides implementation details about the Windows fusion sensor driver stack.
 
-**Note**  Partners cannot, and are not required to, implement a fusion driver. Microsoft provides the fusion driver binaries and these may not be replaced by partners.
+>[!NOTE]
+>Microsoft provides fusion driver binaries on some platforms and these cannot be replaced by partners.
 
  
 
@@ -44,6 +43,8 @@ The coordinate system shown in the following diagram is the convention used by t
 
 ![a diagram showing the earth coordinate system used by the fusion algorithm](images/earth-coordinatesystem.png)
 
+<!--
+//commenting out for now, all these links are bad.
 ## Data structures
 
 
@@ -58,7 +59,7 @@ The following structures and enumerations are used by the fusion data part of th
 -   [**MATRIX3X3**](https://msdn.microsoft.com/library/windows/hardware/dn957074)
 
 -   [Fusion sensor enumerations](https://go.microsoft.com/fwlink/p/?linkid=839352) and [Fusion sensor structures](https://go.microsoft.com/fwlink/p/?linkid=839355) provide information about the entire sensor fusion data structure, which include the attitude (in multiple formats) and the linear acceleration, and the compass data.
-
+-->
  
 
  
