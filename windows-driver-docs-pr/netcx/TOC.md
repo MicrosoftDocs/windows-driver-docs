@@ -14,6 +14,7 @@
 ### [Using the ring buffer](using-the-ring-buffer.md)
 ### [Network data buffer management](network-data-buffer-management.md)
 ## [NetAdapterCx receive side scaling (RSS)](netadaptercx-receive-side-scaling-rss-.md)
+## [NetAdapterCx hardware offloads](netadaptercx-hardware-offloads.md)
 ## [Configuring power management](configuring-power-management.md)
 ## [NDIS-WDF function equivalents](ndis-wdf-function-equivalents.md)
 ## [Summary of objects](summary-of-objects.md)

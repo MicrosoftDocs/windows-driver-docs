@@ -15,26 +15,30 @@ ms.technology: windows-devices
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-To increase its performance, the Microsoft TCP/IP transport can offload tasks to a network interface card (NIC) that has the appropriate task offload capabilities.
+To increase its performance, the Windows TCP/IP stack can offload some tasks to a network interface card (NIC) that has the appropriate task offload capabilities.
 
-## Overview of Offloads in NetAdapterCx
+## Overview of offloads in NetAdapterCx
 
-NetAdapterCx focuses on ease of offload configuration and management of offload capabilities. The client drivers need to specify a simple configuration of their hardware offload capabilities and register callbacks to be notified of changes in capabilities.
+NetAdapterCx focuses on ease of offload configuration and management of offload capabilities. Client drivers only need to specify a simple configuration for their hardware offload capabilities and register callbacks to be notified of changes in capabilities. 
 
-1. The hardware offload capabilities are advertised by the network adapter during initialization.These specify the capabilities supported in the hardware of Network Adapter.
-2. The driver doesn't need to worry about checking the Standard registry keywords. NetAdapterCx would check the registry keywords and honor them when enabling the active offload capabilities.
-3. The active offload capabilities of the network adapter are the offload capabilities that the network adapter is currently programmed to perform. These would be a subset of the hardware capabilities advertized by the Client driver earlier.
-4. The TCP/IP stack or an overlying protocol driver can request for change in active capabilities of the Network Adapter. Client drivers register callbacks with NetAdapterCx to be notified of changes in the active offload capabilities.
-5. If a packet extension is needed for an offload, it is automatically registered when the network adapter advertises support for the hardware offload.
-6. The hardware capabilities need to be advertized before calling Adapter Start.
-7. Granular capabilities for offload are not specified. The client driver instead uses a software fallback for a granular capability that is not supported.
+- Hardware offload capabilities are advertised by the network adapter hardware during initialization.
+- The driver doesn't need to worry about checking standard registry keywords. NetAdapterCx checks the registry keywords and honors them when enabling the active offload capabilities.
+- The *active* offload capabilities of the network adapter are those that the network adapter is currently programmed to perform. These are a subset of the hardware capabilities advertised by the client driver previously.
+- The TCP/IP stack or an overlying protocol driver can request a change in active capabilities of the network adapter. Client drivers register callbacks with NetAdapterCx to be notified of changes in the active offload capabilities.
+- If a packet extension is needed for an offload, it is automatically registered when the network adapter advertises support for the hardware offload.
+- Hardware capabilities need to be advertised before calling [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstart).
+- Granular capabilities for offloads are not specified. Client drivers instead use a software fallback for any granular capability that is not supported by hardware.
 
+Client drivers advertise a minimum set of capabilities to NetAdapterCx. These do not include granular capability details for all offload combinations supported by the client driver. For example, this can be whether IPOptions, IPExtensions or TCPOptions are supported, etc. This means that the client driver is responsible for performing the offload on all combinations of an advertised capability. For example, support for IPv4 implies support for IPOptions, support for IPv6 implies support for IPExtensions, and support for TCP implies support for TCPOptions. 
 
-The client driver will advertise minimum set of capabilities to NetAdapterCx. These would not include the granular capability details of all the combinations supported by client driver. Ex: Whether IPOptions, IPExtensions or TCPOptions are supported etc. 
-This would mean that the client driver is responsible to perform the offload on all combinations of an advertised capability i.e. support for IPv4 implies support for IPOptions, support for IPv6 implies support for IPExtensions and support for TCP implies support for TCPOptions. If the hardware is not capable of handling a specific combination, it should either not declare support for that capability or perform a software fallback when encountered with such a packet. NetAdapterCx will provide software fallbacks for most of the offloads. The client drivers can leverage these software fallbacks instead of writing their own.
+If the hardware is not capable of handling a specific combination, it should either not declare support for that capability or perform a software fallback when it encounters such a packet. NetAdapterCx provides software fallbacks for most offloads. Client drivers can leverage these software fallbacks instead of writing their own.
 
+The following offloads are supported in NetAdapterCx.
 
-The following offloads are supported in NetAdapterCx
+## Checksum offload
 
-- [Checksum](netadaptercx-checksum-offload.md)
-- [Large Send Offload](netadaptercx-large-send-offload.md)
+With checksum offload, the TCP/IP stack offloads the calculation and validation of IP and TCP checksums.
+
+## Large send offload (LSO)
+
+The TCP/IP stack supports large send offload (LSO). With LSO, the stack offloads the segmentation of large TCP packets for IPv4 and IPv6.
