@@ -117,6 +117,12 @@ Needs   = WINUSB.NT.Services
 [USB_Install.HW]
 AddReg=Dev_AddReg
 
+[USB_Install.Wdf]
+KmdfService=WINUSB, WinUsb_Install
+
+[WinUsb_Install]
+KmdfLibraryVersion=1.11
+
 [Dev_AddReg]
 HKR,,DeviceInterfaceGUIDs,0x10000,"{9f543223-cede-4fa3-b376-a25ce9a30e74}"
 
@@ -226,6 +232,7 @@ WdfCoInstaller01011.dll=1
 ManufacturerName=""
 ClassName="Universal Serial Bus devices"
 DeviceName="Fx2 Learning Kit Device"
+DiskName="MyDisk"
 REG_MULTI_SZ = 0x00010000
 ```
 
