@@ -19,19 +19,45 @@ The NetAdapterCx class extension supports a set of functions that provide access
 
 Typically, the client driver reads configuration info from its [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function.
 
-Start by calling [**NetAdapterOpenConfiguration**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapteropenconfiguration) to get a handle to a configuration object.  You can then query it:
+For a NetAdapter object, start by calling [**NetAdapterOpenConfiguration**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapteropenconfiguration) to get a handle to a configuration object.  You can then query it:
 
 ```C++
 NETCONFIGURATION configuration;
 
-status = NetAdapterOpenConfiguration(NetAdapter, WDF_NO_OBJECT_ATTRIBUTES, &configuration);
-if (! NT_SUCCESS(status)) {
+status = NetAdapterOpenConfiguration(NetAdapter, 
+                                     WDF_NO_OBJECT_ATTRIBUTES, 
+                                     &configuration);
+if (!NT_SUCCESS(status)) {
     return status;
 }
 
-status = NetConfigurationQueryUlong(configuration, NET_CONFIGURATION_QUERY_ULONG_NO_FLAGS, &SomeValue, &myvalue);
+status = NetConfigurationQueryUlong(configuration, 
+                                    NET_CONFIGURATION_QUERY_ULONG_NO_FLAGS, 
+                                    &SomeValue, 
+                                    &myvalue);
 
 NetConfigurationClose(configuration);
+```
+
+Opening and querying a configuration object for a net device is similar:
+
+```C++
+status = NetDeviceOpenConfiguration(Device, 
+                                    WDF_NO_OBJECT_ATTRIBUTES, 
+                                    &configuration);
+if(!NT_SUCCESS(status))
+{
+    return status;
+}
+
+WDFCOLLECTION myStrings;
+
+DECLARE_CONST_UNICODE_STRING(myValueName, L"ExampleValueName");
+
+status = NetConfigurationQueryMultiString(configuration,
+                                          myValueName,
+                                          WDF_NO_OBJECT_ATTRIBUTES,
+                                          myStrings);
 ```
 
 There are `NetConfiguration*` functions for querying ULONG data, strings, multi-strings (similar to REG_MULTI_SZ), binary blobs, and software-configurable network addresses:
