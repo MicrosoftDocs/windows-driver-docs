@@ -70,7 +70,7 @@ The Early Launch drivers can use registry or boot driver callbacks to monitor an
 
 ### Boot Driver Callbacks
 
-Use [**IoRegisterBootDriverCallback**](https://msdn.microsoft.com/library/windows/hardware/hh439379) and [**IoUnRegisterBootDriverCallback**](https://msdn.microsoft.com/library/windows/hardware/hh439394) to register and unregister a [*BOOT_DRIVER_CALLBACK_FUNCTION*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nc-ntddk-boot_driver_callback_function).
+Use [**IoRegisterBootDriverCallback**](https://msdn.microsoft.com/library/windows/hardware/hh439379) and [**IoUnRegisterBootDriverCallback**](https://msdn.microsoft.com/library/windows/hardware/hh439394) to register and unregister a [*BOOT_DRIVER_CALLBACK_FUNCTION*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-boot_driver_callback_function).
 
 This callback provides status updates from Windows to an ELAM driver, including when all boot-start drivers have been initialized and the callback facility is no longer functional.
 
