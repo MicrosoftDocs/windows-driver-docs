@@ -20,9 +20,9 @@ ms.technology: windows-devices
 
 If your display driver implements the DXVA [deinterlacing DDI](https://msdn.microsoft.com/library/windows/hardware/ff552701), it must support the bob-style deinterlacing algorithm in addition to any proprietary deinterlacing algorithms. Following is a description of the bob-style deinterlacing algorithm:
 
-Input is a field F<sub>in</sub>(i,j) of size MxN such that 0 &lt;= i &lt;= Mâˆ’1 and 0 &lt;= j &lt;=Nâˆ’1, where i and j are row and column indices, respectively.
+Input is a field F<sub>in</sub>(i,j) of size MxN such that 0 &lt;= i &lt;= M-1 and 0 &lt;= j &lt;=N-1, where i and j are row and column indices, respectively.
 
-Output is a frame F<sub>out</sub>(i,j) of size 2xMxN such that 0 &lt;= i &lt;= 2Mâˆ’1 and 0 &lt;= j &lt;=Nâˆ’1, where i and j are row and column indices, respectively.
+Output is a frame F<sub>out</sub>(i,j) of size 2xMxN such that 0 &lt;= i &lt;= 2M-1 and 0 &lt;= j &lt;=N-1, where i and j are row and column indices, respectively.
 
 If F<sub>in</sub>(i,j) is a top field:
 
@@ -32,11 +32,11 @@ If F<sub>in</sub>(i,j) is a bottom field:
 
 ![calculation illustrating a bob deinterlacing algorithm when fin(i,j) is a bottom field](images/bobbotom.png)
 
-Each definition uses a finite impulse response (FIR) filter with an impulse response h of length 2K. Impulse response h is symmetric about its midpoint, such that h₋₍ₖ₊₁₎ = hₖ for k=0 to Kâˆ’1 and
+Each definition uses a finite impulse response (FIR) filter with an impulse response h of length 2K. Impulse response h is symmetric about its midpoint, such that h₋₍ₖ₊₁₎ = hₖ for k=0 to K-1 and
 
 ![calculation illustrating a filter algorithm](images/firfiltr.png)
 
-The preferred form of bob-style deinterlacing uses K=2 and h₀ = 9/16 (so h₁ = âˆ’1/16). This filter should be implemented as (9\*(b+c)âˆ’(a+d)+8)&gt;&gt;4, where a, b, c, and d are the four input samples used to produce one output sample.
+The preferred form of bob-style deinterlacing uses K=2 and h₀ = 9/16 (so h₁ = 1/16). This filter should be implemented as (9\*(b+c)(a+d)+8)&gt;&gt;4, where a, b, c, and d are the four input samples used to produce one output sample.
 
  
 
