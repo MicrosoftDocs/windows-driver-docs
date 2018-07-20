@@ -14,32 +14,37 @@ ms.localizationpriority: medium
 
 When you use Visual Studio to build user-mode code for Windows 10, you can customize linker options to target specific versions of Windows.  Consider the following factors:
 
-* Should the built binary run on only the most recent version of Windows?  Or should it run on *downlevel* versions, meaning Windows 7 and later?  
+* Should the built binary run on only the most recent version of Windows?  Or should it run on earlier versions, such as Windows 7?  
 
 * Does your project have any [UWP](https://docs.microsoft.com/windows/uwp/get-started/whats-a-uwp) dependencies?
 
-By default, when you create a new UMDF v2 driver project, Visual Studio links to `OneCoreUAP.lib`.  This results in a binary that runs on the most recent version of Windows, and it permits addition of UWP functionality.
+For example, when you create a new UMDF v2 driver project, Visual Studio links to `OneCoreUAP.lib` by default.  This results in a binary that runs on the most recent version of Windows, and it permits addition of UWP functionality.
 
-However, depending on your requirements, you might choose instead to link to one of the following:
+However, depending on your requirements, you might choose instead to link to `OneCore.lib`. The following table shows the scenarios applicable to each library:
 
 |Library|Scenario|
 |-|-|
 |`OneCore.lib`|All editions of Windows 7 and later, no UWP support|
-|`OneCoreUAP.lib`|WIndows 7 and later, UWP editions (Desktop, IoT, HoloLens, but not Nano Server) of Windows 10|
+|`OneCoreUAP.lib`|Windows 7 and later, UWP editions (Desktop, IoT, HoloLens, but not Nano Server) of Windows 10|
 
 >[!NOTE]
 >To change linker options in Visual Studio, choose project properties and navigate to **Linker->Input->Additional Dependencies**.
 
-A subset of APIs compile fine but return errors on non-Desktop OneCore editions (for example Mobile or IoT).
+A subset of Windows APIs compile cleanly but return runtime errors on non-Desktop OneCore editions (for example Mobile or IoT).
 
-For example, the [**InstallApplication**](https://msdn.microsoft.com/library/aa374307) function returns `ERROR_ NOT_SUPPORTED` on non-Desktop OneCore editions.  The [ApiValidator](validating-universal-drivers.md) tool also reports these problems. Read the next section to learn how to fix them.
+For example, the [**InstallApplication**](https://docs.microsoft.com/windows/desktop/api/appmgmt/nf-appmgmt-installapplication) function returns `ERROR_ NOT_SUPPORTED` on non-Desktop OneCore editions.  The [ApiValidator](validating-universal-drivers.md) tool also reports these problems. The next section describes how to fix them.
 
 ## Fixing ApiValidator errors by using **IsApiSetImplemented**
 
 If your code calls Win32 APIs, you might see the following ApiValidator errors:
 
-* `Error: <Binary Name> has unsupported API call to <Module Name><Api Name>`: If your app or base driver needs to run on modern and classic platforms, you must remove API calls in this category.
-* `Error: <Binary Name> has a dependency on <Module Name><Api Name> but is missing: IsApiSetImplemented("<contract-name-for-Module>)`: API calls in this category compile fine, but may not behave as expected at runtime, depending on the target operating system. To pass the U requirement of DCHU, wrap these calls with **IsApiSetImplemented**.
+* `Error: <Binary Name> has unsupported API call to <Module Name><Api Name>`:
+    
+    If your app or base driver needs to run on Windows 10 as well as earlier versions of Windows, you must remove API calls in this category.
+
+* `Error: <Binary Name> has a dependency on <Module Name><Api Name> but is missing: IsApiSetImplemented("<contract-name-for-Module>)`:
+    
+    API calls in this category compile fine, but may not behave as expected at runtime, depending on the target operating system. To pass the U requirement of [DCHU](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers#design-principles), wrap these calls with **IsApiSetImplemented**.
 
 This enables you to compile your code with no errors.  Then at runtime, if the target machine does not have the needed API, execution simply skips it.
 <!--should IsApiSetImplemented be doc'ed?-->
