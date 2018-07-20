@@ -1,5 +1,6 @@
 ---
 title: Gravity vector data fields
+author: windows-driver-content
 description: This topic provides information about the data fields that are specific to the gravity vector.
 ms.assetid: E9FAE9F1-841F-4E70-A279-7CB5AD80D80B
 ms.author: windowsdriverdev
@@ -12,7 +13,6 @@ ms.technology: windows-devices
 # Gravity vector data fields
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
 
 This topic provides information about the data fields that are specific to the gravity vector.
 

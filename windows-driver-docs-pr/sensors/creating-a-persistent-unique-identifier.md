@@ -21,10 +21,10 @@ Your driver should create or retrieve the PUID before the sensor class extension
 
 The following code example creates a function that creates, stores, and retrieves a PUID, as needed.
 
-```
+```cpp
 // Sets the persistent unique ID property in the WDF property store
 // and returns the GUID for use in PortableDeviceValues property bags.
-HRESULT CMyDevice::GetUniqueID(__in IWDFDevice* pWdfDevice, 
+HRESULT CMyDevice::GetUniqueID(__in IWDFDevice* pWdfDevice,
                                             __in LPCWSTR wszSensorID, __out GUID* puid)
 {
     HRESULT hr = S_OK;
@@ -42,7 +42,7 @@ HRESULT CMyDevice::GetUniqueID(__in IWDFDevice* pWdfDevice,
     if(SUCCEEDED(hr))
     {
         GUID idGuid;
- 
+
         PROPVARIANT vID;
 
         // Try to get the PUID value previously stored as a string.
@@ -83,7 +83,7 @@ HRESULT CMyDevice::GetUniqueID(__in IWDFDevice* pWdfDevice,
 ```
 
 ## Related topics
-[The Sensors Geolocation Driver Sample](https://msdn.microsoft.com/library/windows/hardware/hh768273)  
+[The Sensors Geolocation Driver Sample](https://msdn.microsoft.com/library/windows/hardware/hh768273)
 
 
 

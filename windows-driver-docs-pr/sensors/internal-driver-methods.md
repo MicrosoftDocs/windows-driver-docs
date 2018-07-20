@@ -20,13 +20,13 @@ A sensor driver supports a number of internal helper methods that perform tasks 
 
 A sensor driver supports methods that set the device state for a single device that contains multiple sensors. The pseudocode demonstrates this using the **DriverUpdateDeviceState** method.
 
-```ManagedCPlusPlus
+```cpp
 DriverUpdateDeviceState()
 {
     if ((sensor device is intelligent (e.g. HID) ||
-        (sensor device is simple (e.g. SPB))    
+        (sensor device is simple (e.g. SPB))
     {
-        
+
         // if no client is connected to any of the sensors on this device
         // then disconnect from the device
         flagConnected = false
@@ -65,11 +65,11 @@ DriverUpdateDeviceState()
 
 If a sensor driver supports intelligent sensors (like HID), it may include support for methods that poll data, handle events, retrieve properties, set properties, and manage power. The pseudocode demonstrates these tasks using the **HIDSensorPollData**, **HIDSensorSetProperties**, and **HIDSensorGetProperties** methods.
 
-```ManagedCPlusPlus
+```cpp
 HIDSensorPollData(sensorID) // Driver issues USB/HID “GET_INPUT” command to the sensor device
 {
     // the driver is making a request for polled data
-    // if the sensor is in a READY state respond by sending 
+    // if the sensor is in a READY state respond by sending
     // the data for this sensor asynchronously to the driver
     if (true == sensorReady)
     {
@@ -86,7 +86,7 @@ HIDSensorPollData(sensorID) // Driver issues USB/HID “GET_INPUT” command to 
 }
 ```
 
-```ManagedCPlusPlus
+```cpp
 HIDSensorSetProperties(sensorID, requestedRS, requestedPS, requestedCRI, requestedCS[], requestedLDA) //SET_FEATURE
 {
     if (requestedRS == reportingStateAllEvents) //reporting state
@@ -142,7 +142,7 @@ HIDSensorSetProperties(sensorID, requestedRS, requestedPS, requestedCRI, request
 }
 ```
 
-```ManagedCPlusPlus
+```cpp
 HIDSensorGetProperties(sensorID, RS, PS, CRI, CS[], LDA) //Driver issues USB/HID “GET_FEATURE” command to the sensor
 {
     buffer.effectiveRS
@@ -152,16 +152,16 @@ HIDSensorGetProperties(sensorID, RS, PS, CRI, CS[], LDA) //Driver issues USB/HID
     buffer.effectiveLDA
 
     // The sensor device can optionally also override the following properties
-    buffer.sensorCategory 
-    buffer.sensorType 
-    buffer.minCRI 
-    buffer.persistentUniqueID 
-    buffer.sensorManufacturer 
-    buffer.sensorModel 
-    buffer.serialNumber 
-    buffer.friendlyName 
-    buffer.sensorDescription 
-    buffer.connectionType 
+    buffer.sensorCategory
+    buffer.sensorType
+    buffer.minCRI
+    buffer.persistentUniqueID
+    buffer.sensorManufacturer
+    buffer.sensorModel
+    buffer.serialNumber
+    buffer.friendlyName
+    buffer.sensorDescription
+    buffer.connectionType
 
     Send buffer to Driver
 }
@@ -172,7 +172,7 @@ HIDSensorGetProperties(sensorID, RS, PS, CRI, CS[], LDA) //Driver issues USB/HID
 
 If a sensor driver supports simple sensors (like SPB), it may include support for methods that poll data. The pseudocode demonstrates this task using the **SpbSensorPollData** method.
 
-```ManagedCPlusPlus
+```cpp
 datafields[] SpbSensorPollData(sensorID)
 {
     // the driver is making a request for polled data, respond
@@ -185,7 +185,7 @@ datafields[] SpbSensorPollData(sensorID)
 ```
 
 ## Related topics
-[Sensor Driver Development Basics](sensor-driver-development-basics.md)  
+[Sensor Driver Development Basics](sensor-driver-development-basics.md)
 
 
 

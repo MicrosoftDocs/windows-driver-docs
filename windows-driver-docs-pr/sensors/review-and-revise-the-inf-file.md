@@ -25,16 +25,16 @@ When you create a driver project in Microsoft Visual Studio, an INX file is firs
 Although you must review the INX file in its entirety, these steps will point out two important sections.
 
 1. Click the *ADXL345Acc.inx* file to open it, and find the \[Version\] section, near the beginning of the file.
-```ManagedCPlusPlus
+```cpp
    [Version]
    Class       = Sensor
    ClassGuid   = {5175D334-C371-4806-B3BA-71FD53C9258D}
 ```
 
-Note that the device class is set to “sensor” and the appropriate GUID is provided. For more information about device class GUIDS for Windows, see [System-Defined Device Setup Classes Available to Vendors](https://msdn.microsoft.com/library/windows/hardware/ff553426.aspx).
+Note that the device class is set to “sensor” and the appropriate GUID is provided. For more information about device class GUIDS for Windows, see [System-Defined Device Setup Classes Available to Vendors](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
 
 2. Find the \[ADXL345Acc\_Device.NT$ARCH$\] section.
-```ManagedCPlusPlus
+```cpp
    [ADXL345Acc_Device.NT$ARCH$]
    ; DisplayName       Section          DeviceId
    ; -----------       -------          --------
@@ -58,7 +58,7 @@ If you're using a mobile device, instead of the Sharks Cove, as your target devi
 
 2. Add the following code snippet to the empty section.
 
-```ManagedCPlusPlus
+```cpp
 [ADXL345Acc_Inst.NT.HW]
 AddReg=Sensor_Inst_SecurityAddReg
 
@@ -71,8 +71,10 @@ HKR,,Security,,"D:P(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;S-1-5-84-0-0-0-0-0)"    ; Al
  
 
 3. [Create a mobile package](creating-a-mobile-package.md) for installing the sample driver on your mobile device.
+
 ## Related topics
-[Creating a mobile package](creating-a-mobile-package.md)  
+
+[Creating a mobile package](creating-a-mobile-package.md)
 
 
 

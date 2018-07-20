@@ -1,5 +1,6 @@
 ---
 title: SENSOR\_CATEGORY\_ORIENTATION
+author: windows-driver-content
 description: The SENSOR\_CATEGORY\_ORIENTATION category contains sensors that provide information about physical orientation.
 ms.assetid: F8089596-C68F-48B2-B4EF-FB7B8777F212
 topic_type:

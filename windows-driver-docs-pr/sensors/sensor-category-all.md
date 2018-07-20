@@ -1,8 +1,9 @@
 ---
 title: SENSOR\_CATEGORY\_ALL
+author: windows-driver-content
 description: The SENSOR\_CATEGORY\_ALL category represents the set of all platform-defined sensor categories.
 ms.assetid: 9a4524d2-055c-46e0-9650-66e6f2872fbc
-keywords: ["SENSOR_CATEGORY_ALL Sensor Devices"]
+keywords: SENSOR_CATEGORY_ALL Sensor Devices
 topic_type:
 - apiref
 api_name:
@@ -23,66 +24,28 @@ ms.technology: windows-devices
 
 The SENSOR\_CATEGORY\_ALL category represents the set of all platform-defined sensor categories.
 
-### <span id="platform_defined_property_keys"></span><span id="PLATFORM_DEFINED_PROPERTY_KEYS"></span>Platform-defined Property Keys
+## Platform-defined Property Keys
 
 This category includes the following platform-defined data fields.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Data type</th>
-<th>Type</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>SENSOR_DATA_TYPE_TIMESTAMP</p></td>
-<td><p><strong>VT_FILETIME</strong></p></td>
-<td><p>Required for all data reports. Marks each data report with the time the data report was created. Use Universal Coordinated Time (UTC).</p></td>
-</tr>
-</tbody>
-</table>
+|Data type|Type|Meaning|
+|--|--|--|
+|SENSOR_DATA_TYPE_TIMESTAMP|VT_FILETIME|Required for all data reports. Marks each data report with the time the data report was created. Use Universal Coordinated Time (UTC).|
+ 
+
+>[!IMPORTANT]
+> Each platform-defined common data type **PROPERTYKEY** is based on a common **GUID** that is named SENSOR\_DATA\_TYPE\_COMMON\_GUID. As it is a reserved base value, do not use this **GUID** to define your own property keys.
 
  
 
-**Important**   Each platform-defined common data type **PROPERTYKEY** is based on a common **GUID** that is named SENSOR\_DATA\_TYPE\_COMMON\_GUID. As it is a reserved base value, do not use this **GUID** to define your own property keys.
+## Requirements
 
- 
-
-Requirements
-------------
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 7</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>None supported</p></td>
-</tr>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Available in Windows 7.</p></td>
-</tr>
-<tr class="even">
-<td><p>Header</p></td>
-<td>Sensors.h</td>
-</tr>
-</tbody>
-</table>
-
+| | |
+|--|--|
+|Minimum supported client|Windows 7|
+|Minimum supported server|None supported|
+|Version|Available in Windows 7.|
+|Header|Sensors.h|
  
 
  

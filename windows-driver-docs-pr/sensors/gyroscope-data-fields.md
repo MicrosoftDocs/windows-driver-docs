@@ -1,5 +1,6 @@
 ---
 title: Gyroscope data fields
+author: windows-driver-content
 description: This topic provides information about the data fields that are specific to the gyroscope.
 ms.assetid: A8F8EC33-B6B4-4CA3-8A45-5760F18116D3
 ms.author: windowsdriverdev

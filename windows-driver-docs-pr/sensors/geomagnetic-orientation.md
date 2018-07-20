@@ -9,10 +9,8 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Geomagnetic Orientation
+# Geomagnetic orientation
 
-
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
 
 This topic provides information about the data fields that are specific to the geomagnetic orientation sensor.
 

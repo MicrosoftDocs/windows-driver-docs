@@ -17,7 +17,7 @@ In this section:
 
 [Introduction to the Sensors and Location Platform in Windows](introduction-to-the-sensor-and-location-platform-in-windows.md)
 
-[For More Information](for-more-information.md)
+
 
  
 
