@@ -60,3 +60,4 @@
 #### [Installing Serial Devices that Use a 16550 UART-Compatible Interface](installing-serial-devices-that-use-a-16550-uart-compatible-interface.md)
 #### [Installing Serenum Devices](installing-serenum-devices.md)
 ## [Serial IRP major function codes](serial-irp-major-function-codes.md)
+## [Serial Port Console Redirection Table (SPCR)](serial-port-console-redirection-table.md)
