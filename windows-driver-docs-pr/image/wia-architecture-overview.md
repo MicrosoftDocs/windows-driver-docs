@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WIA Architecture Overview
 ms.assetid: 47f44042-f22b-4ee0-88c5-fc977bf13791
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -12,11 +12,7 @@ ms.technology: windows-devices
 
 # WIA Architecture Overview
 
-
-
-
-
-WIA is implemented as a Component Object Model (COM) out-of-process server to ensure the robust operation of client applications. WIA is available in Microsoft Windows Me, Windows XP and later. There are no plans to port all of the system components that WIA depends on to Windows 95/98 or to Windows 2000. For information about the imaging architecture used on Windows 95/98 and Windows 2000, see [Overview of Microsoft STI and Microsoft WIA](overview-of-microsoft-sti-and-microsoft-wia.md).
+WIA is implemented as a Component Object Model (COM) out-of-process server to ensure the robust operation of client applications. 
 
 WIA has three main components: the WIA service, the WIA driver service library, and a vendor user-mode driver.
 
@@ -25,8 +21,10 @@ WIA has three main components: the WIA service, the WIA driver service library, 
 -   The WIA driver service library implements all services that are device independent.
 
 -   The vendor user-mode driver maps WIA properties and commands to the specific device. There are two types of WIA vendor user-mode drivers:
-    Minidriver: This is the most common type of vendor driver. It is a COM object that implements the WIA minidriver interfaces. A vendor can take advantage of all the WIA capabilities and features with this type of driver.
-    Microdriver: This driver is much more limited than a minidriver and, therefore, simpler to develop. It is used primarily for basic scanner devices. This driver is not a COM object; it is a DLL that exports a few functions. Microdrivers cannot be used for camera devices.
+
+    -   Minidriver: This is the most common type of vendor driver. It is a COM object that implements the WIA minidriver interfaces. A vendor can take advantage of all the WIA capabilities and features with this type of driver.
+    
+    -   Microdriver: This driver is much more limited than a minidriver and, therefore, simpler to develop. It is used primarily for basic scanner devices. This driver is not a COM object; it is a DLL that exports a few functions. Microdrivers cannot be used for camera devices.
 
 The following diagram illustrates the WIA architecture.
 
@@ -69,9 +67,3 @@ Microsoft provides WDM-based, kernel-mode still image drivers for the USB, SCSI,
 A vendor must provide a kernel-mode still image driver *only* if its imaging device is incompatible with Microsoft-supplied, kernel-mode I/O drivers.
 
  
-
- 
-
-
-
-

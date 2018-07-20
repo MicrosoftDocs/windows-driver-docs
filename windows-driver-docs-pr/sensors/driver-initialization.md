@@ -57,7 +57,7 @@ If you do not specify the /resdecode option, the \_CRS section will contain a bi
 
 In addition to updating the DSDT table, you’ll need to update the Windows setup information file (INF) to specify that your device supports ACPI. Because the sensor is always enumerated by ACPI, the hardware identifier in the INF file must contain the “ACPI” string.
 
-```ManagedCPlusPlus
+```cpp
 ; =================== Manufacturer/Models sections =======================
 
 [Manufacturer]

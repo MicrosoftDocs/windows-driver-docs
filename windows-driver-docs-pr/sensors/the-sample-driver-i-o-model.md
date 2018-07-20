@@ -46,7 +46,7 @@ The SpbAccelerometer sample code interacts with the SPB component is found in Sp
 
  
 
-### General-purpose input/output (GPIO)
+## General-purpose input/output (GPIO)
 
 Windows 8.1 supports a GPIO class extension that resides at the same level as the kernel-mode SPB component. The extension allows for flexibility in the underlying hardware connections and GPIO locations while offering a standard interface for client drivers.
 
@@ -62,12 +62,12 @@ On SoC platforms GPIO pins are spread across the chip as well as exposed on othe
 
 The SpbAccelerometer sample relies on the GPIO component for interrupts. The GpioInt() element in the SpbAccelerometer.asl file defines the GPIO pin that’s connected to the ADXL345 as an interrupt resource.
 
-``` syntax
+```cpp
 //
 // Sample I2C and GPIO resources. Modify to match your
 // platform's underlying controllers and connections.
-// \_SB.I2C and \_SB.GPIO are paths to predefined I2C 
-// and GPIO controller instances. 
+// \_SB.I2C and \_SB.GPIO are paths to predefined I2C
+// and GPIO controller instances.
 //
 // Note: as written SpbAccelerometer requires a GPIO resource.
 //
@@ -99,7 +99,7 @@ If the interrupt processed by ::**OnInterruptIsr** corresponds to register 0x30 
 
 When the ::**RequestData** method processes the results of the read operations, it first combines the two bytes of data corresponding to each axis. Next, it applies a scale factor to obtain the actual acceleration value. (The scale factor is the result of dividing the range of G-forces (32) by the resolution (2^13). The result is .00390625.)
 
-```ManagedCPlusPlus
+```cpp
 // Get the data values as doubles
 SHORT xRaw, yRaw, zRaw;
 DOUBLE xAccel, yAccel, zAccel;
@@ -116,7 +116,7 @@ zAccel = (DOUBLE)zRaw * scaleFactor;
 
 The scale factor is determined by the settings in register 0x31 (DATA\_FORMAT).
 
-### Resource hub
+## Resource hub
 
 Windows 8.1 supports a resource hub that manages the connections for all devices and bus controllers. It makes sure the necessary start and stop ordering is maintained.
 
@@ -135,14 +135,14 @@ The hub is a component specifically aimed at SoC platforms and their flat device
 
 The **ResourceTemplate** section of SpbAccelerometer.asl specifies how the resources are connected.
 
-```Text
+```cpp
 Name(RBUF, ResourceTemplate()
 {
    //
     // Sample I2C and GPIO resources. Modify to match your
     // platform&#39;s underlying controllers and connections.
-    // \_SB.I2C and \_SB.GPIO are paths to predefined I2C 
-    // and GPIO controller instances. 
+    // \_SB.I2C and \_SB.GPIO are paths to predefined I2C
+    // and GPIO controller instances.
     //
     // Note: as written SpbAccelerometer requires a GPIO resource.
     //

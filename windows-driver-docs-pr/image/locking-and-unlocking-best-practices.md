@@ -4,7 +4,7 @@ author: windows-driver-content
 description: Locking and Unlocking Best Practices
 ms.assetid: cfa45c0d-4e92-4455-a8f6-17d4806f9c36
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,7 +28,7 @@ The following list contains precautions and guidelines you should follow when us
 
 -   TWAIN drivers that use STI use the [**IStiUSD::LockDevice**](https://msdn.microsoft.com/library/windows/hardware/ff543829) method to control access to the device. When a TWAIN driver uses STI, the TWAIN driver is responsible for controlling lock times.
 
--   If you are creating a driver for Windows 98 or Windows 2000, you can create it so that it implements only the **IStiUSD** interface methods. The disadvantage of this approach is that an application can call **IStiUSD::LockDevice** directly, thereby locking the device for exclusive use by the application. The Windows Hardware Quality Lab does not certify drivers that use this technique for Windows XP and later; such drivers can be installed only as unsigned drivers.
+-   You can create it so that it implements only the **IStiUSD** interface methods. The disadvantage of this approach is that an application can call **IStiUSD::LockDevice** directly, thereby locking the device for exclusive use by the application. The Windows Hardware Quality Lab does not certify drivers that use this technique; such drivers can be installed only as unsigned drivers.
 
 ### For WIA Drivers
 

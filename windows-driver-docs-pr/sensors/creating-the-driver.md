@@ -25,7 +25,7 @@ These samples provide basic working implementations for the classes and COM inte
 
 4.  Remove any code that is not needed.
 
-### Building the Driver
+## Build the Driver
 
 To build your driver, follow these steps:
 
@@ -34,7 +34,7 @@ To build your driver, follow these steps:
 3.  Open your driver's solution or project file.
 4.  Choose Build/Build Solution.
 
-### Installing the Sensors Geolocation Driver Sample for Testing
+## Install the Sensors Geolocation Driver Sample for Testing
 
 To install your driver for testing, follow these steps:
 
@@ -56,7 +56,7 @@ If your driver cannot be installed, it is likely that one of the methods in step
 
 You should also verify that the class ID that you provided in the INF file matches the **GUID** that you used in the IDL file for the driver's coclass.
 
-### Uninstalling the Driver
+## Uninstalling the Driver
 
 You may have to uninstall the driver during testing, for example when you want to update the driver installation after you make a change to the code. To uninstall the driver, follow these steps:
 
@@ -77,7 +77,7 @@ You may have to uninstall the driver during testing, for example when you want t
 5.  Click **OK**.
 
 ## Related topics
-[The Sensors Geolocation Driver Sample](https://msdn.microsoft.com/library/windows/hardware/hh768273)  
+[The Sensors Geolocation Driver Sample](https://msdn.microsoft.com/library/windows/hardware/hh768273)
 
 
 

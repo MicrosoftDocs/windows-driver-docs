@@ -26,7 +26,7 @@ A sensor driver supports internal methods that handle updates to the current rep
 
 The **DriverUpdateCRI**, **DriverUpdateCS**, and **DriverUpdateLDA** methods demonstrate how a driver updates the current report interval, change sensitivity, and location data accuracy fields.
 
-```ManagedCPlusPlus
+```cpp
 DriverUpdateCRI(sensorID)
 {
     if (true == flagCRI)
@@ -49,7 +49,7 @@ DriverUpdateCRI(sensorID)
 }
 ```
 
-```ManagedCPlusPlus
+```cpp
 DriverUpdateCS(sensorID)
 {
     for (each datafield supported by sensorID)
@@ -71,7 +71,7 @@ DriverUpdateCS(sensorID)
 
 ```
 
-```ManagedCPlusPlus
+```cpp
 DriverUpdateLDA(sensorID)
 {
     if (true == flagLDA)
@@ -95,7 +95,7 @@ DriverUpdateLDA(sensorID)
 
 The **DriverUpdateSensorState** method demonstrates how a driver updates the sensor event reporting and power states.
 
-```ManagedCPlusPlus
+```cpp
 DriverUpdateSensorState(sensorID)
 {
     if (clientCount == 0) // no clients
@@ -127,7 +127,7 @@ DriverUpdateSensorState(sensorID)
                 selectedPS = powerStateLowPower
             }
             else
-            
+
         }
         else //has subscribers
         {
@@ -146,7 +146,7 @@ DriverUpdateSensorState(sensorID)
 
 The **DriverUpdateDatafields** method demonstrates how a driver updates its data fields.
 
-```ManagedCPlusPlus
+```cpp
 DriverUpdateDatafields(sensorID)
 {
     if (effectiveRS == eventsOff)
@@ -157,14 +157,14 @@ DriverUpdateDatafields(sensorID)
 
             // a poll response by the sensor device will happen asynchronously
             // the sensor device responds to this poll request by sending an
-            // input packed, and this is received in the 
+            // input packed, and this is received in the
             // DriverHandleAsyncDataEvent() just as any other data packet
             // is received
         }
         else if (sensor device is simple (ex. SPB))
         {
             currentDatafields[] = SpbSensorPollData(sensorID)
-            
+
             // ** TODO: Data is not updated asynchronously when polled
             // ** via SPB. Datafields[] must be assigned similarly to
             // ** DDIHandleAsyncDataEvent() when that logic has been
@@ -188,7 +188,7 @@ DriverUpdateDatafields(sensorID)
 ```
 
 ## Related topics
-[Sensor Driver Development Basics](sensor-driver-development-basics.md)  
+[Sensor Driver Development Basics](sensor-driver-development-basics.md)
 
 
 

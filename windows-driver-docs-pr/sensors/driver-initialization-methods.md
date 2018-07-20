@@ -23,7 +23,7 @@ A sensor driver must support both client and device initialization. The pseudoco
 
 The client initialization method has the following form.
 
-```ManagedCPlusPlus
+```cpp
 DriverClientInitialize(sensorID)
 {
     // the following properties can be set from the API
@@ -58,7 +58,7 @@ DriverClientInitialize(sensorID)
 ```
 
 ## Related topics
-[Sensor Driver Development Basics](sensor-driver-development-basics.md)  
+[Sensor Driver Development Basics](sensor-driver-development-basics.md)
 
 
 

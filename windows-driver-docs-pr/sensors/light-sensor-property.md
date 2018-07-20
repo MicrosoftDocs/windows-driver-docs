@@ -64,7 +64,7 @@ For more information about the data type shown in the **Type** column, see [PROP
 
 To use this property key to set the value of its related property, you can use the **InitPropVariantFromUInt32Vector** function. For example, to set the value for the SENSOR\_PROPERTY\_MIN\_DATA\_INTERVAL property using the PKEY\_Sensor\_MinimumDataInterval\_Ms property key, you would use the following syntax:
 
-```ManagedCPlusPlus
+```cpp
 // Sensor Properties
      if (NT_SUCCESS(Status))
      {

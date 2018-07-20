@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # About the Sensor Class Extension
 
 
-To make it easier to write a device driver that exposes a sensor to Windows (and to the sensor and location platform in particular), Windows includes a sensor driver class extension. A required component for sensor device drivers, this COM object provides a simple set of interfaces that enable programmers to implement a sensor driver without writing lots of boilerplate code. Additionally, this class extension provides the following benefits:
+To make it easier to write a device driver that exposes a sensor to Windows (and to the sensor and location platform in particular), Windows includes a sensor driver class extension, [ISensorClassExtension](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/sensorsclassextension/nn-sensorsclassextension-isensorclassextension) interface. A required component for sensor device drivers, this COM object provides a simple set of interfaces that enable programmers to implement a sensor driver without writing lots of boilerplate code. Additionally, this class extension provides the following benefits:
 
 -   Helps to ensure that user privacy is well protected because the class extension enforces appropriate access control restrictions for sensors that handle personal information.
 

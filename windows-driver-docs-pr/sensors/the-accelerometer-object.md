@@ -1,7 +1,7 @@
 ---
 title: Accelerometer object
 author: windows-driver-content
-description: Accelerometer object
+description: The sample driver treats the accelerometer as an object that’s represented by the CAccelerometerDevice class.
 ms.assetid: D8E227E1-FFB5-4F4B-A981-6BD05C8FFAF2
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -37,7 +37,7 @@ The accelerometer object supports the methods that:
     -   Set the device state
     -   Set the default property values
 
-### Initialization methods
+## Initialization methods
 
 | Module                  | Class/Interface      |
 |-------------------------|----------------------|
@@ -57,7 +57,7 @@ The object supports these methods:
 
 For the complete sequence of initialization methods, refer to the [Driver initialization](driver-initialization.md) section in this guide.
 
-### Device-register read- and write-operations
+## Device-register read- and write-operations
 
 | Module                  | Class/Interface      |
 |-------------------------|----------------------|
@@ -71,11 +71,11 @@ The accelerometer object supports both a read- and a write-operation. These oper
 -   When the count of connected clients goes to zero and the **CAccelerometerDevice::SetDeviceStateStandby** method is invoked.
 -   When the GPIO line is asserted by the ADXL345 and the **CAccelerometerDevice::OnInterruptIsr** method is invoked.
 
-### Supporting user-mode interrupts
+## Supporting user-mode interrupts
 
 This section explains how the sample driver gets the data for the ADXL345.
 
-The accelerometer object supports user-mode interrupts with the **CAccelerometerDevice::OnInterruptWorkItem** method. When the user-mode framework invokes this method, it in turn, invokes **CAccelerometerDevice::RequestData**. This method, in turn, invokes **CAcclerometerDevice::ReadRegister** to read the contents of register 0x32 through register 0x37 on the ADXL345. These six registers contain the current readings, in G-force, along the X-, Y-, and Z-axis.
+The accelerometer object supports user-mode interrupts with the **CAccelerometerDevice::OnInterruptWorkItem** method. When the user-mode framework invokes this method, it in turn, invokes **CAccelerometerDevice::RequestData**. This method, in turn, invokes **CAccelerometerDevice::ReadRegister** to read the contents of register 0x32 through register 0x37 on the ADXL345. These six registers contain the current readings, in G-force, along the X-, Y-, and Z-axis.
 
 | Register | Contents                              |
 |----------|---------------------------------------|
@@ -90,7 +90,7 @@ The accelerometer object supports user-mode interrupts with the **CAccelerometer
 
 The code in the **CAccelerometerDevice::RequestData** method packages the register contents for each axis into a variable of type SHORT (xRaw, yRaw, and zRaw) and then applies a scale factor of .00390625. (The scale factor is a result of dividing the range of acceleration values, 32 in this case (because +/- 16G is supported), by the number that can be represented in 13 bits (2^13)--which is the selected resolution.
 
-```ManagedCPlusPlus
+```cpp
 // Get the data values as doubles
 SHORT xRaw, yRaw, zRaw;
 DOUBLE xAccel, yAccel, zAccel;
@@ -109,7 +109,7 @@ After the driver computes the values, it packages each one into a **PROPVARIANT*
 
 Note that the supported acceleration range (+/- 16G) and the resolution were set using register 0x31 in the ADXL345. This occurs in the *g\_ConfigurationSettings* array found at the beginning of AccelerometerDevice.cpp:
 
-```ManagedCPlusPlus
+```cpp
 // +-16g, 13-bit resolution
 { ADXL345_DATA_FORMAT,
    ADXL345_DATA_FORMAT_FULL_RES |
@@ -117,7 +117,7 @@ Note that the supported acceleration range (+/- 16G) and the resolution were set
    ADXL345_DATA_FORMAT_RANGE_16G },
 ```
 
-### Supporting the report interval
+## Supporting the report interval
 
 | Module                  | Class/Interface      |
 |-------------------------|----------------------|
@@ -127,7 +127,7 @@ Note that the supported acceleration range (+/- 16G) and the resolution were set
 
 The sensor platform supports report intervals and lets applications set them to values within a defined range. The minimum and default report intervals for the sample driver are defined in the file Adxl345.h.
 
-```ManagedCPlusPlus
+```cpp
 const ULONG ACCELEROMETER_MIN_REPORT_INTERVAL              = 10;
 const ULONG DEFAULT_ACCELEROMETER_CURRENT_REPORT_INTERVAL  = 100;
 ```
@@ -140,7 +140,7 @@ A Windows store app can set the interval for an accelerometer by invoking the **
 
 Setting the report interval translates into three consecutive write operations to the ADXL registers. The first write operation disables interrupts while we modify the data rate on the device:
 
-```ManagedCPlusPlus
+```cpp
 // Disable interrupts while data rate is modified
 pWriteBuffer[0] = 0;
 hr = WriteRegister(ADXL345_INT_ENABLE, pWriteBuffer, 1);
@@ -157,7 +157,7 @@ pWriteBuffer[0] = ADXL345_INT_ACTIVITY;
 hr = WriteRegister(ADXL345_INT_ENABLE, pWriteBuffer, 1);
 ```
 
-### Supporting the device mode
+## Supporting the device mode
 
 | Module                  | Class/Interface      |
 |-------------------------|----------------------|
@@ -175,60 +175,60 @@ Measurement mode results in data collection; standby mode results in no data bei
 
 Three methods in the source file correspond to each of the three modes: **SetDeviceStateEventing, SetDeviceStatePolling**, and **SetDeviceStateStandby**. They are invoked from within **SetDataUpdateMode**.
 
-### Measurement mode without eventing
+## Measurement mode without eventing
 
 When measurement mode without eventing is set, Windows store apps get the most recent sensor reading by invoking **Accelerometer.GetCurrentReading**.
 
 The driver sets this mode during initialization and, when returning from standby mode. It uses two write operations. The first operation disables interrupts:
 
-```ManagedCPlusPlus
+```cpp
 pBuffer[0] = 0;
 hr = WriteRegister(ADXL345_INT_ENABLE, pBuffer, 1);
 ```
 
 The second operation places the device in measurement mode:
 
-```ManagedCPlusPlus
+```cpp
 pBuffer[0] = ADXL345_POWER_CTL_MEASURE;
 hr = WriteRegister(ADXL345_POWER_CTL, pBuffer, 1);
 ```
 
-### Measurement mode with eventing
+## Measurement mode with eventing
 
 When measurement mode with eventing is set, Windows store apps can receive data updates from the driver by registering an event handler for the **Accelerometer.ReadingChanged** event.
 
 The driver sets this mode during initialization (and, when it’s returning from standby mode). The driver sets this mode with two write operations. The first operation ensures that the device is placed in measurement mode:
 
-```ManagedCPlusPlus
+```cpp
 pBuffer[0] = ADXL345_POWER_CTL_MEASURE;
 hr = WriteRegister(ADXL345_POWER_CTL, pBuffer, 1);
 ```
 
 And, the second operation enables the activity-detection interrupt:
 
-```ManagedCPlusPlus
+```cpp
  pBuffer[0] = ADXL345_INT_ACTIVITY;
  hr = WriteRegister(ADXL345_INT_ENABLE, pBuffer, 1);
 ```
 
-### Supporting standby mode
+## Supporting standby mode
 
 The driver sets this mode when the client subscription count goes to 0. It uses two write operations and a read operation. The first write operation ensures interrupts are disabled:
 
-```ManagedCPlusPlus
+```cpp
 pBuffer[0] = 0;
 hr = WriteRegister(ADXL345_INT_ENABLE, pBuffer, 1);
 ```
 
 Next, a read operation to clear any outstanding interrupts:
 
-```ManagedCPlusPlus
+```cpp
 hr = ReadRegister(ADXL345_INT_SOURCE, pBuffer, 1, 0);
 ```
 
 Then, a second write operation places the device in standby mode:
 
-```ManagedCPlusPlus
+```cpp
 pBuffer[0] = ADXL345_POWER_CTL_STANDBY;
 hr = WriteRegister(ADXL345_POWER_CTL, pBuffer, 1);
 ```
