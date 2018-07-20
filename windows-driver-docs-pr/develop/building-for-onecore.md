@@ -36,7 +36,7 @@ For example, the [**InstallApplication**](https://docs.microsoft.com/windows/des
 
 ## Fixing ApiValidator errors by using **IsApiSetImplemented**
 
-If your code calls Win32 APIs, you might see the following ApiValidator errors:
+If your code calls non-universal APIs, you might see the following ApiValidator errors:
 
 * `Error: <Binary Name> has unsupported API call to <Module Name><Api Name>`:
     
@@ -46,14 +46,13 @@ If your code calls Win32 APIs, you might see the following ApiValidator errors:
     
     API calls in this category compile fine, but may not behave as expected at runtime, depending on the target operating system. To pass the U requirement of [DCHU](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers#design-principles), wrap these calls with **IsApiSetImplemented**.
 
-This enables you to compile your code with no errors.  Then at runtime, if the target machine does not have the needed API, execution simply skips it.
-<!--should IsApiSetImplemented be doc'ed?-->
+This enables you to compile your code with no errors.  Then at runtime, if the target machine does not have the needed API, **IsApiSetImplemented** returns FALSE.
 
 The following code samples illustrate how to do this.
 
 ## Code sample: Direct usage of API, without evaluating for existence
 
-This code runs fine on classic Windows Desktop, but running it on a OneCore edition of the OS results in WTSEnumerateSessions failure : 78 or ERROR_CALL_NOT_IMPLEMENTED 120 (0x78).
+This code runs fine on versions of Windows earlier than Windows 10, but running it on a OneCore edition of Windows 10 results in WTSEnumerateSessions failure : 78 or ERROR_CALL_NOT_IMPLEMENTED 120 (0x78).
 
 This code sample fails the U part of DCHU with the following ApiValidator errors:
 
