@@ -2,7 +2,7 @@
 title: 360 camera video capture
 description: Provides information about 360 camera video capture.
 ms.author: windowsdriverdev
-ms.date: 05/17/2018
+ms.date: 07/20/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -10,7 +10,10 @@ ms.technology: windows-devices
 
 # 360 camera video capture
 
-Windows 10, version 1803 provides support for 360 camera preview, capture, and record with existing MediaCapture APIs. This enables the platform to expose spherical frame sources (for example, equirectangular frames ), enabling apps to detect and handle 360 video camera streams as well as to provide a 360 capture experience.
+Windows 10, version 1803 provides support for 360 camera preview, capture, and record with existing MediaCapture APIs. This enables the platform to expose spherical frame sources (for example, equirectangular frames), enabling apps to detect and handle 360 video camera streams as well as to provide a 360 capture experience.
+
+> [!NOTE]
+> The [Cam360](https://github.com/Microsoft/Windows-Camera/tree/master/Tools/Cam360) sample available on GitHub shows how to support preview, video record, and photo capture scenarios with a 360 camera on Windows.
 
 ## Overview
 
