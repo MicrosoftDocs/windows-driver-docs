@@ -17,7 +17,8 @@ This section contains information about Windows Image Acquisition (WIA) drivers,
 
 > [!NOTE]
 > The WIA programming interface is used to develop imaging drivers for modern Windows operating systems. 
-> The STI programming interface was used to develop imaging drivers in legacy Windows operating systems. The STI documentation is deprecated and will be removed in a future release. 
+> The STI programming interface was used to develop imaging drivers in legacy Windows operating systems. 
+> The STI programming interface documentation will be archived in a future release. 
 
 ## In this section
 
