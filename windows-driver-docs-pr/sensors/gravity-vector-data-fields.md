@@ -13,7 +13,6 @@ ms.technology: windows-devices
 # Gravity vector data fields
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
 
 This topic provides information about the data fields that are specific to the gravity vector.
 
