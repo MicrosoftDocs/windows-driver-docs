@@ -37,8 +37,53 @@ The following offloads are supported in NetAdapterCx.
 
 ## Checksum offload
 
-With checksum offload, the TCP/IP stack offloads the calculation and validation of IP and TCP checksums.
+With checksum offload, the TCP/IP stack offloads the calculation and validation of IP and TCP checksums to the NIC. To harness this capability, client drivers first advertise their hardware's active checksum offload capabilities during their [*EVT_NET_ADAPTER_SET_CAPABILITIES*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities) callback function. During the call to [**NetAdapterOffloadSetChecksumCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapteroffloadsetchecksumcapabilities), the client driver provides a [*EVT_NET_ADAPTER_OFFLOAD_SET_CHECKSUM*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_offload_set_checksum) callback for the framework to invoke if the TCP/IP stack or an overlying protocol driver request that these capabilities change in the future. 
 
 ## Large send offload (LSO)
 
 The TCP/IP stack supports large send offload (LSO). With LSO, the stack offloads the segmentation of large TCP packets for IPv4 and IPv6.
+
+## Example
+
+This example shows how a client driver might set up its hardware offload capabilities. For a code example 
+
+```C++
+NTSTATUS
+MyEvtDevicePrepareHardware(
+    NETADAPTER NetAdapter
+)
+{
+    // Set capabilities such as link layer MTU size, power capabilities, receive scaling capabilities, etc.
+
+    ...
+
+    // Configure the hardware's active checksum offload capabilities
+    NET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES checksumOffloadCapabilities;
+
+    NET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES_INIT(&checksumOffloadCapabilities,
+                                                   TRUE,
+                                                   TRUE,
+                                                   TRUE);
+
+    // Set the current checksum offload capabilities and register the callback for future changes in active capabilities
+    NetAdapterOffloadSetChecksumCapabilities(NetAdapter,
+                                             &checksumOffloadCapabilities,
+                                             MyEvtAdapterOffloadSetChecksum);
+
+    // Configure the hardware's active LSO offload capabilities
+    NET_ADAPTER_OFFLOAD_LSO_CAPABILITIES lsoOffloadCapabilities;
+
+    NET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES_INIT(&lsoOffloadCapabilities,
+                                                   TRUE,
+                                                   TRUE,
+                                                   MY_LSO_OFFLOAD_SIZE_MAX,
+                                                   MY_LSO_OFFLOAD_MIN_SEGMENT_COUNT);
+
+    // Set the current checksum offload capabilities and register the callback for future changes in active capabilities
+    NetAdapterOffloadSetChecksumCapabilities(NetAdapter,
+                                             &lsoOffloadCapabilities,
+                                             MyEvtAdapterOffloadSetLso);
+
+    ...    
+}
+```
