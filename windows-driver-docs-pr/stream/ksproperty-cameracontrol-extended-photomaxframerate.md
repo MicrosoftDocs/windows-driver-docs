@@ -55,7 +55,7 @@ This property provides the maximum capture frame rate for a camera when it is in
 
  
 
-The property value (operation data) contains a [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563) structure and a [**KSCAMERA\_EXTENDEDPROP\_VALUE**](https://msdn.microsoft.com/library/windows/hardware/dn567564) structure. The maximum photo frame rate in frames per second is set or returned as value in **KSCAMERA\_EXTENDEDPROP\_VALUE**.
+The property value (operation data) contains a [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563) structure and a [**KSCAMERA\_EXTENDEDPROP\_VALUE**](https://msdn.microsoft.com/library/windows/hardware/dn567565) structure. The maximum photo frame rate in frames per second is set or returned as value in **KSCAMERA\_EXTENDEDPROP\_VALUE**.
 
 There are no flags set in the **Flags** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563) for this property.
 
@@ -116,6 +116,8 @@ The frame rate value is set in the **Ratio** member of [**KSCAMERA\_EXTENDEDPROP
 When the driver is in photo sequence mode, it may be necessary to limit the maximum frame rate of the photo capture. This is to ensure that “moment in time” capture scenarios, with a certain number of history frames, are contained within a configured time span. For example, based on memory constraints, if the application wishes to capture 1 second worth of past history, it’s necessary to cap the capture rate so only N number of frames are needed.
 
 When set, the driver must use the frame rate provided even if the camera can capture frames fast then the requested rate. If necessary, the driver can drop extra frames to accommodate the requested rate.
+
+Setting the maximum frame rate value to 0 (0 for the HighPart and 0 for the LowPart of the **Ratio**) clears the maximum frame rate setting in the driver and has the same effect as asking the driver to provide frames as fast as possible.  Once the frame rate is set to 0, any subsequent query will return the value of the maximum frame rate possible for the camera driver. 
 
 Requirements
 ------------
