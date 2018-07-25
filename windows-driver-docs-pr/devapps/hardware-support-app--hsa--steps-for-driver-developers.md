@@ -267,3 +267,105 @@ The following is the formal XML XSD schema for an SCCD file.  Use this schema to
 
 </xs:schema>
 ```
+
+The following schema is also valid as of the the Redstone 5 release.  It enbales a SCCD to declare any app package to be an authorized entity. 
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://schemas.microsoft.com/appx/2018/sccd"
+  xmlns:s="http://schemas.microsoft.com/appx/2018/sccd"
+  xmlns="http://schemas.microsoft.com/appx/2018/sccd">
+
+  <xs:element name="CustomCapabilityDescriptor" type="CT_CustomCapabilityDescriptor">
+    <xs:unique name="Unique_CustomCapability_Name">
+      <xs:selector xpath="s:CustomCapabilities/s:CustomCapability"/>
+      <xs:field xpath="@Name"/>
+    </xs:unique>
+  </xs:element>
+
+  <xs:complexType name="CT_CustomCapabilityDescriptor">
+    <xs:sequence>
+      <xs:element ref="CustomCapabilities" minOccurs="1" maxOccurs="1"/>
+      <xs:element ref="AuthorizedEntities" minOccurs="1" maxOccurs="1"/>
+      <xs:element ref="DeveloperModeOnly" minOccurs="0" maxOccurs="1"/>
+      <xs:element ref="Catalog" minOccurs="1" maxOccurs="1"/>
+      <xs:any minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:element name="CustomCapabilities" type="CT_CustomCapabilities" />
+
+  <xs:complexType name="CT_CustomCapabilities">
+    <xs:sequence>
+      <xs:element ref="CustomCapability" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="CustomCapability">
+    <xs:complexType>
+      <xs:attribute name="Name" type="ST_CustomCapability" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="ST_NonEmptyString">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="32767"/>
+      <xs:pattern value="[^\s]|([^\s].*[^\s])"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ST_CustomCapability">
+    <xs:annotation>
+      <xs:documentation>Custom capabilities should be a string in the form of Company.capabilityName_PublisherId</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="ST_NonEmptyString">
+      <xs:pattern value="[A-Za-z0-9][-_.A-Za-z0-9]*_[a-hjkmnp-z0-9]{13}"/>
+      <xs:minLength value="15"/>
+      <xs:maxLength value="255"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="AuthorizedEntities" type="CT_AuthorizedEntities" />
+
+  <xs:complexType name="CT_AuthorizedEntities">
+    <xs:sequence>
+      <xs:element ref="AuthorizedEntity" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="AllowAny" type="xs:boolean" use="optional"/>
+  </xs:complexType>
+  
+  <xs:element name="AuthorizedEntity" type="CT_AuthorizedEntity" />
+  
+  <xs:complexType name="CT_AuthorizedEntity">
+    <xs:attribute name="CertificateSignatureHash" type="ST_CertificateSignatureHash" use="required"/>
+    <xs:attribute name="AppPackageFamilyName" type="ST_NonEmptyString" use="required"/>
+  </xs:complexType>
+
+  <xs:simpleType name="ST_CertificateSignatureHash">
+    <xs:restriction base="ST_NonEmptyString">
+      <xs:pattern value="[A-Fa-f0-9]+"/>
+      <xs:minLength value="64"/>
+      <xs:maxLength value="64"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="DeveloperModeOnly">
+    <xs:complexType>
+      <xs:attribute name="Value" type="xs:boolean" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Catalog" type="ST_Catalog" />
+
+  <xs:simpleType name="ST_Catalog">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Za-z0-9\+\/\=]+"/>
+      <xs:minLength value="4"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+</xs:schema>
+```
