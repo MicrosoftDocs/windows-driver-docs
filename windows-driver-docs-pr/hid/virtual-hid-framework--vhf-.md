@@ -73,7 +73,7 @@ Queries and consumes the TLCs that are reported by the HID device stack.
 This procedure describes how to write a simple HID source driver that reports headset buttons to the operating system. In this case, the driver that implements this code can be an existing KMDF audio driver that has been modified to act as a HID source reporting headset buttons by using VHF.
 
 1.  Include Vhf.h, included in the WDK for Windows 10.
-2.  Link to Vhflkm.lib, included in the WDK.
+2.  Link to vhfkm.lib, included in the WDK.
 3.  Create a HID Report Descriptor that your device wants to report to the operating system. In this example, the HID Report Descriptor describes the headset buttons. The report specifies a HID Input Report, size 8 bits (1 byte). The first three bits are for the headset middle, volume-up, and volume-down buttons. The remaining bits are unused.
 
 ```
