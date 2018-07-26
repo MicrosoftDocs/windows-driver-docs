@@ -19,6 +19,13 @@ For example, to generate traces from .c and .h files, use the following statemen
 ```
 RUN_WPP=$(SOURCES) -km -ext:.c.h
 ```
+Be sure that the .h files that tracewpp needs to scan are included in $(SOURCES) or add them on the command line.  
+example:
+
+```
+RUN_WPP=$(SOURCES) tracedrv.h -km -ext:.c.h
+```
+Be sure *NOT* to include the .h file is specified with the -scan: option as a configuration data file.
 
 The **-ext** parameter specifies the file types that WPP recognizes as source files. WPP ignores files with a different file name extension. By default, WPP recognizes only .c, .c++, .cpp, and .cxx files.
 
