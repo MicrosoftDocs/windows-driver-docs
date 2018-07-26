@@ -86,7 +86,7 @@ See [Create a driver only update package](https://docs.microsoft.com/windows-har
 
 When you submit an extension INF to be signed, the dashboard will look through your INF file, and attempt to associate the specified **ExtensionId** with your account. If the **ExtensionId** is already registered with a different account, you'll see a message prompting you to provide a different ID.
 
-For more information about specifying **ExtensionId**, see [Using an extension INF file](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-an-extension-inf-file). 
+For more information about specifying **ExtensionId**, see [Using an extension INF file](https://docs.microsoft.com/windows-hardware/drivers/install/using-an-extension-inf-file). 
 
 Note that in your submissions, you may only use ExtensionIDs that are registered to your account. 
 
