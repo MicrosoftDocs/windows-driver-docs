@@ -84,7 +84,7 @@ See [Create a driver only update package](https://docs.microsoft.com/windows-har
 
 ## Registering an ExtensionId
 
-When you submit an extension INF to be signed, the dashboard attempts to associate the **ExtensionId** with your account. If the **ExtensionId** is already registered with a different account, you'll see a message prompting you to use a different ID.
+When you submit an extension INF to be signed, the dashboard will look through your INF file, and attempt to associate the specified **ExtensionId** with your account. If the **ExtensionId** is already registered with a different account, you'll see a message prompting you to provide a different ID.
 
 For more information about specifying **ExtensionId**, see [Using an extension INF file](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-an-extension-inf-file). 
 
