@@ -45,7 +45,7 @@ See the [Data field properties](data-field-properties.md) topic for a list of th
 
 **Light sensor data fields**
 
--   PKEY\_SensorData\_Illuminance\_Lux
+-   PKEY\_SensorData\_LightLevel\_Lux
 
 **Device orientation data fields**
 
