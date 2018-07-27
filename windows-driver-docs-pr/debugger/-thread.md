@@ -14,6 +14,7 @@ api_name:
 - thread
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !thread

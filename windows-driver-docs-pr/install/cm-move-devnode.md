@@ -9,6 +9,7 @@ api_name:
 - CM_Move_DevNode
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Move_DevNode

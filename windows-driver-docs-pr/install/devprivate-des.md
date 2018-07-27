@@ -9,6 +9,7 @@ api_name:
 - DEVPRIVATE_DES
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # DEVPRIVATE_DES

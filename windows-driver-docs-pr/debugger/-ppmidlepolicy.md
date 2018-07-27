@@ -14,6 +14,7 @@ api_name:
 - ppmidlepolicy
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ppmidlepolicy

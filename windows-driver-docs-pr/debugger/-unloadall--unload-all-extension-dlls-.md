@@ -14,6 +14,7 @@ api_name:
 - .unloadall (Unload All Extension DLLs)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .unloadall (Unload All Extension DLLs)

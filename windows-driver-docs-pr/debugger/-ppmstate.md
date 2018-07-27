@@ -14,6 +14,7 @@ api_name:
 - ppmstate
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ppmstate

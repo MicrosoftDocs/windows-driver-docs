@@ -2,6 +2,7 @@
 title: MSiSCSI\_InitiatorSessionInfo WMI Class
 description: MSiSCSI\_InitiatorSessionInfo WMI Class
 ms.assetid: 73053af8-80b0-4cab-8e27-c651be8f0e8c
+ms.localizationpriority: medium
 ---
 
 # MSiSCSI\_InitiatorSessionInfo WMI Class

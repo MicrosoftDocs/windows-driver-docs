@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: fc4c5364-2160-4525-889a-96785a3c7a07
 keywords:
  - IRP_MN_QUERY_POWER Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_QUERY\_POWER

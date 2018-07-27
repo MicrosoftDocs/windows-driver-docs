@@ -14,6 +14,7 @@ api_name:
 - ioresdes
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ioresdes

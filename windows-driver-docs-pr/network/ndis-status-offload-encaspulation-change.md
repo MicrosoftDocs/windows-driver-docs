@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - NDIS_STATUS_OFFLOAD_ENCASPULATION_CHANGE Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_OFFLOAD\_ENCASPULATION\_CHANGE

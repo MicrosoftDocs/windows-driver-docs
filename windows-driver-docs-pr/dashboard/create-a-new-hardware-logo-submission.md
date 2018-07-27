@@ -6,6 +6,7 @@ ms.author:
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Create a new WLK device certification submission

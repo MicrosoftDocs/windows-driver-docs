@@ -14,6 +14,7 @@ api_name:
 - .beep (Speaker Beep)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .beep (Speaker Beep)

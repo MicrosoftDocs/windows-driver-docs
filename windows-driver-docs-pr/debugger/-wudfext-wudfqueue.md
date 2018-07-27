@@ -14,6 +14,7 @@ api_name:
 - wudfext.wudfqueue
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wudfext.wudfqueue

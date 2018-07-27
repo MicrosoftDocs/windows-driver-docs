@@ -14,6 +14,7 @@ api_name:
 - ndiskd.protocol
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.protocol

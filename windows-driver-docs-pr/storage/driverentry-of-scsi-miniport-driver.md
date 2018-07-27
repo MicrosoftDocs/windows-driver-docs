@@ -9,6 +9,7 @@ api_name:
 - DriverEntry
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # DriverEntry of SCSI Miniport Driver routine

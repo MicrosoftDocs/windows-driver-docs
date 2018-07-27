@@ -14,6 +14,7 @@ api_name:
 - bth
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !bth

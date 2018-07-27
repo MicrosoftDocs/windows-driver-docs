@@ -14,6 +14,7 @@ api_name:
 - MdlAfterReqCompletedWriteA
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # MdlAfterReqCompletedWriteA rule (kmdf)

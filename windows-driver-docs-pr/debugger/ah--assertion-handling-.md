@@ -14,6 +14,7 @@ api_name:
 - ah (Assertion Handling)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ah (Assertion Handling)

@@ -9,6 +9,7 @@ ms.date: 08/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # What's new in NetAdapterCx

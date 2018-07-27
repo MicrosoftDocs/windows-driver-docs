@@ -2,6 +2,7 @@
 title: POS events
 description: POS events
 ms.assetid: '1123b789-c0ee-4490-9081-79c08fc31417'
+ms.localizationpriority: medium
 ---
 
 POS events

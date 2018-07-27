@@ -16,6 +16,7 @@ api_name:
 - Iasphelp.Close
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # Iasphelp::Close method

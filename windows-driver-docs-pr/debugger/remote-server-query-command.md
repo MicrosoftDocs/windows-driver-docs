@@ -14,6 +14,7 @@ api_name:
 - Remote Server Query Command
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Remote Server Query Command

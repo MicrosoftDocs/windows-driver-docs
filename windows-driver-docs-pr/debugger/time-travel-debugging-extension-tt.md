@@ -6,6 +6,7 @@ ms.date: 09/22/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 
@@ -67,6 +68,7 @@ This extension only works with time travel traces. For more information about ti
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
+ms.localizationpriority: medium
 ---
 
 

@@ -4,6 +4,7 @@ author: windows-driver-content
 description: Integration with Windows
 ms.assetid: 57721e38-5974-4080-b051-93b78a7f42c6
 keywords: ["property sheets WDK DirectInput , registering", "game controllers WDK DirectInput , registrations", "control panels WDK DirectInput , registrations", "property sheets WDK DirectInput , Windows integration", "game controllers WDK DirectInput , Windows integration", "control panels WDK DirectInput , Windows integration", "Windows integration WDK DirectInput control panel", "registering property sheets", "registering devices for DirectInput control panel"]
+ms.localizationpriority: medium
 ---
 
 # Integration with Windows

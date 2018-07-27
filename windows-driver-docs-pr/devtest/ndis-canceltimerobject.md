@@ -14,6 +14,7 @@ api_name:
 - CancelTimerObject
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CancelTimerObject rule (ndis)

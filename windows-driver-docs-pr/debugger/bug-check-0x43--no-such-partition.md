@@ -14,6 +14,7 @@ api_name:
 - NO_SUCH_PARTITION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x43: NO\_SUCH\_PARTITION

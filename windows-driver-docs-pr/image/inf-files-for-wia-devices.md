@@ -8,6 +8,7 @@ ms.date: 07/18/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF Files for WIA Devices

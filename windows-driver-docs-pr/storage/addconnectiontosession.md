@@ -2,6 +2,7 @@
 title: AddConnectionToSession
 description: AddConnectionToSession
 ms.assetid: c2762e75-8732-4c48-83a9-24ccd39218eb
+ms.localizationpriority: medium
 ---
 
 # AddConnectionToSession

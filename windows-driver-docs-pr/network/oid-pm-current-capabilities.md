@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_PM_CURRENT_CAPABILITIES Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_PM\_CURRENT\_CAPABILITIES

@@ -6,6 +6,7 @@ ms.date: 08/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 > [!NOTE]
@@ -120,6 +121,7 @@ The following file, shows an example workspaces configuration file.
 Note that this file format will continue to evolve as more features are added to the WinDbg Preview debugger.
 
 
+ms.localizationpriority: medium
 ---
  
 ## See Also

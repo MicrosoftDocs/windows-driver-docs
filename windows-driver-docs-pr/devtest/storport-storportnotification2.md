@@ -14,6 +14,7 @@ api_name:
 - StorPortNotification2
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # StorPortNotification2 rule (storport)

@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: b79fd057-bf95-457e-882a-42221789e6e6
 keywords:
  - IRP_MN_WAIT_WAKE Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_WAIT\_WAKE

@@ -2,6 +2,7 @@
 title: MPIO\_EventEntry WMI Class
 description: MPIO\_EventEntry WMI Class
 ms.assetid: 37160002-fe65-4d02-80f5-375f169b7d11
+ms.localizationpriority: medium
 ---
 
 # MPIO\_EventEntry WMI Class

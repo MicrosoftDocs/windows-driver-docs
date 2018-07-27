@@ -6,6 +6,7 @@ ms.date: 08/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 > [!NOTE]
@@ -97,6 +98,7 @@ You can use /? to list the supported command line options.
 
 
 
+ms.localizationpriority: medium
 ---
 
 ## See Also

@@ -4,6 +4,7 @@ author: windows-driver-content
 description: Setting the Manufacturer-Specific Data
 ms.assetid: 57787e7a-2a80-476c-8027-b7c154b2f407
 keywords: ["INF files WDK joysticks , manufacturer-specific data"]
+ms.localizationpriority: medium
 ---
 
 # Setting the Manufacturer-Specific Data

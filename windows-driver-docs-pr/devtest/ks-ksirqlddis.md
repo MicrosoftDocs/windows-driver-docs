@@ -14,6 +14,7 @@ api_name:
 - KsIrqlDDIs
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # KsIrqlDDIs rule ()

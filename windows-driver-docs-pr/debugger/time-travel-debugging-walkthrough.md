@@ -6,6 +6,7 @@ ms.date: 01/29/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 > [!NOTE]
@@ -715,6 +716,7 @@ In this very small sample the issue could have been determined by looking at the
 Once a trace is recorded, the trace and repro steps can be shared, and the issue will be reproducible on demand on any PC.  
 
 
+ms.localizationpriority: medium
 ---
 
 ## See Also
@@ -727,6 +729,7 @@ Once a trace is recorded, the trace and repro steps can be shared, and the issue
 
 [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-file-information.md)
 
+ms.localizationpriority: medium
 ---
 
 

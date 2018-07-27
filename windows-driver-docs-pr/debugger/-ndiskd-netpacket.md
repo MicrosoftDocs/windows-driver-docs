@@ -14,6 +14,7 @@ api_name:
 - ndiskd.netpacket
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.netpacket

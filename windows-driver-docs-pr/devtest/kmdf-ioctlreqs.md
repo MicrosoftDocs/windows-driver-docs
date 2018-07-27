@@ -14,6 +14,7 @@ api_name:
 - IoctlReqs
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IoctlReqs rule (kmdf)

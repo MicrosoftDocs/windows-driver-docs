@@ -14,6 +14,7 @@ api_name:
 - net_send
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !net\_send

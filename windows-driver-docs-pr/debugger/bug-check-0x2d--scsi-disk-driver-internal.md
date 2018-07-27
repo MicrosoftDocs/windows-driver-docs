@@ -14,6 +14,7 @@ api_name:
 - SCSI_DISK_DRIVER_INTERNAL
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x2D: SCSI\_DISK\_DRIVER\_INTERNAL

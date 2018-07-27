@@ -6,6 +6,7 @@ ms.date: 09/25/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 > [!NOTE]
@@ -78,6 +79,7 @@ This example shows the calls object for ucrtbase!initterm.
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
+ms.localizationpriority: medium
 ---
 
 

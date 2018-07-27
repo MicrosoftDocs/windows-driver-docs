@@ -14,6 +14,7 @@ api_name:
 - RemoveLockReleaseSystemControl
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # RemoveLockReleaseSystemControl rule (wdm)

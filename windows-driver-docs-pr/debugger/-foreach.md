@@ -14,6 +14,7 @@ api_name:
 - .foreach
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .foreach

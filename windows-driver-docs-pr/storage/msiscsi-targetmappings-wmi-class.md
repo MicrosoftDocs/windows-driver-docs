@@ -2,6 +2,7 @@
 title: MSiSCSI\_TargetMappings WMI Class
 description: MSiSCSI\_TargetMappings WMI Class
 ms.assetid: 12bfe80a-8431-4607-99f5-ddd6815aecc6
+ms.localizationpriority: medium
 ---
 
 # MSiSCSI\_TargetMappings WMI Class

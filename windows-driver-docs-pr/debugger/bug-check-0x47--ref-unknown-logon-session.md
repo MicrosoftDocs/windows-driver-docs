@@ -14,6 +14,7 @@ api_name:
 - REF_UNKNOWN_LOGON_SESSION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x47: REF\_UNKNOWN\_LOGON\_SESSION

@@ -11,6 +11,7 @@ api_location:
 - Dispmprt.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # GUID_DEVINTERFACE_OPM

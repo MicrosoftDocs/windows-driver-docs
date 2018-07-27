@@ -17,6 +17,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Propagating the DO\_BUFFERED\_IO and DO\_DIRECT\_IO Flags

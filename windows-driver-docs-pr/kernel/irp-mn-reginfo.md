@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: db93b64b-a2e4-429d-850e-921fb438467c
 keywords:
  - IRP_MN_REGINFO Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_REGINFO

@@ -10,6 +10,7 @@ api_name:
 - CM_Get_DevNode_Custom_Property_ExW
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Get_DevNode_Custom_Property_Ex

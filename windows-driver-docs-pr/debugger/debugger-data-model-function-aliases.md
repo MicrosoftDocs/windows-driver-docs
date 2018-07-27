@@ -7,6 +7,7 @@ ms.date: 03/21/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Debugger Data Model Function Aliases
@@ -248,6 +249,7 @@ In this example the top 5 process with the largest thread count are displayed.
 
 [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md) 
 
+ms.localizationpriority: medium
 ---
 
 

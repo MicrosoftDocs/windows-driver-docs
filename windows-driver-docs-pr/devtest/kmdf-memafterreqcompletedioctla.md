@@ -14,6 +14,7 @@ api_name:
 - MemAfterReqCompletedIoctlA
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # MemAfterReqCompletedIoctlA rule (kmdf)

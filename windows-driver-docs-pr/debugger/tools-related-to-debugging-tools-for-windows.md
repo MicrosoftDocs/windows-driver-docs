@@ -7,6 +7,7 @@ ms.date: 02/22/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Tools Related to Debugging Tools for Windows

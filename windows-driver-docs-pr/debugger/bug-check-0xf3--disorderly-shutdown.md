@@ -14,6 +14,7 @@ api_name:
 - DISORDERLY_SHUTDOWN
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xF3: DISORDERLY\_SHUTDOWN

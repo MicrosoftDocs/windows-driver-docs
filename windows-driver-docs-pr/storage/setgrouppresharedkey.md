@@ -2,6 +2,7 @@
 title: SetGroupPresharedKey
 description: SetGroupPresharedKey
 ms.assetid: 7dedcc62-4ad6-42d5-a461-b0a69c9c97cd
+ms.localizationpriority: medium
 ---
 
 # SetGroupPresharedKey

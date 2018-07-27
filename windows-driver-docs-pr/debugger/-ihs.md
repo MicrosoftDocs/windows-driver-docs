@@ -14,6 +14,7 @@ api_name:
 - ihs
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ihs

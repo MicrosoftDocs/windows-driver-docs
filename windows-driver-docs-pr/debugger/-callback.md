@@ -14,6 +14,7 @@ api_name:
 - callback
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !callback

@@ -14,6 +14,7 @@ api_name:
 - PdoDeviceInitAPI
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # PdoDeviceInitAPI rule (kmdf)

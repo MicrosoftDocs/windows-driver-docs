@@ -7,6 +7,7 @@ ms.date: 07/19/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Building for OneCore
@@ -45,6 +46,7 @@ Use the [ApiValidator](validating-universal-drivers.md) tool in the WDK.  This t
 Use runtime testing to verify that your user-mode code runs as you expect on non-Desktop OneCore editions.  Note that stubbed APIs may generate different error codes.
 
 See also
+ms.localizationpriority: medium
 ---
 [OneCore](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows)
 

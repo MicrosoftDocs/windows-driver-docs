@@ -14,6 +14,7 @@ api_name:
 - INVALID_DRIVER_HANDLE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x11F: INVALID\_DRIVER\_HANDLE

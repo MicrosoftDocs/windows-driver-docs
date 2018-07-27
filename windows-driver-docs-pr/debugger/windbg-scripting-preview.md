@@ -6,6 +6,7 @@ ms.date: 04/10/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 > [!NOTE]
@@ -61,6 +62,7 @@ Use **New Script** > **NatVis** to open the following blank NatVis template.
 For more information about working with NatVis, see [Debugger Objects in NatVis](native-debugger-objects-in-natvis.md).
 
  
+ms.localizationpriority: medium
 ---
 
 ## See Also

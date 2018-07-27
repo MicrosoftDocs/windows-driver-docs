@@ -14,6 +14,7 @@ api_name:
 - .browse (Display Command in Browser)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .browse (Display Command in Browser)

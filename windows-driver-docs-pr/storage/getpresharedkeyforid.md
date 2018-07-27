@@ -2,6 +2,7 @@
 title: GetPresharedKeyForId
 description: GetPresharedKeyForId
 ms.assetid: cd83d1dc-7aa8-4514-a108-50aee91d272b
+ms.localizationpriority: medium
 ---
 
 # GetPresharedKeyForId

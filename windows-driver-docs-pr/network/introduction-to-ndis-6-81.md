@@ -7,6 +7,7 @@ ms.date: 05/14/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to NDIS 6.81

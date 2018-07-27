@@ -6,6 +6,7 @@ ms.date: 09/22/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 
@@ -62,6 +63,7 @@ The time travel debugger extension commands are implemented in ttdext.dll. The t
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
+ms.localizationpriority: medium
 ---
 
 

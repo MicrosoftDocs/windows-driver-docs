@@ -2,6 +2,7 @@
 title: Get Energy Source Health Info (Function Index 12)
 description: This function returns information about the health of the Energy Source (ES) module.
 ms.assetid: A2044F2A-79DA-4D3A-93B7-BE9D389DA399
+ms.localizationpriority: medium
 ---
 
 # Get Energy Source Health Info (Function Index 12)

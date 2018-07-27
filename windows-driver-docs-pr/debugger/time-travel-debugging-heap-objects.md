@@ -6,6 +6,7 @@ ms.date: 09/24/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 > [!NOTE]
@@ -85,6 +86,7 @@ dx -r1 @$cursession.TTD.Data.Heap()[2].@"Parameters"
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
+ms.localizationpriority: medium
 ---
 
 

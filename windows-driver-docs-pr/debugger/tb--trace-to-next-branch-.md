@@ -14,6 +14,7 @@ api_name:
 - tb (Trace to Next Branch)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # tb (Trace to Next Branch)

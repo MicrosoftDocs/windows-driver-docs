@@ -2,6 +2,7 @@
 title: BarcodeScannerErrorOccurred
 description: BarcodeScannerErrorOccurred
 ms.assetid: '38cfbd87-0526-49d1-8580-96f4e1adf7bb'
+ms.localizationpriority: medium
 ---
 
 # BarcodeScannerErrorOccurred

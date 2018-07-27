@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: 5ae4c6c5-d8f2-4dc5-8cfd-ecb751fc88be
 keywords:
  - IRP_MJ_READ Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_READ

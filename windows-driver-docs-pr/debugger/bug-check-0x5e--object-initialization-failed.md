@@ -14,6 +14,7 @@ api_name:
 - OBJECT_INITIALIZATION_FAILED
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x5E: OBJECT\_INITIALIZATION\_FAILED

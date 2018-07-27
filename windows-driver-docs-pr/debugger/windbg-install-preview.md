@@ -6,6 +6,7 @@ ms.date: 08/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 > [!NOTE]
@@ -39,6 +40,7 @@ Once the app is a located, click on it to download and install.
 The WinDbg preview coexists with the classic WinDbg debugger on the same machine, so you can work with both versions at the same time. 
 
 
+ms.localizationpriority: medium
 ---
 
 ## See Also

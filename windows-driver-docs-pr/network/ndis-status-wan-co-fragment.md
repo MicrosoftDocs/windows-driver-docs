@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - NDIS_STATUS_WAN_CO_FRAGMENT Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WAN\_CO\_FRAGMENT

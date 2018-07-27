@@ -14,6 +14,7 @@ api_name:
 - CTRL+B (Quit Local Debugger)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CTRL+B (Quit Local Debugger)

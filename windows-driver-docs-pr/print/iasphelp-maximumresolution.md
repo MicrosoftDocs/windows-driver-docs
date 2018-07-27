@@ -16,6 +16,7 @@ api_name:
 - Iasphelp.get_MaximumResolution
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_MaximumResolution method

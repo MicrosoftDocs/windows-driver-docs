@@ -14,6 +14,7 @@ api_name:
 - chksym
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !chksym

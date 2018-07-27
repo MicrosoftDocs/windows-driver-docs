@@ -6,6 +6,7 @@ ms.date: 10/18/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 > [!NOTE]
@@ -109,6 +110,7 @@ In most cases this failure message indicates that the .RUN trace file will have 
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
+ms.localizationpriority: medium
 ---
 
 

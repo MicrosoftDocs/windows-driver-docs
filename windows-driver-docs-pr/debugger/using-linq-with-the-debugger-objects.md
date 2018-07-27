@@ -7,6 +7,7 @@ ms.date: 08/10/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using LINQ With the debugger objects
@@ -713,6 +714,7 @@ For more information about the CapabilityFlags, see [**DEVICE\_CAPABILITIES**](h
 
 [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md) 
 
+ms.localizationpriority: medium
 ---
 
 

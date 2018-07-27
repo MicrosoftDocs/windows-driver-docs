@@ -14,6 +14,7 @@ api_name:
 - dml_proc
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !dml\_proc

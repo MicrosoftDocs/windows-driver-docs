@@ -14,6 +14,7 @@ api_name:
 - PAGE_NOT_ZERO
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x127: PAGE\_NOT\_ZERO

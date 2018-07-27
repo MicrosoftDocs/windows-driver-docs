@@ -6,6 +6,7 @@ ms.date: 12/19/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 > [!NOTE]
@@ -40,6 +41,7 @@ A position of FFFFFFFFFFFFFFFE:0 indicates the end of the trace.
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
+ms.localizationpriority: medium
 ---
 
 

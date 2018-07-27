@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: a5c81db0-e753-4d91-97e4-c58ea05f5ce8
 keywords:
  - IRP_MN_STOP_DEVICE Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_STOP\_DEVICE

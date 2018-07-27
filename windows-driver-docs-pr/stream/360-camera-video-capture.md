@@ -6,6 +6,7 @@ ms.date: 07/20/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # 360 camera video capture

@@ -6,6 +6,7 @@ ms.date: 01/16/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 > [!NOTE]
@@ -123,6 +124,7 @@ In this example all of the postions in the trace where the four bytes of memory 
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
+ms.localizationpriority: medium
 ---
 
 

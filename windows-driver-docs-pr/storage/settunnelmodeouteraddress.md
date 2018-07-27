@@ -2,6 +2,7 @@
 title: SetTunnelModeOuterAddress
 description: SetTunnelModeOuterAddress
 ms.assetid: 0f67a15c-5077-460a-923c-8d86cc79a1bb
+ms.localizationpriority: medium
 ---
 
 # SetTunnelModeOuterAddress

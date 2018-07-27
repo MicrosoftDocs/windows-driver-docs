@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_SWITCH_PORT_PROPERTY_ADD Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_SWITCH\_PORT\_PROPERTY\_ADD

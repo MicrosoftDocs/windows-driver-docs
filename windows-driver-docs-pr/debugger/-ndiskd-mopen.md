@@ -14,6 +14,7 @@ api_name:
 - ndiskd.mopen
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.mopen

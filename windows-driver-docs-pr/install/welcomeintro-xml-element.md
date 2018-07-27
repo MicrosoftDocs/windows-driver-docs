@@ -9,6 +9,7 @@ api_name:
 - welcomeIntro XML Element
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # welcomeIntro XML Element

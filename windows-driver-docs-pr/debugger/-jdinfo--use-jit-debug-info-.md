@@ -14,6 +14,7 @@ api_name:
 - .jdinfo (Use JIT_DEBUG_INFO)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .jdinfo (Use JIT\_DEBUG\_INFO)

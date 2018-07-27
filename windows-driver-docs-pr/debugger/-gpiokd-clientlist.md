@@ -14,6 +14,7 @@ api_name:
 - gpiokd.clientlist
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !gpiokd.clientlist

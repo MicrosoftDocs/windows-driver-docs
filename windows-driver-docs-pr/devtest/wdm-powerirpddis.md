@@ -14,6 +14,7 @@ api_name:
 - PowerIrpDDIs
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # PowerIrpDDIs rule (wdm)

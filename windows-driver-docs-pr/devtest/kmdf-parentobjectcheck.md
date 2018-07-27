@@ -14,6 +14,7 @@ api_name:
 - ParentObjectCheck
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ParentObjectCheck rule (kmdf)

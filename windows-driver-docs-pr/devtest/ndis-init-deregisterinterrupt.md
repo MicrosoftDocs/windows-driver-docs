@@ -14,6 +14,7 @@ api_name:
 - Init_DeRegisterInterrupt
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Init\_DeRegisterInterrupt rule (ndis)

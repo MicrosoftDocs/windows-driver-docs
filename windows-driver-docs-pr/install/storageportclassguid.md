@@ -11,6 +11,7 @@ api_location:
 - Ntddstor.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # StoragePortClassGuid

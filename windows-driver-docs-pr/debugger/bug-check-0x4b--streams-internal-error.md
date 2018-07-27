@@ -14,6 +14,7 @@ api_name:
 - STREAMS_INTERNAL_ERROR
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x4B: STREAMS\_INTERNAL\_ERROR

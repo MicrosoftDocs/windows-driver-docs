@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: ["Static Driver Verifier WDK , rules", "StaticDV WDK , rules", "SDV WDK , rules", "rules WDK Static Driver Verifier"]
+ms.localizationpriority: medium
 ---
 
 # Rules for WDM Drivers

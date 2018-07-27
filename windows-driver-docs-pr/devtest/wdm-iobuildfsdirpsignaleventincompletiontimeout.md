@@ -14,6 +14,7 @@ api_name:
 - IoBuildFsdIrpSignalEventInCompletionTimeout
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IoBuildFsdIrpSignalEventInCompletionTimeout rule (wdm)

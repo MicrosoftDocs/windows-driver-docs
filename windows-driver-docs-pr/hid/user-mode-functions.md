@@ -4,6 +4,7 @@ author: windows-driver-content
 description: User-Mode Functions
 ms.assetid: 1faa04b1-0bf0-494c-b55f-5c90c259c8f5
 keywords: ["force feedback drivers WDK HID , user-mode functions", "user-mode functions WDK force feedback"]
+ms.localizationpriority: medium
 ---
 
 # User-Mode Functions

@@ -6,6 +6,7 @@ ms.date: 12/19/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 > [!NOTE]
@@ -202,6 +203,7 @@ Use this LINQ query to display in grid format, the approximate longest running t
 
 [Time Travel Debugging - JavaScript Automation](time-travel-debugging-javascript-automation.md)
 
+ms.localizationpriority: medium
 ---
 
 

@@ -6,6 +6,7 @@ ms.date: 09/21/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 > [!NOTE]
@@ -98,6 +99,7 @@ Error: Corrupted trace dumped to C:\Users\User1\Documents\Foo01.run.err.
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
+ms.localizationpriority: medium
 ---
 
 

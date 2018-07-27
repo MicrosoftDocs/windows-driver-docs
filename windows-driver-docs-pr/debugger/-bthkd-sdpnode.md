@@ -14,6 +14,7 @@ api_name:
 - bthkd.sdpnode
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !bthkd.sdpnode

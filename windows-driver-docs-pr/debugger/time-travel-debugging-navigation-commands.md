@@ -6,6 +6,7 @@ ms.date: 09/23/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 > [!NOTE]
@@ -43,6 +44,7 @@ The time travel navigation commands only work with time travel traces. For more 
 
 [Time Travel Debugging - Replay a trace](time-travel-debugging-replay.md)
 
+ms.localizationpriority: medium
 ---
 
 

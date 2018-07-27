@@ -7,6 +7,7 @@ ms.date: 08/10/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Native Debugger Objects in NatVis
@@ -109,6 +110,7 @@ MyDog     : {Age = 8 years. Weight = 30 pounds.} [Type: CDog]
 [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md) 
 
  
+ms.localizationpriority: medium
 ---
  
 

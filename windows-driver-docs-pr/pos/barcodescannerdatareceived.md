@@ -2,6 +2,7 @@
 title: BarcodeScannerDataReceived
 description: BarcodeScannerDataReceived
 ms.assetid: '3dd7699a-5e2b-484b-bd83-c37ee7f0e851'
+ms.localizationpriority: medium
 ---
 
 # BarcodeScannerDataReceived

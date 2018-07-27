@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_SRIOV_PF_LUID Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_SRIOV\_PF\_LUID

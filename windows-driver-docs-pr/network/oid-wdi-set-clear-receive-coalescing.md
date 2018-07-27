@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - OID_WDI_SET_CLEAR_RECEIVE_COALESCING Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_SET\_CLEAR\_RECEIVE\_COALESCING

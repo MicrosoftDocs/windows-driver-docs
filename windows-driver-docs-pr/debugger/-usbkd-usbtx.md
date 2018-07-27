@@ -14,6 +14,7 @@ api_name:
 - usbkd.usbtx
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !usbkd.usbtx
@@ -86,6 +87,7 @@ dt usbport!_TRANSFER_SG_LIST ffffe0000653439c
 SgCount:  1  MdlVirtualAddress: ffffe00000437000  MdlSystemAddress: ffffe00000437000
     [0] dt usbport!_TRANSFER_SG_ENTRY ffffe000065343bc
     : sysaddr: 0000000000000000 len 0x00001000(4096) offset 0x00000000(0) phys 00000000'ded90000
+ms.localizationpriority: medium
 ---
 dt usbport!_SCATTER_GATHER_ENTRY ffffe000065343ec
 dt _SCATTER_GATHER_LIST ffffe00001bc231c

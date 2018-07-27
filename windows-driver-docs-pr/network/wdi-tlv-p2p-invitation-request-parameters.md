@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - WDI_TLV_P2P_INVITATION_REQUEST_PARAMETERS Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_INVITATION\_REQUEST\_PARAMETERS

@@ -14,6 +14,7 @@ api_name:
 - rdmsr (Read MSR)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # rdmsr (Read MSR)

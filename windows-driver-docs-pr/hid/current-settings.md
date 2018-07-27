@@ -4,6 +4,7 @@ author: windows-driver-content
 description: Current Settings
 ms.assetid: 4de99ad0-fcd9-4f8d-8125-8f622443a0c6
 keywords: ["current registry settings WDK joysticks"]
+ms.localizationpriority: medium
 ---
 
 # Current Settings

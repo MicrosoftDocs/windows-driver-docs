@@ -14,6 +14,7 @@ api_name:
 - Irql_OID_Function
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Irql\_OID\_Function rule (ndis)

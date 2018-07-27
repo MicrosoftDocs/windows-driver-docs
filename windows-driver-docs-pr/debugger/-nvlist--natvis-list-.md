@@ -14,6 +14,7 @@ api_name:
 - .nvlist (NatVis List)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .nvlist (NatVis List)

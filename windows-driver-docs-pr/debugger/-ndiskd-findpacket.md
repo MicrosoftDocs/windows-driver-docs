@@ -14,6 +14,7 @@ api_name:
 - ndiskd.findpacket
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.findpacket

@@ -14,6 +14,7 @@ api_name:
 - KsTimedDeviceCallbacks
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # KsTimedDeviceCallbacks rule ()

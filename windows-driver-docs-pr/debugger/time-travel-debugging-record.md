@@ -6,6 +6,7 @@ ms.date: 09/22/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 > [!NOTE]
@@ -113,6 +114,7 @@ Now that you have a recorded a TTD trace, you can replay the trace back or work 
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
+ms.localizationpriority: medium
 ---
 
 

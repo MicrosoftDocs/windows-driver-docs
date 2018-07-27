@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_PNP_REMOVE_WAKE_UP_PATTERN Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_PNP\_REMOVE\_WAKE\_UP\_PATTERN

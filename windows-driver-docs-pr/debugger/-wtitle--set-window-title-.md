@@ -14,6 +14,7 @@ api_name:
 - .wtitle (Set Window Title)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .wtitle (Set Window Title)
