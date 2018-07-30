@@ -44,7 +44,6 @@ The time travel navigation commands only work with time travel traces. For more 
 
 [Time Travel Debugging - Replay a trace](time-travel-debugging-replay.md)
 
-ms.localizationpriority: medium
 ---
 
 

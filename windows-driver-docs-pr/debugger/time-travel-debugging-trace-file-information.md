@@ -99,7 +99,6 @@ Error: Corrupted trace dumped to C:\Users\User1\Documents\Foo01.run.err.
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
-ms.localizationpriority: medium
 ---
 
 

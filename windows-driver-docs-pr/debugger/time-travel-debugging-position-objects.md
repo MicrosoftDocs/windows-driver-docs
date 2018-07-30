@@ -41,7 +41,6 @@ A position of FFFFFFFFFFFFFFFE:0 indicates the end of the trace.
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
-ms.localizationpriority: medium
 ---
 
 

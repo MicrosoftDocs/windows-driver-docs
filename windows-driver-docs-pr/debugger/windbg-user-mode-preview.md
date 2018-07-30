@@ -67,7 +67,6 @@ Use this option to launch and attach to an app package. Use the search box to lo
 ![Launch App Package Applications tab showing cal in the search box with three apps listed](images/windbgx-launch-app-package.png)
 
 
-ms.localizationpriority: medium
 ---
 
 ## See Also

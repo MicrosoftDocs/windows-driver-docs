@@ -70,7 +70,6 @@ TODO
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
-ms.localizationpriority: medium
 ---
 
 

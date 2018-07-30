@@ -73,7 +73,6 @@ This version includes these updates.
 - Minor changes and bug fixes
 
 
-ms.localizationpriority: medium
 ---
  
 ## See Also

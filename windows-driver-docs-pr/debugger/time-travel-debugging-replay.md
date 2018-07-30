@@ -220,7 +220,6 @@ For information on the ```!tt```, ```!positions``` and the ```!index``` commands
 
 [Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walkthrough.md)
 
-ms.localizationpriority: medium
 ---
 
 

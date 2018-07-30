@@ -114,7 +114,6 @@ Now that you have a recorded a TTD trace, you can replay the trace back or work 
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
-ms.localizationpriority: medium
 ---
 
 

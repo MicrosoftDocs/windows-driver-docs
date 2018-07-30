@@ -68,7 +68,6 @@ This extension only works with time travel traces. For more information about ti
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
-ms.localizationpriority: medium
 ---
 
 

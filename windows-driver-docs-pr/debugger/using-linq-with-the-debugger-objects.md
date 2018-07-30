@@ -714,7 +714,6 @@ For more information about the CapabilityFlags, see [**DEVICE\_CAPABILITIES**](h
 
 [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md) 
 
-ms.localizationpriority: medium
 ---
 
 

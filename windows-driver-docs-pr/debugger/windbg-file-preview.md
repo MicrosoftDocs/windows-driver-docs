@@ -64,7 +64,6 @@ Use the settings menu to set the source and symbol path as well as choose the li
 ### About
 Use *About* to display build version information for the debugger. You can use also use this screen to view the Microsoft privacy statement.
 
-ms.localizationpriority: medium
 ---
  
 ## See Also
