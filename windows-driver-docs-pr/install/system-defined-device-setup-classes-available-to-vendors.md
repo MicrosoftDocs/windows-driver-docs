@@ -1,9 +1,15 @@
 ---  
 title: System-Defined Device Setup Classes Available to Vendors  
 description: System-Defined Device Setup Classes Available to Vendors  
-ms.assetid: d4b8a964-f843-4960-9077-46746af27a61  
+ms.assetid: d4b8a964-f843-4960-9077-46746af27a61
+ms.author: windowsdriverdev
+ms.date: 05/08/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.localizationpriority: medium
 ---  
-  
+
 # System-Defined Device Setup Classes Available to Vendors  
   
   

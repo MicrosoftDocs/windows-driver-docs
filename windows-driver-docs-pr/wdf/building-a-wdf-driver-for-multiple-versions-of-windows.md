@@ -1,3 +1,14 @@
+---
+title: Building a WDF driver for multiple versions of Windows
+description: Describes how to buid a WDF driver for multiple versions of Windows.
+ms.author: windowsdriverdev
+ms.date: 04/06/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.localizationpriority: medium
+---
+
 # Building a WDF driver for multiple versions of Windows
 
 WDF has always allowed you to build a driver once and use the resulting binary on multiple versions of Windows, but before Windows 10 version 1803 (Redstone 4), this was limited to "build on older, run on newer." Starting in Windows 10 version 1803, WDF adds "build on newer, run on older," with the additional benefit of conditional execution. To summarize:

@@ -1,3 +1,14 @@
+---
+title: Installing a driver on Windows 10 Mobile
+description: Describes driver installation on Windows 10 Mobile.
+ms.author: windowsdriverdev
+ms.date: 06/02/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.localizationpriority: medium
+---
+
 # Installing a driver on Windows 10 Mobile
 
 To install a driver on Windows 10 Mobile, use an .spkg file. An .spkg ("*package file*") is a standalone module that contains your driver package.
