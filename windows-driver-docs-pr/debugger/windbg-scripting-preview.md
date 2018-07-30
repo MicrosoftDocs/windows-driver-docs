@@ -62,7 +62,6 @@ Use **New Script** > **NatVis** to open the following blank NatVis template.
 For more information about working with NatVis, see [Debugger Objects in NatVis](native-debugger-objects-in-natvis.md).
 
  
-ms.localizationpriority: medium
 ---
 
 ## See Also

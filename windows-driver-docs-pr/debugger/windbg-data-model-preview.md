@@ -68,7 +68,6 @@ Debugger.Sessions.First().Devices.DeviceTree.Flatten(n => n.Children).GroupBy(n 
 ```
 ![Data model explore window showing plug and play device tree in a grid view](images/windbgx-data-model-pnp-device.png)
 
-ms.localizationpriority: medium
 ---
  
 ## See Also

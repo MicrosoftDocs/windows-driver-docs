@@ -86,7 +86,6 @@ dx -r1 @$cursession.TTD.Data.Heap()[2].@"Parameters"
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
-ms.localizationpriority: medium
 ---
 
 

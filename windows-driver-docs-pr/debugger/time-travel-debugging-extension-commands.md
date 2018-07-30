@@ -63,7 +63,6 @@ The time travel debugger extension commands are implemented in ttdext.dll. The t
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
-ms.localizationpriority: medium
 ---
 
 

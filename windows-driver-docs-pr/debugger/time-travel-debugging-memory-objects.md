@@ -124,7 +124,6 @@ In this example all of the postions in the trace where the four bytes of memory 
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
-ms.localizationpriority: medium
 ---
 
 

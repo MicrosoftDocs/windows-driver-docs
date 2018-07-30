@@ -79,7 +79,6 @@ This example shows the calls object for ucrtbase!initterm.
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
 
-ms.localizationpriority: medium
 ---
 
 

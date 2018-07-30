@@ -249,7 +249,6 @@ In this example the top 5 process with the largest thread count are displayed.
 
 [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md) 
 
-ms.localizationpriority: medium
 ---
 
 

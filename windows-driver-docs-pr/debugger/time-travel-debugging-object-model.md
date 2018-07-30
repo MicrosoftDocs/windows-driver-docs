@@ -203,7 +203,6 @@ Use this LINQ query to display in grid format, the approximate longest running t
 
 [Time Travel Debugging - JavaScript Automation](time-travel-debugging-javascript-automation.md)
 
-ms.localizationpriority: medium
 ---
 
 

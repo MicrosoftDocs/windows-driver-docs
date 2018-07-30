@@ -355,7 +355,6 @@ For information about using debugger objects with JavaScript, see [Native Debugg
 
 [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md) 
 
-ms.localizationpriority: medium
 ---
  
 

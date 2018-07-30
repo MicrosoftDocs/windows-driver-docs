@@ -110,7 +110,6 @@ MyDog     : {Age = 8 years. Weight = 30 pounds.} [Type: CDog]
 [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md) 
 
  
-ms.localizationpriority: medium
 ---
  
 
