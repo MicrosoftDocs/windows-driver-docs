@@ -14,6 +14,7 @@ api_name:
 - wmitrace.eventlogdump
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wmitrace.eventlogdump

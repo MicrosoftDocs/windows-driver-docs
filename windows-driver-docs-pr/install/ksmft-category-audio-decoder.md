@@ -11,6 +11,7 @@ api_location:
 - Ks.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # KSMFT_CATEGORY_AUDIO_DECODER

@@ -14,6 +14,7 @@ api_name:
 - ks.eval
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ks.eval

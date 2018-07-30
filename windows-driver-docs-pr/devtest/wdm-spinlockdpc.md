@@ -3,7 +3,7 @@ title: SpinLockDpc rule (wdm)
 description: The SpinLockDpc rule specifies that calls to KeAcquireSpinLock or KeAcquireSpinLockRaiseToDpc and KeReleaseSpinLock must be made in strict alternation.
 ms.assetid: 24fa6db6-83b5-4586-8965-5dabdbc897d1
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - SpinLockDpc
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # SpinLockDpc rule (wdm)

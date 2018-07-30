@@ -2,6 +2,7 @@
 title: WMI Class Qualifier Definitions in Hbaapi.mof
 description: WMI Class Qualifier Definitions in Hbaapi.mof
 ms.assetid: 9db543f1-f6ad-4735-8ba0-21476aa229ba
+ms.localizationpriority: medium
 ---
 
 # WMI Class Qualifier Definitions in Hbaapi.mof

@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.assetid: eeb7dafd-fb44-4fb7-b5f0-314059ee0093
+ms.localizationpriority: medium
 ---
 
 # Plug and Play Minor IRPs

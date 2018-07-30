@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_GEN_MEDIA_DUPLEX_STATE Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_MEDIA\_DUPLEX\_STATE

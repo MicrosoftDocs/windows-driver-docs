@@ -14,6 +14,7 @@ api_name:
 - ks.pciaudio
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ks.pciaudio

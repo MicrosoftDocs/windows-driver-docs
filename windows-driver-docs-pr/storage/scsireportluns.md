@@ -12,6 +12,7 @@ api_location:
 - Hbaapi.dll
 api_type:
 - LibDef
+ms.localizationpriority: medium
 ---
 
 # ScsiReportLuns function

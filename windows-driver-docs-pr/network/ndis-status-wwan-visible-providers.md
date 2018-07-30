@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -NDIS_STATUS_WWAN_VISIBLE_PROVIDERS Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WWAN\_VISIBLE\_PROVIDERS

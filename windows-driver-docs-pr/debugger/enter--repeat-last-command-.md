@@ -14,6 +14,7 @@ api_name:
 - ENTER (Repeat Last Command)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ENTER (Repeat Last Command)

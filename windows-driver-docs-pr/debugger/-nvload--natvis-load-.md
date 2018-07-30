@@ -14,6 +14,7 @@ api_name:
 - .nvload (NatVis Load)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .nvload (NatVis Load)

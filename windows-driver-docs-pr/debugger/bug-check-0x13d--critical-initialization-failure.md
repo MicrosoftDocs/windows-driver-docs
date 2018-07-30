@@ -14,6 +14,7 @@ api_name:
 - CRITICAL_INITIALIZATION_FAILURE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x13D: CRITICAL\_INITIALIZATION\_FAILURE

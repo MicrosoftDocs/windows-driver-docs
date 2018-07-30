@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - NDIS_STATUS_PM_WOL_PATTERN_REJECTED Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_PM\_WOL\_PATTERN\_REJECTED

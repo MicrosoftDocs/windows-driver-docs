@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WMV8\_A, WMV8\_B, WMV9\_A, WMV9\_B, and WMV9\_C

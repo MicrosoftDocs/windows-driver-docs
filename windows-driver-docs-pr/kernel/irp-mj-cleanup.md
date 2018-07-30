@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: 097f5f1d-3e88-4db0-bb79-db2267bdaf38
 keywords:
  - IRP_MJ_CLEANUP Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_CLEANUP

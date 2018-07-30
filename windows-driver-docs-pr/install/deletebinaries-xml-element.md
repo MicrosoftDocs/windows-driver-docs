@@ -9,6 +9,7 @@ api_name:
 - deleteBinaries XML Element
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # deleteBinaries XML Element

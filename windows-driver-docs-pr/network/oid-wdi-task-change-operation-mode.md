@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - OID_WDI_TASK_CHANGE_OPERATION_MODE Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_TASK\_CHANGE\_OPERATION\_MODE

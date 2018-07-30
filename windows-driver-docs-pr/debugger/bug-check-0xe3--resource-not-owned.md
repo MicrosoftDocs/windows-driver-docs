@@ -14,6 +14,7 @@ api_name:
 - RESOURCE_NOT_OWNED
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xE3: RESOURCE\_NOT\_OWNED

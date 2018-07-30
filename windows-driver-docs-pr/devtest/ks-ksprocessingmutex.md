@@ -2,7 +2,7 @@
 title: KsProcessingMutex rule ()
 ms.assetid: AD73B241-7B08-4E48-94A1-B6BDE78590E6
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - KsProcessingMutex
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # KsProcessingMutex rule ()

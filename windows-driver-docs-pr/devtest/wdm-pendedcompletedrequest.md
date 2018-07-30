@@ -3,7 +3,7 @@ title: PendedCompletedRequest rule (wdm)
 description: The PendedCompletedRequest rule specifies that a driver's dispatch routine does not return STATUS\_PENDING on an IRP if the driver has called IoCompleteRequest on the incoming IRP.
 ms.assetid: 875409b0-b91c-44e6-8240-c5e656b70048
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - PendedCompletedRequest
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # PendedCompletedRequest rule (wdm)

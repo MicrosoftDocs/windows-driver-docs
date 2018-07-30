@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting Properties and Registry Values
@@ -60,7 +61,9 @@ After the preceding steps are completed successfully, DeviceInterfaceKey returns
 ## <span id="3._set_properties"></span><span id="3._SET_PROPERTIES"></span>3. Set properties
 
 
-The audio driver calls IoSetDeviceInterfacePropertyData to set properties. The audio driver sets the parameters to IoSetDeviceInterfacePropertyData as follows: The SymbolicLinkName is the string returned from IoRegisterDeviceInterface. The remaining parameters depend on the specific property being set.
+The audio driver calls IoSetDeviceInterfacePropertyData to set properties. The audio driver sets the parameters to IoSetDeviceInterfacePropertyData as follows: 
+- The SymbolicLinkName is the string returned from IoRegisterDeviceInterface. 
+- The remaining parameters depend on the specific property being set.
 
 ## <span id="related_topics"></span>Related topics
 [Related Design Guidelines](related-design-guidelines.md)  

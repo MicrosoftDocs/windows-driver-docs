@@ -6,6 +6,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 93AE5FDD-DD77-4F9C-B402-C650ACDD7641
+ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaElement Interface

@@ -14,6 +14,7 @@ api_name:
 - bd (Breakpoint Disable)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # bd (Breakpoint Disable)

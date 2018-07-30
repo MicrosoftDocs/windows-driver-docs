@@ -11,6 +11,7 @@ api_location:
 - MPIOwmi.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # MPIOMoveDevice function

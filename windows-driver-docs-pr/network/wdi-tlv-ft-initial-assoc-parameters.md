@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - WDI_TLV_FT_INITIAL_ASSOC_PARAMETERS Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_FT\_INITIAL\_ASSOC\_PARAMETERS

@@ -3,7 +3,7 @@ title: TargetRelationNeedsRef rule (wdm)
 description: The TargetRelationNeedsRef rule specifies that when processing a TargetDeviceRelation query, the driver's DispatchPnP routine calls one of the following functions to reference the child device's PDO ObReferenceObjectObReferenceObjectByHandleObReferenceObjectByPointer.
 ms.assetid: a341ff7a-1b36-4dfc-9e73-8268ed5b9a78
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - TargetRelationNeedsRef
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # TargetRelationNeedsRef rule (wdm)

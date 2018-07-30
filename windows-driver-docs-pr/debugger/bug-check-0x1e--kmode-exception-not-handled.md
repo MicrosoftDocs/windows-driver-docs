@@ -14,6 +14,7 @@ api_name:
 - KMODE_EXCEPTION_NOT_HANDLED
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1E: KMODE\_EXCEPTION\_NOT\_HANDLED

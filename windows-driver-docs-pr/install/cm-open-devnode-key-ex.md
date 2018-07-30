@@ -9,6 +9,7 @@ api_name:
 - CM_Open_DevNode_Key_Ex
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Open_DevNode_Key_Ex

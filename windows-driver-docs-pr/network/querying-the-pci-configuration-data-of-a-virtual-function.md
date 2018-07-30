@@ -2,6 +2,7 @@
 title: Querying the PCI Configuration Data of a Virtual Function
 description: Querying the PCI Configuration Data of a Virtual Function
 ms.assetid: F01A2557-C0B0-454B-9883-904EF2C6F937
+ms.localizationpriority: medium
 ---
 
 # Querying the PCI Configuration Data of a Virtual Function

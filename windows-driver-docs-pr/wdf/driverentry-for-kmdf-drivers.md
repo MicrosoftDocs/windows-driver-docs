@@ -7,6 +7,7 @@ topic_type:
 - apiref
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # DriverEntry for WDF Drivers routine

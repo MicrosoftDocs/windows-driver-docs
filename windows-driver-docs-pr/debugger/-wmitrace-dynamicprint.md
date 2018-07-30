@@ -14,6 +14,7 @@ api_name:
 - wmitrace.dynamicprint
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wmitrace.dynamicprint

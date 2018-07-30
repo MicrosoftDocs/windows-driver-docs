@@ -1,9 +1,9 @@
 ---
 title: IrqlKeReleaseSpinLock rule (wdm)
-description: The IrqlKeReleaseSpinLock rule specifies that the driver calls KeReleaseSpinLock only when it is executing at IRQL�  DISPATCH\_LEVEL.
+description: The IrqlKeReleaseSpinLock rule specifies that the driver calls KeReleaseSpinLock only when it is executing at IRQL�  DISPATCH\_LEVEL.
 ms.assetid: 4abc4010-c653-44ab-9eaa-621d0ed2f354
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - IrqlKeReleaseSpinLock
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IrqlKeReleaseSpinLock rule (wdm)

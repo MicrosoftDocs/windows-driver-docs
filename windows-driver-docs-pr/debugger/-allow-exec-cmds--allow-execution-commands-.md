@@ -14,6 +14,7 @@ api_name:
 - .allow_exec_cmds (Allow Execution Commands)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .allow\_exec\_cmds (Allow Execution Commands)

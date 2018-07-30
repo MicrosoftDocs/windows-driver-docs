@@ -3,7 +3,7 @@ title: EvtIoStopCancel rule (kmdf)
 description: The EvtIoStopCancel rule specifies that within the EvtIoStop callback function, the driver calls one of following methods for I/O requests that are not cancelable.
 ms.assetid: 579f25d3-3db5-4fec-bd5b-a09c41ff652c
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - EvtIoStopCancel
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # EvtIoStopCancel rule (kmdf)

@@ -11,6 +11,7 @@ api_location:
 - Batclass.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # GUID_DEVICE_BATTERY

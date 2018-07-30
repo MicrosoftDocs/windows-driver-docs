@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # <span id="taef.data-driven_testing_in_scripting_languages"></span>Data-driven Testing in Scripting Languages

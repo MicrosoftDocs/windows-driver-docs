@@ -14,6 +14,7 @@ api_name:
 - usbkd.usb2
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !usbkd.usb2

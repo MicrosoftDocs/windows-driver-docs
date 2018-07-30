@@ -9,6 +9,7 @@ api_name:
 - CM_Dup_Range_List
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Dup_Range_List

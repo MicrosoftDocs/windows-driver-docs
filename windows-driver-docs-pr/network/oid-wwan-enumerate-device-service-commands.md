@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_ENUMERATE\_DEVICE\_SERVICE\_COMMANDS

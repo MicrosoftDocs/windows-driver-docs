@@ -14,6 +14,7 @@ api_name:
 - .exepath (Set Executable Path)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .exepath (Set Executable Path)

@@ -3,7 +3,7 @@ title: MarkQueryRelations rule (wdm)
 description: The MarkQueryRelations rule specifies that the driver should pend the IRP\_MN\_QUERY\_DEVICE\_RELATIONS IRP.
 ms.assetid: A40EA428-D715-46E6-B11E-2F316647184E
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - MarkQueryRelations
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # MarkQueryRelations rule (wdm)

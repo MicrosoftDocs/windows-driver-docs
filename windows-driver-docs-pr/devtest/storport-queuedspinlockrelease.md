@@ -3,7 +3,7 @@ title: QueuedSpinLockRelease rule (storport)
 description: This rule verifies that the driver does not call KeReleaseInStackQueuedSpinLock without first acquiring the lock via KeAcquireInStackQueuedSpinLock.
 ms.assetid: F523D77B-F848-4128-9B6D-7D92E01C4632
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - QueuedSpinLockRelease
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # QueuedSpinLockRelease rule (storport)

@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: 2fdfd3b1-102d-4adb-af95-363201764bd5
 keywords:
  - IRP_MN_REGINFO_EX Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_REGINFO\_EX

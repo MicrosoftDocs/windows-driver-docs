@@ -10,6 +10,7 @@ ms.date: 08/21/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS_STATUS_WWAN_BASE_STATIONS_INFO

@@ -8,6 +8,7 @@ ms.date: 06/26/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device management namespace objects

@@ -11,6 +11,7 @@ api_location:
 - Ntddpar.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # GUID_DEVINTERFACE_PARCLASS

@@ -1,9 +1,9 @@
 ---
 title: IrqlIoApcLte rule (wdm)
-description: The IrqlIoApcLte rule specifies that the driver calls the following I/O manager routines only when it is executing at IRQL�  APC\_LEVEL IoDeleteDeviceIoGetInitialStackIoRaiseHardErrorIoRaiseInformationalHardError.
+description: The IrqlIoApcLte rule specifies that the driver calls the following I/O manager routines only when it is executing at IRQL�  APC\_LEVEL IoDeleteDeviceIoGetInitialStackIoRaiseHardErrorIoRaiseInformationalHardError.
 ms.assetid: 1f0b2b9c-f67c-4e34-b079-6a2769f62879
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - IrqlIoApcLte
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IrqlIoApcLte rule (wdm)

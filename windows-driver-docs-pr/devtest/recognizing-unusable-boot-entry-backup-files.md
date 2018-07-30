@@ -6,17 +6,14 @@ keywords:
 - NVRAM boot options WDK ,
 - EFI NVRAM boot options WDK ,
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Recognizing Unusable Boot Entry Backup Files
-
-
-## <span id="ddk_recognizing_unusable_boot_entry_backup_files_tools"></span><span id="DDK_RECOGNIZING_UNUSABLE_BOOT_ENTRY_BACKUP_FILES_TOOLS"></span>
-
 
 Unfortunately, boot entry backup copies are not always usable.
 
@@ -33,12 +30,3 @@ OsFilePath:       (null)
 ```
 
 In this case, you must recreate the boot entry by copying another boot entry from the operating system installation, and then changing the parameters.
-
- 
-
- 
-
-
-
-
-

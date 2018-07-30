@@ -3,7 +3,7 @@ title: KsDeviceMutex rule ()
 description: The KsDeviceMutex rule specifies that a kernel streaming miniport driver uses KsAcquireDevice and KsReleaseDevice in the correct sequence. That is, every call to KsAcquireDevice must have a corresponding call to KsReleaseDevice.
 ms.assetid: 6F69B273-6780-4A01-8266-2B056E4F2C84
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - KsDeviceMutex
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # KsDeviceMutex rule ()

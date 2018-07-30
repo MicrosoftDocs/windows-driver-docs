@@ -2,7 +2,7 @@
 title: IrqlIoPassive4 rule (wdm)
 ms.assetid: 2bdfa09d-0777-4eaf-85ff-d5accc0f31de
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - IrqlIoPassive4
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IrqlIoPassive4 rule (wdm)

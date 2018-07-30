@@ -13,6 +13,7 @@ keywords:
  - Winsock Kernel WDK networking, IOCTL operations
  - WSK WDK networking , operations
  - Winsock Kernel WDK networking, operations
+ms.localizationpriority: medium
 ---
 
 # WSK Socket IOCTL Operations

@@ -2,6 +2,7 @@
 title: Barcode scanner events
 description: Barcode scanner events
 ms.assetid: 'f0a7a525-8fea-4bce-a817-25c69cd47ddd'
+ms.localizationpriority: medium
 ---
 
 # Barcode scanner events

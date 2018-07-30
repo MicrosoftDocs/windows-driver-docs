@@ -14,6 +14,7 @@ api_name:
 - gbl
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !gbl

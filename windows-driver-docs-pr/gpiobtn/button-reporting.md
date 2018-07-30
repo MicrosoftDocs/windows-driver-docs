@@ -3,6 +3,7 @@ title: Button reporting
 author: windows-driver-content
 description: The in-box general-purpose I/O (GPIO) button driver reports to Windows, based on the interrupts that are received on the defined GPIO resources of the button array.
 ms.assetid: 7D96E1CB-3406-4D61-9D5C-65BC6BFD1FFA
+ms.localizationpriority: medium
 ---
 
 # Button reporting

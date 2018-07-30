@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: f43dc60e-de88-4af0-ad83-3ce3a414d880
 keywords:
  - IRP_MN_FILTER_RESOURCE_REQUIREMENTS Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_FILTER\_RESOURCE\_REQUIREMENTS

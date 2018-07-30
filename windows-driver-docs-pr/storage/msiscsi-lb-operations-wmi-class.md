@@ -2,6 +2,7 @@
 title: MSiSCSI\_LB\_Operations WMI Class
 description: MSiSCSI\_LB\_Operations WMI Class
 ms.assetid: 75c93040-52bf-4e9c-a503-a87f382ee1c9
+ms.localizationpriority: medium
 ---
 
 # MSiSCSI\_LB\_Operations WMI Class

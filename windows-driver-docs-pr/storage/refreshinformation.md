@@ -9,6 +9,7 @@ api_name:
 - RefreshInformation
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # RefreshInformation function

@@ -3,7 +3,7 @@ title: DebugBreakUsage rule (wdm)
 description: The DebugBreakUsage rule specifies that the driver must not call DbgBreakPoint or DbgBreakPointWithStatus. This rule only applies when you are building a non-debug version of the driver.
 ms.assetid: 1f634b7c-6939-41ea-8eed-5207f40e5476
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - DebugBreakUsage
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # DebugBreakUsage rule (wdm)

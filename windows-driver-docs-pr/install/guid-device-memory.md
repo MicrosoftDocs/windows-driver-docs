@@ -11,6 +11,7 @@ api_location:
 - Poclass.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # GUID_DEVICE_MEMORY

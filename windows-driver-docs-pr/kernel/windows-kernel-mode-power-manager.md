@@ -3,6 +3,7 @@ title: Windows Kernel-Mode Power Manager
 author: windows-driver-content
 description: Windows Kernel-Mode Power Manager
 ms.assetid: 2d39e43a-63a6-4474-a1ed-c24b4526a3f5
+ms.localizationpriority: medium
 ---
 
 # Windows Kernel-Mode Power Manager

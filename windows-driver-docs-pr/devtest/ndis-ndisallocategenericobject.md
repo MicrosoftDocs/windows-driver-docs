@@ -3,7 +3,7 @@ title: NdisAllocateGenericObject rule (ndis)
 description: The NdisAllocateGenericObject rule specifies that NdisAllocateGenericObject and NdisFreeGenericObject are called in alternate order. The ultimate goal is to make sure all generic objects are freed when MiniportHaltEx ends.
 ms.assetid: A247B43F-1958-4A57-AA60-37C995A96DF7
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - NdisAllocateGenericObject
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # NdisAllocateGenericObject rule (ndis)

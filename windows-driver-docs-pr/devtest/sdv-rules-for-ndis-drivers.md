@@ -3,10 +3,11 @@ title: Rules for NDIS Drivers
 description: Rules for NDIS Drivers
 ms.assetid: fd31b797-1175-4f65-8fa0-a50acd01f446
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Rules for NDIS Drivers

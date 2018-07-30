@@ -3,7 +3,7 @@ title: EvtIoResumeGetParam rule (kmdf)
 description: The EvtIoResumeGetParam rule specifies that WdfRequestGetParameters is not called within the EvtIoResumeGetParam callback function.
 ms.assetid: C06D967A-629A-44E5-BD68-00480BB0EE81
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - EvtIoResumeGetParam
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # EvtIoResumeGetParam rule (kmdf)

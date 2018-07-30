@@ -3,7 +3,7 @@ title: ReqNotCanceledLocal rule (kmdf)
 description: The ReqNotCanceledLocal rule specifies that if a request marked as cancelable is completed in a default I/O queue callback function, the WdfRequestUnmarkCancelable method must be called on the I/O request before completion.
 ms.assetid: 3cc3d517-6fb9-46b2-9d22-6bdbef442007
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - ReqNotCanceledLocal
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ReqNotCanceledLocal rule (kmdf)

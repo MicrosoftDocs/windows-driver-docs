@@ -2,6 +2,7 @@
 title: DSM\_QueryLBPolicy WMI Class
 description: DSM\_QueryLBPolicy WMI Class
 ms.assetid: b7fc0d38-feaa-46c5-bcde-fcd6c71b329b
+ms.localizationpriority: medium
 ---
 
 # DSM\_QueryLBPolicy WMI Class

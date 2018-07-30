@@ -14,6 +14,7 @@ api_name:
 - DRIVER_CORRUPTED_MMPOOL
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xD0: DRIVER\_CORRUPTED\_MMPOOL

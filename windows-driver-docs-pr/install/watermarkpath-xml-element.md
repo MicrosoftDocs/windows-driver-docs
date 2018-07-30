@@ -9,6 +9,7 @@ api_name:
 - watermarkPath XML Element
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # watermarkPath XML Element

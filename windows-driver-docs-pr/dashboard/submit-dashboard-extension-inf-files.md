@@ -5,6 +5,7 @@ ms.assetid:
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Working with Extension INFs in the Windows Hardware Dev Center Dashboard

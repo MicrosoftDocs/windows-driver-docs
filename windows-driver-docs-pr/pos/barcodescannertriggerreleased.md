@@ -2,6 +2,7 @@
 title: BarcodeScannerTriggerReleased
 description: BarcodeScannerTriggerReleased
 ms.assetid: '49b655c3-2652-4225-ba4c-5404da672b8e'
+ms.localizationpriority: medium
 ---
 
 # BarcodeScannerTriggerReleased

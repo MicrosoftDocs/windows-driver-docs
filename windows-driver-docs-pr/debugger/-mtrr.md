@@ -14,6 +14,7 @@ api_name:
 - mtrr
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !mtrr

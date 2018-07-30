@@ -2,6 +2,7 @@
 title: SECURITY\_FLAG\_QUALIFIERS
 description: SECURITY\_FLAG\_QUALIFIERS
 ms.assetid: d5b4c3a6-1e05-497a-a0a6-be7908e61fec
+ms.localizationpriority: medium
 ---
 
 # SECURITY\_FLAG\_QUALIFIERS

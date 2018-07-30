@@ -2,6 +2,7 @@
 title: MPIO\_TIMERS\_COUNTERS WMI Class
 description: MPIO\_TIMERS\_COUNTERS WMI Class
 ms.assetid: 386110f8-504c-4617-b8ae-557ea504d41d
+ms.localizationpriority: medium
 ---
 
 # MPIO\_TIMERS\_COUNTERS WMI Class

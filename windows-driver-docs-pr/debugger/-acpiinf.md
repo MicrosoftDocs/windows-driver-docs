@@ -14,6 +14,7 @@ api_name:
 - acpiinf
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !acpiinf

@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - WDI_TLV_WAKE_PACKET_EAPOL_REQUEST_ID_MESSAGE Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_WAKE\_PACKET\_EAPOL\_REQUEST\_ID\_MESSAGE

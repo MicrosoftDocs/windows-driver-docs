@@ -3,7 +3,7 @@ title: KsMarkPendingIrp rule ()
 description: The KsMarkPendingIrp rule specifies that a kernel-stream (KS) miniport driver should mark IRPs as pending when returning with STATUS\_PENDING from the following callback functions AVStrMiniFilterCloseAVStrMiniPinCloseAVStrMiniPinCreate.
 ms.assetid: 88612656-0068-41B8-9A0D-4DDC98AD2435
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - KsMarkPendingIrp
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # KsMarkPendingIrp rule ()

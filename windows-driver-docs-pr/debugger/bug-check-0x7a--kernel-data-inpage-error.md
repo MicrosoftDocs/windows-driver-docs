@@ -14,6 +14,7 @@ api_name:
 - KERNEL_DATA_INPAGE_ERROR
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x7A: KERNEL\_DATA\_INPAGE\_ERROR

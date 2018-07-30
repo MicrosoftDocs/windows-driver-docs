@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: 109819a8-3787-448d-a766-5d53dbcf55f4
 keywords:
  - IRP_MJ_CLOSE Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_CLOSE

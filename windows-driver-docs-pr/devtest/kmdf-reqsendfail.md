@@ -3,7 +3,7 @@ title: ReqSendFail rule (kmdf)
 description: The ReqSendFail rule specifies that a driver must set the correct completion status in cases in which the WdfRequestSend method might fail.
 ms.assetid: 324e0351-5879-4d10-a877-1da9b7424c4e
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - ReqSendFail
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ReqSendFail rule (kmdf)

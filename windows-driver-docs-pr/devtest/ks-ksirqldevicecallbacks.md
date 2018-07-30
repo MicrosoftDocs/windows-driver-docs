@@ -3,7 +3,7 @@ title: KsIrqlDeviceCallbacks rule ()
 description: The KsIrqlDeviceCallbacks rule specifies that a kernel-streaming (KS) miniport driver returns from a KS device callback function with the same IRQL it had when it was called.
 ms.assetid: 8C73EE2F-AA5B-478B-925A-C7DC4F6EFF6A
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - KsIrqlDeviceCallbacks
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # KsIrqlDeviceCallbacks rule ()

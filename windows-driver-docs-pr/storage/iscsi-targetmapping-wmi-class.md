@@ -2,6 +2,7 @@
 title: ISCSI\_TargetMapping WMI Class
 description: ISCSI\_TargetMapping WMI Class
 ms.assetid: b2c4634a-852b-471a-8764-025780e36c0f
+ms.localizationpriority: medium
 ---
 
 # ISCSI\_TargetMapping WMI Class

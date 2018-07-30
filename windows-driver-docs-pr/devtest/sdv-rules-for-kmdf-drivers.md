@@ -3,10 +3,11 @@ title: Rules for KMDF Drivers
 description: Rules for KMDF Drivers
 ms.assetid: 63ac4df5-b2dc-43da-abaa-49c5de036d79
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Rules for KMDF Drivers

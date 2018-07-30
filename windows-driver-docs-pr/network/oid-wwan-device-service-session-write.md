@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_WWAN_DEVICE_SERVICE_SESSION_WRITE Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_DEVICE\_SERVICE\_SESSION\_WRITE

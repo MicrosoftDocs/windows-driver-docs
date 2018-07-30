@@ -16,6 +16,7 @@ ms.date:
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # READ_AHEAD_PARAMETERS structure

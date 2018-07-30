@@ -16,6 +16,7 @@ api_name:
 - Iasphelp.Open
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # Iasphelp::Open method

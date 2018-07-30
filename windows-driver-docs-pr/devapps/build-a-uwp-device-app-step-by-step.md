@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # <span id="devapps.build_a_windows_store_device_app_step-by-step"></span>Build a UWP device app step-by-step

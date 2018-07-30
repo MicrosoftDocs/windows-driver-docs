@@ -3,7 +3,7 @@ title: IoAllocateComplete rule
 description: The IoAllocateComplete rule specifies that a driver should not call IoCompleteRequest if the IRP was created with IoAllocateIrp.
 ms.assetid: BCF1F1DF-3586-46D0-85B5-1F5A2DEE18D1
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - IoAllocateComplete
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IoAllocateComplete rule

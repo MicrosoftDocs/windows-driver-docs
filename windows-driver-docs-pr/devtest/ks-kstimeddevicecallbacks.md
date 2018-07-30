@@ -3,7 +3,7 @@ title: KsTimedDeviceCallbacks rule ()
 description: The KsTimedDeviceCallbacks rule specifies that a kernel-streaming (KS) miniport driver returns from a device callback function within 500 ms.
 ms.assetid: 05393761-9018-4DAA-B8B5-EFEBBCDAB955
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - KsTimedDeviceCallbacks
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # KsTimedDeviceCallbacks rule ()

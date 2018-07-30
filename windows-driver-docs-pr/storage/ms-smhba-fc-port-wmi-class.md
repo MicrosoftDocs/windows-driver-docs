@@ -2,6 +2,7 @@
 title: MS\_SMHBA\_FC\_Port WMI Class
 description: MS\_SMHBA\_FC\_Port WMI Class
 ms.assetid: 671f14e4-c591-4df2-85a1-2db3f802ef5e
+ms.localizationpriority: medium
 ---
 
 # MS\_SMHBA\_FC\_Port WMI Class

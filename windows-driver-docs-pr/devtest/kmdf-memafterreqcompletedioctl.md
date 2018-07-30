@@ -3,7 +3,7 @@ title: MemAfterReqCompletedIoctl rule (kmdf)
 description: The MemAfterReqCompletedIoctl rule specifies that within the EvtIoDeviceControl callback function, the framework memory object cannot be accessed after the I/O request is completed.
 ms.assetid: c737fb04-f517-41dd-b5b9-474f1dfb7c36
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - MemAfterReqCompletedIoctl
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # MemAfterReqCompletedIoctl rule (kmdf)

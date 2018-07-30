@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WinUSB Device
@@ -16,10 +17,13 @@ In this topic, you will learn about how a *WinUSB device* is recognized in Windo
 
 The information in this topic applies to you if you are an OEM or independent hardware vendor (IHV) developing a device for which you want to use Winusb.sys as the function driver and want to load the driver automatically without having to provide a custom INF.
 
--   [What is a WinUSB device](#what-is-a-winusb-device)
--   [WinUSB device installation by using the in-box Winusb.inf](#winusb-device-installation-by-using-the-in-box-winusb-inf)
--   [How to change the device description for a WinUSB device](#how-to-change-the-device-description-for-a-winusb-device)
--   [How to configure a WinUSB device](#how-to-configure-a-winusb-device)
+- [WinUSB Device](#winusb-device)
+  - [What is a WinUSB device](#what-is-a-winusb-device)
+  - [WinUSB device installation by using the in-box Winusb.inf](#winusb-device-installation-by-using-the-in-box-winusbinf)
+    - [About using the USBDevice class:](#about-using-the-usbdevice-class)
+  - [How to change the device description for a WinUSB device](#how-to-change-the-device-description-for-a-winusb-device)
+  - [How to configure a WinUSB device](#how-to-configure-a-winusb-device)
+  - [Related topics](#related-topics)
 
 ## What is a WinUSB device
 
@@ -102,7 +106,7 @@ The new class property is not supported on earlier versions of Windows. To have 
 ## How to configure a WinUSB device
 
 
-To identify a USB device as a WinUSB device, the device firmware must have these [Microsoft OS Descriptors](http://go.microsoft.com/fwlink/p/?linkid=224878).
+To identify a USB device as a WinUSB device, the device firmware must have Microsoft OS Descriptors. For information about the descriptors, see the specifications described here: [Microsoft OS Descriptors](microsoft-defined-usb-descriptors.md).
 
 **Supporting extended feature descriptors**
 
@@ -110,7 +114,7 @@ In order for the USB driver stack to know that the device supports extended feat
 
 The retrieved string descriptor has a **bMS\_VendorCode** field value. The value indicates the vendor code that the USB driver stack must use to retrieve the extended feature descriptor.
 
-For information about how to define an OS string descriptor, see "The OS String Descriptor" in the [Microsoft OS Descriptor Specification](http://go.microsoft.com/fwlink/p/?linkid=224878).
+For information about how to define an OS string descriptor, see "The OS String Descriptor" in the specifications described here: [Microsoft OS Descriptors](microsoft-defined-usb-descriptors.md).
 
 **Setting the compatible ID**
 
@@ -175,7 +179,7 @@ This image shows sample settings for a WinUSB device.
 
 ![registry settings for winusb device](images/winusb-device-reg.png)
 
-For additional examples, see the [Microsoft OS Descriptor Specification](http://go.microsoft.com/fwlink/p/?linkid=224878).
+For additional examples, see the specifications on [Microsoft OS Descriptors](microsoft-defined-usb-descriptors.md).
 
 ## Related topics
 [Microsoft-Defined USB Descriptors](microsoft-defined-usb-descriptors.md)  

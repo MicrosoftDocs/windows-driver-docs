@@ -3,7 +3,7 @@ title: NdisAllocateNetBuffer rule (ndis)
 description: The NdisAllocateNetBuffer rule specifies that NdisAllocateNetBuffer and NdisFreeNetBuffer are called in alternate order. The ultimate goal is to make sure all instances of NET\_BUFFER are freed when MiniportHaltEx ends.
 ms.assetid: 218708DA-ADDF-4E59-900A-4F8B5CBF00B7
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - NdisAllocateNetBuffer
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # NdisAllocateNetBuffer rule (ndis)

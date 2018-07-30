@@ -14,6 +14,7 @@ api_name:
 - wdfkd.wdflogsave
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdflogsave

@@ -7,10 +7,11 @@ keywords:
 - Memory Pool Monitor WDK , examples
 - examples WDK PoolMon
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 07/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # PoolMon Examples
@@ -222,9 +223,6 @@ This example suggests a procedure for using PoolMon to detect a memory leak.
 
 8.  Examine the allocations that were increasing, and determine whether the bytes are now freed. The likely cause is allocations that have still not been freed or have continued to increase in size.
 
-```
-
-```
 
 ### <span id="ddk_example_4_examine_a_pool_memory_leak_tools"></span><span id="DDK_EXAMPLE_4_EXAMINE_A_POOL_MEMORY_LEAK_TOOLS"></span>Example 4: Examine a Pool Memory Leak
 

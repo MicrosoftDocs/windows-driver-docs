@@ -14,6 +14,7 @@ api_name:
 - ta (Trace to Address)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ta (Trace to Address)

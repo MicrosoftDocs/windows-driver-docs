@@ -9,6 +9,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: f261446b-3f9e-4fcc-a9a9-d1b7307a18e8
+ms.localizationpriority: medium
 ---
 
 # ISNMP Methods

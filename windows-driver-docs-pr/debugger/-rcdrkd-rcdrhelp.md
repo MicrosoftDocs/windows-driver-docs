@@ -14,6 +14,7 @@ api_name:
 - rcdrkd.rcdrhelp
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !rcdrkd.rcdrhelp

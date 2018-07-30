@@ -13,6 +13,7 @@ api_name:
 - IPrinterBidiSchemaResponses.AddInt32
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaResponses::AddInt32 method

@@ -14,6 +14,7 @@ api_name:
 - usbkd.usbdstatus
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !usbkd.usbdstatus

@@ -14,6 +14,7 @@ api_name:
 - ndiskd.ndisevent
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.ndisevent

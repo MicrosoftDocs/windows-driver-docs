@@ -14,6 +14,7 @@ api_name:
 - wudfext.wudfdriverinfo
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wudfext.wudfdriverinfo

@@ -3,6 +3,7 @@ title: Windows Kernel-Mode Safe String Library
 author: windows-driver-content
 description: Windows Kernel-Mode Safe String Library
 ms.assetid: a54cd20c-2c2d-462d-b9fc-112e99562e52
+ms.localizationpriority: medium
 ---
 
 # Windows Kernel-Mode Safe String Library
@@ -10,7 +11,7 @@ ms.assetid: a54cd20c-2c2d-462d-b9fc-112e99562e52
 
 One of the major problems in software security is related to the vulnerability of working with strings. To provide greater security, Windows provides a safe string library.
 
-Safe string library routines are prefixed with the letters "**Rtl**"; for a list of all safe string library routines for the kernel, see [Safe String Library Routines](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/_kernel/#run-time-library-rtl-routines).
+Safe string library routines are prefixed with the letters "**Rtl**"; for a list of all safe string library routines for the kernel, see [Safe String Functions for Unicode and ANSI Characters](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/_kernel/#safe-string-functions-for-unicode-and-ansi-characters) and [Safe String Functions for UNICODE_STRING Structures](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/_kernel/#safe-string-functions-for-unicodestring-structures).
 
 For more information about using safe strings, see [Using Safe String Functions](using-safe-string-functions.md).
 

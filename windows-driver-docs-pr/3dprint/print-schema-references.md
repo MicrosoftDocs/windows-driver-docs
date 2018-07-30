@@ -4,10 +4,11 @@ author: windows-driver-content
 description: The following list provides references and links to industry standards, specifications, and technical articles.
 ms.assetid: D25FB8AF-D227-4940-8740-D1AFF9BE3AC3
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 06/28/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Print schema references
@@ -35,9 +36,9 @@ Institute of Electrical and Electronics Engineers, Inc (IEEE). "IEEE Standard fo
 
 **Print Schema Specification**
 
-Microsoft Corporation. "Print Schema Specification." 2006.
+Microsoft Corporation. "Print Schema Specification."
 
-[http://www.microsoft.com/xps](http://go.microsoft.com/fwlink/p/?LinkId=780792)
+[Print Schema Specification](http://download.microsoft.com/download/d/e/c/deca6e6b-3e81-48e7-b7ef-6d92a547d03c/print-schema-spec-2-0.zip) download
 
 **RFC 2119**
 

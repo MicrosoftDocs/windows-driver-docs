@@ -14,6 +14,7 @@ api_name:
 - .detach (Detach from Process)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .detach (Detach from Process)

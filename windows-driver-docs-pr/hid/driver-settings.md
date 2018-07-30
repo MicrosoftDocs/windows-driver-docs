@@ -3,6 +3,7 @@ title: Driver Settings
 author: windows-driver-content
 description: Driver Settings
 ms.assetid: 55ea5606-39a9-4962-989f-29900d5ccac8
+ms.localizationpriority: medium
 ---
 
 # Driver Settings

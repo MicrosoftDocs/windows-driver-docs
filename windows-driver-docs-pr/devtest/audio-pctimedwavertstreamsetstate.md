@@ -3,7 +3,7 @@ title: PcTimedWaveRtStreamSetState rule (audio)
 description: The PcTimedWaveRtStreamSetState rule specifies that a ProtCls miniport driver makes state transitions through IMiniportWaveRTStream SetState within the required time.
 ms.assetid: D49869E0-9108-460B-8FA3-4FD99C3EA81E
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - PcTimedWaveRtStreamSetState
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # PcTimedWaveRtStreamSetState rule (audio)

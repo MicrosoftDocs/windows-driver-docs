@@ -2,7 +2,7 @@
 title: ForwardedAtBadIrql rule (wdm)
 ms.assetid: d2d91fb9-330b-420b-8409-509cfb47fe07
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - ForwardedAtBadIrql
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ForwardedAtBadIrql rule (wdm)

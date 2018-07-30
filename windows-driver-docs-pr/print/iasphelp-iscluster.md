@@ -16,6 +16,7 @@ api_name:
 - Iasphelp.get_IsCluster
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_IsCluster method

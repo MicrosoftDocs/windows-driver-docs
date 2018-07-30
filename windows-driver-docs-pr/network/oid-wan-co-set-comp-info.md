@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_WAN_CO_SET_COMP_INFO Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_WAN\_CO\_SET\_COMP\_INFO

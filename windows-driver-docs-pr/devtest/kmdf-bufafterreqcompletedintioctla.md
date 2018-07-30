@@ -3,7 +3,7 @@ title: BufAfterReqCompletedIntIoctlA rule (kmdf)
 description: The BufAfterReqCompletedIntIoctlA rule verifies that after a request is completed, its buffer cannot be accessed (inside EvtIoInternalDeviceControl callback only).
 ms.assetid: 3635DB6D-00C7-44DD-B05A-7EAA16B18937
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - BufAfterReqCompletedIntIoctlA
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # BufAfterReqCompletedIntIoctlA rule (kmdf)

@@ -14,6 +14,7 @@ api_name:
 - rtlavl
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !rtlavl

@@ -14,6 +14,7 @@ api_name:
 - wdfkd.wdfmemory
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfmemory

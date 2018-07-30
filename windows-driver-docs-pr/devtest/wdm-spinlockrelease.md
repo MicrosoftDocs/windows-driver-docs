@@ -3,7 +3,7 @@ title: SpinlockRelease rule (wdm)
 description: The SpinlockRelease rule specifies that calls to KeReleaseSpinLock are made in strict alternation with KeAcquireSpinLock and KeAcquireSpinLockRaiseToDpc.
 ms.assetid: e001a818-03d4-4aa9-995a-6b99e1a7cee3
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - SpinlockRelease
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # SpinlockRelease rule (wdm)

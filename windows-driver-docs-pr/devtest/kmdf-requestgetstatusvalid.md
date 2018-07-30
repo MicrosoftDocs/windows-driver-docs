@@ -3,7 +3,7 @@ title: RequestGetStatusValid rule (kmdf)
 description: The RequestGetStatusValid rule that specifies that WdfRequestGetStatus should be called for a request in one of the following situations When WdfRequestSend returns failure.When the request has been sent with WDF\_REQUEST\_SEND\_OPTION\_SYNCHRONOUS.
 ms.assetid: 9EFC41AB-E5BD-4DE8-8936-E71EA64E5430
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - RequestGetStatusValid
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # RequestGetStatusValid rule (kmdf)

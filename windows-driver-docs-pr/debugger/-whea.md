@@ -14,6 +14,7 @@ api_name:
 - whea
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !whea

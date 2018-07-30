@@ -14,6 +14,7 @@ api_name:
 - wdfkd.wdfhelp
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfhelp

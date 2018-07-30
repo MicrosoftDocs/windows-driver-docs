@@ -10,6 +10,7 @@ ms.date: 11/22/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # GUID_NDIS_ENUMERATE_ADAPTERS_EX

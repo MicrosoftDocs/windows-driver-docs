@@ -3,7 +3,7 @@ title: NdisOidComplete rule (ndis)
 description: The NdisOidComplete rule verifies that an NDIS miniport driver completes an OID correctly.
 ms.assetid: 344DECA8-F72A-4962-80D0-DDC648A4FC21
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - NdisOidComplete
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # NdisOidComplete rule (ndis)

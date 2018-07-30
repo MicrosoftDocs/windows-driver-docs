@@ -9,6 +9,7 @@ api_name:
 - DIF_UPDATEDRIVER_UI
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # DIF_UPDATEDRIVER_UI

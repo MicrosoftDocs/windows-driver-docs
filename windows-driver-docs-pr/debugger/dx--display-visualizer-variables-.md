@@ -14,6 +14,7 @@ api_name:
 - dx (Display Debugger Object Model Expression)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # dx (Display Debugger Object Model Expression)

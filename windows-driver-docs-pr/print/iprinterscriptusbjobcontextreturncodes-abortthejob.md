@@ -13,6 +13,7 @@ api_name:
 - IPrinterScriptUsbJobContextReturnCodes.AbortTheJob
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbJobContextReturnCodes::AbortTheJob method

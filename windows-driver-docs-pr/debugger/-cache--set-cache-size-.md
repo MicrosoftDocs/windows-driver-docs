@@ -14,6 +14,7 @@ api_name:
 - .cache (Set Cache Size)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .cache (Set Cache Size)

@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # General Syntax Rules for INF Files
@@ -100,6 +101,14 @@ The following syntax rules govern the required and optional contents of INF file
         CopyFiles = SomeDirectory\\
         ,SomeFile
         ```
+
+    -   The following syntax is valid and is equivalent to `CopyFiles = "SomeDirectory\",SomeFile ; comment`.
+
+        ```
+        CopyFiles = "SomeDirectory\"\ ; comment 
+        ,SomeFile
+        ```
+        Because text after a semicolon is ignored, `CopyFiles = "SomeDirectory\" ; comment ,SomeFile` does not work.
 
 -   Comments begin with a semicolon (**;**) character. When parsing and interpreting an INF file, the system assumes that the following have no relevance to the installation process:
     -   Any characters following a semicolon on the same line, unless the semicolon appears within a **"***quoted string***"** or **%***strkey***%** token

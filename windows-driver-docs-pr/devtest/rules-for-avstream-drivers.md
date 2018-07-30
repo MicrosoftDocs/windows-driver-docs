@@ -3,10 +3,11 @@ title: Rules for AVStream Drivers
 description: The DDI compliance rules for AVStream miniport drivers verify the DDI interface protocols between the kernel-streaming driver (ks.sys) and its miniport drivers.
 ms.assetid: 0A104ADF-8607-4708-A0E3-1697F55B0CF5
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Rules for AVStream Drivers

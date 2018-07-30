@@ -9,6 +9,7 @@ api_name:
 - DIF_PROPERTIES
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # DIF_PROPERTIES

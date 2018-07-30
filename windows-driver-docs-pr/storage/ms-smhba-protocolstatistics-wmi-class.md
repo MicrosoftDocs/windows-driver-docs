@@ -2,6 +2,7 @@
 title: MS\_SMHBA\_PROTOCOLSTATISTICS WMI Class
 description: MS\_SMHBA\_PROTOCOLSTATISTICS WMI Class
 ms.assetid: 718ae583-254d-4807-b8e2-5eb39017c097
+ms.localizationpriority: medium
 ---
 
 # MS\_SMHBA\_PROTOCOLSTATISTICS WMI Class

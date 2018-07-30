@@ -3,7 +3,7 @@ title: EvtIoStopResume rule (kmdf)
 description: The EvtIoStopResume rule specifies that if a driver registers a EvtIoStop callback function and then calls WdfRequestStopAcknowledge with the Requeue parameter equal to FALSE, the driver must register a EvtIoResume callback function.
 ms.assetid: 52bcaf8a-545c-4607-89c3-d4474bd50376
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - EvtIoStopResume
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # EvtIoStopResume rule (kmdf)
