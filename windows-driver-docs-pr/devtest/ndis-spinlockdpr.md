@@ -14,6 +14,7 @@ api_name:
 - SpinLockDpr
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # SpinLockDpr rule (ndis)

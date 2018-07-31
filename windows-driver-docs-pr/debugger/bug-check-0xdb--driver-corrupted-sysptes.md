@@ -14,6 +14,7 @@ api_name:
 - DRIVER_CORRUPTED_SYSPTES
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xDB: DRIVER\_CORRUPTED\_SYSPTES

@@ -14,6 +14,7 @@ api_name:
 - UsbDeviceCreateFail
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # UsbDeviceCreateFail rule (kmdf)

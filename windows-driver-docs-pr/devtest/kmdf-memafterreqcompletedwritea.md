@@ -14,6 +14,7 @@ api_name:
 - MemAfterReqCompletedWriteA
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # MemAfterReqCompletedWriteA rule (kmdf)

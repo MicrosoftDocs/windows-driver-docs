@@ -14,6 +14,7 @@ api_name:
 - ndiskd.ifstacktable
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.ifstacktable

@@ -14,6 +14,7 @@ api_name:
 - NdisAllocateMemoryWithTagPriority
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # NdisAllocateMemoryWithTagPriority rule (ndis)

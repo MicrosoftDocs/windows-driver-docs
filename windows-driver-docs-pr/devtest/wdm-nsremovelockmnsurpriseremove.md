@@ -14,6 +14,7 @@ api_name:
 - NsRemoveLockMnSurpriseRemove
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # NsRemoveLockMnSurpriseRemove rule (wdm)

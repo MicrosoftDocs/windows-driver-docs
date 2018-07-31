@@ -16,6 +16,7 @@ api_name:
 - Iasphelp.get_AspPage
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_AspPage method

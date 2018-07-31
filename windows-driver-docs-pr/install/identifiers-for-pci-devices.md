@@ -14,6 +14,7 @@ ms.date: 05/29/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Identifiers for PCI Devices

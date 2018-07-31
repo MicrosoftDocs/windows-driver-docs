@@ -14,6 +14,7 @@ api_name:
 - WlanTimedLinkQuality
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # WlanTimedLinkQuality rule (ndis)

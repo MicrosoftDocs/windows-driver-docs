@@ -14,6 +14,7 @@ api_name:
 - storagekd.storlogirp
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !storagekd.storlogirp

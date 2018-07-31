@@ -14,6 +14,7 @@ api_name:
 - ndiskd.ndiskdversion
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.ndiskdversion

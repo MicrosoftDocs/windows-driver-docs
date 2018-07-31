@@ -14,6 +14,7 @@ api_name:
 - DRIVER_VERIFIER_DMA_VIOLATION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xE6: DRIVER\_VERIFIER\_DMA\_VIOLATION

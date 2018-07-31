@@ -2,6 +2,7 @@
 title: MSiSCSI\_MMIPSECStats WMI Class
 description: MSiSCSI\_MMIPSECStats WMI Class
 ms.assetid: fda67ca5-58b6-4338-a7c2-b1058bd11a57
+ms.localizationpriority: medium
 ---
 
 # MSiSCSI\_MMIPSECStats WMI Class

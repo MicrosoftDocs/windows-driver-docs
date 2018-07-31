@@ -14,6 +14,7 @@ api_name:
 - gpiokd.pinisrvec
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !gpiokd.pinisrvec

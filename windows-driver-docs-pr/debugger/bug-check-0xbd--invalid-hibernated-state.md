@@ -14,6 +14,7 @@ api_name:
 - INVALID_HIBERNATED_STATE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xBD: INVALID\_HIBERNATED\_STATE

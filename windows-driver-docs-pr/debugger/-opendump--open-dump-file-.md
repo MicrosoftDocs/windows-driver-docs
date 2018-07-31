@@ -14,6 +14,7 @@ api_name:
 - .opendump (Open Dump File)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .opendump (Open Dump File)

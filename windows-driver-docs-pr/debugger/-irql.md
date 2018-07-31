@@ -14,6 +14,7 @@ api_name:
 - irql
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !irql

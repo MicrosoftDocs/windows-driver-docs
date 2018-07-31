@@ -14,6 +14,7 @@ api_name:
 - Analyze a Running Process
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Analyze a Running Process

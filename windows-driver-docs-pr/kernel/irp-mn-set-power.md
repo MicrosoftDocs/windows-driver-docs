@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: 1294183a-bd0b-4ead-bd64-669d5b3725ce
 keywords:
  - IRP_MN_SET_POWER Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_SET\_POWER

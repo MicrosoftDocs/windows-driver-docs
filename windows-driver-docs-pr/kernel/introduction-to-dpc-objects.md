@@ -3,6 +3,7 @@ title: Introduction to DPC Objects
 author: windows-driver-content
 description: Introduction to DPC Objects
 ms.assetid: ae8758f5-0e23-4db2-9eac-aab31d98247b
+ms.localizationpriority: medium
 ---
 
 # Introduction to DPC Objects

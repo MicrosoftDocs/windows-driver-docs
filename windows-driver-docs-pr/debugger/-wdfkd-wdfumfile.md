@@ -14,6 +14,7 @@ api_name:
 - wdfkd.wdfumfile
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfumfile

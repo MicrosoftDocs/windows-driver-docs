@@ -14,6 +14,7 @@ api_name:
 - KsStreamPointerClone
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # KsStreamPointerClone rule ()

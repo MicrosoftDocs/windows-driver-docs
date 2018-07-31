@@ -9,6 +9,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 49b9705f-ba7c-4239-823b-7d738f4318b9
+ms.localizationpriority: medium
 ---
 
 # COM Interfaces for Printer Web Pages

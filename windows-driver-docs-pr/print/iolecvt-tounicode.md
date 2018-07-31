@@ -16,6 +16,7 @@ api_name:
 - IOleCvt.ToUnicode
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # IOleCvt::ToUnicode method

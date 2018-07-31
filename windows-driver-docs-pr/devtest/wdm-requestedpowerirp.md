@@ -14,6 +14,7 @@ api_name:
 - RequestedPowerIrp
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # RequestedPowerIrp rule (wdm)

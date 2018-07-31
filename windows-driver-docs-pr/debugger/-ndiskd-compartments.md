@@ -14,6 +14,7 @@ api_name:
 - ndiskd.compartments
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.compartments

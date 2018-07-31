@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Getting Started
@@ -17,7 +18,7 @@ In this section:
 
 [Introduction to the Sensors and Location Platform in Windows](introduction-to-the-sensor-and-location-platform-in-windows.md)
 
-[For More Information](for-more-information.md)
+
 
  
 

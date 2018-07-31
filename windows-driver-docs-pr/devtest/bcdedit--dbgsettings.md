@@ -14,6 +14,7 @@ api_name:
 - BCDEdit /dbgsettings
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # BCDEdit /dbgsettings

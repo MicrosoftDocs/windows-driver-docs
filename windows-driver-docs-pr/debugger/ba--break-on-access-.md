@@ -14,6 +14,7 @@ api_name:
 - ba (Break on Access)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ba (Break on Access)

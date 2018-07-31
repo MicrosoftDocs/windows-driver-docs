@@ -14,6 +14,7 @@ api_name:
 - LowerDriverReturn
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # LowerDriverReturn rule (wdm)

@@ -14,6 +14,7 @@ api_name:
 - RemoveLockForwardWrite
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # RemoveLockForwardWrite rule (wdm)

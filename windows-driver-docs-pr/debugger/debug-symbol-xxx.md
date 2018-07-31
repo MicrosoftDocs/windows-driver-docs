@@ -20,6 +20,7 @@ api_location:
 - DbgEng.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # DEBUG\_SYMBOL\_XXX

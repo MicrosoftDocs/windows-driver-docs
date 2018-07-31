@@ -14,6 +14,7 @@ api_name:
 - IrpProcessingComplete
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IrpProcessingComplete rule (wdm)

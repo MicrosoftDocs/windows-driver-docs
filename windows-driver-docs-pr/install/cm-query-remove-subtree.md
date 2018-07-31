@@ -9,6 +9,7 @@ api_name:
 - CM_Query_Remove_SubTree
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Query_Remove_SubTree

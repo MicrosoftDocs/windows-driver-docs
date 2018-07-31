@@ -14,6 +14,7 @@ api_name:
 - EvtIoStopGetParam
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # EvtIoStopGetParam rule (kmdf)

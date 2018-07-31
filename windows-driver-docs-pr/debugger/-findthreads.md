@@ -14,6 +14,7 @@ api_name:
 - findthreads
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !findthreads

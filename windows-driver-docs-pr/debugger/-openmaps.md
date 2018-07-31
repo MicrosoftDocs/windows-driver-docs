@@ -14,6 +14,7 @@ api_name:
 - openmaps
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !openmaps

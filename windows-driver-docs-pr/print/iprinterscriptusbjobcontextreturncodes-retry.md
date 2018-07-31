@@ -13,6 +13,7 @@ api_name:
 - IPrinterScriptUsbJobContextReturnCodes.Retry
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbJobContextReturnCodes::Retry method

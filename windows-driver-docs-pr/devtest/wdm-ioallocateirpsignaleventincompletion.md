@@ -14,6 +14,7 @@ api_name:
 - IoAllocateIrpSignalEventInCompletion
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IoAllocateIrpSignalEventInCompletion rule

@@ -14,6 +14,7 @@ api_name:
 - STATUS_IMAGE_CHECKSUM_MISMATCH
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xC0000221: STATUS\_IMAGE\_CHECKSUM\_MISMATCH

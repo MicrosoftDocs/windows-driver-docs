@@ -14,6 +14,7 @@ api_name:
 - NETWORK_BOOT_INITIALIZATION_FAILED
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xBB: NETWORK\_BOOT\_INITIALIZATION\_FAILED

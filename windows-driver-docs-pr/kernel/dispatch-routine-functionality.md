@@ -3,6 +3,7 @@ title: Dispatch Routine Functionality
 author: windows-driver-content
 description: Dispatch Routine Functionality
 ms.assetid: cfc191af-2b65-465b-972e-9617a8f7d8b7
+ms.localizationpriority: medium
 ---
 
 # Dispatch Routine Functionality

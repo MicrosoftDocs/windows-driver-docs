@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Driver interface methods
@@ -31,7 +32,7 @@ A sensor driver must support the sensor platform's device-driver interface (DDI)
 
 The **DDIOnClientConnect** and **DDIOnClientDisonnect** methods demonstrate how a driver handles the connection and disconnection of a client.
 
-```ManagedCPlusPlus
+```cpp
 DDIOnClientConnect(sensorID, clientID)
 {
     clientList[clientID] = clientEntry
@@ -65,7 +66,7 @@ DDIOnClientConnect(sensorID, clientID)
 }
 ```
 
-```ManagedCPlusPlus
+```cpp
 DDIOnClientDisconnect(sensorID, clientID)
 {
     delete clientList[clientID]
@@ -91,7 +92,7 @@ DDIOnClientDisconnect(sensorID, clientID)
         }
         // A client has NOT specified a CS[] if
         // - the CS[] has never been set by that client since having been connected
-        // If the client HAS specified a CS[], there is no way for the client to 
+        // If the client HAS specified a CS[], there is no way for the client to
         // instead revert to the default (as can be done with the CRI)
         if (no remaining client has specified CS[])
         {
@@ -115,7 +116,7 @@ DDIOnClientDisconnect(sensorID, clientID)
 
 The **DDIOnClientSubscribeToEvents** and **DDIOnClientUnsubscribeFromEvents** methods demonstrate how a driver handles event subscriptions.
 
-```ManagedCPlusPlus
+```cpp
 DDIOnClientSubscribeToEvents(sensorID, clientID)
 {
     clientList[clientID].clientSubscribed = true
@@ -135,7 +136,7 @@ DDIOnClientSubscribeToEvents(sensorID, clientID)
 }
 ```
 
-```ManagedCPlusPlus
+```cpp
 DDIOnClientUnsubscribeFromEvents(sensorID, clientID)
 {
     delete clientList[clientID]
@@ -158,7 +159,7 @@ DDIOnClientUnsubscribeFromEvents(sensorID, clientID)
 
 The **DDIOnSetCRI**, **DDIOnSetCS**, and **DDIOnSetLDA** methods demonstrate how a driver sets the current report interval, change sensitivity, and location data accuracy fields.
 
-```ManagedCPlusPlus
+```cpp
 /////////////////////////////////////////////////////////////////////////////////////////////
 //
 // DDIOnSetCRI
@@ -196,7 +197,7 @@ DDIOnSetCRI(sensorID, clientID, requestedCRI) //OnSetProperties
 }
 ```
 
-```ManagedCPlusPlus
+```cpp
 /////////////////////////////////////////////////////////////////////////////////////////////
 //
 // DDIOnSetCS
@@ -231,12 +232,12 @@ DDIOnSetCS(sensorID, clientID, requestedCS[]) //OnSetProperties
             flagCS = true
         }
     }
-    
+
     DriverUpdateCS(sensorID)
 }
 ```
 
-```ManagedCPlusPlus
+```cpp
 DDIOnSetLDA(sensorID, clientID, requestedLDA) //OnSetProperties, location only
 {
     clientList[clientID].clientLDA = requestedLDA
@@ -250,7 +251,7 @@ DDIOnSetLDA(sensorID, clientID, requestedLDA) //OnSetProperties, location only
 
 The **DDIOnGetProperties** and **DDIOnGetDatafields** methods demonstrate how a driver retrieves properties and datafields.
 
-```ManagedCPlusPlus
+```cpp
 DDIOnGetProperties(sensorID, CRI, CS[], LDA)
 {
     // the following properties can be set from the API
@@ -274,7 +275,7 @@ DDIOnGetProperties(sensorID, CRI, CS[], LDA)
 }
 ```
 
-```ManagedCPlusPlus
+```cpp
 DDIOnGetDatafields(sensorID, datafields[])
 {
     if (((false == flagCRI) && (0 == subscriberCount)) || (false == initalDataReceived))
@@ -311,7 +312,7 @@ DDIOnGetDatafields(sensorID, datafields[])
 
 The **DDIHandleAsyncDataEvent** method demonstrates how a driver supports asynchronous events.
 
-```ManagedCPlusPlus
+```cpp
 DDIHandleAsyncDataEvent(sensorID, buffer)
 {
     if (buffer.sensorDeviceState == sensorStateReady)
@@ -340,7 +341,7 @@ DDIHandleAsyncDataEvent(sensorID, buffer)
 ```
 
 ## Related topics
-[Sensor Driver Development Basics](sensor-driver-development-basics.md)  
+[Sensor Driver Development Basics](sensor-driver-development-basics.md)
 
 
 

@@ -9,6 +9,7 @@ api_name:
 - Config.DriverKey Section of a TxtSetup.oem File
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Config.DriverKey Section of a TxtSetup.oem File

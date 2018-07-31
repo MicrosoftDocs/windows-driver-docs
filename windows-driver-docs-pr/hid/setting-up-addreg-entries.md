@@ -4,6 +4,7 @@ author: windows-driver-content
 description: Setting Up AddReg Entries
 ms.assetid: 6b3e3eea-96d6-4f39-907a-80ef64ba61a9
 keywords: ["INF files WDK joysticks , AddReg entries", "AddReg entries WDK joysticks", "registry WDK joysticks"]
+ms.localizationpriority: medium
 ---
 
 # Setting Up AddReg Entries

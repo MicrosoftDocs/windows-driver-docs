@@ -6,6 +6,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: CDD092E5-588C-4FAF-9EAD-F8A74293890C
+ms.localizationpriority: medium
 ---
 
 # Bidi Interfaces and Enumerations

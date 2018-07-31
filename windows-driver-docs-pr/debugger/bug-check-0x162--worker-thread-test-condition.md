@@ -14,6 +14,7 @@ api_name:
 - WORKER_THREAD_TEST_CONDITION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x163: WORKER\_THREAD\_TEST\_CONDITION

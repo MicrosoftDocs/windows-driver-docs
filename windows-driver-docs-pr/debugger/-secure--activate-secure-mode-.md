@@ -14,6 +14,7 @@ api_name:
 - .secure (Activate Secure Mode)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .secure (Activate Secure Mode)

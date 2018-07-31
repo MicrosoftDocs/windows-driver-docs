@@ -14,6 +14,7 @@ api_name:
 - ndiskd.interfaces
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.interfaces

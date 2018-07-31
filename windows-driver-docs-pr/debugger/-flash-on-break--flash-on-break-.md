@@ -14,6 +14,7 @@ api_name:
 - .flash_on_break (Flash on Break)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .flash\_on\_break (Flash on Break)

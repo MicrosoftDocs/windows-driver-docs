@@ -14,6 +14,7 @@ api_name:
 - (Block Delimiter)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # { } (Block Delimiter)

@@ -15,6 +15,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Raising sensor events
@@ -28,7 +29,7 @@ The following code example demonstrates a class that raises data-updated and sta
 
 This class defines the following member variables.
 
-```
+```c
 // Smart pointer to the sensor class extension object.
 CComPtr<ISensorClassExtension> m_spSensorCXT;
 
@@ -49,7 +50,7 @@ DWORD m_dwInterval;
 
 The driver would define the following global variables used by this class.
 
-```
+```c
 // Sensor ID
 static const LPWSTR g_wszSensorID = L"My Sensor ID";
 
@@ -65,17 +66,17 @@ CSampleEvents calls back to CSensorDdi to retrieve the newest data by using the 
 
 The following code example contains the method implementations for the CSampleEvents event class.
 
-```
+```c
 CSampleEvents::CSampleEvents()
 {
     // Initialize member variables.
     m_hEventThread = NULL;
     m_hCloseThread = NULL;
-    m_dwInterval = g_dwDefaultInterval; 
+    m_dwInterval = g_dwDefaultInterval;
 };
 
 CSampleEvents::~CSampleEvents()
-{    
+{
 };
 
 // Initialize
@@ -109,7 +110,7 @@ HRESULT CSampleEvents::Initialize(ISensorClassExtension *pSensorCXT, CSensorDdi*
                      (LPVOID)this,                            // Thread proc argument
                      0,                                       // Starting state = running
                      NULL);                                   // No thread identifier
- 
+
         if(NULL == m_hEventThread)
         {
             hr = E_UNEXPECTED;
@@ -156,7 +157,7 @@ HRESULT CSampleEvents::PostStateEvent()
 
     if (SUCCEEDED(hr))
     {
-        SensorState st;  
+        SensorState st;
         hr = m_pDdi->GetSensorState(&st);
 
         if (SUCCEEDED(hr))
@@ -198,7 +199,7 @@ HRESULT CSampleEvents::PostDataEvent(IPortableDeviceValues* pValues)
 
 The following example code shows a thread procedure that uses the CSampleEvents class to raise data-updated events.
 
-```
+```c
 DWORD WINAPI CSampleEvents::_EventThreadProc(__in LPVOID pvData)
 {
 // Cast the argument to the correct type.
@@ -218,12 +219,12 @@ DWORD WINAPI CSampleEvents::_EventThreadProc(__in LPVOID pvData)
                 Trace(TRACE_LEVEL_ERROR, "%!FUNC!: NULL pointer in helper function.");
                 hr = E_POINTER;
             }
- 
+
             CComPtr<IPortableDeviceValues> spEventParams;
             CComPtr<IPortableDeviceKeyCollection> spKeys;
- 
+
             if(SUCCEEDED(hr))
-            {            
+            {
                 // Use the Ddi class to create the key collection.
                 hr = pThis->m_pDdi->OnGetSupportedDataFields(g_wszSensorID, &spKeys);
             }
@@ -238,7 +239,7 @@ DWORD WINAPI CSampleEvents::_EventThreadProc(__in LPVOID pvData)
                 // choose to track or use IWDFFile pointers in OnGetDataFields.
                 // This sample does not do so, therefore this is a safe thing to do
                 // in this code.
-                hr = pThis->m_pDdi->OnGetDataFields(spTemp, g_wszSensorID, spKeys, 
+                hr = pThis->m_pDdi->OnGetDataFields(spTemp, g_wszSensorID, spKeys,
                                                               &spEventParams);
             }
 
@@ -247,11 +248,11 @@ DWORD WINAPI CSampleEvents::_EventThreadProc(__in LPVOID pvData)
                 // Add the data event property key.
                 hr = spEventParams->SetGuidValue(SENSOR_EVENT_PARAMETER_EVENT_ID,
                                                                 SENSOR_EVENT_DATA_UPDATED);
- 
+
                 if(SUCCEEDED(hr))
                 {
                     // Post the event.
-                    hr = pThis->PostDataEvent(spEventParams);                
+                    hr = pThis->PostDataEvent(spEventParams);
                 }
             }
         }
@@ -264,7 +265,7 @@ DWORD WINAPI CSampleEvents::_EventThreadProc(__in LPVOID pvData)
 ```
 
 ## Related topics
-[The Sensors Geolocation Driver Sample](https://msdn.microsoft.com/library/windows/hardware/hh768273)  
+[The Sensors Geolocation Driver Sample](https://docs.microsoft.com/en-us/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample)
 
 
 

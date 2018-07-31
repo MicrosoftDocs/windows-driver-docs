@@ -14,6 +14,7 @@ api_name:
 - .logopen (Open Log File)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .logopen (Open Log File)

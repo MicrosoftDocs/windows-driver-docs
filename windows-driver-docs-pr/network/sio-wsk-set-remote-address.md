@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - SIO_WSK_SET_REMOTE_ADDRESS Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # SIO\_WSK\_SET\_REMOTE\_ADDRESS

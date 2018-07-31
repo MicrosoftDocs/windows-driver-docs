@@ -9,6 +9,7 @@ ms.date: 04/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # ACPI Interface: Device Specific Data (_DSD) for PCIe Root Ports

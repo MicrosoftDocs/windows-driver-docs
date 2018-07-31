@@ -2,6 +2,7 @@
 title: MSFC\_HBAPortStatistics WMI Class
 description: MSFC\_HBAPortStatistics WMI Class
 ms.assetid: 275e4a50-6500-4a23-a0ae-ddd232da42f0
+ms.localizationpriority: medium
 ---
 
 # MSFC\_HBAPortStatistics WMI Class

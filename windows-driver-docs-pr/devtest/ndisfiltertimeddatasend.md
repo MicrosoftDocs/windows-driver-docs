@@ -14,6 +14,7 @@ api_name:
 - NdisFilterTimedDataSend
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # NdisFilterTimedDataSend rule (ndis)

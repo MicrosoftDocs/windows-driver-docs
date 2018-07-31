@@ -14,6 +14,7 @@ api_name:
 - bthkd.hcicmd
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !bthkd.hcicmd

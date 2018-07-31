@@ -14,6 +14,7 @@ api_name:
 - WORKER_THREAD_RETURNED_WITH_BAD_PAGING_IO_PRIORITY
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x129: WORKER\_THREAD\_RETURNED\_WITH\_BAD\_PAGING\_IO\_PRIORITY

@@ -14,6 +14,7 @@ api_name:
 - ChildDeviceInitApi
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ChildDeviceInitApi rule (kmdf)

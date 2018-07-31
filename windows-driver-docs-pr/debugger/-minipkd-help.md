@@ -14,6 +14,7 @@ api_name:
 - minipkd.help
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !minipkd.help

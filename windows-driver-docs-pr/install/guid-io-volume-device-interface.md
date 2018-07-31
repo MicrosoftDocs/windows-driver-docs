@@ -11,6 +11,7 @@ api_location:
 - Ioevent.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # GUID_IO_VOLUME_DEVICE_INTERFACE

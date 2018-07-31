@@ -14,6 +14,7 @@ api_name:
 - MEMORY_MANAGEMENT
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1A: MEMORY\_MANAGEMENT

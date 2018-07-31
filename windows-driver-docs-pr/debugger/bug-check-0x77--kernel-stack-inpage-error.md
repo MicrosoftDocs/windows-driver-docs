@@ -14,6 +14,7 @@ api_name:
 - KERNEL_STACK_INPAGE_ERROR
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x77: KERNEL\_STACK\_INPAGE\_ERROR

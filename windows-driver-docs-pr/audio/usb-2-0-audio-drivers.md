@@ -6,6 +6,7 @@ ms.date: 5/14/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 ## USB Audio 2.0 Drivers

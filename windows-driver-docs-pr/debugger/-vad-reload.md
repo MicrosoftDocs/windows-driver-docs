@@ -17,6 +17,7 @@ api_location:
 - Kdexts.dll
 api_type:
 - DllExport
+ms.localizationpriority: medium
 ---
 
 # !vad\_reload

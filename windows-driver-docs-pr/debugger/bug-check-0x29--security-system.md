@@ -14,6 +14,7 @@ api_name:
 - SECURITY_SYSTEM
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x29: SECURITY\_SYSTEM

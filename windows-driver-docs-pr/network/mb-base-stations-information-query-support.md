@@ -9,6 +9,7 @@ ms.date: 08/14/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MB base stations information query support

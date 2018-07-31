@@ -14,6 +14,7 @@ api_name:
 - .writemem (Write Memory to File)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .writemem (Write Memory to File)

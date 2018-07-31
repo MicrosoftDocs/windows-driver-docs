@@ -14,6 +14,7 @@ api_name:
 - .logclose (Close Log File)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .logclose (Close Log File)

@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: 95ec9ed8-014f-4d01-bed7-3aeb29cd9e73
 keywords:
  - IRP_MN_QUERY_REMOVE_DEVICE Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_QUERY\_REMOVE\_DEVICE

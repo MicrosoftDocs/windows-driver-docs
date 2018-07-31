@@ -14,6 +14,7 @@ api_name:
 - RemoveLockReleaseCreate
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # RemoveLockReleaseCreate rule (wdm)

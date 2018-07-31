@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Access the sensor class extension
@@ -31,23 +32,23 @@ The sensor class extension (**ISensorClassExtension**) links your sensor driver 
 -   Process WPD input/output control codes (IOCTLs)
 -   Close UMDF file handles
 
-### Initializing the class extension
+## Initializing the class extension
 
 The SpbAccelerometer sample initializes the class extension when WUDFx.dll (a component of the Windows user-mode driver framework) invokes **CMyDevice::OnPrepareHardware**:
 
-```ManagedCPlusPlus
+```cpp
 if (SUCCEEDED(hr))
 {
     // Initialize the sensor class extension
     hr = m_spClassExtension->Initialize(pWdfDevice, spUnknown);
-}  
+}
 ```
 
 ### Releasing the class extension
 
 The sample driver un-initializes and releases the class extension when CMyDevice::OnReleaseHardware is invoked:
 
-```ManagedCPlusPlus
+```cpp
 if (m_spClassExtension != nullptr)
 {
    hr = m_spClassExtension->Uninitialize();
@@ -58,7 +59,7 @@ if (m_spClassExtension != nullptr)
 
 When a sensor app registers an event handler for data events, the sample driver posts event notifications using **ISensorClassExtension::PostEvent**. This occurs within **CSensorDdi::PostDataEvent**:
 
-```ManagedCPlusPlus
+```cpp
 if (SUCCEEDED(hr))
 {
    hr = m_spClassExtension->PostEvent(SensorId, spCollection);
@@ -69,7 +70,7 @@ if (SUCCEEDED(hr))
 
 When a sensor app registers an event handler for state-change events, the sample driver posts event notifications using **ISensorClassExtension::PostStateChange**. This occurs within **CSensorDdi::PostStateChange**:
 
-```ManagedCPlusPlus
+```cpp
 HRESULT hr = m_spClassExtension->PostStateChange(SensorId, state);
 ```
 

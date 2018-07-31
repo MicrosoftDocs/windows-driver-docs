@@ -14,6 +14,7 @@ api_name:
 - AddPdotoStaticChildlist
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # AddPdotoStaticChildlist rule (kmdf)

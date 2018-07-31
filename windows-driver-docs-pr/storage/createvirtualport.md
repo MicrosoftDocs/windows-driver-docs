@@ -9,6 +9,7 @@ api_name:
 - CreateVirtualPort
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # CreateVirtualPort method

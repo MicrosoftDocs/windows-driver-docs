@@ -13,6 +13,7 @@ api_name:
 - IPrinterBidiSchemaResponses.AddString
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaResponses::AddString method

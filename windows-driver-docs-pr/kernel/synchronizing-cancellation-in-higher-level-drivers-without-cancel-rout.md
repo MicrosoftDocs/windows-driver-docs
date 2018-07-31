@@ -3,6 +3,7 @@ title: Synchronizing Cancellation in Higher-Level Drivers without Cancel Routine
 author: windows-driver-content
 description: Synchronizing Cancellation in Higher-Level Drivers without Cancel Routines
 ms.assetid: 741d504e-7e61-4f60-a8cf-e4ea92f0654e
+ms.localizationpriority: medium
 ---
 
 # Synchronizing Cancellation in Higher-Level Drivers without Cancel Routines

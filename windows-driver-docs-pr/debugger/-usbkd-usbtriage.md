@@ -14,6 +14,7 @@ api_name:
 - usbkd.usbtriage
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !usbkd.usbtriage

@@ -14,6 +14,7 @@ api_name:
 - STATUS_SYSTEM_PROCESS_TERMINATED
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xC000021A: STATUS\_SYSTEM\_PROCESS\_TERMINATED

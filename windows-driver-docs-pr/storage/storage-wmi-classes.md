@@ -2,6 +2,7 @@
 title: Storage management and WMI classes
 description: Storage management and WMI classes
 ms.assetid: 32cfb51e-b02a-4624-88ea-804d823256a6
+ms.localizationpriority: medium
 ---
 
 # Storage management and WMI classes

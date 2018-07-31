@@ -14,6 +14,7 @@ api_name:
 - .expr (Choose Expression Evaluator)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .expr (Choose Expression Evaluator)

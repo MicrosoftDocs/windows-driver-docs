@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # I2C transport
@@ -62,7 +63,7 @@ Full-resolution has been set with maximum range (+/- 16G).
 
 The complete register map for the accelerometer is in Table 16 of the device's data sheet. The sample driver supports a subset of these registers. These supported values are found within the Adxl345.h header file:
 
-```ManagedCPlusPlus
+```cpp
 //
 // Register interface
 //

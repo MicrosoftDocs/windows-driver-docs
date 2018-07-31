@@ -14,6 +14,7 @@ api_name:
 - CtlDeviceFinishInitDeviceAdd
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CtlDeviceFinishInitDeviceAdd rule (kmdf)

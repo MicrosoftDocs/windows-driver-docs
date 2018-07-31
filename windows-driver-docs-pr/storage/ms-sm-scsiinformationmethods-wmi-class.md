@@ -2,6 +2,7 @@
 title: MS\_SM\_ScsiInformationMethods WMI Class
 description: MS\_SM\_ScsiInformationMethods WMI Class
 ms.assetid: 13e70e48-5364-4a63-8a83-d5ac02c8d17f
+ms.localizationpriority: medium
 ---
 
 # MS\_SM\_ScsiInformationMethods WMI Class

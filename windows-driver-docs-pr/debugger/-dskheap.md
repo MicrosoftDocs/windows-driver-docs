@@ -14,6 +14,7 @@ api_name:
 - dskheap
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !dskheap

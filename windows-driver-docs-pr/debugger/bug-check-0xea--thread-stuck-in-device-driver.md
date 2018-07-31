@@ -14,6 +14,7 @@ api_name:
 - THREAD_STUCK_IN_DEVICE_DRIVER
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xEA: THREAD\_STUCK\_IN\_DEVICE\_DRIVER

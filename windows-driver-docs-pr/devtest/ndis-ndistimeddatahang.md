@@ -14,6 +14,7 @@ api_name:
 - NdisTimedDataHang
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # NdisTimedDataHang rule (ndis)

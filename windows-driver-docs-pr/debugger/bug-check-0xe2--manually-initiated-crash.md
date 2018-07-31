@@ -14,6 +14,7 @@ api_name:
 - MANUALLY_INITIATED_CRASH
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xE2: MANUALLY\_INITIATED\_CRASH

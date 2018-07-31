@@ -14,6 +14,7 @@ api_name:
 - PcAllocateAndMapPages
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # PcAllocateAndMapPages rule (audio)

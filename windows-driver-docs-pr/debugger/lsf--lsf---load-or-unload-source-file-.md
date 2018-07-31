@@ -14,6 +14,7 @@ api_name:
 - lsf, lsf- (Load or Unload Source File)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # lsf, lsf- (Load or Unload Source File)
