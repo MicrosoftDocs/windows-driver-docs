@@ -37,7 +37,7 @@ First, reserve a custom capability:
     * What resources does capability need to access?
     * Any security or privacy concerns
     * What data does your capability provide access to?
-    * Include the Microsoft Store App Publisher ID.  To get one, create a skeleton app entry on the Microsoft Store page. For more info on reserving your App PFN, see [Create your app by reserving a name](https://msdn.microsoft.com/en-us/windows/uwp/publish/create-your-app-by-reserving-a-name).
+    * Include the Microsoft Store App Publisher ID.  To get one, create a skeleton app entry on the Microsoft Store page. For more info on reserving your App PFN, see [Create your app by reserving a name](https://msdn.microsoft.com/windows/uwp/publish/create-your-app-by-reserving-a-name).
 
 2.  If the request is approved, Microsoft emails back a unique custom capability string name in the format **CompanyName.capabilityName\_PublisherID**.
 
@@ -142,7 +142,7 @@ To do so, before getting the SCCD signed by Microsoft, add **DeveloperModeOnly**
 </CustomCapabilityDescriptor>
 ```
 
-The resulting signed SCCD works only on devices in [Developer Mode](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development). 
+The resulting signed SCCD works only on devices in [Developer Mode](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development). 
 
 ## Summary
 
@@ -155,10 +155,10 @@ The following diagram summarizes the sequence described above:
 * [Getting Started with Universal Windows drivers](../develop/getting-started-with-universal-drivers.md)
 * [Intro to the Universal Windows Platform](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide)
 * [Universal Windows Platform (UWP)](https://docs.microsoft.com/windows/uwp/design/basics/design-and-ui-intro)
-* [App capabilities](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations)
-* [Develop UWP apps using Visual Studio](https://developer.microsoft.com/en-us/windows/apps/develop)
+* [App capabilities](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations)
+* [Develop UWP apps using Visual Studio](https://developer.microsoft.com/windows/apps/develop)
 * [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md)
-* [Develop UWP apps](https://developer.microsoft.com/en-us/windows/apps/develop)
+* [Develop UWP apps](https://developer.microsoft.com/windows/apps/develop)
 * [Package an app using the Desktop App Converter (Desktop Bridge)](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter)
 * [Custom Capability Sample App](http://go.microsoft.com/fwlink/p/?LinkId=846904)
 * [Custom Capability Driver Sample](https://aka.ms/customcapabilitydriversample )
