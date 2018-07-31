@@ -2,7 +2,7 @@
 title: Debugging Using WinDbg Preview
 description: This section describes how to perform basic debugging tasks using the WinDbg preview debugger.
 ms.author: domars
-ms.date: 08/17/2017
+ms.date: 07/30/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,28 +63,99 @@ Here's some of the most notable things that have changed or are new.
 
 
 ### General features
+
 - **Easier Connection Setup and Recall** - The WinDbg Preview includes the ability to recall previous session configuration information.
 
 ![Screen shot of main screen in debugger](images/windbgx-start-debugging-menu.png)
 
 - **Easy feedback channel** - Your feedback will guide the development effort going forward. For more information, see [Providing Feedback](#providing-feedback)
+
 - **Dump file processor detection** -Auto-detects processor architecture for easier managed debugging.
+
 - **Performance Improvements** Windows now load asynchronously and can be canceled - When you run another command, WinDbg Preview will stop the loading of your locals, watch, or other windows.
+
+- **Auto-Update** - When we release a new update, you'll get a banner notifying you that an update is available.
 
 
 ### Windowing improvements
 
 - **Disassembly Window Improvements** - The disassembly window is also improved, the highlight of the current instruction remains where it is when you scroll. 
+
+    ![Disassembly windows in Debugger](images/windbgx-disassembly.jpg)
+
+
 - **Memory window improvements** - The memory window has highlighting and improved scrolling.
+
 - **Locals and watch data model visualization** - The locals and watch windows are both based off of the data model that is used by the dx command. This means the locals and watch windows will benefit from any NatVis or JavaScript extensions you have loaded, and can even support full LINQ queries, just like the dx command. 
+
 - **Logs** - This is a under the covers log of the WinDbg Preview internals. It can be viewed for troubleshooting or to monitor long running processes. 
 
 For more information, see [WinDbg Preview - View menu](windbg-view-preview.md).
 
-![View menu in debugger](images/windbgx-view-menu.png)
-
 - **Command window** - Use the command window provides easy access to toggle DML and clear the debugger command window. All current debugger commands are compatible with and continue to work in WinDbg Preview.
-- **Source window** - Use the source windows to work with source code files, the new source windows should look more similar to the source windows you're used to seeing in every other modern editor.
+
+
+### Dark theme 
+
+Use **File** > **Settings** to enable the dark theme.
+
+![Screen shot showing dark theme](images/windbgx-dark-theme.png)
+
+
+### Ribbon Quick Access
+
+Just pin the buttons you use the most and you can collapse the ribbon to save screen real estate. 
+ 
+![Screen shot showing a ribon with pinned items](images/windbgx-quick-access.png)
+
+
+
+### Source Window
+
+The source window has been updated to be much more in line with modern editors. 
+
+![Screen shot of scripting menu in debugger](images/windbgx-source-window.png)
+
+
+### Highlightighting
+
+The command window has two new highlighting features. Selecting any text will give a subtle highlight to any other instances of that text. You can then hit "Highlight/Un-highlight" or Ctrl+Alt+H to persist the highlighting. 
+
+![Screen shot showing columns highlighted in yellow](images/windbgx-highlighting.gif)
+
+
+### Better keyboard navigation
+
+Just hit Ctrl+Tab and you can easily navigate between windows with just your keyboard. 
+
+![Screen shot showing ctrl tab menu](images/windbgx-ctrl-tab.gif)
+
+
+### Integrated Time Travel Debugging (TTD)
+
+If you need a TTD trace of your application, just check the "Record process with Time Travel Debugging" box when launching or attaching. WinDbgNext will set it up for TTD and open the trace when you're done recording.
+
+![Screen shot showing ctrl tab menu](images/windbgx-ttd.png)
+
+For more information, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
+
+
+### Debugging App packages
+
+Debugging your universal app or background task is now a single click.
+
+![Launch App Package Applications tab showing cal in the search box with three apps listed](images/windbgx-launch-app-package.png)
+
+For more information, see [Launch App Package](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/windbg-user-mode-preview#launch-app-package).
+
+
+### Attach to a process
+
+The attach dialog is faster, more detailed, and is easier to use.
+
+![Attach to a process dialog](images/windbgx-attach-to-a-process-zoomed.png)
+
+
 
 ### Enhanced breakpoint tracking  
 
@@ -104,18 +175,22 @@ For more information, see [WinDbg Preview - Data model](windbg-data-model-previe
 ![Screen shot of data model menu in debugger](images/windbgx-data-model-menu.png)
 
 
-### New Scripting development UI 
+### New scripting development UI 
 
 - **Script development UI** - There is now a purpose built scripting window to make developing JavaScript and NatVis scripts easier, with error highlighting and IntelliSense.
 
+![Screen shot of scripting menu in debugger](images/windbgx-scripting-intellisense.png)
+
 For more information, see [WinDbg Preview - Scripting](windbg-scripting-preview.md).
 
-![Screen shot of scripting menu in debugger](images/windbgx-scripting-menu.png)
 
 
 ### Backwards compatibility 
 
 Because the underling debugger engine is the same, all of the previous debugger commands and debugger extensions continue to work.
+
+
+
 
 
 --- 
