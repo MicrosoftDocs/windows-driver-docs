@@ -9,6 +9,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: f454b544-a17f-4542-b930-4e52b6667d55
+ms.localizationpriority: medium
 ---
 
 # Iasphelp Property Get Operations

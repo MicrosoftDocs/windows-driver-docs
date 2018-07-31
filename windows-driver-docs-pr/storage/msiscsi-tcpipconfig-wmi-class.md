@@ -2,6 +2,7 @@
 title: MSiSCSI\_TCPIPConfig WMI Class
 description: MSiSCSI\_TCPIPConfig WMI Class
 ms.assetid: 57451576-a900-4eaa-b229-bda79a81d014
+ms.localizationpriority: medium
 ---
 
 # MSiSCSI\_TCPIPConfig WMI Class

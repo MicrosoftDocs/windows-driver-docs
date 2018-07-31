@@ -14,6 +14,7 @@ api_name:
 - DrvAckIoStop
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # DrvAckIoStop rule (kmdf)

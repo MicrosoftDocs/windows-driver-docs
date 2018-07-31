@@ -8,6 +8,7 @@ ms.date: 09/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Synchronous OID request interface in NDIS 6.80

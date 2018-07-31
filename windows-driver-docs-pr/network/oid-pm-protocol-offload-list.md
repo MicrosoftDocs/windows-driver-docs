@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_PM_PROTOCOL_OFFLOAD_LIST Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_PM\_PROTOCOL\_OFFLOAD\_LIST

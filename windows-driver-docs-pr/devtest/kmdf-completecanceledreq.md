@@ -14,6 +14,7 @@ api_name:
 - CompleteCanceledReq
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CompleteCanceledReq rule (kmdf)

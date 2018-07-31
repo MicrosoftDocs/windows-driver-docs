@@ -9,6 +9,7 @@ api_name:
 - search XML Element
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # search XML Element

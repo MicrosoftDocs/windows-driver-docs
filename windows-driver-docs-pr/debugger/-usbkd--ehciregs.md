@@ -14,6 +14,7 @@ api_name:
 - usbkd._ehciregs
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !usbkd.\_ehciregs

@@ -14,6 +14,7 @@ api_name:
 - wdfkd.wdfopenhandles
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfopenhandles

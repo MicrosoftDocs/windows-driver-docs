@@ -9,6 +9,7 @@ ms.date: 03/18/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Transmit and receive queues
@@ -71,8 +72,6 @@ When creating a packet queue, either a transmit queue or a receive queue, the cl
 - [*EVT_PACKET_QUEUE_CANCEL*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacketqueue/nc-netpacketqueue-evt_packet_queue_cancel)
 
 See each of these pages for details on what the client needs to do in each event callback function.
-
-For a given packet queue, the OS guarantees
 
 ## Polling model
 

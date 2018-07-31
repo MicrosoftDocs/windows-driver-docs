@@ -14,6 +14,7 @@ api_name:
 - .help (Meta-Command Help)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .help (Meta-Command Help)

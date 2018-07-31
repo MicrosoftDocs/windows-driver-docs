@@ -14,6 +14,7 @@ api_name:
 - INVALID_SOFTWARE_INTERRUPT
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x7: INVALID\_SOFTWARE\_INTERRUPT

@@ -14,6 +14,7 @@ api_name:
 - ForwardedAtBadIrqlFsdAsync
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ForwardedAtBadIrqlFsdAsync rule (wdm)

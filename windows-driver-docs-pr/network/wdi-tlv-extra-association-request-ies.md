@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - WDI_TLV_EXTRA_ASSOCIATION_REQUEST_IES Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_EXTRA\_ASSOCIATION\_REQUEST\_IES

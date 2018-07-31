@@ -14,6 +14,7 @@ api_name:
 - EXCEPTION_SCOPE_INVALID
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x14D: EXCEPTION\_SCOPE\_INVALID

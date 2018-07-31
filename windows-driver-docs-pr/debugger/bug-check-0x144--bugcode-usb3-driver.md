@@ -14,6 +14,7 @@ api_name:
 - BUGCODE_USB3_DRIVER
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x144: BUGCODE\_USB3\_DRIVER

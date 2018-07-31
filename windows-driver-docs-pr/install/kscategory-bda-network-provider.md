@@ -11,6 +11,7 @@ api_location:
 - Bdamedia.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # KSCATEGORY_BDA_NETWORK_PROVIDER

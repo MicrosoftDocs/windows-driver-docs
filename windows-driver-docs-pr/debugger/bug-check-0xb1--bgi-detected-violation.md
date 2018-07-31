@@ -14,6 +14,7 @@ api_name:
 - BGI_DETECTED_VIOLATION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xB1: BGI\_DETECTED\_VIOLATION

@@ -14,6 +14,7 @@ api_name:
 - NdisMRegisterIoPortRange
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # NdisMRegisterIoPortRange rule (ndis)

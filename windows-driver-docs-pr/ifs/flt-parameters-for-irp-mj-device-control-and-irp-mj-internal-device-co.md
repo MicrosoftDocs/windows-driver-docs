@@ -16,6 +16,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # FLT\_PARAMETERS for IRP\_MJ\_DEVICE\_CONTROL and IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL union

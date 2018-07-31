@@ -9,6 +9,7 @@ ms.date: 05/20/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # System Effects Audio Processing Objects

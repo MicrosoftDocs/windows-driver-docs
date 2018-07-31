@@ -14,6 +14,7 @@ api_name:
 - Irql_Timer_Function
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Irql\_Timer\_Function rule (ndis)

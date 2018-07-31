@@ -14,6 +14,7 @@ api_name:
 - KsIrqlFilterCallbacks
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # KsIrqlFilterCallbacks rule ()

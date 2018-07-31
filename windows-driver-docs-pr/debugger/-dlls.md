@@ -14,6 +14,7 @@ api_name:
 - dlls
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !dlls

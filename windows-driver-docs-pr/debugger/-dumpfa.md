@@ -14,6 +14,7 @@ api_name:
 - dumpfa
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !dumpfa

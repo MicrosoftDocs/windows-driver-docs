@@ -9,6 +9,7 @@ api_name:
 - finishTitle XML Element
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # finishTitle XML Element

@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: ca53ceef-2755-49d3-aab9-0d12a0e51e75
 keywords:
  - IRP_MJ_POWER Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_POWER

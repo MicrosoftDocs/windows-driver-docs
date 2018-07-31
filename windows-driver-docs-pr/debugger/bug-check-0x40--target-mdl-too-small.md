@@ -14,6 +14,7 @@ api_name:
 - TARGET_MDL_TOO_SMALL
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x40: TARGET\_MDL\_TOO\_SMALL

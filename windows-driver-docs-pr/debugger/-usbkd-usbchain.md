@@ -14,6 +14,7 @@ api_name:
 - usbkd.usbchain
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !usbkd.usbchain

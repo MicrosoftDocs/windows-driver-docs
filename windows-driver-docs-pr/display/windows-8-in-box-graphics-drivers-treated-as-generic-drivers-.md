@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # <span id="display.windows_8_in-box_graphics_drivers_treated_as_generic_drivers_"></span>Windows 8 in-box graphics drivers treated as generic drivers

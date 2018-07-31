@@ -2,6 +2,7 @@
 title: APN database schema reference
 description: APN database schema reference
 ms.assetid: 7192b74c-d868-4740-815b-f10255e374b2
+ms.localizationpriority: medium
 ---
 
 # APN database schema reference

@@ -14,6 +14,7 @@ api_name:
 - PAGE_FAULT_IN_NONPAGED_AREA
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x50: PAGE\_FAULT\_IN\_NONPAGED\_AREA

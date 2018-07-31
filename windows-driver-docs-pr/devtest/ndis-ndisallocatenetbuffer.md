@@ -14,6 +14,7 @@ api_name:
 - NdisAllocateNetBuffer
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # NdisAllocateNetBuffer rule (ndis)

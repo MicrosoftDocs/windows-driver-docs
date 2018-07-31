@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - OID_WDI_SET_FAST_BSS_TRANSITION_PARAMETERS Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_SET\_FAST\_BSS\_TRANSITION\_PARAMETERS

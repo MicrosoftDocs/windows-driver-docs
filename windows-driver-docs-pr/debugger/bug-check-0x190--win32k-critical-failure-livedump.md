@@ -14,6 +14,7 @@ api_name:
 - WIN32K_CRITICAL_FAILURE_LIVEDUMP
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x190: WIN32K\_CRITICAL\_FAILURE\_LIVEDUMP

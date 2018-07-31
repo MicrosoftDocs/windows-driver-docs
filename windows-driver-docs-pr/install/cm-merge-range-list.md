@@ -9,6 +9,7 @@ api_name:
 - CM_Merge_Range_List
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Merge_Range_List

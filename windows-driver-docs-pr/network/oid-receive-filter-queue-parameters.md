@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_RECEIVE_FILTER_QUEUE_PARAMETERS Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS

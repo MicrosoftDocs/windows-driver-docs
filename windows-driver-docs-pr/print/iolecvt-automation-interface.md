@@ -9,6 +9,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 286ab231-c215-45cc-b0da-97ec8adf2de1
+ms.localizationpriority: medium
 ---
 
 # IOleCvt Automation Interface

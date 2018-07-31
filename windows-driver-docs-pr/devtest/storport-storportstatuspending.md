@@ -14,6 +14,7 @@ api_name:
 - StorPortStatusPending
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # StorPortStatusPending rule (storport)

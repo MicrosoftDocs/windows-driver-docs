@@ -14,6 +14,7 @@ api_name:
 - ZwRegistryOpen
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ZwRegistryOpen rule (wdm)

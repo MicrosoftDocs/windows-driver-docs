@@ -13,6 +13,7 @@ api_name:
 - IPrinterBidiSchemaResponses.AddBlob
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaResponses::AddBlob method

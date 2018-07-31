@@ -14,6 +14,7 @@ api_name:
 - .ofilter (Filter Target Output)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .ofilter (Filter Target Output)

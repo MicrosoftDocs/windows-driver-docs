@@ -14,6 +14,7 @@ api_name:
 - findfilelockowner
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !findfilelockowner

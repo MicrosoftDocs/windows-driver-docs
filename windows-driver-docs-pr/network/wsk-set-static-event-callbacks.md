@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - WSK_SET_STATIC_EVENT_CALLBACKS Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # WSK\_SET\_STATIC\_EVENT\_CALLBACKS

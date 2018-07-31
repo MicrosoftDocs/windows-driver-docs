@@ -14,6 +14,7 @@ api_name:
 - EvtSurpriseRemoveNoRequestComplete
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # EvtSurpriseRemoveNoRequestComplete rule (kmdf)

@@ -14,6 +14,7 @@ api_name:
 - INVALID_DATA_ACCESS_TRAP
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x4: INVALID\_DATA\_ACCESS\_TRAP

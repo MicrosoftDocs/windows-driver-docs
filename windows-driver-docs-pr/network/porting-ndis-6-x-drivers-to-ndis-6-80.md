@@ -7,6 +7,7 @@ ms.date: 07/05/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting NDIS 6.x drivers to NDIS 6.80

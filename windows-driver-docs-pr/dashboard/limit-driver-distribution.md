@@ -7,6 +7,7 @@ ms.date:
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Limiting driver distribution by Windows versions

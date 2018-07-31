@@ -14,6 +14,7 @@ api_name:
 - IrqlReturn
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IrqlReturn rule (wdm)

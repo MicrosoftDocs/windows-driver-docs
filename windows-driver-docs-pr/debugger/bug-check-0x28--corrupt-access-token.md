@@ -14,6 +14,7 @@ api_name:
 - CORRUPT_ACCESS_TOKEN
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x28: CORRUPT\_ACCESS\_TOKEN

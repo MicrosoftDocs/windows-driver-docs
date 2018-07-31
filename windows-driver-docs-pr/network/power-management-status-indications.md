@@ -13,6 +13,7 @@ keywords:
  - power management status indications
  - power management WDK networking NDIS 6.20 status indications
  - power management WDK NDIS 6.20 status indications
+ms.localizationpriority: medium
 ---
 
 # Power Management Status Indications

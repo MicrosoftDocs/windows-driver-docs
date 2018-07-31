@@ -7,6 +7,7 @@ ms.date: 07/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually

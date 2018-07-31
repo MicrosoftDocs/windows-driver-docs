@@ -14,6 +14,7 @@ api_name:
 - SMB_SERVER_LIVEDUMP
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x195: SMB\_SERVER\_LIVEDUMP

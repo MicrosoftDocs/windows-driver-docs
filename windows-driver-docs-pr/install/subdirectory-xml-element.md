@@ -9,6 +9,7 @@ api_name:
 - subDirectory XML Element
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # subDirectory XML Element

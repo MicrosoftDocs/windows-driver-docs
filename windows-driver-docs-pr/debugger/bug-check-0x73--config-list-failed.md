@@ -14,6 +14,7 @@ api_name:
 - CONFIG_LIST_FAILED
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x73: CONFIG\_LIST\_FAILED

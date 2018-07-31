@@ -14,6 +14,7 @@ api_name:
 - ControlDeviceInitAllocate
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ControlDeviceInitAllocate rule (kmdf)

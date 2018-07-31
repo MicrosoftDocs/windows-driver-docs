@@ -14,6 +14,7 @@ api_name:
 - .setdll (Set Default Extension DLL)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .setdll (Set Default Extension DLL)

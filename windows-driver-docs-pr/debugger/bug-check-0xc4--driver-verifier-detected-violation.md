@@ -14,6 +14,7 @@ api_name:
 - DRIVER_VERIFIER_DETECTED_VIOLATION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION

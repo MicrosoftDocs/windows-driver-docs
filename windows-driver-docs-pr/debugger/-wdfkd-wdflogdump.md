@@ -14,6 +14,7 @@ api_name:
 - wdfkd.wdflogdump
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdflogdump

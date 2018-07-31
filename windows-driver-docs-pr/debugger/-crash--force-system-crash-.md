@@ -14,6 +14,7 @@ api_name:
 - .crash (Force System Crash)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .crash (Force System Crash)

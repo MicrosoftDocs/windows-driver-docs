@@ -14,6 +14,7 @@ api_name:
 - WlanAssociation
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # WlanAssociation rule (ndis)

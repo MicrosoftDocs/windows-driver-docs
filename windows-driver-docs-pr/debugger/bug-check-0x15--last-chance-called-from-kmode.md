@@ -14,6 +14,7 @@ api_name:
 - LAST_CHANCE_CALLED_FROM_KMODE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x15: LAST\_CHANCE\_CALLED\_FROM\_KMODE

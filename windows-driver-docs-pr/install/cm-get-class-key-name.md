@@ -10,6 +10,7 @@ api_name:
 - CM_Get_Class_Key_NameW
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Get_Class_Key_Name

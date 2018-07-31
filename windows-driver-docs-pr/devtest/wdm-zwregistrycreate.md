@@ -14,6 +14,7 @@ api_name:
 - ZwRegistryCreate
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ZwRegistryCreate rule (wdm)

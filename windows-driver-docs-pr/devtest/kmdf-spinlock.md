@@ -14,6 +14,7 @@ api_name:
 - Spinlock
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Spinlock rule (kmdf)

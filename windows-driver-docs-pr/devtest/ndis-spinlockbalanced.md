@@ -14,6 +14,7 @@ api_name:
 - SpinLockBalanced
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # SpinLockBalanced rule (ndis)

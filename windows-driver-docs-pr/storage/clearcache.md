@@ -2,6 +2,7 @@
 title: ClearCache
 description: ClearCache
 ms.assetid: b332d9ce-baee-4742-8e8b-370f5be94a3c
+ms.localizationpriority: medium
 ---
 
 # ClearCache

@@ -14,6 +14,7 @@ api_name:
 - debugbaseeventcallbackswide
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # DebugBaseEventCallbacksWide class 

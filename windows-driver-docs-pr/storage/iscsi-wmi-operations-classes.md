@@ -2,6 +2,7 @@
 title: iSCSI WMI Operations Classes
 description: iSCSI WMI Operations Classes
 ms.assetid: de8b31f8-e5dc-4ac0-8bd4-6912868310a0
+ms.localizationpriority: medium
 ---
 
 # iSCSI WMI Operations Classes

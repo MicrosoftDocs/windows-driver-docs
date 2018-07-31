@@ -14,6 +14,7 @@ api_name:
 - WdfSpinlockRelease
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # WdfSpinlockRelease rule (kmdf)

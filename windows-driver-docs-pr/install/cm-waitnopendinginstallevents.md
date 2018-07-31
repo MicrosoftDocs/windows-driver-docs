@@ -9,6 +9,7 @@ api_name:
 - CM_WaitNoPendingInstallEvents
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_WaitNoPendingInstallEvents

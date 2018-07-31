@@ -14,6 +14,7 @@ api_name:
 - wdfkd.wdfdriverinfo
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfdriverinfo

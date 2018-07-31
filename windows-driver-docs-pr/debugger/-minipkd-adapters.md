@@ -14,6 +14,7 @@ api_name:
 - minipkd.adapters
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !minipkd.adapters

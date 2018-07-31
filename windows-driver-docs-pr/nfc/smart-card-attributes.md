@@ -5,6 +5,7 @@ ms.assetid:
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 # Supported smart card attributes
 This topic describes the smart card attributes currently supported. The only supported attributes are listed below; all other attributes defined in the Winsmcrd.h are returned as STATUS_NOT_SUPPORTED. The attributes are described in *Interoperability Specification for ICCs and Personal Computer Systems*.

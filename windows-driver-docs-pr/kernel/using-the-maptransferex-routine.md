@@ -3,6 +3,7 @@ title: Using the MapTransferEx Routine
 author: windows-driver-content
 description: The MapTransferEx routine initializes a set of previously allocated DMA resources and starts a DMA transfer.
 ms.assetid: 79D3DDB2-B134-43B2-A6CC-94035C793047
+ms.localizationpriority: medium
 ---
 
 # Using the MapTransferEx Routine

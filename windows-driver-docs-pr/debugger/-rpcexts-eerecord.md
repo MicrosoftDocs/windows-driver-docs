@@ -14,6 +14,7 @@ api_name:
 - rpcexts.eerecord
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !rpcexts.eerecord

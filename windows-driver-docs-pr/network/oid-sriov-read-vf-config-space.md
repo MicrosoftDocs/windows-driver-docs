@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_SRIOV_READ_VF_CONFIG_SPACE Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_SRIOV\_READ\_VF\_CONFIG\_SPACE

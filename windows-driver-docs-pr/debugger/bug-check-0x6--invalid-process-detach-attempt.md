@@ -14,6 +14,7 @@ api_name:
 - INVALID_PROCESS_DETACH_ATTEMPT
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x6: INVALID\_PROCESS\_DETACH\_ATTEMPT

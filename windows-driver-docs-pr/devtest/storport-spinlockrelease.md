@@ -14,6 +14,7 @@ api_name:
 - SpinLockRelease
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # SpinLockRelease rule (storport)

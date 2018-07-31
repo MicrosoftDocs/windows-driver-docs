@@ -2,6 +2,7 @@
 title: MPIO\_DISK\_HEALTH\_INFO WMI Class
 description: MPIO\_DISK\_HEALTH\_INFO WMI Class
 ms.assetid: 5a3ca8be-8940-4ba4-9206-75d0c7c90d53
+ms.localizationpriority: medium
 ---
 
 # MPIO\_DISK\_HEALTH\_INFO WMI Class

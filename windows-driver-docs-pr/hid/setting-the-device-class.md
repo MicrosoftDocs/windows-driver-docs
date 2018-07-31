@@ -4,6 +4,7 @@ author: windows-driver-content
 description: Setting the Device Class
 ms.assetid: 6e2e043f-30a7-46b0-8773-8bca819d2841
 keywords: ["INF files WDK joysticks , device class setting"]
+ms.localizationpriority: medium
 ---
 
 # Setting the Device Class

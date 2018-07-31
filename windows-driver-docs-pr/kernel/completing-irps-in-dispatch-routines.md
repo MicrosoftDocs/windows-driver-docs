@@ -3,6 +3,7 @@ title: Completing IRPs in Dispatch Routines
 author: windows-driver-content
 description: Completing IRPs in Dispatch Routines
 ms.assetid: 279913cb-90f1-411f-a23a-38af4c99638d
+ms.localizationpriority: medium
 ---
 
 # Completing IRPs in Dispatch Routines

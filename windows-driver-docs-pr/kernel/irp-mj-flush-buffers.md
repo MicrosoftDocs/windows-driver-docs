@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: c1023999-0c80-4c09-a9ea-a9422184bba7
 keywords:
  - IRP_MJ_FLUSH_BUFFERS Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_FLUSH\_BUFFERS

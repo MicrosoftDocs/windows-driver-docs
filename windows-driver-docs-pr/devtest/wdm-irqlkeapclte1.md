@@ -14,6 +14,7 @@ api_name:
 - IrqlKeApcLte1
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IrqlKeApcLte1 rule (wdm)

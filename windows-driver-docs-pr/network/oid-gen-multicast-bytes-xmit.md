@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_GEN_MULTICAST_BYTES_XMIT Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_MULTICAST\_BYTES\_XMIT

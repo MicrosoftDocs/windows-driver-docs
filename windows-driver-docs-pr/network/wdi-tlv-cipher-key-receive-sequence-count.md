@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - WDI_TLV_CIPHER_KEY_RECEIVE_SEQUENCE_COUNT Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CIPHER\_KEY\_RECEIVE\_SEQUENCE\_COUNT

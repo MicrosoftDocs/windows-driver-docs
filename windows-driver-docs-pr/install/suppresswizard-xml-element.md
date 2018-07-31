@@ -9,6 +9,7 @@ api_name:
 - suppressWizard XML Element
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # suppressWizard XML Element

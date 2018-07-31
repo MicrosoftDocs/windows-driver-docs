@@ -7,6 +7,7 @@ ms.date: 08/24/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Pairing a driver with a Universal Windows Platform (UWP) app

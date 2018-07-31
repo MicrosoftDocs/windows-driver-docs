@@ -9,6 +9,7 @@ api_name:
 - dpinst XML Element
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # dpinst XML Element

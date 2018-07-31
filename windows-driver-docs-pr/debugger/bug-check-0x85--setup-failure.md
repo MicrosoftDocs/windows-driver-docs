@@ -14,6 +14,7 @@ api_name:
 - SETUP_FAILURE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x85: SETUP\_FAILURE

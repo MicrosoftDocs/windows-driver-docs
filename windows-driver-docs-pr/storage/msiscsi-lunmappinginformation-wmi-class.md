@@ -2,6 +2,7 @@
 title: MSiSCSI\_LUNMappingInformation WMI Class
 description: MSiSCSI\_LUNMappingInformation WMI Class
 ms.assetid: 646add52-f946-4169-9f6b-974253ec30af
+ms.localizationpriority: medium
 ---
 
 # MSiSCSI\_LUNMappingInformation WMI Class
