@@ -15,7 +15,7 @@ This topic introduces Network Driver Interface Specification (NDIS) 6.80 and des
 
 NDIS 6.80 is a minor version update to NDIS 6.70 for miniport, protocol, filter, and intermediate drivers. For more information about porting NDIS 6.x drivers to NDIS 6.80, see [Porting NDIS 6.x drivers to NDIS 6.80](porting-ndis-6-x-drivers-to-ndis-6-70.md).
 
-For NIC drivers, the NetAdapter class extension (NetAdapterCx) has been updated from version 1.0 to version 1.1 in Windows 10, version 1709. For more information about the changes from NetAdapterCx 1.0 to NetAdapterCx 1.1, see [Introduction to NetAdapterCx 1.1](../netcx/introduction-to-netadaptercx-1-1.md).
+For NIC drivers, the NetAdapter class extension (NetAdapterCx) has been updated from version 1.0 to version 1.1 in Windows 10, version 1709.
 
 ## Feature updates
 
@@ -34,12 +34,6 @@ RSSv2 is preview only in Windows 10, version 1709.
 NDIS forms the core foundation for the network driver platform on Windows. For a list of other network driver features that were updated at the same time as NDIS 6.80, see the Windows 10, version 1709 section for Networking on [What's new in driver development](../what-s-new-in-driver-development.md).
 
 ## Implementing an NDIS 6.80 driver
-
-### NIC drivers
-
-For more information about implementing a NIC driver with NetAdapterCx 1.1, see [Introduction to NetAdapterCx 1.1](../netcx/introduction-to-netadaptercx-1-1.md).
-
-### Miniport, protocol, filter, and intermediate drivers
 
 An NDIS 6.80 driver must follow the requirements that are defined in [Implementing an NDIS 6.30 driver](implementing-an-ndis-6-30-driver.md).
 
@@ -68,13 +62,7 @@ For information on building a driver with the Windows 10, version 1709 release 
 
 ## API and data structure changes
 
-### NIC drivers
-
-For more information about NetAdapterCx API and data structure changes, see [Introduction to NetAdapterCx 1.1](../netcx/introduction-to-netadaptercx-1-1.md).
-
-### Miniport, protocol, filter, and intermediate drivers
-
-#### New APIs and data structures
+### New APIs and data structures
 
 The following APIs and data structures are new in NDIS 6.80.
 
@@ -89,7 +77,7 @@ The following APIs and data structures are new in NDIS 6.80.
 - [NDIS_RSS_SET_INDIRECTION_ENTRIES](https://msdn.microsoft.com/library/windows/hardware/9AB69EC6-FE78-4242-89C7-D36AA16676BF)
 - [NDIS_RSS_SET_INDIRECTION_ENTRY](https://msdn.microsoft.com/library/windows/hardware/4430E19F-C603-4C52-8FC8-C36197FD2996)
 
-#### Updated APIs and data structures
+### Updated APIs and data structures
 
 The following APIs and data structures were updated in NDIS 6.80.
 
