@@ -5,7 +5,7 @@ ms.assetid: 85A819E2-6352-4DE9-9689-3DCEB9B0AAD8
 keywords:
 - WDF Network Adapter Class Extension Offloads, NetAdapterCx hardware offloads, NetAdapterCx Offloads, NetAdapter Offloads
 ms.author: windowsdriverdev
-ms.date: 07/15/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -21,6 +21,8 @@ To increase its performance, the Windows TCP/IP stack can offload some tasks to 
 
 NetAdapterCx focuses on ease of offload configuration and management of offload capabilities. Client drivers only need to specify a simple configuration for their hardware offload capabilities and register callbacks to be notified of changes in capabilities. 
 
+This guidance provides an overview of key concepts for hardware offloads in NetAdapterCx.
+
 - Hardware offload capabilities are advertised by the network adapter hardware during initialization.
 - The driver doesn't need to worry about checking standard registry keywords. NetAdapterCx checks the registry keywords and honors them when enabling the active offload capabilities.
 - The *active* offload capabilities of the network adapter are those that the network adapter is currently programmed to perform. These are a subset of the hardware capabilities advertised by the client driver previously.
@@ -33,33 +35,27 @@ Client drivers advertise a minimum set of capabilities to NetAdapterCx. These do
 
 If the hardware is not capable of handling a specific combination, it should either not declare support for that capability or perform a software fallback when it encounters such a packet. NetAdapterCx provides software fallbacks for most offloads. Client drivers can leverage these software fallbacks instead of writing their own.
 
-The following offloads are supported in NetAdapterCx.
+The following offloads are supported by NetAdapterCx and the Windows TCP/IP stack:
 
-## Checksum offload
-
-With checksum offload, the TCP/IP stack offloads the calculation and validation of IP and TCP checksums to the NIC. To harness this capability, client drivers first advertise their hardware's active checksum offload capabilities during their [*EVT_NET_ADAPTER_SET_CAPABILITIES*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities) callback function. During the call to [**NetAdapterOffloadSetChecksumCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapteroffloadsetchecksumcapabilities), the client driver provides a [*EVT_NET_ADAPTER_OFFLOAD_SET_CHECKSUM*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_offload_set_checksum) callback for the framework to invoke if the TCP/IP stack or an overlying protocol driver request that these capabilities change in the future. 
-
-## Large send offload (LSO)
-
-The TCP/IP stack supports large send offload (LSO). With LSO, the stack offloads the segmentation of large TCP packets for IPv4 and IPv6.
+| Offload name | Description |
+| --- | --- |
+| Checksum | Offloading the calculation and validation of IP and TCP checksums to the NIC. |
+| Large send offload (LSO) | Offloading segmentation of large TCP packets for IPv4 and IPv6. |
 
 ## Example
 
-This example shows how a client driver might set up its hardware offload capabilities. For a code example 
+Client drivers first advertise their hardware's checksum offload capabilities during net adapter initialization. This might occur within the context of [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) when starting a net adapter. To get started, the client driver allocates a capabilities structure for each supported offload, initializes them, and calls the appropriate **NetAdapterOffloadSetXxxCapabilities** methods to register them with NetAdapterCx. During the call to **NetAdapterOffloadSetXxxCapabilities**, the driver provides a pointer to a callback function that the system invokes later if active hardware offload capabilities change.
+
+This example shows how a client driver might set up its hardware offload capabilities.
 
 ```C++
-NTSTATUS
-MyEvtDevicePrepareHardware(
+VOID
+MyAdapterSetHardwareOffloadCapabilities(
     NETADAPTER NetAdapter
 )
 {
-    // Set capabilities such as link layer MTU size, power capabilities, receive scaling capabilities, etc.
-
-    ...
-
-    // Configure the hardware's active checksum offload capabilities
+    // Configure the hardware's checksum offload capabilities
     NET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES checksumOffloadCapabilities;
-
     NET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES_INIT(&checksumOffloadCapabilities,
                                                    TRUE,
                                                    TRUE,
@@ -72,18 +68,19 @@ MyEvtDevicePrepareHardware(
 
     // Configure the hardware's active LSO offload capabilities
     NET_ADAPTER_OFFLOAD_LSO_CAPABILITIES lsoOffloadCapabilities;
+    NET_ADAPTER_OFFLOAD_LSO_CAPABILITIES_INIT(&lsoOffloadCapabilities,
+                                              TRUE,
+                                              TRUE,
+                                              MY_LSO_OFFLOAD_SIZE_MAX,
+                                              MY_LSO_OFFLOAD_MIN_SEGMENT_COUNT);
 
-    NET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES_INIT(&lsoOffloadCapabilities,
-                                                   TRUE,
-                                                   TRUE,
-                                                   MY_LSO_OFFLOAD_SIZE_MAX,
-                                                   MY_LSO_OFFLOAD_MIN_SEGMENT_COUNT);
-
-    // Set the current checksum offload capabilities and register the callback for future changes in active capabilities
-    NetAdapterOffloadSetChecksumCapabilities(NetAdapter,
-                                             &lsoOffloadCapabilities,
-                                             MyEvtAdapterOffloadSetLso);
-
-    ...    
+    // Set the current LSO offload capabilities and register the callback for future changes in active capabilities
+    NetAdapterOffloadSetLsoCapabilities(NetAdapter,
+                                        &lsoOffloadCapabilities,
+                                        MyEvtAdapterOffloadSetLso);   
 }
 ```
+
+## Related links
+
+[Packet descriptors and extensions](packet-descriptors-and-extensions.md)
