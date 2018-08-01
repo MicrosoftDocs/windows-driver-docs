@@ -34,6 +34,17 @@
 #### [Commit a product submission](commit-a-product-submission.md)
 #### [Update submission data](update-submission-data.md)
 #### [Update product data](update-product-data.md)
+
+### [Get error reporting data for windows 10 drivers](get-error-reporting-data-for-windows-10-drivers.md)
+#### [Get details for a Windows 10 driver error](get-details-for-a-windows-10-driver-error.md)
+#### [Download the CAB file for a Windows 10 driver error](download-the-cab-file-for-a-windows-10-driver-error.md)
+### [Get error reporting data for Windows 7 and Windows 8.x drivers](get-error-reporting-data-for-windows-7-and-windows-8.x-drivers.md)
+####[Get details for a Windows 7 or Windows 8.x driver error](get-details-for-a-windows-7-or-windows-8.x-driver-error.md)
+####[Download the CAB file for a Windows 7 or Window0s 8.x driver error](download-the-cab-file-for-a-windows-7-or-windows-8.x-driver-error.md)
+###[Get OEM hardware error reporting data](get-oem-hardware-error-reporting-data.md)
+####[Get details for an OEM hardware error](get-details-for-an-oem-hardware-error.md)
+####[Download the CAB file for an OEM hardware error](download-the-cab-file-for-an-oem-hardware-error.md)
+
 ## [File signing LSA plugins and UEFI firmware](lsa-and-uefi-file-signing.md)
 ## [Dashboard Administration](dashboard-administration.md)
 ### [Get started with the Hardware Program](get-started-with-the-hardware-dashboard.md)
