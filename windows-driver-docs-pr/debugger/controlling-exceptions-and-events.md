@@ -467,7 +467,7 @@ You can change the break status of the following events. Because these events ar
 <td align="left"><p>Unload module</p>
 <p>If you specify <em>Module</em>, the break occurs when the module with this name, or at this base address, is unloaded. <em>Module</em> can specify the name or the address of the module. If the name is used, <em>Module</em> can be an exact name or include wildcard characters. If <em>Module</em> is an exact name, it is immediately resolved to a base address by using the current debugger module list and it is stored as an address. If <em>Module</em> contains wildcard characters, the pattern string is kept for later matching when unload events occur.</p>
 <p>Rarely, the debugger does not have name information for unload events and matches only by the base address. Therefore, if <em>Module</em> contains wildcard characters, the debugger cannot perform a name match in this particular unload case and breaks when any module is unloaded.</p>
-<p>The debugger remembers only the most recent <strong>ud</strong> setting. Separate settings for separate modules are not supported. Include a colon or a space between <strong>ld</strong> and <em>Module</em>.</p>
+<p>The debugger remembers only the most recent <strong>ud</strong> setting. Separate settings for separate modules are not supported. Include a colon or a space between <strong>ud</strong> and <em>Module</em>.</p>
 <p>If <em>Module</em> is omitted, the event is triggered when any module is loaded.</p></td>
 <td align="left"><p>Output</p></td>
 </tr>
