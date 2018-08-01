@@ -39,7 +39,7 @@ Overwrites an existing dump file with the same name. If this option is not used 
 <span id="_f_FullOptions_"></span><span id="_f_fulloptions_"></span><span id="_F_FULLOPTIONS_"></span>**/f\[***FullOptions***\]**  
 (Kernel mode:) Creates a [complete memory dump](complete-memory-dump.md).
 
-(User mode:) Creates a [full user-mode dump](full-user-mode-dumps.md). Despite their names, the largest minidump file actually contains more information than a full user-mode dump. For example, **.dump /mf** or **.dump /ma** creates a larger and more complete file than **.dump /f**. In user mode, **.dump** **/m\[***MiniOptions***\]** is always preferable to **.dump /f**.
+(User mode:) Creates a *full user-mode dump*. For more information, see [Varieties of User-Mode Dump Files](user-mode-dump-files.md#varieties). Despite their names, the largest minidump file actually contains more information than a full user-mode dump. For example, **.dump /mf** or **.dump /ma** creates a larger and more complete file than **.dump /f**. In user mode, **.dump** **/m\[***MiniOptions***\]** is always preferable to **.dump /f**.
 
 You can add the following *FullOptions* to change the contents of the dump file; the option is case-sensitive.
 
@@ -63,7 +63,7 @@ You can add the following *FullOptions* to change the contents of the dump file;
  
 
 <span id="_m_MiniOptions_"></span><span id="_m_minioptions_"></span><span id="_M_MINIOPTIONS_"></span>**/m\[***MiniOptions***\]**  
-Creates a [small memory dump](cdb-and-windbg.md) (in kernel mode) or a [minidump](minidumps.md) (in user mode). If neither **/f** nor **/m** is specified, **/m** is the default.
+Creates a *small memory dump* (in kernel mode) or a *minidump* (in user mode) For more information, see [User-Mode Dump Files](user-mode-dump-files.md). If neither **/f** nor **/m** is specified, **/m** is the default.
 
 In user mode, **/m** can be followed with additional *MiniOptions* specifying extra data that is to be included in the dump. If no *MiniOptions* are included, the dump will include module, thread, and stack information, but no additional data. You can add any of the following *MiniOptions* to change the contents of the dump file; they are case-sensitive.
 

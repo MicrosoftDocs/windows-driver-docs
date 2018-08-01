@@ -29,7 +29,7 @@ After you choose the proper file, click **Open**.
 
 ### <span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For more information about analyzing crash dump files, see [Analyzing a User-Mode Dump File with WinDbg](analyzing-a-user-mode-dump-file-with-windbg.md) or [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md).
+For more information about analyzing crash dump files, see [Analyzing a User-Mode Dump File](analyzing-a-user-mode-dump-file.md) or [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md).
 
  
 
