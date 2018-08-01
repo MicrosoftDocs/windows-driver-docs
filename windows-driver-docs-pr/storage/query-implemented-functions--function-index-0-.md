@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 # Query Implemented Functions (Function Index 0)
 
 
-This function returns the functions supported by this interface version. Function 0 of every \_DSM is a query function that returns the set of supported function indexes, and is always required. For the definition of Function 0, see section 9.14.1, "\_DSM (Device Specific Method)" in the [ACPI 6.0 specification](http://www.uefi.org/specifications).
+This function returns the functions supported by this interface version. Function 0 of every \_DSM is a query function that returns the set of supported function indexes, and is always required. For the definition of Function 0, see section 9.14.1, "\_DSM (Device Specific Method)" in the [ACPI 6.0 specification](https://www.uefi.org/specifications).
 
 ## Arguments (ARG 3)
 
