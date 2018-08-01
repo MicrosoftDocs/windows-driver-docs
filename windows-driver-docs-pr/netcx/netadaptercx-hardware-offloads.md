@@ -66,7 +66,7 @@ MyAdapterSetHardwareOffloadCapabilities(
                                              &checksumOffloadCapabilities,
                                              MyEvtAdapterOffloadSetChecksum);
 
-    // Configure the hardware's active LSO offload capabilities
+    // Configure the hardware's LSO offload capabilities
     NET_ADAPTER_OFFLOAD_LSO_CAPABILITIES lsoOffloadCapabilities;
     NET_ADAPTER_OFFLOAD_LSO_CAPABILITIES_INIT(&lsoOffloadCapabilities,
                                               TRUE,
