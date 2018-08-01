@@ -268,7 +268,7 @@ The following is the formal XML XSD schema for an SCCD file.  Use this schema to
 </xs:schema>
 ```
 
-The following schema is also valid as of the the Redstone 5 release.  It enbales a SCCD to declare any app package to be an authorized entity. 
+The following schema is also valid as of Windows 10, version 1809.  It enables a SCCD to declare any app package to be an authorized entity. 
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
