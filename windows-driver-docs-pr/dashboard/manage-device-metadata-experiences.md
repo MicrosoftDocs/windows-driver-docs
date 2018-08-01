@@ -183,7 +183,7 @@ On the **Manage experiences** page, you can add, remove, or promote (from previe
 
 3.  To update an existing package, select the package, click **Delete**, and then create and upload a new package.
 
-    For more information about creating a new package, see the [Device Metadata Authoring Wizard](http://go.microsoft.com/fwlink/p/?LinkID=265479), available in the [Windows Driver Kit](http://go.microsoft.com/fwlink/p/?LinkID=265477).
+    For more information about creating a new package, see the [Device Metadata Authoring Wizard](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/device-metadata-authoring-wizard-portal), available in the [Windows Driver Kit](https://docs.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk).
 
 4.  To add a new package, under **Add more metadata**, browse for the file or files that you want to add, create a friendly name if you want, and then click **Submit**.
 
@@ -195,15 +195,15 @@ On the **Manage experiences** page, you can add, remove, or promote (from previe
 ## <span id="related_topics"></span>Related topics
 
 
-[Create a Device Metadata Experience](https://msdn.microsoft.com/library/windows/hardware/br230794.aspx)
+[Create a Device Metadata Experience](create-a-device-metadata-experience)
 
-[Submit a Bulk Metadata Package](https://msdn.microsoft.com/library/windows/hardware/hh801895.aspx)
+[Submit a Bulk Metadata Package](submit-a-bulk-metadata-package)
 
-[Creating a Preview Package](https://msdn.microsoft.com/library/windows/hardware/br230780.aspx)
+[Creating a Preview Package](creating-a-preview-package)
 
-[Errors and Solutions When Submitting Device Metadata Experiences](https://msdn.microsoft.com/library/windows/hardware/br230786.aspx)
+[Errors and Solutions When Submitting Device Metadata Experiences](errors-and-solutions-when-submitting-device-metadata-experiences)
 
-[Device Metadata Business Rules](https://msdn.microsoft.com/library/windows/hardware/br230767.aspx)
+[Device Metadata Business Rules](device-metadata-business-rules)
 
  
 

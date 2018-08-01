@@ -71,7 +71,7 @@ There are five main steps to the Hardware Program registration.
 
 After your registration is complete, additional administrative tasks are available:
 
--   [Manage users and permissions](https://msdn.microsoft.com/library/windows/hardware/mt786457)
+-   [Manage users and permissions](managing-user-roles)
 
 When you are finished with any administrative tasks, you are ready to create your first hardware submission. See [Hardware submissions](hardware-certification-submissions.md) for information and instructions.
 

@@ -89,7 +89,7 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 <tr class="odd">
 <td><p>A Hardware ID in this .cab is in conflict and the .cab cannot be uploaded. Please ensure no other experience you have created uses this Hardware ID.</p></td>
 <td><p>Your hardware ID has been used in another one of your experiences. On the dashboard, under <strong>Device metadata</strong>, open the <strong>Manage experiences</strong> page. In the filter, enter the hardware ID to find the other experience. You can then resolve any conflicts.</p>
-<p>For more information, see [Device Metadata Business Rules](https://msdn.microsoft.com/library/windows/hardware/br230767.aspx).</p></td>
+<p>For more information, see [Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules).</p></td>
 </tr>
 <tr class="even">
 <td><p>A Hardware ID in this. cab is in use by another company and the .cab cannot be uploaded. Please verify this Hardware ID.</p></td>
@@ -102,7 +102,7 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 <tr class="even">
 <td><p>A live submission already exists with default locale set to true in this experience.</p></td>
 <td><p>Only one live package in an experience can be set as the default package.</p>
-<p>For more information, see [Device Metadata Business Rules](https://msdn.microsoft.com/library/windows/hardware/br230767.aspx).</p></td>
+<p>For more information, see [Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules).</p></td>
 </tr>
 <tr class="odd">
 <td><p>A logo submission for a MultiPurpose device does not match the submission category.</p></td>
@@ -115,7 +115,7 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 <tr class="even">
 <td><p>A Model ID in this cab is in conflict and the cab cannot be uploaded. Please ensure no other experience you have created uses this Model ID.</p></td>
 <td><p>Your model ID has been used in another one of your experiences. On the dashboard, under <strong>Device metadata</strong>, open the <strong>Manage experiences</strong> page. In the filter, enter the model ID to find the other experience. You can then resolve any conflicts.</p>
-<p>For more information, see [Device Metadata Business Rules](https://msdn.microsoft.com/library/windows/hardware/br230767.aspx).</p></td>
+<p>For more information, see [Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules).</p></td>
 </tr>
 <tr class="odd">
 <td><p>A Model ID in this cab is in use by another company and the cab cannot be uploaded. Please verify this Model ID.</p></td>
@@ -140,12 +140,12 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 <tr class="odd">
 <td><p>A preview submission already exists with default locale set to true in this experience.</p></td>
 <td><p>Only one preview package in an experience can be set as the default package.</p>
-<p>For more information, see [Device Metadata Business Rules](https://msdn.microsoft.com/library/windows/hardware/br230767.aspx).</p></td>
+<p>For more information, see [Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules).</p></td>
 </tr>
 <tr class="even">
 <td><p>All device metadata .cab files in an experience must support the same Hardware IDs. Please correct the .cab.</p></td>
 <td><p>This package does not have the same list of model IDs that the other packages in the experience have. Correct the model ID list in the package and upload the package again.</p>
-<p>For more information, see [Device Metadata Business Rules](https://msdn.microsoft.com/library/windows/hardware/br230767.aspx).</p></td>
+<p>For more information, see [Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules).</p></td>
 </tr>
 <tr class="odd">
 <td><p>Allowed Domain should not be empty for task [TaskID] in Tasks.xml.</p></td>
@@ -302,7 +302,7 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 <tr class="even">
 <td><p>No preview key can be found for this organization.</p></td>
 <td><p>You must set your PreviewKey before you upload a preview package.</p>
-<p>For more information, see [Device Metadata Business Rules](https://msdn.microsoft.com/library/windows/hardware/br230767.aspx).</p></td>
+<p>For more information, see [Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules).</p></td>
 </tr>
 <tr class="odd">
 <td><p>PackageStructure node in PackageInfo.xml is invalid.</p></td>
@@ -486,11 +486,11 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 ## <span id="related_topics"></span>Related topics
 
 
-[Create a Device Metadata Experience](https://msdn.microsoft.com/library/windows/hardware/br230794.aspx)
+[Create a Device Metadata Experience](https://docs.microsoft.com/windows-hardware/drivers/dashboard/create-a-device-metadata-experience)
 
-[Submit a Device Metadata Package (Dashboard help)](https://msdn.microsoft.com/library/windows/hardware/br230807.aspx)
+[Submit a Device Metadata Package (Dashboard help)](https://docs.microsoft.com/windows-hardware/drivers/dashboard/submit-a-device-metadata-package--dashboard-help-)
 
-[Device Metadata Business Rules](https://msdn.microsoft.com/library/windows/hardware/br230767.aspx)
+[Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules)
 
  
 
