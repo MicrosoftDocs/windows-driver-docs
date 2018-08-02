@@ -82,9 +82,9 @@ If it is set, remove the **WdfDriverInitNoDispatchOverride** flag from the call 
 
 Next, you'll distribute code from *MiniportInitializeEx* into the appropriate WDF event callback handlers, several of which are optional. For details on the callback sequence, see [Power-Up Sequence for an Network Adapter WDF Client Driver](power-up-sequence-for-a-netadaptercx-client-driver.md).
 
-For info on the callbacks you'll need to provide, see [Device initialization](device-initialization.md).
- 
-[*EVT_NET_ADAPTER_SET_CAPABILITIES*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities) is where the client calls the methods equivalent to [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672). However, instead of calling one routine with a generic [**NDIS_MINIPORT_ADAPTER_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565920) structure, the client driver calls different functions to set different types of capabilities. For more info, see the Remarks section of [*EVT_NET_ADAPTER_SET_CAPABILITIES*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities).
+You'll call the methods equivalent to [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) when you're starting your net adapter, but before you call [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstart). However, instead of calling one routine with a generic [**NDIS_MINIPORT_ADAPTER_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565920) structure, the client driver calls different functions to set different types of capabilities.
+
+For info on the callbacks you'll need to provide and when to start a net adapter, see [Device initialization](device-initialization.md).
 
 ## Creating queues to manage control requests
 

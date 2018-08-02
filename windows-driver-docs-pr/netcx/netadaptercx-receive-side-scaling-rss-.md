@@ -24,7 +24,7 @@ This topic highlights RSS for NetAdapterCx client drivers and assumes knowledge 
 
 RSS in NetAdapterCx focuses on ease of configuration, simplicity of enablement and disablement, and abstraction of processor-to-interrupt complexity. A client driver for an RSS-capable NIC only needs to meet three criteria to support RSS in NetAdapterCx:
 
-1. The driver must set RSS capabilities in the *[EvtNetAdapterSetCapabilities](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities)* event callback. This includes implementing four RSS callbacks and registering them in the RSS capabilities structure.
+1. The driver must set RSS capabilities when starting a net adapter, but before calling [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstart). This includes implementing four RSS callbacks and registering them in the RSS capabilities structure.
 2. The driver's datapath queues must be created and ready to accept requests.
 3. The driver must be in the *D0* power state.
 
@@ -36,7 +36,7 @@ Later, when the driver is unloading, NetAdapterCx will not call RSS callbacks af
 
 To get started with RSS in NetAdapterCx, follow these steps:
 
-1. In your *[EvtNetAdapterSetCapabilities](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities)* callback, tell the system about your hardware's RSS capabilities and constraints using the [NET_ADAPTER_RECEIVE_SCALING_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/ns-netreceivescaling-_net_adapter_receive_scaling_capabilities) structure.
+1. When starting your net adapter, tell the system about your hardware's RSS capabilities and constraints using the [NET_ADAPTER_RECEIVE_SCALING_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/ns-netreceivescaling-_net_adapter_receive_scaling_capabilities) structure.
 2. Initialize the capabilities structure by calling [NET_ADAPTER_RECEVIE_SCALING_CAPABILITIES_INIT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nf-netreceivescaling-net_adapter_receive_scaling_capabilities_init). 
 3. When you initialize the RSS capabilities structure, set the structure's RSS callback members to register your implementations for these callbacks:
     1. *[EvtNetAdapterReceiveScalingEnable](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netreceivescaling/nc-netreceivescaling-evt_net_adapter_receive_scaling_enable)*
@@ -48,7 +48,7 @@ To get started with RSS in NetAdapterCx, follow these steps:
 
 ## Enabling and disabling RSS
 
-After you set RSS capabilities in the *[EvtNetAdapterSetCapabilities](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities)* callback function, the system will continue with the power-up sequence for your driver. NetAdapterCx starts invoking your driver's RSS callbacks once the final step of creating datapath queues has finished. At this point, RSS can be enabled and disabled as needed by the system. 
+After you set RSS capabilities, the system will continue with the power-up sequence for your driver. NetAdapterCx starts invoking your driver's RSS callbacks once the final step of creating datapath queues has finished. At this point, RSS can be enabled and disabled as needed by the system. 
 
 > [!IMPORTANT]
 > You should **not** clear or reset your indirection table when enabling or disabling RSS. The framework will set the your initial indirection table state.

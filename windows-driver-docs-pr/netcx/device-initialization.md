@@ -12,13 +12,23 @@ ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-# Device initialization
+# Device and adapter initialization
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-A NetAdapterCx driver registers its [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function when it calls [**WdfDriverCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547175) from its [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff540807) routine.
+## Relationship between WDFDEVICE and NETADAPTER objects
+
+A NETADAPTER object represents your NIC, which is the endpoint for all networking I/O. You can have multiple NETADAPTER objects per WDFDEVICE, with the WDFDEVICE being the parent object of each NETADAPTER. The primary NETADAPTER is called the *default adapter*. Most NIC drivers only have one adapter, but some server NIC drivers or [mobile broadband class extension (MBBCx)](mobile-broadband-mbb-wdf-class-extension-mbbcx.md) drivers might have more than one. 
+
+The default adapter must be initialized and created from within the client driver's [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function by calling [**NetDefaultAdapterInitAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netdefaultadapterinitallocate) and [**NetAdapterCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptercreate). Then, it must be started from within the driver's [*EVT_WDF_DEVICE_PREPARE_HARDWARE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function by calling [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstart). Before calling **NetAdapterStart**, the driver can set the adapter's capabilities such as link layer capabilities, power capabilities, datapath capabilities, receive scaling capabilities, and hardware offload capabilities.
+
+You can add more NETADAPTER objects as needed during *EvtDeviceAdd* as well. Each subsequent NETADAPTER in addition to the default one is initialized with [**NetAdapterInitAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterinitallocate) instead of **NetDefaultAdapterInitAllocate**. Otherwise, the procedure to create them is the same, and they are started the same way later in *EvtDevicePrepareHardware*.
+
+You can find a diagram of the object hierarchy in [Summary of objects](summary-of-objects.md).
 
 ## EVT_WDF_DRIVER_DEVICE_ADD
+
+A NetAdapterCx driver registers its [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function when it calls [**WdfDriverCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547175) from its [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff540807) routine.
 
 In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693), a NetAdapterCx client driver should do the following in order:
 
@@ -34,7 +44,7 @@ In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hard
 
 2. Call [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926).
 
-3. Create the NETADAPTER object. This object represents your NIC, which is the endpoint for all networking I/O. To create the NETADAPTER object, the client typically calls [**NetDefaultAdapterInitAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netdefaultadapterinitallocate) if this is the default NETADAPTER, followed by optional **NetAdapterInitSetXxx** methods to initailize the adapter's attributes. Finally, the client calls [**NetAdapterCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptercreate). 
+3. Create the default NETADAPTER object. To do so, the client calls [**NetDefaultAdapterInitAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netdefaultadapterinitallocate), followed by optional **NetAdapterInitSetXxx** methods to initailize the adapter's attributes. Finally, the client calls [**NetAdapterCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptercreate). 
 
     ```C++
     WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&attribs, MYDRIVER_ADAPTER_CONTEXT);
@@ -75,8 +85,6 @@ In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hard
     }
     ```
 
-You can have multiple NETADAPTER objects per WDFDEVICE, with the WDFDEVICE being the parent object of each NETADAPTER. The primary NETADAPTER is called the *default adapter*. Most NIC drivers only have one adapter, but some server NIC drivers or [mobile broadband class extension (MBBCx)](mobile-broadband-mbb-wdf-class-extension-mbbcx.md) drivers might have more than one. Each subsequent NETADAPTER is initialized with [**NetAdapterInitAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterinitallocate) instead of **NetDefaultAdapterInitAllocate**. You can find the object hierarchy in [Summary of objects](summary-of-objects.md).
-
 Optionally, you can add context space to the NETADAPTER object. Since you can set a context on any WDF object, you could add separate context space for the WDFDEVICE and the NETADAPTER objects. In the example in step 4, the client adds `MYDRIVER_ADAPTER_CONTEXT` to the NETADAPTER object. For more info, see [Framework Object Context Space](../wdf/framework-object-context-space.md).
 
 We recommend that you put device-related data in the context for your WDFDEVICE, and networking-related data into your NETADAPTER context. If you are porting an existing NDIS 6.x driver, you'll likely have a single MiniportAdapterContext that combines networking-related and device-related data into a single data structure. To simplify the porting process, just convert that entire structure to the WDFDEVICE context, and make the NETADAPTER's context a small structure that points to the WDFDEVICE's context.
@@ -87,3 +95,7 @@ You'll provide 2 callbacks to the [**NET_ADAPTER_DATAPATH_CALLBACKS_INIT**](http
 * [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_create_rxqueue)
 
 For details on what to provide in your implementations of these callbacks, see the individual reference pages.
+
+## EVT_WDF_DEVICE_PREPARE_HARDWARE
+
+Later in the power up sequence, 
