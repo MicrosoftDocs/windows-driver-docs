@@ -32,7 +32,13 @@ Specifies the name of the software to be installed.  This name uniquely identifi
 
 *flags*
 
-Specifies one or more (ORed) flags.  This value must be zero.
+Specifies one or more (ORed) flags.
+
+**0**
+The AddSoftware directive will only be processed once.
+
+**1**
+The AddSoftware directive will be processed once per component device that uses AddSoftware with a matching *SoftwareName*.
 
 *software-install-section*
 
