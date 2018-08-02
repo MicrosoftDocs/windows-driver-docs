@@ -84,7 +84,7 @@ Next, you'll distribute code from *MiniportInitializeEx* into the appropriate WD
 
 You'll call the methods equivalent to [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) when you're starting your net adapter, but before you call [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstart). However, instead of calling one routine with a generic [**NDIS_MINIPORT_ADAPTER_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565920) structure, the client driver calls different functions to set different types of capabilities.
 
-For info on the callbacks you'll need to provide and when to start a net adapter, see [Device initialization](device-initialization.md).
+For info on the callbacks you'll need to provide and when to start a net adapter, see [Device and adapter initialization](device-and-adapter-initialization.md).
 
 ## Creating queues to manage control requests
 

@@ -16,11 +16,14 @@ ms.localizationpriority: medium
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-## Relationship between WDFDEVICE and NETADAPTER objects
+## WDFDEVICE and NETADAPTER object relationship
 
-A NETADAPTER object represents your NIC, which is the endpoint for all networking I/O. You can have multiple NETADAPTER objects per WDFDEVICE, with the WDFDEVICE being the parent object of each NETADAPTER. The primary NETADAPTER is called the *default adapter*. Most NIC drivers only have one adapter, but some server NIC drivers or [mobile broadband class extension (MBBCx)](mobile-broadband-mbb-wdf-class-extension-mbbcx.md) drivers might have more than one. 
+A NETADAPTER object represents your NIC, which is the endpoint for all networking I/O. You can have multiple NETADAPTER objects per WDFDEVICE, with the WDFDEVICE being the parent object of each NETADAPTER. The primary NETADAPTER is called the *default adapter*. Most NIC drivers only have one adapter for their physical device, but some server NIC drivers might manage more than one if they have a NIC with multiple slots. As another example, [Mobile Broadband WDF Class Extension (MBBCx)](mobile-broadband-mbb-wdf-class-extension-mbbcx.md) client drivers might manage more than one NETADAPTER, each representing an additional Packet Data Protocol (PDP) context bearer. 
 
 The default adapter must be initialized and created from within the client driver's [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function by calling [**NetDefaultAdapterInitAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netdefaultadapterinitallocate) and [**NetAdapterCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptercreate). Then, it must be started from within the driver's [*EVT_WDF_DEVICE_PREPARE_HARDWARE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function by calling [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstart). Before calling **NetAdapterStart**, the driver can set the adapter's capabilities such as link layer capabilities, power capabilities, datapath capabilities, receive scaling capabilities, and hardware offload capabilities.
+
+> [!TIP]
+> Currently, the default adapter is the only one visible to to user mode applications.
 
 You can add more NETADAPTER objects as needed during *EvtDeviceAdd* as well. Each subsequent NETADAPTER in addition to the default one is initialized with [**NetAdapterInitAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterinitallocate) instead of **NetDefaultAdapterInitAllocate**. Otherwise, the procedure to create them is the same, and they are started the same way later in *EvtDevicePrepareHardware*.
 
