@@ -50,7 +50,7 @@ This example shows how a client driver might set up its hardware offload capabil
 
 ```C++
 VOID
-MyAdapterSetHardwareOffloadCapabilities(
+MyAdapterSetOffloadCapabilities(
     NETADAPTER NetAdapter
 )
 {
