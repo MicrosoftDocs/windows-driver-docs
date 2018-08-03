@@ -4,7 +4,7 @@ description: Changing Contexts
 ms.assetid: 3690903c-4281-4c65-98b0-00ca22206168
 keywords: ["context", "logon session, context", "context, session context", "session, context", "user sessions", "session"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 08/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -21,7 +21,7 @@ In kernel-mode debugging, there are many processes, threads, and sometimes user 
 
 The debugger has five different contexts that you can set while you are debugging:
 
-1.  The session context indicates the default user session. (This context applies to only Microsoft Windows XP and later versions of Windows. These operating systems allow multiple logon sessions to coexist.)
+1.  The session context indicates the default user session. 
 
 2.  The process context determines how the debugger interprets virtual addresses.
 
@@ -33,7 +33,7 @@ The debugger has five different contexts that you can set while you are debuggin
 
 ### <span id="session-context"></span><span id="SESSION_CONTEXT"></span>Session Context
 
-In Windows XP and later versions of Windows, multiple logon sessions can run at the same time. Each logon session has its own processes.
+Multiple logon sessions can run at the same time. Each logon session has its own processes.
 
 The [**!session**](-session.md) extension displays all logon sessions or changes the current session context.
 
@@ -51,7 +51,7 @@ During kernel-mode debugging, you can set the process context by using the [**.p
 
 You can also set user-mode breakpoints from the kernel debugger by using a process-specific breakpoint on a kernel-space function. Set strategic breakpoints and wait for the appropriate context to come up.
 
-The *user-mode address context* is part of the process context. Typically, you do not have to set the user-mode address context directly. If you set the process context, the user-mode address context automatically changes to the directory base of the relevant page table for the process. However, on an Itanium-based processor, a single process might have more than one page directory. In this situation, you can use the [**.context (Set User-Mode Address Context)**](-context--set-user-mode-address-context-.md) command to change the user-mode address context.
+The *user-mode address context* is part of the process context. Typically, you do not have to set the user-mode address context directly. If you set the process context, the user-mode address context automatically changes to the directory base of the relevant page table for the process. 
 
 When you set the process context during kernel-mode debugging, that process context is retained until another **.process** command changes the context. The user-mode address context is also retained until a **.process** or **.context** command changes it. These contexts are not changed when the target computer executes, and they are not affected by changes to the register context or the local context.
 
@@ -87,7 +87,7 @@ Changing the register context can also change the local context. In this manner,
 
 If any application execution, stepping, or tracing occurs, the register context is immediately reset to match the program counter's position. In user mode, the register context is also reset if the current process or thread is changed.
 
-The register context affects stack traces, because the stack trace begins at the location that the stack pointer register (**esp** on an x86-based processor or **sp** on an Itanium-based processor) points to. If the register context is set to an invalid or inaccessible value, stack traces cannot be obtained.
+The register context affects stack traces, because the stack trace begins at the location that the stack pointer register (**esp** on an x86-based processor) points to. If the register context is set to an invalid or inaccessible value, stack traces cannot be obtained.
 
 You can apply a processor breakpoint (data breakpoint) to a specific register context by using the [**.apply\_dbp (Apply Data Breakpoint to Context)**](-apply-dbp--apply-data-breakpoint-to-context-.md) command.
 
