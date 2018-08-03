@@ -14,6 +14,7 @@ api_name:
 - DEVICE_QUEUE_NOT_BUSY
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x2: DEVICE\_QUEUE\_NOT\_BUSY

@@ -14,6 +14,7 @@ api_name:
 - .breakin (Break to the Kernel Debugger)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .breakin (Break to the Kernel Debugger)

@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: d8287ba2-ac0a-4407-b587-a5aa5b3617a2
 keywords:
  - IRP_MN_DEVICE_USAGE_NOTIFICATION Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_DEVICE\_USAGE\_NOTIFICATION

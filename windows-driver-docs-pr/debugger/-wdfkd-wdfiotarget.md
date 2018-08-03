@@ -14,6 +14,7 @@ api_name:
 - wdfkd.wdfiotarget
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfiotarget

@@ -14,6 +14,7 @@ api_name:
 - Blue Screen Data
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Blue Screen Data

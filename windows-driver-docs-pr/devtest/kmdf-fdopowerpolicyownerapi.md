@@ -14,6 +14,7 @@ api_name:
 - FDOPowerPolicyOwnerAPI
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # FDOPowerPolicyOwnerAPI rule (kmdf)

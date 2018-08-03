@@ -2,6 +2,7 @@
 title: \_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)
 description: This interface is designed to map to the JEDEC Byte Addressable Energy Backed Interface standard in order to minimize BIOS complexity.
 ms.assetid: 895F1B13-4F2D-4B6B-A3CE-60A8AC9EE7B0
+ms.localizationpriority: medium
 ---
 
 # \_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)

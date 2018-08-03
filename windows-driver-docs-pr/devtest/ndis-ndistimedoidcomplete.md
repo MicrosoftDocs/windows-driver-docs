@@ -14,6 +14,7 @@ api_name:
 - NdisTimedOidComplete
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # NdisTimedOidComplete rule (ndis)

@@ -14,6 +14,7 @@ api_name:
 - NullCheck
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # NullCheck rule (ndis)

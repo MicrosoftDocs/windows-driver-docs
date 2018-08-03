@@ -14,6 +14,7 @@ api_name:
 - WdfWaitlockRelease
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # WdfWaitlockRelease rule (kmdf)

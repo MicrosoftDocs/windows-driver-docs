@@ -14,6 +14,7 @@ api_name:
 - POOL_CORRUPTION_IN_FILE_AREA
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xDE: POOL\_CORRUPTION\_IN\_FILE\_AREA

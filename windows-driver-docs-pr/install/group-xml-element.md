@@ -9,6 +9,7 @@ api_name:
 - group XML Element
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # group XML Element

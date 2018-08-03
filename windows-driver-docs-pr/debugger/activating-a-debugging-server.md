@@ -14,6 +14,7 @@ api_name:
 - Activating a Debugging Server
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Activating a Debugging Server

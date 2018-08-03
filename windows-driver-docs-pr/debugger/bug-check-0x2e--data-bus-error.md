@@ -14,6 +14,7 @@ api_name:
 - DATA_BUS_ERROR
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x2E: DATA\_BUS\_ERROR

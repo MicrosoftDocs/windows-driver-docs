@@ -14,6 +14,7 @@ api_name:
 - gpiokd.bankinfo
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !gpiokd.bankinfo

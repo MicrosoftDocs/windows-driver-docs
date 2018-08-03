@@ -14,6 +14,7 @@ api_name:
 - ruleinfo
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ruleinfo

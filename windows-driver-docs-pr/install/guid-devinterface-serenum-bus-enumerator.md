@@ -11,6 +11,7 @@ api_location:
 - Ntddser.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR

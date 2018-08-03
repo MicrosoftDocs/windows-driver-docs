@@ -14,6 +14,7 @@ api_name:
 - popolicy
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !popolicy

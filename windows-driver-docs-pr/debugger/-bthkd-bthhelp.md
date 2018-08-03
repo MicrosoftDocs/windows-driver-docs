@@ -14,6 +14,7 @@ api_name:
 - bthkd.bthhelp
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !bthkd.bthhelp

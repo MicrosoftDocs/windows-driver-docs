@@ -14,6 +14,7 @@ api_name:
 - IoReleaseRemoveLockAndWaitOutsideRemoveDevice
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IoReleaseRemoveLockAndWaitOutsideRemoveDevice rule (wdm)

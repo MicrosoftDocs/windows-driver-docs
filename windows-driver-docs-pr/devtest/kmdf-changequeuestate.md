@@ -14,6 +14,7 @@ api_name:
 - ChangeQueueState
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ChangeQueueState rule (kmdf)

@@ -14,6 +14,7 @@ api_name:
 - vadump
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !vadump

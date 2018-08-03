@@ -14,6 +14,7 @@ api_name:
 - CheckDeviceObjectFlags
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CheckDeviceObjectFlags rule (wdm)

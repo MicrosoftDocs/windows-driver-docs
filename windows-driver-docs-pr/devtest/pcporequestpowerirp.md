@@ -14,6 +14,7 @@ api_name:
 - PcPoRequestPowerIrp
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # PcPoRequestPowerIrp rule (audio)

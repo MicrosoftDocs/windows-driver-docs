@@ -14,6 +14,7 @@ api_name:
 - SPIN_LOCK_INIT_FAILURE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x81: SPIN\_LOCK\_INIT\_FAILURE

@@ -14,6 +14,7 @@ api_name:
 - wdfkd.wdfumirps
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfumirps

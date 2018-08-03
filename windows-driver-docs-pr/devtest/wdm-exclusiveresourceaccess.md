@@ -14,6 +14,7 @@ api_name:
 - ExclusiveResourceAccess
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ExclusiveResourceAccess rule (wdm)

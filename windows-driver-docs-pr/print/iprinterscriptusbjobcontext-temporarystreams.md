@@ -13,6 +13,7 @@ api_name:
 - IPrinterScriptUsbJobContext.TemporaryStreams
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbJobContext::TemporaryStreams method

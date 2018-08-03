@@ -16,6 +16,7 @@ api_name:
 - Print Pipeline Property Bag
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Print Pipeline Property Bag

@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: d4e09527-f817-4eb5-b0f5-7584de8888b1
 keywords:
  - IRP_MN_SET_LOCK Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_SET\_LOCK

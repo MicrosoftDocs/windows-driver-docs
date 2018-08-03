@@ -14,6 +14,7 @@ api_name:
 - PnpSurpriseRemove
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # PnpSurpriseRemove rule (wdm)

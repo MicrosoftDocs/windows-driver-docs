@@ -3,6 +3,7 @@ title: Behavior and guidance
 author: windows-driver-content
 description: The states of the two indicators available (mode and docking) play an important role in determining the user experience around touch keyboard and screen auto-rotation.
 ms.assetid: C5A0B339-3159-4AFF-B322-D041E49D875A
+ms.localizationpriority: medium
 ---
 
 # Behavior and guidance

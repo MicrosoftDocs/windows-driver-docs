@@ -2,6 +2,7 @@
 title: ISCSI\_STATUS\_QUALIFIERS
 description: ISCSI\_STATUS\_QUALIFIERS
 ms.assetid: d39ed448-5608-4f19-b49c-bbd6727e9491
+ms.localizationpriority: medium
 ---
 
 # ISCSI\_STATUS\_QUALIFIERS

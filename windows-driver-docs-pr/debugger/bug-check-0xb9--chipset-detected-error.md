@@ -14,6 +14,7 @@ api_name:
 - CHIPSET_DETECTED_ERROR
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xB9: CHIPSET\_DETECTED\_ERROR

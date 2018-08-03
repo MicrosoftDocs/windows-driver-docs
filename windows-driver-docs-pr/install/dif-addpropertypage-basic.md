@@ -9,6 +9,7 @@ api_name:
 - DIF_ADDPROPERTYPAGE_BASIC
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # DIF_ADDPROPERTYPAGE_BASIC

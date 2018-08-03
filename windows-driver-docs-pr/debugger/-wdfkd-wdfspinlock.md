@@ -14,6 +14,7 @@ api_name:
 - wdfkd.wdfspinlock
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfspinlock

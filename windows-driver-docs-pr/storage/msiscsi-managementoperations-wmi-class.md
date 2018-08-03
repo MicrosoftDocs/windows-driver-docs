@@ -2,6 +2,7 @@
 title: MSiSCSI\_ManagementOperations WMI Class
 description: MSiSCSI\_ManagementOperations WMI Class
 ms.assetid: 1037be46-6cae-458d-8549-927c7a053195
+ms.localizationpriority: medium
 ---
 
 # MSiSCSI\_ManagementOperations WMI Class

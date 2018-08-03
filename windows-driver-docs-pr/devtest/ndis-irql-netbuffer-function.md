@@ -14,6 +14,7 @@ api_name:
 - Irql_NetBuffer_Function
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Irql\_NetBuffer\_Function rule (ndis)

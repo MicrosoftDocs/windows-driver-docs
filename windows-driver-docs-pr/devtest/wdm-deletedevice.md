@@ -14,6 +14,7 @@ api_name:
 - DeleteDevice
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # DeleteDevice rule (wdm)

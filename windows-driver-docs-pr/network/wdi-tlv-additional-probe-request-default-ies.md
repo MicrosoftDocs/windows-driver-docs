@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - WDI_TLV_ADDITIONAL_PROBE_REQUEST_DEFAULT_IES Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ADDITIONAL\_PROBE\_REQUEST\_DEFAULT\_IES

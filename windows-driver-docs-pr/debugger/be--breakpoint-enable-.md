@@ -14,6 +14,7 @@ api_name:
 - be (Breakpoint Enable)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # be (Breakpoint Enable)

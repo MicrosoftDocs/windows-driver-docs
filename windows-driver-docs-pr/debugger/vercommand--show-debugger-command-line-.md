@@ -14,6 +14,7 @@ api_name:
 - vercommand (Show Debugger Command Line)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # vercommand (Show Debugger Command Line)

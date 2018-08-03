@@ -2,6 +2,7 @@
 title: ISCSI\_LoginOptions WMI Class
 description: ISCSI\_LoginOptions WMI Class
 ms.assetid: dc05f8e9-599d-4963-98a8-64e1d23c37a1
+ms.localizationpriority: medium
 ---
 
 # ISCSI\_LoginOptions WMI Class

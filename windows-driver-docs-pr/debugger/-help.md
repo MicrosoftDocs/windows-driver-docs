@@ -14,6 +14,7 @@ api_name:
 - help
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !help

@@ -15,6 +15,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF DestinationDirs Section
@@ -105,6 +106,8 @@ xga.Display      = 11
 [**SourceDisksFiles**](inf-sourcedisksfiles-section.md)
 
 [**SourceDisksNames**](inf-sourcedisksnames-section.md)
+
+[**Using Dirids**](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-dirids)
 
 [**Version**](inf-version-section.md)
 

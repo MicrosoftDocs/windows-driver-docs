@@ -9,6 +9,7 @@ api_name:
 - enableNotListedLanguages XML Element
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # enableNotListedLanguages XML Element

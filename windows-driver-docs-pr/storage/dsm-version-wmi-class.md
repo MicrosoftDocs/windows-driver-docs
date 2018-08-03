@@ -2,6 +2,7 @@
 title: DSM\_VERSION WMI Class
 description: DSM\_VERSION WMI Class
 ms.assetid: 79239921-169d-496d-a52b-f4b6b0cb0c80
+ms.localizationpriority: medium
 ---
 
 # DSM\_VERSION WMI Class

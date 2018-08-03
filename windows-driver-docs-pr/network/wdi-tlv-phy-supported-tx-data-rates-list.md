@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - WDI_TLV_PHY_SUPPORTED_TX_DATA_RATES_LIST Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_PHY\_SUPPORTED\_TX\_DATA\_RATES\_LIST

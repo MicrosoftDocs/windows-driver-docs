@@ -14,6 +14,7 @@ api_name:
 - PagedCodeAtPowerTrans
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # PagedCodeAtPowerTrans rule (wdm)

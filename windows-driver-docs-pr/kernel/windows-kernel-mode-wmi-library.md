@@ -3,6 +3,7 @@ title: Windows Kernel-Mode WMI Library
 author: windows-driver-content
 description: Windows Kernel-Mode WMI Library
 ms.assetid: ca981f38-8f3b-48cc-969f-ce53b85bba20
+ms.localizationpriority: medium
 ---
 
 # Windows Kernel-Mode WMI Library

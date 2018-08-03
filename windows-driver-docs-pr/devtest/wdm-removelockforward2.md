@@ -14,6 +14,7 @@ api_name:
 - RemoveLockForward2
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # RemoveLockForward2 rule (wdm)

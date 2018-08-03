@@ -9,6 +9,7 @@ api_name:
 - package XML Element
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # package XML Element

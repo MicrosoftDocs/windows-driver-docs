@@ -14,6 +14,7 @@ api_name:
 - tc (Trace to Next Call)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # tc (Trace to Next Call)

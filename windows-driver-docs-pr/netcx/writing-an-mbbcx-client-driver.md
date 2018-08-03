@@ -9,6 +9,7 @@ ms.date: 03/19/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing an MBBCx client driver
@@ -48,6 +49,10 @@ The following example demonstrates how to initialize the MBB device. Error handl
 Unlike other types of NetAdapterCx drivers, MBB client drivers must not create the NETADAPTER object from within the *EvtDriverDeviceAdd* callback function. Instead, it will be instructed by MBBCx to do so later.
 
 Next, the client driver must call [**MbbDeviceSetMbimParameters**](mbbdevicesetmbimparameters.md), typically in the [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function that follows.
+
+This message flow diagram illustrates the initialization process.
+
+![MBBCx client driver initialization process](images/mbbcx_initializing.png)
 
 ## Handling MBIM control messages
 
@@ -148,32 +153,7 @@ If a client driver needs to clean up context data tied to a NETADAPTER object, i
 
 ## Power management of the MBB device
 
-The MBIM specification defines the **MBIM_CID_DEVICE_SERVICE_SUBSCRIBE_LIST** and **MBIM_CID_IP_PACKET_FILTERS** commands for arming wakeup. MBBCx provides two APIs, [**MbbDeviceArmWake**](mbbdevicearmwake.md) and [**MbbDeviceDisarmWake**](mbbdevicedisarmwake.md), for client drivers that want to arm and disarm their device wakeup using MBIM messages. If a client driver decides not to use MBIM messages for wakeup, it can choose to use the NETPOWERSETTINGS object instead [like other types of NetAdapterCx client drivers](configuring-power-management.md).
-
-The following example shows how to call the MBBCx-specific power management APIs in the context of your [*EvtDeviceArmWakeFromS0*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_arm_wake_from_s0) and [*EvtDeviceDisarmWakeFromS0*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_s0) callback functions.
-
-```cpp
-    NTSTATUS
-    EvtDeviceArmWakeFromS0(
-        _In_ WDFDEVICE wdfDevice
-    )
-    {
-        MbbDeviceArmWake(wdfDevice);
-        return STATUS_SUCCESS;
-    }
-
-    VOID
-    EvtDeviceDisarmWakeFromS0(
-        _In_ WDFDEVICE wdfDevice
-    )
-    {
-        MbbDeviceDisarmWake(wdfDevice);
-    }
-
-    //EvtDeviceArmWakeFromSx and EvtDeviceDisarmWakeFromSx can
-    //be handled similarly
-
-```
+For power management, client drivers should use the NETPOWERSETTINGS object [like other types of NetAdapterCx client drivers](configuring-power-management.md).
 
 ## Handling device service sessions
 

@@ -4,6 +4,7 @@ author: windows-driver-content
 description: This topic describes object handles that are defined for the SPB framework extension (SpbCx) library.
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SpbCx Object Handles

@@ -4,6 +4,7 @@ author: windows-driver-content
 description: Saved Settings
 ms.assetid: fa3eb2c9-b0ae-4872-b0f4-13fdd3745265
 keywords: ["saved registry settings WDK joysticks"]
+ms.localizationpriority: medium
 ---
 
 # Saved Settings

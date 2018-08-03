@@ -4,6 +4,7 @@ author: windows-driver-content
 description: Setting Up LogConfig Entries
 ms.assetid: d8317009-f8d0-4020-83b1-4cdf6366a642
 keywords: ["INF files WDK joysticks , LogConfig entries", "LogConfig entries WDK joysticks"]
+ms.localizationpriority: medium
 ---
 
 # Setting Up LogConfig Entries

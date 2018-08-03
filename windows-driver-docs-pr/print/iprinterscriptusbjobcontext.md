@@ -13,6 +13,7 @@ api_name:
 - IPrinterScriptUsbJobContext
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbJobContext interface

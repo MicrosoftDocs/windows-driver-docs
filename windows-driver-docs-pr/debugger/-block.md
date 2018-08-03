@@ -14,6 +14,7 @@ api_name:
 - .block
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .block

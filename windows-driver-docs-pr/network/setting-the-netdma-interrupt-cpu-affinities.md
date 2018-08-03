@@ -10,6 +10,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting the NetDMA Interrupt CPU Affinities
@@ -32,7 +33,7 @@ On computers that support MSI-X, because the NetDMA interface specifies CPU affi
 
 The NetDMA provider driver must be prepared to handle IRP\_MN\_FILTER\_RESOURCE\_REQUIREMENTS immediately after the [**AddDevice**](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine returns. IRP\_MN\_FILTER\_RESOURCE\_REQUIREMENTS provides a resource list as an [**IO\_RESOURCE\_REQUIREMENTS\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff550609) structure at **Irp-&gt;IoStatus.Information**. The resources in the list are described by [**IO\_RESOURCE\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff550598) structures.
 
-A NetDMA provider driver can modify the interrupt affinity policy for each resource of type **CmResourceTypeInterrupt** that describes an MSI-X message. If an affinity policy requests targeting for a specific set of processors, the NetDMA provider driver also sets a [**KAFFINITY**](https://msdn.microsoft.com/library/windows/hardware/ff551830) mask at **Interrupt.TargetedProcessors** in the IO\_RESOURCE\_DESCRIPTOR structure.
+A NetDMA provider driver can modify the interrupt affinity policy for each resource of type **CmResourceTypeInterrupt** that describes an MSI-X message. If an affinity policy requests targeting for a specific set of processors, the NetDMA provider driver also sets a [**KAFFINITY**](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/interrupt-affinity-and-priority#about-kaffinity) mask at **Interrupt.TargetedProcessors** in the IO\_RESOURCE\_DESCRIPTOR structure.
 
  
 

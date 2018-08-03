@@ -2,6 +2,7 @@
 title: Select Firmware Image Slot (Function Index 25)
 description: This function selects which firmware image is active.
 ms.assetid: 65B8BF11-4377-455A-9A08-0C15FADC0BBC
+ms.localizationpriority: medium
 ---
 
 # Select Firmware Image Slot (Function Index 25)

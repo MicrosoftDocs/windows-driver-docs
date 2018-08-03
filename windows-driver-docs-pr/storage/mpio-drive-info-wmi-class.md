@@ -2,6 +2,7 @@
 title: MPIO\_DRIVE\_INFO WMI Class
 description: MPIO\_DRIVE\_INFO WMI Class
 ms.assetid: 4c116157-5f5b-4213-abdd-9128ebbfa341
+ms.localizationpriority: medium
 ---
 
 # MPIO\_DRIVE\_INFO WMI Class

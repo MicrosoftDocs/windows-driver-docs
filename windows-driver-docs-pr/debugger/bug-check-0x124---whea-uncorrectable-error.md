@@ -14,6 +14,7 @@ api_name:
 - WHEA_UNCORRECTABLE_ERROR
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x124: WHEA\_UNCORRECTABLE\_ERROR

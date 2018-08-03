@@ -14,6 +14,7 @@ api_name:
 - ks.dumpcircuit
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ks.dumpcircuit

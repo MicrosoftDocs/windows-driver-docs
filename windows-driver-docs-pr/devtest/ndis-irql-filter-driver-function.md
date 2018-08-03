@@ -14,6 +14,7 @@ api_name:
 - Irql_Filter_Driver_Function
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Irql\_Filter\_Driver\_Function rule (ndis)

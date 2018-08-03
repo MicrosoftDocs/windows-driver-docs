@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: db838761-b838-44fd-bc77-c9d55d2c4a41
 keywords:
  - IRP_MJ_PNP Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_PNP

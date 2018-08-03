@@ -1,5 +1,6 @@
 ---
 title: SENSOR\_CATEGORY\_MECHANICAL
+author: windows-driver-content
 description: The SENSOR\_CATEGORY\_MECHANICAL category contains sensors that provide information related to mechanisms.
 ms.assetid: 0ae66a5b-6564-4e2c-a6a1-c88c7e853a38
 keywords: ["SENSOR_CATEGORY_MECHANICAL Sensor Devices"]
@@ -16,6 +17,7 @@ ms.date: 01/04/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SENSOR\_CATEGORY\_MECHANICAL

@@ -14,6 +14,7 @@ api_name:
 - WriteErrorLog
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # WriteErrorLog rule (ndis)

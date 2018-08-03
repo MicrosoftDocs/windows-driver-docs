@@ -14,6 +14,7 @@ api_name:
 - SESSION5_INITIALIZATION_FAILED
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x71: SESSION5\_INITIALIZATION\_FAILED

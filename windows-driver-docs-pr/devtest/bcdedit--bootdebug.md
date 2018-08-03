@@ -14,6 +14,7 @@ api_name:
 - BCDEdit /bootdebug
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # BCDEdit /bootdebug

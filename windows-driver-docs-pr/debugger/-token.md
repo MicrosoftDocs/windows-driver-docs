@@ -14,6 +14,7 @@ api_name:
 - token
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !token

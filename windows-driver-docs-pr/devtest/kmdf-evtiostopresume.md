@@ -14,6 +14,7 @@ api_name:
 - EvtIoStopResume
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # EvtIoStopResume rule (kmdf)

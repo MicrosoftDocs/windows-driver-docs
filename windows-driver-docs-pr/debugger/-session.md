@@ -14,6 +14,7 @@ api_name:
 - session
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !session

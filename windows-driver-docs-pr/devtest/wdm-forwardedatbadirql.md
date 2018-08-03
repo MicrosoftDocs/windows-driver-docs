@@ -14,6 +14,7 @@ api_name:
 - ForwardedAtBadIrql
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ForwardedAtBadIrql rule (wdm)

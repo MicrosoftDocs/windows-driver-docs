@@ -14,6 +14,7 @@ api_name:
 - WlanConnectionRoaming
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # WlanConnectionRoaming rule (ndis)

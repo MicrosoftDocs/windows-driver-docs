@@ -10,6 +10,7 @@ api_name:
 - CM_Get_Device_Interface_Alias_ExW
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Get_Device_Interface_Alias_Ex

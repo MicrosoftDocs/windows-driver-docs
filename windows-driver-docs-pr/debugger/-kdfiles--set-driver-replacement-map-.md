@@ -14,6 +14,7 @@ api_name:
 - .kdfiles (Set Driver Replacement Map)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .kdfiles (Set Driver Replacement Map)

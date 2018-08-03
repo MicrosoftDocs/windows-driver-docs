@@ -14,6 +14,7 @@ api_name:
 - ~f (Freeze Thread)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ~f (Freeze Thread)

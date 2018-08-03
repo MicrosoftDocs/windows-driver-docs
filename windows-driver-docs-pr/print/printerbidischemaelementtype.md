@@ -13,6 +13,7 @@ api_name:
 - PRINTERBIDISCHEMAELEMENTTYPE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # PRINTERBIDISCHEMAELEMENTTYPE enumeration

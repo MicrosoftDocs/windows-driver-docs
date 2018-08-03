@@ -14,6 +14,7 @@ api_name:
 - WdfIoQueueRetrieveFoundRequest
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # WdfIoQueueRetrieveFoundRequest rule (kmdf)

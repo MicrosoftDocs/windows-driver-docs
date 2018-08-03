@@ -8,6 +8,7 @@ ms.date: 03/27/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SymStore

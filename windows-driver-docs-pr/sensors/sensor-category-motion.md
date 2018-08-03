@@ -1,5 +1,6 @@
 ---
 title: SENSOR\_CATEGORY\_MOTION
+author: windows-driver-content
 description: The SENSOR\_CATEGORY\_MOTION category contains sensors that provide information that is related to physical movement.
 ms.assetid: 9189aefc-e92d-483c-80da-f61339b14ebd
 keywords: ["SENSOR_CATEGORY_MOTION Sensor Devices"]
@@ -16,6 +17,7 @@ ms.date: 01/04/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SENSOR\_CATEGORY\_MOTION

@@ -7,6 +7,7 @@ ms.date: 5/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Entering Debugger Commands in Visual Studio

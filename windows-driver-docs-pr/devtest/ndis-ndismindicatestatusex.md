@@ -14,6 +14,7 @@ api_name:
 - NdisMIndicateStatusEx
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # NdisMIndicateStatusEx rule (ndis)

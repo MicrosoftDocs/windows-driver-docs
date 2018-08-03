@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Bluetooth Core Driver Layer and Supported Power Transitions
@@ -67,9 +68,12 @@ The following table summarizes device and system power states that the Bluetooth
 </table>
 
 
+<<<<<<< HEAD
 
 
  
+=======
+>>>>>>> master
 
 \*Re-initialization by Bluetooth core driver is required since power is lost to the Bluetooth chip
 

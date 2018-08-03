@@ -14,6 +14,7 @@ api_name:
 - ReservedDDIs
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ReservedDDIs rule (wdm)

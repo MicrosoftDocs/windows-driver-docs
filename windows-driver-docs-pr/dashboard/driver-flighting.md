@@ -4,6 +4,7 @@ description: Driver flighting in the Windows Hardware Dev Center dashboard enabl
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Driver flighting

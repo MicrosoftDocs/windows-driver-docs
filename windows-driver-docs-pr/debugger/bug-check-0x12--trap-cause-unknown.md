@@ -14,6 +14,7 @@ api_name:
 - TRAP_CAUSE_UNKNOWN
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x12: TRAP\_CAUSE\_UNKNOWN

@@ -14,6 +14,7 @@ api_name:
 - ks.allstreams
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ks.allstreams

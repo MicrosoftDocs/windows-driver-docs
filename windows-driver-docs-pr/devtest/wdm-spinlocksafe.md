@@ -14,6 +14,7 @@ api_name:
 - SpinLockSafe
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # SpinLockSafe rule (wdm)

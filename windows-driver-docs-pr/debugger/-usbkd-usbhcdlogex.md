@@ -14,6 +14,7 @@ api_name:
 - usbkd.usbhcdlogex
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !usbkd.usbhcdlogex

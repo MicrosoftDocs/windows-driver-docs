@@ -13,6 +13,7 @@ api_name:
 - IPrinterBidiSchemaResponses
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaResponses interface

@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - WDI_TLV_SEND_ACTION_FRAME_REQUEST_PARAMETERS Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_SEND\_ACTION\_FRAME\_REQUEST\_PARAMETERS

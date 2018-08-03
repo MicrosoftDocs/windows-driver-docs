@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_PACKET_COALESCING_FILTER_MATCH_COUNT Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_PACKET\_COALESCING\_FILTER\_MATCH\_COUNT

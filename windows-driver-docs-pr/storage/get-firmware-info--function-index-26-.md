@@ -2,6 +2,7 @@
 title: Get Firmware Info (Function Index 26)
 description: This function retrieves information about a firmware image slot.
 ms.assetid: ABE67651-6351-4D8E-BCFF-0488D2A34DC5
+ms.localizationpriority: medium
 ---
 
 # Get Firmware Info (Function Index 26)

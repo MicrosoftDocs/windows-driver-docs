@@ -14,6 +14,7 @@ api_name:
 - .prefer_dml (Prefer Debugger Markup Language)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .prefer\_dml (Prefer Debugger Markup Language)

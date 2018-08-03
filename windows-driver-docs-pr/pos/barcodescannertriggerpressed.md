@@ -2,6 +2,7 @@
 title: BarcodeScannerTriggerPressed
 description: BarcodeScannerTriggerPressed
 ms.assetid: '6f0a373f-bf3f-4201-9430-3474f84b9037'
+ms.localizationpriority: medium
 ---
 
 # BarcodeScannerTriggerPressed

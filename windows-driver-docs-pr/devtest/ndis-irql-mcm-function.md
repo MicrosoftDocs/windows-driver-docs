@@ -14,6 +14,7 @@ api_name:
 - Irql_MCM_Function
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Irql\_MCM\_Function rule (ndis)
