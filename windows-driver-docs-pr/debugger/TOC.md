@@ -723,6 +723,7 @@
 ### [Mapping Symbols When the PEB is Paged Out](mapping-symbols-when-the-peb-is-paged-out.md)
 ### [Debugging User-Mode Processes Without Symbols](debugging-user-mode-processes-without-symbols.md)
 ### [Debugging Performance-Optimized Code](debugging-performance-optimized-code.md)
+### [Off line Symbols for Windows Update](symbols-windows-update.md)
 ## [AgeStore](agestore.md)
 ### [Using AgeStore](using-agestore.md)
 ### [AgeStore Command-Line Options](agestore-command-line-options.md)
