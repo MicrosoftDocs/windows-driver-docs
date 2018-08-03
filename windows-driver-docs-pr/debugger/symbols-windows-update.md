@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Offline Symbols for Windows Update
 
-This topic describes how you can work with offline symbols for Windows Update. It describes a procedure that can be used to decode Windows Update logs on machines that don’t have access to the Microsoft’s symbol server. 
+This topic describes how you can work with offline symbols for Windows Update. It describes a procedure that can be used to decode Windows Update logs on machines that don’t have access to the Microsoft symbol server. 
 
 If you find yourself needing to do this often, you should see if setting up a Symbol Proxy Server is viable for your networking configuration. For more information see [SymProxy](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/symproxy).
 
