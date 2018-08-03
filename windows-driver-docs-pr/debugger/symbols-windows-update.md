@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Offline Symbols for Windows Update
 
-This topic describes how you can work with offline symbols for Windows Update. It describes a procedure that can be used to decode Windows Update logs on machines that don’t have access to Microsoft’s symbol server. 
+This topic describes how you can work with offline symbols for Windows Update. It describes a procedure that can be used to decode Windows Update logs on machines that don’t have access to the Microsoft’s symbol server. 
 
 If you find yourself needing to do this often, you should see if setting up a Symbol Proxy Server is viable for your networking configuration. For more information see [SymProxy](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/symproxy).
 
@@ -33,16 +33,16 @@ If you don’t have access to an online machine with the same version, you’ll 
 
 1. Copy all the WindowsUpdate ETL files from ```C:\Windows\logs\WindowsUpdate\``` to your online machine.
 
-2. On the online machine, open a PowerShell prompt and run “Get-WindowsUpdateLog”. This will download the symbols needed for log analysis.
+2. On the online machine, open a PowerShell prompt and run the “Get-WindowsUpdateLog” PowerShell command. This will download the symbols needed for log analysis. For more information, see [Get-WindowsUpdateLog](https://docs.microsoft.com/powershell/module/windowsupdate/get-windowsupdatelog?view=win10-ps).
 
 
 ## <span id="offline"></span><span id="OFFLINE"></span>Copy the symbols to the offline machine
 
 1. On the online machine, open a PowerShell prompt and run “Get-WindowsUpdateLog”. This will cache the symbols needed for log analysis.
 
-2. Copy all the files in %temp%\WindowsUpdateLog\SymCache from the online machine to %temp%\WindowsUpdateLog\SymCache on the offline machine.
+2. Copy all the files in %temp%\WindowsUpdateLog\SymCache from the online machine to ```%temp%\WindowsUpdateLog\SymCache``` on the offline machine.
 
-3. On the offline machine, open a PowerShell prompt and run “Get-WindowsUpdateLog” to analyze the logs
+3. On the offline machine, open a PowerShell prompt and run “Get-WindowsUpdateLog” to analyze the logs.
 
 
 ## <span id="symchk"></span><span id="SYMCHK"></span>Create a SymChk manifest file
@@ -73,12 +73,9 @@ If you don’t have access to an online machine with the same version, you’ll 
 
 ## See Also
 
-
-[Symbol Path](symbol-path.md) 
-
 [Using a Symbol Server](using-a-symbol-server.md).
 
-[Introduction to Symbols](introduction-to-symbols.md)
+[Symbol Path](symbol-path.md) 
 
 [Accessing Symbols for Debugging](accessing-symbols-for-debugging.md)
 
