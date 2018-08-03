@@ -39,7 +39,7 @@ For more information about code signing requirements, see [Get a code signing ce
 
 1. From the Hardware Dev Center dashboard, sign in as an administrator with your Microsoft account.
 
-2. Download the [Winqual.exe file](http://go.microsoft.com/fwlink/?LinkId=393250) from the Hardware Dev Center dashboard, and sign it with the new digital certificate for your company using the **SignTool**.
+2. Download the [Winqual.exe file](https://prodingestionentity1.blob.core.windows.net/hardware/WinqualSubmissionTool.msi?sv=2017-07-29&sr=b&sig=GdjBd2BQOJp4MDVtB5%2BsIJgfyYdV33S5%2FKlwil0IMkk%3D&st=2018-05-01T10%3A09%3A47Z&se=9999-12-31T18%3A29%3A59Z&sp=r) from the Hardware Dev Center dashboard, and sign it with the new digital certificate for your company using the **SignTool**.
 
 3. On the **Administration** page, in the **Digital certificates** tile, click **Upload code for digital certification**.
 

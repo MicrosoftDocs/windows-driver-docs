@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 # Hardware requirements for SoC-based platforms
 
 
-The [ACPI 5.0 specification](http://www.uefi.org/specifications) introduces a new set of hardware requirements to support SoC-based platforms that run Windows. ACPI 5.0 supports hardware-reduced system designs to lower cost, and supports the connected standby power model to enable long battery life.
+The [ACPI 5.0 specification](https://www.uefi.org/specifications) introduces a new set of hardware requirements to support SoC-based platforms that run Windows. ACPI 5.0 supports hardware-reduced system designs to lower cost, and supports the connected standby power model to enable long battery life.
 
 ## Hardware-reduced ACPI platforms
 
