@@ -44,7 +44,7 @@ Returned in I/O status block.
 
 A driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS or to an appropriate error status such as STATUS\_UNSUCCESSFUL.
 
-On success, a driver sets **Irp-&gt;IoStatus.Information** to a **PNP\_DEVICE\_STATE** bitmask.
+On success, a driver sets **Irp-&gt;IoStatus.Information** to a [**PNP\_DEVICE\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-an-irp-mn-surprise-removal-request#about-pnpdevicestate) bitmask.
 
 
 If a function or filter driver does not handle this IRP, it calls [**IoSkipCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff550355), does not set an [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine, and passes the IRP down to the next driver. Such a driver must not modify **Irp-&gt;IoStatus** and must not complete the IRP.
@@ -85,10 +85,4 @@ Requirements
 
 [**IoInvalidateDeviceState**](https://msdn.microsoft.com/library/windows/hardware/ff549361)
 
- 
-
- 
-
-
-
-
+[**PNP\_DEVICE\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-an-irp-mn-surprise-removal-request#about-pnpdevicestate)
