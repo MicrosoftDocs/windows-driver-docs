@@ -38,13 +38,13 @@ For example, the [**InstallApplication**](https://docs.microsoft.com/windows/des
 
 If your code calls non-universal APIs, you might see the following ApiValidator errors:
 
-* `Error: <Binary Name> has unsupported API call to <Module Name><Api Name>`:
+* `Error: <Binary Name> has unsupported API call to <Module Name><Api Name>`
     
-    If your app or base driver needs to run on Windows 10 as well as earlier versions of Windows, you must remove API calls in this category.
+    If your app or base driver needs to run on Windows 10 as well as earlier versions of Windows, you must remove API calls in the above category.
 
-* `Error: <Binary Name> has a dependency on <Module Name><Api Name> but is missing: IsApiSetImplemented("<contract-name-for-Module>)`:
+* `Error: <Binary Name> has a dependency on <Module Name><Api Name> but is missing: IsApiSetImplemented("<contract-name-for-Module>)`
     
-    API calls in this category compile fine, but may not behave as expected at runtime, depending on the target operating system. To pass the U requirement of [DCHU](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers#design-principles), wrap these calls with **IsApiSetImplemented**.
+    API calls in the above category compile fine, but may not behave as expected at runtime, depending on the target operating system. To pass the U requirement of [DCHU](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers#design-principles), wrap these calls with **IsApiSetImplemented**.
 
 This enables you to compile your code with no errors.  Then at runtime, if the target machine does not have the needed API, **IsApiSetImplemented** returns FALSE.
 
