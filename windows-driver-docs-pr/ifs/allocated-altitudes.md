@@ -1555,7 +1555,7 @@ The current altitude allocations are listed for each of the following load order
 | aictracedrv\_b.sys  | 47000    | AI Consulting      |
 | hhdcfltr.sys        | 46900    | Seagate Technology |
 | Npsvctrig.sys       | 46000    | Microsoft          |
-| fileinfo            | 40500    | Microsoft          |
+| fileinfo            | 45000    | Microsoft          |
 | klvfs.sys           | 44900    | Kaspersky Lab      |
 | rsfxdrv.sys         | 41000    | Microsoft          |
 | defilter.sys        | 40900    | Microsoft          |

@@ -3,7 +3,11 @@ title: Offline Symbols for Windows Update
 description: This topic describes how you can work with off line symbols for Windows Update.
 keywords: ["symbols", "setup, symbols", "symbols, setup"]
 ms.author: domars
+<<<<<<< HEAD
 ms.date: 08/06/2018
+=======
+ms.date: 08/03/2018
+>>>>>>> master
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -17,8 +21,11 @@ This topic describes how you can work with offline symbols for Windows Update. I
 If you find yourself needing to do this often, you should see if setting up a Symbol Proxy Server is viable for your networking configuration. For more information see [SymProxy](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/symproxy).
 
 All the options below require you to have one machine that can connect to Microsoft’s symbol server, and have the ability to copy files to or from the machine that has the logs. The machine that doesn’t have access to the symbol server will be referred to as the *offline* machine, and the machine that does have access as the *online* machine.
+<<<<<<< HEAD
 
  We recommend using a single online machine per OS build version so the WU symbol cache will build month-by-month and contain the WU symbols from multiple update releases. 
+=======
+>>>>>>> master
  
 If you have access to an online machine with the same exact patch level as the offline machine, you have two options:
 
@@ -26,6 +33,7 @@ If you have access to an online machine with the same exact patch level as the o
 
 •	Copy the Symbols to offline machine
 
+<<<<<<< HEAD
 Verify the online and offline PCs the same version level by running ```winver``` or ```ver``` on both machines.
 
 ```
@@ -33,6 +41,9 @@ C:\>ver
 
 Microsoft Windows [Version 10.0.17134.167]
 ```
+=======
+Verify the online and offline PCs the same version level by running ‘winver’ on both machines.
+>>>>>>> master
 
 If you don’t have access to an online machine with the same version, you’ll need to go through some extra steps to create a SymChk manifest file, described later in this topic.
 

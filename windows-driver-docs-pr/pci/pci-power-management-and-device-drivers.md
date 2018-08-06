@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 -   December 4, 2001
 
-This article clarifies some confusion that vendors have experienced about how hardware that complies with PCI Power Management (PCI-PM) interacts with device drivers in the operating system and about how PCI-PM integrates with ACPI. For more information, see <http://www.uefi.org/specifications>
+This article clarifies some confusion that vendors have experienced about how hardware that complies with PCI Power Management (PCI-PM) interacts with device drivers in the operating system and about how PCI-PM integrates with ACPI. For more information, see <https://www.uefi.org/specifications>
 
 ## Device drivers and PCI power management
 
@@ -77,7 +77,7 @@ The OnNow architecture is a layered architecture, handling the integration of th
 
 -   Integrate ACPI and PCI-PM capabilities into your devices as described in this article.
 -   The PCI Power Management specification is available at <http://www.pcisig.com>. This link leaves the Microsoft.com site.
--   ACPI Specification available at <http://www.uefi.org/specifications>. This link leaves the Microsoft.com site.
+-   ACPI Specification available at <https://www.uefi.org/specifications>. This link leaves the Microsoft.com site.
 -   The ACPI Component Architecture (ACPICA) compiler can be found at <https://acpica.org/downloads/binary-tools>. This link leaves the Microsoft.com site.
 
  
