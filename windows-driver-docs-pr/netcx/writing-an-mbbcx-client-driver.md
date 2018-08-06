@@ -87,11 +87,11 @@ In the implementation of the *EvtMbbDeviceCreateAdapter* callback function, the 
 
 3. We recommend that MBBCx client drivers keep an internal mapping between the created NETADAPTER object and the returned *SessionId*. This helps track the data session-to-NETADAPTER object relationship, which is especially useful when multiple PDP contexts/EPS bearers have been activated.
 
-4. Before returning from *EvtMbbDeviceCreateAdapter*, client drivers must set the adapter's capabilities and start the adapter. Call these methods in order:
-    1. Set your adapter's datapath capabilities with [**NetAdapterSetDatapathCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetdatapathcapabilities).
-    2. Set your adapter's link layer capabilities with [**NetAdapterSetLinkLayerCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetlinklayercapabilities).
-    3. Set your adapter's L2 maximum transmission unit (MTU) size with [**NetAdapterSetLinkLayerMtuSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetlinklayermtusize).
-    4. Call [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstart).
+4. Before returning from *EvtMbbDeviceCreateAdapter*, client drivers must start the adapter by calling [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstart). Optionally, they can also set the adapter's capabilities by calling one or more of these functions *before* the call to **NetAdapterStart**: 
+    - [**NetAdapterSetDatapathCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetdatapathcapabilities)
+    - [**NetAdapterSetLinkLayerCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetlinklayercapabilities)
+    - [**NetAdapterSetLinkLayerMtuSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetlinklayermtusize)
+    - [**NetAdapterSetPowerCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetpowercapabilities)
 
 MBBCx invokes this callback function at least once, so there is always one NETADPATER object for the primary PDP context/default EPS bearer. If multiple PDP contexts/EPS bearers are activated, MBBCx might invoke this callback function more times, once for every data session to be established. There must be a one-to-one relationship between the network interface represented by the NETADAPTER object and a data session, as shown in the following diagram.
 
@@ -137,23 +137,25 @@ The following example shows how to create a NETADAPTER object for a data session
 
         deviceContext->Sessions[sessionId].NetAdapterContext = netAdapterContext;
 
-        // Set datapath capabilities
+        //
+        // Optional: set adapter capabilities
+        //
         ...
         NetAdapterSetDatapathCapabilities(netAdapter, 
                                           &txCapabilities, 
                                           &rxCapabilities);
 
-        // Set link layer capabilities
         ...
         NetAdapterSetLinkLayerCapabilities(netAdapter,
                                            &linkLayerCapabilities);
                                            
-        // Set link layer MTU size
         ...
         NetAdapterSetLinkLayerMtuSize(netAdapter,
                                       MY_MAX_PACKET_SIZE - ETHERNET_HEADER_LENGTH);
 
-        // Start the adapter
+        // 
+        // Required: start the adapter
+        //
         status = NetAdapterStart(netAdapter);
 
         return status;
