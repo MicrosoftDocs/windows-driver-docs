@@ -34,10 +34,10 @@ Specifies the name of the software to be installed.  This name uniquely identifi
 
 Specifies one or more (ORed) flags.
 
-**0**
+**0x00000000**  
 The **AddSoftware** directive is processed only once.
 
-**1**
+**0x00000001**  
 The **AddSoftware** directive is processed once for each component device that specifies **AddSoftware** with the same unique *SoftwareName*.
 
 *software-install-section*
