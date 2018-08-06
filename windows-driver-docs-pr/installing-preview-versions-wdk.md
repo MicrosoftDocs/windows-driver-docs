@@ -43,11 +43,11 @@ reg add HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\StrongName\Verificatio
 
 ### 3. Install SDK Insider Preview 
 
-[Get SDK Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK)
+[Get SDK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK)
 
 ### 4. Install WDK Insider Preview
 
-[Get WDK Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK)
+[Get WDK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK)
 
 > [!Note]   
 > During installation you will see the Visual Studio installer install the WDK Visual Studio Extensions. 
