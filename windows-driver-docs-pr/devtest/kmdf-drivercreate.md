@@ -14,6 +14,7 @@ api_name:
 - DriverCreate
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # DriverCreate rule (kmdf)

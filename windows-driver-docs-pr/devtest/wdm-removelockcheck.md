@@ -14,6 +14,7 @@ api_name:
 - RemoveLockCheck
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # RemoveLockCheck rule (wdm)

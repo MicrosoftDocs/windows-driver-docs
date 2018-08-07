@@ -2,6 +2,7 @@
 Description: CDC Direct Line Control Model
 title: CDC Direct Line Control Model
 author: windows-driver-content
+ms.localizationpriority: medium
 ---
 
 # CDC Direct Line Control Model

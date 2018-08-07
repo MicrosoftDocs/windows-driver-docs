@@ -14,6 +14,7 @@ api_name:
 - Remote Server Syntax
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Remote Server Syntax

@@ -14,6 +14,7 @@ api_name:
 - QueuedSpinLock
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # QueuedSpinLock rule (wdm)

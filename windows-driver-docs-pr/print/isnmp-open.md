@@ -18,6 +18,7 @@ api_location:
 - olesnmp.h
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # ISNMP::Open method

@@ -14,6 +14,7 @@ api_name:
 - ks.enumdrvobj
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ks.enumdrvobj

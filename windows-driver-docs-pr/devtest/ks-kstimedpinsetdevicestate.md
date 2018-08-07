@@ -14,6 +14,7 @@ api_name:
 - KsTimedPinSetDeviceState
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # KsTimedPinSetDeviceState rule ()

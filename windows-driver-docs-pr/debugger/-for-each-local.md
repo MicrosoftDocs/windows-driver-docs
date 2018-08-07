@@ -14,6 +14,7 @@ api_name:
 - for_each_local
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !for\_each\_local

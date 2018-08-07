@@ -14,6 +14,7 @@ api_name:
 - ubd
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ubd

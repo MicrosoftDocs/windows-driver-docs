@@ -14,6 +14,7 @@ api_name:
 - minipkd.lun
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !minipkd.lun

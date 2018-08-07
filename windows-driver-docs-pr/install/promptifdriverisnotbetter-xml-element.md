@@ -9,6 +9,7 @@ api_name:
 - promptIfDriverIsNotBetter XML Element
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # promptIfDriverIsNotBetter XML Element

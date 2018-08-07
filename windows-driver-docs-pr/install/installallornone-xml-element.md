@@ -9,6 +9,7 @@ api_name:
 - installAllOrNone XML Element
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # installAllOrNone XML Element

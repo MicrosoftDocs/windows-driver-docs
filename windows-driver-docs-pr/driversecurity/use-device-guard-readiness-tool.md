@@ -7,6 +7,7 @@ ms.date: 02/22/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility

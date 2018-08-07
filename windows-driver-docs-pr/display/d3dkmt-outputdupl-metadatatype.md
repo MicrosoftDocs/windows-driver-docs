@@ -16,6 +16,7 @@ ms.date: 01/05/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # D3DKMT\_OUTPUTDUPL\_METADATATYPE enumeration

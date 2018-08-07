@@ -3,6 +3,7 @@ title: Driver x64 Restrictions
 author: windows-driver-content
 description: Driver x64 Restrictions
 ms.assetid: 717ca559-93aa-48d6-8347-bfdf223f1aa4
+ms.localizationpriority: medium
 ---
 
 # Driver x64 Restrictions

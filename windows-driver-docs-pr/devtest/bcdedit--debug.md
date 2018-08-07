@@ -14,6 +14,7 @@ api_name:
 - BCDEdit /debug
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # BCDEdit /debug

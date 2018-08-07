@@ -14,6 +14,7 @@ api_name:
 - RequestGetStatusValid
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # RequestGetStatusValid rule (kmdf)

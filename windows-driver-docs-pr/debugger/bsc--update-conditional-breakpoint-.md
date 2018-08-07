@@ -14,6 +14,7 @@ api_name:
 - bsc (Update Conditional Breakpoint)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # bsc (Update Conditional Breakpoint)

@@ -14,6 +14,7 @@ api_name:
 - STORAGE_DEVICE_ABNORMALITY_DETECTED
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x140: STORAGE\_DEVICE\_ABNORMALITY\_DETECTED

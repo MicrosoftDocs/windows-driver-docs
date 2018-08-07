@@ -7,6 +7,7 @@ ms.date: 08/24/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Updating Device Firmware using Windows Update

@@ -14,6 +14,7 @@ api_name:
 - usbkd.hub2_info_from_fdo
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !usbkd.hub2\_info\_from\_fdo

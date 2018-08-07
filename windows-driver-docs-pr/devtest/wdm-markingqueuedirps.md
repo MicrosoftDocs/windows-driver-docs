@@ -14,6 +14,7 @@ api_name:
 - MarkingQueuedIrps
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # MarkingQueuedIrps rule (wdm)

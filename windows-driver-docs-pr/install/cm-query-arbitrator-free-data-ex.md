@@ -9,6 +9,7 @@ api_name:
 - CM_Query_Arbitrator_Free_Data_Ex
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Query_Arbitrator_Free_Data_Ex

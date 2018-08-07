@@ -14,6 +14,7 @@ api_name:
 - RequestForUrbXrb
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # RequestForUrbXrb rule (kmdf)

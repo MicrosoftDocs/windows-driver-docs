@@ -14,6 +14,7 @@ api_name:
 - TCPIP_AOAC_NIC_ACTIVE_REFERENCE_LEAK
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x150: TCPIP\_AOAC\_NIC\_ACTIVE\_REFERENCE\_LEAK

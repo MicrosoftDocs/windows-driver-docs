@@ -14,6 +14,7 @@ api_name:
 - .scriptunload (Unload Script)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .scriptunload (Unload Script)

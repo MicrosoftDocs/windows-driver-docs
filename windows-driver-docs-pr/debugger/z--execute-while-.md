@@ -14,6 +14,7 @@ api_name:
 - z (Execute While)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # z (Execute While)

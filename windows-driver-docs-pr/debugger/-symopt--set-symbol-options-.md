@@ -14,6 +14,7 @@ api_name:
 - .symopt (Set Symbol Options)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .symopt (Set Symbol Options)

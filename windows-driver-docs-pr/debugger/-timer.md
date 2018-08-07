@@ -14,6 +14,7 @@ api_name:
 - timer
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !timer

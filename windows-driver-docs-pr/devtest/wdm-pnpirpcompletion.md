@@ -14,6 +14,7 @@ api_name:
 - PnpIrpCompletion
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # PnpIrpCompletion rule (wdm)

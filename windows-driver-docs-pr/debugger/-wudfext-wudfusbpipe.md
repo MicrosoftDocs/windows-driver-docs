@@ -14,6 +14,7 @@ api_name:
 - wudfext.wudfusbpipe
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wudfext.wudfusbpipe

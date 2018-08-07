@@ -13,6 +13,7 @@ api_name:
 - IPrinterBidiSchemaResponses.AddEnum
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaResponses::AddEnum method

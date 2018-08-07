@@ -3,6 +3,7 @@ title: Windows Kernel-Mode Memory Manager
 author: windows-driver-content
 description: Windows Kernel-Mode Memory Manager
 ms.assetid: ab464d5b-7bad-494e-80cd-e32ca9e9fa8d
+ms.localizationpriority: medium
 ---
 
 # Windows Kernel-Mode Memory Manager

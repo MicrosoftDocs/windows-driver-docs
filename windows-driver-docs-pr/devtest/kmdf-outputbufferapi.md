@@ -14,6 +14,7 @@ api_name:
 - OutputBufferAPI
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # OutputBufferAPI rule (kmdf)

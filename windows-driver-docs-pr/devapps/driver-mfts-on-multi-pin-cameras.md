@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # <span id="devapps.driver_mfts_on_multi-pin_cameras"></span>Considerations for Driver MFTs on multi-pin cameras (UWP device apps)

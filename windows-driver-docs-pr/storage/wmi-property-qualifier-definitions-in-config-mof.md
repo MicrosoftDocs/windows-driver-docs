@@ -2,6 +2,7 @@
 title: WMI Property Qualifier Definitions in Config.mof
 description: WMI Property Qualifier Definitions in Config.mof
 ms.assetid: f277c3f4-f1a8-48e4-9ef5-9b5af2db2ef3
+ms.localizationpriority: medium
 ---
 
 # WMI Property Qualifier Definitions in Config.mof

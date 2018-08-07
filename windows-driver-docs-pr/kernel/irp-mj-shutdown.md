@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: af0b01b5-5f81-42da-aa4b-433bd422a51f
 keywords:
  - IRP_MJ_SHUTDOWN Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_SHUTDOWN

@@ -3,6 +3,7 @@ title: Writing WDM Drivers
 author: windows-driver-content
 description: Writing WDM Drivers
 ms.assetid: 379305f0-3caa-4c8d-add5-17e8c83f2429
+ms.localizationpriority: medium
 ---
 
 # Writing WDM Drivers

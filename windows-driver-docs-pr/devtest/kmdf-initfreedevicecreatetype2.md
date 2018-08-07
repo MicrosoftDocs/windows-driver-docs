@@ -14,6 +14,7 @@ api_name:
 - InitFreeDeviceCreateType2
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # InitFreeDeviceCreateType2 rule (kmdf)

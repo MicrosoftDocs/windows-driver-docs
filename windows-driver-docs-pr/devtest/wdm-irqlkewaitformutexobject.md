@@ -14,6 +14,7 @@ api_name:
 - IrqlKeWaitForMutexObject
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IrqlKeWaitForMutexObject rule (wdm)

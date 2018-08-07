@@ -11,6 +11,7 @@ api_location:
 - Ntddmodm.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # GUID_CLASS_MODEM

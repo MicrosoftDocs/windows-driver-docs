@@ -14,6 +14,7 @@ api_name:
 - wudfext.wudfrefhist
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wudfext.wudfrefhist

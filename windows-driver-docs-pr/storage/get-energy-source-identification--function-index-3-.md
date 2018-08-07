@@ -2,6 +2,7 @@
 title: Get Energy Source Identification (Function Index 3)
 description: This function returns identification information about the Energy Source (ES), which can be host-managed or device-managed.
 ms.assetid: E1589FD0-5D03-42EF-8078-0AE53CFB1ACA
+ms.localizationpriority: medium
 ---
 
 # Get Energy Source Identification (Function Index 3)

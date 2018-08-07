@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # ChkINF Command Syntax
 
 
-The ChkINF scripts are located in the %WindowSdkDir%\\Tools\\x86\\Chkinf subdirectory. To run ChkINF, open a Command Prompt window and navigate to the ChkINF directory. Type **chkinf** to run the ChkINF.bat file.
+The ChkINF scripts are located in the %WindowsSdkDir%\\Tools\\x86\\Chkinf subdirectory. To run ChkINF, open a Command Prompt window and navigate to the ChkINF directory. Type **chkinf** to run the ChkINF.bat file.
 
 Use the following command syntax:
 

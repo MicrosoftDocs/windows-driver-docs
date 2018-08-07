@@ -14,6 +14,7 @@ api_name:
 - ~n (Suspend Thread)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ~n (Suspend Thread)

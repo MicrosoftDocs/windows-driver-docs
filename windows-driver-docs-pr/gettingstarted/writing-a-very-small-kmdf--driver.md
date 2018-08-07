@@ -9,6 +9,7 @@ ms.date: 04/20/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Write a universal Hello World driver (KMDF)

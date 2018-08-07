@@ -14,6 +14,7 @@ api_name:
 - ppmidle
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ppmidle

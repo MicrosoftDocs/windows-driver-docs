@@ -14,6 +14,7 @@ api_name:
 - WlanTimedScan
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # WlanTimedScan rule (ndis)

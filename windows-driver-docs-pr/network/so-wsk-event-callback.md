@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - SO_WSK_EVENT_CALLBACK Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # SO\_WSK\_EVENT\_CALLBACK

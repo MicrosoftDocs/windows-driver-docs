@@ -2,6 +2,7 @@
 title: DSM\_COUNTERS WMI Class
 description: DSM\_COUNTERS WMI Class
 ms.assetid: 11ff77d7-5643-45ec-ac38-26ee70e6ea94
+ms.localizationpriority: medium
 ---
 
 # DSM\_COUNTERS WMI Class

@@ -14,6 +14,7 @@ api_name:
 - usb3kd.hub_info
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !usb3kd.hub\_info

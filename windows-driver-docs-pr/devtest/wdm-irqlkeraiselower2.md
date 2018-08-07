@@ -14,6 +14,7 @@ api_name:
 - IrqlKeRaiseLower2
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IrqlKeRaiseLower2 rule (wdm)

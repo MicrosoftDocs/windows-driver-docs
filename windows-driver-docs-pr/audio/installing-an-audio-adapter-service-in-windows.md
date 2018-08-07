@@ -12,6 +12,7 @@ ms.date: 10/26/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing an Audio Adapter Service in Windows

@@ -14,6 +14,7 @@ api_name:
 - ds, dS (Display String)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ds, dS (Display String)

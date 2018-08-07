@@ -14,6 +14,7 @@ api_name:
 - SetCompletionRoutineFromDispatch
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # SetCompletionRoutineFromDispatch rule (kmdf)

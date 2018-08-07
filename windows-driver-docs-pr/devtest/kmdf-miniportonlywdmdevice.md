@@ -14,6 +14,7 @@ api_name:
 - MiniportOnlyWdmDevice
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # MiniportOnlyWdmDevice rule (kmdf)

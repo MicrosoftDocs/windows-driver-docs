@@ -14,6 +14,7 @@ api_name:
 - CompleteRequestStatusCheck
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CompleteRequestStatusCheck rule (wdm)

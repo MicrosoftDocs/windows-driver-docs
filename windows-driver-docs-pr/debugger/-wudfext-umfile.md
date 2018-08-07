@@ -14,6 +14,7 @@ api_name:
 - wudfext.umfile
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wudfext.umfile

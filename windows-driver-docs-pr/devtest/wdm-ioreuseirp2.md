@@ -14,6 +14,7 @@ api_name:
 - IoReuseIrp2
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IoReuseIrp2 rule (wdm)

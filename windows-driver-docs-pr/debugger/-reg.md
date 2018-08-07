@@ -14,6 +14,7 @@ api_name:
 - reg
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !reg

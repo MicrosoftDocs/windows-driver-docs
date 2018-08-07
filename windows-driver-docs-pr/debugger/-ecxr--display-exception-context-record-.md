@@ -14,6 +14,7 @@ api_name:
 - .ecxr (Display Exception Context Record)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .ecxr (Display Exception Context Record)

@@ -14,6 +14,7 @@ api_name:
 - APP_TAGGING_INITIALIZATION_FAILED
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x10A: APP\_TAGGING\_INITIALIZATION\_FAILED

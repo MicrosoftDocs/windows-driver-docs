@@ -14,6 +14,7 @@ api_name:
 - .remote (Create Remote.exe Server)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .remote (Create Remote.exe Server)

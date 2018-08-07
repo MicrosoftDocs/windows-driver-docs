@@ -5,6 +5,7 @@ ms.assetid:
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage card requirements

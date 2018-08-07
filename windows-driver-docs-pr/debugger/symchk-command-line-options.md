@@ -14,6 +14,7 @@ api_name:
 - SymChk Command-Line Options
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # SymChk Command-Line Options

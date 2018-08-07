@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.assetid: 5788294f-2145-4381-9b06-3b138b2d26df
+ms.localizationpriority: medium
 ---
 
 # WMI Minor IRPs

@@ -11,6 +11,7 @@ api_location:
 - Devpkey.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # DEVPKEY_Numa_Proximity_Domain

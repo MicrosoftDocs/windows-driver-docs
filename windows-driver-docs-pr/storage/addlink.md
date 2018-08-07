@@ -11,6 +11,7 @@ api_location:
 - Hbapiwmi.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # AddLink function

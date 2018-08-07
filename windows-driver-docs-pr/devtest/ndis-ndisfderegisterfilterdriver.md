@@ -14,6 +14,7 @@ api_name:
 - NdisFDeregisterFilterDriver
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # NdisFDeregisterFilterDriver rule (ndis)

@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_PM_REMOVE_WOL_PATTERN Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_PM\_REMOVE\_WOL\_PATTERN

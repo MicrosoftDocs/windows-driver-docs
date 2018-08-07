@@ -14,6 +14,7 @@ api_name:
 - s (Set Current Process)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # |s (Set Current Process)

@@ -14,6 +14,7 @@ api_name:
 - PcRegisterAdapterPower
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # PcRegisterAdapterPower rule (audio)

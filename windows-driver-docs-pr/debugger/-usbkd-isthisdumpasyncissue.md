@@ -14,6 +14,7 @@ api_name:
 - usbkd.isthisdumpasyncissue
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !usbkd.isthisdumpasyncissue

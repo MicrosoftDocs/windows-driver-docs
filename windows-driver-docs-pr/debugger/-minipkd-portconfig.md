@@ -14,6 +14,7 @@ api_name:
 - minipkd.portconfig
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !minipkd.portconfig

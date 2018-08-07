@@ -2,6 +2,7 @@
 title: MSiSCSI\_NICPerformance WMI Class
 description: MSiSCSI\_NICPerformance WMI Class
 ms.assetid: e5894b20-8ea7-46ec-9960-3d9891b06ac4
+ms.localizationpriority: medium
 ---
 
 # MSiSCSI\_NICPerformance WMI Class

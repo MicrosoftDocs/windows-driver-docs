@@ -9,6 +9,7 @@ api_name:
 - finishText XML Element
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # finishText XML Element

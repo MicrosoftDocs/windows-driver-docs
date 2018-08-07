@@ -13,6 +13,7 @@ api_name:
 - INVALID_CALLBACK_STACK_ADDRESS
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check Bug Check 0x1CD: INVALID\_CALLBACK\_STACK\_ADDRESS 

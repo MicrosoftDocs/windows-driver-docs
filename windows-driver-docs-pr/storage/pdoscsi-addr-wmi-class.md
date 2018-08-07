@@ -2,6 +2,7 @@
 title: PDOSCSI\_ADDR WMI Class
 description: PDOSCSI\_ADDR WMI Class
 ms.assetid: 8fdcfc5a-308a-457f-a015-e082e96f9df7
+ms.localizationpriority: medium
 ---
 
 # PDOSCSI\_ADDR WMI Class

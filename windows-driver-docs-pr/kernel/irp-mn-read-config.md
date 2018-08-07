@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: cbc5b959-0aae-4c86-b490-296965a7f158
 keywords:
  - IRP_MN_READ_CONFIG Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_READ\_CONFIG

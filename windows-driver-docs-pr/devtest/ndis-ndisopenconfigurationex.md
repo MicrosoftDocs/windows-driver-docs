@@ -14,6 +14,7 @@ api_name:
 - NdisOpenConfigurationEx
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # NdisOpenConfigurationEx rule (ndis)

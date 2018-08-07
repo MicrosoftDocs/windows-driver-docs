@@ -7,6 +7,7 @@ ms.date: 05/03/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # <span id="debugger.setting_up_kernel-mode_debugging_using_serial_over_usb_manually_"></span>Setting Up Kernel-Mode Debugging using Serial over USB Manually

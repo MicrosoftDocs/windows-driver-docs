@@ -14,6 +14,7 @@ api_name:
 - NdisStallExecution_Delay
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # NdisStallExecution\_Delay rule (ndis)

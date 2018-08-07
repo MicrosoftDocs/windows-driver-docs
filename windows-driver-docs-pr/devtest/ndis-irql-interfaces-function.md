@@ -14,6 +14,7 @@ api_name:
 - Irql_Interfaces_Function
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Irql\_Interfaces\_Function rule (ndis)

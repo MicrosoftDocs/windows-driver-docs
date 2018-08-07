@@ -9,6 +9,7 @@ api_name:
 - scanHardware XML Element
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # scanHardware XML Element

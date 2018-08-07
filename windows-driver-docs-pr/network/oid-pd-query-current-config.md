@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_PD_QUERY_CURRENT_CONFIG Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_PD\_QUERY\_CURRENT\_CONFIG

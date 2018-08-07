@@ -9,6 +9,7 @@ api_name:
 - DIF_DETECTVERIFY
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # DIF_DETECTVERIFY

@@ -14,6 +14,7 @@ api_name:
 - ustr
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ustr

@@ -2,6 +2,7 @@
 title: MSiSCSI\_HBASessionConfig WMI Class
 description: MSiSCSI\_HBASessionConfig WMI Class
 ms.assetid: ef3ac7d0-be4a-457e-b837-a6434776dfc1
+ms.localizationpriority: medium
 ---
 
 # MSiSCSI\_HBASessionConfig WMI Class

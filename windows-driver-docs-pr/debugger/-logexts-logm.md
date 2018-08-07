@@ -14,6 +14,7 @@ api_name:
 - logexts.logm
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !logexts.logm

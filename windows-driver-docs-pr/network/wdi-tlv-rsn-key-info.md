@@ -9,6 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - WDI_TLV_RSN_KEY_INFO Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # WDI_TLV_RSN_KEY_INFO

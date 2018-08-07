@@ -14,6 +14,7 @@ api_name:
 - QueuedSpinLockRelease
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # QueuedSpinLockRelease rule (storport)

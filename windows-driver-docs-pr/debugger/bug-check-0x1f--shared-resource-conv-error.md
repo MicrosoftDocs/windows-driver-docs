@@ -14,6 +14,7 @@ api_name:
 - SHARED_RESOURCE_CONV_ERROR
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1F: SHARED\_RESOURCE\_CONV\_ERROR

@@ -2,6 +2,7 @@
 title: WMI Property Qualifier Definitions in Mgmt.mof
 description: WMI Property Qualifier Definitions in Mgmt.mof
 ms.assetid: 2d8e7e83-6304-459f-b9d8-b40365834bb7
+ms.localizationpriority: medium
 ---
 
 # WMI Property Qualifier Definitions in Mgmt.mof

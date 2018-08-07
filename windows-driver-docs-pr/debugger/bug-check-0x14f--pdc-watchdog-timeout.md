@@ -14,6 +14,7 @@ api_name:
 - PDC_WATCHDOG_TIMEOUT
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x14F: PDC\_WATCHDOG\_TIMEOUT

@@ -11,6 +11,7 @@ api_location:
 - 61883.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # GUID_61883_CLASS

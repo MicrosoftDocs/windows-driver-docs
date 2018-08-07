@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Read data from hardware
@@ -22,7 +23,8 @@ Typically the “top end” of the sensor driver is designed to be accessible to
 
 1. Click the *client.cpp* file to open it, and find the **OnInterruptIsr** function.
 2. Find the following code:
-```ManagedCPlusPlus
+
+```cpp
 // Read the Interrupt source
    BYTE IntSrcBuffer = 0;
    WdfWaitLockAcquire(pAccDevice->m_I2CWaitLock, NULL);
@@ -33,8 +35,9 @@ Typically the “top end” of the sensor driver is designed to be accessible to
 The preceding code first acquires a lock on the device, and then it determines the source of the interrupt, using the **I2CSensorReadRegister** function. The code finally releases the lock on the device.
 
 3. Find the following code:
-```ManagedCPlusPlus
-// Create work item   
+
+```cpp
+// Create work item
    InterruptRecognized = TRUE;
 
    BOOLEAN WorkItemQueued = WdfInterruptQueueWorkItemForIsr(Interrupt);
@@ -49,7 +52,8 @@ After the sensor driver successfully determines the source of the interrupt, the
 The sample sensor driver uses **GetData** to retrieve the sensor instance, acquire a lock on the device, and then read the sensor data. When the **GetData** function call returns, the lock is released.
 
 1. Within the *client.cpp* file, find the **OnInterruptWorkItem** function. Then within that function, review the following code:
-```ManagedCPlusPlus
+
+```cpp
 // Invoke the function that Reads the device data
    WdfInterruptAcquireLock(Interrupt);
    Status = pAccDevice->GetData();
@@ -57,7 +61,7 @@ The sample sensor driver uses **GetData** to retrieve the sensor instance, acqui
 ```
 
 2. Find the **GetData** function, and find the following code:
-```ManagedCPlusPlus
+```cpp
 // Read the device data
    BYTE DataBuffer[ADXL345_DATA_REPORT_SIZE_BYTES];
    WdfWaitLockAcquire(m_I2CWaitLock, NULL);
@@ -68,7 +72,7 @@ The sample sensor driver uses **GetData** to retrieve the sensor instance, acqui
 The preceding code sets aside a buffer of size *DataBuffer*, and reads the device data into that buffer, via an I2C connection.
 
 3. Find the following code:
-```ManagedCPlusPlus
+```cpp
 // Add timestamp
    FILETIME Timestamp = {};
    GetSystemTimeAsFileTime(&Timestamp);

@@ -13,6 +13,7 @@ api_name:
 - IPrinterBidiSchemaResponses.AddFloat
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaResponses::AddFloat method

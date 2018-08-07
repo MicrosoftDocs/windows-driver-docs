@@ -14,6 +14,7 @@ api_name:
 - MarkQueryRelations
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # MarkQueryRelations rule (wdm)

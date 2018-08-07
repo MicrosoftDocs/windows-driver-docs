@@ -9,6 +9,7 @@ ms.date: 03/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EVT_MBB_DEVICE_SEND_MBIM_FRAGMENT

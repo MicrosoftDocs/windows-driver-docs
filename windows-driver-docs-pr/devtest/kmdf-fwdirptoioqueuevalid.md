@@ -14,6 +14,7 @@ api_name:
 - FwdIrpToIoQueueValid
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # FwdIrpToIoQueueValid rule (kmdf)

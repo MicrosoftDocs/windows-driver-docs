@@ -14,6 +14,7 @@ api_name:
 - t (Trace)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # t (Trace)

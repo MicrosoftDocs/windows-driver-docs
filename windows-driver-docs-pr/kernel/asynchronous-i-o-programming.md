@@ -3,6 +3,7 @@ title: Asynchronous I/O Programming
 author: windows-driver-content
 description: Asynchronous I/O Programming
 ms.assetid: f50c98ab-3aae-43f6-be91-2ae587105767
+ms.localizationpriority: medium
 ---
 
 # Asynchronous I/O Programming

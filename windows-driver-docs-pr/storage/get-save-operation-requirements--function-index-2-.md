@@ -2,6 +2,7 @@
 title: Get Save Operation Requirements (Function Index 2)
 description: This function returns information about hardware requirements for a save operation.
 ms.assetid: 502DAF89-F390-40A4-846C-C3B4DF3E505D
+ms.localizationpriority: medium
 ---
 
 # Get Save Operation Requirements (Function Index 2)

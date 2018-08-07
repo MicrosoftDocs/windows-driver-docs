@@ -14,6 +14,7 @@ api_name:
 - devstack
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !devstack

@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - WSK_TDI_BEHAVIOR Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # WSK\_TDI\_BEHAVIOR

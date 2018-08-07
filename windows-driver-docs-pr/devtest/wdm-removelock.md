@@ -14,6 +14,7 @@ api_name:
 - RemoveLock
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # RemoveLock rule (wdm)

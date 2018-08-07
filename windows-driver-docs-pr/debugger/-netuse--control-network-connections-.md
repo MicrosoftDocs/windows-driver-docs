@@ -14,6 +14,7 @@ api_name:
 - .netuse (Control Network Connections)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .netuse (Control Network Connections)
