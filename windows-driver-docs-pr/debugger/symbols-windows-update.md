@@ -3,7 +3,7 @@ title: Offline Symbols for Windows Update
 description: This topic describes how you can work with off line symbols for Windows Update.
 keywords: ["symbols", "setup, symbols", "symbols, setup"]
 ms.author: domars
-ms.date: 08/03/2018
+ms.date: 08/07/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -20,23 +20,27 @@ All the options below require you to have one machine that can connect to Micros
  
 If you have access to an online machine with the same exact patch level as the offline machine, you have two options:
 
-•	Copy the ETL event log the to online machine
+•	[Option 1: Copy the ETL event log to the online machine](#ETL)
 
-•	Copy the Symbols to offline machine
+•	[Option 2: Copy the Symbols to offline machine](#OFFLINE)
 
 Verify the online and offline PCs the same version level by running ‘winver’ on both machines.
 
-If you don’t have access to an online machine with the same version, you’ll need to go through some extra steps to create a SymChk manifest file, described later in this topic.
+If you don’t have access to an online machine with the same version, you’ll need to go through some extra steps to create a SymChk manifest file, described later in this topic in [Option 3: Create a SymChk manifest file](#SYMCHK).
 
 
-## <span id="etl"></span><span id="ETL"></span>Copy the ETL event log to the online machine
+## <span id="etl"></span><span id="ETL"></span>Option 1: Copy the ETL event log to the online machine
 
 1. Copy all the WindowsUpdate ETL files from ```C:\Windows\logs\WindowsUpdate\``` to your online machine.
 
-2. On the online machine, open a PowerShell prompt and run the “Get-WindowsUpdateLog” PowerShell command. This will download the symbols needed for log analysis. For more information, see [Get-WindowsUpdateLog](https://docs.microsoft.com/powershell/module/windowsupdate/get-windowsupdatelog?view=win10-ps).
+2. On the online machine, open a PowerShell prompt and run the following [Get-WindowsUpdateLog](https://docs.microsoft.com/powershell/module/windowsupdate/get-windowsupdatelog?view=win10-ps) PowerShell command. 
+   ```
+   Get-WindowsUpdateLog -ETLPath <path to ETLs>
+   ```
+   This will download the symbols needed for log analysis.
 
 
-## <span id="offline"></span><span id="OFFLINE"></span>Copy the symbols to the offline machine
+## <span id="offline"></span><span id="OFFLINE"></span>Option 2: Copy the symbols to the offline machine
 
 1. On the online machine, open a PowerShell prompt and run “Get-WindowsUpdateLog”. This will cache the symbols needed for log analysis.
 
@@ -45,7 +49,7 @@ If you don’t have access to an online machine with the same version, you’ll 
 3. On the offline machine, open a PowerShell prompt and run “Get-WindowsUpdateLog” to analyze the logs.
 
 
-## <span id="symchk"></span><span id="SYMCHK"></span>Create a SymChk manifest file
+## <span id="symchk"></span><span id="SYMCHK"></span>Option 3: Create a SymChk manifest file
 
 1.	On the offline machine, follow steps at [Using a Manifest File with SymChk](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/using-a-manifest-file-with-symchk) to create a manifest for these files in the system32 directory:
 
