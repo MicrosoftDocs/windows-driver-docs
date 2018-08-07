@@ -34,56 +34,91 @@ In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://docs.microsoft.com/windows-hardware/dri
     }
     ```
 
-2. Call [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926).
+2. Call [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926). 
 
-3. Create the default NETADAPTER object. To do so, the client calls [**NetDefaultAdapterInitAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netdefaultadapterinitallocate), followed by optional **NetAdapterInitSetXxx** methods to initailize the adapter's attributes. Finally, the client calls [**NetAdapterCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptercreate). 
+> [!TIP]
+> If your device supports more than one NETADAPTER, we recommend recording the number of adapters your device supports and pointers to each adapter in your device context.
+
+3. Create the NETADAPTER object. To do so, the client calls either [**NetDefaultAdapterInitAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netdefaultadapterinitallocate) or [**NetAdapterInitAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterinitallocate), followed by optional **NetAdapterInitSetXxx** methods to initailize the adapter's attributes. Finally, the client calls [**NetAdapterCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptercreate). 
+
+    The following example shows how a client driver might initialize multiple NETADAPTER objects, starting with the default adapter. Note that error handling is simplified in this example.
 
     ```C++
-    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&attribs, MYDRIVER_ADAPTER_CONTEXT);
+    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&attribs, MY_ADAPTER_CONTEXT);
 
-    PNETADAPTER_INIT adapterInit = NetDefaultAdapterInitAllocate(device);
-    if(adapterInit == NULL)
+    MY_DEVICE_CONTEXT deviceContext = MyGetDeviceContext(device);
+    UINT32 numAdapters = deviceContext->NumberOfNetAdapters;
+
+    for(UINT32 i = 0; i < numAdapters; i++)
     {
-        return status;
-    }
+        //
+        // Allocate the initialization structure
+        //
+        PNETADAPTER_INIT adapterInit = NULL;
+        if(i == 0)
+        {
+            adapterInit = NetDefaultAdapterInitAllocate(device);            
+        } 
+        else
+        {
+            adapterInit = NetAdapterInitAllocate(device);
+        }
+        if(adapterInit == NULL)
+        {
+            return status;
+        }
+        
 
-    //
-    // Optional: Set additional attributes
-    //
+        //
+        // Optional: set additional attributes
+        //
 
-    // Datapath callbacks for creating packet queues
-    PNET_ADAPTER_DATAPATH_CALLBACKS datapathCallbacks;
-    NET_ADAPTER_DATAPATH_CALLBACKS_INIT(datapathCallbacks,
-                                        MyEvtAdapterCreateTxQueue,
-                                        MyEvtAdapterCreateRxQueue);
-    NetAdapterInitSetDatapathCallbacks(adapterInit,
-                                       datapathCallbacks);
+        // Datapath callbacks for creating packet queues
+        PNET_ADAPTER_DATAPATH_CALLBACKS datapathCallbacks;
+        NET_ADAPTER_DATAPATH_CALLBACKS_INIT(datapathCallbacks,
+                                            MyEvtAdapterCreateTxQueue,
+                                            MyEvtAdapterCreateRxQueue);
+        NetAdapterInitSetDatapathCallbacks(adapterInit,
+                                           datapathCallbacks);
 
-    // Power settings attributes
-    NetAdapterInitSetNetPowerSettingsAttributes(adapterInit,
-                                                attribs);
+        // Power settings attributes
+        NetAdapterInitSetNetPowerSettingsAttributes(adapterInit,
+                                                    attribs);
 
-    // Net request attributes
-    NetAdapterInitSetNetRequestAttributes(adapterInit,
-                                          attribs);
+        // Net request attributes
+        NetAdapterInitSetNetRequestAttributes(adapterInit,
+                                              attribs);
 
-    // 
-    // Required: create the adapter
-    //
-    status = NetAdapterCreate(adapterInit, &attribs, &adapter);
-    if(!NT_SUCCESS(status))
-    {
-        NetAdapterInitFree(adapterInit);
-        adapterInit = NULL;
-        return status;
+        // 
+        // Required: create the adapter
+        //
+        NETADAPTER* netAdapter;
+        status = NetAdapterCreate(adapterInit, &attribs, netAdapter);
+        if(!NT_SUCCESS(status))
+        {
+            NetAdapterInitFree(adapterInit);
+            adapterInit = NULL;
+            return status;
+        }
+
+        //
+        // Store a pointer to the adapter in the device context
+        //
+        deviceContext->NetAdapters[i] = netAdapter;
+
+        //
+        // Initialize the adapter's context
+        //
+        MY_ADAPTER_CONTEXT adapterContext = GetMyAdapterContext(&netAdapter);
+        ...
     }
     ```
 
-Optionally, you can add context space to the NETADAPTER object. Since you can set a context on any WDF object, you could add separate context space for the WDFDEVICE and the NETADAPTER objects. In the example in step 4, the client adds `MYDRIVER_ADAPTER_CONTEXT` to the NETADAPTER object. For more info, see [Framework Object Context Space](../wdf/framework-object-context-space.md).
+Optionally, you can add context space to the NETADAPTER object. Since you can set a context on any WDF object, you could add separate context space for the WDFDEVICE and the NETADAPTER objects. In the example in step 4, the client adds `MY_ADAPTER_CONTEXT` to the NETADAPTER object. For more info, see [Framework Object Context Space](../wdf/framework-object-context-space.md).
 
-We recommend that you put device-related data in the context for your WDFDEVICE, and networking-related data into your NETADAPTER context. If you are porting an existing NDIS 6.x driver, you'll likely have a single MiniportAdapterContext that combines networking-related and device-related data into a single data structure. To simplify the porting process, just convert that entire structure to the WDFDEVICE context, and make the NETADAPTER's context a small structure that points to the WDFDEVICE's context.
+We recommend that you put device-related data in the context for your WDFDEVICE, and networking-related data such as link layer addresses into your NETADAPTER context. If you are porting an existing NDIS 6.x driver, you'll likely have a single MiniportAdapterContext that combines networking-related and device-related data into a single data structure. To simplify the porting process, just convert that entire structure to the WDFDEVICE context, and make the NETADAPTER's context a small structure that points to the WDFDEVICE's context.
 
-You'll provide 2 callbacks to the [**NET_ADAPTER_DATAPATH_CALLBACKS_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-net_adapter_datapath_callbacks_init) method:
+You can optionally provide 2 callbacks to the [**NET_ADAPTER_DATAPATH_CALLBACKS_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-net_adapter_datapath_callbacks_init) method:
 
 * [*EVT_NET_ADAPTER_CREATE_TXQUEUE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_create_txqueue)
 * [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_create_rxqueue)
@@ -92,32 +127,74 @@ For details on what to provide in your implementations of these callbacks, see t
 
 ## EVT_WDF_DEVICE_PREPARE_HARDWARE
 
-To register an [*EVT_WDF_DEVICE_PREPARE_HARDWARE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function, a NetAdapterCx client driver must call [**WdfDeviceInitSetPnpPowerEventCallbacks**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks). 
+Many NetAdapterCx client drivers start their adapters from within their [*EVT_WDF_DEVICE_PREPARE_HARDWARE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function, with the notable exception of [Mobile Broadband class extension client drivers](mobile-broadband-mbb-wdf-class-extension-mbbcx.md). To register an *EVT_WDF_DEVICE_PREPARE_HARDWARE* callback function, a NetAdapterCx client driver must call [**WdfDeviceInitSetPnpPowerEventCallbacks**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks). 
 
-In [*EVT_WDF_DEVICE_PREPARE_HARDWARE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware), the client driver must call [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstart). Before doing so, the driver can optionally set capabilities like in the following example.
+In [*EVT_WDF_DEVICE_PREPARE_HARDWARE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware), in addition to other hardware preparation tasks the client driver must call [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstart). Before doing so, the driver can optionally set the adapter's capabilities.
+
+The following example shows how a client driver might start multiple NETADAPTER objects. Note that code required for setting up each adapter capabilities method is left out for brevity and clarity, and error handling is simplified.
 
 ```C++
-//
-// Optional: set adapter capabilities
-//
-NETADAPTER* netAdapter = MyGetDeviceContext(device)->NetAdapter;
+MY_DEVICE_CONTEXT deviceContext = MyGetDeviceContext(device);
+UINT32 numAdapters = deviceContext->NumberOfNetAdapters;
 
-MyAdapterSetLinkLayerCapabilities(&netAdapter);
-
-MyAdapterSetReceiveScalingCapabilities(&netAdapter);
-
-MyAdapterSetPowerCapabilities(&netAdapter);
-
-MyAdapterSetDatapathCapabilities(&netAdapter);
-
-MyAdapterSetOffloadCapabilities(&netAdapter);
-
-//
-// Required: start the adapter
-//
-status = NetAdapterStart(&netAdapter);
-if(!NT_SUCCESS(status))
+for(UINT32 i = 0; i < numAdapters; i++)
 {
-    return status;
+    NETADAPTER netAdapter = &deviceContext->NetAdapters[i];
+    MY_ADAPTER_CONTEXT adapterContext = MyGetAdapterContext(&netAdapter);
+
+    //
+    // Optional: set adapter capabilities
+    //
+
+    // Link layer capabilities
+    ...
+    NetAdapterSetDatapathCapabilities(netAdapter, 
+                                      &txCapabilities, 
+                                      &rxCapabilities);
+
+    ...
+    NetAdapterSetLinkLayerCapabilities(netAdapter,
+                                       &linkLayerCapabilities);
+    NetAdapterSetLinkLayerMtuSize(netAdapter,
+                                  MY_MAX_PACKET_SIZE - ETHERNET_HEADER_LENGTH);
+    NetAdapterSetPermanentLinkLayerAddress(netAdapter,
+                                           &adapterContext->PermanentAddress);
+    NetAdapterSetCurrentLinkLayerAddress(netAdapter,
+                                         &adapterContext->CurrentAddress);
+
+    // Datapath capabilities
+    ...
+    NetAdapterSetDatapathCapabilities(netAdapter,
+                                      &txCapabilities,
+                                      &rxCapabilities);
+
+    // Power capabilities
+    ...
+    NetAdapterSetPowerCapabilities(netAdapter,
+                                   &powerCapabilities);
+
+    // Receive scaling capabilities
+    ...
+    NetAdapterSetReceiveScalingCapabilities(netAdapter,
+                                            &receiveScalingCapabilities);
+
+    // Hardware offload capabilities
+    ...
+    NetAdapterOffloadSetChecksumCapabilities(netAdapter,
+                                             &checksumCapabilities,
+                                             EvtAdapterOffloadSetChecksum);
+    ...
+    NetAdapterOffloadSetLsoCapabilities(netAdapter,
+                                        &lsoCapabilities,
+                                        EvtAdapterOffloadSetLso);
+
+    //
+    // Required: start the adapter
+    //
+    status = NetAdapterStart(netAdapter);
+    if(!NT_SUCCESS(status))
+    {
+        return status;
+    }
 }
 ```
