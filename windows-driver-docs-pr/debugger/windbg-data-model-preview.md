@@ -2,7 +2,7 @@
 title: WinDbg Preview - Data Model 
 description: This section describes how to work with the data model menu in the WinDbg preview debugger.
 ms.author: domars
-ms.date: 08/10/2017
+ms.date: 08/03/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -13,14 +13,14 @@ ms.localizationpriority: medium
 > The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
 >
 
-## WinDbg Preview - Data Model 
+# WinDbg Preview - Data Model 
 
 This section describes how to work with the data model menu in the WinDbg Preview debugger.
 
 ![Screen shot of data model menu in debugger](images/windbgx-data-model-menu.png)
 
 
-### New Model Query
+## New Model Query
 
 Use the New Model Query dialog to create a new model query. You can put anything here you'd put into a normal `dx` command.
 
@@ -38,19 +38,19 @@ Debugger.Sessions.First().Processes.Select(p => new { Name = p.Name, ThreadCount
 ![Data model explore window showing process and threads](images/windbgx-data-model-process-threads.png)
 
 
-### Data Model Explorer
+## Data Model Explorer
 
 Use the data model explorer to quickly browse every data model object in the `Debugger` namespace.
 
 ![Data model explorer window showing debug object sessions](images/windbgx-data-model-explore-window.png)
 
 
-### Change Query
+## Change Query
 
 Use change query to change the query that is used in the active data model window.
 
 
-### Display Mode
+## Display Mode
 
 Use display mode to toggle between grid and hierarchy display mode. You can right-click column headers to hide or show more columns.
 

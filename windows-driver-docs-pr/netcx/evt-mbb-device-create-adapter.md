@@ -49,6 +49,8 @@ This callback function returns STATUS_SUCCESS if the operation was successful. O
 
 In this callback, the client driver creates a NETADAPTER object that is used by MBBCx to represent the network interface for a data session. MBBCx invokes this callback function at least once to establish the primary PDP context/default EPS bearer, then it might invoke it more times, once for every data session to be established.
 
+Before returning from this callback, client drivers must set the adapter's datapath capabilities, link layer capabilities, and link layer maximum transmission unit (MTU) size, then call [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstart).
+
 For more information and a code example, see [Creating the NetAdapter interface for the PDP context/EPS bearer](writing-an-mbbcx-client-driver.md#creating-the-netadapter-interface-for-the-pdp-contexteps-bearer).
 
 
