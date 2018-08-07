@@ -45,7 +45,7 @@ This section contains the following topics:
 
 * [Porting NDIS miniport drivers to NetAdapterCx](porting-ndis-miniport-drivers-to-netadaptercx.md)
 * [Building a NetAdapterCx client driver](building-a-netadaptercx-client-driver.md)
-* [Device and adpater initialization](device-and-adapter-initialization.md)
+* [Managing the lifetime of objects in NetAdapterCx](managing-the-lifetime-of-objects-in-netadaptercx.md)
 * [Accessing configuration information](accessing-configuration-information.md)
 * [Handling control requests](handling-control-requests.md)
 * [Debugging a NetAdapterCx client driver](debugging-a-netadaptercx-client-driver.md)
@@ -53,8 +53,5 @@ This section contains the following topics:
 * [NetAdapterCx receive side scaling (RSS)](netadaptercx-receive-side-scaling-rss-.md)
 * [Configuring power management](configuring-power-management.md)
 * [NDIS-WDF function equivalents](ndis-wdf-function-equivalents.md)
-* [Summary of objects](summary-of-objects.md)
-* [Power-up sequence for a NetAdapterCx client driver](power-up-sequence-for-a-netadaptercx-client-driver.md)
-* [Power-down sequence for a NetAdapterCx client driver](power-down-sequence-for-a-netadaptercx-client-driver.md)
 * [NetAdapterCx limitations](netadaptercx-limitations.md)
 * [Mobile Broadband (MBB) WDF class extension (MBBCx)](mobile-broadband-mbb-wdf-class-extension-mbbcx.md)

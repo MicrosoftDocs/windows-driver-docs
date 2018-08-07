@@ -5001,6 +5001,11 @@
       "source_path": "windows-driver-docs-pr/netcx/device-initialization.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/netcx/device-and-adapter-initialization",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/summary-of-objects.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/netcx/summary-of-netadaptercx-objects",
+      "redirect_document_id": true
     }
   ]
 }
