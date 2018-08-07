@@ -2,7 +2,7 @@
 title: Debugging Using WinDbg Preview
 description: This section describes how to perform basic debugging tasks using the WinDbg preview debugger.
 ms.author: domars
-ms.date: 08/03/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,9 +40,6 @@ Here's some of the most notable things that have changed or are new.
 - **Dump file processor detection** -Auto-detects processor architecture for easier managed debugging.
 
 - **Performance Improvements** Windows now load asynchronously and can be canceled - When you run another command, WinDbg Preview will stop the loading of your locals, watch, or other windows.
-
-- **Auto-Update** - When we release a new update, you'll get a banner notifying you that an update is available.
-
 
 ### Windowing improvements
 
@@ -123,7 +120,6 @@ The attach dialog is faster, more detailed, and is easier to use.
 ![Attach to a process dialog](images/windbgx-attach-to-a-process-zoomed.png)
 
 
-
 ### Enhanced breakpoint tracking  
 
 - **Enable/Disable breakpoints** - The breakpoints window shows all your current breakpoints and provides easy access to enabling and disabling them. 
@@ -149,8 +145,6 @@ For more information, see [WinDbg Preview - Data model](windbg-data-model-previe
 ![Screen shot of scripting menu in debugger](images/windbgx-scripting-intellisense.png)
 
 For more information, see [WinDbg Preview - Scripting](windbg-scripting-preview.md).
-
-
 
 ### Backwards compatibility 
 
