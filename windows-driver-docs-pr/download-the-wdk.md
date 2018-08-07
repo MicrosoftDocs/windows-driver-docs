@@ -8,7 +8,7 @@ keywords:
 - Download
 - drivers
 ms.author: windowsdriverdev
-ms.date: 02/02/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,14 +46,11 @@ New as of 1709 release: The WDK installation will by default install the WDK Vis
 
 ## Enterprise WDK for Windows 10, version 1803 (EWDK) 
 
-The EWDK is a standalone self-contained command-line environment for building drivers. It includes the Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio Build Tools 15.6. 
+The EWDK is a standalone self-contained command-line environment for building drivers. It includes the Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio Build Tools 15.7. To get started, mount the ISO and run **LaunchBuildEnv**. 
 
-### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools 15.6
+### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools 15.7
 
 * [Download EWDK for Windows 10, version 1803](https://developer.microsoft.com/en-us/windows/hardware/license-terms-EWDK)
-
-
-To get started, mount the ISO and run **LaunchBuildEnv**.
 
 ## Additional information
 
