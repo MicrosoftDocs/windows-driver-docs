@@ -36,8 +36,8 @@ In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://docs.microsoft.com/windows-hardware/dri
 
 2. Call [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926). 
 
-> [!TIP]
-> If your device supports more than one NETADAPTER, we recommend recording the number of adapters your device supports and pointers to each adapter in your device context.
+    > [!TIP]
+    > If your device supports more than one NETADAPTER, we recommend recording the number of adapters your device supports and pointers to each adapter in your device context.
 
 3. Create the NETADAPTER object. To do so, the client calls either [**NetDefaultAdapterInitAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netdefaultadapterinitallocate) or [**NetAdapterInitAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterinitallocate), followed by optional **NetAdapterInitSetXxx** methods to initailize the adapter's attributes. Finally, the client calls [**NetAdapterCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptercreate). 
 
@@ -66,8 +66,7 @@ In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://docs.microsoft.com/windows-hardware/dri
         if(adapterInit == NULL)
         {
             return status;
-        }
-        
+        }        
 
         //
         // Optional: set additional attributes
@@ -151,14 +150,16 @@ for(UINT32 i = 0; i < numAdapters; i++)
     NetAdapterSetDatapathCapabilities(netAdapter, 
                                       &txCapabilities, 
                                       &rxCapabilities);
-
     ...
     NetAdapterSetLinkLayerCapabilities(netAdapter,
                                        &linkLayerCapabilities);
+
     NetAdapterSetLinkLayerMtuSize(netAdapter,
                                   MY_MAX_PACKET_SIZE - ETHERNET_HEADER_LENGTH);
+
     NetAdapterSetPermanentLinkLayerAddress(netAdapter,
                                            &adapterContext->PermanentAddress);
+
     NetAdapterSetCurrentLinkLayerAddress(netAdapter,
                                          &adapterContext->CurrentAddress);
 
