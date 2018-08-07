@@ -15,7 +15,7 @@ keywords:
 - pins WDK audio , property handlers
 - nodes WDK audio , property handlers
 ms.author: windowsdriverdev
-ms.date: 08/07/2017
+ms.date: 08/07/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
