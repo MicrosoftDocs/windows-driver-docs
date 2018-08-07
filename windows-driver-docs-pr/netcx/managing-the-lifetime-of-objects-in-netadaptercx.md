@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 # Managing the lifetime of objects in NetAdapterCx
 
-This section describes framework objects and their lifetimes in NetAdapterCx. Use these topics to understand more about networking-specific objects in addition to standard [WDF objects](https://docs.microsoft.com/windows-hardware/drivers/wdf/wdf-objects), as well as how to initialize, start, stop, and destroy them.
+This section describes framework objects and their lifetimes in NetAdapterCx. Use these topics to understand more about networking-specific objects in addition to standard [WDF objects](../wdf/wdf-objects.md), as well as how to initialize, start, stop, and destroy them.
 
 In this section:
 
