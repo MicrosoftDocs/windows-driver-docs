@@ -101,12 +101,12 @@ In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://docs.microsoft.com/windows-hardware/dri
         }
 
         //
-        // Store a pointer to the adapter in the device context
+        // Optional: store a pointer to the adapter in the device context
         //
         deviceContext->NetAdapters[i] = netAdapter;
 
         //
-        // Initialize the adapter's context
+        // Optional: initialize the adapter's context
         //
         MY_ADAPTER_CONTEXT adapterContext = GetMyAdapterContext(&netAdapter);
         ...
