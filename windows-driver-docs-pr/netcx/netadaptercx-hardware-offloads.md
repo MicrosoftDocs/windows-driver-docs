@@ -23,17 +23,15 @@ NetAdapterCx focuses on ease of offload configuration and management of offload 
 
 This guidance provides an overview of key concepts for hardware offloads in NetAdapterCx.
 
-- Hardware offload capabilities are advertised by the network adapter hardware during initialization.
+- Hardware offload capabilities are advertised by the network adapter hardware during initialization and must be advertised before calling [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstart).
 - The driver doesn't need to worry about checking standard registry keywords. NetAdapterCx checks the registry keywords and honors them when enabling the active offload capabilities.
 - The *active* offload capabilities of the network adapter are those that the network adapter is currently programmed to perform. These are a subset of the hardware capabilities advertised by the client driver previously.
 - The TCP/IP stack or an overlying protocol driver can request a change in active capabilities of the network adapter. Client drivers register callbacks with NetAdapterCx to be notified of changes in the active offload capabilities.
 - If a packet extension is needed for an offload, it is automatically registered when the network adapter advertises support for the hardware offload.
-- Hardware capabilities need to be advertised before calling [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstart).
-- Granular capabilities for offloads are not specified. Client drivers instead use a software fallback for any granular capability that is not supported by hardware.
 
 Client drivers advertise a minimum set of capabilities to NetAdapterCx. These do not include granular capability details for all offload combinations supported by the client driver. For example, this can be whether IPOptions, IPExtensions or TCPOptions are supported, etc. This means that the client driver is responsible for performing the offload on all combinations of an advertised capability. For example, support for IPv4 implies support for IPOptions, support for IPv6 implies support for IPExtensions, and support for TCP implies support for TCPOptions. 
 
-If the hardware is not capable of handling a specific combination, it should either not declare support for that capability or perform a software fallback when it encounters such a packet. NetAdapterCx provides software fallbacks for most offloads. Client drivers can leverage these software fallbacks instead of writing their own.
+If the hardware is not capable of handling a specific combination, it should either not declare support for that capability or perform a software fallback when it encounters such a packet.
 
 The following offloads are supported by NetAdapterCx and the Windows TCP/IP stack:
 
@@ -57,9 +55,9 @@ MyAdapterSetOffloadCapabilities(
     // Configure the hardware's checksum offload capabilities
     NET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES checksumOffloadCapabilities;
     NET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES_INIT(&checksumOffloadCapabilities,
-                                                   TRUE,
-                                                   TRUE,
-                                                   TRUE);
+                                                   TRUE,    // IPv4
+                                                   TRUE,    // TCP
+                                                   TRUE);   // UDP
 
     // Set the current checksum offload capabilities and register the callback for future changes in active capabilities
     NetAdapterOffloadSetChecksumCapabilities(NetAdapter,
@@ -69,8 +67,8 @@ MyAdapterSetOffloadCapabilities(
     // Configure the hardware's LSO offload capabilities
     NET_ADAPTER_OFFLOAD_LSO_CAPABILITIES lsoOffloadCapabilities;
     NET_ADAPTER_OFFLOAD_LSO_CAPABILITIES_INIT(&lsoOffloadCapabilities,
-                                              TRUE,
-                                              TRUE,
+                                              TRUE,         // IPv4
+                                              TRUE,         // IPv6
                                               MY_LSO_OFFLOAD_SIZE_MAX,
                                               MY_LSO_OFFLOAD_MIN_SEGMENT_COUNT);
 
