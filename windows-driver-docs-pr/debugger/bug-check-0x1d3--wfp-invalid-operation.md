@@ -13,6 +13,7 @@ api_name:
 - WFP_INVALID_OPERATION 
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check Bug Check 0x1D3: WFP_INVALID_OPERATION 

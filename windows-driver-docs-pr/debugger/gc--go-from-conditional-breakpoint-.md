@@ -14,6 +14,7 @@ api_name:
 - gc (Go from Conditional Breakpoint)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # gc (Go from Conditional Breakpoint)

@@ -14,6 +14,7 @@ api_name:
 - NETIO_INVALID_POOL_CALLER
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x126: NETIO\_INVALID\_POOL\_CALLER

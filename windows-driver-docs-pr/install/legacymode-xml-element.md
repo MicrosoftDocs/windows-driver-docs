@@ -9,6 +9,7 @@ api_name:
 - legacyMode XML Element
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # legacyMode XML Element

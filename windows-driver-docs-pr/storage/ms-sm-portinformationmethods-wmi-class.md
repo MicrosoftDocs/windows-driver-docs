@@ -2,6 +2,7 @@
 title: MS\_SM\_PortInformationMethods WMI Class
 description: MS\_SM\_PortInformationMethods WMI Class
 ms.assetid: 5bf44288-7e1f-48e6-aa02-1e706b73f046
+ms.localizationpriority: medium
 ---
 
 # MS\_SM\_PortInformationMethods WMI Class

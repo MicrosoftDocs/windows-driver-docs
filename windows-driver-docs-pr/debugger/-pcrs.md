@@ -14,6 +14,7 @@ api_name:
 - pcrs
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !pcrs

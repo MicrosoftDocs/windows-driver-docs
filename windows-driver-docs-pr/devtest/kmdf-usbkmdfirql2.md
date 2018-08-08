@@ -14,6 +14,7 @@ api_name:
 - UsbKmdfIrql2
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # UsbKmdfIrql2 rule (kmdf)

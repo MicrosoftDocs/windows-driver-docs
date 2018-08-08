@@ -2,6 +2,7 @@
 title: Magnetic stripe reader events
 description: Magnetic stripe reader events
 ms.assetid: '48ce9fcb-5ea2-4045-92df-990d94e5e98b'
+ms.localizationpriority: medium
 ---
 
 # Magnetic stripe reader events

@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -SIO_ADDRESS_LIST_CHANGE Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # SIO\_ADDRESS\_LIST\_CHANGE

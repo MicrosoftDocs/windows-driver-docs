@@ -14,6 +14,7 @@ api_name:
 - IMPERSONATING_WORKER_THREAD
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xDF: IMPERSONATING\_WORKER\_THREAD

@@ -14,6 +14,7 @@ api_name:
 - WlanDisassociation
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # WlanDisassociation rule (ndis)

@@ -9,6 +9,7 @@ api_name:
 - CM_Intersect_Range_List
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Intersect_Range_List

@@ -14,6 +14,7 @@ api_name:
 - IoBuildDeviceControlWaitTimeout
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IoBuildDeviceControlWaitTimeout rule (wdm)

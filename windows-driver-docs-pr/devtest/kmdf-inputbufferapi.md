@@ -14,6 +14,7 @@ api_name:
 - InputBufferAPI
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # InputBufferAPI rule (kmdf)

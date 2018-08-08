@@ -14,6 +14,7 @@ api_name:
 - NO_EXCEPTION_HANDLING_SUPPORT
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xB: NO\_EXCEPTION\_HANDLING\_SUPPORT

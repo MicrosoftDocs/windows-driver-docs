@@ -9,6 +9,7 @@ ms.date: 03/19/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing an MBBCx client driver
@@ -53,6 +54,10 @@ This message flow diagram illustrates the initialization process.
 
 ![MBBCx client driver initialization process](images/mbbcx_initializing.png)
 
+This message flow diagram illustrates the initialization process.
+
+![MBBCx client driver initialization process](images/mbbcx_initializing.png)
+
 ## Handling MBIM control messages
 
 MBBCx uses the standard MBIM control commands defined in MBIM specification Rev 1.0, sections 8, 9, and 10, for the control plane. Commands and responses are exchanged through a set of callback functions provided by the client driver and APIs provided by MBBCx. MBBCx mimics the operational model of an MBIM device, as defined in MBIM specification Rev 1.0, section 5.3, by using these function calls:
@@ -86,11 +91,17 @@ In the implementation of the *EvtMbbDeviceCreateAdapter* callback function, the 
 
 3. We recommend that MBBCx client drivers keep an internal mapping between the created NETADAPTER object and the returned *SessionId*. This helps track the data session-to-NETADAPTER object relationship, which is especially useful when multiple PDP contexts/EPS bearers have been activated.
 
+4. Before returning from *EvtMbbDeviceCreateAdapter*, client drivers must start the adapter by calling [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstart). Optionally, they can also set the adapter's capabilities by calling one or more of these functions *before* the call to **NetAdapterStart**: 
+    - [**NetAdapterSetDatapathCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetdatapathcapabilities)
+    - [**NetAdapterSetLinkLayerCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetlinklayercapabilities)
+    - [**NetAdapterSetLinkLayerMtuSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetlinklayermtusize)
+    - [**NetAdapterSetPowerCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetpowercapabilities)
+
 MBBCx invokes this callback function at least once, so there is always one NETADPATER object for the primary PDP context/default EPS bearer. If multiple PDP contexts/EPS bearers are activated, MBBCx might invoke this callback function more times, once for every data session to be established. There must be a one-to-one relationship between the network interface represented by the NETADAPTER object and a data session, as shown in the following diagram.
 
 ![Multiple NetAdapters](images/multi-netadapter.png)
 
-The following example shows how to create a NETADAPTER object for a data session.
+The following example shows how to create a NETADAPTER object for a data session. Note that error handling and code required for setting up adapter capabilities is left out for brevity and clarity.
 
 ```C++
     NTSTATUS
@@ -101,9 +112,6 @@ The following example shows how to create a NETADAPTER object for a data session
     {
         // Get the client driver defined per-device context 
         PMY_DEVICE_CONTEXT deviceContext = MyGetDeviceContext(Device);
-        
-        // Set up data path capabilities
-        ...
 
         // Set up the client driver defined per-adapter context
         WDF_OBJECT_ATTRIBUTES adapterAttributes;
@@ -113,18 +121,17 @@ The following example shows how to create a NETADAPTER object for a data session
 
         // Create the NETADAPTER object
         NETADAPTER netAdapter;
-        NTSTATUS ntStatus = NetAdapterCreate(AdapterInit, 
-                                            &adapterAttributes,
-                                            &netAdapter);
+        NTSTATUS status = NetAdapterCreate(AdapterInit, 
+                                           &adapterAttributes,
+                                           &netAdapter);
         
         // Initialize the adapter for MBB
-        ntStatus = MbbAdapterInitialize(netAdapter);
+        status = MbbAdapterInitialize(netAdapter);
 
         // Retrieve the Session ID and use an array to store
         // the session <-> NETADAPTER object mapping
         ULONG sessionId;
-        PMY_NETADAPTER_CONTEXT netAdapterContext = 
-            MyGetNetAdapterContext(netAdapter);
+        PMY_NETADAPTER_CONTEXT netAdapterContext = MyGetNetAdapterContext(netAdapter);
 
         netAdapterContext->NetAdapter = netAdapter;
 
@@ -132,10 +139,35 @@ The following example shows how to create a NETADAPTER object for a data session
 
         netAdapterContext->SessionId = sessionId;
 
-        deviceContext->Sessions[sessionId].NetAdapterContext 
-            = netAdapterContext;        
+        deviceContext->Sessions[sessionId].NetAdapterContext = netAdapterContext;
+
+        //
+        // Optional: set adapter capabilities
+        //
+        ...
+        NetAdapterSetDatapathCapabilities(netAdapter, 
+                                          &txCapabilities, 
+                                          &rxCapabilities);
+
+        ...
+        NetAdapterSetLinkLayerCapabilities(netAdapter,
+                                           &linkLayerCapabilities);
+                                           
+        ...
+        NetAdapterSetLinkLayerMtuSize(netAdapter,
+                                      MY_MAX_PACKET_SIZE - ETHERNET_HEADER_LENGTH);
+
+        // 
+        // Required: start the adapter
+        //
+        status = NetAdapterStart(netAdapter);
+
+        return status;
     }
 ```
+
+For a code example of setting datapath capabilities, see [Network data buffer management](network-data-buffer-management.md).
+
 MBBCx guarantees that it calls *EvtMbbDeviceCreateAdapter* before requesting **MBIM_CID_CONNECT** with the same session ID. The following flow diagram shows the interactions between the client driver and the class extension in creating the NETADAPTER object.  
 
 ![NETADAPTER creation and activation for an MBB client driver](images/activation.png)

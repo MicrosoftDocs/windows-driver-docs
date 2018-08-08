@@ -14,6 +14,7 @@ api_name:
 - INVALID_IO_BOOST_STATE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x13C: INVALID\_IO\_BOOST\_STATE

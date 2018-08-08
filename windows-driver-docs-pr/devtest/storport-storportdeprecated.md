@@ -14,6 +14,7 @@ api_name:
 - StorPortDeprecated
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # StorPortDeprecated rule (storport)

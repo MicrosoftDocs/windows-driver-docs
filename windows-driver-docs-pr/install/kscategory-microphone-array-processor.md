@@ -11,6 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # KSCATEGORY_MICROPHONE_ARRAY_PROCESSOR

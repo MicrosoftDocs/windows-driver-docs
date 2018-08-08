@@ -42,7 +42,7 @@ This section of the partner documentation is designed for hardware engineers and
 </tr>
 <tr>
 <td><p>[Windows ACPI design guide for SoC platforms](windows-acpi-design-guide-for-soc-platforms.md)</p></td>
-<td><p>The Advanced Configuration and Power Interface Specification, Revision 5.0 ([ACPI 5.0 specification](http://www.uefi.org/specifications)), defines a new set of features to support low-power, mobile devices that are based on System on a Chip (SoC) integrated circuits and that implement the connected standby power model. Starting with Windows 8 and Windows 8.1, and Windows Server 2012 and 2012 R2, Windows supports the new ACPI 5.0 features for SoC-based platforms.</p></td>
+<td><p>The Advanced Configuration and Power Interface Specification, Revision 5.0 ([ACPI 5.0 specification](https://www.uefi.org/specifications)), defines a new set of features to support low-power, mobile devices that are based on System on a Chip (SoC) integrated circuits and that implement the connected standby power model. Starting with Windows 8 and Windows 8.1, and Windows Server 2012 and 2012 R2, Windows supports the new ACPI 5.0 features for SoC-based platforms.</p></td>
 </tr>
 <tr>
 <td><p>[Security](security-overview.md)</p></td>

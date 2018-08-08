@@ -2,6 +2,7 @@
 Description: WMCDC Device Management Model
 title: WMCDC Device Management Model
 author: windows-driver-content
+ms.localizationpriority: medium
 ---
 
 # WMCDC Device Management Model

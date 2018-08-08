@@ -13,6 +13,7 @@ api_name:
 - XBOX_ERACTRL_CS_TIMEOUT 
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check Bug Check 0x356: XBOX\_ERACTRL\_CS\_TIMEOUT

@@ -14,6 +14,7 @@ api_name:
 - l+, l- (Set Source Options)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # l+, l- (Set Source Options)

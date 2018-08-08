@@ -16,6 +16,7 @@ api_name:
 - Iasphelp.CalcJobETA
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # Iasphelp::CalcJobETA method

@@ -14,6 +14,7 @@ api_name:
 - .enumtag (Enumerate Secondary Callback Data)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .enumtag (Enumerate Secondary Callback Data)

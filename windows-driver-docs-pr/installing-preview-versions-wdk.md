@@ -12,6 +12,7 @@ ms.date: 07/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing preview versions of the Windows Driver Kit (WDK)
@@ -42,11 +43,11 @@ reg add HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\StrongName\Verificatio
 
 ### 3. Install SDK Insider Preview 
 
-[Get SDK Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK)
+[Get SDK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK)
 
 ### 4. Install WDK Insider Preview
 
-[Get WDK Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK)
+[Get WDK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK)
 
 > [!Note]   
 > During installation you will see the Visual Studio installer install the WDK Visual Studio Extensions. 

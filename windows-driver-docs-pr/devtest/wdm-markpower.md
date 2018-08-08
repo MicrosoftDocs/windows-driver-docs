@@ -14,6 +14,7 @@ api_name:
 - MarkPower
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # MarkPower rule (wdm)

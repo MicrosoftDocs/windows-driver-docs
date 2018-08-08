@@ -3,6 +3,7 @@ title: Create a hardware notification client driver
 author: windows-driver-content
 description: This section provides general guidance on the development of a hardware notification client driver that utilizes the KMDF class extension provided by Microsoft.
 ms.assetid: 348950d3-fb80-4800-a606-290d473aa412
+ms.localizationpriority: medium
 ---
 
 # Create a hardware notification client driver

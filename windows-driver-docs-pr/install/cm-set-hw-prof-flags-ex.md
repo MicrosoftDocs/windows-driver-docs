@@ -11,6 +11,7 @@ api_name:
 - CM_Set_HW_Prof_Flags_ExW
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Set_HW_Prof_Flags_Ex

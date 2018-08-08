@@ -1,5 +1,6 @@
 ---
 title: SENSOR\_CATEGORY\_SCANNER
+author: windows-driver-content
 description: The SENSOR\_CATEGORY\_SCANNER category contains sensors that provide information that is obtained by scanning.
 ms.assetid: ba7a44d0-1d89-4a6c-b046-c7cd02c457b3
 keywords: ["SENSOR_CATEGORY_SCANNER Sensor Devices"]
@@ -16,6 +17,7 @@ ms.date: 01/04/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SENSOR\_CATEGORY\_SCANNER

@@ -14,6 +14,7 @@ api_name:
 - CTRL+P (Debug Current Debugger)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CTRL+P (Debug Current Debugger)

@@ -14,6 +14,7 @@ api_name:
 - CancelSpinlockRelease
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CancelSpinlockRelease rule (wdm)

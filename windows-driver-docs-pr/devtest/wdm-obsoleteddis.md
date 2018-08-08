@@ -14,6 +14,7 @@ api_name:
 - ObsoleteDDIs
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ObsoleteDDIs rule (wdm)

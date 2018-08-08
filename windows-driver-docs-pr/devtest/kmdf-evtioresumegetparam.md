@@ -14,6 +14,7 @@ api_name:
 - EvtIoResumeGetParam
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # EvtIoResumeGetParam rule (kmdf)

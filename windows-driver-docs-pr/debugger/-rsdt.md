@@ -14,6 +14,7 @@ api_name:
 - rsdt
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !rsdt

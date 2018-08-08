@@ -14,6 +14,7 @@ api_name:
 - NdisAllocateGenericObject
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # NdisAllocateGenericObject rule (ndis)

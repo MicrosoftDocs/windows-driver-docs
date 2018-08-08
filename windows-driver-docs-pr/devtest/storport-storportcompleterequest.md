@@ -14,6 +14,7 @@ api_name:
 - StorPortCompleteRequest
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # StorPortCompleteRequest rule (storport)

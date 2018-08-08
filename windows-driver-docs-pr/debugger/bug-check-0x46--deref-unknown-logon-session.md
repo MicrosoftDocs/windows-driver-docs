@@ -14,6 +14,7 @@ api_name:
 - DEREF_UNKNOWN_LOGON_SESSION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x46: DEREF\_UNKNOWN\_LOGON\_SESSION

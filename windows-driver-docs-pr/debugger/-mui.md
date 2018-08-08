@@ -14,6 +14,7 @@ api_name:
 - mui
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !mui

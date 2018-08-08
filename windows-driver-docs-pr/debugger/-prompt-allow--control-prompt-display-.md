@@ -14,6 +14,7 @@ api_name:
 - .prompt_allow (Control Prompt Display)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .prompt\_allow (Control Prompt Display)

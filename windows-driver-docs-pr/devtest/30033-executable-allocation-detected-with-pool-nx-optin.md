@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # C30033
@@ -81,13 +82,13 @@ A second way to fix this is to make every call explicitly reference non-executab
 The following code generates this warning.
 
 ```
-ExAllocatePoolWithTag(NonPagedPool, numberOfBytes, &#39;xppn&#39;);
+ExAllocatePoolWithTag(NonPagedPool, numberOfBytes, 'xppn');
 ```
 
 The following code avoids this warning:
 
 ```
-ExAllocatePoolWithTag(NonPagedPoolNx, numberOfBytes, &#39;xppn&#39;);
+ExAllocatePoolWithTag(NonPagedPoolNx, numberOfBytes, 'xppn');
 ```
 
  

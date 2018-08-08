@@ -14,6 +14,7 @@ api_name:
 - bthkd.sdpstream
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !bthkd.sdpstream

@@ -22,6 +22,7 @@ api_location:
 - ntddstor.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # DEVICE\_DATA\_MANAGEMENT\_SET\_ACTION

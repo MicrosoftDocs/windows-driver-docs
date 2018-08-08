@@ -14,6 +14,7 @@ api_name:
 - bthkd.bthusbtransfer
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !bthkd.bthusbtransfer

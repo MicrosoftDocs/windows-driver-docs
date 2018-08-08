@@ -14,6 +14,7 @@ api_name:
 - IoBuildSynchronousFsdRequestNoFree
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IoBuildSynchronousFsdRequestNoFree rule (wdm)

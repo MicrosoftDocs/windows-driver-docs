@@ -14,6 +14,7 @@ api_name:
 - pocaps
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !pocaps

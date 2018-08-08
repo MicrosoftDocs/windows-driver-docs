@@ -14,6 +14,7 @@ api_name:
 - ndiskd.netreport
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.netreport

@@ -14,6 +14,7 @@ api_name:
 - sysinfo
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !sysinfo

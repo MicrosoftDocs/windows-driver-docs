@@ -14,6 +14,7 @@ api_name:
 - .suspend_ui (Suspend WinDbg Interface)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .suspend\_ui (Suspend WinDbg Interface)

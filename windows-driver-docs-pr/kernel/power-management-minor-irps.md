@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.assetid: 8af0609f-168b-4455-aae8-1a3c9e40ed47
+ms.localizationpriority: medium
 ---
 
 # Power Management Minor IRPs

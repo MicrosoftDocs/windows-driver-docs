@@ -14,6 +14,7 @@ api_name:
 - MULTIPROCESSOR_CONFIGURATION_NOT_SUPPORTED
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x3E: MULTIPROCESSOR\_CONFIGURATION\_NOT\_SUPPORTED

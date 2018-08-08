@@ -3,6 +3,7 @@ title: Legacy I/O Programming
 author: windows-driver-content
 description: Legacy I/O Programming
 ms.assetid: 9ab9fef0-7939-40dd-9b56-9c6f5902f36a
+ms.localizationpriority: medium
 ---
 
 # Legacy I/O Programming

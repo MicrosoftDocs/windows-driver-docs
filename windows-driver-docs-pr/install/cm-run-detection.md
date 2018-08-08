@@ -9,6 +9,7 @@ api_name:
 - CM_Run_Detection
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Run_Detection

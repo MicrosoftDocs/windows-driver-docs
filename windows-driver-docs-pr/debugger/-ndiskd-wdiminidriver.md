@@ -14,6 +14,7 @@ api_name:
 - ndiskd.wdiminidriver
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.wdiminidriver

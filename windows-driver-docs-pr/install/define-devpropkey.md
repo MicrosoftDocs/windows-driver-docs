@@ -11,6 +11,7 @@ api_location:
 - Devpropdef.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # DEFINE_DEVPROPKEY

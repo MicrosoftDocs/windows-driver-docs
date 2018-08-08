@@ -14,6 +14,7 @@ api_name:
 - DbgRpc Command-Line Options
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # DbgRpc Command-Line Options

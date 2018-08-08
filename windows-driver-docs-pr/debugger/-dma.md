@@ -14,6 +14,7 @@ api_name:
 - dma
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !dma

@@ -14,6 +14,7 @@ api_name:
 - tokenfields
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !tokenfields

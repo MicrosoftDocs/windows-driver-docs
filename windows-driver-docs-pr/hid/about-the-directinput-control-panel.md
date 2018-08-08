@@ -4,6 +4,7 @@ author: windows-driver-content
 description: About the DirectInput Control Panel
 ms.assetid: d6845778-1203-4b5a-8a7b-7d4eecbcc59e
 keywords: ["property sheets WDK DirectInput , about control panel", "game controllers WDK DirectInput , about control panel", "control panels WDK DirectInput , about control panel", "Joy.cpl"]
+ms.localizationpriority: medium
 ---
 
 # About the DirectInput Control Panel

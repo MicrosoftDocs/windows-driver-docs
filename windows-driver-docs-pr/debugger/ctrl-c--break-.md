@@ -14,6 +14,7 @@ api_name:
 - CTRL+C (Break)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CTRL+C (Break)

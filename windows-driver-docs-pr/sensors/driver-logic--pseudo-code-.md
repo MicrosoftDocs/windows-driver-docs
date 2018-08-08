@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sensor driver logic
@@ -115,7 +116,7 @@ If a sensor driver supports simple sensors (for example, I2C or SPI), it may sup
 
 A HID driver supports input reports. The pseudocode uses the following data structure to represent a report.
 
-```ManagedCPlusPlus
+```cpp
 struct _inputReport
 {
     reportID
@@ -128,7 +129,7 @@ struct _inputReport
 
 A sensor driver saves client data. The pseudocode uses the following data structure to save client data.
 
-```ManagedCPlusPlus
+```cpp
 struct clientEntry
 {
     clientCRI
@@ -141,7 +142,7 @@ struct clientEntry
 
 A sensor driver needs to represent the device state. The pseudocode uses the following enumeration to represent the device state.
 
-```ManagedCPlusPlus
+```cpp
 enum deviceState
 {
     deviceStateDisconnected // driver is disconnected from the device
@@ -152,7 +153,7 @@ enum deviceState
 
 A sensor driver needs to represent the device state. The pseudocode uses the following enumeration to represent the device state.
 
-```ManagedCPlusPlus
+```cpp
 enum deviceState
 {
     deviceStateDisconnected // driver is disconnected from the device
@@ -162,7 +163,7 @@ enum deviceState
 ```
 
 ## Related topics
-[Sensor Driver Development Basics](sensor-driver-development-basics.md)  
+[Sensor Driver Development Basics](sensor-driver-development-basics.md)
 
 
 

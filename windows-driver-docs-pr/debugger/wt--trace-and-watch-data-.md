@@ -14,6 +14,7 @@ api_name:
 - wt (Trace and Watch Data)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # wt (Trace and Watch Data)

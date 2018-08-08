@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - SIO_WSK_QUERY_IDEAL_SEND_BACKLOG Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # SIO\_WSK\_QUERY\_IDEAL\_SEND\_BACKLOG

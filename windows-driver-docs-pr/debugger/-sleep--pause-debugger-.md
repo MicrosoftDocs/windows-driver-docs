@@ -14,6 +14,7 @@ api_name:
 - .sleep (Pause Debugger)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .sleep (Pause Debugger)

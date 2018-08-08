@@ -14,6 +14,7 @@ api_name:
 - swd
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !swd

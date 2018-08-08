@@ -14,6 +14,7 @@ api_name:
 - IoBuildFsdIrpSignalEventInCompletion
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IoBuildFsdIrpSignalEventInCompletion rule

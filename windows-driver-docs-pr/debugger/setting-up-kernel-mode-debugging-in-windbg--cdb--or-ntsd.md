@@ -8,6 +8,7 @@ ms.date: 06/22/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # <span id="debugger.setting_up_kernel-mode_debugging_in_windbg__cdb__or_ntsd"></span>Setting Up Kernel-Mode Debugging

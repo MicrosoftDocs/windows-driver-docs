@@ -14,6 +14,7 @@ api_name:
 - VIDEO_DRIVER_INIT_FAILURE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xB4: VIDEO\_DRIVER\_INIT\_FAILURE

@@ -14,6 +14,7 @@ api_name:
 - WriteReqs
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # WriteReqs rule (kmdf)

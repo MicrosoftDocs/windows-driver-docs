@@ -14,6 +14,7 @@ api_name:
 - usb3kd.ucx_device
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !usb3kd.ucx\_device

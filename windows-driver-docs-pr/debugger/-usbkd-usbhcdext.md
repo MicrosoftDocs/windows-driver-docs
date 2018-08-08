@@ -14,6 +14,7 @@ api_name:
 - usbkd.usbhcdext
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !usbkd.usbhcdext

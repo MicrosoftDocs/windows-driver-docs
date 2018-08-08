@@ -14,6 +14,7 @@ api_name:
 - VIDEO_TDR_ERROR
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x116: VIDEO\_TDR\_ERROR

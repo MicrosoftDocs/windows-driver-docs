@@ -10,6 +10,7 @@ api_name:
 - CM_Create_DevNodeW
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Create_DevNode

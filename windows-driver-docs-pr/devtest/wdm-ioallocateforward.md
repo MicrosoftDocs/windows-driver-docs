@@ -14,6 +14,7 @@ api_name:
 - IoAllocateForward
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IoAllocateForward rule (wdm)

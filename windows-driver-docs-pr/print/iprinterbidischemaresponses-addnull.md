@@ -13,6 +13,7 @@ api_name:
 - IPrinterBidiSchemaResponses.AddNull
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaResponses::AddNull method

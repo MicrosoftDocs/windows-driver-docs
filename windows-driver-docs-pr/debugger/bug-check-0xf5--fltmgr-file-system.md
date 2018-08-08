@@ -14,6 +14,7 @@ api_name:
 - FLTMGR_FILE_SYSTEM
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xF5: FLTMGR\_FILE\_SYSTEM

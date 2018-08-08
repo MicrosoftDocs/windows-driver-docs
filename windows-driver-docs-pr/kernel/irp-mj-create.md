@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: 2947f8dc-2e7d-401e-8014-6140cac6905f
 keywords:
  - IRP_MJ_CREATE Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_CREATE

@@ -14,6 +14,7 @@ api_name:
 - IoFreeIrp
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IoFreeIrp rule (storport)

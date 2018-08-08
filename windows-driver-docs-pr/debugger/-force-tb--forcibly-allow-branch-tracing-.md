@@ -14,6 +14,7 @@ api_name:
 - .force_tb (Forcibly Allow Branch Tracing)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .force\_tb (Forcibly Allow Branch Tracing)

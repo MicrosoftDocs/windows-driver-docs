@@ -8,6 +8,7 @@ ms.date: 08/21/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 This section contains NDIS status indications used in Single Root I/O Virtualization (SR-IOV).

@@ -7,6 +7,7 @@ ms.date: 06/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # <span id="debugger.performing_kernel-mode_debugging_using_windbg"></span>Live Kernel-Mode Debugging Using WinDbg

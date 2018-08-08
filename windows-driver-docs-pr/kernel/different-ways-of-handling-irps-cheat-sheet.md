@@ -8,6 +8,7 @@ ms.date: 12/07/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Different ways of handling IRPs - Cheat sheet 

@@ -2,6 +2,7 @@
 title: ScsiReportLuns
 description: ScsiReportLuns
 ms.assetid: cfa717ae-faf9-442f-93ab-9b784a13514e
+ms.localizationpriority: medium
 ---
 
 # ScsiReportLuns

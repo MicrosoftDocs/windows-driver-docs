@@ -2,6 +2,7 @@
 title: ISCSI\_Supported\_LB\_Policies WMI Class
 description: ISCSI\_Supported\_LB\_Policies WMI Class
 ms.assetid: c11eebe8-519a-473d-9e9c-8a787333223e
+ms.localizationpriority: medium
 ---
 
 # ISCSI\_Supported\_LB\_Policies WMI Class

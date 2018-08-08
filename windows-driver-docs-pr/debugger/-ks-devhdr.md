@@ -14,6 +14,7 @@ api_name:
 - ks.devhdr
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ks.devhdr

@@ -7,6 +7,7 @@ ms.date: 05/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # <span id="debugger.setting_up_user-mode_debugging_in_visual_studio"></span>Setting Up User-Mode Debugging in Visual Studio

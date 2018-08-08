@@ -14,6 +14,7 @@ api_name:
 - DriverAttributeChanged
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # DriverAttributeChanged rule (kmdf)

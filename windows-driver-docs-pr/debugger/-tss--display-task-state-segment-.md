@@ -14,6 +14,7 @@ api_name:
 - .tss (Display Task State Segment)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .tss (Display Task State Segment)

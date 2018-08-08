@@ -10,6 +10,7 @@ ms.date: 11/01/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # OID_TCP_OFFLOAD_CURRENT_CONFIG

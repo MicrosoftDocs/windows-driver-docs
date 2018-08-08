@@ -14,6 +14,7 @@ api_name:
 - bthkd.hciinterface
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !bthkd.hciinterface

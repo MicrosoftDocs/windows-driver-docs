@@ -14,6 +14,7 @@ api_name:
 - .create (Create Process)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .create (Create Process)

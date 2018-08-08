@@ -16,9 +16,15 @@ ms.technology: windows-devices
 ## In this section
 
 
--   [What's New In Sensors](what-s-new-in-sensors.md)
--   [Universal sensor driver model for Windows 10](converged-sensor-driver-model-for-windows-10.md)
+-   [What's new in sensor driver development](what-s-new-in-sensors.md)
+-   [Overview of the universal sensor driver model](overview-of-converged-sensor-driver-model.md)
+-   [Windows sensor driver features](windows-sensor-driver-features.md)
+-   [Programming guide](programming-guide-v2.md)
 -   [Sensor driver model for Windows 8.1](sensor-driver-model-for-windows-8-1.md)
+
+## Related sections
+
+-   [Sensors DDI reference](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/_sensors/)
 
  
 

@@ -3,6 +3,7 @@ title: Multiple Binary Opt-In POOL_NX_OPTIN_AUTO
 author: windows-driver-content
 description: If you are a hardware vendor who supplies different driver binaries for different versions of Windows, you can use the POOL_NX_OPTIN_AUTO opt-in mechanism.
 ms.assetid: 5E6759E3-3AF8-4427-BDD0-DB64B3D480A1
+ms.localizationpriority: medium
 ---
 
 # Multiple Binary Opt-In: POOL\_NX\_OPTIN\_AUTO

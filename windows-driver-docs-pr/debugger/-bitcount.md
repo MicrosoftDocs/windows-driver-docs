@@ -14,6 +14,7 @@ api_name:
 - bitcount
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !bitcount

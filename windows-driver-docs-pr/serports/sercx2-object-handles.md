@@ -4,6 +4,7 @@ author: windows-driver-content
 description: This topic describes object handle types that are specifically defined for version 2 of the serial framework extension (SerCx2). 
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SerCx2 Object Handles

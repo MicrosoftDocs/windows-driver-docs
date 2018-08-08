@@ -9,6 +9,7 @@ ms.date: 06/05/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Power-up sequence for a NetAdapterCx client driver

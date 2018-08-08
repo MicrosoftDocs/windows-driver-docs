@@ -3,6 +3,7 @@ title: Storage class memory glossary
 description: Glossary page
 Robots: noindex, nofollow
 ms.assetid: 6897E3E2-9F93-4100-BB99-1B224AFE2B68
+ms.localizationpriority: medium
 ---
 
 # Storage class memory glossary

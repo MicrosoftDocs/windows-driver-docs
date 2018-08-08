@@ -14,6 +14,7 @@ api_name:
 - wmitrace.dumpmini
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wmitrace.dumpmini

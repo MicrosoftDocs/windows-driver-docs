@@ -14,6 +14,7 @@ api_name:
 - bpid
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !bpid

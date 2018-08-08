@@ -14,6 +14,7 @@ api_name:
 - .pagein (Page In Memory)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .pagein (Page In Memory)

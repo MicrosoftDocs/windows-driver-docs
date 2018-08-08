@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device update methods
@@ -26,7 +27,7 @@ A sensor driver supports methods that update the sensor device. The pseudocode d
 
 The **DriverUpdateDeviceCRI**, **DriverUpdateDeviceCS**, and **DriverUpdateDeviceLDA** methods demonstrate how a driver updates the current report interval, change sensitivity, and location data accuracy fields on the device.
 
-```ManagedCPlusPlus
+```cpp
 effectiveCRI DriverUpdateDeviceCRI(sensorID, requestedCRI)
 {
     if (sensor device is intelligent (ex. HID))
@@ -50,7 +51,7 @@ effectiveCRI DriverUpdateDeviceCRI(sensorID, requestedCRI)
 }
 ```
 
-```ManagedCPlusPlus
+```cpp
 effectiveCS[] DriverUpdateDeviceCS(sensorID, requestedCSs)
 {
     if (sensor device is intelligent (ex. HID))
@@ -74,7 +75,7 @@ effectiveCS[] DriverUpdateDeviceCS(sensorID, requestedCSs)
 }
 ```
 
-```ManagedCPlusPlus
+```cpp
 effectiveLDA DriverUpdateDeviceLDA(sensorID, requestedLDA)
 {
     if (sensor device is intelligent (ex. HID))
@@ -103,7 +104,7 @@ effectiveLDA DriverUpdateDeviceLDA(sensorID, requestedLDA)
 
 The **DriverUpdateDeviceRS** method demonstrates how a driver enables or disables interrupts on the device.
 
-```ManagedCPlusPlus
+```cpp
 effectiveRS DriverUpdateDeviceRS(sensorID, requestedRS)
 {
     if (sensor device is intelligent (ex. HID))
@@ -139,7 +140,7 @@ effectiveRS DriverUpdateDeviceRS(sensorID, requestedRS)
 
 The **DriverUpdateDevicePS** method demonstrates how a driver sets the power state on the device.
 
-```ManagedCPlusPlus
+```cpp
 effectivePS DriverUpdateDevicePS(sensorID, requestedPS)
 {
     if (sensor device is intelligent (ex. HID))
@@ -164,7 +165,7 @@ effectivePS DriverUpdateDevicePS(sensorID, requestedPS)
 ```
 
 ## Related topics
-[Sensor Driver Development Basics](sensor-driver-development-basics.md)  
+[Sensor Driver Development Basics](sensor-driver-development-basics.md)
 
 
 

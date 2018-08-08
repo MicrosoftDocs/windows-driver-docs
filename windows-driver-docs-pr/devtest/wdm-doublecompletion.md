@@ -14,6 +14,7 @@ api_name:
 - DoubleCompletion
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # DoubleCompletion rule (wdm)

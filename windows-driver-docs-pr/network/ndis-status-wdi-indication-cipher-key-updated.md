@@ -9,6 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - NDIS_STATUS_WDI_INDICATION_CIPHER_KEY_UPDATED Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # NDIS_STATUS_WDI_INDICATION_CIPHER_KEY_UPDATED

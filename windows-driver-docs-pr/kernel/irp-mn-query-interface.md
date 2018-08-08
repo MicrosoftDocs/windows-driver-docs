@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: ae1dab46-c387-4e5f-9368-451e625ddbc1
 keywords:
  - IRP_MN_QUERY_INTERFACE Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_QUERY\_INTERFACE

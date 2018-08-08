@@ -14,6 +14,7 @@ api_name:
 - ndiskd.minidriver
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.minidriver

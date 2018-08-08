@@ -14,6 +14,7 @@ api_name:
 - rebase
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !rebase

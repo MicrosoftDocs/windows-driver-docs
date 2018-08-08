@@ -9,6 +9,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 05f63b39-f9da-4627-bc14-13be1f266698
+ms.localizationpriority: medium
 ---
 
 # Iasphelp Automation Interface

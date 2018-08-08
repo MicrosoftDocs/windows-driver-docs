@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_WWAN_SYS_CAPS_INFO Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_SYS\_CAPS\_INFO

@@ -6,6 +6,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2977C795-96CF-4B1F-8C6A-BDE475BBDC43
+ms.localizationpriority: medium
 ---
 
 # Printer Bidi Enumerations

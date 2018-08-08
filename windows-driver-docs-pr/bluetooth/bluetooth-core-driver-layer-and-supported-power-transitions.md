@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Bluetooth Core Driver Layer and Supported Power Transitions
@@ -16,112 +17,63 @@ The following table summarizes device and system power states that the Bluetooth
 
 <table>
     <tr>
-        <td colspan="2" rowspan="2"></td>
-        <td colspan="3">
-            <p><b>Device Power States</b></p>
-        </td>
+        <td></td>
+        <td></td>
+        <td colspan="3"><b>Device Power States</b></td>
     </tr>
     <tr>
-        <td>
-            <p>D0 (Active)</p>
-        </td>
-        <td>
-            <p>D2 (sleep) – some power is maintained to the Bluetooth chip for persisting its internal state</p>
-        </td>
-        <td>
-            <p>D3 (Off) - Power is removed (*)</p>
-        </td>
+        <td></td>
+        <td></td>
+        <td>D0 (Active)</td>
+        <td>D2 (sleep) – some power is maintained to the Bluetooth chip for persisting its internal state</td>
+        <td>D3 (Off) - Power is removed (\*)</td>
     </tr>
     <tr>
-        <td rowspan="6">
-            <p><b>System power states</b></p>
-        </td>
-        <td>
-            <p>S0 (Active)</p>
-        </td>
-        <td>
-            <p>Active</p>
-        </td>
-        <td>
-            <p>Sleep if armed for wake</p>
-        </td>
-        <td>
-            <p>Radio RM off</p>
-        </td>
+        <td rowspan="6"><b>System power states</b></td>
+        <td>S0 (Active)</td>
+        <td>Active</td>
+        <td>Sleep if armed for wake</td>
+        <td>Radio RM off</td>
     </tr>
     <tr>
-        <td>
-            <p>S1</p>
-        </td>
-        <td>
-            <p>N/A</p>
-        </td>
-        <td>
-            <p>N/A</p>
-        </td>
-        <td>
-            <p>N/A</p>
-        </td>
+        <td>S1</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>N/A</td>
     </tr>
     <tr>
-        <td>
-            <p>S2</p>
-        </td>
-        <td>
-            <p>N/A</p>
-        </td>
-        <td>
-            <p>N/A</p>
-        </td>
-        <td>
-            <p>N/A</p>
-        </td>
+       <td>S2</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>N/A</td>
     </tr>
     <tr>
-        <td>
-            <p>S3 (Sleep)</p>
-        </td>
-        <td>
-            <p>N/A</p>
-        </td>
-        <td>
-            <p>Sleep if armed for wake</p>
-        </td>
-        <td>
-            <p>Can be powered off </p>
-        </td>
+        <td>S3 (Sleep)</td>
+        <td>N/A</td>
+        <td>Sleep if armed for wake</td>
+        <td>Can be powered off</td>
     </tr>
     <tr>
-        <td>
-            <p>S4 (Hibernate)</p>
-        </td>
-        <td>
-            <p>N/A</p>
-        </td>
-        <td>
-            <p>Sleep if armed for wake</p>
-        </td>
-        <td>
-            <p>Can be powered off </p>
-        </td>
+        <td>S4 (Hibernate)</td>
+        <td>N/A</td>
+        <td>Sleep if armed for wake</td>
+        <td>Can be powered off</td>
     </tr>
     <tr>
-        <td>
-            <p>S5 (Off)</p>
-        </td>
-        <td>
-            <p>N/A</p>
-        </td>
-        <td>
-            <p>N/A</p>
-        </td>
-        <td>
-            <p>Can be powered off </p>
-        </td>
+        <td>S5 (Off)</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>Can be powered off</td>
     </tr>
 </table>
 
 
+<<<<<<< HEAD
+
+
+ 
+=======
+>>>>>>> master
 
 \*Re-initialization by Bluetooth core driver is required since power is lost to the Bluetooth chip
 

@@ -14,6 +14,7 @@ api_name:
 - DEVICE_REFERENCE_COUNT_NOT_ZERO
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x36: DEVICE\_REFERENCE\_COUNT\_NOT\_ZERO

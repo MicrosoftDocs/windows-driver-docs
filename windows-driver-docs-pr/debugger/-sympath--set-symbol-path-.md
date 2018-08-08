@@ -14,6 +14,7 @@ api_name:
 - .sympath (Set Symbol Path)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .sympath (Set Symbol Path)

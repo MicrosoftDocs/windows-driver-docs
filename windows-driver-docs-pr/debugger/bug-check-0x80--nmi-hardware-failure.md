@@ -14,6 +14,7 @@ api_name:
 - NMI_HARDWARE_FAILURE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x80: NMI\_HARDWARE\_FAILURE

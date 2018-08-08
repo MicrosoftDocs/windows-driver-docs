@@ -14,6 +14,7 @@ api_name:
 - obtrace
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !obtrace

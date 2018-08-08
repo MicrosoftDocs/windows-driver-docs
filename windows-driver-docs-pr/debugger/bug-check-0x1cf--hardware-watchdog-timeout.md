@@ -13,6 +13,7 @@ api_name:
 - HARDWARE_WATCHDOG_TIMEOUT 
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check Bug Check 0x1CF: HARDWARE\_WATCHDOG\_TIMEOUT 
