@@ -156,7 +156,7 @@ The data path programming model has changed significantly. Here are some key dif
 * Instead of NET_BUFFER_LIST and NET_BUFFER pools, NetAdapterCx introduces a ring buffer that is comprised of net packets, which map to NDIS as follows:
   * A [**NET_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet) is similar to a NET_BUFFER_LIST + NET_BUFFER.
   * A [**NET_PACKET_FRAGMENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet_fragment) is similar to a memory descriptor list (MDL). Each [**NET_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet) has one or more of these.
-  * For details on the replacement structures and how to use them, see [Transferring network data](transferring-network-data.md).
+  * For details on the replacement structures and how to use them, see [Packet descriptors and extensions](packet-descriptors-and-extensions.md).
 * In NDIS 6.x, the miniport needs to handle start and pause semantics. In the NetAdapterCx model, this is no longer the case.
 * The [*EVT_RXQUEUE_ADVANCE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrxqueue/nc-netrxqueue-evt_rxqueue_advance) callback is similar to [**MINIPORT_RETURN_NET_BUFFER_LISTS**](https://msdn.microsoft.com/library/windows/hardware/ff559437) in NDIS 6.x.
 * The [*EVT_TXQUEUE_ADVANCE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nettxqueue/nc-nettxqueue-evt_txqueue_advance) callback is similar to [**MINIPORT_SEND_NET_BUFFER_LISTS**](https://msdn.microsoft.com/library/windows/hardware/ff559440) in NDIS 6.x.
