@@ -17,13 +17,9 @@ As a Hardware Dev Center dashboard administrator, you’re responsible for keepi
 If you’re registering your company on dashboard for the first time, see [Establish a new company](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/establish-a-new-company).
 
 > [!IMPORTANT]
-> Starting March 13, 2014, code signing certificate requirements for Hardware Dev Center dashboard have changed to include:
-* Extended validation (EV) code signing certificates. EV code signing certificates are required for:
-  1. LSA plug-ins
-  2. UEFI submissions (starting August 15, 2014)
-* New certificate authorities: DigiCert, Entrust, GlobalSign, in addition to Symantec
-
-For more information about code signing requirements, see [Get a code signing certificate](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/get-a-code-signing-certificate). UEFI and LSA certification now require extended validation code signing certificates.
+> The certificate uploaded and used for all Hardware Dev Center dashboard submission packages has changed:
+* Extended validation (EV) code signing certificates are required for **all** submissions.  
+* All certificates must be SHA2 and signed with the **/fd sha256** signtool command line switch 
 
 ## To update a code signing certificate
 
@@ -33,17 +29,22 @@ For more information about code signing requirements, see [Get a code signing ce
 
 2. Get a new certificate or reuse an existing certificate.
 
-3. Once you receive your verified certificate from the certificate authority, you can sign and upload the Winqual.exe file following the instructions below.
+3. Once you receive your verified certificate from the certificate authority, proceed to **Step 2** to download and sign the "Signablefile.bin" 
 
-**Step 2: Sign and upload your Winqual.exe file**
+**Step 2: Sign and upload your "Signablefile.bin file**
 
-1. From the Hardware Dev Center dashboard, sign in as an administrator with your Microsoft account.
+1. Only **Administrators** are allowed to upload or expire Hardware Dashboard certificates. 
 
-2. Download the [Winqual Submission tool](https://prodingestionentity1.blob.core.windows.net/hardware/WinqualSubmissionTool.msi?sv=2017-07-29&sr=b&sig=GdjBd2BQOJp4MDVtB5%2BsIJgfyYdV33S5%2FKlwil0IMkk%3D&st=2018-05-01T10%3A09%3A47Z&se=9999-12-31T18%3A29%3A59Z&sp=r) from the Hardware Dev Center dashboard, and sign it with the new digital certificate for your company using the **SignTool**.
+2. Once an **Administrator** has signed in, you may use this direct link [Sign and upload your file](https://partner.microsoft.com/en-us/dashboard/account/CertificateUpload), or manually navigate to the page following these steps.
 
-3. On the **Administration** page, in the **Digital certificates** tile, click **Upload code for digital certification**.
+3. Click the gear icon in the upper right, then click **Developer settings**, then **Manage Certificates** on the left pane.
 
-4. On the **Digital certificates** page, click **Browse** to locate and select the Winqual.exe file that has been signed with the correct digital certificate for your company.
+4. Click the **Add a new certificate** button, then click the **Next** button.  
+   
+5. Download the Signablefile.bin and sign it with the new digital certificate for your company using SignTool with the following switch **/fd sha256** and appropriate SHA-2 timestamp.
+
+6. Upload the signed file to the Hardware Dev Center dashboard.
+
 
 ## Related topics
 
