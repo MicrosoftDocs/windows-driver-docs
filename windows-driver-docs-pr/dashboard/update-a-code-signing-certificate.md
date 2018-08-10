@@ -20,6 +20,7 @@ If you’re registering your company on dashboard for the first time, see [Estab
 > The certificate uploaded and used for all Hardware Dev Center dashboard submission packages has changed:
 * Extended validation (EV) code signing certificates are required for **all** submissions.  
 * All certificates must be SHA2 and signed with the **/fd sha256** signtool command line switch 
+* (for more information, see this [HLK Blog post](https://blogs.msdn.microsoft.com/windows_hardware_certification/2017/11/13/starting-in-february-2018-packages-signed-using-a-sha-1-digest-algorithm-and-certificate-chain-will-no-longer-be-accepted/)).
 
 ## To update a code signing certificate
 
@@ -35,7 +36,7 @@ If you’re registering your company on dashboard for the first time, see [Estab
 
 1. Only **Administrators** are allowed to upload or expire Hardware Dashboard certificates. 
 
-2. Once an **Administrator** has signed in, you may use this direct link [Sign and upload your file](https://partner.microsoft.com/en-us/dashboard/account/CertificateUpload), or manually navigate to the page following these steps.
+2. Once an **Administrator** has signed in, you may use this direct link [Sign and upload your file](https://partner.microsoft.com/dashboard/account/CertificateUpload), or manually navigate to the page following these steps.
 
 3. Click the gear icon in the upper right, then click **Developer settings**, then **Manage Certificates** on the left pane.
 
