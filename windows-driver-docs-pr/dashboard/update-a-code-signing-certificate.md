@@ -53,6 +53,6 @@ If you’re registering your company on dashboard for the first time, see [Estab
 
 [Establish a new company](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/establish-a-new-company)
 
-[Hardware certification submissions](https://msdn.microsoft.com/en-us/windows/hardware/drivers/dashboard/hardware-certification-submissions)
+[Hardware certification submissions](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/hardware-certification-submissions)
 
 [App certification submissions](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/app-certification-submissions)
