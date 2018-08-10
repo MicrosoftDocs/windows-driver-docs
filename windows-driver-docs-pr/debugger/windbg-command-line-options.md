@@ -4,7 +4,7 @@ description: First-time users of WinDbg should begin with the Debugging Using Wi
 ms.assetid: bd169c73-0a46-41b5-bd7b-71adf7747069
 keywords: ["WinDbg Command-Line Options Windows Debugging"]
 ms.author: domars
-ms.date: 08/01/2018
+ms.date: 08/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,7 +28,7 @@ The WinDbg command line uses the following syntax:
 windbg [ -server ServerTransport | -remote ClientTransport ] [-lsrcpath ]
    [ -premote SmartClientTransport ] [-?] [-ee {masm|c++}] 
    [-clines lines] [-b] [-d] [-aExtension]  
-   [-failinc] [-g] [-G] [-hd] [-j] [-n] [-noshell] [-o] 
+   [-failinc] [-g] [-G] [-hd] [-j] [-n] [-noshell] [-o] [-openPrivateDumpByHandle Handle]
    [-Q | -QY] [-QS | -QSY] [-robp] [-secure] [-ses] [-sdce] 
    [-sicv] [-sins] [-snc] [-snul] [-sup] [-sflags 0xNumber] 
    [-T Title] [-v] [-log{o|a} LogFile] [-noinh] 
@@ -145,6 +145,9 @@ Prohibits all **.shell** commands. This prohibition will last as long as the deb
 
 <span id="_______-o______"></span><span id="_______-O______"></span> **-o**   
 (User mode only) Debugs all processes launched by the target application (child processes). By default, processes created by the one you are debugging will run as they normally do.
+
+<span id="_______-openPrivateDumpByHandle______"></span><span id="_______-OPENPRIVATEDUMPBYHANDLE______"></span> **-openPrivateDumpByHandle** *Handle*   
+Specifies the handle of a crash dump file to debug.
 
 <span id="_______-p_______PID______"></span><span id="_______-p_______pid______"></span><span id="_______-P_______PID______"></span> **-p** *PID*   
 Specifies the decimal process ID to be debugged. This is used to debug a process that is already running.
