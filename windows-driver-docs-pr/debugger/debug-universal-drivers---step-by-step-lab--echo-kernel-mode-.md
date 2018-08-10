@@ -1175,7 +1175,7 @@ You can display or set process information by using the [**!process**](-process.
     TYPE mismatch for process object at 82a9acc0
     ```
 
-    The process object is now longer available, as the echoapp.exe process is no longer running.
+    The process object is no longer available, as the echoapp.exe process is no longer running.
 
 ### <span id="Threads"></span><span id="threads"></span><span id="THREADS"></span>Threads
 
