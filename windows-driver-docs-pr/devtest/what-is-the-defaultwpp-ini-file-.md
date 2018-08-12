@@ -20,9 +20,9 @@ The Defaultwpp.ini file includes the following:
 
 -   Architecture-dependent data types, such as SLONGPTR
 
--   Predefined constants--such as COMPNAME (computer name), %!FUNC! (function name), and %!LEVEL! (provide level)--that can be included in the [trace message prefix](trace-message-prefix.md) by editing the %TRACE\_FORMAT\_PREFIX% environment variable
+-   Predefined constants--such as COMPNAME (computer name), %!FUNC! (function name), and %!LEVEL! (provider level)--that can be included in the [trace message prefix](trace-message-prefix.md) by editing the %TRACE\_FORMAT\_PREFIX% environment variable
 
--   Format specification constants that let you use format specifications in trace messages like those used in **printf** statements. For example, it defines **s** is a custom string object, **ASTR**, and then defines **ASTR**, a complex data type, as a formatted string.
+-   Format specification constants that let you use format specifications in trace messages like those used in **printf** statements.
 
 -   Special types for types commonly used in tracing, such as IPADDR, HRESULT, and GUID.
 

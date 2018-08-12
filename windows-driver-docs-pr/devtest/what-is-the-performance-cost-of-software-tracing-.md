@@ -28,4 +28,5 @@ In this generated code, WPP\_CHECK\_INIT consists of one conditional check. WPP\
 
 For more information about how to exclude the WPP\_CHECK\_INIT check for better performance, see [Can I optimize the conditional checks that the WPP macros produce before the tracing?](can-i-optimize-the-conditional-checks-that-the-wpp-macros-produce-befo.md).
 
-**Note**  There might be some performance cost if you use methods other than WPP software tracing to implement software tracing in your driver. The effect depends on the implementation method.
+> [!NOTE]
+> There might be some performance cost if you use methods other than WPP software tracing to implement software tracing in your driver. The effect depends on the implementation method.
