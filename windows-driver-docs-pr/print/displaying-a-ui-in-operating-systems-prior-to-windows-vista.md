@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Displaying a UI in Operating Systems Prior to Windows Vista
 
 
-## <a href="" id="ddk-displaying-ui-in-operating-systems-prior-to-windows-codename-longh"></a>
+
 
 
 -   Do not display UI in any component that runs in the spooler's process.

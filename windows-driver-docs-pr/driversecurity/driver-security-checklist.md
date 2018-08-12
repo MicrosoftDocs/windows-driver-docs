@@ -7,6 +7,7 @@ ms.date: 01/26/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Driver security checklist
@@ -81,7 +82,7 @@ For information on using Windows Services, see [Services](https://msdn.microsoft
 
 **Security checklist item \#2:** *Use the driver frameworks to reduce the size of your code and increase it's reliability and security.*
 
-Use the [Windows Driver Frameworks](https://msdn.microsoft.com/library/windows/hardware/ff557565) to reduce the size of your code and increase it's reliability and security.  To get started, review [Using WDF to Develop a Driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-the-framework-to-develop-a-driver). For information on using the lower risk user mode framework driver (UMDF), see [Choosing a driver model](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/choosing-a-driver-model).
+Use the [Windows Driver Frameworks](https://docs.microsoft.com/windows-hardware/drivers/wdf/) to reduce the size of your code and increase it's reliability and security.  To get started, review [Using WDF to Develop a Driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-the-framework-to-develop-a-driver). For information on using the lower risk user mode framework driver (UMDF), see [Choosing a driver model](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/choosing-a-driver-model).
 
 Writing an old fashion [Windows Driver Model (WDM)](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model) driver is more time consuming, costly, and almost always involves recreating code that is available in the driver frameworks.
 

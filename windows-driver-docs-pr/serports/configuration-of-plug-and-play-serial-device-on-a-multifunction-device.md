@@ -16,12 +16,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Configuration of Plug and Play Serial Device on a Multifunction Device that Requires a 16550 UART-Compatible Interface
 
 
-## <a href="" id="ddk-configuration-of-plug-and-play-serial-device-on-a-multifunction-de"></a>
+
 
 
 This section describes the configuration of hardware, drivers, and device stacks for multifunction serial devices that:

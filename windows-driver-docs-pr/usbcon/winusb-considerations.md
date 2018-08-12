@@ -3,10 +3,11 @@ Description: Guidelines for choosing the best driver model for developing a USB 
 title: Choose a driver model for developing a USB driver
 author: windows-driver-content
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Choosing a driver model for developing a USB client driver
@@ -29,7 +30,7 @@ Writing a driver that is customized to the device's requirements is the most fle
 -   [Can you use a Microsoft-provided driver?](#can-you-use-a-microsoft-provided-driver)
 -   [If you write a USB client driver, which driver model is best?](#if-you--write-a-usb-client-driver--which-driver-model-is-best-)
 
-## <a href="" id="can-you-use-a-microsoft-provided-driver"></a>Can you use a Microsoft-provided driver?
+## Can you use a Microsoft-provided driver?
 
 
 You might *not* need to write a driver if:
@@ -57,14 +58,14 @@ You might *not* need to write a driver if:
 
     In Windows 8, we've added a new compatible ID to the INF for WinUSB installation. If the device firmware contains that compatible ID, WinUSB is loaded by default as the function driver for the device. This means that hardware manufacturers are not required to distribute INF files for their WinUSB devices. For more information, see [WinUSB Device](automatic-installation-of-winusb.md).
 
-## <a href="" id="if-you--write-a-usb-client-driver--which-driver-model-is-best-"></a>If you write a USB client driver, which driver model is best?
+## If you write a USB client driver, which driver model is best?
 
 
 The answer depends on the design of your device. First, determine whether a particular driver model meets your requirements. Some design considerations are based on whether you want the USB device to be accessed by multiple concurrent applications and support data streaming through isochronous endpoints.
 
 If you choose to write a driver, here are your options:
 
--   [User-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565) (UMDF)
+-   [User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/) (UMDF)
 
     UMDF provides device driver interfaces (DDIs) that a client driver can use to integrate with Windows components such as the Plug and Play Manager and Power Manager. UMDF also provides specialized target objects for USB devices, which abstract the hardware in user mode and simplify I/O operations for the driver. In addition to the UMDF interfaces, WDF provides enhanced debugger extensions and tracing tools for user-mode drivers. UMDF is based on the component object model (COM) and developing a user-mode driver is easier for a C++ developer.
 
@@ -83,7 +84,7 @@ If you choose to write a driver, here are your options:
 
      
 
--   [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565) (KMDF)
+-   [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/) (KMDF)
 
     KMDF was designed to make the driver models easy to extend to support new types of hardware. KMDF provides DDIs and data structures that make kernel-mode USB drivers easier to implement than the earlier Windows Driver Model (WDM) drivers. In addition, KMDF provides specialized input/output (I/O) targets that you can use to write a fully functional client driver that uses the Microsoft USB driver stack.
 
@@ -97,7 +98,7 @@ Microsoft Visual Studio 2012 includes **USB User-Mode Driver** and **USB Kernel
 -   [Write your first USB client driver (UMDF)](implement-driver-entry-for-a-usb-driver--umdf-.md)
 -   [Write your first USB client driver (KMDF)](tutorial--write-your-first-usb-client-driver--kmdf-.md)
 
-For information about how to implement UMDF and KMDF drivers, see the Microsoft Press book *Developing Drivers with the Windows Driver Foundation* or the [WHDC Web site](http://www.microsoft.com/whdc/driver/wdf/default.mspx).
+For information about how to implement UMDF and KMDF drivers, see the Microsoft Press book *Developing Drivers with the Windows Driver Foundation*.
 
 ## WinUSB, UMDF, KMDF Feature Comparison
 

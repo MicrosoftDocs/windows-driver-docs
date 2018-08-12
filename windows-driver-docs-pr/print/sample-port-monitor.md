@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sample Port Monitor
 
 
-## <a href="" id="ddk-sample-port-monitor-gg"></a>
+
 
 
 Source code for LOCALMON (Localmon.dll), the port monitor that supports local LPT and COM ports, is included in the Windows Driver Kit (WDK).

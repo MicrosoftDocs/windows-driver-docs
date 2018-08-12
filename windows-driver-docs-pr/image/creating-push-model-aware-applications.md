@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating Push-Model Aware Applications
 
 
-## <a href="" id="ddk-creating-push-model-aware-applications-si"></a>
+
 
 
 A push-model aware application is one that has registered itself with Microsoft STI so that it can be automatically activated when a still image device event has occurred. An application can be made push-model aware by either of the following two methods:

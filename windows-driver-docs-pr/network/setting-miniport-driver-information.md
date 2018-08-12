@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting Miniport Driver Information
 
 
-## <a href="" id="ddk-setting-miniport-driver-information-ng"></a>
+
 
 
 The **Ndis*Xxx*** function that a protocol driver calls to set miniport driver information and the *MiniportXxx* function that satisfies a set operation depend on whether the miniport driver is connectionless or connection-oriented.

@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # AVStream Child Devices
 
 
-## <a href="" id="ddk-avstream-child-devices-ksg"></a>
+
 
 
 This section applies to Microsoft Windows Server 2003 and earlier operating systems only if DirectX 9.0 or later is installed on that platform.

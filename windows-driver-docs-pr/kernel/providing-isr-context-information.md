@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Providing ISR Context Information
 
 
-## <a href="" id="ddk-providing-isr-context-information-kg"></a>
+
 
 
 On entry, an ISR receives a pointer to whatever context area the driver set up when it called [**IoConnectInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff548378) to register the routine.

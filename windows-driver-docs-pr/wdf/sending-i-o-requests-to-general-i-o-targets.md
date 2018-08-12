@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sending I/O Requests to General I/O Targets
 
 
-## <a href="" id="ddk-sending-i-o-requests-to-general-i-o-targets-df"></a>
+
 
 
 Your driver can send I/O requests to general I/O targets either synchronously or asynchronously.

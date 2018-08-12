@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering for SAN NIC Notifications
 
 
-## <a href="" id="ddk-registering-for-san-nic-notifications-ng"></a>
+
 
 
 When a proxy driver receives a request from its associated SAN service provider to supply the list of IP addresses assigned to NICs under the driver's control, the driver determines and passes this list to the provider.

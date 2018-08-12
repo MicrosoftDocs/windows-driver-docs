@@ -10,6 +10,7 @@ ms.date: 11/0]()7/20]()17
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WFP user mode management functions

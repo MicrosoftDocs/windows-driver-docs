@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Replacing the Default Printer Details Page
 
 
-## <a href="" id="ddk-replacing-the-default-printer-details-page-gg"></a>
+
 
 
 You can replace the default printer details page with a customized page by using the following steps:

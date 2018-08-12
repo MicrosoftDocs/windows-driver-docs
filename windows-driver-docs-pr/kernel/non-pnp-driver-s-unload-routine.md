@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Non-PnP Driver's Unload Routine
 
 
-## <a href="" id="ddk-a-non-pnp-driver-s-unload-routine-kg"></a>
+
 
 
 Earlier drivers and high-level file system drivers, which do not handle PnP device-removal requests, must release resources, delete device objects, and detach from the device stack in their [*Unload*](https://msdn.microsoft.com/library/windows/hardware/ff564886) routines.

@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Stopping a Device
 
 
-## <a href="" id="ddk-stopping-a-device-kg"></a>
+
 
 
 The PnP manager directs drivers to stop a device in the following situations:

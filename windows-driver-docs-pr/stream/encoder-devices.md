@@ -19,12 +19,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Encoder Devices
 
 
-## <a href="" id="ddk-encoder-minidrivers-ksg"></a>
+
 
 
 Encoders are devices that receive as input an uncompressed data stream (video and/or audio), encode the stream into a specific format, such as MPEG2, and then output an encoded stream. Encoder devices may be a part of another device, such as a combination TV tuner/capture adapter, or they may be separate. For example, an integrated encoder receives a data stream from a capture device such as an analog TV tuner/decoder and then it produces an encoded stream. A standalone encoder may receive input data from an uncompressed file, process the data, and then output encoded data.

@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Cursor Attributes
 
 
-## <a href="" id="ddk-cursor-attributes-gg"></a>
+
 
 
 Cursor attributes are [general printing attributes](general-printing-attributes.md) that specify characteristics of a printer's cursor.

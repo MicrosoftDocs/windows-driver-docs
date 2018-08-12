@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Option Attributes
 
 
-## <a href="" id="ddk-option-attributes-gg"></a>
+
 
 
 When specifying [printer options](printer-options.md), you use attributes to provide Unidrv with the following information:

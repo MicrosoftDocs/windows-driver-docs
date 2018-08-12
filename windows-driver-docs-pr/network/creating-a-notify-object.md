@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating a Notify Object
 
 
-## <a href="" id="ddk-creating-a-notify-object-ng"></a>
+
 
 
 A notify object should be created for a network component if the network component requires some control over networking setup and configuration and the ability to display custom property pages that users can use to modify the component's properties.

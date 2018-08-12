@@ -4,7 +4,7 @@ description: To use GFlags, type the following commands at the command line. You
 ms.assetid: 832b7269-623a-4f32-8bda-1059087bab09
 keywords: ["GFlags Commands Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 06/12/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,14 +14,19 @@ api_name:
 - GFlags Commands
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
-# GFlags Commands
+# GFlags Command Overview
 
+For general information on how to install and locate gflags.exe, see [GFlags](gflags.md).
+
+You can use the GFlags commands and the [Global Flags Dialog Box](global-flags-dialog-box.md) interchangeably.
+
+## GFlags Command Usage 
 
 To use GFlags, type the following commands at the command line.
 
-You can use the GFlags commands and the [Global Flags Dialog Box](global-flags-dialog-box.md) interchangeably.
 
 To open the GFlags dialog box:
 

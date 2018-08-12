@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Driver DLL for display adapter or chipset has properly formatted file version
@@ -43,8 +44,8 @@ The DDDD field can be set to any numerical value between 0 and 9999.
 
 For example:
 
--   Windows Vista DirectX 9.0â€“compatible WDDM drivers can use the range 7.14.01.0000 to 7.14.9999.9999.
--   Windows 7 DirectX 10.0â€“compatible WDDM 1.1 drivers can use the range 8.15.01.0000 to 8.15.9999.9999.
+-   Windows Vista DirectX 9.0-compatible WDDM drivers can use the range 7.14.01.0000 to 7.14.9999.9999.
+-   Windows 7 DirectX 10.0-compatible WDDM 1.1 drivers can use the range 8.15.01.0000 to 8.15.9999.9999.
 -   Windows 8 WDDM 1.2 drivers on DX10 hardware would be 9.15.01.0000 to 9.15.9999.9999.
 
 **Recommendation** (this will become a requirement in a future release): We highly recommend that the DriverVer in the display driver .INF file also conform to the above DLL version-numbering requirement, except that for Windows 8, WDDM 1.2 drivers, the BB field in the INF DriverVer must be set for the highest DirectX feature level that is supported by the driver on the graphics hardware listed in the INF.

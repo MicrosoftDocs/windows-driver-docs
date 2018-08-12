@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using the System's Cancel Spin Lock
 
 
-## <a href="" id="ddk-using-the-system-s-cancel-spin-lock-kg"></a>
+
 
 
 The system provides a single *cancel spin lock*, which is acquired or released when certain system routines are called.

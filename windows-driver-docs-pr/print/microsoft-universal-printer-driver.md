@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Microsoft Universal Printer Driver
@@ -20,7 +21,7 @@ ms.technology: windows-devices
 
 The Microsoft Universal print driver (Unidrv) is also referred to as the v3 print driver. The topics in this section show how to add minidrivers to Unidrv to support different printer models.
 
-## <a href="" id="ddk-microsoft-universal-printer-driver-gg"></a>
+
 
 
 [Introduction to the Universal Printer Driver](introduction-to-the-universal-printer-driver.md)

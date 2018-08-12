@@ -4,7 +4,7 @@ description: The verifier extension displays the status of Driver Verifier and i
 ms.assetid: e84993e1-da10-4041-8fc7-7f40806ee454
 keywords: ["Driver Verifier", "verifier Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 05/03/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - verifier
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !verifier
@@ -114,7 +115,6 @@ Kdexts.dll
 
 For information about [Driver Verifier](http://go.microsoft.com/fwlink/p/?linkid=120480), see the Windows Driver Kit (WDK) documentation.
 
-For more information and downloads, see the [Driver Verifier](http://go.microsoft.com/fwlink/p/?linkid=8753) on the Windows Hardware Developer Central (WHDC).
 
 Remarks
 -------

@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Command String Format
 
 
-## <a href="" id="ddk-command-string-format-gg"></a>
+
 
 
 Command strings are used to specify the escape sequences that Unidrv must send to printer hardware. Command strings can be made up of the following elements:

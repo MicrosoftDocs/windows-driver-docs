@@ -10,6 +10,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Outstanding Send Data During a Terminate Offload Operation
@@ -17,7 +18,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-handling-outstanding-send-data-during-a-terminate-offload-operatio"></a>
+
 
 
 When the offload of a TCP connection is terminated, outstanding send data might exist on the connection. This data can include:

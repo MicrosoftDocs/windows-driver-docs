@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing Plug and Play Serial Ports and COM Ports
 
 
-## <a href="" id="ddk-installing-plug-and-play-serial-ports-and-com-ports-kg"></a>
+
 
 
 By default, the combined operation of the Ports class installer and the Serial function driver configure a serial port as a COM port. Serial creates a COM port device interface for a serial port if the **SerialSkipExternalNaming** entry value for a device does not exist or is set to zero. For more information about how Serial creates a COM port device interface for a COM port and how to override this operation, see [External Naming of COM Ports](external-naming-of-com-ports.md).

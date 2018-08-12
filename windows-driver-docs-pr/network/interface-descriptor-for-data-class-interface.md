@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Interface Descriptor for Data Class Interface
 
 
-## <a href="" id="ddk-interface-descriptor-for-data-class-interface-ng"></a>
+
 
 
 <table>

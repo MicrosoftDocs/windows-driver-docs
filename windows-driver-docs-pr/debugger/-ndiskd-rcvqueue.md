@@ -14,6 +14,7 @@ api_name:
 - ndiskd.rcvqueue
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.rcvqueue

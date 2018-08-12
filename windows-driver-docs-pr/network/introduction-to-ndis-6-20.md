@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to NDIS 6.20
 
 
-## <a href="" id="ddk-introduction-to-ndis-6-20-ng"></a>
+
 
 
 This section introduces Network Driver Interface Specification (NDIS) 6.20 and describes its major design additions. NDIS 6.20 is included in Windows 7 and Windows Server 2008 R2 and later.

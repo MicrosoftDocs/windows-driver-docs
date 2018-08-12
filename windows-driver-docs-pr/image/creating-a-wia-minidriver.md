@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating a WIA Minidriver
 
 
-## <a href="" id="ddk-creating-a-wia-minidriver-si"></a>
+
 
 
 A WIA minidriver should be able to do the following:

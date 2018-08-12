@@ -14,6 +14,7 @@ api_name:
 - LOADER_ROLLBACK_DETECTED
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x196: LOADER\_ROLLBACK\_DETECTED

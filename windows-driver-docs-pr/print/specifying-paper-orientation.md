@@ -17,12 +17,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying Paper Orientation
 
 
-## <a href="" id="ddk-specifying-paper-orientation-gg"></a>
+
 
 
 There are three [standard options](standard-options.md) associated with the Orientation [standard feature](standard-features.md): PORTRAIT, LANDSCAPE\_CC90, and LANDSCAPE\_CC270. Unless otherwise specified, the default orientation is PORTRAIT. The use of this option is straightforward, and is not discussed further in this topic. The balance of this topic is concerned with the two landscape options.

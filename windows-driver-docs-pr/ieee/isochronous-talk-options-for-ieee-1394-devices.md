@@ -16,12 +16,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Isochronous Talk Options for IEEE 1394 Devices
 
 
-## <a href="" id="ddk-isochronous-talk-options-for-ieee-1394-devices-kg"></a>
+
 
 
 There are three ways of organizing output data in isochronous talk operations: packets with no headers, fixed-sized data packets with headers, and variable-size data packets with headers.

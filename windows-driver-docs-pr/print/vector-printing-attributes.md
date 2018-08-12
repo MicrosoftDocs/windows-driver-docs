@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Vector Printing Attributes
 
 
-## <a href="" id="ddk-vector-printing-attributes-gg"></a>
+
 
 
 Vector printing attributes are [general attributes](general-attributes.md) that specify characteristics of a printer's vector printing capabilities. These attributes compose a single group:

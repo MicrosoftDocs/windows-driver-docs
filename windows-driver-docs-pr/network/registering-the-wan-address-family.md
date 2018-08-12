@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering the WAN Address Family
 
 
-## <a href="" id="ddk-registering-the-wan-address-family-ng"></a>
+
 
 
 This topic describes how to register the TAPI address family from a CoNDIS WAN miniport call manager (MCM) or a separate call manager.

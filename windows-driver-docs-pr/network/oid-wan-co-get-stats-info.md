@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_WAN_CO_GET_STATS_INFO Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_WAN\_CO\_GET\_STATS\_INFO
@@ -37,7 +38,7 @@ The OID\_WAN\_CO\_GET\_STATS\_INFO OID requests the miniport driver to return st
   
 ```
 
-## <a href="" id="ddk-oid-wan-co-get-stats-info-nr"></a>
+
 
 
 The members of this structure contain the following information:

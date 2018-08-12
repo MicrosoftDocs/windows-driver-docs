@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Obtaining Information About a Parallel Port
 
 
-## <a href="" id="ddk-obtaining-information-about-a-parallel-port-kg"></a>
+
 
 
 Before a client uses a parallel port, it can obtain information about the following:

@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IStiUSD COM Interface
 
 
-## <a href="" id="ddk-istiusd-com-interface-si"></a>
+
 
 
 The **IStiUSD** COM interface is the means by which the [IStiDevice COM Interface](istidevice-com-interface.md) communicates with still image devices. The **IStiUSD** interface's methods are implemented by each vendor-supplied [User-Mode Still Image Minidrivers](overview-of-sti-components.md#ddk-user-mode-still-image-minidrivers-si).

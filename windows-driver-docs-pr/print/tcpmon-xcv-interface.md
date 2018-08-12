@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # TCPMON Xcv Interface
 
 
-## <a href="" id="ddk-tcpmon-xcv-interface-gg"></a>
+
 
 
 This section describes the transceive (Xcv) interface for the standard TCP/IP port monitor (TCPMON). This interface, which is implemented using [**XcvData**](https://msdn.microsoft.com/library/windows/hardware/ff564255) and [**XcvDataPort**](https://msdn.microsoft.com/library/windows/hardware/ff564258) function calls, enables those using it to configure a TCP/IP printer port or to obtain information about a TCP/IP printer port configuration. The Xcv interface described in this section is specific to TCP/IP ports. Other Xcv interfaces might be available for other port types.

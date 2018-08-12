@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filtering OID Requests in an NDIS Filter Driver
 
 
-## <a href="" id="ddk-filtering-oid-requests-in-an-ndis-filter-driver-ng"></a>
+
 
 
 Filter drivers can process OID requests that are originated by overlying drivers. NDIS calls the [*FilterOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff549954) function to process each OID request. Filter drivers can forward OID requests to underlying drivers by calling the [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830) function.

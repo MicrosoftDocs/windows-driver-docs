@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of Windows Memory Space
 
 
-## <a href="" id="ddk-overview-of-windows-memory-space-kg"></a>
+
 
 
 The following figure illustrates the NT-based operating system's virtual memory spaces and their relationship to system physical memory.

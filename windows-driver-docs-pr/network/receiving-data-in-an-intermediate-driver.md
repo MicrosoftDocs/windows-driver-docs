@@ -9,12 +9,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Receiving Data in an Intermediate Driver
 
 
-## <a href="" id="ddk-receiving-data-in-an-intermediate-driver-ng"></a>
+
 
 
 Intermediate drivers receive data at their protocol lower edge in much the same way as protocol drivers.

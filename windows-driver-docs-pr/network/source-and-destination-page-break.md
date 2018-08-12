@@ -17,6 +17,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Source and Destination Page Break
@@ -26,7 +27,7 @@ ms.technology: windows-devices
 
  
 
-## <a href="" id="ddk-source-and-destination-page-break-ng"></a>
+
 
 
 The NetDMA interface before version 2.0 supports one physical address per descriptor for the source or destination of the DMA transfer. Because there is one address in each descriptor in NetDMA 1.0, even when the total length of DMA transfer is less than a 4 KB page or the total length that the DMA engine supports (typically 4 KB), if the source or destination spans multiple non-contiguous pages, the NetDMA interface must break the DMA transfer into multiple descriptors.

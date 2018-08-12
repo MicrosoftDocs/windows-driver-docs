@@ -14,6 +14,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_SET\_INFORMATION
@@ -24,7 +25,7 @@ ms.technology: windows-devices
 
 The IRP\_MJ\_SET\_INFORMATION request is sent by the I/O Manager and other operating system components, as well as other kernel-mode drivers. It can be sent, for example, when a user-mode application has called a Microsoft Win32 function such as **SetEndOfFile** or when a kernel-mode component has called [**ZwSetInformationFile**](https://msdn.microsoft.com/library/windows/hardware/ff567096).
 
-## <a href="" id="operation-fsd"></a>Operation: File System Drivers
+## Operation: File System Drivers
 
 
 The file system driver should extract and decode the file object to determine whether it represents a user file or directory open. If it does, the file system driver should process the request as appropriate and complete the IRP.
@@ -51,7 +52,7 @@ FileLinkInformation (for file systems, such as NTFS, that do not allow cycles to
 
 FileValidDataLengthInformation
 
-## <a href="" id="operation-filter"></a>Operation: File System Filter Drivers
+## Operation: File System Filter Drivers
 
 
 The filter driver must pass this IRP down to the next-lower driver on the stack.

@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering as a Source of Error Messages
 
 
-## <a href="" id="ddk-registering-as-a-source-of-error-messages-kg"></a>
+
 
 
 Drivers register the source of error messages in the registry. Drivers must set two keys under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\EventLog\\System\\***DriverName*:

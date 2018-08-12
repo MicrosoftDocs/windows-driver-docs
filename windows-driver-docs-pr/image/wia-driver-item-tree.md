@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA Driver Item Tree
 
 
-## <a href="" id="ddk-wia-driver-item-tree-si"></a>
+
 
 
 In WIA, an imaging device is represented logically as a hierarchical tree of WIA items, as shown in the following diagram of a camera tree.

@@ -12,10 +12,11 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 06/19/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_RTAUDIO\_GETREADPACKET
@@ -48,16 +49,16 @@ KSPROPERTY\_RTAUDIO\_GETREADPACKET returns information about captured audio pack
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
 <td align="left"><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
-<td align="left"><p>[<strong>KSRTAUDIO_GETREADPACKET_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/mt786976)</p></td>
+<td align="left"><p>[<strong>KSRTAUDIO_GETREADPACKET_INFO</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_getreadpacket_info)</p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-The property descriptor (instance data) is a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure. Before sending the request, the client loads the structure with values that indicate the preferred base address for the register.
+The property descriptor (instance data) is a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure. Before sending the request, the client loads the structure with values that indicate the packet number, packet length and other information.
 
-The property value is a variable of type [**KSRTAUDIO\_GETREADPACKET\_INFO**](https://msdn.microsoft.com/library/windows/hardware/mt786976).
+The property value is a variable of type [**KSRTAUDIO\_GETREADPACKET\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_getreadpacket_info).
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 

@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Printer INF File Entries
 
 
-## <a href="" id="ddk-printer-inf-file-entries-gg"></a>
+
 
 
 For an installation application to install a printer on a print server, it must call the spooler's **AddPrinterDriverEx** function to load driver files and then call the spooler's **AddPrinter** function to make the printer available on the server.

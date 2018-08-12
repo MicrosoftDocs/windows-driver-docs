@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # AV/C Device Identifiers
 
 
-## <a href="" id="ddk-avc-sys-device-ids-ksg"></a>
+
 
 
 When a user connects an AV/C device to the computer, *Avc.sys* enumerates the active subunits on the device and generates the device identifier (ID) strings for them. There is a device identifier for each active subunit in an AV/C device. If there are no active subunits in an AV/C device, then *Avc.sys* generates a device identifier for the AV/C device itself.

@@ -9,6 +9,7 @@ api_name:
 - eula XML Element
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # eula XML Element

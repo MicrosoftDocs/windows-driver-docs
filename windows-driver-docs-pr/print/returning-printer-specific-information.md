@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Returning Printer-Specific Information
 
 
-## <a href="" id="ddk-returning-printer-specific-information-gg"></a>
+
 
 
 GDI sometimes requests a printer graphics DLL to return printer-specific information in between print jobs, by calling such **DrvQuery**-prefixed graphics DDI functions as [**DrvQueryAdvanceWidths**](https://msdn.microsoft.com/library/windows/hardware/ff556259) (if defined by the graphics DLL).

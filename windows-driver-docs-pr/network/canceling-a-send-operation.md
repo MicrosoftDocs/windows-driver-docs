@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Canceling a Send Operation
 
 
-## <a href="" id="ddk-canceling-a-send-operation-ng"></a>
+
 
 
 The following figure illustrates canceling a send operation.

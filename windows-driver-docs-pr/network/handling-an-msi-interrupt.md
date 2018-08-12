@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling an MSI Interrupt
 
 
-## <a href="" id="ddk-handling-msi-interrupts-ng"></a>
+
 
 
 NDIS calls the [*MiniportMessageInterrupt*](https://msdn.microsoft.com/library/windows/hardware/ff559407) function when a network interface card (NIC) generates an interrupt. The *MessageId* parameter in this function identifies the MSI-X message.

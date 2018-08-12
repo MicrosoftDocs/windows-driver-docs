@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Bluetooth User Interface
@@ -66,7 +67,7 @@ Windows might not provide default support for headset (HSP), hands-free (HFP), o
 
 You can create a device metadata package for your Bluetooth device so that Devices and Printers displays device-specific information about your device, such as photorealistic icons and custom descriptions. This can significantly improve a user’s experience with your Bluetooth device. For example, you might want to more effectively expose all the features that your device supports. Certain device classes can also take advantage of Device Stage, which enables IHVs to further enhance the device experience by providing a customized and branded device-specific user interface.
 
-For more information about how to create a device metadata package for your device, see **“How to Create a Device Metadata Package for Devices and Printers” on the WHDC Web site**.
+For more information about how to create a device metadata package for your device, see [How to Create a Device Metadata Package for Devices and Printers](https://docs.microsoft.com/previous-versions/windows/hardware/metadata/).
 
 For more information about Device Stage, see **“Device Stage General Development Kit” on the MSDN Web site**.
 

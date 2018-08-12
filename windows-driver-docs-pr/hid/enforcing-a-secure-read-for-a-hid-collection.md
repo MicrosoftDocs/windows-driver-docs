@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Enforcing a Secure Read For a HID Collection
 
 
-## <a href="" id="ddk-enforcing-a-secure-read-for-a-hid-collection-kg"></a>
+
 
 
 This section describes how a user-mode application or kernel-mode driver can enforce a *secure read* for a top-level [HID collection](hid-collections.md).

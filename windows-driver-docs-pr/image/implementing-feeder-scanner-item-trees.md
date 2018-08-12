@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Implementing Feeder Scanner Item Trees
 
 
-## <a href="" id="ddk-implementation-notes-for-feeder-scanner-item-trees-si"></a>
+
 
 
 This section contains additional information about flags and properties that you can use with feeder scanners. It also contains information about basic scanning for feeder scanners.

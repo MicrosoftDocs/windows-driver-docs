@@ -10,13 +10,14 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IPsec Offload Version 2
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-ipsec-offload-version-2-nr"></a>
+
 
 
 Internet protocol security (IPsec) task offload enables a computer to offload the computation-intensive cryptographic operations of IPsec to IPsec offload-capable network interface cards (NICs). Windows Server 2008 and NDIS 6.1 support IPsec offload version 2 (IPsecOV2), which extends services that are provided in IPsec offload version 1 (IPsecOV1) to provide improved network performance. IPsecOV2 provides support for additional crypto-algorithms, IPv6, and co-existence with large send offload version 2 (LSOv2).

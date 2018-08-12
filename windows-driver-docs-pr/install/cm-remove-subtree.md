@@ -9,6 +9,7 @@ api_name:
 - CM_Remove_SubTree
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Remove_SubTree
@@ -16,7 +17,7 @@ api_type:
 This function is reserved for system use.
 
 
-## <a href="" id="ddk-cm-remove-subtree-dr"></a>
+
 
 
 This function is obsolete and no longer supported in Windows 2000 and later versions of Windows. Use [**CM_Query_And_Remove_Subtree**](https://msdn.microsoft.com/library/windows/hardware/ff539722) instead.

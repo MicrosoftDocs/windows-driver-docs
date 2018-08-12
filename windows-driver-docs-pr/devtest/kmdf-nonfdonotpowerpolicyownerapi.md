@@ -2,6 +2,11 @@
 title: NonFDONotPowerPolicyOwnerAPI rule (kmdf)
 description: The NonFDONotPowerPolicyOwnerAPI rule specifies that if a non-FDO driver is not a power policy owner, certain DDIs cannot be called.
 ms.assetid: 91105318-12ae-44a0-ae3b-248e84f8cc93
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["NonFDONotPowerPolicyOwnerAPI rule (kmdf)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - NonFDONotPowerPolicyOwnerAPI
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # NonFDONotPowerPolicyOwnerAPI rule (kmdf)

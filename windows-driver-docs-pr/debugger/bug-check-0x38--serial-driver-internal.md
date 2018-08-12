@@ -14,6 +14,7 @@ api_name:
 - SERIAL_DRIVER_INTERNAL
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x38: SERIAL\_DRIVER\_INTERNAL

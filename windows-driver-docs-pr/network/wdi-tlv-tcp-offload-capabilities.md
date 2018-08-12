@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - WDI_TLV_TCP_OFFLOAD_CAPABILITIES Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_TCP\_OFFLOAD\_CAPABILITIES
@@ -38,8 +39,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_LSO\_V1\_CAPABILITIES**](wdi-tlv-lso-v1-capabilities.md)                                      |                                |          | Large Send Offload V1 capabilities. |
 | [**WDI\_TLV\_LSO\_V2\_CAPABILITIES**](wdi-tlv-lso-v2-capabilities.md)                                      |                                |          | Large Send Offload V2 capabilities. |
 | [**WDI\_TLV\_RECEIVE\_COALESCE\_OFFLOAD\_CAPABILITIES**](wdi-tlv-receive-coalesce-offload-capabilities.md) |                                |          | Receive Offload capabilities.       |
-
- 
+| [**WDI_TLV_OFFLOAD_SCOPE**](wdi-tlv-offload-scope.md) |   |   | Indicates whether offloads apply to the STA port only or on all ports. Currently applicable to 802.11ad adapters only. |
 
 Requirements
 ------------

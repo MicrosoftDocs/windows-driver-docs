@@ -14,6 +14,7 @@ api_name:
 - ndiskd.pktpools
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.pktpools

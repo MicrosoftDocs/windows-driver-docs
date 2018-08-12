@@ -4,12 +4,13 @@ author: windows-driver-content
 description: Testing Your Property Sheet
 ms.assetid: 9886a758-392b-451d-874d-5ffcc5f9f5cd
 keywords: ["property sheets WDK DirectInput , testing", "game controllers WDK DirectInput , property sheet testing", "control panels WDK DirectInput , property sheet testing", "testing property sheets WDK DirectInput", "debugging control panel applications WDK DirectInput"]
+ms.localizationpriority: medium
 ---
 
 # Testing Your Property Sheet
 
 
-## <a href="" id="ddk-testing-your-property-sheet-di"></a>
+
 
 
 It is highly recommended that you run the debug version of both DirectInput and the DirectInput control panel during the testing of your property sheet page. DirectX components are designed to issue useful errors and warning messages to the debug window/terminal.

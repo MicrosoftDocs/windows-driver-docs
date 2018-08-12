@@ -8,6 +8,7 @@ ms.date: 04/06/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # New camera driver controls for Windows 10

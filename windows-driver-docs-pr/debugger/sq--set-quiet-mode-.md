@@ -14,6 +14,7 @@ api_name:
 - sq (Set Quiet Mode)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # sq (Set Quiet Mode)

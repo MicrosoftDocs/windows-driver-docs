@@ -9,12 +9,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS 6.0 Design Objectives
 
 
-## <a href="" id="ddk-ndis-6-0-design-objectives-ng"></a>
+
 
 
 Two major objectives have guided the design and development of NDIS 6.0:

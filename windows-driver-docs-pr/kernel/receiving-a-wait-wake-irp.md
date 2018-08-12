@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Receiving a Wait/Wake IRP
 
 
-## <a href="" id="ddk-receiving-a-wait-wake-irp-kg"></a>
+
 
 
 All PnP drivers must be prepared to receive power IRPs with minor IRP code [**IRP\_MN\_WAIT\_WAKE**](https://msdn.microsoft.com/library/windows/hardware/ff551766). How a driver handles a wait/wake IRP depends on its position in the device stack, the type of device(s) it controls, and the specific states from which its device supports wake-up.

@@ -16,12 +16,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Windows Sockets Direct
 
 
-## <a href="" id="ddk-windows-sockets-direct-ng"></a>
+
 
 
 Microsoft Windows Sockets Direct is a technology that, when possible, routes data at high speed and with high performance to and from Windows Sockets applications through a system area network (SAN) instead of the TCP/IP transport and an NDIS miniport driver.

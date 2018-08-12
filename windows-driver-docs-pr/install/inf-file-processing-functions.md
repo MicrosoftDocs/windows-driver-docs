@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF File Processing Functions
 
 
-## <a href="" id="ddk-inf-file-processing-functions-dg"></a>
+
 
 
 The INF file processing functions provide setup and installation functionality that includes the following:

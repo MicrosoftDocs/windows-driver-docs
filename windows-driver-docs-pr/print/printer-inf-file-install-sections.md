@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Printer INF File Install Sections
 
 
-## <a href="" id="ddk-printer-inf-file-install-sections-gg"></a>
+
 
 
 For Windows NT 4.0 and previous, vendors who supplied minidrivers to customers also supplied the customer with a copy of the appropriate Microsoft printer driver, obtained from Microsoft.

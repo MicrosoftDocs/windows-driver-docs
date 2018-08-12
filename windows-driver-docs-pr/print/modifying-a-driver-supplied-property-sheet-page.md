@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Modifying a Driver-Supplied Property Sheet Page
 
 
-## <a href="" id="ddk-modifying-a-driver-supplied-property-sheet-page-gg"></a>
+
 
 
 A UI plug-in can modify Unidrv-supplied or Pscript5-supplied property sheet pages by implementing the [**IPrintOemUI::CommonUIProp**](https://msdn.microsoft.com/library/windows/hardware/ff554159) method and a callback function.

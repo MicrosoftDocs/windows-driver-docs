@@ -15,6 +15,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # XPS Filters
@@ -34,7 +35,7 @@ Before unloading the filter DLL, the filter pipeline manager calls **DllCanUnloa
 
 **Note**   In some older XPS filters, the **DllGetClassObject** function retrieves a reference to the filter's **IPrintPipelineFilter** interface instead of to an **IClassFactory** interface. For backward compatibility, the filter pipeline manager in Windows Vista and later versions of Windows will continue to support these filters. However, for new filter designs, **DllGetClassObject** should retrieve a reference to an **IClassFactory** interface.
 
- 
+
 
 XPS filters make the printing subsystem more robust, because the filters run in a process different from the spooler. This "sandboxing" both protects against failures and allows a plug-in to run with different security permissions. XPSDrv also enables you to reuse filters across families of printers to lower costs and development time.
 
@@ -65,17 +66,4 @@ For information about how to debug the print filter pipeline service, see [Attac
 In Windows 7, XPS filters can use the [XPS rasterization service](using-the-xps-rasterization-service.md) to convert fixed pages in XPS documents to bitmaps.
 
 For information about the way Windows uses GPU acceleration for XPS rasterization, see [XPSRas GPU Usage Decision Tree](xpsras-usage-decision-tree.md).
-
-For more information about XPS filters, see the following white papers at the [WHDC](http://go.microsoft.com/fwlink/p/?linkid=69253) Web site:
-
-[XPSDrv Configuration Module Implementation](http://go.microsoft.com/fwlink/p/?linkid=133878)
-
-[XPSDrv Filter Pipeline](http://go.microsoft.com/fwlink/p/?linkid=133879)
-
- 
-
- 
-
-
-
 

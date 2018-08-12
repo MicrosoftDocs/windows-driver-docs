@@ -13,12 +13,13 @@ keywords:
  - power management status indications
  - power management WDK networking NDIS 6.20 status indications
  - power management WDK NDIS 6.20 status indications
+ms.localizationpriority: medium
 ---
 
 # Power Management Status Indications
 
 
-## <a href="" id="ddk-ndis-6-20-power-management-status-indications-nr"></a>
+
 
 
 This section includes the reference topics for the status indications that are used in the NDIS 6.20 power management interface. This interface is supported in NDIS 6.20 and later.

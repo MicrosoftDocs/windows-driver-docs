@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating IRPs for Lower-Level Drivers
 
 
-## <a href="" id="ddk-creating-irps-for-lower-level-drivers-kg"></a>
+
 
 
 To allocate an IRP for an asynchronous request, which will be processed in an arbitrary thread context by lower drivers, a [*DispatchReadWrite*](https://msdn.microsoft.com/library/windows/hardware/ff543381) routine can call one of the following support routines:

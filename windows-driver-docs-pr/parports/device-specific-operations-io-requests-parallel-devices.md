@@ -3,6 +3,7 @@ title: Device-specific operations for I/O requests for parallel devices
 author: windows-driver-content
 description: Documents device-specific operations for I/O requests for parallel devices
 keywords: ["Parallel devices WDK", "Parallel drivers WDK", "Parallel IRP codes"]
+ms.localizationpriority: medium
 ---
 
 # Device-specific operations for I/O requests for parallel devices
@@ -16,7 +17,7 @@ This topic documents the following device-specific operations for I/O requests f
 * [IRP_MJ_WRITE](#irp_mj_write)
 
 
-## <a href="" id=""></a> IRP_MJ_CREATE
+##  IRP_MJ_CREATE
 The [IRP_MJ_CREATE](https://msdn.microsoft.com/library/windows/hardware/ff550729) request opens a parallel device.
 
 ### When Sent
@@ -64,7 +65,7 @@ A parallel device is an exclusive device. If a parallel device is open, the syst
 For more information, see [Opening and Using a Parallel Device](https://msdn.microsoft.com/windows/hardware/drivers/parports/opening-and-using-a-parallel-device).
 
 
-## <a href="" id=""></a> IRP_MJ_DEVICE_CONTROL
+##  IRP_MJ_DEVICE_CONTROL
 The [IRP_MJ_DEVICE_CONTROL](https://msdn.microsoft.com/library/windows/hardware/ff550744) request operates a parallel device.
 
 ### When Sent
@@ -119,7 +120,7 @@ The request did not complete successfully.
 The operation is request-specific.
 
 
-## <a href="" id=""></a> IRP_MJ_INTERNAL_DEVICE_CONTROL
+##  IRP_MJ_INTERNAL_DEVICE_CONTROL
 The [IRP_MJ_INTERNAL_DEVICE_CONTROL](https://msdn.microsoft.com/library/windows/hardware/ff550766) request sets internal operating modes on a parallel device.
 
 ### When Sent
@@ -176,7 +177,7 @@ The request did not complete successfully.
 The operation is request-specific.
 
 
-## <a href="" id=""></a> IRP_MJ_QUERY_INFORMATION
+##  IRP_MJ_QUERY_INFORMATION
 The [IRP_MJ_QUERY_INFORMATION](https://msdn.microsoft.com/library/windows/hardware/ff550788) request obtains information about the file that represents the parallel device.
 
 ### When Sent
@@ -244,7 +245,7 @@ The system-supplied bus driver for parallel ports supports queries for the follo
 * **FilePositionInformation**
 
 
-## <a href="" id=""></a> IRP_MJ_READ
+##  IRP_MJ_READ
 The [IRP_MJ_READ](https://msdn.microsoft.com/library/windows/hardware/ff550794) request obtains input data from a parallel device.
 
 ### When Sent
@@ -294,7 +295,7 @@ The parallel port bus driver sets a cancel routine for the read request, marks t
 For more information, see [Reading and Writing a Parallel Device](https://msdn.microsoft.com/windows/hardware/drivers/parports/reading-and-writing-a-parallel-device).
 
 
-## <a href="" id=""></a> IRP_MJ_WRITE
+##  IRP_MJ_WRITE
 The [IRP_MJ_WRITE](https://msdn.microsoft.com/library/windows/hardware/ff550819) request transfers output data to a parallel device.
 
 ### When Sent

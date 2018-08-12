@@ -14,6 +14,7 @@ api_name:
 - .copysym (Copy Symbol Files)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .copysym (Copy Symbol Files)

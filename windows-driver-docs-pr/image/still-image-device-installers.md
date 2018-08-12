@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Still Image Device Installers
 
 
-## <a href="" id="ddk-still-image-device-installers-si"></a>
+
 
 
 Microsoft provides a class installer for still image devices, with the following features:

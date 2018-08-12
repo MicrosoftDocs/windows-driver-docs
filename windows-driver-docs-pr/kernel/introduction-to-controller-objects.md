@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to Controller Objects
 
 
-## <a href="" id="ddk-introduction-to-controller-objects-kg"></a>
+
 
 
 As its name suggests, a controller object usually represents a physical device controller with attached devices. A lowest-level non-WDM driver for a set of similar devices coordinated by a physical controller can create a controller object and use it to synchronize I/O operations between the attached devices. The driver implements a [*ControllerControl*](https://msdn.microsoft.com/library/windows/hardware/ff542049) routine and calls the I/O manager's controller object support routines.

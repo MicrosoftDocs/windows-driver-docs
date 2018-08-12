@@ -21,12 +21,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # AVStream Descriptors
 
 
-## <a href="" id="ddk-avstream-descriptors-ksg"></a>
+
 
 
 An AVStream minidriver describes itself and the filter types it supports by providing nested descriptor structures in the call to [**KsInitializeDriver**](https://msdn.microsoft.com/library/windows/hardware/ff562683). Each key component -- the device, the [filter factory](https://msdn.microsoft.com/library/windows/hardware/ff536385), and the [pin factory](https://msdn.microsoft.com/library/windows/hardware/ff537747) -- has an associated descriptor.

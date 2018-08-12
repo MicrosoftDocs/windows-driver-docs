@@ -16,6 +16,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_MULTI\_FEED\_SENSITIVITY
@@ -23,7 +24,7 @@ ms.technology: windows-devices
 
 The **WIA\_IPS\_MULTI\_FEED\_SENSITIVITY** property is used to change the multi-feed detection trigger to a lower or higher value between the lowest and highest sensitivity supported by the device. The WIA minidriver creates and maintains this property.
 
-## <span id="ddk_wia_ipa_depth_si"></span><span id="DDK_WIA_IPA_DEPTH_SI"></span>
+
 
 
 Property Type: VT\_I4

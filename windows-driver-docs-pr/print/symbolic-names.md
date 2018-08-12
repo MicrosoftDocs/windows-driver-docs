@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Symbolic Names
 
 
-## <a href="" id="ddk-symbolic-names-gg"></a>
+
 
 
 A symbolic name is a character string used as an identifier. Symbolic names have the following characteristics:

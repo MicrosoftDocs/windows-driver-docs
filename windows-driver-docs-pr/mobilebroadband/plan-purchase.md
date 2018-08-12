@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Plan purchase
@@ -22,9 +23,9 @@ Developing a plan purchase experience involves the following:
 
 -   **Purchase or top-up experience** The purchase business-logic details (such as plan information, payment, and credit card validation) must be maintained in your app. Windows supports web services or cellular protocols such as Unstructured Supplementary Service Data (USSD) to interact with your back-end systems to develop this business logic.
 
-<!-- -->
+-   **Provisioning** After the user has purchased the plan, Windows must provision the device and you must activate the device in its back-end. Provisioning is defined as configuring a Windows-based computer with information that is required to connect to a carrier network. This typically occurs after a subscription purchase. Provisioning information contains mobile broadband profile (access point name \[APN\], user name, and password), hot-spot profiles, Wi-Fi credentials, and plan information. Windows can use this information to automatically connect to your network without any user input. 
 
--   **Provisioning** After the user has purchased the plan, Windows must provision the device and you must activate the device in its back-end. Provisioning is defined as configuring a Windows-based computer with information that is required to connect to a carrier network. This typically occurs after a subscription purchase. Provisioning information contains mobile broadband profile (access point name \[APN\], user name, and password), hot-spot profiles, Wi-Fi credentials, and plan information. Windows can use this information to automatically connect to your network without any user input. For more info about provisioning, see [Account provisioning](account-provisioning.md).
+For more info about provisioning, see [Account provisioning](account-provisioning.md).
 
 For some carriers, the activation process on the mobile network is not instantaneous and can take up to ten minutes. Your app must handle this case elegantly and give a good user experience. The Windows activation experience should get information about estimated activation time and display that information to the user during the purchase.
 

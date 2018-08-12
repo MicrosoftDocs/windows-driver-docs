@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: 50ECF6E1-4FC6-4EEA-BACF-EBAD0329DA2E
 keywords:
  - IRP_MN_DEVICE_ENUMERATED Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_DEVICE\_ENUMERATED

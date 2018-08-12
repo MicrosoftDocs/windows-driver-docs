@@ -19,12 +19,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # AVStream Splitters
 
 
-## <a href="" id="ddk-avstream-splitters-ksg"></a>
+
 
 
 An AVStream minidriver can use AVStream class driver functionality to split a data stream into several copies as the stream passes through a given pin. This splitting process can be useful if your driver needs to copy an input stream to produce two identical output streams.

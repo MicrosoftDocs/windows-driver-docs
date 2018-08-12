@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Starting a NIC
 
 
-## <a href="" id="ddk-starting-a-nic-ng"></a>
+
 
 
 The following steps describe how NDIS participates in the starting of a NIC:

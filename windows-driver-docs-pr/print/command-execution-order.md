@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Command Execution Order
 
 
-## <a href="" id="ddk-command-execution-order-gg"></a>
+
 
 
 Printer commands must be sent to printer hardware in a meaningful order. For most of the command names defined in the GPD language, Unidrv knows when to send the command's escape sequence to the printer. There are two exceptions:

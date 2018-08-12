@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Miscellaneous Driver Programming Techniques
 
 
-## <a href="" id="ddk-driver-programming-techniques-kg"></a>
+
 
 
 This section contains various topics of interest to driver writers. It includes the following sections:

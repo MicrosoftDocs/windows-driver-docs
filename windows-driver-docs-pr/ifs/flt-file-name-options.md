@@ -7,12 +7,13 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # FLT\_FILE\_NAME\_OPTIONS
 
 
-## <a href="" id="ddk-flt-file-name-options-if"></a>
+
 
 
 The FLT\_FILE\_NAME\_OPTIONS type is a bitmask of flags that specify the name format, query method, and flags for a file name information query.

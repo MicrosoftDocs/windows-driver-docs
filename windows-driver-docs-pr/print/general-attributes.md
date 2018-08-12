@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # General Attributes
 
 
-## <a href="" id="ddk-general-attributes-gg"></a>
+
 
 
 *General attributes* represent one of the [attribute types](attribute-types.md) defined by the GPD language. General attributes are not associated with a particular feature or option. The general attributes are divided into the following groups:

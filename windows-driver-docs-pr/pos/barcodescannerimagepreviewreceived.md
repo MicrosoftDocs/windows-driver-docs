@@ -2,6 +2,7 @@
 title: BarcodeScannerImagePreviewReceived
 description: BarcodeScannerImagePreviewReceived
 ms.assetid: 'ec05bffb-95e6-4d9c-b632-adee1cbd5bad'
+ms.localizationpriority: medium
 ---
 
 # BarcodeScannerImagePreviewReceived

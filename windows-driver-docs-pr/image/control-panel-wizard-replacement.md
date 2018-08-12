@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Control Panel Wizard Replacement
 
 
-## <a href="" id="ddk-control-panel-wizard-replacement-si"></a>
+
 
 
 When the driver's icon (from the Control Panel, Scanners and Cameras), is double-clicking the default UI Scanner and Camera Wizard is displayed instead of the Vendor UI. This wizard is not replaceable using the same mechanism as the common dialog. It is possible to display your Vender UI from the Control Panel.

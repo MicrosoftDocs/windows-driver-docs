@@ -14,6 +14,7 @@ api_name:
 - .extpath (Set Extension Path)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .extpath (Set Extension Path)

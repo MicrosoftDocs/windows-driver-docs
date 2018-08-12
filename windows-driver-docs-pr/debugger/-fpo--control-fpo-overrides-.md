@@ -14,6 +14,7 @@ api_name:
 - .fpo (Control FPO Overrides)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .fpo (Control FPO Overrides)

@@ -16,6 +16,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_BARCODE\_SEARCH\_DIRECTION
@@ -23,7 +24,7 @@ ms.technology: windows-devices
 
 The **WIA\_IPS\_BARCODE\_SEARCH\_DIRECTION** property is used to configure the direction (relative to the scan direction) in which the device searches for barcodes on each scanned document page.
 
-## <span id="ddk_wia_ipa_depth_si"></span><span id="DDK_WIA_IPA_DEPTH_SI"></span>
+
 
 
 Property Type: VT\_I4

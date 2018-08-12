@@ -17,6 +17,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Identification Strings
@@ -24,7 +25,7 @@ ms.technology: windows-devices
 
 The Plug and Play (PnP) manager and other [device installation components](https://msdn.microsoft.com/library/windows/hardware/ff541277) use device identification strings to identify devices that are installed in a computer.
 
-## <a href="" id="ddk-device-identification-strings-dg"></a>
+
 
 
 Windows uses the following device identification strings to locate the information (INF) file that best matches the device. These strings are reported by a device's [*enumerator*](https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-enumerator):

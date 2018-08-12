@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Standardized INF Keywords for RSC
 
 
-## <a href="" id="ddk-standardized-inf-keywords-for-rss-ng"></a>
+
 
 
 In Windows 8, Windows Server 2012, and later, the receive segment coalescing (RSC) interface supports [standardized INF keywords](standardized-inf-keywords-for-network-devices.md) that appear in the registry and are specified in INF files.

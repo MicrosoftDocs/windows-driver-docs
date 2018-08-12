@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Stream Changes
 
 
-## <a href="" id="ddk-stream-changes-ksg"></a>
+
 
 
 The format of a DVD stream may change at anytime. For example, the audio stream format can change between AC3 and LPCM during playback.

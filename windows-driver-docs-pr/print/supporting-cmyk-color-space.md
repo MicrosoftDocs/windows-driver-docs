@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting CMYK Color Space
 
 
-## <a href="" id="ddk-supporting-cmyk-color-space-gg"></a>
+
 
 
 Regardless of whether color management is being handled by the application, system, driver, or device, a [printer graphics DLL](printer-graphics-dll.md) must indicate whether it supports the [*CMYK*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-cmyk) color space. This is done by setting the GCAPS\_CMYKCOLOR flag in the [**DEVINFO**](https://msdn.microsoft.com/library/windows/hardware/ff552835) structure. If this flag is set and CMYK profiles are in use, then GDI sends CMYK color data, instead of RGB data, to the printer graphics DLL for bitmaps, brushes, and pens. GDI also sets the following flags:

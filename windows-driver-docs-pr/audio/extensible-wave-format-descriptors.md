@@ -20,6 +20,7 @@ ms.date: 10/27/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Extensible Wave-Format Descriptors

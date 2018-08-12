@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Performing Device-Specific Idle Detection
 
 
-## <a href="" id="ddk-performing-device-specific-idle-detection-kg"></a>
+
 
 
 Instead of using the power manager's idle detection routines, a driver can perform its own idle detection based on device-specific criteria.

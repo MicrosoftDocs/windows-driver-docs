@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Driver Items
 
 
-## <a href="" id="ddk-driver-items-si"></a>
+
 
 
 Properties are stored in WIA driver items. A driver item is a logical description of the still image device and the data that the device stores or produces. A WIA minidriver creates a WIA driver item, by using the functions from the WIA service library.

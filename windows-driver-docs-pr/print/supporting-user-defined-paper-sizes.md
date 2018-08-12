@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting User-Defined Paper Sizes
 
 
-## <a href="" id="ddk-supporting-user-defined-paper-sizes-gg"></a>
+
 
 
 User-defined paper sizes can be specific to a single print server and are typically customized for a specific application. Hence they are often called customized paper sizes. System administrators use the print folder to define customized paper sizes. If a printer can handle customized paper sizes, vendors must use the printer's GPD file to specify the acceptable range of sizes.

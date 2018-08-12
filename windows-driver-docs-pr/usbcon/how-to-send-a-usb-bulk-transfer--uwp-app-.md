@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How to send a USB bulk transfer request (UWP app)
@@ -144,7 +145,7 @@ To write bulk data, start an asynchronous write operation by calling [**DataWrit
 
 After the asynchronous data operation is complete, you can get the number of bytes read or written from the task object. For a read operation, call [**DataReader methods**](https://msdn.microsoft.com/library/windows/apps/br208119), such as [**ReadBytes**](https://msdn.microsoft.com/library/windows/apps/br208139), to read data from the input stream.
 
-## <a href="" id="stall"></a>Clearing stall conditions
+## Clearing stall conditions
 
 
 At times, the app might experience failed data transfers. A failed transfer can be due to a stall condition on the endpoint. As long as the endpoint is stalled, data cannot be written to or read from it. In order to proceed with data transfers, the app must clear the stall condition on the associated pipe.

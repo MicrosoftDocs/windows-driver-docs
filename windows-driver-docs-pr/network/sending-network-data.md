@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sending Network Data
 
 
-## <a href="" id="ddk-sending-network-data-ng"></a>
+
 
 
 The following figure illustrates a basic send operation, which involves a protocol driver, NDIS, and a miniport driver.

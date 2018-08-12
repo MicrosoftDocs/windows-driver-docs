@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Example I/O Request - An Overview
 
 
-## <a href="" id="ddk-example-i-o-request---an-overview-kg"></a>
+
 
 
 The following figure shows an overview of what happens when a subsystem opens a file object representing a data file on behalf of an application.

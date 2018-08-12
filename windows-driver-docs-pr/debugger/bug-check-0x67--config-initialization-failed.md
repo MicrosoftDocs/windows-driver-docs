@@ -14,6 +14,7 @@ api_name:
 - CONFIG_INITIALIZATION_FAILED
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x67: CONFIG\_INITIALIZATION\_FAILED

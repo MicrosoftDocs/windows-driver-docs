@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Configuring Optional Protocol Driver Services
 
 
-## <a href="" id="ddk-configuring-optional-protocol-driver-services-ng"></a>
+
 
 
 NDIS calls a protocol driver's [*ProtocolSetOptions*](https://msdn.microsoft.com/library/windows/hardware/ff570269) function to allow a protocol driver to configure optional services. NDIS calls *ProtocolSetOptions* within the context of the protocol driver's call to the [**NdisRegisterProtocolDriver**](https://msdn.microsoft.com/library/windows/hardware/ff564520) function

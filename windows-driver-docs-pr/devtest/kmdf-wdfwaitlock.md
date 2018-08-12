@@ -2,6 +2,11 @@
 title: WdfWaitlock rule (kmdf)
 description: The WdfWaitlock rule specifies that calls to WdfWaitLockAcquire are used in strict alternation with WdfWaitlockRelease.
 ms.assetid: 481c5a21-6c4d-41e3-a54a-3da07d287fda
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["WdfWaitlock rule (kmdf)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - WdfWaitlock
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # WdfWaitlock rule (kmdf)

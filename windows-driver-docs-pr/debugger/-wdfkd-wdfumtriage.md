@@ -14,6 +14,7 @@ api_name:
 - wdfkd_wdfumtriage
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wdfkd\_wdfumtriage

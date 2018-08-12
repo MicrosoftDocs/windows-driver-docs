@@ -17,12 +17,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # User Interface Plug-Ins
 
 
-## <a href="" id="ddk-user-interface-plug-ins-gg"></a>
+
 
 
 This section contains the following topics that explain how to develop a user interface plug-in:

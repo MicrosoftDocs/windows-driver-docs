@@ -9,12 +9,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS Configuration Functions
 
 
-## <a href="" id="ddk-ndis-6-0-configuration-functions-ng"></a>
+
 
 
 NDIS includes the following functions to simplify driver configuration:

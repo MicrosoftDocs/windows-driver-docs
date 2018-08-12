@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Pairs
 
 
-## <a href="" id="ddk-pairs-gg"></a>
+
 
 
 To assign a pair of values to an attribute, use the PAIR keyword. The format is:

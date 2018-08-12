@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to CPSUI
 
 
-## <a href="" id="ddk-introduction-to-cpsui-gg"></a>
+
 
 
 The Common Property Sheet User Interface (CPSUI) is a user-mode dynamic-link library that enables developers to create property sheet pages having a common, standard appearance. Most pages created with CPSUI consist of:

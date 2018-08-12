@@ -14,6 +14,7 @@ api_name:
 - ob, ow, od (Output to Port)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ob, ow, od (Output to Port)

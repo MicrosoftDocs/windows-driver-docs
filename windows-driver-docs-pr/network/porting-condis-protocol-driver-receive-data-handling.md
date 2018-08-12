@@ -9,12 +9,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting CoNDIS Protocol Driver Receive Data Handling
 
 
-## <a href="" id="ddk-porting-ndis-protocol-driver-receive-data-handling-nd"></a>
+
 
 
 CoNDIS 6.0 miniport drivers indicate a linked list of [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures to NDIS instead of the NDIS 5.x [**NDIS\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff557086) structures. NDIS then forwards the NET\_BUFFER\_LIST structures to the appropriate overlying protocol drivers.

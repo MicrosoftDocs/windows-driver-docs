@@ -16,6 +16,7 @@ api_name:
 - Iasphelp.get_LongPaperName
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_LongPaperName method

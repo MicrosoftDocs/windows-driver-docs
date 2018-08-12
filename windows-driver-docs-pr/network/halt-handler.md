@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Miniport Driver Halt Handler
 
 
-## <a href="" id="ddk-halt-handler-ng"></a>
+
 
 
 An NDIS miniport driver must supply a [*MiniportHaltEx*](https://msdn.microsoft.com/library/windows/hardware/ff559388) function to [**NdisMRegisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563654).

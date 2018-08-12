@@ -2,6 +2,11 @@
 title: PdoInitFreeDeviceCreateType2 rule (kmdf)
 description: The PdoInitFreeDeviceCreateType2 rule specifies that a driver must not call WdfDeviceCreate after it calls WdfDeviceInitFree.
 ms.assetid: 0e5c9a97-7bc9-43c7-8bc7-a252e1a1b3d0
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["PdoInitFreeDeviceCreateType2 rule (kmdf)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - PdoInitFreeDeviceCreateType2
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # PdoInitFreeDeviceCreateType2 rule (kmdf)

@@ -16,12 +16,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Advance Operations
 
 
-## <a href="" id="ddk-advance-operations-ng"></a>
+
 
 
 Advance operations decrease the size of the used data space in a [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structure or in all of the NET\_BUFFER structures in a [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure.

@@ -7,10 +7,12 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SoftwareInfo
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The SoftwareInfo element is the parent element of the [SoftwareInfo XML schema](softwareinfo-xml-schema.md).
 

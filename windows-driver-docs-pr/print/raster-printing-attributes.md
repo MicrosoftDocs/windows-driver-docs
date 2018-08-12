@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Raster Printing Attributes
 
 
-## <a href="" id="ddk-raster-printing-attributes-gg"></a>
+
 
 
 Raster printing attributes are [general attributes](general-attributes.md) that specify characteristics of a printer's text printing capabilities. These attributes are divided into the following groups:

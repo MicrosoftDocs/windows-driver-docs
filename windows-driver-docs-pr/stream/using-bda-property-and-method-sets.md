@@ -27,12 +27,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using BDA Property and Method Sets
 
 
-## <a href="" id="ddk-using-bda-property-and-method-sets-ksg"></a>
+
 
 
 The following sections show how BDA property and method sets are used to implement a BDA minidriver:

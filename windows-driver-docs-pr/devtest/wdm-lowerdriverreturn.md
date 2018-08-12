@@ -2,6 +2,11 @@
 title: LowerDriverReturn rule (wdm)
 description: The LowerDriverReturn rule specifies that after using PoCallDriver or IoCallDriver to call a lower driver, the driver saves the return status from the call and passes the return status that it received to the dispatch routine.
 ms.assetid: 0b437591-c613-481a-a4f9-36a5cc208cb0
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["LowerDriverReturn rule (wdm)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - LowerDriverReturn
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # LowerDriverReturn rule (wdm)

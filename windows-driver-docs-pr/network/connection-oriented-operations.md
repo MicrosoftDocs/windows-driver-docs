@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Connection-Oriented Operations
 
 
-## <a href="" id="ddk-connection-oriented-operations-ng"></a>
+
 
 
 This section describes connection-oriented operations from a global perspective. The description of each connection-oriented operation includes all connection-oriented drivers that are involved in the operation and summarizes all of the connection-oriented functions that are called by the drivers and NDIS during that operation.

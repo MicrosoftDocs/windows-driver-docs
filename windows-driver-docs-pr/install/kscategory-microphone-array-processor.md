@@ -11,6 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # KSCATEGORY_MICROPHONE_ARRAY_PROCESSOR
@@ -50,7 +51,7 @@ Drivers for KS devices register an instance of KSCATEGORY_MICROPHONE_ARRAY_PROCE
 
 For more information about functional categories for audio devices, see [Installing Device Interfaces for an Audio Adapter](https://msdn.microsoft.com/library/windows/hardware/ff536813) and [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799).
 
-For more information about how to process a microphone array in Windows Vista, see the [Audio Technologies for Windows](http://go.microsoft.com/fwlink/p/?linkid=8751) page on the WHDC website and refer to the [Microphone Array Support in Windows Vista](http://go.microsoft.com/fwlink/p/?linkid=120592) and the [How to Build and Use Microphone Arrays for Windows Vista](http://go.microsoft.com/fwlink/p/?linkid=120593) white papers.
+For more information about how to process a microphone array in Windows Vista, refer to the [Microphone Array Support in Windows Vista](http://go.microsoft.com/fwlink/p/?linkid=120592) and the [How to Build and Use Microphone Arrays for Windows Vista](http://go.microsoft.com/fwlink/p/?linkid=120593) white papers.
 
 Requirements
 ------------

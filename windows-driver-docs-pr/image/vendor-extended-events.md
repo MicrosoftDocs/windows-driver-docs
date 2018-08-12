@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Vendor-Extended Events
 
 
-## <a href="" id="ddk-vendor-extended-events-si"></a>
+
 
 
 Vendor-extended events are defined in the **DeviceData** and **Events** INF file sections (see the example in [Vendor-Extended Features](vendor-extended-features.md)). An **EventCode** entry lists all the event codes, separated by commas. For each event code, an entry of the form **EventCode***XXXX* should exist, where XXXX is the PTP event code in uppercase hexadecimal. The entry should list the WIA GUID code to send when the event code is received by the driver.

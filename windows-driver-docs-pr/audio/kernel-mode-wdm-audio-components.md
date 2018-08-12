@@ -22,10 +22,11 @@ keywords:
 - IEEE 1394 WDK audio
 - WDM audio components WDK
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Kernel-Mode WDM Audio Components

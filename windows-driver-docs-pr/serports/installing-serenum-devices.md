@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing Serenum Devices
 
 
-## <a href="" id="ddk-installing-serenum-devices-kg"></a>
+
 
 
 To install a device that is enumerated by Serenum, use the following [*hardware ID*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hardware-id) format for the device:

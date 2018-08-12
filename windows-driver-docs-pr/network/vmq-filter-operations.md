@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # VMQ Filter Operations
 
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 Multiple receive filters and can be set on a receive queue. Also, the current VMQ implementation supports filters on the destination media access control (MAC) address of the incoming packets and optional filters that inspect the virtual local area network (VLAN) identifier.

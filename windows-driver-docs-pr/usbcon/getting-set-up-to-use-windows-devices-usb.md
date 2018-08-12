@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Send USB isochronous transfers from a WinUSB desktop app
@@ -260,7 +261,7 @@ else if (pipe.PipeType == UsbdPipeTypeIsochronous)
 
 In the preceding code, the app gets **Interval** and **MaximumBytesPerInterval** from [**WINUSB\_PIPE\_INFORMATION\_EX**](https://msdn.microsoft.com/library/windows/hardware/dn265570) to calculate the transfer size and number of isochronous packets required for the read transfer. For both isochronous endpoints, **Interval** is 1. That value indicates that all microframes of the frame carry data. Based on that, to send 10 milliseconds of data, you need 10 frames, total transfer size is 10\*1024\*8 bytes and 80 isochronous packets, each 1024 bytes long.
 
-## <a href="" id="step-3--send--a-write-transfer-to-send-data-to-an-isochronous-out-endpoint"></a>Step 3: Send a write transfer to send data to an isochronous OUT endpoint
+## Step 3: Send a write transfer to send data to an isochronous OUT endpoint
 
 
 This procedure summarizes the steps for writing data to an isochronous endpoint.
@@ -467,7 +468,7 @@ Error:
 
 ```
 
-## <a href="" id="step-4--send--a-read-transfer-to-receive-data-from-an-isochronous-in-endpoint"></a>Step 4: Send a read transfer to receive data from an isochronous IN endpoint
+## Step 4: Send a read transfer to receive data from an isochronous IN endpoint
 
 
 This procedure summarizes the steps for reading data from an isochronous endpoint.

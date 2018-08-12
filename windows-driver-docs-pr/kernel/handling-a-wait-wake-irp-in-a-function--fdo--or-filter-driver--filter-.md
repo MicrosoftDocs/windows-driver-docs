@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling a Wait/Wake IRP in a Function (FDO) or Filter Driver (Filter DO)
 
 
-## <a href="" id="ddk-handling-a-wait-wake-irp-in-a-function-fdo-or-filter-driver-filter"></a>
+
 
 
 When a driver that creates an FDO or filter DO receives an [**IRP\_MN\_WAIT\_WAKE**](https://msdn.microsoft.com/library/windows/hardware/ff551766) request for the associated PDO, it can either simply pass the IRP down to the next-lower driver or take certain actions before passing down the IRP.

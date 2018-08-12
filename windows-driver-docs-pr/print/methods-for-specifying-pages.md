@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Methods for Specifying Pages
 
 
-## <a href="" id="ddk-methods-for-specifying-pages-gg"></a>
+
 
 
 An application can use any of three methods to specify property sheet pages to CPSUI. Each of the following methods involves calling CPSUI's [**ComPropSheet**](https://msdn.microsoft.com/library/windows/hardware/ff546207) function, specifying one of the [ComPropSheet function codes](https://msdn.microsoft.com/library/windows/hardware/ff546214).

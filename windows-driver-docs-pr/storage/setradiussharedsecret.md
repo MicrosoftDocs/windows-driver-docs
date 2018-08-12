@@ -2,6 +2,7 @@
 title: SetRADIUSSharedSecret
 description: SetRADIUSSharedSecret
 ms.assetid: 8799614a-099d-404a-ba6f-94133be5f258
+ms.localizationpriority: medium
 ---
 
 # SetRADIUSSharedSecret

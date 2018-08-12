@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Segmentation Filter Examples
 
 
-## <a href="" id="ddk-segmentation-filter-examples-si"></a>
+
 
 
 This section contains code examples to show how to implement and use segmentation filters.

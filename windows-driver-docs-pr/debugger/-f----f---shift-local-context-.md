@@ -14,6 +14,7 @@ api_name:
 - .f+, .f- (Shift Local Context)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .f+, .f- (Shift Local Context)

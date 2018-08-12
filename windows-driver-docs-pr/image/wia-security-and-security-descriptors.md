@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA Security and Security Descriptors
 
 
-## <a href="" id="ddk-wia-security-and-security-descriptors-si"></a>
+
 
 
 Many of the solutions to the problems listed in [Common WIA Security Problems](common-wia-security-problems.md) require the objects in question to have security descriptors that grant access to the appropriate entities, such as **LocalService** accounts.

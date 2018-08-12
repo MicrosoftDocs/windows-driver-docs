@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Font Cartridge Attributes
 
 
-## <a href="" id="ddk-font-cartridge-attributes-gg"></a>
+
 
 
 The following table contains attributes that can be included in a \*FontCartridge GPD entry.

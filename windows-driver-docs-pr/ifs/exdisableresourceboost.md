@@ -14,12 +14,13 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # ExDisableResourceBoost
 
 
-## <a href="" id="ddk-exdisableresourceboost-if"></a>
+
 
 
 This routine is reserved for system use. Do not use this routine in your driver.

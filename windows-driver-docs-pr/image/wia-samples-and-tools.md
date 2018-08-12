@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA Samples and Tools
 
 
-## <a href="" id="ddk-wia-samples-and-tools-si"></a>
+
 
 
 This section discusses the WIA sample code and the WIA tools that are available to aid in the driver development and testing process.

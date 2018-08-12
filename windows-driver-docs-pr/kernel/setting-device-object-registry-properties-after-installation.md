@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting Device Object Registry Properties After Installation
 
 
-## <a href="" id="ddk-setting-device-object-registry-properties-after-installation-kg"></a>
+
 
 
 A user-mode program can use the [device installation functions](https://msdn.microsoft.com/library/windows/hardware/ff541299) to get or set the registry settings for the properties of a driver's device object. Normally these functions are used by installation software, but they can be used by any user-mode program. (The program must be executed by a user that has Administrator access.)

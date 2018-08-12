@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Requirements for AdapterControl Routines
 
 
-## <a href="" id="ddk-storage-requirements-for-adaptercontrol-routines-kg"></a>
+
 
 
 If it has an [*AdapterControl*](https://msdn.microsoft.com/library/windows/hardware/ff540504) routine, a driver must provide resident storage for the following:

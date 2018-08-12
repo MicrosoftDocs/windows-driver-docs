@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Configuring Usbccgp.sys to Select a Non-Default USB Configuration
@@ -14,7 +15,7 @@ ms.technology: windows-devices
 
 This topic provides information about registry settings that configure the way Usbccgp.sys selects a USB configuration. The topic also describes how Usbccgp.sys handles select-configuration requests sent by a client driver that controls one of functions of a composite device.
 
-## <a href="" id="ddk-selecting-the-configuration-for-a-multiple-interface-composite-usb"></a>
+
 
 
 A USB composite device consists of multiple functions (functional devices) within a single USB device. If Windows loads Microsoft-provided [USB Generic Parent Driver](usb-common-class-generic-parent-driver.md) (Usbccgp.sys) for a composite device, from that point forward, Usbccgp.sys is responsible for selecting the configuration of the device. Each interface or interface collection of a composite device is, in many respects, like a separate device that has its own physical device object (PDO). Resetting the configuration of the device changes the configuration for all of the device's interfaces, not just the one that the client driver controls. The operating system does not allow this. Therefore, a client driver that controls a set of interfaces or an interface collection of the composite device cannot change the configuration that is initially set by Usbccgp.sys.

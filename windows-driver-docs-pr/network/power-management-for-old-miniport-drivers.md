@@ -9,12 +9,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Power Management for Old Miniport Drivers
 
 
-## <a href="" id="ddk-power-management-for-legacy-miniport-drivers-ng"></a>
+
 
 
 NDIS treats a miniport driver as an old miniport driver that is not power management-aware if:

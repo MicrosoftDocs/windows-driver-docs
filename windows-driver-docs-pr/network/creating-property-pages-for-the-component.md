@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating Property Pages for the Component
 
 
-## <a href="" id="ddk-creating-property-pages-for-the-component-ng"></a>
+
 
 
 A notify object creates custom property pages after the network configuration subsystem calls the notify object's [**INetCfgComponentPropertyUi::MergePropPages**](https://msdn.microsoft.com/library/windows/hardware/ff547746) method. Custom property pages can be merged into the default set of pages on the component's property sheet using the **MergePropPages** method. **MergePropPages** will return the appropriate number of default pages into which the custom pages can be merged.

@@ -9,12 +9,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS Timer Services
 
 
-## <a href="" id="ddk-ndis-6-0-timer-services-ng"></a>
+
 
 
 This section provides information about NDIS 6.0 timer services and includes:

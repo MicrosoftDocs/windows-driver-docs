@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Additional Errors in Handling IRPs
 
 
-## <a href="" id="ddk-additional-errors-in-handling-irps-kg"></a>
+
 
 
 The following are additional errors that drivers sometimes make when handling IRPs.

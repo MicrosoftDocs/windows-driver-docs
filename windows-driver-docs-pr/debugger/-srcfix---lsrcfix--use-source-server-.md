@@ -14,6 +14,7 @@ api_name:
 - .srcfix, .lsrcfix (Use Source Server)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .srcfix, .lsrcfix (Use Source Server)

@@ -13,6 +13,7 @@ api_name:
 - IPrinterScriptUsbWritePrintDataProgress.ProcessedByteCount
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbWritePrintDataProgress::ProcessedByteCount method

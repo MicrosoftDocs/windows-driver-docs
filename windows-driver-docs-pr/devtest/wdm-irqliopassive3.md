@@ -1,6 +1,11 @@
 ---
 title: IrqlIoPassive3 rule (wdm)
 ms.assetid: 84e45026-7535-4e72-afc8-19b6a7e43bd7
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 description: 
 keywords: ["IrqlIoPassive3 rule (wdm)"]
 topic_type:
@@ -9,6 +14,7 @@ api_name:
 - IrqlIoPassive3
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IrqlIoPassive3 rule (wdm)

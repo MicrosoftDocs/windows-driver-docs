@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Spooler Notification Terminology
 
 
-## <a href="" id="ddk-spooler-notification-terminology-gg"></a>
+
 
 
 The following terms are used in the discussion of asnychronous spooler notification.

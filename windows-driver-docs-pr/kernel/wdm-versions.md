@@ -9,6 +9,7 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WDM Versions
@@ -16,7 +17,7 @@ ms.technology: windows-devices
 
 Although Microsoft Windows 2000 and later versions of the NT-based operating system, along with Windows 98 and Windows Me, all support various versions of WDM, incremental changes to WDM have resulted in later-released operating systems supporting additional WDM features that earlier releases do not support. Later versions of WDM generally support all the features available in earlier versions of WDM; that is, each new version of WDM is a superset of the previous WDM version. When possible, a cross-system driver should conform to the lowest WDM version on any operating system.
 
-## <a href="" id="ddk-wdm-versions-kg"></a>In this section
+## In this section
 
 
 -   [Determining the WDM Version](determining-the-wdm-version.md)

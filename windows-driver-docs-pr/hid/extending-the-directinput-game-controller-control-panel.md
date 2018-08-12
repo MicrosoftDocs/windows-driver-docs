@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Extending the DirectInput Game Controller Control Panel
 
 
-## <a href="" id="ddk-extending-the-directinput-game-controller-control-panel-di"></a>
+
 
 
 This section provides information about creating property sheets for the Microsoft DirectInput game controller control panel. The information is divided into the following topics:

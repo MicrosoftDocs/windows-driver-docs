@@ -3,6 +3,7 @@ title: Windows kernel obsolete macros
 author: windows-driver-content
 description: This topic summarizes the following obsolete macros
 ms.assetid: b102355e-f40b-438e-92ef-371814e0c074
+ms.localizationpriority: medium
 ---
 
 # Windows kernel obsolete macros

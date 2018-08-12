@@ -14,6 +14,7 @@ api_name:
 - usbkd.usbhelp
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !usbkd.usbhelp

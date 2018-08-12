@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Locking and Unlocking Stream Pointers
 
 
-## <a href="" id="ddk-locking-and-unlocking-stream-pointers-ksg"></a>
+
 
 
 Each stream pointer maintains a lock status: either locked or unlocked.

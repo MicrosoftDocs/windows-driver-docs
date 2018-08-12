@@ -2,6 +2,12 @@
 title: Rules for Audio Drivers
 description: The DDI compliance rules for audio (PortCls) miniport drivers verify the DDI interface between PortCls.sys and its miniport drivers.
 ms.assetid: 65078F78-B7F2-41A7-BD3B-A90A4A77750F
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Rules for Audio Drivers

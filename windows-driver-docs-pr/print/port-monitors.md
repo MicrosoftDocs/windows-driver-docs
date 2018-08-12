@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Port Monitors
 
 
-## <a href="" id="ddk-port-monitors-gg"></a>
+
 
 
 Port monitors consist of user-mode DLLs. They are responsible for providing a communications path between the user-mode print spooler and the kernel-mode port drivers that access I/O port hardware. A port monitor typically uses the [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858), **WriteFile**, **ReadFile**, and **DeviceIOControl** functions, described in the Microsoft Windows SDK documentation, to communicate with kernel-mode port drivers. Port monitors are also responsible for management and configuration of a server's printer ports, as described in [Managing a Port](managing-a-port.md).

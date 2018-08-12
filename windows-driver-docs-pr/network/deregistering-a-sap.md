@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Deregistering a SAP
 
 
-## <a href="" id="ddk-deregistering-a-sap-ng"></a>
+
 
 
 A connection-oriented client deregisters a SAP with [**NdisClDeregisterSap**](https://msdn.microsoft.com/library/windows/hardware/ff561628).

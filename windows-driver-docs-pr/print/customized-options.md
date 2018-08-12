@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Customized Options
 
 
-## <a href="" id="ddk-customized-options-gg"></a>
+
 
 
 Customized options are those that are not defined by predefined names in the GPD language. You must create unique names for these options.

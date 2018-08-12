@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # User Interface Extensions
 
 
-## <a href="" id="ddk-user-interface-extensions-si"></a>
+
 
 
 Many camera and scanner vendors may supply features on their devices that are not accessible through the default WIA user interfaces (UI). Such features could include manipulation of images stored in proprietary formats, specialized device operations such as self test or zoom, and so on. In order to accommodate UI for nonstandard features and for specialized devices and user groups, WIA provides a UI extension capability. This capability allows vendors to extend the context menu, property sheet, and image application dialog of the system-supplied UI.

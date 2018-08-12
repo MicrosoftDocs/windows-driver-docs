@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing WIA Properties by a Driver
 
 
-## <a href="" id="ddk-writing-wia-properties-by-a-driver-si"></a>
+
 
 
 A WIA minidriver can update any of the current values of its WIA properties and valid values by using the following WIA service functions:

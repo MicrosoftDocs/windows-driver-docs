@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # PTP Error Recovery
 
 
-## <a href="" id="ddk-ptp-error-recovery-si"></a>
+
 
 
 During initialization of the Microsoft PTP class minidriver (that is, on initial retrieval of the DeviceInfo and ObjectInfo datasets, and the property descriptions), any error is treated as a catastrophic failure, and the WIA minidriver fails to initialize.

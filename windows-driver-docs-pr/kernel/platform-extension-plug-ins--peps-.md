@@ -3,6 +3,7 @@ title: Platform Extension Plug-ins (PEPs)
 author: windows-driver-content
 description: Starting with Windows 10, the run-time power management framework (PoFx) supports platform extension plug-ins (PEPs) for enhanced device component management.
 ms.assetid: F7C23715-FFA7-43D3-A420-892236A8AF8F
+ms.localizationpriority: medium
 ---
 
 # Platform Extension Plug-ins (PEPs)
@@ -31,7 +32,7 @@ Starting with Windows 10, the run-time power management framework (PoFx) suppor
 </tr>
 <tr class="even">
 <td><p>[Platform Performance Thresholds](platform-performance-thresholds.md)</p></td>
-<td><p>There are two types of performance thresholds â€“ static thresholds which remain fixed for the platform and dynamic thresholds that change at runtime. This topic describes the static performance thresholds of the platform and the allowed range for the dynamic threshold.</p></td>
+<td><p>There are two types of performance thresholds - static thresholds which remain fixed for the platform and dynamic thresholds that change at runtime. This topic describes the static performance thresholds of the platform and the allowed range for the dynamic threshold.</p></td>
 </tr>
 </tbody>
 </table>

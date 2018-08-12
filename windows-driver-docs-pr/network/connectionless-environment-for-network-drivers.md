@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Connectionless Environment for Network Drivers
 
 
-## <a href="" id="ddk-connectionless-environment-for-network-drivers-ng"></a>
+
 
 
 The connectionless environment is the standard network driver environment for connectionless media, such as Ethernet. For a description of the drivers in this environment, see [NDIS Drivers](ndis-drivers.md) and [NDIS Miniport Drivers](ndis-miniport-drivers2.md).

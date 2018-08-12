@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MS-DOS Device Names
 
 
-## <a href="" id="ddk-ms-dos-device-names-kg"></a>
+
 
 
 This section contains the following subsections:

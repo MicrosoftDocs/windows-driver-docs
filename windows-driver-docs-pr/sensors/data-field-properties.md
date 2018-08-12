@@ -1,5 +1,6 @@
 ---
 title: Data field properties
+author: windows-driver-content
 description: This topic describes the sensor properties that are used for data fields only.
 ms.assetid: A7FA02AA-7B7B-45B4-A432-4B4ED69CB19C
 ms.author: windowsdriverdev
@@ -7,6 +8,7 @@ ms.date: 01/04/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Data field properties
@@ -60,12 +62,12 @@ The following table shows the sensor properties. Because these properties apply 
 
  
 
-## <span id="Requirements"></span><span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
+## Requirements
 
 
 **Header:** Sensorsdef.h
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Required data field properties](required-data-field-properties.md)

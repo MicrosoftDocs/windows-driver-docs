@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Preventing System Power State Changes
 
 
-## <a href="" id="ddk-preventing-system-power-state-changes-kg"></a>
+
 
 
 Although drivers cannot directly set system power policy, the power manager provides three routines through which a driver can prevent system transitions out of the working state: [**PoSetSystemState**](https://msdn.microsoft.com/library/windows/hardware/ff559768), [**PoRegisterSystemState**](https://msdn.microsoft.com/library/windows/hardware/ff559731), and [**PoUnregisterSystemState**](https://msdn.microsoft.com/library/windows/hardware/ff559794).

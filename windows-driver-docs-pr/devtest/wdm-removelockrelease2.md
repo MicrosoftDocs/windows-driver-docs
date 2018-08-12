@@ -2,6 +2,11 @@
 title: RemoveLockRelease2 rule (wdm)
 description: The rule RemoveLockRelease2 verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used in strict alternation. Moreover, at the end of the dispatch routine the driver should not hold the remove lock.
 ms.assetid: 2569120A-9014-44C1-86F9-6C1ABACC2C34
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["RemoveLockRelease2 rule (wdm)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - RemoveLockRelease2
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # RemoveLockRelease2 rule (wdm)

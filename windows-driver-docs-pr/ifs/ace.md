@@ -8,12 +8,13 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # ACE
 
 
-## <a href="" id="ddk-ace-if"></a>
+
 
 
 An ACE is an access-control entry (ACE) in an access-control list (ACL).

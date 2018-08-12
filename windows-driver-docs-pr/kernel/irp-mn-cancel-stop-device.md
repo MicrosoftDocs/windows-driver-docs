@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: 7047c266-84b4-4260-ad75-d56c87c8c9ef
 keywords:
  - IRP_MN_CANCEL_STOP_DEVICE Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_CANCEL\_STOP\_DEVICE

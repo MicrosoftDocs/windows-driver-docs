@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Control Nodes, Filters and Hardware
 
 
-## <a href="" id="ddk-control-nodes-filters-and-hardware-ksg"></a>
+
 
 
 BDA control nodes in BDA receiver topology can be separated into individual filters or combined in filters. In addition, BDA control nodes can be associated with hardware or be software-only components. The following sections describe:

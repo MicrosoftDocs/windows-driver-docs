@@ -10,12 +10,13 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_PNP_SET_POWER Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_PNP\_SET\_POWER
 
 
-## <a href="" id="ddk-oid-pnp-set-power-nr"></a>
+
 
 
 The OID\_PNP\_SET\_POWER OID notifies a miniport driver that its underlying network adapter will be transitioning to the device power state specified in the *InformationBuffer*. The device power state is specified as one of the following [**NDIS\_DEVICE\_POWER\_STATE**](https://msdn.microsoft.com/library/windows/hardware/gg602135) values:

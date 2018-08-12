@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Errors in Buffered I/O
 
 
-## <a href="" id="ddk-errors-in-buffered-i-o-kg"></a>
+
 
 
 The following topics describe some common problems that occur in drivers that perform buffered I/O operations:

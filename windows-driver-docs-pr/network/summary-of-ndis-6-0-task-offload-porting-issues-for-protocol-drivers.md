@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Summary of NDIS 6.0 Task Offload Porting Issues for Protocol Drivers
 
 
-## <a href="" id="ddk-summary-of-ndis-6-0-task-offload-porting-issues-for-protocol-drive"></a>
+
 
 
 The following list summarizes the issues that you must consider when you port offload-capable protocol drivers to NDIS 6.0:

@@ -14,6 +14,7 @@ api_name:
 - ndiskd.pkt
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.pkt

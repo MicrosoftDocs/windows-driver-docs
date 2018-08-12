@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling a GUID\_TARGET\_DEVICE\_QUERY\_REMOVE Event
 
 
-## <a href="" id="ddk-handling-a-guid-target-device-query-remove-event-kg"></a>
+
 
 
 Before the PnP manager sends an [**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551705) IRP to the drivers for a device, it calls any notification callback routines that registered for **EventCategoryTargetDeviceChange** on the device. The PnP manager specifies a *NotificationStructure*.**Event** of GUID\_TARGET\_DEVICE\_QUERY\_REMOVE.

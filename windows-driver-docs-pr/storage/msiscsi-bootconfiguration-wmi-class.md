@@ -2,6 +2,7 @@
 title: MSiSCSI\_BootConfiguration WMI Class
 description: MSiSCSI\_BootConfiguration WMI Class
 ms.assetid: 5ca350ba-8689-46c2-8313-8f523354db98
+ms.localizationpriority: medium
 ---
 
 # MSiSCSI\_BootConfiguration WMI Class

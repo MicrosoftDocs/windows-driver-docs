@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Quality of Service
 
 
-## <a href="" id="ddk-quality-of-service-ng"></a>
+
 
 
 The originator of a call on an SVC can specify *quality of service* (QoS) parameters for the call that specify performance parameters for the call. Depending on the signaling protocol that is being used, a call manager or MCM driver that is setting up an outgoing or incoming call can negotiate the QoS with a network entity such as a network switch or a remote client. If allowed by the signaling protocol, a connection-oriented client might also request a change of QoS when determining whether to accept an incoming call.

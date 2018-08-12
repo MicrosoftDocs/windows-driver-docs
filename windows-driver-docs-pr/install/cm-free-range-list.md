@@ -9,6 +9,7 @@ api_name:
 - CM_Free_Range_List
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Free_Range_List
@@ -16,7 +17,7 @@ api_type:
 This function is reserved for system use.
 
 
-## <a href="" id="ddk-cm-free-range-list-dr"></a>
+
 
 
  

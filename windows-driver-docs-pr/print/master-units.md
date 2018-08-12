@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Master Units
 
 
-## <a href="" id="ddk-master-units-gg"></a>
+
 
 
 Most printers support commands with a variety of horizontal and vertical resolutions. For example, the Immediate Line Feed command for a particular printer might provide a resolution of 1/288th of an inch, while the same printer might support a vertical graphics resolution of 1/96th of an inch. Likewise, this printer might also provide horizontal resolutions of 1/80th, 1/160th, and 1/320th of an inch.

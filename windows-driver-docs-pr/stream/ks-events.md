@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KS Events
 
 
-## <a href="" id="ddk-ks-events-ksg"></a>
+
 
 
 If you are writing an AVStream minidriver, see [Event Handling in AVStream](event-handling-in-avstream.md).

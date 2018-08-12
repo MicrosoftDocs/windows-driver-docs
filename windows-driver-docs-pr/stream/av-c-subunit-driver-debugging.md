@@ -20,12 +20,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # AV/C Subunit Driver Debugging
 
 
-## <a href="" id="ddk-debugging-av-c-subunit-drivers-ksg"></a>
+
 
 
 Prior to Windows Vista, the debug version of *Avc.sys* permits trace messages to be output to a debug window. The Windows Vista version of *Avc.sys* uses Event Tracing for Windows (ETW).

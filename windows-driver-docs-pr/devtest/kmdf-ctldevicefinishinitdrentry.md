@@ -2,6 +2,11 @@
 title: CtlDeviceFinishInitDrEntry rule (kmdf)
 description: The CtlDeviceFinishInitDrEntry rule specifies that if a driver creates a control device object in a DriverEntry callback function, it must call WdfControlFinishInitializing after the device has been created and before it exits from the EvtDriverDeviceAdd callback function. This rule does not apply for non-PnP drivers.
 ms.assetid: b6470bc1-c4db-4b46-b83b-edcf4da56087
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["CtlDeviceFinishInitDrEntry rule (kmdf)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - CtlDeviceFinishInitDrEntry
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CtlDeviceFinishInitDrEntry rule (kmdf)

@@ -2,6 +2,12 @@
 title: DDI usage rule set (WDM)
 description: Use these rules to verify that your driver correctly uses WDM DDIs correctly.
 ms.assetid: B958191C-8E14-4D4D-9D0F-AD5D29599E53
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DDI usage rule set (WDM)

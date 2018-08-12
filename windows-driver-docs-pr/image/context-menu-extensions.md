@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Context Menu Extensions
 
 
-## <a href="" id="ddk-context-menu-extensions-si"></a>
+
 
 
 In both the Scanners and Cameras Control Panel folder for devices (root items), and in the My Computer folder, the user can choose various actions to perform on a selected item, based on the actions exposed on its context menu. To find these actions, the user right-clicks the thumbnail or icon of the given image.

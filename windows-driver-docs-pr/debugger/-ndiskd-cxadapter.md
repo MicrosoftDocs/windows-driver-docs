@@ -14,6 +14,7 @@ api_name:
 - ndiskd.cxadapter
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.cxadapter

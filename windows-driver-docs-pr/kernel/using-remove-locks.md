@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Remove Locks
 
 
-## <a href="" id="ddk-using-remove-locks-kg"></a>
+
 
 
 The [remove lock routines](https://msdn.microsoft.com/library/windows/hardware/ff561042) provide a way to track the number of outstanding I/O operations on a device, and to determine when it is safe to detach and delete a driver's device object. The system provides these routines to driver writers as an alternative to implementing their own tracking mechanism.

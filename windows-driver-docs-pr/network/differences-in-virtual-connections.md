@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Differences in Virtual Connections
 
 
-## <a href="" id="ddk-differences-in-virtual-connections-ng"></a>
+
 
 
 A call manager uses *signaling VCs* to send and receive signaling messages to and from network entities, such as switches. A call manager's signaling VCs are visible to NDIS. The call manager must create, activate, deactivate, and delete all VCs with calls to NDIS. An MCM driver's signaling VCs, however, are opaque to NDIS. An MCM driver does not create, activate, deactivate, and delete signaling VCs with calls to NDIS. Instead, an MCM driver performs such operations internally. An MCM driver must call NDIS to perform operations on VCs that are used to send or receive client data. This is because NDIS must keep track of client VCs.

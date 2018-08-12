@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Kernel-Mode Power Management Components
 
 
-## <a href="" id="ddk-kernel-mode-power-management-components-kg"></a>
+
 
 
 The following topics provide a brief introduction to the kernel-mode components that perform power management in Windows.

@@ -17,12 +17,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Kernel Streaming
 
 
-## <a href="" id="ddk-kernel-streaming-ksg"></a>
+
 
 
 Kernel streaming (KS) refers to the Microsoft-provided services that support kernel-mode processing of streamed data.

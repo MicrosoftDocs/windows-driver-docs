@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using a Handle to a Registry-Key Object
 
 
-## <a href="" id="ddk-using-a-handle-to-a-registry-key-object-kg"></a>
+
 
 
 The following table lists the operations that drivers can perform on an open key as well as the appropriate routines to call.

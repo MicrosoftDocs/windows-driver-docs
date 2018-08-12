@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Power States for Network Adapters
 
 
-## <a href="" id="ddk-device-power-states-for-nics-ng"></a>
+
 
 
 A device power state for a network adapter describes a network adapter's level of power consumption and computing activity.

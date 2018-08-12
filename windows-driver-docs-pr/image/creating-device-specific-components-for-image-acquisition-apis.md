@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating Device-Specific Components for Image Acquisition APIs
 
 
-## <a href="" id="ddk-creating-device-specific-components-for-image-acquisition-apis-si"></a>
+
 
 
 Image acquisition APIs, such as TWAIN, typically require device-specific components, such as TWAIN data sources. These device-specific components should use the [IStillImage COM Interface](istillimage-com-interface.md) and the [IStiDevice COM Interface](istidevice-com-interface.md) to communicate with user-mode still image device drivers and the event monitor.

@@ -14,6 +14,7 @@ api_name:
 - MUP_FILE_SYSTEM
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x103: MUP\_FILE\_SYSTEM

@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # File Transfers
 
 
-## <a href="" id="ddk-file-transfers-si"></a>
+
 
 
 **Note**   File transfers are for operating systems prior to Windows Vista.

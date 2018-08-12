@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Print Spooler Support for Printer Directory Services
 
 
-## <a href="" id="ddk-print-spooler-support-for-printer-directory-services-gg"></a>
+
 
 
 Windows 2000 and later print spooler support for Directory Services consists of:

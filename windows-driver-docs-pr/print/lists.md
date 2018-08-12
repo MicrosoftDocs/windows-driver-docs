@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Lists
 
 
-## <a href="" id="ddk-lists-gg"></a>
+
 
 
 To assign a set of values to an attribute, use the LIST keyword. The format is:

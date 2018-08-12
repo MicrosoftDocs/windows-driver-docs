@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Functions Defined by Print Monitors
 
 
-## <a href="" id="ddk-functions-defined-by-print-monitors-gg"></a>
+
 
 
 The following sections list the functions that must be defined within print monitor DLLs.

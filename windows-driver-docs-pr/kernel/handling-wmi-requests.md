@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling WMI Requests
 
 
-## <a href="" id="ddk-handling-wmi-requests-kg"></a>
+
 
 
 All drivers must set a dispatch table entry point for a [*DispatchSystemControl*](https://msdn.microsoft.com/library/windows/hardware/ff543412) routine to handle WMI requests. If a driver [registers as a WMI data provider](registering-as-a-wmi-data-provider.md), it must handle all WMI requests. Otherwise, the driver must forward all WMI requests to the next lower driver.

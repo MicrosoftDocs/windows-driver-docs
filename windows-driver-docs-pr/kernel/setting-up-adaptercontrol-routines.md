@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting Up AdapterControl Routines
 
 
-## <a href="" id="ddk-setting-up-adaptercontrol-routines-kg"></a>
+
 
 
 A driver's dispatch routine for a PnP [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) request must do the following for an [*AdapterControl*](https://msdn.microsoft.com/library/windows/hardware/ff540504) routine:

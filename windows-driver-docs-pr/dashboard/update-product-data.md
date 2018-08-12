@@ -7,6 +7,7 @@ ms.date: 04/05/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Update product data  
@@ -21,7 +22,7 @@ This method has the following syntax. See the following sections for usage examp
 
 | Method | Request URI |
 |:--|:--|
-| PATCH | `https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/{productID}` |
+| PATCH | `https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}` |
 
 ### Request header
 
@@ -52,7 +53,7 @@ For details about the fields in the request, refer to [product resource](get-pro
 The following example demonstrates how to update a product.
 
 ```json 
-PATCH https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/14631253285588838 HTTP/1.1
+PATCH https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14631253285588838 HTTP/1.1
 Authorization: Bearer <your access token>
 ```
 

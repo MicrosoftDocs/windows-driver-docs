@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Configuring an INF File for a Monitoring Filter Driver
 
 
-## <a href="" id="ddk-monitoring-filter-driver-installation-ng"></a>
+
 
 
 The following NDIS filter driver installation issues are associated with monitoring filter drivers:

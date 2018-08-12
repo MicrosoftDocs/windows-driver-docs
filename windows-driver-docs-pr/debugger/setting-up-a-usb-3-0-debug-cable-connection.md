@@ -3,18 +3,17 @@ title: Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually
 description: Debugging Tools for Windows supports kernel debugging over a USB 3.0 cable. This topic describes how to set up USB 3.0 debugging manually.
 ms.assetid: 9A9F5DA0-B98A-4C19-A723-67D06B2409B5
 ms.author: domars
-ms.date: 11/28/2017
+ms.date: 07/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually
 
 
 Debugging Tools for Windows supports kernel debugging over a USB 3.0 cable. This topic describes how to set up USB 3.0 debugging manually.
-
-As an alternative to setting up USB 3.0 debugging manually, you can do the setup using Microsoft Visual Studio. For more information, see [Setting Up Kernel-Mode Debugging over a USB 3.0 Cable in Visual Studio](setting-up-a-usb-3-0-cable-connection-in-visual-studio.md).
 
 The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*.
 
@@ -57,6 +56,11 @@ Debugging over a USB 3.0 cable requires the following hardware:
     ```
 
 5.  After you have identified an xHCI controller that supports debugging, the next step is to locate the physical USB connector that is associated with a port on the xHCI controller. To find the physical connector, plug any USB 3.0 device into any USB connector on the target computer. Refresh UsbView to see where your device is located. If UsbView shows your device connected to your chosen xHCI host controller, then you have found a physical USB connector that you can use for USB 3.0 debugging.
+
+> [!IMPORTANT]
+> Before using bcdedit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC. 
+> You can re-enable Secure Boot once you’re done debugging and you’ve disabled kernel debugging.  
+
 
 6.  On the target computer, open a Command Prompt window as Administrator, and enter these commands:
 

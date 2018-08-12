@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Common Buffer DMA in AVStream
 
 
-## <a href="" id="ddk-common-buffer-dma-in-avstream-ksg"></a>
+
 
 
 Common buffer direct memory access (DMA) occurs when the device does not write directly to the capture buffers; instead it copies data to and from a common buffer.

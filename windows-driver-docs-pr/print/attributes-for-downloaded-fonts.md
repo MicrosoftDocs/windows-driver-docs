@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Attributes for Downloaded Fonts
 
 
-## <a href="" id="ddk-attributes-for-downloaded-fonts-gg"></a>
+
 
 
 The following table lists attributes describing the printer's support for downloaded fonts.

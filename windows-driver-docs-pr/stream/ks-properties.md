@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KS Properties
 
 
-## <a href="" id="ddk-ks-properties-ksg"></a>
+
 
 
 A *Property* represents a capability or control-state setting that belongs to a kernel streaming object, such as a filter or pin. Clients of a kernel streaming minidriver can send get and set property requests (KSPROPERTY\_TYPE\_GET and KSPROPERTY\_TYPE\_SET) to the filters and pins that the minidriver has instantiated. A group of related properties is referred to as a *property set*.

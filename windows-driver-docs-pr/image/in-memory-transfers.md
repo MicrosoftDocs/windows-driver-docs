@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # In-Memory Transfers
 
 
-## <a href="" id="ddk-in-memory-transfers-si"></a>
+
 
 
 **Note**  In-memory transfers are for operating systems prior to Windows Vista.

@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Axis Selection
 
 
-## <a href="" id="ddk-axis-selection-di"></a>
+
 
 
 This section contains information about how DirectInput maps axes for use by DirectInput and Windows multimedia applications.

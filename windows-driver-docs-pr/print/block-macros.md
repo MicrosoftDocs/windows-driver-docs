@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Block Macros
 
 
-## <a href="" id="ddk-block-macros-gg"></a>
+
 
 
 A block macro is used to delimit a set of GPD file entries that you want to insert repeatedly into a GPD file. You can include any entry type in a block macro definition, such as feature and option statements, attribute specifications, and references to value macros or other block macros.

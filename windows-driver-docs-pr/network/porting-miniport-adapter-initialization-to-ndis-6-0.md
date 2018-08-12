@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Miniport Adapter Initialization to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-miniport-adapter-initialization-to-ndis-6-0-ng"></a>
+
 
 
 As with NDIS 5.*x*, NDIS 6.0 miniport drivers can support multiple miniport adapters. A miniport adapter is the logical entity within NDIS that manages a physical or virtual device (also known as a physical or virtual adapter). To initialize a miniport adapter, NDIS 5.*x* calls the miniport driver's [**MiniportInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff550472) function. In NDIS 6.0, the [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function replaces *MiniportInitialize*. The following topics provide information about porting miniport adapter initialization to NDIS 6.0:

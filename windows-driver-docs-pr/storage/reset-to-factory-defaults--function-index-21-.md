@@ -2,6 +2,7 @@
 title: Reset to Factory Defaults (Function Index 21)
 description: This function resets the NVDIMM-N back to the settings the vendor pre-configured.
 ms.assetid: 64CEF5C8-FC2A-4C6E-829C-27E18A4EDC26
+ms.localizationpriority: medium
 ---
 
 # Reset to Factory Defaults (Function Index 21)

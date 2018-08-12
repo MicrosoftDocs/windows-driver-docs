@@ -2,6 +2,7 @@
 title: MPIO\_PATH\_HEALTH\_INFO WMI Class
 description: MPIO\_PATH\_HEALTH\_INFO WMI Class
 ms.assetid: 26c329d0-0d9c-4d24-bbe4-ebb7d7b36a89
+ms.localizationpriority: medium
 ---
 
 # MPIO\_PATH\_HEALTH\_INFO WMI Class

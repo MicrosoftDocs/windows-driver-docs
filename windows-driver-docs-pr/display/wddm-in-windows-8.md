@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WDDM 1.2 and Windows 8
@@ -242,7 +243,7 @@ This table explains scenario usage for the new driver types:
 
  
 
-WDDM 1.2 is required for all systems that are shipped with Windows 8. WDDM 1.0 and WDDM 1.1 will continue to work on Windows 8. However, the best experience and Windows 8â€“specific features are enabled only by a WDDM 1.2 driver.
+WDDM 1.2 is required for all systems that are shipped with Windows 8. WDDM 1.0 and WDDM 1.1 will continue to work on Windows 8. However, the best experience and Windows 8-specific features are enabled only by a WDDM 1.2 driver.
 
  
 

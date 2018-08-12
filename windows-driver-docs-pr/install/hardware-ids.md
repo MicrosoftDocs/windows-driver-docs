@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Hardware ID
@@ -14,7 +15,7 @@ ms.technology: windows-devices
 
 A hardware ID is a vendor-defined identification string that Windows uses to match a device to an INF file. In most cases, a device has associated with it a list of hardware IDs. (However, there are exceptions − see [Identifiers for 1394 Devices](identifiers-for-1394-devices.md)). When an [*enumerator*](https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-enumerator) reports a list of hardware IDs for a device, the hardware IDs should be listed in order of decreasing suitability.
 
-## <a href="" id="ddk-hardware-ids-dg"></a>
+
 
 
 A hardware ID has one of the following generic formats:

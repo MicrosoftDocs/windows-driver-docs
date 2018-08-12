@@ -12,10 +12,11 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 05/22/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_MAXIMUM\_BARCODES\_PER\_PAGE
@@ -23,10 +24,10 @@ ms.technology: windows-devices
 
 The **WIA\_IPS\_MAXIMUM\_BARCODES\_PER\_PAGE** property describes the maximum number of barcodes that the device can and should detect on one document page side when barcode detection is enabled.
 
-## <span id="ddk_wia_ipa_depth_si"></span><span id="DDK_WIA_IPA_DEPTH_SI"></span>
 
 
-Property Type: VT\_I4
+
+Property Type: VT\_UI4
 
 Valid Values: WIA\_PROP\_RANGE
 

@@ -4,12 +4,13 @@ author: windows-driver-content
 description: Hardware Capabilities Callback
 ms.assetid: 407505e4-c0d7-4e12-80d7-55801a66f531
 keywords: ["callbacks WDK joysticks", "joysticks WDK HID , capabilities", "hardware capabilities callbacks WDK joysticks"]
+ms.localizationpriority: medium
 ---
 
 # Hardware Capabilities Callback
 
 
-## <a href="" id="ddk-hardware-capabilities-callback-di"></a>
+
 
 
 ```

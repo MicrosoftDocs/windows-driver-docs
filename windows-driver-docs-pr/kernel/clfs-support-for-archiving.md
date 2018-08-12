@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # CLFS Support for Archiving
 
 
-## <a href="" id="ddk-introduction-to-wmi-kg"></a>
+
 
 
 Common Log File System (CLFS) supports archiving for dedicated logs by maintaining an archive tail. When you call [**ClfsCreateLogFile**](https://msdn.microsoft.com/library/windows/hardware/ff540792) to create a dedicated log, you can set the FILE\_ATTRIBUTE\_ARCHIVE flag of the *fFlagsAndAttributes* parameter to specify that CLFS should maintain an archive tail for the log. A log for which CLFS maintains an archive tail is called a *non-ephemeral log*.

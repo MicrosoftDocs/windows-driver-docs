@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing Intermediate Drivers to Handle PnP and Power Management Events
@@ -36,7 +37,7 @@ To handle Plug and Play (PnP) and power management events, NDIS intermediate dri
 
      
 
--   When NDIS calls [MiniportInitializeEx](miniportinitializeex-requirements.md) for each virtual miniport supported by the NDIS intermediate driver, the driver reports its power management capabilities by calling [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) in the following ways:
+-   When NDIS calls [MiniportInitializeEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) for each virtual miniport supported by the NDIS intermediate driver, the driver reports its power management capabilities by calling [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) in the following ways:
 
     1.  Depending on the version of the NDIS intermediate driver, the power management capabilities are reported in either the **PowerManagementCapabilities** member (for NDIS 6.0 and NDIS 6.1 intermediate drivers) or **PowerManagementCapabilitiesEx** member (for NDIS 6.20 and later intermediate drivers) of [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923). If either the **PowerManagementCapabilities** or **PowerManagementCapabilitiesEx** member of the [**NDIS\_BIND\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff564832) structure is not **NULL**, the intermediate driver must do the following:
 

@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Default Allocators
 
 
-## <a href="" id="ddk-default-allocator-ksg"></a>
+
 
 
 The default allocator provides a system memory allocator for device drivers that transfer data from system memory and require specific memory allocation properties. When using the default allocator, a filter need only handle the allocator requirements request.

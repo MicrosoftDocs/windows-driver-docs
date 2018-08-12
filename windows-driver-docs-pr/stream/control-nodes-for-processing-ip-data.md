@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Control Nodes for Processing IP Data
 
 
-## <a href="" id="ddk-control-nodes-for-processing-ip-data-ksg"></a>
+
 
 
 The following sequence and figure describe the data flow for IP data that is part of the received digital signal.

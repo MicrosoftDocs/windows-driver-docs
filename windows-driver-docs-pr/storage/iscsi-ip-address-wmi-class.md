@@ -2,6 +2,7 @@
 title: ISCSI\_IP\_Address WMI Class
 description: ISCSI\_IP\_Address WMI Class
 ms.assetid: 3ceeb54f-ecc5-40c5-b0a8-8c6f86203f1c
+ms.localizationpriority: medium
 ---
 
 # ISCSI\_IP\_Address WMI Class

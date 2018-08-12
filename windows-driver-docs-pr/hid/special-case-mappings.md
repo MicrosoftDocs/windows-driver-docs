@@ -4,12 +4,13 @@ author: windows-driver-content
 description: Special Case Mappings
 ms.assetid: 1691e0e5-7b05-40e1-8747-40926f2eba9c
 keywords: ["joysticks WDK HID , axes", "virtual joystick drivers WDK HID , axes", "VJoyD WDK HID , axes", "axes WDK joysticks", "special case mappings WDK joysticks", "case mappings WDK joysticks", "Z-axis case mapping WDK joysticks", "car controller case mapping WDK joysticks", "mapping axes"]
+ms.localizationpriority: medium
 ---
 
 # Special Case Mappings
 
 
-## <a href="" id="ddk-special-case-mappings-di"></a>
+
 
 
 Because of the complexity and variety of input devices available today, no single set of mappings can be used for all types of devices. DirectInput supports two special cases that are described in this section.

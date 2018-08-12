@@ -7,6 +7,7 @@ ms.date: 04/05/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Create a new product
@@ -23,7 +24,7 @@ This method has the following syntax. See the following sections for usage examp
 
 | Method | Request URI |
 |:--|:--|
-| POST | `https://manage.devcenter.microsoft.com/api/v1.0/hardware/products` |
+| POST | `https://manage.devcenter.microsoft.com/v1.0/my/hardware/products` |
 
 
 ### Request header
@@ -73,7 +74,7 @@ For details about the fields in the request, refer to [Product resource](get-pro
 The following example demonstrates how to create a new product.
 
 ```
-POST https://manage.devcenter.microsoft.com/api/v1.0/hardware/products HTTP/1.1
+POST https://manage.devcenter.microsoft.com/v1.0/my/hardware/products HTTP/1.1
 Authorization: Bearer <your access token>
 ```
 

@@ -13,6 +13,7 @@ api_name:
 - IPrinterBidiSchemaResponses.AddBool
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaResponses::AddBool method

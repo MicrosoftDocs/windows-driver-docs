@@ -2,6 +2,11 @@
 title: PagedCodeAtD0 rule (kmdf)
 description: The PagedCodeAtD0 rule specifies that a driver must not mark code as pageable within callback functions that are in the power-up code path.
 ms.assetid: e3e0ee8f-eebe-4855-be35-3d8b153dd09e
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["PagedCodeAtD0 rule (kmdf)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - PagedCodeAtD0
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # PagedCodeAtD0 rule (kmdf)

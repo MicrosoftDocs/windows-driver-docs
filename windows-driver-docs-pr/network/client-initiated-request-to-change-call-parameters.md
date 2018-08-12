@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Client-Initiated Request to Change Call Parameters
 
 
-## <a href="" id="ddk-client-initiated-request-to-change-call-parameters-ng"></a>
+
 
 
 A client requests a change in quality of service (QoS) on an active virtual connection (VC) with [**NdisClModifyCallQoS**](https://msdn.microsoft.com/library/windows/hardware/ff561636).

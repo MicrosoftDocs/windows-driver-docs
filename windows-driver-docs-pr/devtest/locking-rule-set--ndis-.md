@@ -2,6 +2,12 @@
 title: Locking rule set (NDIS)
 description: Use these rules to verify that your driver correctly manages shared resources.
 ms.assetid: 1123A246-7833-4EAB-B1B8-0C71413CE86B
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Locking rule set (NDIS)

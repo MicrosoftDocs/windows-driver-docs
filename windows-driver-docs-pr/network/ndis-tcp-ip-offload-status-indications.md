@@ -8,12 +8,13 @@ ms.date: 07/18/2017
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS TCP/IP Offload Status Indications
 
 
-## <a href="" id="ddk-ndis-tcp-ip-offload-status-indications-nr"></a>
+
 
 
 This section includes:

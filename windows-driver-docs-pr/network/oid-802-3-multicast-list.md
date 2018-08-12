@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_802_3_MULTICAST_LIST Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_802\_3\_MULTICAST\_LIST
@@ -19,7 +20,7 @@ As a set request, NDIS and overlying protocol drivers use the OID\_802\_3\_MULTI
 
 As a query request, NDIS and protocol drivers use the OID\_802\_3\_MULTICAST\_LIST OID request to obtain the current multicast address list.
 
-## <a href="" id="ddk-oid-802-3-multicast-list-nr"></a>
+
 
 
 NDIS handles OID\_802\_3\_MULTICAST\_LIST query requests for miniport drivers, so miniport drivers never receive these query requests.

@@ -16,12 +16,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Data Range Intersections in AVStream
 
 
-## <a href="" id="ddk-data-range-intersections-in-avstream-ksg"></a>
+
 
 
 A data format is a single set of parameters describing some aspect of a connection. For example, an audio data format might specify a certain format of audio at X samples per second and Y bits per sample.

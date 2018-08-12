@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing Network Components
 
 
-## <a href="" id="ddk-installing-network-componentsn-ng"></a>
+
 
 
 Network components are installed by the network configuration subsystem.

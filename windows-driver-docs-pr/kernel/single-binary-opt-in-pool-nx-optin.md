@@ -3,6 +3,7 @@ title: Single Binary Opt-In POOL_NX_OPTIN
 author: windows-driver-content
 description: To build a single driver binary that runs both in Windows 8 and in earlier versions of Windows, use the POOL_NX_OPTIN opt-in mechanism.
 ms.assetid: BE9D3C85-0212-4206-A59B-4D53FB842C39
+ms.localizationpriority: medium
 ---
 
 # Single Binary Opt-In: POOL\_NX\_OPTIN
@@ -20,7 +21,7 @@ To use this opt-in mechanism, do the following:
 
     `ExInitializeDriverRuntime(DrvRtPoolNxOptIn);`
 
-    This call must occur before the driver makes any allocations that use the **NonPagedPool** pool type or makes any calls to the [**ExInitializeNPagedLookasideList**](https://msdn.microsoft.com/library/windows/hardware/ff545301) routine. **ExInitializeDriverRuntime** is a force inline function and can be called on Windows 8 or earlier versions of Windows.
+    This call must occur before the driver makes any allocations that use the **NonPagedPool** pool type or makes any calls to the [**ExInitializeNPagedLookasideList**](https://msdn.microsoft.com/library/windows/hardware/ff545301) routine. **ExInitializeDriverRuntime** is a force inline function and can be called on Windows 8 or later versions of Windows.
 
 For most drivers, these two tasks are sufficient to enable the opt-in mechanism for the single driver binary.
 

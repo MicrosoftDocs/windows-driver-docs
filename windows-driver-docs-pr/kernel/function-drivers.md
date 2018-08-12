@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Function Drivers
 
 
-## <a href="" id="ddk-function-drivers-kg"></a>
+
 
 
 A *function driver* is the main driver for a device (see the [Possible Driver Layers](types-of-wdm-drivers.md#possible-driver-layers) figure). A function driver is typically written by the device vendor and is required (unless the device is being used in [*raw mode*](https://msdn.microsoft.com/library/windows/hardware/ff556331#wdkgloss-raw-mode)). The PnP manager loads at most one function driver for a device. A function driver can service one or more devices.

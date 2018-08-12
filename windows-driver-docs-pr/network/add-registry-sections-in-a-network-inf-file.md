@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Add-registry-sections in a Network INF File
 
 
-## <a href="" id="ddk-add-registry-sections-ng"></a>
+
 
 
 An INF file contains one or more *add-registry-sections* for each component that it installs. An *add-registry-section* adds keys and values to the registry. The **DDInstall** section of an INF file contains an **AddReg** directive that references one or more *add-registry-sections*. For more information about the *add-registry-section* and the **AddReg** directive, see [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320).

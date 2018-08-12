@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Mapping PTP Associations to WIA Folders
 
 
-## <a href="" id="ddk-mapping-ptp-associations-to-wia-folders-si"></a>
+
 
 
 For most object associations, the PTP driver creates a WIA folder item. The WIA\_IPA\_ITEM\_FLAGS property has different flags set, depending on the association type, as shown in this table:

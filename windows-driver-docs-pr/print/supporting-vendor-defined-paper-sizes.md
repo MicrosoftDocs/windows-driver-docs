@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting Vendor-Defined Paper Sizes
 
 
-## <a href="" id="ddk-supporting-vendor-defined-paper-sizes-gg"></a>
+
 
 
 Vendor-defined paper sizes are vendor-specific and must be fully described by each printer's GPD file. These sizes are also called nonstandard paper sizes, because they are not included in the [standard options](standard-options.md) for the PaperSize feature.

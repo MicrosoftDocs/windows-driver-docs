@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Force Feedback Device Driver Interface
 
 
-## <a href="" id="ddk-force-feedback-device-driver-interface-di"></a>
+
 
 
 This section covers the interface between DirectInput and the device-specific force feedback driver. The following topics are covered:

@@ -2,6 +2,11 @@
 title: DriverCreate rule (kmdf)
 description: The DriverCreate rule specifies that a driver that uses Kernel Mode Driver Framework (KMDF) must call the WdfDriverCreate method to create a framework driver object from within its DriverEntry routine.
 ms.assetid: a994fd72-4fb2-486b-9d5e-80dedd940c85
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["DriverCreate rule (kmdf)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - DriverCreate
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # DriverCreate rule (kmdf)

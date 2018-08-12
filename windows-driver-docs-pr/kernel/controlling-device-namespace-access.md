@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Controlling Device Namespace Access
 
 
-## <a href="" id="ddk-controlling-device-namespace-access-kg"></a>
+
 
 
 In the Windows Driver Model (WDM), every device object has an associated *namespace*. Names in the device's namespace are paths that begin with the device's name. For a device named "\\*Device*\\*DeviceName*", its namespace consists of any name of the form "\\*Device*\\*DeviceName*\\*FileName*". (For a file system, *FileName* is an actual name of a file on the file system.)
@@ -33,7 +34,7 @@ Drivers for devices that do not support namespaces must use one of two methods t
 
 Drivers for devices that do support namespaces can also use two methods to secure file open requests into the device's namespace:
 
--   The driver's device objects have the FILE\_DEVICE\_SECURE\_OPEN device characteristic set. This ensures that the security settings for the device apply uniformly to the device's namespace. (The driver is responsible for implementing support for the namespace in its [*DispatchCreate*](https://msdn.microsoft.com/library/windows/hardware/ff543266) routine.)
+-   The driver's device objects have the FILE\_DEVICE\_SECURE\_OPEN device characteristic set. This ensures that the security settings for the device apply uniformly to the device's namespace. (The driver is responsible for implementing support for the namespace in its [*DRIVER_DISPATCH*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) callback function.)
 
 -   The driver checks any ACLs for the file name in its *DispatchCreate* routine. (Even in this case the driver should set the FILE\_DEVICE\_SECURE\_OPEN characteristic unless opens into the device's namespace can have weaker security settings than the device object.)
 

@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Properties of Device Objects
 
 
-## <a href="" id="ddk-properties-of-device-objects-kg"></a>
+
 
 
 Each device object has certain properties that describe the device and how the device object interacts with the system. The device object properties include:

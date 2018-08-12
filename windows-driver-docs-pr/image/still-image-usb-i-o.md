@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Still Image USB I/O
 
 
-## <a href="" id="ddk-still-image-usb-i-o-si"></a>
+
 
 
 This section contains additional information about SCSI control codes and the structures associated with these control codes.

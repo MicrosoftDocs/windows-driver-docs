@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing Pages for a Printer Type
 
 
-## <a href="" id="ddk-installing-pages-for-a-printer-type-gg"></a>
+
 
 
 If the standard TCP/IP port monitor is used with your printer, you can install a printer details page that is specific to the printer type. To do so, include the page's ASP file, along with all subordinate files (such as .gif files or ASP files for linked pages), in the [printer INF file](printer-inf-files.md) for the printer type. Following is a sample section of a printer INF file:

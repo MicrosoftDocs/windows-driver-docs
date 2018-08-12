@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Comments and Ignored Blocks
 
 
-## <a href="" id="ddk-comments-and-ignored-blocks-gg"></a>
+
 
 
 GPD files can contain comments. The format for a comment is as follows:

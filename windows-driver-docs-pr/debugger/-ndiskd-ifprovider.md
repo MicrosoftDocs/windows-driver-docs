@@ -14,6 +14,7 @@ api_name:
 - ndiskd.ifprovider
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.ifprovider

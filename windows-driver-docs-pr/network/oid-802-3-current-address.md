@@ -10,12 +10,13 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_802_3_CURRENT_ADDRESS Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_802\_3\_CURRENT\_ADDRESS
 
 
-## <a href="" id="ddk-oid-802-3-current-address-nr"></a>
+
 
 
 The address the NIC is currently using.

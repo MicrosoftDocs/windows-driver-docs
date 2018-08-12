@@ -2,6 +2,7 @@
 title: Arm NVDIMM-N (Function Index 20)
 description: This function arms the NVDIMM-N for save operations in the event of a power loss.
 ms.assetid: 15D21B5A-2320-4C22-9957-ECC0EB46B02E
+ms.localizationpriority: medium
 ---
 
 # <span id="storage.arm_nvdimm-n__function_index_20_"></span>Arm NVDIMM-N (Function Index 20)

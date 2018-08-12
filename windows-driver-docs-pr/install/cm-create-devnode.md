@@ -10,6 +10,7 @@ api_name:
 - CM_Create_DevNodeW
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Create_DevNode
@@ -17,7 +18,7 @@ api_type:
 This function is reserved for system use.
 
 
-## <a href="" id="ddk-cm-create-devnode-dr"></a>
+
 
 
  

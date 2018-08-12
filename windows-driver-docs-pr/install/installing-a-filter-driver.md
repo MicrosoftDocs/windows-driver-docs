@@ -17,12 +17,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing a Filter Driver
 
 
-## <a href="" id="ddk-installing-a-filter-driver-dg"></a>
+
 
 
 A PnP filter driver can support a specific device or all devices in a setup class and can attach below a device's function driver (a lower filter) or above a device's function driver (an upper filter). See [Types of WDM Drivers](https://msdn.microsoft.com/library/windows/hardware/ff564862) for more information about PnP driver layers.

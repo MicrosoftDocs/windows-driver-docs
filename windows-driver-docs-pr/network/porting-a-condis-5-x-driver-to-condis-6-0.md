@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting a CoNDIS 5.x Driver to CoNDIS 6.0
 
 
-## <a href="" id="ddk-porting-condis-drivers-to-condis-6-0-ng"></a>
+
 
 
 This section describes how to port connection-oriented (CoNDIS) drivers from the NDIS 5.*x* versions to the NDIS 6.0 version. Like prior versions, NDIS 6.0 supports CoNDIS call managers, protocol drivers, miniport drivers, intermediate drivers, and miniport call managers (MCMs). For general information about CoNDIS, see [Connection-Oriented NDIS](connection-oriented-ndis.md).

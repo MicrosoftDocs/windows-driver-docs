@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KS Minidriver Architecture
 
 
-## <a href="" id="ddk-ks-minidriver-architecture-ksg"></a>
+
 
 
 Kernel streaming services support kernel-mode processing of streamed data. In this model, streaming data flows through a series of nodes that are grouped into blocks called filters. Each filter encapsulates some processing task to be performed upon the data. A [KS filter](ks-filters.md) is implemented as a kernel-mode [**DRIVER\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff544174).

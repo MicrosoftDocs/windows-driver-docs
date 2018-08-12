@@ -14,6 +14,7 @@ api_name:
 - SET_ENV_VAR_FAILED
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x5B: SET\_ENV\_VAR\_FAILED

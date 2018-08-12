@@ -16,12 +16,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Master Clock
 
 
-## <a href="" id="ddk-master-clock-ksg"></a>
+
 
 
 The DVD decoder minidriver may indicate that a given stream is capable of providing master clock information. This indicates that the stream is the one to which all others should synchronize. Only two members of the SRB structure are needed.

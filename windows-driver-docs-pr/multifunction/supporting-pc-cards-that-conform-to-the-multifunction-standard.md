@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting PC Cards That Conform to the Multifunction Standard
 
 
-## <a href="" id="ddk-supporting-pc-cards-that-conform-to-the-multifunction-standard-dg"></a>
+
 
 
 If a 16-bit, ISA-style PC Card device implements the PC Card multifunction standard completely and correctly, the vendor of such a device on an NT-based platform can rely on the following system-supplied components to handle the software aspects of the multifunction semantics:

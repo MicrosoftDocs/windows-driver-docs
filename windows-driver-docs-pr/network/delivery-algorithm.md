@@ -9,6 +9,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Delivery Algorithm
@@ -16,7 +17,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-receive-algorithm-ng"></a>
+
 
 
 The following three flowcharts illustrate the algorithm that the offload target must use to process each of the following events:

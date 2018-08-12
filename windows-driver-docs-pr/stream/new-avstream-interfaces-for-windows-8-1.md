@@ -4,10 +4,11 @@ author: windows-driver-content
 description: AVStream streaming media driver interfaces are extended to support new camera platform functionality starting with Windows 8.1.
 ms.assetid: 1D06A754-236B-441D-A0BB-A78B419270E9
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # New AVStream Interfaces for Windows 8.1
@@ -18,7 +19,7 @@ AVStream streaming media driver interfaces are extended to support new camera pl
 ## Camera platform
 
 
-Camera controls are extended starting with Windows 8.1. For info on how to implement these camera controls, see the topics under [Camera Control Properties](camera-control-properties.md#win8-1-extended-props).
+Camera controls are extended starting with Windows 8.1. For info on how to implement these camera controls, see the topics under [Camera Control Properties](camera-control-properties.md).
 
 These device driver interfaces (DDIs) support these extensions and are new or updated:
 

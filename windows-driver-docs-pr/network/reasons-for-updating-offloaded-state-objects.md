@@ -9,6 +9,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Reasons for Updating Offloaded State Objects
@@ -16,7 +17,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-reasons-for-updating-offloaded-state-objects-ng"></a>
+
 
 
 The host stack updates offloaded state objects if:

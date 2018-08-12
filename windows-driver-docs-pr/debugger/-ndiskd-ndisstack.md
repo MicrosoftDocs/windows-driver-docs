@@ -14,6 +14,7 @@ api_name:
 - ndiskd.ndisstack
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.ndisstack

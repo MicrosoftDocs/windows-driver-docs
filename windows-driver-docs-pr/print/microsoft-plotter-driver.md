@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Microsoft Plotter Driver
 
 
-## <a href="" id="ddk-microsoft-plotter-driver-gg"></a>
+
 
 
 The Microsoft Plotter Driver is the Microsoft corporation's standard printer driver for plotters that support the Hewlett-Packard Graphics Language. The following topics describe the Microsoft Plotter Driver:

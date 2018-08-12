@@ -7,10 +7,12 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Package (SoftwareInfo - priviliged applications)
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The Package element specifies an app that should have access to the privileged Mobile Broadband interfaces.
 

@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying the Name and Provider Path for a NetClient Component
 
 
-## <a href="" id="ddk-specifying-the-name-and-provider-path-for-a-netclient-component-ng"></a>
+
 
 
 An INF file that installs a NetClient component must add a **NetworkProvider** key to the *service* key for the component. The INF file adds the **NetworkProvider** key through an *add-registry-section* that is referenced by an **AddReg** directive in the *service-install* section for the component.

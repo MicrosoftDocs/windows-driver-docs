@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Printer Commands
 
 
-## <a href="" id="ddk-printer-commands-gg"></a>
+
 
 
 The GPD language provides a predefined command name for each commonly used printer operation. Additionally, customized commands can be defined for device-specific [printer options](printer-options.md).

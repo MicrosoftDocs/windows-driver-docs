@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Camera Driver UI Extension Sample
 
 
-## <a href="" id="ddk-camera-driver-ui-extension-sample-si"></a>
+
 
 
 The *extend* directory in the WDK contains a sample user interface extension for WIA digital still camera drivers.

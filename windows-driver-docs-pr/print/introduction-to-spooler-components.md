@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to Spooler Components
 
 
-## <a href="" id="ddk-introduction-to-spooler-components-gg"></a>
+
 
 
 The primary components of the Microsoft Windows 2000 and later print spooler are illustrated in the following diagram.

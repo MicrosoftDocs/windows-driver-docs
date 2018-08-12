@@ -19,12 +19,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Pscript Minidrivers
 
 
-## <a href="" id="ddk-pscript-minidrivers-gg"></a>
+
 
 
 Pscript minidrivers are created from .ppd files and .ntf files.

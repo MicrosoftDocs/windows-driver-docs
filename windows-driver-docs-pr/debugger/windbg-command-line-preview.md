@@ -2,10 +2,11 @@
 title: WinDbg Preview - Command line startup options
 description: This section covers the command line startup options for the WinDbg Preview debugger.
 ms.author: domars
-ms.date: 08/17/2017
+ms.date: 08/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 > [!NOTE]
@@ -70,6 +71,7 @@ tid | Specifies the thread ID of a thread to be resumed when the debugging sessi
 psn | Specifies the name of the service contained in the process to be debugged. This is used to debug a process that is already running.
 pn | Specifies the name of the process to be debugged.
 z | Specifies the name of a crash dump file to debug. 
+openPrivateDumpByHandle *Handle* | Specifies the handle of a crash dump file to debug.
 
 
 **Symbol Options**

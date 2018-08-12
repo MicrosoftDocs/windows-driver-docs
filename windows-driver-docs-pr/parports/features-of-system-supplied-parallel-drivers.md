@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Features of System-Supplied Parallel Drivers
 
 
-## <a href="" id="ddk-features-of-system-supplied-parallel-drivers-kg"></a>
+
 
 
 This section describes the features of the system-supplied parallel drivers for parallel ports and devices that are attached to parallel ports.

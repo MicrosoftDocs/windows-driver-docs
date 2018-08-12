@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Network Architecture for Kernel-Mode Drivers
 
 
-## <a href="" id="ddk-network-architecture-for-kernel-mode-drivers-ng"></a>
+
 
 
 This section describes the network architecture that kernel-mode drivers use in Microsoft Windows Vista and later operating systems.

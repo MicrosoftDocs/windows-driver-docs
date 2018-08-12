@@ -6,6 +6,7 @@ ms.date: 01/30/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device MFT design guide
@@ -231,6 +232,8 @@ Device MFTs must support the following interfaces:
         - If Device MFT handles non-KSEVENT_TYPE_ONESHOT events, then it should duplicate the handle when it receives **KSEVENT_TYPE_ENABLE** and should call **CloseHandle** on the duplicated handles when the ks events are disabled by calling KsEvent function with all parameters set to zero.
 
 - [IMFRealtimeClientEx](https://msdn.microsoft.com/library/windows/desktop/hh448047)
+
+- [IMFMediaEventGenerator] (https://docs.microsoft.com/en-us/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator)
 
 - [IMFShutdown](https://msdn.microsoft.com/library/windows/desktop/ms703054)
 

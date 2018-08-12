@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Color Commands
 
 
-## <a href="" id="ddk-color-commands-gg"></a>
+
 
 
 This topic describes the color commands for printing, and it contains the following sections:

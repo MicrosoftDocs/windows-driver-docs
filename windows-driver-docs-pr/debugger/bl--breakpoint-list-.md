@@ -14,6 +14,7 @@ api_name:
 - bl (Breakpoint List)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # bl (Breakpoint List)

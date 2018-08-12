@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Vendor-Extended Features
 
 
-## <a href="" id="ddk-vendor-extended-features-si"></a>
+
 
 
 This section discusses vendor-extended features a PTP device can support the following and how to expose these extensions:

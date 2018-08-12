@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Developing a WIA Scanner Driver
 
 
-## <a href="" id="ddk-developing-a-wia-scanner-driver-si"></a>
+
 
 
 A WIA scanner driver developer can create either a WIA microdriver or a WIA minidriver.

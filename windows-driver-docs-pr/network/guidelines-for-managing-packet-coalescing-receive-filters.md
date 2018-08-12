@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Guidelines for Managing Packet Coalescing Receive Filters
@@ -34,9 +35,9 @@ If the miniport driver supports NDIS packet coalescing, it must follow these gui
 
 -   If the miniport driver is operating in the Native 802.11 extensible station (ExtSTA) mode, it must not discard the packet coalescing receive filters when it handles an OID method request of [OID\_DOT11\_RESET\_REQUEST](https://msdn.microsoft.com/library/windows/hardware/ff569409). After the miniport driver performs the 802.11 reset operation, it must configure the network adapter with the packet coalescing receive filters. Also, the driver *must not clear* the coalesced packet counter.
 
-    For more information about the Native 802.11 extensible station mode, see [Extensible Station Operation Mode](extensible-station-operation-mode.md).
+    For more information about the Native 802.11 extensible station mode, see [Extensible Station Operation Mode](https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extensible-station-operation-mode).
 
-    **Note**  NDIS does not support packet coalescing for native 802.11 miniport drivers that operate in extensible access point (ExtAP) mode. For more information about the ExtAP operation mode, see [Extensible Access Point Operation Mode](extensible-access-point-operation-mode.md).
+    **Note**  NDIS does not support packet coalescing for native 802.11 miniport drivers that operate in extensible access point (ExtAP) mode. For more information about the ExtAP operation mode, see [Extensible Access Point Operation Mode](https://docs.microsoft.com/previous-versions/windows/hardware/wireless/extensible-access-point-operation-mode).
 
      
 

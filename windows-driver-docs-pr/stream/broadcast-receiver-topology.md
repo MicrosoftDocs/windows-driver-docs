@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Broadcast Receiver Topology
 
 
-## <a href="" id="ddk-broadcast-receiver-topology-ksg"></a>
+
 
 
 A *Broadcast Driver Architecture (BDA) receiver topology* is an abstract representation of a filter graph. It is composed of a network of logical nodes, each of which performs an operation on a signal. Each node can be associated with an individual filter or combined with other nodes in a filter. The following sections discuss BDA receiver topology:

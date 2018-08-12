@@ -14,6 +14,7 @@ api_name:
 - .scriptrun (Run Script)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .scriptrun (Run Script)

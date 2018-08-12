@@ -9,6 +9,7 @@ api_name:
 - DIF_INSTALLWIZARD
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # DIF_INSTALLWIZARD

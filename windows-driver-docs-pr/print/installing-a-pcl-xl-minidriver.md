@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing a PCL XL Minidriver
 
 
-## <a href="" id="ddk-installing-a-pcl-xl-minidriver-gg"></a>
+
 
 
 In Windows XP and later, ntprint.inf has the following \[PCLXL.OEM\] section:

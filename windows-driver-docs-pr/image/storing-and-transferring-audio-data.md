@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storing and Transferring Audio Data
 
 
-## <a href="" id="ddk-storing-and-transferring-audio-data-si"></a>
+
 
 
 Some WIA drivers for Microsoft Windows Me and Windows XP used the following three WIA properties to store audio data:

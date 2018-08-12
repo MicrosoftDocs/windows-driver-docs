@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DispatchSystemControl Routines
 
 
-## <a href="" id="ddk-dispatchsystemcontrol-routines-kg"></a>
+
 
 
 A driver's [*DispatchSystemControl*](https://msdn.microsoft.com/library/windows/hardware/ff543412) routine handles IRPs for the [**IRP\_MJ\_SYSTEM\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550813) I/O function code.

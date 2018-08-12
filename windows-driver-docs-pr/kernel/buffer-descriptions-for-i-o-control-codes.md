@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Buffer Descriptions for I/O Control Codes
 
 
-## <a href="" id="ddk-buffer-descriptions-for-i-o-control-codes-kg"></a>
+
 
 
 I/O control codes are contained in [**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744) and [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550766) requests. The I/O manager creates these requests as a result of calls to [**DeviceIoControl**](https://msdn.microsoft.com/library/windows/desktop/aa363216) (described in the Microsoft Windows SDK documentation) and [**IoBuildDeviceIoControlRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548318).

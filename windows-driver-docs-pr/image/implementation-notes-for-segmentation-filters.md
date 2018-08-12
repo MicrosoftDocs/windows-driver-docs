@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Implementation Notes for Segmentation Filters
 
 
-## <a href="" id="ddk-implementation-notes-for-segmentation-filters-si"></a>
+
 
 
 It is important to note the properties that the segmentation filter sets into each child item it creates. These properties are: [**WIA\_IPS\_XPOS**](https://msdn.microsoft.com/library/windows/hardware/ff552663), [**WIA\_IPS\_YPOS**](https://msdn.microsoft.com/library/windows/hardware/ff552671), [**WIA\_IPS\_XEXTENT**](https://msdn.microsoft.com/library/windows/hardware/ff552661), WIA\_IPS\_YEXTENT, and possibly [**WIA\_IPS\_DESKEW\_X**](https://msdn.microsoft.com/library/windows/hardware/ff552581) and [**WIA\_IPS\_DESKEW\_Y**](https://msdn.microsoft.com/library/windows/hardware/ff552587). These property values correspond to the item's position on the flatbed, not in the image passed into the *pInputStream* parameter.

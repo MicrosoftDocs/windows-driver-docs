@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_NIC_SWITCH_ENUM_SWITCHES Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_NIC\_SWITCH\_ENUM\_SWITCHES

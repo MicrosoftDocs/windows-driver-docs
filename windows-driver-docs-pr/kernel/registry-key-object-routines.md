@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registry Key Object Routines
 
 
-## <a href="" id="ddk-registry-key-object-routines-kg"></a>
+
 
 
 The Windows executive represents registry keys as executive objects that are managed by the object manager. (For more information about the object manager, see [Object Management](managing-kernel-objects.md).) In particular, every key has an object name, and you can open a handle to a key.

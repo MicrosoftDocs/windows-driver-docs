@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating IOCTL Requests in Drivers
 
 
-## <a href="" id="ddk-creating-ioctl-requests-in-drivers-kg"></a>
+
 
 
 A class driver or other higher-level driver can allocate IRPs for I/O control requests and send them to the next-lower driver as follows:

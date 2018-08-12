@@ -2,6 +2,7 @@
 title: DSM\_QueryUniqueId WMI Class
 description: DSM\_QueryUniqueId WMI Class
 ms.assetid: 576e208d-972c-47ba-ab30-a05bf3d0943d
+ms.localizationpriority: medium
 ---
 
 # DSM\_QueryUniqueId WMI Class

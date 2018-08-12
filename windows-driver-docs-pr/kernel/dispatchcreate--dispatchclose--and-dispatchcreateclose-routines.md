@@ -9,15 +9,16 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DispatchCreate, DispatchClose, and DispatchCreateClose Routines
 
 
-## <a href="" id="ddk-dispatchcreate-dispatchclose-and-dispatchcreateclose-routines-kg"></a>
 
 
-A driver's [*DispatchCreate*](https://msdn.microsoft.com/library/windows/hardware/ff543266) and [*DispatchClose*](https://msdn.microsoft.com/library/windows/hardware/ff543255) routines handle IRPs with I/O function codes of [**IRP\_MJ\_CREATE**](https://msdn.microsoft.com/library/windows/hardware/ff550729) and [**IRP\_MJ\_CLOSE**](https://msdn.microsoft.com/library/windows/hardware/ff550720), respectively. Alternatively, a combined [*DispatchCreateClose*](https://msdn.microsoft.com/library/windows/hardware/ff543270) routine can handle IRPs for both of these I/O function codes.
+
+A driver's [*DRIVER_DISPATCH*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) IRPs with I/O function codes of [**IRP\_MJ\_CREATE**](https://msdn.microsoft.com/library/windows/hardware/ff550729) and [**IRP\_MJ\_CLOSE**](https://msdn.microsoft.com/library/windows/hardware/ff550720), respectively. Alternatively, a combined [*DispatchCreateClose*](https://msdn.microsoft.com/library/windows/hardware/ff543270) routine can handle IRPs for both of these I/O function codes.
 
 A create request can originate either from a user-mode subsystem's attempt to get a handle to a file object representing a device (possibly on behalf of an application or subsystem-level driver) or in a higher-level driver's call to [**IoGetDeviceObjectPointer**](https://msdn.microsoft.com/library/windows/hardware/ff549198) or [**IoAttachDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548294).
 

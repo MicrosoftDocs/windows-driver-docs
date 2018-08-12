@@ -14,6 +14,7 @@ api_name:
 - .enable_long_status (Enable Long Integer Display)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .enable\_long\_status (Enable Long Integer Display)

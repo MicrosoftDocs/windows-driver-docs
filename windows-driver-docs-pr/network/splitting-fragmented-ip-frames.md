@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Splitting Fragmented IP Frames
 
 
-## <a href="" id="ddk-splitting-fragmented-ip-frames-ng"></a>
+
 
 
 If a fragmented IP frame contains the upper-layer-protocol header, a NIC must split the frame at the [beginning of upper-layer-protocol header](splitting-frames-at-the-beginning-of-the-upper-layer-protocol-headers.md) or must not split the frame. That is, the NIC must not split fragmented IP frames at the beginning of the TCP or UDP payload.

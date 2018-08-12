@@ -2,6 +2,11 @@
 title: RequestCompleted rule (kmdf)
 description: The DeferredRequestCompleted rule specifies that for a non-filter driver each request presented to the driver's default I/O queue must be completed, unless the request is deferred or forwarded, or if WdfRequestStopAcknowledge is called.
 ms.assetid: fb034d81-d49d-43a5-92b9-9b4e3f3056ee
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["RequestCompleted rule (kmdf)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - RequestCompleted
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # RequestCompleted rule (kmdf)

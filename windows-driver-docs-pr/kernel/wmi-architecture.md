@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WMI Architecture
 
 
-## <a href="" id="ddk-wmi-architecture-kg"></a>
+
 
 
 To support WMI, your driver registers as a WMI provider. A WMI provider is a Win32 dynamic-link library (DLL) that handles WMI requests and supplies WMI instrumentation data. See [Registering as a WMI Data Provider](registering-as-a-wmi-data-provider.md) to learn how a driver registers as a WMI provider.

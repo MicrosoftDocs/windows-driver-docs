@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of Windows Components
 
 
-## <a href="" id="ddk-overview-of-windows-components-kg"></a>
+
 
 
 The following figure shows the major internal components of the Windows operating system.

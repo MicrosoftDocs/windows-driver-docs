@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_GEN_LINK_PARAMETERS Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_LINK\_PARAMETERS
@@ -39,7 +40,7 @@ The NDIS\_LINK\_PARAMETERS structure is defined as follows:
   
 ```
 
-## <a href="" id="ddk-oid-gen-link-parameters--nr"></a>
+
 
 
 This structure contains the following members:

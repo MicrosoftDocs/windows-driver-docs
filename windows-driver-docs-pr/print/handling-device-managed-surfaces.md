@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Device-Managed Surfaces
 
 
-## <a href="" id="ddk-handling-device-managed-surfaces-gg"></a>
+
 
 
 When Unidrv renders print page images, it uses GDI-managed drawing surfaces. All images are rendered as bitmaps. For devices with capabilities that cannot be exploited by this scenario, such as the ability to draw vectors, you can provide customized driver support for a device-managed drawing surface. To support a device-managed surface, you must provide a rendering plug-in that implements the following:

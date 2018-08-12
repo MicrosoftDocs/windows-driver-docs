@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Accessing Frequency Properties of a BDA Tuner Node
 
 
-## <a href="" id="ddk-accessing-frequency-properties-of-a-bda-tuner-node-ksg"></a>
+
 
 
 A network provider uses the [KSPROPSETID\_BdaFrequencyFilter](https://msdn.microsoft.com/library/windows/hardware/ff566542) property set to control an RF tuner node in a BDA filter topology. For example, the network provider uses this property set to inform the tuner node how to tune the RF signal.

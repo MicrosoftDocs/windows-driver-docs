@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # System Power Policy
 
 
-## <a href="" id="ddk-system-power-policy-kg"></a>
+
 
 
 In its role as system power policy manager, the power manager keeps track of system activity, determines the appropriate system power state, and sends [**IRP\_MJ\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff550784) requests to query or change the system power state. It also provides interfaces through which applications can read and write power policy settings (see the Microsoft Windows SDK).

@@ -14,6 +14,7 @@ api_name:
 - x (Examine Symbols)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # x (Examine Symbols)

@@ -5,13 +5,14 @@ ms.author: windowsdriverdev
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF AddSoftware Directive
 
 Each **AddSoftware** directive describes the installation of standalone software.  Use this directive in an INF file of the **SoftwareComponent** setup class. For more details on software components, see [Using a Component INF File](using-a-component-inf-file.md).  This directive is supported for Windows 10 version 1703 and later.
 
-Valid installation types depend on the [target platform](../develop/windows-10-editions-for-universal-drivers.md). For example, Desktop supports MSI installers and setup EXEs.
+Valid installation types depend on the [target platform](../develop/windows-10-editions-for-universal-drivers.md). For example, Desktop supports MSI installers and setup EXEs.  **Note**:  Type 2 is supported in Universal Drivers, Type 1 is desktop-only.
 
 When a software component INF file specifies **AddSoftware**, the system queues software to be installed after device installation.  There is no guarantee when or if the software will be installed.
 If referenced software fails to install, the system tries again when the referencing software component is updated.
@@ -31,7 +32,13 @@ Specifies the name of the software to be installed.  This name uniquely identifi
 
 *flags*
 
-Specifies one or more (ORed) flags.  This value must be zero.
+Specifies one or more (ORed) flags.
+
+**0x00000000**  
+The **AddSoftware** directive is processed only once.
+
+**0x00000001**  
+The **AddSoftware** directive is processed once for each component device that specifies **AddSoftware** with the same unique *SoftwareName*.
 
 *software-install-section*
 

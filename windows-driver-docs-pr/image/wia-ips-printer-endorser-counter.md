@@ -12,10 +12,11 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 05/22/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_PRINTER\_ENDORSER\_COUNTER
@@ -23,10 +24,10 @@ ms.technology: windows-devices
 
 The **WIA\_IPS\_PRINTER\_ENDORSER\_COUNTER** property is used to configure the starting value and incrementing step for the imprinter/endorser counter at the beginning of a new WIA application session. The WIA minidriver creates and maintains this property.
 
-## <span id="ddk_wia_ipa_depth_si"></span><span id="DDK_WIA_IPA_DEPTH_SI"></span>
 
 
-Property Type: VT\_I4
+
+Property Type: VT\_UI4
 
 Valid Values: WIA\_PROP\_RANGE
 

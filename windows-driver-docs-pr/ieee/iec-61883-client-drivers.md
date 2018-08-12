@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IEC-61883 Client Drivers
 
 
-## <a href="" id="ddk-iec-61883-client-drivers-kg"></a>
+
 
 
 IEC-61883 is a standard communications and control interface used by IEEE 1394 audio and video devices. In Windows 98 SE, Windows 2000 and earlier operating systems, 61883 functionality was implemented as part of the Microsoft Digital Video (MSDV) camcorder driver, *msdv.sys*. In Windows Me, Windows XP, and later operating systems, 61883 functionality has been moved to a separate driver dedicated to 61883 support. Vendor-supplied IEC-61883 client drivers send requests to the system-supplied [IEC-61883 Protocol Driver](https://msdn.microsoft.com/library/windows/hardware/ff537191) (*61883.sys*) to communicate with their devices.

@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Rectangle Area Fill Commands
 
 
-## <a href="" id="ddk-rectangle-area-fill-commands-gg"></a>
+
 
 
 The following table lists the rectangle area fill commands. All commands are specified using [command entry format](command-entry-format.md).

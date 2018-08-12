@@ -20,12 +20,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Copyright Protection Implementation
 
 
-## <a href="" id="ddk-copyright-protection-implementation-ksg"></a>
+
 
 
 Microsoft provides software that facilitates the authentication process required by the content scrambling system (CSS) scheme, thus allowing a DVD-ROM drive to authenticate and transfer keys with a DVD decrypter. Microsoft does not ship a DVD decrypter. Instead, Microsoft provides operating system code that will act as the agent to allow either hardware or software decrypters to be authenticated.

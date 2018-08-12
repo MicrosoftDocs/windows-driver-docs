@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting NULL DMA Transfers
@@ -22,7 +23,7 @@ ms.technology: windows-devices
 
  
 
-## <a href="" id="ddk-supporting-null-dma-transfers-ng"></a>
+
 
 
 A *NULL DMA transfer* is a zero-length data transfer that is specified in a dynamic memory access (DMA) descriptor. NetDMA providers must provide the completion status for **NULL** DMA transfers.

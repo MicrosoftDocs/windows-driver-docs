@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # PCL Separator Page Escape Codes
 
 
-## <a href="" id="ddk-pcl-separator-page-escape-codes-gg"></a>
+
 
 
 The escape codes shown in the following table can be used when you create a PCL separator page.

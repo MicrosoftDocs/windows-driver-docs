@@ -14,6 +14,7 @@ api_name:
 - cmreslist
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !cmreslist

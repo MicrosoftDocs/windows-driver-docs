@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA Camera Tree
 
 
-## <a href="" id="ddk-wia-camera-tree-si"></a>
+
 
 
 The following figure shows a camera that contains several images, two of which are in the same directory.

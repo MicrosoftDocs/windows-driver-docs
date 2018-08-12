@@ -11,6 +11,7 @@ api_location:
 - Ntddvdeo.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # GUID_DISPLAY_ADAPTER_INTERFACE

@@ -7,6 +7,7 @@ ms.date: 04/05/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Get all products
@@ -23,7 +24,7 @@ This method has the following syntax. See the following sections for usage examp
 
 |Method|Request URI|
 |--|--|
-|GET| `https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/` |
+|GET| `https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/` |
 
 ### Request header
 
@@ -45,7 +46,7 @@ Do not provide a request body for this method.
 The following example demonstrates how to retrieve information about all products that are registered to your account.
 
 ```
-GET https://manage.devcenter.microsoft.com/api/v1.0/my/hardware/products/ HTTP/1.1
+GET https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/ HTTP/1.1
 Authorization: Bearer <your access token>
 ```
 
@@ -61,12 +62,12 @@ The following example demonstrates the JSON response body returned by a successf
       "sharedProductId": 1152921504606971100,
       "links": [
         {
-          "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products/9007199267351834",
+          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/9007199267351834",
           "rel": "self",
           "method": "GET"
         },
         {
-          "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products/9007199267351834/submissions",
+          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/9007199267351834/submissions",
           "rel": "get_submissions",
           "method": "GET"
         }
@@ -91,12 +92,12 @@ The following example demonstrates the JSON response body returned by a successf
       "sharedProductId": 1152921504606971100,
       "links": [
         {
-          "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products/9007199267351835",
+          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/9007199267351835",
           "rel": "self",
           "method": "GET"
         },
         {
-          "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products/9007199267351835/submissions",
+          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/9007199267351835/submissions",
           "rel": "get_submissions",
           "method": "GET"
         }
@@ -126,12 +127,12 @@ The following example demonstrates the JSON response body returned by a successf
   ],
   "links": [
     {
-      "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products?pageSize=50",
+      "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products?pageSize=50",
       "rel": "self",
       "method": "GET"
     },
     {
-      "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products?pageSize=50&continuationToken=PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTE2Ij8%2BPENvbnRpbnVhdGlvblRva2VuPjxWZXJzaW9uPjIuMDwvVmVyc2lvbj48VHlwZT5UYWJsZTwvVHlwZT48TmV4dFBhcnRpdGlvbktleT4xITQ4IWNIVmliR2x6YUdWeWN5MHdNREF3TURBd01EQXdNREF3TURBd01ESTVPVFl6T1RJdzwvTmV4dFBhcnRpdGlvbktleT48TmV4dFJvd0tleT4xITk2IWRYTmxjaTFrWld4bGRHVmtMVEF0SUNBZ0lDQWdTR0Z5WkhkaGNtVkVjbWwyWlhJdGNISnZaSFZqZEhNdE1EQXdNREF3TURBd09UQXdOekU1T1RJMk56TTNNakUyTkEtLTwvTmV4dFJvd0tleT48VGFyZ2V0TG9jYXRpb24%2BUHJpbWFyeTwvVGFyZ2V0TG9jYXRpb24%2BPC9Db250aW51YXRpb25Ub2tlbj4%3D",
+      "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products?pageSize=50&continuationToken=PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTE2Ij8%2BPENvbnRpbnVhdGlvblRva2VuPjxWZXJzaW9uPjIuMDwvVmVyc2lvbj48VHlwZT5UYWJsZTwvVHlwZT48TmV4dFBhcnRpdGlvbktleT4xITQ4IWNIVmliR2x6YUdWeWN5MHdNREF3TURBd01EQXdNREF3TURBd01ESTVPVFl6T1RJdzwvTmV4dFBhcnRpdGlvbktleT48TmV4dFJvd0tleT4xITk2IWRYTmxjaTFrWld4bGRHVmtMVEF0SUNBZ0lDQWdTR0Z5WkhkaGNtVkVjbWwyWlhJdGNISnZaSFZqZEhNdE1EQXdNREF3TURBd09UQXdOekU1T1RJMk56TTNNakUyTkEtLTwvTmV4dFJvd0tleT48VGFyZ2V0TG9jYXRpb24%2BUHJpbWFyeTwvVGFyZ2V0TG9jYXRpb24%2BPC9Db250aW51YXRpb25Ub2tlbj4%3D",
       "rel": "next_link",
       "method": "GET"
     }

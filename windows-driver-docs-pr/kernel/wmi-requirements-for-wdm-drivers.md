@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WMI Requirements for WDM Drivers
 
 
-## <a href="" id="ddk-wmi-requirements-for-wdm-drivers-kg"></a>
+
 
 
 A driver that handles IRPs registers with WMI as a *data provider*. System-supplied storage port drivers, class drivers, and NDIS protocol drivers fall into this category. For information about registering as a WMI data provider, see [Registering as a WMI Data Provider](registering-as-a-wmi-data-provider.md).

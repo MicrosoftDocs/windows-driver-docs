@@ -27,12 +27,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Example Uses of I/O Queues
 
 
-## <a href="" id="ddk-example-uses-of-i-o-queues-df"></a>
+
 
 
 For each device that is connected to a system and supported by a particular driver, the driver can use the following combinations of I/O queues and [request handlers](request-handlers.md):

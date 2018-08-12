@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NET\_BUFFER Architecture
 
 
-## <a href="" id="ddk-net-buffer-architecture-ng"></a>
+
 
 
 This section provides high level information about [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structures and related data structures and functions. NET\_BUFFER structures provide an efficient means to package and manage network data.

@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Language Monitor Functions
 
 
-## <a href="" id="ddk-language-monitor-functions-gg"></a>
+
 
 
 The following table lists the functions that a language monitor must define.

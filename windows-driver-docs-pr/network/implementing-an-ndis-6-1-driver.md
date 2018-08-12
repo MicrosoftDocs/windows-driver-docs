@@ -9,12 +9,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Implementing an NDIS 6.1 Driver
 
 
-## <a href="" id="ddk-implementing-an-ndis-6-1-driver-ng"></a>
+
 
 
 An NDIS 6.1 driver must report the correct NDIS version when it registers with NDIS.

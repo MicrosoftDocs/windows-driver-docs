@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Printer Configuration Commands
 
 
-## <a href="" id="ddk-printer-configuration-commands-gg"></a>
+
 
 
 The following table lists the printer configuration commands. All commands are specified using the [command entry format](command-entry-format.md).

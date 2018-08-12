@@ -2,6 +2,11 @@
 title: SpChangeIrql rule (storport)
 description: This rule verifies that the StorPort callback routines return at the same IRQL level as the level at which they are called.
 ms.assetid: 7F54D12B-D027-4A59-97A5-97287571AAF3
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["SpChangeIrql rule (storport)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - SpChangeIrql
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # SpChangeIrql rule (storport)

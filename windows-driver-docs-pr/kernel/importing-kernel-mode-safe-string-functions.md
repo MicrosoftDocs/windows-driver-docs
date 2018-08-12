@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Importing Kernel-Mode Safe String Functions
 
 
-## <a href="" id="ddk-importing-kernel-mode-safe-string-functions-kg"></a>
+
 
 
 Starting with Windows XP, the kernel-mode safe string library is available as a collection of inline functions that are defined in the Ntstrsafe.h header file.

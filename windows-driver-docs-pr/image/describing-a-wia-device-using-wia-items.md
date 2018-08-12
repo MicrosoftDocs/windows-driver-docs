@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Describing a WIA Device Using WIA Items
 
 
-## <a href="" id="ddk-describing-a-wia-device-using-wia-items-si"></a>
+
 
 
 This topic applies to Windows Vista and later.

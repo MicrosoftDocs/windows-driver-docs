@@ -9,6 +9,7 @@ ms.date: 06/05/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling control requests
@@ -31,8 +32,8 @@ For more info on these dispatching methods, see [Dispatching Methods for I/O Req
 
 Call these methods to create queues:
 
-* [**NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_SEQUENTIAL**](net-request-queue-config-init-default-sequential.md)
-* [**NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_PARALLEL**](net-request-queue-config-init-default-parallel.md)
+* [**NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_SEQUENTIAL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/nf-netrequestqueue-net_request_queue_config_init_default_sequential)
+* [**NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_PARALLEL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/nf-netrequestqueue-net_request_queue_config_init_default_parallel)
 
 ## Registering handlers
 
@@ -44,18 +45,18 @@ A client driver registers OID handlers in its [*EvtDriverDeviceAdd*](https://msd
 
 Here are the control request handlers the client can provide:
 
-* [*EVT_NET_REQUEST_METHOD*](evt-net-request-method.md)
-* [*EVT_NET_REQUEST_QUERY_DATA*](evt-net-request-query-data.md)
-* [*EVT_NET_REQUEST_SET_DATA*](evt-net-request-set-data.md)
-* [*EVT_NET_REQUEST_DEFAULT_METHOD*](evt-net-request-default-method.md)
-* [*EVT_NET_REQUEST_DEFAULT_QUERY_DATA*](evt-net-request-default-query-data.md)
-* [*EVT_NET_REQUEST_DEFAULT_SET_DATA*](evt-net-request-default-set-data.md)
+* [*EVT_NET_REQUEST_METHOD*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/nc-netrequestqueue-evt_net_request_method)
+* [*EVT_NET_REQUEST_QUERY_DATA*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/nc-netrequestqueue-evt_net_request_query_data)
+* [*EVT_NET_REQUEST_SET_DATA*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/nc-netrequestqueue-evt_net_request_set_data)
+* [*EVT_NET_REQUEST_DEFAULT_METHOD*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/nc-netrequestqueue-evt_net_request_default_method)
+* [*EVT_NET_REQUEST_DEFAULT_QUERY_DATA*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/nc-netrequestqueue-evt_net_request_default_query_data)
+* [*EVT_NET_REQUEST_DEFAULT_SET_DATA*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/nc-netrequestqueue-evt_net_request_default_set_data)
 
 For each of the three main request types, the OID-specific handlers take precedence over the default handlers. If the client provides neither for a given OID, NetAdapterCx fails the request.
 
-For requests of type other than query data, set data, and method, the client driver can provide an [*EVT_NET_REQUEST_DEFAULT*](evt-net-request-default.md) event callback function.
+For requests of type other than query data, set data, and method, the client driver can provide an [*EVT_NET_REQUEST_DEFAULT*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/nc-netrequestqueue-evt_net_request_default) event callback function.
 
-For example, if the protocol driver issues an OID request with `NDIS_REQUEST_TYPE = NdisRequestGeneric1`, NetAdapterCx calls [*EVT_NET_REQUEST_DEFAULT*](evt-net-request-default.md). NetAdapterCx fails the request if the client driver has not provided such a handler.
+For example, if the protocol driver issues an OID request with `NDIS_REQUEST_TYPE = NdisRequestGeneric1`, NetAdapterCx calls [*EVT_NET_REQUEST_DEFAULT*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/nc-netrequestqueue-evt_net_request_default). NetAdapterCx fails the request if the client driver has not provided such a handler.
 
 The following diagram shows the typical flow:
 
@@ -63,7 +64,7 @@ The following diagram shows the typical flow:
 
 The following snippet shows how the client sets up default handlers:
 
-```cpp
+```C++
 NTSTATUS status;
 NET_REQUEST_QUEUE_CONFIG config;
 NETREQUESTQUEUE requestQueue;
@@ -78,13 +79,13 @@ config.EvtRequestDefault = MyDefault;
 
 To add an OID-specific handlers, use these methods:
 
-* [**NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER**](net-request-queue-config-add-query-data-handler.md)
-* [**NET_REQUEST_QUEUE_CONFIG_ADD_SET_DATA_HANDLER**](net-request-queue-config-add-set-data-handler.md)
-* [**NET_REQUEST_QUEUE_CONFIG_ADD_METHOD_HANDLER**](net-request-queue-config-add-method-handler.md)
+* [**NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/nf-netrequestqueue-net_request_queue_config_add_query_data_handler)
+* [**NET_REQUEST_QUEUE_CONFIG_ADD_SET_DATA_HANDLER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/nf-netrequestqueue-net_request_queue_config_add_set_data_handler)
+* [**NET_REQUEST_QUEUE_CONFIG_ADD_METHOD_HANDLER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/nf-netrequestqueue-net_request_queue_config_add_method_handler)
 
-The following example calls [**NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER**](net-request-queue-config-add-query-data-handler.md) with a pointer to the client's [*EVT_NET_REQUEST_QUERY_DATA*](evt-net-request-query-data.md) event callback function to register a handler for a specific OID:
+The following example calls [**NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/nf-netrequestqueue-net_request_queue_config_add_query_data_handler) with a pointer to the client's [*EVT_NET_REQUEST_QUERY_DATA*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/nc-netrequestqueue-evt_net_request_query_data) event callback function to register a handler for a specific OID:
 
-```cpp
+```C++
 NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER(
  &config, OID_GEN_VENDOR_DESCRIPTION,
  EvtQueryGenVendorDescription, sizeof(NIC_VENDOR_DESC));
@@ -92,9 +93,9 @@ NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER(
 
 ## Creating the queue
 
-Once you've set up each OID queue the way you like, call [**NetRequestQueueCreate**](netrequestqueuecreate.md) to create the queue:
+Once you've set up each OID queue the way you like, call [**NetRequestQueueCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequestqueue/nf-netrequestqueue-netrequestqueuecreate) to create the queue:
 
-```cpp
+```C++
 status = NetRequestQueueCreate(&config, WDF_NO_OBJECT_ATTRIBUTES, NULL);
 
 if(!NT_SUCCESS(status))
@@ -109,14 +110,14 @@ NetAdapterCx can call the client driver's control request handlers as soon as [*
 
 The client driver must complete each NETREQUEST that it receives. Otherwise, the control request is left in a pending state. If the request cannot be handled synchronously, the client driver must complete the pending NETREQUEST at a later time. Failure to complete a pending request can cause the client driver to become unresponsive when the device is powered down.
 
-If the original request did not contain a large enough buffer, call [**NetRequestSetBytesNeeded**](netrequestsetbytesneeded.md). To complete a control request and specify only completion status, call [**NetRequestCompleteWithoutInformation**](netrequestcompletewithoutinformation.md) from the OID handler, as shown in the following snippet:
+If the original request did not contain a large enough buffer, call [**NetRequestSetBytesNeeded**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequest/nf-netrequest-netrequestsetbytesneeded). To complete a control request and specify only completion status, call [**NetRequestCompleteWithoutInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequest/nf-netrequest-netrequestcompletewithoutinformation) from the OID handler, as shown in the following snippet:
  
-```cpp
+```C++
  NetRequestCompleteWithoutInformation(Request, STATUS_SUCCESS);
 ```
 
-If the original request did contain a large enough buffer, the client driver calls [**NetRequestRetrieveInputOutputBuffer**](NetRequestRetrieveInputOutputBuffer.md) to retrieve the input/output buffer. Then the client transfers the data and completes the request using one of the following, depending on the request type:
+If the original request did contain a large enough buffer, the client driver calls [**NetRequestRetrieveInputOutputBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequest/nf-netrequest-netrequestretrieveinputoutputbuffer) to retrieve the input/output buffer. Then the client transfers the data and completes the request using one of the following, depending on the request type:
 
-* [**NetRequestMethodComplete**](netrequestmethodcomplete.md)
-* [**NetRequestQueryDataComplete**](netrequestquerydatacomplete.md)
-* [**NetRequestSetDataComplete**](netrequestsetdatacomplete.md)
+* [**NetRequestMethodComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequest/nf-netrequest-netrequestmethodcomplete)
+* [**NetRequestQueryDataComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequest/nf-netrequest-netrequestquerydatacomplete)
+* [**NetRequestSetDataComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrequest/nf-netrequest-netrequestsetdatacomplete)

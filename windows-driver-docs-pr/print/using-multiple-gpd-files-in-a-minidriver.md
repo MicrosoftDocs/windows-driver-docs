@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Multiple GPD Files in a Minidriver
 
 
-## <a href="" id="ddk-using-multiple-gpd-files-in-a-minidriver-gg"></a>
+
 
 
 Unidrv minidrivers can consist of more than one GPD file. This allows you to place characteristics that are common to more than one printer in one or more GPD files, and then to include these common GPD files in a particular printer's individual GPD file.

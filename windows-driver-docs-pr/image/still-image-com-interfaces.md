@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Still Image COM Interfaces
 
 
-## <a href="" id="ddk-still-image-com-interfaces-si"></a>
+
 
 
 Microsoft STI defines the following four COM interfaces:

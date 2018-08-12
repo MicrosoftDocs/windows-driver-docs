@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling an IRP\_MN\_SURPRISE\_REMOVAL Request
 
 
-## <a href="" id="ddk-handling-an-irp-mn-surprise-removal-request-kg"></a>
+
 
 
 The Windows 2000 and later PnP manager sends this IRP to notify drivers that a device is no longer available for I/O operations and has probably been unexpectedly removed from the machine ("surprise removal").
@@ -25,7 +26,7 @@ The PnP manager sends an [**IRP\_MN\_SURPRISE\_REMOVAL**](https://msdn.microsoft
 
 -   The bus is enumerated for another reason and the surprise-removed device is not included in the list of children. The PnP manager initiates its surprise removal operations.
 
--   The function driver for the device determines that the device is no longer present (because, for example, its requests repeatedly time out). The bus might be enumerable but it does not have hot-plug notification. In this case, the function driver calls [**IoInvalidateDeviceState**](https://msdn.microsoft.com/library/windows/hardware/ff549361). In response, the PnP manager sends an [**IRP\_MN\_QUERY\_PNP\_DEVICE\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff551698) request to the device stack. The function driver sets the PNP\_DEVICE\_FAILED flag in the [**PNP\_DEVICE\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff559618) bitmask indicating that the device has failed.
+-   The function driver for the device determines that the device is no longer present (because, for example, its requests repeatedly time out). The bus might be enumerable but it does not have hot-plug notification. In this case, the function driver calls [**IoInvalidateDeviceState**](https://msdn.microsoft.com/library/windows/hardware/ff549361). In response, the PnP manager sends an [**IRP\_MN\_QUERY\_PNP\_DEVICE\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff551698) request to the device stack. The function driver sets the PNP\_DEVICE\_FAILED flag in the [**PNP\_DEVICE\_STATE**](#about-pnp_device_state) bitmask indicating that the device has failed.
 
 -   The driver stack successfully completes an [**IRP\_MN\_STOP\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551755) request but then fails a subsequent [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) request. In such cases, the device is probably still connected.
 
@@ -112,6 +113,73 @@ The GUID_REENUMERATE_SELF_INTERFACE_STANDARD interface enables a driver to reque
 To use this interface, send an IRP_MN_QUERY_INTERFACE IRP to your bus driver with InterfaceType = GUID_REENUMERATE_SELF_INTERFACE_STANDARD. The bus driver supplies a pointer to a REENUMERATE_SELF_INTERFACE_STANDARD structure that contains pointers to the individual routines of the interface. A [ReenumerateSelf routine](https://msdn.microsoft.com/en-us/library/windows/hardware/ff560837) requests that a bus driver reenumerate a child device.
 
 
+## About PNP_DEVICE_STATE
+
+The PNP\_DEVICE\_STATE type is a bitmask that describes the PnP state of a device. A driver returns a value of this type in response to an **IRP\_MN\_QUERY\_PNP\_DEVICE\_STATE** request.
+
+``` syntax
+typedef ULONG PNP_DEVICE_STATE, *PPNP_DEVICE_STATE;
+```
+
+The flag bits in a PNP\_DEVICE\_STATE value are defined as follows.
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Flag bit</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PNP_DEVICE_DISABLED</td>
+<td><p>The device is physically present but is disabled in hardware.</p></td>
+</tr>
+<tr class="even">
+<td>PNP_DEVICE_DONT_DISPLAY_IN_UI</td>
+<td><p>Do not display the device in the user interface. Set for a device that is physically present but not usable in the current configuration, such as a game port on a laptop that is not usable when the laptop is undocked. (Also see the <strong>NoDisplayInUI</strong> flag in the [<strong>DEVICE_CAPABILITIES</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543095) structure.)</p></td>
+</tr>
+<tr class="odd">
+<td>PNP_DEVICE_FAILED</td>
+<td><p>The device is present but not functioning properly.</p>
+<p>When both this flag and PNP_DEVICE_RESOURCE_REQUIREMENTS_CHANGED are set, the device must be stopped before the PnP manager assigns new hardware resources (nonstop rebalance is not supported for the device).</p></td>
+</tr>
+<tr class="even">
+<td>PNP_DEVICE_NOT_DISABLEABLE</td>
+<td><p>The device is required when the computer starts. Such a device must not be disabled.</p>
+<p>A driver sets this bit for a device that is required for proper system operation. For example, if a driver receives notification that a device is in the paging path ([<strong>IRP_MN_DEVICE_USAGE_NOTIFICATION</strong>](irp-mn-device-usage-notification.md) for <strong>DeviceUsageTypePaging</strong>), the driver calls [<strong>IoInvalidateDeviceState</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549361) and sets this flag in the resulting <strong>IRP_MN_QUERY_PNP_DEVICE_STATE</strong> request.</p>
+<p>If this bit is set for a device, the PnP manager propagates this setting to the device's parent device, its parent's parent device, and so forth.</p>
+<p>If this bit is set for a root-enumerated device, the device cannot be disabled or uninstalled.</p></td>
+</tr>
+<tr class="odd">
+<td>PNP_DEVICE_REMOVED</td>
+<td><p>The device has been physically removed.</p></td>
+</tr>
+<tr class="even">
+<td>PNP_DEVICE_RESOURCE_REQUIREMENTS_CHANGED</td>
+<td><p>The resource requirements for the device have changed.</p>
+<p>Typically, a bus driver sets this flag when it has determined that it must expand its resource requirements in order to enumerate a new child device.</p></td>
+</tr>
+<tr class="odd">
+<td>PNP_DEVICE_DISCONNECTED</td>
+<td><p>The device driver is loaded, but this driver has detected that the device is no longer connected to the computer. Typically, this flag is used for function drivers that communicate with wireless devices. For example, the flag is set when the device moves out of range, and is cleared after the device moves back into range and re-connects.</p>
+<p>A bus driver does not typically set this flag. The bus driver should instead stop enumerating the child device if the device is no longer connected. This flag is used only if the function driver manages the connection.</p>
+<p>The sole purpose of this flag is to let clients know whether the device is connected. Setting the flag does not affect whether the driver is loaded.</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+The PnP manager queries a device's PNP\_DEVICE\_STATE right after starting the device by sending an **IRP\_MN\_QUERY\_PNP\_DEVICE\_STATE** request to the device stack. In response to this IRP, the drivers for the device set the appropriate flags in PNP\_DEVICE\_STATE.
+
+If any of the state characteristics change after the initial query, a driver notifies the PnP manager by calling [**IoInvalidateDeviceState**](https://msdn.microsoft.com/library/windows/hardware/ff549361). In response to a call to **IoInvalidateDeviceState**, the PnP manager queries the device's PNP\_DEVICE\_STATE again.
+
+If a device is marked PNP\_DEVICE\_NOT\_DISABLEABLE, the debugger displays a DNUF\_NOT\_DISABLEABLE user flag for the devnode. The debugger also displays a **DisableableDepends** value that counts the number of reasons why the device cannot be disabled. This value is the sum of X+Y, where X is one if the device cannot be disabled and Y is the count of the device's child devices that cannot be disabled.
 
 
 

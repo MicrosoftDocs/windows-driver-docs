@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS 6.0 Task Offload Backward Compatibility
 
 
-## <a href="" id="ddk-ndis-6-0-task-offload-backward-compatibility-ng"></a>
+
 
 
 Because the NDIS 6.0 support for task offload services is updated, NDIS 6.0 does require some restrictions on NDIS 5.*x* drivers that are present in an NDIS 6.0 driver stack. This topic describes those backward compatibility issues.

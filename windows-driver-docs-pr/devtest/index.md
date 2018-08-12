@@ -9,7 +9,7 @@ keywords:
 - tools WDK , developing drivers
 - Web Services for Devices WDK WIA , tools
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 06/28/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -37,13 +37,10 @@ ms.technology: windows-devices
 <p>This section describes the tools and techniques that can help you during development:</p>
 <p>[Tools for INF Files](tools-for-inf-files.md)</p>
 <p>[Tools for Changing Boot Options for Driver Testing and Debugging](boot-options-for-driver-testing-and-debugging.md)</p>
-<p>[Tools for Building Drivers](tools-for-building-drivers.md)</p>
-<p>[Tools for Signing Drivers](tools-for-signing-drivers.md)</p>
 <p>[Tools for Testing Drivers](tools-for-testing-drivers.md)</p>
 <p>[Tools for Verifying Drivers](tools-for-verifying-drivers.md)</p>
 <p>[Tools for Software Tracing](tools-for-software-tracing.md)</p>
-<p>[Tools for Debugging Drivers](tools-for-debugging-drivers.md)</p>
-<p>[Tools for Device Metadata Packages](tools-for-device-metadata-packages.md)</p></td>
+<p>[Additional Driver Tools](additional-driver-tools.md)</p>
 <td align="left"><p><strong>Resources</strong></p>
 <p>[Getting Started with Universal Windows Drivers](https://msdn.microsoft.com/windows-drivers/develop/getting_started_with_universal_drivers)</p>
 <p>Universal Windows drivers allow developers to create a single driver that runs across multiple different device types, from embedded systems to tablets and desktop PCs. Hardware developers can use their existing components and device drivers across different form factors.</p>

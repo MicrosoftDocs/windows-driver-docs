@@ -9,6 +9,7 @@ api_name:
 - CM_Get_Global_State_Ex
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Get_Global_State_Ex

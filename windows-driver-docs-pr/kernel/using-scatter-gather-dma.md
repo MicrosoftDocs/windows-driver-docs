@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Scatter/Gather DMA
 
 
-## <a href="" id="ddk-using-scatter-gather-dma-kg"></a>
+
 
 
 Drivers that perform system or bus-master, packet-based DMA can use support routines designed especially for scatter/gather DMA. Instead of calling the sequence of routines outlined in [Using Packet-Based System DMA](using-packet-based-system-dma.md) and [Packet-Based Bus-Master DMA](using-packet-based-bus-master-dma.md), a driver can use [**GetScatterGatherList**](https://msdn.microsoft.com/library/windows/hardware/ff546531) and [**PutScatterGatherList**](https://msdn.microsoft.com/library/windows/hardware/ff559967).

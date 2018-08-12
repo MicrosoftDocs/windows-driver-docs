@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Changing BDA Filter Properties
 
 
-## <a href="" id="ddk-changing-bda-filter-properties-ksg"></a>
+
 
 
 Because multiple instances of an application that views media broadcasts can run simultaneously on a system, you should write a BDA minidriver to accommodate multiple instances of a filter. Each filter instance can contain different information. For example, one instance of a tuner filter can contain a request to tune to channel 5, while another instance can contain a request to tune to channel 8. As control transitions from one instance to another, the BDA minidriver must instruct the underlying tuning device to change the way resources are configured. A BDA minidriver processes method requests of the [KSMETHODSETID\_BdaChangeSync](https://msdn.microsoft.com/library/windows/hardware/ff563403) method set to coordinate a list of property requests on one the minidriver's filter instances.

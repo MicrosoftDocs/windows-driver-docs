@@ -12,10 +12,11 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 05/22/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_COLOR\_DROP\_GREEN
@@ -23,12 +24,11 @@ ms.technology: windows-devices
 
 The **WIA\_IPS\_COLOR\_DROP\_GREEN** property is used to configure the amount of color drop-out for the Green color channel (G in RGB), as a percentage in a range from 0% (no dropout) to 100% (full channel dropout). The WIA minidriver creates and maintains this property.
 
-## <span id="ddk_wia_ipa_depth_si"></span><span id="DDK_WIA_IPA_DEPTH_SI"></span>
 
 
-Property Type: VT\_I4
+Property Type: VT\_I4 | VT\_VECTOR 
 
-Valid Values: WIA\_PROP\_RANGE
+Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read/Write
 

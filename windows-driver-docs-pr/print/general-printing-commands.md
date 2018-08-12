@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # General Printing Commands
 
 
-## <a href="" id="ddk-general-printing-commands-gg"></a>
+
 
 
 *General printing commands* are those that can be associated with any type of printing. These commands are divided into the following groups:

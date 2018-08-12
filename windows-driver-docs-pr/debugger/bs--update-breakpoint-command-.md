@@ -14,6 +14,7 @@ api_name:
 - bs (Update Breakpoint Command)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # bs (Update Breakpoint Command)

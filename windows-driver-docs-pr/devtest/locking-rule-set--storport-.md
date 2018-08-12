@@ -2,6 +2,12 @@
 title: Locking rule set (Storport)
 description: Use these rules to verify that your driver correctly manages shared resources.
 ms.assetid: FBB75F07-E689-4B7C-B053-E0B6A3772764
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Locking rule set (Storport)

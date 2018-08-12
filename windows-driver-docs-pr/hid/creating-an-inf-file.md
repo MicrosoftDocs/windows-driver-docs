@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating an INF File
 
 
-## <a href="" id="ddk-creating-an-inf-file-di"></a>
+
 
 
 All minidrivers and OEM-defined joysticks should be installed using an INF file to provide all the necessary information to the system. An INF file describes a device installation in terms of the class of the device, the files that need to be copied, any compatible devices, any system resources the device requires, and changes to the registry. INF files for customizing the standard analog driver do not need to copy any files, state compatible devices, or specify system resources. The INF file can specify other actions, such as modifying the Autoexec.bat file, but this is not usually necessary for a joystick minidriver.

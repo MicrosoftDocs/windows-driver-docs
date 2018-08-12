@@ -4,12 +4,13 @@ author: windows-driver-content
 description: About the DirectInput Control Panel
 ms.assetid: d6845778-1203-4b5a-8a7b-7d4eecbcc59e
 keywords: ["property sheets WDK DirectInput , about control panel", "game controllers WDK DirectInput , about control panel", "control panels WDK DirectInput , about control panel", "Joy.cpl"]
+ms.localizationpriority: medium
 ---
 
 # About the DirectInput Control Panel
 
 
-## <a href="" id="ddk-about-the-directinput-control-panel-di"></a>
+
 
 
 DirectInput provides support for game controllers such as game pads, joysticks, and force-feedback devices. In Microsoft DirectX 5.0 and later versions, DirectInput provides a new game controller control panel called Joy.cpl. This version of Control Panel is the first to allow extensibility in that the property sheets that are displayed for each controller can be replaced with property pages that are specific to that controller. This is done through the creation of a DLL that contains information about these property sheets. This DLL exposes a COM interface that is called into by the DirectInput control panel.

@@ -2,6 +2,7 @@
 title: MS\_SM\_AdapterInformationQuery WMI Class
 description: MS\_SM\_AdapterInformationQuery WMI Class
 ms.assetid: 3a396a73-6ade-455a-ac3f-fd0175cc704e
+ms.localizationpriority: medium
 ---
 
 # MS\_SM\_AdapterInformationQuery WMI Class

@@ -2,10 +2,11 @@
 title: WinDbg Preview - What's New 
 description: This topic provides inofmration on what's new in WinDbg preview debugger.
 ms.author: domars
-ms.date: 12/20/2017
+ms.date: 05/23/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 > [!NOTE]
@@ -52,9 +53,32 @@ This version includes these updates.
 - Start-up performance improvements
 - Additional bug fixes
 
+## 1.0.1804.18003
+
+This version includes these updates.
+
+- Symbol status and cancellation improvements
+- Experimental notes window
+- Experimental faster source window
+- JSProvider API version 1.2
+- Minor changes and bug fixes
+
+
+## 1.0.1805.17002
+
+This version includes these updates.
+
+- New disassembly window
+- Faster source window
+- Minor changes and bug fixes
+
+
 ---
  
 ## See Also
+
+
+[https://blogs.msdn.microsoft.com/windbg/](https://blogs.msdn.microsoft.com/windbg/)
 
 [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
  

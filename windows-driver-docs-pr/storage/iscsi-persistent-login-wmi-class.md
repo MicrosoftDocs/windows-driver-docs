@@ -2,6 +2,7 @@
 title: ISCSI\_Persistent\_Login WMI Class
 description: ISCSI\_Persistent\_Login WMI Class
 ms.assetid: ad00e6ed-adfa-4888-9386-51f937a278d8
+ms.localizationpriority: medium
 ---
 
 # ISCSI\_Persistent\_Login WMI Class

@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WMI Registration Flags
 
 
-## <a href="" id="ddk-wmi-registration-flags-kg"></a>
+
 
 
 A driver indicates whether a block uses static or dynamic instance names and specifies other characteristics of the block by setting flags in the [**WMIGUIDREGINFO**](https://msdn.microsoft.com/library/windows/hardware/ff565811) or [**WMIREGGUID**](https://msdn.microsoft.com/library/windows/hardware/ff565827) structure that it passes to WMI to register the block.

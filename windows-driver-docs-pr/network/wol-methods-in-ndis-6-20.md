@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WOL Methods in NDIS 6.20
 
 
-## <a href="" id="ddk-wol-methods-nr"></a>
+
 
 
 The power management capabilities that are supported in NDIS 6.20 and later versions of NDIS consist of the following wake-on-LAN (WOL) methods:

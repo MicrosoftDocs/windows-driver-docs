@@ -7,6 +7,7 @@ ms.date: 02/0720/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Microsoft-defined Bluetooth HCI extensions

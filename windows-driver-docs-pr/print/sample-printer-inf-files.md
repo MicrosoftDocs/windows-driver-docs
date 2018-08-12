@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sample Printer INF Files
 
 
-## <a href="" id="ddk-sample-printer-inf-files-gg"></a>
+
 
 
 A sample printer INF file is supplied with the Windows Driver Kit (WDK), located in the \\src\\print\\infs\\driver5 subdirectory. This file is a template that illustrates the layout of INF files used for installing Unidrv and Pscript minidrivers. Replace the place-holder file names with the names of your driver files.

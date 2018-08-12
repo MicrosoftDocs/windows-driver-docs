@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WAN Packet Framing
 
 
-## <a href="" id="ddk-wan-packet-framing-ng"></a>
+
 
 
 This section provides information about WAN packet framing.

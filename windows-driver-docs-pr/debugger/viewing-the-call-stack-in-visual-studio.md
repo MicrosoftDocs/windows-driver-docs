@@ -3,14 +3,18 @@ title: Viewing the Call Stack in Visual Studio
 description: The procedure describes how to view the Call Stack in Visual Studio
 ms.assetid: 060A2441-C1A7-4485-82E5-2C024E6A3FBE
 ms.author: domars
-ms.date: 11/28/2017
+ms.date: 05/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Viewing the Call Stack in Visual Studio
 
+> [!IMPORTANT]  
+> This feature is not available in Windows 10, version 1507 and later versions of the WDK.
+>
 
 The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio. To get the integrated environment, first install Microsoft Visual Studio, and then install the Windows Driver Kit (WDK). For more information, see [Windows Driver Development](https://msdn.microsoft.com/library/windows/hardware/ff557573).
 

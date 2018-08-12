@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Interfaces Implemented at Both Ends of the Notification Channel
 
 
-## <a href="" id="ddk-interfaces-implemented-at-both-ends-of-the-notification-channel-gg"></a>
+
 
 
 The following figure shows the COM interfaces that are used in spooler asynchronous notification.

@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Passing IRPs down the Driver Stack
 
 
-## <a href="" id="ddk-passing-irps-down-the-driver-stack-kg"></a>
+
 
 
 When a driver's dispatch routine receives an IRP, it must call [**IoGetCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff549174) so that it can check its own I/O stack location and determine that any parameters are valid. If the driver cannot satisfy and complete the request itself, it can do one of the following:

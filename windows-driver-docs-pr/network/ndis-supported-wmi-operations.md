@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS-Supported WMI Operations
 
 
-## <a href="" id="ddk-ndis-supported-wmi-operations-ng"></a>
+
 
 
 NDIS supports the following WMI operations:

@@ -9,12 +9,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Special USB Identifiers
 
 
-## <a href="" id="ddk-special-usb-identifiers-dg"></a>
+
 
 
 In addition to the standard USB identifiers, the operating system generates a second set of identifiers for USB printers and USB mass storage devices. These identifiers are discussed in the following two sections.

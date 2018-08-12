@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Bluetooth Registry Entries
@@ -26,7 +27,7 @@ The registry path to the **COD Major** and **COD Type** values is:
 
 HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\BTHPORT\\Parameters
 
-Note that setting these values changes the Bluetooth Class of Device for the system, regardless of which Bluetooth radio may be attached. You can set the **COD Major** and **COD Type** to `DWORD` values as defined for the Class of Device field values in the [Bluetooth SIG Assigned Numbers](https://www.bluetooth.org/specification/assigned-numbers/baseband).
+Note that setting these values changes the Bluetooth Class of Device for the system, regardless of which Bluetooth radio may be attached. You can set the **COD Major** and **COD Type** to `DWORD` values as defined for the Class of Device field values in the [Bluetooth SIG Assigned Numbers](https://www.bluetooth.com/specifications/assigned-numbers/baseband).
 
 The Bluetooth profile driver, BthPort.sys, reads the **COD Major** and **COD Type** values to determine how it should respond to a device inquiry. These values affect only the `COD_MAJOR_XXX` and `COD_XXX_MINOR_XXX` bits of the Class of Device. The `COD_SERVICE_XXX` bits are not affected by this registry entry.
 

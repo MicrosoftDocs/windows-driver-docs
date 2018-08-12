@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EMF Data Type
 
 
-## <a href="" id="ddk-emf-data-type-gg"></a>
+
 
 
 Enhanced Metafile (EMF) data consists of instructions to call GDI functions. The print processor must call the GDI functions to render printable images. The GDI functions make calls to the printer driver's [printer graphics DLL](printer-graphics-dll.md), which renders the image and sends it to the spooler as RAW data (by calling [**EngWritePrinter**](https://msdn.microsoft.com/library/windows/hardware/ff565467)).

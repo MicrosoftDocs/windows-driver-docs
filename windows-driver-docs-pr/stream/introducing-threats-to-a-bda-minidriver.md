@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introducing Threats to a BDA Minidriver
 
 
-## <a href="" id="ddk-introducing-threats-to-a-bda-minidriver-ksg"></a>
+
 
 
 The following paths can possibly introduce BDA minidriver threats:

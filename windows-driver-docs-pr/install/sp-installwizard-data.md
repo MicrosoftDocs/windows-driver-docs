@@ -9,6 +9,7 @@ api_name:
 - SP_INSTALLWIZARD_DATA
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # SP_INSTALLWIZARD_DATA

@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Broadcast Driver Architecture Minidrivers
 
 
-## <a href="" id="ddk-broadcast-driver-architecture-minidrivers-ksg"></a>
+
 
 
 Broadcast Driver Architecture (BDA) minidrivers control hardware that performs the following operations:

@@ -4,17 +4,14 @@ author: windows-driver-content
 description: INF Files for Still Image Devices
 ms.assetid: f68ba904-9049-4f7e-9903-fdf6f413a1a5
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF Files for Still Image Devices
-
-
-## <a href="" id="ddk-inf-files-for-still-image-devices-si"></a>
-
 
 The default class installer for still image devices, *sti\_ci.dll*, recognizes a special set of INF file entries. Within an INF file, these entries must be placed within a device's [**INF DDInstall Section**](https://msdn.microsoft.com/library/windows/hardware/ff547344). The entries are described in the following table.
 
@@ -158,7 +155,7 @@ The default INF file for still image devices, *sti.inf*, defines two installatio
 
 If you are also [creating device-specific components for image acquisition APIs](creating-device-specific-components-for-image-acquisition-apis.md), you will typically include the file names for these components in the INF file.
 
-For additional guidance in creating INF files for still image devices, you can look at any INF file provided with Windows 2000 or later that contains the entry "Subclass=StillImage".
+For additional guidance in creating INF files for still image devices, you can look at any INF file provided with Windows that contains the entry "Subclass=StillImage".
 
 **Remarks**
 

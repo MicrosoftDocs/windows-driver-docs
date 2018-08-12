@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # HP-GL/2 Supported Fonts
 
 
-## <a href="" id="ddk-hp-gl-2-supported-fonts-gg"></a>
+
 
 
 HP-GL/2 supports the same font resources as those defined for raster mode. Device fonts that can be used by both vector and raster modes are added to the GPD and resource files.

@@ -14,6 +14,7 @@ api_name:
 - PAGE_FAULT_IN_FREED_SPECIAL_POOL
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xCC: PAGE\_FAULT\_IN\_FREED\_SPECIAL\_POOL

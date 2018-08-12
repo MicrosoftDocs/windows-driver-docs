@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to Windows Drivers
 
 
-## <a href="" id="ddk-introduction-to-windows-drivers-kg"></a>
+
 
 
 This section introduces design concepts for Microsoft Windows drivers. It contains the following topics:

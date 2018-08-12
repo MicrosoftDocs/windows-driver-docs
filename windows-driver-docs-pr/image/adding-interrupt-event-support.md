@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Adding Interrupt Event Support
 
 
-## <a href="" id="ddk-adding-interrupt-event-support-si"></a>
+
 
 
 To properly set up your WIA driver to report interrupt events, do the following:

@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Which Type of DPC Should You Use?
 
 
-## <a href="" id="ddk-which-type-of-dpc-should-you-use-kg"></a>
+
 
 
 Depending on a driver's design, it can have any of the following:

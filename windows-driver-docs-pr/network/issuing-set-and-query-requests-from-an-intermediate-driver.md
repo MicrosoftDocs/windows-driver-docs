@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Issuing Set and Query Requests from an Intermediate Driver
 
 
-## <a href="" id="ddk-issuing-set-and-query-requests-from-an-intermediate-driver-ng"></a>
+
 
 
 The protocol edge of an intermediate driver can issue set and query information requests to the underlying miniport driver. The virtual miniport edge of an intermediate driver can use the information obtained from the underlying driver to determine how to respond to set and query requests.

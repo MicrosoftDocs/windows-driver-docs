@@ -9,12 +9,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Network Driver Programming Considerations
 
 
-## <a href="" id="ddk-network-driver-programming-considerations-ng"></a>
+
 
 
 Microsoft Windows network drivers share similar design goals. Network drivers should be written to be portable and scalable, to provide simple configuration of hardware and software, to use object-based interfaces, and to support asynchronous I/O. This section describes how to apply these general design goals to the network drivers that you write for Microsoft Windows Vista and later operating systems.

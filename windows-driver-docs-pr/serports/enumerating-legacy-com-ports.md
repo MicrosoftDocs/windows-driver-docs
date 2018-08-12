@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Enumerating Legacy COM Ports
 
 
-## <a href="" id="ddk-enumerating-legacy-com-ports-kg"></a>
+
 
 
 The Serial function driver currently enumerates legacy [COM ports](configuration-of-com-ports.md) that are specified in the registry. Most COM ports that Serial enumerates are legacy devices on multiport boards that do not have a microcontroller. Note that this enumeration function will be removed from Serial and included as part of Setup in a future release.

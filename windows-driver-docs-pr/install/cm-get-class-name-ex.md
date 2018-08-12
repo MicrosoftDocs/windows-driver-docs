@@ -10,6 +10,7 @@ api_name:
 - CM_Get_Class_Name_ExW
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Get_Class_Name_Ex
@@ -17,7 +18,7 @@ api_type:
 This function is reserved for system use.
 
 
-## <a href="" id="ddk-cm-get-class-name-ex-dr"></a>
+
 
 
  

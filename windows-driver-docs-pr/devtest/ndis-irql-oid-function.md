@@ -2,6 +2,11 @@
 title: Irql\_OID\_Function rule (ndis)
 description: The Irql\_OID\_Function rule specifies that the NDIS OID request DDIs must be called at correct IRQL levels.
 ms.assetid: 450afd4e-ba01-45e8-a866-6cd9b3190bb7
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["Irql_OID_Function rule (ndis)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - Irql_OID_Function
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Irql\_OID\_Function rule (ndis)

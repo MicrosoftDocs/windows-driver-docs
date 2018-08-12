@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Internet Printing
 
 
-## <a href="" id="ddk-internet-printing-gg"></a>
+
 
 
 This section provides the following topics:

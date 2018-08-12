@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Choosing User Mode or Kernel Mode
 
 
-## <a href="" id="ddk-choosing-user-mode-or-kernel-mode-gg"></a>
+
 
 
 User-mode execution of printer graphics DLLs provides the following advantages over kernel-mode execution:

@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Still Image SCSI I/O Control Codes
 
 
-## <a href="" id="ddk-still-image-scsi-i-o-control-codes-si"></a>
+
 
 
 The following table lists and describes all of the I/O Control Codes recognized by the kernel-mode still image driver for SCSI buses.

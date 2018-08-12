@@ -3,12 +3,13 @@ title: Design Guidelines for Starting Devices
 author: windows-driver-content
 description: Design Guidelines for Starting Devices
 ms.assetid: fbdde107-f3a5-4713-a4ac-1c9bafa3c634
+ms.localizationpriority: medium
 ---
 
 # Design Guidelines for Starting Devices
 
 
-## <a href="" id="ddk-design-guidelines-for-starting-devices-kr"></a>
+
 
 
 -   The PnP manager fails create requests for the device until the [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) IRP completes, indicating that all the drivers for the device have performed their start operations.

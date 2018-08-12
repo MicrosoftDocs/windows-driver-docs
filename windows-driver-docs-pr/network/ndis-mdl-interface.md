@@ -8,12 +8,13 @@ ms.date: 07/18/2017
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 
+ms.localizationpriority: medium
 ---
 
 # NDIS MDL Interface
 
 
-## <a href="" id="ddk-ndis-mdl-interface-nr"></a>
+
 
 
 This section includes:

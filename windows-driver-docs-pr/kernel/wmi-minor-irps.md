@@ -8,12 +8,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.assetid: 5788294f-2145-4381-9b06-3b138b2d26df
+ms.localizationpriority: medium
 ---
 
 # WMI Minor IRPs
 
 
-## <a href="" id="ddk-wmi-minor-irps-kr"></a>
+
 
 
 This section describes the [Windows Management Instrumentation](https://msdn.microsoft.com/library/windows/hardware/ff547139) IRPs that are part of the WMI extensions to WDM. All WMI IRPs use the major code [**IRP\_MJ\_SYSTEM\_CONTROL**](irp-mj-system-control.md) and a minor code that indicates the specific WMI request. The WMI kernel-mode component can send WMI IRPs any time following a driver's successful registration as a supplier of WMI data. WMI IRPs typically get sent when a user-mode data consumer has requested WMI data.

@@ -3,12 +3,13 @@ title: Synchronizing Cancellation in Driver Routines that Process IRPs
 author: windows-driver-content
 description: Synchronizing Cancellation in Driver Routines that Process IRPs
 ms.assetid: 0b252ebd-b9d5-4747-9a27-c1ecffdbae18
+ms.localizationpriority: medium
 ---
 
 # Synchronizing Cancellation in Driver Routines that Process IRPs
 
 
-## <a href="" id="ddk-synchronizing-cancellation-in-driver-routines-that-process-irps-kg"></a>
+
 
 
 Any driver routine that dequeues or is called with an IRP that is held in a cancelable state, including a driver's [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) routine, must do the following:

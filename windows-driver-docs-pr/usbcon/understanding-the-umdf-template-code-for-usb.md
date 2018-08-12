@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Understanding the USB client driver code structure (UMDF)
@@ -105,7 +106,7 @@ While the driver is loading and initializing, several events occur and the frame
 3.  Provides a callback class that implements **IPnpCallbackXxx** interfaces.
 4.  Gets a reference to the device object and configures it according to the client driver's requirements.
 
-## <a href="" id="driver"></a>Driver callback source code
+## Driver callback source code
 
 
 The framework creates the *driver object*, which represents the instance of the client driver loaded by Windows. The client driver provides at least one driver callback that registers the driver with the framework.
@@ -293,7 +294,7 @@ public:
 };
 ```
 
-## <a href="" id="device"></a>Device callback source code
+## Device callback source code
 
 
 The *framework device object* is an instance of the framework class that represents the device object that is loaded in the device stack of the client driver. For information about the functionality of a device object, see [Device Nodes and Device Stacks](https://msdn.microsoft.com/library/windows/hardware/hh406296).
@@ -561,7 +562,7 @@ CMyDevice::OnReleaseHardware(
 }
 ```
 
-## <a href="" id="queue"></a>Queue source code
+## Queue source code
 
 
 The *framework queue object* represents the I/O queue for a specific framework device object. The complete source code for the queue object is in IoQueue.h and IoQueue.c.
@@ -836,7 +837,7 @@ Let's see how the queue mechanism works. To communicate with the USB device, an 
 
 When the framework invokes the client driver's event callback, it passes a handle to the framework request object that holds the request (and its input and output buffers) sent by the application. In addition, it sends a handle to the framework queue object that contains that request. In the event callback, the client driver processes the request as needed. The template code simply completes the request. The client driver can perform more involved tasks. For instance, if an application requests certain device information, in the event callback, the client driver can create a USB control request and send it to the USB driver stack to retrieve the requested device information. USB control requests are discussed in [USB Control Transfer](usb-control-transfer.md).
 
-## <a href="" id="driver-entry"></a>Driver Entry source code
+## Driver Entry source code
 
 
 In the template code, driver entry is implemented in the Dllsup.cpp.

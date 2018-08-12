@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing DPC Routines
 
 
-## <a href="" id="ddk-writing-dpc-routines-kg"></a>
+
 
 
 The primary responsibilities of [*DpcForIsr*](https://msdn.microsoft.com/library/windows/hardware/ff544079) and [*CustomDpc*](https://msdn.microsoft.com/library/windows/hardware/ff542972) routines are ensuring that the next device I/O operation is started promptly and completing the current IRP.

@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Mutexes in AVStream
 
 
-## <a href="" id="ddk-mutexes-in-avstream-ksg"></a>
+
 
 
 AVStream minidrivers synchronize access to objects by using mutexes and process control gates. For more information about process control gates, see [Flow Control Gates in AVStream](flow-control-gates-in-avstream.md).

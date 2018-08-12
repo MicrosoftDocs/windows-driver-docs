@@ -14,6 +14,7 @@ api_name:
 - ad (Delete Alias)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ad (Delete Alias)

@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Synchronizing Cancel and Completion Code
 
 
-## <a href="" id="ddk-synchronizing-cancel-and-completion-code-df"></a>
+
 
 
 If your driver calls [**WdfRequestMarkCancelable**](https://msdn.microsoft.com/library/windows/hardware/ff549983) or [**WdfRequestMarkCancelableEx**](https://msdn.microsoft.com/library/windows/hardware/ff549984) to make an I/O request cancelable, there is potential for a synchronization problem. For example, your driver and device might perform device I/O operations asynchronously by means of [*EvtInterruptIsr*](https://msdn.microsoft.com/library/windows/hardware/ff541735) and [*EvtInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/ff541721) callback functions, and both the *EvtInterruptDpc* and [*EvtRequestCancel*](https://msdn.microsoft.com/library/windows/hardware/ff541817) callback functions might contain calls to [**WdfRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff549945).

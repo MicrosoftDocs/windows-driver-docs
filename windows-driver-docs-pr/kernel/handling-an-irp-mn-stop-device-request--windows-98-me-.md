@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling an IRP\_MN\_STOP\_DEVICE Request (Windows 98/Me)
 
 
-## <a href="" id="ddk-handling-an-irp-mn-stop-device-request-windows-98-me-kg"></a>
+
 
 
 On Windows 98/Me, the PnP manager usually sends an [**IRP\_MN\_STOP\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551755) request after a successful query-stop. However, if the device stack previously failed an [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) request, the PnP manager sends an **IRP\_MN\_STOP\_DEVICE** request without a preceding query.

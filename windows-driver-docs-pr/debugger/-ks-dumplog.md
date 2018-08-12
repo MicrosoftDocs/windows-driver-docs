@@ -14,6 +14,7 @@ api_name:
 - ks.dumplog
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ks.dumplog

@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Unidrv Components
 
 
-## <a href="" id="ddk-unidrv-components-gg"></a>
+
 
 
 Unidrv components consist of DLLs, plus text and binary data files, as illustrated in the following diagram:

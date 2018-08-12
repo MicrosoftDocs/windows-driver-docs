@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # CPSUI-Supplied Functions
 
 
-## <a href="" id="ddk-cpsui-supplied-functions-gg"></a>
+
 
 
 CPSUI provides the following two important functions for applications:

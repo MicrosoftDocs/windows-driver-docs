@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # GPD File Entries
 
 
-## <a href="" id="ddk-gpd-file-entries-gg"></a>
+
 
 
 GPD files are made up of entries, using the GPD language, that describe device-specific characteristics of each raster printer. This section includes the following topics, which describe GPD file entries:

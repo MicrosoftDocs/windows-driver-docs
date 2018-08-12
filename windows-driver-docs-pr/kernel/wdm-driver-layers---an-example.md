@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WDM Driver Layers: An Example
 
 
-## <a href="" id="ddk-wdm-driver-layers-an-example-kg"></a>
+
 
 
 This section describes a possible set of WDM drivers for USB hardware to illustrate WDM driver layers.

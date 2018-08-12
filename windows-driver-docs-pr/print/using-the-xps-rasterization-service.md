@@ -8,20 +8,15 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using the XPS Rasterization Service
 
 
-In Windows 7, the XPS rasterization service implements XPS rasterizer objects that convert fixed pages in XPS documents to bitmaps. This service simplifies the design of an XPSDrv filter that renders an XPS document as a series of bitmap images. The filter can tell an XPS rasterizer object to create a bitmap image of an axis-aligned, rectangular region in a fixed page.
+The XPS rasterization service implements XPS rasterizer objects that convert fixed pages in XPS documents to bitmaps. This service simplifies the design of an XPSDrv filter that renders an XPS document as a series of bitmap images. The filter can tell an XPS rasterizer object to create a bitmap image of an axis-aligned, rectangular region in a fixed page.
 
 For example, an XPSDrv filter for a printer might require a fixed page to be sent to the printer as a series of horizontal or vertical bands. In this case, the filter tells the XPS rasterizer object to rasterize each band as a separate bitmap. Alternatively, if the printer has sufficient memory, the filter might tell the rasterizer to create a bitmap image of the entire page.
-
-The XPS rasterization service is not available in versions of Windows before Windows 7.
-
-**Note**   An XPS document viewer comes with Windows Vista and is also available for Windows XP and Windows Server 2003. This viewer does not use the XPS rasterization service, which is available only in Windows 7. Instead, the viewer is based on a raster image processor (RIP) that is available from a third party. For information about obtaining this RIP, see the [WHDC](http://go.microsoft.com/fwlink/p/?linkid=69253) Web site.
-
- 
 
 The XPS rasterization service is implemented in the system file Xpsrasterservice.dll. However, XPSDrv filters do not directly access the entry points in this DLL. Instead, a filter accesses the interfaces of the XPS rasterization service through the [**print pipeline property bag**](https://msdn.microsoft.com/library/windows/hardware/ff561066) that the filter receives from the print filter pipeline manager.
 
@@ -143,9 +138,9 @@ If you have a computer that is running Windows 8 with a WDDM 1.2 display driver
 -   Use anti-aliasing only when it is absolutely required. Aliased text and vectors look the same as their anti-aliased counterparts, when the DPI value provided to the [**IXpsRasterizationFactory::CreateRasterizer**](https://msdn.microsoft.com/library/windows/hardware/ff556350) method is considerably high. For example, a DPI value greater than 200DPI is considered to be high. Testing should be done to ensure that output quality on a given device is sufficient when using aliased text and vectors along with a high DPI.
 -   If a document can be manipulated prior to rasterizing the IXpsOMPage, then subsetting fonts and using resource dictionaries for elements repeated on several pages will improve XPSRas performance.
 
- 
 
- 
+
+
 
 
 

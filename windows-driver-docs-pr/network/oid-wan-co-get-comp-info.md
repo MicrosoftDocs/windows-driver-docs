@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_WAN_CO_GET_COMP_INFO Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_WAN\_CO\_GET\_COMP\_INFO
@@ -27,7 +28,7 @@ Compression information is returned in an NDIS\_WAN\_CO\_GET\_COMP\_INFO structu
   
 ```
 
-## <a href="" id="ddk-oid-wan-co-get-comp-info-nr"></a>
+
 
 
 The members of this structure contain the following information:

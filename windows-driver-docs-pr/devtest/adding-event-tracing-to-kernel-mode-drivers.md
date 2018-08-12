@@ -7,10 +7,11 @@ keywords:
 - ETW WDK , kernel-mode
 - kernel-mode ETW WDK software tracing
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Adding Event Tracing to Kernel-Mode Drivers
@@ -18,7 +19,8 @@ ms.technology: windows-devices
 
 This section describes how to use the Event Tracing for Windows (ETW) kernel-mode API to add event tracing to kernel-mode drivers. The ETW kernel-mode API was introduced with Windows Vista and is not supported in earlier operating systems. Use [WPP Software Tracing](wpp-software-tracing.md) or [WMI Event Tracing](https://msdn.microsoft.com/library/windows/hardware/ff566350) if your driver needs to support trace capability in Windows 2000 and later.
 
-**Tip**  To view sample code that shows how to implement ETW using the Windows Driver Kit (WDK) 8.1 and Visual Studio, see the [Eventdrv sample](http://go.microsoft.com/fwlink/p/?linkid=256109).
+> [!TIP]
+> To view sample code that shows how to implement ETW using the Windows Driver Kit (WDK) 8.1 and Visual Studio, see the [Eventdrv sample](http://go.microsoft.com/fwlink/p/?linkid=256109).
 
  
 
@@ -47,9 +49,10 @@ During development, you are most likely interested in tracing events that help y
 
 The instrumentation manifest is an XML file that provides a formal description of the events a provider will raise. The instrumentation manifest identifies the event provider, specifies the channel or channels (up to eight), and describes the events, and templates the events use. Additionally, the instrumentation manifest allows for string localization, so you can localize the trace messages. The event system and event consumers can make use of the structured XML data provided in the manifest to perform queries and analysis.
 
-For information about the instrumentation manifest, see [Writing an Instrumentation Manifest (Windows)](https://msdn.microsoft.com/library/windows/desktop/dd996930) and [Using Windows Event Log (Windows)](https://msdn.microsoft.com/library/windows/desktop/aa385772).
+For information about the instrumentation manifest, see [Writing an Instrumentation Manifest (Windows)](https://docs.microsoft.com/windows/desktop/WES/writing-an-instrumentation-manifest) and [Using Windows Event Log (Windows)](https://docs.microsoft.com/windows/desktop/WES/using-windows-event-log).
 
-**Note**  Although you can author an instrumentation manifest manually, you should consider using the ECManGen.exe tool that is included in the %WindowsSdkDir%\\bin\\x64%WindowsSdkDir%\\bin\\x86\\ folder when you install the WDK and Visual Studio. The %WindowsSdkDir% represents the path to the Windows kits directory where this version of the WDK is installed, for example, C:\\Program Files (x86)\\Windows Kits\\8.1. The ECManGen.exe is an application that guides you through creating a manifest from scratch without ever having to use XML tags. Having knowledge of the information in the [Writing an Instrumentation Manifest (Windows)](https://msdn.microsoft.com/library/windows/desktop/dd996930) section and in the [EventManifest Schema (Windows)](https://msdn.microsoft.com/library/windows/desktop/aa384043) section will help when using the tool.
+> [!NOTE]
+> Although you can author an instrumentation manifest manually, you should consider using the ECManGen.exe tool that is included in the %WindowsSdkDir%\\bin\\x64%WindowsSdkDir%\\bin\\x86\\ folder when you install the WDK and Visual Studio. The %WindowsSdkDir% represents the path to the Windows kits directory where this version of the WDK is installed, for example, C:\\Program Files (x86)\\Windows Kits\\8.1. The ECManGen.exe is an application that guides you through creating a manifest from scratch without ever having to use XML tags. Having knowledge of the information in the [Writing an Instrumentation Manifest (Windows)](https://docs.microsoft.com/windows/desktop/WES/writing-an-instrumentation-manifest) section and in the [EventManifest Schema (Windows)](https://docs.microsoft.com/windows/desktop/WES/eventmanifestschema-schema) section will help when using the tool.
 
  
 
@@ -59,7 +62,7 @@ The example uses the named channel **System**, a channel for events of type **Ad
 
 In addition to channels, you can associate events with levels and keywords. Keywords and levels provide a way to enable events and provide a mechanism for filtering events when they are published. Keywords can be used to group logically related events together. A level can be used to indicate the severity or verbosity of an event, for example, critical, error, warning, or informational. The Winmeta.xml file contains predefined values for event attributes.
 
-When you create a template for the event payload (event message, and data), you must specify the input and output types. The supported types are described in the Remarks section of [**InputType Complex Type (Windows)**](https://msdn.microsoft.com/library/windows/desktop/aa382774).
+When you create a template for the event payload (event message, and data), you must specify the input and output types. The supported types are described in the Remarks section of [**InputType Complex Type (Windows)**](https://docs.microsoft.com/windows/desktop/WES/eventmanifestschema-inputtype-complextype).
 
 ```XML
 <?xml version=&#39;1.0&#39; encoding=&#39;utf-8&#39; standalone=&#39;yes&#39;?>
@@ -165,7 +168,7 @@ When you create a template for the event payload (event message, and data), you 
 
 ## 3. Compile the instrumentation manifest by using the message compiler (Mc.exe)
 
-The [message compiler (Mc.exe)](http://go.microsoft.com/fwlink/p/?linkid=62589) must be run before you compile your source code. The message compiler is included in the Windows Driver Kit (WDK). The message compiler creates a header file that contains definitions for the event provider, event attributes, channels, and events. You must include this header file in your source code. The message compiler also places the generated resource compiler script (\*.rc) and the generated .bin files (binary resources) that the resource compiler script includes.
+The [message compiler (Mc.exe)](https://docs.microsoft.com/windows/desktop/WES/message-compiler--mc-exe-) must be run before you compile your source code. The message compiler is included in the Windows Driver Kit (WDK). The message compiler creates a header file that contains definitions for the event provider, event attributes, channels, and events. You must include this header file in your source code. The message compiler also places the generated resource compiler script (\*.rc) and the generated .bin files (binary resources) that the resource compiler script includes.
 
 You can include this step as part of your build process in a couple of ways:
 
@@ -220,7 +223,8 @@ When you build the Eventdrv.sys sample, Visual Studio creates the necessary file
 
 By default, the message compiler uses the base name of the input file as the base name of the files that it generates. To specify a base name, set the **Generated Files Base Name** (-z) field. In the Eventdr.sys sample, the base name is set to *evntdrvEvents* so that it matches the name of the header file evntdrvEvents.h, which is included in evntdrv.c.
 
-[!NOTE] If you do not include the generated .rc file in your Visual Studio project, you may get error messages about resources not found when you install the manifest file.
+> [!NOTE] 
+> If you do not include the generated .rc file in your Visual Studio project, you may get error messages about resources not found when you install the manifest file.
 
 ## 4. Add the generated code to raise (publish) the events (register, unregister, and write events)
 
@@ -451,7 +455,7 @@ In the instrumentation manifest, you defined the names of the event provider and
 If you have added the instrument manifest to the project and have configured the message compiler (MC.exe) properties, you can build the driver project or solution using Visual Studio and MSBuild.
 
 1.  Open the driver solution in Visual Studio.
-2.  Build the sample from the Build menu by selecting **Build Solution**. For more information about building solutions, see [Building a Driver](https://msdn.microsoft.com/windows-drivers/develop/building_a_driver).
+2.  Build the sample from the Build menu by selecting **Build Solution**. For more information about building solutions, see [Building a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver).
 
 ## 6. Install the manifest
 
@@ -477,7 +481,7 @@ Wevtutil.exe um evntdrv.xml
 
 ## 7. Test the driver to verify ETW support
 
-Install the driver. Exercise the driver to generate trace activity. View the results in the Event Viewer. You can also run [Tracelog](tracelog.md), and then run [Tracerpt](http://go.microsoft.com/fwlink/p/?linkid=103397), a tool for processing event trace logs, to control, collect, and view the event trace logs. 
+Install the driver. Exercise the driver to generate trace activity. View the results in the Event Viewer. You can also run [Tracelog](tracelog.md), and then run [Tracerpt](https://docs.microsoft.com/windows-server/administration/windows-commands/tracerpt_1), a tool for processing event trace logs, to control, collect, and view the event trace logs. 
 
 
 

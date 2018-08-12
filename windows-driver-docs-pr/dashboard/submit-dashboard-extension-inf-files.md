@@ -5,6 +5,7 @@ ms.assetid:
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Working with Extension INFs in the Windows Hardware Dev Center Dashboard
@@ -12,12 +13,11 @@ ms.technology: windows-devices
 You can create shipping labels for your Extension INF files on the Windows Hardware Dev Center, enabling you to share and publish them like other submissions. This topic describes the process for packaging, submitting, and publishing these packages. For more information on how Extension INFs are created and installed, see [Using an Extension INF file](https://docs.microsoft.com/windows-hardware/drivers/install/using-an-extension-inf-file).
 
 ## Requirements for publishing Extension INFs to Windows Update 
-Publishing Extension INFs to Windows update requires you to select automatic driver promotion checkboxes on your shipping label. To see these checkboxes, you must first sign up for [driver flighting](https://docs.microsoft.com/windows-hardware/drivers/dashboard/driver-flighting). 
+Publishing Extension INFs to Windows update requires you to select automatic driver promotion checkboxes on your shipping label. The reason Extension INFs cannot be published as optional is because they are not listed in Device Manager for an end user to initiate an “Update Driver” action.   To see these checkboxes, you must first sign up for [driver flighting](https://docs.microsoft.com/windows-hardware/drivers/dashboard/driver-flighting). 
 
 > [!NOTE]
 > Note the following when publishing Extension INF files:
 > * For Windows Update to offer Extension INFs, all systems must be running at least the RS3 [January 2018 Update](https://support.microsoft.com/help/4056892/windows-10-update-kb4056892) (10.0.16299.192).
-> * Extension INFs cannot be acquired via Device Manager. They can only be manually acquired through the Windows Update settings page. 
 
 ## Submitting and publishing Extension INFs
 

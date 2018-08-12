@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA Image Processing Filter
 
 
-## <a href="" id="ddk-wia-image-processing-filter-si"></a>
+
 
 
 This section provides information about Windows Image Acquisition (WIA) image processing filter. It provides guidelines on how to implement an image processing filter as well as how applications can use the WIA Preview component (described in the Microsoft Windows SDK documentation). The information in this section applies to Windows Vista and later. This section includes:

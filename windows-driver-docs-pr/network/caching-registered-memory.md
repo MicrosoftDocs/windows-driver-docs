@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Caching Registered Memory
 
 
-## <a href="" id="ddk-caching-registered-memory-ng"></a>
+
 
 
 SAN service providers can cache RDMA buffers that are exposed for either local or remote access to improve performance.

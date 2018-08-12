@@ -9,12 +9,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to Network Drivers
 
 
-## <a href="" id="ddk-network-drivers-ng"></a>
+
 
 
 This section discusses introductory concepts for kernel-mode network drivers and includes the following topics:

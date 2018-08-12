@@ -1,19 +1,20 @@
 ---
-title: Windows 10 S Driver Requirements
+title: Windows 10 in S mode Driver Requirements
 ms.author: windowsdriverdev
 ms.date: 05/05/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
-# Windows 10 S Driver Requirements
+# Windows 10 in S mode Driver Requirements
 
 This section describes driver installation requirements and blocked components on Windows 10 S.  
 
 ## Driver Requirements
 
-To install on Windows 10 S, driver packages must meet the following requirements:
+To install on Windows 10 in S mode, driver packages must meet the following requirements:
 
 -   Driver packages must be digitally signed with a **Windows, WHQL, ELAM, or Store** certificate from the [Windows Hardware Developer Center Dashboard](https://aka.ms/DevCenterPortal).
 -   Companion software must be signed with a [Microsoft Store Certificate](https://docs.microsoft.com/windows/uwp/publish/the-app-certification-process).
@@ -64,4 +65,4 @@ The following components are blocked from executing on Windows 10 S:
 -   wsl.exe
 
 > [!NEXT]
-> To ensure your Windows app will operate correctly on devices that run Windows 10 S, please review the [test guidance](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-test-windows-s) for apps. 
+> To ensure your Windows app will operate correctly on devices that run Windows 10 in S mode, please review the [test guidance](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-test-windows-s) for apps. 

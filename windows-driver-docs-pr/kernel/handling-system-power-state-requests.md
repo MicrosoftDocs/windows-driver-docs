@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling System Power State Requests
 
 
-## <a href="" id="ddk-handling-system-power-state-requests-kg"></a>
+
 
 
 All drivers must be able to respond to system power state requests if the system is to sleep, hibernate, and wake successfully. A driver for a device changes the [device power state](device-power-states.md) for the device in response to system power state requests.

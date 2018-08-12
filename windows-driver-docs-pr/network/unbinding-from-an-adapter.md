@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Unbinding from an Adapter
 
 
-## <a href="" id="ddk-unbinding-from-an-adapter-ng"></a>
+
 
 
 NDIS calls a protocol driver's [*ProtocolUnbindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570278) function to request that the driver unbind from an underlying adapter. As the reciprocal of [*ProtocolBindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570220), NDIS calls *ProtocolUnbindAdapterEx* to close the binding to the adapter and to release the resources that the driver allocated for the binding.

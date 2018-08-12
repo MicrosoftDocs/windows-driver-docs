@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling OID Query and Set Requests in an NDIS Interface Provider
 
 
-## <a href="" id="ddk-handling-oid-query-and-set-requests-in-an-ndis-interface-provider-"></a>
+
 
 
 The NDISIF interface defines several interface parameters (including statistical counters) that can be queried or set which correspond to information in RFC 2863. NDIS accesses these interface parameters through entry points that the interface provider defines when it calls the [**NdisIfRegisterProvider**](https://msdn.microsoft.com/library/windows/hardware/ff562716) function. For more information about registering as an interface provider, see [Registering as an Interface Provider](registering-as-an-interface-provider.md).

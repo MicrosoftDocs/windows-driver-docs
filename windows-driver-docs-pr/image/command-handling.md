@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Command Handling
 
 
-## <a href="" id="ddk-command-handling-si"></a>
+
 
 
 The WIA architecture enables a WIA application to send a specific command to the WIA minidriver. This command can be sent only to the root item in the WIA item tree. (Note that the minidriver reports all of the commands it supports in its capabilities table.)

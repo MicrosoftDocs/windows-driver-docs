@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Image Processing
 
 
-## <a href="" id="ddk-image-processing-si"></a>
+
 
 
 Some minidrivers, in particular scanner minidrivers, require an image processing layer. This layer is mandatory only if the data acquired from the still image device requires some manipulation before being passed on to the application.

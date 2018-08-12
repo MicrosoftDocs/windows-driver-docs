@@ -1,5 +1,6 @@
 ---
 title: Required data field properties
+author: windows-driver-content
 description: This topic shows a list of the property keys for the data fields that are required by the various sensors.
 ms.assetid: DC8D04B0-0721-4429-BA52-573FC7738AE9
 ms.author: windowsdriverdev
@@ -7,6 +8,7 @@ ms.date: 01/04/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Required data field properties
@@ -44,7 +46,7 @@ See the [Data field properties](data-field-properties.md) topic for a list of th
 
 **Light sensor data fields**
 
--   PKEY\_SensorData\_Illuminance\_Lux
+-   PKEY\_SensorData\_LightLevel\_Lux
 
 **Device orientation data fields**
 
@@ -60,7 +62,7 @@ See the [Data field properties](data-field-properties.md) topic for a list of th
 
 -   PKEY\_SensorData\_CorrectedAngularVelocityZ\_DegreesPerSecond
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Data field properties](data-field-properties.md)

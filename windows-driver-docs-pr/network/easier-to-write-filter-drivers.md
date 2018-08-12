@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Easier-to-Write Filter Drivers
 
 
-## <a href="" id="ddk-easier-to-write-filter-drivers-ng"></a>
+
 
 
 NDIS 6.0 filter drivers are easier to write than the previous NDIS filter intermediate drivers.

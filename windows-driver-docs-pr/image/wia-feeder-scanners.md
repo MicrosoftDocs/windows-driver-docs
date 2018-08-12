@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA Feeder Scanners
 
 
-## <a href="" id="ddk-wia-feeder-scanners-si"></a>
+
 
 
 This section expands on the information that is presented in the [WIA Item Trees](wia-item-trees.md) section and explains details that are unique to scanner feeder item trees. The WIA Item Trees section explains the process for defining a WIA device by using the WIA item tree; you should read that section before reading this section.

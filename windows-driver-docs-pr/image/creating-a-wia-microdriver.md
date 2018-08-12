@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating a WIA Microdriver
 
 
-## <a href="" id="ddk-creating-a-wia-microdriver-si"></a>
+
 
 
 Many flatbed scanners are controlled in a similar manner. The common behavior between models has been abstracted into a Microsoft-provided common driver called the WIA Flatbed Driver. This driver calls a DLL, called a microdriver, provided by the scanner vendor, that implements any needed device-specific behavior. The WIA Flatbed Driver together with the microdriver can then be used as a WIA minidriver. The advantage of using a microdriver is that it is very easy to implement and debug. Not all scanners can be supported by a microdriver. It is most appropriate for simple devices (without a duplexer or other advanced features), or when a base-functionality driver is desired.

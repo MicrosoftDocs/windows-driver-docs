@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Collection Capability
 
 
-## <a href="" id="ddk-collection-capability-kg"></a>
+
 
 
 The capability of a collection is defined by its usage, reports, link collections, and controls. To obtain a summary of a collection's capability, a user-mode application or kernel-mode driver calls [**HidP\_GetCaps**](https://msdn.microsoft.com/library/windows/hardware/ff539715) to obtain a [**HIDP\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff539697) structure. This structure contains the following information about a collection's [link collections](link-collections.md), [button capability arrays](button-capability-arrays.md), and [value capability arrays](value-capability-arrays.md):

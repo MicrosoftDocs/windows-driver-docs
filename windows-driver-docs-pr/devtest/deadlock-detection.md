@@ -8,10 +8,11 @@ keywords:
 - locked resources WDK Driver Verifier
 - thread locks WDK Driver Verifier
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Deadlock Detection
@@ -25,6 +26,7 @@ Deadlock Detection monitors the driver's use of resources which need to be locke
 The Deadlock Detection option of Driver Verifier, along with the **!deadlock** kernel debugger extension, is an effective tool for making sure your code avoids poor use of these resources.
 
 Deadlock Detection is supported only in Windows XP and later versions of Windows.
+
 
 ### <span id="causes_of_deadlocks"></span><span id="CAUSES_OF_DEADLOCKS"></span>Causes of Deadlocks
 
@@ -105,7 +107,6 @@ When Deadlock Detection finds a violation, it will issue bug check 0xC4. The fir
 
 -   Starting in Windows 7, Driver Verifier can predict possible deadlocks. For example, trying to use the same KSPIN\_LOCK data structure both as a regular spin lock and as a stack queued spin lock.
 
--   
 
 See [**Bug Check 0xC4**](https://msdn.microsoft.com/library/windows/hardware/ff560187) (DRIVER\_VERIFIER\_DETECTED\_VIOLATION) for a list of the bug check parameters.
 

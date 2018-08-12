@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Driver Entry Points in Driver Objects
 
 
-## <a href="" id="ddk-driver-entry-points-in-driver-objects-kg"></a>
+
 
 
 A kernel-mode driver must specify the following entry points in its driver object:

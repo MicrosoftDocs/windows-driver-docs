@@ -14,6 +14,7 @@ api_name:
 - whattime
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !whattime

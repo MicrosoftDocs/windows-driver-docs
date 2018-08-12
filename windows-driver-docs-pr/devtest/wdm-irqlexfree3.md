@@ -2,6 +2,11 @@
 title: IrqlExFree3 rule (wdm)
 description: The IrqlExFree3 rule specifies that ExFreePool and ExFreePoolWithTag are called at proper IRQL.
 ms.assetid: D3916378-2032-4575-941F-F1EA9A3678F8
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["IrqlExFree3 rule (wdm)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - IrqlExFree3
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IrqlExFree3 rule (wdm)

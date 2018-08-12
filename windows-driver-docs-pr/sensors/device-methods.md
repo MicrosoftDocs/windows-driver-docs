@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device methods
@@ -20,7 +21,7 @@ The sensor firmware supports several helper methods that perform tasks like supp
 
 For intelligent sensors (like HID), the firmware includes support for methods that handle events and manage power. The pseudocode demonstrates these tasks using the **HIDSensorDeviceEvent** and **HIDDeviceManagePower** methods.
 
-```ManagedCPlusPlus
+```cpp
 HIDSensorDeviceEvent(sensorID) // Driver issues USB/HID “SEND_INPUT” command to the sensor
 {
     // an event has occurred on the sensor device
@@ -42,7 +43,7 @@ HIDSensorDeviceEvent(sensorID) // Driver issues USB/HID “SEND_INPUT” command
     {
         // if this event is not a data update event
         // then no matter what the reporting state and
-        // power state (as long as power is on) 
+        // power state (as long as power is on)
         // of the device then send the event
         // to the driver
         Set sensorState = current sensor state
@@ -52,7 +53,7 @@ HIDSensorDeviceEvent(sensorID) // Driver issues USB/HID “SEND_INPUT” command
 }
 ```
 
-```ManagedCPlusPlus
+```cpp
 HIDDeviceManagePower(powerState)
 {
     if (powerstate for all sensors is == powerStatePowerOff)
@@ -87,7 +88,7 @@ HIDDeviceManagePower(powerState)
 
 For simple sensors (like SPB), the firmware includes support for a method that handles events. The pseudocode demonstrates this task using the **SpbSensorDeviceEvent**.
 
-```ManagedCPlusPlus
+```cpp
 SpbSensorDeviceEvent(sensorID)
 {
     // an interrupt has occurred on the sensor device
@@ -101,7 +102,7 @@ SpbSensorDeviceEvent(sensorID)
 
             Set sensorState = sensorStateReady
             Set sensorEvent = eventTypeCS (or data update as appropriate)
-            
+
             Invoke DDIHandleAsyncDataEvent(sensorID)
         }
         else
@@ -113,11 +114,11 @@ SpbSensorDeviceEvent(sensorID)
     {
         // if this event is not a data update event
         // then no matter what the reporting state and
-        // power state (as long as power is on) 
+        // power state (as long as power is on)
         // of the device then send the event
         // to the driver. Note not all simple devices
-        // will support state change eventing. 
-        
+        // will support state change eventing.
+
         Acknowledge device interrupt
         Query state synchronously from the device via SPB
 

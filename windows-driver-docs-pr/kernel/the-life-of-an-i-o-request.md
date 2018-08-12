@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # The Life of an I/O Request
 
 
-## <a href="" id="ddk-the-life-of-an-i-o-request-kg"></a>
+
 
 
 This section describes the path taken by an IRP from creation by the operating system to its completion by the set of drivers responsible for controlling the target device. The section contains the following topics:

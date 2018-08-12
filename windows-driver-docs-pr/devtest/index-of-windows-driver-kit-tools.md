@@ -19,10 +19,11 @@ keywords:
 - GUID Generator WDK
 - GUIDGen.exe WDK
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Index of Windows Driver Kit Tools
@@ -77,8 +78,6 @@ The information in the following tables describes the tools that are useful for 
 <p><strong>WDK tool:</strong> No</p></td>
 <td align="left"><p>%Windir%\System32\Dccw.exe</p></td>
 <td align="left"><p>A calibration tool that lets users adjust their display color to be closer to the Windows and World Wide Web international standard red-green-blue (sRGB) color space.</p>
-<p>WHDC Documentation:</p>
-<p>[MCCS Use by Windows 7 Display Color Calibration Tool](http://go.microsoft.com/fwlink/p/?linkid=150003)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>GraphEdt (Graphedt.exe)</p>
@@ -607,7 +606,7 @@ The information in the following tables describes the tools that are useful for 
 <td align="left"><p>A command-line tool that is used to evaluate system energy efficiency.</p>
 <p>This tool is available in Windows 7 and later versions of Windows.</p>
 <p>Dev Center Documentation:</p>
-[Using PowerCfg to Evaluate System Energy Efficiency](http://go.microsoft.com/fwlink/p/?linkid=168800)
+[Using PowerCfg to Evaluate System Energy Efficiency](http://download.microsoft.com/download/7/E/7/7E7662CF-CBEA-470B-A97E-CE7CE0D98DC2/PowerCfg.docx)
 <p>For information about command options, type</p>
 <p></p>
 <p><strong>PowerCfg /?</strong></p></td>

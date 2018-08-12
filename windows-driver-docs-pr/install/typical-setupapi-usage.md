@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Typical SetupAPI Usage
 
 
-## <a href="" id="ddk-typical-setupapi-usage-dg"></a>
+
 
 
 This section includes the following topics:

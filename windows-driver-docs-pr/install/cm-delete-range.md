@@ -9,6 +9,7 @@ api_name:
 - CM_Delete_Range
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Delete_Range
@@ -16,7 +17,7 @@ api_type:
 This function is reserved for system use.
 
 
-## <a href="" id="ddk-cm-delete-range-dr"></a>
+
 
 
  

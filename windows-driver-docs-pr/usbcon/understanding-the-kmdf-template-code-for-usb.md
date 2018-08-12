@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Understanding the USB client driver code structure (KMDF)
@@ -23,7 +24,7 @@ These sections provide information about the template code.
 
 For instructions on generating the KMDF template code, see [How to write your first USB client driver (KMDF)](tutorial--write-your-first-usb-client-driver--kmdf-.md).
 
-## <a href="" id="driver"></a>Driver source code
+## Driver source code
 
 
 The *driver object* represents the instance of the client driver after Windows loads the driver in memory. The complete source code for the driver object is in Driver.h and Driver.c.
@@ -292,7 +293,7 @@ In the [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardwar
 -   Register a device interface GUID for the client driver by calling the [**WdfDeviceCreateDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff545935) method. Applications can communicate with the driver by using this GUID. The GUID constant is declared in the header, public.h.
 -   Set up queues for I/O transfers to the device. The template code defines MyUSBDriver\_QueueInitialize, a helper routine for setting up queues, which is discussed in the [Queue source code](#queue) section.
 
-## <a href="" id="device"></a>Device source code
+## Device source code
 
 
 The *device object* represents the instance of the device for which the client driver is loaded in memory. The complete source code for the device object is in Device.h and Device.c.
@@ -466,7 +467,7 @@ Here's a closer look at the client driver's tasks as implemented by the template
 
      
 
-## <a href="" id="queue"></a>Queue source code
+## Queue source code
 
 
 The *framework queue object* represents the I/O queue for a specific framework device object. The complete source code for the queue object is in Queue.h and Queue.c.

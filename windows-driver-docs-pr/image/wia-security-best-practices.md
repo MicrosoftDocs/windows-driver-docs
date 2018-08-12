@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA Security Best Practices
 
 
-## <a href="" id="ddk-wia-security-best-practices-si"></a>
+
 
 
 This section discusses WIA best security practices in the following areas:

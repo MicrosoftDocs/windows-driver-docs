@@ -7,12 +7,14 @@ ms.date: 06/01/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introductions to NDIS 6.0 and later
 
 This section introduces each version of NDIS 6.*X*, starting with NDIS 6.0.
 
+- [Introduction to NDIS 6.81](introduction-to-ndis-6-81.md)
 - [Introduction to NDIS 6.80](introduction-to-ndis-6-80.md)
 - [Introduction to NDIS 6.70](introduction-to-ndis-6-70.md)
 - [Introduction to NDIS 6.60](introduction-to-ndis-6-60.md)

@@ -14,6 +14,7 @@ api_name:
 - PFN_REFERENCE_COUNT
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1C: PFN\_REFERENCE\_COUNT

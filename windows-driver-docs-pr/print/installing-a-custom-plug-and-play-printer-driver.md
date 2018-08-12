@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing a Custom Plug and Play Printer Driver
 
 
-## <a href="" id="ddk-installing-a-custom-plug-and-play-printer-driver-gg"></a>
+
 
 
 On Windows XP, the Plug and Play manager loads drivers in this order (listed from highest to lowest preference):

@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # AV/C Client Drivers
 
 
-## <a href="" id="ddk-av-c-client-drivers-ksg"></a>
+
 
 
 Microsoft provides support for the IEEE Audio/Video Control (AV/C) protocol in Windows XP and later operating systems. The AV/C protocol defines methods for issuing commands to and sending responses from subunits on AV/C-compliant devices. You can control subunits on devices that conform to the AV/C protocol across the IEEE 1394 serial bus if you write a driver to support the subunit hardware. Note that you do not need to write a subunit driver to support tape subunits because Microsoft supplies two other drivers for this functionality, *Msdv.sys* and *Mstape.sys*.

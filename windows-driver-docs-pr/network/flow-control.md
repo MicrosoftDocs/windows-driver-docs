@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Flow Control
 
 
-## <a href="" id="ddk-flow-control-ng"></a>
+
 
 
 Flow control for a USB Remote NDIS device is defined by the USB Specification.

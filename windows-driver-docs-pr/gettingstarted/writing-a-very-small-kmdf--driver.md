@@ -5,10 +5,11 @@ ms.assetid: B4200732-67B5-4BD9-8852-81387912A9A4
 keywords:
 - KMDF Hello World
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 04/20/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Write a universal Hello World driver (KMDF)
@@ -94,16 +95,16 @@ Now that you've created your empty Hello World project and added the Driver.c so
         // Initialize the driver configuration object to register the
         // entry point for the EvtDeviceAdd callback, KmdfHelloWorldEvtDeviceAdd
         WDF_DRIVER_CONFIG_INIT(&config, 
-                            KmdfHelloWorldEvtDeviceAdd
-                            );
+                               KmdfHelloWorldEvtDeviceAdd
+                               );
 
         // Finally, create the driver object
         status = WdfDriverCreate(DriverObject, 
-                                RegistryPath, 
-                                WDF_NO_OBJECT_ATTRIBUTES, 
-                                &config, 
-                                WDF_NO_HANDLE
-                                );
+                                 RegistryPath, 
+                                 WDF_NO_OBJECT_ATTRIBUTES, 
+                                 &config, 
+                                 WDF_NO_HANDLE
+                                 );
         return status;
     }
     ```
@@ -138,9 +139,9 @@ Now that you've created your empty Hello World project and added the Driver.c so
         
         // Create the device object
         status = WdfDeviceCreate(&DeviceInit, 
-                                WDF_NO_OBJECT_ATTRIBUTES,
-                                &hDevice
-                                );
+                                 WDF_NO_OBJECT_ATTRIBUTES,
+                                 &hDevice
+                                 );
         return status;
     }
     ```
@@ -152,7 +153,7 @@ Now that you've created your empty Hello World project and added the Driver.c so
 
 5. Your complete Driver.c now looks like this:
 
-    ```
+    ```C++
     #include <ntddk.h>
     #include <wdf.h>
     DRIVER_INITIALIZE DriverEntry;
@@ -176,16 +177,16 @@ Now that you've created your empty Hello World project and added the Driver.c so
         // Initialize the driver configuration object to register the
         // entry point for the EvtDeviceAdd callback, KmdfHelloWorldEvtDeviceAdd
         WDF_DRIVER_CONFIG_INIT(&config, 
-                            KmdfHelloWorldEvtDeviceAdd
-                            );
+                               KmdfHelloWorldEvtDeviceAdd
+                               );
 
         // Finally, create the driver object
         status = WdfDriverCreate(DriverObject, 
-                                RegistryPath, 
-                                WDF_NO_OBJECT_ATTRIBUTES, 
-                                &config, 
-                                WDF_NO_HANDLE
-                                );
+                                 RegistryPath, 
+                                 WDF_NO_OBJECT_ATTRIBUTES, 
+                                 &config, 
+                                 WDF_NO_HANDLE
+                                 );
         return status;
     }
 
@@ -209,9 +210,9 @@ Now that you've created your empty Hello World project and added the Driver.c so
         
         // Create the device object
         status = WdfDeviceCreate(&DeviceInit, 
-                                WDF_NO_OBJECT_ATTRIBUTES,
-                                &hDevice
-                                );
+                                 WDF_NO_OBJECT_ATTRIBUTES,
+                                 &hDevice
+                                 );
         return status;
     }
     ```
@@ -234,56 +235,107 @@ Next, you'll build your driver.
     -   KmdfHelloWorld.inf -- an information file that Windows uses when you install the driver
     -   KmdfHelloWorld.cat -- a catalog file that the installer uses to verify the test signature for the driver package
 
-## <span id="Deploy_and_install_the_driver"></span><span id="deploy_and_install_the_driver"></span><span id="DEPLOY_AND_INSTALL_THE_DRIVER"></span>Deploy and install the driver
-
+## <span id="Deploy_the_driver"></span><span id="deploy_the_driver"></span><span id="DEPLOY_THE_DRIVER"></span>Deploy the driver
 
 Typically when you test and debug a driver, the debugger and the driver run on separate computers. The computer that runs the debugger is called the *host computer*, and the computer that runs the driver is called the *target computer*. The target computer is also called the *test computer*.
 
-So far you've used Visual Studio to build a driver on the host computer. Now you need to configure a target computer. Follow the instructions in [Provision a computer for driver deployment and testing (WDK 10)](provision-a-target-computer-wdk-8-1.md). Then you can deploy, install, load, and debug your driver:
+So far you've used Visual Studio to build a driver on the host computer. Now you need to configure a target computer. 
 
-1.  On the host computer, open your solution in Visual Studio. You can double-click the solution file, KmdfHelloWorld.sln, in your KmdfHelloWorld folder.
-2.  In the **Solution Explorer** window, right-click the **KmdfHelloWorld** project, and choose **Properties**.
-3.  In the **KmdfHelloWorld Property Pages** window, go to **Configuration Properties &gt; Driver Install &gt; Deployment**, as shown here.
-4.  Check **Remove previous driver versions before deployment**.
-5.  For **Target Device Name**, select the name of the computer that you configured for testing and debugging. In this exercise, we use a computer named MyTestComputer.
-6.  Select **Hardware ID Driver Update**, and enter the hardware ID for your driver. For this exercise, the hardware ID is Root\\KmdfHelloWorld. Click **OK**.
+1. Follow the instructions in [Provision a computer for driver deployment and testing (WDK 10)](provision-a-target-computer-wdk-8-1.md).
+
+    > [!TIP]
+    > When you follow the steps to provision the target computer automatically using a network cable, take note of the port and key. You'll use them later in the debugging step. In this example, we'll use **50000** as the port and **1.2.3.4** as the key.
+    >
+    > In real driver debugging scenarios, we recommend using a KDNET-generated key. For more information about how to use KDNET to generate a random key, see the [Debug Drivers - Step by Step Lab (Sysvad Kernel Mode)](../debugger/debug-universal-drivers--kernel-mode-.md) topic.
+
+2.  On the host computer, open your solution in Visual Studio. You can double-click the solution file, KmdfHelloWorld.sln, in your KmdfHelloWorld folder.
+3.  In the **Solution Explorer** window, right-click the **KmdfHelloWorld** project, and choose **Properties**.
+4.  In the **KmdfHelloWorld Property Pages** window, go to **Configuration Properties &gt; Driver Install &gt; Deployment**, as shown here.
+5.  Check **Remove previous driver versions before deployment**.
+6.  For **Target Device Name**, select the name of the computer that you configured for testing and debugging. In this exercise, we use a computer named MyTestComputer.
+7.  Select **Hardware ID Driver Update**, and enter the hardware ID for your driver. For this exercise, the hardware ID is Root\\KmdfHelloWorld. Click **OK**.
 
     ![screen shot showing the kmdfhelloworld package property pages window with the deployment driver install selected ](images/vs2015-kmdf-hello-world-property-pages.png)
 
-    **Note**  In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the [device tree](device-nodes-and-device-stacks.md) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**.
-    You'll see the hardware ID in your driver's information (INF) file. In the **Solution Explorer** window, go to **KmdfHelloWorld &gt; Driver Files**, and double-click KmdfHelloWorld.inf. The hardware ID is located under \[Standard.NT$ARCH$\].
+    >[!NOTE]
+    > In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the [device tree](device-nodes-and-device-stacks.md) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**. You'll see the hardware ID in your driver's information (INF) file. In the **Solution Explorer** window, go to **KmdfHelloWorld &gt; Driver Files**, and double-click KmdfHelloWorld.inf. The hardware ID is located under \[Standard.NT$ARCH$\].
 
-    ```ManagedCPlusPlus
+    ```C++
     [Standard.NT$ARCH$]
     %KmdfHelloWorld.DeviceDesc%=KmdfHelloWorld_Device, Root\KmdfHelloWorld
     ```
 
-     
+8. On the **Build** menu, choose **Deploy Solution**. Visual Studio automatically copies the files required to install and run the driver to the target computer. This may take a minute or two.
 
-7.  On the **Debug** menu, choose **Start Debugging**, or press **F5** on the keyboard.
-8.  Visual Studio first shows progress in the **Output** window. Then it opens the **Debugger Immediate** window and continues to show progress.
+    When you deploy a driver, the driver files are copied to the %Systemdrive%\drivertest\drivers folder on the test computer. If something goes wrong during deployment, you can check to see if the files are copied to the test computer. Verify that the .inf, .cat, test cert, and .sys files, and any other necessary files, are present in the %systemdrive%\drivertest\drivers folder.
 
-    Wait until your driver has been deployed, installed, and loaded on the target computer. This might take a minute or two.
+    For more information about deploying drivers, see [Deploying a Driver to a Test Computer](../develop/deploying-a-driver-to-a-test-computer.md).
 
-9.  On the **Debug** menu, choose **Break All**. The debugger on the host computer will break into the target computer. In the **Debugger Immediate** window, you can see the kernel debugging command prompt: **kd&gt;**.
+## Install the driver
 
-    ![screen shot of the command prompt in the debugger immediate window](images/firstdriverkmdfsmall09.png)
+With your Hello World driver deployed to the target computer, now you'll install the driver. When you previously provisioned the target computer with Visual Studio using the *automatic* option, Visual Studio set up the target computer to run test signed drivers as part of the provisioning process. Now you just need to install the driver using the DevCon tool.
 
-10. At this point, you can experiment with the debugger by entering commands at the **kd&gt;** prompt. For example, you could try these commands:
+1. On the host computer, navigate to the Tools folder in your WDK installation and locate the DevCon tool. For example, look in the following folder:
+
+    *C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\x64\\devcon.exe*
+
+    Copy the DevCon tool to your remote computer.
+
+2. On the target computer, install the driver by navigating to the folder containing the driver files, then running the DevCon tool. 
+    1. Here's the general syntax for the devcon tool that you will use to install the driver:
+
+        *devcon install \<INF file\> \<hardware ID\>*
+
+        The INF file required for installing this driver is KmdfHelloWorld.inf. The INF file contains the hardware ID for installing the driver binary, *KmdfHelloWorld.sys*. Recall that the hardware ID, located in the INF file, is **Root\\KmdfHelloWorld**.
+    2. Open a Command Prompt window as Administrator. Navigate to your driver package folder, then enter this command:
+
+        **devcon install kmdfhelloworld.inf root\\kmdfhelloworld**
+
+        If you get an error message about *devcon* not being recognized, try adding the path to the *devcon* tool. For example, if you copied it to a folder on the target computer called *C:\\Tools*, then try using the following command:
+
+        **c:\\tools\\devcon install kmdfhelloworld.inf root\kmdfhelloworld**
+
+        A dialog box will appear indicating that the test driver is an unsigned driver. Click **Install this driver anyway** to proceed.
+
+        ![screenshot of driver installation warning](../debugger/images/debuglab-image-install-security-warning.png)
+
+## Debug the driver
+
+Now that you have installed your KmdfHelloWorld driver on the target computer, you'll attach a debugger remotely from the host computer.
+
+1. On the host computer, open a Command Prompt window as Administrator. Change to the WinDbg.exe directory. We will use the x64version of WinDbg.exe from the Windows Driver Kit (WDK) that was installed as part of the Windows kit installation. Here is the default path to WinDbg.exe:
+
+    *C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x64*
+
+2. Launch WinDbg to connect to a kernel debug session on the target computer by using the following command. The value for the port and key should be the same as what you used to provision the target computer. We'll use **50000** for the port and **1.2.3.4** for the key, the values we used during the deploy step. The *k* flag indicates that this is a kernel debug session.
+
+    **WinDbg -k net:port=50000,key=1.2.3.4**
+
+3.  On the **Debug** menu, choose **Break**. The debugger on the host computer will break into the target computer. In the **Debugger Command** window, you can see the kernel debugging command prompt: **kd\>**.
+
+4. At this point, you can experiment with the debugger by entering commands at the **kd&gt;** prompt. For example, you could try these commands:
 
     -   [lm](http://go.microsoft.com/fwlink/p?linkid=399236)
     -   [.sympath](http://go.microsoft.com/fwlink/p?linkid=399238)
     -   [.reload](http://go.microsoft.com/fwlink/p?linkid=399239)
     -   [x KmdfHelloWorld!\*](http://go.microsoft.com/fwlink/p?linkid=399240)
 
-11. To let the target computer run again, choose **Continue** from the **Debug** menu.
-12. To stop the debugging session, choose **Stop Debugging** from the **Debug** menu.
+5. To let the target computer run again, choose **Go** from the **Debug** menu or press "g," then press "enter."
+6. To stop the debugging session, choose **Detach Debuggee** from the **Debug** menu.
+
+    > [!IMPORTANT]
+    > Make sure you use the "go" command to let the target computer run again before exiting the debugger, or the target computer will remain unresponsive to your mouse and keyboard input because it is still talking to the debugger.
+
+For a detailed step-by-step walkthrough of the driver debugging process, see [Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md).
+
+For more information about remote debugging, see [Remote Debugging Using WinDbg](../debugger/remode-debugging-using-windbg.md).
 
 ## <span id="related_topics"></span>Related topics
-
 
 [Developing, Testing, and Deploying Drivers](http://go.microsoft.com/fwlink/p?linkid=399234)
 
 [Debugging Tools for Windows](http://go.microsoft.com/fwlink/p?linkid=223405)
+
+[Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md)
 
 [Write your first driver](writing-your-first-driver.md)

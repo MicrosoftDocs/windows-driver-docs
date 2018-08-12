@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Optional Dispatch Routines
 
 
-## <a href="" id="ddk-optional-dispatch-routines-kg"></a>
+
 
 
 Drivers might include the following dispatch routines:

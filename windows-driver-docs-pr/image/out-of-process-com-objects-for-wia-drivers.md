@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Out-of-Process COM Objects for WIA Drivers
 
 
-## <a href="" id="ddk-out-of-process-com-objects-for-wia-drivers-si"></a>
+
 
 
 If a driver calls **CoCreatInstance** (described in the Microsoft Windows SDK documentation) on an out-of-process component, that call will fail unless the component has the appropriate permissions set to allow the driver access.

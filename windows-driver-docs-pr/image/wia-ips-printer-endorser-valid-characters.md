@@ -16,6 +16,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_PRINTER\_ENDORSER\_VALID\_CHARACTERS
@@ -23,7 +24,7 @@ ms.technology: windows-devices
 
 The **WIA\_IPS\_PRINTER\_ENDORSER\_VALID\_CHARACTERS** property lists the characters (letters, digits, punctuation marks, and so on) that are valid for the [**WIA\_IPS\_PRINTER\_ENDORSER\_STRING**](wia-ips-printer-endorser-string.md) values that can be configured for the Imprinter/Endorser. The set of valid characters is specified as a NULL-terminated character string. The WIA minidriver creates and maintains this property.
 
-## <span id="ddk_wia_ipa_depth_si"></span><span id="DDK_WIA_IPA_DEPTH_SI"></span>
+
 
 
 **Note**  This property replaces [**WIA\_DPS\_ENDORSER\_CHARACTERS**](wia-dps-endorser-characters.md), which is now obsolete.

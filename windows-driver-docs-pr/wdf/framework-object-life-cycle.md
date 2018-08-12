@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Framework Object Life Cycle
 
 
-## <a href="" id="ddk-framework-object-instance-life-span-df"></a>
+
 
 
 A framework object's "life cycle" spans the time from when an object is created to when it is deleted. An object's reference count controls when it will be deleted.

@@ -2,6 +2,11 @@
 title: WlanTimedAssociation rule (ndis)
 description: The WlanTimedAssociation rule specifies that the NDIS miniport driver finishes the wireless LAN (WLAN) association operation in 10 seconds.
 ms.assetid: 6454C7CF-EC89-44E9-B835-3C2FE0FFB595
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["WlanTimedAssociation rule (ndis)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - WlanTimedAssociation
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # WlanTimedAssociation rule (ndis)

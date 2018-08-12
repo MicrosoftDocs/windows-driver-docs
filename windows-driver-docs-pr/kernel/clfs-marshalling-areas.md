@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # CLFS Marshalling Areas
 
 
-## <a href="" id="ddk-introduction-to-wmi-kg"></a>
+
 
 
 A Common Log File System (CLFS) client appends log records to a [*marshalling area*](clfs-terminology.md#kernel-clfs-term-marshalling-area) in volatile memory, and CLFS periodically writes those records to stable storage. A marshalling area is a collection of log I/O buffers, each of which can hold several log records. Log I/O buffers hold records that have recently been written to a stream (but possibly not flushed to stable storage) as well as records that have recently been read from the stream.

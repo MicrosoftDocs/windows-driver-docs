@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Feature Entry Format
 
 
-## <a href="" id="ddk-feature-entry-format-gg"></a>
+
 
 
 To specify a printer feature entry in a GPD file, use the following format:

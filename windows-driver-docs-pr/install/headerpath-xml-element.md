@@ -9,6 +9,7 @@ api_name:
 - headerPath XML Element
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # headerPath XML Element

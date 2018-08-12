@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Performing Diagnostics on a WIA Device
 
 
-## <a href="" id="ddk-performing-diagnostics-on-a-wia-device-si"></a>
+
 
 
 The WIA service can test a device's functionality status by calling the [**IStiUSD::Diagnostic**](https://msdn.microsoft.com/library/windows/hardware/ff543814) method. The WIA minidriver should check the hardware's current functional state and report the results. The **IStiUSD::Diagnostic** method is also called when the "Test Device" button is pressed on the WIA device's default property page (the Microsoft-provided property page).

@@ -14,6 +14,7 @@ api_name:
 - BC_BTHMINI_VERIFIER_FAULT
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xBFF: BC\_BTHMINI\_VERIFIER\_FAULT

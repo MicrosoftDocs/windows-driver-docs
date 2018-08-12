@@ -18,12 +18,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DVD Decoder Minidrivers
 
 
-## <a href="" id="ddk-dvd-decoder-minidrivers-ksg"></a>
+
 
 
 DVD provides digital data storage that encompasses audio, video, and other digital data. This documentation discusses the design of DVD decoder minidrivers that are used for movie playback (video and audio) from DVD. These minidrivers control DVD decoder adapter cards that read and decode DVD data stream formats such as MPEG-2 (video and audio), AC-3 and DTS.

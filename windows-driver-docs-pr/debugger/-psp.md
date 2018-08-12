@@ -14,6 +14,7 @@ api_name:
 - psp
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !psp

@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA Driver Error Handling and Recovery
 
 
-## <a href="" id="ddk-wia-driver-errors-si"></a>
+
 
 
 There are many points in the WIA image acquisition process where errors or delays can occur. In Microsoft Windows Millennium Edition and Windows XP, it is possible to get additional information about the error. In Windows Vista and later operating systems, it is possible to use a mechanism that allows applications and users to gracefully handle and possibly recover from these errors or delays. The Windows Vista mechanism relies on the [IStream data transfers](istream-data-transfers.md), which Windows Me and Windows XP do not support.

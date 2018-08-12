@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Understanding and configuring Windows Connection Manager
@@ -32,7 +33,7 @@ Windows 8, Windows 8.1, and Windows 10 include a number of policies to contro
 
 ### <span id="Minimize_simultaneous_connections"></span><span id="minimize_simultaneous_connections"></span><span id="MINIMIZE_SIMULTANEOUS_CONNECTIONS"></span>Minimize simultaneous connections
 
-This policy is on by default for Windows 8, Windows 8.1, and Windows 10. If this policy is disabled, the behavior is similar to that for Windows 7 in which each interface connects to the most preferred network in range, regardless of the connectivity state of other interfaces.
+This policy is configured using the **fMinimizeConnections** Group Policy. It is on by default for Windows 8, Windows 8.1, and Windows 10. If this policy is disabled, the behavior is similar to that for Windows 7 in which each interface connects to the most preferred network in range, regardless of the connectivity state of other interfaces.
 
 If this policy is enabled, Windows attempts to maintain the smallest number of concurrent connections that offer the best available level of connectivity. Windows maintains connectivity to the following networks:
 

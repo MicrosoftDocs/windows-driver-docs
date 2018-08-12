@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # AVStream Architecture: Advanced Topics
 
 
-## <a href="" id="ddk-avstream-architecture-advanced-topics-ksg"></a>
+
 
 
 This section contains the following information:

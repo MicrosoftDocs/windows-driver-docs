@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Option Attributes for the PaperSize Feature
 
 
-## <a href="" id="ddk-option-attributes-for-the-papersize-feature-gg"></a>
+
 
 
 The following table lists the attributes associated with the PaperSize feature. For more information about the PaperSize feature, see [Standard Features](standard-features.md).

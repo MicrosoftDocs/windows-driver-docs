@@ -2,6 +2,11 @@
 title: ZwRegistryOpen rule (storport)
 description: This rule verifies that the handle to the registry key opened via ZwOpenKey is subsequently used correctly by other ZwXxx routines.
 ms.assetid: E423616B-C990-4D26-ABB4-6061BF3B6A21
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["ZwRegistryOpen rule (storport)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - ZwRegistryOpen
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ZwRegistryOpen rule (storport)

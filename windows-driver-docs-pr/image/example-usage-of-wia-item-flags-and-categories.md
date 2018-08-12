@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Example Usage of WIA Item Flags and Categories
 
 
-## <a href="" id="ddk-example-usage-of-wia-item-flags-and-categories-si"></a>
+
 
 
 This topic applies to Windows Vista and later.

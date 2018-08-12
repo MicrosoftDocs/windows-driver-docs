@@ -6,6 +6,7 @@ ms.date: 01/18/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Building ARM64 Drivers with the WDK

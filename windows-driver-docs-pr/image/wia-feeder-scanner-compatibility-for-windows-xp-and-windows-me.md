@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA Feeder Scanner Compatibility for Windows XP and Windows Me
 
 
-## <a href="" id="ddk-wia-feeder-scanner-compatibility-for-windows-me-and-windows-xp-si"></a>
+
 
 
 This topic describes several compatibility issues that are related to feeder scanners in Windows Vista, Windows XP, and Windows Me.

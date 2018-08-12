@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting code from SetupApi to CfgMgr32
@@ -196,7 +197,7 @@ GetDevicePropertiesCfgmgr32(
 }
 ```
 
-## <a href="" id="get-a-list-of-interfaces--get-the-device-exposing-each-interface---and-get-a-property-from-the-device"></a>Get a list of interfaces, get the device exposing each interface, and get a property from the device
+## Get a list of interfaces, get the device exposing each interface, and get a property from the device
 
 
 This example gets a list of all interfaces in class GUID_DEVINTERFACE_VOLUME using [**SetupDiGetClassDevs**](https://msdn.microsoft.com/library/windows/hardware/ff551069). For each interface, it gets the device exposing the interface and gets a property of that device.

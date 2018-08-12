@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Spooler Components
 
 
-## <a href="" id="ddk-spooler-components-gg"></a>
+
 
 
 This section provides the following topics:

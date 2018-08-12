@@ -7,10 +7,12 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NetworkConfiguration
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The NetworkConfiguration element specifies the purchase and Internet mobile broadband profiles to be used. The files that are referenced in this element should be included in the **ServiceInformation** directory. These files help in getting users connected to the operator network. It also specifies whether standard users should be allowed to perform PIN unlock operations on their Mobile Broadband SIMs.
 

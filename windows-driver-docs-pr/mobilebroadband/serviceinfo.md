@@ -7,10 +7,12 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # ServiceInfo
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The ServiceInfo element is the parent element of the [ServiceInfo XML schema](serviceinfo-xml-schema.md).
 

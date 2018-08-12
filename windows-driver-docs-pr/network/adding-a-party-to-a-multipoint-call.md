@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Adding a Party to a Multipoint Call
 
 
-## <a href="" id="ddk-adding-a-party-to-a-multipoint-call-ng"></a>
+
 
 
 A client requests to add a party to a multipoint call with [**NdisClAddParty**](https://msdn.microsoft.com/library/windows/hardware/ff561625). A client can add a party only to an existing multipoint call--that is, a call for which the client supplied a *ProtocolPartyContext* to [**NdisClMakeCall**](https://msdn.microsoft.com/library/windows/hardware/ff561635)(see [Making a Call](making-a-call.md)).

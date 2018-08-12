@@ -2,6 +2,11 @@
 title: RemoveLockMnSurpriseRemove rule (wdm)
 description: The RemoveLockMnSurpriseRemove rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLockAndWait are used correctly when processing IRP\_MJ\_PNP with MinorFunction IRP\_MN\_SUPRISE\_REMOVAL.
 ms.assetid: 536D5658-F229-456F-979C-96BF7384ADE5
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["RemoveLockMnSurpriseRemove rule (wdm)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - RemoveLockMnSurpriseRemove
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # RemoveLockMnSurpriseRemove rule (wdm)

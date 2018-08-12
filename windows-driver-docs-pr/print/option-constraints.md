@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Option Constraints
 
 
-## <a href="" id="ddk-option-constraints-gg"></a>
+
 
 
 It is sometimes necessary to constrain the ability of users to install or select certain printer options associated with printer features. The following types of option constraints can be specified:

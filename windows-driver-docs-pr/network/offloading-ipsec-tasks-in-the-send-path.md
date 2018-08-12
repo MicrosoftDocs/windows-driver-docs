@@ -11,13 +11,14 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Offloading IPsec Tasks in the Send Path
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-offloading-ipsec-tasks-in-the-send-path-ng"></a>
+
 
 
 Before the TCP/IP transport passes to the miniport driver a [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure for a packet on which a NIC will perform Internet protocol security (IPsec) tasks, it updates the IPsec information that is associated with the NET\_BUFFER\_LIST structure. The TCP/IP transport specifies this information in an [**NDIS\_IPSEC\_OFFLOAD\_V1\_NET\_BUFFER\_LIST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff565801) structure, which is part of the NET\_BUFFER\_LIST information (out-of-band data) that is associated with the NET\_BUFFER\_LIST structure.

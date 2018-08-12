@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Button Capability Arrays
 
 
-## <a href="" id="ddk-button-capability-arrays-kg"></a>
+
 
 
 A *button capability array* contains information about the button usages supported by a [top-level collection](top-level-collections.md) for a specific type of HID report. Information about a collection's capability is contained in its [**HIDP\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff539697) structure.

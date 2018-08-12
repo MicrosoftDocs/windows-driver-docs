@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Physical Configuration of Devices Attached to a Parallel Port
 
 
-## <a href="" id="ddk-physical-configuration-of-devices-attached-to-a-parallel-port-kg"></a>
+
 
 
 This section describes the typical physical configurations of devices that are attached to a parallel port.

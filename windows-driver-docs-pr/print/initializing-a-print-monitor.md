@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing a Print Monitor
 
 
-## <a href="" id="ddk-initializing-a-print-monitor-gg"></a>
+
 
 
 When the spooler calls LoadLibrary to load a print monitor DLL, the system immediately calls the DLL's **DllEntryPoint** function. It is generally a good idea for the entry point function to call DisableThreadLibraryCalls, described in the Microsoft Windows SDK documentation, so the DLL is not unnecessarily notified when threads are created and deleted.

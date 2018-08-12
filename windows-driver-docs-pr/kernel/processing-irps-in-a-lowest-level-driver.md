@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Processing IRPs in a Lowest-Level Driver
 
 
-## <a href="" id="ddk-processing-irps-in-a-lowest-level-driver-kg"></a>
+
 
 
 Lowest-level physical drivers have certain standard routines that higher-level drivers do not need. The set of standard routines for lowest-level drivers also varies according to the following criteria:

@@ -4,12 +4,13 @@ author: windows-driver-content
 description: Driver Interface
 ms.assetid: cb5e06c3-6add-4eba-b794-861d567a3047
 keywords: ["force feedback drivers WDK HID , methods supported"]
+ms.localizationpriority: medium
 ---
 
 # Driver Interface
 
 
-## <a href="" id="ddk-driver-interface-di"></a>
+
 
 
 If the force-feedback driver is COM-based, an instance of the driver is created by DirectInput. If the interface specified is "VJoyD", then the VJoyD minidriver is loaded by VJoyD. Both driver paths support the following exported methods:

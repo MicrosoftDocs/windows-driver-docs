@@ -2,6 +2,11 @@
 title: ReqCompletionRoutine rule (kmdf)
 description: The ReqCompletionRoutine rule specifies that a completion routine must be set before a request is sent to an I/O target.
 ms.assetid: 0ddf6980-0540-4224-9800-3cd534f03230
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["ReqCompletionRoutine rule (kmdf)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - ReqCompletionRoutine
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ReqCompletionRoutine rule (kmdf)

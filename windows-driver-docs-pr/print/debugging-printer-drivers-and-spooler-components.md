@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Debugging Printer Drivers and Spooler Components
 
 
-## <a href="" id="ddk-debugging-printer-drivers-and-spooler-components-gg"></a>
+
 
 
 This section provides tips on user-mode debugging of printer drivers and information about how to add debugging and message logging capabilities to a printer driver or spooler component during its development.

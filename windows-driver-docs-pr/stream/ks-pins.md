@@ -16,12 +16,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KS Pins
 
 
-## <a href="" id="ddk-ks-pins-ksg"></a>
+
 
 
 The minidriver supplies a [**KSPIN\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff563533) structure for each type of pin to be instantiated. A pin descriptor structure is known as a pin factory. Each pin factory can instantiate one or more pin instances of a particular type. A pin factory contains several arrays that describe the type of pin that this descriptor instantiates.

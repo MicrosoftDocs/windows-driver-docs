@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting Device Fonts
 
 
-## <a href="" id="ddk-supporting-device-fonts-gg"></a>
+
 
 
 If a printer provides device fonts, the printer graphics DLL must define a [**DrvTextOut**](https://msdn.microsoft.com/library/windows/hardware/ff557277) function to generate text output commands. The graphics DLL must also define the following functions:

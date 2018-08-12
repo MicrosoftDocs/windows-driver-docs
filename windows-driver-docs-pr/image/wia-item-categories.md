@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA Item Categories
 
 
-## <a href="" id="ddk-wia-item-categories-si"></a>
+
 
 
 This topic applies to Windows Vista and later.

@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # PPD Features
 
 
-## <a href="" id="ddk-ppd-features-gg"></a>
+
 
 
 PPD features are defined in the PPD file within **\*OpenUI**/**\*CloseUI** structure keyword pairs, and in certain PPD keywords that are treated similarly by the Pscript driver. Although **EnumFeatures** lists the **\*LeadingEdge** and **\*UseHWMargins** keywords, they are not defined within PPD **\*OpenUI**/**\*CloseUI** structure keyword pairs. Consequently, the **GetOptions** and **SetOptions** methods ignore these keywords if they appear in the feature list. The PPD feature/option keywords are case sensitive.

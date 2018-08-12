@@ -2,15 +2,16 @@
 title: DShow Bridge implementation guidance for UVC devices
 description: Provides DShow Bridge implementation guidance for UVC devices.
 ms.author: windowsdriverdev
-ms.date: 03/19/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DShow Bridge implementation guidance for UVC devices
 
-This topic provides implementation guidance for configuring DShow Bridge for cameras and devices that comply with the USB Video Class (UVC) specification. The platform uses [Microsoft OS Descriptors](https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/microsoft-defined-usb-descriptors) from the USB bus standard to configure DShow Bridge. The Extended Properties OS Descriptors are an extension of USB standard descriptors and are used by USB devices to return Windows specific device properties that are not enabled through standard specifications.
+This topic provides implementation guidance for configuring DShow Bridge for cameras and devices that comply with the USB Video Class (UVC) specification. The platform uses [Microsoft OS Descriptors](https://docs.microsoft.com/windows-hardware/drivers/usbcon/microsoft-defined-usb-descriptors) from the USB bus standard to configure DShow Bridge. The Extended Properties OS Descriptors are an extension of USB standard descriptors and are used by USB devices to return Windows specific device properties that are not enabled through standard specifications.
 
 ## Overview
 
@@ -143,8 +144,8 @@ UCHAR Example2\_MSOS20DescriptorSetForFutureWindows\[0x48\] =
 
 ### Resources
 
-[Microsoft OS Descriptors for USB Devices](https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/microsoft-defined-usb-descriptors)
+[Microsoft OS Descriptors for USB Devices](https://docs.microsoft.com/windows-hardware/drivers/usbcon/microsoft-defined-usb-descriptors)
 
-[USB Generic Parent Driver (Usbccgp.sys)](https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-common-class-generic-parent-driver)
+[USB Generic Parent Driver (Usbccgp.sys)](https://docs.microsoft.com/windows-hardware/drivers/usbcon/usb-common-class-generic-parent-driver)
 
 [USB Specification](http://www.usb.org/developers/docs)

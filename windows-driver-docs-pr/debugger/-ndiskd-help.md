@@ -14,6 +14,7 @@ api_name:
 - ndiskd.help
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.help

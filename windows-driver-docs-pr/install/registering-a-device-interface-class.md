@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering a Device Interface Class
 
 
-## <a href="" id="ddk-registering-a-device-interface-class-dg"></a>
+
 
 
 There are three ways to register a device interface class:

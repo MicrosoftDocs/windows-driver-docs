@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Changing the WIA Item Tree Structure
 
 
-## <a href="" id="ddk-changing-the-wia-item-tree-structure-si"></a>
+
 
 
 A WIA minidriver has the ability to change the WIA item tree structure at any time. When the minidriver makes a change to the WIA item tree, the minidriver must notify the WIA service. The WIA service then notifies all connected WIA applications. After the notification is received, the WIA application must enumerate the WIA item tree to determine the result of any changes.

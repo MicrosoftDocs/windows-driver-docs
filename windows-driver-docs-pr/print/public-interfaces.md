@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Public Interfaces
 
 
-## <a href="" id="ddk-public-interfaces-gg"></a>
+
 
 
 This section describes the public COM interfaces that make up spooler notification. The following topics are discussed.

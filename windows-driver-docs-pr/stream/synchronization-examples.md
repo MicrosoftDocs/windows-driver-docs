@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Synchronization Examples
 
 
-## <a href="" id="ddk-synchronization-examples-ksg"></a>
+
 
 
 The following examples illustrate what a minidriver needs to do regarding synchronization and includes examples of when synchronization should not be used:

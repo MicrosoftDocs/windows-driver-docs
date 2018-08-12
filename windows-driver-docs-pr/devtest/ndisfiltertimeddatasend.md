@@ -2,6 +2,11 @@
 title: NdisFilterTimedDataSend rule (ndis)
 description: The NdisFilterTimedDataSend rule verifies that an NDIS filter driver completes a send request by the FilterSendNetBufferLists function before timing out.
 ms.assetid: 0D04DF73-4391-4668-8F6C-023BEE5A7F08
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["NdisFilterTimedDataSend rule (ndis)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - NdisFilterTimedDataSend
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # NdisFilterTimedDataSend rule (ndis)

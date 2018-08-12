@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Querying for Bus Driver Interfaces
@@ -14,7 +15,7 @@ ms.technology: windows-devices
 
 Instead of using the I/O Request Packet (IRP) mechanism, a USB client driver can get a reference to a bus driver interface and use it to access bus driver routines.
 
-## <a href="" id="ddk-querying-for-usb-interfaces-kg"></a>
+
 
 
 Using a bus driver interface gives the client driver several advantages:

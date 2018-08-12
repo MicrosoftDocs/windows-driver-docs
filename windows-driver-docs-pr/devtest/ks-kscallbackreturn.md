@@ -2,6 +2,11 @@
 title: KsCallbackReturn rule ()
 description: The KsCallbackReturn rule specifies that a kernel-streaming (KS) miniport driver callback function returns only allowed status values.
 ms.assetid: 1779301C-5C2C-471F-88D8-3E5F2C90357D
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["KsCallbackReturn rule ()"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - KsCallbackReturn
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # KsCallbackReturn rule ()

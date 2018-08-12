@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting and Clearing VMQ Filters
 
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 Filters can be set and cleared any time after the queue has been allocated. For information about allocating and freeing queues, see [Allocating and Freeing VM Queues](allocating-and-freeing-vm-queues.md).

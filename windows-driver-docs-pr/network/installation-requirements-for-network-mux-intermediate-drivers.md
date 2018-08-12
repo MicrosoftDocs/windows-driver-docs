@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installation Requirements for Network MUX Intermediate Drivers
 
 
-## <a href="" id="ddk-installation-requirements-for-network-mux-intermediate-drivers-ng"></a>
+
 
 
 This topic summarizes the installation requirements for network MUX intermediate drivers. For more information about installation requirements for MUX intermediate drivers, see [Installing an Intermediate Driver](installing-an-intermediate-driver.md).

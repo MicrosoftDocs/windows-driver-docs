@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # AVStream Overview
 
 
-## <a href="" id="ddk-avstream-overview-ksg"></a>
+
 
 
 AVStream is a Microsoft-provided multimedia class driver that supports video-only streaming and integrated audio/video streaming. Microsoft provides AVStream as part of the operating system, in the export driver *Ks.sys*. Hardware vendors write minidrivers that run under *Ks.sys*.

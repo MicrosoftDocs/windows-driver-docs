@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing HID Reports
 
 
-## <a href="" id="ddk-initializing-hid-reports-kg"></a>
+
 
 
 This section describes how user-mode applications and kernel-mode drivers initialize a HID report before using the [HIDClass support routines](https://msdn.microsoft.com/library/windows/hardware/ff538865) or the HID class driver IOCTLs.

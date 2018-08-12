@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using NTSTATUS Values
 
 
-## <a href="" id="ddk-using-ntstatus-values-kg"></a>
+
 
 
 Many kernel-mode [standard driver routines](https://msdn.microsoft.com/library/windows/hardware/ff563842) and [driver support routines](https://msdn.microsoft.com/library/windows/hardware/ff563889) use the NTSTATUS type for return values. Additionally, drivers provide an NTSTATUS-typed value in an IRP's [**IO\_STATUS\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff550671) structure when [completing IRPs](completing-irps.md). The NTSTATUS type is defined in Ntdef.h, and system-supplied status codes are defined in Ntstatus.h. (Vendors can also define private status codes, although they rarely need to. For more information, see [Defining New NTSTATUS Values](defining-new-ntstatus-values.md).)

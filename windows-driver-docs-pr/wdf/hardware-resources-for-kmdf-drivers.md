@@ -12,6 +12,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Hardware Resources
@@ -19,7 +20,7 @@ ms.technology: windows-devices
 
 A system's hardware resources are the I/O ports, interrupt vectors, direct memory access (DMA) channels, and other communication paths that must be assigned to each device that is connected to the system. The topics in this section describe how Kernel-Mode Driver Framework (KMDF) drivers negotiate hardware resource requirements for a device, review the proposed resource list, and then receive the assigned resources. This section also discusses how both KMDF and User-Mode Driver Framework (UMDF) drivers access and map assigned resources.
 
-## <a href="" id="ddk-hardware-resources-for-framework-based-drivers-df"></a>
+
 
 
 ## In this section

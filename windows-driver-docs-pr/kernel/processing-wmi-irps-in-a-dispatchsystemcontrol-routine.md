@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Processing WMI IRPs in a DispatchSystemControl Routine
 
 
-## <a href="" id="ddk-processing-wmi-irps-in-a-dispatchsystemcontrol-routine-kg"></a>
+
 
 
 A driver that handles WMI IRPs in its [*DispatchSystemControl*](https://msdn.microsoft.com/library/windows/hardware/ff543412) routine must handle such an IRP only if the device object pointer at **Parameters.WMI.ProviderId** matches the pointer passed by the driver in its call to [**IoWMIRegistrationControl**](https://msdn.microsoft.com/library/windows/hardware/ff550480). Otherwise, the driver must forward the IRP to the next lower driver.

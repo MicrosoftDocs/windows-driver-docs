@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Offloading Internet Protocol Security Tasks in NDIS 6.0
 
 
-## <a href="" id="ddk-offloading-internet-protocol-security-tasks-in-ndis-6-0-ng"></a>
+
 
 
 Offloading Internet protocol security (IPsec) tasks at run time in NDIS 6.0 is similar to NDIS 5.*x*. The primary differences are:

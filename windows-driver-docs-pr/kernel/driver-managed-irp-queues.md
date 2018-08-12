@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Driver-Managed IRP Queues
 
 
-## <a href="" id="ddk-driver-managed-irp-queues-kg"></a>
+
 
 
 Except for file system drivers, the I/O manager associates a device queue object (for queuing IRPs) with each device object that a driver creates.

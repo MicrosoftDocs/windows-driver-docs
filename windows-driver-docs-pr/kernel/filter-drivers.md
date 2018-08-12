@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filter Drivers
 
 
-## <a href="" id="ddk-filter-drivers-kg"></a>
+
 
 
 Filter drivers are optional drivers that add value to or modify the behavior of a device. A filter driver can service one or more devices.

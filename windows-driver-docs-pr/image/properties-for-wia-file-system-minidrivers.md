@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Properties for WIA File System Minidrivers
 
 
-## <a href="" id="ddk-properties-for-wia-file-system-minidrivers-si"></a>
+
 
 
 The following property is not implemented at this time. It is reserved by Microsoft for future use.

@@ -9,6 +9,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # CM_PROB_OUT_OF_MEMORY
@@ -16,7 +17,7 @@ ms.technology: windows-devices
 This function is reserved for system use.
 
 
-## <a href="" id="ddk-cm-prob-out-of-memory-dg"></a>
+
 
 
 Running out of memory − the system is probably running low on system memory.

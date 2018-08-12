@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IoCompletion Routines for Device Power IRPs
 
 
-## <a href="" id="ddk-iocompletion-routines-for-device-power-irps-kg"></a>
+
 
 
 After the bus driver completes the IRP, the I/O manager calls the [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routines registered by higher-level drivers as they passed the IRP down the stack.

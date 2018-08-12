@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Property Contexts
 
 
-## <a href="" id="ddk-property-contexts-si"></a>
+
 
 
 A property context provides a convenient way for a minidriver to identify a number of properties it is interested in during the validation of those properties. Using a property context, a minidriver can quickly determine whether any of the identified properties are being changed. The minidriver then passes the property context to one of the WIA service library functions (for example, [**wiasGetChangedValueFloat**](https://msdn.microsoft.com/library/windows/hardware/ff549200)), which uses the context to determine whether an application is changing a property's value.

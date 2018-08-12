@@ -4,12 +4,13 @@ author: windows-driver-content
 description: Gcdef.dll, the Default Analog Device Property Sheet
 ms.assetid: a8226abb-11c1-4425-93d8-b74e1960ba10
 keywords: ["Gcdef.dll", "default analog device property sheet", "property sheets WDK DirectInput , Gcdef.dll", "game controllers WDK DirectInput , Gcdef.dll", "control panels WDK DirectInput , Gcdef.dll"]
+ms.localizationpriority: medium
 ---
 
 # Gcdef.dll, the Default Analog Device Property Sheet
 
 
-## <a href="" id="ddk-gcdef-dll-the-default-analog-device-property-sheet-di"></a>
+
 
 
 Hardware vendors who do not create their own control panel use the services of the default analog device property sheet supplied by Gcdef.dll. Any controller that does not have a **ConfigCLSID** key in the registry under its **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\MediaProperties\\PrivateProperties\\Joystick\\OEM\\***CONTROLLER\_NAME* entry uses this default property sheet. This property sheet contains the following two pages:

@@ -10,6 +10,7 @@ api_name:
 - CM_Set_DevNode_Registry_Property_ExW
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Set_DevNode_Registry_Property_Ex

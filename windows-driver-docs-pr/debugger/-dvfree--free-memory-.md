@@ -14,6 +14,7 @@ api_name:
 - .dvfree (Free Memory)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .dvfree (Free Memory)

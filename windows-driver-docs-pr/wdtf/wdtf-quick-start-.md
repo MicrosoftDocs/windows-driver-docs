@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WDTF Quick Start
@@ -15,7 +16,7 @@ ms.technology: windows-devices
 
 The Windows Driver Kit 8.0 provides an integrated solution for writing, deploying, and running tests that use the Windows Driver Test Framework (WDTF). Using the WDK, you can configure a remote computer for deploying, testing, and debugging a driver. When you configure the remote computer, the Windows Driver Test Framework runtime is installed.
 
-## <a href="" id="installing-wdtf--runtime-library"></a>Installing WDTF runtime library
+## Installing WDTF runtime library
 
 
 **To install WDTF runtime library using Visual Studio and the WDK**
@@ -28,7 +29,7 @@ The Windows Driver Kit 8.0 provides an integrated solution for writing, deployin
 
 -   When you install the WDK, the installation package for the Windows Driver Test Framework runtime is also installed. You need to copy the installation package to a test computer and run a command. For information, see [WDTF Runtime Library](https://msdn.microsoft.com/library/windows/hardware/hh831856) and "Manually installing WDTF runtime library on a test computer (alternative method)."
 
-## <a href="" id="writing-tests-with-wdtf--"></a>Writing tests with WDTF
+## Writing tests with WDTF
 
 
 The WDK provides templates for writing tests with WDTF. See [How to write a driver test using a Driver Test template](https://msdn.microsoft.com/windows-drivers/develop/how_to_write_a_driver_test_). You can also use a template to create a WDTF SimpleIO plug-in for your target device. For information, see [Writing a WDTF SimpleIO plug-in for your device](writing-a-wdtf-simpleio-plug-in-for-your-device.md).

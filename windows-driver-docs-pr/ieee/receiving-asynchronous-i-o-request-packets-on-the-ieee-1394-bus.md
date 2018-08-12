@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Receiving Asynchronous I/O Request Packets on the IEEE 1394 Bus
@@ -29,7 +30,7 @@ Two different drivers may allocate the same address range. By default, the bus d
 -   [Client driver's notification routine for receive asynchronous I/O requests](#client-drivers-notification-routine-for-receive-asynchronous-io-requests)
 -   [Asynchronous receive in the pre-notification case](#asynchronous-receive-in-the-pre-notification-case)
 
-## <a href="" id="ddk-receiving-asynchronous-i-o-request-packets-on-the-ieee-1394-bus-kg"></a>Which addresses are allocated?
+## Which addresses are allocated?
 
 
 The bus driver supports two different strategies for allocating address ranges. If the driver requires a specific range of addresses, beginning at a hard-coded address, it can specify the hard-coded address in the **u.AllocateAddressRange.Required1394Offset** member of the request's IRB, and the length of the address range in **u.AllocateAddressRange.nLength**. The bus driver will allow two different drivers to allocate the same address twice. If the same driver tries to allocate an address range beginning at the same address twice, the bus driver returns the request with a status code of STATUS\_SUCCESS, but the request itself is ignored.

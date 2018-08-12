@@ -3,6 +3,7 @@ title: Driver x64 Restrictions
 author: windows-driver-content
 description: Driver x64 Restrictions
 ms.assetid: 717ca559-93aa-48d6-8347-bfdf223f1aa4
+ms.localizationpriority: medium
 ---
 
 # Driver x64 Restrictions
@@ -22,7 +23,7 @@ Drivers for x64-based systems must avoid operations that might trigger this bug 
 
 Even though the preceding operations will not trigger a bug check on x86-based or Itanium-based systems, drivers should not perform any of these operations on any platform. These operations might not work in future versions of the Microsoft Windows operating system.
 
-For more information about modifying kernel code and data structures, see the [Patching Policy for x64-based Systems](http://go.microsoft.com/fwlink/p/?linkid=50719) white paper and the [64-Bit Patching FAQ](http://go.microsoft.com/fwlink/p/?linkid=69534) on the Windows Hardware Developer Central (WHDC) website.
+For more information about modifying kernel code and data structures, see the [Patching Policy for x64-based Systems](http://go.microsoft.com/fwlink/p/?linkid=50719) white paper and the [64-Bit Patching FAQ](http://go.microsoft.com/fwlink/p/?linkid=69534).
 
 For general information about programming with a 64-bit compiler, see [64-Bit Programming with Visual C++](http://go.microsoft.com/fwlink/p/?linkid=165521).
 

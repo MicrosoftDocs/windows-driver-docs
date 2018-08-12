@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Feature Conflict Priority
 
 
-## <a href="" id="ddk-feature-conflict-priority-gg"></a>
+
 
 
 A feature's conflict priority identifies the priority that a feature should have when Unidrv's user interface code enforces [option constraints](option-constraints.md).

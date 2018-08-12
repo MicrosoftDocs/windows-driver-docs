@@ -16,12 +16,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Operation of Serenum and Serial
 
 
-## <a href="" id="ddk-operation-of-serenum-and-serial-gg"></a>
+
 
 
 This section includes the following topics about operating Serenum and Serial:

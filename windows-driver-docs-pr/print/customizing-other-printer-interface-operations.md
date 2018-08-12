@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Customizing Other Printer Interface Operations
 
 
-## <a href="" id="ddk-customizing-other-printer-interface-operations-gg"></a>
+
 
 
 A UI plug-in can optionally implement any of the following IPrintOemUI methods:

@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling IRP\_MN\_REGINFO and IRP\_MN\_REGINFO\_EX to Register Blocks
 
 
-## <a href="" id="ddk-handling-irp-mn-reginfo-and-irp-mn-reginfo-ex-to-register-blocks-k"></a>
+
 
 
 On Windows 98 and Windows 2000, the system sends the [**IRP\_MN\_REGINFO**](https://msdn.microsoft.com/library/windows/hardware/ff551731) request to a driver to allow a driver to register its WMI classes. On Windows XP and later, the system sends the [**IRP\_MN\_REGINFO\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff551734) request instead. Most drivers can handle these requests by using [**WmiSystemControl**](https://msdn.microsoft.com/library/windows/hardware/ff565834) to provide a callback routine. See [Using the WMI Library to Register Blocks](using-the-wmi-library-to-register-blocks.md) for details.

@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Data Transfers
 
 
-## <a href="" id="ddk-data-transfers-si"></a>
+
 
 
 The main purpose of a WIA minidriver is to transfer data from the device to the application. For a camera, the data may be previously captured pictures, audio, or video clips. For a scanner, the device may need to transfer the data as it acquires it from the scanner.

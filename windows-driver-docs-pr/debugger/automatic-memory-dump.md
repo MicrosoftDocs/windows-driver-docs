@@ -3,10 +3,11 @@ title: Automatic Memory Dump
 description: Automatic Memory Dump
 ms.assetid: A2C71497-7865-4DC8-B760-6121B224737A
 ms.author: domars
-ms.date: 11/28/2017
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Automatic Memory Dump
@@ -39,8 +40,11 @@ The Automatic Memory Dump is available in Windows 8 and later.
 
 ## <span id="related_topics"></span>Related topics
 
-
 [Varieties of Kernel-Mode Dump Files](varieties-of-kernel-mode-dump-files.md)
+
+[Kernel-Mode Dump Files](kernel-mode-dump-files.md)
+
+[Creating a Kernel-Mode Dump File](creating-a-kernel-mode-dump-file.md)
 
  
 

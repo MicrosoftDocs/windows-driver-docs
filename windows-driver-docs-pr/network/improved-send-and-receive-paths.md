@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Improved Send and Receive Paths
 
 
-## <a href="" id="ddk-improved-send-and-receive-paths-ng"></a>
+
 
 
 The NDIS 6.0 send and receive paths have been improved as follows to enhance performance:

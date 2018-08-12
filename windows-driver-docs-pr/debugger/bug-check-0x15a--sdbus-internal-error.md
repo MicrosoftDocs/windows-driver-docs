@@ -14,6 +14,7 @@ api_name:
 - SDBUS_INTERNAL_ERROR
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x15A: SDBUS\_INTERNAL\_ERROR

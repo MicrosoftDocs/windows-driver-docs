@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Color Management of JPEG and PNG Images
 
 
-## <a href="" id="ddk-color-management-of-jpeg-and-png-images-gg"></a>
+
 
 
 For printers that provide hardware support of JPEG and PNG compressed images, color management must be handled by the driver or device and cannot be handled by GDI.

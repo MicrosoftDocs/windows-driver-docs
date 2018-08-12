@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Customized Data Stream Compression
 
 
-## <a href="" id="ddk-customized-data-stream-compression-gg"></a>
+
 
 
 Unidrv allows you to perform data compression operations using customized code. To perform customized compression operations, perform the following steps:

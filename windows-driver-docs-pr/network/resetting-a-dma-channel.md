@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Resetting a DMA Channel
@@ -22,7 +23,7 @@ ms.technology: windows-devices
 
  
 
-## <a href="" id="ddk-resetting-a-dma-channel-ng"></a>
+
 
 
 The NetDMA interface calls the NetDMA provider driver's [**ProviderResetChannel**](https://msdn.microsoft.com/library/windows/hardware/ff570400) function, if any, to reset a dynamic memory access (DMA) channel.

@@ -14,6 +14,7 @@ api_name:
 - .fiximports (Fix Target Module Imports)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .fiximports (Fix Target Module Imports)

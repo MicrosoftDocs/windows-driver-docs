@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering and Enabling an IoTimer Routine
 
 
-## <a href="" id="ddk-registering-and-enabling-an-iotimer-routine-kg"></a>
+
 
 
 Any driver can register an [*IoTimer*](https://msdn.microsoft.com/library/windows/hardware/ff550381) routine, after it creates one or more device objects, by calling [**IoInitializeTimer**](https://msdn.microsoft.com/library/windows/hardware/ff549344). The driver can then start the timer by calling [**IoStartTimer**](https://msdn.microsoft.com/library/windows/hardware/ff550373). The following figure illustrates these calls.

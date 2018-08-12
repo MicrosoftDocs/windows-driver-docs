@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # GDI Printer Drivers
 
 
-## <a href="" id="ddk-printer-driver-components-gg"></a>
+
 
 
 All Windows 2000 and later printer drivers consist of the following components:

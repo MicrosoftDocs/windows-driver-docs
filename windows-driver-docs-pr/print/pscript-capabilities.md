@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Pscript Capabilities
 
 
-## <a href="" id="ddk-pscript-capabilities-gg"></a>
+
 
 
 The PostScript Printer Driver (Pscript) provides the following capabilities:

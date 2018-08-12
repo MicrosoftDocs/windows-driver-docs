@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Converting an Ordinary DPC to a Threaded DPC
 
 
-## <a href="" id="ddk-converting-an-ordinary-dpc-to-a-threaded-dpc-kg"></a>
+
 
 
 Converting an ordinary DPC to a threaded DPC is straightforward. Simply replace the call to [**KeInitializeDpc**](https://msdn.microsoft.com/library/windows/hardware/ff552130) (which initializes the DPC) with one to [**KeInitializeThreadedDpc**](https://msdn.microsoft.com/library/windows/hardware/ff552166), and refer to the following table to replace the calls inside the DPC routine that acquire and release spin locks.

@@ -2,6 +2,7 @@
 title: MSFC\_NPIVLUNMappingInformation WMI Class
 description: MSFC\_NPIVLUNMappingInformation WMI Class
 ms.assetid: F8BCDEDE-5EF3-464D-8592-5DF1878D3694
+ms.localizationpriority: medium
 ---
 
 # MSFC\_NPIVLUNMappingInformation WMI Class

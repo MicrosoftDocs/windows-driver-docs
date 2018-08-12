@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Converting Print Monitors for Use with Clustered Print Servers
 
 
-## <a href="" id="ddk-converting-print-monitors-for-use-with-clustered-print-servers-gg"></a>
+
 
 
 Clustering of print servers is a new feature of Windows 2000. Any printer port monitor that is intended to run on Windows 2000 (or later) clusters must be modified so it can be called from multiple spooler instances (the node's spooler and a cluster spooler). The following steps must be taken:

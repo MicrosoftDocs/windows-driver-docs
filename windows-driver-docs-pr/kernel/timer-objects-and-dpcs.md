@@ -9,6 +9,7 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KeXxxTimer Routines, KTIMER Objects, and DPCs
@@ -16,7 +17,7 @@ ms.technology: windows-devices
 
 Starting with Windows 2000, a set of **Ke*Xxx*Timer** routines is available to manage timers. These routines use timer objects that are based on the [**KTIMER**](https://msdn.microsoft.com/library/windows/hardware/ff554250) structure. To create a timer object, a driver first allocates storage for a **KTIMER** structure. Then the driver calls a routine such as [**KeInitializeTimer**](https://msdn.microsoft.com/library/windows/hardware/ff552168) or [**KeInitializeTimerEx**](https://msdn.microsoft.com/library/windows/hardware/ff552173) to initialize this structure.
 
-## <a href="" id="ddk-timer-objects-and-dpcs-kg"></a>
+
 
 
 A timer can be set to expire just once, or to expire repeatedly after a given interval. [**KeSetTimer**](https://msdn.microsoft.com/library/windows/hardware/ff553286) always sets a timer that will expire just once. [**KeSetTimerEx**](https://msdn.microsoft.com/library/windows/hardware/ff553292) accepts an optional *Period* parameter, which specifies a recurring timer interval.

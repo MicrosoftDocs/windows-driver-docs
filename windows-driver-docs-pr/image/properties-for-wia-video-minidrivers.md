@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Properties for WIA Video Minidrivers
 
 
-## <a href="" id="ddk-properties-for-wia-video-minidrivers-si"></a>
+
 
 
 The following properties are not implemented at this time. They are reserved by Microsoft for future use.

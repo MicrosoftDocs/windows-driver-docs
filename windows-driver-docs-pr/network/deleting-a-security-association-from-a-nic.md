@@ -12,13 +12,14 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Deleting a Security Association from a NIC
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-deleting-a-security-association-from-a-nic-ng"></a>
+
 
 
 If necessary, the TCP/IP transport can set [OID\_TCP\_TASK\_IPSEC\_DELETE\_SA](https://msdn.microsoft.com/library/windows/hardware/ff569810) to request that the miniport driver delete a security association (SA) from the NIC.

@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing and Configuring Still Image Components
 
 
-## <a href="" id="ddk-installing-and-configuring-still-image-components-si"></a>
+
 
 
 This section provides the following topics:

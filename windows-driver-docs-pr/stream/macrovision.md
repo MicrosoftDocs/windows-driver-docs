@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Macrovision
 
 
-## <a href="" id="ddk-macrovision-ksg"></a>
+
 
 
 Macrovision is supported by the last device handling the video data before leaving the computer. In the case of a video port connection to a video card, the video card and the DVD navigator/splitter handle all Macrovision processing. The decoder is not involved.

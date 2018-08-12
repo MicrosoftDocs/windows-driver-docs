@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # User Interface Extension Registry Entries
 
 
-## <a href="" id="ddk-user-interface-extension-registry-entries-si"></a>
+
 
 
 You must provide the COM server class ID for each extension. Note that the class ID of the COM server for each extension is listed as a registry key (not a value) under CLSID\\{WIA\_DIP\_UI\_CLSID}\\shellex, where WIA\_DIP\_UI\_CLSID is the actual GUID returned when the application requests this property. The application uses it as part of the look-up key in the registry. Each extensibility interface can refer to a different class ID. There is no requirement that the same object implement them all. List only those extensions that are implemented. It is not required to list all four.

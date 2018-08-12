@@ -18,12 +18,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # CPSUI-Supplied Pages and Templates
 
 
-## <a href="" id="ddk-cpsui-supplied-pages-and-templates-gg"></a>
+
 
 
 CPSUI supplies a set of predefined property sheet pages, along with three page templates. Predefined property sheet pages include the following:

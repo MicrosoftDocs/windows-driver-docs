@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Windows button array Device-Specific Method (\_DSM)
@@ -36,7 +37,7 @@ An integer (DWORD) that has the following bit-field definitions:
 -   Bit 1: This bit should be set to 1 if power button is wired to an interrupt controller (GPIO or otherwise) that supports level-detection. Otherwise, this bit should be 0.
 -   Bit 0: This bit should be set to 1 if the platform supports ACPI Power Button Override time of 10 seconds or greater. Otherwise, this bit should be 0.
 
-**Note**  Function index 0 of every \_DSM is a query function that returns the set of supported function indexes, and is always required. For more information, see section 9.14.1, "\_DSM (Device Specific Method)", in the [ACPI 5.0 specification](http://www.acpi.info).
+**Note**  Function index 0 of every \_DSM is a query function that returns the set of supported function indexes, and is always required. For more information, see section 9.14.1, "\_DSM (Device Specific Method)", in the [ACPI 5.0 specification](https://www.uefi.org/specifications).
 
  
 

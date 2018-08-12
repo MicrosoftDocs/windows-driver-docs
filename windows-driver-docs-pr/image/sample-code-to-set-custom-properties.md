@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sample Code to Set Custom Properties
 
 
-## <a href="" id="ddk-sample-code-to-set-custom-properties-si"></a>
+
 
 
 To set a custom property, your application or custom UI might have code that looks similar to the following:

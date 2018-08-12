@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Combining Types of Task Offloads
 
 
-## <a href="" id="ddk-combining-types-of-task-offloads-ng"></a>
+
 
 
 The following restrictions determine which combinations of NDIS 6.0 and later task offload services can be active on the system:

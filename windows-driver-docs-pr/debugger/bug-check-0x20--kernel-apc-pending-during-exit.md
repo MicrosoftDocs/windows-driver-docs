@@ -14,6 +14,7 @@ api_name:
 - KERNEL_APC_PENDING_DURING_EXIT
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x20: KERNEL\_APC\_PENDING\_DURING\_EXIT

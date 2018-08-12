@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Feature Attributes
 
 
-## <a href="" id="ddk-feature-attributes-gg"></a>
+
 
 
 When specifying a printer feature, you use attributes to provide Unidrv with the following information:

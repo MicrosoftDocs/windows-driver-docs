@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of NDIS Ports
 
 
-## <a href="" id="ddk-ndis-ports-introduction-ng"></a>
+
 
 
 This section introduces NDIS ports, which are an NDIS 6.0 feature and which enable overlying networking layers to access subinterfaces. In NDIS, network interfaces are associated with miniport adapters, and subinterfaces of a miniport adapter are called *NDIS ports*.

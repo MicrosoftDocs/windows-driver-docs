@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Processing the Surprise Removal of a NIC (Windows Vista)
 
 
-## <a href="" id="ddk-processing-the-surprise-removal-of-a-nic-ng"></a>
+
 
 
 The following steps describe how NDIS participates in the surprise removal of a NIC in Windows Vista and Windows Server 2008:

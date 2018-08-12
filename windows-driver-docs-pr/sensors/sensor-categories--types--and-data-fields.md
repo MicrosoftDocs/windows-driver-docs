@@ -1,5 +1,6 @@
 ---
 title: Sensor Categories, Types, and Data Fields
+author: windows-driver-content
 description: Sensor Categories, Types, and Data Fields
 ms.assetid: fd154fb7-afc0-4937-be0c-07b37a5912dc
 ms.author: windowsdriverdev
@@ -7,6 +8,7 @@ ms.date: 01/04/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sensor Categories, Types, and Data Fields

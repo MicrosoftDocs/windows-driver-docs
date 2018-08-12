@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_PD_CLOSE_PROVIDER Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_PD\_CLOSE\_PROVIDER

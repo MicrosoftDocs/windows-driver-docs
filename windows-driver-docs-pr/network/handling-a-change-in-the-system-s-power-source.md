@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling a Change in the System's Power Source
 
 
-## <a href="" id="ddk-handling-a-change-in-the-system-s-power-source-ng"></a>
+
 
 
 The system can change from battery power to AC power or vice versa.

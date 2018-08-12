@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Plug and Play Bus Enumerators
 
 
-## <a href="" id="ddk-plug-and-play-bus-enumerators-gg"></a>
+
 
 
 The following sections provide information about Plug and Play bus enumeration on each of the following types of port:

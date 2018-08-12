@@ -3,10 +3,11 @@ title: Setting Up Kernel-Mode Debugging of a Virtual Machine in Visual Studio
 description: You can use Microsoft Visual Studio to set up and perform kernel-mode debugging of a virtual machine.
 ms.assetid: E7A289CA-29CE-4C6F-AD08-529E58379715
 ms.author: domars
-ms.date: 04/10/2018
+ms.date: 05/04/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting Up Kernel-Mode Debugging of a Virtual Machine in Visual Studio
@@ -16,8 +17,6 @@ ms.technology: windows-devices
 >
 
 You can use Microsoft Visual Studio to set up and perform kernel-mode debugging of a virtual machine. The virtual machine can be located on the same physical computer as the debugger or on a different computer that is connected to the same network. To use Visual Studio for kernel-mode debugging, you must have the Windows Driver Kit (WDK) integrated with Visual Studio. For information about how to install the integrated environment, see [Windows Driver Development](http://go.microsoft.com/fwlink/p?linkid=301383).
-
-As an alternative to using Visual Studio to set up debugging of a virtual machine, you can do the setup manually. For more information, see [Setting Up Kernel-Mode Debugging of a Virtual Machine Manually](attaching-to-a-virtual-machine--kernel-mode-.md).
 
 The computer that runs the debugger is called the *host computer*, and the virtual machine that is being debugged is called the *target virtual machine*.
 
@@ -87,13 +86,28 @@ To enable kernel debugging using a COM port on a generation 2 virtual machine, f
 
     **Set-VMComPort –VMName TestVM 1 \\\\.\\pipe\\TestPipe**
 
+3. Restart the VM so that the new settings are in effect.
+
 For more information, see [Generation 2 Virtual Machine Overview](http://go.microsoft.com/fwlink/p/?Linkid=331326).
+
+
+## <span id="Firewalls"></span>Troubleshooting Firewalls and Network Access Issues
+
+Your debugger (WinDbg or KD) must have access through the firewall. This can even be the case for virtual serial ports that are supported by network adapters.
+
+If you are prompted by Windows to turn off the firewall when the debugger is loaded, select all three boxes.
+
+Depending on the specifics of the VM in use, you may need to change the network settings for your virtual machines to bridge them to the Microsoft Kernel Network Debug Adapter. Otherwise, the virtual machines will not have access to the network.
+
+**Windows Firewall**
+
+You can use Control Panel to allow access through the Windows firewall. Open Control Panel > System and Security, and select Allow an app through Windows Firewall. In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*. Use the check boxes to allow those two applications through the firewall. Restart your debugging application (WinDbg or KD).
+
 
 ## <span id="related_topics"></span>Related topics
 
 
-[Setting Up Kernel-Mode Debugging in Visual Studio](setting-up-kernel-mode-debugging-in-visual-studio.md)
-
+[Setting Up Network Debugging of a Virtual Machine Host](setting-up-network-debugging-of-a-virtual-machine-host.md)
  
 
  

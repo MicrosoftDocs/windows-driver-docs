@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Starting and Stopping the Still Image Service
 
 
-## <a href="" id="ddk-starting-and-stopping-the-still-image-service-si"></a>
+
 
 
 Users do not ordinarily need to start or stop the still image service, but developers must start or stop this service when they install or uninstall drivers. You can start and stop the still image service in either of two different ways:

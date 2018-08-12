@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Points to Consider When Adding Drivers
 
 
-## <a href="" id="ddk-points-to-consider-when-adding-drivers-kg"></a>
+
 
 
 Keep the following points in mind when designing a kernel-mode driver:

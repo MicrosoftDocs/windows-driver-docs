@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating the WIA Driver Item Tree
 
 
-## <a href="" id="ddk-creating-the-wia-driver-item-tree-si"></a>
+
 
 
 After the minidriver is initialized, it must create the driver item tree in the [**IWiaMiniDrv::drvInitializeWia**](https://msdn.microsoft.com/library/windows/hardware/ff544986) method by:
