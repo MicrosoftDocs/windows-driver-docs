@@ -59,6 +59,7 @@ This resource represents a hardware product (driver) that is registered to your 
   "deviceMetadataIds": [],
   "deviceType": "notSet",
   "isTestSign": false,
+  "isFlightSign": false,
   "marketingNames": [
     "marketing name 1",
     " marketing name 2"
@@ -90,6 +91,7 @@ This resource has the following values
 | deviceMetadataIds | array of GUIDs | GUIDs which map device metadata submissions to the driver |
 | deviceType | String | Indicates the type of device. Possible values are:<ul><li>“internal” - An internal component, device is part of a system and connects inside the PC</li><li>“external” - An external component, device is an external device (peripheral) that connects to a PC</li><li>“internalExternal” - Both, device can be connected internally (inside a PC) and externally (peripheral)</li><li>“notSet” – no data available</li></ul>|
 | isTestSign | Boolean | Indicates whether the product is a test signed driver. For more information about test-signing driver packages, see [WHQL Test Signature Program](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/whql-test-signature-program)  |
+| isFlightSign | Boolean | Indicates whether the product is a flight signed driver. Flight signed drivers are test drivers which can be published via Windows Update. They can be published/installed only on machines which have signed up for Windows Insider Program. They can be installed on machines without disbaling secure boot. They cannot be installed on retail machines which are not part of Windows Insider Program.|
 | marketingNames | array of strings | Marketing names or aliases of the product |
 | productName | String | The name of the driver as specified during creation |
 | selectedProductTypes | dictionary  | Key value pair where both are strings. <ul><li>**Key** represents the Operating System Family Code. For a list of Operating System Family Codes, see [list of OS family codes](#list-of-operating-system-family-codes).</li><li>**Value** represents the type of the product. For a list of type of products, see [product types](#list-of-product-types).</li></ul>|
