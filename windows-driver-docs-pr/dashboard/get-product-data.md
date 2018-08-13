@@ -55,7 +55,7 @@ This resource represents a hardware product (driver) that is registered to your 
     }
   ],
   "isCommitted": true,
-  "isExtensionInf": false,
+  "isExtensionInf": false, "_comment": "THis field is deprecated and moved to submission resource",
   "deviceMetadataIds": [],
   "deviceType": "notSet",
   "isTestSign": false,
