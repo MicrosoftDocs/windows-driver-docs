@@ -110,6 +110,11 @@ This resource represents a submission of a product.
 {
   "id": 1152921504621442000,
   "productId": 13635057453741328,
+   "workflowStatus": {
+      “currentStep": " finalizeIngestion",
+      " state": " completed",
+      " messages": []
+    },
   "links": [
     {
       "href": "https:// manage.devcenter.microsoft.com/api/v1.0/hardware/products/13635057453741329/submissions/1152921504621441944",
@@ -117,6 +122,10 @@ This resource represents a submission of a product.
       "method": "GET"
     }
   ],
+  "commitStatus": "commitPending",
+  "isExtensionInf": true,
+  "isUniversal": true,
+  "isDeclarativeInf": true,
   "name": "HARRY-Duatest2",
   "type": "derived"
 }
@@ -131,6 +140,9 @@ This resource has the following values
 | Links | array of objects | Refer to [link object](#link-object)  for more details |
 | Name | string | The name of the submission |
 | Type | string | Indicates whether the submission is an initial or derived submission. Possible values are <ul><li>initial</li><li>derived</li></ul> |
+| isExtensionInf | Boolean | Indicates whether the submission is an extension driver |
+| isUniversal | Boolean | Indicates whether the submission passes the Universal API test. A driver is DCHU compliant if it is Decalarative and Universal |
+| isDeclarativeInf | Boolean | Indicates whether the submission passes the Declarative INVerif test. A driver is DCHU compliant if it is Decalarative and Universal |
 | workflowstatus | object | This is available only when retrieving details of a specific submission. This object depicts the status of the workflow for this submission. Refer [workflow status object](#workflow-status-object)  for more details  |
 | downloads | object | This is available only when retrieving details of a specific submission only. This object depicts the downloads available for the submission. Refer [download object](#download-object)  for more details. |
 
