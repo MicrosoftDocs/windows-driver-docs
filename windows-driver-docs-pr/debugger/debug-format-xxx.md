@@ -123,6 +123,14 @@ The following bit-flags apply to all crash dump files.
 </tr>
 <tr>
 <td>
+<p>DEBUG_FORMAT_USER_SMALL_FILTER_TRIAGE</p>
+</td>
+<td>
+<p>This format is used to triage.</p>
+</td>
+</tr>
+<tr>
+<td>
 <p>DEBUG_FORMAT_USER_SMALL_PROCESS_THREAD_DATA</p>
 </td>
 <td>
