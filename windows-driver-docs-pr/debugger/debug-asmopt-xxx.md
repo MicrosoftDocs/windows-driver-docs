@@ -9,7 +9,7 @@ ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
--DEBUG_ASMOPT_XXX
+- DEBUG_ASMOPT_XXX
 api_location:
 - DbgEng.h
 api_type:
