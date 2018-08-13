@@ -51,6 +51,7 @@ The following example demonstrates the JSON request body for creating a new prod
   "firmwareVersion": "980",
   "deviceType": "external",
   "isTestSign": false,
+  "isFlightSign": false,  
   "marketingNames": [],
   "productName": "VST_apdevtest1",
   "selectedProductTypes": {
@@ -104,6 +105,7 @@ The following example demonstrates the JSON response body returned by a successf
   "firmwareVersion": "980",
   "deviceType": "external",
   "isTestSign": false,
+  "isFlightSign": false,  
   "marketingNames": [],
   "productName": "VST_apdevtest1",
   "selectedProductTypes": {
