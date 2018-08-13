@@ -75,6 +75,7 @@ The following example demonstrates the JSON response body returned by a successf
   "deviceMetadataIds": [],
   "deviceType": "notSet",
   "isTestSign": false,
+  "isFlightSign": false,  
   "marketingNames": [],
   "productName": "NewDriverHacked",
   "selectedProductTypes": {},
