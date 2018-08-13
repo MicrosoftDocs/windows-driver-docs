@@ -1,0 +1,50 @@
+---
+title: INF files for NetAdapterCx client drivers
+description: INF files for NetAdapterCx client drivers
+ms.assetid: B885CDF7-B399-440B-A385-27F1090B9C56
+keywords:
+- INF files for NetAdapterCx client drivers, NetCx INF files, NetAdapterCx INF
+ms.author: windowsdriverdev
+ms.date: 08/13/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.localizationpriority: medium
+---
+
+# INF files for NetAdapterCx client drivers
+
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+INF files for NetAdapterCx client drivers build on top of standard network INF files, with some additional keywords specific to NetAdapterCx. 
+
+For more information about standard network INF files, see [Creating Network INF Files]](../network/creating-network-inf-files.md). For more information about base INF files, see [INF File Sections and Directives](../install/inf-file-sections-and-directives.md).
+
+The following table describes the new INF keywords in NetAdapterCx.
+
+| New network keyword | INF file section | Optional or required | Description |
+| --- | --- | --- | --- |
+| **\*IfConnectorPresent** | Device.NT | Required | A boolean value that indicates if a connector is present. Set this keyword to **1**, or **TRUE**, if there is a physical adapter. <p>**Note** Replaces the **IfConnectorPresent** field from the [**NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure.</p> |
+| **\*ConnectionType** | Device.NT | Required | A [**NET_IF_CONNECTION_TYPE**](https://docs.microsoft.com/windows/desktop/api/ifdef/ne-ifdef-_net_if_connection_type) value that specifies the [NDIS network interface](../network/ndis-network-interfaces2.md) connection type. |
+| ***\*DirectionType** | Device.NT | Required | A [**NET_IF_DIRECTION_TYPE**](https://docs.microsoft.com/windows/desktop/api/ifdef/ne-ifdef-_net_if_direction_type) value that specifies the [NDIS network interface](../network/ndis-network-interfaces2.md) direction type. |
+| **\*AccessType** | Device.NT | Required | A [**NET_IF_ACCESS_TYPE**](https://docs.microsoft.com/windows/desktop/api/ifdef/ne-ifdef-_net_if_access_type) value that specifies the [NDIS network interface](../network/ndis-network-interfaces2.md) access type. |
+| **\*HardwareLoopback** | Device.NT | Required | A boolean value that indicates if **TBD** |
+
+Here is an example NT section for a NetAdapteCx client driver.
+
+```INF
+[Device.NT]
+CopyFiles=Drivers_Dir
+
+; Existing network keywords
+*IfType       = 6
+*MediaType     = 0
+*PhysicalMediaType = 14
+
+; New network keywords
+*IfConnectorPresent = 0     ; BOOLEAN
+*ConnectionType   = 1       ; NET_IF_CONNECTION_TYPE
+*DirectionType   = 0        ; NET_IF_DIRECTION_TYPE
+*AccessType     = 2         ; NET_IF_ACCESS_TYPE
+*HardwareLoopback  = 0      ; BOOLEAN
+```
