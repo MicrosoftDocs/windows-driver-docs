@@ -13,14 +13,14 @@ ms.technology: windows-devices
 Use the following method in *Microsoft Hardware APIs* to get the audiences applicable to your organization. Audiences allow you to restrict a publication to machines with a particular configuration. As an example, the test audience will only be delivered to clients with a particular registry key installed.
 
 ```
-https://manage.devcenter.microsoft.com/v1.0/my/hardware/audience
+https://manage.devcenter.microsoft.com/v1.0/my/hardware/audiences
 ```
 
 Before you can use these methods, the product and submission must already exist in your Dev Center account. To create or manage submissions for products, see the methods in [Manage product submissions](manage-product-submissions.md).
 
 | Method | URI | Description |
 |-|-|-|
-|GET |	`https://manage.devcenter.microsoft.com/v1.0/my/hardware/audience`	|Get a list of audiences applicable to your organization.|
+|GET |	`https://manage.devcenter.microsoft.com/v1.0/my/hardware/audiences`	|Get a list of audiences applicable to your organization.|
 
 ## Prerequisites
 
@@ -104,7 +104,7 @@ The following example demonstrates the JSON response body returned by a successf
   ],
   "links": [
     {
-      "href": "https://manage.devcenter..microsoft.com/api/v1/hardware/audience",
+      "href": "https://manage.devcenter..microsoft.com/api/v1/hardware/audiences",
       "rel": "self",
       "method": "GET"
     }
