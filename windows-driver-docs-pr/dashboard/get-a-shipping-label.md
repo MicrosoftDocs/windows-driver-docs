@@ -110,7 +110,7 @@ The following example demonstrates the JSON response body returned by a successf
         "distributionState": "pendingAdd"
       }
     ],
-    "restrictedToAudience": "00000000-0000-0000-0000-000000000000"
+    "restrictedToAudiences": ["00000000-0000-0000-0000-000000000000","00000000-0000-0000-0000-000000000000"]
   },
   "workflowStatus": {
     "currentStep": "microsoftApproval",
