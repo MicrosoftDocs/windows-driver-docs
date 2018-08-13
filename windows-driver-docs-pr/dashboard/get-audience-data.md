@@ -72,7 +72,7 @@ Do not provide request parameters for this method.
 
 ### Request body
 
-Do not provide a request body for this method.
+Do not provide a request body for this method. 
 
 ### Request examples
 
