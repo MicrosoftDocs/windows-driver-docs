@@ -72,7 +72,7 @@ The following example demonstrates the JSON response body returned by a successf
         }
       ],
       "isCommitted": true,
-      "isExtensionInf": false,
+      "isExtensionInf": false, "_comment": "This field is deprecated and moved to submission resource",
       "deviceMetadataIds": [],
       "deviceType": "notSet",
       "isTestSign": false,
@@ -103,7 +103,7 @@ The following example demonstrates the JSON response body returned by a successf
         }
       ],
       "isCommitted": true,
-      "isExtensionInf": false,
+      "isExtensionInf": false, "_comment": "This field is deprecated and moved to submission resource",
       "announcementDate": "2016-10-22T00:00:00Z",
       "deviceMetadataCategory": "Input.Digitizer.Multitouch",
       "deviceMetadataIds": [],
