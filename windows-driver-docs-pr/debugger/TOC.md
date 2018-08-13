@@ -309,6 +309,7 @@
 #### [DBG_ENGOPT_XXX](debug-engopt-xxx.md)
 #### [DBG_EVENT_XXX](debug-event-xxx.md)
 #### [DEBUG_FILTER_XXX](debug-filter-xxx.md)
+#### [DEBUG_FORMAT_XXX](debug-format-xxx.md)
 #### [DEBUG_OUTCTL_XXX](debug-outctl-xxx.md)
 #### [DEBUG_OUTPUT_XXX](debug-output-xxx.md)
 #### [DEBUG_PROCESS_XXX](debug-process-xxx.md)
