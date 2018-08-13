@@ -82,7 +82,7 @@ This resource represents a shipping label created for a submission of your produ
         "distributionState": "pendingAdd"
       }
     ],
-    "restrictedToAudience": "00000000-0000-0000-0000-000000000000"
+    "restrictedToAudiences": ["00000000-0000-0000-0000-000000000000","00000000-0000-0000-0000-000000000001"],
   },
   "workflowStatus": {
     "currentStep": "finalizePublishing",
@@ -229,7 +229,7 @@ This object represents the targeting details of the shipping label which is requ
       "distributionState": "pendingAdd"
     }
   ],
-  "restrictedToAudience": "00000000-0000-0000-0000-000000000000"
+  "restrictedToAudiences": ["00000000-0000-0000-0000-000000000000","00000000-0000-0000-0000-000000000001"]
 }
 ```
 This object has the following values
@@ -238,7 +238,7 @@ This object has the following values
 |:--|:--|:--|
 |hardwareIds|array of objects|Refer [hardware ID object](#hardware-id-object) for more details|
 |chids|array of objects|Refer [CHID object](#chids-object) for more details|
-|restrictedToAudience|GUID|GUID which represents an audience. Audiences allow you to restrict this publication to machines with a particular configuration. As an example, the test audience will only be delivered to clients with a particular registry key installed. To get the audiences applicable to your organization, refer [get audience](get-audience-data.md).|
+|restrictedToAudiences|array of Strings|An array of strings which represents Audiences. Audiences allow you to restrict this publication to machines with a particular configuration. As an example, the test audience will only be delivered to clients with a particular registry key installed. To get the audiences applicable to your organization, refer [get audience](get-audience-data.md).|
 
 ### Hardware ID object
 
