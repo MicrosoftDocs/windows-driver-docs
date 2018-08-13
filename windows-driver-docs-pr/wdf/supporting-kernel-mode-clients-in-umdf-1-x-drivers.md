@@ -21,8 +21,8 @@ ms.localizationpriority: medium
 
 [!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
-> [!WARNING]
-> Also see [Supporting Kernel-Mode Clients in UMDF 2.x](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/supporting-kernel-mode-clients-in-umdf-drivers).
+>[!WARNING]
+>Also see [Supporting Kernel-Mode Clients in UMDF 2.x](supporting-kernel-mode-clients-in-umdf-drivers.md).
 
 UMDF versions 1.9 and later allow UMDF drivers to support *kernel-mode clients*. A kernel-mode client can be either of the following:
 
