@@ -73,7 +73,7 @@ While UMDF version 2 offers a significant subset of functionality that was previ
 </tr>
 <tr class="even">
 <td align="left">WMI</td>
-<td align="left">[<strong>Introduction to WMI for KMDF Drivers</strong>](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/introduction-to-wmi-for-kmdf-drivers)</td>
+<td align="left">[<strong>Introduction to WMI for KMDF Drivers</strong>](introduction-to-wmi-for-kmdf-drivers.md)</td>
 </tr>
 </tbody>
 </table>
