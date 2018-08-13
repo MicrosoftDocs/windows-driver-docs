@@ -87,7 +87,7 @@ This resource has the following values
 | sharedProductId | Long | The shared product ID of the product |
 | Links | array of objects | Refer to [link object](#link-object)  for more details |
 | isCommitted | Boolean | Indicates whether the product has at least one committed submission  |
-| isExtensionInf | Boolean | Indicates whether the product is an extension driver |
+| isExtensionInf | Boolean | (DEPRECTAED) Indicates whether the product is an extension driver. This field is deprecated and should no longer be used. isExtensionInf has been moved to submission level property. |
 | deviceMetadataIds | array of GUIDs | GUIDs which map device metadata submissions to the driver |
 | deviceType | String | Indicates the type of device. Possible values are:<ul><li>“internal” - An internal component, device is part of a system and connects inside the PC</li><li>“external” - An external component, device is an external device (peripheral) that connects to a PC</li><li>“internalExternal” - Both, device can be connected internally (inside a PC) and externally (peripheral)</li><li>“notSet” – no data available</li></ul>|
 | isTestSign | Boolean | Indicates whether the product is a test signed driver. For more information about test-signing driver packages, see [WHQL Test Signature Program](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/whql-test-signature-program)  |
