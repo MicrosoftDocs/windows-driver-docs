@@ -43,7 +43,7 @@ While UMDF version 2 offers a significant subset of functionality that was previ
 <td align="left">[Supporting Functional Power States](supporting-functional-power-states.md)</td>
 </tr>
 <tr class="even">
-<td align="left">Access to WDM objects</td>
+<td align="left">Access to WDM objects and IRPs</td>
 <td align="left">[Obtaining WDM Information](obtaining-wdm-information.md)</td>
 </tr>
 <tr class="odd">
@@ -70,6 +70,10 @@ While UMDF version 2 offers a significant subset of functionality that was previ
 <tr class="odd">
 <td align="left">Remove lock opt-in for I/O requests</td>
 <td align="left">[<strong>WdfDeviceInitSetRemoveLockOptions</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451095)</td>
+</tr>
+<tr class="even">
+<td align="left">WMI</td>
+<td align="left">[<strong>Introduction to WMI for KMDF Drivers</strong>](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/introduction-to-wmi-for-kmdf-drivers)</td>
 </tr>
 </tbody>
 </table>
