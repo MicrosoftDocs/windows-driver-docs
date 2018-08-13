@@ -48,6 +48,7 @@ The following example demonstrates the JSON request body a shipping label. Only 
 *   Remove CHIDs
 *   Add audience
 *   Update/remove audience
+*   Provide Business Justification for the changes
 
 ```json 
 {
@@ -78,7 +79,8 @@ The following example demonstrates the JSON request body a shipping label. Only 
         "pnpString": "pci\\ven_8086&dev_5a85"
       }
     ],
-    "audience": "812fac65-9c26-473c-b3a9-1eb3803ac22c"
+    "restrictedToAudiences": ["812fac65-9c26-473c-b3a9-1eb3803ac22c"],
+    "businessJustification": "Business justification for updating shipping label"
   }
 }
 ```
