@@ -84,7 +84,7 @@ The following example demonstrates the JSON request body for creating a new ship
         "distributionState": "pendingAdd"
       }
     ],
-    "restrictedToAudience": "00000000-0000-0000-0000-000000000000"
+    "restrictedToAudiences": ["00000000-0000-0000-0000-000000000000","00000000-0000-0000-0000-000000000000"]
   },
   "name": "Shipping Label Name",
   "destination": "windowsUpdate"
