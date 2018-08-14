@@ -19,6 +19,10 @@ ms.localizationpriority: medium
 >[!WARNING]
 >The sequence diagrams in this topic are for illustration purposes only. They are not public contracts and are subject to change in the future. 
 
+## INF files for MBBCx client drivers
+
+INF files for MBBCx client drivers are the same as other NetAdapterCx client drivers. For more information, see [INF files for NetAdapterCx client drivers](inf-files-for-netadaptercx-client-drivers.md).
+
 ## Initialize the device
 
 In addition to those tasks required by NetAdapterCx for [NetAdapter device initialization](device-and-adapter-initialization.md), an MBB client driver must also perform the following tasks in its [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function:
