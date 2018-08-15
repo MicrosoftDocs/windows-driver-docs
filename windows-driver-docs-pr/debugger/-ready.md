@@ -14,6 +14,7 @@ api_name:
 - ready
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ready

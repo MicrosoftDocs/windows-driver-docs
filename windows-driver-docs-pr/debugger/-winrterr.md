@@ -14,6 +14,7 @@ api_name:
 - winrterr
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !winrterr

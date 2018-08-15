@@ -14,6 +14,7 @@ api_name:
 - lsc (List Current Source)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # lsc (List Current Source)

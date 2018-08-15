@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: d0db505e-2b3c-4b69-83ef-1a52e37e5d1a
 keywords:
  - IRP_MJ_WRITE Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_WRITE

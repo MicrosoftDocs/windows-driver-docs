@@ -14,6 +14,7 @@ api_name:
 - q, qq (Quit)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # q, qq (Quit)

@@ -8,6 +8,7 @@ ms.date: 03/16/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # x64 Architecture

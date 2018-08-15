@@ -2,6 +2,7 @@
 title: Inject Error (Function Index 17)
 description: This function injects errors in the NVDIMM-N module firmware. The purpose of this function is to enable software validation.
 ms.assetid: 4D77DC95-25BC-4D28-83B7-7A62383803E6
+ms.localizationpriority: medium
 ---
 
 # Inject Error (Function Index 17)

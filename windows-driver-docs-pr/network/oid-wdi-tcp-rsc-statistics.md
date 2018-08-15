@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - OID_WDI_TCP_RSC_STATISTICS Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_TCP\_RSC\_STATISTICS

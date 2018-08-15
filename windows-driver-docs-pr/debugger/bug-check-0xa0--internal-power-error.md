@@ -14,6 +14,7 @@ api_name:
 - INTERNAL_POWER_ERROR
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xA0: INTERNAL\_POWER\_ERROR

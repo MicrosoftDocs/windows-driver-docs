@@ -3,6 +3,7 @@ title: PIO Techniques
 author: windows-driver-content
 description: PIO Techniques
 ms.assetid: bd673e43-c864-416b-b0d0-23c4ba1b870c
+ms.localizationpriority: medium
 ---
 
 # PIO Techniques

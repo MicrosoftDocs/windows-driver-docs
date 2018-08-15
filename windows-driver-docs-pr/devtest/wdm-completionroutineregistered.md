@@ -14,6 +14,7 @@ api_name:
 - CompletionRoutineRegistered
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CompletionRoutineRegistered rule (wdm)

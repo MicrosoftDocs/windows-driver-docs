@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - NDIS_STATUS_PM_HARDWARE_CAPABILITIES Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_PM\_HARDWARE\_CAPABILITIES

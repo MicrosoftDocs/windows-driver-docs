@@ -9,6 +9,7 @@ api_name:
 - suppressAddRemovePrograms XML Element
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # suppressAddRemovePrograms XML Element

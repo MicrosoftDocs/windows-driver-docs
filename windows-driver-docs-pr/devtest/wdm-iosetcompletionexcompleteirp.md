@@ -14,6 +14,7 @@ api_name:
 - IoSetCompletionExCompleteIrp
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IoSetCompletionExCompleteIrp rule (wdm)

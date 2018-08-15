@@ -14,6 +14,7 @@ api_name:
 - drvobj
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !drvobj

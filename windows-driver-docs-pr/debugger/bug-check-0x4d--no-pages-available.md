@@ -14,6 +14,7 @@ api_name:
 - NO_PAGES_AVAILABLE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x4D: NO\_PAGES\_AVAILABLE

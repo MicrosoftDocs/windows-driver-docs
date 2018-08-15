@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - WDI_TLV_INDICATION_CAN_SUSTAIN_AP Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_INDICATION\_CAN\_SUSTAIN\_AP

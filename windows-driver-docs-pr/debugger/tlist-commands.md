@@ -14,6 +14,7 @@ api_name:
 - TList Commands
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # TList Commands

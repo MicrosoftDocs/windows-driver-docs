@@ -14,6 +14,7 @@ api_name:
 - xhci_findowner
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !xhci\_findowner

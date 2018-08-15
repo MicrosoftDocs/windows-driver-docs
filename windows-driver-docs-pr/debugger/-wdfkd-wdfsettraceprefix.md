@@ -14,6 +14,7 @@ api_name:
 - wdfkd.wdfsettraceprefix
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfsettraceprefix

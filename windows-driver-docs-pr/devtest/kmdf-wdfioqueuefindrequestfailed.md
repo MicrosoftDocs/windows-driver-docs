@@ -14,6 +14,7 @@ api_name:
 - WdfIoQueueFindRequestFailed
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # WdfIoQueueFindRequestFailed rule (kmdf)

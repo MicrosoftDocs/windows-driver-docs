@@ -7,6 +7,7 @@ ms.date: 06/29/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating a camera driver MFT for a UWP device app

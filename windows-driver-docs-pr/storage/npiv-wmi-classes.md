@@ -2,6 +2,7 @@
 title: NPIV WMI Classes
 description: NPIV WMI Classes
 ms.assetid: 217A5DDB-0402-4C0E-B6AB-62B571542E53
+ms.localizationpriority: medium
 ---
 
 # NPIV WMI Classes

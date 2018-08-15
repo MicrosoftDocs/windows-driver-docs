@@ -4,7 +4,7 @@ author: windows-driver-content
 description: Imaging device driver design guide
 ms.assetid: dfdeeec8-bd06-452a-9189-87b20ce27699
 ms.author: windowsdriverdev
-ms.date: 01/24/2018
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -16,7 +16,9 @@ ms.technology: windows-devices
 This section contains information about Windows Image Acquisition (WIA) drivers, Still Image (STI) drivers, and Web Services on Devices (WSD.)
 
 > [!NOTE]
-> The WIA programming interface should be used to develop imaging drivers for Microsoft Windows Me, Windows XP, and later operating systems. The STI programming interface should only be used to develop imaging drivers for Microsoft Windows 98 and Windows 2000.
+> The WIA programming interface is used to develop imaging drivers for modern Windows operating systems. 
+> The STI programming interface was used to develop imaging drivers in legacy Windows operating systems. 
+> The STI programming interface documentation will be archived in a future release. 
 
 ## In this section
 
@@ -51,9 +53,4 @@ This section contains information about Windows Image Acquisition (WIA) drivers,
 
  
 -   [Imaging DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_image)
-
-
-
-
-
 

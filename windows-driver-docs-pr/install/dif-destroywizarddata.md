@@ -9,6 +9,7 @@ api_name:
 - DIF_DESTROYWIZARDDATA
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # DIF_DESTROYWIZARDDATA

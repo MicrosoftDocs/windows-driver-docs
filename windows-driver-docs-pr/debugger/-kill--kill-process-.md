@@ -14,6 +14,7 @@ api_name:
 - .kill (Kill Process)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .kill (Kill Process)

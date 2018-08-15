@@ -14,6 +14,7 @@ api_name:
 - .do
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .do

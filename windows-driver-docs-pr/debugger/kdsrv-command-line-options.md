@@ -14,6 +14,7 @@ api_name:
 - KdSrv Command-Line Options
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # KdSrv Command-Line Options

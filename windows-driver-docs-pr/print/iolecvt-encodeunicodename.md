@@ -16,6 +16,7 @@ api_name:
 - IOleCvt.EncodeUnicodeName
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # IOleCvt::EncodeUnicodeName method

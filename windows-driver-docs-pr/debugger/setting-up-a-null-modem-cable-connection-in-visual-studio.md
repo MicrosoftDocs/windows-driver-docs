@@ -7,6 +7,7 @@ ms.date: 04/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # <span id="debugger.setting_up_a_null-modem_cable_connection_in_visual_studio"></span>Setting Up Kernel-Mode Debugging over a Serial Cable in Visual Studio

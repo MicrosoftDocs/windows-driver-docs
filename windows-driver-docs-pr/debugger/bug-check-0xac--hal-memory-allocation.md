@@ -14,6 +14,7 @@ api_name:
 - HAL_MEMORY_ALLOCATION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xAC: HAL\_MEMORY\_ALLOCATION

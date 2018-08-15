@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Mobile Broadband Implementation Guidelines for USB Devices
@@ -97,7 +98,7 @@ When a device loses signal strength the device must indicate **MBIMActivationSta
 ## DNS Server Information
 
 
-When Basic IP information (as defined in MBIM section 10.5.20.1) is provided via MBIM\_CID\_IP\_CONFIGURATION, DNS server information (as defined in MBIM section 10.5.20.1) must also be provided via MBIM\_CID\_IP\_CONFIGURATION. DNS server information may be provided via MBIM\_CID\_IP\_CONFIGURATION even when Basic IP information is not provided via MBIM\_CID\_IP\_CONFIGURATION. This applies to both IPv4 and IPv6.
+When Basic IP information (as defined in MBIM section 10.5.20.1) is provided via MBIM\_CID\_IP\_CONFIGURATION, DNS server information (as defined in MBIM section 10.5.20.1) can also be provided via MBIM\_CID\_IP\_CONFIGURATION. When DNS server information is updated, MBIM\_CID\_IP\_CONFIGURAITON must have the complete Basic IP information obtained before. DNS server information can be provided solely via MBIM\_CID\_IP\_CONFIGURATION even if the Basic IP information is not provided via MBIM\_CID\_IP\_CONFIGURATION. This applies to both IPv4 and IPv6.
 
 ## IPv6
 

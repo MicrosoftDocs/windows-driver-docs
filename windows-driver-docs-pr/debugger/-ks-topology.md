@@ -14,6 +14,7 @@ api_name:
 - ks.topology
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ks.topology

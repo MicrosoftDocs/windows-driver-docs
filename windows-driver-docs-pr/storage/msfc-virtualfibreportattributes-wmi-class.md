@@ -2,6 +2,7 @@
 title: MSFC\_VirtualFibrePortAttributes WMI Class
 description: MSFC\_VirtualFibrePortAttributes WMI Class
 ms.assetid: D605D63F-0EBF-44C0-8ADE-729F2DE48487
+ms.localizationpriority: medium
 ---
 
 # MSFC\_VirtualFibrePortAttributes WMI Class

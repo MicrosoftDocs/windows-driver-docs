@@ -14,6 +14,7 @@ api_name:
 - SYMBOLIC_INITIALIZATION_FAILED
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x64: SYMBOLIC\_INITIALIZATION\_FAILED

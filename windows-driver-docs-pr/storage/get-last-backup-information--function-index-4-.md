@@ -2,6 +2,7 @@
 title: Get Last Backup Information (Function Index 4)
 description: This function returns information about the saved image.
 ms.assetid: F73A763B-4A4A-4CAB-AA62-AFA79849884B
+ms.localizationpriority: medium
 ---
 
 # Get Last Backup Information (Function Index 4)

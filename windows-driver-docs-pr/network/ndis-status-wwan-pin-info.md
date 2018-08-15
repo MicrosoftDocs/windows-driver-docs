@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -NDIS_STATUS_WWAN_PIN_INFO Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WWAN\_PIN\_INFO
@@ -54,11 +55,11 @@ When miniport drivers use the NDIS\_STATUS\_WWAN\_PIN\_INFO notification to resp
 
 When miniport drivers use the NDIS\_STATUS\_WWAN\_PIN\_INFO notification to respond to **WwanPinOperationEnable**, **WwanPinOperationDisable**, and **WwanPinOperationChange**, they should implement the following operations:
 
--   For successful requests, miniport drivers must set **uStatus** to WWAN\_STATUS\_SUCCESS. Other members are ignored.
+-   For successful requests, miniport drivers must set **uStatus** to WWAN\_STATUS\_SUCCESS. For other members in WWAN_PIN_INFO, see the following circumstances.
 
 -   Miniport drivers must set **uStatus** to WWAN\_STATUS\_SUCCESS for PIN-enable and PIN-disable operations when the PIN is already in the requested state. Miniport drivers must set **PinType** to **WwanPinTypeNone**. Other members are ignored.
 
--   When a PIN mode is changed from disabled to enabled the PIN state should be WwanPinStateNone.
+-   When a PIN mode is changed from disabled to enabled, the PIN state should be WwanPinStateNone.
 
 -   If PIN1 is enabled, the PIN state shall become WwanPinStateEnter when power is cycled to the MB device.
 

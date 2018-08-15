@@ -14,6 +14,7 @@ api_name:
 - CACHE_MANAGER
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x34: CACHE\_MANAGER

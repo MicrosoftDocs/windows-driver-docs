@@ -14,6 +14,7 @@ api_name:
 - NETWORK_BOOT_DUPLICATE_ADDRESS
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xBC: NETWORK\_BOOT\_DUPLICATE\_ADDRESS

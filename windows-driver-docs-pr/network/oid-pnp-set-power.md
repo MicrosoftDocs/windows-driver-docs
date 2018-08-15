@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_PNP_SET_POWER Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_PNP\_SET\_POWER

@@ -14,6 +14,7 @@ api_name:
 - wdfkd.wdfcrashdump
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfcrashdump

@@ -4,10 +4,11 @@ author: windows-driver-content
 description: If a firmware update fails, the results can be devastating.
 ms.assetid: F002100E-2505-4CCB-B048-27D9CA1C8F3E
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Seamless crisis prevention and recovery
@@ -77,27 +78,24 @@ When the system firmware is performing the actual update there are a series of p
 
  
 
-Any failure must result in an appropriate Last Attempt Status error code; refer to Table 15 (ESRT Last Attempt Status Field Values) for the specific device or system which is being updated.
+Any failure must result in an appropriate Last Attempt Status error code. For more information, see the Last Attempt Status error code information in [ESRT table definition](esrt-table-definition.md) and [Firmware update status](firmware-update-status.md).
 
 If multiple updates are being applied and some pass the pre-installation checks and others do not, platform firmware can proceed with updating the firmware for the resources that passed the pre-installation checks. However, any resource that failed the pre-installation check must not be updated.
 
 ## Post-installation criteria
 
-
 After firmware (device or system) has been installed it must be checked to validate that the new updated firmware image is what was intended. This is to minimize any risks of any corruption introduced during the actual updating process (for example sticky bits in flash ROM, noise on a bus during the updating and so on).
 
 The updating process must validate that the updated firmware passes integrity checks. If it fails then it must recover by rolling back to the last known good version of the firmware.
 
-Any failure must result in an appropriate Last Attempt Status error code. For more information, see the Last Attempt Status error code information in [ESRT table definition](esrt-table-definition.md).
+Any failure must result in an appropriate Last Attempt Status error code. For more information, see the Last Attempt Status error code information in [ESRT table definition](esrt-table-definition.md) and [Firmware update status](firmware-update-status.md).
 
 ## Recovering from install and boot failures
 
-
 In order to prevent a system from reaching a non-bootable state, the firmware update mechanism must meet the following requirements in cases where firmware updates fail to install, or in cases where the system fails to boot successfully.
 
-**Note**  In the following sections, the term “committed” is used to describe firmware. Once firmware has been ‘committed,’ the firmware is treated as fully installed, and will not be automatically rolled back by the firmware due to boot failure, etc. “Uncommitted” firmware describes partially updated firmware and can potentially be rolled back to a previous version in cases where the firmware update cannot be completed or a failure is detected by the updating firmware (e.g., invalid CRC check in the update). Whether firmware is committed is something that the firmware should track internally, and is not captured as part of the ESRT.
-
- 
+> [!NOTE]
+> In the following sections, the term "committed" is used to describe firmware. Once firmware has been "committed", the firmware is treated as fully installed, and will not be automatically rolled back by the firmware due to boot failure, etc. "Uncommitted" firmware describes partially updated firmware and can potentially be rolled back to a previous version in cases where the firmware update cannot be completed or a failure is detected by the updating firmware (for example, invalid CRC check in the update). Whether firmware is committed is something that the firmware should track internally, and is not captured as part of the ESRT.
 
 ### Firmware update unsuccessful
 
@@ -129,6 +127,3 @@ If a hardware vendor decides to implement additional logic to determine whether 
 [Processing updates](processing-updates.md)  
 [Device I/O from the UEFI environment](device-i-o-from-the-uefi-environment.md)  
 [Firmware update status](firmware-update-status.md)  
-
-
-

@@ -14,6 +14,7 @@ api_name:
 - MEMORY_IMAGE_CORRUPT
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xA2: MEMORY\_IMAGE\_CORRUPT

@@ -14,6 +14,7 @@ api_name:
 - BufAfterReqCompletedIntIoctl
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # BufAfterReqCompletedIntIoctl rule (kmdf)

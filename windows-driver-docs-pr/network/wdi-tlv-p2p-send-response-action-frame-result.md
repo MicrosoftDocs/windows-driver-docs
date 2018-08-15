@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - WDI_TLV_P2P_SEND_RESPONSE_ACTION_FRAME_RESULT Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_SEND\_RESPONSE\_ACTION\_FRAME\_RESULT

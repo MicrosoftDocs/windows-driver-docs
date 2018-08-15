@@ -14,6 +14,7 @@ api_name:
 - devext
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !devext

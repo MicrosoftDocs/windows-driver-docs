@@ -14,6 +14,7 @@ api_name:
 - SpinLockDpc
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # SpinLockDpc rule (wdm)

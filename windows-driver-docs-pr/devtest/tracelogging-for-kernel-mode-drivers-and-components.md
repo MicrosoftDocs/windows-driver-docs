@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # <span id="devtest.tracelogging_for_kernel-mode_drivers_and_components"></span>TraceLogging for kernel-mode drivers and components

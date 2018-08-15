@@ -14,6 +14,7 @@ api_name:
 - .reboot (Reboot Target Computer)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .reboot (Reboot Target Computer)

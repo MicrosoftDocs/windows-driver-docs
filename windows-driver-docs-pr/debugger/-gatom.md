@@ -14,6 +14,7 @@ api_name:
 - gatom
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !gatom

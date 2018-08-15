@@ -14,6 +14,7 @@ api_name:
 - powertriage
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !powertriage

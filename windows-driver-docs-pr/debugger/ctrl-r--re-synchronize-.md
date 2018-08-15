@@ -14,6 +14,7 @@ api_name:
 - CTRL+R (Re-synchronize)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CTRL+R (Re-synchronize)

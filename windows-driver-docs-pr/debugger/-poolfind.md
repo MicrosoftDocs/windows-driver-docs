@@ -14,6 +14,7 @@ api_name:
 - poolfind
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !poolfind

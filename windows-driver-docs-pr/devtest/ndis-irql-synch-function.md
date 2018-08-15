@@ -14,6 +14,7 @@ api_name:
 - Irql_Synch_Function
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Irql\_Synch\_Function rule (ndis)

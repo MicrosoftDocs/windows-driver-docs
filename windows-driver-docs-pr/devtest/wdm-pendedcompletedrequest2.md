@@ -14,6 +14,7 @@ api_name:
 - PendedCompletedRequest2
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # PendedCompletedRequest2 rule (wdm)

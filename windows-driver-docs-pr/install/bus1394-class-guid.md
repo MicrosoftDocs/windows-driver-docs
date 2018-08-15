@@ -11,6 +11,7 @@ api_location:
 - 1394.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # BUS1394_CLASS_GUID

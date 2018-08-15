@@ -14,6 +14,7 @@ api_name:
 - gpiokd.gpioext
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !gpiokd.gpioext

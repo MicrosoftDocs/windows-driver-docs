@@ -14,6 +14,7 @@ api_name:
 - FileObjectConfigured
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # FileObjectConfigured rule (kmdf)

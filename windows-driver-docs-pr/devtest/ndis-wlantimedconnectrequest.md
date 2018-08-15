@@ -14,6 +14,7 @@ api_name:
 - WlanTimedConnectRequest
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # WlanTimedConnectRequest rule (ndis)

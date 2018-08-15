@@ -14,6 +14,7 @@ api_name:
 - acpiirqarb
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !acpiirqarb

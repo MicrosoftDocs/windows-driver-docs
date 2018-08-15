@@ -14,6 +14,7 @@ api_name:
 - DRIVER_IRQL_NOT_LESS_OR_EQUAL
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xD1: DRIVER\_IRQL\_NOT\_LESS\_OR\_EQUAL

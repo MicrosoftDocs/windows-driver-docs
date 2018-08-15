@@ -9,6 +9,7 @@ api_name:
 - SetupDiGetWizardPage
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # SetupDiGetWizardPage

@@ -9,6 +9,7 @@ api_name:
 - CM_Detect_Resource_Conflict
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Detect_Resource_Conflict

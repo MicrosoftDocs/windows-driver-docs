@@ -14,6 +14,7 @@ api_name:
 - rcdrkd.rcdrlogsave
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !rcdrkd.rcdrlogsave

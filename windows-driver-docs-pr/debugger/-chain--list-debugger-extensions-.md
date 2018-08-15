@@ -14,6 +14,7 @@ api_name:
 - .chain (List Debugger Extensions)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .chain (List Debugger Extensions)

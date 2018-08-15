@@ -14,6 +14,7 @@ api_name:
 - mapped_file
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !mapped\_file

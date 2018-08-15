@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: 2807eeca-c614-469a-baeb-3d2d65416c57
 keywords:
  - IRP_MN_EJECT Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_EJECT

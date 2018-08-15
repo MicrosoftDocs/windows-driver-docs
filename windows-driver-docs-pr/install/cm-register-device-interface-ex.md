@@ -10,6 +10,7 @@ api_name:
 - CM_Register_Device_Interface_ExW
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Register_Device_Interface_Ex

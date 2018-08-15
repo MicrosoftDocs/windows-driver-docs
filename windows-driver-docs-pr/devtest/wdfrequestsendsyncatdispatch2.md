@@ -14,6 +14,7 @@ api_name:
 - WdfRequestSendSyncAtDispatch2
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # WdfRequestSendSyncAtDispatch2 rule (kmdf)

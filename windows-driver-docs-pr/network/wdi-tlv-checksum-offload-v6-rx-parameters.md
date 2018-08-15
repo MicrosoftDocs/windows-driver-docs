@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - WDI_TLV_CHECKSUM_OFFLOAD_V6_RX_PARAMETERS (0xDD) Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CHECKSUM\_OFFLOAD\_V6\_RX\_PARAMETERS (0xDD)

@@ -14,6 +14,7 @@ api_name:
 - storagekd.storadapter
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !storagekd.storadapter

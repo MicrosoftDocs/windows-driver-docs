@@ -3,6 +3,7 @@ title: Docking versus laptop slate conversion
 author: windows-driver-content
 description: This topic describes the distinctions for indicators between laptop slate conversion and docking actions.
 ms.assetid: B6E33F63-5BEA-4588-80D2-F49821856708
+ms.localizationpriority: medium
 ---
 
 # Docking versus laptop slate conversion

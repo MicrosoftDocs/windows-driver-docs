@@ -9,6 +9,7 @@ api_name:
 - CM_Delete_Class_Key_Ex
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Delete_Class_Key_Ex

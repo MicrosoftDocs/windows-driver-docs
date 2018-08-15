@@ -14,6 +14,7 @@ api_name:
 - GuardedRegions
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # GuardedRegions rule (wdm)

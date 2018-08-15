@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Defining the accelerometer object
@@ -69,7 +70,7 @@ The driver supports a **WriteRegister** method that it invokes internally when w
 
 The complete register map for the accelerometer is found within table 16 of the device's data sheet. The sample driver supports a subset of the values found in the register map. These supported values are found within the Adxl345.h header file:
 
-```ManagedCPlusPlus
+```cpp
 //
 // Register interface
 //
@@ -107,7 +108,7 @@ The complete register map for the accelerometer is found within table 16 of the 
 ```
 
 ## Related topics
-[SpbAccelerometer driver sample](spbaccelerometer-driver-sample.md)  
+[SpbAccelerometer driver sample](spbaccelerometer-driver-sample.md)
 
 
 

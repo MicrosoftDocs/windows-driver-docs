@@ -8,6 +8,7 @@ ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # <span id="debugger.debug_universal_drivers_-_step_by_step_lab__echo_kernel-mode_"></span>Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)
@@ -1174,7 +1175,7 @@ You can display or set process information by using the [**!process**](-process.
     TYPE mismatch for process object at 82a9acc0
     ```
 
-    The process object is now longer available, as the echoapp.exe process is no longer running.
+    The process object is no longer available, as the echoapp.exe process is no longer running.
 
 ### <span id="Threads"></span><span id="threads"></span><span id="THREADS"></span>Threads
 

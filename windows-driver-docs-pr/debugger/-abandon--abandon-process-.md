@@ -14,6 +14,7 @@ api_name:
 - .abandon (Abandon Process)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .abandon (Abandon Process)

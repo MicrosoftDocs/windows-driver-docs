@@ -2,6 +2,7 @@
 title: JEDEC Byte-Addressable Energy-Backed Interface NVDIMM Device-Specific Method (\_DSM)
 description: This section describes the Device-Specific Method (\_DSM) interface associated with NVDIMM ACPI Namespace Devices that implement the JEDEC Byte Addressable Energy Backed Interface standard.
 ms.assetid: 155415F4-1295-4115-B6E9-A4570906CA41
+ms.localizationpriority: medium
 ---
 
 # <span id="storage.jedec_byte-addressable_energy-backed_interface_nvdimms_device-specific_method___dsm_"></span>JEDEC Byte-Addressable Energy-Backed Interface NVDIMM Device-Specific Method (\_DSM)

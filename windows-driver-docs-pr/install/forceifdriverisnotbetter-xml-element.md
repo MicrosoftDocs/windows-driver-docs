@@ -9,6 +9,7 @@ api_name:
 - forceIfDriverIsNotBetter XML Element
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # forceIfDriverIsNotBetter XML Element

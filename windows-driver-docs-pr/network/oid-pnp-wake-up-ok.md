@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_PNP_WAKE_UP_OK Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_PNP\_WAKE\_UP\_OK

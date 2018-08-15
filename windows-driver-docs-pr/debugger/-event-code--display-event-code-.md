@@ -14,6 +14,7 @@ api_name:
 - .event_code (Display Event Code)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .event\_code (Display Event Code)

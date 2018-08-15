@@ -14,6 +14,7 @@ api_name:
 - INVALID_FLOATING_POINT_STATE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xE7: INVALID\_FLOATING\_POINT\_STATE

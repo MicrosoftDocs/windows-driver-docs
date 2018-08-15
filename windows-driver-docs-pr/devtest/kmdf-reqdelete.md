@@ -14,6 +14,7 @@ api_name:
 - ReqDelete
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ReqDelete rule (kmdf)

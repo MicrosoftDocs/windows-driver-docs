@@ -14,6 +14,7 @@ api_name:
 - .asm (Change Disassembly Options)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .asm (Change Disassembly Options)

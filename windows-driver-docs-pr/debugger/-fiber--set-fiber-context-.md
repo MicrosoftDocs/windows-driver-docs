@@ -14,6 +14,7 @@ api_name:
 - .fiber (Set Fiber Context)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .fiber (Set Fiber Context)

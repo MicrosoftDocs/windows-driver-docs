@@ -14,6 +14,7 @@ api_name:
 - DRIVER_RETURNED_HOLDING_CANCEL_LOCK
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x11B: DRIVER\_RETURNED\_HOLDING\_CANCEL\_LOCK

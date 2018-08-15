@@ -14,6 +14,7 @@ api_name:
 - UsbDeviceCreateTarget
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # UsbDeviceCreateTarget rule (kmdf)

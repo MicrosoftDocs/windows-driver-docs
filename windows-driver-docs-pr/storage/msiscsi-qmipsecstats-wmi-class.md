@@ -2,6 +2,7 @@
 title: MSiSCSI\_QMIPSECStats WMI Class
 description: MSiSCSI\_QMIPSECStats WMI Class
 ms.assetid: 81a21c25-5f03-4ad0-a892-3947d65975d2
+ms.localizationpriority: medium
 ---
 
 # MSiSCSI\_QMIPSECStats WMI Class

@@ -14,6 +14,7 @@ api_name:
 - wudfext.wudfdevice
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wudfext.wudfdevice

@@ -14,6 +14,7 @@ api_name:
 - tt (Trace to Next Return)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # tt (Trace to Next Return)

@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - WDI_TLV_ACTION_FRAME_DEVICE_CONTEXT Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ACTION\_FRAME\_DEVICE\_CONTEXT

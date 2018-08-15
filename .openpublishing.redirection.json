@@ -4971,6 +4971,31 @@
       "source_path": "windows-driver-docs-pr/network/scatter-gather-dma2.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/network/ndis-scatter-gather-dma",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/mbbdevicearmwake.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/netcx/mbbcx-api-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/mbbdevicedisarmwake.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/netcx/mbbcx-api-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/whats-new-in-netadaptercx.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/netcx/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/introduction-to-netadaptercx-1-1.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/netcx/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/introduction-to-netadaptercx-1-2.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/netcx/index",
+      "redirect_document_id": false
     }
   ]
 }

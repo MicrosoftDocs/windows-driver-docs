@@ -8,9 +8,10 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
-# Programming Guide
+# Programming guide
 
 
 The sensors programming guide includes information that shows how to build, and then test a universal sensor driver.
@@ -19,10 +20,13 @@ A universal sensor driver is a sensor driver that was developed based on the uni
 
 ## In this section
 
+|Topic|Description|
+|---|---|
+|[How to build a universal sensor driver](how-to-build-a-universal-sensor-driver.md)|This section provide step by step instructions on how to build a sensor driver|
+|[Sensor Data Batching for Power Savings](sensor-batching-for-power-saving-.md)|This section provides information about Sensor data batching feature.|
+|[Filtering data](filtering-data-v2.md)|This section provides information about sensor data filtering.|
+|[Fusion Sensor Implementation Details](fusion-sensor-implementation-details.md)|This section provides information about sensor fusion drivers.|
 
--   [How to build a universal sensor driver](how-to-build-a-universal-sensor-driver.md)
-
- 
 
  
 

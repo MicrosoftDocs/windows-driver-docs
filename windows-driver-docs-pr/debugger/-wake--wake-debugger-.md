@@ -14,6 +14,7 @@ api_name:
 - .wake (Wake Debugger)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .wake (Wake Debugger)

@@ -14,6 +14,7 @@ api_name:
 - HwStorPortProhibitedDDIs
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # HwStorPortProhibitedDDIs rule (storport)

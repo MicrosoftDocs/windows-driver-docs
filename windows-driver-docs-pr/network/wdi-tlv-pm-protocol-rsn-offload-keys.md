@@ -9,6 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - WDI_TLV_PM_PROTOCOL_RSN_OFFLOAD_KEYS Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # WDI_TLV_PM_PROTOCOL_RSN_OFFLOAD_KEYS

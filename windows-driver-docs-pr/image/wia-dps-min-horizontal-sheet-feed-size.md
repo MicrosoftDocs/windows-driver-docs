@@ -16,6 +16,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA\_DPS\_MIN\_HORIZONTAL\_SHEET\_FEED\_SIZE

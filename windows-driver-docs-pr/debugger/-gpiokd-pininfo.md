@@ -14,6 +14,7 @@ api_name:
 - gpiokd.pininfo
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !gpiokd.pininfo

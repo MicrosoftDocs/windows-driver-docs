@@ -14,6 +14,7 @@ api_name:
 - ReqSendFail
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ReqSendFail rule (kmdf)

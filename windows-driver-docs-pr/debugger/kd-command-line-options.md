@@ -14,6 +14,7 @@ api_name:
 - KD Command-Line Options
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # KD Command-Line Options

@@ -14,6 +14,7 @@ api_name:
 - analyze
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !analyze

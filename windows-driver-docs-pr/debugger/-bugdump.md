@@ -14,6 +14,7 @@ api_name:
 - bugdump
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !bugdump

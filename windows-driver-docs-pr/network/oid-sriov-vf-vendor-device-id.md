@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_SRIOV_VF_VENDOR_DEVICE_ID Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_SRIOV\_VF\_VENDOR\_DEVICE\_ID

@@ -14,6 +14,7 @@ api_name:
 - DBH Command-Line Options
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # DBH Command-Line Options

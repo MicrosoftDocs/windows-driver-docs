@@ -9,6 +9,7 @@ api_name:
 - DIF_INSTALLCLASSDRIVERS
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # DIF_INSTALLCLASSDRIVERS

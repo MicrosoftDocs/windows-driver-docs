@@ -9,6 +9,7 @@ api_name:
 - icon XML Element
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # icon XML Element

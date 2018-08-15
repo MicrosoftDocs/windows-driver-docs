@@ -7,6 +7,7 @@ ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # <span id="debugger.getting_started_with_windbg__kernel-mode_"></span>Getting Started with WinDbg (Kernel-Mode)

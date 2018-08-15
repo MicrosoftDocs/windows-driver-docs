@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: 5cadb1e2-7011-42a5-8e41-6473069b25a6
 keywords:
  - IRP_MN_CANCEL_REMOVE_DEVICE Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_CANCEL\_REMOVE\_DEVICE

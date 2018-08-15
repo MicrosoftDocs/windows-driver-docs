@@ -9,6 +9,7 @@ ms.date: 03/19/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing an MBBCx client driver
@@ -17,6 +18,10 @@ ms.technology: windows-devices
 
 >[!WARNING]
 >The sequence diagrams in this topic are for illustration purposes only. They are not public contracts and are subject to change in the future. 
+
+## INF files for MBBCx client drivers
+
+INF files for MBBCx client drivers are the same as other NetAdapterCx client drivers. For more information, see [INF files for NetAdapterCx client drivers](inf-files-for-netadaptercx-client-drivers.md).
 
 ## Initialize the device
 
@@ -48,6 +53,10 @@ The following example demonstrates how to initialize the MBB device. Error handl
 Unlike other types of NetAdapterCx drivers, MBB client drivers must not create the NETADAPTER object from within the *EvtDriverDeviceAdd* callback function. Instead, it will be instructed by MBBCx to do so later.
 
 Next, the client driver must call [**MbbDeviceSetMbimParameters**](mbbdevicesetmbimparameters.md), typically in the [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function that follows.
+
+This message flow diagram illustrates the initialization process.
+
+![MBBCx client driver initialization process](images/mbbcx_initializing.png)
 
 ## Handling MBIM control messages
 
@@ -82,11 +91,17 @@ In the implementation of the *EvtMbbDeviceCreateAdapter* callback function, the 
 
 3. We recommend that MBBCx client drivers keep an internal mapping between the created NETADAPTER object and the returned *SessionId*. This helps track the data session-to-NETADAPTER object relationship, which is especially useful when multiple PDP contexts/EPS bearers have been activated.
 
+4. Before returning from *EvtMbbDeviceCreateAdapter*, client drivers must start the adapter by calling [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstart). Optionally, they can also set the adapter's capabilities by calling one or more of these functions *before* the call to **NetAdapterStart**: 
+    - [**NetAdapterSetDatapathCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetdatapathcapabilities)
+    - [**NetAdapterSetLinkLayerCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetlinklayercapabilities)
+    - [**NetAdapterSetLinkLayerMtuSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetlinklayermtusize)
+    - [**NetAdapterSetPowerCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetpowercapabilities)
+
 MBBCx invokes this callback function at least once, so there is always one NETADPATER object for the primary PDP context/default EPS bearer. If multiple PDP contexts/EPS bearers are activated, MBBCx might invoke this callback function more times, once for every data session to be established. There must be a one-to-one relationship between the network interface represented by the NETADAPTER object and a data session, as shown in the following diagram.
 
 ![Multiple NetAdapters](images/multi-netadapter.png)
 
-The following example shows how to create a NETADAPTER object for a data session.
+The following example shows how to create a NETADAPTER object for a data session. Note that error handling and code required for setting up adapter capabilities is left out for brevity and clarity.
 
 ```C++
     NTSTATUS
@@ -97,9 +112,6 @@ The following example shows how to create a NETADAPTER object for a data session
     {
         // Get the client driver defined per-device context 
         PMY_DEVICE_CONTEXT deviceContext = MyGetDeviceContext(Device);
-        
-        // Set up data path capabilities
-        ...
 
         // Set up the client driver defined per-adapter context
         WDF_OBJECT_ATTRIBUTES adapterAttributes;
@@ -109,18 +121,17 @@ The following example shows how to create a NETADAPTER object for a data session
 
         // Create the NETADAPTER object
         NETADAPTER netAdapter;
-        NTSTATUS ntStatus = NetAdapterCreate(AdapterInit, 
-                                            &adapterAttributes,
-                                            &netAdapter);
+        NTSTATUS status = NetAdapterCreate(AdapterInit, 
+                                           &adapterAttributes,
+                                           &netAdapter);
         
         // Initialize the adapter for MBB
-        ntStatus = MbbAdapterInitialize(netAdapter);
+        status = MbbAdapterInitialize(netAdapter);
 
         // Retrieve the Session ID and use an array to store
         // the session <-> NETADAPTER object mapping
         ULONG sessionId;
-        PMY_NETADAPTER_CONTEXT netAdapterContext = 
-            MyGetNetAdapterContext(netAdapter);
+        PMY_NETADAPTER_CONTEXT netAdapterContext = MyGetNetAdapterContext(netAdapter);
 
         netAdapterContext->NetAdapter = netAdapter;
 
@@ -128,10 +139,35 @@ The following example shows how to create a NETADAPTER object for a data session
 
         netAdapterContext->SessionId = sessionId;
 
-        deviceContext->Sessions[sessionId].NetAdapterContext 
-            = netAdapterContext;        
+        deviceContext->Sessions[sessionId].NetAdapterContext = netAdapterContext;
+
+        //
+        // Optional: set adapter capabilities
+        //
+        ...
+        NetAdapterSetDatapathCapabilities(netAdapter, 
+                                          &txCapabilities, 
+                                          &rxCapabilities);
+
+        ...
+        NetAdapterSetLinkLayerCapabilities(netAdapter,
+                                           &linkLayerCapabilities);
+                                           
+        ...
+        NetAdapterSetLinkLayerMtuSize(netAdapter,
+                                      MY_MAX_PACKET_SIZE - ETHERNET_HEADER_LENGTH);
+
+        // 
+        // Required: start the adapter
+        //
+        status = NetAdapterStart(netAdapter);
+
+        return status;
     }
 ```
+
+For a code example of setting datapath capabilities, see [Network data buffer management](network-data-buffer-management.md).
+
 MBBCx guarantees that it calls *EvtMbbDeviceCreateAdapter* before requesting **MBIM_CID_CONNECT** with the same session ID. The following flow diagram shows the interactions between the client driver and the class extension in creating the NETADAPTER object.  
 
 ![NETADAPTER creation and activation for an MBB client driver](images/activation.png)
@@ -148,32 +184,7 @@ If a client driver needs to clean up context data tied to a NETADAPTER object, i
 
 ## Power management of the MBB device
 
-The MBIM specification defines the **MBIM_CID_DEVICE_SERVICE_SUBSCRIBE_LIST** and **MBIM_CID_IP_PACKET_FILTERS** commands for arming wakeup. MBBCx provides two APIs, [**MbbDeviceArmWake**](mbbdevicearmwake.md) and [**MbbDeviceDisarmWake**](mbbdevicedisarmwake.md), for client drivers that want to arm and disarm their device wakeup using MBIM messages. If a client driver decides not to use MBIM messages for wakeup, it can choose to use the NETPOWERSETTINGS object instead [like other types of NetAdapterCx client drivers](configuring-power-management.md).
-
-The following example shows how to call the MBBCx-specific power management APIs in the context of your [*EvtDeviceArmWakeFromS0*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_arm_wake_from_s0) and [*EvtDeviceDisarmWakeFromS0*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_s0) callback functions.
-
-```cpp
-    NTSTATUS
-    EvtDeviceArmWakeFromS0(
-        _In_ WDFDEVICE wdfDevice
-    )
-    {
-        MbbDeviceArmWake(wdfDevice);
-        return STATUS_SUCCESS;
-    }
-
-    VOID
-    EvtDeviceDisarmWakeFromS0(
-        _In_ WDFDEVICE wdfDevice
-    )
-    {
-        MbbDeviceDisarmWake(wdfDevice);
-    }
-
-    //EvtDeviceArmWakeFromSx and EvtDeviceDisarmWakeFromSx can
-    //be handled similarly
-
-```
+For power management, client drivers should use the NETPOWERSETTINGS object [like other types of NetAdapterCx client drivers](configuring-power-management.md).
 
 ## Handling device service sessions
 
