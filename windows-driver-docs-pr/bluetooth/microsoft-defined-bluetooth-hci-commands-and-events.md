@@ -110,7 +110,7 @@ The controller shall always complete this command promptly with a Command Comple
 | 0x00000000&#160;00000002  |  Controller supports the RSSI Monitoring feature for LE connections. |
 | 0x00000000&#160;00000004  | Controller supports the RSSI Monitoring of LE advertisements. |
 |0x00000000&#160;00000008|Controller supports Advertising Monitoring of LE advertisements.|
-| 00x00000000&#160;00000010 | Controller supports verifying the validity of the public X and Y coordinates on the curve during the Secure Simple pairing process. |
+| 00x00000000&#160;00000010 | Controller supports verifying the validity of the public X and Y coordinates on the curve during the Secure Simple pairing process for for P-192 and P-256. |
 |0x00000000 00000020|Controller supports Continuous Advertising Monitoring of LE advertisements performed concurrently with other radio activities.|
 |0xFFFFFFFF&#160;FFFFFFF0|Bits reserved for future definition. Must be zero.|
 
