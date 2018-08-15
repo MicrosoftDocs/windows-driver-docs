@@ -14,6 +14,7 @@ api_name:
 - .scroll_prefs (Control Source Scrolling Preferences)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .scroll\_prefs (Control Source Scrolling Preferences)

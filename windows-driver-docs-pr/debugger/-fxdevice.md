@@ -14,6 +14,7 @@ api_name:
 - fxdevice
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !fxdevice

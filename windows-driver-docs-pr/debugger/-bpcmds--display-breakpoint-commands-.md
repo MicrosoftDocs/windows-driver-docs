@@ -14,6 +14,7 @@ api_name:
 - .bpcmds (Display Breakpoint Commands)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .bpcmds (Display Breakpoint Commands)

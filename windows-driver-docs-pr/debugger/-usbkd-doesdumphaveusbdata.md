@@ -14,6 +14,7 @@ api_name:
 - usbkd.doesdumphaveusbdata
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !usbkd.doesdumphaveusbdata

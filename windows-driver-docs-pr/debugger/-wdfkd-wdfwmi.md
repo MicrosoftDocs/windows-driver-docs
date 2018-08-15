@@ -14,6 +14,7 @@ api_name:
 - wdfkd.wdfwmi
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfwmi

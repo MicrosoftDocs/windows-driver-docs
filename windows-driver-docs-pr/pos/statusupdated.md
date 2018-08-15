@@ -2,6 +2,7 @@
 title: StatusUpdated
 description: StatusUpdated
 ms.assetid: 'e5d04e61-859a-49ee-bc54-58be4133b38a'
+ms.localizationpriority: medium
 ---
 
 # StatusUpdated

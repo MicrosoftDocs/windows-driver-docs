@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: 3187643b-27d7-4a6d-8fbe-4f8eb6c251ed
 keywords:
  - IRP_MN_DISABLE_EVENTS Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_DISABLE\_EVENTS

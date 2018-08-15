@@ -14,6 +14,7 @@ api_name:
 - PcPropertyRequest
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # PcPropertyRequest rule (audio)

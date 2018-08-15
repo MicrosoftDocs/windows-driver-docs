@@ -14,6 +14,7 @@ api_name:
 - blockeddrv
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !blockeddrv

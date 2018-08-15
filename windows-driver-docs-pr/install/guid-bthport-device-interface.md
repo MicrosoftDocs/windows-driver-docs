@@ -11,6 +11,7 @@ api_location:
 - Bthdef.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # GUID_BTHPORT_DEVICE_INTERFACE

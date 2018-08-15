@@ -10,6 +10,7 @@ ms.date: 11/10/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # TCP chimney offload status indications

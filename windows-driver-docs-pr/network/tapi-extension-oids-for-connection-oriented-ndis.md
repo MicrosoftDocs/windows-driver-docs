@@ -10,6 +10,7 @@ ms.date: 11/03/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # TAPI extension OIDs for connection-oriented NDIS

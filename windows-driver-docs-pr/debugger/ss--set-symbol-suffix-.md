@@ -14,6 +14,7 @@ api_name:
 - ss (Set Symbol Suffix)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ss (Set Symbol Suffix)

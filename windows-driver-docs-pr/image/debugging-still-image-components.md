@@ -4,17 +4,14 @@ author: windows-driver-content
 description: Debugging Still Image Components
 ms.assetid: 587b8db7-7fca-4b70-8901-3adbde07718f
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Debugging Still Image Components
-
-
-
-
 
 To aid the debugging of vendor-supplied still image components, the still image event monitor's behavior can be modified with command-line options, using the **Run** option of the **Start** menu. The following options are available:
 
@@ -49,14 +46,4 @@ To aid the debugging of vendor-supplied still image components, the still image 
 </tbody>
 </table>
 
- 
-
-The event monitor can be stopped and started by using the Windows 2000 and later Computer Management window. The event monitor is listed as the "Still Image Service".
-
- 
-
- 
-
-
-
-
+The event monitor can be stopped and started by using the Computer Management window. The event monitor is listed as the "Still Image Service".

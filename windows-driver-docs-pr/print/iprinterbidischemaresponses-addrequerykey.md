@@ -13,6 +13,7 @@ api_name:
 - IPrinterBidiSchemaResponses.AddRequeryKey
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaResponses::AddRequeryKey method

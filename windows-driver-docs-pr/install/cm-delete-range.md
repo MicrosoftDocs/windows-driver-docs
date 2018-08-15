@@ -9,6 +9,7 @@ api_name:
 - CM_Delete_Range
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Delete_Range

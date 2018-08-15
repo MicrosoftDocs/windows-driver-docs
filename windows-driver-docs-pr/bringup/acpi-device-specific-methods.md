@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device-specific methods (\_DSM)
@@ -15,7 +16,7 @@ ms.technology: windows-devices
 
 To support increased functionality and extension to select technology stacks, Windows define Device-Specific Methods (\_DSM) for the device.
 
-The [ACPI 5.0 specification](http://www.uefi.org/specifications) introduces several device-specific methods that are used by Windows to support hardware platforms that use System on a Chip (SoC) integrated circuits. The topics in this section describe the arguments and return values that are defined for these methods.
+The [ACPI 5.0 specification](https://www.uefi.org/specifications) introduces several device-specific methods that are used by Windows to support hardware platforms that use System on a Chip (SoC) integrated circuits. The topics in this section describe the arguments and return values that are defined for these methods.
 
 ## In this section
 
@@ -50,7 +51,7 @@ The [ACPI 5.0 specification](http://www.uefi.org/specifications) introduces seve
 </tr>
 <tr class="odd">
 <td><p>[HIDI2C Device-Specific Method (_DSM)](hidi2c-device-specific-method---dsm-.md)</p></td>
-<td><p>The _DSM method is defined in section 9.14.1, &quot;_DSM (Device Specific Method)&quot;, in the [ACPI 5.0 specification](http://www.uefi.org/specifications). This method provides for individual, device-specific data and control functions that can be called by a device driver without conflicting with other such device-specific methods.</p></td>
+<td><p>The _DSM method is defined in section 9.14.1, &quot;_DSM (Device Specific Method)&quot;, in the [ACPI 5.0 specification](https://www.uefi.org/specifications). This method provides for individual, device-specific data and control functions that can be called by a device driver without conflicting with other such device-specific methods.</p></td>
 </tr>
 <tr class="even">
 <td><p>[Windows button array Device-Specific Method (_DSM)](windows-button-array-device-specific-method---dsm-.md)</p></td>

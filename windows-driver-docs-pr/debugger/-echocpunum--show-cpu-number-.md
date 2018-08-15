@@ -14,6 +14,7 @@ api_name:
 - .echocpunum (Show CPU Number)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .echocpunum (Show CPU Number)

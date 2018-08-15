@@ -14,6 +14,7 @@ api_name:
 - ks.automation
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ks.automation

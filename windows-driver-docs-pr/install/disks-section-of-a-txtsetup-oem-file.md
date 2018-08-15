@@ -9,6 +9,7 @@ api_name:
 - Disks Section of a TxtSetup.oem File
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Disks Section of a TxtSetup.oem File

@@ -14,6 +14,7 @@ api_name:
 - RemoveLockMnSurpriseRemove
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # RemoveLockMnSurpriseRemove rule (wdm)

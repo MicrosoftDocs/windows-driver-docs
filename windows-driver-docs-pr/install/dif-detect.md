@@ -11,6 +11,7 @@ api_location:
 - Setupapi.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # DIF_DETECT

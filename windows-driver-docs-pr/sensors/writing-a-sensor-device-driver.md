@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing a sensor device driver
@@ -36,8 +37,8 @@ In this section:
 -   [Sensor Driver Best Practices](sensor-driver-best-practices.md)
 
 ## Related topics
-[Writing a Location Sensor Driver](https://msdn.microsoft.com/library/windows/hardware/ff545919)  
-[The Sensors Geolocation Driver Sample](https://msdn.microsoft.com/library/windows/hardware/hh768273)  
+[Writing a Location Sensor Driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/gnss/writing-a-location-sensor-driver)
+[The Sensors Geolocation Driver Sample](https://docs.microsoft.com/en-us/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample)
 
 
 

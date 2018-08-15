@@ -2,6 +2,7 @@
 title: ISCSI\_SessionStaticInfo WMI Class
 description: ISCSI\_SessionStaticInfo WMI Class
 ms.assetid: e6ef8389-c4f3-4498-9864-6e4c1e8ca5b5
+ms.localizationpriority: medium
 ---
 
 # ISCSI\_SessionStaticInfo WMI Class

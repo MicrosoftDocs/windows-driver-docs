@@ -11,6 +11,7 @@ api_location:
 - Usbiodef.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # GUID_CLASS_USB_DEVICE

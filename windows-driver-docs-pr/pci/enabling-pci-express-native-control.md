@@ -1,4 +1,4 @@
-﻿---
+---
 title: Enabling PCI Express Native Control in Windows
 author: windows-driver-content
 description: PCI Express features that can be controlled by the PCI Express Native Control feature in Windows
@@ -9,6 +9,7 @@ ms.date: 06/01/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Enabling PCI Express Native Control in Windows
@@ -32,9 +33,8 @@ For more information, see Section 6.2.10 in the ACPI Specification, Revision 4.0
 
 Those specifications are available on the ACPI and PCI SIG Web sites:
 
-  - [ACPI Website](http://www.acpi.info/)
+  - [ACPI Website](https://www.uefi.org/specifications)
   - [PCI SIG Website](http://www.pcisig.org/)
 
- 
 ## See Also
 [Device Specific Data (_DSD) for PCIe Root Ports](dsd-for-pcie-root-ports.md)

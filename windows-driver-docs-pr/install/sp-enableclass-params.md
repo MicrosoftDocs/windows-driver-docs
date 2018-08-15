@@ -9,6 +9,7 @@ api_name:
 - SP_ENABLECLASS_PARAMS
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # SP_ENABLECLASS_PARAMS

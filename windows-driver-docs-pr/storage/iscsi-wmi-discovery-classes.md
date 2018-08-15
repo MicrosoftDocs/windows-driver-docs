@@ -2,6 +2,7 @@
 title: iSCSI WMI Discovery Classes
 description: iSCSI WMI Discovery Classes
 ms.assetid: 4711cf7f-6351-4804-872d-c94e2737a6ee
+ms.localizationpriority: medium
 ---
 
 # iSCSI WMI Discovery Classes

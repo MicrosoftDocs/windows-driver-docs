@@ -14,6 +14,7 @@ api_name:
 - SESSION3_INITIALIZATION_FAILED
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x6F: SESSION3\_INITIALIZATION\_FAILED

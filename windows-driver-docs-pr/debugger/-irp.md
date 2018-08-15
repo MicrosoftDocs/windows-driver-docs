@@ -14,6 +14,7 @@ api_name:
 - irp
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !irp

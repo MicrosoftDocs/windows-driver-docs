@@ -14,6 +14,7 @@ api_name:
 - IoAllocateIrpSignalEventInCompletion3
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IoAllocateIrpSignalEventInCompletion3 rule (wdm)

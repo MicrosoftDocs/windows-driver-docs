@@ -14,6 +14,7 @@ api_name:
 - FAULTY_HARDWARE_CORRUPTED_PAGE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x12B: FAULTY\_HARDWARE\_CORRUPTED\_PAGE

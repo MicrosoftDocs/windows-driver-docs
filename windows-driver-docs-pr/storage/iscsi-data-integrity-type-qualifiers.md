@@ -2,6 +2,7 @@
 title: ISCSI\_DATA\_INTEGRITY\_TYPE\_QUALIFIERS
 description: ISCSI\_DATA\_INTEGRITY\_TYPE\_QUALIFIERS
 ms.assetid: 46b795ef-ef10-49e4-97ff-d30eb724cce2
+ms.localizationpriority: medium
 ---
 
 # ISCSI\_DATA\_INTEGRITY\_TYPE\_QUALIFIERS

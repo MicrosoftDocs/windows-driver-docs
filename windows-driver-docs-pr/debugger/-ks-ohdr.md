@@ -14,6 +14,7 @@ api_name:
 - ks.ohdr
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ks.ohdr

@@ -9,6 +9,7 @@ ms.date: 06/29/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How to run the DevFund Tests via the command-line

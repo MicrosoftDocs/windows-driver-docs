@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -SIO_QUERY_WFP_CONNECTION_REDIRECT_CONTEXT control code Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_CONTEXT control code

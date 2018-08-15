@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: de375d56-880e-4534-acab-8d0685f45ebe
 keywords:
  - IRP_MN_DISABLE_COLLECTION Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_DISABLE\_COLLECTION

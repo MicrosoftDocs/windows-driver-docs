@@ -14,6 +14,7 @@ api_name:
 - RemoveLockReleaseDeviceControl
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # RemoveLockReleaseDeviceControl rule (wdm)

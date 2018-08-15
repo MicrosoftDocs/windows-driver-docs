@@ -13,6 +13,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: ["full-range YUV WDK display", "extended-range YUV WDK display", "studio luminance range YUV WDK display", "YUV formats and WMF support WDK display"]
+ms.localizationpriority: medium
 ---
 
 # YUV format ranges in Windows 8.1

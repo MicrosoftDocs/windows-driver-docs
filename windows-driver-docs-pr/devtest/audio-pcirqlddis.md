@@ -14,6 +14,7 @@ api_name:
 - PcIrqlDDIs
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # PcIrqlDDIs rule (audio)

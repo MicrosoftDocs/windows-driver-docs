@@ -3,6 +3,7 @@ title: Driver Programming Techniques
 author: windows-driver-content
 description: Driver Programming Techniques
 ms.assetid: ddad49ab-fe3c-4959-8a29-a850380b978f
+ms.localizationpriority: medium
 ---
 
 # Driver Programming Techniques

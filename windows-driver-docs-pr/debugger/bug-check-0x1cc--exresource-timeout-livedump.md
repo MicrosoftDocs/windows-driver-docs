@@ -13,6 +13,7 @@ api_name:
 - EXRESOURCE_TIMEOUT_LIVEDUMP
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check Bug Check 0x1CC: EXRESOURCE\_TIMEOUT\_LIVEDUMP

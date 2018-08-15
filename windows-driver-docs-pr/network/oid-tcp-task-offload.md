@@ -10,6 +10,7 @@ ms.date: 11/06/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # OID_TCP_TASK_OFFLOAD

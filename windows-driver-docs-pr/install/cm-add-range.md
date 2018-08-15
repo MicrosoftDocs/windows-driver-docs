@@ -9,6 +9,7 @@ api_name:
 - CM_Add_Range
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Add_Range

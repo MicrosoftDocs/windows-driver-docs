@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_GEN_INIT_TIME_MS Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_INIT\_TIME\_MS

@@ -14,6 +14,7 @@ api_name:
 - rm (Register Mask)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # rm (Register Mask)

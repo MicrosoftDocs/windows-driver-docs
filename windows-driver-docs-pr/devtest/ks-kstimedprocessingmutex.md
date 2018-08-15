@@ -14,6 +14,7 @@ api_name:
 - KsTimedProcessingMutex
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # KsTimedProcessingMutex rule ()

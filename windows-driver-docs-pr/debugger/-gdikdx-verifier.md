@@ -14,6 +14,7 @@ api_name:
 - gdikdx.verifier
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !gdikdx.verifier

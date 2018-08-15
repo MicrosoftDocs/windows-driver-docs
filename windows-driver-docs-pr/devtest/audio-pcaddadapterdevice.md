@@ -14,6 +14,7 @@ api_name:
 - PcAddAdapterDevice
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # PcAddAdapterDevice rule (audio)

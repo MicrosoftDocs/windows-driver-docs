@@ -14,6 +14,7 @@ api_name:
 - StorPortVirtualDevice2
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # StorPortVirtualDevice2 rule (storport)

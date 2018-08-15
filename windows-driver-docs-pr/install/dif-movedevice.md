@@ -9,6 +9,7 @@ api_name:
 - DIF_MOVEDEVICE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # DIF_MOVEDEVICE

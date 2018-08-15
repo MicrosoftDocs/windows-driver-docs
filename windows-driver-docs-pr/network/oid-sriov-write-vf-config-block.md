@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_SRIOV_WRITE_VF_CONFIG_BLOCK Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_SRIOV\_WRITE\_VF\_CONFIG\_BLOCK

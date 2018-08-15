@@ -14,6 +14,7 @@ api_name:
 - ubl
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ubl

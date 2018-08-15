@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - SIO_WSK_QUERY_INSPECT_ID Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # SIO\_WSK\_QUERY\_INSPECT\_ID

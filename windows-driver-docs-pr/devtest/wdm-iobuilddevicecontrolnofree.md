@@ -14,6 +14,7 @@ api_name:
 - IoBuildDeviceControlNoFree
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IoBuildDeviceControlNoFree rule (wdm)

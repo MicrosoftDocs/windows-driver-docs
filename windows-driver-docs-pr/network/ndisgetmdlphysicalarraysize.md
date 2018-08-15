@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - NdisGetMdlPhysicalArraySize macro Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # NdisGetMdlPhysicalArraySize macro

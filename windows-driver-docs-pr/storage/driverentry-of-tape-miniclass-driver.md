@@ -11,6 +11,7 @@ api_location:
 - NtosKrnl.exe
 api_type:
 - DllExport
+ms.localizationpriority: medium
 ---
 
 # DriverEntry of Tape Miniclass Driver routine

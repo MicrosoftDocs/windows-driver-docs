@@ -14,6 +14,7 @@ api_name:
 - SignalEventInCompletion2
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # SignalEventInCompletion2 rule (wdm)

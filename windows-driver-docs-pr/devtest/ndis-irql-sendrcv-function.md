@@ -14,6 +14,7 @@ api_name:
 - Irql_SendRcv_Function
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Irql\_SendRcv\_Function rule (ndis)

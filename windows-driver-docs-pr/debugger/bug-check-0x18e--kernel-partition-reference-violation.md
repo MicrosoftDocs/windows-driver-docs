@@ -13,6 +13,7 @@ api_name:
 - KERNEL_PARTITION_REFERENCE_VIOLATION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check Bug Check 0x18E: KERNEL\_PARTITION\_REFERENCE\_VIOLATION

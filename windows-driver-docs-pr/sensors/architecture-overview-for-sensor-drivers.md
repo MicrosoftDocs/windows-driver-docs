@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Architecture Overview for Sensor Drivers
@@ -21,13 +22,14 @@ A sensor driver uses a special **class extension** object. The sensor class exte
 
 For more information about the class extension object, see [About the Sensor Class Extension](about-the-sensor-class-extension.md).
 
-**Important**  Sensor drivers must be free threaded and thread safe.
+>[!IMPORTANT]
+> Sensor drivers must be free threaded and thread safe.
 
- 
 
- 
 
- 
+
+
+
 
 
 

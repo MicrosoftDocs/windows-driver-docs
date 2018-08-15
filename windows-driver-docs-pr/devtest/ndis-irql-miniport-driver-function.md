@@ -14,6 +14,7 @@ api_name:
 - Irql_Miniport_Driver_Function
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Irql\_Miniport\_Driver\_Function rule (ndis)

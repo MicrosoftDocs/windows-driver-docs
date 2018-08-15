@@ -14,6 +14,7 @@ api_name:
 - u, ub, uu (Unassemble)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # u, ub, uu (Unassemble)

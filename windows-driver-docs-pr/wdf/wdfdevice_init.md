@@ -10,6 +10,7 @@ ms.date: 02/23/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WDFDEVICE_INIT structure

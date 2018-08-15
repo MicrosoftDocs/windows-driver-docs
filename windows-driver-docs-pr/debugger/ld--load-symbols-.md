@@ -14,6 +14,7 @@ api_name:
 - ld (Load Symbols)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ld (Load Symbols)

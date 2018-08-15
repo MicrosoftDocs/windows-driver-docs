@@ -14,6 +14,7 @@ api_name:
 - MarkIrpPending2
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # MarkIrpPending2 rule (wdm)

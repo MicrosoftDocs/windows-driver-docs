@@ -14,6 +14,7 @@ api_name:
 - running
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !running

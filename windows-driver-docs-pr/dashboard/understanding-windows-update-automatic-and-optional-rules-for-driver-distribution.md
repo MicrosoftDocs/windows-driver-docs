@@ -7,6 +7,7 @@ ms.date: 6/15/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Understanding Windows Update Automatic and Optional Rules for Driver Distribution

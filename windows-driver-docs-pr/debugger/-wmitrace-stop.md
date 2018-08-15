@@ -14,6 +14,7 @@ api_name:
 - wmitrace.stop
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wmitrace.stop

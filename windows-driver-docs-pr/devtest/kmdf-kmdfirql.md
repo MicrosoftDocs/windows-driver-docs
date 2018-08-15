@@ -14,6 +14,7 @@ api_name:
 - KmdfIrql
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # KmdfIrql rule (kmdf)

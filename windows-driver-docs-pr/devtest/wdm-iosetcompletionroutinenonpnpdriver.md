@@ -14,6 +14,7 @@ api_name:
 - IoSetCompletionRoutineNonPnpDriver
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IoSetCompletionRoutineNonPnpDriver rule (wdm)

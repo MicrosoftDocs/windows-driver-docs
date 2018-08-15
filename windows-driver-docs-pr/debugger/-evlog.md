@@ -14,6 +14,7 @@ api_name:
 - evlog
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !evlog

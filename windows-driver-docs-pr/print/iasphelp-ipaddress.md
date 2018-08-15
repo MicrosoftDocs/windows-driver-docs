@@ -16,6 +16,7 @@ api_name:
 - Iasphelp.get_IPAddress
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_IPAddress method

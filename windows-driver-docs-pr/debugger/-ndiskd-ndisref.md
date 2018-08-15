@@ -14,6 +14,7 @@ api_name:
 - ndiskd.ndisref
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.ndisref

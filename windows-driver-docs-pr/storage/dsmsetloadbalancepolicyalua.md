@@ -11,6 +11,7 @@ api_location:
 - MPIOdisk.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # DsmSetLoadBalancePolicyALUA function

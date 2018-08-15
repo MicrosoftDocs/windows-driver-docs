@@ -14,6 +14,7 @@ api_name:
 - DoubleDeviceInitFree
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # DoubleDeviceInitFree rule (kmdf)

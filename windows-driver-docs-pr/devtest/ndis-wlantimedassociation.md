@@ -14,6 +14,7 @@ api_name:
 - WlanTimedAssociation
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # WlanTimedAssociation rule (ndis)

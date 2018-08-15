@@ -14,6 +14,7 @@ api_name:
 - hidkd.hidtree
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !hidkd.hidtree

@@ -7,6 +7,7 @@ ms.date: 02/12/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Bluetooth Software Radio Switch Function Prototypes

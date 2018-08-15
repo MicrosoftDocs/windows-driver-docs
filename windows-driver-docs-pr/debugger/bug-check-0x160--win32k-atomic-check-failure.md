@@ -14,6 +14,7 @@ api_name:
 - WIN32K_ATOMIC_CHECK_FAILURE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x160: WIN32K\_ATOMIC\_CHECK\_FAILURE

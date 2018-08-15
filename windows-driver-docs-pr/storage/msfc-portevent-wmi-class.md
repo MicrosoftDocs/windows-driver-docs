@@ -2,6 +2,7 @@
 title: MSFC\_PortEvent WMI Class
 description: MSFC\_PortEvent WMI Class
 ms.assetid: 38b8e358-b118-4a0c-ac47-2f257d0ed1bf
+ms.localizationpriority: medium
 ---
 
 # MSFC\_PortEvent WMI Class

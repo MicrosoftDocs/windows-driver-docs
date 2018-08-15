@@ -14,6 +14,7 @@ api_name:
 - tp
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !tp

@@ -2,6 +2,7 @@
 title: HBAScsiID WMI Class
 description: HBAScsiID WMI Class
 ms.assetid: ca2ebe3f-bc0b-4723-8dff-00478d9baac3
+ms.localizationpriority: medium
 ---
 
 # HBAScsiID WMI Class

@@ -14,6 +14,7 @@ api_name:
 - Init_NdisAllocateIoWorkItem
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Init\_NdisAllocateIoWorkItem rule (ndis)

@@ -14,6 +14,7 @@ api_name:
 - verifier
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !verifier

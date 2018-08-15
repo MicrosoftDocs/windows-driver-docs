@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_ADD\_SA

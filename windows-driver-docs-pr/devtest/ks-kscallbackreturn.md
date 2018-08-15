@@ -14,6 +14,7 @@ api_name:
 - KsCallbackReturn
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # KsCallbackReturn rule ()

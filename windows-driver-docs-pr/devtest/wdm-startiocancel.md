@@ -14,6 +14,7 @@ api_name:
 - StartIoCancel
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # StartIoCancel rule (wdm)

@@ -8,6 +8,7 @@ ms.date: 05/30/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting Up Kernel-Mode Debugging of a Virtual Machine Manually using a Virtual COM Port

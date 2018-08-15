@@ -14,6 +14,7 @@ api_name:
 - dv (Display Local Variables)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # dv (Display Local Variables)

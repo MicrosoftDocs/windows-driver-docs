@@ -4,7 +4,7 @@ description: First-time users of WinDbg should begin with the Debugging Using Wi
 ms.assetid: bd169c73-0a46-41b5-bd7b-71adf7747069
 keywords: ["WinDbg Command-Line Options Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 08/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - WinDbg Command-Line Options
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # WinDbg Command-Line Options
@@ -27,7 +28,7 @@ The WinDbg command line uses the following syntax:
 windbg [ -server ServerTransport | -remote ClientTransport ] [-lsrcpath ]
    [ -premote SmartClientTransport ] [-?] [-ee {masm|c++}] 
    [-clines lines] [-b] [-d] [-aExtension]  
-   [-failinc] [-g] [-G] [-hd] [-j] [-n] [-noshell] [-o] 
+   [-failinc] [-g] [-G] [-hd] [-j] [-n] [-noshell] [-o] [-openPrivateDumpByHandle Handle]
    [-Q | -QY] [-QS | -QSY] [-robp] [-secure] [-ses] [-sdce] 
    [-sicv] [-sins] [-snc] [-snul] [-sup] [-sflags 0xNumber] 
    [-T Title] [-v] [-log{o|a} LogFile] [-noinh] 
@@ -145,6 +146,9 @@ Prohibits all **.shell** commands. This prohibition will last as long as the deb
 <span id="_______-o______"></span><span id="_______-O______"></span> **-o**   
 (User mode only) Debugs all processes launched by the target application (child processes). By default, processes created by the one you are debugging will run as they normally do.
 
+<span id="_______-openPrivateDumpByHandle______"></span><span id="_______-OPENPRIVATEDUMPBYHANDLE______"></span> **-openPrivateDumpByHandle** *Handle*   
+Specifies the handle of a crash dump file to debug.
+
 <span id="_______-p_______PID______"></span><span id="_______-p_______pid______"></span><span id="_______-P_______PID______"></span> **-p** *PID*   
 Specifies the decimal process ID to be debugged. This is used to debug a process that is already running.
 
@@ -236,7 +240,7 @@ Disables automatic workspace loading. For details, see [Using Workspaces](using-
 Specifies the symbol search path. Separate multiple paths with a semicolon (**;**). If the path contains spaces, it should be enclosed in quotation marks. For details, and for other ways to change this path, see [Symbol Path](symbol-path.md).
 
 <span id="_______-z_______DumpFile______"></span><span id="_______-z_______dumpfile______"></span><span id="_______-Z_______DUMPFILE______"></span> **-z** *DumpFile*   
-Specifies the name of a crash dump file to debug. If the path and file name contain spaces, this must be surrounded by quotation marks. It is possible to open several dump files at once by including multiple **-z** options, each followed by a different *DumpFile* value. For details, see [Analyzing a User-Mode Dump File with WinDbg](analyzing-a-user-mode-dump-file-with-windbg.md) or [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md).
+Specifies the name of a crash dump file to debug. If the path and file name contain spaces, this must be surrounded by quotation marks. It is possible to open several dump files at once by including multiple **-z** options, each followed by a different *DumpFile* value. For details, see [Analyzing a User-Mode Dump File](analyzing-a-user-mode-dump-file.md) or [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md).
 
 <span id="_______-zp_______PageFile______"></span><span id="_______-zp_______pagefile______"></span><span id="_______-ZP_______PAGEFILE______"></span> **-zp** *PageFile*   
 Specifies the name of a modified page file. This is useful if you are debugging a dump file and want to use the [**.pagein (Page In Memory)**](-pagein--page-in-memory-.md) command. You cannot use **-zp** with a standard Windows page file -- only specially-modified page files can be used.

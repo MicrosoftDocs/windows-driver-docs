@@ -14,6 +14,7 @@ api_name:
 - .typeopt (Set Type Options)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .typeopt (Set Type Options)

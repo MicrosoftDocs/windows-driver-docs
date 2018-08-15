@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: fb3d4534-9c6f-4956-b702-5752f9798600
 keywords:
  - IRP_MJ_INTERNAL_DEVICE_CONTROL Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL

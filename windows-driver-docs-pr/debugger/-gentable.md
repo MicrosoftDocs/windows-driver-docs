@@ -14,6 +14,7 @@ api_name:
 - gentable
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !gentable

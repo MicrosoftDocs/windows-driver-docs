@@ -1,5 +1,6 @@
 ---
 title: SENSOR\_CATEGORY\_LOCATION
+author: windows-driver-content
 description: The SENSOR\_CATEGORY\_LOCATION category contains sensors that provide geographic location information.
 ms.assetid: 19B76F17-0575-42F2-ADEF-15932DCE7E06
 topic_type:
@@ -58,6 +59,7 @@ ms.date: 01/04/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SENSOR\_CATEGORY\_LOCATION

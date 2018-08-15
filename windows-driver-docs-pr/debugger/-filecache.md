@@ -14,6 +14,7 @@ api_name:
 - filecache
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !filecache

@@ -14,6 +14,7 @@ api_name:
 - filetime
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !filetime

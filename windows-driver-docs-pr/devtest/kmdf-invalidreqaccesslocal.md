@@ -14,6 +14,7 @@ api_name:
 - InvalidReqAccessLocal
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # InvalidReqAccessLocal rule (kmdf)

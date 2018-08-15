@@ -2,6 +2,7 @@
 title: MSFC\_FC4STATISTICS WMI Class
 description: MSFC\_FC4STATISTICS WMI Class
 ms.assetid: 49cd4104-1fe8-46ec-9216-c5c078666c02
+ms.localizationpriority: medium
 ---
 
 # MSFC\_FC4STATISTICS WMI Class

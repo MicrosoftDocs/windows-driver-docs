@@ -9,6 +9,7 @@ api_name:
 - eulaHeaderTitle XML Element
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # eulaHeaderTitle XML Element

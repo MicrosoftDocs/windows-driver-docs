@@ -2,6 +2,7 @@
 title: Setting Packet Coalescing Receive Filters
 description: Setting Packet Coalescing Receive Filters
 ms.assetid: 6F5E06C2-40AD-4B4F-87BA-01ED7EE7DF19
+ms.localizationpriority: medium
 ---
 
 # Setting Packet Coalescing Receive Filters

@@ -8,6 +8,7 @@ ms.date: 06/26/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Generate ACPI tables by using AcpiGenFx

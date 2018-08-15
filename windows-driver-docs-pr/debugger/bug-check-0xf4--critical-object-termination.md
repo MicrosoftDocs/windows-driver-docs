@@ -14,6 +14,7 @@ api_name:
 - CRITICAL_OBJECT_TERMINATION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xF4: CRITICAL\_OBJECT\_TERMINATION

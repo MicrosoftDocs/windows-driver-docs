@@ -14,6 +14,7 @@ api_name:
 - StorPortTimer
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # StorPortTimer rule (storport)

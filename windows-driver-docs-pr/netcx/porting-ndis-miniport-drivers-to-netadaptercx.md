@@ -9,6 +9,7 @@ ms.date: 06/05/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting NDIS miniport drivers to NetAdapterCx
@@ -37,29 +38,22 @@ Open your existing NDIS miniport driver project in Visual Studio and use the fol
   
 5. Add [standard WDF decorations](../wdf/specifying-wdf-directives-in-inf-files.md) to your INF:
   
-  ```Inf
+  ```INF
   [Yourdriver.Wdf]
   KmdfService = Yourdriverservice, Yourdriver.wdfsect
 
   [Yourdriver.wdfsect]
   KmdfLibraryVersion = <insert here>
   ```
-6. Add new required networking keywords to the NT section of your INF.
+6. Add new required networking keywords to the NT section of your INF:
 
-  ```Inf
-  [Device.NT]
-  CopyFiles=Drivers_Dir
-  ; Existing network keywords
-  *IfType       = 6
-  *MediaType     = 0
-  *PhysicalMediaType = 14
-  ; New network keywords
-  *IfConnectorPresent = 0 ; BOOLEAN
-  *ConnectionType   = 1 ; NET_IF_CONNECTION_TYPE
-  *DirectionType   = 0 ; NET_IF_DIRECTION_TYPE
-  *AccessType     = 2 ; NET_IF_ACCESS_TYPE
-  *HardwareLoopback  = 0 ; BOOLEAN
-  ```
+    - **\*IfConnectorPresent**
+    - **\*ConnectionType**
+    - **\*DirectionType**
+    - **\*AccessType**
+    - **\*HardwareLoopback**
+
+    For more information about these keywords and an example, see [INF files for NetAdapterCx client drivers](inf-files-for-netadaptercx-client-drivers.md).
 
 ## Driver initialization
 

@@ -9,6 +9,7 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sending IRP\_MN\_QUERY\_POWER or IRP\_MN\_SET\_POWER for Device Power States

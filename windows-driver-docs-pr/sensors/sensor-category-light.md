@@ -1,5 +1,6 @@
 ---
 title: SENSOR\_CATEGORY\_LIGHT
+author: windows-driver-content
 description: The SENSOR\_CATEGORY\_LIGHT category contains sensors that provide information about characteristics of light.
 ms.assetid: 56bb4869-3752-437d-89c9-829e6fb01043
 keywords: ["SENSOR_CATEGORY_LIGHT Sensor Devices"]
@@ -16,6 +17,7 @@ ms.date: 01/04/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SENSOR\_CATEGORY\_LIGHT

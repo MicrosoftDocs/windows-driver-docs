@@ -14,6 +14,7 @@ api_name:
 - LM_SERVER_INTERNAL_ERROR
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x54: LM\_SERVER\_INTERNAL\_ERROR

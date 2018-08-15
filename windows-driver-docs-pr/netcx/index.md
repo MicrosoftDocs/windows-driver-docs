@@ -43,7 +43,6 @@ To watch a video that discusses the future roadmap and collaboration opportuniti
 
 This section contains the following topics:
 
-* [What's new in NetAdapterCx](whats-new-in-netadaptercx.md)
 * [Porting NDIS miniport drivers to NetAdapterCx](porting-ndis-miniport-drivers-to-netadaptercx.md)
 * [Building a NetAdapterCx client driver](building-a-netadaptercx-client-driver.md)
 * [Device initialization](device-initialization.md)

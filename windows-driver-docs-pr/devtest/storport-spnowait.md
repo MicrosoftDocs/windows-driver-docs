@@ -14,6 +14,7 @@ api_name:
 - SpNoWait
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # SpNoWait rule (storport)

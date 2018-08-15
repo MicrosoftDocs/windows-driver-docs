@@ -14,6 +14,7 @@ api_name:
 - SpDuplex
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # SpDuplex rule (storport)

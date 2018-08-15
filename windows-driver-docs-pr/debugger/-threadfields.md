@@ -14,6 +14,7 @@ api_name:
 - threadfields
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !threadfields

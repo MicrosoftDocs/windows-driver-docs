@@ -14,6 +14,7 @@ api_name:
 - (Command Help)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ? (Command Help)

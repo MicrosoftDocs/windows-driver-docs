@@ -2,6 +2,7 @@
 title: MagneticStripeReaderErrorOccured
 description: MagneticStripeReaderErrorOccured
 ms.assetid: 'c2402411-1bbf-44c1-bf7f-813f6d967822'
+ms.localizationpriority: medium
 ---
 
 # MagneticStripeReaderErrorOccured

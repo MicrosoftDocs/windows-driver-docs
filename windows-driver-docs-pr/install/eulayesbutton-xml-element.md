@@ -9,6 +9,7 @@ api_name:
 - eulaYesButton XML Element
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # eulaYesButton XML Element

@@ -14,6 +14,7 @@ api_name:
 - ndiskd.nwadapter
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.nwadapter
