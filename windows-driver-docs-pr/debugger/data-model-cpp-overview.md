@@ -2,7 +2,7 @@
 title: Debugger Data Model C++ Interfaces Overview
 description: This topic provides an overview of the Debugger Data Model C++ Interfaces to extend and customize the capabilities of the debugger.
 ms.author: domars
-ms.date: 08/07/2018
+ms.date: 08/15/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,12 +39,90 @@ This topic includes the following sections.
 
 ---
 
-## <span id="overview"> Overview of Debugger Debugger Data Model C++ Interfaces
+## <span id="overview"> Overview of the Debugger Data Model C++ Interface
 
-The debugger data model is an extensible object model that is central to the way in which new debugger extensions (including those in JavaScript, NatVis, and C++) both consume information from the debugger and produce information that can be accessed from the debugger as well as other extensions. Constructs which are written to the data model APIs are available in the debugger's newer (dx) expression evaluator as well as from JavaScript extensions or other C++ extensions for that matter. 
+The debugger data model is an extensible object model that is central to the way in which new debugger extensions (including those in JavaScript, NatVis, and C++) both consume information from the debugger and produce information that can be accessed from the debugger as well as other extensions. Constructs which are written to the data model APIs are available in the debugger's newer (dx) expression evaluator as well as from JavaScript extensions or C++ extensions. 
+
+To illustrate the goals of the debugger data model, consider this traditional debugger command.
+
+```
+0: kd> !process 0 0 
+PROCESS ffffe0007e6a7780
+    SessionId: 1  Cid: 0f68    Peb: 7ff7cfe7a000  ParentCid: 0f34
+    DirBase: 1f7fb9000  ObjectTable: ffffc001cec82780  HandleCount:  34.
+    Image: echoapp.exe
+...
+```
+The debugger command is using a binary mask and the it provides text only output in non-standard ways. The text output is difficult to consume, format, or extend and the layout is specific to this command.
+
+Contrast this to  the debugger data model [dx (Display Debugger Object Model Expression)](https://docs.microsoft.com/windows-hardware/drivers/debugger/dx--display-visualizer-variables-) command.
+
+```
+dx @$cursession.Processes.Where(p => p.Threads.Count() > 5)
+```
+This command uses a standard data model that is discoverable, extensible and composable in uniform ways.
+
+Logically name spacing things and extending on specific objects allows for the discovery of debugger extension functionality.  
+
+The data model is the way that the new debugger [WinDbg Preview](debugging-using-windbg-preview.md) debugger, shows most things. Many elements in the new UI can be queried, extended, or scripted, because they are powered by the data model. For more information, see [WinDbg Preview - Data Model](windbg-data-model-preview.md).
+
+![Data model explore window showing process and threads](images/windbgx-data-model-process-threads.png)
 
 
-ToDo: Add more overview content here.
+### Data Model Architectural View
+
+The following diagram summarizes the major elements of the debugger data model architecture.
+
+- To the left side, UI elements are shown that provide access to the objects and support such functionality as LINQ queries.  
+- On the right side of the diagram are components that provide data to debugger data model. This includes custom NatVis, JavaScript and C++ debugger data model extensions. 
+
+![Data model architectural view](images/data-model-simple-architectural-view.png)
+
+
+### Object Model
+
+This diagram shows how the IModelObject uses Key Stores to contain values that a provider can create, register and manipulate.
+
+- It shows a *provider*, that provides information to the object model
+- On the left it shows the *IModelObject*, that is the common object model that is used to manipulate objects.
+- In the center is the *Key Store* that is used to store and access values.
+- At the bottom it shows *Concepts* that support objects with functionality such as the ability to convert to a displayable string or be indexed.
+
+![Data model architectural view](images/data-model-object-model.png)
+
+
+### The Data Model: A Consumer View
+
+The next diagram shows a consumer view of the data model. In the example the [dx (Display Debugger Object Model Expression)](https://docs.microsoft.com/windows-hardware/drivers/debugger/dx--display-visualizer-variables-) command is being used to query information. 
+
+- The Dx command communicates through a serializer to the object enumeration interface. 
+- IDebugHost* objects are used to gather information from the debugger engine. 
+- Expression and semantic evaluators are used to send the request to the debugger engine.
+
+![Data model architectural view](images/data-model-consumer-view.png)
+
+
+### The Data Model: A Producer View
+
+This diagram shows a producer view of the data model.
+
+- A NatVis provider is shown on the left that consumes XML that defines additional functionality.
+- A JavaScript provider can take advantage of *Dynamic Provider Concepts* to manipulate information in real time.
+- The bottom shows a native code provider that can also define additional functionality.
+
+![Data model architectural view](images/data-model-producer-view.png)
+
+
+### Data Model Manager 
+
+This diagram shows the central role that the data model manager plays in the management of objects.
+
+- The Data Model Manager acts as a central registrar for all objects. 
+- On the left it shows how standard debugger elements such as sessions and process are registered.
+- The namespace block shows the central registration list.
+- The right side of the diagram shows two providers, one for NatVis on the top, and a C/C++ extension on the bottom.
+
+![Data model architectural view](images/data-model-manager.png)
 
 
 
