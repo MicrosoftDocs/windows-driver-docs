@@ -40,7 +40,7 @@ MyEvtAdapterCreateTxQueue(
                                  EvtTxQueueSetNotificationEnabled,
                                  EvtTxQueueCancel);
 
-    // Set the tx queue's start and stop callbacks
+    // Optional: set the tx queue's start and stop callbacks
     txQueueConfig.EvtStart = EvtTxQueueStart;
     txQueueConfig.EvtStop = EvtTxQueueStop;
 
