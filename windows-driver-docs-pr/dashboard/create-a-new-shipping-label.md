@@ -91,10 +91,6 @@ The following example demonstrates the JSON request body for creating a new ship
     "inServicePublishInfo": {
       "flooring": "RS1",
       "ceiling": "RS3"
-    },
-    "coEngDriverPublishInfo": {
-      "flooringBuildNumber": 17135,
-      "ceilingBuildNumber": 17139
     }
   },
   "name": "Shipping Label Name",
