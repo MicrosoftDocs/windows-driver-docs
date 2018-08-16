@@ -82,7 +82,18 @@ This resource represents a shipping label created for a submission of your produ
         "distributionState": "pendingAdd"
       }
     ],
-    "restrictedToAudiences": ["00000000-0000-0000-0000-000000000000","00000000-0000-0000-0000-000000000001"],
+    "restrictedToAudiences": [
+      "00000000-0000-0000-0000-000000000000",
+      "00000000-0000-0000-0000-000000000001"
+      ],
+    "inServicePublishInfo": {
+      "flooring": "RS1",
+      "ceiling": "RS3"
+    },
+    "coEngDriverPublishInfo": {
+      "flooringBuildNumber": 17135,
+      "ceilingBuildNumber": 17139
+    }  
   },
   "workflowStatus": {
     "currentStep": "finalizePublishing",
@@ -229,7 +240,18 @@ This object represents the targeting details of the shipping label which is requ
       "distributionState": "pendingAdd"
     }
   ],
-  "restrictedToAudiences": ["00000000-0000-0000-0000-000000000000","00000000-0000-0000-0000-000000000001"]
+  "restrictedToAudiences": [
+    "00000000-0000-0000-0000-000000000000",
+    "00000000-0000-0000-0000-000000000001"
+  ],
+  "inServicePublishInfo": {
+    "flooring": "RS1",
+    "ceiling": "RS3"
+  },
+  "coEngDriverPublishInfo": {
+    "flooringBuildNumber": 17135,
+    "ceilingBuildNumber": 17139
+  }
 }
 ```
 This object has the following values
@@ -239,6 +261,8 @@ This object has the following values
 |hardwareIds|array of objects|Refer [hardware ID object](#hardware-id-object) for more details|
 |chids|array of objects|Refer [CHID object](#chids-object) for more details|
 |restrictedToAudiences|array of Strings|An array of strings which represents Audiences. Audiences allow you to restrict this publication to machines with a particular configuration. As an example, the test audience will only be delivered to clients with a particular registry key installed. To get the audiences applicable to your organization, refer [get audience](get-audience-data.md).|
+|inServicePublishInfo|object|Refer [in service publish information object](#in-service-publish-information-object) for more details|
+|coEngDriverPublishInfo|object|Refer [co-engineering driver publish information object](#co-engineering-driver-publish-information-object) for more details|
 
 ### Hardware ID object
 
@@ -283,6 +307,43 @@ This object has the following values
 |chid|GUID|The CHID which needs to be targeted|
 |distributionState|string|Represents the current targeting status of this CHID. Possible values are (description in paranthesis):<ul><li>pendingAdd (*Add has been requested for this hardware ID and is in progress*)</li><li>pendingRemove (*A remove (expire) has been requested for this hardware ID and is in progress*)</li><li>added (*This hardware ID has been succesfully added as target in this shipping label*)</li><li>notSet (*No action has been taken or status has not been set on this hardware ID*)</li></ul>|
 |action|string|This is applicable only while Update/patch of a shipping label. The possible values are: <ul><li>add</li><li>remove</li></ul> |
+
+### In Service Publish Information object
+
+This object represents distribution ranges which are defined by a floor and ceiling. A floor describes the earliest Windows version the driver will be distributed to, and a ceiling marks the latest. By adding a floor and ceiling, you can restrict your driver’s distribution. 
+```json
+{
+  "flooring": "RS1",
+  "ceiling": "RS3",
+
+}
+```
+This object has the following values
+
+| Value | Type | Description |
+|:--|:--|:--|
+|flooring|string|Use this option when you want a driver to only be offered at and above the listed Windows 10 operating system. For example, selecting an RS4 Floor would mean only systems running Windows 10 1803 (RS4) and above will be offered this driver. The possible values are <ul><li>TH</li><li>RS1</li><li>RS2</li><li>RS3</li><li>RS4</li><li>RS5</li></ul> Note that the possible values will expand to include the current version of the OS (which is RS5 at the time of creating this document)|
+|ceiling|string|*Access to this feature is limited*. Use this option when you want a driver to only be offered at or below the listed operating system. For example, selecting an RS3 Ceiling on a Windows 10 1607 RS1 certified driver would mean your driver would never be offered to systems running Windows 10 1803 (RS4) or above.The possible values are <ul><li>TH</li><li>RS1</li><li>RS2</li><li>RS3</li><li>RS4</li><li>RS5</li></ul> Note that the possible values will expand to include the current version of the OS (which is RS5 at the time of creating this document)|
+
+Refer [restricting driver distribution using floors and ceilings](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/limit-driver-distribution) for more details.
+
+### Co-Engineering Driver Publish Information object
+
+This object represents distribution ranges which are defined by a floor and ceiling when developing drivers for newer and unreleased versions of Windows. *It is to available for Microsoft co-engineering partners only*. A floor describes the earliest Windows version the driver will be distributed to, and a ceiling marks the latest. By adding a floor and ceiling, you can restrict your driver’s distribution. 
+```json
+{
+  "flooringBuildNumber": 17135,
+  "ceilingBuildNumber": 17139
+}
+```
+This object has the following values
+
+| Value | Type | Description |
+|:--|:--|:--|
+|flooringBuildNumber|number|The build number of the release when you want a driver to only be offered at and above this build number. For example, if the floor needs to be 10.1.17135, the input needs to be 17135. The major version (10.1) will always be defaulted to the appropriate version automatically|
+|ceiling|number|The build number of the release when you want a driver to only be offered at or below this build number. For example, if the ceiling needs to be 10.1.17139, the input needs to be 17139. The major version (10.1) will always be defaulted to the appropriate version automatically|
+
+Refer [restricting driver distribution using floors and ceilings](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/limit-driver-distribution) for more details.
 
 ### Shipping Label Workflow Status object
 
