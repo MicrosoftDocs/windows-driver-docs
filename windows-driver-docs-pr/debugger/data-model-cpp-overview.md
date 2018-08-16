@@ -53,7 +53,7 @@ PROCESS ffffe0007e6a7780
     Image: echoapp.exe
 ...
 ```
-The debugger command is using a binary mask and the it provides text only output in non-standard ways. The text output is difficult to consume, format, or extend and the layout is specific to this command.
+The debugger command is using a binary mask and it provides text only output in non-standard ways. The text output is difficult to consume, format, or extend and the layout is specific to this command.
 
 Contrast this to  the debugger data model [dx (Display Debugger Object Model Expression)](https://docs.microsoft.com/windows-hardware/drivers/debugger/dx--display-visualizer-variables-) command.
 
@@ -64,7 +64,7 @@ This command uses a standard data model that is discoverable, extensible and com
 
 Logically name spacing things and extending on specific objects allows for the discovery of debugger extension functionality.  
 
-The data model is the way that the new debugger [WinDbg Preview](debugging-using-windbg-preview.md) debugger, shows most things. Many elements in the new UI can be queried, extended, or scripted, because they are powered by the data model. For more information, see [WinDbg Preview - Data Model](windbg-data-model-preview.md).
+The data model is the way that the new [WinDbg Preview](debugging-using-windbg-preview.md) debugger, shows most things. Many elements in the new UI can be queried, extended, or scripted, because they are powered by the data model. For more information, see [WinDbg Preview - Data Model](windbg-data-model-preview.md).
 
 ![Data model explore window showing process and threads](images/windbgx-data-model-process-threads.png)
 
