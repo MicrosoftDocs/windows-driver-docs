@@ -261,8 +261,8 @@ This object has the following values
 |hardwareIds|array of objects|Refer [hardware ID object](#hardware-id-object) for more details|
 |chids|array of objects|Refer [CHID object](#chids-object) for more details|
 |restrictedToAudiences|array of Strings|An array of strings which represents Audiences. Audiences allow you to restrict this publication to machines with a particular configuration. As an example, the test audience will only be delivered to clients with a particular registry key installed. To get the audiences applicable to your organization, refer [get audience](get-audience-data.md).|
-|inServicePublishInfo|object|Refer [in service publish information object](#in-service-publish-information-object) for more details|
-|coEngDriverPublishInfo|object|Refer [co-engineering driver publish information object](#co-engineering-driver-publish-information-object) for more details|
+|inServicePublishInfo|object|Refer [in service publish information object](#in-service-publish-information-object) for more details. The targeting object can contain either inServicePublishInfo *or* coEngDriverPublishInfo, not both.|
+|coEngDriverPublishInfo|object|Refer [co-engineering driver publish information object](#co-engineering-driver-publish-information-object) for more details. The targeting object can contain either inServicePublishInfo *or* coEngDriverPublishInfo, not both.|
 
 ### Hardware ID object
 
