@@ -79,7 +79,14 @@ The following example demonstrates the JSON request body a shipping label. Only 
         "pnpString": "pci\\ven_8086&dev_5a85"
       }
     ],
-    "restrictedToAudiences": ["812fac65-9c26-473c-b3a9-1eb3803ac22c"],
+    "restrictedToAudiences": [
+      "00000000-0000-0000-0000-000000000000",
+      "00000000-0000-0000-0000-000000000001"
+      ],
+    "inServicePublishInfo": {
+      "flooring": "RS1",
+      "ceiling": "RS3"
+    },
     "businessJustification": "Business justification for updating shipping label"
   }
 }
