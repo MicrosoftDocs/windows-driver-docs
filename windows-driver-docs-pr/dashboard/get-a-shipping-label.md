@@ -110,7 +110,18 @@ The following example demonstrates the JSON response body returned by a successf
         "distributionState": "pendingAdd"
       }
     ],
-    "restrictedToAudiences": ["00000000-0000-0000-0000-000000000000","00000000-0000-0000-0000-000000000000"]
+    "restrictedToAudiences": [
+      "00000000-0000-0000-0000-000000000000",
+      "00000000-0000-0000-0000-000000000001"
+      ],
+    "inServicePublishInfo": {
+      "flooring": "RS1",
+      "ceiling": "RS3"
+    },
+    "coEngDriverPublishInfo": {
+      "flooringBuildNumber": 17135,
+      "ceilingBuildNumber": 17139
+    }
   },
   "workflowStatus": {
     "currentStep": "microsoftApproval",
