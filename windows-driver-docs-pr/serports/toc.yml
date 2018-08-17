@@ -137,4 +137,4 @@
   - name: "Serial IRP major function codes"
     href: serial-irp-major-function-codes.md
   - name: "Serial Port Console Redirection Table (SPCR)"
-  - href: serial-port-console-redirection-table.md
+    href: serial-port-console-redirection-table.md
