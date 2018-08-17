@@ -35,7 +35,7 @@ The following GFlags settings enable UMDH stack traces:
     ```
     gflags /i ImageName +ust 
     ```
-    Use this command to clear the GFlag settings once you are done. For more information, see [GFlags Commands](gflags-commands).
+    Use this command to clear the GFlag settings once you are done. For more information, see [GFlags Commands](gflags-commands.md).
 
     ```
     gflags /i ImageName -ust 
