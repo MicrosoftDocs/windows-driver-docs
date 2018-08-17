@@ -4,7 +4,7 @@ description: Using UMDH to Find a User-Mode Memory Leak
 ms.assetid: b15ed695-3f35-4a72-93ab-3cbfd2e33980
 keywords: ["memory leak, user-mode, UMDH", "UMDH, memory leak detection"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 08/16/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -35,6 +35,12 @@ The following GFlags settings enable UMDH stack traces:
     ```
     gflags /i ImageName +ust 
     ```
+    Use this command to clear the GFlag settings once you are done. For more information, see [GFlags Commands](gflags-commands).
+
+    ```
+    gflags /i ImageName -ust 
+    ```
+    
 
 -   By default, the amount of stack trace data that Windows gathers is limited to 32 MB on an x86 processor, and 64 MB on an x64 processor. If you must increase the size of this database, choose the **Image File** tab in the GFlags graphical interface, type the process name, press the TAB key, check the **Stack Backtrace (Megs)** check box, type a value (in MB) in the associated text box, and then click **Apply**. Increase this database only when necessary, because it may deplete limited Windows resources. When you no longer need the larger size, return this setting to its original value.
 
