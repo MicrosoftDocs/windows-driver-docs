@@ -24,7 +24,7 @@ OID\_WDI\_GET\_STATISTICS requests that the IHV component returns MAC and PHY la
 
  
 
-The MAC statistics must all be maintained per port. PHY statistics must also be maintained per port unless exempted. If PHY statistics cannot be maintained per port (as allowed by exemption), the statistics can be maintained per "channel" (PHY statistics for two ports operating on the same port can be combined).
+The MAC statistics must all be maintained per port. PHY statistics must also be maintained per port unless exempted. If PHY statistics cannot be maintained per port (as allowed by exemption), the statistics can be maintained per "channel" (PHY statistics for two ports operating on the same channel can be combined).
 
 ## Get property parameters
 
