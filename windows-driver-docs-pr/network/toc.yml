@@ -3252,6 +3252,8 @@
         href: ndis-status-wwan-ready-info.md
       - name: "NDIS_STATUS_WWAN_REGISTER_STATE"
         href: ndis-status-wwan-register-state.md
+      - name: "NDIS_STATUS_WWAN_SAR_CONFIG"
+        href: ndis-status-wwan-sar-config.md
       - name: "NDIS_STATUS_WWAN_SET_HOME_PROVIDER_COMPLETE"
         href: ndis-status-wwan-set-home-provider-complete.md
       - name: "NDIS_STATUS_WWAN_SERVICE_ACTIVATION"
@@ -5582,6 +5584,8 @@
       href: oid-wwan-ready-info.md
     - name: "OID_WWAN_REGISTER_STATE"
       href: oid-wwan-register-state.md
+    - name: "OID_WWAN_SAR_CONFIG"
+      href: oid-wwan-sar-config.md
     - name: "OID_WWAN_SERVICE_ACTIVATION"
       href: oid-wwan-service-activation.md
     - name: "OID_WWAN_SIGNAL_STATE"

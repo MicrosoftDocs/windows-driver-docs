@@ -20,7 +20,7 @@ This section contains kernel mode network driver topics for the Ntddndis.h heade
 
 The Ntddndis.h header contains definitions for constants and types for interfacing with network drivers.
 
-> [!IMPORTANT]
+> [!NOTE]
 > This section's topics contains pages for definitions and OIDs, which are not part of network driver DDI reference. 
 >
 > For DDI reference for this header, see [ntddndis.h header](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis).
@@ -340,6 +340,7 @@ The Ntddndis.h header contains definitions for constants and types for interfaci
 * [OID_WWAN_RADIO_STATE](oid-wwan-radio-state.md)
 * [OID_WWAN_READY_INFO](oid-wwan-ready-info.md)
 * [OID_WWAN_REGISTER_STATE](oid-wwan-register-state.md)
+* [OID_WWAN_SAR_CONFIG](oid-wwan-sar-config.md)
 * [OID_WWAN_SERVICE_ACTIVATION](oid-wwan-service-activation.md)
 * [OID_WWAN_SIGNAL_STATE](oid-wwan-signal-state.md)
 * [OID_WWAN_SLOT_INFO](oid-wwan-slot-info-status.md)
