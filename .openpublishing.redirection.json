@@ -5006,6 +5006,26 @@
       "source_path": "windows-driver-docs-pr/netcx/summary-of-objects.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/netcx/summary-of-netadaptercx-objects",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/using-difxapi-to-uninstall-driver-packages.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/install/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/using-difxapp-to-uninstall-driver-packages.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/using-dpinst-to-uninstall-driver-packages.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/install/using-the-difx-tools-to-uninstall-driver-packages.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines",
+      "redirect_document_id": false
     }
   ]
 }
