@@ -629,15 +629,6 @@
         href: using-device-manager-to-uninstall-devices-and-driver-packages.md
       - name: "Using SetupAPI to Uninstall Devices and Driver Packages"
         href: using-setupapi-to-uninstall-devices-and-driver-packages.md
-      - name: "Using the DIFx Tools to Uninstall Driver Packages"
-        href: using-the-difx-tools-to-uninstall-driver-packages.md
-        items: 
-        - name: "Using DIFxApp to Uninstall Driver Packages"
-          href: using-difxapp-to-uninstall-driver-packages.md
-        - name: "Using DPInst to Uninstall Driver Packages"
-          href: using-dpinst-to-uninstall-driver-packages.md
-        - name: "Using DIFxAPI to Uninstall Driver Packages"
-          href: using-difxapi-to-uninstall-driver-packages.md
     - name: "Updating Driver Files"
       href: updating-driver-files.md
   - name: "Device and Driver Installation Advanced Topics"
