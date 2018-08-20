@@ -341,6 +341,7 @@ The Ntddndis.h header contains definitions for constants and types for interfaci
 * [OID_WWAN_READY_INFO](oid-wwan-ready-info.md)
 * [OID_WWAN_REGISTER_STATE](oid-wwan-register-state.md)
 * [OID_WWAN_SAR_CONFIG](oid-wwan-sar-config.md)
+* [OID_WWAN_SAR_TRANSMISSION_STATUS](oid-wwan-sar-transmission-status.md)
 * [OID_WWAN_SERVICE_ACTIVATION](oid-wwan-service-activation.md)
 * [OID_WWAN_SIGNAL_STATE](oid-wwan-signal-state.md)
 * [OID_WWAN_SLOT_INFO](oid-wwan-slot-info-status.md)

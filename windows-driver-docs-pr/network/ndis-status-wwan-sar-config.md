@@ -30,6 +30,8 @@ This notification uses the [**NDIS_WWAN_SAR_CONFIG_INFO**](https://docs.microsof
 
 ## See also
 
+[MB SAR Platform Support](https://docs.microsoft.com/windows-hardware/drivers/network/mb-sar-platform-support)
+
 [OID_WWAN_SAR_CONFIG](oid-wwan-sar-config.md)
 
 [**NDIS_WWAN_SAR_CONFIG_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sar_config_info)

@@ -74,6 +74,8 @@ This section NDIS status notifications for Mobile Broadband (MB) miniport driver
 
 [**NDIS_STATUS_WWAN_SAR_CONFIG**](ndis-status-wwan-sar-config.md)
 
+[**NDIS_STATUS_WWAN_SAR_TRANSMISSION_STATUS**](ndis-status-wwan-sar-transmission-status.md)
+
 [**NDIS\_STATUS\_WWAN\_SERVICE\_ACTIVATION**](ndis-status-wwan-service-activation.md)
 
 [**NDIS\_STATUS\_WWAN\_SET\_HOME\_PROVIDER\_COMPLETE**](ndis-status-wwan-set-home-provider-complete.md)
