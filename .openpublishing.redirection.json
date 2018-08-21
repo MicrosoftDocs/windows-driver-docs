@@ -4973,24 +4973,59 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows-driver-docs-pr/netcx/mbbcx-api-reference.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/mbb-device-config-init.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/nf-mbbcx-mbb_device_config_init",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/mbb-device-mbim-parameters-init.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/nf-mbbcx-mbb_mbim_parameters_init",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/mbbdeviceinitconfig.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/nf-mbbcx-mbbdeviceinitconfig",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/mbbdeviceinitialize.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/nf-mbbcx-mbbdeviceinitialize",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/mbbdevicesetmbimparameters.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/nf-mbbcx-mbbdevicesetmbimparameters",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/mbbdeviceresponseavailable.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/nf-mbbcx-mbbdeviceresponseavailable",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows-driver-docs-pr/netcx/mbbdevicearmwake.md",
-      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/netcx/mbbcx-api-reference",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mbbcx/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/netcx/mbbdevicedisarmwake.md",
-      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/netcx/mbbcx-api-reference",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mbbcx/index",
       "redirect_document_id": false
     },
     {
-      "source_path": "windows-driver-docs-pr/netcx/whats-new-in-netadaptercx.md",
-      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/netcx/index",
-      "redirect_document_id": false
+      "source_path": "windows-driver-docs-pr/netcx/mbbdevicesendservicesessiondatacomplete.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/nf-mbbcx-mbbdevicesendservicesessiondatacomplete",
+      "redirect_document_id": true
     },
     {
-      "source_path": "windows-driver-docs-pr/netcx/introduction-to-netadaptercx-1-1.md",
-      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/netcx/index",
-      "redirect_document_id": false
+      "source_path": "windows-driver-docs-pr/netcx/mbbdevicereceiveservicesessiondata.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/nf-mbbcx-mbbdevicereceiveservicesessiondata",
+      "redirect_document_id": true
     },
     {
       "source_path": "windows-driver-docs-pr/netcx/introduction-to-netadaptercx-1-2.md",
@@ -5026,6 +5061,71 @@
       "source_path": "windows-driver-docs-pr/install/using-the-difx-tools-to-uninstall-driver-packages.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/mbbadapterinitialize.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/nf-mbbcx-mbbadapterinitialize",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/mbbadaptergetsessionid.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/nf-mbbcx-mbbadaptergetsessionid",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/mbbrequestgetbuffer.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/nf-mbbcx-mbbrequestgetbuffer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/mbbrequestgetactivityid.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/nf-mbbcx-mbbrequestgetcorrelationid",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/mbbrequestcomplete.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/nf-mbbcx-mbbrequestcomplete",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/mbbrequestcompletewithinformation.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/nf-mbbcx-mbbrequestcompletewithinformation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/evt-mbb-device-send-mbim-fragment.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/nc-mbbcx-evt_mbb_device_send_mbim_fragment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/evt-mbb-device-receive-mbim-fragment.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/nc-mbbcx-evt_mbb_device_receive_mbim_fragment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/evt-mbb-device-send-service-session-data.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/nc-mbbcx-evt_mbb_device_send_service_session_data",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/evt-mbb-device-create-adapter.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/nc-mbbcx-evt_mbb_device_create_adapter",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/mbb-device-config.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/ns-mbbcx-_mbb_device_config",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/mbb-device-mbim-parameters.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/ns-mbbcx-_mbb_device_mbim_parameters",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/mbb-mbim-version.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/ne-mbbcx-_mbb_mbim_version",
+      "redirect_document_id": true
     }
   ]
 }
