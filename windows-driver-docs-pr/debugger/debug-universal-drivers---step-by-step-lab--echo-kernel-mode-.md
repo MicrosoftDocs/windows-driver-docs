@@ -4,7 +4,7 @@ description: This lab introduces the WinDbg kernel debugger. WinDbg is used to d
 ms.assetid: 3FBC3693-4288-42BA-B1E8-84DC2A9AFFD9
 keywords: ["debug lab", "step-by-step", "ECHO"]
 ms.author: domars
-ms.date: 05/21/2018
+ms.date: 08/16/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -638,14 +638,29 @@ set ENABLE_OPTIMIZER=0
     Type the following to change the default debug bit mask so that all debug messages from the target system will be displayed in the debugger.
 
     ```
-    0: kd> !ed nt!Kd_DEFAULT_MASK  0xFFFFFFFF
+    0: kd> ed nt!Kd_DEFAULT_MASK  0xFFFFFFFF
     ```
 
     Some drivers will display additional information when the mask of 0xFFFFFFFF is used. Set the mask to 0x00000000 if you would like to reduce the amount of information that is displayed.
 
     ```
-    0: kd> !ed nt!Kd_DEFAULT_MASK  0x00000000
+    0: kd> ed nt!Kd_DEFAULT_MASK  0x00000000
     ```
+    
+    Use the dd command to display confirm the mask is set to display all of the debugger messages. 
+
+    ```
+    0: kd> dd nt!kd_DEFAULT_MASK 
+    fffff802`bb4057c0  ffffffff 00000000 00000000 00000000
+    fffff802`bb4057d0  00000000 00000000 00000000 00000000
+    fffff802`bb4057e0  00000001 00000000 00000000 00000000
+    fffff802`bb4057f0  00000000 00000000 00000000 00000000
+    fffff802`bb405800  00000000 00000000 00000000 00000000
+    fffff802`bb405810  00000000 00000000 00000000 00000000
+    fffff802`bb405820  00000000 00000000 00000000 00000000
+    fffff802`bb405830  00000000 00000000 00000000 00000000
+    ```
+    
 
 ## <span id="DisplayingThePlugAndPlayDeviceTree"></span><span id="displayingtheplugandplaydevicetree"></span><span id="DISPLAYINGTHEPLUGANDPLAYDEVICETREE"></span>Section 6: Displaying Plug and Play device tree information
 
@@ -1398,7 +1413,7 @@ The commands to view and set threads are very similar to those of processes. Use
     ```
     0: kd> k
       *** Stack trace for last set context - .thread/.cxr resets it
-# Child-SP          RetAddr           Call Site
+    # Child-SP          RetAddr           Call Site
     00 ffffd001`5551d7a0 fffff801`eed184fe nt!KiSwapContext+0x76 [d:\9142\minkernel\ntos\ke\amd64\ctxswap.asm @ 109]
     01 ffffd001`5551d8e0 fffff801`eed17f79 nt!KiSwapThread+0x14e [d:\9142\minkernel\ntos\ke\thredsup.c @ 6347]
     02 ffffd001`5551d980 fffff801`eecea340 nt!KiCommitThreadWait+0x129 [d:\9142\minkernel\ntos\ke\waitsup.c @ 619]
