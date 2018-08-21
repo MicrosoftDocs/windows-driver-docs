@@ -1,6 +1,7 @@
 ---
 title: MB hang detection
 description: MB hang detection
+author: duncanmacmichael # Original committer did not have GitHub account so adding this line fixes that issue
 ms.assetid: D3D222F7-96BE-48F7-8074-8820E43E3C7B
 keywords:
 - MB hang detection, Mobile Broadband hang detection, Mobile Broadband miniport driver hang detection
