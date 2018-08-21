@@ -29,6 +29,8 @@
     items: 
     - name: "Packet descriptors and extensions"
       href: packet-descriptors-and-extensions.md
+    - name: "NetAdapterCx hardware offloads"
+      href: netadaptercx-hardware-offloads.md
     - name: "Transmit and receive queues"
       href: transmit-and-receive-queues.md
     - name: "Using the ring buffer"
