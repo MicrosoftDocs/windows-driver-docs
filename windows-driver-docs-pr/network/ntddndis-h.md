@@ -327,6 +327,7 @@ The Ntddndis.h header contains definitions for constants and types for interfaci
 * [OID_WWAN_ENUMERATE_DEVICE_SERVICES](oid-wwan-enumerate-device-services.md)
 * [OID_WWAN_HOME_PROVIDER](oid-wwan-home-provider.md)
 * [OID_WWAN_MPDP](oid-wwan-mpdp.md)
+* [OID_WWAN_NETWORK_BLACKLIST](oid-wwan-network-blacklist.md)
 * [OID_WWAN_NETWORK_IDLE_HINT](oid-wwan-network-idle-hint.md)
 * [OID_WWAN_PACKET_SERVICE](oid-wwan-packet-service.md)
 * [OID_WWAN_PCO](oid-wwan-pco.md)

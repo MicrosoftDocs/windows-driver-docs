@@ -48,7 +48,11 @@ This section NDIS status notifications for Mobile Broadband (MB) miniport driver
 
 [**NDIS_STATUS_WWAN_MODEM_CONFIG_INFO**](ndis-status-wwan-modem-config-info.md)
 
+[**NDIS_STATUS_WWAN_MPDP_LIST**](ndis-status-wwan-mpdp-list.md)
+
 [**NDIS_STATUS_WWAN_MPDP_STATE**](ndis-status-wwan-mpdp-state.md)
+
+[**NDIS_STATUS_WWAN_NETWORK_BLACKLIST**](ndis-status-wwan-network-blacklist.md)
 
 [**NDIS\_STATUS\_WWAN\_PACKET\_SERVICE**](ndis-status-wwan-packet-service.md)
 
