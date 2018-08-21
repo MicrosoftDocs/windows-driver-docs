@@ -55,7 +55,7 @@ For more information about FLDR and PLDR, see [MB Device-based Reset and Recover
 
 ## Reset (Surprise-Removal)
 
-Once the ceset recovery can proceed, the bus causes the Plug and Play (PnP) manager to generate a surprise-remove IRP, provided the support is present at the ACPI/UEFI level. NDIS, on receiving the surprise-remove IRP, calls back into `WMBCLASS` for a surprise-remove PnP event callback. `WMBCLASS` handles the surprise-removal operation. At this point, all the commands, etc. must be completed and the data packets must be returned successfully back to NDIS. Otherwise, the surprise-removal operation will not complete. The rest of flow is identical to a real device surprise-remove on a bus, for example USB. 
+Once the reset recovery can proceed, the bus causes the Plug and Play (PnP) manager to generate a surprise-remove IRP, provided the support is present at the ACPI/UEFI level. NDIS, on receiving the surprise-remove IRP, calls back into `WMBCLASS` for a surprise-remove PnP event callback. `WMBCLASS` handles the surprise-removal operation. At this point, all the commands, etc. must be completed and the data packets must be returned successfully back to NDIS. Otherwise, the surprise-removal operation will not complete. The rest of flow is identical to a real device surprise-remove on a bus, for example USB. 
 
 1. NDIS calls the PnP event for surprise-removal.
 2. `WMBCLASS` ignores the return of hung MBIM command and returns the original NDIS command. 
