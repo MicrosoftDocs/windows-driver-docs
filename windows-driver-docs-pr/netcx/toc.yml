@@ -7,8 +7,17 @@
     href: building-a-netadaptercx-client-driver.md
   - name: "INF files for NetAdapterCx client drivers"
     href: inf-files-for-netadaptercx-client-drivers.md
-  - name: "Device initialization"
-    href: device-initialization.md
+  - name: "Managing the lifetime of objects in NetAdapterCx"
+    href: managing-the-lifetime-of-objects-in-netadaptercx.md
+    items: 
+    - name: "Summary of NetAdapterCx objects"
+      href: summary-of-netadaptercx-objects.md
+    - name: "Device and adapter initialization"
+      href: device-and-adapter-initialization.md
+    - name: "Power-up sequence for a NetAdapterCx client driver"
+      href: power-up-sequence-for-a-netadaptercx-client-driver.md
+    - name: "Power-down sequence for a NetAdapterCx client driver"
+      href: power-down-sequence-for-a-netadaptercx-client-driver.md  
   - name: "Accessing configuration information"
     href: accessing-configuration-information.md
   - name: "Handling control requests"
@@ -20,6 +29,8 @@
     items: 
     - name: "Packet descriptors and extensions"
       href: packet-descriptors-and-extensions.md
+    - name: "NetAdapterCx hardware offloads"
+      href: netadaptercx-hardware-offloads.md
     - name: "Transmit and receive queues"
       href: transmit-and-receive-queues.md
     - name: "Using the ring buffer"
@@ -32,12 +43,6 @@
     href: configuring-power-management.md
   - name: "NDIS-WDF function equivalents"
     href: ndis-wdf-function-equivalents.md
-  - name: "Summary of objects"
-    href: summary-of-objects.md
-  - name: "Power-up sequence for a NetAdapterCx client driver"
-    href: power-up-sequence-for-a-netadaptercx-client-driver.md
-  - name: "Power-down sequence for a NetAdapterCx client driver"
-    href: power-down-sequence-for-a-netadaptercx-client-driver.md
   - name: "NetAdapterCx limitations"
     href: netadaptercx-limitations.md
   - name: "Mobile Broadband (MBB) WDF class extension (MBBCx)"
@@ -45,48 +50,3 @@
     items: 
     - name: "Writing an MBBCx client driver"
       href: writing-an-MBBcx-client-driver.md
-    - name: "MBBCx API reference"
-      href: mbbcx-api-reference.md
-      items: 
-      - name: "MBB_DEVICE_CONFIG_INIT"
-        href: mbb-device-config-init.md
-      - name: "MBB_DEVICE_MBIM_PARAMETERS_INIT"
-        href: mbb-device-mbim-parameters-init.md
-      - name: "MbbDeviceInitConfig"
-        href: mbbdeviceinitconfig.md
-      - name: "MbbDeviceInitialize"
-        href: mbbdeviceinitialize.md
-      - name: "MbbDeviceSetMbimParameters"
-        href: mbbdevicesetmbimparameters.md
-      - name: "MbbDeviceResponseAvailable"
-        href: mbbdeviceresponseavailable.md
-      - name: "MbbDeviceSendServiceSessionDataComplete"
-        href: mbbdevicesendservicesessiondatacomplete.md
-      - name: "MbbDeviceReceiveServiceSessionData"
-        href: mbbdevicereceiveservicesessiondata.md
-      - name: "MbbAdapterInitialize"
-        href: mbbadapterinitialize.md
-      - name: "MbbAdapterGetSessionId"
-        href: mbbadaptergetsessionid.md
-      - name: "MbbRequestGetBuffer"
-        href: mbbrequestgetbuffer.md
-      - name: "MbbRequestGetActivityId"
-        href: mbbrequestgetactivityid.md
-      - name: "MbbRequestComplete"
-        href: mbbrequestcomplete.md
-      - name: "MbbRequestCompleteWithInformation"
-        href: mbbrequestcompletewithinformation.md
-      - name: "EVT_MBB_DEVICE_SEND_MBIM_FRAGMENT"
-        href: evt-mbb-device-send-mbim-fragment.md
-      - name: "EVT_MBB_DEVICE_RECEIVE_MBIM_FRAGMENT"
-        href: evt-mbb-device-receive-mbim-fragment.md
-      - name: "EVT_MBB_DEVICE_SEND_SERVICE_SESSION_DATA"
-        href: evt-mbb-device-send-service-session-data.md
-      - name: "EVT_MBB_DEVICE_CREATE_ADAPTER"
-        href: evt-mbb-device-create-adapter.md
-      - name: "MBB_DEVICE_CONFIG"
-        href: mbb-device-config.md
-      - name: "MBB_DEVICE_MBIM_PARAMETERS"
-        href: mbb-device-mbim-parameters.md
-      - name: "MBB_MBIM_VERSION"
-        href: mbb-mbim-version.md
