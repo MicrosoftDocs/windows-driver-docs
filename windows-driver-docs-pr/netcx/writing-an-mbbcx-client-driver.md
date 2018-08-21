@@ -29,7 +29,7 @@ In addition to those tasks required by NetAdapterCx for [NetAdapter device initi
 
 1. Call [**MbbDeviceInitConfig**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/nf-mbbcx-mbbdeviceinitconfig) after calling [*NetAdapterDeviceInitConfig*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterdeviceinitconfig) but before calling [*WdfDeviceCreate*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicecreate), referencing the same [**WDFDEVICE\_INIT**](../wdf/wdfdevice_init.md) object passed in by the framework.
 
-2. Call [**MbbDeviceInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/nf-mbbcx-mbbdeviceinitialize) to register MBB device-specific callback functions using an initialized [MBB_DEVICE_CONFIG](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/ns-mbbcx-_mbb_device_config) structure and the WDFDEVICE object obtained from *WdfDeviceCreate*.
+2. Call [**MbbDeviceInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/nf-mbbcx-mbbdeviceinitialize) to register MBB device-specific callback functions using an initialized [**MBB_DEVICE_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/ns-mbbcx-_mbb_device_config) structure and the WDFDEVICE object obtained from *WdfDeviceCreate*.
 
 The following example demonstrates how to initialize the MBB device. Error handling has been left out for clarity.
 
