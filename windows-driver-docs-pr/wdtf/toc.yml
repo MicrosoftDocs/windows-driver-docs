@@ -43,6 +43,8 @@
     items: 
     - name: "WDTF Architecture"
       href: wdtf-architecture.md
+    - name: "WDTF runtime library" 
+      href: wdtf-runtime-library.md
     - name: "Extending the Framework"
       href: extending-the-framework.md
       items: 
