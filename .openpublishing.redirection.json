@@ -5128,7 +5128,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "windows-driver-docs-pr/image/",
+      "source_path": "windows-driver-docs-pr/image/active-directory.md",
       "redirect_URL": "/windows-hardware/drivers/image/index",
       "redirect_document_id": false
     }
