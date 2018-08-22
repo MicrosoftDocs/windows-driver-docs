@@ -29,9 +29,9 @@ UUID Value = **3d01dcc5-fef5-4d05-0d3abef7058e9aaf**
 | --- | --- | --- |
 | MBIM_CID_MS_NETWORK_BLACKLIST | 2 | Windows 10, version 1703 |
 
-### MBIM_CID_MS_NETWORK_BLACKLIST
+## MBIM_CID_MS_NETWORK_BLACKLIST
 
-#### Description
+### Description
 
 Enterprises, users or mobile operators may specify the SIM cards and networks on which they do not want the modem to register. This command is used for the OS to be able to query and set the blacklists on the modem. There are two blacklists:
 
@@ -42,32 +42,32 @@ The modem has to maintain both blacklists per modem and persist across SIM swaps
 
 For the Set command it is expected to overwrite the existing blacklists in the modem with the Set command’s payload.
 
-##### Query
+#### Query
 
 MBIM_MS_NETWORK_BLACKLIST_INFO is returned from completed Query and Set messages in the InformationBuffer. For Query, the InformationBuffer is NULL.
 
-##### Set
+#### Set
 
 For Set, the InformationBuffer contains an MBIM_MS_SET_NETWORK_BLACKLIST. In the Set operation, a list of MNC/MCC combinations should be provided to the modem. When the SIM card’s IMSI matches the MNC and MCC value specified, the modem should deregister from the network and should not try to reregister until a new SIM card that does not match the MNC/MCC is inserted.
 
-##### Unsolicited Event
+#### Unsolicited Event
 
 An Unsolicited Event is expected if any of the blacklist states have changed from actuated to not actuated, or vice versa; for example, if a SIM is inserted whose provider matches the SIM provider blacklist.
 
-#### Parameters
+### Parameters
 
 |  | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_MS_SET_NETWORK_BLACKLIST | Not applicable | Not applicable |
 | Response | MBIM_MS_NETWORK_BLACKLIST_INFO | MBIM_MS_NETWORK_BLACKLIST_INFO | MBIM_MS_NETWORK_BLACKLIST_INFO |
 
-#### Data Structures
+### Data Structures
 
-##### Query
+#### Query
 
 The InformationBuffer shall be NULL and InformationBufferLength shall be zero.
 
-##### Set
+#### Set
 
 The following MBIM_MS_NETWORK_BLACKLIST_INFO structure shall be used in the InformationBuffer.
 
@@ -103,11 +103,11 @@ MBIM_MS_NETWORK_BLACKLIST_TYPE is used by the preceding data structure. It speci
 | MbimMsNetworkBlacklistTypeSIM | 0 | The MCC/MNC pair are used for SIM provider blacklist. |
 | MbimMsNetworkBlacklistTypeNetwork | 1 | The MCC/MNC pair are used for network provider blacklist. |
 
-##### Response
+#### Response
 
 For more information, see the MBIM_MS_NETWORK_BLACKLIST_INFO table.
 
-#### Status Codes
+### Status Codes
 
 For Query and Set operations:
 
