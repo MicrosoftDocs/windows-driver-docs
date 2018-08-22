@@ -58,7 +58,7 @@ An Unsolicited Event is expected if any of the blacklist states have changed fro
 
 |  | Set | Query | Notification |
 | --- | --- | --- | --- |
-| Command | MBIM_MS_NETWORK_BLACKLIST_INFO | Not applicable | Not applicable |
+| Command | MBIM_MS_SET_NETWORK_BLACKLIST | Not applicable | Not applicable |
 | Response | MBIM_MS_NETWORK_BLACKLIST_INFO | MBIM_MS_NETWORK_BLACKLIST_INFO | MBIM_MS_NETWORK_BLACKLIST_INFO |
 
 #### Data Structures
@@ -122,5 +122,3 @@ For Set operations only:
 | --- | --- |
 | MBIM_STATUS_INVALID_PARAMETERS | The operation failed because of invalid parameters. |
 | MBIM_STATUS_WRITE_FAILURE | The operation failed because the update request was unsuccessful. |
-
-
