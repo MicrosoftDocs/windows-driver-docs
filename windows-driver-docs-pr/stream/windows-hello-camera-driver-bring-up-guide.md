@@ -1,7 +1,7 @@
 ---
 title: Windows Hello camera driver bring up guide
 author: windows-driver-content
-description: This topic discusses how to enable Windows Hello for an infrared (IR) camera and is meant for original equipment manufacturers (OEMs) and independent hardware vendors (IHVs).
+description: This topic discusses how to enable face authentication for an infrared (IR) camera and is meant for original equipment manufacturers (OEMs) and independent hardware vendors (IHVs).
 ms.assetid: 5CE619F4-E136-4F8F-8F90-F7F96DE4642E
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -13,11 +13,11 @@ ms.localizationpriority: medium
 
 # Camera driver bring up guide
 
-This topic discusses how to enable Windows Hello for an infrared (IR) camera and is meant for original equipment manufacturers (OEMs) and independent hardware vendors (IHVs) who want to provide this log on functionality in their devices.
+This topic discusses how to enable face authentication for an infrared (IR) camera and is meant for original equipment manufacturers (OEMs) and independent hardware vendors (IHVs) who want to provide this functionality in their devices.
 
 ## FrameServer
 
-The following diagram shows how Windows Hello works with the new driver stack through FrameServer:
+The following diagram shows how face authentication works with the new driver stack through FrameServer:
 
 ![windows hello and frameserver](images/windows-hello-device-model.png)
 
@@ -43,11 +43,11 @@ There are two new face authentication DDI constructs available in Windows 10, v
 
 ## USB camera support
 
-To enable Windows Hello for an infrared camera on your device, you must provide a correctly configured DeviceMFT component and USB Video Class (UVC) extension unit.
+To enable face authentication for an infrared camera on your device, you must provide a correctly configured DeviceMFT component and USB Video Class (UVC) extension unit.
 
 ### Configure the DeviceMFT component
 
-As a starting point for building a DeviceMFT component that supports Windows Hello on your device, you can use the [sampledevicemft](https://github.com/Microsoft/Windows-driver-samples/tree/master/avstream/sampledevicemft) sample located in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
+As a starting point for building a DeviceMFT component that supports face authentication on your device, you can use the [sampledevicemft](https://github.com/Microsoft/Windows-driver-samples/tree/master/avstream/sampledevicemft) sample located in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
 
 To modify the driver sample, download and extract [Windows-driver-samples-master.zip](https://github.com/Microsoft/Windows-driver-samples/archive/master.zip), or alternatively, use git to clone the Windows driver sample repository to your development computer. Navigate to the **sampledevicemft** sample located in the **avstream** folder and make the following changes to the sample source code:
 
