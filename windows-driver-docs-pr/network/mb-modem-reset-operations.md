@@ -5,7 +5,7 @@ ms.assetid: E33073B5-53D5-4F6F-85EC-5B46FDE9EA4D
 keywords:
 - MB modem reset, Mobile Broadband modem reset, Mobile Broadband miniport driver modem reset
 ms.author: windowsdriverdev
-ms.date: 08/17/2017
+ms.date: 08/09/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,4 +65,3 @@ The following status codes are applicable. Status is returned as an asynchronous
 ## OID_WWAN_DEVICE_RESET
 
 The NDIS equivalent for MBIM_CID_MS_DEVICE_RESET is [OID_WWAN_DEVICE_RESET](oid-wwan-device-reset.md).
-
