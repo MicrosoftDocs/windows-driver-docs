@@ -5131,6 +5131,1156 @@
       "source_path": "windows-driver-docs-pr/image/active-directory.md",
       "redirect_URL": "/windows-hardware/drivers/image/index",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/architecture.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/cancelpostscanjob.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/cancelpostscanjobrequest-example.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/cancelpostscanjobrequest-jobtoken.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/cancelpostscanjobrequest.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/cancelpostscanjobresponse-example.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/cancelpostscanjobresponse.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/certificate-management.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/common-distributed-scan-processing-web-service-operation-error-codes.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/createpostscanjob.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/createpostscanjobrequest-example.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/createpostscanjobrequest-postscaninstructions.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/createpostscanjobrequest-psp-identifier.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/createpostscanjobrequest-useridentifier.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/createpostscanjobrequest.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/createpostscanjobresponse-example.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/createpostscanjobresponse-jobtoken.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/createpostscanjobresponse.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/distributed-scan-device-web-service--ws-dsd-schema.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/distributed-scan-device-web-service-protocol-summary.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/distributed-scan-management--dsm--schemas.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/distributed-scan-management--dsm-.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/distributed-scan-processing-web-service--ws-dsp--schema.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/distributed-scan-processing-web-service-operation-error-reporting.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/distributed-scan-processing-web-service-protocol-summary.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/dsm-device-requirements.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/dsm-model-events.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/dsm-model-localization.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/dsm-model-operations.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/dsm-model-scenarios.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/dsm-model-security.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/dsm-operation-phases-.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/dsm-scan-job-sequence-diagram.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/dsm-schemas.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/dsm-terminology.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
     }
   ]
 }
