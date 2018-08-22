@@ -23,7 +23,7 @@ For Set requests, this OID's payload contains an [**NDIS_WWAN_SET_SAR_TRANSMISSI
 
 ## Remarks
 
-After each Query or Set response, the modem should return an [**NDIS_WWAN_SAR_TRANSMISSION_STATUS_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sar_transmission_status_info) structure that describes whether SAR notifications on transmit state are enabled in the modem.
+After each Query or Set request, the miniport driver should return an [**NDIS_WWAN_SAR_TRANSMISSION_STATUS_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sar_transmission_status_info) structure that describes whether SAR notifications on transmit state are enabled in the modem.
 
 For more information about usage of this OID, see [MBIM_CID_MS_TRANSMISSION_STATUS](https://docs.microsoft.com/windows-hardware/drivers/network/mb-sar-platform-support#mbimcidmstransmissionstatus).
 
