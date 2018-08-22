@@ -19,7 +19,7 @@ OID_WWAN_NETWORK_BLACKLIST gets or sets information about network blacklists for
 
 Miniport drivers must process Query requests asynchronously, initially returning NDIS_STATUS_INDICATION_REQUIRED to the original request before later sending an [NDIS_STATUS_WWAN_NETWORK_BLACKLIST](ndis-status-wwan-network-blacklist.md) status notification containing an [**NDIS_WWAN_NETWORK_BLACKLIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_network_blacklist) structure that describes the current network blacklists.
 
-For Set requests, this OID's payload contains an [**NDIS_WWAN_SET_NETWORK_BLACKLIST*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_network_blacklist) structure that specifies a list of MNC/MCC combinations that should be ignored by the modem.
+For Set requests, this OID's payload contains an [**NDIS_WWAN_SET_NETWORK_BLACKLIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_network_blacklist) structure that specifies a list of MNC/MCC combinations that should be ignored by the modem.
 
 ## Remarks
 
@@ -42,4 +42,4 @@ For more information about usage of this OID, see [MBIM_CID_MS_NETWORK_BLACKLIST
 
 [**NDIS_WWAN_NETWORK_BLACKLIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_network_blacklist)
 
-[**NDIS_WWAN_SET_NETWORK_BLACKLIST*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_network_blacklist)
+[**NDIS_WWAN_SET_NETWORK_BLACKLIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_network_blacklist)
