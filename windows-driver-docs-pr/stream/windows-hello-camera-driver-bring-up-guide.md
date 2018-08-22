@@ -1,7 +1,7 @@
 ---
 title: Windows Hello camera driver bring up guide
 author: windows-driver-content
-description: Windows Hello provides you the ability to enable face authentication to log on to a Windows 10 system or device.
+description: This topic discusses how to enable Windows Hello for an infrared (IR) camera and is meant for original equipment manufacturers (OEMs) and independent hardware vendors (IHVs).
 ms.assetid: 5CE619F4-E136-4F8F-8F90-F7F96DE4642E
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
@@ -11,20 +11,17 @@ ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-# Windows Hello camera driver bring up guide
+# Camera driver bring up guide
 
+This topic discusses how to enable Windows Hello for an infrared (IR) camera and is meant for original equipment manufacturers (OEMs) and independent hardware vendors (IHVs) who want to provide this log on functionality in their devices.
 
-Windows Hello provides you the ability to enable face authentication to log on to a Windows 10 system or device. This topic discusses how to enable Windows Hello for an infrared (IR) camera and is meant for original equipment manufacturers (OEMs) and independent hardware vendors (IHVs) who want to provide this log on functionality in their devices.
-
-## Windows Hello and FrameServer
-
+## FrameServer
 
 The following diagram shows how Windows Hello works with the new driver stack through FrameServer:
 
 ![windows hello and frameserver](images/windows-hello-device-model.png)
 
 ## Face authentication DDIs
-
 
 There are two new face authentication DDI constructs available in Windows 10, version 1607 to support Windows Hello:
 
@@ -45,7 +42,6 @@ There are two new face authentication DDI constructs available in Windows 10, v
     This metadata attribute for IR cameras specifies that frames are using active IR illumination. For more information, see the **Mandatory metadata attributes** table in the [Photo capture feedback](standardized-extended-controls-.md#photo-capture-feedback-applied-device-settings) section of the [Extended camera controls](standardized-extended-controls-.md) topic.
 
 ## USB camera support
-
 
 To enable Windows Hello for an infrared camera on your device, you must provide a correctly configured DeviceMFT component and USB Video Class (UVC) extension unit.
 
@@ -156,7 +152,9 @@ These are tests that IR camera modules will need to pass to be enabled:
 If the HLK tests listed above are not passed, Microsoft will not issue a signed driver to the OEM, and Windows Hello will not operate.
 
 ## Related topics
+
 [Capture photos and video with MediaCapture](https://msdn.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-mediacapture)  
+
 [Windows.Media.Capture namespace](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.aspx)  
 
 
