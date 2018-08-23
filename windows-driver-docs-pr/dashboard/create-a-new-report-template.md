@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Create a new report template
 
-Use this method to create a new reporting template based on your business needs. You can manage your existing reporting templates using the methods listed in [Manage report templates and scheduled reports](schedule-custom-reports-for-driver-failure-details.md#manage-report-templates-and-scheduled-reports)
+Use this method to create a new reporting template based on your business needs. You can manage your existing reporting templates using the methods listed in [Manage report templates and scheduled reports](manage-report-templates-and-scheduled-reports.md)
 
 ## Request syntax
 
@@ -195,7 +195,7 @@ This table contains descriptions of parameters in the response.
 
 |Parameter|Description|
 |----|----|
-|templateId|This is the template Id of the report template created. This will be used as the input for the Schedule Report API. See [Schedule a new report](schedule-a-new-report) for more info.
+|templateId|This is the template Id of the report template created. This will be used as the input for the Schedule Report API. See [Schedule a new report](schedule-a-new-report.md) for more info.
 
 You can manage your existing reports using the methods shown in [Manage report templates and scheduled reports](manage-report-templates-and-scheduled-reports.md). You can find a list of sample report templates in [Sample report templates](sample-report-templates.md).
 
@@ -318,7 +318,7 @@ You can select from the following columns in the Windows 10, Windows 8.x, and Wi
     </tr>
     <tr>
       <td>CabIdHash</td>
-      <td>Hash of the CabID that can be used to download the cab file using the [CabDownload](TBD) API</td>
+      <td>Hash of the CabID that can be used to download the cab file using the [CabDownload](https://manage.devcenter.microsoft.com/v1.0/my/analytics/driver/cabdownload) API</td>
     </tr>
     <tr>
       <td>DeviceId</td>
