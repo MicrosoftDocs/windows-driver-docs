@@ -5413,67 +5413,67 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows-driver-docs-pr/image/",
+      "source_path": "windows-driver-docs-pr/image/getjobelements.md",
       "redirect_URL": "/windows-hardware/drivers/image/index",
       "redirect_document_id": false
     },
     {
-      "source_path": "windows-driver-docs-pr/image/",
+      "source_path": "windows-driver-docs-pr/image/getjobelementsrequest-jobid.md",
       "redirect_URL": "/windows-hardware/drivers/image/index",
       "redirect_document_id": false
     },
     {
-      "source_path": "windows-driver-docs-pr/image/",
+      "source_path": "windows-driver-docs-pr/image/getjobelementsrequest-requestedelements-name.md",
       "redirect_URL": "/windows-hardware/drivers/image/index",
       "redirect_document_id": false
     },
     {
-      "source_path": "windows-driver-docs-pr/image/",
+      "source_path": "windows-driver-docs-pr/image/getjobelementsrequest-requestedelements.md",
       "redirect_URL": "/windows-hardware/drivers/image/index",
       "redirect_document_id": false
     },
     {
-      "source_path": "windows-driver-docs-pr/image/",
+      "source_path": "windows-driver-docs-pr/image/getjobelementsrequest2.md,
       "redirect_URL": "/windows-hardware/drivers/image/index",
       "redirect_document_id": false
     },
     {
-      "source_path": "windows-driver-docs-pr/image/",
+      "source_path": "windows-driver-docs-pr/image/getjobelementsresponse-jobelements-elementdata.mdgetjobelementsresponse-jobelements-elementdata.md",
       "redirect_URL": "/windows-hardware/drivers/image/index",
       "redirect_document_id": false
     },
     {
-      "source_path": "windows-driver-docs-pr/image/",
+      "source_path": "windows-driver-docs-pr/image/getjobelementsresponse-jobelements.md",
       "redirect_URL": "/windows-hardware/drivers/image/index",
       "redirect_document_id": false
     },
     {
-      "source_path": "windows-driver-docs-pr/image/",
+      "source_path": "windows-driver-docs-pr/image/getjobelementsresponse3.md",
       "redirect_URL": "/windows-hardware/drivers/image/index",
       "redirect_document_id": false
     },
     {
-      "source_path": "windows-driver-docs-pr/image/",
+      "source_path": "windows-driver-docs-pr/image/getjobhistory.md",
       "redirect_URL": "/windows-hardware/drivers/image/index",
       "redirect_document_id": false
     },
     {
-      "source_path": "windows-driver-docs-pr/image/",
+      "source_path": "windows-driver-docs-pr/image/getjobhistoryrequest2.md",
       "redirect_URL": "/windows-hardware/drivers/image/index",
       "redirect_document_id": false
     },
     {
-      "source_path": "windows-driver-docs-pr/image/",
+      "source_path": "windows-driver-docs-pr/image/getjobhistoryresponse-jobhistory-jobsummary.md",
       "redirect_URL": "/windows-hardware/drivers/image/index",
       "redirect_document_id": false
     },
     {
-      "source_path": "windows-driver-docs-pr/image/",
+      "source_path": "windows-driver-docs-pr/image/getjobhistoryresponse-jobhistory.md",
       "redirect_URL": "/windows-hardware/drivers/image/index",
       "redirect_document_id": false
     },
     {
-      "source_path": "windows-driver-docs-pr/image/",
+      "source_path": "windows-driver-docs-pr/image/getjobhistoryresponse4.md",
       "redirect_URL": "/windows-hardware/drivers/image/index",
       "redirect_document_id": false
     },
