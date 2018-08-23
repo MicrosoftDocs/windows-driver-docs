@@ -39,13 +39,17 @@ Cross-signed drivers are still permitted if any of the following are true:
 
 For more info, see [Driver Signing Changes in Windows 10, version 1607](https://blogs.msdn.microsoft.com/windows_hardware_certification/2016/07/26/driver-signing-changes-in-windows-10-version-1607/).
 
-## Signing a driver for all client versions of Windows
+## Signing a driver for client versions of Windows
 
-To sign a driver for Windows Vista, Windows 7, Windows 8, Windows 8.1, and Windows 10, follow these steps:
+To sign a driver for Windows 10, follow these steps:
 
-1. Run the HLK tests (Windows 10), or the HCK tests (Windows 8.1 and earlier versions).
-2. Using the Windows 10 HLK, merge the two test logs.
-3. Submit your driver and the merged HLK/HCK test results to the [Windows Hardware Developer Center Dashboard portal](https://sysdev.microsoft.com/hardware).
+1. For each version of Windows 10 that you want to certify on, download the Windows HLK (Hardware Lab Kit) for that version and run a full cert pass against the client for that version. You'll get one log per version.
+2. If you have multiple logs, merge them into a single log using the most recent HLK.
+3. Submit your driver and the merged HLK test results to the [Windows Hardware Developer Center Dashboard portal](https://sysdev.microsoft.com/hardware).
+
+For version-specific details, please review the [WHCP (Windows Hardware Compatibility Program) policy](https://docs.microsoft.com/windows-hardware/design/compatibility/whcp-specifications-policies) for the Windows versions you want to target.
+
+To sign a driver for Windows 7, Windows 8, or Windows 8.1, use the appropriate HCK (Hardware Certification Kit).  For more information, see the [Windows Hardware Certification Kit User's Guide](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj124227(v=vs.85)).
 
 ## Signing a driver for earlier versions of Windows
 

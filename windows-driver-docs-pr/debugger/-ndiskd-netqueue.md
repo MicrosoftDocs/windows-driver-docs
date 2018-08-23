@@ -69,7 +69,6 @@ NETADAPTER
     WDFDEVICE          00002efdcf45f2f8   
 
     Event Callbacks                        Function pointer   Symbol (if available)
-    EvtAdapterSetCapabilities              fffff800341519ac   RtEthSample+19ac
     EvtAdapterCreateTxQueue                fffff80034151508   RtEthSample+1508
     EvtAdapterCreateRxQueue                fffff800341510ec   RtEthSample+10ec
 
