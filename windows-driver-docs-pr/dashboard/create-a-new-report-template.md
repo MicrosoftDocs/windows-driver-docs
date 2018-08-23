@@ -103,9 +103,9 @@ Define your reporting template in JSON format as specified below.
 }
 ```
 
-## Glossary
+## Parameters
 
-This table contains definitions of important elements in the Report Template Creation JSON.
+This table describes the parameters in the Report Template Creation JSON.
 
 <table>
     <thead>
@@ -202,7 +202,7 @@ You can select from the following columns in the Windows 10, Windows 8.x, and Wi
 <table>
   <thead>
     <tr>
-      <th class="x-hidden-focus">Column name</th>
+      <th>Column name</th>
       <th>Description</th>
     </tr>
   </thead>

@@ -98,6 +98,21 @@
         href: get-details-for-an-oem-hardware-error.md
       - name: "Download the CAB file for an OEM hardware error"
         href: download-the-cab-file-for-an-oem-hardware-error.md
+    - name: "Schedule custom reports for your driver failure details"
+      href: schedule-custom-reports-for-your-driver-failure-details.md
+      items:
+      - name: "Create a new report template"
+        href: create-a-new-report-template.md
+      -name: "Schedule a new report"  
+        href: schedule-a-new-report.md
+      -name: "Get report data"
+        href: get-report-data.md
+      -name: "Download failure cabs"
+        href: download-failure-cabs.md
+    -name: "Manage report templates and scheduled reports"
+      href: manage-report-templates-and-scheduled-reports.md
+    -name: "Sample report templates"
+      href: sample-report-templates.md
   - name: "File signing LSA plugins and UEFI firmware"
     href: lsa-and-uefi-file-signing.md
   - name: "Dashboard Administration"

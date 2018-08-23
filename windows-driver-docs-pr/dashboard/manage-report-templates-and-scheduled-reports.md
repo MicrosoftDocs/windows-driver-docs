@@ -21,7 +21,7 @@ Use these methods to view, modify your existing reporting templates and manage y
 |Authorization|string|Required. The Azure AD access token in the form **Bearer** *\<token\>*|
 |Content-Type|string|Application/JSON|
 
-## View Report Template Definition
+## View a definition of a report template
 
 Use this method to view the definition of the report template.
 
@@ -45,7 +45,7 @@ Use this method to view the definition of the report template.
       <td>Response Payload</td>
       <td><pre>{
     "data": {
-        "templateId": <templateId>
+        "templateId": &lt;templateid&gt;
         " template": "{report template}”,
     "errors": []
 }</pre></td>
@@ -53,7 +53,7 @@ Use this method to view the definition of the report template.
   </tbody>
 </table>
 
-## View all Report Templates available
+## View all available report templates
 
 Use this method to view all report templates you created for your account.
 
@@ -71,20 +71,20 @@ Use this method to view all report templates you created for your account.
     </tr>
     <tr>
       <td>Response code</td>
-      <td200/500/400></td>
+      <td>200/500/400</td>
     </tr>
     <tr>
       <td>Response Payload</td>
       <td><pre>{
     "data": [
         {
-            "templateId": <templateid>,
+            "templateId": &lt;templateid&gt;,
             "template": "{report template}",
             "createdDatetime": "2018-06-24T16:39:46.683",
             "modifiedDatetime": "2018-06-24T16:39:46.683"
         }
         {
-            "templateId": <templateid>,
+            "templateId": &lt;templateid&gt;,
             "template": "{report template}",
             "createdDatetime": "2018-06-27T14:09:27.243",
             "modifiedDatetime": "2018-06-27T14:09:32.733"
@@ -97,7 +97,7 @@ Use this method to view all report templates you created for your account.
   </tbody>
 </table>
 
-## Edit Report Template
+## Edit a report template
 
 Use this method to edit an existing report template.
 
@@ -150,7 +150,7 @@ Use this method to edit an existing report template.
   </tbody>
 </table>
 
-## View Reports Scheduled
+## View the scheduled reports
 
 Use this method to view the list of scheduled reports.
 
@@ -179,7 +179,7 @@ Use this method to view the list of scheduled reports.
       <td><pre>{
     "data": [
         {
-            "reportId": 2, 
+            "reportId": 2,
             "templateId": 7,
             "schedule": "{report details}",
             "isActive": true,
@@ -203,7 +203,7 @@ Use this method to view the list of scheduled reports.
   </tbody>
 </table>
 
-## Edit Scheduled Report
+## Edit a scheduled report
 
 Use this method to edit an existing scheduled report.
 
@@ -222,7 +222,7 @@ Use this method to edit an existing scheduled report.
     <tr>
       <td>Payload</td>
       <td><pre>{
-   "templateId":<templateid>,
+   "templateId":&lt;templateid&gt;,
    "Schedule":{
       "StartTime":"2018-07-24T00:00:00Z", //Datetime in UTC
       "RecurrenceInterval":12, // in hours
@@ -238,7 +238,59 @@ Use this method to edit an existing scheduled report.
       <td>Response Payload</td>
       <td><pre>{
     "data": {
-        "reportId": <reportId>
+        "reportId": &lt;reportId&gt;
+    },
+    "errors": []
+}</pre></td>
+    </tr>
+  </tbody>
+</table>
+
+## Pause a report
+
+Use this method to pause a scheduled report.
+
+<table>
+  <tbody>
+    <tr>
+      <td>POST</td>
+      <td>https://manage.devcenter.microsoft.com/analytics/driver/report/pause/{reportId}</td>
+    </tr>
+    <tr>
+      <td>Response Code</td>
+      <td>201/500/400</td>
+    </tr>
+    <tr>
+      <td>Response Payload</td>
+      <td><pre>{
+    "data": {
+        "reportId": &lt;reportId&gt;
+    },
+    "errors": []
+}</pre></td>
+    </tr>
+  </tbody>
+</table>
+
+## Resume a report
+
+Use this method to resume a scheduled report.
+
+<table>
+  <tbody>
+    <tr>
+      <td>POST</td>
+      <td>https://manage.devcenter.microsoft.com/analytics/driver/report/resume/{reportId}</td>
+    </tr>
+    <tr>
+      <td>Response Code</td>
+      <td>201/500/400</td>
+    </tr>
+    <tr>
+      <td>Response Payload</td>
+      <td><pre>{
+    "data": {
+        "reportId": &lt;reportId&gt;
     },
     "errors": []
 }</pre></td>

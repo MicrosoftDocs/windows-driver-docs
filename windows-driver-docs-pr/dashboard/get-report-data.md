@@ -74,7 +74,7 @@ The response payload is structured as a value array as shown in the following ta
   </tbody>
 </table>
 
-## Parameters
+## Response parameters
 
 The following tables describes the parameters in the response.
 
@@ -88,11 +88,3 @@ The following tables describes the parameters in the response.
 > The ReportLocation link expires in 12 hours. You must use the Get Report Data API to get a new report link if you don’t download the data within the 12-hour window.
 
 You can manage your report templates using the methods described in [Manage report templates and scheduled reports](manage-report-templates-and-scheduled-reports.md).
-
-## Download Failure Cabs
-
-You can use the report delivered as part of the Get Report Data API to retrieve the CabURL and then download the failure cab before the URL expires. Please continue to use one of the following Cab Download APIs to get the download link to the cab file by passing the CabIdHash.
-
-- [Download the CAB file for an OEM hardware error](https://docs.microsoft.com/windows/uwp/monetize/download-the-cab-file-for-an-oem-hardware-error)
-
-- [Download the CAB file for a Windows 10 driver error](https://docs.microsoft.com/windows/uwp/monetize/download-the-cab-file-for-a-windows-10-driver-error)

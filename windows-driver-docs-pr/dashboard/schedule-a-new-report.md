@@ -49,8 +49,8 @@ Define the schedule at which you need your custom report to run, using the follo
 This table contains descriptions of parameters in the Schedule Report JSON.
 
 <table>
-    <thead valign="bottom">
-        <tr class="header">
+    <thead>
+        <tr>
             <th>Parameter</th>
            <th>Description</th>
         </tr>
@@ -62,7 +62,7 @@ This table contains descriptions of parameters in the Schedule Report JSON.
         </tr>
         <tr>
             <td>startTime</td>
-            <td>Time when the report is expected to run for the first time, in this format:<pre class="syntax" space="preserve">yyyy-MM-ddTHH:mm:ssZ</pre></td>
+            <td>Time when the report is expected to run for the first time, in this format:<pre>yyyy-MM-ddTHH:mm:ssZ</pre></td>
         </tr>
         <tr>
            <td>recurrenceInterval</td>
@@ -86,7 +86,7 @@ The response payload is structured as follows in JSON format:
     </tr>
     <tr>
       <td>Response Payload</td>
-      <td><pre class="syntax" space="preserve">{
+      <td><pre>{
     "data": {
         "reportId": reportId
     },
