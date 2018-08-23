@@ -25,7 +25,7 @@ For Set requests, this OID's payload contains an [**NDIS_WWAN_SET_LTE_ATTACH_CON
 
 After each Query or Set request, the miniport driver should return an [NDIS_STATUS_WWAN_LTE_ATTACH_CONFIG](ndis-status-wwan-lte-attach-config.md) notification that describes the LTE attach configuration.
 
-For more information about using this OID, see [MB LTE Attach Operations](mb-lte-attach-operations.md).
+For more information about using this OID, see [MBIM_CID_MS_LTE_ATTACH_CONFIG](mb-lte-attach-operations.md#mbimcidmslteattachconfig).
 
 ## Requirements
 
