@@ -80,6 +80,12 @@ This table contains descriptions of parameters in the Schedule Report JSON.
 The response payload is structured as follows in JSON format:
 
 <table>
+<thead>
+    <tr>
+      <th>Item</th>
+      <th>Description</th>
+    </tr>
+</thead>
     <tr>
       <td>Response Code</td>
       <td>201/500/400</td>

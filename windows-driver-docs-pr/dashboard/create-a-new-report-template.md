@@ -167,16 +167,20 @@ This table describes the parameters in the Report Template Creation JSON.
 The response payload is structured as follows in JSON format.
 
 <table>
-    <thead valign="bottom">
-        <tr class="header">
-            <th>Response code</th>
-           <th>201/500/400</th>
+    <thead>
+        <tr>
+           <th>Item</th>
+           <th>Description</th>
         </tr>
     </thead>
-    <tbody valign="top">
+    <tbody>
+      <tr>
+        <td>Response code</td>
+        <td>201/500/400</td>
+      </tr>
     	<tr>
       <td>Response Payload</td>
-          <td><pre class="syntax" space="preserve">{
+          <td><pre>{
     "data": {
         "templateId": templateId
   },

@@ -35,7 +35,7 @@ Use this method to view the definition of the report template.
   <tbody>
     <tr>
       <td>GET</td>
-      <td>https://manage.devcenter.microsoft.com/analytics/driver/reporttemplate/{templateId}</td>
+      <td><pre>https://manage.devcenter.microsoft.com/analytics/driver/reporttemplate/{templateId}</pre></td>
     </tr>
     <tr>
       <td>Response code</td>
@@ -67,7 +67,7 @@ Use this method to view all report templates you created for your account.
   <tbody>
     <tr>
       <td>GET</td>
-      <td>https://manage.devcenter.microsoft.com/analytics/driver/reporttemplate</td>
+      <td><pre>https://manage.devcenter.microsoft.com/analytics/driver/reporttemplate</pre></td>
     </tr>
     <tr>
       <td>Response code</td>
@@ -111,7 +111,7 @@ Use this method to edit an existing report template.
   <tbody>
     <tr>
       <td>POST</td>
-      <td>https://manage.devcenter.microsoft.com/analytics/driver/reporttemplate/{templateId} </td>
+      <td><pre>https://manage.devcenter.microsoft.com/analytics/driver/reporttemplate/{templateId}</pre></td>
     </tr>
     <tr>
       <td>Sample payload</td>
@@ -164,7 +164,7 @@ Use this method to view the list of scheduled reports.
   <tbody>
     <tr>
       <td>Get</td>
-      <td>https://manage.devcenter.microsoft.com/analytics/driver/report</td>
+      <td><pre>https://manage.devcenter.microsoft.com/analytics/driver/report</pre></td>
     </tr>
     <tr>
       <td>Payload</td>
@@ -217,7 +217,7 @@ Use this method to edit an existing scheduled report.
   <tbody>
     <tr>
       <td>POST</td>
-      <td>https://manage.devcenter.microsoft.com/analytics/driver/report/{reportId}</td>
+      <td><pre>https://manage.devcenter.microsoft.com/analytics/driver/report/{reportId}</pre></td>
     </tr>
     <tr>
       <td>Payload</td>
@@ -254,7 +254,7 @@ Use this method to pause a scheduled report.
   <tbody>
     <tr>
       <td>POST</td>
-      <td>https://manage.devcenter.microsoft.com/analytics/driver/report/pause/{reportId}</td>
+      <td><pre>https://manage.devcenter.microsoft.com/analytics/driver/report/pause/{reportId}</pre></td>
     </tr>
     <tr>
       <td>Response Code</td>
@@ -280,7 +280,7 @@ Use this method to resume a scheduled report.
   <tbody>
     <tr>
       <td>POST</td>
-      <td>https://manage.devcenter.microsoft.com/analytics/driver/report/resume/{reportId}</td>
+      <td><pre>https://manage.devcenter.microsoft.com/analytics/driver/report/resume/{reportId}</pre></td>
     </tr>
     <tr>
       <td>Response Code</td>
