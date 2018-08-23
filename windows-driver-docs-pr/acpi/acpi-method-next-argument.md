@@ -6,7 +6,7 @@ ms.assetid: c723b11b-1657-4a78-a6a1-26bd916604a4
 keywords: 
 - ACPI_METHOD_NEXT_ARGUMENT macro ACPI Devices
 ms.author: windowsdriverdev
-ms.date: 07/18/2017
+ms.date:
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,15 +52,11 @@ Requirements
 <col width="50%" />
 </colgroup>
 <tbody>
-<tr class="odd">
+<tr>
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Windows 2000 and later versions of Windows.</p></td>
-</tr>
-<tr class="odd">
+<tr>
 <td><p>Header</p></td>
 <td>Acpiioct.h (include Acpiioct.h)</td>
 </tr>
@@ -71,11 +67,3 @@ Requirements
 
 
 [**ACPI\_METHOD\_ARGUMENT**](https://msdn.microsoft.com/library/windows/hardware/ff536125)
-
- 
-
- 
-
-
-
-
