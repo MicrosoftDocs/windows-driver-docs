@@ -103,15 +103,15 @@
       items:
       - name: "Create a new report template"
         href: create-a-new-report-template.md
-      -name: "Schedule a new report"  
+      - name: "Schedule a new report"  
         href: schedule-a-new-report.md
-      -name: "Get report data"
+      - name: "Get report data"
         href: get-report-data.md
-      -name: "Download failure cabs"
+      - name: "Download failure cabs"
         href: download-failure-cabs.md
-    -name: "Manage report templates and scheduled reports"
+    - name: "Manage report templates and scheduled reports"
       href: manage-report-templates-and-scheduled-reports.md
-    -name: "Sample report templates"
+    - name: "Sample report templates"
       href: sample-report-templates.md
   - name: "File signing LSA plugins and UEFI firmware"
     href: lsa-and-uefi-file-signing.md
