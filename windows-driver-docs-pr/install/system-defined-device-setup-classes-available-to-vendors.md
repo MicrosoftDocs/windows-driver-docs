@@ -60,11 +60,6 @@ Class = FloppyDisk
 ClassGuid= {4d36e980-e325-11ce-bfc1-08002be10318}  
 This class includes floppy disk drives.  
   
-**Global Positioning System/Global Navigation Satellite System**  
-Class = GPS  
-ClassGuid = {6bdd1fc3-810f-11d0-bec7-08002be2092f}  
-This class includes GNSS devices that use the Universal Windows driver model introduced in Windows 10.  
-  
 <a href="" id="hard-disk-controllers-"></a>**Hard Disk Controllers**  
 Class = HDC  
 ClassGuid = {4d36e96a-e325-11ce-bfc1-08002be10318}  
