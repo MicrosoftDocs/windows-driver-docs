@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Print Providers
 
 
-## <a href="" id="ddk-print-providers-gg"></a>
+
 
 
 **Warning**  

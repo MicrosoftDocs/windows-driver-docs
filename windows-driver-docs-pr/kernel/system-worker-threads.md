@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # System Worker Threads
 
 
-## <a href="" id="ddk-system-worker-threads-kg"></a>
+
 
 
 A driver that requires delayed processing can use a [*work item*](https://msdn.microsoft.com/library/windows/hardware/ff556347#wdkgloss-work-item), which contains a pointer to a driver callback routine that performs the actual processing. The driver queues the work item, and a *system worker thread* removes the work item from the queue and runs the driver's callback routine. The system maintains a pool of these system worker threads, which are system threads that each process one work item at a time.

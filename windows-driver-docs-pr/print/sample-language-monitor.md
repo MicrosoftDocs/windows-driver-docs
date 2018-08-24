@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sample Language Monitor
 
 
-## <a href="" id="ddk-sample-language-monitor-gg"></a>
+
 
 
 Source code for Pjlmon.dll, the language monitor that supports bidirectional [*PJL*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pjl) language support, is included in the Windows Driver Kit (WDK). The code is located in the \\Src\\Print\\Monitors\\Pjlmon subdirectory of the directory tree that contains the WDK.

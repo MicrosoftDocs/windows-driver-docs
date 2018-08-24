@@ -6,6 +6,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Access Control
@@ -20,7 +21,7 @@ The Group Policy entries for controlling access to removable storage and portabl
 ## <span id="I_O_Control_Codes_in_WPD"></span><span id="i_o_control_codes_in_wpd"></span><span id="I_O_CONTROL_CODES_IN_WPD"></span>I/O Control Codes in WPD
 
 
-WPD applications communicate with drivers by opening device handles and sending [I/O Control Codes](http://go.microsoft.com/fwlink/p/?linkid=178715) (IOCTLs). These IOCTLs consist of four sections:
+WPD applications communicate with drivers by opening device handles and sending I/O Control Codes (IOCTLs). These IOCTLs consist of four sections:
 
 1.  Device Type
 2.  Function Code

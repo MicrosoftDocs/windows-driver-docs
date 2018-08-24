@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Canceling a Wait/Wake IRP
 
 
-## <a href="" id="ddk-canceling-a-wait-wake-irp-kg"></a>
+
 
 
 Only the driver that sent a wait/wake IRP can cancel that IRP.

@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Halftone Algorithms
 
 
-## <a href="" id="ddk-halftone-algorithms-gg"></a>
+
 
 
 Some printer vendors prefer to use different halftone algorithms while printing different kinds of objects, such as text, vector objects, and bitmaps. The three examples that follow show what should be added to the GPD to print each of these types of objects.

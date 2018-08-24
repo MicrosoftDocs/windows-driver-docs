@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # General Printing Attributes
 
 
-## <a href="" id="ddk-general-printing-attributes-gg"></a>
+
 
 
 *General printing attributes* are [general attributes](general-attributes.md) used for specifying characteristics that can be associated with any type of printing. These attributes are divided into the following groups:

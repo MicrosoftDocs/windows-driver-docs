@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Implementing an IoCompletion Routine
 
 
-## <a href="" id="ddk-implementing-an-iocompletion-routine-kg"></a>
+
 
 
 On entry, an [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine receives a *Context* pointer. When a dispatch routine calls [**IoSetCompletionRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff549679), it can supply a *Context* pointer. This pointer can reference whatever driver-determined context information the *IoCompletion* routine requires to process an IRP. Note that the context area cannot be pageable because the *IoCompletion* routine can be called at IRQL = DISPATCH\_LEVEL.

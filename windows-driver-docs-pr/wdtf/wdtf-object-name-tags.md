@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WDTF Object Name tags
@@ -76,7 +77,7 @@ WDTF_SIMPLE_IO            : INFO  :  - Close(Generic volume (C:) STORAGE\VOLUME\
 
  
 
-## <a href="" id="wdtf-system-actions-"></a>WDTF System Actions
+## WDTF System Actions
 
 
 <table>
@@ -130,7 +131,7 @@ WDTF_SYSTEM               : INFO  : Returning from Hibernate. Elapsed time (hh:m
 
  
 
-## <a href="" id="wdtf-device-actions-"></a>WDTF Device Actions
+## WDTF Device Actions
 
 
 <table>

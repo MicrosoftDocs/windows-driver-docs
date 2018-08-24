@@ -14,12 +14,13 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # FLT\_PARAMETERS for IRP\_MJ\_RELEASE\_FOR\_SECTION\_SYNCHRONIZATION
 
 
-## <a href="" id="ddk-flt-parameters-for-irp-mj-release-for-section-synchronization-if"></a>
+
 
 
 There are no parameters for IRP\_MJ\_RELEASE\_FOR\_SECTION\_SYNCHRONIZATION.

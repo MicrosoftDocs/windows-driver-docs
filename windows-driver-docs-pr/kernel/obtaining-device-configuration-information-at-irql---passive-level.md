@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Obtaining Device Configuration Information at IRQL = PASSIVE\_LEVEL
 
 
-## <a href="" id="ddk-obtaining-device-configuration-information-at-irql-passive-level-k"></a>
+
 
 
 To access device configuration space at IRQL = PASSIVE\_LEVEL, you must use [**IRP\_MN\_READ\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff551727) and [**IRP\_MN\_WRITE\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff551769). You indicate in the IRP stack which configuration space you wish to access and where the I/O buffer is. See the description of the [**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659) structure for further details.

@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Issues Checklist
 
 
-## <a href="" id="ddk-porting-issues-checklist-kg"></a>
+
 
 
 ### General

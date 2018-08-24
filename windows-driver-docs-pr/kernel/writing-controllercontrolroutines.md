@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing ControllerControl Routines
 
 
-## <a href="" id="ddk-writing-controllercontrol-routines-kg"></a>
+
 
 
 Drivers that use a controller object must supply a [*ControllerControl*](https://msdn.microsoft.com/library/windows/hardware/ff542049) routine to initiate I/O operations.

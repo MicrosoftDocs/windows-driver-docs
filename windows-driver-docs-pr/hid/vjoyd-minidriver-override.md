@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # VJoyD Minidriver Override
 
 
-## <a href="" id="ddk-vjoyd-mini-driver-override-di"></a>
+
 
 
 USB/HID devices that do not load the JoyHID.VxD device driver can sometimes display duplicate device entries present in the Gaming Options control panel when used with other USB/HID devices. This occurs when a JoyHID-compliant device is attached to the system at the same time as a non-JoyHID device.

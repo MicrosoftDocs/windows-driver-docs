@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing Serial Devices
 
 
-## <a href="" id="ddk-installing-serial-devices-kg"></a>
+
 
 
 This section includes the following topics about installing serial devices:

@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DDInstall.Services Section in a Network INF File
 
 
-## <a href="" id="ddk-ddinstall-services-section-ng"></a>
+
 
 
 A *DDInstall*.**Services** section in a network INF file is based on the generic [**INF DDInstall.Services section**](https://msdn.microsoft.com/library/windows/hardware/ff547349).

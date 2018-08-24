@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Determining BDA Device Topology
 
 
-## <a href="" id="ddk-determining-bda-device-topology-ksg"></a>
+
 
 
 A BDA device topology is composed of a connected network of nodes, each of which represent some transformation on a signal. Nodes can be grouped arbitrarily among different filters. This arbitrary grouping provides hardware vendors with a certain freedom in how they implement their hardware and drivers so that such hardware and drivers work in a generic way with the network providers for the different types of networks they wish to support.

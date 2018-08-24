@@ -14,6 +14,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EXT\_TDOP\_SET\_PTR\_FROM\_TYPE\_ID\_AND\_U64

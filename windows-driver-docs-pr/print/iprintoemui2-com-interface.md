@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IPrintOemUI2 COM Interface
 
 
-## <a href="" id="ddk-iprintoemui2-com-interface-gg"></a>
+
 
 
 The `IPrintOemUI2` COM interface extends the [IPrintOemUI COM interface](iprintoemui-com-interface.md). In addition to all the methods in the **IPrintOemUI** interface, the `IPrintOemUI2` interface provides the following methods.

@@ -7,10 +7,12 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # PackageIdentity
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The PackageIdentity element specifies a UWP device app that should appear as the recommended AutoPlay action when a user plugs in a device.
 

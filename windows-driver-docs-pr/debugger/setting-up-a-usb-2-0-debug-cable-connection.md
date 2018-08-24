@@ -4,18 +4,17 @@ description: Debugging Tools for Windows supports kernel debugging over a USB 2.
 ms.assetid: 8dd0703a-ddcd-461f-b164-1c079a93bb3a
 keywords: ["setup, making a USB 2.0 cable connection", "cable connection, USB 2.0 debug cable", "USB 2.0 debugging connection", "USB 2.0 debugging connection, setting up the hardware", "USB 2.0 debugging connection, software requirements"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 07/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting Up Kernel-Mode Debugging over a USB 2.0 Cable Manually
 
 
 Debugging Tools for Windows supports kernel debugging over a USB 2.0 cable. This topic describes how to set up USB 2.0 debugging manually.
-
-As an alternative to setting up USB 2.0 debugging manually, you can do the setup using Microsoft Visual Studio. For more information, see [Setting Up Kernel-Mode Debugging over a USB 2.0 Cable in Visual Studio](setting-up-a-usb-2-0-cable-connection-in-visual-studio.md).
 
 The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*.
 
@@ -51,7 +50,11 @@ Debugging over a USB 2.0 cable requires the following hardware:
 
     **Note**  See [this remark](#what-if-usbview-shows-a-debug-capable-port) for an exception.
 
-     
+> [!IMPORTANT]
+> Before using bcdedit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC. 
+> You can re-enable Secure Boot once you’re done debugging and you’ve disabled kernel debugging.  
+
+   
 
 6.  On the target computer, open a Command Prompt window as Administrator, and enter these commands:
 

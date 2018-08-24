@@ -14,6 +14,7 @@ api_name:
 - j (Execute If - Else)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # j (Execute If - Else)

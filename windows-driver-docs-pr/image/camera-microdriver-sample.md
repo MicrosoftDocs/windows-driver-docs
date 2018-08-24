@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Camera Microdriver Sample
 
 
-## <a href="" id="ddk-camera-microdriver-sample-si"></a>
+
 
 
 The microdrv directory in [WIA Driver Samples](http://go.microsoft.com/fwlink/p/?linkid=256210) for a sample WIA microdriver for a digital still camera.

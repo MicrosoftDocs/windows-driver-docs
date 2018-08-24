@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to Segmentation Filters
 
 
-## <a href="" id="ddk-introduction-to-segmentation-filters-si"></a>
+
 
 
 A segmentation filter is a WIA extension that can be used by an application to separate the individual pictures laid out on a flatbed scanner, so each of these pictures can be acquired into individual images. The segmentation filter is an in-process COM component running in the application's process.

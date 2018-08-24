@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 #  Concepts for all USB developers
@@ -50,7 +51,7 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 
  
 
-## <a href="" id="scenarios"></a>**Common USB scenarios**
+## **Common USB scenarios**
 
 
 **1—Get the device handle** for communication and use the retrieved handle or object to send data transfers.

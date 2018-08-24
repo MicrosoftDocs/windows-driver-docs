@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Plug and Play for NDIS Miniport Drivers
 
 
-## <a href="" id="ddk-plug-and-play-for-ndis-miniport-drivers-ng"></a>
+
 
 
 This section describes:

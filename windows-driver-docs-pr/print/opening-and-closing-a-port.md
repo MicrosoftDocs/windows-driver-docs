@@ -19,12 +19,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Opening and Closing a Port
 
 
-## <a href="" id="ddk-opening-and-closing-a-port-gg"></a>
+
 
 
 After a port has been added, as described in [Adding a Port](adding-a-port.md), the spooler can open it by calling the appropriate language monitor's [**OpenPortEx**](https://msdn.microsoft.com/library/windows/hardware/ff559596) function.

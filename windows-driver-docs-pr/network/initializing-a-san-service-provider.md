@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing a SAN Service Provider
 
 
-## <a href="" id="ddk-initializing-a-san-service-provider-ng"></a>
+
 
 
 The Windows Sockets switch initializes a SAN service provider as described in the following figure.

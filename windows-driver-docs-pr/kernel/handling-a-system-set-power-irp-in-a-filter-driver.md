@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling a System Set-Power IRP in a Filter Driver
 
 
-## <a href="" id="ddk-handling-a-system-set-power-irp-in-a-filter-driver-kg"></a>
+
 
 
 All filter drivers and any function driver that does not own power policy for its device stack should simply pass the system set-power IRP to the next-lower driver, in the following steps:

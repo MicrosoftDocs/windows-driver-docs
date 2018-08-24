@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IWiaMiniDrv COM Interface
@@ -30,7 +31,7 @@ Applications make requests to the WIA service through the WIA application progra
 
 The **IWiaMiniDrv** interface provides the entry points shown in the following tables for the WIA service to control the device. A WIA minidriver must implement every **IWiaMiniDrv** method. These entry points are defined through the following **IWiaMiniDrv** methods.
 
-## <a href="" id="ddk-creating-and-initializing-items-si"></a>Creating and Initializing Items
+## Creating and Initializing Items
 
 
 <table>
@@ -62,7 +63,7 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 
  
 
-## <a href="" id="ddk-deleting-items-si"></a>Deleting Items
+## Deleting Items
 
 
 <table>
@@ -94,7 +95,7 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 
  
 
-## <a href="" id="ddk-enumerating-device-capabilities-si"></a>Enumerating Device Capabilities
+## Enumerating Device Capabilities
 
 
 <table>
@@ -118,7 +119,7 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 
  
 
-## <a href="" id="ddk-enumerating-image-formats-si"></a>Enumerating Image Formats
+## Enumerating Image Formats
 
 
 <table>
@@ -142,7 +143,7 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 
  
 
-## <a href="" id="ddk-issuing-device-commands-si"></a>Issuing Device Commands
+## Issuing Device Commands
 
 
 <table>
@@ -166,7 +167,7 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 
  
 
-## <a href="" id="ddk-locking-and-unlocking-a-device-si"></a>Locking and Unlocking a Device
+## Locking and Unlocking a Device
 
 
 <table>
@@ -194,7 +195,7 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 
  
 
-## <a href="" id="ddk-notifying-a-device-of-an-event-si"></a>Notifying a Device of an Event
+## Notifying a Device of an Event
 
 
 <table>
@@ -218,7 +219,7 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 
  
 
-## <a href="" id="ddk-obtaining-device-error-strings-si"></a>Obtaining Device Error Strings
+## Obtaining Device Error Strings
 
 
 <table>
@@ -242,7 +243,7 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 
  
 
-## <a href="" id="ddk-reading-and-storing-item-properties-si"></a>Reading and Storing Item Properties
+## Reading and Storing Item Properties
 
 
 <table>
@@ -274,7 +275,7 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 
  
 
-## <a href="" id="ddk-transferring-data-si"></a>Transferring Data
+## Transferring Data
 
 
 <table>

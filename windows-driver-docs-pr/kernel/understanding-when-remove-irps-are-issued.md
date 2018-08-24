@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Understanding When Remove IRPs Are Issued
 
 
-## <a href="" id="ddk-understanding-when-remove-irps-are-issued-kg"></a>
+
 
 
 The following figure shows the typical sequence of IRPs involved in removing the drivers for a device.

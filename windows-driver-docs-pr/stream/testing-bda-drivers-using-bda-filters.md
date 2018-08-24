@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Testing BDA Drivers Using BDA Filters
 
 
-## <a href="" id="ddk-testing-bda-drivers-using-bda-filters-ksg"></a>
+
 
 
 You can use the DirectShow Filter Graph Editor (*Graphedt.exe*) to insert a DirectShow filter instance of your BDA component in a filter graph so that you can test your component. You can obtain the Graph Editor from the Microsoft Windows Driver Kit (WDK).

@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering a Network Interface
 
 
-## <a href="" id="ddk-registering-a-network-interface-ng"></a>
+
 
 
 Whenever a computer restarts, NDIS starts with an empty list of registered network interfaces. An interface provider calls the [**NdisIfRegisterInterface**](https://msdn.microsoft.com/library/windows/hardware/ff562715) function whenever it starts or detects an interface and its [**NET\_LUID**](https://msdn.microsoft.com/library/windows/hardware/ff568747) value is known. The mechanism for starting or detecting an interface is application-specific.

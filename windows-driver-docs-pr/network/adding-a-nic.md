@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Adding a NIC
 
 
-## <a href="" id="ddk-adding-a-nic-ng"></a>
+
 
 
 The following description starts with the loading of the miniport driver and describes how a NIC is added. For the initial processing that the PnP manager performs when a NIC is added to a running system, see steps 1-11 of [Adding a PnP Device to a Running System](https://msdn.microsoft.com/library/windows/hardware/ff540535).

@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Low-Power States
 
 
-## <a href="" id="ddk-device-sleeping-states-kg"></a>
+
 
 
 Device power states D1, D2, and D3 are the device low-power states. Starting with Windows 8, D3 is divided into two substates, [D3hot](#d3hot) and [D3cold](#d3cold).

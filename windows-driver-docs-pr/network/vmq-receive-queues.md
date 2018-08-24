@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # VMQ Receive Queues
 
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 A virtual machine queue (VMQ) service provider allocates VMQ receive queues. The network adapter hardware assigns an incoming network data packet to a queue if the packet passes the filter tests that are set on the queue.

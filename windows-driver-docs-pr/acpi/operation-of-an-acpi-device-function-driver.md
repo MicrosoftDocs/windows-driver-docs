@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Operation of an ACPI Device Function Driver
 
 
-## <a href="" id="ddk-operation-of-an-acpi-device-function-driver-kg"></a>
+
 
 
 This section describes the generic operation of a vendor-supplied function driver for an ACPI device.

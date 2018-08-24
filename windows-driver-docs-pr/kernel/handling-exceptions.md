@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Exceptions
 
 
-## <a href="" id="ddk-handling-exceptions-kg"></a>
+
 
 
 The operating system uses [structured exception handling](https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-structured-exception-handling) to signal certain kinds of errors. A routine called by a driver can raise an exception that the driver must handle.

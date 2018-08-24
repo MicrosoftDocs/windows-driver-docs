@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Buffered I/O
 
 
-## <a href="" id="ddk-using-buffered-i-o-kg"></a>
+
 
 
 A driver that services an interactive or slow device, or one that usually transfers relatively small amounts of data at a time, should use the [buffered I/O](methods-for-accessing-data-buffers.md) transfer method. Using buffered I/O for small, interactive transfers improves overall physical memory usage, because the memory manager does not need to lock down a full physical page for each transfer, as it does for drivers that request direct I/O. Generally, video, keyboard, mouse, serial, and parallel drivers request buffered I/O.

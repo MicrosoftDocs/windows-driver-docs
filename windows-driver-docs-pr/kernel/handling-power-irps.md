@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Power IRPs
 
 
-## <a href="" id="ddk-handling-power-irps-kg"></a>
+
 
 
 Drivers handle power IRPs in a [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine. All power management requests have the major IRP code [**IRP\_MJ\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff550784) and one of the following minor codes:

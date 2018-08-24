@@ -10,12 +10,13 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_PNP_WAKE_UP_ERROR Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_PNP\_WAKE\_UP\_ERROR
 
 
-## <a href="" id="ddk-oid-pnp-wake-up-error-nr"></a>
+
 
 
 The optional OID\_PNP\_WAKE\_UP\_ERROR OID indicates the number of false wake-ups that are signaled by the miniport driver's network adapter. A false wake-up occurs when the network adapter wakes up the system when it shouldn't have. For example, the network adapter could erroneously wake up the system due to an inexact pattern match.

@@ -7,6 +7,7 @@ ms.date: 04/05/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Get all submissions
@@ -23,7 +24,7 @@ This method has the following syntax. See the following sections for usage examp
 
 |Method|Request URI|
 |:--|:--|
-|GET| `https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/{productID}/submissions` |
+|GET| `https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions` |
 
 ### Request header
 
@@ -46,7 +47,7 @@ The following example demonstrates how to retrieve information about all submiss
 
 
 ```
-GET https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/13635057453741329/submissions HTTP/1.1
+GET https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/13635057453741329/submissions HTTP/1.1
 Authorization: Bearer <your access token>
 ```
 
@@ -62,12 +63,12 @@ The following example demonstrates the JSON response body returned by a successf
       "productId": 13635057453741328,
       "links": [
         {
-          "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products/13635057453741329/submissions/1152921504621441944",
+          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/13635057453741329/submissions/1152921504621441944",
           "rel": "self",
           "method": "GET"
         },
         {
-          "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products/13635057453741329/submissions/1152921504621441944",
+          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/13635057453741329/submissions/1152921504621441944",
           "rel": "update_submission",
           "method": "PATCH"
         }
@@ -88,12 +89,12 @@ The following example demonstrates the JSON response body returned by a successf
       },
       "links": [
         {
-          "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products/13635057453741329/submissions/1152921504621441946",
+          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/13635057453741329/submissions/1152921504621441946",
           "rel": "self",
           "method": "GET"
         },
         {
-          "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products/13635057453741329/submissions/1152921504621441946",
+          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/13635057453741329/submissions/1152921504621441946",
           "rel": "update_submission",
           "method": "PATCH"
         }
@@ -114,12 +115,12 @@ The following example demonstrates the JSON response body returned by a successf
       },
       "links": [
         {
-          "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products/13635057453741329/submissions/1152921504621441930",
+          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/13635057453741329/submissions/1152921504621441930",
           "rel": "self",
           "method": "GET"
         },
         {
-          "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products/13635057453741329/submissions/1152921504621441930",
+          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/13635057453741329/submissions/1152921504621441930",
           "rel": "update_submission",
           "method": "PATCH"
         }
@@ -133,7 +134,7 @@ The following example demonstrates the JSON response body returned by a successf
   ],
   "links": [
     {
-      "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products/13635057453741329/submissions",
+      "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/13635057453741329/submissions",
       "rel": "self",
       "method": "GET"
     }

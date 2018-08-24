@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Printer Capability Attributes
 
 
-## <a href="" id="ddk-printer-capability-attributes-gg"></a>
+
 
 
 Printer capability attributes are [general printing attributes](general-printing-attributes.md) that specify such printer characteristics as page margin, rotation, and text printing capabilities that affect all paper sizes and orientations.

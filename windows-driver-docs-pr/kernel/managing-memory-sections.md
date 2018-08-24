@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Managing Memory Sections
 
 
-## <a href="" id="ddk-managing-memory-sections-kg"></a>
+
 
 
 A driver can create a section object by calling [**ZwCreateSection**](https://msdn.microsoft.com/library/windows/hardware/ff566428), which returns a handle to the section object. Use the *FileHandle* parameter to specify the backing file, or **NULL** if the section is not file-backed. Additional handles to the section object can be opened by using [**ZwOpenSection**](https://msdn.microsoft.com/library/windows/hardware/ff567029).

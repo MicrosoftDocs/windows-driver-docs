@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Adding and Deleting Wake on LAN Patterns
 
 
-## <a href="" id="ddk--nr"></a>
+
 
 
 To add a wake-on-LAN (WOL) pattern, NDIS protocol drivers issue an OID set request of [OID\_PM\_ADD\_WOL\_PATTERN](https://msdn.microsoft.com/library/windows/hardware/ff569764). The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to an [**NDIS\_PM\_WOL\_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768) structure. Protocol drivers should specify a WOL packet if that WOL packet is supported by a network adapter. When the network adapter does not support the WOL packet, the protocol driver should use the WOL bitmap wake method.
@@ -63,7 +64,7 @@ NDIS allows multiple NDIS protocol drivers to add WOL patterns to the same netwo
 
 If NDIS deletes one of the lower priority patterns, it notifies the overlying driver that set the deleted pattern with an [**NDIS\_STATUS\_PM\_WOL\_PATTERN\_REJECTED**](https://msdn.microsoft.com/library/windows/hardware/ff567414) status indication. The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure contains a ULONG for the WOL pattern identifier of the rejected WOL pattern. NDIS provided the WOL pattern identifier in the **PatternId** member of the [**NDIS\_PM\_WOL\_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768) structure.
 
-For wireless network adapter's that might use an infrastructure element to offload the patterns as it roams across the infrastructure, a new infrastructure element might not support the same capabilities and the miniport driver can send an [**NDIS\_STATUS\_PM\_WOL\_PATTERN\_REJECTED**](https://msdn.microsoft.com/library/windows/hardware/ff567414) status indication with an appropriate status code. For more information about wireless network adapter power management, see [Native 802.11 Wireless LAN Miniport Adapter Power Management](wake-on-wireless-lan.md).
+For wireless network adapter's that might use an infrastructure element to offload the patterns as it roams across the infrastructure, a new infrastructure element might not support the same capabilities and the miniport driver can send an [**NDIS\_STATUS\_PM\_WOL\_PATTERN\_REJECTED**](https://msdn.microsoft.com/library/windows/hardware/ff567414) status indication with an appropriate status code.
 
  
 

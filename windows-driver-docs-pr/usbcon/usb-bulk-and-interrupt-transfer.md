@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How to send USB bulk transfer requests
@@ -23,7 +24,7 @@ This topic provides a brief overview about USB bulk transfers. It also provides 
     -   [Step 2: Format and send a framework request object to the USB driver stack.](#step-2--format-and-send-a-framework-request-object-to-the-usb-driver-stack-)
     -   [Step 3: Implement a completion routine for the request.](#step-3--implement-a-completion-routine-for-the-request-)
 
-## <a href="" id="ddk-usb-bulk-and-interrupt-transfer-kg"></a>About bulk endpoints
+## About bulk endpoints
 
 
 A USB bulk endpoint can transfer large amounts of data. Bulk transfers are reliable that allow hardware error detection, and involves limited number of retries in the hardware. For transfers to bulk endpoints, bandwidth is not reserved on the bus. When there are multiple transfer requests that target different types of endpoints, the controller first schedules transfers for time critical data, such as isochronous and interrupt packets. Only if there is unused bandwidth available on the bus, the controller schedules bulk transfers. Where there is no other significant traffic on the bus, bulk transfer can be fast. However, when the bus is busy with other transfers, bulk data can wait indefinitely.

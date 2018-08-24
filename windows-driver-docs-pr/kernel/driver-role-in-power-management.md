@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Driver Role in Power Management
 
 
-## <a href="" id="ddk-driver-role-in-power-management-kg"></a>
+
 
 
 Drivers support power management in two ways:

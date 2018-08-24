@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Minidriver Initialization
 
 
-## <a href="" id="ddk-minidriver-initialization-ksg"></a>
+
 
 
 When the operating system first initializes the minidriver, it calls the minidriver's **DriverEntry** routine. See [**DriverEntry for Stream Class Minidrivers**](https://msdn.microsoft.com/library/windows/hardware/ff558717). The minidriver must register itself with the class driver by calling [**StreamClassRegisterMinidriver**](https://msdn.microsoft.com/library/windows/hardware/ff568263).

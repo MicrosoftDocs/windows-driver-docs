@@ -20,12 +20,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Capturing Still Frames from a USB Camera
 
 
-## <a href="" id="ddk-using-bulk-pipes-to-retrieve-still-frames-from-the-camera-ksg"></a>
+
 
 
 USBCAMD2 provides the capability for a separate [Still Image driver](https://msdn.microsoft.com/library/windows/hardware/ff548278) to retrieve still frames from the camera through the camera's bulk pipe.

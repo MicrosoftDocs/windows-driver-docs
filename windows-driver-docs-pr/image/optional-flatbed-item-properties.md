@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Optional Flatbed Item Properties
 
 
-## <a href="" id="ddk-optional-wia-item-properties-for-flatbed-scanners-si"></a>
+
 
 
 The WIA flatbed scanner item can optionally support the following WIA properties:

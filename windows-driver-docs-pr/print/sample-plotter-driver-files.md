@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sample Plotter Driver Files
 
 
-## <a href="" id="ddk-sample-plotter-driver-files-gg"></a>
+
 
 
 The Windows Driver Kit (WDK) includes the following MSPlot sample code:

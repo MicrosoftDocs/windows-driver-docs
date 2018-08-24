@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Restarting Processing in AVStream
 
 
-## <a href="" id="ddk-restarting-processing-in-avstream-ksg"></a>
+
 
 
 AVStream stops processing if any of the following conditions are true:

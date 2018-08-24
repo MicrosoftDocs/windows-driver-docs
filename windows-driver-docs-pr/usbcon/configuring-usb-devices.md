@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Selecting a USB configuration in USB drivers
@@ -20,7 +21,7 @@ Device configuration refers to the tasks that the client driver performs to sele
 
 A WDM-based client driver can select any of the configurations in a USB device.
 
-If your client driver is based on [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565) or [User-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565), you should use the respective framework interfaces for configuring a USB device. If you are using the USB templates that are provided with Microsoft Visual Studio Professional 2012, the template code selects the first configuration and the default alternate setting in each interface.
+If your client driver is based on [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/) or [User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/), you should use the respective framework interfaces for configuring a USB device. If you are using the USB templates that are provided with Microsoft Visual Studio Professional 2012, the template code selects the first configuration and the default alternate setting in each interface.
 
 ## In this section
 
@@ -56,7 +57,7 @@ If your client driver is based on [Kernel-Mode Driver Framework](https://msdn.mi
 
 For information about special considerations related to the configuration of devices that require firmware downloads, see [Configuring USB Devices that Require Firmware Downloads](configuring-usb-devices-that-require-firmware-downloads.md).
 
-## <a href="" id="ddk-configuring-usb-devices-kg"></a>Limitations for Selecting a Configuration
+## Limitations for Selecting a Configuration
 
 
 Certain restrictions apply if a client driver is using WDF objects or whether the device has a single interface or multiple interfaces. Consider the following restrictions before changing the default configuration:

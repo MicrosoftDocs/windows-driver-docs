@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Vendor-Extended Commands
 
 
-## <a href="" id="ddk-vendor-extended-commands-si"></a>
+
 
 
 An application can send an arbitrary command to the device through the **IWiaItemExtras::Escape** method, which is described in the Microsoft Windows SDK documentation. By calling **QueryInterface** on the root item, you can retrieve a pointer to the **IWiaItemExtras** interface. The application can then construct a PTP command using any opcode and parameters, and send this command to the device. The application also can send data to or receive data from the device.

@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Requirements for ControllerControl Routines
 
 
-## <a href="" id="ddk-storage-requirements-for-controllercontrol-routines-kg"></a>
+
 
 
 If it has a *ControllerControl* routine, a non-WDM driver must provide resident storage for a *ControllerObject* pointer returned by [**IoCreateController**](https://msdn.microsoft.com/library/windows/hardware/ff548395).

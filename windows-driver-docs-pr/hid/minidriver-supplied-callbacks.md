@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Minidriver-Supplied Callbacks
 
 
-## <a href="" id="ddk-minidriver-supplied-callbacks-di"></a>
+
 
 
 Joystick hardware that is not polled or that has nonstandard polling requirements can implement a minidriver (which must be a VxD) that VJoyD loads when a device of that type is in use. VJoyD also calls the minidriver to access position and button information. Joystick minidrivers are not required to provide any interfaces other than to process the standard SYS\_DYNAMIC\_DEVICE\_INIT and SYS\_DYNAMIC\_DEVICE\_EXIT messages when the device is loaded and unloaded, and to define and register four joystick-specific callbacks. In addition to provide support for this original interface, the DirectX 5.0 and later VJoyD also support an extended interface. The extended interface allows registration of new callbacks to support polling, force-feedback, and hot plugging of joysticks.

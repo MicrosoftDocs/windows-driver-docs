@@ -7,9 +7,12 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Service metadata
+
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 You can create and submit a service metadata package to create an experience that is deeply integrated with Windows. When Windows detects mobile broadband hardware that matches the operator’s service metadata package, it automatically downloads the service metadata and the specified mobile broadband app.
 

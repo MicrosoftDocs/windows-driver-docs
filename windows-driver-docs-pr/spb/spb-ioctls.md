@@ -8,6 +8,7 @@ ms.date: 11/29/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SPB I/O Requests

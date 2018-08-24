@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Direct I/O with DMA
 
 
-## <a href="" id="ddk-using-direct-i-o-with-dma-kg"></a>
+
 
 
 The following figure illustrates how the I/O manager sets up an [**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff550794) request for a DMA transfer operation that uses direct I/O.

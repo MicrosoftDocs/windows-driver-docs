@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Miniport Driver Status Indications to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-miniport-driver-status-indications-to-ndis-6-0-ng"></a>
+
 
 
 The [**NdisMIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563600) function replaces the [**NdisMIndicateStatus**](https://msdn.microsoft.com/library/windows/hardware/ff553538) and [**NdisMIndicateStatusComplete**](https://msdn.microsoft.com/library/windows/hardware/ff553540) functions. Status indication parameters are packaged within an [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure that contains the source handle, status code, buffer, and size.

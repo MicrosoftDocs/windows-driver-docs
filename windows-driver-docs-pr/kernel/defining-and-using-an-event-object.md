@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Defining and Using an Event Object
 
 
-## <a href="" id="ddk-defining-and-using-an-event-object-kg"></a>
+
 
 
 Any driver that uses an event object must call [**KeInitializeEvent**](https://msdn.microsoft.com/library/windows/hardware/ff552137), [**IoCreateNotificationEvent**](https://msdn.microsoft.com/library/windows/hardware/ff549039), or [**IoCreateSynchronizationEvent**](https://msdn.microsoft.com/library/windows/hardware/ff549045) before it waits on, sets, clears, or resets the event. The following figure illustrates how a driver with a thread can use an event object for synchronization.

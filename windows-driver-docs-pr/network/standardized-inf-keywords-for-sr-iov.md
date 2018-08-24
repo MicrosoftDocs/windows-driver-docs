@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Standardized INF Keywords for SR-IOV
@@ -20,7 +21,7 @@ The SR-IOV INF keywords are described in the following sections:
 
 [Standardized INF Keywords for Configuration of the Default NIC Switch](#nic-switch)
 
-## <a href="" id="sr-iov"></a>Standardized INF Keywords for Enabling or Disabling SR-IOV Support
+## Standardized INF Keywords for Enabling or Disabling SR-IOV Support
 
 
 Standardized INF keywords are defined to enable or disable support for the SR-IOV features of a network adapter.
@@ -107,7 +108,7 @@ The display text that is associated with each value that appears in the menu.
 
 For more information about standardized INF keywords, see [Standardized INF Keywords for Network Devices](standardized-inf-keywords-for-network-devices.md).
 
-## <a href="" id="nic-switch"></a>Standardized INF Keywords for Configuration of the Default NIC Switch
+## Standardized INF Keywords for Configuration of the Default NIC Switch
 
 
 Starting with Windows Server 2012, the SR-IOV interface supports only one NIC switch on the network adapter. This switch is known as the *default NIC switch*, and is referenced by the NDIS\_DEFAULT\_SWITCH\_ID identifier.

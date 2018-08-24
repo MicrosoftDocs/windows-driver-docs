@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Adding Document Feeder Support for Windows Me and Windows XP
 
 
-## <a href="" id="ddk-adding-document-feeder-support-for-windows-me-and-windows-xp-si"></a>
+
 
 
 A document feeder is a unit attached to or built into a scanner that automatically feeds paper documents in a position to be scanned. For a scanner with a document feeder, the functionality is exposed and controlled through the addition of the properties contained in the following list. For Windows Me and Windows XP, the following properties are located on the root item.

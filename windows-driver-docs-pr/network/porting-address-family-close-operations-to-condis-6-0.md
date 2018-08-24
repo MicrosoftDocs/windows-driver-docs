@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Address Family Close Operations to CoNDIS 6.0
 
 
-## <a href="" id="ddk-condis-status-indication-operations-to-condis-6-0-ng"></a>
+
 
 
 In CoNDIS 5.*x*, before a call manager closes a binding to an underlying miniport adapter, it issues an [OID\_CO\_AF\_CLOSE](https://msdn.microsoft.com/library/windows/hardware/ff569088) request to each CoNDIS client that has the associated address family (AF). When the clients receive the OID request, the clients close the address family.

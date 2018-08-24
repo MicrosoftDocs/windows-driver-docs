@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Uninstalling Devices and Driver Packages
@@ -31,14 +32,6 @@ This section includes the following topics:
 [Using Device Manager to Uninstall Devices and Driver Packages](using-device-manager-to-uninstall-devices-and-driver-packages.md)
 
 [Using SetupAPI to Uninstall Devices and Driver Packages](using-setupapi-to-uninstall-devices-and-driver-packages.md)
-
-[Using the DIFx Tools to Uninstall Driver Packages](using-the-difx-tools-to-uninstall-driver-packages.md)
-
- 
-
- 
-
-
 
 
 

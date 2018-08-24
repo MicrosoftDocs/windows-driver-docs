@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating a 'Hello World' WIA Minidriver
 
 
-## <a href="" id="ddk-creating-a-hello-world-wia-minidriver-si"></a>
+
 
 
 This WIA minidriver is a simple DLL that exports two functions and implements three COM interfaces. The following code example can be compiled into a working WIA minidriver. The item tree that this WIA minidriver creates has only a root item and cannot transfer data, but it shows the basics needed to get a WIA driver loaded and running.

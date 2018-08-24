@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Mapping Bus-Relative Addresses to Virtual Addresses
 
 
-## <a href="" id="ddk-mapping-bus-relative-addresses-to-virtual-addresses-kg"></a>
+
 
 
 Some processors implement separate memory and I/O address spaces, while other processors do not. Because of these differences in hardware platforms, the mechanism drivers use to access I/O- or memory-resident device resources differs from platform to platform.

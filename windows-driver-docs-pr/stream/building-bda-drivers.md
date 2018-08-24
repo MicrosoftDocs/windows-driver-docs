@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Building BDA Drivers
 
 
-## <a href="" id="ddk-building-bda-drivers-ksg"></a>
+
 
 
 **Note**  Beginning with Windows 8, the WDK build environment no longer uses Build.exe. See [WDK and Visual Studio build environment](https://msdn.microsoft.com/library/windows/hardware/hh454286). The following discussion applies only if you build your driver using the WDK Windows 7 version or earlier.

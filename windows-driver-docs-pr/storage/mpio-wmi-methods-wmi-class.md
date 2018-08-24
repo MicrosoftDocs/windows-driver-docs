@@ -2,6 +2,7 @@
 title: MPIO\_WMI\_METHODS WMI Class
 description: MPIO\_WMI\_METHODS WMI Class
 ms.assetid: 21ad0846-a11d-4e2e-90b9-ad23870a8225
+ms.localizationpriority: medium
 ---
 
 # MPIO\_WMI\_METHODS WMI Class

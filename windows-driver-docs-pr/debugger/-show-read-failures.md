@@ -14,6 +14,7 @@ api_name:
 - .show_read_failures
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .show\_read\_failures

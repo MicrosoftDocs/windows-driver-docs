@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Intermediate Driver OID Request Handling to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-intermediate-driver-oid-request-handling-to-ndis-6-0-nd"></a>
+
 
 
 Like NDIS 5.*x* intermediate drivers, NDIS 6.0 intermediate drivers can originate or forward OID requests. NDIS 6.0 intermediate drivers can also cancel OID requests.

@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Vector Printing Commands
 
 
-## <a href="" id="ddk-vector-printing-commands-gg"></a>
+
 
 
 Vector printing commands are those that are associated with printing vector graphics. These commands compose a single group:

@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating and configuring Internet Sharing experiences
@@ -79,7 +80,9 @@ Users can also connect to a tethering access point if they have paired their dev
 ## <span id="Configure_Internet_Sharing"></span><span id="configure_internet_sharing"></span><span id="CONFIGURE_INTERNET_SHARING"></span>Configure Internet Sharing
 
 
-Some mobile network operators (MNOs) or mobile virtual network operators (MVNOs) do not support Internet Sharing on their network, or they require an entitlement check prior to setting up Internet Sharing. Windows provides the necessary controls to ensure that Windows devices comply with network policies. To do this, you must author a service metadata package and configure the [AllowTethering](allowtethering.md) element in the schema ([Service metadata package schema reference](service-metadata-package-schema-reference.md)). For more info about creating a service metadata package, see [Developer guide for creating service metadata](developer-guide-for-creating-service-metadata.md). There are three options:
+Some mobile network operators (MNOs) or mobile virtual network operators (MVNOs) do not support Internet Sharing on their network, or they require an entitlement check prior to setting up Internet Sharing. Windows provides the necessary controls to ensure that Windows devices comply with network policies. 
+
+To do this in Windows 8, Windows 8.1, or Windows 10 prior to version 1803, you must author a service metadata package and configure the [AllowTethering](allowtethering.md) element in the schema ([Service metadata package schema reference](service-metadata-package-schema-reference.md)). For more info about creating a service metadata package, see [Developer guide for creating service metadata](developer-guide-for-creating-service-metadata.md). There are three options:
 
 -   Allow Internet Sharing for all customers. (default value if not specified in the service metadata package)
 
@@ -87,9 +90,11 @@ Some mobile network operators (MNOs) or mobile virtual network operators (MVNOs)
 
 -   Allow Internet Sharing for customers after an entitlement check
 
-If you decide that an entitlement check is not required, no additional information or capabilities are needed. If an entitlement check is required, you must also provide a background notification event handler that is part of your mobile broadband app. For more info on creating the background notification event handler, see [Enabling mobile operator notifications and system events](enabling-mobile-operator-notifications-and-system-events.md). The event handler must be able to trigger the proper entitlement check for the network as a background task in response to the [**NetworkOperatorNotificationEventDetails**](https://msdn.microsoft.com/library/windows/apps/br207377) object. The background task must return the proper entitlement check response by using the [**AuthorizeTethering**](https://msdn.microsoft.com/library/windows/apps/dn266090) method.
+To do this in Windows 10, version 1803 and later, you must set the [**Hotspot** setting in the COSA database](desktop-cosa-apn-database-settings.md#desktop-cosa-only-settings) to the appropriate value.
 
-MNOs and MVNOs have different requirements on what PDP context should be used for Internet Sharing. Windows has updated the existing [provisioning XML schema](https://msdn.microsoft.com/library/windows/apps/hh868398) to enable you to provision the system with the correct Internet Sharing PDP context information. For more information about multiple PDP contexts, see [Developing apps using multiple PDP contexts](developing-apps-using-multiple-pdp-contexts.md).
+If you decide that an entitlement check is not required, no additional information or capabilities are needed. If an entitlement check is required, you must also provide a background notification event handler that is part of your UWP mobile broadband app. In Windows 10, version 1803 and later, use the methods in the [TetheringEntitlementCheckTriggerDetails](https://docs.microsoft.com/uwp/api/windows.networking.networkoperators.tetheringentitlementchecktriggerdetails) class to handle Windows notification events for checking tethering entitlement. For earlier versions of Windows, use the [**NetworkOperatorNotificationEventDetails**](https://msdn.microsoft.com/library/windows/apps/br207377) class. For more info on creating the background notification event handler, see [Enabling mobile operator notifications and system events](enabling-mobile-operator-notifications-and-system-events.md).
+
+MOs and MVNOs have different requirements on what PDP context should be used for Internet Sharing. Windows has updated the existing [provisioning XML schema](https://msdn.microsoft.com/library/windows/apps/hh868398) to enable you to provision the system with the correct Internet Sharing PDP context information. For more information about multiple PDP contexts, see [Developing apps using multiple PDP contexts](developing-apps-using-multiple-pdp-contexts.md).
 
 You can also configure the maximum number of concurrent connected client devices is 10. You can change this number to anything between 3 and 10 by using [Account provisioning](account-provisioning.md).
 

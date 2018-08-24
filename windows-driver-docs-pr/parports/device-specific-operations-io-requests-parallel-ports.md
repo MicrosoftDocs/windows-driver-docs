@@ -3,6 +3,7 @@ title: Device-specific operations for I/O requests for parallel ports
 author: windows-driver-content
 description: Documents device-specific operations for I/O requests for parallel ports
 keywords: ["Parallel ports WDK", "Parallel drivers WDK", "Parallel IRP codes"]
+ms.localizationpriority: medium
 ---
 
 # Device-specific operations for I/O requests for parallel ports
@@ -12,7 +13,7 @@ This topic documents the following device-specific operations for I/O requests f
 * [IRP_MJ_INTERNAL_DEVICE_CONTROL](#irp_mj_internal_device_control)
 
 
-## <a href="" id="irp_mj_create"></a> IRP_MJ_CREATE 
+##  IRP_MJ_CREATE 
 The [IRP_MJ_CREATE](https://msdn.microsoft.com/library/windows/hardware/ff550729) request opens a parallel port.
 
 ### When Sent
@@ -42,7 +43,7 @@ The device is in the process of being removed by the Plug and Play manager.
 A parallel port is a shared device. When the system-supplied function driver for parallel ports receives an open request for an parallel port, it simply increments the count of open files on the parallel port.
 
 
-## <a href="" id="irp_mj_internal_device_control"></a>  IRP_MJ_INTERNAL_DEVICE_CONTROL
+##   IRP_MJ_INTERNAL_DEVICE_CONTROL
 The [IRP_MJ_INTERNAL_DEVICE_CONTROL](https://msdn.microsoft.com/library/windows/hardware/ff550766) request sets internal operating modes on a parallel port.
 
 ### When Sent

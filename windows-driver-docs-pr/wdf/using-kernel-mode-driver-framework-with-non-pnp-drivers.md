@@ -16,12 +16,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Kernel-Mode Driver Framework with Non-PnP Drivers
 
 
-## <a href="" id="ddk-using-windows-driver-framework-with-non-pnp-drivers-df"></a>
+
 
 
 If you are writing a driver for a device that does not support Plug and Play (PnP), the driver must:

@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Interfaces for Segmentation Filters
 
 
-## <a href="" id="ddk-interfaces-for-segmentation-filters-si"></a>
+
 
 
 Beginning with Windows Vista, WIA will support segmentation filters. A segmentation filter must implement the [IWiaSegmentationFilter Interface](https://msdn.microsoft.com/library/windows/hardware/ff545035).

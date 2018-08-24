@@ -14,6 +14,7 @@ api_name:
 - pplookaside
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !pplookaside

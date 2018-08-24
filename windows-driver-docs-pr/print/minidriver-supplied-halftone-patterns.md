@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Minidriver-Supplied Halftone Patterns
 
 
-## <a href="" id="ddk-minidriver-supplied-halftone-patterns-gg"></a>
+
 
 
 When GDI-supported halftone methods are being used, GDI allows specification of customized halftone patterns. To specify customized halftone patterns, use [option attributes for the halftone feature](option-attributes-for-the-halftone-feature.md) as follows:

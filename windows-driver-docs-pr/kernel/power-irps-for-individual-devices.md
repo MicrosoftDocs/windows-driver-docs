@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Power IRPs for Individual Devices
 
 
-## <a href="" id="ddk-power-irps-for-individual-devices-kg"></a>
+
 
 
 A *device power IRP* specifies major IRP code [**IRP\_MJ\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff550784), one of the minor power IRP codes listed below, and the value **DevicePowerState** in the **Power.Type** member.

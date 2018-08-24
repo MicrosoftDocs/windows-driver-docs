@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Obtaining and Setting Information
 
 
-## <a href="" id="ddk-obtaining-and-setting-information-ng"></a>
+
 
 
 A connection-oriented client, call manager, or MCM driver can query or set information maintained by other drivers on a binding. In addition, a miniport driver or an MCM driver can indicate miniport driver status to other drivers on a binding.

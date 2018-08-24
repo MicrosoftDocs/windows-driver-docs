@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Example: DownloadPreviewImage
 
 
-## <a href="" id="ddk-example-downloadpreviewimage-si"></a>
+
 
 
 The **DownloadPreviewImage** function downloads image data from the scanner by calling the preview component's **IWiaPreview::GetNewPreview** method. It then calls the **DetectSubregions** function if the application user wants to invoke the segmentation filter, which creates a child item under *pWiaItem2* for each region that it detects. For information about **DetectSubregions**, which is used in this example, see the [**IWiaSegmentationFilter::DetectRegions**](https://msdn.microsoft.com/library/windows/hardware/ff545030) method.

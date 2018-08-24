@@ -9,6 +9,7 @@ api_name:
 - quietInstall XML Element
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # quietInstall XML Element

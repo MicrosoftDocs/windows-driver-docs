@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # XR\_BIAS to Float Conversion Rules
@@ -25,7 +26,7 @@ The following code shows how to convert XR\_BIAS to float:
 ```
 float XRtoFloat( UINT XRComponent ) {
 // The & 0x3ff shows that only 10 bits contribute to the conversion. 
- return (float)( (XRComponent & 0x3ff) â€“ 0x180 ) / 510.f;
+ return (float)( (XRComponent & 0x3ff) - 0x180 ) / 510.f;
 }
 ```
 

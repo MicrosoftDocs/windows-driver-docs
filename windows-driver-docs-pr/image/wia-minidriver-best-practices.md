@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA Minidriver Best Practices
 
 
-## <a href="" id="ddk-wia-minidriver-best-practices-si"></a>
+
 
 
 This section consists of recommended tips for WIA minidriver developers. The following topics are discussed:

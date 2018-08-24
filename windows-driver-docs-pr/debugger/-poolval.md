@@ -14,6 +14,7 @@ api_name:
 - poolval
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !poolval

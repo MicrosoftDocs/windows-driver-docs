@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Windows 2000 Kernel Streaming Model Design Guide
 
 
-## <a href="" id="ddk-windows-2000-kernel-streaming-model-ksg"></a>
+
 
 
 The following sections describe the Windows 2000 Kernel Streaming Model:

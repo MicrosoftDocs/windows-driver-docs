@@ -7,10 +7,12 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # ServiceCategoryList
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The ServiceCategoryList element specifies one or more functional categories that apply to the service. Each functional category is specified through a [ServiceCategory](servicecategory.md) element.
 

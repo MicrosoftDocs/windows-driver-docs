@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Connecting an Interrupt Service Routine to a Parallel Port
 
 
-## <a href="" id="ddk-connecting-an-interrupt-service-routine-to-a-parallel-port-kg"></a>
+
 
 
 A kernel-mode client can use a [**IOCTL\_INTERNAL\_PARALLEL\_CONNECT\_INTERRUPT**](https://msdn.microsoft.com/library/windows/hardware/ff544020) request to connect an interrupt service routine and a *deferred port check routine* to the operation of the parallel port function driver.

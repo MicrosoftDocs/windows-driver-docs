@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing an AVStream Minidriver
 
 
-## <a href="" id="ddk-writing-an-avstream-minidriver-ksg"></a>
+
 
 
 This material is relevant only for Microsoft Windows XP and Microsoft DirectX 8.0 releases and later. This section includes the following topics:

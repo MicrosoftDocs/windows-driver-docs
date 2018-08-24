@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting Device Object Properties in the Registry
 
 
-## <a href="" id="ddk-setting-device-object-properties-in-the-registry-kg"></a>
+
 
 
 Properties of device objects can be set in the registry as follows:

@@ -9,12 +9,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Communication Class Interface
 
 
-## <a href="" id="ddk-communication-class-interface-ng"></a>
+
 
 
 The Communication Class interface is described by a USB interface descriptor, three class-specific descriptors, and an endpoint descriptor for the notification endpoint. The notification endpoint descriptor is a standard USB Interrupt-type IN endpoint descriptor whose **wMaxPacketSize** field is 8 bytes. The following table defines the prominent fields of the Communication Class interface descriptor.

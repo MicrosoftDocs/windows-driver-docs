@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Halting a Miniport Adapter
 
 
-## <a href="" id="ddk-halting-an-adapter-ng"></a>
+
 
 
 NDIS calls an NDIS miniport driver's [*MiniportHaltEx*](https://msdn.microsoft.com/library/windows/hardware/ff559388) function to deallocate resources when an adapter is removed from the system, and to stop the hardware. NDIS can call *MiniportHaltEx* after the driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function returns successfully. For more information about *MiniportInitializeEx*, see [Initializing a Miniport Adapter](initializing-a-miniport-adapter.md).

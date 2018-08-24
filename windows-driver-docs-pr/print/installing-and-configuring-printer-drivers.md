@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing and Configuring Printer Drivers
 
 
-## <a href="" id="ddk-installing-and-configuring-printer-drivers-gg"></a>
+
 
 
 This section describes installation and configuration of printer drivers. It includes the following topics:

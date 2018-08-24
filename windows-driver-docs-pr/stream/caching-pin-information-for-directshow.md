@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Caching Pin Information for DirectShow
 
 
-## <a href="" id="ddk-caching-pin-information-for-directshow-ksg"></a>
+
 
 
 An application can use the DirectShow **IFilterMapper2** interface to automatically search for filters that meet certain criteria. This application can use the list of proposed filters that **IFilterMapper2** returns to automatically build filter graphs with filters that receive and render television signals. To quickly find filters that meet the criteria specified, **IFilterMapper2** uses information about a filter and its pins that was previously entered into a cache. The discussion in the following paragraphs refers to this cache as the *pin data cache*.

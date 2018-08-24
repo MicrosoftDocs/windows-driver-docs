@@ -16,12 +16,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Learning About Protocol Drivers
 
 
-## <a href="" id="ddk-protocol-drivers-ng"></a>
+
 
 
 You can write a protocol driver that has either a connectionless or a connection-oriented lower edge. In addition, your protocol driver can provide Winsock support. The following list describes which sections of the WDK documentation you should read, depending on the type of protocol driver that you are writing:

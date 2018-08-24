@@ -3,12 +3,13 @@ title: Dispatch Routine Functionality
 author: windows-driver-content
 description: Dispatch Routine Functionality
 ms.assetid: cfc191af-2b65-465b-972e-9617a8f7d8b7
+ms.localizationpriority: medium
 ---
 
 # Dispatch Routine Functionality
 
 
-## <a href="" id="ddk-dispatch-routine-functionality-kg"></a>
+
 
 
 The required functionality of a particular dispatch routine varies, depending on the I/O function code it handles, on the individual driver's position in a chain of drivers, and on the type of underlying physical device.

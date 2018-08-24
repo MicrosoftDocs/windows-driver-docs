@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling NDIS Ports Status Indications
 
 
-## <a href="" id="ddk-handling-ndis-ports-status-indications-ng"></a>
+
 
 
 If an NDIS port is the source of a status indication, a miniport driver should use the **PortNumber** member in the [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure to specify the source port. Miniport drivers never indicate status for inactive ports.

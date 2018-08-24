@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing a Print Monitor
 
 
-## <a href="" id="ddk-installing-a-print-monitor-gg"></a>
+
 
 
 This section describes the methods that can be used to install print monitors. (You can install a print monitor with the same INF file that you use to install your printer. For more information about INF files, see [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125) and [Power Management](https://msdn.microsoft.com/library/windows/hardware/ff547131).)

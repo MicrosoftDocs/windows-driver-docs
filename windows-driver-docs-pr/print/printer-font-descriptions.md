@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Printer Font Descriptions
 
 
-## <a href="" id="ddk-printer-font-descriptions-gg"></a>
+
 
 
 The GPD language provides entries for describing [hardware-resident fonts](hardware-resident-fonts.md), [font cartridges](font-cartridges.md), and [font substitution](font-substitution.md) of TrueType fonts for similar hardware-resident or cartridge fonts.

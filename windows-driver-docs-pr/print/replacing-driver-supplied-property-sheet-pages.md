@@ -18,12 +18,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Replacing Driver-Supplied Property Sheet Pages
 
 
-## <a href="" id="ddk-replacing-driver-supplied-property-sheet-pages-gg"></a>
+
 
 
 The [IPrintCoreUI2 COM Interface](iprintcoreui2-com-interface.md) provides four methods that a Pscript5 UI plug-in running on Windows XP and later versions of Windows operating system must use when it intends to fully replace the core driver's standard UI pages. (The term core driver refers to either the Unidrv or Pscript5 printer driver.) These methods are as follows:

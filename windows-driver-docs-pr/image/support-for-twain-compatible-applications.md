@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Support for TWAIN-Compatible Applications
 
 
-## <a href="" id="ddk-support-for-twain-compatible-applications-si"></a>
+
 
 
 In order to support TWAIN applications with private capabilities, WIA drivers can use a technique known as *pass-through* functionality. The pass-through mechanism refers to the way a TWAIN-compatible application communicates with a WIA driver, using the data source manager and the TWAIN compatibility layer as intermediaries. It is important to note that TWAIN capability pass-through is supported only in Windows XP and later operating system versions.

@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Extended Example: Using IoIs32bitProcess
 
 
-## <a href="" id="ddk-extended-example-using-iois32bitprocess-kg"></a>
+
 
 
 The following example shows how to modify a 32-bit driver for 64-bit by adding a call to [**IoIs32bitProcess**](https://msdn.microsoft.com/library/windows/hardware/ff549372). Note that this example shows only the portions of the driver code that need to be modified.

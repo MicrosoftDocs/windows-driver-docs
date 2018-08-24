@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # COM Interfaces for UI Plug-Ins
 
 
-## <a href="" id="ddk-com-interfaces-for-ui-plug-ins-gg"></a>
+
 
 
 The following COM interfaces are defined for communication between Microsoft's printer drivers and UI plug-ins:

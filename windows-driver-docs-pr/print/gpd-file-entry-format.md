@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # GPD File Entry Format
 
 
-## <a href="" id="ddk-gpd-file-entry-format-gg"></a>
+
 
 
 All GPD file entries conform to the following format:

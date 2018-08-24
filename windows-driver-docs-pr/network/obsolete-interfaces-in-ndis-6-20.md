@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Obsolete Interfaces in NDIS 6.20
 
 
-## <a href="" id="ddk-obsolete-interfaces-in-ndis-6-20-ng"></a>
+
 
 
 Some NDIS 6.1 application interface elements are obsolete for NDIS 6.20 drivers.

@@ -13,13 +13,10 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Changing the Friendly Name of a Boot Entry
-
-
-## <span id="ddk_changing_the_friendly_name_of_a_boot_entry_tools"></span><span id="DDK_CHANGING_THE_FRIENDLY_NAME_OF_A_BOOT_ENTRY_TOOLS"></span>
-
 
 In Windows, the items that appear in the Windows Boot Manager are the descriptions of each boot entry.
 
@@ -41,16 +38,14 @@ However, more precise strings, such as the ones that follow, make the boot choic
 "Windows 10 1394"
 ```
 
-**Note**   When a boot entry is configured for debugging ([**/debug /debugport**](https://msdn.microsoft.com/library/windows/hardware/ff556253)) or for Emergency Management Services (EMS) ([**/redirect**](https://msdn.microsoft.com/library/windows/hardware/ff557180)) on an x86- or an x64-based system, the boot loader appends a bracketed phrase (\[debugger enabled\] or \[ems enabled\]) to the friendly name that appears in the boot menu.
+**Note**   When a boot entry is configured for debugging ([/debug /debugport](https://msdn.microsoft.com/library/windows/hardware/ff556253)) or for Emergency Management Services (EMS) ([/redirect](https://msdn.microsoft.com/library/windows/hardware/ff557180)) on an x86- or an x64-based system, the boot loader appends a bracketed phrase (\[debugger enabled\] or \[ems enabled\]) to the friendly name that appears in the boot menu.
 However, the boot loader omits the bracketed phrase from the boot menu when the friendly name and the bracketed phrase together exceed 70 characters. To restore the bracketed phrase, shorten the friendly name.
-
- 
 
 To change the friendly name of a boot entry in a Boot.ini file, you can use Bootcfg or edit the Boot.ini file in Notepad. On systems that store boot options in EFI NVRAM, use Bootcfg.
 
 To change the friendly name of a boot entry for Windows, use BCDEdit.
 
-### <span id="using_bootcfg"></span><span id="USING_BOOTCFG"></span>Using Bootcfg
+## <span id="using_bootcfg"></span><span id="USING_BOOTCFG"></span>Using Bootcfg
 
 With Bootcfg, you can change the friendly name of a boot entry only while copying the entry. Use the Bootcfg **/copy** switch to copy the entry and change its friendly name.
 
@@ -62,7 +57,7 @@ bootcfg /copy /ID 1 /d "Windows 10 Debug"
 
 For complete instructions for using Bootcfg, see Help and Support Services. For examples, see [Using Boot Parameters](using-boot-parameters.md).
 
-### <span id="editing_the_boot_ini_file"></span><span id="EDITING_THE_BOOT_INI_FILE"></span>Editing the Boot.ini File
+## <span id="editing_the_boot_ini_file"></span><span id="EDITING_THE_BOOT_INI_FILE"></span>Editing the Boot.ini File
 
 In the Boot.ini file, the friendly name of a boot entry appears in the boot entry in quotation marks.
 
@@ -80,7 +75,7 @@ multi(0)disk(0)rdisk(0)partition(1)\WINDOWS="Windows 10 Debug" /fastdetect
 multi(0)disk(0)rdisk(0)partition(1)\WINDOWS="Microsoft Windows 10 Professional" /fastdetect
 ```
 
-### <span id="using_bcdedit"></span><span id="USING_BCDEDIT"></span>Using BCDEdit
+## <span id="using_bcdedit"></span><span id="USING_BCDEDIT"></span>Using BCDEdit
 
 To change the description of a boot entry as it appears on the boot menu, you can use the **/set** *IDdescription* option. The command uses the following syntax. The ID is the GUID that is associated with the boot entry (or one of the well-known identifiers, for example, {current}).
 
@@ -105,12 +100,3 @@ You can also change the description when you copy an existing boot entry using t
 ```
 bcdedit /copy {current} /d "Windows 10 NullModem"
 ```
-
- 
-
- 
-
-
-
-
-

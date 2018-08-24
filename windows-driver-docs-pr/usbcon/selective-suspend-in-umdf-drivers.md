@@ -3,10 +3,11 @@ Description: This topic describes how UMDF function drivers support USB selectiv
 title: Selective suspend in USB UMDF drivers
 author: windows-driver-content
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Selective suspend in USB UMDF drivers
@@ -27,14 +28,12 @@ UMDF function drivers can support USB selective suspend in either of two ways:
 
 Both approaches require only small amounts of code. The IdleWake sample that is provided in the WDK shows how to support selective suspend in a UMDF USB driver. You can find this sample in %WinDDK%\\BuildNumber\\Src\\Usb\\OsrUsbFx2\\ UMDF\\Fx2\_Driver\\IdleWake. The folder contains both PPO and non-PPO versions of the sample.
 
-For more information about UMDF and WinUSB.sys, see “Writing USB Drivers with WDF” on the WHDC Web site.
-
 UMDF drivers that support selective suspend must follow these guidelines:
 
 -   The UMDF driver can claim power policy ownership for its device stack, but is not required to do so. By default, the underlying WinUSB.sys driver owns power policy.
 -   A UMDF driver that supports selective suspend and is the PPO can use power-managed queues or queues that are not power-managed. A UMDF driver that supports selective suspend but is not the PPO must not use power-managed queues.
 
-## <a href="" id="ppo"></a>Power policy ownership in UMDF USB drivers
+## Power policy ownership in UMDF USB drivers
 
 
 By default, WinUSB.sys is the PPO for a device stack that contains a UMDF USB driver. Starting with WDF 1.9, UMDF-based USB drivers can claim power policy ownership. Because only one driver in each device stack can be the PPO, a UMDF USB driver that is the PPO must explicitly disable power policy ownership in WinUSB.sys.
@@ -59,7 +58,7 @@ By default, WinUSB.sys is the PPO for a device stack that contains a UMDF USB dr
 
 UMDF USB drivers that support selective suspend and are built with WDF versions earlier than 1.9 must not claim power policy ownership. With these earlier versions of WDF, USB selective suspend works properly only if WinUSB.sys is the PPO.
 
-## <a href="" id="qs"></a>I/O queues in UMDF USB drivers
+## I/O queues in UMDF USB drivers
 
 
 For a UMDF driver that supports selective suspend, whether the UMDF driver owns power policy for its device determines the type of I/O queues that it can use. UMDF drivers that support selective suspend and are PPOs can use queues that are either power managed or not power managed. UMDF USB drivers that support selective suspend but are not the PPO should not use any power-managed I/O queues.
@@ -106,7 +105,7 @@ hr = m_FxDevice->CreateIoQueue(
 
 This code sequence results in a default queue that dispatches requests in parallel. If the driver is the PPO the queue is power managed, and if the driver is not the PPO, the queue is not power managed.
 
-## <a href="" id="umdfppo"></a>Supporting USB selective suspend in a UMDF PPO
+## Supporting USB selective suspend in a UMDF PPO
 
 
 To support selective suspend, a UMDF USB driver that is the PPO for its device stack must do the following:
@@ -214,7 +213,7 @@ HKR,,"UserSetDeviceIdleEnabled",0x00010001,1
 
 If UserSetDeviceIdleEnabled is set, the device’s Properties dialog box includes a Power Management tab that allows the user to enable or disable USB selective suspend.
 
-## <a href="" id="systemwake"></a>System wake in a UMDF driver
+## System wake in a UMDF driver
 
 
 In a UMDF driver, support for system wake is independent of support for selective suspend. A UMDF USB driver can support both system wake and selective suspend, neither system wake nor selective suspend, or either system wake or selective suspend. A device that supports system wake can wake the system from a sleep state (S1, S2, or S3).

@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating and Opening Processes by WIA Drivers
 
 
-## <a href="" id="ddk-creating-and-opening-processes-by-wia-drivers-si"></a>
+
 
 
 WIA drivers should not start other processes on the system. The two most important reasons for this are the following:

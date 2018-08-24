@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Low Power for Wake on LAN
 
 
-## <a href="" id="ddk--nr"></a>
+
 
 
 The wake on LAN (WOL) feature wakes the computer from a low power state when a network adapter detects a WOL event.

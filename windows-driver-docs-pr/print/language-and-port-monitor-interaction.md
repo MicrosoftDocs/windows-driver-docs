@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Language and Port Monitor Interaction
 
 
-## <a href="" id="ddk-language-and-port-monitor-interaction-gg"></a>
+
 
 
 The following illustration demonstrates the path taken by printer data from the print processor to a printer that a) has a language monitor associated with it; and b) does not have a language monitor associated with it.

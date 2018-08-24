@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Guidelines for Writing Dispatch(Internal)DeviceControl Routines
 
 
-## <a href="" id="ddk-guidelines-for-writing-dispatch-internal-devicecontrol-routines-kg"></a>
+
 
 
 Keep the following points in mind when writing a [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287) or [*DispatchInternalDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543326) routine:

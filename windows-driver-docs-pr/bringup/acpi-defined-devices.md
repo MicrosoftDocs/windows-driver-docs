@@ -8,24 +8,25 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # ACPI-defined devices
 
 
-The [ACPI 5.0 specification](http://www.acpi.info) defines a number of device types to represent and control typical platform features. For example, ACPI defines a power button, a sleep button, and system indicators. For SoC-based platforms, Windows provides built-in drivers to support the ACPI-defined devices that are described in this article.
+The [ACPI 5.0 specification](https://www.uefi.org/specifications) defines a number of device types to represent and control typical platform features. For example, ACPI defines a power button, a sleep button, and system indicators. For SoC-based platforms, Windows provides built-in drivers to support the ACPI-defined devices that are described in this article.
 
 For more information, see section 9, "ACPI-Defined Devices and Device-Specific Objects", in the ACPI 5.0 specification.
 
 ## <a href="" id="lid"></a>Lid device
 
 
-This device describes and reports the status of a clamshell device's lid. For more information, see section 9.4, "Control Method Lid Device", in the [ACPI 5.0 specification](http://www.acpi.info). Lid device implementations use the GPIO-signaled ACPI event mechanism, which is described in section 5.6.5, "GPIO-Signaled ACPI Events", in the ACPI 5.0 specification.
+This device describes and reports the status of a clamshell device's lid. For more information, see section 9.4, "Control Method Lid Device", in the [ACPI 5.0 specification](https://www.uefi.org/specifications). Lid device implementations use the GPIO-signaled ACPI event mechanism, which is described in section 5.6.5, "GPIO-Signaled ACPI Events", in the ACPI 5.0 specification.
 
 ## <a href="" id="battery"></a>Control method battery device
 
 
-This device describes, configures, and reports the status of the platform battery. For more information, see section 10.2, "Control Method Batteries", in the [ACPI 5.0 specification](http://www.acpi.info). Control Method Battery implementations on SoC platforms use the GPIO-signaled ACPI event mechanism, which is described in section 5.6.5, "GPIO-Signaled ACPI Events", in the ACPI 5.0 specification. Access to the battery and charging hardware is done by methods that operate through GPIO or SPB OpRegions, which are described in sections 5.5.2.4.4 and 5.5.2.4.5 of the ACPI 5.0 specification.
+This device describes, configures, and reports the status of the platform battery. For more information, see section 10.2, "Control Method Batteries", in the [ACPI 5.0 specification](https://www.uefi.org/specifications). Control Method Battery implementations on SoC platforms use the GPIO-signaled ACPI event mechanism, which is described in section 5.6.5, "GPIO-Signaled ACPI Events", in the ACPI 5.0 specification. Access to the battery and charging hardware is done by methods that operate through GPIO or SPB OpRegions, which are described in sections 5.5.2.4.4 and 5.5.2.4.5 of the ACPI 5.0 specification.
 
 For more information about battery management in Windows, see [Windows Power and Battery Subsystem Requirements](https://msdn.microsoft.com/library/windows/hardware/mt614876).
 
@@ -39,7 +40,7 @@ To support the passive thermal management of the battery by the platform, Micros
 ## <a href="" id="time"></a>Control method time and alarm device
 
 
-ACPI 5.0 defines the operation and definition of the optional control method-based Time and Alarm device, which provides a hardware-independent abstraction and a more robust alternative to the Real Time Clock (RTC). For more information, see section 9.15, "PC/AT RTC/CMOS Devices", and section 9.18, "Time and Alarm Device", in the [ACPI 5.0 specification](http://www.acpi.info). If the standard PC RTC either is not implemented or is used as the RTC hardware backing the Time and Alarm device, the "CMOS RTC Not Present" bit of the FADT's Boot Architecture flags field must be set.
+ACPI 5.0 defines the operation and definition of the optional control method-based Time and Alarm device, which provides a hardware-independent abstraction and a more robust alternative to the Real Time Clock (RTC). For more information, see section 9.15, "PC/AT RTC/CMOS Devices", and section 9.18, "Time and Alarm Device", in the [ACPI 5.0 specification](https://www.uefi.org/specifications). If the standard PC RTC either is not implemented or is used as the RTC hardware backing the Time and Alarm device, the "CMOS RTC Not Present" bit of the FADT's Boot Architecture flags field must be set.
 
 The time capabilities of the Time and Alarm device are required for platforms that support the InstantGo feature (and the Connected Standby power mode). These capabilities maintain time-of-day information across system power transitions, and keep track of time even when the platform is turned off. It is expected that the time on the platform will be consistent when different firmware interfaces are used to query the platform time. For example, a UEFI call to get the time should return the same time that the operating system would get by using the Time and Alarm device.
 
@@ -84,11 +85,11 @@ A thermal zone is defined to include child objects that do the following:
     -   \_AL*x* for listing the fans in the thermal zone.
     -   \_AC*x* the temperature at which fan *x* must be turned on.
 
-For more information about ACPI thermal zones, see chapter 11, "Thermal Management", in the [ACPI 5.0 specification](http://www.acpi.info).
+For more information about ACPI thermal zones, see chapter 11, "Thermal Management", in the [ACPI 5.0 specification](https://www.uefi.org/specifications).
 
 ### Logical processor idling as a thermal mitigation
 
-The platform can indicate to the operating system that processor cores in the thermal zone should be idled (instead of throttled). This is done by including the Processor Aggregator device (ACPI000C) in one or more thermal zones. Windows will park a number of cores when the thermal zone's \_PSV is crossed. The number is either *(1 - &lt;zone passive limit&gt;) \* &lt;the number of cores in the thermal zone&gt;*, or the number of cores reported in \_PUR, whichever is greater. For more information, see section 8.5.1, "Logical Processor Idling", in the [ACPI 5.0 specification](http://www.acpi.info).
+The platform can indicate to the operating system that processor cores in the thermal zone should be idled (instead of throttled). This is done by including the Processor Aggregator device (ACPI000C) in one or more thermal zones. Windows will park a number of cores when the thermal zone's \_PSV is crossed. The number is either *(1 - &lt;zone passive limit&gt;) \* &lt;the number of cores in the thermal zone&gt;*, or the number of cores reported in \_PUR, whichever is greater. For more information, see section 8.5.1, "Logical Processor Idling", in the [ACPI 5.0 specification](https://www.uefi.org/specifications).
 
 OEMs can include a Device-Specific Method (\_DSM) to support the Microsoft thermal extensions for Windows. For more information, see [Device-Specific Method for Microsoft Thermal Extensions](device-specific-method-for-microsoft-thermal-extensions.md).
 

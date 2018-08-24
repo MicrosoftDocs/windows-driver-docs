@@ -17,12 +17,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Data Flow Using Isochronous Pipes
 
 
-## <a href="" id="ddk-data-flow-using-isochronous-pipes-ksg"></a>
+
 
 
 USBCAMD2 begins streaming on the isochronous pipe by requesting two transfers of 32 packets. Each packet has a maximum size that corresponds to the maximum size in the selected alternate setting.

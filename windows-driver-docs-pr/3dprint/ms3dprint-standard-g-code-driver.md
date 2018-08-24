@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MS3DPrint Standard G-Code driver
@@ -20,7 +21,7 @@ This driver set contains both the USB driver which implements the wire protocol 
 Both the USB driver and the slicer are under active development and parts of the implementation and specification are subject to change in future revisions.  A set of these drivers is published on Windows Update and automatically offered to supported devices or devices that declare themselves a 3D Printer using the MS_COMP_3DPRINT USB descriptors.
  
 
-## <a href="" id="3d-printing-sdk--driver-folder-contents"></a>3D printing SDK driver folder contents
+## 3D printing SDK driver folder contents
 
 
 The following table provides information about the location of the drivers, slicers and render filters in the 3D printing SDK.

@@ -16,6 +16,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # CcSetReadAheadGranularityEx routine
@@ -29,8 +30,7 @@ Syntax
 ```ManagedCPlusPlus
 VOID CcSetReadAheadGranularityEx(
   _In_ PFILE_OBJECT FileObject,
-  _In_ ULONG        Granularity,
-  _In_ ULONG        PipelinedRequestSize
+  _In_ PREAD_AHEAD_PARAMETERS    ReadAheadParameters
 );
 ```
 
@@ -40,11 +40,8 @@ Parameters
 *FileObject* \[in\]  
 Pointer to a file object for the cached file whose read-ahead granularity is to be set.
 
-*Granularity* \[in\]  
-Specifies the desired read-ahead granularity, which must be an even power of two and must be greater than or equal to PAGE\_SIZE.
-
-*PipelinedRequestSize* \[in\]  
-Specifies a desired read-ahead request size to override the system computed request size. If *PipelinedRequestSize* is 0, the current read-ahead request size is set to itself divided by 2.
+*ReadAheadParameters* \[in\]  
+Specifies the read ahead parameters. See [READ_AHEAD_PARAMETERS](read-ahead-parameters.md) for more information.
 
 Return value
 ------------

@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Serenum Filtering of I/O Requests
 
 
-## <a href="" id="ddk-serenum-filtering-of-i-o-requests-kg"></a>
+
 
 
 The following describes how Serenum filters I/O requests that are directed to a filter DO:

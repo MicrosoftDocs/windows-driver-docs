@@ -9,6 +9,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # What's New in HID
@@ -41,7 +42,7 @@ The [Design Guide](index.md) has been updated to include some new topics. And al
 
 -   [HID Clients Supported in Windows](hid-clients-supported-in-windows.md)
 
-## <a href="" id="hid-over-i2c"></a>HID Over I²C
+## HID Over I²C
 
 
 The HID protocol originally targeted human interface devices like: keyboards, mice, and joysticks. It was originally developed to run over USB. For Windows 8, Microsoft created a new HID miniport driver that allows devices to communicate over an Inter-Integrated Circuit (I²C) bus.

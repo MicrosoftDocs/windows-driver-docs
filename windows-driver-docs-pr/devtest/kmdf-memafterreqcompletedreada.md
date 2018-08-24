@@ -2,6 +2,11 @@
 title: MemAfterReqCompletedReadA rule (kmdf)
 description: The MemAfterReqCompletedReadA rule specifies that within the EvtIoRead callback function, the framework memory object cannot be accessed after the I/O request is completed.
 ms.assetid: 5853fae3-3049-43d8-8452-a1afb268004b
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["MemAfterReqCompletedReadA rule (kmdf)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - MemAfterReqCompletedReadA
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # MemAfterReqCompletedReadA rule (kmdf)

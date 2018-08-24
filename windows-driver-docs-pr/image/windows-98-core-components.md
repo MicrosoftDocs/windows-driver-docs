@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Windows 98 Core Components
 
 
-## <a href="" id="ddk-windows-98-core-components-si"></a>
+
 
 
 On MIcrosoft Windows 98, the still image core components are as shown in the following figure.

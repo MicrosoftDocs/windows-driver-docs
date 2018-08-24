@@ -2,6 +2,11 @@
 title: RemoveLockReleaseWrite rule (wdm)
 description: The RemoveLockReleaseWrite rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used in strict alternation. Moreover, at the end of the dispatch routine the driver should not hold the remove lock.
 ms.assetid: CC27417A-2ED5-40E2-B40C-7FDB412125A0
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["RemoveLockReleaseWrite rule (wdm)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - RemoveLockReleaseWrite
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # RemoveLockReleaseWrite rule (wdm)

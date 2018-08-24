@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Defining Custom Properties
 
 
-## <a href="" id="ddk-defining-custom-properties-si"></a>
+
 
 
 If it is necessary for the WIA minidriver to define custom properties, the WIA\_PRIVATE\_DEVPROP property should be used for custom root item properties, and the WIA\_PRIVATE\_ITEMPROP property should be used for other item properties. These constants are defined in *wiadef.h*.

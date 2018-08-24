@@ -14,6 +14,7 @@ api_name:
 - INVALID_SLOT_ALLOCATOR_FLAGS
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x16D: INVALID\_SLOT\_ALLOCATOR\_FLAGS

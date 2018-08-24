@@ -2,6 +2,11 @@
 title: MarkDevicePower rule (wdm)
 description: The MarkDevicePower rule specifies that an IRP\_MJ\_POWER with IRP\_MN\_SET\_POWER for SystemPowerState IRP going to S0 is pended.
 ms.assetid: 5B46FF9C-C955-4D10-86FB-17BDC57E17B6
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["MarkDevicePower rule (wdm)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - MarkDevicePower
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # MarkDevicePower rule (wdm)

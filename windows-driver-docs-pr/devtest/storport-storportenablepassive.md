@@ -2,6 +2,11 @@
 title: StorPortEnablePassive rule (storport)
 description: This rule verifies that StorPortEnablePassiveInitialization is not called from any StorPort miniport driver routine other than HwInitialize.
 ms.assetid: 3B6EDA79-B17D-43A7-B1A3-BCC7134D13EA
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["StorPortEnablePassive rule (storport)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - StorPortEnablePassive
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # StorPortEnablePassive rule (storport)

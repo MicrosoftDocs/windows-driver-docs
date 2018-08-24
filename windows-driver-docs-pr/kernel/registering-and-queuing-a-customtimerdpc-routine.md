@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering and Queuing a CustomTimerDpc Routine
 
 
-## <a href="" id="ddk-registering-and-queuing-a-customtimerdpc-routine-kg"></a>
+
 
 
 A driver can register a [*CustomTimerDpc*](https://msdn.microsoft.com/library/windows/hardware/ff542983) routine by calling the following routines, usually from its [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine:

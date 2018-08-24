@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Splitting IPv6 Frames
 
 
-## <a href="" id="ddk-splitting-ipv6-frames-ng"></a>
+
 
 
 To support header-data split, a NIC must support splitting IPv6 Ethernet frames without any IPv6 extension headers. The NIC must be able to split such frames at the beginning of upper-layer-protocol header.

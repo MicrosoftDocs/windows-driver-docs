@@ -2,6 +2,11 @@
 title: Init\_DeRegisterInterrupt rule (ndis)
 description: The Init\_DeRegisterInterrupt rule specifies that if NdisMRegisterInterruptEx is called at least once during MPInitilize, NdisMDeregisterInterruptEx should be called at least once in MPHaltEx.
 ms.assetid: C7436321-43DD-4B38-A0A3-9888CFDDA284
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["Init_DeRegisterInterrupt rule (ndis)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - Init_DeRegisterInterrupt
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Init\_DeRegisterInterrupt rule (ndis)

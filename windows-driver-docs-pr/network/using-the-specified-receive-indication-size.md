@@ -10,6 +10,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using the Specified Receive Indication Size
@@ -17,7 +18,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-using-the-specified-receive-indication-size-ng"></a>
+
 
 
 In the **RcvIndicationSize** member of the [**TCP\_OFFLOAD\_STATE\_CACHED**](https://msdn.microsoft.com/library/windows/hardware/ff570937) structure, the host stack can specify the optimum number of data bytes that the offload target should supply in a single call to the [**NdisTcpOffloadReceiveHandler**](https://msdn.microsoft.com/library/windows/hardware/ff564606) function. Typically, an application that uses the indicate-and-post model for receiving data (which is described in the following paragraphs) specifies a receive indication size to the host stack.

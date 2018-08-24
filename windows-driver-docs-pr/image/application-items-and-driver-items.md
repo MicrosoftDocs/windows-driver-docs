@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Application Items and Driver Items
 
 
-## <a href="" id="ddk-application-items-and-driver-items-si"></a>
+
 
 
 WIA items represent device attributes and device data. Imaging applications see a WIA device as a hierarchical tree of items, with the root item representing the device itself, and any child items representing images or folders that contain images. The tree that an application sees, however, is separate from the tree that is created and maintained by a WIA minidriver. When a minidriver creates a tree of items, the WIA service automatically creates an identical copy of this tree that can be viewed by imaging applications. Items in the copied tree are called *application items*. Items in the tree created by a minidriver are called *driver items*.

@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_WAN_CO_SET_LINK_INFO Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_WAN\_CO\_SET\_LINK\_INFO
@@ -31,7 +32,7 @@ The OID\_WAN\_CO\_SET\_LINK\_INFO OID requests the miniport driver to set PPP fr
   
 ```
 
-## <a href="" id="ddk-oid-wan-co-set-link-info-nr"></a>
+
 
 
 The members of this structure contain the following information:

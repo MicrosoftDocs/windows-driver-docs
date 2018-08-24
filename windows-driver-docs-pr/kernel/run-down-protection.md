@@ -3,6 +3,7 @@ title: Run-Down Protection
 author: windows-driver-content
 description: Starting with Windows XP, run-down protection is available to kernel-mode drivers. Drivers can use run-down protection to safely access objects in shared system memory that are created and deleted by another kernel-mode driver.
 ms.assetid: AF451636-DBA0-4905-9723-73EE7AA9483E
+ms.localizationpriority: medium
 ---
 
 # Run-Down Protection
@@ -36,7 +37,7 @@ For example, an antivirus driver typically stays loaded in memory when the opera
 
 Run-down protection does not serialize accesses to a shared object. If two or more accessing drivers can simultaneously hold run-down protection on an object, and accesses to the object must be serialized, some other mechanism, such as a mutual-exclusion lock, must be used to serialize the accesses.
 
-## <a href="" id="the-ex-rundown-ref-structure"></a>The EX\_RUNDOWN\_REF structure
+## The EX\_RUNDOWN\_REF structure
 
 
 An [**EX\_RUNDOWN\_REF**](https://msdn.microsoft.com/library/windows/hardware/jj569379) structure tracks the status of run-down protection on a shared object. This structure is opaque to drivers. The system-supplied run-down protection routines use this structure to count the number of instances of run-down protection that are currently in effect on the object. These routines also use this structure to track whether the object is run down or is in the process of being run down.

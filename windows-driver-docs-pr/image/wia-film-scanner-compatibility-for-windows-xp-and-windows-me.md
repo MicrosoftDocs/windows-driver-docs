@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA Film Scanner Compatibility for Windows XP and Windows Me
 
 
-## <a href="" id="ddk-wia-film-scanner-compatibility-for-windows-me-and-windows-xp-si"></a>
+
 
 
 Film scanning items do *not* exist for Microsoft Windows XP or Windows Me. A film scanner (either a dedicated film scanner or a film scanner attachment on a flatbed scanner) will not be available to a Windows XP WIA application that runs on Windows Vista. The [WIA Compatibility Layer](wia-compatibility-layer.md) that is found in the Windows Vista WIA service handles only flatbed and basic feeder items (WIA\_CATEGORY\_FLATBED and WIA\_CATEGORY\_FEEDER) for Windows Vista devices when they are used with Windows XP applications; film and storage items (WIA\_CATEGORY\_FILM and WIA\_CATEGORY\_FINISHED\_FILE) are not translated.

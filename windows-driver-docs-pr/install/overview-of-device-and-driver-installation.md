@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of Device and Driver Installation
 
 
-## <a href="" id="ddk-device-installation-overview-dg"></a>
+
 
 
 Windows provides components to install devices and drivers. The [system-provided device installation components](system-provided-device-installation-components.md) work with [vendor-supplied components](vendor-provided-device-installation-components.md) to install devices.

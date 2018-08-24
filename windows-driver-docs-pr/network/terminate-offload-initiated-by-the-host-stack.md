@@ -9,6 +9,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Terminate Offload Initiated by the Host Stack
@@ -16,7 +17,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-terminate-offload-initiated-by-the-host-stack-ng"></a>
+
 
 
 The host stack can terminate the offload of an individual neighbor, path, or TCP connection state object. After terminating all of the state objects that depend on a neighbor or path state object, the host stack terminates the offload of that neighbor or path state object. For example, after terminating all of the TCP connection state objects that are linked to a path state object, the host stack terminates the offload of the path state object, which is no longer serving a useful purpose.

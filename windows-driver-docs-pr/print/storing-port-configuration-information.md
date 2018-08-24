@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storing Port Configuration Information
 
 
-## <a href="" id="ddk-storing-port-configuration-information-gg"></a>
+
 
 
 The Windows 2000 and later print spooler can operate in either a clustered or nonclustered server environment. When the spooler is operating in a server cluster, print monitor configuration information must be stored in the cluster registry. On the other hand, if the spooler is operating on a single, nonclustered server system, print monitor configuration information must be stored in the server's local registry.

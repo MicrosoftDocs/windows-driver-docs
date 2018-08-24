@@ -1,29 +1,27 @@
 ---
 title: Windows Hello camera driver bring up guide
 author: windows-driver-content
-description: Windows Hello provides you the ability to enable face authentication to log on to a Windows 10 system or device.
+description: This topic discusses how to enable face authentication for an infrared (IR) camera and is meant for original equipment manufacturers (OEMs) and independent hardware vendors (IHVs).
 ms.assetid: 5CE619F4-E136-4F8F-8F90-F7F96DE4642E
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
-# Windows Hello camera driver bring up guide
+# Camera driver bring up guide
 
+This topic discusses how to enable face authentication for an infrared (IR) camera and is meant for original equipment manufacturers (OEMs) and independent hardware vendors (IHVs) who want to provide this functionality in their devices.
 
-Windows Hello provides you the ability to enable face authentication to log on to a Windows 10 system or device. This topic discusses how to enable Windows Hello for an infrared (IR) camera and is meant for original equipment manufacturers (OEMs) and independent hardware vendors (IHVs) who want to provide this log on functionality in their devices.
+## FrameServer
 
-## Windows Hello and FrameServer
-
-
-The following diagram shows how Windows Hello works with the new driver stack through FrameServer:
+The following diagram shows how face authentication works with the new driver stack through FrameServer:
 
 ![windows hello and frameserver](images/windows-hello-device-model.png)
 
-## <a href="" id="face-authentication--ddis"></a>Face authentication DDIs
-
+## Face authentication DDIs
 
 There are two new face authentication DDI constructs available in Windows 10, version 1607 to support Windows Hello:
 
@@ -45,12 +43,11 @@ There are two new face authentication DDI constructs available in Windows 10, v
 
 ## USB camera support
 
-
-To enable Windows Hello for an infrared camera on your device, you must provide a correctly configured DeviceMFT component and USB Video Class (UVC) extension unit.
+To enable face authentication for an infrared camera on your device, you must provide a correctly configured DeviceMFT component and USB Video Class (UVC) extension unit.
 
 ### Configure the DeviceMFT component
 
-As a starting point for building a DeviceMFT component that supports Windows Hello on your device, you can use the [sampledevicemft](https://github.com/Microsoft/Windows-driver-samples/tree/master/avstream/sampledevicemft) sample located in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
+As a starting point for building a DeviceMFT component that supports face authentication on your device, you can use the [sampledevicemft](https://github.com/Microsoft/Windows-driver-samples/tree/master/avstream/sampledevicemft) sample located in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
 
 To modify the driver sample, download and extract [Windows-driver-samples-master.zip](https://github.com/Microsoft/Windows-driver-samples/archive/master.zip), or alternatively, use git to clone the Windows driver sample repository to your development computer. Navigate to the **sampledevicemft** sample located in the **avstream** folder and make the following changes to the sample source code:
 
@@ -99,7 +96,7 @@ This removes the camera from **KSCATEGORY\_VIDEO**, which will block it from bei
 
 Both the **SkipCameraEnumeration** and **SensorCameraMode** entries should be placed in the **DDInstall.HW** section of the INF file.
 
-## <a href="" id="hlk-tests-for-kscategory-sensor-camera-to-assist-driver-testing"></a>HLK tests for KSCATEGORY\_SENSOR\_CAMERA to assist driver testing
+## HLK tests for KSCATEGORY\_SENSOR\_CAMERA to assist driver testing
 
 
 Hardware Logo Kit (HLK) testing is required for both IR and RGB camera modules. This testing verifies the basic functionality of RGB and IR cameras used for Windows Hello face authentication. The RGB camera requirements are already specified in the HLK test suite.
@@ -155,7 +152,9 @@ These are tests that IR camera modules will need to pass to be enabled:
 If the HLK tests listed above are not passed, Microsoft will not issue a signed driver to the OEM, and Windows Hello will not operate.
 
 ## Related topics
+
 [Capture photos and video with MediaCapture](https://msdn.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-mediacapture)  
+
 [Windows.Media.Capture namespace](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.aspx)  
 
 

@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Common WIA Security Problems
 
 
-## <a href="" id="ddk-common-wia-security-problems-si"></a>
+
 
 
 There are several common problems that could prevent an existing WIA driver (which ran fine under **LocalSystem**) from running successfully under the **LocalService** account.

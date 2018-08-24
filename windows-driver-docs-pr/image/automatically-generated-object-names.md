@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Automatically Generated Object Names
 
 
-## <a href="" id="ddk-automatically-generated-object-names-si"></a>
+
 
 
 If the **Filename** field of the ObjectInfo dataset is blank, the Microsoft PTP WIA minidriver creates a name based on the ObjectFormat and ObjectHandle fields. For example, an image with an ObjectHandle value of 5 is called Image5 on the English version of Windows.

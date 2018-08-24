@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Synchronization and Threaded DPCs
 
 
-## <a href="" id="ddk-synchronization-and-threaded-dpcs-kg"></a>
+
 
 
 To synchronize access to a memory location that is accessed from both inside and outside a [*CustomThreadedDpc*](https://msdn.microsoft.com/library/windows/hardware/ff542976) routine, a driver can use ordinary spin locks or queued spin locks. When doing so, the driver must obey certain rules to correctly synchronize at IRQL= PASSIVE\_LEVEL and at IRQL = DISPATCH\_LEVEL, because a *CustomThreadedDpc* routine can execute at both IRQLs.

@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Commands for Simulated Fonts
 
 
-## <a href="" id="ddk-commands-for-simulated-fonts-gg"></a>
+
 
 
 The following table lists the commands for controlling simulated fonts. All commands are specified using the [command entry format](command-entry-format.md).

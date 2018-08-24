@@ -4,19 +4,16 @@ author: windows-driver-content
 description: Adding UI to a WIA Minidriver
 ms.assetid: 70440de2-0554-4f5b-9ce4-fe060d3077a4
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Adding UI to a WIA Minidriver
 
-
-## <a href="" id="ddk-adding-ui-to-a-wia-minidriver-si"></a>
-
-
-You can add extended UI or replace UI components for a WIA minidriver by installing a separate DLL with the WIA minidriver. Unlike a TWAIN driver, a WIA driver's UI component is separate from the actual WIA minidriver. For Microsoft Windows Me, Windows XP, and later, the UI components run in the application's process, while the WIA minidriver runs in the WIA service's process. So, a WIA driver might not directly show UI; only the WIA UI extension modules of the driver might show UI.
+You can add extended UI or replace UI components for a WIA minidriver by installing a separate DLL with the WIA minidriver. Unlike a TWAIN driver, a WIA driver's UI component is separate from the actual WIA minidriver. The UI components run in the application's process, while the WIA minidriver runs in the WIA service's process. So, a WIA driver might not directly show UI; only the WIA UI extension modules of the driver might show UI.
 
 WIA allows you to add property pages to the system-provided dialog boxes, provide custom icon images, or completely replace the system-provided dialog box. The property page extension mechanism is based on the shell definition of the **IShellPropSheetExt** COM interface (described in the Microsoft Windows SDK documentation). This mechanism is registered under the property sheet handlers (**HKCR\\Clsid\\**&lt;*Clsid of the device UI*&gt;**\\shellex\\PropertySheetHandlers**).
 
@@ -32,16 +29,6 @@ To provide a custom icon for a device, implement the [**IWiaUIExtension::GetDevi
 
 **Note**   WIA has very limited scripting support. So, while it is possible to replace the UI, it is not possible to merely suppress it in a script.
 
- 
-
 The rest of this section includes:
 
 [Creating a "Hello World" WIA Minidriver UI Extension](creating-a--hello-world--wia-minidriver-ui-extension.md), a complete example of how to implement your own custom UI.
-
- 
-
- 
-
-
-
-

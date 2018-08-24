@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filling in an NDIS\_GUID Structure
 
 
-## <a href="" id="ddk-filling-in-an-ndis-guid-structure-ng"></a>
+
 
 
 An NDIS\_GUID structure is defined as follows:

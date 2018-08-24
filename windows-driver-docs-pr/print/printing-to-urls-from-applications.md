@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Printing to URLs from Applications
 
 
-## <a href="" id="ddk-printing-to-urls-from-applications-gg"></a>
+
 
 
 From an application's perspective, printing to a URL-identified print queue is identical to printing to a UNC-identified print queue. The application is typically unaware that the print queue is accessed by means of a URL.

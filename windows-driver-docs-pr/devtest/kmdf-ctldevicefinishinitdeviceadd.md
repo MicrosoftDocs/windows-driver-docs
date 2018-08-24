@@ -2,6 +2,11 @@
 title: CtlDeviceFinishInitDeviceAdd rule (kmdf)
 description: The CtlDeviceFinishInitDeviceAdd rule specifies that if a driver creates control device object in an EvtDriverDeviceAdd callback function, it must call WdfControlFinishInitializing after the device has been created and before it exits from the EvtDriverDeviceAdd callback function. This rule does not apply for non-PnP drivers.
 ms.assetid: 162a0013-1215-487c-af72-05e75ef0bdbd
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["CtlDeviceFinishInitDeviceAdd rule (kmdf)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - CtlDeviceFinishInitDeviceAdd
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CtlDeviceFinishInitDeviceAdd rule (kmdf)

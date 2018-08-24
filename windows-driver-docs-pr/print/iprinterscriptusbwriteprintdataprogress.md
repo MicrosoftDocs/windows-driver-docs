@@ -13,6 +13,7 @@ api_name:
 - IPrinterScriptUsbWritePrintDataProgress
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbWritePrintDataProgress interface

@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Top-Level Collections Opened by Windows for System Use
 
 
-## <a href="" id="ddk-top-level-collections-opened-by-windows-for-system-use-kg"></a>
+
 
 
 Windows opens the following [top-level collections](top-level-collections.md) for system use:

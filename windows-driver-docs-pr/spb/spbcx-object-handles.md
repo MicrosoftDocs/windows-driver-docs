@@ -4,6 +4,7 @@ author: windows-driver-content
 description: This topic describes object handles that are defined for the SPB framework extension (SpbCx) library.
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SpbCx Object Handles
@@ -19,7 +20,7 @@ This topic describes the following object handles:
 
 Header: Spbcx.h
 
-## <a href="" id="SPBREQUEST"></a> SPBREQUEST Object Handle
+##  SPBREQUEST Object Handle
 An **SPBREQUEST** object handle represents an I/O request that is issued to a target device on the bus.
 
 ```cpp
@@ -40,7 +41,7 @@ The **WDFREQUEST** base object class does not provide this support.
 
 During device initialization, your SPB controller driver can assign a per-request context to an **SPBREQUEST** handle by calling the [SpbControllerSetRequestAttributes](https://msdn.microsoft.com/library/windows/hardware/hh450908) method.
   
-## <a href="" id="SPBTARGET"></a> SPBTARGET Object Handle
+##  SPBTARGET Object Handle
 An **SPBTARGET** object handle identifies a logical connection from a client (peripheral driver) to an addressable port or peripheral device on the bus.
    
    ```cpp

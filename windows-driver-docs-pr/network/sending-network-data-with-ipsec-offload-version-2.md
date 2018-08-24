@@ -10,13 +10,14 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sending Network Data with IPsec Offload Version 2
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-sending-network-data-with-ipsec-offload-version-2-ng"></a>
+
 
 
 The TCP/IP transport provides IPsec Offload Version 2 (IPsecOV2) information for one or more SAs with the [OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_ADD\_SA](https://msdn.microsoft.com/library/windows/hardware/ff569812) OID. Before the miniport driver returns a successful result for OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_ADD\_SA, the miniport driver initializes an offload handle. The TCP/IP transport requests the miniport driver to offload the processing of a [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure by specifying IPsecOV2 information in the [**NDIS\_IPSEC\_OFFLOAD\_V2\_NET\_BUFFER\_LIST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff565818) and [**NDIS\_IPSEC\_OFFLOAD\_V2\_HEADER\_NET\_BUFFER\_LIST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff565812) structures, which are part of the **NET\_BUFFER\_LIST** out-of-band (OOB) information.

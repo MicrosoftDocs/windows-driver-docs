@@ -14,6 +14,7 @@ api_name:
 - .endpsrv (End Process Server)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .endpsrv (End Process Server)

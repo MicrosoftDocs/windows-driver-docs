@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Security Checklist for NDIS Drivers
 
 
-## <a href="" id="ddk-security-checklist-for-ndis-drivers-ng"></a>
+
 
 
 To make sure that your driver follows good security practices, do the following:

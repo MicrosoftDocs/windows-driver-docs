@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Reset
 
 
-## <a href="" id="ddk-reset-ng"></a>
+
 
 
 NDIS might call a miniport driver's or MCM driver's [*MiniportResetEx*](https://msdn.microsoft.com/library/windows/hardware/ff559432) function to reset a NIC.

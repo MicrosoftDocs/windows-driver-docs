@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Multiplane overlay hardware requirements
@@ -28,7 +29,7 @@ Display drivers and hardware are not required to support multiplane overlays. Ho
 -   Planes that support scaling must support both bilinear filtering and filtering quality that is better than bilinear.
 -   At least one plane must support these YUV formats (for more info, see [YUV format ranges in Windows 8.1](yuv-format-ranges.md)):
     -   Both ITU BT.601 and BT.709 YUV to RGB matrix conversion for YUV formats.
-    -   Both normal (or studio) range YUV luminance (16 - 235) and extended-range YUV luminance (0 â€“ 255).
+    -   Both normal (or studio) range YUV luminance (16 - 235) and extended-range YUV luminance (0 - 255).
 -   Hardware must handle these register latching scenarios:
     -   All per-plane attributes (buffer address, clipping, scaling, and so on) must atomically post during the vertical retrace period. When updating a block of registers, they must all post atomically—for example, if the VSync occurs after writing 10 of 20 registers pertaining to the overlay plane, none of them will post until the next VSync because they cannot all post on the current Vsync).
     -   Each plane can be updated independently from the other planes. For example, if the plane 0 registers have been updated prior to the VSync and later the plane 1 registers are updated when the VSync occurs, the plane 1 updates might wait until the next VSync, but the plane 0 updates should occur on time.
@@ -37,7 +38,7 @@ Display drivers and hardware are not required to support multiplane overlays. Ho
     1.  The source allocation is clipped according to the specified source rectangle. The source rectangle is guaranteed to be bounded within the size of the source allocation.
     2.  Apply a horizontal image flip, then a vertical image flip if requested.
     3.  Apply scaling according to the destination rectangle, apply clipping according to the clip rectangle, and apply the appropriate filtering when scaling.
-    4.  Blend with allocations at other layers. Blending should be performed from top to bottom (or until an opaque layer is hit) in *z*-order. If alpha blending is requested, hardware must honor the per-pixel-alpha, and color value is pre-multiplied by alpha. The following pseudo code performs a â€œsource over destinationâ€? operation repeatedly from top to bottom, (((Layer\[0\] over Layer\[1\]) over Layer\[2\]) over â€¦ Layer\[n\]). Outside of the destination rectangle, each layer must be treated as transparent (0,0,0,0).
+    4.  Blend with allocations at other layers. Blending should be performed from top to bottom (or until an opaque layer is hit) in *z*-order. If alpha blending is requested, hardware must honor the per-pixel-alpha, and color value is pre-multiplied by alpha. The following pseudo code performs a source over destination operation repeatedly from top to bottom, (((Layer\[0\] over Layer\[1\]) over Layer\[2\]) over ¦ Layer\[n\]). Outside of the destination rectangle, each layer must be treated as transparent (0,0,0,0).
 
         ``` syntax
         Color = Color[0]; // Layer 0 is topmost.
@@ -59,8 +60,8 @@ Display drivers and hardware are not required to support multiplane overlays. Ho
         {
             for (i = LayersToBlend - 2; Alpha < 1 && i >= 0; i--)
             {
-                Color = Color[i] + ((1 â€“ Color[i].Alpha) * Color;
-                Alpha = Color[i].Alpha + (1 â€“ Color[i].Alpha) * Alpha;
+                Color = Color[i] + ((1 - Color[i].Alpha) * Color;
+                Alpha = Color[i].Alpha + (1 - Color[i].Alpha) * Alpha;
             }
         }
         Output Color;

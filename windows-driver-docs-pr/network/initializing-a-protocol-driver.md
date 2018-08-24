@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing a Protocol Driver
 
 
-## <a href="" id="ddk-initializing-a-protocol-driver-ng"></a>
+
 
 The system calls a protocol driver's [DriverEntry](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine after it loads the driver. Protocol drivers load as system services. They can load at any time before, during, or after the miniport drivers load.
 

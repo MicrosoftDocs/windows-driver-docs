@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Releasing Device and Controller Objects
 
 
-## <a href="" id="ddk-releasing-device-and-controller-objects-kg"></a>
+
 
 
 Before a driver deletes a device or controller object, it must release its references to external resources, such as pointers to other drivers' objects and/or to interrupt objects, that it stored in the corresponding device or controller extension. It can then call [**IoDeleteDevice**](https://msdn.microsoft.com/library/windows/hardware/ff549083) for each device object that the driver created. A non-WDM driver that previously called [**IoCreateController**](https://msdn.microsoft.com/library/windows/hardware/ff548395) must also call [**IoDeleteController**](https://msdn.microsoft.com/library/windows/hardware/ff549078).

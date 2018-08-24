@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Pscript-Supported Escapes
 
 
-## <a href="" id="ddk-pscript-supported-escapes-gg"></a>
+
 
 
 The Pscript5 printer driver supports the following escapes.

@@ -8,12 +8,13 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.assetid: 8af0609f-168b-4455-aae8-1a3c9e40ed47
+ms.localizationpriority: medium
 ---
 
 # Power Management Minor IRPs
 
 
-## <a href="" id="ddk-power-management-minor-irps-dr"></a>
+
 
 
 All power IRPs have the major code [**IRP\_MJ\_POWER**](irp-mj-power.md) and one of the following minor codes, indicating a specific power management request:

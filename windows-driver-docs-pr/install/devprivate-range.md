@@ -9,6 +9,7 @@ api_name:
 - DEVPRIVATE_RANGE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # DEVPRIVATE_RANGE

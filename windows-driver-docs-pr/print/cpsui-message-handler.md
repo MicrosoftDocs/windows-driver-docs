@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # CPSUI Message Handler
 
 
-## <a href="" id="ddk-cpsui-message-handler-gg"></a>
+
 
 
 A CPSUI message handler is a callback function that is defined using the [**\_CPSUICALLBACK**](https://msdn.microsoft.com/library/windows/hardware/ff564313) function type. This type of [page event callback](page-event-callbacks.md) is recommended if you are using [CPSUI-supplied pages and templates](cpsui-supplied-pages-and-templates.md).

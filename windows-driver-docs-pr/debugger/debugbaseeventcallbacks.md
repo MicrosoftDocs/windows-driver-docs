@@ -14,6 +14,7 @@ api_name:
 - debugbaseeventcallbacks
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # DebugBaseEventCallbacks class 

@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Stream Class Debugging
 
 
-## <a href="" id="ddk-stream-class-debugging-ksg"></a>
+
 
 
 Use the checked (debug) version of *stream.sys* to print out informative messages about the status of the minidriver and ASSERT when errors in the minidriver are encountered.

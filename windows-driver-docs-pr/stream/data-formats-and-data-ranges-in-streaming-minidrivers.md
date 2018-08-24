@@ -16,12 +16,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Data Formats and Data Ranges in Streaming Minidrivers
 
 
-## <a href="" id="ddk-data-formats-and-data-ranges-in-streaming-minidrivers-ksg"></a>
+
 
 
 Each stream details the data ranges it supports in the **StreamFormatsArray** member of its [**HW\_STREAM\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff559692) structure.

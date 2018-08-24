@@ -3,10 +3,11 @@ title: Setting Up Local Kernel Debugging of a Single Computer Manually
 description: Setting Up Local Kernel Debugging of a Single Computer Manually
 ms.assetid: FC717B1C-A68A-4002-A528-BFC3521C5E8A
 ms.author: domars
-ms.date: 11/28/2017
+ms.date: 07/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting Up Local Kernel Debugging of a Single Computer Manually
@@ -17,6 +18,10 @@ Debugging Tools for Windows supports *local kernel debugging*. This is kernel-mo
 The *local* bcdedit option is available in Windows 8.0 and Windows Server 2012 and later.
 
 ## <span id="starting_local_kernel_debugging"></span><span id="STARTING_LOCAL_KERNEL_DEBUGGING"></span>Setting Up Local Kernel-Mode Debugging
+
+> [!IMPORTANT]
+> Before using bcdedit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC. 
+> You can re-enable Secure Boot once you’re done debugging and you’ve disabled kernel debugging on the local computer.  
 
 
 1.  Open a Command Prompt window as Administrator. Enter **bcdedit /debug on**

@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting Context to Display Properties
 
 
-## <a href="" id="ddk-setting-context-to-display-properties-ng"></a>
+
 
 
 A notify object can set the context in which to display properties for the network component that owns the object. The notify object sets the display context after the network configuration subsystem calls the object's [**INetCfgComponentPropertyUi::SetContext**](https://msdn.microsoft.com/library/windows/hardware/ff547752) method but before the subsystem calls the object's [**INetCfgComponentPropertyUi::MergePropPages**](https://msdn.microsoft.com/library/windows/hardware/ff547746) method.

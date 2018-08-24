@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Releasing Driver-Allocated Resources
 
 
-## <a href="" id="ddk-releasing-driver-allocated-resources-kg"></a>
+
 
 
 The specifics of how a driver uses the registry, sets up system objects and resources in its device extensions, controller extension, or driver-allocated nonpaged pool varies from driver to driver. However, any [*Unload*](https://msdn.microsoft.com/library/windows/hardware/ff564886) routine must release the resources a driver is using in stages.

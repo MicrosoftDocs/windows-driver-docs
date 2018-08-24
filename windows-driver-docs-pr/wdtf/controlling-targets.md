@@ -22,12 +22,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Controlling Targets
 
 
-WDTF includes a set of interfaces that perform specific actions on targets. WDTF uses the Windows registry to map target-specific implementations of these interfaces to actual targets. There might be one implementation for all targets, or multiple class-specific implementations. Scenarios can use [**Action Interfaces**](https://msdn.microsoft.com/library/windows/hardware/ff538355) to perform common activities without having to know the specifics of each target.
+WDTF includes a set of interfaces that perform specific actions on targets. WDTF uses the Windows registry to map target-specific implementations of these interfaces to actual targets. There might be one implementation for all targets, or multiple class-specific implementations. Scenarios can use [**Action Interfaces**](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdtf/action-interfaces) to perform common activities without having to know the specifics of each target.
 
 Your scenario can attempt to locate an implementation for one of these interfaces by calling the [**IWDTFTarget2::GetInterface**](https://msdn.microsoft.com/library/windows/hardware/hh439398) method. Note that not all target objects support every action interface. The following VBScript code example retrieves an interface that can disable and enable (and more) the device that the target represents.
 

@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Finding and Opening a HID Collection
 
 
-## <a href="" id="ddk-finding-and-opening-a-hid-collection-kg"></a>
+
 
 
 This section describes how user-mode applications and kernel-mode drivers find and open a top-level [HID collection](hid-collections.md).

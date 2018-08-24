@@ -7,10 +7,12 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Relationships
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The Relationships element specifies data that is used to track a device metadata package within the device metadata cache.
 

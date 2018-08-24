@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Multiple Data Streams on the same Hardware
 
 
-## <a href="" id="ddk-multiple-data-streams-on-the-same-hardware-ksg"></a>
+
 
 
 Many decoders have several streams using the same piece of decoder hardware. For these devices, it is not necessary to perform key negotiation separately on each stream. To indicate this to the DVD decoder model, use the [**KS\_DVDCOPY\_SET\_COPY\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567639) property. When a get operation is issued on this property, a decoder may respond with either of the following:

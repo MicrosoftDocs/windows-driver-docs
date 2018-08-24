@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registry Settings for Serial
 
 
-## <a href="" id="ddk-registry-settings-for-serial-kg"></a>
+
 
 
 This section describes the following registry settings that Serial uses to configure a serial device:

@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MuttUtil
@@ -23,7 +24,7 @@ MuttUtil performs various tasks on [MUTT devices](microsoft-usb-test-tool--mutt-
 
 MuttUtil is embedded in the installation section of the included test scripts to ensure that the test device is properly upgraded to latest firmware. The tool is included in the [MUTT Software Package](http://go.microsoft.com/fwlink/p/?linkid=617710).
 
-## <a href="" id="muttutil"></a>How to run MuttUtil
+## How to run MuttUtil
 
 
 **MuttUtil Help**

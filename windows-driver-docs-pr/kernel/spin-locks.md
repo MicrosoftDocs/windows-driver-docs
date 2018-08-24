@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Spin Locks
 
 
-## <a href="" id="ddk-spin-locks-kg"></a>
+
 
 
 This section contains the following topics:

@@ -14,6 +14,7 @@ api_name:
 - rcdrkd.rcdrcrashdump
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !rcdrkd.rcdrcrashdump

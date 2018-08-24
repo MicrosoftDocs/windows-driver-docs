@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # About Item Properties
 
 
-## <a href="" id="ddk-about-item-properties-si"></a>
+
 
 
 Each application item tree contains a collection of item properties. (This property collection is also known as a property stream.) The application item model provides each application with its own copy of the item tree, allowing applications to modify properties independent of each other.

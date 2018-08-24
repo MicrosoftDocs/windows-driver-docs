@@ -8,12 +8,13 @@ ms.date: 07/31/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Remote NDIS Data Message
 
 
-## <a href="" id="ddk-remote-ndis-data-message-nr"></a>
+
 
 
 A Remote NDIS device encapsulates NDIS packets to transfer them across the data channel. Data messages are used to do this because they can contain out-of-band (OOB) data or per-packet information.

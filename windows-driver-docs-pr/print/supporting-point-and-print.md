@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting Point and Print
 
 
-## <a href="" id="ddk-supporting-point-and-print-gg"></a>
+
 
 
 This section provides the following topics that describe Windows 2000 and later Point and Print technology:

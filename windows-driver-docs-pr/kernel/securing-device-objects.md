@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Securing Device Objects
 
 
-## <a href="" id="ddk-securing-device-objects-kg"></a>
+
 
 
 This section documents how to secure a driver's device objects from unauthorized access. It contains the following sections:

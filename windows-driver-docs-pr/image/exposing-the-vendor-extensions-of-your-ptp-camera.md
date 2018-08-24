@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Exposing the Vendor Extensions of Your PTP Camera
 
 
-## <a href="" id="ddk-exposing-the-vendor-extensions-of-your-ptp-camera-si"></a>
+
 
 
 A PTP device can support vendor-extended properties, vendor-extended events, and vendor-extended commands.

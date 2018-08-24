@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Determining the WDM Version
 
 
-## <a href="" id="ddk-determining-the-wdm-version-kg"></a>
+
 
 
 A cross-system WDM driver should use the [**IoIsWdmVersionAvailable**](https://msdn.microsoft.com/library/windows/hardware/ff549382) routine to determine which version of WDM is supported by the system on which it is running. The reference page for **IoIsWdmVersionAvailable** provides a list of WDM version numbers.

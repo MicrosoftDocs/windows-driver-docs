@@ -17,12 +17,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # AV/C Subunit Plug Connection and Format Management
 
 
-## <a href="" id="ddk-av-c-subunit-plug-connection-and-format-management-ksg"></a>
+
 
 
 The AV/C peer subunit driver stack provides functions for IEEE 1394 and AV/C subunit plug connection and format management. Kernel streaming (KS) pin format negotiation and pin connection mechanisms are translated to plug connections through *Avc.sys*. Some key aspects of this architecture include:

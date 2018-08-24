@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Selection Constraints
 
 
-## <a href="" id="ddk-selection-constraints-gg"></a>
+
 
 
 Often, certain options for various printer features cannot be selected simultaneously. For example, if the envelope feeder is selected, then nonenvelope paper sizes, such as letter-sized or A4-sized paper, cannot be selected.

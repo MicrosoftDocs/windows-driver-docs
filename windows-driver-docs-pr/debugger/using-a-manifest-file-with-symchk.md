@@ -7,6 +7,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using a Manifest File with SymChk
@@ -21,7 +22,7 @@ In some cases, you might need to retrieve symbols for files that are on an isola
 
 2.  Move the manifest file to a network that has a symbol store.
 
-3.  Run SymChk with **/im** parameter to retrieve symbols for the files described int the manifest file.
+3.  Run SymChk with the **/im** parameter to retrieve symbols for the files described in the manifest file.
 
 4.  Move the symbol files back to the isolated computer.
 

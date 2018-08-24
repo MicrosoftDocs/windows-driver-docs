@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Performance in Network Drivers
@@ -100,14 +101,13 @@ Buffer alignment on a cache-line boundary improves performance when copying data
 
 [NDIS Scatter/Gather DMA](ndis-scatter-gather-dma.md) provides the hardware with support to transfer data to and from noncontiguous ranges of physical memory. Scatter-Gather DMA uses a [**SCATTER\_GATHER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff563664) structure, which includes an array of **SCATTER\_GATHER\_ELEMENT** structures and the number of elements in the array. This structure is retrieved from the packet descriptor passed to the driver's send function. Each element of the array provides the length and starting physical address of a physically contiguous Scatter-Gather region. The driver uses the length and address information for transferring the data.
 
-Using the Scatter-Gather routines for DMA operations can improve utilization of system resources by not locking these resources down statically, as would occur if map registers were used. For more information, see:
+Using the Scatter-Gather routines for DMA operations can improve utilization of system resources by not locking these resources down statically, as would occur if map registers were used. For more information, see [NDIS Scatter/Gather DMA](ndis-scatter-gather-dma.md).
 
-[History of NDIS SGDMA](history-of-ndis-sgdma.md)
-[Benefits of NDIS SGDMA Support](benefits-of-ndis-sgdma-support.md)
-If the network adapter supports TCP Segmentation Offload (Large Send Offload), then the driver will need to pass in the maximum buffer size it can get from TCP/IP into the *MaximumPhysicalMapping* parameter within [**NdisMRegisterScatterGatherDma**](https://msdn.microsoft.com/library/windows/hardware/ff563659) function. This will guarantee that the driver has enough map registers to build the Scatter-Gather list and eliminate any possible buffer allocations and copying. For more information, see:
+If the network adapter supports TCP Segmentation Offload (Large Send Offload), then the driver will need to pass in the maximum buffer size it can get from TCP/IP into the *MaximumPhysicalMapping* parameter within [**NdisMRegisterScatterGatherDma**](https://msdn.microsoft.com/library/windows/hardware/ff563659) function. This will guarantee that the driver has enough map registers to build the Scatter-Gather list and eliminate any possible buffer allocations and copying. For more information, see these topics:
 
-[Determining Task Offload Capabilities](determining-task-offload-capabilities.md)
-[Offloading the Segmentation of Large TCP Packets](offloading-the-segmentation-of-large-tcp-packets.md)
+- [Determining Task Offload Capabilities](determining-task-offload-capabilities.md)
+- [Offloading the Segmentation of Large TCP Packets](offloading-the-segmentation-of-large-tcp-packets.md)
+
 ## Supporting Receive Side Throttle
 
 

@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling IRP\_MN\_SET\_POWER for System Power States
 
 
-## <a href="" id="ddk-handling-irp-mn-set-power-for-system-power-states-kg"></a>
+
 
 
 The power manager sends a power IRP that specifies the minor code [**IRP\_MN\_SET\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551744) and a system power state for one of the following reasons:

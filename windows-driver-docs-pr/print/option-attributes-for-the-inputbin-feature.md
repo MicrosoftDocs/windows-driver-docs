@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Option Attributes for the InputBin Feature
 
 
-## <a href="" id="ddk-option-attributes-for-the-inputbin-feature-gg"></a>
+
 
 
 There are no attributes associated with the InputBin feature. For more information about the InputBin feature, see [Standard Features](standard-features.md).

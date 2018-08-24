@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_PNP_CAPABILITIES Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_PNP\_CAPABILITIES
@@ -25,7 +26,7 @@ The OID\_PNP\_CAPABILITIES OID requests a miniport driver to return the wake-up 
   
 ```
 
-## <a href="" id="ddk-oid-pnp-capabilities-nr"></a>
+
 
 
 The members of this structure contain the following information:

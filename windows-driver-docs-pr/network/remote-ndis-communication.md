@@ -8,12 +8,13 @@ ms.date: 07/31/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Remote NDIS Communication
 
 
-## <a href="" id="ddk-remote-ndis-nr"></a>
+
 
 
 This section includes the following topics:

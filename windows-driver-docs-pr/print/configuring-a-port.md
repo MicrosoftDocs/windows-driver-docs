@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Configuring a Port
 
 
-## <a href="" id="ddk-configuring-a-port-gg"></a>
+
 
 
 Configuring a port consists of modifying a port monitor server DLL's stored configuration information for a previously-added port.

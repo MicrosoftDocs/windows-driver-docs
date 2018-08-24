@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Troubleshooting Specific WMI Problems
 
 
-## <a href="" id="ddk-troubleshooting-specific-wmi-problems-kg"></a>
+
 
 
 ### <a href="" id="driver-s-wmi-classes-do-not-appear-in-the--root-wmi-namespace"></a>Driver's WMI Classes Do Not Appear in the \\root\\wmi Namespace

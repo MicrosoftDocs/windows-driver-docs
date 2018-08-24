@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How to Complete an IRP in a Dispatch Routine
 
 
-## <a href="" id="ddk-how-to-complete-an-irp-in-a-dispatch-routine-kg"></a>
+
 
 
 If an input IRP can be completed immediately, a dispatch routine does the following:

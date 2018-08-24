@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing HID clients
@@ -15,7 +16,7 @@ ms.technology: windows-devices
 
 This section describes the following requirements for installing HIDClass devices in Microsoft Windows.
 
--   Vendors must use the [*hardware IDs*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hardware-id) for top-level collections that are designated as *vendor hardware ID formats* in [HIDClass Hardware IDs for Top-Level Collections](hidclass-hardware-ids-for-top-level-collections.md).
+-   Vendors must use the [*hardware IDs*](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/hardware-ids) for top-level collections that are designated as *vendor hardware ID formats* in [HIDClass Hardware IDs for Top-Level Collections](hidclass-hardware-ids-for-top-level-collections.md).
 
 -   Vendor-supplied drivers for parent input devices (installed below the HID class driver in driver stacks for HIDClass devices) must supply the hardware information that the HID class driver uses to generate hardware IDs for top-level collections. (Note that the system-provided drivers for HIDClass devices do this automatically.)
 

@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NTSTATUS Values
 
 
-## <a href="" id="ddk-ntstatus-values-kg"></a>
+
 
 
 This section discusses how to use the NTSTATUS values that are returned by system routines, as well as when and how you can define your own custom NTSTATUS values for use by your driver.

@@ -3,12 +3,13 @@ title: Introduction to DPC Objects
 author: windows-driver-content
 description: Introduction to DPC Objects
 ms.assetid: ae8758f5-0e23-4db2-9eac-aab31d98247b
+ms.localizationpriority: medium
 ---
 
 # Introduction to DPC Objects
 
 
-## <a href="" id="ddk-introduction-to-dpc-objects-kg"></a>
+
 
 
 Because ISRs must execute as quickly as possible, drivers must usually postpone the completion of servicing an interrupt until after the ISR returns. Therefore, the system provides support for *deferred procedure calls* (DPCs), which can be queued from ISRs and which are executed at a later time and at a lower IRQL than the ISR.

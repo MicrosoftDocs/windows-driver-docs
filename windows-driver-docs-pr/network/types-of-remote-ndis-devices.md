@@ -9,12 +9,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Types of Remote NDIS Devices
 
 
-## <a href="" id="ddk-types-of-remote-ndis-devices-ng"></a>
+
 
 
 Remote NDIS supports Ethernet 802.3 connectionless devices for Microsoft Windows Me and Windows XP.

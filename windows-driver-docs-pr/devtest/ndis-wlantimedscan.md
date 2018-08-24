@@ -2,6 +2,11 @@
 title: WlanTimedScan rule (ndis)
 description: The WlanTimedScan rule verifies that a WLAN scan operation is completed within 15 seconds.
 ms.assetid: 6BFA0DAD-00A4-43EB-A226-40E1B0892E91
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["WlanTimedScan rule (ndis)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - WlanTimedScan
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # WlanTimedScan rule (ndis)

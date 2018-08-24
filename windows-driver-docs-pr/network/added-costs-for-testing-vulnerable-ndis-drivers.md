@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Added Costs for Testing Vulnerable NDIS Drivers
 
 
-## <a href="" id="ddk-added-costs-for-testing-vulnerable-ndis-drivers-ng"></a>
+
 
 
 We recommend that you remove any code that parses the packet payload, particularly in handling offload verification, from your driver's packet handling dispatch routines. To have confidence in such code, you would have to extensively test the drivers to make sure that all potential error conditions are handled safely and correctly. This kind of testing means increased testing costs.

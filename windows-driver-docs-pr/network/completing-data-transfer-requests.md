@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Completing Data Transfer Requests
 
 
-## <a href="" id="ddk-completing-data-transfer-requests-ng"></a>
+
 
 
 The Windows Sockets switch transfers data on a SAN socket asynchronously. Whenever the switch calls the SAN service provider's [**WSPSend**](https://msdn.microsoft.com/library/windows/hardware/ff566316), [**WSPRecv**](https://msdn.microsoft.com/library/windows/hardware/ff566309), [**WSPRdmaWrite**](https://msdn.microsoft.com/library/windows/hardware/ff566306), or [**WSPRdmaRead**](https://msdn.microsoft.com/library/windows/hardware/ff566304) data-transfer function, it specifies a pointer to an overlapped structure (WSAOVERLAPPED) and **NULL** for a completion routine. Even if the switch calls the SAN service provider's [**WSPEventSelect**](https://msdn.microsoft.com/library/windows/hardware/ff566287) function to indicate that the socket is in nonblocking mode, the SAN service provider is not required to implement nonblocking semantics for these data-transfer functions.

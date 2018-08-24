@@ -2,6 +2,7 @@
 title: MSiSCSI\_HBAInformation WMI Class
 description: MSiSCSI\_HBAInformation WMI Class
 ms.assetid: 24c44f97-5ff3-46fa-a5bf-aa76f7f0d3f2
+ms.localizationpriority: medium
 ---
 
 # MSiSCSI\_HBAInformation WMI Class

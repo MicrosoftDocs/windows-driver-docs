@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Reading WIA Item Properties by a Driver
 
 
-## <a href="" id="ddk-reading-wia-item-properties-by-a-driver-si"></a>
+
 
 
 A WIA minidriver should always use the properties in its own driver item tree as a basis for the current settings. Because the application is reading from and writing to the minidriver's item tree, it will never be out of date. A WIA minidriver should use the following WIA service functions to read from the properties in its driver item tree.

@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Pseudo-Vector Graphics Support
 
 
-## <a href="" id="ddk-pseudo-vector-graphics-support-gg"></a>
+
 
 
 Devices that do not support true vector graphics can take advantage of the support that Unidrv provides for pseudovector graphics. When you use this feature, Unidrv downloads solid black rectangles and horizontal and vertical lines directly to a nonvector graphics device, reducing the overhead of rendering these figures on a raster surface. This also reduces the size of the output data, which can improve printer throughput for devices that do not handle raster data efficiently.

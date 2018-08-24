@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Page Creation Callbacks
 
 
-## <a href="" id="ddk-page-creation-callbacks-gg"></a>
+
 
 
 When an application makes an initial call into CPSUI's entry point function ([**CommonPropertySheetUI**](https://msdn.microsoft.com/library/windows/hardware/ff546148)), it must include the address of a [**PFNPROPSHEETUI**](https://msdn.microsoft.com/library/windows/hardware/ff559812)-typed callback function. This callback function is responsible for describing property sheet pages and sending these descriptions to CPSUI for creation.

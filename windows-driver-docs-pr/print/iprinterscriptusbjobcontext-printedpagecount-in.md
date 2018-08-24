@@ -13,6 +13,7 @@ api_name:
 - IPrinterScriptUsbJobContext.PrintedPageCount
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # <span id="print.iprinterscriptusbjobcontext_printedpagecount-in"></span>IPrinterScriptUsbJobContext::PrintedPageCount method

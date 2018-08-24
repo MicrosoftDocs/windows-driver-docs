@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA-TWAIN Driver Design Considerations
 
 
-## <a href="" id="ddk-wia-twain-driver-design-considerations-si"></a>
+
 
 
 The following sections discuss the issues involved in developing a minidriver that supports both WIA and TWAIN:

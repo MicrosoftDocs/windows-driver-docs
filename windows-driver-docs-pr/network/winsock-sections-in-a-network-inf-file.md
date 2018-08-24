@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Winsock Sections in a Network INF File
 
 
-## <a href="" id="ddk-winsock-sections-ng"></a>
+
 
 An INF file for a **NetTrans** component that provides a Winsock interface must specify this Winsock dependency. Such an INF file must contain a *Winsock-install* section. To create a Winsockinstall section, add the .Winsock extension to the *DDInstall* section name for the protocol. For example, if the *DDInstall* section for a protocol is named **Ipx**, the *Winsock-install* section for that protocol must be named Ipx.Winsock.
 

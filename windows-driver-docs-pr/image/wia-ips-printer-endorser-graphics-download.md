@@ -16,6 +16,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS\_DOWNLOAD
@@ -23,7 +24,7 @@ ms.technology: windows-devices
 
 The **WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS\_DOWNLOAD** property is used to report whether the Imprinter/Endorser item supports download image (graphic) data transfers. This property is initialized and maintained by the WIA minidriver.
 
-## <span id="ddk_wia_ipa_depth_si"></span><span id="DDK_WIA_IPA_DEPTH_SI"></span>
+
 
 
 Property Type: VT\_I4 (Boolean)

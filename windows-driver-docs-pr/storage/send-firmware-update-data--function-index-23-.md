@@ -2,6 +2,7 @@
 title: Send Firmware Update Data (Function Index 23)
 description: This function sends firmware data to the device.
 ms.assetid: 3F28C89B-040A-407B-B780-96D6767DC5C7
+ms.localizationpriority: medium
 ---
 
 # Send Firmware Update Data (Function Index 23)

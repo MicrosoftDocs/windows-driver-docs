@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Raster Data Emission Attributes
 
 
-## <a href="" id="ddk-raster-data-emission-attributes-gg"></a>
+
 
 
 The following table lists attributes describing the printer's support for raster data emission.

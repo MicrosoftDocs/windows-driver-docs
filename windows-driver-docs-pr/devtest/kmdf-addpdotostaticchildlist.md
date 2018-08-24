@@ -2,6 +2,11 @@
 title: AddPdotoStaticChildlist rule (kmdf)
 description: The AddPdotoStaticChildlist rule specifies that for a PDO device, the framework function WdfFdoAddStaticChild must be called after the driver calls WdfPdoInitAllocate and WdfDeviceCreate successfully.
 ms.assetid: 31ECB3D2-1EAC-484A-8C3A-DF94AC473334
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["AddPdotoStaticChildlist rule (kmdf)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - AddPdotoStaticChildlist
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # AddPdotoStaticChildlist rule (kmdf)

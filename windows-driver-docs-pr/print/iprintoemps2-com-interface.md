@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IPrintOemPS2 COM Interface
 
 
-## <a href="" id="ddk-iprintoemps2-com-interface-gg"></a>
+
 
 
 The `IPrintOemPS2` COM interface contains all the methods of, and extends the capabilities of the [IPrintOemPS COM Interface](iprintoemps-com-interface.md). This interface is limited to Pscript5 rendering plug-ins that run on Windows XP and later versions of Windows operating system.

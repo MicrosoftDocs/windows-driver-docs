@@ -12,6 +12,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling SRB\_FUNCTION\_IO\_CONTROL
@@ -24,7 +25,11 @@ Whether a miniport driver handles SRB\_FUNCTION\_IO\_CONTROL requests depends on
 
 All system-defined, required device I/O control requests sent to NT-based operating system storage class drivers are mapped to SRBs with the **Function** member set to SRB\_FUNCTION\_EXECUTE\_SCSI, not to SRB\_FUNCTION\_IO\_CONTROL.
 
- 
+##  -see -also
+
+[Handling SRB_FUNCTION_EXECUTE_SCSI](https://docs.microsoft.com/en-us/windows-hardware/drivers/storage/handling-srb-function-execute-scsi)
+
+[SRB_IO_CONTROL](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddscsi/ns-ntddscsi-_srb_io_control)
 
  
 

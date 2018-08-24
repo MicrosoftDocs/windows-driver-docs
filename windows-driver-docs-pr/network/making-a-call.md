@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Making a Call
 
 
-## <a href="" id="ddk-making-a-call-ng"></a>
+
 
 
 The following figure shows a client making an outgoing call through a call manager.

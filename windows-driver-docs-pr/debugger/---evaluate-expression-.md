@@ -14,6 +14,7 @@ api_name:
 - (Evaluate Expression)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ? (Evaluate Expression)

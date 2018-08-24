@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing a Segmentation Filter
 
 
-## <a href="" id="ddk-installing-a-segmentation-filter-si"></a>
+
 
 
 The segmentation filter should be installed together with the WIA driver. In order to do this, a small number of additions must be made to the driver's INF file. The following INF example shows how an existing driver INF file can be modified to include a segmentation filter.

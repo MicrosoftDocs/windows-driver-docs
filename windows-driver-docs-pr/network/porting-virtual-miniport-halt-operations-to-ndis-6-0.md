@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Virtual Miniport Halt Operations to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-virtual-miniport-halt-operations-to-ndis-6-0-nd"></a>
+
 
 
 Like NDIS 5.*x* intermediate drivers, NDIS 6.0 intermediate drivers usually halt virtual miniports during the unbind operation. In NDIS 6.0, the [*ProtocolUnbindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570278) function replaces the NDIS 5.*x*[**ProtocolUnbindAdapter**](https://msdn.microsoft.com/library/windows/hardware/ff563260) function.

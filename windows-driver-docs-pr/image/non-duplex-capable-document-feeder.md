@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Non-Duplex-Capable Document Feeder
 
 
-## <a href="" id="ddk-non-duplex-capable-document-feeder-si"></a>
+
 
 
 The following figure illustrates the WIA item tree for a flatbed scanner that supports simple (non-duplex) document feeder scanning.

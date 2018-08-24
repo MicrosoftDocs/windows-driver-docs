@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Winqual Submission Tool (winqual.exe)
@@ -16,12 +17,12 @@ The Winqual Submission Tool (Winqual.exe) helps you to create a submission packa
 
 In addition, the use of Winqual.exe is applicable only to WLK.
 
-## <span id="How_to_Install_Winqual_Submission_Tool"></span><span id="how_to_install_winqual_submission_tool"></span><span id="HOW_TO_INSTALL_WINQUAL_SUBMISSION_TOOL"></span>How to Install Winqual Submission Tool
+## Installing the Winqual submission tool
 
 
 1.  Sign in to the dashboard with your Microsoft account.
 
-2.  Click **Hardware logo**, click **Downloads**, and then click **Winqual Submission Tool (WST)**.
+2.  On the left navigation menu, click on **Drivers**. in the **Get the essentials** section, click **Winqual Submission Tool (WST)**.
 
 3.  In the **File Download - Security Warning** dialog box, click **Run**.
 
@@ -40,7 +41,7 @@ In addition, the use of Winqual.exe is applicable only to WLK.
 ## <span id="How_to_use_WST"></span><span id="how_to_use_wst"></span><span id="HOW_TO_USE_WST"></span>How to use WST
 
 
-To use the WST, follow these steps:
+To use the Windows Submission Tool (WST):
 
 1.  When you open the tool, a **Welcome** screen appears. You can choose to not show this dialog box next time you open the tool by selecting **Don't show this message again**. To re-enable this dialog box, click **Tools**, click **Options**, and then select the **Show Welcome screen on startup** check box.
 

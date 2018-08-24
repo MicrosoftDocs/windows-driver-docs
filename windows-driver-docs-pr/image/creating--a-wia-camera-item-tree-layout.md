@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating a WIA Camera Item Tree Layout
 
 
-## <a href="" id="ddk-creating-a-wia-camera-item-tree-layout-si"></a>
+
 
 
 A WIA camera item tree for Microsoft Windows Me and Windows XP consists of a root item, and child items that represent images and folders stored on the camera device. See [Initializing the WIA Minidriver](initializing-the-wia-minidriver.md) for an example on how to create an item tree. The following illustration shows the item tree for Windows Me and Windows XP.

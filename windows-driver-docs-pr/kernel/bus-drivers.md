@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Bus Drivers
 
 
-## <a href="" id="ddk-bus-drivers-kg"></a>
+
 
 
 A *bus driver* services a bus controller, adapter, or bridge (see the [Possible Driver Layers](types-of-wdm-drivers.md#possible-driver-layers) figure). Microsoft provides bus drivers for most common buses, such as PCI, PnpISA, SCSI, and USB. Other bus drivers can be provided by IHVs or OEMs. Bus drivers are required drivers; there is one bus driver for each type of bus on a machine. A bus driver can service more than one bus if there is more than one bus of the same type on the machine.

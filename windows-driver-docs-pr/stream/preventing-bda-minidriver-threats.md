@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Preventing BDA Minidriver Threats
 
 
-## <a href="" id="ddk-preventing-bda-minidriver-threats-ksg"></a>
+
 
 
 The threats that can be [introduced into a BDA minidriver](introducing-threats-to-a-bda-minidriver.md) can be prevented in the following ways:

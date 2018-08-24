@@ -4,12 +4,13 @@ author: windows-driver-content
 description: Creating Your Property Sheet
 ms.assetid: 04fa34fd-86d6-4017-a6da-9882d65674e3
 keywords: ["property sheets WDK DirectInput , creating", "game controllers WDK DirectInput , property sheet creation", "control panels WDK DirectInput , property sheet creation", "sample property sheet applications WDK DirectInput", "custom property sheets WDK DirectInput", "templates WDK DirectInput"]
+ms.localizationpriority: medium
 ---
 
 # Creating Your Property Sheet
 
 
-## <a href="" id="ddk-creating-your-property-sheet-di"></a>
+
 
 
 This example demonstrates many aspects of DirectInput and provides a good starting point for your own custom property sheet.

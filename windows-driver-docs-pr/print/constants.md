@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Constants
 
 
-## <a href="" id="ddk-constants-gg"></a>
+
 
 
 Constants are named values that are predefined by the GPD language. Constant names typically consist of capital letters. Example GPD constants are PAGE, SERIAL, and TTY, which are values that can be assigned to the \***PrinterType** attribute.

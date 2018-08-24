@@ -10,12 +10,13 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_PNP_ADD_WAKE_UP_PATTERN Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_PNP\_ADD\_WAKE\_UP\_PATTERN
 
 
-## <a href="" id="ddk-oid-pnp-add-wake-up-pattern-nr"></a>
+
 
 
 The OID\_PNP\_ADD\_WAKE\_UP\_PATTERN OID is sent by a protocol driver to a miniport driver to specify a wake-up pattern. The wake-up pattern, along with its mask, is described by an [**NDIS\_PM\_PACKET\_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566756) structure.

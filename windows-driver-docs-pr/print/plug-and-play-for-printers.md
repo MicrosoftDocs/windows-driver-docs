@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Plug and Play for Printers
 
 
-## <a href="" id="ddk-plug-and-play-for-printers-gg"></a>
+
 
 
 This section describes the design of Plug and Play for printers in Microsoft Windows 2000 and later. Printing Plug and Play design is similar to the Windows 95 design. Windows 2000 and later operating system versions support Plug and Play for printers attached to LPT ports, USB ports, infrared ports, and parallel ports.

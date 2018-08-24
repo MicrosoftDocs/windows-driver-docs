@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DispatchPower Routines
 
 
-## <a href="" id="ddk-dispatchpower-routines-kg"></a>
+
 
 
 A driver's [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine supports [power management](implementing-power-management.md) by handling IRPs for the [**IRP\_MJ\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff550784) I/O function code. Associated with the **IRP\_MJ\_POWER** function code are several minor I/O function codes for Power Management. The power manager uses these minor function codes to direct drivers to change power states, to wait for and respond to system wake-up events, and to query drivers about their devices.

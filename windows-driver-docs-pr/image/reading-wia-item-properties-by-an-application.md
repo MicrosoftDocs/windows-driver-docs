@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Reading WIA Item Properties by an Application
 
 
-## <a href="" id="ddk-reading-wia-item-properties-by-an-application-si"></a>
+
 
 
 When an application makes a request to read WIA item properties, the WIA service calls the [**IWiaMiniDrv::drvReadItemProperties**](https://msdn.microsoft.com/library/windows/hardware/ff545005) method.

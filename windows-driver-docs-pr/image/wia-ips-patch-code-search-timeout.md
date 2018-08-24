@@ -16,6 +16,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_PATCH\_CODE\_SEARCH\_TIMEOUT
@@ -23,7 +24,7 @@ ms.technology: windows-devices
 
 The **WIA\_IPS\_PATCH\_CODE\_SEARCH\_TIMEOUT** property describes the maximum time to search for patch codes on a document page.
 
-## <span id="ddk_wia_ipa_depth_si"></span><span id="DDK_WIA_IPA_DEPTH_SI"></span>
+
 
 
 Property Type: VT\_I4

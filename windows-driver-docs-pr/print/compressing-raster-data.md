@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Compressing Raster Data
 
 
-## <a href="" id="ddk-compressing-raster-data-gg"></a>
+
 
 
 Unidrv supports raster data compression using the following three formats:

@@ -2,6 +2,11 @@
 title: Cleanup4CtlDeviceRegistered rule (kmdf)
 description: The Cleanup4CtlDeviceRegistered rule specifies that if a Plug and Play (PnP) driver calls WdfDeviceCreate for the control device object, the driver must register one of the required event callback functions.
 ms.assetid: f439ec36-f7af-46e5-8ddd-11e444bf36da
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["Cleanup4CtlDeviceRegistered rule (kmdf)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - Cleanup4CtlDeviceRegistered
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Cleanup4CtlDeviceRegistered rule (kmdf)

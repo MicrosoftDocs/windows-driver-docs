@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying Paper Sizes
 
 
-## <a href="" id="ddk-specifying-paper-sizes-gg"></a>
+
 
 
 Unidrv supports three categories of paper sizes--standard paper sizes, vendor-defined paper sizes, and user-defined paper sizes.

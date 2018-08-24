@@ -7,6 +7,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SECURITY\_INFORMATION
@@ -18,7 +19,7 @@ SECURITY\_INFORMATION
 typedef ULONG SECURITY_INFORMATION, *PSECURITY_INFORMATION;
 ```
 
-## <a href="" id="ddk-security-information-if"></a>
+
 
 
 A value of type SECURITY\_INFORMATION is used to identify the object-related security information being set or queried. This security information includes:

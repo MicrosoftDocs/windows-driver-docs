@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Requiring the Installation of Another Network Component
 
 
-## <a href="" id="ddk-requiring-the-installation-of-another-network-component-ng"></a>
+
 
 
 A network component may require the installation of one or more other network components in order to function properly. A network INF file specifies each such dependency with a **RequiredAll** value. The **RequiredAll** value is added (through an *add-registry-section*) to the **Ndi** key of the network component that requires the installation of another network component.

@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Notifications
@@ -18,7 +19,12 @@ Your mobile broadband app should communicate time-critical events to the user th
 
 ![toast notification](images/mb-fig3-toast.png)
 
-Your app can receive background events to process SMS or USSD notifications. For info about background notifications that are associated with mobile broadband apps, see [Enabling mobile operator notifications and system events](enabling-mobile-operator-notifications-and-system-events.md).
+Your app can receive background events to process SMS or USSD notifications. For info about background notifications that are associated with mobile broadband apps, see these API pages under the [Windows.ApplicationModel.Background](https://docs.microsoft.com/uwp/api/windows.applicationmodel.background) namespace:
+
+- [MobileBroadbandDeviceServiceNotificationTrigger](https://docs.microsoft.com/uwp/api/windows.applicationmodel.background.mobilebroadbanddeviceservicenotificationtrigger)
+- [MobileBroadbandPcoDataChangeTrigger](https://docs.microsoft.com/uwp/api/windows.applicationmodel.background.mobilebroadbandpcodatachangetrigger)
+- [NetworkOperatorNotificationTrigger](https://docs.microsoft.com/uwp/api/windows.applicationmodel.background.networkoperatornotificationtrigger)
+- [SmsMessageReceivedTrigger](https://docs.microsoft.com/uwp/api/windows.applicationmodel.background.smsmessagereceivedtrigger)
 
 ## <span id="related_topics"></span>Related topics
 

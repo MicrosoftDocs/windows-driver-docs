@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Interrupts from SPB-Connected Peripheral Devices
@@ -15,7 +16,7 @@ ms.technology: windows-devices
 
 Unlike a bus such as PCI, a [simple peripheral bus](https://msdn.microsoft.com/library/windows/hardware/hh450903) (SPB), such as I²C or SPI, provides no standardized, bus-specific means to convey interrupt requests from peripheral devices to the processor. Instead, an SPB-connected peripheral device signals an interrupt through a separate hardware path that lies outside of both the SPB and the SPB controller. The details of this interrupt path tend to vary from one hardware platform to the next, but Windows hides these details from the driver for an SPB-connected peripheral device to enable the driver to work across a variety of hardware platforms.
 
-## <a href="" id="interrupts-spb-peripheral-devices"></a>
+
 
 
 Typically, the interrupt request line from an SPB-connected peripheral device is connected to a pin on a general-purpose I/O (GPIO) controller, and the GPIO controller relays interrupts from the device to the processor. For more information, see [GPIO Interrupts](https://msdn.microsoft.com/library/windows/hardware/hh406467).

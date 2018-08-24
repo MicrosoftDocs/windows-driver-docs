@@ -16,6 +16,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_MAXIMUM\_PATCH\_CODE\_SEARCH\_RETRIES
@@ -23,7 +24,7 @@ ms.technology: windows-devices
 
 The **WIA\_IPS\_MAXIMUM\_PATCH\_CODE\_SEARCH\_RETRIES** property describes the maximum number of retries the reader attempts if no patch code can be found when patch code detection is enabled.
 
-## <span id="ddk_wia_ipa_depth_si"></span><span id="DDK_WIA_IPA_DEPTH_SI"></span>
+
 
 
 Property Type: VT\_I4

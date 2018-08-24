@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filter Driver Services
 
 
-## <a href="" id="ddk-filter-driver-services-ng"></a>
+
 
 
 Filter drivers can provide the following services:

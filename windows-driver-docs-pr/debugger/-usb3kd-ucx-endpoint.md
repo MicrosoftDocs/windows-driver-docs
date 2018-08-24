@@ -14,6 +14,7 @@ api_name:
 - usb3kd.ucx_endpoint
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !usb3kd.ucx\_endpoint

@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Reporting Device Power Capabilities
 
 
-## <a href="" id="ddk-reporting-device-power-capabilities-kg"></a>
+
 
 
 During enumeration, drivers report device-specific information in response to a PnP [**IRP\_MN\_QUERY\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff551664) request. Along with other such information, drivers report a device's power management capabilities in the [**DEVICE\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff543095) structure. Typically, the bus driver fills in this structure.

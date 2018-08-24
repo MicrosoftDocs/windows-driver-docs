@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Verifying the RSS Hash Calculation
 
 
-## <a href="" id="ddk-verifying-the-rss-hash-calculation-ng"></a>
+
 
 
 You should verify your implementation of the RSS hash calculation. To verify your calculations for the **NdisHashFunctionToeplitz** hash function, use the following secret key data:

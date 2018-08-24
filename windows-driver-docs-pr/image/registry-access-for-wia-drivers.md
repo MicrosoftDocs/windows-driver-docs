@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registry Access for WIA Drivers
 
 
-## <a href="" id="ddk-registry-access-for-wia-drivers-si"></a>
+
 
 
 Driver developers should know the permissions for the registry keys they need to access. Much of the registry is available for the driver to read. However, WIA drivers should write only to the registry key handed to them in the [**IStiUSD::Initialize**](https://msdn.microsoft.com/library/windows/hardware/ff543824) method.

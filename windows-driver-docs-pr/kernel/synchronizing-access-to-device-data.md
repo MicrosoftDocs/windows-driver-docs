@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Synchronizing Access to Device Data
 
 
-## <a href="" id="ddk-synchronizing-access-to-device-data-kg"></a>
+
 
 
 Typically, a driver's [*InterruptService*](https://msdn.microsoft.com/library/windows/hardware/ff547958) or [*InterruptMessageService*](https://msdn.microsoft.com/library/windows/hardware/ff547940) routines (ISRs) must share access to driver data and hardware resources with other driver routines. Since ISRs execute in an interrupt context at an elevated IRQL, and since a system might have multiple processors, it is important to synchronize access to shared data and resources so that each routine can be guaranteed to temporarily have exclusive access to this shared information, without interruption.

@@ -14,6 +14,7 @@ api_name:
 - $ (Alias Interpreter)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ${ } (Alias Interpreter)

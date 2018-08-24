@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing a function controller client driver
@@ -89,7 +90,7 @@ UFX creates the default endpoint (endpoint 0) by calling the client driver's [*E
 -   [**IOCTL\_INTERNAL\_USBFN\_CONTROL\_STATUS\_HANDSHAKE\_IN**](https://msdn.microsoft.com/library/windows/hardware/mt188023)
 -   [**IOCTL\_INTERNAL\_USBFN\_CONTROL\_STATUS\_HANDSHAKE\_OUT**](https://msdn.microsoft.com/library/windows/hardware/mt187893)
 
-## <a href="" id="device-enumeration-"></a>Device enumeration
+## Device enumeration
 
 
 The client driver should not allow connections to a host before UFX calls the driver's [*EVT\_UFX\_DEVICE\_HOST\_CONNECT*](https://msdn.microsoft.com/library/windows/hardware/mt187852). Device enumeration begins when the client driver calls [**UfxDeviceNotifyReset**](https://msdn.microsoft.com/library/windows/hardware/mt187959). In the **Default** state, UFX handles standard setup packets.

@@ -14,6 +14,7 @@ api_name:
 - .push (Save Debugger State)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .push (Save Debugger State)

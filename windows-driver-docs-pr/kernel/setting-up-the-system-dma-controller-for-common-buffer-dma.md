@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting Up the System DMA Controller for Common-Buffer DMA
 
 
-## <a href="" id="ddk-setting-up-the-system-dma-controller-for-common-buffer-dma-kg"></a>
+
 
 
 When **AllocateAdapterChannel** transfers control to a driver's [*AdapterControl*](https://msdn.microsoft.com/library/windows/hardware/ff540504) routine, the driver "owns" the system DMA controller and a set of map registers. Then, the driver must call [**MapTransfer**](https://msdn.microsoft.com/library/windows/hardware/ff554402) to set up the system DMA controller to use the driver-allocated common buffer before the driver sets up its device for the transfer operation.

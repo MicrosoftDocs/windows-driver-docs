@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Critical Sections
 
 
-## <a href="" id="ddk-using-critical-sections-kg"></a>
+
 
 
 Any driver that contains an [*InterruptService*](https://msdn.microsoft.com/library/windows/hardware/ff547958) routine will most likely require one or more critical sections to synchronize access to hardware resources or driver data among the ISR and other routines.

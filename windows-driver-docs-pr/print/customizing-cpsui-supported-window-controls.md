@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Customizing CPSUI-Supported Window Controls
 
 
-## <a href="" id="ddk-customizing-cpsui-supported-window-controls-gg"></a>
+
 
 
 If you are using [CPSUI-supported window controls](cpsui-supported-window-controls.md) in conjunction with [CPSUI-supplied pages and templates](cpsui-supplied-pages-and-templates.md), CPSUI provides window control resources that describe the controls in a manner that allows them to fit together. Therefore, you do not need to provide resources for the controls.

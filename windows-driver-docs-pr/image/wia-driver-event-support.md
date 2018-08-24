@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA Driver Event Support
 
 
-## <a href="" id="ddk-wia-driver-event-support-si"></a>
+
 
 
 There are two types of event mechanisms that WIA minidrivers can support:

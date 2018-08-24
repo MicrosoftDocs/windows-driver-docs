@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Restrictions on Memory Windows
 
 
-## <a href="" id="ddk-restrictions-on-memory-windows-kr"></a>
+
 
 
 This section describes the restrictions imposed by Windows 2000 and later operating systems on memory windows of PCMCIA memory cards.

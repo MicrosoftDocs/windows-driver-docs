@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Learning About Intermediate Drivers
 
 
-## <a href="" id="ddk-intermediate-drivers-ng"></a>
+
 
 
 You can write an intermediate driver that has either a connectionless or a connection-oriented lower edge. The following list describes which sections of the WDK documentation you should read, depending on the type of intermediate driver that you are writing:

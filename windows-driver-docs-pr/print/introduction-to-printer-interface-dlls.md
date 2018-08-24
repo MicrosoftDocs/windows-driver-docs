@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to Printer Interface DLLs
 
 
-## <a href="" id="ddk-introduction-to-printer-interface-dlls-gg"></a>
+
 
 
 Printers typically provide users with a large number of modifiable configuration options that can be changed for each document that is printed. Options such as paper, tray and font selection, along with image resolution, size, color, and so on, must be accessible through user interfaces that can be invoked by applications.

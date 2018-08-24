@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using an IoTimer Routine
 
 
-## <a href="" id="ddk-using-an-iotimer-routine-kg"></a>
+
 
 
 While the timer for the associated device object is enabled, the [*IoTimer*](https://msdn.microsoft.com/library/windows/hardware/ff550381) routine is called approximately once per second. However, because the intervals at which each *IoTimer* routine is called depend on the resolution of the system clock, do not assume that an *IoTimer* routine will be called precisely on a one-second boundary.

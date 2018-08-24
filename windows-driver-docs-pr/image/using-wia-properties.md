@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using WIA Properties
 
 
-## <a href="" id="ddk-using-wia-properties-si"></a>
+
 
 
 This section contains the following topics:

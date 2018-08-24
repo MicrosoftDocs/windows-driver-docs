@@ -4,10 +4,11 @@ description: The Microsoft symbol server makes Windows debugger symbols publicly
 ms.assetid: b0d38104-c386-4d20-8d9c-7701347c1643
 keywords: ["SymSrv, public Microsoft symbols", "symbol servers, public Microsoft symbols", "public symbol store", "Microsoft symbol store"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 04/26/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Microsoft public symbol server
@@ -26,14 +27,21 @@ set _NT_SYMBOL_PATH=srv*DownstreamStore*https://msdl.microsoft.com/download/symb
 To avoid typing this long symbol path, use the [**.symfix (Set Symbol Store Path)**](-symfix--set-symbol-store-path-.md) command. The following command appends the public symbol store to your existing symbol path:
 
 ```
-.symfix+ DownstreamStore 
+.symfix+ C:\MySymbols
 ```
 
-**Note**   To successfully access Microsoft's public symbol store, you will need a fast internet connection. If your internet connection is only 56 Kbps or slower, you should install Windows symbols directly onto your hard drive. For details, see [Installing Windows Symbol Files](installing-windows-symbol-files.md).
+If local symbol cache location is omitted, the sym subdirectory of the debugger installation directory will be used.
 
- 
+Use the [**.sympath (Set Symbol Store Path)**](-symfix--set-symbol-store-path-.md) command to display the full symbol path. This example shows how to use symfix to create a local symbol cache and use the Microsoft http symbol server.
 
-For more information about the public symbol store, see the [Windows Symbols](http://go.microsoft.com/fwlink/p/?linkid=17363) Web site.
+```
+0: kd> .symfix c:\MyCache
+0: kd> .sympath
+Symbol search path is: srv*
+Expanded Symbol search path is: cache*c:\MyCache;SRV*https://msdl.microsoft.com/download/symbols
+```
+
+For more information about working with symbols, see the [Symbol path for Windows debuggers](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/symbol-path).
 
 **Symbol File Compression**
 

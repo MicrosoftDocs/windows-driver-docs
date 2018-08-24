@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filter Specific Allocators
 
 
-## <a href="" id="ddk-filter-specific-allocator-ksg"></a>
+
 
 
 Filters that require allocators for on-board memory or other device dependent storage methods can provide a specific allocator by supporting allocator [properties](https://msdn.microsoft.com/library/windows/hardware/ff566592) and [methods](https://msdn.microsoft.com/library/windows/hardware/ff563406). For more information, see [**KSPROPERTY\_STREAM\_ALLOCATOR**](https://msdn.microsoft.com/library/windows/hardware/ff565684).

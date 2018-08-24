@@ -10,6 +10,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Security Issues for Network Drivers
@@ -155,4 +156,6 @@ Method OIDs can be issued by a usermode application running in the Administrator
 - Well-designed NDIS miniport drivers should not rely on being called in a particular process context, nor interact very closely with usermode (with IOCTLs & OIDs being the exception). It would be a red flag to see a miniport that opened usermode handles, performed usermode waits, or allocated memory against usermode quota. That code should be investigated.
 
 - Most NDIS miniport drivers should not be involved in parsing packet payloads. In some cases, though, it may be necessary. If so, this code should be audited very carefully, as the driver is parsing data from an untrusted source.
+
+- As is standard when allocating kernel-mode memory, NDIS drivers should use appropriate [NX Pool Opt-In Mechanisms](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/nx-pool-opt-in-mechanisms). In WDK 8 and newer, the `NdisAllocate*` family of functions are properly opted in.
 

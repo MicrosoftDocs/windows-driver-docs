@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating and Starting a Parallel Port
 
 
-## <a href="" id="ddk-creating-and-starting-a-parallel-port-kg"></a>
+
 
 
 The Plug and Play manager uses the Plug and Play support of the system-supplied function driver for parallel ports to create and start a function device object ([*FDO*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-fdo)) that represents a parallel port.

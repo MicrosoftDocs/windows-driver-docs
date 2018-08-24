@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating a mobile package
@@ -36,7 +37,7 @@ Copyright (c) Microsoft Corporation.  All rights reserved.
       <Files>
         <File DestinationDir="$(runtime.drivers)\umdf" Source="$(_RELEASEDIR)\Adxl345Acc.dll" />
       </Files>
-      
+
       <RegKeys>
         <RegKey KeyName="$(hklm.system)\ControlSet001\Enum\Root\umdf2\Adxl345Acc">
           <RegValue Name="ClassGUID"    Type="REG_SZ"        Value="{5175D334-C371-4806-B3BA-71FD53C9258D}"  />
@@ -46,7 +47,7 @@ Copyright (c) Microsoft Corporation.  All rights reserved.
         </RegKey>
       </RegKeys>
     </OSComponent>
-    
+
     <!-- Use Phone-specific INF for security. -->
     <Driver InfSource="$(DRIVERS_FILES_PATH)\Adxl345Acc.inf">
       <Security InfSectionName="Sensor_Inst_SecurityAddReg">
@@ -54,14 +55,14 @@ Copyright (c) Microsoft Corporation.  All rights reserved.
       </Security>
       <Reference Source="$(_RELEASEDIR)\Adxl345Acc.dll" />
     </Driver>
-    
+
   </Components>
-  
+
 </Package>
 ```
 
-**Note**  
-The value of the **Security InfSectionName** element must be exactly the same as the value of the **AddReg** field discussed in this topic: [Review the INX file](review-and-revise-the-inf-file.md).
+>[!NOTE] 
+> The value of the **Security InfSectionName** element must be exactly the same as the value of the **AddReg** field discussed in this topic: [Review the INX file](review-and-revise-the-inf-file.md).
 
  
 
@@ -80,9 +81,9 @@ If you installed the WDK to the default location, then you can find **pkggen.exe
 Refer to [Run the pkggen.exe tool](https://msdn.microsoft.com/windows/hardware/dn756642.aspx#run-pkg), for instructions on how to create a package for your mobile device. And see [Creating mobile packages](https://msdn.microsoft.com/windows/hardware/dn756642.aspx) for a more comprehensive introduction.
 
 ## Related topics
-[Creating mobile packages](https://msdn.microsoft.com/windows/hardware/dn756642.aspx)  
-[Review the INX file](review-and-revise-the-inf-file.md)  
-[Run the pkggen.exe tool](https://msdn.microsoft.com/windows/hardware/dn756642.aspx#run-pkg)  
+[Creating mobile packages](https://msdn.microsoft.com/windows/hardware/dn756642.aspx)
+[Review the INX file](review-and-revise-the-inf-file.md)
+[Run the pkggen.exe tool](https://msdn.microsoft.com/windows/hardware/dn756642.aspx#run-pkg)
 
 
 

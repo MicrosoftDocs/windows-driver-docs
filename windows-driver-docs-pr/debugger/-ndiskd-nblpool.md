@@ -14,6 +14,7 @@ api_name:
 - ndiskd.nblpool
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.nblpool

@@ -10,6 +10,7 @@ ms.date: 11/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filtering conditions available at each filtering layer
@@ -487,16 +488,16 @@ The filtering conditions that are available at each filtering layer are as follo
 FWPM_CONDITION_INTERFACE_MAC_ADDRESS
 </p>
 <p>
-FWPM_CONDITION_LOCAL_MAC_ADDRESS
+FWPM_CONDITION_MAC_LOCAL_ADDRESS
 </p>
 <p>
-FWPM_CONDITION_REMOTE_MAC_ADDRESS
+FWPM_CONDITION_MAC_REMOTE_ADDRESS
 </p>
 <p>
-FWPM_CONDITION_LOCAL_MAC_ADDRESS_TYPE
+FWPM_CONDITION_MAC_LOCAL_ADDRESS_TYPE
 </p>
 <p>
-FWPM_CONDITION_REMOTE_MAC_ADDRESS_TYPE
+FWPM_CONDITION_MAC_REMOTE_ADDRESS_TYPE
 </p>
 <p>
 FWPM_CONDITION_ETHER_TYPE

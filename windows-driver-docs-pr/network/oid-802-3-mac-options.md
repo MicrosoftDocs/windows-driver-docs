@@ -10,12 +10,13 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_802_3_MAC_OPTIONS Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_802\_3\_MAC\_OPTIONS
 
 
-## <a href="" id="ddk-oid-802-3-mac-options-nr"></a>
+
 
 
 A protocol can use this OID to determine features supported by the underlying driver, which could be emulating Ethernet.

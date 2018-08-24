@@ -9,6 +9,7 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Memory Management for Windows Drivers
@@ -16,7 +17,7 @@ ms.technology: windows-devices
 
 Kernel-mode drivers allocate memory for purposes such as storing internal data, buffering data during I/O operations, and sharing memory with other kernel-mode and user-mode components. Driver developers should understand memory management in Windows so that they use allocated memory correctly and efficiently. Windows manages virtual and physical memory, and divides memory into separate user and system address spaces. A driver can specify whether allocated memory supports capabilities such as demand paging, data caching, and instruction execution.
 
-## <a href="" id="ddk-memory-management-kg"></a>
+
 
 
 The *memory manager* is the kernel component that performs the memory management operations in Windows. For more information, see [Windows Kernel-Mode Memory Manager](windows-kernel-mode-memory-manager.md).

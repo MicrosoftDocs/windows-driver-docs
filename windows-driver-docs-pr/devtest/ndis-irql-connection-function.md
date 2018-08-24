@@ -2,6 +2,11 @@
 title: Irql\_Connection\_Function rule (ndis)
 description: The Irql\_Connection\_Function rule specifies that the NDIS connection functions for protocol drivers must be called at correct IRQL levels.
 ms.assetid: 9721cb8a-ac70-4f2b-8bbd-809dc06548dc
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["Irql_Connection_Function rule (ndis)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - Irql_Connection_Function
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Irql\_Connection\_Function rule (ndis)

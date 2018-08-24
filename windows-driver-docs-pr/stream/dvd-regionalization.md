@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DVD Regionalization
 
 
-## <a href="" id="ddk-dvd-regionalization-ksg"></a>
+
 
 
 The DVD decoder minidriver should not be involved in any part of the regionalization process. Other parts of the streaming architecture enforce regionalization. Under most circumstances, the decoder minidriver does not implement the [**KS\_DVDCOPY\_REGION**](https://msdn.microsoft.com/library/windows/hardware/ff567638) property.

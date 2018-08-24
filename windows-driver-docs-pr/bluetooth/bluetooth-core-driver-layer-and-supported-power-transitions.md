@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Bluetooth Core Driver Layer and Supported Power Transitions
@@ -14,65 +15,65 @@ ms.technology: windows-devices
 
 The following table summarizes device and system power states that the Bluetooth core driver supports. A "sleep" state is used throughput this section and its subtopics to describe a very low power state in which the Bluetooth radio’s internal settings and configurations are persistent.
 
-Device Power States
+<table>
+    <tr>
+        <td></td>
+        <td></td>
+        <td colspan="3"><b>Device Power States</b></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>D0 (Active)</td>
+        <td>D2 (sleep) – some power is maintained to the Bluetooth chip for persisting its internal state</td>
+        <td>D3 (Off) - Power is removed (\*)</td>
+    </tr>
+    <tr>
+        <td rowspan="6"><b>System power states</b></td>
+        <td>S0 (Active)</td>
+        <td>Active</td>
+        <td>Sleep if armed for wake</td>
+        <td>Radio RM off</td>
+    </tr>
+    <tr>
+        <td>S1</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>N/A</td>
+    </tr>
+    <tr>
+       <td>S2</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>N/A</td>
+    </tr>
+    <tr>
+        <td>S3 (Sleep)</td>
+        <td>N/A</td>
+        <td>Sleep if armed for wake</td>
+        <td>Can be powered off</td>
+    </tr>
+    <tr>
+        <td>S4 (Hibernate)</td>
+        <td>N/A</td>
+        <td>Sleep if armed for wake</td>
+        <td>Can be powered off</td>
+    </tr>
+    <tr>
+        <td>S5 (Off)</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>Can be powered off</td>
+    </tr>
+</table>
 
-D0 (Active)
 
-D2 (sleep) – some power is maintained to the Bluetooth chip for persisting its internal state
+<<<<<<< HEAD
 
-D3 (Off) - Power is removed (\*)
-
-System power states
-
-S0 (Active)
-
-Active
-
-Sleep if armed for wake
-
-Radio RM off
-
-S1
-
-N/A
-
-N/A
-
-N/A
-
-S2
-
-N/A
-
-N/A
-
-N/A
-
-S3 (Sleep)
-
-N/A
-
-Sleep if armed for wake
-
-Can be powered off
-
-S4 (Hibernate)
-
-N/A
-
-Sleep if armed for wake
-
-Can be powered off
-
-S5 (Off)
-
-N/A
-
-N/A
-
-Can be powered off
 
  
+=======
+>>>>>>> master
 
 \*Re-initialization by Bluetooth core driver is required since power is lost to the Bluetooth chip
 

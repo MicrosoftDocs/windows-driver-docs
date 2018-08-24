@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # I/O Programming Techniques
 
 
-## <a href="" id="ddk-input-output-techniques-kg"></a>
+
 
 
 This section describes programming techniques that can be used to work with objects managed by the I/O manager. The following technology areas are discussed:

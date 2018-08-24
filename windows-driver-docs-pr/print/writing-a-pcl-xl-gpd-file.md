@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing a PCL XL GPD File
 
 
-## <a href="" id="ddk-writing-a-pcl-xl-gpd-file-gg"></a>
+
 
 
 This section provides general information about writing a PCL XL GPD file, such as which files your GPD file should include, how to enable PCL XL in your GPD file, and how to order PCL XL commands in a PCL XL stream.

@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Stream Pointers
 
 
-## <a href="" id="ddk-stream-pointers-ksg"></a>
+
 
 
 [Introduction to Stream Pointers](introduction-to-stream-pointers.md)

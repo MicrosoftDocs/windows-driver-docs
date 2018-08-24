@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Numeric Values
 
 
-## <a href="" id="ddk-numeric-values-gg"></a>
+
 
 
 All numeric values that you specify as entry values or parameter values in a GPD file must be integers. Decimal points are not allowed, except within text strings.

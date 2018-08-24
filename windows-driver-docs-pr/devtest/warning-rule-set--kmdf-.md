@@ -2,6 +2,12 @@
 title: Warning rule set (KMDF)
 description: Use these rules to verify that your driver can correctly processes IRPs in various contexts and follows Microsoft recommended best practices.
 ms.assetid: 0C012253-9FBD-4B5C-9A93-AF72405EF3E4
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Warning rule set (KMDF)

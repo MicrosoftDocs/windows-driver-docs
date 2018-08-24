@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Physical Configuration of Parallel Ports
 
 
-## <a href="" id="ddk-physical-configuration-of-parallel-ports-kg"></a>
+
 
 
 This section describes typical physical configurations of parallel ports.

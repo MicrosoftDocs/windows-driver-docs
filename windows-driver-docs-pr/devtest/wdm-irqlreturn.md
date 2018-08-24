@@ -2,6 +2,11 @@
 title: IrqlReturn rule (wdm)
 description: The IrqlReturn rule specifies that the driver's dispatch routines return at the same IRQL at which they were called.
 ms.assetid: 1b2ef432-e3ba-4a01-b3df-839ff13b03f6
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["IrqlReturn rule (wdm)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - IrqlReturn
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IrqlReturn rule (wdm)

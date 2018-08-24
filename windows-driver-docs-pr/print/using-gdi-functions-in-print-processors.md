@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using GDI Functions in Print Processors
 
 
-## <a href="" id="ddk-using-gdi-functions-in-print-processors-gg"></a>
+
 
 
 A set of user-mode GDI functions is exported by Gdi32.dll, for use by print processors that handle NT-based-operating system EMF as an input format. The following table lists the functions that are provided.

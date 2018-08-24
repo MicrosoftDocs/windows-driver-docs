@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Example: Application Using a Segmentation Filter
 
 
-## <a href="" id="ddk-example-application-using-a-segmentation-filter-si"></a>
+
 
 
 The following code example shows how a simple application could use the segmentation filter. For clarity, error-checking code has been omitted, as well as code to release and free interface pointers and memory.

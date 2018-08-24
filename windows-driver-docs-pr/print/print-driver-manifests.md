@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Print Driver Manifests
 
 
-## <a href="" id="ddk-windows-xp-visual-style-gg"></a>
+
 
 
 A print driver package may contain two kinds of manifest:

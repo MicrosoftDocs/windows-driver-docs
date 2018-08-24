@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Interpreting HID Reports
 
 
-## <a href="" id="ddk-interpreting-hid-reports-kg"></a>
+
 
 
 This section describes how user-mode applications and kernel-mode drivers use the HidP\_*Xxx* [HIDClass support routines](https://msdn.microsoft.com/library/windows/hardware/ff538865) to interpret control data in a HID report.

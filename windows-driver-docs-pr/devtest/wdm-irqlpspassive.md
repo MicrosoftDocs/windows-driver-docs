@@ -1,6 +1,11 @@
 ---
 title: IrqlPsPassive rule (wdm)
 ms.assetid: db84c945-7695-4691-8294-095bbc74ef8a
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 description: 
 keywords: ["IrqlPsPassive rule (wdm)"]
 topic_type:
@@ -9,6 +14,7 @@ api_name:
 - IrqlPsPassive
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IrqlPsPassive rule (wdm)

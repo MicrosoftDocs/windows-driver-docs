@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing a Network Print Provider
 
 
-## <a href="" id="ddk-installing-a-network-print-provider-gg"></a>
+
 
 
 To install a new network print provider, you must supply an installer that copies the provider DLL into the target system's \\System32 subdirectory and then calls **AddPrintProvidor** (described in the Microsoft Windows SDK documentation). This function creates a registry entry for the provider and adds the provider to the end of the spooler's list of installed providers. The function then loads the provider DLL and calls the provider's [**InitializePrintProvidor**](https://msdn.microsoft.com/library/windows/hardware/ff551614) function.

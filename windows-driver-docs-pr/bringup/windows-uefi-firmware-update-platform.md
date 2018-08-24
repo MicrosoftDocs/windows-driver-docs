@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Windows UEFI firmware update platform
@@ -22,7 +23,7 @@ The UEFI firmware update platform guidance is intended for SoC vendors and OEMs 
 -   Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
 -   Windows 10 Mobile
 
-## <a href="" id="uefi-firmware-update-support--in-windows-10"></a>UEFI firmware update support in Windows 10
+## UEFI firmware update support in Windows 10
 
 
 All systems that run Windows 10 for desktop editions should implement UEFI firmware updates by following the UpdateCapsule-based update process described in this section of the documentation.

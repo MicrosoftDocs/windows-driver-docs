@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA Camera Minidriver
 
 
-## <a href="" id="ddk-wia-camera-minidriver-si"></a>
+
 
 
 A minidriver is a full WIA minidriver as discussed in [Creating a WIA Minidriver](creating-a-wia-minidriver.md).

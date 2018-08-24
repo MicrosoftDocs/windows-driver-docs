@@ -14,6 +14,7 @@ api_name:
 - .record_branches (Enable Branch Recording)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .record\_branches (Enable Branch Recording)

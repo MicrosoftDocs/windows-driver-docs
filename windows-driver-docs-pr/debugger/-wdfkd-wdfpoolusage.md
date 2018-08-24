@@ -14,6 +14,7 @@ api_name:
 - wdfkd.wdfpoolusage
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfpoolusage

@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Property Sheet Pages for Still Image Devices
 
 
-## <a href="" id="ddk-property-sheet-pages-for-still-image-devices-si"></a>
+
 
 
 You can provide a DLL that creates device-specific property sheet pages. The Scanners and Cameras Control Panel calls the DLL's entry point when a user attempts to view the device's property sheet.

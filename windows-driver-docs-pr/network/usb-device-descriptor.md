@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # USB Device Descriptor
 
 
-## <a href="" id="ddk-usb-device-descriptor-ng"></a>
+
 
 
 The device returns a USB Device Descriptor as defined in the USB Specification. The following table defines the prominent fields of the USB Device Descriptor.

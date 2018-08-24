@@ -4,10 +4,11 @@ description: GFlags (the Global Flags Editor), gflags.exe, enables and disables 
 ms.assetid: e268af2e-90a9-411e-8e29-ab486d2aac48
 keywords: GFlags, Global Flags Editor, gflags.exe
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 06/12/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # GFlags
@@ -18,7 +19,20 @@ GFlags (the Global Flags Editor), gflags.exe, enables and disables advanced debu
 ## <span id="Where_to_get_GFlags"></span><span id="where_to_get_gflags"></span><span id="WHERE_TO_GET_GFLAGS"></span>Where to get GFlags
 
 
-GFlags is included in [Debugging Tools for Windows](index.md).
+GFlags is included in the [Debugging Tools for Windows 10 (WinDbg)](debugger-download-tools.md).
+
+After the debugging tools are installed, gflags.exe for use on 64 bit Windows is installed by default to the following directory.
+
+```
+C:\Program Files (x86)\Windows Kits\10\Debuggers\x64
+```
+
+If you are running a 32 bit version of Windows, use the 32 bit version of gflags.exe located here.
+
+```
+C:\Program Files (x86)\Windows Kits\10\Debuggers\x86
+```
+
 
 ## <span id="ddk_gflags_dtools"></span><span id="DDK_GFLAGS_DTOOLS"></span>Overview of GFlags
 

@@ -10,13 +10,14 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Reporting, Enabling, and Disabling a NIC's Ability to Parse UDP-ESP Packets
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-reporting-enabling-and-disabling-a-nic-s-ability-to-parse-udp-esp-"></a>
+
 
 
 A miniport driver specifies a NIC's Internet protocol security (IPsec) capabilities in an [**NDIS\_IPSEC\_OFFLOAD\_V1**](https://msdn.microsoft.com/library/windows/hardware/ff565796) structure. For more information, see [Reporting a NIC's IPsec Capabilities](reporting-a-nic-s-ipsec-capabilities.md).

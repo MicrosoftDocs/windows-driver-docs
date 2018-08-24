@@ -14,6 +14,7 @@ api_name:
 - ATTEMPTED_SWITCH_FROM_DPC
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xB8: ATTEMPTED\_SWITCH\_FROM\_DPC

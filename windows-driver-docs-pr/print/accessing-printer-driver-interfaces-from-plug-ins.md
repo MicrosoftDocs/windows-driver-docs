@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Accessing Printer Driver Interfaces from Plug-Ins
 
 
-## <a href="" id="ddk-accessing-printer-driver-interfaces-from-plug-ins-gg"></a>
+
 
 
 If a plug-in calls methods that belong to the driver-supplied [IPrintOemDriverUI](iprintoemdriverui-com-interface.md), [IPrintCoreHelperPS](https://msdn.microsoft.com/library/windows/hardware/ff552906), [IPrintCoreHelperUni](https://msdn.microsoft.com/library/windows/hardware/ff552940), [IPrintCoreUI2](iprintcoreui2-com-interface.md), [IPrintOemDriverUni](iprintoemdriveruni-com-interface.md), [IPrintOemDriverPS](iprintoemdriverps-com-interface.md), or [IPrintCorePS2](iprintcoreps2-com-interface.md) COM interfaces, it must obtain an interface pointer from the driver as follows:

@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # PnP Driver Design Guidelines
 
 
-## <a href="" id="ddk-pnp-driver-design-guidelines-kg"></a>
+
 
 
 Plug and Play provides:

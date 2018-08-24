@@ -14,6 +14,7 @@ api_name:
 - PLMDebug
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # PLMDebug

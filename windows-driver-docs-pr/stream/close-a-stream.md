@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Close a Stream
 
 
-## <a href="" id="ddk-closing-a-stream-ksg"></a>
+
 
 
 After a stream operation is completed, the data stream must be closed to free the resources that were allocated by the open stream request.

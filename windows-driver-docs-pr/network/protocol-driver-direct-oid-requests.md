@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Protocol Driver Direct OID Requests
 
 
-## <a href="" id="ddk-protocol-driver-direct-oid-requests-ng"></a>
+
 
 
 To support the direct OID request path, protocol drivers provide *ProtocolXxx* function entry points in the [**NDIS\_PROTOCOL\_DRIVER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff566825) structure and NDIS provides **Ndis*Xxx*** functions for protocol drivers.

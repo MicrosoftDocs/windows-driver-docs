@@ -7,10 +7,12 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WindowsInfo XML Example
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The following XML document uses the [WindowsInfo XML schema](windowsinfo-xml-schema.md) to specify the display actions for the service that is specified within a metadata package:
 

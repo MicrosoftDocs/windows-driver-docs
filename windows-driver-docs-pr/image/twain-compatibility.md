@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # TWAIN Compatibility
 
 
-## <a href="" id="ddk-twain-compatibility-si"></a>
+
 
 
 WIA minidrivers can support other imaging architectures, such as TWAIN. Beginning with Windows Me, Microsoft no longer ships TWAIN data sources with Windows. For scanner and digital camera in-box drivers, Microsoft accepts only WIA drivers.

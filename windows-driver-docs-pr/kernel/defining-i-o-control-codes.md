@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Defining I/O Control Codes
 
 
-## <a href="" id="ddk-defining-i-o-control-codes-kg"></a>
+
 
 
 When defining new IOCTLs, it is important to remember the following rules:

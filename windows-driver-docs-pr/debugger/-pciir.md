@@ -14,6 +14,7 @@ api_name:
 - pciir
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !pciir

@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting Header-Data Split in Protocol Drivers and Filter Drivers
 
 
-## <a href="" id="ddk-supporting-header-data-split-in-protocol-driver-and-filter-drivers"></a>
+
 
 
 NDIS 6.0 and later protocol drivers and filter drivers must support receive indications with the header and data in non-contiguous buffers.

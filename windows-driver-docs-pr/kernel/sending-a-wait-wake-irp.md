@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sending a Wait/Wake IRP
 
 
-## <a href="" id="ddk-sending-a-wait-wake-irp-kg"></a>
+
 
 
 The minor power IRP code [**IRP\_MN\_WAIT\_WAKE**](https://msdn.microsoft.com/library/windows/hardware/ff551766) provides for waking a device or waking the system. Drivers of devices that can wake themselves or the system send **IRP\_MN\_WAIT\_WAKE** requests. The system sends **IRP\_MN\_WAIT\_WAKE** requests only to devices that always wake the system, such as the power-on switch.

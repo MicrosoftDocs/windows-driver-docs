@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KMDF as a generic driver pair model
@@ -64,7 +65,7 @@ In a (KMDF driver, Framework) pair, the Framework handles tasks that are common 
 
 [Minidrivers and driver pairs](minidrivers-and-driver-pairs.md)
 
-[Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565)
+[Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
 
  
 

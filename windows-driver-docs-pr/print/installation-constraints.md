@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installation Constraints
 
 
-## <a href="" id="ddk-installation-constraints-gg"></a>
+
 
 
 Sometimes, certain installable printer options cannot be installed simultaneously. For example, it might not be possible to install both the envelope feeder and the duplexing unit.

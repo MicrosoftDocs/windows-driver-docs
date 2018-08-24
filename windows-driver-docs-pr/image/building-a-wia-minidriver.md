@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Building a WIA Minidriver
 
 
-## <a href="" id="ddk-building-a-wia-minidriver-si"></a>
+
 
 
 The following header files and library files are required by all WIA minidrivers.

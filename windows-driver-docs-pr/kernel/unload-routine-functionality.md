@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Unload Routine Functionality
 
 
-## <a href="" id="ddk-unload-routine-functionality-kg"></a>
+
 
 
 The responsibilities of a driver's [*Unload*](https://msdn.microsoft.com/library/windows/hardware/ff564886) routine depend on whether the driver supports PnP or not.

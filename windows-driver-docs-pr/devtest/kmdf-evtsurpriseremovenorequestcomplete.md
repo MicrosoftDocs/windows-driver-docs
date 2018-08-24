@@ -2,6 +2,11 @@
 title: EvtSurpriseRemoveNoRequestComplete rule (kmdf)
 description: The EvtSurpriseRemoveNoRequestComplete rule specifies that WDF drivers shouldn’t complete requests from EvtDeviceSurpriseRemoval callback, instead self-managed I/O callback functions should be used.
 ms.assetid: A815CFA0-72A9-4FBC-8432-6212CB696F99
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["EvtSurpriseRemoveNoRequestComplete rule (kmdf)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - EvtSurpriseRemoveNoRequestComplete
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # EvtSurpriseRemoveNoRequestComplete rule (kmdf)

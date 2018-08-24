@@ -14,6 +14,7 @@ api_name:
 - DRIVER_OVERRAN_STACK_BUFFER
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xF7: DRIVER\_OVERRAN\_STACK\_BUFFER

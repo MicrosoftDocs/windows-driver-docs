@@ -11,12 +11,13 @@ api_location:
 - Newdev.dll
 api_type:
 - DllExport
+ms.localizationpriority: medium
 ---
 
 # InstallSelectedDriver function
 
 
-The **InstallSelectedDriver** function installs a selected driver on a selected device.
+The **InstallSelectedDriver** function is deprecated. For Windows Vista and later, use [**DiInstallDevice**](https://msdn.microsoft.com/library/windows/hardware/ff544710) instead.
 
 Syntax
 ------

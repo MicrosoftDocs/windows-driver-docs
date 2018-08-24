@@ -4,6 +4,7 @@ description: Driver flighting in the Windows Hardware Dev Center dashboard enabl
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Driver flighting
@@ -59,7 +60,7 @@ After being submitted to the Windows Hardware Dev Center Dashboard, you can prom
     > [!IMPORTANT] 
     > Please note the following:
     > * It is recommended to avoid requiring a reboot after driver installation. 
-    > * Drivers that deploy UI and/or software during installation are not windows 10 S compliant, and cannot be flighted to this operating system.
+    > * Drivers that deploy UI and/or software during installation are not Windows 10 in S mode compliant, and cannot be flighted to this operating system.
     > * A co-engineering driver is a driver being developed for an unreleased version of Windows. co-engineering drivers: 
     >    * will only be distributed to applicable devices in the Microsoft insider program during the flighting process.
     >    * Will not be distributed to devices that are not a part of the Microsoft insider program after a successful flight.
@@ -73,9 +74,9 @@ After promoting your driver for shipping, Microsoft will evaluate your driver fo
 ## Why was my driver rejected?
 
 A driver can be rejected for several reasons. Most commonly, rejection is caused by improper driver targeting. These include:
-* targeting previous versions of Windows while also targeting Windows 10
-* not including one or more Computer Hardware IDs (CHIDs) in your shipping label
-* using hardware IDs that unintentionally targets other OEMs.
+* Targeting previous versions of Windows while also targeting Windows 10.
+* The device class being targeted may have specific CHID targeting requirements that you failed to properly follow.  Some device classes require CHID like Firmware and other classes forbid the use of CHID like Display.  Be sure you have entered your information correctly.
+* Using hardware IDs that unintentionally targets other OEMs.
 
 ## Related topics
 

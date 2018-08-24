@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Windows 2000 Core Components
 
 
-## <a href="" id="ddk-windows-2000-core-components-si"></a>
+
 
 
 The still image core components on Windows 2000 are shown in the following figure.

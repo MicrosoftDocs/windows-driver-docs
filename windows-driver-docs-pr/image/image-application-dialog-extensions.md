@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Image Application Dialog Extensions
 
 
-## <a href="" id="ddk-image-application-dialog-extensions-si"></a>
+
 
 
 There are three mechanisms for extending WIA image application dialogs. These include:

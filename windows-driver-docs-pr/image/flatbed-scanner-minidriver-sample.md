@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Flatbed Scanner Minidriver Sample
 
 
-## <a href="" id="ddk-flatbed-scanner-minidriver-sample-si"></a>
+
 
 
 The *wiascanr* directory in the Windows DDK contains a sample WIA minidriver for a flatbed scanner with a document feeder.

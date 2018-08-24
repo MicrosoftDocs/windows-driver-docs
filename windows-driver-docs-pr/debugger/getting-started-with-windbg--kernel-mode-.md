@@ -3,10 +3,11 @@ title: Getting Started with WinDbg (Kernel-Mode)
 description: This topic provides hands-on exercises that will help you get started using WinDbg as a kernel-mode debugger.
 ms.assetid: 1B61591F-0D48-4FBD-B242-68BB90D27FAF
 ms.author: domars
-ms.date: 11/28/2017
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # <span id="debugger.getting_started_with_windbg__kernel-mode_"></span>Getting Started with WinDbg (Kernel-Mode)
@@ -47,11 +48,8 @@ For details about how to set up the host and target computers, see [Setting Up K
 
 After you have set up your host and target computer and connected them with a debug cable, you can establish a kernel-mode debugging session by following the instructions in the same topic that you used for getting set up. For example, if you decided to set up your host and target computers for debugging over Ethernet, you can find instructions for establishing a kernel-mode debugging session is this topic:
 
--   [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md)
+-   [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)
 
-Likewise, if you decided to set up your host and target computers for debugging over USB 2.0, you can find instructions for establishing a kernel-mode debugging session is this topic:
-
--   [Setting Up Kernel-Mode Debugging over a USB 2.0 Cable Manually](setting-up-a-usb-2-0-debug-cable-connection.md)
 
 ## <span id="Get_started_using_WinDbg"></span><span id="get_started_using_windbg"></span><span id="GET_STARTED_USING_WINDBG"></span>Get started using WinDbg
 

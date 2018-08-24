@@ -7,18 +7,19 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Integrate a mobile broadband app with other Windows components
 
 
-You can use Windows 8, Windows 8.1, and Windows 10 user interface (UI) surfaces to enhance the overall experience of your mobile broadband app.
+You can use Windows 10 user interface (UI) surfaces to enhance the overall experience of your mobile broadband app.
 
 For additional user experience design guidelines for layout, navigation, commanding, animations, touch interaction, snapping and scaling, contracts and capabilities, tiles and notifications, UI controls, app roaming to the cloud, and fundamentals, see [Index of UX guidelines for UWP apps](https://msdn.microsoft.com/library/windows/apps/hh465424).
 
 This topic contains the following sections:
 
--   [Settings charm](#setcharm)
+-   [App settings](#app-settings)
 
 -   [Error user experience](#errorux)
 
@@ -34,10 +35,10 @@ This topic contains the following sections:
 
 -   [Additional resources](#resources)
 
-## <span id="setcharm"></span><span id="SETCHARM"></span>Settings charm
+## App settings
 
 
-You can use the [Settings charm](https://msdn.microsoft.com/library/windows/apps/hh770544) to include settings for your apps configuration. Some examples of these are as follows:
+You can use [App settings](https://msdn.microsoft.com/library/windows/apps/hh770544) to include settings for your apps configuration. Some examples of these are as follows:
 
 -   Sign in and sign out
 
@@ -137,7 +138,7 @@ If your app was suspended or already running, it should show the last page used.
 
 ### <span id="tileandtoast"></span><span id="TILEANDTOAST"></span>Tile and toast notifications
 
-In the **Start** screen, tiles are the primary representation of an app. Users launch their apps through those tiles, which can display new, relevant, and tailored content through notifications. This makes the **Start** screen feel vibrant, and allows the user to see what's new at a glance. An app can also communicate time-critical events to the user through toast notifications, whether the user is in another app, on the **Start** screen, or on the Desktop. The methodology to design and deliver toast closely parallels that of tiles, thereby lowering the learning curve.
+In the **Start** menu, tiles are the primary representation of an app. Users launch their apps through those tiles, which can display new, relevant, and tailored content through notifications. This makes the **Start** menu feel vibrant, and allows the user to see what's new at a glance. An app can also communicate time-critical events to the user through toast notifications, whether the user is in another app, on the **Start** screen, or on the Desktop. The methodology to design and deliver toast closely parallels that of tiles, thereby lowering the learning curve.
 
 ![start screen tile](images/mb-fig7-startscreentile.png)
 

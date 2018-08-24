@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Accessing Read-Only System Memory
 
 
-## <a href="" id="ddk-accessing-read-only-system-memory-kg"></a>
+
 
 
 The Windows [memory manager](windows-kernel-mode-memory-manager.md) enforces read-only access of pages that are not marked as writable.

@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Accessing Shared State Information
 
 
-## <a href="" id="ddk-accessing-shared-state-information-kg"></a>
+
 
 
 Use the following general guidelines for designing and writing [*SynchCritSection*](https://msdn.microsoft.com/library/windows/hardware/ff563928) routines that maintain state:

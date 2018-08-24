@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Developing a WIA Driver
 
 
-## <a href="" id="ddk-developing-a-wia-driver-si"></a>
+
 
 
 This section presents information about how to develop a WIA driver.

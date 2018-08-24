@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting Printer Change Notifications
 
 
-## <a href="" id="ddk-supporting-printer-change-notifications-gg"></a>
+
 
 
 Applications can request notification of the occurrences of print queue events by calling the spooler's **FindFirstPrinterChangeNotification**, **FindNextPrinterChangeNotification**, and **FindClosePrinterChangeNotification** functions, all of which are described in the Microsoft Windows SDK documentation. If you think application writers will want to request event notification for print queues supported by your partial print provider, you must support event notification in your provider as follows:

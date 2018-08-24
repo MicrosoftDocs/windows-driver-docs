@@ -14,6 +14,7 @@ api_name:
 - INVALID_MDL_RANGE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x12E: INVALID\_MDL\_RANGE

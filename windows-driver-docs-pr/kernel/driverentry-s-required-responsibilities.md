@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DriverEntry's Required Responsibilities
 
 
-## <a href="" id="ddk-driverentry-s-required-responsibilities-kg"></a>
+
 
 
 The required, ordered responsibilities of a [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine are as follows:

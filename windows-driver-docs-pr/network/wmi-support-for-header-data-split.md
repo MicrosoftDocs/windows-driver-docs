@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WMI Support for Header-Data Split
 
 
-## <a href="" id="ddk-wmi-support-for-header-data-split-ng"></a>
+
 
 
 NDIS 6.1 and later supports header-data split GUIDs for WMI applications to query and set the header-data split configuration and to provide notification of changes.

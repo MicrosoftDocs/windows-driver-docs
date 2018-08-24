@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Printer INF File Data Sections
 
 
-## <a href="" id="ddk-printer-inf-file-data-sections-gg"></a>
+
 
 
 The default Windows 2000 and later printer class installer, Ntprint.dll, allows printer INF files to contain data sections. Data sections are specified using the following format:

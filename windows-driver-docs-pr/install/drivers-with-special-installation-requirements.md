@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Drivers with Special Installation Requirements
 
 
-## <a href="" id="ddk-drivers-with-special-installation-requirements-dg"></a>
+
 
 
 This section describes how to install boot, filter, and "null" drivers. It contains the following sections:

@@ -7,10 +7,12 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # HardwareId (PackageInfo)
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 For service metadata packages, the HardwareID values represent the mobile network operator in the form of the following:
 

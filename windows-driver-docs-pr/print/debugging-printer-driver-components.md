@@ -10,16 +10,17 @@ keywords:
 - macros WDK printer
 - global variables WDK debugging
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Debugging Printer Driver Components
 
 
-## <a href="" id="ddk-debugging-printer-driver-components-gg"></a>
+
 
 
 If you are developing a printer driver rendering plug-in or user interface plug-in, you can enable debug messages in these components. As explained in the Global Debug Variable section, you can use a global debug variable to control the level of detail in messages appearing in the debugger window.
@@ -32,13 +33,13 @@ Steps for debugging a user-mode driver and some general debugging tips are inclu
 
 To start debugging printer drivers and their components:
 
-1.  Install the latest debugging tools from [Debugging Tools for Windows](http://go.microsoft.com/fwlink/p/?linkid=8708) on the WHDC Web site.
+1.  Install the latest debugging tools. See [Download Debugging Tools for Windows](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools)
 
-2.  Install the correct symbols from [Debugging Tools and Symbols](http://go.microsoft.com/fwlink/p/?linkid=17363) on the WHDC Web site.
+2.  Install the correct symbols from [Windows Symbol Packages](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-symbols)
 
 **Note**   It is very important that you use the latest version of the debugger.
 
- 
+
 
 It is advisable to install the checked build of only the components that you are interested in debugging. Typically you would replace the following retail binaries with their corresponding checked builds:
 
@@ -56,7 +57,7 @@ To begin user-mode debugging, on the **File** menu in Windbg debugger select **A
 
 **Note**   You do not require two separate machines for user-mode debugging.
 
- 
+
 
 The following procedure will get you ready to debug the Oemuni sample.
 
@@ -106,29 +107,29 @@ You can set giDebugLevel to any of the following values:
 
 The following macros are used for debugging purposes. Several of them take action only if the giDebugLevel global variable, which controls which debug messages are emitted, is set to a specific value. The macros expand to white spaces on a free build. Here are brief descriptions of what they do and their parameters.
 
-<a href="" id="assert-cond-"></a>**ASSERT**(*cond*)  
+<a href="" id="assert-cond-"></a>**ASSERT**(*cond*)
 Verifies whether the Boolean expression in *cond* is **TRUE**. If it is not, the macro forces a breakpoint.
 
-<a href="" id="assertmsg-cond---msg--"></a>**ASSERTMSG**(*cond,* (*msg*))  
+<a href="" id="assertmsg-cond---msg--"></a>**ASSERTMSG**(*cond,* (*msg*))
 Verifies whether the Boolean expression in *cond* is **TRUE**. If it is not, the macro displays the message in *msg,* and forces a breakpoint.
 
-<a href="" id="err--msg--"></a>**ERR**((*msg*))  
+<a href="" id="err--msg--"></a>**ERR**((*msg*))
 Displays the message in *msg* if the current debug level is &lt;= DBG\_ERROR. The message format is:
 
 ```
 ERR filename (linenumber): msg
 ```
 
-<a href="" id="rip--msg--"></a>**RIP**((*msg*))  
+<a href="" id="rip--msg--"></a>**RIP**((*msg*))
 Displays the message in *msg* and forces a breakpoint.
 
-<a href="" id="terse--msg--"></a>**TERSE**((*msg*))  
+<a href="" id="terse--msg--"></a>**TERSE**((*msg*))
 Displays the message in *msg* if the current debug level is &lt;= DBG\_TERSE.
 
-<a href="" id="verbose--msg--"></a>**VERBOSE**((*msg*))  
+<a href="" id="verbose--msg--"></a>**VERBOSE**((*msg*))
 Displays the message in *msg* if the current debug level is &lt;= DBG\_VERBOSE.
 
-<a href="" id="warning--msg--"></a>**WARNING**((*msg*))  
+<a href="" id="warning--msg--"></a>**WARNING**((*msg*))
 Displays the message in *msg* if the current debug level is &lt;= DBG\_WARNING. The message format is:
 
 ```
@@ -163,9 +164,9 @@ Note that all of the macros with a *msg* argument require an extra pair of paren
 
 The macros that contain a *msg* argument are defined by the Oemui and Oemuni samples in their Debug.h headers.
 
- 
 
- 
+
+
 
 
 

@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Overlapped I/O Operations
 
 
-## <a href="" id="ddk-handling-overlapped-i-o-operations-kg"></a>
+
 
 
 The [*DpcForIsr*](https://msdn.microsoft.com/library/windows/hardware/ff544079) or [*CustomDpc*](https://msdn.microsoft.com/library/windows/hardware/ff542972) routine of a driver that overlaps operations on its device cannot rely on a one-to-one correspondence between requests input to the [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) routine and the ISR's calls to [**IoRequestDpc**](https://msdn.microsoft.com/library/windows/hardware/ff549657) or [**KeInsertQueueDpc**](https://msdn.microsoft.com/library/windows/hardware/ff552185). Such a driver's *DpcForIsr* or *CustomDpc* cannot necessarily use the input pointers to the IRP and ISR-supplied context, or the **CurrentIrp** pointer in the target device object, to complete only that IRP.

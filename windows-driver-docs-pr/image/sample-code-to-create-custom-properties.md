@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sample Code to Create Custom Properties
 
 
-## <a href="" id="ddk-sample-code-to-create-custom-properties-si"></a>
+
 
 
 To create a custom property, your WIA driver might have code that looks similar to the following:

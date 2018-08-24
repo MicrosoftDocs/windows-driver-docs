@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Terminate Offload Sequence
@@ -18,7 +19,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-terminate-offload-sequence-ng"></a>
+
 
 
 The following figure shows the terminate offload sequence. An offload target performs Part 1, and the host stack performs Part 2. If the offload target does not request the terminate offload operation, the sequence starts with the first step of Part 2.

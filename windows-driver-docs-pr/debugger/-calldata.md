@@ -14,6 +14,7 @@ api_name:
 - calldata
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !calldata

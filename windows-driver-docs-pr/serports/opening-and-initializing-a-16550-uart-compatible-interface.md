@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Opening and Initializing a 16550 UART-Compatible Interface
 
 
-## <a href="" id="ddk-opening-and-initializing-a-16550-uart-compatible-interface-kg"></a>
+
 
 
 When Serial is used as a lower-level device filter driver, the following considerations apply to opening and initializing the filter device:

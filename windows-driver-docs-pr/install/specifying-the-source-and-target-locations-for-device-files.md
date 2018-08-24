@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying the Source and Target Locations for Device Files
 
 
-## <a href="" id="ddk-specifying-the-source-and-target-locations-for-device-files-dg"></a>
+
 
 
 When Windows processes copy, rename, and delete file statements in an INF file, it determines the source and target locations for the files. To determine these locations, it assesses whether the driver ships with the operating system or separately and examines various INF file sections and entries, including **SourceDisksNames**, **SourceDisksFiles**, **Include**, **Needs**, and **DestinationDirs**.

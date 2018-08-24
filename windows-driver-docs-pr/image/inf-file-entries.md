@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF File Entries
 
 
-## <a href="" id="ddk-inf-file-entries-si"></a>
+
 
 
 Using a microdriver for your device requires additional entries in the setup information (INF) file. First, there must be an entry called "MicroDriver" in the **DeviceData** section of the INF file. (See [INF Files for WIA Devices](inf-files-for-wia-devices.md) for more information.) This entry should be set to the name of the DLL that implements the microdriver.

@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Pageable and Discardable Code in a Protocol Driver
 
 
-## <a href="" id="ddk-pageable-and-discardable-code-ng"></a>
+
 
 
 Driver developers should designate code as pageable whenever possible, freeing system space for code that must be memory-resident. You can mark functions as pageable with the [**NDIS\_PAGEABLE\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff557121) macro. The IRQL, resource management features, and other characteristics of a function might prohibit the function from being pageable.

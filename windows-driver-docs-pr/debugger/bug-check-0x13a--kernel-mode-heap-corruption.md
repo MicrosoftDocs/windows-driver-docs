@@ -14,6 +14,7 @@ api_name:
 - KERNEL_MODE_HEAP_CORRUPTION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x13A: KERNEL\_MODE\_HEAP\_CORRUPTION

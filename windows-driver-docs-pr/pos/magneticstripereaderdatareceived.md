@@ -2,6 +2,7 @@
 title: MagneticStripeReaderDataReceived
 description: MagneticStripeReaderDataReceived
 ms.assetid: '5074669c-3914-4d15-983b-d979c7f88b21'
+ms.localizationpriority: medium
 ---
 
 # MagneticStripeReaderDataReceived

@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WMI Class Qualifiers
 
 
-## <a href="" id="ddk-wmi-class-qualifiers-kg"></a>
+
 
 
 The following table lists the required and optional MOF class qualifiers that can be used to describe a driver's WMI data blocks and event blocks.

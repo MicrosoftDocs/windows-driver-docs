@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Bluetooth Version and Profile Support in Previous Windows Versions
@@ -438,7 +439,7 @@ Windows 7 introduced new Ex versions of previous APIs to provide enhanced funct
 
 Windows Vista introduced a kernel-mode DDI for Bluetooth wireless technology, which provides access to SCO, SDP, and L2CAP. The DDI is included with Windows Driver Kit (WDK) build 6000, which was released with Windows Vista, and all later builds of the WDK. We do not intend to make the kernel-mode DDI available on earlier versions of Windows. The [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) can be used to verify that kernel-mode Bluetooth drivers comply with standard driver development practices and use the DDI correctly.
 
-Windows Vista with SP2 and Windows 7 also support the user-mode RFComm and Bluetooth APIs. For more information, see the [Bluetooth design guide](https://docs.microsoft.com/windows-hardware/drivers/bluetooth/). The WDK includes documentation for the new kernel-mode DDI. For more information about how to download the WDK, see ”How to Get the WDK” on the WHDC Web site. The HCK includes documentation for Driver Test Manager (DTM). For more information about how to download the HCK, see the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) documentation.
+Windows Vista with SP2 and Windows 7 also support the user-mode RFComm and Bluetooth APIs. For more information, see the [Bluetooth design guide](https://docs.microsoft.com/windows-hardware/drivers/bluetooth/). The WDK includes documentation for the new kernel-mode DDI. For more information about how to download the WDK, see [Other WDK downloads](https://docs.microsoft.com/windows-hardware/drivers/other-wdk-downloads) The HCK includes documentation for Driver Test Manager (DTM). For more information about how to download the HCK, see the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) documentation.
 
 ## <span id="related_topics"></span>Related topics
 

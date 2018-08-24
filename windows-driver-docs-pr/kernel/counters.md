@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Counters
 
 
-## <a href="" id="ddk-counters-kg"></a>
+
 
 
 The system provides several driver support routines that return various count values.

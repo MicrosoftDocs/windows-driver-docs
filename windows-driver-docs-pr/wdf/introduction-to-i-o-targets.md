@@ -18,12 +18,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to I/O Targets
 
 
-## <a href="" id="ddk-introduction-to-i-o-targets-df"></a>
+
 
 
 When a [function driver](wdm-concepts-for-kmdf-drivers.md), filter driver, or [miniport driver](creating-kmdf-miniport-drivers.md) receives an I/O request, the driver might be able to process the request by itself or it might need the assistance of other drivers. If the driver needs assistance, it can forward the request to another driver, or it can create one or more new requests and send them to another driver.

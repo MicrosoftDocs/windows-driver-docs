@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sample Printer Interface DLL
 
 
-## <a href="" id="ddk-sample-printer-interface-dll-gg"></a>
+
 
 
 Source code for Plotui.dll, the printer interface DLL for the [Microsoft plotter driver](microsoft-plotter-driver.md), is provided with the Windows Driver Kit (WDK). The code is located in the \\src\\print\\msplot subdirectory of the directory tree that contains the WDK.

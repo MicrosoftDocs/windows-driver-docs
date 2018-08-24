@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Wait/Wake IRP Requests
 
 
-## <a href="" id="ddk-wait-wake-irp-requests-kg"></a>
+
 
 
 To send an [**IRP\_MN\_WAIT\_WAKE**](https://msdn.microsoft.com/library/windows/hardware/ff551766), a driver calls [**PoRequestPowerIrp**](https://msdn.microsoft.com/library/windows/hardware/ff559734), passing (among other parameters) a pointer to the target PDO, a system power state, and a pointer to a callback routine.

@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to the Universal Printer Driver
 
 
-## <a href="" id="ddk-introduction-to-the-universal-printer-driver-gg"></a>
+
 
 
 The Universal Printer Driver (Unidrv) is the Microsoft Corporation's standard printer driver for non-PostScript printers. The following topics provide an introduction to Unidrv:

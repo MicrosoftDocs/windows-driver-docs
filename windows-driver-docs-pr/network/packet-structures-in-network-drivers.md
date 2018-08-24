@@ -17,12 +17,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Packet Structures in Network Drivers
 
 
-## <a href="" id="ddk-packet-structure-ng"></a>
+
 
 
 In NDIS 6.0 and later versions, a higher layer driver allocates [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) and [**NET\_BUFFER LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures to hold network packet information, and sends the structures to the next lower NDIS driver so that the data can be sent on the network. Lower-level drivers allocate NET\_BUFFER and NET\_BUFFER\_LIST structures to hold received data and pass the structures up to interested higher-layer drivers. Sometimes, a higher layer driver allocates structures and passes them to a lower layer driver with a request for the lower layer driver to copy received data into the buffers provided. NDIS provides functions for allocating and manipulating the substructures that make up the NET\_BUFFER and NET\_BUFFER\_LIST structures.

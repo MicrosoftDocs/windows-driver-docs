@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA Scanner Item Tree Layout
 
 
-## <a href="" id="ddk-wia-scanner-item-tree-layout-si"></a>
+
 
 
 For information about scanner item trees in Microsoft Windows Me and Windows XP see [WIA Scanner Item Tree Layout for Windows Me and Windows XP](wia-scanner-item-tree-layout-for-windows-me-and-windows-xp.md).

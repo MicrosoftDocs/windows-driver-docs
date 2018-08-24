@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Pscript Components
 
 
-## <a href="" id="ddk-pscript-components-gg"></a>
+
 
 
 Pscript components consist of DLLs, plus text and binary data files, as illustrated in the following diagram:

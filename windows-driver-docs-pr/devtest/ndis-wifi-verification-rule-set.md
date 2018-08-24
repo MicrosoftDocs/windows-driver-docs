@@ -2,6 +2,12 @@
 title: NDIS/WIFI verification rule set
 description: Note  You can test NDIS/WIFI drivers with these rules starting with Windows 8.1. .
 ms.assetid: B856F42E-E4AD-4178-AF71-3E68A23209C9
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS/WIFI verification rule set

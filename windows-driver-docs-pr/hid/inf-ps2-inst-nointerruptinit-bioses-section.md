@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF PS2\_Inst.NoInterruptInit.Bioses Section
 
 
-## <a href="" id="ddk-inf-ps2-inst-nointerruptinit-bioses-section-kg"></a>
+
 
 
 **\[PS2\_Inst.NoInterruptInit.Bioses\]**

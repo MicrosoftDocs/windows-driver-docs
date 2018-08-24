@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to Printing
 
 
-## <a href="" id="ddk-introduction-to-printing-gg"></a>
+
 
 
 The Microsoft Windows 2000 and later printing architecture consists of a print spooler and a set of printer drivers. By calling device-independent functions, applications can create print jobs and send them to many devices. This includes laser printers, vector plotters, raster printers, and fax machines.
@@ -51,15 +52,6 @@ Other sections cover the following topics:
 [Bluetooth Printing](bluetooth-printing.md)
 
 [Printer Driver Testing and Debugging](printer-driver-testing-and-debugging.md)
-
-If you are creating a driver for a multifunction printer (MFP), see the [Multifunction Printer Design Recommendations](http://go.microsoft.com/fwlink/p/?linkid=38442) white paper on the Windows Hardware and Device Central (WHDC) Web site. A typical multifunction printer can print and make copies, send and receive faxes, and scan in documents.
-
-For more information about printer driver design, development, and testing, see [Printing - Architecture and Driver Support](http://go.microsoft.com/fwlink/p/?linkid=69253).
-
- 
-
- 
-
 
 
 

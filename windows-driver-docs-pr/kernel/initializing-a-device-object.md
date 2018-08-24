@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing a Device Object
 
 
-## <a href="" id="ddk-initializing-a-device-object-kg"></a>
+
 
 
 After [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397) returns, giving the caller a pointer to a *DeviceObject* that contains a pointer to the [*device extension*](device-extensions.md), drivers must set up certain fields in the device objects for their respective physical, logical, and/or virtual devices.

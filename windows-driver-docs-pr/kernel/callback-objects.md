@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Callback Objects
 
 
-## <a href="" id="ddk-callback-objects-kg"></a>
+
 
 
 The kernel's callback mechanism provides a general way for drivers to request and provide notification when certain conditions are satisfied.

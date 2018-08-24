@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Opening and Initializing a Serial Device
 
 
-## <a href="" id="ddk-opening-and-initializing-a-serial-device-kg"></a>
+
 
 
 When Serial is used as a function driver, the following considerations apply to opening and initializing a serial device:

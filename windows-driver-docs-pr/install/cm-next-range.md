@@ -9,6 +9,7 @@ api_name:
 - CM_Next_Range
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Next_Range

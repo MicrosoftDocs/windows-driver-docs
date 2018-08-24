@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing Driver-Specific Files
 
 
-## <a href="" id="ddk-installing-driver-specific-files-gg"></a>
+
 
 
 Files are associated with a printer driver by including them in the printer's INF file. For more information, see [Printer INF Files](printer-inf-files.md).

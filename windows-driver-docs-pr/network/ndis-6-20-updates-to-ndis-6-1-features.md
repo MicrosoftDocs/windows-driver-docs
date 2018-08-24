@@ -9,12 +9,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS 6.20 Updates to NDIS 6.1 Features
 
 
-## <a href="" id="ddk-ndis-6-20-updates-to-ndis-6-1-features-ng"></a>
+
 
 
 NDIS 6.1 added the following interfaces to NDIS 6.0:

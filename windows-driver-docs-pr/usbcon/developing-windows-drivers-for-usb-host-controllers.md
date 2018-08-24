@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Developing Windows drivers for USB host controllers
@@ -23,7 +24,7 @@ ms.technology: windows-devices
 <p>This section describes support in the Windows operating system, for developing a Universal Serial Bus (USB) host controller driver that communicates with the Microsoft-provided USB host controller extension (UCX).</p>
 <p>If you are developing an xHCI host controller that is not compliant with the specification or developing a custom non-xHCI hardware (such as a virtual host controller), you can write a host controller driver that communicates with UCX. For example, consider a wireless dock that supports USB devices. The PC communicates with USB devices through the wireless dock by using USB over TCP as a transport.</p>
 <p><strong>USB host controller extension (UCX)</strong></p>
-<p>The USB host controller extension is a system-supplied driver (Ucx01000.sys). This driver is implemented as a framework class extension by using the [Windows Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565) programming interfaces. The host controller driver serves as the client driver to that class extension. While a host controller driver handles hardware operations and events, power management, and PnP events, UCX serves as an abstracted interface that queues requests to the host controller driver, and performs other tasks.</p>
+<p>The USB host controller extension is a system-supplied driver (Ucx01000.sys). This driver is implemented as a framework class extension by using the [Windows Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/) programming interfaces. The host controller driver serves as the client driver to that class extension. While a host controller driver handles hardware operations and events, power management, and PnP events, UCX serves as an abstracted interface that queues requests to the host controller driver, and performs other tasks.</p>
 <p>UCX is one of the [USB host-side drivers in Windows](usb-3-0-driver-stack-architecture.md). It is loaded as the FDO in the host controller device stack.</p>
 <p><strong>USB host controller driver</strong></p>
 <p>UCX is extensible and is designed to support various host controller drivers. Windows provides an xHCI driver (Usbxhci.sys) that targets USB xHCI host controllers.</p>

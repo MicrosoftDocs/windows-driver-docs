@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sending Packets from a CoNDIS WAN Miniport Driver
 
 
-## <a href="" id="ddk-sending-packets-from-a-condis-wan-miniport-driver-ng"></a>
+
 
 
 An upper-layer driver calls [**NdisCoSendNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff561728) to send network data packets to an underlying CoNDIS WAN miniport driver in a list of [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures. The NDISWAN intermediate driver forwards those NET\_BUFFER\_LIST structures from the upper-layer driver. NDISWAN repackages the structures before sending them. NDISWAN forwards packets in new NET\_BUFFER\_LIST structures.

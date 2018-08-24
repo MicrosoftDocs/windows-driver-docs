@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Configuring the Component's Driver
 
 
-## <a href="" id="ddk-configuring-the-component-s-driver-ng"></a>
+
 
 
 After the network configuration subsystem calls a notify object's [**INetCfgComponentControl::ApplyPnpChanges**](https://msdn.microsoft.com/library/windows/hardware/ff547726) method, the notify object should send configuration information to the driver of the network component that owns the notify object. The network configuration subsystem calls **ApplyPnpChanges** after it calls the [**INetCfgComponentControl::ApplyRegistryChanges**](https://msdn.microsoft.com/library/windows/hardware/ff547727) method and after drivers and services for the particular network component have started. In the **ApplyPnpChanges** call, the network configuration subsystem passes the [**INetCfgPnpReconfigCallback**](https://msdn.microsoft.com/library/windows/hardware/ff547935) interface. The component's notify object can use the **INetCfgPnpReconfigCallback** interface to send configuration information to the component's driver. This driver must be either a TDI provider or an NDIS miniport driver.

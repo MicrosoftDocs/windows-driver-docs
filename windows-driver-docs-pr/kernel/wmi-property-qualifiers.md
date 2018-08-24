@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WMI Property Qualifiers
 
 
-## <a href="" id="ddk-wmi-property-qualifiers-kg"></a>
+
 
 
 The following table lists the required and optional MOF property qualifiers that can be used to define items in a WMI data or event block.

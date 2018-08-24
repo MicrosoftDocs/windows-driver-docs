@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Starting a Device
 
 
-## <a href="" id="ddk-starting-a-device-kg"></a>
+
 
 
 The PnP manager sends an [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) request to drivers either to start a newly enumerated device or to restart an existing device that was stopped for resource rebalancing.

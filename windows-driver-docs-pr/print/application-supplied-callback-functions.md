@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Application-Supplied Callback Functions
 
 
-## <a href="" id="ddk-application-supplied-callback-functions-gg"></a>
+
 
 
 CPSUI communicates with applications by callback functions. A CPSUI application must supply two types of callbacks:

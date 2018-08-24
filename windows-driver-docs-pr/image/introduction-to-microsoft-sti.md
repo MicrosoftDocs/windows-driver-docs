@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to Microsoft STI
 
 
-## <a href="" id="ddk-introduction-to-microsoft-sti-si"></a>
+
 
 
 Microsoft STI is made up of the following primary components:

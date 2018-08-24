@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Attribute Types
 
 
-## <a href="" id="ddk-attribute-types-gg"></a>
+
 
 
 Several types of attributes are defined, consisting of:

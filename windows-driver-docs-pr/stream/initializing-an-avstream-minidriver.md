@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing an AVStream Minidriver
 
 
-## <a href="" id="ddk-initializing-an-avstream-minidriver-ksg"></a>
+
 
 
 An AVStream minidriver that does not handle device initialization on its own calls [**KsInitializeDriver**](https://msdn.microsoft.com/library/windows/hardware/ff562683) from the minidriver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff554081) routine. **KsInitializeDriver** initializes the driver object of an AVStream driver, in addition to IRP dispatching, PnP add device messages, and unloading.

@@ -12,7 +12,7 @@ ms.technology: windows-devices
 ---
 
 <h1>Windows Driver Kit documentation</h1>
-<p>Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and [Debugging Tools for Windows](/windows-hardware/drivers/debugger/index) This integrated environment gives you the tools you need to develop, build, package, deploy, test, and debug drivers. You can run many basic certification tests in the integrated environment. The Windows Driver Kit (WDK) includes templates for several technologies and driver models, including [Windows Driver Frameworks](https://msdn.microsoft.com/en-us/library/windows/hardware/ff557565), Universal Serial Bus (USB), print, networking, and file system filters.</p>
+<p>Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and [Debugging Tools for Windows](/windows-hardware/drivers/debugger/index) This integrated environment gives you the tools you need to develop, build, package, deploy, test, and debug drivers. You can run many basic certification tests in the integrated environment. The Windows Driver Kit (WDK) includes templates for several technologies and driver models, including [Windows Driver Frameworks](https://docs.microsoft.com/windows-hardware/drivers/wdf/), Universal Serial Bus (USB), print, networking, and file system filters.</p>
 
 <div class="container">
         <ul class="cardsY panelContent featuredContent">

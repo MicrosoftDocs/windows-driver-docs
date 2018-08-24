@@ -3,19 +3,30 @@ title: Debug API Constants
 description: Debug API Constants
 keywords: ["Debugger API Constants", "Debugger Engine API Constants"]
 ms.author: domars
-ms.date: 10/30/2017
+ms.date: 08/20/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Debug API Constants
+
+[DBG_ASMOPT_XXX](debug-asmopt-xxx.md)
+
+[DBG_ATTACH_XXX](debug-attach-xxx.md)
 
 [DBG_DUMP_XXX](dbg-dump-xxx.md)
 
 [DBG_DUMP_FIELD_XXX](dbg-dump-field-xxx.md)
 
+[DBG_ENGOPT_XXX](debug-engopt-xxx.md)
+
+[DBG_EVENT_XXX](debug-event-xxx.md)
+
 [DEBUG_FILTER_XXX](debug-filter-xxx.md)
+
+[DEBUG_FORMAT_XXX](debug-format-xxx.md)
 
 [DEBUG_OUTCTL_XXX](debug-outctl-xxx.md)
 

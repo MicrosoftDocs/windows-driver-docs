@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filter-Centric Processing
 
 
-## <a href="" id="ddk-filter-centric-processing-ksg"></a>
+
 
 
 If a filter uses filter-centric processing, then by default AVStream calls the minidriver-supplied [*AVStrMiniFilterProcess*](https://msdn.microsoft.com/library/windows/hardware/ff556315) callback routine when there are data frames available on each pin instance. Minidrivers can modify this default behavior by setting the **Flags** member of the [**KSPIN\_DESCRIPTOR\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff563534) structure.

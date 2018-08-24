@@ -14,6 +14,7 @@ api_name:
 - wdfkd.wdfdeviceinterrupts
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfdeviceinterrupts

@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Interface Identifiers for Printer Drivers
 
 
-## <a href="" id="ddk-interface-identifiers-for-printer-drivers-gg"></a>
+
 
 
 A set of GUIDs is defined in prcomoem.h. Each of these GUIDs is an interface identifier for one of the COM interfaces used for communication between the printer drivers (Unidrv and Pscript5) and plug-ins.

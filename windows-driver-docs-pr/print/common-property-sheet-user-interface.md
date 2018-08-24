@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Common Property Sheet User Interface
 
 
-## <a href="" id="ddk-cpsui-gg"></a>
+
 
 
 This section describes the Common Property Sheet User Interface (CPSUI). The following topics are provided:

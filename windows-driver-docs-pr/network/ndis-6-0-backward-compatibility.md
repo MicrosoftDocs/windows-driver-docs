@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS 6.0 Backward Compatibility
 
 
-## <a href="" id="ddk-ndis-6-0-backward-compatibility-nd"></a>
+
 
 
 The Windows Vista operating system supports NDIS 3.0 - 5.*x* miniport drivers and NDIS 4.0 - NDIS 5.*x* protocol and intermediate drivers. However, for longevity and improved performance, new drivers should be native NDIS 6.0 drivers. NDIS 6.0 provides a translation layer to accommodate drivers that are based on NDIS 3.0 - 5.*x*, but the translation might degrade system performance--particularly in the send and receive code paths. For more information about NDIS 6.0 send and receive code paths, see [Send and Receive Operations](send-and-receive-operations.md).

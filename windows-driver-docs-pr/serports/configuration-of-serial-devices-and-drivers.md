@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Configuration of Serial Devices and Drivers
 
 
-## <a href="" id="ddk-configuration-of-serial-devices-and-drivers-kg"></a>
+
 
 
 This section includes the following topics about the configuration of serial devices and drivers that the Serial and Serenum drivers support:

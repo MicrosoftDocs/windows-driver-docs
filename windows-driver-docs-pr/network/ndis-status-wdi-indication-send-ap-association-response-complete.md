@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - NDIS_STATUS_WDI_INDICATION_SEND_AP_ASSOCIATION_RESPONSE_COMPLETE Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WDI\_INDICATION\_SEND\_AP\_ASSOCIATION\_RESPONSE\_COMPLETE
@@ -26,19 +27,12 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_SEND\_AP\_ASSOCIATION\_RESPO
 ## Payload data
 
 
-Type
-Multiple TLV instances allowed
-Optional
-Description
-[**WDI\_TLV\_ASSOCIATION\_RESPONSE\_RESULT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn926138)
-The association response parameters.
-[**WDI\_TLV\_ASSOCIATION\_RESPONSE\_FRAME**](https://msdn.microsoft.com/library/windows/hardware/dn926135)
-The received association response. This does not include the 802.11 MAC header.
-[**WDI\_TLV\_BEACON\_IES**](https://msdn.microsoft.com/library/windows/hardware/dn926148)
-The beacon IEs from the association.
-[**WDI\_TLV\_PHY\_TYPE\_LIST**](https://msdn.microsoft.com/library/windows/hardware/dn898029)
-X
-The list of PHY types.
+| Type | Multiple TLV instances allowed | Optional | Description |
+| --- | --- | --- | --- |
+| [**WDI\_TLV\_ASSOCIATION\_RESPONSE\_RESULT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn926138) |   |   | The association response parameters. |
+| [**WDI\_TLV\_ASSOCIATION\_RESPONSE\_FRAME**](https://msdn.microsoft.com/library/windows/hardware/dn926135) |   |   | The received association response. This does not include the 802.11 MAC header. |
+| [**WDI\_TLV\_BEACON\_IES**](https://msdn.microsoft.com/library/windows/hardware/dn926148) |   |   | The beacon IEs from the association. |
+| [**WDI\_TLV\_PHY\_TYPE\_LIST**](https://msdn.microsoft.com/library/windows/hardware/dn898029) |   |   | The list of PHY types. |
  
 
 Requirements

@@ -2,6 +2,11 @@
 title: SyncReqSend2 rule (kmdf)
 description: The SyncReqSend2 rule specifies that synchronous request sends have a nonzero time-out value set.
 ms.assetid: c72b909f-6160-47da-8e7e-84e0dea785c2
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["SyncReqSend2 rule (kmdf)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - SyncReqSend2
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # SyncReqSend2 rule (kmdf)

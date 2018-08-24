@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Object Size in PTP
 
 
-## <a href="" id="ddk-object-size-in-ptp-si"></a>
+
 
 
 The ObjectCompressedSize field of the ObjectInfo dataset is optional in the PIMA 15740 standard, but the Microsoft PTP WIA minidriver requires this field to be nonzero.

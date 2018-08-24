@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of Wait/Wake Operation
 
 
-## <a href="" id="ddk-overview-of-wait-wake-operation-kg"></a>
+
 
 
 The operating system's wake-up mechanism works as shown in the following figure.

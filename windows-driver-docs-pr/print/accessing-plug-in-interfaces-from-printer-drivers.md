@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Accessing Plug-In Interfaces from Printer Drivers
 
 
-## <a href="" id="ddk-accessing-plug-in-interfaces-from-printer-drivers-gg"></a>
+
 
 
 If a UI plug-in or rendering plug-in is installed, the printer driver (Unidrv or Pscript5) uses the following calling sequence to obtain access to the plug-in's [IPrintOemUI](iprintoemui-com-interface.md), [IPrintOemUI2](iprintoemui2-com-interface.md), [IPrintOemUni](iprintoemuni-com-interface.md), [IPrintOemUni2](iprintoemuni2-com-interface.md), [IPrintOemUni3](iprintoemuni3-com-interface.md), [IPrintOemPS](iprintoemps-com-interface.md), or [IPrintOemPS2](iprintoemps2-com-interface.md) COM interface:

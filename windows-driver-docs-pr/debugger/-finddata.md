@@ -14,6 +14,7 @@ api_name:
 - finddata
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !finddata

@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating Resource Maps for a Multifunction Device
 
 
-## <a href="" id="ddk-creating-resource-maps-for-a-multifunction-device-dg"></a>
+
 
 
 A *resource map* identifies the resources of a multifunction device that are used by a child function. Resource maps are specified using an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320). If a multifunction device requires resource maps, the INF for the device typically contains a resource map for each function of the device.

@@ -14,6 +14,7 @@ api_name:
 - hstring2
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !hstring2

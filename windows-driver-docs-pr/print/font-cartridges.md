@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Font Cartridges
 
 
-## <a href="" id="ddk-font-cartridges-gg"></a>
+
 
 
 If your printer accepts font cartridges, cartridges can be described by \***FontCartridge** GPD file entries. This entry's format is:

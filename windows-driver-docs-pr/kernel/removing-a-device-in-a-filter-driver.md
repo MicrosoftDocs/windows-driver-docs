@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Removing a Device in a Filter Driver
 
 
-## <a href="" id="ddk-removing-a-device-in-a-filter-driver-kg"></a>
+
 
 
 When removing a device, a filter driver must undo any operations it performed to add and start the device. A filter driver follows essentially the same procedure as a function driver when removing a device.

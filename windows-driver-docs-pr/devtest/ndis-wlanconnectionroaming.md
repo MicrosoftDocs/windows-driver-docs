@@ -2,6 +2,11 @@
 title: WlanConnectionRoaming rule (ndis)
 description: The WlanConnectionRoaming rule verifies the miniport driver correctly follows the Native 802.11 wireless LAN (WLAN) connection and roaming sequence.
 ms.assetid: 7DB1881B-4DD8-4E06-AAF2-C6EAD0EEC5FC
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["WlanConnectionRoaming rule (ndis)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - WlanConnectionRoaming
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # WlanConnectionRoaming rule (ndis)

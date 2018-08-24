@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA Scanner Item Tree for Windows Me and Windows XP
 
 
-## <a href="" id="ddk-wia-scanner-item-tree-for-windows-me-and-windows-xp-si"></a>
+
 
 
 This section has information about scanner item trees and the changes needed in Microsoft Windows Me and Windows XP scanner item trees to support an automatic document feeder.

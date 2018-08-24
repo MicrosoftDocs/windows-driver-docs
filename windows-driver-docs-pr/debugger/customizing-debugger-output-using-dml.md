@@ -7,6 +7,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Customizing Debugger Output Using DML
@@ -195,7 +196,7 @@ This example shows how to italicize text.
 
 ### <span id="_u_"></span><span id="_U_"></span>&lt;u&gt;
 
-*&lt;i&gt;underlined text&lt;/i&gt;*
+*&lt;u&gt;underlined text&lt;/u&gt;*
 
 This tag requests underlined text. The &lt;b&gt;, &lt;i&gt; and &lt;u&gt; can be nested to have a mix of the properties.
 

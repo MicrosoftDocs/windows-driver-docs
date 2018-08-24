@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Obtaining Collection Information
 
 
-## <a href="" id="ddk-obtaining-collection-information-kg"></a>
+
 
 
 This section addresses obtaining information that user-mode applications and kernel-mode drivers use to operate a [HID collection](hid-collections.md).

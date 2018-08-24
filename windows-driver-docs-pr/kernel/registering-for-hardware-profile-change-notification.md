@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering for Hardware Profile Change Notification
 
 
-## <a href="" id="ddk-registering-for-hardware-profile-change-notification-kg"></a>
+
 
 
 A driver registers for notification of hardware profile changes by calling [**IoRegisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff549526).

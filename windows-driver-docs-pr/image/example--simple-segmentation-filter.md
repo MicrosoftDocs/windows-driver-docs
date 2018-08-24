@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Example: Simple Segmentation Filter
 
 
-## <a href="" id="ddk-example-simple-segmentation-filter-si"></a>
+
 
 
 The following code example shows how a simple segmentation filter can be implemented. The segmentation filter in the example does not use the [**WIA\_IPS\_DESKEW\_X**](https://msdn.microsoft.com/library/windows/hardware/ff552581) and [**WIA\_IPS\_DESKEW\_Y**](https://msdn.microsoft.com/library/windows/hardware/ff552587) properties. For clarity, error checking code has been omitted.

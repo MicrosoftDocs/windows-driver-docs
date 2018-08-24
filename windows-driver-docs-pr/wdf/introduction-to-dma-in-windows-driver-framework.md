@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to DMA in Windows Driver Framework
@@ -18,7 +19,7 @@ ms.technology: windows-devices
 
 \[Applies to KMDF only\]
 
-## <a href="" id="ddk-introduction-to-dma-in-windows-driver-framework-df"></a>
+
 
 
 On Windows 7 and earlier, Kernel-Mode Driver Framework (KMDF) supports only bus-master direct memory access (DMA) devices. Such devices contain their own DMA controllers.

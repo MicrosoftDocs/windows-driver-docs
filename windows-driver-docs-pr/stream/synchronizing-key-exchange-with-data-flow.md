@@ -17,12 +17,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Synchronizing Key Exchange with Data Flow
 
 
-## <a href="" id="ddk-synchronizing-key-exchange-with-data-flow-ksg"></a>
+
 
 
 The key exchange process may begin before all data from the previous key is processed. An example of this would be in the transition from the trailer title set into the main program title set on some movies. There is a flag in the **TypeSpecificFlags** member of the [**KSSTREAM\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff567138) structure for each data packet. This flag is **KS\_AM\_UseNewCSSKey**, which is defined in *ksmedia.h*. It indicates that the data sample immediately following that header is the first data sample to which the new title key applies.

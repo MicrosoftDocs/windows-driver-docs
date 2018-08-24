@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Removing a Device in a Bus Driver
 
 
-## <a href="" id="ddk-removing-a-device-in-a-bus-driver-kg"></a>
+
 
 
 When removing a child device (child PDO), the parent bus driver must undo any operations it performed to add and start the device.

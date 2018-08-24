@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Miniport Adapter Shutdown
 
 
-## <a href="" id="ddk-adapter-shutdown-ng"></a>
+
 
 
 An NDIS miniport driver must register a [*MiniportShutdownEx*](https://msdn.microsoft.com/library/windows/hardware/ff559449) function during miniport driver initialization.

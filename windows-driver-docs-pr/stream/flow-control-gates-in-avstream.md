@@ -16,12 +16,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Flow Control Gates in AVStream
 
 
-## <a href="" id="ddk-flow-control-gates-in-avstream-ksg"></a>
+
 
 
 AVStream uses logic gates as a control flow mechanism. Each logic gate is represented by a [**KSGATE**](https://msdn.microsoft.com/library/windows/hardware/ff562566) structure.

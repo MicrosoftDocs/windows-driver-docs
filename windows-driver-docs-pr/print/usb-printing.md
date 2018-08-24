@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Microsoft USB Printer Driver (Usbprint.sys)
@@ -18,7 +19,7 @@ ms.technology: windows-devices
 
 Usbprint.sys is the Microsoft-provided device driver for USB printers. Usbprint.sys works with Usbmon.dll to provide end-to-end connectivity between USB printers and high-level printer drivers.
 
-## <a href="" id="ddk-usbprint-interface-gg"></a>
+
 
 
 Unlike some USB device class drivers, Usbprint.sys does not "drive" the printer. Instead, Usbprint.sys provides a communication conduit by which higher-level drivers can control the printer. As is true for parallel printers, USB printers require a printer driver to render print jobs, and might also require a language monitor to manage high-level communication with the printer.

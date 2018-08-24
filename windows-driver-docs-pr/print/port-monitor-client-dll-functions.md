@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Port Monitor Client DLL Functions
 
 
-## <a href="" id="ddk-port-monitor-client-dll-functions-gg"></a>
+
 
 
 The following table lists the functions that a port monitor UI DLL must define.

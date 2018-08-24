@@ -9,12 +9,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Header-Data Split Overview
 
 
-## <a href="" id="ddk-header-data-split-overview-ng"></a>
+
 
 
 This section briefly describes header-data split requirements and services.

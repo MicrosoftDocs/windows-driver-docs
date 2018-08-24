@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA Item Properties for Film Scanners
 
 
-## <a href="" id="ddk-wia-item-properties-for-film-scanners-si"></a>
+
 
 
 This section lists the required and optional WIA item properties for a scanner film item and for scanner film child items (frames). For a complete list of WIA common, camera-specific, and scanner-specific properties, see [WIA Properties](https://msdn.microsoft.com/library/windows/hardware/ff552739).

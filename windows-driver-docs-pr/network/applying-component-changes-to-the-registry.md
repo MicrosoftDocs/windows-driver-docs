@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Applying Component Changes to the Registry
 
 
-## <a href="" id="ddk-applying-component-changes-to-the-registry-ng"></a>
+
 
 
 After the network configuration subsystem calls a notify object's [**INetCfgComponentControl::ApplyRegistryChanges**](https://msdn.microsoft.com/library/windows/hardware/ff547727) method, the notify object should set, modify, or delete information from the registry depending on the action previously performed by the notify object. After the notify object performs specific actions related to installing, removing, or modifying parameters of the component that owns the object, the notify object should set a data member that indicates the action performed. After the subsystem calls **ApplyRegistryChanges** to apply configuration changes to the registry, **ApplyRegistryChanges** should use this data member to determine how to make registry changes. For example:

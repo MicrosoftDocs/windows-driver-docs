@@ -2,6 +2,12 @@
 title: Default rule set (KMDF)
 description: The Default rule set (Default.sdv) specifies the recommended sets of rules to use when you analyze your driver.
 ms.assetid: A86161C6-52E8-457B-9C75-100D36796183
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Default rule set (KMDF)

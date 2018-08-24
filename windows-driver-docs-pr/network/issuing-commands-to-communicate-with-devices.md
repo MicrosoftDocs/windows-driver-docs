@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Issuing Commands to Communicate with Devices
 
 
-## <a href="" id="ddk-issuing-commands-to-communicate-with-devices-ng"></a>
+
 
 
 A miniport driver with a WDM lower edge that controls devices on a bus issues commands to the bus interface to communicate with those devices. For more information, see [Handling IRPs](https://msdn.microsoft.com/library/windows/hardware/ff546847) and the documentation for the particular bus-driver interface.

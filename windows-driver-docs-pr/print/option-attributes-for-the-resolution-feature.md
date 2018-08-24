@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Option Attributes for the Resolution Feature
 
 
-## <a href="" id="ddk-option-attributes-for-the-resolution-feature-gg"></a>
+
 
 
 The following table lists the attributes associated with the Resolution feature. For more information about the Resolution feature, see [Standard Features](standard-features.md).

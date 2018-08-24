@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Providing a COM Interface
 
 
-## <a href="" id="ddk-providing-a-com-interface-si"></a>
+
 
 
 A WIA minidriver must support the **IWiaMiniDrv**, **IStiUSD**, and **IUnknown** interfaces to be recognized and loaded by the WIA service. The following interface identifiers should be added to the WIA driver's **QueryInterface** method:

@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Miniport Driver Hardware Reset
 
 
-## <a href="" id="ddk-hardware-reset-ng"></a>
+
 
 
 A miniport driver must register a [*MiniportResetEx*](https://msdn.microsoft.com/library/windows/hardware/ff559432) function with [**NdisMRegisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563654).
@@ -32,8 +33,6 @@ A miniport driver must register a [*MiniportResetEx*](https://msdn.microsoft.com
 -   Disable further interrupts.
 
 -   Clear out the data that is associated with any sends in progress. For example, on a ring buffer for a bus-master direct memory access (DMA) device, the pointers to send buffers should be cleared. Deserialized and connection-oriented miniport drivers must return NDIS\_STATUS\_REQUEST\_ABORTED for any queued send requests.
-
--   For 802.11 devices, perform the additional [hardware reset](driver-reset.md) procedures for the management of network connections and encryption keys.
 
 -   Restore the hardware state and the miniport driver's internal state to the state that existed before the reset operation.
 

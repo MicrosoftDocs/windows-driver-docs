@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling a System Set-Power IRP in a Bus Driver
 
 
-## <a href="" id="ddk-handling-a-system-set-power-irp-in-a-bus-driver-kg"></a>
+
 
 
 When a bus driver receives a system set-power IRP, it must take the following steps:

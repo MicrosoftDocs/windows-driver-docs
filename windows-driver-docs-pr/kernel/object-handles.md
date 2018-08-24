@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Object Handles
 
 
-## <a href="" id="ddk-object-handles-kg"></a>
+
 
 
 Drivers and user-mode components access most system-defined objects through *handles*. Handles are represented by the HANDLE opaque data type. (Note that handles are not used to access [device objects](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-object) or [driver objects](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-driver-object).)

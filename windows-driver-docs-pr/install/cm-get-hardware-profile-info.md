@@ -10,6 +10,7 @@ api_name:
 - CM_Get_Hardware_Profile_InfoW
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Get_Hardware_Profile_Info

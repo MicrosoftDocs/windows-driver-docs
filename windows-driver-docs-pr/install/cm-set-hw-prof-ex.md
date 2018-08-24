@@ -9,6 +9,7 @@ api_name:
 - CM_Set_HW_Prof_Ex
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Set_HW_Prof_Ex

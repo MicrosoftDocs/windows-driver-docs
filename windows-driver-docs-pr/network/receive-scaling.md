@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Receive Side Scaling Support
 
 
-## <a href="" id="ddk-receive-scaling-ng"></a>
+
 
 
 NDIS 6.0 introduced support for the scaling of receive-packet processing across multiple processors. The receive side scaling (RSS) interface accommodates several levels of NIC hardware support.

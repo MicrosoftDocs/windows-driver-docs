@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Canceling Pending I/O Operations
 
 
-## <a href="" id="ddk-canceling-pending-i-o-operations-si"></a>
+
 
 
 WIA applications can use the **IWiaItemExtras::CancelPendingIO** method (described in the Microsoft Windows SDK documentation) to cancel any pending I/O operations that the WIA minidriver may currently be processing. The **IWiaItemExtras::CancelPendingIO** method calls the [**IWiaMiniDrv::drvNotifyPnpEvent**](https://msdn.microsoft.com/library/windows/hardware/ff544998) method with a WIA\_EVENT\_CANCEL\_IO event. The WIA minidriver should cancel all current I/O operations and return to an idle state.

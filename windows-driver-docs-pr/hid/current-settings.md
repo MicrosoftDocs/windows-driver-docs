@@ -4,12 +4,13 @@ author: windows-driver-content
 description: Current Settings
 ms.assetid: 4de99ad0-fcd9-4f8d-8125-8f622443a0c6
 keywords: ["current registry settings WDK joysticks"]
+ms.localizationpriority: medium
 ---
 
 # Current Settings
 
 
-## <a href="" id="ddk-current-settings-di"></a>
+
 
 
 There are two parts to the current registry settings: a value to store, which is a replacement for the standard polling, and a key under which the capabilities, calibrated values, and minidriver data are stored.

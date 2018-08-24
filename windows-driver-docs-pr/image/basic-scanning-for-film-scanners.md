@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Basic Scanning for Film Scanners
 
 
-## <a href="" id="ddk-basic-scanning-for-film-scanners-si"></a>
+
 
 
 A WIA application enumerates the top-level items in the scanner item tree to determine the supported features of the scanner. The application then uses the top level item as the scanning source. For example, flatbed scanner items are used for scanning from the flatbed, and feeder Items are used for scanning from the document feeder.

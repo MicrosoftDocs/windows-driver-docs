@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to Point and Print
 
 
-## <a href="" id="ddk-introduction-to-point-and-print-gg"></a>
+
 
 
 *Point and Print* is a term that refers to the capability of allowing a user on a Windows 2000 and later client to create a connection to a remote printer without providing disks or other installation media. All necessary files and configuration information are automatically downloaded from the print server to the client.

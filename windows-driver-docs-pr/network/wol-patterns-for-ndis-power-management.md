@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WOL Patterns for NDIS Power Management
 
 
-## <a href="" id="ddk-wol-patterns-nr"></a>
+
 
 
 Starting with NDIS 6.20, Wake-on-LAN (WOL) patterns are supported for the *wake on pattern match* method. This WOL method minimizes spurious wake-up events and ensures that the computer is brought back to running state when expected. The interface for WOL patterns identifies specific patterns that are based on the packet type (for example, TCP SYN packets on IPv4). Specific patterns provide reliable pattern matches.

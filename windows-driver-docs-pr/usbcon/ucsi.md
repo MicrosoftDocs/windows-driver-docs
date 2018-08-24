@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # USB Type-C Connector System Software Interface (UCSI) driver
@@ -35,7 +36,7 @@ ms.technology: windows-devices
 
 Microsoft provides a USB Type-C Connector System Software Interface (UCSI) Specification-compliant driver. If your design includes an embedded controller, implement UCSI in your system's BIOS/EC and load the in-box UCSI driver (UcmUcsi.sys). Otherwise, you need to [write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md).
 
-## <a href="" id="drivers"></a>Drivers for supporting USB Type-C components for systems with embedded controllers
+## Drivers for supporting USB Type-C components for systems with embedded controllers
 
 
 Here is an example of a system with an embedded controller.
@@ -94,22 +95,19 @@ The examples given in this section describe interaction between the USB Type-C h
 1.  USB Type-C hardware/firmware detects a device-attach event and the Windows 10 system DRP system initially becomes the UFP role.
     1.  The firmware sends a notification indicating a change in the connector.
     2.  The UCSI driver sends a ​ GET\_CONNECTOR\_STATUS request.
-    3.  The firmware responds that its Connect Status = 1​ and Connector Partner Type = DFP.
-
-    ​
+    3.  The firmware responds that its Connect Status = 1​ and Connector Partner Type = DFP. ​
 2.  The drivers in the USB function stack responds to the enumeration.
 3.  The USB connector manager class extension recognizes that the USB function stack has loaded and hence the system is in the wrong state. It tells the UCSI driver to send Set USB Operation Role and Set Power Direction Role requests to the firmware.
 4.  USB Type-C hardware/firmware initiates the role-swap operation with the DFP​.
 
-### <a href="" id="detecting-a-charger-mismatch-error--condition"></a>Detecting a charger mismatch error​ condition
+### <a name="detecting-a-charger-mismatch-error--condition"></a>Detecting a charger mismatch error​ condition
 
 1.  USB Type-C hardware/firmware detects that a charger is connected and negotiates a default power contract. It also observes that the charger is not providing sufficient power to the system.
 2.  USB Type-C hardware/firmware sets the slow charging bit.
     1.  The firmware sends a notification indicating a change in the connector.
     2.  The UCSI driver sends a ​ GET\_CONNECTOR\_STATUS request.
     3.  The firmware responds with Connect Status = 1​, Connector Partner Type=DFP, and Battery Charging Status = Slow/Trickle.
-
-    ​
+   ​
 3.  The USB connector manager class extension sends notification to the UI to display the charger mismatch troubleshoot message.
 
 ## How to test UCSI

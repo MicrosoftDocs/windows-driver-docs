@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering a Cancel Routine
 
 
-## <a href="" id="ddk-registering-a-cancel-routine-kg"></a>
+
 
 
 If a device driver has a [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) routine, its dispatch routines can register a [*Cancel*](https://msdn.microsoft.com/library/windows/hardware/ff540742) routine by supplying its address as input to [**IoStartPacket**](https://msdn.microsoft.com/library/windows/hardware/ff550370).

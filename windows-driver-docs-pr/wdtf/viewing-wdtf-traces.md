@@ -12,6 +12,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Enabling and Viewing WDTF Traces
@@ -74,7 +75,7 @@ Viewing WDTF traces requires formatting the ETL files. The following steps show 
 
 3.  Open the CSV files in Microsoft Excel so you can use filtering features of Excel to filter the collected traces. You can filter the traces for certain time periods. You can filter the traces to examine traces logged by certain WDTF components.
 
-## <a href="" id="wdtf-enable-level"></a>Programmatically configuring WDTF trace levels
+## Programmatically configuring WDTF trace levels
 
 
 All WDTF objects provide tracing information as they run.

@@ -18,12 +18,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # AVStream Minidrivers Design Guide
 
 
-## <a href="" id="ddk-avstream-minidrivers-ksg"></a>
+
 
 
 This Design Guide describes how to design AVStream minidrivers that control streaming media devices. These topics help guide you through the process of designing high-performance drivers for a variety of device and encoding scenarios:

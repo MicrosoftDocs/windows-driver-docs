@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing Restart Records to a CLFS Stream
 
 
-## <a href="" id="ddk-introduction-to-wmi-kg"></a>
+
 
 
 There are two types of records in a Common Log File System (CLFS)stream: data records and restart records. This topic explains how to write restart records to a CLFS stream. For information about how to write data records, see [Writing Data Records to a CLFS Stream](writing-data-records-to-a-clfs-stream.md).

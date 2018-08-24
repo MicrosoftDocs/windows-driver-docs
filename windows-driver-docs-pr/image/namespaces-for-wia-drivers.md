@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Namespaces for WIA Drivers
 
 
-## <a href="" id="ddk-namespaces-for-wia-drivers-si"></a>
+
 
 
 All services run in session zero. However, applications might be running in a different session. Each session has its own *namespace*. Therefore, a named object created in one session will not generally be visible to a component in another session.

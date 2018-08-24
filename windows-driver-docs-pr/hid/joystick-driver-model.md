@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Joystick Driver Model
 
 
-## <a href="" id="ddk-joystick-driver-model-di"></a>
+
 
 
 One of the most critical goals of the joystick driver model is to provide timely access to joystick information. Two drivers provide the Windows 95/98/Me joystick services: a 16-bit ring 3 driver (Msjstick.drv), and a 32-bit ring 0 driver (Vjoyd.vxd). The Msjstick.drv driver provides basic services such as registry update and caps information; Vjoyd.vxd provides polling services.

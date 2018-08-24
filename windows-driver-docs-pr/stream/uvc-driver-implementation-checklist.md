@@ -6,6 +6,7 @@ ms.date: 01/30/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # USB Video Class (UVC) driver implementation checklist
@@ -18,31 +19,31 @@ Use these links to get acquainted with UVC:
 
 - Download the [USB Video Class 1.5](http://www.usb.org/developers/docs/devclass_docs/USB_Video_Class_1_5.zip) documentation from USB.org
 
-- Review the [USB Video Class driver overview](https://msdn.microsoft.com/windows/hardware/drivers/stream/usb-video-class-driver-overview) topic 
+- Review the [USB Video Class driver overview](https://docs.microsoft.com/windows-hardware/drivers/stream/usb-video-class-driver-overview) topic
 
 ## Step 2: Implement the platform-supplied Device MFT
 
 - The platform-supplied Device MFT is for RGB USB cameras. It provides common functionality, for example, face detection based ROI for 3A prioritization (if the camera firmware supports ROI control specified in UVC 1.5 standard).
 
-- To enable this functionality, you need to ensure that the camera supports ROI. If you need to disable this functionality, you must do so through registry keys (for example, an INF file entry). 
+- To enable this functionality, you need to ensure that the camera supports ROI. If you need to disable this functionality, you must do so through registry keys (for example, an INF file entry).
 
 ## Step 3: Implement the custom Device MFT and MFT0 for your device
 
 - Device MFT is a user-mode component of UVC. You can insert this component to add extensions and differentiators to the UVC.
 
-- Review the [Device MFT design guide](https://msdn.microsoft.com/windows/hardware/drivers/stream/dmft-design).
+- Review the [Device MFT design guide](https://docs.microsoft.com/windows-hardware/drivers/stream/dmft-design).
 
 - Review the [Device MFT sample code](https://github.com/Microsoft/Windows-driver-samples/tree/master/avstream/sampledevicemft) located on GitHub.
 
-- Review relevent information on MFT0 in the [Creating a camera driver MFT for a UWP device app](https://msdn.microsoft.com/windows/hardware/drivers/devapps/creating-a-camera-driver-mft) topic.
+- Review relevent information on MFT0 in the [Creating a camera driver MFT for a UWP device app](https://docs.microsoft.com/windows-hardware/drivers/devapps/creating-a-camera-driver-mft) topic.
 
 **Note** The Device MFT model supersedes the MFT0 model. While Windows continues to support the MFT0 model, we encourage you to use Device MFT instead, as it simplifies the design and supports more functionality and scalability.
 
 ## Step 4: Implement Microsoft-specified UVC extensions
 
-- [Microsoft extensions to USB Video Class 1.5 specification](https://msdn.microsoft.com/windows/hardware/drivers/stream/uvc-extensions-1-5)
+- [Microsoft extensions to USB Video Class 1.5 specification](https://docs.microsoft.com/windows-hardware/drivers/stream/uvc-extensions-1-5)
 
-- [Infrared stream support in UVC](https://msdn.microsoft.com/windows/hardware/drivers/stream/infrared-stream-support-in-uvc)
+- [Infrared stream support in UVC](https://docs.microsoft.com/windows-hardware/drivers/stream/infrared-stream-support-in-uvc)
 
 - Method 2 still image capture:
 
@@ -52,7 +53,7 @@ Use these links to get acquainted with UVC:
 
     - Microsoft-specific documentation:
 
-        - Review section 2.2.1 and 2.2.2 in the [Microsoft extensions to USB Video Class 1.5 specification](https://msdn.microsoft.com/windows/hardware/drivers/stream/uvc-extensions-1-5#21-description).
+        - Review section 2.2.1 and 2.2.2 in the [Microsoft extensions to USB Video Class 1.5 specification](https://docs.microsoft.com/windows-hardware/drivers/stream/uvc-extensions-1-5).
 
 ## Step 5: Test your UVC implementation to ensure it passes HLK tests and meets required functionality and performance
 

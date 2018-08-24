@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing Dispatch Routines
 
 
-## <a href="" id="ddk-writing-dispatch-routines-kg"></a>
+
 
 
 Processing any I/O request packet (IRP) begins in a dispatch routine that the driver registers to handle an [IRP major function code](https://msdn.microsoft.com/library/windows/hardware/ff550710) (**IRP\_MJ\_*XXX***). The driver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine exports entry points for dispatch routines in a dispatch table within the driver's [**DRIVER\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff544174) structure.

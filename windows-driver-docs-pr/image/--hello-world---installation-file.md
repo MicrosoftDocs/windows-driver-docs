@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # 'Hello World' Installation File
 
 
-## <a href="" id="ddk--hello-world-installation-file-si"></a>
+
 
 
 A minidriver requires a setup information (INF) file to be installed. An INF file is a text file containing all of the information needed to install the device. For information about INF files, see the [INF Files for WIA Devices](inf-files-for-wia-devices.md) and [Creating an INF File](https://msdn.microsoft.com/library/windows/hardware/ff549520) section.

@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 #  Enabling Support for Color in PCL XL Minidrivers
 
 
-## <a href="" id="ddk-enabling-support-for-color-in-pcl-xl-minidrivers-gg"></a>
+
 
 
 Developing a GPD file for color PCL XL is similar to developing a GPD file for monochrome PCL XL. The main differences are described in this topic. The sample GPD entries presented here might need to be modified appropriately for your device.

@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DispatchReadWrite Using Buffered I/O
 
 
-## <a href="" id="ddk-dispatchreadwrite-using-buffered-i-o-kg"></a>
+
 
 
 Any lowest-level device driver that sets up its device objects for buffered I/O satisfies a read request by returning data transferred from its device into a locked down system-space buffer at **Irp-&gt;AssociatedIrp.SystemBuffer**. It satisfies a write request by transferring data from the same buffer out to its device.

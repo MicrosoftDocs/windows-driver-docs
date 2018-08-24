@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Isochronous Synchronization Options for IEEE 1394 Devices
 
 
-## <a href="" id="ddk-isochronous-synchronization-options-for-ieee-1394-devices-kg"></a>
+
 
 
 The IEEE 1394 driver stack supports certain types of synchronization and filtering during [**REQUEST\_ISOCH\_LISTEN**](https://msdn.microsoft.com/library/windows/hardware/ff537655) and [**REQUEST\_ISOCH\_TALK**](https://msdn.microsoft.com/library/windows/hardware/ff537660) operations.

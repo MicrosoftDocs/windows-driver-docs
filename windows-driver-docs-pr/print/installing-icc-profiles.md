@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing ICC Profiles
 
 
-## <a href="" id="ddk-installing-icc-profiles-gg"></a>
+
 
 
 To install ICC profiles for a printer, the files must be listed in a [printer INF file](printer-inf-files.md).

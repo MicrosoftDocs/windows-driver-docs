@@ -14,10 +14,11 @@ keywords:
 - audio drivers WDK , Universal Audio Architecture
 - 1394 WDK audio
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Universal Audio Architecture
@@ -31,7 +32,7 @@ To be UAA-compatible, a USB audio device must conform to both the USB audio spec
 
 To be UAA-compatible, an IEEE 1394 AV/C audio device must conform to both the relevant IEEE 1394 specifications and the UAA design guidelines for IEEE 1394 AV/C audio devices. IEEE 1394 audio devices can make use of the [AVCAudio class system driver](kernel-mode-wdm-audio-components.md#avcaudio_class_system_driver) (Avcaudio.sys), which is supplied as part of Windows.
 
-For more information about the Microsoft UAA initiative, see the white paper titled *Universal Audio Architecture* on the [audio technology](http://go.microsoft.com/fwlink/p/?linkid=8751) page on the WHDC website. For more information about Intel HD Audio, see the [Intel HD Audio](http://go.microsoft.com/fwlink/p/?linkid=42508) website. For a list of related specifications for USB and IEEE 1394 audio devices, see [USBAudio Class System Driver](kernel-mode-wdm-audio-components.md#usbaudio_class_system_driver) and [AVCAudio Class System Driver](kernel-mode-wdm-audio-components.md#avcaudio_class_system_driver).
+For more information about the Microsoft UAA initiative, see the [Universal Audio Architecture](http://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/UAA_Guidelines.doc) white paper. For more information about Intel HD Audio, see the [Intel HD Audio](http://go.microsoft.com/fwlink/p/?linkid=42508) website. For a list of related specifications for USB and IEEE 1394 audio devices, see [USBAudio Class System Driver](kernel-mode-wdm-audio-components.md#usbaudio_class_system_driver) and [AVCAudio Class System Driver](kernel-mode-wdm-audio-components.md#avcaudio_class_system_driver).
 
  
 

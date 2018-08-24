@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Power Management Enhancements in NDIS 6.20
 
 
-## <a href="" id="ddk-power-management-enhancements-in-ndis-6-20-ng"></a>
+
 
 
 NDIS 6.20 introduces power management enhancements to reduce computer power consumption. NDIS 6.20 power management support is mandatory for NDIS 6.20 and later drivers.

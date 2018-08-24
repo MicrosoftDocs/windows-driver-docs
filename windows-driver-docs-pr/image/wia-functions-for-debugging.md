@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA Functions for Debugging
 
 
-## <a href="" id="ddk-wia-functions-for-debugging-si"></a>
+
 
 
 You can use the following function to log trace messages, warning messages, and error messages when you are developing your WIA minidriver.

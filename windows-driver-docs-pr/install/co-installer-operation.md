@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Co-installer Operation
 
 
-## <a href="" id="ddk-co-installer-operation-dg"></a>
+
 
 
 Co-installers are called by SetupAPI, as shown in the following figure.

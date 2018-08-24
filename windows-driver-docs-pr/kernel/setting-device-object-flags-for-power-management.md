@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting Device Object Flags for Power Management
 
 
-## <a href="" id="ddk-setting-device-object-flags-for-power-management-kg"></a>
+
 
 
 In its [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine, each driver creates a device object (filter device object (DO), functional device object (FDO), or physical device object (PDO)) and sets the DO\_*XXX* flags in the device object to describe the device attributes and driver configuration. The following device object flags pertain to power management.

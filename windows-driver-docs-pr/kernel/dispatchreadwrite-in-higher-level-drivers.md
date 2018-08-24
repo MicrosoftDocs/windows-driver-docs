@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DispatchReadWrite in Higher-Level Drivers
 
 
-## <a href="" id="ddk-dispatchreadwrite-in-higher-level-drivers-kg"></a>
+
 
 
 Except for file system drivers, a higher-level driver usually does not have any internal driver queues for IRPs. Such a driver's [*DispatchReadWrite*](https://msdn.microsoft.com/library/windows/hardware/ff543381) routine can pass IRPs with valid parameters on to lower drivers, possibly after setting up its [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine, as described in [Passing IRPs down the Driver Stack](passing-irps-down-the-driver-stack.md).

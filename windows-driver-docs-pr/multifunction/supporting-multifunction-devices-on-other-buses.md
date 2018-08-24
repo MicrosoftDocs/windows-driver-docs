@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting Multifunction Devices On Other Buses
 
 
-## <a href="" id="ddk-supporting-multifunction-devices-on-other-buses-dg"></a>
+
 
 
 For a multifunction device on a PnP ISA, USB, or IEEE 1394 bus, the parent bus driver enumerates the individual functions if the device conforms to the bus standard.

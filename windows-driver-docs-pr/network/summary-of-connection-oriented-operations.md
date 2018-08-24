@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Summary of Connection-Oriented Operations
 
 
-## <a href="" id="ddk-summary-of-connection-oriented-operations-ng"></a>
+
 
 
 This section describes the connection-oriented operations performed by connection-oriented clients, call managers, and miniport drivers. An integrated MCM driver performs the connection-oriented operations of both a call manager and a connection-oriented miniport driver.

@@ -12,10 +12,11 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_AUDIO\_MIC\_ARRAY\_GEOMETRY
@@ -72,7 +73,7 @@ Remarks
 
 The KSPROPERTY\_AUDIO\_MIC\_ARRAY\_GEOMETRY property only supports KSPROPERTY\_TYPE\_GET requests. In order for the client to determine the correct size of buffer necessary to accommodate the entire geometry structure, it must first make the request with a zero buffer size. The client can then use the value returned in the status block to set the buffer size correctly and then make another property request with the correctly sized buffer.
 
-For more information about how to process a microphone array in Windows, see the [Audio Technologies for Windows](http://go.microsoft.com/fwlink/p/?linkid=8751) page on the WHDC website and refer to the following resources:
+For more information about how to process a microphone array in Windows, refer to the following resources:
 
 [Microphone Array Support in Windows (white paper)](http://go.microsoft.com/fwlink/p/?linkid=120592)
 

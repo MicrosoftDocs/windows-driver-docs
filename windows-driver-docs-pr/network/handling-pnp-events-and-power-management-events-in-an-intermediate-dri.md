@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling PnP Events and Power Management Events in an Intermediate Driver
 
 
-## <a href="" id="ddk-handling-pnp-events-and-pm-events-in-an-intermediate-driver-ng"></a>
+
 
 
 An intermediate driver must be able to handle Plug and Play (PnP) events and power management events. Specifically:

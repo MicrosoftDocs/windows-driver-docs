@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Rules for Implementing DispatchCreate, DispatchClose, and DispatchCreateClose Routines
 
 
-## <a href="" id="ddk-rules-for-implementing-dispatchcreate-dispatchclose-and-dispatchcr"></a>
+
 
 
 Keep the following points in mind when implementing *DispatchCreate*, *DispatchClose*, and *DispatchCreateClose* routines:

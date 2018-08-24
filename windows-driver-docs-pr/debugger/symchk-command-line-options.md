@@ -4,7 +4,7 @@ description: SymChk uses the following syntax
 ms.assetid: e17dd001-2830-49bd-b727-fcd772ee23b4
 keywords: ["SymChk Command-Line Options Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - SymChk Command-Line Options
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # SymChk Command-Line Options
@@ -118,6 +119,10 @@ Force checking for private symbols. Public symbols will be treated as not matchi
 
 <span id="s"></span><span id="S"></span>**s**  
 Force checking for public (split) symbols. Private symbols will be treated as not matching. The **s** option implies **e** and **u**, and cannot be used with **p**.
+
+<span id="r"></span><span id="R"></span>**r**  
+Expand all non-symbol server elements in the specified path in order to do a deep search of the path. NOTE: This option may produce matches that will not occur inside the debugger since it modifies the symbol path specified.
+
 
 <span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
 The available options are divided into several classes. Each class of options controls a different set of features.

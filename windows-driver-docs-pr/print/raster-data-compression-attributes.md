@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Raster Data Compression Attributes
 
 
-## <a href="" id="ddk-raster-data-compression-attributes-gg"></a>
+
 
 
 There are no attributes associated with raster data compression.

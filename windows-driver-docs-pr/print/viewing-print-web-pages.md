@@ -17,12 +17,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Viewing Print Web Pages
 
 
-## <a href="" id="ddk-viewing-print-web-pages-gg"></a>
+
 
 
 With any Internet browser executing on any type of client platform, users can view Web pages that display the status of a Microsoft Windows 2000 or later print server and its connected printers. Microsoft provides a set of server-resident HTML files that generate these Web pages. Web pages for the print server and for each server-installed printer can be referenced by a client browser using URLs. Additional pages can be referenced by links from these pages.

@@ -14,6 +14,7 @@ api_name:
 - VIDEO_DRIVER_DEBUG_REPORT_REQUEST
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xAD: VIDEO\_DRIVER\_DEBUG\_REPORT\_REQUEST

@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering an IoCompletion Routine
 
 
-## <a href="" id="ddk-registering-an-iocompletion-routine-kg"></a>
+
 
 
 To register an [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine, a dispatch routine calls [**IoSetCompletionRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff549679), supplying the *IoCompletion* routine's address and the IRP that it will subsequently pass on to lower drivers using [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336).

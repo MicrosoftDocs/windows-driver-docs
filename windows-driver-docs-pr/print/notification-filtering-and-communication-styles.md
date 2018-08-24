@@ -20,12 +20,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Notification Filtering and Communication Styles
 
 
-## <a href="" id="ddk-notification-filtering-and-communication-styles-gg"></a>
+
 
 
 This section describes the interface between the spooler process and printing components such as the print processor, driver, and monitor.

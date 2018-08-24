@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: 0aac1346-b5c7-4dcc-ab86-03e8fd151505
 keywords:
  - IRP_MN_START_DEVICE Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_START\_DEVICE

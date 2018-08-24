@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Driver Control and Device Control
 
 
-## <a href="" id="ddk-driver-control-and-device-control-gg"></a>
+
 
 
 If color management control is provided by either the driver or by printer hardware, the driver's [printer graphics DLL](printer-graphics-dll.md) must set the GCAPS\_ICM flag in the [**DEVINFO**](https://msdn.microsoft.com/library/windows/hardware/ff552835) structure.

@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Video memory offer and reclaim
@@ -19,7 +20,7 @@ Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers must
 | Minimum WDDM version                                                              | 1.2                              |
 | Minimum Windows version                                                           | 8                                |
 | Driver implementation—Full graphics and Render only                               | Mandatory                        |
-| [WHCK]( http://go.microsoft.com/fwlink/p/?linkid=258342) requirements and tests | **Device.Graphics…OfferReclaim** |
+| [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests | **Device.Graphics…OfferReclaim** |
 
  
 
@@ -67,7 +68,7 @@ You should carefully test that your driver handles this feature correctly becaus
 ## <span id="Hardware_certification_requirements"></span><span id="hardware_certification_requirements"></span><span id="HARDWARE_CERTIFICATION_REQUIREMENTS"></span>Hardware certification requirements
 
 
-For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation]( http://go.microsoft.com/fwlink/p/?linkid=258342) on **Device.Graphics…OfferReclaim**. Note that these requirements list the scenarios in which the driver must offer allocations.
+For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphics…OfferReclaim**. Note that these requirements list the scenarios in which the driver must offer allocations.
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 

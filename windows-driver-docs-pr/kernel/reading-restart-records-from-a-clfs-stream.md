@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Reading Restart Records from a CLFS Stream
 
 
-## <a href="" id="ddk-introduction-to-wmi-kg"></a>
+
 
 
 To read all of the restart records in a Common Log File System (CLFS) stream (in reverse order), use the following procedure.

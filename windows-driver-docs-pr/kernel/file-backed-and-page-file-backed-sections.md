@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # File-Backed and Page-File-Backed Sections
 
 
-## <a href="" id="ddk-file-backed-and-page-file-backed-sections-kg"></a>
+
 
 
 All memory sections are supported ("backed") by disk files that can contain, either temporarily or permanently, the data to be shared. When you create a section, you can identify a specific data file to which the section will be backed. Such sections are called *file-backed* sections. If you do not identify a backing file, the section is backed by the system's paging file and the section is called a *page-file-backed* section. The data in file-backed sections can be permanently written to disk. Data in page-file-backed sections is never permanently written to disk.

@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Synchronizing the Use of a Parallel Port
 
 
-## <a href="" id="ddk-synchronizing-the-use-of-a-parallel-port-kg"></a>
+
 
 
 Clients must synchronize their use of a parallel port by allocating a parallel port before using it and freeing the port after they are done using it.

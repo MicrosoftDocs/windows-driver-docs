@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DVD Related Clock Functions
 
 
-## <a href="" id="ddk-dvd-related-clock-functions-ksg"></a>
+
 
 
 All clock handles should be stored with the appropriate individual streams. They should not be stored globally or in a static variable. For more information, see [KS Clocks](ks-clocks.md).

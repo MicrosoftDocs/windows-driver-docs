@@ -9,12 +9,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS Object Version Issues for WMI
 
 
-## <a href="" id="ddk-ndis-object-version-issues-for-wmi-ng"></a>
+
 
 
 This topic describes the NDIS object version issues that affect Windows Management Instrumentation (WMI) support.

@@ -7,6 +7,7 @@ ms.date: 04/05/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Get product data
@@ -391,15 +392,16 @@ The following table lists Operating system Family Codes and their descriptions.
 | Windows8Server | Windows Server 2012 |
 | Windows81 | Windows 8.1 |
 | Windows81Server | Windows Server 2012 R2 |
-| Windows_v100_TH1 | Windows Threshold 1 |
-| Windows_v100_TH2 | Windows Threshold 2 |
+| Windows_v100 | Windows 10 Threshold |
+| Windows_v100Server | Windows Server Threshold |
 | Windows_v100_RS1 | Windows 10 Anniversary Update |
 | Windows_v100Server_RS1 | Windows Server 2016 |
 | Windows_v100_RS2 | Windows 10 RS2 Update |
 | Windows_v100Server_RS2 | Windows Server RS2 |
 | Windows_v100_RS3 | Windows 10 RS3 Update |
 | Windows_v100Server_RS3 | Windows Server RS3 |
-| WINDOWS_v100_ARM64_RS3_FULL_PRE_RELEASE_CLOUD | Windows 10 RS3 Update |
+| Windows_v100_RS4 | Windows 10 RS4 Update |
+| Windows_v100Server_RS4 | Windows Server RS4 |
 
 ### List of Operating System Codes
 
@@ -407,53 +409,56 @@ The following table lists Operating System Codes and their descriptions.
 
 | OS Code | Description |
 |:--|:--|
-| WindowsMe | Windows Me |
-| Windows2000 | Windows 2000 |
-| Windows98 | Windows 98 |
-| WindowsNT40 | Windows NT 4.0 |
-| WindowsXP_X86 | Windows XP |
-| WindowsXP_IA64 | Windows XP IA64 |
-| WindowsXP_X64 | Windows XP X64 |
-| WindowsXPMediaCenter | Windows XP Media Center |
-| WindowsServer2003_X86 | Windows Server 2003 |
-| WindowsServer2003_IA64 | Windows Server 2003 IA64 |
-| WindowsServer2003_X64 | Windows Server 2003 X64 |
-| WindowsVista_X86 | Windows Vista Client |
-| WindowsVista_X64 | Windows Vista Client X64 |
-| Windows2008Server_X86 | Windows Server 2008 |
-| Windows2008Server_IA64 | Windows Server 2008 IA64 |
-| Windows2008Server_X64 | Windows Server 2008 X64 |
-| WindowsHomeServer | Windows Home Server |
-| Windows7_X86 | Windows 7 Client |
-| Windows7_X64 | Windows 7 Client x64 |
-| Windows2008ServerR2_IA64 | Windows Server 2008 Release 2 IA64 |
-| Windows2008ServerR2_X64 | Windows Server 2008 Release 2 x64 |
-| WindowsServerSolutions_X64 | Windows Server Solutions x64 |
-| Windows8_X86 | Windows 8 Client |
-| Windows8_X64 | Windows 8 Client x64 |
-| Windows8_ARM | Windows 8 Client RT |
-| Windows8Server_X64 | Windows Server 2012 |
-| Windows81_X86 | Windows 8.1 Client |
-| Windows81_X64 | Windows 8.1 Client x64 |
-| Windows81_ARM | Windows 8.1 Client RT |
-| Windows63Server_X64 | Windows Server 2012 R2 x64 |
-| Windows_v100_X86_TH1_Full | Windows 10 Client versions 1506 and 1511 |
-| Windows_v100_X64_TH1_Full | Windows 10 Client versions 1506 and 1511 x64 |
-| Windows_v100Server_X64_TH1_Full | Windows Server 2016 x64 |
-| Windows_v100_X86_TH2_Full | Windows 10 Client versions 1506 and 1511 |
-| Windows_v100_X64_TH2_Full | Windows 10 Client versions 1506 and 1511 x64 |
-| Windows_v100Server_X64_TH2_Full | Windows Server 2016 x64 |
-| Windows_v100_X86_RS1_Full | Windows 10 Client version 1607 |
-| Windows_v100_X64_RS1_Full | Windows 10 Client version 1607 x64 |
-| Windows_v100Server_X64_RS1_Full | Windows Server 2016 x64 |
-| Windows_v100_X86_RS2_Full | Windows 10 RS2 Client |
-| Windows_v100_X64_RS2_Full | Windows 10 RS2 Client x64 |
-| Windows_v100Server_X64_RS2_Full | Windows Server RS2 x64 |
-| Windows_v100_X86_RS3_Full | Windows 10 RS3 Client |
-| Windows_v100_X64_RS3_Full | Windows 10 RS3 Client x64 |
-| Windows_v100_ARM64_RS3_Full | Windows 10 RS3 Client ARM64 |
-| Windows_v100Server_x64_RS3_Full | Windows Server RS3 x64 |
-| WINDOWS_v100_ARM64_RS3_FULL_PRE_RELEASE_CLOUD | Windows 10 S RS3 Client ARM64 Pre Release |
+|WINDOWS_ME|Windows Me|
+|WINDOWS_98|Windows 98|
+|WINDOWS_2000|Windows 2000|
+|WINDOWS_NT40|Windows NT 4.0|
+|WINDOWS_XP|Windows XP|
+|WINDOWS_XP_IA64|Windows XP IA64|
+|WINDOWS_XP_X64|Windows XP X64|
+|WINDOWS_XP_MEDIA_CENTER|Windows XP Media Center|
+|WINDOWS_2003|Windows Server 2003|
+|WINDOWS_2003_IA64|Windows Server 2003 IA64|
+|WINDOWS_2003_X64|Windows Server 2003 X64|
+|WINDOWS_VISTA|Windows Vista Client|
+|WINDOWS_VISTA_X64|Windows Vista Client X64|
+|WINDOWS_2008_SERVER|Windows Server 2008|
+|WINDOWS_2008_SERVER_IA64|Windows Server 2008 IA64|
+|WINDOWS_2008_SERVER_X64|Windows Server 2008 X64|
+|WINDOWS_HOME_SERVER|Windows Home Server|
+|WINDOWS_7|Windows 7 Client|
+|WINDOWS_7_X64|Windows 7 Client x64|
+|WINDOWS_2008_SERVER_R2_IA64|Windows Server 2008 Release 2 IA64|
+|WINDOWS_2008_SERVER_R2_X64|Windows Server 2008 Release 2 x64|
+|WINDOWS_SERVER_SOLUTIONS_X64|Windows Server Solutions x64|
+|WINDOWS_8|Windows 8 Client|
+|WINDOWS_8_X64|Windows 8 Client x64|
+|WINDOWS_8_ARM|Windows 8 Client RT|
+|WINDOWS_8_SERVER_X64|Windows Server 2012|
+|WINDOWS_v63|Windows 8.1 Client|
+|WINDOWS_v63_X64|Windows 8.1 Client x64|
+|WINDOWS_v63_ARM|Windows 8.1 Client RT|
+|WINDOWS_v63_SERVER_X64|Windows Server 2012 R2 x64|
+|WINDOWS_v100_TH1_FULL|Windows 10 Client versions 1506 and 1511 (TH1)|
+|WINDOWS_v100_X64_TH1_FULL|Windows 10 Client versions 1506 and 1511 x64 (TH1)|
+|WINDOWS_v100_SERVER_X64_TH1_FULL|Windows Server 2016 x64 (TH1)|
+|WINDOWS_v100_TH2_FULL|Windows 10 Client versions 1506 and 1511 (TH2)|
+|WINDOWS_v100_X64_TH2_FULL|Windows 10 Client versions 1506 and 1511 x64 (TH2)|
+|WINDOWS_v100_SERVER_X64_TH2_FULL|Windows Server 2016 x64 (TH2)|
+|WINDOWS_v100_RS1_FULL|Windows 10 Client version 1607|
+|WINDOWS_v100_X64_RS1_FULL|Windows 10 Client version 1607 x64|
+|WINDOWS_v100_SERVER_X64_RS1_FULL|Windows Server 2016 x64 (RS1)|
+|WINDOWS_v100_RS2_FULL|Windows 10 RS2 Client|
+|WINDOWS_v100_X64_RS2_FULL|Windows 10 RS2 Client x64|
+|WINDOWS_v100_RS3_FULL|Windows 10 RS3 Client|
+|WINDOWS_v100_X64_RS3_FULL|Windows 10 RS3 Client x64|
+|WINDOWS_v100_ARM64_RS3_FULL|Windows 10 RS3 Client ARM64|
+|WINDOWS_v100_SERVER_X64_RS3_FULL|Windows Server RS3 x64|
+|WINDOWS_v100_RS4_FULL|Windows 10 RS4 Client|
+|WINDOWS_v100_X64_RS4_FULL|Windows 10 RS4 Client x64|
+|WINDOWS_v100_ARM64_RS4_FULL|Windows 10 RS4 Client ARM64|
+|WINDOWS_v100_SERVER_X64_RS4_FULL|Windows 10 RS4 Server x64|
+|WINDOWS_v100_SERVER_ARM64_RS4_FULL|Windows 10 RS4 Server ARM64|
 
 
 ## Error codes

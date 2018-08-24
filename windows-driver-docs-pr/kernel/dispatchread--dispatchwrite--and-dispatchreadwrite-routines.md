@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DispatchRead, DispatchWrite, and DispatchReadWrite Routines
 
 
-## <a href="" id="ddk-dispatchread-dispatchwrite-and-dispatchreadwrite-routines-kg"></a>
+
 
 
 A driver's [*DispatchRead*](https://msdn.microsoft.com/library/windows/hardware/ff543376) and [*DispatchWrite*](https://msdn.microsoft.com/library/windows/hardware/ff544034) routines handle IRPs with I/O function codes of [**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff550794) and [**IRP\_MJ\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/ff550819), respectively. Alternatively, a combined [*DispatchReadWrite*](https://msdn.microsoft.com/library/windows/hardware/ff543381) routine can handle IRPs for both of these I/O function codes.

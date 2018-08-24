@@ -7,6 +7,7 @@ ms.date: 04/05/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Create a new submission for a product
@@ -23,7 +24,7 @@ This method has the following syntax. See the following sections for usage examp
 
 | Method | Request URI |
 |:--|:--|
-| POST | `https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/{productID}/submissions` |
+| POST | `https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions` |
 
 
 The productId in the method is the product for which the submission is intended.
@@ -58,7 +59,7 @@ For details about the fields in the request, refer to [Submission resource](get-
 The following example demonstrates how to create a new submission.
 
 ```
-POST https://manage.devcenter.microsoft.com/api/v1.0/hardware/products/14631253285588838/submissions HTTP/1.1
+POST https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14631253285588838/submissions HTTP/1.1
 Authorization: Bearer <your access token>
 ```
 
@@ -81,12 +82,12 @@ The following example demonstrates the JSON response body returned by a successf
   },
   "links": [
     {
-      "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products/14631253285588838/submissions/1152921504621465124",
+      "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14631253285588838/submissions/1152921504621465124",
       "rel": "self",
       "method": "GET"
     },
     {
-      "href": "https://manage.devcenter.microsoft.com/api/v1/hardware/products/14631253285588838/submissions/1152921504621465124",
+      "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14631253285588838/submissions/1152921504621465124",
       "rel": "update_submission",
       "method": "PATCH"
     }

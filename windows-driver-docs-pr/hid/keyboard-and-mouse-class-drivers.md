@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Keyboard and mouse class drivers
@@ -54,7 +55,7 @@ Kbdclass and Mouclass each feature:
 
 -   Connection of a [class service callback routine](https://msdn.microsoft.com/library/windows/hardware/ff542274) that a function driver uses to transfer data from the input data buffer of the device to the data buffer of the class driver.
 
-## <a href="" id="ddk-configuration-of-device-objects-for-a-single-keyboard-or-a-single-"></a>Configration of device objects
+## Configuration of device objects
 
 
 The following figure shows the configuration of device objects for a Plug and Play PS/2-style keyboard and mouse device. Each class driver creates an upper-level class [*filter device object*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-filter-device-object) (filter DO) that is attached to a function device object ([*FDO*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-fdo)) through an optional upper-level device filter DO. An upper-level device filter driver creates the upper-level device filter DO. I8042prt creates the function DO and attaches it to a physical device object ([*PDO*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pdo)) created by the root bus driver.
@@ -95,7 +96,7 @@ In the *grandmaster mode*, the class driver operates all the devices in the foll
 
 Kbdclass and Mouclass operate in the one-to-one mode if their registry entry value **ConnectMultiplePorts** is set to 0x00 (under the key **HKLM\\Services\\CurrentControlSet\\***&lt;class service&gt;***\\Parameters**, where *class service* is Kbdclass or Mouclass). Otherwise Kbdclass and Mouclass operate in grandmaster mode.
 
-## <a href="" id="ddk-open-and-close-a-keyboard-and-mouse-device-kg"></a>Open and close via the class driver
+## Open and close via the class driver
 
 
 The Microsoft Win32 subsystem opens all keyboard and mouse devices for its exclusive use. For each device class, the Win32 subsystem treats input from all the devices as if the input came from a single input device. An application cannot request to receive input from only one particular device.
@@ -131,7 +132,7 @@ The class and filter service callbacks are called in the following way:
 
 -   After filtering the input data, the filter service callback uses the class connect data that it saved to make a callback to the class service callback.
 
-## <a href="" id="ddk-query-and-set-a-keyboard-device-kg"></a>Query and set a keyboard device
+## Query and set a keyboard device
 
 
 I8042prt supports the following internal device control requests to query information about a keyboard device, and to set parameters on a keyboard device:

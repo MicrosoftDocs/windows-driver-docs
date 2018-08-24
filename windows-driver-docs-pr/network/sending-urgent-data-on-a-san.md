@@ -9,12 +9,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sending Urgent Data on a SAN
 
 
-## <a href="" id="ddk-sending-urgent-data-on-a-san-ng"></a>
+
 
 
 If an application sends urgent data on a SAN, the Windows Sockets switch transfers that data as described in the following sequence:

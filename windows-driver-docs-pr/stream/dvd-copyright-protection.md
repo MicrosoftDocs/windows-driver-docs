@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DVD Copyright Protection
 
 
-## <a href="" id="ddk-dvd-copyright-protection-ksg"></a>
+
 
 
 The following topics address copyright protection:

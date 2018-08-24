@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Properties for WIA Scanner Minidrivers
 
 
-## <a href="" id="ddk-properties-for-wia-scanner-minidrivers-si"></a>
+
 
 
 The following lists contains all of the WIA properties that are unique to WIA scanner minidrivers.

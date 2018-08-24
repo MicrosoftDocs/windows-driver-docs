@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Mobile Broadband Implementation Guidelines for USB Devices
@@ -24,7 +25,7 @@ The information in this topic applies to:
 
 MBIM devices may require time to complete initialization when they receive MBIM OPEN message from the host. The device should wait for its initialization to complete before responding to the MBIM OPEN message. The device should not respond to the message with error status like MBIM\_STATUS\_BUSY and expect the host to poll the device with MBIM OPEN messages. Responding to MBIM OPEN with a status other than MBIM\_STATUS\_SUCCESS terminates the initialization process on the host.
 
-## <a href="" id="multi-carrier-multi-subscription"></a>Multi-carrier\\Multi-subscription
+## Multi-carrier\\Multi-subscription
 
 
 Please refer to **IHV Guidance for Implementing Multimode- and Multicarrier- Capable MB Devices** for details.
@@ -97,7 +98,7 @@ When a device loses signal strength the device must indicate **MBIMActivationSta
 ## DNS Server Information
 
 
-When Basic IP information (as defined in MBIM section 10.5.20.1) is provided via MBIM\_CID\_IP\_CONFIGURATION, DNS server information (as defined in MBIM section 10.5.20.1) must also be provided via MBIM\_CID\_IP\_CONFIGURATION. DNS server information may be provided via MBIM\_CID\_IP\_CONFIGURATION even when Basic IP information is not provided via MBIM\_CID\_IP\_CONFIGURATION. This applies to both IPv4 and IPv6.
+When Basic IP information (as defined in MBIM section 10.5.20.1) is provided via MBIM\_CID\_IP\_CONFIGURATION, DNS server information (as defined in MBIM section 10.5.20.1) can also be provided via MBIM\_CID\_IP\_CONFIGURATION. When DNS server information is updated, MBIM\_CID\_IP\_CONFIGURAITON must have the complete Basic IP information obtained before. DNS server information can be provided solely via MBIM\_CID\_IP\_CONFIGURATION even if the Basic IP information is not provided via MBIM\_CID\_IP\_CONFIGURATION. This applies to both IPv4 and IPv6.
 
 ## IPv6
 
@@ -108,7 +109,7 @@ For basic IP information (as defined in MBIM section 10.5.20.1), the expected IP
 -   **DNS server information from RA** - The only IP Layer configuration mechanism for DNS server information (as defined in MBIM section 10.5.20.1) supported by Windows is DHCPv6. MBIM devices must configure DNS server information, even if present in RA, via MBIM\_CID\_IP\_CONFIGURATION.
 -   **Basic IP information and DNS server information from DHCPv6** - If a mobile network provides basic IP information and DNS server information (as defined in MBIM section 10.5.20.1) from DHCPv6, then MBIM devices must allow DHCPv6 packets to be forwarded to the host and must not intercept the DHCPv6 packets or provide the basic IP information and DNS server information present in the DHCPv6 packets via MBIM\_CID\_IP\_CONFIGURATION.
 
-## <a href="" id="mbim-cid-radio-state"></a>MBIM\_CID\_RADIO\_STATE
+## MBIM\_CID\_RADIO\_STATE
 
 
 MBIM devices must not fail MBIM\_CID\_RADIO\_STATE operations with status of MBIM\_STATUS\_SIM\_NOT\_INSERTED when SIM is not present. Radio operations must not be failed due to SIM absence.

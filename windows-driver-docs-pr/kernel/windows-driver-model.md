@@ -9,6 +9,7 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Windows Driver Model (WDM)
@@ -16,7 +17,7 @@ ms.technology: windows-devices
 
 This section describes the *Windows Driver Model* (WDM), and discusses types of WDM drivers, device configuration, driver layering, and WDM versioning. WDM simplifies the design of kernel-mode drivers that are written to run on multiple versions of the Windows operating system.
 
-## <a href="" id="ddk-windows-driver-model-kg"></a>
+
 
 
 ## In this section

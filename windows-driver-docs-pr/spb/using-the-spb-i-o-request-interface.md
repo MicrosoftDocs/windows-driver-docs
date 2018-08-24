@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using the SPB I/O Request Interface
@@ -15,7 +16,7 @@ ms.technology: windows-devices
 
 Starting with Windows 8, the [SPB framework extension](https://msdn.microsoft.com/library/windows/hardware/hh406203) (SpbCx) is a system-supplied component that supports the [SPB I/O request interface](https://msdn.microsoft.com/library/windows/hardware/hh698224). SPB peripheral device drivers use this interface to send I/O requests to devices that are connected to I²C, SPI, and other [simple peripheral buses](https://msdn.microsoft.com/library/windows/hardware/hh450903) (SPBs). By making a standardized I/O request interface available across a variety of bus types, SpbCx simplifies the task of providing driver support for a family of peripheral devices across a variety of hardware platforms and SPB controllers from different hardware vendors.
 
-## <a href="" id="using-spb-io-request-interface"></a>
+
 
 
 If the following conditions are met, the hardware vendor for an SPB-connected peripheral device can develop one device driver that can work across multiple bus types:

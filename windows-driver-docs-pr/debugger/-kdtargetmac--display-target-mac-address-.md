@@ -4,7 +4,7 @@ description: Display Target MAC Address.
 ms.assetid: 95042682-BD92-44B0-AAA8-AB8661393230
 keywords: [".kdtargetmac (Display Target MAC Address) Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - .kdtargetmac (Display Target MAC Address)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .kdtargetmac (Display Target MAC Address)
@@ -75,7 +76,7 @@ dhcp                    Yes
 The operation completed successfully.
 ```
 
-For more information, see [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md).
+For more information, see [Setting Up KDNET Network Kernel Debugging Manually](setting-up-a-network-debugging-connection.md).
 
 Remarks
 -------

@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Remove Section in a Network INF File
 
 
-## <a href="" id="ddk-remove-section-ng"></a>
+
 
 
 **Remove** sections are supported for **NetClient**, **NetTrans**, and **NetService** components but not for **Net** components (adapters).

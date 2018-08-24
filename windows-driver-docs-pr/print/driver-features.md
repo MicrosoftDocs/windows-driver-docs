@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Driver Features
 
 
-## <a href="" id="ddk-driver-features-gg"></a>
+
 
 
 Driver features are non-PPD features that are synthesized by the driver (for example, the **%OutputFormat** feature). To avoid name conflicts with PPD feature keywords, all driver feature keyword names are preceded by a "%" character. Driver feature/option keywords are also case sensitive.

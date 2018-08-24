@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Providing DEVMODE Structure Additions
 
 
-## <a href="" id="ddk-providing-devmode-structure-additions-gg"></a>
+
 
 
 Your UI plug-in can add its own private members to the [**DEVMODEW**](https://msdn.microsoft.com/library/windows/hardware/ff552837) structure, as illustrated in the following figure.

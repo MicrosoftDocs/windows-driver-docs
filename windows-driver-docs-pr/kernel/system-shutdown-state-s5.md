@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # System Shutdown State S5
 
 
-## <a href="" id="ddk-system-shutdown-state-s5-kg"></a>
+
 
 
 In the S5, or shutdown, state, the machine has no memory state and is not performing any computational tasks.

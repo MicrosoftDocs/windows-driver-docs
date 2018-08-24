@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Raster Printing Commands
 
 
-## <a href="" id="ddk-raster-printing-commands-gg"></a>
+
 
 
 Raster printing commands are those that are associated with printing rasterized graphics. These commands are divided into the following groups:

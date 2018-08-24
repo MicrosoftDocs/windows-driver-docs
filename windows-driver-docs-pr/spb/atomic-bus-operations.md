@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Atomic Bus Operations
@@ -46,7 +47,7 @@ For an I²C bus, the controller starts a sequence by transmitting a start bit on
 
 For an SPI bus, the controller starts a sequence by asserting the chip-select line to the target device, and ends the sequence by deasserting the chip-select line. By keeping the chip-select line continuously asserted during a sequence of data transfers over the bus, the transfers are performed as a single, atomic bus operation.
 
-## <a href="" id="an-example-i2c-device"></a>An example I²C device
+## An example I²C device
 
 
 A typical peripheral device on an I²C bus might implement several internal device functions. To access some of these functions, a client might use [**IOCTL\_SPB\_EXECUTE\_SEQUENCE**](https://msdn.microsoft.com/library/windows/hardware/hh450857) requests.

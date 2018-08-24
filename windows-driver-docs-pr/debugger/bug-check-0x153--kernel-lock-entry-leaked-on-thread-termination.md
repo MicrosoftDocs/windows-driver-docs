@@ -14,6 +14,7 @@ api_name:
 - KERNEL_LOCK_ENTRY_LEAKED_ON_THREAD_TERMINATION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x153: KERNEL\_LOCK\_ENTRY\_LEAKED\_ON\_THREAD\_TERMINATION

@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Singly and Doubly Linked Lists
 
 
-## <a href="" id="singly-linked-lists"></a>
+
 
 
 ### Singly Linked Lists

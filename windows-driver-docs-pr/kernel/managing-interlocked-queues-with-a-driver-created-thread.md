@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Managing Interlocked Queues with a Driver-Created Thread
 
 
-## <a href="" id="ddk-managing-interlocked-queues-with-a-driver-created-thread-kg"></a>
+
 
 
 New drivers should use the [cancel-safe IRP queue](cancel-safe-irp-queues.md) framework in preference to the methods outlined in this section.

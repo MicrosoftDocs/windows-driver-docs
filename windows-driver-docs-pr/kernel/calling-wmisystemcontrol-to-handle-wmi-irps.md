@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Calling WmiSystemControl to Handle WMI IRPs
 
 
-## <a href="" id="ddk-calling-wmisystemcontrol-to-handle-wmi-irps-kg"></a>
+
 
 
 WMI library routines simplify handling of WMI requests because instead of processing each such request, a driver calls [**WmiSystemControl**](https://msdn.microsoft.com/library/windows/hardware/ff565834). In the **WmiSystemControl** call, the driver passes an initialized [**WMILIB\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff565813) structure that contains entry points to the driver's [WMI library callback routines](https://msdn.microsoft.com/library/windows/hardware/ff566357) (*DpWmiXxx* routines) and information about the driver's data blocks and event blocks.

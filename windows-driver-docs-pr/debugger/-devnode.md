@@ -14,6 +14,7 @@ api_name:
 - devnode
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !devnode

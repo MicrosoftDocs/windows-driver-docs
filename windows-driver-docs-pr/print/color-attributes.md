@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Color Attributes
 
 
-## <a href="" id="ddk-color-attributes-gg"></a>
+
 
 
 Color attributes are [general printing attributes](general-printing-attributes.md) that specify characteristics for controlling color printing.

@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Still Image Drivers
 
 
-## <a href="" id="ddk-still-image-drivers-si"></a>
+
 
 
 The Microsoft Windows Driver Kit (WDK) includes an architecture called Windows Image Acquisition (WIA). WIA is built on the foundation of the Microsoft Still Image architecture (Microsoft STI), thus drivers built on STI easily migrate to WIA.

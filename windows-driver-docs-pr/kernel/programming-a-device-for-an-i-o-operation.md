@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Programming a Device for an I/O Operation
 
 
-## <a href="" id="ddk-programming-a-device-for-an-i-o-operation-kg"></a>
+
 
 
 Use the following general guidelines for designing, writing, and calling [*SynchCritSection*](https://msdn.microsoft.com/library/windows/hardware/ff563928) routines that program a device for I/O operations:

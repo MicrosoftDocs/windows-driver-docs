@@ -14,6 +14,7 @@ api_name:
 - UNEXPECTED_STORE_EXCEPTION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x154: UNEXPECTED\_STORE\_EXCEPTION

@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # I/O Status Blocks
 
 
-## <a href="" id="ddk-i-o-status-blocks-kg"></a>
+
 
 
 An I/O status block, which consists of an [**IO\_STATUS\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff550671) structure, is a part of each [**IRP**](https://msdn.microsoft.com/library/windows/hardware/ff550694). An I/O status block serves two purposes:

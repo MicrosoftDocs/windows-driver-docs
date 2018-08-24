@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting I/O Dispatch Routines to I/O Event Callback Functions
@@ -68,7 +69,7 @@ To retrieve a buffer for a write request ([**IRP\_MJ\_WRITE**](https://msdn.micr
 
 For information about WDM equivalents for buffer pointers, see [WDM Equivalents for KMDF Buffer Pointers](wdm-equivalents-for-kmdf-buffer-pointers.md#write).
 
-## <a href="" id="device-i-o-requests"></a>Device I/O Control Requests
+## Device I/O Control Requests
 
 
 To handle a device I/O control request ([**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744)), a WDF driver calls either **WdfRequestRetrieveInputXxx** methods or **WdfRequestRetrieveOutputXxx** methods to get buffers for buffered and direct I/O. The corresponding input and output methods return the same buffer, so the driver can use either one. The buffer that each of these methods returns depends on whether the driver performs [buffered, direct, or neither I/O](https://msdn.microsoft.com/library/windows/hardware/ff540701), just as in read and write requests.
@@ -77,7 +78,7 @@ If the driver handles device I/O control requests that originate in another devi
 
 For information about WDM equivalents for buffer pointers, see [WDM Equivalents for KMDF Buffer Pointers](wdm-equivalents-for-kmdf-buffer-pointers.md#device-control).
 
-## <a href="" id="int-dev-i-o"></a>Internal Device I/O Control Requests
+## Internal Device I/O Control Requests
 
 
 Internal device I/O control requests ([**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550766)) are issued only by kernel-mode components and are used internally by some operating system components to pass request blocks (xRB protocols such as SCSI request blocks \[SRBs\] or universal request blocks \[URBs\]). Many different types of buffers can accompany such requests.

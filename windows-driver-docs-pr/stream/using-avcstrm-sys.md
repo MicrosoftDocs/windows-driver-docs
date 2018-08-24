@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Avcstrm.sys
 
 
-## <a href="" id="ddk-using-avcstrm-sys-ksg"></a>
+
 
 
 The AV/C Streaming filter driver, *Avcstrm.sys*, provides services after its client subunit driver creates a data stream. A data stream can be categorized to perform three functions: data streaming, clock provider, and getting and setting of stream properties or events. These three functions are inter-related, and the stream state (stop, pause, or run) controls the data stream's behavior.

@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Modifying the 1394 Configuration ROM
 
 
-## <a href="" id="ddk-modifying-the-1394-configuration-rom-kg"></a>
+
 
 
 A Microsoft Windows system connected to the 1394 bus exposes a Configuration ROM that describes the functional units supported by the node. For further information about 1394 Configuration ROMs, see the IEEE 1394-1995 and IEEE-1212-2000 specifications. In Windows XP and later operating systems, the contents of the Configuration ROM can be dynamically defined in two ways:

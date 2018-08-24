@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # GPD Value Types
 
 
-## <a href="" id="ddk-gpd-value-types-gg"></a>
+
 
 
 All [GPD file entries](gpd-file-entries.md) contain a value specification. The GPD language defines the following value types:

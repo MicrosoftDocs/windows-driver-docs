@@ -4,12 +4,13 @@ author: windows-driver-content
 description: User Values
 ms.assetid: 42b57fc2-fda0-464a-83dc-3e63ef693e9f
 keywords: ["user registry settings WDK joysticks"]
+ms.localizationpriority: medium
 ---
 
 # User Values
 
 
-## <a href="" id="ddk-user-values-di"></a>
+
 
 
 A single value named REGSTR\_VAL\_JOYUSERVALUES stores the structure described below. This structure specifies how data should be manipulated by VJoyD when an application requests that data be scaled, centered, or have a dead zone defined.

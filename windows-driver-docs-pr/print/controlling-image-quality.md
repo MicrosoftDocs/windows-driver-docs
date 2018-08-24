@@ -18,12 +18,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Controlling Image Quality
 
 
-## <a href="" id="ddk-controlling-image-quality-gg"></a>
+
 
 
 Unidrv's user interface provides a set of three radio buttons that allow a user to select "draft", "better", or "best" image quality for a print job. Draft quality emphasizes printer speed over image resolution, while best quality does the opposite.

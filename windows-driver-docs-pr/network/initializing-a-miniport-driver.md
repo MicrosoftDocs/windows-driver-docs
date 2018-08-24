@@ -11,11 +11,12 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing a Miniport Driver
 
-## <a href="" id="ddk-initializing-a-miniport-driver-ng"></a>
+
 
 When a networking device becomes available, the system loads the NDIS miniport driver to manage the device (if the driver is not already loaded). Every miniport driver must provide a [DriverEntry](https://msdn.microsoft.com/library/windows/hardware/ff544113) function. The system calls **DriverEntry** after it loads the driver. **DriverEntry** registers the miniport driver's characteristics with NDIS (including the supported NDIS version and the driver entry points).
 

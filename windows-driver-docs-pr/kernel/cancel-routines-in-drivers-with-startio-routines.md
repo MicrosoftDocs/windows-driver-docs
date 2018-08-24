@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Cancel Routines in Drivers with StartIo Routines
 
 
-## <a href="" id="ddk-cancel-routines-in-drivers-with-startio-routines-kg"></a>
+
 
 
 The I/O manager maintains the **CurrentIrp** field in a device object only if IRPs are queued in the associated device queue object. That is, the field is valid only if the driver has a [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) routine.

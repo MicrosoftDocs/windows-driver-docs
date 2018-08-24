@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Properties for All WIA Minidrivers
 
 
-## <a href="" id="ddk-properties-for-all-wia-minidrivers-si"></a>
+
 
 
 ### Required Properties on Root or Child Items

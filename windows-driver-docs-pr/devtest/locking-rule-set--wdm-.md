@@ -2,6 +2,12 @@
 title: Locking rule set (WDM)
 description: Use these rules to verify that your driver correctly manages shared resources.
 ms.assetid: B23863BD-66F0-4E6F-B150-97FD2066F69C
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Locking rule set (WDM)

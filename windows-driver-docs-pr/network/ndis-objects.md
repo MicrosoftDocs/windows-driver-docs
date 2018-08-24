@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS Objects
 
 
-## <a href="" id="ddk-ndis-6-0-objects-ng"></a>
+
 
 
 Components that do not have an NDIS handle use the [**NdisAllocateGenericObject**](https://msdn.microsoft.com/library/windows/hardware/ff561603) function to allocate a generic NDIS object. A component must call the [**NdisFreeGenericObject**](https://msdn.microsoft.com/library/windows/hardware/ff561850) function to free a generic object that was created with **NdisAllocateGenericObject**.

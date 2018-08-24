@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling IRPs
 
 
-## <a href="" id="ddk-handling-irps-kg"></a>
+
 
 
 This section describes how kernel-mode drivers handle *I/O request packets* (IRPs). It contains the following sections:

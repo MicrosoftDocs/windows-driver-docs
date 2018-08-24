@@ -14,6 +14,7 @@ api_name:
 - .imgscan (Find Image Headers)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .imgscan (Find Image Headers)

@@ -17,12 +17,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Packet-based DMA in AVStream
 
 
-## <a href="" id="ddk-packet-based-dma-in-avstream-ksg"></a>
+
 
 
 Packet-based direct memory access (DMA) occurs when your minidriver reads data directly from and writes data directly to capture buffers received from user mode. The [AVStream Simulated Hardware Sample Driver (AVSHwS)](http://go.microsoft.com/fwlink/p/?linkid=256083) in the Windows Driver Kit samples demonstrates how to build an AVStream minidriver that performs this type of DMA.

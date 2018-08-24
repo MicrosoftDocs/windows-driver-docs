@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Printer Attributes
 
 
-## <a href="" id="ddk-printer-attributes-gg"></a>
+
 
 
 Printer attributes are [GPD file entries](gpd-file-entries.md) that represent printer characteristics. To set an attribute's value, you include the attribute name and the desired value in the GPD file.

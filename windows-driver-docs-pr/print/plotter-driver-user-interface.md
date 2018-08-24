@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Plotter Driver User Interface
 
 
-## <a href="" id="ddk-plotter-driver-user-interface-gg"></a>
+
 
 
 The plotter user interface employs [CPSUI](common-property-sheet-user-interface.md) to create the following two property sheet pages:

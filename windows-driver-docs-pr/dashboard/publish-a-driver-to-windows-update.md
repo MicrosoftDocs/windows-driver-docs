@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Publish a driver to Windows Update
@@ -92,10 +93,10 @@ To publish a driver to Windows Update, [create a hardware submission](create-a-n
 
 
 
-8. If your driver targets Windows 10 S, you must select both boxes, confirming the following:
+8. If your driver targets Windows 10 in S mode, you must select both boxes, confirming the following:
 
-  *	Your driver is compatible with and follows the driver policies outlined in the [Windows 10 S Driver Requirements](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/Windows10SDriverRequirements).
-  * You verify that your driver follows the additional code integrity policies outlined in the Windows 10 S guidelines.
+  *	Your driver is compatible with and follows the driver policies outlined in the [Windows 10 in S mode Driver Requirements](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/Windows10SDriverRequirements).
+  * You verify that your driver follows the additional code integrity policies outlined in the Windows 10 in S mode guidelines.
   * Your driver does not contain any non-Microsoft UI components or applications in the driver package.
 
   ![A screenshot of the two checkboxes you must select when submitting a driver for Windows 10 S](images/win-cloud-checkboxes.png)

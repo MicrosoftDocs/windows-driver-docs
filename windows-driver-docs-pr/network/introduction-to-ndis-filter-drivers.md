@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to NDIS Filter Drivers
 
 
-## <a href="" id="ddk-introduction-to-ndis-filter-drivers-ng"></a>
+
 
 
 Filter drivers provide filtering services for miniport drivers. NDIS driver stacks must include miniport drivers and protocol drivers and optionally include filter drivers. For more information about NDIS drivers and the driver stack, see [Driver Stack Management](driver-stack-management.md).

@@ -14,6 +14,7 @@ api_name:
 - TIMER_OR_DPC_INVALID
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xC7: TIMER\_OR\_DPC\_INVALID

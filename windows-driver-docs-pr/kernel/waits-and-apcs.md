@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Waits and APCs
 
 
-## <a href="" id="ddk-do-waiting-threads-receive-alerts-and-apcs-kg"></a>
+
 
 
 Threads that wait for a dispatcher object on behalf of a user-mode caller must be prepared for that wait to be interrupted, either by a user APC or by thread termination. When a thread calls [**KeWaitForSingleObject**](https://msdn.microsoft.com/library/windows/hardware/ff553350), [**KeWaitForMultipleObjects**](https://msdn.microsoft.com/library/windows/hardware/ff553324), [**KeWaitForMutexObject**](https://msdn.microsoft.com/library/windows/hardware/ff553344), or [**KeDelayExecutionThread**](https://msdn.microsoft.com/library/windows/hardware/ff551986), the operating system can place the thread in a wait state. Typically, the thread remains in the wait state until the operating system can complete the operation that the caller requests. However, if the caller specifies *WaitMode* = UserMode, the operating system might interrupt the wait. In that case, the routine exits with an NTSTATUS value of STATUS\_USER\_APC.

@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supported Scanner Paper Sizes
 
 
-## <a href="" id="ddk-supported-scanner-paper-sizes-si"></a>
+
 
 
 Although two WIA user interface components are able to display a list of page sizes to the user, there is no easy way for a WIA driver to know which page sizes a scanner supports.

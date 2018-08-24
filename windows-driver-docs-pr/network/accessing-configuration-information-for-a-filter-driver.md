@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Accessing Configuration Information for a Filter Driver
 
 
-## <a href="" id="ddk-accessing-configuration-information-for-a-filter-driver-ng"></a>
+
 
 
 NDIS supports a set of functions that provide access to filter driver registry parameters. Filter drivers can access these parameters during the attach or restart operations or when they are processing a Plug and Play (PnP) notification. For more information about PnP notifications, see [Filter Module PnP Event Notifications](filter-module-pnp-event-notifications.md). For more information about attaching a filter module, see [Attaching a Filter Module](attaching-a-filter-module.md). For more information about restart operations, see [Starting a Filter Module](starting-a-filter-module.md).

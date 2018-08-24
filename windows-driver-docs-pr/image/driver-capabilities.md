@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Driver Capabilities
 
 
-## <a href="" id="ddk-driver-capabilities-si"></a>
+
 
 
 All WIA minidrivers must define the device's ability to handle notification events and commands. This section describes these minidriver capabilities.

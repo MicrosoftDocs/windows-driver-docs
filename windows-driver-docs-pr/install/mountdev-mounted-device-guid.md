@@ -11,6 +11,7 @@ api_location:
 - Mountmgr.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # MOUNTDEV_MOUNTED_DEVICE_GUID

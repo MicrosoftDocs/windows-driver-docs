@@ -14,6 +14,7 @@ api_name:
 - Activating a Repeater
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Activating a Repeater

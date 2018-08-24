@@ -12,10 +12,11 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 06/19/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_RTAUDIO\_PACKETCOUNT
@@ -48,14 +49,14 @@ KSPROPERTY\_RTAUDIO\_PACKETCOUNT returns the (1-based) count of packets complete
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
 <td align="left"><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
-<td align="left"><p>[<strong>ULONG</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537497)</p></td>
+<td align="left"><p>[<strong>ULONG</strong>](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/ulong)</p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-The property descriptor (instance data) is a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure. Before sending the request, the client loads the structure with values that indicate the preferred base address for the register.
+The property descriptor (instance data) is a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure. Before sending the request, the client loads the structure with the (1-based) count of packets completely transferred from the WaveRT buffer into hardware.
 
 The property value is a variable of type ULONG.
 

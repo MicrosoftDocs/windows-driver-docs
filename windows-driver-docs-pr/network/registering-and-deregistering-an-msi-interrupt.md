@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering and Deregistering an MSI Interrupt
 
 
-## <a href="" id="ddk-registering-and-deregistering-msi-interrupts-ng"></a>
+
 
 
 To register for MSI support, a miniport driver calls the [**NdisMRegisterInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff563649) function to register an MSI interrupt. The driver allocates and initializes an [**NDIS\_MINIPORT\_INTERRUPT\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff566465) structure to specify the interrupt characteristics and function entry points. The driver must set the **MsiSupported** member of the NDIS\_MINIPORT\_INTERRUPT\_CHARACTERISTICS structure to **TRUE**. The driver then passes the structure to **NdisMRegisterInterruptEx**.

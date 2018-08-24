@@ -4,16 +4,17 @@ author: windows-driver-content
 description: The Print Schema keywords for 3D manufacturing is a supplemental specification to the Print Schema Specification.
 ms.assetid: DC54C326-31AE-43C9-AF0D-A3A64DAEF1F2
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Print Schema keywords for 3D manufacturing
 
 
-The Print Schema keywords for 3D manufacturing is a supplemental specification to the [Print Schema Specification](https://msdn.microsoft.com/library/windows/hardware/dn641615.aspx). This specification requires understanding of the set of conventions defined in the Print Schema Specification, in particular Part 1 and Part 3 of that specification. This specification contains Print Schema keywords that are the 3D manufacturing analog of Part 2 of the Print Schema Specification. It describes the XML keywords used by developers of 3D manufacturing devices to define their device’s capabilities in the context of the Print Schema.
+The Print Schema keywords for 3D manufacturing is a supplemental specification to the [Print Schema Specification](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn641615(v=vs.85)). This specification requires understanding of the set of conventions defined in the Print Schema Specification, in particular Part 1 and Part 3 of that specification. This specification contains Print Schema keywords that are the 3D manufacturing analog of Part 2 of the Print Schema Specification. It describes the XML keywords used by developers of 3D manufacturing devices to define their device’s capabilities in the context of the Print Schema.
 
 A primary goal of this specification is to ensure the interoperability of independently created software and hardware systems that produce or consume Print Schema content for 3D manufacturing devices. Typically, these software and hardware systems discover each other through the Windows print infrastructure.
 
@@ -35,7 +36,6 @@ The information contained in this specification is subject to change. Every effo
 | [PrintTicket document example](example-printticket-document.md)             | Provides an example PrintTicket document.                                                                  |
 | [Print schema references](print-schema-references.md)                       | Provides references to industry standards, specifications, and technical articles.                         |
 
- 
 
 ## Document conventions
 
@@ -67,9 +67,7 @@ Requirements in this document are expressed as format requirements rather than i
 
 See the terms of the SDK License Agreement for more information.
 
- 
 
- 
 
 
 

@@ -7,6 +7,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Bug Check Code Reference
@@ -74,7 +75,7 @@ The following table shows the code and name of each bug check.
 | 0x0000002C | [**PORT\_DRIVER\_INTERNAL**](bug-check-0x2c--port-driver-internal.md)                                                                             |
 | 0x0000002D | [**SCSI\_DISK\_DRIVER\_INTERNAL**](bug-check-0x2d--scsi-disk-driver-internal.md)                                                                  |
 | 0x0000002E | [**DATA\_BUS\_ERROR**](bug-check-0x2e--data-bus-error.md)                                                                                         |
-| 0x0000002F | I[**NSTRUCTION\_BUS\_ERROR**](bug-check-0x2f--instruction-bus-error.md)                                                                           |
+| 0x0000002F | [**INSTRUCTION\_BUS\_ERROR**](bug-check-0x2f--instruction-bus-error.md)                                                                           |
 | 0x00000030 | [**SET\_OF\_INVALID\_CONTEXT**](bug-check-0x30--set-of-invalid-context.md)                                                                        |
 | 0x00000031 | [**PHASE0\_INITIALIZATION\_FAILED**](bug-check-0x31--phase0-initialization-failed.md)                                                             |
 | 0x00000032 | [**PHASE1\_INITIALIZATION\_FAILED**](bug-check-0x32--phase1-initialization-failed.md)                                                             |
@@ -348,10 +349,12 @@ The following table shows the code and name of each bug check.
 | 0x0000016E | [**ERESOURCE\_INVALID\_RELEASE**](bug-check-0x16e--eresource-invalid-release.md)                                                                  |
 | 0x00000175 | [**PREVIOUS\_FATAL\_ABNORMAL\_RESET\_ERROR**](bug-check-0x175--previous-fatal-abnormal-reset-error.md)                                            |
 | 0x00000178 | [**ELAM\_DRIVER\_DETECTED\_FATAL\_ERROR**](bug-check-0x175--elam-driver-detected-fatal-error.md)                                                  |
-| 0x00000187 | [**VIDEO\_DWMINIT\_TIMEOUT\_FALLBACK\_BDD**](bug-check-0x187--video-dwminit-timeout-fallback-bdd.md)                                              |
+| 0x0000017B | [**PROFILER\_CONFIGURATION\_ILLEGAL**](bug-check-0x17b--profiler-configuration-illegal.md)                                                          | 
+| 0x00000187 | [**VIDEO\_DWMINIT\_TIMEOUT\_FALLBACK\_BDD**](bug-check-0x187--video-dwminit-timeout-fallback-bdd.md)                                               |
 | 0x00000188 | [**CLUSTER\_CSVFS\_LIVEDUMP**](bug-check-0x188--cluster-csvfs-livedump.md)                                                                        |
 | 0x00000189 | [**BAD\_OBJECT\_HEADER**](bug-check-0x189--bad-object-header.md)                                                                                  |
 | 0x0000018B | [**SECURE\_KERNEL\_ERROR**](bug-check-0x18b--secure-kernel-error.md)                                                                              |
+| 0x0000018E | [**KERNEL\_PARTITION\_REFERENCE\_VIOLATION**](bug-check-0x18e--kernel-partition-reference-violation.md)                                              |
 | 0x00000190 | [**WIN32K\_CRITICAL\_FAILURE\_LIVEDUMP**](bug-check-0x190--win32k-critical-failure-livedump.md)                                                   |
 | 0x00000191 | [**PF\_DETECTED\_CORRUPTION**](bug-check-0x191--pf-detected-corruption.md)                                                                        |
 | 0x00000192 | [**KERNEL\_AUTO\_BOOST\_LOCK\_ACQUISITION\_WITH\_RAISED\_IRQL**](bug-check-0x192--kernel-auto-boost-lock-acquisition-with-raised-irql.md)         |
@@ -365,8 +368,20 @@ The following table shows the code and name of each bug check.
 | 0x0000019B | [**TTM\_FATAL\_ERROR**](bug-check-0x19b--ttm-fatal-error.md)                                                                                      |
 | 0x0000019C | [**WIN32K\_POWER\_WATCHDOG\_TIMEOUT**](bug-check-0x19c--win32k-power-watchdog-timeout.md)                                                         |
 | 0x0000019D | [**CLUSTER\_SVHDX\_LIVEDUMP**](bug-check-0x19d--cluster-svhdx-livedump.md)                                                                        |
+| 0x000001A3 | [**CALL\_HAS\_NOT\_RETURNED\_WATCHDOG\_TIMEOUT\_LIVEDUMP**](bug-check-0x1a3--call-has-not-returned-watchdog-timeout-livedump.md)                    |
+| 0x000001A4 | [**DRIPS\_SW\_HW\_DIVERGENCE\_LIVEDUMP**](bug-check-0x1a4--drips-sw-hw-divergence-livedump.md)                                                    |
 | 0x000001C4 | [**DRIVER\_VERIFIER\_DETECTED\_VIOLATION\_LIVEDUMP**](bug-check-0x1c4--driver-verifier-detected-violation-livedump.md)                            |
 | 0x000001C5 | [**IO\_THREADPOOL\_DEADLOCK\_LIVEDUMP**](bug-check-0x1c5--io-threadpool-deadlock-livedump.md)                                                     |
+| 0x000001CC | [**EXRESOURCE_TIMEOUT_LIVEDUMP**](bug-check-0x1cc--exresource-timeout-livedump.md)                                                                |
+| 0x000001CD | [**INVALID\_CALLBACK\_STACK_ADDRESS**](bug-check-0x1cd--invalid-callback-stack-address.md)                                                        |
+| 0x000001CE | [**INVALID\_KERNEL\_STACK\_ADDRESS**](bug-check-0x1ce--invalid-kernel-stack-address.md)                                                           |
+| 0x000001CF | [**HARDWARE\_WATCHDOG\_TIMEOUT**](bug-check-0x1cf--hardware-watchdog-timeout.md)                                                                  |  
+| 0x000001D0 | [**CPI\_FIRMWARE\_WATCHDOG\_TIMEOUT**](bug-check-0x1d0--acpi-firmware-watchdog-timeout.md)                                                        |
+| 0x000001D1 | [**TELEMETRY\_ASSERTS\_LIVEDUMP**](bug-check-0x1d1--telemetry-asserts-livedump.md)                                                                  |
+| 0x000001D2 | [**WORKER\_THREAD\_INVALID\_STATE**](bug-check-0x1d2--worker-thread-invalid-state.md)                                                             |
+| 0x000001D3 | [**WFP\_INVALID\_OPERATION**](bug-check-0x1d3--wfp-invalid-operation.md)                                                                          |
+| 0x000001D4 | [**UCMUCSI\_LIVEDUMP**](bug-check-0x1d4--ucmusci-livedump.md)                                                                                     |
+| 0x00000356 | [**XBOX\_ERACTRL\_CS\_TIMEOUT**](bug-check-0x356--xbox-eractrl-cs-timeout.md)                                                                     |
 | 0x00000BFE | [**BC\_BLUETOOTH\_VERIFIER\_FAULT**](bug-check-0xbfe--bc-bluetooth-verifier-fault.md)                                                             |
 | 0x00000BFF | [**BC\_BTHMINI\_VERIFIER\_FAULT**](bug-check-0xbff--bc-bthmini-verifier-fault.md)                                                                 |
 | 0x00020001 | [**HYPERVISOR\_ERROR**](bug-check--0x20001--hypervisor-error.md)                                                                                  |

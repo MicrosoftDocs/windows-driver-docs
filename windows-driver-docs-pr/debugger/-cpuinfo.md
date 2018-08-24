@@ -14,6 +14,7 @@ api_name:
 - cpuinfo
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !cpuinfo

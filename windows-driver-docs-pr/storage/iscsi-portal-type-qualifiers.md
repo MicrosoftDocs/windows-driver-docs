@@ -2,6 +2,7 @@
 title: ISCSI\_PORTAL\_TYPE\_QUALIFIERS
 description: ISCSI\_PORTAL\_TYPE\_QUALIFIERS
 ms.assetid: 58865d45-2932-4168-8ca7-db7a101f5850
+ms.localizationpriority: medium
 ---
 
 # ISCSI\_PORTAL\_TYPE\_QUALIFIERS

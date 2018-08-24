@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling a System Set-Power IRP in a Device Power Policy Owner
 
 
-## <a href="" id="ddk-handling-a-system-set-power-irp-in-a-device-power-policy-owner-kg"></a>
+
 
 
 In response to a system set-power IRP, the [power policy owner](managing-device-power-policy.md) for a device stack is responsible for putting its device stack into an appropriate device power state.

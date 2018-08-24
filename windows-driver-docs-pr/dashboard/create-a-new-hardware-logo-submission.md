@@ -2,11 +2,11 @@
 title: Create a new WLK device certification submission
 description: Create a new WLK device certification submission
 ms.assetid: e812eee1-768d-42d6-918e-c716b5c29ea2
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.author: 
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Create a new WLK device certification submission
@@ -14,14 +14,9 @@ ms.technology: windows-devices
 
 To prepare your hardware for certification, you must create and submit a **WQReady.xml** file. Submitting this file allows the dashboard to test your device and return a report on its performance. The report includes a detailed list of how the device compares to Windows standards.
 
-**To create your file**
+# Creating a WQReady.xml file
 
-1.  Test your driver or drivers with the appropriate certification kit on each operating system that you want certification for.
-
-    **Note**  
-    To download the WLK, see [Windows Logo Kit (WLK) for Hardware Download](http://go.microsoft.com/fwlink/p/?LinkId=219237).
-
-     
+1.  Download the [Windows Logo Kit (WLK)](http://go.microsoft.com/fwlink/p/?LinkId=219237). Be sure to test your driver or drivers with the appropriate certification kit on each operating system that you want certification for.
 
 2.  Open the Winqual Submission Tool (WST) and click **Add**.
 
@@ -44,7 +39,7 @@ To prepare your hardware for certification, you must create and submit a **WQRea
 
      
 
-**To submit your file**
+## Submitting your file
 
 1.  Sign in to the Hardware Dev Center dashboard with your Microsoft account, and then click **Hardware compatibility**.
 
@@ -103,8 +98,8 @@ To prepare your hardware for certification, you must create and submit a **WQRea
 
      
 
-    **Note**  
-    The company, category, and subcategory are prepopulated based on information in the **WQReady.xml** file.
+> [!NOTE]  
+> The company, category, and subcategory are prepopulated based on information in the **WQReady.xml** file.
 
      
 
@@ -115,13 +110,6 @@ To prepare your hardware for certification, you must create and submit a **WQRea
 7.  When the submission completes, you and your administrator receive an email containing the results of the verification.
 
     Review the results, and, if you choose, make changes to your product and resubmit.
-
-## <span id="related_topics"></span>Related topics
-
-
-[Manage Hardware Submissions](https://msdn.microsoft.com/library/windows/hardware/br230784.aspx)
-
-[Test-Sign Your Driver (Legacy)](https://msdn.microsoft.com/library/windows/hardware/br230772.aspx)
 
  
 

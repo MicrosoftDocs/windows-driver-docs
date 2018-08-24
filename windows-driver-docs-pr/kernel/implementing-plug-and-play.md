@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Implementing Plug and Play
 
 
-## <a href="" id="ddk-plug-and-play-kg"></a>
+
 
 
 This section describes Plug and Play (PnP) concepts and operating system components, and explains how to support PnP capabilities of device hardware in kernel-mode drivers. The section contains the following topics:

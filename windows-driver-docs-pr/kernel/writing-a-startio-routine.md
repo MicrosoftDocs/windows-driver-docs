@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing a StartIo Routine
 
 
-## <a href="" id="ddk-writing-a-startio-routine-kg"></a>
+
 
 
 As its name suggests, a [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) routine is responsible for starting an I/O operation on the physical device.

@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Unidrv Capabilities
 
 
-## <a href="" id="ddk-unidrv-capabilities-gg"></a>
+
 
 
 The Universal Printer Driver (Unidrv) provides the following capabilities:

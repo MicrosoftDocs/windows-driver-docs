@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Kernel Dispatcher Objects
 
 
-## <a href="" id="ddk-kernel-dispatcher-objects-kg"></a>
+
 
 
 This section includes the following topics:

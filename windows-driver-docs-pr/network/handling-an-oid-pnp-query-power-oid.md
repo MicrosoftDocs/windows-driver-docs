@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling an OID\_PNP\_QUERY\_POWER OID
 
 
-## <a href="" id="ddk-handling-an-oid-pnp-query-power-oid-ng"></a>
+
 
 
 The [OID\_PNP\_QUERY\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569778) OID requests a miniport driver to indicate whether it can transition a network adapter to a low-power state. A miniport driver must always return NDIS\_STATUS\_SUCCESS in response to a query of OID\_PNP\_QUERY\_POWER. By returning NDIS\_STATUS\_SUCCESS to this OID request, the miniport driver guarantees that it will transition the network adapter to the specified device power state on receipt of a subsequent [OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request. The miniport driver, in this case, must do nothing to jeopardize the transition.

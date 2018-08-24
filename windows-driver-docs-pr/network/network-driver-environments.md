@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Network Driver Environments
 
 
-## <a href="" id="ddk-network-driver-environments-ng"></a>
+
 
 
 This section describes the network environments that are used with Microsoft Windows operating systems for kernel-mode drivers, including connectionless drivers, and connection-oriented drivers. These network environments are described in the following topics:

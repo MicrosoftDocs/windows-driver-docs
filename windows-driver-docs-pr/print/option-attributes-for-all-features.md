@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Option Attributes for All Features
 
 
-## <a href="" id="ddk-option-attributes-for-all-features-gg"></a>
+
 
 
 The following table lists, in alphabetic order, the [option attributes](option-attributes.md) available for all features and describes their parameters.

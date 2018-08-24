@@ -4,12 +4,13 @@ author: windows-driver-content
 description: Setting Button State by Specifying Its Usage
 ms.assetid: 0806f274-2b29-44f5-b487-4c0acb7a3e42
 keywords: ["HID reports WDK , setting control data", "reports WDK HID , setting control data", "button usages WDK HID"]
+ms.localizationpriority: medium
 ---
 
 # Setting Button State by Specifying Its Usage
 
 
-## <a href="" id="ddk-setting-button-state-by-specifying-its-usage-kg"></a>
+
 
 
 An application or driver can set the state of buttons in a properly-initialized HID report by calling one of the following HID support routines:

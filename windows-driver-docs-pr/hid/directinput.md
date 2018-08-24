@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DirectInput
 
 
-## <a href="" id="ddk-directinput-di"></a>
+
 
 
 The Microsoft DirectInput documentation describes how to write drivers for the input components of Microsoft DirectX versions 1.0, 2.0, 3.0, 5.0, 6.0, 7.0, 7.0a, and 8.0. DirectX versions 1.0 and 2.0 included the same joystick support as the original Microsoft Windows 95, while DirectX 3.0 added Component Object Model (COM) interfaces for mouse and keyboard access and improved the implementation of some joystick support without changing the driver model. DirectX 5.0 and later added a COM interface for joystick access, force feedback, and for simplified access to joystick configuration information.

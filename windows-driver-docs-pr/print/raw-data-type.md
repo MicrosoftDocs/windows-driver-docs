@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # RAW Data Type
 
 
-## <a href="" id="ddk-raw-data-type-gg"></a>
+
 
 
 RAW data can be sent to a print monitor without further processing. The print processor just sends this data back to the spooler (by calling **WritePrinter**, described in the Microsoft Windows SDK documentation), sometimes inserting form feeds. An example of a RAW data file is one consisting of [*printer control language (PCL)*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-printer-control-language--pcl-) commands. Print jobs are sent from client to server in RAW format if either the client or the server does not support NT-based-operating system EMF, or if a server administrator has disabled EMF support. In such cases, image rendering is performed on the client before the job is sent to the server.

@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Create a new hardware submission
@@ -17,7 +18,7 @@ To prepare your hardware for the Windows Hardware Compatibility Program for Wind
 ## <span id="To_create_a_submission_file"></span><span id="to_create_a_submission_file"></span><span id="TO_CREATE_A_SUBMISSION_FILE"></span>To create a submission file
 
 
-For information about creating and digitally signing an **.hlkx** file, see the [Windows HLK Getting Started Guide](https://msdn.microsoft.com/library/windows/hardware/dn915002.aspx).
+For information about creating and digitally signing an **.hlkx** file, see the [Windows HLK Getting Started Guide](https://docs.microsoft.com/en-us/previous-versions/windows/hardware/hck/jj123537(v=vs.85)).
 
 For information about creating and digitally signing an **.hckx** file, see the [Windows HCK Getting Started Guide](http://go.microsoft.com/fwlink/p/?LinkId=248436).
 
@@ -53,10 +54,6 @@ For information about creating and digitally signing an **.hckx** file, see the 
     </tr>
     </thead>
     <tbody>
-    <tr class="odd">
-    <td><p>Is your driver Universal?</p></td>
-    <td><p>Indicate whether or not your driver meets the Universal Windows Platform requirements. For more information, see [Getting Started with Universal Windows drivers](https://msdn.microsoft.com/windows/hardware/drivers/develop/getting-started-with-universal-drivers).</p></td>
-    </tr>
     <tr class="even">
     <td><p>Device type</p></td>
     <td><p>Indicate if your device is:</p>

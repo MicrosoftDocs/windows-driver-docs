@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Abort a Stream
 
 
-## <a href="" id="ddk-aborting-a-stream-ksg"></a>
+
 
 
 When a subunit encounters special conditions, such as device removal or stream data IOCTL cancellation, then the streaming operation should be aborted. The abort operation *Request* is synchronous, but the abort completion is not. Only the first abort stream request is accepted and processed; duplicate requests will be ignored but returned with STATUS\_SUCCESS. The AV/C Streaming filter driver, *Avcstrm.sys,* then schedules a work item to abort streaming. When a stream is aborted, it starts to complete the [**AVCSTRM\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff554130)/[**AVCSTRM\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/ff554135) request with STATUS\_CANCELLED. The stream state is not changed with the abort request, and the data stream still must be closed to clean up and release resources.

@@ -14,6 +14,7 @@ api_name:
 - CTRL+D (Toggle Debug Info)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CTRL+D (Toggle Debug Info)

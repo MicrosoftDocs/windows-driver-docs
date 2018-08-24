@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Property Sheet Options
 
 
-## <a href="" id="ddk-property-sheet-options-gg"></a>
+
 
 
 A property sheet option is a displayable, selectable item on a property sheet page. Typically, users can modify an option's value. CPSUI helps applications create options in a standard format, using a predefined set of [CPSUI-supported window controls](cpsui-supported-window-controls.md). Applications do not have to provide resources for these controls.

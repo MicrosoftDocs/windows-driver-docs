@@ -14,6 +14,7 @@ api_name:
 - job
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !job

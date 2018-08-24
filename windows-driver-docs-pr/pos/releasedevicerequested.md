@@ -2,6 +2,7 @@
 title: ReleaseDeviceRequested
 description: ReleaseDeviceRequested
 ms.assetid: '0fcb8905-1370-4260-9456-6c80e2186dfc'
+ms.localizationpriority: medium
 ---
 
 # ReleaseDeviceRequested

@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Disk Prompting and Error Handling Functions
 
 
-## <a href="" id="ddk-disk-prompting-and-error-handling-functions-dg"></a>
+
 
 
 You can use the general Setup functions to prompt the user to insert new media, or to handle errors that arise when files are being copied, renamed, or deleted.

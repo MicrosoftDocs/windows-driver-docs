@@ -16,12 +16,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering to Receive Notifications
 
 
-## <a href="" id="ddk-registering-to-receive-notifications-gg"></a>
+
 
 
 Listening clients call the [RegisterForPrintAsyncNotifications](http://go.microsoft.com/fwlink/p/?linkid=124752) method to register for receiving notifications. The listening client can be an application or can run inside the spooler. Winspool.drv exposes this functionality regardless of where is it loaded.

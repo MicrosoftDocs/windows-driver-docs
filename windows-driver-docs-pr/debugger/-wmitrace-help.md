@@ -14,6 +14,7 @@ api_name:
 - wmitrace.help
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wmitrace.help

@@ -2,6 +2,11 @@
 title: ZwRegistryCreate rule (storport)
 description: This rule verifies that the handle to a registry key created with ZwCreateKey is subsequently used correctly by other ZwXxx routines.
 ms.assetid: 38CCE6AA-BA42-4305-B193-CB1B1C0F105B
+ms.author: windowsdriverdev
+ms.date: 05/21/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 keywords: ["ZwRegistryCreate rule (storport)"]
 topic_type:
 - apiref
@@ -9,6 +14,7 @@ api_name:
 - ZwRegistryCreate
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ZwRegistryCreate rule (storport)

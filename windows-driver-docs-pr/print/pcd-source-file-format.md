@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # PCD Source File Format
 
 
-## <a href="" id="ddk-pcd-source-file-format-gg"></a>
+
 
 
 All plotter device characteristics are specified using the following format:

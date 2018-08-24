@@ -8,12 +8,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Common, Camera, and Scanner Properties
 
 
-## <a href="" id="ddk-common-camera-and-scanner-properties-si"></a>
+
 
 
 WIA properties are attributes of either a device (the root) or an item (a child). Device properties contain information about the device, such as the manufacturer's name, a description of the device, and its type (scanner or camera). Item properties contain information about a particular item, such as the item's name, when it was captured, and so on. Device properties are identified by the WIA\_D naming convention; item properties are identified by the WIA\_I naming convention.

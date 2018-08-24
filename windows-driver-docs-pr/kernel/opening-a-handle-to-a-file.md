@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Opening a Handle to a File
 
 
-## <a href="" id="ddk-opening-a-handle-to-a-file-kg"></a>
+
 
 
 To open a handle to a file, perform the following steps:

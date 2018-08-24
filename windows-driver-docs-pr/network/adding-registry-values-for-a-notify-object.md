@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Adding Registry Values for a Notify Object
 
 
-## <a href="" id="ddk-adding-registry-values-for-a-notify-object-ng"></a>
+
 
 
 A **NetTrans**, **NetClient**, or **NetService** component can have a notify object that performs one or more of the following actions:

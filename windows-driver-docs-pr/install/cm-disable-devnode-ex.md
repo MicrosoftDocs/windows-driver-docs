@@ -9,6 +9,7 @@ api_name:
 - CM_Disable_DevNode_Ex
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Disable_DevNode_Ex
@@ -16,7 +17,7 @@ api_type:
 This function is reserved for system use.
 
 
-## <a href="" id="ddk-cm-disable-devnode-ex-dr"></a>
+
 
 
  

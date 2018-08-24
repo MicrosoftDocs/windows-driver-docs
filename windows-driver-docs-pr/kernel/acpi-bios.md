@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # ACPI BIOS
 
 
-## <a href="" id="ddk-acpi-bios-kg"></a>
+
 
 
 The integrated power management features supported by Microsoft Windows operating systems are available only on computers that have an Advanced Configuration and Power Interface (ACPI) BIOS.
@@ -23,12 +24,5 @@ Windows Server 2003, Windows XP, and Windows 2000 require that an ACPI BIOS be d
 
 Device Manager shows whether an individual computer supports ACPI. Check the driver information for the **Computer** device category.
 
-For more information about ACPI, see the Advanced Configuration and Power Interface Specification at the [ACPI website](http://www.acpi.info).
-
- 
-
- 
-
-
-
+For more information about ACPI, see the [ACPI 5.0 specification](https://www.uefi.org/specifications).
 

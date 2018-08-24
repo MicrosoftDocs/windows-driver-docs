@@ -14,6 +14,7 @@ api_name:
 - DRIVER_PORTION_MUST_BE_NONPAGED
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xD3: DRIVER\_PORTION\_MUST\_BE\_NONPAGED

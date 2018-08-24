@@ -3,10 +3,11 @@ title: Debugging ARM64
 description: Debugging ARM64
 keywords: ["Debugging ARM64", "Debugging", "ARM64"]
 ms.author: domars
-ms.date: 02/15/2018
+ms.date: 07/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Debugging on ARM64
@@ -59,14 +60,8 @@ For information on debugging applications running under WOW64, see [Debugging WO
 
 ## Debugging in Visual Studio 
 
-Visual Studio 15.5 Preview 1 and later supports running ARM32 apps using Universal Authentication mode. This will automatically bootstrap the necessary ARM64 remote debugging tools. 
+For information on debugging ARM in Visual Studio, see [Remote Debugging](https://docs.microsoft.com/visualstudio/debugger/remote-debugging).
 
-Un-checking 'Just My Code' in Visual Studio debugging is not a supported scenario. 
-
-
-## Debugging ARM Limitations
-
-The Time Travel Debugging (TTD) feature is not supported on ARM based PCs. 
 
 
 ## See Also

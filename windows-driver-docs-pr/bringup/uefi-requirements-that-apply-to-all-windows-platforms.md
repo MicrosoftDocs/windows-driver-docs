@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # UEFI requirements for Windows editions on SoC platforms
@@ -434,11 +435,14 @@ Windows requires the OS partition to reside on a GPT partitioned storage solutio
 ## Hardware Security Test Interface (HSTI) requirement
 
 
-The platform must implement the Hardware Security Test Interface, and the platform is required to share documentation and tools as specified in the [Hardware Security Testability Specification](http://go.microsoft.com/fwlink/p/?LinkId=528537).
+The platform must implement the Hardware Security Test Interface, and the platform is required to share documentation and tools as specified in the [Hardware Security Testability Specification](https://docs.microsoft.com/windows-hardware/test/hlk/testref/hardware-security-testability-specification).
 
 ## Related topics
+
 [Minimum UEFI requirements for Windows on SoC platforms](minimum-uefi-requirements-for-windows-on-soc-platforms.md)  
+
 [UEFI requirements for Windows 10 Mobile](uefi-requirements-specific-to-windows-mobile.md)  
+
 [UEFI requirements for USB flashing support](uefi-requirements-for-usb-flashing-support.md)  
 
 

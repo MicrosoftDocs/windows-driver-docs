@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing Customized Driver Components
 
 
-## <a href="" id="ddk-installing-customized-driver-components-gg"></a>
+
 
 
 When you provide customized components for Microsoft's printer drivers, you must also provide an .ini file for installation of the component. (If your printer is not supported by ntprint.inf, you must also provide a [printer INF file](printer-inf-files.md).)

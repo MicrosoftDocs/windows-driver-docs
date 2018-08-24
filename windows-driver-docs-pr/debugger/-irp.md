@@ -4,7 +4,7 @@ description: The irp extension displays information about an I/O request packet 
 ms.assetid: 2260255d-813b-4b89-8dbe-6ce7e5596ccf
 keywords: ["IRP", "IRP", "IO Request Packet", "irp Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 08/23/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - irp
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !irp
@@ -56,6 +57,12 @@ If this parameter is included with any value, such as 1, the output includes the
 See [Plug and Play Debugging](plug-and-play-debugging.md) and [Debugging Interrupt Storms](debugging-an-interrupt-storm.md) for applications of this extension command. For information about IRPs, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. For further information on the major and minor function codes, see the Windows Driver Kit (WDK) documentation. (These resources may not be available in some languages and countries.)
 
 This topic describes the IRP structure, [**IRP**](https://msdn.microsoft.com/library/windows/hardware/ff550694).
+
+For detailed information on decoding the IRP structure including the returned Args, see the following resources.
+
+- Windows Internals by Mark E. Russinovich, David A. Solomon and Alex Ionescu
+- Developing Drivers with the Windows Driver Foundation Guy Smith and Penny Orwick
+
 
 Remarks
 -------
