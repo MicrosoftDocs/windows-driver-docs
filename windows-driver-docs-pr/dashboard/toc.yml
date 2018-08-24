@@ -82,7 +82,7 @@
       items: 
       - name: "Get all shipping labels"
         href: get-all-shipping-labels.md
-      - name: "Get a shipping labe"
+      - name: "Get a shipping label"
         href: get-a-shipping-label.md
     - name: "Manage shipping labels"
       href: manage-shipping-labels.md

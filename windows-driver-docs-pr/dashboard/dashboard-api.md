@@ -82,10 +82,9 @@ After you have an Azure AD access token, you can call methods in the Microsoft H
 
 The following sample provides detailed code that demonstrate how to use the Microsoft Hardware API:
 
-*	[C# sample](http://download.microsoft.com/download/C/F/4/CF404E53-87A0-4204-BA13-A64B09A237C1/HardwareApiCSharpSample.zip) 
-**<font color="red">TBD - Need to update code sample to include Shipping Labels</font>**
+* [C# sample](http://download.microsoft.com/download/C/F/4/CF404E53-87A0-4204-BA13-A64B09A237C1/HardwareApiCSharpSample.zip) 
 
 ## Additional help
 
 If you have questions about the Microsoft Store submission API or need assistance managing your submissions with this API, use the following resources:
-•	Visit our [support page](https://developer.microsoft.com/en-us/dashboard/account/help?returnUri=https://developer.microsoft.com/en-us/dashboard/hardware) and request help.
+• Visit our [support page](https://developer.microsoft.com/en-us/dashboard/account/help?returnUri=https://developer.microsoft.com/en-us/dashboard/hardware) and request help.

@@ -10,18 +10,20 @@ ms.technology: windows-devices
 ---
 # Get shipping label data
 
-Use the following methods in *Microsoft Hardware APIs* to get data for shipping labels of hardware products registered to your Dev Center Account. For an introduction to Microsoft Hardware APIs, including prerequisites for using the API, see [Manage hardware submissions using APIs](dashboard-api.md).
+For an introduction to Microsoft Hardware APIs, including prerequisites for using the API, see [Manage hardware submissions using APIs](dashboard-api.md).
 
-```
+Use the following methods in *Microsoft Hardware APIs* to get data for shipping labels of hardware products registered to your Hardware Dev Center Account.
+
+```html
 https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/
 ```
 
 Before you can use these methods, the product and submission must already exist in your Dev Center account. To create or manage submissions for products, see the methods in [Manage product submissions](manage-product-submissions.md).
 
-| Method | URI | Description |
+|Description|URI|Method|
 |-|-|-|
-|GET| `https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/`	|[Get data for all shipping labels of a submission](get-all-shipping-labels.md)|
-|GET |`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/{shippingLabelId}`	|[Get data for a specific shipping label of a submission](get-a-shipping-label.md)|
+|[Get data for all shipping labels of a submission](get-all-shipping-labels.md)|GET|`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/`|
+|[Get data for a specific shipping label of a submission](get-a-shipping-label.md)|GET|`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/{shippingLabelId}`|
 
 ## Prerequisites
 
@@ -29,7 +31,7 @@ If you have not done so already, complete all the [prerequisites](dashboard-api.
 
 ## Data resources
 
-The Microsoft Hardware APIs methods for getting shipping label  data use the following JSON data resources
+The Microsoft Hardware APIs methods for getting shipping label  data use the following JSON data resources.
 
 ### ShippingLabel resource
 
