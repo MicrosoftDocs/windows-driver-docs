@@ -1,9 +1,9 @@
 ---
-title: Get a specific shipping labels for a submission
-description: These methods from the Microsoft Hardware APIs get data for shipping labels of hardware products registered to your Dev Center Account.
+title: Get a shipping label
+description: These methods from the Microsoft Hardware APIs get data for shipping labels of hardware products registered to your Hardware dev center Account.
 author: balapv
 ms.author: balapv
-ms.date: 04/13/2018
+ms.date: 08/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -11,11 +11,11 @@ ms.technology: windows-devices
 
 # Get a shipping label
 
-Use this method in the *Microsoft Hardware API* to retrieve data for a specific shipping label of a specific submission of a product.
+Use this method to retrieve data for a specific shipping label of a specific submission of a product.
 
 ## Prerequisites
 
-If you have not done so already, complete all the [prerequisites](dashboard-api.md) for the Microsoft Hardware APIs before trying to use any of these methods. Before you can use these methods, the product and submission must already exist in your Dev Center account. To create or manage submissions for products, see the methods in [Manage product submissions](manage-product-submissions.md).
+If you have not done so already, complete all the [Prerequisites](dashboard-api.md) for the Microsoft Hardware APIs before trying to use any of these methods. Before you can use these methods, the product and submission must already exist in your Dev Center account. To create or manage submissions for products, see the methods in [Manage product submissions](manage-product-submissions.md).
 
 ## Request
 
@@ -29,9 +29,8 @@ This method has the following syntax. See the following sections for usage examp
 
 | Header | Type | Description |
 |:--|:--|:--|
-| authorization | string | Required. The Azure AD access token in the form **Bearer** \<token\>. |
+| authorization | string | Required. The Azure AD access token in the form **Bearer** \*<token\>*. |
 | accept | string | Optional. Specifies the type of content. Allowed value is “application/json” |
-
 
 ### Request parameters
 
@@ -39,7 +38,7 @@ Request parameters are optional for this method.
 
 |Name|Type|Description|
 |:--|:--|:--|
-| includeTargetingInfo | boolean | Optional. If this parameter is set to true, the shipping label returns the targeting details of the shipping label like hardware IDs and CHIDs. Refer [targeting object](get-shipping-labels.md#targeting-object) for more deatils |
+| includeTargetingInfo | boolean | Optional. If this parameter is set to true, the shipping label returns the targeting details of the shipping label, like hardware IDs and CHIDs. For more info, see [Targeting object](get-shipping-labels.md#targeting-object).|
 
 ### Request body
 
@@ -146,8 +145,8 @@ The following example demonstrates the JSON response body returned by a successf
 ```
 ### Response body
 
-Refer to [shipping label resource](get-shipping-labels.md#shippinglabel-resource)  for more details
+For details about the response body, see [ShippingLabel resource](get-shipping-labels.md#shippinglabel-resource).
 
 ## Error codes
 
-For more info, see [Error codes](get-product-data.md#error-codes).
+For info about error codes, see [Error codes](get-product-data.md#error-codes).

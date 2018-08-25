@@ -29,7 +29,7 @@ This method has the following syntax. See the following sections for usage examp
 
 |Header|Type|Description|
 |--|--|--|
-|Authorization|string|Required. The Azure AD access token in the form **Bearer** \<token\>.|
+|Authorization|string|Required. The Azure AD access token in the form **Bearer** \*<token\>*.|
 |accept|string|Optional. Specifies the type of content. Allowed value is “application/json”|
 
 ### Request parameters
@@ -174,9 +174,9 @@ This resource has the following values
 
 | Value | Type | Description |
 |:--|:--|:--|
-| value | array | An array of objects that contain information about each shipping label. For more information about the data in each object, see [shipping label resource](get-shipping-labels.md#shippinglabel-resource). |
-| links | array | An array of objects with helpful links about the containing entity. Refer to [link object](get-product-data.md#link-object)  for more details.|
+| value | array | An array of objects that contain information about each shipping label. For more information about the data in each object, see [Shipping label resource](get-shipping-labels.md#shippinglabel-resource). |
+| links | array | An array of objects with helpful links about the containing entity. See [Link object](get-product-data.md#link-object)  for more details.|
 
 ## Error codes
 
-For more info, see [Error codes](get-product-data.md#error-codes). 
+For info, about error codes, see [Error codes](get-product-data.md#error-codes).
