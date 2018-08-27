@@ -1,19 +1,19 @@
 ---
-title: Get driver package metadata
-description: This page helps to understand the structure of the driver package metadata.
+title: Driver package metadata
+description: Describes the structure of the driver package metadata for driver dashboard submissions.
 author: balapv
 ms.author: balapv
-ms.date: 04/18/2018
+ms.date: 08/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-#Driver package metadata
+# Driver package metadata
 
-The driver metadata package is a file associated to a submission. This file contains details about each INF file in a driver package or bundle. This file can be downloaded by using the [get a submission](get-a-submission.md) method. The file will be available in the [link object](get-product-data.md#link-object) of the submission with the *rel* - **driverMetadata**. 
+The driver metadata package is a file associated with a submission. The metadata package contains details about each INF file in a driver package or bundle. This file can be downloaded by using the [Get a submission](get-a-submission.md) method. The file is available in the [Link object](get-product-data.md#link-object) of the submission with the *rel* - **driverMetadata**. 
 
-##Driver Metadata structure
+## Driver Metadata structure
 
 ```json
 {
@@ -55,18 +55,18 @@ The file has the following values:
 
 | Value | Type | Description |
 |:--|:--|:--|
-|BundleInfoMap|object|This is the parent. It is identified by a GUID and contains all details about the driver bundle. This value maps to the bundleID in the [hardware ID object](get-shipping-labels.md#hardware-id-object)|
-|Locales|array of strings|This is an array of applicable locales for the bundle|
-|InfInfoMap|array of objects|This is an array which describes each INF file within the bundle. The identifier of each item is the INF file name. The INF name maps to the infID in the [hardware ID object](get-shipping-labels.md#hardware-id-object)|
+|BundleInfoMap|object|This is the parent. It is identified by a GUID and contains all the details about the driver bundle. This value maps to the *bundleID* in the [Hardware ID object](get-shipping-labels.md#hardware-id-object)|
+|Locales|array of strings|Array of applicable locales for the bundle|
+|InfInfoMap|array of objects|Array that describes each INF file within the bundle. The identifier of each item is the INF file name. The INF name maps to the *infID* in the [Hardware ID object](get-shipping-labels.md#hardware-id-object).|
 |DriverPackageFamilyId|string|ID of the driver package family|
 |InfClass|string|The device class or INF class of the driver|
 |DriverVersion|string|The version of the driver|
 |DriverDate|datetime|The date and time for this driver|
-|ExtensionId|GUID|Applicable for Extension INFs. A GUID which represents the Extension ID for this INF|
+|ExtensionId|GUID|Applicable for Extension INFs. A GUID that represents the Extension ID for this INF|
 |Provider|string|The provider for this driver|
-|ClassGuid|string|CLass GUID of the driver|
-|InstallationComputerHardwareIds|array of GUIDs|list of CHIDs to which this driver can be targeted|
-|OSPnPInfoMap|array of objects|Array of objects which maps an operating system to hardware IDs. The object has a base element which is the Operating system. Inside each operating system will be a list of PNP or Hardware IDs along with details. The operating system maps to operatingSystemCode in the [hardware ID object](get-shipping-labels.md#hardware-id-object) and the hardware ID maps to the pnpString|
+|ClassGuid|string|Class GUID of the driver|
+|InstallationComputerHardwareIds|array of GUIDs|List of CHIDs to which this driver can be targeted|
+|OSPnPInfoMap|array of objects|Array of objects which maps an operating system to hardware IDs. The object has a base element, which is the operating system. Inside each operating system is a list of PNP or Hardware IDs along with details. The operating system maps to operatingSystemCode in the [Hardware ID object](get-shipping-labels.md#hardware-id-object) and the hardware ID maps to the *pnpString*|
 |Manufacturer|string|Manufacturer of the hardware ID|
-|DeviceDescription|string|Description of the hardware ID |
-|FeatureScore|string|Feature score for this driver|
+|DeviceDescription|string|Description of the hardware ID|
+|FeatureScore|string|Feature score for the driver|

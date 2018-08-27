@@ -3,14 +3,14 @@ title: Get audience data
 description: These methods from the Microsoft Hardware APIs get the applicable audiences for an organization.
 author: balapv
 ms.author: balapv
-ms.date: 04/12/2018
+ms.date: 08/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 # Get audience data
 
-Use the following method in *Microsoft Hardware APIs* to get the audiences applicable to your organization. Audiences allow you to restrict a publication to machines with a particular configuration. As an example, the test audience will only be delivered to clients with a particular registry key installed.
+Use the following method in *Microsoft Hardware APIs* to get the audiences applicable to your organization. Audiences allow you to restrict a publication to machines with a particular configuration. As an example, a test deployment can be delivered only to clients with a particular registry key installed.
 
 ```
 https://manage.devcenter.microsoft.com/v1.0/my/hardware/audiences
@@ -18,9 +18,9 @@ https://manage.devcenter.microsoft.com/v1.0/my/hardware/audiences
 
 Before you can use these methods, the product and submission must already exist in your Dev Center account. To create or manage submissions for products, see the methods in [Manage product submissions](manage-product-submissions.md).
 
-| Method | URI | Description |
+|Description|Method|URI|
 |-|-|-|
-|GET |	`https://manage.devcenter.microsoft.com/v1.0/my/hardware/audiences`	|Get a list of audiences applicable to your organization.|
+|Get a list of audiences applicable to your organization.|GET|`https://manage.devcenter.microsoft.com/v1.0/my/hardware/audiences`|
 
 ## Prerequisites
 
@@ -28,7 +28,7 @@ If you have not done so already, complete all the [prerequisites](dashboard-api.
 
 ## Data resources
 
-The Microsoft Hardware APIs methods for getting shipping label  data use the following JSON data resources
+The Microsoft Hardware APIs methods for getting shipping label data use the following JSON data resources.
 
 ### Audience resource
 
@@ -42,11 +42,12 @@ This resource represents an audience that is applicable to your organization.
   "audienceName": "Sample_Audience_Key"
 }
 ```
+
 This resource has the following values
 
 | Value | Type | Description |
 |:--|:--|:--|
-|id|string|The ID of the audience. This is the value that will be received/sent in shipping label|
+|id|string|The ID of the audience. This is the value that will be received or sent in the shipping label.|
 |name|string|Friendly name of the audience|
 |description|string|Description of the audience|
 |audienceName|string|Name of the audience|
@@ -63,7 +64,7 @@ This method has the following syntax. See the following sections for usage examp
 
 |Header|Type|Description|
 |--|--|--|
-|Authorization|string|Required. The Azure AD access token in the form **Bearer** \<token\>.|
+|Authorization|string|Required. The Azure AD access token in the form **Bearer** *\<token\>*.|
 |accept|string|Optional. Specifies the type of content. Allowed value is “application/json”|
 
 ### Request parameters
@@ -72,7 +73,7 @@ Do not provide request parameters for this method.
 
 ### Request body
 
-Do not provide a request body for this method. 
+Do not provide a request body for this method.
 
 ### Request examples
 
@@ -82,6 +83,7 @@ The following example demonstrates how to retrieve information about audiences a
 GET https://manage.devcenter.microsoft.com/v1.0/my/hardware/audience HTTP/1.1
 Authorization: Bearer <your access token>
 ```
+
 ## Response
 
 The following example demonstrates the JSON response body returned by a successful request for all the audiences applicable to your organization. For more details about the values in the response body, see the following section.
@@ -117,4 +119,4 @@ This resource has the following values
 | Value | Type | Description |
 |:--|:--|:--|
 | value | array | An array of objects that contain information about each audience. For more information about the data in each object, see [audience resource](#audience-resource). |
-| links | array | An array of objects with helpful links about the containing entity. Refer to [link object](get-product-data.md#link-object)  for more details|
+| links | array | An array of objects with helpful links about the containing entity. See the [Link object](get-product-data.md#link-object) for more details.|

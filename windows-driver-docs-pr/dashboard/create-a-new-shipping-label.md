@@ -97,23 +97,24 @@ The following example demonstrates the JSON request body for creating a new ship
   "destination": "windowsUpdate"
 }
 ```
-For details about the fields in the request, refer to [shipping label resource](get-shipping-labels.md#shippinglabel-resource). 
 
-#### Few points to remember when creating shipping labels:
+For details about the fields in the request, see [ShippingLabel resource](get-shipping-labels.md#shippinglabel-resource).
 
-*   When publishing to Windows Update (*destination* is **windowsUpdate**)
+#### Points to remember when creating shipping labels
 
-    -  The [publishingSpecifications](get-shipping-labels.md#publishing-specifications-object) is required
+- When publishing to Windows Update (*destination* is **windowsUpdate**), you must include a [publishingSpecifications](get-shipping-labels.md#publishing-specifications-object) object. For automatic installs (*isAutoInstallDuringOSUpgrade* or *isAutoInstallOnApplicableSystems* is true), you must set  *additionalInfoForMsApproval*.
 
-    -  For automatic installs (*isAutoInstallDuringOSUpgrade* or *isAutoInstallOnApplicableSystems* is true), the *additionalInfoForMsApproval* is required
-
-*   When sharing with other partners  (*destination* is **anotherPartner**)
-
-    -  The [recipientSpecifications](get-shipping-labels.md#recipient-specifications-object) is required
+- When sharing with other partners  (*destination* is **anotherPartner**), you must include the [recipientSpecifications](get-shipping-labels.md#recipient-specifications-object) object.
 
 #### Populating targeting information
 
-The targeting object contains data which instructs Windows Update how the driver should be targeted in terms of hardware IDs and whether CHID or restrictions should be applied. The hardware ID object should contain a valid combination of bundle ID, PNP ID, OS Code and INF name while creating a new shipping label. To get the allowed/valid combinations of these attributes for your submission (package), you can download the driver metadata file which is provided as a link when you get details of a submission. For more information refer to [driver package metadata](driver-package-metadata.md).
+The **targeting** object contains data that instructs Windows Update about:
+
+- How the driver should be targeted in terms of hardware IDs.
+
+- Whether CHID or restrictions should be applied.
+
+The hardware ID object should contain a valid combination of bundle ID, PNP ID, OS Code, and INF name when creating a new shipping label. Download the driver metadata file (provided as a link when you get details of a submission) to get the allowed, valid combinations of these attributes for your submission. For more info, see [driver package metadata](driver-package-metadata.md).
 
 ### Request examples
 
@@ -181,8 +182,8 @@ The following example demonstrates the JSON response body returned by a successf
 
 ### Response body
 
-Refer to [shipping label resource](get-shipping-labels.md#shippinglabel-resource) for more details
+For details about the response body, see [shipping label resource](get-shipping-labels.md#shippinglabel-resource).
 
 ## Error codes
 
-For more info, see [Error codes](get-product-data.md#error-codes).
+For info about error codes, see [Error codes](get-product-data.md#error-codes).

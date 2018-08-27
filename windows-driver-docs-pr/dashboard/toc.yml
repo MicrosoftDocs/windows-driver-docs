@@ -91,7 +91,7 @@
         href: create-a-new-shipping-label.md
       - name: "Update a shipping label"
         href: update-a-shipping-label.md
-    - name: "Get audience"
+    - name: "Get audience data"
       href: get-audience-data.md
     - name: "Driver package metadata"
       href: driver-package-metadata.md
