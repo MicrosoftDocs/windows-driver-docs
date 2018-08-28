@@ -55,7 +55,7 @@ Authorization: Bearer <your access token>
 
 ## Response
 
-The following example demonstrates the JSON response body returned by a successful request for a specific shipping label. For more details about the values in the response body, see the following section.
+The following example demonstrates the JSON response body returned by a successful request for a specific shipping label. Details about the values in the response body appear in the table following the example.
 
 ```json
 {

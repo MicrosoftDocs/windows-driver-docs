@@ -1,9 +1,9 @@
 ---
 title: Create a new shipping label
-description: Use this method in the Microsoft Hardware API to create a new shipping label.
+description: This method shows how to create a new shipping label in the Microsoft Hardware API.
 author: balapv
 ms.author: balapv
-ms.date: 04/12/2018
+ms.date: 08/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -127,7 +127,7 @@ Authorization: Bearer <your access token>
 
 ## Response
 
-The following example demonstrates the JSON response body returned by a successful request for creating a shipping label. For more details about the values in the response body, see the following section.
+The following example demonstrates the JSON response body returned by a successful request for creating a shipping label. Details about the values in the response body appear in the table following the example.
 
 ```json
 {

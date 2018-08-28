@@ -1,6 +1,6 @@
 ---
 title: Get audience data
-description: These methods from the Microsoft Hardware APIs get the applicable audiences for an organization.
+description: These methods from the Microsoft Hardware APIs get the applicable audiences for an organization to be used in a shipping label.
 author: balapv
 ms.author: balapv
 ms.date: 08/21/2018
@@ -54,7 +54,7 @@ This resource has the following values
 
 ## Request
 
-This method has the following syntax. See the following sections for usage examples and descriptions of the header and request body.
+This method has the following syntax.
 
 |Method|Request URI|
 |--|--|
@@ -86,7 +86,7 @@ Authorization: Bearer <your access token>
 
 ## Response
 
-The following example demonstrates the JSON response body returned by a successful request for all the audiences applicable to your organization. For more details about the values in the response body, see the following section.
+The following example demonstrates the JSON response body returned by a successful request for all the audiences applicable to your organization. Details about the values in the response body appear in the table following the example.
 
 ```json
 {

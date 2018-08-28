@@ -3,7 +3,7 @@ title: Get all shipping labels for a submission
 description: These methods from the Microsoft Hardware APIs get data for shipping labels of hardware products registered to your Hardware dashboard Account.
 author: balapv
 ms.author: balapv
-ms.date: 04/12/2018
+ms.date: 08/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,7 +50,7 @@ Authorization: Bearer <your access token>
 ```
 ## Response
 
-The following example demonstrates the JSON response body returned by a successful request for all the shipping labels of a specific submission of a product that is registered to your developer account. For brevity, this example only shows the data for the first three shipping labels returned by the request. For more details about the values in the response body, see the following section.
+The following example demonstrates the JSON response body returned by a successful request for all the shipping labels of a specific submission of a product that is registered to your developer account. For brevity, this example only shows the data for the first three shipping labels returned by the request. Details about the values in the response body appear in the table following the example.
 
 ```json
 {

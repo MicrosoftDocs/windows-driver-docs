@@ -1,6 +1,6 @@
 ---
 title: Update a shipping label
-description: This method updates a shipping label in the Hardware dashboard.
+description: This method updates a shipping label in the Hardware dashboard API.
 author: balapv
 ms.author: balapv
 ms.date: 08/21/2018
