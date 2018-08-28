@@ -297,3 +297,7 @@ Use this method to resume a scheduled report.
     </tr>
   </tbody>
 </table>
+
+## See also
+
+- [Analytics Reporting APIs (Swagger )](https://apidocs.microsoft.com/services/analyticsreportingapis)

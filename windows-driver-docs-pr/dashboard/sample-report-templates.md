@@ -216,3 +216,7 @@ This API request payload calls for an IHV failure report for all drivers. It the
     "limit": 10  
 }
 ```
+
+## See also
+
+- [Analytics Reporting APIs (Swagger )](https://apidocs.microsoft.com/services/analyticsreportingapis)

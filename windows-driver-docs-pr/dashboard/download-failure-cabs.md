@@ -81,3 +81,7 @@ The following example demonstrates an example JSON response body for this reques
     }]
 }
 ```
+
+## See also
+
+- [Analytics Reporting APIs (Swagger )](https://apidocs.microsoft.com/services/analyticsreportingapis)

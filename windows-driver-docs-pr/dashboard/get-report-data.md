@@ -88,3 +88,7 @@ The following tables describes the parameters in the response.
 > The ReportLocation link expires in 12 hours. You must use the Get Report Data API to get a new report link if you don’t download the data within the 12-hour window.
 
 You can manage your report templates using the methods described in [Manage report templates and scheduled reports](manage-report-templates-and-scheduled-reports.md).
+
+## See also
+
+- [Analytics Reporting APIs (Swagger )](https://apidocs.microsoft.com/services/analyticsreportingapis)

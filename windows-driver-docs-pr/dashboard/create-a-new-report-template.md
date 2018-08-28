@@ -344,3 +344,7 @@ You can select from the following columns in the Windows 10, Windows 8.x, and Wi
 </table>
 
 You can manage your existing reports using the methods shown in [Manage report templates and scheduled reports](manage-report-templates-and-scheduled-reports.md). You can find a list of sample report templates in [Sample report templates](sample-report-templates.md).
+
+## See also
+
+- [Analytics Reporting APIs (Swagger )](https://apidocs.microsoft.com/services/analyticsreportingapis)

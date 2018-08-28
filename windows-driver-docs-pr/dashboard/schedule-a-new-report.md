@@ -112,3 +112,7 @@ This table describes the parameter in the response.
 |Parameter|Description|
 |----|----|
 |reportId|Represents the ID of the scheduled report|
+
+## See also
+
+- [Analytics Reporting APIs (Swagger )](https://apidocs.microsoft.com/services/analyticsreportingapis)
