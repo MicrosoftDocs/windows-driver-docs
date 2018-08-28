@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 >
 > Use these newer topics instead:
 >
-> - [Schedule Custom Reports for your driver failure details](schedule-custom-reports-for-your-driver-failure-details.md)
+> - [Schedule Custom Reports for your driver failure details](schedule-custom-reports-for-driver-failure-details.md)
 > - [Create new report template](create-a-new-report-template.md)
 > - [Schedule a new report](schedule-a-new-report.md)
 > - [Get Report Data](get-report-data.md)
