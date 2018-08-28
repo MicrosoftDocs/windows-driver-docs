@@ -77,6 +77,38 @@
         href: update-submission-data.md
       - name: "Update product data"
         href: update-product-data.md
+    - name: "Get shipping label data"
+      href: get-shipping-labels.md
+      items: 
+      - name: "Get all shipping labels"
+        href: get-all-shipping-labels.md
+      - name: "Get a shipping label"
+        href: get-a-shipping-label.md
+    - name: "Manage shipping labels"
+      href: manage-shipping-labels.md
+      items:
+      - name: "Create a new shipping label"
+        href: create-a-new-shipping-label.md
+      - name: "Update a shipping label"
+        href: update-a-shipping-label.md
+    - name: "Get audience data"
+      href: get-audience-data.md
+    - name: "Driver package metadata"
+      href: driver-package-metadata.md
+    - name: "Get error reporting data for windows 10 drivers"
+      href: get-error-reporting-data-for-windows-10-drivers.md
+      items: 
+      - name: "Get details for a Windows 10 driver error"
+        href: get-details-for-a-windows-10-driver-error.md
+      - name: "Download the CAB file for a Windows 10 driver error"
+        href: download-the-cab-file-for-a-windows-10-driver-error.md
+    - name: "Get error reporting data for Windows 7 and Windows 8.x drivers"
+      href: get-error-reporting-data-for-windows-7-and-windows-8.x-drivers.md
+      items: 
+      - name: "Get details for a Windows 7 or Windows 8.x driver error"
+        href: get-details-for-a-windows-7-or-windows-8.x-driver-error.md
+      - name: "Download the CAB file for a Windows 7 or Window0s 8.x driver error"
+        href: download-the-cab-file-for-a-windows-7-or-windows-8.x-driver-error.md
     - name: "Get OEM hardware error reporting data"
       href: get-oem-hardware-error-reporting-data.md
       items: 

@@ -97,6 +97,9 @@ The following example demonstrates the JSON response body returned by a successf
       "method": "PATCH"
     }
   ],
+  "isExtensionInf": true,
+  "isUniversal": true,
+  "isDeclarativeInf": true,
   "name": "HARRY-Duatest2",
   "type": "initial"
 }
