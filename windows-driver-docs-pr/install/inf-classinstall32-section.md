@@ -31,6 +31,8 @@ A **ClassInstall32** section installs a new [device setup class](device-setup-cl
 [ClassInstall32] | 
 [ClassInstall32.nt] | 
 [ClassInstall32.ntx86] |
+[ClassInstall32.ntarm] | (Windows 8 and later versions of Windows) 
+[ClassInstall32.ntarm64] | (Windows 10 version 1709 and later versions of Windows) 
 [ClassInstall32.ntia64] | (Windows XP and later versions of Windows)
 [ClassInstall32.ntamd64] (Windows XP and later versions of Windows)
 
