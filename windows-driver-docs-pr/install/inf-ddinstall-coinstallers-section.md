@@ -31,6 +31,8 @@ This optional section registers one or more device-specific co-installers suppli
 [install-section-name.CoInstallers] |
 [install-section-name.nt.CoInstallers] | 
 [install-section-name.ntx86.CoInstallers] | 
+[install-section-name.ntarm.CoInstallers] | (Windows 8 and later versions of Windows)
+[install-section-name.ntarm64.CoInstallers] | (Windows 10 version 1709 and later versions of Windows)
 [install-section-name.ntia64.CoInstallers] |  (Windows XP and later versions of Windows)
 [install-section-name.ntamd64.CoInstallers]  (Windows XP and later versions of Windows)
   

@@ -26,6 +26,8 @@ A **SourceDisksNames** section identifies the distribution disks or CD-ROM discs
 ```
 [SourceDisksNames] |
 [SourceDisksNames.x86] | 
+[SourceDisksNames.arm] | (Windows 8 and later versions of Windows)
+[SourceDisksNames.arm64] | (Windows 10 version 1709 and later versions of Windows)
 [SourceDisksNames.ia64] | (Windows XP and later versions of Windows)
 [SourceDisksNames.amd64] (Windows XP and later versions of Windows)
 
