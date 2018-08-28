@@ -93,6 +93,9 @@ The following example demonstrates the JSON response body returned by a successf
     }
   ],
   "commitStatus": "commitPending",
+  "isExtensionInf": true,
+  "isUniversal": true,
+  "isDeclarativeInf": true,
   "name": "VST_apdevtest1_init",
   "type": "initial"
 }
