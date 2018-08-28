@@ -77,6 +77,24 @@
         href: update-submission-data.md
       - name: "Update product data"
         href: update-product-data.md
+    - name: "Get shipping label data"
+      href: get-shipping-labels.md
+      items: 
+      - name: "Get all shipping labels"
+        href: get-all-shipping-labels.md
+      - name: "Get a shipping label"
+        href: get-a-shipping-label.md
+    - name: "Manage shipping labels"
+      href: manage-shipping-labels.md
+      items:
+      - name: "Create a new shipping label"
+        href: create-a-new-shipping-label.md
+      - name: "Update a shipping label"
+        href: update-a-shipping-label.md
+    - name: "Get audience data"
+      href: get-audience-data.md
+    - name: "Driver package metadata"
+      href: driver-package-metadata.md
     - name: "Get error reporting data for windows 10 drivers"
       href: get-error-reporting-data-for-windows-10-drivers.md
       items: 
