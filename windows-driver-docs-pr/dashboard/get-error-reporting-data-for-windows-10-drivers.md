@@ -4,7 +4,7 @@ ms.assetid: BAC79A64-445D-4702-8E96-7727FF180245
 description: Use this method in the Microsoft Store analytics API to get aggregate error reporting data for Windows 10 drivers for a given date range and other optional filters. This method is intended only for IHVs.
 title: Get error reporting data for Windows 10 drivers
 ms.author: mcleans
-ms.date: 06/04/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: windows
 ms.technology: uwp
@@ -13,6 +13,17 @@ ms.localizationpriority: medium
 ---
 
 # Get error reporting data for Windows 10 drivers
+
+> [!IMPORTANT]
+> This topic contains deprecated material. It describes older methods for collecting data about driver submission failures. It is supplied only for legacy support.
+>
+> Use these newer topics instead:
+>
+> - [Schedule Custom Reports for your driver failure details](schedule-custom-reports-for-your-driver-failure-details.md)
+> - [Create new report template](create-a-new-report-template.md)
+> - [Schedule a new report](schedule-a-new-report.md)
+> - [Get Report Data](get-report-data.md)
+> - [Download Failure Cabs](download-failure-cabs.md)
 
 Use this method in the Microsoft Store analytics API to get aggregate reporting data for Windows 10 driver errors for a given date range and other optional filters. You can retrieve additional error information by using the [get details for a Windows 10 driver error](get-details-for-a-windows-10-driver-error.md) method.
 

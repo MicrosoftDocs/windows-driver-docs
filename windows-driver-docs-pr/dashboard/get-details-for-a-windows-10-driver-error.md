@@ -4,7 +4,7 @@ ms.assetid: 79DC7C99-70F1-499A-856B-D2A83FC6F867
 description: Use this method in the Microsoft Store analytics API to get detailed data for a Windows 10 driver error. This method is intended only for IHVs.
 title: Get details for a Windows 10 driver error
 ms.author: mcleans
-ms.date: 06/04/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: windows
 ms.technology: uwp
@@ -13,6 +13,17 @@ ms.localizationpriority: medium
 ---
 
 # Get details for a Windows 10 driver error
+
+> [!IMPORTANT]
+> This topic contains deprecated material. It describes older methods for collecting data about driver submission failures. It is supplied only for legacy support.
+>
+> Use these newer topics instead:
+>
+> - [Schedule Custom Reports for your driver failure details](schedule-custom-reports-for-your-driver-failure-details.md)
+> - [Create new report template](create-a-new-report-template.md)
+> - [Schedule a new report](schedule-a-new-report.md)
+> - [Get Report Data](get-report-data.md)
+> - [Download Failure Cabs](download-failure-cabs.md)
 
 Use this method in the Microsoft Store analytics API to get detailed data for a specific Windows 10 driver error in JSON format. Before you can use this method, you must first use the [get error reporting data for Windows 10 drivers](get-error-reporting-data-for-windows-10-drivers.md) method to retrieve the ID of the error for which you want to get detailed info.
 
