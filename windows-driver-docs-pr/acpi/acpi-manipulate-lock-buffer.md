@@ -6,7 +6,7 @@ ms.assetid: 7af24f15-66e1-4f68-8d8a-d22617616806
 keywords: 
 - ACPI_MANIPULATE_LOCK_BUFFER structure ACPI Devices
 ms.author: windowsdriverdev
-ms.date: 07/18/2017
+ms.date:
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -27,11 +27,7 @@ Requirements
 <col width="50%" />
 </colgroup>
 <tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Windows Vista and later versions of Windows.</p></td>
-</tr>
-<tr class="even">
+<tr>
 <td><p>Header</p></td>
 <td>Acpiioct.h (include Acpiioct.h)</td>
 </tr>
