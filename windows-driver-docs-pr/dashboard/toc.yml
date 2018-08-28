@@ -95,27 +95,6 @@
       href: get-audience-data.md
     - name: "Driver package metadata"
       href: driver-package-metadata.md
-    - name: "Get error reporting data for windows 10 drivers"
-      href: get-error-reporting-data-for-windows-10-drivers.md
-      items: 
-      - name: "Get details for a Windows 10 driver error"
-        href: get-details-for-a-windows-10-driver-error.md
-      - name: "Download the CAB file for a Windows 10 driver error"
-        href: download-the-cab-file-for-a-windows-10-driver-error.md
-    - name: "Get error reporting data for Windows 7 and Windows 8.x drivers"
-      href: get-error-reporting-data-for-windows-7-and-windows-8.x-drivers.md
-      items: 
-      - name: "Get details for a Windows 7 or Windows 8.x driver error"
-        href: get-details-for-a-windows-7-or-windows-8.x-driver-error.md
-      - name: "Download the CAB file for a Windows 7 or Window0s 8.x driver error"
-        href: download-the-cab-file-for-a-windows-7-or-windows-8.x-driver-error.md
-    - name: "Get OEM hardware error reporting data"
-      href: get-oem-hardware-error-reporting-data.md
-      items: 
-      - name: "Get details for an OEM hardware error"
-        href: get-details-for-an-oem-hardware-error.md
-      - name: "Download the CAB file for an OEM hardware error"
-        href: download-the-cab-file-for-an-oem-hardware-error.md
     - name: "Schedule custom reports for your driver failure details"
       href: schedule-custom-reports-for-driver-failure-details.md
       items:
@@ -148,6 +127,13 @@
           href: get-details-for-a-windows-7-or-windows-8.x-driver-error.md
         - name: "Download the CAB file for a Windows 7 or Windows 8.x driver error"
           href: download-the-cab-file-for-a-windows-7-or-windows-8.x-driver-error.md
+      - name: "Get OEM hardware error reporting data"
+        href: get-oem-hardware-error-reporting-data.md
+        items: 
+        - name: "Get details for an OEM hardware error"
+          href: get-details-for-an-oem-hardware-error.md
+        - name: "Download the CAB file for an OEM hardware error"
+          href: download-the-cab-file-for-an-oem-hardware-error.md
   - name: "File signing LSA plugins and UEFI firmware"
     href: lsa-and-uefi-file-signing.md
   - name: "Dashboard Administration"
