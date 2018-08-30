@@ -32,15 +32,15 @@ Use this method in the Microsoft Store analytics API to get detailed data for a 
 
 ## Prerequisites
 
-
 To use this method, you need to first do the following:
 
-* If you have not done so already, complete all the [prerequisites](https://docs.microsoft.com/windows/uwp/monetize/access-analytics-data-using-windows-store-services#prerequisites) for the Microsoft Store analytics API.
-* [Obtain an Azure AD access token](https://docs.microsoft.com/windows/uwp/monetize/access-analytics-data-using-windows-store-services#obtain-an-azure-ad-access-token) to use in the request header for this method. After you obtain an access token, you have 60 minutes to use it before it expires. After the token expires, you can obtain a new one.
-* Get the ID of the error for which you want to get detailed info. To get this ID, use the [get error reporting data for Windows 10 drivers](get-error-reporting-data-for-windows-10-drivers.md) method and use the **failureHash** value in the response body of that method.
+- If you have not done so already, complete all the [prerequisites](https://docs.microsoft.com/windows/uwp/monetize/access-analytics-data-using-windows-store-services#prerequisites) for the Microsoft Store analytics API.
+
+- [Obtain an Azure AD access token](https://docs.microsoft.com/windows/uwp/monetize/access-analytics-data-using-windows-store-services#obtain-an-azure-ad-access-token) to use in the request header for this method. After you obtain an access token, you have 60 minutes to use it before it expires. After the token expires, you can obtain a new one.
+
+- Get the ID of the error for which you want to get detailed info. To get this ID, use the [get error reporting data for Windows 10 drivers](get-error-reporting-data-for-windows-10-drivers.md) method and use the **failureHash** value in the response body of that method.
 
 ## Request
-
 
 ### Request syntax
 
@@ -48,27 +48,24 @@ To use this method, you need to first do the following:
 |--------|----------------------------------------------------------------------|
 | GET    | ```https://manage.devcenter.microsoft.com/v1.0/my/analytics/driver/failuredetails``` |
 
-
 ### Request header
 
-| Header        | Type   | Description                                                                 |
-|---------------|--------|-----------------------------------------------------------------------------|
-| Authorization | string | Required. The Azure AD access token in the form **Bearer** &lt;*token*&gt;. |
- 
+| Header|Type| Description|
+|-----|-----|----|
+|Authorization|string|Required. The Azure AD access token in the form **Bearer** *\<token\>*. |
 
 ### Request parameters
 
-| Parameter        | Type   |  Description      |  Required  
-|---------------|--------|---------------|------|
-| applicationId | string | The product ID value of the driver for which you want to retrieve error data. |  Yes  |
-| failureHash | string | The unique ID of the error for which you want to get detailed info. To get this value for the error you are interested in, use the [get OEM hardware error reporting data](get-oem-hardware-error-reporting-data.md) method and use the **failureHash** value in the response body of that method. |  Yes  |
-| startDate | date | The start date in the date range of detailed error data to retrieve. The default is 30 days before the current date. |  No  |
-| endDate | date | The end date in the date range of detailed error data to retrieve. The default is the current date. |  No  |
+|Parameter|Type|Description|Required|
+|------|-----|-----|------|
+|applicationId|string|The product ID value of the driver for which you want to retrieve error data.|Yes|
+|failureHash|string|The unique ID of the error for which you want to get detailed info. To get this value for the error you are interested in, use the [Get OEM hardware error reporting data](get-oem-hardware-error-reporting-data.md) method and use the **failureHash** value in the response body of that method.|Yes|
+|startDate|date|The start date in the date range of detailed error data to retrieve. The default is 30 days before the current date.|No|
+|endDate|date|The end date in the date range of detailed error data to retrieve. The default is the current date. |  No  |
 | top | int | The number of rows of data to return in the request. The maximum value and the default value if not specified is 10000. If there are more rows in the query, the response body includes a next link that you can use to request the next page of data. |  No  |
 | skip | int | The number of rows to skip in the query. Use this parameter to page through large data sets. For example, top=10 and skip=0 retrieves the first 10 rows of data, top=10 and skip=10 retrieves the next 10 rows of data, and so on. |  No  |
 | filter |string  | One or more statements that filter the rows in the response. Each statement contains a field name from the response body and value that are associated with the **eq** or **ne** operators, and statements can be combined using **and** or **or**. String values must be surrounded by single quotes in the *filter* parameter. You can specify the following fields from the response body:<p/><ul><li><strong>date</strong></li><li><strong>submissionId</strong></li><li><strong>failureName</strong></li><li><strong>failureHash</strong></li><li><strong>symbol</strong></li><li><strong>osVersion</strong></li><li><strong>osName</strong></li><li><strong>eventType</strong></li><li><strong>market</strong></li><li><strong>deviceType</strong></li><li><strong>driverName</strong></li><li><strong>driverVersion</strong></li><li><strong>oemName</strong></li><li><strong>oemModel</strong></li><li><strong>architecture</strong></li><li><strong>cabIdHash</strong></li><li><strong>clientDeviceId</strong></li><li><strong>cabType</strong></li><li><strong>cabExpirationTime</strong></li></ul> | No   |
 | orderby | string | A statement that orders the result data values. The syntax is <em>orderby=field [order],field [order],...</em>. You can specify the following fields from the response body:<p/><ul><li><strong>date</strong></li><li><strong>submissionId</strong></li><li><strong>failureName</strong></li><li><strong>failureHash</strong></li><li><strong>symbol</strong></li><li><strong>osVersion</strong></li><li><strong>osName</strong></li><li><strong>eventType</strong></li><li><strong>market</strong></li><li><strong>deviceType</strong></li><li><strong>driverName</strong></li><li><strong>driverVersion</strong></li><li><strong>oemName</strong></li><li><strong>oemModel</strong></li><li><strong>flightRing</strong></li><li><strong>architecture</strong></li><li><strong>cabType</strong></li><li><strong>cabExpirationTime</strong></li></ul><p>The <em>order</em> parameter is optional, and can be <strong>asc</strong> or <strong>desc</strong> to specify ascending or descending order for each field. The default is <strong>asc</strong>.</p><p>Here is an example <em>orderby</em> string: <em>orderby=date,market</em></p> |  No  |
-
 
 ### Request example
 
@@ -84,7 +81,6 @@ Authorization: Bearer <your access token>
 
 ## Response
 
-
 ### Response body
 
 | Value      | Type    | Description    |
@@ -92,7 +88,6 @@ Authorization: Bearer <your access token>
 | Value      | array   | An array of objects that contain detailed error data. For more information about the data in each object, see the following table.          |
 | @nextLink  | string  | If there are additional pages of data, this string contains a URI that you can use to request the next page of data. For example, this value is returned if the **top** parameter of the request is set to 10 but there are more than 10 rows of errors for the query. |
 | TotalCount | integer | The total number of rows in the data result for the query.        |
-
 
 Elements in the *Value* array contain the following values.
 
@@ -119,7 +114,6 @@ Elements in the *Value* array contain the following values.
 | cabIdHash         | string  | The unique ID of the CAB file that is associated with this error.   |
 | cabType         | string  | The type of the CAB file.   |
 | cabExpirationTime  | string  | The date and time when the CAB file is expired and can no longer be downloaded, in ISO 8601 format.   |
-
 
 ### Response example
 
@@ -151,7 +145,8 @@ The following example demonstrates an example JSON response body for this reques
 }
 ```
 
-## Related topics
+## See also
 
-* [Get error reporting data for Windows 10 drivers](get-error-reporting-data-for-windows-10-drivers.md)
-* [Download the CAB file for a Windows 10 driver error](download-the-cab-file-for-a-windows-10-driver-error.md)
+- [Get error reporting data for Windows 10 drivers](get-error-reporting-data-for-windows-10-drivers.md)
+
+- [Download the CAB file for a Windows 10 driver error](download-the-cab-file-for-a-windows-10-driver-error.md)

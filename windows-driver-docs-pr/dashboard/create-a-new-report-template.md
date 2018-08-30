@@ -1,9 +1,9 @@
 ---
 title: Create a new report template
 description: Describes how to create a new report template for driver failure reports. Includes REST API information. 
-author: balapv
-ms.author: balapv
-ms.date: 08/16/2018
+author: shganesh
+ms.author: shganesh
+ms.date: 09/01/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -348,3 +348,9 @@ You can manage your existing reports using the methods shown in [Manage report t
 ## See also
 
 - [Analytics Reporting APIs (Swagger )](https://apidocs.microsoft.com/services/analyticsreportingapis)
+
+- [Schedule a new report](schedule-a-new-report.md)
+
+- [Manage report templates](manage-report-templates-and-scheduled-reports.md)
+
+- [Sample report templates](sample-report-templates.md)

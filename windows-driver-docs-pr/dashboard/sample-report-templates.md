@@ -1,9 +1,9 @@
 ---
 title: Sample report templates
 description: Compilation of sample report templates for Windows driver submission failure reports. Code is REST APIs and JSON formatting. 
-author: balapv
-ms.author: balapv
-ms.date: 08/21/2018
+author: shganesh
+ms.author: shganesh
+ms.date: 09/01/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Sample report templates
 
-This article contains several report templates that cover common submissions failures for common business needs.  
+This article contains several report templates that cover common submissions failures for common business needs. You can reuse any or these templates or customize them based on your business needs.
 
 ## Request syntax
 
@@ -218,5 +218,7 @@ This API request payload calls for an IHV failure report for all drivers. It the
 ```
 
 ## See also
+
+- [Create a new report template](create-a-new-report-template.md)
 
 - [Analytics Reporting APIs (Swagger )](https://apidocs.microsoft.com/services/analyticsreportingapis)

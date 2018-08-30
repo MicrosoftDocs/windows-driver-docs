@@ -1,9 +1,9 @@
 ---
 title: Get report data
 description: Query the status of a failure report for Windows driver submission and get the failure details report.
-author: balapv
-ms.author: balapv
-ms.date: 08/20/2018
+author: shganesh
+ms.author: shganesh
+ms.date: 09/01/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Get Report Data
 
-Use this method to query the status of a report using the reportId and get the failure details report. The method returns the report download link if ready and status otherwise.
+Use this method to query the status of a report using the reportId and fetch the failure details report. The method returns the report download link if ready and status otherwise.
 
 ## Request syntax
 

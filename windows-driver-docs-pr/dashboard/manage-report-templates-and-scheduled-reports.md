@@ -1,9 +1,9 @@
 ---
 title: Manage report templates and scheduled reports
 description: Use these APIs to view and modify existing Windows driver submission reporting templates and manage your scheduled reports 
-author: balapv
-ms.author: balapv
-ms.date: 08/21/2018
+author: shganesh
+ms.author: shganesh
+ms.date: 09/01/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,7 +28,7 @@ Use this method to view the definition of the report template.
 <table>
   <thead>
     <tr>
-      <th>item</th>
+      <th>Item</th>
       <th>Description</th>
     </tr>
   </thead>

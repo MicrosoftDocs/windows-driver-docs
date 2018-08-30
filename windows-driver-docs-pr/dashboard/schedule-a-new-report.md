@@ -1,9 +1,9 @@
 ---
 title: Schedule a new report
-description: How to create a custom error report for the Microsoft Hardware Dev Center.
-author: balapv
-ms.author: balapv
-ms.date: 08/16/2018
+description: How to schedule a custom error report based on the report template for the Microsoft Hardware Dev Center.
+author: shganesh
+ms.author: shganesh
+ms.date: 09/01/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,26 +52,37 @@ This table contains descriptions of parameters in the Schedule Report JSON.
     <thead>
         <tr>
             <th>Parameter</th>
+            <th>Required</th>
            <th>Description</th>
         </tr>
     </thead>
     <tbody>
        <tr>
           <td>templateId</td>
+          <td>Yes</td>
           <td>The templateId value received as a response to the Create Report Template API</td>
         </tr>
         <tr>
             <td>startTime</td>
+            <td>Yes</td>
             <td>Time when the report is expected to run for the first time, in this format:<pre>yyyy-MM-ddTHH:mm:ssZ</pre></td>
         </tr>
         <tr>
            <td>recurrenceInterval</td>
+           <td>Yes</td>
            <td>Time interval in hours, after which you expect the report to run again. The minimum time interval allowed is 12 hours.</td>
         </tr>
         <tr>
             <td>recurrence</td>
+            <td>Yes</td>
             <td>Number of times you expect this report to run.</td>
         </tr>
+        <tr>
+           <td>CallbackURL</td>
+           <td>No</td>
+           <td>URL that needs to be notified once the report data is ready</td>
+        </tr>
+
 </tbody>
 </table>
 
@@ -113,6 +124,14 @@ This table describes the parameter in the response.
 |----|----|
 |reportId|Represents the ID of the scheduled report|
 
+If you set up a Callback URL to get notified when the report data is ready, you can call the [Get Report Data](get-report-data.md) method to fetch the report data as soon as it is ready for download.
+
 ## See also
 
-- [Analytics Reporting APIs (Swagger )](https://apidocs.microsoft.com/services/analyticsreportingapis)
+- [Analytics Reporting APIs (Swagger)](https://apidocs.microsoft.com/services/analyticsreportingapis)
+
+- [Get Report Data](get-report-data.md)
+
+- [Manage report templates](manage-report-templates-and-scheduled-reports.md)
+
+- [Sample report templates](sample-report-templates.md)
