@@ -4,7 +4,7 @@ ms.assetid: 2F30E68B-B643-4387-9430-793D08AAF0E7
 description: Use this method in the Microsoft Store analytics API to get aggregate error reporting data for Windows 7 and Windows 8.x drivers for a given date range and other optional filters. This method is intended only for IHVs.
 title: Get error reporting data for Windows 7 and Windows 8.x drivers
 ms.author: mcleans
-ms.date: 08/28/2018
+ms.date: 06/04/2018
 ms.topic: article
 ms.prod: windows
 ms.technology: uwp
@@ -13,17 +13,6 @@ ms.localizationpriority: medium
 ---
 
 # Get error reporting data for Windows 7 and Windows 8.x drivers
-
-> [!IMPORTANT]
-> This topic contains deprecated material. It describes older methods for collecting data about driver submission failures. It is supplied only for legacy support.
->
-> Use these newer topics instead:
->
-> - [Schedule Custom Reports for your driver failure details](schedule-custom-reports-for-driver-failure-details.md)
-> - [Create new report template](create-a-new-report-template.md)
-> - [Schedule a new report](schedule-a-new-report.md)
-> - [Get Report Data](get-report-data.md)
-> - [Download Failure Cabs](download-failure-cabs.md)
 
 Use this method in the Microsoft Store analytics API to get aggregate reporting data for Windows 7/Windows 8.x driver errors for a given date range and other optional filters. You can retrieve additional error information by using the [get details for a Windows 7 or Windows 8.x driver error](get-details-for-a-windows-7-or-windows-8.x-driver-error.md) method.
 
