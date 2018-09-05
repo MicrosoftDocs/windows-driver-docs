@@ -28,6 +28,8 @@ The Hardware Dev Center Dashboard lets you to digitally sign [Local Security Aut
 >   * Depending on your certificate provider, you may need to use [SignTool](https://msdn.microsoft.com/library/windows/desktop/aa387764) or an external process.
 >   * EFI ByteCode (EBC) files must be compiled using the /ALIGN:32 flag for processing to succeed.
 
+>* UEFI FIRMWARE ONLY - If your submission is a shim, you must submit a completed template for review to the shim review board. The shim review process is described at https://github.com/rhboot/shim-review/.
+
 > * LSA PLUGINS ONLY - The CAB file signature must match the EV code signing certificate for your organization. 
 
 
