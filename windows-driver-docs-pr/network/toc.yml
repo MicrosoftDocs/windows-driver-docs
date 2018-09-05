@@ -3235,6 +3235,10 @@
         href: ndis-status-wwan-home-provider.md
       - name: "NDIS_STATUS_WWAN_IP_ADDRESS_STATE"
         href: ndis-status-wwan-ip-address-state.md
+      - name: "NDIS_STATUS_WWAN_LTE_ATTACH_CONFIG"
+        href: ndis-status-wwan-lte-attach-config.md
+      - name: "NDIS_STATUS_WWAN_LTE_ATTACH_STATUS"
+        href: ndis-status-wwan-lte-attach-status.md
       - name: "NDIS_STATUS_WWAN_MODEM_CONFIG_INFO"
         href: ndis-status-wwan-modem-config-info.md
       - name: "NDIS_STATUS_WWAN_MPDP_LIST"
@@ -5569,6 +5573,10 @@
       href: oid-wwan-enumerate-device-services.md
     - name: "OID_WWAN_HOME_PROVIDER"
       href: oid-wwan-home-provider.md
+    - name: "OID_WWAN_LTE_ATTACH_CONFIG"
+      href: oid-wwan-lte-attach-config.md
+    - name: "OID_WWAN_LTE_ATTACH_STATUS"
+      href: oid-wwan-lte-attach-status.md
     - name: "OID_WWAN_MODEM_CONFIG_INFO"
       href: oid-wwan-modem-config-info.md
     - name: "OID_WWAN_MPDP"

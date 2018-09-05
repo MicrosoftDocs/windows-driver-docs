@@ -31,6 +31,8 @@ ms.localizationpriority: medium
 [install-section-name.LogConfigOverride] |
 [install-section-name.nt.LogConfigOverride] |
 [install-section-name.ntx86.LogConfigOverride] |
+[install-section-name.ntarm.LogConfigOverride] | (Windows 8 and later versions of Windows)
+[install-section-name.ntarm64.LogConfigOverride] | (Windows 10 version 1709 and later versions of Windows)
 [install-section-name.ntia64.LogConfigOverride] |  (Windows XP and later versions of Windows)
 [install-section-name.ntamd64.LogConfigOverride]  (Windows XP and later versions of Windows)
  

@@ -31,6 +31,8 @@ An INF file's **DefaultInstall** section is accessed if a user selects the "Inst
 [DefaultInstall] | 
 [DefaultInstall.nt] | 
 [DefaultInstall.ntx86] | 
+[DefaultInstall.ntarm] | (Windows 8 and later versions of Windows)
+[DefaultInstall.ntarm64]  (Windows 10 version 1709 and later versions of Windows)
 [DefaultInstall.ntia64] | (Windows XP and later versions of Windows)
 [DefaultInstall.ntamd64]  (Windows XP and later versions of Windows)
  

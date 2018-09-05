@@ -27,6 +27,8 @@ ms.localizationpriority: medium
 [install-section-name.HW] |
 [install-section-name.nt.HW] |
 [install-section-name.ntx86.HW] |
+[install-section-name.ntarm.HW] | (Windows 8 and later versions of Windows)
+[install-section-name.ntarm64.HW] | (Windows 10 version 1709 and later versions of Windows)
 [install-section-name.ntia64.HW] |  (Windows XP and later versions of Windows)
 [install-section-name.ntamd64.HW]  (Windows XP and later versions of Windows)
  
