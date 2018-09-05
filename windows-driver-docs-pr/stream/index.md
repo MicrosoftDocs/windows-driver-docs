@@ -8,7 +8,7 @@ keywords:
 - media streaming WDK
 - data streaming WDK
 ms.author: windowsdriverdev
-ms.date: 06/14/2018
+ms.date:
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -33,7 +33,7 @@ Use the guidance in this section to design and implement drivers for devices tha
 -   [OEM guidance on settings for the Windows 10 in-box camera app](oem-guidance-on-settings-for-the-windows-10-in-box-camera-app.md)
 -   [Video stabilization registry settings](oem-guidance-on-registry-keys-for-video-stabilization.md)
 -   [Extended camera controls](standardized-extended-controls-.md) (updated for Windows 10, version 1607)
--   [Windows Hello camera driver bring up guide](windows-hello-camera-driver-bring-up-guide.md) (new for Windows 10, version 1607)
+-   [Camera driver bring up guide](windows-hello-camera-driver-bring-up-guide.md) (new for Windows 10, version 1607)
 -   [Universal camera driver design guide for Windows 10](windows-10-technical-preview-camera-drivers-design-guide.md)
 -   [AVStream Property Sets](avstream-property-sets.md)
 -   [Broadcast Driver Architecture Property, Event, and Method Sets](broadcast-driver-architecture-property--event--and-method-sets.md)
