@@ -106,7 +106,6 @@ The controller shall always complete this command promptly with a Command Comple
 | Value  |  Parameter description |
 |---|---|
 | 0x00000000&#160;00000001  | Controller supports the RSSI Monitoring feature for BR/EDR connections. In addition, the controller supports [HCI_VS_MSFT_Read_Absolute_RSSI](#hcivsmsftreadabsoluterssi) to read the absolute RSSI metric of a BR/EDR connection. |
-| 0x00000000&#160;00000002 | Controller supports the RSSI Monitoring feature for LE connections. |
 | 0x00000000&#160;00000002  |  Controller supports the RSSI Monitoring feature for LE connections. |
 | 0x00000000&#160;00000004  | Controller supports the RSSI Monitoring of LE advertisements. |
 |0x00000000&#160;00000008|Controller supports Advertising Monitoring of LE advertisements.|
