@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Find a hardware submission
 
-All hardware submissions that have been submitted by your organization are displayed on the **Drivers** page of the hardware dashboard. To find a specific hardware submission, you can search two different ways:
+All hardware submissions that have been submitted by your organization are displayed on the **Drivers** page of the hardware dashboard. To find a specific hardware submission, you can search either:
 
 - using plain text search
 
@@ -36,7 +36,7 @@ You can enter any search phrase in the text box. The dashboard returns entries w
 
 - certification type
 
- For example, the search phrase **mydriver** returns submissions with the product name *mydriver 1*, *new mydriver*, and *old mydriver 2* but not *mydriver1* or *mydriver_new*.
+For example, the search phrase **mydriver** returns submissions with the product name *mydriver 1*, *new mydriver*, and *old mydriver 2*, but it will not return a result for *mydriver1* or *mydriver_new*.
 
 You can use the wildcard operator (\*) as a suffix in the search phrase to find an occurrence of the phrase anywhere in the searchable text fields. In the previous example, the search phrase **mydriver\*** returns submissions with the product names *mydriver 1*, *new mydriver* and *old mydriver 2*, as well as *mydriver1* and *mydriver_new*.
 
@@ -44,11 +44,11 @@ You can use the wildcard operator (\*) as a suffix in the search phrase to find 
 
 You can search for drivers by driver attributes using the keyword search. When you type an ampersand (**\@**) in the search box, the dashboard displays a list of the usable attributes. As you enter text after the ampersand, the list narrows to match the criteria. Query format (@ParameterName: “”) will be populated on selecting the search parameter and should not be modified. You should only enter the search phrases within quotes(“”). Search phrases can be simple phrases or suffixed with an ampersand (**\***) when using a text search parameter. For example, to search for drivers  by operating system codes use **@OperatingSystemCode:"Windows 10 RS4 Client x64"** or **@OperatingSystemCode:"Windows 10 RS4\*"**
 
-TODO: Add image
+![Screenshot of the Drivers page in the hardware dashboard, with an ampersand entered into the text box. A list of available attributes shows under the ampersand.](images\ampersand-search.png)
 
 You can also search using multiple attributes. Multiple objects behave as an AND operator combination. For example, if you search for both product name and submission status (**@ProductName:"test" @SubmissionStatus:"failed"**) the dashboard returns only those records that match **both** product name and submission status.
 
-TODO: Add image
+![Screenshot of the Drivers page in the hardware dashboard, in which two attributes, @ProductName:"test" and @SubmissionStatus:"failed", are entered. Results all have "test" in the product name as well as "failed" in the submission status.](images/two-attribute-search.png)
 
 You can use the following driver attributes for keyword searches:
 
