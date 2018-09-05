@@ -73,26 +73,25 @@ The USB Type-C connector, introduced by the USB-IF, defined in the USB 3.1 speci
 
 <li><p>For a system that does not implement a PD state machine, implement a client driver to the UcmTcpciCx class extension. </p>
 
-[UCmCx client driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188011)
-
 [Write a USB Type-C port controller driver](write-a-usb-type-c-port-controller-driver.md)
 
 </li>
 
-<li>For systems that implement the PD state machines in hardware or firmware and support USB Type-C Connector System Software Interface (UCSI) over ACPI, load the Microsoft provided in-box driver, UcmUcsi.sys. 
+<li>For systems that implement the PD state machines in hardware or firmware and support USB Type-C Connector System Software Interface (UCSI) over ACPI, load the Microsoft provided in-box drivers, UcmUcsi.sys and UcmUcsiAcpiClient.sys.
 
 See [UCSI driver](ucsi.md).</li>
 
 <li><p>For systems that implement the PD state machines in hardware or firmware, but either do not support UCSI, or support UCSI but require a transport other than ACPI, write a client driver for the UcmCx class extension.</p>
 
-<p>For systems that implement UCSI but require a transport other than ACPI, Microsoft provides a skeleton UcmCx client driver based on the inbox UCSI driver that can be modified to support a different transport. 
-
-See [this sample template](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi). </p>
-</li>
-
 [Write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md)
 
-[UcmCx client driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188011)</li>
+<li><p>For systems that implement UCSI but require a transport other than ACPI, implement a client driver to the UcmUcsiCx class extension. 
+
+Use [this sample template](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi) and modify it based on a transport that your hardware uses. </p>
+</li>
+
+[Write a UCSI client driver](write-a-ucsi-driver.md)
+</li>
 </ul></td>
 </tr>
 <tr class="even">

@@ -16,7 +16,7 @@ You need to write a USB Type-C connector driver in these scenarios:
 
 -   If your USB Type-C hardware has the capability of handling the power delivery (PD) state machine. Otherwise, consider writing a USB Type-C port controller driver. For more information, see [Write a USB Type-C port controller driver](write-a-usb-type-c-port-controller-driver.md).
 
--   If your hardware is UCSI-compliant over a transport other than ACPI. Otherwise, load the load the Microsoft provided in-box driver, UcmUcsi.sys. (See [UCSI driver](ucsi.md)). 
+-   If your hardware does not have an embedded controller. Otherwisem load the Microsoft provided in-box driver, UcmUcsi.sys. (See [UCSI driver](ucsi.md)) for ACPI transports or [write a UCSI client driver](write-a-ucsi-driver.md) for non-ACPI transports. 
 
 **Summary**
 
