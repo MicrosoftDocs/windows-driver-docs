@@ -147,7 +147,7 @@ The resulting signed SCCD works only on devices in [Developer Mode](https://docs
 
 ## Allowing any app to use a custom capability
 
-Normally it is best to specify which apps may use a custom capability with authorized entities as it prevents further decimination of the custom capability; however, in some cases, it may be more desireable to allow any app to include a SCCD.  Starting Windows 10 version 1809, a developer may do this by adding **AllowAny** to the AuthorizedEntities element.  Since it is generally better to declare authrorized entites in your SCCD file, please provide a justification for using AllowAny when submitting your SCCD to be signed by Microsoft.
+We recommend specifying authorized entities (apps) that can use a custom capability. In some cases, however, you might want to permit any app to include an SCCD.  Starting in Windows 10 version 1809, you can do this by adding **AllowAny** to the AuthorizedEntities element. Because the best practice is to declare authorized entities in the SCCD file, please provide a justification for using **AllowAny** when submitting your SCCD to be signed by Microsoft.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -164,7 +164,7 @@ The resulting signed SCCD will validate in any app package.
 
 ## Multiple SCCDs
 
-Starting Windows 10 version 1803, apps can declare custom capabilities from one ore more SCCD files.  The SCCD files just need to be placed in the root of the app pacakge.
+Starting in Windows 10 version 1803, apps can declare custom capabilities from one or more SCCD files. Place the SCCD files in the root of the app package.
 
 ## Summary
 
