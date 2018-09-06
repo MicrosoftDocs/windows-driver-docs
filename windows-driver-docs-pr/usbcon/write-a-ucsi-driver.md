@@ -111,7 +111,7 @@ If the client driver enters a Dx state because of S0-Idle, WDF brings the driver
 
 In your [**EVT_WDF_DRIVER_DEVICE_ADD**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) implementation, 
 
-1. After you have set of Plug and Play and power management event callback functions ([**WdfDeviceInitSetPnpPowerEventCallbacks**](../wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks.md)), call [**UcmTcpciDeviceInitInitialize**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucmucsidevice/nf-ucmucsidevice-ucmucsideviceinitinitialize) to initialize the [**WDFDEVICE_INIT**](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/wdfdevice_init) opaque structure. The call associates the client driver with the framework.
+1. After you have set the Plug and Play and power management event callback functions ([**WdfDeviceInitSetPnpPowerEventCallbacks**](../wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks.md)), call [**UcmTcpciDeviceInitInitialize**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucmucsidevice/nf-ucmucsidevice-ucmucsideviceinitinitialize) to initialize the [**WDFDEVICE_INIT**](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/wdfdevice_init) opaque structure. The call associates the client driver with the framework.
 
 2. After creating the framework device object (WDFDEVICE), call [**UcmUcsiDeviceInitialize**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucmucsidevice/nf-ucmucsidevice-ucmucsideviceinitialize.md) to register the client diver with UcmUcsiCx.
 
@@ -132,7 +132,6 @@ In your implementation of [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](../wdfdevice/nc-
                 WDF_NO_OBJECT_ATTRIBUTES,
                 ConnectorCollectionHandle);
 
-
     // Enumerate the connectors on the device.
     // ConnectorId of 0 is reserved for the parent device.
     // In this example, we assume the parent has no children connectors.
@@ -147,29 +146,29 @@ In your implementation of [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](../wdfdevice/nc-
 2. Decide whether you want to enable the device controller.
 
 3. Configure and create the PPM object.
-    1. Initialize a [**UCMUCSI_PPM_CONFIG**] structure by providing the connector handle you created in step 1.
+    1. Initialize a [**UCMUCSI_PPM_CONFIG**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucmucsippm/ns-ucmucsippm-ucmucsi-ppm-config) structure by providing the connector handle you created in step 1.
     2. Set **UsbDeviceControllerEnabled** member to a boolean value determined in step 2.
     3. Set your event callbacks in WDF_OBJECT_ATTRIBUTES.
     4. Call [**UcmUcsiPpmCreate**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucmucsippm/nf-ucmucsippm-ucmucsippmcreate) by passing all the configured structures.
 
     ```
-        UCMUCSIPPM ppmObject = WDF_NO_HANDLE;
-        PUCMUCSI_PPM_CONFIG UcsiPpmConfig;
-        WDF_OBJECT_ATTRIBUTES attrib;
+    UCMUCSIPPM ppmObject = WDF_NO_HANDLE;
+    PUCMUCSI_PPM_CONFIG UcsiPpmConfig;
+    WDF_OBJECT_ATTRIBUTES attrib;
     
-        UCMUCSI_PPM_CONFIG_INIT(UcsiPpmConfig, ConnectorCollectionHandle);
+    UCMUCSI_PPM_CONFIG_INIT(UcsiPpmConfig, ConnectorCollectionHandle);
     
-        UcsiPpmConfig->UsbDeviceControllerEnabled = TRUE;
+    UcsiPpmConfig->UsbDeviceControllerEnabled = TRUE;
     
-        WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&attrib, Ppm);
-        attrib->EvtDestroyCallback = &EvtObjectContextDestroy;
+    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&attrib, Ppm);
+    attrib->EvtDestroyCallback = &EvtObjectContextDestroy;
     
-        status = UcmUcsiPpmCreate(wdfDevice, UcsiPpmConfig, &attrib, &ppmObject);
+    status = UcmUcsiPpmCreate(wdfDevice, UcsiPpmConfig, &attrib, &ppmObject);
     
     ```
 ## 3. Set up IO queues
 
-UcmUcsiCx sends UCSI commands to client driver to send to the PPM firmware. Those commands are sent in form of these IOCTL requests in a WDF queue.
+UcmUcsiCx sends UCSI commands to client driver to send to the PPM firmware. The commands are sent in form of these IOCTL requests in a WDF queue.
 
 -  [IOCTL_UCMUCSI_PPM_SEND_UCSI_DATA_BLOCK](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucmucsippmrequests/ni-ucmucsippmrequests-ioctl_ucmucsi_ppm_send_ucsi_data_block)
 -  [IOCTL_UCMUCSI_PPM_GET_UCSI_DATA_BLOCK](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucmucsippmrequests/ni-ucmucsippmrequests-ioctl_ucmucsi_ppm_get_ucsi_data_block)
@@ -181,30 +180,30 @@ UcmUcsiCx guarantees that there can be at most one outstanding request in the WD
 Typically the driver sets up queues in its implementation of [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](../wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware.md).
 
 ```
-    WDFQUEUE UcsiCommandRequestQueue = WDF_NO_HANDLE;
-    WDF_OBJECT_ATTRIBUTES attrib;
-    WDF_IO_QUEUE_CONFIG queueConfig;
+WDFQUEUE UcsiCommandRequestQueue = WDF_NO_HANDLE;
+WDF_OBJECT_ATTRIBUTES attrib;
+WDF_IO_QUEUE_CONFIG queueConfig;
 
-    WDF_OBJECT_ATTRIBUTES_INIT(&attrib);
-    attrib.ParentObject = GetObjectHandle();
+WDF_OBJECT_ATTRIBUTES_INIT(&attrib);
+attrib.ParentObject = GetObjectHandle();
 
-    // In this example, even though the driver selects to create a sequential queue, 
-    // UcmUcsiCx guarantees that will not send another request 
-    // until the previous one has been completed.
+// In this example, even though the driver selects to create a sequential queue, 
+// UcmUcsiCx guarantees that will not send another request 
+// until the previous one has been completed.
 
 
-    WDF_IO_QUEUE_CONFIG_INIT(&queueConfig, WdfIoQueueDispatchSequential);
+WDF_IO_QUEUE_CONFIG_INIT(&queueConfig, WdfIoQueueDispatchSequential);
 
-    // The queue must be power-managed.
+// The queue must be power-managed.
 
-    queueConfig.PowerManaged = WdfTrue;
-    queueConfig.EvtIoDeviceControl = EvtIoDeviceControl;
+queueConfig.PowerManaged = WdfTrue;
+queueConfig.EvtIoDeviceControl = EvtIoDeviceControl;
 
-    status = WdfIoQueueCreate(device, &queueConfig, &attrib, &UcsiCommandRequestQueue);
+status = WdfIoQueueCreate(device, &queueConfig, &attrib, &UcsiCommandRequestQueue);
 
-    UcmUcsiPpmSetUcsiCommandRequestQueue(ppmObject, UcsiCommandRequestQueue);
+UcmUcsiPpmSetUcsiCommandRequestQueue(ppmObject, UcsiCommandRequestQueue);
 
-    status = STATUS_SUCCESS;
+status = STATUS_SUCCESS;
 ```
 
 The client driver must also call [**UcmUcsiPpmStart**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucmucsippm/nf-ucmucsippm-ucmucsippmstart) to notify UcmUcsiCx that the driver is ready to receive the IOCTL requests. Conversely, when the driver does not want to process any more requests, it must call [**UcmUcsiPpmStop**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucmucsippm/nf-ucmucsippm-ucmucsippmstop).
