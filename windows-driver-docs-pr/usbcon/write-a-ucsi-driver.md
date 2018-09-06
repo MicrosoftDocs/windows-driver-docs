@@ -14,19 +14,15 @@ ms.localizationpriority: medium
 
 A USB Type-C Connector System Software Interface (UCSI) driver serves as the controller driver for a USB Type-C system with an embedded controller (EC).
 
-If your system that implements Platform Policy Manager (PPM), as described in UCSI specification, in an EC connected to the system over:
+If your system that implements Platform Policy Manager (PPM), as described in the UCSI specification, in an EC that is connected to the system over:
 
-- An ACPI transport, you do _not_ need to write a driver. Load the Microsoft provided in-box driver, UcmUcsi.sys. (See [UCSI driver](ucsi.md)).
+- An ACPI transport, you do _not_ need to write a driver. Load the Microsoft provided in-box driver, (UcmUcsi.sys and UcmUcsiAcpiClient.sys). (See [UCSI driver](ucsi.md)).
 
 - A non-ACPI transport, such as  USB, PCI, I2C or UART, you need to write a client driver for the controller.
 
 > If your USB Type-C hardware does not have the capability of handling the power delivery (PD) state machine, consider writing a USB Type-C port controller driver. For more information, see [Write a USB Type-C port controller driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md).
 
-Starting in Windows 10, version 1809, a new class extension for UCSI (UcmUcsiCx.sys) has been added,which implements the UCSI specification in a transport agnostic way. With minimal amount of code, your  connector driver, which is the a client to UcmUcsiCx, can communicate with the USB Type-C hardware over non-ACPI transport.
-
-**Summary**
-- Services provided by the UCSI class extension
-- Expected behavior of the client driver
+Starting in Windows 10, version 1809, a new class extension for UCSI (UcmUcsiCx.sys) has been added,which implements the UCSI specification in a transport agnostic way. With minimal amount of code, your driver, which is a client to UcmUcsiCx, can communicate with the USB Type-C hardware over non-ACPI transport. This topic describes the services provided by the UCSI class extension and the expected behavior of the client driver.
 
 **Official specifications**
 -   [Intel BIOS Implementation of UCSI](http://go.microsoft.com/fwlink/p/?LinkId=760658)
@@ -48,20 +44,21 @@ Applies to:
 
 **Sample**
 
-[UcmUcsiCx client driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmUcsiAcpiSample )
+[UcmUcsiCx client driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmUcsiAcpiSample)
+
+Replace the ACPI portions with your implementation for the required bus.
 
 ## UCSI class extension architecture
-UCSI class extension, UcmUcsiCx, allows you to write a driver that communicates with its embedded controller by using non-ACPI transport. The controller driver is a client driver to UcmUcsiCx. UcmUcsiCx is in turn a client to USB connector manager (UCM). Hence, UcmUcsiCx does not make any policy decisions of its own. Instead, it implements policies provided by UCM. UcmUcsiCx implements state machines for handling Platform Policy Manager (PPM) notifications from the client driver and sends commands to implement UCM policy decisions, allowing for more reliable problem detection and error handling.
+UCSI class extension, UcmUcsiCx, allows you to write a driver that communicates with its embedded controller by using non-ACPI transport. The controller driver is a client driver to UcmUcsiCx. UcmUcsiCx is in turn a client to USB connector manager (UCM). Hence, UcmUcsiCx does not make any policy decisions of its own. Instead, it implements policies provided by UCM. UcmUcsiCx implements state machines for handling Platform Policy Manager (PPM) notifications from the client driver and sends commands to implement UCM policy decisions, allowing for a more reliable problem detection and error handling.
 
 ![UCSI class extension architecture](images/ucsicxarch.png)
 
 **OS Policy Manager (OPM)**
 
-OS Policy Manager (OPM) implements the logic to interact with PPM, as described in UCSI specification. OPM is responsible for:
+OS Policy Manager (OPM) implements the logic to interact with PPM, as described in the UCSI specification. OPM is responsible for:
 
 - Converting UCM policies into UCSI commands and UCSI notifications into UCM notifications.
 - Sending UCSI commands required for initializing PPM, detecting error, and recovery mechanisms.
-- Providing interfaces that are used by UCSI compliance TAEF tests for sending UCSI commands to  PPM.  
 
 **Handling UCSI commands** 
 
@@ -84,7 +81,7 @@ UcmUcsiCx abstracts the details of sending UCSI commands from OPM to the PPM fir
 
 - IOCTLs to the client driver
 
-    UcmUcsiCx sends UCSI commands (through IOCTL requests) to client driver to send to the PPM firmware. The driver is responsible for request after it has sent the UCSI command to the firmware.
+    UcmUcsiCx sends UCSI commands (through IOCTL requests) to client driver to send to the PPM firmware. The driver is responsible for completing the request after it has sent the UCSI command to the firmware.
 
 
 **Handling power transitions**
@@ -98,12 +95,11 @@ If the client driver enters a Dx state because of S0-Idle, WDF brings the driver
 -   Determine the type of driver you need to write depending on whether your hardware or firmware implements PD state machine, and the transport.
 
     ![Decision for choosing the correct class extension](images/drivers-c.png)
-- 
     For more information, see [Developing Windows drivers for USB Type-C connectors](developing-windows-drivers-for-usb-type-c-connectors.md).  
 
 -   Install Windows 10 for desktop editions (Home, Pro, Enterprise, and Education).
 
--   [Install](http://go.microsoft.com/fwlink/p/?LinkID=845980) the latest Windows Driver Kit (WDK) on your development computer. The kit has the required header files and libraries for writing the client driver, specifically, you'll need:
+-   [Install](https://developer.microsoft.com/en-us/windows/hardware/windows-driver-kit) the latest Windows Driver Kit (WDK) on your development computer. The kit has the required header files and libraries for writing the client driver, specifically, you'll need:
 
     -   The stub library, (UcmUcsiCxStub.lib). The library translates calls made by the client driver and pass them up to the class extension.
     -   The header file, Ucmucsicx.h.
