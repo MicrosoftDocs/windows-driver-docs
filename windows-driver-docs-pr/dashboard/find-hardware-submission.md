@@ -42,7 +42,7 @@ You can use the wildcard operator (\*) as a suffix in the search phrase to find 
 
 ## Keyword Search
 
-You can search for drivers by driver attributes using the keyword search. When you type an ampersand (**\@**) in the search box, the dashboard displays a list of the usable attributes. As you enter text after the ampersand, the list narrows to match the criteria. Query format (@ParameterName: “”) will be populated on selecting the search parameter and should not be modified. You should only enter the search phrases within quotes(“”). Search phrases can be simple phrases or suffixed with an ampersand (**\***) when using a text search parameter. For example, to search for drivers  by operating system codes use **@OperatingSystemCode:"Windows 10 RS4 Client x64"** or **@OperatingSystemCode:"Windows 10 RS4\*"**
+You can search for drivers by driver attributes using the keyword search. When you type an ampersand (**\@**) in the search box, the dashboard displays a list of the usable attributes. As you enter text after the ampersand, the list narrows to match the criteria. Query format (@ParameterName: “”) will be populated on selecting the search parameter and should not be modified. You should only enter the search phrases within quotes(“”). Search phrases can be simple phrases or suffixed with the wildcard character (**\***) when using a text search parameter. For example, to search for drivers  by operating system codes use **@OperatingSystemCode:"Windows 10 RS4 Client x64"** or **@OperatingSystemCode:"Windows 10 RS4\*"**
 
 ![Screenshot of the Drivers page in the hardware dashboard, with an ampersand entered into the text box. A list of available attributes shows under the ampersand.](images\ampersand-search.png)
 
