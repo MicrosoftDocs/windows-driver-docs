@@ -89,8 +89,8 @@ For example, If you want to enable your Windows 10 RS3 (1709) driver to be offer
 To bring the lower OS limit up to RS1, use the Floor feature called out above.  Select the **Extended** HWID you want, then click Publish.  
 
 > [!NOTE]
-> In the above example, there is no need to publish any HWIDs that list Windows 10 RS3.  This is because you will be setting a lower OS Floor limit of RS1.  Your **Extended** driver will be offered correctly to all OSs' that are greater than the lowest starting point.  This means it will be offered to RS1, RS2, RS3, etc.
-> Trying to set a floor of RS1 when a Windows 10 RS3 (1709) targeted driver is selected, will result in an error informing you to choose a higher OS floor target. 
+> In the above example, there is no need to publish any HWIDs that list Windows 10 RS3.  This is because you will be setting a lower OS Floor limit of RS1.  Your **Extended** driver will be offered correctly to all operating systems that are greater than the lowest starting point.  This means it will be offered to RS1, RS2, RS3, etc.
+> Trying to set a floor of RS1 when a Windows 10 RS3 (1709) targeted driver is selected will result in an error informing you to choose a higher OS floor target. 
 
 ## FAQ
 
