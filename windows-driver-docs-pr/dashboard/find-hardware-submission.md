@@ -38,7 +38,7 @@ You can enter any search phrase in the text box. The dashboard returns entries w
 
 For example, the search phrase **mydriver** returns submissions with the product name *mydriver 1*, *new mydriver*, and *old mydriver 2*, but it will not return a result for *mydriver1* or *mydriver_new*.
 
-You can use the wildcard operator (\*) as a suffix in the search phrase to find an occurrence of the phrase anywhere in the searchable text fields. Building on the previous example, the search phrase **mydriver\\\*** returns submissions with the product names *mydriver 1*, *new mydriver* and *old mydriver 2*, as well as *mydriver1* and *mydriver_new*.
+You can use the wildcard operator (\*) as a suffix in the search phrase to find an occurrence of the phrase anywhere in the searchable text fields. Building on the previous example, the search phrase **mydriver\*** returns submissions with the product names *mydriver 1*, *new mydriver* and *old mydriver 2*, as well as *mydriver1* and *mydriver_new*.
 
 ## Keyword Search
 
