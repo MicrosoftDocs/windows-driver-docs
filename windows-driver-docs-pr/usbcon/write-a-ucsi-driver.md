@@ -40,7 +40,7 @@ Applies to:
 
 **Important APIs**
 
-[UcmUcsiCx class extensions reference](https://msdn.microsoft.com/en-us/library/windows/hardware/mt805826)
+[UcmUcsiCx class extensions reference](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/_usbref)
 
 **Sample**
 
@@ -175,7 +175,7 @@ UcmUcsiCx sends UCSI commands to client driver to send to the PPM firmware. The 
 
 The client driver is responsible for creating and registering that queue to UcmUcsiCx by calling [**UcmUcsiPpmSetUcsiCommandRequestQueue**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucmucsippm/nf-ucmucsippm-ucmucsippmsetucsicommandrequestqueue). The queue must be power-managed.
 
-UcmUcsiCx guarantees that there can be at most one outstanding request in the WDF queue. The driver also is responsible of completing the WDFREQUEST after it has sent the UCSI command to the firmware.
+UcmUcsiCx guarantees that there can be at most one outstanding request in the WDF queue. The driver also is responsible of completing the WDF request after the driver has sent the UCSI command to the firmware.
 
 Typically the driver sets up queues in its implementation of [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](../wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware.md).
 
@@ -187,7 +187,7 @@ WDF_IO_QUEUE_CONFIG queueConfig;
 WDF_OBJECT_ATTRIBUTES_INIT(&attrib);
 attrib.ParentObject = GetObjectHandle();
 
-// In this example, even though the driver selects to create a sequential queue, 
+// In this example, even though the driver creates a sequential queue, 
 // UcmUcsiCx guarantees that will not send another request 
 // until the previous one has been completed.
 
@@ -203,24 +203,25 @@ status = WdfIoQueueCreate(device, &queueConfig, &attrib, &UcsiCommandRequestQueu
 
 UcmUcsiPpmSetUcsiCommandRequestQueue(ppmObject, UcsiCommandRequestQueue);
 
-status = STATUS_SUCCESS;
 ```
 
 The client driver must also call [**UcmUcsiPpmStart**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucmucsippm/nf-ucmucsippm-ucmucsippmstart) to notify UcmUcsiCx that the driver is ready to receive the IOCTL requests. Conversely, when the driver does not want to process any more requests, it must call [**UcmUcsiPpmStop**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucmucsippm/nf-ucmucsippm-ucmucsippmstop).
 
-## 4. Handle the IOCTL requets
+## 4. Handle the IOCTL requests
 
-Consider this example sequence of the events that occurs when a USB Type-C partner is attached to a connector. 
+Consider this example sequence of the events that occurs when a USB Type-C partner is attached to a connector.
 
 1. PPM firmware determines an attach event and sends a notification to the client driver.
 2. Client driver calls [**UcmUcsiPpmNotification**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucmucsippm/nf-ucmucsippm-ucmucsippmnotification) to send that notification to UcmUcsiCx.
 3. UcmUcsiCx notfies the OPM state machine and it sends a Get Connector Status command to UcmUcsiCx.
 4. UcmUcsiCx creates a request and sends [IOCTL_UCMUCSI_PPM_GET_UCSI_DATA_BLOCK](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucmucsippmrequests/ni-ucmucsippmrequests-ioctl_ucmucsi_ppm_get_ucsi_data_block) to the client driver.
 5. The client driver processes that request and sends the command to the PPM firmware. The driver completes this request asynchronously and sends another notification to UcmUcsiCx.
-6. On successful command complete notification, the OPM state machine reads the payload (containing connector status info) and notifies UcmCx of a Type-C attach.
+6. On successful command complete notification, the OPM state machine reads the payload (containing connector status info) and notifies UCM of the Type-C attach event.
  
 In this example, the payload also indicated that a change in power delivery negotiation status between the firmware and the port partner was successful. The OPM state machine sends another UCSI command: Get PDOs.
-Similar to Get Connector Status command, when Get PDOs command completes successfully, the OPM state machine notifies UcmCx of this event.
+Similar to Get Connector Status command, when Get PDOs command completes successfully, the OPM state machine notifies UCM of this event.
+
+The client driver's handler for [EVT_WDF_IO_QUEUE_IO_DEVICE_CONTROL](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_device_control) is similar to this example code. For information about handling requests, see [Request Handlers](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/request-handlers)
 
 ```
 void EvtIoDeviceControl(
