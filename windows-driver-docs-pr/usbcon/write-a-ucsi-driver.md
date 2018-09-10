@@ -111,13 +111,13 @@ If the client driver enters a Dx state because of S0-Idle, WDF brings the driver
 
 In your [**EVT_WDF_DRIVER_DEVICE_ADD**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) implementation, 
 
-1. After you have set the Plug and Play and power management event callback functions ([**WdfDeviceInitSetPnpPowerEventCallbacks**](../wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks.md)), call [**UcmTcpciDeviceInitInitialize**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucmucsidevice/nf-ucmucsidevice-ucmucsideviceinitinitialize) to initialize the [**WDFDEVICE_INIT**](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/wdfdevice_init) opaque structure. The call associates the client driver with the framework.
+1. After you have set the Plug and Play and power management event callback functions ([**WdfDeviceInitSetPnpPowerEventCallbacks**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks)), call [**UcmTcpciDeviceInitInitialize**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucmucsidevice/nf-ucmucsidevice-ucmucsideviceinitinitialize) to initialize the [**WDFDEVICE_INIT**](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/wdfdevice_init) opaque structure. The call associates the client driver with the framework.
 
 2. After creating the framework device object (WDFDEVICE), call [**UcmUcsiDeviceInitialize**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucmucsidevice/nf-ucmucsidevice-ucmucsideviceinitialize.md) to register the client diver with UcmUcsiCx.
 
 ## 2. Create the PPM object with UcmUcsiCx
 
-In your implementation of [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](../wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware.md), after you have recieved the list of raw and translated resources, use the resources to prepare the hardware. For example, if your transport is I2C, read the hardware resources to open a communication channel. Next, create a PPM object. To create the object, you need to set certain configuration options.
+In your implementation of [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware), after you have recieved the list of raw and translated resources, use the resources to prepare the hardware. For example, if your transport is I2C, read the hardware resources to open a communication channel. Next, create a PPM object. To create the object, you need to set certain configuration options.
 
 1. Provide a handle to the connector collection on the device. 
     1. Create the connector collection by calling [**UcmUcsiConnectorCollectionCreate**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucmucsippm/nf-ucmucsippm-ucmucsiconnectorcollectioncreate).
@@ -177,7 +177,7 @@ The client driver is responsible for creating and registering that queue to UcmU
 
 UcmUcsiCx guarantees that there can be at most one outstanding request in the WDF queue. The driver also is responsible of completing the WDF request after the driver has sent the UCSI command to the firmware.
 
-Typically the driver sets up queues in its implementation of [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](../wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware.md).
+Typically the driver sets up queues in its implementation of [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware).
 
 ```
 WDFQUEUE UcsiCommandRequestQueue = WDF_NO_HANDLE;
