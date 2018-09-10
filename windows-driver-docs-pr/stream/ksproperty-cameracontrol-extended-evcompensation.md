@@ -12,7 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 9/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 
 The EV Compensation property allows adjustment of exposure control by increments of exposure units or by the Zone system.
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -74,12 +74,12 @@ The **Capability** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.m
 
 The **Flags** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563) contains the current EV compensation stepping for the camera (one value).Drivers are recommended to advertise support for only for the lowest EV compensation step sizes.
 
-This property control is asynchronous.
+This property control is asynchronous and not cancelable.
 
 Remarks
 -------
 
-### <span id="Getting_the_property"></span><span id="getting_the_property"></span><span id="GETTING_THE_PROPERTY"></span>Getting the property
+### Getting the property
 
 When responding to a KSPROPERTY\_TYPE\_GET request, the driver sets the members of the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563) to the following.
 
@@ -126,7 +126,7 @@ When responding to a KSPROPERTY\_TYPE\_GET request, the driver sets the members 
 
 The driver sets the current EV compensation stepping in **Flags**. The members of [**KSCAMERA\_EXTENDEDPROP\_EVCOMPENSATION**](https://msdn.microsoft.com/library/windows/hardware/dn567561) indicate the current step unit ranges and number of step used in for compensation
 
-### <span id="Setting_the_property"></span><span id="setting_the_property"></span><span id="SETTING_THE_PROPERTY"></span>Setting the property
+### Setting the property
 
 When the property is set, a KSPROPERTY\_TYPE\_SET request, the **Flags** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563) will contain the EV compensation stepping to use. The new number of step units used for compensation are set in **Value** member of [**KSCAMERA\_EXTENDEDPROP\_EVCOMPENSATION**](https://msdn.microsoft.com/library/windows/hardware/dn567561).
 
@@ -150,19 +150,9 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563)
 
 [**KSCAMERA\_EXTENDEDPROP\_EVCOMPENSATION**](https://msdn.microsoft.com/library/windows/hardware/dn567561)
-
- 
-
- 
-
-
-
-
-
-

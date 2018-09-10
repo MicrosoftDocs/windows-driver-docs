@@ -12,7 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 9/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 
 The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSPRIORITY** property ID defined in the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/dn917962) enumeration is used to configure the focus priority. When focus priority is set, focusing will take priority over the picture taken to ensure that the picture taken is always in focus. Otherwise, the picture will be taken immediately regardless of whether the picture is in focus . The behavior in handling a failed focus and whether timeout is required is internal to the driver and up to the OEM.
 
-## <span id="Usage_summary_table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage summary table
+## Usage summary table
 
 
 <table>
@@ -56,8 +56,8 @@ To configure the focus priority, the **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCU
 For the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925136), the following flags are defined as values. In a get call, the camera driver returns its current focus priority configuration using one of these flags. In a set call, the camera driver sets the new focus priority configuration using one of these flags.
 
 ``` syntax
-#define KSCAMERA_EXTENDEDPROP_FOCUSPRIORITY_OFF 0x0000000000000000
-#define KSCAMERA_EXTENDEDPROP_FOCUSPRIORITY_ON 0x0000000000000001
+#define KSCAMERA_EXTENDEDPROP_FOCUSPRIORITY_OFF     0x0000000000000000
+#define KSCAMERA_EXTENDEDPROP_FOCUSPRIORITY_ON      0x0000000000000001
 ```
 
 **Note**  
@@ -108,8 +108,7 @@ The table below contains the descriptions and requirements for the **KSCAMERA\_E
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -123,12 +122,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

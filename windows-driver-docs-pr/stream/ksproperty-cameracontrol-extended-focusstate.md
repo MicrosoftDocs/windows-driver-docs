@@ -12,7 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 9/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -21,11 +21,9 @@ ms.localizationpriority: medium
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSSTATE
 
-
 The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSSTATE** property ID that is defined in the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/dn917962) enumeration is used to get the focus state from the driver. This is a read-only filter-level property.
 
-## <span id="Usage_summary_table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage summary table
-
+## Usage summary table
 
 <table>
 <colgroup>
@@ -48,8 +46,6 @@ The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSSTATE** property ID that is defi
 </tr>
 </tbody>
 </table>
-
- 
 
 For the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925136), the flags value contains the focus state returned by the camera driver. This is a synchronous get only control. The available focus state values are provided in the [**KSCAMERA\_EXTENDEDPROP\_FOCUSSTATE**](https://msdn.microsoft.com/library/windows/hardware/dn925132) enumeration.
 
@@ -94,10 +90,7 @@ The table below contains the descriptions and requirements for the **KSCAMERA\_E
 </tbody>
 </table>
 
- 
-
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -111,12 +104,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

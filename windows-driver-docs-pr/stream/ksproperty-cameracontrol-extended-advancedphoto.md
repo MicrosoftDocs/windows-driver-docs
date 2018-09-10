@@ -12,7 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 9/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 
 KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ADVANCEDPHOTO is used to control photo HDR, flash no flash, and ultra low light fusion on the driver. This is a pin level control for photo pin only.
 
-## <span id="Usage_summary_table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage summary table
+## Usage summary table
 
 
 <table>
@@ -54,11 +54,11 @@ KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ADVANCEDPHOTO is used to control photo HDR,
 The following are flags that can be placed in the KSCAMERA\_EXTENDEDPROP\_HEADER.Flags field to control photo HDR, flash no flash, and ultra low light fusion. The default should be KSCAMERA\_EXTENDEDPROP\_ADVANCEDPHOTO\_OFF.
 
 ``` syntax
-#define KSCAMERA_EXTENDEDPROP_ADVANCEDPHOTO_OFF          0x0000000000000000
-#define KSCAMERA_EXTENDEDPROP_ADVANCEDPHOTO_AUTO               0x0000000000000001
-#define KSCAMERA_EXTENDEDPROP_ADVANCEDPHOTO_HDR                0x0000000000000002
-#define KSCAMERA_EXTENDEDPROP_ADVANCEDPHOTO_FNF                0x0000000000000004
-#define KSCAMERA_EXTENDEDPROP_ADVANCEDPHOTO_ULTRALOWLIGHT    0x0000000000000008
+#define KSCAMERA_EXTENDEDPROP_ADVANCEDPHOTO_OFF             0x0000000000000000
+#define KSCAMERA_EXTENDEDPROP_ADVANCEDPHOTO_AUTO            0x0000000000000001
+#define KSCAMERA_EXTENDEDPROP_ADVANCEDPHOTO_HDR             0x0000000000000002
+#define KSCAMERA_EXTENDEDPROP_ADVANCEDPHOTO_FNF             0x0000000000000004
+#define KSCAMERA_EXTENDEDPROP_ADVANCEDPHOTO_ULTRALOWLIGHT   0x0000000000000008
 ```
 
 If the driver supports this control, it must support KSCAMERA\_EXTENDEDPROP\_ADVANCEDPHOTO\_OFF.
@@ -149,8 +149,7 @@ The table below contains the descriptions and requirements for the [**KSCAMERA\_
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -164,12 +163,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

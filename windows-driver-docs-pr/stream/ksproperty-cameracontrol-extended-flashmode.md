@@ -12,7 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 9/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 
 The flash property control sets flash mode operation for both normal and sequence photo mode of the camera.
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+## Usage Summary Table
 
 <table>
 <colgroup>
@@ -74,10 +74,10 @@ The **Capability** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.m
 
 The following feature flags can be combined with the previous flash settings except for KSCAMERA\_EXTENDEDPROP\_FLASH\_OFF.
 
-| Flash feature                                      | Description                                                                                                          |
-|----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| KSCAMERA\_EXTENDEDPROP\_FLASH\_REDEYEREDUCTION     | Enable redeye reduction feature. This flag can be combined with any other setting.                                   |
-| KSCAMERA\_EXTENDEDPROP\_FLASH\_SINGLEFLASH         | Set flash for only one trigger. This feature is ignored when the camera is not in photo sequence mode.               |
+| Flash feature | Description |
+|---|---|
+| KSCAMERA\_EXTENDEDPROP\_FLASH\_REDEYEREDUCTION | Enable redeye reduction feature. This flag can be combined with any other setting. |
+| KSCAMERA\_EXTENDEDPROP\_FLASH\_SINGLEFLASH | Set flash for only one trigger. This feature is ignored when the camera is not in photo sequence mode. |
 | KSCAMERA\_EXTENDEDPROP\_FLASH\_MULTIFLASHSUPPORTED | Set flash to trigger on every sequence frame. This feature is ignored when the camera is not in photo sequence mode. |
 
  
@@ -88,12 +88,11 @@ The default flash mode for a camera is KSCAMERA\_EXTENDEDPROP\_FLASH\_OFF. If th
 
 If photo sequence mode is supported by the camera, the flash control property is required with support for KSCAMERA\_EXTENDEDPROP\_FLASH\_SINGLEFLASH.
 
-This property control is synchronous.
+This property control is synchronous and not cancelable.
 
-Remarks
--------
+## Remarks
 
-### <span id="Getting_the_property"></span><span id="getting_the_property"></span><span id="GETTING_THE_PROPERTY"></span>Getting the property
+### Getting the property
 
 When responding to a KSPROPERTY\_TYPE\_GET request, the driver sets the members of the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563) to the following.
 
@@ -142,12 +141,11 @@ When the torch mode is KSCAMERA\_EXTENDEDPROP\_FLASH\_ON\_ADJUSTABLEPOWER or KSC
 
 If no flash mode was previously set, then **Flags** is set to KSCAMERA\_EXTENDEDPROP\_FLASH\_OFF (default).
 
-### <span id="Setting_the_property"></span><span id="setting_the_property"></span><span id="SETTING_THE_PROPERTY"></span>Setting the property
+### Setting the property
 
 When the property is set, a KSPROPERTY\_TYPE\_SET request, the **Flags** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563) will contain the torch mode to set. The **Value.ull** member of [**KSCAMERA\_EXTENDEDPROP\_VALUE**](https://msdn.microsoft.com/library/windows/hardware/dn567564) will contain the intensity level to set if **Flags** is KSCAMERA\_EXTENDEDPROP\_FLASH\_ON\_ADJUSTABLEPOWER or KSCAMERA\_EXTENDEDPROP\_FLASH\_AUTO\_ADJUSTABLEPOWER.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -166,19 +164,8 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563)
 
 [**KSCAMERA\_EXTENDEDPROP\_VALUE**](https://msdn.microsoft.com/library/windows/hardware/dn567564)
-
- 
-
- 
-
-
-
-
-
-
