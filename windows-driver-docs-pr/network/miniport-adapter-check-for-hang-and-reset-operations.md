@@ -46,11 +46,11 @@ A miniport driver can complete a reset request synchronously by returning a succ
 
 In versions of NDIS before 6.83, the optional [*MiniportCheckForHangEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_check_for_hang) and [*MiniportResetEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_reset) callback functions were discouraged for Always On, Always Connected (AOAC) systems due to battery life issues. However, these callbacks could still be used on other non-AOAC Windows systems. Starting in NDIS 6.83, these callback functions are discouraged on **all** Windows systems regardless of power capabilities. Although it is not a logo test violation to use [*MiniportCheckForHangEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_check_for_hang) and [*MiniportResetEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_reset) in NDIS 6.83 and later, NDIS drivers should use the following table for guidance about Check-for-Hang and Reset operations.
 
-| Caller | Recommendation |
-| --- | --- |
-| Drivers targeting AOAC systems | Must not implement |
-| Drivers targeting Windows Server systems | Must not implement |
-| Virtual (software-only) miniport drivers | Must not implement |
+| Caller | Recommendation | Notes |
+| --- | --- | --- |
+| Drivers targeting AOAC systems | Must not implement | Causes battery life issues due to periodic check-for-hang activity |
+| Drivers targeting Windows Server systems | Must not implement | Causes issues when the CPU is stressed |
+| Virtual (software-only) miniport drivers | Must not implement | Reset not possible without hardware |
 | Other new NDIS 6.83 and later drivers | Should not implement |
 | Other existing NDIS 6.82 and earlier code | Not required to change, but should consider removing Check-for-Hang and Reset in future rework |
 
