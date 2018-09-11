@@ -62,7 +62,7 @@ For the status notification sent by a modem miniport driver to inform the OS of 
 
 Service = **MBB_UUID_BASIC_CONNECT_EXT_CONSTANT**
 
-Service UUID = **3d01dcc5-fef5-4d05-9d3a-bef7058e9aaf**
+Service UUID = **3d01dcc5-fef5-4d05-0d3a-bef7058e9aaf**
 
 The following CIDs are defined for PCO:
 
