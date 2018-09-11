@@ -158,10 +158,6 @@ The following structures and enumeration are also used with kernel mode display-
 * [DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgkargcb_present_displayonly_progress)
 
 
->[!Note]
->A KMDOD does not support the sleep power state. If it is placed in the sleep state, the driver will cause a system bugcheck to occur. There is no workaround available, by design.<br/>If the current display driver is not a Windows Display Driver Model (WDDM) 1.2 compliant driver, a KMDOD might fail to install, with error code 43 displayed. The KMDOD driver is actually installed, but it cannot be started. The workaround for this issue is to switch to the Microsoft Basic Display Adapter Driver before installing the KMDOD, or simply to reboot your system after installing the KMDOD.
-
-
 Requirements
 ------------
 
