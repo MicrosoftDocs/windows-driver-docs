@@ -48,7 +48,7 @@ MBIM_MS_NETWORK_BLACKLIST_INFO is returned from completed Query and Set messages
 
 #### Set
 
-For Set, the InformationBuffer contains an MBIM_MS_SET_NETWORK_BLACKLIST. In the Set operation, a list of MNC/MCC combinations should be provided to the modem. When the SIM card’s IMSI matches the MNC and MCC value specified, the modem should deregister from the network and should not try to reregister until a new SIM card that does not match the MNC/MCC is inserted.
+For Set, the InformationBuffer contains an MBIM_MS_NETWORK_BLACKLIST_INFO. In the Set operation, a list of MNC/MCC combinations should be provided to the modem. When the SIM card’s IMSI matches the MNC and MCC value specified, the modem should deregister from the network and should not try to reregister until a new SIM card that does not match the MNC/MCC is inserted.
 
 #### Unsolicited Event
 
@@ -58,7 +58,7 @@ An Unsolicited Event is expected if any of the blacklist states have changed fro
 
 |  | Set | Query | Notification |
 | --- | --- | --- | --- |
-| Command | MBIM_MS_SET_NETWORK_BLACKLIST | Not applicable | Not applicable |
+| Command | MBIM_MS_NETWORK_BLACKLIST_INFO | Not applicable | Not applicable |
 | Response | MBIM_MS_NETWORK_BLACKLIST_INFO | MBIM_MS_NETWORK_BLACKLIST_INFO | MBIM_MS_NETWORK_BLACKLIST_INFO |
 
 ### Data Structures
