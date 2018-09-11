@@ -12,25 +12,7 @@ ms.localizationpriority: medium
 
 # Windows support for USB Type-C connectors
 
-
-**Last Updated**
-
--   December 2016
-
-**Official specifications**
-
--   [USB 3.1 and USB Type-C specifications](http://go.microsoft.com/fwlink/p/?LinkId=699515)
--   [USB Power Delivery](http://go.microsoft.com/fwlink/p/?LinkID=623310)
--   [Billboard Devices specification](http://go.microsoft.com/fwlink/p/?linkid=620207)
--   [UCSI Specification](http://go.microsoft.com/fwlink/p/?LinkId=703713)
-
-**Windows support**
-
--   USB Type-C feature support in Windows
--   [FAQ: USB Type-C connector on a Windows system](faq--usb-type-c-connector-on-a-windows-system.md)
--   [Troubleshoot messages in UI](http://go.microsoft.com/fwlink/?LinkId=526894)
-
-Describes Windows support for USB Type-C connector and tasks for OEMs who are building USB Type-C systems, including how to write drivers that manage different features of the connector.
+This topic is intentded for OEMs who want to build a Windows 10 system with USB Type-C connector and want to leverage OS features that allow for faster charging, power delivery dual role, alternate modes, and error notifications through Billboard devices.
 
 A traditional USB connection uses a cable with a USB A and USB B connector on each end. The USB A connector always plugs in to the host side and the USB B connector connects the function side, which is a device (phone) or peripheral (mouse, keyboard). By using those connectors, you can only connect a host to a function; never a host to another host or a function to another function. The host is the power source provider and the function consumes power from the host.
 
@@ -40,101 +22,79 @@ The USB Type-C connector, introduced by the USB-IF, defined in the USB 3.1 speci
 
 ![usb connector comparison](images/typecccomp.jpg)
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><img src="images/roadmap.png" alt="Windows 10 USB Type-C " /></p></td>
-<td><p><img src="images/usb-type-c.png" alt="USB Type-C symmetric cable" /></p>
-<p></p>
-<p>USB Type-C connector is reversible and symmetric.</p>
-<p>Allows for faster charging up to 100W with Power Delivery over USB Type-C.</p>
-<p>Single connector for both USB Hosts and USB Devices</p>
-<p>Can switch USB roles to support a USB host or device.</p>
-<p>Can switch power roles between sourcing and sinking power</p>
-<p>Supports other protocols like DisplayPort and Thunderbolt over USB Type-C.</p>
-<p>Introduces USB Billboard device class to provide error notifications for Alternate Modes.</p></td>
-</tr>
-<tr class="even">
-<td><img src="images/design.png" alt="Design" /></td>
-<td><p>The main component are: the USB Type-C connector and its port or PD controller that manages the CC pin logic for the connector. Such systems typically have a dual-role controller that can swap the USB role from host to function. It has Display-Out module that allows video signal to be transmitted over USB. Optionally it can support BC1.2 charger detection.</p>
-<p>[Hardware design of a USB Type-C system](architecture--usb-type-c-in-a-windows-system.md)</p>
-<p>[Hardware design for a USB Type-C system with an embedded controller](ucsi.md)</p>
-<p>Consider recommendations for the design and development of USB components, including minimum hardware requirements, Windows Hardware Compatibility Program requirements, and other recommendations that build on those requirements.</p>
-<p>[Hardware component guidelines USB](https://msdn.microsoft.com/library/windows/hardware/dn915125)</p></td>
-</tr>
-<tr class="odd">
-<td><img src="images/drivers-c.png" alt="Drivers" /></td>
-<td><ul>
-<p>Use this flow chart to determine a solution for your USB Type-C system. </p>
 
-<li><p>For a system that does not implement a PD state machine, implement a client driver to the UcmTcpciCx class extension. </p>
+## Feature summary
 
-[UCmCx client driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188011)
+- Allows for faster charging upto 100W with Power Delivery over USB Type-C.
+- Single connector for both USB Hosts and USB Devices.
+- Can switch USB roles to support a USB host or device.
+- Can switch power roles between sourcing and sinking power.
+- Supports other protocols like DisplayPort and Thunderbolt over USB Type-C.
+- Introduces USB Billboard device class to provide error notifications for Alternate Modes.
 
-[Write a USB Type-C port controller driver](write-a-usb-type-c-port-controller-driver.md)
+**Official specifications**
 
-</li>
+[USB 3.1 and USB Type-C specifications](http://go.microsoft.com/fwlink/p/?LinkId=699515)
 
-<li>For systems that implement the PD state machines in hardware or firmware and support USB Type-C Connector System Software Interface (UCSI) over ACPI, load the Microsoft provided in-box driver, UcmUcsi.sys. 
+[USB Power Delivery](http://go.microsoft.com/fwlink/p/?LinkID=623310)
 
-See [UCSI driver](ucsi.md).</li>
+[Billboard Devices specification](http://go.microsoft.com/fwlink/p/?linkid=620207)
 
-<li><p>For systems that implement the PD state machines in hardware or firmware, but either do not support UCSI, or support UCSI but require a transport other than ACPI, write a client driver for the UcmCx class extension.</p>
+[UCSI Specification](http://go.microsoft.com/fwlink/p/?LinkId=703713)
 
-<p>For systems that implement UCSI but require a transport other than ACPI, Microsoft provides a skeleton UcmCx client driver based on the inbox UCSI driver that can be modified to support a different transport. 
+## Hardware design
+USB Type-C connector is reversible and symmetric.
 
-See [this sample template](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi). </p>
-</li>
+![USB Type-C symmetric cable](images/usb-type-c.png)
 
-[Write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md)
+The main component are: the USB Type-C connector and its port or PD controller that manages the CC pin logic for the connector. Such systems typically have a dual-role controller that can swap the USB role from host to function. It has Display-Out module that allows video signal to be transmitted over USB. Optionally it can support BC1.2 charger detection.
 
-[UcmCx client driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188011)</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><img src="images/bringup-c3.png" alt="Bringup" /></td>
-<td><ol>
+- [Hardware design of a USB Type-C system](architecture--usb-type-c-in-a-windows-system.md)
+- [Hardware design for a USB Type-C system with an embedded controller](ucsi.md)
 
-<li>USB Function driver bring-up is only required if you support USB Function mode. If you previously implemented a USB Function driver for a USB micro-B connector, describe the appropriate connectors as USB Type-C in the ACPI tables for the USB Function driver to continue working. 
+Consider recommendations for the design and development of USB components, including minimum hardware requirements, Windows Hardware Compatibility Program requirements, and other recommendations that build on those requirements.
+[Hardware component guidelines USB](https://msdn.microsoft.com/library/windows/hardware/dn915125)
 
-For more information, see [instructions about writing a USB Function driver.](developing-windows-drivers-for-usb-function-controllers.md).
-</li>
-<li>USB Role-Switch driver bring-up is only required for devices that have a Dual Role controller that assumes both Host and Function roles. To bring-up the USB Role-Switch driver, you need to modify the ACPI tables to enable the Microsoft in-box USB role-switch driver. 
+## Choose a driver model
 
-For more information, see the [guidance for bringing up the USB Role Switch Driver](dual-role-controller-bringup-for-a-usb-type-c-system.md).</li>
+Use this flow chart to determine a solution for your USB Type-C system. 
+![Drivers](images/drivers-c.png)
 
-<li><p>A USB Connector Manager Driver is required for Windows to manage the USB Type-C ports on a system. The bring-up tasks for a USB Connector Manager driver depend on the driver that you choose for the USB Type-C ports: The Microsoft in-box UCSI (UcmUcsi.sys) driver, a UcmCx client driver, or a UcmTcpciCx client driver. For more information, see the links in the preceding section that describe how to choose the right solution for your USB Type-C system.</p></li>
-<ul>
-</ul></li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td><img src="images/test-c1.png" alt="Test" /></td>
-<td><ul>
-<li><p>Perform various functional and stress tests on systems and devices that expose a USB Type-C connector.</p>
+|If your system...| Recommended solution...|
+|---|---|
+|Does not implement PD state machines |Write a client driver to the UcmTcpciCx class extension. <p>[Write a USB Type-C port controller driver](write-a-usb-type-c-port-controller-driver.md)</p>|
+|Implements PD state machines in hardware or firmware and support USB Type-C Connector System Software Interface (UCSI) over ACPI| Load the Microsoft provided in-box drivers, UcmUcsi.sys and UcmUcsiAcpiClient.sys. <p>See [UCSI driver](ucsi.md).</p>|
+|Implements PD state machines in hardware or firmware, but either does not support UCSI, or support UCSI but requires a transport other than ACPI|Write a client driver for the UcmCx class extension.<p>[Write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md)</p>|
+|Implements UCSI but requires a transport other than ACPI|Write a client driver to the UcmUcsiCx class extension.<p>Use [this sample template](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi) and modify it based on a transport that your hardware uses.</P><p>[Write a UCSI client driver](write-a-ucsi-driver.md)</P>|
 
-[Test USB Type-C systems with USB Type-C ConnEx](test-usb-type-c-systems-with-mutt-connex-c.md)</li>
-<li>Run USB tests included in the Windows Hardware Lab Kit (HLK) for Windows 10.
-<div class="alert">
-<strong>Note</strong>  Run USB function HLK tests with a C-to-A cable (searc for <strong>&quot;Windows USB Device&quot;</strong> in the HLK search box.
-</div>
-<div>
+
+## Bring up drivers
+
+- USB Function driver bring-up is only required if you support USB Function mode. If you previously implemented a USB Function driver for a USB micro-B connector, describe the appropriate connectors as USB Type-C in the ACPI tables for the USB Function driver to continue working. 
+
+    For more information, see [instructions about writing a USB Function driver](developing-windows-drivers-for-usb-function-controllers.md).
+
+- USB Role-Switch driver bring-up is only required for devices that have a Dual Role controller that assumes both Host and Function roles. To bring-up the USB Role-Switch driver, you need to modify the ACPI tables to enable the Microsoft in-box USB role-switch driver. 
+
+    For more information, see the [guidance for bringing up the USB Role Switch Driver](dual-role-controller-bringup-for-a-usb-type-c-system.md).
+
+- A USB Connector Manager Driver is required for Windows to manage the USB Type-C ports on a system. The bring-up tasks for a USB Connector Manager driver depend on the driver that you choose for the USB Type-C ports: The Microsoft in-box UCSI (UcmUcsi.sys) driver, a UcmCx client driver, or a UcmTcpciCx client driver. For more information, see the links in the preceding section that describe how to choose the right solution for your USB Type-C system.
+
+
+## Test
+Perform various functional and stress tests on systems and devices that expose a USB Type-C connector.
+
+[Test USB Type-C systems with USB Type-C ConnEx](test-usb-type-c-systems-with-mutt-connex-c.md)- - Run USB tests included in the Windows Hardware Lab Kit (HLK) for Windows 10.
+> Run USB function HLK tests with a C-to-A cable (search for **Windows USB Device** in the HLK 
+
+Certification/Compliance
+Attend Power Delivery and USB Type-C compliance workshops hosted by the standards bodies.
  
-</div></li>
-<li><p>Certification/Compliance</p>
-<p>Attend Power Delivery and USB Type-C compliance workshops hosted by the standards bodies.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+## See also
 
- 
 
- 
+-   [FAQ: USB Type-C connector on a Windows system](faq--usb-type-c-connector-on-a-windows-system.md)
+-   [Troubleshoot messages in UI](http://go.microsoft.com/fwlink/?LinkId=526894) 
 
  
 
