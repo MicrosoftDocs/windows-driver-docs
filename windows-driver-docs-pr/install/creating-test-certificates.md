@@ -39,7 +39,7 @@ Where:
 
 -   The **-ss** option specifies the name of the certificate store that contains the test certificate (*PrivateCertStore*).
 
--   The **-n CN=** option specifies the name of the certificate, Contoso.com(Test). This name is used with the [**SignTool**](signtool.md) tool to identify the certificate.
+-   The **-n CN=** option specifies the name of the certificate, Contoso.com(Test). This name is used with the [**SignTool**](../devtest/signtool.md) tool to identify the certificate.
 
 -   The EKU option limits the usage of the resulting certificate to code signing.
 
