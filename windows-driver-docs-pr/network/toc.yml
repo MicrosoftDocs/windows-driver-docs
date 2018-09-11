@@ -3181,8 +3181,8 @@
       href: mb-network-blacklist-operations.md
     - name: "MB LTE Attach Operations"
       href: mb-lte-attach-operations.md
-    - name: "MB Protocol Configuration Operations (PCO)"
-      href: mb-protocol-configuration-operations--pco-.md
+    - name: "MB Protocol Configuration Options (PCO) Operations"
+      href: mb-protocol-configuration-options-pco-operations.md
     - name: "MB low level UICC access"
       href: mb-low-level-uicc-access.md
     - name: "MB reset and recovery"
