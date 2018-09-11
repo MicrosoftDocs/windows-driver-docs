@@ -23,7 +23,7 @@ Set requests are not applicable.
 
 ## Remarks
 
-For modems that choose to use the Microsoft inbox miniport class driver, to receive query requests from the host, the modem must advertise that it supports the new **MBIM_CID_PCO** CID (index = 9) in the **MBB_UUID_BASIC_CONNECT_EXT_CONSTANT** service when responding to an **MBIM_CID_DEVICE_SERVICES** query. For more info about *MBIM_CID_PCO**, see [MB Protocol Configuration Options (PCO) operations](mb-protocol-configuration-options-pco-operations.md).
+For modems that choose to use the Microsoft inbox miniport class driver, to receive query requests from the host, the modem must advertise that it supports the new **MBIM_CID_PCO** CID (index = 9) in the **MBB_UUID_BASIC_CONNECT_EXT_CONSTANT** service when responding to an **MBIM_CID_DEVICE_SERVICES** query. For more info about *MBIM_CID_PCO*, see [MB Protocol Configuration Options (PCO) operations](mb-protocol-configuration-options-pco-operations.md).
 
 For modems that choose not use Microsoft inbox miniport class driver, to receive query requests from WWANSVC, the modem’s miniport driver must advertise that it supports the *WWAN_OPTIONAL_SERVICE_CAPS_PCO* option when responding to [OID OID_WWAN_DEVICE_CAPS_EX](oid-wwan-device-caps-ex.md) query requests.
 

@@ -66,9 +66,9 @@ Service UUID = **3d01dcc5-fef5-4d05-9d3a-bef7058e9aaf**
 
 The following CIDs are defined for PCO:
 
-| CID | Minimum OS Version |
-| --- | --- |
-| MBIM_CID_PCO | Windows 10, version 1709 |
+| CID | Command code | Minimum OS Version |
+| --- | --- | --- |
+| MBIM_CID_PCO | 9 | Windows 10, version 1709 |
 
 ### MBIM_CID_PCO
 
