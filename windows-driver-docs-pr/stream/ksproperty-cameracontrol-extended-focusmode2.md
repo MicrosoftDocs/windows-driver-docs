@@ -134,7 +134,7 @@ The following capabilities are mandatory for Windows Phone 8.1 and later camera 
 
 -   KSCAMERA\_EXTENDEDPROP\_VIDEOPROCFLAG\_LOCK
 
-The descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925136) structure fields when using the KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSMODE property are the same as the Windows 8.1 DDI.
+The descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSMODE property are the same as the Windows 8.1 DDI.
 
 The following table contains the descriptions and requirements for the KSCAMERA\_EXTENDEDPROP\_VIDEOPROCSETTING structure fields when using the KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSMODE property. This structure is defined in ksmedia.h
 

@@ -58,7 +58,7 @@ Designates the AVCCONNECTINFO structure as the extended-data structure following
 <span id="KSDATAFORMAT_SPECIFIER_61883_4"></span><span id="ksdataformat_specifier_61883_4"></span>KSDATAFORMAT\_SPECIFIER\_61883\_4  
 Designates an MPEG2-TS format that follows the IEC 61883-4 protocol. This specifier does not use any extended data structure to follow the KSDATAFORMAT in memory.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 *Avcstrm.sys* and *Msdv.sys* support the KSDATAFORMAT\_SUBTYPE\_DV25, KSDATAFORMAT\_SUBTYPE\_DV50 and KSDATAFORMAT\_SUBTYPE\_DVH1 format subtypes in Windows Vista, Windows Server 2003 with Service Pack 1 (SP1), and Windows XP with Service Pack 2 (SP2) operating systems.
 

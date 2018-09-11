@@ -116,7 +116,7 @@ The following table describes the flag capabilities.
 
  
 
-The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925136) structure fields when using the control.
+The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
 
 <table>
 <colgroup>
@@ -196,7 +196,7 @@ The table below contains the descriptions and requirements for the KSCAMERA\_EXT
 
  
 
-### <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+### Remarks
 
 When face detection is turned on, the face region of interests (ROIs) can be consumed directly by the driver to aid 3A processing as needed. If any user specified ROIs are configured via KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ROI\_ISPCONTROL at the same time, the user specified ROIs will take precedence over the face ROIs detected. If the user specified ROIs are cleared, the face ROIs detected will take effect.
 
