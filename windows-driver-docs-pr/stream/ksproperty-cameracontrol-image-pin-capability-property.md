@@ -25,7 +25,7 @@ User-mode clients use this property to identify whether the camera's image pin a
 ## <span id="ddk_ksproperty_cameracontrol_pan_ks"></span><span id="DDK_KSPROPERTY_CAMERACONTROL_PAN_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -49,7 +49,7 @@ User-mode clients use this property to identify whether the camera's image pin a
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
+<td><p>[<strong>KSPROPERTY</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)</p></td>
 <td>[<strong>KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S</strong>](https://msdn.microsoft.com/library/windows/hardware/jj553707)</td>
 </tr>
 </tbody>
@@ -62,10 +62,10 @@ Remarks
 
 If a driver implements this property and identifies that the image pin is exclusive with the record pin, the media streaming pipeline prevents a "take photo" command from coming to the driver while a recording is taking place.
 
-## <span id="see_also"></span>See also
+## See also
 
 
-[**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262)
+[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
 [**KSPROPERTY\_CAMERACONTROL\_IMAGE\_PIN\_CAPABILITY\_S**](https://msdn.microsoft.com/library/windows/hardware/jj553707)
 

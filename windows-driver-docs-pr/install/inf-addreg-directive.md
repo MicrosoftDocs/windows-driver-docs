@@ -148,7 +148,7 @@ The given value entry and/or value is of type REG_SZ.
 The given value entry and/or value is of the registry type REG_MULTI_SZ. The value field that follows can be a list of strings separated by commas. This specification does not require any NULL terminator for a given string value.
 
 <a href="" id="0x00020000--flg-addreg-type-expand-sz--"></a>**0x00020000** (FLG_ADDREG_TYPE_EXPAND_SZ)   
-The given *value-entry-name* and/or *value* is of the registry type REG_EXPAND_SZ.
+The given *value-entry-name* and/or *value* is of the registry type [REG_EXPAND_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types).
 
 <a href="" id="0x00010001--flg-addreg-type-dword---flg-addreg-type-dword-"></a>**0x00010001** (FLG_ADDREG_TYPE_DWORD) (FLG_ADDREG_TYPE_DWORD)  
 The given *value-entry-name* and/or *value* is of the registry type REG_DWORD.
@@ -201,7 +201,7 @@ To represent a number of a registry type other than one of the predefined REG_*X
 HKR,,MYValue,0x00380001,1,0,2,3,4,5,6,7,8,9,A,B,C,D,E,F
 ```
 
-This technique can be used to define new registry types for numeric values, but not for values of type REG_EXPAND_SZ, REG_MULTI_SZ, REG_NONE, or REG_SZ.
+This technique can be used to define new registry types for numeric values, but not for values of type REG_EXPAND_SZ, REG_MULTI_SZ, REG_NONE, or REG_SZ. For more info about these types, see [Registry value types](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types).
 
 ### Special *value-entry-name* Keywords
 

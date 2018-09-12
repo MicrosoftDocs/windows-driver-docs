@@ -12,7 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 9/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -21,11 +21,9 @@ ms.localizationpriority: medium
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOCONFIRMATION
 
-
 The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOCONFIRMATION** property ID that is defined in the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/dn917962) enumeration is used to set and get the photo confirmation settings in the driver.
 
-## <span id="Usage_summary_table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage summary table
-
+## Usage summary table
 
 <table>
 <colgroup>
@@ -49,13 +47,11 @@ The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOCONFIRMATION** property ID that 
 </tbody>
 </table>
 
- 
-
-For the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925136), the following flag values are used to turn photo confirmation on or off. By default, the driver should have **KSPROPERTY\_PHOTOCONFIRMATION\_ON** set. The flag values are defined as follows.
+For the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header), the following flag values are used to turn photo confirmation on or off. By default, the driver should have **KSPROPERTY\_PHOTOCONFIRMATION\_ON** set. The flag values are defined as follows.
 
 ``` syntax
-#define KSCAMERA_EXTENDEDPROP_PHOTOCONFIRMATION_OFF    0x0000000000000000 
-#define KSCAMERA_EXTENDEDPROP_PHOTOCONFIRMATION_ON    0x0000000000000001
+#define KSCAMERA_EXTENDEDPROP_PHOTOCONFIRMATION_OFF     0x0000000000000000 
+#define KSCAMERA_EXTENDEDPROP_PHOTOCONFIRMATION_ON      0x0000000000000001
 ```
 
 If the photo confirmation is set to **KSCAMERA\_EXTENDEDPROP\_PHOTOCONFIRMATION\_OFF**, the driver preview pin must not produce a photo frame or produce the [**KSCAMERA\_METADATA\_PHOTOCONFIRMATION**](https://msdn.microsoft.com/library/windows/hardware/dn925187) structure that contains photo confirmation metadata. If the photo confirmation is set to **KSCAMERA\_EXTENDEDPROP\_PHOTOCONFIRMATION\_ON**, the driver preview pin must produce a photo frame and produce the **KSCAMERA\_METADATA\_PHOTOCONFIRMATION** structure that contains photo confirmation metadata.
@@ -84,7 +80,7 @@ The table below contains the descriptions and requirements for the **KSCAMERA\_E
 </tr>
 <tr class="odd">
 <td><p>Size</p></td>
-<td><p>This must be sizeof(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>)+sizeof([<strong>KSCAMERA_EXTENDEDPROP_VALUE</strong>](https://msdn.microsoft.com/library/windows/hardware/dn567565)).</p></td>
+<td><p>This must be sizeof(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>)+sizeof([<strong>KSCAMERA_EXTENDEDPROP_VALUE</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value)).</p></td>
 </tr>
 <tr class="even">
 <td><p>Result</p></td>
@@ -101,10 +97,7 @@ The table below contains the descriptions and requirements for the **KSCAMERA\_E
 </tbody>
 </table>
 
- 
-
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -118,12 +111,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

@@ -26,7 +26,7 @@ Returns the BDA identifier (ID) for a pin.
 <span id="KSPROPERTY_BDA_PIN_TYPE"></span><span id="ksproperty_bda_pin_type"></span>[**KSPROPERTY\_BDA\_PIN\_TYPE**](ksproperty-bda-pin-type.md)  
 Returns the value that specifies the type of a pin.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 After the network provider creates a pin for a filter using a KSMETHOD\_BDA\_CREATE\_PIN\_FACTORY request of the KSMETHODSETID\_BdaDeviceConfiguration method set, the network provider uses the properties of KSPROPSETID\_BdaPinControl to update its internal representation of the actual receiver topology.
 
@@ -34,7 +34,7 @@ Each pin factory of a BDA filter should support this property set. If a BDA mini
 
 The properties in this property set return information about a pin. Typically, pins of a filter are not required to intercept any of these properties. The BDA support library provides the **BdaPropertyGetPinControl** default function to handle this property set.
 
-### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
+### See Also
 
 [**BdaCreatePin**](https://msdn.microsoft.com/library/windows/hardware/ff556445), [**BdaInitFilter**](https://msdn.microsoft.com/library/windows/hardware/ff556464), [**BdaPropertyGetPinControl**](https://msdn.microsoft.com/library/windows/hardware/ff556483), [KSMETHODSETID\_BdaDeviceConfiguration](ksmethodsetid-bdadeviceconfiguration.md)
 

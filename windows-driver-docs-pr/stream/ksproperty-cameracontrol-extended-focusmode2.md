@@ -12,7 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 9/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -34,7 +34,7 @@ The KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSMODE extended property is extended
 
 -   Predefined manual positions
 
-## <span id="Usage_summary_table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage summary table
+## Usage summary table
 
 
 <table>
@@ -54,12 +54,10 @@ The KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSMODE extended property is extended
 <tr class="odd">
 <td><p>Version 1</p></td>
 <td><p>Filter</p></td>
-<td><p>Asynchronous, Cancellable</p></td>
+<td><p>Asynchronous, Cancelable</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
 The following new capability flags are defined in ksmedia\_phone.h for these new scenarios.
 
@@ -136,7 +134,7 @@ The following capabilities are mandatory for Windows Phone 8.1 and later camera 
 
 -   KSCAMERA\_EXTENDEDPROP\_VIDEOPROCFLAG\_LOCK
 
-The descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925136) structure fields when using the KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSMODE property are the same as the Windows 8.1 DDI.
+The descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSMODE property are the same as the Windows 8.1 DDI.
 
 The following table contains the descriptions and requirements for the KSCAMERA\_EXTENDEDPROP\_VIDEOPROCSETTING structure fields when using the KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSMODE property. This structure is defined in ksmedia.h
 
@@ -172,10 +170,8 @@ The following table contains the descriptions and requirements for the KSCAMERA\
 </tbody>
 </table>
 
- 
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -189,12 +185,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

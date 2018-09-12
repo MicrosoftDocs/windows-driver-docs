@@ -27,7 +27,7 @@ The KS\_AM\_RATE\_Step property is not yet implemented.
 ## <span id="ddk_ks_am_rate_step_ks"></span><span id="DDK_KS_AM_RATE_STEP_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -51,7 +51,7 @@ The KS\_AM\_RATE\_Step property is not yet implemented.
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
+<td><p>[<strong>KSPROPERTY</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)</p></td>
 <td><p>KS_AM_Step</p></td>
 </tr>
 </tbody>

@@ -12,7 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 9/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -21,11 +21,9 @@ ms.localizationpriority: medium
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_VIDEOHDR
 
-
 KSPROPERTY\_CAMERACONTROL\_EXTENDED\_VIDEOHDR is used to enable or disable high dynamic range (HDR) video on the driver. This is a pin level control for video pin only.
 
-## <span id="Usage_summary_table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage summary table
-
+## Usage summary table
 
 <table>
 <colgroup>
@@ -49,13 +47,11 @@ KSPROPERTY\_CAMERACONTROL\_EXTENDED\_VIDEOHDR is used to enable or disable high 
 </tbody>
 </table>
 
- 
-
 The following flags can be placed in the KSCAMERA\_EXTENDEDPROP\_HEADER.Flags field to control video HDR. By default, driver should be set to VIDEOHDR\_OFF.
 
 ``` syntax
-#define KSCAMERA_EXTENDEDPROP_VIDEOHDR_OFF          0x0000000000000000
-#define KSCAMERA_EXTENDEDPROP_VIDEOHDR_ON          0x0000000000000001 
+#define KSCAMERA_EXTENDEDPROP_VIDEOHDR_OFF      0x0000000000000000
+#define KSCAMERA_EXTENDEDPROP_VIDEOHDR_ON       0x0000000000000001 
 #define KSCAMERA_EXTENDEDPROP_VIDEOHDR_AUTO     0x0000000000000002 
 ```
 
@@ -96,9 +92,7 @@ The following table describes the flag capabilities.
 </tbody>
 </table>
 
- 
-
-The table below contains the descriptions and requirements for the [KSCAMERA\_EXTENDEDPROP\_HEADER](https://msdn.microsoft.com/library/windows/hardware/dn567563) structure fields when using the control.
+The table below contains the descriptions and requirements for the [KSCAMERA\_EXTENDEDPROP\_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
 
 <table>
 <colgroup>
@@ -139,10 +133,7 @@ The table below contains the descriptions and requirements for the [KSCAMERA\_EX
 </tbody>
 </table>
 
- 
-
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -156,12 +147,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-
