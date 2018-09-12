@@ -820,13 +820,13 @@ In the [*EVT\_UDECX\_USB\_ENDPOINT\_START*](https://msdn.microsoft.com/library/w
 
 ## Handling data transfer requests (URBs)
 
-To process USB I/O requests sent to the client device's endpoints, intercept the [EVT_WDF_IO_QUEUE_IO_INTERNAL_DEVICE_CONTROL](../wdfio/nc-wdfio-evt_wdf_io_queue_io_internal_device_control.md) callback on the queue object used with [**UdecxUsbEndpointInitSetCallbacks**](https://msdn.microsoft.com/library/windows/hardware/mt627985) when associating the queue with the endpoint. In that callback, process I/O for the [*IOCTL\_INTERNAL\_USB\_SUBMIT\_URB*] IoControlCode (see sample code under [URB handling methods](#urb-handling-methods)).
+To process USB I/O requests sent to the client device's endpoints, intercept the [EVT_WDF_IO_QUEUE_IO_INTERNAL_DEVICE_CONTROL](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_internal_device_control) callback on the queue object used with [**UdecxUsbEndpointInitSetCallbacks**](https://msdn.microsoft.com/library/windows/hardware/mt627985) when associating the queue with the endpoint. In that callback, process I/O for the [IOCTL\_INTERNAL\_USB\_SUBMIT\_URB](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_urb) IoControlCode (see sample code under [URB handling methods](#urb-handling-methods)).
 
 
 ## URB handling methods
 
 
-As part of processing URBs via [*IOCTL\_INTERNAL\_USB\_SUBMIT\_URB*] of a queue associated with an endpoint on a virtual device, A UDE client driver can get a pointer to the transfer buffer of an I/O request by using these methods:
+As part of processing URBs via [IOCTL\_INTERNAL\_USB\_SUBMIT\_URB](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_urb) of a queue associated with an endpoint on a virtual device, A UDE client driver can get a pointer to the transfer buffer of an I/O request by using these methods:
 
 These functions are implemented by the client driver to handle queues and requests on an endpoint.
 
