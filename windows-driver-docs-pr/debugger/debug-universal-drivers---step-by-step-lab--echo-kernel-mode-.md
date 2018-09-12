@@ -97,7 +97,7 @@ To enable kernel mode debugging on the target system, perform the following step
 **&lt;- On the host system**
 
 1. Open a command prompt on the host system and type **ipconfig** to determine its IP address.
-```
+```cmd
 C:\>ipconfig
 Windows IP Configuration
 Ethernet adapter Ethernet:
@@ -114,7 +114,7 @@ Ethernet adapter Ethernet:
 
 3. Open a command prompt on the target system and use the **ping** command to confirm network connectivity between the two systems. Use the actual IP address of the host system you recorded instead of 169.182.1.1 that is shown in the sample output.
 
-```
+```bat
 C:\> ping 169.182.1.1
 
 Pinging 169.182.1.1 with 32 bytes of data:
@@ -136,25 +136,23 @@ Enable kernel mode debugging on the target system by completing the following st
 > Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.
 
 1. On the target computer, open a Command Prompt window as Administrator. Enter this command to enable debugging.
-```
-C:\> bcdedit /set {default} DEBUG YES
-```
+
+    C:\> bcdedit /set {default} DEBUG YES
 
 2. Type this command to enable test signing.
-```
-C:\> bcdedit /set TESTSIGNING ON 
-```
+
+    C:\> bcdedit /set TESTSIGNING ON 
+
 
 3. Type this command to set the IP address of the host system. Use the IP address of the host system that you recorded earlier, not the one shown.
-```
-C:\> bcdedit /dbgsettings net hostip:192.168.1.1 port:50000 key:1.2.3.4
-```
+    C:\> bcdedit /dbgsettings net hostip:192.168.1.1 port:50000 key:1.2.3.4
+
 
 **Warning**  To increase the security of the connection and decrease the risk of the random client debugger connection requests, consider using an auto generated random key. For more information, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
 
 4. Type this command to confirm that the dbgsettings they are set properly.
 
-```
+```cmd
 C:\> bcdedit /dbgsettings
 key                     1.2.3.4
 debugtype               NET
