@@ -1,7 +1,7 @@
 ---
 title: Create a new report template
 description: Describes how to create a new report template for driver failure reports. Includes REST API information. 
-author: shganesh
+author: EliotSeattle
 ms.author: shganesh
 ms.date: 09/01/2018
 ms.topic: article

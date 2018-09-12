@@ -18,7 +18,7 @@ Use this method to download the failure cabs for a driver using the applicationI
 
 - [Download the CAB file for a Windows 10 driver error](https://docs.microsoft.com/windows/uwp/monetize/download-the-cab-file-for-a-windows-10-driver-error)
 
-Additionally, you can download all the available for a failure hash using the [Bulk Download CAB files for a driver](bulk-failurecab-download.md)
+Additionally, you can download all the available for a failure hash using the [Bulk Download CAB files for a driver](bulk-download-failure-cabs.md)
 
 ## See also
 

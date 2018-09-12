@@ -1,7 +1,7 @@
 ---
 title: Bulk download failure cabs
 description: Use the report delivered as part of the Get Report Data API to retrieve the CabURL and then download the failure cab.
-author: shganesh
+author: EliotSeattle
 ms.author: shganesh
 ms.date: 09/01/2018
 ms.topic: article
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Bulk Download Failure Cabs
 
-Use this method to download all the failure cabs available for a particular failure hash, using the failureHash and applicationId retreived from the report received as part of the [Get Report Data](get-report-data.md) API.
+Use this method to download all the failure cabs available for a particular failure hash, using the failureHash and applicationId retrieved from the report received as part of the [Get Report Data](get-report-data.md) API.
 
 ## REQUEST
 
