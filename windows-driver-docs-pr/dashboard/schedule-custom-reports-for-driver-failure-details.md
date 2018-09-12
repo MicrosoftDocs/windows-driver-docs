@@ -37,7 +37,7 @@ For more information, see [Access analytics data using Microsoft Store services]
 
 The following diagram explains the API call pattern to create a new report template, schedule the custom report and retrieve failure data.
 
-![Image showing the workflow between—top to bottom—Creating a custom report template, scheduling a custom report template, getting report data, and cab download.](./images/failure-reporting-workflow.png)
+![Image showing the workflow between—top to bottom—Creating a custom report template, scheduling a custom report template, getting report data, and cab download.](./images/async-api-flow.png)
 
 1. The Client Application defines the report schema in JSON format and call the [Create Report Template API](#create-a-new-report-template).
 
