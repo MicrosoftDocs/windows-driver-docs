@@ -4,7 +4,7 @@ description: This lab introduces the WinDbg kernel debugger. WinDbg is used to d
 ms.assetid: 3FBC3693-4288-42BA-B1E8-84DC2A9AFFD9
 keywords: ["debug lab", "step-by-step", "ECHO"]
 ms.author: domars
-ms.date: 08/16/2018
+ms.date: 09/13/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -97,7 +97,7 @@ To enable kernel mode debugging on the target system, perform the following step
 **&lt;- On the host system**
 
 1. Open a command prompt on the host system and type **ipconfig** to determine its IP address.
-```cmd
+```console
 C:\>ipconfig
 Windows IP Configuration
 Ethernet adapter Ethernet:
@@ -114,7 +114,7 @@ Ethernet adapter Ethernet:
 
 3. Open a command prompt on the target system and use the **ping** command to confirm network connectivity between the two systems. Use the actual IP address of the host system you recorded instead of 169.182.1.1 that is shown in the sample output.
 
-```bat
+```console
 C:\> ping 169.182.1.1
 
 Pinging 169.182.1.1 with 32 bytes of data:
@@ -152,7 +152,7 @@ Enable kernel mode debugging on the target system by completing the following st
 
 4. Type this command to confirm that the dbgsettings they are set properly.
 
-```cmd
+```console
 C:\> bcdedit /dbgsettings
 key                     1.2.3.4
 debugtype               NET
