@@ -64,6 +64,13 @@ Cause
 -----
 
 The stop code indicates that executing code had an exception and the thread that was below it, is a system thread.
+Common exception codes include
+
+-   0xC0000005: STATUS\_ACCESS\_VIOLATION
+
+    A memory access violation occurred. (Parameter 4 of the bug check is the address that the driver attempted to access.)
+
+For a complete list of exception codes, see the ntstatus.h file located in the inc directory of the Windows Driver Kit.
 
 The exception information returned in paramter one is listed in [NTSTATUS Values](https://msdn.microsoft.com/library/cc704588.aspx) and is also available in the ntstatus.h file located in the inc directory of the Windows Driver Kit. 
 
