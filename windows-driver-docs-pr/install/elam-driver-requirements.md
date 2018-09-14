@@ -107,7 +107,8 @@ There are three defined binary blob values that are measured by Measured Boot, a
 -   Policy
 -   Config
 
-The ELAM hive is unloaded after its use by Early Launch Antimalware for performance. If a user mode service wants to update the signature data, it should mount the hive file from the file location \\Windows\\System32\\config\\ELAM. The storage and retrieval format of these data BLOBs is left up to the ISV, but the signature data must be signed so that the AM driver can verify the integrity of the data.
+The ELAM hive is unloaded after its use by Early Launch Antimalware for performance. If a user mode service wants to update the signature data, it should mount the hive file from the file location \\Windows\\System32\\config\\ELAM. For example, you could generate a UUID, convert it to a string, and use that as a unique key into which to mount the hive.
+The storage and retrieval format of these data BLOBs is left up to the ISV, but the signature data must be signed so that the AM driver can verify the integrity of the data.
 
 **Verifying Malware Signatures**
 

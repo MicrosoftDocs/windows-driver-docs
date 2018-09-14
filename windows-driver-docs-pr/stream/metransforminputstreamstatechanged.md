@@ -29,7 +29,7 @@ When the Device MFT output is changed, the related input stream state may also n
 
  
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 In response to this event, the device transform manager (DTM) will call [**GetInputStreamPreferredState**](https://msdn.microsoft.com/library/windows/hardware/mt797670) on the Device MFT with the specified input stream index. Device MFT will return the preferred state and mediatype.

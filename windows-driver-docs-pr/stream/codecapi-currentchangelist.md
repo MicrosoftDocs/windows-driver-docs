@@ -50,7 +50,7 @@ The CODECAPI\_CURRENTCHANGELIST property is used to indicate which parameters ch
 
 The property value (operation data) is an array of GUIDs.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 On a property get call:
 
@@ -60,13 +60,13 @@ On a property set call:
 
 The current list of changed GUIDs is reset.
 
-### <span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
+### Requirements
 
 **Headers:** Declared in *ksmedia.h*. Include *ksmedia.h*.
 
-### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
+### See Also
 
-[**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262), [CODECAPI\_ALLSETTINGS](codecapi-allsettings.md), [CODECAPI\_SETALLDEFAULTS](codecapi-setalldefaults.md)
+[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier), [CODECAPI\_ALLSETTINGS](codecapi-allsettings.md), [CODECAPI\_SETALLDEFAULTS](codecapi-setalldefaults.md)
 
  
 

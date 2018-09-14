@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # IRP\_MJ\_DEVICE\_CONTROL
 
 
-Every driver whose device objects belong to a particular device type (see [Specifying Device Types](https://msdn.microsoft.com/library/windows/hardware/ff563821)) is required to support this request in a [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287) routine, if a set of system-defined I/O control codes ([*IOCTLs*](https://msdn.microsoft.com/library/windows/hardware/ff556290#wdkgloss-ioctl)) exists for the type.
+Every driver whose device objects belong to a particular device type (see [Specifying Device Types](https://msdn.microsoft.com/library/windows/hardware/ff563821)) is required to support this request in a [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287) routine, if a set of system-defined I/O control codes (IOCTLs) exists for the type. For more info about IOCTLs, see [Introduction to I/O Control Codes](introduction-to-i-o-control-codes.md).
 
 Higher-level drivers usually pass these requests on to an underlying device driver. Each device driver in a driver stack is assumed to support this request, along with a set of device type-specific, public or private IOCTLs. For more information about IOCTLs for specific device types, see device type-specific documentation in the Microsoft Windows Driver Kit (WDK).
 

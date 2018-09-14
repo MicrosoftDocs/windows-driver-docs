@@ -51,7 +51,8 @@ To invoke a control method, the kernel-mode driver for an ACPI device initiates 
 ## ACPI specification
 
 
-The *Advanced Configuration and Power Interface Specification* is available at the [ACPI website](http://www.acpi.info). Revision 5.0 of the ACPI specification introduces a set of features to support low-power, mobile PCs that are based on System on a Chip (SoC) integrated circuits and that implement the [connected standby](https://msdn.microsoft.com/library/windows/hardware/mt282515) power model. Starting with Windows 8 and Windows 8.1, the Windows ACPI driver, Acpi.sys, supports the new features in the ACPI 5.0 specification. For more information, see [Windows ACPI design guide for SoC platforms](https://msdn.microsoft.com/library/windows/hardware/dn495676).
+For the latest *Advanced Configuration and Power Interface Specification*, see the [ACPI 5.0 specification](https://www.uefi.org/specifications) available from the Unified Extensible Firmware Interface Forum website. 
+Revision 5.0 of the ACPI specification introduces a set of features to support low-power, mobile PCs that are based on System on a Chip (SoC) integrated circuits and that implement the [connected standby](https://msdn.microsoft.com/library/windows/hardware/mt282515) power model. Starting with Windows 8 and Windows 8.1, the Windows ACPI driver, Acpi.sys, supports the new features in the ACPI 5.0 specification. For more information, see [Windows ACPI design guide for SoC platforms](https://msdn.microsoft.com/library/windows/hardware/dn495676).
 
 ## ACPI debugging
 

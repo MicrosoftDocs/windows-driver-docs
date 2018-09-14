@@ -1,0 +1,179 @@
+- name: "Windows Hardware Dev Center dashboard"
+  href: index.md
+  items: 
+  - name: "Hardware Program dashboard FAQ"
+    href: hardware-dashboard-faq.md
+  - name: "Hardware submissions"
+    href: hardware-certification-submissions.md
+    items: 
+    - name: "Create a new hardware submission"
+      href: create-a-new-hardware-submission.md
+    - name: "Manage hardware submissions"
+      href: manage-your-hardware-submissions.md
+    - name: "Create a new WLK device certification submission"
+      href: create-a-new-hardware-logo-submission.md
+      items: 
+      - name: "Winqual Submission Tool (winqual.exe)"
+        href: winqual-submission-tool--winqualexe-.md
+    - name: "ID definitions"
+      href: id-definitions.md
+    - name: "Attestation signing a kernel driver for public release"
+      href: attestation-signing-a-kernel-driver-for-public-release.md
+    - name: "How to get a driver signed by Microsoft for multiple versions of Windows"
+      href: get-drivers-signed-by-microsoft-for-multiple-windows-versions.md
+    - name: "Driver flighting"
+      href: driver-flighting.md
+    - name: "Working with extension INF files"
+      href: submit-dashboard-extension-inf-files.md
+    - name: "Bug Management"
+      href: bug-management.md
+  - name: "Manage driver distribution with shipping labels"
+    href: manage-driver-distribution-by-submission.md
+    items: 
+    - name: "Publishing restrictions"
+      href: publishing-restrictions.md
+    - name: "Publish a driver to Windows Update"
+      href: publish-a-driver-to-windows-update.md
+    - name: "Understanding Windows Update Automatic and Optional Rules for Driver Distribution"
+      href: understanding-windows-update-automatic-and-optional-rules-for-driver-distribution.md
+    - name: "Share a driver with a partner"
+      href: sharing-drivers-with-your-partners.md
+    - name: "Expire a driver from Windows Update"
+      href: expire-a-driver-from-windows-update.md
+    - name: "View partner shipping labels for a shared driver"
+      href: viewing-shipping-labels-for-your-shared-driver.md
+    - name: "Using Computer Hardware IDs (CHIDs)"
+      href: using-chids.md
+    - name: "Working with extension INF files"
+      href: submit-dashboard-extension-inf-files.md
+    - name: "Limiting driver distribution by Windows version"
+      href: limit-driver-distribution.md
+    - name: "Publishing for test distribution"
+      href: publishing-for-test-distribution.md
+  - name: "Hardware dashboard API"
+    href: dashboard-api.md
+    items: 
+    - name: "Get product data"
+      href: get-product-data.md
+      items: 
+      - name: "Get all products"
+        href: get-all-products.md
+      - name: "Get a product"
+        href: get-a-product.md
+      - name: "Get all submissions"
+        href: get-all-submissions.md
+      - name: "Get a submission"
+        href: get-a-submission.md
+    - name: "Manage product submissions"
+      href: manage-product-submissions.md
+      items: 
+      - name: "Create a new product"
+        href: create-a-new-product.md
+      - name: "Create a new submission for a product"
+        href: create-a-new-submission-for-a-product.md
+      - name: "Commit a product submission"
+        href: commit-a-product-submission.md
+      - name: "Update submission data"
+        href: update-submission-data.md
+      - name: "Update product data"
+        href: update-product-data.md
+    - name: "Get shipping label data"
+      href: get-shipping-labels.md
+      items: 
+      - name: "Get all shipping labels"
+        href: get-all-shipping-labels.md
+      - name: "Get a shipping label"
+        href: get-a-shipping-label.md
+    - name: "Manage shipping labels"
+      href: manage-shipping-labels.md
+      items:
+      - name: "Create a new shipping label"
+        href: create-a-new-shipping-label.md
+      - name: "Update a shipping label"
+        href: update-a-shipping-label.md
+    - name: "Get audience data"
+      href: get-audience-data.md
+    - name: "Driver package metadata"
+      href: driver-package-metadata.md
+    - name: "Get error reporting data for windows 10 drivers"
+      href: get-error-reporting-data-for-windows-10-drivers.md
+      items: 
+      - name: "Get details for a Windows 10 driver error"
+        href: get-details-for-a-windows-10-driver-error.md
+      - name: "Download the CAB file for a Windows 10 driver error"
+        href: download-the-cab-file-for-a-windows-10-driver-error.md
+    - name: "Get error reporting data for Windows 7 and Windows 8.x drivers"
+      href: get-error-reporting-data-for-windows-7-and-windows-8.x-drivers.md
+      items: 
+      - name: "Get details for a Windows 7 or Windows 8.x driver error"
+        href: get-details-for-a-windows-7-or-windows-8.x-driver-error.md
+      - name: "Download the CAB file for a Windows 7 or Window0s 8.x driver error"
+        href: download-the-cab-file-for-a-windows-7-or-windows-8.x-driver-error.md
+    - name: "Get OEM hardware error reporting data"
+      href: get-oem-hardware-error-reporting-data.md
+      items: 
+      - name: "Get details for an OEM hardware error"
+        href: get-details-for-an-oem-hardware-error.md
+      - name: "Download the CAB file for an OEM hardware error"
+        href: download-the-cab-file-for-an-oem-hardware-error.md
+  - name: "File signing LSA plugins and UEFI firmware"
+    href: lsa-and-uefi-file-signing.md
+  - name: "Dashboard Administration"
+    href: dashboard-administration.md
+    items: 
+    - name: "Get started with the Hardware Program"
+      href: get-started-with-the-hardware-dashboard.md
+    - name: "Register for the Hardware Program"
+      href: register-for-the-hardware-program.md
+    - name: "Driver failure reporting"
+      href: driver-failure-reporting.md
+    - name: "Adding or Removing Users"
+      href: adding-or-removing-users.md
+    - name: "Managing User Roles"
+      href: managing-user-roles.md
+    - name: "Get a code signing certificate"
+      href: get-a-code-signing-certificate.md
+    - name: "Update a code signing certificate"
+      href: update-a-code-signing-certificate.md
+  - name: "Device Metadata"
+    href: device-metadata.md
+    items: 
+    - name: "Create a Device Metadata Experience"
+      href: create-a-device-metadata-experience.md
+      items: 
+      - name: "Creating a Preview Package"
+        href: creating-a-preview-package.md
+    - name: "Manage Device Metadata Experiences"
+      href: manage-device-metadata-experiences.md
+    - name: "Submit a Device Metadata Package (Dashboard help)"
+      href: submit-a-device-metadata-package--dashboard-help-.md
+      items: 
+      - name: "Create the LocaleInfo.xml Submission File"
+        href: create-the-localeinfoxml-submission-file.md
+      - name: "Submit a PC device manifest package"
+        href: submit-a-pc-device-manifest-package.md
+      - name: "Submit a mobile broadband device manifest package"
+        href: submit-a-mobile-broadband-device-manifest-package.md
+      - name: "Submit a Multiple-locale device manifest package"
+        href: submit-a-multiple-locale-device-manifest-package.md
+      - name: "Submit a Bulk Metadata Package"
+        href: submit-a-bulk-metadata-package.md
+      - name: "Errors and Solutions When Submitting Device Metadata Experiences"
+        href: errors-and-solutions-when-submitting-device-metadata-experiences.md
+    - name: "Device Metadata Business Rules"
+      href: device-metadata-business-rules.md
+    - name: "Create a mobile broadband experience"
+      href: create-a-mobile-broadband-experience.md
+      items: 
+      - name: "Developer and preview mode"
+        href: developer-and-preview-mode.md
+      - name: "Service icon requirements"
+        href: service-icon-requirements.md
+      - name: "Service number"
+        href: service-number.md
+      - name: "Trusted certificates"
+        href: trusted-certificates.md
+  - name: "Windows Device Experience List"
+    href: windows-device-experience-list.md
+  - name: "Windows Certified Products List"
+    href: windows-certified-products-list.md

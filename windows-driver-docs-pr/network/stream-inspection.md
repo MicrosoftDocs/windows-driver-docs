@@ -28,7 +28,7 @@ To replace a pattern found in the middle of an indicated segment (for example, *
 
 3.  The callout's *classifyFn* function is called again with *p* + *m* bytes. WFP will call *classifyFn* again if **countBytesEnforced** is less than the indicated amount.
 
-4.  From the *classifyFn* function, the callout calls the *FwpStreamInjectAsync0* function to inject the replacement pattern *p'*. The callout then returns **FWP\_ACTION\_BLOCK** with **countBytesEnforced** set to *p*.
+4.  From the *classifyFn* function, the callout calls the *FwpsStreamInjectAsync0* function to inject the replacement pattern *p'*. The callout then returns **FWP\_ACTION\_BLOCK** with **countBytesEnforced** set to *p*.
 
 5.  The callout's *classifyFn* function is called again with *m* bytes.
 
@@ -49,7 +49,7 @@ Because stream data can be indicated as a [**NET\_BUFFER\_LIST**](https://msdn.m
 
 WFP also supports stream data throttling for the incoming direction. If a callout cannot keep pace with the incoming data rate, it can return **FWPS\_STREAM\_ACTION\_DEFER** to "pause" the stream. The stream can then be "resumed" by calling the [**FwpsStreamContinue0**](https://msdn.microsoft.com/library/windows/hardware/ff551210) function. Deferring a stream with this function causes the TCP/IP stack to stop ACK-processing incoming data. This causes the TCP sliding window to decrease toward 0.
 
-For out-of-band stream inspection callouts, [**FwpsStreamContinue0**](https://msdn.microsoft.com/library/windows/hardware/ff551210) must not be called while the **FwpStreamInjectAsync0** function is called.
+For out-of-band stream inspection callouts, [**FwpsStreamContinue0**](https://msdn.microsoft.com/library/windows/hardware/ff551210) must not be called while the **FwpsStreamInjectAsync0** function is called.
 
 Injected stream data will not be re-indicated to the callout, but it will be made available to stream callouts from lower-weight sublayers.
 

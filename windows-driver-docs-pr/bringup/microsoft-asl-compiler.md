@@ -4,7 +4,7 @@ author: windows-driver-content
 description: Version 5.0 of the Microsoft ASL compiler supports the features in the ACPI 5.0 specification.
 ms.assetid: E6EC168F-DB4B-461A-874A-F5278E8F9200
 ms.author: windowsdriverdev
-ms.date: 07/26/2018
+ms.date:
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 # Microsoft ASL compiler
 
 
-Version 5.0 of the Microsoft ACPI source language (ASL) compiler supports the features in the Advanced Configuration and Power Interface Specification, Revision 5.0 ([ACPI 5.0 specification](http://www.uefi.org/specifications)). The ASL compiler is distributed with the Windows Driver Kit (WDK). Look for the Asl.exe executable file in the Tools\\arm\\ACPIVerify, Tools\\arm64\\ACPIVerify, Tools\\x86\\ACPIVerify, or Tools\\x64\\ACPIVerify directory of your installed WDK.
+Version 5.0 of the Microsoft ACPI source language (ASL) compiler supports the features in the Advanced Configuration and Power Interface Specification, Revision 5.0 ([ACPI 5.0 specification](https://www.uefi.org/specifications)). The ASL compiler is distributed with the Windows Driver Kit (WDK). Look for the Asl.exe executable file in the Tools\\arm\\ACPIVerify, Tools\\arm64\\ACPIVerify, Tools\\x86\\ACPIVerify, or Tools\\x64\\ACPIVerify directory of your installed WDK.
 
 ## Command line options
 
@@ -48,8 +48,7 @@ asl [/nologo] [/Fo=<AMLFile>] [/Fa=<ASMFile>] [/Fl=<LSTFile>] [/Fn=<NSDFile>] <A
  
 ## Using the Microsoft ASL compiler's ACPI-table-load feature
 
-
-During system development, it is useful to have a way to simulate various ACPI BIOS constructs and test them on the development system. Starting with Windows XP, the Windows operating system allows certain ACPI tables to be loaded from the Windows registry instead of from the PC's BIOS ROM. Use of this feature requires administrator privileges, and also requires that test signing be enabled on the system. For systems that support UEFI Secure Boot, test signing cannot be enabled, and the compiler's table-load feature cannot be used unless UEFI Secure Boot is disabled or the Windows Debug Policy is installed on the system.
+During system development, it is useful to have a way to simulate various ACPI BIOS constructs and test them on the development system. The Windows operating system allows certain ACPI tables to be loaded from the Windows registry instead of from the PC's BIOS ROM. Use of this feature requires administrator privileges, and also requires that test signing be enabled on the system. For systems that support UEFI Secure Boot, test signing cannot be enabled, and the compiler's table-load feature cannot be used unless UEFI Secure Boot is disabled or the Windows Debug Policy is installed on the system.
 
 To use the table-load feature, the ACPI table to be overloaded must meet the following requirements:
 
@@ -81,7 +80,7 @@ where AMLFile is the name of the compiled AML file that contains the table you w
 ## Additional resources
 
 -   [ACPICA Documentation](https://acpica.org/documentation/)
--   [ACPI Website](http://www.uefi.org/specifications/)
+-   [ACPI Website](https://www.uefi.org/specifications/)
 -   [ACPI Debugging](https://msdn.microsoft.com/library/windows/hardware/ff537808)
 -   [Acpi.sys: The Windows ACPI Driver](https://msdn.microsoft.com/library/windows/hardware/ff540493)
 -   [Power Management and ACPI](https://msdn.microsoft.com/library/windows/hardware/dn614610)

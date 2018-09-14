@@ -12,7 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 9/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -21,11 +21,9 @@ ms.localizationpriority: medium
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ROI\_ISPCONTROL
 
+The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ROI\_ISPCONTROL** property ID that is defined in the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ne-ksmedia-ksproperty_cameracontrol_extended_property) enumeration is used to get or configure the ROI settings and apply the desired processing.
 
-The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ROI\_ISPCONTROL** property ID that is defined in the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/dn917962) enumeration is used to get or configure the ROI settings and apply the desired processing.
-
-## <span id="Usage_summary_table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage summary table
-
+## Usage summary table
 
 <table>
 <colgroup>
@@ -44,14 +42,12 @@ The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ROI\_ISPCONTROL** property ID that is
 <tr class="odd">
 <td><p>Version 1</p></td>
 <td><p>Filter</p></td>
-<td><p>Asynchronous, Cancellable</p></td>
+<td><p>Asynchronous, Cancelable</p></td>
 </tr>
 </tbody>
 </table>
 
- 
-
-To get the current ROI settings from the driver or to configure the ROI settings and apply the desired processing (3As), the **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ROI\_ISPCONTROL** extended property control is sent to the driver along with a standard [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925136) structure followed by a [**KSCAMERA\_EXTENDEDPROP\_ROI\_ISPCONTROLHEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925175) structure followed by a [**KSCAMERA\_EXTENDEDPROP\_ROI\_ISPCONTROL**](https://msdn.microsoft.com/library/windows/hardware/dn925171) structure and then by one or more corresponding ISP specific control payload structures. The following list illustrates a data structure layout with one focus ROI and two exposure ROIs.
+To get the current ROI settings from the driver or to configure the ROI settings and apply the desired processing (3As), the **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ROI\_ISPCONTROL** extended property control is sent to the driver along with a standard [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure followed by a [**KSCAMERA\_EXTENDEDPROP\_ROI\_ISPCONTROLHEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_roi_ispcontrolheader) structure followed by a [**KSCAMERA\_EXTENDEDPROP\_ROI\_ISPCONTROL**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_roi_ispcontrol) structure and then by one or more corresponding ISP specific control payload structures. The following list illustrates a data structure layout with one focus ROI and two exposure ROIs.
 
 -   **KSCAMERA\_EXTENDEDPROP\_HEADER**
 
@@ -109,10 +105,7 @@ The table below contains the descriptions and requirements for the **KSCAMERA\_E
 </tbody>
 </table>
 
- 
-
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -126,12 +119,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

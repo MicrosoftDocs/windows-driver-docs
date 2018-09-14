@@ -73,21 +73,24 @@ The minimum OS level is determined by the Products Certified OS level, or the At
 
 > [!IMPORTANT]
 > Note the following when expanding your driver's distribution:
+> * You can only expand drivers that you submit. The receivers of a shared submission cannot expand drivers.
 > * Expansion can only be performed once per submission, and cannot be undone. Only expand your driver's distribution only when absolutely necessary.
 > * All shipping labels associated with expanded submission will list new PNP HWIDs that can be used to target **Windows 10 Client versions 1506 and 1511 (TH1)**. 
 > * Your Certified level for these newly created items will show as “Extended”.
-> * You can only expand drivers that you submit. The receivers of a shared submission cannot expand drivers.
-> * Only Windows 8.1 drivers can be expanded to target Windows 10 systems.
+> * Only Windows 8.1 drivers can be expanded upward to target Windows 10 systems.  
 > * Expansion does not re-sign your driver or change your driver's certification level.
-> * You cannot expand a driver to a different CPU architecture (i.e. x86 > ARM)
 
-New OS level targeting options are available when creating a Shipping Label for Windows Update. These options enable you to “Expand” the driver coverage.
+The Expansion process on a driver submission enables the ability to target operating systems below the products certification level or Attested OS level. It also enables a Windows 8.1 driver to be offered to Windows 10 systems. 
 
-Expanding a driver submission's PnP choices enables the driver to target operating systems below the products certification level or Attested OS level. It also enables a Windows 8.1 driver to be offered to Windows 10 systems. 
-
-For example, If your driver is certified for Windows 10 RS3 (1709), clicking **Expand** will display new Hardware PnP choices for **Windows 10 Client versions 1506 and 1511 (TH1)** for each HWID listed in your INFs.  You can now publish these HWIDs as normal and also combine them with Floor and Ceiling options for further refinement (next slide).
+For example, If you want to enable your Windows 10 RS3 (1709) driver to be offered to Windows 10 RS1 (1607), you would click **Expand**. This will create a new baseline Operating System choice for every HWID listed in all your INFs.  This baseline is displayed as **Windows 10 Client versions 1506 and 1511 (TH1)** and shows **Extended** in the Certified section.  The baseline OS will always be Windows 10 1506 (TH1) and is our starting OS target point.
 
 ![A screenshot of the driver expansion option.](images/new-pnp-nodes.png)
+
+To bring the lower OS limit up to RS1, use the Floor feature called out above.  Select the **Extended** HWID you want, then click Publish.  
+
+> [!NOTE]
+> In the above example, there is no need to publish any HWIDs that list Windows 10 RS3.  This is because you will be setting a lower OS Floor limit of RS1.  Your **Extended** driver will be offered correctly to all operating systems that are greater than the lowest starting point.  This means it will be offered to RS1, RS2, RS3, etc.
+> Trying to set a floor of RS1 when a Windows 10 RS3 (1709) targeted driver is selected will result in an error informing you to choose a higher OS floor target. 
 
 ## FAQ
 
@@ -101,4 +104,4 @@ For example, If your driver is certified for Windows 10 RS3 (1709), clicking **E
 
 **How can I target a Windows version that is older than my driver’s certification?**
 
-*You can specify an earlier version of Windows as a floor; enabling the driver to target both that version and later of Windows.*
+*See the above example.*

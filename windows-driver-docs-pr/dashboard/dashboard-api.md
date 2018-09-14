@@ -1,5 +1,5 @@
 ---
-title: Manage hardware submissions using APIs
+title: Hardware dashboard API
 description: The Microsoft Hardware APIs programmatically query and create submissions for hardware products within your organization's Windows Dev Center account.
 ms.author: windowsdriverdev
 ms.date: 04/05/2018
@@ -9,7 +9,7 @@ ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-# Manage hardware submissions using APIs
+# Hardware dashboard API
 
 Use the *Microsoft Hardware APIs* to programmatically query and create submissions for hardware products within your organization's Windows Dev Center account. These APIs are useful if your account manages many products, and you want to automate and optimize the submission process for these assets. These APIs use Azure Active Directory (Azure AD) to authenticate the calls from your app or service.
 The following steps describe the end-to-end process of using the Microsoft Hardware API:
@@ -75,16 +75,16 @@ After you have an Azure AD access token, you can call methods in the Microsoft H
 
 | Scenario | Description |
 |:--|:--|
-| Drivers | Get, create and update drivers registered to your Dev Center Account. For more information about these methods, see the following articles:<ul><li>[Get product data](get-product-data.md)</li><li>[Manage product submissions](manage-product-submissions.md)</li></ul>|
+| Drivers | Get, create and update drivers registered to your Dev Center Account. For more information about these methods, see the following articles:<ul><li>[Get product data](get-product-data.md)</li><li>[Manage product submissions](manage-product-submissions.md)</li><li>[Get shipping label data](get-shipping-labels.md)</li><li>[Manage shipping labels](manage-shipping-labels.md)</li></ul>|
 
 
 ## Code examples
 
 The following sample provides detailed code that demonstrate how to use the Microsoft Hardware API:
 
-*	[C# sample](http://download.microsoft.com/download/C/F/4/CF404E53-87A0-4204-BA13-A64B09A237C1/HardwareApiCSharpSample.zip)
+* [C# sample](http://download.microsoft.com/download/C/F/4/CF404E53-87A0-4204-BA13-A64B09A237C1/HardwareApiCSharpSample.zip) 
 
 ## Additional help
 
 If you have questions about the Microsoft Store submission API or need assistance managing your submissions with this API, use the following resources:
-•	Visit our [support page](https://developer.microsoft.com/en-us/dashboard/account/help?returnUri=https://developer.microsoft.com/en-us/dashboard/hardware) and request help.
+• Visit our [support page](https://developer.microsoft.com/en-us/dashboard/account/help?returnUri=https://developer.microsoft.com/en-us/dashboard/hardware) and request help.

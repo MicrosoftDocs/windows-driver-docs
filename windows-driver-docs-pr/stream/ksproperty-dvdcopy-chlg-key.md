@@ -27,7 +27,7 @@ The KSPROPERTY\_DVDCOPY\_CHLG\_KEY property transfers the bus challenge keys tha
 ## <span id="ddk_ksproperty_dvdcopy_chlg_key_ks"></span><span id="DDK_KSPROPERTY_DVDCOPY_CHLG_KEY_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -51,7 +51,7 @@ The KSPROPERTY\_DVDCOPY\_CHLG\_KEY property transfers the bus challenge keys tha
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
+<td><p>[<strong>KSPROPERTY</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)</p></td>
 <td><p>[<strong>KS_DVDCOPY_CHLGKEY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567636)</p></td>
 </tr>
 </tbody>
@@ -84,7 +84,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**KS\_DVDCOPY\_CHLGKEY**](https://msdn.microsoft.com/library/windows/hardware/ff567636)

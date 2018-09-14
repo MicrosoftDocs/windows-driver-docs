@@ -38,6 +38,14 @@ The following table summarizes Windows support for platform extensions for x86-b
 <td align="left"><p>Not supported.</p></td>
 </tr>
 <tr class="odd">
+<td align="left"><p><strong>.ntarm</strong></p></td>
+<td align="left"><p>Not supported.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>.ntarm64</strong></p></td>
+<td align="left"><p>Not supported.</p></td>
+</tr>
+<tr class="odd">
 <td align="left"><p><strong>.ntx86</strong></p></td>
 <td align="left"><p>Optional on sections that support extensions.</p></td>
 </tr>
