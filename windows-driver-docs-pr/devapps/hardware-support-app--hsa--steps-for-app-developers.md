@@ -63,7 +63,7 @@ ca9fc964db7e0c2938778f4559946833e7a8cfde0f3eaa07650766d4764e86c4
 
 The capability owner uses this info to generate a [Signed custom capability Descriptor](hardware-support-app--hsa--steps-for-driver-developers.md#sccd-xml-schema) file and sends this file to the app developer.
 
-The app developer can continue developing an app with custom capabilities in developer mode while waiting for the capability owner to approve the request. For example, use the following in the SCCD on a desktop PC in [Developer Mode](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development):
+The app developer can continue developing an app with custom capabilities in developer mode while waiting for the capability owner to approve the request. For example, use the following in the SCCD on a desktop PC in [Developer Mode](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development):
 
 -   Catalog entry in the SCCD.
 
