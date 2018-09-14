@@ -28,7 +28,7 @@ The steps for the driver developer are described in [Hardware Support App (HSA):
 
 ## Getting Started
 
-First, install the latest version of Visual Studio and create a UWP app project.  To build a UWP app with a custom capability, you'll need Windows SDK version 10.0.15063 (Windows 10 Creators Update) or later. Your project file must also specify version 10.0.15063 or higher. For more help getting configured, see [Develop UWP apps using Visual Studio](https://developer.microsoft.com/en-us/windows/apps/develop).
+First, install the latest version of Visual Studio and create a UWP app project.  To build a UWP app with a custom capability, you'll need Windows SDK version 10.0.15063 (Windows 10 Creators Update) or later. Your project file must also specify version 10.0.15063 or higher. For more help getting configured, see [Develop UWP apps using Visual Studio](/windows/uwp/develop/).
 
 Starting in Windows 10 version 1709, you can specify that a Universal Windows Platform (UWP) app should only load if a specific driver is present.  To learn how, see [Pairing a driver with a UWP app](../install/pairing-app-and-driver-versions.md).
 
@@ -79,14 +79,20 @@ The app developer can continue developing an app with custom capabilities in dev
 
 ## Add a custom capability to the App Package Manifest
 
-Next, modify the app [package manifest](https://msdn.microsoft.com/library/windows/apps/BR211474) to include a capabilities attribute:
+Next, modify your [app package manifest](https://msdn.microsoft.com/library/windows/apps/BR211474) source file (`Package.appxmanifest`) to include a capabilities attribute.
 
 ```xml
+<?xml version="1.0" encoding="utf-8"?>
+<Package
+  ...
+  xmlns:uap4="http://schemas.microsoft.com/appx/manifest/uap/windows10/4">
+...
 <Capabilities>
-	<uap4:CustomCapability Name=”CompanyName.customCapabilityName_Publisher ID” />
+    <uap4:CustomCapability Name="CompanyName.customCapabilityName_PublisherID"/>
 </Capabilities>
-
+</Package>
 ```
+
 Then copy the SCCD file to the package root of the appx package. In Visual Studio's solution explorer, right-click on “project-&gt; Add -&gt; Existing Item…” to add the SCCD to your project.
 
 ![Adding an SCCD file into the appx package](images/addSCCDToAppx.png)
