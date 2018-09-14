@@ -4,7 +4,7 @@ description: The VIDEO_TDR_ ERROR bug check has a value of 0x00000116. This indi
 ms.assetid: 06fe312a-e2d3-479f-b0fb-06c0ac79be32
 keywords: ["Bug Check 0x116 VIDEO_TDR_ERROR", "VIDEO_TDR_ERROR"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 08/16/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -136,7 +136,7 @@ fffff801`63ec0000 fffff801`649a7000   nvlddmkm T (no symbols)
 
 ```
 
-Parameter 1 contains a pointer to the TDR\_RECOVERY\_CONTEXT. As shown in the !analyze output, you can use the dt command to display this data.
+Parameter 1 contains a pointer to the TDR\_RECOVERY\_CONTEXT. As shown in the !analyze output, if you have symbols for the associated code, you can use the dt command to display this data.
 
 ```
 1: kd> dt dxgkrnl!_TDR_RECOVERY_CONTEXT ffffe000c2c404c0

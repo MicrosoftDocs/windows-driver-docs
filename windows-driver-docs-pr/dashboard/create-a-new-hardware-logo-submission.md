@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # Create a new WLK device certification submission
 
 
-To prepare your hardware for certification, you must create and submit a **WQReady.xml** file. Submitting this file allows the dashboard to test your device and return a report on its performance. The report includes a detailed list of how the device compares to Windows standards.
+To prepare your Windows Server 2008 (and below) hardware for certification, you must create and submit a **WQReady.xml** file. Submitting this file allows the dashboard to test your device and return a report on its performance. The report includes a detailed list of how the device compares to Windows standards.
 
 # Creating a WQReady.xml file
 
@@ -41,82 +41,14 @@ To prepare your hardware for certification, you must create and submit a **WQRea
 
 ## Submitting your file
 
-1.  Sign in to the Hardware Dev Center dashboard with your Microsoft account, and then click **Hardware compatibility**.
+1.  Sign in to the Windows Hardware Dev Center dashboard, and then select **Submit new hardware**. This loads the submission creation wizard.
 
-2.  On the **Hardware compatibility** page, click **Create WLK submission**.
+2.  In the **Packages and signing properties** section, choose a name for your driver submission. This name can be used to search for and organize your driver submissions.
 
-3.  On the **Hardware logo** page, browse to find the **WQReady.xml** file you want to submit, and then click **Next**.
+3. Either drag and drop, or browse to the **.cab** file that you created using the Winqual Submission Tool that you want to submit. The file will begin to upload.
 
-4.  On the **Product information** page, complete the following information:
+![screenshot that shows WLK cab file uploading and WQReadyXML upload control](images/upload-wlk.png)
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Field</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>Division</p></td>
-    <td><p>Select the appropriate division from the list. (Required)</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>Qualifications</p></td>
-    <td><p>The list of operating systems and architectures you've already tested.</p>
-    <p>For Windows XP, Windows XP (x64), and <strong>Windows 2000</strong>, you can also select one or more earlier versions if WST</p>
-    <p>determined that your driver is properly decorated for one or more of those operating systems. They aren't certified, but Microsoft signs your driver for the specified operating system at no cost. (Optional)</p>
-    <p></p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>Product name</p></td>
-    <td><p>Enter a name for the product. (Required for all Device and System submissions)</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>Marketing name</p></td>
-    <td><p>Enter a marketing name and part number, if available, and select the locales that you want to submit for certification. (Optional)</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>Device metadata category</p></td>
-    <td><p>Select an icon for your device from a list of default icons based on your device category. This determines which icon appears in Devices and Printers. (Required for device submissions only.) For information about delivering a rich experience with Windows Device Stage, see [Device Metadata](https://msdn.microsoft.com/library/windows/hardware/br230800.aspx).</p>
-    <p></p></td>
-    </tr>
-    <tr class="even">
-    <td><p>Distribution to Windows Update</p></td>
-    <td><p>Enter the earliest date on which you want your drivers to be released. They become available to your users the next day. (Optional)</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>Publication into various catalogs</p></td>
-    <td><p>Confirm that you want an announcement of your product included on the Windows Server Catalog, the Windows Logo'd Product List, and CNET, and enter the date when you want this to happen. (Optional)</p></td>
-    </tr>
-    </tbody>
-    </table>
+3. Now drag and drop or browse to the **WQReady.xml** file you want to submit. This will complete your upload
 
-     
-
-> [!NOTE]  
-> The company, category, and subcategory are prepopulated based on information in the **WQReady.xml** file.
-
-     
-
-5.  On the **Confirm** page, review the details, and then click **Submit**.
-
-6.  On the **Upload** page, browse for the **WQReady.cab** file that you created using the Winqual Submission Tool, and then click **Upload**.
-
-7.  When the submission completes, you and your administrator receive an email containing the results of the verification.
-
-    Review the results, and, if you choose, make changes to your product and resubmit.
-
- 
-
- 
-
-
-
-
-
-
+4. Continue from step 6 in [Create a new hardware submission](create-a-new-hardware-submission.md) to finish your submission.

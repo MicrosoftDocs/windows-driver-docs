@@ -27,7 +27,7 @@ Clients use KSPROPERTY\_BDA\_OUTER\_FEC\_RATE to control the binary convolution 
 ## <span id="ddk_ksproperty_bda_outer_fec_rate_ks"></span><span id="DDK_KSPROPERTY_BDA_OUTER_FEC_RATE_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -82,7 +82,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**BinaryConvolutionCodeRate**](https://msdn.microsoft.com/library/windows/hardware/ff556566)

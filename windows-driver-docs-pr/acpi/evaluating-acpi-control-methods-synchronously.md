@@ -8,7 +8,7 @@ keywords:
 - ACPI control methods WDK , input buffer structures
 - ACPI control methods WDK , SendDownStreamIrp code sample
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date:
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -22,11 +22,11 @@ A device driver can use the following device control requests to synchronously e
 
 -   [**IOCTL\_ACPI\_EVAL\_METHOD**](https://msdn.microsoft.com/library/windows/hardware/ff536148)
 
-    Starting with Windows 2000, this request evaluates a control method that is an immediate child object in the ACPI namespace of the device to which the request is sent.
+    This request evaluates a control method that is an immediate child object in the ACPI namespace of the device to which the request is sent.
 
 -   [**IOCTL\_ACPI\_EVAL\_METHOD\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff536149)
 
-    Starting with Windows Server 2008 and Windows Vista, this request synchronously evaluates a control method that is supported by the device or a descendant child object of the device to which the request is sent.
+    This request synchronously evaluates a control method that is supported by the device or a descendant child object of the device to which the request is sent.
 
 The [Windows ACPI driver](https://msdn.microsoft.com/library/windows/hardware/ff540493), Acpi.sys, handles these requests on behalf of devices that are specified in the system description tables in the [ACPI BIOS](https://msdn.microsoft.com/library/windows/hardware/ff540487). These requests can be used by kernel-mode device drivers that comply with the requirements of [Kernel-Mode Driver Framework (KMDF)](https://msdn.microsoft.com/library/windows/hardware/dn265580) or [Windows Driver Model (WDM)](https://msdn.microsoft.com/library/windows/hardware/ff565698). Starting with Windows 8, user-mode device drivers that comply with the requirements of [User-Mode Driver Framework (UMDF)](https://msdn.microsoft.com/library/windows/hardware/ff560442) can use these requests.
 
@@ -69,11 +69,3 @@ To build a request, a driver calls **IoBuildDeviceIoControlRequest** and supplie
 For a code example of how to evaluate a control method that does not take input arguments, see [Evaluating a Control Method Without Input Arguments](evaluating-a-control-method-without-input-arguments.md).
 
 For a code example of how to evaluate a control method that takes input arguments, see [Evaluating a Control Method that Takes Input Arguments](evaluating-a-control-method-that-takes-input-arguments.md).
-
- 
-
- 
-
-
-
-

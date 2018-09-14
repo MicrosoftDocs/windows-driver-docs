@@ -138,26 +138,26 @@ Reset to the supplied *value* only if the specified *value-entry-name* already e
 (Windows XP and later versions of Windows.) Make the specified change in the 32-bit registry. If not specified, the change is made to the native registry.
 
 <a href="" id="0x00000000--flg-addreg-type-sz-"></a>**0x00000000** (FLG_ADDREG_TYPE_SZ)  
-The given value entry and/or value is of type REG_SZ.
+The given value entry and/or value is of type [REG_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types).
 
 **Note**  This value is the default type for a specified value entry, so the flags value can be omitted from any r*eg-root=* line in an *add-registry-section* that operates on a value entry of this type.
 
  
 
 <a href="" id="0x00010000--flg-addreg-type-multi-sz-"></a>**0x00010000** (FLG_ADDREG_TYPE_MULTI_SZ)  
-The given value entry and/or value is of the registry type REG_MULTI_SZ. The value field that follows can be a list of strings separated by commas. This specification does not require any NULL terminator for a given string value.
+The given value entry and/or value is of the registry type [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types). The value field that follows can be a list of strings separated by commas. This specification does not require any NULL terminator for a given string value.
 
 <a href="" id="0x00020000--flg-addreg-type-expand-sz--"></a>**0x00020000** (FLG_ADDREG_TYPE_EXPAND_SZ)   
-The given *value-entry-name* and/or *value* is of the registry type REG_EXPAND_SZ.
+The given *value-entry-name* and/or *value* is of the registry type [REG_EXPAND_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types).
 
 <a href="" id="0x00010001--flg-addreg-type-dword---flg-addreg-type-dword-"></a>**0x00010001** (FLG_ADDREG_TYPE_DWORD) (FLG_ADDREG_TYPE_DWORD)  
-The given *value-entry-name* and/or *value* is of the registry type REG_DWORD.
+The given *value-entry-name* and/or *value* is of the registry type [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types).
 
 <a href="" id="0x00020001--flg-addreg-type-none-"></a>**0x00020001** (FLG_ADDREG_TYPE_NONE)  
-The given *value-entry-name* and/or *value* is of the registry type REG_NONE.
+The given *value-entry-name* and/or *value* is of the registry type [REG_NONE](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types).
 
 <a href="" id="value"></a>*value*  
-This optionally specifies a new value for the specified *value-entry-name* to be added to the given registry key. Such a *value* can be a "replacement" value for an existing named value entry in an existing key, a value to be appended (*flag* value **0x00010008**) to an existing named REG_MULTI_SZ-type value entry in an existing key, a new value entry to be written into an existing key, or the initial value entry for a new *subkey* to be added to the registry.
+This optionally specifies a new value for the specified *value-entry-name* to be added to the given registry key. Such a *value* can be a "replacement" value for an existing named value entry in an existing key, a value to be appended (*flag* value **0x00010008**) to an existing named [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types)-type value entry in an existing key, a new value entry to be written into an existing key, or the initial value entry for a new *subkey* to be added to the registry.
 
 The expression of such a *value* depends on the registry type specified for the *flag*, as follows:
 
@@ -201,7 +201,7 @@ To represent a number of a registry type other than one of the predefined REG_*X
 HKR,,MYValue,0x00380001,1,0,2,3,4,5,6,7,8,9,A,B,C,D,E,F
 ```
 
-This technique can be used to define new registry types for numeric values, but not for values of type REG_EXPAND_SZ, REG_MULTI_SZ, REG_NONE, or REG_SZ.
+This technique can be used to define new registry types for numeric values, but not for values of type [REG_EXPAND_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types), [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types), [REG_NONE](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types), or [REG_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types). For more info about these types, see [Registry value types](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types).
 
 ### Special *value-entry-name* Keywords
 
@@ -244,7 +244,7 @@ The *characteristics* value (including a value of zero) overrides any class-wide
 For more information about device characteristics, see [Specifying Device Characteristics](https://msdn.microsoft.com/library/windows/hardware/ff563818).
 
 <a href="" id="devicetype"></a>**DeviceType**  
-A **DeviceType** HKR **AddReg** entry specifies a device type for the device. The device-type is the numeric value of a FILE_DEVICE_*XXX* constant defined in *Wdm.h* or *Ntddk.h*. The flag value of 0x10001 specifies that the device-type value is a REG_DWORD. For more information, see [Specifying Device Types](https://msdn.microsoft.com/library/windows/hardware/ff563821).
+A **DeviceType** HKR **AddReg** entry specifies a device type for the device. The device-type is the numeric value of a FILE_DEVICE_*XXX* constant defined in *Wdm.h* or *Ntddk.h*. The flag value of 0x10001 specifies that the device-type value is a [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types). For more information, see [Specifying Device Types](https://msdn.microsoft.com/library/windows/hardware/ff563821).
 
 A class-installer INF should specify the device type that applies to all, or almost all, of the devices in the class. For example, if the devices in the class are of type FILE_DEVICE_CD_ROM, specify a *device-type* of 0x02. If a device INF specifies a value for **DeviceType**, it overrides the value set by the class installer, if any. If the class or device INF specifies a **DeviceType** value, the PnP manager applies that type to the [*physical device object (PDO)*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-physical-device-object--pdo-) created by the device's bus driver.
 

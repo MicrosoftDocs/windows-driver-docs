@@ -148,6 +148,8 @@
   - name: "Introductions to NDIS 6.0 and later"
     href: introductions-to-ndis-6-0-and-later.md
     items: 
+    - name: "Introduction to NDIS 6.82"
+      href: introduction-to-ndis-6-82.md
     - name: "Introduction to NDIS 6.81"
       href: introduction-to-ndis-6-81.md
     - name: "Introduction to NDIS 6.80"
@@ -283,6 +285,8 @@
   - name: "Porting NDIS Drivers to Newer NDIS Versions"
     href: porting-ndis-drivers-to-newer-ndis-versions.md
     items: 
+    - name: "Porting NDIS 6.x drivers to NDIS 6.82"
+      href: porting-ndis-6-x-drivers-to-ndis-6-82.md
     - name: "Porting NDIS 6.x drivers to NDIS 6.81"
       href: porting-ndis-6-x-drivers-to-ndis-6-81.md
     - name: "Porting NDIS 6.x drivers to NDIS 6.80"
@@ -3177,12 +3181,19 @@
       href: mb-network-blacklist-operations.md
     - name: "MB LTE Attach Operations"
       href: mb-lte-attach-operations.md
-    - name: "MB Protocol Configuration Operations (PCO)"
-      href: mb-protocol-configuration-operations--pco-.md
+    - name: "MB Protocol Configuration Options (PCO) Operations"
+      href: mb-protocol-configuration-options-pco-operations.md
     - name: "MB low level UICC access"
       href: mb-low-level-uicc-access.md
-    - name: "MB modem reset operations"
-      href: mb-modem-reset-operations.md
+    - name: "MB reset and recovery"
+      items:
+      - name: "MB Device-based Reset and Recovery"
+        href: mb-device-based-reset-and-recovery.md
+        items: 
+        - name: "MB hang detection"
+          href: mb-hang-detection.md
+      - name: "MB modem reset operations"
+        href: mb-modem-reset-operations.md
     - name: "MB SAR Platform Support"
       href: mb-sar-platform-support.md
     - name: "MB base stations information query support"
@@ -3224,8 +3235,18 @@
         href: ndis-status-wwan-home-provider.md
       - name: "NDIS_STATUS_WWAN_IP_ADDRESS_STATE"
         href: ndis-status-wwan-ip-address-state.md
+      - name: "NDIS_STATUS_WWAN_LTE_ATTACH_CONFIG"
+        href: ndis-status-wwan-lte-attach-config.md
+      - name: "NDIS_STATUS_WWAN_LTE_ATTACH_STATUS"
+        href: ndis-status-wwan-lte-attach-status.md
       - name: "NDIS_STATUS_WWAN_MODEM_CONFIG_INFO"
         href: ndis-status-wwan-modem-config-info.md
+      - name: "NDIS_STATUS_WWAN_MPDP_LIST"
+        href: ndis-status-wwan-mpdp-list.md
+      - name: "NDIS_STATUS_WWAN_MPDP_STATE"
+        href: ndis-status-wwan-mpdp-state.md
+      - name: "NDIS_STATUS_WWAN_NETWORK_BLACKLIST"
+        href: ndis-status-wwan-network-blacklist.md
       - name: "NDIS_STATUS_WWAN_PACKET_SERVICE"
         href: ndis-status-wwan-packet-service.md
       - name: "NDIS_STATUS_WWAN_PCO_STATUS"
@@ -3248,6 +3269,10 @@
         href: ndis-status-wwan-ready-info.md
       - name: "NDIS_STATUS_WWAN_REGISTER_STATE"
         href: ndis-status-wwan-register-state.md
+      - name: "NDIS_STATUS_WWAN_SAR_CONFIG"
+        href: ndis-status-wwan-sar-config.md
+      - name: "NDIS_STATUS_WWAN_SAR_TRANSMISSION_STATUS"
+        href: ndis-status-wwan-sar-transmission-status.md
       - name: "NDIS_STATUS_WWAN_SET_HOME_PROVIDER_COMPLETE"
         href: ndis-status-wwan-set-home-provider-complete.md
       - name: "NDIS_STATUS_WWAN_SERVICE_ACTIVATION"
@@ -5556,8 +5581,16 @@
       href: oid-wwan-enumerate-device-services.md
     - name: "OID_WWAN_HOME_PROVIDER"
       href: oid-wwan-home-provider.md
+    - name: "OID_WWAN_LTE_ATTACH_CONFIG"
+      href: oid-wwan-lte-attach-config.md
+    - name: "OID_WWAN_LTE_ATTACH_STATUS"
+      href: oid-wwan-lte-attach-status.md
     - name: "OID_WWAN_MODEM_CONFIG_INFO"
       href: oid-wwan-modem-config-info.md
+    - name: "OID_WWAN_MPDP"
+      href: oid-wwan-mpdp.md
+    - name: "OID_WWAN_NETWORK_BLACKLIST"
+      href: oid-wwan-network-blacklist.md
     - name: "OID_WWAN_NETWORK_IDLE_HINT"
       href: oid-wwan-network-idle-hint.md
     - name: "OID_WWAN_PACKET_SERVICE"
@@ -5584,6 +5617,10 @@
       href: oid-wwan-ready-info.md
     - name: "OID_WWAN_REGISTER_STATE"
       href: oid-wwan-register-state.md
+    - name: "OID_WWAN_SAR_CONFIG"
+      href: oid-wwan-sar-config.md
+    - name: "OID_WWAN_SAR_TRANSMISSION_STATUS"
+      href: oid-wwan-sar-transmission-status.md
     - name: "OID_WWAN_SERVICE_ACTIVATION"
       href: oid-wwan-service-activation.md
     - name: "OID_WWAN_SIGNAL_STATE"
