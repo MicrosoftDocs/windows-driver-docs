@@ -41,7 +41,7 @@ Indicates that the proposed format is not supported by the minidriver.
 <span id="STATUS_IO_DEVICE_ERROR"></span><span id="status_io_device_error"></span>STATUS\_IO\_DEVICE\_ERROR  
 Indicates that a hardware failure occurred.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 When the class driver receives a [**KSPROPERTY\_CONNECTION\_PROPOSEDATAFORMAT**](ksproperty-connection-proposedataformat.md) request, it uses this SRB code to determine whether the proposed format is supported. The class driver passes the proposed data format in the **CommandData**.**OpenFormat** member pointed to by *pSrb*. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff559702) structure.
 
@@ -49,7 +49,7 @@ If the minidriver does not support the data format, it sets *pSrb*-&gt;**Status*
 
 If the minidriver is able to accept the new format, the class driver at some later time may send the minidriver a format change, which is indicated by the **OptionsFlags** member in a [**KSSTREAM\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff567138) structure.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**SRB\_SET\_DATA\_FORMAT**](srb-set-data-format.md)

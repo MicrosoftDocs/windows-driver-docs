@@ -33,13 +33,5 @@ This section includes the following topics:
 
 [Using SetupAPI to Uninstall Devices and Driver Packages](using-setupapi-to-uninstall-devices-and-driver-packages.md)
 
-[Using the DIFx Tools to Uninstall Driver Packages](using-the-difx-tools-to-uninstall-driver-packages.md)
-
- 
-
- 
-
-
-
 
 

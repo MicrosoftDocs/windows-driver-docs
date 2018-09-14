@@ -31,6 +31,8 @@ This optional section registers one or more device-specific co-installers suppli
 [install-section-name.CoInstallers] |
 [install-section-name.nt.CoInstallers] | 
 [install-section-name.ntx86.CoInstallers] | 
+[install-section-name.ntarm.CoInstallers] | (Windows 8 and later versions of Windows)
+[install-section-name.ntarm64.CoInstallers] | (Windows 10 version 1709 and later versions of Windows)
 [install-section-name.ntia64.CoInstallers] |  (Windows XP and later versions of Windows)
 [install-section-name.ntamd64.CoInstallers]  (Windows XP and later versions of Windows)
   
@@ -131,7 +133,7 @@ All co-installer files must be copied into the *%SystemRoot%\\system32* director
 
 ### Registering Device-Specific Co-installers
 
-Registering one or more device-specific co-installers requires adding a REG_MULTI_SZ-typed value entry to the registry. Specify an *add-registry-section* referenced by the [**AddReg**](inf-addreg-directive.md) directive, by using the following general form:
+Registering one or more device-specific co-installers requires adding a [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types)-typed value entry to the registry. Specify an *add-registry-section* referenced by the [**AddReg**](inf-addreg-directive.md) directive, by using the following general form:
 
 ```
 [DDInstall.CoInstallers_DeviceAddReg]
@@ -162,7 +164,7 @@ HKLM,System\CurrentControlSet\Control
 
 Each entry in such an add-registry section is listed as a single line within the INF file, and each supplied class co-installer DLL must have a unique name. If the supplied co-installers should be used for more than one [device setup class](device-setup-classes.md), this add-registry section can have more than one entry, each with the appropriate *SetupClassGUID* value.
 
-Such a supplemental device-class co-installer must not replace any already registered co-installers for an existing class installer. Therefore, the class co-installer must have a unique name and the REG_MULTI_SZ-type value supplied must be appended (as indicated by the **8** in the *flags* value **0x0010008**) to the class-specific co-installer entries, if any, already present in the **{***SetupClassGUID***}** subkey.
+Such a supplemental device-class co-installer must not replace any already registered co-installers for an existing class installer. Therefore, the class co-installer must have a unique name and the [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types)-type value supplied must be appended (as indicated by the **8** in the *flags* value **0x0010008**) to the class-specific co-installer entries, if any, already present in the **{***SetupClassGUID***}** subkey.
 
 **Note**  The [SetupAPI](setupapi.md) functions never append a duplicate *DevClssCoInstall***.dll** to a value entry if a co-installer of the same name is already registered.
 

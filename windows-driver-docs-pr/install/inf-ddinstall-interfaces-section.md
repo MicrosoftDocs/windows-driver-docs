@@ -27,6 +27,8 @@ Each per-Models *DDInstall***.Interfaces** section can have one or more [**AddIn
 [install-section-name.Interfaces] |
 [install-section-name.nt.Interfaces] | 
 [install-section-name.ntx86.Interfaces] |
+[install-section-name.ntarm.Interfaces] | (Windows 8 and later versions of Windows)
+[install-section-name.ntarm64.Interfaces] | (Windows 10 version 1709 and later versions of Windows)
 [install-section-name.ntia64.Interfaces] |  (Windows XP and later versions of Windows)
 [install-section-name.ntamd64.Interfaces]  (Windows XP and later versions of Windows)
  

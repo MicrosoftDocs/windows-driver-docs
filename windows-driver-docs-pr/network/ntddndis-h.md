@@ -20,8 +20,8 @@ This section contains kernel mode network driver topics for the Ntddndis.h heade
 
 The Ntddndis.h header contains definitions for constants and types for interfacing with network drivers.
 
-> [!IMPORTANT]
-> This section's topics contains pages for definitions and OIDs that are not part of network driver DDI reference. 
+> [!NOTE]
+> This section's topics contains pages for definitions and OIDs, which are not part of network driver DDI reference. 
 >
 > For DDI reference for this header, see [ntddndis.h header](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis).
 
@@ -325,7 +325,11 @@ The Ntddndis.h header contains definitions for constants and types for interfaci
 * [OID_WWAN_DRIVER_CAPS](oid-wwan-driver-caps.md)
 * [OID_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS](oid-wwan-enumerate-device-service-commands.md)
 * [OID_WWAN_ENUMERATE_DEVICE_SERVICES](oid-wwan-enumerate-device-services.md)
+* [OID_WWAN_LTE_ATTACH_CONFIG](oid-wwan-lte-attach-config.md)
+* [OID_WWAN_LTE_ATTACH_STATUS](oid-wwan-lte-attach-status.md)
 * [OID_WWAN_HOME_PROVIDER](oid-wwan-home-provider.md)
+* [OID_WWAN_MPDP](oid-wwan-mpdp.md)
+* [OID_WWAN_NETWORK_BLACKLIST](oid-wwan-network-blacklist.md)
 * [OID_WWAN_NETWORK_IDLE_HINT](oid-wwan-network-idle-hint.md)
 * [OID_WWAN_PACKET_SERVICE](oid-wwan-packet-service.md)
 * [OID_WWAN_PCO](oid-wwan-pco.md)
@@ -339,6 +343,8 @@ The Ntddndis.h header contains definitions for constants and types for interfaci
 * [OID_WWAN_RADIO_STATE](oid-wwan-radio-state.md)
 * [OID_WWAN_READY_INFO](oid-wwan-ready-info.md)
 * [OID_WWAN_REGISTER_STATE](oid-wwan-register-state.md)
+* [OID_WWAN_SAR_CONFIG](oid-wwan-sar-config.md)
+* [OID_WWAN_SAR_TRANSMISSION_STATUS](oid-wwan-sar-transmission-status.md)
 * [OID_WWAN_SERVICE_ACTIVATION](oid-wwan-service-activation.md)
 * [OID_WWAN_SIGNAL_STATE](oid-wwan-signal-state.md)
 * [OID_WWAN_SLOT_INFO](oid-wwan-slot-info-status.md)

@@ -298,13 +298,13 @@ HKR,,TypesSupported,0x00010001,7
 
 In particular, the section adds two value entries in the registry subkey created for the device/driver, as follows:
 
--   The value entry named **EventMessageFile** is of type REG_EXPAND_SZ, as specified by the FLG_ADDREG_TYPE_EXPAND_SZ value **0x00020000**. Its value, enclosed in double quotation marks ("), associates the system-supplied *IoLogMsg.dll* (but it could associate another logging DLL) with the driver binary file. Usually, the paths to each of these files are specified as follows:
+-   The value entry named **EventMessageFile** is of type [REG_EXPAND_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types), as specified by the FLG_ADDREG_TYPE_EXPAND_SZ value **0x00020000**. Its value, enclosed in double quotation marks ("), associates the system-supplied *IoLogMsg.dll* (but it could associate another logging DLL) with the driver binary file. Usually, the paths to each of these files are specified as follows:
 
     *%%SystemRoot%%\\System32\\IoLogMsg.dll*
 
     *%%SystemRoot%%\\System32\\drivers\\driver.sys*
 
--   The value entry named **TypesSupported** is of type REG_DWORD, as specified by the FLG_ADDREG_TYPE_DWORD value **0x00010001**.
+-   The value entry named **TypesSupported** is of type [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types), as specified by the FLG_ADDREG_TYPE_DWORD value **0x00010001**.
 
     For drivers, this value should be **7**. This value is equivalent to the bitwise OR of EVENTLOG_SUCCESS, EVENTLOG_ERROR_TYPE, EVENTLOG_WARNING_TYPE, and EVENTLOG_INFORMATION_TYPE, without setting the EVENTLOG_AUDIT_*XXX* bits.
 

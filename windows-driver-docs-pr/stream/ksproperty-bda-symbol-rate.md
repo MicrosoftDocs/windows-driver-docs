@@ -25,7 +25,7 @@ Clients use KSPROPERTY\_BDA\_SYMBOL\_RATE to control the symbol rate of a demodu
 ## <span id="ddk_ksproperty_bda_symbol_rate_ks"></span><span id="DDK_KSPROPERTY_BDA_SYMBOL_RATE_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -64,7 +64,7 @@ The returned value specifies the symbol rate.
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the demodulator node.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**KSP\_NODE**](https://msdn.microsoft.com/library/windows/hardware/ff566720)

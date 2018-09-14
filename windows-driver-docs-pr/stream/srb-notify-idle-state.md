@@ -43,7 +43,7 @@ When closing the last instance of the device, the class driver sends SRB\_NOTIFY
 
 When the stream class driver sends an SRB\_NOTIFY\_IDLE\_STATE request, the minidriver receives a call to [*StrMiniReceiveDevicePacket*](https://msdn.microsoft.com/library/windows/hardware/ff568463).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**SRB\_GET\_DEVICE\_PROPERTY**](srb-get-device-property.md)

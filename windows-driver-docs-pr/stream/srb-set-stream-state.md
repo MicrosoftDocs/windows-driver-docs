@@ -38,13 +38,13 @@ Indicates that the function is not supported by the minidriver.
 <span id="STATUS_IO_DEVICE_ERROR"></span><span id="status_io_device_error"></span>STATUS\_IO\_DEVICE\_ERROR  
 Indicates that a hardware failure occurred.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 The class driver specifies the new stream state in *pSrb*-&gt;**CommandData**.**StreamState**. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff559702) structure. See [**KSPROPERTY\_CONNECTION\_STATE**](ksproperty-connection-state.md) for a description of stream states.
 
 The minidriver should set the stream to the specified state and return STATUS\_SUCCESS if successful. An appropriate error code should be returned if the operation fails.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [SRB\_GET\_STREAM\_STATE](srb-get-stream-state.md)

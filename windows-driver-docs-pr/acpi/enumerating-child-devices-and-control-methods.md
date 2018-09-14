@@ -9,7 +9,7 @@ keywords:
 - ACPI namespaces WDK
 - ACPI control methods WDK , enumerating
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date:
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,7 +31,7 @@ In an ACPI namespace, an object that is a device--for example, a device named 'A
  _FOO            control method
 ```
 
-To use [**IOCTL\_ACPI\_EVAL\_METHOD\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff536149) or [**IOCTL\_ACPI\_ASYNC\_EVAL\_METHOD\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff536146), a driver for a device supplies the path and name of the control method in an ACPI namespace. To help obtain the path and name of a device and child objects of a device, Windows Server 2008, Windows Vista and later versions of Windows support the [**IOCTL\_ACPI\_ENUM\_CHILDREN**](https://msdn.microsoft.com/library/windows/hardware/ff536147) request. Referring to the simplified ACPI namespace provided in this section as an example, a driver in the device stack of device 'ABCD' can use this request to do the following:
+To use [**IOCTL\_ACPI\_EVAL\_METHOD\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff536149) or [**IOCTL\_ACPI\_ASYNC\_EVAL\_METHOD\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff536146), a driver for a device supplies the path and name of the control method in an ACPI namespace. To help obtain the path and name of a device and child objects of a device, Windows supports the [**IOCTL\_ACPI\_ENUM\_CHILDREN**](https://msdn.microsoft.com/library/windows/hardware/ff536147) request. Referring to the simplified ACPI namespace provided in this section as an example, a driver in the device stack of device 'ABCD' can use this request to do the following:
 
 -   Enumerate device 'ABCD' and the immediate child devices of 'ABCD.' For example, the request can be used to return '\\ABCD,' '\\ABCD.CHL1,' and '\\ABCD.CHL2.'
 
@@ -78,11 +78,3 @@ An array of elements of type ACPI\_ENUM\_CHILD. The **Name** member of an ACPI\_
 If the output buffer that the driver allocates is not large enough to return all the enumerated child names, the ACPI driver returns no child names and sets the **Status** member of the IO\_STATUS\_BLOCK for the request to STATUS\_BUFFER\_OVERFLOW. In this case, if the size, in bytes, of the output buffer is at least **sizeof**(ACPI\_ENUM\_CHILDREN\_OUTPUT\_BUFFER\_SIGNATURE), the ACPI driver also sets **NumberOfChildren** to the size, in bytes, that is required to retrieve the requested paths and names.
 
 For more information about how to enumerate child devices, see [Sending an IOCTL\_ACPI\_ENUM\_CHILDREN Request](sending-an-ioctl-acpi-enum-children-request.md).
-
- 
-
- 
-
-
-
-
