@@ -153,4 +153,4 @@ int __cdecl wmain(int /* argc */, PCWSTR /* argv */ [])
 * [Validating Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/validating-universal-drivers)
 * [OneCore](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows)
 
-<!--API BOILERPLATE: Compiles using onecore_downlevel.lib, but always returns ERROR_CALL_NOT_IMPLEMENTED on non-Desktop OneCore editions.-->
+<!--API BOILERPLATE: Compiles using OneCore.lib but returns ERROR_CALL_NOT_IMPLEMENTED on non-Desktop OneCore editions.-->
