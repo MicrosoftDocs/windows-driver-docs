@@ -22,7 +22,7 @@ ms.technology: windows-devices
 
 This topic summarizes the new features and improvements for Windows Driver Frameworks (WDF) drivers in Windows 10.
 
-Windows 10, version 1809 (Redstone 5) includes Kernel-Mode Driver Framework (KMDF) version 1.27 and User-Mode Driver Framework (UMDF) version 2.27.
+Windows 10 version 1809 (October 2018 Update, Redstone 5) includes Kernel-Mode Driver Framework (KMDF) version 1.27 and User-Mode Driver Framework (UMDF) version 2.27.
 
 You can use these framework versions to build drivers for:
 
