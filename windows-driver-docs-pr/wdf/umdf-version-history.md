@@ -21,9 +21,6 @@ ms.localizationpriority: medium
 
 This topic lists versions of User-Mode Driver Framework (UMDF), the corresponding versions of the Windows operating system, and the changes made in each release.
 
-## UMDF Versions and Operating Systems
-
-
 The following table shows the release history of the UMDF library:
 
 |UMDF version|Release method|Included in this version of Windows|Drivers using it can run on|
@@ -42,7 +39,7 @@ The following table shows the release history of the UMDF library:
 |1.5|Windows Vista WDK|Windows Vista|Windows XP and later|
 
 
-You can use the Windows Driver Kit (WDK) with Microsoft Visual Studio 2015 to build drivers that run on Windows 7 and later.
+You can use the Windows Driver Kit (WDK) with Microsoft Visual Studio 2017 to build drivers that run on Windows 7 and later.
 
 For information about the new features for UMDF drivers in Windows 10, see [What's New for WDF Drivers](index.md).
 
