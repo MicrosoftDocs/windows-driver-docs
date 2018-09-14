@@ -72,10 +72,11 @@ The following example demonstrates the JSON response body returned by a successf
     }
   ],
   "isCommitted": true,
-  "isExtensionInf": false,
+  "isExtensionInf": false, "_comment": "This field is deprecated and moved to submission resource",
   "deviceMetadataIds": [],
   "deviceType": "notSet",
   "isTestSign": false,
+  "isFlightSign": false,  
   "marketingNames": [],
   "productName": "NewDriverHacked",
   "selectedProductTypes": {},

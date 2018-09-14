@@ -29,7 +29,7 @@ This event is sent when a device transform needs input to generate output. Typic
 
  
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 This event will not be handled by device transform manager (DTM) for the following reasons:

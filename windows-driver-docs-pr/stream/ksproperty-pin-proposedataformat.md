@@ -27,7 +27,7 @@ Clients use the KSPROPERTY\_PIN\_PROPOSEDATAFORMAT property to determine if pins
 ## <span id="ddk_ksproperty_pin_proposedataformat_ks"></span><span id="DDK_KSPROPERTY_PIN_PROPOSEDATAFORMAT_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -62,7 +62,7 @@ Clients use the KSPROPERTY\_PIN\_PROPOSEDATAFORMAT property to determine if pins
 Remarks
 -------
 
-[**KSPROPERTY\_TYPE\_GET**](https://msdn.microsoft.com/library/windows/hardware/ff564262) is only supported in Windows 7 and later versions of Windows. This function allows the audio driver to provide information about the default data format on a pin. In Windows Vista **KSPROPERTY\_TYPE\_GET** is *not supported*.
+[**KSPROPERTY\_TYPE\_GET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier) is only supported in Windows 7 and later versions of Windows. This function allows the audio driver to provide information about the default data format on a pin. In Windows Vista **KSPROPERTY\_TYPE\_GET** is *not supported*.
 
 Specify this property using KSP\_PIN, where the member specifies the relevant pin factory.
 
@@ -90,7 +90,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**KSP\_PIN**](https://msdn.microsoft.com/library/windows/hardware/ff566722)

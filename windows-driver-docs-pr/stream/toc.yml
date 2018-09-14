@@ -652,7 +652,7 @@
   href: oem-guidance-on-registry-keys-for-video-stabilization.md
 - name: "Extended camera controls"
   href: standardized-extended-controls-.md
-- name: "Windows Hello camera driver bring up guide"
+- name: "Camera driver bring up guide"
   href: windows-hello-camera-driver-bring-up-guide.md
 - name: "Universal camera driver model for Windows 10"
   href: windows-10-technical-preview-camera-drivers-design-guide.md

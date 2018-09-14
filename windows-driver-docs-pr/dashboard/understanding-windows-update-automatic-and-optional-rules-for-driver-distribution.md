@@ -48,9 +48,9 @@ The first checkbox (**Automatically deliver and install this driver during Windo
 
 |Driver promotions boxes checked|Windows Update (scheduled or via Updates & Security|OS Upgrades|Connect New Device|Device Manager|
 |-|-|-|-|-|
-|Automatic only|Yes|No|Yes|Yes|
+|Automatic only|Yes|No|Only if the local driver is generic/ missing.|Yes|
 |Dynamic Update only|Only if the local driver is generic/ missing, and WU has no applicable **Automatic** driver|Yes|Only if the local driver is generic/ missing, and WU has no applicable **Automatic** driver|Yes|
-|Both|Yes|Yes|Yes|Yes|
+|Both|Yes|Yes|Only if the local driver is generic/ missing.|Yes|
 |Neither|Only if the local driver is generic/ missing, and WU has no applicable **Automatic** driver|No|Only if the local driver is generic/ missing, and WU has no applicable **Automatic** driver|Yes|
 
 <!--use word generic? or just condense descriptive text?-->

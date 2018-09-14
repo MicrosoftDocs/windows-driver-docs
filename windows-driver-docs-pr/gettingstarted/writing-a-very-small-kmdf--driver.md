@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 This topic describes how to write a very small [Universal Windows driver](https://msdn.microsoft.com/windows-drivers/develop/getting_started_with_universal_drivers) using Kernel-Mode Driver Framework (KMDF). 
 
-To get started, be sure you have [Microsoft Visual Studio 2015](https://go.microsoft.com/fwlink/p/?LinkId=698539) and the [Windows Driver Kit (WDK) 10](https://go.microsoft.com/fwlink/p/?LinkId=733614) installed.
+To get started, be sure you have [Microsoft Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=698539), the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk), and the [Windows Driver Kit (WDK)](https://go.microsoft.com/fwlink/p/?LinkId=733614) installed.
 
 [Debugging Tools for Windows](http://go.microsoft.com/fwlink/p?linkid=223405) is included when you install the WDK.
 
@@ -234,6 +234,10 @@ Next, you'll build your driver.
     -   KmdfHelloWorld.sys -- the kernel-mode driver file
     -   KmdfHelloWorld.inf -- an information file that Windows uses when you install the driver
     -   KmdfHelloWorld.cat -- a catalog file that the installer uses to verify the test signature for the driver package
+
+
+> [!TIP]
+> If you see `DriverVer set to a date in the future` when building your driver, change your driver package project settings so that Inf2Cat sets `/uselocaltime`. To do so, use **Configuration Properties->Inf2Cat->General->Use Local Time**. Now both [Stampinf](../devtest/stampinf-command-options.md) and Inf2Cat use local time.
 
 ## <span id="Deploy_the_driver"></span><span id="deploy_the_driver"></span><span id="DEPLOY_THE_DRIVER"></span>Deploy the driver
 

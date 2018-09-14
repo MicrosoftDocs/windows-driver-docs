@@ -12,7 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 9/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -21,11 +21,9 @@ ms.localizationpriority: medium
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_METADATA
 
+This extended property control is used by the client to query the driver for the metadata buffer requirements. It is sent to the driver along with a standard [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure followed by a [**KSCAMERA\_EXTENDEDPROP\_METADATAINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_metadatainfo) structure.
 
-This extended property control is used by the client to query the driver for the metadata buffer requirements. It is sent to the driver along with a standard [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925136) structure followed by a [**KSCAMERA\_EXTENDEDPROP\_METADATAINFO**](https://msdn.microsoft.com/library/windows/hardware/dn925144) structure.
-
-## <span id="Usage_summary_table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage summary table
-
+## Usage summary table
 
 <table>
 <colgroup>
@@ -49,8 +47,6 @@ This extended property control is used by the client to query the driver for the
 </tbody>
 </table>
 
- 
-
 The following are metadata flags that can be placed in the **KSCAMERA\_EXTENDEDPROP\_HEADER.Flags** field.
 
 ``` syntax
@@ -64,11 +60,11 @@ In a **Get** call, the driver does the following:
 
 2.  Fill KSCAMERA\_EXTENDEDPROP\_HEADER.Flags with a combination of any of the above KSCAMERA\_EXTENDEDPROP\_METADATA\_*XXX* flags to indicate the metadata memory requirements.
 
-3.  Fill KSCAMERA\_EXTENDEDPROP\_METADATAINFO.BufferAlignment with the desired memory alignment (KSCAMERA\_EXTENDEDPROP\_MetadataAlignment\_*Xxx*). See the [**KSCAMERA\_EXTENDEDPROP\_MetadataAlignment**](https://msdn.microsoft.com/library/windows/hardware/dn925140) for possible values.
+3.  Fill KSCAMERA\_EXTENDEDPROP\_METADATAINFO.BufferAlignment with the desired memory alignment (KSCAMERA\_EXTENDEDPROP\_MetadataAlignment\_*Xxx*). See the [**KSCAMERA\_EXTENDEDPROP\_MetadataAlignment**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ne-ksmedia-kscamera_extendedprop_metadataalignment) for possible values.
 
 4.  Fill **KSCAMERA\_EXTENDEDPROP\_METADATAINFO.MaxMetadataBufferSize** with the required metadata buffer size in bytes.
 
-The table below contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925136) structure fields when using the metadata control.
+The table below contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the metadata control.
 
 <table>
 <colgroup>
@@ -92,7 +88,7 @@ The table below contains the descriptions and requirements for the [**KSCAMERA\_
 </tr>
 <tr class="odd">
 <td><p>Size</p></td>
-<td><p>This must be sizeof(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>)+sizeof([<strong>KSCAMERA_EXTENDEDPROP_METADATAINFO</strong>](https://msdn.microsoft.com/library/windows/hardware/dn925144)),</p></td>
+<td><p>This must be sizeof(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>)+sizeof([<strong>KSCAMERA_EXTENDEDPROP_METADATAINFO</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_metadatainfo)),</p></td>
 </tr>
 <tr class="even">
 <td><p>Result</p></td>
@@ -109,10 +105,7 @@ The table below contains the descriptions and requirements for the [**KSCAMERA\_
 </tbody>
 </table>
 
- 
-
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -126,12 +119,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

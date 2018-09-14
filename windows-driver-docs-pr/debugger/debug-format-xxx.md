@@ -2,7 +2,7 @@
 title: DEBUG\_FORMAT\_XXX
 description: The DEBUG_FORMAT_XXX bit-flags are used by WriteDumpFile2 and WriteDumpFileWide to determine the format of a crash dump file and, for user-mode Minidumps, what information to include in the file.
 ms.author: domars
-ms.date: 08/10/2018
+ms.date: 08/20/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -126,7 +126,7 @@ The following bit-flags apply to all crash dump files.
 <p>DEBUG_FORMAT_USER_SMALL_FILTER_TRIAGE</p>
 </td>
 <td>
-<p>This format is used to triage.</p>
+<p>This format is used to filter out any data that is not a pointer to other data captured in the dump. The flag can be used to reduce the amount of private data present in the dump while still allowing crashes to be diagnosed.</p>
 </td>
 </tr>
 <tr>

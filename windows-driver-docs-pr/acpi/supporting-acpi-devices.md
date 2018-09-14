@@ -13,7 +13,7 @@ keywords:
 - function drivers WDK ACPI
 - WDM function drivers WDK ACPI
 ms.author: windowsdriverdev
-ms.date: 01/24/2018
+ms.date:
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 # Supporting ACPI Devices
 
 
-This section describes how a vendor can use a WDM function driver in Microsoft Windows 2000 and later versions of Windows to enhance the functionality of an Advanced Configuration and Power Interface (ACPI) device.
+This section describes how a vendor can use a WDM function driver in Windows to enhance the functionality of an Advanced Configuration and Power Interface (ACPI) device.
 
 ACPI devices include low-level system devices such as batteries, thermal zones, and other devices defined in a system's ACPI namespace. An ACPI namespace is a hierarchical namespace that an ACPI BIOS uses to reference objects.
 
@@ -54,12 +54,3 @@ The following topics describe how to supply a function driver for an ACPI device
 For information about the system-supplied support routines that support ACPI device function drivers, see [ACPI Operation Region Handler Reference](https://msdn.microsoft.com/library/windows/hardware/ff536132).
 
 For more information about ACPI devices and namespaces, see the [Advanced Configuration and Power Interface (ACPI) Specification](https://go.microsoft.com/fwlink/p/?linkid=866846).
-
- 
-
- 
-
-
-
-
-

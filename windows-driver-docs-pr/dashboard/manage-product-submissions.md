@@ -1,6 +1,6 @@
 ---
-title: 
-description: 
+title: Manage product submissions
+description: Manage hardware dashboard submissions for your products and get them signed by Microsoft
 author: balapv
 ms.author: balapv
 ms.date: 04/05/2018
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Manage Product Submissions
 
-Use the following methods in *Microsoft Hardware APIs* to manage submissions for your products and for getting them signed by Microsoft. For an introduction to Microsoft Hardware APIs, including prerequisites for using the API, see [Manage hardware submissions using APIs](dashboard-api.md).
+Use the following methods in *Microsoft Hardware APIs* to manage submissions for your products and for getting them signed by Microsoft. For an introduction to Microsoft Hardware APIs, including prerequisites for using the API, see [Hardware dashboard API](dashboard-api.md).
 
 ```
 https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/

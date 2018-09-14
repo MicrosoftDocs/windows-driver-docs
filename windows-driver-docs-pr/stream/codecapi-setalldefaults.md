@@ -50,17 +50,17 @@ The CODECAPI\_SETALLDEFAULTS property is used to reset all the internal settings
 
 A set to this property set is a trigger that the device should reset all of its settings to their defaults.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 The minidriver should cache its entire list of changed parameters for [CODECAPI\_CURRENTCHANGELIST](codecapi-currentchangelist.md) when this property is set.
 
-### <span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
+### Requirements
 
 **Headers:** Declared in *ksmedia.h*. Include *ksmedia.h*.
 
-### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
+### See Also
 
-[**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262)
+[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
  
 

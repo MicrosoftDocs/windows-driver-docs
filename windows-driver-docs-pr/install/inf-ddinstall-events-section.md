@@ -30,8 +30,10 @@ Each per-Models *DDInstall***.Events** section contains one or more [**INF AddEv
 [install-section-name.nt.Events] |
 [install-section-name.ntx86.Events] |
 [install-section-name.ntia64.Events] |
-[install-section-name.ntamd64.Events]
- 
+[install-section-name.ntamd64.Events] |
+[install-section-name.ntarm.Events] |
+[install-section-name.ntarm64.Events] |
+
 AddEventProvider={ProviderGUID},event-provider-install-section
 [Include=filename.inf[,filename2.inf]...]
 [Needs=inf-section-name[,inf-section-name]...] 
