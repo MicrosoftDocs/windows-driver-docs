@@ -79,14 +79,20 @@ The app developer can continue developing an app with custom capabilities in dev
 
 ## Add a custom capability to the App Package Manifest
 
-Next, modify the app [package manifest](https://msdn.microsoft.com/library/windows/apps/BR211474) to include a capabilities attribute:
+Next, modify your [app package manifest](https://msdn.microsoft.com/library/windows/apps/BR211474) source file (`Package.appxmanifest`) to include a capabilities attribute.
 
 ```xml
+<?xml version="1.0" encoding="utf-8"?>
+<Package
+  ...
+  xmlns:uap4="http://schemas.microsoft.com/appx/manifest/uap/windows10/4">
+...
 <Capabilities>
-	<uap4:CustomCapability Name=”CompanyName.customCapabilityName_Publisher ID” />
+    <uap4:CustomCapability Name="CompanyName.customCapabilityName_PublisherID"/>
 </Capabilities>
-
+</Package>
 ```
+
 Then copy the SCCD file to the package root of the appx package. In Visual Studio's solution explorer, right-click on “project-&gt; Add -&gt; Existing Item…” to add the SCCD to your project.
 
 ![Adding an SCCD file into the appx package](images/addSCCDToAppx.png)
