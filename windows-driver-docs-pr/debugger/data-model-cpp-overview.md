@@ -2,7 +2,7 @@
 title: Debugger Data Model C++ Interfaces Overview
 description: This topic provides an overview of the Debugger Data Model C++ Interfaces to extend and customize the capabilities of the debugger.
 ms.author: domars
-ms.date: 08/15/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -80,6 +80,8 @@ The following diagram summarizes the major elements of the debugger data model a
 
 
 ### Object Model
+
+At the center of the Debugger Data Model is a uniform object representation in which everything is an instance of the IModelObject interface.  While such an object may represent an intrinsic (e.g.: an integer value) or another data model interface, it often represents a dynamic object – a dictionary of key/value/metadata tuples and a set of concepts which describe abstract behaviors.   
 
 This diagram shows how the IModelObject uses Key Stores to contain values that a provider can create, register and manipulate.
 
