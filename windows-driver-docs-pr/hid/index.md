@@ -18,11 +18,7 @@ ms.technology: windows-devices
 # HID drivers
 
 
-This section introduces Human Interface Devices (or HID). Typically, these are devices that humans use to directly control the operation of computer systems.
-
-The definition of HID started as a device class over USB. The goal at that time was to define a replacement to PS/2 and create an interface over USB, allowing the creation of a generic driver for HID devices like keyboards, mice, and game controllers. Prior to HID, devices had to conform to strictly defined protocols for mice and keyboards. All hardware innovations necessitated overloading the use of data in an existing protocol, or the creation of non-standard hardware that needed its own drivers. The vision of HID started with finding a way for providing basic support for these “boot mode” devices in the operating system, but still allowing hardware vendors to provide differentiation with extensible, standardized and easily programmable interfaces.
-
-Today, HID devices include: alphanumeric displays, barcode readers, volume controls on speakers/headsets, auxiliary displays, sensors, and MRI’s (yes, in hospitals). In addition, many hardware vendors use HID for their proprietary devices.
+This section introduces Human Interface Devices (or HID). For more information about HID concepts, see the official [HID specification](http://www.usb.org/developers/hidpage/HID1_11.pdf). 
 
 ## In this section
 

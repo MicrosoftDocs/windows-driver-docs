@@ -14,6 +14,11 @@ The Hardware Dev Center Dashboard lets you to digitally sign [Local Security Aut
 
 
 > [!IMPORTANT]
+
+> Use the file-signing technique described in this topic for **UEFI** and **LSA** signing. 
+> For information about **driver** signing, see [Hardware submissions](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/hardware-certification-submissions).
+
+> [!IMPORTANT]
 > * File signing requires an [extended validation (EV) code signing certificate](get-a-code-signing-certificate.md).
 
 > * All LSA and UEFI submissions must be a single, signed CAB library file, and contain all files required for signing. 
@@ -22,6 +27,8 @@ The Hardware Dev Center Dashboard lets you to digitally sign [Local Security Aut
 > * UEFI FIRMWARE ONLY - The CAB file signature must match the [Authenticode certificate](https://docs.microsoft.com/windows-hardware/drivers/install/authenticode) for your organization.
 >   * Depending on your certificate provider, you may need to use [SignTool](https://msdn.microsoft.com/library/windows/desktop/aa387764) or an external process.
 >   * EFI ByteCode (EBC) files must be compiled using the /ALIGN:32 flag for processing to succeed.
+
+>* UEFI FIRMWARE ONLY - If your submission is a shim, you must submit a completed template for review to the shim review board. The shim review process is described at https://github.com/rhboot/shim-review/.
 
 > * LSA PLUGINS ONLY - The CAB file signature must match the EV code signing certificate for your organization. 
 

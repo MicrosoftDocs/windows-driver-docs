@@ -51,7 +51,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**BDA\_CHANGE\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff556518)
