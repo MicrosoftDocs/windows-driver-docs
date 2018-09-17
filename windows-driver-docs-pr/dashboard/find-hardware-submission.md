@@ -87,7 +87,7 @@ Search results displayed on the dashboard list the driver submissions that match
 
 In the results, click the **Private Product ID** to navigate to that driver's overview page. There, you can view information about the driver's submission; updating the submission through the [DUA process](https://docs.microsoft.com/windows-hardware/test/hlk/user/create-a-driver-only-update-package); and viewing, creating, and editing shipping labels or download signed files.
 
-## Important Points
+### Important Points
 
 1. You can use a given parameter only once in a keyword search. For example, searching for (**@ProductName:"test*" @ProductName:"system"**) causes an error.
 
@@ -100,3 +100,21 @@ In the results, click the **Private Product ID** to navigate to that driver's ov
 5. By default, search results are sorted by descending order of **Submission Created Date**. You can click any of the column title fields to change the sorting.
 
 6. To search for product names or hardware ID, use the full search string. If you need to use a wildcard operator for these fields, avoid special characters (characters that are not letters or numbers).
+## Update an HCK hardware submission using the Driver Update Acceptable (DUA) process
+
+See [Create a driver only update package](https://docs.microsoft.com/windows-hardware/test/hlk/user/create-a-driver-only-update-package).
+
+## Registering an ExtensionId
+
+When you submit an extension INF to be signed, the dashboard checks if the specified **ExtensionId** was previously registered with a different account.
+If it was, you'll see a message prompting you to provide a different ID. If not, the dashboard associates it with your account.
+
+For more information about specifying **ExtensionId**, see [Using an extension INF file](https://docs.microsoft.com/windows-hardware/drivers/install/using-an-extension-inf-file). 
+
+Note that in your submissions, you may only use ExtensionIDs that are registered to your account. 
+
+## Related topics
+
+   *  [Create a new hardware submission](create-a-new-hardware-submission.md)
+   *  [Get drivers signed by Microsoft for multiple Windows versions](get-drivers-signed-by-microsoft-for-multiple-windows-versions.md)
+   *  [Driver flighting](driver-flighting.md)
