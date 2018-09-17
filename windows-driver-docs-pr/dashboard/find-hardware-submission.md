@@ -22,7 +22,7 @@ All hardware submissions that have been submitted by your organization are displ
 
 You can enter any search phrase in the text box. The dashboard returns entries with a word matching the phrase in any of these fields:
 
-- product ID
+- product ID (private & shared)
 
 - submission ID
 
@@ -34,7 +34,7 @@ You can enter any search phrase in the text box. The dashboard returns entries w
 
 - INF name
 
-- certification type
+- operating System code
 
 For example, the search phrase **mydriver** returns submissions with the product name *mydriver 1*, *new mydriver*, and *old mydriver 2*, but it will not return a result for *mydriver1* or *mydriver_new*.
 
@@ -42,7 +42,7 @@ You can use the wildcard operator (\*) as a suffix in the search phrase to find 
 
 ## Keyword Search
 
-You can search for drivers by driver attributes using the keyword search. When you type an ampersand (**\@**) in the search box, the dashboard displays a list of the usable attributes. 
+You can search for drivers by driver attributes using the keyword search. When you type an at sign (**\@**) in the search box, the dashboard displays a list of the usable attributes. 
 
 ![Screenshot of the Drivers page in the hardware dashboard, with an ampersand entered into the text box. A list of available attributes shows under the ampersand.](images\ampersand-search.png)
 
