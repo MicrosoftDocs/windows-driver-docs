@@ -104,9 +104,9 @@ In order to use the APIs to download driver submission failure data in a secure 
 
 You can find this information in the dashboard view of your Azure AD app, in the Registered App pane, the Properties pane, and the panes for Required permissions and Enable Access. The following screenshots show where the data is found.
 
-![Screenshot of the Registered app, Settings, and Properties panes](\images\app-settings.png)
+![Screenshot of the Registered app, Settings, and Properties panes](./images/app-settings.png)<br/>
 
-![Screenshot of the Required permissions and Enable Access panes](\images\permissions-access.png)
+![Screenshot of the Required permissions and Enable Access panes](./images/permissions-access.png)
 
 For help and answers to questions about secure data sharing, mail Microsoft Store Partner Operations, [partnerops@microsoft.com](mailto:partnerops@microsoft.com)
 
