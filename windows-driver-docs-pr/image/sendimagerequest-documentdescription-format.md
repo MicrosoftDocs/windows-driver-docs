@@ -49,7 +49,7 @@ Single-page TIFF file with g4 compression type.
 Single-page TIFF file with g3mh compression type.
 
 <span id="tiff-single-jpeg-tn2"></span><span id="TIFF-SINGLE-JPEG-TN2"></span>**tiff-single-jpeg-tn2**  
-Single-page TIFF file with jpeg compression type, as described in [Technical Note 2](http://go.microsoft.com/fwlink/p/?linkid=70143).
+Single-page TIFF file with jpeg compression type.
 
 <span id="tiff-multi-uncompressed"></span><span id="TIFF-MULTI-UNCOMPRESSED"></span>**tiff-multi-uncompressed**  
 Multiple-page TIFF file with no compression type.
@@ -61,18 +61,9 @@ Multiple-page TIFF file with g4 compression type.
 Multiple-page TIFF file with g3mh compression type.
 
 <span id="tiff-multi-jpeg-tn2"></span><span id="TIFF-MULTI-JPEG-TN2"></span>**tiff-multi-jpeg-tn2**  
-Multiple-page TIFF file with jpeg compression type, as described in [Technical Note 2](http://go.microsoft.com/fwlink/p/?linkid=70143).
+Multiple-page TIFF file with jpeg compression type.
 
 <span id="xps"></span><span id="XPS"></span>**xps**  
 XML Paper Specification (XPS) document.
 
 This element has no child elements.
-
- 
-
- 
-
-
-
-
-

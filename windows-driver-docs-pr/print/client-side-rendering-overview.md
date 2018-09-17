@@ -15,8 +15,7 @@ ms.localizationpriority: medium
 
 # Client-Side Rendering Overview
 
-
-On Windows Vista, [Point and Print](introduction-to-point-and-print.md) loads the printer driver onto the client computer as in previous versions of the Windows operating system. Client-side rendering, which is enabled by default on Windows Vista, causes the printer driver to render the print job to the Page Description Language (PDL) that the printer uses instead of to the Enhanced Metafile (EMF) format or XML Paper Specification (XPS) format that the printer driver uses. The RAW-format PDL is then sent to the print server for queuing and printing by the new functionality in the print spooler.
+[Point and Print](introduction-to-point-and-print.md) loads the printer driver onto the client computer as in previous versions of the Windows operating system. Client-side rendering causes the printer driver to render the print job to the Page Description Language (PDL) that the printer uses instead of to the Enhanced Metafile (EMF) format or XML Paper Specification (XPS) format that the printer driver uses. The RAW-format PDL is then sent to the print server for queuing and printing by the new functionality in the print spooler.
 
 In addition to moving the processing load of print-job rendering from the print server to the client computer, client-side rendering also offers these advantages to the user:
 
@@ -27,11 +26,3 @@ In addition to moving the processing load of print-job rendering from the print 
 -   Offline printing is supported.
 
     An end-user can now spool a print job to a remote printer even if they are not connected to the print server that hosts the printer. The client-side rendering feature makes it possible for a user to spool and render a print job locally. When the client computer can establish a connection to the print spooler, the rendered print job is automatically sent to the print server for printing.
-
- 
-
- 
-
-
-
-

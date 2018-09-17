@@ -5,7 +5,7 @@ ms.assetid: 4f617665-4cc4-475d-ae66-abc2f00309fd
 keywords:
 - XpsAnalyzer WDK , rules
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 9/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,10 +14,9 @@ ms.localizationpriority: medium
 
 # XpsAnalyzer Rules
 
+The following table describes the rules that the XpsAnalysis tool uses to analyze XPS files. These rules are based on the XML Paper Specification (XPS) 1.0 specification. For more information about this specification, doiwnload the [XML Paper Specification](http://download.microsoft.com/download/1/6/a/16acc601-1b7a-42ad-8d4e-4f0aa156ec3e/XPS_1_0.exe).
 
-The following table describes the rules that the XpsAnalysis tool uses to analyze XPS files. These rules are based on the XML Paper Specification (XPS) 1.0 specification. For more information about this specification, see [XML Paper Specification](https://msdn.microsoft.com/library/windows/hardware/gg463431).
-
-### <span id="open_packaging_conventions__opc__rules"></span><span id="OPEN_PACKAGING_CONVENTIONS__OPC__RULES"></span>Open Packaging Conventions (OPC) Rules
+## Open Packaging Conventions (OPC) Rules
 
 <table>
 <colgroup>
@@ -86,9 +85,7 @@ The following table describes the rules that the XpsAnalysis tool uses to analyz
 </tbody>
 </table>
 
- 
-
-### <span id="xps_trunk_rules"></span><span id="XPS_TRUNK_RULES"></span>XPS Trunk Rules
+## XPS Trunk Rules
 
 <table>
 <colgroup>
@@ -159,7 +156,7 @@ The following table describes the rules that the XpsAnalysis tool uses to analyz
 
  
 
-### <span id="xps_page_rules"></span><span id="XPS_PAGE_RULES"></span>XPS Page Rules
+## XPS Page Rules
 
 <table>
 <colgroup>
@@ -1013,9 +1010,7 @@ The following table describes the rules that the XpsAnalysis tool uses to analyz
 </tbody>
 </table>
 
- 
-
-### <span id="digital_signature_rules"></span><span id="DIGITAL_SIGNATURE_RULES"></span>Digital Signature Rules
+## Digital Signature Rules
 
 <table>
 <colgroup>
@@ -1084,9 +1079,7 @@ The following table describes the rules that the XpsAnalysis tool uses to analyz
 </tbody>
 </table>
 
- 
-
-### <span id="miscellaneous_rules"></span><span id="MISCELLANEOUS_RULES"></span>Miscellaneous Rules
+## Miscellaneous Rules
 
 <table>
 <colgroup>
@@ -1109,14 +1102,3 @@ The following table describes the rules that the XpsAnalysis tool uses to analyz
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-
