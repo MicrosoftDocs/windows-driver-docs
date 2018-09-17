@@ -109,7 +109,7 @@ The XPSDrv filter follows these steps to create an XPS rasterizer object:
 
 When the XPS rasterizer object is no longer needed, the filter should release the object by calling the **Release** method on the object's **IXpsRasterizer** interface. For an example implementation of an XPSDrv filter that uses the XPS rasterization service, see the XpsRasFilter sample driver in the WDK.
 
-For use with XPS Rasterization Service, canvases and visual brushes within a fixed page can be nested up to a limit of 64 levels. For more information about canvases and visual brushes, see the [XML Paper Specification](https://msdn.microsoft.com/library/windows/hardware/gg463431).
+For use with XPS Rasterization Service, canvases and visual brushes within a fixed page can be nested up to a limit of 64 levels. For more information about canvases and visual brushes, download the [XML Paper Specification](http://download.microsoft.com/download/1/6/a/16acc601-1b7a-42ad-8d4e-4f0aa156ec3e/XPS_1_0.exe).
 
 ### Bitmap Resolution and Pixel Format
 
@@ -137,11 +137,3 @@ If you have a computer that is running Windows 8 with a WDDM 1.2 display driver
 -   Call the [**RasterizeRect**](https://msdn.microsoft.com/library/windows/hardware/ff556365) method with consistent rectangle dimensions. If this is not possible, it is optimal to provide **RasterizeRect** with the largest required rectangle size on the first invocation, and ask for smaller rectangle sizes on subsequent calls.
 -   Use anti-aliasing only when it is absolutely required. Aliased text and vectors look the same as their anti-aliased counterparts, when the DPI value provided to the [**IXpsRasterizationFactory::CreateRasterizer**](https://msdn.microsoft.com/library/windows/hardware/ff556350) method is considerably high. For example, a DPI value greater than 200DPI is considered to be high. Testing should be done to ensure that output quality on a given device is sufficient when using aliased text and vectors along with a high DPI.
 -   If a document can be manipulated prior to rasterizing the IXpsOMPage, then subsetting fonts and using resource dictionaries for elements repeated on several pages will improve XPSRas performance.
-
-
-
-
-
-
-
-
