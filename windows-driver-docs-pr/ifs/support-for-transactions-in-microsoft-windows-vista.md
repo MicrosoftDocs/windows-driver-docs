@@ -10,6 +10,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Support for Transactions in Microsoft Windows Vista
@@ -22,6 +23,5 @@ On Windows Vista, there is currently no support for transactions for network min
  
 
 
---------------------
 
 

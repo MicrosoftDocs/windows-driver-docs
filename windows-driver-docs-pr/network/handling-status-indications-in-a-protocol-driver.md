@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Status Indications in a Protocol Driver
 
 
-## <a href="" id="ddk-handling-status-indications-in-a-protocol-driver-ng"></a>
+
 
 
 Protocol drivers must supply a [**ProtocolStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff570270) function that NDIS calls when an underlying driver reports status.

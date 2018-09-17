@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # UEFI battery charging protocol
@@ -47,6 +48,5 @@ The Windows boot flow requires the battery to be charged to a certain level befo
  
 
 
---------------------
 
 

@@ -12,6 +12,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Querying Offloaded State
@@ -19,7 +20,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-querying-offloaded-state-ng"></a>
+
 
 
 The Querying Offloaded State section describes the process of querying offloaded TCP chimney state. The host stack can query constant, cached, and delegated state.

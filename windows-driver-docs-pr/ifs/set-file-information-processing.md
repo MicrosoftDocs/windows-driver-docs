@@ -12,6 +12,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Set File Information Processing
@@ -27,6 +28,5 @@ The I/O manager executes some additional checks for a subset of the information 
  
 
 
---------------------
 
 

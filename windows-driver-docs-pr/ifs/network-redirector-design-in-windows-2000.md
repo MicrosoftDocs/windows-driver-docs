@@ -15,6 +15,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Network Redirector Design in Windows 2000
@@ -50,6 +51,5 @@ The RDBSS model was introduced with Windows 2000. This same model is also used 
  
 
 
---------------------
 
 

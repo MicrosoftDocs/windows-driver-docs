@@ -2,19 +2,18 @@
 title: Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually
 description: Debugging Tools for Windows supports kernel debugging over a USB 3.0 cable. This topic describes how to set up USB 3.0 debugging manually.
 ms.assetid: 9A9F5DA0-B98A-4C19-A723-67D06B2409B5
-ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.author: domars
+ms.date: 07/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually
 
 
 Debugging Tools for Windows supports kernel debugging over a USB 3.0 cable. This topic describes how to set up USB 3.0 debugging manually.
-
-As an alternative to setting up USB 3.0 debugging manually, you can do the setup using Microsoft Visual Studio. For more information, see [Setting Up Kernel-Mode Debugging over a USB 3.0 Cable in Visual Studio](setting-up-a-usb-3-0-cable-connection-in-visual-studio.md).
 
 The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*.
 
@@ -57,6 +56,11 @@ Debugging over a USB 3.0 cable requires the following hardware:
     ```
 
 5.  After you have identified an xHCI controller that supports debugging, the next step is to locate the physical USB connector that is associated with a port on the xHCI controller. To find the physical connector, plug any USB 3.0 device into any USB connector on the target computer. Refresh UsbView to see where your device is located. If UsbView shows your device connected to your chosen xHCI host controller, then you have found a physical USB connector that you can use for USB 3.0 debugging.
+
+> [!IMPORTANT]
+> Before using bcdedit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC. 
+> You can re-enable Secure Boot once you’re done debugging and you’ve disabled kernel debugging.  
+
 
 6.  On the target computer, open a Command Prompt window as Administrator, and enter these commands:
 
@@ -126,7 +130,6 @@ When you have finished using the xHCI host controller for debugging, enable sele
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Setting%20Up%20Kernel-Mode%20Debugging%20over%20a%20USB%203.0%20Cable%20Manually%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_BATTERY\_CHARGING\_COMPLETION\_TOKEN
@@ -48,6 +49,5 @@ EFI\_BATTERY\_CHARGING\_COMPLETION\_TOKEN is returned in the *CompletionToken* p
 [EFI\_BATTERY\_CHARGING\_PROTOCOL.ChargeBattery](efi-battery-charging-protocolchargebattery.md)  
 [EFI\_BATTERY\_CHARGING\_STATUS](efi-battery-charging-status.md)  
 
---------------------
 
 

@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # User experience for UEFI firmware updates
@@ -47,6 +48,5 @@ The firmware update UX needs to display from the time UpdateCapsule() is called 
 ## Related topics
 [Boot screen components](boot-screen-components.md)  
 
---------------------
 
 

@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USB\_SUPERSPEED\_DEVICE\_INFO
@@ -54,6 +55,5 @@ The **EFI\_USB\_CONFIG\_DESCRIPTOR** structure is defined in the UEFI specificat
  
 
 
---------------------
 
 

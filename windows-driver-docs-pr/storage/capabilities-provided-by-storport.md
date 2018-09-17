@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Capabilities Provided by Storport
@@ -81,6 +82,5 @@ For a complete list of the library routines that Storport makes available to Sto
  
 
 
---------------------
 
 

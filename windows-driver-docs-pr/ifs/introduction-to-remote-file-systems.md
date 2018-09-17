@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to Remote File Systems
@@ -58,6 +59,5 @@ This section contains the following topic:
  
 
 
---------------------
 
 

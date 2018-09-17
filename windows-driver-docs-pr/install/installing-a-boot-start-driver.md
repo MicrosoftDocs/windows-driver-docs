@@ -17,12 +17,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing a Boot-Start Driver
 
 
-## <a href="" id="ddk-installing-a-boot-driver-dg"></a>
+
 
 
 A [*boot-start driver*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-boot-start-driver) is a driver for a device that must be installed to start the Microsoft Windows operating system. Most boot-start drivers are included "in-the-box" with Windows, and Windows automatically installs these boot-start drivers during the text-mode setup phase of Windows installation. If a boot-start driver for a device is not included "in-the-box" with Windows, a user can install an additional vendor-supplied boot-start driver for the device during text-mode setup.

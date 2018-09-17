@@ -18,6 +18,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filtering IRPs and Fast I/O
@@ -48,6 +49,5 @@ This section covers the following topics:
  
 
 
---------------------
 
 

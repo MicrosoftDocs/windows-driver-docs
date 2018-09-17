@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filter-Centric Processing
 
 
-## <a href="" id="ddk-filter-centric-processing-ksg"></a>
+
 
 
 If a filter uses filter-centric processing, then by default AVStream calls the minidriver-supplied [*AVStrMiniFilterProcess*](https://msdn.microsoft.com/library/windows/hardware/ff556315) callback routine when there are data frames available on each pin instance. Minidrivers can modify this default behavior by setting the **Flags** member of the [**KSPIN\_DESCRIPTOR\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff563534) structure.
@@ -37,7 +38,7 @@ AVStream calls [*AVStrMiniFilterProcess*](https://msdn.microsoft.com/library/win
 
 In the [*AVStrMiniFilterProcess*](https://msdn.microsoft.com/library/windows/hardware/ff556315) callback routine, the minidriver receives a pointer to an array of [**KSPROCESSPIN\_INDEXENTRY**](https://msdn.microsoft.com/library/windows/hardware/ff564260) structures. AVStream orders the array of KSPROCESSPIN\_INDEXENTRY structures by pin ID.
 
-The following code examples illustrate how to use the process pin structures. The code is taken from the [AVStream Filter-Centric Simulated Capture Driver (Avssamp)](http://go.microsoft.com/fwlink/p/?linkid=256084) sample, which demonstrates how to write a filter-centric capture driver. Source code and a description of this sample are included in the MSDN Code Gallery.
+The following code examples illustrate how to use the process pin structures. The code is taken from the [AVStream Filter-Centric Simulated Capture Driver (Avssamp)](http://go.microsoft.com/fwlink/p/?linkid=256084) sample, which demonstrates how to write a filter-centric capture driver. Source code and a description of this sample are included in the Windows Driver Kit samples download.
 
 The minidriver receives an array of KSPROCESSPIN\_INDEXENTRY structures in its filter process dispatch. In this example, the minidriver extracts the first KSPROCESSPIN structure from the KSPROCESSPIN\_INDEXENTRY structure of index VIDEO\_PIN\_ID:
 
@@ -87,7 +88,5 @@ Most minidrivers that use filter-centric processing use the stream pointer only 
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20Filter-Centric%20Processing%20%20RELEASE:%20%288/23/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

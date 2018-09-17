@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Static Driver Verifier General Tool and Technical Limitations
@@ -18,15 +19,15 @@ ms.technology: windows-devices
 
 SDV has the following general limitations:
 
--   SDV verifies only one driver at a time and the driver must follow one of these driver models: WDM, KMDF, NDIS, or Storport. For more information about the supported drivers, see [Determining if Static Driver Verifier supports your driver or library](determining-if-static-driver-verifier-supports-your-driver-or-library.md).
+-   SDV verifies only one driver at a time and the driver must follow one of these driver models to be fully verified: WDM, KMDF, NDIS, or Storport. For more information about the supported drivers, see [Determining if Static Driver Verifier supports your driver or library](determining-if-static-driver-verifier-supports-your-driver-or-library.md).
+
+-   Drivers that do not fall into one of the above categories will be severely limited in the rules that can be verified and are more likely to fail during analysis.
 
 -   The driver project file and source code must reside on the local computer. You cannot verify drivers remotely.
 
 -   SDV is installed with the English (United States) locale. As a result, locale-dependent elements, such as string formatting, use the English (United States) variants. This limitation is present even when SDV is installed on localized versions of Windows other than English (United States).
 
 The SDV [verification engine](verification-engine.md) has technical limitations that prevent it from correctly interpreting some driver code. Specifically, the verification engine:
-
--   Assumes that the statically declared type of a pointer is always correct and accurately reflects its actual dynamic type.
 
 -   Does not recognize that 32-bit integers are limited to 32 bits. As a result, it does not detect overflow or underflow errors.
 
@@ -92,7 +93,7 @@ The SDV [verification engine](verification-engine.md) has technical limitations 
 
     For both **try/except** and **try/finally** statements, SDV ignores the **leave** statement.
 
-    For both **try/except** and **try/finally** statements, a jump out of the **try** block prevents analysis of the **except** or **finally** statements. For information about how to rewrite so that you can use a leave statement, see compiler warning [C6242](http://go.microsoft.com/fwlink/p/?linkid=153317) on MSDN.
+    For both **try/except** and **try/finally** statements, a jump out of the **try** block prevents analysis of the **except** or **finally** statements. For information about how to rewrite so that you can use a leave statement, see the topic for compiler warning [C6242](http://go.microsoft.com/fwlink/p/?linkid=153317).
 
 -   Ignores pointer arithmetic. For example, it will miss situations in which a pointer is incremented or decremented. This limitation can result in false negative and false positive results.
 
@@ -101,8 +102,6 @@ The SDV [verification engine](verification-engine.md) has technical limitations 
 -   Ignores casting operations, so it will miss both errors that are solved by recasting and errors that are caused by casting. For example, the engine assumes that an integer that is recast as a character still has the integer value.
 
 -   Only initializes arrays that are function pointer arrays. SDV issues a warning and compresses the array initializer to the first 1000 elements. For other array types, only the first element is initialized.
-
--   Cannot correctly interpret arrays that are dynamically allocated or whose size is unknown at compile time. Also, cannot correctly interpret variables that are declared as pointers but are used as arrays. In these situations, SDV interprets the arrays to be unconstrained, which could produce false defects and lead to an incorrect analysis. In addition, using variable indexes to access array elements in **for** loops can lead to incorrect analysis.
 
 -   Constructors of objects that are initialized in arrays are not called. For example, in the following code snippet, *x* does not get set to 10 because SDV does not call the constructor.
 
@@ -142,7 +141,7 @@ The SDV [verification engine](verification-engine.md) has technical limitations 
 
 -   SDV ignores precompiled headers. Drivers that use precompiled headers solely for speeding up compilation will compile slower with SDV. Drivers that must use precompiled headers for successful compilation will not compile with SDV.
 
--   Cannot infer some types of implicit assignments that are made through calls to **RtlZeroMemory** or **NdisZeroMemory**. The engine does not currently support these memory functions. As a result, code that depends upon these functions to initialize memory could yield false defects along some code paths.
+-   Cannot infer some types of implicit assignments that are made through calls to **RtlZeroMemory** or **NdisZeroMemory**. The engine does a best-effort analysis to initialize the memory to zero, but only when it can identify its type. As a result, code that depends upon these functions to initialize memory could yield false defects along some code paths.
 
 -   Does not support a memory model that would allow it to track the manual dispatching of I/O requests to a KMDF driver. The engine only supports methods that rely on the framework to deliver the I/O requests to the driver (for sequential or parallel dispatching).
 
@@ -154,7 +153,6 @@ The SDV [verification engine](verification-engine.md) has technical limitations 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Static%20Driver%20Verifier%20General%20Tool%20and%20Technical%20Limitations%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

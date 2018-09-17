@@ -3,8 +3,8 @@ title: dx (Display Debugger Object Model Expression)
 description: The dx command displays a C++ expression using the NatVis extension model. The dx command works with debugger objects.
 ms.assetid: 93047911-5195-4FB9-A015-5349084EDC0A
 keywords: ["dx (Display Debugger Object Model Expression) Windows Debugging"]
-ms.author: windowsdriverdev
-ms.date: 08/10/2017
+ms.author: domars
+ms.date: 12/22/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - dx (Display Debugger Object Model Expression)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # dx (Display Debugger Object Model Expression)
@@ -192,6 +193,117 @@ Debugger.State   [State pertaining to the current execution of the debugger (e.g
     UserVariables     [User variables which are maintained by the debugger and can be referenced by a pseudo-register prefix of @$]
 ```
 
+## Displaying TEB and PEB information using the Environment object
+
+Use the Environment object to display TEB and PEB information associated with the thread and process.
+
+To display the TEB associated with the current thread use this command.
+
+```
+0: kd> dx -r2 @$curthread.Environment
+@$curthread.Environment                
+    EnvironmentBlock [Type: _TEB]
+        [+0x000] NtTib            [Type: _NT_TIB]
+        [+0x038] EnvironmentPointer : Unable to read memory at Address 0x38
+        [+0x040] ClientId         [Type: _CLIENT_ID]
+        [+0x050] ActiveRpcHandle  : Unable to read memory at Address 0x50
+        [+0x058] ThreadLocalStoragePointer : Unable to read memory at Address 0x58
+        [+0x060] ProcessEnvironmentBlock : Unable to read memory at Address 0x60
+        [+0x068] LastErrorValue   : Unable to read memory at Address 0x68
+        [+0x06c] CountOfOwnedCriticalSections : Unable to read memory at Address 0x6c
+        [+0x070] CsrClientThread  : Unable to read memory at Address 0x70
+        [+0x078] Win32ThreadInfo  : Unable to read memory at Address 0x78
+        [+0x080] User32Reserved   [Type: unsigned long [26]]
+        [+0x0e8] UserReserved     [Type: unsigned long [5]]
+        [+0x100] WOW32Reserved    : Unable to read memory at Address 0x100
+        [+0x108] CurrentLocale    : Unable to read memory at Address 0x108
+        [+0x10c] FpSoftwareStatusRegister : Unable to read memory at Address 0x10c
+         ...
+```
+
+To display PEB associated with the current process use this command.
+
+```
+0: kd> dx -r2 @$curprocess.Environment
+@$curprocess.Environment                
+    EnvironmentBlock [Type: _PEB]
+        [+0x000] InheritedAddressSpace : Unable to read memory at Address 0x0
+        [+0x001] ReadImageFileExecOptions : Unable to read memory at Address 0x1
+        [+0x002] BeingDebugged    : Unable to read memory at Address 0x2
+        [+0x003] BitField         : Unable to read memory at Address 0x3
+        [+0x003 ( 0: 0)] ImageUsesLargePages : Unable to read memory at Address 0x3
+        [+0x003 ( 1: 1)] IsProtectedProcess : Unable to read memory at Address 0x3
+        [+0x003 ( 2: 2)] IsImageDynamicallyRelocated : Unable to read memory at Address 0x3
+        [+0x003 ( 3: 3)] SkipPatchingUser32Forwarders : Unable to read memory at Address 0x3
+        [+0x003 ( 4: 4)] IsPackagedProcess : Unable to read memory at Address 0x3
+        [+0x003 ( 5: 5)] IsAppContainer   : Unable to read memory at Address 0x3
+        [+0x003 ( 6: 6)] IsProtectedProcessLight : Unable to read memory at Address 0x3
+        [+0x003 ( 7: 7)] IsLongPathAwareProcess : Unable to read memory at Address 0x3
+        [+0x004] Padding0         [Type: unsigned char [4]]
+        [+0x008] Mutant           : Unable to read memory at Address 0x8
+        [+0x010] ImageBaseAddress : Unable to read memory at Address 0x10
+        [+0x018] Ldr              : Unable to read memory at Address 0x18
+        [+0x020] ProcessParameters : Unable to read memory at Address 0x20
+        ...
+```
+
+
+## Kernel Io.Handles object
+
+Use the current process Io.Handles object to display kernel handle information.
+
+```
+0: kd> dx -r1 @$curprocess.Io.Handles
+@$curprocess.Io.Handles                
+    [0x8]           
+    [0xc]           
+    [0x10]          
+    [0x14]          
+    [0x18]       
+    ...
+
+```
+
+Use the .First() function to display information about the first handle.
+
+```
+0: kd> dx -r2 @$curprocess.Io.Handles.First()
+@$curprocess.Io.Handles.First()                
+    Handle           : 0x8
+    Type             : Unexpected failure to dereference object
+    GrantedAccess    : Unexpected failure to dereference object
+    Object           [Type: _OBJECT_HEADER]
+        [+0x000] PointerCount     : 228806 [Type: __int64]
+        [+0x008] HandleCount      : 6 [Type: __int64]
+        [+0x008] NextToFree       : 0x6 [Type: void *]
+        [+0x010] Lock             [Type: _EX_PUSH_LOCK]
+        [+0x018] TypeIndex        : 0xf2 [Type: unsigned char]
+        [+0x019] TraceFlags       : 0x0 [Type: unsigned char]
+        [+0x019 ( 0: 0)] DbgRefTrace      : 0x0 [Type: unsigned char]
+        [+0x019 ( 1: 1)] DbgTracePermanent : 0x0 [Type: unsigned char]
+        [+0x01a] InfoMask         : 0x0 [Type: unsigned char]
+        [+0x01b] Flags            : 0x2 [Type: unsigned char]
+        [+0x01b ( 0: 0)] NewObject        : 0x0 [Type: unsigned char]
+        [+0x01b ( 1: 1)] KernelObject     : 0x1 [Type: unsigned char]
+        [+0x01b ( 2: 2)] KernelOnlyAccess : 0x0 [Type: unsigned char]
+        [+0x01b ( 3: 3)] ExclusiveObject  : 0x0 [Type: unsigned char]
+        [+0x01b ( 4: 4)] PermanentObject  : 0x0 [Type: unsigned char]
+        [+0x01b ( 5: 5)] DefaultSecurityQuota : 0x0 [Type: unsigned char]
+        [+0x01b ( 6: 6)] SingleHandleEntry : 0x0 [Type: unsigned char]
+        [+0x01b ( 7: 7)] DeletedInline    : 0x0 [Type: unsigned char]
+        [+0x01c] Reserved         : 0x0 [Type: unsigned long]
+        [+0x020] ObjectCreateInfo : 0xfffff801f6d9c6c0 [Type: _OBJECT_CREATE_INFORMATION *]
+        [+0x020] QuotaBlockCharged : 0xfffff801f6d9c6c0 [Type: void *]
+        [+0x028] SecurityDescriptor : 0xffffb984aa815d06 [Type: void *]
+        [+0x030] Body             [Type: _QUAD]
+        ObjectType       : Unexpected failure to dereference object
+        UnderlyingObject : Unexpected failure to dereference object
+
+```
+
+Note that the Io.Handles object is a kernel only object.
+
+
 ## Working around symbol file limitations with casting
 
 When displaying information about various Windows system variables, there are times where not all of the type information is available in the public symbols. This example illustrates this situation.
@@ -246,7 +358,6 @@ For information about using debugger objects with JavaScript, see [Native Debugg
 ---
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20dx%20%28Display%20Debugger%20Object%20Model%20Expression%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

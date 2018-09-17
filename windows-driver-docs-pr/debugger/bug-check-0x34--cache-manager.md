@@ -3,7 +3,7 @@ title: Bug Check 0x34 CACHE_MANAGER
 description: The CACHE_MANAGER bug check has a value of 0x00000034. This indicates that a problem occurred in the file system's cache manager.
 ms.assetid: a943e5ce-0be7-4b30-94e7-3e29ce8aa38c
 keywords: ["Bug Check 0x34 CACHE_MANAGER", "CACHE_MANAGER"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -14,6 +14,7 @@ api_name:
 - CACHE_MANAGER
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x34: CACHE\_MANAGER

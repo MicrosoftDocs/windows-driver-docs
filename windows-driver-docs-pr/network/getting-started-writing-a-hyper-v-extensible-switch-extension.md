@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Getting Started Writing a Hyper-V Extensible Switch Extension
@@ -21,14 +22,14 @@ For an architectural overview for driver developers, see [Overview of the Hyper-
 To create a Hyper-V Extensible Switch extension, follow these steps:
 
 1.  Learn the extension architecture and programming model.
-    -   Read the MSDN documentation for NDIS-based extensions, beginning with [Hyper-V Extensible Switch](hyper-v-extensible-switch.md). Capture, filtering, and forwarding extensions use the standard NDIS filtering API. The NDIS interfaces have been enhanced to provide configuration, notifications, and identification of virtual switches and virtual machines.
+    -   Read the online documentation for NDIS-based extensions, beginning with [Hyper-V Extensible Switch](hyper-v-extensible-switch.md). Capture, filtering, and forwarding extensions use the standard NDIS filtering API. The NDIS interfaces have been enhanced to provide configuration, notifications, and identification of virtual switches and virtual machines.
         [Hyper-V Extensible Switch Functions](https://msdn.microsoft.com/library/windows/hardware/hh598171)
         [Hyper-V Extensible Switch Enumerations](https://msdn.microsoft.com/library/windows/hardware/hh598168)
         [Hyper-V Extensible Switch Structures and Unions](https://msdn.microsoft.com/library/windows/hardware/hh598189)
         [Hyper-V Extensible Switch OIDs](https://msdn.microsoft.com/library/windows/hardware/hh598178)
         [Hyper-V Extensible Switch Status Indications](https://msdn.microsoft.com/library/windows/hardware/hh598188)
         [Hyper-V Extensible Switch Macros](https://msdn.microsoft.com/library/windows/hardware/hh598175)
-    -   Read the MSDN documentation for WFP-based extensions, beginning with [Using Virtual Switch Filtering](using-virtual-switch-filtering.md).
+    -   Read the online documentation for WFP-based extensions, beginning with [Using Virtual Switch Filtering](using-virtual-switch-filtering.md).
     -   Watch the following instructional videos on extensions.
         -   [TechEd session on Hyper-V Extensible Switch](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2012/VIR307)
         -   [Hyper-V Extensible Switch, Part I—Introduction](http://channel9.msdn.com/posts/Hyper-V-Extensible-Switch-Part-I--Introduction)

@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Retrieving the Contents of a IEEE 1394 Node's Configuration ROM
@@ -61,6 +62,5 @@ You can find descriptions of the configuration ROM values in the previous steps 
 [Modifying the 1394 Configuration ROM](https://msdn.microsoft.com/library/windows/hardware/ff537433)  
 [**REQUEST\_GET\_CONFIG\_ROM**](https://msdn.microsoft.com/library/windows/hardware/gg266404)  
 
---------------------
 
 

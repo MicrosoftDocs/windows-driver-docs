@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Configuring the Network
 
 
-## <a href="" id="ddk-configuring-the-network-ng"></a>
+
 
 
 A notify object can provide the network component that owns it with programmatic control over network configuration.

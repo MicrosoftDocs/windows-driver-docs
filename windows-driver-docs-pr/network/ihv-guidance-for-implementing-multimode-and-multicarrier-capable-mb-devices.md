@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IHV Guidance for Implementing Multimode and Multicarrier Capable MB Devices
@@ -27,19 +28,19 @@ A multimode network has multiple RATs or cellular classes. A multicarrier device
 
 In many places in this document it is required that multicarrier providers reported by a multicarrier device as part of CID processing must be set-able as home providers. This section describes how to determine if a provider is settable as a home provider. The ability to set a provider as a home provider may depend on many factors that are device dependent such as being visible, having firmware support for the provider, and having a SIM or equivalent to register with the provider. There may be additional factors. The device should ensure that the device requirements are met for a multicarrier provider before reporting it as a settable home provider
 
-## <a href="" id="10-4-1-cid-mbim-device-caps"></a>10.4.1 CID\_MBIM\_DEVICE\_CAPS
+## 10.4.1 CID\_MBIM\_DEVICE\_CAPS
 
 
 The capable device will report multiple supported cellular classes in bmCellularClass of MBIM\_DEVICE\_CAPS as specified in Table 10-13 of the specification. It will also report support for multiple carriers via the MBIMCtrlCapsMultiCarrier Mask in MBIM\_CTRL\_CAPS (Table 10-13).
 
 Single-carrier multi-mode devices must behave like GSM devices. Such devices must not set any CDMA related capabilities in their MBIM\_DEVICE\_CAPS\_INFO.
 
-## <a href="" id="10-4-6-cid-mbim-home-provider"></a>10.4.6 CID\_MBIM\_HOME\_PROVIDER
+## 10.4.6 CID\_MBIM\_HOME\_PROVIDER
 
 
 The home provider can be set as specified in **10.3.6.4.**
 
-## <a href="" id="10-4-8-cid-mbim-visible-providers"></a>10.4.8 CID\_MBIM\_VISIBLE\_PROVIDERS
+## 10.4.8 CID\_MBIM\_VISIBLE\_PROVIDERS
 
 
 The visible providers CID contain an Action field that specifies whether the host is expecting:
@@ -49,19 +50,19 @@ The visible providers CID contain an Action field that specifies whether the hos
 
 When devices report a static list of visible multicarrier providers based on location information, programmed using CID\_MBIM\_LOCATION\_INFO, the list should only contain providers valid for that location. As an extension of the above rule, devices should not report the currently registered provider if the location represented by its MCC (Mobile Country Code) is different than the location currently programmed in the device.
 
-## <a href="" id="10-4-9-cid-mbim-register-state"></a>10.4.9 CID\_MBIM\_REGISTER\_STATE
+## 10.4.9 CID\_MBIM\_REGISTER\_STATE
 
 
 The device indicates the current cellular class using the dwCurrentCellularClass field of MBIM\_REGISTRATION\_STATE in Table 10-48 of the specification.
 
-## <a href="" id="10-4-30-cid-mbim-device-services"></a>10.4.30 CID\_MBIM\_DEVICE\_SERVICES
+## 10.4.30 CID\_MBIM\_DEVICE\_SERVICES
 
 
 Multicarrier devices are required to report the UUID\_MULTICARRIER (described below) device service in response to this CID.
 
 Single-carrier multimode devices are not required to report UUID\_MULTICARRIER device service in response to this CID.
 
-## <a href="" id="10-4-39-cid-mbim-multicarrier-providers"></a>10.4.39 CID\_MBIM\_MULTICARRIER\_PROVIDERS
+## 10.4.39 CID\_MBIM\_MULTICARRIER\_PROVIDERS
 
 
 The device uses this CID to report the current and previously added preferred multicarrier providers. This CID is supported when device supports MBIMCtrlCapsMultiCarrier. When the host sets a multicarrier preferred provider, it is not required that the provider is settable as home provider. But when the list is queried by the host, the device should only return multicarrier preferred providers that are settable as home providers.
@@ -160,7 +161,7 @@ Specifically, the following CIDs are defined for UUID\_MULTICARRIER device servi
 
  
 
-## <a href="" id="cid-mbim-multicarrier-capabilities"></a>CID\_MBIM\_MULTICARRIER\_CAPABILITIES
+## CID\_MBIM\_MULTICARRIER\_CAPABILITIES
 
 
 The command returns information about a MB device's multi-carrier capabilities. A device that requires a firmware reboot, and correspondingly a device removal/arrival should provide the host with a hint using the appropriate flag to enable the host to provide the appropriate user experience.
@@ -227,7 +228,7 @@ Unsolicited Event = **Unsupported**
 
  
 
-## <a href="" id="cid-mbim-location-info"></a>CID\_MBIM\_LOCATION\_INFO
+## CID\_MBIM\_LOCATION\_INFO
 
 
 The command is used to set/query the current location information of the host. This is useful to the device if it needs to filter the list of static (no physical scan) visible providers to the ones relevant to the current user location.
@@ -267,7 +268,7 @@ The country code specified by the host will be based on the Geographical Locatio
 
  
 
-## <a href="" id="cid-mbim-multicarrier-current-cid-list"></a>CID\_MBIM\_MULTICARRIER\_CURRENT\_CID\_LIST
+## CID\_MBIM\_MULTICARRIER\_CURRENT\_CID\_LIST
 
 
 This command is used to query the CIDs currently supposed by a device service.

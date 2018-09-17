@@ -12,6 +12,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Synchronized Access within ATA Miniport Driver Routines
@@ -32,4 +33,3 @@ When an ATA miniport driver calls **AtaPortRequestSynchronizedRoutine**, it must
  
 
 
---------------------

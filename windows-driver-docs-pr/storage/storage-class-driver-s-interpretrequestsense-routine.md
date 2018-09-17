@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Class Driver's InterpretRequestSense Routine
@@ -36,6 +37,5 @@ For more information about logging I/O errors, see [Logging Errors](https://msdn
  
 
 
---------------------
 
 

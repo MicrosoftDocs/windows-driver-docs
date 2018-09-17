@@ -9,12 +9,15 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # CM_PROB_IRQ_TRANSLATION_FAILED
 
+This function is reserved for system use.
 
-## <a href="" id="ddk-cm-prob-irq-translation-failed-dg"></a>
+
+
 
 
 The IRQ translation failed for the device.

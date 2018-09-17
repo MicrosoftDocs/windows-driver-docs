@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Displaying and Changing Properties
 
 
-## <a href="" id="ddk-displaying-and-changing-properties-ng"></a>
+
 
 
 The network configuration subsystem displays Property pages for a network component and changes the component's parameters.

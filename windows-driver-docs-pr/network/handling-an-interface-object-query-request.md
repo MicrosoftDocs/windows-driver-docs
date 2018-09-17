@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling an Interface Object Query Request
 
 
-## <a href="" id="ddk-handling-interface-object-query-requests-ng"></a>
+
 
 
 To obtain the current value that is associated with an interface object, NDIS calls an interface provider's [**ProviderQueryObject**](https://msdn.microsoft.com/library/windows/hardware/ff570399) function. This function returns NDIS\_STATUS\_SUCCESS if it successfully processes the query request or an NDIS\_STATUS\_*Xxx* error code otherwise.

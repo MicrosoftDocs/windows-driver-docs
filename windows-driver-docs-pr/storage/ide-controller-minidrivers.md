@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IDE Controller Minidrivers
@@ -36,6 +37,5 @@ The following sections discuss the guidelines for the development and installati
  
 
 
---------------------
 
 

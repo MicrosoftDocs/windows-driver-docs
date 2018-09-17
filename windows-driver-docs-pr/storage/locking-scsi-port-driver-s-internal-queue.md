@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Locking SCSI Port Driver's Internal Queue
@@ -33,6 +34,5 @@ For more information about unlocking queues from the perspective of the class dr
  
 
 
---------------------
 
 

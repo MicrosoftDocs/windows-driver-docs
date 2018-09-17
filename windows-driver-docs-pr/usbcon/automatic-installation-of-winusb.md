@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WinUSB Device
@@ -16,10 +17,13 @@ In this topic, you will learn about how a *WinUSB device* is recognized in Windo
 
 The information in this topic applies to you if you are an OEM or independent hardware vendor (IHV) developing a device for which you want to use Winusb.sys as the function driver and want to load the driver automatically without having to provide a custom INF.
 
--   [What is a WinUSB device](#what-is-a-winusb-device)
--   [WinUSB device installation by using the in-box Winusb.inf](#winusb-device-installation-by-using-the-in-box-winusb-inf)
--   [How to change the device description for a WinUSB device](#how-to-change-the-device-description-for-a-winusb-device)
--   [How to configure a WinUSB device](#how-to-configure-a-winusb-device)
+- [WinUSB Device](#winusb-device)
+  - [What is a WinUSB device](#what-is-a-winusb-device)
+  - [WinUSB device installation by using the in-box Winusb.inf](#winusb-device-installation-by-using-the-in-box-winusbinf)
+    - [About using the USBDevice class:](#about-using-the-usbdevice-class)
+  - [How to change the device description for a WinUSB device](#how-to-change-the-device-description-for-a-winusb-device)
+  - [How to configure a WinUSB device](#how-to-configure-a-winusb-device)
+  - [Related topics](#related-topics)
 
 ## What is a WinUSB device
 
@@ -34,48 +38,49 @@ Before Windows 8, to load Winusb.sys as the function driver, you needed to prov
 
 In Windows 8, the in-box Winusb.inf file has been updated to enable Windows to automatically match the INF with a WinUSB device.
 
-## <a href="" id="winusb-device-installation-by-using-the-in-box-winusb-inf"></a>WinUSB device installation by using the in-box Winusb.inf
+## WinUSB device installation by using the in-box Winusb.inf
 
 
 In Windows 8, the in-box Winusb.inf file has been updated. The INF includes an install section that references a compatible ID called "USB\\MS\_COMP\_WINUSB".
 
-` [Generic.Section.NTamd64]`
-
-`%USB\MS_COMP_WINUSB.DeviceDesc%=WINUSB,USB\MS_COMP_WINUSB `
+```
+[Generic.Section.NTamd64]
+%USB\MS_COMP_WINUSB.DeviceDesc%=WINUSB,USB\MS_COMP_WINUSB 
+```
 
 The updated INF also includes a new setup class called "USBDevice".
 
 The "USBDevice" setup class is available for those devices for which Microsoft does not provide an in-box driver. Typically, such devices do not belong to well-defined USB classes such as Audio, Bluetooth, and so on, and require a custom driver. If your device is a WinUSB device, most likely, the device does not belong to a USB class. Therefore, your device must be installed under "USBDevice" setup class. The updated Winusb.inf facilitates that requirement.
 
-**About using the USBDevice class:  **
+### About using the USBDevice class:
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Do not use the &quot;USB&quot; setup class for unclassified devices. That class is reserved for installing controllers, hubs, and composite devices. Misusing the &quot;USB&quot; class can lead to significant reliability and performance issues. For unclassified devices, use &quot;USBDevice&quot;.</p>
-<p>In Windows 8, to use &quot;USBDevice&quot; device class, simply add this to your INF.</p>
-<p>[Version]</p>
-<p>…</p>
-<p><code>[Version] </code></p>
-<p><code>Class=USBDevice </code></p>
-<p><code>ClassGuid={88BAE032-5A81-49f0-BC3D-A4FF138216D6}</code></p>
-<p>…</p>
-<p>In Device Manager you will see a new node <strong>USB Universal Serial Bus devices</strong> and your device appears under that node.</p>
-<p>In Windows 7, in addition to the preceding lines, you need to create these registry settings in the INF:</p>
-<p>;---------- Add Registry Section ----------</p>
-<p><code>[USBDeviceClassReg] </code></p>
-<p><code>HKR,,,,&quot;Universal Serial Bus devices&quot;</code></p>
-<p><code>HKR,,NoInstallClass,,1</code></p>
-<p><code>HKR,,SilentInstall,,1  </code></p>
-<p><code>HKR,,IconPath,%REG_MULTI_SZ%,&quot; %systemroot%\system32\setupapi.dll,-20&quot;</code></p>
-<p>In Device Manager, you will see your device appear under <strong>USB Universal Serial Bus devices</strong>. However, the device class description is derived from the registry setting specified in your INF.</p>
-<p><em>-Eliyas Yakub, Microsoft Windows USB Core Team</em></p></td>
-</tr>
-</tbody>
-</table>
+Do not use the &quot;USB&quot; setup class for unclassified devices. That class is reserved for installing controllers, hubs, and composite devices. Misusing the &quot;USB&quot; class can lead to significant reliability and performance issues. For unclassified devices, use &quot;USBDevice&quot;.
+
+In Windows 8, to use &quot;USBDevice&quot; device class, simply add this to your INF:
+
+```
+  …
+  [Version] 
+  Class=USBDevice 
+  ClassGuid={88BAE032-5A81-49f0-BC3D-A4FF138216D6}
+  …
+```
+
+In Device Manager you will see a new node **USB Universal Serial Bus devices** and your device appears under that node.
+<p>In Windows 7, in addition to the preceding lines, you need to create these registry settings in the INF:
+
+```
+  ;---------- Add Registry Section ----------
+  [USBDeviceClassReg] 
+  HKR,,,,"Universal Serial Bus devices"
+  HKR,,NoInstallClass,,1
+  HKR,,SilentInstall,,1 
+  HKR,,IconPath,%REG_MULTI_SZ%,"%systemroot%\system32\setupapi.dll,-20"
+```
+
+In Device Manager, you will see your device appear under **USB Universal Serial Bus devices**. However, the device class description is derived from the registry setting specified in your INF.
+
+*-Eliyas Yakub, Microsoft Windows USB Core Team*
 
  
 
@@ -101,7 +106,7 @@ The new class property is not supported on earlier versions of Windows. To have 
 ## How to configure a WinUSB device
 
 
-To identify a USB device as a WinUSB device, the device firmware must have these [Microsoft OS Descriptors](http://go.microsoft.com/fwlink/p/?linkid=224878).
+To identify a USB device as a WinUSB device, the device firmware must have Microsoft OS Descriptors. For information about the descriptors, see the specifications described here: [Microsoft OS Descriptors](microsoft-defined-usb-descriptors.md).
 
 **Supporting extended feature descriptors**
 
@@ -109,7 +114,7 @@ In order for the USB driver stack to know that the device supports extended feat
 
 The retrieved string descriptor has a **bMS\_VendorCode** field value. The value indicates the vendor code that the USB driver stack must use to retrieve the extended feature descriptor.
 
-For information about how to define an OS string descriptor, see "The OS String Descriptor" in the [Microsoft OS Descriptor Specification](http://go.microsoft.com/fwlink/p/?linkid=224878).
+For information about how to define an OS string descriptor, see "The OS String Descriptor" in the specifications described here: [Microsoft OS Descriptors](microsoft-defined-usb-descriptors.md).
 
 **Setting the compatible ID**
 
@@ -174,12 +179,10 @@ This image shows sample settings for a WinUSB device.
 
 ![registry settings for winusb device](images/winusb-device-reg.png)
 
-For additional examples, see the [Microsoft OS Descriptor Specification](http://go.microsoft.com/fwlink/p/?linkid=224878).
+For additional examples, see the specifications on [Microsoft OS Descriptors](microsoft-defined-usb-descriptors.md).
 
 ## Related topics
 [Microsoft-Defined USB Descriptors](microsoft-defined-usb-descriptors.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20WinUSB%20Device%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

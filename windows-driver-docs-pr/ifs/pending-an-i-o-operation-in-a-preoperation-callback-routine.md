@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Pending an I/O Operation in a Preoperation Callback Routine
@@ -50,6 +51,5 @@ The work routine that dequeues and processes the I/O operation must call **FltCo
  
 
 
---------------------
 
 

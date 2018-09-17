@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Capacitive touch tests in MITT
@@ -119,6 +120,5 @@ To create patterns use the example pattern as a starting point. You can create a
 ## Related topics
 [Testing with Multi Interface Test Tool (MITT)](https://msdn.microsoft.com/library/windows/hardware/dn919874)  
 
---------------------
 
 

@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How the Volume Is Mounted
@@ -35,6 +36,5 @@ After the volume is mounted by the file system, file system filter drivers can a
  
 
 
---------------------
 
 

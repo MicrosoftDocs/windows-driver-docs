@@ -12,6 +12,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # 802.1Q and 802.1p Processing on an Offloaded TCP Connection
@@ -19,7 +20,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-802-1q-and-802-1p-processing-on-an-offloaded-tcp-connection-ng"></a>
+
 
 
 This section describes how an offload target processes IEEE 802.1Q and 802.1p information about an offloaded TCP connection. This section includes:

@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # UPS Registry Entries
@@ -48,6 +49,5 @@ The UPS registry entries are organized under the following four keys:
  
 
 
---------------------
 
 

@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Write a UDE client driver
@@ -351,7 +352,7 @@ Controller_EvtControllerQueryUsbCapability(
 }
 ```
 
-## <a href="" id="device"></a>Create a virtual USB device
+## Create a virtual USB device
 
 
 A virtual USB device behaves similar to a USB device. It supports a configuration with multiple interfaces and each interface supports alternate settings. Each setting can have one more endpoints that are used for data transfers. All descriptors (device, configuration, interface, endpoint) are set by the UDE client driver so that the device can report information much like a real USB device.
@@ -600,7 +601,7 @@ The client driver changes the function state of the specified interface of the v
 A USB 3.0 device allows individual functions to enter lower power state. Each function is also capable of send a wake signal. The UDE class extension notifies the client driver by invoking [*EVT\_UDECX\_USB\_DEVICE\_SET\_FUNCTION\_SUSPEND\_AND\_WAKE*](https://msdn.microsoft.com/library/windows/hardware/mt595915). This event indicates a function power state change and informs the client driver of whether the function can wake from the new state. In the function, the class extension passes the interface number of the function that is waking up.
 The client driver can simulate the action of a virtual USB device initiating its own wake up from a low link power state, function suspend, or both. For a USB 2.0 device, the driver must call [**UdecxUsbDeviceSignalWake**](https://msdn.microsoft.com/library/windows/hardware/mt627982), if the driver enabled wake on the device in the most recent [*EVT\_UDECX\_USB\_DEVICE\_D0\_EXIT*](https://msdn.microsoft.com/library/windows/hardware/mt595911). For a USB 3.0 device, the driver must call [**UdecxUsbDeviceSignalFunctionWake**](https://msdn.microsoft.com/library/windows/hardware/mt627981) because the USB 3.0 wake feature is per-function. If the entire device is in a low power state, or entering such a state, **UdecxUsbDeviceSignalFunctionWake** wakes up the device.
 
-## <a href="" id="static"></a>Create simple endpoints
+## Create simple endpoints
 
 
 The client driver creates UDE endpoint objects to handle data transfers to and from the USB device. The driver creates simple endpoints after creating the UDE device and before reporting the device as plugged in.
@@ -706,7 +707,7 @@ exit:
 }
 ```
 
-## <a href="" id="dynamic"></a>Create dynamic endpoints
+## Create dynamic endpoints
 
 
 The client driver can create dynamic endpoints at the request of the UDE class extension (on behalf of the hub driver and client drivers). The class extension makes the request by invoking any of these callback functions:
@@ -801,7 +802,7 @@ This call is asynchronous. After the client is finished with the reset operation
 
  
 
-## <a href="" id="implement-queue-state-management-"></a>Implement queue state management
+## Implement queue state management
 
 
 The state of the framework queue object associated with a UDE endpoint object is managed by the UDE class extension. However, if the client driver forwards requests from endpoint queues to other internal queues, then the client must implement logic to handle changes in the endpoint’s I/O flow. These callback functions are registered with [**UdecxUsbEndpointInitSetCallbacks**](https://msdn.microsoft.com/library/windows/hardware/mt627985).
@@ -816,10 +817,16 @@ In the [*EVT\_UDECX\_USB\_ENDPOINT\_PURGE*](https://msdn.microsoft.com/library/w
 
 In the [*EVT\_UDECX\_USB\_ENDPOINT\_START*](https://msdn.microsoft.com/library/windows/hardware/mt595918) implementation, the client driver is required to begin processing I/O on the endpoint’s queue, and on any queues that receive forwarded I/O for the endpoint. After an endpoint is created, it does not receive any I/O until after this callback function returns. This callback returns the endpoint to a state of processing I/O after [*EVT\_UDECX\_USB\_ENDPOINT\_PURGE*](https://msdn.microsoft.com/library/windows/hardware/mt595916) completes.
 
-## Call methods URB handling
+
+## Handling data transfer requests (URBs)
+
+To process USB I/O requests sent to the client device's endpoints, intercept the [EVT_WDF_IO_QUEUE_IO_INTERNAL_DEVICE_CONTROL](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_internal_device_control) callback on the queue object used with [**UdecxUsbEndpointInitSetCallbacks**](https://msdn.microsoft.com/library/windows/hardware/mt627985) when associating the queue with the endpoint. In that callback, process I/O for the [IOCTL\_INTERNAL\_USB\_SUBMIT\_URB](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_urb) IoControlCode (see sample code under [URB handling methods](#urb-handling-methods)).
 
 
-A UDE client driver can get a pointer to the transfer buffer of an I/O request by using these methods:
+## URB handling methods
+
+
+As part of processing URBs via [IOCTL\_INTERNAL\_USB\_SUBMIT\_URB](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_urb) of a queue associated with an endpoint on a virtual device, A UDE client driver can get a pointer to the transfer buffer of an I/O request by using these methods:
 
 These functions are implemented by the client driver to handle queues and requests on an endpoint.
 
@@ -838,18 +845,72 @@ Completes the URB request with a USB-specific completion status code.
 [**UdecxUrbCompleteWithNtStatus**](https://msdn.microsoft.com/library/windows/hardware/mt595955)  
 Completes the URB request with an NTSTATUS code.
 
+Below is the flow of typical I/O processing for the URB of an USB OUT transfer.
+
+```
+static VOID
+IoEvtSampleOutUrb(
+	_In_ WDFQUEUE Queue,
+	_In_ WDFREQUEST Request,
+	_In_ size_t OutputBufferLength,
+	_In_ size_t InputBufferLength,
+	_In_ ULONG IoControlCode
+)
+{
+	PENDPOINTQUEUE_CONTEXT pEpQContext;
+	NTSTATUS status = STATUS_SUCCESS;
+	PUCHAR transferBuffer;
+	ULONG transferBufferLength = 0;
+
+	UNREFERENCED_PARAMETER(OutputBufferLength);
+	UNREFERENCED_PARAMETER(InputBufferLength);
+
+	// one possible way to get context info
+	pEpQContext = GetEndpointQueueContext(Queue);
+
+	if (IoControlCode != IOCTL_INTERNAL_USB_SUBMIT_URB)
+	{
+		LogError(TRACE_DEVICE, "WdfRequest %p Incorrect IOCTL %x, %!STATUS!",
+			Request, IoControlCode, status);
+		status = STATUS_INVALID_PARAMETER;
+		goto exit;
+	}
+
+	status = UdecxUrbRetrieveBuffer(Request, &transferBuffer, &transferBufferLength);
+	if (!NT_SUCCESS(status))
+	{
+		LogError(TRACE_DEVICE, "WdfRequest %p unable to retrieve buffer %!STATUS!",
+			Request, status);
+		goto exit;
+	}
+
+	if (transferBufferLength >= 1)
+	{
+		//consume one byte of output data
+		pEpQContext->global_storage = transferBuffer[0];
+	}
+
+exit:
+	// writes never pended, always completed
+	UdecxUrbSetBytesCompleted(Request, transferBufferLength);
+	UdecxUrbCompleteWithNtStatus(Request, status);
+	return;
+}
+```
+
+
 The client driver can complete an I/O request on a separate with a DPC. Follow these best practices:
 
 -   To ensure compatibility with existing USB drivers, the UDE client must call [**WdfRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff549945) at DISPATCH\_LEVEL.
 -   If the [**URB**](https://msdn.microsoft.com/library/windows/hardware/ff538923) was added to an endpoint's queue and the driver starts processing it synchronously on the calling driver’s thread or DPC, the request must not be completed synchronously. A separate DPC is required for that purpose, which the driver queue by calling [**WdfDpcEnqueue**](https://msdn.microsoft.com/library/windows/hardware/ff547148).
 -   When the UDE class extension invokes [*EvtIoCanceledOnQueue*](https://msdn.microsoft.com/library/windows/hardware/ff541756) or [*EvtRequestCancel*](https://msdn.microsoft.com/library/windows/hardware/ff541817), the client driver must complete the received URB on a separate DPC from the caller's thread or DPC. To do this, the driver must provide an *EvtIoCanceledOnQueue* callback for its [**URB**](https://msdn.microsoft.com/library/windows/hardware/ff538923) queues.
 
+
+
  
 
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Write%20a%20UDE%20client%20driver%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

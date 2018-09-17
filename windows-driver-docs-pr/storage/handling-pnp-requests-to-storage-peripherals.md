@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling PnP Requests to Storage Peripherals
@@ -38,6 +39,5 @@ The storage class driver forwards PnP query, cancel, and stop requests (except f
  
 
 
---------------------
 
 

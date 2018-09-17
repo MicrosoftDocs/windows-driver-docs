@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installation Requirements for Network Components
 
 
-## <a href="" id="ddk-installation-requirements-for-network-components-ng"></a>
+
 
 
 This section summarizes the installation requirements for certain types of network components. These requirements are described in the following topics:

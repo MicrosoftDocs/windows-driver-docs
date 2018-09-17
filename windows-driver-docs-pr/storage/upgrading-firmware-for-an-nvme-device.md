@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Upgrading Firmware for an NVMe Device
@@ -591,6 +592,5 @@ The **IOCTL\_SCSI\_MINIPORT\_FIRMWARE** control code for SRB I/O control is avai
  
 
 
---------------------
 
 

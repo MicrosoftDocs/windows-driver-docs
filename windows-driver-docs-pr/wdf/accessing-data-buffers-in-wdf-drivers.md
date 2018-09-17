@@ -18,6 +18,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Accessing Data Buffers in WDF Drivers (KMDF or UMDF)
@@ -98,7 +99,7 @@ If your driver is using direct I/O, the I/O manager verifies the accessibility o
 
 <a href="" id="umdf-drivers"></a>**UMDF Drivers**  
 
-If your driver has specified a preference for direct I/O, and all the UMDF requirements for direct I/O have been met (see [Managing Buffer Access Methods in UMDF Drivers](managing-buffer-access-methods-in-umdf-drivers.md)), the framework maps the memory buffer it receives from the I/O manager directly into the driverâ€™s host process address space, and thus provides the driver with direct access to the buffer space.
+If your driver has specified a preference for direct I/O, and all the UMDF requirements for direct I/O have been met (see [Managing Buffer Access Methods in UMDF Drivers](managing-buffer-access-methods-in-umdf-drivers.md)), the framework maps the memory buffer it receives from the I/O manager directly into the driver's host process address space, and thus provides the driver with direct access to the buffer space.
 
 To retrieve a handle to a framework memory object that represents the buffer space, the driver calls [**WdfRequestRetrieveInputMemory**](https://msdn.microsoft.com/library/windows/hardware/ff550015) or [**WdfRequestRetrieveOutputMemory**](https://msdn.microsoft.com/library/windows/hardware/ff550019). The driver can then retrieve a pointer to the buffer by calling [**WdfMemoryGetBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff548715). To read and write the buffer, the driver calls [**WdfMemoryCopyFromBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff548701) or [**WdfMemoryCopyToBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff548703).
 
@@ -135,7 +136,7 @@ Occasionally, a highest-level driver must use the preceding steps to access a us
 
 <a href="" id="umdf-drivers"></a>**UMDF Drivers**  
 
-UMDF doesnâ€™t support neither buffered nor direct I/O type buffers, so a UMDF driver never needs to handle this type of buffer directly.
+UMDF doesn't support neither buffered nor direct I/O type buffers, so a UMDF driver never needs to handle this type of buffer directly.
 
 However, if the framework receives such buffers for read or write from the I/O manager, it makes them available to a UMDF driver as buffered I/O or direct I/O, depending on the access method selected by the driver. If the framework receives an IOCTL specifying the "neither" buffer method, it can optionally convert the buffer access method of the IOCTL request to buffered I/O or direct I/O based on the presence of an INF directive. See [Managing Buffer Access Methods in UMDF Drivers](managing-buffer-access-methods-in-umdf-drivers.md) for more info.
 

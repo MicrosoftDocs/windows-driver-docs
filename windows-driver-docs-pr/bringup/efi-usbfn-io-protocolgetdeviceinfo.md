@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USBFN\_IO\_PROTOCOL.GetDeviceInfo
@@ -101,6 +102,5 @@ If the supplied Buffer is too small or NULL, the method fails with **EFI\_BUFFER
  
 
 
---------------------
 
 

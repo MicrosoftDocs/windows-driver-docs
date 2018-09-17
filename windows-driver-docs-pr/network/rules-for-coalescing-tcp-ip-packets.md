@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Rules for Coalescing TCP/IP Segments
@@ -110,7 +111,7 @@ The flowcharts show that the miniport driver may coalesce segments with differen
     -   **H.ACK** == **SEG.ACK**.
     -   The duplicate-ACK count in the coalesced segment that is being tracked is zero. In other words, **H.DupAckCount** == 0.
 
-    In other words, any pure ACK that is not a duplicate ACK or a window update triggers an exception and must not be coalesced. All such pure ACKs must be indicated as individual segments.
+    In other words, any pure ACK that is not a duplicate ACK or a window update triggers an exception and must not be coalesced. All such pure ACKs must be indicated as individual segments. This rule ensures that RSC does not affect the behavior or performance of the Windows TCP congestion control algorithms.
 
 -   An incoming data segment (**SEG.ACK** == **H.ACK**) or an incoming piggy-backed ACK (**SEG.ACK** &gt; **H.ACK**) may be coalesced into the currently tracked SCU if both of the following conditions are met:
 

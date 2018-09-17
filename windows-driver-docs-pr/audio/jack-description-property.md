@@ -3,10 +3,11 @@ title: Jack Description Property
 description: Jack Description Property
 ms.assetid: 6398efc9-4435-4234-bd72-1ed0f96c9f9f
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Jack Description Property
@@ -18,7 +19,7 @@ If a KS filter on an audio adapter supports the KSPROPERTY\_JACK\_DESCRIPTION pr
 
 An audio application can obtain the KSPROPERTY\_JACK\_DESCRIPTION property value for an audio endpoint device by calling the **IKsJackDescription::GetJackDescription** method in the DeviceTopology API. For example, an application can use the jack information to help the user to distinguish a microphone plugged into a green XLR jack from a microphone plugged into an orange XLR jack. For more information about the DeviceTopology API, see [Device Topologies](http://go.microsoft.com/fwlink/p/?linkid=130878).
 
-The Microsoft HD Audio class driver automatically constructs the KSPROPERTY\_JACK\_DESCRIPTION property values from the data that it reads from the pin-configuration registers in an HD Audio codec. However, any KS-based audio driver can implement support for this property in its filter automation tables. For more information about the HD Audio class driver, see [HD Audio and UAA](hd-audio-and-uaa.md). For more information about pin-configuration registers, see the white paper titled Pin Configuration Guidelines for High Definition Audio Devices on the [audio technology](http://go.microsoft.com/fwlink/p/?linkid=8751) page on the WHDC website.
+The Microsoft HD Audio class driver automatically constructs the KSPROPERTY\_JACK\_DESCRIPTION property values from the data that it reads from the pin-configuration registers in an HD Audio codec. However, any KS-based audio driver can implement support for this property in its filter automation tables. For more information about the HD Audio class driver, see [HD Audio and UAA](hd-audio-and-uaa.md). For more information about pin-configuration registers, see [Pin Configuration Guidelines for High Definition Audio Devices](http://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/PinConfig.doc) white paper.
 
 An audio endpoint device can connect to a bridge pin through one or more jacks. For example, a set of (two-channel) stereo speakers requires one jack, but a set of 5.1 surround-sound speakers requires three jacks (assuming that each jack handles two of the six channels).
 
@@ -329,7 +330,5 @@ For more information about the jack description property, see [Jack Descriptions
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Jack%20Description%20Property%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

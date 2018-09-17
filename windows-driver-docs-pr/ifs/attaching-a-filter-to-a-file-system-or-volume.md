@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Attaching a Filter to a File System or Volume
@@ -54,6 +55,5 @@ For more information, see the following topics:
  
 
 
---------------------
 
 

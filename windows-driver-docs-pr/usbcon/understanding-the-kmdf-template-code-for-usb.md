@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Understanding the USB client driver code structure (KMDF)
@@ -23,7 +24,7 @@ These sections provide information about the template code.
 
 For instructions on generating the KMDF template code, see [How to write your first USB client driver (KMDF)](tutorial--write-your-first-usb-client-driver--kmdf-.md).
 
-## <a href="" id="driver"></a>Driver source code
+## Driver source code
 
 
 The *driver object* represents the instance of the client driver after Windows loads the driver in memory. The complete source code for the driver object is in Driver.h and Driver.c.
@@ -292,7 +293,7 @@ In the [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardwar
 -   Register a device interface GUID for the client driver by calling the [**WdfDeviceCreateDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff545935) method. Applications can communicate with the driver by using this GUID. The GUID constant is declared in the header, public.h.
 -   Set up queues for I/O transfers to the device. The template code defines MyUSBDriver\_QueueInitialize, a helper routine for setting up queues, which is discussed in the [Queue source code](#queue) section.
 
-## <a href="" id="device"></a>Device source code
+## Device source code
 
 
 The *device object* represents the instance of the device for which the client driver is loaded in memory. The complete source code for the device object is in Device.h and Device.c.
@@ -386,7 +387,7 @@ MyUSBDriver_EvtDevicePrepareHardware(
         //
         // Specifying a client contract version of 602 enables us to query for
         // and use the new capabilities of the USB driver stack for Windows 8.
-        // It also implies that we conform to rules mentioned in MSDN
+        // It also implies that we conform to rules mentioned in the documentation
         // documentation for WdfUsbTargetDeviceCreateWithParameters.
         //
         WDF_USB_DEVICE_CREATE_CONFIG_INIT(&createParams,
@@ -466,7 +467,7 @@ Here's a closer look at the client driver's tasks as implemented by the template
 
      
 
-## <a href="" id="queue"></a>Queue source code
+## Queue source code
 
 
 The *framework queue object* represents the I/O queue for a specific framework device object. The complete source code for the queue object is in Queue.h and Queue.c.
@@ -597,7 +598,5 @@ When the framework invokes the client driver's event callback, it passes a handl
 [Write your first USB client driver (UMDF)](implement-driver-entry-for-a-usb-driver--umdf-.md)  
 [Write your first USB client driver (KMDF)](tutorial--write-your-first-usb-client-driver--kmdf-.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Understanding%20the%20USB%20client%20driver%20code%20structure%20%28KMDF%29%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -19,6 +19,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # The V\_NET\_ROOT Structure
@@ -61,6 +62,5 @@ There can be a delay between these two actions, and a field in the V\_NET\_ROOT 
  
 
 
---------------------
 
 

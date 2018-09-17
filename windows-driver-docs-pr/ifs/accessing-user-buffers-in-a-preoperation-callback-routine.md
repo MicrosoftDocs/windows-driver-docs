@@ -10,6 +10,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Accessing User Buffers in a Preoperation Callback Routine
@@ -76,6 +77,5 @@ For operations that can be fast I/O or IRP-based, all buffer references should b
  
 
 
---------------------
 
 

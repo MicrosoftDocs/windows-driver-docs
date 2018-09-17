@@ -12,6 +12,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Disallow a Fast I/O Operation in a Preoperation Callback Routine
@@ -45,6 +46,5 @@ Minifilter drivers cannot return FLT\_PREOP\_DISALLOW\_FASTIO for IRP\_MJ\_SHUTD
  
 
 
---------------------
 
 

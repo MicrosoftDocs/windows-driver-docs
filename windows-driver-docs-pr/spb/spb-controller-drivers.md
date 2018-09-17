@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SPB controller drivers
@@ -88,6 +89,5 @@ Only drivers can send I/O requests directly to an SPB controller. When a user-mo
  
 
 
---------------------
 
 

@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # System and device firmware updates via a firmware driver package
@@ -46,6 +47,5 @@ A device driver package contains an INF file describing the devices to which the
  
 
 
---------------------
 
 

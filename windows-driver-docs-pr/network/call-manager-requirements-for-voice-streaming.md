@@ -16,12 +16,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Call Manager Requirements for Voice Streaming
 
 
-## <a href="" id="ddk-call-manager-requirements-for-voice-streaming-ng"></a>
+
 
 
 This section describes requirements that a call manager or integrated miniport call manager (MCM) driver must meet to support voice streaming over connection-oriented media. These requirements are described in the following topics:

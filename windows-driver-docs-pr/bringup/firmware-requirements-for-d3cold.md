@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Firmware requirements for D3cold
@@ -357,6 +358,5 @@ For more information, see [Supporting D3cold in a Driver](https://msdn.microsoft
  
 
 
---------------------
 
 

@@ -9,6 +9,7 @@ ms.date: 11/09/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Software Defined Battery
@@ -179,7 +180,6 @@ Alternatively, HPMI may act as a forwarder and simply forward the Windows batter
 A full flow-chart model depicting how SDB Algorithm is implemented is shown in [Implementing SDB Algorithm in Firmware](#IMPLEMENTING-SDB).
 
 
---------------------
 
 ## Interface Definitions
 
@@ -409,6 +409,5 @@ Refer to [HMPI.h](https://msdn.microsoft.com/library/windows/hardware/mt828470.a
 >[!NOTE]
 > Contents of this document are subject to change without notice.
 
---------------------
 
 

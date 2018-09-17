@@ -2,11 +2,12 @@
 title: WinDbg Preview - Software License Terms
 description: WinDbg Preview - Software License Terms
 ms.assetid: ECDF9741-F8F6-498B-8033-8CB392021BB8
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 08/18/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WinDbg Preview - Software License Terms

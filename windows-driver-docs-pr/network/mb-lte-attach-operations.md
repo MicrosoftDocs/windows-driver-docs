@@ -6,6 +6,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MB LTE Attach Operations
@@ -21,7 +22,7 @@ To establish a default EPS bearer with the network the device must request a PDP
 3.	The device does not specify a LTE attach APN and lets network assign one back to the device.
 4.	The device registered from a 2G/3G network to LTE and there was already at minimum one active PDP context. The network uses it as the LTE attach APN.
 
-Today, all LTE attach APN information is provided by IHVs and OEMs directly in the modem for each provider for which it has configuration. However, it is not a fully scalable model for IHVs and OEMs to have all possible LTE attach APN settings for all operators around the globe. Starting in Windows 10, version 1703, new interfaces are defined for both NDIS OIDs and MBIM Microsoft proprietary CIDs to support LTE attach APN configuration from the OS. Similar to how the OS receives traditional Internet APN configuration from users, enterprises, operators, and other sources, LTE attach APN management will also be part of Windows moving forward.
+Today, all LTE attach APN information is provided by IHVs and OEMs directly in the modem for each provider for which it has configuration. However, it is not a fully scalable model for IHVs and OEMs to have all possible LTE attach APN settings for all operators around the globe. Starting in Windows 10, version 1703, new interfaces are defined for both NDIS OIDs and MBIM Microsoft proprietary CIDs to support LTE attach APN configuration from the OS. 
 
 Starting in Windows 10, version 1703, if the underlying hardware supports LTE attach APN configuration from the OS then the user will be able to configure the LTE attach APN from Settings. Hardware that has default LTE attach APN configurations must also make its configuration available by the OS.
 
@@ -42,9 +43,9 @@ UUID Value = **3d01dcc5-fef5-4d05-0d3abef7058e9aaf**
 | MBIM_CID_MS_LTE_ATTACH_CONFIG | 3 | Windows 10, version 1703 |
 | MBIM_CID_MS_LTE_ATTACH_STATUS | 4 | Windows 10, version 1703 |
 
-### MBIM_CID_MS_LTE_ATTACH_CONFIG
+## MBIM_CID_MS_LTE_ATTACH_CONFIG
 
-#### Description
+### Description
 
 LTE attach contexts can be different , depending on how the network interacts with the device during runtime. For the rest of this documentation, LTE attach context will be referred to as the current PDP context that is being used for LTE attach and default LTE attach context will be referred to as what is configured on the device performing LTE attach with when there is no other existing enabled PDP context.  MBIM_CID_MS_LTE_ATTACH_CONFIG enables the OS to Query and Set the default LTE attach context of the inserted SIM’s provider (MCC/MNC pair). 
 
@@ -64,7 +65,8 @@ This is important as the OS is not aware of all the PDP contexts that were initi
 | IPv6 | Default; IPv6; IPv4v6; IPv4 and v6 | IPv4 |
 | IPv4v6 | Default; IPv4; IPv6; IPv4v6; IPv4 and v6 | None |
 
-**Note** The modem should not bring up a second PDP context if only one of the IP type is enabled over the air. For example, if IPv4 is enabled and the host requests IPv4 and IPv6 then the modem should complete the activation request without bringing up an IPv6 bearer.
+> [!NOTE]
+> The modem should not bring up a second PDP context if only one of the IP type is enabled over the air. For example, if IPv4 is enabled and the host requests IPv4 and IPv6 then the modem should complete the activation request without bringing up an IPv6 bearer.
 
 When the OS issues a MBIM_CID_CONNECT request to deactivate a PDP context then the modem should check the following:
 
@@ -83,36 +85,36 @@ IHVs and OEMs can preconfigure LTE attach context as the default configuration i
 
 Per the 3GPP standard, the default LTE attach context can be split into two categories: UE-initiated and network-initiated. If the device is configured with a NULL empty access string, the device is expected not to provide any LTE attach context to the network and wait for the network to assign one back to the device. Just as prescribed by MBIM 1.0, if the LTE attach context’s IP type is configured to be default then the modem should select the best IP type based on its internal algorithm.
 
-The below diagram illustrates an example flow of LTE attach configuration.
+The following diagram illustrates an example flow of LTE attach configuration.
 
 ![LTE attach config example flow](images/LTE_attach_1.png "LTE attach config example flow")
 
-##### Query
+#### Query
 
 MBIM_MS_LTE_ATTACH_CONFIG_INFO is returned from completed Query and Set messages in the InformationBuffer. For Query, the InformationBuffer is NULL.
 
-##### Set
+#### Set
 
 For Set, the InformationBuffer contains an MBIM_MS_SET_LTE_ATTACH_CONFIG.
 
-##### Unsolicited Events
+#### Unsolicited Events
 
 The Event InformationBuffer contains an MBIM_MS_LTE_ATTACH_CONFIG_INFO structure. In some cases, the default LTE attach context is updated by the network either Over-The-Air (OTA) or by Short Message Service (SMS) that does not go over the MBIM_CID_MS_LTE_ATTACH_CONFIG command from the OS. The function must update default LTE attach contexts and tag MBIM_MS_CONTEXT_SOURCE = MbimMsContextSourceOperatorProvisioned accordingly. After that, functions must notify the Host about updates that use this event with the updated list.
 
-#### Parameters
+### Parameters
 
 |  | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_SET_MS_LTE_ATTACH_CONFIG | Not applicable | Not applicable |
 | Response | MBIM_MS_LTE_ATTACH_CONFIG_INFO | MBIM_MS_LTE_ATTACH_CONFIG_INFO | MBIM_MS_LTE_ATTACH_CONFIG_INFO |
 
-#### Data Structures
+### Data Structures
 
-##### Query 
+#### Query 
 
 The InformationBuffer shall be NULL and InformationBufferLength shall be zero.
 
-##### Set
+#### Set
 
 The following MBIM_MS_SET_LTE_ATTACH_CONFIG structure shall be used in the InformationBuffer. The Set command is only valid if the list contains an element count of three, one for each roaming condition (home/partner/non-partner).
 
@@ -167,7 +169,7 @@ MBIM_MS_CONTEXT_SOURCE specifies the creation source of the context.
 | MbimMsContextSourceModem | 3 | The context was created by the IHV or OEM. |
 | MbimMsContextSourceDevice | 4 | The context was created by the OS APN database. |
 
-##### Response
+#### Response
 
 The following MBIM_MS_LTE_ATTACH_CONFIG_INFO structure shall be used in the InformationBuffer.
 
@@ -177,11 +179,11 @@ The following MBIM_MS_LTE_ATTACH_CONFIG_INFO structure shall be used in the Info
 | 4 | 8 * EC | MsLteAttachContextRefList | OL_PAIR_LIST | The first element of the pair is a 4-byte offset, calculated from the beginning (offset 0) of this MBIM_MS_LTE_ATTACH_CONFIG_INFO structure, to an MBIM_MS_LTE_ATTACH_CONTEXT structure (For more information, see the MBIM_MS_LTE_ATTACH_CONTEXT table). The second element of the pair is a 4-byte size of a pointer to the corresponding MBIM_MS_LTE_ATTACH_CONTEXT structure. |
 | 4 + (8 * EC) |  | DataBuffer | DATABUFFER | Array of MBIM_MS_LTE_ATTACH_CONTEXT structures. |
 
-##### Notification
+#### Notification
 
 For more information, see the MBIM_MS_LTE_ATTACH_CONFIG_INFO table.
 
-#### Status Codes
+### Status Codes
 
 For Query and Set operations:
 
@@ -197,9 +199,9 @@ For Set operations only:
 | MBIM_STATUS_INVALID_PARAMETERS | The operation failed because of invalid parameters. |
 | MBIM_STATUS_WRITE_FAILURE  | The operation failed because the update request was unsuccessful. |
 
-### MBIM_CID_MS_LTE_ATTACH_STATUS
+## MBIM_CID_MS_LTE_ATTACH_STATUS
 
-#### Description
+### Description
 
 Per 3GPP requirement, although a device can specify the default LTE attach context to be used when LTE attaching to the network without any enabled PDP context, there might be situations where the device will LTE-attach on a PDP context that differs from the default LTE attach context configured on the device. The following is a list of all possible scenarios:
 
@@ -224,36 +226,36 @@ The below diagram illustrates an example message flow for LTE attach status.
 
 ![LTE attach status example flow](images/LTE_attach_2.png "LTE attach status example flow")
 
-##### Query
+#### Query
 
 MBIM_MS_LTE_ATTACH_STATUS is returned from Query complete messages in the InformationBuffer. For Query, the InformationBuffer is NULL.
 
-##### Set 
+#### Set 
 
 Set operations are not supported.
 
-##### Unsolicited Events
+#### Unsolicited Events
 
 The Event InformationBuffer contains an MBIM_MS_LTE_ATTACH_STATUS structure.
 
-#### Parameters
+### Parameters
 
 |  | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | Not applicable | Not applicable |
 | Response | Not applicable | MBIM_MS_LTE_ATTACH_STATUS | MBIM_MS_LTE_ATTACH_STATUS |
 
-#### Data Structures
+### Data Structures
 
-##### Query
+#### Query
 
 The InformationBuffer shall be NULL and InformationBufferLength shall be zero.
 
-##### Set
+#### Set
 
 Set operations are not supported.
 
-##### Response
+#### Response
 
 The following MBIM_MS_LTE_ATTACH_STATUS structure shall be used in the InformationBuffer.
 
@@ -280,11 +282,11 @@ MBIM_MS_LTE_ATTACH_STATE indicates whether the device is currently attached to a
 | MbimMsLteAttachStateDetached | 0 | Indicates the device is not attached to LTE network. |
 | MbimMsLteAttachStateAttached | 1 | Indicates the device is attached to LTE network. |
 
-##### Notification
+#### Notification
 
 For more information, see the MBIM_MS_LTE_ATTACH_STATUS table.
 
-#### Status Codes
+### Status Codes
 
 For Query and Set operations:
 
@@ -292,7 +294,3 @@ For Query and Set operations:
 | --- | --- |
 | MBIM_STATUS_READ_FAILURE | The operation failed because the device was unable to retrieve provisioned contexts. |
 | MBIM_STATUS_NO_DEVICE_SUPPORT | The operation failed because the device does not support the operation. |
-
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Slicer%20settings%20%20RELEASE:%20%289/2/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-

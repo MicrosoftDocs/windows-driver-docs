@@ -14,13 +14,15 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Miniport Adapter Check-for-Hang and Reset Operations
 
+## Overview
 
-## <a href="" id="ddk-adapter-check-for-hang-and-reset-ng"></a>
-
+> [!WARNING]
+> Check-for-Hang (CFH) and Reset operations are discouraged for all NDIS 6.83 and later drivers. For more information, see [Check-for-Hang and Reset operations in NDIS 6.83 and later](#check-for-hang-and-reset-operations-in-ndis-683-and-later).
 
 NDIS calls an NDIS miniport driver's [*MiniportCheckForHangEx*](https://msdn.microsoft.com/library/windows/hardware/ff559346) function to check the operational state of an NDIS adapter that represents a network interface card (NIC). *MiniportCheckForHangEx* checks the internal state of the adapter and returns **TRUE** if it detects that the adapter is not operating correctly.
 
@@ -39,6 +41,20 @@ The reset operation does not affect [miniport adapter operational states](minipo
 For a reset operation, the driver can fail transmit request packets or it can keep them queued and complete them later. However, you should note that an overlying driver cannot complete a pause operation while its transmit packets are pending.
 
 A miniport driver can complete a reset request synchronously by returning a success or failure status. The driver can complete a reset request asynchronously by returning **NDIS\_STATUS\_PENDING**. In this case, the driver must call [**NdisMResetComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563663) to complete the operation.
+
+## Check-for-Hang and Reset operations in NDIS 6.83 and later
+
+In versions of NDIS before 6.83, Check-for-Hang (CFH) and Reset operations were discouraged for Always On, Always Connected (AOAC) systems due to battery life issues. However, drivers could still use CFH on other non-AOAC Windows systems by implementing the optional [*MiniportCheckForHangEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_check_for_hang) and [*MiniportResetEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_reset) callback functions. 
+
+Starting in NDIS 6.83, these callback functions are discouraged on **all** Windows systems regardless of power capabilities. Although it is not a logo test violation to use CFH in NDIS 6.83 and later, NDIS drivers should use the following table for guidance about its usage.
+
+| Caller | Recommendation | Notes |
+| --- | --- | --- |
+| Drivers targeting AOAC systems | Must not implement | Causes battery life issues due to periodic check-for-hang activity |
+| Drivers targeting Windows Server systems | Must not implement | Causes issues when the CPU is stressed |
+| Virtual (software-only) miniport drivers | Must not implement | Reset not possible without hardware |
+| Other new NDIS 6.83 and later drivers | Should not implement |
+| Other existing NDIS 6.82 and earlier code | Not required to change, but should consider removing Check-for-Hang and Reset in future rework |
 
 ## Related topics
 

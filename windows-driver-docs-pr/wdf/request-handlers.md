@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Request Handlers
 
 
-## <a href="" id="ddk-i-o-queue-event-callbacks-df"></a>
+
 
 
 If your driver has specified either the sequential or the parallel [dispatching method](dispatching-methods-for-i-o-requests.md) for an I/O queue, the framework calls a driver-supplied callback function each time it is ready to deliver one of the queue's requests to the driver.

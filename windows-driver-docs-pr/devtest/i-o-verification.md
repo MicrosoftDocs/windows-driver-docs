@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # I/O Verification
@@ -75,6 +76,16 @@ Starting in Window Vista, the I/O Verification option checks for the following d
 
 -   Calling [**IoReleaseRemoveLock**](https://msdn.microsoft.com/library/windows/hardware/ff549560) or [**IoReleaseRemoveLockAndWait**](https://msdn.microsoft.com/library/windows/hardware/ff549567) with a tag parameter that differs from the tag parameter used in the corresponding [**IoAcquireRemoveLock**](https://msdn.microsoft.com/library/windows/hardware/ff548204) call.
 
+-   Calling [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) with interrupts disabled.
+
+-   Calling [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) at IRQL greater than DISPATCH\_LEVEL.
+
+-   Returning from a driver dispatch routine with interrupts disabled.
+
+-   Returning from a driver dispatch routine with a changed IRQL.
+
+-   Returning from a driver dispatch routine with APCs disabled. In this case, the driver might have called [**KeEnterCriticalRegion**](https://msdn.microsoft.com/library/windows/hardware/ff552021) more times than [**KeLeaveCriticalRegion**](https://msdn.microsoft.com/library/windows/hardware/ff552964), which is the primary cause for [**Bug Check 0x20**](https://msdn.microsoft.com/library/windows/hardware/ff557421) (KERNEL\_APC\_PENDING\_DURING\_EXIT) and [**Bug Check 0x1**](https://msdn.microsoft.com/library/windows/hardware/ff557419) (APC\_INDEX\_MISMATCH).
+
 Starting in Windows 7, the I/O Verification option checks for the following driver errors:
 
 -   Attempts to free IRPs by calling [**ExFreePool**](https://msdn.microsoft.com/library/windows/hardware/ff544590). IRPs must be freed with [**IoFreeIrp**](https://msdn.microsoft.com/library/windows/hardware/ff549113).
@@ -137,7 +148,6 @@ You can activate the I/O Verification feature for one or more drivers by using D
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20I/O%20Verification%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

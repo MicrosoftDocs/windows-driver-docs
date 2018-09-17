@@ -15,6 +15,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Inf2Cat
@@ -28,6 +29,9 @@ Inf2Cat (Inf2Cat.exe) is a command-line tool that determines whether a [driver p
      /os:
     WindowsVersionList [/nocat] [/verbose] [/?] [other switches]
 ```
+
+> [!TIP]
+> If you see `DriverVer set to a date in the future` when building your driver, change your driver package project settings so that Inf2Cat sets `/uselocaltime`. To do so, use **Configuration Properties->Inf2Cat->General->Use Local Time**. Now both [Stampinf](stampinf-command-options.md) and Inf2Cat use local time.
 
 ### <span id="switches_and_arguments"></span><span id="SWITCHES_AND_ARGUMENTS"></span>Switches and Arguments
 
@@ -44,112 +48,28 @@ Configures Inf2Cat to verify that the [driver package](https://msdn.microsoft.co
 <span id="_os_WindowsVersionList"></span><span id="_os_windowsversionlist"></span><span id="_OS_WINDOWSVERSIONLIST"></span>**/os:***WindowsVersionList*  
 Configures Inf2Cat to verify that a [driver package's](https://msdn.microsoft.com/library/windows/hardware/ff544840) INF file complies with the signing requirements for the Windows versions that are specified by *WindowsVersionList*. *WindowsVersionList* is a comma-separated list that includes one or more of the following version identifiers.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Windows version</th>
-<th align="left">Version identifier</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Windows 8.1 x86 Edition</p></td>
-<td align="left"><p>6_3_X86</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows 8.1 x64 Edition</p></td>
-<td align="left"><p>6_3_X64</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows 8.1 ARM Edition</p></td>
-<td align="left"><p>6_3_ARM</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows Server 2012 R2</p></td>
-<td align="left"><p>Server6_3_X64</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows 8 x64 Edition</p></td>
-<td align="left"><p>8_X64</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows 8 x86 Edition</p></td>
-<td align="left"><p>8_X86</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows 8 ARM Edition</p></td>
-<td align="left"><p>8_ARM</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows Server 2012</p></td>
-<td align="left"><p>Server8_X64</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Server 2008 R2 x64 Edition</p></td>
-<td align="left"><p>Server2008R2_X64</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows Server 2008 R2 Itanium Edition</p></td>
-<td align="left"><p>Server2008R2_IA64</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows 7 x64 Edition</p></td>
-<td align="left"><p>7_X64</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows 7 x86 Edition</p></td>
-<td align="left"><p>7_X86</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Server 2008 x64 Edition</p></td>
-<td align="left"><p>Server2008_X64</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows Server 2008 Itanium Edition</p></td>
-<td align="left"><p>Server2008_IA64</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Server 2008 x86 Edition</p></td>
-<td align="left"><p>Server2008_X86</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows Vista x64 Edition</p></td>
-<td align="left"><p>Vista_X64</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Vista x86 Edition</p></td>
-<td align="left"><p>Vista_X86</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows Server 2003 x64 Edition</p></td>
-<td align="left"><p>Server2003_X64</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Server 2003 Itanium Edition</p></td>
-<td align="left"><p>Server2003_IA64</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows Server 2003 x86 Edition</p></td>
-<td align="left"><p>Server2003_X86</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows XP x64 Edition</p></td>
-<td align="left"><p>XP_X64</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows XP x86 Edition</p></td>
-<td align="left"><p>XP_X86</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows 2000</p></td>
-<td align="left"><p>2000</p></td>
-</tr>
-</tbody>
-</table>
+|Windows version|Version identifier|
+|--- |--- |
+|Windows 10 x86 Edition|10_X86|
+|Windows 10 x64 Edition|10_X64|
+|Windows Server 2016|Server10_X64|
+|Windows Server 2016 on ARM|Server10_ARM64|
+|Windows 8.1 x86 Edition|6_3_X86|
+|Windows 8.1 x64 Edition|6_3_X64|
+|Windows 8.1 ARM Edition|6_3_ARM|
+|Windows Server 2012 R2|Server6_3_X64|
+|Windows 8 x64 Edition|8_X64|
+|Windows 8 x86 Edition|8_X86|
+|Windows 8 ARM Edition|8_ARM|
+|Windows Server 2012|Server8_X64|
+|Windows Server 2008 R2 x64 Edition|Server2008R2_X64|
+|Windows Server 2008 R2 Itanium Edition|Server2008R2_IA64|
+|Windows 7 x64 Edition|7_X64|
+|Windows 7 x86 Edition|7_X86|
+|Windows Server 2008 x64 Edition|Server2008_X64|
+|Windows Server 2008 Itanium Edition|Server2008_IA64|
+|Windows Server 2008 x86 Edition|Server2008_X86|
+
 
  
 
@@ -221,7 +141,6 @@ For more information about how to use Inf2Cat to create a catalog file, see [Cre
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Inf2Cat%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

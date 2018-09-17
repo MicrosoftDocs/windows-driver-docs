@@ -9,12 +9,15 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # CM_PROB_INVALID_DATA
 
+This function is reserved for system use.
 
-## <a href="" id="ddk-cm-prob-invalid-data-dg"></a>
+
+
 
 
 Invalid [device IDs](device-ids.md) have been detected.

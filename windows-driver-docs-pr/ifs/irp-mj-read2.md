@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Checking the Oplock State of an IRP_MJ_READ operation
@@ -118,6 +119,5 @@ The following only applies when a *stream* is being read. If a TxF transacted re
  
 
 
---------------------
 
 

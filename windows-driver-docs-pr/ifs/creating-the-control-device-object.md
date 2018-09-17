@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating the Control Device Object
@@ -57,6 +58,5 @@ An effective way for a file system filter driver to identify its own control dev
  
 
 
---------------------
 
 

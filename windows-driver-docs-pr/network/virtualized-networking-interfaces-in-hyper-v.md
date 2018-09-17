@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Virtualized Networking Interfaces in Hyper-V
 
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 This section describes the various NDIS virtualized networking interfaces that are supported in Hyper-V. This section includes the following topics:

@@ -10,6 +10,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating Contexts
@@ -50,6 +51,5 @@ This is a fixed-size context definition, because the **Size** member is a consta
  
 
 
---------------------
 
 

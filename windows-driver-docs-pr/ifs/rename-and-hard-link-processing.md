@@ -15,6 +15,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Rename and Hard Link Processing
@@ -140,6 +141,5 @@ The following code example to handle a rename operation mimics the file system c
  
 
 
---------------------
 
 

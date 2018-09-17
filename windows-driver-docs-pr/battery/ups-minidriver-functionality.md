@@ -9,6 +9,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # UPS Minidriver Functionality
@@ -42,6 +43,5 @@ Typically, a UPS minidriver communicates with a UPS unit through a COM port by c
  
 
 
---------------------
 
 

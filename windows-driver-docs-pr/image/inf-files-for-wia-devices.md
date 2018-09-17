@@ -4,16 +4,14 @@ author: windows-driver-content
 description: INF Files for WIA Devices
 ms.assetid: 65eac8b5-35d2-4537-8646-a35a1cf9aced
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF Files for WIA Devices
-
-
-## <a href="" id="ddk-inf-files-for-wia-devices-si"></a>
 
 
 The default class installer for still image devices, *sti\_ci.dll*, recognizes a special set of INF file entries. Within an INF file, these entries must be placed within a device's [**INF DDInstall Section**](https://msdn.microsoft.com/library/windows/hardware/ff547344). The entries are described in the following table.
@@ -151,7 +149,7 @@ The entries in the following table must be placed within the section pointed to 
 <td><p><strong>USDClass</strong></p></td>
 <td><p>Indicates the GUID for the minidriver.</p></td>
 <td><p>Optional.</p>
-<p>The GUID in the <strong>USDClass</strong> and <strong>CLSID</strong> entries must match the GUID that is used in the <strong>DllGetClassObject</strong> function (described in the Windows SDK documentation) of the minidriver. If you are writing a microdriver, the value should be BB6CF8E2-1511-40bd-91BA-80D43C53064E. Otherwise, you must generate a new GUID, using, for example, <em>genguid.exe</em>.</p></td>
+<p>The GUID in the <strong>USDClass</strong> and <strong>CLSID</strong> entries must match the GUID that is used in the <strong>DllGetClassObject</strong> function of the minidriver. If you are writing a microdriver, the value should be BB6CF8E2-1511-40bd-91BA-80D43C53064E. Otherwise, you must generate a new GUID, using, for example, <em>genguid.exe</em>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CLSID</strong></p></td>
@@ -252,7 +250,7 @@ The default INF file for still image devices, *sti.inf*, defines two installatio
 
      
 
-For additional guidance in creating INF files for still image devices, you can look at any INF file provided with Windows 2000 and later that contains the entry SubClass=StillImage.
+For additional guidance in creating INF files for still image devices, you can look at any INF file provided with Windows that contains the entry SubClass=StillImage.
 
 To designate the device as a WIA device, the minidriver INF file must contain the following values placed within the *DeviceData* section of the vendor-supplied INF file.
 
@@ -273,7 +271,7 @@ To designate the device as a WIA device, the minidriver INF file must contain th
 <tr class="odd">
 <td><p><strong>Server</strong></p></td>
 <td><p>Local</p></td>
-<td><p>Designates the device as a local device. This is optional for Windows XP and later. If a vendor does not specify an entry value, the device is assumed to be local. That is, the WIA_DIP_SERVER_NAME property is set to Local.</p></td>
+<td><p>Designates the device as a local device. This is optional and if a vendor does not specify an entry value, the device is assumed to be local. That is, the WIA_DIP_SERVER_NAME property is set to Local.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>MicroDriver</strong></p></td>
@@ -288,12 +286,12 @@ To designate the device as a WIA device, the minidriver INF file must contain th
 <tr class="even">
 <td><p><strong>UI Class ID</strong></p></td>
 <td><p>Vendor-supplied device class identifier</p></td>
-<td><p>Indicates the device class the vendor-supplied user interface is capable of supporting. This is optional for Windows XP and later. If a vendor does not specify an entry value, WIA sets the WIA_DIP_UI_CLSID property to GUID_NULL and the default WIA UI is used.</p></td>
+<td><p>Indicates the device class the vendor-supplied user interface is capable of supporting. This is optional and if a vendor does not specify an entry value, WIA sets the WIA_DIP_UI_CLSID property to GUID_NULL and the default WIA UI is used.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>ICMProfiles</strong></p></td>
 <td><p>Vendor-supplied color profile value</p></td>
-<td><p>Specifies a value to put in the WIA_IPA_ICM_PROFILE_NAME property (described in the Windows SDK documentation). If no value is specified, the standard sRGB profile <em>sRGB Color Space Profile.icm</em> is used.</p></td>
+<td><p>Specifies a value to put in the WIA_IPA_ICM_PROFILE_NAME property. If no value is specified, the standard sRGB profile <em>sRGB Color Space Profile.icm</em> is used.</p></td>
 </tr>
 </tbody>
 </table>
@@ -313,7 +311,5 @@ When you're developing an INF file for scanners, you can use [Microsoft OS descr
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20INF%20Files%20for%20WIA%20Devices%20%20RELEASE:%20%288/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

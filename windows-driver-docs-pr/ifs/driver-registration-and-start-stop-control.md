@@ -15,6 +15,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Driver Registration and Start/Stop Control
@@ -129,6 +130,5 @@ The following macro is defined in the mrx.h header file that calls one of these 
  
 
 
---------------------
 
 

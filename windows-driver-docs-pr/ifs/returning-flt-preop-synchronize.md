@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Returning FLT\_PREOP\_SYNCHRONIZE
@@ -50,6 +51,5 @@ FLT\_PREOP\_SYNCHRONIZE cannot be returned for any of these operations.
  
 
 
---------------------
 
 

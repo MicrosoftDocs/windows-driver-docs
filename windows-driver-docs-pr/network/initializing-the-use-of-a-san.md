@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing the Use of a SAN
 
 
-## <a href="" id="ddk-initializing-the-use-of-a-san-ng"></a>
+
 
 
 The following topics describe how to initialize the use of a SAN:

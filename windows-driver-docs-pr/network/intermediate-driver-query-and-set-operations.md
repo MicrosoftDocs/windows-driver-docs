@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Intermediate Driver Query and Set Operations
 
 
-## <a href="" id="ddk-intermediate-driver-query-and-set-operations-ng"></a>
+
 
 
 After it has successfully bound to an underlying miniport adapter and initialized its virtual miniports, an intermediate driver queries the operating characteristics of the underlying miniport adapter and sets its own internal state. If appropriate, the intermediate driver also negotiates such parameters as lookahead buffer size for the binding with the underlying miniport adapter. Most of the attributes that are associated with an underlying miniport adapter are passed to the intermediate driver at the *BindParameters* parameter of the [*ProtocolBindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570220) function. Intermediate drivers should use the values that are passed to *ProtocolBindAdapterEx*, if possible, instead of issuing OID queries. However, an intermediate driver with a connectionless lower edge can issue OID queries by calling [**NdisOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff563710). An intermediate driver with a connection-oriented lower edge can issue OID queries by calling [**NdisCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561711).

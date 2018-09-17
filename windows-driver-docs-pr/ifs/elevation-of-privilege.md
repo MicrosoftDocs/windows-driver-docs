@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Elevation of Privilege
@@ -38,6 +39,5 @@ This type of exploit is most important for those implementing file systems. This
  
 
 
---------------------
 
 

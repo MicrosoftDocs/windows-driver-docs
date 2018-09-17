@@ -14,6 +14,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registry Entries for Plug and Play SCSI Miniport Drivers
@@ -54,6 +55,5 @@ After the **PnPInterface** values are set in the registry and the system is rest
  
 
 
---------------------
 
 

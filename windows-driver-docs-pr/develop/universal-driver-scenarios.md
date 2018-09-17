@@ -1,6 +1,17 @@
+---
+title: Universal Driver Scenarios
+description: Describes how the DCHU universal driver sample applies the DCHU design principles (Declarative, Componentized, Hardware Support Apps [HSA], and Universal API compliance).
+ms.author: windowsdriverdev
+ms.date: 04/04/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.localizationpriority: medium
+---
+
 # Universal Driver Scenarios
 
-This topic describes how the [DCHU universal driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU) applies the DCHU design principles.  You can use it as a model for your own universal driver package.
+This topic describes how the [DCHU universal driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU) applies the DCHU [design principles](getting-started-with-universal-drivers.md) (Declarative, Componentized, Hardware Support Apps [HSA], and Universal API compliance).  You can use it as a model for your own universal driver package.
 
 If you would like a local copy of the sample repo, clone from [Windows-driver-samples](https://github.com/Microsoft/Windows-driver-samples).
 
@@ -12,7 +23,7 @@ Before you read this section, check out the requirements and best practices for 
 
 ## Overview
 
-The DCHU sample provides example scenarios where two hardware partners, Contoso (OEM) and Fabrikam (IHV) are working together to create a Universal Windows Driver for a device in Contoso's upcoming system.  The device in question is an [OSR USB FX2 learning kit](https://store.osr.com/product/osr-usb-fx2-learning-kit-v2/).  In the past, Fabrikam would write a non-universal driver package that was customized to a specific Contoso product line, and then hand it to the OEM to handle servicing.  This resulted in significant maintenance overhead, so Fabrikam decides to refactor the code and create a universal driver package instead.
+The DCHU sample provides example scenarios where two hardware partners, Contoso (a system builder, or OEM) and Fabrikam (a device manufacturer, or IHV) are working together to create a Universal Windows Driver for a device in Contoso's upcoming system.  The device in question is an [OSR USB FX2 learning kit](https://store.osr.com/product/osr-usb-fx2-learning-kit-v2/).  In the past, Fabrikam would write a non-universal driver package that was customized to a specific Contoso product line, and then hand it to the OEM to handle servicing.  This resulted in significant maintenance overhead, so Fabrikam decides to refactor the code and create a universal driver package instead.
 
 ## Use only declarative sections and directives
 
@@ -56,7 +67,7 @@ Note that extensions are always processed after the base INF in no definite orde
 
 ## Install a service from an INF file
 
-Fabrikam uses a Win32 service to control the the LEDs on the OSR board. They view this component as part of the core functionality of the device, so they include it as part of their base INF ([`osrfx2_DCHU_base.inx`]).  This user-mode service (usersvc) can be added and started declaratively by specifying the [**AddService**](../install/inf-addservice-directive.md) directive in the INF file:
+Fabrikam uses a Win32 service to control the LEDs on the OSR board. They view this component as part of the core functionality of the device, so they include it as part of their base INF ([`osrfx2_DCHU_base.inx`]).  This user-mode service (usersvc) can be added and started declaratively by specifying the [**AddService**](../install/inf-addservice-directive.md) directive in the INF file:
 
 ```
 [OsrFx2_Install.NT]
@@ -197,6 +208,8 @@ Note that the component INF will match on the component hardware ID, whereas the
 ## See also
 
 [Getting Started with Universal Windows drivers](getting-started-with-universal-drivers.md)
+
+[Using an Extension INF File](../install/using-an-extension-inf-file.md)
 
 [`osrfx2_DCHU_base.inx`]: https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_base/osrfx2_DCHU_base/osrfx2_DCHU_base.inx
 [`osrfx2_DCHU_usersvc.inx`]: https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_base/osrfx2_DCHU_usersvc/osrfx2_DCHU_usersvc.inx

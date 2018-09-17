@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Pre- and Post-Processing of CDBs and Sense Codes
@@ -20,6 +21,5 @@ Storport does not validate, reject, or transform in any way the SCSI command des
  
 
 
---------------------
 
 

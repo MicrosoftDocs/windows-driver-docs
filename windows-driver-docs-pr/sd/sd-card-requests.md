@@ -16,6 +16,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SD Card Requests
@@ -111,6 +112,5 @@ This section contains two code examples: a command request that reads a byte of 
  
 
 
---------------------
 
 

@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USB\_BOS\_DESCRIPTOR
@@ -53,6 +54,5 @@ The number of separate device capability descriptors in the BOS.
  
 
 
---------------------
 
 

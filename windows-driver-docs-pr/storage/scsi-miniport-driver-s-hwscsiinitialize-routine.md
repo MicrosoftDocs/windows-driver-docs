@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SCSI Miniport Driver's HwScsiInitialize Routine
@@ -30,6 +31,5 @@ If initializing the HBA causes a bus reset, the *HwScsiInitialize* routine must 
  
 
 
---------------------
 
 

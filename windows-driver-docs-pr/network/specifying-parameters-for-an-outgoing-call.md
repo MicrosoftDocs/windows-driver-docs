@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying Parameters for an Outgoing Call
 
 
-## <a href="" id="ddk-specifying-parameters-for-an-outgoing-call-ng"></a>
+
 
 
 When making an outgoing call, a call manager or MCM that supports voice streaming must supply the following values in the [**CO\_CALL\_MANAGER\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff545381) structure:

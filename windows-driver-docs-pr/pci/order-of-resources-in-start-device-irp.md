@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Order of Resources in Start-Device IRP
@@ -23,6 +24,5 @@ The order of the resources that are reported in the start-device I/O request pac
  
 
 
---------------------
 
 

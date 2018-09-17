@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_DISPLAY\_POWER\_PROTOCOL
@@ -53,6 +54,5 @@ Returns the current power state of the display and backlight. For more informati
  
 
 
---------------------
 
 

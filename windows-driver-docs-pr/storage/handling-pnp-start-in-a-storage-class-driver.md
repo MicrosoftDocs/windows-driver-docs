@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling PnP Start in a Storage Class Driver
@@ -38,6 +39,5 @@ For more information about a storage class driver's *DispatchPnP* routine, see [
  
 
 
---------------------
 
 

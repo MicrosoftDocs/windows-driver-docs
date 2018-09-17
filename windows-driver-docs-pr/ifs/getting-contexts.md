@@ -10,6 +10,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Getting Contexts
@@ -40,6 +41,5 @@ If the call to [**FltGetVolumeContext**](https://msdn.microsoft.com/library/wind
  
 
 
---------------------
 
 

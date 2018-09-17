@@ -15,6 +15,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF DDInstall.Services Section
@@ -26,6 +27,8 @@ Each per-Models *DDInstall***.Services** section contains one or more [**INF Add
 [install-section-name.Services] |
 [install-section-name.nt.Services] |
 [install-section-name.ntx86.Services] |
+[install-section-name.ntarm.Services] | (Windows 8 and later versions of Windows)
+[install-section-name.ntarm64.Services] | (Windows 10 version 1709 and later versions of Windows)
 [install-section-name.ntia64.Services] |  (Windows XP and later versions of Windows)
 [install-section-name.ntamd64.Services]  (Windows XP and later versions of Windows)
  

@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using a NET\_LUID Index
 
 
-## <a href="" id="ddk-using-net-luid-indexes-ng"></a>
+
 
 
 NDIS provides functions to allocate and free the [**NET\_LUID**](https://msdn.microsoft.com/library/windows/hardware/ff568747) indexes that are required to create NET\_LUID values. An NDIS interface provider must allocate a NET\_LUID value to register an interface.

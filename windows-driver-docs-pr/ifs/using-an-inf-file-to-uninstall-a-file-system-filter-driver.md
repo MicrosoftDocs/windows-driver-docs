@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using an INF File to Uninstall a File System Filter Driver
@@ -62,6 +63,5 @@ For more information about uninstall applications, see [Writing a Device Install
  
 
 
---------------------
 
 

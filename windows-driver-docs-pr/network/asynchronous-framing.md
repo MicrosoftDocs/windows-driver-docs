@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Asynchronous Framing
 
 
-## <a href="" id="ddk-asynchronous-framing-ng"></a>
+
 
 
 The following diagram illustrates asynchronous framing with compression turned off.

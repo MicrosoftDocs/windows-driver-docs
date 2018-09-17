@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Memory Mapped Files in a File System Filter Driver
@@ -26,6 +27,5 @@ A file system filter driver must be cognizant of the fact that files may be acce
  
 
 
---------------------
 
 

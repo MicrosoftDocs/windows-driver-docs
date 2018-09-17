@@ -3,6 +3,7 @@ title: Run-Down Protection
 author: windows-driver-content
 description: Starting with Windows XP, run-down protection is available to kernel-mode drivers. Drivers can use run-down protection to safely access objects in shared system memory that are created and deleted by another kernel-mode driver.
 ms.assetid: AF451636-DBA0-4905-9723-73EE7AA9483E
+ms.localizationpriority: medium
 ---
 
 # Run-Down Protection
@@ -36,7 +37,7 @@ For example, an antivirus driver typically stays loaded in memory when the opera
 
 Run-down protection does not serialize accesses to a shared object. If two or more accessing drivers can simultaneously hold run-down protection on an object, and accesses to the object must be serialized, some other mechanism, such as a mutual-exclusion lock, must be used to serialize the accesses.
 
-## <a href="" id="the-ex-rundown-ref-structure"></a>The EX\_RUNDOWN\_REF structure
+## The EX\_RUNDOWN\_REF structure
 
 
 An [**EX\_RUNDOWN\_REF**](https://msdn.microsoft.com/library/windows/hardware/jj569379) structure tracks the status of run-down protection on a shared object. This structure is opaque to drivers. The system-supplied run-down protection routines use this structure to count the number of instances of run-down protection that are currently in effect on the object. These routines also use this structure to track whether the object is run down or is in the process of being run down.
@@ -66,7 +67,5 @@ The [**ExAcquireRundownProtectionEx**](https://msdn.microsoft.com/library/window
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Run-Down%20Protection%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

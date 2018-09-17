@@ -15,6 +15,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF DDInstall.HW Section
@@ -26,6 +27,8 @@ ms.technology: windows-devices
 [install-section-name.HW] |
 [install-section-name.nt.HW] |
 [install-section-name.ntx86.HW] |
+[install-section-name.ntarm.HW] | (Windows 8 and later versions of Windows)
+[install-section-name.ntarm64.HW] | (Windows 10 version 1709 and later versions of Windows)
 [install-section-name.ntia64.HW] |  (Windows XP and later versions of Windows)
 [install-section-name.ntamd64.HW]  (Windows XP and later versions of Windows)
  
@@ -40,7 +43,7 @@ ms.technology: windows-devices
 
 
 <a href="" id="addreg-add-registry-section--add-registry-section----"></a>**AddReg=***add-registry-section*\[**,***add-registry-section*\]...  
-References one or more INF-writer-defined *add-registry-sections* elsewhere in the INF file for the devices covered by this *DDInstall***.HW** section. The *add-registry-section* typically installs filters and/or stores per-device information in the registry. An **HKR** specification in such an *add-registry-section* specifies the device's [*hardware key*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hardware-key).
+References one or more INF-writer-defined *add-registry-sections* elsewhere in the INF file for the devices covered by this *DDInstall***.HW** section. The *add-registry-section* typically installs filters and/or stores per-device information in the registry. An **HKR** specification in such an *add-registry-section* specifies the device's *hardware key*, a device-specific registry subkey that contains information about the device. A hardware key is also called a device key. For more info, see [Registry Trees and Keys for Devices and Drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/registry-trees-and-keys). A driver package can add settings via an INF by using an **HKR** specification in an add-registry-section referenced by a **DDInstall.HW section**. 
 
 For more information, see [**INF AddReg Directive**](inf-addreg-directive.md).
 
@@ -110,7 +113,7 @@ AddReg=changer_addreg
 ; ... some similar cdrom_install(.HW)/addreg sections omitted 
 
 [cdaudio_addreg] ; changer_addreg section has similar entry
-HKR,,"UpperFilters",0x00010000,"cdaudio" ; REG_MULTI_SZ value 
+HKR,,"UpperFilters",0x00010000,"cdaudio" ; [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) value 
 
 ;
 ; Use next section to disable synchronous transfers to this device. 

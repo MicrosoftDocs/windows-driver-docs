@@ -1,17 +1,18 @@
 ---
 ms.assetid: EB2264A4-BAE8-446B-B9A5-19893936DDCA
-title: Target platform on MSDN driver reference pages
-description: In the Requirements block at the bottom of MSDN driver reference pages, you''ll see an entry called Target Platform.
+title: Target platform on driver reference pages
+description: In the Requirements block at the bottom of Microsoft driver reference pages, you''ll see an entry called Target Platform.
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
-# Target platform on MSDN driver reference pages
+# Target platform on driver reference pages
 
-In the Requirements block at the bottom of MSDN driver reference pages, you'll see an entry called **Target Platform**. This line lists editions of Windows to which the page applies.
+In the Requirements block at the bottom of Microsoft driver reference pages, you'll see an entry called **Target Platform**. This line lists editions of Windows to which the page applies.
 
 Here's an example of such an entry:
 
@@ -19,7 +20,7 @@ Here's an example of such an entry:
 
 The values specified in **Target Platform** map to the values you can use in Visual Studio, in the **Target Platform** property under **Configuration Properties-&gt;Driver Settings-&gt;General**.
 
-Here are the values you might see for **Target Platform** on MSDN, and what they mean:
+Here are the values you might see for **Target Platform**, and what they mean:
 
 <table>
 <colgroup>
@@ -39,6 +40,7 @@ Here are the values you might see for **Target Platform** on MSDN, and what they
 <p>A Universal Windows driver runs on the following Universal Windows Platform (UWP)-based editions of Windows 10:</p>
 <ul>
 <li>Windows 10 for desktop editions (Home, Pro, and Enterprise)</li>
+<li>Windows 10 in S-Mode</li>
 <li>Windows 10 Mobile</li>
 <li>Windows 10 IoT Core</li>
 <li>Windows Server 2016</li>

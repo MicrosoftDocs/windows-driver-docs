@@ -15,6 +15,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Access Mask
@@ -98,6 +99,5 @@ The actual mapping of generic rights to standard and specific rights for file ob
  
 
 
---------------------
 
 

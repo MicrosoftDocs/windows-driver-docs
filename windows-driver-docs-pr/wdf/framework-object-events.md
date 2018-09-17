@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Framework Object Events
 
 
-## <a href="" id="ddk-framework-object-events-df"></a>
+
 
 
 Some framework objects can generate events. Framework-based drivers can register to receive notification of all, some, or none of an object's events. To register for an event, the driver provides an event callback function. The framework calls the callback function when the event occurs.

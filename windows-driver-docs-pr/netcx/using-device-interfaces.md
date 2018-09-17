@@ -1,5 +1,6 @@
 ---
 title: Using Device Interfaces
+ms.localizationpriority: medium
 ---
 
 # Using Device Interfaces

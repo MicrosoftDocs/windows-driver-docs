@@ -3,7 +3,7 @@ title: Bug Check 0x97 BOUND_IMAGE_UNSUPPORTED
 description: The BOUND_IMAGE_UNSUPPORTED bug check has a value of 0x00000097.This bug check appears very infrequently.
 ms.assetid: 51d96612-d7a4-4e0f-b83b-208311cf1e1a
 keywords: ["Bug Check 0x97 BOUND_IMAGE_UNSUPPORTED", "BOUND_IMAGE_UNSUPPORTED"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -14,6 +14,7 @@ api_name:
 - BOUND_IMAGE_UNSUPPORTED
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x97: BOUND\_IMAGE\_UNSUPPORTED

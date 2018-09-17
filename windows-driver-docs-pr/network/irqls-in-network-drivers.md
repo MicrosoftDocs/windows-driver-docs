@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IRQLs in Network Drivers
 
 
-## <a href="" id="ddk-irqls-ng"></a>
+
 
 
 Every driver function called by NDIS runs at a system-determined IRQL (one of PASSIVE\_LEVEL &lt; DISPATCH\_LEVEL &lt; DIRQL). For example, a miniport driver's initialization function, halt function, reset function, and sometimes the shutdown function commonly run at PASSIVE\_LEVEL. Interrupt code runs at DIRQL, so an NDIS intermediate or protocol driver never runs at DIRQL. All other NDIS driver functions run at IRQL &lt;= DISPATCH\_LEVEL.

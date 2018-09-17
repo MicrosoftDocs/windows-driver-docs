@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initialization
@@ -20,6 +21,5 @@ The LSI\_U3 Storport miniport driver's entry points are initialized in the Drive
  
 
 
---------------------
 
 

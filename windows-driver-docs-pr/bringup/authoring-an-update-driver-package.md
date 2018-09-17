@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Authoring an update driver package
@@ -372,6 +373,5 @@ After the next reboot, the OS Loader will call into UpdateCapsule() with the pay
 [Seamless crisis prevention and recovery](seamless-crisis-prevention-and-recovery.md)  
 [Firmware update status](firmware-update-status.md)  
 
---------------------
 
 

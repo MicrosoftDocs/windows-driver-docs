@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Implementing Hardware Offloaded APO Effects
@@ -63,7 +64,7 @@ An offload SFX should review the offload pin supported formats and support/exten
 
 Offload MFX cannot change the format of the input stream, but it still needs to support the variety of formats offered by the offload endpoint and eliminate any unnecessary format conversion.
 
-During rendering in the offload pin, only one stream is active and there is no mixing of streams. So, processing the audio at both stream-level and mode-level is not necessary. Thus audio effects should not be enabled as both a stream effect and mode effect.
+During rendering in the offload pin, only one stream is active on that pin and therefore there is no mixing of streams. So, processing the audio at both stream-level and mode-level is not necessary. Thus audio effects may not need to be enabled as both a stream effect and mode effect. Offloaded endpoints will support more streams, and depending on the processing architecture for a system, Offload processing may need to be factored into SFX/MFX. 
 
 **INF file entries**
 
@@ -83,7 +84,5 @@ Implement the following INF file entries to define the effects that will be load
 [Implementing Audio Processing Objects](implementing-audio-processing-objects.md)  
 [Windows Audio Processing Objects](windows-audio-processing-objects.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Implementing%20Hardware%20Offloaded%20APO%20Effects%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

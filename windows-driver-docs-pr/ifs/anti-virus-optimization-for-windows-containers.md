@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # <span id="ifsk.anti-virus_optimization_for_windows_containers"></span>Anti-virus optimization for Windows Containers
@@ -123,6 +124,5 @@ If a container is launched in the time between signature update and the next sch
  
 
 
---------------------
 
 

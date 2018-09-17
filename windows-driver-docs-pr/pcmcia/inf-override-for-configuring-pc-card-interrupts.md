@@ -16,12 +16,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF Override for Configuring PC Card Interrupts
 
 
-## <a href="" id="ddk-inf-override-for-configuring-pc-card-interrupts-kg"></a>
+
 
 
 If the operating system routes an interrupt from a 16-bit PC Card that does not support sharable PCI interrupts, then the system might stop working. To prevent this from happening, you should indicate that the card does not support sharable interrupts by placing a PcmciaExclusiveIrq directive in the card's INF file.

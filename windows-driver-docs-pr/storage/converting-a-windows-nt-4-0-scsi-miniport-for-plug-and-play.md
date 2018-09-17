@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Converting a Windows NT 4.0 SCSI Miniport for Plug and Play
@@ -32,6 +33,5 @@ NT 4.0 miniport driver's source code might need to be modified as described in t
  
 
 
---------------------
 
 

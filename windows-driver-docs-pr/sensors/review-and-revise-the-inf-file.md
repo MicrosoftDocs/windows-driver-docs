@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Review the INX file
@@ -25,16 +26,16 @@ When you create a driver project in Microsoft Visual Studio, an INX file is firs
 Although you must review the INX file in its entirety, these steps will point out two important sections.
 
 1. Click the *ADXL345Acc.inx* file to open it, and find the \[Version\] section, near the beginning of the file.
-```ManagedCPlusPlus
+```cpp
    [Version]
    Class       = Sensor
    ClassGuid   = {5175D334-C371-4806-B3BA-71FD53C9258D}
 ```
 
-Note that the device class is set to “sensor” and the appropriate GUID is provided. For more information about device class GUIDS for Windows, see [System-Defined Device Setup Classes Available to Vendors](https://msdn.microsoft.com/library/windows/hardware/ff553426.aspx).
+Note that the device class is set to “sensor” and the appropriate GUID is provided. For more information about device class GUIDS for Windows, see [System-Defined Device Setup Classes Available to Vendors](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
 
 2. Find the \[ADXL345Acc\_Device.NT$ARCH$\] section.
-```ManagedCPlusPlus
+```cpp
    [ADXL345Acc_Device.NT$ARCH$]
    ; DisplayName       Section          DeviceId
    ; -----------       -------          --------
@@ -58,7 +59,7 @@ If you're using a mobile device, instead of the Sharks Cove, as your target devi
 
 2. Add the following code snippet to the empty section.
 
-```ManagedCPlusPlus
+```cpp
 [ADXL345Acc_Inst.NT.HW]
 AddReg=Sensor_Inst_SecurityAddReg
 
@@ -71,10 +72,10 @@ HKR,,Security,,"D:P(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;S-1-5-84-0-0-0-0-0)"    ; Al
  
 
 3. [Create a mobile package](creating-a-mobile-package.md) for installing the sample driver on your mobile device.
-## Related topics
-[Creating a mobile package](creating-a-mobile-package.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bsensors\sensors%5D:%20Review%20the%20INX%20file%20%20RELEASE:%20%281/12/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+## Related topics
+
+[Creating a mobile package](creating-a-mobile-package.md)
+
 
 

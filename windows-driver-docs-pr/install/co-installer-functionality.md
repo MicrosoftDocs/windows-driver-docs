@@ -9,12 +9,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Co-installer Functionality
 
 
-## <a href="" id="ddk-co-installer-functionality-dg"></a>
+
 
 
 A co-installer is a user-mode Win32 DLL that typically writes additional configuration information to the registry, or performs other installation tasks that require information that is not available when an INF is written.

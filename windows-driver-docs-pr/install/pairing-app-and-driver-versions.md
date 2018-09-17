@@ -7,11 +7,14 @@ ms.date: 08/24/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Pairing a driver with a Universal Windows Platform (UWP) app
 
-Starting in Windows 10 version 1709, you can specify that a Universal Windows Platform (UWP) app should only load if a specific driver is present.  The app can further constrain loading to a particular driver version or date.  This topic describes the steps required in both the app and driver to create such a requirement.
+Starting in Windows 10 version 1709, you can specify that a Universal Windows Platform (UWP) app should only load if a specific driver is present. When you use this option, the Microsoft Store offers each user the most recent version of the app that works with the installed version of the driver on that user's computer.
+
+The app can further constrain loading to a particular driver version or date.  This topic describes the steps required in both the app and driver to create such a requirement.
 
 ## Steps in the app
 
@@ -37,5 +40,5 @@ In addition to matching the most recent app and driver versions, the system also
 * [uap5:DriverDependency](/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-driverdependency?branch=lahugh-rs3)
 * [uap5:DriverConstraint](https://review.docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-driverconstraint?branch=lahugh-rs3)
 * [INF AddSoftware Directive](inf-addsoftware-directive.md)
-* [Creating a custom capability to pair a driver with a Hardware Support App (HSA)](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md)
-* [Using a custom capability to pair a Hardware Support App (HSA) with a driver](../devapps/using-a-custom-capability-to-pair-hsa-with-driver.md)
+* [Hardware Support App (HSA): Steps for Driver Developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md)
+* [Hardware Support App (HSA): Steps for App Developers](../devapps/hardware-support-app--hsa--steps-for-app-developers.md)

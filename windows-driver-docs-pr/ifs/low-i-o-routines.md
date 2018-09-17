@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Low I/O Routines
@@ -61,6 +62,5 @@ Low I/O routines represent the basic IRP\_MJ\_XXX asynchronous operations on a f
  
 
 
---------------------
 
 

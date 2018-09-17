@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering Memory for Operations on a SAN
 
 
-## <a href="" id="ddk-registering-memory-for-operations-on-a-san-ng"></a>
+
 
 
 The Windows Sockets switch calls a SAN service provider's extension functions to register all data buffers for sending and receiving messages and for RDMA operations on a system area network. These extension functions register a buffer to a region of physical memory for use on a particular SAN socket that is connected to a remote peer. For a description of these extension functions, see the [Windows Sockets SPI Extensions for SANs](windows-sockets-spi-extensions-for-sans.md).

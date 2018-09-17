@@ -9,6 +9,7 @@ ms.date: 08/14/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MB base stations information query support
@@ -28,6 +29,10 @@ This command retrieves information about the serving and neighbor cells known to
 Service: **MBB_UUID_BASIC_CONNECT_EXTENSIONS**
 
 Service UUID: **3d01dcc5-fef5-4d05-0d3a-bef7058e9aaf**
+
+| CID | Command code | Minimum OS version |
+| --- | --- | --- |
+| MBIM_CID_BASE_STATIONS_INFO | 11 | Windows 10, version 1709 |
 
 ### Parameters
 
@@ -309,6 +314,13 @@ Service: **MBB_UUID_BASIC_CONNECT_EXTENSIONS**
 
 Service UUID: **3d01dcc5-fef5-4d05-0d3a-bef7058e9aaf**
 
+| CID | Command code | Minimum OS version |
+| --- | --- | --- |
+| MBIM_CID_LOCATION_INFO_STATUS | 12 | Windows 10, version 1709 |
+
+> [!NOTE]
+> MBIM_CID_LOCATION_INFO_STATUS is defined starting in Windows 10, version 1709, but is not currently supported by the OS. A modem can send this command as a notification, but the OS does not currently handle it.
+
 ### Parameters
 
 | | Set | Query | Notification |
@@ -348,4 +360,3 @@ This CID uses Generic Status Codes (see Use of Status Codes in Section 9.4.5 of 
 
 The NDIS equivalent for MBIM_CID_BASE_STATIONS_INFO is [OID_WWAN_BASE_STATIONS_INFO](oid-wwan-base-stations-info.md).
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Slicer%20settings%20%20RELEASE:%20%289/2/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")

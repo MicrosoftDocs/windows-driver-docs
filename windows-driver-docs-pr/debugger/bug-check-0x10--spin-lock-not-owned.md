@@ -3,7 +3,7 @@ title: Bug Check 0x10 SPIN_LOCK_NOT_OWNED
 description: The SPIN_LOCK_NOT_OWNED bug check has a value of 0x00000010.This bug check appears very infrequently.
 ms.assetid: ffef2d3d-43e9-48aa-a905-8656207da6a8
 keywords: ["Bug Check 0x10 SPIN_LOCK_NOT_OWNED", "SPIN_LOCK_NOT_OWNED"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -14,6 +14,7 @@ api_name:
 - SPIN_LOCK_NOT_OWNED
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x10: SPIN\_LOCK\_NOT\_OWNED

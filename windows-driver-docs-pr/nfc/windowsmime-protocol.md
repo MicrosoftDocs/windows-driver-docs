@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WindowsMime protocol
 
 
-## <a href="" id="-windowsmime--subscriptions"></a>“WindowsMime” Subscriptions
+## “WindowsMime” Subscriptions
 
 
 A “WindowsMime” subscription is a means of abstracting a subscription for all possible MIME-typed payloads. Windows subscribes to this type in order to register with the driver that Windows is interested in receiving MIME-typed data that the user may be interested in using. Because this is a subscription for all possible MIME-typed payloads, the driver MUST return the type as well as the payload.
@@ -34,7 +35,7 @@ A “WindowsMime” subscription is a means of abstracting a subscription for al
     -   The driver MUST NOT return the full encoded NDEF message to subscribers of this type.
 -   The provider MAY support other compatible schemes as well.
 
-## <a href="" id="-windowsmime---protocol"></a>“WindowsMime.” Protocol
+## “WindowsMime.” Protocol
 
 
 A “WindowsMime.” publication is a means of simply publishing a MIME-typed payload to a peer device. A “WindowsMime.” subscription is a means of subscribing to payloads with a specific MIME-type. Windows will publish a simple MIME-typed message to a proximate device when directed by the user to do so.
@@ -53,7 +54,7 @@ Concrete Example Type: “WindowsMime.image/jpeg”
     -   The NDEF TYPE field MUST contain the direct mapping of the &lt;SomeSubType&gt; string where each wide character is interpreted as a single byte.
     -   The NDEF PAYLOAD MUST contain the direct binary contents of the publication message payload.
 
-## <a href="" id="-windowsmime-writetag---publications"></a>“WindowsMime:WriteTag.” Publications
+## “WindowsMime:WriteTag.” Publications
 
 
 A “WindowsMime:WriteTag.” publication is a means for an app to simply write a MIME-typed payload to a tag.

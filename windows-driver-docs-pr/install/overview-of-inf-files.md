@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of INF Files
 
 
-## <a href="" id="ddk-creating-an-inf-file-dg"></a>
+
 
 
 An INF file is a text file that contains all the information that [device installation components](https://msdn.microsoft.com/library/windows/hardware/ff541277) used to install a driver. Windows installs drivers using INF files. This information includes the following:

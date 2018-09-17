@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Roadmap for Developing Storport Miniport Drivers
@@ -37,7 +38,7 @@ ms.technology: windows-devices
 
 6.  **Review storport miniport driver samples.**
 
-    To access and review the storport miniport driver samples see the [MSDN Code Gallery](http://go.microsoft.com/fwlink/p/?LinkId=618052).
+    To access and review the storport miniport driver samples see the [Windows Driver Kit (WDK) samples](http://go.microsoft.com/fwlink/p/?LinkId=618052).
 
 7.  **Develop, build, test, and debug your storport miniport driver.**
 
@@ -58,6 +59,5 @@ These are the basic steps. Additional steps might be necessary based on the need
  
 
 
---------------------
 
 

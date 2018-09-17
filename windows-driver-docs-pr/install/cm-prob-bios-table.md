@@ -9,12 +9,15 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # CM_PROB_BIOS_TABLE
 
+This function is reserved for system use.
 
-## <a href="" id="ddk-cm-prob-bios-table-dg"></a>
+
+
 
 
 The MPS table is bad and has to be updated.

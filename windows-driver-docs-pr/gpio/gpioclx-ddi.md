@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # GpioClx DDI
@@ -60,6 +61,5 @@ The general-purpose I/O (GPIO) controller driver communicates with the GPIO fram
  
 
 
---------------------
 
 

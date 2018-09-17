@@ -9,6 +9,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Responding to Battery Tag Queries
@@ -43,6 +44,5 @@ The class driver uses the battery tag internally and in calls to the miniclass d
  
 
 
---------------------
 
 

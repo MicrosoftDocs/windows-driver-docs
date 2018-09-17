@@ -15,6 +15,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Device Stacks
@@ -38,6 +39,5 @@ For diagrams and descriptions of some typical storage device stacks, see the fol
  
 
 
---------------------
 
 

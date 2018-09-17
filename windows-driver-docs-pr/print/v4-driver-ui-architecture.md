@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # V4 Driver UI Architecture
@@ -19,7 +20,7 @@ The application-based UI paradigm that is employed is a clear example of this. U
 
 Printer extension apps support print preferences and printer notifications when users run existing applications on the Windows desktop. While the UIs for these applications are very different, with one tailored for touch and the other optimized for mouse and keyboard users, the business logic and the connection to v4 print drivers can still be similar, regardless of the UI.
 
-The following diagram shows a high level architecture of the Microsoft Store device apps for printing and printer extension samples that are provided in the [Windows Sample Gallery](http://code.msdn.microsoft.com/).
+The following diagram shows a high level architecture of the Microsoft Store device apps for the [v4 printer driver and printer extension samples](https://github.com/Microsoft/Windows-driver-samples/tree/master/print/v4PrintDriverSamples) that are provided on GitHub.
 
 ![overview of custom ui architecture](images/v4custuiarch.png)
 
@@ -67,11 +68,11 @@ An API has been developed as part of the v4 print driver model to support Printe
 
 Printer extensions need to be built in such a way that they can gracefully degrade if the requested data is unavailable. For example, if a particular PrintCapabilities feature is unavailable, or if a property in one of the property bags is unavailable, this should not prevent the rest of the app from functioning. When accessing property bags, or specific properties in a property bag, the app should use the try-catch syntax in order to ensure that any exceptions that are thrown do not cause the app to crash. For more information, see [Printer Extension Interfaces](https://msdn.microsoft.com/library/windows/hardware/hh463984).
 
-## Related topics
-[Printer Extension Interfaces](https://msdn.microsoft.com/library/windows/hardware/hh463984)  
-[Windows Sample Gallery](http://code.msdn.microsoft.com/)  
+## Related resources
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20V4%20Driver%20UI%20Architecture%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Printer Extension Interfaces](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/printerextension/#interfaces)
+
+[v4 print driver samples on GitHub](https://github.com/Microsoft/Windows-driver-samples/tree/master/print/v4PrintDriverSamples)
+
 
 

@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Make the driver loadable
@@ -24,19 +25,19 @@ These code snippets highlight some of the important sections of the sensor drive
 
 1. Click to open the *driver.cpp* file, then find the code block that starts with NTSTATUS DriverEntry. The **DriverEntry** function registers the sensor driver by configuring and initializing the DriverObject. This function also initializes logging by using WPP tracing.
 2. Within **DriverEntry**, find the following code:
-```ManagedCPlusPlus
+```cpp
 WPP_INIT_TRACING(DriverObject, NULL);
 ```
 
 This code configures logging for the driver.
 
 3. Find the WDF\_DRIVER\_CONFIG\_INIT statement. The WDF\_DRIVER\_CONFIG\_INIT function is called to set the **DeviceAdd** callback.
-```ManagedCPlusPlus
+```cpp
 WDF_DRIVER_CONFIG_INIT(&DriverConfig, ADXL345AccDevice::OnDeviceAdd);
 ```
 
 4. Find the code block that starts with NTSTATUS Status = WdfDriverCreate.
-```ManagedCPlusPlus
+```cpp
 NTSTATUS Status = WdfDriverCreate(DriverObject, RegistryPath, WDF_NO_OBJECT_ATTRIBUTES, &DriverConfig, WDF_NO_HANDLE);
 ```
 
@@ -48,7 +49,7 @@ The WdfDriverCreate function is used to initialize the driver object.
 
 1. Click to open the *device.cpp* file, then find the **OnDeviceAdd** function. This function attaches the driver to a device stack, and allocates a per-device context structure to the device. **OnDeviceAdd** is typically invoked during the second call that is made into the driver. As you develop the driver you may also include code to handle PnP, Power management, and I/O.
 2. Find the following code:
-```ManagedCPlusPlus
+```cpp
 // Create WDFOBJECT for the sensor
   WDF_OBJECT_ATTRIBUTES attributes;
   WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(WDFDRIVER Driver, &attributes, ADXL345AccDevice);
@@ -57,7 +58,7 @@ The WdfDriverCreate function is used to initialize the driver object.
 This code sets up a context structure of type ADXL345AccDevice for the device object.
 
 3. Find the following code:
-```ManagedCPlusPlus
+```cpp
 // Call the framework to create the device
 NTSTATUS Status = WdfDeviceCreate(&pAccDeviceInit, &FdoAttributes, &Device);
 ```
@@ -70,7 +71,7 @@ This function is used to create a WDFDEVICE object. WDF creates the device objec
 
 1. Click to open the *driver.cpp* file, and find the **OnDriverUnload** function. This function is used to perform cleanup after the IO manager unloads the driver from memory.
 2. Find the following code:
-```ManagedCPlusPlus
+```cpp
 WPP_CLEANUP(WdfDriverWdmGetDriverObject(Driver));
 ```
 
@@ -81,7 +82,5 @@ This code turns off WPP diagnostic tracing.
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bsensors\sensors%5D:%20Make%20the%20driver%20loadable%20%20RELEASE:%20%281/12/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

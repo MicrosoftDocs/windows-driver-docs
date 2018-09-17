@@ -16,6 +16,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Designing with Security Threat Models
@@ -59,6 +60,5 @@ The basic principles here identify specific types of system compromise that can 
  
 
 
---------------------
 
 

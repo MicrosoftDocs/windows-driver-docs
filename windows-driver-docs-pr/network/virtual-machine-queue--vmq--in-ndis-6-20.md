@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Virtual Machine Queue (VMQ) in NDIS 6.20
 
 
-## <a href="" id="ddk-virtual-machine-queue--vmq--in-ndis-6-20-ng"></a>
+
 
 
 NDIS 6.20 introduces the virtual machine queue (VMQ) interface to support Microsoft Hyper-V network performance improvements. NDIS 6.20 and later drivers must provide information about VMQ capabilities during initialization. However, VMQ support is optional.

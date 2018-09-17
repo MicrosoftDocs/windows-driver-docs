@@ -4,12 +4,13 @@ author: windows-driver-content
 description: Integration with Windows
 ms.assetid: 57721e38-5974-4080-b051-93b78a7f42c6
 keywords: ["property sheets WDK DirectInput , registering", "game controllers WDK DirectInput , registrations", "control panels WDK DirectInput , registrations", "property sheets WDK DirectInput , Windows integration", "game controllers WDK DirectInput , Windows integration", "control panels WDK DirectInput , Windows integration", "Windows integration WDK DirectInput control panel", "registering property sheets", "registering devices for DirectInput control panel"]
+ms.localizationpriority: medium
 ---
 
 # Integration with Windows
 
 
-## <a href="" id="ddk-integration-with-windows-di"></a>
+
 
 
 Because the property sheet page is a COM object, it needs to be registered. This can be done by an INF file or through DirectInput's **IDirectInputJoyConfig8** interface. A sample INF file is part of the sample property sheet in the DirectX Driver Development Kit (DDK).
@@ -70,7 +71,5 @@ Your device must also be properly registered as a gaming device. This may be don
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhid\hid%5D:%20Integration%20with%20Windows%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -5,13 +5,14 @@ ms.author: windowsdriverdev
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF AddSoftware Directive
 
 Each **AddSoftware** directive describes the installation of standalone software.  Use this directive in an INF file of the **SoftwareComponent** setup class. For more details on software components, see [Using a Component INF File](using-a-component-inf-file.md).  This directive is supported for Windows 10 version 1703 and later.
 
-Valid installation types depend on the [target platform](../develop/windows-10-editions-for-universal-drivers.md). For example, Desktop supports MSI installers and setup EXEs.
+Valid installation types depend on the [target platform](../develop/windows-10-editions-for-universal-drivers.md). For example, Desktop supports MSI installers and setup EXEs.  **Note**:  Type 2 is supported in Universal Drivers, Type 1 is desktop-only.
 
 When a software component INF file specifies **AddSoftware**, the system queues software to be installed after device installation.  There is no guarantee when or if the software will be installed.
 If referenced software fails to install, the system tries again when the referencing software component is updated.
@@ -20,7 +21,6 @@ An **AddSoftware** directive is used within an [**INF *DDInstall*.Software**](in
 
 ```
 [DDInstall.Software]
-
 AddSoftware=SoftwareName,[flags],software-install-section
 ```
 
@@ -32,7 +32,13 @@ Specifies the name of the software to be installed.  This name uniquely identifi
 
 *flags*
 
-Specifies one or more (ORed) flags.  This value must be zero.
+Specifies one or more (ORed) flags.
+
+**0x00000000**  
+The **AddSoftware** directive is processed only once.
+
+**0x00000001**  
+The **AddSoftware** directive is processed once for each component device that specifies **AddSoftware** with the same unique *SoftwareName*.
 
 *software-install-section*
 
@@ -58,6 +64,11 @@ The **SoftwareType** entry is required.  If **SoftwareType** is set to 1, **Soft
 
 Any software installed using **AddSoftware** must be installed silently (or quietly). In other words, no user interface can be shown to the user during installation.
 
+Any software installed using **AddSoftware** will **not** be uninstalled if the virtual software component device or its parent devices are uninstalled. If your software is not a UWP app (i.e. you're using **AddSoftware** with a value of 1), please make sure users can easily uninstall it without leaving a trace in the registry. To do so:
+
+* If you're using an MSI installer, set up an [Add/Remove Programs](https://msdn.microsoft.com/library/windows/desktop/aa368032) entry in the application's Windows Installer package.
+* If you're using a custom EXE that installs global registry/file state (instead of supplementing local device settings), use the [Uninstall Registry Key](https://msdn.microsoft.com/library/windows/desktop/aa372105). 
+
 ## Software-Install Section Entries and Values
 
 **SoftwareType**=*type-code*
@@ -72,7 +83,7 @@ Instead, use one of the following options to preinstall an app in an OEM image o
 * To preinstall a Win32 app, boot to audit mode and install the app. For details, see [Audit Mode Overview](https://docs.microsoft.com/windows-hardware/manufacture/desktop/audit-mode-overview).
 * To preinstall a Microsoft Store (UWP) app, see [Preinstallable apps for desktop devices](https://docs.microsoft.com/windows-hardware/customize/preinstall/preinstallable-apps-for-windows-10-desktop).
 
-For info about pairing a driver with a Universal Windows Platform (UWP) app, see [Pairing a driver with a Universal Windows Platform (UWP) app](pairing-app-and-driver-versions.md) and [Creating a custom capability to pair a driver with a Hardware Support App (HSA)](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md).
+For info about pairing a driver with a Universal Windows Platform (UWP) app, see [Pairing a driver with a Universal Windows Platform (UWP) app](pairing-app-and-driver-versions.md) and [Hardware Support App (HSA): Steps for Driver Developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md).
 
 **SoftwareBinary**=*filename*
 
@@ -135,4 +146,4 @@ Specifies a Microsoft Store identifier and identifier type.  Currently, only Pac
 * [INF DDInstall.Software Section](inf-ddinstall-software-section.md)
 * [INF AddComponent Directive](inf-addcomponent-directive.md)
 * [Pairing a driver with a Universal Windows Platform (UWP) app](pairing-app-and-driver-versions.md)
-* [Creating a custom capability to pair a driver with a Hardware Support App (HSA)](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md)
+* [Hardware Support App (HSA): Steps for Driver Developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md)

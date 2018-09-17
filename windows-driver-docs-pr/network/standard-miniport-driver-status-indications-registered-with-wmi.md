@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Standard Miniport Driver Status Indications Registered with WMI
 
 
-## <a href="" id="ddk-standard-miniport-driver-status-registered-with-wmi-ng"></a>
+
 
 
 NDIS automatically registers GUIDs with WMI for the NDIS status indications that miniport drivers indicate with the [**NdisMIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563600) or [**NdisMCoIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563562) function. For a list of general status indications, see [Status Indications](https://msdn.microsoft.com/library/windows/hardware/ff570879).

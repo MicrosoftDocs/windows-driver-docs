@@ -9,12 +9,15 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # CM_PROB_NEED_RESTART
 
+This function is reserved for system use.
 
-## <a href="" id="ddk-cm-prob-need-restart-dg"></a>
+
+
 
 
 The system must be restarted.

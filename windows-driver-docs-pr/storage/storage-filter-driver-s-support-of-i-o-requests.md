@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Filter Driver's Support of I/O Requests
@@ -44,6 +45,5 @@ If its device has special features, an SFD can support a set of driver-defined I
  
 
 
---------------------
 
 

@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS Virtual Machine Queue States
 
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 This topic provides an overview of the operational states of NDIS virtual machine queues (VMQs). For more information about queue states, see the [Queue States and Operations](queue-states-and-operations.md) topic in the [Writing VMQ Drivers](writing-vmq-drivers.md) section.

@@ -15,12 +15,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Dialog Box Procedures and CPSUI
 
 
-## <a href="" id="ddk-dialog-box-procedures-and-cpsui-gg"></a>
+
 
 
 A dialog box procedure is a callback function that handles window messages sent by the system. This type of [page event callback](page-event-callbacks.md) is required if you are creating a customized property sheet page that is not supplied by CPSUI. (You can also use dialog box procedures with [CPSUI-supplied pages and templates](cpsui-supplied-pages-and-templates.md), but use of a [CPSUI message handler](cpsui-message-handler.md) is recommended.) For more information about dialog box procedures, see DialogProc in the Microsoft Windows SDK documentation. Pointers to dialog box procedures are declared using the DLGPROC pointer type, also described in the Windows SDK documentation.
@@ -36,7 +37,5 @@ For more information about using dialog box procedures with CPSUI, see the Remar
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Dialog%20Box%20Procedures%20and%20CPSUI%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

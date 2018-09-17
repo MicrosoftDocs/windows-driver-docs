@@ -5,16 +5,17 @@ description: Managing Hardware Priorities
 ms.assetid: c27eb357-49d7-4f50-9554-643b70ca33dc
 keywords: ["prioritizing criteria WDK kernel", "hardware priorities WDK kernel", "IRQL levels WDK kernel", "PASSIVE_LEVEL WDK", "APC_LEVEL WDK", "DISPATCH_LEVEL WDK", "DIRQL WDK", "interrupt service routines WDK kernel , hardware priorities", "ISRs WDK kernel , hardware priorities"]
 ms.author: windowsdriverdev
-ms.date: 06/16/2017
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Managing Hardware Priorities
 
 
-## <a href="" id="ddk-managing-hardware-priorities-kg"></a>
+
 
 
 The IRQL at which a driver routine executes determines which kernel-mode driver support routines it can call. For example, some driver support routines require that the caller be running at IRQL = DISPATCH\_LEVEL. Others cannot be called safely if the caller is running at any IRQL higher than PASSIVE\_LEVEL.
@@ -93,14 +94,12 @@ When calling driver support routines, be aware of the following.
 
 -   Driver code that runs at IRQL &gt; PASSIVE\_LEVEL should execute as quickly as possible. The higher the IRQL at which a routine runs, the more important it is for good overall performance to tune that routine to execute as quickly as possible. For example, any driver that calls **KeRaiseIrql** should make the reciprocal call to **KeLowerIrql** as soon as it can.
 
-For more information about determining priorities, see the [Scheduling, Thread Context, and IRQL](http://go.microsoft.com/fwlink/p/?linkid=59757) white paper that is available on the Microsoft Windows Hardware Developer Central (WHDC) website.
+For more information about determining priorities, see the [Scheduling, Thread Context, and IRQL](http://go.microsoft.com/fwlink/p/?linkid=59757) white paper.
 
  
 
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Managing%20Hardware%20Priorities%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

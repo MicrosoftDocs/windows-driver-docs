@@ -12,6 +12,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # System-Supplied Changer Drivers
@@ -37,6 +38,5 @@ For a discussion of vendor-supplied changer drivers, see [Vendor-Supplied Change
  
 
 
---------------------
 
 

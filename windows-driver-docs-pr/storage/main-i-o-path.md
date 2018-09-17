@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Main I/O Path
@@ -22,6 +23,5 @@ The LsiU3StartIo routine assigns driver queue tags to I/O requests. This is need
  
 
 
---------------------
 
 

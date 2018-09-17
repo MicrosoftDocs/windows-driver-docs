@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Connecting a KMDF Driver to GPIO I/O Pins
@@ -200,6 +201,5 @@ For a sample driver that shows how to write a GPIO peripheral driver that runs i
  
 
 
---------------------
 
 

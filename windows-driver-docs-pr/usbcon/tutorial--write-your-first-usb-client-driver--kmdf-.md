@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How to write your first USB client driver (KMDF)
@@ -28,7 +29,7 @@ Before you begin, make sure that you meet the following requirements:
 **Software requirements**
 
 -   Your host computer hosts your development environment and has Visual Studio Professional 2012.
--   Your host computer has the latest Windows Driver Kit (WDK) for Windows 8. The kit include headers, libraries, tools, documentation, and the debugging tools required to develop, build, and debug a KMDF driver. To get the latest version of the WDK, see [How to Get the WDK](http://www.microsoft.com/whdc/DevTools/WDK/WDKpkg.mspx).
+-   Your host computer has the latest Windows Driver Kit (WDK) for Windows 8. The kit include headers, libraries, tools, documentation, and the debugging tools required to develop, build, and debug a KMDF driver. To get the latest version of the WDK, see [Download the Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
 -   Your host computer has the latest version of debugging tools for Windows. You can get the latest version from the WDK or you can [Download and Install Debugging Tools for Windows](http://msdn.microsoft.com/windows/hardware/gg463009.aspx).
 -   Your target computer is running Windows Vista or a later version of Windows.
 -   Your host and target computers are configured for kernel debugging. For more information, see [Setting Up a Network Connection in Visual Studio](https://msdn.microsoft.com/library/windows/hardware/hh439353).
@@ -46,7 +47,7 @@ You can also get a Microsoft USB Test Tool (MUTT) devices. MUTT hardware can be 
 -   [Concepts for All Driver Developers](https://msdn.microsoft.com/library/windows/hardware/ff554731)
 -   [Device nodes and device stacks](https://msdn.microsoft.com/library/windows/hardware/ff554721)
 -   [Getting started with Windows drivers](https://msdn.microsoft.com/library/windows/hardware/ff554690)
--   [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565)
+-   [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
 -   *Developing Drivers with Windows Driver Foundation*, written by Penny Orwick and Guy Smith. For more information, see [Developing Drivers with WDF](http://msdn.microsoft.com/windows/hardware/gg463318).
 
 Instructions
@@ -233,7 +234,5 @@ Visual Studio first displays progress in the **Output** window. Then it opens th
 [Understanding the KMDF template code for a USB client driver](understanding-the-kmdf-template-code-for-usb.md)  
 [Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20How%20to%20write%20your%20first%20USB%20client%20driver%20%28KMDF%29%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

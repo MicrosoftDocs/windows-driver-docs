@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Capabilities Provided by SCSI Port
@@ -82,6 +83,5 @@ For a complete list of the library routines that SCSI Port makes available to SC
  
 
 
---------------------
 
 

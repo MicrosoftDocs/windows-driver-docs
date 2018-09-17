@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Pausing a Driver Stack
 
 
-## <a href="" id="ddk-pausing-a-driver-stack-ng"></a>
+
 
 
 NDIS pauses a driver stack to complete operations such as inserting a filter module or adding a binding. In general, a driver stack pause operation proceeds as follows:

@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How to enumerate USB pipes
@@ -20,7 +21,7 @@ During device configuration, the USB driver stack creates a *USB pipe* (on the h
 
 All attributes of a pipe are derived from the associated endpoint descriptor. For instance, depending on the type of the endpoint, the USB driver stack assigns a type for the pipe. For a bulk endpoint, the USB driver stack creates a bulk pipe; for an isochronous endpoint, an isochronous pipe is created, and so on. Another important attribute is the amount of data that the host controller can send to the endpoint point in a request. Depending on that value, the client driver must determine the layout of the transfer buffer.
 
-Windows Driver Foundation (WDF) provides specialized I/O target objects in [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565) and [User-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565) that simplify many of the configuration tasks for the client driver. By using those objects, the client driver can retrieve information about the current configuration, such as the number of interfaces, alternate setting within each interface, and their endpoints. One of those objects, called the *target pipe object*, performs endpoint-related tasks. This topic describes how to obtain pipe information by using the target pipe object.
+Windows Driver Foundation (WDF) provides specialized I/O target objects in [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/) and [User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/) that simplify many of the configuration tasks for the client driver. By using those objects, the client driver can retrieve information about the current configuration, such as the number of interfaces, alternate setting within each interface, and their endpoints. One of those objects, called the *target pipe object*, performs endpoint-related tasks. This topic describes how to obtain pipe information by using the target pipe object.
 
 For Windows Driver Model (WDM) client drivers, the USB driver stack returns an array of [**USBD\_PIPE\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff539114) structures. The number of elements in the array depends on the number of endpoints defined for the active alternate setting of an interface in the selected configuration. Each element contains information about the pipe created for a particular endpoint. For information about selecting a configuration and getting the array of pipe information, see [How to Select a Configuration for a USB Device](how-to-select-a-configuration-for-a-usb-device.md).
 
@@ -29,8 +30,8 @@ For Windows Driver Model (WDM) client drivers, the USB driver stack returns an a
 
 ### Technologies
 
--   [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565)
--   [User-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565)
+-   [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
+-   [User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
 
 ### Prerequisites
 
@@ -736,7 +737,5 @@ The URB contains information about the request such as the target pipe handle, t
 [How to select an alternate setting in a USB interface](select-a-usb-alternate-setting.md)  
 [Common tasks for USB client drivers](wdk-resources-for-usb-driver-development.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20How%20to%20enumerate%20USB%20pipes%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -3,7 +3,7 @@ title: Bug Check 0x55 DATA_COHERENCY_EXCEPTION
 description: The DATA_COHERENCY_EXCEPTION bug check has a value of 0x00000055.This bug check appears very infrequently.
 ms.assetid: f7b585ec-5b76-44eb-b3fa-17684152156d
 keywords: ["Bug Check 0x55 DATA_COHERENCY_EXCEPTION", "DATA_COHERENCY_EXCEPTION"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -14,6 +14,7 @@ api_name:
 - DATA_COHERENCY_EXCEPTION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x55: DATA\_COHERENCY\_EXCEPTION

@@ -3,10 +3,11 @@ title: 3D print partner onboarding guide
 author: windows-driver-content
 description: This topic describes how to implement 3D printer drivers that are then published on Windows Update.
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # 3D print partner onboarding guide
@@ -21,7 +22,7 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
 -   Implements the slicer. The driver takes [3MF](http://www.3mf.io) as input and produces G-Code or other similar machine level data.
 
--   Creates the print queue. The device appears under **Devices and Printers** and in the **3D Print Dialog** for compatible [3D Printing applications](https://developer.microsoft.com/en-us/windows/hardware/3d-software-partners).
+-   Creates the print queue. The device appears under **Devices and Printers** and in the **3D Print Dialog** for compatible [3D Printing applications](https://developer.microsoft.com/windows/hardware/3d-software-partners).
 
 **Lower driver (USB driver)**
 
@@ -46,7 +47,7 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
     - Ensure the device firmware has a unique Vendor ID and Product ID (VID/PID) allocated by the [USB Implementers Forum (USB-IF)](http://www.usb.org). For USBSER devices, we strongly recommended that you use a unique serial number to prevent conflicts on a USB port changes.
 
-2. Install Microsoft tools and SDKs 
+2. Install Microsoft tools and SDKs
 
     - Download and install [Visual Studio Community Edition](https://go.microsoft.com/fwlink/p/?LinkId=534599)
 
@@ -54,7 +55,8 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
     - Download and install the [3D printing SDK](http://go.microsoft.com/fwlink/p/?LinkId=394375)
 
-        - **Note** The 3D printing SDK will be installed in C:\\Program Files (x86)\\Microsoft SDKs\\3D Printing.
+> [!NOTE]
+> The 3D printing SDK will be installed in C:\\Program Files (x86)\\Microsoft SDKs\\3D Printing.
 
 3. Implement the USB driver
 
@@ -62,7 +64,8 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
     - If the printer is using the Microsoft Slicer, the Hardware ID that it creates must be **Enum\\3DPrint\\MS3DPrint**
 
-**Note** If the the printer is using a custom slicer, continue with steps 4-7
+> [!NOTE]
+> If the the printer is using a custom slicer, continue with steps 4-7.
 
 4. Build the Fabrikam driver (slicer template only)
 
@@ -94,12 +97,8 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
 7. Publish and distribute the driver
 
-    - Follow the steps in these topics to publish your driver:
-        
-        - [Purchase an extended validation (EV) code signing certificate](https://msdn.microsoft.com/en-us/library/windows/hardware/hh801887(v=vs.85).aspx)
+    - Follow the guidance in the [Windows Hardware Dev Center dashboard](https://docs.microsoft.com/windows-hardware/drivers/dashboard) topics to publish your driver.
 
-        - [Publish the driver using the designated workflow](https://msdn.microsoft.com/en-us/library/windows/hardware/br230778(v=vs.85).aspx)
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Slicer%20settings%20%20RELEASE:%20%289/2/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
 

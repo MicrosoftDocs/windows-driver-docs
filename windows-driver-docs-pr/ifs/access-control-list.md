@@ -20,6 +20,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Access Control List
@@ -79,6 +80,5 @@ Note that when constructing ACLs, it is important to order access denied ACE ent
  
 
 
---------------------
 
 

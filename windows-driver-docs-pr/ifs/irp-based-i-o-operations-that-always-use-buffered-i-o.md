@@ -10,6 +10,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IRP-Based I/O Operations That Always Use Buffered I/O
@@ -37,6 +38,5 @@ Note that IRP\_MJ\_QUERY\_INFORMATION can also be a fast I/O operation. When it 
  
 
 
---------------------
 
 

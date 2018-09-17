@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Class Driver's General Functionality
@@ -42,6 +43,5 @@ To a storage port driver, a storage class driver is a higher-level driver with b
  
 
 
---------------------
 
 

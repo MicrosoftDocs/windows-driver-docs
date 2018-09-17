@@ -14,6 +14,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # USB I/O Targets
@@ -21,7 +22,7 @@ ms.technology: windows-devices
 
 This section describes how Kernel-Mode Driver Framework (KMDF) and User-Mode Driver Framework (UMDF) drivers starting in version 2 interact with universal serial bus (USB) devices.
 
-## <a href="" id="ddk-using-usb-i-o-targets-df"></a>
+
 
 
 Each USB device, and each pipe that a USB device interface supports, has a separate I/O target. Control transfers that the USB device handles are sent to the device's I/O target. I/O transfers that a specific pipe handles are sent to that pipe's I/O target.

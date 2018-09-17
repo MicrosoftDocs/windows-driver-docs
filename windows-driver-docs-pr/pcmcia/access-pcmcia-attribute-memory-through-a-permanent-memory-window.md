@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Access PCMCIA Attribute Memory Through a Permanent Memory Window
 
 
-## <a href="" id="ddk-access-pcmcia-attribute-memory-through-a-permanent-memory-window-k"></a>
+
 
 
 This section describes how a PC Card or CardBus card driver can use a permanent-assigned memory window to access attribute memory.

@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handle Management
@@ -48,6 +49,5 @@ Note that if the Nt variant is used to open a file, then the Nt variant must als
  
 
 
---------------------
 
 

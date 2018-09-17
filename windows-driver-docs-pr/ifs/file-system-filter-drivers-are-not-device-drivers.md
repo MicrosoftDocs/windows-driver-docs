@@ -12,6 +12,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # File System Filter Drivers Are Not Device Drivers
@@ -35,6 +36,5 @@ For more details on the similarities and differences between file system filter 
  
 
 
---------------------
 
 

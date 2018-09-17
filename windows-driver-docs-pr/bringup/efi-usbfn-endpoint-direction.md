@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USBFN\_ENDPOINT\_DIRECTION
@@ -53,6 +54,5 @@ Indicates USB OUT transfer. Direction is from host to device
  
 
 
---------------------
 
 

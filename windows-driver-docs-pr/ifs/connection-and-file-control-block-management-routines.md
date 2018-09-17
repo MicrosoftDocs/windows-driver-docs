@@ -17,6 +17,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Connection and File Control Block Management Routines
@@ -147,6 +148,5 @@ Note that a number of macros are also defined that provide wrappers around the [
  
 
 
---------------------
 
 

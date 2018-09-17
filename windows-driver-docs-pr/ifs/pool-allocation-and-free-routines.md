@@ -15,6 +15,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Pool Allocation and Free Routines
@@ -102,6 +103,5 @@ A number of macros, which are defined in the *ntrxdef.h* header file, call these
  
 
 
---------------------
 
 

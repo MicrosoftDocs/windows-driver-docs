@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sample Storport Miniport Driver for an LSI\_U3 Device
@@ -30,6 +31,5 @@ Adjustments were made in the LSI\_U3 miniport driver to match Storport advanced 
  
 
 
---------------------
 
 

@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Module States of a Filter Driver
 
 
-## <a href="" id="ddk-module-states-of-a-filter-driver-ng"></a>
+
 
 
 An [NDIS filter driver](ndis-filter-drivers.md) must support the following operational states for each filter module (instance of a filter driver) that the driver manages:

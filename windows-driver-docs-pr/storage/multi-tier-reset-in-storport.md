@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Multi-Tier Reset in Storport
@@ -32,6 +33,5 @@ Finally, the bus reset operation is effected through a synchronous callback rout
  
 
 
---------------------
 
 

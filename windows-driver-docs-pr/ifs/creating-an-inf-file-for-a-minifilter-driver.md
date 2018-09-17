@@ -17,6 +17,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating an INF File for a Minifilter Driver
@@ -314,6 +315,5 @@ Instance3.Flags    = 0x1 ; Suppress automatic attachments
  
 
 
---------------------
 
 

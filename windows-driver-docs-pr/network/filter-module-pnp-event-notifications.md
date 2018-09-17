@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filter Module PnP Event Notifications
 
 
-## <a href="" id="ddk-filter-module-pnp-event-notifications-ng"></a>
+
 
 
 Filter drivers can receive all the device Plug and Play (PnP) notifications that underlying miniport drivers receive. Also, filter drivers can receive all the network PnP notifications that overlying protocol drivers receive.The handling of PnP notifications is driver specific.

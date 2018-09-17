@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Primary and Secondary Interrupts
@@ -24,6 +25,5 @@ Typically, this second ISR belongs to the driver for the peripheral device that 
  
 
 
---------------------
 
 

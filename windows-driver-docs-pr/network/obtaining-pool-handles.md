@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Obtaining Pool Handles
 
 
-## <a href="" id="ddk-obtaining-pool-handles-ng"></a>
+
 
 
 The following NDIS pool allocation functions require a handle to allocate resources:

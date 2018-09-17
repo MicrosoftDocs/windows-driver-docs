@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Intermediate Driver Binding Operations
 
 
-## <a href="" id="ddk-intermediate-driver-binding-operations-ng"></a>
+
 
 
 When a miniport adapter becomes available, NDIS calls the [*ProtocolBindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570220) function of any intermediate driver that can bind to that miniport adapter.

@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Requirements for Routing PC Card Interrupts
 
 
-## <a href="" id="ddk-requirements-for-routing-pc-card-interrupts-kg"></a>
+
 
 
 In order to use PCI interrupts instead of ISA interrupts, 16-bit PC Cards must meet the following two basic requirements.

@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to File System Filter Drivers
@@ -38,6 +39,5 @@ This section introduces file system filter drivers. It includes the following to
  
 
 
---------------------
 
 

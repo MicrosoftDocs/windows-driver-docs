@@ -1,11 +1,12 @@
 ---
 title: WinDbg Preview - Command line startup options
 description: This section covers the command line startup options for the WinDbg Preview debugger.
-ms.author: windowsdriverdev
-ms.date: 08/17/2017
+ms.author: domars
+ms.date: 08/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 > [!NOTE]
@@ -70,6 +71,7 @@ tid | Specifies the thread ID of a thread to be resumed when the debugging sessi
 psn | Specifies the name of the service contained in the process to be debugged. This is used to debug a process that is already running.
 pn | Specifies the name of the process to be debugged.
 z | Specifies the name of a crash dump file to debug. 
+openPrivateDumpByHandle *Handle* | Specifies the handle of a crash dump file to debug.
 
 
 **Symbol Options**
@@ -105,7 +107,6 @@ You can use /? to list the supported command line options.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debugging%20Using%20WinDbg%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

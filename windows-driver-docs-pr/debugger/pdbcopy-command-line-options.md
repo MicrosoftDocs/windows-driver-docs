@@ -3,8 +3,8 @@ title: PDBCopy Command-Line Options
 description: The PDBCopy command line uses the following syntax. The parameters can be included in any order.
 ms.assetid: a793f860-db21-41fb-a0d2-931812400f0d
 keywords: ["PDBCopy Command-Line Options Windows Debugging"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
+ms.author: domars
+ms.date: 04/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - PDBCopy Command-Line Options
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # PDBCopy Command-Line Options
@@ -27,6 +28,8 @@ pdbcopy OldPDB NewPDB [Options]
 pdbcopy OldPDB NewPDB -p [-f:Symbol] [-f:@TextFile] [Options] 
 
 pdbcopy OldPDB NewPDB -p [-F:Symbol] [-F:@TextFile] [Options] 
+
+pdbcopy InputPDB BackupPDB -CVE-2018-1037 [autofix|verbose]
 
 pdbcopy /? 
 ```
@@ -64,8 +67,16 @@ Causes the new symbol file to have a different signature than the old file. Norm
 <span id="-vc6"></span><span id="-VC6"></span>**-vc6**  
 Causes PDBCopy to use mspdb60.dll instead of mspdb80.dll. This option is never required, because PDBCopy automatically looks for the proper version of mspdb\*.dll. By default, PDBCopy uses mspdb80.dll, which is the version used by Visual Studio .NET 2002 and later versions of Visual Studio. If your symbols were built using Visual Studio 6.0 or an earlier version, you can specify this command-line option so that PDBCopy will use mspdb60.dll instead. However, this is not required, since PDBCopy looks for the appropriate file even if this option is not used. Whichever version of mspdb\*.dll you use must be in the executable path of the Command Prompt window from which you launch PDBCopy.
 
+
+<span id="CVE-2018-1037"></span> **-CVE-2018-1037**   
+
+Reports whether InputPDBFile has the issue described in CVE-2018-1037 and optionally remediates the problem. See [KB# 4131751 - PDBCopy tool](https://support.microsoft.com/help/4131751/pdbcopy-update-to-fix-pdb-security-issue) for more information and detailed usage information.
+
+
 <span id="_______-_______"></span> **-?**   
 Displays help text for the PDBCopy command line.
+
+
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -75,7 +86,6 @@ For more information about the PDBCopy tool, see [Using PDBCopy](using-pdbcopy.m
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20PDBCopy%20Command-Line%20Options%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

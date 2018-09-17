@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Crash Dump Filter Drivers
@@ -22,6 +23,5 @@ The crash dump driver does not use the typical runtime storage driver stack to w
  
 
 
---------------------
 
 

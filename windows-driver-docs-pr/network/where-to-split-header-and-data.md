@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Where to Split Header and Data
 
 
-## <a href="" id="ddk-where-to-split-header-and-data-ng"></a>
+
 
 
 The following are the only valid places where a header-data split provider can split an Ethernet frame:

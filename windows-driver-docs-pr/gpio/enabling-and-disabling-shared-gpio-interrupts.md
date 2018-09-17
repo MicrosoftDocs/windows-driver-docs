@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Enabling and Disabling Shared GPIO Interrupts
@@ -22,6 +23,5 @@ If the drivers for these devices register their interrupt service routines (ISRs
  
 
 
---------------------
 
 

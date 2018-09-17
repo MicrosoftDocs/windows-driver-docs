@@ -14,6 +14,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # 1394 Samples and Diagnostic Tools
@@ -30,6 +31,5 @@ The system enumerates *1394vdev.sys* and *1394diag.sys* differently. The 1394vde
  
 
 
---------------------
 
 

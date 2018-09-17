@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WDM Interface Restrictions
@@ -20,7 +21,7 @@ ms.technology: windows-devices
 
 \[Applies to KMDF only\]
 
-## <a href="" id="ddk-framework-compatibility-with-wdm-df"></a>
+
 
 
 If your framework-based driver accesses WDM interfaces, you must be aware of the following restrictions:

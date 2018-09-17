@@ -16,6 +16,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Buffer Handling
@@ -67,6 +68,5 @@ The WDK contains numerous examples of buffer validation in the FASTFAT and CDFS 
  
 
 
---------------------
 
 

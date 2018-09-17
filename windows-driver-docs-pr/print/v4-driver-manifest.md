@@ -4,10 +4,11 @@ author: windows-driver-content
 description: The v4 print driver manifest contains printer-specific setup directives and is used in conjunction with an INF file.
 ms.assetid: 187A10B7-2AAC-46D9-998C-C8724D8E3862
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 07/13/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # V4 Driver Manifest
@@ -57,11 +58,12 @@ The following table shows the directives that are used in the DriverConfig secti
 </tr>
 <tr class="even">
 <td><p><strong>RequiredClass</strong></p>
-<p>Causes this driver to include all files from a defined class driver using the driver/friendly name of the device as a key. This is the mechanism for linking a printclass driver to a model specific driver.</p></td>
+<p>Causes this driver to include all files from a defined class driver using the driver/friendly name of the device and its GUID as key. This is the mechanism for linking a printclass driver to a model specific driver.</p></td>
 <td><p>The RequiredClass directive cannot be used by a class driver. When you use RequiredClass, you should avoid file name collisions between the printer driver and the Print Class driver to which you're linking.</p>
 <p>Although files with similar names won't overwrite each other, it may be difficult during troubleshooting, to distinguish between the class driver package file and the file from the v4 printer driver.</p></td>
-<td><p>RequiredClass=</p>
-<p>&quot;Fabrikam PCL5e Class Driver&quot;</p></td>
+<td><p>Example:</p>
+<p>RequiredClass=</p>
+<p>&quot;Fabrikam PCL5e Class Driver&quot;,{9343720D-B67E-4451-B93F-6F721C439771}</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DriverFile</strong></p>
@@ -475,7 +477,5 @@ PrintPreferences=FAapp.exe,{GUID2}
 ## Related topics
 [Printer INF File Entries](printer-inf-file-entries.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20V4%20Driver%20Manifest%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

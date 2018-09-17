@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Authoring a firmware update package
@@ -69,6 +70,5 @@ It is recommended that each firmware update package target a single firmware res
 [Certifying and signing the update package](certifying-and-signing-the-update-package.md)  
 [Installing the update](installing-the-update.md)  
 
---------------------
 
 

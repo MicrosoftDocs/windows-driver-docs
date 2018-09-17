@@ -7,66 +7,39 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Manage Device Metadata Experiences
 
-
 After you've created and submitted your device metadata experiences, you can review or edit them through the dashboard.
 
-## <span id="Managing_your_device_metadata_experiences"></span><span id="managing_your_device_metadata_experiences"></span><span id="MANAGING_YOUR_DEVICE_METADATA_EXPERIENCES"></span>Managing your device metadata experiences
-
+## Managing your device metadata experiences
 
 On the **Manage experiences** page, you can add, remove, or promote (from preview to release) a device metadata package in a selected experience. You can also add packages for the same hardware IDs or model IDs into the same experience if the IDs are for different locales.
 
-**To filter your device metadata experiences**
+## To filter your device metadata experiences
 
-1.  Sign in to the **Dashboard** from either the Hardware Dev Center or the Windows Dev Center by using a Microsoft account.
+1. Sign in to the **Dashboard** from either the Hardware Dev Center or the Windows Dev Center by using a Microsoft account.
 
-2.  On the left side of the window, click **Device metadata**, and then click **Manage experiences**.
+2. On the left side of the window, click **Device metadata**, and then click **Manage experiences**.
 
-3.  All the experiences that you or your company created appear. Click the column headings to change the order of the list.
+3. All the experiences that you or your company created appear. Click the column headings to change the order of the list.
 
-4.  Use the filter at the top of the list to display only the experiences that you want to see. Enter one or more of the following parameters:
+4. Use the filter at the top of the list to display only the experiences that you want to see. Enter one or more of the following parameters:
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Parameter</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>Experience name</p></td>
-    <td><p>From the list, select the name of the experience that you want to review or update.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>Hardware ID(s)</p></td>
-    <td><p>Enter the hardware ID(s) that you want to review, inserting a semicolon after each entry. This displays the experiences that contain the selected hardware ID(s).</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>Device category</p></td>
-    <td><p>From the list, select the device category that you want to review.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>Model ID(s)</p></td>
-    <td><p>Enter the model ID(s) that you want to review, inserting a semicolon after each entry. This displays the experiences that contain the selected model ID(s).</p></td>
-    </tr>
-    </tbody>
-    </table>
+|Parameter|Description|
+|---|---|
+|Experience name|From the list, select the name of the experience that you want to review or update.|
+|Hardware ID(s)|Enter the hardware ID(s) that you want to review, inserting a semicolon after each entry. This displays the experiences that contain the selected hardware ID(s).
+|Device category|From the list, select the device category that you want to review.|
+|Model ID(s)|Enter the model ID(s) that you want to review, inserting a semicolon after each entry. This displays the experiences that contain the selected model ID(s).|
 
-     
+## To open and view your device metadata experience
 
-**To open and view your device metadata experience**
+1. Click an experience to view the details.
 
-1.  Click an experience to view the details.
-
-2.  Under **Experience information**, review the information, which includes:
+2. Under **Experience information**, review the information, which includes:
 
     <table>
     <colgroup>
@@ -107,16 +80,12 @@ On the **Manage experiences** page, you can add, remove, or promote (from previe
     </tbody>
     </table>
 
-     
+3. Under **Metadata packages**, expand an individual package to view more details. You can also download a package that is live or ready to be published.
 
-3.  Under **Metadata packages**, expand an individual package to view more details. You can also download a package that is live or ready to be published.
+    >[!NOTE]
+    >If a metadata package has an error, it will be displayed here.
 
-    **Note**  
-    If a metadata package has an error, it will be displayed here.
-
-     
-
-4.  You can sort the list by clicking one of the following column headers:
+4. You can sort the list by clicking one of the following column headers:
 
     <table>
     <colgroup>
@@ -163,55 +132,35 @@ On the **Manage experiences** page, you can add, remove, or promote (from previe
     </tbody>
     </table>
 
-     
+## To modify your device metadata experience
 
-**To modify your device metadata experience**
+1. To release a preview package, select the package, and then click **Release**.
 
-1.  To release a preview package, select the package, and then click **Release**.
+    >[!NOTE]
+    >It can take up to 48 hours for a released file to be available for users to download.
 
-    **Note**  
-    It can take up to 48 hours for a released file to be available for users to download.
+2. To remove a package from the experience, select the package, and then click **Delete**.
 
-     
+   >[!NOTE]
+   >You can only remove a package that is in the **Live** or **Error** state.
 
-2.  To remove a package from the experience, select the package, and then click **Delete**.
+3. To update an existing package, select the package, click **Delete**, and then create and upload a new package.
 
-    **Note**  
-    You can only remove a package that is in the **Live** or **Error** state.
+    For more information about creating a new package, see the [Device Metadata Authoring Wizard](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/device-metadata-authoring-wizard-portal), available in the [Windows Driver Kit](https://docs.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk).
 
-     
+4. To add a new package, under **Add more metadata**, browse for the file or files that you want to add, create a friendly name if you want, and then click **Submit**.
 
-3.  To update an existing package, select the package, click **Delete**, and then create and upload a new package.
+    >[!NOTE]
+    >You can add a total of 50 packages to an experience.
 
-    For more information about creating a new package, see the [Device Metadata Authoring Wizard](http://go.microsoft.com/fwlink/p/?LinkID=265479), available in the [Windows Driver Kit](http://go.microsoft.com/fwlink/p/?LinkID=265477).
+## Related topics
 
-4.  To add a new package, under **Add more metadata**, browse for the file or files that you want to add, create a friendly name if you want, and then click **Submit**.
+[Create a Device Metadata Experience](create-a-device-metadata-experience.md)
 
-    **Note**  
-    You can add a total of 50 packages to an experience.
+[Submit a Bulk Metadata Package](submit-a-bulk-metadata-package.md)
 
-     
+[Creating a Preview Package](creating-a-preview-package.md)
 
-## <span id="related_topics"></span>Related topics
+[Errors and Solutions When Submitting Device Metadata Experiences](errors-and-solutions-when-submitting-device-metadata-experiences.md)
 
-
-[Create a Device Metadata Experience](https://msdn.microsoft.com/library/windows/hardware/br230794.aspx)
-
-[Submit a Bulk Metadata Package](https://msdn.microsoft.com/library/windows/hardware/hh801895.aspx)
-
-[Creating a Preview Package](https://msdn.microsoft.com/library/windows/hardware/br230780.aspx)
-
-[Errors and Solutions When Submitting Device Metadata Experiences](https://msdn.microsoft.com/library/windows/hardware/br230786.aspx)
-
-[Device Metadata Business Rules](https://msdn.microsoft.com/library/windows/hardware/br230767.aspx)
-
- 
-
- 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhw_dashboard\hw_dashboard%5D:%20Manage%20Device%20Metadata%20Experiences%20%20RELEASE:%20%281/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-
-
+[Device Metadata Business Rules](device-metadata-business-rules.md)

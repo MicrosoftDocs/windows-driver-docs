@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Object Example for a PCI IDE Controller
@@ -48,6 +49,5 @@ Starting from the bottom of the figure, the following describes each device obje
  
 
 
---------------------
 
 

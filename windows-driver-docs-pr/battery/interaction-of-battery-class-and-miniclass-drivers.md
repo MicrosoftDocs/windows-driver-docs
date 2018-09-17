@@ -10,6 +10,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Interaction of Battery Class and Miniclass Drivers
@@ -33,6 +34,5 @@ The class driver is designed to handle the superset of possible battery informat
  
 
 
---------------------
 
 

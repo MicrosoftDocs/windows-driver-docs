@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Summary of INF Directives
 
 
-## <a href="" id="ddk-summary-of-inf-directives-dg"></a>
+
 
 
 The following list summarizes many (but not all) of the directives that can be used in INF files. INF directive names are case-insensitive. For example, **Addreg**, **addReg**, and **AddReg** are equally valid as directive specifications within an INF file.
@@ -73,7 +74,7 @@ This directive references an *add-interface-section* in which one or more **AddR
 
  
 
-This rarely used directive references one or more *bit-registry-section*s specifying existing REG_BINARY-type value entries in the registry for which particular bits in the values are to be modified.
+This rarely used directive references one or more *bit-registry-section*s specifying existing [REG_BINARY](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types)-type value entries in the registry for which particular bits in the values are to be modified.
 
 <a href="" id="logconfig-directive"></a>[**LogConfig Directive**](inf-logconfig-directive.md)  
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).

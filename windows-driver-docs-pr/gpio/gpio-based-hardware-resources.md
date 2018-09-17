@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # GPIO-Based Hardware Resources
@@ -61,6 +62,5 @@ For more information about **IOCTL\_GPIO\_READ\_PINS** requests, including the m
  
 
 
---------------------
 
 

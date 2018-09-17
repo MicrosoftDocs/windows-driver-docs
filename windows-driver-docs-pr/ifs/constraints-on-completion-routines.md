@@ -10,6 +10,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Constraints on Completion Routines
@@ -63,6 +64,5 @@ A completion routine cannot return STATUS\_MORE\_PROCESSING\_REQUIRED for an opl
  
 
 
---------------------
 
 

@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Non-COM-Based Rendering Plug-Ins
 
 
-## <a href="" id="ddk-non-com-based-rendering-plug-ins-gg"></a>
+
 
 
 A printer minidriver notifies the core driver of its capabilities by implementing the [**OEMEnableDriver**](https://msdn.microsoft.com/library/windows/hardware/ff557708) function, which fills in the members of a [**DRVENABLEDATA**](https://msdn.microsoft.com/library/windows/hardware/ff556206) structure. The **pdrvfn** member of this structure should be set with the array address of [**DRVFN**](https://msdn.microsoft.com/library/windows/hardware/ff556221) structures. Each element of this array should be initialized with a function index, and the address of one of the **OEM***Xxx* functions that the IHV is implementing, respectively. (For detailed descriptions of each of the **OEM***Xxx* functions, see [Non-COM-Based DDI Hook-Out Functions](https://msdn.microsoft.com/library/windows/hardware/ff557586).)
@@ -76,7 +77,5 @@ Note that when an **OEM***Xxx* DDI calls back to the Unidrv core driver and the 
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Non-COM-Based%20Rendering%20Plug-Ins%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device I/O from the UEFI environment
@@ -29,6 +30,5 @@ For details on the UpdateCapsule function, the structure of a capsule, and UEFI 
 [Seamless crisis prevention and recovery](seamless-crisis-prevention-and-recovery.md)  
 [Firmware update status](firmware-update-status.md)  
 
---------------------
 
 

@@ -10,6 +10,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Advantages of the Filter Manager Model
@@ -43,6 +44,5 @@ The filter manager model offers the following advantages over the existing legac
  
 
 
---------------------
 
 

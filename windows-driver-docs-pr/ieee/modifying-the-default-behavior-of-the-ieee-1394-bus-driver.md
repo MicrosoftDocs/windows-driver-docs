@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Modifying the Default Behavior of the IEEE 1394 Bus Driver
@@ -111,6 +112,5 @@ The following table describes the registry values that the new 1394 bus driver s
 [The IEEE 1394 Driver Stack](https://msdn.microsoft.com/library/windows/hardware/ff538867)  
 [IEEE 1394 Bus Driver in Windows 7](https://msdn.microsoft.com/library/windows/hardware/gg266402)  
 
---------------------
 
 

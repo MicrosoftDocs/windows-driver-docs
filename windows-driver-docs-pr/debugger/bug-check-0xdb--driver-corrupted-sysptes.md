@@ -3,7 +3,7 @@ title: Bug Check 0xDB DRIVER_CORRUPTED_SYSPTES
 description: The DRIVER_CORRUPTED_SYSPTES bug check has a value of 0x000000DB. This indicates that an attempt was made to touch memory at an invalid IRQL, probably due to corruption of system PTEs.
 ms.assetid: f21a7582-c665-4677-851b-702888d9fe13
 keywords: ["Bug Check 0xDB DRIVER_CORRUPTED_SYSPTES", "DRIVER_CORRUPTED_SYSPTES"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -14,6 +14,7 @@ api_name:
 - DRIVER_CORRUPTED_SYSPTES
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xDB: DRIVER\_CORRUPTED\_SYSPTES

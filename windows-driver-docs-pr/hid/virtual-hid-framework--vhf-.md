@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Write a HID source driver by using Virtual HID Framework (VHF)
@@ -68,12 +69,12 @@ The Hidclass/Mshidkmdf pair enumerates [Top-Level Collections (TLC)](top-level-c
 
 Queries and consumes the TLCs that are reported by the HID device stack.
 
-## <a href="" id="header-and-library-requirements-"></a>Header and library requirements
+## Header and library requirements
 
 This procedure describes how to write a simple HID source driver that reports headset buttons to the operating system. In this case, the driver that implements this code can be an existing KMDF audio driver that has been modified to act as a HID source reporting headset buttons by using VHF.
 
 1.  Include Vhf.h, included in the WDK for Windows 10.
-2.  Link to Vhflkm.lib, included in the WDK.
+2.  Link to vhfkm.lib, included in the WDK.
 3.  Create a HID Report Descriptor that your device wants to report to the operating system. In this example, the HID Report Descriptor describes the headset buttons. The report specifies a HID Input Report, size 8 bits (1 byte). The first three bits are for the headset middle, volume-up, and volume-down buttons. The remaining bits are unused.
 
 ```
@@ -97,7 +98,7 @@ UCHAR HeadSetReportDescriptor[] = {
 };
 ```
 
-## <a href="" id="create-a-virtual-hid-device-"></a>Create a virtual HID device
+## Create a virtual HID device
 
 Initialize a [**VHF\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/dn925044) structure by calling the [**VHF\_CONFIG\_INIT**](https://msdn.microsoft.com/library/windows/hardware/dn925046) macro and then call the [**VhfCreate**](https://msdn.microsoft.com/library/windows/hardware/dn925036) method. The driver must call **VhfCreate** at PASSIVE\_LEVEL after the [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926) call, typically, in the driver's [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function.
 
@@ -187,7 +188,7 @@ Error:
 }
 ```
 
-## <a href="" id="submit"></a>Submit the HID input report
+## Submit the HID input report
 
 Submit the HID input report by calling [**VhfReadReportSubmit**](https://msdn.microsoft.com/library/windows/hardware/dn925040).
 
@@ -269,5 +270,3 @@ HKR,,"LowerFilters",0x00010000,"vhf"
 ## Related topics
 [Human Interface Device](https://msdn.microsoft.com/library/windows/hardware/ff543301)
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhid\hid%5D:%20Write%20a%20HID%20source%20driver%20by%20using%20Virtual%20HID%20Framework%20%28VHF%29%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")

@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Blocking legacy file system filter drivers
@@ -27,7 +28,7 @@ Use the **IoBlockLegacyFsFilters** registry key to specify if the system blocks 
 The registry key must be created under the following registry path:
 
 ``` syntax
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SessionManager\I/O System
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\I/O System
 ```
 
 The valid DWORD values for the **IoBlockLegacyFsFilters** key are as follows:
@@ -137,6 +138,5 @@ If your system has legacy file system filter drivers, work with the respective I
  
 
 
---------------------
 
 

@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying Custom Property Pages for Network Adapters
 
 
-## <a href="" id="ddk-specifying-custom-property-pages-for-network-adapters-ng"></a>
+
 
 
 If the **Advanced** property page is not suitable for displaying the configuration choices for a Net component (adapter), you can create one or more custom property pages.

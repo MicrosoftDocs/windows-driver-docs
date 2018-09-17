@@ -10,6 +10,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of the ACPI 4.0 Power Metering Objects
@@ -40,6 +41,5 @@ Each ACPI PMI namespace object has appropriate control methods that allow intera
  
 
 
---------------------
 
 

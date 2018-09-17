@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_RNG\_SERVICE\_BINDING\_PROTOCOL
@@ -45,6 +46,5 @@ Before an application terminates execution, every successful call to the EFI\_RN
  
 
 
---------------------
 
 

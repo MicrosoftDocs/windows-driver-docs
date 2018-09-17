@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # History of Storport
@@ -26,6 +27,5 @@ Storport offers a higher performance architecture and better fibre channel compa
  
 
 
---------------------
 
 

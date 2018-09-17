@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Required and Optional Tape Miniclass Routines
@@ -50,6 +51,5 @@ See also the description of tape miniclass routines in [Tape Miniclass Driver Ro
  
 
 
---------------------
 
 

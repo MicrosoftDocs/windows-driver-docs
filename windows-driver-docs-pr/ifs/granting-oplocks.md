@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Granting Oplocks
@@ -263,6 +264,5 @@ The following table identifies the required conditions necessary to grant an opl
  
 
 
---------------------
 
 

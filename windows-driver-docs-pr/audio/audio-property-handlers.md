@@ -15,10 +15,11 @@ keywords:
 - pins WDK audio , property handlers
 - nodes WDK audio , property handlers
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 08/07/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Audio Property Handlers
@@ -69,14 +70,25 @@ For example, if the client specifies a [**KSNODEPROPERTY\_AUDIO\_CHANNEL**](http
 
 **sizeof**(KSNODEPROPERTY\_AUDIO\_CHANNEL) - **sizeof**(KSNODEPROPERTY)
 
-Before submitting a get-property request to retrieve a property value, the client should allocate an output buffer into which the miniport driver's property handler can write the property value. For some properties, the size of the output buffer is device-dependent and the client must query the property handler for the required buffer size. In these cases, the client submits an initial property request with a zero-length output buffer. The handler responds by returning the required buffer size along with the status code STATUS\_BUFFER\_OVERFLOW. (The handler writes the required size into the **ValueSize** member of the PCPROPERTY\_REQUEST structure.) The client then retrieves the property value by allocating an output buffer of the specified size and sending this buffer in a second get-property request.
+Before submitting a get-property request to retrieve a property value, the client should allocate an output buffer into which the miniport driver's property handler can write the property value. For some properties, the size of the output buffer is device-dependent, and the client must query the property handler for the required buffer size. In these cases, the client submits an initial property request with an output buffer pointer of nullptr and an output buffer length of zero. The handler responds by returning the required buffer size along with the status code STATUS_BUFFER_OVERFLOW. The client then retrieves the property value by allocating an output buffer of the specified size and sending this buffer in a second get-property request.
+ 
+If the specified buffer size is too small to receive any of the requested information, the method returns STATUS_BUFFER_TOO_SMALL. 
+ 
+In some cases, PortCls port drivers return STATUS_BUFFER_TOO_SMALL instead of STATUS_BUFFER_OVERFLOW in response to a property request with a non-zero output buffer address and size. Required buffer size is not returned in such cases. 
+ 
+For more information, see [Using NTSTATUS Values](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/using-ntstatus-values) and these blog posts:
+
+- [How to return the number of bytes required for a subsequent operation](https://blogs.msdn.microsoft.com/doronh/2006/12/12/how-to-return-the-number-of-bytes-required-for-a-subsequent-operation/)
+
+- [STATUS_BUFFER_OVERFLOW really should be named STATUS_BUFFER_OVERFLOW_PREVENTED](https://blogs.msdn.microsoft.com/oldnewthing/20080404-00/?p=22863)
+
+
+
 
  
 
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Audio%20Property%20Handlers%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Intermediate Driver Unbinding Operations
 
 
-## <a href="" id="ddk-intermediate-driver-unbinding-operations-ng"></a>
+
 
 
 An intermediate driver unbinds from an underlying miniport driver by calling [**NdisCloseAdapterEx**](https://msdn.microsoft.com/library/windows/hardware/ff561640) from its [*ProtocolUnbindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570278) function. NDIS calls *ProtocolUnbindAdapterEx* if the underlying miniport adapter is no longer available.

@@ -16,6 +16,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Converting an Existing SCSI Class Driver for Plug and Play
@@ -41,6 +42,5 @@ To run successfully as a PnP driver, an existing SCSI class driver must be modif
  
 
 
---------------------
 
 

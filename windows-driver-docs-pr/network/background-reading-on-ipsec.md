@@ -10,13 +10,14 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Background Reading on IPsec
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-background-reading-on-ipsec-ng"></a>
+
 
 
 To comprehend this section, you must understand Internet protocol security (IPsec) as specified in the following RFCs and drafts published by the IP Security Working Group of the Internet Engineering Task Force (IETF):

@@ -9,6 +9,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Battery Miniclass Driver Functionality
@@ -40,6 +41,5 @@ Every battery miniclass driver provides a set of [BatteryMini*Xxx*](https://msdn
  
 
 
---------------------
 
 

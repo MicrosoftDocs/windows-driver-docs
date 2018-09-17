@@ -19,12 +19,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # COM Port Database
 
 
-## <a href="" id="ddk-com-port-database-kg"></a>
+
 
 
 The system-supplied COM port database arbitrates the use of COM port numbers by [COM ports](configuration-of-com-ports.md) that are installed on the system. Microsoft Windows provides this component to facilitate installing COM ports and, in particular, to ensure that each port number is assigned, at most, to one port. The component consists of the database and a library containing functions that the installation software calls to access the database. All system-supplied installers for COM ports use the COM port database to obtain a COM port number. Although not a Plug and Play requirement, all vendor-supplied installers should also use the COM port database to obtain a COM port number.
@@ -86,7 +87,5 @@ A client can resize the COM port database by calling the [**ComDBResizeDatabase*
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bserports\serports%5D:%20COM%20Port%20Database%20%20RELEASE:%20%288/4/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

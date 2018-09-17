@@ -4,10 +4,11 @@ author: windows-driver-content
 description: Use the ACPI Generation Framework (AcpiGenFx) library to write an app that generates ACPI tables.
 ms.assetid: 46A725C3-609E-45B9-A4BD-033656208E92
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 06/26/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Generate ACPI tables by using AcpiGenFx
@@ -16,10 +17,6 @@ ms.technology: windows-devices
 **Summary**
 
 -   Create a .NET app that uses AcpiGenFx to generate ACPI tables
-
-**Last Updated**
-
--   July 2015
 
 **Applies to**
 
@@ -41,10 +38,12 @@ AcpiGenFx is declarative in nature: its output is static data only, and it is no
 
 ## Before you begin...
 
+Locate the following files in the **AcpiGenFx** folder of your WDK installation.
 
-Download the *acpigen* folder from [this site](http://go.microsoft.com/fwlink/p/?LinkId=618021):
+> [!NOTE]
+> AcpiGenFx.dll and associated samples are available in the Tools folder of the WDK. In the Tools directory, navigate to the target architecture folder, then to the AcpiGenFx folder. For example, the x86 version is located in C:\Program Files (x86)\Windows Kits\10\Tools\x86\ACPIGenFx.
 
--   acpigenfx.dll
+-   AcpiGenFx.dll
 
     Required to use ACPIGenFx.
 
@@ -445,6 +444,5 @@ In development and test scenarios, you can replace the AML binary that is genera
 ## Related topics
 [ACPI system description tables](acpi-system-description-tables.md)  
 
---------------------
 
 

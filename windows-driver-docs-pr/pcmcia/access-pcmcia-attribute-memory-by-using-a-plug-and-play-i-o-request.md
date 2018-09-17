@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Access PCMCIA Attribute Memory by Using a Plug and Play I/O Request
 
 
-## <a href="" id="ddk-access-pcmcia-attribute-memory-by-using-a-plug-and-play-i-o-reques"></a>
+
 
 
 This section describes how a PC Card or Cardbus card driver can use Plug and Play I/O requests to access attribute memory.

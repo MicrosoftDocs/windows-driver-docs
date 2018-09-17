@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Including a PrintProvider Section
 
 
-## <a href="" id="ddk-including-a-printprovider-section-ng"></a>
+
 
 
 An INF file that installs a **NetClient** component that is a print provider must contain a **PrintProvider** section for that component.

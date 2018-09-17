@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Architecture
@@ -113,6 +114,5 @@ In other cases, vendors may want to provide more restricted access to the silo. 
  
 
 
---------------------
 
 

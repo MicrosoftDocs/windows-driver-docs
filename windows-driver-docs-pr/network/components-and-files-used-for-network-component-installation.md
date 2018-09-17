@@ -20,12 +20,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Components and Files Used for Network Component Installation
 
 
-## <a href="" id="ddk-components-and-files-used-for-network-component-installation-ng"></a>
+
 
 
 The following components and files are used to install network drivers:

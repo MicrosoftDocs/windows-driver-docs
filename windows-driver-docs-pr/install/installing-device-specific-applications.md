@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing Device-Specific Applications
 
 
-## <a href="" id="ddk-installing-device-specific-applications-dg"></a>
+
 
 
 If your distribution medium includes device-specific applications, you can use the following methods to install those applications:

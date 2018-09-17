@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Timer Constants
 
 
-## <a href="" id="ddk-timer-constants-ng"></a>
+
 
 
 The **ControlTimeoutPeriod** for a USB Remote NDIS device is 10 seconds.

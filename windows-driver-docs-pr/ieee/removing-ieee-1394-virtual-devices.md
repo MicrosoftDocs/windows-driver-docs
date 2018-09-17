@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Removing IEEE 1394 Virtual Devices
 
 
-## <a href="" id="ddk-removing-ieee-1394-virtual-devices-kg"></a>
+
 
 
 There are two methods of removing the physical device object (PDO) of a virtual device:
@@ -51,6 +52,5 @@ Note that an upper-level driver or user-mode service can determine, through the 
  
 
 
---------------------
 
 

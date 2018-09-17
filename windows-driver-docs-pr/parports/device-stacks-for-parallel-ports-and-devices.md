@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Stacks for Parallel Ports and Devices
 
 
-## <a href="" id="ddk-device-stacks-for-parallel-ports-and-devices-kg"></a>
+
 
 
 This section describes the device stacks created by the system-supplied parallel drivers for parallel ports and devices that are attached to parallel ports.
@@ -45,6 +46,5 @@ For more information about how to operate parallel ports and devices that are at
  
 
 
---------------------
 
 

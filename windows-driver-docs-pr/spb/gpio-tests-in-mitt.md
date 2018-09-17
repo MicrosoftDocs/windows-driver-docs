@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # GPIO tests in MITT
@@ -192,6 +193,5 @@ To generate a sequence, you need these values:
 ## Related topics
 [Testing with Multi Interface Test Tool (MITT)](https://msdn.microsoft.com/library/windows/hardware/dn919874)  
 
---------------------
 
 

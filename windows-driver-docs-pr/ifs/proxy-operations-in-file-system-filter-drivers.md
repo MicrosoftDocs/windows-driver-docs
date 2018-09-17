@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Proxy Operations in File System Filter Drivers
@@ -30,6 +31,5 @@ It is essential for a file system filter driver to identify instances where the 
  
 
 
---------------------
 
 

@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing the update
@@ -34,4 +35,3 @@ The EFI System Resource Table provides the current firmware version and the stat
 [Authoring a firmware update package](authoring-a-firmware-update-package.md)  
 [Certifying and signing the update package](certifying-and-signing-the-update-package.md)  
 
---------------------

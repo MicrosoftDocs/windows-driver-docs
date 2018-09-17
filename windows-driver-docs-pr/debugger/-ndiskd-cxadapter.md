@@ -3,7 +3,7 @@ title: ndiskd.cxadapter
 description: The ndiskd.cxadapter extension displays information about a NETADAPTER object.
 ms.assetid: 5BE91B1C-9795-4E2C-834A-B7424FF1FCDB
 keywords: ["ndiskd.cxadapter Windows Debugging"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -14,6 +14,7 @@ api_name:
 - ndiskd.cxadapter
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.cxadapter
@@ -154,7 +155,6 @@ NETADAPTER
     WDFDEVICE          00002efdcf45f2f8    
 
     Event Callbacks                        Function pointer   Symbol (if available)
-    EvtAdapterSetCapabilities              fffff800341519ac   RtEthSample+19ac
     EvtAdapterCreateTxQueue                fffff80034151508   RtEthSample+1508
     EvtAdapterCreateRxQueue                fffff800341510ec   RtEthSample+10ec
 
@@ -175,7 +175,6 @@ NETADAPTER
     WDFDEVICE          00002efdcf45f2f8    
 
     Event Callbacks                        Function pointer   Symbol (if available)
-    EvtAdapterSetCapabilities              fffff800341519ac   RtEthSample+19ac
     EvtAdapterCreateTxQueue                fffff80034151508   RtEthSample+1508
     EvtAdapterCreateRxQueue                fffff800341510ec   RtEthSample+10ec
 
@@ -209,7 +208,6 @@ DATAPATH QUEUES
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!ndiskd.cxadapter%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

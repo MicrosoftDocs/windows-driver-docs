@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Stereoscopic 3D
@@ -33,8 +34,8 @@ Windows 8 provides a consistent API and device driver interface (DDI) platform 
 <td align="left">Optional</td>
 </tr>
 <tr class="even">
-<td align="left">[WHCK]( http://go.microsoft.com/fwlink/p/?linkid=258342) requirements and tests</td>
-<td align="left"><p><strong>Device.Graphicsâ€¦ProcessingStereoscopicVideoContent</strong></p>
+<td align="left">[WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests</td>
+<td align="left"><p><strong>Device.Graphics ¦ ProcessingStereoscopicVideoContent</strong></p>
 <p><strong>Device.Display.Monitor.Stereoscopic3DModes</strong></p></td>
 </tr>
 </tbody>
@@ -92,11 +93,11 @@ These DDIs are new or updated for Windows 8 to support stereoscopic 3-D swapcha
 
 System builders are encouraged to test their stereo driver packages by using the above settings to ensure correct functionality.
 
-Stereo 3-D functionality can be enabled only on Microsoft DirectX 10â€“capable hardware and higher. However, since Microsoft Direct3D 11 APIs work on DirectX 9.x and 10.x hardware, all WDDM 1.2 drivers must support Direct3D 11 and be tested thoroughly to ensure that Direct3D 11APIs work on all Windows 8 hardware.
+Stereo 3-D functionality can be enabled only on Microsoft DirectX 10-capable hardware and higher. However, since Microsoft Direct3D 11 APIs work on DirectX 9.x and 10.x hardware, all WDDM 1.2 drivers must support Direct3D 11 and be tested thoroughly to ensure that Direct3D 11APIs work on all Windows 8 hardware.
 
-Although stereoscopic 3-D is an optional WDDM 1.2 feature, Direct3D 11 API support is required on all Windows 8 hardware. Therefore, WDDM 1.2 drivers (Full Graphics and Render devices) must support Direct3D 11 APIs by adding support for cross-process sharing of texture arrays. This requirement is to ensure that stereo apps donâ€™t have failures in mono modes.
+Although stereoscopic 3-D is an optional WDDM 1.2 feature, Direct3D 11 API support is required on all Windows 8 hardware. Therefore, WDDM 1.2 drivers (Full Graphics and Render devices) must support Direct3D 11 APIs by adding support for cross-process sharing of texture arrays. This requirement is to ensure that stereo apps don't have failures in mono modes.
 
-For more info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation]( http://go.microsoft.com/fwlink/p/?linkid=258342) on **Device.Graphicsâ€¦Processing Stereoscopic Video Content** and **Device.Display.Monitor.Stereoscopic 3D Modes**.
+For more info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphics ¦ Processing Stereoscopic Video Content** and **Device.Display.Monitor.Stereoscopic 3D Modes**.
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 
@@ -104,7 +105,6 @@ See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added wi
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Stereoscopic%203D%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

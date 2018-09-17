@@ -17,6 +17,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of System Battery Management
@@ -66,6 +67,5 @@ As shown in the preceding figure, the role of each component in battery operatio
  
 
 
---------------------
 
 

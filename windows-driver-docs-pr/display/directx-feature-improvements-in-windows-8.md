@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DirectX feature improvements in Windows 8
@@ -100,7 +101,7 @@ Target-independent rasterization (TIR) provides a high performance anti-aliasing
 
 Direct3D 10.0 - Direct3D 11.0 hardware (and Feature Level 10\_0 - 11\_0) supports ForcedSampleCount set to 1 (and any sample count for Render Target View) along with the described limitations (for example, no depth/stencil).
 
-For 10\_0, 10\_1 and 11\_0 hardware, when [**D3D11\_1\_DDI\_RASTERIZER\_DESC**](https://msdn.microsoft.com/library/windows/hardware/hh451052).**ForcedSampleCount** is set to 1, line rendering cannot be configured to 2-triangle (quadrilateral)â€“based mode (that is, the **MultisampleEnable** state cannot be set to true). This limitation isn't present for 11\_1 hardware. Note that the naming of the **MultisampleEnable** state is misleading because it no longer has anything to do with enabling multisampling; instead, it is now one of the controls together with **AntialiasedLineEnable** for selecting line-rendering mode.
+For 10\_0, 10\_1 and 11\_0 hardware, when [**D3D11\_1\_DDI\_RASTERIZER\_DESC**](https://msdn.microsoft.com/library/windows/hardware/hh451052).**ForcedSampleCount** is set to 1, line rendering cannot be configured to 2-triangle (quadrilateral)-based mode (that is, the **MultisampleEnable** state cannot be set to true). This limitation isn't present for 11\_1 hardware. Note that the naming of the **MultisampleEnable** state is misleading because it no longer has anything to do with enabling multisampling; instead, it is now one of the controls together with **AntialiasedLineEnable** for selecting line-rendering mode.
 
 This limited form of target-independent rasterization, with **ForcedSampleCount** = 1, closely matches a mode that was present in Direct3D 10.0, but became unavailable for Direct3D 10.1 and Direct3D (and Feature Levels 10\_1 and 11\_0) due to API changes. In Direct3D 10.0, this mode was the center-sampled rendering even on a Multiple Sample Anti Aliasing (MSAA) surface that was available when **MultisampleEnable** was set to false (and this could be toggled by toggling **MultisampleEnable**). In Direct3D 10.1+, **MultisampleEnable** no longer affects multisampling (despite the name), and only controls line-rendering behavior.
 
@@ -113,7 +114,7 @@ Render targets in Direct3D 11.1 can now support a discard behavior by using a ne
 
 ### <span id="Updating_resources_on_a_TBDR_architecture"></span><span id="updating_resources_on_a_tbdr_architecture"></span><span id="UPDATING_RESOURCES_ON_A_TBDR_ARCHITECTURE"></span>Updating resources on a TBDR architecture
 
-Because TBDR architectures complete multiple passes over the same command buffer, you must use special care to notify the driver when a portion of a sub-resource was not modified during a previous draw call. Having a NO\_OVERWRITE usage on a Direct3D**UpdateSubResource** function can help the driver to manage resources where no previous draw calls were made to a region of a texture. This simply requires that you inform the driver of the applicationâ€™s intent of either discarding the existing data, or protecting it from overwrite. This enables more efficient rendering on TBDR architectures and introduces no penalties when it is run on traditional desktop hardware.
+Because TBDR architectures complete multiple passes over the same command buffer, you must use special care to notify the driver when a portion of a sub-resource was not modified during a previous draw call. Having a NO\_OVERWRITE usage on a Direct3D**UpdateSubResource** function can help the driver to manage resources where no previous draw calls were made to a region of a texture. This simply requires that you inform the driver of the application's intent of either discarding the existing data, or protecting it from overwrite. This enables more efficient rendering on TBDR architectures and introduces no penalties when it is run on traditional desktop hardware.
 
 New variants of the Direct3D 11 UpdateSubresource() and CopySubresourceRegions APIs, which both update a portion of a GPU surface, provide an addition Flags field where NO\_OVERWRITE or DISCARD can be specified.
 
@@ -137,11 +138,11 @@ This requires at least a DirectX 11.1 feature level.
 
 Although Stereoscopic 3-D is an optional WDDM 1.2 system feature, there is underlying infrastructure that must be implemented by all WDDM 1.2 device drivers regardless of whether they support the Stereoscopic 3-D system feature.
 
-DirectX 10 (or greater)â€“capable graphics hardware must support cross-process sharing of texture arrays. This capability provides a basis to enable Stereoscopic 3-D. The WDDM 1.2 Direct3D DDIs require support of arrayed buffers as render targets independent of hardware feature level.
+DirectX 10 (or greater)-capable graphics hardware must support cross-process sharing of texture arrays. This capability provides a basis to enable Stereoscopic 3-D. The WDDM 1.2 Direct3D DDIs require support of arrayed buffers as render targets independent of hardware feature level.
 
-This requirement ensures that stereo applications wonâ€™t have failures in mono modes. For example: even for cases when stereo is not enabled on the system, applications should be able to create stereo swap chains or arrayed buffers as render targets and then call **Present**. In this case, only the left view is displayed (or if the *prefer right* Microsoft DirectX Graphics Infrastructure (DXGI) present flag is set, only the right view).
+This requirement ensures that stereo applications won't have failures in mono modes. For example: even for cases when stereo is not enabled on the system, applications should be able to create stereo swap chains or arrayed buffers as render targets and then call **Present**. In this case, only the left view is displayed (or if the *prefer right* Microsoft DirectX Graphics Infrastructure (DXGI) present flag is set, only the right view).
 
-Therefore, WDDM 1.2 drivers (Full Graphics & Render devices) must support Direct3D 11 APIs by adding support for cross process sharing of texture arrays. In earlier versions, cross-process shared resources could be only single-layer surfaces. In Windows 8, the maximum size of a shared array is two elements (which is sufficient for stereo). For more information on this requirement, see **Device.Graphicsâ€¦Stereoscopic3DArraySupport** in [Windows Hardware Certification Requirements](http://go.microsoft.com/fwlink/p/?linkid=324537). Other relevant Microsoft WindowsWindowsWindows HCK requirements are **Device.Graphicsâ€¦ProcessingStereoscopicVideoContent** and **Device.Display.Monitor.Stereoscopic3DModes**.
+Therefore, WDDM 1.2 drivers (Full Graphics & Render devices) must support Direct3D 11 APIs by adding support for cross process sharing of texture arrays. In earlier versions, cross-process shared resources could be only single-layer surfaces. In Windows 8, the maximum size of a shared array is two elements (which is sufficient for stereo). For more information on this requirement, see **Device.Graphics ¦ Stereoscopic3DArraySupport** in [Windows Hardware Certification Requirements](http://go.microsoft.com/fwlink/p/?linkid=324537). Other relevant Microsoft WindowsWindowsWindows HCK requirements are **Device.Graphics ¦ ProcessingStereoscopicVideoContent** and **Device.Display.Monitor.Stereoscopic3DModes**.
 
 ## <span id="unordered"></span><span id="UNORDERED"></span>UAVs with multi-sample anti-alias sample access
 
@@ -234,7 +235,6 @@ These functions and structures are new or updated for Windows 8:
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20DirectX%20feature%20improvements%20in%20Windows%208%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

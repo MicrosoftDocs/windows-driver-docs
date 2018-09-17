@@ -7,6 +7,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Secure boot and device encryption overview
@@ -87,6 +88,5 @@ You should be aware of the following requirements and considerations related to 
  
 
 
---------------------
 
 

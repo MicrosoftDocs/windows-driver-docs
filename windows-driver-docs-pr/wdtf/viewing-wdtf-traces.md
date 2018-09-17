@@ -12,6 +12,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Enabling and Viewing WDTF Traces
@@ -74,7 +75,7 @@ Viewing WDTF traces requires formatting the ETL files. The following steps show 
 
 3.  Open the CSV files in Microsoft Excel so you can use filtering features of Excel to filter the collected traces. You can filter the traces for certain time periods. You can filter the traces to examine traces logged by certain WDTF components.
 
-## <a href="" id="wdtf-enable-level"></a>Programmatically configuring WDTF trace levels
+## Programmatically configuring WDTF trace levels
 
 
 All WDTF objects provide tracing information as they run.
@@ -143,7 +144,5 @@ For more information about trace levels, see the [**ITracer**](https://msdn.micr
 [TraceView](https://msdn.microsoft.com/library/windows/hardware/ff556063)  
 [WPP Software Tracing](https://msdn.microsoft.com/library/windows/hardware/ff556204)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bdtf\dtf%5D:%20Enabling%20and%20Viewing%20WDTF%20Traces%20%20RELEASE:%20%289/13/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

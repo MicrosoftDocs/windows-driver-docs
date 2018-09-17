@@ -14,6 +14,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating and Using Per-Stream Context Structures
@@ -35,6 +36,5 @@ File system filter drivers that use a per-stream context structure containing a 
  
 
 
---------------------
 
 

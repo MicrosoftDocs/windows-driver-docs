@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IDE Port Driver
@@ -42,4 +43,3 @@ In Windows Vista and later versions of the operating system, the IDE stack is ma
  
 
 
---------------------

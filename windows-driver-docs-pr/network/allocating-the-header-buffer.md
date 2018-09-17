@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Allocating the Header Buffer
 
 
-## <a href="" id="ddk-allocating-the-header-buffer-ng"></a>
+
 
 
 NDIS specifies the maximum header size that a miniport driver should allocate in the **MaxHeaderSize** member of the [**NDIS\_HD\_SPLIT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565694) structure. For more information about setting header-data split attributes, see [Initializing a Header-Data Split Provider](initializing-a-header-data-split-provider.md).

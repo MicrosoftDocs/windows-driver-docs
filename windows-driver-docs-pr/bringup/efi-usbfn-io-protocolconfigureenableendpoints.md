@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USBFN\_IO\_PROTOCOL.ConfigureEnableEndpoints
@@ -95,6 +96,5 @@ This function must ignore the *bMaxPacketSize0* field of the Standard Device Des
  
 
 
---------------------
 
 

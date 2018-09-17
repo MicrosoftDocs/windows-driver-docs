@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installation of Callout Drivers
@@ -34,15 +35,7 @@ A callout driver that is currently loaded can be unloaded (stopped) by typing th
 net stop drivername
 ```
 
-After a callout driver has been installed and loaded, it will appear in Device Manager. Device Manager can be used to load (start), unload (stop), and uninstall callout drivers. Callout drivers are listed in Device Manager under the **Non-Plug and Play Drivers** category, which, by default, is not usually displayed. For more information about how to use Device Manager, see [Using Device Manager](https://msdn.microsoft.com/library/windows/hardware/ff553570). For more information about how to view the **Non-Plug and Play Drivers** category in Device Manager, see [Viewing Hidden Devices](https://msdn.microsoft.com/library/windows/hardware/ff553955).
-
 A callout driver can also be installed, loaded (started), unloaded (stopped), and/or uninstalled by writing a user-mode application that calls the Win32 Service Control Manager API. For more information about Win32 service control functions, such as **CreateService**, **OpenService**, **StartService**, **ControlService**, and **DeleteService**, see the [Microsoft Windows SDK](http://go.microsoft.com/fwlink/p/?linkid=122165).
 
- 
-
- 
-
-
-
-
-
+> [!NOTE]
+> Starting in Windows 8 and later, callout drivers cannot be viewed or managed in the Device Manager because the Plug-and-Play (PnP) manager no longer creates device representations for non-PnP (legacy) devices.

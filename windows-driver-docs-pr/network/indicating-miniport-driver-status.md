@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Indicating Miniport Driver Status
 
 
-## <a href="" id="ddk-indicating-miniport-driver-status-ng"></a>
+
 
 
 Miniport drivers provide status indications to overlying drivers. The CoNDIS status indication functions are similar to the connectionless status indication functions.

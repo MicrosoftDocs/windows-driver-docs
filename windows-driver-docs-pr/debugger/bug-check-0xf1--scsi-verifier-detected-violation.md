@@ -3,7 +3,7 @@ title: Bug Check 0xF1 SCSI_VERIFIER_DETECTED_VIOLATION
 description: The SCSI_VERIFIER_DETECTED_VIOLATION bug check has a value of 0x000000F1. This is the bug check code for all Driver Verifier SCSI Verification violations.
 ms.assetid: babc33f9-a467-4b19-b1a2-1898d0224d4d
 keywords: ["Bug Check 0xF1 SCSI_VERIFIER_DETECTED_VIOLATION", "SCSI_VERIFIER_DETECTED_VIOLATION"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -14,6 +14,7 @@ api_name:
 - SCSI_VERIFIER_DETECTED_VIOLATION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xF1: SCSI\_VERIFIER\_DETECTED\_VIOLATION

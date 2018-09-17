@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storport's Interface with Storport Miniport Drivers
@@ -36,6 +37,5 @@ For an explanation of these values, see the SCSI-3 specification.
  
 
 
---------------------
 
 

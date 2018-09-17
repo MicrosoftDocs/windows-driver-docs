@@ -21,6 +21,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # The NET_ROOT Structure
@@ -62,6 +63,5 @@ There can be a delay between these two actions, and a field in the NET_ROOT stru
  
 
 
---------------------
 
 

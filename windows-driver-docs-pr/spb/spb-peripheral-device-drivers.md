@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SPB peripheral device drivers
@@ -120,6 +121,5 @@ In response to the secondary interrupt, the SPB peripheral device driver posts a
  
 
 
---------------------
 
 

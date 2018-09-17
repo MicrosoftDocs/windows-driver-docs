@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Do you need to write a driver?
@@ -76,19 +77,19 @@ Currently, Microsoft provides built-in drivers for the following other types of 
 <td align="left"><p>HID: Legacy keyboard class driver</p></td>
 <td align="left"><p>Kbdclass.sys</p></td>
 <td align="left"><p>Windows XP and later</p></td>
-<td align="left"><p>Microsoft provides support for legacy (non-USB, non-Bluetooth, non-I2C) keyboards by means of the Kbdclass.sys driver. For more information, see Keyboard and mouse HID client drivers. To enhance the functionality of a legacy keyboard, the vendor can supply a keyboard filter driver. For more information, see the [Kbfiltr sample in the MSDN Code Gallery](http://go.microsoft.com/fwlink/p/?LinkId=618052).</p></td>
+<td align="left"><p>Microsoft provides support for legacy (non-USB, non-Bluetooth, non-I2C) keyboards by means of the Kbdclass.sys driver. For more information, see Keyboard and mouse HID client drivers. To enhance the functionality of a legacy keyboard, the vendor can supply a keyboard filter driver. For more information, see the [Kbfiltr sample](http://go.microsoft.com/fwlink/p/?LinkId=618052).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>HID: Legacy mouse class driver</p></td>
 <td align="left"><p>Mouclass.sys</p></td>
 <td align="left"><p>Windows XP and later</p></td>
-<td align="left"><p>Microsoft provides support for legacy (non-USB, non-Bluetooth, non-I2C) mice by means of the Mouclass.sys driver. Keyboard and mouse HID client drivers. To enhance the functionality of a legacy mouse, the vendor can supply a mouse filter driver. For more information, see the [Moufiltr sample in the MSDN Code Gallery](http://go.microsoft.com/fwlink/p/?LinkId=618052).</p></td>
+<td align="left"><p>Microsoft provides support for legacy (non-USB, non-Bluetooth, non-I2C) mice by means of the Mouclass.sys driver. Keyboard and mouse HID client drivers. To enhance the functionality of a legacy mouse, the vendor can supply a mouse filter driver. For more information, see the [Moufiltr sample](http://go.microsoft.com/fwlink/p/?LinkId=618052).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>HID: PS/2 (i8042prt) driver</p></td>
 <td align="left"><p>I8042prt.sys</p></td>
 <td align="left"><p>Windows XP and later</p></td>
-<td align="left"><p>Microsoft provides support for legacy PS/2 keyboards and mice by means of the I8042.sys driver. To enhance the functionality of a PS/2 mouse or keyboard, the vendor can supply a keyboard or mouse filter driver. For more information, see the [Kbfiltr sample](http://go.microsoft.com/fwlink/p/?LinkId=618052) and [Moufiltr sample](http://go.microsoft.com/fwlink/p/?LinkId=618052) in the MSDN Code Gallery.</p></td>
+<td align="left"><p>Microsoft provides support for legacy PS/2 keyboards and mice by means of the I8042.sys driver. To enhance the functionality of a PS/2 mouse or keyboard, the vendor can supply a keyboard or mouse filter driver. For more information, see the [Kbfiltr sample](http://go.microsoft.com/fwlink/p/?LinkId=618052) and [Moufiltr sample](http://go.microsoft.com/fwlink/p/?LinkId=618052).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Imaging: Web Services for Devices (WSD) scan class driver</p></td>
@@ -153,7 +154,6 @@ Currently, Microsoft provides built-in drivers for the following other types of 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[wdkgetstart\wdkgetstart]:%20Do%20you%20need%20to%20write%20a%20driver?%20%20RELEASE:%20%281/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -10,6 +10,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Routines Not Used by RDBSS
@@ -44,6 +45,5 @@ The following is a complete list of the routines not used by RDBSS:
  
 
 
---------------------
 
 

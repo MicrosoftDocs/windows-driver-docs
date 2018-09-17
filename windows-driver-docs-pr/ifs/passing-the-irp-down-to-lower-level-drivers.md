@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Passing the IRP Down to Lower-Level Drivers
@@ -26,6 +27,5 @@ By default every dispatch routine, after checking the IRP's target device object
  
 
 
---------------------
 
 

@@ -9,6 +9,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Reasons for Invalidating Offloaded State Objects
@@ -16,7 +17,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-reasons-for-invalidating-offloaded-state-objects-ng"></a>
+
 
 
 The host stack invalidates offloaded state to quickly stop data transmission on offloaded TCP connections that depend on that state. For example, when the host stack receives an Internet Control Message Protocol (ICMP) redirect to a new router, potentially thousands of offloaded TCP connections that depend on the old router can be affected at once. In this situation, the host stack invalidates the neighbor state that represents the old router. This invalidation causes the offload target to stop data transmission on all of the TCP connections that depend on the invalidated neighbor state object. The host stack then offloads a neighbor state object for the new router, if that state object has not already been offloaded, and issues an update to link the effected path state objects to the neighbor state object that represents the new router. For more information about this sequence of events, see [Linking Path State Objects to a New Neighbor State Object](linking-path-state-objects-to-a-new-neighbor-state-object.md).

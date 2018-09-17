@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling SRB\_FUNCTION\_PNP
@@ -24,6 +25,5 @@ If the function member of an SRB is set to SRB\_FUNCTION\_PNP, the SRB is a stru
  
 
 
---------------------
 
 

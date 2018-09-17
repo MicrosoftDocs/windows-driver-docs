@@ -9,12 +9,13 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # StartIo Routines in Lowest-Level Drivers
 
 
-## <a href="" id="ddk-startio-routines-in-lowest-level-drivers-kg"></a>
+
 
 
 The I/O manager's call to a driver's dispatch routine is the first stage in satisfying a device I/O request. The [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) routine is the second stage. Every device driver with a *StartIo* routine is likely to call [**IoStartPacket**](https://msdn.microsoft.com/library/windows/hardware/ff550370) from its [*DispatchRead*](https://msdn.microsoft.com/library/windows/hardware/ff543376) and [*DispatchWrite*](https://msdn.microsoft.com/library/windows/hardware/ff544034) routines, and usually for a subset of the I/O control codes it supports in its [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287) routine. The **IoStartPacket** routine adds the IRP to the device's system-supplied device queue or, if the queue is empty, immediately calls the driver's *StartIo* routine to process the IRP.
@@ -124,7 +125,5 @@ If a device driver uses DMA, its *StartIo* routine usually calls [**AllocateAdap
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20StartIo%20Routines%20in%20Lowest-Level%20Drivers%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

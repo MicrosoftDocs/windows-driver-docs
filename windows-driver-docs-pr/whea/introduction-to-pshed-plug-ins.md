@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to PSHED Plug-Ins
@@ -20,7 +21,7 @@ Platform vendors can supplement the default PSHED functionality by providing PSH
 
 A PSHED plug-in is implemented as a [Windows Driver Model](https://msdn.microsoft.com/library/windows/hardware/ff565698) (WDM) device driver that is loaded by the Plug and Play (PnP) manager when a specific hardware identifier is enumerated during system startup. The platform vendor specifies the hardware identifier that initiates loading of the PSHED plug-in. This hardware identifier can be in the ACPI namespace or it can be in another device namespace.
 
-PSHED plug-ins do not handle any I/O requests that are initiated by a user-mode application or by a higher level driver. Therefore, a PSHED plug-in is only required to implement the following two driver dispatch routines: [**DispatchPnP**](https://msdn.microsoft.com/library/windows/hardware/ff543341) and [**DispatchPower**](https://msdn.microsoft.com/library/windows/hardware/ff543354). PSHED plug-ins do not have to register device interfaces or create symbolic links for their device objects.
+PSHED plug-ins do not handle any I/O requests that are initiated by a user-mode application or by a higher level driver. Therefore, a PSHED plug-in is only required to implement driver dispatch routines (see [**DRIVER_DISPATCH**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)) to handle [IRP_MJ_PNP](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-pnp) and [IRP_MJ_POWER](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-power) IRPs. PSHED plug-ins do not have to register device interfaces or create symbolic links for their device objects.
 
 A PSHED plug-in participates in one or more of the following [functional areas](functional-areas.md) that are associated with the handling of hardware errors:
 
@@ -45,7 +46,5 @@ A PSHED plug-in is intended to be implemented by platform vendors as a software 
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwhea\whea%5D:%20Introduction%20to%20PSHED%20Plug-Ins%20%20RELEASE:%20%289/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

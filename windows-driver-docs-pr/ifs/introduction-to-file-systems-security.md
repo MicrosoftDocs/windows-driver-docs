@@ -10,6 +10,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to File Systems Security
@@ -29,6 +30,5 @@ This section includes a number of code samples. The samples are extracted from r
  
 
 
---------------------
 
 

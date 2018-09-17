@@ -14,6 +14,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # File System Filter Driver Classes and Class GUIDs
@@ -108,6 +109,5 @@ ClassGuid = {e55fa6f9-128c-4d04-abab-630c74b1453a}
  
 
 
---------------------
 
 

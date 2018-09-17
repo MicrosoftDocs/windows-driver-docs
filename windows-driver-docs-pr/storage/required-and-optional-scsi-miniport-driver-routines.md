@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Required and Optional SCSI Miniport Driver Routines
@@ -56,6 +57,5 @@ The following sections describe the requirements for and functionality of each o
  
 
 
---------------------
 
 

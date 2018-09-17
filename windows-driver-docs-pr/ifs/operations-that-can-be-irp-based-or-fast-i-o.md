@@ -12,6 +12,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Operations That Can Be IRP-Based or Fast I/O
@@ -41,6 +42,5 @@ Although IRP\_MJ\_LOCK\_CONTROL can be an IRP-based or fast I/O operation, it ha
  
 
 
---------------------
 
 

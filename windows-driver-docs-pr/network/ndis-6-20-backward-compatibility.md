@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS 6.20 Backward Compatibility
 
 
-## <a href="" id="ddk-ndis-6-20-backward-compatibility-nd"></a>
+
 
 
 NDIS 6.20 adds backward compatibility features to those that apply to NDIS 6.0 drivers. For information about NDIS 6.0 compatibility issues, see [NDIS 6.0 Backward Compatibility](ndis-6-0-backward-compatibility.md). In addition to the translation features that NDIS 6.0 provides for NDIS 5.x and earlier drivers, NDIS 6.20 also provides translation for the power management interface. NDIS 6.20 drivers must support the NDIS 6.20 power management interface.

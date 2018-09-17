@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IEEE 1394 Sample
@@ -25,6 +26,5 @@ To test 1394 driver functionality, please download the [WDF 1394 Virtual Device 
  
 
 
---------------------
 
 

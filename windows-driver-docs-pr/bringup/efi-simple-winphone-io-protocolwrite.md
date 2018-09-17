@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL.Write
@@ -105,6 +106,5 @@ In case of errors, the transmission will be terminated with the appropriate stat
  
 
 
---------------------
 
 

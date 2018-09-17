@@ -5,6 +5,7 @@ ms.author: windowsdriverdev
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF DDInstall.Software Section
@@ -16,7 +17,9 @@ Each per-Models *DDInstall*.**Software** section contains one or more [**INF Add
 [install-section-name.nt.Software] |
 [install-section-name.ntx86.Software] |
 [install-section-name.ntia64.Software] |
-[install-section-name.ntamd64.Software]
+[install-section-name.ntamd64.Software] |
+[install-section-name.ntarm.Software] |
+[install-section-name.ntarm64.Software]
  
 AddSoftware=SoftwareName,[flags],software-install-section
 ```

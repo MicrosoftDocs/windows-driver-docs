@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Driver Stack Management
 
 
-## <a href="" id="ddk-driver-stack-management-ng"></a>
+
 
 
 NDIS 6.0 introduced the ability to pause and restart a driver stack. To support the stack management features that NDIS 6.0 provides, you must rewrite legacy drivers.

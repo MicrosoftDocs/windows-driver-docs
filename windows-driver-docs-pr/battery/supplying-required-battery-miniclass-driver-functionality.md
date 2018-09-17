@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supplying Required Battery Miniclass Driver Functionality
@@ -58,6 +59,5 @@ Battery miniclass drivers must include the following header files:
  
 
 
---------------------
 
 

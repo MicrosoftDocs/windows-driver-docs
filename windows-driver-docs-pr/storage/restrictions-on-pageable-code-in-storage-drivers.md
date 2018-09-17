@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Restrictions on Pageable Code in Storage Drivers
@@ -38,6 +39,5 @@ By default, the code for kernel-mode drivers is not pageable, nor is the global 
  
 
 
---------------------
 
 

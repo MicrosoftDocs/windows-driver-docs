@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting NDIS Drivers to Newer NDIS Versions
@@ -14,6 +15,8 @@ ms.technology: windows-devices
 
 This section describes the steps that are involved with porting an NDIS driver that was developed for an earlier version of NDIS to newer versions of NDIS. This section includes the following topics:
 
+- [Porting NDIS 6.x drivers to NDIS 6.81](porting-ndis-6-x-drivers-to-ndis-6-81.md)
+- [Porting NDIS 6.x drivers to NDIS 6.80](porting-ndis-6-x-drivers-to-ndis-6-80.md)
 - [Porting NDIS 6.x drivers to NDIS 6.70](porting-ndis-6-x-drivers-to-ndis-6-70.md)
 - [Porting NDIS 6.x drivers to NDIS 6.60](porting-ndis-6-x-drivers-to-ndis-6-60.md)
 - [Porting NDIS 6.x drivers to NDIS 6.50](porting-ndis-6-x-drivers-to-ndis-6-50.md)

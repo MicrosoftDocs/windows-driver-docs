@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Access to Scatter/Gather Lists in the Storport I/O Model
@@ -31,6 +32,5 @@ The miniport driver should perform any necessary translation of the scatter/gath
  
 
 
---------------------
 
 

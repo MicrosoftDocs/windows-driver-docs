@@ -5,6 +5,7 @@ ms.author: windowsdriverdev
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF DDInstall.Components Section
@@ -16,7 +17,9 @@ This optional section contains one or more [**INF AddComponent directives**](inf
 [install-section-name.nt.Components] |
 [install-section-name.ntx86.Components] |
 [install-section-name.ntia64.Components] |
-[install-section-name.ntamd64.Components]
+[install-section-name.ntamd64.Components] |
+[install-section-name.ntarm.Components] |
+[install-section-name.ntarm64.Components] |
  
 AddComponent=ComponentName,[flags],component-install-section
 ```

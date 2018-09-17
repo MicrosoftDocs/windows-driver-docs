@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USBFN\_POLICY\_TYPE
@@ -143,6 +144,5 @@ Even if the controller hardware is capable of supporting automatic zero-length t
  
 
 
---------------------
 
 

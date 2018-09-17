@@ -15,6 +15,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF SourceDisksFiles Section
@@ -27,6 +28,8 @@ In order for a driver file or an application file to be included as part of a si
 ```
 [SourceDisksFiles] | 
 [SourceDisksFiles.x86] | 
+[SourceDisksFiles.arm] | (Windows 8 and later versions of Windows)
+[SourceDisksFiles.arm64] | (Windows 10 version 1709 and later versions of Windows)
 [SourceDisksFiles.ia64] | (Windows XP and later versions of Windows)
 [SourceDisksFiles.amd64] (Windows XP and later versions of Windows)
 

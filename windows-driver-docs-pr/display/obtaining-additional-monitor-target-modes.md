@@ -9,6 +9,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Obtaining Additional Monitor Target Modes
@@ -50,7 +51,7 @@ For CRT monitors, DMM adds as an additional target mode the 640 x 480 x 60Hz sta
 
 ### <span id="dtv_and_hdtv_monitors"></span><span id="DTV_AND_HDTV_MONITORS"></span>**DTV and HDTV Monitors**
 
-For Digital Television (DTV) and High-Definition Television (HDTV) monitors, DMM adds as additional target modes all the standard DTV modes that are required by the [WHCK]( http://go.microsoft.com/fwlink/p/?linkid=258342) Automated Test GRAPHICS-0043, as shown in the following tables. A display miniport driver should prune all modes that are not supported by the display hardware.
+For Digital Television (DTV) and High-Definition Television (HDTV) monitors, DMM adds as additional target modes all the standard DTV modes that are required by the [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) Automated Test GRAPHICS-0043, as shown in the following tables. A display miniport driver should prune all modes that are not supported by the display hardware.
 
 **59.95Hz DTV System:**
 
@@ -154,13 +155,12 @@ For Digital Television (DTV) and High-Definition Television (HDTV) monitors, DMM
 
  
 
-Miniport drivers written for Windows Vista should continue to conform with the [WHCK]( http://go.microsoft.com/fwlink/p/?linkid=258342) Automated Test GRAPHICS-0043 and add the additional DTV modes specified in these tables. Drivers written for Windows 7 only have to support the new **pfnGetAdditionalMonitorModeSet** and **pfnReleaseAdditionalMonitorModeSet** functions.
+Miniport drivers written for Windows Vista should continue to conform with the [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) Automated Test GRAPHICS-0043 and add the additional DTV modes specified in these tables. Drivers written for Windows 7 only have to support the new **pfnGetAdditionalMonitorModeSet** and **pfnReleaseAdditionalMonitorModeSet** functions.
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Obtaining%20Additional%20Monitor%20Target%20Modes%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

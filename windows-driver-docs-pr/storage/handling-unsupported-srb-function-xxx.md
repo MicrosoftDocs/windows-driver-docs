@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Unsupported SRB\_FUNCTION\_XXX
@@ -36,6 +37,5 @@ Every *HwScsiStartIo* routine must handle the receipt of an unsupported SRB\_FUN
  
 
 
---------------------
 
 

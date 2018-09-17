@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # PCI Express FAQ for Graphics
@@ -135,6 +136,5 @@ You cannot plug an x16 graphics card into an x8 slot. You can however, if you wi
 ## Related topics
 [PCI-SIG](http://www.pcisig.com)  
 
---------------------
 
 

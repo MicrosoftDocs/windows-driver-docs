@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Easier Initialization
 
 
-## <a href="" id="ddk-easier-initialization-ng"></a>
+
 
 
 All NDIS 6.0 and later drivers have updated driver registration interfaces. These NDIS interfaces provide simplified driver registration and the ability to register optional services separately from required services.

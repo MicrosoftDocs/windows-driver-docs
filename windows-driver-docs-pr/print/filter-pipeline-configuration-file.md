@@ -15,6 +15,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filter Pipeline Configuration File
@@ -32,11 +33,11 @@ The following code example shows a typical filter pipeline configuration file:
 
 ```XML
 <Filters>
-    <Filter      dll="XDWMark.dll" 
+    <Filter      dll="XDWMark.dll"
  clsid="{D647D658-BEF6-415f-AFAC-070D64074C5D}"
                 name="Watermark filter">
-        <Input  guid="{b8cf8530-5562-47c4-ab67-b1f69ecf961e}" comment="IID_IXpsDocumentProvider"/> 
-        <Output guid="{4368d8a2-4181-4a9f-b295-3d9a38bb9ba0}" comment="IID_IXpsDocumentConsumer"/> 
+        <Input  guid="{b8cf8530-5562-47c4-ab67-b1f69ecf961e}" comment="IID_IXpsDocumentProvider"/>
+        <Output guid="{4368d8a2-4181-4a9f-b295-3d9a38bb9ba0}" comment="IID_IXpsDocumentConsumer"/>
     </Filter>
  <Filter dll="XDScale.dll"
  clsid="{B9B52406-92D3-4721-86E6-3CF78F6D5FC5}"
@@ -44,23 +45,23 @@ The following code example shows a typical filter pipeline configuration file:
  <Input guid="{4d47a67c-66cc-4430-850e-daf466fe5bc4}" comment="IID_IPrintReadStream"/>
  <Output guid="{65bb7f1b-371e-4571-8ac7-912f510c1a38}" comment="IID_IPrintWriteStream"/>
  </Filter>
-    <Filter      dll="XDColMan.dll" 
- clsid="{8E56FC37-0799-447e-A643-16F4FB18244C}" 
- name="Colour Management filter"> 
-         <Input guid="{b8cf8530-5562-47c4-ab67-b1f69ecf961e}" comment="IID_IXpsDocumentProvider"/> 
-        <Output guid="{4368d8a2-4181-4a9f-b295-3d9a38bb9ba0}" comment="IID_IXpsDocumentConsumer"/> 
+    <Filter      dll="XDColMan.dll"
+ clsid="{8E56FC37-0799-447e-A643-16F4FB18244C}"
+ name="Colour Management filter">
+         <Input guid="{b8cf8530-5562-47c4-ab67-b1f69ecf961e}" comment="IID_IXpsDocumentProvider"/>
+        <Output guid="{4368d8a2-4181-4a9f-b295-3d9a38bb9ba0}" comment="IID_IXpsDocumentConsumer"/>
     </Filter>
-    <Filter      dll="XDBook.dll" 
- clsid="{7DFC96C6-CEA2-46d8-B354-887C47B7986D}" 
+    <Filter      dll="XDBook.dll"
+ clsid="{7DFC96C6-CEA2-46d8-B354-887C47B7986D}"
                 name="Booklet filter">
-         <Input guid="{b8cf8530-5562-47c4-ab67-b1f69ecf961e}" comment="IID_IXpsDocumentProvider"/> 
-        <Output guid="{4368d8a2-4181-4a9f-b295-3d9a38bb9ba0}" comment="IID_IXpsDocumentConsumer"/> 
+         <Input guid="{b8cf8530-5562-47c4-ab67-b1f69ecf961e}" comment="IID_IXpsDocumentProvider"/>
+        <Output guid="{4368d8a2-4181-4a9f-b295-3d9a38bb9ba0}" comment="IID_IXpsDocumentConsumer"/>
     </Filter>
-    <Filter      dll="XDNUp.dll" 
+    <Filter      dll="XDNUp.dll"
  clsid="{1b5bee16-511c-440f-8017-2123f481091a}"
                 name="NUp filter">
-         <Input guid="{b8cf8530-5562-47c4-ab67-b1f69ecf961e}" comment="IID_IXpsDocumentProvider"/> 
-        <Output guid="{4368d8a2-4181-4a9f-b295-3d9a38bb9ba0}" comment="IID_IXpsDocumentConsumer"/> 
+         <Input guid="{b8cf8530-5562-47c4-ab67-b1f69ecf961e}" comment="IID_IXpsDocumentProvider"/>
+        <Output guid="{4368d8a2-4181-4a9f-b295-3d9a38bb9ba0}" comment="IID_IXpsDocumentConsumer"/>
     </Filter>
 </Filters>
 ```
@@ -103,10 +104,10 @@ The following code example shows the XML syntax for the **&lt;FilterServiceProvi
 The following example filter is an excerpt from the preceding example filter configuration file that has been modified to show how to use the interleaving option. Although this example shows both interleaving options for the purpose of illustration, a real filter configuration file has only one **&lt;Interleaving&gt;** element in the filter definition:
 
 ```XML
-    <Filter     dll="XDNUp.dll" 
+    <Filter     dll="XDNUp.dll"
       clsid="{1b5bee16-511c-440f-8017-2123f481091a}"
         name="NUp filter">
-      <Input guid="{b8cf8530-5562-47c4-ab67-b1f69ecf961e}" comment="IID_IXpsDocumentProvider"/> 
+      <Input guid="{b8cf8530-5562-47c4-ab67-b1f69ecf961e}" comment="IID_IXpsDocumentProvider"/>
        <Output guid="{4368d8a2-4181-4a9f-b295-3d9a38bb9ba0}" comment="IID_IXpsDocumentConsumer"/>
      <Interleaving mode="ResourcesFirst"\>
      <Interleaving mode="MarkupFirst"\>
@@ -132,20 +133,7 @@ The following code example shows the XML syntax for using the &lt;Archive&gt; el
 </Filters>
 ```
 
-### For More Information
-
-For more information about XPS filter pipelines, see the following white papers at the [WHDC](http://go.microsoft.com/fwlink/p/?linkid=69253) Web site:
-
-[XPSDrv Configuration Module Implementation](http://go.microsoft.com/fwlink/p/?linkid=133878)
-
-[XPSDrv Filter Pipeline](http://go.microsoft.com/fwlink/p/?linkid=133879)
-
- 
-
- 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Filter%20Pipeline%20Configuration%20File%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

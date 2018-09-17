@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filter Callback Routines
@@ -30,6 +31,5 @@ The crash dump driver supports the following callback routines in a crash dump f
  
 
 
---------------------
 
 

@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_DISPLAY\_POWER\_PROTOCOL.SetDisplayPowerState
@@ -83,6 +84,5 @@ This function must allow redundant calls without returning an error code. Multip
 ## Related topics
 [EFI\_DISPLAY\_POWER\_PROTOCOL](efi-display-power-protocol.md)  
 
---------------------
 
 

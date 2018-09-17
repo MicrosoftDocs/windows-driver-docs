@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sample Device Installation Files
 
 
-## <a href="" id="ddk-sample-device-installation-files-dg"></a>
+
 
 
 The Windows Driver Kit (WDK) includes various sample installation files, such as INF files, device installation applications, class installers, co-installers, and property page providers.

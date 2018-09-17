@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista
@@ -94,7 +95,7 @@ SourceDisk       = "Windows Vista CD"
 
 1.  The **Version** section should have the **CLASSGUID** and **DriverVer** directives set as follows:
     -   **CLASSGUID**: Use the Microsoft class GUID for Bluetooth devices ({e0cbf06c cd8b-4647-bb8a-263b43f0f974}), not a third-party GUID.
-    -   **DriverVer**: If you want to supersede the default in-box driver, the driver version must be set to provide a higher ranking match than what is in Bth.inf. For more information about configuring a driver to supersede the default in box driver, see **“Installing Private Builds of In-Box Drivers (Windows Vista and Later)” on the MSDN Web site**.
+    -   **DriverVer**: If you want to supersede the default in-box driver, the driver version must be set to provide a higher ranking match than what is in Bth.inf. For more information about configuring a driver to supersede the default in box driver, see [Installing Private Builds of Inbox Drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/installing-private-builds-of-in-box-drivers--windows-vista-and-later-).
 
 2.  Hardware IDs. The combination of the VID and the PID must be unique to the manufacturer and device. This ensures that the same hardware ID does not correspond to multiple devices.
 3.  **Include** and **Needs** directives. The **Include** directives in these three sections reference Bth.inf. The **Needs** directives indicate which sections from Bth.inf should be processed during device installation.
@@ -106,7 +107,6 @@ We strongly recommend that you run the latest WHQL tests on the device and INF f
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[bltooth\bltooth]:%20Appendix%20B:%20An%20Example%20of%20a%20Vendor-Provided%20INF%20File%20for%20Use%20in%20Windows%20Vista%20%20RELEASE:%20%283/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

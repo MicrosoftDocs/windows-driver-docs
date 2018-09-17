@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_BATTERY\_CHARGING\_PROTOCOL.GetBatteryInformation
@@ -142,6 +143,5 @@ This function is available starting in revision 0x00010002 of the EFI\_BATTERY\_
 ## Related topics
 [EFI\_BATTERY\_CHARGING\_PROTOCOL](efi-battery-charging-protocol.md)  
 
---------------------
 
 

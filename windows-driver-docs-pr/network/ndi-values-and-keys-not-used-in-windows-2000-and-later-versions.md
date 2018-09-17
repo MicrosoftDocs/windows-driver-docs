@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Deprecated Ndi Values and Keys
 
 
-## <a href="" id="ddk-ndi-values-and-keys-not-used-in-windows-2000-and-later-versions-ng"></a>
+
 
 
 **Important**  The following **Ndi** registry keys and values are no longer used in the Windows operating system. If you are migrating network drivers from Windows 95/98/Me to later versions of the operating system, do not use these values.

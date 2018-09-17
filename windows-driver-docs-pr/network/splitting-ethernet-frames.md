@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Splitting Ethernet Frames
 
 
-## <a href="" id="ddk-splitting-ethernet-frames-ng"></a>
+
 
 
 This section describes the specific header-data split requirements that apply to header-data split providers, depending on the type of Ethernet frame that the provider is splitting.

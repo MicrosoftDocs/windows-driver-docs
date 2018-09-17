@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Management of Access Control Lists on IRP\_MJ\_CREATE
@@ -30,6 +31,5 @@ An additional option would be for the file system to cache results. While not st
  
 
 
---------------------
 
 

@@ -12,6 +12,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IRP-Based IOCTL and FSCTL Operations
@@ -52,6 +53,5 @@ Note that IRP\_MJ\_DEVICE\_CONTROL can also be a fast I/O operation. When it is 
  
 
 
---------------------
 
 

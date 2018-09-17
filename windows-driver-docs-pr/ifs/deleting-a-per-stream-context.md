@@ -14,6 +14,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Deleting a Per-Stream Context
@@ -49,6 +50,5 @@ When the file stream is being closed or deleted, the file system frees its own s
  
 
 
---------------------
 
 

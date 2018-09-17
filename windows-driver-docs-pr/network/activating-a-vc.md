@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Activating a VC
 
 
-## <a href="" id="ddk-activating-a-vc-ng"></a>
+
 
 
 After a virtual connection (VC) has been created (see [Creating a VC](creating-a-vc.md)), it must be activated before data can be transmitted or received on it. A call manager initiates the activation of a VC by calling [**NdisCmActivateVc**](https://msdn.microsoft.com/library/windows/hardware/ff561649)(see the following figure).

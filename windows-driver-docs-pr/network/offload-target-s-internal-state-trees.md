@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Offload Target's Internal State Trees
@@ -18,7 +19,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-offload-target-s-internal-state-trees-ng"></a>
+
 
 
 The offload target must create its own internal version of the state tree that the host stack passes to the offload target's [*MiniportInitiateOffload*](https://msdn.microsoft.com/library/windows/hardware/ff559393) function. The offload target can create this internal version by:

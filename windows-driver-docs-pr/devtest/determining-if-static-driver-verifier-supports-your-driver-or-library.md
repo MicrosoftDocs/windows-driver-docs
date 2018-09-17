@@ -7,17 +7,18 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Determining if Static Driver Verifier supports your driver or library
 
 
-Static Driver Verifier (SDV) can support WDM, KMDF, NDIS, and Storport drivers and libraries. To determine if your driver or library is supported and configured correctly, read over requirements described in this section.
+Static Driver Verifier (SDV) fully supports WDM, KMDF, NDIS, and Storport drivers and libraries, and has limited support for other drivers. To determine if your driver or library is supported and configured correctly, read over requirements described in this section.
 
 ## Driver or library requirements
 
 
-You can run the SDV analysis tool if your driver or library meets one of following conditions:
+You can run the full set of rules in the SDV analysis tool if your driver or library meets one of following conditions:
 
 -   You have a WDM driver or library, and the driver or library does not link to a class framework (that is, a Microsoft-provided library). For more information, see [Class framework libraries](#class-framework-libraries).
 -   You have a driver or library that links to WdfLdr.lib or WdfDriverEntry.lib.
@@ -239,7 +240,6 @@ Static Driver Verifier supports a driver or library that has links to multiple u
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Determining%20if%20Static%20Driver%20Verifier%20supports%20your%20driver%20or%20library%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

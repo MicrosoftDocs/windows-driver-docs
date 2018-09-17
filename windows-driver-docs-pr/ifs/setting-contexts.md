@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting Contexts
@@ -54,6 +55,5 @@ Note that after the call to [**FltSetInstanceContext**](https://msdn.microsoft.c
  
 
 
---------------------
 
 

@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing a Header-Data Split Provider
 
 
-## <a href="" id="ddk-initializing-a-header-data-split-provider-ng"></a>
+
 
 
 To support header-data split, a miniport driver must register as an NDIS 6.1 or later driver. The sources file for the miniport driver must specify DNDIS61\_MINIPORT=1 instead of DNDIS60\_MINIPORT=1. The miniport driver must also specify NDIS 6.1 or a later version in the [**NDIS\_MINIPORT\_DRIVER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff565958) structure.

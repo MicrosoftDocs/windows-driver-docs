@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installation Requirements for Network Protocols
 
 
-## <a href="" id="ddk-installation-requirements-for-network-protocols-ng"></a>
+
 
 
 This topic summarizes the installation requirements for network protocols.

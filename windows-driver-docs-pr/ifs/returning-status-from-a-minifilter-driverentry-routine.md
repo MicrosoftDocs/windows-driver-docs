@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Returning Status from a Minifilter DriverEntry Routine
@@ -28,6 +29,5 @@ If the **DriverEntry** routine returns a status value that is not a success NTST
  
 
 
---------------------
 
 

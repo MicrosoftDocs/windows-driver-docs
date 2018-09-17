@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Filter Driver's Device-Type-Specific Functionality
@@ -40,6 +41,5 @@ In general, an SFD has the same responsibilities as a storage class driver for t
  
 
 
---------------------
 
 

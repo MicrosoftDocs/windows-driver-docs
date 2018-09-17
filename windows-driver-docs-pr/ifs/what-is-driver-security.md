@@ -10,6 +10,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # What is Driver Security
@@ -29,6 +30,5 @@ Achieving secure drivers requires the cooperation of the designer (consciously t
  
 
 
---------------------
 
 

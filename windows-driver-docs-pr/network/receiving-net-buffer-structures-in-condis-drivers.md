@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Receiving NET\_BUFFER Structures in CoNDIS Drivers
 
 
-## <a href="" id="ddk-receiving-net-buffer-structures-in-condis-drivers-ng"></a>
+
 
 
 The following figure illustrates a basic CoNDIS receive operation, which involves a protocol driver, NDIS, and a miniport driver.

@@ -10,6 +10,7 @@ ms.date: 08/08/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Ntddndis.h
@@ -19,24 +20,14 @@ This section contains kernel mode network driver topics for the Ntddndis.h heade
 
 The Ntddndis.h header contains definitions for constants and types for interfacing with network drivers.
 
-> [!IMPORTANT]
-> This section's topics contains pages for definitions, macros, OIDs, status indications, and other data structures that are not part of network driver reference (structures, enumerations, functions, and callbacks). 
+> [!NOTE]
+> This section's topics contains pages for definitions and OIDs, which are not part of network driver DDI reference. 
 >
-> For more information about network driver reference for this header, see [Ntddndis.h (reference)](https://msdn.microsoft.com/library/windows/hardware/mt808524).
+> For DDI reference for this header, see [ntddndis.h header](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis).
 
 ## In this section
 
 * [GUID_NDIS_GEN_PCI_DEVICE_CUSTOM_PROPERTIES](guid-ndis-gen-pci-device-custom-properties.md)
-* [NDIS_DECLARE_SWITCH_NET_BUFFER_LIST_CONTEXT_TYPE ](ndis-declare-switch-net-buffer-list-context-type.md)
-* [NDIS_MAKE_NET_LUID macro](ndis-make-net-luid.md)
-* [NDIS_ROUTING_DOMAIN_ENTRY_GET_FIRST_ISOLATION_ENTRY macro](ndis-routing-domain-entry-get-first-isolation-entry.md)
-* [NDIS_ROUTING_DOMAIN_ENTRY_GET_NEXT macro](ndis-routing-domain-entry-get-next.md)
-* [NDIS_ROUTING_DOMAIN_ISOLATION_ENTRY_GET_NEXT macro](ndis-routing-domain-isolation-entry-get-next.md)
-* [NDIS_SWITCH_NIC_AT_ARRAY_INDEX macro](ndis-switch-nic-at-array-index.md)
-* [NDIS_SWITCH_PORT_AT_ARRAY_INDEX macro](ndis-switch-port-at-array-index.md)
-* [NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN_GET_FIRST_ISOLATION_ENTRY macro](ndis-switch-port-property-routing-domain-get-first-isolation-entry.md)
-* [NET_BUFFER_LIST_COALESCED_SEG_COUNT macro](net-buffer-list-coalesced-seg-count.md)
-* [NET_BUFFER_LIST_DUP_ACK_COUNT macro](net-buffer-list-dup-ack-count.md)
 * [OID_802_3_ADD_MULTICAST_ADDRESS](oid-802-3-add-multicast-address.md)
 * [OID_802_3_CURRENT_ADDRESS](oid-802-3-current-address.md)
 * [OID_802_3_DELETE_MULTICAST_ADDRESS](oid-802-3-delete-multicast-address.md)
@@ -334,7 +325,11 @@ The Ntddndis.h header contains definitions for constants and types for interfaci
 * [OID_WWAN_DRIVER_CAPS](oid-wwan-driver-caps.md)
 * [OID_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS](oid-wwan-enumerate-device-service-commands.md)
 * [OID_WWAN_ENUMERATE_DEVICE_SERVICES](oid-wwan-enumerate-device-services.md)
+* [OID_WWAN_LTE_ATTACH_CONFIG](oid-wwan-lte-attach-config.md)
+* [OID_WWAN_LTE_ATTACH_STATUS](oid-wwan-lte-attach-status.md)
 * [OID_WWAN_HOME_PROVIDER](oid-wwan-home-provider.md)
+* [OID_WWAN_MPDP](oid-wwan-mpdp.md)
+* [OID_WWAN_NETWORK_BLACKLIST](oid-wwan-network-blacklist.md)
 * [OID_WWAN_NETWORK_IDLE_HINT](oid-wwan-network-idle-hint.md)
 * [OID_WWAN_PACKET_SERVICE](oid-wwan-packet-service.md)
 * [OID_WWAN_PCO](oid-wwan-pco.md)
@@ -348,6 +343,8 @@ The Ntddndis.h header contains definitions for constants and types for interfaci
 * [OID_WWAN_RADIO_STATE](oid-wwan-radio-state.md)
 * [OID_WWAN_READY_INFO](oid-wwan-ready-info.md)
 * [OID_WWAN_REGISTER_STATE](oid-wwan-register-state.md)
+* [OID_WWAN_SAR_CONFIG](oid-wwan-sar-config.md)
+* [OID_WWAN_SAR_TRANSMISSION_STATUS](oid-wwan-sar-transmission-status.md)
 * [OID_WWAN_SERVICE_ACTIVATION](oid-wwan-service-activation.md)
 * [OID_WWAN_SIGNAL_STATE](oid-wwan-signal-state.md)
 * [OID_WWAN_SLOT_INFO](oid-wwan-slot-info-status.md)
@@ -362,8 +359,3 @@ The Ntddndis.h header contains definitions for constants and types for interfaci
 * [OID_WWAN_USSD](oid-wwan-ussd.md)
 * [OID_WWAN_VENDOR_SPECIFIC](oid-wwan-vendor-specific.md)
 * [OID_WWAN_VISIBLE_PROVIDERS](oid-wwan-visible-providers.md)
-
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20Ntddndis.h%20%20RELEASE:%20%288/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-

@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device-Specific Method for Microsoft thermal extensions
@@ -63,6 +64,5 @@ If a temperature sensor device is reported via \_DSM function index 2, the therm
  
 
 
---------------------
 
 

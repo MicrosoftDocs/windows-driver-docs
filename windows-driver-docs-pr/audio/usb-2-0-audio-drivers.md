@@ -2,10 +2,11 @@
 title: USB Audio 2.0 Drivers
 description: Starting with Windows 10, release 1703, a USB Audio 2.0 driver is shipped with Windows. This driver provides basic functionality.
 ms.author: windowsdriverdev
-ms.date: 10/19/2017
+ms.date: 5/14/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 ## USB Audio 2.0 Drivers
@@ -238,7 +239,7 @@ For IHV provided third party driver USB Audio 2.0 drivers, those drivers will co
 ## Troubleshooting
 If the driver does not start, the system event log should be checked. The driver logs events which indicate the reason for the failure. Similarly, audio logs can be manually collected following the steps described in [this blog entry](https://blogs.msdn.microsoft.com/matthew_van_eerde/2017/01/09/collecting-audio-logs-the-old-fashioned-way/). If the failure may indicate a driver problem, please report it using the Feedback Hub described below, and include the logs.
 
-For information on how to read logs for the USB Audio 2.0 class driver using supplemental TMF files, see [this blog entry](https://blogs.msdn.microsoft.com/matthew_van_eerde/2017/10/23/how-to-gather-and-read-logs-for-microsofts-usb-audio-2-0-class-driver/). For general information on working with TMF files, see [Displaying a Trace Log with a TMF File](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/displaying-a-trace-log-with-a-tmf-file).
+For information on how to read logs for the USB Audio 2.0 class driver using supplemental TMF files, see [this blog entry](https://blogs.msdn.microsoft.com/matthew_van_eerde/2017/10/23/how-to-gather-and-read-logs-for-microsofts-usb-audio-2-0-class-driver/). For general information on working with TMF files, see [Displaying a Trace Log with a TMF File](https://docs.microsoft.com/windows-hardware/drivers/devtest/displaying-a-trace-log-with-a-tmf-file).
 
 ## Feedback Hub
 If you run into a problem with this driver, please collect audio logs and then  follow steps outlined in [this blog entry](https://blogs.msdn.microsoft.com/matthew_van_eerde/2016/09/26/report-problems-with-logs-and-suggest-features-with-the-feedback-hub/) to bring it to our attention via the Feedback Hub.
@@ -260,7 +261,5 @@ This USB Audio 2.0 class driver was developed by Thesycon and is supported by Mi
 [Low Latency Audio](https://docs.microsoft.com/windows-hardware/drivers/audio/low-latency-audio)
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20USB%20Audio%20Class%20System%20Driver%20%28Usbaudio.sys%29%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

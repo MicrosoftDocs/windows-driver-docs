@@ -4,12 +4,13 @@ author: windows-driver-content
 description: OEMForceFeedback Registry Settings
 ms.assetid: c29fe1e8-1cd9-4b32-96d7-1afae5a49d42
 keywords: ["force feedback drivers WDK HID , OEMForceFeedback settiings", "OEMForceFeedback key WDK HID", "registry WDK force feedback", "Effects subkey WDK force feedback"]
+ms.localizationpriority: medium
 ---
 
 # OEMForceFeedback Registry Settings
 
 
-## <a href="" id="ddk-oemforcefeedback-registry-settings-di"></a>
+
 
 
 New joystick registry entries are found under an OEM-specific key that is installed for each joystick device type under the key with the registry path **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\MediaProperties\\PrivateProperties\\Joystick\\OEM**. The data stored under this OEM-specific key is initialized when the device is first installed and then used for reference purposes only. In addition to the values defined for existing joystick devices, two new optional generic values and a set of force feedback specific values have been defined.
@@ -54,7 +55,5 @@ In this manner, an application designed for your hardware can use the second eff
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhid\hid%5D:%20OEMForceFeedback%20Registry%20Settings%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

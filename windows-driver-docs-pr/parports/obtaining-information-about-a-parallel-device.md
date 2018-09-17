@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Obtaining Information about a Parallel Device
 
 
-## <a href="" id="ddk-obtaining-information-about-a-parallel-device-kg"></a>
+
 
 
 In addition to [connecting to a parallel device](connecting-to-a-parallel-device.md), a client can use the following device control requests to obtain additional information about a parallel device:
@@ -45,6 +46,5 @@ In addition to [connecting to a parallel device](connecting-to-a-parallel-device
  
 
 
---------------------
 
 

@@ -14,6 +14,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # File System Control Processing
@@ -118,6 +119,5 @@ In many cases, the code necessary to perform proper validation and security can 
  
 
 
---------------------
 
 

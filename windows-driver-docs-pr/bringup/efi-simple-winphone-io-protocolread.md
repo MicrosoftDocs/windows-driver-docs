@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL.Read
@@ -107,6 +108,5 @@ In case of errors, no more bytes will be read, and the appropriate status code w
  
 
 
---------------------
 
 

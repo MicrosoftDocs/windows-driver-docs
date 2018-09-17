@@ -16,6 +16,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Opening, Initializing and Closing an SD Card Bus Interface
@@ -77,6 +78,5 @@ The **SdBusOpenInterface** call stores a pointer to the interface dereference ro
  
 
 
---------------------
 
 

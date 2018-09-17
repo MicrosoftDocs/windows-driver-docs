@@ -16,6 +16,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_PIN\_PROPOSEDATAFORMAT2
@@ -23,7 +24,7 @@ ms.technology: windows-devices
 
 The OS uses the **KSPROPERTY\_PIN\_PROPOSEDATAFORMAT2** property to determine if pins instantiated by the pin factory support specific data formats.
 
-## <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+## Usage Summary Table
 
 
 <table>
@@ -65,7 +66,7 @@ The property descriptor is a [**KSP\_PIN**](https://msdn.microsoft.com/library/w
 
 Although the attributes provide a highly extensible mechanism to parameterize the property request, Windows defines only a single attribute passed with the property request- the audio signal processing mode. The attribute ID is *KSATTRIBUTEID\_AUDIOSIGNALPROCESSING\_MODE* and is specified using the [**KSATTRIBUTE\_AUDIOSIGNALPROCESSING\_MODE**](https://msdn.microsoft.com/library/windows/hardware/mt727947) structure. Note that the **KSATTRIBUTE\_AUDIOSIGNALPROCESSING\_MODE** structure starts with a [**KSATTRIBUTE**](https://msdn.microsoft.com/library/windows/hardware/ff560987) member. For more information, see [Audio Signal Processing Modes](https://msdn.microsoft.com/library/windows/hardware/mt186386).
 
-[**KSPROPERTY\_TYPE\_GET**](https://msdn.microsoft.com/library/windows/hardware/ff564262) is only supported if the pin has proposed formats. This function allows the audio driver to provide information about the default data format on a pin given the specified attributes.
+[**KSPROPERTY\_TYPE\_GET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier) is only supported if the pin has proposed formats. This function allows the audio driver to provide information about the default data format on a pin given the specified attributes.
 
 The KS filter returns STATUS\_SUCCESS, when the OS accepts the information about the pins instantiated by the pin factory supporting specific data formats, or an error code otherwise.
 
@@ -77,7 +78,7 @@ The following table provides a description of the KSPROPERTY\_PIN\_PROPOSEDATAFO
 |----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | PinProperty.Property.Set   | The PinProperty.Property.Set should be set to the [KSPROPSETID\_Pin](kspropsetid-pin.md) for the requested mode.                                                                  |
 | PinProperty.Property.Id    | The PinProperty.Property.Id always be set to **KSPROPERTY\_PIN\_PROPOSEDATAFORMAT2**.                                                                                              |
-| PinProperty.Property.Flags | The PinProperty.Property.Flags can be set to [**KSPROPERTY\_TYPE\_GET**](https://msdn.microsoft.com/library/windows/hardware/ff564262) or to KSPROPERTY\_TYPE\_BASICSUPPORT to find out basic information about the property. |
+| PinProperty.Property.Flags | The PinProperty.Property.Flags can be set to [**KSPROPERTY\_TYPE\_GET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier) or to KSPROPERTY\_TYPE\_BASICSUPPORT to find out basic information about the property. |
 | PinProperty.PinId          | The PinProperty.PinId identifies the target pin for the **KSPROPERTY\_PIN\_PROPOSEDATAFORMAT2** request.                                                                           |
 | PinProperty.Reserved       | The PinProperty.Reserved is reserved for future use and should always be set to zero (0).                                                                                          |
 
@@ -186,7 +187,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**KSP\_PIN**](https://msdn.microsoft.com/library/windows/hardware/ff566722)
@@ -197,7 +198,6 @@ Requirements
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20KSPROPERTY_PIN_PROPOSEDATAFORMAT2%20%20RELEASE:%20%2811/22/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

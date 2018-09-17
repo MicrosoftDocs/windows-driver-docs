@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Example: Passing the IRP Down Without Setting a Completion Routine
@@ -58,6 +59,5 @@ If you call [**IoSkipCurrentIrpStackLocation**](https://msdn.microsoft.com/libra
  
 
 
---------------------
 
 

@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # HKLM\\SYSTEM\\CurrentControlSet\\Enum Registry Tree
 
 
-## <a href="" id="ddk-the-hklm-system-currentcontrolset-enum-tree-dg"></a>
+
 
 
 The **HKLM\\SYSTEM\\CurrentControlSet\\Enum** registry tree contains information about the devices on the system. The PnP manager creates a subkey for each device, with a name in the form of **HKLM\\SYSTEM\\CurrentControlSet\\Enum\\***Enumerator***\\***deviceID*. Under each of these keys is a subkey for each device instance present on the system. This subkey has information such as the device description, hardware IDs, compatible IDs, and resource requirements.

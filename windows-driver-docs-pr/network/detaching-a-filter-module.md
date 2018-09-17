@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Detaching a Filter Module
 
 
-## <a href="" id="ddk-detaching-a-filter-module-ng"></a>
+
 
 
 To initiate the process of detaching a filter module from a driver stack, NDIS calls a filter driver's [*FilterDetach*](https://msdn.microsoft.com/library/windows/hardware/ff549918) function. At the start of execution in the *FilterDetach* function, the filter module enters the *Detached* state. Before detaching a filter module, NDIS must pause the driver stack. For more information about pausing the driver stack, see [Pausing a Driver Stack](pausing-a-driver-stack.md).

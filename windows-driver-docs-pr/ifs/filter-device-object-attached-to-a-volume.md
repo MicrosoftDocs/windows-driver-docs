@@ -14,6 +14,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filter Device Object Attached to a Volume
@@ -140,6 +141,5 @@ For more information, see the reference entry for [**FsRtlRegisterFileSystemFilt
  
 
 
---------------------
 
 

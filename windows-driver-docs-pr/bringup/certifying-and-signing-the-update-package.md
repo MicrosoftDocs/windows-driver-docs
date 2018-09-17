@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Certifying and signing the update package
@@ -80,6 +81,5 @@ Submitting the firmware update package to the Microsoft Windows Dev Center Hardw
 [Authoring a firmware update package](authoring-a-firmware-update-package.md)  
 [Installing the update](installing-the-update.md)  
 
---------------------
 
 

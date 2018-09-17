@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Checking for Other Special Cases on IRP\_MJ\_CREATE
@@ -77,6 +78,5 @@ This code sample is a good example of where file system policy takes precedence.
  
 
 
---------------------
 
 

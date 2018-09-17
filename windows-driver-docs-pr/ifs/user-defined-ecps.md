@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # User-Defined ECPs
@@ -20,6 +21,5 @@ To define your own ECP, define a GUID that identifies your ECP and a context str
  
 
 
---------------------
 
 

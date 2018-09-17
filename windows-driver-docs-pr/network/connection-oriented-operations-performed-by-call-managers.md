@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Connection-Oriented Operations Performed by Call Managers
 
 
-## <a href="" id="ddk-connection-oriented-operations-performed-by-call-managers-ng"></a>
+
 
 
 A call manager performs:

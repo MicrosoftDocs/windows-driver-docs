@@ -16,6 +16,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling PnP Initialization in a Storage Class Driver
@@ -47,6 +48,5 @@ Also see [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff5
  
 
 
---------------------
 
 

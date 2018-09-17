@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USBFN\_IO\_PROTOCOL.EventHandler
@@ -165,6 +166,5 @@ A few messages have associated payload that is returned in the supplied buffer. 
  
 
 
---------------------
 
 

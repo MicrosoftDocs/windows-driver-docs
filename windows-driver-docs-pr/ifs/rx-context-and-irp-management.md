@@ -22,6 +22,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # RX\_CONTEXT and IRP Management
@@ -143,6 +144,5 @@ The following macros are defined in the *rxcontx.h* header file that call the ro
  
 
 
---------------------
 
 

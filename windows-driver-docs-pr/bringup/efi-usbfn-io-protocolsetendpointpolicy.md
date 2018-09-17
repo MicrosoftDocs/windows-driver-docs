@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USBFN\_IO\_PROTOCOL.SetEndpointPolicy
@@ -103,6 +104,5 @@ This function can be called only before [EFI\_USBFN\_IO\_PROTOCOL.StartControlle
  
 
 
---------------------
 
 

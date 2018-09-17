@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Offloading the Segmentation of Large TCP Packets
 
 
-## <a href="" id="ddk-offloading-the-segmentation-of-large-tcp-packets-ng"></a>
+
 
 
 NDIS miniport drivers can offload the segmentation of large TCP packets that are larger than the maximum transmission unit (MTU) of the network medium. A NIC that supports the segmentation of large TCP packets must also be able to:

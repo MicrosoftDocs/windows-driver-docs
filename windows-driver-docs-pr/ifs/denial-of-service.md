@@ -16,6 +16,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Denial of Service
@@ -65,6 +66,5 @@ Finally, all drivers need to be concerned about consuming all available memory o
  
 
 
---------------------
 
 

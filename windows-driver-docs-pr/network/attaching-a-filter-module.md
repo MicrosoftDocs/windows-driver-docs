@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Attaching a Filter Module
 
 
-## <a href="" id="ddk-attaching-a-filter-module-ng"></a>
+
 
 
 To initiate the process of inserting a filter module into a driver stack, NDIS calls a filter driver's [*FilterAttach*](https://msdn.microsoft.com/library/windows/hardware/ff549905) function. At the start of execution in the *FilterAttach* function, the filter module enters the *Attaching* state. For more information about attaching a filter module to a driver stack, see [Starting a Driver Stack](starting-a-driver-stack.md).

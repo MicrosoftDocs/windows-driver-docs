@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Spoofing Identity
@@ -34,6 +35,5 @@ In general, drivers are best designed and implemented if they take advantage of 
  
 
 
---------------------
 
 

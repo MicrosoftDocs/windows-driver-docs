@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Mounting a Volume
@@ -46,6 +47,5 @@ The following sections discuss how the file system mounts the volume after recog
  
 
 
---------------------
 
 

@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Indicating RSS Receive Data
 
 
-## <a href="" id="ddk-indicating-rss-receive-data-ng"></a>
+
 
 
 A miniport driver indicates received data by calling the [**NdisMIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff563598) function from its [*MiniportInterruptDPC*](https://msdn.microsoft.com/library/windows/hardware/ff559398) function.

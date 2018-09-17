@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Virtual Miniport Drivers: When Are They Appropriate?
@@ -22,6 +23,5 @@ A virtual miniport is inappropriate when it is directly controlling real hardwar
  
 
 
---------------------
 
 

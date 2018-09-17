@@ -9,14 +9,14 @@ keywords:
 - UVC INF files WDK USB Video Class , sample code
 - sample code WDK USB Video Class , UVC INF files
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 9/12/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Providing a UVC INF File
-
 
 This section illustrates various portions of a device-specific INF file.
 
@@ -101,6 +101,8 @@ HKR,,CLSID,,%ProxyVCap.CLSID%
 HKR,,FriendlyName,,%MyDevice.DeviceDesc%
 HKR,,RTCFlags,0x00010001,0x00000010
 ```
+
+For USB Cameras, if the device interface registry key location contains a DWORD registry entry **EnableDependentStillPinCapture** with a non-zero value, the dependent pin on such cameras will be used for photo capture. If the registry entry is not present or set to zero, the dependent pin will not be used. Instead, the photo capture will be done using a frame taken from the preview pin.
 
 You can also define an optional registry value called **UvcFlags**. **UvcFlags** should be a DWORD value. When the device is plugged in, the UVC driver receives a Plug and Play (PnP) Start request. The driver then searches for **UvcFlags** in the device registry key. The DWORD value is a bitmask and can contain the values in the following table.
 
@@ -200,7 +202,5 @@ PlugIn_IMyExtensionUnit="CompanyName Extension Unit Interface"
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20Providing%20a%20UVC%20INF%20File%20%20RELEASE:%20%288/23/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

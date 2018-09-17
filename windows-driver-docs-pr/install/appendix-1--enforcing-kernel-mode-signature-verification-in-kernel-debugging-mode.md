@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Appendix 1: Enforcing Kernel-Mode Signature Verification in Kernel Debugging Mode
@@ -25,7 +26,7 @@ In order to facilitate debugging these situations, the kernel-mode code signing 
 HKLM\SYSTEM\CurrentControlSet\Control\CI\DebugFlags
 ```
 
-This registry value is of type REG_DWORD, and can be assigned a value based on a bitwise OR of one or more of the following flags.
+This registry value is of type [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types), and can be assigned a value based on a bitwise OR of one or more of the following flags.
 
 ```
 0x00000001

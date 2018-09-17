@@ -3,8 +3,8 @@ title: Bug Check 0x74 BAD_SYSTEM_CONFIG_INFO
 description: The BAD_SYSTEM_CONFIG_INFO bug check has a value of 0x00000074. This bug check indicates that there is an error in the registry.
 ms.assetid: c59ddc44-d860-4fbb-a975-ae7226fdce86
 keywords: ["Bug Check 0x74 BAD_SYSTEM_CONFIG_INFO", "BAD_SYSTEM_CONFIG_INFO"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
+ms.author: domars
+ms.date: 08/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - BAD_SYSTEM_CONFIG_INFO
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x74: BAD\_SYSTEM\_CONFIG\_INFO
@@ -52,7 +53,7 @@ The BAD\_SYSTEM\_CONFIG\_INFO bug check has a value of 0x00000074. This bug chec
 </tr>
 <tr class="even">
 <td align="left"><p>4</p></td>
-<td align="left"><p>The NT status code (if it is available)</p></td>
+<td align="left"><p>The NT status value/code (if it is available)</p></td>
 </tr>
 </tbody>
 </table>
@@ -65,6 +66,8 @@ Cause
 The BAD\_SYSTEM\_CONFIG\_INFO bug check occurs if the SYSTEM hive is corrupt. However, this corruption is unlikely, because the boot loader, checks a hive for corruption when it loads the hive.
 
 This bug check can also occur if some critical registry keys and values are missing. The keys and values might be missing if a user manually edited the registry or if an application or service corrupted the registry.
+
+Looking up the NT status value returned in parameter 4 can provide additional information, see [NTSTATUS Values](https://msdn.microsoft.com/library/cc704588.aspx) for a listing. 
 
 Resolution
 ----------

@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storport Error Management
@@ -27,6 +28,5 @@ The following sections describe how Storport manages errors, and, in particular,
  
 
 
---------------------
 
 

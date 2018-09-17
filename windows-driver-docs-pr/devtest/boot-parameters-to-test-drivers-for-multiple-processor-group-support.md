@@ -3,10 +3,11 @@ title: Boot Parameters to Test Drivers for Multiple Processor Group Support
 description: Boot Parameters to Test Drivers for Multiple Processor Group Support
 ms.assetid: 8ce311d6-a182-4d04-a453-81f6abe2043b
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Boot Parameters to Test Drivers for Multiple Processor Group Support
@@ -19,7 +20,7 @@ When a process is created, the process is assigned to a specific group. By defau
 
 Starting with Windows 7, an application or driver can make use of functions that extend the legacy APIs. These new group-aware functions accept a group number argument to unambiguously qualify a processor number or affinity mask, and therefore can manipulate processors outside of the calling thread's group. The interaction between drivers and components running in different groups within a computer introduces the potential for bugs when legacy APIs or DDIs are involved. You can use the legacy non-group-aware APIs on Windows 7 and Windows Server 2008 R2. However, driver requirements are more stringent. For functional correctness of drivers on computers that have more than one processor group, you must replace any DDI that either accepts a processor number or mask as a parameter without an accompanying processor group or returns a processor number or mask without an accompanying processor group. These legacy non-group-aware DDIs can perform erratically on a computer that has multiple process groups because the inferred group may be different than what the calling thread intended. Therefore, drivers that use these legacy DDIs and are targeted for Windows Server 2008 R2 must be updated to use the new extended versions of the interfaces. Drivers that do not call any functions that use processor affinity masks or processor numbers will operate correctly, regardless of the number of processors. Drivers that call the new DDIs can run on previous versions of Windows by including the procgrp.h header, calling [**WdmlibProcgrpInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff565629), and linking against the [Processor Group Compatibility Library](https://msdn.microsoft.com/library/windows/hardware/ff559909) (procgrp.lib).
 
-For more information on the new group-aware APIs and DDIs, download the white paper [Supporting System that Have More than 64 Logical Processors: Guideline for Developers](http://go.microsoft.com/fwlink/p/?linkid=147914) from WHDC.
+For more information on the new group-aware APIs and DDIs, download the white paper [Supporting System that Have More than 64 Logical Processors: Guideline for Developers](http://go.microsoft.com/fwlink/p/?linkid=147914).
 
  
 
@@ -152,7 +153,6 @@ bcdedit.exe /set groupaware off
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Boot%20Parameters%20to%20Test%20Drivers%20for%20Multiple%20Processor%20Group%20Support%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

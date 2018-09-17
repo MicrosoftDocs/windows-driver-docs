@@ -10,6 +10,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # File System Support for Contexts
@@ -41,6 +42,5 @@ To support file contexts, a file system must:
  
 
 
---------------------
 
 

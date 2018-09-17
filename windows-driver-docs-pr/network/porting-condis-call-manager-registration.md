@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting CoNDIS Call Manager Registration
 
 
-## <a href="" id="ddk-porting-condis-call-manager-registration-nd"></a>
+
 
 
 In NDIS 5.*x*, protocol drivers register CoNDIS call manager *ProtocolXxx* functions by calling the [**NdisCmRegisterAddressFamily**](https://msdn.microsoft.com/library/windows/hardware/ff551006) function.

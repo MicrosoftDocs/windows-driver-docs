@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storport Queue Management
@@ -93,6 +94,5 @@ In addition to supplying a set of explicit queue management routines that are no
  
 
 
---------------------
 
 

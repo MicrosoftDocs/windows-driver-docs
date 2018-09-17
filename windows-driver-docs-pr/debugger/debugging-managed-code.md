@@ -3,24 +3,25 @@ title: Debugging Managed Code Using the Windows Debugger
 description: You can use the windows debuggers (WinDbg, CDB, and NTSD) to debug target applications that contain managed code.
 ms.assetid: eb4cc883-71ac-4a57-8654-07c3120310c0
 keywords: debugging, debug, Windbg, managed code debugging, .NET common language runtime, common language runtime, CLR , JIT compiler, JITted code
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Debugging Managed Code Using the Windows Debugger
 
 
-You can use the windows debuggers (WinDbg, CDB, and NTSD) to debug target applications that contain managed code. To debug managed code, you must load the [SOS debugging extension (sos.dll)](http://go.microsoft.com/fwlink/p/?linkid=223345) and a data access component (mscordacwks.dll).
+You can use the Windows debuggers (WinDbg, CDB, and NTSD) to debug target applications that contain managed code. To debug managed code, you must load the [SOS debugging extension (sos.dll)](http://go.microsoft.com/fwlink/p/?linkid=223345) and a data access component (mscordacwks.dll).
 
-The windows debuggers are separate from the Visual Studio debugger. For information about the distinction between the windows debuggers and the Visual Studio debugger, see [Windows Debugging](index.md).
+The Windows debuggers are separate from the Visual Studio debugger. For information about the distinction between the Windows debuggers and the Visual Studio debugger, see [Windows Debugging](index.md).
 
 ## <span id="introduction-to-managed-code"></span><span id="INTRODUCTION_TO_MANAGED_CODE"></span>Introduction to Managed Code
 
 
-Managed code is executed together with the Microsoft .NET common language runtime (CLR). In a managed-code application, the binary code that the compiler produces is in Microsoft intermediate language (MSIL), which is platform-independent.
+Managed code is executed together with the Microsoft .NET Common Language Runtime (CLR). In a managed-code application, the binary code that the compiler produces is in Microsoft Intermediate Language (MSIL), which is platform-independent.
 
 When managed code is run, the runtime produces native code that is platform-specific. The process of generating native code from MSIL is called *just-in-time (JIT) compiling*. After the JIT compiler has compiled the MSIL for a specific method, the method's native code remains in memory. Whenever this method is later called, the native code executes and the JIT compiler does not have to be involved.
 
@@ -198,7 +199,6 @@ Sometimes a managed-code application loads more than one version of the CLR. In 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debugging%20Managed%20Code%20Using%20the%20Windows%20Debugger%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

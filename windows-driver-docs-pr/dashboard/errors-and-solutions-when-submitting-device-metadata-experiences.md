@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Errors and Solutions When Submitting Device Metadata Experiences
@@ -89,7 +90,7 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 <tr class="odd">
 <td><p>A Hardware ID in this .cab is in conflict and the .cab cannot be uploaded. Please ensure no other experience you have created uses this Hardware ID.</p></td>
 <td><p>Your hardware ID has been used in another one of your experiences. On the dashboard, under <strong>Device metadata</strong>, open the <strong>Manage experiences</strong> page. In the filter, enter the hardware ID to find the other experience. You can then resolve any conflicts.</p>
-<p>For more information, see [Device Metadata Business Rules](https://msdn.microsoft.com/library/windows/hardware/br230767.aspx).</p></td>
+<p>For more information, see [Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules).</p></td>
 </tr>
 <tr class="even">
 <td><p>A Hardware ID in this. cab is in use by another company and the .cab cannot be uploaded. Please verify this Hardware ID.</p></td>
@@ -102,7 +103,7 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 <tr class="even">
 <td><p>A live submission already exists with default locale set to true in this experience.</p></td>
 <td><p>Only one live package in an experience can be set as the default package.</p>
-<p>For more information, see [Device Metadata Business Rules](https://msdn.microsoft.com/library/windows/hardware/br230767.aspx).</p></td>
+<p>For more information, see [Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules).</p></td>
 </tr>
 <tr class="odd">
 <td><p>A logo submission for a MultiPurpose device does not match the submission category.</p></td>
@@ -115,7 +116,7 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 <tr class="even">
 <td><p>A Model ID in this cab is in conflict and the cab cannot be uploaded. Please ensure no other experience you have created uses this Model ID.</p></td>
 <td><p>Your model ID has been used in another one of your experiences. On the dashboard, under <strong>Device metadata</strong>, open the <strong>Manage experiences</strong> page. In the filter, enter the model ID to find the other experience. You can then resolve any conflicts.</p>
-<p>For more information, see [Device Metadata Business Rules](https://msdn.microsoft.com/library/windows/hardware/br230767.aspx).</p></td>
+<p>For more information, see [Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules).</p></td>
 </tr>
 <tr class="odd">
 <td><p>A Model ID in this cab is in use by another company and the cab cannot be uploaded. Please verify this Model ID.</p></td>
@@ -140,12 +141,12 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 <tr class="odd">
 <td><p>A preview submission already exists with default locale set to true in this experience.</p></td>
 <td><p>Only one preview package in an experience can be set as the default package.</p>
-<p>For more information, see [Device Metadata Business Rules](https://msdn.microsoft.com/library/windows/hardware/br230767.aspx).</p></td>
+<p>For more information, see [Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules).</p></td>
 </tr>
 <tr class="even">
 <td><p>All device metadata .cab files in an experience must support the same Hardware IDs. Please correct the .cab.</p></td>
 <td><p>This package does not have the same list of model IDs that the other packages in the experience have. Correct the model ID list in the package and upload the package again.</p>
-<p>For more information, see [Device Metadata Business Rules](https://msdn.microsoft.com/library/windows/hardware/br230767.aspx).</p></td>
+<p>For more information, see [Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules).</p></td>
 </tr>
 <tr class="odd">
 <td><p>Allowed Domain should not be empty for task [TaskID] in Tasks.xml.</p></td>
@@ -302,7 +303,7 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 <tr class="even">
 <td><p>No preview key can be found for this organization.</p></td>
 <td><p>You must set your PreviewKey before you upload a preview package.</p>
-<p>For more information, see [Device Metadata Business Rules](https://msdn.microsoft.com/library/windows/hardware/br230767.aspx).</p></td>
+<p>For more information, see [Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules).</p></td>
 </tr>
 <tr class="odd">
 <td><p>PackageStructure node in PackageInfo.xml is invalid.</p></td>
@@ -486,17 +487,16 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 ## <span id="related_topics"></span>Related topics
 
 
-[Create a Device Metadata Experience](https://msdn.microsoft.com/library/windows/hardware/br230794.aspx)
+[Create a Device Metadata Experience](https://docs.microsoft.com/windows-hardware/drivers/dashboard/create-a-device-metadata-experience)
 
-[Submit a Device Metadata Package (Dashboard help)](https://msdn.microsoft.com/library/windows/hardware/br230807.aspx)
+[Submit a Device Metadata Package (Dashboard help)](https://docs.microsoft.com/windows-hardware/drivers/dashboard/submit-a-device-metadata-package--dashboard-help-)
 
-[Device Metadata Business Rules](https://msdn.microsoft.com/library/windows/hardware/br230767.aspx)
-
- 
+[Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules)
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhw_dashboard\hw_dashboard%5D:%20Errors%20and%20Solutions%20When%20Submitting%20Device%20Metadata%20Experiences%20%20RELEASE:%20%281/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+ 
+
 
 
 

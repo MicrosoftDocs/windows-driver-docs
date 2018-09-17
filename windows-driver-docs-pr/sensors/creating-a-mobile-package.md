@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating a mobile package
@@ -36,7 +37,7 @@ Copyright (c) Microsoft Corporation.  All rights reserved.
       <Files>
         <File DestinationDir="$(runtime.drivers)\umdf" Source="$(_RELEASEDIR)\Adxl345Acc.dll" />
       </Files>
-      
+
       <RegKeys>
         <RegKey KeyName="$(hklm.system)\ControlSet001\Enum\Root\umdf2\Adxl345Acc">
           <RegValue Name="ClassGUID"    Type="REG_SZ"        Value="{5175D334-C371-4806-B3BA-71FD53C9258D}"  />
@@ -46,7 +47,7 @@ Copyright (c) Microsoft Corporation.  All rights reserved.
         </RegKey>
       </RegKeys>
     </OSComponent>
-    
+
     <!-- Use Phone-specific INF for security. -->
     <Driver InfSource="$(DRIVERS_FILES_PATH)\Adxl345Acc.inf">
       <Security InfSectionName="Sensor_Inst_SecurityAddReg">
@@ -54,14 +55,14 @@ Copyright (c) Microsoft Corporation.  All rights reserved.
       </Security>
       <Reference Source="$(_RELEASEDIR)\Adxl345Acc.dll" />
     </Driver>
-    
+
   </Components>
-  
+
 </Package>
 ```
 
-**Note**  
-The value of the **Security InfSectionName** element must be exactly the same as the value of the **AddReg** field discussed in this topic: [Review the INX file](review-and-revise-the-inf-file.md).
+>[!NOTE] 
+> The value of the **Security InfSectionName** element must be exactly the same as the value of the **AddReg** field discussed in this topic: [Review the INX file](review-and-revise-the-inf-file.md).
 
  
 
@@ -80,11 +81,9 @@ If you installed the WDK to the default location, then you can find **pkggen.exe
 Refer to [Run the pkggen.exe tool](https://msdn.microsoft.com/windows/hardware/dn756642.aspx#run-pkg), for instructions on how to create a package for your mobile device. And see [Creating mobile packages](https://msdn.microsoft.com/windows/hardware/dn756642.aspx) for a more comprehensive introduction.
 
 ## Related topics
-[Creating mobile packages](https://msdn.microsoft.com/windows/hardware/dn756642.aspx)  
-[Review the INX file](review-and-revise-the-inf-file.md)  
-[Run the pkggen.exe tool](https://msdn.microsoft.com/windows/hardware/dn756642.aspx#run-pkg)  
+[Creating mobile packages](https://msdn.microsoft.com/windows/hardware/dn756642.aspx)
+[Review the INX file](review-and-revise-the-inf-file.md)
+[Run the pkggen.exe tool](https://msdn.microsoft.com/windows/hardware/dn756642.aspx#run-pkg)
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bsensors\sensors%5D:%20Creating%20a%20mobile%20package%20%20RELEASE:%20%281/12/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

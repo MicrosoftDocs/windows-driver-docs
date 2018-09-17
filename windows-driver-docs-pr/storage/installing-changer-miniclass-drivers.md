@@ -12,6 +12,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing Changer Miniclass Drivers
@@ -42,6 +43,5 @@ For general information about device installation in Windows 2000 and later oper
  
 
 
---------------------
 
 

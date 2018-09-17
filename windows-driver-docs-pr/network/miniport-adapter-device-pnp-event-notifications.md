@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Miniport Adapter Device PnP Event Notifications
 
 
-## <a href="" id="ddk-adapter-pnp-event-notifications-ng"></a>
+
 
 
 NDIS calls a miniport driver's [*MiniportDevicePnPEventNotify*](https://msdn.microsoft.com/library/windows/hardware/ff559369) function to notify the driver of Plug and Play (PnP) events.

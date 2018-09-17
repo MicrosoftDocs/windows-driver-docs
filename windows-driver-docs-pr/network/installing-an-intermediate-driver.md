@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing an Intermediate Driver
 
 
-## <a href="" id="ddk-installing-intermediate-drivers-ng"></a>
+
 
 
 Intermediate drivers require two INF files. One of the INF files defines the installation parameters for the protocol lower edge. The other INF file defines the installation parameters for the virtual miniport upper edge.

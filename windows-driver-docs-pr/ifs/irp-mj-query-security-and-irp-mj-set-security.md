@@ -18,6 +18,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_QUERY\_SECURITY and IRP\_MJ\_SET\_SECURITY
@@ -218,6 +219,5 @@ Note that this is an area in which implementation varies dramatically from file 
  
 
 
---------------------
 
 

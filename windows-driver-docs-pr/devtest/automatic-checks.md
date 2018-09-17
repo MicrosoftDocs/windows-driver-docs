@@ -20,6 +20,7 @@ ms.date: 10/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Automatic Checks
@@ -82,21 +83,6 @@ In particular, Driver Verifier looks for:
 
 Problems such as these can potentially cause system bug checks to be issued a while after the driver unloads, and the cause of these bug checks can be hard to determine. When Driver Verifier is active, such violations will result in bug check 0xC7 being issued immediately after the driver is unloaded. See [**Bug Check 0xC7**](https://msdn.microsoft.com/library/windows/hardware/ff560198) (TIMER\_OR\_DPC\_INVALID) for a list of the bug check parameters.
 
-### <span id="Monitoring__Driver_Dispatch_Routines"></span><span id="monitoring__driver_dispatch_routines"></span><span id="MONITORING__DRIVER_DISPATCH_ROUTINES"></span>Monitoring Driver Dispatch Routines
-
-In Windows Vista, Driver Verifier also monitors the selected driver for the following forbidden actions:
-
--   Calling [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) with interrupts disabled.
-
--   Calling **IoCallDriver** at IRQL greater than DISPATCH\_LEVEL.
-
--   Returning from a driver dispatch routine with interrupts disabled.
-
--   Returning from a driver dispatch routine with a changed IRQL.
-
--   Returning from a driver dispatch routine with APCs disabled. In this case, the driver might have called [**KeEnterCriticalRegion**](https://msdn.microsoft.com/library/windows/hardware/ff552021) more times than [**KeLeaveCriticalRegion**](https://msdn.microsoft.com/library/windows/hardware/ff552964), which is the primary cause for [**Bug Check 0x20**](https://msdn.microsoft.com/library/windows/hardware/ff557421) (KERNEL\_APC\_PENDING\_DURING\_EXIT) and [**Bug Check 0x1**](https://msdn.microsoft.com/library/windows/hardware/ff557419) (APC\_INDEX\_MISMATCH).
-
-If Driver Verifier is not active, these violations might not cause the system to stop responding immediately in all cases. Driver Verifier monitors the driver's behavior and issues bug check 0xC4 if any of these violations occur. See [**Bug Check 0xC4**](https://msdn.microsoft.com/library/windows/hardware/ff560187) (DRIVER\_VERIFIER\_DETECTED\_VIOLATION) for a list of the bug check parameters.
 
 ### <span id="Monitoring__Memory_Descriptor_List__MDL__Usage"></span><span id="monitoring__memory_descriptor_list__mdl__usage"></span><span id="MONITORING__MEMORY_DESCRIPTOR_LIST__MDL__USAGE"></span>Monitoring Memory Descriptor List (MDL) Usage
 
@@ -144,7 +130,6 @@ Sometimes the system cannot shut down because it is subject to heavy stress test
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Automatic%20Checks%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

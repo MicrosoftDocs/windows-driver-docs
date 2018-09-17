@@ -14,6 +14,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # AVCSTRM\_WRITE
@@ -24,7 +25,7 @@ ms.technology: windows-devices
 
 The **AVCSTRM\_WRITE** function code is used to submit a data buffer to be transmitted to the specified stream.
 
-### <span id="i_o_status_block"></span><span id="I_O_STATUS_BLOCK"></span>I/O Status Block
+### I/O Status Block
 
 If successful, *avcstrm.sys* sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
 
@@ -67,7 +68,7 @@ Possible error return values include:
 
  
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 This function uses the **BufferStruct** member of the **CommandData** union in the AVC\_STREAM\_REQUEST\_BLOCK structure as shown below.
 
@@ -91,7 +92,7 @@ typedef struct _AVC_STREAM_REQUEST_BLOCK {
 } AVC_STREAM_REQUEST_BLOCK, *PAVC_STREAM_REQUEST_BLOCK;
 ```
 
-### <span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
+### Requirements
 
 **Headers:** Declared in *avcstrm.h*. Include *avcstrm.h*.
 
@@ -114,7 +115,7 @@ This command completes asynchronously. When it is completed, the I/O completion 
 
 This function code must be called at IRQL = PASSIVE\_LEVEL.
 
-### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
+### See Also
 
 [**AVC\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff554194), [**INIT\_AVCSTRM\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff560750), [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550766), [**IOCTL\_AVCSTRM\_CLASS**](https://msdn.microsoft.com/library/windows/hardware/ff560778), [**AVCSTRM\_BUFFER\_STRUCT**](https://msdn.microsoft.com/library/windows/hardware/ff554108), [**AVCSTRM\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554120)
 
@@ -122,7 +123,6 @@ This function code must be called at IRQL = PASSIVE\_LEVEL.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20AVCSTRM_WRITE%20%20RELEASE:%20%2811/22/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

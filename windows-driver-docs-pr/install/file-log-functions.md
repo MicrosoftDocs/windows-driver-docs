@@ -10,17 +10,18 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # File Log Functions
 
 
-## <a href="" id="ddk-file-log-functions-dg"></a>
+
 
 
 You can use a log file to record information about the files copied to a system during an installation. The log file can be either the system log or your own installation log file.
 
-The following table lists the functions that can be used to manipulate log files. For more information about function descriptions, see the Microsoft Windows SDK documentation on [MSDN](http://go.microsoft.com/fwlink/p/?linkid=131248).
+The following table lists the functions that can be used to manipulate log files. For more information about function descriptions, see the [Microsoft Windows SDK documentation](http://go.microsoft.com/fwlink/p/?linkid=131248).
 
 <table>
 <colgroup>

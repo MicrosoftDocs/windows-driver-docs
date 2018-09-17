@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storport's SRB Interface with the Storage Class Driver
@@ -26,6 +27,5 @@ For this reason, most aspects of the SRB interface between the storage class dri
  
 
 
---------------------
 
 

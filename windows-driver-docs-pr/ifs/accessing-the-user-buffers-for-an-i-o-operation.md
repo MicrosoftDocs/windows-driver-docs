@@ -15,6 +15,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Accessing the User Buffers for an I/O Operation
@@ -46,6 +47,5 @@ The following topics provide guidelines for handling buffer addresses and MDLs f
  
 
 
---------------------
 
 

@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Life Cycle of a Storport Driver
@@ -32,6 +33,5 @@ When the system is shutdown, [**HwStorStartIo**](https://msdn.microsoft.com/libr
  
 
 
---------------------
 
 

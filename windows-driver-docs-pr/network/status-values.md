@@ -7,15 +7,16 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Status Values
 
 
-## <a href="" id="ddk-status-values-ng"></a>
 
 
-The Remote NDIS status values are generally equivalent to the 32-bit status values that are defined in the Microsoft Windows 2000 Driver Development Kit (DDK). The specific Remote NDIS status values used in this specification are listed below, others can be inferred from the Windows 2000 DDK or MSDN. A device may return any semantically correct Remote NDIS status value in a *Status* field of a message that it generates.
+
+The Remote NDIS status values are generally equivalent to the 32-bit status values that are defined in the Microsoft Windows 2000 Driver Development Kit (DDK). The specific Remote NDIS status values used in this specification are listed below, others can be inferred from the Windows 2000 DDK or online documentation. A device may return any semantically correct Remote NDIS status value in a *Status* field of a message that it generates.
 
 <table>
 <colgroup>
@@ -64,7 +65,7 @@ The Remote NDIS status values are generally equivalent to the 32-bit status valu
 <tr class="odd">
 <td align="left"><p>RNDIS_STATUS_Xxx</p></td>
 <td align="left"><p>...</p></td>
-<td align="left"><p>Equal to NDIS_STATUS_Xxx values defined in Windows 2000 DDK or MSDN</p></td>
+<td align="left"><p>Equal to NDIS_STATUS_Xxx values defined in Windows 2000 DDK or online documentation</p></td>
 </tr>
 </tbody>
 </table>

@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # System-Defined ECPs
@@ -52,6 +53,5 @@ A GUID that identifies the [**NETWORK\_APP\_INSTANCE\_ECP\_CONTEXT**](https://ms
  
 
 
---------------------
 
 

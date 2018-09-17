@@ -12,6 +12,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting Up a Storage Class Driver's Device Extension
@@ -63,6 +64,5 @@ A storage class driver cannot send requests to its device through the storage po
  
 
 
---------------------
 
 

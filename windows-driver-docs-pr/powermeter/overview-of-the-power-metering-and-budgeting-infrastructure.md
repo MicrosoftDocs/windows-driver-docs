@@ -9,6 +9,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of the Power Metering and Budgeting Infrastructure
@@ -66,6 +67,5 @@ For more information, see [ACPI Power Meter Interface](acpi-power-meter-interfac
  
 
 
---------------------
 
 

@@ -15,6 +15,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF DDInstall.FactDef Section
@@ -30,6 +31,8 @@ This section should be used in an INF for any manually installed non-PnP device 
 [install-section-name.FactDef] |
 [install-section-name.nt.FactDef] | 
 [install-section-name.ntx86.FactDef] | 
+[install-section-name.ntarm.FactDef] |  (Windows 8 and later versions of Windows)
+[install-section-name.ntarm64.FactDef] | (Windows 10 version 1709 and later versions of Windows)
 [install-section-name.ntia64.FactDef] |  (Windows XP and later versions of Windows)
 [install-section-name.ntamd64.FactDef]  (Windows XP and later versions of Windows)
  

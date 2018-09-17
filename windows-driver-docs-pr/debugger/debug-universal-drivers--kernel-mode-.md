@@ -3,11 +3,12 @@ title: Debug Drivers - Step-by-Step Lab (Sysvad Kernel Mode)
 description: This lab provides hands-on exercises that demonstrate how to debug the Sysvad audio kernel-mode device driver.
 ms.assetid: 4A31451C-FC7E-4C5F-B4EB-FBBAC8DADF9E
 keywords: ["debug lab", "step-by-step", "SYSVAD"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
+ms.author: domars
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # <span id="debugger.debug_universal_drivers__kernel-mode_"></span>Debug Drivers - Step by Step Lab (Sysvad Kernel Mode)
@@ -26,17 +27,17 @@ You will need the following hardware to be able to complete the lab:
 
 -   A laptop or desktop computer (host) running Windows 10
 -   A laptop or desktop computer (target) running Windows 10
--   A network cross-over cable, or a network hub and network cables to connect the two PCs
+-   A network hub/router and network cables to connect the two PCs
 -   Access to the internet to download symbol files
 
 You will need the following software to be able to complete the lab.
 
--   Microsoft Visual Studio 2015
+-   Microsoft Visual Studio 2017
 -   Windows Software Development Kit (SDK) for Windows 10
 -   Windows Driver Kit (WDK) for Windows 10
 -   The sample Sysvad audio driver for Windows 10
 
-For information on downloading and installing the WDK, see [Download the Windows Driver Kit (WDK)](https://developer.microsoft.com/windows/hardware/windows-driver-kit)
+For information on downloading and installing the WDK, see [Download the Windows Driver Kit (WDK)](https://developer.microsoft.com/windows/hardware/windows-driver-kit).
 
 ## <span id="sysvad_debugging_walkthrough_overview"></span>Sysvad debugging walkthrough
 
@@ -72,15 +73,13 @@ The PCs in this lab need to be configured to use an Ethernet network connection 
 
 This lab uses two computers. WinDbg runs on the *host* system and the Sysvad driver runs on the *target* system.
 
-The "&lt;-Host" on the left is connected using a cross over ethernet cable to the "-&gt;Target" on the right.
-
-The steps in the lab assume that you are using a cross over network cable, but the lab should also work if you can plug both the host and the target directly into a network hub.
+ Use a network hub/router and network cables to connect the two PCs.
 
 ![two pcs connected with a double arrow](images/debuglab-image-targethostdrawing1.png)
 
-To work with kernel-mode applications and use WinDbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](https://msdn.microsoft.com/windows-drivers/develop/preparing_a_computer_for_manual_driver_deployment) and [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md).
+To work with kernel-mode applications and use WinDbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](https://msdn.microsoft.com/windows-drivers/develop/preparing_a_computer_for_manual_driver_deployment) and [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
 
-### <span id="configure__kernel_mode_debugging_using_a_crossover_ethernet_cable"></span>Configure kernel–mode debugging using a crossover ethernet cable
+### <span id="configure__kernel_mode_debugging_using_ethernet"></span>Configure kernel–mode debugging using ethernet
 
 To enable kernel-mode debugging on the target system, perform the following steps.
 
@@ -109,7 +108,7 @@ Ethernet adapter Ethernet:
 
 **-&gt; On the target system**
 
-4. Open a command prompt on the target system and use the **ping** command to confirm network connectivity between the two systems. Use the IP address of the host system you recorded instead of the one shown in the sample output.
+4. Open a command prompt on the target system and use the **ping** command to confirm network connectivity between the two systems. Use the actual IP address of the host system you recorded instead of 169.182.1.1 that is shown in the sample output.
 
 ```
 C:\> ping 169.182.1.1
@@ -131,8 +130,15 @@ To use the KDNET utility to enable kernel-mode debugging on the target system, p
 1. On the host system, locate the WDK KDNET directory. By default it is located here.
 
 ```
-C:\Program Files (x86)\Windows Kits\10\
+C:\Program Files (x86)\Windows Kits\10\Debuggers\x64
 ```
+
+> [!NOTE]
+> This labs assumes that both PCs are running a 64 bit version of Windowson both the target and host. 
+> If that is not the case, the best approach is to run the same "bitness" of tools on the host that the target is running. 
+For example if the target is running 32 bit Windows, run a 32 version of the debugger on the host. 
+> For more information, see [Choosing the 32-Bit or 64-Bit Debugging Tools](choosing-a-32-bit-or-64-bit-debugger-package.md).
+> 
 
 2. Locate these two files and copy them to a network share or thumb drive, so that they will be available on the target computer.
 
@@ -150,15 +156,18 @@ Network debugging is supported on the following NICs:
 busparams=0.25.0, Intel(R) 82579LM Gigabit Network Connection, KDNET is running on this NIC.kdnet.exe
 ```
 
-4. Type this command to set the IP address of the host system. Use the IP address of the host system that you recorded earlier, not the one shown. Pick a unique port address for each target/host pair that you work with, such as 50010.
+4. Type this command to set the IP address of the host system. Use the actual IP address of the host system you recorded instead of 169.182.1.1 that is shown in the sample output. Pick a unique port address for each target/host pair that you work with, such as 50010.
 
 ```
-C:\>kdnet TARGETPC 50010
+C:\>kdnet 169.182.1.1 50010
 
-NtQuerySystemInformation cannot query SystemKernelDebuggingAllowed on this OS.
 Enabling network debugging on Intel(R) 82577LM Gigabit Network Connection.
 Key=2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
 ```
+
+> [!IMPORTANT]
+> Before using BCDEdit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC.
+> Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.
 
 5. Type this command to confirm that the dbgsettings are set properly.
 
@@ -174,13 +183,13 @@ The operation completed successfully.
 ```
 
 Copy the auto generated unique key into a text file, to avoid having to type it in on the host PC. Copy the text file with the key over to the host system.
+
 **Note**  
 **Firewalls and debuggers**
 
-If you receive a pop-up message from the firewall, and you wish to use the debugger, unblock the types of networks that you desire.
+If you receive a pop-up message from the firewall, and you wish to use the debugger, check **all three** of the boxes.
 
 ![windows security alert - windows firewall has blocked some features of this app](images/debuglab-image-firewall-dialog-box.png)
-
  
 
 **&lt;- On the host system**
@@ -424,7 +433,7 @@ To install the driver on the target system, perform the following steps.
     [!TIP] If you have any issues with the installation, check the following file for more information.
     `%windir%\\inf\\setupapi.dev.log`
  
-    For more detailed instructions, see [Configuring a Computer for Driver Deployment, Testing, and Debugging](http://msdn.microsoft.com/library/windows/hardware/hh698272.aspx).
+    For more detailed instructions, see [Configuring a Computer for Driver Deployment, Testing, and Debugging](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
 
     The INF file contains the hardware ID for installing the *tabletaudiosample.sys*. For the Syvad sample, the hardware ID is:
     `root\\sysvad\_TabletAudioSample`
@@ -1751,7 +1760,7 @@ The image name is rundll32.exe, which is indeed not the image name associated wi
 **Note**  
 To set the current thread, type .thread &lt;thread number&gt;.
 
-For more information about threads and processes, see the following references on MSDN:
+For more information about threads and processes, see the following references:
 
 [Threads and Processes](threads-and-processes.md)
 
@@ -2122,7 +2131,6 @@ OSR <https://www.osr.com/>
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debug%20Drivers%20-%20Step%20by%20Step%20Lab%20%28Sysvad%20Kernel-Mode%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

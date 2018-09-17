@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # ACLs and the Device Stack
@@ -102,6 +103,5 @@ For example, if the caller has opened a handle for Read-only access, like the fo
  
 
 
---------------------
 
 

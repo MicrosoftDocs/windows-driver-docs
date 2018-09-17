@@ -11,12 +11,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing Parallel Ports and Devices
 
 
-## <a href="" id="ddk-installing-parallel-ports-and-devices-kg"></a>
+
 
 
 This section describes device-specific information about installing parallel ports and devices in Microsoft Windows.
@@ -42,6 +43,5 @@ For more information about system support for parallel ports and devices attache
  
 
 
---------------------
 
 

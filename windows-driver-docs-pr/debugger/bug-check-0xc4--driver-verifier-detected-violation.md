@@ -3,7 +3,7 @@ title: Bug Check 0xC4 DRIVER_VERIFIER_DETECTED_VIOLATION
 description: The DRIVER_VERIFIER_DETECTED_VIOLATION bug check has a value of 0x000000C4. This is the general bug check code for fatal errors found by Driver Verifier. 
 ms.assetid: 7814f827-05fc-419b-b428-4565978bbb52
 keywords: ["Bug Check 0xC4 DRIVER_VERIFIER_DETECTED_VIOLATION", "DRIVER_VERIFIER_DETECTED_VIOLATION"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 10/04/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -14,6 +14,7 @@ api_name:
 - DRIVER_VERIFIER_DETECTED_VIOLATION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION
@@ -31,8 +32,6 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 **Note**  If you have trouble viewing all 5 columns in this table, try the following:
 -   Expand your browser window to full size.
 -   Place the cursor in the table and use the arrow keys to scroll left and right.
--   Or use the [MSDN Library version](http://msdn.microsoft.com/library/ff560187.aspx) of this page.
-
  
 |Parameter 1|Parameter 2|Parameter 3|Parameter 4|Cause of Error|
 |--- |--- |--- |--- |--- |

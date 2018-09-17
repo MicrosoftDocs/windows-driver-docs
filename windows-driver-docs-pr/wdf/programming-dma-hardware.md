@@ -14,6 +14,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Programming DMA Hardware
@@ -23,7 +24,7 @@ ms.technology: windows-devices
 
 This topic describes the functionality that a KMDF driver for a bus-master DMA device typically provides in its [*EvtProgramDma*](https://msdn.microsoft.com/library/windows/hardware/ff541816) event callback function. If your driver uses the framework's DMA support, the driver must provide this callback. This information also applies to a KMDF driver for a [system-mode DMA device](supporting-system-mode-dma.md) that has a hardware interrupt.
 
-## <a href="" id="ddk-programming-dma-hardware-df"></a>
+
 
 
 The [*EvtProgramDma*](https://msdn.microsoft.com/library/windows/hardware/ff541816) callback function, which is called at IRQL = DISPATCH\_LEVEL, programs the device to start a [DMA transfer](dma-transactions-and-dma-transfers.md). The input parameters for this callback function supply the transfer's direction (input or output) and a scatter/gather list. If the transfer consists of a single packet, the scatter/gather list contains a single element.

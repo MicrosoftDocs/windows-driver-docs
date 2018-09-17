@@ -9,15 +9,25 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Obtaining Device Configuration Information at IRQL = DISPATCH\_LEVEL
 
 
-## <a href="" id="ddk-obtaining-device-configuration-information-at-irql-dispatch-level-"></a>
 
 
-The method illustrated in the [Obtaining Device Configuration Information at IRQL = PASSIVE\_LEVEL](obtaining-device-configuration-information-at-irql---passive-level.md) section makes use of I/O request packets (IRPs) and therefore is only valid for drivers running at IRQL = PASSIVE\_LEVEL. Drivers running at IRQL = DISPATCH\_LEVEL must use a bus interface to obtain device configuration space data. To obtain this data, you can use a bus-specific interface or the system-supplied bus-independent bus interface, [**BUS\_INTERFACE\_STANDARD**](https://msdn.microsoft.com/library/windows/hardware/ff540707).
+
+The method illustrated in the [Obtaining Device Configuration Information at IRQL = PASSIVE\_LEVEL](obtaining-device-configuration-information-at-irql---passive-level.md) section makes use of I/O request packets (IRPs) and therefore is only valid for drivers running at IRQL = PASSIVE\_LEVEL. Drivers running at IRQL = DISPATCH\_LEVEL must use a bus interface to obtain device configuration space data. To obtain this data, you can use a bus-specific interface or the system-supplied bus-independent bus interface, **BUS\_INTERFACE\_STANDARD**.
+
+The GUID_BUS_INTERFACE_STANDARD interface (defined in `wdmguids.h`) enables device drivers to make direct calls to parent bus driver routines instead of using I/O request packets (IRP) to communicate with the bus driver. In particular, this interface enables drivers to access routines that the bus driver provides for the following functions:
+
+-    Translating bus addresses 
+-    Retrieving a DMA adapter structure in cases where the bus adapter supports DMA 
+-    Reading and setting the bus configuration space for a particular device on the bus 
+
+To use this interface, send an IRP_MN_QUERY_INTERFACE IRP to your bus driver with InterfaceType = GUID_BUS_INTERFACE_STANDARD. The bus driver supplies a pointer to a BUS_INTERFACE_STANDARD structure that contains pointers to the individual routines of the interface.
+
 
 It is preferable to use **BUS\_INTERFACE\_STANDARD** where possible, because a bus number is not required to retrieve configuration information when using **BUS\_INTERFACE\_STANDARD**, whereas drivers must often identify the bus number when retrieving bus-specific interfaces. Bus numbers for some buses, such as PCI, can change dynamically. Therefore, drivers should not depend on the bus number to access the PCI ports directly. Doing so might lead to system failure.
 
@@ -143,7 +153,5 @@ Note, that if all that is needed are bus, function, and device numbers, it is us
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Obtaining%20Device%20Configuration%20Information%20at%20IRQL%20=%20DISPATCH_LEVEL%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

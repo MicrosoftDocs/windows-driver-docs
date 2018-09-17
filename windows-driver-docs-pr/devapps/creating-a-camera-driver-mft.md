@@ -3,13 +3,17 @@ title: Creating a camera driver MFT for a UWP device app
 description: UWP device apps let device manufacturers apply custom settings and special effects on the camera's video stream with a camera driver MFT (media foundation transform).
 ms.assetid: 079CB01E-D16C-4597-8F08-BD75F1D02427
 ms.author: windowsdriverdev
-ms.date: 06/29/2017
+ms.date:
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating a camera driver MFT for a UWP device app
+
+> [!IMPORTANT]
+> This topic has been deprecated. See the [Device MFT design guide](https://docs.microsoft.com/en-us/windows-hardware/drivers/stream/dmft-design) for updated guidance.
 
 UWP device apps let device manufacturers apply custom settings and special effects on the camera's video stream with a camera driver MFT (media foundation transform). This topic introduces driver MFTs and uses the [Driver MFT](http://go.microsoft.com/fwlink/p/?LinkID=251566) sample to show how to create one. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
@@ -328,6 +332,4 @@ For more info about how to use device metadata to associate your app with your d
  
 
  
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devapps\devapps]:%20Creating%20a%20camera%20driver%20MFT%20for%20a%20Windows%20Store%20device%20app%20%20RELEASE:%20%281/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 

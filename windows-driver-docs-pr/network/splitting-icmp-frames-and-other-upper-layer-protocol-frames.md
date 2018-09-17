@@ -9,12 +9,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Splitting ICMP Frames and Other Upper-Layer-Protocol Frames
 
 
-## <a href="" id="ddk-splitting-icmp-frames-and-other-upper-layer-protocol-frames-ng"></a>
+
 
 
 A NIC must split IP frames with upper-layer-protocols other than TCP or UDP (for example, ICMP frames) at the beginning of upper-layer-protocol header or must not split such frames.

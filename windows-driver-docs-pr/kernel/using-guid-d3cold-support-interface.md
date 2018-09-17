@@ -3,12 +3,27 @@ title: Using the GUID_D3COLD_SUPPORT_INTERFACE Driver Interface
 author: windows-driver-content
 description: Starting with Windows 8, drivers can call the routines in the GUID_D3COLD_SUPPORT_INTERFACE interface to determine the D3cold capabilities of devices and to enable these devices to use D3cold.
 ms.assetid: 525637E8-B16F-4038-A78D-A47064E36449
+ms.localizationpriority: medium
 ---
 
 # Using the GUID\_D3COLD\_SUPPORT\_INTERFACE Driver Interface
 
 
-Starting with Windows 8, drivers can call the routines in the [GUID\_D3COLD\_SUPPORT\_INTERFACE](https://msdn.microsoft.com/library/windows/hardware/hh967714) interface to determine the D3cold capabilities of devices and to enable these devices to use D3cold. The two primary routines in this interface are [*SetD3ColdSupport*](https://msdn.microsoft.com/library/windows/hardware/hh967716) and [*GetIdleWakeInfo*](https://msdn.microsoft.com/library/windows/hardware/hh967712).
+Starting with Windows 8, drivers can call the routines in the GUID\_D3COLD\_SUPPORT\_INTERFACE interface to determine the D3cold capabilities of devices and to enable these devices to use D3cold. The two primary routines in this interface are [*SetD3ColdSupport*](https://msdn.microsoft.com/library/windows/hardware/hh967716) and [*GetIdleWakeInfo*](https://msdn.microsoft.com/library/windows/hardware/hh967712).
+
+
+The GUID_D3COLD_SUPPORT_INTERFACE driver interface provides support for the D3cold substate of the D3 device power state. D3 is divided into two substates, D3hot and D3cold. D3 is the lowest-powered device power state, and D3cold uses less power than D3hot. A device can enter D3cold only if the device, the parent bus driver, and the platform firmware support this state. A device that supports D3cold can enter and exit this state when the computer is in the S0 (working) system power state.
+
+The driver that is the power policy owner (PPO) for the device calls the routines in this interface to do the following:
+
+-    Discover whether the device, the parent bus driver, and platform firmware support transitions to the D3cold substate. 
+-    Discover whether the device can signal a wake event to the processor when the device is in the D3cold substate. 
+-    Enable and disable transitions to the D3cold substate by the device. 
+
+To query for this interface, a device driver sends an IRP_MN_QUERY_INTERFACE IRP down the driver stack. For this IRP, the driver sets the InterfaceType input parameter to GUID_D3COLD_SUPPORT_INTERFACE. On successful completion of the IRP, the Interface output parameter is a pointer to a D3COLD_SUPPORT_INTERFACE structure. This structure contains pointers to the routines in the interface.
+
+For more information about the D3cold device power state, see [Supporting D3cold in a Driver](supporting-d3cold-in-a-driver.md).
+
 
 A driver calls the *SetD3ColdSupport* routine to dynamically enable and disable a device's transitions to D3cold that can occur when the computer is in S0. If the device must be able to signal a wake event from any low-power Dx state that the device enters, the driver should enable the device to enter D3cold only if the device can signal wake events from D3cold. Otherwise, after the device enters D3cold, it might be unavailable until the computer leaves the S0 state.
 
@@ -38,7 +53,5 @@ However, the driver should not enable the device to enter either D3hot or D3cold
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Using%20the%20GUID_D3COLD_SUPPORT_INTERFACE%20Driver%20Interface%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

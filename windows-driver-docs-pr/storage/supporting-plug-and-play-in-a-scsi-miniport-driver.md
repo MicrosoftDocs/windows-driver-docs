@@ -12,6 +12,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting Plug and Play in a SCSI Miniport Driver
@@ -31,6 +32,5 @@ The SCSI port driver creates PDOs for target devices and the FDO for the minipor
  
 
 
---------------------
 
 

@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # USB client driver verifier
@@ -18,7 +19,7 @@ This topic describes the USB client driver verifier feature of the USB 3.0 drive
 -   [How to enable the USB client driver verifier](#how-to-enable-the-usb-client-driver-verifier)
 -   [Configuration settings for the USB client driver verifier](#configuration--settings-for-the-usb-client-driver-verifier)
 
-## <a href="" id="what-is--the-usb-client-driver-verifier"></a>What is the USB client driver verifier
+## What is the USB client driver verifier
 
 
 The *USB client driver verifier* is a feature of the USB 3.0 driver stack, included in Windows 8. When the verifier is enabled, the USB driver stack fails or modifies certain operations performed by a client driver. Those failures simulate error conditions that might be otherwise difficult to find and can lead to undesirable results later. The simulated failures give you the opportunity to make sure that your driver is able to deal with failures gracefully. The client can deal with errors through error handling code or exercise a different code path.
@@ -54,7 +55,7 @@ HKEY_LOCAL_MACHINE
 
 The **UsbVerifierEnabled** registry entry takes a DWORD value. When **UsbVerifierEnabled** is 1, the USB client driver verifier is enabled; 0 disables it. If the [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448) is enabled for the client driver and **UsbVerifierEnabled** is 0, the USB client driver verifier is disabled.
 
-## <a href="" id="configuration--settings-for-the-usb-client-driver-verifier"></a>Configuration settings for the USB client driver verifier
+## Configuration settings for the USB client driver verifier
 
 
 When the verifier is enabled, the USB driver stack keeps track of URBs that the client driver allocates by calling **USBD\_xxxUrbAllocate** routines (see [USB Routines](https://msdn.microsoft.com/library/windows/hardware/ff540134#client)). If the client driver leaks any URB, the USB driver stack uses that information to cause a bugcheck through the [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448). In that case, use the **!usbanalyze -v** command to determine the cause of the leak.
@@ -215,7 +216,5 @@ Changes the value received in the <em>OutputBuffer</em> parameter when the clien
 [How to Send Chained MDLs](how-to-send-chained-mdls.md)  
 [USB Diagnostics and Test Guide](usb-driver-testing-guide.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20USB%20client%20driver%20verifier%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

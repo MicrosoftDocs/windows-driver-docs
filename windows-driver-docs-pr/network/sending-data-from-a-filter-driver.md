@@ -9,12 +9,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sending Data from a Filter Driver
 
 
-## <a href="" id="ddk-sending-data-from-a-filter-driver-ng"></a>
+
 
 
 Filter drivers can initiate send requests or filter send requests that overlying drivers initiate. When a protocol driver calls the [**NdisSendNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff564535) function, NDIS submits the specified [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure to the topmost filter module in the driver stack.

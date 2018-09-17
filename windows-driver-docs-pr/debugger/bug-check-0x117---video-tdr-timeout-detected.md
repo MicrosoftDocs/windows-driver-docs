@@ -3,7 +3,7 @@ title: Bug Check 0x117 VIDEO_TDR_TIMEOUT_DETECTED
 description: The VIDEO_TDR_TIMEOUT_DETECTED bug check has a value of 0x00000117. This indicates that the display driver failed to respond in a timely fashion.
 ms.assetid: 70e24a97-f695-4d35-b52f-69dfddecd9b5
 keywords: ["Bug Check 0x117 VIDEO_TDR_TIMEOUT_DETECTED", "VIDEO_TDR_TIMEOUT_DETECTED"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -14,6 +14,7 @@ api_name:
 - VIDEO_TDR_TIMEOUT_DETECTED
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x117: VIDEO\_TDR\_TIMEOUT\_DETECTED

@@ -9,12 +9,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Interpreting a Sample SetupAPI Log File
 
 
-## <a href="" id="ddk-interpreting-a-sample-setupapi-log-file-dg"></a>
+
 
 
 The sample logs below illustrate the information that is contained in a SetupAPI log file.

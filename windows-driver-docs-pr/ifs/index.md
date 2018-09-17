@@ -54,4 +54,3 @@ This design guide includes the following sections:
 
 
 
---------------------

@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting from ScsiPort to StorPort
@@ -40,6 +41,5 @@ The following is a summary of the porting activities that were necessary in orde
  
 
 
---------------------
 
 

@@ -1,5 +1,5 @@
 ---
-title: Overview of universal sensor driver model
+title: Overview of the universal sensor driver model
 author: windows-driver-content
 description: In Windows 10, the sensor driver stacks for Desktop and Mobile devices have been merged to create a universal sensor driver model.
 ms.assetid: 3591F4DD-2404-4893-88F3-1DC6A0CC3F0D
@@ -8,16 +8,18 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
-# Overview of universal sensor driver model
+# Overview of the universal sensor driver model
 
 
 In Windows 10, the sensor driver stacks for Desktop and Mobile devices have been merged to create a universal sensor driver model.
 
 Hardware partners can now build a single driver, along with its associated App, that can run on all Windows device platforms.
 
-**Note**  V1.0 UMDF sensor drivers are supported in Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), and KMDF sensor drivers are supported in Windows 10 Mobile.
+>[!NOTE]
+> V1.0 UMDF sensor drivers are supported in Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), and KMDF sensor drivers are supported in Windows 10 Mobile.
 
  
 
@@ -53,7 +55,5 @@ Note that the Microsoft Store Apps component can consist of apps developed by Mi
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bsensors\sensors%5D:%20Overview%20of%20universal%20sensor%20driver%20model%20%20RELEASE:%20%281/12/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

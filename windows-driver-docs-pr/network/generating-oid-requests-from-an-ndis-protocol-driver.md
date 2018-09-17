@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Generating OID Requests from an NDIS Protocol Driver
 
 
-## <a href="" id="ddk-generating-oid-requests-from-an-ndis-protocol-driver-ng"></a>
+
 
 
 To originate an OID request to underlying drivers, a protocol calls the [**NdisOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff563710) function.

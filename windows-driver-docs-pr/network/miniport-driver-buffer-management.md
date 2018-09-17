@@ -9,12 +9,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Miniport Driver Buffer Management
 
 
-## <a href="" id="ddk-miniport-driver-buffer-management-ng"></a>
+
 
 
 Miniport drivers typically call [**NdisAllocateNetBufferListPool**](https://msdn.microsoft.com/library/windows/hardware/ff561611) from [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) to create a pool of [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures. Miniport drivers use these structures to indicate received data.

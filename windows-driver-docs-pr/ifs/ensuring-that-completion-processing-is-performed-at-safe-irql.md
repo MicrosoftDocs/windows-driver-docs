@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Ensuring that Completion Processing is Performed at Safe IRQL
@@ -32,6 +33,5 @@ The second technique is for the minifilter driver's postoperation callback routi
  
 
 
---------------------
 
 

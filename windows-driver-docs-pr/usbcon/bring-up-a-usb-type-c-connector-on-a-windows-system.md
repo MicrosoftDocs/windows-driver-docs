@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Write a USB Type-C connector driver
@@ -73,7 +74,7 @@ To enable a USB Type-C connector on a system, you must write the client driver.
 -   Familiarize yourself with UCM and how it interacts with other Windows drivers. See [Architecture: USB Type-C design for a Windows system](architecture--usb-type-c-in-a-windows-system.md).
 -   Familiarize yourself with Windows Driver Foundation (WDF). Recommended reading: [Developing Drivers with Windows Driver Foundation]( http://go.microsoft.com/fwlink/p/?LinkId=691676), written by Penny Orwick and Guy Smith.
 
-## <a href="" id="summary-of-the-services-provided-by-the-ucm-class-extension-"></a>Summary of the services provided by the UCM class extension
+## Summary of the services provided by the UCM class extension
 
 
 The UCM class extension keeps the operating system informed about the changes in data and power role, charging levels, and the negotiated PD contract. While the client driver interacts with the hardware, it must notify the class extension when those changes occur. The class extension provides a set of methods that the client driver can use to send the notifications (discussed in this topic). Here are the services provided:
@@ -228,7 +229,7 @@ Exit:
 }
 ```
 
-## <a href="" id="2--report-the-partner-connector-attach-event-"></a>2. Report the partner connector attach event
+## 2. Report the partner connector attach event
 
 
 The client driver must call [**UcmConnectorTypeCAttach**](https://msdn.microsoft.com/library/windows/hardware/mt187915) when a connection to a partner connector is detected. This call notifies the UCM class extension, which further notifies the operating system. At this point the system may start charging at USB Type-C levels.
@@ -264,7 +265,7 @@ In the initial attach event, the partner connector sends a current advertisement
 
 If the local connector is the power sink and the current advertisement changes, the client driver must detect changes in the current advertisement and report them to the class extension. On Windows 10 Mobile systems, that information is used by CAD.sys and the battery subsystem to adjust the amount of current it is drawing from the source. To report the change in current level to the class extension, the client driver must call [**UcmConnectorTypeCCurrentAdChanged**](https://msdn.microsoft.com/library/windows/hardware/mt187916).
 
-## <a href="" id="pd-contract"></a>4. Report the new negotiated PD contract
+## 4. Report the new negotiated PD contract
 
 
 If your connector supports PD, after the initial attach event, there are PD messages transferred between the connector and its partner connector. Between both partners, a PD contract is negotiated that determines the current levels that the connector can draw or allow the partner to draw. Each time the PD contract changes, the client driver must call these methods to report the change to the class extension.
@@ -276,7 +277,7 @@ If your connector supports PD, after the initial attach event, there are PD mess
     -   [**UcmConnectorPdSourceCaps**](https://msdn.microsoft.com/library/windows/hardware/mt187913) to report the source capabilities that was advertised by the system to the partner connector.
     -   [**UcmConnectorPdConnectionStateChanged**](https://msdn.microsoft.com/library/windows/hardware/mt187911) to report connection capabilities of the currently negotiated PD contract .
 
-## <a href="" id="5--report-battery-charging-status-"></a>5. Report battery charging status
+## 5. Report battery charging status
 
 
 The client driver can notify the UCM class extension if the charging level is not adequate. The class extension reports this information to the operating system. The system uses that information to show a user notification that the charger is not optimally charging the system. The charging status can be reported by these methods:
@@ -287,7 +288,7 @@ The client driver can notify the UCM class extension if the charging level is no
 
 Those methods specify charging state. If the reported levels are **UcmChargingStateSlowCharging** or **UcmChargingStateTrickleCharging** (see [**UCM\_CHARGING\_STATE**](https://msdn.microsoft.com/library/windows/hardware/mt187921)), the operating system shows the user notification.
 
-## <a href="" id="6--report-pr-swap-dr-swap-events"></a>6. Report PR\_Swap/DR\_Swap events
+## 6. Report PR\_Swap/DR\_Swap events
 
 
 If the connector receives a power role (PR\_Swap) or data role (DR\_Swap) swap message from partner, the client driver must notify the UCM class extension.
@@ -370,7 +371,7 @@ The client driver can call [**UcmConnectorDataDirectionChanged**](https://msdn.m
 
  
 
-## <a href="" id="8--report-the-partner-connector-detach-event-"></a>8. Report the partner connector detach event
+## 8. Report the partner connector detach event
 
 
 The client driver must call [**UcmConnectorTypeCDetach**](https://msdn.microsoft.com/library/windows/hardware/mt187918) when the connection to a partner connector ends. This call notifies the UCM class extension, which further notifies the operating system.
@@ -392,7 +393,5 @@ When a device running Windows 10 Mobile is connected to a PC running Windows 1
 ## Related topics
 [Developing Windows drivers for USB Type-C connectors](developing-windows-drivers-for-usb-type-c-connectors.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Write%20a%20USB%20Type-C%20connector%20driver%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

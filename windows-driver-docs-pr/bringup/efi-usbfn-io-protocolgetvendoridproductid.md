@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USBFN\_IO\_PROTOCOL.GetVendorIdProductId
@@ -85,6 +86,5 @@ Returned product-id of the device. Product IDs (PIDs) are 16-bit numbers assigne
  
 
 
---------------------
 
 

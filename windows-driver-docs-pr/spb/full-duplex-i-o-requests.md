@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Full-Duplex I/O Requests
@@ -156,6 +157,5 @@ The preceding code example does the following:
  
 
 
---------------------
 
 

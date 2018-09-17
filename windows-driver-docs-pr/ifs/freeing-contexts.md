@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Freeing Contexts
@@ -30,6 +31,5 @@ When a minifilter driver registers its context types, each context definition ca
  
 
 
---------------------
 
 

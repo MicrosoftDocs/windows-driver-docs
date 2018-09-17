@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # UEFI in Windows
@@ -76,6 +77,5 @@ OEMs that choose to implement UEFI applications should make sure that they have 
 ## Related topics
 [UEFI protocols for Windows](uefi-protocols-for-windows.md)  
 
---------------------
 
 

@@ -10,6 +10,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Option File Fields
@@ -23,12 +24,12 @@ The fields in the options file that you can change include the following:
 Specifies the maximum size of a driver that SDV will support (in terms of lines of code). The default value is 100K lines of code.
 
 <span id="SDV_SlamConfig_Timeout"></span><span id="sdv_slamconfig_timeout"></span><span id="SDV_SLAMCONFIG_TIMEOUT"></span>**SDV\_SlamConfig\_Timeout**  
-Limits the time SDV can spend verifying each rule. The value of this entry is an integer that represents a number of seconds. The minimum value is 10, the maximum value is 86400, and the default value is 2000 (33.34 minutes).
+Limits the time SDV can spend verifying each rule. The value of this entry is an integer that represents a number of seconds. The minimum value is 10, the maximum value is 86400, and the default value is 3000 (50 minutes).
 
 If SDV exceeds the per-rule time limit while verifying a rule, it terminates the verification and reports a **Timeout** in the [command-line output](command-line-output.md) and in Static Driver Verifier under the Results section on the **Main** tab.
 
 <span id="SDV_SlamConfig_Spaceout"></span><span id="sdv_slamconfig_spaceout"></span><span id="SDV_SLAMCONFIG_SPACEOUT"></span>**SDV\_SlamConfig\_Spaceout**  
-Limits the amount of virtual memory that SDV can consume when verifying each rule. The value of this entry is an integer in megabyte (MB) units. The minimum value is 100, the maximum value is 2000 (2 gigabytes (GB), and the default value is 400.
+Limits the amount of virtual memory that SDV can consume when verifying each rule. The value of this entry is an integer in megabyte (MB) units. The minimum value is 100, and the default value is 2500 MB (2.5 GB.)
 
 If SDV exceeds the virtual memory limit while verifying a rule, it terminates the verification and reports a **Spaceout** in the [command-line output](command-line-output.md) and in Static Driver Verifier under the Results section on the **Main** tab.
 
@@ -41,7 +42,6 @@ Sets the number of threads to use during a verification. If the value is 0, this
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Option%20File%20Fields%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Framework Object Methods
 
 
-## <a href="" id="ddk-framework-object-methods-df"></a>
+
 
 
 Each framework object exports a set of methods (functions). Each method serves one of two purposes:

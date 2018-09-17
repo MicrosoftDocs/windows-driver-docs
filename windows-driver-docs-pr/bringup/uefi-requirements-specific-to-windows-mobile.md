@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # UEFI requirements for Windows 10 Mobile
@@ -156,6 +157,5 @@ The following table describes the requirements that are specific to Windows 10 
 [UEFI requirements that apply to all Windows editions](uefi-requirements-that-apply-to-all-windows-platforms.md)  
 [UEFI requirements for USB flashing support](uefi-requirements-for-usb-flashing-support.md)  
 
---------------------
 
 

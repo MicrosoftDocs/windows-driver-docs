@@ -23,6 +23,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # What Determines When a Driver Is Loaded
@@ -93,6 +94,5 @@ For more general information about driver load order and load order groups, see 
  
 
 
---------------------
 
 

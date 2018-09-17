@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Intermediate Driver Status Indication Handling to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-intermediate-driver-status-indication-handling-to-ndis-6-0"></a>
+
 
 
 Like NDIS 5.*x* intermediate drivers, NDIS 6.0 intermediate drivers can originate or forward status indications.

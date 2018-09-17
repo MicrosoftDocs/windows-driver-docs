@@ -3,8 +3,8 @@ title: Bug Check 0x3B SYSTEM_SERVICE_EXCEPTION
 description: The SYSTEM_SERVICE_EXCEPTION bug check has a value of 0x0000003B. This indicates that an exception happened while executing a routine that transitions from non-privileged code to privileged code.
 ms.assetid: 0e2c230e-d942-4f32-ae8e-7a54aceb4c19
 keywords: ["Bug Check 0x3B SYSTEM_SERVICE_EXCEPTION", "SYSTEM_SERVICE_EXCEPTION"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
+ms.author: domars
+ms.date: 09/12/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - SYSTEM_SERVICE_EXCEPTION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x3B: SYSTEM\_SERVICE\_EXCEPTION
@@ -40,7 +41,7 @@ The SYSTEM\_SERVICE\_EXCEPTION bug check has a value of 0x0000003B. This indicat
 <tbody>
 <tr class="odd">
 <td align="left"><p>1</p></td>
-<td align="left"><p>The exception that caused the bug check</p></td>
+<td align="left"><p>The exception that caused the bug check. </p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2</p></td>
@@ -64,6 +65,12 @@ Cause
 
 The stop code indicates that executing code had an exception and the thread that was below it, is a system thread.
 
+The exception information returned in paramter one is listed in [NTSTATUS Values](https://msdn.microsoft.com/library/cc704588.aspx) and is also available in the ntstatus.h file located in the inc directory of the Windows Driver Kit. 
+
+One possible exception value is 0xC0000005: STATUS\_ACCESS\_VIOLATION 
+
+This means that a memory access violation occurred. 
+
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
 
 For more information see the following topics:
@@ -73,6 +80,7 @@ For more information see the following topics:
 [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
 
 [Using the !analyze Extension](using-the--analyze-extension.md) and [!analyze](-analyze.md)
+
 
 In the past, this error has been linked to excessive paged pool usage and may occur due to user-mode graphics drivers crossing over and passing bad data to the kernel code. If you suspect this is the case, use the pool options in driver verifier to gather additional information.
 

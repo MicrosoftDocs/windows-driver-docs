@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USBFN\_IO\_PROTOCOL.SetEndpointStallState
@@ -95,6 +96,5 @@ This function fails with **EFI\_INVALID\_PARAMETER** if the specified direction 
  
 
 
---------------------
 
 

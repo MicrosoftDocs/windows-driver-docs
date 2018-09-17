@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting ambient light sensors
@@ -30,31 +31,31 @@ Another point of difference between Windows 8 and Windows 7 is that the earlier
 
 The following pseudo code demonstrates the correct handling of possible types for SENSOR\_DATA\_TYPE\_LIGHT\_LEVEL\_LUX.
 
-```ManagedCPlusPlus
+```cpp
 SetLuxChangeSensitivity(PROPVARIANT var)
 {
     if (var.vt == VT_UNKNOWN)
     {
         CComPtr<IPortableDeviceValues> spValues;
         PROPVARIANT entry;
-        
+
         //
         // Var is a pointer to an IPortableDeviceValues
         // container. Cast and iterate through its entries.
         //
-        
+
         spValues = static_cast<IPortableDeviceValues*>(pVar->punkVal);
-        
+
         foreach entry in spValues
-        {         
+        {
             //
             // Note: omitting check for SENSOR_DATA_TYPE_LIGHT_LEVEL_LUX key
             //
-            
+
             if (entry.vt == VT_R4)
             {
                 //
-                // VT_R4 is the expected type for 
+                // VT_R4 is the expected type for
                 // SENSOR_DATA_TYPE_LIGHT_LEVEL_LUX.
                 // Reference entry.fltVal.
                 //
@@ -69,7 +70,7 @@ SetLuxChangeSensitivity(PROPVARIANT var)
             else
             {
                 //
-                // All other types are invalid. 
+                // All other types are invalid.
                 // Return an error accordingly.
                 //
             }
@@ -78,7 +79,7 @@ SetLuxChangeSensitivity(PROPVARIANT var)
     else if (var.vt == VT_UI4)
     {
         //
-        // Top level type of VT_UI4 is deprecated for 
+        // Top level type of VT_UI4 is deprecated for
         // SENSOR_PROPERTY_CHANGE_SENSITIVITY, but use it anyway.
         // Reference entry.ulVal.
         //
@@ -86,7 +87,7 @@ SetLuxChangeSensitivity(PROPVARIANT var)
     else
     {
         //
-        // All other types are invalid. 
+        // All other types are invalid.
         // Return an error accordingly.
         //
     }
@@ -94,9 +95,7 @@ SetLuxChangeSensitivity(PROPVARIANT var)
 ```
 
 ## Related topics
-[Sensor Driver Development Basics](sensor-driver-development-basics.md)  
+[Sensor Driver Development Basics](sensor-driver-development-basics.md)
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bsensors\sensors%5D:%20Supporting%20ambient%20light%20sensors%20%20RELEASE:%20%281/12/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

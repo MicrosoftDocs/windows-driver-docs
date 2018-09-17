@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Create a partner settings app
@@ -26,7 +27,7 @@ For example, in the **Devices** tab of the **Settings** app, the following pages
 
 ![Devices list in Settings app](images/devices-list-in-settings.png)
 
-You can find a list of all level two pages in the [Launch the Windows Settings app](https://msdn.microsoft.com/en-us/windows/uwp/launch-resume/launch-settings-app) topic. It is important to note that all links must relevant to the page they are placed on.
+You can find a list of all level two pages in the [Launch the Windows Settings app](https://msdn.microsoft.com/en-us/windows/uwp/launch-resume/launch-settings-app) topic. It is important to note that all links must be relevant to the page they are placed on.
 
 Additionally, you are able to add up to five search terms on each page, which must be relevant to the content on the page. For the best search experience, use specific phrases. Using general and one-word terms may cause your links to not appear in relevant searches.  
 
@@ -103,7 +104,6 @@ If your Control Panel application was written for Windows 7, Windows 8, or Win
 
 Similarly, if your legacy system settings app was written for Windows 8 or Windows 8.1, it will continue to work, but will not support any of the features of the Windows 10 system settings app. 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phPartAppDev\p_phPartAppDev%5D:%20Create%20a%20partner%20settings%20app%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

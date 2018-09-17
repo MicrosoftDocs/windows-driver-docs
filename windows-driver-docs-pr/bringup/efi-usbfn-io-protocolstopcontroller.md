@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USBFN\_IO\_PROTOCOL.StopController
@@ -79,6 +80,5 @@ This function is available starting in revision 0x00010001 of the **EFI\_USBFN\_
  
 
 
---------------------
 
 

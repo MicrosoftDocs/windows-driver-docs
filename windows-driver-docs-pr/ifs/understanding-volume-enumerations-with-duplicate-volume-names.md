@@ -14,6 +14,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Understanding Volume Enumerations with Duplicate Volume Names
@@ -56,6 +57,5 @@ Routines and structures affected by this topic include the following:
  
 
 
---------------------
 
 

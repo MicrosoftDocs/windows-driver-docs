@@ -13,12 +13,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Miniport Driver Plug and Play Event Notification Handling to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-miniport-driver-plug-and-play-event-notification-handling-"></a>
+
 
 
 In NDIS 6.0 miniport drivers, replace the NDIS 5.x [**MiniportPnPEventNotify**](https://msdn.microsoft.com/library/windows/hardware/ff550487) function with the [*MiniportDevicePnPEventNotify*](https://msdn.microsoft.com/library/windows/hardware/ff559369) function.

@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Network Driver Design Guide
 
 
-## <a href="" id="ddk-network-design-guide-ng"></a>
+
 
 
 This Network Driver Design Guide describes how to design and create network device drivers for Windows operating systems beginning with Windows Vista.
@@ -48,8 +48,7 @@ This guide includes the following sections:
 
 [Kernel Mode SDK Topics for Network Drivers](kernel-mode-sdk-topics-for-network-drivers.md)
 
-For information about network device drivers for Windows operating systems prior to Windows Vista, see [Windows 2000 and Windows XP Networking Design Guide](https://msdn.microsoft.com/library/windows/hardware/ff565849).
-
+[Previous Versions of Network Drivers](previous-versions-of-network-drivers.md)
  
 
  

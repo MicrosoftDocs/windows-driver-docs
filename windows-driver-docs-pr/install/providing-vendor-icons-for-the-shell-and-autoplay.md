@@ -17,12 +17,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Providing Vendor Icons for the Shell and AutoPlay
 
 
-## <a href="" id="ddk-providing-vendor-icons-for-the-shell-and-autoplay-dg"></a>
+
 
 
 [AutoPlay](http://go.microsoft.com/fwlink/p/?linkid=12031) is an extension of the Shell, and is supported by Microsoft Windows XP and later versions of Windows. AutoPlay detects different types of content, such as audio or video files, on removable media or removable devices. AutoPlay can display custom icons for content and devices, and it can automatically start an application to play or display content when the system detects a medium or device.
@@ -47,7 +48,7 @@ If a system-supplied driver handles your device, you do not have to supply a ful
 
 ### To create icons
 
--   Follow the MSDN guidelines that are provided at the Creating [Windows XP Icons](http://go.microsoft.com/fwlink/p/?linkid=6938) website. These guidelines describe how to create icons that have the appearance and behavior of Windows XP graphical elements.
+-   Follow the guidelines that are provided at the Creating [Windows XP Icons](http://go.microsoft.com/fwlink/p/?linkid=6938) website. These guidelines describe how to create icons that have the appearance and behavior of Windows XP graphical elements.
 
 ### To specify the icons in an INF file
 

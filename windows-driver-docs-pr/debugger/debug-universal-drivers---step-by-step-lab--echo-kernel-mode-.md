@@ -3,11 +3,12 @@ title: Debug Universal Drivers - Step-by-Step Lab (Echo Kernel Mode)
 description: This lab introduces the WinDbg kernel debugger. WinDbg is used to debug the echo kernel mode sample driver code.
 ms.assetid: 3FBC3693-4288-42BA-B1E8-84DC2A9AFFD9
 keywords: ["debug lab", "step-by-step", "ECHO"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
+ms.author: domars
+ms.date: 09/13/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # <span id="debugger.debug_universal_drivers_-_step_by_step_lab__echo_kernel-mode_"></span>Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)
@@ -32,6 +33,7 @@ In this lab, a live kernel debug connection is used to explore the following:
 -   Work with thread and process context
 
 **Note**  When working with the Windows debugger, there are two types of debugging that can be performed - user or kernel mode debugging.
+
 *User mode* - Applications and subsystems run on the computer in user mode. Processes that run in user mode do so within their own virtual address spaces. They are restricted from gaining direct access to many parts of the system, including system hardware, memory that was not allocated for their use, and other portions of the system that might compromise system integrity. Because processes that run in user mode are effectively isolated from the system and other user mode processes, they cannot interfere with these resources.
 
 *Kernel mode* - Kernel mode is the processor access mode in which the operating system and privileged programs run. Kernel mode code has permission to access any part of the system, and is not restricted like user mode code. It can gain access to any part of any other process running in either user mode or kernel mode. Much of the core OS functionality and many hardware device drivers run in kernel mode.
@@ -49,7 +51,7 @@ You will need the following hardware to be able to complete the lab.
 
 -   A laptop or desktop computer (host) running Windows 10
 -   A laptop or desktop computer (target) running Windows 10
--   A network cross over cable or a network hub and network cables to connect the two PCs
+-   A network hub/router and network cables to connect the two PCs
 -   Access to the internet to download symbol files
 
 You will need the following software to be able to complete the lab.
@@ -82,22 +84,20 @@ The PCs in this lab need to be configured to use an Ethernet network connection 
 
 This lab uses two PCs. Windows debugger runs on the *host* system and the KMDF Echo driver runs on the *target* system.
 
-The "&lt;-Host" on the left is connected using a cross over ethernet cable to the "-&gt;Target" on the right.
-
-The steps in the lab assume that you are using a cross over network cable, but the lab should also work if you can plug both the host and the target directly into a network hub.
+ Use a network hub/router and network cables to connect the two PCs.
 
 ![two pcs connected with a double arrow](images/debuglab-image-targethostdrawing1.png)
 
-To work with kernel mode applications and use WinDbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](https://msdn.microsoft.com/windows-drivers/develop/preparing_a_computer_for_manual_driver_deployment) and [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md).
+To work with kernel mode applications and use WinDbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](https://msdn.microsoft.com/windows-drivers/develop/preparing_a_computer_for_manual_driver_deployment) and [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
 
-### <span id="Configure__kernel_mode_debugging_using_a_crossover_ethernet_cable"></span><span id="configure__kernel_mode_debugging_using_a_crossover_ethernet_cable"></span><span id="CONFIGURE__KERNEL_MODE_DEBUGGING_USING_A_CROSSOVER_ETHERNET_CABLE"></span>Configure kernel–mode debugging using a crossover ethernet cable
+### <span id="Configure__kernel_mode_debugging_using_ethernet"></span><span id="configure__kernel_mode_debugging_using_ethernet"></span><span id="CONFIGURE__KERNEL_MODE_DEBUGGING_USING_ETHERNET"></span>Configure kernel–mode debugging using ethernet
 
 To enable kernel mode debugging on the target system, perform the following steps.
 
 **&lt;- On the host system**
 
 1. Open a command prompt on the host system and type **ipconfig** to determine its IP address.
-```
+```console
 C:\>ipconfig
 Windows IP Configuration
 Ethernet adapter Ethernet:
@@ -112,9 +112,9 @@ Ethernet adapter Ethernet:
 
 **-&gt; On the target system**
 
-3. Open a command prompt on the target system and use the **ping** command to confirm network connectivity between the two systems. Use the IP address of the host system you recorded instead of the one shown in the sample output.
+3. Open a command prompt on the target system and use the **ping** command to confirm network connectivity between the two systems. Use the actual IP address of the host system you recorded instead of 169.182.1.1 that is shown in the sample output.
 
-```
+```console
 C:\> ping 169.182.1.1
 
 Pinging 169.182.1.1 with 32 bytes of data:
@@ -131,26 +131,28 @@ Approximate round trip times in milli-seconds:
 
 Enable kernel mode debugging on the target system by completing the following steps.
 
+> [!IMPORTANT]
+> Before using BCDEdit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC.
+> Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.
+
 1. On the target computer, open a Command Prompt window as Administrator. Enter this command to enable debugging.
-```
-C:\> bcdedit /set {default} DEBUG YES
-```
+
+    C:\> bcdedit /set {default} DEBUG YES
 
 2. Type this command to enable test signing.
-```
-C:\> bcdedit /set TESTSIGNING ON 
-```
+
+    C:\> bcdedit /set TESTSIGNING ON 
+
 
 3. Type this command to set the IP address of the host system. Use the IP address of the host system that you recorded earlier, not the one shown.
-```
-C:\> bcdedit /dbgsettings net hostip:192.168.1.1 port:50000 key:1.2.3.4
-```
+    C:\> bcdedit /dbgsettings net hostip:192.168.1.1 port:50000 key:1.2.3.4
 
-**Warning**  To increase the security of the connection and decrease the risk of the random client debugger connection requests, consider using an auto generated random key. For more information, see [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md).
+
+**Warning**  To increase the security of the connection and decrease the risk of the random client debugger connection requests, consider using an auto generated random key. For more information, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
 
 4. Type this command to confirm that the dbgsettings they are set properly.
 
-```
+```console
 C:\> bcdedit /dbgsettings
 key                     1.2.3.4
 debugtype               NET
@@ -163,7 +165,7 @@ The operation completed successfully.
 **Note**  
 **Firewalls and debuggers**
 
-If you receive a pop-up message from the firewall, and you wish to use the debugger, unblock the types of networks that you desire.
+If you receive a pop-up message from the firewall, and you wish to use the debugger, uand you wish to use the debugger, check **all three** of the boxes.
 
 ![windows security alert - windows firewall has blocked some features of this app ](images/debuglab-image-firewall-dialog-box.png)
 
@@ -171,10 +173,18 @@ If you receive a pop-up message from the firewall, and you wish to use the debug
 
 **&lt;- On the host system**
 
-1. On the host computer, open a Command Prompt window as Administrator. Change to the WinDbg.exe directory. We will use the x64version of WinDbg.exe from the Windows Driver Kit (WDK) that was installed as part of the Windows kit installation.
+1. On the host computer, open a Command Prompt window as Administrator. We will use the x64 version of WinDbg.exe from the Windows Driver Kit (WDK) that was installed as part of the Windows kit installation. By default it is located here.
+
 ```
 C:\> Cd C:\Program Files(x86)\Windows Kits\10\Debuggers\x64 
 ```
+
+> [!NOTE]
+> This labs assumes that both PCs are running a 64 bit version of Windows on both the target and host. 
+> If that is not the case, the best approach is to run the same "bitness" of tools on the host that the target is running. 
+For example if the target is running 32 bit Windows, run a 32 version of the debugger on the host. 
+> For more information, see [Choosing the 32-Bit or 64-Bit Debugging Tools](choosing-a-32-bit-or-64-bit-debugger-package.md).
+> 
 
 2. Launch WinDbg with remote user debug using the following command. The value for the key and port match what we set earlier using BCDEdit on the target.
 ```
@@ -189,7 +199,29 @@ Reboot the target system.
 
 In a minute or two, debug output should be displayed on the host system.
 
-![windows debugger showing command window output from a live kernel connection](images/debuglab-image-winddbg-hh.png)
+```
+Microsoft (R) Windows Debugger Version 10.0.17074.1002 AMD64
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+Using NET for debugging
+Opened WinSock 2.0
+Waiting to reconnect...
+Connected to target 169.182.1.1 on port 50005 on local IP 169.182.1.2
+You can get the target MAC address by running .kdtargetmac command.
+Connected to Windows 10 16299 x64 target at (Wed Feb 28 17:16:23.051 2018 (UTC - 8:00)), ptr64 TRUE
+Kernel Debugger connection established.  (Initial Breakpoint requested)
+Symbol search path is: srv*
+Executable search path is: 
+Windows 10 Kernel Version 16299 MP (4 procs) Free x64
+Product: WinNt, suite: TerminalServer SingleUserTS
+Built by: 16299.15.amd64fre.rs3_release.170928-1534
+Machine Name:
+Kernel base = 0xfffff800`9540d000 PsLoadedModuleList = 0xfffff800`95774110
+Debug session time: Wed Feb 28 17:16:23.816 2018 (UTC - 8:00)
+System Uptime: 0 days 0:00:20.534
+
+
+```
 
 The Debugger Command window is the primary debugging information window in WinDbg. You can enter debugger commands and view the command output in this window.
 
@@ -197,7 +229,7 @@ The Debugger Command window is split into two panes. You type commands in the sm
 
 In the command entry pane, use the up arrow and down arrow keys to scroll through the command history. When a command appears, you can edit it or press **ENTER** to run the command.
 
-### <span id="KernelModeDebuggingCommandsAndTechniques"></span><span id="kernelmodedebuggingcommandsandtechniques"></span><span id="KERNELMODEDEBUGGINGCOMMANDSANDTECHNIQUES"></span>Section 2: Kernel mode debugging commands and techniques
+## <span id="KernelModeDebuggingCommandsAndTechniques"></span><span id="kernelmodedebuggingcommandsandtechniques"></span><span id="KERNELMODEDEBUGGINGCOMMANDSANDTECHNIQUES"></span>Section 2: Kernel mode debugging commands and techniques
 
 
 *In Section 2, you will use debug commands to display information about the target system.*
@@ -209,6 +241,9 @@ In the command entry pane, use the up arrow and down arrow keys to scroll throug
 Some debug commands display text using Debugger Markup Language that you can click on to quickly gather more information.
 
 1. Use Ctrl+Break (Scroll Lock) in WinDBg to break into the code running on the target system. It may take a bit of time for the target system to respond.
+
+![windows debugger showing command window output from a live kernel connection](images/debuglab-image-winddbg-hh.png)
+
 
 2. Type the following command to enable DML in the Debugger Command window.
 
@@ -291,7 +326,7 @@ Unable to enumerate user-mode unloaded modules, Win32 error 0n30
 
 8. Because we have yet to set the symbol path and loaded symbols, limited information is available in the debugger.
 
-### <span id="Download"></span><span id="download"></span><span id="DOWNLOAD"></span>Section 3: Download and build the KMDF universal echo driver
+## <span id="Download"></span><span id="download"></span><span id="DOWNLOAD"></span>Section 3: Download and build the KMDF universal echo driver
 
 *In Section 3, you will download and build the KMDF universal echo driver.*
 
@@ -343,13 +378,13 @@ To download and build the Echo sample audio driver, perform the following steps.
 
 4.  **Set the runtime library**
 
-    Set the runtime library - Change Runtime Library from DLL version to non DLL version. Without this setting, you have to install the MSVC runtime to the target computer separately.
+    Set the runtime library - Open the echo driver’s property page and locate **C/C++** &gt; **Code Generation**.  Change Runtime Library from DLL version to non DLL version. Without this setting, you have to install the MSVC runtime to the target computer separately.
 
     ![echo property page highlighting the runtime library setting](images/debuglab-image-echoapp-properties.png)
 
 5.  **Check driver signing**
 
-    Open the echo driver’s property page and make sure **Driver Signing** &gt; **Sign Mode** is set to “Test Sign”. This is required because Windows requires that drivers are signed.
+    Also on the driver’s properties make sure **Driver Signing** &gt; **Sign Mode** is set to “Test Sign”. This is required because Windows requires that drivers are signed.
 
     ![echo property page highlighting the sign mode setting](images/debuglab-image-echoapp-driver-signing.png)
 
@@ -365,28 +400,26 @@ To download and build the Echo sample audio driver, perform the following steps.
 
     Navigate to the folder that contains the built files for the Autosync driver:
 
-    *C:\\DriverSamples\\general\\echo\\kmdf\\driver\\AutoSync\\x64\\Debug*. The folder should contain these files:
+    *C:\\DriverSamples\\general\\echo\\kmdf\\driver\\AutoSync\\x64\\Debug*. 
+
+    The folder should contain these files:
 
     | File     | Description                                                                       |
     |----------|-----------------------------------------------------------------------------------|
     | Echo.sys | The driver file.                                                                  |
     | Echo.inf | An information (INF) file that contains information needed to install the driver. |
 
-     
-
     In addition, the echoapp.exe file was built and it should be located here: *C:\\DriverSamples\\general\\echo\\kmdf\\exe\\x64\\Debug*
 
     | File        | Description                                                                       |
     |-------------|-----------------------------------------------------------------------------------|
-    | EchoApp.exe | A command prompt executable test file that communicates with the echo.sys driver. |
-
-     
+    | EchoApp.exe | A command prompt executable test file that communicates with the echo.sys driver. |     
 
 8.  Locate a USB thumb drive or set up a network share to copy the built driver files and the test EchoApp from the host to the target system.
 
 In the next section, you will copy the code to the target system, and install and test the driver.
 
-### <span id="Install"></span><span id="install"></span><span id="INSTALL"></span>Section 4: Install the KMDF echo driver sample on the target system
+## <span id="Install"></span><span id="install"></span><span id="INSTALL"></span>Section 4: Install the KMDF echo driver sample on the target system
 
 *In Section 4, you will use devcon to install the echo sample driver.*
 
@@ -405,11 +438,18 @@ To install the driver on the target system, perform the following steps.
 Enable the ability to run test signed drivers:
 
 a. Open Windows Settings.
+
 b. In Update and Security, select **Recovery**.
+
 c. Under Advanced startup, click **Restart Now**.
-d. When the PC reboots, select **Startup options**.
+
+d. When the PC reboots, select **Startup options**. In Windows 10, select **Troubleshoot** > **Advanced options** > **Startup Settings** , then click Restart button. 
+
 e. Select Disable driver signature enforcement by pressing the **F7** key.
+
 f. Reboot the target computer.
+
+
 **&lt;- On the host system**
 
 Navigate to the Tools folder in your WDK installation and locate the DevCon tool. For example, look in the following folder:
@@ -419,7 +459,7 @@ Create a folder on the target for the built driver package (for example, *C:\\Ec
 
 Locate the .cer certificate on the host system, it is in the same folder on the host computer in the folder that contains the built driver files. On the target computer, right-click the certificate file, and click **Install**, then follow the prompts to install the test certificate.
 
-If you need more detailed instructions for setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](https://msdn.microsoft.com/windows-drivers/develop/preparing_a_computer_for_manual_driver_deployment).
+If you need more detailed instructions for setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](../develop/preparing-a-computer-for-manual-driver-deployment.md).
 
 **-&gt; On the target system**
 
@@ -441,7 +481,7 @@ A dialog box will appear indicating that the test driver is an unsigned driver. 
 
 ![windows security warning - windows can't verify the publisher of this driver software](images/debuglab-image-install-security-warning.png)
 
-For more detailed instructions, see [Configuring a Computer for Driver Deployment, Testing, and Debugging](http://msdn.microsoft.com/library/windows/hardware/hh698272.aspx).
+For more detailed instructions, see [Configuring a Computer for Driver Deployment, Testing, and Debugging](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
 
 After successfully installing the sample driver, you're now ready to test it.
 
@@ -467,7 +507,7 @@ Pattern Verified successfully
 Pattern Verified successfully
 ```
 
-### <span id="UseWinDbgToDisplayInformation"></span><span id="usewindbgtodisplayinformation"></span><span id="USEWINDBGTODISPLAYINFORMATION"></span>Section 5: Use WinDbg to display information about the driver
+## <span id="UseWinDbgToDisplayInformation"></span><span id="usewindbgtodisplayinformation"></span><span id="USEWINDBGTODISPLAYINFORMATION"></span>Section 5: Use WinDbg to display information about the driver
 
 *In Section 5, you will set the symbol path and use kernel debugger commands to display information about the KMDF echo sample driver.*
 
@@ -596,16 +636,31 @@ set ENABLE_OPTIMIZER=0
     Type the following to change the default debug bit mask so that all debug messages from the target system will be displayed in the debugger.
 
     ```
-    0: kd> !ed nt!Kd_DEFAULT_MASK  0xFFFFFFFF
+    0: kd> ed nt!Kd_DEFAULT_MASK  0xFFFFFFFF
     ```
 
     Some drivers will display additional information when the mask of 0xFFFFFFFF is used. Set the mask to 0x00000000 if you would like to reduce the amount of information that is displayed.
 
     ```
-    0: kd> !ed nt!Kd_DEFAULT_MASK  0x00000000
+    0: kd> ed nt!Kd_DEFAULT_MASK  0x00000000
     ```
+    
+    Use the dd command to display confirm the mask is set to display all of the debugger messages. 
 
-### <span id="DisplayingThePlugAndPlayDeviceTree"></span><span id="displayingtheplugandplaydevicetree"></span><span id="DISPLAYINGTHEPLUGANDPLAYDEVICETREE"></span>Section 6: Displaying Plug and Play device tree information
+    ```
+    0: kd> dd nt!kd_DEFAULT_MASK 
+    fffff802`bb4057c0  ffffffff 00000000 00000000 00000000
+    fffff802`bb4057d0  00000000 00000000 00000000 00000000
+    fffff802`bb4057e0  00000001 00000000 00000000 00000000
+    fffff802`bb4057f0  00000000 00000000 00000000 00000000
+    fffff802`bb405800  00000000 00000000 00000000 00000000
+    fffff802`bb405810  00000000 00000000 00000000 00000000
+    fffff802`bb405820  00000000 00000000 00000000 00000000
+    fffff802`bb405830  00000000 00000000 00000000 00000000
+    ```
+    
+
+## <span id="DisplayingThePlugAndPlayDeviceTree"></span><span id="displayingtheplugandplaydevicetree"></span><span id="DISPLAYINGTHEPLUGANDPLAYDEVICETREE"></span>Section 6: Displaying Plug and Play device tree information
 
 *In Section 6, you will display information about the echo sample device driver and where it lives in the Plug and Play device tree.*
 
@@ -687,11 +742,11 @@ This diagram shows a more complex device node tree.
 
 ![device node tree with about 20 nodes](images/debuglab-image-device-node-tree.png)
 
-**Note**  For more information about more complex driver stacks, see [Driver stacks](https://msdn.microsoft.com/library/windows/hardware/hh439632) and [Device nodes and device stacks](https://msdn.microsoft.com/library/windows/hardware/ff554721) on MSDN.
+**Note**  For more information about more complex driver stacks, see [Driver stacks](https://msdn.microsoft.com/library/windows/hardware/hh439632) and [Device nodes and device stacks](https://msdn.microsoft.com/library/windows/hardware/ff554721).
 
  
 
-### <span id="WorkingWithBreakpoints"></span><span id="workingwithbreakpoints"></span><span id="WORKINGWITHBREAKPOINTS"></span>Section 7: Working with breakpoints and source code
+## <span id="WorkingWithBreakpoints"></span><span id="workingwithbreakpoints"></span><span id="WORKINGWITHBREAKPOINTS"></span>Section 7: Working with breakpoints and source code
 
 *In Section 7, you will set breakpoints and single step through kernel mode source code.*
 
@@ -912,7 +967,7 @@ The following are the commands that you can use to step through your code (with 
 
 For more information, see [Source Code Debugging in WinDbg](source-window.md) in the debugging reference documentation.
 
-### <span id="ViewingVariables"></span><span id="viewingvariables"></span><span id="VIEWINGVARIABLES"></span>Section 8: Viewing variables and call stacks
+## <span id="ViewingVariables"></span><span id="viewingvariables"></span><span id="VIEWINGVARIABLES"></span>Section 8: Viewing variables and call stacks
 
 *In Section 8, you will display information about variables and call stacks.*
 
@@ -995,7 +1050,7 @@ To display the call stack, use the k\* commands.
 
 The call stack shows that the kernel (nt) called into Plug and Play code (PnP), that called driver framework code (WDF) that subsequently called the echo driver **DeviceAdd** function.
 
-### <span id="DisplayingProcessesAndThreads"></span><span id="displayingprocessesandthreads"></span><span id="DISPLAYINGPROCESSESANDTHREADS"></span>Section 9: Displaying processes and threads
+## <span id="DisplayingProcessesAndThreads"></span><span id="displayingprocessesandthreads"></span><span id="DISPLAYINGPROCESSESANDTHREADS"></span>Section 9: Displaying processes and threads
 
 ### <span id="Processes"></span><span id="processes"></span><span id="PROCESSES"></span>Processes
 
@@ -1133,7 +1188,7 @@ You can display or set process information by using the [**!process**](-process.
     TYPE mismatch for process object at 82a9acc0
     ```
 
-    The process object is now longer available, as the echoapp.exe process is no longer running.
+    The process object is no longer available, as the echoapp.exe process is no longer running.
 
 ### <span id="Threads"></span><span id="threads"></span><span id="THREADS"></span>Threads
 
@@ -1356,7 +1411,7 @@ The commands to view and set threads are very similar to those of processes. Use
     ```
     0: kd> k
       *** Stack trace for last set context - .thread/.cxr resets it
-# Child-SP          RetAddr           Call Site
+    # Child-SP          RetAddr           Call Site
     00 ffffd001`5551d7a0 fffff801`eed184fe nt!KiSwapContext+0x76 [d:\9142\minkernel\ntos\ke\amd64\ctxswap.asm @ 109]
     01 ffffd001`5551d8e0 fffff801`eed17f79 nt!KiSwapThread+0x14e [d:\9142\minkernel\ntos\ke\thredsup.c @ 6347]
     02 ffffd001`5551d980 fffff801`eecea340 nt!KiCommitThreadWait+0x129 [d:\9142\minkernel\ntos\ke\waitsup.c @ 619]
@@ -1367,7 +1422,7 @@ The commands to view and set threads are very similar to those of processes. Use
     Call stack elements such as **KiCommitThreadWait** indicate that this thread is not running as is expected.
 
 **Note**  
-For more information about threads and processes, see the following references on MSDN:
+For more information about threads and processes, see the following references:
 
 [Threads and Processes](threads-and-processes.md)
 
@@ -1375,7 +1430,7 @@ For more information about threads and processes, see the following references o
 
  
 
-### <span id="Section_10__IRQL__Registers_and_Ending_the_WinDbg_session"></span><span id="section_10__irql__registers_and_ending_the_windbg_session"></span><span id="SECTION_10__IRQL__REGISTERS_AND_ENDING_THE_WINDBG_SESSION"></span>Section 10: IRQL, Registers and Ending the WinDbg session
+## <span id="Section_10__IRQL__Registers_and_Ending_the_WinDbg_session"></span><span id="section_10__irql__registers_and_ending_the_windbg_session"></span><span id="SECTION_10__IRQL__REGISTERS_AND_ENDING_THE_WINDBG_SESSION"></span>Section 10: IRQL, Registers and Ending the WinDbg session
 
 ### <span id="IRQLRegistersMemory"></span><span id="irqlregistersmemory"></span><span id="IRQLREGISTERSMEMORY"></span>Viewing the saved IRQL
 
@@ -1430,7 +1485,7 @@ Be sure and use the **g** command to let the target computer run code, so that i
 
 For more information, see [Ending a Debugging Session in WinDbg](ending-a-debugging-session-in-windbg.md) in the debugging reference documentation.
 
-### <span id="WindowsDebuggingResources"></span><span id="windowsdebuggingresources"></span><span id="WINDOWSDEBUGGINGRESOURCES"></span>Section 11: Windows debugging resources
+## <span id="WindowsDebuggingResources"></span><span id="windowsdebuggingresources"></span><span id="WINDOWSDEBUGGINGRESOURCES"></span>Section 11: Windows debugging resources
 
 
 Additional information is available on Windows debugging. Note that some of these books will use older versions of Windows such as Windows Vista in their examples, but the concepts discussed are applicable to most versions of Windows.
@@ -1451,7 +1506,7 @@ The Defrag Tools Show WinDbg Episodes 13-29 <http://channel9.msdn.com/Shows/Defr
 
 OSR <https://www.osr.com/>
 
-### <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>Related topics
 
 
 [Standard Debugging Techniques](standard-debugging-techniques.md)
@@ -1464,7 +1519,6 @@ OSR <https://www.osr.com/>
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debug%20Universal%20Drivers%20-%20Step%20by%20Step%20Lab%20%28Echo%20Kernel-Mode%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -3,7 +3,7 @@ title: Bug Check 0x100000EA THREAD_STUCK_IN_DEVICE_DRIVER_M
 description: The THREAD_STUCK_IN_DEVICE_DRIVER_M bug check has a value of 0x100000EA. This indicates that a device driver thread is endlessly spinning.This has the same meaning/parameters as bug check 0xEA.
 ms.assetid: 0b46e836-0563-4fa9-be96-125caeab08d8
 keywords: ["Bug Check 0x100000EA THREAD_STUCK_IN_DEVICE_DRIVER_M", "THREAD_STUCK_IN_DEVICE_DRIVER_M"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -14,6 +14,7 @@ api_name:
 - THREAD_STUCK_IN_DEVICE_DRIVER_M
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x100000EA: THREAD\_STUCK\_IN\_DEVICE\_DRIVER\_M

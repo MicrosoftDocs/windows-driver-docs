@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Developing apps using multiple PDP contexts
@@ -471,9 +472,9 @@ The following sample XML file demonstrates how to use Windows provisioning metad
 <?xml version="1.0" encoding="utf-8"?>
 <CarrierProvisioning xmlns="http://www.microsoft.com/networking/CarrierControl/v1">
   <Global>
-    <!-- Adjust the Carrier ID to fit your own ID. Refer to the MSDN documentation about Carrier ID's. -->
+    <!-- Adjust the Carrier ID to fit your own ID. Refer to the documentation about Carrier ID's. -->
     <CarrierId>{11111111-1111-1111-1111-111111111111}</CarrierId>
-    <!-- Adjust the Susbscriber ID. Refer to the MSDN documentation about Subscriber ID's. -->
+    <!-- Adjust the Susbscriber ID. Refer to the documentation about Subscriber ID's. -->
     <SubscriberId>1234567890</SubscriberId>
   </Global>
   <Extensions>
@@ -486,7 +487,7 @@ The following sample XML file demonstrates how to use Windows provisioning metad
             <Context>
               <!-- Adjust the access string to your APN. -->
               <AccessString>Contoso.Contoso1</AccessString>
-              <!-- Adjust the UserLogonCred to fit your UserLogonCred. Refer to the MSDN documentation about UserLogonCred's. -->
+              <!-- Adjust the UserLogonCred to fit your UserLogonCred. Refer to the documentation about UserLogonCred's. -->
               <UserLogonCred>
                 <UserName>user1</UserName>
                 <Password>password1</Password>
@@ -504,7 +505,7 @@ The following sample XML file demonstrates how to use Windows provisioning metad
             <Context>
               <!-- Adjust the access string to your APN. -->
               <AccessString>Contoso.Contoso2</AccessString>
-              <!-- Adjust the UserLogonCred to fit your UserLogonCred. Refer to the MSDN documentation about UserLogonCred. -->
+              <!-- Adjust the UserLogonCred to fit your UserLogonCred. Refer to the documentation about UserLogonCred. -->
               <UserLogonCred>
                 <UserName>user2</UserName>
                 <Password>password2</Password>
@@ -596,7 +597,6 @@ Since this feature is operator specific, it is optional for mobile broadband dev
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Developing%20apps%20using%20multiple%20PDP%20contexts%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

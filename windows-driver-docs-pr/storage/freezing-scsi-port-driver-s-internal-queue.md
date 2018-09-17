@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Freezing SCSI Port Driver's Internal Queue
@@ -39,6 +40,5 @@ Higher-level drivers can force SCSI Port to unfreeze its queue using a SRB\_FUNC
  
 
 
---------------------
 
 

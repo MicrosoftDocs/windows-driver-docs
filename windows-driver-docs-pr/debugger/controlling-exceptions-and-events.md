@@ -3,11 +3,12 @@ title: Controlling Exceptions and Events
 description: Controlling Exceptions and Events
 ms.assetid: cc8067f3-07de-4ee2-b028-94f9ac088891
 keywords: ["exceptions", "exceptions, overview", "exceptions, handling", "events", "events, overview", "events, handling"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Controlling Exceptions and Events
@@ -466,7 +467,7 @@ You can change the break status of the following events. Because these events ar
 <td align="left"><p>Unload module</p>
 <p>If you specify <em>Module</em>, the break occurs when the module with this name, or at this base address, is unloaded. <em>Module</em> can specify the name or the address of the module. If the name is used, <em>Module</em> can be an exact name or include wildcard characters. If <em>Module</em> is an exact name, it is immediately resolved to a base address by using the current debugger module list and it is stored as an address. If <em>Module</em> contains wildcard characters, the pattern string is kept for later matching when unload events occur.</p>
 <p>Rarely, the debugger does not have name information for unload events and matches only by the base address. Therefore, if <em>Module</em> contains wildcard characters, the debugger cannot perform a name match in this particular unload case and breaks when any module is unloaded.</p>
-<p>The debugger remembers only the most recent <strong>ud</strong> setting. Separate settings for separate modules are not supported. Include a colon or a space between <strong>ld</strong> and <em>Module</em>.</p>
+<p>The debugger remembers only the most recent <strong>ud</strong> setting. Separate settings for separate modules are not supported. Include a colon or a space between <strong>ud</strong> and <em>Module</em>.</p>
 <p>If <em>Module</em> is omitted, the event is triggered when any module is loaded.</p></td>
 <td align="left"><p>Output</p></td>
 </tr>
@@ -498,7 +499,6 @@ You can change the break status of the following events. Because these events ar
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Controlling%20Exceptions%20and%20Events%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

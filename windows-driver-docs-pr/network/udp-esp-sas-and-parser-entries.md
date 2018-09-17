@@ -13,13 +13,14 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # UDP-ESP SAs and Parser Entries
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-udp-esp-sas-and-parser-entries-ng"></a>
+
 
 
 A miniport driver that supports UDP-ESP encapsulation must maintain a list of parser entries. A parser entry contains information that a NIC requires to parse incoming UDP-ESP packets on offloaded security associations (SAs).

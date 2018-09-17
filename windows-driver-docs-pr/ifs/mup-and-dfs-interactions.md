@@ -15,6 +15,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MUP and DFS Interactions
@@ -39,6 +40,5 @@ When a request to access the IPC$ share is sent to a system where the LAN Manage
  
 
 
---------------------
 
 

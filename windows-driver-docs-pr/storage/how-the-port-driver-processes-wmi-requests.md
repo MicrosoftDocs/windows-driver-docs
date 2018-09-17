@@ -12,6 +12,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How the Port Driver Processes WMI Requests
@@ -102,6 +103,5 @@ The following diagram illustrates the changes that a WMI request undergoes from 
  
 
 
---------------------
 
 

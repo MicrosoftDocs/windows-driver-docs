@@ -15,6 +15,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Network Redirectors and the File System Process
@@ -59,6 +60,5 @@ RDBSS only supports asynchronous calls for the **MrxLowIoSubmit** array of opera
  
 
 
---------------------
 
 

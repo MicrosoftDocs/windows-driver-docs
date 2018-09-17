@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Enhanced Run-time Reconfiguration Abilities
 
 
-## <a href="" id="ddk-enhanced-run-time-reconfiguration-abilities-ng"></a>
+
 
 
 NDIS 6.0 introduced the ability to pause and restart a driver stack without having to tear down the stack and build a new one. All NDIS 6.0 and later drivers must support pause and restart services.

@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sending an IOCTL\_ACPI\_ENUM\_CHILDREN Request
@@ -133,6 +134,5 @@ After the example code obtains the required size of the output buffer, it perfor
  
 
 
---------------------
 
 

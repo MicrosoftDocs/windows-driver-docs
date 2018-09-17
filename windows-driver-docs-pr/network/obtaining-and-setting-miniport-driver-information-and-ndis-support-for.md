@@ -12,12 +12,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Obtaining and Setting Miniport Driver Information and NDIS Support for WMI
 
 
-## <a href="" id="ddk-obtaining-and-setting-miniport-driver-information-and-ndis-support"></a>
+
 
 This section describes how upper layers and NDIS query and set miniport driver information, and how a miniport driver reports changes in hardware status to upper layers. This section also provides an overview of NDIS support for Microsoft Windows Management Instrumentation (WMI).
 

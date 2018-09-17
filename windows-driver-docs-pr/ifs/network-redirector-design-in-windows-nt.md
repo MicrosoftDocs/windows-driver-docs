@@ -12,6 +12,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Network Redirector Design in Windows NT
@@ -29,6 +30,5 @@ The architecture that implements a kernel-mode driver for network redirectors ha
  
 
 
---------------------
 
 

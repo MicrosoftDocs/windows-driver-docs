@@ -12,6 +12,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Other SRB\_FUNCTION\_XXX Requests
@@ -55,6 +56,5 @@ See [**SCSI\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardwa
  
 
 
---------------------
 
 

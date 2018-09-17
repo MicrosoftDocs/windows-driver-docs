@@ -8,17 +8,18 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Out-of-Process COM Objects for WIA Drivers
 
 
-## <a href="" id="ddk-out-of-process-com-objects-for-wia-drivers-si"></a>
+
 
 
 If a driver calls **CoCreatInstance** (described in the Microsoft Windows SDK documentation) on an out-of-process component, that call will fail unless the component has the appropriate permissions set to allow the driver access.
 
-Consult COM programming books or the MSDN documentation for detailed information about COM's security model. Following is a brief explanation.
+Consult COM programming books or the online documentation for detailed information about COM's security model. Following is a brief explanation.
 
 There are two kinds of permissions associated with out-of-process COM components:
 
@@ -39,7 +40,5 @@ A good practice is to store the launch and access permissions for your COM serve
  
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20Out-of-Process%20COM%20Objects%20for%20WIA%20Drivers%20%20RELEASE:%20%288/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

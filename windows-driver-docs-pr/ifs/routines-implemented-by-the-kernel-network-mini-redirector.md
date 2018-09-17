@@ -10,6 +10,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Routines Implemented by the Kernel Network Mini-Redirector
@@ -245,6 +246,5 @@ The following routines can be implemented by a network mini-redirector:
  
 
 
---------------------
 
 

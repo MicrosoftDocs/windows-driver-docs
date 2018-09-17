@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Firmware update status
@@ -67,6 +68,5 @@ The entry is a key with the Name equal to the GUID used to report the resource i
 [Device I/O from the UEFI environment](device-i-o-from-the-uefi-environment.md)  
 [Seamless crisis prevention and recovery](seamless-crisis-prevention-and-recovery.md)  
 
---------------------
 
 

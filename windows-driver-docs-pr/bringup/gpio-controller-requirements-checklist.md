@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # GPIO controller requirements checklist
@@ -15,7 +16,7 @@ ms.technology: windows-devices
 
 This topic summarizes the hardware, firmware, and software requirements for General Purpose IO (GPIO) controller devices that are exposed to Windows.
 
-## <a href="" id="hw"></a>GPIO controller hardware requirements
+## GPIO controller hardware requirements
 
 
 -   The GPIO controller is integrated into the SoC (not connected by an SPB bus).
@@ -34,7 +35,7 @@ This topic summarizes the hardware, firmware, and software requirements for Gene
 
     Required for both Emulated ActiveBoth and Debounce Emulation features.
 
-## <a href="" id="fw"></a>GPIO controller firmware requirements
+## GPIO controller firmware requirements
 
 
 -   GPIO controller \_CRS includes all resources for all pin banks in the controller.
@@ -44,7 +45,7 @@ This topic summarizes the hardware, firmware, and software requirements for Gene
 -   Implement \_REG methods for each GPIO controller and prevent use of GeneralPurposeIO OpRegions if \_REG indicates that the region handler is not available.
 -   Debounce timeout is included in the GPIOInt resource descriptor for any interrupt that requires debouncing.
 
-## <a href="" id="driver"></a>GPIO controller driver requirements
+## GPIO controller driver requirements
 
 
 -   Support version 2 of the interface between GpioClx and the GPIO controller driver:
@@ -60,6 +61,5 @@ This topic summarizes the hardware, firmware, and software requirements for Gene
  
 
 
---------------------
 
 

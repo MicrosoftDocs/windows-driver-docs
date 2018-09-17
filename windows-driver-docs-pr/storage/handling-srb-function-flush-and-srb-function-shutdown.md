@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling SRB\_FUNCTION\_FLUSH and SRB\_FUNCTION\_SHUTDOWN
@@ -36,6 +37,5 @@ If the HBA caches data internally, as indicated when [*HwScsiFindAdapter*](https
  
 
 
---------------------
 
 

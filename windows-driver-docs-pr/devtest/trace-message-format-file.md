@@ -12,6 +12,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Trace Message Format File
@@ -24,7 +25,7 @@ The *trace message format* (TMF) file is a structured text file that contains in
 
 Some tools that log and display formatted trace messages require a TMF file. [Tracefmt](tracefmt.md) and [TraceView](traceview.md), WDK tools that format and display trace messages, can use a TMF file or they can extract the formatting information directly from a PDB symbol file.
 
-TMF files are created automatically during the build process when the trace provider is specified in a [**place file**](place-file-syntax.md). By default, the TMF files are located in the TraceFormat subdirectory of your Symbol File path. However, you can specify the destination path in the %TRACE\_FORMAT\_SEARCH\_PATH% environment variable.
+You can create a TMF file by using [Tracefmt](https://docs.microsoft.com/windows-hardware/drivers/devtest/tracefmt) and including the **-i** parameter, which directs Tracefmt to create a TMF file for Tracedrv. For more info, see [Example 9: Creating a TMF file](https://docs.microsoft.com/windows-hardware/drivers/devtest/example-9--creating-a-tmf-file).
 
 If you do not have a TMF file for a [trace provider](trace-provider.md), use [Tracepdb](tracepdb.md). Tracepdb extracts the formatting instructions from the PDB symbol file and creates a TMF file to store them. Many application and driver developers prefer shipping a TMF file, rather than a PDB symbol file.
 
@@ -48,7 +49,6 @@ A TMF file contains the following data:
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Trace%20Message%20Format%20File%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

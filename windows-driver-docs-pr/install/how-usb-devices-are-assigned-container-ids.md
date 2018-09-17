@@ -3,10 +3,11 @@ title: How USB Devices are Assigned Container IDs
 description: How USB Devices are Assigned Container IDs
 ms.assetid: 769f9486-d179-44f0-9fd1-b3e737143ced
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How USB Devices are Assigned Container IDs
@@ -32,7 +33,7 @@ This heuristic follows these steps for each devnode that the Plug and Play (PnP)
 
     The Microsoft OS **ContainerID** descriptor is intended to be used in devices that support simultaneous connection of the device through multiple system buses. For example, a printer may support simultaneous USB and IP network connections by using Plug and Play Extensions (PnP-X). By using a single Microsoft OS **ContainerID** descriptor, the same container ID is reported on both transports. Therefore, the PnP manager determines that the devnodes enumerated by each bus are part of the same physical device.
 
-    For more information about the Microsoft OS **ContainerID** descriptor, see the [Microsoft OS Descriptors](http://go.microsoft.com/fwlink/p/?linkid=142397  ) white paper on the Microsoft Windows Hardware Developer Central (WHDC) website.
+    For more information about the Microsoft OS **ContainerID** descriptor, see the [Microsoft OS Descriptors](http://go.microsoft.com/fwlink/p/?linkid=142397).
 
 2.  If the USB device does not report a Microsoft OS **ContainerID** descriptor, the USB hub driver queries ACPI to determine whether the device is attached to an external-facing port.
 

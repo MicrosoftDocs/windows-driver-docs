@@ -14,12 +14,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting NDIS 5.x Drivers to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-ndis-5-x-drivers-to-ndis-6-0-nd"></a>
+
 
 
 This section describes what is required to port NDIS 5.*x* drivers to NDIS 6.0.

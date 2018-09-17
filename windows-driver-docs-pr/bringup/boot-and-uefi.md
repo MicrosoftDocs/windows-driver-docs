@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Boot and UEFI
@@ -112,6 +113,5 @@ The following steps describe this process in more detail:
 [Architecture of the UEFI battery charging application](architecture-of-the-uefi-battery-charging-application.md)  
 [UEFI in Windows](uefi-in-windows.md)  
 
---------------------
 
 

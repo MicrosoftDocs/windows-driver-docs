@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Boot screen components
@@ -142,6 +143,5 @@ The firmware update display capsule is modeled off of the Boot Graphics Resource
 ## Related topics
 [User experience for UEFI firmware updates](user-experience-for-uefi-firmware-updates.md)  
 
---------------------
 
 

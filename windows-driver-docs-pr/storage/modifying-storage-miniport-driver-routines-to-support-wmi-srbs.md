@@ -10,6 +10,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Modifying Storage Miniport Driver Routines to Support WMI SRBs
@@ -51,6 +52,5 @@ The [**HwScsiStartIo**](https://msdn.microsoft.com/library/windows/hardware/ff55
  
 
 
---------------------
 
 

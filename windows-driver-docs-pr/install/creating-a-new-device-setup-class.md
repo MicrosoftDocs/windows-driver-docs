@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating a New Device Setup Class
 
 
-## <a href="" id="ddk-creating-a-new-device-setup-class-dg"></a>
+
 
 
 You should only create a new device setup class if absolutely necessary. It is usually possible to assign your device to one of the [system-defined device setup classes](https://msdn.microsoft.com/library/windows/hardware/ff553419).

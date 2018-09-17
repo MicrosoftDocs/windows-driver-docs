@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # What Is a File System Filter Driver?
@@ -28,6 +29,5 @@ A file system filter driver can filter I/O operations for one or more file syste
  
 
 
---------------------
 
 

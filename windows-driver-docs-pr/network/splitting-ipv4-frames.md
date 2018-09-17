@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Splitting IPv4 Frames
 
 
-## <a href="" id="ddk-splitting-ipv4-frames-ng"></a>
+
 
 
 To support header-data split, a NIC must support splitting IPv4 Ethernet frames that have no IPv4 options. The NIC must be able to split such frames at the [beginning of upper-layer-protocol header](splitting-frames-at-the-beginning-of-the-upper-layer-protocol-headers.md).

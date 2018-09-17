@@ -15,6 +15,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Buffering State Control
@@ -95,6 +96,5 @@ RDBSS provides the following routines to manage buffering state that can be used
  
 
 
---------------------
 
 

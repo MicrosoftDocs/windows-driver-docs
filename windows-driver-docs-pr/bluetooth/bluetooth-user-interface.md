@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Bluetooth User Interface
@@ -51,7 +52,7 @@ If users want a persistent Bluetooth notification area icon, they can select the
 ## <span id="Can_vendors_add_tabs_to_the_Control_Panel_Bluetooth_Settings_application_"></span><span id="can_vendors_add_tabs_to_the_control_panel_bluetooth_settings_application_"></span><span id="CAN_VENDORS_ADD_TABS_TO_THE_CONTROL_PANEL_BLUETOOTH_SETTINGS_APPLICATION_"></span>Can vendors add tabs to the Control Panel Bluetooth Settings application?
 
 
-Yes, vendors can add tabs by implementing a shell property sheet handler for the application. For example, IHVs that implement extensions to the in-box Bluetooth stack can implement a property sheet handler that adds tabs for profiles such as file transfer, enhancements added to version 2.1 of the Bluetooth specification, and so on. For more information about how to implement property sheet handlers, see **“Creating Property Sheet Handlers” on the MSDN Web site**.
+Yes, vendors can add tabs by implementing a shell property sheet handler for the application. For example, IHVs that implement extensions to the in-box Bluetooth stack can implement a property sheet handler that adds tabs for profiles such as file transfer, enhancements added to version 2.1 of the Bluetooth specification, and so on. For more information about how to implement property sheet handlers, see [Property Sheet Handlers](https://msdn.microsoft.com/library/windows/desktop/cc144106).
 
 ## <span id="Why_does_Windows_7_and_Windows_Vista_display_a_dialog_box_when_a_Bluetooth_audio_device_is_initially_connected_"></span><span id="why_does_windows_7_and_windows_vista_display_a_dialog_box_when_a_bluetooth_audio_device_is_initially_connected_"></span><span id="WHY_DOES_WINDOWS_7_AND_WINDOWS_VISTA_DISPLAY_A_DIALOG_BOX_WHEN_A_BLUETOOTH_AUDIO_DEVICE_IS_INITIALLY_CONNECTED_"></span>Why does Windows 7 and Windows Vista display a dialog box when a Bluetooth audio device is initially connected?
 
@@ -66,7 +67,7 @@ Windows might not provide default support for headset (HSP), hands-free (HFP), o
 
 You can create a device metadata package for your Bluetooth device so that Devices and Printers displays device-specific information about your device, such as photorealistic icons and custom descriptions. This can significantly improve a user’s experience with your Bluetooth device. For example, you might want to more effectively expose all the features that your device supports. Certain device classes can also take advantage of Device Stage, which enables IHVs to further enhance the device experience by providing a customized and branded device-specific user interface.
 
-For more information about how to create a device metadata package for your device, see **“How to Create a Device Metadata Package for Devices and Printers” on the WHDC Web site**.
+For more information about how to create a device metadata package for your device, see [How to Create a Device Metadata Package for Devices and Printers](https://docs.microsoft.com/previous-versions/windows/hardware/metadata/).
 
 For more information about Device Stage, see **“Device Stage General Development Kit” on the MSDN Web site**.
 
@@ -78,7 +79,6 @@ For more information about Device Stage, see **“Device Stage General Developme
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[bltooth\bltooth]:%20Bluetooth%20User%20Interface%20%20RELEASE:%20%283/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

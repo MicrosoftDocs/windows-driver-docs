@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # <span id="storage.cd-rom_real-time_streaming_"></span>CD-ROM Real-Time Streaming
@@ -80,6 +81,5 @@ The MMC specification recommends that applications indicate the desirable read a
 [**MARK\_HANDLE\_INFO**](https://msdn.microsoft.com/library/windows/desktop/aa365229)  
 [**CDROM\_PERFORMANCE\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/gg441233)  
 
---------------------
 
 

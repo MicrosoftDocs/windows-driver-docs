@@ -3,7 +3,7 @@ title: Bug Check 0xA IRQL_NOT_LESS_OR_EQUAL
 description: The IRQL_NOT_LESS_OR_EQUAL bug check has a value of 0x0000000A.
 ms.assetid: a32b80f5-9822-41af-8668-836a70b05c0f
 keywords: ["Bug Check 0xA IRQL_NOT_LESS_OR_EQUAL", "IRQL_NOT_LESS_OR_EQUAL"]
-ms.author: windowsdriverdev
+ms.author: domars
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -14,6 +14,7 @@ api_name:
 - IRQL_NOT_LESS_OR_EQUAL
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xA: IRQL\_NOT\_LESS\_OR\_EQUAL

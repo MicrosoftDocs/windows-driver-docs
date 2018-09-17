@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # PCMCIA\_INTERFACE\_STANDARD Interface for Memory Cards
 
 
-## <a href="" id="ddk-pcmcia-interface-standard-interface-for-memory-cards-kg"></a>
+
 
 
 This section describes the PCMCIA\_INTERFACE\_STANDARD interface that Microsoft Windows 2000 and later operating systems provide for PCMCIA memory cards and linear flash memory cards:

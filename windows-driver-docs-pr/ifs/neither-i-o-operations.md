@@ -13,6 +13,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Neither I/O Operations
@@ -164,6 +165,5 @@ The FASTFAT file system protects against a broad range of failures, not simply i
  
 
 
---------------------
 
 

@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USBFN\_PORT\_TYPE
@@ -84,6 +85,5 @@ Refer to "Battery Charging Specification, Revision 1.1” on the [USB.org](http:
  
 
 
---------------------
 
 

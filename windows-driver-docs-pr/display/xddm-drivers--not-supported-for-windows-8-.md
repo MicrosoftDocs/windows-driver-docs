@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # XDDM drivers not supported for Windows 8
@@ -37,7 +38,7 @@ T*able 1 Driver Upgrade Experience in Windows 8* summarizes graphics driver migr
 
 In cases where the Windows 7 graphics driver itself is not migrated, any IHV or OEM value-add components from the Windows 7 graphics driver package, such as control panels and OpenGL support libraries, can persist after a Windows 8 upgrade installation. This happens because the Windows 8 installer cannot know that these value-add components are associated with the Windows 7 retail or OEM driver package. These value-add components might not function properly in the absence of the rest of their driver package.
 
-IHVs should harden these value-add components to simply exit in such cases. In the rare cases where the value-add causes problems, the specific value-add components can be blocked from migrating by the Microsoft compatibility team. In some cases, an IHVâ€™s Windows 8 in-box driver removes the value-add component on upgrade. This is up to the IHV.
+IHVs should harden these value-add components to simply exit in such cases. In the rare cases where the value-add causes problems, the specific value-add components can be blocked from migrating by the Microsoft compatibility team. In some cases, an IHV's Windows 8 in-box driver removes the value-add component on upgrade. This is up to the IHV.
 
 Some retail and OEM Windows 7 graphics drivers are intentionally structured to prevent their installation on Windows 8. Windows 8 might try to migrate such a driver according to the rules above, but it would fail to install on Windows 8, resulting in the use of the MSBDD.
 
@@ -47,7 +48,6 @@ An IHV can create a unified driver package that is a WDDM 1.2 driver on Windows 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20XDDM%20drivers%20%20not%20supported%20for%20Windows%208%20%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

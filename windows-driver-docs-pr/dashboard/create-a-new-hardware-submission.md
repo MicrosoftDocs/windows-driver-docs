@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Create a new hardware submission
@@ -17,25 +18,25 @@ To prepare your hardware for the Windows Hardware Compatibility Program for Wind
 ## <span id="To_create_a_submission_file"></span><span id="to_create_a_submission_file"></span><span id="TO_CREATE_A_SUBMISSION_FILE"></span>To create a submission file
 
 
-For information about creating and digitally signing an **.hlkx** file, see the [Windows HLK Getting Started Guide](https://msdn.microsoft.com/library/windows/hardware/dn915002.aspx).
+For information about creating and digitally signing an **.hlkx** file, see the [Windows HLK Getting Started Guide](https://docs.microsoft.com/en-us/previous-versions/windows/hardware/hck/jj123537(v=vs.85)).
 
 For information about creating and digitally signing an **.hckx** file, see the [Windows HCK Getting Started Guide](http://go.microsoft.com/fwlink/p/?LinkId=248436).
 
 ## <span id="To_submit_a_file"></span><span id="to_submit_a_file"></span><span id="TO_SUBMIT_A_FILE"></span>To submit a file
 
 
-1.  Sign in to the Windows Hardware Dev Center dashboard, and then select **Create new driver**. This loads the submission creation wizard.
+1.  Sign in to the Windows Hardware Dev Center dashboard, and then select **Submit new hardware**. This loads the submission creation wizard.
 
 2.  In the **Packages and signing properties** section, choose a name for your driver submission. This name can be used to search for and organize your driver submissions. Note: If you share your driver with another company, they will see this name.
 
 3.  Either drag and drop, or browse to the **.hlkx/.hckx** file that you want to submit. The file will begin to upload.
     ![screenshot that shows the driver name field](images/drivers-name.png)
 
-4. If you wish to test a driver prior to release, you can select the checkbox labled "perform test-signing only". Test-signed drivers are similar to drivers signed for public release, but do not require HLK testing. They are also not distributed through Windows Update, but can be downloaded from the hardware submission site. For more information about test-signing driver packages, see [WHQL Test Signature Program](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/whql-test-signature-program) and [How to test-sign a driver package](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/how-to-test-sign-a-driver-package).  
+4. If you wish to test a driver prior to release, you can select the checkbox labled "Perform test-signing for Win10 and above" OR "Perform test-signing for OS below Win10 (legacy)". Test-signed drivers are similar to drivers signed for public release, but do not require HLK testing. They are also not distributed through Windows Update, but can be downloaded from the hardware submission site. They can be installed on test machines only. For more information about test-signing driver packages, see [WHQL Test Signature Program](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/whql-test-signature-program) and [How to test-sign a driver package](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/how-to-test-sign-a-driver-package).
 
-5.  Select any applicable additional certifications if available. This option allows you to specify which downlevel operating system signatures should be included with your driver. Available certifications vary depending on your driver submission package, so there may not be any certifications listed. **Note** If you are signing a driver package for a single architecture, only include logs for the intended architecture. For example, to sign for x64 only, submit only the x64 logs.
+5. If you wish to flight sign a driver prior to release, you can select the checkbox labled "Perform flight signing only". Flight signed drivers are signed with Microsoft Developer Test certificate used and trusted by all “Insider” builds. Retail systems do NOT have this certificate. Drivers that are Flight signed can only be installed on *Windows 10 Insider Builds*. This means it will not be offered or installable on RETAIL builds of Windows 10. Flight signed drivers work with “Secure Boot” enabled. Flight signing is only applicable to Windows 10 RS2 and above and will not work on lower versions of Windows. _this feature is currently being rolled out gradually and might not yet be visible to everyone. If you do not yet see it, please wait and you will see it in a few more weeks._
 
-6.  Select **Finalize**. You will not be able to select the **Finalize** button until your file upload is complete. Note: Your signature properties and name cannot be changed after you click **Finalize**.
+6.  Select Request Signatures as applicable. This option allows you to specify which operating system signatures (including allowable downlevel operating systems) should be included with your driver. Available certifications vary depending on your driver submission package, so there may not be any certifications listed. **Note** If you are signing a driver package for a single architecture, only include logs for the intended architecture. For example, to sign for x64 only, submit only the x64 logs.
 
     ![screenshot that shows possible certifications for a driver submission, and the finalize button](images/additionalcertifications.png)
 
@@ -53,10 +54,6 @@ For information about creating and digitally signing an **.hckx** file, see the 
     </tr>
     </thead>
     <tbody>
-    <tr class="odd">
-    <td><p>Is your driver Universal?</p></td>
-    <td><p>Indicate whether or not your driver meets the Universal Windows Platform requirements. For more information, see [Getting Started with Universal Windows drivers](https://msdn.microsoft.com/windows/hardware/drivers/develop/getting-started-with-universal-drivers).</p></td>
-    </tr>
     <tr class="even">
     <td><p>Device type</p></td>
     <td><p>Indicate if your device is:</p>
@@ -103,9 +100,3 @@ For information about creating and digitally signing an **.hckx** file, see the 
    *  [Managing hardware submissions in the Windows Hardware Dev Center dashboard](manage-your-hardware-submissions.md)
    *  [Get drivers signed by Microsoft for multiple Windows versions](get-drivers-signed-by-microsoft-for-multiple-windows-versions.md)
    *  [Driver flighting](driver-flighting.md)
-
- 
-
- 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhw_dashboard\hw_dashboard%5D:%20Create%20a%20new%20hardware%20submission%20%20RELEASE:%20%281/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")

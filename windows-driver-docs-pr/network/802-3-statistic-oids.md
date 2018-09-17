@@ -7,12 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # 802.3 Statistic OIDs
 
 
-## <a href="" id="ddk-statistic-oids-ng"></a>
+
 
 
 The following table lists the 802.3 statistic OIDs for Remote NDIS Ethernet devices.

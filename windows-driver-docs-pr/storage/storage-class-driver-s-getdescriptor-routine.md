@@ -10,6 +10,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Class Driver's GetDescriptor Routine
@@ -47,6 +48,5 @@ The class driver should store this information in the FDO's device extension so 
  
 
 
---------------------
 
 

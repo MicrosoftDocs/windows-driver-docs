@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Connection IDs for SPB-Connected Peripheral Devices
@@ -15,7 +16,7 @@ ms.technology: windows-devices
 
 Before a driver can send I/O requests to a peripheral device on a [simple peripheral bus](https://msdn.microsoft.com/library/windows/hardware/hh450903) (SPB), the driver must open a logical connection to the device. Through this connection, the driver can send read and write requests to transfer data to and from the device. Additionally, the driver can send I/O control (IOCTL) requests to the device to perform SPB-specific operations.
 
-## <a href="" id="connection-ids-sbp-peripheral-devices"></a>
+
 
 
 At system startup, the Plug and Play (PnP) manager enumerates both PnP devices and non-PnP devices. For a non-PnP peripheral device that has a fixed connection to an SPB, the PnP manager queries the hardware platform's ACPI firmware to obtain a set of connection parameters that describe how to access the device. These connection parameters identify the SPB controller for the bus to which the device is connected, and include other information, such as the bus address and bus clock frequency, that the controller requires to communicate with the device.
@@ -48,6 +49,5 @@ Only one driver can hold an open logical connection to an SPB-connected peripher
  
 
 
---------------------
 
 

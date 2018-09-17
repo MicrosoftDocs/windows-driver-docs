@@ -10,12 +10,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Miniport Driver Reset and Halt Functions
 
 
-## <a href="" id="ddk-reset-halt-and-shutdown-functions-ng"></a>
+
 
 
 This section describes an NDIS miniport driver's reset and halt functions. These functions are described in the following topics:
