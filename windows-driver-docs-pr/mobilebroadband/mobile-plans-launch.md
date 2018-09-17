@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # Mobile Plans launch
 
+[!include[Mobile Plans Beta Prerelease](../mobile-plans-beta-prerelease.md)]
+
 This section describes the work needed to successfully launch Mobile Plans with your mobile operator, including Web service API monitoring, running an end-to-end scenario, and the review escalation process.
 
 ## Before launch

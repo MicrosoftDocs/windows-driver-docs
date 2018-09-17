@@ -15,8 +15,6 @@ ms.localizationpriority: medium
 
 Use the docs in this section to help you learn about the different mobile operator scenarios.
 
--   [Mobile Plans](mobile-plans.md)
-
 -   [Creating and configuring Internet Sharing experiences](creating-and-configuring-internet-sharing-experiences.md)
 
 -   [Developing apps using multiple PDP contexts](developing-apps-using-multiple-pdp-contexts.md)

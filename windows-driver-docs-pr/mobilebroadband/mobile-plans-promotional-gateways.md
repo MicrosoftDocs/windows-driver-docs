@@ -12,3 +12,5 @@ ms.technology: windows-devices
 ---
 
 # Mobile Plans promotional gateways
+
+[!include[Mobile Plans Beta Prerelease](../mobile-plans-beta-prerelease.md)]

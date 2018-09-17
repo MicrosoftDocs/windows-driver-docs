@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # Mobile Plans implementation
 
+[!include[Mobile Plans Beta Prerelease](../mobile-plans-beta-prerelease.md)]
+
 This topic describes MO Direct portal design policies and guidance to work with Mobile Plans, as well as the work needed to implement the Web service API that will host your experiences in the Mobile Plans app.
 
 ## MO web portal

@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # Mobile Plans
 
+[!include[Mobile Plans Beta Prerelease](../mobile-plans-beta-prerelease.md)]
+
 ## Introduction
 
 Mobile Plans is the program in Windows 10, version 1803 and later that enables mobile operators (MOs) and other service providers to sell plans to end users. Mobile Plans is a new name for the previous Data Marketplace program and is not a separate or competing program.

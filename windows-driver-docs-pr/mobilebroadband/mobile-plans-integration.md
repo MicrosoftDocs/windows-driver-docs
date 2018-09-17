@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # Mobile Plans integration
 
+[!include[Mobile Plans Beta Prerelease](../mobile-plans-beta-prerelease.md)]
+
 This topic details the work that is needed to integrate the mobile operator backend and Microsoft systems together to enable Mobile Plans. Once this is complete, the integration will be at the ready-for-production checkpoint.
 
 ## Mobile operator integration into Microsoft environment

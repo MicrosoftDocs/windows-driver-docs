@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # Mobile Plans prepaid experience
 
+[!include[Mobile Plans Beta Prerelease](../mobile-plans-beta-prerelease.md)]
+
 Enabling support for an enhanced prepaid experience is optional for mobile operators who onboard with Mobile Plans. This topic describes incremental changes to the primary postpaid experience described in the other topics in this section, focusing on the differences needed to light up the prepaid scenario. 
 
 ## Overview

@@ -13,6 +13,8 @@ ms.technology: windows-devices
 
 # Mobile Plans configuration
 
+[!include[Mobile Plans Beta Prerelease](../mobile-plans-beta-prerelease.md)]
+
 This topic describes how to build a foundation on Windows connected devices that support Mobile Plans. It details how to configure your eSIM profiles to ensure the best consumer experience, as well as how to provide service configuration information that ensures that the Mobile Plans experience is properly rendered on Windows devices.
 
 ## eSIM profile configuration requirements
