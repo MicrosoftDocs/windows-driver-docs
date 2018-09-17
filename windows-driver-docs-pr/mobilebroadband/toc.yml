@@ -324,20 +324,14 @@
 - name: "Mobile operator scenarios"
   href: mobile-operator-scenarios-b-mb.md
   items: 
-  - name: DYNAMO
-    href: dynamo.md
-  - name: Configuration
-    href: dynamo-configuration.md
-  - name: Implementation
-    href: dynamo-implementation.md
-  - name: Integration
-    href: dynamo-integration.md
-  - name: Launch
-    href: dynamo-launch.md
-  - name: Prepaid
-    href: xperience](dynamo-prepaid-experience.md
-  - name: Appendix
-    href: dynamo-appendix.md
+  - name: Mobile Plans
+    items:
+    - name: "Promotional content"
+      items:
+      - name: "Promotional gateways"
+        href: mobile-plans-promotional-gateways.md
+      - name: "Promotional toast notifications"
+        href: mobile-plans-promotional-toast-notifications.md
   - name: "Creating and configuring Internet Sharing experiences"
     href: creating-and-configuring-internet-sharing-experiences.md
   - name: "Developing apps using multiple PDP contexts"

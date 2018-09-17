@@ -1,17 +1,17 @@
 ---
-title: DYNAMO appendix
-description: This topic describes appendix information for the DYNAMO program.
+title: Mobile Plans appendix
+description: This topic describes appendix information for the Mobile Plans program.
 ms.assetid: B3B478DB-78F4-4031-B041-DCBAACC15D6F
 keywords:
-- Windows DYNAMO appendix, DYNAMO appendix mobile operators
+- Windows Mobile Plans appendix, Mobile Plans appendix mobile operators
 ms.author: windowsdriverdev
-ms.date: 01/04/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# DYNAMO appendix
+# Mobile Plans appendix
 
 ## Web portal flow and reference design
 
@@ -100,15 +100,15 @@ When there are any unhandled errors or exceptions on the MO Direct portal that c
 
 <img src="images/dynamo_appendix_mo_direct_10_error.png" alt="MO Direct walkthrough: error example" title="MO Direct walkthrough: error example" width="600" />
 
-## DYNAMO user journey
+## Mobile Plans user journey
 
-The following diagram shows the journey when a user is attaching an eSIM-capable Windows Connected device to a mobile operator that participates in the DYNAMO program.
+The following diagram shows the journey when a user is attaching an eSIM-capable Windows Connected device to a mobile operator that participates in the Mobile Plans program.
 
-<img src="images/dynamo_appendix_user_journey.png" alt="DYNAMO user journey" title="DYNAMO user journey" width="400" />
+<img src="images/dynamo_appendix_user_journey.png" alt="Mobile Plans user journey" title="Mobile Plans user journey" width="400" />
 
 ## High-level integration schedule
 
-The following table provides a high-level overview of the DYNAMO project integration schedule.
+The following table provides a high-level overview of the Mobile Plans project integration schedule.
 
 | Phase | Activities | Owner | Time estimate |
 | --- | --- | --- | --- |
@@ -138,6 +138,3 @@ The following table provides a high-level overview of the DYNAMO project integra
 | Launch | Configure full SIM range with MO API production endpoint in DM production environment | MS | up to 1 week |
 | Launch | Release review- launch readiness | MS | 2 days |
 | Launch | Launch | MO & MS | N/A |
-
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Mobile%20operator%20scenarios%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")

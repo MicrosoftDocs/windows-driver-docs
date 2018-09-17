@@ -1,29 +1,29 @@
 ---
-title: DYNAMO implementation
-description: This topic describes the implementation step for the DYNAMO program.
+title: Mobile Plans implementation
+description: This topic describes the implementation step for the Mobile Plans program.
 ms.assetid: 283E45EF-D421-429B-A9AF-BED64BB670B0
 keywords:
-- Windows DYNAMO implementation, DYNAMO implementation mobile operators
+- Windows Mobile Plans implementation, Mobile Plans implementation mobile operators
 ms.author: windowsdriverdev
-ms.date: 01/04/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# DYNAMO implementation
+# Mobile Plans implementation
 
-This topic describes MO Direct portal design policies and guidance to work with DYNAMO, as well as the work needed to implement the Web service API that will host your experiences in the Mobile Plans app.
+This topic describes MO Direct portal design policies and guidance to work with Mobile Plans, as well as the work needed to implement the Web service API that will host your experiences in the Mobile Plans app.
 
 ## MO web portal
 
 The MO Direct web portal allows mobile operators to provide connectivity solutions directly to Windows users through a curated web experience hosted in the Mobile Plans app. You need to create your web experiences following design policies and implement the web service API to make it reachable. 
 
-For more info about Web portal flow and reference design, see [Web portal flow and reference design](dynamo-appendix.md#web-portal-flow-and-reference-design).
+For more info about Web portal flow and reference design, see [Web portal flow and reference design](mobile-plans-appendix.md#web-portal-flow-and-reference-design).
 
 ### Web Service API hosting MO Direct web portal 
 
-The Mobile Plans app will use the [WebView](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.WebView) control to host the MO Direct experience. The app only trusts content returned by the DYNAMO service.
+The Mobile Plans app will use the [WebView](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.WebView) control to host the MO Direct experience. The app only trusts content returned by the Mobile Plans service.
 
 When starting the WebView, the *EID*, *market*, and previous *ICCID* are passed if available. The following example shows these three launch parameters for eSIM.
 
@@ -47,7 +47,7 @@ The next example shows the launch parameters for a physical SIM: *iccid*, *marke
 MyWebView.Navigate(“https://moportal.com? iccid=8988247000100003319&market=us&transactionId=waoigFfX00yGH3Vb.1&location=us”);
 ```
 
-The Web Service API must disregard any additional parameters it might receive from Mobile Plans app. This provides flexibility for introducing new features without breaking the DYNAMO experience. If new parameters are implemented, partners will be informed of new parameters in advance.
+The Web Service API must disregard any additional parameters it might receive from Mobile Plans app. This provides flexibility for introducing new features without breaking the Mobile Plans experience. If new parameters are implemented, partners will be informed of new parameters in advance.
 
 The following table describes the launch parameters available for eSIM and physical SIMs.
 
@@ -140,7 +140,7 @@ The MO Portal URI from which the notification is sent must be in the secure http
 
 ### Web portal design policies
 
-To ensure the best user experience on Windows, you should adhere to the policies in this section when developing the MO Direct experience. These policies are supplementary to the terms and conditions of the DYNAMO Partner Addendum, [Windows App Developer Agreement](https://msdn.microsoft.com/library/windows/apps/hh694058) and [Microsoft Store Policies](https://msdn.microsoft.com/library/windows/apps/dn764944).
+To ensure the best user experience on Windows, you should adhere to the policies in this section when developing the MO Direct experience. These policies are supplementary to the terms and conditions of the Mobile Plans Partner Addendum, [Windows App Developer Agreement](https://msdn.microsoft.com/library/windows/apps/hh694058) and [Microsoft Store Policies](https://msdn.microsoft.com/library/windows/apps/dn764944).
 
 #### Business functions
 
@@ -190,7 +190,7 @@ To ensure the best user experience on Windows, you should adhere to the policies
 | Load times and data consumption for loading the MO Direct experience should be optimized. | Required |
 | The MO Direct experience should be simple and easy navigate with necessary on-screen guidelines.  | Required |
 | UI elements on the MO Direct portal should provide a cohesive experience integrated with the Mobile Plans app, not confusing users or reminding the users that this is an embedded web control. For example, there should be no close/max/min button within the MO Direct portal. | Required |
-| Layout of web pages in the MO Direct portal should be clean and easy to navigate. Users can navigate backward and forward through web pages in the MO Direct portal with UI elements within MO Direct experience. For more info, see [Web portal flow and reference design](dynamo-appendix.md#web-portal-flow-and-reference-design). | Required |
+| Layout of web pages in the MO Direct portal should be clean and easy to navigate. Users can navigate backward and forward through web pages in the MO Direct portal with UI elements within MO Direct experience. For more info, see [Web portal flow and reference design](mobile-plans-appendix.md#web-portal-flow-and-reference-design). | Required |
 | The MO Direct portal must be functional within the Web Control frame and, once invoked, it must not interfere with users’ interaction with the Mobile Plans app at any time. | Required |
 | The MO Direct portal must not be cluttered with too many images, banners, lengthy text, external links, etc. | Required |
 | An on-screen cancel button within the MO Direct experience should be available for users to exit the flow when applicable. | Recommended |
@@ -200,7 +200,7 @@ To ensure the best user experience on Windows, you should adhere to the policies
 
 | Policy | Requird or Recommended |
 | --- | --- |
-| The MO Direct portal should be able to receive and understand users’ locale setting passed by the DYNAMO service to display content in the proper language. | Required |
+| The MO Direct portal should be able to receive and understand users’ locale setting passed by the Mobile Plans service to display content in the proper language. | Required |
 | Mobile operators may localize the MO Direct portal in the languages they want to support. | Recommended |
 | The experience provided by the MO Direct portal should be reasonably similar in all languages that it supports, although data plan availability can vary from region to region. | Recommended |
 
@@ -209,6 +209,3 @@ To ensure the best user experience on Windows, you should adhere to the policies
 | Policy | Requird or Recommended |
 | --- | --- |
 | The MO Direct portal should provide accessibility to disabled users and adhere to the accessibility guidelines applicable in the jurisdictions where the mobile operator implements and enables the MO Direct experience. | Recommended |
-
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Mobile%20operator%20scenarios%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")

@@ -1,19 +1,19 @@
 ---
-title: DYNAMO prepaid experience
-description: This topic describes the optional prepaid experience for the DYNAMO program.
+title: Mobile Plans prepaid experience
+description: This topic describes the optional prepaid experience for the Mobile Plans program.
 ms.assetid: 908AB4DE-A4C8-4758-9632-F7F7381FF737
 keywords:
-- Windows DYNAMO prepaid experience, DYNAMO prepaid experience mobile operators
+- Windows Mobile Plans prepaid experience, Mobile Plans prepaid experience mobile operators
 ms.author: windowsdriverdev
-ms.date: 01/04/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# DYNAMO prepaid experience
+# Mobile Plans prepaid experience
 
-Enabling support for an enhanced prepaid experience is optional for mobile operators who onboard with DYNAMO. This topic describes incremental changes to the primary postpaid experience described in the other topics in this section, focusing on the differences needed to light up the prepaid scenario. 
+Enabling support for an enhanced prepaid experience is optional for mobile operators who onboard with Mobile Plans. This topic describes incremental changes to the primary postpaid experience described in the other topics in this section, focusing on the differences needed to light up the prepaid scenario. 
 
 ## Overview
 
@@ -33,7 +33,7 @@ To implement prepaid, follow these steps:
 
 ## Update Windows COSA database
 
-To ensure that the DYNAMO experience is properly shown in the Windows Connections Manager, also known as the network flyout, you first need to update the Windows COSA database.
+To ensure that the Mobile Plans experience is properly shown in the Windows Connections Manager, also known as the network flyout, you first need to update the Windows COSA database.
 
 > [!TIP]
 > Updating COSA on Windows devices takes a considerable amount of time and might become a project constraint, so you should submit this request as early as possible.
@@ -54,7 +54,7 @@ For information on the COSA database submission process, see [Planning your desk
 
 ### COSA database settings details
 
-This section explains which settings in COSA are required for DYNAMO onboarding and which are recommended.
+This section explains which settings in COSA are required for Mobile Plans onboarding and which are recommended.
 
 For more info about all supported fields, see the Desktop COSA-only settings on [Desktop COSA/APN database settings](desktop-cosa-apn-database-settings.md).
 
@@ -79,13 +79,13 @@ The following image shows an example MO with branding in the network flyout:
 
 ## Get Balance API
 
-The Get Balance API queries current subscription status, controls whether the DYNAMO experience is available on the device, and shows remaining data and time in the network flyout for prepaid subscriptions. The following diagram shows the high-level flow for the Get Balance API. 
+The Get Balance API queries current subscription status, controls whether the Mobile Plans experience is available on the device, and shows remaining data and time in the network flyout for prepaid subscriptions. The following diagram shows the high-level flow for the Get Balance API. 
 
 <img src="images/dynamo_prepaid_get_balance_api_flow.png" alt="Get Balance API flow" title="Get Balance API flow" width="600" />
 
 ### Resource model
 
-Communication between the DYNAMO service and the MO service involves manipulating the resources in the following diagram. Explanations for each resource are in the tables following the diagram.
+Communication between the Mobile Plans service and the MO service involves manipulating the resources in the following diagram. Explanations for each resource are in the tables following the diagram.
 
 <img src="images/dynamo_prepaid_get_balance_api_resource_model.png" alt="Get Balance API resource model diagram" title="Get Balance API resource model diagram" width="600" />
 
@@ -104,18 +104,18 @@ Communication between the DYNAMO service and the MO service involves manipulatin
 
 | JSON property | Type | Description |
 | --- | --- | --- |
-| Type | Enum | Possible values: <ul><li>MODIRECT: Indicates if the user balance is MO Direct.</li><li>MODIRECTPAYG: Indicates if the user balance is MO Direct PAYG.</li><li>NONE: Indicates the user has no balance. When the remaining balance is 0 but the plan has not expired, we expect to receive "NONE" so that the user can purchase data plans.</li><li>NOTSUPPORTED: Indicates the SIM is not supported by the DYNAMO experience. "NOTSUPPORTED" is used when the SIM should not be in the DYNAMO supported range. We will turn off the DYNAMO experience in the network flyout and return a generic error message in the Mobile Plans app when we receive this type.</li></ul> |
+| Type | Enum | Possible values: <ul><li>MODIRECT: Indicates if the user balance is MO Direct.</li><li>MODIRECTPAYG: Indicates if the user balance is MO Direct PAYG.</li><li>NONE: Indicates the user has no balance. When the remaining balance is 0 but the plan has not expired, we expect to receive "NONE" so that the user can purchase data plans.</li><li>NOTSUPPORTED: Indicates the SIM is not supported by the Mobile Plans experience. "NOTSUPPORTED" is used when the SIM should not be in the Mobile Plans supported range. We will turn off the Mobile Plans experience in the network flyout and return a generic error message in the Mobile Plans app when we receive this type.</li></ul> |
 | dataRemainingInMB | Double | The data remaining in the current user plan, in MB. |
 | timeRemaining | String | The time duration specified in [ISO 8601](https://go.microsoft.com/fwlink/p/?linkid=866182). |
 | locations | Collection of Strings | An array of the location in two letter ISO code. This comes from MCC or reverse IP lookup when there is no Cellular network connection. |
 
 ### Headers
 
-The following headers may be included in every request from the DYNAMO Service to the Mobile Provider’s endpoint.
+The following headers may be included in every request from the Mobile Plans Service to the Mobile Provider’s endpoint.
 
 | Header name | Value | Description |
 | --- | --- | --- |
-| X-MS-DM-TransactionId | String | The TransactionId to uniquely identify this request/response interaction between the DYNAMO service and the MO service. |
+| X-MS-DM-TransactionId | String | The TransactionId to uniquely identify this request/response interaction between the Mobile Plans service and the MO service. |
 | Authorization (optional) | String | A basic authentication string optionally provided by the MO. |
 
 ### Error codes
@@ -129,12 +129,12 @@ The following headers may be included in every request from the DYNAMO Service t
 | HTTP 403 (Forbidden) | The client certificate is untrusted or invalid. If the client certificate included as a part of MTLS is invalid, HTTP 403 should be returned. |
 | HTTP 404 (Not Found) | The MO service should return this error when the resource doesn’t exist. This can occur when an incorrect ICCID is sent. This should not be used to indicate that the user doesn’t have a balance in the specified location, which is indicated with HTTP 200 (OK). |
 | HTTP 409 (Conflict) | Used if a TransactionId is repeated. |
-| HTTP 429 (Too many requests) | Used by the MO service to indicate that the DYNAMO service is sending too many requests within the specified amount of time. In the response, the MO service must use the Retry-After header to indicate the time after which the DYNAMO service should retry for the resource. In the response body, optional details can be provided. |
+| HTTP 429 (Too many requests) | Used by the MO service to indicate that the Mobile Plans service is sending too many requests within the specified amount of time. In the response, the MO service must use the Retry-After header to indicate the time after which the Mobile Plans service should retry for the resource. In the response body, optional details can be provided. |
 | HTTP 500 (Internal Error) | Something unexpected happened on the MO service. The MO service should include the cause of error whenever possible so that it can be used for further debugging as needed. |
 
 ### Get Balance API specification
 
-DYNAMO must understand the status of the subscription for several reasons, the most important of which is that DYNAMO decides where a user should be allowed to purchase a new plan based on their current balance. Users must also be able to check their current remaining balance at any time within the experience.
+Mobile Plans must understand the status of the subscription for several reasons, the most important of which is that Mobile Plans decides where a user should be allowed to purchase a new plan based on their current balance. Users must also be able to check their current remaining balance at any time within the experience.
 
 The Get Balance API is called when network flyout is displayed or when Mobile Plans app is launched.
 
@@ -222,7 +222,7 @@ X-MS-DM-TransactionId: “MSFT-12345678-1234-1234-1234-123456789abc”
 }
 ```
 
-#### Example 4: The expected response for a SIM that is in the COSA ICCID range but should not be supported by DYNAMO
+#### Example 4: The expected response for a SIM that is in the COSA ICCID range but should not be supported by Mobile Plans
 
 HTTP request:
 
@@ -325,7 +325,7 @@ Expected Status 200 – OK.
 
 ## Get Balance API load test
 
-Before the Get Balance API is enabled in production, both Microsoft services and mobile operator services should be tested to see if they can handle the projected load. The mobile operator is expected to run a Load test.  Once that has passed, DYNAMO will execute a load test for 6 hours as configured in the following section. 
+Before the Get Balance API is enabled in production, both Microsoft services and mobile operator services should be tested to see if they can handle the projected load. The mobile operator is expected to run a Load test.  Once that has passed, Mobile Plans will execute a load test for 6 hours as configured in the following section. 
 
 This test configuration is generated from projected traffic of 10,000 SIMs. The Peak RPS is calculated based on 3 times this traffic projection.
 
@@ -340,6 +340,4 @@ This test configuration is generated from projected traffic of 10,000 SIMs. The 
 | --- | --- | --- | --- |
 | GetBalance | 96% | 1 | 3 |
 
-During test runs, the expected success rate is: 99.9%. On achieving this success rate, the MO API will be enabled in the DYNAMO production service.
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Mobile%20operator%20scenarios%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+During test runs, the expected success rate is: 99.9%. On achieving this success rate, the MO API will be enabled in the Mobile Plans production service.
