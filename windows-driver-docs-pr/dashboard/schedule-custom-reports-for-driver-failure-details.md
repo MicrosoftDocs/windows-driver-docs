@@ -25,7 +25,7 @@ Use these asynchronous methods to access reporting data for your Win10/ Win 8.x 
 
 To use this method, you need to first do the following:
 
-- If you have not done so already, complete all the [prerequisites](dashboard-api.md#complete-prerequisites-for-using-the-microsoft-hardware-api) for the Microsoft Store analytics API, including obtaining an Azure AD access token to use in the request header for this method. Note that after you obtain an access token, you have 60 minutes to use it before it expires. After the token expires, you can obtain a new one.
+- If you have not done so already, complete all the [prerequisites](https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api#complete-prerequisites-for-using-the-microsoft-hardware-api) for the Microsoft Store analytics API, including obtaining an Azure AD access token to use in the request header for this method. Note that after you obtain an access token, you have 60 minutes to use it before it expires. After the token expires, you can obtain a new one.
 
 For more information, see [Access analytics data using Microsoft Store services](https://docs.microsoft.com/windows/uwp/monetize/access-analytics-data-using-windows-store-services)
 
