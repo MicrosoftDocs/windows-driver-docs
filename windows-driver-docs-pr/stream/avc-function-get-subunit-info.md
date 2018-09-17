@@ -25,11 +25,11 @@ ms.localizationpriority: medium
 
 The **AVC\_FUNCTION\_GET\_SUBUNIT\_INFO** function code obtains the subunit information of the target device.
 
-### <span id="i_o_status_block"></span><span id="I_O_STATUS_BLOCK"></span>I/O Status Block
+### I/O Status Block
 
 This function always sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 This function uses the **Subunits** member of the AVC\_MULTIFUNC\_IRB structure as shown below.
 
@@ -45,13 +45,13 @@ typedef struct _AVC_MULTIFUNC_IRB {
 } AVC_MULTIFUNC_IRB, *PAVC_MULTIFUNC_IRB;
 ```
 
-### <span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
+### Requirements
 
 **Headers:** Declared in *avc.h*. Include *avc.h*.
 
-### <span id="avc_multifunc_irb_input"></span><span id="AVC_MULTIFUNC_IRB_INPUT"></span>AVC\_MULTIFUNC\_IRB Input
+### AVC\_MULTIFUNC\_IRB Input
 
-<span id="Common"></span><span id="common"></span><span id="COMMON"></span>**Common**  
+**Common**  
 The **Function** submember of this member must be set to **AVC\_FUNCTION\_GET\_SUBUNIT\_INFO** from the AVC\_FUNCTION enumeration.
 
 <span id="Subunits"></span><span id="subunits"></span><span id="SUBUNITS"></span>**Subunits**  
@@ -61,7 +61,7 @@ This function is satisfied locally, so no commands are sent to the target.
 
 This function code may be called at IRQL &lt;= DISPATCH\_LEVEL.
 
-### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
+### See Also
 
 [**AVC\_MULTIFUNC\_IRB**](https://msdn.microsoft.com/library/windows/hardware/ff554177), [**AVC\_SUBUNIT\_INFO\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff554199), [**AVC\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554145)
 

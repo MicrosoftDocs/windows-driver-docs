@@ -22,7 +22,7 @@ The host sends MBIM_CID_MS_DEVICE_RESET to the MBIM function to reset the modem 
 
 | Service name | UUID | UUID value |
 | --- | --- | --- |
-| Microsoft Basic IP Connectivity Extensions | UUID_BASIC_CONNECT_EXTENSIONS | 3d01dcc5-fef5-4d05-9d3a-bef7058e9aaf |
+| Microsoft Basic IP Connectivity Extensions | UUID_BASIC_CONNECT_EXTENSIONS | 3d01dcc5-fef5-4d05-0d3a-bef7058e9aaf |
 
 | CID | Command code | Set | Query | Notify |
 | --- | --- | --- | --- | --- |

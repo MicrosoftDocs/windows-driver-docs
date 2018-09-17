@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
- -OID_WWAN_SAR_CONFIG Network Drivers Starting with Windows Vista
+ -OID_WWAN_NETWORK_BLACKLIST Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +23,7 @@ For Set requests, this OID's payload contains an [**NDIS_WWAN_SET_NETWORK_BLACKL
 
 ## Remarks
 
-After each Query or Set response, the modem should return an [**NDIS_WWAN_NETWORK_BLACKLIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_network_blacklist) structure that contains information about the current network blacklist information.
+After each Query or Set request, the miniport driver should return an [**NDIS_WWAN_NETWORK_BLACKLIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_network_blacklist) structure that contains information about the current network blacklist information.
 
 For more information about usage of this OID, see [MBIM_CID_MS_NETWORK_BLACKLIST](https://docs.microsoft.com/windows-hardware/drivers/network/mb-network-blacklist-operations#mbimcidmsnetworkblacklist).
 

@@ -63,7 +63,7 @@ This section includes the following topics:
 
 [MB LTE Attach Operations](mb-lte-attach-operations.md)
 
-[MB Protocol Configuration Operations (PCO)](mb-protocol-configuration-operations--pco-.md)
+[MB Protocol Configuration Options (PCO) operations](mb-protocol-configuration-options-pco-operations.md)
 
 [MB low level UICC access](mb-low-level-uicc-access.md)
 

@@ -498,8 +498,15 @@ The PostScript generated for the selected negative printing is specified by the 
 3. The name attribute of the PageNegativeImage Option matches the name of the Option in the PPD.
 
 ## Related topics
+
 [Default PageMediaSize mappings](default-pagemediasize-mappings.md)  
+
 [Standard XPS Filters](standard-xps-filters.md)  
 
+The print schema specifications can be downloaded here:
+
+[Print Schema Specification 1.1](http://download.microsoft.com/download/1/6/a/16acc601-1b7a-42ad-8d4e-4f0aa156ec3e/print-schema-spec-1-1.zip)
+
+[Print Schema Specification 2.0](http://download.microsoft.com/download/d/e/c/deca6e6b-3e81-48e7-b7ef-6d92a547d03c/print-schema-spec-2-0.zip)
 
 

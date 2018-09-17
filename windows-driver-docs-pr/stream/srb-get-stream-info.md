@@ -35,7 +35,7 @@ Indicates successful completion of the command.
 <span id="STATUS_IO_DEVICE_ERROR"></span><span id="status_io_device_error"></span>STATUS\_IO\_DEVICE\_ERROR  
 Indicates that a hardware failure occurred.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 The class driver passes a buffer in *pSrb*-&gt;**CommandData.StreamBuffer** of the size specified by the minidriver in response to the class driver's [**SRB\_INITIALIZE\_DEVICE**](srb-initialize-device.md) request. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff559702) structure. Also see [**PORT\_CONFIGURATION\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff567785).
 

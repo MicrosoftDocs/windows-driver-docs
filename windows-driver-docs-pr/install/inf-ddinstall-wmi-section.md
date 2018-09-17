@@ -27,6 +27,8 @@ An INF *DDInstall*.**WMI** section contains one or more **WMIInterface** directi
 [install-section-name.WMI] |
 [install-section-name.nt.WMI] | 
 [install-section-name.ntx86.WMI] |
+[install-section-name.ntarm.WMI] |  (Windows 8 and later versions of Windows)
+[install-section-name.ntarm64.WMI]  (Windows 10 version 1709 and later versions of Windows)
 [install-section-name.ntia64.WMI] |  (Windows XP and later versions of Windows)
 [install-section-name.ntamd64.WMI]  (Windows XP and later versions of Windows)
  
