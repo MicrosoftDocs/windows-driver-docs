@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The number sign (**\#**) command searches for the specified pattern in the disassembly code.
 
-     [Pattern] [Address [ L Size ]] 
+     # [Pattern] [Address [ L Size ]] 
 
 ## <span id="ddk_cmd_search_for_disassembly_pattern_dbg"></span><span id="DDK_CMD_SEARCH_FOR_DISASSEMBLY_PATTERN_DBG"></span>Parameters
 
