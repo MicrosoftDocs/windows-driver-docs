@@ -4,7 +4,7 @@ description: The acpikd.help extension displays a Help text in the Debugger Comm
 ms.assetid: 46062e9d-bd68-43d4-90dd-4e481c48f5ee
 keywords: ["acpikd.help Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -22,9 +22,8 @@ ms.localizationpriority: medium
 
 The **!acpikd.help** extension displays a Help text in the Debugger Command window showing all Acpikd.dll extension commands.
 
-```
     !acpikd.help 
-```
+
 
 ## <span id="ddk__acpikd_help_dbg"></span><span id="DDK__ACPIKD_HELP_DBG"></span>
 

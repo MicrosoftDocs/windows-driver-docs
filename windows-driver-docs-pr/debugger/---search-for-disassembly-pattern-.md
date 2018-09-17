@@ -4,7 +4,7 @@ description: The number sign (#) command searches for the specified pattern in t
 ms.assetid: 834dd432-94b8-4bf6-9318-09a118eab5ab
 keywords: ["(Search for Disassembly Pattern) Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -22,9 +22,7 @@ ms.localizationpriority: medium
 
 The number sign (**\#**) command searches for the specified pattern in the disassembly code.
 
-```
-# [Pattern] [Address [ L Size ]] 
-```
+     [Pattern] [Address [ L Size ]] 
 
 ## <span id="ddk_cmd_search_for_disassembly_pattern_dbg"></span><span id="DDK_CMD_SEARCH_FOR_DISASSEMBLY_PATTERN_DBG"></span>Parameters
 
@@ -76,7 +74,7 @@ This command works by searching the disassembled text for the specified pattern.
 
 You can view disassembly instructions by using the [**u (Unassemble)**](u--unassemble-.md) command or by using the [Disassembly window](disassembly-window.md) in WinDbg. The disassembly display contains up to four parts: Address offset, Binary code, Assembly language mnemonic, and Assembly language details. The following example shows a possible display.
 
-```
+```console
 0040116b    45          inc         ebp            
 0040116c    fc          cld                        
 0040116d    8945b0      mov         eax,[ebp-0x1c] 
@@ -84,7 +82,7 @@ You can view disassembly instructions by using the [**u (Unassemble)**](u--unass
 
 The **\#** command can search for text within any single part of the disassembly display. For example, you could use **\# eax 0040116b** to find the **mov eax,\[ebp-0x1c\]** instruction at address 0040116d. The following commands also find this instruction.
 
-```
+```console
 #  [ebp?0x  0040116b 
 #  mov  0040116b 
 #  8945*  0040116b 
@@ -95,13 +93,13 @@ However, you cannot search for **mov eax\*** as a single unit, because **mov** a
 
 As an additional example, you could issue the following command to search for the first reference to the **strlen** function after the entry point **main**.
 
-```
+```console
 # strlen main
 ```
 
 Similarly, you could issue the following two commands to find the first **jnz** instruction after address 0x779F9FBA and then find the next **jnz** instruction after that.
 
-```
+```console
 # jnz 779f9fba# 
 ```
 
