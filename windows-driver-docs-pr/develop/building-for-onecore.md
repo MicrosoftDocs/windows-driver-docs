@@ -34,7 +34,7 @@ A subset of Windows APIs compile cleanly but return runtime errors on non-Deskto
 
 For example, the [**InstallApplication**](https://docs.microsoft.com/windows/desktop/api/appmgmt/nf-appmgmt-installapplication) function returns `ERROR_ NOT_SUPPORTED` on non-Desktop OneCore editions.  The [ApiValidator](validating-universal-drivers.md) tool also reports these problems. The next section describes how to fix them.
 
-## Fixing ApiValidator errors by using **IsApiSetImplemented**
+## Fixing ApiValidator errors by using [**IsApiSetImplemented**](windows/desktop/api/apiquery/nf-apiquery-isapisetimplemented)
 
 If your code calls non-universal APIs, you might see the following ApiValidator errors:
 
@@ -44,9 +44,9 @@ If your code calls non-universal APIs, you might see the following ApiValidator 
 
 * `Error: <Binary Name> has a dependency on <Module Name><Api Name> but is missing: IsApiSetImplemented("<contract-name-for-Module>)`
     
-    API calls in the above category compile fine, but may not behave as expected at runtime, depending on the target operating system. To pass the U requirement of [DCHU](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers#design-principles), wrap these calls with **IsApiSetImplemented**.
+    API calls in the above category compile fine, but may not behave as expected at runtime, depending on the target operating system. To pass the U requirement of [DCHU](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers#design-principles), wrap these calls with [**IsApiSetImplemented**](windows/desktop/api/apiquery/nf-apiquery-isapisetimplemented).
 
-This enables you to compile your code with no errors.  Then at runtime, if the target machine does not have the needed API, **IsApiSetImplemented** returns FALSE.
+This enables you to compile your code with no errors.  Then at runtime, if the target machine does not have the needed API, [**IsApiSetImplemented**](windows/desktop/api/apiquery/nf-apiquery-isapisetimplemented) returns FALSE.
 
 The following code samples illustrate how to do this.
 
@@ -96,7 +96,7 @@ int __cdecl wmain(int /* argc */, PCWSTR /* argv */ [])
 
 ## Code sample: Direct usage of API, after evaluating for existence
 
-This sample shows how to call **IsApiSetImplemented**. This sample passes the U part of DCHU with the following ApiValidator output:
+This sample shows how to call [**IsApiSetImplemented**](windows/desktop/api/apiquery/nf-apiquery-isapisetimplemented). This sample passes the U part of DCHU with the following ApiValidator output:
 
 ```
 ApiValidation: All binaries are Universal
