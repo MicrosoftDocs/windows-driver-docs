@@ -4,7 +4,7 @@ description: The .allow_exec_cmds command controls whether execution commands ca
 ms.assetid: c6e37cf1-42cc-4f82-9eb8-d252f0b6e196
 keywords: [".allow_exec_cmds (Allow Execution Commands) Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -22,11 +22,10 @@ ms.localizationpriority: medium
 
 The **.allow\_exec\_cmds** command controls whether execution commands can be used.
 
-```
-.allow_exec_cmds 0 
-.allow_exec_cmds 1 
-.allow_exec_cmds 
-```
+    .allow_exec_cmds 0 
+    .allow_exec_cmds 1 
+    .allow_exec_cmds 
+
 
 ## <span id="ddk_meta_allow_execution_commands_dbg"></span><span id="DDK_META_ALLOW_EXECUTION_COMMANDS_DBG"></span>Parameters
 

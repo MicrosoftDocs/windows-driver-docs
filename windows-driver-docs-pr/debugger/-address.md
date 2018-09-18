@@ -4,7 +4,7 @@ description: The address extension displays information about the memory that th
 ms.assetid: 9bbde680-8523-4db2-bb7e-fdacdaf1aa89
 keywords: ["address Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -24,19 +24,18 @@ The **!address** extension displays information about the memory that the target
 
 User-Mode
 
-```
-!address Address
-!address -summary 
-!address [-f:F1,F2,...] {[-o:{csv | tsv | 1}] | [-c:"Command"]}
-!address -? | -help
-```
+
+    !address Address
+    !address -summary 
+    !address [-f:F1,F2,...] {[-o:{csv | tsv | 1}] | [-c:"Command"]}
+    !address -? | -help
+
 
 Kernel-Mode
 
-```
-!address Address 
-!address
-```
+    !address Address 
+    !address
+
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -367,7 +366,7 @@ In user mode, **!address** *Address* shows the characteristics of the region tha
 
 The following example uses **!address** to retrieve information about a region of memory that is mapped to kernel32.dll.
 
-```
+```console
 0:000> !address 75831234
 Usage:                  Image
 Base Address:           75831000
@@ -387,7 +386,7 @@ If you are starting with an address and trying to determine information about it
 
 The following example uses the [**s (Search Memory)**](s--search-memory-.md) command to search each memory region of type **Image** for the wide-character string "Note".
 
-```
+```console
 !address /f:Image /c:"s -u %1 %2 \"Note\""
 
 *** Executing: s -u 0xab0000 0xab1000 "Note"
@@ -401,7 +400,7 @@ The following example uses the [**s (Search Memory)**](s--search-memory-.md) com
 
 In kernel mode, the output of **!address** is similar to the user mode output but contains less information. The following example example shows the kernel mode output.
 
-```
+```console
 kd> !address
   804de000 - 00235000                           
  Usage       KernelSpaceUsageImage
