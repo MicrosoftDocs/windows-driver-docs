@@ -16,7 +16,68 @@ ms.localizationpriority: medium
 After you submit your product for the Windows Hardware Compatibility Program for Windows 10 (or the certification program for previous Windows versions), you can manage it through the dashboard.
 
 ## Find a hardware submission
-See [Find hardware submission](find-hardware-submission.md)
+
+1.  Sign in to the Windows Hardware Dev Center dashboard.
+
+2.  On the **Manage submissions** page, you can see all hardware submissions that have been submitted by your organization. To find a specific hardware submission, you can do the following:
+
+    <table>
+    <colgroup>
+    <col width="50%" />
+    <col width="50%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>To</th>
+    <th>You can</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td><p>Search</p></td>
+    <td><p>Select to search by ID or by name, and then enter the ID or name in the Search box.</p></td>
+    </tr>
+    <tr class="even">
+    <td><p>Sort</p></td>
+    <td><p>Click a column heading to sort the list by that property.</p></td>
+    </tr>
+    </tbody>
+    </table>
+
+    ![screenshot that shows the driver list](images/drivers-summary-page.png)     
+
+
+3.  Click the submission ID to open more information about the submission. The following information is available:
+
+    <table>
+    <colgroup>
+    <col width="50%" />
+    <col width="50%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Tab</th>
+    <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td><p>Submission info</p></td>
+    <td><p>Describes the product, including:</p>
+    <ul>
+    <li><p>Name</p></li>
+    <li><p>Certification selection</p></li>
+    <li><p>Device type</p></li>
+    <li><p>The device metadata category and the default icon if you do not choose to submit a custom icon</p></li>
+    <li><p>Announcement date</p></li>
+    <li><p>Marketing names. You can add new marketing names and select <strong>Add</strong>.</p></li>
+    <li><p>If applicable, the signed driver files can be downloaded.</p></li>
+    </ul></td>
+    </tr>
+    </tbody>
+    </table>
+
+     
 
 ## Update an HCK hardware submission using the Driver Update Acceptable (DUA) process
 
