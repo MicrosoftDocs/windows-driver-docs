@@ -150,7 +150,7 @@ For more information about this directive, see [**INF FeatureScore Directive**](
  
 
 <a href="" id="bitreg-bit-registry-section--bit-registry-section----"></a>**BitReg=***bit-registry-section*\[**,***bit-registry-section*\]...  
-This directive references one or more INF-writer-defined sections in which existing registry value entries of type REG_BINARY are modified.
+This directive references one or more INF-writer-defined sections in which existing registry value entries of type [REG_BINARY](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) are modified.
 
 An **HKR** specification in such a bit-registry section designates the **..Class\\***SetupClassGUID***\\***device-instance-id* registry path of the user-accessible driver. This type of **HKR** specification is also referred to as a. "software key".
 

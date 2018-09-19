@@ -25,7 +25,7 @@ ms.localizationpriority: medium
 
 The **AVC\_FUNCTION\_FIND\_PEER\_DO** function code locates a nonvirtual *avc.sys* instance.
 
-### <span id="i_o_status_block"></span><span id="I_O_STATUS_BLOCK"></span>I/O Status Block
+### I/O Status Block
 
 If successful, the AV/C protocol driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
 
@@ -56,7 +56,7 @@ Possible other return values include:
 
  
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 This function uses the **PeerLocator** member of the AVC\_MULTIFUNC\_IRB structure as shown below.
 
@@ -75,13 +75,13 @@ typedef struct _AVC_MULTIFUNC_IRB {
 } AVC_MULTIFUNC_IRB, *PAVC_MULTIFUNC_IRB;
 ```
 
-### <span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
+### Requirements
 
 **Headers:** Declared in *avc.h*. Include *avc.h*.
 
-### <span id="avc_multifunc_irb_input"></span><span id="AVC_MULTIFUNC_IRB_INPUT"></span>AVC\_MULTIFUNC\_IRB Input
+### AVC\_MULTIFUNC\_IRB Input
 
-<span id="Common"></span><span id="common"></span><span id="COMMON"></span>**Common**  
+**Common**  
 The **Function** submember of this member must be set to **AVC\_FUNCTION\_FIND\_PEER\_DO** from the AVC\_FUNCTION enumeration.
 
 <span id="PeerLocator"></span><span id="peerlocator"></span><span id="PEERLOCATOR"></span>**PeerLocator**  
@@ -91,7 +91,7 @@ This function locates a nonvirtual *avc.sys* instance according to the node addr
 
 This function code may be called at IRQL &lt;= DISPATCH\_LEVEL.
 
-### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
+### See Also
 
 [**AVC\_MULTIFUNC\_IRB**](https://msdn.microsoft.com/library/windows/hardware/ff554177), [**AVC\_PEER\_DO\_LOCATOR**](https://msdn.microsoft.com/library/windows/hardware/ff554180), [**AVC\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554145), [**ObDereferenceObject**](https://msdn.microsoft.com/library/windows/hardware/ff557724)
 

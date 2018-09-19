@@ -74,7 +74,7 @@ This directive references an *add-interface-section* in which one or more **AddR
 
  
 
-This rarely used directive references one or more *bit-registry-section*s specifying existing REG_BINARY-type value entries in the registry for which particular bits in the values are to be modified.
+This rarely used directive references one or more *bit-registry-section*s specifying existing [REG_BINARY](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types)-type value entries in the registry for which particular bits in the values are to be modified.
 
 <a href="" id="logconfig-directive"></a>[**LogConfig Directive**](inf-logconfig-directive.md)  
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).

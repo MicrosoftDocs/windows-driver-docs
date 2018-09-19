@@ -4,7 +4,7 @@ description: The s command sets or displays the current system number.
 ms.assetid: 33ad3a63-166f-4669-868c-49100c9b4d8c
 keywords: ["s (Set Current System) Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -19,13 +19,11 @@ ms.localizationpriority: medium
 
 # ||s (Set Current System)
 
-
 The **||s** command sets or displays the current system number.
 
-```
-||System s 
-|| s 
-```
+     ||System s 
+     || s 
+
 
 Do not confuse this command with the [**s (Search Memory)**](s--search-memory-.md), [**~s (Change Current Processor)**](-s--change-current-processor-.md), [**~s (Set Current Thread)**](-s--set-current-thread-.md), or [**|s (Set Current Process)**](-s--set-current-process-.md) command.
 
