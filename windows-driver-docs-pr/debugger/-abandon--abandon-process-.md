@@ -4,7 +4,7 @@ description: The .abandon command ends the debugging session, but leaves the tar
 ms.assetid: e44ae9b8-b6a2-4648-911d-61ff3c94527c
 keywords: [".abandon (Abandon Process) Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -22,9 +22,7 @@ ms.localizationpriority: medium
 
 The **.abandon** command ends the debugging session, but leaves the target application in a debugging state. This returns the debugger to dormant mode.
 
-```
     .abandon [/h|/n] 
-```
 
 ## <span id="ddk_meta_abandon_process_dbg"></span><span id="DDK_META_ABANDON_PROCESS_DBG"></span>Parameters
 

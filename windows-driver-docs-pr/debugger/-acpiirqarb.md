@@ -4,7 +4,7 @@ description: The acpiirqarb extension displays the contents of the ACPI IRQ arbi
 ms.assetid: c57884cd-c70c-4091-871d-c2a35db8d73f
 keywords: ["acpiirqarb Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -22,9 +22,8 @@ ms.localizationpriority: medium
 
 The **!acpiirqarb** extension displays the contents of the Advanced Configuration and Power Interface (ACPI) IRQ arbiter structure, which contains the configuration of I/O devices to system interrupt controller inputs and processor interrupt dispatch table (IDT) entries.
 
-```
-!acpiirqarb
-```
+    !acpiirqarb
+
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
