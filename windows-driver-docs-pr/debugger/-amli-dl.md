@@ -4,7 +4,7 @@ description: The amli dl extension displays a portion of the AML interpreter's e
 ms.assetid: 06565760-d7f0-4f22-8670-7706d3b4b3a8
 keywords: ["amli dl Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -24,9 +24,8 @@ The **!amli dl** extension displays a portion of the AML interpreter's event log
 
 Syntax
 
-```
-!amli dl
-```
+    !amli dl
+
 
 ## <span id="ddk__amli_dl_dbg"></span><span id="DDK__AMLI_DL_DBG"></span>
 
@@ -46,7 +45,7 @@ The event log chronicles the most recent 150 events that occurred in the interpr
 
 Here is an example of the log display:
 
-```
+```console
 kd> !amli dl
 RUN!: [c15a6618]QTh=00000000,QCt=00000000,QFg=00000000: Ctx=c18b4000,rc=0
 KICK: [c15a6618]QTh=00000000,QCt=00000000,QFg=00000000: rc=0

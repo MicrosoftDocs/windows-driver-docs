@@ -10,6 +10,8 @@
       href: create-a-new-hardware-submission.md
     - name: "Manage hardware submissions"
       href: manage-your-hardware-submissions.md
+    - name: "Find and manage your hardware submission"
+      href: find-hardware-submission.md
     - name: "Create a new WLK device certification submission"
       href: create-a-new-hardware-logo-submission.md
       items: 

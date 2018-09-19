@@ -4,7 +4,7 @@ description: The amli dns extension displays an ACPI namespace object.
 ms.assetid: 7db937ba-109f-4f4e-8dd3-4aa5d0dc13b2
 keywords: ["amli dns Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -24,9 +24,8 @@ The **!amli dns** extension displays an ACPI namespace object.
 
 Syntax
 
-```
-!amli dns [/s] [Name | Address]
-```
+    !amli dns [/s] [Name | Address]
+
 
 ## <span id="ddk__amli_dns_dbg"></span><span id="DDK__AMLI_DNS_DBG"></span>Parameters
 
@@ -59,7 +58,7 @@ Without the **/s** parameter, this extension is equivalent to the [**!nsobj**](-
 
 Here are some examples. The following command displays the namespace for the object **bios**:
 
-```
+```console
 AMLI(? for help)-> dns \bios
 
 ACPI Name Space: \BIOS (80E5F378)
@@ -68,7 +67,7 @@ OpRegion(BIOS:RegionSpace=SystemMemory,Offset=0xfcb07500,Len=2816)
 
 The following command displays the namespace for the object \_BST, and the tree subordinate to it:
 
-```
+```console
 kd> !amli dns /s \_sb.pci0.isa.bat1._bst
 
 ACPI Name Space: \_SB.PCI0.ISA.BAT1._BST (c29c2044)
@@ -77,25 +76,25 @@ Method(_BST:Flags=0x0,CodeBuff=c29c20a5,Len=103)
 
 To display the namespace for the device BAT1, type:
 
-```
+```console
 kd> !amli dns /s \_sb.pci0.isa.bat1
 ```
 
 To display the namespace of everything subordinate to the DOCK device, type:
 
-```
+```console
 kd> !amli dns /s \_sb.pci0.dock
 ```
 
 To display the namespace subordinate to the \_DCK method, type:
 
-```
+```console
 kd> !amli dns /s \_sb.pci0.dock._dck
 ```
 
 To display the entire namespace, type:
 
-```
+```console
 kd> !amli dns
 ```
 
