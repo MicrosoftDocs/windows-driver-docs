@@ -233,6 +233,8 @@
         href: bring-up-a-usb-type-c-connector-on-a-windows-system.md
       - name: "Write a USB Type-C port controller driver"
         href: write-a-usb-type-c-port-controller-driver.md
+      - name: "Write a UCSI client driver"
+        href: write-a-ucsi-driver.md
   - name: "USB Event Tracing for Windows"
     href: usb-event-tracing-for-windows.md
     items: 

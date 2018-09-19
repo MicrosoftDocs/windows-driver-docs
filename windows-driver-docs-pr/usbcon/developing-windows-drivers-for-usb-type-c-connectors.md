@@ -30,7 +30,7 @@ You need to write a driver for the connector if your USB Type-C system does not 
 
 -   [UCmCx client driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188011)
 
--   [USB Type-C Port Controller Interface driver class extensions reference](https://msdn.microsoft.com/en-us/library/windows/hardware/mt805826)
+-   [USB Type-C Port Controller Interface driver class extensions reference](https://msdn.microsoft.com/library/windows/hardware/mt805826)
 
 
 ![drivers](images/drivers-c.png)
@@ -39,7 +39,7 @@ You need to write a driver for the connector if your USB Type-C system does not 
 |------------------------------------------------------ |-------------      |---            |
 |USB Type-C connector does not have a PD state machine.  | Write a client driver to UcmTcpciCx. <p>Start with [UcmTcpciCx Port Controller Client Driver](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmTcpciCxClientSample) </p>| Write a client driver to UcmCx. <p>Start with the [UcmCx sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi).</p>| 
 |Connector is UCSI-compliant with ACPI.                  | Load the in-box driver, UcmUcsi.sys.  |N/A| 
-|Connector is UCSI-compliant without ACPI.| Write a client driver to UcmCx. <p>Start with the [UcmCx sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi) and replace the ACPI your implementation for the required bus.| Write a client driver to UcmCx. <p>Start with the [UcmCx sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi) and replace the ACPI your implementation for the required bus. |
+|Connector is UCSI-compliant without ACPI.| Write a client driver to UcmUcsiCx. For more information, see [Write a UCSI client driver](write-a-ucsi-driver.md). <p>Start with [this sample template](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi) and replace the ACPI portions with your implementation for the required bus.| Write a client driver to UcmCx. |
 | Has PD state machine but is not UCSI-compliant.| Write a client driver to UcmCx. <p>Start with the [UcmCx sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi).  |Write a client driver to UcmCx. <p>Start with the [UcmCx sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi). </p>|                 
 ## In this section
 To implementation the proposed solutions in the preceding table, read these topics:
@@ -74,6 +74,11 @@ To implementation the proposed solutions in the preceding table, read these topi
 <tr class="odd">
 <td><p>[Write a USB Type-C port controller driver](write-a-usb-type-c-port-controller-driver.md)</p></td>
 <td><p>Describes how to write a the USB Type-C port controller driver that communicates with a USB Type-C connector without PD state machine. </p></td>
+
+</tr>
+<tr class="odd">
+<td><p>[Write a UCSI client driver](write-a-ucsi-driver.md)</p></td>
+<td><p>Describes how to write a driver for a UCSI-compliant controller that uses non-ACPI transport. </p></td>
 
 </tr>
 </tbody>
