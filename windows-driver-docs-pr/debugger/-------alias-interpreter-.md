@@ -4,7 +4,7 @@ description: A dollar sign followed by a pair of braces ( $ ) evaluates to a var
 ms.assetid: 5182ed99-259e-4e58-8d69-38a702bd8113
 keywords: ["$ (Alias Interpreter) Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -22,13 +22,13 @@ ms.localizationpriority: medium
 
 A dollar sign followed by a pair of braces ( **${ }** ) evaluates to a variety of values related to the specified user-named alias.
 
-```
-Text ${Alias} Text 
-Text ${/d:Alias} Text 
-Text ${/f:Alias} Text 
-Text ${/n:Alias} Text 
-Text ${/v:Alias} Text 
-```
+
+    Text ${Alias} Text 
+    Text ${/d:Alias} Text 
+    Text ${/f:Alias} Text 
+    Text ${/n:Alias} Text 
+    Text ${/v:Alias} Text 
+
 
 ## <span id="ddk_token_alias_interpreter_dbg"></span><span id="DDK_TOKEN_ALIAS_INTERPRETER_DBG"></span>Parameters
 
