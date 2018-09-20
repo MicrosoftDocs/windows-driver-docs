@@ -20,7 +20,6 @@ The **DocumentDescription** element has the following sub-elements:
 
 [SendImageRequest.DocumentDescription.DocumentId](sendimagerequest-documentdescription-documentid.md)
 
-[SendImageRequest.DocumentDescription.Format](sendimagerequest-documentdescription-format.md)
 
  
 
