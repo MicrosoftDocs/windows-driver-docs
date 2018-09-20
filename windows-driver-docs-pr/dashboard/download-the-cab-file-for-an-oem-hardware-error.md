@@ -14,6 +14,17 @@ ms.localizationpriority: medium
 
 # Download the CAB file for an OEM hardware error
 
+> [!IMPORTANT]
+> This topic contains deprecated material. It describes older methods for collecting data about driver submission failures. It is supplied only for legacy support.
+>
+> Use these newer topics instead:
+>
+> - [Schedule Custom Reports for your driver failure details](schedule-custom-reports-for-driver-failure-details.md)
+> - [Create new report template](create-a-new-report-template.md)
+> - [Schedule a new report](schedule-a-new-report.md)
+> - [Get Report Data](get-report-data.md)
+> - [Download Failure Cabs](download-failure-cabs.md)
+
 Use this method in the Microsoft Store analytics API to download the CAB file that is associated with a particular OEM hardware error. Before you can use this method, you must first use the [get details for an OEM hardware error](get-details-for-an-oem-hardware-error.md) method to retrieve the ID of the CAB file you want to download.
 
 You can get other info about OEM hardware errors by using the [get OEM hardware error reporting data](get-oem-hardware-error-reporting-data.md) and [get details for an OEM hardware error](get-details-for-an-oem-hardware-error.md) methods in the Microsoft Store analytics API.

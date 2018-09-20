@@ -14,6 +14,17 @@ ms.localizationpriority: medium
 
 # Get OEM hardware error reporting data
 
+> [!IMPORTANT]
+> This topic contains deprecated material. It describes older methods for collecting data about driver submission failures. It is supplied only for legacy support.
+>
+> Use these newer topics instead:
+>
+> - [Schedule Custom Reports for your driver failure details](schedule-custom-reports-for-driver-failure-details.md)
+> - [Create new report template](create-a-new-report-template.md)
+> - [Schedule a new report](schedule-a-new-report.md)
+> - [Get Report Data](get-report-data.md)
+> - [Download Failure Cabs](download-failure-cabs.md)
+
 Use this method in the Microsoft Store analytics API to get aggregate reporting data for OEM hardware errors for a given date range and other optional filters. You can retrieve additional error information by using the [get details for an OEM hardware error](get-details-for-an-oem-hardware-error.md) method.
 
 > [!NOTE]
