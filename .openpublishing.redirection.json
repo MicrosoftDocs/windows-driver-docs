@@ -6292,6 +6292,7 @@
       "redirect_URL": "/windows-hardware/drivers/image/index",
       "redirect_document_id": false
     },
+    {
       "source_path": "windows-driver-docs-pr/network/mb-protocol-configuration-operations--pco-.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/network/mb-protocol-configuration-options-pco-operations",
       "redirect_document_id": true
