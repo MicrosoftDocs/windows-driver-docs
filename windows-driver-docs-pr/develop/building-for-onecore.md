@@ -36,7 +36,7 @@ For example, the [**InstallApplication**](https://docs.microsoft.com/windows/des
 
 ## Fixing ApiValidator errors by using [**IsApiSetImplemented**](windows/desktop/api/apiquery/nf-apiquery-isapisetimplemented)
 
-If your code calls non-universal APIs, you might see the following ApiValidator errors:
+If your code calls non-universal APIs, you might see the following [ApiValidator](validating-universal-drivers.md) errors:
 
 * `Error: <Binary Name> has unsupported API call to <Module Name><Api Name>`
     
@@ -54,7 +54,7 @@ The following code samples illustrate how to do this.
 
 This code runs fine on versions of Windows earlier than Windows 10, but running it on a OneCore edition of Windows 10 results in WTSEnumerateSessions failure : 78 or ERROR_CALL_NOT_IMPLEMENTED 120 (0x78).
 
-This code sample fails the U part of DCHU with the following ApiValidator errors:
+This code sample fails the U part of DCHU with the following [ApiValidator](validating-universal-drivers.md) errors:
 
 ```
 ApiValidation: Error: FlexLinkTest.exe has a dependency on 'wtsapi32.dll!WTSEnumerateSessionsW' but is missing: IsApiSetImplemented("ext-ms-win-session-wtsapi32-l1-1-0")
@@ -96,7 +96,7 @@ int __cdecl wmain(int /* argc */, PCWSTR /* argv */ [])
 
 ## Code sample: Direct usage of API, after evaluating for existence
 
-This sample shows how to call [**IsApiSetImplemented**](windows/desktop/api/apiquery/nf-apiquery-isapisetimplemented). This sample passes the U part of DCHU with the following ApiValidator output:
+This sample shows how to call [**IsApiSetImplemented**](windows/desktop/api/apiquery/nf-apiquery-isapisetimplemented). This sample passes the U part of DCHU with the following [ApiValidator](validating-universal-drivers.md) output:
 
 ```
 ApiValidation: All binaries are Universal
