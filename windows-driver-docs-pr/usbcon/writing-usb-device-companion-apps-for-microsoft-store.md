@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # UWP app for a USB device
 
 
-The [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466) namespace provides a way for a Windows store app to communicate with an external USB device that uses WinUSB (Winusb.sys) as the device driver.
+The [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466) namespace provides a way for a Windows app to communicate with an external USB device that uses WinUSB (Winusb.sys) as the device driver.
 
 ## In this section
 
@@ -36,7 +36,7 @@ The [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn
 </tr>
 <tr class="even">
 <td><p>[How to add USB device capabilities to the app manifest](updating-the-app-manifest-with-usb-device-capabilities.md)</p></td>
-<td><p>This topic describes the device capabilities that are required for a Windows store app that uses the [<strong>Windows.Devices.Usb</strong>](https://msdn.microsoft.com/library/windows/apps/dn278466) namespace.</p></td>
+<td><p>This topic describes the device capabilities that are required for a Windows app that uses the [<strong>Windows.Devices.Usb</strong>](https://msdn.microsoft.com/library/windows/apps/dn278466) namespace.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[How to connect to a USB device (UWP app)](how-to-connect-to-a-usb-device--uwp-app-.md)</p></td>
