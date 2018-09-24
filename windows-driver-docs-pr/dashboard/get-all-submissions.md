@@ -7,6 +7,7 @@ ms.date: 04/05/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Get all submissions
@@ -72,6 +73,9 @@ The following example demonstrates the JSON response body returned by a successf
           "method": "PATCH"
         }
       ],
+      "isExtensionInf": true,
+      "isUniversal": true,
+      "isDeclarativeInf": true,
       "name": "HARRY-Duatest2",
       "type": "derived"
     },
@@ -95,6 +99,9 @@ The following example demonstrates the JSON response body returned by a successf
           "method": "PATCH"
         }
       ],
+      "isExtensionInf": true,
+      "isUniversal": true,
+      "isDeclarativeInf": true,
       "name": "updated-1",
       "type": "derived"
     },
@@ -118,6 +125,9 @@ The following example demonstrates the JSON response body returned by a successf
           "method": "PATCH"
         }
       ],
+      "isExtensionInf": true,
+      "isUniversal": true,
+      "isDeclarativeInf": true,
       "name": "HARRY-Duatest2",
       "type": "initial"
     }

@@ -4,7 +4,7 @@ description: The acl extension formats and displays the contents of an access co
 ms.assetid: 591f56b6-5a70-4037-a285-a1bffd5bd387
 keywords: ["acl Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - acl
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !acl
@@ -23,9 +24,8 @@ The **!acl** extension formats and displays the contents of an access control li
 
 Syntax
 
-```
     !acl Address [Flags] 
-```
+
 
 ## <span id="ddk__acl_dbg"></span><span id="DDK__ACL_DBG"></span>Parameters
 
@@ -49,7 +49,7 @@ Remarks
 
 The following example shows the **!acl** extension.
 
-```
+```console
 kd> !acl e1bf35d4 1
 ACL is:
 ACL is: ->AclRevision: 0x2

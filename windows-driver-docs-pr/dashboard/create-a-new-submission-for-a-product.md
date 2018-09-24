@@ -7,6 +7,7 @@ ms.date: 04/05/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Create a new submission for a product
@@ -92,6 +93,9 @@ The following example demonstrates the JSON response body returned by a successf
     }
   ],
   "commitStatus": "commitPending",
+  "isExtensionInf": true,
+  "isUniversal": true,
+  "isDeclarativeInf": true,
   "name": "VST_apdevtest1_init",
   "type": "initial"
 }

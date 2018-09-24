@@ -2,6 +2,7 @@
 title: MPIO\_DSM\_Path\_V2 WMI Class
 description: MPIO\_DSM\_Path\_V2 WMI Class
 ms.assetid: ec7d75a0-cb40-46e8-ab1d-137a9331193e
+ms.localizationpriority: medium
 ---
 
 # MPIO\_DSM\_Path\_V2 WMI Class

@@ -4,7 +4,7 @@ description: The pipe ( ) command displays status for the specified process, or 
 ms.assetid: 78f53049-e949-4431-b6b1-0710da047ced
 keywords: ["(Process Status) Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - (Process Status)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # | (Process Status)
@@ -23,9 +24,8 @@ The pipe (**|**) command displays status for the specified process, or for all p
 
 Do not confuse this command with the [**|| (System Status)**](----system-status-.md) command.
 
-```
-| Process
-```
+    | Process
+
 
 ## <span id="ddk_cmd_process_status_dbg"></span><span id="DDK_CMD_PROCESS_STATUS_DBG"></span>Parameters
 
@@ -73,37 +73,37 @@ Unless you enabled the debugging of child processes when you started the debuggi
 
 The following examples show you how to use this command. The following command displays all processes.
 
-```
+```console
 2:005> |
 ```
 
 The following command also displays all processes.
 
-```
+```console
 2:005> |*
 ```
 
 The following command displays the currently active process.
 
-```
+```console
 2:005> |.
 ```
 
 The following command displays the process that originally caused the exception (or that the debugger originally attached to).
 
-```
+```console
 2:005> |#
 ```
 
 The following command displays process number 2.
 
-```
+```console
 2:005> |2
 ```
 
 The previous command displays the following output.
 
-```
+```console
 0:002> |
 #  0 id: 224   name: myprog.exe 
    1 id: 228   name: onechild.exe 

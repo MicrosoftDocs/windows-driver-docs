@@ -14,6 +14,7 @@ api_name:
 - hidkd.hidppd
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !hidkd.hidppd

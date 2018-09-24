@@ -7,6 +7,7 @@ ms.date: 04/05/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Create a new product
@@ -51,6 +52,7 @@ The following example demonstrates the JSON request body for creating a new prod
   "firmwareVersion": "980",
   "deviceType": "external",
   "isTestSign": false,
+  "isFlightSign": false,  
   "marketingNames": [],
   "productName": "VST_apdevtest1",
   "selectedProductTypes": {
@@ -104,6 +106,7 @@ The following example demonstrates the JSON response body returned by a successf
   "firmwareVersion": "980",
   "deviceType": "external",
   "isTestSign": false,
+  "isFlightSign": false,  
   "marketingNames": [],
   "productName": "VST_apdevtest1",
   "selectedProductTypes": {

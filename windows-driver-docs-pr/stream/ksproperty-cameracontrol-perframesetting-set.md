@@ -12,29 +12,28 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 9/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_SET
 
+The **KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_SET** property ID that is defined in [**KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ne-ksmedia-ksproperty_cameracontrol_perframesetting_property) is used to set per-frame settings in the driver.
 
-The **KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_SET** property ID that is defined in [**KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/dn936802) is used to set per-frame settings in the driver.
-
-## <span id="Usage_summary"></span><span id="usage_summary"></span><span id="USAGE_SUMMARY"></span>Usage summary
-
+## Usage summary
 
 To set per frame settings, the **KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_SET** property control is sent to the driver along with a per frame settings payload.
 
 This property can be read or written. While a **GET** call can be used to return the last per frame settings that was set on the driver, the **GET** call is not exposed to the app client and is only issued at the initialization time when the per-frame setting control is constructed by the MF pipeline, where the driver must return **STATUS\_BUFFER\_OVERFLOW** with buffer size of 0.
 
-In a GET call, a zero length buffer is sent to the driver first to find out the required data buffer size to hold the entire per-frame settings the driver has. In response to this call, the driver must return **STATUS\_BUFFER\_OVERFLOW** with the required per-frame settings buffer size that must be 0 if no per-frame settings has ever been set or at least the size of [**KSCAMERA\_PERFRAMESETTING\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925204) otherwise.
+In a GET call, a zero length buffer is sent to the driver first to find out the required data buffer size to hold the entire per-frame settings the driver has. In response to this call, the driver must return **STATUS\_BUFFER\_OVERFLOW** with the required per-frame settings buffer size that must be 0 if no per-frame settings has ever been set or at least the size of [**KSCAMERA\_PERFRAMESETTING\_HEADER**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-kscamera_perframesetting_header) otherwise.
 
-The per-frame setting payload must start with a **KSCAMERA\_PERFRAMESETTING\_HEADER**, followed by one or more frame settings. The number of frame settings is specified in FrameCount. The settings for each frame must start with a [**KSCAMERA\_PERFRAMESETTING\_FRAME\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925200), followed by zero or more item settings. The number of item settings is specified in ItemCount. The settings for each item, if any must start with a [**KSCAMERA\_PERFRAMESETTING\_ITEM\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925209).
+The per-frame setting payload must start with a **KSCAMERA\_PERFRAMESETTING\_HEADER**, followed by one or more frame settings. The number of frame settings is specified in FrameCount. The settings for each frame must start with a [**KSCAMERA\_PERFRAMESETTING\_FRAME\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-kscamera_perframesetting_frame_header), followed by zero or more item settings. The number of item settings is specified in ItemCount. The settings for each item, if any must start with a [**KSCAMERA\_PERFRAMESETTING\_ITEM\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-kscamera_perframesetting_item_header).
 
-For the settings for each item, if a Value payload is present, the **KSCAMERA\_PERFRAMESETTING\_ITEM\_HEADER** must be followed by a [**KSCAMERA\_EXTENDEDPROP\_VALUE**](https://msdn.microsoft.com/library/windows/hardware/dn567565). If a custom item is present, **KSCAMERA\_PERFRAMESETTING\_ITEM\_HEADER** must be followed by a [**KSCAMERA\_PERFRAMESETTING\_CUSTOM\_ITEM**](https://msdn.microsoft.com/library/windows/hardware/dn925198), followed by the custom data associated with the GUID Id specified in **KSCAMERA\_PERFRAMESETTING\_CUSTOM\_ITEM**.
+For the settings for each item, if a Value payload is present, the **KSCAMERA\_PERFRAMESETTING\_ITEM\_HEADER** must be followed by a [**KSCAMERA\_EXTENDEDPROP\_VALUE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value). If a custom item is present, **KSCAMERA\_PERFRAMESETTING\_ITEM\_HEADER** must be followed by a [**KSCAMERA\_PERFRAMESETTING\_CUSTOM\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-kscamera_perframesetting_custom_item), followed by the custom data associated with the GUID Id specified in **KSCAMERA\_PERFRAMESETTING\_CUSTOM\_ITEM**.
 
 If FrameCount is 0, the driver must reject the per-frame settings payload. If ItemCount is 0, no frame settings are specified. The driver must apply global settings to the frame associated. For example, FrameCount = 1 and ItemCount = 0 implies a single frame variable photo sequence with global settings.
 
@@ -132,8 +131,6 @@ The following table summarizes the available controls and values for per-frame s
 </tbody>
 </table>
 
- 
-
 To pass in the custom property data to the per-frame settings, the app does the following:
 
 1.  Calls the QueryInterface on IFrameSettingsControls to get the IMFGetServices interface that is associated with the per-frame settings.
@@ -187,8 +184,6 @@ The table below lists the possible configurations and the corresponding photo se
 </tbody>
 </table>
 
- 
-
 The variable photo sequence has been simplified to perform finite captures with only one repeat. The photo sequence with per frame settings will be always flagged as a variable photo sequence and the per-frame settings payload is always required.
 
 If the loop count is L (L = 1) and the frame count is N (N &gt; 0), it is a finite variable photo sequence. The per-frame settings will be repeated L = 1 times with the N frame settings applied to the next N future frames in each repeat.
@@ -209,8 +204,7 @@ T = (N * L) + P
 
 For the finite variable photo sequence, the driver must mark the **KSSTREAM\_HEADER.OptionsFlags** for the last frame with the **KSSTREAM\_HEADER\_OPTIONSF\_ENDOFPHOTOSEQUENCE** flag. Doing so will ensure that the driver automatically stops delivering frames back to the MF pipeline after the amount of future frames expected have been delivered. This effectively stops the photo sequence and notifies the app client of the completion of the photo sequence. This happens when driver finishes capturing the last frame in the finite variable photo sequence.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -224,12 +218,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

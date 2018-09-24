@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Talking to USB devices, start to finish (UWP app)
@@ -23,7 +24,7 @@ ms.technology: windows-devices
 -   [**Windows.Devices.Enumeration**](https://msdn.microsoft.com/library/windows/apps/br225459)
 -   [**Windows.Devices.Background**](https://msdn.microsoft.com/library/windows/apps/dn263409)
 
-Use the Windows Runtime APIs, introduced in Windows 8.1, to write UWP apps that gives users access to their peripheral USB device. Such apps can connect to a device based on user-specified criteria, get information about the device, send data to the device and conversely get data steams from the device, and poll the device for interrupt data.
+Use the Windows Runtime APIs, introduced in Windows 8.1, to write UWP apps that gives users access to their peripheral USB device. Such apps can connect to a device based on user-specified criteria, get information about the device, send data to the device and conversely get data streams from the device, and poll the device for interrupt data.
 
 Here we describe, how your UWP app using C++, C#, or Visual Basic app can implement those tasks, and link to examples that demonstrate the use of classes included in [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466). We'll go over the device capabilities required in the app manifest and how to launching the app when the device is connected. And we'll show how to run a data transfer task in the background even when the app is suspended to conserve battery life.
 

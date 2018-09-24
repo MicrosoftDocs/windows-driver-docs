@@ -14,6 +14,7 @@ api_name:
 - .show_sym_failures
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .show\_sym\_failures

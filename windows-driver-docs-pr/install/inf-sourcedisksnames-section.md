@@ -15,6 +15,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF SourceDisksNames Section
@@ -25,6 +26,8 @@ A **SourceDisksNames** section identifies the distribution disks or CD-ROM discs
 ```
 [SourceDisksNames] |
 [SourceDisksNames.x86] | 
+[SourceDisksNames.arm] | (Windows 8 and later versions of Windows)
+[SourceDisksNames.arm64] | (Windows 10 version 1709 and later versions of Windows)
 [SourceDisksNames.ia64] | (Windows XP and later versions of Windows)
 [SourceDisksNames.amd64] (Windows XP and later versions of Windows)
 

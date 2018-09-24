@@ -16,6 +16,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KS\_AM\_RATE\_ExactRateChange
@@ -26,7 +27,7 @@ The KS\_AM\_RATE\_ExactRateChange property is not yet implemented.
 ## <span id="ddk_ks_am_rate_exactratechange_ks"></span><span id="DDK_KS_AM_RATE_EXACTRATECHANGE_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -50,7 +51,7 @@ The KS\_AM\_RATE\_ExactRateChange property is not yet implemented.
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
+<td><p>[<strong>KSPROPERTY</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)</p></td>
 <td><p>[<strong>KS_AM_ExactRateChange</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567276)</p></td>
 </tr>
 </tbody>
@@ -81,7 +82,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**KS\_AM\_ExactRateChange**](https://msdn.microsoft.com/library/windows/hardware/ff567276)

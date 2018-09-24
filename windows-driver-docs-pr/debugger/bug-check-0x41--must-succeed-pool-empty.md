@@ -14,6 +14,7 @@ api_name:
 - MUST_SUCCEED_POOL_EMPTY
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x41: MUST\_SUCCEED\_POOL\_EMPTY

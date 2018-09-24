@@ -3,7 +3,7 @@ title: Init\_NdisAllocateIoWorkItem rule (ndis)
 description: The Init\_NdisAllocateIoWorkItem rule specifies that if NdisAllocateIoWorkItem is called at least once during MiniportInitializeEx, the NdisFreeIoWorkItem function should - be called at least once in MPHaltEx, if MiniportInitializeEx succeeds.
 ms.assetid: B7889948-741C-4C54-B27F-3175ED4EA7BA
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - Init_NdisAllocateIoWorkItem
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Init\_NdisAllocateIoWorkItem rule (ndis)

@@ -3,7 +3,7 @@ title: SpinLockDpc rule (storport)
 description: This rule verifies that a call to KeAcquireSpinLockRaiseToDpc is promptly followed by a call to KeReleaseSpinlock.
 ms.assetid: 955B5A37-5E14-4380-A30D-3D019C4D5B59
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - SpinLockDpc
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # SpinLockDpc rule (storport)

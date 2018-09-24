@@ -3,7 +3,7 @@ title: IoBuildSynchronousFsdRequestNoFree rule (wdm)
 description: The IoBuildSynchronousFsdRequestNoFree rule specifies that a driver that calls IoBuildSynchronousFsdRequest must not call IoFreeIrp.
 ms.assetid: 516D6B53-866D-477D-AB9C-6E44BB285BA8
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - IoBuildSynchronousFsdRequestNoFree
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IoBuildSynchronousFsdRequestNoFree rule (wdm)

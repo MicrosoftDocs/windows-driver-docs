@@ -3,7 +3,7 @@ title: NdisFilterTimedPauseComplete rule (ndis)
 description: The NdisFilterTimedPauseComplete verifies three things The FilterPause function will be completed in 10 seconds or less.The FilterPause function must not fail.The FilterPause function must not complete twice.
 ms.assetid: 60B926CC-E2C4-42B8-8555-5E620DCDDAFC
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - NdisFilterTimedPauseComplete
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # NdisFilterTimedPauseComplete rule (ndis)

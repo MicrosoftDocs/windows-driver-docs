@@ -14,6 +14,7 @@ api_name:
 - SYSTEM_UNWIND_PREVIOUS_USER
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x3A: SYSTEM\_UNWIND\_PREVIOUS\_USER

@@ -14,6 +14,7 @@ api_name:
 - VIDEO_TDR_APPLICATION_BLOCKED
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x142: VIDEO\_TDR\_APPLICATION\_BLOCKED

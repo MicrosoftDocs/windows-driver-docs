@@ -2,6 +2,7 @@
 title: MPIO\_CONTROLLER\_INFO WMI Class
 description: MPIO\_CONTROLLER\_INFO WMI Class
 ms.assetid: 0448e056-2bbe-4e4f-a729-a872393222e5
+ms.localizationpriority: medium
 ---
 
 # MPIO\_CONTROLLER\_INFO WMI Class

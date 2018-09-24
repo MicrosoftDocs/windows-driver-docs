@@ -14,6 +14,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # AVC\_FUNCTION\_SET\_CONNECTINFO
@@ -24,7 +25,7 @@ ms.technology: windows-devices
 
 The AVC\_FUNCTION\_SET\_CONNECT\_INFO function code sets the AVCCONNECTINFO structure for each pin ID (offset from zero).
 
-### <span id="i_o_status_block"></span><span id="I_O_STATUS_BLOCK"></span>I/O Status Block
+### I/O Status Block
 
 If successful, the AV/C protocol driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
 
@@ -59,7 +60,7 @@ Possible other return values include:
 
  
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 This function uses the **SetConnectInfo** member of the AVC\_MULTIFUNC\_IRB structure as shown below.
 
@@ -78,13 +79,13 @@ typedef struct _AVC_MULTIFUNC_IRB {
 } AVC_MULTIFUNC_IRB, *PAVC_MULTIFUNC_IRB;
 ```
 
-### <span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
+### Requirements
 
 **Headers:** Declared in *avc.h*. Include *avc.h*.
 
-### <span id="avc_multifunc_irb_input"></span><span id="AVC_MULTIFUNC_IRB_INPUT"></span>AVC\_MULTIFUNC\_IRB Input
+### AVC\_MULTIFUNC\_IRB Input
 
-<span id="Common"></span><span id="common"></span><span id="COMMON"></span>**Common**  
+**Common**  
 The **Function** submember of this member must be set to **AVC\_FUNCTION\_SET\_CONNECTINFO** from the AVC\_FUNCTION enumeration.
 
 <span id="SetConnectInfo"></span><span id="setconnectinfo"></span><span id="SETCONNECTINFO"></span>**SetConnectInfo**  
@@ -98,7 +99,7 @@ After determining that the data ranges are compatible, the intersect handler gen
 
 This must be called at IRQL = PASSIVE\_LEVEL.
 
-### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
+### See Also
 
 [**AVC\_MULTIFUNC\_IRB**](https://msdn.microsoft.com/library/windows/hardware/ff554177), [**AVC\_SETCONNECT\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff554192), [**AVCCONNECTINFO**](https://msdn.microsoft.com/library/windows/hardware/ff554101), [**AVC\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554145), [**AV/C Intersect Handler**](https://msdn.microsoft.com/library/windows/hardware/ff556379)
 

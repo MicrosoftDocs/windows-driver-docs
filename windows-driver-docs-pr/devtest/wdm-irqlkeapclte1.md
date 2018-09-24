@@ -2,7 +2,7 @@
 title: IrqlKeApcLte1 rule (wdm)
 ms.assetid: d88e3c0f-574b-41df-97ee-282a9f1eb6f4
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - IrqlKeApcLte1
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IrqlKeApcLte1 rule (wdm)

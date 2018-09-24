@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_WWAN_NETWORK_IDLE_HINT Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_NETWORK\_IDLE\_HINT

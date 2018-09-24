@@ -3,7 +3,7 @@ title: PowerDownFail rule (wdm)
 description: The PowerDownFail rule specifies that a FDO or FIDO driver should not fail an IRP\_MN\_SET\_POWER request when the device is powering down. This rule only applies to FDO and FIDO drivers.
 ms.assetid: 1C4CFF0D-E1E3-48CE-9F5A-C02BF95973C7
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - PowerDownFail
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # PowerDownFail rule (wdm)

@@ -4,7 +4,7 @@ description: The question mark ( ) character displays a list of all commands and
 ms.assetid: 89b61021-43a4-46b7-ae43-a52dd9d40948
 keywords: ["(Command Help) Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - (Command Help)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ? (Command Help)
@@ -23,11 +24,8 @@ The question mark (**?**) character displays a list of all commands and operator
 
 **Note**   A question mark by itself displays command help. The [**? expression**](---evaluate-expression-.md) syntax evaluates the given expression.
 
- 
+    ?
 
-```
-?
-```
 
 ## <span id="ddk_cmd_command_help_dbg"></span><span id="DDK_CMD_COMMAND_HELP_DBG"></span>
 

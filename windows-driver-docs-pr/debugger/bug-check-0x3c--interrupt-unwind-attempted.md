@@ -14,6 +14,7 @@ api_name:
 - INTERRUPT_UNWIND_ATTEMPTED
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x3C: INTERRUPT\_UNWIND\_ATTEMPTED

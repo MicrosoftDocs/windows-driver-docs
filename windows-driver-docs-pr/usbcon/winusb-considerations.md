@@ -7,6 +7,7 @@ ms.date: 05/09/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Choosing a driver model for developing a USB client driver

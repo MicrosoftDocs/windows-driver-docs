@@ -14,6 +14,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # AVC\_FUNCTION\_GET\_UNIQUE\_ID
@@ -24,7 +25,7 @@ ms.technology: windows-devices
 
 The **AVC\_FUNCTION\_GET\_UNIQUE\_ID** function code obtains the unique ID of the AV/C unit.
 
-### <span id="i_o_status_block"></span><span id="I_O_STATUS_BLOCK"></span>I/O Status Block
+### I/O Status Block
 
 If successful, the AV/C protocol driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
 
@@ -59,7 +60,7 @@ Possible other return values include:
 
  
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 This function uses the **UniqueID** member of the AVC\_MULTIFUNC\_IRB structure as shown below.
 
@@ -86,13 +87,13 @@ typedef struct _AVC_UNIQUE_ID {
 } AVC_UNIQUE_ID, *PAVC_UNIQUE_ID;
 ```
 
-### <span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
+### Requirements
 
 **Headers:** Declared in *avc.h*. Include *avc.h*.
 
-### <span id="avc_multifunc_irb_input"></span><span id="AVC_MULTIFUNC_IRB_INPUT"></span>AVC\_MULTIFUNC\_IRB Input
+### AVC\_MULTIFUNC\_IRB Input
 
-<span id="Common"></span><span id="common"></span><span id="COMMON"></span>**Common**  
+**Common**  
 The **Function** submember of this member must be set to **AVC\_FUNCTION\_GET\_UNIQUE\_ID** from the AVC\_FUNCTION enumeration.
 
 <span id="UniqueID"></span><span id="uniqueid"></span><span id="UNIQUEID"></span>**UniqueID**  
@@ -104,7 +105,7 @@ The subunit driver uses this function if it must report the device GUID to a con
 
 This must be called at IRQL = PASSIVE\_LEVEL.
 
-### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
+### See Also
 
 [**AVC\_MULTIFUNC\_IRB**](https://msdn.microsoft.com/library/windows/hardware/ff554177), [**AVC\_UNIQUE\_ID**](https://msdn.microsoft.com/library/windows/hardware/ff554200), [**AVCPRECONNECTINFO**](https://msdn.microsoft.com/library/windows/hardware/ff554103), [**AVC\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554145)
 

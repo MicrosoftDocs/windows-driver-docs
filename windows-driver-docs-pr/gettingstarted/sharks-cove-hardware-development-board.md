@@ -7,10 +7,13 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sharks Cove hardware development board
 
+> [!WARNING]
+> The Sharks Cove hardware development board is no longer supported for Windows IoT Core.  For a list of currently supported boards, see [SoCs and custom boards](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/socsandcustomboards).
 
 Sharks Cove is a [hardware development board](http://go.microsoft.com/fwlink/p?linkid=506967) that you can use to develop hardware and drivers for Windows.
 

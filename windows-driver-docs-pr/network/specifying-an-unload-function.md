@@ -14,6 +14,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying an Unload Function
@@ -41,7 +42,7 @@ NTSTATUS
 {
   ...
 
-  // Specify the callout driver&#39;s Unload function
+  // Specify the callout driver's Unload function
  DriverObject->DriverUnload = Unload;
 
   ...
@@ -76,7 +77,7 @@ NTSTATUS
   // Indicate that this is a non-PNP driver
  config.DriverInitFlags = WdfDriverInitNonPnpDriver;
 
-  // Specify the callout driver&#39;s Unload function
+  // Specify the callout driver's Unload function
  config.EvtDriverUnload = Unload;
 
   // Create a WDFDRIVER object

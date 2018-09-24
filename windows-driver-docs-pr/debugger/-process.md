@@ -4,7 +4,7 @@ description: The process extension displays information about the specified proc
 ms.assetid: 57f55632-8320-47cc-8a20-5a2cf3b42b3a
 keywords: ["process Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 08/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - process
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !process
@@ -42,7 +43,7 @@ Specifies the module that owns the desired process.
 <span id="_Process"></span><span id="_process"></span><span id="_PROCESS"></span> *Process*  
 Specifies the hexadecimal address or the process ID of the process on the target computer.
 
-The value of *Process* determines whether the !process extension displays a process address or a process ID . If *Process* is omitted in any version of Windows, the debugger displays data only about the current system process. If *Process* is 0 and *ImageName* is omitted, the debugger displays information about all active processes.
+The value of *Process* determines whether the !process extension displays a process address or a process ID . If *Process* is omitted in any version of Windows, the debugger displays data only about the current system process. If *Process* is 0 and *ImageName* is omitted, the debugger displays information about all active processes. If -1 is specifed for *Process* information about the current process is displayed.
 
 <span id="Flags"></span><span id="flags"></span><span id="FLAGS"></span>*Flags*  
 Specifies the level of detail to display. *Flags* can be any combination of the following bits. If *Flags* is 0, only a minimal amount of information is displayed. The default varies according to the version of Windows and the value of *Process*. The default is 0x3 if *Process* is omitted or if *Process* is either 0 or -1; otherwise, the default is 0xF.
@@ -57,10 +58,10 @@ Displays a list of threads and events associated with the process, and their wai
 Displays a list of threads associated with the process. If this is included without Bit 1 (0x2), each thread is displayed on a single line. If this is included along with Bit 1, each thread is displayed with a stack trace.
 
 <span id="Bit_3__0x8_"></span><span id="bit_3__0x8_"></span><span id="BIT_3__0X8_"></span>Bit 3 (0x8)  
-(Windows XP and later) Displays the return address, the stack pointer, and (on Itanium-based systems) the **bsp** register value for each function. The display of function arguments is suppressed.
+ Displays the return address and the stack pointer for each function The display of function arguments is suppressed.
 
 <span id="Bit_4__0x10_"></span><span id="bit_4__0x10_"></span><span id="BIT_4__0X10_"></span>Bit 4 (0x10)  
-(Windows XP and later) Sets the process context equal to the specified process for the duration of this command. This results in a more accurate display of thread stacks. Because this flag is equivalent to using [**.process /p /r**](-process--set-process-context-.md) for the specified process, any existing user-mode module list will be discarded. If *Process* is zero, the debugger displays all processes, and the process context is changed for each one. If you are only displaying a single process and its user-mode state has already been refreshed (for example, with **.process /p /r**), it is not necessary to use this flag. This flag is only effective when used with Bit 0 (0x1).
+ Sets the process context equal to the specified process for the duration of this command. This results in a more accurate display of thread stacks. Because this flag is equivalent to using [**.process /p /r**](-process--set-process-context-.md) for the specified process, any existing user-mode module list will be discarded. If *Process* is zero, the debugger displays all processes, and the process context is changed for each one. If you are only displaying a single process and its user-mode state has already been refreshed (for example, with **.process /p /r**), it is not necessary to use this flag. This flag is only effective when used with Bit 0 (0x1).
 
 <span id="ImageName"></span><span id="imagename"></span><span id="IMAGENAME"></span>*ImageName*  
 Specifies the name of the process to be displayed. The debugger displays all processes whose executable image names match *ImageName*. The image name must match that in the EPROCESS block. In general, this is the executable name that was invoked to start the process, including the file extension (usually .exe), and truncated after the fifteenth character. There is no way to specify an image name that contains a space. When *ImageName* is specified, *Process* must be zero.

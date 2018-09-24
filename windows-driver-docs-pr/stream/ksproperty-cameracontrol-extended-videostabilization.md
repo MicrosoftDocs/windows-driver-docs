@@ -12,19 +12,18 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 9/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_VIDEOSTABILIZATION
 
-
 This extended property control is used to control digital video stabilization in driver\\MFT0.
 
-## <span id="Usage_summary_table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage summary table
-
+## Usage summary table
 
 <table>
 <colgroup>
@@ -48,8 +47,6 @@ This extended property control is used to control digital video stabilization in
 </tbody>
 </table>
 
- 
-
 The following flags that can be placed in the KSCAMERA\_EXTENDEDPROP\_HEADER.Flags field flags to control digital video stabilization in driver\\MFT0. By default, the driver should have video stabilization off.
 
 ``` syntax
@@ -66,9 +63,8 @@ The SET call of this control has no effect when the video pin is in any state hi
 
 When this control is used in the context of a profile, the profile shall serve as a hint to the driver for the quality mode. The driver can determine whether to optimize for low latency or high quality when video stabilization is turned on based on the profile selected, for example, video conference or high quality video recording.
 
-**Note**  PROPSETID\_VIDCAP\_CAMERACONTROL\_VIDEO\_STABILIZATION will be deprecated for Windows 10.
-
- 
+> [!NOTE]
+> PROPSETID\_VIDCAP\_CAMERACONTROL\_VIDEO\_STABILIZATION will be deprecated for Windows 10.
 
 The following table describes the flag capabilities.
 
@@ -99,11 +95,8 @@ The following table describes the flag capabilities.
 </tbody>
 </table>
 
- 
-
-**Note**  Depending on the implementation, the overscanned buffer may be allocated either by the driver internally or by the pipeline.
-
- 
+> [!NOTE]
+> Depending on the implementation, the overscanned buffer may be allocated either by the driver internally or by the pipeline.
 
 If the overscanned buffer is to be allocated by the driver, the driver should advertise both the regular media type and the overscanned media type. The MFT0 should advertise the regular media type. Upon setting the regular media type on the output media type of MFT0, the MFT0 should select the corresponding overscanned media type from the driver advertised media types as its input media type, if the video stabilization is turned on. If the video stabilization is turned off, the MFT0 should select the regular media type as its input media type. The MFT0 should return MF\_E\_INVALIDMEDIATYPE if overscanned media type is set as its output media type when the video stabilization is turned on.
 
@@ -115,7 +108,7 @@ In order to support effect based video stabilization (i.e., video stabilization 
 
 -   If a regular media type is set as the MFT0 output media type, the app should return an error in the attempt of turning on the effect based video stabilization if the effect based video stabilization can only take the overscanned media type.
 
-The table below contains the descriptions and requirements for the [KSCAMERA\_EXTENDEDPROP\_HEADER](https://msdn.microsoft.com/library/windows/hardware/dn567563) structure fields when using the video stabilization control.
+The table below contains the descriptions and requirements for the [KSCAMERA\_EXTENDEDPROP\_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the video stabilization control.
 
 <table>
 <colgroup>
@@ -156,10 +149,7 @@ The table below contains the descriptions and requirements for the [KSCAMERA\_EX
 </tbody>
 </table>
 
- 
-
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -173,12 +163,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

@@ -14,6 +14,7 @@ api_name:
 - up (Unassemble from Physical Memory)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # up (Unassemble from Physical Memory)

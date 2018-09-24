@@ -14,6 +14,7 @@ api_name:
 - .settings (Set Debug Settings)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .settings (Set Debug Settings)

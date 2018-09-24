@@ -9,6 +9,7 @@ api_name:
 - Defaults Section of a TxtSetup.oem File
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Defaults Section of a TxtSetup.oem File

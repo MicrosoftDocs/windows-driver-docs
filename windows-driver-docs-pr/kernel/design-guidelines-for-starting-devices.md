@@ -3,6 +3,7 @@ title: Design Guidelines for Starting Devices
 author: windows-driver-content
 description: Design Guidelines for Starting Devices
 ms.assetid: fbdde107-f3a5-4713-a4ac-1c9bafa3c634
+ms.localizationpriority: medium
 ---
 
 # Design Guidelines for Starting Devices

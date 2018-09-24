@@ -1,9 +1,9 @@
 ---
 title: IrqlZwPassive rule (wdm)
-description: The IrqlZwPassive rule specifies that the driver calls ZwClose only when it is executing at IRQL�  PASSIVE\_LEVEL.
+description: The IrqlZwPassive rule specifies that the driver calls ZwClose only when it is executing at IRQL�  PASSIVE\_LEVEL.
 ms.assetid: d31612ad-e869-4fc7-bc09-e5b4d5362585
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - IrqlZwPassive
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IrqlZwPassive rule (wdm)

@@ -14,6 +14,7 @@ api_name:
 - .cordll (Control CLR Debugging)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .cordll (Control CLR Debugging)

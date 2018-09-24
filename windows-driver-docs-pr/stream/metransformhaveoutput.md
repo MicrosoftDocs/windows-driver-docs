@@ -7,6 +7,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # METransformHaveOutput
@@ -28,7 +29,7 @@ When Device MFT raises **METransformHaveOutput**, DTM would relay the event to D
 
 None.
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 Device MFT would receive the total output stream count of **MFT\_OUTPUT\_DATA\_BUFFER** structures in an array. It is expected to fill in the structure members with appropriate values. Before DTM calls back into the Device MFT to retrieve a sample, in response to a **METransformHaveOutput** message, if another sample becomes available for another stream, Device MFT would go ahead and send the sample in this ProcessOutput call. DTM would call ProcessOutput again, but at that time, Device MFT could just return the call with no samples if none is available.

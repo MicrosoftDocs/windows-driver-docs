@@ -3,6 +3,7 @@ title: Windows kernel routines reserved for system use
 author: windows-driver-content
 description: Windows kernel routines reserved for system use
 ms.assetid: 78b0562a-903a-467d-9bf0-f5499ae47063
+ms.localizationpriority: medium
 ---
 
 # Windows kernel routines reserved for system use

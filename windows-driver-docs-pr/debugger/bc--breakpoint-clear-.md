@@ -14,6 +14,7 @@ api_name:
 - bc (Breakpoint Clear)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # bc (Breakpoint Clear)

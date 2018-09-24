@@ -4,7 +4,7 @@ description: The arbinst extension displays information about a specified arbite
 ms.assetid: 6aa06283-9cd7-4579-9e5d-40bbaf53f782
 keywords: ["arbiter", "arbinst Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - arbinst
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !arbinst
@@ -21,9 +22,7 @@ api_type:
 
 The **!arbinst** extension displays information about a specified arbiter.
 
-```
-!arbinst Address [Flags]
-```
+    !arbinst Address [Flags]
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -68,7 +67,7 @@ For the arbiter specified, **!arbinst** displays each allocated range of system 
 
 Here is an example:
 
-```
+```console
 kd> !arbinst e0000106002ee8e8
 Port Arbiter "PCI I/O Port (b=02)" at e0000106002ee8e8
   Allocated ranges:

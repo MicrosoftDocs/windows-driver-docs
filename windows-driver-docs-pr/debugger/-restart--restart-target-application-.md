@@ -14,6 +14,7 @@ api_name:
 - .restart (Restart Target Application)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .restart (Restart Target Application)

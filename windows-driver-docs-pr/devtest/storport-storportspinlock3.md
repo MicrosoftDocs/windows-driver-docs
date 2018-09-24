@@ -3,7 +3,7 @@ title: StorPortSpinLock3 rule (storport)
 description: The StorPortSpinLock3 rule verifies the lock acquisition hierarchy that is described in the documentation for the StorPortAcquireSpinLock routine.
 ms.assetid: EC637CBD-A45D-44C6-8FAA-7035A36144B6
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - StorPortSpinLock3
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # StorPortSpinLock3 rule (storport)

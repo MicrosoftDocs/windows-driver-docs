@@ -14,6 +14,7 @@ api_name:
 - ndiskd.netadapter
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.netadapter

@@ -2,6 +2,7 @@
 title: ENCRYPTION\_TYPES\_QUALIFIERS
 description: ENCRYPTION\_TYPES\_QUALIFIERS
 ms.assetid: a1caedb8-18ab-4810-ac46-691925df250e
+ms.localizationpriority: medium
 ---
 
 # ENCRYPTION\_TYPES\_QUALIFIERS

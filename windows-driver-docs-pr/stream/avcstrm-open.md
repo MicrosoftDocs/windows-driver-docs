@@ -14,6 +14,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # AVCSTRM\_OPEN
@@ -24,7 +25,7 @@ ms.technology: windows-devices
 
 The **AVCSTRM\_OPEN** function code opens a stream with a specific stream format.
 
-### <span id="i_o_status_block"></span><span id="I_O_STATUS_BLOCK"></span>I/O Status Block
+### I/O Status Block
 
 If successful, *avcstrm.sys* sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
 
@@ -69,7 +70,7 @@ Possible error return values include:
 
  
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 This function uses the **OpenStruct** member of the **CommandData** union in the AVC\_STREAM\_REQUEST\_BLOCK structure as shown below.
 
@@ -93,7 +94,7 @@ typedef struct _AVC_STREAM_REQUEST_BLOCK {
 } AVC_STREAM_REQUEST_BLOCK, *PAVC_STREAM_REQUEST_BLOCK;
 ```
 
-### <span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
+### Requirements
 
 **Headers:** Declared in *avcstrm.h*. Include *avcstrm.h*.
 
@@ -154,7 +155,7 @@ A subunit driver can expect this command to complete synchronously. The result r
 
 This function code must be called at IRQL = PASSIVE\_LEVEL.
 
-### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
+### See Also
 
 [**AVC\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff554194), [**INIT\_AVCSTRM\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff560750), [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550766), [**IOCTL\_AVCSTRM\_CLASS**](https://msdn.microsoft.com/library/windows/hardware/ff560778), [**AVCSTRM\_OPEN\_STRUCT**](https://msdn.microsoft.com/library/windows/hardware/ff554127), [**AVCSTRM\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554120), [**AVCSTRM\_FORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff554114), [**AVCSTRM\_FORMAT\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff554117)
 

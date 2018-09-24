@@ -4,7 +4,7 @@ description: The .attach command attaches to a new target application.
 ms.assetid: e637c7eb-9c3c-4501-b972-a9293a6da52a
 keywords: ["Attach to Process (.attach) command", "process, Attach to Process (.attach) command", ".attach (Attach to Process) Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - .attach (Attach to Process)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .attach (Attach to Process)
@@ -21,9 +22,9 @@ api_type:
 
 The **.attach** command attaches to a new target application.
 
-```
+    
 .attach [-premote RemoteOptions] AttachOptions PID
-```
+
 
 ## <span id="ddk_meta_attach_to_process_dbg"></span><span id="DDK_META_ATTACH_TO_PROCESS_DBG"></span>Parameters
 

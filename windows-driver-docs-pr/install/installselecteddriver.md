@@ -11,6 +11,7 @@ api_location:
 - Newdev.dll
 api_type:
 - DllExport
+ms.localizationpriority: medium
 ---
 
 # InstallSelectedDriver function

@@ -4,7 +4,7 @@ description: The acpiinf extension displays information on the configuration of 
 ms.assetid: 06e3e57b-f486-4165-87ea-37d80a00c34c
 keywords: ["acpiinf Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - acpiinf
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !acpiinf
@@ -21,9 +22,8 @@ api_type:
 
 The **!acpiinf** extension displays information on the configuration of the Advanced Configuration and Power Interface (ACPI), including the location of system tables and the contents of the ACPI fixed feature hardware.
 
-```
-!acpiinf
-```
+   !acpiinf
+
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 

@@ -9,6 +9,7 @@ api_name:
 - CM_Enable_DevNode_Ex
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Enable_DevNode_Ex

@@ -14,6 +14,7 @@ api_name:
 - RAMDISK_BOOT_INITIALIZATION_FAILED
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xF8: RAMDISK\_BOOT\_INITIALIZATION\_FAILED

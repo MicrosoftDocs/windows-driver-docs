@@ -9,6 +9,7 @@ api_name:
 - HwComponent Section of a TxtSetup.oem File
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # HwComponent Section of a TxtSetup.oem File

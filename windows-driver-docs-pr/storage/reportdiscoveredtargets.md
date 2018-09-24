@@ -2,6 +2,7 @@
 title: ReportDiscoveredTargets
 description: ReportDiscoveredTargets
 ms.assetid: f36adeb4-9379-49a7-8f2a-4efcbfcef561
+ms.localizationpriority: medium
 ---
 
 # ReportDiscoveredTargets

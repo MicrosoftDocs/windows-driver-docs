@@ -7,11 +7,14 @@ ms.date: 08/24/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Pairing a driver with a Universal Windows Platform (UWP) app
 
-Starting in Windows 10 version 1709, you can specify that a Universal Windows Platform (UWP) app should only load if a specific driver is present.  The app can further constrain loading to a particular driver version or date.  This topic describes the steps required in both the app and driver to create such a requirement.
+Starting in Windows 10 version 1709, you can specify that a Universal Windows Platform (UWP) app should only load if a specific driver is present. When you use this option, the Microsoft Store offers each user the most recent version of the app that works with the installed version of the driver on that user's computer.
+
+The app can further constrain loading to a particular driver version or date.  This topic describes the steps required in both the app and driver to create such a requirement.
 
 ## Steps in the app
 

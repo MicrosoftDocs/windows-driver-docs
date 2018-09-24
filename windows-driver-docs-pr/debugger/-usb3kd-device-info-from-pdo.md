@@ -14,6 +14,7 @@ api_name:
 - usb3kd.device_info_from_pdo
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !usb3kd.device\_info\_from\_pdo

@@ -9,6 +9,7 @@ ms.date: 06/05/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting NDIS miniport drivers to NetAdapterCx
@@ -37,29 +38,22 @@ Open your existing NDIS miniport driver project in Visual Studio and use the fol
   
 5. Add [standard WDF decorations](../wdf/specifying-wdf-directives-in-inf-files.md) to your INF:
   
-  ```Inf
+  ```INF
   [Yourdriver.Wdf]
   KmdfService = Yourdriverservice, Yourdriver.wdfsect
 
   [Yourdriver.wdfsect]
   KmdfLibraryVersion = <insert here>
   ```
-6. Add new required networking keywords to the NT section of your INF.
+6. Add new required networking keywords to the NT section of your INF:
 
-  ```Inf
-  [Device.NT]
-  CopyFiles=Drivers_Dir
-  ; Existing network keywords
-  *IfType       = 6
-  *MediaType     = 0
-  *PhysicalMediaType = 14
-  ; New network keywords
-  *IfConnectorPresent = 0 ; BOOLEAN
-  *ConnectionType   = 1 ; NET_IF_CONNECTION_TYPE
-  *DirectionType   = 0 ; NET_IF_DIRECTION_TYPE
-  *AccessType     = 2 ; NET_IF_ACCESS_TYPE
-  *HardwareLoopback  = 0 ; BOOLEAN
-  ```
+    - **\*IfConnectorPresent**
+    - **\*ConnectionType**
+    - **\*DirectionType**
+    - **\*AccessType**
+    - **\*HardwareLoopback**
+
+    For more information about these keywords and an example, see [INF files for NetAdapterCx client drivers](inf-files-for-netadaptercx-client-drivers.md).
 
 ## Driver initialization
 
@@ -81,9 +75,9 @@ If it is set, remove the **WdfDriverInitNoDispatchOverride** flag from the call 
 
 Next, you'll distribute code from *MiniportInitializeEx* into the appropriate WDF event callback handlers, several of which are optional. For details on the callback sequence, see [Power-Up Sequence for an Network Adapter WDF Client Driver](power-up-sequence-for-a-netadaptercx-client-driver.md).
 
-For info on the callbacks you'll need to provide, see [Device initialization](device-initialization.md).
- 
-[*EVT_NET_ADAPTER_SET_CAPABILITIES*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities) is where the client calls the methods equivalent to [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672). However, instead of calling one routine with a generic [**NDIS_MINIPORT_ADAPTER_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565920) structure, the client driver calls different functions to set different types of capabilities. For more info, see the Remarks section of [*EVT_NET_ADAPTER_SET_CAPABILITIES*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities).
+You'll call the methods equivalent to [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) when you're starting your net adapter, but before you call [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstart). However, instead of calling one routine with a generic [**NDIS_MINIPORT_ADAPTER_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565920) structure, the client driver calls different functions to set different types of capabilities.
+
+For info on the callbacks you'll need to provide and when to start a net adapter, see [Device and adapter initialization](device-and-adapter-initialization.md).
 
 ## Creating queues to manage control requests
 
@@ -155,7 +149,7 @@ The data path programming model has changed significantly. Here are some key dif
 * Instead of NET_BUFFER_LIST and NET_BUFFER pools, NetAdapterCx introduces a ring buffer that is comprised of net packets, which map to NDIS as follows:
   * A [**NET_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet) is similar to a NET_BUFFER_LIST + NET_BUFFER.
   * A [**NET_PACKET_FRAGMENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet_fragment) is similar to a memory descriptor list (MDL). Each [**NET_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet) has one or more of these.
-  * For details on the replacement structures and how to use them, see [Transferring network data](transferring-network-data.md).
+  * For details on the replacement structures and how to use them, see [Packet descriptors and extensions](packet-descriptors-and-extensions.md).
 * In NDIS 6.x, the miniport needs to handle start and pause semantics. In the NetAdapterCx model, this is no longer the case.
 * The [*EVT_RXQUEUE_ADVANCE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrxqueue/nc-netrxqueue-evt_rxqueue_advance) callback is similar to [**MINIPORT_RETURN_NET_BUFFER_LISTS**](https://msdn.microsoft.com/library/windows/hardware/ff559437) in NDIS 6.x.
 * The [*EVT_TXQUEUE_ADVANCE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nettxqueue/nc-nettxqueue-evt_txqueue_advance) callback is similar to [**MINIPORT_SEND_NET_BUFFER_LISTS**](https://msdn.microsoft.com/library/windows/hardware/ff559440) in NDIS 6.x.

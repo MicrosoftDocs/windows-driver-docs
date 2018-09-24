@@ -13,6 +13,7 @@ api_name:
 - IPrinterBidiSchemaElement.Value
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaElement::Value method

@@ -7,6 +7,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Video Capture Minidriver Property Sets
@@ -40,7 +41,7 @@ These headings have the following meanings:
 
 -   **Property descriptor type**
 
-    The property descriptor specifies the property and the operation to perform on that property. The descriptor always begins with a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure, but some types of descriptor contain additional information. For example, the [**KSNODEPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff537143) structure is a property descriptor that begins with a KSPROPERTY structure but also includes a node identifier.
+    The property descriptor specifies the property and the operation to perform on that property. The descriptor always begins with a [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier) structure, but some types of descriptor contain additional information. For example, the [**KSNODEPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff537143) structure is a property descriptor that begins with a KSPROPERTY structure but also includes a node identifier.
 
 -   **Property value type**
 

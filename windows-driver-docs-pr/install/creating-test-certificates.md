@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating Test Certificates
@@ -27,7 +28,7 @@ The following command-line example uses MakeCert to complete the following tasks
 Use the following MakeCert command to create the *Contoso.com(Test)* certificate:
 
 ```
-makecert -r -pe -ss PrivateCertStore -n CN=Contoso.com(Test) ContosoTest.cer
+makecert -r -pe -ss PrivateCertStore -n CN=Contoso.com(Test) -eku 1.3.6.1.5.5.7.3.3 ContosoTest.cer
 ```
 
 Where:
@@ -38,13 +39,19 @@ Where:
 
 -   The **-ss** option specifies the name of the certificate store that contains the test certificate (*PrivateCertStore*).
 
--   The **-n CN=** option specifies the name of the certificate, Contoso.com(Test). This name is used with the [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) tool to identify the certificate.
+-   The **-n CN=** option specifies the name of the certificate, Contoso.com(Test). This name is used with the [**SignTool**](../devtest/signtool.md) tool to identify the certificate.
+
+-   The EKU option limits the usage of the resulting certificate to code signing.
 
 -   *ContosoTest.cer* is the file name that contains a copy of the test certificate, Contoso.com(Test). The certificate file is used to add the certificate to the Trusted Root Certification Authorities certificate store and the Trusted Publishers certificate store.
 
+The certificate store that contains the test certificate is added to the list of certificate stores that Windows manages for the user account on the development computer on which the certificate store was created.
+
+A developer has to create only one MakeCert test certificate to sign all [driver packages](driver-packages.md) on a development computer.
+
 For more information about the MakeCert tool and its command-line arguments, see [**MakeCert**](https://msdn.microsoft.com/library/windows/hardware/ff548309).
 
-Also, refer to the readme file *Selfsign_readme.htm* and the script file *Selfsign_example.cmd*, which are located in the *src\\general\\build\\driversigning* directory of the Windows Driver Kit (WDK). The script file *Selfsign_example.cmd* includes a documented example of how to use MakeCert to create a test certificate.
+Also refer to the readme file *Selfsign_readme.htm* in the *bin\\selfsign* directory of the Windows Driver Kit (WDK).
 
  
 

@@ -7,6 +7,7 @@ ms.date: 01/30/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Enable WSPrint 2.0 on a device

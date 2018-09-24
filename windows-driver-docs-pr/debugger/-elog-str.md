@@ -14,6 +14,7 @@ api_name:
 - elog_str
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !elog\_str

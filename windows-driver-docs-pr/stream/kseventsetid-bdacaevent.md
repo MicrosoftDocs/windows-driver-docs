@@ -7,6 +7,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KSEVENTSETID\_BdaCAEvent
@@ -31,11 +32,11 @@ Notifies of a status change on the smart card reader associated with an ECM map 
 <span id="KSEVENT_BDA_CA_MODULE_UI_REQUESTED"></span><span id="ksevent_bda_ca_module_ui_requested"></span>[**KSEVENT\_BDA\_CA\_MODULE\_UI\_REQUESTED**](ksevent-bda-ca-module-ui-requested.md)  
 Notifies of the existence of UI that a CA plugin can retrieve and display.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 Each event in this event set corresponds to a property in the KSPROPSETID\_BdaCA property set. CA plugins request to be notified when events in a BDA component occur. BDA minidrivers signal events in this event set to notify CA plugins. Those CA plugins then query corresponding properties in KSPROPSETID\_BdaCA. BDA minidrivers signal these events either whenever a significant status change occurs or to interact with a user. BDA minidrivers interact with a user, for example, to present a message to the user or to negotiate a transaction with a user. A significant status change is, for example, when a user removes a smart card from the smart card reader.
 
-### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
+### See Also
 
 [KSPROPSETID\_BdaCA](kspropsetid-bdaca.md)
 

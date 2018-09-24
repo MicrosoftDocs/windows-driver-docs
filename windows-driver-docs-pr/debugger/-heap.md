@@ -14,6 +14,7 @@ api_name:
 - heap
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !heap

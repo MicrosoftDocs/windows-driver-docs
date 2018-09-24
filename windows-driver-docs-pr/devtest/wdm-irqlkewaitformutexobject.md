@@ -2,7 +2,7 @@
 title: IrqlKeWaitForMutexObject rule (wdm)
 ms.assetid: f2e7b733-1746-4db5-b4a9-becd211e40cf
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - IrqlKeWaitForMutexObject
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IrqlKeWaitForMutexObject rule (wdm)

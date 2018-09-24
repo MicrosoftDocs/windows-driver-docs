@@ -7,6 +7,7 @@ ms.date: 05/07/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 
@@ -31,7 +32,7 @@ As of Windows 10, version 1703, the latest updates to the UEFI Specification reg
 
 ## Related resources
 
-[UEFI Specification Documents](http://www.uefi.org/specifications)
+[UEFI Specification Documents](https://www.uefi.org/specifications)
 
 
 

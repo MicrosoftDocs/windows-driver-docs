@@ -14,6 +14,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SRB\_PAGING\_OUT\_DRIVER
@@ -31,7 +32,7 @@ The minidriver should set one of the following as the status in the SRB:
 <span id="STATUS_SUCCESS"></span><span id="status_success"></span>STATUS\_SUCCESS  
 Indicates successful completion of the command.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 The class driver only attempts to page out the minidriver if it has no open streams or devices. Though it is unlikely that a minidriver would have pending callbacks in this state, the minidriver should cancel any outstanding callbacks upon receipt of this SRB. The minidriver should disable adapter interrupts and then return STATUS\_SUCCESS.
 

@@ -7,6 +7,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # CODECAPI\_SUPPORTSEVENTS
@@ -49,13 +50,13 @@ The CODECAPI\_SUPPORTSEVENTS property is used to indicate whether the minidriver
 
 The property value (operation data) is of type BOOL, which specifies whether the minidriver supports user-mode events. A value of **TRUE** indicates the minidriver provides support. The minidriver should not support this GUID if it does not support the event mechanism.
 
-### <span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
+### Requirements
 
 **Headers:** Declared in *ksmedia.h*. Include *ksmedia.h*.
 
-### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
+### See Also
 
-[**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262)
+[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
  
 

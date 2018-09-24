@@ -12,19 +12,18 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 9/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_VFR
 
-
 KSPROPERTY\_CAMERACONTROL\_EXTENDED\_VFR is a property ID that will be used to specify whether variable frame rate is desired on the driver. This is a pin level control for video pin only. For preview and photo, the frame rate variability is entirely up to the driver and is not controllable by the client.
 
-## <span id="Usage_summary_table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage summary table
-
+## Usage summary table
 
 <table>
 <colgroup>
@@ -48,15 +47,12 @@ KSPROPERTY\_CAMERACONTROL\_EXTENDED\_VFR is a property ID that will be used to s
 </tbody>
 </table>
 
- 
-
 The following flags can be placed in the **KSCAMERA\_EXTENDEDPROP\_HEADER.Flags** field, which are used to turn on and off variable frame rate for video. The default is up to the driver.
 
 ``` syntax
-#define KSCAMERA_EXTENDEDPROP_VFR_OFF               0x0000000000000000  
-#define KSCAMERA_EXTENDEDPROP_VFR_ON                0x0000000000000001
+#define KSCAMERA_EXTENDEDPROP_VFR_OFF   0x0000000000000000  
+#define KSCAMERA_EXTENDEDPROP_VFR_ON    0x0000000000000001
 ```
-
 If set to VFR\_OFF, driver shall deliver fixed frame rate for the video pin.
 
 If set to VFR\_ON, the frame rate is automatically determined by the driver and can vary based on the capture condition and scenario for the video pin. When VFR\_ON is set, the maximum frame rate allowed is further determined by the fixed frame rate embedded in the media type selected for video recording.
@@ -65,9 +61,9 @@ If the driver does not support variable frame rate for video, the driver should 
 
 This control has no effect during the video recording for the driver that doesn’t support on the fly toggling of the VFR settings. The driver shall ignore the control received during an active video recording in that case.
 
-This is a synchronous control. There are no capabilities defined for this control.
+This is a synchronous control and not cancelable. There are no capabilities defined for this control.
 
-The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925136) structure fields when using the control.
+The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
 
 <table>
 <colgroup>
@@ -108,10 +104,7 @@ The following table contains the descriptions and requirements for the [**KSCAME
 </tbody>
 </table>
 
- 
-
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -125,12 +118,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

@@ -16,6 +16,7 @@ api_name:
 - IOleCvt.ToUtf8
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # IOleCvt::ToUtf8 method

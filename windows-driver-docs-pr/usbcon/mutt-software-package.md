@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Tools in the MUTT software package
@@ -29,7 +30,7 @@ The MUTT software package contains several tools to be used with [MUTT devices](
 
 The Microsoft USB Test Tool (MUTT) software package contains test tools for hardware test engineers to test interoperability of their USB controller or hub with the Microsoft USB driver stack. The included documentation provides a brief overview of the different types of MUTT hardware and suggests topologies for controller, hub, device, and BIOS/UEFI testing. The documentation also contains procedural information about how to run the tests, trace events in the USB driver stack, and capture information in the kernel debugger.
 
-File name: muttv2_4.msi
+File name: muttv2_7.msi
 
 4.82 MB
 
@@ -37,6 +38,9 @@ File name: muttv2_4.msi
 
 ## Version Updates
 
+Changes for version 2.7
+
+- Updated USB Type-C SuperMUTT firmware, tools, and documentation. Compatible with HLK UCSI tests.
 
 Changes for version 2.4
 

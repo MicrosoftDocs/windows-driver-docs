@@ -9,6 +9,7 @@ ms.date: 06/05/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Configuring power management
@@ -29,7 +30,7 @@ For details on the common WDF behaviors, see the following pages:
 
 After configuring the standard WDF power management functionality, the next step is to call [**NetAdapterSetPowerCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetpowercapabilities) to set the power capabilities of the network adapter.
 
-The following example shows how to initialize and configure a NETPOWERSETTINGS object, which the client typically does in its [*EVT_NET_ADAPTER_SET_CAPABILITIES*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities) callback:
+The following example shows how to initialize and configure a NETPOWERSETTINGS object, which the client typically does when starting a net adapter, but before calling [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstart):
 
 ```C++
 NET_ADAPTER_POWER_CAPABILITIES     powerCaps;
@@ -48,7 +49,7 @@ powerCaps.EvtAdapterPreviewProtocolOffload = EvtAdapterPreviewProtocolOffload;
 NetAdapterSetPowerCapabilities(NetAdapter, &powerCaps);
 ```
 
-The client can register [*EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_preview_protocol_offload) and [*EVT_NET_ADAPTER_PREVIEW_WAKE_PATTERN*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_preview_wake_pattern) callback functions to accept or reject incoming protocol offloads and wake patterns. If you would like to register either of these optional callbacks, you must do so within  [*EVT_NET_ADAPTER_SET_CAPABILITIES*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities).
+The client can register [*EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_preview_protocol_offload) and [*EVT_NET_ADAPTER_PREVIEW_WAKE_PATTERN*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_preview_wake_pattern) callback functions to accept or reject incoming protocol offloads and wake patterns. If you would like to register either of these optional callbacks, you must do so while starting a net adapter, before calling [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstart).
 
 ## Programming Protocol Offload and Wake Patterns
 

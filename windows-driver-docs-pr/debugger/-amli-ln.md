@@ -4,7 +4,7 @@ description: The amli ln extension displays the specified method or the method c
 ms.assetid: f763f185-cce2-4bfb-948d-243acfb53aaa
 keywords: ["amli ln Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - amli ln
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !amli ln
@@ -23,9 +24,8 @@ The **!amli ln** extension displays the specified method or the method containin
 
 Syntax
 
-```
-!amli ln [ MethodName | CodeAddress ]
-```
+    !amli ln [ MethodName | CodeAddress ]
+
 
 ## <span id="ddk__amli_ln_dbg"></span><span id="DDK__AMLI_LN_DBG"></span>Parameters
 
@@ -51,7 +51,7 @@ If neither *MethodName* nor *CodeAddress* is specified, the method associated wi
 
 The following command shows the method being currently run:
 
-```
+```console
 kd> !amli ln
 c29accf5: \_WAK
 ```

@@ -15,6 +15,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF DefaultInstall.Services Section
@@ -30,6 +31,8 @@ A **DefaultInstall.Services** section contains one or more [**AddService**](inf-
 [DefaultInstall.Services] |
 [DefaultInstall.nt.Services] |
 [DefaultInstall.ntx86.Services] |
+[DefaultInstall.ntarm.Services] | (Windows 8 and later versions of Windows)
+[DefaultInstall.ntarm64.Services]  (Windows 10 version 1709 and later versions of Windows)
 [DefaultInstall.ntia64.Services] | (Windows XP and later versions of Windows)
 [DefaultInstall.ntamd64.Services]  (Windows XP and later versions of Windows)
  

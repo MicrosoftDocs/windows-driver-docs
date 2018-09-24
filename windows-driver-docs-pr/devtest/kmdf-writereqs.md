@@ -3,7 +3,7 @@ title: WriteReqs rule (kmdf)
 description: The WriteReqs rule specifies that a write request is not passed to inappropriate KMDF methods.
 ms.assetid: 8f5718ec-ab3a-4e4f-8401-9113bf0d9552
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - WriteReqs
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # WriteReqs rule (kmdf)

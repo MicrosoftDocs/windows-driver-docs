@@ -7,6 +7,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KSEVENTSETID\_BdaPinEvent
@@ -25,7 +26,7 @@ Notifies when a pin becomes connected.
 <span id="KSEVENT_BDA_PIN_DISCONNECTED"></span><span id="ksevent_bda_pin_disconnected"></span>[**KSEVENT\_BDA\_PIN\_DISCONNECTED**](ksevent-bda-pin-disconnected.md)  
 Notifies when a pin becomes disconnected.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 The network provider filter uses this event set to register for notification of events related to pins as those events occur.
 

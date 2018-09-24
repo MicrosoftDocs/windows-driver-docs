@@ -14,6 +14,7 @@ api_name:
 - DATA_COHERENCY_EXCEPTION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x55: DATA\_COHERENCY\_EXCEPTION

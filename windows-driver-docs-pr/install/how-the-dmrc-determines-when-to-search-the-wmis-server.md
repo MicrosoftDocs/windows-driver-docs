@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How the DMRC Determines When to Search the WMIS Server
@@ -38,7 +39,7 @@ The following table describes the format and value range for the **CheckBackMDNo
 
 | Data type  | Value range         | Default value |
 |------------|---------------------|---------------|
-| REG_DWORD | 0 to 256, inclusive | 5             |
+| [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) | 0 to 256, inclusive | 5             |
 
  
 
@@ -55,7 +56,7 @@ The following table describes the format and value range for the **CheckBackMDRe
 
 | Data type  | Value range         | Default value |
 |------------|---------------------|---------------|
-| REG_DWORD | 0 to 256, inclusive | 8             |
+| [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) | 0 to 256, inclusive | 8             |
 
  
 

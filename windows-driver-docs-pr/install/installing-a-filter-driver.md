@@ -17,6 +17,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing a Filter Driver
@@ -48,7 +49,7 @@ AddService=cdaudio,,cdaudio_ServiceInstallSection
 : 
 
 [cdaudio_addreg] 
-HKR,,"UpperFilters",0x00010000,"cdaudio" ; REG_MULTI_SZ value 
+HKR,,"UpperFilters",0x00010000,"cdaudio" ; [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) value 
 :
 
 [cdaudio_ServiceInstallSection]
@@ -78,7 +79,7 @@ AddReg = upperfilter_addreg
 upperfilt.sys,,,0x00004000  ; COPYFLG_IN_USE_RENAME
 
 [upperfilter_addreg]
-; append this service to existing REG_MULTI_SZ list, if any
+; append this service to existing [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) list, if any
 HKR,,"UpperFilters",0x00010008,"upperfilt" 
 
 [upperfilter_inst.Services]

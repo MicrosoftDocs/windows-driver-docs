@@ -16,6 +16,7 @@ ms.date: 01/05/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # PFND3DKMT\_CHECKMULTIPLANEOVERLAYSUPPORT callback function

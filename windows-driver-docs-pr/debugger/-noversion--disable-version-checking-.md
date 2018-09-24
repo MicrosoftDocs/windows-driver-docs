@@ -14,6 +14,7 @@ api_name:
 - .noversion (Disable Version Checking)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .noversion (Disable Version Checking)

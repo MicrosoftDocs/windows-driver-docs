@@ -3,7 +3,7 @@ title: IoBuildDeviceControlWaitTimeout rule (wdm)
 description: The IoBuildDeviceControlWaitTimeout rule reports a defect if it detects that this driver will wait indefinitely until the lower driver returns, as the IRP’s event is required to be signaled in the completion routine.
 ms.assetid: 0E6CD3E6-3FDF-4436-AEFB-685586192FED
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - IoBuildDeviceControlWaitTimeout
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IoBuildDeviceControlWaitTimeout rule (wdm)

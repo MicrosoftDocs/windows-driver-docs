@@ -4,7 +4,7 @@ description: The avrf extension controls the settings of Application Verifier an
 ms.assetid: e9313954-a1fa-45a9-bc1a-78be2451f5aa
 keywords: ["avrf Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - avrf
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !avrf
@@ -21,28 +22,27 @@ api_type:
 
 The **!avrf** extension controls the settings of [Application Verifier](application-verifier.md) and displays a variety of output produced by Application Verifier.
 
-```
-!avrf
-!avrf -vs { Length | -a Address }
-!avrf -hp { Length | -a Address }
-!avrf -cs { Length | -a Address }
-!avrf -dlls [ Length ]
-!avrf -trm
-!avrf -ex [ Length ] 
-!avrf -threads [ ThreadID ]
-!avrf -tp [ ThreadID ]
-!avrf -srw  [ Address | Address Length ] [ -stats ]
-!avrf -leak  [ -m ModuleName] [ -r ResourceType] [ -a Address ] [ -t ]
-!avrf -trace TraceIndex 
-!avrf -cnt
-!avrf -brk [BreakEventType]  
-!avrf -flt [EventType Probability] 
-!avrf -flt break EventType 
-!avrf -flt stacks Length 
-!avrf -trg [ Start End | dll Module | all ] 
-!avrf -settings 
-!avrf -skp [ Start End | dll Module | all | Time ] 
-```
+    !avrf
+    !avrf -vs { Length | -a Address }
+    !avrf -hp { Length | -a Address }
+    !avrf -cs { Length | -a Address }
+    !avrf -dlls [ Length ]
+    !avrf -trm
+    !avrf -ex [ Length ] 
+    !avrf -threads [ ThreadID ]
+    !avrf -tp [ ThreadID ]
+    !avrf -srw  [ Address | Address Length ] [ -stats ]
+    !avrf -leak  [ -m ModuleName] [ -r ResourceType] [ -a Address ] [ -t ]
+    !avrf -trace TraceIndex 
+    !avrf -cnt
+    !avrf -brk [BreakEventType]  
+    !avrf -flt [EventType Probability] 
+    !avrf -flt break EventType 
+    !avrf -flt stacks Length 
+    !avrf -trg [ Start End | dll Module | all ] 
+    !avrf -settings 
+    !avrf -skp [ Start End | dll Module | all | Time ] 
+
 
 ## <span id="ddk__avrf_dbg"></span><span id="DDK__AVRF_DBG"></span>Parameters
 

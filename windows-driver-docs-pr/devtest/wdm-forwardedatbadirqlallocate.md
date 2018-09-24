@@ -3,7 +3,7 @@ title: ForwardedAtBadIrqlAllocate rule (wdm)
 description: The ForwardedAtBadIrqlAllocate rule specifies that the driver should call IoCallDriver and PoCallDriver at IRQL DISPATCH\_LEVEL, unless the IRP major function code being forwarded is one of the following IRP\_MJ\_POWERIRP\_MJ\_READIRP\_MJ\_WRITEIRP\_MJ\_DEVICE\_CONTROLIRP\_MJ\_INTERNAL\_DEVICE\_CONTROL.
 ms.assetid: 74BB8358-AE25-4FF8-BBA7-BF108DC2946C
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - ForwardedAtBadIrqlAllocate
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ForwardedAtBadIrqlAllocate rule (wdm)

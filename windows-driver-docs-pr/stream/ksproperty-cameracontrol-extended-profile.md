@@ -12,19 +12,18 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 9/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROFILE
 
+KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROFILE is used to allow the capture framework to inform the camera driver which profile was selected.
 
-KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROFILE is used to allow the capture framework to inform the camera driver which profile was selected. .
-
-## <span id="Usage_summary_table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage summary table
-
+## Usage summary table
 
 <table>
 <colgroup>
@@ -43,14 +42,12 @@ KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROFILE is used to allow the capture framew
 <tr class="odd">
 <td><p>Version 1</p></td>
 <td><p>Filter</p></td>
-<td><p>Asynchronous, Not Cancellable</p></td>
+<td><p>Asynchronous, Not Cancelable</p></td>
 </tr>
 </tbody>
 </table>
 
- 
-
-The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925136) structure fields when using the control.
+The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
 
 <table>
 <colgroup>
@@ -91,10 +88,7 @@ The following table contains the descriptions and requirements for the [**KSCAME
 </tbody>
 </table>
 
- 
-
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -108,12 +102,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

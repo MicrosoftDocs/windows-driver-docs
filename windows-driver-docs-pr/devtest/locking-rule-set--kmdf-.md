@@ -3,10 +3,11 @@ title: Locking rule set (KMDF)
 description: Use these rules to verify that your driver correctly manages shared resources.
 ms.assetid: B6DD41A5-E7E5-4070-8752-68E26804A5D5
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Locking rule set (KMDF)

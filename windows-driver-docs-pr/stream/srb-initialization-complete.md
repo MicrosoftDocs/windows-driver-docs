@@ -14,6 +14,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SRB\_INITIALIZATION\_COMPLETE
@@ -24,7 +25,7 @@ ms.technology: windows-devices
 
 The class driver sends this request to signal the minidriver that it has completed its initialization.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 Once the minidriver completes this request, the class driver can begin to send [**SRB\_OPEN\_STREAM**](srb-open-stream.md) requests.
 

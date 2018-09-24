@@ -3,7 +3,7 @@ title: WlanDisassociation rule (ndis)
 description: The WlanDisassociation rule verifies that the miniport driver correctly follows the Native 802.11 wireless LAN (WLAN) disassociation sequence.
 ms.assetid: E9C115D5-8522-4275-B874-1DB673AE23F2
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - WlanDisassociation
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # WlanDisassociation rule (ndis)

@@ -3,7 +3,7 @@ title: SpinLockRelease rule (storport)
 description: This rule verifies that the driver does not attempt to release a lock via KeReleaseSpinLock without first acquiring it via KeAquireSpinlock or KeAcquireSpinLockRaiseToDpc. The rule passes when the acquired spin lock is released.
 ms.assetid: CD4287CB-EF0C-476C-BF10-B46B96AB7D11
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - SpinLockRelease
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # SpinLockRelease rule (storport)

@@ -3,7 +3,7 @@ title: Irql\_Filter\_Driver\_Function rule (ndis)
 description: The Irql\_Filter\_Driver\_Function rule specifies that the NDIS functions for filter drivers must be called at correct IRQL levels.
 ms.assetid: 1dd45962-151b-472c-88a6-6042ecb7491c
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - Irql_Filter_Driver_Function
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Irql\_Filter\_Driver\_Function rule (ndis)

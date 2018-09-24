@@ -1,9 +1,15 @@
 ---  
 title: System-Defined Device Setup Classes Available to Vendors  
 description: System-Defined Device Setup Classes Available to Vendors  
-ms.assetid: d4b8a964-f843-4960-9077-46746af27a61  
+ms.assetid: d4b8a964-f843-4960-9077-46746af27a61
+ms.author: windowsdriverdev
+ms.date: 05/08/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.localizationpriority: medium
 ---  
-  
+
 # System-Defined Device Setup Classes Available to Vendors  
   
   
@@ -23,6 +29,11 @@ ClassGuid = {53D29EF7-377C-4D14-864B-EB3A85769359}
 Class = Bluetooth  
 ClassGuid = {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}  
 (Windows XP SP1 and later versions of Windows) This class includes all Bluetooth devices.  
+  
+**Camera Device**  
+Class = Camera  
+ClassGuid = {ca3e7ab9-b4c3-4ae6-8251-579ef933890f}  
+(Windows 10 version 1709 and later versions of Windows) This class includes universal camera drivers.  
   
 **CD-ROM Drives**  
 Class = CDROM  
@@ -53,11 +64,6 @@ This class includes floppy disk drive controllers.
 Class = FloppyDisk  
 ClassGuid= {4d36e980-e325-11ce-bfc1-08002be10318}  
 This class includes floppy disk drives.  
-  
-**Global Positioning System/Global Navigation Satellite System**  
-Class = GPS  
-ClassGuid = {6bdd1fc3-810f-11d0-bec7-08002be2092f}  
-This class includes GNSS devices that use the Universal Windows driver model introduced in Windows 10.  
   
 <a href="" id="hard-disk-controllers-"></a>**Hard Disk Controllers**  
 Class = HDC  

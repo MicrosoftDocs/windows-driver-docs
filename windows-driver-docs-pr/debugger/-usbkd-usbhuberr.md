@@ -14,6 +14,7 @@ api_name:
 - usbkd.usbhuberr
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !usbkd.usbhuberr

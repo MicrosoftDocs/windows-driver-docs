@@ -16,6 +16,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KS\_AM\_RATE\_MaxFullDataRate
@@ -26,7 +27,7 @@ The KS\_AM\_RATE\_MaxFullDataRate property retrieves the maximum, full data rate
 ## <span id="ddk_ks_am_rate_maxfulldatarate_ks"></span><span id="DDK_KS_AM_RATE_MAXFULLDATARATE_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -50,7 +51,7 @@ The KS\_AM\_RATE\_MaxFullDataRate property retrieves the maximum, full data rate
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
+<td><p>[<strong>KSPROPERTY</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)</p></td>
 <td><p>KS_AM_MaxFullDataRate</p></td>
 </tr>
 </tbody>

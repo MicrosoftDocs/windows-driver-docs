@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: dc6c3ceb-a992-4e7b-ab25-d91c00af655a
 keywords:
  - IRP_MN_ENABLE_COLLECTION Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_ENABLE\_COLLECTION

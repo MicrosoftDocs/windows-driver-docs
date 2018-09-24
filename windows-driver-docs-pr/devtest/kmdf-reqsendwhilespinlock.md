@@ -3,7 +3,7 @@ title: ReqSendWhileSpinlock rule (kmdf)
 description: The ReqSendWhileSpinlock rule specifies that no requests are sent while the driver holds a spinlock.
 ms.assetid: f038f4ca-aa24-4df3-9c31-d8eec928c306
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - ReqSendWhileSpinlock
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ReqSendWhileSpinlock rule (kmdf)

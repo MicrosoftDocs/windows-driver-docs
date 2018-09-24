@@ -4,19 +4,18 @@ author: windows-driver-content
 description: The barcode scanner driver sample demonstrates how to create a universal driver for a barcode scanner and is intended to be used as a template for creating a new barcode scanner driver.
 ms.assetid: 29374910-AF1A-40E4-8A5D-B48D7D2FD5D8
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 9/7/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Barcode scanner driver sample
 
-
-The barcode scanner driver sample demonstrates how to create a universal driver for a barcode scanner and is intended to be used as a template for creating a new barcode scanner driver. The sample uses the User-Mode Driver Framework (UMDF) 2.0 and demonstrates basic functionality such as claiming the device for exclusive access. The sample driver can be compiled and deployed on x86, amd64, and ARM platforms. For more information on universal drivers, go to [Getting Started with Universal Windows drivers](https://msdn.microsoft.com/windows-drivers/develop/getting_started_with_universal_drivers).
+The barcode scanner driver sample demonstrates how to create a universal driver for a barcode scanner and is intended to be used as a template for creating a new barcode scanner driver. The sample uses the User-Mode Driver Framework (UMDF) 2.0 and demonstrates basic functionality such as claiming the device for exclusive access. The sample driver can be compiled and deployed on x86, amd64, and ARM platforms. For more information on universal drivers, go to [Getting Started with Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers).
 
 ## Requirements
-
 
 -   Windows 10
 -   [Microsoft Visual Studio 2015](https://go.microsoft.com/fwlink/p/?LinkId=533470) (any version)
@@ -24,20 +23,17 @@ The barcode scanner driver sample demonstrates how to create a universal driver 
 
 The Windows Software Development Kit (SDK) 10 is also required, but this is installed as part of Microsoft Visual Studio 2015.
 
-**Note**  The sample driver does not require any magnetic stripe reader hardware to function because it operates on a software device. If you have a hardware device you wish to use with the sample, you can still use the driver by adding the device's hardware ID to the INF file.
-
- 
+> [!NOTE]
+> The sample driver does not require any magnetic stripe reader hardware to function because it operates on a software device. If you have a hardware device you wish to use with the sample, you can still use the driver by adding the device's hardware ID to the INF file.
 
 ## Download and extract the sample
 
-
 Starting with Windows 10, Windows driver samples are available on GitHub and can be downloaded from the [Windows driver samples repository project page](http://go.microsoft.com/fwlink/p/?LinkId=616507).
 
-1.  Download **Windows-driver-samples-master.zip** from <http://go.microsoft.com/fwlink/p/?LinkID=623296>. This file contains all of the Windows driver samples.
+1.  Download **Windows-driver-samples-master.zip** from [GitHub](http://go.microsoft.com/fwlink/p/?LinkID=623296). This file contains all of the Windows driver samples.
 2.  Extract **Windows-driver-samples-master.zip** to the location of your choice on your development machine. This location will be referred to as *&lt;sample\_root&gt;* throughout the remainder of this article.
 
 ## Open the driver solution in Visual Studio
-
 
 1.  In Windows Explorer, navigate to the `<sample_root>\pos\drivers\barcodescanner\` folder.
 2.  Double-click the solution file, **BarcodeScanner.sln** to open the solution with Visual Studio 2015.
@@ -46,12 +42,11 @@ Starting with Windows 10, Windows driver samples are available on GitHub and ca
 
 ## Build the sample using Visual Studio
 
-
 1.  From the *Standard* toolbar in Visual Studio, select the *Solution Platform* that matches your operating system platform. For example, if you are using a 64-bit version of Windows, select x64.
-    **Note**  If targeting the ARM platform, you will need to use the configuration manager to add ARM to your list of targets.
+    > [!NOTE]
+    > If targeting the ARM platform, you will need to use the configuration manager to add ARM to your list of targets.
 
      
-
 2.  Select **Build Solution** from the **Build** menu.
 
 ## Install the driver
@@ -89,15 +84,6 @@ If the Device Console utility wasn't able to install the driver, confirm that yo
 
 ## View the device in Device Manager
 
-
 1.  Open Device Manager. This can be done many ways, but if you're still in a command prompt then type `devmgmt`.
 2.  In Device Manager, choose **Devices by type** from the **View** menu.
 3.  Your device is listed under the **Samples** node.
-
- 
-
- 
-
-
-
-

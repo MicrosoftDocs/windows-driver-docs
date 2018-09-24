@@ -3,7 +3,7 @@ title: DanglingDeviceObjectReference rule (wdm)
 description: The DanglingDeviceObjectReference rule specifies that the driver calls ObDereferenceObject with the same device object pointer that IoGetAttachedDeviceReference returned.
 ms.assetid: b2aeaa16-f246-48c7-9e80-719d441a44ef
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - DanglingDeviceObjectReference
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # DanglingDeviceObjectReference rule (wdm)

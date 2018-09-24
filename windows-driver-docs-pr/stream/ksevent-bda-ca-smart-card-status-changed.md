@@ -16,6 +16,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KSEVENT\_BDA\_CA\_SMART\_CARD\_STATUS\_CHANGED
@@ -50,7 +51,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**KSEVENT**](https://msdn.microsoft.com/library/windows/hardware/ff561744)

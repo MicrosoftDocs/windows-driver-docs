@@ -9,6 +9,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF File Platform Extensions and x86-Based Systems
@@ -34,6 +35,14 @@ The following table summarizes Windows support for platform extensions for x86-b
 </tr>
 <tr class="even">
 <td align="left"><p><strong>.ntia64</strong></p></td>
+<td align="left"><p>Not supported.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>.ntarm</strong></p></td>
+<td align="left"><p>Not supported.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>.ntarm64</strong></p></td>
 <td align="left"><p>Not supported.</p></td>
 </tr>
 <tr class="odd">

@@ -15,6 +15,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF DefaultInstall Section
@@ -30,6 +31,8 @@ An INF file's **DefaultInstall** section is accessed if a user selects the "Inst
 [DefaultInstall] | 
 [DefaultInstall.nt] | 
 [DefaultInstall.ntx86] | 
+[DefaultInstall.ntarm] | (Windows 8 and later versions of Windows)
+[DefaultInstall.ntarm64]  (Windows 10 version 1709 and later versions of Windows)
 [DefaultInstall.ntia64] | (Windows XP and later versions of Windows)
 [DefaultInstall.ntamd64]  (Windows XP and later versions of Windows)
  
@@ -111,7 +114,7 @@ Typically, this directive is used to handle upgrades when an INF must clean up o
 For more information, see [**INF DelReg Directive**](inf-delreg-directive.md).
 
 <a href="" id="bitreg-bit-registry-section--bit-registry-section----"></a>**BitReg=***bit-registry-section*\[**,***bit-registry-section*\]...  
-This directive references one or more INF-writer-defined sections in which existing registry value entries of type REG_BINARY are modified. For more information, see [**INF AddReg Directive**](inf-addreg-directive.md).
+This directive references one or more INF-writer-defined sections in which existing registry value entries of type [REG_BINARY](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) are modified. For more information, see [**INF AddReg Directive**](inf-addreg-directive.md).
 
 An **HKR** specification in such a bit-registry section designates the **..Class\\***SetupClassGUID***\\***device-instance-id* registry path of the user-accessible driver. This type of **HKR** specification is also referred to as a. "software key".
 

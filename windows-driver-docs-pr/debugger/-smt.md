@@ -14,6 +14,7 @@ api_name:
 - smt
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !smt

@@ -4,7 +4,7 @@ description: The double question mark ( ) command evaluates and displays the val
 ms.assetid: 3a15a0a3-03d0-4807-a6df-054de819c0a0
 keywords: ["(Evaluate C++ Expression) Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - (Evaluate C++ Expression)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ?? (Evaluate C++ Expression)
@@ -21,9 +22,7 @@ api_type:
 
 The double question mark (**??**) command evaluates and displays the value of an expression according to C++ expression rules.
 
-```
-?? Expression
-```
+    ?? Expression
 
 ## <span id="ddk_cmd_evaluate_c_expression_dbg"></span><span id="DDK_CMD_EVALUATE_C_EXPRESSION_DBG"></span>Parameters
 

@@ -4,7 +4,7 @@ description: The amli cl extension clears the AML interpreter's event log.
 ms.assetid: cfba2929-b524-49e8-bbe8-f0feb69e22f9
 keywords: ["amli cl Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - amli cl
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !amli cl
@@ -23,9 +24,8 @@ The **!amli cl** extension clears the AML interpreter's event log.
 
 Syntax
 
-```
-!amli cl
-```
+    !amli cl
+
 
 ## <span id="ddk__amli_cl_dbg"></span><span id="DDK__AMLI_CL_DBG"></span>
 

@@ -1,16 +1,20 @@
 ---
 title: MagneticStripeReaderDataReceived
-description: MagneticStripeReaderDataReceived
+description: The MagneticStripeReaderDataReceived event is raised after a successful magnetic stripe reader (MSR) scan event.
 ms.assetid: '5074669c-3914-4d15-983b-d979c7f88b21'
+ms.author: windowsdriverdev
+ms.date: 9/7/2018
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MagneticStripeReaderDataReceived
 
-
 This event is raised after a successful magnetic stripe reader (MSR) scan event.
 
-Syntax
-------
+## Syntax
 
 ``` syntax
 typedef struct _MSR_DATA_RECEIVED {
@@ -45,8 +49,8 @@ typedef struct _MSR_DATA_RECEIVED {
 
 The following table shows the memory layout of the data buffer for this event.
 
-| Memory value                                                                   | Description                                                                                                                                      |
-|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| Memory value | Description 
+|---|---|
 | 0x00000008                                                          | **EventType = PosEventType:: MagneticStripeReaderDataReceived**                                                                       |
 | UINT32                                                              | **DataLength** = sizeof(**PosEventDataHeader**) + sizeof(**MSR\_DATA\_RECEIVED**)                                                     |
 | 32-bit MsrCardType                                                  | [MsrCardType](https://msdn.microsoft.com/library/windows/hardware/dn772167)                                                                                                        |
@@ -76,19 +80,6 @@ The following table shows the memory layout of the data buffer for this event.
 | unsigned char                                                       | **AdditionalSecurityInformationLength**                                                                                               |
 | unsigned char\[MSR\_ADDITIONAL\_SECURITY\_INFORMATION\_SIZE\]       | **AdditionalSecurityInformationLength** bytes of additional security information                                                      |
 
-
-
-Requirements
-------------
+## Requirements
 
 **Header:** pointofservicedriverinterface.h
-
-
-
-
-
-
-
-
-
-

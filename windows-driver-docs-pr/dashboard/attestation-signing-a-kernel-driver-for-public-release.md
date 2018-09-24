@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Attestation signing a kernel driver for public release
@@ -18,6 +19,7 @@ This topic describes how to sign a driver using attestation signing.
 > [!Note]  
 > Attestation signing has the following properties.
 > -   Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers. Although user mode drivers do not need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers.
+> -   Attestation signing will not return the proper PE Level for **ELAM** or **Windows Hello** PE binaries.  These must be tested and submitted as .hlkx packages to receive the additional signature attributes.
 > -   Attestation signing requires the use of an EV Certificate to submit the driver to the Hardware Dev Center dashboard.
 > -   An attestation signed driver will only work for Windows 10. It will not work for other versions of Windows, such as Windows Server 2016,Windows 8.1, or Windows 7.
 > -   Attestation signing requires driver folder names to contain no special characters, and to be less than 40 characters long.
@@ -40,7 +42,16 @@ To attestation sign a kernel mode driver complete the following steps:
 ## Acquire an EV code signing certificate
 
 
-Before you can submit binaries to the dashboard for signing, you need to acquire an [extended validation (EV) code signing certificate](get-a-code-signing-certificate.md) to secure your digital information. EV certificates are the accepted standard for establishing ownership of the code you submit. It allows you to digitally sign PE binaries such as: 
+Before you can submit binaries to the dashboard for signing, you need to acquire an [extended validation (EV) code signing certificate](get-a-code-signing-certificate.md) to secure your digital information. EV certificates are the accepted standard for establishing ownership of the code you submit. 
+
+## Allowable PE signatures and binaries
+
+
+The following PE levels and binaries can be processed throught Attestation:
+
+* **PeTrust**
+* **DrmLevel**
+* **HAL**
 * .exe
 * .cab
 * .dll

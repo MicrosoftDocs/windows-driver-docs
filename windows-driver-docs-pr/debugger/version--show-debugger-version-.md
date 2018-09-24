@@ -14,6 +14,7 @@ api_name:
 - version (Show Debugger Version)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # version (Show Debugger Version)

@@ -3,7 +3,7 @@ title: SpReturnValue rule (storport)
 description: This rule verifies that the driver's implementations of HwStorFindAdapter and VirtualHwStorFindAdapter return a valid status. A valid status is one of the following SP\_RETURN\_FOUND, SP\_RETURN\_ERROR, SP\_RETURN\_BAD\_CONFIG, or SP\_RETURN\_NOT\_FOUND.
 ms.assetid: 4F9E0FE3-4B1B-4C06-9DA0-8307C43E0DBA
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - SpReturnValue
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # SpReturnValue rule (storport)

@@ -8,11 +8,12 @@ ms.date: 06/15/2018
 ms.topic: article 
 ms.prod: windows-hardware 
 ms.technology: windows-devices 
+ms.localizationpriority: medium
 ---
 
 # Logging scenarios
 
-The events saved in IHV log files, for both repro mode and the auto-logger, should be appropriately throttled via flags/level/keywords to ensure that at least the past 30 minutes of the log events are always saved. Practically, you should target the 30 minute time period to cover one scan/WFD discovery, one connect/roam event, one disconnect event, several power transitions, and 10 minutes' worth of send and receive data. Because the IHV repro mode log is much larget than the normal IHV auto-logger, more verbose logging is expected.
+The events saved in IHV log files, for both repro mode and the auto-logger, should be appropriately throttled via flags/level/keywords to ensure that at least the past 30 minutes of the log events are always saved. Practically, you should target the 30 minute time period to cover one scan/WFD discovery, one connect/roam event, one disconnect event, several power transitions, and 10 minutes' worth of send and receive data. Because the IHV repro mode log is much larger than the normal IHV auto-logger, more verbose logging is expected.
 
 The following scenarios might help you when logging:
 

@@ -14,6 +14,7 @@ api_name:
 - NO_SPIN_LOCK_AVAILABLE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1D: NO\_SPIN\_LOCK\_AVAILABLE

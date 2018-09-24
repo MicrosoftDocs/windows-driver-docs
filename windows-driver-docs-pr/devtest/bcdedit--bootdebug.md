@@ -3,7 +3,7 @@ title: BCDEdit /bootdebug
 description: The /bootdebug boot option enables or disables boot debugging of the current or specified Windows operating system boot entry.
 ms.assetid: 85d0a25e-c411-4d7e-ae11-ce5bed1a37b8
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - BCDEdit /bootdebug
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # BCDEdit /bootdebug
@@ -28,20 +29,22 @@ The **/bootdebug** boot option enables or disables boot debugging of the current
 
 ``` syntax
     bcdedit /bootdebug [{ID}] { on | off } 
-
    
 ```
 
 Parameters
 ----------
 
-<a href="" id="--------id-------"></a> **{***ID***}**   
+**{***ID***}**   
+
 The **{***ID***}** is the GUID that is associated with the boot entry. If you do not specify an **{***ID***}**, the command modifies the operating system that is currently active. If a boot entry is specified, the GUID associated with the boot entry must be enclosed in braces **{}**.
 
-<a href="" id="-------on------"></a> **on**   
+**on**   
+
 Enables boot debugging of the specified boot entry. If a boot entry is not specified, boot debugging is enabled for the current operating system.
 
-<a href="" id="-------off------"></a> **off**   
+**off**   
+
 Disables boot debugging of the specified boot entry. If a boot entry is not specified, boot debugging is disabled for the current operating system.
 
 ### Comments

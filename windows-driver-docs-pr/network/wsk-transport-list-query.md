@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - WSK_TRANSPORT_LIST_QUERY Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # WSK\_TRANSPORT\_LIST\_QUERY

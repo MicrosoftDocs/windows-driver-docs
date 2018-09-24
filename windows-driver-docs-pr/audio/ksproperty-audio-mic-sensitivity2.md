@@ -1,4 +1,4 @@
-ï»¿---
+---
 title: KSPROPERTY\_AUDIO\_MIC\_SENSITIVITY2
 description: The KSPROPERTY_AUDIO_MIC_SENSITIVITY property specifies the microphone sensitivity in decibels relative to full scale (dBFS) units including any hardware gain.
 keywords: ["KSPROPERTY_AUDIO_MIC_SENSITIVITY2 Audio Devices"]
@@ -15,6 +15,7 @@ ms.date: 05/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_AUDIO\_MIC\_SENSITIVITY2
@@ -60,7 +61,7 @@ Remarks
 
 The audio driver can obtain microphone sensitivity for each microphone. This property allows this information to be retrieved from driver.
 
-For Windows 10 voice recognition experiences such as Cortana to accurately detect and analyze userâ€™s voice on various devices with different microphones, the OS needs to know certain characteristics of the input signal. Based on that information, the OS can calculate effective sensitivity and apply appropriate gain to enhance input signal. For more information, see [Voice Activation](https://msdn.microsoft.com/library/windows/hardware/mt593238).
+For Windows 10 voice recognition experiences such as Cortana to accurately detect and analyze user’s voice on various devices with different microphones, the OS needs to know certain characteristics of the input signal. Based on that information, the OS can calculate effective sensitivity and apply appropriate gain to enhance input signal. For more information, see [Voice Activation](https://msdn.microsoft.com/library/windows/hardware/mt593238).
 
 KSPROPERTY\_AUDIO\_MIC\_SENSITIVITY2 is available beginning with Windows 10 Version 1803 and supersedes [KSPROPERTY\_AUDIO\_MIC\_SENSITIVITY](ksproperty-audio-mic-sensitivity.md).
 
@@ -81,12 +82,12 @@ Requirements
 </tbody>
 </table>
 
-Â 
+ 
 See Also
 ---------
 
 [KSPROPERTY_AUDIO_MIC_SENSITIVITY](ksproperty-audio-mic-sensitivity.md)
-Â 
+ 
 
 
 

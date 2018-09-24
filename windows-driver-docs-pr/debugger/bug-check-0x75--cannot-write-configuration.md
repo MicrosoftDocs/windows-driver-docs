@@ -14,6 +14,7 @@ api_name:
 - CANNOT_WRITE_CONFIGURATION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x75: CANNOT\_WRITE\_CONFIGURATION

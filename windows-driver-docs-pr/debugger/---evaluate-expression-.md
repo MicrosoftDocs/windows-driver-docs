@@ -4,7 +4,7 @@ description: The question mark ( ) command evaluates and displays the value of a
 ms.assetid: fae689b3-47c9-44bd-992d-8344805fb4b7
 keywords: ["(Evaluate Expression) Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - (Evaluate Expression)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ? (Evaluate Expression)
@@ -23,11 +24,8 @@ The question mark (**?**) command evaluates and displays the value of an express
 
 **Note**   A question mark by itself ([**?**](---command-help-.md)) displays command help. The **?** *expression* command evaluates the given expression.
 
- 
+    ? Expression
 
-```
-? Expression
-```
 
 ## <span id="ddk_cmd_evaluate_expression_dbg"></span><span id="DDK_CMD_EVALUATE_EXPRESSION_DBG"></span>Parameters
 
@@ -71,7 +69,7 @@ The **?** command evaluates symbols in the expression in the context of the curr
 
 Some strings may contain escapes, such as **\\n**, **\\"**, **\\r**, and **\\b**, that are meant to be read literally, rather than interpreted by the evaluator. If an escape within a string is interpreted by the evaluator, errors in evaluation can occur. For example:
 
-```
+```console
 0:000> as AliasName c:\dir\name.txt
 0:000> al
   Alias            Value
@@ -89,7 +87,7 @@ In the first two examples, even though the string does match the pattern, the ev
 
 To get the evaluator to interpret a string literally, you must use the **@"***String***"** syntax. The following code example shows the correct results:
 
-```
+```console
 0:000> ? $spat( @"c:\dir\name.txt", "*name*" )
 Evaluate expression: 1 = 00000000`00000001
 0:000> ? $spat( @"${AliasName}", "*name*" )

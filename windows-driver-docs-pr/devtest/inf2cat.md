@@ -15,6 +15,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Inf2Cat
@@ -28,6 +29,9 @@ Inf2Cat (Inf2Cat.exe) is a command-line tool that determines whether a [driver p
      /os:
     WindowsVersionList [/nocat] [/verbose] [/?] [other switches]
 ```
+
+> [!TIP]
+> If you see `DriverVer set to a date in the future` when building your driver, change your driver package project settings so that Inf2Cat sets `/uselocaltime`. To do so, use **Configuration Properties->Inf2Cat->General->Use Local Time**. Now both [Stampinf](stampinf-command-options.md) and Inf2Cat use local time.
 
 ### <span id="switches_and_arguments"></span><span id="SWITCHES_AND_ARGUMENTS"></span>Switches and Arguments
 

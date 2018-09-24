@@ -14,6 +14,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # AVC\_FUNCTION\_GET\_REQUEST
@@ -24,11 +25,11 @@ ms.technology: windows-devices
 
 The **AVC\_FUNCTION\_GET\_REQUEST** function code is used to register to receive AV/C unit and subunit requests.
 
-### <span id="i_o_status_block"></span><span id="I_O_STATUS_BLOCK"></span>I/O Status Block
+### I/O Status Block
 
 This function always sets **Irp-&gt;IoStatus.Status** to STATUS\_PENDING.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 This function uses the AVC\_COMMAND\_IRB structure as shown below.
 
@@ -55,13 +56,13 @@ typedef struct _AVC_COMMAND_IRB {
 } AVC_COMMAND_IRB, *PAVC_COMMAND_IRB;
 ```
 
-### <span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
+### Requirements
 
 **Headers:** Declared in *avc.h*. Include *avc.h*.
 
 ### <span id="avc_command_irb_input"></span><span id="AVC_COMMAND_IRB_INPUT"></span>AVC\_COMMAND\_IRB Input
 
-<span id="Common"></span><span id="common"></span><span id="COMMON"></span>**Common**  
+**Common**  
 The **Function** submember of this member must be set to **AVC\_FUNCTION\_GET\_REQUEST** from the AVC\_FUNCTION enumeration.
 
 <span id="SubunitAddrFlag"></span><span id="subunitaddrflag"></span><span id="SUBUNITADDRFLAG"></span>**SubunitAddrFlag**  
@@ -125,7 +126,7 @@ The recommended use of this structure is to first zero the structure (use **RtlZ
 
 This function code may be called at IRQL &lt;= DISPATCH\_LEVEL.
 
-### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
+### See Also
 
 [**AVC\_FUNCTION\_SEND\_RESPONSE**](avc-function-send-response.md), [**AvcResponseCode**](https://msdn.microsoft.com/library/windows/hardware/ff554105), [**AVC\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554145), [**RtlZeroMemory**](https://msdn.microsoft.com/library/windows/hardware/ff563610)
 

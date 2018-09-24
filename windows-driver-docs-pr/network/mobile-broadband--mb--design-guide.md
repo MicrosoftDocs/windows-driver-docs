@@ -3,10 +3,11 @@ title: Mobile Broadband (MB) Design Guide
 description: Mobile Broadband (MB) Design Guide
 ms.assetid: d5db6b69-c5a9-41d5-88c9-7c4d1e7c9c03
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 08/09/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Mobile Broadband (MB) Design Guide
@@ -62,9 +63,13 @@ This section includes the following topics:
 
 [MB LTE Attach Operations](mb-lte-attach-operations.md)
 
-[MB Protocol Configuration Operations (PCO)](mb-protocol-configuration-operations--pco-.md)
+[MB Protocol Configuration Options (PCO) operations](mb-protocol-configuration-options-pco-operations.md)
 
 [MB low level UICC access](mb-low-level-uicc-access.md)
+
+[MB device-based reset and recovery](mb-device-based-reset-and-recovery.md)
+
+[MB hang detection](mb-hang-detection.md)
 
 [MB modem reset operations](mb-modem-reset-operations.md)
 

@@ -14,6 +14,7 @@ api_name:
 - ndiskd.ndisrwlock
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.ndisrwlock

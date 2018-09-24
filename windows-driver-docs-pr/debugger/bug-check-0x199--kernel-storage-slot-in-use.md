@@ -14,6 +14,7 @@ api_name:
 - KERNEL_STORAGE_SLOT_IN_USE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x199: KERNEL\_STORAGE\_SLOT\_IN\_USE

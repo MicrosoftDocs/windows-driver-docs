@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices 
 keywords:
  - SIO_WSK_QUERY_RECEIVE_BACKLOG Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # SIO\_WSK\_QUERY\_RECEIVE\_BACKLOG

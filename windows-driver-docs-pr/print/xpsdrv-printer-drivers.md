@@ -15,6 +15,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # XPSDrv Printer Drivers
@@ -40,16 +41,8 @@ This section includes:
 
 [XPS Printing Features](xps-printing-features.md)
 
-[Windows Vista Print Path Overview](windows-print-path-overview.md)
+[Windows Print Path Overview](windows-print-path-overview.md)
 
 [XPS Support in Earlier Versions of Windows](xps-support-in-earlier-versions-of-windows.md)
 
 For more detailed information about XPS printing for printer driver developers, see [XPSDrv Printer Driver](xpsdrv-printer-driver.md).
-
- 
-
- 
-
-
-
-

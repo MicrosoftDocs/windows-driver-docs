@@ -4,10 +4,11 @@ description: This lab introduces the WinDbg kernel debugger. WinDbg is used to d
 ms.assetid: 3FBC3693-4288-42BA-B1E8-84DC2A9AFFD9
 keywords: ["debug lab", "step-by-step", "ECHO"]
 ms.author: domars
-ms.date: 05/21/2018
+ms.date: 09/13/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # <span id="debugger.debug_universal_drivers_-_step_by_step_lab__echo_kernel-mode_"></span>Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)
@@ -96,7 +97,7 @@ To enable kernel mode debugging on the target system, perform the following step
 **&lt;- On the host system**
 
 1. Open a command prompt on the host system and type **ipconfig** to determine its IP address.
-```
+```console
 C:\>ipconfig
 Windows IP Configuration
 Ethernet adapter Ethernet:
@@ -113,7 +114,7 @@ Ethernet adapter Ethernet:
 
 3. Open a command prompt on the target system and use the **ping** command to confirm network connectivity between the two systems. Use the actual IP address of the host system you recorded instead of 169.182.1.1 that is shown in the sample output.
 
-```
+```console
 C:\> ping 169.182.1.1
 
 Pinging 169.182.1.1 with 32 bytes of data:
@@ -135,25 +136,23 @@ Enable kernel mode debugging on the target system by completing the following st
 > Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.
 
 1. On the target computer, open a Command Prompt window as Administrator. Enter this command to enable debugging.
-```
-C:\> bcdedit /set {default} DEBUG YES
-```
+
+    C:\> bcdedit /set {default} DEBUG YES
 
 2. Type this command to enable test signing.
-```
-C:\> bcdedit /set TESTSIGNING ON 
-```
+
+    C:\> bcdedit /set TESTSIGNING ON 
+
 
 3. Type this command to set the IP address of the host system. Use the IP address of the host system that you recorded earlier, not the one shown.
-```
-C:\> bcdedit /dbgsettings net hostip:192.168.1.1 port:50000 key:1.2.3.4
-```
+    C:\> bcdedit /dbgsettings net hostip:192.168.1.1 port:50000 key:1.2.3.4
+
 
 **Warning**  To increase the security of the connection and decrease the risk of the random client debugger connection requests, consider using an auto generated random key. For more information, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
 
 4. Type this command to confirm that the dbgsettings they are set properly.
 
-```
+```console
 C:\> bcdedit /dbgsettings
 key                     1.2.3.4
 debugtype               NET
@@ -637,14 +636,29 @@ set ENABLE_OPTIMIZER=0
     Type the following to change the default debug bit mask so that all debug messages from the target system will be displayed in the debugger.
 
     ```
-    0: kd> !ed nt!Kd_DEFAULT_MASK  0xFFFFFFFF
+    0: kd> ed nt!Kd_DEFAULT_MASK  0xFFFFFFFF
     ```
 
     Some drivers will display additional information when the mask of 0xFFFFFFFF is used. Set the mask to 0x00000000 if you would like to reduce the amount of information that is displayed.
 
     ```
-    0: kd> !ed nt!Kd_DEFAULT_MASK  0x00000000
+    0: kd> ed nt!Kd_DEFAULT_MASK  0x00000000
     ```
+    
+    Use the dd command to display confirm the mask is set to display all of the debugger messages. 
+
+    ```
+    0: kd> dd nt!kd_DEFAULT_MASK 
+    fffff802`bb4057c0  ffffffff 00000000 00000000 00000000
+    fffff802`bb4057d0  00000000 00000000 00000000 00000000
+    fffff802`bb4057e0  00000001 00000000 00000000 00000000
+    fffff802`bb4057f0  00000000 00000000 00000000 00000000
+    fffff802`bb405800  00000000 00000000 00000000 00000000
+    fffff802`bb405810  00000000 00000000 00000000 00000000
+    fffff802`bb405820  00000000 00000000 00000000 00000000
+    fffff802`bb405830  00000000 00000000 00000000 00000000
+    ```
+    
 
 ## <span id="DisplayingThePlugAndPlayDeviceTree"></span><span id="displayingtheplugandplaydevicetree"></span><span id="DISPLAYINGTHEPLUGANDPLAYDEVICETREE"></span>Section 6: Displaying Plug and Play device tree information
 
@@ -1174,7 +1188,7 @@ You can display or set process information by using the [**!process**](-process.
     TYPE mismatch for process object at 82a9acc0
     ```
 
-    The process object is now longer available, as the echoapp.exe process is no longer running.
+    The process object is no longer available, as the echoapp.exe process is no longer running.
 
 ### <span id="Threads"></span><span id="threads"></span><span id="THREADS"></span>Threads
 
@@ -1397,7 +1411,7 @@ The commands to view and set threads are very similar to those of processes. Use
     ```
     0: kd> k
       *** Stack trace for last set context - .thread/.cxr resets it
-# Child-SP          RetAddr           Call Site
+    # Child-SP          RetAddr           Call Site
     00 ffffd001`5551d7a0 fffff801`eed184fe nt!KiSwapContext+0x76 [d:\9142\minkernel\ntos\ke\amd64\ctxswap.asm @ 109]
     01 ffffd001`5551d8e0 fffff801`eed17f79 nt!KiSwapThread+0x14e [d:\9142\minkernel\ntos\ke\thredsup.c @ 6347]
     02 ffffd001`5551d980 fffff801`eecea340 nt!KiCommitThreadWait+0x129 [d:\9142\minkernel\ntos\ke\waitsup.c @ 619]

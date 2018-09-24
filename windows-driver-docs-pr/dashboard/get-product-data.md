@@ -7,6 +7,7 @@ ms.date: 04/05/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Get product data
@@ -20,10 +21,10 @@ Before you can use these methods, the product must already exist in your Dev Cen
 
 | Method | URI | Description |
 |-|-|-|
-|GET |	`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/`	|[Get data for all your products](get-all-products.md)|
-|GET |	`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}`	|[Get data for a specific product](get-a-product.md)|
-|GET |	`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions`	|[Get data for all submissions of a product](get-all-submissions.md)|
-|GET |	`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions/{submissionId}`	|[Get data for a specific submission of a product](get-a-submission.md)|
+|GET |	`https://manage.devcenter.microsoft.com/v1.0/hardware/products/`	|[Get data for all your products](get-all-products.md)|
+|GET |	`https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}`	|[Get data for a specific product](get-a-product.md)|
+|GET |	`https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}/submissions`	|[Get data for all submissions of a product](get-all-submissions.md)|
+|GET |	`https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}/submissions/{submissionId}`	|[Get data for a specific submission of a product](get-a-submission.md)|
 
 ## Prerequisites
 
@@ -55,10 +56,11 @@ This resource represents a hardware product (driver) that is registered to your 
     }
   ],
   "isCommitted": true,
-  "isExtensionInf": false,
+  "isExtensionInf": false, "_comment": "THis field is deprecated and moved to submission resource",
   "deviceMetadataIds": [],
   "deviceType": "notSet",
   "isTestSign": false,
+  "isFlightSign": false,
   "marketingNames": [
     "marketing name 1",
     " marketing name 2"
@@ -86,10 +88,11 @@ This resource has the following values
 | sharedProductId | Long | The shared product ID of the product |
 | Links | array of objects | Refer to [link object](#link-object)  for more details |
 | isCommitted | Boolean | Indicates whether the product has at least one committed submission  |
-| isExtensionInf | Boolean | Indicates whether the product is an extension driver |
+| isExtensionInf | Boolean | (DEPRECATED) Indicates whether the product is an extension driver. This field is deprecated and should no longer be used. isExtensionInf has been moved to submission level property. |
 | deviceMetadataIds | array of GUIDs | GUIDs which map device metadata submissions to the driver |
 | deviceType | String | Indicates the type of device. Possible values are:<ul><li>“internal” - An internal component, device is part of a system and connects inside the PC</li><li>“external” - An external component, device is an external device (peripheral) that connects to a PC</li><li>“internalExternal” - Both, device can be connected internally (inside a PC) and externally (peripheral)</li><li>“notSet” – no data available</li></ul>|
 | isTestSign | Boolean | Indicates whether the product is a test signed driver. For more information about test-signing driver packages, see [WHQL Test Signature Program](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/whql-test-signature-program)  |
+| isFlightSign | Boolean | Indicates whether the product is a flight signed driver. Flight signed drivers are test drivers which can be published via Windows Update. They can be published/installed only on machines which have signed up for Windows Insider Program. They can be installed on machines without disbaling secure boot. They cannot be installed on retail machines which are not part of Windows Insider Program.|
 | marketingNames | array of strings | Marketing names or aliases of the product |
 | productName | String | The name of the driver as specified during creation |
 | selectedProductTypes | dictionary  | Key value pair where both are strings. <ul><li>**Key** represents the Operating System Family Code. For a list of Operating System Family Codes, see [list of OS family codes](#list-of-operating-system-family-codes).</li><li>**Value** represents the type of the product. For a list of type of products, see [product types](#list-of-product-types).</li></ul>|
@@ -108,6 +111,11 @@ This resource represents a submission of a product.
 {
   "id": 1152921504621442000,
   "productId": 13635057453741328,
+   "workflowStatus": {
+      “currentStep": " finalizeIngestion",
+      " state": " completed",
+      " messages": []
+    },
   "links": [
     {
       "href": "https:// manage.devcenter.microsoft.com/api/v1.0/hardware/products/13635057453741329/submissions/1152921504621441944",
@@ -115,6 +123,10 @@ This resource represents a submission of a product.
       "method": "GET"
     }
   ],
+  "commitStatus": "commitPending",
+  "isExtensionInf": true,
+  "isUniversal": true,
+  "isDeclarativeInf": true,
   "name": "HARRY-Duatest2",
   "type": "derived"
 }
@@ -129,6 +141,9 @@ This resource has the following values
 | Links | array of objects | Refer to [link object](#link-object)  for more details |
 | Name | string | The name of the submission |
 | Type | string | Indicates whether the submission is an initial or derived submission. Possible values are <ul><li>initial</li><li>derived</li></ul> |
+| isExtensionInf | Boolean | Indicates whether the submission is an extension driver |
+| isUniversal | Boolean | Indicates whether the submission passes the Universal API test. A driver is DCHU compliant if it is Decalarative and Universal |
+| isDeclarativeInf | Boolean | Indicates whether the submission passes the Declarative INVerif test. A driver is DCHU compliant if it is Decalarative and Universal |
 | workflowstatus | object | This is available only when retrieving details of a specific submission. This object depicts the status of the workflow for this submission. Refer [workflow status object](#workflow-status-object)  for more details  |
 | downloads | object | This is available only when retrieving details of a specific submission only. This object depicts the downloads available for the submission. Refer [download object](#download-object)  for more details. |
 
@@ -209,7 +224,7 @@ This object has the following values
 | Value | Type | Description |
 |:--|:--|:--|
 | Href | String | The URL to access the resource via API |
-| Rel | String | Type of the resource. Possible values are:<ul><li>self – Link points to itself</li><li>next_link – Link points to next resource typically used for pagination</li><li>get_submissions – link points to all submissions of a product</li><li>commit_submission – link points to commit of a submission </li><li>update_submission – link points to update of the submission </li></ul>|
+| Rel | String | Type of the resource. Possible values are:<ul><li>self – Link points to itself</li><li>next_link – Link points to next resource typically used for pagination</li><li>get_submissions – link points to all submissions of a product</li><li>commit_submission – link points to commit of a submission </li><li>update_submission – link points to update of the submission </li><li>update_shippinglabel – link points to update of the shipping label  </li><li>driverMetadata - link points to a file which allows to download of driver metadata. For more details refer [driver package metadata](driver-package-metadata.md).</li></ul>|
 | Method | String | Type of the http method to be used when invoking the URL. Possible values are<ul><li>GET</li><li>POST</li><li>PATCH</li></ul>|
 
 ### Additional Attribute object
@@ -478,3 +493,8 @@ If there are functional validation failures, the response body will contain one 
 | UpdateUnauthorized | Cannot update the submission since the workflows have failed | Returned when trying to update a submission which has a failed workflow |
 | EntityNotFound | No submission found | Returned when trying to commit for a submission which does not exist |
 | EntityNotFound | Product not found | Returned when trying to create a submission for which a product does not exist |
+| InvalidInput | Extension drivers must be published as an Automatic update. Either of isAutoInstallDuringOSUpgrade or isAutoInstallOnApplicableSystems must be true. | Returned when a windows update shipping label for an extension INF is created without choosing isAutoInstallDuringOSUpgrade or isAutoInstallOnApplicableSystems |
+| InvalidInput | Chids are allowed only when HardwareIds are for operating systems Windows10 & Above. | Returned when a shipping label targeting OS less than windows 10 is created with CHID targeting. CHID targeting is applicable only for Windows 10 and above. |
+| InvalidInput | Cannot update the shipping label when another workflow is in progress. Please retry. | Returned when a shipping label is updated when a previous workflow is still in progress. |
+| RequestInvalidForCurrentState | Cannot create Publishing shipping label for inbox or system type. One can only share the shipping label. | Returned when windows update Shipping label is created on an inbox driver or a system. |
+| RequestInvalidForCurrentState | Submission is not yet ready to create shipping label. Please retry after some time. | Returned when a shipping label is created without waiting for preparation or pre-processing to complete. |

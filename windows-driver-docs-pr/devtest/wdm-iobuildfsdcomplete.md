@@ -3,7 +3,7 @@ title: IoBuildFsdComplete rule (wdm)
 description: The IoBuildFsdComplete rule specifies that a driver should not call IoCompleteRequest if the IRP was created with IoBuildAsynchronousFsdRequest.
 ms.assetid: 51F3411F-0D59-4341-94C3-8FAF4B98BB3E
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - IoBuildFsdComplete
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IoBuildFsdComplete rule (wdm)

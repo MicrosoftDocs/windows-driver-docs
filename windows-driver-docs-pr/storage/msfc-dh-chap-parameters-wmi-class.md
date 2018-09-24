@@ -2,6 +2,7 @@
 title: MSFC\_DH\_Chap\_Parameters WMI Class
 description: MSFC\_DH\_Chap\_Parameters WMI Class
 ms.assetid: 259E3935-0F37-4DBE-BED3-C55A6715A810
+ms.localizationpriority: medium
 ---
 
 # MSFC\_DH\_Chap\_Parameters WMI Class

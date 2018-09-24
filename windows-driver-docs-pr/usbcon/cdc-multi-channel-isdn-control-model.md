@@ -2,6 +2,7 @@
 Description: CDC Multi-Channel ISDN Control Model
 title: CDC Multi-Channel ISDN Control Model
 author: windows-driver-content
+ms.localizationpriority: medium
 ---
 
 # CDC Multi-Channel ISDN Control Model

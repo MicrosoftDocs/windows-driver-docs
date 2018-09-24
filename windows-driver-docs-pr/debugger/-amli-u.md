@@ -4,7 +4,7 @@ description: The amli u extension unassembles AML code.
 ms.assetid: 0a8b160f-9aae-4ef0-a569-8e701de9679c
 keywords: ["amli u Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - amli u
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !amli u
@@ -23,9 +24,8 @@ The **!amli u** extension unassembles AML code.
 
 Syntax
 
-```
-!amli u [ MethodName | CodeAddress ]
-```
+    !amli u [ MethodName | CodeAddress ]
+
 
 ## <span id="ddk__amli_u_dbg"></span><span id="DDK__AMLI_U_DBG"></span>Parameters
 
@@ -57,7 +57,7 @@ The disassembly display will continue until the end of the method is reached.
 
 Here are some examples. To disassemble the object at address 0x80E5D701, use the following command:
 
-```
+```console
 kd> !amli u 80e5d701
 
 ffffffff80e5d701 : CreateWordField(CRES, 0x1, IRQW)
@@ -69,7 +69,7 @@ ffffffff80e5d72d : Return(CRES)
 
 The following command will disassemble the \_DCK method:
 
-```
+```console
 kd> u \_sb.pci0.dock._dck
 ```
 

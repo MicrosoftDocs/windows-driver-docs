@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: 180d40a4-b300-4801-b9da-9239500ca15f
 keywords:
  - IRP_MN_CHANGE_SINGLE_INSTANCE Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_CHANGE\_SINGLE\_INSTANCE

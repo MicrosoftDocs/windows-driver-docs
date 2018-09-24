@@ -14,6 +14,7 @@ api_name:
 - bthkd.rfcommchannel
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !bthkd.rfcommchannel

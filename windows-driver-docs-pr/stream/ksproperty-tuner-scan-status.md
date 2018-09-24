@@ -16,6 +16,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_TUNER\_SCAN\_STATUS
@@ -23,7 +24,7 @@ ms.technology: windows-devices
 
 The KSPROPERTY\_TUNER\_SCAN\_STATUS property describes the status of a scanning operation. This property can be implemented optionally.
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -88,7 +89,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**KSEVENT\_TUNER\_INITIATE\_SCAN**](ksevent-tuner-initiate-scan.md)

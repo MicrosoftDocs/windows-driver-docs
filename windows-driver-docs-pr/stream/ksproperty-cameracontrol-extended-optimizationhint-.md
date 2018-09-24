@@ -12,19 +12,18 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 9/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_OPTIMIZATIONHINT
 
-
 KSPROPERTY\_CAMERACONTROL\_EXTENDED\_OPTIMIZATIONHINT is used to control the primary use case of photo capture vs. video capture. In Windows 10, this control is extended to support expanded hardware optimization hints.
 
-## <span id="Usage_summary_table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage summary table
-
+## Usage summary table
 
 <table>
 <colgroup>
@@ -47,8 +46,6 @@ KSPROPERTY\_CAMERACONTROL\_EXTENDED\_OPTIMIZATIONHINT is used to control the pri
 </tr>
 </tbody>
 </table>
-
- 
 
 The following flags can be placed in the KSCAMERA\_EXTENDEDPROP\_HEADER.Flags field to hardware optimization hints in the driver.
 
@@ -110,9 +107,7 @@ The following table describes the flag capabilities.
 </tbody>
 </table>
 
- 
-
-The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925136) structure fields when using the control.
+The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
 
 <table>
 <colgroup>
@@ -155,7 +150,7 @@ The following table contains the descriptions and requirements for the [**KSCAME
 
  
 
-### <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 Keep the following items in mind when using optimization hints:
 
@@ -179,8 +174,8 @@ When the video stabilization control is also enabled on the driver (ON or AUTO):
 
 -   The driver may apply the highest aggressive video stabilization to improve the video quality if the QUALITY hint is set.
 
-Requirements
-------------
+
+## Requirements
 
 <table>
 <colgroup>
@@ -194,12 +189,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

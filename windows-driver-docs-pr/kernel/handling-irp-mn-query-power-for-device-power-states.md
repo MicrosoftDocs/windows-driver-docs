@@ -9,6 +9,7 @@ ms.date: 06/16/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling IRP\_MN\_QUERY\_POWER for Device Power States

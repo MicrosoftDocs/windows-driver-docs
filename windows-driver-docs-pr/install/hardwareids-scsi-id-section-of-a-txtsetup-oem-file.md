@@ -9,6 +9,7 @@ api_name:
 - HardwareIds.scsi.ID Section of a TxtSetup.oem File
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # HardwareIds.scsi.ID Section of a TxtSetup.oem File

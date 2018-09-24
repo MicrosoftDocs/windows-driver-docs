@@ -4,7 +4,7 @@ description: The apc extension formats and displays the contents of one or more 
 ms.assetid: 0c5a9d1e-ab61-4b14-b06b-25cde582cc73
 keywords: ["apc Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - apc
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !apc
@@ -21,12 +22,11 @@ api_type:
 
 The **!apc** extension formats and displays the contents of one or more asynchronous procedure calls (APCs).
 
-```
-!apc
-!apc proc Process
-!apc thre Thread
-!apc KAPC
-```
+    !apc
+    !apc proc Process
+    !apc thre Thread
+    !apc KAPC
+
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -74,7 +74,7 @@ Without any parameters, **!apc** displays all APCs.
 
 Here is an example:
 
-```
+```console
 kd> !apc
 *** Enumerating APCs in all processes
 Process e0000000858ba8b0 System

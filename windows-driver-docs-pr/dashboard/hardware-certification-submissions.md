@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Hardware submissions
@@ -14,9 +15,9 @@ ms.technology: windows-devices
 
 The Windows Hardware Compatibility Program (for Windows 10) and the Windows Hardware Certification Program (for Windows 8/8.1 and older operating systems) enable you to design, create, and test your hardware and drivers before you submit the final version through the Windows Hardware Dev Center dashboard. For more information, see the [Windows hardware certification](http://go.microsoft.com/fwlink/p/?LinkId=224782) page. By certifying your hardware device, system, and drivers for Windows, you gain the support of Microsoft marketing resources in the form of compatibility and reliability listings, logo artwork, and promotional partnerships.
 
-To develop your device, download the [Windows Driver Kit (WDK)](http://go.microsoft.com/fwlink/p/?LinkId=226411).
+To develop your device, download the [Windows Driver Kit (WDK)](https://docs.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk).
 
-To test your device, download the [Windows Hardware Lab Kit (Windows HLK)](http://go.microsoft.com/fwlink/p/?LinkId=526775) for Windows 10. For previous operating systems, download the [Windows Hardware Certification Kit (Windows HCK)](http://go.microsoft.com/fwlink/p/?LinkId=248434) or [Windows Logo Kit (WLK)](http://go.microsoft.com/fwlink/p/?LinkId=219237).
+To test your device, download the [Windows Hardware Lab Kit (Windows HLK)](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/windows-hardware-lab-kit) for Windows 10. For previous operating systems, download the [Windows Hardware Certification Kit (Windows HCK)](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/windows-hardware-lab-kit) or [Windows Logo Kit (WLK)](http://go.microsoft.com/fwlink/p/?LinkId=219237).
 
 After you develop and test your product, you can submit the results with a hardware submission.
 
@@ -143,7 +144,7 @@ This section displays certification information. Select **See more info** to exp
 <tbody>
 <tr class="odd">
 <td><p>Is this a Universal Windows driver?</p></td>
-<td><p>Indicates whether or not your driver meets the Universal Windows Platform requirements. For more information, see [Getting Started with Universal Windows drivers](https://msdn.microsoft.com/windows/hardware/drivers/develop/getting-started-with-universal-drivers).</p></td>
+<td><p>Indicates whether or not your driver meets the Universal Windows Platform requirements. For more information, see [Getting Started with Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers).</p></td>
 </tr>
 <tr class="even">
 <td><p>What type of device?</p></td>

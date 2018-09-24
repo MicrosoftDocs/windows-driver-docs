@@ -9,6 +9,7 @@ api_name:
 - CM_Find_Range
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Find_Range

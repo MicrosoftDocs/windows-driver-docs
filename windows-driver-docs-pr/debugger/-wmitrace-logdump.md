@@ -14,6 +14,7 @@ api_name:
 - wmitrace.logdump
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wmitrace.logdump

@@ -12,19 +12,18 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 9/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ISO\_ADVANCED
 
-
 KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ISO\_ADVANCED is an extended property control that allows more global ISO control with more granularity.
 
-## <span id="Usage_summary_table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage summary table
-
+## Usage summary table
 
 <table>
 <colgroup>
@@ -48,15 +47,13 @@ KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ISO\_ADVANCED is an extended property contr
 </tbody>
 </table>
 
- 
-
 The new KSCAMERA\_EXTENDEDPROP\_ISO\_MANUAL flag is defined in ksmedia\_phone.h as follows.
 
 ``` syntax
 #define KSCAMERA_EXTENDEDPROP_ISO_MANUAL          0x0080000000000000
 ```
 
-The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925136) structure fields for the KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ISO\_ADVANCED control.
+The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields for the KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ISO\_ADVANCED control.
 
 The Windows 8.1 KS\_CAMERACONTROL\_EXTENDED\_ISO remains unchanged without the support of integer manual ISO. The driver should only support the new KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ISO\_ADVANCED control. If both of these controls are supported, the pipeline will default to the KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ISO\_ADVANCED control.
 
@@ -181,8 +178,7 @@ The KSCAMERA\_EXTENDEDPROP\_VIDEOPROCSETTING.VideoProc.Value.ul contains the des
 
 If the KSCAMERA\_EXTENDEDPROP\_ISO\_AUTO flag is specified in KSCAMERA\_EXTENDEDPROP\_HEADER.Flags, KSCAMERA\_EXTENDEDPROP\_VIDEOPROCSETTING.VideoProc.Value.ul will be ignored.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -196,12 +192,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

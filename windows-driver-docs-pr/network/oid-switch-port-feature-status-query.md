@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_SWITCH_PORT_FEATURE_STATUS_QUERY Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_SWITCH\_PORT\_FEATURE\_STATUS\_QUERY

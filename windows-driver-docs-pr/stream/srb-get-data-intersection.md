@@ -14,6 +14,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SRB\_GET\_DATA\_INTERSECTION
@@ -31,7 +32,7 @@ The minidriver should set one of the following as the status in the SRB:
 <span id="STATUS_SUCCESS"></span><span id="status_success"></span>STATUS\_SUCCESS  
 Indicates that a match was found.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 *pSrb*-&gt;**CommandData**.**IntersectInfo** specifies both the data range to search for a match and the buffer to return the format. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff559702) structure. (The **IntersectInfo** member is of type pointer to a [**STREAM\_DATA\_INTERSECT\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff568299) structure.)
 

@@ -14,6 +14,7 @@ api_name:
 - .enable_unicode (Enable Unicode Display)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .enable\_unicode (Enable Unicode Display)

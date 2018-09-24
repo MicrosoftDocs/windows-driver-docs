@@ -8,6 +8,7 @@ ms.date: 04/10/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # <span id="debugger.setting_up_kernel-mode_debugging_in_visual_studio"></span>Setting Up Kernel-Mode Debugging in Visual Studio

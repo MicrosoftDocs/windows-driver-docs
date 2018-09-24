@@ -4,19 +4,16 @@ author: windows-driver-content
 description: PTP Required Commands
 ms.assetid: 98f4be09-0f13-45a1-b28a-c027e57c0dd7
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # PTP Required Commands
 
-
-
-
-
-PTP drivers must support commands marked as mandatory in the *Conformance Section* (chapter 14) of the PIMA15740 specification. The only exception is that the **GetNumObjects** command is not used. In other words, if a device is compliant with the PIMA15740 specification, it will work with Microsoft Windows Me, Windows XP, and later.
+PTP drivers must support commands marked as mandatory in the *Conformance Section* (chapter 14) of the PIMA15740 specification. The only exception is that the **GetNumObjects** command is not used.
 
 The full list of required PTP commands is:
 
@@ -37,11 +34,4 @@ The full list of required PTP commands is:
 0x1009 **GetObject**
 
 0x100A **GetThumb**
-
- 
-
- 
-
-
-
 

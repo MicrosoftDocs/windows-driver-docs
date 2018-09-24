@@ -3,7 +3,7 @@ title: GuardedRegions rule (wdm)
 description: The GuardedRegions rule verifies that calls to KeEnterGuardedRegion and KeLeaveGuardedRegion are used in strict alternation.
 ms.assetid: CF98BF68-905C-48D2-AE72-08DD5559AA0D
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - GuardedRegions
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # GuardedRegions rule (wdm)

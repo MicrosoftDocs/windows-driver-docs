@@ -11,6 +11,7 @@ api_location:
 - ndis.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # NDIS_STATUS_WWAN_MODEM_CONFIG_INFO

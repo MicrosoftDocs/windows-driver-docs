@@ -14,6 +14,7 @@ api_name:
 - ph (Step to Next Branching Instruction)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ph (Step to Next Branching Instruction)

@@ -11,6 +11,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating a Trace Session with a PDB File
@@ -47,7 +48,7 @@ The easiest way to specify a trace provider is to locate the [PDB symbol file](p
 
 If the PDB file that you specify does not include the required tracing elements, TraceView displays the "Cannot find PDB file" error message.
 
- 
+If you use TraceView to open a PDB file on a computer running Windows Server 2003, TraceView automatically exits.
 
  
 

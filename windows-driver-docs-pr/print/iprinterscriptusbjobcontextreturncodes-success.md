@@ -13,6 +13,7 @@ api_name:
 - IPrinterScriptUsbJobContextReturnCodes.Success
 api_type:
 - COM
+ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbJobContextReturnCodes::Success method

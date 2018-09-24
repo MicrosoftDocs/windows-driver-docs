@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -OID_802_3_DELETE_MULTICAST_ADDRESS Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_802\_3\_DELETE\_MULTICAST\_ADDRESS

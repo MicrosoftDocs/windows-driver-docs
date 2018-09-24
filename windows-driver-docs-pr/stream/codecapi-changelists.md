@@ -7,6 +7,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # CODECAPI\_CHANGELISTS
@@ -51,7 +52,7 @@ For more information about DirectShow filters and KsProxy see [Kernel Streaming 
 
 The driver uses the AVStream [**KsGenerateEvents**](https://msdn.microsoft.com/library/windows/hardware/ff562597) to post a list of GUIDs that changed.
 
-### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
+### See Also
 
 [**KsGenerateEvents**](https://msdn.microsoft.com/library/windows/hardware/ff562597), [CODECAPI\_ALLSETTINGS](codecapi-allsettings.md), [CODECAPI\_SETALLDEFAULTS](codecapi-setalldefaults.md)
 

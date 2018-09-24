@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Attaching ECPs to IRP\_MJ\_CREATE Operations that a Kernel-Mode Driver Originated

@@ -16,6 +16,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # AVC\_FUNCTION\_SEND\_RESPONSE
@@ -26,7 +27,7 @@ ms.technology: windows-devices
 
 The **AVC\_FUNCTION\_SEND\_RESPONSE** function code is used to respond to AV/C unit and subunit requests.
 
-### <span id="i_o_status_block"></span><span id="I_O_STATUS_BLOCK"></span>I/O Status Block
+### I/O Status Block
 
 If successful, the AV/C protocol driver may set **Irp-&gt;IoStatus.Status** to either:
 
@@ -59,7 +60,7 @@ Possible other return values include:
 
 ### <span id="headers"></span><span id="HEADERS"></span>Headers
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 This function uses the AVC\_COMMAND\_IRB structure as shown below.
 
@@ -88,7 +89,7 @@ typedef struct _AVC_COMMAND_IRB {
 
 ### <span id="avc_command_irb_input"></span><span id="AVC_COMMAND_IRB_INPUT"></span>AVC\_COMMAND\_IRB Input
 
-<span id="Common"></span><span id="common"></span><span id="COMMON"></span>**Common**  
+**Common**  
 The **Function** submember of this member must be set to **AVC\_FUNCTION\_SEND\_RESPONSE** from the AVC\_FUNCTION enumeration.
 
 <span id="SubunitAddrFlag"></span><span id="subunitaddrflag"></span><span id="SUBUNITADDRFLAG"></span>**SubunitAddrFlag**  
@@ -146,7 +147,7 @@ The recommended use of this structure is to use the contents of the original req
 
 This function code may be called at IRQL &lt;= DISPATCH\_LEVEL.
 
-### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
+### See Also
 
 [**AVC\_FUNCTION\_GET\_REQUEST**](avc-function-get-request.md), [**AvcResponseCode**](https://msdn.microsoft.com/library/windows/hardware/ff554105), [**AVC\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554145)
 

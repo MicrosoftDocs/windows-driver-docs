@@ -16,6 +16,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KSMETHOD\_BDA\_GET\_CHANGE\_STATE
@@ -50,7 +51,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**BDA\_CHANGE\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff556518)

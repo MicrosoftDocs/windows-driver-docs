@@ -14,6 +14,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KSEVENT\_TUNER\_INITIATE\_SCAN
@@ -76,7 +77,7 @@ For the same reason, the application must shift the range of query by half the e
 
 The scan operation must complete whenever a new channel or signal is found. The driver then returns scan status through the [**KSPROPERTY\_TUNER\_SCAN\_STATUS**](ksproperty-tuner-scan-status.md) property. The scan must complete whenever a new channel is found even if the driver determines that the newly found channel does not match the previously applied standard. The application must process the new channel information and must resubmit a scan request to find another channel with the same signal standard.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**KSEVENT\_TUNER\_INITIATE\_SCAN\_S**](https://msdn.microsoft.com/library/windows/hardware/ff561901)

@@ -14,6 +14,7 @@ api_name:
 - lpc
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !lpc

@@ -14,6 +14,7 @@ api_name:
 - dt
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !dt

@@ -3,7 +3,7 @@ title: RemoveLockForwardRead rule (wdm)
 description: The RemoveLockForwardRead rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used in correctly.
 ms.assetid: 1C33E629-13BA-44F7-8B6E-5FEF7C021CDE
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - RemoveLockForwardRead
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # RemoveLockForwardRead rule (wdm)

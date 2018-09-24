@@ -2,7 +2,7 @@
 title: IrqlMmApcLte rule (wdm)
 ms.assetid: 075f5710-b2bf-4546-9648-661a3c8521f8
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - IrqlMmApcLte
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # IrqlMmApcLte rule (wdm)

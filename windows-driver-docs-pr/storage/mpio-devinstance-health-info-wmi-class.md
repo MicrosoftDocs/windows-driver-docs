@@ -2,6 +2,7 @@
 title: MPIO\_DEVINSTANCE\_HEALTH\_INFO WMI Class
 description: MPIO\_DEVINSTANCE\_HEALTH\_INFO WMI Class
 ms.assetid: 4d47b41b-eac6-4f8b-801b-76eec8158074
+ms.localizationpriority: medium
 ---
 
 # MPIO\_DEVINSTANCE\_HEALTH\_INFO WMI Class

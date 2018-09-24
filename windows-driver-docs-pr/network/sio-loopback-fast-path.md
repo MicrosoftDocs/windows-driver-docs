@@ -10,6 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 keywords: 
  -SIO_LOOPBACK_FAST_PATH control code Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # SIO\_LOOPBACK\_FAST\_PATH control code

@@ -12,18 +12,18 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 9/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOTRIGGERTIME
 
-
 This property controls the trigger time for the camera driver. The trigger time is used in determining a reference frame for a photo sequence.
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+## Usage Summary Table
 
 <table>
 <colgroup>
@@ -47,35 +47,30 @@ This property controls the trigger time for the camera driver. The trigger time 
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
-<td><p>[<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>](https://msdn.microsoft.com/library/windows/hardware/dn567563)</p></td>
+<td><p>[<strong>KSPROPERTY</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)</p></td>
+<td><p>[<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header)</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+The property value (operation data) contains a [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure and a [**KSCAMERA\_EXTENDEDPROP\_VALUE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value) structure. The photo trigger time, in 100 nanosecond units, is set or returned as value in **KSCAMERA\_EXTENDEDPROP\_VALUE**.
 
-The property value (operation data) contains a [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563) structure and a [**KSCAMERA\_EXTENDEDPROP\_VALUE**](https://msdn.microsoft.com/library/windows/hardware/dn567564) structure. The photo trigger time, in 100 nanosecond units, is set or returned as value in **KSCAMERA\_EXTENDEDPROP\_VALUE**.
+The total property data size is **sizeof**(KSCAMERA\_EXTENDEDPROP\_HEADER) + **sizeof**(KSCAMERA\_EXTENDEDPROP\_VALUE). The **Size** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) is set to this total property data size.
 
-The total property data size is **sizeof**(KSCAMERA\_EXTENDEDPROP\_HEADER) + **sizeof**(KSCAMERA\_EXTENDEDPROP\_VALUE). The **Size** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563) is set to this total property data size.
-
-The trigger time is set or cleared using the one of the following flags in the **Flags** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563).
+The trigger time is set or cleared using the one of the following flags in the **Flags** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header).
 
 | Trigger time flag                           | Description                     |
 |---------------------------------------------|---------------------------------|
 | KSPROPERTY\_CAMERA\_PHOTOTRIGGERTIME\_CLEAR | Clear the trigger time setting. |
 | KSPROPERTY\_CAMERA\_PHOTOTRIGGERTIME\_SET   | Set a new trigger time value.   |
 
- 
+This property control is synchronous and not cancelable..
 
-This property control is synchronous.
+## Remarks
 
-Remarks
--------
+### Getting the property
 
-### <span id="Getting_the_property"></span><span id="getting_the_property"></span><span id="GETTING_THE_PROPERTY"></span>Getting the property
-
-When responding to a KSPROPERTY\_TYPE\_GET request, the driver sets the members of the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563) to the following.
+When responding to a KSPROPERTY\_TYPE\_GET request, the driver sets the members of the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) to the following.
 
 <table>
 <colgroup>
@@ -118,16 +113,13 @@ When responding to a KSPROPERTY\_TYPE\_GET request, the driver sets the members 
 </tbody>
 </table>
 
- 
+If the trigger time is not currently set to any time value, the **Flags** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) must contain KSPROPERTY\_CAMERA\_PHOTOTRIGGERTIME\_CLEAR value.
 
-If the trigger time is not currently set to any time value, the **Flags** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563) must contain KSPROPERTY\_CAMERA\_PHOTOTRIGGERTIME\_CLEAR value.
+### Setting the Property
 
-### <span id="Setting_the_Property"></span><span id="setting_the_property"></span><span id="SETTING_THE_PROPERTY"></span>Setting the Property
+When the property is set, the **ull** member of [**KSCAMERA\_EXTENDEDPROP\_VALUE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value) will contain the trigger time value. The trigger time is set or cleared based on the operation flag. When the flag is KSPROPERTY\_CAMERA\_PHOTOTRIGGERTIME\_CLEAR the value in **KSCAMERA\_EXTENDEDPROP\_VALUE** is not used and is ignored.
 
-When the property is set, the **ull** member of [**KSCAMERA\_EXTENDEDPROP\_VALUE**](https://msdn.microsoft.com/library/windows/hardware/dn567565) will contain the trigger time value. The trigger time is set or cleared based on the operation flag. When the flag is KSPROPERTY\_CAMERA\_PHOTOTRIGGERTIME\_CLEAR the value in **KSCAMERA\_EXTENDEDPROP\_VALUE** is not used and is ignored.
-
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -145,12 +137,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

@@ -7,6 +7,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Making the Most of TAEF
@@ -23,7 +24,7 @@ There may only be one assembly level setup and cleanup method per assembly, one 
 
 If exceptions are enabled (the default case), the execution of any method is terminated on the first Verify call that fails. If you have explicitly disabled exception-based Verify calls (see the Verify section in Authoring Tests for details), you will need to have explicit conditional statements to govern the control flow after a Verify call fails.
 
-In the case where the failure happens in a Setup method (either by way of exception based verify failure or by setup explicitly returning a failure), the tests that were to follow are considered "Blocked" and logged as such. For example, if your Class level Setup method fails, all the test methods in the Class are considered "Blocked" and each of them will be logged as such.
+In the case where the failure happens in a Setup method (either by way of exception based verify failure or by setup explicitly returning a failure), the tests that were to follow are considered "Blocked" and logged as such. For example, if your Class level Setup method fails, all the test methods in the Class are considered "Blocked" and each of them will be logged as such. In addition to that, the Cleanup method won't be invoked if the failure happens in a Setup method.
 
 ## <span id="Test_Method"></span><span id="test_method"></span><span id="TEST_METHOD"></span>Test Method
 

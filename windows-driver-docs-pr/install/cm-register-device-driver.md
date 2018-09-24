@@ -9,6 +9,7 @@ api_name:
 - CM_Register_Device_Driver
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Register_Device_Driver

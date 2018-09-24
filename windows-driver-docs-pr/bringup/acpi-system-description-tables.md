@@ -4,10 +4,11 @@ author: windows-driver-content
 description: Implementation of the Advanced Configuration and Power Interface (ACPI) Hardware Specification is not required on SoC-based platforms, but much of the ACPI Software Specification is (or can be) required.
 ms.assetid: 6EFCD288-031D-46BB-ABF3-8ADB53E7B4B1
 ms.author: windowsdriverdev
-ms.date: 05/16/2018
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # ACPI system description tables
@@ -15,14 +16,14 @@ ms.technology: windows-devices
 
 Implementation of the Advanced Configuration and Power Interface (ACPI) Hardware Specification is not required on SoC-based platforms, but much of the ACPI Software Specification is (or can be) required. ACPI defines a generic, extensible table-passing mechanism, plus specific tables for describing the platform to the operating system.
 
-Table structures and headers, including ID and checksum fields, are defined in the [ACPI 5.0 specification](http://www.uefi.org/specifications). Windows utilizes this table-passing mechanism, in addition to the specific tables that are described in this article.
+Table structures and headers, including ID and checksum fields, are defined in the [ACPI 5.0 specification](https://www.uefi.org/specifications). Windows utilizes this table-passing mechanism, in addition to the specific tables that are described in this article.
 
 The idea behind these tables is to enable generic software to support standard intellectual property (IP) blocks that can be integrated into various platforms in diverse ways. With the table strategy, the platform-variable attributes of a particular platform are provided in a table, and used by generic software to adapt itself to the specific set of IP blocks integrated into the platform. This software can therefore be written once, thoroughly tested, and then optimized over time.
 
 ## Root System Description Pointer (RSDP)
 
 
-Windows depends on UEFI firmware to boot up the hardware platform. Hence, Windows will use the EFI system table to locate the RSDP, as described in section 5.2.5.2, "Finding the RSDP on UEFI Enabled Systems", of the [ACPI 5.0 specification](http://www.uefi.org/specifications). The platform firmware fills in the address of either the RSDT or XSDT in the RSDP. (If both table addresses are provided, Windows will prefer the XSDT. )
+Windows depends on UEFI firmware to boot up the hardware platform. Hence, Windows will use the EFI system table to locate the RSDP, as described in section 5.2.5.2, "Finding the RSDP on UEFI Enabled Systems", of the [ACPI 5.0 specification](https://www.uefi.org/specifications). The platform firmware fills in the address of either the RSDT or XSDT in the RSDP. (If both table addresses are provided, Windows will prefer the XSDT. )
 
 ## Root System Description Table (RSDT)
 
@@ -56,12 +57,12 @@ The Fixed ACPI Hardware Table (FADT) contains important information about the va
 -   New fields are added to support traditional PC sleep/resume on hardware-reduced ACPI platforms. These fields are ignored by Windows, but must be present in the table for compliance.
 -   If the HARDWARE\_REDUCED\_ACPI flag is set, all fields relating to the ACPI Hardware Specification are ignored by the operating system.
 
-All other FADT settings retain their meanings from the previous version, ACPI 4.0. For more information, see section 5.2.9, "Fixed ACPI Description Table (FADT)", of the [ACPI 5.0 specification](http://www.uefi.org/specifications).
+All other FADT settings retain their meanings from the previous version, ACPI 4.0. For more information, see section 5.2.9, "Fixed ACPI Description Table (FADT)", of the [ACPI 5.0 specification](https://www.uefi.org/specifications).
 
 ## Multiple APIC Description Table (MADT)
 
 
-In PC implementations of ACPI, the Multiple APIC Description Table (MADT) and PC-specific interrupt controller descriptors are used to describe the system interrupt model. For ARM-based SoC platforms, ACPI 5.0 adds descriptors for the ARM Holdings' Generic Interrupt Controller (GIC) and GIC Distributor. Windows includes inbox support for the GIC and GIC Distributor. For more information about these descriptors, see sections 5.2.12.14, "GIC Structure", and 5.2.12.15, "GIC Distributor Structure", of the [ACPI 5.0 specification](http://www.uefi.org/specifications).
+In PC implementations of ACPI, the Multiple APIC Description Table (MADT) and PC-specific interrupt controller descriptors are used to describe the system interrupt model. For ARM-based SoC platforms, ACPI 5.0 adds descriptors for the ARM Holdings' Generic Interrupt Controller (GIC) and GIC Distributor. Windows includes inbox support for the GIC and GIC Distributor. For more information about these descriptors, see sections 5.2.12.14, "GIC Structure", and 5.2.12.15, "GIC Distributor Structure", of the [ACPI 5.0 specification](https://www.uefi.org/specifications).
 
 The interrupt controller descriptor structures are listed immediately after the Flags field in the MADT. For ARM platforms, one descriptor is listed for each GIC, followed by one for each GIC Distributor. The GIC corresponding to the boot processor must be the first entry in the list of interrupt controller descriptors.
 
@@ -99,7 +100,7 @@ In ACPI, peripheral devices and system hardware features on the platform are des
 
 ACPI defines an interpreted language (ACPI source language, or ASL) and an execution environment (ACPI virtual machine) for describing system devices and features, and their platform-specific controls, in an OS-agnostic way. ASL is used to define named objects in the ACPI namespace, and the [Microsoft ASL compiler](microsoft-asl-compiler.md) is used to produce ACPI machine language (AML) byte code for transmission to the operating system in the DSDT. The inbox [Windows ACPI driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/acpi-driver), Acpi.sys, implements the ACPI virtual machine and interprets the AML byte code. An AML object might simply return description information. Or, an AML object might be a method that performs computation or does I/O operations. A *control method* is an executable AML object that uses the operating system's device drivers to do I/O operations on the platform hardware. ASL uses OpRegions to abstract the various address spaces accessible in the operating system. Control methods perform I/O operations as a series of transfers to and from named fields declared in OpRegions.
 
-For more information about OpRegions, see section 5.5.2.4, "Access to Operation Regions", in the [ACPI 5.0 specification](http://www.uefi.org/specifications). For more about ASL and control methods, see section 5.5, "ACPI Namespace", in the ACPI 5.0 specification.
+For more information about OpRegions, see section 5.5.2.4, "Access to Operation Regions", in the [ACPI 5.0 specification](https://www.uefi.org/specifications). For more about ASL and control methods, see section 5.5, "ACPI Namespace", in the ACPI 5.0 specification.
 
 Windows provides support for developing and debugging ASL code. The ASL compiler includes a disassembler to enable the implementer to load a namespace from a debugging target. The ASL compiler can then be used to reapply the namespace to the target for rapid prototyping and testingâ€”without having to flash the system firmware. In addition, the Windows Kernel Debugger, in conjunction with a checked (CHK) version of the Acpi.sys driver, supports tracing and analyzing AML execution. For more information, see [The AMLI Debugger](https://docs.microsoft.com/windows-hardware/drivers/debugger/introduction-to-the-amli-debugger).
 
@@ -115,11 +116,4 @@ Windows ServerÂ 2016
 WindowsÂ 10, version 1607
 
 For more information, see the [Windows SMM Security Mitigations Table (WMST) specification](http://go.microsoft.com/fwlink/p/?LinkId=786943).
-
-Â
-
-Â
-
-
-
 

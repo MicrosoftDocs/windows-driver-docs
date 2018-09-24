@@ -14,6 +14,7 @@ api_name:
 - gpiokd.pintable
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !gpiokd.pintable

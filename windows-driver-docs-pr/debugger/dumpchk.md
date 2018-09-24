@@ -4,10 +4,11 @@ description: DumpChk
 ms.assetid: f7431207-562b-451a-843e-1c2be038e306
 keywords: ["DumpChk"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DumpChk
@@ -40,7 +41,7 @@ DumpChk [-y SymbolPath] DumpFile
 
 Here is an example in which the dump file is corrupt. The error shown at the end, `DebugClient cannot open DumpFile`, indicates that some kind of corruption must have occurred:
 
-```
+```console
 C:\Debuggers> dumpchk c:\mydir\dumpfile2.dmp 
 
 Loading dump file c:\mydir\dumpfile2.dmp
@@ -66,7 +67,7 @@ error 3 InitTypeRead( nt!_PEB at 7ffd5000)
 
 Here is an example of DumpChk run on a healthy user-mode minidump. The display begins with an overall summary of the dump file, and then gives detailed information about what data is contained in the dump file:
 
-```
+```console
 C:\Debuggers> dumpchk c:\mydir\dumpfile1.dmp 
 
 Loading dump file c:\mydir\dumpfile1.dmp

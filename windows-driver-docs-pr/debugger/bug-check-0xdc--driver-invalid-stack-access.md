@@ -14,6 +14,7 @@ api_name:
 - DRIVER_INVALID_STACK_ACCESS
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xDC: DRIVER\_INVALID\_STACK\_ACCESS

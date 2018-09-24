@@ -3,7 +3,7 @@ title: NdisReEnumerateProtocolBindings rule (ndis)
 description: Protocol drivers cannot call NdisReEnumerateProtocolBindings from within the context of the ProtocolBindAdapterEx or ProtocolUnbindAdapterEx functions.
 ms.assetid: A6BB5B25-B8F4-4D90-B325-DFEED9C4AA6A
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - NdisReEnumerateProtocolBindings
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # NdisReEnumerateProtocolBindings rule (ndis)

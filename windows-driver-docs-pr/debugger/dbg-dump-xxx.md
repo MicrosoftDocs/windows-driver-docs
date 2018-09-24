@@ -16,6 +16,7 @@ api_location:
 - wdbgexts.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # DBG\_DUMP\_XXX

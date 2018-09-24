@@ -10,6 +10,7 @@ api_name:
 - CM_Unregister_Device_InterfaceW
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Unregister_Device_Interface

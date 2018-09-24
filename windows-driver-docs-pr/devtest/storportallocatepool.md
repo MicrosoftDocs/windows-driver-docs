@@ -3,7 +3,7 @@ title: StorPortAllocatePool rule (storport)
 description: This rule verifies that the miniport must not attempt to call StorPortFreePool on an deallocated buffer.
 ms.assetid: DEE1768C-5BFF-4A8A-8AE9-9690FDA653C3
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - StorPortAllocatePool
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # StorPortAllocatePool rule (storport)

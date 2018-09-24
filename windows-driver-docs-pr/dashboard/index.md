@@ -12,13 +12,10 @@ ms.technology: windows-devices
 
 # Windows Hardware Dev Center dashboard
 
-The Windows Hardware Dev Center Dashboard enables you to create and manage your system and driver submissions quickly and easily. It replaces the legacy (Sysdev) dashboard for most hardware tasks including: hardware certification, collaborative driver development, and driver distribution through Windows Update. To get started, watch our introductory [video series](http://go.microsoft.com/fwlink/?LinkID=828003), and see [Get started with the hardware program](get-started-with-the-hardware-dashboard.md) for registration details.
+The Windows Hardware Dev Center Dashboard enables you to create and manage your system and driver submissions quickly and easily. It replaces the legacy (Sysdev) dashboard for hardware tasks including: hardware certification, collaborative driver development, and driver distribution through Windows Update. To get started, watch our introductory [video series](http://go.microsoft.com/fwlink/?LinkID=828003), and see [Get started with the hardware program](get-started-with-the-hardware-dashboard.md) for registration details.
 
 > [!NOTE]
-> Until the following services are migrated, you must continue to use the [legacy (Sysdev) dashboard](dashboard-services.md) to perform the following:
-> * Device Metadata
-> * Remote Debugging (WRD)
-> * Certified Products List
+> The legacy (Sysdev) dashboard has been retired. Use the Windows Hardware Dev Center Dashboard for your hardware tasks.
 
 <ul class="cardsFTitle panelContent">
     <li>        
@@ -36,6 +33,7 @@ The Windows Hardware Dev Center Dashboard enables you to create and manage your 
                             <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/create-a-new-hardware-submission">Create a new driver submission</a></li>
                             <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/manage-your-hardware-submissions">Manage your hardware submissions</a></li>
                             <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/driver-flighting">Driver flighting</a></li>
+                            <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata">Device metadata</a></li>
                         </ul>
                     </div>
                 </div>
@@ -120,27 +118,6 @@ The Windows Hardware Dev Center Dashboard enables you to create and manage your 
                             <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-started-with-the-hardware-dashboard">Getting started with the hardware dashboard</a></li>
                             <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/hardware-dashboard-faq">Hardware dashboard FAQ</a></li>
                             <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/lsa-and-uefi-file-signing">LSA and UEFI file signing</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>        
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_library.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Legacy (Sysdev) dashboard</h3>
-                        <ul>
-                            <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata">Device metadata</a></li>
-                            <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/administration">Sysdev administration</a></li>
-                            <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/windows-certified-products-list">Windows certified products list</a></li>
                         </ul>
                     </div>
                 </div>

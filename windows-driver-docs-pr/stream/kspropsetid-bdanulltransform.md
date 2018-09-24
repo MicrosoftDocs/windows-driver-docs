@@ -7,6 +7,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_BdaNullTransform
@@ -25,7 +26,7 @@ Disables any transform that the node previously applied to a signal and allows t
 <span id="KSPROPERTY_BDA_NULL_TRANSFORM_STOP"></span><span id="ksproperty_bda_null_transform_stop"></span>[**KSPROPERTY\_BDA\_NULL\_TRANSFORM\_STOP**](ksproperty-bda-null-transform-stop.md)  
 Restarts the transform that the node performed on the signal before that transform was disabled with the KSPROPERTY\_BDA\_NULL\_TRANSFORM\_START property.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 The network provider filter can use this property set if a node supports it and the network provider needs the signal to pass through that particular node unchanged.
 

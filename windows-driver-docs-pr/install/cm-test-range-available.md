@@ -9,6 +9,7 @@ api_name:
 - CM_Test_Range_Available
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CM_Test_Range_Available

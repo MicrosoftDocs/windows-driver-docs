@@ -16,6 +16,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Console (DevCon.exe) Examples
@@ -1319,9 +1320,6 @@ devcon reboot
 
 In response, DevCon displays a message indicating that it is restarting the computer (Rebooting local machine).
 
-```
-
-```
 
 DevCon uses the standard **ExitWindowsEx** function to reboot. If the user has open files on the computer or a program will not close, the system does not reboot until the user has responded to system prompts to close the files or end the process.
 

@@ -3,10 +3,11 @@ title: BCDEdit Options Reference
 description: BCDEdit Options Reference
 ms.assetid: 351f8bc3-a228-48a4-bda8-69ee8521a5d3
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # BCDEdit Options Reference
@@ -14,7 +15,7 @@ ms.technology: windows-devices
 
 *Boot entry parameters*, or *boot parameters*, are optional, system-specific settings that represent configuration options. You can add boot parameters to a boot entry for an operating system.
 
-This section describes the boot options for Windows 10, Windows 8.1, Windows 8, Windows 7, and Windows Vista, that are related to developing, testing, and debugging drivers on computers with x86-based and x64-based processors. You can add these parameters to the boot entries for Windows operating systems.
+This section describes the boot options for supported versions of Windows that are related to developing, testing, and debugging drivers on computers with x86-based and x64-based processors. You can add these parameters to the boot entries for Windows operating systems.
 
 > [!NOTE]
 > Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
@@ -235,7 +236,9 @@ The following table provides a mapping from the boot options used in operating s
 </tbody>
 </table>
 
- 
+ ## See also
+ 
+ [Adding Boot Entries](https://docs.microsoft.com/windows-hardware/drivers/devtest/adding-boot-entries)
 
  
 

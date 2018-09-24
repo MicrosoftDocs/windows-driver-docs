@@ -9,14 +9,14 @@ keywords:
 - UVC INF files WDK USB Video Class , sample code
 - sample code WDK USB Video Class , UVC INF files
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 9/12/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Providing a UVC INF File
-
 
 This section illustrates various portions of a device-specific INF file.
 
@@ -101,6 +101,8 @@ HKR,,CLSID,,%ProxyVCap.CLSID%
 HKR,,FriendlyName,,%MyDevice.DeviceDesc%
 HKR,,RTCFlags,0x00010001,0x00000010
 ```
+
+For USB Cameras, if the device interface registry key location contains a DWORD registry entry **EnableDependentStillPinCapture** with a non-zero value, the dependent pin on such cameras will be used for photo capture. If the registry entry is not present or set to zero, the dependent pin will not be used. Instead, the photo capture will be done using a frame taken from the preview pin.
 
 You can also define an optional registry value called **UvcFlags**. **UvcFlags** should be a DWORD value. When the device is plugged in, the UVC driver receives a Plug and Play (PnP) Start request. The driver then searches for **UvcFlags** in the device registry key. The DWORD value is a bitmask and can contain the values in the following table.
 

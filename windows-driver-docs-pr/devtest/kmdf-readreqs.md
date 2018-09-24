@@ -3,7 +3,7 @@ title: ReadReqs rule (kmdf)
 description: The ReadReqs rule specifies that read requests are not passed to inappropriate KMDF methods.
 ms.assetid: 96ab967b-976a-456b-b155-08732dd6700a
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - ReadReqs
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ReadReqs rule (kmdf)

@@ -14,6 +14,7 @@ api_name:
 - gflag
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !gflag

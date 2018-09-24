@@ -14,6 +14,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SRB\_OPEN\_DEVICE\_INSTANCE
@@ -40,13 +41,13 @@ Indicates that there are not enough resources to open this stream.
 <span id="STATUS_IO_DEVICE_ERROR"></span><span id="status_io_device_error"></span>STATUS\_IO\_DEVICE\_ERROR  
 Indicates that a hardware failure occurred.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 If the minidriver supports multiple instances of a device, this command is sent by the class driver each time a new instance of the adapter is opened. As an example, consider a DSP decoder that can allocate *n* number of instances of the streams specified. The **HwInstanceExtension** field in the SRB should then be set to the minidriver's per-instance workspace by the class driver.
 
 Most adapters do not support multiple instances, so in those cases the **FilterInstanceExtensionSize** field in the **HW\_INITIALIZATION\_DATA** structure should be set to zero and should never receive this command.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**SRB\_CLOSE\_DEVICE\_INSTANCE**](srb-close-device-instance.md)

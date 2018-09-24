@@ -14,6 +14,7 @@ api_name:
 - wdfkd.wdfdevicequeues
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfdevicequeues

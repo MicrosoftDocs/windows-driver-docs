@@ -10,6 +10,7 @@ ms.technology: windows-devices
 ms.assetid: d57c30b8-83bd-41c9-906d-b8c95f8ca54e
 keywords:
  - IRP_MN_WRITE_CONFIG Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_WRITE\_CONFIG

@@ -14,6 +14,7 @@ api_name:
 - rpcexts.rpcreadstack
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !rpcexts.rpcreadstack

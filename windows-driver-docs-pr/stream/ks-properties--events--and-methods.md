@@ -21,6 +21,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KS Properties, Events, and Methods
@@ -33,7 +34,7 @@ Kernel streaming architecture supports interaction between minidrivers and user-
 
 Clients request all three operation classes in a standardized manner. The client provides an alias structure of [**KSIDENTIFIER**](https://msdn.microsoft.com/library/windows/hardware/ff562676) in a call to **DeviceIoControl** (described in the Microsoft Windows SDK documentation) or [**KsSynchronousDeviceControl**](https://msdn.microsoft.com/library/windows/hardware/ff567142).
 
-The alias structures are [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262), [**KSEVENT**](https://msdn.microsoft.com/library/windows/hardware/ff561744), and [**KSMETHOD**](https://msdn.microsoft.com/library/windows/hardware/ff563398). All three include the following parameters:
+The alias structures are [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier), [**KSEVENT**](https://msdn.microsoft.com/library/windows/hardware/ff561744), and [**KSMETHOD**](https://msdn.microsoft.com/library/windows/hardware/ff563398). All three include the following parameters:
 
 -   **Set**
 

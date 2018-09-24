@@ -3,7 +3,7 @@ title: RemoveLockReleaseShutdown rule (wdm)
 description: The RemoveLockReleaseShutdown rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used in strict alternation. Moreover, at the end of the dispatch routine the driver should not hold the remove lock.
 ms.assetid: CC4546C1-750D-4216-9343-E990B00886A8
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - RemoveLockReleaseShutdown
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # RemoveLockReleaseShutdown rule (wdm)

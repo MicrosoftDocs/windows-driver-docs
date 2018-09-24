@@ -3,7 +3,7 @@ title: Irql\_Gather\_DMA\_Function rule (ndis)
 description: The Irql\_Gather\_DMA\_Function rule specifies that the NDIS scatter/gather DMA functions must be called at correct IRQL levels.
 ms.assetid: 2ac0d238-4ca0-4b07-9318-159cd9a64d35
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - Irql_Gather_DMA_Function
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Irql\_Gather\_DMA\_Function rule (ndis)

@@ -9,6 +9,7 @@ ms.date: 08/14/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MB base stations information query support
@@ -28,6 +29,10 @@ This command retrieves information about the serving and neighbor cells known to
 Service: **MBB_UUID_BASIC_CONNECT_EXTENSIONS**
 
 Service UUID: **3d01dcc5-fef5-4d05-0d3a-bef7058e9aaf**
+
+| CID | Command code | Minimum OS version |
+| --- | --- | --- |
+| MBIM_CID_BASE_STATIONS_INFO | 11 | Windows 10, version 1709 |
 
 ### Parameters
 
@@ -308,6 +313,13 @@ This CID retrieves the status of the cellular information which indicates the lo
 Service: **MBB_UUID_BASIC_CONNECT_EXTENSIONS**
 
 Service UUID: **3d01dcc5-fef5-4d05-0d3a-bef7058e9aaf**
+
+| CID | Command code | Minimum OS version |
+| --- | --- | --- |
+| MBIM_CID_LOCATION_INFO_STATUS | 12 | Windows 10, version 1709 |
+
+> [!NOTE]
+> MBIM_CID_LOCATION_INFO_STATUS is defined starting in Windows 10, version 1709, but is not currently supported by the OS. A modem can send this command as a notification, but the OS does not currently handle it.
 
 ### Parameters
 

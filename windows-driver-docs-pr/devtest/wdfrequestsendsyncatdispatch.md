@@ -3,7 +3,7 @@ title: WdfRequestSendSyncAtDispatch rule (kmdf)
 description: The WdfRequestSendSyncAtDispatch rule verifies that the WdfRequestSend function is sent at the correct IRQL priority level.
 ms.assetid: D8A30F95-3E6C-4ED8-B112-F033555D97A7
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - WdfRequestSendSyncAtDispatch
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # WdfRequestSendSyncAtDispatch rule (kmdf)

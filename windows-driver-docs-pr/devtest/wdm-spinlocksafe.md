@@ -3,7 +3,7 @@ title: SpinLockSafe rule (wdm)
 description: The SpinLockSafe rule specifies that IoStartNextPacket and IoCompleteRequest are not called while holding a spin lock.
 ms.assetid: 64a18cb0-80a3-4830-a5b0-131fc1ebdf60
 ms.author: windowsdriverdev
-ms.date: 5/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,6 +14,7 @@ api_name:
 - SpinLockSafe
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # SpinLockSafe rule (wdm)

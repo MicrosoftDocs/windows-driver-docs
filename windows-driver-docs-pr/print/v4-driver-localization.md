@@ -8,6 +8,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # V4 Printer Driver Localization
@@ -97,7 +98,7 @@ Across the different user interfaces and APIs, the display names vary. Use the f
 
 The following flowchart shows the expected localization behavior in UWP apps, as well as in the [**IPrintSchemaFeature**](https://msdn.microsoft.com/library/windows/hardware/hh451284) and [**IPrintSchemaOption**](https://msdn.microsoft.com/library/windows/hardware/hh451335) families of objects.
 
-![localization behavior flowchart for windows store apps, iprintschemafeature or iprintschemaoption](images/locstringmodern.png)
+![localization behavior flowchart for Windows apps, iprintschemafeature or iprintschemaoption](images/locstringmodern.png)
 
 The following flowchart shows the expected localization behavior in **PrintCapabilities** XML documents.
 

@@ -3,7 +3,7 @@ title: Bug Check 0x356 XBOX_ERACTRL_CS_TIMEOUT
 description: The XBOX_ERACTRL_CS_TIMEOUT  bug check has a value of 0x00000356.
 keywords: ["Bug Check 0x356 XBOX_ERACTRL_CS_TIMEOUT", "XBOX_ERACTRL_CS_TIMEOUT"]
 ms.author: domars
-ms.date: 05/23/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -13,6 +13,7 @@ api_name:
 - XBOX_ERACTRL_CS_TIMEOUT 
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check Bug Check 0x356: XBOX\_ERACTRL\_CS\_TIMEOUT
@@ -21,8 +22,7 @@ api_type:
 
 The XBOX_ERACTRL_CS_TIMEOUT  bug check has a value of 0x00000356. 
 
-The eractrl.sys driver was not able to transition the Xbox console to or from connected standby after an extended amount of time. The eractrl.sys driver is for KM driver that bootstraps the ERA VM and manages the ERA VM lifetime.
-
+The eractrl.sys driver was not able to transition the Xbox console to or from connected standby after an extended amount of time. The eractrl.sys driver is for a KM driver that bootstraps a supporting VM and helps manage the VM lifetime.
 
 ## XBOX\_ERACTRL\_CS\_TIMEOUT Parameters
 

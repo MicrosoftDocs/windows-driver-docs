@@ -16,6 +16,7 @@ ms.date: 11/28/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_CLOCK\_RESOLUTION
@@ -26,7 +27,7 @@ Clients use the KSPROPERTY\_CLOCK\_RESOLUTION property to determine the precisio
 ## <span id="ddk_ksproperty_clock_resolution_ks"></span><span id="DDK_KSPROPERTY_CLOCK_RESOLUTION_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -50,7 +51,7 @@ Clients use the KSPROPERTY\_CLOCK\_RESOLUTION property to determine the precisio
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
+<td><p>[<strong>KSPROPERTY</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)</p></td>
 <td><p>[<strong>KSRESOLUTION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566806)</p></td>
 </tr>
 </tbody>
@@ -79,7 +80,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**KSCLOCK\_DISPATCH**](https://msdn.microsoft.com/library/windows/hardware/ff561017)
