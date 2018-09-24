@@ -88,7 +88,7 @@ UcmUcsiCx abstracts the details of sending UCSI commands from OPM to the PPM fir
 
 The client driver is the power policy owner.  
 
-If the client driver enters a Dx state because of S0-Idle, WDF brings the driver to D0 when the UcmUcsiCx sends a UCSI command the driver's power-managed queue. The client driver in S0-Idle should reenter a powered state when there is a PPM notification from the firmware because in S0-Idle, PPM notifications are still enabled.  
+If the client driver enters a Dx state because of S0-Idle, WDF brings the driver to D0 when the UcmUcsiCx sends a IOCTL containing a UCSI command to the client driver's power-managed queue. The client driver in S0-Idle should reenter a powered state when there is a PPM notification from the firmware because in S0-Idle, PPM notifications are still enabled.  
 
 ## Before you begin...
 
@@ -111,7 +111,7 @@ If the client driver enters a Dx state because of S0-Idle, WDF brings the driver
 
 In your [**EVT_WDF_DRIVER_DEVICE_ADD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) implementation, 
 
-1. After you have set the Plug and Play and power management event callback functions ([**WdfDeviceInitSetPnpPowerEventCallbacks**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks)), call [**UcmTcpciDeviceInitInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmucsidevice/nf-ucmucsidevice-ucmucsideviceinitinitialize) to initialize the [**WDFDEVICE_INIT**](https://docs.microsoft.com/windows-hardware/drivers/wdf/wdfdevice_init) opaque structure. The call associates the client driver with the framework.
+1. After you have set the Plug and Play and power management event callback functions ([**WdfDeviceInitSetPnpPowerEventCallbacks**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks)), call [**UcmUcsiDeviceInitInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmucsidevice/nf-ucmucsidevice-ucmucsideviceinitinitialize) to initialize the [**WDFDEVICE_INIT**](https://docs.microsoft.com/windows-hardware/drivers/wdf/wdfdevice_init) opaque structure. The call associates the client driver with the framework.
 
 2. After creating the framework device object (WDFDEVICE), call [**UcmUcsiDeviceInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmucsidevice/nf-ucmucsidevice-ucmucsideviceinitialize.md) to register the client diver with UcmUcsiCx.
 
@@ -175,7 +175,7 @@ UcmUcsiCx sends UCSI commands to client driver to send to the PPM firmware. The 
 
 The client driver is responsible for creating and registering that queue to UcmUcsiCx by calling [**UcmUcsiPpmSetUcsiCommandRequestQueue**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmucsippm/nf-ucmucsippm-ucmucsippmsetucsicommandrequestqueue). The queue must be power-managed.
 
-UcmUcsiCx guarantees that there can be at most one outstanding request in the WDF queue. The driver also is responsible of completing the WDF request after the driver has sent the UCSI command to the firmware.
+UcmUcsiCx guarantees that there can be at most one outstanding request in the WDF queue. The client driver also is responsible of completing the WDF request after it has sent the UCSI command to the firmware.
 
 Typically the driver sets up queues in its implementation of [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware).
 
@@ -214,7 +214,7 @@ Consider this example sequence of the events that occurs when a USB Type-C partn
 1. PPM firmware determines an attach event and sends a notification to the client driver.
 2. Client driver calls [**UcmUcsiPpmNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmucsippm/nf-ucmucsippm-ucmucsippmnotification) to send that notification to UcmUcsiCx.
 3. UcmUcsiCx notfies the OPM state machine and it sends a Get Connector Status command to UcmUcsiCx.
-4. UcmUcsiCx creates a request and sends [IOCTL_UCMUCSI_PPM_GET_UCSI_DATA_BLOCK](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmucsippmrequests/ni-ucmucsippmrequests-ioctl_ucmucsi_ppm_get_ucsi_data_block) to the client driver.
+4. UcmUcsiCx creates a request and sends [IOCTL_UCMUCSI_PPM_SEND_UCSI_DATA_BLOCK](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmucsippmrequestsni-ucmucsippmrequests-ioctl_ucmucsi_ppm_send_ucsi_data_block) to the client driver.
 5. The client driver processes that request and sends the command to the PPM firmware. The driver completes this request asynchronously and sends another notification to UcmUcsiCx.
 6. On successful command complete notification, the OPM state machine reads the payload (containing connector status info) and notifies UCM of the Type-C attach event.
  
