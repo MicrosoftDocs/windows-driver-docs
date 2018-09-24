@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 The MANUALLY\_INITIATED\_POWER\_BUTTON\_HOLD has a value of  0x000001C8.
 
-The system was configured to initiate a bugcheck when the user holds the power button for a specified length of time.  This is a diagnostic bugcheck used to capture a dump when the system is likely about to be hard reset with a long power button hold.
+The system was configured to initiate a bugcheck when the user holds the power button for a specified length of time.  This is a diagnostic bugcheck used to capture a dump when the system is about to be hard reset with a long power button hold.
 
 
 **Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
