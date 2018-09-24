@@ -1,5 +1,5 @@
 ---
-Description: This topic describes the device capabilities that are required for a Windows store app that uses the Windows.Devices.Usb namespace.
+Description: This topic describes the device capabilities that are required for a Windows app that uses the Windows.Devices.Usb namespace.
 title: How to add USB device capabilities to the app manifest
 author: windows-driver-content
 ms.author: windowsdriverdev
@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 -   You must update Package.appxmanifest with USB device capabilities.
 -   The device class must be one of the supported classes.
 
-This topic describes the device capabilities that are required for a Windows store app that uses the [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466) namespace.
+This topic describes the device capabilities that are required for a Windows app that uses the [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466) namespace.
 
 ## USB device capability usage
 

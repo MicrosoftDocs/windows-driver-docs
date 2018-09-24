@@ -4,7 +4,7 @@ description: The arbiter extension displays the current system resource arbiters
 ms.assetid: 95149538-6fcd-4638-b35f-4e1a562e5231
 keywords: ["arbiter Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -22,9 +22,8 @@ ms.localizationpriority: medium
 
 The **!arbiter** extension displays the current system resource arbiters and arbitrated ranges.
 
-```
-!arbiter [Flags] 
-```
+    !arbiter [Flags] 
+
 
 ## <span id="ddk__arbiter_dbg"></span><span id="DDK__ARBITER_DBG"></span>Parameters
 
@@ -125,7 +124,7 @@ The flags have the following meanings:
 
 Here is an example:
 
-```
+```console
 kd> !arbiter 4
 
 DEVNODE 80e203b8 (HTREE\ROOT\0)
@@ -147,7 +146,7 @@ In this example, the next-to-last line shows the resource range (which consists 
 
 You can now use [**!devobj**](-devobj.md) with this PDO address to find the device extension and device node addresses:
 
-```
+```console
 kd> !devobj 80e52778
 Device object (80e52778) is for:
  00000034 \Driver\PnpManager DriverObject 80e20610

@@ -35,9 +35,8 @@ Kernel-mode driver binaries embed signed with dual (SHA1 and SHA2) certificates 
 -   [Signing Drivers for Public Release](signing-drivers-for-public-release.md)
 -   [Troubleshooting Install and Load Problems with Signed Driver Packages](troubleshooting-install-and-load-problems-with-signed-driver-packages.md)
 
-For general information about driver signing on Windows Vista and later versions of Windows, see the white paper [Digital Signatures for Kernel Modules on Systems Running Windows Vista](http://go.microsoft.com/fwlink/p/?linkid=184997) at the [Windows Hardware Developer Central](http://go.microsoft.com/fwlink/p/?linkid=14507) website.
+For general information about driver signing on Windows Vista and later versions of Windows, see the white paper [Digital Signatures for Kernel Modules on Systems Running Windows Vista](https://msdn.microsoft.com/library/bb530195).
 
- 
 
  
 

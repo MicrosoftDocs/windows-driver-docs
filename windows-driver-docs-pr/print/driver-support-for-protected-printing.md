@@ -20,14 +20,18 @@ Windows 8.1 also allows administrators to specify a default PIN in order to red
 
 ## Print Schema Changes
 
-
 Windows 8.1 has introduced new Print Schema keywords that you can use in PrintTicket and PrintCapabilities documents to specify protected printing. These keywords are defined in the new *printschemakeywordsv11* namespace. Here's the URI for this namespace:
 
 *http://schemas.microsoft.com/windows/2013/05/printing/printschemakeywordsv11*
 
 To see how to specify protected printing in a PrintTicket file, see [Sample PrintTicket File for PIN Printing](sample-printticket-file-for-pin-printing.md). And to see how to specify protected printing in a PrintCapabilities file, see [Sample PrintCapabilities File for PIN Printing](sample-printcapabilities-file-for-pin-printing.md).
 
-Print Schema Specification v1.1 will be available in the near future. There is no date yet for its release.
+The specifications can be downloaded here:
+
+[Print Schema Specification 1.1](http://download.microsoft.com/download/1/6/a/16acc601-1b7a-42ad-8d4e-4f0aa156ec3e/print-schema-spec-1-1.zip)
+
+[Print Schema Specification 2.0](http://download.microsoft.com/download/d/e/c/deca6e6b-3e81-48e7-b7ef-6d92a547d03c/print-schema-spec-2-0.zip)
+
 
 ## Driver Changes
 
