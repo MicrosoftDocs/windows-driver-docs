@@ -13,21 +13,10 @@ ms.localizationpriority: medium
 
 # Setting Up KDNET Network Kernel Debugging Automatically
 
-Debugging Tools for Windows supports kernel debugging over a network. This topic describes how to set up network debugging automatically using KDNET.
+Debugging Tools for Windows supports kernel debugging over a network. This topic describes how to set up network debugging automatically using the kdnet.exe setup tool.
 
 The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*. The host computer must be running Windows 7 or later, and the target computer must be running Windows 8 or later.
 
-Debugging over a network has the following advantages compared to debugging over other types of connectivity.
-
--   The host and target computers can be anywhere on the network.
--   It is easy to debug many target computers from one host computer.
--   Given any two computers, it is likely that they will both have network adapters. It is less likely that they will both have serial ports or both have 1394 ports.
--   Network debugging is significantly faster than serial port debugging.
-
-
-## <span id="Supported_Network_Adapters"></span><span id="supported_network_adapters"></span><span id="SUPPORTED_NETWORK_ADAPTERS"></span>Supported Network Adapters
-
-The host computer can use any network adapter, but the target computer must use a network adapter that is supported by Debugging Tools for Windows. For a list of supported network adapters, see [Supported Ethernet NICs for Network Kernel Debugging in Windows 10](supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md) and [Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md).
 
 
 ## <span id="Determining_the_IP_Address_of_the_Host_Computer"></span><span id="determining_the_ip_address_of_the_host_computer"></span><span id="DETERMINING_THE_IP_ADDRESS_OF_THE_HOST_COMPUTER"></span>Determining the IP Address of the Host Computer
@@ -51,8 +40,6 @@ The host computer can use any network adapter, but the target computer must use 
 
     ```
 5. Make a note of the IPv4 address of the network adapter that you intend to use for debugging.
-
-
 
  
 
@@ -88,9 +75,9 @@ Use the kdnet.exe utility to automatically configure the  debugger settings on t
 
    ```
    C:\KDNET>kdnet
-   
    Network debugging is supported on the following NICs:
-   busparams=0.25.0, Intel(R) 82579LM Gigabit Network Connection, KDNET is running on this NIC.kdnet.exe
+   busparams=1.0.0, Broadcom NetXtreme Gigabit Ethernet, Cable status unknown.
+   This Microsoft hypervisor supports using KDNET in guest VMs.
    ```
 
 6. As the output from kdnet indicates that network adapter on the target is supported, we can proceed.
@@ -119,6 +106,8 @@ You can also start a WinDbg session by opening a Command Prompt window and enter
 
 If you are prompted about allowing WinDbg to access the port through the firewall, allow WinDbg to access the port for **all three** of the different network types.
 
+![windows security alert - windows firewall has blocked some features of this app ](images/debuglab-image-firewall-dialog-box.png)
+
 
 ## <span id="Restarting_Target"></span><span id="restarting_target"></span><span id="RESTARTING_TARGET"></span> Restarting the Target PC
 
@@ -132,8 +121,28 @@ Once the debugger is connected, reboot the target computer. One way to do restar
 
 **Debugging application must be allowed through firewall**
 
-The  debugger  must have access through the firewall. You can use Control Panel to allow access through the firewall. Open **Control Panel &gt; System and Security** and click **Allow an app through Windows Firewall**. In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*. Use the check boxes to allow those two applications through the firewall. Scroll down and click **OK**, to save the firewall changes. Restart the debugger.
+The  debugger  must have access through the firewall. Use Control Panel to allow access through the firewall. 
 
+1. Open **Control Panel &gt; System and Security** and click **Allow an app through Windows Firewall**. 
+
+2. In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*. 
+
+2. Use the check boxes to allow those two applications **all three** of the different network types through the firewall. 
+
+
+   ![windows control panel firewall config showing Windows GUI Symbolic Debugger and Windows Kernel Debugger with all three network types enabled](images/firewall-control-pannel-windbg-gui-config.png)
+
+
+3. Scroll down and click **OK**, to save the firewall changes. Restart the debugger.
+
+
+**Choosing a Port for Network Debugging**
+
+TBD - list port conflict error message / behavior.
+
+Choose a port number that will be used for debugging on both the host and target computers. You can choose any number from 49152 through 65535. The recommended range is between 50000 and 50039. The port that you choose will be opened for exclusive access by the debugger running on the host computer. 
+
+**Note**  The range of port numbers that can be used for network debugging might be limited by your company's network policy. To determine whether your company's policy limits the range of ports that can be used for network debugging, check with your network administrators.
 
 **Use Ping to test connectivity**
 
@@ -143,13 +152,12 @@ If the debugger does not connect use the ping command on the target PC to verify
    C:\>Ping <HostComputerIPAddress> 
    ```
 
-**Choosing a Port for Network Debugging**
+**Supported Network Adapters**
 
-TBD - Need to list port conflict error message / behavior.
+TBD - list port conflict error message / behavior.
 
-Choose a port number that will be used for debugging on both the host and target computers. You can choose any number from 49152 through 65535. The recommended range is between 50000 and 50039. The port that you choose will be opened for exclusive access by the debugger running on the host computer. 
+The host computer can use any network adapter, but the target computer must use a network adapter that is supported by Debugging Tools for Windows. For a list of supported network adapters, see [Supported Ethernet NICs for Network Kernel Debugging in Windows 10](supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md) and [Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md).
 
-**Note**  The range of port numbers that can be used for network debugging might be limited by your company's network policy. To determine whether your company's policy limits the range of ports that can be used for network debugging, check with your network administrators.
 
 
 ## <span id="related_topics"></span>Related topics
