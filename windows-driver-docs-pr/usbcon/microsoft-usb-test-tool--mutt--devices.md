@@ -129,7 +129,7 @@ The DR MUTT acts like a SuperMutt when testing host mode of the device under tes
 ## USB Type-C ConnEx
 
 
-The MUTT Connection Exerciser for USB Type-C (USB Type-C ConnEx) is a custom shield that has a four-to-one switch to automate USB Type-C interoperability scenarios. The shield has been designed to work with Arduino as the microcontroller. For more information, see [Test USB Type-C systems with USB Type-C ConnEx](test-usb-type-c-systems-with-mutt-connex-c.md).
+The USB Type-C Connection Exerciser (USB Type-C ConnEx) is a custom shield that has a four-to-one switch to automate USB Type-C interoperability scenarios. The shield has been designed to work with Arduino as the microcontroller. For more information, see [Test USB Type-C systems with USB Type-C ConnEx](test-usb-type-c-systems-with-mutt-connex-c.md).
 
 ![USB Type-C ConnEx](images/connexc-side.jpg)
 
