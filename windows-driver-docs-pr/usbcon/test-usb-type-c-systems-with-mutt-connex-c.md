@@ -646,23 +646,7 @@ The onboard LCD on the USB Type-C ConnEx displays power (volts, amps, and direct
 ## Using ETW to log issues
 
 
-To enable ETW for USB 2.0 ports, see [ETW in the Windows 7 USB core stack](http://go.microsoft.com/fwlink/p/?LinkId=623316).
-
-To enable USB 3.0 logging, perform the following commands instead (or see [How to capture a USB event trace with Logman](how-to-capture-a-usb-event-trace.md)):
-
-``` syntax
-logman start usbtrace -ets -o usbtrace.etl -nb 128 640 -bs 128
-logman update usbtrace -ets -p Microsoft-Windows-USB-UCX Default
-logman update usbtrace -ets -p Microsoft-Windows-USB-USBHUB3 Default
-```
-
-After these are logs are captured, perform the test scenario.
-
-Stop the trace by using this command:
-
-``` syntax
-logman stop usbtrace -ets
-```
+Go to https://aka.ms/usbtrace for instructions and to download a script for capturing ETW traces from the USB drivers.
 
 ## Reporting test results
 
