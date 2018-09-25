@@ -1302,8 +1302,6 @@
       href: ksproperty-cameracontrol-extended-facedetection.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_FLASHMODE"
       href: ksproperty-cameracontrol-extended-flashmode2.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE"
-      href: ksproperty-cameracontrol-extended-focusmode2.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSPRIORITY"
       href: ksproperty-cameracontrol-extended-focuspriority.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSSTATE"

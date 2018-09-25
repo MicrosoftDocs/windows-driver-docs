@@ -2381,6 +2381,8 @@
       href: bug-check-0x1c4--driver-verifier-detected-violation-livedump.md
     - name: "Bug Check 0x1C5: IO_THREADPOOL_DEADLOCK_LIVEDUMP"
       href: bug-check-0x1c5--io-threadpool-deadlock-livedump.md
+    - name: "Bug Check 0x1C8: MANUALLY_INITIATED_POWER_BUTTON_HOLD"
+      href: bug-check-0x1c8--manually-initiated-power-button-hold.md
     - name: "Bug Check 0x1CC: EXRESOURCE_TIMEOUT_LIVEDUMP"
       href: bug-check-0x1cc--exresource-timeout-livedump.md
     - name: "Bug Check 0x1CD: INVALID_CALLBACK_STACK_ADDRESS"
