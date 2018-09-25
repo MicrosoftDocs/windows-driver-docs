@@ -4,7 +4,7 @@ description: Use KDNET to configure network kernel debugging automatically for t
 ms.assetid: B4A79B2E-D4B1-42CA-9121-DEC923C76927
 keywords: ["Network debugging", "Ethernet debugging", "WinDbg", "KDNET"]
 ms.author: domars
-ms.date: 06/14/2018
+ms.date: 09/25/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,11 +53,7 @@ The host computer can use any network adapter, but the target computer must use 
 5. Make a note of the IPv4 address of the network adapter that you intend to use for debugging.
 
 
-## <span id="Choosing_a_Port_for_Network_Debugging"></span><span id="choosing_a_port_for_network_debugging"></span><span id="CHOOSING_A_PORT_FOR_NETWORK_DEBUGGING"></span>Choosing a Port for Network Debugging
 
-Choose a port number that will be used for debugging on both the host and target computers. You can choose any number from 49152 through 65535. The recommended range is between 50000 and 50039. The port that you choose will be opened for exclusive access by the debugger running on the host computer. 
-
-**Note**  The range of port numbers that can be used for network debugging might be limited by your company's network policy. To determine whether your company's policy limits the range of ports that can be used for network debugging, check with your network administrators.
  
 
 ## <span id="Setting_Up_the_Target_Computer"></span><span id="setting_up_the_target_computer"></span><span id="SETTING_UP_THE_TARGET_COMPUTER"></span>Setting Up the Host and Target Computers
@@ -146,6 +142,14 @@ If the debugger does not connect use the ping command on the target PC to verify
    ```
    C:\>Ping <HostComputerIPAddress> 
    ```
+
+**Choosing a Port for Network Debugging**
+
+TBD - Need to list port conflict error message / behavior.
+
+Choose a port number that will be used for debugging on both the host and target computers. You can choose any number from 49152 through 65535. The recommended range is between 50000 and 50039. The port that you choose will be opened for exclusive access by the debugger running on the host computer. 
+
+**Note**  The range of port numbers that can be used for network debugging might be limited by your company's network policy. To determine whether your company's policy limits the range of ports that can be used for network debugging, check with your network administrators.
 
 
 ## <span id="related_topics"></span>Related topics
