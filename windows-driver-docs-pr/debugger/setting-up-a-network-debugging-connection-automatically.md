@@ -127,14 +127,11 @@ The  debugger  must have access through the firewall. Use Control Panel to allow
 
 2. In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*. 
 
-2. Use the check boxes to allow those two applications **all three** of the different network types through the firewall. 
+3. Use the check boxes to allow those two applications **all three** of the different network types through the firewall. 
 
+4. Scroll down and click **OK**, to save the firewall changes. Restart the debugger.
 
-   ![windows control panel firewall config showing Windows GUI Symbolic Debugger and Windows Kernel Debugger with all three network types enabled](images/firewall-control-pannel-windbg-gui-config.png)
-
-
-3. Scroll down and click **OK**, to save the firewall changes. Restart the debugger.
-
+    ![windows control panel firewall config showing Windows GUI Symbolic Debugger and Windows Kernel Debugger with all three network types enabled](images/firewall-control-pannel-windbg-gui-config.png)
 
 **Use Ping to test connectivity**
 
@@ -146,7 +143,7 @@ If the debugger times out and does not connect, use the ping command on the targ
 
 **Choosing a Port for Network Debugging**
 
-If the debugger times out and does not connect it could be because the default port number of 50000 is already in use or it is blocked. 
+If the debugger times out and does not connect, it could be because the default port number of 50000 is already in use or it is blocked. 
 
 You can choose any port number from 49152 through 65535. The recommended range is between 50000 and 50039. The port that you choose will be opened for exclusive access by the debugger running on the host computer. 
 
@@ -154,7 +151,7 @@ You can choose any port number from 49152 through 65535. The recommended range i
 
 **Supported Network Adapters**
 
-If "Network debugging is not supported on any of the NICs in this machine" is displayed when you run kdnet.exe it means that the network adapter is not supported. 
+If "Network debugging is not supported on any of the NICs in this machine" is displayed when you run kdnet.exe, it means that the network adapter is not supported. 
 
 The host computer can use any network adapter, but the target computer must use a network adapter that is supported by Debugging Tools for Windows. For a list of supported network adapters, see [Supported Ethernet NICs for Network Kernel Debugging in Windows 10](supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md) and [Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md).
 
