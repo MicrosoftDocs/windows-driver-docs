@@ -4,7 +4,7 @@ description: The SYSTEM_SERVICE_EXCEPTION bug check has a value of 0x0000003B. T
 ms.assetid: 0e2c230e-d942-4f32-ae8e-7a54aceb4c19
 keywords: ["Bug Check 0x3B SYSTEM_SERVICE_EXCEPTION", "SYSTEM_SERVICE_EXCEPTION"]
 ms.author: domars
-ms.date: 08/17/2018
+ms.date: 09/12/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,6 +65,12 @@ Cause
 
 The stop code indicates that executing code had an exception and the thread that was below it, is a system thread.
 
+The exception information returned in paramter one is listed in [NTSTATUS Values](https://msdn.microsoft.com/library/cc704588.aspx) and is also available in the ntstatus.h file located in the inc directory of the Windows Driver Kit. 
+
+One possible exception value is 0xC0000005: STATUS\_ACCESS\_VIOLATION 
+
+This means that a memory access violation occurred. 
+
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
 
 For more information see the following topics:
@@ -75,7 +81,6 @@ For more information see the following topics:
 
 [Using the !analyze Extension](using-the--analyze-extension.md) and [!analyze](-analyze.md)
 
-Exception information is listed in [NTSTATUS Values](https://msdn.microsoft.com/library/cc704588.aspx).
 
 In the past, this error has been linked to excessive paged pool usage and may occur due to user-mode graphics drivers crossing over and passing bad data to the kernel code. If you suspect this is the case, use the pool options in driver verifier to gather additional information.
 

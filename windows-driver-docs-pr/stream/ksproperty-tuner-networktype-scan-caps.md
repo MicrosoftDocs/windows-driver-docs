@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 
 The KSPROPERTY\_TUNER\_NETWORKTYPE\_SCAN\_CAPS property describes the scanning capabilities of a particular broadcast network type that the tuning device supports. This property can be implemented optionally.
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -82,7 +82,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**KSPROPERTY\_TUNER\_NETWORKTYPE\_SCAN\_CAPS\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565885)

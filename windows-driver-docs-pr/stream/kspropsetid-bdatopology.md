@@ -44,7 +44,7 @@ Returns the controlling pin for a node in the BDA template connection list.
 <span id="KSPROPERTY_BDA_NODE_DESCRIPTORS"></span><span id="ksproperty_bda_node_descriptors"></span>[**KSPROPERTY\_BDA\_NODE\_DESCRIPTORS**](ksproperty-bda-node-descriptors.md)  
 Returns a list of nodes.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 The BDA support library provides default methods to handle this property set. The network provider filter uses this property set to determine the template topology of the filter, and the methods, properties and events supported on each node and pin. The network provider filter uses this node and pin information to determine what kinds of operations the filter can perform on the signal and whether to add the filter to the graph. The actual topology of a filter refers to the pin and node connections that are actually made on the filter by the network provider.
 

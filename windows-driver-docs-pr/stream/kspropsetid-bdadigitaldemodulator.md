@@ -47,11 +47,11 @@ Sets or retrieves the setting for guard interval.
 <span id="KSPROPERTY_BDA_TRANSMISSION_MODE"></span><span id="ksproperty_bda_transmission_mode"></span>[**KSPROPERTY\_BDA\_TRANSMISSION\_MODE**](ksproperty-bda-transmission-mode.md)  
 Sets or retrieves the setting for how broadcast signals are transmitted.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 The KSPROPSETID\_BdaDigitalDemodulator property set describes the properties of a DVB demodulator node. Use this property set instead of KSPROPSETID\_BdaAutodemodulate if the demodulator requires specific values to be set.
 
-### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
+### See Also
 
 [KSPROPSETID\_BdaAutodemodulate](kspropsetid-bdaautodemodulate.md)
 

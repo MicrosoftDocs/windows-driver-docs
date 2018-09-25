@@ -38,7 +38,7 @@ Indicates that the function is not supported by the minidriver.
 <span id="STATUS_IO_DEVICE_ERROR"></span><span id="status_io_device_error"></span>STATUS\_IO\_DEVICE\_ERROR  
 Indicates that a hardware failure occurred.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**SRB\_SET\_STREAM\_STATE**](srb-set-stream-state.md)

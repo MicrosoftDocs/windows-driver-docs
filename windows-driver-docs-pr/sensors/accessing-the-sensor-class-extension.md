@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 Microsoft supports two Sensor APIs. Both simplify accessing devices, retrieving data, and setting properties:
 
 -   **Desktop API** (for traditional desktop apps) - uses COM/Win32; you write apps in C++.
--   **WinRT API** (for windows store apps) - you write apps in HtML and JavaScript, or, XAML and Visual Basic, C# or C++.
+-   **WinRT API** (for Windows apps) - you write apps in HtML and JavaScript, or, XAML and Visual Basic, C# or C++.
 
 The sensor class extension (**ISensorClassExtension**) links your sensor driver and the Sensor APIs. Your driver uses it to accomplish the following:
 

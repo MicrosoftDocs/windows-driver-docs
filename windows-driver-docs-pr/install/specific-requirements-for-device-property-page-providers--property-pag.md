@@ -27,7 +27,7 @@ For information about how to create a custom device property page by a property 
 
 A property page extension DLL is installed by using the following directives in the [INF file](inf-files.md) of a [driver package](driver-packages.md):
 
-1.  Use the *add-registry-section*, which is specified by an [**INF AddReg directive**](inf-addreg-directive.md) in the [**INF *DDInstall* section**](inf-ddinstall-section.md), to add an **EnumPropPages32** entry for the device. The **EnumPropPages32** entry specifies the following REG_SZ values:
+1.  Use the *add-registry-section*, which is specified by an [**INF AddReg directive**](inf-addreg-directive.md) in the [**INF *DDInstall* section**](inf-ddinstall-section.md), to add an **EnumPropPages32** entry for the device. The **EnumPropPages32** entry specifies the following [REG_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) values:
 
     -   The name of the DLL that exports the **ExtensionPropSheetPageProc** callback function.
     -   The name of the **ExtensionPropSheetPageProc** callback function as implemented by the DLL.

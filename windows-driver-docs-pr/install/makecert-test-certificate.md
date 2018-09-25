@@ -24,7 +24,7 @@ To learn more about creating a MakeCert test certificate, see [**Creating Test C
 
 To test-sign a [catalog file](catalog-files.md) or embed a signature in a driver file, the MakeCert test certificate can be in the Personal certificate store ("my" store), or some other custom certificate store, of the local computer that signs the software. However, to verify a test signature, the corresponding test certificate must be installed in the [Trusted Root Certification Authorities certificate store](trusted-root-certification-authorities-certificate-store.md) of the local computer that you use to verify the signature.
 
-Use the [**CertMgr**](certmgr.md) tool, as follows, to install a test certificate in the Trusted Root Certification Authorities certificate store of the local computer that you use to sign drivers:
+Use the [**CertMgr**](../devtest/certmgr.md) tool, as follows, to install a test certificate in the Trusted Root Certification Authorities certificate store of the local computer that you use to sign drivers:
 
 ```
 CertMgr /add CertFileName.cer /s /r localMachine root
