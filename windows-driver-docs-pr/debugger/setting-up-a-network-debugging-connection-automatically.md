@@ -136,25 +136,25 @@ The  debugger  must have access through the firewall. Use Control Panel to allow
 3. Scroll down and click **OK**, to save the firewall changes. Restart the debugger.
 
 
-**Choosing a Port for Network Debugging**
-
-TBD - list port conflict error message / behavior.
-
-Choose a port number that will be used for debugging on both the host and target computers. You can choose any number from 49152 through 65535. The recommended range is between 50000 and 50039. The port that you choose will be opened for exclusive access by the debugger running on the host computer. 
-
-**Note**  The range of port numbers that can be used for network debugging might be limited by your company's network policy. To determine whether your company's policy limits the range of ports that can be used for network debugging, check with your network administrators.
-
 **Use Ping to test connectivity**
 
-If the debugger does not connect use the ping command on the target PC to verify connectivity. 
+If the debugger times out and does not connect, use the ping command on the target PC to verify connectivity. 
 
    ```
    C:\>Ping <HostComputerIPAddress> 
    ```
 
+**Choosing a Port for Network Debugging**
+
+If the debugger times out and does not connect it could be because the default port number of 50000 is already in use or it is blocked. 
+
+You can choose any port number from 49152 through 65535. The recommended range is between 50000 and 50039. The port that you choose will be opened for exclusive access by the debugger running on the host computer. 
+
+**Note**  The range of port numbers that can be used for network debugging might be limited by your company's network policy. To determine whether your company's policy limits the range of ports that can be used for network debugging, check with your network administrators.
+
 **Supported Network Adapters**
 
-TBD - list port conflict error message / behavior.
+If "Network debugging is not supported on any of the NICs in this machine" is displayed when you run kdnet.exe it means that the network adapter is not supported. 
 
 The host computer can use any network adapter, but the target computer must use a network adapter that is supported by Debugging Tools for Windows. For a list of supported network adapters, see [Supported Ethernet NICs for Network Kernel Debugging in Windows 10](supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md) and [Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md).
 
