@@ -66,7 +66,7 @@ The instructions in this document are based on the following assumptions:
 
 ### Tracing and logging events in the USB driver stack
 
-You can provide additional logs by capturing ETW traces by using the Logman tool. For information about how to read USB 2.0 ETW traces, see [ETW in the Windows 7 USB core stack](http://go.microsoft.com/fwlink/p/?linkid=266442).
+Go to https://aka.ms/usbtrace for instructions and to download a script for capturing ETW traces from the USB drivers.
 
 ## Related topics
 [USB](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
