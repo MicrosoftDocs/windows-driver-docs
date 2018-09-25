@@ -258,13 +258,11 @@ Here are the command line options that ConnExUtil.exe supports for controlling t
 <tr class="odd">
 <td>Device Command</td>
 <td><strong>/getPort</strong></td>
-<td>Read the currently connected port.
-<p>Read a port either by specifying number (1 – 4) or by name (<strong>J2</strong>, <strong>J3</strong>, <strong>J4</strong>, <strong>J6</strong>).</p>
-<p>0 disconnects all ports.</p></td>
+<td>Read the currently connected port.</td>
 </tr>
 <tr class="even">
 <td>Device Command
-<p>Read amperage/volt information</p></td>
+<p>Read amperage/voltage information</p></td>
 <td><p><strong>/volts</strong></p>
 <p><strong>/amps</strong></p>
 <p><strong>/version</strong></p></td>
