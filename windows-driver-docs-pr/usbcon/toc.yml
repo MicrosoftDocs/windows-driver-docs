@@ -205,10 +205,12 @@
     items: 
     - name: "USB registry settings for a function controller driver"
       href: usb-registry-settings-for-a-function-controller-driver.md
-    - name: "Writing a function controller client driver"
+    - name: "Write a USB function controller client driver"
       href: function-client-driver.md
     - name: "UFX objects and handles used by a USB function client driver"
       href: ufx-objects-and-handles-used-by-a-usb-function-controller.md
+    - name: "USB filter driver for supporting USB chargers"
+      href: usb-filter-driver-for-supporting-chargers.md
   - name: "Windows support for USB Type-C connectors"
     href: oem-tasks-for-bringing-up-a-usb-typec.md
     items: 
