@@ -84,7 +84,7 @@ Use this flow chart to determine a solution for your USB Type-C system.
 ## Test
 Perform various functional and stress tests on systems and devices that expose a USB Type-C connector.
 
-[Test USB Type-C systems with USB Type-C ConnEx](test-usb-type-c-systems-with-mutt-connex-c.md)- - Run USB tests included in the Windows Hardware Lab Kit (HLK) for Windows 10.
+[Test USB Type-C systems with USB Type-C ConnEx](test-usb-type-c-systems-with-mutt-connex-c.md) - Run USB tests included in the Windows Hardware Lab Kit (HLK) for Windows 10.
 > Run USB function HLK tests with a C-to-A cable (search for **Windows USB Device** in the HLK 
 
 Certification/Compliance

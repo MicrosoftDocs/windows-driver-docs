@@ -28,10 +28,7 @@ You need to write a driver for the connector if your USB Type-C system does not 
 
 **Important APIs**
 
--   [UCmCx client driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188011)
-
--   [USB Type-C Port Controller Interface driver class extensions reference](https://msdn.microsoft.com/library/windows/hardware/mt805826)
-
+-   [USB Type-C driver reference](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/_usbref/#type-c-driver-reference)
 
 ![drivers](images/drivers-c.png)
 
