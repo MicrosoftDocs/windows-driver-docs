@@ -23,11 +23,9 @@ The computer that runs the debugger is called the *host computer*, and the compu
 
 1. Confirm that the target and host PCs are connected to a network hub or switch using an appropriate network cable. 
 
-2. Use one of the following procedures to determine the IP address of the host computer.
+2. On the host computer, open a Command Prompt window and enter *IPConfig* to display the IP configuration. 
 
-3. On the host computer, open a Command Prompt window and enter *IPConfig* to display the IP configuration. 
-
-4. In the command output, locate the IPv4 address of the Ethernet adapter.
+3. In the command output, locate the IPv4 address of the Ethernet adapter.
 
     ```
     ...
@@ -39,7 +37,7 @@ The computer that runs the debugger is called the *host computer*, and the compu
     ...
 
     ```
-5. Make a note of the IPv4 address of the network adapter that you intend to use for debugging.
+4. Make a note of the IPv4 address of the network adapter that you intend to use for debugging.
 
  
 
@@ -76,7 +74,7 @@ Use the kdnet.exe utility to automatically configure the  debugger settings on t
    ```
    C:\KDNET>kdnet
    Network debugging is supported on the following NICs:
-   busparams=1.0.0, Broadcom NetXtreme Gigabit Ethernet, Cable status unknown.
+   busparams=1.0.0, Broadcom NetXtreme Gigabit Ethernet, Plugged in.  
    This Microsoft hypervisor supports using KDNET in guest VMs.
    ```
 
