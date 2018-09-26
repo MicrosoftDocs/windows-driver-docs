@@ -22,7 +22,9 @@ WDI_TLV_PM_PROTOCOL_RSN_OFFLOAD_KEYS is a TLV that contains currently configured
 
 ## Values
 
-
+| Type | Description |
+| --- | --- |
+| WDI_RSN_OFFLOAD_KEYS_CONTAINER | The currently configured Rsn Eapol key information. |
 
 ## Requirements
 

@@ -3588,6 +3588,12 @@
         href: wdi-tlv-delete-peer-state-parameters.md
       - name: "WDI_TLV_DELETE_PORT_PARAMETERS"
         href: wdi-tlv-delete-port-parameters.md
+      - name: "WDI_TLV_DEVICE_SERVICE_PARAMS_DATA_BLOB"
+        href: wdi-tlv-device-service-params-data-blob.md
+      - name: "WDI_TLV_DEVICE_SERVICE_PARAMS_GUID"
+        href: wdi-tlv-device-service-params-guid.md
+      - name: "WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE"
+        href: wdi-tlv-device-service-params-opcode.md
       - name: "WDI_TLV_DISALLOWED_BSSIDS_LIST"
         href: wdi-tlv-disallowed-bssids-list.md
       - name: "WDI_TLV_DISASSOCIATION_INDICATION_PARAMETERS"
@@ -4183,6 +4189,8 @@
         href: ndis-status-wdi-indication-create-port-complete.md
       - name: "NDIS_STATUS_WDI_INDICATION_DELETE_PORT_COMPLETE"
         href: ndis-status-wdi-indication-delete-port-complete.md
+      - name: "NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT"
+        href: ndis-status-wdi-indication-device-service-event.md
       - name: "NDIS_STATUS_WDI_INDICATION_DISASSOCIATION"
         href: ndis-status-wdi-indication-disassociation.md
       - name: "NDIS_STATUS_WDI_INDICATION_DISCONNECT_COMPLETE"
