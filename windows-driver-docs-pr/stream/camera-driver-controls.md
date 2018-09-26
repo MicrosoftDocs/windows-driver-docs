@@ -22,8 +22,6 @@ The following camera driver controls are new for Windows 10.
 
 [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FLASHMODE**](ksproperty-cameracontrol-extended-flashmode2.md)
 
-[**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSMODE**](ksproperty-cameracontrol-extended-focusmode2.md)
-
 [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSPRIORITY**](ksproperty-cameracontrol-extended-focuspriority.md)
 
 [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSSTATE**](ksproperty-cameracontrol-extended-focusstate.md)
