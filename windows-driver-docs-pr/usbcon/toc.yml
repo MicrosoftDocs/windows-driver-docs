@@ -211,6 +211,8 @@
       href: ufx-objects-and-handles-used-by-a-usb-function-controller.md
     - name: "USB filter driver for supporting USB chargers"
       href: usb-filter-driver-for-supporting-chargers.md
+    - name: "Communicating with GenericUSBFn.sys from a user-mode service"
+      href: user-mode-services-ufx.md
   - name: "Windows support for USB Type-C connectors"
     href: oem-tasks-for-bringing-up-a-usb-typec.md
     items: 
