@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 The KSPROPERTYSETID\_ExtendedCameraControl property set controls the extended camera device settings. The additional controls it provides allow for camera photo sequencing.
 
-For more info on how to implement these controls, see the topics under [Camera Control Properties](https://docs.microsoft.com/en-us/windows-hardware/drivers/stream/camera-control-properties#win8-1-extended-props).
+For more info on how to implement these controls, see the topics under [Camera Control Properties](https://docs.microsoft.com/windows-hardware/drivers/stream/camera-control-properties#win8-1-extended-props).
 
 The following properties are included in the KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY enumeration. These properties are supported in beginning with Windows 8.1.
 
