@@ -2,7 +2,7 @@
 title: Debugger Data Model C++ Interfaces 
 description: This topic describes how to use Debugger Data Model C++ Interfaces to extend and customize the capabilities of the debugger.
 ms.author: domars
-ms.date: 07/13/2018
+ms.date: 09/26/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -88,15 +88,15 @@ DECLARE_INTERFACE_(IDebugHost, IUnknown)
 }
 ```
 
-**GetHostDefinedInterface**
+[GetHostDefinedInterface](ttps://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughost-gethostdefinedinterface)
 
 The GetHostDefinedInterface method returns the host's main private interface, if such exists for the given host. For Debugging Tools for Windows, the interface returned here is an IDebugClient (cast to IUnknown). 
 
-[GetCurrentContext]()
+[GetCurrentContext](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughost-getcurrentcontext)
 
 The GetCurrentContext method returns an interface which represents the current state of the debugger host. The exact meaning of this is left up to the host, but it typically includes things such as the session, process, and address space that is active in the user interface of the debug host. The returned context object is largely opaque to the caller but it is an important object to pass between calls to the debug host. When a caller is, for instance, reading memory, it is important to know which process and address space that memory is being read from. That notion is encapsulated in the notion of the context object which is returned from this method. 
 
-[GetDefaultMetadata]()
+[GetDefaultMetadata](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughost-getdefaultmetadata)
 
 The GetDefaultMetadata method returns a default metadata store that may be used for certain operations (e.g.: string conversion) when no explicit metadata has been passed. This allows the debug host to have some control over the way some data is presented. For example, the default metadata may include a PreferredRadix key, allowing the host to indicate whether ordinals should be displayed in decimal or hexadecimal if not otherwise specified. 
 
@@ -113,7 +113,7 @@ DECLARE_INTERFACE_(IDebugHostStatus, IUnknown)
 }
 ```
 
-[PollUserInterrupt]()
+[PollUserInterrupt](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughoststatus-)
 
 The PollUserInterrupt method is used to inquire whether the user of the debug host has requested an interruption of the current operation. A property accessor in the data model may, for instance, call into arbitrary code (e.g.: a JavaScript method). That code may take an arbitrary amount of time. In order to keep the debug host responsive, any such code which may take an arbitrary amount of time should check for an interrupt request via calling this method. If the interruptRequested value comes back as true, the caller should immediately abort and return a result of E_ABORT. 
 
@@ -144,7 +144,7 @@ DECLARE_INTERFACE_(IDebugHostContext, IUnknown)
 }
 ```
 
-[IsEqualTo]()
+[IsEqualTo](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostcontext-isequalto)
 
 The IsEqualTo method compares a host context to another host context. If the two contexts are equivalent, an indication of this is returned. Note that this comparison is not interface equivalence. This compares the underlying opaque contents of the context itself. 
 
@@ -168,7 +168,7 @@ DECLARE_INTERFACE_(IDebugHostErrorSink, IUnknown)
 }
 ```
 
-[ReportError]()
+[ReportError](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosterrorsink-reporterror)
 
 The ReportError method is a callback on the error sink to notify it that an error has occurred and allow the sink to route the error to whatever UI or mechanism is appropriate. 
 
@@ -194,18 +194,18 @@ DECLARE_INTERFACE_(IDebugHostEvaluator2, IDebugHostEvaluator)
 }
 ```
 
-[EvaluateExpression]()
+[EvaluateExpression](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostevaluator-evaluateexpression)
 
 The EvaluateExpression method allows requests the debug host to evaluate a language (e.g.: C++) expression and return the resulting value of that expression evaluation boxed as an IModelObject. This particular variant of the method only allows language constructs. Any additional functionality which is presented within the expression evaluator of the debug host that is not present in the language (e.g.: LINQ query methods) is turned off for the evaluation. 
 
-[EvaluateExtendedExpression]()
+[EvaluateExtendedExpression](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostevaluator-evaluateextendedexpression)
 
 The EvaluateExtendedExpression method is similar to the EvaluateExpression method except that it turns back on additional non-language functionality which a particular debug host chooses to add to its expression evaluator. For Debugging Tools for Windows, for example, this enables anonymous types, LINQ queries, module qualifiers, format specifiers, and other non-C/C++ functionality. 
 
 
 **IDebugHostEvaluator2**
 
-[AssignTo]()
+[AssignTo](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostevaluator2-assignto)
 
 The AssignTo method performs assignment according to the semantics of the language being debugged. 
 
@@ -223,11 +223,11 @@ DECLARE_INTERFACE_(IDebugHostExtensibility, IUnknown)
 }
 ```
 
-[CreateFunctionAlias]()
+[CreateFunctionAlias](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostextensibility-createfunctionalias)
 
 The CreateFunctionAlias method creates a "function alias", a "quick alias" for a method implemented in some extension. The meaning of this alias is host specific. It may extend the host's expression evaluator with the function or it may do something entirely different. 
 
-[DestroyFunctionAlias]()
+[DestroyFunctionAlias](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostextensibility-destroyfunctionalias)
 
 The DestroyFunctionAlias method undoes a prior call to the CreateFunctionAlias method. The function will no longer be available under the quick alias name. 
 
@@ -239,10 +239,10 @@ First and foremost, the data model extensibility APIs are designed to be neutral
 
 While the data model APIs -- those that begin IDataModel*, IDebugHost*, and the offshoots of IModelObject -- are designed to be portable, they do not define what a "debugger extension" is. Today, a component that wishes to extend Debugging Tools for Windows and the engine it provides must write an engine extension in order to get access to the data model. That engine extension needs only to be an engine extension in so much as that is the loading and bootstrapping mechanism for the extension. As such, a minimal implementation would provide: 
 
-- [DebugExtensionInitialize](): A method which utilizes a created IDebugClient to get access to the data model and sets up object model manipulations.
-- [DebugExtensionUninitialize](): A method which undoes the object model manipulations which were performed in DebugExtensionInitialize.
-- [DebugExtensionCanUnload](): A method which returns whether the extension can unload. If there are still live COM objects in the extension, it must indicate this. This is the debugger's equivalent of COM's DllCanUnloadNow. If this returns the S_FALSE indication of inability to unload, the debugger can query this later to see if an unload is safe or it may reinitialize the extension by calling DebugExtensionInitialize again. The extension must be prepared to handle both paths.
-- [DebugExtensionUnload](): A method which does any final cleanup required right before the DLL unloads
+- **DebugExtensionInitialize**: A method which utilizes a created IDebugClient to get access to the data model and sets up object model manipulations.
+- **DebugExtensionUninitialize**: A method which undoes the object model manipulations which were performed in DebugExtensionInitialize.
+- **DebugExtensionCanUnload**: A method which returns whether the extension can unload. If there are still live COM objects in the extension, it must indicate this. This is the debugger's equivalent of COM's DllCanUnloadNow. If this returns the S_FALSE indication of inability to unload, the debugger can query this later to see if an unload is safe or it may reinitialize the extension by calling DebugExtensionInitialize again. The extension must be prepared to handle both paths.
+- **DebugExtensionUnload**: A method which does any final cleanup required right before the DLL unloads
 
 *The Bridge Interface: IHostDataModelAccess*
 
@@ -255,7 +255,7 @@ DECLARE_INTERFACE_(IHostDataModelAccess, IUnknown)
 }
 ```
 
-[GetDataModel]()
+[GetDataModel](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-ihostdatamodelaccess-getdatamodel)
 
 The GetDataModel method is the method on the bridge interface which provides access to both sides of the data model: 
 The debug host (the lower edge of the debugger) is expressed by the returned IDebugHost interface
@@ -315,7 +315,7 @@ DECLARE_INTERFACE_(IDebugHostSymbols, IUnknown)
 }
 ```
 
-[CreateModuleSignature]()
+[CreateModuleSignature](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostsymbols-createmodulesignature)
 
 The CreateModuleSignature method creates a signature which can be used to match a set of specific modules by name and optionally, by version. 
 There are three components to a module signature: 
@@ -324,28 +324,28 @@ There are three components to a module signature:
 - A minimum version: if specified, a matching module must have a minimum version which is at least as high as this version. Versions are specified in "A.B.C.D" format with each subsequent portion being less important than the prior. Only the first segment is mandatory.
 - A maximum version: if specified, a matching module must have a maximum version which is no higher than this version. Versions are specified in "A.B.C.D" format with each subsequent portion being less important than the prior. Only the first segment is mandatory.
 
-[CreateTypeSignature]()
+[CreateTypeSignature](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostsymbols-createtypesignature)
 
 The CreateTypeSignature method creates a signature which can be used to match a set of concrete types by containing module and type name. The format of the type name signature string is specific to the language being debugged (and debug host). For C/C++, the signature string is equivalent to a NatVis Type Specification. That is, the signature string is a type name where wildcards (specified as *) are allowed for template arguments. 
 
-[CreateTypeSignatureForModuleRange]()
+[CreateTypeSignatureForModuleRange](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostsymbols-createtypesignatureformodulerange)
 
 The CreateTypeSignatureForModuleRange method creates a signature which can be used to match a set of concrete types by module signature and type name. This is similar to the CreateTypeSignature method excepting that instead of passing a specific module to match for the signature, the caller passes the arguments necessary to create a module signature (as if the module signature were created with the CreateModuleSignature method). 
 
-[EnumerateModules]()
+[EnumerateModules](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostsymbols-enumeratemodules)
 
 The EnumerateModules method creates an enumerator which will enumerate every module available in a particular host context. That host context might encapsulate a process context or it might encapsulate something like the Windows kernel. 
 
 
-[FindModuleByName]()
+[FindModuleByName](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostsymbols-findmodulebyname)
 
 The FindModuleByName method will look through the given host context and locate a module which has the specified name and return an interface to it. It is legal to search for the module by name with or without the file extension. 
 
-[FindModuleByLocation]()
+[FindModuleByLocation](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostsymbols-findmodulebylocation)
 
 The FindModuleByLocation method will look through the given host context and determine what module contains the address given by the specified location. It will then return an interface to such module. 
 
-[GetMostDerivedObject]()
+[GetMostDerivedObject](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostsymbols-getmostderivedobject)
 
 The GetMostDerivedObject will use the type system of the debugger to determine the runtime type of an object from its static type. This method will only use symbolic information and heuristics available at the type system layer in order to perform this analysis. Such information may include C++ RTTI (run time type information) or analysis of the shape of the virtual function tables of the object. It does not include things such as the preferred runtime type concept on an IModelObject. 
 If the analysis cannot find a runtime type or cannot find a runtime type different from the static type passed into the method, the input location and type may be passed out. The method will not fail for these reasons. 
@@ -391,11 +391,11 @@ SymbolBaseClass | The symbol is a base class and is queryable for IDebugHostBase
 SymbolPublic | The symbol is an entry in a module's publics table (having no type information) and is queryable for IDebugHostPublic
 SymbolFunction | The symbol is a function and is queryable for IDebugHostData
 
-[GetContext]()
+[GetContext](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostsymbol-getcontext)
 
 The GetContext method returns the context where the symbol is valid. While this will represent things such as the debug target and process/address space in which the symbol exists, it may not be as specific as a context retrieved from other means (e.g.: from an *IModelObject*). 
 
-[EnumerateChildren]()
+[EnumerateChildren](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostsymbol-enumeratechildren)
 
 The EnumerateChildren method returns an enumerator which will enumerate all children of a given symbol. For a C++ type, for example, the base classes, fields, member functions, and the like are all considered children of the type symbol. 
 
@@ -423,27 +423,27 @@ DECLARE_INTERFACE_(IDebugHostModule, IDebugHostSymbol)
 }
 ```
 
-[GetImageName]()
+[GetImageName](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostmodule-getimagename)
 
 The GetImageName method returns the image name of the module. Depending on the value of the allowPath argument, the returned image name may or may not include the full path to the image.
 
-[GetBaseLocation]()
+[GetBaseLocation](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostmodule-getbaselocation)
 
 The GetBaseLocation method returns the base load address of the module as a location structure. The returned location structure for a module will typically refer to a virtual address.
 
-[GetVersion]()
+[GetVersion](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostmodule-getversion)
 
 The GetVersion method returns version information about the module (assuming that such information can successfully be read out of the headers). If a given version is requested (via a non-nullptr output pointer) and it cannot be read, an appropriate error code will be returned from the method call. 
 
-[FindTypeByName]()
+[FindTypeByName](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostmodule-findtypebyname)
 
 The FindTypeByName method finds a type defined within the module by the type name and returns a type symbol for it. This method may return a valid IDebugHostType which would never be returned via explicit recursion of children of the module. The debug host may allow creation of derivative types -- types not ever used within the module itself but derived from types that are. As an example, if the structure MyStruct is defined in the symbols of the module but the type MyStruct ** is never used, the FindTypeByName method may legitimately return a type symbol for MyStruct ** despite that type name never explicitly appearing in the symbols for the module. 
 
-[FindSymbolByRVA]()
+[FindSymbolByRVA](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostmodule-findsymbolbyrva)
 
 The FindSymbolByRVA method will find a single matching symbol at the given relative virtual address within the module. If there is not a single symbol at the supplied RVA (e.g.: there are multiple matches), an error will be returned by this method. Note that this method will prefer returning a private symbol over a symbol in the publics table. 
 
-[FindSymbolByName]()
+[FindSymbolByName](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostmodule-findsymbolbyname)
 
 The FindSymbolByName method will find a single global symbol of the given name within the module. If there is not a single symbol matching the given name, an error will be returned by this method. Note that this method will prefer returning a private symbol over a symbol in the publics table. 
 
@@ -511,19 +511,19 @@ STDMETHOD(GetBaseType)(_Out_ IDebugHostType** baseType) PURE;
 STDMETHOD(GetHashCode)(_Out_ ULONG* hashCode) PURE;
 ```
 
-[GetTypeKind]()
+[GetTypeKind](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostype-gettypekind)
 
 The GetTypeKind method returns what kind of type (pointer, array, intrinsic, etc...) the symbol refers to. 
 
-[GetSize]()
+[GetSize](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostype-getsize)
 
 The GetSize method returns the size of the type (as if one had done sizeof(type) in C++). 
 
-[GetBaseType]()
+[GetBaseType](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostype-getbasetype)
 
 If the type is a derivative of another single type (e.g.: as MyStruct * is derived from MyStruct'), the GetBaseType method returns the base type of the derivation. For pointers, this returns the type pointed to. For arrays, this returns what the array is an array of. If the type is not such a derivative type, an error is returned. 
 
-[GetHashCode]()
+[GetHashCode](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostype-gethashcode)
 
 The GetHashCode method returns a 32-bit hash code for the type. With the exception of a global match (e.g.: a type signature equivalent to * which matches everything if permitted by the host), any type instance which can match a particular type signature must return the same hash code. 
 This method is used in conjunction with type signatures in order to match type signatures to type instances. 
@@ -537,7 +537,7 @@ The following IDebugHostType methods are specific to intrinsic types (or types w
 STDMETHOD(GetIntrinsicType)(_Out_opt_ IntrinsicKind *intrinsicKind, _Out_opt_ VARTYPE *carrierType) PURE;
 ```
 
-[GetIntrinsicType]()
+[GetIntrinsicType](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostype-getintrinsictype)
 
 The GetIntrinsicType method returns information about what kind of intrinsic the type is. Two values are returned out of this method: 
 
@@ -555,7 +555,7 @@ The following IDebugHostType methods are specific to types which store data in b
 STDMETHOD(GetBitField)(_Out_ ULONG* lsbOfField, _Out_ ULONG* lengthOfField) PURE;
 ```
 
-[GetBitField]()
+[GetBitField](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostype-getbitfield)
 
 If a given member of a data structure is a bitfield (e.g.: ULONG MyBits:8), the type information for the field carries with it information about the bitfield placement. The GetBitField method can be used to retrieve that information. This method will fail on any type which is not a bitfield. This is the only reason the method will fail. Simply calling this method and looking at success/failure is sufficient to distinguish a bit field from a non-bit field. 
 If a given type does happen to be a bitfield, the field positions are defined by the half open set *(lsbOfField + lengthOfField : lsbOfField]*
@@ -569,11 +569,11 @@ The following IDebugHostType methods are specific to pointer types. Such are typ
 STDMETHOD(GetPointerKind)(_Out_ PointerKind* pointerKind) PURE;
 STDMETHOD(GetMemberType)(_Out_ IDebugHostType** memberType) PURE;
 ```
-[GetPointerKind]()
+[GetPointerKind](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostype-getpointerkind)
 
 For types which are pointers, the GetPointerKind method returns the kind of pointer. This is defined by the PointerKind enumeration.
 
-[GetMemberType]()
+[GetMemberType](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostype-getmembertype)
 
 For types which are pointer-to-member (as indicated by a type kind of TypeMemberPointer), the GetMemberType method returns the class the pointer is a pointer-to-member of. 
 
@@ -606,11 +606,11 @@ Stride | Defines the stride of the array dimension. For an increase of one (from
    STDMETHOD(GetArrayDimensions)(\_In_ ULONG64 dimensions, \_Out_writes_(dimensions) ArrayDimension \*pDimensions) PURE;
    ```
 
-[GetArrayDimensionality]()
+[GetArrayDimensionality](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttype-getarraydimensionality)
 
 The GetArrayDimensionality method returns the number of dimensions that the array is indexed in. For C style arrays, the value returned here will always be 1. 
 
-[GetArrayDimensions]()
+[GetArrayDimensions](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttype-getarraydimensions)
 
 The GetArrayDimensions method returns a set of descriptors, one for each dimension of the array as indicated by the GetArrayDimensionality method. Each descriptor is an ArrayDimension structure which describes the starting index, length, and forward stride of each array dimension. This allows descriptions of significantly more powerful array constructs than are allowed in the C type system. 
 
@@ -639,19 +639,19 @@ STDMETHOD(GetFunctionParameterTypeAt)(_In_ ULONG64 i, _Out_ IDebugHostType** par
 STDMETHOD(GetFunctionVarArgsKind)(_Out_ VarArgsKind* varArgsKind) PURE;
 ```
 
-[GetFunctionCallingConvention]()
+[GetFunctionCallingConvention](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttype-getfunctioncallingconvention)
 
 The GetFunctionCallingConvention method returns the calling convention of the function. Such is returned as a member of the CallingConventionKind enumeration. 
 
-[GetFunctionReturnType]()
+[GetFunctionReturnType](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttype-getfunctionreturntype)
 
 The GetFunctionReturnType method returns the return type of the function. 
 
-[GetFunctionParameterTypeCount]()
+[GetFunctionParameterTypeCount](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttype-getfunctionparametertypecount)
 
 The GetFunctionParameterTypeCount method returns the number of arguments that the function takes. Note that the C/C++ ellipsis based variable argument marker is not considered in this count. The presence of such must be detected via the GetFunctionVarArgsKind method. This will only include arguments before the ellipsis. 
 
-[GetFunctionParameterTypeAt]()
+[GetFunctionParameterTypeAt](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttype-getfunctionparametertypeat)
 
 The GetFunctionParameterTypeAt method returns the type of the i-th argument to the function. 
 
@@ -696,11 +696,11 @@ In this example:
 - The GetTypedefBaseType method will return MYSTRUCT * for PMYSTRUCT and PMYSTRUCT for PTRMYSTRUCT
 - The GetTypedefFinalBaseType method will return MYSTRUCT * for both types
 
-[IsTypedef]()
+[IsTypedef](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttype-istypedef])
 
 The IsTypedef method is the only method capable of seeing whether a type is a typedef. The GetTypeKind method will behave as if called on the underlying type. 
 
-[GetTypedefBaseType]()
+[GetTypedefBaseType](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttype-gettypedefbasetype)
 
 The GetTypedefBaseType method will return what the immediate definition of the typedef. In the examples described in the documentation: 
 
@@ -711,7 +711,7 @@ typedef PMYSTRUCT PTRMYSTRUCT;
 this method will return MYSTRUCT * for PMYSTRUCT and PMYSTRUCT for PTRMYSTRUCT.
 
 
-[GetTypedefFinalBaseType]()
+[GetTypedefFinalBaseType](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttype-gettypedeffinalbasetype])
 
 The GetTypedefFinalBaseType method will return the final type that the typedef is a definition for. If the typedef is a definition of another typedef, this will continue to follow the definition chain until it reaches a type which is not a typedef and that type will be returned. In the examples described in the documentation: 
 
@@ -742,7 +742,7 @@ DECLARE_INTERFACE_(IDebugHostConstant, IDebugHostSymbol)
 }
 ```
 
-[GetValue]()
+[GetValue](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostconstant-getvalue)
 
 The GetValue method returns the value of the constant packed into a VARIANT. It is important to note that the GetType method on IDebugHostSymbol may return a specific type symbol for the constant. In such cases, there is no guarantee that the packing of the constant value as defined by the type symbol is the same as the packing as returned by the GetValue method here. 
 
@@ -761,7 +761,7 @@ DECLARE_INTERFACE_(IDebugHostField, IDebugHostSymbol)
 }
 ```
 
-[GetLocationKind]()
+[GetLocationKind](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostfield-idebughostfield-getlocationkind)
 
 The GetLocationKind method returns what kind of location the symbol is at according to the LocationKind enumeration. Such enumeration can be one of the following values: 
 
@@ -772,17 +772,17 @@ LocationStatic | The field is static and has its own address. The GetLocation me
 LocationConstant | The field is a constant and has a value. The GetValue method will return the value of the constant. The GetOffset and GetLocation methods will fail for a field which is LocationConstant
 LocationNone | The field has no location. It may have been optimized out by the compiler or it may be a static field which is declared but never defined. Regardless of how such a field came to be, it has no physical presence or value. It is only in the symbols. All acquisition methods (GetOffset, GetLocation, and GetValue) will fail for a field which is LocationNone.
 
-[GetOffset]()
+[GetOffset](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostfield-getoffset)
 
 For fields which have an offset (e.g.: fields whose location kind indicates LocationMember), the GetOffset method will return the offset from the base address of the containing type (the this pointer) to the data for the field itself. Such offsets are always expressed as unsigned 64-bit values. 
 If the given field does not have a location which is an offset from the base address of the containing type, the GetOffset method will fail. 
 
-[GetLocation]()
+[GetLocation](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostfield-getlocation)
 
 For fields which have an address regardless of the particular type instance (e.g.: fields whose location kind indicates LocationStatic), the GetLocation method will return the abstract location (address) of the field. 
 If the given field does not have a static location, the GetLocation method will fail. 
 
-[GetValue]()
+[GetValue](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostfield-getvalue)
 
 For fields which have a constant value defined within the symbolic information (e.g.: fields whose location kind indicates LocationConstant), the GetValue method will return the constant value of the field. 
 If the given field does not have a constant value, the GetValue method will fail. 
@@ -803,16 +803,16 @@ DECLARE_INTERFACE_(IDebugHostData, IDebugHostSymbol)
 
 All of these methods are semantically equivalent to their counterparts in IDebugHostField. The only difference is that the GetLocationKind method will never return LocationMember for free data. 
 
-[GetLocationKind]()
+[GetLocationKind](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostdata-getlocationkind)
 
 The GetLocationKind method returns what kind of location the symbol is at according to the LocationKind enumeration. The description of this enumeration can be found in the documentation for IDebugHostField. 
 
-[GetLocation]()
+[GetLocation](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostdata-getlocation)
 
 For data which has an address, the GetLocation method will return the abstract location (address) of the field. 
 If the given data does not have a static location, the GetLocation method will fail. 
 
-[GetValue]()
+[GetValue](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostdata-getvalue)
 
 For datawhich has a constant value defined within the symbolic information (e.g.: data whose location kind indicates LocationConstant), the GetValue method will return the constant value of the field. 
 If the given data does not have a constant value, the GetValue method will fail. 
@@ -831,7 +831,7 @@ DECLARE_INTERFACE_(IDebugHostBaseClass, IDebugHostSymbol)
 }
 ```
 
-[GetOffset]()
+[GetOffset](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostbaseclass-getoffset)
 
 The GetOffset method returns the offset of the base class from the base address of the derived class. Such offset may be zero or may be a positive unsigned 64-bit value. 
 
@@ -850,11 +850,11 @@ DECLARE_INTERFACE_(IDebugHostPublic, IDebugHostSymbol)
 
 All of these methods are semantically equivalent to their counterparts in IDebugHostField. The only difference is that the GetLocationKind method will never return LocationMember or LocationConstant for such symbols. 
 
-[GetLocationKind]()
+[GetLocationKind](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostpublic-getlocationkind)
 
 The GetLocationKind method returns what kind of location the symbol is at according to the LocationKind enumeration. The description of this enumeration can be found in the documentation for IDebugHostField. 
 
-[GetLocation]()
+[GetLocation](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostpublic-getlocation)
 
 For data which has an address, the GetLocation method will return the abstract location (address) of the field. 
 If the given public does not have a static location, the GetLocation method will fail. 
@@ -871,7 +871,7 @@ DECLARE_INTERFACE_(IDebugHostModuleSignature, IUnknown)
 }
 ```
 
-[IsMatch]()
+[IsMatch](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostmodulesignature-ismatch)
 
 The IsMatch method compares a particular module (as given by an IDebugHostModule symbol) against a signature, comparing the module name and version to the name and version range indicated in the signature. An indication of whether the given module symbol matches the signature is returned. 
 
@@ -888,15 +888,15 @@ DECLARE_INTERFACE_(IDebugHostTypeSignature, IUnknown)
 }
 ```
 
-[GetHashCode]()
+[GetHashCode](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttypesignature-gethashcode)
 
 The GetHashCode method returns a 32-bit hash code for the type signature. The debug host guarantees that there is synchronization in implementation between the hash code returned for type instances and the hash code returned for type signatures. With the exception of a global match, if a type instance is capable of matching a type signature, both will have the same 32-bit hash code. This allows an initial rapid comparison and match between a type instance and a plethora of type signatures registered with the data model manager. 
 
-[IsMatch]()
+[IsMatch](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttypesignature-ismatch)
 
 The IsMatch method returns an indication of whether a particular type instance matches the criteria specified in the type signature. If it does, an indication of this is returned as well as an enumerator which will indicate all of the specific portions of the type instance (as symbols) which matched wildcards in the type signature. 
 
-[CompareAgainst]()
+[CompareAgainst](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttypesignature-compareagainst)
 
 The CompareAgainst method compares the type signature to another type signature and returns how the two signatures compare. The comparison result which is returned is a member of the SignatureComparison enumeration which is defined as follows: 
 
@@ -918,6 +918,14 @@ Identical | The two signatures or types are identical.
 
 ## <span id="related_topics"></span>Related topics
 
-[JavaScript Debugger Example Scripts](javascript-debugger-example-scripts.md)
+[Debugger Data Model C++ Overview](data-model-cpp-overview.md)
 
-[Native Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md)
+[Debugger Data Model C++ Interfaces](data-model-cpp-interfaces.md)
+
+[Debugger Data Model C++ Objects](data-model-cpp-objects.md)
+
+[Debugger Data Model C++ Additional Interfaces](data-model-cpp-additional-interfaces.md)
+
+[Debugger Data Model C++ Concepts](data-model-cpp-concepts.md)
+
+[Debugger Data Model C++ Scripting](data-model-cpp-scripting.md)

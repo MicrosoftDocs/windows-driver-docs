@@ -2,7 +2,7 @@
 title: Debugger Data Model C++ Concepts
 description: This topic describes concepts in Debugger C++ Data Model.
 ms.author: domars
-ms.date: 07/12/2018
+ms.date: 09/26/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -333,9 +333,18 @@ The NotifyDestruct method on a dynamic concept provider is a callback made by th
 
 ## <span id="related_topics"></span>Related topics
 
-[JavaScript Debugger Example Scripts](javascript-debugger-example-scripts.md)
+[Debugger Data Model C++ Overview](data-model-cpp-overview.md)
 
-[Native Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md)
+[Debugger Data Model C++ Interfaces](data-model-cpp-interfaces.md)
+
+[Debugger Data Model C++ Objects](data-model-cpp-objects.md)
+
+[Debugger Data Model C++ Additional Interfaces](data-model-cpp-additional-interfaces.md)
+
+[Debugger Data Model C++ Concepts](data-model-cpp-concepts.md)
+
+[Debugger Data Model C++ Scripting](data-model-cpp-scripting.md)
+
 
  
 

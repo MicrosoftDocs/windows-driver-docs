@@ -671,6 +671,14 @@ The GetNext method moves the enumerator forward to the next breakpoint to be enu
 
 ## <span id="related_topics"></span>Related topics
 
-[JavaScript Debugger Example Scripts](javascript-debugger-example-scripts.md)
+[Debugger Data Model C++ Overview](data-model-cpp-overview.md)
 
-[Native Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md)
+[Debugger Data Model C++ Interfaces](data-model-cpp-interfaces.md)
+
+[Debugger Data Model C++ Objects](data-model-cpp-objects.md)
+
+[Debugger Data Model C++ Additional Interfaces](data-model-cpp-additional-interfaces.md)
+
+[Debugger Data Model C++ Concepts](data-model-cpp-concepts.md)
+
+[Debugger Data Model C++ Scripting](data-model-cpp-scripting.md)

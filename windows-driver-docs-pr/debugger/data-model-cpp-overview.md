@@ -140,41 +140,41 @@ The following interfaces are defined for this category:
 
 *Bridges Between DbgEng and the Data Model*
 
-[IHostDataModelAccess](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-ihostdatamodelaccess?branch=rs5) 
+[IHostDataModelAccess](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-ihostdatamodelaccess) 
 
 *Main Interfaces* 
 
-[IModelObject](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-imodelobject?branch=rs5) 
+[IModelObject](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-imodelobject) 
 
-[IKeyStore](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-ikeystore?branch=rs5) 
+[IKeyStore](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-ikeystore) 
 
-[IModelIterator](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-imodeliterator?branch=rs5) 
+[IModelIterator](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-imodeliterator) 
 
-[IModelPropertyAccessor](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-imodelpropertyaccessor?branch=rs5) 
+[IModelPropertyAccessor](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-imodelpropertyaccessor) 
 
-[IModelMethod](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-imodelmethod?branch=rs5) 
+[IModelMethod](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-imodelmethod) 
 
-[IKeyEnumerator](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-ikeyenumerator?branch=rs5) 
+[IKeyEnumerator](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-ikeyenumerator) 
 
-[IRawEnumerator](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-irawenumerator?branch=rs5) 
+[IRawEnumerator](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-irawenumerator) 
 
-[IModelKeyReference](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-imodelkeyreference?branch=rs5)  / [IModelKeyReference2](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-imodelkeyreference2?branch=rs5) 
+[IModelKeyReference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-imodelkeyreference)  / [IModelKeyReference2](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-imodelkeyreference2) 
 
 *Concept Interfaces*
 
-[IStringDisplayableConcept](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-istringdisplayableconcept?branch=rs5) 
+[IStringDisplayableConcept](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-istringdisplayableconcept) 
 
-[IIterableConcept](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-iiterableconcept?branch=rs5) 
+[IIterableConcept](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-iiterableconcept) 
 
-[IIndexableConcept](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-iindexableconcept?branch=rs5) 
+[IIndexableConcept](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-iindexableconcept) 
 
-[IPreferredRuntimeTypeConcept](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-ipreferredruntimetypeconcept?branch=rs5) 
+[IPreferredRuntimeTypeConcept](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-ipreferredruntimetypeconcept) 
 
-[IDataModelConcept](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelconcept?branch=rs5) 
+[IDataModelConcept](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelconcept) 
 
-[IDynamicKeyProviderConcept](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idynamickeyproviderconcept?branch=rs5) 
+[IDynamicKeyProviderConcept](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idynamickeyproviderconcept) 
 
-[IDynamicConceptProviderConcept](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idynamicconceptproviderconcept?branch=rs5) 
+[IDynamicConceptProviderConcept](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idynamicconceptproviderconcept) 
 
 
 **Management of Data Models and Extensibility**
@@ -185,13 +185,13 @@ The following interfaces are defined for this category:
 
 *General Data Model Manager Access* 
 
-[IDataModelManager]()  / [IDataModelManager2]() 
+[IDataModelManager](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelmanager)  / [IDataModelManager2](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelmanager2) 
 
 *Script Management* 
 
-[IDataModelScriptManager]() 
+[IDataModelScriptManager](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelscriptmanager) 
 
-[IDataModelScriptProviderEnumerator]() 
+[IDataModelScriptProviderEnumerator](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelscriptproviderenumerator) 
 
 
 **Access to the Debugger's Type System and Memory Spaces**
@@ -201,47 +201,46 @@ The following interfaces are defined for this category:
 
 *General Host (Debugger) Interfaces*
 
-[IDebugHost]() 
+[IDebugHost](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idebughost) 
 
-[IDebugHostStatus]() 
+[IDebugHostStatus](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idebughoststatus) 
 
-[IDebugHostContext]() 
+[IDebugHostContext](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idebughostcontext) 
 
-[IDebugHostMemory]()  / [IDebugHostMemory2]() 
+[IDebugHostMemory](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idebughostmemory)  / [IDebugHostMemory2](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idebughostmemory2) 
 
-[IDebugHostErrorSink]() 
+[IDebugHostErrorSink](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idebughosterrorsink) 
 
-[IDebugHostEvaluator]()  / [IDebugHostEvaluator2]() 
+[IDebugHostEvaluator](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idebughostevaluator)  / [IDebugHostEvaluator2](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idebughostevaluator2) 
 
-[IDebugHostExtensibility]() 
+[IDebugHostExtensibility](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idebughostextensibility) 
 
 *Host (Debugger) Type System Interfaces* 
 
-[IDebugHostSymbols]() 
+[IDebugHostSymbols](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idebughostsymbols) 
 
-[IDebugHostSymbol]()  / [IDebugHostSymbol2]() 
+[IDebugHostSymbol](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idebughostsymbol)  / [IDebugHostSymbol2](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idebughostsymbol2) 
 
-[IDebugHostModule]() 
+[IDebugHostModule](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idebughostmodule) 
 
-[IDebugHostType]()  / [IDebugHostType2]() 
+[IDebugHostType](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idebughosttype)  / [IDebugHostType2](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idebughosttype2) 
 
-[IDebugHostConstant]() 
+[IDebugHostConstant](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idebughostconstant) 
 
-[IDebugHostField]() 
+[IDebugHostField](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idebughostfield) 
 
-[IDebugHostData]() 
+[IDebugHostData](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idebughostdata) 
 
-[IDebugHostBaseClass]() 
+[IDebugHostBaseClass](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idebughostbaseclass) 
+[IDebugHostPublic](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idebughostpublic) 
 
-[IDebugHostPublic]() 
+[IDebugHostModuleSignature](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idebughostmodulesignature) 
 
-[IDebugHostModuleSignature]() 
-
-[IDebugHostTypeSignature]() 
+[IDebugHostTypeSignature](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idebughosttypesignature) 
 
 *Host (Debugger) Support for Scripting* 
 
-[IDebugHostScriptHost]() 
+[IDebugHostScriptHost](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idebughostscript) 
 
 
 **Authoring and Consuming Scripts**
@@ -252,36 +251,36 @@ The following interfaces are defined for this category:
 
 *General Script Interfaces* 
 
-[IDataModelScriptProvider]() 
+[IDataModelScriptProvider](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelscript) 
 
-[IDataModelScript]() 
+[IDataModelScript](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelscript) 
 
-[IDataModelScriptClient]() 
+[IDataModelScriptClient](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelscriptclient) 
 
-[IDataModelScriptHostContext]() 
+[IDataModelScriptHostContext](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelscripthostcontext) 
 
-[IDataModelScriptTemplate]() 
+[IDataModelScriptTemplate](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelscripttemplate) 
 
-[IDataModelScriptTemplateEnumerator]() 
+[IDataModelScriptTemplateEnumerator](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelscriptenumerator) 
 
-[IDataModelNameBinder]() 
+[IDataModelNameBinder](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelnamebinder) 
 
 
 *Script Debugger Interfaces* 
 
-[IDataModelScriptDebug]() 
+[IDataModelScriptDebug](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelscriptdebug) 
 
-[IDataModelScriptDebugClient]() 
+[IDataModelScriptDebugClient](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelscriptdebugclient) 
 
-[IDataModelScriptDebugStack]() 
+[IDataModelScriptDebugStack](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelscriptdebugstack) 
 
-[IDataModelScriptDebugStackFrame]() 
+[IDataModelScriptDebugStackFrame](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelscriptdebugstackframe) 
 
-[IDataModelScriptDebugVariableSetEnumerator]() 
+[IDataModelScriptDebugVariableSetEnumerator](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelscriptdebugvariablesetenumerator) 
 
-[IDataModelScriptDebugBreakpoint]() 
+[IDataModelScriptDebugBreakpoint](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelscriptdebugbreakpoint) 
 
-[IDataModelScriptDebugBreakpointEnumerator]() 
+[IDataModelScriptDebugBreakpointEnumerator](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelscriptdebugbreakpointenumerator) 
 
 
 
@@ -294,6 +293,14 @@ The following interfaces are defined for this category:
 
 ## <span id="related_topics"></span>Related topics
 
-[JavaScript Debugger Example Scripts](javascript-debugger-example-scripts.md)
+[Debugger Data Model C++ Overview](data-model-cpp-overview.md)
 
-[Native Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md)
+[Debugger Data Model C++ Interfaces](data-model-cpp-interfaces.md)
+
+[Debugger Data Model C++ Objects](data-model-cpp-objects.md)
+
+[Debugger Data Model C++ Additional Interfaces](data-model-cpp-additional-interfaces.md)
+
+[Debugger Data Model C++ Concepts](data-model-cpp-concepts.md)
+
+[Debugger Data Model C++ Scripting](data-model-cpp-scripting.md)
