@@ -237,10 +237,9 @@ The status graphic displays the publish status for each shipping label. A green 
 
 ## <span id="In_this_section"></span><span id="in_this_section"></span><span id="IN_THIS_SECTION"></span>In this section
 
+- [Create a new hardware submission](create-a-new-hardware-submission.md)
 
--   [Create a new hardware submission](create-a-new-hardware-submission.md)
-
--   [Manage hardware submissions](manage-your-hardware-submissions.md)
+- [Manage hardware submissions](manage-your-hardware-submissions.md)
 
  
 

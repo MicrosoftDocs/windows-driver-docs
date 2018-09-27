@@ -67,4 +67,4 @@ Refer to [Error codes](get-product-data.md#error-codes) for details.
 
 ## See also
 
-* [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
+- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

@@ -501,4 +501,4 @@ If there are functional validation failures, the response body will contain one 
 
 ## See also
 
-[Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
+- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

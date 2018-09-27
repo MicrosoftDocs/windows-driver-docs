@@ -150,5 +150,6 @@ The following example demonstrates an example JSON response body for this reques
 
 ## Related topics
 
-* [Get details for a Windows 10 driver error](get-details-for-a-windows-10-driver-error.md)
-* [Download the CAB file for a Windows 10 driver error](download-the-cab-file-for-a-windows-10-driver-error.md)
+- [Get details for a Windows 10 driver error](get-details-for-a-windows-10-driver-error.md)
+
+- [Download the CAB file for a Windows 10 driver error](download-the-cab-file-for-a-windows-10-driver-error.md)

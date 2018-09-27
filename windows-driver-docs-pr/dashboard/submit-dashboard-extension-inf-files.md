@@ -157,13 +157,21 @@ Yes.  If multiple systems use the same settings, or if you want to customize set
 ## Related pages
 
 ### Hardware Dev Center: 
+
 * [Hardware submissions](hardware-certification-submissions.md)
+
 * [Driver flighting](driver-flighting.md) 
+
 * [Manage driver distribution with shipping labels](driver-flighting.md)
+
 * [Publishing to Windows Update](publish-a-driver-to-windows-update.md)
 
-### Windows Drivers: 
+### Windows Drivers:
+
 * [Using a Universal INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-universal-inf-file)
+
 * [Getting started with universal drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers)
+
 * [Using a component INF file](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-component-inf-file)
+
 * [How windows ranks drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/how-setup-ranks-drivers--windows-vista-and-later-)
