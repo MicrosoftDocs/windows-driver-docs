@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_PNP
+title: IRP_MJ_PNP
 description: IRP\_MJ\_PNP
 ms.assetid: aec2f309-02a1-460a-b674-33ad18286347
 keywords: ["IRP_MJ_PNP Installable File System Drivers"]

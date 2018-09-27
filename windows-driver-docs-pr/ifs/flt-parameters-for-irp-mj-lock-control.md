@@ -1,5 +1,5 @@
 ---
-title: FLT\_PARAMETERS for IRP\_MJ\_LOCK\_CONTROL union
+title: FLT_PARAMETERS for IRP_MJ_LOCK_CONTROL union
 description: The following union component is used when the MajorFunction field of the FLT\_IO\_PARAMETER\_BLOCK structure for the operation is IRP\_MJ\_LOCK\_CONTROL.
 ms.assetid: 4dbdb4c8-5908-40e5-b600-225b47118c6d
 keywords: ["FLT_PARAMETERS for IRP_MJ_LOCK_CONTROL union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
