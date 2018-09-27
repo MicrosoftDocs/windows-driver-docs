@@ -1,5 +1,5 @@
 ---
-title: FLT\_PARAMETERS for IRP\_MJ\_QUERY\_EA union
+title: FLT_PARAMETERS for IRP_MJ_QUERY_EA union
 description: Union component used when the MajorFunction field of the FLT\_IO\_PARAMETER\_BLOCK structure for the operation is IRP\_MJ\_QUERY\_EA.
 ms.assetid: 858e8c72-33ae-441c-ada9-86c5df0e4f59
 keywords: ["FLT_PARAMETERS for IRP_MJ_QUERY_EA union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]

@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_LOCK\_CONTROL
+title: IRP_MJ_LOCK_CONTROL
 description: IRP\_MJ\_LOCK\_CONTROL
 ms.assetid: db21d779-c423-42bd-a94b-4d8c8fd1f7cb
 keywords: ["IRP_MJ_LOCK_CONTROL Installable File System Drivers"]

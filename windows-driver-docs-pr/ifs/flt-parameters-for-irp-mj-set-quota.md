@@ -1,5 +1,5 @@
 ---
-title: FLT\_PARAMETERS for IRP\_MJ\_SET\_QUOTA union
+title: FLT_PARAMETERS for IRP_MJ_SET_QUOTA union
 description: Union component used when the MajorFunction field of the FLT\_IO\_PARAMETER\_BLOCK structure for the operation is IRP\_MJ\_SET\_QUOTA.
 ms.assetid: 4ca19af9-695c-421e-90d5-eb40978f8d19
 keywords: ["FLT_PARAMETERS for IRP_MJ_SET_QUOTA union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
