@@ -65,3 +65,7 @@ The following diagram explains the API call pattern to create a new report templ
 - [Sample report templates](sample-report-templates.md)
 
 - [Analytics Reporting APIs (Swagger )](https://apidocs.microsoft.com/services/analyticsreportingapis)
+
+## See also
+
+[Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

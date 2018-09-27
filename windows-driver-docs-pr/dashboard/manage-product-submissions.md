@@ -85,3 +85,7 @@ The Microsoft Hardware APIs methods for creating and managing product data use t
 
 * [Product resource](get-product-data.md#product-resource)
 * [Submission resource](get-product-data.md#submission-resource)
+
+## See also
+
+[Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

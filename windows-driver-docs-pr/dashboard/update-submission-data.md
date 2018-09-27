@@ -65,3 +65,6 @@ After this step, use the method [get submission details](get-a-submission.md) to
 ## Error codes
 Refer to [Error codes](get-product-data.md#error-codes) for details.
 
+## See also
+
+* [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

@@ -122,3 +122,7 @@ After this step, use the method in [Get a shipping label](get-a-shipping-label.m
 ## Error codes
 
 For more info about error codes, see [Error codes](get-product-data.md#error-codes).
+
+## See also
+
+[Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

@@ -116,6 +116,8 @@ The following sample provides detailed code that demonstrate how to use the Micr
 
 * [C# sample](http://download.microsoft.com/download/C/F/4/CF404E53-87A0-4204-BA13-A64B09A237C1/HardwareApiCSharpSample.zip)
 
+[Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
+
 ## Additional help
 
 If you have questions about the Microsoft Store submission API or need assistance managing your submissions with this API, visit the [support page](https://developer.microsoft.com/en-us/dashboard/account/help?returnUri=https://developer.microsoft.com/en-us/dashboard/hardware) and request help.
