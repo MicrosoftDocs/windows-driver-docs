@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ndiskd.nb** extension displays information about a [**NET\_BUFFER**](https://msdn.microsoft.com/windows/hardware/drivers/network/net-buffer-structure) (NB) structure.
 
-```
+```CMD
 !ndiskd.nb [-handle <x>] [-verbosity <x>] [-basic] [-chain] [-data] 
 ```
 
@@ -53,14 +53,14 @@ Examples
 
 The **NET\_BUFFER** in the following examples was obtained from the [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/windows/hardware/drivers/network/net-buffer-list-structure) in the Examples section of the [**!ndiskd.nbl**](-ndiskd-nbl.md) topic. The NB's handle is ffffdf8014952610.
 
-```
+```CMD
 2: kd> !ndiskd.nbl ffffdf80149524a0 -data
 NET_BUFFER ffffdf8014952610
 ```
 
 You can click the **NET\_BUFFER**'s handle or run the **!ndiskd.nb -handle** command to see its details.
 
-```
+```CMD
 2: kd> !ndiskd.nb ffffdf8014952610
     NB                 ffffdf8014952610    Next NB            0
     Length             0                   Source pool        ffffdf80147e4a40
@@ -72,7 +72,7 @@ You can click the **NET\_BUFFER**'s handle or run the **!ndiskd.nb -handle** com
 
 Use the **!ndiskd.nb -chain** command to see this **NET\_BUFFER**'s MDL chain in addition to its basic details. In the following example, there is only one MDL. Its handle is ffffdf8014a37930.
 
-```
+```CMD
 2: kd> !ndiskd.nb ffffdf8014952610 -chain
     NB                 ffffdf8014952610    Next NB            0
     Length             0                   Source pool        ffffdf80147e4a40

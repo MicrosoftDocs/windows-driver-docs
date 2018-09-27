@@ -67,7 +67,7 @@ List of container references (`<containerRef />`). These are the different TLVs 
 
 ### Example
 
-```
+```XML
 <message commandId="WDI_SET_P2P_LISTEN_STATE"
          type="WDI_SET_P2P_LISTEN_STATE_PARAMETERS"
          description="Parameters to set listen state."
@@ -103,7 +103,7 @@ None.
 
 ### Example
 
-```
+```XML
 <containerRef id="WDI_TLV_P2P_CHANNEL_NUMBER"
               name="ListenChannel"
               optional="true"
@@ -134,7 +134,7 @@ One of `<groupRef />` or `<namedType />`.
 
 ### Example
 
-```
+```XML
 <container name="P2PListenStateContainer"
            description="Container for P2P Listen State setting."
            type="WDI_P2P_LISTEN_STATE_CONTAINER">
@@ -161,7 +161,7 @@ None.
 
 ### Examples
 
-```
+```XML
 <container name="WFDChannelContainer"
            description="Container for a Wi-Fi Direct channel."
            type="WDI_P2P_CHANNEL_CONTAINER">
@@ -188,7 +188,7 @@ None.
 
 ### Example
 
-```
+```XML
 <container name="P2PListenStateContainer"
            description="Container for P2P Listen State setting."
            type="WDI_P2P_LISTEN_STATE_CONTAINER">
@@ -215,7 +215,7 @@ List of `<containerRef />`.
 
 ### Example
 
-```
+```XML
 <aggregateContainer
     name="P2PInvitationRequestInfoContainer"
     type="WDI_P2P_INVITATION_REQUEST_INFO_CONTAINER"
@@ -290,7 +290,7 @@ There are several possible property types (struct fields).
 
 ### Example
 
-```
+```XML
 <propertyGroup name="P2PDiscoverModeStruct"
                type="WDI_P2P_DISCOVER_MODE"
                description="Structure definition for P2P Discover Mode Parameters">

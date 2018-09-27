@@ -128,7 +128,7 @@ In addition to a **WanEndpoints** value, an INF file for an ISDN adapter must ad
 
 The following is an example of an *add-registry-section* that adds ISDN keys and values to the instance key of an ISDN adapter. Two D-channels are specified for the adapter, and two B-channels are specified for each D-channel.
 
-```
+```INF
 [ISDNadapter.reg]
 HKR,,  WanEndPoints,         0x00010001, 4
 HKR,,  IsdnNumDChannels,     0x00010001, 2
@@ -187,7 +187,7 @@ The ISDN Wizard itself also adds ISDN keys and values to the instance key for an
 
 The following example is an ISDN adapter's registry section layout . Each registry key is enclosed in square brackets, for example: \[ *KeyName* \]. The ISDN keys and values that were added by the INF file for the ISDN adapter are highlighted in boldface text; the ISDN keys and values that were added by the ISDN Wizard appear in normal (nonboldface) text.
 
-```
+```INF
 [...Enum\emumeratorID\device-instance-id]  ;ISDN adapter instance key
 WanEndpoints=4
 IsdnNumDChannels=2

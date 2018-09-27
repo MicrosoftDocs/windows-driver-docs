@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ndiskd.nwadapter** extension displays information about one or more nwifi!ADAPT structures. If you run this extension with no parameters, !ndiskd will display a list of all nwifi!ADAPT structures.
 
-```
+```CMD
 !ndiskd.nwadapter [-handle <x>] 
 ```
 

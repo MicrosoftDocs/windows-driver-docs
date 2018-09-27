@@ -26,7 +26,7 @@ ms.localizationpriority: medium
 
 The **!ndiskd.ndisstack** extension displays a debug stack trace.
 
-```
+```CMD
 !ndiskd.ndisstack [-handle <x>] [-statistics] 
 ```
 

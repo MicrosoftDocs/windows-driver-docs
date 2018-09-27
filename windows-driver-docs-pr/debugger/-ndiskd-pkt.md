@@ -26,7 +26,7 @@ ms.localizationpriority: medium
 
 The **!ndiskd.pkt** extension displays information about an [NDIS\_PACKET](https://msdn.microsoft.com/library/windows/hardware/ff557086) structure.
 
-```
+```CMD
 !ndiskd.pkt [-packet] [-verbosity] 
 ```
 

@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ndiskd.minidriver** command displays information about an NDIS miniport driver. If you run this extension with no parameters, !ndiskd will display a list of NDIS miniport drivers that are active on the system.
 
-```
+```CMD
 !ndiskd.minidriver [-handle <x>] [-basic] [-miniports] [-devices] [-handlers] 
 ```
 
@@ -54,7 +54,7 @@ Examples
 
 Enter the **!ndiskd.minidriver** command with no parameters to get a list of all NDIS miniport drivers active on the system. In the following example, look for the kdnic adapter's handle, ffffd20d12dec020
 
-```
+```CMD
 1: kd> !ndiskd.minidriver -basic
     ffffd20d173deae0 - tunnel
     ffffd20d12dec020 - kdnic
@@ -62,7 +62,7 @@ Enter the **!ndiskd.minidriver** command with no parameters to get a list of all
 
 Using the handle for the kdnic adapter, you can now click on the handle or enter the **!ndiskd.minidriver -handle** command to see detailed information for the tunnel miniport driver, as well as a list of miniports associated with it.
 
-```
+```CMD
 1: kd> !ndiskd.minidriver ffffd20d12dec020
 
 

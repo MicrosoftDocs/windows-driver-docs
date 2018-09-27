@@ -24,7 +24,7 @@ The **!ndiskd.ifstacktable** extension displays the network interface stack tabl
 
 For more information about the interface stack table, see [Maintaining a Network Interface Stack](https://msdn.microsoft.com/windows/hardware/drivers/network/maintaining-a-network-interface-stack).
 
-```
+```CMD
 !ndiskd.ifstacktable 
 ```
 
@@ -42,7 +42,7 @@ Examples
 
 Run the **!ndiskd.ifstacktable** command to see the ifStackTable.
 
-```
+```CMD
 3: kd> !ndiskd.ifstacktable
 
 
@@ -58,7 +58,7 @@ NDIS maintains the stack table for NDIS miniport adapters, NDIS 5.x filter inter
 
 Since there are no NDIS MUX Intermediate drivers installed on this example system, the ifStackTable only shows the stack relationships that NDIS has provided. In the following example, clicking on the handle for the Lower interface of the third row (handle ffffdf801494c010, Lower IfIndex 16) shows the interface for the QoS Packet Scheduler.
 
-```
+```CMD
 3: kd> !ndiskd.interface ffffdf801494c010
 
 
@@ -109,7 +109,7 @@ STATE
 
 Continuing the same example, clicking the handle for the Higher interface of the third row (handle ffffdf801494ba20, Higher IfIndex 17) shows the interface for the WFP 802.3 MAC Layer LightWeight Filter.
 
-```
+```CMD
 3: kd> !ndiskd.interface ffffdf801494ba20
 
 

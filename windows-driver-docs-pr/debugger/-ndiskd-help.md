@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ndiskd.help** command displays a list of available !ndiskd commands with a brief description of each one.
 
-```
+```CMD
 !ndiskd.help 
 ```
 
@@ -36,7 +36,7 @@ Examples
 
 The following example shows the list of help commands using **!ndiskd.help**.
 
-```
+```CMD
 3: kd> !ndiskd.help
 
 NDIS KD EXTENSIONS
@@ -63,7 +63,7 @@ Some alternate commands are listed at the bottom of this example. These commands
 
  
 
-```
+```CMD
 3: kd> !ndiskd.help -all
 
 NDIS KD EXTENSIONS

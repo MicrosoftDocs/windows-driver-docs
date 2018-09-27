@@ -26,7 +26,7 @@ For more information about WDI miniport drivers, see the [WDI Miniport Driver De
 
 For more information about WDI miniport driver reference, see [WDI Miniport Driver Reference](https://msdn.microsoft.com/library/windows/hardware/dn926075).
 
-```
+```CMD
 !ndiskd.wdiadapter [-handle <x>] [-pm] [-rcvfilter] 
 ```
 
@@ -51,7 +51,7 @@ Examples
 
 Run the **!ndiskd.wdiadapter** extension with no parameters to see a list of all CAdapter objects, along with details for each of their WDI Adapters. In the following example, there is only one CAdapter structure. The handle for its associated WDI Adapter is ffffc804af396000.
 
-```
+```CMD
 1: kd> !ndiskd.wdiadapter
     CAdapter                                                                    
     ffffc804af396000 - WDI Adapter
@@ -108,7 +108,7 @@ MORE INFORMATION
 
 Now you can either click on the "Power management" and "Receive filtering" links at the bottom of the CAdapter structure's description, or you can enter the **!ndiskd.wdiadapter -handle** command with either the *-pm* or *-rcvfilter* option. The following example shows output for the *-rcvfilter* option.
 
-```
+```CMD
 1: kd> !ndiskd.wdiadapter ffffc804af396000 -rcvfilter
 
 
