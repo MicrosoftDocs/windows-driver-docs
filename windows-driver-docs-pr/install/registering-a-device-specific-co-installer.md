@@ -45,7 +45,7 @@ The entry in the **DestinationDirs** section specifies that files listed in the 
 
 The *install-section-name* entry for the co-installer can be decorated with an optional OS/architecture extension (for example, cdrom_install.NTx86.CoInstallers). For more information, see [**INF *DDInstall* Section**](inf-ddinstall-section.md).
 
-The entry in the *Xxx***_AddReg** section creates a **CoInstallers32** value entry in the device's [*driver key*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-driver-key). The entry contains the co-installer DLL and, optionally, a specific entry point. If you omit the entry point, the default is CoDeviceInstall. The hexadecimal flags parameter (0x00010000) specifies that this is a REG_MULTI_SZ value entry.
+The entry in the *Xxx***_AddReg** section creates a **CoInstallers32** value entry in the device's [*driver key*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-driver-key). The entry contains the co-installer DLL and, optionally, a specific entry point. If you omit the entry point, the default is CoDeviceInstall. The hexadecimal flags parameter (0x00010000) specifies that this is a [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) value entry.
 
 To register more than one device-specific co-installer for a device, copy the files for each co-installer and include more than one string in the registry entry. For example, to register two co-installers, create INF sections like the following:
 

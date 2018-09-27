@@ -4,7 +4,7 @@ description: The amli bc extension permanently clears an AML breakpoint.
 ms.assetid: e975ee10-cd2f-4944-8d00-b2eda2dd099a
 keywords: ["amli bc Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -24,10 +24,8 @@ The **!amli bc** extension permanently clears an AML breakpoint.
 
 Syntax
 
-```
-!amli bc Breakpoint 
-!amli bc *
-```
+    !amli bc Breakpoint 
+    !amli bc *
 
 ## <span id="ddk__amli_bc_dbg"></span><span id="DDK__AMLI_BC_DBG"></span>Parameters
 
