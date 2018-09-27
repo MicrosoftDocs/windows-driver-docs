@@ -38,27 +38,27 @@ The following diagram explains the API call pattern to create a new report templ
 
 ![Image showing the workflow between—top to bottom—Creating a custom report template, scheduling a custom report template, getting report data, and cab download.](./images/async-api-flow.png)
 
-1. The Client Application defines the report schema in JSON format and call the [Create Report Template API](#create-a-new-report-template).
+1. The Client Application defines the report schema in JSON format and call the [Create Report Template API](create-a-new-report-template.md).
 
 2. On success, the Create New Report Template API returns the TemplateId.
 
-3. The client application calls the [Schedule Custom Report API](#schedule-a-new-report) using the TemplateId along with the report start date, Repeat Interval and Recurrence.
+3. The client application calls the [Schedule Custom Report API](schedule-a-new-report.md) using the TemplateId along with the report start date, Repeat Interval and Recurrence.
 
 4. The client application could also send a callback URL to be notified once data for the scheduled report is ready.
 
 5. On Success, the Schedule Custom Report API returns the ReportID.
 
-6. The callback URL gets a notification once the data is ready for download on a regular basis. 
+6. The callback URL gets a notification once the data is ready for download on a regular basis.
 
-7. The client application then uses the [Get Report Data API](#get-report-data) using the ReportID to query the status of the report with the Report ID and date range.
+7. The client application then uses the [Get Report Data API](get-report-data.md) using the ReportID to query the status of the report with the Report ID and date range.
 
 8. On success, the report download link is returned and the application can initiate download of the data.
 
 9. The report data contains the CabIdHash that can be used as input to the Cab Download API, to download the cab files.
 
-10. The [Cab Download API](#download-failure-cabs) returns the cab download link that can be used to download the cab files.
+10. The [Cab Download API](download-failure-cabs.md) returns the cab download link that can be used to download the cab files.
 
-## See Also
+## See also
 
 - [Create a new report template](create-a-new-report-template.md)
 
@@ -66,6 +66,4 @@ The following diagram explains the API call pattern to create a new report templ
 
 - [Analytics Reporting APIs (Swagger )](https://apidocs.microsoft.com/services/analyticsreportingapis)
 
-## See also
-
-[Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
+- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
