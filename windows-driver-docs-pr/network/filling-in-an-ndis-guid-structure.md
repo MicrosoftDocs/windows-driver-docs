@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 
 An NDIS\_GUID structure is defined as follows:
 
-```
+```C++
 typedef struct _NDIS_GUID {
   GUID  Guid;
   union {

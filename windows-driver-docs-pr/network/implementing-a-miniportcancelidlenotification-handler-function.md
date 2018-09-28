@@ -27,7 +27,7 @@ For example, when [*MiniportCancelIdleNotification*](https://msdn.microsoft.com/
 
 The following is an example of a [*MiniportCancelIdleNotification*](https://msdn.microsoft.com/library/windows/hardware/hh464088) handler function for a USB miniport driver. This example shows the steps that are involved with canceling a USB idle request IRP.
 
-```
+```C++
 //
 // MiniportCancelIdleNotification()
 //

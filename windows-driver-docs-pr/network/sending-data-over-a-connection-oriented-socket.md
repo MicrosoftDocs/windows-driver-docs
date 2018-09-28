@@ -20,7 +20,7 @@ After a Winsock Kernel (WSK) application has connected a connection-oriented soc
 
 The following code example shows how a WSK application can send data over a connection-oriented socket.
 
-```
+```C++
 // Prototype for the send IoCompletion routine
 NTSTATUS
   SendComplete(

@@ -31,7 +31,7 @@ A socket can be bound to a local wildcard address. For more information about th
 
 The following code example shows how a WSK application can bind a listening socket to a local transport address.
 
-```
+```C++
 // Prototype for the bind IoCompletion routine
 NTSTATUS
   BindComplete(

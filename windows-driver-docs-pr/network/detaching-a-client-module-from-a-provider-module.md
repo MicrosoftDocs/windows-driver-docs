@@ -34,7 +34,7 @@ If a client module implements a [*ClientCleanupBindingContext*](https://msdn.mic
 
 For example:
 
-```
+```C++
 // ClientDetachProvider callback function
 NTSTATUS
   ClientDetachProvider(

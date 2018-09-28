@@ -65,12 +65,6 @@ To automatically enable certain event callback functions on every socket it crea
 </tbody>
 </table>
 
- 
-
-```
-
-```
-
 A WSK application can specify a combination of event flags for different socket types in the **EventMask** member of the [**WSK\_EVENT\_CALLBACK\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff571166) structure. When the WSK application creates a new socket, the WSK subsystem will automatically enable the appropriate event callback functions for the specific [category](https://msdn.microsoft.com/library/windows/hardware/ff571093) of WSK socket that is being created.
 
 For more information about the event flags for the standard WSK event callback functions, see [**SO\_WSK\_EVENT\_CALLBACK**](so-wsk-event-callback.md).

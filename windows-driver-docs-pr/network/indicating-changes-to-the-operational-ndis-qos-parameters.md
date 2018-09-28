@@ -156,14 +156,3 @@ If this flag is set, one or more QoS traffic classification parameters have chan
 -   **FirstClassificationElementOffset**
 
 **Note**  The **NDIS\_QOS\_PARAMETERS\_*Xxx*\_CONFIGURED** flags must be set if the [**NDIS\_QOS\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451640) structure contains NDIS QoS parameter settings. The miniport driver must set these flags regardless of whether the settings have changed. However, the driver must set the **NDIS\_QOS\_PARAMETERS\_*Xxx*\_CHANGED** flags only for those settings that have changed.
-
- 
-
- 
-
- 
-
-
-
-
-

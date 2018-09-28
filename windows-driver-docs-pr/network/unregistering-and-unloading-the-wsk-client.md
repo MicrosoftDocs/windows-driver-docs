@@ -30,7 +30,7 @@ If a WSK application implements a [*ClientCleanupBindingContext*](https://msdn.m
 
 For example:
 
-```
+```C++
 // ClientDetachProvider callback function
 NTSTATUS
   ClientDetachProvider(
@@ -97,7 +97,7 @@ A WSK application's [**Unload**](https://msdn.microsoft.com/library/windows/hard
 
 For example:
 
-```
+```C++
 // Variable containing the handle for registration with the NMR
 HANDLE RegistrationHandle;
 

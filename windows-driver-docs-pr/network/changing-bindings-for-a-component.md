@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The network configuration subsystem always informs a notify object about changes in binding that affect the notify object's network component. The subsystem calls the notify object's [**INetCfgComponentNotifyBinding::NotifyBindingPath**](https://msdn.microsoft.com/library/windows/hardware/ff547731) method and passes a value that specifies the change along with a pointer to the **INetCfgBindingPath** interface of the binding path involved in the change. If the subsystem passes NCN\_DISABLE to disable the binding path that the notify object's network component shares with a specific network card, the notify object can activate the binding with another network card as shown in the following code.
 
-```
+```C++
 HRESULT CSample::NotifyBindingPath(DWORD dwChangeFlag,
         INetCfgBindingPath* pncbp1)
 {

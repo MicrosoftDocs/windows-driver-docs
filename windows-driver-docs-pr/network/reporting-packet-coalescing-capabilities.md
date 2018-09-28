@@ -154,12 +154,3 @@ When NDIS calls the miniport driver's [*MiniportInitializeEx*](https://msdn.micr
 The method that is used by miniport drivers to report the packet coalescing and filtering capabilities of the underlying network adapter is based on the NDIS 6.20 method for reporting power management capabilities. For more information about this method, see [Reporting Power Management Capabilities](reporting-power-management-capabilities.md).
 
 For more information about the adapter initialization process, see [Initializing a Miniport Adapter](initializing-a-miniport-adapter.md).
-
- 
-
- 
-
-
-
-
-

@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 After a callout driver has performed the desired management tasks, it should close the session to the filter engine. A callout driver does this by calling the [**FwpmEngineClose0**](https://msdn.microsoft.com/library/windows/hardware/ff550072) function. For example:
 
-```
+```C++
 status =
  FwpmEngineClose0(
  engineHandle  // An handle to the open session

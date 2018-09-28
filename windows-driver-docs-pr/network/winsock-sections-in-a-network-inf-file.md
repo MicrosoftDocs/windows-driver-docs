@@ -188,7 +188,7 @@ For more information about namespace providers, see the Windows SDK documentatio
 
 The following example shows Winsock sections for an IPX protocol:
 
-```
+```INF
 [Ipx.Winsock]
 AddSock = Install.IpxWinsock
  
@@ -210,7 +210,7 @@ The *Winsock-remove* section contains a **DelSock** directive that specifies an 
 
 The following example shows two sections that remove the Winsock dependency for an IPX protocol:
 
-```
+```INF
 [Ipx.Remove.Winsock]
 DelSock = Remove.IpxWinsock
  

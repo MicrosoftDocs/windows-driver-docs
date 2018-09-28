@@ -28,7 +28,7 @@ How a callout driver specifies an unload function depends on whether the callout
 
 If a callout driver is based on WDM, it specifies an [**Unload**](https://msdn.microsoft.com/library/windows/hardware/ff564886) function in its [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) function. For example:
 
-```
+```C++
 VOID
  Unload(
     IN PDRIVER_OBJECT DriverObject
@@ -53,7 +53,7 @@ NTSTATUS
 
 If a callout driver is based on WDF, it specifies an [*EvtDriverUnload*](https://msdn.microsoft.com/library/windows/hardware/ff541694) function in its [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) function. For example:
 
-```
+```C++
 VOID
  Unload(
     IN WDFDRIVER Driver

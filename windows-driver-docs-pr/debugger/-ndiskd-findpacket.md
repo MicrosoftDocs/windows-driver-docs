@@ -26,7 +26,7 @@ ms.localizationpriority: medium
 
 The **!ndiskd.findpacket** extension finds the specified packets.
 
-```
+```console
 !ndiskd.findpacket [-VirtualAddress] [-PoolAddress]  
 ```
 
