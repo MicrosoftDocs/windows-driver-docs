@@ -36,7 +36,7 @@ Warning 9   warning : API QueryPerformanceCounter in kernel32.dll is not support
 Error   10  error MSB3721: The command ""C:\Program Files (x86)\Windows Kits\10\bin\x64\ApiValidator.exe" -DriverPackagePath:"C:\Program Files (x86)\Windows Kits\10\src\usb\umdf2_fx2\Debug\\" -SupportedApiXmlFiles:"C:\Program Files (x86)\Windows Kits\10\build\universalDDIs\x86\UniversalDDIs.xml" -ApiExtractorExePath:"C:\Program Files (x86)\Windows Kits\10\bin\x64"" exited with code -1.    C:\Program Files (x86)\Windows Kits\10\build\WindowsDriver.common.targets   1531    5   osrusbfx2um
 ```
 
-**Fixing validation errors**
+## Fixing validation errors
 
 1.  If you switched a legacy desktop UMDF driver project to universal, verify that you are including the correct libraries when building your binaries. Right click the project and choose properties. Navigate to **Linker-&gt;Input**. The **Additional Dependencies** should contain:
 
@@ -49,6 +49,14 @@ Error   10  error MSB3721: The command ""C:\Program Files (x86)\Windows Kits\10\
 2.  Remove or replace the non-universal API calls one at a time and rerun the tool until there are no errors.
 
 3.  In some cases, you can replace these calls with alternate DDIs that are listed on the reference pages for the desktop-only DDI. If you cannot find a suitable replacement, please [submit feedback](http://go.microsoft.com/fwlink/p/?linkid=529549).  You may have to code a workaround if there is not a suitable replacement.  If you need to, write a new Universal Windows driver starting from the driver templates in the WDK.
+
+If you see errors like the following, please refer to the guidance in [Building for OneCore](building-for-onecore.md).
+
+```
+ApiValidation: Error: FlexLinkTest.exe has a dependency on 'wtsapi32.dll!WTSEnumerateSessionsW' but is missing: IsApiSetImplemented("ext-ms-win-session-wtsapi32-l1-1-0")
+ApiValidation: Error: FlexLinkTest.exe has a dependency on 'wtsapi32.dll!WTSFreeMemory' but is missing: IsApiSetImplemented("ext-ms-win-session-wtsapi32-l1-1-0")
+ApiValidation: NOT all binaries are Universal
+```
 
 ## Running ApiValidator from the Command Prompt
 

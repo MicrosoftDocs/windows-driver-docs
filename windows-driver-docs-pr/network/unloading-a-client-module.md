@@ -23,7 +23,7 @@ A client module's [**Unload**](https://msdn.microsoft.com/library/windows/hardwa
 
 For example:
 
-```
+```C++
 // Variable containing the handle for the registration
 HANDLE ClientHandle;
 

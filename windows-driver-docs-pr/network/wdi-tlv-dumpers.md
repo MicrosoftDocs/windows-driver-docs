@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 The parser generator library has routines to decode TLV byte arrays into trace statements.
 
-```
+```C++
     typedef _Function_class_( TlvDumperCallback ) void( __stdcall *TlvDumperCallback )(_In_ UINT_PTR Context, _In_z_ _Printf_format_string_ PCSTR Format, ...);
 
     void __stdcall TraceUnknownTlvByteStream(

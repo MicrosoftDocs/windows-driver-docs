@@ -24,7 +24,7 @@ An INF file sets a static parameter only once. This parameter cannot be reconfig
 
 An *add-registry-section* adds a static parameter as a REG\_SZ value to a component's instance key as shown in the following example:
 
-```
+```INF
 [a1.staticparams.reg]
 HKR,, MediaType, 0, "1"
 HKR,, InternalId, 0, "232"

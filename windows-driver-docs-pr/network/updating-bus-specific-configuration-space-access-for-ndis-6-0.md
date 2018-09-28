@@ -29,7 +29,7 @@ The following code samples show how both NDIS 5.*x* miniport drivers and NDIS 6.
 
 Reading
 
-```
+```C++
             ulResult = NdisReadPciSlotInformation(
                            Adapter->AdapterHandle,
                            0,
@@ -40,7 +40,7 @@ Reading
 
 Writing
 
-```
+```C++
             ulResult = NdisWritePciSlotInformation(
                            Adapter->AdapterHandle,
                            0,
@@ -53,7 +53,7 @@ Writing
 
 Reading
 
-```
+```C++
             ulResult = NdisMGetBusData(
                            Adapter->AdapterHandle,
                            PCI_WHICHSPACE_CONFIG,
@@ -64,7 +64,7 @@ Reading
 
 Writing
 
-```
+```C++
             ulResult = NdisMSetBusData(
                            Adapter->AdapterHandle,
                            PCI_WHICHSPACE_CONFIG,

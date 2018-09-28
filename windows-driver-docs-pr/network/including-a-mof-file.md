@@ -29,7 +29,7 @@ The MOF source file must be of type MOFDATA and must have an extension of .mof. 
 
 You must insert the following line in the miniport driver's resource file (\*.rc) to include the MOF binary:
 
-```
+```Text
 NdisMofResource MOFDATA filename.bmf
 ```
 

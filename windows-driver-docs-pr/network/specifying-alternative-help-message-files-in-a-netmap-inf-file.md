@@ -48,7 +48,7 @@ If a full path name is not specified in *text-name* or *htm-file*, the specified
 
 The following example of a netmap.inf file contains an **OemUpgradeHelpFiles** section.
 
-```
+```INF
 [Version]
 signature="$WindowsNT$
 

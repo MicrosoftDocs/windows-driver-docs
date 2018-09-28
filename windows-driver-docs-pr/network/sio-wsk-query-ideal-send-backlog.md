@@ -71,12 +71,6 @@ To query the ideal send backlog size for a connection-oriented socket, a WSK app
 </tbody>
 </table>
 
- 
-
-```
-
-```
-
 A WSK application must specify a pointer to an IRP when calling the **WskControlSocket** function to query the ideal send backlog size for a connection-oriented socket.
 
 A connection-oriented socket can be notified of changes to the ideal send backlog size by enabling its [*WskSendBacklogEvent*](https://msdn.microsoft.com/library/windows/hardware/ff571147) event callback function.
