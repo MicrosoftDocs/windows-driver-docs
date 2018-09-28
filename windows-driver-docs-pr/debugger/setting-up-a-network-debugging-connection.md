@@ -272,7 +272,7 @@ To use IPv6 with the debugger complete these steps.
     bcdedit -deletevalue {dbgsettings} hostip
     ```
 
-3. Set the IPv6 address of the host. There must not be any spaces in the hostipv6=s:t:u:v:w:x:y:z string. <YourPort> is the port you selected above between 50000-50039, and <YourKey> is the four part key security key.
+3. Set the IPv6 address of the host. There must not be any spaces in the ```hostipv6=s:t:u:v:w:x:y:z``` string. <YourPort> is the port you selected above between 50000-50039, and <YourKey> is the four part key security key.
 
     ```console
     bcdedit /dbgsettings net hostipv6:s:t:u:v:w:x:y:z port:<YourPort> key:<YourKey>
