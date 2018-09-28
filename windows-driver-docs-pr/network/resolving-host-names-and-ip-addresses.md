@@ -43,7 +43,7 @@ In order for your driver to use kernel name resolution functionality, it must pe
 
 The following code example uses the above calling sequence to show how a WSK application can call the **WskGetAddressInfo** function to translate a host name to a transport address.
 
-```
+```C++
 NTSTATUS
 SyncIrpCompletionRoutine(
     __in PDEVICE_OBJECT Reserved,

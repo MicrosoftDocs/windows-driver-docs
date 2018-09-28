@@ -30,7 +30,7 @@ Calling the **WskCloseSocket** function causes the WSK subsystem to cancel and c
 
 The following code example shows how a WSK application can close a socket.
 
-```
+```C++
 // Prototype for the socket close IoCompletion routine
 NTSTATUS
   CloseSocketComplete(

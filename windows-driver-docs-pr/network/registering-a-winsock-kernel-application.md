@@ -27,7 +27,7 @@ A Winsock Kernel (WSK) application must register as a WSK client by calling the 
 
 The following code example shows how a WSK application can register as a WSK client.
 
-```
+```C++
 // Include the WSK header file
 #include "wsk.h"
 
@@ -101,7 +101,7 @@ When **WskCaptureProviderNPI** returns successfully, its *WskProviderNpi* parame
 
 The following code example shows how a WSK application can capture the WSK provider NPI, use it to create a socket, and then release it.
 
-```
+```C++
 // WSK application routine that waits for WSK subsystem
 // to become ready and captures the WSK Provider NPI
 NTSTATUS

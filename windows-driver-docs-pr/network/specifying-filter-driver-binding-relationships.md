@@ -24,14 +24,14 @@ In a network driver INF file, the **UpperRange** entry lists the possible upper 
 
 For filter drivers, you must set the value of the **UpperRange** and **LowerRange** entries to **noupper** and **nolower**, respectively. The following example illustrates these INF file entries for a filter driver.
 
-```
+```INF
 HKR, Ndi\Interfaces,UpperRange,,"noupper"
 HKR, Ndi\Interfaces,LowerRange,,"nolower"
 ```
 
 In a filter driver, the **FilterMediaTypes** entry in the filter INF file defines the driver's bindings to other drivers. **FilterMediaTypes** specifies the media types that the filter driver services. For a list of possible media types, see the list of Microsoft-supplied **LowerRange** values in [Specifying Binding Interfaces](specifying-binding-interfaces.md). The following example illustrates a **FilterMediaTypes** entry for a filter driver.
 
-```
+```INF
 HKR, Ndi\Interfaces, FilterMediaTypes,,"ethernet"
 ```
 

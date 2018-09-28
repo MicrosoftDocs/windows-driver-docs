@@ -4,7 +4,7 @@ description: The amli bl extension displays a list of all AML breakpoints.
 ms.assetid: 4ce52006-d44e-40ab-b669-2aa9509b6b21
 keywords: ["amli bl Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -24,9 +24,8 @@ The **!amli bl** extension displays a list of all AML breakpoints.
 
 Syntax
 
-```
-!amli bl
-```
+   !amli bl
+
 
 ## <span id="ddk__amli_bl_dbg"></span><span id="DDK__AMLI_BL_DBG"></span>
 
@@ -46,7 +45,7 @@ The AMLI Debugger supports a maximum of ten breakpoints.
 
 Here is an example of the **!amli bl** extension:
 
-```
+```console
 kd> !amli bl
  0: <e> ffffffff80e5e2f1:[\_SB.LNKD._SRS]
  1: <e> ffffffff80e5d969:[\_SB.LNKB._STA]

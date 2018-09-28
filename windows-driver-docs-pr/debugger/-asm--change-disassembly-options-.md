@@ -4,7 +4,7 @@ description: The .asm command controls how disassembly code will be displayed.
 ms.assetid: c963c4f2-3bfc-4551-9b7b-74473a63eb11
 keywords: ["Change Disassembly Options (.asm) command", "assembly debugging, Change Disassembly Options (.asm) command", ".asm (Change Disassembly Options) Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -22,10 +22,8 @@ ms.localizationpriority: medium
 
 The **.asm** command controls how disassembly code will be displayed.
 
-```
-.asm 
-.asm[-] Options
-```
+    .asm 
+    .asm[-] Options
 
 ## <span id="ddk_meta_change_disassembly_options_dbg"></span><span id="DDK_META_CHANGE_DISASSEMBLY_OPTIONS_DBG"></span>Parameters
 

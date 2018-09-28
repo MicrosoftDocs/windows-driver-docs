@@ -2374,17 +2374,6 @@
   - name: "Tools for INF Files"
     href: tools-for-inf-files.md
     items: 
-    - name: "ChkINF"
-      href: chkinf.md
-      items: 
-      - name: "ChkINF Components"
-        href: chkinf-components.md
-      - name: "Requirements and Limitations"
-        href: requirements-and-limitations.md
-      - name: "ChkINF Command Syntax"
-        href: chkinf-command-syntax.md
-      - name: "ChkINF Results"
-        href: chkinf-results.md
     - name: "Stampinf"
       href: stampinf.md
       items: 

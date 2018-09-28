@@ -21,7 +21,7 @@ After a Winsock Kernel (WSK) application has bound a datagram socket to a local 
 
 The following code example shows how a WSK application can send a datagram over a datagram socket.
 
-```
+```C++
 // Prototype for the send datagram IoCompletion routine
 NTSTATUS
   SendDatagramComplete(

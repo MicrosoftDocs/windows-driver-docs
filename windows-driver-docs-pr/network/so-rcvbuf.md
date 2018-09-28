@@ -67,12 +67,6 @@ To set the value of this socket option, a WSK application calls the [**WskContro
 </tbody>
 </table>
 
- 
-
-```
-
-```
-
 To retrieve the value of the SO\_RCVBUF socket option, a WSK application calls the **WskControlSocket** function with the following parameters.
 
 <table>
@@ -122,11 +116,6 @@ To retrieve the value of the SO\_RCVBUF socket option, a WSK application calls t
 </tbody>
 </table>
 
- 
-
-```
-
-```
 
 A WSK application must specify a pointer to an IRP when calling the **WskControlSocket** function to set or retrieve the value of the SO\_RCVBUF socket option.
 

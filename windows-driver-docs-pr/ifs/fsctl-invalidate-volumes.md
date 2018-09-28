@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_INVALIDATE\_VOLUMES control code
+title: FSCTL_INVALIDATE_VOLUMES control code
 description: The FSCTL\_INVALIDATE\_VOLUMES control code finds and removes all the volumes mounted on the device represented by the specified file object or handle.
 ms.assetid: 26B7EBA2-F3A9-4E5A-961C-C1857AA4FF33
 keywords: ["FSCTL_INVALIDATE_VOLUMES control code Installable File System Drivers"]

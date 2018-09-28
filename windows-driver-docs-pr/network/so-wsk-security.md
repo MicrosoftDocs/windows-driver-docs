@@ -71,12 +71,6 @@ To apply a security descriptor to a socket, a WSK application calls the [**WskCo
 </tbody>
 </table>
 
- 
-
-```
-
-```
-
 A WSK application must specify a pointer to an IRP when calling the **WskControlSocket** function to apply a security descriptor to a socket.
 
 If a WSK application uses this socket option to apply a security descriptor to a socket, the new security descriptor replaces any security descriptor that was previously applied to the socket.
@@ -135,12 +129,6 @@ To retrieve a cached copy of a socket's security descriptor from a socket, a WSK
 </tr>
 </tbody>
 </table>
-
- 
-
-```
-
-```
 
 A WSK application must specify a pointer to an IRP when calling the **WskControlSocket** function to retrieve a cached copy of a socket's security descriptor from a socket.
 

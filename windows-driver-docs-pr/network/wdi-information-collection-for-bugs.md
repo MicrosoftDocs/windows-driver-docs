@@ -69,7 +69,7 @@ If there is no crash but Wi-Fi does not function as expected, collect and analyz
 
 Sometimes, the Wi-Fi NIC does not go to low power (device\_power\_state\_Dx). Other times, the device wakes up frequently. A SleepStudy report is helpful in first level triage. SleepStudy events are always on, but only collected if CS sessions are longer than 10 minutes. The events are also persistent (for example, you can inspect the study postmortem). To generate a SleepStudy, run the following command line in an Administrator command prompt.
 
-```
+```CMD
 Powercfg /SleepStudy
 ```
 

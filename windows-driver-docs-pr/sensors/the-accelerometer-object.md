@@ -137,7 +137,7 @@ The sample driver limits the minimum report interval to 10 milliseconds and the 
 
 A sensor driver uses the report interval to determine when to raise event notifications. If the change-sensitivity has not been exceeded, the driver waits for the current interval and then raises a data event to give connected apps the current data reading. (If the change sensitivity has been exceeded, this overrides the report interval and the driver will immediately raise a data event.)
 
-A Windows store app can set the interval for an accelerometer by invoking the **Accelerometer.ReportInterval** property. When an app invokes this property, the driver's **CAccelerometerDevice::SetReportInterval** method is called to pass the requested interval to the device's firmware.
+A Windows app can set the interval for an accelerometer by invoking the **Accelerometer.ReportInterval** property. When an app invokes this property, the driver's **CAccelerometerDevice::SetReportInterval** method is called to pass the requested interval to the device's firmware.
 
 Setting the report interval translates into three consecutive write operations to the ADXL registers. The first write operation disables interrupts while we modify the data rate on the device:
 
@@ -178,7 +178,7 @@ Three methods in the source file correspond to each of the three modes: **SetDev
 
 ## Measurement mode without eventing
 
-When measurement mode without eventing is set, Windows store apps get the most recent sensor reading by invoking **Accelerometer.GetCurrentReading**.
+When measurement mode without eventing is set, Windows apps get the most recent sensor reading by invoking **Accelerometer.GetCurrentReading**.
 
 The driver sets this mode during initialization and, when returning from standby mode. It uses two write operations. The first operation disables interrupts:
 
@@ -196,7 +196,7 @@ hr = WriteRegister(ADXL345_POWER_CTL, pBuffer, 1);
 
 ## Measurement mode with eventing
 
-When measurement mode with eventing is set, Windows store apps can receive data updates from the driver by registering an event handler for the **Accelerometer.ReadingChanged** event.
+When measurement mode with eventing is set, Windows apps can receive data updates from the driver by registering an event handler for the **Accelerometer.ReadingChanged** event.
 
 The driver sets this mode during initialization (and, when it’s returning from standby mode). The driver sets this mode with two write operations. The first operation ensures that the device is placed in measurement mode:
 

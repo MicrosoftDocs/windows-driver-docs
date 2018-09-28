@@ -27,7 +27,7 @@ A WSK application connects a socket to a remote transport address by calling the
 
 The following code example shows how a WSK application can connect a connection-oriented socket to a remote transport address.
 
-```
+```C++
 // Prototype for the connect IoCompletion routine
 NTSTATUS
   ConnectComplete(

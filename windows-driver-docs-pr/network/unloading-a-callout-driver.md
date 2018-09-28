@@ -27,7 +27,7 @@ A callout driver must also destroy any packet injection handle that it previousl
 
 For example:
 
-```
+```C++
 // Device object
 PDEVICE_OBJECT deviceObject;
 
@@ -96,7 +96,7 @@ VOID
 
 The previous example assumes a WDM-based callout driver. For a WDF-based callout driver, the only difference is the parameter that is passed to the callout driver's unload function and how the callout driver deletes the framework device object.
 
-```
+```C++
 WDFDEVICE wdfDevice;
 
 VOID

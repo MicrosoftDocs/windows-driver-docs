@@ -22,7 +22,7 @@ When a data flow that is being processed by a callout is stopped, the filter eng
 
 For example:
 
-```
+```C++
 // Context structure to be associated with data flows
 typedef struct FLOW_CONTEXT_ {
   ...

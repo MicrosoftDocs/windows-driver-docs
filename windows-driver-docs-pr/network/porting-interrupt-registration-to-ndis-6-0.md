@@ -38,7 +38,7 @@ An NDIS 6.0 miniport driver supplies the following interrupt-related functions.
 
 The following code example shows how a miniport driver can initialize this structure.
 
-```
+```C++
         NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS Interrupt;
         RtlZeroMemory(&Interrupt, sizeof(Interrupt));
 

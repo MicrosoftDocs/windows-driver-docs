@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Adding or Removing Users
 
 
-The Hardware Dashboard uses Azure Active Directory for user management. This means that you will need to use your Global Admin credentials to add or remove users. If you have lost or are unsure of your Global Admin credentials, please contact support.
+The Hardware Dashboard uses Azure Active Directory for user management. This means that you will need to use your developer portal Global Admin account credentials to add or remove users. If you have lost or are unsure of your Global Admin credentials, please contact support. Note that the developer portal Global Admin account credentials are not the same as the Azure AD Global Admin account credentials.
 
 The Global Admin is the account that was used to register for the Hardware program. If your account was migrated from Sysdev, your Global Admin was notified via e-mail. If you have lost or are unsure of your Global Admin credentials, please contact support.
 

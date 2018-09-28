@@ -44,7 +44,7 @@ The object supports a **ConnectInterrupt** method that creates a WUDF device int
 
 ### Supporting the report interval
 
-The sensor platform supports the notion of a report interval and allows applications to set this interval to values within a defined range. A Windows store app can set the interval for an Accelerometer by invoking the **Accelerometer.ReportInterval** property. When an app invokes this property, the driver's **SetReportInterval** method is called to pass the requested interval to the device's firmware.
+The sensor platform supports the notion of a report interval and allows applications to set this interval to values within a defined range. A Windows app can set the interval for an Accelerometer by invoking the **Accelerometer.ReportInterval** property. When an app invokes this property, the driver's **SetReportInterval** method is called to pass the requested interval to the device's firmware.
 
 The primary component responsible for the report interval is the client manager. The supporting code is found in the module ClientManager.cpp. The client manager maintains a list of connected clients, their subscription state, desired report interval, and desired change sensitivities. Whenever any of these change, the client manager computes the data update mode and lowest report interval and change sensitivity values. For more information about the report interval and change sensitivity, see the [Filtering data](filtering-data.md) topic.
 

@@ -29,7 +29,7 @@ If a WSK application attempts to register a socket for an extension interface th
 
 For example, suppose that an extension interface is defined as in the following code example.
 
-```
+```C++
 const NPIID EXAMPLE_EXTIF_NPIID = {...};
 
 typedef struct _EXAMPLE_EXTIF_PROVIDER_DISPATCH {
@@ -47,13 +47,9 @@ typedef struct _EXAMPLE_EXTIF_CLIENT_DISPATCH {
 } EXAMPLE_EXTIF_CLIENT_DISPATCH, *PEXAMPLE_EXTIF_CLIENT_DISPATCH;
 ```
 
-```
-
-```
-
 The following shows how a WSK application can register for this extension interface for a connection-oriented socket.
 
-```
+```C++
 // Client dispatch structure for the extension interface
 const EXAMPLE_EXTIF_CLIENT_DISPATCH ExtIfClientDispatch = {
   .

@@ -23,7 +23,7 @@ A provider module's [**Unload**](https://msdn.microsoft.com/library/windows/hard
 
 For example:
 
-```
+```C++
 // Variable containing the handle for the registration
 HANDLE ProviderHandle;
 
