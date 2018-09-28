@@ -327,11 +327,9 @@
   - name: Mobile Plans
     items:
     - name: "Promotional content"
-      items:
-      - name: "Promotional gateways"
-        href: mobile-plans-promotional-gateways.md
-      - name: "Promotional toast notifications"
-        href: mobile-plans-promotional-toast-notifications.md
+      href: mobile-plans-promotional-content.md
+    - name: "Asynchronous fulfillment"
+      href: mobile-plans-asynchronous-fulfillment.md
   - name: "Creating and configuring Internet Sharing experiences"
     href: creating-and-configuring-internet-sharing-experiences.md
   - name: "Developing apps using multiple PDP contexts"
