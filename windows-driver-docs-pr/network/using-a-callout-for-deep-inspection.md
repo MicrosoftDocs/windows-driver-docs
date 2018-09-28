@@ -20,7 +20,7 @@ When a callout is performing deep inspection, its [classifyFn](https://msdn.micr
 
 For example:
 
-```
+```C++
 // classifyFn callout function
 VOID NTAPI
  ClassifyFn(

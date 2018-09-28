@@ -19,7 +19,7 @@ The Winsock Kernel (WSK) subsystem provides support for using [TDI](https://msdn
 
 The following code example shows how a WSK application can map combinations of address family, socket type, and protocol to device names of TDI transports.
 
-```
+```C++
 // Number of TDI mappings
 #define MAPCOUNT 2
 

@@ -40,7 +40,7 @@ Remarks
 
 A transport informs miniport drivers and other layered drivers of this header size; these drivers can then use this information when processing packets. For example, a driver could use the sublayer header size obtained from the transport to locate the beginning of higher layer information in packets, such as the start of the IP header; the driver could then parse and adjust the fields of the IP protocol header as appropriate. Transports use a TRANSPORT\_HEADER\_OFFSET structure, defined as follows, to indicate this header size.
 
-```
+```C++
 typedef struct _TRANSPORT_HEADER_OFFSET {
   USHORT  ProtocolType; 
   USHORT  HeaderOffset; 

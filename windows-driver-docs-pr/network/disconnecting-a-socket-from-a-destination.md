@@ -24,7 +24,7 @@ When a Winsock Kernel (WSK) application has finished sending and receiving data 
 
 The following code example shows how a WSK application can gracefully disconnect a connection-oriented socket from a remote transport address.
 
-```
+```C++
 // Prototype for the disconnect IoCompletion routine
 NTSTATUS
   DisconnectComplete(

@@ -60,7 +60,7 @@ Before the host stack sends an IP datagram on an offloaded connection, it checks
 
 Before an offload target sends an IP datagram on an offloaded connection, it performs the following test:
 
-```
+```syntax
 If ((NCT - NRT) > NCEStaleTicks & (NCT - HRT) > NCEStaleTicks) 
 ```
 

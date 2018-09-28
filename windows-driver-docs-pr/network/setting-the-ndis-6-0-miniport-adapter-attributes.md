@@ -36,7 +36,7 @@ All NDIS 6.0 and later miniport drivers are deserialized. Therefore, the NDIS\_A
 
 The following code sample shows initialization of a registration attributes structure:
 
-```
+```C++
 MiniportAttributes.Header.Type = NDIS_OBJECT_TYPE_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES;
 MiniportAttributes.Header.Revision = NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES_REVISION_1;
 MiniportAttributes.Header.Size = sizeof(MiniportAttributes);

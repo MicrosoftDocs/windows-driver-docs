@@ -97,7 +97,7 @@ Each enumerated value must have a subkey. Each **enum** subkey specifies a numer
 
 The following is an example of an *add-registry-section* that adds a configuration parameter named **TransType**.
 
-```
+```INF
 [a1.params.reg]
 HKR, Ndi\params\TransType,      ParamDesc, 0, "Transceiver Type"
 HKR, Ndi\params\TransType,      Type,      0, "enum"

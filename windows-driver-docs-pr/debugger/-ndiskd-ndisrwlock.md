@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ndiskd.ndisrwlock** extension displays information about an [**NDIS\_RW\_LOCK\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff567279) lock structure.
 
-```CMD
+```console
 !ndiskd.ndisrwlock [-handle <x>] 
 ```
 
@@ -41,7 +41,7 @@ Examples
 
 Use the **!ndiskd.ndisrwlock** extension if you create your own RW lock and would want to inspect it. To obtain the handle for an RW lock, use the *poi* command to dereference the address of your driver's lock. The following snippet shows how to look at a lock that the TCIPIP protocol was using at the time of the example.
 
-```CMD
+```console
 0: kd> !ndiskd.ndisrwlock poi(tcpip!gAleHashtableLock)
 
 
@@ -56,7 +56,7 @@ NDIS READ-WRITE LOCK
 
 To observe the driver using this RW lock, click on the "Set a breakpoint on acquire/release" link at the bottom of the RW lock's details. After setting the breakpoint, enter the **g** command to let the debugee machine run and hit the breakpoint.
 
-```CMD
+```console
 0: kd> ba r4 ffffe00bc3fc22f8
 0: kd> g
 Breakpoint 0 hit
@@ -66,7 +66,7 @@ fffff802`0d69eb53 4885c0          test    rax,rax
 
 Now you can re-run the same **!ndiskd.ndisrwlock** command to see that this RW lock has one Read-only access reference.
 
-```CMD
+```console
 0: kd> !ndiskd.ndisrwlock poi(tcpip!gAleHashtableLock)
 
 

@@ -29,7 +29,7 @@ All of these data structures must remain valid and resident in memory as long as
 
 The following code example shows how a WSK application can initialize all of the data structures listed previously.
 
-```
+```C++
 // Include the WSK header file
 #include "wsk.h"
 
@@ -82,7 +82,7 @@ A WSK application calls the [**NmrRegisterClient**](https://msdn.microsoft.com/l
 
 For example:
 
-```
+```C++
 // Variable to contain the handle for the registration with the NMR
 HANDLE RegistrationHandle;
 

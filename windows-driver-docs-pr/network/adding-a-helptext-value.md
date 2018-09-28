@@ -33,7 +33,7 @@ The **HelpText** value is a localizable string that explains how the component b
 
 The following is an example of an *add-registry-section* that adds a **HelpText** value to the **Ndi** key:
 
-```
+```INF
 [MS_Protocol.ndi_reg]
 HKR, Ndi, HelpText, 0, %MyTransport_Help%
 ```

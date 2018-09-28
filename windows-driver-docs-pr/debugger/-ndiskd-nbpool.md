@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ndiskd.nbpool** extension displays information about a [**NET\_BUFFER**](https://msdn.microsoft.com/windows/hardware/drivers/network/net-buffer-structure) (NB) pool. If you run this extension with no parameters, !ndiskd will display a list of all allocated NB pools in the system.
 
-```CMD
+```console
 !ndiskd.nbpool [-handle <x>] [-allocations] [-find <str>] [-findva <x>] [-findpa <x>] 
 ```
 
@@ -53,7 +53,7 @@ Examples
 
 Enter the **!ndiskd.nbpool** command with no parameters to see a list of all allocated NB pools. In this example, look for the NB pool allocated by the Netio service with the Nnbf Tag. Its handle is ffffdf801308ca40.
 
-```CMD
+```console
 2: kd> !ndiskd.nbpool
     NB Pool            Tag                 Allocated by                         
     ffffdf8013963a40   UDNb                NETIO!NetioAllocateNetBufferMdlAndDataPool+3c
@@ -65,7 +65,7 @@ Enter the **!ndiskd.nbpool** command with no parameters to see a list of all all
 
 Click on the NB pool's handle or enter the **!ndiskd.nbpool -handle** command to examine its details.
 
-```CMD
+```console
 2: kd> !ndiskd.nbpool ffffdf801308ca40
 
 
@@ -85,7 +85,7 @@ NB POOL
 
 To explore the NBs contained in this NB pool, click on the "All allocated NBs" link at the bottom. Alternatively, you can also enter the **!ndiskd.nbpool -handle -allocations** command. As shown in the following example, this NB pool contains more than 1024 NBs so !ndiskd quit early. You can use the -force option to work around this limit and see all of the NBs in this NB pool.
 
-```CMD
+```console
 2: kd> !ndiskd.nbpool ffffdf801308ca40 -allocations
 
 

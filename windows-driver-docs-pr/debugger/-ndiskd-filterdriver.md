@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ndiskd.filterdriver** extension displays information about an NDIS filter driver. If you run this extension with no parameters, !ndiskd will display a list of all filter drivers.
 
-```CMD
+```console
 !ndiskd.filterdriver [-handle <x>] [-filters] [-handlers] 
 ```
 
@@ -47,7 +47,7 @@ Examples
 
 Run **!ndiskd.filterdriver** with no parameters to see a list of all filter drivers on the system. In the following example, look for the Virtual WiFi Filter Driver, whose handle is ffffbc064cc83be0.
 
-```CMD
+```console
 0: kd> !ndiskd.filterdriver
     ffffbc064ccd4900 - QoS Packet Scheduler
     ffffbc064cc83be0 - Virtual WiFi Filter Driver
@@ -58,7 +58,7 @@ Run **!ndiskd.filterdriver** with no parameters to see a list of all filter driv
 
 By clicking the filter driver handle from the previous example or by using it to enter the **!ndiskd.filterdriver -handle** command in the command window, you can get see more detailed information about that filter driver. In this case, for example, there are no filter modules for this filter driver.
 
-```CMD
+```console
 0: kd> !ndiskd.filterdriver ffffbc064cc83be0
 
 

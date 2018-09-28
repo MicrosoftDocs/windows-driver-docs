@@ -63,12 +63,6 @@ To release a cached copy of a security descriptor, a WSK application calls the [
 </tbody>
 </table>
 
- 
-
-```
-
-```
-
 For more information about the SECURITY\_DESCRIPTOR structure, see the reference page for SECURITY\_DESCRIPTOR in the Microsoft Windows SDK documentation.
 
 The *Irp* parameter must be **NULL** for this client control operation.

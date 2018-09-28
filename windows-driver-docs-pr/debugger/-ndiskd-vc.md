@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ndiskd.vc** extension displays a Connection-Oriented (CoNDIS) virtual connection (VC).
 
-```CMD
+```console
 !ndiskd.vc [-handle <x>] 
 ```
 
@@ -48,7 +48,7 @@ Examples
 
 CoNDIS is used in certain situations such as connecting to a VPN, so running **!ndiskd.vc** will not show you results unless a miniport driver on your system has created and activated a CoNDIS virtual connection. The following example shows results from a machine that is connected to a VPN network. First, run the [**!ndiskd.netadapter**](-ndiskd-netadapter.md) extension with no parameters to see a list of miniports and miniport drivers on the system. In the following output, look for the miniport driver for the Marvell AVASTAR Wireless-AC Network Controller network adapter. Its handle is ffffc804af2e3710.
 
-```CMD
+```console
 1: kd> !ndiskd.netadapter
     Driver             NetAdapter          Name                                 
     ffffc804af2e3710   ffffc804b9e6f1a0    Marvell AVASTAR Wireless-AC Network Controller
@@ -69,7 +69,7 @@ CoNDIS is used in certain situations such as connecting to a VPN, so running **!
 
 Next, enter the **!ndiskd.vc** command with the miniport driver's handle to see the virtual connections opened by that miniport driver.
 
-```CMD
+```console
 1: kd> !ndiskd.vc ffffc804af2e3710
 
 
