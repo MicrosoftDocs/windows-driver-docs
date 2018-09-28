@@ -4,7 +4,7 @@ description: Debugging Tools for Windows supports kernel debugging over a networ
 ms.assetid: B4A79B2E-D4B1-42CA-9121-DEC923C76927
 keywords: ["Network debugging", "Ethernet debugging", "Docking station", "Setting Up Kernel-Mode Debugging over a Network Cable Manually"]
 ms.author: domars
-ms.date: 09/25/2018
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -257,6 +257,78 @@ Because KDNET will need exclusive access to the physical adapter, it will take o
 1. Open the Virtual Switch Manager from Hyper-V Manager, select your existing Virtual Switch, and change the external network NIC to the *Microsoft Kernel Debug Network Adapter* by selecting it from the drop down box and then clicking OK in the Virtual Switch Manager dialog box.
 
 2. After updating your Virtual Switch NIC, shutdown and restart your VMs.
+
+## <span id="IPV6"></span><span id="ipv6"></span><span id="IPv6"></span>IPv6
+
+IPv6 support was added in Windows version 1809.
+
+To use IPv6 with the debugger complete these steps.
+
+1. Ping your \<debughostname\> and note the IPv6 address that is reported on the Reply from output lines.Use this IPv6 address in place of x:y:z:p:d:q:r:n below
+
+2. Use BCDEdit to delete any existing ip address values in dbgsettings.
+
+    ```console
+    bcdedit -deletevalue {dbgsettings} hostip
+    ```
+
+3. Set the IPv6 address of the host. There must not be any spaces in the hostipv6=s:t:u:v:w:x:y:z string. <YourPort> is the port you selected above between 50000-50039, and <YourKey> is the four part key security key.
+
+    ```console
+    bcdedit /dbgsettings net hostipv6:s:t:u:v:w:x:y:z port:<YourPort> key:<YourKey>
+    ```
+
+4. Type this command to confirm that the dbgsettings are set properly.
+
+    ```console
+    C:\> bcdedit /dbgsettings
+    busparams               0.25.0
+    key                     2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
+    debugtype               NET
+    hostipv6                  2001:db8:0:0:ff00:0:42:8329
+    port                    50010
+    dhcp                    Yes
+    The operation completed successfully.
+    ```
+
+5. On the host machine use this command to start the debugger. 
+
+    ```console
+    Windbg -k net:port=<yournetworkportnumber>,key=<key_output_from_kdnet>,target=::<YourIPv6Address> 
+    ```
+
+6. Reboot your target machine. 
+
+7. The debugger should connect to the host debugger early during boot. You will know that KDNET is using an IPv6 connection because the IP addresses reported in the connected message will be IPv6 addresses instead of IPv4 addresses. 
+
+**NOTES**
+
+- Every debugger bcd setting that allows the hostip to be specified has a corresponding hostipv6 element.  There are three.  
+
+    IPv4 | IPv6 | Usage
+    |-----------|-----------|-----------|
+    hostip | hostipv6 | For boot and kernel debugging
+    targethostip | targethostipv6  | Specific to kernel debugging  
+    hypervisorhostip | hypervisorhostipv6  | For hyper-v debugging
+
+- If you set the hostipv6 style address for any of those kinds of debugging, it means you want and will get IPv6.
+
+- If you set the hostip style address for any of those kinds of debugging, it means you want and will get IPv4.
+
+- The target will only do IPv4 or IPv6, not both at the same time. What is under control of the target machine.
+
+- If the target= option on the debugger command line contains any : characters, the debugger will assume it is an IPv6 address, and will force use of IPv6 for that connection.
+
+- The debugger auto selects IPv4 or IPv6. The debugger determines if IPv4 or IPv6 is being used by the target machine, and connects automatically.
+
+- If you want to force IPv6 debugging in the debugger on the host, but you want the debugger to listen for a connection from the target, then you specify, target=:: \<ipv6 address of 0\>.
+
+- If you want to force IPv4 debugging in the debugger on the host, but you want the debugger to listen for a connection from the target, then you specify, target=0.0.0.0 (IPv4 address of 0)
+
+- If you specify, target= and use a machine name, the debugger will convert that machine name into an IPv4 address and an IPv6 address, and will attempt to connect on both.
+
+
+
 
 ## Related topics
 
