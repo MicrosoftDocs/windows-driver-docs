@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_DIRECTORY\_CONTROL
+title: IRP_MJ_DIRECTORY_CONTROL
 description: IRP\_MJ\_DIRECTORY\_CONTROL
 ms.assetid: cb1bed36-bcb5-419b-87ca-6d9107ece6d1
 keywords: ["IRP_MJ_DIRECTORY_CONTROL Installable File System Drivers"]

@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_IS\_VOLUME\_DIRTY control code
+title: FSCTL_IS_VOLUME_DIRTY control code
 description: The FSCTL\_IS\_VOLUME\_DIRTY control code determines whether the specified volume is dirty.
 ms.assetid: 77263957-cf7f-4db1-81b7-c58438202518
 keywords: ["FSCTL_IS_VOLUME_DIRTY control code Installable File System Drivers"]

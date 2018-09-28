@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_SET\_VOLUME\_INFORMATION
+title: IRP_MJ_SET_VOLUME_INFORMATION
 description: IRP\_MJ\_SET\_VOLUME\_INFORMATION
 ms.assetid: 7c317e8b-ffa9-47f7-ac53-23b09873fab9
 keywords: ["IRP_MJ_SET_VOLUME_INFORMATION Installable File System Drivers"]
