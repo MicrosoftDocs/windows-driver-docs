@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ndiskd.ndiskdversion** extension displays information about !ndiskd itself.
 
-```
+```console
 !ndiskd.ndiskdversion 
 ```
 
@@ -40,7 +40,7 @@ Examples
 
 The following example shows output for **!ndiskd.ndiskdversion**.
 
-```
+```console
 1: kd> !ndiskd.ndiskdversion
     NDISKD Version     17.01.00 (NDISKD codename "All your WDF are belong to us")
     Build              Release

@@ -71,11 +71,6 @@ To set the state of this socket option, a WSK application calls the [**WskContro
 </tbody>
 </table>
 
- 
-
-```
-
-```
 
 To retrieve the state of this socket option, a WSK application calls the **WskControlSocket** function with the following parameters.
 
@@ -128,11 +123,6 @@ To retrieve the state of this socket option, a WSK application calls the **WskCo
 </tbody>
 </table>
 
- 
-
-```
-
-```
 
 A WSK application must specify a pointer to an IRP when calling the **WskControlSocket** function to set or retrieve the state of the SO\_EXCLUSIVEADDRUSE socket option.
 

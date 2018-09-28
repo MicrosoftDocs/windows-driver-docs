@@ -35,8 +35,8 @@ The WSK application should make the following sequence of calls to complete the 
 
 The following code example shows how a WSK application can attach itself to the WSK subsystem.
 
-```
-// Context structure type for the WSK application&#39;s
+```C++
+// Context structure type for the WSK application's
 // binding to the WSK subsystem
 typedef struct WSK_APP_BINDING_CONTEXT_ {
   HANDLE NmrBindingHandle;
@@ -48,12 +48,12 @@ typedef struct WSK_APP_BINDING_CONTEXT_ {
 } WSK_APP_BINDING_CONTEXT, *PWSK_APP_BINDING_CONTEXT;
 
 // Pool tag used for allocating the binding context
-#define BINDING_CONTEXT_POOL_TAG &#39;tpcb&#39;
+#define BINDING_CONTEXT_POOL_TAG 'tpcb'
 
 // The WSK application uses version 1.0 of WSK
 #define WSK_APP_WSK_VERSION MAKE_WSK_VERSION(1,0)
 
-// Structure for the WSK application&#39;s dispatch table
+// Structure for the WSK application's dispatch table
 const WSK_CLIENT_DISPATCH WskAppDispatch = {
   WSK_APP_WSK_VERSION,
   0,
@@ -75,7 +75,7 @@ NTSTATUS
   PWSK_PROVIDER_DISPATCH WskProviderDispatch;
   NTSTATUS Status;
 
-  // Get pointers to the WSK subsystem&#39;s identification and
+  // Get pointers to the WSK subsystem's identification and
   // characteristics structures
   WskProviderModuleId = ProviderRegistrationInstance->ModuleId;
   WskProviderCharacteristics =
@@ -92,7 +92,7 @@ NTSTATUS
   // checks to determine if it can attach to the WSK subsystem.
   //
 
-  // Allocate memory for the WSK application&#39;s binding
+  // Allocate memory for the WSK application's binding
   // context structure
   BindingContext =
     (PWSK_APP_BINDING_CONTEXT)
@@ -134,7 +134,7 @@ NTSTATUS
   // Attachment did not succeed
   else
   {
-    // Free memory for application&#39;s binding context structure
+    // Free memory for application's binding context structure
     ExFreePoolWithTag(
       BindingContext,
       BINDING_CONTEXT_POOL_TAG

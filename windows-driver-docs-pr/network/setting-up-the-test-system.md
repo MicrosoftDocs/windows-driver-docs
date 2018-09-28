@@ -52,7 +52,7 @@ Before you upgrade network components, make sure that the network components to 
 
     The following is a sample netcfg.ini file:
 
-    ```
+    ```INI
     [DebugFlags]
     BreakOnAddLegacy=0
     BreakOnAlloc=0

@@ -69,12 +69,6 @@ To query the current backlog of received data for a connection-oriented socket, 
 </tbody>
 </table>
 
- 
-
-```
-
-```
-
 A WSK application must specify a pointer to an IRP when calling the **WskControlSocket** function to query the current backlog of received data for a connection-oriented socket.
 
 Requirements

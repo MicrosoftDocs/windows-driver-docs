@@ -69,12 +69,6 @@ To control whether the WSK subsystem will divert network I/O to TDI transports, 
 </tbody>
 </table>
 
- 
-
-```
-
-```
-
 The following flags are defined for the WSK\_TDI\_BEHAVIOR client control operation.
 
 <a href="" id="wsk-tdi-behavior-bypass-tdi"></a>WSK\_TDI\_BEHAVIOR\_BYPASS\_TDI  

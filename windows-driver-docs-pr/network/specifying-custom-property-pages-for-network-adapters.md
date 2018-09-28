@@ -27,7 +27,8 @@ If the **Advanced** property page is not suitable for displaying the configurati
 1.  Create a Microsoft Win32 property page. Then create a property sheet extension DLL that provides *AddPropSheetPageProc* and *ExtensionPropSheetPageProc* callback functions. For more information, see the Windows 2000 Platform SDK.
 
 2.  Use the *add-registry-section* that is referenced by the **DDInstall** section for the adapter to add the **EnumPropPages32** key to the instance key for the adapter. The **EnumPropPages32** key has two REG\_SZ values: the name of the DLL that exports the *ExtensionPropSheetPageProc* function and the name of the *ExtensionPropSheetPageProc* function. The following is an example of an *add-registry-section* that adds the **EnumPropPages32** key:
-    ```
+
+    ```INF
     HKR, EnumPropPages32, 0, "DLL name, ExtensionPropSheetPageProc function name"
     ```
 
