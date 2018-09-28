@@ -19,7 +19,7 @@ You need to write a driver for the connector if your USB Type-C system does not 
 
 **Last Updated**
 
--   March 2016
+-   September 2018
 
 **Windows version**
 
@@ -35,7 +35,7 @@ You need to write a driver for the connector if your USB Type-C system does not 
 | Hardware/Firmware capabilities                        | Non-detachable    | Add-on card    | 
 |------------------------------------------------------ |-------------      |---            |
 |USB Type-C connector does not have a PD state machine.  | Write a client driver to UcmTcpciCx. <p>Start with [UcmTcpciCx Port Controller Client Driver](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmTcpciCxClientSample) </p>| Write a client driver to UcmCx. <p>Start with the [UcmCx sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi).</p>| 
-|Connector is UCSI-compliant with ACPI.                  | Load the in-box driver, UcmUcsi.sys.  |N/A| 
+|Connector is UCSI-compliant with ACPI.                  | Load the in-box driver, UcmUcsiCx.sys and UcmUcsiAcpiClient.  |N/A| 
 |Connector is UCSI-compliant without ACPI.| Write a client driver to UcmUcsiCx. For more information, see [Write a UCSI client driver](write-a-ucsi-driver.md). <p>Start with [this sample template](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi) and replace the ACPI portions with your implementation for the required bus.| Write a client driver to UcmCx. |
 | Has PD state machine but is not UCSI-compliant.| Write a client driver to UcmCx. <p>Start with the [UcmCx sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi).  |Write a client driver to UcmCx. <p>Start with the [UcmCx sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi). </p>|                 
 ## In this section

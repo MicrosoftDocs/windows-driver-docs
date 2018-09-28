@@ -16,7 +16,7 @@ A USB Type-C Connector System Software Interface (UCSI) driver serves as the con
 
 If your system that implements Platform Policy Manager (PPM), as described in the UCSI specification, in an EC that is connected to the system over:
 
-- An ACPI transport, you do _not_ need to write a driver. Load the Microsoft provided in-box driver, (UcmUcsi.sys and UcmUcsiAcpiClient.sys). (See [UCSI driver](ucsi.md)).
+- An ACPI transport, you do _not_ need to write a driver. Load the Microsoft provided in-box driver, (UcmUcsiCx.sys and UcmUcsiAcpiClient.sys). (See [UCSI driver](ucsi.md)).
 
 - A non-ACPI transport, such as  USB, PCI, I2C or UART, you need to write a client driver for the controller.
 

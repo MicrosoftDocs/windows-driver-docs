@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Windows support for USB Type-C connectors
 
-This topic is intentded for OEMs who want to build a Windows 10 system with USB Type-C connector and want to leverage OS features that allow for faster charging, power delivery dual role, alternate modes, and error notifications through Billboard devices.
+This topic is intended for OEMs who want to build a Windows 10 system with USB Type-C connector and want to leverage OS features that allow for faster charging, power delivery, dual role, alternate modes, and error notifications through Billboard devices.
 
 A traditional USB connection uses a cable with a USB A and USB B connector on each end. The USB A connector always plugs in to the host side and the USB B connector connects the function side, which is a device (phone) or peripheral (mouse, keyboard). By using those connectors, you can only connect a host to a function; never a host to another host or a function to another function. The host is the power source provider and the function consumes power from the host.
 
@@ -25,7 +25,7 @@ The USB Type-C connector, introduced by the USB-IF, defined in the USB 3.1 speci
 
 ## Feature summary
 
-- Allows for faster charging upto 100W with Power Delivery over USB Type-C.
+- Allows for faster charging up to 100W with Power Delivery over USB Type-C.
 - Single connector for both USB Hosts and USB Devices.
 - Can switch USB roles to support a USB host or device.
 - Can switch power roles between sourcing and sinking power.
@@ -63,7 +63,7 @@ Use this flow chart to determine a solution for your USB Type-C system.
 |If your system...| Recommended solution...|
 |---|---|
 |Does not implement PD state machines |Write a client driver to the UcmTcpciCx class extension. <p>[Write a USB Type-C port controller driver](write-a-usb-type-c-port-controller-driver.md)</p>|
-|Implements PD state machines in hardware or firmware and support USB Type-C Connector System Software Interface (UCSI) over ACPI| Load the Microsoft provided in-box drivers, UcmUcsi.sys and UcmUcsiAcpiClient.sys. <p>See [UCSI driver](ucsi.md).</p>|
+|Implements PD state machines in hardware or firmware and support USB Type-C Connector System Software Interface (UCSI) over ACPI| Load the Microsoft provided in-box drivers, UcmUcsiCx.sys and UcmUcsiAcpiClient.sys. <p>See [UCSI driver](ucsi.md).</p>|
 |Implements PD state machines in hardware or firmware, but either does not support UCSI, or support UCSI but requires a transport other than ACPI|Write a client driver for the UcmCx class extension.<p>[Write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md)</p>|
 |Implements UCSI but requires a transport other than ACPI|Write a client driver to the UcmUcsiCx class extension.<p>Use [this sample template](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi) and modify it based on a transport that your hardware uses.</P><p>[Write a UCSI client driver](write-a-ucsi-driver.md)</P>|
 
@@ -78,7 +78,7 @@ Use this flow chart to determine a solution for your USB Type-C system.
 
     For more information, see the [guidance for bringing up the USB Role Switch Driver](dual-role-controller-bringup-for-a-usb-type-c-system.md).
 
-- A USB Connector Manager Driver is required for Windows to manage the USB Type-C ports on a system. The bring-up tasks for a USB Connector Manager driver depend on the driver that you choose for the USB Type-C ports: The Microsoft in-box UCSI (UcmUcsi.sys) driver, a UcmCx client driver, or a UcmTcpciCx client driver. For more information, see the links in the preceding section that describe how to choose the right solution for your USB Type-C system.
+- A USB Connector Manager Driver is required for Windows to manage the USB Type-C ports on a system. The bring-up tasks for a USB Connector Manager driver depend on the driver that you choose for the USB Type-C ports: The Microsoft in-box UCSI (UcmUcsiCx.sys and UcmUcsiAcpiClient.sys) driver, a UcmCx client driver, or a UcmTcpciCx client driver. For more information, see the links in the preceding section that describe how to choose the right solution for your USB Type-C system.
 
 
 ## Test
