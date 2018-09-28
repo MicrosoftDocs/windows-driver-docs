@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_SET\_QUOTA
+title: IRP_MJ_SET_QUOTA
 description: IRP\_MJ\_SET\_QUOTA
 ms.assetid: 256c349b-48cb-4a9f-a60a-89503d8f3f58
 keywords: ["IRP_MJ_SET_QUOTA Installable File System Drivers"]
