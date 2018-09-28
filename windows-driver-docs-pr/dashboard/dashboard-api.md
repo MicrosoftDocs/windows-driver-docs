@@ -84,32 +84,6 @@ After you have an Azure AD access token, you can call methods in the Microsoft H
 |:--|:--|
 | Drivers | Get, create and update drivers registered to your Dev Center Account. For more information about these methods, see the following articles:<ul><li>[Get product data](get-product-data.md)</li><li>[Manage product submissions](manage-product-submissions.md)</li><li>[Get shipping label data](get-shipping-labels.md)</li><li>[Manage shipping labels](manage-shipping-labels.md)</li></ul>|
 
-## Enable Secure Data Sharing
-
-In order to use the APIs to download driver submission failure data in a secure manner, you must send the following information regarding your Azure AD app used to access the reporting APIs to Microsoft Store Partner Operations, [partnerops@microsoft.com](mailto:partnerops@microsoft.com).
-
-|Azure AD app info|Format|
-|----|----|
-|ApplicationId|*\<YourAppGuid>*|
-|DisplayName|*\<YourAppName>*|
-|Home page URL|*\<URL>*|
-|Application type|**Web App** (assuming it’s web app)|
-|Multi-Tenanted|**Yes** (if this is not multi tenanted, can you make it multi-tenanted)|
-
-* Please make sure the app has the following permissions:
-
-  * Windows AAD - **SignIn** and **Read user Profile**
-
-  * Azure Storage - **Access Azure Storage**
-
-You can find this information in the dashboard view of your Azure AD app, in the Registered App pane, the Properties pane, and the panes for Required permissions and Enable Access. The following screenshots show where the data is found.
-
-![Screenshot of the Registered app, Settings, and Properties panes](./images/app-settings.png)<br/>
-
-![Screenshot of the Required permissions and Enable Access panes](./images/permissions-access.png)
-
-For help and answers to questions about secure data sharing, mail Microsoft Store Partner Operations, [partnerops@microsoft.com](mailto:partnerops@microsoft.com)
-
 ## Code examples
 
 The following sample provides detailed code that demonstrate how to use the Microsoft Hardware API:

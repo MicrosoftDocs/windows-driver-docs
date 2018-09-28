@@ -23,6 +23,9 @@ Use these asynchronous methods to access reporting data for your Win10/ Win 8.x 
 
 ## Prerequisites
 
+> [!IMPORTANT]
+> You must complete the requirements outlined in [Enable secure data sharing](enable-secure-data-sharing.md).
+
 To use this method, you need to first do the following:
 
 - If you have not done so already, complete all the [prerequisites](https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api#complete-prerequisites-for-using-the-microsoft-hardware-api) for the Microsoft Store analytics API, including obtaining an Azure AD access token to use in the request header for this method. Note that after you obtain an access token, you have 60 minutes to use it before it expires. After the token expires, you can obtain a new one.

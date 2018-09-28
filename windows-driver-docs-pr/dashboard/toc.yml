@@ -100,6 +100,8 @@
     - name: "Schedule custom reports for your driver failure details"
       href: schedule-custom-reports-for-driver-failure-details.md
       items:
+      - name: "Enable Secure Data Sharing"
+      - href: enable-secure-data-sharing.md
       - name: "Create a new report template"
         href: create-a-new-report-template.md
       - name: "Schedule a new report"  
