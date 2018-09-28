@@ -23,19 +23,19 @@ This topics provides some information about defining build parameters for NDIS a
 
 Add the following line to your Sources file before building to identify your driver as a miniport driver.
 
-```
+```Text
 C_DEFINES=/DNDIS_MINIPORT_DRIVER
 ```
 
 If you are writing an NDIS WAN miniport driver that supports connections through TAPI, you must add the following line to your Sources file before building to identify the TAPI version that your driver supports.
 
-```
+```Text
 C_DEFINES=-DNDIS_TAPI_CURRENT_VERSION=0x00010003
 ```
 
 If you are writing a CoNDIS WAN miniport driver that is an integrated miniport call manager (MCM) and that supports the CoNDIS address family type CO\_ADDRESS\_FAMILY\_TAPI\_PROXY, you must add the following line to your sources file before building to identify the TAPI version that your driver supports.
 
-```
+```Text
 C_DEFINES=-DNDIS_TAPI_CURRENT_VERSION=0x00030000
 ```
 

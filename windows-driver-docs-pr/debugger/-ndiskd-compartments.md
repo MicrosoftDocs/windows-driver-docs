@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ndiskd.compartments** extension displays all network compartments.
 
-```
+```console
 !ndiskd.compartments 
 ```
 
@@ -45,7 +45,7 @@ Examples
 
 Run the **!ndiskd.compartments** extension to see a list of all network compartments. In this example, there is only one compartment (the primary one).
 
-```
+```console
 3: kd> !ndiskd.compartments
     Compartment        ffffdf80139b9940
     ID                 1

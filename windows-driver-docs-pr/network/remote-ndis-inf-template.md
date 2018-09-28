@@ -27,7 +27,7 @@ To use the Remote NDIS driver with a USB device, an IHV must provide an INF file
 
 ### RNDIS INF template for NDIS 5.1 (Windows XP and later)
 
-```
+```INF
 ; Remote NDIS template device setup file
 ; Copyright (c) Microsoft Corporation
 ;
@@ -102,7 +102,7 @@ Vista_Property        = "Optional Vista Property"
 
 ### RNDIS INF template for NDIS 6.0 (Windows 7 and later)
 
-```
+```INF
 ; Remote NDIS template device setup file
 ; Copyright (c) Microsoft Corporation
 ;

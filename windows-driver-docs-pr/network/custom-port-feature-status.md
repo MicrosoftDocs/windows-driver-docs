@@ -25,7 +25,7 @@ Custom feature status definitions for a Hyper-V extensible switch port property 
 
 The following shows an example of a MOF class for a custom feature status definition of an extensible switch port.
 
-```
+```C++
 #pragma namespace("\\\\.\\root\\virtualization\\v2")
 
 [ Dynamic,
@@ -53,7 +53,7 @@ The MOF classes for custom feature status definition of a port are registered in
 
 The following example shows the commands that must be entered to register a file (Fabrikam\_CustomPortData.mof) that contains the MOF class for a custom port feature status definition.
 
-```
+```PowerShell
 net stop vmms
 mofcomp -N:root\virtualization\v2 Fabrikam_CustomPortData.mof
 net start vmms
@@ -63,7 +63,7 @@ For more information about how to use the MOF compiler, see [Compiling a Driver'
 
 The following example shows how you can use the custom port feature status definition to obtain port data. In this example, the Fabrikam\_CustomPortData MOF class is used to obtain port status from a Hyper-V partition named "TestVm". The Fabrikam, Inc. extension is enabled on the vSwitch “TestSwitch”, and is returning 123 for the status.
 
-```
+```PowerShell
 PS C:\> $portData = Get-VMSwitchExtensionPortData -VmName TestVm -FeatureId DAA0B7CC-74DB-41ef-8354-7002F9FA463E
 # Output the current value
 PS C:\> $portData.Data.CurrentStatus

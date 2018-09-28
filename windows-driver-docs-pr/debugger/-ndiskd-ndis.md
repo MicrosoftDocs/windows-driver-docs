@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ndiskd.ndis** extension displays build information about ndis.sys.
 
-```
+```console
 !ndiskd.ndis 
 ```
 
@@ -40,7 +40,7 @@ Examples
 
 The following example shows that the debugee machine has a Checked Ndis build.
 
-```
+```console
 0: kd> !ndiskd.ndis
 Checked Ndis
 ```

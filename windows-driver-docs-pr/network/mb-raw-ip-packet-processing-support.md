@@ -31,17 +31,17 @@ MB miniport drivers that support Raw IP packet frames in their send/receive data
 
 Miniport drivers can use the [**NdisSetNblFlag**](https://msdn.microsoft.com/library/windows/hardware/ff564542) macro to set flags in the net buffer list. The following line demonstrates how to set IPv4 packet flag in the net buffer list:
 
-```
+```C++
 NdisSetNblFlag(pNbl, NDIS_NBL_FLAGS_IS_IPV4);
 ```
 
 Miniport drivers can use the [**NET\_BUFFER\_LIST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff568401) to get and set information in a net buffer list. The following line demonstrates how to modify the **NetBufferListFrameType** OOB in the network buffer list for IPV4 packets:
 
-```
+```C++
 Value = ConvertToNetworkByteOrder(0x0800);
 ```
 
-```
+```C++
 NET_BUFFER_LIST_INFO(pNbl, NetBufferListFrameType) = Value;
 ```
 

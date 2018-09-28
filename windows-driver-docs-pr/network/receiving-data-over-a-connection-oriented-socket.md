@@ -20,7 +20,7 @@ After a Winsock Kernel (WSK) application has connected a connection-oriented soc
 
 The following code example shows how a WSK application can receive data over a connection-oriented socket.
 
-```
+```C++
 // Prototype for the receive IoCompletion routine
 NTSTATUS
   ReceiveComplete(
@@ -127,7 +127,7 @@ As an alternative to calling the [**WskReceive**](https://msdn.microsoft.com/lib
 
 The following code example shows how a WSK application can receive data by the WSK subsystem calling a connection-oriented socket's *WskReceiveEvent* event callback function.
 
-```
+```C++
 // A connection-oriented socket&#39;s WskReceiveEvent
 // event callback function
 NTSTATUS WSKAPI

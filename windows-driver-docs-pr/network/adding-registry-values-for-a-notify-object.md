@@ -51,7 +51,7 @@ A REG\_SZ value that specifies the path to the notify object DLL. The **Componen
 
 The following is an example of an *add-registry-section* that adds **ClsID** and **ComponentDll** values to the **Ndi** key:
 
-```
+```INF
 [MS_Protocol.ndi.reg]
 HKR, Ndi, ClsID, 0, "GUID"
 HKR, Ndi, ComponentDll, 0, "notifyobject.dll"

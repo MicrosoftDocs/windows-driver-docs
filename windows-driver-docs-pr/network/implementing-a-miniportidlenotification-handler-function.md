@@ -31,7 +31,7 @@ For example, when [*MiniportIdleNotification*](https://msdn.microsoft.com/librar
 
 The following is an example of a [*MiniportIdleNotification*](https://msdn.microsoft.com/library/windows/hardware/hh464092) handler function for a USB miniport driver. This example shows the steps that are involved with issuing a USB idle request IRP to the underlying USB driver. This example also shows how the IRP resources, which were previously allocated in [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389), can be reused for the IRP.
 
-```
+```C++
 //
 // MiniportIdleNotification()
 //

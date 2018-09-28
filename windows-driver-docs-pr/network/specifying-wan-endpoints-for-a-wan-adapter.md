@@ -27,7 +27,7 @@ A INF file for a WAN adapter must add a **WanEndpoints** value to the instance k
 
 The following is an example of an *add-registry-section* that adds a **WanEndpoints** value of 2 for a BRI ISDN adapter:
 
-```
+```INF
 [a1.reg]
 HKR,, WanEndpoints, 0x00010001, 2
 ```
