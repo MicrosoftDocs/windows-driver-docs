@@ -101,6 +101,8 @@ The UCM class extension keeps the operating system informed about the changes in
 
     The operating system might decide that the current data role is not correct. In that case the class extension calls your driver's callback function to perform necessary role swap operations.
 
+> The Microsoft-provided USB Type-C Policy Manager monitors the activities of USB Type-C connectors. Windows, version 1809, introduces a set of programming interfaces that you can use to write a client driver to Policy Manager. The client driver can participate in the policy decisions for USB Type-C connectors. With this set, you can choose to write a kernel-mode export driver or a user-mode driver. For more information, see [Write a USB Type-C Policy Manager client driver](policy-manager-client.md).
+
 ## Expected behavior of the client driver
 
 
