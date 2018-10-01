@@ -235,6 +235,8 @@
         href: dual-role-controller-bringup-for-a-usb-type-c-system.md
       - name: "Write a USB Type-C connector driver"
         href: bring-up-a-usb-type-c-connector-on-a-windows-system.md
+      - name: "Write a USB Type-C Policy Manager client driver"
+        href: policy-manager-client.md
       - name: "Write a USB Type-C port controller driver"
         href: write-a-usb-type-c-port-controller-driver.md
       - name: "Write a UCSI client driver"
