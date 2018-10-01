@@ -28,7 +28,7 @@ The Plug and Play (PnP) manager and other [device installation components](https
 
 
 
-Windows uses the following device identification strings to locate the information (INF) file that best matches the device. These strings are reported by a device's [*enumerator*](https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-enumerator):
+Windows uses device identification strings to locate the information (INF) file that best matches the device. These strings are reported by a device's enumerator. An *enumerator* is a system component that discovers PnP devices based on a PnP hardware standard. These tasks are carried out by PnP [Bus Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/bus-drivers) in partnership with the PnP manager. A device is typically enumerated by its parent bus driver, such as the PCI or PCMCIA bus driver. Some devices are enumerated by a bus filter driver, such as the [ACPI Driver](https://docs.microsoft.com/windows-hardware/drivers/acpi/). Windows uses the following device identification strings:
 
 -   [Hardware IDs](hardware-ids.md)
 
