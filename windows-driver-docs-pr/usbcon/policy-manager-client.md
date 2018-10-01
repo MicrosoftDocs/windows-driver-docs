@@ -24,6 +24,8 @@ The Policy Manager gets and coordinates the information from the USB Connector M
 
 For a full view of the drivers, see [Architecture: USB Type-C design for a Windows system](https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/architecture--usb-type-c-in-a-windows-system).
 
+## Important APIs
+The PM APIs are declared in the [Usbpmapi.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/usbpmapi) header.
  
 ## 1: Client Registration
 
