@@ -88,12 +88,3 @@ Filtering and forwarding extensions must follow these guidelines for excluding p
          
 
 For more information about the extensible switch ingress and egress data paths, see [Hyper-V Extensible Switch Data Path](hyper-v-extensible-switch-data-path.md).
-
- 
-
- 
-
-
-
-
-

@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 It is expected that most Remote NDIS devices will function well without the need to configure parameters on the host. However, there may be cases where proper network operation requires some configuration on the host. If the device supports configurable parameters, then it should include the following optional OID in the list of supported OIDs it reports in response to a query for [OID\_GEN\_SUPPORTED\_LIST](https://msdn.microsoft.com/library/windows/hardware/ff569642):
 
-```
+```C++
 #define OID_GEN_RNDIS_CONFIG_PARAMETER 0x0001021B
 ```
 

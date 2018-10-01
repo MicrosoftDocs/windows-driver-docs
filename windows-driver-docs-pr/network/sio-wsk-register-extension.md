@@ -67,11 +67,6 @@ To register an extension interface, a WSK application calls the [**WskControlSoc
 </tbody>
 </table>
 
- 
-
-```
-
-```
 
 A WSK application does not specify a pointer to an IRP when calling the **WskControlSocket** function to register an extension interface.
 

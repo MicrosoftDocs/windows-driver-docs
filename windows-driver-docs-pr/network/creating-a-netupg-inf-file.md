@@ -29,7 +29,7 @@ The netupg.inf file contains a single section called **OemNetUpgradeDirs**. Each
 
 The following is an example of a netupg.inf file:
 
-```
+```INF
 [OemNetUpgradeDirs]
 c:\temp\adapter1
 c:\temp\adapter2

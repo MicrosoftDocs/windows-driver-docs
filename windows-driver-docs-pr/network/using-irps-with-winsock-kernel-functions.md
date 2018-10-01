@@ -42,7 +42,7 @@ A WSK application does not initialize the IRPs that it passes to the WSK functio
 
 The following code example shows how a WSK application can allocate and use an IRP when performing a receive operation on a socket.
 
-```
+```C++
 // Prototype for the receive IoCompletion routine
 NTSTATUS
   ReceiveComplete(
@@ -149,7 +149,7 @@ The model shown in the previous example, where the WSK application allocates an 
 
 The following code example shows how a WSK application can use an IRP that has been passed to it by a higher level driver or by the I/O manager when performing a receive operation on a socket.
 
-```
+```C++
 // Prototype for the receive IoCompletion routine
 NTSTATUS
   ReceiveComplete(

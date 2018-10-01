@@ -18,12 +18,11 @@ ms.localizationpriority: medium
 
 The OID\_PNP\_CAPABILITIES OID requests a miniport driver to return the wake-up capabilities of its network adapter or requests an intermediate driver to return the intermediate driver's wake-up capabilities. The wake-up capabilities are formatted as an **NDIS\_PNP\_CAPABILITIES** structure, which is defined as follows:
 
-```ManagedCPlusPlus
+```C++
     typedef struct _NDIS_PNP_CAPABILITIES {
          ULONG Flags;
          NDIS_PM_WAKE_UP_CAPABILITIES WakeUpCapabilities;
-    } NDIS_PNP_CAPABILITIES, *PNDIS_PNP_CAPABILITIES;
-  
+    } NDIS_PNP_CAPABILITIES, *PNDIS_PNP_CAPABILITIES;  
 ```
 
 
@@ -39,7 +38,7 @@ NDIS sets this flag if the underlying miniport driver supports one or more wake-
 <a href="" id="wakeupcapabilities"></a>**WakeUpCapabilities**  
 An **NDIS\_PM\_WAKE\_UP\_CAPABILITIES** structure that specifies the wake-up capabilities of the miniport driver's network adapter. The **NDIS\_PM\_WAKE\_UP\_CAPABILITIES** structure is defined as follows:
 
-```
+```C++
 typedef struct _NDIS_PM_WAKE_UP_CAPABILITIES {
          NDIS_DEVICE_POWER_STATE MinMagicPacketWakeUp;
          NDIS_DEVICE_POWER_STATE MinPatternWakeUp;

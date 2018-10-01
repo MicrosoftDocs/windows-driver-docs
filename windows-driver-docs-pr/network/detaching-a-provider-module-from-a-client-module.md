@@ -34,7 +34,7 @@ If a provider module implements a [*ProviderCleanupBindingContext*](https://msdn
 
 For example:
 
-```
+```C++
 // ProviderDetachClient callback function
 NTSTATUS
   ProviderDetachClient(

@@ -23,7 +23,7 @@ All APIs that do any allocations take a parameter *Context* typed as PCTLV\_CONT
 
 Here is a sample overloaded operator.
 
-```
+```C++
 /*++
 Module Name:
     sample.cpp

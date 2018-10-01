@@ -22,7 +22,7 @@ A Winsock Kernel (WSK) application that has successfully registered as a WSK cli
 
 For example:
 
-```
+```C++
 // Unload function
 VOID
   Unload(

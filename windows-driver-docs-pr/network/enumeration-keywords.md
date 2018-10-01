@@ -23,7 +23,7 @@ NDIS 6.0 and later versions of NDIS provide standardized enumeration keywords fo
 
 The following example shows an INF file definition for an enumeration keyword.
 
-```
+```INF
 HKR, Ndi\params\<SubkeyName>, ParamDesc, 0, "%<SubkeyName>%"
 HKR, Ndi\params\<SubkeyName>, Type, 0, "enum"
 HKR, Ndi\params\<SubkeyName>, Default, 0, "3"

@@ -40,7 +40,7 @@ Remarks
 
 A bound instance is the binding between the calling transport and a driver set up by a call to [**NdisOpenAdapterEx**](https://msdn.microsoft.com/library/windows/hardware/ff563715). Transports use TRANSPORT\_ADDRESS and TA\_ADDRESS structures to notify underlying miniport drivers and other layered drivers about the list of network-layer addresses. Miniport drivers and other layered drivers use compatible NETWORK\_ADDRESS\_LIST and NETWORK\_ADDRESS structures, defined as follows, to set the list of network-layer addresses on a bound interface.
 
-```
+```C++
 typedef struct _NETWORK_ADDRESS_LIST {
   LONG  AddressCount; 
   USHORT  AddressType; 
@@ -71,7 +71,7 @@ NetBIOS protocol
 <a href="" id="address"></a>**Address**  
 Array of network-layer addresses of type NETWORK\_ADDRESS. The **AddressCount** member specifies the number of elements in this array.
 
-```
+```C++
 typedef struct _NETWORK_ADDRESS {
   USHORT  AddressLength; 
   USHORT  AddressType; 
