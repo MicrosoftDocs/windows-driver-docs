@@ -377,6 +377,13 @@ If  your hardware is UCSI compliant and requires communication over a non-ACPI t
 * [Write a UCSI client driver](https://docs.microsoft.com/windows-hardware/drivers/usbcon/write-a-ucsi-driver)
 * [UcmUcsiCx class extensions reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#type-c-driver-reference)
 * [UcmUcsiCx client driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmUcsiAcpiSample)
+
+**New feature for USB Type-C driver developers that allows you to monitor the activities of USB Type-C connectors and/or get involved in policy decisions on USB Type-C connectors.** 
+
+For example, control their device’s charging based on thermal conditions, so that the device won’t be overheated. 
+
+* [Write a USB Type-C Policy Manager client driver](https://microsoft.com/en-us/windows-hardware/drivers/usbcon/policy-manager-client)
+*  New APIs are available in [Usbpmapi.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbpmapi/)
  
 **New versions of the class extensions available for emulated USB devices (UDE) -- 1.1 and USB host controller (Ucx) 1.5:**
 
@@ -388,11 +395,7 @@ The host controller can also opt for FLDR and PLDR resets through:
 
 * [EVT_UCX_USBDEVICE_DISABLE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxusbdevice/nc-ucxusbdevice-evt_ucx_usbdevice_disable)
  
-**New feature for USB Type-C driver developers that allows you to monitor the activities of USB Type-C connectors and/or get involved in policy decisions on USB Type-C connectors.** 
 
-For example, control their device’s charging based on thermal conditions, so that the device won’t be overheated. 
- 
-**New APIs are available in [Usbpmapi.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbpmapi/)**
 
 
 ### <a name="wifi-1809"></a>Wi-fi
