@@ -21,9 +21,7 @@ ms.localizationpriority: medium
 
 # INF AddEventProvider Directive
 
-This directive is only available to [Windows Insiders](https://insider.windows.com/) via WDK Preview Builds.
-
-An **AddEventProvider** directive is used within an [**INF *DDInstall*.Events section**](inf-ddinstall-services-section.md). It specifies characteristics of the [Event Tracing for Windows](https://msdn.microsoft.com/library/windows/desktop/aa363668) (ETW) providers associated with drivers.
+An **AddEventProvider** directive is used within an [**INF *DDInstall*.Events section**](inf-ddinstall-services-section.md). It specifies characteristics of the [Event Tracing for Windows](https://msdn.microsoft.com/library/windows/desktop/aa363668) (ETW) providers associated with drivers. This directive is supported for Windows 10 version 1809 and later.
 
 ```
 [DDInstall.Events] 

@@ -26,7 +26,7 @@ Starting with the Fall Creators Update, Windows 10 Desktop (Pro and S editions) 
 
 3.	Install and restart Visual Studio.
 4.  Download the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).  Ensure that you have SDK version 16299 (Fall Creators Update) or later.
-5.	Download the [Insider WDK](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK).  Ensure that you have WDK version 16299 or later.
+5.	Download the [WDK](../download-the-wdk.md).  Ensure that you have WDK version 16299 or later.
 
 ## Building an ARM64 Driver with the WDK
 

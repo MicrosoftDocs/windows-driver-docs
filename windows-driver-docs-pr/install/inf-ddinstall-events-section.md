@@ -21,9 +21,7 @@ ms.localizationpriority: medium
 
 # INF DDInstall.Events Section
 
-This directive is only available to [Windows Insiders](https://insider.windows.com/) via WDK Preview Builds.
-
-Each per-Models *DDInstall***.Events** section contains one or more [**INF AddEventProvider directives**](inf-addeventprovider-directive.md) that reference additional INF-writer-defined sections in an INF file.
+Each per-Models *DDInstall***.Events** section contains one or more [**INF AddEventProvider directives**](inf-addeventprovider-directive.md) that reference additional INF-writer-defined sections in an INF file. This section is supported for Windows 10 version 1809 and later.
 
 ```
 [install-section-name.Events] |
