@@ -57,7 +57,7 @@ The **KSEVENT\_DEVICE\_LOST** event is triggered when a camera device is removed
 
  
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**KSEVENT\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/jj151588)

@@ -46,7 +46,7 @@ When a transport uses OID\_GEN\_VLAN\_ID in a query, the miniport driver returns
 
 During the miniport driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function for a particular NIC, the driver initially sets the NIC's VLAN ID to zero. The driver's *MiniportInitializeEx* function then reads the following configuration parameter from the registry, and, if the parameter is present, sets the NIC's VLAN ID to the parameter's value.
 
-```
+```syntax
 VlanId, REG_DWORD
 ```
 

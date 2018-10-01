@@ -66,7 +66,7 @@ A preemption event is triggered in the following scenario.
 2.  A second Windows app requests that the capture stack preempt the device from the first app and give control to the second app.
 3.  When this request is issued, the driver sends the **KSEVENT\_DEVICE\_PREEMPTED** event to both Windows apps.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**KSEVENT\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/jj151588)

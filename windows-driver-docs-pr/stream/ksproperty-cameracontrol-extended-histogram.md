@@ -12,7 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 9/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 
 **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_HISTOGRAM** is a property ID that will be used to control the histogram metadata produced by the driver. This is a pin level control for the preview pin only.
 
-## <span id="Usage_summary_table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage summary table
+## Usage summary table
 
 
 <table>
@@ -68,7 +68,7 @@ If the driver does not have the capability to produce histogram metadata, the dr
 
 The **SET** call of this control has no effect when the preview pin is in any state higher than the KSSTATE\_STOP state. The driver shall reject the **SET** call received if preview is not in the stop state and returns **STATUS\_INVALID\_DEVICE\_STATE**. In a **GET** call, driver should return the current settings in **Flags** field.
 
-The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925136) structure fields when using the control.
+The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
 
 <table>
 <colgroup>
@@ -92,7 +92,7 @@ The following table contains the descriptions and requirements for the [**KSCAME
 </tr>
 <tr class="odd">
 <td><p>Size</p></td>
-<td><p>This must be sizeof(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>) + sizeof([<strong>KSCAMERA_EXTENDEDPROP_VALUE</strong>](https://msdn.microsoft.com/library/windows/hardware/dn567565)).</p></td>
+<td><p>This must be sizeof(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>) + sizeof([<strong>KSCAMERA_EXTENDEDPROP_VALUE</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value)).</p></td>
 </tr>
 <tr class="even">
 <td><p>Result</p></td>
@@ -111,8 +111,7 @@ The following table contains the descriptions and requirements for the [**KSCAME
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -126,12 +125,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

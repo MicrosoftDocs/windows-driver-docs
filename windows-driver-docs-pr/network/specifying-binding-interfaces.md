@@ -219,7 +219,7 @@ An INF-file-writer can define and use vendor-specific **UpperRange** and **Lower
 
 The following is an example of an *add-registry-section* that adds **UpperRange** and **LowerRange** values for an ATM adapter:
 
-```
+```INF
 [addreg-section]
 HKR, Ndi\Interfaces, UpperRange, 0, "ndisATM"
 HKR, Ndi\Interfaces, LowerRange, 0, "atm"

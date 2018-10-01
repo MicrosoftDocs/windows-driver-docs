@@ -4,7 +4,7 @@ description: The acpicache extension displays all of the Advanced Configuration 
 ms.assetid: 488bbc40-0f67-4d13-8615-944ff8a6a177
 keywords: ["acpicache Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -22,9 +22,8 @@ ms.localizationpriority: medium
 
 The **!acpicache** extension displays all of the Advanced Configuration and Power Interface (ACPI) tables cached by the HAL.
 
-```
-!acpicache [DisplayLevel]
-```
+    !acpicache [DisplayLevel]
+
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 

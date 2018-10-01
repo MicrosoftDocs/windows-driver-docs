@@ -18,7 +18,7 @@ This following camera driver enumerations are new for Windows 10.
 
 [**KSCAMERA\_EXTENDEDPROP\_FOCUSSTATE**](https://msdn.microsoft.com/library/windows/hardware/dn925132)
 
-[**KSCAMERA\_EXTENDEDPROP\_MetadataAlignment**](https://msdn.microsoft.com/library/windows/hardware/dn925140)
+[**KSCAMERA\_EXTENDEDPROP\_MetadataAlignment**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ne-ksmedia-kscamera_extendedprop_metadataalignment)
 
 [**KSCAMERA\_EXTENDEDPROP\_ROITYPE**](https://msdn.microsoft.com/library/windows/hardware/dn925151)
 

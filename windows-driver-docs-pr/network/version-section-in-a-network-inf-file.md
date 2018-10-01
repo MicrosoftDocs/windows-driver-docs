@@ -120,7 +120,7 @@ The **CatalogFile** entry is used to declare an optional driver-supplied .cat fi
 
 The following is an example of a **Version** section for an INF file that installs a network adapter:
 
-```
+```INF
 [Version]
 Signature = $Windows NT$
 Class=Net

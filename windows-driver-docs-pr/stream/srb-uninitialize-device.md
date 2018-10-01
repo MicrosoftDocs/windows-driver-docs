@@ -38,7 +38,7 @@ Indicates that the function is not supported by the minidriver.
 <span id="STATUS_ADAPTER_HARDWARE_ERROR"></span><span id="status_adapter_hardware_error"></span>STATUS\_ADAPTER\_HARDWARE\_ERROR  
 Indicates that the minidriver cannot uninitialize at this time.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 The minidriver should deallocate any resources it allocated, and disable the device's interrupts. (The class driver automatically deallocates any resources it allocated on behalf of the minidriver.)
 

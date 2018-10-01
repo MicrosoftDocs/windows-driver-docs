@@ -28,7 +28,7 @@ To specify that an adapter belongs to a particular bundle of adapters, the INF f
 
 The following is an example of an *add-registry-section* in a driver's INF file that adds the **BundleId** subkey to the **Ndi\\params** key and gives the **ParamDesc** (parameter description) for **BundleId** a string value of "Bundle1".
 
-```
+```INF
 [a1.params.reg]
 HKR, Ndi\params\BundleId, ParamDesc, 0, "Bundle1"
 ```

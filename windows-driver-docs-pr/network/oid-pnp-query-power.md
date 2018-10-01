@@ -34,6 +34,8 @@ An OID\_PNP\_QUERY\_POWER request is not used to request a transition to a devic
 
 By returning NDIS\_STATUS\_SUCCESS to this OID request, the miniport driver guarantees that it will transition the network adapter to the specified device power state on receipt of a subsequent OID\_PNP\_SET\_POWER request. The miniport driver, in this case, must do nothing to jeopardize the transition.
 
+Miniport drivers must always return NDIS\_STATUS\_SUCCESS to this OID request. Any other return code is an error.
+
 An OID\_PNP\_QUERY\_POWER request is always followed by an OID\_PNP\_SET\_POWER request. The OID\_PNP\_SET\_POWER request may immediately follow the OID\_PNP\_QUERY\_POWER request or may arrive at an unspecified interval after the OID\_PNP\_QUERY\_POWER request. A device state of D0 specified in the OID\_PNP\_SET\_POWER request effectively cancels the OID\_PNP\_QUERY\_POWER request.
 
 An intermediate driver must always return NDIS\_STATUS\_SUCCESS to a query of OID\_PNP\_QUERY\_POWER. An intermediate driver should never propagate an OID\_PNP\_QUERY\_POWER request to an underlying miniport driver.

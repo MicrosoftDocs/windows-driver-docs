@@ -5126,6 +5126,41 @@
       "source_path": "windows-driver-docs-pr/netcx/mbb-mbim-version.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/ne-mbbcx-_mbb_mbim_version",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/mb-protocol-configuration-operations--pco-.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/network/mb-protocol-configuration-options-pco-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/stream/ksproperty-cameracontrol-extended-focusmode2.md",
+      "redirect_URL": "/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-focusmode",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/chkinf.md",
+      "redirect_URL": "/windows-hardware/drivers/devtest/infverif",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/chkinf-components.md",
+      "redirect_URL": "/windows-hardware/drivers/devtest/infverif",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/requirements-and-limitations.md",
+      "redirect_URL": "/windows-hardware/drivers/devtest/infverif",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/chkinf-command-syntax.md",
+      "redirect_URL": "/windows-hardware/drivers/devtest/infverif",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/chkinf-results.md",
+      "redirect_URL": "/windows-hardware/drivers/devtest/infverif",
+      "redirect_document_id": false
     }
   ]
 }

@@ -2191,8 +2191,6 @@
         items: 
         - name: "SendImageRequest.DocumentDescription.DocumentId"
           href: sendimagerequest-documentdescription-documentid.md
-        - name: "SendImageRequest.DocumentDescription.Format"
-          href: sendimagerequest-documentdescription-format.md
       - name: "SendImageRequest.ImageData"
         href: sendimagerequest-imagedata.md
       - name: "SendImageRequest Example"

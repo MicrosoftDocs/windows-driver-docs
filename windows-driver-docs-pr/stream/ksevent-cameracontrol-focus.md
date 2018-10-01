@@ -62,7 +62,7 @@ Remarks
 
 For more information, see [**KSPROPERTY\_CAMERACONTROL\_S\_EX**](https://msdn.microsoft.com/library/windows/hardware/jj151593).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**KSEVENT\_CAMERACONTROL**](https://msdn.microsoft.com/library/windows/hardware/jj151587)

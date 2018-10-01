@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 For any TLV that has optional child TLV members, the parent has one field named **Optional**. Within that field, there is one Boolean field for each optional child named ***&lt;child\_name&gt;*\_IsPresent**, which is set to TRUE by the parser if the child is present, and FALSE otherwise. Similarly, the generation APIs expect the field to be TRUE if it should be present in the TLV byte stream, and FALSE otherwise.
 
-```
+```C++
 WDI_SET_FIRMWARE_CONFIGURATION_PARAMETERS fwConfig = { 0 };
 NDIS_STATUS status;
 status = ParseWdiSetAdapterConfiguration(
@@ -46,7 +46,7 @@ When multiple children of the same type appear within the same parent (for examp
 
 There are two important fields within ArrayOfElements: **ElementCount** and **pElements**. **ElementCount** is the count of elements within the array. **pElements** is a C-Style array of the elements. The elements can be iterated over as shown in this sample.
 
-```
+```C++
 for (UINT32 i = 0;
     i < pConnectTaskParameters->ConnectParameters.
             MulticastCipherAlgorithms.ElementCount;

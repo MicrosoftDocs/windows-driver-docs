@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_CLEANUP
+title: IRP_MJ_CLEANUP
 description: IRP\_MJ\_CLEANUP
 ms.assetid: e4593d99-a721-4ab1-82a5-b32b9c312b25
 keywords: ["IRP_MJ_CLEANUP Installable File System Drivers"]

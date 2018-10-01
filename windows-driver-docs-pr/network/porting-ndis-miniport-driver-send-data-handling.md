@@ -22,7 +22,7 @@ The [*MiniportSendNetBufferLists*](https://msdn.microsoft.com/library/windows/ha
 
 NDIS 5.*x* miniport drivers specify the completion status of a send operation as a parameter to the [**NdisMSendComplete**](https://msdn.microsoft.com/library/windows/hardware/ff553613) function. NDIS 6.0 miniport drivers, however, specify the completion status in the NET\_BUFFER\_LIST structure by calling the [**NET\_BUFFER\_LIST\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff568411) macro, as in the following example:
 
-```
+```C++
 NET_BUFFER_LIST_STATUS(pNetBufferList) = NDIS_STATUS_SUCCESS
 ```
 

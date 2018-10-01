@@ -1,22 +1,22 @@
 ---
-title: MB Protocol Configuration Operations (PCO)
-description: MB Protocol Configuration Operations (PCO)
+title: MB Protocol Configuration Options (PCO) operations
+description: MB Protocol Configuration Options (PCO) operations
 ms.assetid: 682C507C-5B2C-45E3-99D2-EEC68F8FC715
 keywords:
-- MB PCO operations, Mobile Broadband PCO operations, MB Protocol Configuration Operations, Mobile Broadband Protocol Configuration Operations, WDK network drivers, MBB miniport drivers
+- MB PCO options, Mobile Broadband PCO options, MB Protocol Configuration Options, Mobile Broadband Protocol Configuration Options, WDK network drivers, MBB miniport drivers
 ms.author: windowsdriverdev
-ms.date: 08/10/2017
+ms.date: 09/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-# MB Protocol Configuration Operations (PCO)
+# MB Protocol Configuration Options (PCO) operations
 
 ## Overview
 
-Traditionally, the Windows NDIS definitions for Protocol Configuration Operations (PCO) values have been generic, for potentially receiving full PCO values from the modem and network in the future. As of Windows 10, version 1709, however, some modems are only able to pass up operator specific PCO elements to the OS. This topic defines the behavior of the current operator specific-only PCO implementation.
+Traditionally, the Windows NDIS definitions for Protocol Configuration Options (PCO) values have been generic, for potentially receiving full PCO values from the modem and network in the future. As of Windows 10, version 1709, however, some modems are only able to pass up operator specific PCO elements to the OS. This topic defines the behavior of the current operator specific-only PCO implementation.
 
 There are three scenarios where the PCO value will be passed to the host:
 1.	When a new PCO value has arrived on an activated connection
@@ -62,13 +62,13 @@ For the status notification sent by a modem miniport driver to inform the OS of 
 
 Service = **MBB_UUID_BASIC_CONNECT_EXT_CONSTANT**
 
-Service UUID = **3d01dcc5-fef5-4d05-9d3a-bef7058e9aaf**
+Service UUID = **3d01dcc5-fef5-4d05-0d3a-bef7058e9aaf**
 
 The following CIDs are defined for PCO:
 
-| CID | Minimum OS Version |
-| --- | --- |
-| MBIM_CID_PCO | Windows 10, version 1709 |
+| CID | Command code | Minimum OS Version |
+| --- | --- | --- |
+| MBIM_CID_PCO | 9 | Windows 10, version 1709 |
 
 ### MBIM_CID_PCO
 
@@ -114,4 +114,3 @@ Unsolicited events contain an MBIM_PCO_VALUE and are sent when a new PCO value h
 #### Status Codes
 
 This CID only uses Generic Status Codes.
-

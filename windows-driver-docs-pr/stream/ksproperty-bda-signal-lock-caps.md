@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 
 Clients use KSPROPERTY\_BDA\_SIGNAL\_LOCK\_CAPS to determine the lock types that the driver can support for a signal.
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -81,7 +81,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**BDA\_LockType**](https://msdn.microsoft.com/library/windows/hardware/ff556526)

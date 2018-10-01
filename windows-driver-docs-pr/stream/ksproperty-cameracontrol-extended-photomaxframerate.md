@@ -12,7 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date: 9/11/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -21,10 +21,9 @@ ms.localizationpriority: medium
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOMAXFRAMERATE
 
-
 This property provides the maximum capture frame rate for a camera when it is in photo sequence mode.
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+## Usage Summary Table
 
 <table>
 <colgroup>
@@ -48,26 +47,23 @@ This property provides the maximum capture frame rate for a camera when it is in
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
-<td><p>[<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>](https://msdn.microsoft.com/library/windows/hardware/dn567563)</p></td>
+<td><p>[<strong>KSPROPERTY</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)</p></td>
+<td><p>[<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header)</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+The property value (operation data) contains a [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure and a [**KSCAMERA\_EXTENDEDPROP\_VALUE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value) structure. The maximum photo frame rate in frames per second is set or returned as value in **KSCAMERA\_EXTENDEDPROP\_VALUE**.
 
-The property value (operation data) contains a [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563) structure and a [**KSCAMERA\_EXTENDEDPROP\_VALUE**](https://msdn.microsoft.com/library/windows/hardware/dn567565) structure. The maximum photo frame rate in frames per second is set or returned as value in **KSCAMERA\_EXTENDEDPROP\_VALUE**.
+There are no flags set in the **Flags** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) for this property.
 
-There are no flags set in the **Flags** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563) for this property.
-
-The total property data size is **sizeof**(KSCAMERA\_EXTENDEDPROP\_HEADER) + **sizeof**(KSCAMERA\_EXTENDEDPROP\_VALUE). The **Size** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563) is set to this total property data size.
+The total property data size is **sizeof**(KSCAMERA\_EXTENDEDPROP\_HEADER) + **sizeof**(KSCAMERA\_EXTENDEDPROP\_VALUE). The **Size** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) is set to this total property data size.
 
 This property control is asynchronous and not cancelable.
 
-Remarks
--------
+## Remarks
 
-When responding to a KSPROPERTY\_TYPE\_GET request, the driver sets the members of the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563) to the following.
+When responding to a KSPROPERTY\_TYPE\_GET request, the driver sets the members of the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) to the following.
 
 <table>
 <colgroup>
@@ -110,9 +106,7 @@ When responding to a KSPROPERTY\_TYPE\_GET request, the driver sets the members 
 </tbody>
 </table>
 
- 
-
-The frame rate value is set in the **Ratio** member of [**KSCAMERA\_EXTENDEDPROP\_VALUE**](https://msdn.microsoft.com/library/windows/hardware/dn567565). **Ratio.HighPart** contains the numerator of the frame rate and **Ratio.LowPart** contains the denominator of the frame rate.
+The frame rate value is set in the **Ratio** member of [**KSCAMERA\_EXTENDEDPROP\_VALUE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value). **Ratio.HighPart** contains the numerator of the frame rate and **Ratio.LowPart** contains the denominator of the frame rate.
 
 When the driver is in photo sequence mode, it may be necessary to limit the maximum frame rate of the photo capture. This is to ensure that “moment in time” capture scenarios, with a certain number of history frames, are contained within a configured time span. For example, based on memory constraints, if the application wishes to capture 1 second worth of past history, it’s necessary to cap the capture rate so only N number of frames are needed.
 
@@ -120,8 +114,7 @@ When set, the driver must use the frame rate provided even if the camera can cap
 
 Setting the maximum frame rate value to 0 (0 for the HighPart and 0 for the LowPart of the **Ratio**) clears the maximum frame rate setting in the driver and has the same effect as asking the driver to provide frames as fast as possible.  Once the frame rate is set to 0, any subsequent query will return the value of the maximum frame rate possible for the camera driver. 
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -139,12 +132,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

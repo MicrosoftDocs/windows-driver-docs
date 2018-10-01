@@ -25,7 +25,7 @@ ms.localizationpriority: medium
 
 The **AVC\_FUNCTION\_GET\_PIN\_DESCRIPTOR** function code obtains the pin descriptor for each pin ID (offset from zero).
 
-### <span id="i_o_status_block"></span><span id="I_O_STATUS_BLOCK"></span>I/O Status Block
+### I/O Status Block
 
 If successful, the AV/C protocol driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
 
@@ -60,7 +60,7 @@ Possible other return values include:
 
  
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 This function uses the **PinDescriptor** member of the AVC\_MULTIFUNC\_IRB structure as shown below.
 
@@ -79,13 +79,13 @@ typedef struct _AVC_MULTIFUNC_IRB {
 } AVC_MULTIFUNC_IRB, *PAVC_MULTIFUNC_IRB;
 ```
 
-### <span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
+### Requirements
 
 **Headers:** Declared in *avc.h*. Include *avc.h*.
 
-### <span id="avc_multifunc_irb_input"></span><span id="AVC_MULTIFUNC_IRB_INPUT"></span>AVC\_MULTIFUNC\_IRB Input
+### AVC\_MULTIFUNC\_IRB Input
 
-<span id="Common"></span><span id="common"></span><span id="COMMON"></span>**Common**  
+**Common**  
 The **Function** submember of this member must be set to **AVC\_FUNCTION\_GET\_PIN\_DESCRIPTOR** from the AVC\_FUNCTION enumeration.
 
 <span id="PinDescriptor"></span><span id="pindescriptor"></span><span id="PINDESCRIPTOR"></span>**PinDescriptor**  
@@ -99,7 +99,7 @@ In addition to the pin descriptor, this function may also return the address of 
 
 This must be called at IRQL = PASSIVE\_LEVEL.
 
-### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
+### See Also
 
 [**AVC\_MULTIFUNC\_IRB**](https://msdn.microsoft.com/library/windows/hardware/ff554177), [**AVC\_PIN\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff554185), [**AVC\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554145), [**KSPIN\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff563533), [**AV/C Intersect Handler**](https://msdn.microsoft.com/library/windows/hardware/ff556379)
 

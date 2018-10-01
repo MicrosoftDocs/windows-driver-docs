@@ -63,12 +63,6 @@ To receive notification of when the list of available network transports changes
 </tbody>
 </table>
 
- 
-
-```
-
-```
-
 An IRP is required for this client control operation.
 
 The WSK subsystem will cancel any pending IRPs if the WSK application calls [**WskDeregister**](https://msdn.microsoft.com/library/windows/hardware/ff571128) to detach itself from the WSK subsystem.
