@@ -10,50 +10,47 @@ ms.topic: landing-page
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
+# Windows Driver Kit documentation
 
-<h1>Windows Driver Kit documentation</h1>
-<p>Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and [Debugging Tools for Windows](/windows-hardware/drivers/debugger/index) This integrated environment gives you the tools you need to develop, build, package, deploy, test, and debug drivers. You can run many basic certification tests in the integrated environment. The Windows Driver Kit (WDK) includes templates for several technologies and driver models, including [Windows Driver Frameworks](https://docs.microsoft.com/windows-hardware/drivers/wdf/), Universal Serial Bus (USB), print, networking, and file system filters.</p>
+Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and [Debugging Tools for Windows](/windows-hardware/drivers/debugger/index) This integrated environment gives you the tools you need to develop, build, package, deploy, test, and debug drivers. You can run many basic certification tests in the integrated environment. The Windows Driver Kit (WDK) includes templates for several technologies and driver models, including [Windows Driver Frameworks](https://docs.microsoft.com/windows-hardware/drivers/wdf/), Universal Serial Bus (USB), print, networking, and file system filters.
 
-<div class="container">
-        <ul class="cardsY panelContent featuredContent">
-            <li>
-                <a href="/windows-hardware/drivers/develop/getting-started-with-universal-drivers">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage"> 
-                                        <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><b>Get started with Universal Windows Drivers</b></h3>
-                                </div>
+<ul class="cardsY panelContent featuredContent">
+    <li>
+        <a href="/windows-hardware/drivers/develop/getting-started-with-universal-drivers">
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage"> 
+                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" />
                             </div>
                         </div>
+                            <div class="cardText">
+                                <h3><b>Get started with Universal Windows Drivers</b></h3>
+                            </div>
                     </div>
-                </a>
-            </li>
-            <li>
-                <a href="/windows-hardware/drivers/ddi/">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage"> 
-                                        <img src="https://docs.microsoft.com/media/common/i_api-reference.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><b>WDK DDI Reference</b></h3>
-                                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="/windows-hardware/drivers/ddi/">
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage"> 
+                                <img src="https://docs.microsoft.com/media/common/i_api-reference.svg" alt="" />
                             </div>
                         </div>
+                        <div class="cardText">
+                            <h3><b>WDK DDI Reference</b></h3>
+                        </div>
                     </div>
-                </a>
-            </li>            
-        </ul>
-</div>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>
 
 <ul class="cardsF panelContent">
     <li>
@@ -67,9 +64,7 @@ ms.technology: windows-devices
                     </div>
                     <div class="cardText">
                         <h3>What&#39;s new</h3>
-                        <p>
-                            <a href="/windows-hardware/drivers/what-s-new-in-driver-development">New APIs and features</a>
-                        </p>                        
+                        <p><a href="/windows-hardware/drivers/what-s-new-in-driver-development">New APIs and features</a></p>
                     </div>
                 </div>
             </div>
