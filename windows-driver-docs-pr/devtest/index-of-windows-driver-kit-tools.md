@@ -446,10 +446,10 @@ The information in the following tables describes the tools that are useful for 
 <p><strong>WDK tool:</strong> Deprecated</p></td>
 <td align="left"><p>Previous path:</p>
 <p>%WindowsSdkDir%\tools\x86\Chkinf</p></td>
-<td align="left"><p>ChkInf has been deprecated. Instead, use [InfVerif](https://docs.microsoft.com/windows-hardware/drivers/devtest/infverif)</p>
+<td align="left"><p>ChkInf has been deprecated. Instead, use [InfVerif](infverif.md)</p>
 <p>WDK Documentation:</p>
-<p>[ChkINF](chkinf.md)</p>
-<p>[Using ChkINF with Modem INF Files](https://msdn.microsoft.com/library/windows/hardware/ff542789)</p></td>
+<p>[InfVerif](infverif.md)</p>
+</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Computer Hardware Identification Tool (ComputerHardwareIds.exe)</p>
