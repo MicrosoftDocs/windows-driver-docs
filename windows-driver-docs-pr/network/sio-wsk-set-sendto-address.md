@@ -73,11 +73,6 @@ To set a fixed destination transport address for a datagram socket, a WSK applic
 </tbody>
 </table>
 
- 
-
-```
-
-```
 
 To clear a fixed destination transport address for a datagram socket, a WSK application calls the **WskControlSocket** function with the following parameters.
 
@@ -128,11 +123,7 @@ To clear a fixed destination transport address for a datagram socket, a WSK appl
 </tbody>
 </table>
 
- 
 
-```
-
-```
 
 A WSK application must specify a pointer to an IRP when calling the **WskControlSocket** function to set or clear a fixed destination transport address for a datagram socket.
 

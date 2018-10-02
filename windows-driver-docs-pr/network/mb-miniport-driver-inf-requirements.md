@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 MB miniport drivers must have the following entries in their INF file:
 
-```
+```INF
 *IfType  = 243; IF_TYPE_WWANPP 
 *MediaType  = 9; <mark type="enumval">NdisMediumWirelessWan</mark> 
 *PhysicalMediaType  = 8; NdisPhysicalMediumWirelessWan

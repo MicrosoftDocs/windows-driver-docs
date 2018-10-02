@@ -36,7 +36,7 @@ A Windows Filtering Platform callout driver is installed by a setup information 
 
 For example:
 
-```
+```INF
 ;
 ; Example callout driver INF file
 ;
@@ -88,12 +88,3 @@ ServiceBinary = %12%\ExampleCalloutDriver.sys
 %ServiceName% = "ExampleCalloutDriver"
 %ServiceDesc% = "Example Callout Driver"
 ```
-
- 
-
- 
-
-
-
-
-

@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_REMOVE\_OVERLAY control code
+title: FSCTL_REMOVE_OVERLAY control code
 description: The FSCTL\_REMOVE\_OVERLAY control code removes a backing source from a volume.
 ms.assetid: 9AB1DD06-AFB3-45AF-8139-14B60076D63A
 keywords: ["FSCTL_REMOVE_OVERLAY control code Installable File System Drivers"]

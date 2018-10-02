@@ -71,11 +71,6 @@ To enable or disable event callback functions on a socket, a WSK application cal
 </tbody>
 </table>
 
- 
-
-```
-
-```
 
 A WSK application does not specify a pointer to an IRP when calling the **WskControlSocket** function to enable event callback functions on a socket.
 
@@ -118,11 +113,6 @@ The following table shows the valid event flags for a listening socket.
 </tbody>
 </table>
 
- 
-
-```
-
-```
 
 The following table shows the valid event flags for a datagram socket.
 
@@ -145,11 +135,7 @@ The following table shows the valid event flags for a datagram socket.
 </tbody>
 </table>
 
- 
 
-```
-
-```
 
 The following table shows the valid event flags for a connection-oriented socket.
 
@@ -180,11 +166,6 @@ The following table shows the valid event flags for a connection-oriented socket
 </tbody>
 </table>
 
- 
-
-```
-
-```
 
 A listening socket can automatically enable event callback functions on connection-oriented sockets that are accepted by the listening socket. A WSK application automatically enables these callback functions by enabling the connection-oriented socket event callback functions on the listening socket. The event callback functions are automatically enabled on an accepted connection-oriented socket only if the socket is accepted by the listening socket's [*WskAcceptEvent*](https://msdn.microsoft.com/library/windows/hardware/ff571120) event callback function. If the connection-oriented socket is accepted by the listening socket's [**WskAccept**](https://msdn.microsoft.com/library/windows/hardware/ff571109) function, the accepted socket's event callback functions are not automatically enabled.
 

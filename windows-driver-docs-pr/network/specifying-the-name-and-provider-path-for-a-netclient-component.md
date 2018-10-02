@@ -25,7 +25,7 @@ The **NetworkProvider** key has two values: a **Name** that specifies the name o
 
 The following is an example of an *add-registry-section* that adds the **NetworkProvider** key to the instance key for a component:
 
-```
+```INF
 [NWCWorkstation.AddReg]
 HKR, NetworkProvider, Name, 0, "NetWare or Compatible Network"
 HKR, NetworkProvider, ProviderPath, 0x20000, "%11%\nwprovau.dll"

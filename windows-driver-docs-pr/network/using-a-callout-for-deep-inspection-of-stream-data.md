@@ -21,7 +21,7 @@ When a callout inspects stream data, its [classifyFn](https://msdn.microsoft.com
 
 For example:
 
-```
+```C++
 // classifyFn callout function
 VOID NTAPI
  ClassifyFn(

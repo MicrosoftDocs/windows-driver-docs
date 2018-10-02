@@ -78,7 +78,7 @@ Another element, **&lt;OptionalFilterServiceProvider&gt;**, allows the pipeline 
 
 The following code example shows the **DrvPopulateFilterServices** function:
 
-```XML
+```C++
 HRESULT
 DrvPopulateFilterServices(
     __in IPrintPipelinePropertyBag  *pPropertyBag
@@ -89,7 +89,7 @@ For more information about preceding function, see [**DrvPopulateFilterServices*
 
 The following code example shows the XML syntax for the **&lt;FilterServiceProvider&gt;** element in the filter pipeline configuration file:
 
-```
+```XML
 <Filters>
     <Filter ... />
     <FilterServiceProvider dll = "providerA.dll"/>

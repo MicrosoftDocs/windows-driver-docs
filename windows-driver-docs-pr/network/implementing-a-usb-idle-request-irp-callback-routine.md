@@ -27,7 +27,7 @@ Within the context of the call to [**NdisMIdleNotificationConfirm**](https://msd
 
 The following is an example of a callback routine for a USB idle request IRP.
 
-```
+```C++
 //
 // MiniportUsbIdleRequestCallback()
 //

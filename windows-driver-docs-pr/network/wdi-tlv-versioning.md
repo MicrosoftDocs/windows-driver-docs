@@ -17,7 +17,7 @@ To maintain backwards compatibility, both WDI and the miniport use the TLV strea
 
 Here is the type definition of the *Context* parameter, which is passed into every Parse and Generate API.
 
-```
+```C++
 typedef struct _TLV_CONTEXT
 {
     ULONG_PTR   AllocationContext;

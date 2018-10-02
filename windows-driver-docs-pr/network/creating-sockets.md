@@ -30,7 +30,7 @@ If the socket is created successfully, the **IoStatus.Information** field of the
 
 The following code example shows how a WSK application can create a listening socket.
 
-```
+```C++
 // Context structure for each socket
 typedef struct _WSK_APP_SOCKET_CONTEXT {
   PWSK_SOCKET Socket;

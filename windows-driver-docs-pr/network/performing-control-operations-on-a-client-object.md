@@ -24,7 +24,7 @@ A WSK application performs client control operations by calling the [**WskContro
 
 The following code example shows how a WSK application can use the [**WSK\_TRANSPORT\_LIST\_QUERY**](https://msdn.microsoft.com/library/windows/hardware/ff571195) client control operation to retrieve a list of available network transports that can be specified when creating a new socket.
 
-```
+```C++
 // Function to retrieve a list of available network transports
 NTSTATUS
   GetTransportList(

@@ -30,7 +30,7 @@ Before you upgrade the system to Windows 2000 or later, note the parameter value
 1.  Make sure that the CD-ROM that contains the checked build of Windows 2000 or later is in the CD-ROM drive.
 
 2.  Run winnt32.exe on the test system. For example, use the following command to run winnt32.exe on an Intel-based system with the CD-ROM in drive O:
-    ```
+    ```CMD
     winnt32.exe /s:o\i386
     ```
 

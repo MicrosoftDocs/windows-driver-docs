@@ -25,14 +25,14 @@ A network component may require the installation of one or more other network co
 
 The following example shows a **RequiredAll** entry in an *add-registry-section*:
 
-```
+```INF
 [ndi.reg]
 HKR, Ndi, RequiredAll, 0, "component id"
 ```
 
 The *component ID* is the *hw-id* of the required network component. For more information, see [**INF Models Section**](https://msdn.microsoft.com/library/windows/hardware/ff547456). If a network component requires the installation of more than one other network component, use one **RequiredAll** entry for each network component that must be installed, as shown in the following example:
 
-```
+```INF
 HKR, Ndi, RequiredAll, 0, "component1 id, component2 id"
 ```
 

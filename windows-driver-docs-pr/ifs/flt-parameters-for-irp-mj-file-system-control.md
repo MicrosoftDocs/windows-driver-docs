@@ -1,5 +1,5 @@
 ---
-title: FLT\_PARAMETERS for IRP\_MJ\_FILE\_SYSTEM\_CONTROL union
+title: FLT_PARAMETERS for IRP_MJ_FILE_SYSTEM_CONTROL union
 description: Union component used when the MajorFunction field of the FLT\_IO\_PARAMETER\_BLOCK structure for the operation is IRP\_MJ\_FILE\_SYSTEM\_CONTROL.
 ms.assetid: d90b9f23-9fae-46e8-b68c-1ba11b3fa17a
 keywords: ["FLT_PARAMETERS for IRP_MJ_FILE_SYSTEM_CONTROL union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
