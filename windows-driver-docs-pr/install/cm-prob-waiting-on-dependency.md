@@ -14,10 +14,9 @@ ms.localizationpriority: medium
 
 This function is reserved for system use.
 
-
 The device did not start because it has a dependency on another device that has not started.
 
-### Error Code
+## Error Code
 
 51
 
@@ -30,12 +29,3 @@ The device did not start because it has a dependency on another device that has 
 There is currently no resolution to this problem.
 
 To help diagnose the problem, examine other failed devices in the [device tree](https://msdn.microsoft.com/library/windows/hardware/ff543194) that this device might depend on. If you can determine why another related device did not start, you might be able to resolve this issue.
-
- 
-
- 
-
-
-
-
-

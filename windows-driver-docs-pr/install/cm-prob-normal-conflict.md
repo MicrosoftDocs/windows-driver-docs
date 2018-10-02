@@ -16,13 +16,9 @@ ms.localizationpriority: medium
 
 This function is reserved for system use.
 
-
-
-
-
 Two devices have been assigned the same I/O ports, the same interrupt, or the same DMA channel (either by the BIOS, the operating system, or a combination of the two).
 
-### Error Code
+## Error Code
 
 12
 
@@ -42,21 +38,12 @@ This error message can also appear if the BIOS did not allocate sufficient resou
 
 To troubleshoot a device conflict, follow these steps:
 
-1.  [Open Device Manager](using-device-manager.md).
+1. [Open Device Manager](using-device-manager.md).
 
-2.  Double-click the icon that represents the device in the Device Manager window.
+2. Double-click the icon that represents the device in the Device Manager window.
 
-3.  On the device property sheet that appears, click **Troubleshoot** to start the hardware troubleshooter for the device.
+3. On the device property sheet that appears, click **Troubleshoot** to start the hardware troubleshooter for the device.
 
 This error message can also appear if the BIOS did not allocate sufficient resources to a device. For example, this message will be displayed if the BIOS does not allocate an interrupt to a USB controller because of an invalid multiprocessor specification (MPS) table.
 
 For more information about how to resolve device conflicts, see the Help information about how to use Device Manager.
-
- 
-
- 
-
-
-
-
-

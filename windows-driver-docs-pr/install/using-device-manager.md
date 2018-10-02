@@ -1,12 +1,12 @@
 ---
-title: Using Device Manager
-description: Using Device Manager
+title: Device Manager for makers of devices and drivers
+description: Device Manager offers ways to troubleshoot installation problems with your drivers and devices.
 ms.assetid: 3c229347-b36f-43e7-9e9c-3ba6ec1e6108
 keywords:
 - Device Manager WDK
 - Device Manager WDK , about Device Manager
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,27 +15,14 @@ ms.localizationpriority: medium
 
 # Using Device Manager
 
+To start Device Manager, in File explorer, right-click **This PC**, click **Manage**, and then select **Device Manager** from the System Tools that are listed in the resulting dialog.
 
+Device Manager displays information about each device. This includes the device type, device status, manufacturer, device-specific properties, and information about the driver for the device.
 
+If your device is required to start the computer, a problem with your device installation can prevent the computer from starting. In these cases, you have to use the kernel debugger to troubleshoot your device installation. For more info, see [Getting Started with WinDbg (Kernel-Mode)](https://docs.microsoft.com/windows-hardware/drivers/debugger/getting-started-with-windbg--kernel-mode-).
 
+If your device is not required to start the computer, Device Manager places a yellow exclamation point next that device's name in the Device Manager dialog. Device Manager also provides an error message describing the problem. For more information about the error messages, see [Device Manager Error Messages](device-manager-error-messages.md).
 
-To start Device Manager, right-click the My Computer icon, select **Manage** from the menu, and select **Device Manager** from the System Tools that are listed in the resulting display.
+Device manager can show hidden devices. This is helpful when you are testing the installation of a new PnP device. For more information, see [Viewing Hidden Devices](viewing-hidden-devices.md).
 
-Device Manager displays information about each device. This includes the device type, device status, manufacturer, device-specific properties, and information about the driver for the device. See the Help in Device Manager for more information.
-
-If your device is required to start the computer, a problem with your device installation can prevent the computer from starting. In these cases, you have to use the kernel debugger to troubleshoot your device installation. For more information, see the online documentation supplied with the Microsoft debuggers.
-
-If your device is not required to start the computer, you will typically notice a problem with your device installation because your device is not working correctly and Device Manager marks your device with a yellow exclamation point. Device Manager also provides an error message. For more information, see [Device Manager Error Messages](device-manager-error-messages.md).
-
-When you are testing the installation of a new PnP device, it can be useful to have Device Manager list hidden devices. For more information, see [Viewing Hidden Devices](viewing-hidden-devices.md).
-
-For Windows XP and later versions of Windows, Device Manager provides a **Details** tab that contains information that can be useful when you debug drivers. For more information, see [Device Manager Details Tab](device-manager-details-tab.md).
-
- 
-
- 
-
-
-
-
-
+Device Manager provides detailed information in the Properties dialog for each device. Right-click the name of the device, and then click **Properties**. The **General**, **Driver**, **Details**, and **Events** tabs contain information that can be useful when you debug errors. For more information, see [Device Manager Details Tab](device-manager-details-tab.md).

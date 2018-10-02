@@ -16,29 +16,16 @@ ms.localizationpriority: medium
 
 This function is reserved for system use.
 
-
-
-
-
 The device requires a forced configuration.
 
 ### Error Code
 
 34
 
-### Display Message (Windows 2000 and later versions of Windows)
+### Display Message
 
 "Windows cannot determine the settings for this device. Consult the documentation that came with this device and use the Resource tab to set the configuration. (Code 34)"
 
-### Recommended Resolution (Windows 2000 and later versions of Windows)
+### Recommended Resolution
 
 Change the HW settings (by setting jumpers or running a vendor-supplied utility) and then use Device Manager's **Resources** tab to set the forced configuration.
-
- 
-
- 
-
-
-
-
-

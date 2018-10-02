@@ -15,13 +15,3 @@ ms.localizationpriority: medium
 # CM_Query_Remove_SubTree
 
 This function is reserved for system use.
-
-
- 
-
- 
-
-
-
-
-

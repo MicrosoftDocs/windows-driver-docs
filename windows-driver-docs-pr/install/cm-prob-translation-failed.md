@@ -16,31 +16,18 @@ ms.localizationpriority: medium
 
 This function is reserved for system use.
 
-
-
-
-
 Resource translation failed for the device.
 
-### Error Code
+## Error Code
 
 33
 
-### Display Message (Windows 2000 and later versions of Windows)
+### Display Message
 
 "Windows cannot determine which resources are required for this device. (Code 33)"
 
-### Recommended Resolution (Windows 2000 and later versions of Windows)
+### Recommended Resolution
 
 Try using the BIOS setup utility, or update the BIOS.
 
 Configure, repair, or replace hardware.
-
- 
-
- 
-
-
-
-
-
