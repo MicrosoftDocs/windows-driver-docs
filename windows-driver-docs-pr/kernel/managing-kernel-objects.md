@@ -38,7 +38,7 @@ Typical kernel-mode objects include the following objects:
 
 -   Section objects. (See [Section Objects and Views](section-objects-and-views.md).)
 
-Kernel-mode objects enable you to manipulate objects in partnership with the object manager without damaging the portions of the objects that the operating system needs. This principle is called *encapsulation* and is one of the core concepts of object-orientated programming. (Because kernel-mode objects do not provide other aspects of object-orientation, kernel-mode programming is typically referred to as [*object-based*](object-based.md).) Kernel-mode objects do not follow the same rules as objects in C++ or Microsoft COM.
+Kernel-mode objects enable you to manipulate objects in partnership with the object manager without damaging the portions of the objects that the operating system needs. This principle is called *encapsulation* and is one of the core concepts of object-oriented programming. (Because kernel-mode objects do not provide other aspects of object-orientation, kernel-mode programming is typically referred to as [*object-based*](object-based.md).) Kernel-mode objects do not follow the same rules as objects in C++ or Microsoft COM.
 
 Kernel-mode objects can be referenced by pointers. An object may have an object name. For more information about object names, see [Object Names](object-names.md).
 

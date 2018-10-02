@@ -39,7 +39,7 @@ Support for GPIO interrupts is optional. The GPIO framework extension (GpioClx) 
 </tr>
 <tr class="even">
 <td><p>[GPIO-Based Interrupt Resources](https://msdn.microsoft.com/library/windows/hardware/hh698246)</p></td>
-<td><p>Drivers for peripheral devices that send interrupts to general-purpose I/O (GPIO) pins acquire GPIO interrupts as abstract Windows interrupt resources. [Kernel-mode driver framework](https://msdn.microsoft.com/library/windows/hardware/ff544296) (KMDF) drivers receive these resources through their [<em>EvtDevicePrepareHardware</em>](https://msdn.microsoft.com/library/windows/hardware/ff540880) event callback functions. [User-mode driver framework](https://msdn.microsoft.com/library/windows/hardware/ff560442) (UMDF) drivers receive them through their [<strong>IPnpCallbackHardware2::OnPrepareHardware</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556766) methods.</p></td>
+<td><p>Drivers for peripheral devices that send interrupts to general-purpose I/O (GPIO) pins acquire GPIO interrupts as abstract Windows interrupt resources. [Kernel-mode driver framework](https://msdn.microsoft.com/library/windows/hardware/ff544296) (KMDF) drivers receive these resources through their [<em>EvtDevicePrepareHardware</em>](https://msdn.microsoft.com/library/windows/hardware/ff540880) event callback functions. </p></td>
 </tr>
 <tr class="odd">
 <td><p>[Passive-Level ISRs](https://msdn.microsoft.com/library/windows/hardware/hh698262)</p></td>

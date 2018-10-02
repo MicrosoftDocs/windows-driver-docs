@@ -21,10 +21,6 @@ The highlights do not cover versions of Windows earlier than Windows 8.
 -   [Windows 8.1: What's new for USB](what-s-new-for-usb-in-windows-blue.md)
 -   [Windows 8: What's new for USB](what-s-new-in-usb-in-windows-8.md)
 
- 
-
- 
-
 
 
 

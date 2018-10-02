@@ -3,7 +3,7 @@ title: Imaging Devices Reference
 description: Imaging Devices Reference
 ms.assetid: 2ee6ce92-44dc-4c59-a438-f65b41f3b43a
 ms.author: windowsdriverdev
-ms.date: 11/28/2017
+ms.date:
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -11,10 +11,6 @@ ms.localizationpriority: medium
 ---
 
 # Imaging Devices Reference
-
-
-## <span id="ddk_still_image_reference_si"></span><span id="DDK_STILL_IMAGE_REFERENCE_SI"></span>
-
 
 This section contains reference information for the following technologies:
 
@@ -26,7 +22,7 @@ This section contains reference information for the following technologies:
 
 [Web Services on Devices Reference](https://msdn.microsoft.com/library/windows/hardware/ff549148)
 
-### <span id="wia_and_sti_driver_reference_table"></span><span id="WIA_AND_STI_DRIVER_REFERENCE_TABLE"></span>WIA and STI Driver Reference Table
+## WIA and STI Driver Reference Table
 
 The following table contains reference information for Windows Image Acquisition (WIA) drivers and for Still Imaging (STI) drivers. These drivers control devices, including scanners and cameras, that capture still images. For more information about these drivers, see [Windows Image Acquisition Drivers](https://msdn.microsoft.com/library/windows/hardware/ff553346) and [Still Image Drivers](https://msdn.microsoft.com/library/windows/hardware/ff548278).
 
@@ -110,7 +106,7 @@ The following sections describe the interfaces, functions, structures, and prope
 </tr>
 <tr class="odd">
 <td><p>[Web Services on Devices Reference](https://msdn.microsoft.com/library/windows/hardware/ff547963)</p></td>
-<td><p>Web Services on Devices information, including Scan Service (WS-SCAN) and Distributed Scan Management (DSM)</p></td>
+<td><p>Web Services on Devices information, including Scan Service (WS-SCAN)</p></td>
 </tr>
 </tbody>
 </table>

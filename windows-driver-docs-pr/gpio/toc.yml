@@ -10,8 +10,6 @@
     items: 
     - name: "Connecting a KMDF Driver to GPIO I/O Pins"
       href: connecting-a-kmdf-driver-to-gpio-i-o-pins.md
-    - name: "Connecting a UMDF Driver to GPIO I/O Pins"
-      href: connecting-a-umdf-driver-to-gpio-i-o-pins.md
   - name: "GPIO Interrupts"
     href: gpio-interrupts.md
     items: 

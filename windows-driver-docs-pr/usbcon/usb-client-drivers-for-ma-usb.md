@@ -47,30 +47,30 @@ For continuous streaming, the number of isochronous packets in each isochronous 
 ## Getting the host controller transport characteristics
 A client driver can retrieve the transport characteristics by sending these IOCTLs requests:
 
--    [IOCTL_USB_GET_TRANSPORT_CHARACTERISTICS](http://msdn.microsoft.com/En-US/Library/Windows/Hardware/36CF2034-C816-421A-8B59-A4DC4EFFEB70)
--    [IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](http://msdn.microsoft.com/En-US/Library/Windows/Hardware/4192501F-5A30-463C-924D-CD4F2C8C3764)
--    [IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE](http://msdn.microsoft.com/En-US/Library/Windows/Hardware/1B71794C-EBAD-4F6C-A71C-C0D419D486BE) 
--    [IOCTL_USB_UNREGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](https://msdn.microsoft.com/En-US/Library/Windows/Hardware/A6D17761-4E5F-42FC-AB40-C2BCE7769243)
+-    [IOCTL_USB_GET_TRANSPORT_CHARACTERISTICS](http://msdn.microsoft.com/Library/Windows/Hardware/36CF2034-C816-421A-8B59-A4DC4EFFEB70)
+-    [IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](http://msdn.microsoft.com/Library/Windows/Hardware/4192501F-5A30-463C-924D-CD4F2C8C3764)
+-    [IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE](http://msdn.microsoft.com/Library/Windows/Hardware/1B71794C-EBAD-4F6C-A71C-C0D419D486BE) 
+-    [IOCTL_USB_UNREGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](https://msdn.microsoft.com/Library/Windows/Hardware/A6D17761-4E5F-42FC-AB40-C2BCE7769243)
 
 The transport characteristics may or may not be available in all cases because the USB driver stack is dependent on the underlying transport to expose those values. Therefore, the client driver must determine the information through other mechanisms when the IOCTL requests fail. 
 
 ### Query for the current transport characterisctics
 
-The client driver can query the transport characteristics at a specific time by sending the   [IOCTL_USB_GET_TRANSPORT_CHARACTERISTICS](http://msdn.microsoft.com/En-US/Library/Windows/Hardware/36CF2034-C816-421A-8B59-A4DC4EFFEB70) request. On receiving the request, the USB driver stack completes it immediately with the information about the current transport characteristics in a USB_TRANSPORT_CHARACTERISTICS structure. Given that the information does not indicate changes at all times, this request can be used by the driver for the deciding the algorithm or starting a stream. 
+The client driver can query the transport characteristics at a specific time by sending the   [IOCTL_USB_GET_TRANSPORT_CHARACTERISTICS](http://msdn.microsoft.com/Library/Windows/Hardware/36CF2034-C816-421A-8B59-A4DC4EFFEB70) request. On receiving the request, the USB driver stack completes it immediately with the information about the current transport characteristics in a USB_TRANSPORT_CHARACTERISTICS structure. Given that the information does not indicate changes at all times, this request can be used by the driver for the deciding the algorithm or starting a stream. 
 
 ### Receive changes in trasport characteristics
 For MA-USB, the underlying transport could be wired, wireless￼. The transport characteristics of those mediums can vary significantly over time. The client driver can get notified on the ongoing changes.
 
-1.    Send an [IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](http://msdn.microsoft.com/En-US/Library/Windows/Hardware/4192501F-5A30-463C-924D-CD4F2C8C3764) request 
+1.    Send an [IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](http://msdn.microsoft.com/Library/Windows/Hardware/4192501F-5A30-463C-924D-CD4F2C8C3764) request 
 to register for notifications. If registration is successful, the client driver receives a handle and the initial values of the transport characteristics.
 
-2.	Send an [IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE](http://msdn.microsoft.com/En-US/Library/Windows/Hardware/1B71794C-EBAD-4F6C-A71C-C0D419D486BE) request with the registration handle obtained in step 1. The USB driver stack keeps the request pending. Whenever transport characteristics change, the pending request is completed with the new values of transport characteristics.
+2.	Send an [IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE](http://msdn.microsoft.com/Library/Windows/Hardware/1B71794C-EBAD-4F6C-A71C-C0D419D486BE) request with the registration handle obtained in step 1. The USB driver stack keeps the request pending. Whenever transport characteristics change, the pending request is completed with the new values of transport characteristics.
 
-3.	After the client is done and not interested in getting further notifications, it should ensure that there are no IOCTLs pending in the stack and then send the IOCTL with sub-code [IOCTL_USB_UNREGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](https://msdn.microsoft.com/En-US/Library/Windows/Hardware/A6D17761-4E5F-42FC-AB40-C2BCE7769243), passing in the registration handle. If the client unregisters with pending change request, USB Stack will complete them before completing the unregister IOCTL.
+3.	After the client is done and not interested in getting further notifications, it should ensure that there are no IOCTLs pending in the stack and then send the IOCTL with sub-code [IOCTL_USB_UNREGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](https://msdn.microsoft.com/Library/Windows/Hardware/A6D17761-4E5F-42FC-AB40-C2BCE7769243), passing in the registration handle. If the client unregisters with pending change request, USB Stack will complete them before completing the unregister IOCTL.
 
 ### Query for device characteristics
 
-To determione the eneral characteristics about a USB device, such as maximum send and receive delays for any request, the client driver can send the  [IOCTL_USB_GET_DEVICE_CHARACTERISTICS](http://msdn.microsoft.com/En-US/Library/Windows/Hardware/D4A8DE43-3E81-4A1C-B1C0-ABE6000D9F11) request.
+To determione the eneral characteristics about a USB device, such as maximum send and receive delays for any request, the client driver can send the  [IOCTL_USB_GET_DEVICE_CHARACTERISTICS](http://msdn.microsoft.com/Library/Windows/Hardware/D4A8DE43-3E81-4A1C-B1C0-ABE6000D9F11) request.
 
 ## Setting priority for a bulk endpoint
 
@@ -109,10 +109,10 @@ REG_MULTI_SZ:"EndpointPriorities" =
 [WdfUsbTargetDeviceCreateUrb](https://msdn.microsoft.com/library/windows/hardware/hh439423)
 
 [USBD_UrbAllocate](https://msdn.microsoft.com/library/windows/hardware/hh406250)
-[IOCTL_USB_GET_TRANSPORT_CHARACTERISTICS](http://msdn.microsoft.com/En-US/Library/Windows/Hardware/36CF2034-C816-421A-8B59-A4DC4EFFEB70)
+[IOCTL_USB_GET_TRANSPORT_CHARACTERISTICS](http://msdn.microsoft.com/Library/Windows/Hardware/36CF2034-C816-421A-8B59-A4DC4EFFEB70)
 
-[IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](http://msdn.microsoft.com/En-US/Library/Windows/Hardware/4192501F-5A30-463C-924D-CD4F2C8C3764)
+[IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](http://msdn.microsoft.com/Library/Windows/Hardware/4192501F-5A30-463C-924D-CD4F2C8C3764)
 
-[IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE](http://msdn.microsoft.com/En-US/Library/Windows/Hardware/1B71794C-EBAD-4F6C-A71C-C0D419D486BE)
+[IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE](http://msdn.microsoft.com/Library/Windows/Hardware/1B71794C-EBAD-4F6C-A71C-C0D419D486BE)
 
-[IOCTL_USB_UNREGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](https://msdn.microsoft.com/En-US/Library/Windows/Hardware/A6D17761-4E5F-42FC-AB40-C2BCE7769243)
+[IOCTL_USB_UNREGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](https://msdn.microsoft.com/Library/Windows/Hardware/A6D17761-4E5F-42FC-AB40-C2BCE7769243)

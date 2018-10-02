@@ -28,9 +28,9 @@ Client drivers, for an interface on a composite device, that enable the interfac
 
 For information about remote wakeup, see:
 
-[Remote Wakeup of USB Devices](https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/remote-wakeup-of-usb-devices)
+[Remote Wakeup of USB Devices](https://docs.microsoft.com/windows-hardware/drivers/usbcon/remote-wakeup-of-usb-devices)
 
-[Overview of Wait/Wake Operation](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/overview-of-wait-wake-operation)
+[Overview of Wait/Wake Operation](https://docs.microsoft.com/windows-hardware/drivers/kernel/overview-of-wait-wake-operation)
 
 The version of the Windows operating system determines the way drivers for non-composite devices enable selective suspend.
 
