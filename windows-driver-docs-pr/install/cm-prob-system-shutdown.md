@@ -16,13 +16,9 @@ ms.localizationpriority: medium
 
 This function is reserved for system use.
 
-
-
-
-
 The device is not available because the system is shutting down.
 
-### Error Code
+## Error Code
 
 46
 
@@ -35,12 +31,3 @@ The device is not available because the system is shutting down.
 ### Recommended Resolution (Windows XP and later versions of Windows)
 
 None. This error code is only set when Driver Verifier is enabled and all applications have already been shut down.
-
- 
-
- 
-
-
-
-
-

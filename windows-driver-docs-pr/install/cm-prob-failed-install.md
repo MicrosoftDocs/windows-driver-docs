@@ -16,29 +16,16 @@ ms.localizationpriority: medium
 
 This function is reserved for system use.
 
-
-
-
-
 The device's drivers are not installed.
 
-### Error Code
+## Error Code
 
 28
 
-### Display Message (Windows 2000 and later versions of Windows)
+### Display Message
 
 "The drivers for this device are not installed. (Code 28)"
 
-### Recommended Resolution (Windows 2000 and later versions of Windows)
+### Recommended Resolution
 
 Please visit the website of the company that manufactures the device and look for the most recent drivers for this device.
-
- 
-
- 
-
-
-
-
-

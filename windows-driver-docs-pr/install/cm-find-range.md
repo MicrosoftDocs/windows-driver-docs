@@ -15,16 +15,3 @@ ms.localizationpriority: medium
 # CM_Find_Range
 
 This function is reserved for system use.
-
-
-
-
-
- 
-
- 
-
-
-
-
-

@@ -16,29 +16,16 @@ ms.localizationpriority: medium
 
 This function is reserved for system use.
 
-
-
-
-
 The driver has been disabled.
 
-### Error Code
+## Error Code
 
 32
 
-### Display Message (Windows 2000 and later versions of Windows)
+### Display Message
 
 "A driver (service) for this device has been disabled. An alternate driver may be providing this functionality. (Code 32)"
 
-### Recommended Resolution (Windows 2000 and later versions of Windows)
+### Recommended Resolution
 
 The start type for this service is set to Disabled in the registry. If the driver really is required, change the start type.
-
- 
-
- 
-
-
-
-
-

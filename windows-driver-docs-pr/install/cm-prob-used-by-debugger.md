@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This function is reserved for system use.
 
-### Error
+## Error
 
 53
 
@@ -25,5 +25,3 @@ This function is reserved for system use.
 ### Recommended Resolution (Windows 8.1 and later versions of Windows)
 
 Disable Windows kernel debugging to allow the device to start normally.
-
-
