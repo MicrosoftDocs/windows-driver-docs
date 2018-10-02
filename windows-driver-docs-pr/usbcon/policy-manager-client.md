@@ -14,10 +14,6 @@ ms.localizationpriority: medium
 
 The Microsoft-provided USB Type-C Policy Manager monitors the activities of USB Type-C connectors. Windows, version 1809, introduces a set of programming interfaces that you can use to write a client driver to Policy Manager (called a _PM client driver_ in this topic). The client driver can participate in the policy decisions for USB Type-C connectors. With this set, you can choose to write a kernel-mode export driver or a user-mode driver.
 
-For example, your PM client driver can control the charging policy of your device depending on thermal conditions. Power Delivery (PD) allows a device and the charger to negotiate a charger voltage of between 5V and 20V and a USB current draw of up to 3A. This enables up to 80% faster faster charging compared to standard voltage USB charging mechanisms. However, charging at higher voltages causes more thermal dissipation than at lower voltages. If the device temperature goes over a device-specific threshold, the device aggressively reduces the charging current draw by 50% or more until the device’s temperature stabilizes, increasing the charging time significantly. In addition, the device also throttles its CPU speed, causing it performance issues.
-
-To get the best of high-voltage charging while minimizing the adverse impact from the increased temperature, the PD power contract’s voltage must be managed depending on the device’s current temperature and various other factors (such as the battery level). Those policy decisions can be handled by your PM client driver to avoid the device from getting overheated.
-
 The Policy Manager gets and coordinates the information from the USB Connector Manager (UCM), USB host controller, and USB function, and your PM client driver. When UI notification is required, the Policy Manager sends the request to system Shell.
 
 ![Architechtural block diagram for USB Policy Manager](images/pmclient.png)
