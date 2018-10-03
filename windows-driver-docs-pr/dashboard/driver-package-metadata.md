@@ -70,3 +70,7 @@ The file has the following values:
 |Manufacturer|string|Manufacturer of the hardware ID|
 |DeviceDescription|string|Description of the hardware ID|
 |FeatureScore|string|Feature score for the driver|
+
+## See also
+
+- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

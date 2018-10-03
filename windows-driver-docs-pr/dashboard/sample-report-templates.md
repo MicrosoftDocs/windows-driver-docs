@@ -222,3 +222,5 @@ This API request payload calls for an IHV failure report for all drivers. It the
 - [Create a new report template](create-a-new-report-template.md)
 
 - [Analytics Reporting APIs (Swagger )](https://apidocs.microsoft.com/services/analyticsreportingapis)
+
+- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
