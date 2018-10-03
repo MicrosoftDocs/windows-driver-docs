@@ -8,7 +8,7 @@ keywords:
 - KMDF WDK , revision history
 - Kernel-Mode Driver Framework WDK , revision history
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
