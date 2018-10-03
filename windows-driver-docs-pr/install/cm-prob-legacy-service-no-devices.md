@@ -16,13 +16,9 @@ ms.localizationpriority: medium
 
 This function is reserved for system use.
 
-
-
-
-
 A driver was loaded but Windows cannot find the device.
 
-### Error Code
+## Error Code
 
 41
 
@@ -35,12 +31,3 @@ A driver was loaded but Windows cannot find the device.
 Reinstall the device.
 
 This is a legacy root service that did not create a device object.
-
- 
-
- 
-
-
-
-
-

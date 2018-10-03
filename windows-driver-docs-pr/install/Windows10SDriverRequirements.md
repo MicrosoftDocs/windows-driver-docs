@@ -44,7 +44,7 @@ The following components are blocked from executing on Windows 10 S:
 -   dnx.exe
 -   fsi.exe
 -   hh.exe
--   infdefaultinstall.exe (new addition for Fall Creators update)
+-   infdefaultinstall.exe (new addition for Windows 10, version 1709)
 -   kd.exe
 -   lxssmanager.exe
 -   msbuild.exe

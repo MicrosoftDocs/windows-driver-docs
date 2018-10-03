@@ -16,29 +16,16 @@ ms.localizationpriority: medium
 
 This function is reserved for system use.
 
-
-
-
-
 The device is disabled.
 
-### Error Code
+## Error Code
 
 29
 
-### Display Message (Windows 2000 and later versions of Windows)
+### Display Message
 
 "This device is disabled because the firmware of the device did not give it the required resources. (Code 29)"
 
-### Recommended Resolution (Windows 2000 and later versions of Windows)
+### Recommended Resolution
 
 Enable the device in the BIOS.
-
- 
-
- 
-
-
-
-
-

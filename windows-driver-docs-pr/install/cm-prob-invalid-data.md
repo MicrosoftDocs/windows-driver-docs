@@ -16,31 +16,18 @@ ms.localizationpriority: medium
 
 This function is reserved for system use.
 
-
-
-
-
 Invalid [device IDs](device-ids.md) have been detected.
 
-### Error Code
+## Error Code
 
 9
 
-### Display Message (Windows XP SP1 and later versions of Windows)
+### Display Message
 
 "Windows cannot identify this hardware because it does not have a valid hardware identification number. (Code 9)"
 
 "For assistance, contact the hardware manufacturer."
 
-### Recommended Resolution (Windows XP SP1 and later versions of Windows)
+### Recommended Resolution
 
 Contact the hardware vendor. The hardware or the driver is defective.
-
- 
-
- 
-
-
-
-
-

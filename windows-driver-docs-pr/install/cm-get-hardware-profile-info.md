@@ -16,13 +16,3 @@ ms.localizationpriority: medium
 # CM_Get_Hardware_Profile_Info
 
 This function is reserved for system use.
-
-
- 
-
- 
-
-
-
-
-

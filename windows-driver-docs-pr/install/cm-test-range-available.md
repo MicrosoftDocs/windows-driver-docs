@@ -15,13 +15,3 @@ ms.localizationpriority: medium
 # CM_Test_Range_Available
 
 This function is reserved for system use.
-
-
- 
-
- 
-
-
-
-
-

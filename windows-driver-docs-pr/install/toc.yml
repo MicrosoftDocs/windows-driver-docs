@@ -937,7 +937,7 @@
     - name: "Troubleshooting Device and Driver Installations"
       href: troubleshooting-device-and-driver-installations.md
       items: 
-      - name: "Using Device Manager"
+      - name: "Device Manager for makers of devices and drivers"
         href: using-device-manager.md
         items: 
         - name: "Device Manager Error Messages"
