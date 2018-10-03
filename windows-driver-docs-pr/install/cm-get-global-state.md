@@ -15,13 +15,3 @@ ms.localizationpriority: medium
 # CM_Get_Global_State
 
 This function is reserved for system use.
-
-
- 
-
- 
-
-
-
-
-

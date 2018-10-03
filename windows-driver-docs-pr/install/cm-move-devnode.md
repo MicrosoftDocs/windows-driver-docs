@@ -15,13 +15,3 @@ ms.localizationpriority: medium
 # CM_Move_DevNode
 
 This function is reserved for system use.
-
-
- 
-
- 
-
-
-
-
-

@@ -16,29 +16,16 @@ ms.localizationpriority: medium
 
 This function is reserved for system use.
 
-
-
-
-
 The MPS table is bad and has to be updated.
 
-### Error Code
+## Error Code
 
 35
 
-### Display Message (Windows 2000 and later versions of Windows)
+### Display Message
 
 "Your computer's system firmware does not include enough information to properly configure and use this device. To use this device, contact your computer manufacturer to obtain a firmware or BIOS update. (Code 35)"
 
-### Recommended Resolution (Windows 2000 and later versions of Windows)
+### Recommended Resolution
 
 Obtain a new BIOS from the system vendor.
-
- 
-
- 
-
-
-
-
-

@@ -16,14 +16,4 @@ ms.localizationpriority: medium
 
 This function is reserved for system use.
 
-
 This function is obsolete and no longer supported.
-
- 
-
- 
-
-
-
-
-

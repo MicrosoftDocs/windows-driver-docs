@@ -15,13 +15,3 @@ ms.localizationpriority: medium
 # CM_Set_HW_Prof_Ex
 
 This function is reserved for system use.
-
-
- 
-
- 
-
-
-
-
-

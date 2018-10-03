@@ -15,16 +15,3 @@ ms.localizationpriority: medium
 # CM_Free_Range_List
 
 This function is reserved for system use.
-
-
-
-
-
- 
-
- 
-
-
-
-
-
