@@ -16,31 +16,18 @@ ms.localizationpriority: medium
 
 This function is reserved for system use.
 
-
-
-
-
 Device properties cannot be set.
 
-### Error Code
+## Error Code
 
 50
 
-### Display Message (Windows Server 2003 and later versions of Windows)
+### Display Message
 
 "Windows cannot apply all of the properties for this device. Device properties may include information that describes the device's capabilities and settings (such as security settings for example). (Code 50)"
 
 "To fix this problem, you can try reinstalling this device. However, we recommend that you contact the hardware manufacturer for a new driver."
 
-### Recommended Resolution (Windows Server 2003 and later versions of Windows)
+### Recommended Resolution
 
 Try reinstalling the device. If that does not work, obtain a new driver from the hardware vendor.
-
- 
-
- 
-
-
-
-
-

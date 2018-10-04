@@ -15,13 +15,3 @@ ms.localizationpriority: medium
 # CM_Invert_Range_List
 
 This function is reserved for system use.
-
-
- 
-
- 
-
-
-
-
-

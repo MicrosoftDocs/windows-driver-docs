@@ -148,5 +148,6 @@ The following example demonstrates an example JSON response body for this reques
 
 ## Related topics
 
-* [Get OEM hardware error reporting data](get-oem-hardware-error-reporting-data.md)
-* [Download the CAB file for an OEM hardware error](download-the-cab-file-for-an-oem-hardware-error.md)
+- [Get OEM hardware error reporting data](get-oem-hardware-error-reporting-data.md)
+
+- [Download the CAB file for an OEM hardware error](download-the-cab-file-for-an-oem-hardware-error.md)

@@ -79,5 +79,5 @@ This method returns a 302 (redirect) response code, and the **Location** header 
 
 ## Related topics
 
-* [Get OEM hardware error reporting data](get-oem-hardware-error-reporting-data.md)
-* [Get details for an OEM hardware error](get-details-for-an-oem-hardware-error.md)
+- [Get OEM hardware error reporting data](get-oem-hardware-error-reporting-data.md)
+- [Get details for an OEM hardware error](get-details-for-an-oem-hardware-error.md)

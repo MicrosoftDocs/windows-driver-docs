@@ -16,16 +16,3 @@ ms.localizationpriority: medium
 # CM_Get_Class_Name
 
 This function is reserved for system use.
-
-
-
-
-
- 
-
- 
-
-
-
-
-

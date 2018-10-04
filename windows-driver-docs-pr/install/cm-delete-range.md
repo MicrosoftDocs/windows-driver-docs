@@ -15,16 +15,3 @@ ms.localizationpriority: medium
 # CM_Delete_Range
 
 This function is reserved for system use.
-
-
-
-
-
- 
-
- 
-
-
-
-
-
