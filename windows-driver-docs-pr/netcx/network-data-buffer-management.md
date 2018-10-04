@@ -38,8 +38,8 @@ To opt in to buffer management, follow these steps:
 2. Initialize the two capabilities structures by calling one of the initialization functions. For example, a DMA-capable NIC client driver would use [**NET_ADAPTER_TX_CAPABILITIES_INIT_FOR_DMA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-net_adapter_tx_capabilities_init_for_dma) and [**NET_ADAPTER_RX_CAPABILITIES_INIT_SYSTEM_MANAGED**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-net_adapter_rx_capabilities_init_system_managed) to declare its hardware DMA capablities and to instruct the system to fully manage the data buffers on its behalf. 
 
     > [!IMPORTANT]
-    > If your hardware is DMA-capable, you will need to create a WDFDMAENABLER object prior to setting your Rx and Tx capabilities. When you configure your WDFDMAENABLER object with the [**WDF_DMA_ENABLER_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdmaenabler/ns-wdfdmaenabler-_wdf_dma_enabler_config) structure, make sure to set the **WdmDmaVersionOverride** member to **3** to specify DMA version 3.
-    
+    > If your hardware is DMA-capable, you will need to create a WDFDMAENABLER object before setting your Rx and Tx capabilities. When you configure your WDFDMAENABLER object with the [**WDF_DMA_ENABLER_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdmaenabler/ns-wdfdmaenabler-_wdf_dma_enabler_config) structure, make sure to set the **WdmDmaVersionOverride** member to **3** to specify DMA version 3.
+
 3. Pass the initialized Tx and Rx capabilities structures to the [**NetAdapterSetDatapathCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetdatapathcapabilities) method.
 
 ## Example
