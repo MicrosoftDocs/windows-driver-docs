@@ -12,7 +12,7 @@ When deciding how to provide video capture stream support within the Frame Serve
 
 The AV Stream model is the standard camera driver model using an AV Stream miniport driver (kernel mode driver). Typically AV Stream drivers fall into two main categories: MIPI based drivers and USB Video Class drivers.
 
-For Custom Media Source option, the driver model may be completely custom (i.e., proprietary) or may be based on a non-traditional camera source (such as file, or network sources).
+For the Custom Media Source option, the driver model may be completely custom (proprietary) or may be based on a non-traditional camera source (such as file, or network sources).
 
 ### AV Stream Driver
 
@@ -66,7 +66,7 @@ As a part of the Frame Server model, there are two cases in how Custom Media Sou
 
 -   During Sensor Group generation/publishing.
 
--   During “camera” activation
+-   During "camera" activation
 
 The Sensor Group generation is typically done during device installation and/or power cycle. Given this, it is strongly recommended that Custom Media Sources avoid any significant processing during it’s creation and defer any such activity to the IMFMediaSource::Start function. The Sensor Group generation will not attempt to start the Custom Media Source, merely query the various available streams/media types and source/stream attribute information.
 
@@ -80,7 +80,8 @@ The driver requirements are:
 
 -   Register your "camera" (the Custom Media Source) device interface under the KSCATEGORY\_VIDEO\_CAMERA category so it can be enumerated.
 
-NOTE: To allow enumeration by legacy DirectShow applications, your driver will need to also register under the KCATEGORY\_VIDEO and KSCATEGORY\_CAPTURE.
+> [!NOTE]
+> To allow enumeration by legacy DirectShow applications, your driver will need to also register under the KCATEGORY\_VIDEO and KSCATEGORY\_CAPTURE.
 
 -   Add a registry entry under the device interface node (use the AddReg directive in your driver INF's DDInstall.Interface section) which declares the CoCreate-able CLSID of your Custom Media Source's COM object. This must be added using the following registry value name: CustomCaptureSourceClsid.
 
@@ -219,231 +220,172 @@ REG_EXPAND_SZ = 0x00020000
 
 The above Custom Media Source registers under KSCATEGORY\_VIDEO, KSCATEGORY\_CAPTURE and KSCATEGORY\_VIDEO\_CAMERA to ensure the "camera" is discoverable by any UWP and non-UWP apps searching for a standard RGB camera.
 
-If the Custom Media Source also exposes non-RGB streams (such as IR, Depth, etc…) it may optionally also register under the KSCATEGORY\_SENSOR\_CAMERA.
+If the Custom Media Source also exposes non-RGB streams (IR, Depth, and so on) it may optionally also register under the KSCATEGORY\_SENSOR\_CAMERA.
 
-NOTE: Most USB based webcams will expose YUY2 and MJPG formats. Because of this behavior, many DirectShow/legacy applications are written with the assumption that YUY2/MJPG is available. To ensure compatibility with such application, it is recommended that YUY2 media type is made available from your Custom Media Source if legacy app compatibility is desired.
+> [!NOTE]
+> Most USB based webcams will expose YUY2 and MJPG formats. Because of this behavior, many DirectShow/legacy applications are written with the assumption that YUY2/MJPG is available. To ensure compatibility with such application, it is recommended that YUY2 media type is made available from your Custom Media Source if legacy app compatibility is desired.
 
-Stub Driver Implementation
---------------------------
+### Stub Driver Implementation
 
 In addition to the INF, the driver stub must also register and enable the camera device interfaces. This is typically done during the DRIVER\_ADD\_DEVICE operation.
 
-(See <https://msdn.microsoft.com/en-us/library/windows/hardware/ff540521(v=vs.85).aspx> for WDM based drivers and <https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdrivercreate> for UMDF/KMDF drivers).
+See the [DRIVER_ADD_DEVICE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) callback function for WDM based drivers and the [WdfDriverCreate](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdrivercreate) function for UMDF/KMDF drivers.
 
 The following is a code snip of a UMDF driver stub which handles this operation:
 
 ```C++
 NTSTATUS
-
 DriverEntry(
+    IN PDRIVER_OBJECT DriverObject,
+    IN PUNICODE_STRING RegistryPath
+    )
+/*++
 
-IN PDRIVER\_OBJECT DriverObject,
+Routine Description:
 
-IN PUNICODE\_STRING RegistryPath
+    DriverEntry initializes the driver and is the first routine called by the
+    system after the driver is loaded. DriverEntry specifies the other entry
+    points in the function driver, such as EvtDevice and DriverUnload.
 
-)
+Parameters Description:
 
-*/\*++*
+    DriverObject - represents the instance of the function driver that is loaded
+    into memory. DriverEntry must initialize members of DriverObject before it
+    returns to the caller. DriverObject is allocated by the system before the
+    driver is loaded, and it is released by the system after the system unloads
+    the function driver from memory.
 
-*Routine Description:*
+RegistryPath - represents the driver specific path in the Registry.
 
-*DriverEntry initializes the driver and is the first routine called by the*
+    The function driver can use the path to store driver related data between
+    reboots. The path does not store hardware instance specific data.
 
-*system after the driver is loaded. DriverEntry specifies the other entry*
+Return Value:
 
-*points in the function driver, such as EvtDevice and DriverUnload.*
+    STATUS_SUCCESS if successful,  
+    STATUS_UNSUCCESSFUL otherwise.
 
-*Parameters Description:*
-
-*DriverObject - represents the instance of the function driver that is loaded*
-
-*into memory. DriverEntry must initialize members of DriverObject before it*
-
-*returns to the caller. DriverObject is allocated by the system before the*
-
-*driver is loaded, and it is released by the system after the system unloads*
-
-*the function driver from memory.*
-
-*RegistryPath - represents the driver specific path in the Registry.*
-
-*The function driver can use the path to store driver related data between*
-
-*reboots. The path does not store hardware instance specific data.*
-
-*Return Value:*
-
-*STATUS\_SUCCESS if successful,*
-
-*STATUS\_UNSUCCESSFUL otherwise.*
-
-*--\*/*
+--*/
 
 {
+    WDF_DRIVER_CONFIG config;
+    NTSTATUS status;
 
-WDF\_DRIVER\_CONFIG config;
+    WDF_DRIVER_CONFIG_INIT(&config,
+                    EchoEvtDeviceAdd
+                    );
 
-NTSTATUS status;
+    status = WdfDriverCreate(DriverObject,
+                            RegistryPath,
+                            WDF_NO_OBJECT_ATTRIBUTES,
+                            &config,
+                            WDF_NO_HANDLE);
 
-WDF\_DRIVER\_CONFIG\_INIT(&config,
+    if (!NT_SUCCESS(status)) {
+        KdPrint(("Error: WdfDriverCreate failed 0x%x\n", status));
+        return status;
+        }
 
-EchoEvtDeviceAdd
+    // ...
 
-);
-
-status = WdfDriverCreate(DriverObject,
-
-RegistryPath,
-
-WDF\_NO\_OBJECT\_ATTRIBUTES,
-
-&config,
-
-WDF\_NO\_HANDLE);
-
-if (!NT\_SUCCESS(status)) {
-
-KdPrint(("Error: WdfDriverCreate failed 0x%x\n", status));
-
-return status;
-
-}
-
-*// ...*
-
-return status;
-
+    return status;
 }
 
 NTSTATUS
-
 EchoEvtDeviceAdd(
+    IN WDFDRIVER Driver,
+    IN PWDFDEVICE_INIT DeviceInit
+    )
+/*++
+Routine Description:
 
-IN WDFDRIVER Driver,
+    EvtDeviceAdd is called by the framework in response to AddDevice
+    call from the PnP manager. We create and initialize a device object to
+    represent a new instance of the device.
 
-IN PWDFDEVICE\_INIT DeviceInit
+Arguments:
 
-)
+    Driver - Handle to a framework driver object created in DriverEntry
 
-*/\*++*
+    DeviceInit - Pointer to a framework-allocated WDFDEVICE_INIT structure.
 
-*Routine Description:*
+Return Value:
 
-*EvtDeviceAdd is called by the framework in response to AddDevice*
+    NTSTATUS
 
-*call from the PnP manager. We create and initialize a device object to*
-
-*represent a new instance of the device.*
-
-*Arguments:*
-
-*Driver - Handle to a framework driver object created in DriverEntry*
-
-*DeviceInit - Pointer to a framework-allocated WDFDEVICE\_INIT structure.*
-
-*Return Value:*
-
-*NTSTATUS*
-
-*--\*/*
-
+--*/
 {
 
-NTSTATUS status;
+    NTSTATUS status;
 
-UNREFERENCED\_PARAMETER(Driver);
+    UNREFERENCED_PARAMETER(Driver);
 
-KdPrint(("Enter EchoEvtDeviceAdd\n"));
+    KdPrint(("Enter EchoEvtDeviceAdd\n"));
 
-status = EchoDeviceCreate(DeviceInit);
+    status = EchoDeviceCreate(DeviceInit);
 
-return status;
+    return status;
 
 }
 
 NTSTATUS
-
 EchoDeviceCreate(
+    PWDFDEVICE_INIT DeviceInit  
+/*++
 
-PWDFDEVICE\_INIT DeviceInit
+Routine Description:
 
-)
+    Worker routine called to create a device and its software resources.
 
-*/\*++*
+Arguments:
 
-*Routine Description:*
+    DeviceInit - Pointer to an opaque init structure. Memory for this
+                    structure will be freed by the framework when the WdfDeviceCreate
+                    succeeds. So don't access the structure after that point.
 
-*Worker routine called to create a device and its software resources.*
+Return Value:
 
-*Arguments:*
+    NTSTATUS
 
-*DeviceInit - Pointer to an opaque init structure. Memory for this*
+--*/  
+{
+    WDF_OBJECT_ATTRIBUTES deviceAttributes;
+    PDEVICE_CONTEXT deviceContext;
+    WDF_PNPPOWER_EVENT_CALLBACKS pnpPowerCallbacks;
+    WDFDEVICE device;
+    NTSTATUS status;
+    UNICODE_STRING szReference;
+    RtlInitUnicodeString(&szReference, L"CustomCameraSource");
 
-*structure will be freed by the framework when the WdfDeviceCreate*
+    WDF_PNPPOWER_EVENT_CALLBACKS_INIT(&pnpPowerCallbacks);
 
-*succeeds. So don't access the structure after that point.*
+    //
+    // Register pnp/power callbacks so that we can start and stop the timer as the device
+    // gets started and stopped.
+    //
+    pnpPowerCallbacks.EvtDeviceSelfManagedIoInit = EchoEvtDeviceSelfManagedIoStart;
+    pnpPowerCallbacks.EvtDeviceSelfManagedIoSuspend = EchoEvtDeviceSelfManagedIoSuspend;
 
-*Return Value:*
+    #pragma prefast(suppress: 28024, "Function used for both Init and Restart Callbacks")
+    pnpPowerCallbacks.EvtDeviceSelfManagedIoRestart = EchoEvtDeviceSelfManagedIoStart;
 
-*NTSTATUS*
-
-*--\*/*
+    //
+    // Register the PnP and power callbacks. Power policy related callbacks will be registered
+    // later in SotwareInit.
+    //
+    WdfDeviceInitSetPnpPowerEventCallbacks(DeviceInit, &pnpPowerCallbacks);
 
 {
 
-WDF\_OBJECT\_ATTRIBUTES deviceAttributes;
+WDF_FILEOBJECT_CONFIG cameraFileObjectConfig;
 
-PDEVICE\_CONTEXT deviceContext;
+WDF_OBJECT_ATTRIBUTES cameraFileObjectAttributes;
 
-WDF\_PNPPOWER\_EVENT\_CALLBACKS pnpPowerCallbacks;
-
-WDFDEVICE device;
-
-NTSTATUS status;
-
-UNICODE\_STRING szReference;
-
-RtlInitUnicodeString(&szReference, L"CustomCameraSource");
-
-WDF\_PNPPOWER\_EVENT\_CALLBACKS\_INIT(&pnpPowerCallbacks);
-
-*//*
-
-*// Register pnp/power callbacks so that we can start and stop the timer as the device*
-
-*// gets started and stopped.*
-
-*//*
-
-pnpPowerCallbacks.EvtDeviceSelfManagedIoInit = EchoEvtDeviceSelfManagedIoStart;
-
-pnpPowerCallbacks.EvtDeviceSelfManagedIoSuspend = EchoEvtDeviceSelfManagedIoSuspend;
-
-\#pragma prefast(suppress: 28024, "Function used for both Init and Restart Callbacks")
-
-pnpPowerCallbacks.EvtDeviceSelfManagedIoRestart = EchoEvtDeviceSelfManagedIoStart;
-
-*//*
-
-*// Register the PnP and power callbacks. Power policy related callbacks will be registered*
-
-*// later in SotwareInit.*
-
-*//*
-
-WdfDeviceInitSetPnpPowerEventCallbacks(DeviceInit, &pnpPowerCallbacks);
-
-{
-
-WDF\_FILEOBJECT\_CONFIG cameraFileObjectConfig;
-
-WDF\_OBJECT\_ATTRIBUTES cameraFileObjectAttributes;
-
-WDF\_OBJECT\_ATTRIBUTES\_INIT(&cameraFileObjectAttributes);
+WDF_OBJECT_ATTRIBUTES_INIT(&cameraFileObjectAttributes);
 
 cameraFileObjectAttributes.SynchronizationScope = WdfSynchronizationScopeNone;
 
-WDF\_FILEOBJECT\_CONFIG\_INIT(
+WDF_FILEOBJECT_CONFIG_INIT(
 
 &cameraFileObjectConfig,
 
@@ -451,7 +393,7 @@ EvtCameraDeviceFileCreate,
 
 EvtCameraDeviceFileClose,
 
-WDF\_NO\_EVENT\_CALLBACK);
+WDF_NO_EVENT_CALLBACK);
 
 WdfDeviceInitSetFileObjectConfig(
 
@@ -463,113 +405,90 @@ DeviceInit,
 
 }
 
-WDF\_OBJECT\_ATTRIBUTES\_INIT\_CONTEXT\_TYPE(&deviceAttributes, DEVICE\_CONTEXT);
+WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&deviceAttributes, DEVICE_CONTEXT);
 
 status = WdfDeviceCreate(&DeviceInit, &deviceAttributes, &device);
 
-if (NT\_SUCCESS(status)) {
+if (NT_SUCCESS(status)) {
 
-*//*
+//
+// Get the device context and initialize it. WdfObjectGet_DEVICE_CONTEXT is an
+// inline function generated by WDF_DECLARE_CONTEXT_TYPE macro in the
+// device.h header file. This function will do the type checking and return
+// the device context. If you pass a wrong object handle
+// it will return NULL and assert if run under framework verifier mode.
+//
 
-*// Get the device context and initialize it. WdfObjectGet\_DEVICE\_CONTEXT is an*
-
-*// inline function generated by WDF\_DECLARE\_CONTEXT\_TYPE macro in the*
-
-*// device.h header file. This function will do the type checking and return*
-
-*// the device context. If you pass a wrong object handle*
-
-*// it will return NULL and assert if run under framework verifier mode.*
-
-*//*
-
-deviceContext = WdfObjectGet\_DEVICE\_CONTEXT(device);
+deviceContext = WdfObjectGet_DEVICE_CONTEXT(device);
 
 deviceContext-&gt;PrivateDeviceData = 0;
 
-*//*
-
-*// Create a device interface so that application can find and talk*
-
-*// to us.*
-
-*//*
+//
+// Create a device interface so that application can find and talk
+// to us.
+//
 
 status = WdfDeviceCreateDeviceInterface(
 
 device,
 
-&CAMERA\_CATEGORY,
+&CAMERA_CATEGORY,
 
-&szReference *// ReferenceString*
+&szReference // ReferenceString*
 
 );
 
-if (NT\_SUCCESS(status)) {
+if (NT_SUCCESS(status)) {
 
-*//*
-
-*// Create a device interface so that application can find and talk*
-
-*// to us.*
-
-*//*
+//
+// Create a device interface so that application can find and talk
+// to us.
+//
 
 status = WdfDeviceCreateDeviceInterface(
 
 device,
 
-&CAPTURE\_CATEGORY,
+&CAPTURE_CATEGORY,
 
-&szReference *// ReferenceString*
-
-);
-
-}
-
-if (NT\_SUCCESS(status)) {
-
-*//*
-
-*// Create a device interface so that application can find and talk*
-
-*// to us.*
-
-*//*
-
-status = WdfDeviceCreateDeviceInterface(
-
-device,
-
-&VIDEO\_CATEGORY,
-
-&szReference *// ReferenceString*
+&szReference // ReferenceString
 
 );
 
 }
 
-if (NT\_SUCCESS(status)) {
+        if (NT_SUCCESS(status)) {
 
-*//*
+        //
+        // Create a device interface so that application can find and talk
+        // to us.
+        //
 
-*// Initialize the I/O Package and any Queues*
+        status = WdfDeviceCreateDeviceInterface(
 
-*//*
+        device,
 
-status = EchoQueueInitialize(device);
+        &VIDEO_CATEGORY,
 
-}
+        &szReference // ReferenceString
 
-}
+        );
 
-return status;
+        }
 
+        if (NT_SUCCESS(status)) {
+            //
+            // Initialize the I/O Package and any Queues
+            //
+            status = EchoQueueInitialize(device);
+        }       
+    }
+
+    return status;
 }
 ```
 
-PnP Operation
--------------
+### PnP Operation
 
 Just like any other physical camera, it is recommended that your stub driver manage at least the PnP operations of enabling and disabling the device when the underlying source is removed/attached. For example, if your Custom Media Source is using a network source (such as an IP camera), you may want to trigger a device removal when that network source is no longer available.
 
@@ -577,10 +496,9 @@ This ensures that applications listen for device add/removal via the PnP APIs ge
 
 For UMDF/KMDF, see <https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicesetdevicestate>.
 
-For WMD, see <https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetdeviceinterfacestate>. <span id="_Toc256071273" class="anchor"></span>
+For WMD, see <https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetdeviceinterfacestate>.
 
-Custom Media Source DLL
-=======================
+## Custom Media Source DLL
 
 The Custom Media Source is a standard inproc COM server which must implement the following interfaces:
 
@@ -594,7 +512,8 @@ The Custom Media Source is a standard inproc COM server which must implement the
 
 -   IMFGetService
 
-NOTE: IMFMediaSourceEx inherits from IMFMediaSource and IMFMediaSource inherits from IMFMediaEventGenerator.
+> [!NOTE]
+> IMFMediaSourceEx inherits from IMFMediaSource and IMFMediaSource inherits from IMFMediaEventGenerator.
 
 And each supported stream within the Custom Media Source must support the following interfaces:
 
@@ -604,11 +523,12 @@ And each supported stream within the Custom Media Source must support the follow
 
 -   IMFMediaStream2
 
-NOTE: IMFMediaStream2 inherits from IMFMediaStream. And IMFMediaStream inherits from IMFMediaEventGenerator.
+> [!NOTE]
+> IMFMediaStream2 inherits from IMFMediaStream. And IMFMediaStream inherits from IMFMediaEventGenerator.
 
 Please refer to the MSDN documentation: <https://msdn.microsoft.com/en-us/library/windows/desktop/ms700134(v=vs.85).aspx> on how to create a Custom Media Source. The rest of this section will explain the differences needed to support your Custom Media Source with in the Frame Server framework.
 
-IMFGetService
+### IMFGetService
 -------------
 
 IMFGetService is a mandatory interface for Frame Server Custom Media Source. IMFGetService may return MF\_E\_UNSUPPORTED\_SERVICE if your Custom Media Source do not need to expose any additional service interfaces.
@@ -647,16 +567,15 @@ return E\_POINTER;
 
 \*ppvObject = NULL;
 
-*// We have no supported service, just return*
+// We have no supported service, just return*
 
-*// MF\_E\_UNSUPPORTED\_SERVICE for all calls.*
+// MF\_E\_UNSUPPORTED\_SERVICE for all calls.*
 
 return MF\_E\_UNSUPPORTED\_SERVICE;
 
 }
 
-IMFMediaEventGenerator
-----------------------
+### IMFMediaEventGenerator
 
 As shown above, both the source and the individual streams within the source must support their own IMFMediaEventGenerator interface. The entire MF pipeline data and control flows from the source is managed through the event generator by sending specific IMFMediaEvent.
 
@@ -796,15 +715,14 @@ return hr;
 
 }
 
-Seeking and Pausing
+### Seeking and Pausing
 -----------------
 
 Custom Media Sources supported through the Frame Server framework do not support Seek nor Pause operations. Your Custom Media Source does not need to provide support for these operations and must NOT post either the MFSourceSeeked nor MEStreamSeeked event.
 
 IMFMediaSource::Pause should return MF\_E\_INVALID\_STATE\_TRANSITION (or MF\_E\_SHUTDOWN if the source was already shutdown).
 
-IKsControl
-----------
+### IKsControl
 
 IKsControl is the standard control interface for all camera related controls. If your Custom Media Source implements any camera controls the IKsControl interface is how the pipeline will route the control I/O.
 
@@ -900,8 +818,7 @@ return HRESULT\_FROM\_WIN32(ERROR\_SET\_NOT\_FOUND);
 
 }
 
-IMFMediaStream2
----------------
+### IMFMediaStream2
 
 As explained in the MSDN documentation on Writing a Custom Media Source, the IMFMediaStream2 interface is provided to the frame work from your Custom Media Source via an MENewStream media event posted to the source event queue during the completion of the IMFMediaSource::Start method:
 
@@ -961,9 +878,9 @@ return MF\_E\_INVALID\_STATE\_TRANSITION;
 
 \_sourceState = SourceState::Started;
 
-*// This checks the passed in PresentationDescriptor matches the member of streams we *
+// This checks the passed in PresentationDescriptor matches the member of streams we *
 
-*// have defined internally and that at least one stream is selected*
+// have defined internally and that at least one stream is selected*
 
 RETURN\_IF\_FAILED (\_ValidatePresentationDescriptor(pPresentationDescriptor));
 
@@ -971,7 +888,7 @@ RETURN\_IF\_FAILED (pPresentationDescriptor-&gt;GetStreamDescriptorCount(&count)
 
 RETURN\_IF\_FAILED (InitPropVariantFromInt64(MFGetSystemTime(), &startTime));
 
-*// Send event that the source started. Include error code in case it failed.*
+// Send event that the source started. Include error code in case it failed.*
 
 RETURN\_IF\_FAILED (\_spEventQueue-&gt;QueueEventParamVar(MESourceStarted,
 
@@ -981,17 +898,17 @@ hr,
 
 &startTime));
 
-*// We're hardcoding this to the first descriptor*
+// We're hardcoding this to the first descriptor*
 
-*// since this sample is a single stream sample. For*
+// since this sample is a single stream sample. For*
 
-*// multiple streams, we need to walk the list of streams*
+// multiple streams, we need to walk the list of streams*
 
-*// and for each selected stream, send the MEUpdatedStream*
+// and for each selected stream, send the MEUpdatedStream*
 
-*// or MENewStream event along with the MEStreamStarted*
+// or MENewStream event along with the MEStreamStarted*
 
-*// event.*
+// event.*
 
 RETURN\_IF\_FAILED (pPresentationDescriptor-&gt;GetStreamDescriptorByIndex(0,
 
@@ -1017,7 +934,7 @@ ComPtr&lt;IUnknown&gt; spunkStream;
 
 MediaEventType met = (\_wasStreamPreviouslySelected ? MEUpdatedStream : MENewStream);
 
-*// Update our internal PresentationDescriptor*
+// Update our internal PresentationDescriptor*
 
 RETURN\_IF\_FAILED (\_spPresentationDescriptor-&gt;SelectStream(streamIndex));
 
@@ -1025,9 +942,9 @@ RETURN\_IF\_FAILED (\_stream.Get()-&gt;SetStreamState(MF\_STREAM\_STATE\_RUNNING
 
 RETURN\_IF\_FAILED (\_stream.As(&spunkStream));
 
-*// Send the MEUpdatedStream/MENewStream to our source event*
+// Send the MEUpdatedStream/MENewStream to our source event*
 
-*// queue.*
+// queue.*
 
 RETURN\_IF\_FAILED (\_spEventQueue-&gt;QueueEventParamUnk(met,
 
@@ -1037,9 +954,9 @@ S\_OK,
 
 spunkStream.Get()));
 
-*// But for our stream started (MEStreamStarted), we post to our*
+// But for our stream started (MEStreamStarted), we post to our*
 
-*// stream event queue.*
+// stream event queue.*
 
 RETURN\_IF\_FAILED (\_stream.Get()-&gt;QueueEvent(MEStreamStarted,
 
@@ -1061,12 +978,12 @@ This must be done for each stream selected via the IMFPresentationDescriptor.
 
 For Custom Media Sources with video stream, MEEndOfStream and MEEndOfPresentation events should not be sent.
 
-Stream Attributes
------------------
+### Stream Attributes
 
 All Custom Media Source streams must have the MF\_DEVICESTREAM\_STREAM\_CATEGORY set to be PINNAME\_VIDEO\_CAPTURE. PINNAME\_VIDEO\_PREVIEW is NOT supported for Custom Media Sources.
 
-NOTE: PINNAME\_IMAGE, while supported is not recommended. Exposing a stream with PINNAME\_IMAGE requires the Custom Media Source to support all the photo trigger controls. See the section Photo Stream Controls for more details.
+> [!NOTE]
+> PINNAME\_IMAGE, while supported is not recommended. Exposing a stream with PINNAME\_IMAGE requires the Custom Media Source to support all the photo trigger controls. See the section Photo Stream Controls for more details.
 
 MF\_DEVICESTREAM\_STREAM\_ID is a mandatory attribute for all streams. It should be a 0-based index. So the first stream has an ID of 0, second stream an ID of 1, etc…
 
@@ -1076,7 +993,7 @@ The following are a list of recommended attributes on the stream:
 
 -   MF\_DEVICESTREAM\_FRAMESERVER\_SHARED
 
-### MF\_DEVICESTREAM\_ATTRIBUTE\_FRAMESOURCE\_TYPES
+#### MF\_DEVICESTREAM\_ATTRIBUTE\_FRAMESOURCE\_TYPES
 
 MF\_DEVICESTREAM\_ATTRIBUTE\_FRAMESOURCE\_TYPES is a UINT32 attribute which is a bitmasked value of stream type. It may be set to any of the following (while these types are a bitmask flag, it is recommend that source types not be mixed if at all possible):
 
@@ -1088,16 +1005,15 @@ MF\_DEVICESTREAM\_ATTRIBUTE\_FRAMESOURCE\_TYPES is a UINT32 attribute which is a
 | MFFrameSourceTypes\_Image    | 0x0008 | Image stream (non-video subtype, typically JPEG) |
 | MFFrameSourceTypes\_Custom   | 0x0080 | Custom stream type                               |
 
-### MF\_DEVICESTREAM\_FRAMESERVER\_SHARED
+#### MF\_DEVICESTREAM\_FRAMESERVER\_SHARED
 
-The MF\_DEVICESTREAM\_FRAMESERVER\_SHARED is a UINT32 attribute which can be set to either 0 or 1. If set to 1, it marks the stream as being “shareable” by the Frame Server. This will allow applications to open the stream in a shared mode, even when used by another app.
+The MF\_DEVICESTREAM\_FRAMESERVER\_SHARED is a UINT32 attribute which can be set to either 0 or 1. If set to 1, it marks the stream as being "shareable" by the Frame Server. This will allow applications to open the stream in a shared mode, even when used by another app.
 
 If this attribute is not set, Frame Server will allow the first non-marked stream to be shared (if the Custom Media Source has only one stream, that stream will be marked as shared).
 
 If this attribute is set to 0, Frame Server will block the stream from shared apps. If the Custom Media Source marks all streams with this attribute set to 0, no shared application will be able to initialize the source.
 
-Sample Allocation
------------------
+### Sample Allocation
 
 All media frames must be produced as an IMFSample. Custom Media Sources must use the MFCreateSample function to allocate an instance of IMFSample and use the AddBuffer method to add media buffers.
 
@@ -1107,7 +1023,7 @@ It is recommended that Custom Media Sources use the MFGetSystemTime() function w
 
 Custom Media Sources may use an internal clock, but all timestamps must be correlated to 100ns units based on the current QPC.
 
-### Media Buffer
+#### Media Buffer
 
 All media buffers added to the IMFSample must use the standard MF buffer allocation functions. Custom Media Sources must not implement their own IMFMediaBuffer interfaces nor attempt to allocate media buffer directly (i.e., new/malloc/VirtualAlloc/et. al. must not be used for frame data).
 
@@ -1157,7 +1073,7 @@ ComPtr&lt;IMFMediaBuffer&gt; outputBuffer;
 
 LONG pitch = IMAGE\_ROW\_SIZE\_BYTES;
 
-BYTE \*bufferStart = nullptr; *// not used*
+BYTE \*bufferStart = nullptr; // not used*
 
 DWORD bufferLength = 0;
 
@@ -1221,10 +1137,9 @@ return hr;
 
 }
 
-Redstone 5 Extension
-====================
+## Windows 10, version 1809 Extension
 
-In addition to the above list of interface that must be supported for a Custom Media Source, one of the limitations imposed by Custom Media Source operation within the Frame Server architecture is that there can only be one instance of the UMDF driver “activated” through the pipeline.
+In addition to the above list of interface that must be supported for a Custom Media Source, one of the limitations imposed by Custom Media Source operation within the Frame Server architecture is that there can only be one instance of the UMDF driver "activated" through the pipeline.
 
 For example, if you have a physical device which installs a UMDF stub driver in addition to it’s non-AV Stream driver package, and you attach more than one of those physical devices to a computer, while each instance of the UMDF driver will get a unique symbolic link name, the activation path for the Custom Media Source will not have a means to communicate the symbolic link name associated with the Custom Media Source at the time of creation.
 
@@ -1232,18 +1147,19 @@ Custom Media Source may look for the standard MF\_DEVSOURCE\_ATTRIBUTE\_SOURCE\_
 
 However, this may result in a higher start up latency since this will defer in the HW resource acquisition to start time rather than creation/initialization time.
 
-Because of this, in Windows 10 Redstone (RS) 5, Custom Media Sources may optionally expose an IMFActivate interface.
+Because of this, in Windows 10, version 1809, Custom Media Sources may optionally expose an IMFActivate interface.
 
-NOTE: IMFActivate inherits from IMFAttributes
+> [!NOTE] 
+> IMFActivate inherits from IMFAttributes.
 
-IMFActivate
------------
+### IMFActivate
 
 If the COM server for the Custom Media Source supports IMFActivate interface, the device initialization information will be provided to the COM server through the IMFAttributes inherited by the IMFActivate. So when the IMFActivate::ActivateObject is invoked, the attribute store of the IMFActivate will contain the symbolic link name of the UMDF stub driver and any additional configuration settings provided by the pipeline/application at the time of the the source creation/initialization.
 
 The Custom Media Source should use this method invocation to acquire any hardware resources it needs.
 
-NOTE: If the hardware resource acquisition takes greater than 200 milliseconds, it is recommended hardware resource is asynchronously acquired. The activation of the Custom Media Source should not block on the hardware resource acquisition. Instead IMFMediaSource::Start operation should be serialized against the hardware resource acquisition.
+> [!NOTE]
+> If the hardware resource acquisition takes greater than 200 milliseconds, it is recommended hardware resource is asynchronously acquired. The activation of the Custom Media Source should not block on the hardware resource acquisition. Instead IMFMediaSource::Start operation should be serialized against the hardware resource acquisition.
 
 The two additional methods exposed by IMFActivate: DetachObject and ShutdownObject must return E\_NOTIMPL.
 
@@ -1251,8 +1167,7 @@ The Custom Media Source may choose to implement the IMFActivate and IMFAttribute
 
 If the Custom Media Source does NOT implement the IMFActivate and IMFAttributes with the same object, the Custom Media Source must copy all the attributes set on the IMFActivate’s attribute store into the Custom Media Source’s source attribute store.
 
-Encoded Camera Stream
-=====================
+## Encoded Camera Stream
 
 A Custom Media Source may expose compressed media types (HEVC or H264 elementary streams) and the OS pipeline fully supports the source and configuration of the encoding parameters on the Custom Media Source (the encoding parameters are communicated through the ICodecAPI, which is routed as an IKsControl::KsProperty call):
 
@@ -1288,8 +1203,7 @@ Where Encoder Property GUID is the list of available properties defined in <http
 
 The payload of the Encoder Property will be passed in through the *pPropertyData* field of the KsProperty method declared above.
 
-Capture Engine Requirements
----------------------------
+### Capture Engine Requirements
 
 While encoded sources are fully supported by Frame Server, the client side Capture Engine (IMFCaptureEngine) which is used by the Windows.Media.Capture.MediaCapture object imposes additional requirements:
 
@@ -1297,10 +1211,10 @@ While encoded sources are fully supported by Frame Server, the client side Captu
 
 -   There must be at least one uncompressed stream available.
 
-NOTE: These requirements are in addition to the Custom Media Source requirements in this document. However, the Capture Engine Requirements are only enforced when the client application uses the Custom Media Source via the IMFCaptureEngine or Windows.Media.Capture.MediaCapture API.
+> [!NOTE]
+> These requirements are in addition to the Custom Media Source requirements in this document. However, the Capture Engine Requirements are only enforced when the client application uses the Custom Media Source via the IMFCaptureEngine or Windows.Media.Capture.MediaCapture API.
 
-Camera Profiles (available in Redstone 4+).
-===========================================
+## Camera Profiles (available in Windows 10, version 1803 and later)
 
 Camera Profile support is available for Custom Media Sources. The recommended mechanism is to publish the profile through the MF\_DEVICEMFT\_SENSORPROFILE\_COLLECTION attribute off the source attribute (IMFMediaSourceEx::GetSourceAttributes).
 
@@ -1340,23 +1254,23 @@ ComPtr&lt;IMFSensorProfileCollection&gt; profileCollection;
 
 ComPtr&lt;IMFSensorProfile&gt; profile;
 
-*// Create our source attribute store.*
+// Create our source attribute store.*
 
 RETURN\_IF\_FAILED (MFCreateAttributes(\_spAttributes.GetAddressOf(), 1));
 
-*// Create an empty profile collection...*
+// Create an empty profile collection...*
 
 RETURN\_IF\_FAILED (MFCreateSensorProfileCollection(&profileCollection));
 
-*// In this example since we have just one stream, we only have one*
+// In this example since we have just one stream, we only have one*
 
-*// pin to add: Pin0.*
+// pin to add: Pin0.*
 
-*// Legacy profile is mandatory. This is to ensure non-profile*
+// Legacy profile is mandatory. This is to ensure non-profile*
 
-*// aware applications can still function, but with degraded*
+// aware applications can still function, but with degraded*
 
-*// feature sets.*
+// feature sets.*
 
 RETURN\_IF\_FAILED (MFCreateSensorProfile(KSCAMERAPROFILE\_Legacy, 0, nullptr,
 
@@ -1366,7 +1280,7 @@ RETURN\_IF\_FAILED (profile-&gt;AddProfileFilter(0, L"((RES==;FRT&lt;=30,1;SUT==
 
 RETURN\_IF\_FAILED (profileCollection-&gt;AddProfile(profile.Get()));
 
-*// High Frame Rate profile will only allow &gt;=60fps.*
+// High Frame Rate profile will only allow &gt;=60fps.*
 
 RETURN\_IF\_FAILED (MFCreateSensorProfile(KSCAMERAPROFILE\_HighFrameRate, 0, nullptr,
 
@@ -1376,7 +1290,7 @@ RETURN\_IF\_FAILED (profile-&gt;AddProfileFilter(0, L"((RES==;FRT&gt;=60,1;SUT==
 
 RETURN\_IF\_FAILED (profileCollection-&gt;AddProfile(profile.Get()));
 
-*// Se the profile collection to the attribute store of the IMFTransform.*
+// Se the profile collection to the attribute store of the IMFTransform.*
 
 RETURN\_IF\_FAILED (\_spAttributes-&gt;SetUnknown(MF\_DEVICEMFT\_SENSORPROFILE\_COLLECTION,
 
@@ -1388,8 +1302,7 @@ return \_spAttributes.CopyTo(sourceAttributes);
 
 }
 
-Face Auth Profile
------------------
+### Face Auth Profile
 
 If the Custom Media Source is designed to support Windows Hello Facial Recognition, then it is recommended to publish a Face Auth Profile. The requirements of Face Auth Profile are:
 
@@ -1403,8 +1316,7 @@ If the Custom Media Source is designed to support Windows Hello Facial Recogniti
 
 It is recommended that the Face Auth Profile only advertise one media type for each of the IR and RGB streams.
 
-Photo Stream Controls
-=====================
+## Photo Stream Controls
 
 If independent photo streams are exposed by marking one of the stream’s MF\_DEVICESTREAM\_STREAM\_CATEGORY as PINNAME\_IMAGE, then a stream with stream category of PINNAME\_VIDEO\_CAPTURE is required (i.e., a single stream exposing just the PINNAME\_IMAGE is not a valid media source).
 
