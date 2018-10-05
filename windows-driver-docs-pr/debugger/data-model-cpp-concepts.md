@@ -2,7 +2,7 @@
 title: Debugger Data Model C++ Concepts
 description: This topic describes concepts in Debugger C++ Data Model.
 ms.author: domars
-ms.date: 09/26/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ IDynamicConceptProviderConcept | The object is a dynamic provider of concepts an
 
 Any model object which is attached to another model object as a parent model must directly support the data model concept. The data model concept requires support of an interface, IDataModelConcept defined as follows. 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDataModelConcept, IUnknown)
 {
     STDMETHOD(InitializeObject)(_In_ IModelObject* modelObject, _In_opt_ IDebugHostTypeSignature* matchingTypeSignature, _In_opt_ IDebugHostSymbolEnumerator* wildcardMatches) PURE;
@@ -74,7 +74,7 @@ DECLARE_INTERFACE_(IDataModelConcept, IUnknown)
 
 A data model can be registered as the canonical visualizer or as an extension for a given native type through the data model manager's RegisterModelForTypeSignature or RegisterExtensionForTypeSignature methods. When a model is registered via either of these methods, the data model is automatically attached as a parent model to any native object whose type matches the signature passed in the registration. At the point where that attachment is automatically made, the InitializeObject method is called on the data model. It is passed the instance object, the type signature which caused the attachment, and an enumerator which produces the type instances (in linear order) which matched any wildcards in the type signature. The data model implementation may use this method call to initialize any caches it requires. 
 
-[GetName](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idatamodelconcept-)
+[GetName](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idatamodelconcept-getname)
 
 If a given data model is registered under a default name via the RegisterNamedModel method, the registered data model's IDataModelConcept interface must return that name from this method. Note that it is perfectly legitimate for a model to be registered under multiple names (the default or best one should be returned here). A model may be completely unnamed (so long as it is not registered under a name). In such circumstances, the GetName method should return E_NOTIMPL. 
 
@@ -83,14 +83,14 @@ If a given data model is registered under a default name via the RegisterNamedMo
 
 An object which wishes to provide a string conversion for display purposes can implement the string displayable concept through implementation of the IStringDisplayableConcept interface. The interface is defined as follows: 
 
-```
+```cpp
 DECLARE_INTERFACE_(IStringDisplayableConcept, IUnknown)
 {
     STDMETHOD(ToDisplayString)(_In_ IModelObject* contextObject, _In_opt_ IKeyStore* metadata, _Out_ BSTR* displayString) PURE;
 }
 ```
 
-[ToDisplayString](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idatamodelconcept-)
+[ToDisplayString](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-istringdisplayableconcept-todisplaystring)
 
 The ToDisplayString method is called whenever a client wishes to convert an object into a string to display (to console, in the UI, etc...). Such a string conversion should not be used for the basis of additional programmatic manipulation. The string conversion itself may be deeply influenced by the metadata passed to the call. A string conversion should make every attempt to honor the PreferredRadix and PreferredFormat keys. 
 
@@ -101,7 +101,7 @@ An object which is a container of other objects and wishes to express the abilit
 
 The IIterableConcept is defined as follows: 
 
-```
+```cpp
 DECLARE_INTERFACE_(IIterableConcept, IUnknown)
 {
     STDMETHOD(GetDefaultIndexDimensionality)(_In_ IModelObject* contextObject, _Out_ ULONG64* dimensionality) PURE;
@@ -111,7 +111,7 @@ DECLARE_INTERFACE_(IIterableConcept, IUnknown)
 
 The IModelIterator Concept is defined as follows: 
 
-```
+```cpp
 DECLARE_INTERFACE_(IModelIterator, IUnknown)
 {
    STDMETHOD(Reset)() PURE;
@@ -148,7 +148,7 @@ At the end of iteration of the contained elements, the iterator will return E_BO
 An object which wishes to provide random access to a set of contents can support the indexable concept via support of the IIndexableConcept interface. Most objects which are indexable will be iterable as well through support of the iterable concept. This is not, however, required. If supported, there is an important relationship between the iterator and indexer. The iterator must support the GetDefaultIndexDimensionality, return a non-zero value from that method, and support the contract documented there. 
 The indexer concept interface is defined as follows: 
 
-```
+```cpp
 DECLARE_INTERFACE_(IIndexableConcept, IUnknown)
 {
     STDMETHOD(GetDimensionality)(_In_ IModelObject* contextObject, _Out_ ULONG64* dimensionality) PURE;
@@ -159,7 +159,7 @@ DECLARE_INTERFACE_(IIndexableConcept, IUnknown)
 
 An example of using the indexer (and its interplay with the iterator) is shown below. This example iterates the contents of an indexable container and uses the indexer to get back to the value which was just returned. While that operation is functionally useless as written, it demonstrates how these interfaces interact. Note that the example below does not deal with memory allocation failure. It assumes a throwing new (which might be a poor assumption depending on the environment in which the code exists -- the COM methods of the data model cannot have C++ exceptions escape): 
 
-```
+```cpp
 ComPtr<IModelObject> spObject;
 
 //
@@ -247,7 +247,7 @@ A debug host can be queried to make an attempt to determine the real runtime typ
 
 The IPreferredRuntimeTypeConcept interface is declared as follows: 
 
-```
+```cpp
 DECLARE_INTERFACE_(IPreferredRuntimeTypeConcept, IUnknown)
 {
     STDMETHOD(CastToPreferredRuntimeType)(_In_ IModelObject* contextObject, _COM_Errorptr_ IModelObject** object) PURE;
@@ -270,7 +270,7 @@ There is an additional semantic difference around extensibility between an IMode
 
 The dynamic key provider concept is defined as follows: 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDynamicKeyProviderConcept, IUnknown)
 {
     STDMETHOD(GetKey)(_In_ IModelObject *contextObject, _In_ PCWSTR key, _COM_Outptr_opt_result_maybenull_ IModelObject** keyValue, _COM_Outptr_opt_result_maybenull_ IKeyStore** metadata, _Out_opt_ bool *hasKey) PURE;
@@ -281,7 +281,7 @@ DECLARE_INTERFACE_(IDynamicKeyProviderConcept, IUnknown)
 
 The dynamic concept provider concept is defined as follows: 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDynamicConceptProviderConcept, IUnknown)
 {
     STDMETHOD(GetConcept)(_In_ IModelObject *contextObject, _In_ REFIID conceptId, _COM_Outptr_result_maybenull_ IUnknown **conceptInterface, _COM_Outptr_opt_result_maybenull_ IKeyStore **conceptMetadata, _Out_ bool *hasConcept) PURE;
@@ -308,23 +308,23 @@ The EnumerateKeys method on a dynamic key provider is effectively an override of
 - It must behave as a call to EnumerateKeys and not EnumerateKeyValues or EnumerateKeyReferences. It must return the key values not resolving any underlying property accessors (if such concept exists in the provider).
 - From the perspective of a single dynamic key provider, it is illegal to enumerate multiple keys of the same name that are physically distinct keys. This can happen on different providers that are attached through the parent model chain, but it cannot happen from the perspective of a single provider.
 
-IDynamicConceptProvider's [GetConcept](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idynamicconceptprovider-getconcept)
+IDynamicConceptProviderConcept's [GetConcept](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idynamicconceptproviderconcept-getconcept)
 
 The GetConcept method on a dynamic concept provider is effectively an override of the GetConcept method on IModelObject. The dynamic concept provider must return an interface for the queried concept if it exists as well as any metadata associated with that concept. If the concept does not exist on the provider, that must be indicated via a false value being returned in the hasConcept argument and a successful return. Failure of this method is a failure to fetch the concept and will explicitly halt the search for the concept. Returning false for hasConcept and a successful code will continue the search for the concept through the parent model tree. 
 
-IDynamicConceptProvider's [SetConcept](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idynamicconceptprovider-setconcept)
+IDynamicConceptProviderConcept's [SetConcept](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idynamicconceptproviderconcept-setconcept)
 
 The SetConcept method on a dynamic concept provider is effectively an override of the SetConcept method on IModelObject. The dynamic provider will assign the concept. This may make the object iterable, indexable, string convertible, etc... Note that a provider which does not allow the creation of concepts on it should return E_NOPTIMPL here. 
 
-IDynamicConceptProvider's [NotifyParent](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idynamicconceptprovider-notifyparent)
+IDynamicConceptProviderConcept's [NotifyParent](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idynamicconceptproviderconcept-notifyparent)
 
 The NotifyParent call on a dynamic concept provider is used by the core data model to inform the dynamic provider of the single parent model which is created to allow for bridging the "multiple parent models" paradigm of the data model to more dynamic languages. Any manipulation of that single parent model will cause further notifications to the dynamic provider. Note that this callback is made immediately upon assignment of the dynamic concept provider concept. 
 
-IDynamicConceptProvider's [NotifyParentChange](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idynamicconceptprovider-notifyparentchange)
+IDynamicConceptProviderConcept's [NotifyParentChange](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idynamicconceptproviderconcept-notifyparentchange)
 
 The NotifyParent method on a dynamic concept provider is a callback made by the core data model when a static manipulation of the object's single parent model is made. For any given parent model added, this method will be called a first time when said parent model is added and a second time if/when said parent model is removed. 
 
-IDynamicConceptProvider's [NotifyDestruct](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idynamicconceptprovider-notifydestruct)
+IDynamicConceptProviderConcept's [NotifyDestruct](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idynamicconceptproviderconcept-notifydestruct)
 
 The NotifyDestruct method on a dynamic concept provider is a callback made by the core data model at the start of destruction of the object which is a dynamic concept provider. It provides additional clean up opportunities to clients which require it. 
 

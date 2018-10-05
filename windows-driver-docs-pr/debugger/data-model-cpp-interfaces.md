@@ -79,7 +79,7 @@ IDebugHostTypeSignature | Represents a type signature -- a definition which will
 
 The IDebugHost interface is the core interface of any data model host. It is defined as follows: 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDebugHost, IUnknown)
 {
     STDMETHOD(GetHostDefinedInterface)(_COM_Outptr_ IUnknown** hostUnk) PURE;
@@ -106,14 +106,14 @@ Note that property values on the default metadata store must be manually resolve
 
 The IDebugHostStatus interface allows a client of the data model or the debug host to inquire about certain aspects of the debug host's status. The interface is defined as follows: 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDebugHostStatus, IUnknown)
 {
     STDMETHOD(PollUserInterrupt)(_Out_ bool* interruptRequested) PURE;
 }
 ```
 
-[PollUserInterrupt](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughoststatus-)
+[PollUserInterrupt](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughoststatus-polluserinterrupt)
 
 The PollUserInterrupt method is used to inquire whether the user of the debug host has requested an interruption of the current operation. A property accessor in the data model may, for instance, call into arbitrary code (e.g.: a JavaScript method). That code may take an arbitrary amount of time. In order to keep the debug host responsive, any such code which may take an arbitrary amount of time should check for an interrupt request via calling this method. If the interruptRequested value comes back as true, the caller should immediately abort and return a result of E_ABORT. 
 
@@ -137,7 +137,7 @@ The contexts of a host context are largely opaque to the caller. The only operat
 
 The IDebugHostContext interface is defined as follows: 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDebugHostContext, IUnknown)
 {
     STDMETHOD(IsEqualTo)(_In_ IDebugHostContext *pContext, _Out_ bool *pIsEqual) PURE;
@@ -153,7 +153,7 @@ The IsEqualTo method compares a host context to another host context. If the two
 
 The IDebugHostErrorSink is a means by which a client can receive notifications of errors which occur during certain operations and route those errors where needed. The interface is defined as follows: 
 
-```
+```cpp
 enum ErrorClass
 {
     ErrorClassWarning,
@@ -161,7 +161,7 @@ enum ErrorClass
 }
 ```
 
-```
+```cpp
 DECLARE_INTERFACE_(IDebugHostErrorSink, IUnknown)
 {
     STDMETHOD(ReportError)(_In_ ErrorClass errClass, _In_ HRESULT hrError, _In_ PCWSTR message) PURE;
@@ -179,7 +179,7 @@ One of the most important pieces of functionality which the debug host provides 
 
 The interfaces are defined as follows: 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDebugHostEvaluator2, IDebugHostEvaluator)
 {
     //
@@ -215,7 +215,7 @@ The AssignTo method performs assignment according to the semantics of the langua
 Certain functionality of the debug host is optionally subject to extensibility. This may, for instance, include the expression evaluator. The IDebugHostExtensibility interface is the means by which these extensibility points are accessed. 
 The interface is defined as follows: 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDebugHostExtensibility, IUnknown)
 {
     STDMETHOD(CreateFunctionAlias)(_In_ PCWSTR aliasName, _In_ IModelObject *functionObject) PURE;
@@ -248,7 +248,7 @@ While the data model APIs -- those that begin IDataModel*, IDebugHost*, and the 
 
 As mentioned, when DebugExtensionInitialize is called, it creates a debug client and gets access to the data model. Such access is provided by a bridge interface between the legacy IDebug* interfaces of Debugging Tools for Windows and the data model. This bridge interface is 'IHostDataModelAccess and is defined as follows: 
 
-```
+```cpp
 DECLARE_INTERFACE_(IHostDataModelAccess, IUnknown)
 {
    STDMETHOD(GetDataModel)(_COM_Outptr_ IDataModelManager** manager, _COM_Outptr_ IDebugHost** host) PURE;
@@ -302,7 +302,7 @@ IDebugHostExtensibility | An interface for extending the capabilities of the hos
 
 The IDebugHostSymbols interface is the main starting point to access symbols in the debug target. This interface can be queried from an instance of IDebugHost and is defined as follows: 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDebugHostSymbols, IUnknown)
 {
     STDMETHOD(CreateModuleSignature)(_In_z_ PCWSTR pwszModuleName, _In_opt_z_ PCWSTR pwszMinVersion, _In_opt_z_ PCWSTR pwszMaxVersion, _Out_ IDebugHostModuleSignature** ppModuleSignature) PURE;
@@ -357,7 +357,7 @@ If the analysis cannot find a runtime type or cannot find a runtime type differe
 Every symbol that can be returned from the data model host will derive in some fashion from IDebugHostSymbol. This is the core interface that every symbol implements regardless of the kind of symbol. Depending on the kind of symbol, a given symbol may implement a set of other interfaces which return attributes more unique to the particular kind of symbol represented by this interface. The IDebugHostSymbol2 / 
 IDebugHostSymbol interface is defined as follows: 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDebugHostSymbol2, IDebugHostSymbol)
 {
     // 
@@ -408,7 +408,7 @@ Projected at the data model level via the Debugger.Models.Module data model. Thi
 
 The IDebugHostModule interface is defined as follows (ignoring methods that are generic to IDebugHostSymbol): 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDebugHostModule, IDebugHostSymbol)
 {
     //
@@ -465,7 +465,7 @@ TypeIntrinsic | An intrinsic (base type). A model object which has a native type
 
 The overall IDebugHostType2 / IDebugHostType interface is defined as follows (excluding IDebugHostSymbol methods): 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDebugHostType2, IDebugHostType)
 {
     //
@@ -504,26 +504,26 @@ DECLARE_INTERFACE_(IDebugHostType2, IDebugHostType)
 
 The following IDebugHostType methods are general to any type regardless of what kind is returned from the GetTypeKind method: 
 
-```
+```cpp
 STDMETHOD(GetTypeKind)(_Out_ TypeKind *kind) PURE;
 STDMETHOD(GetSize)(_Out_ ULONG64* size) PURE;
 STDMETHOD(GetBaseType)(_Out_ IDebugHostType** baseType) PURE;
 STDMETHOD(GetHashCode)(_Out_ ULONG* hashCode) PURE;
 ```
 
-[GetTypeKind](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostype-gettypekind)
+[GetTypeKind](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttype-gettypekind)
 
 The GetTypeKind method returns what kind of type (pointer, array, intrinsic, etc...) the symbol refers to. 
 
-[GetSize](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostype-getsize)
+[GetSize](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttype-getsize)
 
 The GetSize method returns the size of the type (as if one had done sizeof(type) in C++). 
 
-[GetBaseType](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostype-getbasetype)
+[GetBaseType](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttype-getbasetype)
 
 If the type is a derivative of another single type (e.g.: as MyStruct * is derived from MyStruct'), the GetBaseType method returns the base type of the derivation. For pointers, this returns the type pointed to. For arrays, this returns what the array is an array of. If the type is not such a derivative type, an error is returned. 
 
-[GetHashCode](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostype-gethashcode)
+[GetHashCode](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttype-gethashcode)
 
 The GetHashCode method returns a 32-bit hash code for the type. With the exception of a global match (e.g.: a type signature equivalent to * which matches everything if permitted by the host), any type instance which can match a particular type signature must return the same hash code. 
 This method is used in conjunction with type signatures in order to match type signatures to type instances. 
@@ -533,11 +533,11 @@ This method is used in conjunction with type signatures in order to match type s
 
 The following IDebugHostType methods are specific to intrinsic types (or types which hold intrinsic data such as enums): 
 
-```
+```cpp
 STDMETHOD(GetIntrinsicType)(_Out_opt_ IntrinsicKind *intrinsicKind, _Out_opt_ VARTYPE *carrierType) PURE;
 ```
 
-[GetIntrinsicType](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostype-getintrinsictype)
+[GetIntrinsicType](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttype-getintrinsictype)
 
 The GetIntrinsicType method returns information about what kind of intrinsic the type is. Two values are returned out of this method: 
 
@@ -551,11 +551,11 @@ The combination of the two values provides the full set of information about the
 
 The following IDebugHostType methods are specific to types which store data in bitfields. Information about bitfield placement within an intrinsic is stored as part of the type symbol in the data model rather than being an attribute of the location. 
 
-```
+```cpp
 STDMETHOD(GetBitField)(_Out_ ULONG* lsbOfField, _Out_ ULONG* lengthOfField) PURE;
 ```
 
-[GetBitField](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostype-getbitfield)
+[GetBitField](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttype-getbitfield)
 
 If a given member of a data structure is a bitfield (e.g.: ULONG MyBits:8), the type information for the field carries with it information about the bitfield placement. The GetBitField method can be used to retrieve that information. This method will fail on any type which is not a bitfield. This is the only reason the method will fail. Simply calling this method and looking at success/failure is sufficient to distinguish a bit field from a non-bit field. 
 If a given type does happen to be a bitfield, the field positions are defined by the half open set *(lsbOfField + lengthOfField : lsbOfField]*
@@ -565,15 +565,15 @@ If a given type does happen to be a bitfield, the field positions are defined by
 
 The following IDebugHostType methods are specific to pointer types. Such are types where GetTypeKind returns TypePointer or TypeMemberPointer': 
 
-```
+```cpp
 STDMETHOD(GetPointerKind)(_Out_ PointerKind* pointerKind) PURE;
 STDMETHOD(GetMemberType)(_Out_ IDebugHostType** memberType) PURE;
 ```
-[GetPointerKind](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostype-getpointerkind)
+[GetPointerKind](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttype-getpointerkind)
 
 For types which are pointers, the GetPointerKind method returns the kind of pointer. This is defined by the PointerKind enumeration.
 
-[GetMemberType](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostype-getmembertype)
+[GetMemberType](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttype-getmembertype)
 
 For types which are pointer-to-member (as indicated by a type kind of TypeMemberPointer), the GetMemberType method returns the class the pointer is a pointer-to-member of. 
 
@@ -590,21 +590,19 @@ Field | Meaning
 LowerBound | The base index of the array as a signed 64-bit value. For a C style array, this will always be zero. It need not be. An individual dimension of an array can be considered to start at any 64-bit index, even a negative one.
 Length | The length of the array dimension as an unsigned 64-bit value. The indicies of the array span the half open set [LowerBound, LowerBound + Length).
 Stride | Defines the stride of the array dimension. For an increase of one (from N to N + 1) in the index of this dimension, this indicates how many bytes to move forward in memory. For a C style array, this would be the size of each element of the array. It does not need to be. Padding between elements can be expressed as a stride greater than the size of each individual element. For multi-dimensional arrays, this value would indicate how to move an entire dimension forward. Consider an M x N matrix. This might be described in row-major form as two dimensions: 
-   ```
-   { [LowerBound: 0, Length: M, Stride: N \* sizeof(element)], [LowerBound: 0, Length: N, Stride: sizeof(element)]} 
-   ```
-   or it might be alternatively be described in column-major form as two dimensions: 
-   ```
-   { [LowerBound: 0, Length: M, Stride: sizeof(element)], [LowerBound: 0, Length: N, Stride: M \* sizeof(element)]} 
-   ```
-   The ArrayDimension concept allows this degree of flexibility. 
+    
+    { [LowerBound: 0, Length: M, Stride: N \* sizeof(element)], [LowerBound: 0, Length: N, Stride: sizeof(element)]} 
 
-   The following IDebugHostType methods are specific to array types. 
+or it might be alternatively be described in column-major form as two dimensions: 
 
-   ```
-   STDMETHOD(GetArrayDimensionality)(\_Out_ ULONG64\* arrayDimensionality) PURE; 
-   STDMETHOD(GetArrayDimensions)(\_In_ ULONG64 dimensions, \_Out_writes_(dimensions) ArrayDimension \*pDimensions) PURE;
-   ```
+    { [LowerBound: 0, Length: M, Stride: sizeof(element)], [LowerBound: 0, Length: N, Stride: M \* sizeof(element)]} 
+
+The ArrayDimension concept allows this degree of flexibility. 
+
+The following IDebugHostType methods are specific to array types. 
+   
+    STDMETHOD(GetArrayDimensionality)(\_Out_ ULONG64\* arrayDimensionality) PURE; 
+    STDMETHOD(GetArrayDimensions)(\_In_ ULONG64 dimensions, \_Out_writes_(dimensions) ArrayDimension \*pDimensions) PURE;
 
 [GetArrayDimensionality](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttype-getarraydimensionality)
 
@@ -625,7 +623,7 @@ For C-style arrays, a single array dimension is returned here with values which 
 
 Types which indicate that they are function types via a kind of TypeFunction support the following methods in both IDebugHostType and IDebugHostType2. 
 
-```
+```cpp
 //
 // IDebugHostType:
 //
@@ -672,7 +670,7 @@ The GetFunctionVarArgsKind method returns whether a given function utilizes a va
 
 Any type which is a typedef will behave as if the type is the final type underlying the typedef. This means that methods such as GetTypeKind will not indicate that the type is a typedef. Likewise, GetBaseType will not return the type the definition refers to. They will instead indicate behave as if they were called on the final definition underlying the typedef. As an example: 
 
-```
+```cpp
 typedef MYSTRUCT *PMYSTRUCT;
 typedef PMYSTRUCT PTRMYSTRUCT;
 ```
@@ -684,7 +682,7 @@ An IDebugHostType for 'either PMYSTRUCT or PTRMYSTRUCT will report the following
 
 The only difference here is how the typedef specific methods on IDebugHostType2 behave. Those methods are: 
 
-```
+```cpp
 STDMETHOD(IsTypedef)(_Out_ bool* isTypedef) PURE;
 STDMETHOD(GetTypedefBaseType)(_Out_ IDebugHostType2** baseType) PURE;
 STDMETHOD(GetTypedefFinalBaseType)(_Out_ IDebugHostType2** finalBaseType) PURE;
@@ -696,26 +694,26 @@ In this example:
 - The GetTypedefBaseType method will return MYSTRUCT * for PMYSTRUCT and PMYSTRUCT for PTRMYSTRUCT
 - The GetTypedefFinalBaseType method will return MYSTRUCT * for both types
 
-[IsTypedef](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttype-istypedef])
+[IsTypedef](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttype2-istypedef)
 
 The IsTypedef method is the only method capable of seeing whether a type is a typedef. The GetTypeKind method will behave as if called on the underlying type. 
 
-[GetTypedefBaseType](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttype-gettypedefbasetype)
+[GetTypedefBaseType](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttype2-gettypedefbasetype)
 
 The GetTypedefBaseType method will return what the immediate definition of the typedef. In the examples described in the documentation: 
 
-```
+```cpp
 typedef MYSTRUCT *PMYSTRUCT;
 typedef PMYSTRUCT PTRMYSTRUCT;
 ```
 this method will return MYSTRUCT * for PMYSTRUCT and PMYSTRUCT for PTRMYSTRUCT.
 
 
-[GetTypedefFinalBaseType](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttype-gettypedeffinalbasetype])
+[GetTypedefFinalBaseType](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughosttype2-gettypedeffinalbasetype)
 
 The GetTypedefFinalBaseType method will return the final type that the typedef is a definition for. If the typedef is a definition of another typedef, this will continue to follow the definition chain until it reaches a type which is not a typedef and that type will be returned. In the examples described in the documentation: 
 
-```
+```cpp
 typedef MYSTRUCT *PMYSTRUCT;
 typedef PMYSTRUCT PTRMYSTRUCT;
 ```
@@ -724,7 +722,7 @@ this method will return MYSTRUCT * when called on either PMYSTRUCT or PTRMYSTRUC
 
 **IDebugHostType2/IDebugHostType Type Creation Methods**
 
-```
+```cpp
 STDMETHOD(CreatePointerTo)(_In_ PointerKind kind, _COM_Outptr_ IDebugHostType** newType) PURE;
 STDMETHOD(CreateArrayOf)(_In_ ULONG64 dimensions, _In_reads_(dimensions) ArrayDimension *pDimensions, _COM_Outptr_ IDebugHostType** newType) PURE;
 ```
@@ -735,7 +733,7 @@ For locations where constant values are present in symbolic information (where a
 
 The IDebugHostConstant interface is defined as follows (ignoring generic methods implemented by IDebugHostSymbol): 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDebugHostConstant, IDebugHostSymbol)
 {
     STDMETHOD(GetValue)(_Out_ VARIANT* value) PURE;
@@ -751,7 +749,7 @@ The GetValue method returns the value of the constant packed into a VARIANT. It 
 
 The IDebugHostField class represents a symbol which is a data member of a class, structure, union, or other type construct. It does not represent free data (e.g.: global data). The interface is defined as follows (ignoring methods generic to IDebugHostSymbol): 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDebugHostField, IDebugHostSymbol)
 {
     STDMETHOD(GetLocationKind)(_Out_ LocationKind *locationKind) PURE;
@@ -761,7 +759,7 @@ DECLARE_INTERFACE_(IDebugHostField, IDebugHostSymbol)
 }
 ```
 
-[GetLocationKind](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostfield-idebughostfield-getlocationkind)
+[GetLocationKind](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughostfield-getlocationkind)
 
 The GetLocationKind method returns what kind of location the symbol is at according to the LocationKind enumeration. Such enumeration can be one of the following values: 
 
@@ -792,7 +790,7 @@ If the given field does not have a constant value, the GetValue method will fail
 
 Data in modules which is not a member of another type is represented by the IDebugHostData interface. That interface is defined as follows (ignoring methods generic to IDebugHostSymbol): 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDebugHostData, IDebugHostSymbol)
 {
     STDMETHOD(GetLocationKind)(_Out_ LocationKind *locationKind) PURE;
@@ -824,7 +822,7 @@ The inheritance hierarchy of a given type is expressed through children of a typ
 The full inheritance hierarchy can be traversed by recursively exploring SymbolBaseClass child symbols. 
 Each of these base class symbols is expressed by the IDebugHostBaseClass interface which is defined as follows (ignoring methods generic to IDebugHostSymbol): 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDebugHostBaseClass, IDebugHostSymbol)
 {
     STDMETHOD(GetOffset)(_Out_ ULONG64* offset) PURE;
@@ -840,7 +838,7 @@ The GetOffset method returns the offset of the base class from the base address 
 
 Public symbols represent things in the public table within a symbol file. They are, in effect, export addresses. There is no type information associated with a public symbol -- only an address. Unless a public symbol is explicitly requested by the caller, the debug host prefers to return private symbols for every inquiry. A public symbol is expressed by the IDebugHostPublic interface which is defined as follows (ignoring methods which are generic to IDebugHostSymbol): 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDebugHostPublic, IDebugHostSymbol)
 {
     STDMETHOD(GetLocationKind)(_Out_ LocationKind *locationKind) PURE;
@@ -864,7 +862,7 @@ If the given public does not have a static location, the GetLocation method will
 
 Module signatures represent a means to check whether a given module meets a set of criteria regarding naming and versioning. A module signature is created via the CreateModuleSignature method on IDebugHostSymbols. It can match the module name, and an optional range of version numbers for the module. Once such a signature is created, the client receives an IDebugHostModuleSignature interface which is defined as follows: 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDebugHostModuleSignature, IUnknown)
 {
     STDMETHOD(IsMatch)(_In_ IDebugHostModule* pModule, _Out_ bool* isMatch) PURE;
@@ -879,7 +877,7 @@ The IsMatch method compares a particular module (as given by an IDebugHostModule
 
 Type signatures represent a means to check whether a given type instance meets a set of criteria about the name of the type, the generic arguments to the type, and the module that the type is located within. A type signature is created via the CreateTypeSignature method on IDebugHostSymbols. Once such a signature is created, the client receives an IDebugHostTypeSignature interface which is defined as follows: 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDebugHostTypeSignature, IUnknown)
 {
     STDMETHOD(GetHashCode)(_Out_ ULONG* hashCode) PURE;
