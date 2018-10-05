@@ -2,7 +2,7 @@
 title: Debugger Data Model C++ Objects
 description: This topic describes how to use Debugger Data Model C++ Objects and how they can extend the capabilities of the debugger.
 ms.author: domars
-ms.date: 09/27/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -141,8 +141,7 @@ and *SetContextForDataModel* methods on *IModelObject*.
 
 The *IModelObject* interface is defined as follows:
 
-```
-
+```cpp
 DECLARE_INTERFACE_(IModelObject, IUnknown)
 {
     STDMETHOD(QueryInterface)(_In_ REFIID iid, _COM_Outptr_ PVOID* iface);
@@ -188,7 +187,7 @@ DECLARE_INTERFACE_(IModelObject, IUnknown)
 
 The following are general methods applicable to any kind of object represented by an IModelObject. 
 
-```
+```cpp
 STDMETHOD(GetKind)(_Out_ ModelObjectKind *kind) PURE;
 STDMETHOD(GetContext)(_COM_Outptr_result_maybenull_ IDebugHostContext** context) PURE;
 STDMETHOD(GetIntrinsicValue)(_Out_ VARIANT* intrinsicData);
@@ -224,7 +223,8 @@ The Dereference method dereferences an object. This method can be used to derefe
 Any synthetic object which is a dictionary of key, value, and metadata tuples has a series of methods to manipulate those keys, values, and the metadata associated with them. 
 
 The value based forms of the APIs are: 
-```
+
+```cpp
 STDMETHOD(GetKeyValue)(_In_ PCWSTR key, _COM_Errorptr_opt_ IModelObject** object, _COM_Outptr_opt_result_maybenull_ IKeyStore** metadata) PURE;
 STDMETHOD(SetKeyValue)(_In_ PCWSTR key, _In_opt_ IModelObject* object) PURE;
 STDMETHOD(EnumerateKeyValues)(_COM_Outptr_ IKeyEnumerator** enumerator) PURE;
@@ -234,12 +234,14 @@ STDMETHOD(SetKey)(_In_ PCWSTR key, _In_opt_ IModelObject* object, _In_opt_ IKeyS
 STDMETHOD(EnumerateKeys)(_COM_Outptr_ IKeyEnumerator** enumerator) PURE;
 STDMETHOD(ClearKeys)() PURE;
 ```
+
 The reference based forms of the APIs are: 
 
-```
+```cpp
 STDMETHOD(GetKeyReference)(_In_ PCWSTR key, _COM_Errorptr_opt_ IModelObject** objectReference, _COM_Outptr_opt_result_maybenull_ IKeyStore** metadata) PURE;
 STDMETHOD(EnumerateKeyReferences)(_COM_Outptr_ IKeyEnumerator** enumerator) PURE;
 ```
+
 [GetKeyValue](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-imodelobject-getkeyvalue)
 
 The GetKeyValue method is the first method a client will turn to in order to get the value of (and the metadata associated with) a given key by name. If the key is a property accessor -- that is it's value as an IModelObject which is a boxed IModelPropertyAccessor, the GetKeyValue method will automatically call the property accessor's GetValue method in order to retrieve the actual value.
@@ -293,11 +295,12 @@ IDynamicConceptProviderConcept  | The object is a dynamic provider of concepts a
 
 The following methods on IModelObject are utilized to manipulate the concepts that an object supports. 
 
-```
+```cpp
 STDMETHOD(GetConcept)(_In_ REFIID conceptId, _COM_Outptr_ IUnknown** conceptInterface, _COM_Outptr_opt_result_maybenull_ IKeyStore** conceptMetadata) PURE;
 STDMETHOD(SetConcept)(_In_ REFIID conceptId, _In_ IUnknown* conceptInterface, _In_opt_ IKeyStore* conceptMetadata) PURE;
 STDMETHOD(ClearConcepts)() PURE;
 ```
+
 [GetConcept](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-imodelobject-getconcept)
 
 The GetConcept method will search for a concept on the object (or its parent model chain) and return an interface pointer to the concept interface. The behavior and methods on a concept interface are specific to each concept. It is important to note, however, that many of the concept interfaces require the caller to explicitly pass the context object (or what one might traditionally call the this pointer). It is important to ensure that the correct context object is passed to every concept interface.
@@ -315,7 +318,7 @@ The ClearConcepts method will remove all concepts from the instance of the objec
 
 While many model objects refer to intrinsics (e.g.: integers, strings) or synthetic constructs (a dictionary of key/value/metadata tuples and concepts), a model object may also refer to a native construct (e.g.: a user defined type in the address space of the debug target). The IModelObject interface has a series of methods on it which access information about such native objects. Those methods are: 
 
-```
+```cpp
 STDMETHOD(GetRawValue)(_In_ SymbolKind kind, _In_ PCWSTR name, _In_ ULONG searchFlags, _COM_Errorptr_ IModelObject** object) PURE;
 STDMETHOD(EnumerateRawValues)(_In_ SymbolKind kind, _In_ ULONG searchFlags, _COM_Outptr_ IRawEnumerator** enumerator) PURE;
 STDMETHOD(TryCastToRuntimeType)(_COM_Errorptr_ IModelObject** runtimeTypedObject) PURE;
@@ -335,7 +338,7 @@ The GetRawValue method finds a native construct within the given object. Such a 
 The EnumerateRawValues method enumerates all native children (e.g.: fields, base classes, etc...) of the given object. 
 
 
-[TryCastToRuntimeType](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-imodelobject-trycasttoruntime)
+[TryCastToRuntimeType](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-imodelobject-trycasttoruntimetype)
 
 The TryCastToRuntimeType method will ask the debug host to perform an analysis and determine the actual runtime type (e.g.: most derived class) of the given object. The exact analysis utilized is specific to the debug host and may include RTTI (C++ run time type information), examination of the V-Table(virtual function table) structure of the object, or any other means that the host can use to reliably determine dynamic/runtime type from the static type. Failure to convert to a runtime type does not mean that this method call will fail. In such cases, the method will return the given object (the this pointer) in the output argument. 
 
@@ -366,7 +369,7 @@ As described earlier, a model object behaves very similar to a JavaScript object
 
 The following methods manipulate the chain of parent models associated with a given IModelObject instance: 
 
-```
+```cpp
 STDMETHOD(GetNumberOfParentModels)(_Out_ ULONG64* numModels) PURE;
 STDMETHOD(GetParentModel)(_In_ ULONG64 i, _COM_Outptr_ IModelObject **model, _COM_Outptr_result_maybenull_ IModelObject **contextObject) PURE;
 STDMETHOD(AddParentModel)(_In_ IModelObject* model, _In_opt_ IModelObject* contextObject, _In_ bool override) PURE;
@@ -431,7 +434,7 @@ A property accessor is an indirect way to get a method call for getting and sett
 
 The IModelPropertyAccessor interface is defined as follows: 
 
-```
+```cpp
 DECLARE_INTERFACE_(IModelPropertyAccessor, IUnknown)
 {
     STDMETHOD(GetValue)(_In_ PCWSTR key, _In_opt_ IModelObject* contextObject, _COM_Outptr_ IModelObject** value) PURE;
@@ -439,11 +442,11 @@ DECLARE_INTERFACE_(IModelPropertyAccessor, IUnknown)
 }
 ```
 
-[GetValue](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-imodelobject-getvalue)
+[GetValue](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-imodelpropertyaccessor-getvalue)
 
 The GetValue method is the getter for the property accessor. It is called whenever a client wishes to fetch the underlying value of the property. Note that any caller which directly gets a property accessor is responsible for passing the key name and accurate instance object (this pointer) to the property accessor's GetValue method. 
 
-[SetValue](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-imodelobject-setvalue)
+[SetValue](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-imodelpropertyaccessor-setvalue)
 
 The SetValue method is the setter for the property accessor. It is called whenever a client wishes to assign a value to the underlying property. Many properties are read-only. In such cases, calling the SetValue method will return E_NOTIMPL. Note that any caller which directly gets a property accessor is responsible for passing the key name and accurate instance object (this pointer) to the property accessor's SetValue method. 
 
@@ -455,7 +458,7 @@ All methods in the data model are dynamic in nature. They take as input a set of
 
 The IModelMethod interface is defined as follows: 
 
-```
+```cpp
 DECLARE_INTERFACE_(IModelMethod, IUnknown)
 {
     STDMETHOD(Call)(_In_opt_ IModelObject *pContextObject, _In_ ULONG64 argCount, _In_reads_(argCount) IModelObject **ppArguments, _COM_Errorptr_ IModelObject **ppResult, _COM_Outptr_opt_result_maybenull_ IKeyStore **ppMetadata) PURE;
@@ -473,7 +476,7 @@ A key reference is, in essence, a handle to a key on a particular object. A clie
 
 The key reference interface is defined as follows: 
 
-```
+```cpp
 DECLARE_INTERFACE_(IModelKeyReference2, IModelKeyReference)
 {
     STDMETHOD(GetKeyName)(_Out_ BSTR* keyName) PURE;
@@ -517,7 +520,7 @@ The SetKey method on a key reference behaves as the SetKey method on IModelObjec
 
 The SetKeyValue method on a key reference behaves as the SetKeyValue method on IModelObject would. It will assign the value of the key. If the original key was a property accessor, this will call the underlying SetValue method on the property accessor rather than replacing the property accessor itself. 
 
-[OverrideContextObject](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-imodelkeyreference-overridecontextobject)
+[OverrideContextObject](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-imodelkeyreference2-overridecontextobject)
 
 The OverrideContextObject method (only present on IModelKeyReference2) is an advanced method which is used to permanently alter the context object which this key reference will pass to any underlying property accessor's GetValue or SetValue methods. The object passed to this method will also be returned from a call to GetContextObject. This method can be used by script providers to replicate certain dynamic language behaviors. Most clients should not call this method. 
 
@@ -536,7 +539,7 @@ For more information about context objects, see [Debugger Data Model C++ Host In
 
 The core interface to the data model manager, IDataModelManager2 (or the earlier IDataModelManager) is defined as follows: 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDataModelManager2, IDataModelManager)
 {
     //
@@ -574,7 +577,7 @@ DECLARE_INTERFACE_(IDataModelManager2, IDataModelManager)
 
 The following set of methods is utilized by the application (e.g.: debugger) hosting the data model. 
 
-```
+```cpp
 STDMETHOD(Close)() PURE;
 ```
 
@@ -586,7 +589,7 @@ The Close method is called on the data model manager by an application (e.g.: de
 
 The following set of methods is used to create new objects or to box values into an IModelObject -- the core interface of the data model. 
 
-```
+```cpp
 STDMETHOD(CreateNoValue)(_Out_ IModelObject** object) PURE;
 STDMETHOD(CreateErrorObject)(_In_ HRESULT hrError, _In_opt_ PCWSTR pwszMessage, _COM_Outptr_ IModelObject** object) PURE;
 STDMETHOD(CreateTypedObject)(_In_opt_ IDebugHostContext* context, _In_ Location objectLocation, _In_ IDebugHostType* objectType, _COM_Errorptr_ IModelObject** object) PURE;
@@ -647,14 +650,14 @@ The CreateTypedintrinsicObject method is similar to the CreateIntrinsicObject me
 The CreateMetadataStore method creates a key store -- a simplified container of key/value/metadata tuples -- which is used to hold metadata that can be associated with properties and a variety of other values. 
 A metadata store may have a single parent (which in turn can have a single parent). If a given metadata key is not located in a given store, its parents are checked. Most metadata stores do not have parents. It does, however, provide a way of sharing common metadata easily. 
 
-[CreateTypedIntrinsicObjectEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idatamodelmanager-createtypedintrinsicobjectex)
+[CreateTypedIntrinsicObjectEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idatamodelmanager2-createtypedintrinsicobjectex)
 
 The CreateTypedIntrinsicObjectEx method is semantically similar to the CreateTypedIntrinsicObject method. The only difference between the two is that this method allows the caller to specify the context in which the intrinsic data is valid. If no context is passed, the data is considered valid in whatever context is inherited from the type argument (how CreateTypedIntrinsicObject behaves). This allows for the creation of typed pointer values in the debug target which require more specific context than can be inherited from the type. 
 
 **Extensibility / Registration Methods**
 The following set of methods manages the extensibility mechanism of the data model, allowing a client to extend or register existing models or ask the data model to automatically attach a given parent model on native types which match a given criterion.
 
-``` 
+```cpp
     STDMETHOD(GetModelForTypeSignature)(_In_ IDebugHostTypeSignature* typeSignature, _Out_ IModelObject** dataModel) PURE;
     STDMETHOD(GetModelForType)(_In_ IDebugHostType* type, _COM_Outptr_ IModelObject** dataModel, _COM_Outptr_opt_ IDebugHostTypeSignature** typeSignature, _COM_Outptr_opt_ IDebugHostSymbolEnumerator** wildcardMatches) PURE;
     STDMETHOD(RegisterModelForTypeSignature)(_In_ IDebugHostTypeSignature* typeSignature, _In_ IModelObject* dataModel) PURE;
@@ -715,7 +718,7 @@ As the primary purpose of the AcquireNamedModel method is to extend the model, t
 
 The following methods are general helper methods which assist in performing complex operations on objects in the data model. While it is possible to perform these actions via other methods on the data model or its objects, these convenience methods make it significantly easier: 
 
-```
+```cpp
 STDMETHOD(AcquireSubNamespace)(_In_ PCWSTR modelName, _In_ PCWSTR subNamespaceModelName, _In_ PCWSTR accessName, _In_opt_ IKeyStore *metadata, _COM_Outptr_ IModelObject **namespaceModelObject) PURE;
 ```
 

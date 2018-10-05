@@ -2,7 +2,7 @@
 title: Debugger Data Model C++ Additional Interfaces
 description: This topic describes  addtional interfaces associated with the Debugger C++ Data Model, such as metadata, concepts and object enumeration.
 ms.author: domars
-ms.date: 09/27/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,7 +70,7 @@ Note that while keys in the metadata store can have their own metadata (ad infin
 
 The IKeyStore interface is defined as follows: 
 
-```
+```cpp
 DECLARE_INTERFACE_(IKeyStore, IUnknown)
 {
    STDMETHOD(GetKey)(_In_ PCWSTR key, _COM_Errorptr_opt_ IModelObject** object, _COM_Outptr_opt_result_maybenull_ IKeyStore** metadata) PURE;
@@ -85,7 +85,7 @@ DECLARE_INTERFACE_(IKeyStore, IUnknown)
 
 The GetKey method is analogous to the GetKey method on IModelObject. It will return the value of the specified key if it exists in the key store or the key store's parent store. Note that if the value of the key is a property accessor, the GetValue method will not be called on the property accessor. The actual IModelPropertyAccessor boxed into an IModelObject will be returned. It is typical that a client will call GetKeyValue for this reason. 
 
-[SetKey](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-ikeystore-isetkey)
+[SetKey](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-ikeystore-setkey)
 
 The SetKey method is analogous to the SetKey method on IModelObject. It is the only method which is capable of creating a key and associating metadata with it within the key store. 
 
@@ -118,7 +118,7 @@ There are two core key enumeration interfaces in the data model: IKeyEnumerator 
 
 The IKeyEnumerator interface is the single interface for the enumeration of all keys (by key, value, or reference) within an instance object and all the associated parent models in its parent model chain. The interface is defined as follows: 
 
-```
+```cpp
 DECLARE_INTERFACE_(IKeyEnumerator, IUnknown)
 {
     STDMETHOD(Reset)() PURE;
@@ -140,7 +140,7 @@ The GetNext method both moves the enumerator forward and returns the key at that
 The IRawEnumerator interface is the single interface for the enumeration of all native/language constructs (by value or reference) within a object which represents a native construct within the address space of the debug target. 
 The interface is defined as follows: 
 
-```
+```cpp
 DECLARE_INTERFACE_(IRawEnumerator, IUnknown)
 {
     STDMETHOD(Reset)() PURE;
@@ -155,8 +155,6 @@ The Reset method resets the enumerator to the position it was at when it was fir
 [GetNext](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-irawenumerator-getnext)
 
 The GetNext method both moves the enumerator forward and returns the native/language construct at that position in the enumeration. 
-
-
 
 
 ---
@@ -174,14 +172,4 @@ The GetNext method both moves the enumerator forward and returns the native/lang
 [Debugger Data Model C++ Concepts](data-model-cpp-concepts.md)
 
 [Debugger Data Model C++ Scripting](data-model-cpp-scripting.md)
-
-
- 
-
- 
-
-
-
-
-
 
