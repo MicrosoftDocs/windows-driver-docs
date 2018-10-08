@@ -45,6 +45,30 @@ Additionally, any INF (component or not) matching on a software component device
 
 You can find an example of a component INF in the [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU).
 
+**Note**: In order for a software-enumerated component device to function, its parent must be started. If there is no driver available for the parent device, driver developers can create their own and optionally leverage the pass-through driver "umpass.sys". This driver is included in Windows and, effectively, does nothing other than start the device. In order to use umpass.sys, developers should use the Include/Needs INF directives in the [DDInstall section](inf-ddinstall-section.md) for each possible [DDInstall.\*] section to the corresponding [UmPass.\*] sections as shown below, regardless of whether the INF specifies any directives for that section or not:
+
+```
+[DDInstall]
+Include=umpass.inf
+Needs=UmPass
+; also include any existing DDInstall directives
+
+[DDInstall.HW]
+Include=umpass.inf
+Needs=UmPass.HW
+; also include any existing DDInstall.HW directives
+
+[DDInstall.Interfaces]
+Include=umpass.inf
+Needs=UmPass.Interfaces
+; also include any existing DDInstall.Interfaces directives
+
+[DDInstall.Services]
+Include=umpass.inf
+Needs=UmPass.Services
+; also include any existing any DDInstall.Services directives
+```
+
 ## Accessing a device from a software component
 
 To retrieve the device instance ID of a device that is associated with a software component, use the **SoftwareArguments** value in the [INF AddSoftware directive](inf-addsoftware-directive.md) section with the `<<DeviceInstanceID>>` runtime context variable.

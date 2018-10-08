@@ -88,7 +88,7 @@ DECLARE_INTERFACE_(IDebugHost, IUnknown)
 }
 ```
 
-[GetHostDefinedInterface](ttps://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughost-gethostdefinedinterface)
+[GetHostDefinedInterface](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebughost-gethostdefinedinterface)
 
 The GetHostDefinedInterface method returns the host's main private interface, if such exists for the given host. For Debugging Tools for Windows, the interface returned here is an IDebugClient (cast to IUnknown). 
 
