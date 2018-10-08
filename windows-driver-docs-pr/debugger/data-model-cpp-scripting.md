@@ -2,7 +2,7 @@
 title: Debugger Data Model C++ Scripting
 description: This topic describes how to use Debugger Data Model C++ scripting to support automation with the debugger engine.
 ms.author: domars
-ms.date: 10/05/2018
+ms.date: 10/08/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -389,7 +389,7 @@ The BindValue method performs the equivalent of contextObject.name on the given 
 
 The BindReference method is similar to BindValue in that it also performs the equivalent of contextObject.name on the given object according to a set of binding rules. The result of the binding from this method is, however, a reference instead of a value. As a reference, the script provider can utilize the reference to perform assignment back to name. 
 
-[EnumerateValues](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idatamodelnamebinder-eumeratevalues)
+[EnumerateValues](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idatamodelnamebinder-enumeratevalues)
 
 The EnumerateValues method enumerates the set of names and values which will bind against the object according to the rules of the BindValue method. Unlike the EnumerateKeys, EnumerateValues, and similar methods on IModelObject which may return multiple names with the same value (for base classes, parent models, and the like), this enumerator will only return the specific set of names which will bind with BindValue and BindReference. Names will never be duplicated. Note that there is a significantly higher cost of enumerating an object via the name binder than calling the IModelObject methods. 
 
