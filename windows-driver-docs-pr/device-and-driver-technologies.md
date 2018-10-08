@@ -46,7 +46,7 @@ Windows 10 Mobile is optimized for the unique needs of mobile devices. Instead 
 -   [Installable File System Drivers](https://msdn.microsoft.com/library/windows/hardware/ff551834)
 -   [Modem Devices](https://msdn.microsoft.com/library/windows/hardware/ff542573)
 -   [Multifunction Devices](https://msdn.microsoft.com/library/windows/hardware/ff542743)
--   [Network Devices](https://msdn.microsoft.com/library/windows/hardware/ff557563)
+-   [Network Devices](https://docs.microsoft.com/windows-hardware/drivers/network)
 -   [Point of Service (POS)](pos/index.md)
 -   [Print Devices](print/index.md)
 -   [Proximity Devices](https://msdn.microsoft.com/library/windows/hardware/dn905575)
@@ -56,7 +56,7 @@ Windows 10 Mobile is optimized for the unique needs of mobile devices. Instead 
 -   [Storage Devices](https://msdn.microsoft.com/library/windows/hardware/ff563893)
 -   [Streaming Media Devices](stream/index.md)
 -   [System Technologies](https://msdn.microsoft.com/library/windows/hardware/ff557564)
--   [Universal Serial Bus (USB)](https://msdn.microsoft.com/library/windows/hardware/mt807557)
+-   [Universal Serial Bus (USB)](https://docs.microsoft.com/windows-hardware/drivers/usbcon)
 -   [Windows Portable Devices](https://msdn.microsoft.com/library/windows/hardware/ff597729)
 -   [Windows SideShow Devices](https://msdn.microsoft.com/library/windows/hardware/ff548077)
 
