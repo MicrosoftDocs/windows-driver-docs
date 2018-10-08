@@ -65,7 +65,8 @@ The host computer can be the same physical computer that is running the virtual 
 3.  For **Qualifier**, select the name of the physical computer that is running the target virtual machine.
 4.  Click **Attach**.
 
->[!TIP] If you receive the message "Could not start debug session, error 8007005: Access denied",  run Visual Studio as ADMINISTRATOR on the host computer. 
+>[!TIP] 
+> If you receive the message "Could not start debug session, error 8007005: Access denied",  run Visual Studio as ADMINISTRATOR on the host computer. 
 
 ## <span id="generation_2_virtual_machines"></span><span id="GENERATION_2_VIRTUAL_MACHINES"></span>Generation 2 Virtual Machines
 
