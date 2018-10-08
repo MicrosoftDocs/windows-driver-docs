@@ -2,7 +2,7 @@
 title: Debugger Data Model C++ Scripting
 description: This topic describes how to use Debugger Data Model C++ scripting to support automation with the debugger engine.
 ms.author: domars
-ms.date: 09/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,7 +54,7 @@ A script provider is a component which bridges a language (e.g.: NatVis, JavaScr
 
 The core script manager interface is defined as follows. 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDataModelScriptManager, IUnknown)
 {
     STDMETHOD(GetDefaultNameBinder)(_COM_Outptr_ IDataModelNameBinder **ppNameBinder) PURE;
@@ -96,7 +96,7 @@ The EnumerateScriptProviders method will return an enumerator which will enumera
 
 The EnumerateScriptProviders method will return an enumerator of the following form:
 
-``` 
+```cpp 
 DECLARE_INTERFACE_(IDataModelScriptProviderEnumerator, IUnknown)
 {
     STDMETHOD(Reset)() PURE;
@@ -133,7 +133,7 @@ The IDebugHostScriptHost interface is the interface used by a script provider to
 
 The IDebugHostScriptHost interface is defined as follows. 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDebugHostScriptHost, IUnknown)
 {
     STDMETHOD(CreateContext)(_In_ IDataModelScript* script, _COM_Outptr_ IDataModelScriptHostContext** scriptContext) PURE;
@@ -173,7 +173,7 @@ IDataModelScriptTemplate | Script providers can provide one or more templates wh
 IDataModelScriptTemplateEnumerator | An enumerator interface that the script provider implements in order to advertise all the various templates it supports.
 IDataModelNameBinder | A name binder -- an object which can associate a name in a context with a value. For a given expression such as "foo.bar", a name binder is able to bind the name "bar" in the context of object "foo" and produce a value or reference to it. Name binders are not typically implemented by a script provider; rather, the default binder can be acquired from the data model and used by the script provider
 
-The [debug interfaces]() are: 
+The debug interfaces are: 
 
 Interface | Description
 |---------|------------|
@@ -189,7 +189,7 @@ IDataModelScriptDebugBreakpointEnumerator | The script provider implements this 
 
 Any extension which wants to be a script provider must provide an implementation of the IDataModelScriptProvider interface and register such with the script manager portion of the data model manager via the RegisterScriptProvider method. This core interface which must be implemented is defined as follows.
 
-``` 
+```cpp 
 DECLARE_INTERFACE_(IDataModelScriptProvider, IUnknown)
 {
     STDMETHOD(GetName)(_Out_ BSTR *name) PURE;
@@ -230,7 +230,7 @@ Each script which is created by the provider should be in an independent silo. O
 
 The interface is defined as follows. 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDataModelScript, IUnknown)
 {
     STDMETHOD(GetName)(_Out_ BSTR *scriptName) PURE;
@@ -272,20 +272,20 @@ The IsInvocable method returns whether or not the script is invocable -- that is
 If the script has a "main function" which is intended to execute from a UI invocation, it indicates such via a true return from the IsInvocable method. The user interface can then call the InvokeMain method to actually "invoke" the script. Note that this is distinct from *Execute* which runs all root code and bridges the script to the namespace of the underlying host. 
 
 
-**The Script Client: IDebugScriptClient**
+**The Script Client: IDataModelScriptClient **
 
-An application hosting the data model that wants to manage scripts and have a user interface (whether graphical or console) around this notion implements the IDebugScriptClient interface. This interface is passed to any script provider during execution or invocation or a script in order to pass error and event information back to the user interface. 
+An application hosting the data model that wants to manage scripts and have a user interface (whether graphical or console) around this notion implements the IDataModelScriptClient interface. This interface is passed to any script provider during execution or invocation or a script in order to pass error and event information back to the user interface. 
 
-The IDebugScriptClient interface is defined as follows. 
+The IDataModelScriptClient interface is defined as follows. 
 
-```
-DECLARE_INTERFACE_(IDebugScriptClient, IUnknown)
+```cpp
+DECLARE_INTERFACE_(IDataModelScriptClient, IUnknown)
 {
    STDMETHOD(ReportError)(_In_ ErrorClass errClass, _In_ HRESULT hrFail, _In_opt_ PCWSTR message, _In_ ULONG line, _In_ ULONG position) PURE;
 }
 ```
 
-[ReportError](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idebugscriptclient-reporterror)
+[ReportError](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idatamodelscriptclient-reporterror)
 
 If an error occurs during execution or invocation of the script, the script provider calls the ReportError method to notify the user interface of the error. 
 
@@ -296,7 +296,7 @@ The debug host has some influence over how and where it projects data model scri
 
 The IDataModelScriptHostContext interface is defined as follows. 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDataModelScriptHostContext, IUnknown)
 {
    STDMETHOD(NotifyScriptChange)(_In_ IDataModelScript* script, _In_ ScriptChangeKind changeKind) PURE;
@@ -319,7 +319,7 @@ Script providers that want to present pre-filled content for new scripts (e.g.: 
 
 The IDataModelScriptTemplate interface is defined as follows. 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDataModelScriptTemplate, IUnknown)
 {
    STDMETHOD(GetName)(_Out_ BSTR *templateName) PURE;
@@ -348,7 +348,7 @@ A script provider can provide one or more templates which pre-fill content into 
 
 Such enumerator is an implementation of the IDataModelScriptTemplateEnumerator interface and is defined as follows. 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDataModelScriptTemplateEnumerator, IUnknown)
 {
    STDMETHOD(Reset)() PURE;
@@ -371,7 +371,7 @@ The data model provides a standard way for script providers to determine the mea
 
 In order to provide a degree of consistency across script providers, the data model's script manager provides a default name binder'. This default name binder can be acquired via a call to the GetDefaultNameBinder method on the IDataModelScriptManager interface. The name binder interface is defined as follows. 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDataModelNameBinder, IUnknown)
 {
    STDMETHOD(BindValue)(_In_ IModelObject* contextObject, _In_ PCWSTR name, _COM_Errorptr_ IModelObject** value, _COM_Outptr_opt_result_maybenull_ IKeyStore** metadata) PURE;
@@ -435,7 +435,7 @@ Any script which is debuggable indicates this capability via the presence of the
 
 The IDataModelScriptDebug interface is defined as follows. 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDataModelScriptDebug, IUnknown)
 {
    STDMETHOD_(ScriptDebugState, GetDebugState)() PURE;
@@ -498,7 +498,7 @@ The debug host or debugger application which wishes to provide an interface arou
 
 The IDataModelScriptDebugClient is the communication channel across which debug events are passed and control goes from the script execution engine to a debugger interface. It is defined as follows. 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDataModelScriptDebugClient, IUnknown)
 {
    STDMETHOD(NotifyDebugEvent)(_In_ ScriptDebugEventInformation *pEventInfo, _In_ IDataModelScript *pScript, _In_opt_ IModelObject *pEventDataObject, _Inout_ ScriptExecutionKind *resumeEventKind) PURE;
@@ -518,7 +518,7 @@ Note that the overall stack may span multiple scripts and/or multiple script pro
 
 It is imperative that transitions be implemented in this manner or the debug interface may direct inquiries about local variables, parameters, breakpoints, and other script specific constructs to the wrong script context! This will result in undefined behavior in the debugger interface. 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDataModelScriptDebugStack, IUnknown)
 {
    STDMETHOD_(ULONG64, GetFrameCount)() PURE;
@@ -539,7 +539,7 @@ The GetStackFrame gets a particular stack frame from the stack segment. The call
 
 A particular frame of the call stack when broken into the script debugger can be retrieved via a call to the GetStackFrame method on the IDataModelScriptDebugStack interface representing the stack segment where the break occurred. The IDataModelScriptDebugStackFrame interface which is returned to represent this frame is defined as follows.
 
-```
+```cpp
 DECLARE_INTERFACE_(IDataModelScriptDebugStackFrame, IUnknown)
 {
    STDMETHOD(GetName)(_Out_ BSTR *name) PURE;
@@ -585,7 +585,7 @@ The EnumerateArguments method returns a variable set (represented by an IDataMod
 
 A set of variables in the script being debugged (whether those in a particular scope, the locals of a function, the arguments of a function, etc...) is represented by a variable set defined through the IDataModelScriptDebugVariableSetEnumerator interface:
 
-```
+```cpp
 DECLARE_INTERFACE_(IDataModelScriptDebugVariableSetEnumerator, IUnknown)
 {
     STDMETHOD(Reset)() PURE;
@@ -606,7 +606,7 @@ The GetNext method moves the enumerator to the next variable in the set and retu
 
 Script breakpoints are set via the SetBreakpoint method on a given script's debug interface. Such breakpoints are represented both by a unique id and an implementation of the IDataModelScriptDebugBreakpoint interface which is defined as follows. 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDataModelScriptDebugBreakpoint, IUnknown)
 {
     STDMETHOD_(ULONG64, GetId)() PURE;
@@ -647,7 +647,7 @@ The GetPosition method returns the position of the breakpoint within the script.
 
 If a script provider supports debugging, it must also keep track of all breakpoints associated with each and every script and be capable of enumerating those breakpoints to the debug interface. The enumerator for breakpoints is acquired via the EnumerateBreakpoints method on the debug interface for a given script and is defined as follows. 
 
-```
+```cpp
 DECLARE_INTERFACE_(IDataModelScriptDebugBreakpointEnumerator, IUnknown)
 {
    STDMETHOD(Reset)() PURE;

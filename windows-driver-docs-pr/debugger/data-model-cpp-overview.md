@@ -2,7 +2,7 @@
 title: Debugger Data Model C++ Interfaces Overview
 description: This topic provides an overview of the Debugger Data Model C++ Interfaces to extend and customize the capabilities of the debugger.
 ms.author: domars
-ms.date: 09/17/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,7 +45,7 @@ The debugger data model is an extensible object model that is central to the way
 
 To illustrate the goals of the debugger data model, consider this traditional debugger command.
 
-```
+```console
 0: kd> !process 0 0 
 PROCESS ffffe0007e6a7780
     SessionId: 1  Cid: 0f68    Peb: 7ff7cfe7a000  ParentCid: 0f34
@@ -57,7 +57,7 @@ The debugger command is using a binary mask and it provides text only output in 
 
 Contrast this to  the debugger data model [dx (Display Debugger Object Model Expression)](https://docs.microsoft.com/windows-hardware/drivers/debugger/dx--display-visualizer-variables-) command.
 
-```
+```console
 dx @$cursession.Processes.Where(p => p.Threads.Count() > 5)
 ```
 This command uses a standard data model that is discoverable, extensible and composable in uniform ways.
@@ -240,7 +240,7 @@ The following interfaces are defined for this category:
 
 *Host (Debugger) Support for Scripting* 
 
-[IDebugHostScriptHost](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idebughostscript) 
+[IDebugHostScriptHost](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idebughostscripthost) 
 
 
 **Authoring and Consuming Scripts**
@@ -261,7 +261,7 @@ The following interfaces are defined for this category:
 
 [IDataModelScriptTemplate](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelscripttemplate) 
 
-[IDataModelScriptTemplateEnumerator](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelscriptenumerator) 
+[IDataModelScriptTemplateEnumerator](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelscripttemplateenumerator) 
 
 [IDataModelNameBinder](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelnamebinder) 
 

@@ -32,7 +32,7 @@ The following is a list of new feature highlights for driver development in Wind
 
 The following table shows the feature updates in Windows 10, by driver technology and version.
 
-| Driver |[1809](#whats-new-in-windows-10-version-1809-latest)| [1809](#whats-new-in-windows-10-version-1803) | [1709](#whats-new-in-windows-10-version-1709) | [1703](#whats-new-in-windows-10-version-1703) |  [1607](#whats-new-in-windows-10-version-1607) |  [1507](#whats-new-in-windows-10-version-1507) |
+| Driver |[1809](#whats-new-in-windows-10-version-1809-latest)| [1803](#whats-new-in-windows-10-version-1803) | [1709](#whats-new-in-windows-10-version-1709) | [1703](#whats-new-in-windows-10-version-1703) |  [1607](#whats-new-in-windows-10-version-1607) |  [1507](#whats-new-in-windows-10-version-1507) |
 |---|:---:|:---:|:---:|:---:|:--:|:--:|
 | Audio |[![details](checkmark.png)](#audio-1809) | [![details](checkmark.png)](#audio-1803)| [![details](checkmark.png)](#audio-1709) | [![details](checkmark.png)](#audio-1703) | [![details](checkmark.png)](#audio)  |![not available](minus.png) |
 | ACPI |![not available](minus.png)|[![details](checkmark.png)](#acpi-1803) | [![details](checkmark.png)](#acpi-1709) | ![not available](minus.png) |![not available](minus.png) |![not available](minus.png) | ![not available](minus.png) |

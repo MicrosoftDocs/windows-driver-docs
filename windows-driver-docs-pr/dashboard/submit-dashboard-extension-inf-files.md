@@ -25,7 +25,7 @@ This section describes how to submit and publish an INF package. See the highlig
 
 > [!IMPORTANT]
 > Microsoft recommends always creating a separate submission for each of your Extension INFs, and a separate submission containing only your base driver submission. Publishing your base driver and Extension INFs in a single submission will cause the following issues:
-> * All shipping labels will be classified and evaluated as "Extension Drivers" by The Hardware Dev Center Dashboard.
+> * All shipping labels will be classified and evaluated as "Extension Drivers" by The Hardware Dev Center Dashboard. To find items that are Extensions, enter `@IsExtensionDriver:"True"` in the Dev Center search box.
 > * After being published to Windows Update, users may be forced to download your driver packages multiple times: Once when the base driver is installed, and again for each applicable extension that PnP detects.
 
 ### Creating a submission package
