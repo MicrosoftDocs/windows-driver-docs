@@ -75,7 +75,7 @@ As a part of the Frame Server model, there are two cases in how Custom Media Sou
 
 -   During "camera" activation
 
-The Sensor Group generation is typically done during device installation and/or power cycle. Given this, it is strongly recommended that Custom Media Sources avoid any significant processing during it’s creation and defer any such activity to the IMFMediaSource::Start function. The Sensor Group generation will not attempt to start the Custom Media Source, merely query the various available streams/media types and source/stream attribute information.
+The Sensor Group generation is typically done during device installation and/or power cycle. Given this, we strongly recommended that Custom Media Sources avoid any significant processing during its creation and defer any such activity to the IMFMediaSource::Start function. The Sensor Group generation will not attempt to start the Custom Media Source, merely query the various available streams/media types and source/stream attribute information.
 
 ## Stub Driver
 
@@ -100,8 +100,6 @@ Here's a sample of how a typical INF would look for a Custom Media Source stub d
 
 ```INF
 ;/*++
-;
-;Copyright (c) 1990-2000 Microsoft Corporation
 ;
 ;Module Name:
 ; SimpleMediaSourceDriver.INF
@@ -291,7 +289,7 @@ Return Value:
     if (!NT_SUCCESS(status)) {
         KdPrint(("Error: WdfDriverCreate failed 0x%x\n", status));
         return status;
-        }
+    }
 
     // ...
 
@@ -322,7 +320,6 @@ Return Value:
 
 --*/
 {
-
     NTSTATUS status;
 
     UNREFERENCED_PARAMETER(Driver);
@@ -332,7 +329,6 @@ Return Value:
     status = EchoDeviceCreate(DeviceInit);
 
     return status;
-
 }
 
 NTSTATUS
@@ -469,9 +465,9 @@ Just like any other physical camera, it is recommended that your stub driver man
 
 This ensures that applications listen for device add/removal via the PnP APIs get the proper notifications. And ensures that a source that is no longer available cannot be enumerated.
 
-For UMDF and KMDF drivers, see the [WdfDeviceSetDeviceState] (https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicesetdevicestate) function.
+For UMDF and KMDF drivers, see the [WdfDeviceSetDeviceState] (https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicesetdevicestate) function documentation.
 
-For WMD drivers, see [IoSetDeviceInterfaceState](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetdeviceinterfacestate) function.
+For WMD drivers, see the [IoSetDeviceInterfaceState](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetdeviceinterfacestate) function documentation.
 
 ## Custom Media Source DLL
 
@@ -924,9 +920,9 @@ IFACEMETHODIMP
 }
 ```
 
-## Windows 10, version 1809 Extension
+## Custom Media Source extension to expose IMFActivate (available in Windows 10, version 1809)
 
-In addition to the above list of interface that must be supported for a Custom Media Source, one of the limitations imposed by Custom Media Source operation within the Frame Server architecture is that there can only be one instance of the UMDF driver "activated" through the pipeline.
+In addition to the above list of interfaces that must be supported for a Custom Media Source, one of the limitations imposed by Custom Media Source operation within the Frame Server architecture is that there can only be one instance of the UMDF driver "activated" through the pipeline.
 
 For example, if you have a physical device which installs a UMDF stub driver in addition to it’s non-AV Stream driver package, and you attach more than one of those physical devices to a computer, while each instance of the UMDF driver will get a unique symbolic link name, the activation path for the Custom Media Source will not have a means to communicate the symbolic link name associated with the Custom Media Source at the time of creation.
 
@@ -948,11 +944,11 @@ The Custom Media Source should use this method invocation to acquire any hardwar
 > [!NOTE]
 > If the hardware resource acquisition takes greater than 200 milliseconds, it is recommended hardware resource is asynchronously acquired. The activation of the Custom Media Source should not block on the hardware resource acquisition. Instead IMFMediaSource::Start operation should be serialized against the hardware resource acquisition.
 
-The two additional methods exposed by IMFActivate: DetachObject and ShutdownObject must return E\_NOTIMPL.
+The two additional methods exposed by IMFActivate, DetachObject and ShutdownObject, must return E\_NOTIMPL.
 
 The Custom Media Source may choose to implement the IMFActivate and IMFAttributes interface within the same COM object as the IMFMediaSource. If this is done, it is recommended the IMFMediaSourceEx::GetSourceAttributes return the same IMFAttributes interface as those from the IMFActivate.
 
-If the Custom Media Source does NOT implement the IMFActivate and IMFAttributes with the same object, the Custom Media Source must copy all the attributes set on the IMFActivate’s attribute store into the Custom Media Source’s source attribute store.
+If the Custom Media Source does not implement the IMFActivate and IMFAttributes with the same object, the Custom Media Source must copy all the attributes set on the IMFActivate’s attribute store into the Custom Media Source’s source attribute store.
 
 ## Encoded Camera Stream
 
