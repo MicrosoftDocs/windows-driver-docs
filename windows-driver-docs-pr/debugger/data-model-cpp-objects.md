@@ -2,7 +2,7 @@
 title: Debugger Data Model C++ Objects
 description: This topic describes how to use Debugger Data Model C++ Objects and how they can extend the capabilities of the debugger.
 ms.author: domars
-ms.date: 10/04/2018
+ms.date: 10/08/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -529,10 +529,7 @@ The OverrideContextObject method (only present on IModelKeyReference2) is an adv
 
 Context objects are opaque blobs of information that the debug host (in cooperation with the data model) associates with every object. It may include things such as the process context or address space the information comes from, etc... A context object is an implementation of IDebugHostContext boxed within an IModelObject. Note that IDebugHostContext is a host defined interface. A client will never implement this interface. 
 
-For more information about context objects, see [Debugger Data Model C++ Host Interfaces](#hostinterface), in this topic. 
-
-
-
+For more information about context objects, see [Debugger Data Model C++ Host Interfaces](data-model-cpp-interfaces.md#hostinterface) in Debugger Data Model C++ Interfaces. 
 
 
 ## <span id="modelmanager"> The Data Model Manager  
