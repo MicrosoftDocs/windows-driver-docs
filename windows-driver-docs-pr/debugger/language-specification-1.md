@@ -131,6 +131,9 @@ Describes how to build the target path for the extracted file. This is a require
 <span id="SRCSRVCMD"></span><span id="srcsrvcmd"></span>**SRCSRVCMD**  
 Describes how to build the command to extract the file from source control. This includes the name of the executable file and its command-line parameters. This is required if any extraction command must be executed.
 
+<span id="SRCSRVTRG"></span><span id="srcsrvtrg"></span>**SRCSRVTRG**
+Describes where to extract the file from source control. The value must be a path starting with %targ%. This varaible is required when SRCSRVCMD is used.
+
 <span id="SRCSRVENV"></span><span id="srcsrvenv"></span>**SRCSRVENV**  
 Lists environment variables to be created during the file extraction. This is a string. Separate multiple entries with a backspace character (\\b). This is an optional variable.
 
