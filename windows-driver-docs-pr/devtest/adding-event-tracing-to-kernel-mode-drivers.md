@@ -1,4 +1,4 @@
----
+[---
 title: Adding Event Tracing to Kernel-Mode Drivers
 description: Adding Event Tracing to Kernel-Mode Drivers
 ms.assetid: 74fdb4b2-aad1-4d8a-b146-40a92e1fdbb5
@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 # Adding Event Tracing to Kernel-Mode Drivers
 
 
-This section describes how to use the Event Tracing for Windows (ETW) kernel-mode API to add event tracing to kernel-mode drivers. The ETW kernel-mode API was introduced with Windows Vista and is not supported in earlier operating systems. Use [WPP Software Tracing](wpp-software-tracing.md) or [WMI Event Tracing](https://msdn.microsoft.com/library/windows/hardware/ff566350) if your driver needs to support trace capability in Windows 2000 and later.
+This section describes how to use the Event Tracing for Windows (ETW) kernel-mode API to add event tracing to kernel-mode drivers. Use [WPP Software Tracing](wpp-software-tracing.md) or [WMI Event Tracing](https://docs.microsoft.com/windows-hardware/drivers/kernel/wmi-event-tracing) if your driver needs to support trace capability in Windows 2000 and later.
 
 > [!TIP]
 > To view sample code that shows how to implement ETW using the Windows Driver Kit (WDK) 8.1 and Visual Studio, see the [Eventdrv sample](http://go.microsoft.com/fwlink/p/?linkid=256109).
@@ -41,7 +41,7 @@ In this section:
 
 ## 1. Decide the type of events to raise and where to publish them
 
-Before you begin coding, you must decide what type of events you want the driver to log through Event Tracing for Windows (ETW). For example, you might want to log events that can help you diagnose problems after your driver is distributed, or events that might help you as you are developing your driver. The types of events are identified with channels. A *channel* is a named stream of events of type Admin, Operational, Analytical, or Debug directed toward a specific audience, similar to a television channel. A channel delivers the events from the event provider to the event logs and event consumers. For information about channels and event types, see [Event Logs and Channels in Windows Event log](http://go.microsoft.com/fwlink/p/?linkid=62587).
+Before you begin coding, you must decide what type of events you want the driver to log through Event Tracing for Windows (ETW). For example, you might want to log events that can help you diagnose problems after your driver is distributed, or events that might help you as you are developing your driver. The types of events are identified with channels. A *channel* is a named stream of events of type Admin, Operational, Analytical, or Debug directed toward a specific audience, similar to a television channel. A channel delivers the events from the event provider to the event logs and event consumers. For information about channels and event types, see [Defining Channels](https://docs.microsoft.com/windows/desktop/wes/defining-channels) and [Saving Events to a Log File](https://docs.microsoft.com/windows/desktop/wes/saving-events-to-a-log-file).
 
 During development, you are most likely interested in tracing events that help you debug your code. This same channel could be used in the production code to help troubleshoot problems that might appear after the driver is deployed. You might also want to trace events that could be used to measure performance; these events can help IT professionals fine tune server performance and can help identify network bottlenecks.
 
@@ -195,9 +195,11 @@ You can include this step as part of your build process in a couple of ways:
 When you build the Eventdrv.sys sample, Visual Studio creates the necessary files for event tracing. It also adds the evntdrv.xml manifest to the list of Resources Files for the driver project. You can right click the manifest to view the Message Compiler property pages.
 
 
-**Using Visual Studio to add the instrumentation manifest** You can add the instrumentation manifest to the driver project and then configure the message compiler properties to build the necessary resource and header files.
+### Using Visual Studio to add the instrumentation manifest 
 
-**To add the instrumentation manifest to the project using Visual Studio**
+You can add the instrumentation manifest to the driver project and then configure the message compiler properties to build the necessary resource and header files.
+
+### To add the instrumentation manifest to the project using Visual Studio
 
 1.  In the Solution Explorer, add the manifest file to the driver project. Right click **Resource Files &gt; Add &gt; Existing Item** (for example, evntdrv.xml or mydriver.man).
 2.  Right click the file you just added and use the property pages to change the item type to **MessageCompile** and click **Apply**.
@@ -230,13 +232,13 @@ By default, the message compiler uses the base name of the input file as the bas
 
 In the instrumentation manifest, you defined the names of the event provider and the event descriptors. When you compile the instrumentation manifest with the message compiler, the message compiler generates a header file that describes the resources and also defines macros for the events. Now, you must add the generated code to your driver to raise these events.
 
-1.  In your source file, include the event header file that is produced by the message compiler (MC.exe). For example, in the [Eventdrv sample](http://go.microsoft.com/fwlink/p/?linkid=256109), the Evntdrv.c source file includes the header file (evntdrvEvents.h) that was generated in the previous step:
+1. In your source file, include the event header file that is produced by the message compiler (MC.exe). For example, in the [Eventdrv sample](http://go.microsoft.com/fwlink/p/?linkid=256109), the Evntdrv.c source file includes the header file (evntdrvEvents.h) that was generated in the previous step:
 
     ```
     #include "evntdrvEvents.h"  
     ```
 
-2.  Add the macros that register and unregister the driver as an event provider. For example, in the header file for the [Eventdrv sample](http://go.microsoft.com/fwlink/p/?linkid=256109) (evntdrvEvents.h), the message compiler creates macros based upon the name of the provider. In the manifest, the [Eventdrv sample](http://go.microsoft.com/fwlink/p/?linkid=256109) uses the name "Sample Driver" as the name of the provider. The message compiler combines the name of the provider with the event macro to register the provider, in this case, **EventRegisterSample\_Driver**.
+2. Add the macros that register and unregister the driver as an event provider. For example, in the header file for the [Eventdrv sample](http://go.microsoft.com/fwlink/p/?linkid=256109) (evntdrvEvents.h), the message compiler creates macros based upon the name of the provider. In the manifest, the [Eventdrv sample](http://go.microsoft.com/fwlink/p/?linkid=256109) uses the name "Sample Driver" as the name of the provider. The message compiler combines the name of the provider with the event macro to register the provider, in this case, **EventRegisterSample\_Driver**.
 
     ```ManagedCPlusPlus
     //  This is the generated header file envtdrvEvents.h 
@@ -252,23 +254,20 @@ In the instrumentation manifest, you defined the names of the event provider and
        
     ```
 
-    Add the **EventRegister*&lt;provider&gt;*** macro to your [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff544113) function. Add this function after the code that creates and initializes the device object. Note that you must match the call to the **EventRegister*&lt;provider&gt;*** function with a call to **EventUnregister*&lt;provider&gt;***. You can unregister the driver in your driver's [**Unload**](https://msdn.microsoft.com/library/windows/hardware/ff564886) routine.
+    Add the **EventRegister\<*provider*\>** macro to your [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff544113) function. Add this function after the code that creates and initializes the device object. Note that you must match the call to the **EventRegister\<*provider*\>** function with a call to **EventUnregister\<*provider*\>**. You can unregister the driver in your driver's [DRIVER_UNLOAD](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_unload) routine.
 
     ```ManagedCPlusPlus
        // DriverEntry function
        // ...
 
-
-        // Register with ETW
-        //
-        EventRegisterSample_Driver();
-
-    
+       // Register with ETW
+       //
+        EventRegisterSample_Driver(); 
     ```
 
-3.  Add the generated code to your driver's source files to write (raise) the events you specified in the manifest. The header file you compiled from the manifest contains the generated code for the driver. Use the **EventWrite*&lt;event&gt;*** functions defined in the header file to publish trace messages to ETW. For example, the following code shows the macros for events defined in evntdrvEvents.h for the [Eventdrv sample](http://go.microsoft.com/fwlink/p/?linkid=256109).
+3. Add the generated code to your driver's source files to write (raise) the events you specified in the manifest. The header file you compiled from the manifest contains the generated code for the driver. Use the **EventWrite\<*event*\>** functions defined in the header file to publish trace messages to ETW. For example, the following code shows the macros for events defined in evntdrvEvents.h for the [Eventdrv sample](http://go.microsoft.com/fwlink/p/?linkid=256109).
 
-    The macros to write these events are called: `EventWriteStartEvent`, `EventWriteSampleEventA`, and `EventWriteUnloadEvent`. As you can see in the definition of these macros, the macro definition automatically includes an **EventEnabled*&lt;event&gt;*** macro that checks if the event is enabled. The check eliminate the need to build the payload if the event is not enabled.
+    The macros to write these events are called: `EventWriteStartEvent`, `EventWriteSampleEventA`, and `EventWriteUnloadEvent`. As you can see in the definition of these macros, the macro definition automatically includes an **EventEnabled\<*event*\>** macro that checks if the event is enabled. The check eliminate the need to build the payload if the event is not enabled.
 
     ```ManagedCPlusPlus
     ///
@@ -318,7 +317,7 @@ In the instrumentation manifest, you defined the names of the event provider and
             : STATUS_SUCCESS\
     ```
 
-    Add the **EventWrite*&lt;event&gt;*** macros into your source code for the events you are raising. For example, the following code snippet shows the [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine from the [Eventdrv sample](http://go.microsoft.com/fwlink/p/?linkid=256109). The *DriverEntry* includes the macros to register the driver with ETW (*EventRegisterSample\_Driver*) and the macro to write the driver event to ETW (*EventWriteStartEvent*).
+    Add the **EventWrite\<*event*\>** macros into your source code for the events you are raising. For example, the following code snippet shows the [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine from the [Eventdrv sample](http://go.microsoft.com/fwlink/p/?linkid=256109). The *DriverEntry* includes the macros to register the driver with ETW (*EventRegisterSample\_Driver*) and the macro to write the driver event to ETW (*EventWriteStartEvent*).
 
     ```ManagedCPlusPlus
     NTSTATUS
@@ -391,12 +390,10 @@ In the instrumentation manifest, you defined the names of the event provider and
             return Status;
         }
 
-
         //
         // Choose a buffering mechanism
         //
         EventDrvDeviceObject->Flags |= DO_BUFFERED_IO;
-
 
         //
         // Register with ETW
@@ -432,11 +429,11 @@ In the instrumentation manifest, you defined the names of the event provider and
     }
     ```
 
-    Add the all of **EventWrite*&lt;event&gt;*** macros into your source code for the events you are raising. You can examine the [Eventdrv sample](http://go.microsoft.com/fwlink/p/?linkid=256109) to see how the other two macros are called for the events in the driver source code.
+    Add the all of **EventWrite\<*event*\>** macros into your source code for the events you are raising. You can examine the [Eventdrv sample](http://go.microsoft.com/fwlink/p/?linkid=256109) to see how the other two macros are called for the events in the driver source code.
 
-4.  Unregister the driver as an event provider using the **EventUnregister*&lt;provider&gt;*** macro from the generated header file.
+4.  Unregister the driver as an event provider using the **EventUnregister\<*provider*\>** macro from the generated header file.
 
-    Place this function call in your driver unload routine. No tracing calls should be made after the **EventUnregister*&lt;provider&gt;*** macro is called. Failure to unregister the event provider can cause errors when the process is unloaded because any callback functions associated with the process are no longer valid.
+    Place this function call in your driver unload routine. No tracing calls should be made after the **EventUnregister\<*provider*\>** macro is called. Failure to unregister the event provider can cause errors when the process is unloaded because any callback functions associated with the process are no longer valid.
 
     ```ManagedCPlusPlus
         // DriverUnload function
@@ -446,8 +443,6 @@ In the instrumentation manifest, you defined the names of the event provider and
         //  Unregister the driver as an ETW provider
         //
         EventUnregisterSample_Driver();
-
-    
     ```
 
 ## 5. Build the driver
@@ -463,9 +458,10 @@ You must install the manifest on the target system so that event consumers (for 
 
 **wevtutil.exe im** *drivermanifest*
 
+
 For example, to install the manifest for the Evntdrv.sys sample driver, open a Command Prompt windows with elevated privileges (**Run as administrator**) navigate to the directory where the evntdrv.xml file is located and enter the following command:
 
-```
+```C++
 Wevtutil.exe im evntdrv.xml
 ```
 
