@@ -3,7 +3,7 @@ title: Setting Up Kernel-Mode Debugging of a Virtual Machine in Visual Studio
 description: You can use Microsoft Visual Studio to set up and perform kernel-mode debugging of a virtual machine.
 ms.assetid: E7A289CA-29CE-4C6F-AD08-529E58379715
 ms.author: domars
-ms.date: 05/04/2018
+ms.date: 10/08/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,6 +65,9 @@ The host computer can be the same physical computer that is running the virtual 
 3.  For **Qualifier**, select the name of the physical computer that is running the target virtual machine.
 4.  Click **Attach**.
 
+>[!TIP] 
+> If you receive the message "Could not start debug session, error 8007005: Access denied",  run Visual Studio as ADMINISTRATOR on the host computer. 
+
 ## <span id="generation_2_virtual_machines"></span><span id="GENERATION_2_VIRTUAL_MACHINES"></span>Generation 2 Virtual Machines
 
 
@@ -95,13 +98,18 @@ For more information, see [Generation 2 Virtual Machine Overview](http://go.micr
 
 Your debugger (WinDbg or KD) must have access through the firewall. This can even be the case for virtual serial ports that are supported by network adapters.
 
-If you are prompted by Windows to turn off the firewall when the debugger is loaded, select all three boxes.
+If you are prompted by Windows to turn off the firewall when the debugger is loaded, select **all three** boxes.
 
 Depending on the specifics of the VM in use, you may need to change the network settings for your virtual machines to bridge them to the Microsoft Kernel Network Debug Adapter. Otherwise, the virtual machines will not have access to the network.
 
 **Windows Firewall**
 
-You can use Control Panel to allow access through the Windows firewall. Open Control Panel > System and Security, and select Allow an app through Windows Firewall. In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*. Use the check boxes to allow those two applications through the firewall. Restart your debugging application (WinDbg or KD).
+You can use Control Panel to allow access through the Windows firewall. 
+
+1. Open Control Panel > System and Security, and select Allow an app through Windows Firewall. 
+2. In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*. 
+3. Use the check boxes to allow those two applications through the firewall. Click OK to save your settings.
+4. Restart your debugging application (WinDbg or KD).
 
 
 ## <span id="related_topics"></span>Related topics
