@@ -1,9 +1,8 @@
 ---
 title: PKEY\_APO\_SWFallback\_ProcessingModes
 description: In Windows 10 version 1709 and later, the PKEY\_APO\_SWFallback\_ProcessingModes property key identifies the HW modes that can fallback to software processing modes supported by the driver.
-
 ms.author: windowsdriverdev
-ms.date: 12/06/2017
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -11,11 +10,15 @@ ms.technology: windows-devices
 
 # PKEY\_APO\_SWFallback\_ProcessingModes
 
-In the next major release of Windows 10, the *PKEY\_APO\_SWFallback\_ProcessingModes* property key identifies the modes that can fallback to software processing. The driver developer should list all of the mode effect processing modes that support software fallback that their driver supports. This list needs to encompass all the modes that the driver supports in hardware.
+Starting in Windows 10 version 1809, the *PKEY\_APO\_SWFallback\_ProcessingModes* property key identifies the modes that can fallback to software processing. The driver developer should list all of the mode effect processing modes that support software fallback that their driver supports. This list needs to encompass all the modes that the driver supports in hardware.
 
 If a stream is requested for one of these modes and there are insufficient HW resources available to open a pin in that processing mode, a pin will be opened in the RAW mode and the SW APO initialized with the requested processing mode will be used instead. Because of this, drivers that would like to support software fallback of HW processing modes, must support RAW mode. 
 
 For more information about audio modes, see [Audio Signal Processing Modes](audio-signal-processing-modes.md).
+
+The driver needs to have the supported fallback modes in their FxPropertyStore. Any AUDIO_SIGNALPROCESSINGMODEs for SWFallback need to be added to the FxPropertyStore for the driver under PKEY_APO_SWFallback_ProcessingModes which is {D3993A3F-99C2-4402-B5EC-A92A0367664B},13. This will allow for them to be recognized for SWFallback. 
+
+The driver does not need to return any  additional specific  error codes to use SWFallback.
 
 
 ###  PKEY\_APO\_SWFallback\_ProcessingModes Definition
