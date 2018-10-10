@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_QUERY\_QUOTA
+title: IRP_MJ_QUERY_QUOTA
 description: IRP\_MJ\_QUERY\_QUOTA
 ms.assetid: eb48b5ef-7eac-49d4-ab23-2d3efe783fa3
 keywords: ["IRP_MJ_QUERY_QUOTA Installable File System Drivers"]

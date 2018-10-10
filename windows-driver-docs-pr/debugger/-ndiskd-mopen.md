@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ndiskd.mopen** extension displays information about bindings between miniports and protocols. If you run this extension with no parameters, !ndiskd will display a list of all open bindings between NDIS miniport drivers and protocol drivers.
 
-```
+```console
 !ndiskd.mopen [-handle <x>] [-ref] 
 ```
 
@@ -44,7 +44,7 @@ Examples
 
 Enter the !ndiskd.mopen command to get a list of all open bindings. In this example, look for the binding between the Microsoft ISATAP Adapter \#2 miniport and the TCPIP6TUNNEL protocol. Its handle is ffff8083e56b8110.
 
-```
+```console
 3: kd> !ndiskd.mopen
 Open ffff8083e56b8110
   Miniport: ffff8083e02ce1a0 - Microsoft ISATAP Adapter #2
@@ -77,7 +77,7 @@ Open ffff8083e504c770
 
 Now you can either click on the handle or use the handle to enter the **!ndiskd.mopen -handle** command, which enables you to see more details about that open binding such as its Datapath state and Receive path information.
 
-```
+```console
 3: kd> !ndiskd.mopen ffff8083e56b8110
 
 

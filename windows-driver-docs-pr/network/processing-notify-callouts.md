@@ -42,7 +42,7 @@ A callout driver can specify a context to be associated with a filter when the f
 
 For example:
 
-```
+```C++
 // Context structure to be associated with the filters
 typedef struct FILTER_CONTEXT_ {
   .

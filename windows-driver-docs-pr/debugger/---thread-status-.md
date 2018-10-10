@@ -4,7 +4,7 @@ description: The tilde (~) command displays status for the specified thread or f
 ms.assetid: c27e4c72-86da-459d-833f-d27d26bdea0e
 keywords: ["~ (Thread Status) Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -22,9 +22,7 @@ ms.localizationpriority: medium
 
 The tilde (**~**) command displays status for the specified thread or for all threads in the current process.
 
-```
-~ Thread
-```
+    ~ Thread
 
 ## <span id="ddk_cmd_thread_status_dbg"></span><span id="DDK_CMD_THREAD_STATUS_DBG"></span>Parameters
 
@@ -70,37 +68,37 @@ You can add a thread symbol before many commands. For more information about the
 
 The following examples show you how to use this command. The following command displays all threads.
 
-```
+```console
 0:001> ~
 ```
 
 The following command also displays all threads.
 
-```
+```console
 0:001> ~*
 ```
 
 The following command displays the currently active thread.
 
-```
+```console
 0:001> ~.
 ```
 
 The following command displays the thread that originally caused the exception (or that was active when the debugger attached to the process).
 
-```
+```console
 0:001> ~#
 ```
 
 The following command displays thread number 2.
 
-```
+```console
 0:001> ~2
 ```
 
 The previous command displays the following output.
 
-```
+```console
 0:001> ~
    0 id: 4dc.470 Suspend: 0 Teb 7ffde000 Unfrozen
 . 1 id: 4dc.534 Suspend: 0 Teb 7ffdd000 Unfrozen

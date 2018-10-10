@@ -44,7 +44,7 @@ However, when VMQ is configured to use shared memory, the network adapter uses D
 
 In Windows Server 2008 R2, before the VSP configures a VM queue to use shared memory that is allocated from the VM address space, it uses the following filtering test for the queue.
 
-```
+```syntax
 (MAC address == x) && (VLAN identifier == n)
 ```
 

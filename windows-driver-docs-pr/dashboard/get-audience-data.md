@@ -120,3 +120,7 @@ This resource has the following values
 |:--|:--|:--|
 | value | array | An array of objects that contain information about each audience. For more information about the data in each object, see [audience resource](#audience-resource). |
 | links | array | An array of objects with helpful links about the containing entity. See the [Link object](get-product-data.md#link-object) for more details.|
+
+## See also
+
+- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

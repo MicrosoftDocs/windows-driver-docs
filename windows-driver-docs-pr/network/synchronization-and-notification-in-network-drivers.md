@@ -66,7 +66,7 @@ Microsoft Windows operating systems do not restrict a network driver from simult
 
 Acquiring a spin lock raises the IRQL to DISPATCH\_LEVEL and stores the old IRQL in the spin lock. Releasing the spin lock sets the IRQL to the value stored in the spin lock. Because NDIS sometimes enters drivers at PASSIVE\_LEVEL, problems can arise with the following code sequence:
 
-```
+```syntax
 NdisAcquireSpinLock(A);
 NdisAcquireSpinLock(B);
 NdisReleaseSpinLock(A);

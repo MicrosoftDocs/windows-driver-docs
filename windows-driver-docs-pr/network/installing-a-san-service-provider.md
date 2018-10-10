@@ -27,7 +27,7 @@ A SAN service provider that is indirectly exposed to applications through the Wi
 
 The SAN service provider's installation mechanism must add a value of type REG\_BINARY to the following key in the registry before the SAN service provider can be detected by the Windows Sockets switch as a base Windows Sockets service provider:
 
-```
+```Console
 HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Winsock\
 Parameters\TCP on SAN
 ```

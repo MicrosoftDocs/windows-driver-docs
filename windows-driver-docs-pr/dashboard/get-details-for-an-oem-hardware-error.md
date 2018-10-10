@@ -14,6 +14,17 @@ ms.localizationpriority: medium
 
 # Get details for an OEM hardware error
 
+> [!IMPORTANT]
+> This topic contains deprecated material. It describes older methods for collecting data about driver submission failures. It is supplied only for legacy support.
+>
+> Use these newer topics instead:
+>
+> - [Schedule Custom Reports for your driver failure details](schedule-custom-reports-for-driver-failure-details.md)
+> - [Create new report template](create-a-new-report-template.md)
+> - [Schedule a new report](schedule-a-new-report.md)
+> - [Get Report Data](get-report-data.md)
+> - [Download Failure Cabs](download-failure-cabs.md)
+
 Use this method in the Microsoft Store analytics API to get detailed data for a specific OEM hardware error in JSON format. Before you can use this method, you must first use the [get OEM hardware error reporting data](get-oem-hardware-error-reporting-data.md) method to retrieve the ID of the error for which you want to get detailed info.
 
 > [!NOTE]
@@ -137,5 +148,6 @@ The following example demonstrates an example JSON response body for this reques
 
 ## Related topics
 
-* [Get OEM hardware error reporting data](get-oem-hardware-error-reporting-data.md)
-* [Download the CAB file for an OEM hardware error](download-the-cab-file-for-an-oem-hardware-error.md)
+- [Get OEM hardware error reporting data](get-oem-hardware-error-reporting-data.md)
+
+- [Download the CAB file for an OEM hardware error](download-the-cab-file-for-an-oem-hardware-error.md)

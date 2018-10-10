@@ -16,16 +16,3 @@ ms.localizationpriority: medium
 # CM_Create_DevNode
 
 This function is reserved for system use.
-
-
-
-
-
- 
-
- 
-
-
-
-
-

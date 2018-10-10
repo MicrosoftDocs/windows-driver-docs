@@ -28,10 +28,6 @@ If you are building a new system, here are the recommended USB HCK tests:
 
 -   [DF – Sleep with IO Before and After (Basic)](http://msdn.microsoft.com/library/windows/hardware/dn247481.aspx)
 -   [DF - PNP (disable and enable) with IO Before and After (Basic)](http://msdn.microsoft.com/library/windows/hardware/dn260411.aspx)
--   [USB xHCI Runtime Power Management](http://msdn.microsoft.com/library/windows/hardware/hh998627.aspx)
--   [USB xHCI Register Test](http://msdn.microsoft.com/library/windows/hardware/jj123677.aspx)
--   [USB Host Controller Enable Disable Test](http://msdn.microsoft.com/library/windows/hardware/jj123757.aspx)
--   [USB Host Controller Compliance](http://msdn.microsoft.com/library/windows/hardware/jj124075.aspx)
 -   [USB Exposed Port controller Test](http://msdn.microsoft.com/library/windows/hardware/hh998021.aspx)
 -   [USB xHCI Transfer Speed Test](http://msdn.microsoft.com/library/windows/hardware/hh997864.aspx)
 -   [USB3 Termination](http://msdn.microsoft.com/library/windows/hardware/jj124672.aspx)
@@ -222,7 +218,7 @@ System 3 (if dock supported)
  
 
 ## Related topics
-[Windows Hardware Certification Kit Tests for USB](windows-hardware-certification-kit-tests-for-usb.md)  
+[Windows Hardware Lab Kit Tests for USB](windows-hardware-certification-kit-tests-for-usb.md)  
 
 
 

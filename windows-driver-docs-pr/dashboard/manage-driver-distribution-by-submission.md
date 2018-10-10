@@ -43,7 +43,7 @@ After you have created your hardware submissions and uploaded your driver packag
 ## <span id="related_topics"></span>Related topics
 
 
-[Windows 10 Driver Publishing Workflow](http://go.microsoft.com/fwlink/p/?LinkId=617374)
+- [Windows 10 Driver Publishing Workflow](http://go.microsoft.com/fwlink/p/?LinkId=617374)
 
  
 

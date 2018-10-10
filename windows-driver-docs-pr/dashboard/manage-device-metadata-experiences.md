@@ -155,12 +155,12 @@ On the **Manage experiences** page, you can add, remove, or promote (from previe
 
 ## Related topics
 
-[Create a Device Metadata Experience](create-a-device-metadata-experience.md)
+- [Create a Device Metadata Experience](create-a-device-metadata-experience.md)
 
-[Submit a Bulk Metadata Package](submit-a-bulk-metadata-package.md)
+- [Submit a Bulk Metadata Package](submit-a-bulk-metadata-package.md)
 
-[Creating a Preview Package](creating-a-preview-package.md)
+- [Creating a Preview Package](creating-a-preview-package.md)
 
-[Errors and Solutions When Submitting Device Metadata Experiences](errors-and-solutions-when-submitting-device-metadata-experiences.md)
+- [Errors and Solutions When Submitting Device Metadata Experiences](errors-and-solutions-when-submitting-device-metadata-experiences.md)
 
-[Device Metadata Business Rules](device-metadata-business-rules.md)
+- [Device Metadata Business Rules](device-metadata-business-rules.md)

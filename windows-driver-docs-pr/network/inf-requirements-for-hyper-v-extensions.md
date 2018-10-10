@@ -31,7 +31,7 @@ In addition, you must follow these guidelines for INF files for extensible switc
 
     The following example shows a **FilterMediaTypes** entry that allows an extension to be bound to either the physical Ethernet network adapter or an extensible switch virtual network adapter.
 
-    ```
+    ```INF
     HKR, Ndi\Interfaces, FilterMediaTypes, , "ethernet, vmnetextension"
     ```
 

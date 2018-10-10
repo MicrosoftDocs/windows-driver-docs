@@ -46,13 +46,12 @@ If you’re registering your company on dashboard for the first time, see [Estab
 
 6. Upload the signed file to the Hardware Dev Center dashboard.
 
-
 ## Related topics
 
-[Before you sign in](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/before-you-sign-in)
+- [Before you sign in](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/before-you-sign-in)
 
-[Establish a new company](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/establish-a-new-company)
+- [Establish a new company](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/establish-a-new-company)
 
-[Hardware certification submissions](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/hardware-certification-submissions)
+- [Hardware certification submissions](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/hardware-certification-submissions)
 
-[App certification submissions](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/app-certification-submissions)
+- [App certification submissions](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/app-certification-submissions)

@@ -25,7 +25,7 @@ The completion routine only has to call [**NdisMIdleNotificationComplete**](http
 
 The following is an example of a completion routine for the USB idle request IRP.
 
-```
+```C++
 //
 // MiniportUsbIdleRequestCompletion()
 //

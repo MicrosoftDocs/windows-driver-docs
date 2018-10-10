@@ -16,13 +16,3 @@ ms.localizationpriority: medium
 # CM_Get_DevNode_Custom_Property
 
 This function is reserved for system use.
-
-
- 
-
- 
-
-
-
-
-

@@ -27,7 +27,7 @@ Before you can use these methods, the product and submission must already exist 
 
 ## Prerequisites
 
-If you have not done so already, complete all the [Prerequisites](dashboard-api.md#complete-prerequisites-for-using-the-microsoft-hardware-api) for the Microsoft Hardware APIs before trying to use any of these methods.
+If you have not done so already, complete all the [Prerequisites](https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api#complete-prerequisites-for-using-the-microsoft-hardware-api) for the Microsoft Hardware APIs before trying to use any of these methods.
 
 ## Data resources
 
@@ -371,3 +371,7 @@ This object has the following values
 ## Error codes
 
 For info about the errors codes, see [Error codes](get-product-data.md#error-codes).
+
+## See also
+
+- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

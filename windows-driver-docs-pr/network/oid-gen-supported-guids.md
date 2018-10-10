@@ -42,7 +42,7 @@ Each structure in the array specifies the mapping of a custom GUID (globally uni
 
 The NDIS\_GUID structure is defined as follows:
 
-```
+```C++
 typedef struct _NDIS_GUID {
     GUID             Guid;
     union {
@@ -101,7 +101,7 @@ Note that all custom GUIDs registered by a miniport driver must set either fNDIS
 
 In the following example, an NDIS\_GUID structure maps a GUID to OID\_802\_3\_MULTICAST\_LIST:
 
-```
+```C++
 NDIS_GUID    NdisGuid = {{0x44795701, 0xa61b, 0x11d0, 0x8d, 0xd4,
                           0x00, 0xc0, 0x4f, 0xc3,
                           0x35, 0x8c},

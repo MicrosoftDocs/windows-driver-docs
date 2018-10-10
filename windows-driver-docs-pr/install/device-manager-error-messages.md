@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 When Device Manager marks a device with a yellow exclamation point, it also provides an error message.
 
-The following table lists the errors reported by Device Manager on Windows 2000 and later versions of Windows. These error codes are defined in Cfg.h.
+The following table lists the errors reported by Device Manager. These error codes are defined in Cfg.h.
 
 <table>
 <colgroup>

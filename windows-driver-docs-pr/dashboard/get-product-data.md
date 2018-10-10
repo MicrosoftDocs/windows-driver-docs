@@ -498,3 +498,7 @@ If there are functional validation failures, the response body will contain one 
 | InvalidInput | Cannot update the shipping label when another workflow is in progress. Please retry. | Returned when a shipping label is updated when a previous workflow is still in progress. |
 | RequestInvalidForCurrentState | Cannot create Publishing shipping label for inbox or system type. One can only share the shipping label. | Returned when windows update Shipping label is created on an inbox driver or a system. |
 | RequestInvalidForCurrentState | Submission is not yet ready to create shipping label. Please retry after some time. | Returned when a shipping label is created without waiting for preparation or pre-processing to complete. |
+
+## See also
+
+- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

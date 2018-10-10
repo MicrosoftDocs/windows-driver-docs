@@ -68,12 +68,3 @@ NDIS and the miniport driver participate in NDIS selective suspend in the follow
 8.  When [**NdisMIdleNotificationComplete**](https://msdn.microsoft.com/library/windows/hardware/hh451491) is called, NDIS issues OID requests to the miniport driver to prepare the adapter for the transition to a full-power state. NDIS also issues IRPs to the underlying bus driver to set the adapter to a full-power state.
 
 9.  When the network adapter resumes to a full-power state, the selective suspend operation is completed. NDIS resumes monitoring the I/O activity of the network adapter. If the adapter becomes inactive after another idle time-out period, NDIS issues an idle notification to the miniport driver in order to suspend the network adapter.
-
- 
-
- 
-
-
-
-
-
