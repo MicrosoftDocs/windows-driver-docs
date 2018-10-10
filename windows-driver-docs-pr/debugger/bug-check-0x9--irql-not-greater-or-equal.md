@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 # Bug Check 0x9: IRQL\_NOT\_GREATER\_OR\_EQUAL
 
 
-The IRQL\_NOT\_GREATER\_OR\_EQUAL bug check has a value of 0x00000009.
+The IRQL\_NOT\_GREATER\_OR\_EQUAL bug check has a value of 0x00000009. This is a Windows 2000 Executive character-mode STOP message. It indicates an IRQL that was expected to be greater or equal, but was not.
 
 This bug check appears very infrequently.
 
