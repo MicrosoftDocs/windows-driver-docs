@@ -479,7 +479,7 @@ Subcommand_opcode (1 octet):
 
 | Value  |  Parameter description |
 |---|---|
-|0x04| The subcommand opcode for  for HCI_VS_MSFT_LE_Cancel_Monitor_Adver. |
+|0x04| The subcommand opcode for HCI_VS_MSFT_LE_Cancel_Monitor_Adver. |
 
 
 #### Events_generated__unless_masked_away

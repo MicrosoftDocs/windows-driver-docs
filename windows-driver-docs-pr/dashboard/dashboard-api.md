@@ -26,20 +26,20 @@ The following steps describe the end-to-end process of using the Microsoft Hardw
 
 Before you start writing code to call the Microsoft Hardware API, make sure that you have completed the following prerequisites.
 
-* You (or your organization) must have an Azure AD directory and you must have [Global administrator](http://go.microsoft.com/fwlink/?LinkId=746654)  permission for the directory. If you already use Office 365 or other business services from Microsoft, you already have Azure AD directory. Otherwise, you can [create a new Azure AD in Dev Center](https://docs.microsoft.com/en-us/windows/uwp/publish/associate-azure-ad-with-dev-center#create-a-brand-new-azure-ad-to-associate-with-your-dev-center-account) for no additional charge.
+* You (or your organization) must have an Azure AD directory and you must have [Global administrator](http://go.microsoft.com/fwlink/?LinkId=746654)  permission for the directory. If you already use Office 365 or other business services from Microsoft, you already have Azure AD directory. Otherwise, you can [create a new Azure AD in Dev Center](https://docs.microsoft.com/windows/uwp/publish/associate-azure-ad-with-dev-center#create-a-brand-new-azure-ad-to-associate-with-your-dev-center-account) for no additional charge.
 
-* You must [associate an Azure AD application with your Windows Dev Center account](https://docs.microsoft.com/en-us/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services#associate-an-azure-ad-application-with-your-windows-dev-center-account) and obtain your tenant ID, client ID, and key. You need these values to obtain an Azure AD access token, which you will use in calls to the Microsoft Hardware API.
+* You must [associate an Azure AD application with your Windows Dev Center account](https://docs.microsoft.com/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services#associate-an-azure-ad-application-with-your-windows-dev-center-account) and obtain your tenant ID, client ID, and key. You need these values to obtain an Azure AD access token, which you will use in calls to the Microsoft Hardware API.
 
 ## Associate an Azure AD application with your Windows Dev Center account
 
 Before you can use the Microsoft Hardware API, you must associate an Azure AD application with your Dev Center account, retrieve the tenant ID and client ID for the application and generate a key. The Azure AD application represents the app or service from which you want to call the Microsoft Hardware API. You need the tenant ID, client ID and key to obtain an Azure AD access token that you pass to the API.
 
-1. In Dev Center, go to your **Account** settings, click **Manage** users, and [associate your organization's Dev Center account with your organization's Azure AD directory](https://docs.microsoft.com/en-us/windows/uwp/publish/associate-azure-ad-with-dev-center).
-2. On the **Manage users** page, click **Add Azure AD** applications, add the Azure AD application that represents the app or service that you will use to access submissions for your Dev Center account, and assign it the **Manager** role. If this application already exists in your Azure AD directory, you can select it on the **Add Azure AD applications** page to add it to your Dev Center account. Otherwise, you can create a new Azure AD application on the **Add Azure AD applications** page. For more information, see [Add Azure AD applications to your Dev Center account](https://docs.microsoft.com/en-us/windows/uwp/publish/add-users-groups-and-azure-ad-applications#azure-ad-applications).
+1. In Dev Center, go to your **Account** settings, click **Manage** users, and [associate your organization's Dev Center account with your organization's Azure AD directory](https://docs.microsoft.com/windows/uwp/publish/associate-azure-ad-with-dev-center).
+2. On the **Manage users** page, click **Add Azure AD** applications, add the Azure AD application that represents the app or service that you will use to access submissions for your Dev Center account, and assign it the **Manager** role. If this application already exists in your Azure AD directory, you can select it on the **Add Azure AD applications** page to add it to your Dev Center account. Otherwise, you can create a new Azure AD application on the **Add Azure AD applications** page. For more information, see [Add Azure AD applications to your Dev Center account](https://docs.microsoft.com/windows/uwp/publish/add-users-groups-and-azure-ad-applications#azure-ad-applications).
 
 3. Return to the **Manage users** page, click the name of your Azure AD application to go to the application settings, and copy down the **Tenant ID** and **Client ID** values.
 
-4. Click **Add new** key. On the following screen, copy down the **Key** value. You won't be able to access this info again after you leave this page. For more information, see [Manage keys for an Azure AD application](https://docs.microsoft.com/en-us/windows/uwp/publish/add-users-groups-and-azure-ad-applications#manage-keys).
+4. Click **Add new** key. On the following screen, copy down the **Key** value. You won't be able to access this info again after you leave this page. For more information, see [Manage keys for an Azure AD application](https://docs.microsoft.com/windows/uwp/publish/add-users-groups-and-azure-ad-applications#manage-keys).
 
 5. Finally, ensure that the AD application has the required roles to manage and publish driver submissions. First, in the Hardware Dev Center, in the **Settings** panel, click **Users**.
 
@@ -94,4 +94,4 @@ The following sample provides detailed code that demonstrate how to use the Micr
 
 ## Additional help
 
-If you have questions about the Microsoft Store submission API or need assistance managing your submissions with this API, visit the [support page](https://developer.microsoft.com/en-us/dashboard/account/help?returnUri=https://developer.microsoft.com/en-us/dashboard/hardware) and request help.
+If you have questions about the Microsoft Store submission API or need assistance managing your submissions with this API, visit the [support page](https://developer.microsoft.com/dashboard/account/help?returnUri=https://developer.microsoft.com/dashboard/hardware) and request help.

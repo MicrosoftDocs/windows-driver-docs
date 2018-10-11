@@ -305,7 +305,7 @@ For more information about the SDL process, see these additional resources:
 
 -   This blog describes how to download a free copy of *The Security Development Lifecycle: SDL*, by Michael Howard and Steve Lipner. <https://blogs.msdn.microsoft.com/microsoft_press/2016/04/19/free-ebook-the-security-development-lifecycle/>
 
--   This page provides links to additional SDL publications. <https://www.microsoft.com/en-us/SDL/Resources/publications.aspx>
+-   This page provides links to additional SDL publications. <https://www.microsoft.com/SDL/Resources/publications.aspx>
 
 
 

@@ -463,7 +463,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>The index of the selected idle state of the processor</p></td>
 <td align="left"><p>The idle synchronization state of the processor</p></td>
 <td align="left"><p>The PRCB address of the hung processor</p></td>
-<td align="left"><p>A processor woke up from a non-interruptible state without the the OS initiating an explicit wake through the PEP (using the necessary PPM idle synchronization).</p></td>
+<td align="left"><p>A processor woke up from a non-interruptible state without the OS initiating an explicit wake through the PEP (using the necessary PPM idle synchronization).</p></td>
 </tr>
 </tbody>
 </table>

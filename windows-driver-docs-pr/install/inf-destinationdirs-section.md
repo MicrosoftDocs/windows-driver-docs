@@ -107,7 +107,7 @@ xga.Display      = 11
 
 [**SourceDisksNames**](inf-sourcedisksnames-section.md)
 
-[**Using Dirids**](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-dirids)
+[**Using Dirids**](https://docs.microsoft.com/windows-hardware/drivers/install/using-dirids)
 
 [**Version**](inf-version-section.md)
 

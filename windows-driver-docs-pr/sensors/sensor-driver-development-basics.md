@@ -25,7 +25,7 @@ This section describes basic concepts you should understand before you start wri
 
 -   [Writing a Sensor Device Driver](writing-a-sensor-device-driver.md)
 
--   [Writing a Location Sensor Driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/gnss/writing-a-location-sensor-driver)
+-   [Writing a Location Sensor Driver](https://docs.microsoft.com/windows-hardware/drivers/gnss/writing-a-location-sensor-driver)
 
 -   [Supporting Ambient Light Sensors](supporting-ambient-light-sensors.md)
 
@@ -33,8 +33,8 @@ This section describes basic concepts you should understand before you start wri
 
 ## Related topics
 [The Sensor Diagnostic Tool](the-sensor-diagnostic-tool.md)
-[The Sensors Geolocation Driver Sample](https://docs.microsoft.com/en-us/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample)
-[Writing a Location Sensor Driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/gnss/writing-a-location-sensor-driver)
+[The Sensors Geolocation Driver Sample](https://docs.microsoft.com/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample)
+[Writing a Location Sensor Driver](https://docs.microsoft.com/windows-hardware/drivers/gnss/writing-a-location-sensor-driver)
 [Writing a Sensor Device Driver](writing-a-sensor-device-driver.md)
 
 

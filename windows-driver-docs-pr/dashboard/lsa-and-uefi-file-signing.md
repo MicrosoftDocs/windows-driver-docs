@@ -16,7 +16,7 @@ The Hardware Dev Center Dashboard lets you to digitally sign [Local Security Aut
 > [!IMPORTANT]
 
 > Use the file-signing technique described in this topic for **UEFI** and **LSA** signing. 
-> For information about **driver** signing, see [Hardware submissions](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/hardware-certification-submissions).
+> For information about **driver** signing, see [Hardware submissions](https://docs.microsoft.com/windows-hardware/drivers/dashboard/hardware-certification-submissions).
 
 > [!IMPORTANT]
 > * File signing requires an [extended validation (EV) code signing certificate](get-a-code-signing-certificate.md).

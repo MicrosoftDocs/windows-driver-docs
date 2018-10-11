@@ -80,7 +80,7 @@ Use the  [|| (System Status)](----system-status-.md) command to confirm that all
    2 User mini dump: c:\calc.dmp
 ```
 
-Use the The [**g (Go)**](g--go-.md) command to complete loading of the dump files. 
+Use the [**g (Go)**](g--go-.md) command to complete loading of the dump files. 
 ```
 ||0:0:007> g
 

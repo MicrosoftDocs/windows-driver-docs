@@ -174,4 +174,4 @@ Yes.  If multiple systems use the same settings, or if you want to customize set
 
 * [Using a component INF file](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-component-inf-file)
 
-* [How windows ranks drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/how-setup-ranks-drivers--windows-vista-and-later-)
+* [How windows ranks drivers](https://docs.microsoft.com/windows-hardware/drivers/install/how-setup-ranks-drivers--windows-vista-and-later-)

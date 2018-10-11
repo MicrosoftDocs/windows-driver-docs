@@ -99,7 +99,7 @@ Starting in UMDF version 2.0, you can use many of the commands in the *Wdfkd.dll
 
 You can find discussion of all aspects of Windows drivers on the following forums:
 
--   Microsoft maintains the [Windows Hardware WDK and Driver Development](http://social.msdn.microsoft.com/Forums/windowsdesktop/en-US/home?forum=wdk) forum.
+-   Microsoft maintains the [Windows Hardware WDK and Driver Development](http://social.msdn.microsoft.com/Forums/windowsdesktop/home?forum=wdk) forum.
 
 -   Open Systems Resources (OSR) moderates the [OSR Online NTDEV List](http://www.osronline.com/showlists.cfm?list=ntdev) forum.
 
