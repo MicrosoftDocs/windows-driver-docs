@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **KSPROPERTY\_AUDIOMODULE\_COMMAND** property is a command property used to get and set buffers and instructions on the hardware (pin handle) or software cache (filter handle).
 
-The *Set* value is provided as part of the command. When the *Get* is used, it returns the the results of this command.
+The *Set* value is provided as part of the command. When the *Get* is used, it returns the results of this command.
 
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 

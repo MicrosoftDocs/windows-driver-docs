@@ -96,7 +96,7 @@ ntdll!LdrpInitializeProcess+0x431:
 ```
 
 
-Use the the p- command to step backwards in a TTD trace. 
+Use the p- command to step backwards in a TTD trace. 
 
 ```
 0:000> p-

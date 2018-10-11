@@ -42,7 +42,7 @@ The KMDF driver is published by the partner and consists of components shown in 
 
 ##### MS3DPrintUSB.sys
 
-The kernel mode device driver that creates the 3D printer dev node under Enum\\3DPrint. It is invoked by the PnP subsystem via a direct match of the VID & PID based on the device node created by Winusb.sys. The driver .inf file sets up the custom DLL used to set the the **3DPrintService** (if not already installed on the system).
+The kernel mode device driver that creates the 3D printer dev node under Enum\\3DPrint. It is invoked by the PnP subsystem via a direct match of the VID & PID based on the device node created by Winusb.sys. The driver .inf file sets up the custom DLL used to set the **3DPrintService** (if not already installed on the system).
 
 ##### 3dmon.dll
 
