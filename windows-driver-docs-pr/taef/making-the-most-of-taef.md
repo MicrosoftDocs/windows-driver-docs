@@ -38,7 +38,7 @@ Similarly, if you have a VERIFY (depends on the return type and what determines 
 
 Metadata lookup is hierarchical. This means if your select statement is **/select:"@Priority=2"**, and if your TestMethod does not specify Priority, TAEF will look up at the class that contains it. If the Class level metadata does not specify it, TAEF looks up at the assembly level.
 
-So, if you want all or most of the tests in your class to have the same "Priority", or say "Owner, you can get by by just specifying it at the class level. For the one or few tests that are an exception to this rule, you can explicitly provide the metadata at the "TestMethod" level. See the following test for details:
+So, if you want all or most of the tests in your class to have the same "Priority", or say "Owner, you can get that by just specifying it at the class level. For the one or few tests that are an exception to this rule, you can explicitly provide the metadata at the "TestMethod" level. See the following test for details:
 
 ```
 1    namespace WEX { namespace UnitTests { namespace Samples
