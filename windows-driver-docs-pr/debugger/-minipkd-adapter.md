@@ -60,7 +60,7 @@ For more information, see [SCSI Miniport Debugging](scsi-miniport-debugging.md).
 Remarks
 -------
 
-The address of of an adapter can be found in the **DevExt** field of the [**!minipkd.adapters**](-minipkd-adapters.md) display.
+The address of an adapter can be found in the **DevExt** field of the [**!minipkd.adapters**](-minipkd-adapters.md) display.
 
  
 
