@@ -147,7 +147,7 @@ The properties can be set in one of two ways:
 
 2.  Programmatically in the PWM driver 
 
-    A PWM driver can call IoSetDeviceInterfacePropertyData to set device interface properties in their EVT_WDF_DRIVER_DEVICE_ADD implementation after it creates and publishes the PWM device interface. The driver is responsible for deciding the value to assign and the device property. That information is usually stored in the system ACPI for for SoC-based designs. The value of each device interface property can be specified in each ACPI device node _DSD method as Device Properties. The driver must query the _DSD from ACPI, parse the Device Properties data, extract the value of each property, and assign it device interface. 
+    A PWM driver can call IoSetDeviceInterfacePropertyData to set device interface properties in their EVT_WDF_DRIVER_DEVICE_ADD implementation after it creates and publishes the PWM device interface. The driver is responsible for deciding the value to assign and the device property. That information is usually stored in the system ACPI for SoC-based designs. The value of each device interface property can be specified in each ACPI device node _DSD method as Device Properties. The driver must query the _DSD from ACPI, parse the Device Properties data, extract the value of each property, and assign it device interface. 
     
     Programmatically setting the properties makes the driver and its INF file portable across designs and hence BSPs where the only change would be in the ACPI DSDT defining each PWM device node. However, reading and parsing ACPI binary blocks is a tedious and requires a lot of code which can be prone to errors and vulnerabilities resulting in a bigger error surface. 
 

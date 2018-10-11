@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # Storage card requirements
 
-This section describes the general APDU command set requirements for For non-ISO14443-4 compliant cards (known as storage cards).
+This section describes the general APDU command set requirements for non-ISO14443-4 compliant cards (known as storage cards).
 
 ## General-Authenticate command
 
