@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 ## <span id="ddk_ata_port_drivers_reset_mechanism_kg"></span><span id="DDK_ATA_PORT_DRIVERS_RESET_MECHANISM_KG"></span>
 
-**NOTE** The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver) and [Storport miniport](https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers) driver models.
+**NOTE** The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://msdn.microsoft.com/windows/hardware/drivers/storage/storport-driver) and [Storport miniport](https://msdn.microsoft.com/windows/hardware/drivers/storage/storport-miniport-drivers) driver models.
 
 
 

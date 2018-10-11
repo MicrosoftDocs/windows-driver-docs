@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # MOF Compiler Properties for Driver Projects
 
-The Managed Object Format (MOF) compiler (mofcomp.exe) parses MOF files and adds the classes and class instances defined in the files to the WMI repository. Use the Mofcomp property page to compile MOF files with your driver. For more information about Mofcomp.exe and WMI, see [**mofcomp**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa392389), [Compiling MOF Files](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa389240), and [Compiling a Driver's MOF File](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff542012).
+The Managed Object Format (MOF) compiler (mofcomp.exe) parses MOF files and adds the classes and class instances defined in the files to the WMI repository. Use the Mofcomp property page to compile MOF files with your driver. For more information about Mofcomp.exe and WMI, see [**mofcomp**](https://msdn.microsoft.com/Library/Windows/Hardware/Aa392389), [Compiling MOF Files](https://msdn.microsoft.com/Library/Windows/Hardware/Aa389240), and [Compiling a Driver's MOF File](https://msdn.microsoft.com/Library/Windows/Hardware/Ff542012).
 
 ## <span id="Setting_Managed_Object_Format__MOF__Compiler_properties_for_driver_projects"></span><span id="setting_managed_object_format__mof__compiler_properties_for_driver_projects"></span><span id="SETTING_MANAGED_OBJECT_FORMAT__MOF__COMPILER_PROPERTIES_FOR_DRIVER_PROJECTS"></span>Setting Managed Object Format (MOF) Compiler properties for driver projects
 
@@ -37,7 +37,7 @@ This property page is available if you add a Managed Object Format (MOF) file (.
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="Additional_Options"></span><span id="additional_options"></span><span id="ADDITIONAL_OPTIONS"></span><strong>Additional Options</strong></p></td>
-<td align="left"><p>Specifies additional options to pass to the [<strong>mofcomp</strong>](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa392389) tool.</p></td>
+<td align="left"><p>Specifies additional options to pass to the [<strong>mofcomp</strong>](https://msdn.microsoft.com/Library/Windows/Hardware/Aa392389) tool.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Amendement"></span><span id="amendement"></span><span id="AMENDEMENT"></span><strong>Amendement</strong></p></td>
@@ -71,7 +71,7 @@ This property page is available if you add a Managed Object Format (MOF) file (.
 <p><strong>Safe Update (-class:safeupdate)</strong> Allows updates of classes even if there are child classes, as long as the change does not cause conflicts with child classes.</p>
 <p><strong>Update Only (-class:updateonly)</strong> Requests that the compiler not create any new classes.</p>
 <p></p>
-<p>See [<strong>mofcomp</strong>](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa392389) for more information.</p></td>
+<p>See [<strong>mofcomp</strong>](https://msdn.microsoft.com/Library/Windows/Hardware/Aa392389) for more information.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="NamespacePath"></span><span id="namespacepath"></span><span id="NAMESPACEPATH"></span><strong>NamespacePath</strong></p></td>
@@ -101,9 +101,9 @@ This property page is available if you add a Managed Object Format (MOF) file (.
 ## <span id="related_topics"></span>Related topics
 
 
-* [Compiling MOF Files](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa389240)
-* [Compiling a Driver's MOF File](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff542012)
-* [**mofcomp**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa392389)
+* [Compiling MOF Files](https://msdn.microsoft.com/Library/Windows/Hardware/Aa389240)
+* [Compiling a Driver's MOF File](https://msdn.microsoft.com/Library/Windows/Hardware/Ff542012)
+* [**mofcomp**](https://msdn.microsoft.com/Library/Windows/Hardware/Aa392389)
  
 
  

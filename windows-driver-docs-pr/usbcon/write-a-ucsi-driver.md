@@ -40,7 +40,7 @@ Applies to:
 
 **Important APIs**
 
-[UcmUcsiCx class extensions reference](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/_usbref/#type-c-driver-reference)
+[UcmUcsiCx class extensions reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#type-c-driver-reference)
 
 **Sample**
 

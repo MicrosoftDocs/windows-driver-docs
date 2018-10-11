@@ -50,7 +50,7 @@ ntdll!ZwTestAlert+0x14:
 00007ffc`61f789d4 c3              ret
 ```
 
-Use the [p (Step)](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/p--step-) command to step forward in a TTD trace. 
+Use the [p (Step)](https://docs.microsoft.com/windows-hardware/drivers/debugger/p--step-) command to step forward in a TTD trace. 
 
 ```
 0:000> p
@@ -76,7 +76,7 @@ ntdll!LdrpInitializeProcess+0x1bd9:
 7774f83c 0f8450e8ffff    je      ntdll!LdrpInitializeProcess+0x42f (7774e092) [br=1]
 ```
 
-You an also use the [t (Trace)](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/t--trace-) command to navigate in the trace.
+You an also use the [t (Trace)](https://docs.microsoft.com/windows-hardware/drivers/debugger/t--trace-) command to navigate in the trace.
 
 ```
 0:000> t

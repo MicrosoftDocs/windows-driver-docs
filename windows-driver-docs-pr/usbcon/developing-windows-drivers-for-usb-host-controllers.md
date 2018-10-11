@@ -74,7 +74,7 @@ ms.localizationpriority: medium
 <p>UCX triages incoming USB request blocks (URBs), and then forwards them to the correct endpoint queue.</p>
 [Configure USB endpoints in a host controller driver](configuring-usb-endpoints-in-a-host-controller-driver.md)
 <p>The host controller driver plays a role in UCX’s management of the queues that are associated with its endpoints, and in the programming of endpoints into controller hardware.</p>
-[USB host controller extension (UCX) reference](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/_usbref/#host-controller-driver-reference)
+[USB host controller extension (UCX) reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#host-controller-driver-reference)
 <p>Gives specifications for I/O requests, support routines, structures, and interfaces used by the client driver. Those routines and related data structures are defined in the WDK headers.</p>
 <p>UCX is referred to as the <em>framework class extension</em>.</p>
 <p>The host controller driver is referred to as the <em>client driver</em>.</p></td>

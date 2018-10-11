@@ -75,8 +75,8 @@ Check the announcement date that has been set. If the announcement date has pass
 | Component | Description |
 | ---       | ---         |
 |SellerID   | The identification number of your partner account. This can be found on the account management page, under **Account settings**. |
-|PrivateProductID | The identification number generated with each product creation. Located on the driver details page for your product. See [Dashboard ID definitions](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/id-definitions) for more information. |
-|SubmissionID | The idenfication number given to each submission and submission update. Located on the driver details page for your product. See [Dashboard ID definitions](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/id-definitions) for more information. |
+|PrivateProductID | The identification number generated with each product creation. Located on the driver details page for your product. See [Dashboard ID definitions](https://docs.microsoft.com/windows-hardware/drivers/dashboard/id-definitions) for more information. |
+|SubmissionID | The idenfication number given to each submission and submission update. Located on the driver details page for your product. See [Dashboard ID definitions](https://docs.microsoft.com/windows-hardware/drivers/dashboard/id-definitions) for more information. |
 
 - To create a sharable link, replace **SellerID**, **PrivateProductID**, and **SubmissionID** in the example URL above with the appropriate identification numbers.
 - This URL allows the report to be accessed and downloaded without prior authorization or access to the Windows Hardware Dev Center Dashboard.   

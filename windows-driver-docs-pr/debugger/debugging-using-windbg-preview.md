@@ -110,7 +110,7 @@ Debugging your universal app or background task is now a single click.
 
 ![Launch App Package Applications tab showing cal in the search box with three apps listed](images/windbgx-launch-app-package.png)
 
-For more information, see [Launch App Package](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/windbg-user-mode-preview#launch-app-package).
+For more information, see [Launch App Package](https://docs.microsoft.com/windows-hardware/drivers/debugger/windbg-user-mode-preview#launch-app-package).
 
 
 ### Attach to a process

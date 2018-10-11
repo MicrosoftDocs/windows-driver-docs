@@ -80,7 +80,7 @@ The following example demonstrates the JSON response body returned by a successf
       },
       {
         "type": "certificationReport",
-        "url": "https:// manage.devcenter.microsoft.com/en-us/dashboard/hardware/Driver/DownloadCertificationReport/29963920/13635057453741329/1152921504621441930"
+        "url": "https:// manage.devcenter.microsoft.com/dashboard/hardware/Driver/DownloadCertificationReport/29963920/13635057453741329/1152921504621441930"
       }
     ],
     "messages": []

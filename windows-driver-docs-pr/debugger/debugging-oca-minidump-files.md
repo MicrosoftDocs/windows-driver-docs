@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Debugging OCA minidump files
 
 
-Online Crash Analysis (OCA) is the reporting facility for [Windows Error Reporting (WER)](http://msdn.microsoft.com/en-US/library/windows/hardware/gg487440) information. Your company can use OCA crash dumps to analyze customer problems.
+Online Crash Analysis (OCA) is the reporting facility for [Windows Error Reporting (WER)](http://msdn.microsoft.com/library/windows/hardware/gg487440) information. Your company can use OCA crash dumps to analyze customer problems.
 
 ## <span id="Analyze_dump_files"></span><span id="analyze_dump_files"></span><span id="ANALYZE_DUMP_FILES"></span>Analyze dump files
 
@@ -41,7 +41,7 @@ Symbol files can include any or all of the following:
 -   The names, data types, addresses, and scopes of local variables.
 -   The line number in the source code that corresponds to each binary instruction.
 
-The [Windows Driver Kit (WDK)](http://msdn.microsoft.com/en-US/library/windows/hardware/gg487463) includes tools that can be used to reduce the number of symbols in a symbol file. The symbol files that contain all of the source-level information are called full symbol files. The symbol files with reduced information are called stripped symbol files.
+The [Windows Driver Kit (WDK)](http://msdn.microsoft.com/library/windows/hardware/gg487463) includes tools that can be used to reduce the number of symbols in a symbol file. The symbol files that contain all of the source-level information are called full symbol files. The symbol files with reduced information are called stripped symbol files.
 
 Because symbol data is crucial for getting meaningful crash information from Windows Error Report (WER) data, we encourage you to submit your symbols when you submit drivers to be signed. When symbols are submitted, they are stored on a server that synchronizes symbol data with the associated WER processes. With this storage process, you can easily categorize the crashes reported in the minidump files and ultimately receive better data back from Microsoft.
 

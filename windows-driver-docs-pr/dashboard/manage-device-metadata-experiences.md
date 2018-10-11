@@ -146,7 +146,7 @@ On the **Manage experiences** page, you can add, remove, or promote (from previe
 
 3. To update an existing package, select the package, click **Delete**, and then create and upload a new package.
 
-    For more information about creating a new package, see the [Device Metadata Authoring Wizard](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/device-metadata-authoring-wizard-portal), available in the [Windows Driver Kit](https://docs.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk).
+    For more information about creating a new package, see the [Device Metadata Authoring Wizard](https://docs.microsoft.com/windows-hardware/drivers/devtest/device-metadata-authoring-wizard-portal), available in the [Windows Driver Kit](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
 
 4. To add a new package, under **Add more metadata**, browse for the file or files that you want to add, create a friendly name if you want, and then click **Submit**.
 

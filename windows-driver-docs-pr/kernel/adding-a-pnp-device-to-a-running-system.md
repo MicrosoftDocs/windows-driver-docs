@@ -219,7 +219,7 @@ The following notes correspond to the numbered circles in the previous figure:
 
 The GUID_PNP_LOCATION_INTERFACE interface supplies the SPDRP_LOCATION_PATHS Plug and Play (PnP) device property for a device.
 
-To implement this interface in your driver, handle the IRP_MN_QUERY_INTERFACE IRP with InterfaceType = GUID_PNP_LOCATION_INTERFACE. Your driver supplies a pointer to a PNP_LOCATION_INTERFACE structure that contains pointers to the individual routines of the interface. The [PnpGetLocationString routine](https://msdn.microsoft.com/en-us/library/windows/hardware/ff558811) provides the device-specific part of the device's SPDRP_LOCATION_PATHS property.
+To implement this interface in your driver, handle the IRP_MN_QUERY_INTERFACE IRP with InterfaceType = GUID_PNP_LOCATION_INTERFACE. Your driver supplies a pointer to a PNP_LOCATION_INTERFACE structure that contains pointers to the individual routines of the interface. The [PnpGetLocationString routine](https://msdn.microsoft.com/library/windows/hardware/ff558811) provides the device-specific part of the device's SPDRP_LOCATION_PATHS property.
 
 
 

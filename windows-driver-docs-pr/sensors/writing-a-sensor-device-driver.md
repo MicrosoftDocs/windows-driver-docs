@@ -37,8 +37,8 @@ In this section:
 -   [Sensor Driver Best Practices](sensor-driver-best-practices.md)
 
 ## Related topics
-[Writing a Location Sensor Driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/gnss/writing-a-location-sensor-driver)
-[The Sensors Geolocation Driver Sample](https://docs.microsoft.com/en-us/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample)
+[Writing a Location Sensor Driver](https://docs.microsoft.com/windows-hardware/drivers/gnss/writing-a-location-sensor-driver)
+[The Sensors Geolocation Driver Sample](https://docs.microsoft.com/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample)
 
 
 

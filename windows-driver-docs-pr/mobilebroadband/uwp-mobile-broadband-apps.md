@@ -40,7 +40,7 @@ All UWP apps share the following features and benefits:
 
 -   **Touch optimization** Touch interaction support is built-in. You can design your mobile broadband app for touch, and Windows gives you keyboard, mouse, and graphical scaling support.
 
-For more info about UWP apps, see [Getting started with Windows 10 apps](https://docs.microsoft.com/en-us/windows/uwp/get-started/).
+For more info about UWP apps, see [Getting started with Windows 10 apps](https://docs.microsoft.com/windows/uwp/get-started/).
 
 ## UWP mobile broadband apps
 

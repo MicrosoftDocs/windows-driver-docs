@@ -20,7 +20,7 @@ Most debugger commands use virtual addresses, not physical addresses, as their i
 
 There are two ways to convert a virtual address to a physical address: by using the **!vtop** extension, and by using the **!pte** extension.
 
-For an overview of virtual address in Windows, see [Virtual address spaces](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/virtual-address-spaces). 
+For an overview of virtual address in Windows, see [Virtual address spaces](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/virtual-address-spaces). 
 
 
 ### <span id="address_conversion_using__vtop"></span><span id="ADDRESS_CONVERSION_USING__VTOP"></span>Address Conversion Using !vtop

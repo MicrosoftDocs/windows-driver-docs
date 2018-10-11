@@ -148,7 +148,7 @@ The new app (not included in the DCHU sample) is secure and can be updated easil
 
 ## Registering a COM component in an INF file
 
-Fabrikam needs to register a COM component without using a co-installer.  In order to accomplish this in a universal INF file, they use the [Reg2inf tool](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/reg2inf) distributed in the WDK.  After building their COM server project (taken from the [In-process ATL COM server sample](https://code.msdn.microsoft.com/ATLDllCOMServer-b52a7d5d)), they provide the COM .dll as an input to the Reg2inf tool.  The tool then generates the following INF directives that Fabrikam includes in their base INF ([`osrfx2_DCHU_base.inx`]):
+Fabrikam needs to register a COM component without using a co-installer.  In order to accomplish this in a universal INF file, they use the [Reg2inf tool](https://docs.microsoft.com/windows-hardware/drivers/devtest/reg2inf) distributed in the WDK.  After building their COM server project (taken from the [In-process ATL COM server sample](https://code.msdn.microsoft.com/ATLDllCOMServer-b52a7d5d)), they provide the COM .dll as an input to the Reg2inf tool.  The tool then generates the following INF directives that Fabrikam includes in their base INF ([`osrfx2_DCHU_base.inx`]):
 
 ```
 ; Add all registry keys to successfully register the
@@ -184,11 +184,11 @@ Ideally, there should be strong versioning contracts between base, extensions an
 CopyInf=osrfx2_DCHU_component.inf
 ```
 
-This directive can also be used to coordinate installation of INF files in multifunction devices.  For more details, see [Copying INF files](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/copying-inf-files). 
+This directive can also be used to coordinate installation of INF files in multifunction devices.  For more details, see [Copying INF files](https://docs.microsoft.com/windows-hardware/drivers/install/copying-inf-files). 
 
 ## Run from the driver store
 
-To make it easier to update the driver, Fabrikam specifies the [Driver Store](../install/driver-store.md) as the destination to copy the driver files by using [DirId 13](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-dirids) where possible.  Here is an example from [`osrfx2_DCHU_base.inx`]:
+To make it easier to update the driver, Fabrikam specifies the [Driver Store](../install/driver-store.md) as the destination to copy the driver files by using [DirId 13](https://docs.microsoft.com/windows-hardware/drivers/install/using-dirids) where possible.  Here is an example from [`osrfx2_DCHU_base.inx`]:
 
 ```
 [DestinationDirs]

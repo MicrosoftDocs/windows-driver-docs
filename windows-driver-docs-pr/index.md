@@ -85,7 +85,7 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
                             <a href="https://go.microsoft.com/fwlink/p/?LinkId=698539">Visual Studio 2017</a>
                         </p>
                         <p>
-                            <a href="https://developer.microsoft.com/en-us/windows/hardware/windows-driver-kit">Windows Driver Kit (WDK)</a>
+                            <a href="https://developer.microsoft.com/windows/hardware/windows-driver-kit">Windows Driver Kit (WDK)</a>
                         </p>                        
                     </div>
                 </div>
@@ -231,10 +231,10 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
                             <a href="/windows-hardware/drivers/devapps/">Windows Store Device Apps</a>
                         </p>
                         <p>
-                            <a href="https://docs.microsoft.com/en-us/windows/uwp/">UWP apps</a>
+                            <a href="https://docs.microsoft.com/windows/uwp/">UWP apps</a>
                         </p>
                         <p>
-                            <a href="https://developer.microsoft.com/en-us/windows/desktop">Desktop applications</a>
+                            <a href="https://developer.microsoft.com/windows/desktop">Desktop applications</a>
                         </p>
                     </div>
                 </div>
@@ -244,9 +244,9 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
 </ul>
 
 <p><b>Run-time requirements for WDK 10</b></p>
-WDK requires Visual Studio. For more information, see [Visual Studio 2017 System Requirements] (https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs).
+WDK requires Visual Studio. For more information, see [Visual Studio 2017 System Requirements] (https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs).
 
-EWDK additionally requires .NET 4.6.1. For information about .NET requirements, see [.NET Framework system requirements](https://docs.microsoft.com/en-us/dotnet/framework/get-started/system-requirements). 
+EWDK additionally requires .NET 4.6.1. For information about .NET requirements, see [.NET Framework system requirements](https://docs.microsoft.com/dotnet/framework/get-started/system-requirements). 
 
 You can use WDK Insider Preview and the EWDK Insider Preview to develop drivers that run on these operating systems:
 Client OS | Server OS
