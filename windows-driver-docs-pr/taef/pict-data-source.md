@@ -286,7 +286,7 @@ If persisting the PICT results, and using cached data is something you want to d
 set te_cmd = /persistPictResults
 ```
 
-The cached result files are stored in a folder called "TAEF-PICT" in %temp% directory, if Te.exe has access to it, or in the current execution directory from where Te.exe was launched. The only time you may have the results in an inconsistent state is if you hit Ctrl + C during execution. In such a case, TAEF will attempt to delete the cached results, but if it is unable to do so, you will see an error to the effect. The error will prompt you to delete the the cached results location. Failing to do may result in undefined or erroneous behaviour in subsequent tests.
+The cached result files are stored in a folder called "TAEF-PICT" in %temp% directory, if Te.exe has access to it, or in the current execution directory from where Te.exe was launched. The only time you may have the results in an inconsistent state is if you hit Ctrl + C during execution. In such a case, TAEF will attempt to delete the cached results, but if it is unable to do so, you will see an error to the effect. The error will prompt you to delete the cached results location. Failing to do may result in undefined or erroneous behaviour in subsequent tests.
 
 With in-built PICT support in TAEF, you can now make the most of both, features in PICT as well as features in TAEF in your test automation.
 

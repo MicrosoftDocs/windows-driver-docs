@@ -72,7 +72,7 @@ In rare instances, this error can be caused by a driver that has corrupted the r
 Resolution
 ----------
 
-Try using the the startup recovery mechanism (for example Startup Repair, Recovery Console, or Emergency Recovery Disk) provided by the operating system. If the problem is a missing or corrupt registry file, that usually fixes the problem.
+Try using the startup recovery mechanism (for example Startup Repair, Recovery Console, or Emergency Recovery Disk) provided by the operating system. If the problem is a missing or corrupt registry file, that usually fixes the problem.
 
  
 
