@@ -50,7 +50,7 @@ Note the following only when submitting an APN update using apndatabase.xml, for
   -   For CDMA networks, you can have a new database entry for each Provider ID (also called a SID) or Provider Name.
   -   Certificate information for account provisioning metadata includes **Cert Issuer Name** and **Cert Subject Name** and is used to verify that account provisioning provided by a purchase website comes from the an authorized web service. If the certificate information stored here matches what the purchase website presents, Windows will allow that website to push network-specific configuration information to the PC.
 
-- When submitting an APN database update using apndatabase.xml, the following following values must be included:       
+- When submitting an APN database update using apndatabase.xml, the following values must be included:       
     - A CDMA Provider name
     - A CDMA Provider ID (SID)
 

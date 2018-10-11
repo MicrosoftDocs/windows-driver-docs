@@ -115,7 +115,7 @@ For example, the following stack trace of Pci.sys shows its response to Force Pe
 
 ```
 kd> !verifier 40
-# Size of the log is is 0x40
+# Size of the log is 0x40
 ========================================================
 IRP: 8f84ef00 - forced pending from stack trace:
 

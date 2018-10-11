@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 # Querying for the Write Cache Property
 
 
-Storage devices often buffer data in a write cache before writing the data to nonvolatile media, such as a disk platter. This type of buffer improves device performance but it also also decreases data integrity. If the write cache does not have a battery backup, a power failure can cause the loss of cached data.
+Storage devices often buffer data in a write cache before writing the data to nonvolatile media, such as a disk platter. This type of buffer improves device performance but it also decreases data integrity. If the write cache does not have a battery backup, a power failure can cause the loss of cached data.
 
 One remedy for the problem of data loss is to flush the write cache (with a SCSI SYNCHRONIZE CACHE command on SCSI devices). However, flushing the write cache is an expensive operation, and, if done frequently, it can significantly degrade performance. Instead of flushing the write cache, many storage devices allow *write-through* requests. A write-through request bypasses the write cache and sends data directly to the media.
 
