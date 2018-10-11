@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 # PWM driver for an on-SoC PWM module
 To provide access to a Pulse width modulation (PWM) controller that is part of the SoC and memory-mapped to the SoC address space, you need to writer a kernel-mode driver. The driver must register the device class interface of the PWM controller so that UWP apps can access the system exposed PWM devices through the PWM WinRT APIs defined in Windows.Devices.Pwm namespace. 
 
-**Note**    If you have an add-on PWM module over I<sup>2</sup>C, SPI, or a UART controller, you can access the module from a UWP app by using the APIs defined in the [**Windows.Devices.Pwm**](https://docs.microsoft.com/en-us/uwp/api/windows.devices.pwm) and [**Windows.Devices.Pwm.Provider**](https://docs.microsoft.com/en-us/uwp/api/windows.devices.pwm.provider) namespace. 
+**Note**    If you have an add-on PWM module over I<sup>2</sup>C, SPI, or a UART controller, you can access the module from a UWP app by using the APIs defined in the [**Windows.Devices.Pwm**](https://docs.microsoft.com/uwp/api/windows.devices.pwm) and [**Windows.Devices.Pwm.Provider**](https://docs.microsoft.com/uwp/api/windows.devices.pwm.provider) namespace. 
 
 A PWM device is abstracted into a single controller and one or more pins. Controlling either the controller or the pins is done through the PWM-defined IOCTLs. For example, an LCD display driver sends such requests to  the PWM driver to control the LCD backlight level. 
 
@@ -45,7 +45,7 @@ This topic describes,
 
 **Important APIs**
 
--   [PWM IOCTLs](https://msdn.microsoft.com/en-us/library/windows/desktop/mt826481)
+-   [PWM IOCTLs](https://msdn.microsoft.com/library/windows/desktop/mt826481)
 
 ## About PWM
 PWM describes the basic technique for generating a rectangular pulse wave with modulated pulse width resulting in the variation of the average value of the waveform.  
@@ -104,9 +104,9 @@ The driver should use the provided PWM support routine PwmParsePinPath to parse 
 
 ## Setting device interface properties
 
-To use PWM WinRT APIs from UWP apps, these [device interface properties](https://msdn.microsoft.com/en-us/library/windows/hardware/ff541409(v=vs.85).aspx) must be set.
+To use PWM WinRT APIs from UWP apps, these [device interface properties](https://msdn.microsoft.com/library/windows/hardware/ff541409(v=vs.85).aspx) must be set.
 
--   [DEVPKEY_DeviceInterface_Restricted](https://msdn.microsoft.com/en-us/library/windows/hardware/hh406291(v=vs.85).aspx) 
+-   [DEVPKEY_DeviceInterface_Restricted](https://msdn.microsoft.com/library/windows/hardware/hh406291(v=vs.85).aspx) 
 
     As per the current UWP device access model, setting Restricted device interface property to FALSE is required to give UWP apps access to the PWM device interface.   
 
@@ -147,7 +147,7 @@ The properties can be set in one of two ways:
 
 2.  Programmatically in the PWM driver 
 
-    A PWM driver can call IoSetDeviceInterfacePropertyData to set device interface properties in their EVT_WDF_DRIVER_DEVICE_ADD implementation after it creates and publishes the PWM device interface. The driver is responsible for deciding the value to assign and the device property. That information is usually stored in the system ACPI for for SoC-based designs. The value of each device interface property can be specified in each ACPI device node _DSD method as Device Properties. The driver must query the _DSD from ACPI, parse the Device Properties data, extract the value of each property, and assign it device interface. 
+    A PWM driver can call IoSetDeviceInterfacePropertyData to set device interface properties in their EVT_WDF_DRIVER_DEVICE_ADD implementation after it creates and publishes the PWM device interface. The driver is responsible for deciding the value to assign and the device property. That information is usually stored in the system ACPI for SoC-based designs. The value of each device interface property can be specified in each ACPI device node _DSD method as Device Properties. The driver must query the _DSD from ACPI, parse the Device Properties data, extract the value of each property, and assign it device interface. 
     
     Programmatically setting the properties makes the driver and its INF file portable across designs and hence BSPs where the only change would be in the ACPI DSDT defining each PWM device node. However, reading and parsing ACPI binary blocks is a tedious and requires a lot of code which can be prone to errors and vulnerabilities resulting in a bigger error surface. 
 
@@ -491,20 +491,20 @@ PWM IOCTL requests are sent by an application or another driver and are targeted
 
 **Controller IOCTLs**
 
--    [**IOCTL_PWM_CONTROLLER_GET_ACTUAL_PERIOD**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt826475) 
--    [**IOCTL_PWM_CONTROLLER_GET_INFO**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt826476) 
--    [**IOCTL_PWM_CONTROLLER_SET_DESIRED_PERIOD**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt826478)
+-    [**IOCTL_PWM_CONTROLLER_GET_ACTUAL_PERIOD**](https://msdn.microsoft.com/library/windows/desktop/mt826475) 
+-    [**IOCTL_PWM_CONTROLLER_GET_INFO**](https://msdn.microsoft.com/library/windows/desktop/mt826476) 
+-    [**IOCTL_PWM_CONTROLLER_SET_DESIRED_PERIOD**](https://msdn.microsoft.com/library/windows/desktop/mt826478)
 
 
 **Pin IOCTLs**
 
--    [**IOCTL_PWM_PIN_GET_ACTIVE_DUTY_CYCLE_PERCENTAGE**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt843915)
--    [**IOCTL_PWM_PIN_SET_ACTIVE_DUTY_CYCLE_PERCENTAGE**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt843918)
--    [**IOCTL_PWM_PIN_GET_POLARITY**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt843916)
--    [**IOCTL_PWM_PIN_SET_POLARITY**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt843919)
--    [**IOCTL_PWM_PIN_START**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt843920)
--    [**IOCTL_PWM_PIN_STOP**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt843921)
--    [**IOCTL_PWM_PIN_IS_STARTED**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt843917)    
+-    [**IOCTL_PWM_PIN_GET_ACTIVE_DUTY_CYCLE_PERCENTAGE**](https://msdn.microsoft.com/library/windows/desktop/mt843915)
+-    [**IOCTL_PWM_PIN_SET_ACTIVE_DUTY_CYCLE_PERCENTAGE**](https://msdn.microsoft.com/library/windows/desktop/mt843918)
+-    [**IOCTL_PWM_PIN_GET_POLARITY**](https://msdn.microsoft.com/library/windows/desktop/mt843916)
+-    [**IOCTL_PWM_PIN_SET_POLARITY**](https://msdn.microsoft.com/library/windows/desktop/mt843919)
+-    [**IOCTL_PWM_PIN_START**](https://msdn.microsoft.com/library/windows/desktop/mt843920)
+-    [**IOCTL_PWM_PIN_STOP**](https://msdn.microsoft.com/library/windows/desktop/mt843921)
+-    [**IOCTL_PWM_PIN_IS_STARTED**](https://msdn.microsoft.com/library/windows/desktop/mt843917)    
 
 For each IOCTL request, the PWM drivr must verify the following: 
 

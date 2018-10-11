@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 # PropVariant helpers
 
 
-The PropVariant helper functions are used by the v2 sensor drivers for manipulating the [PROPVARIANT](https://docs.microsoft.com/en-us/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structures associated with the sensors.
+The PropVariant helper functions are used by the v2 sensor drivers for manipulating the [PROPVARIANT](https://docs.microsoft.com/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structures associated with the sensors.
 
 The helper functions are used along with the sensor device driver software interface (DDSI).
 
@@ -22,17 +22,17 @@ The helper functions are used along with the sensor device driver software inter
 
 Usage by sensor DDSI
 
--   Initializes a [PROPVARIANT](https://docs.microsoft.com/en-us/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure.
+-   Initializes a [PROPVARIANT](https://docs.microsoft.com/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure.
 
 Comments
 
--   This function receives a FLOAT, and then based on that variable, it creates and initializes a [PROPVARIANT](https://docs.microsoft.com/en-us/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure.
+-   This function receives a FLOAT, and then based on that variable, it creates and initializes a [PROPVARIANT](https://docs.microsoft.com/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure.
 
 **PropKeyFindKeyGetPropVariant**
 
 Usage by sensor DDSI
 
--   Retrieves a [PROPVARIANT](https://docs.microsoft.com/en-us/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure.
+-   Retrieves a [PROPVARIANT](https://docs.microsoft.com/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure.
 
 Comments
 
@@ -42,7 +42,7 @@ Comments
 
 Usage by sensor DDSI
 
--   Sets a [PROPVARIANT](https://docs.microsoft.com/en-us/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure.
+-   Sets a [PROPVARIANT](https://docs.microsoft.com/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure.
 
 Comments
 
@@ -56,7 +56,7 @@ Usage by sensor DDSI
 
 Comments
 
--   This is the *filetime* member of the [PROPVARIANT](https://docs.microsoft.com/en-us/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure that matches the supplied property key.
+-   This is the *filetime* member of the [PROPVARIANT](https://docs.microsoft.com/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure that matches the supplied property key.
 
 **PropKeyFindKeyGetGuid**
 
@@ -66,13 +66,13 @@ Usage by sensor DDSI
 
 Comments
 
--   This is the *puuid* member of the [PROPVARIANT](https://docs.microsoft.com/en-us/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure that matches the supplied property key.
+-   This is the *puuid* member of the [PROPVARIANT](https://docs.microsoft.com/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure that matches the supplied property key.
 
 **PropKeyFindKeyGetBool**
 
 Usage by sensor DDSI
 
--   Retrieves a BOOL value from the [PROPVARIANT](https://docs.microsoft.com/en-us/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure associated with the sensor.
+-   Retrieves a BOOL value from the [PROPVARIANT](https://docs.microsoft.com/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure associated with the sensor.
 
 Comments
 
@@ -82,7 +82,7 @@ Comments
 
 Usage by sensor DDSI
 
--   Retrieves a ULONG value from the [PROPVARIANT](https://docs.microsoft.com/en-us/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure associated with the sensor.
+-   Retrieves a ULONG value from the [PROPVARIANT](https://docs.microsoft.com/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure associated with the sensor.
 
 Comments
 
@@ -92,7 +92,7 @@ Comments
 
 Usage by sensor DDSI
 
--   Retrieves a USHORT value from the [PROPVARIANT](https://docs.microsoft.com/en-us/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure associated with the sensor.
+-   Retrieves a USHORT value from the [PROPVARIANT](https://docs.microsoft.com/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure associated with the sensor.
 
 Comments
 
@@ -102,7 +102,7 @@ Comments
 
 Usage by sensor DDSI
 
--   Retrieves a FLOAT value from the [PROPVARIANT](https://docs.microsoft.com/en-us/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure associated with the sensor.
+-   Retrieves a FLOAT value from the [PROPVARIANT](https://docs.microsoft.com/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure associated with the sensor.
 
 Comments
 
@@ -112,7 +112,7 @@ Comments
 
 Usage by sensor DDSI
 
--   Retrieves a DOUBLE value from the [PROPVARIANT](https://docs.microsoft.com/en-us/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure associated with the sensor.
+-   Retrieves a DOUBLE value from the [PROPVARIANT](https://docs.microsoft.com/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure associated with the sensor.
 
 Comments
 
@@ -122,7 +122,7 @@ Comments
 
 Usage by sensor DDSI
 
--   Retrieves a 32-bit value from the [PROPVARIANT](https://docs.microsoft.com/en-us/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure associated with the sensor.
+-   Retrieves a 32-bit value from the [PROPVARIANT](https://docs.microsoft.com/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure associated with the sensor.
 
 Comments
 
@@ -132,7 +132,7 @@ Comments
 
 Usage by sensor DDSI
 
--   Retrieves a 64-bit value from the [PROPVARIANT](https://docs.microsoft.com/en-us/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure associated with the sensor.
+-   Retrieves a 64-bit value from the [PROPVARIANT](https://docs.microsoft.com/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure associated with the sensor.
 
 Comments
 
@@ -142,7 +142,7 @@ Comments
 
 Usage by sensor DDSI
 
--   Retrieves the Nth ULONG value from a [PROPVARIANT](https://docs.microsoft.com/en-us/windows/desktop/api/propidl/ns-propidl-tagpropvariant) within a collection list that is based on the supplied property key.
+-   Retrieves the Nth ULONG value from a [PROPVARIANT](https://docs.microsoft.com/windows/desktop/api/propidl/ns-propidl-tagpropvariant) within a collection list that is based on the supplied property key.
 
 Comments
 
@@ -152,7 +152,7 @@ Comments
 
 Usage by sensor DDSI
 
--   Retrieves the Nth UShort value from a [PROPVARIANT](https://docs.microsoft.com/en-us/windows/desktop/api/propidl/ns-propidl-tagpropvariant) within a collection list that is based on the supplied property key.
+-   Retrieves the Nth UShort value from a [PROPVARIANT](https://docs.microsoft.com/windows/desktop/api/propidl/ns-propidl-tagpropvariant) within a collection list that is based on the supplied property key.
 
 Comments
 
@@ -162,7 +162,7 @@ Comments
 
 Usage by sensor DDSI
 
--   Retrieves the Nth Int64 value from a [PROPVARIANT](https://docs.microsoft.com/en-us/windows/desktop/api/propidl/ns-propidl-tagpropvariant) within a collection list that is based on the supplied property key.
+-   Retrieves the Nth Int64 value from a [PROPVARIANT](https://docs.microsoft.com/windows/desktop/api/propidl/ns-propidl-tagpropvariant) within a collection list that is based on the supplied property key.
 
 Comments
 
@@ -176,7 +176,7 @@ Usage by sensor DDSI
 
 Comments
 
--   The BOOL value indicates whether or not the property key was found in the [**SENSOR\_PROPERTY\_LIST**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/sensorsdef/ns-sensorsdef-sensor_property_list) structure associated with the sensor.
+-   The BOOL value indicates whether or not the property key was found in the [**SENSOR\_PROPERTY\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ns-sensorsdef-sensor_property_list) structure associated with the sensor.
 
 **IsKeyPresentInCollectionList**
 
@@ -186,7 +186,7 @@ Usage by sensor DDSI
 
 Comments
 
--   The BOOL value indicates whether or not the property key was found in the [**SENSOR\_COLLECTION\_LIST**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/sensorsdef/ns-sensorsdef-sensor_collection_list) structure. associated with the sensor.
+-   The BOOL value indicates whether or not the property key was found in the [**SENSOR\_COLLECTION\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ns-sensorsdef-sensor_collection_list) structure. associated with the sensor.
 
 **IsCollectionListSame**
 
@@ -196,13 +196,13 @@ Usage by sensor DDSI
 
 Comments
 
--   Compares two [**SENSOR\_COLLECTION\_LIST**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/sensorsdef/ns-sensorsdef-sensor_collection_list) structures to determine if they're the same.
+-   Compares two [**SENSOR\_COLLECTION\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ns-sensorsdef-sensor_collection_list) structures to determine if they're the same.
 
 **PropVariantGetInformation**
 
 Usage by sensor DDSI
 
--   Retrieves size, offset and other information about the [PROPVARIANT](https://docs.microsoft.com/en-us/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure associated with the sensor.
+-   Retrieves size, offset and other information about the [PROPVARIANT](https://docs.microsoft.com/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structure associated with the sensor.
 
 Comments
 
@@ -216,7 +216,7 @@ Usage by sensor DDSI
 
 Comments
 
--   See [**SENSOR\_PROPERTY\_LIST**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/sensorsdef/ns-sensorsdef-sensor_property_list) for more information.
+-   See [**SENSOR\_PROPERTY\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ns-sensorsdef-sensor_property_list) for more information.
 
 **PropertiesListGetFillableCount**
 

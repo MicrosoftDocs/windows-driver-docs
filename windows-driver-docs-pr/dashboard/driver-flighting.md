@@ -41,7 +41,7 @@ Once your account has been approved, your organization's administrators will be 
 
 After being submitted to the Windows Hardware Dev Center Dashboard, you can promote your drivers for flighting with the following steps:
  
-1. Once your driver has been submitted and is in the **validation** stage of processing, create a new shipping label and fill out the **details** and **properties** sections. See [Publish a driver to Windows Update](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update) for more information.
+1. Once your driver has been submitted and is in the **validation** stage of processing, create a new shipping label and fill out the **details** and **properties** sections. See [Publish a driver to Windows Update](https://docs.microsoft.com/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update) for more information.
 
 2. Select one or more driver promotion option to promote your driver for flighting, as described below:
 

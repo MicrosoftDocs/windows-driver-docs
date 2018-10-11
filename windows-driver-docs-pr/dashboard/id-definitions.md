@@ -63,4 +63,4 @@ Promotion Request ID | If your Shipping Label requires a manual review from Micr
 
 - [Manage your hardware submissions](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/manage-your-hardware-submissions)
 
-- [Manage driver distribution with shipping labels](https://msdn.microsoft.com/en-us/windows/hardware/drivers/dashboard/manage-driver-distribution-by-submission)
+- [Manage driver distribution with shipping labels](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/manage-driver-distribution-by-submission)

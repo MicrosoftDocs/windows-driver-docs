@@ -264,7 +264,7 @@ Before the client driver can enumerate pipes, make sure that these requirements 
 
     You can obtain all that information from the official USB specification.
 
--   If you are writing a UMDF driver, get the header file, Usb\_hw.h from the the UMDF Sample Driver for OSR USB Fx2 Learning Kit. This header file contains useful macros and structure for formatting the setup packet for the control transfer.
+-   If you are writing a UMDF driver, get the header file, Usb\_hw.h from the UMDF Sample Driver for OSR USB Fx2 Learning Kit. This header file contains useful macros and structure for formatting the setup packet for the control transfer.
 
     All UMDF drivers must communicate with a kernel-mode driver in order to send and receive data from devices. For a USB UMDF driver, the kernel-mode driver is always the Microsoft-provided driver [WinUSB](winusb.md) (Winusb.sys).
 

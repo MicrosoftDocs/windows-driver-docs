@@ -44,7 +44,7 @@ You need to write a USB Type-C connector driver in these scenarios:
 
 **Important APIs**
 
--  [USB Type-C connector driver programming reference](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/_usbref/#type-c-driver-reference)
+-  [USB Type-C connector driver programming reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#type-c-driver-reference)
 
 Describes the USB connector manager (UCM) that manages a USB Type-C connector and the expected behavior of a connector driver.
 

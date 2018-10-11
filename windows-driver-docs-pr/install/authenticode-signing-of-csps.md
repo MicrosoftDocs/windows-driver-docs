@@ -56,7 +56,7 @@ signtool.exe sign /ac certificate.cer /sha1 553e39af9e0ea8c9edcd802abbf103166f81
 
 Consult the [Troubleshooting and support](http://msdn.microsoft.com/hh361695) page for additional help and support.
 
-You can also check the [Application Security for Windows Desktop](http://social.msdn.microsoft.com/Forums/en-US/home?forum=windowssecurity) forum for assistance.
+You can also check the [Application Security for Windows Desktop](http://social.msdn.microsoft.com/Forums/home?forum=windowssecurity) forum for assistance.
 
  
 

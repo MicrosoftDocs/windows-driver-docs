@@ -1201,7 +1201,7 @@ The following are JavaScript resources that may be useful as you develop JavaScr
 
 -   [JScript Language Tour](https://msdn.microsoft.com/library/t895bwkh.aspx)
 
--   [Mozilla JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+-   [Mozilla JavaScript Reference](https://developer.mozilla.org/docs/Web/JavaScript)
 
 -   [WinJS: The Windows library for JavaScript](https://developer.microsoft.com/windows/develop/winjs)
 

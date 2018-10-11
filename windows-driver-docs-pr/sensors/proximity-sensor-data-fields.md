@@ -28,7 +28,7 @@ The following table shows the data fields. For more information about the types 
 ## Remarks
 
 
-If a sensor supports the **PKEY\_SensorData\_ProximityDistanceMillimeters** data field, then in response to a call from [EvtSensorGetDataFieldProperties](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config) for the **PKEY\_SensorData\_ProximityDistanceMillimeters** data field, the sensor must report the following data field *properties*:
+If a sensor supports the **PKEY\_SensorData\_ProximityDistanceMillimeters** data field, then in response to a call from [EvtSensorGetDataFieldProperties](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config) for the **PKEY\_SensorData\_ProximityDistanceMillimeters** data field, the sensor must report the following data field *properties*:
 
 |Data field property|Type|Required/Optional|Description|
 |--|--|--|--|
@@ -47,7 +47,7 @@ If the driver fails to report these data-field properties, Apps will still be ab
 ## Related topics
 
 
-[EvtSensorGetDataFieldProperties](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config)
+[EvtSensorGetDataFieldProperties](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config)
 
 [PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395)
 

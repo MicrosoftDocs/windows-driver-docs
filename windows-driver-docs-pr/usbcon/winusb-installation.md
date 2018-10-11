@@ -72,7 +72,7 @@ If you are installing WinUSB as the function driver for one of the functions in 
 
 The following INF installs WinUSB as the OSR USB FX2 board's function driver on a x64-based system.
 
-> Starting in Windows 10, version 1709, the Windows Driver Kit provides [InfVerif.exe](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/infverif) that you can use to test a driver INF file to make sure there are no syntax issues and the INF file is universal. We recommened that you provide a universal INF. For more information, see [Using a Universal INF File](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-a-universal-inf-file).
+> Starting in Windows 10, version 1709, the Windows Driver Kit provides [InfVerif.exe](https://docs.microsoft.com/windows-hardware/drivers/devtest/infverif) that you can use to test a driver INF file to make sure there are no syntax issues and the INF file is universal. We recommened that you provide a universal INF. For more information, see [Using a Universal INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-universal-inf-file).
 
 ``` syntax
 ;

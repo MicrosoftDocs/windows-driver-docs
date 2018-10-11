@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_unsynchronized_atahwbuildio_routine_kg"></span><span id="DDK_UNSYNCHRONIZED_ATAHWBUILDIO_ROUTINE_KG"></span>
 
 
-**NOTE** The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver) and [Storport miniport](https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers) driver models.
+**NOTE** The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://msdn.microsoft.com/windows/hardware/drivers/storage/storport-driver) and [Storport miniport](https://msdn.microsoft.com/windows/hardware/drivers/storage/storport-miniport-drivers) driver models.
 
 
 The ATA port driver raises the IRQL of the processor to DISPATCH\_LEVEL or above before it calls the ATA miniport driver's start I/O routine, [**IdeHwStartIo**](https://msdn.microsoft.com/library/windows/hardware/ff559003). The ATA port driver raises the IRQL of the processor to mask out interrupts and to guarantee that the start I/O routine and the interrupt handler synchronize access to critical operating system structures. To reduce the time that the miniport driver spends in the start I/O routine at an IRQL &gt;= DISPATCH\_LEVEL, the miniport driver provides the [**IdeHwBuildIo**](https://msdn.microsoft.com/library/windows/hardware/ff557462) routine. The ATA port driver calls *IdeHwBuildIo* at IRQL &lt;= DISPATCH\_LEVEL, so that the miniport driver can preprocess as much of the I/O request as possible at the lower IRQL and avoid monopolizing control of the processor.

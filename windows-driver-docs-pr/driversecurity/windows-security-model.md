@@ -157,7 +157,7 @@ A privilege is the right for a user to perform a system-related operation on the
 
 Privileges are different from access rights because they apply to system-related tasks and resources rather than objects, and because they are assigned to a user or group by a system administrator, rather than by the operating system.
 
-The access token for each process contains a list of the privileges granted to the process. Privileges must be specifically enabled before use. For more information on privilges, see [Privileges](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/privileges) in the kernel driver documentation.
+The access token for each process contains a list of the privileges granted to the process. Privileges must be specifically enabled before use. For more information on privilges, see [Privileges](https://docs.microsoft.com/windows-hardware/drivers/kernel/privileges) in the kernel driver documentation.
 
  
 
@@ -215,7 +215,7 @@ The operating system kernel treats every driver, in effect, as a file system wit
 
 With WDM drivers, the I/O Manager does not perform security checks against the namespace, unless the Device Object has been created specifying FILE_DEVICE_SECURE_OPEN.  When FILE_DEVICE_SECURE_OPEN is not set, the driver is responsible for ensuring the security of its namespace. For more information, see [Controlling Device Namespace Access](https://docs.microsoft.com/windows-hardware/drivers/kernel/controlling-device-namespace-access) and [Securing Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/securing-device-objects).
 
-For WDF drivers, the FILE_DEVICE_SECURE_OPEN flag is always set, so that there will be a check of the device's security descriptor before allowing an application to access any names within the device's namespace. For more information, see [Controlling Device Access in KMDF Drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/controlling-device-access-in-kmdf-drivers).
+For WDF drivers, the FILE_DEVICE_SECURE_OPEN flag is always set, so that there will be a check of the device's security descriptor before allowing an application to access any names within the device's namespace. For more information, see [Controlling Device Access in KMDF Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/controlling-device-access-in-kmdf-drivers).
 
 
 
@@ -256,7 +256,7 @@ All inputs coming into the driver from user mode is untrusted and should be vali
 
 ### See Also
 
-[Securing Device Objects](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/securing-device-objects)
+[Securing Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/securing-device-objects)
 
 [Driver security checklist](driver-security-checklist.md)
 

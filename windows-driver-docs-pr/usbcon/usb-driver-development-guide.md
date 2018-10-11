@@ -32,7 +32,7 @@ ms.localizationpriority: medium
 <p>[Download kits and tools for Windows](http://go.microsoft.com/fwlink/p/?linkid=617155)</p>
 <p><strong>USB programming reference</strong></p>
 <p>Gives specifications for I/O requests, support routines, structures, and interfaces used by USB client drivers. Those routines and related data structures are defined in the WDK headers.</p>
-<p>[Universal Serial Bus (USB) programming reference](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/_usbref/#common-usb-client-driver-reference).</p>
+<p>[Universal Serial Bus (USB) programming reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#common-usb-client-driver-reference).</p>
 <p><strong>USB driver samples</strong></p>
 <p>Use these samples to get started with USB client driver programming.</p>
 <ul>
