@@ -53,7 +53,7 @@ Members
 *  The size, in bytes, of the buffer pointed to by **FileInformation**.
 
 **FileInformationClass**
-* Specifies the type of information to be returned about the file, in the buffer that FileInformation points to. Device and intermediate drivers can specify any of the following [**FILE_INFORMATION_CLASS**(https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ne-wdm-_file_information_class) values. Other values cause the call to fail and should not be passed to PreQueryOpen/PostQueryOpen calls. 
+* Specifies the type of information to be returned about the file, in the buffer that FileInformation points to. Device and intermediate drivers can specify any of the following [**FILE_INFORMATION_CLASS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ne-wdm-_file_information_class) values. Other values cause the call to fail and should not be passed to PreQueryOpen/PostQueryOpen calls. 
 
 | FILE_INFORMATION_CLASS value | Type of information returned |
 | --- | --- |
