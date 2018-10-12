@@ -44,7 +44,7 @@ To use this method, you need to first do the following:
 
 | Method | Request URI                                                          |
 |--------|----------------------------------------------------------------------|
-| GET    | ```https://manage.devcenter.microsoft.com/v1.0/my/analytics/ihvdriver/failurehits``` |
+| GET    | `https://manage.devcenter.microsoft.com/v1.0/my/analytics/ihvdriver/failurehits` |
 
 
 ### Request header
