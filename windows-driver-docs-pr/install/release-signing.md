@@ -150,7 +150,7 @@ Use the MMC Certificates snap-in (certmgr.msc) to view the certificates in the P
 
 **Based on**[Release-Signing a Driver Package's Catalog File](release-signing-a-driver-package-s-catalog-file.md):
 
-Run the following commands to sign the cat file which signs the driver package. The /n command should use the quoted name of the certificate which you will see under Subject in in step 4 above, as CN= MyCompany Inc.
+Run the following commands to sign the cat file which signs the driver package. The /n command should use the quoted name of the certificate which you will see under Subject in step 4 above, as CN= MyCompany Inc.
 
 ```
 signtool sign /v /ac MSCV-VSClass3.cer /s My /n “MyCompany Inc.“ /t http://timestamp.verisign.com/scripts/timestamp.dll  toaster.cat
