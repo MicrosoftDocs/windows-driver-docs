@@ -101,7 +101,7 @@ The following examples show correctly formed ACPI Source Language (ASL) that dem
         0x31, 0x1C, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00})
     ```
     
-A USB Type-C connector must be correctly described in ACPI in order to pass the [USB Type-C ACPI Validation](https://msdn.microsoft.com/en-us/library/windows/hardware/mt770585(v=vs.85).aspx) Hardware Lab Kit test.
+A USB Type-C connector must be correctly described in ACPI in order to pass the [USB Type-C ACPI Validation](https://msdn.microsoft.com/library/windows/hardware/mt770585(v=vs.85).aspx) Hardware Lab Kit test.
 
 Example _UPC for a USB Type-C connector:
 ```

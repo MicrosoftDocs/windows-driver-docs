@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 
 **Important APIs**
 
--   [USB function controller client driver reference](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/_usbref/#usb-function-controller-client-driver-reference)
+-   [USB function controller client driver reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#usb-function-controller-client-driver-reference)
 
 
 Describes the various tasks that a function controller client driver performs while interacting with USB function controller extension (UFX). UFX and the client driver communicate with each other by using export methods and event callback functions. Export methods (named **UfxDeviceXxx** or **UfxEndpointXxx**) are exported by UFX and invoked by the client driver. Callback functions (named *EVT\_UFX\_Xxx*)are implemented in the client driver and invoked by UFX.

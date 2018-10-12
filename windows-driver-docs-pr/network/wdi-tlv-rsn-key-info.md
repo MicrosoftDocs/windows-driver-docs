@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 # WDI_TLV_RSN_KEY_INFO
 
-WDI_TLV_RSN_KEY_INFO is a TLV that contains contains Rsn Eapol key parameters. This TLV is a value of the [WDI_TLV_PM_PROTOCOL_OFFLOAD_80211RSN_REKEY](wdi-tlv-pm-protocol-offload-80211rsn-rekey.md) TLV.
+WDI_TLV_RSN_KEY_INFO is a TLV that contains Rsn Eapol key parameters. This TLV is a value of the [WDI_TLV_PM_PROTOCOL_OFFLOAD_80211RSN_REKEY](wdi-tlv-pm-protocol-offload-80211rsn-rekey.md) TLV.
 
 ## TLV Type
 

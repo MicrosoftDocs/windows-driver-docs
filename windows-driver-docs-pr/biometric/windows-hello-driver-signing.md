@@ -18,14 +18,14 @@ ms.localizationpriority: medium
 
 
 ## Submitting a fingerprint driver for Windows Hello compatibility 
-Microsoft has introduced new requirements on biometric sensors to comply with Windows Hello quality guidelines. A new manual review process will be necessary to gain approval to interoperate with Windows Hello. The process will be enforced with an OS check for a specific signature obtained through the Windows DevCenter (here: https://developer.microsoft.com/en-us/) that can only be obtained by undergoing the process in this document. Drivers that have been created and signed by WHQL before 6/1/17 are grandfathered. New and updated drivers that do not obtain this signature after this date will not work with Windows Hello in Window 10, version 1703 or later after the enforcement date.
+Microsoft has introduced new requirements on biometric sensors to comply with Windows Hello quality guidelines. A new manual review process will be necessary to gain approval to interoperate with Windows Hello. The process will be enforced with an OS check for a specific signature obtained through the Windows DevCenter (here: https://developer.microsoft.com/) that can only be obtained by undergoing the process in this document. Drivers that have been created and signed by WHQL before 6/1/17 are grandfathered. New and updated drivers that do not obtain this signature after this date will not work with Windows Hello in Window 10, version 1703 or later after the enforcement date.
 
 A driver will always undergo manual approval to obtain the Windows Hello signature. Updates to approved drivers can refer to previous submissions for faster approval. Drivers must undergo a new review if it applies to a new sensor, or if changes to the matching engine have occurred that impact FAR, FRR, or presentation attack detection. 
 
 The biometric signature enforcement date is 6/1/2017, after which drivers that do not contain the bio signature will not be loaded and will no longer work with Windows Hello.
 
 ### Step One: Create a biometric driver
-Follow the instructions here to create a biometric driver: https://msdn.microsoft.com/en-us/library/windows/desktop/dd401509(v=vs.85).aspx
+Follow the instructions here to create a biometric driver: https://msdn.microsoft.com/library/windows/desktop/dd401509(v=vs.85).aspx
 
 ### Step Two: Test your sensor and self-validate
 Self validate the sensor and driver to ensure they meet Microsoft’s biometric requirements and report findings in the Fingerprint Security Review Template. Documents for the requirements and template can be found within the Fingerprint partner package on Connect. If you do not have access to Connect, contact your Microsoft representative.
@@ -103,10 +103,10 @@ The driver configuration xml should be included in the driver package that is su
 ## Related topics
 
 
-[Windows Hello face authentication](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-face-authentication)
+[Windows Hello face authentication](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-face-authentication)
 
-[Windows Hello](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello)
+[Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)
 
-[Biometric Devices Design Guide](https://docs.microsoft.com/en-us/windows-hardware/drivers/biometric/)
+[Biometric Devices Design Guide](https://docs.microsoft.com/windows-hardware/drivers/biometric/)
 
 

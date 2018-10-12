@@ -31,12 +31,12 @@ You can use WPT to obtain performance insights or troubleshoot performance issue
 ## Getting started
 
 
-The WPT is part of the Windows Assessment and Deployment Kit (ADK). You can install the ADK from the [Windows hardware tools](http://dev.windows.com/en-US/featured/hardware/windows-10-hardware-preview-tools) site.
+The WPT is part of the Windows Assessment and Deployment Kit (ADK). You can install the ADK from the [Windows hardware tools](http://dev.windows.com/featured/hardware/windows-10-hardware-preview-tools) site.
 
 The WPT consists of two separate tools: Windows Performance Recorder and Windows Performance Analyzer (WPA). In this topic, we use WPR to record a trace, and then WPA to view the trace in a configurable GUI format.
 
 To learn how to use the Windows Performance Toolkit to measure the performance of a WDF driver, either watch the following video, or read the steps below the video. The video and the steps cover the same procedure.
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/fc37f465-9456-45d7-bbe9-6f7d44342563]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/fc37f465-9456-45d7-bbe9-6f7d44342563]
 
 **Recording and viewing an event log for a WDF driver**
 

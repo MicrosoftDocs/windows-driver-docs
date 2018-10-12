@@ -203,7 +203,7 @@ To create a CAB file submission for the dashboard complete the following steps.
 ## <span id="Submit_the_EV_signed_Cab_file_using_the__Windows_Hardware_Developer_Center_Dashboard"></span><span id="submit_the_ev_signed_cab_file_using_the__windows_hardware_developer_center_dashboard"></span><span id="SUBMIT_THE_EV_SIGNED_CAB_FILE_USING_THE__WINDOWS_HARDWARE_DEVELOPER_CENTER_DASHBOARD"></span>Submit the EV signed Cab file using the Hardware Dev Center Dashboard
 
 
-1. Submit the EV signed Cab file using the Hardware Dev Center Dashboard. For more information see [Driver Signing Properties](driver-signing-properties.md) and [File Signing Services](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn771767.aspx).
+1. Submit the EV signed Cab file using the Hardware Dev Center Dashboard. For more information see [Driver Signing Properties](driver-signing-properties.md) and [File Signing Services](https://msdn.microsoft.com/Library/Windows/Hardware/Dn771767.aspx).
 
 As part of the submission process you will indicate what architectures all of the drivers in the submission support. Three options are available using the check boxes.
 

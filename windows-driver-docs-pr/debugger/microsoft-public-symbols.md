@@ -41,7 +41,7 @@ Symbol search path is: srv*
 Expanded Symbol search path is: cache*c:\MyCache;SRV*https://msdl.microsoft.com/download/symbols
 ```
 
-For more information about working with symbols, see the [Symbol path for Windows debuggers](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/symbol-path).
+For more information about working with symbols, see the [Symbol path for Windows debuggers](https://docs.microsoft.com/windows-hardware/drivers/debugger/symbol-path).
 
 **Symbol File Compression**
 

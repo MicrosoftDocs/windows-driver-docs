@@ -39,7 +39,7 @@ A template is designated as a *data type template* (one that defines a data type
 
 **\*ElementTags:** *list*. This directive defines a list of symbols to be used for element tags.
 
-**\*EnumeratorList:** *list*. This directive defines a list list of symbols to be used for an enumerator list.
+**\*EnumeratorList:** *list*. This directive defines a list of symbols to be used for an enumerator list.
 
 **\*XSDTypeDefinition:** *symbol*. This directive defines an arbitrary value, enclosed by &lt;Begin/EndValue&gt; elements, to be used for an XSD type definition.
 

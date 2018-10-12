@@ -14,11 +14,11 @@ ms.localizationpriority: medium
 # Creating a persistent unique identifier for a sensor
 
 
-Your driver must create a *persistent unique identifier* (PUID) for each sensor. A PUID is a GUID value that is stored across sessions and uniquely identifies the object on the device. Your driver must return the PUID value when queried for the property named **DEVPKEY_Sensor_PersistentUniqueId**. If a device contains multiple sensors, each sensor must be assigned its own PUID. Applications can retrieve this ID by using the [Windows.Devices.Enumeration](https://docs.microsoft.com/en-us/uwp/api/Windows.Devices.Enumeration) WinRT APIs.
+Your driver must create a *persistent unique identifier* (PUID) for each sensor. A PUID is a GUID value that is stored across sessions and uniquely identifies the object on the device. Your driver must return the PUID value when queried for the property named **DEVPKEY_Sensor_PersistentUniqueId**. If a device contains multiple sensors, each sensor must be assigned its own PUID. Applications can retrieve this ID by using the [Windows.Devices.Enumeration](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration) WinRT APIs.
 
 You should create a new PUID for each sensor, when the sensor first connects to the computer, and then store this value for later use.
 
-Your driver should create or retrieve the PUID before calling the [SensorsCxSensorInitialize](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/sensorscx/nf-sensorscx-sensorscxsensorinitialize) initialization routine. This function supplies a pointer to the [SENSOR_CONFIG](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_config) structure that holds the sensor configuration. You can use this pointer to access a specific property store for each device.
+Your driver should create or retrieve the PUID before calling the [SensorsCxSensorInitialize](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/nf-sensorscx-sensorscxsensorinitialize) initialization routine. This function supplies a pointer to the [SENSOR_CONFIG](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_config) structure that holds the sensor configuration. You can use this pointer to access a specific property store for each device.
 
 ## Related topics
 [Sensors Driver ADXL345Acc Sample](http://go.microsoft.com/fwlink/p/?LinkId=617957)
