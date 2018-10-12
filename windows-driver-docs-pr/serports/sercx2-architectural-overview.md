@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 SerCx2 works together with a serial controller driver to enable communication between a peripheral driver and a serially connected peripheral device. Typically, the serial controller is integrated into a System on a Chip (SoC) chip to provide low-pin-count communication with a peripheral device that is external to the SoC chip but is soldered to the same printed circuit board.
 
-The following diagram shown the communication path between a serially connected peripheral device and the driver for this device. This peripheral driver runs in either kernel mode or user mode, and sends I/O requests to the serial port to which the peripheral device is connected.
+The following diagram shows the communication path between a serially connected peripheral device and the driver for this device. This peripheral driver runs in either kernel mode or user mode, and sends I/O requests to the serial port to which the peripheral device is connected.
 
 ![block diagram of sercx2 and associated components](images/sercx2modules.png)
 
