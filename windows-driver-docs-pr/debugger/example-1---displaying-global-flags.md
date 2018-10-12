@@ -3,7 +3,7 @@ title: Example 1 Displaying Global Flags
 description: Example 1 Displaying Global Flags
 ms.assetid: c1a1eafd-d70a-43f9-af90-33ddc33758fe
 ms.author: domars
-ms.date: 11/28/2017
+ms.date: 10/12/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -20,13 +20,13 @@ The commands demonstrated in this example display the system-wide flags set in t
 
 The following GFlags command displays the current value of the system-wide flags set in the registry. It uses the **/r** parameter to specify the system-wide registry entry.
 
-```
+```console
 gflags /r 
 ```
 
 In response, GFlags displays a single hexadecimal value representing the sum of all flags set and a list of the flags set.
 
-```
+```console
 Current Boot Registry Settings are: 40001400
     ptg - Enable pool tagging
     ust - Create user mode stack trace database
@@ -43,13 +43,13 @@ In this example, the results show that there are three tags set, with a combined
 
 The following command displays the flags set for the current session. It uses the **/k** parameter to indicate kernel mode.
 
-```
+```console
 gflags /k 
 ```
 
 The following command displays flags set in the registry for the image file notepad.exe. It uses the **/i** parameter to indicate image file mode and specifies the image file.
 
-```
+```console
 gflags /i notepad.exe 
 ```
 
