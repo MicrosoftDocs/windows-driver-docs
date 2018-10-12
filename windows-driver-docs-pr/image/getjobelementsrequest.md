@@ -25,7 +25,7 @@ The required **GetJobElementsRequest** element requests information that is rela
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:GetJobElementsRequest>
   child elements
 </wscn:GetJobElementsRequest>
@@ -92,7 +92,7 @@ Examples
 
 The following code example requests the status of the scan job that Fault property 1 identifies.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
@@ -119,7 +119,7 @@ The following code example requests the status of the scan job that Fault proper
 </soap:Envelope>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**GetJobElementsResponse**](getjobelementsresponse.md)

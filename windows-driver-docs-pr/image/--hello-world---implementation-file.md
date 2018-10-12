@@ -13,15 +13,11 @@ ms.localizationpriority: medium
 
 # 'Hello World' Implementation File
 
-
-
-
-
 This WIA minidriver is a simple DLL that exports two functions (see ['Hello World' Definition File](--hello-world---definition-file.md)) and implements three COM interfaces (see [Providing a COM Interface](providing-a-com-interface.md)). The following WIA minidriver code example can be compiled into a working driver. The item tree that this WIA minidriver creates has a root item, but no child items, and cannot transfer data.
 
 The *hellowld.cpp* file should contain the following:
 
-```
+```cpp
 #ifndef WIN32_LEAN_AND_MEAN
 #define WIN32_LEAN_AND_MEAN
 #endif

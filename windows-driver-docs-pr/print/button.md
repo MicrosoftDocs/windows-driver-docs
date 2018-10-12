@@ -142,7 +142,7 @@ The following code example shows how to use the **button** element to display **
   </asyncPrintUIRequest>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**buttons**](buttons.md)

@@ -25,7 +25,7 @@ The optional **DocumentSizeAutoDetect** element specifies whether the scan devic
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:DocumentSizeAutoDetect>
   text
 </wscn:DocumentSizeAutoDetect>
@@ -70,7 +70,7 @@ Remarks
 
 If the specified text value is 1 or **true**, the scan device will automatically determine the size of the original scan media. If the **DocumentSizeAutoDetect** element is specified along with a [**ScanRegion**](scanregion.md) element, the scan region will be ignored if it falls outside of the media size that the device detected.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ScanRegion**](scanregion.md)

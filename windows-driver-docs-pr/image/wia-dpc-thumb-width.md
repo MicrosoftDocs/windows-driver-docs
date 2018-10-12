@@ -60,7 +60,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_DPC\_THUMB\_HEIGHT**](wia-dpc-thumb-height.md)

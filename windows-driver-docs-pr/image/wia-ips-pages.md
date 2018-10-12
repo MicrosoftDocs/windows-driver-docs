@@ -85,7 +85,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_DPS\_PAGES**](wia-dps-pages.md)

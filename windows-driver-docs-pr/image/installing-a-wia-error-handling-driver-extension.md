@@ -18,7 +18,7 @@ The error handling extension should be installed together with the WIA driver. I
 
 The following example shows how an existing driver INF file can be modified to include the error handler.
 
-```
+```INF
 MyDriver.AddReg]
 ...
 HKCR,CLSID\{UiClassId}\shellex\ErrorHandler\{ErrorHandlerCLSID}

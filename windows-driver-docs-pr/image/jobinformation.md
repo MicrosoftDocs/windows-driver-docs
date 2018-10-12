@@ -25,7 +25,7 @@ The optional **JobInformation** element describes the intended use of the job.
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobInformation>
   text
 </wscn:JobInformation>
@@ -70,7 +70,7 @@ Remarks
 
 The **JobInformation** value is useful when the client will reuse the scan ticket that is used to create the job.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**JobDescription**](jobdescription.md)

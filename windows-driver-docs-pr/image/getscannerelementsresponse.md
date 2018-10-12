@@ -25,7 +25,7 @@ The required **GetScannerElementsResponse** element contains the WSD Scan Servic
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:GetScannerElementsResponse>
   child elements
 </wscn:GetScannerElementsResponse>
@@ -72,7 +72,7 @@ Examples
 
 In the following code example, the WSD Scan Service returns the scanner's description.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
@@ -115,7 +115,7 @@ In the following code example, the WSD Scan Service returns the scanner's descri
 
 The following code example shows a response to a scanner status request.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
@@ -171,7 +171,7 @@ The following code example shows a response to a scanner status request.
 
 The following code example shows a response to a GetScannerElementsRequest operation that contained a both scanner configuration request and an invalid entry.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
@@ -378,7 +378,7 @@ The following code example shows a response to a GetScannerElementsRequest opera
 </soap:Envelope>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**GetScannerElementsRequest**](getscannerelementsrequest.md)

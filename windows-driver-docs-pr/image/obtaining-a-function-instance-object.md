@@ -18,7 +18,7 @@ The WIA minidriver must identify the current hardware device and the service tha
 
 To use Function Discovery COM interfaces, the minidriver code must include the *FunctionDiscovery.h* main header file, which is available in the Windows Vista SDK, as the following example shows.
 
-```
+```cpp
 //
 // Web Services Function Discovery main header:
 //
@@ -29,7 +29,7 @@ During initialization, as might happen in the [**IStiUSD::Initialize**](https://
 
 ### Step 1: Create the Function Discovery object
 
-```
+```cpp
 //
 // Function Discovery object
 //
@@ -43,7 +43,7 @@ CoCreateInstance(__uuidof(FunctionDiscovery),
 
 ### Step 2: Create an Instance Collection Query object
 
-```
+```cpp
 IFunctionInstanceCollectionQuery *pfiCollectionQuery = NULL;
 pFunctionDiscovery->CreateInstanceCollectionQuery(FCTN_CATEGORY_PNP,
    NULL,
@@ -55,7 +55,7 @@ pFunctionDiscovery->CreateInstanceCollectionQuery(FCTN_CATEGORY_PNP,
 
 ### <a href="" id="step-3--add-a-constraint-to-the-instance-collection-query-object-to-sp"></a>Step 3: Add a constraint to the Instance Collection Query object to specify the PNPX ID (its value is retrieved with IStiDeviceControl::GetMyDevicePortName) as the query constraint
 
-```
+```cpp
 PROPVARIANT PropVar = {0};
 //
 // Note that the wszDevicePath value is obtained by the WIA minidriver 
@@ -69,14 +69,14 @@ pfiCollectionQuery->AddPropertyConstraint(PKEY_PNPX_ID, &PropVar, QC_EQUALS);
 
 ### Step 4: Execute the query
 
-```
+```cpp
 IFunctionInstanceCollection *pfiCollection = NULL;
 pfiCollectionQuery->Execute(&pfiCollection);
 ```
 
 ### Step 5: Retrieve the Function Instance object that is returned
 
-```
+```cpp
 //
 // Function Instance object that represents our device instance
 //

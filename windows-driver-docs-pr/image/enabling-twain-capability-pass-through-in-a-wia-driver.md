@@ -21,7 +21,7 @@ To enable support for TWAIN capability pass-through, add the **WiaItemTypeTwainC
 
 The following example is taken from the *wiascanr* sample (which is included in the Driver Development Kit \[DDK\]) and demonstrates the use of the **WiaItemTypeTwainCapabilityPassThrough** flag).
 
-```
+```cpp
 // Initialize WIA_IPA_ITEM_FLAGS
   m_pszRootItemDefaults[PropIndex] = WIA_IPA_ITEM_FLAGS_STR;
   m_piRootItemDefaults[PropIndex] = WIA_IPA_ITEM_FLAGS;

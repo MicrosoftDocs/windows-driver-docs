@@ -29,7 +29,7 @@ This section discusses vendor-extended features a PTP device can support the fol
 
 Vendor-extended properties and events must be listed in the **DeviceData** INF file entry and the events must be provided a name in the **Events** INF file entry (see [INF files for WIA devices](inf-files-for-wia-devices.md) for more information). An entry listing the vendor extension ID is required. This must match the **VendorExtensionID** field in the DeviceInfo dataset. An example of the other entries is shown here and described in the following sections.
 
-```
+```INF
 [DeviceData]
 VendorExtID=0x12345678
 PropCode="0xD001,0xD002,0xD003"

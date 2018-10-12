@@ -25,7 +25,7 @@ The required **DocumentName** element contains the name of the document that the
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:DocumentName>
   text
 </wscn:DocumentName>
@@ -70,7 +70,7 @@ Remarks
 
 The WSD Scan Service must supply a value to store the document on the client.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DocumentDescription**](documentdescription.md)

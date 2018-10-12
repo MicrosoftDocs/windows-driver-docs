@@ -25,7 +25,7 @@ The required **DocumentFinalParameters** element contains the actual [**Document
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:DocumentFinalParameters>
   child elements
 </wscn:DocumentFinalParameters>
@@ -118,7 +118,7 @@ Certain elements within the **DocumentFinalParameters** hierarchy can contain th
 
 The following elements can have the **Override** and **UsedDefault** attributes: [**Brightness**](brightness.md), [**ColorProcessing**](colorprocessing.md), [**CompressionQualityFactor**](compressionqualityfactor.md), [**ContentType**](contenttype.md), [**Contrast**](contrast.md), [**FilmScanMode**](filmscanmode.md), [**Format**](format.md), [**Height**](height.md), [**ImagesToTransfer**](imagestotransfer.md), [**InputSource**](inputsource.md), [**Rotation**](rotation.md), [**ScalingHeight**](scalingheight.md), [**ScalingWidth**](scalingwidth.md), [**ScanRegionHeight**](scanregionheight.md), [**ScanRegionWidth**](scanregionwidth.md), [**ScanRegionXOffset**](scanregionxoffset.md), [**ScanRegionYOffset**](scanregionyoffset.md), [**Sharpness**](sharpness.md), and [**Width**](width.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Brightness**](brightness.md)

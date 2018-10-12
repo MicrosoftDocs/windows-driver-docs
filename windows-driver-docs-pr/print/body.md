@@ -169,7 +169,7 @@ The following code example shows how to use the **body** element.
   </asyncPrintUIRequest>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**balloonUI**](balloonui.md)

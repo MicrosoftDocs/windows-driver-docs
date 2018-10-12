@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The following code example shows how to open a Property Store for the current Function Instance object. The procedure for obtaining the current Function Instance object is described in [Obtaining a Function Instance Object](obtaining-a-function-instance-object.md).
 
-```
+```cpp
 /**************************************************************************\
 * CWSDDevice::OpenPropertyStore
 *

@@ -25,7 +25,7 @@ The required **FilmMaximumSize** element specifies the largest size original tha
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:FilmMaximumSize>
   child elements
 </wscn:FilmMaximumSize>
@@ -84,7 +84,7 @@ The [**Width**](width.md) child element specifies the maximum size of media that
 
 All media dimensions are measured in one-thousandths (1/1000) of an inch. The possible values for both **Width** and **Height** range from 1 through 2147483648.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Film**](film.md)

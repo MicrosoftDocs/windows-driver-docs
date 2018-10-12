@@ -25,7 +25,7 @@ The required **GetJobElementsResponse** element returns the job-related informat
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:GetJobElementsResponse>
   child elements
 </wscn:GetJobElementsResponse>
@@ -72,7 +72,7 @@ Examples
 
 In the following code example, the Scan Service returns the job status for the job that JobId 1 identifies.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
@@ -111,7 +111,7 @@ In the following code example, the Scan Service returns the job status for the j
 
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**GetJobElementsRequest**](getjobelementsrequest.md)

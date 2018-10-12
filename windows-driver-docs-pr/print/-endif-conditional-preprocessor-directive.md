@@ -19,13 +19,13 @@ ms.localizationpriority: medium
 # \#Endif Conditional Preprocessor Directive
 
 
-```
+```GDL
 #Endif:
 ```
 
 The \#Endif directive defines the end of the previous section and the conditional construct. No symbol is used. You can use a fake symbol name as the value of the \#Endif directive to help the reader. Consider the following code example.
 
-```
+```GDL
     #Ifdef: symbolA
 
         #Ifdef: symbolB
@@ -38,11 +38,3 @@ The \#Endif directive defines the end of the previous section and the conditiona
 ```
 
 Indentation of each nested construct might also be helpful to the reader.
-
- 
-
- 
-
-
-
-

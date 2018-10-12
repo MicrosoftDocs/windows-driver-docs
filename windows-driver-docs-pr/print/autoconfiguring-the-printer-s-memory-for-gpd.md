@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The following code example shows how to add entries to the GDL file for any memory options in your GPD file. The GPD code example that is shown after the following example is a typical definition of the Memory feature.
 
-```
+```GPD
 *Feature: Memory
 {
   *rcNameID: =PRINTER_MEMORY_DISPLAY
@@ -36,7 +36,7 @@ The following code example shows how to add entries to the GDL file for any memo
 
 You can enable memory autoconfiguration by adding the following feature to the GDL file.
 
-```
+```GDL
 *% This feature definition merges with the definition in the GPD file
 *Feature: Memory
 {

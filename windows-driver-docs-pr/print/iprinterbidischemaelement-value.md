@@ -41,7 +41,7 @@ Return value
 
 This method returns an **HRESULT** value.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**IPrinterBidiSchemaElement**](iprinterbidischemaelement-interface.md)

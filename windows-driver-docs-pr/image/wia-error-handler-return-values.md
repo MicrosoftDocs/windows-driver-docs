@@ -40,7 +40,7 @@ Additionally, an error handler must be consistent in handling device status code
 
 The following code is an example of an invalid error handler:
 
-```
+```cpp
 STDMETHODIMP
 CErrHandler::ReportStatus(
     IN  LONG        lFlags,

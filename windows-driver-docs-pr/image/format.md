@@ -25,7 +25,7 @@ The optional **Format** element indicates a single file format and compression t
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Format wscn:Override="" wscn:UsedDefault=""
   
       Override
@@ -217,7 +217,7 @@ You can both extend and create a subset of the allowed values for this element.
 
 Although the WSD Scan Service supports the JBIG file format (ISO/IEC 11544:1993), it does not currently support JBIG2 (ISO/IEC 14492:2001).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DocumentFinalParameters**](documentfinalparameters.md)

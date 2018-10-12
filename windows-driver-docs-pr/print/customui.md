@@ -149,7 +149,7 @@ The following code example shows how to use the **customUI** element to call and
   </asyncPrintUIRequest>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**requestOpen**](requestopen.md)

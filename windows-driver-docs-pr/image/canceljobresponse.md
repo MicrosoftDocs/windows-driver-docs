@@ -25,7 +25,7 @@ The required **CancelJobResponse** operation element acknowledges a client's job
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:CancelJobResponse />
 </wscn:CancelJobResponse />
 ```
@@ -57,7 +57,7 @@ Remarks
 
 The WSD Scan Service sends a **CancelJobResponse** operation to a client when it successfully processes a client's [**CancelJobRequest**](canceljobrequest.md) operation.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CancelJobRequest**](canceljobrequest.md)

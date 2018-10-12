@@ -25,7 +25,7 @@ The required **GetJobHistoryResponse** element returns a summary of completed jo
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:GetJobHistoryResponse>
   child elements
 </wscn:GetJobHistoryResponse>
@@ -74,7 +74,7 @@ Examples
 
 The following code example shows how to return no job history in response to a client's request for job history.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
@@ -103,7 +103,7 @@ The following code example shows how to return no job history in response to a c
 
 The following code example returns a list of jobs and associated data for the last two completed jobs.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
@@ -152,7 +152,7 @@ The following code example returns a list of jobs and associated data for the la
 
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**GetJobHistoryRequest**](getjobhistoryrequest.md)

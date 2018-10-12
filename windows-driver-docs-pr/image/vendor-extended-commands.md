@@ -92,7 +92,7 @@ The first parameter to **IWiaItemExtras::Escape** is the combination of one or m
 
 The following sample code illustrates how to use the vendor-extended command interface. Be sure that your code includes the *ptpusd.h* header, because it contains the definitions of the escape codes and other constants, and the [**PTP\_VENDOR\_DATA\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff546450) and [**PTP\_VENDOR\_DATA\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff546452) structures. The **IWiaItemExtras** interface is obtained by using a call to **QueryInterface** on the root item. A pointer to this root item, *pIWiaRootItem*, can be obtained, for example, by a call to **IWiaDevMgr::SelectDeviceDlg** (described in the Microsoft Windows SDK documentation).
 
-```
+```cpp
 //
 // Test IWiaItemExtras::Escape method
 //

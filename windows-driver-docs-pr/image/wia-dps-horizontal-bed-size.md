@@ -53,7 +53,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_DPS\_VERTICAL\_BED\_SIZE**](wia-dps-vertical-bed-size.md)

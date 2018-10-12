@@ -25,7 +25,7 @@ Note that when the minidriver sends out the event that indicates that the tree h
 
 The following example shows an implementation of the **IWiaMiniDrv::drvDeviceCommand** method.
 
-```
+```cpp
 HRESULT _stdcall CWIADevice::drvDeviceCommand(
   BYTE        *pWiasContext,
   LONG        lFlags,

@@ -60,7 +60,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_IPC\_THUMBNAIL\_HEIGHT**](wia-ipc-thumbnail-height.md)

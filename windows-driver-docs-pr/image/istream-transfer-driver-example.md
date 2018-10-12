@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The following code example shows an implementation of the IStream-based transfer model.
 
-```
+```cpp
 MyWiaDriver::drvAcquireItemData(
 BYTE                      *pWiasContext,
 LONG                      lFlags,

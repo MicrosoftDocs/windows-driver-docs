@@ -25,7 +25,7 @@ A safe place to write files that only the driver uses is in the user profile dir
 
 The following code example shows how a WIA driver can use the %*userprofile*% directory.
 
-```
+```cpp
 #define MY_DRIVER_FILE_NAME_W L"%userprofile%\\MyDriverFile.ext";
 HANDLE hMyDriverFile         = INVALID_HANDLE_VALUE;
 WCHAR  wszFileName[MAX_PATH] = {L&#39;\0&#39;};

@@ -25,7 +25,7 @@ The required **GetScannerElementsRequest** element enables a client to request i
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:GetScannerElementsRequest>
   child elements
 </wscn:GetScannerElementsRequest>
@@ -76,7 +76,7 @@ Examples
 
 In the following code example, the client specifies a single QName value (wscn:ScannerDescription) to query for the scanner's description.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
@@ -104,7 +104,7 @@ In the following code example, the client specifies a single QName value (wscn:S
 
 The following code example shows a client's request for the scanner's status.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
@@ -132,7 +132,7 @@ The following code example shows a client's request for the scanner's status.
 
 In the following code example, a client specifies two QName values. The first QName is wscn:ScannerConfiguration, and the second QName is invalid.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
@@ -160,7 +160,7 @@ In the following code example, a client specifies two QName values. The first QN
 </soap:Envelope>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**GetScannerElementsResponse**](getscannerelementsresponse.md)

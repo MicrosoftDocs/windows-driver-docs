@@ -25,7 +25,7 @@ The required **RetrieveImageResponse** operation element returns the scan data t
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:RetrieveImageResponse>
   child elements
 </wscn:RetrieveImageResponse>
@@ -81,7 +81,7 @@ Examples
 
 The following code example shows how the WSD Scan Service sends image data to the client.
 
-```
+```xml
 mime-version: 1.0
 Content-Type: multipart/related;
     type=application/xop+xml;
@@ -132,8 +132,7 @@ Binary Scan Data
 --4aa7d814-adc1-47a2-8e1c-07585b9892a4--
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**Format**](format.md)
 
@@ -146,13 +145,3 @@ Binary Scan Data
 [**ScanData**](scandata.md)
 
 [**ScanTicket**](scanticket.md)
-
- 
-
- 
-
-
-
-
-
-

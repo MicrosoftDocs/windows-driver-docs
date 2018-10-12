@@ -25,7 +25,7 @@ The required **CancelJobRequest** operation enables a client to cancel a scan jo
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:CancelJobRequest>
   child elements
 </wscn:CancelJobRequest>
@@ -82,7 +82,7 @@ This operation can return all of the [**common WSD Scan Service operation error 
 
 -   **ClientErrorJobIdNotFound**
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CancelJobResponse**](canceljobresponse.md)

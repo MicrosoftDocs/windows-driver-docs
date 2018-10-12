@@ -25,7 +25,7 @@ The required **ContrastSupported** element specifies whether the scan device sup
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ContrastSupported>
   text
 </wscn:ContrastSupported>
@@ -72,7 +72,7 @@ If the scan device allows user control of the scan contrast setting, the WSD Sca
 
 You cannot extend the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DeviceSettings**](devicesettings.md)
