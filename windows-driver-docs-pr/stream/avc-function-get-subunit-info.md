@@ -33,7 +33,7 @@ This function always sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
 
 This function uses the **Subunits** member of the AVC\_MULTIFUNC\_IRB structure as shown below.
 
-```
+```cpp
 typedef struct _AVC_MULTIFUNC_IRB {
   AVC_IRB  Common;
   union {

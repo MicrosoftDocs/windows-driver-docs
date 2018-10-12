@@ -110,7 +110,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DrvDeviceCapabilities**](https://msdn.microsoft.com/library/windows/hardware/ff548539)

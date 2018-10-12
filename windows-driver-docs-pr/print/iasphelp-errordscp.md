@@ -119,7 +119,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Iasphelp::Open**](iasphelp-open.md)

@@ -23,7 +23,7 @@ In order to determine private TWAIN-supported capabilities, a TWAIN application 
 
  
 
-```
+```cpp
 STDMETHODIMP CWIADevice::Escape(STI_RAW_CONTROL_CODE EscapeFunction,
   LPVOID               lpInData,
   DWORD                cbInDataSize,

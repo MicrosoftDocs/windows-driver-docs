@@ -25,7 +25,7 @@ The required **ElementData** element contains the data that is returned for a sc
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ElementData Name="" Valid=""
   Name = "xs:string"
   Valid = "xs:string">
@@ -125,7 +125,7 @@ The QName value for the **Name** attribute must be a schema keyword that represe
 
 The **Valid** attribute indicates whether the schema keyword provided by the client was valid. The WSD Scan Service sets this attribute to **true** if it can map the requested schema keyword to a valid section of its schema; otherwise, it must set this attribute to **false**.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DefaultScanTicket**](defaultscanticket.md)

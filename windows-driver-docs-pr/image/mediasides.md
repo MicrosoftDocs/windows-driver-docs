@@ -25,7 +25,7 @@ The optional **MediaSides** element contains the parameters that are unique to e
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:MediaSides wscn:MustHonor=""
   MustHonor = "xs:string">
   child elements
@@ -118,7 +118,7 @@ The client can specify the optional **MustHonor** attribute only when the **Medi
 
 The WSD Scan Service can specify the optional **Override** and **UsedDefault** attributes only when the **MediaSides** element is contained within a **DocumentFinalParameters** hierarchy. For more information about **Override** and **UsedDefault** and their usage, see [**DocumentFinalParameters**](documentfinalparameters.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)

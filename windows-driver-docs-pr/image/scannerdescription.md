@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScannerDescription>
   child elements
 </wscn:ScannerDescription>
@@ -93,7 +93,7 @@ Remarks
 
 The **ScannerDescription** element contains information about the scanner that rarely or never changes. A client retrieves this information by calling the [**GetScannerElementsRequest**](getscannerelementsrequest.md) operation element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ElementChanges**](elementchanges.md)

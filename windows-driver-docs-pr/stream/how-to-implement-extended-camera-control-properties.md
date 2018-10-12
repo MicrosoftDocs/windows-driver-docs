@@ -23,7 +23,7 @@ The camera driver should implement [extended camera control properties](extended
 ## Driver implementation
 
 
-```ManagedCPlusPlus
+```cpp
 DEFINE_KSPROPERTY_TABLE(SocSimFilterFocusPropertyItems)
 {       
     DEFINE_KSPROPERTY_ITEM(

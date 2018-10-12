@@ -25,7 +25,7 @@ The required **Component** element identifies the component that the current [**
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Component>
   text
 </wscn:Component>
@@ -78,7 +78,7 @@ Remarks
 
 You can both extend and subset the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ConditionHistoryEntry**](conditionhistoryentry.md)

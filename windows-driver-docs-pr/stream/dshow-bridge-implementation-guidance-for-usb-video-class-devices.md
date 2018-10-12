@@ -104,7 +104,7 @@ This example demonstrates how Microsoft 2.0 descriptor sets can be used to provi
 | 62     | PropertyData         | Variable | Property data                           |
 
 
-```
+```cpp
 UCHAR Example2\_MSOS20DescriptorSetForFutureWindows\[0x48\] =
 {
     //

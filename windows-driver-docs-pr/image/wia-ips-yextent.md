@@ -66,7 +66,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_IPA\_NUMBER\_OF\_LINES**](wia-ipa-number-of-lines.md)

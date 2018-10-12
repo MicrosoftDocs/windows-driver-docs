@@ -21,7 +21,7 @@ The ACPI\_ENUM\_CHILD\_LENGTH\_FROM\_CHILD macro calculates the size, in bytes, 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 void ACPI_ENUM_CHILD_LENGTH_FROM_CHILD(
     Child
 );

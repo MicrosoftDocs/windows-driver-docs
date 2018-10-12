@@ -82,7 +82,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_DPS\_SHOW\_PREVIEW\_CONTROL**](wia-dps-show-preview-control.md)

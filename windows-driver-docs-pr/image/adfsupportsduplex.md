@@ -25,7 +25,7 @@ The required **ADFSupportsDuplex** element specifies whether the attached automa
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ADFSupportsDuplex>
   text
 </wscn:ADFSupportsDuplex>
@@ -72,7 +72,7 @@ If the scan device has an ADF that supports duplex scanning, the WSD Scan Servic
 
 You cannot extend the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ADF**](adf.md)

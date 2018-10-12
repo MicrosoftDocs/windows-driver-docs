@@ -46,7 +46,7 @@ All WIA devices have a root item, which is the parent to all WIA device items. T
 
 The following example shows how to create a WIA device root item.
 
-```
+```cpp
 LONG lItemFlags = WiaItemTypeFolder|WiaItemTypeDevice|WiaItemTypeRoot;
 IWiaDrvItem  *pIWiaDrvRootItem  = NULL;
 HRESULT hr = 
@@ -75,7 +75,7 @@ To create a WIA child item, located directly under the root item created in the 
 
  
 
-```
+```cpp
 LONG lItemFlags = WiaItemTypeFile|WiaItemTypeDevice|WiaItemTypeImage;
 PMINIDRIVERITEMCONTEXT pItemContext    = NULL;
 IWiaDrvItem           *pIWiaDrvNewItem = NULL;
@@ -112,7 +112,7 @@ if(S_OK == hr){
 
 The following example shows an implementation of the **IWiaMiniDrv::drvInitializeWia** method.
 
-```
+```cpp
 HRESULT _stdcall CWIADevice::drvInitializeWia(
   BYTE        *pWiasContext,
   LONG        lFlags,

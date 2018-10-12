@@ -13,13 +13,9 @@ ms.localizationpriority: medium
 
 # Sample Code to Create Custom Properties
 
-
-
-
-
 To create a custom property, your WIA driver might have code that looks similar to the following:
 
-```
+```cpp
   //
   // My Custom Property
   //

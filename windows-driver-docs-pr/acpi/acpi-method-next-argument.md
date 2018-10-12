@@ -6,7 +6,7 @@ ms.assetid: c723b11b-1657-4a78-a6a1-26bd916604a4
 keywords: 
 - ACPI_METHOD_NEXT_ARGUMENT macro ACPI Devices
 ms.author: windowsdriverdev
-ms.date:
+ms.date: 10/12/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -21,7 +21,7 @@ The ACPI\_METHOD\_NEXT\_ARGUMENT structure returns a pointer to the next [**ACPI
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
  ACPI_METHOD_NEXT_ARGUMENT(
     Argument
 );

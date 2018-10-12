@@ -25,7 +25,7 @@ The required **Document** element contains the details about one of the document
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Document>
   child elements
 </wscn:Document>
@@ -74,7 +74,7 @@ There are no attributes.
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DocumentDescription**](documentdescription.md)

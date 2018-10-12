@@ -25,7 +25,7 @@ The optional **MediaBack** element contains all parameters that are specific to 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:MediaBack>
   child elements
 </wscn:MediaBack>
@@ -89,7 +89,7 @@ If the **MediaBack** element does not contain a [**ScanRegion**](scanregion.md) 
 
 If the input source is **ADFDuplex** and the **MediaBack** element is missing, all parameters that are specified in [**MediaFront**](mediafront.md) will apply to the back side scanning as well.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ColorProcessing**](colorprocessing.md)

@@ -25,7 +25,7 @@ The required **ValidationInfo** element contains all [**ScanTicket**](scanticket
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ValidationInfo>
   child elements
 </wscn:ValidationInfo>
@@ -85,7 +85,7 @@ Remarks
 
 The **ValidationInfo** element contains elements that define whether the client's [**ScanTicket**](scanticket.md) is valid and, if not, what data the WSD Scan Service changed to make the ticket valid. The Scan Service returns this information in its [**ValidateScanTicketResponse**](validatescanticketresponse.md) operation.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ImageInformation**](imageinformation.md)

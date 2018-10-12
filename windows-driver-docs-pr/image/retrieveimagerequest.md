@@ -25,7 +25,7 @@ The required **RetrieveImageRequest** operation element contains the client's re
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:RetrieveImageRequest>
   child elements
 </wscn:RetrieveImageRequest>
@@ -126,7 +126,7 @@ Examples
 
 The following code example shows a client request to retrieve image data for the job identified by JobId 1.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
@@ -154,7 +154,7 @@ The following code example shows a client request to retrieve image data for the
 </soap:Envelope>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DocumentDescription**](documentdescription.md)

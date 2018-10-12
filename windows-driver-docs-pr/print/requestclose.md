@@ -84,7 +84,7 @@ The following code example shows how to close an event notification after a butt
   </asyncPrintUIResponse>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**asyncPrintUIRequest**](asyncprintuirequest.md)

@@ -25,7 +25,7 @@ The optional **JobCreatedTime** element specifies the time at which the job was 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobCreatedTime>
   text
 </wscn:JobCreatedTime>
@@ -72,7 +72,7 @@ A job is *created* when the job is submitted to the system.
 
 The specified time refers to the internal clock of the scan device and does not need to be a real time clock.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**JobStatus**](jobstatus.md)

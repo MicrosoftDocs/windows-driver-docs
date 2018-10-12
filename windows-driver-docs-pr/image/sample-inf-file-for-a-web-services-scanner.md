@@ -20,7 +20,7 @@ The following INF file, *Sti.inf*, shows how to install a WIA driver. Entries th
 
  
 
-```
+```INF
 ;
 ; MyWSScanner.inf - sample installation file that shows how
 ; to install a WIA driver for a WS scanner by using the inbox 

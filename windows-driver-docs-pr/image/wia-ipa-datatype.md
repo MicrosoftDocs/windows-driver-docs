@@ -180,7 +180,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_IPA\_BITS\_PER\_CHANNEL**](wia-ipa-bits-per-channel.md)

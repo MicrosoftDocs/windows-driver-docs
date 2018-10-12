@@ -26,7 +26,7 @@ You must acquire a pointer to the [**USBCAMD\_INTERFACE**](https://msdn.microsof
 
 The following code demonstrates how to build and send the IRP\_MN\_QUERY\_INTERFACE request from the camera minidriver:
 
-```
+```cpp
 KeInitializeEvent(&Event, NotificationEvent, FALSE);
 Irp = IoBuildSynchronousFsdRequest(
     IRP_MJ_PNP,

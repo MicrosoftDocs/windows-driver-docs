@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 # \#Include Preprocessor Directive
 
 
-```
+```GDL
 #Include: Quoted String
 ```
 
@@ -36,11 +36,3 @@ If you use **\*Include**, which is an old GPD keyword, the include file will be 
 The current implementation of the parser allows three forms of naming a file: file name only, fully qualified path, and partially qualified path. If you use a partially qualified path, the starting point for the path is established by the current execution environment. If only a file name is used, two starting points will be tried: the path that the root source file uses, and then the path that the current execution environment establishes.
 
 Note that if a precompiled file includes another file, the precompiled file is considered the root source file relative to its included files are concerned. The installation and setup code might impose additional restrictions.
-
- 
-
- 
-
-
-
-

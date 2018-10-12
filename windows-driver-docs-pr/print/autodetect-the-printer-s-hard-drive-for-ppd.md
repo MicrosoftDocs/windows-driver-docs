@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 Add entries to the GDL file for any hard drive-related features in your PPD file. You can do this by creating a corresponding feature construct in the GDL file using the same technique shown in the previous example. The following GDL construct automatically detects whether a hard disk is installed.
 
-```
+```GDL
 *% The GDL parser merges this feature definition with the 
 *% corresponding feature construct in the GPD file
 *Feature: PrinterHardDisk

@@ -47,7 +47,7 @@ The WIA driver should allocate memory (to be used by the WIA driver and freed by
 
 The following example shows an implementation of the [**IWiaMiniDrv::drvGetCapabilities**](https://msdn.microsoft.com/library/windows/hardware/ff543977) method.
 
-```
+```cpp
 HRESULT _stdcall CWIADevice::drvGetCapabilities(
   BYTE            *pWiasContext,
   LONG            lFlags,
@@ -179,7 +179,7 @@ The [**IStiUSD::SetNotificationHandle**](https://msdn.microsoft.com/library/wind
 
 The following example shows an implementation of the **IStiUSD::SetNotificationHandle** method.
 
-```
+```cpp
 STDMETHODIMP CWIADevice::SetNotificationHandle(HANDLE hEvent)
 {
   HRESULT hr = S_OK;
@@ -281,7 +281,7 @@ The WIA driver is responsible for filling out the [**STINOTIFY**](https://msdn.m
 
 The following example shows an implementation of the **IStiUSD::GetNotificationData** method.
 
-```
+```cpp
 STDMETHODIMP CWIADevice::GetNotificationData( LPSTINOTIFY pBuffer )
 {
   //
@@ -354,7 +354,7 @@ The WIA driver should restore any event interrupt wait states after returning fr
 
 The following example shows an implementation of the [**IWiaMiniDrv::drvNotifyPnpEvent**](https://msdn.microsoft.com/library/windows/hardware/ff544998) method.
 
-```
+```cpp
 HRESULT _stdcall CWIADevice::drvNotifyPnpEvent(
   const GUID *pEventGUID,
   BSTR       bstrDeviceID,

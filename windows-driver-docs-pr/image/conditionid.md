@@ -25,7 +25,7 @@ The required **ConditionId** element uniquely identifies the device condition th
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ConditionId>
   text
 </wscn:ConditionId>
@@ -70,7 +70,7 @@ Remarks
 
 The **ConditionId** element must be the **Id** attribute of a **DeviceCondition** element that the WSD Scan Service previously reported through [**ScannerStatusConditionEvent**](scannerstatusconditionevent.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DeviceCondition**](devicecondition.md)

@@ -63,7 +63,7 @@ If a WIA property is invalid, andthe application is not writing to it, the inval
 
 The following example shows an implementation of the **IWiaMiniDrv::drvValidateItemProperties** method:
 
-```
+```cpp
 HRESULT _stdcall CWIADevice::drvValidateItemProperties(
   BYTE           *pWiasContext,
   LONG           lFlags,

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 # \#SetPPPrefix Preprocessor Directive
 
 
-```
+```GDL
 #SetPPPrefix: prefix
 ```
 
@@ -27,7 +27,7 @@ The \#SetPPPrefix directive makes the *prefix* value the current preprocessor pr
 
 You can define the same prefix more than once. The prefix is user-selectable because it allows directives to be unambiguously distinguished from any existing not-to-be-processed data. The following code example shows how to change a prefix if a normal GDL entry contains a value that might be confused with an actual directive.
 
-```
+```GDL
 *%  assume current prefix is #
 #SetPPPrefix: #Temp#
 #Temp#Ifdef:  WINNT_60
@@ -37,11 +37,3 @@ You can define the same prefix more than once. The prefix is user-selectable bec
 #Temp#UndefinePrefix
 *%  now back to normal # prefix.
 ```
-
- 
-
- 
-
-
-
-

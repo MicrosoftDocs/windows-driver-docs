@@ -31,7 +31,7 @@ This section provides a detailed description of **EFI\_SIMPLE\_WINPHONE\_IO\_PRO
 
 **GUID**
 
-``` syntax
+```cpp
 // {BDE900DD-190A-4c7d-9663-16BA8ED88B55}
 #define EFI_SIMPLE_WINPHONE_IO_PROTOCOL_GUID \
   { 0xbde900dd, 0x190a, 0x4c7d, 0x96, 0x63, 0x16, 0xba, 0x8e, \
@@ -40,13 +40,13 @@ This section provides a detailed description of **EFI\_SIMPLE\_WINPHONE\_IO\_PRO
 
 **Revision number**
 
-``` syntax
+```cpp
 #define EFI_SIMPLE_WINPHONE_IO_PROTOCOL_REVISION   0x00010001
 ```
 
 **Protocol interface structure**
 
-``` syntax
+```cpp
 typedef struct _EFI_SIMPLE_WINPHONE_IO_PROTOCOL {
   UINT32                                        Revision;
   EFI_SIMPLE_WINPHONE_IO_INITIALIZE             Initialize;
@@ -76,11 +76,4 @@ Sends a buffer of bytes to the host computer. See [EFI\_SIMPLE\_WINPHONE\_IO\_PR
 
 <a href="" id="getmaxpacketsize"></a>**GetMaxPacketSize**  
 Returns the maximum packet size supported by this protocol. See [EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL.GetMaxPacketSize](efi-simple-winphone-io-protocolgetmaxpacketsize.md).
-
- 
-
- 
-
-
-
 

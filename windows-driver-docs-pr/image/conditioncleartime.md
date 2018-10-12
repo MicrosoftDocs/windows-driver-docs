@@ -25,7 +25,7 @@ The required **ConditionClearTime** element specifies the date and time at which
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ConditionClearTime>
   text
 </wscn:ConditionClearTime>
@@ -65,7 +65,7 @@ There are no child elements.
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DeviceConditionCleared**](deviceconditioncleared.md)

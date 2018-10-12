@@ -25,7 +25,7 @@ The optional **JobHistory** element contains information about scan jobs that ha
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobHistory>
   child elements
 </wscn:JobHistory>
@@ -87,7 +87,7 @@ The **JobHistory** element contains a subset of the most recent jobs that have f
 
 A client can ask for job history through the [**GetJobHistoryRequest**](getjobhistoryrequest.md) operation element. The WSD Scan Service returns this history in a [**GetJobHistoryResponse**](getjobhistoryresponse.md) operation element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**GetJobHistoryRequest**](getjobhistoryrequest.md)

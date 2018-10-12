@@ -25,7 +25,7 @@ The Microsoft ASL compiler supports several command line options. To list the av
 
 The ASL compiler supports the following command line options:
 
-``` syntax
+```console
 asl /?
 asl [/nologo] /d <BinFile>
 asl [/nologo] /u [/Fa=<ASMFile>] [/Fl=<LSTFile>] [/Fn=<NSDFile>] <AMLFile>
@@ -65,7 +65,7 @@ To use the table-load feature, the ACPI table to be overloaded must meet the fol
 
 To load an ACPI table into the registry for test purposes, the ASL compiler is invoked as follows:
 
-``` syntax
+```console
 asl.exe /loadtable [-v] [-d] <AMLFile>
 ```
 

@@ -99,7 +99,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_DPS\_PAGE\_SIZE**](wia-dps-page-size.md)

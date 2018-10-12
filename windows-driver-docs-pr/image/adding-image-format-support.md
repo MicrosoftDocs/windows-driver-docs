@@ -43,7 +43,7 @@ TYMED\_MULTIPAGE\_CALLBACK
 
 The following example shows an implementation of [**IWiaMiniDrv::drvGetWiaFormatInfo**](https://msdn.microsoft.com/library/windows/hardware/ff543986):
 
-```
+```cpp
 HRESULT _stdcall CWIADevice::drvGetWiaFormatInfo(
   BYTE            *pWiasContext,
   LONG            lFlags,

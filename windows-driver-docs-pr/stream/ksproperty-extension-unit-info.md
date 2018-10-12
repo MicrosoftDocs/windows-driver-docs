@@ -95,7 +95,7 @@ Specifically, KSPROPERTY\_EXTENSION\_UNIT\_INFO returns the extension unit GUID 
 
 The following code example shows how to submit KSPROPERTY\_EXTENSION\_UNIT\_INFO, taken from the complete sample shown in [Sample Extension Unit Plug-in DLL](https://msdn.microsoft.com/library/windows/hardware/ff568134):
 
-```
+```cpp
 ExtensionProp.Property.Set = PROPSETID_VIDCAP_EXTENSION_UNIT;
     ExtensionProp.Property.Id = KSPROPERTY_EXTENSION_UNIT_INFO;
     ExtensionProp.Property.Flags = KSPROPERTY_TYPE_GET | 
@@ -129,12 +129,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

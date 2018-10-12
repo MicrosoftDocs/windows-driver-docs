@@ -147,7 +147,7 @@ In this example, the **stringID** values specify the following:
 
 With the preceding XML code, the following body text (stringID="100") is displayed in the event notification message: "Printer is out of yellow ink; please open Side Access Door B and replace the ink cartridge."
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**body**](body.md)

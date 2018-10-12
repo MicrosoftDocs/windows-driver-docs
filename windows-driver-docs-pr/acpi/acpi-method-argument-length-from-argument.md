@@ -21,7 +21,7 @@ The ACPI\_METHOD\_ARGUMENT\_LENGTH\_FROM\_ARGUMENT macro calculates the size, in
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 void ACPI_METHOD_ARGUMENT_LENGTH_FROM_ARGUMENT(
     Argument
 );

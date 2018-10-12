@@ -30,7 +30,7 @@ To determine the current application connection count, the WIA driver should inc
 
 The following example shows an implementation of the **IWiaMiniDrv::drvUnInitializeWia** method.
 
-```
+```cpp
 HRESULT _stdcall CWIADevice::drvUnInitializeWia(BYTE *pWiasContext)
 {
   //

@@ -25,7 +25,7 @@ The optional **ImagesToTransfer** element specifies the number of images to scan
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ImagesToTransfer wscn:MustHonor=""                       wscn:Override=""                       wscn:UsedDefault=""
   MustHonor = "xs:string"
   Override = "xs:string"
@@ -122,7 +122,7 @@ The client can specify the optional **MustHonor** attribute only when the **Imag
 
 The WSD Scan Service can specify the optional **Override** and **UsedDefault** attributes only when the **ImagesToTransfer** element is contained within a **DocumentFinalParameters** hierarchy. For more information about **Override** and **UsedDefault** and their usage, see [**DocumentFinalParameters**](documentfinalparameters.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)

@@ -29,7 +29,7 @@ The driver binding protocol contains three services, **Supported**, **Start**, a
 
 **GUID**
 
-``` syntax
+```cpp
 // {32D2963A-FE5D-4f30-B633-6E5DC55803CC}
 #define EFI_USBFN_IO_PROTOCOL_GUID \
   {0x32d2963a, 0xfe5d, 0x4f30, 0xb6, 0x33, 0x6e, 0x5d, 0xc5, \
@@ -38,13 +38,13 @@ The driver binding protocol contains three services, **Supported**, **Start**, a
 
 **Revision number**
 
-``` syntax
+```cpp
 #define EFI_USBFN_IO_PROTOCOL_REVISION   0x00010002
 ```
 
 **Protocol interface structure**
 
-``` syntax
+```cpp
 typedef struct _EFI_USBFN_IO_PROTOCOL 
 {
   UINT32                                      Revision;
@@ -181,13 +181,3 @@ The following table lists the functions that are supported in each version of th
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-

@@ -23,7 +23,7 @@ Generally, the **LocalService** account has access to resources whose ACLs allow
 
 The following code example illustrates how to set the security descriptor. This approach can be used if an application and driver need to share a named event object.
 
-```
+```cpp
 //
 //  Security descriptor in SDDL form:
 //  D:           - Indicates what follows is a 
@@ -76,7 +76,7 @@ else
 
 Registry keys can also be created with the appropriate ACLs through an INF file. For example, to create a registry key in the SOFTWARE key that is accessible only to Administrators and the driver running under **LocalService**, add the following entries to your INF file:
 
-```
+```INF
 [DDInstallSection]
 Addreg=MyAddReg
 

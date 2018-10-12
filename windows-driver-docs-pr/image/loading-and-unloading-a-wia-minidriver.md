@@ -37,7 +37,7 @@ If the device port must be opened, a call to [**CreateFile**](https://msdn.micro
 
 The following example shows an implementation of the **IStiUSD::Initialize** method.
 
-```
+```cpp
 STDMETHODIMP CWIADevice::Initialize(
   PSTIDEVICECONTROL   pIStiDeviceControl,
   DWORD               dwStiVersion,
@@ -159,7 +159,7 @@ The WIA service calls [**IStiUSD::GetCapabilities**](https://msdn.microsoft.com/
 
 The following example shows an implementation of **IStiUSD::GetCapabilities**.
 
-```
+```cpp
 /********************************************************************\
 * CWIADevice::GetCapabilities
 * Remarks:

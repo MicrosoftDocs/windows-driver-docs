@@ -118,7 +118,7 @@ The following code example opens an event notification message.
   </asyncPrintUIRequest>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**asyncPrintUIRequest**](asyncprintuirequest.md)

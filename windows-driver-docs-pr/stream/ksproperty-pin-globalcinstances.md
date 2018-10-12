@@ -66,7 +66,7 @@ Specify this property using KSP\_PIN, where the **PinId** member specifies the p
 
 KSPIN\_CINSTANCES is a data structure of the form:
 
-```
+```cpp
 typedef struct {
     ULONG PossibleCount;
     ULONG CurrentCount;

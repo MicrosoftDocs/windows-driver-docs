@@ -58,7 +58,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_DPC\_DIGITAL\_ZOOM**](wia-dpc-digital-zoom.md)

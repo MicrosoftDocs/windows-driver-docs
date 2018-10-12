@@ -25,7 +25,7 @@ The optional **ScanRegion** element specifies the area to scan within the input 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScanRegion>
   child elements
 </wscn:ScanRegion>
@@ -99,7 +99,7 @@ If the requested scan region of a scan job would fall completely outside the sup
 
 The WSD Scan Service can adjust a requested scan region if it cannot fulfill the specified dimensions. Any changes to the scan region should be reported in the [**DocumentFinalParameters**](documentfinalparameters.md) elements in the scan job.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DocumentFinalParameters**](documentfinalparameters.md)

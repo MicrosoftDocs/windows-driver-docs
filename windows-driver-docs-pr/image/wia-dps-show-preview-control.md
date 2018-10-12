@@ -85,7 +85,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_IPS\_SHOW\_PREVIEW\_CONTROL**](wia-ips-show-preview-control.md)

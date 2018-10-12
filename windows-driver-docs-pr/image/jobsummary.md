@@ -25,7 +25,7 @@ The optional **JobSummary** element contains a summary about a scan job.
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobSummary>
   child elements
 </wscn:JobSummary>
@@ -99,7 +99,7 @@ If the parent element of the **JobSummary** element is [**ActiveJobs**](activejo
 
 If the parent element is [**JobHistory**](jobhistory.md), **JobSummary** contains a summary of information about a single, recently completed job within the scan device.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ActiveJobs**](activejobs.md)

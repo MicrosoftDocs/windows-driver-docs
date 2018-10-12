@@ -25,7 +25,7 @@ The required **CreateScanJobResponse** element contains the WSD Scan Service's r
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:CreateScanJobResponse>
   child elements
 </wscn:CreateScanJobResponse>
@@ -90,7 +90,7 @@ Examples
 
 The following code example illustrates a WSD Scan Service response to a CreateScanJobRequest.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
@@ -175,7 +175,7 @@ The following code example illustrates a WSD Scan Service response to a CreateSc
 </soap:Envelope>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)

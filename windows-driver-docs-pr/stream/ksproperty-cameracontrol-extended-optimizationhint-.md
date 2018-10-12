@@ -53,7 +53,7 @@ The PHOTO and VIDEO hints will continue to be used to specify the primary use ca
 
 For Windows 10, additional bit flags aid the tradeoff of quality, speed, and power consumption in the driver. By default, the driver should have KSCAMERA\_EXTENDEDPROP\_OPTIMIZATION\_PHOTO.
 
-``` syntax
+```cpp
 #define KSCAMERA_EXTENDEDPROP_OPTIMIZATION_DEFAULT      0x0000000000000000
 #define KSCAMERA_EXTENDEDPROP_OPTIMIZATION_PHOTO        0x0000000000000001
 #define KSCAMERA_EXTENDEDPROP_OPTIMIZATION_VIDEO        0x0000000000000002

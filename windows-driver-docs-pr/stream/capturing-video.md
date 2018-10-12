@@ -21,14 +21,14 @@ Once the stream is in the **KSSTATE\_RUN** state, the capture process begins. Ba
 
 The following example code obtains the appended KS\_FRAME\_INFO structure:
 
-```
+```cpp
 PKSSTREAM_HEADER pDataPacket = pSrb->CommandData.DataBufferArray;
 PKS_FRAME_INFO pFrameInfo = (PKS_FRAME_INFO) (pDataPacket + 1); 
 ```
 
 A minidriver should set additional information fields about the data captured, such as frames captured, frames dropped, and field polarity. The frame information is generally stored in a member of the driver-writer defined stream extension.
 
-```
+```cpp
 *pFrameInfo = pStrmEx->FrameInfo; // Get the frame info from the minidriver-defined stream extension
 ```
 
@@ -40,7 +40,7 @@ Do not update **PictureNumber** or **DropCount** on transition from the **KSSTAT
 
 If frames have been previously dropped, the minidriver should set the discontinuity flag and then reset its internal flag. The following code demonstrates setting the data discontinuity flag:
 
-```
+```cpp
 if (pStrmEx->fDiscontinuity) {
     pDataPacket->OptionsFlags |= KSSTREAM_HEADER_OPTIONSF_DATADISCONTINUITY;
     pStrmEx->fDiscontinuity = FALSE;
@@ -49,14 +49,6 @@ if (pStrmEx->fDiscontinuity) {
 
 Finally, the minidriver should relinquish control of the SRB, completing the frame capture.
 
-```
+```cpp
 CompleteStreamSRB (pSrb);
 ```
-
- 
-
- 
-
-
-
-
