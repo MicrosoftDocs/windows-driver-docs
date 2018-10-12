@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 You can use the following example configuration XML to develop the configuration files for your device.
 
-```
+```xml
 <?xml version="1.0"?>
 <PrintDeviceCapabilities
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

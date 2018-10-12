@@ -55,7 +55,7 @@ The in-box Makecab.exe allows the user to create a CAB file. Though there are ot
 
 The key is to make sure that the folder that contains the driver is included in the CAB file as well. For example, the driver package may have a structure similar to the following:
 
-```
+```syntax
 C:\Desktop
         \DriverFolderOne
                 Driver.inf

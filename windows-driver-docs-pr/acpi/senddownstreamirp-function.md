@@ -28,7 +28,7 @@ The example code for the `SendDownStreamIrp` function that is included in this s
 
 -   Returns the status of the request to the caller.
 
-```
+```cpp
 NTSTATUS
 SendDownStreamIrp(
     IN PDEVICE_OBJECT   Pdo,

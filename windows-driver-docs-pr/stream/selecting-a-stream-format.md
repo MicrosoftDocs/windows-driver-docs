@@ -28,7 +28,7 @@ The process of selecting a stream format is called *performing a data intersecti
 
 Finally, the minidriver must set certain members of the resulting format as shown below:
 
-```
+```cpp
 .
 .
 .

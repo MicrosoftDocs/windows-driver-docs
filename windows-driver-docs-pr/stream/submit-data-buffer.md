@@ -25,7 +25,7 @@ ms.localizationpriority: medium
 
 With an open stream, a subunit driver can start to attach stream samples to AV/C Streaming. These samples can be either read or write operations, and they can be submitted in the same manner to the AV/C Streaming filter driver, *Avcstrm.sys*. This service is always asynchronous because of its dependency on the current stream state and stream data availability.
 
-```
+```cpp
 INIT_AVCSTRM_HEADER(pAVCStrmReq, (pSrb->Command == SRB_READ_DATA) ?      <mark type="enumval">AVCSTRM_READ</mark> : AVCSTRM_WRITE);
 pAVCStrmReq->AVCStreamContext = pStrmExt->AVCStreamContext;  // from cached context saved in OPEN_STREAM request
 
@@ -68,7 +68,7 @@ Status =
 
 Because the operation is asynchronous, the status should be STATUS\_PENDING. When the data is completed, the completion routine will be called. In the completion routine, a subunit driver can do post processing, including updating statistics of data processed and possibly add presentation time if the subunit is the clock provider.
 
-```
+```cpp
 // Keep track of the number of frames processed
 pStrmExt->FramesProcessed++;
 
@@ -86,11 +86,3 @@ StreamClassStreamNotification(
     pSrb 
     );
 ```
-
- 
-
- 
-
-
-
-

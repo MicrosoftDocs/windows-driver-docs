@@ -28,7 +28,7 @@ To learn how to support properties, methods, and events in your kernel-mode mini
 
 After you have provided a minidriver that supports a given method, you can invoke that method by calling [**IKsControl::KsMethod**](https://msdn.microsoft.com/library/windows/hardware/ff559785) from a user-mode plug-in, as shown in the following code example.
 
-```
+```cpp
 PVOID MethodBuffer; // Your method arguments buffer
 ULONG MethodBufferSize; // Your method buffer size
 
@@ -52,7 +52,7 @@ In the automation tables you provide in kernel mode, you can use the **Flags** m
 
 To register for an event that you support in your minidriver, use the following user-mode code example.
 
-```
+```cpp
 HANDLE EventHandle; // Your event handle.
 
 KSEVENT Event;

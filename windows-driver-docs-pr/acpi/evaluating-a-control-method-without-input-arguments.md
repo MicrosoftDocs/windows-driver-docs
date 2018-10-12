@@ -30,7 +30,7 @@ If the 'ABCD' control method was not an immediate child object, the required cha
 
 *GetAbcData* first allocates an ACPI\_EVAL\_INPUT\_BUFFER structure *inputBuffer* and sets the **MethodNameAsUlong** member to the name of the control method and sets the **Signature** member to ACPI\_EVAL\_INPUT\_BUFFER\_SIGNATURE.
 
-```
+```cpp
     // Fill in the input data
     inputBuffer.MethodNameAsUlong = (ULONG) (&#39;DCBA&#39;);
     inputBuffer.Signature = ACPI_EVAL_INPUT_BUFFER_SIGNATURE;
@@ -58,7 +58,7 @@ Although this step is not included in the sample code, the driver should also ca
 
 The ACPI data structures and constants used in the following example are defined in *Acpiioct.h*.
 
-```
+```cpp
 NTSTATUS
 GetAbcdData(
     IN PDEVICE_OBJECT   Pdo,

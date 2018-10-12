@@ -76,7 +76,7 @@ A subunit should call this when its target device is removed or the original dat
 
 This function does not use any member of the **CommandData** union in the AVC\_STREAM\_REQUEST\_BLOCK structure.
 
-```
+```cpp
 typedef struct _AVC_STREAM_REQUEST_BLOCK {
   ULONG  SizeOfThisBlock;
   ULONG  Version;

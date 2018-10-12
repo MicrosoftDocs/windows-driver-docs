@@ -32,7 +32,7 @@ In releases earlier than DirectX 9.0, stream class creates a child device hardwa
 
 For example, the vendor specifies the following in the **AddReg** section of the INF file:
 
-```
+```INF
 [MyTVDevice.AddReg]
 HKR,"ENUM\CrossbarDevice",pnpid,,"MyCrossbar"
 HKR,"ENUM\TunerDevice",pnpid,,"MyTuner"

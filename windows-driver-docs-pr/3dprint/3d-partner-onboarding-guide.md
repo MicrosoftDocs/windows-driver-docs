@@ -85,7 +85,7 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
     - Replace the entries hardware IDs:
 
-        ```
+        ```INF
         %DeviceName%=FabrikamPrintDriverV4\_Install,3DPRINTER\\Fabrikam1
 
         %DeviceNamePlus%=FabrikamPrintDriverV4\_Install,3DPRINTER\\Fabrikam2

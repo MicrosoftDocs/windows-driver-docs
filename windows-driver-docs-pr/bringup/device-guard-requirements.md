@@ -90,7 +90,7 @@ Calling **GetVariable** for `MemoryOverwriteRequestControlLock` returns 0x0, 0x1
 
 Example usage by the operating system
 
-``` syntax
+```cpp
 if (gSecretsInMemory) 
 {
     char data = 0x11;

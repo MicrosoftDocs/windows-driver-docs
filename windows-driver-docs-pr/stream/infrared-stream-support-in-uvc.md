@@ -28,7 +28,7 @@ These IR format type GUIDs are defined in ksmedia.h:
 
 When these IR format type GUIDs are specified, the capture pipeline automatically marks these streams as IR streams which aids applications in selecting the correct stream for their scenarios.
 
-```
+```cpp
 // Example: Format descriptor for UVC 1.1 frame based uncompressed format
 
 typedef struct _VIDEO_FORMAT_FRAME

@@ -49,7 +49,7 @@ If the driver cannot handle such a format change, it should return a streaming e
 
 The following code example shows how to define a new dynamic format change by using a KSEVENT:
 
-```
+```cpp
 // {162AC456-83D7-4239-96DF-C75FFA138BC6}
 #define STATIC_KSEVENTSETID_DynamicFormatChange\
     0x162ac456, 0x83d7, 0x4239, 0x96, 0xdf, 0xc7, 0x5f, 0xfa, 0x13, 0x8b, 0xc6 DEFINE_GUIDSTRUCT("162AC456-83D7-4239-96DF-C75FFA138BC6", KSEVENTSETID_ DynamicFormatChange);

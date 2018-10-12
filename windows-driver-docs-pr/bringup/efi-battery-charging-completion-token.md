@@ -19,7 +19,7 @@ This structure defines the completion token used by [EFI\_BATTERY\_CHARGING\_PRO
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef struct _EFI_BATTERY_CHARGING_COMPLETION_TOKEN {
   EFI_EVENT Event;
   EFI_BATTERY_CHARGING_STATUS Status;
@@ -46,8 +46,7 @@ EFI\_BATTERY\_CHARGING\_COMPLETION\_TOKEN is returned in the *CompletionToken* p
 **Header:** User generated
 
 ## Related topics
+
 [EFI\_BATTERY\_CHARGING\_PROTOCOL.ChargeBattery](efi-battery-charging-protocolchargebattery.md)  
+
 [EFI\_BATTERY\_CHARGING\_STATUS](efi-battery-charging-status.md)  
-
-
-

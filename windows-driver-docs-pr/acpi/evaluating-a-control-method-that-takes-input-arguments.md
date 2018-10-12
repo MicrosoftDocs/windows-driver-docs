@@ -32,7 +32,7 @@ In addition, if the 'ABCD' control method was not an immediate child object, the
 
 *EvaluateABCDWithInputArgument* first allocates an ACPI\_EVAL\_INPUT\_BUFFER\_SIMPLE\_INTEGER structure *inputBuffer* and then sets the **MethodNameAsUlong** member to the name of the control method, sets the **IntegerArgument** member to the input integer value, and sets the **Signature** member to ACPI\_EVAL\_INPUT\_BUFFER\_SIMPLE\_INTEGER\_SIGNATURE.
 
-```
+```cpp
     // Fill in the input data
     inputBuffer.MethodNameAsUlong = (ULONG) (&#39;DCBA&#39;);
     inputBuffer.IntegerArgument  =  Argument1;
@@ -63,7 +63,7 @@ Although not included in *EvaluateABCDWithInputArgument*, the driver should also
 
 The ACPI data structures and constants used in the following example are defined in *Acpiioct.h*.
 
-```
+```cpp
 NTSTATUS
 EvaluateABCDWithInputArgument(
     IN PDEVICE_OBJECT   Pdo,

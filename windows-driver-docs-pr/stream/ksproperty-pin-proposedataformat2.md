@@ -138,7 +138,7 @@ The following table provides a description of the KSPROPERTY\_PIN\_PROPOSEDATAFO
 
 To use **KSPROPERTY\_PIN\_PROPOSEDATAFORMAT2** define the following structure.
 
-```
+```cpp
 typedef struct
 {
     KSP_PIN                                 PinProperty;
@@ -149,7 +149,7 @@ typedef struct
 
 This code sample shows how to initialize the structure.
 
-```
+```cpp
     ProposeDataformat2Input input = {0};
 
     input.PinProperty.Property.Set = KSPROPSETID_Pin;  

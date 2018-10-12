@@ -15,7 +15,7 @@ Starting with Windows 10, version 1709, you should add the following Camera clas
 
 Add these **Class** and **ClassGuid** entries to the **Version** section of your Universal camera driver INF file to ensure your driver will pass future camera driver HLK tests:
 
-```
+```INF
 [Version]
 
 ...
