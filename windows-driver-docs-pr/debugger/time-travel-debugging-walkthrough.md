@@ -61,7 +61,7 @@ The lab has the following three sections.
 
 *In Section 1, you will build the sample code using Visual Studio.*
 
-**Create the sample app in in Visual Studio**
+**Create the sample app in Visual Studio**
 
 1.  In Microsoft Visual Studio, click **File** &gt; **New** &gt; **Project/Solution...** and click on the Visual **C++** templates. 
     
