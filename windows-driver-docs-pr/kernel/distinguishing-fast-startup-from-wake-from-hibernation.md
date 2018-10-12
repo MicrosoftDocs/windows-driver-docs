@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Distinguishing Fast Startup from Wake-from-Hibernation
 
 
-Starting with Windows 8, a fast startup mode is available to start a computer in less time than is typically required for a traditional, cold startup. A fast startup is a hybrid combination of a cold startup and a wake-from-hibernation startup. Frequently, kernel-mode device drivers need to distinguish fast startups from wake-from-hibernation so that that their devices behave as users expect. To make this distinction, drivers can use information that is available in [system power IRPs](power-irps-for-the-system.md).
+Starting with Windows 8, a fast startup mode is available to start a computer in less time than is typically required for a traditional, cold startup. A fast startup is a hybrid combination of a cold startup and a wake-from-hibernation startup. Frequently, kernel-mode device drivers need to distinguish fast startups from wake-from-hibernation so that their devices behave as users expect. To make this distinction, drivers can use information that is available in [system power IRPs](power-irps-for-the-system.md).
 
 During a cold startup, the boot loader constructs a kernel memory image by loading the sections of the Windows kernel file into memory and linking them. Next, the kernel configures core system functions, enumerates the devices attached to the computer, and loads drivers for them.
 

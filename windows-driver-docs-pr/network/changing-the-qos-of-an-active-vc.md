@@ -26,7 +26,7 @@ ms.localizationpriority: medium
 
 
 
-A connection-oriented client can request a change in the quality of service (QoS) on an active virtual connection (VC) for an outgoing or an incoming call. A remote client can also make such a request. In this case, a call manager or MCM driver driver indicates the remote client's incoming request to change the QoS.
+A connection-oriented client can request a change in the quality of service (QoS) on an active virtual connection (VC) for an outgoing or an incoming call. A remote client can also make such a request. In this case, a call manager or MCM driver indicates the remote client's incoming request to change the QoS.
 
 This section includes:
 

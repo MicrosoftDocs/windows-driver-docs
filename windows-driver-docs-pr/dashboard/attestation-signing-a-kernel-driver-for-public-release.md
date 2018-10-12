@@ -78,7 +78,7 @@ Follow the process described in [Download kits and tools for Windows 10](https:/
 
 To create a CAB file that can be submitted to the dashboard, complete the following steps:
 
-1. Gather the binaries that you will submit to be signed in a single directory. In this example, we will use C:\\Echo. The steps described here will reference the [echo driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/echo/kmdf/driver/AutoSync) available available from GitHub.
+1. Gather the binaries that you will submit to be signed in a single directory. In this example, we will use C:\\Echo. The steps described here will reference the [echo driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/echo/kmdf/driver/AutoSync) available from GitHub.
 
 Typical CAB file submissions contain the following:
 

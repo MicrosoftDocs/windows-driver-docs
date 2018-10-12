@@ -139,7 +139,7 @@ Exit:
 // Parameters:
 //
 //      DeviceObject: Pointer to the device object. 
-//      Irp:          Pointer to an an I/O Request Packet. 
+//      Irp:          Pointer to an I/O Request Packet. 
 //      CompletionContext: Context for the completion routine.
 //
 // Return Value:                                                       
