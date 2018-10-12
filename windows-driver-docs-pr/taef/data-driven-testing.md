@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 Data-driven Testing is a testing methodology where a Test's input and output values are separated from the code. This formalism typically means that a small investment in making the test code a little bit more generic allows for a large number of test cases to be written by simply identifying the data that's involved.
 
-Data Driven Testing is great for testing areas that work with a set of input values that define their behavior - for example, when testing an API, the input and output parameters can be defined as a a source of data, and the test code consumes the data, makes the API calls and validates the results.
+Data Driven Testing is great for testing areas that work with a set of input values that define their behavior - for example, when testing an API, the input and output parameters can be defined as a source of data, and the test code consumes the data, makes the API calls and validates the results.
 
 ## <span id="Data-driven_Testing_support_in_TAEF"></span><span id="data-driven_testing_support_in_taef"></span><span id="DATA-DRIVEN_TESTING_SUPPORT_IN_TAEF"></span>Data-driven Testing support in TAEF
 
