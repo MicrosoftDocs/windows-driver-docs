@@ -34,7 +34,7 @@ In releases earlier than DirectX 9.0, AVStream creates a child device hardware I
 
 For example, the vendor specifies the following in the **AddReg** section of the INF file:
 
-```
+```INF
 [MyTVDevice.AddReg]
 HKR,"ENUM\CrossbarDevice",pnpid,,"MyCrossbar"
 HKR,"ENUM\TunerDevice",pnpid,,"MyTuner"

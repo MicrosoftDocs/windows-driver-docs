@@ -21,7 +21,7 @@ By default, the WIA service logs errors to a file named *wiadebug.log* in the **
 
 A developer writes an application to test a scanner driver that is under development. As one of the tests, the developer attempts to set the scanner's dots per inch (dpi) to 1200, but notices that this action produces an error. A look at the Wiadebug.log file shows the following:
 
-```
+```console
 wiasGetChangedValueLong, validate prop 6147 failed hr: 0x80070057
 wiasUpdateScanRect, CheckXResAndUpdate failed (0x80070057)
 CDrvWrap::WIA_drvValidateItemProperties, Error calling driver:
@@ -30,7 +30,7 @@ drvValidateItemProperties with hr = 0x80070057 (This is normal if the app wrote 
 
 These log entries indicate that the driver is reporting that the application wrote an invalid value. It is not clear from this information what the exact problem is. If the developer increases the WIA logging level to report warnings as well as the errors, *wiadebug.log* produces output similar to the following:
 
-```
+```console
 wiasValidateItemProperties, invalid LIST value for : 
     (propID) Horizontal Resolution, value = 1200
 Valid values are:
@@ -53,10 +53,6 @@ Now that the problem is identified, it is up to the developer to determine wheth
 The logging level is controlled by an entry in the registry. For WIA, this key resides in:
 
 **HKLM\\System\\CurrentControlSet\\Control\\StillImage\\Debug\\***MODULE\_NAME***\\DebugFlags**
-
-```
-
-```
 
 In this example, MODULE\_NAME is the name of the appropriate binary module. For the WIA service, this is *wiaservc.dll*. The value in **DebugFlags** controls the logging level. Three of the settings are given in the following table:
 
@@ -87,20 +83,8 @@ In this example, MODULE\_NAME is the name of the appropriate binary module. For 
 </tbody>
 </table>
 
- 
-
 The value in **DebugFlags** is a flag value (that is, different settings may be combined with a bitwise OR operator). To turn on logging for errors, warnings, and traces all at one time, set **DebugFlags** to 0x0000007.
 
 In order for a change in value of **DebugFlags** to take effect, the WIA service (*stisvc*) must be stopped and then restarted. See [Starting and Stopping the Still Image Service](starting-and-stopping-the-still-image-service.md) for details.
 
 **Note**   Excessive logging can lead to a significant decrease in performance. You should increase the logging level only when attempting to solve a particular problem. After you have corrected the problem, set logging to its original level. The default logging level is one. Do not increase the logging level above three as this may cause a crash.
-
- 
-
- 
-
- 
-
-
-
-

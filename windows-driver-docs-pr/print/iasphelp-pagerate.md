@@ -113,7 +113,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Iasphelp::PageRateUnit**](iasphelp-pagerateunit.md)

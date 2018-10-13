@@ -46,7 +46,7 @@ When a filter instance is first created and added to the graph, it typically has
 
 The following code snippet shows how to define functions that are exported by the BDA support library as dispatch routines for the KSPROPSETID\_BdaTopology property set:
 
-```
+```cpp
 //
 //  KSPROPSETID_BdaTopology property set
 //

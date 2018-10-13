@@ -49,7 +49,7 @@ This extended property control is used to control digital video stabilization in
 
 The following flags that can be placed in the KSCAMERA\_EXTENDEDPROP\_HEADER.Flags field flags to control digital video stabilization in driver\\MFT0. By default, the driver should have video stabilization off.
 
-``` syntax
+```cpp
 #define KSCAMERA_EXTENDEDPROP_VIDEOSTABILIZATION_OFF       0x0000000000000000
 #define KSCAMERA_EXTENDEDPROP_VIDEOSTABILIZATION_ON        0x0000000000000001
 #define KSCAMERA_EXTENDEDPROP_VIDEOSTABILIZATION_AUTO      0x0000000000000002

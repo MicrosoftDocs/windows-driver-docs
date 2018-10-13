@@ -28,7 +28,7 @@ The **action** element is defined in the *asyncui* namespace at this URI: http:/
 Usage
 -----
 
-``` syntax
+```xml
 <action
   dll = "xs:string"
   entrypoint = "xs:string">
@@ -115,7 +115,7 @@ Examples
 
 The following XML code example will run the *IHV.exe* program on the client computer
 
-```
+```xml
 <?xml version="1.0" ?> 
   <asyncPrintUIRequest
     xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
@@ -135,7 +135,7 @@ The following XML code example will run the *IHV.exe* program on the client comp
 
 The following code example shows how to use the **action** element to pass data to a resource DLL.
 
-```
+```xml
 <?xml version="1.0" ?>
    <asyncPrintUIRequest
     xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
@@ -156,7 +156,7 @@ The following code example shows how to use the **action** element to pass data 
   </asyncPrintUIRequest>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**balloonUI**](balloonui.md)

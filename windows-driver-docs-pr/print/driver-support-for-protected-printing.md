@@ -176,7 +176,7 @@ JobPasscode
 
 Here's an example of a GPD file specifying JobPasscode with an Installable Hardware Constraint.
 
-```Text
+```GDP
 *%
 *GPDSpecVersion: "1.0"
 *GPDFileVersion: "1.0"

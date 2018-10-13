@@ -25,7 +25,7 @@ The optional **MediaBackImageInfo** element contains the image information for t
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:MediaBackImageInfo>
   child elements
 </wscn:MediaBackImageInfo>
@@ -80,7 +80,7 @@ There are no attributes.
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**BytesPerLine**](bytesperline.md)

@@ -51,7 +51,7 @@ By default, the following resolutions are supported: 75, 100, 150, 200, 300, and
 
 Because the range of resolutions varies based on the device, you can specify the list of possible resolutions by adding an entry such as the following to your setup information (INF) file:
 
-```
+```INF
 [DeviceData]
 Resolutions="75, 100, 300, 600, 1200"
 ```

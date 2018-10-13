@@ -25,7 +25,7 @@ The required **GetJobHistoryRequest** element requests a summary of job-related 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:GetJobHistoryRequest/>
 ```
 
@@ -60,7 +60,7 @@ Examples
 
 The following code example contains a request for job history.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
@@ -82,7 +82,7 @@ The following code example contains a request for job history.
 </soap:Envelope>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**GetJobHistoryResponse**](getjobhistoryresponse.md)

@@ -21,7 +21,7 @@ The ACPI\_METHOD\_SET\_ARGUMENT\_STRING macro sets the members of an [**ACPI\_ME
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 void ACPI_METHOD_SET_ARGUMENT_STRING(
     Argument,
     StrData

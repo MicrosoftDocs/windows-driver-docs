@@ -87,7 +87,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_DPC\_BURST\_INTERVAL**](wia-dpc-burst-interval.md)

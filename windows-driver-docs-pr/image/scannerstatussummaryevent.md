@@ -25,7 +25,7 @@ The required **ScannerStatusSummaryEvent** element informs the client that the s
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScannerStatusSummaryEvent>
   child elements
 </wscn:ScannerStatusSummaryEvent>
@@ -72,7 +72,7 @@ Examples
 
 The following code example indicates that the scan device is stopped because of a jam in the media feed path.
 
-```
+```xml
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
   xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
@@ -101,7 +101,7 @@ The following code example indicates that the scan device is stopped because of 
 </soap:Envelope>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**StatusSummary**](statussummary.md)

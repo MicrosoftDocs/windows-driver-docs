@@ -25,7 +25,7 @@ The required **CreateScanJobRequest** operation prepares a scan device to scan.
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:CreateScanJobRequest>
   child elements
 </wscn:CreateScanJobRequest>
@@ -154,7 +154,7 @@ Examples
 
 The following code example shows a scan job request when the scan is initiated from the scanning device.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
@@ -212,7 +212,7 @@ The following code example shows a scan job request when the scan is initiated f
 
 The following code example shows a scan job request when the scan is initiated from an application on the client.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
@@ -261,7 +261,7 @@ The following code example shows a scan job request when the scan is initiated f
 </soap:Envelope>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ColorProcessing**](colorprocessing.md)

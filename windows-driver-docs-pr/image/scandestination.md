@@ -25,7 +25,7 @@ The required **ScanDestination** element specifies a single scan destination on 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScanDestination>
   child elements
 </wscn:ScanDestination>
@@ -82,7 +82,7 @@ Remarks
 
 The client includes one or more **ScanDestination** elements within the **ScanDestinations** element that it sends when it creates a subscription. The WSD Scan Service uses the information that is provided within **ScanDestination** to create appropriate [**ScanAvailableEvent**](scanavailableevent.md) event elements.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ClientContext**](clientcontext.md)

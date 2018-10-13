@@ -149,7 +149,7 @@ The following code example shows how you can use the **customData** element to o
 </asyncPrintUIRequest>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**requestOpen**](requestopen.md)

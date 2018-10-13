@@ -69,7 +69,7 @@ The compatible ID for a 3D printer is shown in the following table:
 
 In the header file that is included in the 3D printer firmware, the IHV must specify the Compatible ID as shown here:
 
-```
+```cpp
 #define MS3DPRINT_CONFIG_SIZE 232
 
 #define MS3DPRINT_OSP_SIZE (4+4+2+0x20+4+MS3DPRINT_CONFIG_SIZE)
@@ -101,9 +101,7 @@ static const uint8_t PROGMEM ms3dprint_descriptor[40] = {
 
 This line in the code above is the compatible ID of a 3D Printer:
 
-```
-&#39;3&#39;, &#39;D&#39;, &#39;P&#39;, &#39;R&#39;, &#39;I&#39;, &#39;N&#39;, &#39;T&#39;, 0x00,         // compatibleID ("3DPRINT")
-```
+`&#39;3&#39;, &#39;D&#39;, &#39;P&#39;, &#39;R&#39;, &#39;I&#39;, &#39;N&#39;, &#39;T&#39;, 0x00,         // compatibleID ("3DPRINT")`
 
 With this specific configuration, IHVs can compile their firmware and flash the device. Then when the device is plugged in, the 3D Print Standard Driver will automatically get downloaded from Windows Update.
 
@@ -127,7 +125,7 @@ For more information about these parameters, please refer to the *MS3DPrint Stan
 
 To specify which base configuration to use and which parameters to override, the developer has to specify it through the Extended Properties OS Feature Descriptor as shown here:
 
-```
+```cpp
 // Modifiers to the base configuration
 static const uint8_t PROGMEM ms3dprint_properties_descriptor[] = {
     SIZE_TO_DW(MS3DPRINT_XPROP_SIZE),                   // dwLength

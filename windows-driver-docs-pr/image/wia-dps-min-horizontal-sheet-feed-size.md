@@ -53,7 +53,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_DPS\_MIN\_VERTICAL\_SHEET\_FEED\_SIZE**](wia-dps-min-vertical-sheet-feed-size.md)

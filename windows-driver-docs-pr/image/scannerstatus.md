@@ -25,7 +25,7 @@ The required **ScannerStatus** element contains the current status of the scanne
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScannerStatus>
   child elements
 </wscn:ScannerStatus>
@@ -86,7 +86,7 @@ There are no attributes.
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ActiveConditions**](activeconditions.md)

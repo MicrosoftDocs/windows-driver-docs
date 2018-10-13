@@ -25,7 +25,7 @@ The required **GetActiveJobsRequest** element requests a summary of all currentl
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:GetActiveJobsRequest/>
 ```
 
@@ -58,7 +58,7 @@ Examples
 
 The following code example shows a request for all active scan jobs.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
@@ -80,7 +80,7 @@ The following code example shows a request for all active scan jobs.
 </soap:Envelope>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**GetActiveJobsResponse**](getactivejobsresponse.md)

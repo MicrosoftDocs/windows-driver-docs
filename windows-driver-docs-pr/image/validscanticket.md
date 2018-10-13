@@ -25,7 +25,7 @@ The optional **ValidScanTicket** element contains a valid [**ScanTicket**](scant
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ValidScanTicket>
   child elements
 </wscn:ValidScanTicket>
@@ -82,7 +82,7 @@ Remarks
 
 A client submits a [**ScanTicket**](scanticket.md) for validation through the [**ValidateScanTicketRequest**](validatescanticketrequest.md) operation. If the submitted **ScanTicket** contains invalid settings, the WSD Scan Service must return a **ValidScanTicket** element in which it has changed any invalid settings to be valid settings. The Scan Service returns validation information, which includes **ValidScanTicket**, in [**ValidateScanTicketResponse**](validatescanticketresponse.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DocumentParameters**](documentparameters.md)

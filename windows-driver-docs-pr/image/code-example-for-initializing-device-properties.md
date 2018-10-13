@@ -26,7 +26,7 @@ During the [**IWiaMiniDrv::drvInitItemProperties**](https://msdn.microsoft.com/l
 
 The following code example shows how to initialize WIA\_DPS\_SERVICE\_ID by using the **OpenProperyStore** and **ReadDeviceProperty** methods to read PKEY\_PNPX\_ServiceId. The same general method can be used to initialize each of the device properties.
 
-```
+```cpp
 HRESULT hr = S_OK;
 IPropertyStore *pPropertyStore = NULL;
 BSTR bstrPropertyValue = NULL;

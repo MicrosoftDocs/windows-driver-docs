@@ -103,7 +103,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_DPC\_RGB\_GAIN**](wia-dpc-rgb-gain.md)

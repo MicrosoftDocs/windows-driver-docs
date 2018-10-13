@@ -18,17 +18,8 @@ ms.localizationpriority: medium
 
 # \#Define Preprocessor Directive
 
-
-```
+```GDL
 #Define: symbol
 ```
 
 The \#Define directive adds the *symbol* value to the preprocessor symbol dictionary. *symbol* can be any value token and is required. You can add the same symbol more than once.
-
- 
-
- 
-
-
-
-

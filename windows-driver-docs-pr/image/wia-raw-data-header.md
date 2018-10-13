@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The header for RAW data is as follows:
 
-```
+```cpp
 DWORD Tag;         // must contain &#39;WRAW&#39; (single byte ASCII characters)
 DWORD Version;        // must contain 0x00010000
 DWORD HeaderSize;       // contains amount of valid bytes in header
@@ -57,7 +57,7 @@ Describes the photometric interpretation for the image that is transferred. This
 <a href="" id="dword-lineorder"></a>DWORD *LineOrder*  
 Describes whether the lines/rows in the image data are ordered top-to-bottom or bottom-to-top. Two new constants were defined in *wiadef.h* for this:
 
-```
+```cpp
 #define  WIA_LINE_ORDER_TOP_TO_BOTTOM        0x00000001 
 #define  WIA_LINE_ORDER_BOTTOM_TO_TOP        0x00000002
 ```

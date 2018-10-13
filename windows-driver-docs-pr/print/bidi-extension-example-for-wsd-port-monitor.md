@@ -18,10 +18,9 @@ ms.localizationpriority: medium
 
 # Bidi Extension Example for WSD Port Monitor
 
-
 The following code example is a sample XML file that extends the bidi communications schema for the Web Services for Devices (WSD) port monitor:
 
-```
+```xml
 <?xml version=&#39;1.0&#39;?>
 <bidi:Definition xmlns:bidi=&#39;http://schemas.microsoft.com/windows/2005/03/printing/bidi&#39;>
 
@@ -210,7 +209,7 @@ The preceding example bidi extension file contains the root element &lt;Definiti
 
 Any namespaces that are used in schema extensions must be defined in the Schema element. The extension processing will not recognize a namespace that is defined in a lower-level element. Defining a namespace in a lower-level element will cause the extension file to fail validation.
 
-```
+```xml
 <Definition>
   <Schema>...</Schema>
   <PortStatus>...</PortStatus>
@@ -225,37 +224,17 @@ Each bidi query from this extension file includes:
 
 -   The XPath filter that filters the specific XML elements from the WSD schema that will be used to compose the bidi result.
 
-### <a href="" id="parameter-construct"></a> Parameter Construct
+### Parameter Construct
 
 The &lt;Parameter&gt; element used in the preceding example bidi extension file defines a variable property that can take different values (for example, TopBin or BottomBin), such that queries of the following form are possible:
 
--   <span codelanguage=""></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td><pre><code>\Printer.Layout.InputBins.TopBin:Installed</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+-   `\Printer.Layout.InputBins.TopBin:Installed`
 
--   <span codelanguage=""></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td><pre><code>\Printer.Layout.InputBins.BottomBin:Installed</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+-   `\Printer.Layout.InputBins.BottomBin:Installed`
 
 The following example query illustrates the use of custom attributes defined in the preceding bidi extension:
 
-```
+```xml
 <Property name=&#39;Printer&#39;>
   <Property name=&#39;Layout&#39;>
     <Property name=&#39;InputBins&#39;>
@@ -275,14 +254,4 @@ The following example query illustrates the use of custom attributes defined in 
 
 The preceding example results in the following query:
 
-```
-\Printer.Layout.InputBins.[TrayName]:Installed
-```
-
- 
-
- 
-
-
-
-
+`\Printer.Layout.InputBins.[TrayName]:Installed`

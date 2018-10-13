@@ -25,7 +25,7 @@ The required **ValidTicket** element indicates whether a client's [**ScanTicket*
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ValidTicket>
   text
 </wscn:ValidTicket>
@@ -70,7 +70,7 @@ Remarks
 
 A client submits a [**ScanTicket**](scanticket.md) for validation through the [**ValidateScanTicketRequest**](validatescanticketrequest.md) operation. The WSD Scan Service returns validation information, which includes **ValidTicket**, in [**ValidateScanTicketResponse**](validatescanticketresponse.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ScanTicket**](scanticket.md)

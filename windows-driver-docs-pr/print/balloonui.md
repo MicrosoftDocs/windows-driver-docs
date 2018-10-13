@@ -28,7 +28,7 @@ The **balloonUI** element is defined in the *asyncui* namespace at this URI: htt
 Usage
 -----
 
-``` syntax
+```xml
 <balloonUI
   iconID = "xs:string"
   resourceDll = "xs:string">
@@ -133,7 +133,7 @@ Examples
 
 The following code example shows how to use an interactive balloon to pass **CDATA** type data to a DLL.
 
-```
+```xml
 <?xml version="1.0" ?> 
   <asyncPrintUIRequest xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
     <v1>
@@ -154,7 +154,7 @@ The following code example shows how to use an interactive balloon to pass **CDA
   </asyncPrintUIRequest>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**action**](action.md)

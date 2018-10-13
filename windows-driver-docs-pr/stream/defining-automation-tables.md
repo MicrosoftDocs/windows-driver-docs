@@ -26,7 +26,7 @@ A BDA minidriver should define arrays of property and method sets and then defin
 
 The following code snippet shows examples of filter automation tables and arrays of property and method sets:
 
-```
+```cpp
 //
 //  Filter Level Property Set supported
 //
@@ -84,7 +84,7 @@ DEFINE_KSAUTOMATION_TABLE(FilterAutomation) {
 
 The following code snippet shows an example of a node automation table and an array of property sets:
 
-```
+```cpp
 //
 //  RF tuner node property set supported
 //

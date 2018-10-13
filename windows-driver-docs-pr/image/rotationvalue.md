@@ -25,7 +25,7 @@ The required **RotationValue** element specifies a single rotation value support
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:RotationValue>
   text
 </wscn:RotationValue>
@@ -72,7 +72,7 @@ The **RotationValue** element specifies the number of degrees that the scanner s
 
 All WSD Scan Services must support the value of 0. You can both extend and subset the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**RotationsSupported**](rotationssupported.md)

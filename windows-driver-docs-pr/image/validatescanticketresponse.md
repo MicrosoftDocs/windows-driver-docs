@@ -25,7 +25,7 @@ The required **ValidateScanTicketResponse** operation notifies the client whethe
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ValidateScanTicketResponse>
   child elements
 </wscn:ValidateScanTicketResponse>
@@ -70,7 +70,7 @@ Examples
 
 The following code example shows a response to a client when it has submitted a valid scan ticket.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
@@ -110,7 +110,7 @@ The following code example shows a response to a client when it has submitted a 
 
 The following code example shows a response to a client when it has submitted an invalid scan ticket.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
@@ -172,25 +172,12 @@ The following code example shows a response to a client when it has submitted an
     </wscn:ValidateScanTicketResponse>
   </soap:Body>
 </soap:Envelope>
-
-
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**ScanTicket**](scanticket.md)
 
 [**ValidateScanTicketRequest**](validatescanticketrequest.md)
 
 [**ValidationInfo**](validationinfo.md)
-
- 
-
- 
-
-
-
-
-
-

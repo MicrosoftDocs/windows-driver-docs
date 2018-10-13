@@ -39,7 +39,7 @@ Typically, a BDA minidriver's filter object intercepts and supplies methods for 
 
 The following code snippet shows how to intercept method requests of the KSMETHODSETID\_BdaChangeSync method set using an internal method:
 
-```
+```cpp
 //
 //  BDA Change Sync Method Set
 //
@@ -69,7 +69,7 @@ DEFINE_KSMETHOD_TABLE(BdaChangeSyncMethods)
 
 The following code snippet shows how the internal start-changes method in a BDA minidriver resets pending resource changes after the minidriver calls the **BdaStartChanges** support function to initiate the setting of new BDA topology changes:
 
-```
+```cpp
 //
 // StartChanges ()
 //

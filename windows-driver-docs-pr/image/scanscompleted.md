@@ -25,7 +25,7 @@ The required **ScansCompleted** element specifies the number of images that are 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScansCompleted>
   text
 </wscn:ScansCompleted>
@@ -78,7 +78,7 @@ If a sheet of media is scanned multiple times, the WSD Scan Service must increme
 
 The **ScansCompleted** count might not be known until the scanner has completed processing the job. The WSD Scan Service must update the **ScansCompleted** element when more exact information is available.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**JobEndState**](jobendstate.md)

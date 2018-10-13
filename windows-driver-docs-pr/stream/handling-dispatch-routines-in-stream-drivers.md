@@ -27,7 +27,7 @@ If the driver does not provide a [**KSDEVICE\_DESCRIPTOR**](https://docs.microso
 
 To install your own *AddDevice* handler:
 
-```
+```cpp
 DriverObject->DriverExtension->AddDevice=MyAddDevice();
 ```
 We recommended that AVStream minidrivers use the functionality provided by [**KsInitializeDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksinitializedriver), rather than override the default *AddDevice* routine supplied by the class driver.
@@ -64,7 +64,7 @@ For more information, see the [DRIVER_CANCEL](https://msdn.microsoft.com/library
 
 ## KsDefaultDispatchPnp function
 
-```
+```cpp
 KSDDKAPI
 _Dispatch_type_(IRP_MJ_PNP) DRIVER_DISPATCH KsDefaultDispatchPnp;
 ```
@@ -80,7 +80,7 @@ For more information, see the [DRIVER_DISPATCH](https://docs.microsoft.com/windo
 
 ## KsDefaultDispatchPower function
 
-```
+```cpp
 KSDDKAPI
 _Dispatch_type_(IRP_MJ_POWER) DRIVER_DISPATCH KsDefaultDispatchPower;
 ```
@@ -93,7 +93,7 @@ For more information, see the [DRIVER_DISPATCH](https://docs.microsoft.com/windo
 
 ## KsDefaultForwardIrp routine
 
-```
+```cpp
 KSDDKAPI
 _Dispatch_type_(IRP_MJ_SYSTEM_CONTROL)
 _Dispatch_type_(IRP_MJ_DEVICE_CONTROL)

@@ -25,7 +25,7 @@ The required **MediaFrontImageInfo** element contains the image information for 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:MediaFrontImageInfo>
   child elements
 </wscn:MediaFrontImageInfo>
@@ -80,7 +80,7 @@ There are no attributes.
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**BytesPerLine**](bytesperline.md)

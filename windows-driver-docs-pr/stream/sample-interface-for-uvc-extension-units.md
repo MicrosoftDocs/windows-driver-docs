@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 This topic contains code for a sample *interface.idl* that you can use to support Extension Units.
 
-```
+```IDL
 // IExtensionUnit interface
 import "unknwn.idl";
 [

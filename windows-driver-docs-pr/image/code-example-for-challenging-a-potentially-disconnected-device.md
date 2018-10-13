@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The following code example shows a call to the **RegisterDeviceToChallenge** function (which is listed in the code example in [Sample Code for Implementing Helper Methods](code-example-for-implementing-helper-methods.md)) to challenge a potentially disconnected device.
 
-```
+```cpp
 HRESULT hr = S_OK;
 
 if (SUCCEEDED(hr))

@@ -283,7 +283,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_IPA\_COMPRESSION**](wia-ipa-compression.md)

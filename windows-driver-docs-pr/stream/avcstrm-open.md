@@ -74,7 +74,7 @@ Possible error return values include:
 
 This function uses the **OpenStruct** member of the **CommandData** union in the AVC\_STREAM\_REQUEST\_BLOCK structure as shown below.
 
-```
+```cpp
 typedef struct _AVC_STREAM_REQUEST_BLOCK {
   ULONG  SizeOfThisBlock;
   ULONG  Version;
@@ -115,7 +115,7 @@ In order to make an isochronous connection, the CIP headers and subunit dependen
 
 The following is an example of the MPEG2TS format information for receiving data:
 
-```
+```cpp
 //
 // MPEG2TS
 //

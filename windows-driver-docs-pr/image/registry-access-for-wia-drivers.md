@@ -25,7 +25,7 @@ Drivers often need write access to their registry key outside of **IStiUSD::Init
 
 The following code example illustrates using the **DeviceData** registry subkey.
 
-```
+```cpp
 STDMETHODIMP CWIADevice::Initialize(
   PSTIDEVICECONTROL   pIStiDevControl,
   DWORD               dwStiVersion,

@@ -22,7 +22,7 @@ The following code example contains the declaration of a sample class (CWSDDevic
 
 The code example also shows methods to initialize these members and methods to read device properties from the current Function Instance property store. The **CWSDDevice::InitializeConnection** method illustrates the procedure that is described in [Obtaining a Function Instance Object](obtaining-a-function-instance-object.md) to obtain the current Function Instance object that represents the current web services scanner device instance.
 
-```
+```cpp
 /**************************************************************************\
 * Sample CWSDDevice class that encapsulates the device communication interface 
 \**************************************************************************/

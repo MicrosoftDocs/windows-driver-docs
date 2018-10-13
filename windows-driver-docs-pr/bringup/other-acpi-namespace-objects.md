@@ -187,7 +187,7 @@ For more information, see [Identifying the Location of Internal Cameras](http://
 
 The following ASL code example describes a USB webcam that is connected directly to USB port 3.
 
-```
+```asl
 Device (EHCI) {
     ...  // Objects required for EHCI devices
     Device {RHUB) {         // the Root HUB
@@ -203,7 +203,7 @@ Device (EHCI) {
 
 The following ASL code example describes a USB composite device that implements a webcam as Function 2.
 
-```
+```asl
 Device (EHCI) {
     ...  // Objects required for EHCI devices
     Device {RHUB) {
@@ -224,9 +224,9 @@ Device (EHCI) {
 }  // End of EHCI device
 ```
 
-The following ASL code example describes a webcam connected over I�C.
+The following ASL code example describes a webcam connected over I2C.
 
-```
+```asl
 Device (GPU0) {
     ... // Other objects required for graphics devices
     Name (_DOD, Package ()  // Identifies the children of this graphics device.
@@ -256,10 +256,10 @@ Device (GPU0) {
 } // End of GPU0 device
 ```
 
-## HID-over-I�C devices
+## HID-over-I2C devices
 
 
-Windows includes a class driver for Human Interface Devices (HID). This driver enables generic support for a broad range of input devices (such as touch panels, keyboards, mice, and sensors). On SoC platforms, HID devices can be connected to the platform over I�C, and are enumerated by ACPI. For compatibility with the HID class support in Windows, the following namespace objects are used:
+Windows includes a class driver for Human Interface Devices (HID). This driver enables generic support for a broad range of input devices (such as touch panels, keyboards, mice, and sensors). On SoC platforms, HID devices can be connected to the platform over I2C, and are enumerated by ACPI. For compatibility with the HID class support in Windows, the following namespace objects are used:
 
 -   A vendor-specific \_HID
 -   A \_CID of PNP0C50
@@ -350,11 +350,3 @@ A convertible-PC-sensing device interrupts the system when a convertible PC swit
 -   A \_CRS with one ActiveBoth interrupt
 
     Interrupt cannot be wake-capable.
-
-
-
-
-
-
-
-

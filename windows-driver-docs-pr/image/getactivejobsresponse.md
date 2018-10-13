@@ -25,7 +25,7 @@ The required **GetActiveJobsResponse** element returns a summary of job-related 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:GetActiveJobsResponse>
   child elements
 </wscn:GetActiveJobsResponse>
@@ -74,7 +74,7 @@ Examples
 
 The following code example shows how to return the fact that there are no active scan jobs.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
@@ -104,7 +104,7 @@ The following code example shows how to return the fact that there are no active
 
 The following code example reports two active scan jobs.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
@@ -152,7 +152,7 @@ The following code example reports two active scan jobs.
 </soap:Envelope>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ActiveJobs**](activejobs.md)

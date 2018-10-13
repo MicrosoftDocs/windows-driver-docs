@@ -38,7 +38,7 @@ The remainder of this topic includes a sample implementation of these three meth
 
 To use this code, you must include the following header files*:*
 
-```
+```cpp
 #include <initguid.h>
 #include <ksopmapi.h>
 #include "testcert.h"
@@ -50,13 +50,13 @@ To use this code, you must include the following header files*:*
 
 You must also add *Ksecdd.lib* to the TARGETLIBS section of your *Sources* file:
 
-```
+```make
 $(DDK_LIB_PATH)\ksecdd.lib
 ```
 
 The sample handlers follow:
 
-```
+```cpp
 class CBaseKsFilter{
 protected:
  
@@ -819,7 +819,7 @@ DEFINE_KSAUTOMATION_TABLE(SHEDFilterAutomationTable)
 
 *Testcert.h* appears as follows:
 
-```
+```cpp
 #ifndef _TESTCERT_H_
 #define _TESTCERT_H_
 

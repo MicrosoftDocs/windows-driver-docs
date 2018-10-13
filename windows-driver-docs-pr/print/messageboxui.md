@@ -123,7 +123,7 @@ The following code example shows how to notify the printer driver that the **OK*
   </asyncPrintUIResponse>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**bitmap**](bitmap.md)

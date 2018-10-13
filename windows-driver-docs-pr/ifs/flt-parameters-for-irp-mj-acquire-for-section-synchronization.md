@@ -48,7 +48,7 @@ Members
   * **SyncTypeOther**
 
 **PageProtection**  
-* Specifies the type of page protection requested for the section. Must be zero if SyncType**SyncType** is SyncTypeOther. Otherwise, one of the following flags, possibly combined with PAGE\_NOCACHE:
+* Specifies the type of page protection requested for the section. Must be zero if **SyncType** is SyncTypeOther. Otherwise, one of the following flags, possibly combined with PAGE\_NOCACHE:
 
   * PAGE\_READONLY
 
@@ -59,7 +59,7 @@ Members
   * PAGE\_EXECUTE
 
 **OutputInformation**
-*  Specifies information describing the attributes of the section that is being created.
+*  A [**FS_FILTER_SECTION_SYNC_OUTPUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_fs_filter_section_sync_output) structure that specifies information describing the attributes of the section that is being created.
 
 ## Remarks
 

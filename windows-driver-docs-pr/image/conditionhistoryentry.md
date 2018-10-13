@@ -25,7 +25,7 @@ The required **ConditionHistoryEntry** element provides details about one of the
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ConditionHistoryEntry wscn:Id="..."
   Id = "xs:string">
   child elements
@@ -118,7 +118,7 @@ The WSD Scan Service specifies a unique identifier in the **Id** attribute for t
 
 You cannot extend the allowed values for **Id**.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ClearTime**](cleartime.md)

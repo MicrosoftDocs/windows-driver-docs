@@ -25,7 +25,7 @@ The required **ClientContext** element specifies a client-specific string.
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ClientDisplayName>
   text
 </wscn:ClientDisplayName>
@@ -82,7 +82,7 @@ When the parent element is [**ScanAvailableEvent**](scanavailableevent.md), **Cl
 
 The **&lt;wse:Subscribe&gt;** and **&lt;wse:SubscribeResponse&gt;** elements are described in the specification.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DestinationResponse**](destinationresponse.md)

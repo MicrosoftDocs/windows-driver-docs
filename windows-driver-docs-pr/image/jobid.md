@@ -25,7 +25,7 @@ The required **JobId** element uniquely identifies a job within a scanner.
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobId>
   text
 </wscn:JobId>
@@ -92,7 +92,7 @@ The WSD Scan Service returns a **JobId** element to a client through a [**Create
 
 You cannot extend the allowed values for the **JobId** element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CancelJobRequest**](canceljobrequest.md)

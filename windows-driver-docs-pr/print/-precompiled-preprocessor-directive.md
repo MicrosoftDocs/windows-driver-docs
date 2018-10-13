@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 # \#PreCompiled Preprocessor Directive
 
 
-```
+```GDL
 #PreCompiled:  BOOL
 ```
 
@@ -37,11 +37,3 @@ Files that are marked as precompiled will be parsed in a root context. That is, 
 Also note that precompiled files must be unique and they must be independent of the host that includes them. Precompiled files do not rely on any included content that the host file references or any content that might be defined in the host file.
 
 This preprocessor directive is new for GDL.
-
- 
-
- 
-
-
-
-

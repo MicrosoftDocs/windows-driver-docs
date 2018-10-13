@@ -25,7 +25,7 @@ The required **CompressionQualityFactorSupported** element specifies the range o
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:CompressionQualityFactorSupported>
   child elements
 </wscn:CompressionQualityFactorSupported>
@@ -86,7 +86,7 @@ The compression quality factor is an integer value that you use for a lossy comp
 
 The minimum and maximum compression quality factors that the scan device supports are specified in the [**MinValue**](minvalue.md) and [**MaxValue**](maxvalue.md) elements, respectively. **MinValue** and **MaxValue** must be integers from 1 through 100. A value of 100 means that the device should use the least amount of compression that it supports to produce the highest quality image. Currently, JPEG compression is the only supported lossy compression type.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DeviceSettings**](devicesettings.md)

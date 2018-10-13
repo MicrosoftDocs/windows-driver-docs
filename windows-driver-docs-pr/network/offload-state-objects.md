@@ -222,7 +222,7 @@ A TCP state connection object contains the following constant, cached, and deleg
 </tr>
 <tr class="odd">
 <td align="left"><p><em>HashValue</em></p></td>
-<td align="left"><p>A 32-bit hash value that the offload target uses for [NDIS 6.0 Receive Side Scaling](https://msdn.microsoft.com/library/windows/hardware/ff567232) processing if the offload target supports RSS</p></td>
+<td align="left"><p>A 32-bit hash value that the offload target uses for [Receive Side Scaling](ndis-receive-side-scaling2.md) processing if the offload target supports RSS</p></td>
 </tr>
 </tbody>
 </table>

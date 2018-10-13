@@ -27,7 +27,7 @@ The USB Device Working Group has assigned class ID 0x06 for still image cameras.
 
 Example INF file for a PTP camera:
 
-```
+```INF
 ; PTPCAMERA.INF  -- PTP Camera setup file
 ; Copyright (c) 2002 PTP Camera Company
 ; Manufacturer:  PTP Camera Company

@@ -35,7 +35,7 @@ It is important to note that a WIA driver should communicate with the hardware o
 
 The following example shows an implementation of the [**IWiaMiniDrv::drvReadItemProperties**](https://msdn.microsoft.com/library/windows/hardware/ff545005) method:
 
-```
+```cpp
 HRESULT _stdcall CWIADevice::drvReadItemProperties(
   BYTE           *pWiasContext,
   LONG           lFlags,

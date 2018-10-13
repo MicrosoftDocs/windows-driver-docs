@@ -25,7 +25,7 @@ The optional **ScanRegionXOffset** element specifies the distance from the fast 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScanRegionXOffset wscn:MustHonor=""                        wscn:Override=""                        wscn:UsedDefault=""
   MustHonor = "xs:string"
   Override = "xs:string"
@@ -115,7 +115,7 @@ The client can specify the optional **MustHonor** attribute only when the **Scan
 
 The WSD Scan Service can specify the optional **Override** and **UsedDefault** attributes only when the **ScanRegionXOffset** element is contained within a **DocumentFinalParameters** hierarchy. For more information about **Override** and **UsedDefault** and their usage, see [**DocumentFinalParameters**](documentfinalparameters.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)

@@ -25,7 +25,7 @@ The optional **ADFBack** element describes the capabilities of the back side of 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ADFBack>
   child elements
 </wscn:ADFBack>
@@ -91,7 +91,7 @@ Remarks
 
 The WSD Scan Service should specify the **ADFBack** elements and its children only if the scanner's ADF supports duplexing.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ADF**](adf.md)

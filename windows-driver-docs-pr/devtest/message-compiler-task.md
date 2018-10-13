@@ -34,7 +34,7 @@ The following example shows the command-line invocation:
 mc.exe –s "c:\test\" a.mc
 ```
 
-In the example above, MSBuild invokes mc.exe on on the file a.mc, with the –s switch because the metadata GenerateBaselineResource is set to true. Also, MSBuild uses the BaselineResourcePath metadata to specify the argument for –s switch.
+In the example above, MSBuild invokes mc.exe on the file a.mc, with the –s switch because the metadata GenerateBaselineResource is set to true. Also, MSBuild uses the BaselineResourcePath metadata to specify the argument for –s switch.
 
 <table>
 <colgroup>

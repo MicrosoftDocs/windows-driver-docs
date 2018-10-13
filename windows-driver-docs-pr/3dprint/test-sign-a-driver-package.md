@@ -23,7 +23,7 @@ Use the following steps to test-sign a driver package using a test certificate:
 
 1.  Create a new certificate file:
 
-    ``` syntax
+    ```console
     makecert -r -pe -ss TestCertStoreName -n "CN=WSD FabrikamV4 Driver Testing Cert" CertFileName.cer -sv CertFile.pvk
     ```
 
@@ -31,7 +31,7 @@ Use the following steps to test-sign a driver package using a test certificate:
 
 2.  Use the pvk file to create a pfx file:
 
-    ``` syntax
+    ```console
     pvk2pfx.exe /pvk CertFile.pvk /spc CertFileName.cer /pfx CertPfx.pfx
     ```
 
@@ -41,7 +41,7 @@ Use the following steps to test-sign a driver package using a test certificate:
 
     This enables the driver to pass signature validation during plug and play install. Without this step the driver will not pass this check and will fail to auto install the printer.
 
-    ``` syntax
+    ```console
     CertMgr /add CertFileName.cer /s /r localMachine root
     CertMgr /add CertFileName.cer /s /r localMachine trustedpublisher
     ```

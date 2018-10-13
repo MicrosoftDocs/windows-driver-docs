@@ -25,7 +25,7 @@ The required **ScannerConfiguration** element is a collection of elements that d
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScannerConfiguration>
   child elements
 </wscn:ScannerConfiguration>
@@ -86,7 +86,7 @@ There are no attributes.
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ADF**](adf.md)

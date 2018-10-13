@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The segmentation filter performs region detection on the stream (*pImageStream*) passed into the **DetectSubregions** method. For information on the **CreateSegmentationFilter** function, which is used in this example, see the **IWiaItem2::GetExtension** method in the Microsoft Windows SDK documentation.
 
-```
+```cpp
 HRESULT
 DetectSubregions(
    IN IStream   *pImageStream,

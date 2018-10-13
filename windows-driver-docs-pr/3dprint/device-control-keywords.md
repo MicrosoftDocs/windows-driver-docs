@@ -60,7 +60,7 @@ The psk3d:Job3DOutputArea Property SHOULD be used to define the size of the area
 
 Job3DOutputArea keyword usage
 
-```
+```xml
 <psf:Property name="psk3d:Job3DOutputArea">
     <psf:Property name="psk3d:Job3DOutputAreaWidth">
         <psf:Value xsi:type="xsd:integer">285000</psf:Value>
@@ -301,7 +301,7 @@ The device MAY identify a workflow app other than the default (the example conta
 
 Job3DAppName keyword usage
 
-```
+```xml
 <psf:Property name="psk3d:Job3DAppName">
     <psf:Value xsi:type="xsd:string">Microsoft.3DBuilder_8wekyb3d8bbwe</psf:Value>
 </psf:Property>
@@ -351,7 +351,7 @@ The device MAY identify a UWP device app, which the print dialog will launch whe
 
 Job3DWSDAPackageFamilyName keyword usage
 
-```
+```xml
 <psf:Property name="psk3d:Job3DWSDAPackageFamilyName">
     <psf:Value xsi:type="xsd:string"> </psf:Value>
 </psf:Property>
@@ -401,7 +401,7 @@ The device MUST identify the version of 3MF file that it expects to receive from
 
 Job3D3MFVersion keyword usage
 
-```
+```xml
 <psf:Property name="psk3d:Job3D3MFVersion">
     <psf:Value xsi:type="xsd:string"> http://schemas.microsoft.com/3dmanufacturing/core/2015/02</psf:Value>
 </psf:Property>
@@ -451,7 +451,7 @@ The device MAY specify 3MF extensions (by namespace, forming a space-delimited l
 
 Job3D3MFExtensions keyword usage
 
-```
+```xml
 <psf:Property name="psk3d:Job3D3MFExtensions">
     <psf:Value xsi:type="xsd:string"> http://schemas.microsoft.com/3dmanufacturing/material/2015/02</psf:Value>
 </psf:Property>
