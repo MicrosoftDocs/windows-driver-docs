@@ -29,7 +29,7 @@ ms.localizationpriority: medium
 <tr class="odd">
 <td align="left"><p>IEEE 1667</p></td>
 <td align="left"><p>A standard protocol for secure authentication and creation of trust between a secure host and a directly attached Transient Storage Device (TSD), such as a USB flash drive, portable hard drive, or cellular phone.&quot;</p>
-<p>For more information, see [http://standards.ieee.org/announcements/pr_IEEE1667_new.html](http://go.microsoft.com/fwlink/p/?linkid=127997) .</p></td>
+<p>For more information, see [http://standards.ieee.org/announcements/pr_IEEE1667_new.html](http://go.microsoft.com/fwlink/p/?linkid=127997).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>1667 authentication silo</p></td>
@@ -61,7 +61,7 @@ ms.localizationpriority: medium
 </tr>
 <tr class="odd">
 <td align="left"><p>Authorization</p></td>
-<td align="left"><p>Indication that concomitant access to the governed resource is authorized after a device or host identity has been authenticated. Host-to-device authentication governs authorized access to the user data portion of the associated ACT, whereas successful device-to-host authentication authorizes the connected data channel between the device and the host.</p></td>
+<td align="left"><p>An indication that concomitant access to the governed resource is authorized after a device or host identity has been authenticated. Host-to-device authentication governs authorized access to the user data portion of the associated ACT, whereas successful device-to-host authentication authorizes the connected data channel between the device and the host.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Certificate silo (Cert Silo)</p></td>
