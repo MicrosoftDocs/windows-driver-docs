@@ -2,7 +2,7 @@
 title: WinDbg Preview - Command line startup options
 description: This section covers the command line startup options for the WinDbg Preview debugger.
 ms.author: domars
-ms.date: 08/10/2018
+ms.date: 10/12/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -22,7 +22,7 @@ After WinDbg Preview is installed, WinDbgX.exe is available to run from any dire
 
 ## Command line startup options
 
-```
+```dbgsyntax
 WinDbgX [options]
 ```
 

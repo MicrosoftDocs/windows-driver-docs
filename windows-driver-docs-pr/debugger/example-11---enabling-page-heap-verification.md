@@ -3,7 +3,7 @@ title: Example 11 Enabling Page Heap Verification
 description: Example 11 Enabling Page Heap Verification
 ms.assetid: 5d0303a9-29f7-4759-ae7b-ad670eaee0ee
 ms.author: domars
-ms.date: 11/28/2017
+ms.date: 10/12/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -20,13 +20,13 @@ The following commands enable full and standard page heap verification for myapp
 
 The first command enables *standard* page heap verification for myapp.exe. It uses the **/p** parameter to enable page heap for a process. By default, **/p** enables standard page heap.
 
-```
+```console
 gflags /p /enable myapp.exe 
 ```
 
 The following commands enable *full* page heap verification for the myapp.exe program. Although these commands create different settings in the registry, they are all functionally equivalent to selecting the **Enable page heap** check box for the myapp.exe image file in the **Global Flags** dialog box. These methods can be used interchangeably.
 
-```
+```console
 gflags /p /enable myapp.exe /full
 gflags /i myapp.exe +hpa
 gflags /i myapp.exe +02000000
@@ -34,7 +34,7 @@ gflags /i myapp.exe +02000000
 
 The following commands disable full or standard page heap verification for the myapp.exe program, regardless of the command or dialog box method used to enable page heap verification.
 
-```
+```console
 gflags /p /disable myapp.exe
 gflags /i myapp.exe -hpa
 gflags /i myapp.exe -02000000

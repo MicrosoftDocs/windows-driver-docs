@@ -24,7 +24,7 @@ First-time users of WinDbg should begin with the [Debugging Using WinDbg](debugg
 
 The WinDbg command line uses the following syntax:
 
-```
+```dbgsyntax
 windbg [ -server ServerTransport | -remote ClientTransport ] [-lsrcpath ]
    [ -premote SmartClientTransport ] [-?] [-ee {masm|c++}] 
    [-clines lines] [-b] [-d] [-aExtension]  
