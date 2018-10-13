@@ -44,7 +44,7 @@ Exclusive access mode has the following characteristics:
 
 -   The system fails requests for access from other applications.
 
--   The system processes Plug and Play (PnP) and power I/O request packets (IRPs) in the typical way.
+-   The system processes Plug and Play (PnP) and power I/O request packets (IRPs) in a typical way.
 
 -   Media change notification is disabled for the device.
 
