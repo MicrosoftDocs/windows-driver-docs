@@ -550,6 +550,8 @@
       href: supporting-opengl-enhancements.md
     - name: "Direct3D Runtime Functions Called by User Mode Display Drivers"
       href: direct3d-runtime-functions-called-by-user-mode.md
+    - name: "Direct3D Functions Implemented by User Mode Display Drivers"
+      href: direct3d-functions-implemented-by-user-mode.md
   - name: "Monitor Drivers"
     href: monitor-drivers.md
     items: 

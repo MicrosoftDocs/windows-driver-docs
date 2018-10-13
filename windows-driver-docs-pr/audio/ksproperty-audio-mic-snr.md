@@ -1,6 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_MIC\_SNR
-description: The KSPROPERTY\_AUDIO\_MIC\_SNR property specifies the microphone signal to noise ratio (SNR) measured in in dB units.
+description: The KSPROPERTY\_AUDIO\_MIC\_SNR property specifies the microphone signal to noise ratio (SNR) measured in dB units.
 ms.assetid: 1DF088D0-7C0D-42B6-B7FA-2E714C70DAA4
 keywords: ["KSPROPERTY_AUDIO_MIC_SNR Audio Devices"]
 topic_type:
@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 # KSPROPERTY\_AUDIO\_MIC\_SNR
 
 
-The KSPROPERTY\_AUDIO\_MIC\_SNR property specifies the microphone signal to noise ratio (SNR) measured in in dB units.
+The KSPROPERTY\_AUDIO\_MIC\_SNR property specifies the microphone signal to noise ratio (SNR) measured in dB units.
 
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 

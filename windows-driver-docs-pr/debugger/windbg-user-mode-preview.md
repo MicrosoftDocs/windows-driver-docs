@@ -36,7 +36,7 @@ Browse to the desired executable in the provided file dialog and open it.
 
 ## Launch Executable (advanced)
 
-Use this option to start an executable and attach to it it using a set of text boxes with advanced options. 
+Use this option to start an executable and attach to it using a set of text boxes with advanced options. 
 
 Specify the following options:
 - Path to the executable, such as *C:\Windows\notepad.exe*
