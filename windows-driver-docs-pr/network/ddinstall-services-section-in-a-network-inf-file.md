@@ -36,7 +36,7 @@ For more information, see [**INF AddService Directive**](https://msdn.microsoft.
 
 The following is an example of a *DDInstall*.**Services** section, a *service-install-section*, an *error-log-install-section*, and an *add-registry-section* that is referenced by an **AddReg** directive in the *error-log-install-section*:
 
-```
+```cpp
 [a1.ndi.NT.Services]
 AddService = a1, 2, a1.AddService, a1.AddEventLog
  

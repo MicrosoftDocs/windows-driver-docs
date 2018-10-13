@@ -27,7 +27,7 @@ All standard variables are stored as DWORD integers.
 
 The following [printer command](printer-commands.md) entry specifies the command string that is sent to an HP LaserJet 4P when a block of raster data is ready:
 
-```
+```cpp
 *Command: CmdSendBlockData: "<1B>*b" %d{NumOfDataBytes} "W"
 ```
 

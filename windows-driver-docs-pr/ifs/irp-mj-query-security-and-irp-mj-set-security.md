@@ -26,7 +26,7 @@ ms.localizationpriority: medium
 
 Fortunately for a file system, the actual storage and retrieval of security descriptors is relatively opaque. This is due to the nature of security descriptors in a self-relative format that does not require any understanding of the descriptor by the file system. Thus, processing a query operation is normally a very simple exercise. Here is an example from a file system implementation:
 
-```
+```cpp
 NTSTATUS FsdCommonQuerySecurity( PIRP_CONTEXT IrpContext)
 {
     NTSTATUS status = STATUS_SUCCESS;
@@ -75,7 +75,7 @@ The specifics of how the file system loads a security descriptor from storage (t
 
 Storing a security descriptor is a bit more involved. File systems may need to determine whether the security descriptor matches an existing security descriptor if the file system supports security descriptor sharing. For non-matching security descriptors, the file system may need to allocate new storage for this new security descriptor. Below is a sample routine for replacing the security descriptor on a file.
 
-```
+```cpp
 NTSTATUS FsdCommonSetSecurity(PIRP_CONTEXT IrpContext)
 {
     NTSTATUS status = STATUS_SUCCESS;

@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The DeviceInfo section consists of the [DeviceInfo](deviceinfo.md) property and several child values that provide information about the overall device.
 
-```
+```cpp
 Printer
  DeviceInfo
  FriendlyName

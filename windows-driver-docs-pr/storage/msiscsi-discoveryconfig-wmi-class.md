@@ -15,7 +15,7 @@ The MSiSCSI\_DiscoveryConfig WMI class reports what methods an initiator uses to
 
 This class is defined as follows in *Config.mof*.
 
-```
+```cpp
 class MSiSCSI_DiscoveryConfig {
   [key] string  InstanceName;
   boolean  Active;

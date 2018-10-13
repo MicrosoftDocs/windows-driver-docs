@@ -33,7 +33,7 @@ You can use WDF debugger extensions to view and save the WDF log during interact
 
 2.  Load the [Wdfkd.dll extension library](debugger-extensions-for-kmdf-drivers.md) into your debugger. If you are using the kernel debugger, you can do this by using the [**.load**](https://msdn.microsoft.com/library/windows/hardware/ff563964) command. To load the correct version of Wdfkd.dll you need to specify the fully qualified path to the DLL. For example, you would use the following path on an x86-based debugger host machine:
 
-    ```
+    ```cpp
     .load "C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\winext\wdfkd.dll"
     ```
 
@@ -47,7 +47,7 @@ You can use WDF debugger extensions to view and save the WDF log during interact
 
     Because .tmf files are version specific, you must specify a .tmf file that corresponds to the version of the framework's runtime library that is currently running. For example, if KMDF version 1.9 is running on the host machine:
 
-    ```
+    ```cpp
     !wdftmffile c:\WinDDK\<version>\tools\tracing\x86\wdf01009.tmf
     ```
 
@@ -63,13 +63,13 @@ Each line in the framework's log is preceded by a string that is called the [tra
 
 To set the environment variable, use a command similar to the following:
 
-```
+```cpp
 Set TRACE_FORMAT_PREFIX=%2!s!: %!FUNC!: %8!04x!.%3!04x!: %4!s!:
 ```
 
 This command sets the trace message prefix to the following:
 
-```
+```cpp
 SourceFile_LineNumber: FunctionName: ProcessID.ThreadID: SystemTime
 ```
 

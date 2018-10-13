@@ -15,7 +15,7 @@ An HBA miniport driver that supports the T11 committee's *Fibre Channel HBA API*
 
 The HBAFCPScsiEntry class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class HBAFCPScsiEntry {
   [HBAType("HBA_FCPID"), WmiDataId(1)] HBAFCPID  FCPId;
   [HBAType("HBA_LUID"), WmiDataId(2)] uint8  Luid[256];

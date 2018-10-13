@@ -82,7 +82,7 @@ This method obtains a list of the names of the paper forms that are currently av
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::MediaReady** property can be queried.
 
-```
+```cpp
     Dim objPrinter, MediaReadyArray
     strPrinter = Session("MS_printer")
     Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")

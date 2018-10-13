@@ -72,7 +72,7 @@ G. End Synchronization (KeSetEvent(PagingCountEvent, ...)).
 
 The sections marked by letters (*//A*, *//B*, etc.) in the following code sample map to the letters of the outline above.
 
-```
+```cpp
 case DeviceUsageTypePaging: { 
     BOOLEAN setPageable = FALSE; 
     BOOLEAN addPageFile = irpStack -> 

@@ -34,7 +34,7 @@ A driver or other system component sends this IRP at IRQL &lt; DISPATCH\_LEVEL i
 
 The **Parameters.ReadWriteConfig** member of the [**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659) structure is itself a structure containing the following information:
 
-```
+```cpp
 ULONG WhichSpace;
 PVOID Buffer;
 ULONG Offset;

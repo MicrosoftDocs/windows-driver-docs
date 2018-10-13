@@ -15,7 +15,7 @@ A WMI client uses the MSFC\_HBAPortAttributesResults WMI class to query an HBA m
 
 The MSFC\_HBAPortAttributesResults class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MSFC_HBAPortAttributesResults {
     [HBAType("HBA_WWN"), WmiDataId(1) ] uint8  NodeWWN[8];
     [HBAType("HBA_WWN"), WmiDataId(2) ] uint8  PortWWN[8];

@@ -36,7 +36,7 @@ In the preceding figure, the starting point (indicated by the **fpStart** member
 
 The following pseudocode shows how a [**VIDEOMEMORY**](https://msdn.microsoft.com/library/windows/hardware/ff570171) structure is set up for rectangular memory:
 
-```
+```cpp
 /*
  * video memory pool usage
  */
@@ -50,7 +50,7 @@ The only difference between the code for rectangular memory and its linear count
 
 The following pseudocode shows how rectangular memory heaps are set up:
 
-```
+```cpp
 /*
  * video memory pool information
  */

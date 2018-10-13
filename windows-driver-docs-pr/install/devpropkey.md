@@ -37,7 +37,7 @@ A DEVPROPGUID-typed value that specifies a property category.
 
 The DEVPROPGUID data type is defined as:
 
-```
+```cpp
 typedef GUID  DEVPROPGUID, *PDEVPROPGUID;
 ```
 
@@ -46,7 +46,7 @@ A DEVPROPID-typed value that uniquely identifies the property within the propert
 
 The DEVPROPID data type is defined as:
 
-```
+```cpp
 typedef ULONG DEVPROPID, *PDEVPROPID;
 ```
 

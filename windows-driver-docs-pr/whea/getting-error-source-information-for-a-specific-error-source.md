@@ -24,7 +24,7 @@ A user-mode application can get information about a particular [error source](ha
 
 The following code example shows how to get the error source information for a particular error source.
 
-```
+```cpp
 IWbemServices *pIWbemServices;
 ULONG ErrorSourceID;
 BSTR ClassName;

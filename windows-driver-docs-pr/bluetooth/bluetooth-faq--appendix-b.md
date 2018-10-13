@@ -27,7 +27,7 @@ This INF file can be used to install the device on the following versions of Win
 
 For an explanation of the highlighted sections and directives, see the numbered notes after the following sample:
 
-```
+```cpp
 ; XYZ Vendor INF File for Bluetooth Radio
 ;
 ; A sample INF for a stand-alone Bluetooth radio that does not

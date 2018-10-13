@@ -116,7 +116,7 @@ The method does not currently support conversions from data types other than tho
 
 The [**ISNMP::Open**](isnmp-open.md) method must be called before the `ISNMP::GetAsByte` method can be called.
 
-```
+```cpp
     Dim StrIP, strCommunity, objSNMP, OIDValue
     strIP = Session("MS_IPaddress")
     strCommunity = Session ("MS_Community")

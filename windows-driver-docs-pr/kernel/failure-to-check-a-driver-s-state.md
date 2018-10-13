@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 In the following example, the driver uses the **ASSERT** macro to check for the correct device state in the checked build, but does not check device state in the free build:
 
-```
+```cpp
    case IOCTL_WAIT_FOR_EVENT:
 
       ASSERT((!Extension->WaitEventIrp));

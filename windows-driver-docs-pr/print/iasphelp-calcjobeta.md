@@ -89,7 +89,7 @@ Before **CalcJobETA** is called, the value of any of these properties is zero. I
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **CalcJobETA** method can be called.
 
-```
+```cpp
     Dim objPrinter
     strPrinter = Session("MS_printer")
     Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")

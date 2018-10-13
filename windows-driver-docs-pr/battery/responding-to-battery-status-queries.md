@@ -25,7 +25,7 @@ ms.localizationpriority: medium
 
 The battery class driver calls the miniclass driver's [*BatteryMiniQueryStatus*](https://msdn.microsoft.com/library/windows/hardware/ff536274) routine to get the power state, capacity, voltage, and discharge rate of a battery. The following is the prototype for this routine:
 
-```
+```cpp
 typedef
 NTSTATUS
 (*BCLASS_QUERY_STATUS)(

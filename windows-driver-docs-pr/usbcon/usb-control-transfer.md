@@ -561,7 +561,7 @@ This procedure shows how a client driver can send a control transfer. In this ex
 
 This code example sends a control transfer request to a USB device to retrieve its firmware version. The request is sent synchronously and the client driver specifies a relative timeout value of 5 seconds (in 100-nanosecond units). The driver stores the received response in the driver-defined device context.
 
-```
+```cpp
 enum {   
     USBFX2_GET_FIRMWARE_VERSION = 0x1,  
 ....
@@ -674,7 +674,7 @@ This procedure shows how a client driver can send a control transfer for a GET\_
 
 This code example sends a control transfer request to a get the status of the device. The example sends the request synchronously by calling a helper method named SendControlTransferSynchronously.
 
-```
+```cpp
 HRESULT  
 CDevice::GetDeviceStatus ()  
 {  
@@ -727,7 +727,7 @@ CDevice::GetDeviceStatus ()
 
 The following code example shows the implementation of the helper method named SendControlTransferSynchronously. This method sends a request synchronously.
 
-```
+```cpp
 HRESULT  
 CDevice::SendControlTransferSynchronously(  
     _In_ PWINUSB_SETUP_PACKET SetupPacket,  

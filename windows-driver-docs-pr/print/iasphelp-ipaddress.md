@@ -85,7 +85,7 @@ The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Ia
 
 If the printer is not supported by the TCP/IP port monitor, the returned string is empty.
 
-```
+```cpp
     Dim objPrinter, PrinterIP
     strPrinter = Session("MS_printer")
     Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")

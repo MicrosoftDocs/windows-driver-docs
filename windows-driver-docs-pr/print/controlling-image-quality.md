@@ -79,7 +79,7 @@ where *DefaultQuality* is one of `DRAFTQUALITY`, `BETTERQUALITY`, or `BESTQUALIT
 
 These GPD file entries can be associated with any option of the `ColorMode` and `MediaType` features. Typically, they are placed in [conditional statements](conditional-statements.md), as illustrated in the following example.
 
-```
+```cpp
 *switch: ColorMode {
     *case: Mono {
         *BestQualitySettings: LIST(ColorMode.Mono,
@@ -109,7 +109,7 @@ As illustrated in the example, a good strategy is to specify one \***Case** entr
 
 Following is a more complex example, which ties image quality to both color mode and media type:
 
-```
+```cpp
 *switch: Colormode {
     *case: Mono {
     *switch: MediaType {

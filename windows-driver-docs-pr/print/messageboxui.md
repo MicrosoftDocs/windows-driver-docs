@@ -110,7 +110,7 @@ Examples
 
 The following code example shows how to notify the printer driver that the **OK** button was clicked on the message box.
 
-```
+```cpp
 <?xml version="1.0" ?> 
   <asyncPrintUIResponse xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/response">
     <v1>

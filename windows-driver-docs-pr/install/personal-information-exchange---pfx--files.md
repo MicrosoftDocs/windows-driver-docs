@@ -19,7 +19,7 @@ If the CA issued an *.spc* and its keys in non-*.pfx* files, you must convert an
 
 The following command-line example converts a *.pvk* file that is named *abc.pvk* and a *.spc* that is named *abc.spc* into a *.pfx* file that is named *abc.pfx*:
 
-```
+```cpp
 Pvk2Pfx -pvk abc.pvk -pi pvkpassword -spc abc.spc -pfx abc.pfx -po pfxpassword -f
 ```
 

@@ -17,7 +17,7 @@ You can specify more than one [**HardwareID**](https://msdn.microsoft.com/librar
 
 For example, consider a single-function USB printer from the company Contoso, Ltd. The following **HardwareID** elements can be used to define the device:
 
-```
+```cpp
 <HardwareIDList>
   <HardwareID>DOID:USB\VID_1234&PID_1234&REV_0000</HardwareID>
   <HardwareID>DOID:USB\VID_1234&PID_1234</HardwareID>

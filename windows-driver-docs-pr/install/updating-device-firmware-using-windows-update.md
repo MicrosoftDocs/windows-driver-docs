@@ -61,7 +61,7 @@ There are a couple ways to create a second device node.  Certain device types ha
 
 In this case, use an extension INF that specifies the [AddComponent](../install/inf-addcomponent-directive.md) directive to create a device node that can be targeted by Windows Update and install the firmware update driver on it.  The following snippet from an INF file shows how you can do this:
 
-```
+```cpp
 [Manufacturer]
 %Contoso%=Standard,NTamd64
 [Standard.NTamd64]
@@ -86,7 +86,7 @@ To update firmware for devices that use a Microsoft-supplied driver, you need to
 
 * In your firmware update driver INF, specify [DIRID 13](using-dirids.md) to cause PnP to leave the files in the driver package in the DriverStore:
 
-    ```
+    ```cpp
     [Firmware_AddReg]
     ; Store location of firmware payload
     HKR,,FirmwareFilename,,"%13%\firmware_payload.bin"
@@ -96,7 +96,7 @@ To update firmware for devices that use a Microsoft-supplied driver, you need to
 
 * Firmware update drivers should specify the following INF entries:
 
-    ```
+    ```cpp
     Class=Firmware
     ClassGuid={f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
     ```

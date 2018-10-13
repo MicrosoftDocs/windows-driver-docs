@@ -65,13 +65,13 @@ In general, if no template can be bound to the GDL attribute entry, the value of
 
 For example, assume that the parser cannot find a template that describes the following GDL attribute entry.
 
-```
+```cpp
 *ModelName: "OEMName LaserJet "
 ```
 
 Then, the entry will appear in the snapshot as follows.
 
-```
+```cpp
     <GDL_ATTRIBUTE Name="*ModelName" 
         <![CDATA["OEMName LaserJet "]]></GDL_ATTRIBUTE>
 ```

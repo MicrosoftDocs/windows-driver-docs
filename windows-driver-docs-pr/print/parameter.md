@@ -127,7 +127,7 @@ In this example, the **stringID** values specify the following:
 -   User interface string 5 in the Microsoft-supplied user interface DLL is "yellow".
 -   User interface string 1002 in the driver resource DLL is "Side Access Door B".
 
-```
+```cpp
 <?xml version="1.0" ?>
    <asyncPrintUIRequest
     xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">

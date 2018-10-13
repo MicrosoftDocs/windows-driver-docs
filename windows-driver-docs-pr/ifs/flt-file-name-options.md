@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The FLT\_FILE\_NAME\_OPTIONS type is a bitmask of flags that specify the name format, query method, and flags for a file name information query.
 
-```
+```cpp
 typedef ULONG FLT_FILE_NAME_OPTIONS; 
 #define FLT_VALID_FILE_NAME_FORMATS 0x000000ff
     #define FLT_FILE_NAME_NORMALIZED    0x01

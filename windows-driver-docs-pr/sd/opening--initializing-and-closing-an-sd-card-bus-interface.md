@@ -26,7 +26,7 @@ Secure Digital (SD) device drivers must open and initialize an SD bus interface 
 
 The following code example illustrates the sequence of calls that open and initialize an SD bus interface:
 
-```
+```cpp
   status = SdBusOpenInterface (pDevExt->UnderlyingPDO,
     &pDevExt->BusInterface,
     sizeof(SDBUS_INTERFACE_STANDARD),
@@ -64,7 +64,7 @@ To close an SD interface, drivers must dereference the interface by calling the 
 
 The following code example illustrates how a driver can dereference an SD card bus interface:
 
-```
+```cpp
 if (pDevExt->BusInterface.InterfaceDereference) {
     (pDevExt->BusInterface.InterfaceDereference) (pDevExt->BusInterface.Context);
     RtlZeroMemory(&pDevExt->BusInterface, sizeof(SDBUS_INTERFACE_STANDARD));

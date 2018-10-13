@@ -111,7 +111,7 @@ For Windows 2000 and later, a dependent file is a printer driver file that is in
 
 The following example shows excerpts from an INF file that installs three dependent files by copying them to the printer-driver directory (that is, to the directory specified by dirid 66000):
 
-```
+```cpp
 [Contoso]
 %PRINTER_MODEL_123%=Contoso_Install_Section,LPTENUM\Contoso_1284.4_P29C5
 ...

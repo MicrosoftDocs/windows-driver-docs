@@ -38,7 +38,7 @@ SM\_SendSMPPassThru
 
 The MS\_SM\_FabricAndDomainManagementMethods class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MS_SM_FabricAndDomainManagementMethods
 {
     [key]

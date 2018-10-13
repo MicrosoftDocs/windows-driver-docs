@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 A vendor should specify the following entries in the **Version** section of an INF file for a port-class audio adapter:
 
-```
+```cpp
   Signature="$CHICAGO$"
   Class=MEDIA
   ClassGUID={4d36e96c-e325-11ce-bfc1-08002be10318}

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 A *text log header* consists of the first few log entries in a SetupAPI text log. The text log header contains information about the operating system and system architecture. The following is an example of a text log header:
 
-```
+```cpp
 [Device Install Log]
      OS Version = 6.0.5033
      Service Pack = 0.0

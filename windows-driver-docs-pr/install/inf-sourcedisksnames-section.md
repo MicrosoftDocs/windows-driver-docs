@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 A **SourceDisksNames** section identifies the distribution disks or CD-ROM discs that contain the source files to be transferred to the target computer during installation.
 
-```
+```cpp
 [SourceDisksNames] |
 [SourceDisksNames.x86] | 
 [SourceDisksNames.arm] | (Windows 8 and later versions of Windows)
@@ -112,7 +112,7 @@ Examples
 
 In the following example, the *write.exe* file is the same for all Windows platforms and is located in the *\\common* subdirectory, under the installation root, on a CD-ROM distribution disc. The *cmd.exe* file is a platform-specific file that is only used on x86-based platforms.
 
-```
+```cpp
 [SourceDisksNames]
 1 = "Windows NT CD-ROM",file.tag,,\common
 
@@ -126,7 +126,7 @@ cmd.exe = 2
 
 The following example uses entries that contain separate specifications for *.tag* files and *.cab* files.
 
-```
+```cpp
 [Version]
 signature = "$Windows NT$"
 Provider = %Msft%

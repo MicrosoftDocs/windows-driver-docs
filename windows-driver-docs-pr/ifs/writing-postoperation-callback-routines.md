@@ -36,7 +36,7 @@ Minifilter drivers receive only those types of I/O operations for which they hav
 
 Every postoperation callback routine is defined as follows:
 
-```
+```cpp
 typedef FLT_POSTOP_CALLBACK_STATUS 
 (*PFLT_POST_OPERATION_CALLBACK) ( 
     IN OUT PFLT_CALLBACK_DATA Data, 

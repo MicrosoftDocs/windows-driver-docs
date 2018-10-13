@@ -17,7 +17,7 @@ In addition, if you used the Visual Studio KMDF template, your driver uses Windo
 
 To send a trace message from your driver binary, use this code:
 
-   ```
+   ```cpp
    TraceEvents(TRACE_LEVEL_INFORMATION, TRACE_DRIVER, &quot;%!FUNC! Entry&quot;);
    ```
        
@@ -28,7 +28,7 @@ To use Tracelog on a phone:
 1.  Establish a kernel-mode debugging session between a host computer and the phone.
 2.  On the host computer, in TShell, enter this command:
 
-       ```
+       ```cpp
        exec-device tracelog -addautologger MyLogger05 -guid c:\SteveGuid.txt -level 4 -flag 0xF –kd
        ```
        

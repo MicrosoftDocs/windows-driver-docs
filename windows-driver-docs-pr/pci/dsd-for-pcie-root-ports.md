@@ -19,7 +19,7 @@ In Windows 10 (Version 1803), new ACPI _DSD methods have been added to support M
 
  This ACPI object must be implemented in the ACPI scope of every PCIe Root Port/slot that is accessible to the user on Modern Standby-enabled desktop systems. 
 
-```
+```cpp
 Name (_DSD, Package () {
  
           ToUUID("FDF06FAD-F744-4451-BB64-ECD792215B10"),
@@ -38,7 +38,7 @@ This ACPI object allows the operating system to identify and power manage PCIe R
 
 This object must be implemented on all PCIe Root Ports of Thunderbolt™ hierarchies, on Runtime D3 (RTD3) capable systems, in the Root Port ACPI device scope.
 
-```
+```cpp
 Name (_DSD, Package () {  
 
         ToUUID("6211E2C0-58A3-4AF3-90E1-927A4E0C55A4"),  
@@ -58,7 +58,7 @@ This ACPI object allows the operating system to identify externally exposed PCIe
 
 Note: On systems shipping with Windows 10 1803, this should only be implemented on PCIe Root Ports of Thunderbolt™ hierarchies.
 
-```
+```cpp
 Name (_DSD, Package () {  
 
 ToUUID("EFCC06CC-73AC-4BC3-BFF0-76143807C389"),

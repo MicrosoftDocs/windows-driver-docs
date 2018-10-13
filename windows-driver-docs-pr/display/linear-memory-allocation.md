@@ -32,7 +32,7 @@ The [**VIDEOMEMORY**](https://msdn.microsoft.com/library/windows/hardware/ff5701
 
 The following pseudocode shows how a [**VIDEOMEMORY**](https://msdn.microsoft.com/library/windows/hardware/ff570171) structure is set up for linear memory:
 
-```
+```cpp
 /*
  * video memory pool usage
  */
@@ -44,7 +44,7 @@ static VIDEOMEMORY vidMem [] = {
 
 The following pseudocode shows how linear memory heaps are set up:
 
-```
+```cpp
 /*
  * video memory pool information
  */

@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The XSD schema that is produced by the GDL parser defines a root element (&lt;SnapshotRoot&gt;) as follows:
 
-```
+```cpp
     <element name="SnapshotRoot" type="gdl:GDL_RootType"/>
 
     <complexType name="GDL_RootType"  >

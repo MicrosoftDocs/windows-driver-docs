@@ -21,7 +21,7 @@ The **finishText** XML element customizes the main text that DPInst displays on 
 
 ### Element Tag
 
-```
+```cpp
 <finishText>
 ```
 
@@ -62,7 +62,7 @@ None
 
 The following code example demonstrates a **finishText** element that customizes the main text on a finish page that DPInst displays for a successful installation. The text that specifies the custom finish text is shown in bold font style.
 
-```
+```cpp
 dpinst>
   ...
   <language code="0x0409">

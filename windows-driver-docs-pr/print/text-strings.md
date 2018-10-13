@@ -50,7 +50,7 @@ Each ASCII character included in the string is converted to its one-byte hexadec
     To extend a string beyond a single line, precede each line after the first with a [line continuation](line-continuation.md) character (+), and delimit the text on each line with quotation marks.
 
 -   A string value can consist of multiple text strings. For example, the following two GPD entries are equivalent:
-    ```
+    ```cpp
     *Name: "abc""def" *% Comment
     +      "gh"    "ijk"
 

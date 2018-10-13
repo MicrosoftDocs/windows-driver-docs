@@ -33,7 +33,7 @@ If your framework-based driver handles I/O operations for DMA devices, your driv
 
 The following code example from the [PLX9x5x](http://go.microsoft.com/fwlink/p/?linkid=256157) sample illustrates how to enable the framework's DMA features. This code appears in the *Init.c file*.
 
-```
+```cpp
 WDF_DMA_ENABLER_CONFIG   dmaConfig;
 
 WdfDeviceSetAlignmentRequirement( DevExt->Device, PCI9656_DTE_ALIGNMENT_16 );

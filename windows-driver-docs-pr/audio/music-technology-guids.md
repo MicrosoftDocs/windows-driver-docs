@@ -133,7 +133,7 @@ To make itself eligible to be the default device, a wavetable device that can pl
 
 By calling the [**IMusicTechnology::SetTechnology**](https://msdn.microsoft.com/library/windows/hardware/ff536780) method, an adapter driver can overwrite the technology GUIDs in a miniport driver's data ranges. In the following code example, an adapter driver changes the technology GUID in the DMusUART miniport driver's data ranges from its default value, KSMUSIC\_TECHNOLOGY\_PORT, to the value KSMUSIC\_TECHNOLOGY\_WAVETABLE. With this new setting, the MPU-like wavetable device is eligible to be selected by the midiOut API as the default MIDI device.
 
-```
+```cpp
   // Create the miniport object.
   PUNKNOWN miniport;
 

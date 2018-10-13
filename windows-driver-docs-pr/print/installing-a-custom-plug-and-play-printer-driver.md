@@ -33,7 +33,7 @@ If you are developing a driver that replaces a Windows 2000 in-box driver, make 
 
 An IHV can avoid a dialog box asking for user interaction in client-side installations by providing two lines in the INF Models section for each model, as in the following example.
 
-```
+```cpp
 ; Models section
 
 [OEM Company Name]

@@ -24,7 +24,7 @@ Every kernel-mode driver that creates a device object must specify an appropriat
 
 The system defines the following device type values, listed in alphabetical order:
 
-```
+```cpp
 #define FILE_DEVICE_8042_PORT           0x00000027
 #define FILE_DEVICE_ACPI                0x00000032
 #define FILE_DEVICE_BATTERY             0x00000029

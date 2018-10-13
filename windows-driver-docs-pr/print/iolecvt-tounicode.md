@@ -89,7 +89,7 @@ Although most applications now use Unicode (UTF-16) encoding for character data,
 
 Convert to Unicode using the Japanese code page, if applicable.
 
-```
+```cpp
 If strLang = "JP" Then
     tmpStr = OleCvt.ToUnicode (str, 932)
 Else

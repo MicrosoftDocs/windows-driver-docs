@@ -95,7 +95,7 @@ This method calls the **SnmpMgrRequest** function to set the SNMP OID values. Fo
 
 The [**ISNMP::Open**](isnmp-open.md) method must be called before the `ISNMP::SetList` method can be called.
 
-```
+```cpp
     Dim StrIP, strCommunity, objSNMP, OIDArray, OIDValueArray
     strIP = Session("MS_IPaddress")
     strCommunity = Session ("MS_Community")

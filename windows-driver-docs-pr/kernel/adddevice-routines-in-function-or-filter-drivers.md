@@ -56,7 +56,7 @@ An [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) r
 
 9.  Clear the DO\_DEVICE\_INITIALIZING flag in the FDO or filter DO with a statement like the following:
 
-    ```
+    ```cpp
     FunctionalDeviceObject->Flags &= ~DO_DEVICE_INITIALIZING;
     ```
 

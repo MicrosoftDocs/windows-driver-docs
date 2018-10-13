@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 This example uses a [**KSDATAFORMAT\_DSOUND**](https://msdn.microsoft.com/library/windows/hardware/ff537094) structure to describe the data format of a DirectSound stream.
 
-```
+```cpp
   DataFormat.FormatSize  = sizeof(KSDATAFORMAT_DSOUND);
  DataFormat.Flags       = 0;
   DataFormat.SampleSize  = 0;

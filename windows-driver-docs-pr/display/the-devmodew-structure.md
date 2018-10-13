@@ -56,7 +56,7 @@ Applications and drivers are free to ask for a DEVMODEW structure and modify its
 
 In order to modify private DEVMODEW structure members, a driver must first determine the offset of the beginning of the private data. Given a pointer to the beginning of this structure, and the **dmSize** member, which holds the size of the public portion of the structure, the beginning of the private portion can be found. The following example shows how to initialize a pointer to the beginning of the private section. In this example, *pdm* points to the beginning of the DEVMODEW structure.
 
-```
+```cpp
 PVOID pvDriverData = (PVOID)  (((BYTE *) pdm) + (pdm -> dmSize));
 ```
 

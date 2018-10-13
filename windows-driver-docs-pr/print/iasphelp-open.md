@@ -85,7 +85,7 @@ This method obtains access to the specified printer by calling the print spooler
 
 After the **Iasphelp::Open** call, the printer remains open until the [**Iasphelp::Close**](iasphelp-close.md) method is called, or until **Iasphelp::Open** is called again with a different printer name.
 
-```
+```cpp
     Dim objPrinter
     strPrinter = Session("MS_printer")
     Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")

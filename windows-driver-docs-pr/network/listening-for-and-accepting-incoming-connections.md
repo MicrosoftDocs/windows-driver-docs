@@ -138,7 +138,7 @@ As an alternative to calling the [**WskAccept**](https://msdn.microsoft.com/libr
 
 The following code example shows how a WSK application can accept an incoming connection by the WSK subsystem calling a listening socket's *WskAcceptEvent* event callback function.
 
-```
+```cpp
 // Dispatch table of event callback functions for accepted sockets
 const WSK_CLIENT_CONNECTION_DISPATCH ConnectionDispatch =
 {

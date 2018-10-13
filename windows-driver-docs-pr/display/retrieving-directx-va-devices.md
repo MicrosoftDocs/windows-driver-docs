@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 Use the following example code to retrieve DirectX VA devices. This code is an implementation of the [*DdMoCompGetGuids*](https://msdn.microsoft.com/library/windows/hardware/ff550236) callback function. The **GetMoCompGuids** member of the [**DD\_MOTIONCOMPCALLBACKS**](https://msdn.microsoft.com/library/windows/hardware/ff551660) structure points to the callback function.
 
-```
+```cpp
 DWORD g_dwDXVANumSupportedGUIDs = 4;
 const GUID* g_DXVASupportedGUIDs[4] = {
  &DXVA_DeinterlaceContainerDevice,

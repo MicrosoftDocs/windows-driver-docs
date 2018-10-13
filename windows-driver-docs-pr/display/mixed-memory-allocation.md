@@ -28,7 +28,7 @@ The preceding figure shows a linear piece of memory below the primary surface (H
 
 The following pseudocode shows how a [**VIDEOMEMORY**](https://msdn.microsoft.com/library/windows/hardware/ff570171) structure is set up for a mix of linear and rectangular memory:
 
-```
+```cpp
 /*
  * video memory pool usage
  */
@@ -45,7 +45,7 @@ Two areas of display memory can be allocated in this instance. The area to the c
 
 The following pseudocode shows how a mix of linear and rectangular memory heaps are set up:
 
-```
+```cpp
 /*
  * video memory pool information
  */

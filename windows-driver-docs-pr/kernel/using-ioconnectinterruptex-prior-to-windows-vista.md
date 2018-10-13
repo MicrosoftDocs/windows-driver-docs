@@ -25,7 +25,7 @@ Using this behavior, you can write your driver so that it uses CONNECT\_LINE\_BA
 
 The following code example illustrates the technique:
 
-```
+```cpp
 IO_CONNECT_INTERRUPT_PARAMETERS params;
 
 // deviceExtension is a pointer to the driver&#39;s device extension. 

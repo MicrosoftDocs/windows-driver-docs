@@ -120,7 +120,7 @@ The following code example shows an ID string, which shows the optional command 
 
  
 
-```
+```cpp
 MANUFACTURER:ACME Manufacturing;
 MODEL:LaserBeam 9;
 COMMAND SET:PCL,PJL,PS,XHTML-Print+xml;

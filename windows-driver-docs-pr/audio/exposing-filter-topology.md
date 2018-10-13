@@ -36,7 +36,7 @@ The miniport driver exposes these three arrays in the [**PCFILTER\_DESCRIPTOR**]
 
 The following code example specifies the internal topology of a simple KS filter that has one input pin and one output pin. The filter contains a single node, which is a volume-level control.
 
-```
+```cpp
 #define KSPIN_WAVEOUT_SRC  0
 #define KSPIN_SPEAKERS_DST  1
 
@@ -146,7 +146,7 @@ The volume node has two "logical" pins, which are numbered 0 and 1. The two conn
 
 The KSPIN\_WAVEOUT\_SRC and KSPIN\_SPEAKERS\_DST pins are both [*bridge pins*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss_bridge_pin), which means that they represent hardwired connections in the adapter. In the preceding sample code, the two pin descriptors in the MiniportPins array both specify their IRP-flow direction as KSPIN\_COMMUNICATION\_NONE, which is appropriate because bridge pins neither send nor receive IRPs. The two pin descriptors also refer to a PinDataRangePointersBridge array, which is defined as follows:
 
-```
+```cpp
 static KSDATARANGE PinDataRangesBridge[] =
 {
    {

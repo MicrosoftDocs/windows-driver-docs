@@ -28,7 +28,7 @@ The key aspect here is how to specify the DataSource. Let's take a look at the c
 
 ### <span id="Native"></span><span id="native"></span><span id="NATIVE"></span>Native
 
-```
+```cpp
 1   namespace WEX { namespace TestExecution { namespace Examples
 2   {
 3       class AdvancedDataDrivenTests
@@ -54,7 +54,7 @@ See lines 11, 15, and 16 in the example above. In general, the pattern to follow
 
 ### <span id="Managed"></span><span id="managed"></span><span id="MANAGED"></span>Managed
 
-```
+```cpp
 [TestMethod]
 [DataSource(@"Table:CSharpAdvancedDataDrivenTests.xml#FirstTable;
     WMI:SELECT ProcessId FROM Win32_Service WHERE Name=&#39;Themes&#39;")]
@@ -87,7 +87,7 @@ The examples also demonstrate the ways to specify multiple DataSources in multip
 ## <span id="Specifying_DataSource_on_a_single_line"></span><span id="specifying_datasource_on_a_single_line"></span><span id="SPECIFYING_DATASOURCE_ON_A_SINGLE_LINE"></span>Specifying DataSource on a single line
 
 
-```
+```cpp
 [DataSource("Table:CSharpAdvancedDataDrivenTests.xml#FirstTable;WMI:SELECT ProcessId FROM Win32_Service WHERE Name=&#39;Themes&#39;")]
 ```
 

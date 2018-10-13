@@ -26,7 +26,7 @@ The MOF syntax for each method that belongs to this class is described in the re
 
 The MS\_SM\_EventControl class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MS_SM_EventControl 
 { 
     [key] 

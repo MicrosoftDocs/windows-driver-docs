@@ -23,7 +23,7 @@ A callout driver can be installed by right-clicking the driver's setup informati
 
 After a callout driver has been successfully installed, it can be loaded (started) by typing the following at the command prompt:
 
-```
+```cpp
 net start drivername
 ```
 
@@ -31,7 +31,7 @@ Depending on the value specified for the **StartType** entry in the \[*drivernam
 
 A callout driver that is currently loaded can be unloaded (stopped) by typing the following at the command prompt:
 
-```
+```cpp
 net stop drivername
 ```
 

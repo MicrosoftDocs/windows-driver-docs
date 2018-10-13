@@ -34,7 +34,7 @@ For many crashes, dump file details are sufficient to determine why the terminat
      
 
 2.  Load the latest .dmp file into the debugger by using the following command:
-    ```
+    ```cpp
     WinDbg -z <path to the .dmp file>
     ```
 

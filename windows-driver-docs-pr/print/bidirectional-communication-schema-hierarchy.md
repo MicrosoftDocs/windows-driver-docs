@@ -25,7 +25,7 @@ The bidirectional communication schema contains the following hierarchy or tree 
 
 -   Values are shown in italic text (for example, FriendlyName).
 
-```
+```cpp
 Printer
   DeviceInfo
  FriendlyName

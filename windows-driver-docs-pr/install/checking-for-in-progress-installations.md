@@ -24,7 +24,7 @@ Your [*device installation application*](https://msdn.microsoft.com/library/wind
 
 To make your [*device installation application*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) compatible with platforms that do not support **CMP_WaitNoPendingInstallEvents**, the application should include the following code:
 
-```
+```cpp
 BOOL
 IsDeviceInstallInProgress (VOID)
 {

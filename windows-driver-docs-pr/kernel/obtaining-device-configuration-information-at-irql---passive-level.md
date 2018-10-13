@@ -22,7 +22,7 @@ To access device configuration space at IRQL = PASSIVE\_LEVEL, you must use [**I
 
 The following code sample demonstrates how to access a device's configuration space.
 
-```
+```cpp
 NTSTATUS
 ReadWriteConfigSpace(
     IN PDEVICE_OBJECT  DeviceObject,

@@ -31,7 +31,7 @@ A macro definition cannot reference itself. However, a macro reference can pass 
 
 The following code example shows how to pass a reference.
 
-```
+```cpp
 *InsertBlock:  Myself(Myself(AnotherMacro))
 ```
 

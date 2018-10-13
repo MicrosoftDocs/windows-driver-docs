@@ -28,7 +28,7 @@ The driver can then call [**ExRegisterCallback**](https://msdn.microsoft.com/lib
 
 The callback routine has the following prototype:
 
-```
+```cpp
 typedef VOID (*PCALLBACK_FUNCTION ) (
     IN PVOID CallbackContext,
     IN PVOID Argument1,

@@ -22,7 +22,7 @@ An SPB controller driver calls **SpbTargetGetConnectionParameters** to get a poi
 
 In the following code example, an I2C controller driver defines a **PNP\_I2C\_SERIAL\_BUS\_DESCRIPTOR** structure. This structure represents an *I2C serial bus connection descriptor*, which is the term the ACPI 5.0 specification uses to describe a serial bus connection descriptor that is followed by connection settings that are specific to the I2C bus. The first member of the **PNP\_I2C\_SERIAL\_BUS\_DESCRIPTOR** structure, **SerialBusDescriptor**, is a [**PNP\_SERIAL\_BUS\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/jj938062) structure that represents the serial bus connection descriptor. The **ConnectionSpeed** and **SlaveAddress** members contain I2C-specific connection settings.
 
-```
+```cpp
 #include <reshub.h>
 #include <pshpack1.h>  
 
@@ -48,7 +48,7 @@ The **ConnectionSpeed** member of the **PNP\_I2C\_SERIAL\_BUS\_DESCRIPTOR** stru
 
 In the following code example, the I2C controller driver from the previous example implements a `GetTargetSettings` routine that calls [**SpbTargetGetConnectionParameters**](https://msdn.microsoft.com/library/windows/hardware/hh450926) to get the connection settings for a target device on the I2C bus. The *Target* input parameter to this routine is a handle to the target device. The *Settings* output parameter is a pointer to a driver-allocated [**SPB\_CONNECTION\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh406204) structure to which the routine writes a set of connection parameters. These parameters include a pointer to the requested connection settings.
 
-```
+```cpp
 #define I2C_SERIAL_BUS_TYPE 0x01
 #define I2C_SERIAL_BUS_SPECIFIC_FLAG_10BIT_ADDRESS 0x0001
 

@@ -80,7 +80,7 @@ Remarks
 
 Before you query this property, call the [**Iasphelp::CalcJobETA**](iasphelp-calcjobeta.md) method to initialize the property value.
 
-```
+```cpp
     Dim objPrinter
     strPrinter = Session("MS_printer")
     Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")

@@ -30,7 +30,7 @@ To use GUIDs in a kernel-mode driver, you must do two things:
 
 The following code excerpt shows the sequence of statements for including GUIDs:
 
-```
+```cpp
 :
 // include system headers here such as wdm.h
  

@@ -26,7 +26,7 @@ You might install a "null driver" (that is, nonexistent driver) for a device if 
 
 To specify a null driver in an INF file, use entries like the following:
 
-```
+```cpp
 :
 [MyModels]
 %MyDeviceDescription% = MyNullInstallSection, &BadDeviceHardwareID%

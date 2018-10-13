@@ -42,7 +42,7 @@ Note that the *OldContext* pointer returned by **FltSet***Xxx***Context** and th
 
 In the following code example, taken from the CTX sample minifilter driver, the **CtxInstanceSetup** routine creates and sets an instance context and then calls [**FltReleaseContext**](https://msdn.microsoft.com/library/windows/hardware/ff544314):
 
-```
+```cpp
 status = FltAllocateContext(
            FltObjects->Filter,           //Filter
            FLT_INSTANCE_CONTEXT,         //ContextType

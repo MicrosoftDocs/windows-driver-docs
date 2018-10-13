@@ -44,7 +44,7 @@ If you are using an INF file, follow these steps:
 
 1.  Modify your driver INF file's **CopyFiles** section to use **COPYFLG_IN_USE_RENAME**, as follows:
 
-    ```
+    ```cpp
     [MyDriver_Install.NT]
     CopyFiles=MyDriverCopy
      

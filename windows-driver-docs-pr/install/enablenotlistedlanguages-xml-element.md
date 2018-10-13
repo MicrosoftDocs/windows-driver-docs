@@ -21,7 +21,7 @@ The **enableNotListedLanguages** XML element is an empty element that sets the *
 
 ### Element Tag
 
-```
+```cpp
 <enableNotListedLanguages>
 ```
 
@@ -64,7 +64,7 @@ By default, all of the DPInst-supported languages are enabled if a *DPInst.xml* 
 
 The following code example demonstrates an **enableNotListedLanguages** element.
 
-```
+```cpp
 <dpinst>
   ...
   <enableNotListedLanguages/>

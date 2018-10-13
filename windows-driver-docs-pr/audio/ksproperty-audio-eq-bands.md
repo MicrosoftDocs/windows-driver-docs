@@ -61,7 +61,7 @@ The KSPROPERTY\_AUDIO\_EQ\_BANDS property specifies the set of frequency bands f
 
 The property value (operation data) is an array of ULONG elements:
 
-```
+```cpp
   ULONG  CenterFreqVal[N];
 ```
 

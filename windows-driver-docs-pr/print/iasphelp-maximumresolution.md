@@ -83,7 +83,7 @@ Remarks
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::MaximumResolution** property can be queried.
 
-```
+```cpp
     Dim objPrinter, MaxRes
     strPrinter = Session("MS_printer")
     Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")

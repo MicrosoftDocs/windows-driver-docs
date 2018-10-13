@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 An MPIO driver uses the DSM\_VERSION WMI class to identify the version of a configured DSM.
 
-```
+```cpp
 class DSM_VERSION
 {
     //

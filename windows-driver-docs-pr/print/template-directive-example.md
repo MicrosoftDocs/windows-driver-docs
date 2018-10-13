@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The following example shows a simple production.
 
-```
+```cpp
   *Production: EXACTLY_ONE
   {
         *Production: SATISFY_ALL

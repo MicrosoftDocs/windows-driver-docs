@@ -112,7 +112,7 @@ An application or driver can determine all a parent collection's children by, st
 
 The following code shows how to use a link collection node index to find the first child of link collection seven:
 
-```
+```cpp
 HIDP_LINK_COLLECTION_NODE Collection[10] ;
 HIDP_LINK_COLLECTION_NODE Node1 ;
  

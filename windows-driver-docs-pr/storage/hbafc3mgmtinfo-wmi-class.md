@@ -15,7 +15,7 @@ A WMI client uses the HBAFC3MgmtInfo class to query an HBA miniport driver for F
 
 The HBAFC3MgmtInfo class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class HBAFC3MgmtInfo {
   [Description ("Unique identifier for the adapter. This"
     "identifier must be unique among all adapters. "

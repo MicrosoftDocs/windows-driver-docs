@@ -51,7 +51,7 @@ Remarks
 
 This method calls the **GetNodeClusterState** function to determine the status of the Cluster service. For more information about this function, see the Windows SDK documentation.
 
-```
+```cpp
     Dim objPrinter, ClusterRunning
     strPrinter = Session("MS_printer")
     Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")

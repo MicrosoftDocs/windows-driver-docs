@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 If your printer provides halftoning capabilities internally, your minidriver must specify the commands that Unidrv sends to the printer to activate these capabilities. For each halftoning option that is printer-supported, your GPD file's Halftone \*Feature entry must include \*Command entries for each device-supplied halftoning option, as follows:
 
-```
+```cpp
 *Feature: Halftone
 {
     *Option: CustomHalftoneMethod1

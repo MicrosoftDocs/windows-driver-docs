@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 An MPIO driver uses the MPIO\_ADAPTER\_INFORMATION WMI class to identify a path that is associated with an MPIO disk.
 
-```
+```cpp
 class MPIO_ADAPTER_INFORMATION
 {
     //

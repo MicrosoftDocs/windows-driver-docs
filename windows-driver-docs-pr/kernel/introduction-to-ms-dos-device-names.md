@@ -28,7 +28,7 @@ Drivers are required to supply an MS-DOS device name only if the device is requi
 
 A driver supplies an MS-DOS device name for a device object by using the [**IoCreateSymbolicLink**](https://msdn.microsoft.com/library/windows/hardware/ff549043) routine to create a symbolic link to the device. For example, the following code example creates a symbolic link from **\\DosDevices\\***DosDeviceName* to **\\Device\\***DeviceName*.
 
-```
+```cpp
 UNICODE_STRING DeviceName;
 UNICODE_STRING DosDeviceName;
 NTSTATUS status;
@@ -47,7 +47,7 @@ To access the **DosDevices** namespace from user mode, specify **\\\\.\\** when 
 
 For example, the following code example opens the \\\\DosDevices\\\\*DosDeviceName* device in user mode.
 
-```
+```cpp
 file = CreateFileW(L"\\\\.\\DosDeviceName",
   GENERIC READ | GENERIC WRITE,
     0,

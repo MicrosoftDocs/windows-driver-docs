@@ -36,7 +36,7 @@ WpdDeviceInspector.exe /?
 
 You can generate a report for a particular device by running *WpdDeviceInspector.exe* without any parameters, and entering the index for the selected device.
 
-```
+```cpp
 > WpdDeviceInspector.exe
 
 
@@ -79,7 +79,7 @@ You can operate *WpdDeviceInspector.exe* to dump the JScript properties and meth
 
 To operate in WPD Automation mode, use the /Automation switch at the command prompt:
 
-```
+```cpp
 WpdDeviceInspector.exe /Automation
 ```
 

@@ -54,7 +54,7 @@ You can also copy one of the provided HCK Test Suites and export it, along with 
 1.  Open a Visual Studio Command Prompt window. Navigate to the %WindowsSdkDir%\\Testing\\Tests\\HCK Tests\\Basic directory. For example, C:\\Program Files (x86)\\Windows Kits\\8.1\\Testing\\Tests\\HCK Tests\\Basic
 2.  Run the **CopyMe.cmd** script and specify the name of test suite and destination directory. The script has the following syntax:
 
-    ```
+    ```cpp
     CopyMe.cmd testSuite destinationPath
     ```
 
@@ -74,7 +74,7 @@ You can also copy one of the provided HCK Test Suites and export it, along with 
 
     The *destinationPath* can be any valid path, including UNC paths. For example, you can copy an HCK Test Suite to a USB flash drive, or to a share on a server.
 
-    ```
+    ```cpp
     C:\Program Files (x86)\Windows Kits\8.1\Testing\Tests\HCK Tests\Basic>CopyMe "De
     vice.Device Fundamentals" d:\temp\devfund
     Copying test target setup installers
@@ -102,13 +102,13 @@ You can also copy one of the provided HCK Test Suites and export it, along with 
 
 2.  Run the **RunMe.cmd** script and specify the path and name of the INF file. The script has the following syntax:
 
-    ```
+    ```cpp
     RunMe.cmd infFileName
     ```
 
     For example:
 
-    ```
+    ```cpp
     RunMe.cmd myDriver.inf
     ```
 

@@ -95,7 +95,7 @@ Examples
 
 The following code example shows the Serial (KMDF) sample driver's **DriverEntry** routine.
 
-```
+```cpp
 NTSTATUS
 DriverEntry(
     IN PDRIVER_OBJECT  DriverObject,

@@ -17,7 +17,7 @@ Because this class is associated with a particular instance of a storage minipor
 
 The MSiSCSI\_InitiatorNodeFailureEvent WMI class fires an event when a node failure occurs. This class is defined in *Mgmt.mof*.
 
-```
+```cpp
 class MSiSCSI_InitiatorNodeFailureEvent : WMIEvent {
   [read,key] String  InstanceName;
   [read] boolean  Active;

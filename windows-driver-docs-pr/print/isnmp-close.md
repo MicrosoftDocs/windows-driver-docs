@@ -53,7 +53,7 @@ Remarks
 
 This method calls the **SnmpMgrClose** function, which is described in the Windows SDK documentation, to close the communication path that was created by the previous call to the [**ISNMP::Open**](isnmp-open.md) method.
 
-```
+```cpp
     Dim StrIP, strCommunity, objSNMP
     strIP = Session("MS_IPaddress")
     strCommunity = Session ("MS_Community")

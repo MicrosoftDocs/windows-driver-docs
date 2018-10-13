@@ -28,7 +28,7 @@ where *AttributeName* is a predefined name belonging to one of the [attribute ty
 
 For example, the \*ModelName attribute is used for specifying a text string that describes your printer hardware. To assign a value to this attribute, you could place the following line in your GPD file:
 
-```
+```cpp
 *ModelName: "Canon Bubble-Jet BJC-600"
 ```
 

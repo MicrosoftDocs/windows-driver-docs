@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 An MPIO driver uses the DSM\_COUNTERS WMI class to identify all timer values that are associated with a DSM.
 
-```
+```cpp
 class DSM_COUNTERS
 {
     //

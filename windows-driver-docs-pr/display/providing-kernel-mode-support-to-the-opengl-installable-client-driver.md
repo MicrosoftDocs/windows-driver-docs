@@ -24,7 +24,7 @@ The OpenGL installable client driver (ICD) can obtain the same level of support 
 
  
 
-```
+```cpp
 #include "d3dkmthk.h"
 
 PFND3DKMT_CREATEALLOCATION pfnKTCreateAllocation = NULL;

@@ -61,7 +61,7 @@ After a device is attached, Windows first attempts to locate and install a drive
 
     Windows also searches for driver packages that were preloaded in the locations that are specified by the **DevicePath** registry value. This value is under the following subkey of the registry.
 
-    ```
+    ```cpp
     HKEY_LOCAL_MACHINE
        Software
           Microsoft

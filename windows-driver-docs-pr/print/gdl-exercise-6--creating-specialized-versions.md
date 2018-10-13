@@ -36,7 +36,7 @@ Make this change without deleting or modifying any of the previously defined tem
 
 The following code example shows one possible answer.
 
-```
+```cpp
 *Template:  MIN_SIZE
 {
     *Name: "*MinSize"
@@ -79,7 +79,7 @@ The following code example shows one possible answer.
 
 The following code example shows a sample GDL data file for verification.
 
-```
+```cpp
 *PFeature: random
 {
     *Name:  "Generic Feature"

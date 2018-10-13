@@ -15,13 +15,13 @@ ms.localizationpriority: medium
 
 To verify that a [catalog file](catalog-files.md) is signed by a valid [commercial release certificate](commercial-release-certificate.md), use the following [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) command:
 
-```
+```cpp
 SignTool verify /v /pa CatalogFileName.cat
 ```
 
 To verify that a file that is listed in a [driver package's](driver-packages.md) catalog file is signed by a valid commercial release certificate, use the following SignTool command:
 
-```
+```cpp
 SignTool verify /v /pa /c CatalogFileName.cat DriverFileName
 ```
 

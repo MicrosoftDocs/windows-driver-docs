@@ -39,7 +39,7 @@ Both [**IoOpenDeviceRegistryKey**](https://msdn.microsoft.com/library/windows/ha
 
 The following code sample demonstrates using **IoOpenDeviceRegistryKey** and **ZwSetValueKey** to set the data associated with the value named "Value" under the device's hardware key.
 
-```
+```cpp
 PDEVICE_OBJECT pDeviceObject; // A pointer to the PDO for the device.
 HANDLE handle;
 UNICODE_STRING ValueName;

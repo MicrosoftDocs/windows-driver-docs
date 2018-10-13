@@ -41,7 +41,7 @@ The miniclass driver's [*DriverEntry*](https://msdn.microsoft.com/library/window
 
 The following sample code initializes these entry points for a hypothetical NewBatt miniclass driver:
 
-```
+```cpp
 DriverObject->DriverUnload = NewBattUnload;
 DriverObject->DriverExtension->AddDevice = NewBattAddDevice; 
 DriverObject->MajorFunction[IRP_MJ_DEVICE_CONTROL] = NewBattDispatchDeviceControl;

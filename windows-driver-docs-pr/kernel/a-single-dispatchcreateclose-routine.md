@@ -22,7 +22,7 @@ Many drivers, particularly lower-level drivers in a chain of layered drivers, me
 
 For example, a port driver for a device controller with one or more closely coupled class drivers that call [**IoGetDeviceObjectPointer**](https://msdn.microsoft.com/library/windows/hardware/ff549198) might have a minimal [*DispatchCreateClose*](https://msdn.microsoft.com/library/windows/hardware/ff543270) routine. The routine might do nothing more than complete the IRP as follows:
 
-```
+```cpp
     :    : 
 { 
     Irp->IoStatus.Status = STATUS_SUCCESS; 

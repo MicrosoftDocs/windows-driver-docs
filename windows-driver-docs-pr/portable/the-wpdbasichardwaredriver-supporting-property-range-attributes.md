@@ -18,7 +18,7 @@ In the case of the sensor reading, the property is expressed as a range (WPD\_PR
 
 The property attributes correspond to entries in the *Rs232connection.h* file. These entries specify the minimum and maximum values that the device supports as well as the step value that an application can use when it sets the property within the given range:
 
-```
+```cpp
 #define SENSOR_READING_MIN 1  
 #define SENSOR_READING_MAX 378  
 #define SENSOR_READING_STEP 1   
@@ -26,7 +26,7 @@ The property attributes correspond to entries in the *Rs232connection.h* file. T
 
 The code that sets these range attributes is found in WpdObjectProperties::GetPropertyAttributesForObject (in the *Wpdobjectproperties.cpp* module). This code uses the values that are defined in *Rs232connection.h* to set these attributes:
 
-```
+```cpp
 else if (IsEqualPropertyKey(Key, SENSOR_READING))
 {
     // Form range attributes for the temperature reading property

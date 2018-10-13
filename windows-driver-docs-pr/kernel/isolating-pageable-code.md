@@ -22,7 +22,7 @@ A routine that uses a spin lock cannot be paged. However, in some cases you can 
 
 For example, consider the following fragment:
 
-```
+```cpp
 //  PAGED_CODE(); 
  
 KeInitializeEvent( &event, NotificationEvent, FALSE ); 

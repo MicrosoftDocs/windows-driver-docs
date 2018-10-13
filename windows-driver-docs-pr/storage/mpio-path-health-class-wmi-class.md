@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 A WMI client uses the MPIO\_PATH\_HEALTH\_CLASS WMI class to query the MPIO subsystem so that it gathers health statistics for a particular path that is associated with an MPIO disk.
 
-```
+```cpp
 class MPIO_PATH_HEALTH_CLASS
 {
     //

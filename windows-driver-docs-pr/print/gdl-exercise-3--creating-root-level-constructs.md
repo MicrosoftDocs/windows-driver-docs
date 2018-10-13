@@ -37,7 +37,7 @@ Use the following conditions:
 
 The following template satisfies the preceding conditions.
 
-```
+```cpp
 *Template:  POPTION
 {
     *Name:  "*POption"

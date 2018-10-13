@@ -27,7 +27,7 @@ Any print component or listening application that is interested in receiving not
 
 A listening application must provide a pointer to an **IPrintAsyncNotifyCallback** interface when it registers to receive notifications. The notification sender must provide a pointer to an **IPrintAsyncNotifyCallback** interface if it is interested in a response and it creates a bidirectional channel.
 
-```
+```cpp
 #define INTERFACE IPrintAsyncNotifyCallback
 DECLARE_INTERFACE_(IPrintAsyncNotifyCallback, IUnknown)
 {

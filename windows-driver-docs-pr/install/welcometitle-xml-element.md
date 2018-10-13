@@ -21,7 +21,7 @@ The **welcomeTitle** XML element customizes the bold text of the welcome title t
 
 ### Element Tag
 
-```
+```cpp
 <welcomeTitle>
 ```
 
@@ -62,7 +62,7 @@ None
 
 The following code example demonstrates a **welcomeTitle** element customizes the title text on a welcome page. The text that specifies the custom welcome title is shown in bold font style.
 
-```
+```cpp
 <dpinst>
   ...
   <language code="0x0409">

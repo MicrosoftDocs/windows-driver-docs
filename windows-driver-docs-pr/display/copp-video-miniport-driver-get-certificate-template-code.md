@@ -22,7 +22,7 @@ This section applies only to Windows Server 2003 SP1 and later, and Windows XP S
 
 Use the following example code to retrieve the size, in bytes, of the graphics hardware certificate for the COPP DirectX VA device object.
 
-```
+```cpp
 VP_STATUS
 IoctlCOPPGetCertificateLength(
     PHW_DEVICE_EXTENSION pHwDeviceExtension,

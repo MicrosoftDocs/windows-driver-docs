@@ -24,7 +24,7 @@ This section applies only to Windows Server 2003 SP1 and later, and Windows XP S
 
 Use the following example code to define a COPP DirectX VA device object.
 
-```
+```cpp
 #define COPP_OPENED                 0
 #define COPP_CERT_LENGTH_RETURNED   1
 #define COPP_KEY_EXCHANGED          2

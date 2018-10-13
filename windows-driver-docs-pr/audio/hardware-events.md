@@ -35,7 +35,7 @@ When an application later calls the **mixerOpen** function (described in the Mic
 
 When the hardware event occurs and your driver's interrupt-service routine detects a mute or a volume change, your driver signals the event to the port driver by calling [**IPortEvents::GenerateEventList**](https://msdn.microsoft.com/library/windows/hardware/ff536889) with a set of parameters that describe the event. For example, the following call describes a control change in a lineout-volume node:
 
-```
+```cpp
     pPE->GenerateEventList(NULL, KSEVENT_CONTROL_CHANGE,
                            FALSE, ULONG(-1), TRUE, LINEOUT_VOL);
 ```

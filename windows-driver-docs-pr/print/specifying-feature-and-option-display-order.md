@@ -26,7 +26,7 @@ To control the order in which features and options are displayed on Unidrv-gener
 
 Following is an example of a set of empty \*Feature and \*Option entries:
 
-```
+```cpp
 *Feature: EconoMode
 {
     *Option: Off{}

@@ -51,7 +51,7 @@ Remarks
 
 The name of the printer being closed must have been specified in a previous call to the [**Iasphelp::Open**](iasphelp-open.md) method.
 
-```
+```cpp
     Dim objPrinter
     strPrinter = Session("MS_printer")
     Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")

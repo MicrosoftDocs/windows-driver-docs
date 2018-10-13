@@ -25,7 +25,7 @@ The **icon** XML element specifies the source file for a custom icon that DPInst
 
 ### Element Tag
 
-```
+```cpp
 <icon>
 ```
 
@@ -68,7 +68,7 @@ An **icon** element is customized, but not localized, if it is a child element o
 
 The following code example demonstrates an **icon** element that specifies Data\\Small.ico as the source of a custom icon that DPInst displays on the DPInst EULA page. The text that specifies the custom icon file is shown in bold font style.
 
-```
+```cpp
 <dpinst>
   ...
   <icon>Data\Eula.ico</icon>

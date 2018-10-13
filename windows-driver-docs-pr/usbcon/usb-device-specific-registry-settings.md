@@ -43,7 +43,7 @@ This topic describes the device-specific registry entries.
 
 The registry entries described in this topic are found under this key:
 
-```
+```cpp
 HKEY_LOCAL_MACHINE
    SYSTEM
       CurrentControlSet

@@ -37,14 +37,14 @@ Instead, cast the pointer to type DWORD\_PTR or ULONG\_PTR. An unsigned integer 
 
 For example, the pDrvOptItems.UserData pointer field in the [**OEMCUIPPARAM**](https://msdn.microsoft.com/library/windows/hardware/ff557653) structure is of type ULONG\_PTR. The following code example shows what not to do if you copy a 64-bit pointer value to this field.
 
-```
+```cpp
     PUSERDATA pData;
     OEMCUIPPARAM->pDrvOptItems.UserData = (ULONG)pData;  // Wrong
 ```
 
 The preceding code example casts the *pData* pointer to type ULONG, which can truncate the pointer value if **sizeof**(*pData*) &gt; **sizeof**(ULONG). The correct approach is to cast the pointer to ULONG\_PTR, as shown in the following code example.
 
-```
+```cpp
     PUSERDATA pData;
     OEMCUIPPARAM->pDrvOptItems.UserData = (ULONG_PTR)pData;  // Correct
 ```
@@ -53,21 +53,21 @@ The preceding code example preserves all 64 bits of the pointer value.
 
 Inline 64-bit functions such as **PtrToUlong** and **UlongToPtr** safely convert between pointer and integer types without relying on assumptions about the relative sizes of these types. If one type is shorter than the other, it must be extended when converting to the longer type. If the shorter type is extended by filling with the sign bit or with zeros, each Win64 function can handle these situations. Consider the following code example.
 
-```
+```cpp
     ULONG ulHWPhysAddr[NUM_PHYS_ADDRS];
     ulSlotPhysAddr[0] = ULONG(pulPhysHWBuffer) + HW_BUFFER_SIZE;  // wrong
 ```
 
 You should replace the preceding code example with the following code example.
 
-```
+```cpp
     ULONG_PTR ulHWPhysAddr[NUM_PHYS_ADDRS];
     ulSlotPhysAddr[0] = PtrToUlong(pulPhysHWBuffer) + HW_BUFFER_SIZE;  // correct
 ```
 
 The second code example is preferred even though
 
-```
+```cpp
 ulSlotPhysAddr
 ```
 

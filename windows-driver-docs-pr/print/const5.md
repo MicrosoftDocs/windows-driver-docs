@@ -51,7 +51,7 @@ The Web Services for Devices (WSD) Const construct defines the data type and val
 
 The following code example returns a constant value that has been defined in the bidi extension file for the particular bidi schema query.
 
-```
+```cpp
 <Property name="Printer">
   <Property name="Extension">
     <Const name="Version" type="BIDI_INT">1</Const>
@@ -61,7 +61,7 @@ The following code example returns a constant value that has been defined in the
 
 This example results in the following query:
 
-```
+```cpp
 \Printer.Extension.Version:1
 ```
 

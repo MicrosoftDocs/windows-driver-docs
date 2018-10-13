@@ -441,7 +441,7 @@ The property value (operation data) is a DWORD that specifies the priority. The 
 
 The following channel-group priorities are defined in header file Dmusprop.h:
 
-```
+```cpp
   DAUD_CRITICAL_VOICE_PRIORITY
   DAUD_HIGH_VOICE_PRIORITY
   DAUD_STANDARD_VOICE_PRIORITY
@@ -463,7 +463,7 @@ When a synthesizer miniport driver is created, it assigns a default priority to 
 
 Header file Dmusprop.h defines the following priority offsets:
 
-```
+```cpp
   DAUD_CHAN10_VOICE_PRIORITY_OFFSET
   DAUD_CHAN1_VOICE_PRIORITY_OFFSET
   DAUD_CHAN2_VOICE_PRIORITY_OFFSET
@@ -484,7 +484,7 @@ Header file Dmusprop.h defines the following priority offsets:
 
 The preceding list of offsets is ordered with the highest priority at the top of the list. Header file Dmusprop.h also defines the default priorities of the channels in each channel group by bitwise ORing each of these offsets with DAUD\_STANDARD\_VOICE\_PRIORITY. For example, the following definition gives the default priority for channel 1 in each channel group:
 
-```
+```cpp
   #define DAUD_CHAN1_DEF_VOICE_PRIORITY \
     (DAUD_STANDARD_VOICE_PRIORITY | DAUD_CHAN1_VOICE_PRIORITY_OFFSET)
 ```

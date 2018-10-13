@@ -38,7 +38,7 @@ For video substream surfaces with the AYUV [*FOURCC*](https://msdn.microsoft.com
 
 The AYUV color for transparent black is set as follows:
 
-```
+```cpp
 DXVA_AYUVsample2 clr; 
 clr.bCrValue = 0x80;
 clr.bCbValue = 0x80;
@@ -69,7 +69,7 @@ For YUV packed surface types, the VMR sets the fill color DWORD to the appropria
 
 For planar surface types, the VMR sets the AYUV color for opaque black as follows:
 
-```
+```cpp
 DXVA_AYUVsample2 clr; 
 clr.bCrValue = 0x80;
 clr.bCbValue = 0x80;

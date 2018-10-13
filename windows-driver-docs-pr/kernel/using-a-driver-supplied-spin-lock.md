@@ -34,7 +34,7 @@ Any driver that queues its own IRPs and uses its own spin lock must do the follo
 
 To create the spin lock, the driver calls [**KeInitializeSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff552160). In the following example, the driver saves the spin lock in a **DEVICE\_CONTEXT** structure along with the queue it has created:
 
-```
+```cpp
 typedef struct {
     LIST_ENTRYirpQueue;
     KSPIN_LOCK irpQueueSpinLock;
@@ -50,7 +50,7 @@ VOID InitDeviceContext(DEVICE_CONTEXT *deviceContext)
 
 To queue an IRP, the driver acquires the spin lock, calls [**InsertTailList**](https://msdn.microsoft.com/library/windows/hardware/ff547823), and then marks the IRP pending, as in the following example:
 
-```
+```cpp
 NTSTATUS QueueIrp(DEVICE_CONTEXT *deviceContext, PIRP Irp)
 {
    PDRIVER_CANCEL  oldCancelRoutine;
@@ -113,7 +113,7 @@ The first call sets the *Cancel* routine for the IRP. However, because the IRP m
 
 The following example shows how to remove an IRP from the previously created queue:
 
-```
+```cpp
 PIRP DequeueIrp(DEVICE_CONTEXT *deviceContext)
 {
    KIRQL oldIrql;
@@ -162,7 +162,7 @@ Note the use of [**InitializeListHead**](https://msdn.microsoft.com/library/wind
 
 The *Cancel* routine, in turn, simply does the following:
 
-```
+```cpp
 VOID IrpCancelRoutine(IN PDEVICE_OBJECT DeviceObject, IN PIRP Irp)
 {
    DEVICE_CONTEXT  *deviceContext = DeviceObject->DeviceExtension;

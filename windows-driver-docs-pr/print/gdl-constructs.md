@@ -44,7 +44,7 @@ An arbitrary amount of whitespace and linebreak sequences can precede or follow 
 
 The following code example shows a GDL construct.
 
-```
+```cpp
 *ConstructType: ConstructTag
 {   *%  Begin Construct Delimiter
 *%  this is the Construct Body

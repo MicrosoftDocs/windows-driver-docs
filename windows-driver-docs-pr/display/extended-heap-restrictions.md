@@ -25,7 +25,7 @@ The [**DD\_MORESURFACECAPS**](https://msdn.microsoft.com/library/windows/hardwar
 
 The driver should also fill in an appropriate **dwSize** value in the DD\_MORESURFACECAPS structure. The value of **dwSize** is calculated in this way:
 
-```
+```cpp
 DDMORESURFACECAPS.dwSize = 
           (DWORD) (sizeof(DDMORESURFACECAPS) 
         + (((signed int)DDHALINFO.vmiData.dwNumHeaps) - 1) 

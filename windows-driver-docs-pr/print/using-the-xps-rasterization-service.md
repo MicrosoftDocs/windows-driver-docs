@@ -40,7 +40,7 @@ When the factory object is no longer needed, the filter should release the objec
 
 The following code example shows how to obtain an **IXpsRasterizationFactory** interface instance from an **IPrintPipelinePropertyBag** interface instance:
 
-```
+```cpp
 //
 // Retrieve a reference to the XPS rasterization factory
 // from the print pipeline property bag.

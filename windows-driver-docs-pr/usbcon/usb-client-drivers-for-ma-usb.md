@@ -97,7 +97,7 @@ Where:
 
 For example,
 
-```
+```cpp
 
 REG_MULTI_SZ:"EndpointPriorities" = 
 “"1,0,*,BULK_IN,0,VIDEO",   // BULK IN endpoint in interface 0, configuration 1, all alternate settings has VIDEO priority. 

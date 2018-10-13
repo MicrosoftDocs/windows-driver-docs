@@ -38,7 +38,7 @@ Assuming that the 32-bit application has passed a valid value for **Irp-&gt;User
 
  
 
-```
+```cpp
 typedef struct _IOCTL_PARAMETERS2 {
     LARGE_INTEGER DeviceTime;
 } IOCTL_PARAMETERS2, *PIOCTL_PARAMETERS2;
@@ -69,7 +69,7 @@ The following sections tell how to fix the problem described above. Note that al
 
 The safest way to avoid misalignment problems is to make a copy of the buffer before accessing its contents, as in the following example.
 
-```
+```cpp
 case IOCTL_SETTIME: {
     PIOCTL_PARAMETERS2 p = (PIOCTL_PARAMETERS2)Irp->UserBuffer;
 #if _WIN64
@@ -86,7 +86,7 @@ case IOCTL_SETTIME: {
 
 This solution can be optimized for better performance by first checking whether the buffer contents are correctly aligned. If so, the buffer can be used as is. Otherwise, the driver makes a copy of the buffer.
 
-```
+```cpp
 case IOCTL_SETTIME: {
     PIOCTL_PARAMETERS2 p = (PIOCTL_PARAMETERS2)Irp->UserBuffer;
 #if _WIN64
@@ -110,7 +110,7 @@ case IOCTL_SETTIME: {
 
 The **UNALIGNED** macro tells the C compiler to generate code that can access the **DeviceTime** field without taking an alignment fault. Note that using this macro on Itanium-based platforms is likely to make your driver significantly larger and slower.
 
-```
+```cpp
 typedef struct _IOCTL_PARAMETERS2 {
     LARGE_INTEGER DeviceTime;
 } IOCTL_PARAMETERS2;
@@ -121,7 +121,7 @@ typedef IOCTL_PARAMETERS2 UNALIGNED *PIOCTL_PARAMETERS2;
 
 The misalignment problem described earlier can also occur in buffered I/O requests. In the following example, the IOCTL buffer contains an embedded pointer to a LARGE\_INTEGER structure.
 
-```
+```cpp
 typedef struct _IOCTL_PARAMETERS3 {
     LARGE_INTEGER *pDeviceCount;
 } IOCTL_PARAMETERS3, *PIOCTL_PARAMETERS3;0
@@ -137,7 +137,7 @@ As in the earlier example, assuming that the 32-bit application has passed a val
 
 This problem can be fixed either by making a properly aligned copy of the LARGE\_INTEGER structure, as in Solution 1, or by using the UNALIGNED macro as follows:
 
-```
+```cpp
 typedef struct _IOCTL_PARAMETERS3 {
     LARGE_INTEGER UNALIGNED *pDeviceCount;
 } IOCTL_PARAMETERS3, *PIOCTL_PARAMETERS3;

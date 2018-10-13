@@ -22,7 +22,7 @@ Msxpsinc.gpd and Msxpsinc.ppd files, you can decide how to construct the GPD and
 
 The following code example shows a GPD example to specify the Reverse Order Printing feature that a filter supports in a Unidrv-based XPSDrv filter pipeline:
 
-```
+```cpp
 *Feature: ReverseOrderPrinting
  {
  *PrintSchemaKeywordMap: "JobPageOrder"
@@ -43,7 +43,7 @@ In the preceding example, the "ReverseOrderPrinting" custom GPD feature is defin
 
 The following code example shows a PPD example to specify the Page Orientation feature that a filter supports in a PScript5-based XPSDrv filter pipeline.
 
-```
+```cpp
 *OpenUI *PageOrientation: PickOne
 *DefaultPageOrientation: Portrait
 *PageOrientation Portrait: ""

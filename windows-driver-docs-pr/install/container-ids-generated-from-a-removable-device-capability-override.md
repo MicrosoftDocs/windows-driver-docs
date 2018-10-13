@@ -98,7 +98,7 @@ In this example, the override will disable the removable device capability, and 
 
 The following is an example of the registry table format for this override.
 
-```
+```cpp
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceOverrides
     USB#VID_1234&PID_5678
         LocationPaths
@@ -126,7 +126,7 @@ In this example, the override will enable the removable device capability, and t
 
 The following is a high-level description of the registry table format for this override.
 
-```
+```cpp
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceOverrides
     USB#VID_062A&PID_00001
         LocationPaths

@@ -63,7 +63,7 @@ Similarly, PortCls is not directly involved in managing resources. It only needs
 
 The following code example shows how the adapter driver performs these actions:
 
-```
+```cpp
   //
   // Instantiate the port by calling a function supplied by PortCls.
   //

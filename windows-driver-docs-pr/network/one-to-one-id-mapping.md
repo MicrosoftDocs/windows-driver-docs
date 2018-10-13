@@ -31,7 +31,7 @@ An entry in an **Oem*Xxx*** section of a netmap.inf file that specifies one-to-o
 
 For example:
 
-```
+```cpp
 netservice=netservice_2000
 ```
 

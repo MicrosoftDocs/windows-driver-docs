@@ -31,7 +31,7 @@ This registry value indicates the number of days that the DMRC waits before it r
 
 The **CheckBackMDNotRetrieved** value is located under the following registry key:
 
-```
+```cpp
 HKLM\Software\Microsoft\Windows\CurrentVersion\Device Metadata
 ```
 
@@ -48,7 +48,7 @@ This registry value indicates the number of days that the DMRC waits before it q
 
 The **CheckBackMDRetrieved** value is located under the following registry key:
 
-```
+```cpp
 HKLM\Software\Microsoft\Windows\CurrentVersion\Device Metadata
 ```
 

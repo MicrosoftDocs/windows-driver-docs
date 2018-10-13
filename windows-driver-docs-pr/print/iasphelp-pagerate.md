@@ -85,7 +85,7 @@ To determine the units in which the page rate is measured, query the [**Iasphelp
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::PageRate** property can be queried.
 
-```
+```cpp
     Dim objPrinter, PtrPageRate
     strPrinter = Session("MS_printer")
     Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")

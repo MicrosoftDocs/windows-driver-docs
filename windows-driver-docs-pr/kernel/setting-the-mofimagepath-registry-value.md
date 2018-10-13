@@ -28,7 +28,7 @@ To publish a driver's schema in a separate file:
 
 3.  Add the **MofImagePath** registry value under the driver's Services key. For example, the following shows the registry value for a driver named *DriverName*:
 
-    ```
+    ```cpp
     HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
         \DriverName
             MofImagePath    "\SystemRoot\System32\Drivers\DriverNameMof.dll"
@@ -36,7 +36,7 @@ To publish a driver's schema in a separate file:
 
 You can set this key in the driver's INF file, as follows:
 
-```
+```cpp
 ; This is the Services section for the driver
 [Driver_service_install_section]
 AddReg=Driver_AddReg

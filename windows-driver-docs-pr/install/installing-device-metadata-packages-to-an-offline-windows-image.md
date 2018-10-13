@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 Computer OEMs can add device metadata packages to an offline image of Windows by copying the packages to the local device metadata store. This store is in the following location:
 
-```
+```cpp
 %PROGRAMDATA%\Microsoft\Windows\DeviceMetadataStore\<locale>
 ```
 
@@ -23,13 +23,13 @@ You must first create the *&lt;locale&gt;* subdirectory based on the target loca
 
 For example, a device metadata package that is localized for the English language of Great Britain must be copied to the following location:
 
-```
+```cpp
 %PROGRAMDATA%\Microsoft\Windows\DeviceMetadataStore\EN-GB
 ```
 
 A device metadata package that is localized for the Japanese language must be copied to the following location:
 
-```
+```cpp
 %PROGRAMDATA%\Microsoft\Windows\DeviceMetadataStore\JA
 ```
 

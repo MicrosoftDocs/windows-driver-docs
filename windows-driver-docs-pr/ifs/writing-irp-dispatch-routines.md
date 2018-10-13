@@ -34,7 +34,7 @@ File system filter drivers use dispatch routines that are similar to those used 
 
 Every IRP dispatch routine is defined as follows:
 
-```
+```cpp
 NTSTATUS 
 (*PDRIVER_DISPATCH) ( 
     IN PDEVICE_OBJECT DeviceObject, 

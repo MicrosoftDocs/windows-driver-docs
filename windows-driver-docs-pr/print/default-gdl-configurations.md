@@ -25,7 +25,7 @@ If a client has no specific configuration, it can ask the parser to create and r
 
 For example, assume that the default value of the Weather parameter is Sunny. Then, you could use the following code example to define the default values.
 
-```
+```cpp
 *Feature: Weather
 {
    *DefaultOption: Sunny

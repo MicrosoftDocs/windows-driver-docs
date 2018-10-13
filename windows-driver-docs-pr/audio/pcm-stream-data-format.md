@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 This example uses a [**KSDATAFORMAT\_WAVEFORMATEX**](https://msdn.microsoft.com/library/windows/hardware/ff537095) structure to describe the data format of a PCM stream.
 
-```
+```cpp
   DataFormat.FormatSize  = sizeof(KSDATAFORMAT_WAVEFORMATEX);
   DataFormat.Flags       = 0;
   DataFormat.SampleSize  = 0;

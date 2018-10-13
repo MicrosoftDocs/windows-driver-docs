@@ -23,7 +23,7 @@ An INF file that installs a UMDF driver must contain a WDF-specific **DDInstall*
 
 The following section from WudfBioUsbSample.inx in the [WudfBioUsbSample](https://github.com/Microsoft/Windows-driver-samples/tree/master/biometrics/driver) sample shows how to set this directive:
 
-```
+```cpp
 [Biometric_Install.NT.Wdf]
 KmdfService=WINUSB, WinUsb_Install
 UmdfDispatcher=WinUsb
@@ -52,7 +52,7 @@ The code to pend a read request should be a loop of the following steps:
 5.  Call [**IWDFIoRequest::Send**](https://msdn.microsoft.com/library/windows/hardware/ff559149) to send the read request to the device.
 
 6.  Process read request when callback completion occurs. Before the [**OnCompletion**](https://msdn.microsoft.com/library/windows/hardware/ff556905) routine initiates a new pending read request, it should check the state of the I/O target. To do this, query [IWDFUsbTargetPipe](https://msdn.microsoft.com/library/windows/hardware/ff560391) for a pointer to its [IWDFIoTargetStateManagement](https://msdn.microsoft.com/library/windows/hardware/ff559198) interface. Then call [**IWDFIoTargetStateManagement::GetState**](https://msdn.microsoft.com/library/windows/hardware/ff559202):
-    ```
+    ```cpp
     IWDFIoTarget * pTarget
     IWDFIoTargetStateManagement * pStateMgmt = NULL;
     WDF_IO_TARGET_STATE state;
@@ -75,7 +75,7 @@ A WBDI driver should support [USB Selective Suspend](https://msdn.microsoft.com/
 
 A device that supports system wake and device idle should enable the registry settings for selective suspend in WinUsb, as shown in this code example from WudfBioUsbSample.inx:
 
-```
+```cpp
 HKR,,"SystemWakeEnabled",0x00010001,1
 HKR,,"DeviceIdleEnabled",0x00010001,1
 ```

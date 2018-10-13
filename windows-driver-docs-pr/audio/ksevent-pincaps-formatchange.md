@@ -59,7 +59,7 @@ When an audio port driver calls the [**EventHandler**](https://msdn.microsoft.co
 
 So, for example, a driver that supports the `KSEVENT_PINCAPS_FORMATCHANGE` event must populate a **PCEVENT\_ITEM** structure as follows:
 
-```
+```cpp
 static PCEVENT_ITEM FormatChangePinEvent[] = {
   {
     &amp;KSEVENTSETID_PinCapsChange,

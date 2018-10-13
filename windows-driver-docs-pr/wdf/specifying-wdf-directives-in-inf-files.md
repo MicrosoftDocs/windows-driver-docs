@@ -42,7 +42,7 @@ An INF file that installs a UMDF driver must contain a Microsoft Windows Driver 
 
 The following code example shows UMDF-specific directives in a WDF-specific *DDInstall* section.
 
-```
+```cpp
 [Skeleton_Install.Wdf]
 UmdfService=UMDFSkeleton,UMDFSkeleton_Install
 UmdfServiceOrder=UMDFSkeleton
@@ -133,7 +133,7 @@ A **UmdfDispatcher** directive is optional.
 
 The following code example shows the **UmdfDispatcher** directive in a WDF-specific **DDInstall** section.
 
-```
+```cpp
 [Xxx_Install.Wdf]
 UmdfDispatcher=NativeUSB
 ```
@@ -176,7 +176,7 @@ UMDF versions 1.11 and later support the **UmdfFsContextUsePolicy** directive.
 
 The following code example shows the required directives in a *UMDF-service-install* section.
 
-```
+```cpp
 [UMDFSkeleton_Install]
 UmdfLibraryVersion=1.0.0
 ServiceBinary=%12%\UMDF\UMDFSkeleton.dll
@@ -208,7 +208,7 @@ Service names for the class extension drivers could be located as a subkey under
 
 On Windows 8.1 and earlier, to avoid a required reboot when you update a UMDF driver, specify the **COPYFLG\_IN\_USE\_RENAME** flag in the [**CopyFiles Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546346) in your driver's INF file, as shown in this example:
 
-```
+```cpp
 [VirtualSerial_Install.NT]
 CopyFiles=UMDriverCopy
  

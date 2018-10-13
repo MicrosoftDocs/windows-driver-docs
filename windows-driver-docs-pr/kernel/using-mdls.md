@@ -55,7 +55,7 @@ The [I/O manager](windows-kernel-mode-i-o-manager.md) is a frequent source of I/
 
 The following code example is a driver-implemented function that frees an MDL chain from an IRP:
 
-```
+```cpp
 VOID MyFreeMdl(PMDL Mdl)
 {
     PMDL currentMdl, nextMdl;

@@ -24,7 +24,7 @@ To install ICC profiles for a printer, the files must be listed in a [printer IN
 
 Following is an example of an .inf file that causes two ICC profile files to be installed. Note that profile files are written to the color directory, which has a [printer dirid](printer-dirids.md) value of 66003.
 
-```
+```cpp
 [Version]
 Signature="$Windows NT$"
 Provider="My Company" 

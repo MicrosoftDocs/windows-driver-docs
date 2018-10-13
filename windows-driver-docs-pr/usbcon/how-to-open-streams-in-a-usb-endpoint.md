@@ -165,7 +165,7 @@ In the case of stream transfers, both abort-pipe and reset-pipe requests are not
 
 The following code example shows how to open streams.
 
-```
+```cpp
 NTSTATUS
     OpenStreams (
     _In_ WDFDEVICE Device,

@@ -25,7 +25,7 @@ Every minifilter driver must call [**FltStartFiltering**](https://msdn.microsoft
 
 In the MiniSpy sample driver, [**FltStartFiltering**](https://msdn.microsoft.com/library/windows/hardware/ff544569) is called as shown in the following code example:
 
-```
+```cpp
 status = FltStartFiltering( MiniSpyData.FilterHandle );
 if( !NT_SUCCESS( status )) {
   FltUnregisterFilter( MiniSpyData.FilterHandle );

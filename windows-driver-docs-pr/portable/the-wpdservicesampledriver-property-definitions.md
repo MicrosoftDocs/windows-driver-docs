@@ -30,7 +30,7 @@ In WPD, properties are represented by the PROPERTYKEY data structure. This struc
 
 In the sample driver, the supported contact properties are defined in an array of **PropertyAttributeInfo** structures. This structure has the following format:
 
-```
+```cpp
 typedef struct tagPropertyAttributeInfo
 {
     const PROPERTYKEY*                pKey;
@@ -42,7 +42,7 @@ typedef struct tagPropertyAttributeInfo
 
 The *FakeContactContent.cpp* file defines the array of supported contact properties:
 
-```
+```cpp
 const PropertyAttributeInfo g_SupportedContactProperties[] =
 {
     {&WPD_OBJECT_ID,                             VT_LPWSTR, UnspecifiedForm_CanRead_CannotWrite_CannotDelete_Fast,  NULL}, 
@@ -64,7 +64,7 @@ const PropertyAttributeInfo g_SupportedContactProperties[] =
 
 These properties are initialized in the *FakeContactsServiceContent.cpp* module in the **InitializeContent** method, as shown in the following example:
 
-```
+```cpp
         if (pContact)
         {
             pContact->Name.Format(L"Contact%d", *pdwLastObjectID);
@@ -87,7 +87,7 @@ These properties are initialized in the *FakeContactsServiceContent.cpp* module 
 
 The *FakeContactsServiceContent.cpp* file defines the array of supported service properties:
 
-```
+```cpp
 const PropertyAttributeInfo g_SupportedServiceProperties[] =
 {
     {&WPD_OBJECT_ID,                                VT_LPWSTR,          UnspecifiedForm_CanRead_CannotWrite_CannotDelete_Fast, NULL},

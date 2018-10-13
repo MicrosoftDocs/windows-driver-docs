@@ -22,7 +22,7 @@ The following is a list of guidelines for biometric device installation. The cod
 
 -   WBDI drivers should specify a class of "Biometric." Set ClassGuid equal to the value that corresponds to GUID\_DEVCLASS\_BIOMETRIC in Devguid.h:
 
-    ```
+    ```cpp
     [Version]
     Signature="$Windows NT$"
     Class=Biometric
@@ -31,7 +31,7 @@ The following is a list of guidelines for biometric device installation. The cod
 
 -   In your .HW section, provide AddReg directives to specify three sections that contain entries to be added to the registry:
 
-    ```
+    ```cpp
     [Biometric_Install.NT.hw]
     AddReg=Biometric_Device_AddReg
     AddReg=DriverPlugInAddReg, DatabaseAddReg
@@ -39,7 +39,7 @@ The following is a list of guidelines for biometric device installation. The cod
 
 -   Provide the named sections referred to in the .HW section. The \[Biometric\_Device\_AddReg\] section sets values for the biometric device, including the exclusive flag and system wake/device idle. To be recognized by Windows Biometric Framework, UMDF-based WBDI drivers must set the "Exclusive" value to 1. The first two lines of the \[Biometric\_Device\_AddReg\] section specify access control list (ACL) rights so that the device can only be opened by an administrator or the local system account. When you specify these ACL rights, third-party applications cannot open the device and capture fingerprint data when the WinBio service is not running. For example:
 
-    ```
+    ```cpp
     [Biometric_Device_AddReg]
     HKR,,"DeviceCharacteristics",0x10001,0x0100     ; Use same security checks on relative opens
     HKR,,"Security",,"D:P(A;;GA;;;BA)(A;;GA;;;SY)"  ; Allow generic-all access to Built-in administrators and Local system
@@ -58,7 +58,7 @@ The following is a list of guidelines for biometric device installation. The cod
 
 -   The second named section contains registry values for the plug-in adapters. The sample uses the Microsoft-provided sensor adapter and storage adapter. This section also enables Windows log-in support by setting the SystemSensor value:
 
-    ```
+    ```cpp
     [DriverPlugInAddReg]
     HKR,WinBio\Configurations,DefaultConfiguration,,"0"
     HKR,WinBio\Configurations\0,SensorMode,0x10001,1                                ; Basic - 1, Advanced - 2
@@ -71,7 +71,7 @@ The following is a list of guidelines for biometric device installation. The cod
 
 -   Finally, the third section sets the following registry values for the database service. The identifying GUID must be unique for each vendor database of a certain format. For instance, in this code example from the sample, change 6E9D4C5A-55B4-4c52-90B7-DDDC75CA4D50 to your own unique GUID in your INF file.
 
-    ```
+    ```cpp
     [DatabaseAddReg]
     HKLM,System\CurrentControlSet\Services\WbioSrvc\Databases\{6E9D4C5A-55B4-4c52-90B7-DDDC75CA4D50},BiometricType,0x00010001,0x00000008
     HKLM,System\CurrentControlSet\Services\WbioSrvc\Databases\{6E9D4C5A-55B4-4c52-90B7-DDDC75CA4D50},Attributes,0x00010001,0x00000001

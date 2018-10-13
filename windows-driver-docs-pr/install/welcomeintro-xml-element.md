@@ -21,7 +21,7 @@ The **welcomeIntro** XML element customizes the main text on the DPInst welcome 
 
 ### Element Tag
 
-```
+```cpp
 <welcomeIntro>
 ```
 
@@ -62,7 +62,7 @@ None
 
 The following code example demonstrates a **welcomeIntro** element that customizes the main text on a welcome page. The text that specifies the custom welcome introduction is shown in bold font style.
 
-```
+```cpp
 <dpinst>
   ...
   <language code="0x0409">

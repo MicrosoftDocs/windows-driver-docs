@@ -54,7 +54,7 @@ Therefore, if you want a kernel-mode driver to receive the client's user credent
 
 The following example shows how a UMDF driver might use the **WDF\_REQUEST\_SEND\_OPTION\_IMPERSONATE\_CLIENT** flag to send a file creation request to an I/O target. The driver's INF file must also include the **UmdfImpersonationLevel** directive as described above.
 
-```
+```cpp
 WDFIOTARGET iotarget;
 WDF_REQUEST_SEND_OPTIONS options;
 NTSTATUS status;

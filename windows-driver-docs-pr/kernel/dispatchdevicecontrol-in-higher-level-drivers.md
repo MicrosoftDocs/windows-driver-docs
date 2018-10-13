@@ -26,7 +26,7 @@ Any new higher-level driver that is not closely associated with a particular dev
 
 A device control request is usually handled synchronously. That is, a higher-level driver's *DispatchDeviceControl* routine can frequently return control to the system as follows:
 
-```
+```cpp
         :    : 
     return IoCallDriver(DeviceObject->NextDeviceObject, Irp);
 ```

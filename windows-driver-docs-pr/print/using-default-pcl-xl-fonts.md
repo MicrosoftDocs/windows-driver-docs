@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 If you want to include the standard PCL XL fonts, you should include the standard resource DLL, *pclxl.dll*, that is part of the cab file. The following line, which should appear in the GPD, uses the \*ResourceDLL attribute to specify the resource DLL to be used.
 
-```
+```cpp
 *ResourceDLL: "pclxl.dll"
 ```
 

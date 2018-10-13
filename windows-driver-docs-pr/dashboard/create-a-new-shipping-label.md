@@ -120,7 +120,7 @@ The hardware ID object should contain a valid combination of bundle ID, PNP ID, 
 
 The following example demonstrates how to create a new product.
 
-```
+```cpp
 POST https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions/{submissionId}/shippingLabels HTTP/1.1
 Authorization: Bearer <your access token>
 ```

@@ -17,7 +17,7 @@ The miniport driver uses this identifier to construct a binding between the info
 
 The HBAFCPID class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class HBAFCPID {
   [WmiDataId(1)] uint32  Fcid;
   [HBAType("HBA_WWN"), WmiDataId(2)] uint8  NodeWWN[8];

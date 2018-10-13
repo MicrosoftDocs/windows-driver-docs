@@ -26,7 +26,7 @@ A GDL attribute is a keyword and value pair. The *value* is a piece of data, and
 
 The following code example shows a GDL attribute.
 
-```
+```cpp
 *Weight: 330 pounds
 ```
 

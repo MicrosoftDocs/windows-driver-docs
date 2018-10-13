@@ -63,7 +63,7 @@ The following code example is a sample XML file that extends the bidi communicat
 
 The preceding code sample results in the following queries:
 
-```
+```cpp
 \Printer.Layout.InputBins.TopBin:Installed
 \Printer.Layout.InputBins.TopBin:Level
 \Printer.Layout.InputBins.TopBin:MediaSize

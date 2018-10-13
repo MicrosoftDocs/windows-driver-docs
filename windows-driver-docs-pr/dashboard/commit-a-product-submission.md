@@ -49,7 +49,7 @@ Do not provide request body for this method.
 
 The following example demonstrates how to commit a submission.
 
-```
+```cpp
 POST https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14631253285588838/submissions/1152921504621465124/commit HTTP/1.1
 Authorization: Bearer <your access token>
 ```

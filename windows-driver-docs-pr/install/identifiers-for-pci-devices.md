@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 
 The following is a list of the [device identification string](device-identification-strings.md) formats that the PCI bus driver uses to report hardware IDs. When the Plug and Play (PnP) manager queries the driver for the hardware IDs of a device, the PCI bus driver returns a list of hardware IDs in order of increasing generality.
 
-```
+```cpp
 PCI\\VEN_v(4)&DEV_d(4)&SUBSYS_s(4)n(4)&REV_r(2)
 
 PCI\\VEN_v(4)&DEV_d(4)&SUBSYS_s(4)n(4)
@@ -68,7 +68,7 @@ The following is the hardware ID for the display adapter in the previous example
 
 The following is a list of the device identification string formats that the PCI bus driver uses to report compatible IDs. The variety of these formats provides substantial flexibility to specify compatible IDs. The PCI bus driver constructs a list of compatible IDs based on the information that the driver can obtain from the device. When the PnP manager queries the driver for the compatible IDs of a device, the PCI bus driver returns a list of compatible IDs in order of decreasing compatibility.
 
-```
+```cpp
 PCI\\VEN_v(4)&DEV_d(4)&REV_r(2)
 
 PCI\\VEN_v(4)&DEV_d(4)
@@ -98,7 +98,7 @@ Where:
 
 For the example of a display adapter on a portable computer, any of the following compatible IDs would match the information in an INF file for that adapter:
 
-```
+```cpp
 PCI\\VEN_102C&DEV_00E0&REV_04
 
 PCI\\VEN_102C&DEV_00E0

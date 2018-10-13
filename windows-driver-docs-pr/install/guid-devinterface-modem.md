@@ -51,7 +51,7 @@ Drivers for modem devices register instances of this device interface class to n
 
 GUID_DEVINTERFACE_MODEM in *Ntddmodm.h* will be defined correctly only if the correct versions of the INITGUID and DEFINE_GUID macros are defined before the inclusion of *Ntddmodm.h*. The DEFINE_GUID macro is defined in the *Guiddef.h*. To make sure that INITGUID, DEFINE_GUID, and GUID_DEVINTERFACE_MODEM are correctly defined, include the following code in a header file:
 
-```
+```cpp
 #ifndef INITGUID
 #define INITGUID
 #include <guiddef.h>

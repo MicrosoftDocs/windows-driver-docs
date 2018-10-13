@@ -37,7 +37,7 @@ To create a *.cdf* file for the *ToastPkg* sample [driver package](driver-packag
 
 1.  Start Notepad and copy the text from the following sample. It contains the list of files to be cataloged, along with their attributes.
 
-    ```
+    ```cpp
     [CatalogHeader]
     Name=tstamd64.cat
     PublicVersion=0x0000001
@@ -61,7 +61,7 @@ To create a *.cdf* file for the *ToastPkg* sample [driver package](driver-packag
 
 The following command line shows how to create a catalog file through the [MakeCat](http://go.microsoft.com/fwlink/p/?linkid=104922) tool by using the *tstamd64.cdf* file:
 
-```
+```cpp
 makecat -v tstamd64.cdf
 ```
 

@@ -12,7 +12,7 @@ An HBA miniport driver that supports the Storage Management API uses the MS\_SMH
 
 The MS\_SMHBA\_BINDINGENTRY class is defined as follows in Hbaapi.mof:
 
-```
+```cpp
 class MS_SMHBA_BINDINGENTRY
 {
     [SMHBA_BIND_TYPE_QUALIFIERS, WmiDataId(1)]

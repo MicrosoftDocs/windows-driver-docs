@@ -30,13 +30,13 @@ The nested context can appear outside of any context or within another nested co
 
 The following code example shows a GDL nested context.
 
-```
+```cpp
 *good_nests: ( { } [ ( ) ] )
 ```
 
 The following code examples shows GDL nested contexts that contain errors.
 
-```
+```cpp
 *bad_nests: (  ] *%  end nesting delimiter can only be used within its nesting context.
 *bad_nests: (  ]  )
 *bad_nests:   ] [   *%  end nesting delimiter can only be used within its nesting context.
@@ -48,7 +48,7 @@ The following code examples shows GDL nested contexts that contain errors.
 
 The entire contents of a nested context is treated as part of the [value](gdl-values.md). For example, the following GDL code represents one entry with a keyword of "\*KeywordA". The remainder of the fragment is the value of \*KeywordA, because what appears to be separate entries for \*KeywordB and \*KeywordC are contained within a nested context. In fact, the numbers "12, 38, 709" are themselves in a nested context that is defined by parentheses delimiters that are nested within the outer context that is defined by the square bracket delimiters.
 
-```
+```cpp
 *KeywordA: [
 *KeywordB:  List(12, 38, 709)
 *KeywordC:  "the small brown fox" ]

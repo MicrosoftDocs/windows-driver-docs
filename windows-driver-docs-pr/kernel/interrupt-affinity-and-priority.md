@@ -71,7 +71,7 @@ The following table lists the [**IRQ\_DEVICE\_POLICY**](https://msdn.microsoft.c
 
 A driver's INF file can provide default settings for the registry values. Here is an example of how to set the **DevicePolicy** value to **IrqPolicyOneCloseProcessor** in the INF file. For more information, see [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320).
 
-```
+```cpp
 [install-section-name.HW]
 AddReg=add-registry-section 
 
@@ -110,7 +110,7 @@ The following table gives the correspondence between registry settings and membe
 
 The KAFFINITY type is an affinity mask that represents a set of logical processors in a group.
 
-```
+```cpp
 typedef ULONG_PTR  KAFFINITY;
 ```
 

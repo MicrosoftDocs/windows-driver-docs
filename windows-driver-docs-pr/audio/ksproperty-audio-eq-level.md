@@ -61,7 +61,7 @@ The KSPROPERTY\_AUDIO\_EQ\_LEVEL property specifies the equalization levels for 
 
 The property value (operation data) is an array of LONG elements:
 
-```
+```cpp
   LONG  Level[N];
 ```
 

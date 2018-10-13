@@ -40,7 +40,7 @@ Metadata lookup is hierarchical. This means if your select statement is **/selec
 
 So, if you want all or most of the tests in your class to have the same "Priority", or say "Owner, you can get that by just specifying it at the class level. For the one or few tests that are an exception to this rule, you can explicitly provide the metadata at the "TestMethod" level. See the following test for details:
 
-```
+```cpp
 1    namespace WEX { namespace UnitTests { namespace Samples
 2    {
 3        //

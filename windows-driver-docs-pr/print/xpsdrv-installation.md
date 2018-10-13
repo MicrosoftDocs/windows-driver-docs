@@ -27,7 +27,7 @@ To be properly installed by the spooler, XPSDrv drivers must include the followi
 
 The following code example illustrates an INF file with the preceding changes.
 
-```
+```cpp
 [Version]
 Signature="$Windows NT$"
 Provider=%MS%

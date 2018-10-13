@@ -22,7 +22,7 @@ In [WudfBioUsbSample](https://github.com/Microsoft/Windows-driver-samples/tree/m
 
 In the method `CBiometricIoQueue::Initialize`, specifically, the driver queries the owning CBiometricIoQueue object for a pointer to the [IQueueCallbackDeviceIoControl](https://msdn.microsoft.com/library/windows/hardware/ff556852) interface that the framework uses to determine the event callback functions that the driver subscribes to on the queue:
 
-```
+```cpp
 if (SUCCEEDED(hr)) 
 {
 hr = this->QueryInterface(__uuidof(IUnknown), (void **)&unknown);
@@ -31,7 +31,7 @@ hr = this->QueryInterface(__uuidof(IUnknown), (void **)&unknown);
 
 Then the driver calls [**IWDFDevice::CreateIoQueue**](https://msdn.microsoft.com/library/windows/hardware/ff557020) to configure the default I/O queue:
 
-```
+```cpp
 hr = FxDevice->CreateIoQueue(unknown,
 FALSE,
 WdfIoQueueDispatchParallel,
@@ -45,7 +45,7 @@ The call specifies WdfIoQueueDispatchParallel so that the framework will present
 
 Next, the driver calls [**IWDFDevice::ConfigureRequestDispatching**](https://msdn.microsoft.com/library/windows/hardware/ff557014) to configure the queue to filter all Device I/O requests:
 
-```
+```cpp
 hr = FxDevice->ConfigureRequestDispatching(fxQueue,
 WdfRequestDeviceIoControl,
 TRUE);
@@ -57,19 +57,19 @@ There can only be one outstanding [**IOCTL\_BIOMETRIC\_CAPTURE\_DATA**](https://
 
 In the sample, if there is a pending I/O request, the sample maintains a pointer to the request in a member of the CBiometricDevice class, as defined in Device.h:
 
-```
+```cpp
 IWDFIoRequest *m_PendingRequest;
 ```
 
 While one sensor data collection I/O is pending, subsequent calls to the data collection IOCTLs should fail:
 
-```
+```cpp
 FxRequest->Complete(WINBIO_E_DATA_COLLECTION_IN_PROGRESS);
 ```
 
 When a capture request is completed or canceled, this value is set to **NULL**:
 
-```
+```cpp
 IWDFIoRequest *FxRequest = (IWDFIoRequest *)InterlockedExchangePointer((PVOID *)&m_PendingRequest, NULL);
 ```
 

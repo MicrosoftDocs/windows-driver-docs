@@ -56,7 +56,7 @@ In miniport drivers for Windows XP and later, the property handler for a multich
 
 The following code example shows how to handle a [basic-support query for an audio property](basic-support-queries-for-audio-properties.md) with non-uniform property values. Variable pDescription in the first line of code below points to the [**KSPROPERTY\_DESCRIPTION**](https://msdn.microsoft.com/library/windows/hardware/ff565132) structure at the beginning of the data buffer into which the handler writes the basic-support information:
 
-```
+```cpp
   //
   // Fill in the members header.
   //
@@ -101,7 +101,7 @@ If a multichannel node has a property with a per-channel property value of type 
 
 The following code example shows how to handle the basic-support request for a multichannel node, in the case of a property with a per-channel property value of type BOOL:
 
-```
+```cpp
   //
   // Fill in the members header.
   //
@@ -152,7 +152,7 @@ For example, if a device exposes four channels on a line and the user has select
 
 At the driver level, the KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG property uses a mask value of KSAUDIO\_SPEAKER\_QUAD or KSAUDIO\_SPEAKER\_SURROUND to represent a quadraphonic or surround speaker configuration, respectively. Header file Ksmedia.h defines these values as follows:
 
-```
+```cpp
   #define KSAUDIO_SPEAKER_QUAD      (SPEAKER_FRONT_LEFT | SPEAKER_FRONT_RIGHT | \
                                      SPEAKER_BACK_LEFT | SPEAKER_BACK_RIGHT)
 

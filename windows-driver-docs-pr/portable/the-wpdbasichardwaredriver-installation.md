@@ -22,7 +22,7 @@ The installation INF file for the sample driver is based on the INF file for Wpd
 
 The following entry is added under \[*Basic\_Install.Wdf*\] to enable file handle–based UMDF I/O targets. These I/O targets are used to exchange data with the device by using the RS 232 port. For more information about I/O targets, see [Supporting I/O](the-wpdbasichardwaredriver-supporting-io.md).
 
-```
+```cpp
 UmdfDispatcher = FileHandle
 ```
 
@@ -30,7 +30,7 @@ UmdfDispatcher = FileHandle
 
 The following line is commented out to disable Windows Image Acquisition (WIA) legacy applications from accessing this driver because the sample driver does not support image content:
 
-```
+```cpp
 ;HKR,,”EnableLegacySupport”,0x10001,1
 ```
 

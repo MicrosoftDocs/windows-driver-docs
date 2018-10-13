@@ -23,7 +23,7 @@ This topic discusses how to create a [catalog file](catalog-files.md) from a dri
 
 The name of catalog file that [**Inf2Cat**](https://msdn.microsoft.com/library/windows/hardware/ff547089) produces is specified through the CatalogFile directive. One or more of these directives are declared within the [**INF Version section**](inf-version-section.md) of the INF file. The INF **Version** section of the *toastpkg.inf* file is shown below:
 
-```
+```cpp
 [Version]
 Signature="$WINDOWS NT$"
 Class=TOASTER
@@ -47,13 +47,13 @@ Two things should be noted about this [**INF Version section**](inf-version-sect
 
     You can use the [Stampinf](https://msdn.microsoft.com/library/windows/hardware/ff552786) tool to update the time stamp and version value in the **DriverVer** directive. For example, to update the **DriverVer** directive in the *toastpkg.inf*, run the following command*:*
 
-    ```
+    ```cpp
     stampinf -f toastpkg.inf -d 09/01/2008 -v 9.0.9999.0
     ```
 
 The following command line shows how to create a catalog file through the Inf2Cat tool by using the *Toastpkg.inf* file:
 
-```
+```cpp
 Inf2cat.exe /driver:src\general\toaster\toastpkg\toastcd\ /os:Vista_x64
 ```
 

@@ -80,7 +80,7 @@ Remarks
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::IsHTTP** property can be queried.
 
-```
+```cpp
     Dim objPrinter, IsHTTPPort
     strPrinter = Session("MS_printer")
     Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")

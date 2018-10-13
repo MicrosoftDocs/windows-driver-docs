@@ -65,7 +65,7 @@ The values of *LogToken* and *LogFlags* affect the operation of [**SetupWriteTex
 
 For this example, the following shows the type of log entry that **SetupWriteTextLogInfLine** would write to a text log:
 
-```
+```cpp
    inf:      AddReg=HidServ_AddService_AddReg  (hidserv.inf line 98)
 ```
 

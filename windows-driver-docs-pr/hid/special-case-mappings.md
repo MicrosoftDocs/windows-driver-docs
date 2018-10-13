@@ -68,7 +68,7 @@ The default mapping for devices reporting through HID has not changed except tha
 
 Another set of special-case mappings are those needed for car controllers that declare more than two axes. Unfortunately, there is little consistency within the industry in this area. There presently exist three common ways to represent separate accelerator and brake pedals. DirectInput attempts to detect which method a car controller is using with logic similar to that shown in the following pseudocode:
 
-```
+```cpp
     if( has_r and has_Z )
         use mappings:
         X => GUID_XAxis

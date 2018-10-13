@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 To use asynchronous driver notification, a device driver implements callback functions that the operating system calls when you dynamically add a processor or memory module to the hardware partition. The following code example shows prototypes for such callback functions:
 
-```
+```cpp
 // Prototypes for the asynchronous
 // notification callback functions
 NTSTATUS
@@ -45,7 +45,7 @@ These GUIDs are defined in the header file, Poclass.h.
 
 The following code example shows how to register for both notifications:
 
-```
+```cpp
 PVOID ProcessorNotificationEntry;
 PVOID MemoryNotificationEntry;
 NTSTATUS Status;
@@ -79,7 +79,7 @@ Status =
 
 When a device driver must stop receiving asynchronous driver notifications, such as when it is being unloaded, it must unregister each callback function by calling the [**IoUnregisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff550398) function. The following code example shows how to unregister the callback functions:
 
-```
+```cpp
 // Unregister for asynchronous notifications
 Status =
   IoUnregisterPlugPlayNotification(

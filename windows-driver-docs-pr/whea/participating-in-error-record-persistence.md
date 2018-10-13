@@ -32,7 +32,7 @@ To participate in error record persistence, a PSHED plug-in must implement the f
 
 The following code example shows how to implement these callback functions.
 
-```
+```cpp
 //
 // The PSHED plug-in&#39;s WriteErrorRecord callback function
 //

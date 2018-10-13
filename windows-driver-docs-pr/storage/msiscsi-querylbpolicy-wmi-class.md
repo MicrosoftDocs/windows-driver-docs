@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The MSiSCSI\_QueryLBPolicy WMI class contains information about the load balance policies. This class is defined as follows in *Mgmt.mof.*
 
-```
+```cpp
 class MSiSCSI_QueryLBPolicy 
 {
     [key]

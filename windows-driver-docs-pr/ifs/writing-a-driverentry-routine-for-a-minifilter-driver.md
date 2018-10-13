@@ -28,7 +28,7 @@ The **DriverEntry** routine performs global initialization, registers the minifi
 
 The **DriverEntry** routine is defined as follows:
 
-```
+```cpp
 NTSTATUS 
 (*PDRIVER_INITIALIZE) ( 
     IN PDRIVER_OBJECT DriverObject, 

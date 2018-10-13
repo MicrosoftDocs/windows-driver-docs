@@ -29,13 +29,13 @@ Styling of a cosmetic line is similar to that of a geometric wide line because i
 
 When the driver calls [**PATHOBJ\_bEnumClipLines**](https://msdn.microsoft.com/library/windows/hardware/ff568852), to handle styled cosmetic lines through complex clipping, GDI modifies the value of the [**CLIPLINE**](https://msdn.microsoft.com/library/windows/hardware/ff539416) structure's **iStyleState** member to represent the style state. The style state is the offset back to the first pixel of the line segment; that is, the first pixel that would be rendered if the line were not clipped. The style state consists of two 16-bit values packed into a ULONG value. If HIGH and LOW are the high-order and the low-order 16 bits of the style state, a fractional version of the style state, referred to as style position, can be computed as:
 
-```
+```cpp
     style position = HIGH + LOW/denStyleStep
 ```
 
 For example, if the values in **iStyleState** are 1 and 2, and **denStyleStep** is 3, then style position is 5/3. To determine exactly where the drawing of the style begins in the style array, take the product:
 
-```
+```cpp
     style position * denStyleStep
 ```
 
@@ -43,7 +43,7 @@ In this example, with a **denStyleStep** value of 3, the drawing position is cal
 
 There are y-styled cosmetic lines and x-styled cosmetic lines. If a line extends dx device units in the x direction and dy units in the y direction, the line is y-styled when the following is true:
 
-```
+```cpp
     (dy * yStyleStep)  >=  (dx * xStyleStep)
 ```
 
@@ -51,7 +51,7 @@ In this case, the style position is advanced by **yStyleStep**/**denStyleStep** 
 
 Conversely, a line is x-styled and the style position is advanced by **xStyleStep**/**denStyleStep** for each pixel advanced in the x direction when the following is true:
 
-```
+```cpp
     (dx * xStyleStep)  >  (dy * yStyleStep)
 ```
 

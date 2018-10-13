@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 To register a device-specific co-installer, add the following sections to the device's INF file:
 
-```
+```cpp
 ;  :
 ;  :
 [DestinationDirs]
@@ -49,7 +49,7 @@ The entry in the *Xxx***_AddReg** section creates a **CoInstallers32** value ent
 
 To register more than one device-specific co-installer for a device, copy the files for each co-installer and include more than one string in the registry entry. For example, to register two co-installers, create INF sections like the following:
 
-```
+```cpp
 ;   :
 ;   :
 [DestinationDirs]
