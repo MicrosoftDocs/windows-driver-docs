@@ -55,11 +55,7 @@ Index file loaded.
 ```
 **-force**
 
-<<<<<<< HEAD
 Use `!index -force` to reindex the trace even if an an unloadable index file exists on disk.
-=======
-Use ```!index -force``` to reindex the trace even if an unloadable index file exists on disk.
->>>>>>> master
 
 ```dbgcmd
 0:000> !tt.index -force
