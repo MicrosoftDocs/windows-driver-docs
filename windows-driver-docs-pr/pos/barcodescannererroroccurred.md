@@ -18,7 +18,7 @@ The data buffer for this event is as follows.
 
 ## Syntax
 
-``` syntax
+```cpp
 // Error occurred data should fill the ReadFile buffer in this order:
 //    PosBarcodeScannerErrorOccurredEventData structure (length = sizeof(PosBarcodeScannerErrorOccurredEventData))
 //    Error Message (length = MessageLength)

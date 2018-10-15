@@ -24,7 +24,7 @@ Returns the property bag associated with the current print job.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT JobPropertyBag(
   [out, retval] IPrinterScriptablePropertyBag **ppPropertyBag
 );

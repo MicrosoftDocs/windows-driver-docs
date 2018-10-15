@@ -47,7 +47,7 @@ Despite the differences in naming conventions, the GUIDs used in both the kernel
 
 For example, the following GUID corresponds to the YVU9 FOURCC video format:
 
-```Example
+```Text
 39555659-0000-0010-8000-00AA00389B71
       59 = &#39;Y&#39;
     56 = &#39;V&#39;

@@ -27,7 +27,7 @@ The **Open** method enables an ASP Web page to open access to a printer.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT Open(
   [in] BSTR bstrPrinterName
 );

@@ -27,7 +27,7 @@ The **ErrorDscp** property enables an ASP Web page to convert an error code to a
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_ErrorDscp(
   [in]  long lErrCode,
   [out] BSTR *pVal

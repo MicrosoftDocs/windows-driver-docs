@@ -29,7 +29,7 @@ The `Close` method enables an ASP Web page to close a communication path to an S
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT Close();
 ```
 

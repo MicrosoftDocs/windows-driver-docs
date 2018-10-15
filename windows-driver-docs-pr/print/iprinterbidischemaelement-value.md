@@ -24,7 +24,7 @@ The Value method returns the Bidi Schema element value.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT Value(
   [out, retval] VARIANT *pValue
 );

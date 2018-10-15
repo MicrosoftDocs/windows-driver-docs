@@ -27,7 +27,7 @@ The **DecodeUnicodeName** property enables an ASP Web page to translate a Unicod
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 [propget, id(3), helpstring("property DecodeUnicodeName")] HRESULT DecodeUnicodeName(
   [in]          BSTR bstrSrcName,
   [out, retval] BSTR *pVal

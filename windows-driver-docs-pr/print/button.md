@@ -28,7 +28,7 @@ The **button** element is defined in the *asyncui* namespace at this URI: http:/
 Usage
 -----
 
-``` syntax
+```xml
 <button
   stringID = "xs:string"
   resourceDll = "xs:string"
@@ -120,7 +120,7 @@ Examples
 
 The following code example shows how to use the **button** element to display **OK** and **CANCEL** buttons next to each other.
 
-```cpp
+```xml
 <?xml version="1.0" ?>
   <asyncPrintUIRequest
     xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
@@ -144,13 +144,4 @@ The following code example shows how to use the **button** element to display **
 
 ## See also
 
-
-[**buttons**](buttons.md)
-
- 
-
- 
-
-
-
-
+[buttons](buttons.md)

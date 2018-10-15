@@ -19,7 +19,7 @@ The **EFI\_USB\_SUPERSPEED\_CONFIG\_INFO** structure is used to define the suppo
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef struct
 {
     EFI_USB_CONFIG_DESCRIPTOR           *ConfigDescriptor;

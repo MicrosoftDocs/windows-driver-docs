@@ -24,7 +24,7 @@ Returns an object that can supply return code values that an IHV has defined for
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT ReturnCodes(
   [out, retval] IPrinterScriptUsbJobContextReturnCodes **ppReturnCodes
 );

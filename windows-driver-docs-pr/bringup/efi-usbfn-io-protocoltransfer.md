@@ -44,7 +44,7 @@ The **Transfer** function handles transferring data to or from the host on the s
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI *EFI_USBFN_IO_TRANSFER) (

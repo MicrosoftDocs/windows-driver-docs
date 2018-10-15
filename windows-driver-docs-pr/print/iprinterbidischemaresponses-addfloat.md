@@ -24,7 +24,7 @@ The AddFloat method adds a new response of type BIDI\_FLOAT to the collection.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT AddFloat(
   [in] BSTR    bstrSchema,
   [in] FLOAT  fValue 

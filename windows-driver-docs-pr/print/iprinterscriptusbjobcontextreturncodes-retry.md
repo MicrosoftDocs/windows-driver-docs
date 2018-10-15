@@ -24,7 +24,7 @@ Returns a value of '2' to inform USBMon that the method call was successful, wit
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT Retry(
   [out, retval] UINT32 *value
 );

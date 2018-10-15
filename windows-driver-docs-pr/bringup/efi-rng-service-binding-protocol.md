@@ -21,7 +21,7 @@ The generic EFI\_SERVICE\_BINDING\_PROTOCOL is described in sections 2.5.8 and 1
 ## GUID
 
 
-``` syntax
+```cpp
 // {E417A4A2-0843-4619-BF11-5CE82AFCFC59}
 #define EFI_RNG_SERVICE_BINDING_PROTOCOL_GUID \
   {0xe417a4a2, 0x0843, 0x4619, 0xbf, 0x11, 0x5c, 0xe8, 0x2a, 0xfc, 0xfc, 0x59};

@@ -21,7 +21,7 @@ The allocated transfer buffer must be freed using a matching call to the **FreeT
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_IO_ALLOCATE_TRANSFER_BUFFER) (

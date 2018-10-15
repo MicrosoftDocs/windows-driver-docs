@@ -19,7 +19,7 @@ The **ConfigureEnableEndpoints** function initializes endpoints based on supplie
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_IO_CONFIGURE_ENABLE_ENDPOINTS) (

@@ -27,7 +27,7 @@ The **LongPaperName** property enables an ASP Web page to convert a short paper 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_LongPaperName(
   [in]  BSTR bstrShortName,
   [out] BSTR *pVal

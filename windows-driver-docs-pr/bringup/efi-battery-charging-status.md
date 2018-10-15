@@ -19,7 +19,7 @@ This enumeration specifies the status of a charging battery.
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef enum _EFI_BATTERY_CHARGING_STATUS {      
     EfiBatteryChargingStatusNone = 0,
     EfiBatteryChargingStatusSuccess,

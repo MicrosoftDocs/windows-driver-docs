@@ -27,7 +27,7 @@ The **MibErrorDscp** property enables an ASP Web page to convert a Simple Networ
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_MibErrorDscp(
   [in]  DWORD dwError,
   [out] BSTR  *pVal

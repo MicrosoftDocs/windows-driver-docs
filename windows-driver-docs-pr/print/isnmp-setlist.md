@@ -29,7 +29,7 @@ The `SetList` method enables an ASP Web page to associate values with an array o
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT SetList(
   [in] VARIANT *varName,
   [in] VARIANT *varValue

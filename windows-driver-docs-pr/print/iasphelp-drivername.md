@@ -27,7 +27,7 @@ The **DriverName** property enables an ASP Web page to obtain the name of the pr
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_DriverName(
   [out] BSTR *pVal
 );

@@ -22,7 +22,7 @@ The following UUIDs are used to identify services provided by Bluetooth barcode 
 
 The following UUID identifies the SSI service for a Bluetooth barcode scanner. Devices that expose this UUID during Bluetooth discovery will be recognized as barcode scanners that the in-box driver supports.
 
-``` syntax
+```cpp
 DEFINE_GUID(BarcodeScannerSimpleSerialInterfaceServiceClass_UUID, 
 0xA1220169, 0xE854, 0x473E, 0x9C, 0xB5, 0x87, 0x3A, 0xCB, 0xDF, 0x1F, 0x13)
 ```
@@ -31,7 +31,7 @@ DEFINE_GUID(BarcodeScannerSimpleSerialInterfaceServiceClass_UUID,
 
 The following UUID is not supported in Windows 10, version 1703, but is reserved for future use with ISCP.
 
-``` syntax
+```cpp
 DEFINE_GUID(BarcodeScannerIntermecScannerCommunicationProtocolServiceClass_UUID, 
 0xccb06baf, 0xdca9, 0x483f, 0x84, 0xd9, 0x36, 0x23, 0x24, 0xce, 0xd, 0x97)
 ```

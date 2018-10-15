@@ -19,7 +19,7 @@ The **SetEndpointPolicy** function sets the configuration policy for the specifi
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_SET_ENDPOINT_POLICY) (

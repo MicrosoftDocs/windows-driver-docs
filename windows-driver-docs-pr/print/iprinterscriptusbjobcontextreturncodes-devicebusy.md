@@ -24,7 +24,7 @@ Returns a value of '3' to inform USBMon that the device communication channel is
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT DeviceBusy(
   [out, retval] UINT32 *value
 );

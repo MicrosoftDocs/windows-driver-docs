@@ -19,7 +19,7 @@ The EFI\_RNG\_PROTOCOL is used to obtain a Random Number Generation (RNG) value 
 ## Syntax
 
 
-``` syntax
+```cpp
 #define EFI_RNG_PROTOCOL_GUID \
   {0x3152bca5, 0xeade, 0x433d, 0x86, 0x2e, 0xc0, 0x1c, 0xdc, 0x29, 0x1f, 0x44};
 

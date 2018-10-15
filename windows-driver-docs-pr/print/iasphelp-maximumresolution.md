@@ -27,7 +27,7 @@ The **MaximumResolution** property enables an ASP Web page to determine a printe
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_MaximumResolution(
   [out] long *pVal
 );

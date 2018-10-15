@@ -19,7 +19,7 @@ The **SetEndpointStallState** function sets or clears the stall state on the spe
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_IO_SET_ENDPOINT_STALL_STATE) (

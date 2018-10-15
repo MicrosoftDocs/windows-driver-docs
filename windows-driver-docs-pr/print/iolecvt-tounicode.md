@@ -27,7 +27,7 @@ The **ToUnicode** property enables an ASP Web page to convert one Unicode string
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 [propget, id(4), helpstring("property ToUnicode")] HRESULT ToUnicode(
   [in]          BSTR bstrString,
   [in]          Long lCodePage,

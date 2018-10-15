@@ -19,7 +19,7 @@ Modifies the power state of the display and backlight.
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef EFI_STATUS (EFIAPI * EFI_DISPLAY_POWER_SETDISPLAYPOWERSTATE) (
     IN EFI_DISPLAY_POWER_PROTOCOL *This,
     IN EFI_DISPLAY_POWER_STATE PowerState 

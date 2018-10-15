@@ -24,7 +24,7 @@ Returns a value of zero (0) to inform USBMon that the function call completed su
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT Success(
   [out, retval] UINT32 *value
 );

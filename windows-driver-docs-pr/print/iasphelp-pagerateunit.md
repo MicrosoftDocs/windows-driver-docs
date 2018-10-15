@@ -27,7 +27,7 @@ The **PageRateUnit** enables an ASP Web page to determine the units in which the
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_PageRateUnit(
   [out] long *pVal
 );

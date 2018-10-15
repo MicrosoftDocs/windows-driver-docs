@@ -24,7 +24,7 @@ Returns the number of pages that have been printed by the print device in the cu
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT PrintedPageCount(
   [out, retval] UINT32 *value
 );

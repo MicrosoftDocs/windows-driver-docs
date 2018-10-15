@@ -28,7 +28,7 @@ The **requestClose** element is defined in the *asyncui* namespace at this URI: 
 Usage
 -----
 
-``` syntax
+```xml
 <requestClose/>
 ```
 
@@ -86,15 +86,6 @@ The following code example shows how to close an event notification after a butt
 
 ## See also
 
+[asyncPrintUIRequest](asyncprintuirequest.md)
 
-[**asyncPrintUIRequest**](asyncprintuirequest.md)
-
-[**requestOpen**](requestopen.md)
-
- 
-
- 
-
-
-
-
+[requestOpen](requestopen.md)

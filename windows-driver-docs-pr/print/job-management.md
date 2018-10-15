@@ -44,7 +44,7 @@ Note that the print queue is a dynamic queue. So each time the status of the pri
 
 The following C# code snippet illustrates the use of the new interfaces for initiating a job management session.
 
-```CSharp
+```csharp
 void PerformJobManagement(IPrinterQueue2 queue)
 {
     //

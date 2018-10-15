@@ -24,7 +24,7 @@ The AddInt32 method adds a new response of type BIDI\_INT to the collection.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT  AddInt32(
   [in] BSTR bstrSchema,
   [in] LONG lValue

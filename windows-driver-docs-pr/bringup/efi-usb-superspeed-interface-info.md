@@ -19,7 +19,7 @@ The **EFI\_USB\_SUPERSPEED\_INTERFACE\_INFO** structure is used to define the su
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef struct
 {
     EFI_USB_INTERFACE_DESCRIPTOR            *InterfaceDescriptor;

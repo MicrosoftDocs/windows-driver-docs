@@ -27,7 +27,7 @@ The **PaperNames** property enables an ASP Web page to obtain a set of strings t
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_PaperNames(
   [out] VARIANT *pVal
 );

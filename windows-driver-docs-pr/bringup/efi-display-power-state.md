@@ -19,7 +19,7 @@ This enumeration represents the charging state of the display and backlight. Thi
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef enum _EFI_DISPLAY_POWER_STATE {  
     EfiDisplayPowerStateUnknown = 0,  
     EfiDisplayPowerStateOff,  

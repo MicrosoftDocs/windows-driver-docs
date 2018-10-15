@@ -24,7 +24,7 @@ Returns a value of '1' to inform USBMon that the method call failed.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT Failure(
   [out, retval] UINT32 *value
 );

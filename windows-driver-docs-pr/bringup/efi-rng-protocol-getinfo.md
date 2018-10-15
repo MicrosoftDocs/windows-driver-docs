@@ -19,7 +19,7 @@ Returns information about the RNG algorithms supported by a driver that implemen
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI *EFI_RNG_GET_INFO) (

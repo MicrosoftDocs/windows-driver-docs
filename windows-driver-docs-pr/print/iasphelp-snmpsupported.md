@@ -27,7 +27,7 @@ The **SNMPSupported** property enables an ASP Web page to determine if SNMP is b
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_SNMPSupported(
   [out] BOOL *pVal
 );

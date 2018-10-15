@@ -29,7 +29,7 @@ The `GetAsByte` method enables an ASP Web page to get the value identified by an
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT GetAsByte(
   [in]  BSTR  bstrOID,
   [out] PUINT puValue

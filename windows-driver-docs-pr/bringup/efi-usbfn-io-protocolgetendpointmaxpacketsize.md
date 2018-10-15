@@ -19,7 +19,7 @@ The **GetEndpointMaxPacketSize** function returns the maximum packet size of the
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_IO_GET_ENDPOINT_MAXPACKET_SIZE) (

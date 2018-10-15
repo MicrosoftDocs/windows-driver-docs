@@ -27,7 +27,7 @@ The **ComputerName** property enables an ASP Web page to obtain a print server's
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_ComputerName(
   [out] BSTR *pVal
 );

@@ -27,7 +27,7 @@ The **CalcJobETA** method enables an ASP Web page to calculate the time at which
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT CalcJobETA();
 ```
 

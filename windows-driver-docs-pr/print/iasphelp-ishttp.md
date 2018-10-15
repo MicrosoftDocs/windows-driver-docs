@@ -27,7 +27,7 @@ The **IsHTTP** property enables an ASP Web page to determine whether the printer
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_IsHTTP(
   [out] BOOL *pVal
 );

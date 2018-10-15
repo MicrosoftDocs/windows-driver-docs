@@ -27,7 +27,7 @@ The **PendingJobCount** property enables an ASP Web page to determine the number
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_PendingJobCount(
   [out] long *pVal
 );

@@ -19,7 +19,7 @@ Returns information about the current state of the main battery.
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef EFI_STATUS (EFIAPI * EFI_BATTERY_CHARGING_GET_BATTERY_STATUS) (
     IN EFI_BATTERY_CHARGING_PROTOCOL *This,
     OUT UINT32 *StateOfCharge,

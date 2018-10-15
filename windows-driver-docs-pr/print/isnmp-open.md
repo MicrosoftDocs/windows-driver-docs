@@ -29,7 +29,7 @@ The `Open` method enables an ASP Web page to create a communication path to a sp
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT Open(
   [in] BSTR    bstrHost,
   [in] BSTR    bstrCommunity,

@@ -28,7 +28,7 @@ The **parameter** element is defined in the *asyncui* namespace at this URI: htt
 Usage
 -----
 
-``` syntax
+```xml
 <parameter
   stringID = "xs:string"
   resourceDll = "xs:string"
@@ -127,7 +127,7 @@ In this example, the **stringID** values specify the following:
 -   User interface string 5 in the Microsoft-supplied user interface DLL is "yellow".
 -   User interface string 1002 in the driver resource DLL is "Side Access Door B".
 
-```cpp
+```xml
 <?xml version="1.0" ?>
    <asyncPrintUIRequest
     xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
@@ -149,15 +149,6 @@ With the preceding XML code, the following body text (stringID="100") is display
 
 ## See also
 
+[body](body.md)
 
-[**body**](body.md)
-
-[**title**](title.md)
-
- 
-
- 
-
-
-
-
+[title](title.md)

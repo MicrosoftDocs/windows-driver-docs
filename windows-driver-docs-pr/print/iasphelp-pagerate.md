@@ -27,7 +27,7 @@ The **PageRate** property enables an ASP Web page to determine a printer's page 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_PageRate(
   [out] long *pVal
 );

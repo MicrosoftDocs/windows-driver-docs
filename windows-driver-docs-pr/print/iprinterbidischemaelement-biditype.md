@@ -24,7 +24,7 @@ The BidiType method returns the Bidi schema element type.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT BidiType(
   [out, retval] PrinterBidiSchemaElementType *pType
 );

@@ -24,7 +24,7 @@ The AddNull method adds a new response of type BIDI\_NULL to the collection.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT AddNull(
   [in] BSTR bstrSchema
 );

@@ -20,7 +20,7 @@ The object source file, geolocation.cpp, contains an **Initialize** method that 
 
 A property key (**PROPERTYKEY**) is a data structure consisting of a **GUID** and a **DWORD** that provide a unique identifier for the sensor property. In the case of the simulated geolocation-sensor, there are three settable property keys that correspond to: the device's change sensitivity, its current report interval, and the desired accuracy. These keys are defined in the file geolocation.cpp.
 
-```ManagedCPlusPlus
+```cpp
 const PROPERTYKEY g_SettableGeolocationProperties[] =
 {
     SENSOR_PROPERTY_CHANGE_SENSITIVITY,         //[VT_UNKNOWN], IPortableDeviceValues
@@ -33,7 +33,7 @@ For more information about change sensitivity and the report interval, refer to 
 
 A data-field key is a **PROPERTYKEY** that the driver uses to identify each unique data field that it supports. In the case of the pseudo geolocation-sensor there are eight supported data fields that include data such as the timestamp of the reading, current latitude (in degrees), current longitude (in degrees), and so on. These keys are also defined in the file geolocation.cpp.
 
-```ManagedCPlusPlus
+```cpp
 const PROPERTYKEY g_SupportedGeolocationDataFields[] =
 {
     SENSOR_DATA_TYPE_TIMESTAMP,                 //[VT_FILETIME]

@@ -16,7 +16,7 @@ This event occurs when there is a magnetic stripe reader (MSR) error, such as a 
 
 ## Syntax
 
-``` syntax
+```cpp
 typedef struct _MSR_ERROR_EVENT
 {
     PosEventDataHeader Header;

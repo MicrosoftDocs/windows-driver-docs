@@ -19,7 +19,7 @@ The **GetEndpointPolicy** function retrieves the configuration policy for the sp
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_GET_ENDPOINT_POLICY) (

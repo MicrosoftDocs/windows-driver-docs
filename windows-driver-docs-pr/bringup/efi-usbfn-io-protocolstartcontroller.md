@@ -19,7 +19,7 @@ The **StartController** function supplies power to the USB controller if needed 
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_IO_START_CONTROLLER) (

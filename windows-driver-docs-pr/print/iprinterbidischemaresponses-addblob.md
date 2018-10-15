@@ -24,7 +24,7 @@ The AddBlob method adds a new response of type BIDI\_BLOB to the collection.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT AddBlob(
   [in] BSTR      bstrSchema,
   [in] IDispatch *pArray
