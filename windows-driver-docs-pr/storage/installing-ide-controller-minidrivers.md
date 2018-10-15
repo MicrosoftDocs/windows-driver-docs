@@ -24,7 +24,7 @@ This section provides installation information that is specific to IDE controlle
 
 Vendors supplying their own controller minidriver should make that driver a member of the Hard Disk Controllers (HDC) setup class in the [**INF Version Section**](https://msdn.microsoft.com/library/windows/hardware/ff547502) of the driver's INF file. For example:
 
-```
+```cpp
 [version]
 Signature="$WINDOWS NT$"
 Class=hdc

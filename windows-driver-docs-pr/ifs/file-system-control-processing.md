@@ -27,7 +27,7 @@ Handling the [**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](https://msdn.microsoft.com/lib
 
 Several file system operations specify FILE\_SPECIAL\_ACCESS. The FSCTL\_MOVE\_FILE operation is used as part of the defragmentation interface for file systems and it specifies FILE\_SPECIAL\_ACCESS. Since you want to be able to defragment open files that are actively being read and written, the handle to be used has only FILE\_READ\_ATTRIBUTES granted access to avoid share access conflicts. However, this operation needs to be a privileged operation as the disk is being modified on a low level. The solution is to verify that the handle used to issue the FSCTL\_MOVE\_FILE is a direct-access storage device (DASD) user volume open, which is a privileged handle. The FASTFAT file system code that ensures this operation is being done against a user volume open is in the **FatMoveFile** function (see the fsctrl.c source file from the fastfat sample that the WDK contains):
 
-```
+```cpp
     //
     //  extract and decode the file object and check for type of open
     //
@@ -43,7 +43,7 @@ Several file system operations specify FILE\_SPECIAL\_ACCESS. The FSCTL\_MOVE\_F
 
 The structure used by the FSCTL\_MOVE\_FILE operation specifies the file being moved:
 
-```
+```cpp
 typedef struct {
     HANDLE FileHandle;
     LARGE_INTEGER StartingVcn;
@@ -54,7 +54,7 @@ typedef struct {
 
 As previously noted, the handle used to issue the FSCTL\_MOVE\_FILE is an "open" operation of the entire volume, while the operation actually applies to the file handle specified in the MOVE\_FILE\_DATA input buffer. This makes the security checks for this operation somewhat complex. For example, this interface must convert the file handle to a file object that represents the file being moved. This requires careful consideration on the part of any driver. FASTFAT does this using [**ObReferenceObject**](https://msdn.microsoft.com/library/windows/hardware/ff558678) in a guarded fashion in the **FatMoveFile** function in the fsctrl.c source file in the fastfat sample that the WDK contains:
 
-```
+```cpp
     //
     //  Try to get a pointer to the file object from the handle passed in.
     //
@@ -93,7 +93,7 @@ As previously noted, the handle used to issue the FSCTL\_MOVE\_FILE is an "open"
 
 Note the use of Irp-&gt;RequestorMode to ensure that if the caller is a user-mode application, the handle cannot be a kernel handle. The required access is 0 so that a file can be moved while it is being actively accessed. And finally note that this call must be made in the correct process context if the call originated in user mode. The source code from the FASTFAT file system enforces this as well in the **FatMoveFile** function in fsctrl.c:
 
-```
+```cpp
     //
     //  Force WAIT to true. There is a handle in the input buffer that can only
     //  be referenced within the originating process.

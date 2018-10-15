@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 Each per-Models *DDInstall***.Events** section contains one or more [**INF AddEventProvider directives**](inf-addeventprovider-directive.md) that reference additional INF-writer-defined sections in an INF file. This section is supported for Windows 10 version 1809 and later.
 
-```
+```cpp
 [install-section-name.Events] |
 [install-section-name.nt.Events] |
 [install-section-name.ntx86.Events] |
@@ -68,7 +68,7 @@ Examples
 
 This example shows the *install-section-name***.Events** section and its event-provider-install-sections in the INF file.
 
-```
+```cpp
 [Device_Inst.NT.Events]
 AddEventProvider={071acb53-ccfb-42e0-9a68-5336b7301507},foo_Event_Provider_Inst
 AddEventProvider={6d3fd9ef-bcbb-42d7-9fbd-1bf2d926b394},bar_Event_Provider_Inst

@@ -31,7 +31,7 @@ An application performs one of the following to write a log entry in a [SetupAPI
 
 As described in [Format of a Text Log Section Body](format-of-a-text-log-section-body.md), the SetupAPI logging functions write entries in the following format:
 
-```
+```cpp
 entry_prefix time_stamp event_category indentation formatted_message
 ```
 

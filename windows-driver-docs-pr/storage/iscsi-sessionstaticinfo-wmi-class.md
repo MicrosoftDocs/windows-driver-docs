@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 The ISCSI\_SessionStaticInfo class is used to store the static characteristics of a session. This class is defined as follows in *Mgmt.mof*.
 
-```
+```cpp
 class ISCSI_SessionStaticInfo {
   [read, WmiDataId(1), Description("A uniquely generated
     session ID used only internally.  Do not confuse this

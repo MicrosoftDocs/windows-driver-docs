@@ -25,7 +25,7 @@ The optional **ColorProcessing** element specifies the color-processing mode of 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ColorProcessing wscn:MustHonor=""                      wscn:Override=""                      wscn:UsedDefault=""
   MustHonor = "xs:string"
   Override = "xs:string"
@@ -113,7 +113,7 @@ The client can specify the optional **MustHonor** attribute only when the **Colo
 
 The WSD Scan Service can specify the optional **Override** and **UsedDefault** attributes only when the **ColorProcessing** element is contained within a [**DocumentFinalParameters**](documentfinalparameters.md) hierarchy. For more information about **Override** and **UsedDefault** and their usage, see **DocumentFinalParameters**.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ColorEntry**](colorentry.md)

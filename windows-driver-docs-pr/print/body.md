@@ -151,7 +151,7 @@ Examples
 
 The following code example shows how to use the **body** element.
 
-```
+```cpp
 <?xml version="1.0" ?>
    <asyncPrintUIRequest
     xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
@@ -169,7 +169,7 @@ The following code example shows how to use the **body** element.
   </asyncPrintUIRequest>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**balloonUI**](balloonui.md)

@@ -38,7 +38,7 @@ References to block macros can nest parameter lists to arbitrary depth. Block ma
 
 The following code example shows how to use block macros.
 
-```
+```cpp
 *Macros:
 {
   LetterName: Letter

@@ -41,7 +41,7 @@ Some of the controls are exposed to applications as asynchronous controls and ot
 
 These extended controls are part of the following KS property set defined in ksmedia.h:
 
-```
+```cpp
 #define STATIC_KSPROPERTYSETID_ExtendedCameraControl \
      0x1CB79112, 0xC0D2, 0x4213, 0x9C, 0xA6, 0xCD, 0x4F, 0xDB, 0x92, 0x79, 0x72
 DEFINE_GUIDSTRUCT("1CB79112-C0D2-4213-9CA6-CD4FDB927972", KSPROPERTYSETID_ExtendedCameraControl);
@@ -59,7 +59,7 @@ Once user mode component has obtained the metadata buffer requirements from the 
 
 The [**KSSTREAM\_METADATA\_INFO**](https://msdn.microsoft.com/library/windows/hardware/dn936959) structure, along with the following flag, is used to send the metadata buffer to the driver.
 
-```
+```cpp
 #define KSSTREAM_HEADER_OPTIONSF_METADATA           0x00001000
 ```
 

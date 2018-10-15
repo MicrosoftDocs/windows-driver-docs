@@ -25,7 +25,7 @@ The required **DestinationToken** element contains a device-specific string that
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:DestinationToken>
   text
 </wscn:DestinationToken>
@@ -73,7 +73,7 @@ Remarks
 
 The client includes the **DestinationToken** token when it sends a [**CreateScanJobRequest**](createscanjobrequest.md) operation element after the [**ScanAvailableEvent**](scanavailableevent.md) event. The WSD Scan Service uses the specified string to check that the correct client is sending the scan request.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)

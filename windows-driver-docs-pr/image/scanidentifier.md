@@ -25,7 +25,7 @@ The required **ScanIdentifier** element contains a device-specific string that t
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScanIdentifier>
   text
 </wscn:ScanIdentifier>
@@ -75,7 +75,7 @@ The client can send the **ScanIdentifier** element to the WSD Scan Service in a 
 
 The **ScanIdentifier** value must be unique for every [**ScanAvailableEvent**](scanavailableevent.md) instance.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)

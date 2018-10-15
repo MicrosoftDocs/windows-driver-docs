@@ -60,7 +60,7 @@ The format for each entry in this section is:
 
 The following are sample entries:
 
-```
+```cpp
 [Previous Names]
 "HP Color LaserJet" = "HP Color LaserJet (MS)"
 "HP DeskJet 1200C" = "HP DeskJet 1200C (MS)"

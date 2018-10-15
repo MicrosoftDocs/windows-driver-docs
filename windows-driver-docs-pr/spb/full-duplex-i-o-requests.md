@@ -27,7 +27,7 @@ An additional requirement for an **IOCTL\_SPB\_FULL\_DUPLEX** request is that th
 
 The following code example shows how the driver for an SPB peripheral device builds a transfer list for an **IOCTL\_SPB\_FULL\_DUPLEX** request.
 
-```
+```cpp
 const ULONG transfers = 2;
 
 SPB_TRANSFER_LIST_AND_ENTRIES(transfers) seq;
@@ -65,7 +65,7 @@ The Kernel-Mode Driver Foundation (KMDF) driver for an SPB peripheral device cal
 
 The following code example shows a **WdfIoTargetSendIoctlSynchronously** call that sends an **IOCTL\_SPB\_FULL\_DUPLEX** request to an SPB peripheral device. The `seq` variable in this example is a transfer list that was defined in the code example in [Transfer List](#transfer-list).
 
-```
+```cpp
 ULONG_PTR BytesTransferred = 0;
 NTSTATUS Status;
   
@@ -96,7 +96,7 @@ The User-Mode Driver Foundation (UMDF) driver for an SPB peripheral device calls
 
 The following code example shows an **IWDFIoTarget::FormatRequestForIoctl** call that formats an **IOCTL\_SPB\_FULL\_DUPLEX** request to an SPB peripheral device. The `seq` variable in this example is a transfer list that was defined in the code example in [Transfer List](#transfer-list).
 
-```
+```cpp
 ULONG_PTR BytesTransferred = 0;
 HRESULT hr;
 

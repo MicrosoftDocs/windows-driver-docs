@@ -53,7 +53,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_DPS\_HORIZONTAL\_SHEET\_FEED\_SIZE**](wia-dps-horizontal-sheet-feed-size.md)

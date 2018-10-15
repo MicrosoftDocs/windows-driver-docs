@@ -39,7 +39,7 @@ The following table shows the preoperation callback routine implementation for a
 
 Every preoperation callback routine is defined as follows:
 
-```
+```cpp
 typedef FLT_PREOP_CALLBACK_STATUS 
 (*PFLT_PRE_OPERATION_CALLBACK) ( 
     IN OUT PFLT_CALLBACK_DATA Data, 

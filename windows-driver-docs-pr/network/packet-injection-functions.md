@@ -79,7 +79,7 @@ A packet injected by a WFP callout driver will be re-indicated to the callout ex
 
 Callouts must adjust the IP or transport layer checksum, or both, after they modify an IP packet. A callout can set the checksum to 0 for UDP over IPv4 packets. To be compatible with transport layer checksum offload, and to adjust the full checksum versus pseudo checksum calculations accordingly, a callout can use the following logic:
 
-```
+```cpp
 NDIS_TCP_IP_CHECKSUM_PACKET_INFO ChecksumInfo;
  ChecksumInfo.Value = 
  (ULONG) (ULONG_PTR)NET_BUFFER_LIST_INFO(

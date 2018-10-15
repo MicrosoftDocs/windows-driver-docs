@@ -39,7 +39,7 @@ A segmentation filter must support all the image formats supported by the driver
 
 To create the child items, the segmentation filter calls the **IWiaItem2::CreateChildItem** method. The following is an example of such a call:
 
-```
+```cpp
 lItemFlags = WiaItemTypeGenerated | WiaItemTypeTransfer | WiaItemTypeImage | WiaItemTypeFile |
  WiaItemTypeProgrammableDataSource;
 

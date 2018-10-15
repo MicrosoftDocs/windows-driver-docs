@@ -17,7 +17,7 @@ Because this class is associated with a particular instance of a storage minipor
 
 The MSiSCSI\_InitiatorInstanceStatistics class is defined in *Iscsiprf.mof*.
 
-```
+```cpp
 class MSiSCSI_InitiatorInstanceStatistics : Win32_PerfRawData {
   [read,key] String InstanceName;
   [read] boolean Active;

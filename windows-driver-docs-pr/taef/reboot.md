@@ -47,7 +47,7 @@ The **Option** parameter specifies the resume behavior, one of:
 
 Access the Reboot APIs by including the Interruption.h header and calling the functions in the **WEX::TestExecution::Interruption** namespace. The four possible calls are:
 
-```
+```cpp
 using namespace WEX::TestExecution;
 Interruption::Reboot(RebootOption::Rerun);
 Interruption::Reboot(RebootOption::Continue);
@@ -59,7 +59,7 @@ Interruption::RebootCustom(RebootOption::Continue);
 
 Call either of the two methods in the **Interruption** static class in the **WEX.TestExecution** namespace, which is located within **Te.Managed.dll**:
 
-```
+```cpp
 using WEX.TestExecution;
 Interruption.Reboot(RebootOption.Rerun);
 Interruption.Reboot(RebootOption.Continue);

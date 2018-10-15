@@ -36,14 +36,14 @@ An AVStream minidriver must have an INF file that the system uses to install the
 
 If you are writing a minidriver for a parent device, the **AddReg** section of your INF file should contain:
 
-```
+```INF
 [ParentName.AddReg]
 HKR,"ENUM\[DeviceName]",pnpid,,"[string]"
 ```
 
 If you are writing a minidriver for a child device, the **AddReg** section should contain:
 
-```
+```INF
 [Manufacturer]
 ...=ChildName
 [ChildName]
@@ -55,11 +55,3 @@ Note that "AVStream" would be "Stream" for a stream class driver.
 For all AVStream minidrivers, the filter-specific reference string in the INF file must match the **ReferenceGuid** member of the [**KSFILTER\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff562553) structure.
 
 For more information about descriptors, see [AVStream Descriptors](avstream-descriptors.md).
-
- 
-
- 
-
-
-
-

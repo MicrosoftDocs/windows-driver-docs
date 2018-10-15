@@ -57,7 +57,7 @@ This section provides a sample INF that is part of the WU package. The key point
 -   The UMDF driver is aware of this predefined well-known location.
 -   The sample INF template below has highlighted items that need to be filled by the IHV.
 
-```
+```cpp
 [Version]
 Signature       = "$WINDOWS NT$"
 Class           = Firmware
@@ -171,7 +171,7 @@ Unsolicited Event = **Unsupported**
 
 As indicated earlier, the UMDF driver should indicate to the Windows when it starts and completes firmware upgrade. This section provides code snippets that show how the driver should notify Windows of these events.
 
-```
+```cpp
 /**
  * This is the IPnpCallbackHardware*:OnPrepareHardware handler 
  * in the UMDF driver. This is called everytime the firmware 

@@ -24,7 +24,7 @@ For example, the prices that are charged for a phone call depend on the origin a
 
 For example, a client might compose a configuration that contains the following data.
 
-```
+```cpp
 OriginationPoint: Seattle
 DestinationPoint: SanFrancisco
 LengthOfCall: 10minutes
@@ -34,7 +34,7 @@ CallingPlan: OneRate
 
 And the snapshot that generated will contain one piece of data (out of all of the possible combinations) that might look like the following example.
 
-```
+```cpp
 CostOfCall: $0.49
 ```
 

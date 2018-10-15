@@ -15,7 +15,7 @@ This section provides general guidance on the development of a hardware notifica
 
 2.  Define instances of the required KMDF and hardware notification class extension callback functions. Specifically, you must implement and register these callback functions as shown in the following example code.
 
-    ```
+    ```cpp
     DRIVER_INITIALIZE DriverEntry;
     EVT_WDF_DRIVER_DEVICE_ADD HwnClientEvtDeviceAdd;
     HWN_CLIENT_INITIALIZE_DEVICE HwnClientInitializeDevice;

@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 The *FilterUnloadCallback* routine is defined as follows:
 
-```
+```cpp
 typedef NTSTATUS
 (*PFLT_FILTER_UNLOAD_CALLBACK) (
     FLT_FILTER_UNLOAD_FLAGS Flags

@@ -23,7 +23,7 @@ The examples in this topic use the 64-bit version of the Toastpkg sample's binar
 
 The following example verifies the signature of *toaster.sys* in the *tstamd64.cat* release-signed [catalog file](catalog-files.md):
 
-```
+```cpp
 Signtool verify /kp /v /c tstamd64.cat amd64\toaster.sys
 ```
 
@@ -53,7 +53,7 @@ For a signed catalog file, the Default Authenticode verification policy signatur
 
 The following example verifies the Default Authenticode verification policy of *toaster.sys* in the *tstamd64.cat* signed catalog file:
 
-```
+```cpp
 Signtool verify /pa /v /c tstamd64.cat amd64\toaster.sys
 ```
 

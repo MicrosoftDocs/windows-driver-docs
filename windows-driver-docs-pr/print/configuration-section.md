@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The Configuration section consists of the [Configuration](configuration.md) property and several child properties and values that provide information about configurable components of the print device.
 
-```
+```cpp
 Printer
  Configuration
     Memory

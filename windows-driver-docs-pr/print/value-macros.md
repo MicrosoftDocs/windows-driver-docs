@@ -61,7 +61,7 @@ where *ValueMacroName* is a unique macro name, and *MacroValue* represents a [GP
 
 As an example, you might define value macros for a set of frequently used command prefixes as follows:
 
-```
+```cpp
 *Macros: HP4L
 {
     LetterCmdPrefix: "<1B>&l2a8c1E<1B>*p0x0Y"
@@ -82,7 +82,7 @@ where *ValueMacroName* is a unique name, previously specified in the \*Macros en
 
 For example, to reference one of the HP4L macros within a command specification, you could use the following entries:
 
-```
+```cpp
 *Command: CmdSelect
 {
     *Cmd: =LetterCmdPrefix "<1B>*c0t5760x7680Y"

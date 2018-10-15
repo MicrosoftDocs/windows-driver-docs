@@ -88,7 +88,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_DPS\_SHEET\_FEEDER\_REGISTRATION**](wia-dps-sheet-feeder-registration.md)

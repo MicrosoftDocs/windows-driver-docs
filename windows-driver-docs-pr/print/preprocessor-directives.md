@@ -104,13 +104,13 @@ The \***SetPPPrefix** directive allows you to change the prefix used with prepro
 
 For example, if your GPD file contains the following directive:
 
-```
+```cpp
 *SetPPPrefix: #SpecialPrefix#
 ```
 
 then the preprocessor stops searching for preprocessor directives that begin with **\*** and instead looks for directives beginning with **\#SpecialPrefix\#**. The following sequence temporarily changes the preprocessor prefix to **\#SpecialPrefix\#**, then restores it to **\***.
 
-```
+```cpp
 *SetPPPrefix: #SpecialPrefix#
 #SpecialPrefix#Ifdef: WINNT_50
 #SpecialPrefix#Include: "ExtraGPD.gpd"
@@ -120,7 +120,7 @@ then the preprocessor stops searching for preprocessor directives that begin wit
 
 The primary purpose of this feature is to allow GPD files written for future operating system versions to be compatible with Windows 2000. For example, suppose GPD files for a future version of the operating system can include GPD file entries that conflict with the asterisk-prefixed preprocessor directives supported by Windows 2000. By changing the prefix, a GPD file written for the future operating system version can also be used with Windows 2000. An example might be constructed as follows:
 
-```
+```cpp
 *Ifdef: WINNT_70
     *SetPPPrefix: #SpecialPrefix#
     *% Do special, OS-specific processing of

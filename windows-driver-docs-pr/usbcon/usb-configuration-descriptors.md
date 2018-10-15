@@ -90,7 +90,7 @@ Within a USB configuration, the number of interfaces and their alternate setting
 2.  Allocate a larger buffer based on the size received through the previous [**WdfUsbTargetDeviceRetrieveConfigDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ff550098) call.
 3.  Call [**WdfUsbTargetDeviceRetrieveConfigDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ff550098) again and specify a pointer to the new buffer allocated in step 2.
 
-```
+```cpp
  NTSTATUS RetrieveDefaultConfigurationDescriptor (
     _In_  WDFUSBDEVICE  UsbDevice,
     _Out_ PUSB_CONFIGURATION_DESCRIPTOR *ConfigDescriptor 
@@ -167,7 +167,7 @@ Exit:
 
 The following example code shows the [**UsbBuildGetDescriptorRequest**](https://msdn.microsoft.com/library/windows/hardware/ff538943) call for a request to get configuration information for the i-th configuration:
 
-```
+```cpp
 NTSTATUS FX3_RetrieveConfigurationDescriptor (
     _In_ WDFUSBDEVICE  UsbDevice,
     _In_ PUCHAR ConfigurationIndex,

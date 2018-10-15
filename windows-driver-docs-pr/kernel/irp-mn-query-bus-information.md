@@ -59,7 +59,7 @@ If a bus driver returns information in response to this IRP, it allocates a **PN
 
 A **PNP\_BUS\_INFORMATION** structure has the following format:
 
-```
+```cpp
 typedef struct _PNP_BUS_INFORMATION {
     GUID BusTypeGuid;
     INTERFACE_TYPE LegacyBusType;

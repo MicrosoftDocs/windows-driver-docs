@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 A **Reboot** directive indicates that the caller should be notified to reboot the system after installation is complete.
 
-```
+```cpp
 [DDInstall]
   
 Reboot

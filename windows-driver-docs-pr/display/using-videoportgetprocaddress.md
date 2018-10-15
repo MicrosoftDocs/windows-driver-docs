@@ -23,7 +23,7 @@ A video miniport driver developed on one NT-based operating system version can b
 
 When the video miniport driver is loaded, the **VideoPortGetProcAddress** member of the [**VIDEO\_PORT\_CONFIG\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff570531) structure contains the address of a callback routine that the video port driver exports, [**VideoPortGetProcAddress**](https://msdn.microsoft.com/library/windows/hardware/ff570315). A miniport driver can use this callback routine to find the address of a video port function exported from *videoprt.sys*. After the miniport driver has the function's address, it can use this address to call the function. This is shown in the following example code.
 
-```
+```cpp
   // Useful typedef for a function pointer type
   //   that points to a function with same argument types
   //   as VideoPortCreateSecondaryDisplay

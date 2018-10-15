@@ -23,7 +23,7 @@ This section provides installation information that is specific to smart card re
 
 Vendors that supply their own reader drivers should make each driver a member of the **SmartCardReader** setup class in the [**INF Version Section**](https://msdn.microsoft.com/library/windows/hardware/ff547502) of the driver's INF file. Vendors must also add a section to properly configure the smartcard services. For example:
 
-```
+```cpp
 [Version]
 Signature="$Windows NT$"
 Class=SmartCardReader
@@ -41,7 +41,7 @@ HKLM, System\CurrentControlSet\Services\CertPropSvc,Start,0x00010001,2
 
 Vendors that supply their own UMDF reader driver need a registry setting to allow PnP filter drivers to sit on top of the UMDF reflector. Specifically, in the driver INF file, this entry is needed:
 
-```
+```cpp
 [Install.NT.Wdf]
 UmdfKernelModeClientPolicy=AllowKernelModeClients
 ```

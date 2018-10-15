@@ -31,7 +31,7 @@ The point fill and rasterization rules determine how a point is rendered. These 
 
 Given a point with coordinates P₀(x,y), generate four new points P₁, P₂, P₃, and P₄ as follows:
 
-```
+```cpp
 P1(x,y) = (x âˆ’ 0.5, y âˆ’ 0.5)
 P2(x,y) = (x âˆ’ 0.5, y + 0.5)
 P3(x,y) = (x + 0.5, y + 0.5)
@@ -50,7 +50,7 @@ The triangle fill rules determine how a triangle is rendered. These rules are id
 
 Hardware should supply the culling caps and properly implement the three culling modes. The following code fragment determines whether to cull the current triangle:
 
-```
+```cpp
 if (CurrentCullMode != D3DCULL_NONE) {
     int ccw = (((v[0]->sx - v[2]->sx) *
                 (v[1]->sy - v[2]->sy)) <

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 A WMI client uses the MPIO\_CONTROLLER\_CONFIGURATION WMI class to query MPIO for information regarding the storage controllers that are attached to a system.
 
-```
+```cpp
 class MPIO_CONTROLLER_CONFIGURATION
 {
 

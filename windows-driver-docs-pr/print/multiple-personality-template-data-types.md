@@ -40,7 +40,7 @@ The following directives are used to define the MULTIPLE\_PERSONALITY data type:
 
 Consider the following template.
 
-```
+```cpp
 *Template:  INT_OR_QUALNAME_EX
 {
     *Type:  DATATYPE
@@ -54,14 +54,14 @@ This template defines a data type that can hold an INTEGER value, QUALNAME\_EX v
 
 Consider the following GDL entries.
 
-```
+```cpp
 *rcNameID:     ( RESDLL.stdname.467 )  
 *rcNameID:      (0x117 )  
 ```
 
 And consider the following RC\_NAME\_ID2 template.
 
-```
+```cpp
 *Template:  RC_NAME_ID2
 {
     *Name:  "*rcNameID"
@@ -73,7 +73,7 @@ And consider the following RC\_NAME\_ID2 template.
 
 If the GDL entries are interpreted by the preceding template, the resulting XML output will be as follows.
 
-```
+```cpp
 <GDL_ATTRIBUTE Name="*rcNameID"  Personality="QualNameEx" >
    <feature  xsi:type="GDLW_string">RESDLL</feature>
    <option  xsi:type="GDLW_string">stdname</option>
@@ -87,7 +87,7 @@ The only difference between the XML output that is generated from the MULTIPLE\_
 
 For example, you can create an array where each member of the array is a MULTIPLE\_PERSONALITY type, as follows.
 
-```
+```cpp
 *Template:  DT_ARRAY_OF_MP
 {
     *Type:  DATATYPE
@@ -108,13 +108,13 @@ For example, you can create an array where each member of the array is a MULTIPL
 
 And you can use the preceding template to process the following instance data, which is an array that contains three multiple personality objects, each of which happens to have a different personality.
 
-```
+```cpp
 *rcNameID_List:( RESDLL.stdname.467, 0x117, "Quote" )
 ```
 
 This processing will produce the following XML snapshot.
 
-```
+```cpp
     <GDL_ATTRIBUTE Name="*rcNameID_List"  >
         <ArrayMember  Personality="QualNameEx">
             <feature  xsi:type="GDLW_string">RESDLL</feature>

@@ -26,7 +26,7 @@ Note that file systems also create control device objects. When a file system fi
 
 The following example creates a control device object:
 
-```
+```cpp
 RtlInitUnicodeString(&nameString, MYLEGACYFILTER_FULLDEVICE_NAME);
 status = IoCreateDevice(
         DriverObject,                  //DriverObject

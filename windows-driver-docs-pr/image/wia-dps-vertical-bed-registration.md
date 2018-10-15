@@ -87,7 +87,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_DPS\_HORIZONTAL\_BED\_REGISTRATION**](wia-dps-horizontal-bed-registration.md)

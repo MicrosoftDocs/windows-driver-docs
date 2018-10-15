@@ -31,7 +31,7 @@ As with [catalog files](catalog-files.md), [**SignTool**](https://msdn.microsoft
 
 To test-sign the *toaster.sys* file, run the following command line:
 
-```
+```cpp
 Signtool sign /v /s PrivateCertStore /n Contoso.com(Test) /t http://timestamp.verisign.com/scripts/timestamp.dll amd64\toaster.sys
 ```
 

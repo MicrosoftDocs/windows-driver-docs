@@ -44,7 +44,7 @@ In this example, a co-installer performs the following operations to support fin
 
 The following co-installer code example shows the basic structure of co-installer code that implements finish-install actions:
 
-```
+```cpp
 DWORD CALLBACK
 SampleCoInstaller(
   IN DI_FUNCTION  InstallFunction,

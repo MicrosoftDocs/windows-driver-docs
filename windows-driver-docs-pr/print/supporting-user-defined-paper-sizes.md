@@ -129,7 +129,7 @@ Notice use of the two standard variables, PhysPaperWidth and PhysPaperLength. At
 Note that these pseudoexpressions are valid whether the paper is left-fed, right-fed, or center-fed.
 
 Insert actual values, determined in step 1, into these expressions to create GPD entries. Examples might be:
-```
+```cpp
 *CustPrintableOriginX:  %d{300}
 *CustPrintableOriginY:  %d{300}
 *CustPrintableSizeX:   %d{PhysPaperWidth-600}
@@ -151,7 +151,7 @@ For center-fed printers:
 \*CustCursorOriginX: %d{\*CursorOrigin.x+(PhysPaperWidth-PageDimensions.x)/2}
 \*CustCursorOriginY: %d{\*CursorOrigin.y}
 Insert actual values, determined in step 1, into these expressions to create GPD entries. Examples might be (for center-fed paper):
-```
+```cpp
 *CustCursorOriginX:  %d{((PhysPaperWidth-14040)/2)+300}
 *CustCursorOriginY:   %d{180}
 ```
@@ -162,7 +162,7 @@ Specify values for the remaining three GPD entries--\*MinSize, \*MaxSize, and \*
 
 The following example GPD file segment describes acceptable customized paper sizes for a center-fed printer. For portrait mode, all margins for all custom paper sizes are 300 master units (1/4 inch) in size. For landscape mode, top and bottom margins are 240 master units while left and right margins are 200 master units.
 
-```
+```cpp
 *Option: CUSTOMSIZE
 {
   *rcNameID: =USER_DEFINED_SIZE_DISPLAY

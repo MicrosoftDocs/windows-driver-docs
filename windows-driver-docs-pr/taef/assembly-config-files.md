@@ -22,7 +22,7 @@ The configuration file should be placed in the same directory as your test assem
 
 The .NET Configuration files are XML files in the following form:
 
-```
+```cpp
 <configuration>
     <appSettings>
         <add key="AssemblySetup" value="Assembly setup configuration information"/>
@@ -40,7 +40,7 @@ Note, the configuration file is a collection of name / value pairs.
 
 You can use the **System.Configuration.ConfigurationManager** class to read data from your configuration files. For example,
 
-```
+```cpp
 NameValueCollection appStgs = ConfigurationManager.AppSettings;
 Log.Comment(appStgs["AssemblySetup"]);
 ```

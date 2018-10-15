@@ -57,13 +57,13 @@ As an example, assume that an installation application has defined the server re
 
 To connect to the print queue named HpColor on NTPRINT, a user application on MyClient calls **AddPrinterConnection** as follows:
 
-```
+```cpp
 AddPrinterConnection("\\NTPRINT\HpColor")
 ```
 
 On the server, the spooler loads Mscms.dll and calls [**GenerateCopyFilePaths**](https://msdn.microsoft.com/library/windows/hardware/ff549896) as follows:
 
-```
+```cpp
 GenerateCopyFilePaths(
     "HpColor",
     "Color",
@@ -80,7 +80,7 @@ Microsoft ICM's Mscms.dll module does not modify the source or destination paths
 
 The server spooler returns the following keys to MyClient:
 
-```
+```cpp
 SourceDir: \\NTPRINT\PRINT$\Color
 TargetDir: "Color"
 ```
@@ -91,7 +91,7 @@ The spooler on MyClient performs the following operations:
 
 -   Downloads Mscms.dll and calls [**GenerateCopyFilePaths**](https://msdn.microsoft.com/library/windows/hardware/ff549896) as follows:
 
-    ```
+    ```cpp
     GenerateCopyFilePaths(
         "\\NTPRINT\HpColor",
         "Color",

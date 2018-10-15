@@ -174,7 +174,7 @@ There are also new pointer types that explicitly size the pointer. Be cautious w
 
 The following inline functions (defined in Basetsd.h) can help you safely convert values from one type to another:
 
-```
+```cpp
 unsigned long HandleToUlong( const void *h )
 long HandleToLong( const void *h )
 void * LongToHandle( const long h )

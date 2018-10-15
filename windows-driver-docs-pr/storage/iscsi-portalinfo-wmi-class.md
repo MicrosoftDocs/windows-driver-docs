@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 The ISCSI\_PortalInfo WMI class contains information that is related to an iSCSI portal. This class is defined as follows in *Mgmt.mof*.
 
-```
+```cpp
 class ISCSI_PortalInfo
 {
     [read,

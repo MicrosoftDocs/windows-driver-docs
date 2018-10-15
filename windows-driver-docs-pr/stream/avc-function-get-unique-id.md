@@ -64,7 +64,7 @@ Possible other return values include:
 
 This function uses the **UniqueID** member of the AVC\_MULTIFUNC\_IRB structure as shown below.
 
-```
+```cpp
 typedef struct _AVC_MULTIFUNC_IRB {
   AVC_IRB  Common;
   union {
@@ -81,7 +81,7 @@ typedef struct _AVC_MULTIFUNC_IRB {
 
 The members of the AVC\_UNIQUE\_ID structure are shown below:
 
-```
+```cpp
 typedef struct _AVC_UNIQUE_ID {
     OUT GUID DeviceID;
 } AVC_UNIQUE_ID, *PAVC_UNIQUE_ID;

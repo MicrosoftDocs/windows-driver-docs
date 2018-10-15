@@ -72,7 +72,7 @@ For more information on the unit of measurement that is used (1/65536 dB), see [
 
 To override the wdmudio.inf file, use the Include and Needs directives as shown in this code segment from the *Microsoft Virtual Audio Device Driver Sample* available as part of the [Windows Driver Kit (WDK) 8.1 Samples](http://go.microsoft.com/fwlink/p/?LinkId=618052).
 
-```
+```cpp
 ;Copyright (c) Microsoft Corporation. All rights reserved.
 ;
 ...

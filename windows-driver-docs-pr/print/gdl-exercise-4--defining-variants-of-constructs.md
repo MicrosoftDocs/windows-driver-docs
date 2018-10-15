@@ -35,7 +35,7 @@ Create a template to abstract the common properties of these two types of \*POpt
 
 The following template satisfies the conditions.
 
-```
+```cpp
 *Template:  COMMAND_TYPE
 {
     *Type:  DATATYPE
@@ -53,7 +53,7 @@ The following template satisfies the conditions.
 
 The following derived option template further defines properties of the virtual template POPTION.
 
-```
+```cpp
 *Template:  GENERIC_OPTION
 {
     *Inherits: POPTION
@@ -116,7 +116,7 @@ The following derived option template further defines properties of the virtual 
 
 The following derived option template further specializes properties of the template GENERIC\_OPTION.
 
-```
+```cpp
 *Template:  PAPERSIZE_OPTION
 {
     *Name:  "*POption"  *%  Isolate branch from Base Templates
@@ -143,7 +143,7 @@ The following derived option template further specializes properties of the temp
 
 The following derived option template further specializes properties of the template GENERIC\_OPTION.
 
-```
+```cpp
 *Template:  INPUTTRAY_OPTION
 {
     *Name:  "*POption"   *%  Isolate branch from Base Templates

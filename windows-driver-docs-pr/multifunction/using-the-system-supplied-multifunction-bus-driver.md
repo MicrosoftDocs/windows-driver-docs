@@ -45,7 +45,7 @@ In either case, the vendor also supplies drivers and INF files for the individua
 
 The following skeleton of a custom multifunction INF illustrates the required syntax for specifying mf.sys as the driver for a multifunction device:
 
-```
+```cpp
 [Version]
 Signature = "$Windows NT$"
 ; ...

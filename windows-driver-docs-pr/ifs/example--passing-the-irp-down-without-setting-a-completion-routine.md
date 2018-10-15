@@ -28,14 +28,14 @@ To pass the IRP down to lower-level drivers without setting a completion routine
 
 This technique is illustrated in the following code examples:
 
-```
+```cpp
 IoSkipCurrentIrpStackLocation ( Irp ); 
 return IoCallDriver ( NextLowerDriverDeviceObject, Irp ); 
 ```
 
 Or, equivalently:
 
-```
+```cpp
 IoSkipCurrentIrpStackLocation ( Irp ); 
 status = IoCallDriver ( NextLowerDriverDeviceObject, Irp ); 
 /* log or debugprint the status value here */

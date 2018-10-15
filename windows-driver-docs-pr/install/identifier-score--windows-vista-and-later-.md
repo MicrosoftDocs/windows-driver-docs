@@ -26,7 +26,7 @@ The identifier score is a sum of an identifier-match-type score and an identifie
 
 For a given identifier-match type, the identifier-list-position score ranks a driver according to the position of the matching identifier in the hardware ID list or the compatible ID list for a device and the position of the matching identifier in an entry of an INF *Models* section. Specifically, each device has an ordered list of hardware IDs and an ordered list of compatible IDs that are reported by the bus driver for the device. The identifiers are ordered in the list from the most specific to the most generic functionality. In addition, each INF *Models* section entry has one hardware ID and an optional list of compatible IDs that are listed in order of the most specific to the most generic functionality, as follows:
 
-```
+```cpp
 device-description=install-section-name,hw-id,[compatible-id,...] ...
 ```
 

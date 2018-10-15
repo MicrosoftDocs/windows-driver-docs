@@ -25,7 +25,7 @@ ms.localizationpriority: medium
 
 Use the following example code to perform operations over the Certified Output Protection Protocol (COPP). The example code implements the [*DdMoCompRender*](https://msdn.microsoft.com/library/windows/hardware/ff550248) callback function. The **RenderMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](https://msdn.microsoft.com/library/windows/hardware/ff551660) structure points to the callback function. The example code only shows how *DdMoCompRender* is used for COPP operations. For an implementation of *DdMoCompRender* that performs ProcAmp control and deinterlacing operations, see [Performing ProcAmp Control and Deinterlacing Operations](performing-procamp-control-and-deinterlacing-operations.md) and [Performing Deinterlacing with Substream Compositing Operations](performing-deinterlacing-with-substream-compositing-operations.md).
 
-```
+```cpp
 DWORD APIENTRY
   MOCOMPCB_RENDER(
     PDD_RENDERMOCOMPDATA  lpData

@@ -26,7 +26,7 @@ Specifically, whenever a driver changes global or file object data, it must use 
 
 In the following code snippet, a race condition could occur when the driver accesses the global data at **Data.LpcInfo**:
 
-```
+```cpp
    PLPC_INFO pLpcInfo = &Data.LpcInfo; //Pointer to global data
    ...
    ...
@@ -41,7 +41,7 @@ Multiple threads entering this code as a result of an IOCTL call could cause a m
 
 The following example attempts to reallocate a file-specific buffer (**Endpoint-&gt;LocalAddress**) to hold the endpoint address:
 
-```
+```cpp
    Endpoint = FileObject->FsContext;
 
     if ( Endpoint->LocalAddress != NULL &&

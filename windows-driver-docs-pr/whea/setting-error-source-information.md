@@ -24,7 +24,7 @@ A user-mode application can set the information for a particular [error source](
 
 The following code example shows how to set the error source information for a particular error source.
 
-```
+```cpp
 IWbemServices *pIWbemServices;
 WHEA_ERROR_SOURCE_DESCRIPTOR ErrorSourceInfo;
 BSTR ClassName;

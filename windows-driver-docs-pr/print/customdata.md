@@ -136,7 +136,7 @@ Examples
 
 The following code example shows how you can use the **customData** element to obtain your custom data.
 
-```
+```cpp
 <?xml version="1.0"?>
   <asyncPrintUIRequest xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request"
       xmlns:myco="http://www.myprintercompany.com">
@@ -149,7 +149,7 @@ The following code example shows how you can use the **customData** element to o
 </asyncPrintUIRequest>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**requestOpen**](requestopen.md)

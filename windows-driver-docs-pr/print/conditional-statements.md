@@ -58,7 +58,7 @@ The GPD language provides C-like conditional statements that allow you to descri
 
 To express the case in which page margins and cursor origin are dependent on the page's orientation, the following entries could be used:
 
-```
+```cpp
 *Feature: Orientation
 {
     *DefaultOption: Portrait
@@ -106,7 +106,7 @@ If you do not list all of a feature's options as **\*Case** statement arguments,
 
 You can include **\*Switch** statements inside **\*Case** and **\*Default** statements. This allows you to specify multiple dependencies, as follows:
 
-```
+```cpp
 *Feature: feature1 {*Option: optionA {...} *Option: optionB {...}}
 *Feature: feature2 {*Option: optionC {...} *Option: optionD {...}}
 *Feature: feature3 
@@ -190,7 +190,7 @@ Consider the following scenario. You have a v4 printer driver which is derived f
 
 The class driver's GPD file has the following switch tree:
 
-```
+```cpp
 * Option: A4
     1. Switch: Resolution
 * Option: Letter
@@ -200,7 +200,7 @@ The class driver's GPD file has the following switch tree:
 
 The derived v4 printer driver wants to add the **MarginSetting** switch, so its GPD file will have the following switch tree:
 
-```
+```cpp
 * Option: A4
     1. Switch: Resolution
     2. Switch: InputBin
@@ -215,7 +215,7 @@ Note that **Resolution** is set before **InputBin** in the derived GPD and **Mar
 
 For example, an incorrectly derived GPD file may look like the following:
 
-```
+```cpp
 * Option: A4
     1. Switch: MarginSetting
     2. Switch: InputBin

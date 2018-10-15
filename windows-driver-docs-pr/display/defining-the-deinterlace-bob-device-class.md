@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 Use the following example code to define the deinterlace bob device class:
 
-```
+```cpp
 // Deinterlace bob device class.
 struct DXVA_DeinterlaceBobDeviceClass : public DXVA_DeviceBaseClass
 {

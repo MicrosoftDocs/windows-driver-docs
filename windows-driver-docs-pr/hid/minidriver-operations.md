@@ -142,7 +142,7 @@ A HID\_DEVICE\_EXTENSION structure contains the following members:
 
 Given a pointer to the FDO of an input device, the following GET\_MINIDRIVER\_DEVICE\_EXTENSION macro returns a pointer to a HID minidriver extension:
 
-```
+```cpp
 #define GET_MINIDRIVER_DEVICE_EXTENSION(DO) ((PDEVICE_EXTENSION) (((PHID_DEVICE_EXTENSION)(DO)->DeviceExtension)->MiniDeviceExtension))
 ```
 

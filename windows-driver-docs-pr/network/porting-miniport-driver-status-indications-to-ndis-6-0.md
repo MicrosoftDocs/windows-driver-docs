@@ -26,7 +26,7 @@ The [**NdisMIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardw
 
 The initialization of status indication structure is shown in the following example.
 
-```
+```cpp
 StatusIndication.Header.Type = NDIS_OBJECT_TYPE_STATUS_INDICATION;
 StatusIndication.Header.Revision = NDIS_STATUS_INDICATION_REVISION_1;
 StatusIndication.Header.Size = sizeof(NDIS_STATUS_INDICATION);

@@ -33,7 +33,7 @@ An application calls **ExtEscape(**hdc, WNDOBJ\_SETUP,...**)** and passes a hand
 
 The driver should handle the **ExtEscape** call in a manner similar to the following:
 
-```
+```cpp
 ULONG DrvEscape(
   SURFOBJ *pso,
   ULONG    iEsc,

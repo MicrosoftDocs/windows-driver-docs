@@ -25,7 +25,7 @@ The optional **ConditionHistory** element is a collection of [**ConditionHistory
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ConditionHistory>
   child elements
 </wscn:ConditionHistory>
@@ -85,7 +85,7 @@ A client can query the scanner's **ConditionHistory** element by calling the [**
 
 The conditions vary in severity from informational to critical.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ConditionHistoryEntry**](conditionhistoryentry.md)

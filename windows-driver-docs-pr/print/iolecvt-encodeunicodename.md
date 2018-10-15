@@ -79,7 +79,7 @@ Return value
 Remarks
 -------
 
-```
+```cpp
     Dim OleCvt, strPrinter, strEncodedPrinter
     Set OleCvt = Server.CreateObject("OlePrn.OleCvt")
     strMyUrl = "MyPage.asp?MyVariable=" &amp; 

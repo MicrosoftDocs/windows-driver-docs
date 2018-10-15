@@ -15,7 +15,7 @@ An HBA miniport driver that supports the T11 committee's *Fibre Channel HBA API*
 
 The HBAFCPBindingEntry2 class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class HBAFCPBindingEntry2 {
   [WmiDataId(1), HBA_BIND_TYPE_QUALIFIERS] HBA_BIND_TYPE  Type;
   [HBAType("HBA_FCPSCSIENTRY"), WmiDataId(4)] HBAScsiID  ScsiId;

@@ -28,7 +28,7 @@ The [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff5441
 
 The [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine is defined as follows:
 
-```
+```cpp
 NTSTATUS 
 (*PDRIVER_INITIALIZE) ( 
     IN PDRIVER_OBJECT DriverObject, 

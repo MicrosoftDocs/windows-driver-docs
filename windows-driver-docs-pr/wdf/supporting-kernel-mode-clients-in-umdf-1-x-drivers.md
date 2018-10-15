@@ -74,7 +74,7 @@ Passing return status values from user-mode to kernel-mode requires special atte
 
 -   UMDF version 1 drivers typically receive HRESULT-typed return values, while KMDF and WDM-based kernel-mode drivers typically receive NTSTATUS-typed values. If a UMDF 1.*x* driver completes an I/O request, and if the driver has a kernel-mode client, the driver's call to [**IWDFIoRequest::Complete**](https://msdn.microsoft.com/library/windows/hardware/ff559070) or [**IWDFIoRequest::CompleteWithInformation**](https://msdn.microsoft.com/library/windows/hardware/ff559074) should specify an HRESULT value that the driver generates from an NTSTATUS value. In general, UMDF 1.*x* drivers should use the HRESULT\_FROM\_NT macro (defined in *Winerror.h*) to return status to a kernel-mode client. The following example shows how to use this macro when completing a request.
 
-    ```
+    ```cpp
     hr = HRESULT_FROM_NT(STATUS_BUFFER_OVERFLOW)
     request->Complete(HRESULT_FROM_NT(STATUS_BUFFER_OVERFLOW);
     return hr;
@@ -89,14 +89,14 @@ Passing return status values from user-mode to kernel-mode requires special atte
 
     To use the NTSTATUS values that are defined in *ntstatus.h*, a UMDF 1.*x* driver must include these two lines before including any additional headers.
 
-    ```
+    ```cpp
     #define UMDF_USING_NTSTATUS
     #include <ntstatus.h>
     ```
 
     Do not use the HRESULT\_FROM\_NT macro to convert STATUS\_SUCCESS from an NTSTATUS value to an HRESULT value. Just return S\_OK, as shown in the following example.
 
-    ```
+    ```cpp
     request->Complete(S_OK);
     ```
 

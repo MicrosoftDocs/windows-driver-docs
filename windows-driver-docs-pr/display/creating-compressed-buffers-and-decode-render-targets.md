@@ -25,7 +25,7 @@ The Microsoft Direct3D runtime calls the user-mode display driver's [**CreateRes
 
 Each compressed buffer type has its own surface format as well as a special flag that indicates that the surface that the runtime creates contains compressed buffer information for accelerated video decode. The user-mode display driver determines to create a compressed buffer if the **DecodeCompressedBuffer** bit-field flag in the **Flags** member of the [**D3DDDIARG\_CREATERESOURCE**](https://msdn.microsoft.com/library/windows/hardware/ff542963) structure that the *pResource* parameter of [**CreateResource**](https://msdn.microsoft.com/library/windows/hardware/ff540688) points to is set. The user-mode display driver determines the type of compressed buffer to create by the format value in the **Format** member of D3DDDIARG\_CREATERESOURCE. The following formats are defined:
 
-```
+```cpp
 D3DDDIFMT_PICTUREPARAMSDATA       = 150
 D3DDDIFMT_MACROBLOCKDATA          = 151
 D3DDDIFMT_RESIDUALDIFFERENCEDATA  = 152

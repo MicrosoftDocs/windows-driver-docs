@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This topic contains a code sample that toggles the identified Windows button down and then up.
 
-```
+```cpp
 int __cdecl InjectButtonPress(
     __in int argc,
     __in_ecount(argc) char **argv)

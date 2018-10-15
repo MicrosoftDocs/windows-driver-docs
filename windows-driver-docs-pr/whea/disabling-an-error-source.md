@@ -25,7 +25,7 @@ A user-mode application can disable an [error source](hardware-errors-and-error-
 
 The following code example shows how to disable an error source.
 
-```
+```cpp
 IWbemServices *pIWbemServices;
 ULONG ErrorSourceID;
 BSTR ClassName;

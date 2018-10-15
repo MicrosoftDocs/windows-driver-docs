@@ -85,7 +85,7 @@ Instructions
 
     After selecting an alternate setting, the client driver must always get the pipe handles for endpoints in the new setting. Failure to do so might cause the driver to send data transfer requests by using stale pipe handles. For information about retrieving pipe handles, see [How to enumerate USB pipes](how-to-get-usb-pipe-handles.md).
 
-```
+```cpp
 NTSTATUS  FX3SelectInterfaceSetting(  
     _In_ WDFDEVICE Device,
     _In_ UCHAR SettingIndex)

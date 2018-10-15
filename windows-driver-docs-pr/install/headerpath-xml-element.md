@@ -21,7 +21,7 @@ The **headerPath** XML element specifies the source file name for a custom heade
 
 ### Element Tag
 
-```
+```cpp
 <headerPath>
 ```
 
@@ -64,7 +64,7 @@ A **headerPath** element is customized, but not localized, if it is a child elem
 
 The following code example demonstrates a **headerPath** element that specifies *Data\\Header.bmp* as the header bitmap file that DPInst displays in the upper-right corner of a DPInst EULA and installation pages and an installation page. The text that specifies the custom header bitmap file is shown in bold font style.
 
-```
+```cpp
 <dpinst>
   ...
   <headerPath>Data\Header.bmp</headerPath>

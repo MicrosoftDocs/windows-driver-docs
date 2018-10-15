@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The Layout section consists of the [Layout](layout.md) property and several properties and values that control the appearance of the print job.
 
-```
+```cpp
 Printer
  Layout
     NumberUp

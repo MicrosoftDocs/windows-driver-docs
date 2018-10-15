@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The image processing filter is typically installed together with the WIA driver. In order to install the driver's image processing filter together with the driver, a small number of additions must be done to the driver's INF file. The following example shows an example of how an existing driver INF file can be modified to include the image processing filter.
 
-```
+```INF
 [MyDriver.AddReg]
 ...
 HKCR,CLSID\<UiClassId>\shellex\ImageProcessingFilter\<FilterClassId>

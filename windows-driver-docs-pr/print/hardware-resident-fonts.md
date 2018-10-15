@@ -49,7 +49,7 @@ where *FontResourceID* is the RC\_UFM resource identifier associated with a .ufm
 
 Following is an example:
 
-```
+```cpp
 *% Assume that RC_FONT_xxx ids are references to 
 *% value macros defined by the GPD file creator.
 *DeviceFonts: LIST(=RC_FONT_COURIER10, =RC_FONT_ARIALR,

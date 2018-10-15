@@ -40,7 +40,7 @@ The driver's *D3dCreateSurfaceEx* function receives the surface's width, pitch, 
 
 The following code snippet shows the calculations that the driver must perform to restore the width and height of the surface:
 
-```
+```cpp
 RealWidth = (Width / Block size) * 4;
 RealHeight = Height * 4;
 ```

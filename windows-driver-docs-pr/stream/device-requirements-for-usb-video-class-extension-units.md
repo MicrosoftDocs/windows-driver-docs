@@ -41,7 +41,7 @@ KSPROPERTY\_EXTENSION\_UNIT\_PASS\_THROUGH (Property ID=0xffff) is not implement
 
 The following code example, taken from the complete sample shown in the Sample Extension Unit Plug-in DLL, shows how to make a KSPROPERTY\_EXTENSION\_UNIT\_INFO request:
 
-```
+```cpp
 ExtensionProp.Property.Set = PROPSETID_VIDCAP_EXTENSION_UNIT;
     ExtensionProp.Property.Id = KSPROPERTY_EXTENSION_UNIT_INFO;
     ExtensionProp.Property.Flags = KSPROPERTY_TYPE_GET | 

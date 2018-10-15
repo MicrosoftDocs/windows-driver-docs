@@ -25,7 +25,7 @@ The required **MinValue** element specifies the minimum value that the scan devi
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:MinValue>
   text
 </wscn:MinValue>
@@ -76,7 +76,7 @@ Remarks
 
 The value of the **MinValue** element depends on its parent element. For the possible values, see the appropriate parent element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CompressionQualityFactorSupported**](compressionqualityfactorsupported.md)

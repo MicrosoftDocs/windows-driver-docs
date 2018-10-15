@@ -22,7 +22,7 @@ Unlike system memory buffers, which must be copied to a D3D surface before rende
 
 When a SHED-capable minidriver receives D3D buffers, the D3D surface is locked and a pointer to it is located in [**KSSTREAM\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff567138).**Data**. The surface stride information is supplied in the [**KS\_FRAME\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567645) extension to KSSTREAM\_HEADER, as shown in the following code example:
 
-```
+```cpp
 typedef struct KS_FRAME_INFO {
     ULONG                   ExtendedHeaderSize; // Size of this extended header
     DWORD                   dwFrameFlags;       // Field1, Field2, or Frame

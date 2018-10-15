@@ -30,7 +30,7 @@ To participate in error information retrieval, a PSHED plug-in must implement th
 
 The following code example shows how to implement these callback functions.
 
-```
+```cpp
 //
 // The PSHED plug-in&#39;s GetInjectionCapabilities callback function
 //

@@ -36,7 +36,7 @@ where *n* specifies the order in which the installer installs the files. Numbers
 
 For example, if you are providing two rendering plug-ins and one user interface plug-in, and your printer model is XYZ, your .ini file might appear as follows:
 
-```
+```cpp
 [OEMFiles]
 OEMDriverFile1=XYZDRV1.DLL
 OEMConfigFile1=XYZUI1.DLL

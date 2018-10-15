@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 The following code example shows a native C++ file that contains a single test class with two test methods on it.
 
-```
+```cpp
 1   #include "WexTestClass.h"
 2
 3   class SimpleTests   {
@@ -48,7 +48,7 @@ The following code example shows a native C++ file that contains a single test c
 
 If you wish to define the tests inline within the class declaration, you can do that as long as you include "WexTestClass.h" while **INLINE\_TEST\_METHOD\_MARKUP** is defined in the preprocessor.
 
-```
+```cpp
 1   #define INLINE_TEST_METHOD_MARKUP
 2   #include "WexTestClass.h"
 3
@@ -79,7 +79,7 @@ If you wish to define the tests inline within the class declaration, you can do 
 
 The following example uses setup and cleanup methods and declares metadata along with the test class and test method declarations. This example also contains a single class (**MetadataAndFixturesTests**) with two test methods.
 
-```
+```cpp
  1  #define INLINE_TEST_METHOD_MARKUP
  2  #include "WexTestClass.h"
  3

@@ -269,7 +269,7 @@ Device MFT must not create its own threads. Instead it must use MF Work Queues, 
 
 The camera device INF must have the following device interface entry that specifies the CLSID of the CoClass of the Device MFT.
 
-```
+```INF
 [CaptureAvstrm.Device.NTarm.Interfaces]
 AddInterface = %KSCATEGORY_VIDEO_CAMERA%, %Capture.FilterDescBack%, Capture.FilterBack
 
@@ -285,14 +285,9 @@ The above INF entries result in the following registry keys being entered:
     
 **Note** This is an example only (not the actual regkey)
 
-```
+```console
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\{E5323777-F976-4f5b-9B55-B94699C46E44}\##?#USB#VID_045E&PID_075D&MI_00#8&23C3DB65&0&0000#{E5323777-F976-4f5b-9B55-B94699C46E44}\#GLOBAL\Device Parameters]
 "CLSID"="{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
 "FriendlyName"="USB Video Device"
 "CameraDeviceMftClsid"="{3456A71B-ECD7-11D0-B908-00A0C9223196}"<<< Device MFT CoClass ID >>>
 ```
-
-
-
-
-

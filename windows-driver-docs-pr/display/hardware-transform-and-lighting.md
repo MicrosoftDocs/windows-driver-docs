@@ -76,7 +76,7 @@ All the key state and data structures used by the software implementation of the
 
 The following render state types pertain only to devices that accelerate transform and lighting:
 
-```
+```cpp
 D3DRENDERSTATE_AMBIENT
 D3DRENDERSTATE_AMBIENTMATERIALSOURCE
 D3DRENDERSTATE_CLIPPING

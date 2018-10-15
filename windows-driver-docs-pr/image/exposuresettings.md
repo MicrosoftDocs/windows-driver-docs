@@ -25,7 +25,7 @@ The required **ExposureSettings** element contains individual adjustment values 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ExposureSettings>
   child elements
 </wscn:ExposureSettings>
@@ -80,7 +80,7 @@ There are no attributes.
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Brightness**](brightness.md)

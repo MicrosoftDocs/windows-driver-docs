@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 Add entries to the GDL for memory options specified in the PPD. The first sample is an example excerpt from a PPD file that concerns installable memory options:
 
-```
+```PPD
 *% === Installable Options ===========
 *OpenGroup: InstallableOptions/Options Installed
  
@@ -38,7 +38,7 @@ Add entries to the GDL for memory options specified in the PPD. The first sample
 
 To enable autoconfiguration for the "InstalledMemory" PPD feature, add the following code example to the GDL file.
 
-```
+```GDL
 *% This feature definition merges with the definition in the PPD file
 *% because both have the same name
 *Feature: InstalledMemory

@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 An HBA miniport driver that supports the T11 committee's *Fibre Channel HBA API* specification uses the MSFC\_FibrePortHBAMethods class to expose operations that can be performed on a Fibre Channel port. This class defines just one method, **ResetStatistics**:
 
-```
+```cpp
 class MSFC_FibrePortHBAMethods
 {
     [key] 

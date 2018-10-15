@@ -303,7 +303,7 @@ To submit multiple drivers at the same time, create a sub directory for each dri
 
 Prepare a cab file DDF input file that references the subdirectories. It might look something like this.
 
-```
+```cpp
 ;*** Submission.ddf multiple driver example
 ;
 .OPTION EXPLICIT     ; Generate errors

@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The following two examples show one possible mapping between a duplex unit feature as described in a PPD file and its counterpart in the GDL file. This first example is an excerpt from the PPD file.
 
-```
+```PPD
 *OpenUI *DuplexUnit: Boolean
 *DefaultDuplexUnit: True
 *DuplexUnit True/Installed: ""
@@ -39,7 +39,7 @@ The following two examples show one possible mapping between a duplex unit featu
 
 The next example is an excerpt from the GDL file, and shows the DuplexUnit feature definition that corresponds to the duplex unit feature in the preceding example.
 
-```
+```GDL
 *Feature: DuplexUnit
 {
   *FeatureType: PRINTER_PROPERTY

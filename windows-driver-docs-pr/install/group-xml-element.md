@@ -21,7 +21,7 @@ The **group** XML element specifies an ordered collection of [driver packages](h
 
 ### Element Tag
 
-```
+```cpp
 <group>
 ```
 
@@ -64,7 +64,7 @@ None
 
 The following code example demonstrates a **group** element that includes two [**package XML elements**](package-xml-element.md) and an [**installAllOrNone XML element**](installallornone-xml-element.md). The example **group** element configures DPInst to handle the "Abc" [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) and the "Def" driver package as a group. The **installAllOrNone** XML element configures DPInst to install the driver packages in the driver package group only if both drivers can be installed.
 
-```
+```cpp
 <dpinst>
   ...
   <group>

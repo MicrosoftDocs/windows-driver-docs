@@ -43,7 +43,7 @@ The key routines needed for impersonation include:
 
 Impersonation is straight-forward to implement. The following code example demonstrates basic impersonation:
 
-```
+```cpp
 NTSTATUS PerformSpecialTask(IN PFSD_CONTEXT Context)
 {
   BOOLEAN CopyOnOpen;

@@ -17,7 +17,7 @@ In Windows Vista and later versions of Windows, you can develop a third-party di
 
 After you develop your digital audio format, define a new GUID for the format and use an INF file to install the associated audio driver. The following code from an INF file shows how to add the necessary information about your new digital audio format to the registry:
 
-```
+```cpp
 [Version]
 Signature=$WindowsNT$
 ...

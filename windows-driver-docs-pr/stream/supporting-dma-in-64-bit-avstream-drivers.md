@@ -32,7 +32,7 @@ All drivers compiled for Win64 platforms should use [**IKsDeviceFunctions::Regis
 
 The following code example illustrates how to support DMA on both the x64-based client release and 32-bit platforms:
 
-```
+```cpp
 NTSTATUS MyDeviceStart (...) {
 // Get the DMA adapter object and store it in the Context member of the I/O stack location.
 Context -> AdapterObject = IoGetDmaAdapter (

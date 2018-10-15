@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 *DDInstall***.HW** sections are typically used for installing multifunction devices, for installing PnP filter drivers, and for setting up any user-accessible device-specific but driver-independent information in the registry, whether with explicit [**AddReg**](inf-addreg-directive.md) directives or with **Include** and **Needs** entries.
 
-```
+```cpp
 [install-section-name.HW] |
 [install-section-name.nt.HW] |
 [install-section-name.ntx86.HW] |
@@ -86,7 +86,7 @@ Examples
 
 This example shows how the CD-ROM device class installer uses *DDInstall***.HW** sections and *DDInstall***.Services** sections to support both CD audio and changer functionality by creating the appropriate registry sections, and setting these up as PnP upper filter drivers.
 
-```
+```cpp
 ;;
 ;; Installation section for cdaudio. Sets cdrom as the service 
 ;; and adds cdaudio as a PnP upper filter driver. 

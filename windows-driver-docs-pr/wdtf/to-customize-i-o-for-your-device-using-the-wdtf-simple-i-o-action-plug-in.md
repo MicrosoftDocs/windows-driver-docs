@@ -68,7 +68,7 @@ This [**Open**](https://msdn.microsoft.com/library/windows/hardware/hh451153) me
 
 -   Open the implementation file for your project, for example, CWDTFmyDeviceTypeSimpleIoActionImpl.cpp, and locate the instance of [**Open**](https://msdn.microsoft.com/library/windows/hardware/hh451153) method. This method has a section marked with comments and TODO:
 
-    ```
+    ```cpp
     //
        //   TODO: Add code for your implementation of Open() here.
        //
@@ -91,7 +91,7 @@ This method should close your previously opened test context. You should clear y
 
 -   Open the implementation file for your project, for example, CWDTFmyDeviceTypeSimpleIoActionImpl.cpp, and locate the instance of the [**Close**](https://msdn.microsoft.com/library/windows/hardware/hh451151) method. This method has a section marked with comments and TODO:
 
-    ```
+    ```cpp
     //
        //  //
        //   TODO: Add code for your implmentation of Close() here.
@@ -118,7 +118,7 @@ This method should perform a small number of input and output operations on the 
 
 -   Open the implementation file for your project, for example, CWDTFmyDeviceTypeSimpleIoActionImpl.cpp, and locate the instance of the RunIO method. This method has a section marked with comments and TODO:
 
-    ```
+    ```cpp
     //
        //  //
        //   TODO: Add code for your implmentaiton of RunIO() here.

@@ -26,7 +26,7 @@ To assign a pair of values to an attribute, use the PAIR keyword. The format is:
 
 where *Value1* and *Value2* are [numeric values](numeric-values.md). For example, the cursor origin position can be specified in [master units](master-units.md) as follows:
 
-```
+```cpp
 *CursorOrigin: PAIR(120, 100)
 ```
 

@@ -23,7 +23,7 @@ Once a minifilter driver has registered the context types that it uses, it can c
 
 In the following code example, taken from the CTX sample minifilter driver, the **CtxInstanceSetup** routine calls [**FltAllocateContext**](https://msdn.microsoft.com/library/windows/hardware/ff541710) to create an instance context:
 
-```
+```cpp
 status = FltAllocateContext(
  FltObjects->Filter,           //Filter
            FLT_INSTANCE_CONTEXT,         //ContextType
@@ -34,7 +34,7 @@ status = FltAllocateContext(
 
 In the CTX sample, the following context definition is registered for instance contexts:
 
-```
+```cpp
 { FLT_INSTANCE_CONTEXT,              //ContextType
   0,                                 //Flags
  CtxContextCleanup,                 //ContextCleanupCallback

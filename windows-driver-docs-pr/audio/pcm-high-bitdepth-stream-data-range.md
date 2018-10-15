@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 This example uses a [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537096) structure to describe the data range for a PCM high-bitdepth stream.
 
-```
+```cpp
   DataRange.FormatSize  = sizeof(KSDATARANGE_AUDIO);
   DataRange.Flags       = 0;
   DataRange.SampleSize  = 0;

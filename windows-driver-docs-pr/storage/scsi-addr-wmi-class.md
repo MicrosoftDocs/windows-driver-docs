@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 An MPIO driver uses the SCSI\_ADDR WMI class to identify the SCSI address of an MPIO disk.
 
-```
+```cpp
 class SCSI_ADDR
 {
     //

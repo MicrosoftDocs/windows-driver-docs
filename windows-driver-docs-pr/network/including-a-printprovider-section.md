@@ -27,7 +27,7 @@ An INF file that installs a **NetClient** component that is a print provider mus
  
 
 To create a **PrintProvider** section, add the **PrintProvider** extension to the *DDInstall* section for the component, as shown in the following example:
-```
+```cpp
 [DDInstall-section] ; Install section
 [DDInstall-section.PrintProvider] ; PrintProvider section
 ```
@@ -47,7 +47,7 @@ The **PrintProviderName** and **PrintProviderDll** entries supply information th
 
 The following is an example of a **PrintProvider** section:
 
-```
+```cpp
 [DDnstall-section.PrintProvider]
 PrintProviderName = "NetWare or Compatible Network"
 PrintProviderDll  = "nwprovau.dll"

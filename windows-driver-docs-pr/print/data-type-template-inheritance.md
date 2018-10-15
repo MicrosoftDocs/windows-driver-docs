@@ -41,7 +41,7 @@ The properties that are defined or inherited in the base template that is refere
 
 Data type inheritance is used to factor out properties that are common to several data type templates. In the following example, base templates define the properties that are common to several array data types. Note that two levels of inheritance are used.
 
-```
+```cpp
 *Template:  GENERIC_ARRAY  *%  Basemost Template
 {
     *Type:  DATATYPE

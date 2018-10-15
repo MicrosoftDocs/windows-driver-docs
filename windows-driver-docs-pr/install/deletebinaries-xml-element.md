@@ -21,7 +21,7 @@ The **deleteBinaries** XML element is an empty element that sets the **deleteBin
 
 **Element Tag**
 
-```
+```cpp
 <deleteBinaries>
 ```
 
@@ -64,7 +64,7 @@ By default, the **deleteBinaries** flag is set to OFF. To set the **deleteBinari
 
 The following code example demonstrates a **deleteBinaries** element.
 
-```
+```cpp
 <dpinst>
   ...
    <deleteBinaries/>

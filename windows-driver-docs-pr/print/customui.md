@@ -136,7 +136,7 @@ Examples
 
 The following code example shows how to use the **customUI** element to call and display a custom user interface on a client computer.
 
-```
+```cpp
 <?xml version="1.0"?>
   <asyncPrintUIRequest xmlns="http://schemas.microsoft.com/2003/print/asyncui/1.0"
       xmlns:myco="http://www.myprintercompany.com">
@@ -149,7 +149,7 @@ The following code example shows how to use the **customUI** element to call and
   </asyncPrintUIRequest>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**requestOpen**](requestopen.md)

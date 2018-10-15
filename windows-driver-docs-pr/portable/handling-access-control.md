@@ -156,7 +156,7 @@ HRESULT CQueue::ProcessWpdMessage(
         CHECK_HR(hr, "Failed to deserialize command parameters from input buffer");
     }
 
-    // Verify that that command was sent with the appropriate access
+    // Verify that the command was sent with the appropriate access
     if (hr == S_OK)
     {
         hr = VERIFY_WPD_COMMAND_ACCESS(ControlCode, pParams, g_WpdCommandAccessMap);

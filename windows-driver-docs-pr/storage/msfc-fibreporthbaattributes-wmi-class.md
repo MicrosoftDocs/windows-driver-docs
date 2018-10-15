@@ -15,7 +15,7 @@ An HBA miniport driver that supports the FCbre channel HBA API uses the MSFC\_Fi
 
 The MSFC\_FibrePortHBAAttributes class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MSFC_FibrePortHBAAttributes {
   [key] 
   string InstanceName;

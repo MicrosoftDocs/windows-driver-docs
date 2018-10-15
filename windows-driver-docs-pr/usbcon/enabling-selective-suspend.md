@@ -16,7 +16,7 @@ Alternatively, you can enable or disable selective suspend by setting the value 
 
 For instance, the following lines in Usbport.inf disable selective suspend for a Hydra OHCI controller:
 
-```
+```cpp
 [OHCI_NOSS.AddReg.NT]
 HKR,,"HcDisableSelectiveSuspend",0x00010001,1
 ```

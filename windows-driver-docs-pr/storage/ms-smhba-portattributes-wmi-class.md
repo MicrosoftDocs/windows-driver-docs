@@ -12,7 +12,7 @@ An HBA miniport driver that supports the Storage Management API uses the MS\_SMH
 
 The MS\_SMHBA\_PORTATTRIBUTES class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MS_SMHBA_PORTATTRIBUTES 
 {
     [HBA_PORTTYPE_QUALIFIERS, WmiDataId(1)]

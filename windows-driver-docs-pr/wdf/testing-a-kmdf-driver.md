@@ -28,7 +28,7 @@ When testing your driver, you should:
 -   Set the **VerifierOn** registry value to enable the framework's driver verification features. For more information about **VerifierOn** and other registry values that you can use when you are debugging and testing your driver, see [Using KMDF Verifier](using-kmdf-verifier.md) and [Using UMDF Verifier](using-umdf-verifier.md). For information about an application that helps you to use the framework's driver verification features, see [WDF Verifier Control Application](https://msdn.microsoft.com/library/windows/hardware/ff556129).
 
 -   For both UMDF versions 1 and 2, enable [Application Verifier (AppVerif.exe)](http://www.microsoft.com/download/details.aspx?id=20028) on Wudfhost.exe. For example:
-    ```
+    ```cpp
     appverif -enable handles locks heaps memory exceptions TLS -for WudfHost.exe
     ```
 

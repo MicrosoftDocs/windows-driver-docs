@@ -56,14 +56,14 @@ This code runs fine on versions of Windows earlier than Windows 10, but running 
 
 This code sample fails the U part of DCHU with the following [ApiValidator](validating-universal-drivers.md) errors:
 
-```
+```cpp
 ApiValidation: Error: FlexLinkTest.exe has a dependency on 'wtsapi32.dll!WTSEnumerateSessionsW' but is missing: IsApiSetImplemented("ext-ms-win-session-wtsapi32-l1-1-0")
 ApiValidation: Error: FlexLinkTest.exe has a dependency on 'wtsapi32.dll!WTSFreeMemory' but is missing: IsApiSetImplemented("ext-ms-win-session-wtsapi32-l1-1-0")
 ApiValidation: NOT all binaries are Universal
 ```
 Here's the code:
 
-```
+```cpp
 #include <windows.h>
 #include <stdio.h>
 #include <Wtsapi32.h>
@@ -98,13 +98,13 @@ int __cdecl wmain(int /* argc */, PCWSTR /* argv */ [])
 
 This sample shows how to call [**IsApiSetImplemented**](https://docs.microsoft.com/windows/desktop/api/apiquery2/nf-apiquery2-isapisetimplemented). This sample passes the U part of DCHU with the following [ApiValidator](validating-universal-drivers.md) output:
 
-```
+```cpp
 ApiValidation: All binaries are Universal
 ```
 
 Here's the code:
 
-```
+```cpp
 #include <windows.h>
 #include <stdio.h>
 #include <Wtsapi32.h>

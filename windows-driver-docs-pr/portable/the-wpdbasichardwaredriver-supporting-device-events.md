@@ -32,7 +32,7 @@ The event GUID for this custom event is defined in *Stdafx.h*. In **WpdBaseDrive
 2.  Serializes the **IPortableDeviceValues** into a BYTE buffer.
 3.  Calls **IWDFDevice::PostEvent** that has the EventGuid set to WPD\_EVENT\_NOTIFICATION, the event type set to WdfEventBroadcast, and the serialized BYTE buffer of the event parameters:
 
-```
+```cpp
 if (hr == S_OK)
 {
     // Initialize the event parameters

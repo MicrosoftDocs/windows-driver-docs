@@ -25,7 +25,7 @@ The required **ActiveJobs** element contains a list of all currently active scan
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ActiveJobs>
   child elements
 </wscn:ActiveJobs>
@@ -87,7 +87,7 @@ The **ActiveJobs** element contains all jobs that have not yet completed process
 
 A client can ask for the list of active jobs through the [**GetActiveJobsRequest**](getactivejobsrequest.md) operation. The WSD Scan Service returns the list in a [**GetActiveJobsResponse**](getactivejobsresponse.md) operation element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**GetActiveJobsRequest**](getactivejobsrequest.md)

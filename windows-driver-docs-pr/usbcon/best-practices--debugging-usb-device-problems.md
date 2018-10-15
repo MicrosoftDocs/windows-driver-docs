@@ -39,7 +39,7 @@ You can use the ETW events that are associated with the USB hub enumeration task
     2.  Select **Add Selected Value** to **Display Filter**.
     3.  Right-click the event in the **Frame Summary** pane and select **Add**"Protocol Name" to **Display Filter**.
     4.  In the **Display Filter** pane, change "OR" to "AND". The following sample shows the resulting filter:
-        ```
+        ```cpp
         NetEvent.Header.Descriptor.Task == 0x2 AND ProtocolName == "USBHub_MicrosoftWindowsUSBUSBHUB"
         ```
 

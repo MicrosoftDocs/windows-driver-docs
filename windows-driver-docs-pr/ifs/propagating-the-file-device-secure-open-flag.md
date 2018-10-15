@@ -26,7 +26,7 @@ ms.localizationpriority: medium
 
 After attaching a filter device object to a file system (but not to a volume), always be sure to set the FILE\_DEVICE\_SECURE\_OPEN flag on the filter device object as needed to so that it matches the value of the next-lower device object on the driver stack. (For more information about this flag, see [Specifying Device Characteristics](https://msdn.microsoft.com/library/windows/hardware/ff563818) in the Kernel Architecture Design Guide and [**DEVICE\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff543147) in the Kernel Reference.) An example of this follows:
 
-```
+```cpp
 if (FlagOn( DeviceObject->Characteristics, FILE_DEVICE_SECURE_OPEN )) {
     SetFlag(myLegacyFilterDeviceObject->Characteristics, FILE_DEVICE_SECURE_OPEN );
 }

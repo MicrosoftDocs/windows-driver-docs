@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The Status section consists of the [Status](status.md) property and several child properties and values that provide information about the status of the print device.
 
-```
+```cpp
 Printer
  Status
     Summary

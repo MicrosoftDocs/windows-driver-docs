@@ -19,13 +19,13 @@ The device metadata cache is the directory where device metadata packages are st
 
 On Windows 7, the device metadata cache is accessed from the following directory:
 
-```
+```cpp
 %LOCALAPPDATA%\Local\Microsoft\Device Metadata\
 ```
 
 On Windows 8 and later, the device metadata cache is accessed from the following directory:
 
-```
+```cpp
 %PROGRAMDATA%\Microsoft\Windows\DeviceMetadataCache\
 ```
 

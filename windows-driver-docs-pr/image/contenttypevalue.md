@@ -25,7 +25,7 @@ The required **ContentTypeValue** element specifies one document content type th
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ContentTypeValue>
   text
 </wscn:ContentTypeValue>
@@ -107,7 +107,7 @@ Remarks
 
 You can both extend and subset the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ContentTypesSupported**](contenttypessupported.md)

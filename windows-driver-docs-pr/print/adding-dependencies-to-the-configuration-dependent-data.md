@@ -46,7 +46,7 @@ The **\*Switch** and **\*Construct** directives never appear in the snapshot, so
 
 In the following code example, a *Today* parameter is defined to take days of the week. The example shows two sibling **\*Switch**/**\*Case** constructs; both will be evaluated independently.
 
-```
+```GDL
 *Schedule:
 {
   *Switch: Today
@@ -83,7 +83,7 @@ In the following code example, a *Today* parameter is defined to take days of th
 
 If the configuration specifies `Today: Saturday`, the snapshot will contain the following code.
 
-```
+```GDL
 *Schedule:
 {
  *Eat: Breakfast, Dinner
@@ -93,7 +93,7 @@ If the configuration specifies `Today: Saturday`, the snapshot will contain the 
 
 If the configuration specifies `Today: Wednesday`, the snapshot will contain the following code.
 
-```
+```GDL
 *Schedule:
 {
   *Eat: Lunch
@@ -103,7 +103,7 @@ If the configuration specifies `Today: Wednesday`, the snapshot will contain the
 
 If the configuration specifies `Today: Tuesday`, the snapshot will contain the following code.
 
-```
+```GDL
 *Schedule:
 {
   *ToDo: FixBugs
@@ -112,7 +112,7 @@ If the configuration specifies `Today: Tuesday`, the snapshot will contain the f
 
 The following code example shows two nested **\*Switch**/**\*Case** constructs.
 
-```
+```GDL
 *Schedule:
 {
   *Switch: Today

@@ -44,7 +44,7 @@ A driver can receive this IRP at any time after the driver's [*AddDevice*](https
 
 The **Parameters.QueryInterface** member of the [**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659) structure is itself a structure, which describes the interface being requested. The structure contains the following information:
 
-```
+```cpp
 CONST GUID *InterfaceType;
 USHORT Size;
 USHORT Version;

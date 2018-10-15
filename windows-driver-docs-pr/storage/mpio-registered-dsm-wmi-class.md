@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 A WMI client uses the MPIO\_REGISTERED\_DSM WMI class to query all the DSMs that are configured in a system.
 
-```
+```cpp
 class MPIO_REGISTERED_DSM
 {
     [key, read]

@@ -64,13 +64,13 @@ Solution: Xpath assumes that element names without a namespace prefix refer to t
 
 To access these elements by using Xpath, the client must first map this default namespace to an explict prefix. To map the default namespace in this way, use the document pbjects setProperty method. The property that needs to be set is SelectionNamespaces. Use this property to assign the default namespace an explict prefix. In the snapshot, the default namespace is http://schemas.microsoft.com/2002/print/gdl/1.0 so the call to setProperty might look like the following code example.
 
-```
+```cpp
 XMLDoc->setProperty(L"SelectionNamespaces", "xmlns:gdl=\"http://schemas.microsoft.com/2002/print/gdl/1.0\"");
 ```
 
 The second argument in the preceding example is actually a Variant, but this added complexity is omitted for simplicity. The Xpath query must now explicitly reference the namespace prefix gdl when referencing elements in the default namespace. The query then becomes the following code example.
 
-```
+```cpp
 selectSingleNode("/gdl:SnapshotRoot/gdl:GDL_ATTRIBUTE")
 ```
 

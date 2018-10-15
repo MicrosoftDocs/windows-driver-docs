@@ -34,7 +34,7 @@ Direct I/O involves double-mapping the user's address space to a system address 
 
     The following code snippet receives a string in a direct I/O request, then tries to convert that string to uppercase characters:
 
-    ```
+    ```cpp
     PWCHAR  PortName = NULL;
 
     PortName = (PWCHAR)MmGetSystemAddressForMdlSafe(irp->MdlAddress, NormalPagePriority);

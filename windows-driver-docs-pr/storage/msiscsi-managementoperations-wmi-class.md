@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The MSiSCSI\_MangementOperations WMI class contains ping methods to perform ICMP ping requests to the destination addresses. This class is defined as follows in Mgmt.mof.
 
-```
+```cpp
 class MSiSCSI_ManagementOperations
 {
     //

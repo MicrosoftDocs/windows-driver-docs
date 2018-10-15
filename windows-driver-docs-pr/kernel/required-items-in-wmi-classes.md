@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 All class definitions except embedded classes must include the items **InstanceName** and **Active**, which must appear exactly as shown:
 
-```
+```cpp
 //WMI class definition
 [
     //Class qualifiers

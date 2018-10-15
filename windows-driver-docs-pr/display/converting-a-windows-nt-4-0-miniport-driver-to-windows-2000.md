@@ -36,7 +36,7 @@ A good Windows NT 4.0 and previous miniport driver can easily become a Windows 2
 
 -   Update the **.Mfg** section of the driver's INF file to include the device and vendor ID. This is required so that the PnP manager can associate the device with its INF file. Samples of the Windows NT 4.0 and updated Windows 2000 and later **.Mfg** sections follow:
 
-    ```
+    ```cpp
     [ABC.Mfg]   ; Windows NT V4.0 INF
     %ABC% ABC Graphics Accelerator A = abc
     %ABC% ABC Graphics Accelerator B = abc

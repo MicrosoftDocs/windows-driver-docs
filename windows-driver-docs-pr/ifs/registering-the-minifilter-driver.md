@@ -23,7 +23,7 @@ Every minifilter driver must call [**FltRegisterFilter**](https://msdn.microsoft
 
 In the MiniSpy sample, the minifilter driver is registered as shown in the following code example:
 
-```
+```cpp
 NTSTATUS status;
 status = FltRegisterFilter(
            DriverObject,                  //Driver

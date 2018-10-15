@@ -35,7 +35,7 @@ Unidrv supports a maximum of 14 quoted text strings and command arguments in a c
 
 As an example, a printer's command to set a rectangle's gray fill percentage might be specified as follows:
 
-```
+```cpp
 *Command: CmdRectGrayFill: "<1B>*c" %d{GrayPercentage} "g2P"
 ```
 

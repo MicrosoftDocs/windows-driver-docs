@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 A **CopyINF** directive causes specified INF files to be copied to the target system. The **CopyINF** directive is supported in Windows XP and later versions of Windows.
 
-```
+```cpp
 [DDInstall]
   
 CopyINF=filename1.inf[,filename2.inf]...
@@ -64,7 +64,7 @@ For more information about how to copy INF files, see [Copying INFs](copying-inf
 Examples
 --------
 
-```
+```cpp
 [MyMfDevice.NTx86]
 CopyINF = Sound.INF
 ```

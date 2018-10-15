@@ -36,7 +36,7 @@ Rarely, a driver might identify a remote I/O target by supplying a pointer to a 
 
 The following example shows how the Ndisedge sample driver uses the above technique to create and open a remote I/O target:
 
-```
+```cpp
 status = WdfIoTargetCreate(Adapter->WdfDevice,
                         WDF_NO_OBJECT_ATTRIBUTES,
                         &Adapter->IoTarget);

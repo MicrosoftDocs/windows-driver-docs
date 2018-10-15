@@ -34,7 +34,7 @@ Some property controls use an additional structure to hold additional data. Wher
 
 To get or set additional data, a property will have its own special data structure following the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header). The following example shows a driver code fragment setting the property specific data for a KSPROPERTY\_TYPE\_GET request of the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FIELDOFVIEW**](https://msdn.microsoft.com/library/windows/hardware/dn567574) property.
 
-```ManagedCPlusPlus
+```cpp
 #define FL_WIDE_ANGLE 35
 #define FL_NORMAL     50
 

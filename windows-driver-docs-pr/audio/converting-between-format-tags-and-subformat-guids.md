@@ -29,7 +29,7 @@ The audio format for a WAVE\_FORMAT\_EXTENSIBLE format is specified by the GUID 
 
 This code snippet from Ksmedia.h shows how to define a new GUID as an autoinitialized static variable:
 
-```
+```cpp
 #define STATIC_KSDATAFORMAT_SUBTYPE_WAVEFORMATEX \
  0x00000000L, 0x0000, 0x0010, 0x80, 0x00, 0x00, 0xaa, 0x00, 0x38, 0x9b, 0x71
 DEFINE_GUIDSTRUCT("00000000-0000-0010-8000-00aa00389b71", KSDATAFORMAT_SUBTYPE_WAVEFORMATEX);
@@ -38,7 +38,7 @@ DEFINE_GUIDSTRUCT("00000000-0000-0010-8000-00aa00389b71", KSDATAFORMAT_SUBTYPE_W
 
 These macros from Ksmedia.h convert between wave-format tags and their associated GUIDs:
 
-```
+```cpp
 #if !defined( DEFINE_WAVEFORMATEX_GUID )
 #define DEFINE_WAVEFORMATEX_GUID(x) \
     (USHORT)(x), 0x0000, 0x0010, 0x80, 0x00, 0x00, 0xaa, 0x00, 0x38, 0x9b, 0x71
@@ -59,7 +59,7 @@ These macros from Ksmedia.h convert between wave-format tags and their associate
 
 The sample code below combines these techniques to create a subformat GUID that is based on the wave-format tag WAVE\_FORMAT\_AC3\_SPDIF, which has the value 0x0092:
 
-```
+```cpp
 #define STATIC_KSDATAFORMAT_SUBTYPE_DOLBY_AC3_SPDIF \
     DEFINE_WAVEFORMATEX_GUID(WAVE_FORMAT_DOLBY_AC3_SPDIF)
 

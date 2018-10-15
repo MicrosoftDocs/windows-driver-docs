@@ -25,7 +25,7 @@ The required **JobDescription** element contains basic creation information for 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobDescription>
   child elements
 </wscn:JobDescription>
@@ -88,7 +88,7 @@ Remarks
 
 A client sets the values for all **JobDescription** child elements and submits them in a [**CreateScanJobRequest**](createscanjobrequest.md) operation.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 MPIO publishes the DSM\_QUERYLBPolicy\_V2 WMI class but expects the DSM to register the GUID and handle its implementation. A WMI client uses the DSM\_QUERYLBPolicy\_V2 WMI class to query the load balance policy set for an MPIO disk.
 
-```
+```cpp
 class DSM_QueryLBPolicy
 {
 

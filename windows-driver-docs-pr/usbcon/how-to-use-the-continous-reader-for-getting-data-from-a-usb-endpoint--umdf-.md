@@ -73,7 +73,7 @@ Instructions
 
     The following example code configures the continuous reader for the specified target pipe object.
 
-    ```
+    ```cpp
     NTSTATUS FX3ConfigureContinuousReader(
         _In_ WDFDEVICE Device,
         _In_ WDFUSBPIPE Pipe)
@@ -139,7 +139,7 @@ Instructions
 
     The following example code shows the completion routine implementation.
 
-    ```
+    ```cpp
     EVT_WDF_USB_READER_COMPLETION_ROUTINE FX3EvtReadComplete;
 
     VOID FX3EvtReadComplete(
@@ -184,7 +184,7 @@ Instructions
 
     The following example code shows a failure routine implementation.
 
-    ```
+    ```cpp
     EVT_WDF_USB_READERS_FAILED FX3EvtReadFailed;  
       
     BOOLEAN  
@@ -221,7 +221,7 @@ Instructions
 
 The following example code configures the continuous reader for the specified target pipe object.
 
-```
+```cpp
 
 EVT_WDF_DEVICE_D0_ENTRY FX3EvtDeviceD0Entry;
 
@@ -288,7 +288,7 @@ Before you start using the continuous reader, you must configure the reader in y
 
 The following example code configures the continuous reader for the specified target pipe object. The example assumes that the target pipe object specified by the caller is associated with an IN endpoint. The continuous reader is configured to read USBD\_DEFAULT\_MAXIMUM\_TRANSFER\_SIZE bytes; to use the default number of pending requests using by the framework; to invoke the client driver-supplied completion and failure callback methods. Buffer received will not contain any header or trailer data.
 
-```
+```cpp
 HRESULT CDeviceCallback::ConfigureContinuousReader (IWDFUsbTargetPipe* pFxPipe)
 {
     if (!pFxPipe)
@@ -382,7 +382,7 @@ The continuous reader does not use power-managed queues to submit requests. Ther
 After the device enters a working state (**D0**), the framework calls the client-driver supplied D0-entry callback method that starts the target pipe object. When the device leaves the **D0** state, the framework calls the D0-exit callback method. The target pipe object completes the number of pending read requests, configured by the client driver, and stops accepting new requests.
 The following example code implements the [IPnpCallback](https://msdn.microsoft.com/library/windows/hardware/ff556762) interface on the device callback object.
 
-```
+```cpp
 class CDeviceCallback : 
     public IPnpCallbackHardware, 
     public IPnpCallback,
@@ -415,7 +415,7 @@ private:
 
 The following example code shows how to get a pointer to the IWDFIoTargetStateManagement interface of the target pipe object in the IPnpCallback::OnPrepareHardware method
 
-```
+```cpp
    //Enumerate the endpoints and get the interrupt pipe.
 
     for (UCHAR index = 0; index < NumEndpoints; index++)
@@ -455,7 +455,7 @@ The following example code shows how to get a pointer to the IWDFIoTargetStateMa
 
 The following example code shows how to get a pointer to the [**IWDFIoTargetStateManagement**](https://msdn.microsoft.com/library/windows/hardware/ff559198) interface of the target pipe object in the [**IPnpCallbackHardware::OnPrepareHardware**](https://msdn.microsoft.com/library/windows/hardware/ff556766) method.
 
-```
+```cpp
  HRESULT CDeviceCallback::OnD0Entry(
     IWDFDevice*  pWdfDevice,
     WDF_POWER_DEVICE_STATE  previousState
@@ -510,7 +510,7 @@ Each time that data is available on the endpoint on the device, the target pipe 
 
 The following example code implements the [**IUsbTargetPipeContinuousReaderCallbackReadComplete**](https://msdn.microsoft.com/library/windows/hardware/ff556908) interface on the device callback object.
 
-```
+```cpp
 class CDeviceCallback : 
     public IPnpCallbackHardware, 
     public IPnpCallback,   
@@ -548,7 +548,7 @@ private:
 
 The following example code shows the QueryInterface implementation of the device callback object.
 
-```
+```cpp
 HRESULT CDeviceCallback::QueryInterface(REFIID riid, LPVOID* ppvObject)
 {
     if (ppvObject == NULL)
@@ -590,7 +590,7 @@ HRESULT CDeviceCallback::QueryInterface(REFIID riid, LPVOID* ppvObject)
 
 The following example code shows how to get data from the buffer returned by [**IUsbTargetPipeContinuousReaderCallbackReadComplete::OnReaderCompletion**](https://msdn.microsoft.com/library/windows/hardware/ff556910). Each time the target pipe object completes a read request successfully, the framework calls **OnReaderCompletion**. The example gets the buffer that containsng data and prints the contents on the debugger output.
 
-```
+```cpp
  VOID CDeviceCallback::OnReaderCompletion(
     IWDFUsbTargetPipe* pPipe,
     IWDFMemory* pMemory,
@@ -648,7 +648,7 @@ The client driver can get notifications from the framework when a failure occurs
 
 The following example code implements the [**IUsbTargetPipeContinuousReaderCallbackReadersFailed**](https://msdn.microsoft.com/library/windows/hardware/ff556914) interface on the device callback object.
 
-```
+```cpp
 class CDeviceCallback : 
     public IPnpCallbackHardware, 
     public IPnpCallback,
@@ -688,7 +688,7 @@ private:
 
 The following example code shows the QueryInterface implementation of the device callback object.
 
-```
+```cpp
 HRESULT CDeviceCallback::QueryInterface(REFIID riid, LPVOID* ppvObject)
 {
     if (ppvObject == NULL)
@@ -736,7 +736,7 @@ HRESULT CDeviceCallback::QueryInterface(REFIID riid, LPVOID* ppvObject)
 
 The following example code shows an implementation of a failure callback. If a read request fails, the method prints the error code reported by the framework in the debugger and instructs the framework to reset the pipe and then restart the continuous reader.
 
-```
+```cpp
  BOOL CDeviceCallback::OnReaderFailure(
     IWDFUsbTargetPipe * pPipe,
     HRESULT hrCompletion

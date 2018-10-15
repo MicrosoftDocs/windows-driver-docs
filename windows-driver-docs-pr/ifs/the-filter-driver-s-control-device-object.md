@@ -26,13 +26,13 @@ Most file system filter drivers create and use a CDO. However, support for I/O r
 
 For example, consider a hypothetical "MyLegacyFilter" kernel-mode driver. This driver can create a CDO with the name:
 
-```
+```cpp
 \Device\MyLegacyFilter
 ```
 
 and calls [**IoCreateSymbolicLink**](https://msdn.microsoft.com/library/windows/hardware/ff549043) to link this name to an equivalent user-mode-visible name. This is done so that MyLegacyFilter's user-mode application can open a handle to the kernel-mode driver's CDO by supplying the name:
 
-```
+```cpp
 \\.\MyLegacyFilter
 ```
 

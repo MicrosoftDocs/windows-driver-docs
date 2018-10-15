@@ -159,7 +159,7 @@ Within the expression's **StandardVariableExpression** segment, the following re
 
 Following are example expressions:
 
-```
+```cpp
 *CustCursorOriginX: %d{((PhysPaperWidth-14040)/2)+300}
 *CustCursorOriginY: %d{180}
 *CustPrintableOriginX: %d{300}

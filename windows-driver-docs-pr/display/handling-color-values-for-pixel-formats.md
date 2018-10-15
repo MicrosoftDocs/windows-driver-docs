@@ -27,7 +27,7 @@ The display driver receives color values when it processes the D3DDP2OP\_CLEAR a
 
 The display driver can use the following code to convert color values for the ARGB and YUV class formats:
 
-```
+```cpp
 DWORD Convert2N(DWORD Color, DWORD n)
 {
     return (Color * (1 << n)) / 256;

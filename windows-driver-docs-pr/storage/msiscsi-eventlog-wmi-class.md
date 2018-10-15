@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The MSiSCSI\_EventLog WMI class is used to log any iSCSI events to system event logs. This class is defined as follows in *Mgmt.mof.*
 
-```
+```cpp
 class MSiSCSI_Eventlog : __ExtrinsicEvent
 {
     [key] 

@@ -25,28 +25,28 @@ First, your adapter driver should expose each stereo subdevice as a separate ins
 
 In addition, the unique name you assign to this pair must match the KSNAME string that you specify in your driver's INF file. For example, your driver might assign the names "Wave1" and "Wave2" to two subdevices during startup, as shown below:
 
-```
+```cpp
   InstallSubdevice(..., "Wave1",...);
   InstallSubdevice(..., "Wave2",...);
 ```
 
 In this case, the same names should appear in the INF file:
 
-```
+```cpp
   KSNAME_Wave1="Wave1"
   KSNAME_Wave2="Wave2"
 ```
 
 Your INF file should add interfaces that contain these names:
 
-```
+```cpp
   AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Wave1%,Test.Interface.Wave1
   AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Wave2%,Test.Interface.Wave2
 ```
 
 The INF file should create **AddReg** sections (see [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320)) in order to add information about these interfaces to the registry:
 
-```
+```cpp
   [Test.Interface.Wave1]
   AddReg=Test.I.Wave1.AddReg
 
@@ -56,7 +56,7 @@ The INF file should create **AddReg** sections (see [**INF AddReg Directive**](h
 
 The **AddReg** sections should also specify the registry entries for each subdevice:
 
-```
+```cpp
   [Test.I.Wave1.AddReg]
   HKR,,CLSID,,%Proxy.CLSID%
   HKR,,FriendlyName,,%Test.Wave1.szName%
@@ -68,7 +68,7 @@ The **AddReg** sections should also specify the registry entries for each subdev
 
 Finally, the INF file should define the friendly names for these subdevices:
 
-```
+```cpp
   Test.Wave1.szName="Punch"
   Test.Wave2.szName="Judy"
 ```

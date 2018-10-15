@@ -27,7 +27,7 @@ To register the FsFilter notification callback routines, you must allocate and i
 
 For example, a hypothetical "MyLegacyFilter" driver can register its FsFilter callback routines as follows:
 
-```
+```cpp
 fsFilterCallbacks.SizeOfFsFilterCallbacks = sizeof(FS_FILTER_CALLBACKS);
 fsFilterCallbacks.PreAcquireForSectionSynchronization = MyLegacyFilterPreFsFilterOperation;
 fsFilterCallbacks.PostAcquireForSectionSynchronization = MyLegacyFilterPostFsFilterOperation;

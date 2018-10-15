@@ -37,7 +37,7 @@ If an SPB controller driver supports the **IOCTL\_SPB\_FULL\_DUPLEX** request, o
 
 The following code example shows an *EvtIoInCallerContext* function that is implemented by an SPB controller driver.
 
-```
+```cpp
 VOID
 EvtIoInCallerContext(
     _In_  WDFDEVICE   SpbController,

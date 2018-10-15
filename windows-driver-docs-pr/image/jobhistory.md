@@ -25,7 +25,7 @@ The required **JobHistory** element contains a list of [**JobSummary**](jobsumma
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobHistory>
   child elements
 </wscn:JobHistory>
@@ -81,7 +81,7 @@ The **JobHistory** element contains a [**JobSummary**](jobsummary.md) element fo
 
 The amount of job history that the WSD Scan Service stores and returns is implementation-specific.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**GetJobHistoryResponse**](getjobhistoryresponse.md)

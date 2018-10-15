@@ -28,14 +28,14 @@ The underlying device driver must process device control requests unless it has 
 
 A lower-level device driver should check the parameters passed in with the request and fail the IRP with an appropriate error if any parameter is invalid. The most common check on the validity of parameters to these requests has the form:
 
-```
+```cpp
     if (Irp->Parameters.DeviceIoControl.InputBufferLength < 
             (sizeof(IOCTL_SPECIFIC_STRUCTURE))) { 
         status = STATUS_XXX;
 ```
 
 or
-```
+```cpp
     if (Irp->Parameters.DeviceIoControl.OutputBufferLength < 
             (sizeof(IOCTL_SPECIFIC_STRUCTURE))) { 
         status = STATUS_XXX; 

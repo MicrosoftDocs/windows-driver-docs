@@ -20,7 +20,7 @@ The [**IPrintTicketProvider::GetSupportedVersions**](https://msdn.microsoft.com/
 
 The implementation shown in the following sample code will work for the initial version of Windows Vista and until a new version is added. When a new version is supported, this value will change.
 
-```
+```cpp
 STDMETHODIMP 
 CPrintTicketProvider::
 GetSupportedVersions(THIS_ HANDLE hPrinter,

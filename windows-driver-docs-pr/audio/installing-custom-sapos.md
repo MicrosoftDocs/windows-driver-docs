@@ -37,7 +37,7 @@ In the INF file, a GFX or LFX sAPO is identified by its COM class ID (CLSID). In
 
 The property keys are first defined to improve readability.
 
-```
+```cpp
 ;; Property Keys
 PKEY_FX_Association = "{D04E05A6-594B-4fb6-A80D-01AF5EED7D1D},0"
 PKEY_FX_PreMixClsid = "{D04E05A6-594B-4fb6-A80D-01AF5EED7D1D},1"
@@ -50,7 +50,7 @@ Where the PKEY\_FX\_PreMixClsid property key represents the LFX sAPO and the PKE
 
 The previously defined property keys are then used to add the key value pairs to the registry. This is shown in the following INF file fragment.
 
-```
+```cpp
 ;; Key value pairs
 HKR,"FX\\0",%PKEY_FriendlyName%,,%FX_FriendlyName%
 HKR,"FX\\0",%PKEY_FX_PreMixClsid%,,%FX_PREMIX_CLSID%
@@ -61,7 +61,7 @@ HKR,"FX\\0",%PKEY_FX_Association%,,%KSNODETYPE_ANY%
 
 Because an audio adapter is capable of supporting multiple inputs and outputs, you must explicitly indicate the type of kernel streaming (KS) node type that your custom sAPO is compatible with. In the preceding INF file fragment, the sAPO is shown to be associated with a KS node type of %KSNODETYPE\_ANY%. Later in this INF file, KSNODETYPE\_ANY is defined as follows:
 
-```
+```cpp
 [Strings]
 ;; Define the strings used in MyINF.inf
 ...
@@ -72,7 +72,7 @@ KSNODETYPE_SPEAKER  = "{DFF21CE1-F70F-11D0-B917-00A0C9223196}"
 
 A value of **NULL** for KSNODETYPE\_ANY means that this sAPO is compatible with any type of KS node type. To indicate, for example, that your sAPO is only compatible with a KS node type of KSNODETYPE\_SPEAKER, the INF file would show the KS node type and sAPO association as follows:
 
-```
+```cpp
 ;; Key value pairs
 ...
 HKR,"FX\\0",%PKEY_FX_Association%,,%KSNODETYPE_SPEAKER%
@@ -85,7 +85,7 @@ Microsoft supplies an **Enhancements** property page for the **Sound** applet on
 
 See the [Replacing the Default Property Page](replacing-the-default-property-page.md) topic for information about how to replace the **Enhancements** property page. The following INF file fragment shows how to modify the INF file to register your custom property page.
 
-```
+```cpp
 [SysFx.AddReg]
 ...
 HKR,"FX\\0",%PKEY_SYSFX_UiClsid%,,%SYSFX_UI_CLSID%

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 A WMI client uses the MPIO\_PATH\_HEALTH\_INFO WMI class to query MPIO so that it gathers statistics for all paths that are managed by MPIO.
 
-```
+```cpp
 class MPIO_PATH_HEALTH_INFO
 {
     [key, read]

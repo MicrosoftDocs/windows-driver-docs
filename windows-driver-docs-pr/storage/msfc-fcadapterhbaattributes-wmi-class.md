@@ -15,7 +15,7 @@ An HBA miniport driver that supports the T11 committee's *Fibre Channel HBA API*
 
 The MSFC\_FCAdapterHBAAttributes class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MSFC_FCAdapterHBAAttributes {
   [key] 
   string InstanceName;

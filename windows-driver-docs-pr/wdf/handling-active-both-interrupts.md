@@ -36,7 +36,7 @@ This solution requires that the GPIO controller support active-both interrupts i
 
 The following code example shows how a KMDF driver for a peripheral device can track interrupt polarity.
 
-```
+```cpp
 typedef struct _INTERRUPT_CONTEXT INTERRUPT_CONTEXT, *PINTERRUPT_CONTEXT;
 typedef struct _DEVICE_CONTEXT DEVICE_CONTEXT, *PDEVICE_CONTEXT;
 

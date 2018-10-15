@@ -30,7 +30,7 @@ ms.localizationpriority: medium
 
 The V\_NET\_ROOT structure provides a mechanism for mapping into a share (for example, a user drive mapping that points below the root of the associated share point). The V\_NET\_ROOT name can be in one of the following formats:
 
-```
+```cpp
 \server\share\d1\d2
 \;m:\server\share\d1\d2
 ```

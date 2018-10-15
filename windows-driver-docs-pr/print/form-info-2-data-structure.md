@@ -20,7 +20,7 @@ The print spooler and the Unidrv printer driver are enhanced in Windows Vista to
 
 The FORM\_INFO\_1 data structure is defined as follows.
 
-```
+```cpp
 typedef struct _FORM_INFO_1 { 
   DWORD  Flags; 
   LPTSTR  pName; 
@@ -33,7 +33,7 @@ In FORM\_INFO\_1, the pName member is the only string field, so you can use it t
 
 The FORM\_INFO\_2 structure, which is defined in the following code example, adds additional fields to provide MUI support.
 
-```
+```cpp
 typedef struct _FORM_INFO_2 { 
   DWORD    Flags; 
   LPTSTR   pName; 

@@ -12,7 +12,7 @@ An HBA miniport driver that supports the Storage Management API uses the MS\_SMH
 
 The MS\_SMHBA\_FC\_PHY class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MS_SMHBA_FC_PHY 
 {
     [WmiDataId(1), HBAType("HBA_FCPHYSPEED")]

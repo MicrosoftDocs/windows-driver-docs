@@ -25,7 +25,7 @@ The required **ActiveConditions** element is a collection of all of the currentl
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ActiveConditions>
   child elements
 </wscn:ActiveConditions>
@@ -79,7 +79,7 @@ Remarks
 
 The **ActiveConditions** element is a list of [**DeviceCondition**](devicecondition.md) elements that describe all of the currently active conditions or errors in the device. Device conditions can vary in severity from informational to critical.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DeviceCondition**](devicecondition.md)

@@ -29,7 +29,7 @@ ms.localizationpriority: medium
 <tr class="odd">
 <td align="left"><p>IEEE 1667</p></td>
 <td align="left"><p>A standard protocol for secure authentication and creation of trust between a secure host and a directly attached Transient Storage Device (TSD), such as a USB flash drive, portable hard drive, or cellular phone.&quot;</p>
-<p>For more information, see [http://standards.ieee.org/announcements/pr_IEEE1667_new.html](http://go.microsoft.com/fwlink/p/?linkid=127997) .</p></td>
+<p>For more information, see [http://standards.ieee.org/announcements/pr_IEEE1667_new.html](http://go.microsoft.com/fwlink/p/?linkid=127997).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>1667 authentication silo</p></td>

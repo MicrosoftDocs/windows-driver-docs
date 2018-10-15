@@ -60,7 +60,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_IPS\_SCAN\_AHEAD**](wia-ips-scan-ahead.md)

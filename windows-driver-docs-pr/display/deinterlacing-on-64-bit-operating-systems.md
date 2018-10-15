@@ -20,7 +20,7 @@ To ensure that deinterlacing operations initiated by a 32-bit application run su
 
 The following example code demonstrates how the driver should handle the thunk:
 
-```
+```cpp
 switch (lpData->dwFunction) {
 case DXVA_DeinterlaceBltFnCode:
     {   

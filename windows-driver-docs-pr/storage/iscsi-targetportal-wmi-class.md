@@ -15,7 +15,7 @@ The ISCSI\_TargetPortal class defines a target portal. This definition includes 
 
 This class is defined as follows in *Common.mof*.
 
-```
+```cpp
 class ISCSI_TargetPortal {
   [WmiDataId(1), Description("Network Address") : amended]
     ISCSI_IP_Address  Address;

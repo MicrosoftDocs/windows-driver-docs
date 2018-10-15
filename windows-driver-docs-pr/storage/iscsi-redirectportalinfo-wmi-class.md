@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The ISCSI\_RedirectPortalInfo WMI class contains information about a collection of iSCSI portals. This class is defined as follows in *Mgmt.mof*.
 
-```
+```cpp
 class ISCSI_RedirectPortalInfo
 {
     [read,

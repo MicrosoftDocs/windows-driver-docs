@@ -19,7 +19,7 @@ TMM runs only on mobile computers and is automatically disabled on desktop compu
 
 Hardware vendors can use the following code to determine if a platform is mobile or desktop. The platform can then use the appropriate mechanism to enter clone view.
 
-```
+```cpp
 #include <Powrprof.h>   // For GetPwrCapabilities
 
     BOOL IsMobilePlatform()

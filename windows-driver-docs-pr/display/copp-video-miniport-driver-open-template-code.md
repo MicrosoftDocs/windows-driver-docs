@@ -22,7 +22,7 @@ This section applies only to Windows Server 2003 SP1 and later, and Windows XP S
 
 Use the following example code to create instances of COPP DirectX VA device objects.
 
-```
+```cpp
 VP_STATUS
 IoctlCOPPOpenDevice(
     PHW_DEVICE_EXTENSION pHwDeviceExtension,

@@ -31,7 +31,7 @@ When Microsoft does not explicitly require feature score for a device class, the
 
 The feature score for a driver is set by the [**INF FeatureScore Directive**](inf-featurescore-directive.md) in the [**INF DDInstall section**](inf-ddinstall-section.md) of the INF file that installs a device. The feature score is set as follows:
 
-```
+```cpp
 [DDInstallSectionName]
 . . .
 FeatureScore=featurescore
@@ -39,7 +39,7 @@ FeatureScore=featurescore
 
 where *DDInstallSectionName* is the name of the *DDInstall* section and *featurescore* is a single-byte hexadecimal number between 0x00 and 0xFF. Windows computes the feature score for a driver based on the *featurescore* value of the **FeatureScore** directive:
 
-```
+```cpp
 feature score = (featurescore * 0x10000)
 ```
 
@@ -47,7 +47,7 @@ If the [**INF FeatureScore Directive**](inf-featurescore-directive.md) is not sp
 
 For example, the following sets the feature score of a driver to 0x00FD0000:
 
-```
+```cpp
 [DDInstallSectionName]
 . . .
 FeatureScore=xFD

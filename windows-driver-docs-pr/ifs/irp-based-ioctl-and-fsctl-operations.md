@@ -31,13 +31,13 @@ The following IRP-based I/O operations use the buffering method that matches the
 
 The transfer type is specified in the *TransferType* parameter of the CTL\_CODE macro. To obtain the transfer type for a given IOCTL or FSCTL, use the following macro:
 
-```
+```cpp
 #define METHOD_FROM_CTL_CODE(ctrlCode)         ((ULONG)(ctrlCode & 3))
 ```
 
 This macro returns one of the following values:
 
-```
+```cpp
 #define METHOD_BUFFERED                 0
 #define METHOD_IN_DIRECT                1
 #define METHOD_OUT_DIRECT               2

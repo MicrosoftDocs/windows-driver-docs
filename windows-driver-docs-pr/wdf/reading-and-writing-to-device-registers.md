@@ -22,7 +22,7 @@ The following example includes code that could be compiled using KMDF (1.13 or l
 
 Before accessing device registers and ports, a UMDF driver must set the **UmdfDirectHardwareAccess** directive to **AllowDirectHardwareAccess** in the driver's INF file.
 
-```
+```cpp
 NTSTATUS
  MyDevicePrepareHardware (
     IN WDFDEVICE  Device,

@@ -19,7 +19,7 @@ Because the MSiSCSI\_SecurityCapabilities class is associated with a particular 
 
 The MSiSCSI\_SecurityCapabilities class is defined in *Config.mof*.
 
-```
+```cpp
 class MSiSCSI_SecurityCapabilities {
   [key] string  InstanceName;
   boolean  Active;

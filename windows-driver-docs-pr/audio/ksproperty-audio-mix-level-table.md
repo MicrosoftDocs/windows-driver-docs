@@ -61,7 +61,7 @@ The KSPROPERTY\_AUDIO\_MIX\_LEVEL\_TABLE property specifies the mix levels for a
 
 The property value (operation data) is an array of KSAUDIO\_MIXLEVEL structures that specifies the mix levels for all M\*N input-output paths in a supermixer node with M input channels and N output channels. The array contains M\*N elements:
 
-```
+```cpp
   KSAUDIO_MIXLEVEL  MixLevel[M*N];
 ```
 

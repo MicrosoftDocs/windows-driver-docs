@@ -24,7 +24,7 @@ This section provides installation information, specific to IEEE 1394 device dri
 
 Vendors supplying their own IEEE 1394 device driver should make that driver a member of the Base setup class in the [**INF Version Section**](https://msdn.microsoft.com/library/windows/hardware/ff547502) of the driver's INF file. For example:
 
-```
+```cpp
 [Version]
 Signature="$WINDOWS NT$"
 Class = Base

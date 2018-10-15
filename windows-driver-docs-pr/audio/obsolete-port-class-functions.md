@@ -115,7 +115,7 @@ In some cases, the change amounts to no more than a simple name change: The qual
 
 In cases in which the arguments changed, the macros in portcls.hconvert the argument lists for the obsolete PortCls functions to the equivalent arguments for the new PortCls functions. The following macros contain argument conversions:
 
-```
+```cpp
 #define InitializeAdapterDriver(c1,c2,a) \
     PcInitializeAdapterDriver(PDRIVER_OBJECT(c1),PUNICODE_STRING(c2),PDRIVER_ADD_DEVICE(a))
 #define AddAdapterDevice(c1,c2,s,m) \

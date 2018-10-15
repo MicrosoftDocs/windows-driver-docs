@@ -21,7 +21,7 @@ The ACPI\_ENUM\_CHILD\_NEXT macro calculates a pointer to the next [**ACPI\_ENUM
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 void ACPI_ENUM_CHILD_NEXT(
     Child
 );

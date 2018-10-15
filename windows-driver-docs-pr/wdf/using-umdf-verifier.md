@@ -36,7 +36,7 @@ Starting in UMDF 2.0, UMDF Verifier issues breakpoints in some cases, and causes
 
 We strongly recommend doing all development and testing of your driver after enabling [Application Verifier (AppVerif.exe)](../debugger/debugger-download-tools.md) on WUDFHost.exe. Use the following command, attach a debugger and then reboot.
 
-```
+```cpp
 AppVerif –enable Heaps Exceptions Handles Locks Memory TLS Leak –for WudfHost.exe
 ```
 

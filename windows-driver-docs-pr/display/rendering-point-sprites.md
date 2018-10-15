@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 A screen space point **P = (X, Y, Z, W)** of screen-space size **S** is rasterized as a quadrilateral with the following 4 vertices:
 
-```
+```cpp
 (Xâˆ’S/2, Yâˆ’S/2, Z, W)
 (X+S/2, Yâˆ’S/2, Z, W)
 (Xâˆ’S/2, Y+S/2, Z, W)
@@ -34,7 +34,7 @@ The vertex color attributes are duplicated at each of the 4 vertices, therefore 
 
 The assignment of texture coordinates is controlled by the D3DRS\_POINTSPRITEENABLE setting. If D3DRS\_POINTSPRITEENABLE is set to **FALSE**, then the texture coordinates of the vertex are duplicated at each of the 4 vertices. If no texture coordinates are present in the vertex the default values of (0.0f, 0.0f, 0.0f, 1.0f) are used for the corners of the point sprite. If the D3DRS\_POINTSPRITEENABLE is set to **TRUE**, then the texture coordinates at the 4 vertices, starting from the top left corner and winding clockwise, are set to:
 
-```
+```cpp
 (0.0f, 0.0f)
 (1.0f, 0.0f)
 (0.0f, 1.0f)

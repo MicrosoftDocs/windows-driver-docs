@@ -38,7 +38,7 @@ To install a mobile driver package (.spkg file), you have two options.
 
     Attach your mobile device to the PC. Then, from an elevated command prompt, issue the following command:
 
-       ```
+       ```cpp
        IUTool -p MyKmdfDriver.spkg
        ```
 

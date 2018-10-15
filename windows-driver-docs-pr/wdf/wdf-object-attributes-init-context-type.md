@@ -56,7 +56,7 @@ Examples
 
 The following code example defines a WDM_NDIS_REQUEST context structure. Then, the example invokes the [**WDF_DECLARE_CONTEXT_TYPE_WITH_NAME**](wdf-declare-context-type-with-name.md) macro to register the structure and specify that the context accessor method will be named **RequestGetMyContext**. Then, in a function, the example allocates a [**WDF_OBJECT_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure, and then initializes the **WDF_OBJECT_ATTRIBUTES** structure.
 
-```
+```cpp
 typedef struct _WDM_NDIS_REQUEST
 {
    PMP_ADAPTER  Adapter;

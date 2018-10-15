@@ -86,7 +86,7 @@ In the preceding figure, the WMCDC device contains a single logical handset: an 
 
 The USB stack does not automatically support WMCDC. You must provide an INF file that loads an instance of Usbccgp.sys. The INF file must contain an **AddReg** section that sets the **EnumeratorClass** registry value in the software key that is associated with Usbccgp.sys to a REG\_BINARY value that is constructed from three numbers: 0x02, 0x00, and 0x 00. The following code example from an example INF file illustrates how to set **EnumeratorClass** to the appropriate value.
 
-```
+```cpp
 [CCGPDriverInstall.NT]
 Include=usb.inf
 Needs=Composite.Dev.NT
@@ -150,19 +150,19 @@ There are two control models whose enumeration characteristics are configurable 
 
 For example, to clear both bits (set them to 0), your INF file should have the following line in a **DDInstall.AddReg** section.
 
-```
+```cpp
 HKR, , CdcFlags, 0x00010001, 0x00000000
 ```
 
 To set both bits to 1, your INF file should have the following line.
 
-```
+```cpp
 HKR, , CdcFlags, 0x00010001, 0x00000011
 ```
 
 To set both bit 0 to 1 and bit 1 to 0, your INF file should have the following line.
 
-```
+```cpp
 HKR, , CdcFlags, 0x00010001, 0x00000001
 ```
 
@@ -186,7 +186,7 @@ You might want to represent OBEX collections with a single PDO at the kernel lev
 
 The following example INF file loads the USB generic parent driver to manage a WMCDC device and instructs the USB generic parent to create PDOs for logical handsets and to create a single PDO for all OBEX collections in the logical handset.
 
-```
+```cpp
 [Version]
 signature="$Windows NT$"
 Class=USB

@@ -38,7 +38,7 @@ A driver must not allocate its own power IRP; the power manager provides the [**
 
 The following is the prototype for this routine:
 
-```
+```cpp
 NTSTATUS
 PoRequestPowerIrp (
     IN PDEVICE_OBJECT DeviceObject,

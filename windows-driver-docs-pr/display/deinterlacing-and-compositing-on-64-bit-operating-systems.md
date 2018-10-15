@@ -28,7 +28,7 @@ With two extra DWORD members included in DXVA\_VideoSample2 for 64-bit compile, 
 
 The following example code demonstrates how the driver should handle the thunk:
 
-```
+```cpp
 switch (lpData->dwFunction) {
 case DXVA_DeinterlaceBltExFnCode:
     {   DXVA_DeinterlaceBltEx* pBlt = (DXVA_DeinterlaceBltEx*)lpData->lpInputData; 

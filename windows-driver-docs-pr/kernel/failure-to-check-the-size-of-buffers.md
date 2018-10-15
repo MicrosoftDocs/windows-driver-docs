@@ -24,7 +24,7 @@ When handling IOCTLs and FSCTLs that implement buffered I/O, a driver should alw
 
 For example, assume that the following code appears in a routine that is called from a *Dispatch* routine, and that the driver has not validated the buffer sizes passed in the IRP:
 
-```
+```cpp
    switch (ControlCode)
       ...
       ...
@@ -39,7 +39,7 @@ The example does not check the buffer sizes before the assignment statement (hig
 
 The following code checks the buffer sizes, avoiding the potential problem:
 
-```
+```cpp
    case IOCTL_NEW_ADDRESS: {
       tNEW_ADDRESS *pNewAddress =
          pIrp->AssociatedIrp.SystemBuffer;
@@ -57,7 +57,7 @@ Output buffer problems are similar to input buffer problems. They can easily cor
 
 In the following example, the driver fails to check the size of the **SystemBuffer**:
 
-```
+```cpp
    case IOCTL_GET_INFO: {
 
        Info = Irp->AssociatedIrp.SystemBuffer;

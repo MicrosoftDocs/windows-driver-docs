@@ -15,7 +15,7 @@ An HBA miniport driver that supports the T11 committee's *Fibre Channel HBA API*
 
 The MSFC\_AdapterEvent class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MSFC_AdapterEvent : WMIEvent  {
   [key] string InstanceName; boolean  Active;
   [WmiDataId(1), Description("Event Type") : amended, 

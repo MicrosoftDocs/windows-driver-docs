@@ -31,7 +31,7 @@ The left and right coordinates of the locked subvolume are constrained to the lo
 
 The following code shows how to obtain the front and back coordinates:
 
-```
+```cpp
 "real" left = rArea.left && 0xFFFF;
 "real" right = rArea.right && 0xFFFF;
 front = rArea.left >> 16;

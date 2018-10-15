@@ -90,7 +90,7 @@ Remarks
 
 See [**button**](button.md) for a code exapmle that shows how to use the **buttons** element to enclose two **button** elements that display an **OK** and a **CANCEL** button.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**button**](button.md)

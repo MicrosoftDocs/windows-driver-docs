@@ -28,7 +28,7 @@ The **asyncPrintUIRequest** element is defined in the *asyncui* namespace at thi
 Usage
 -----
 
-``` syntax
+```xml
 <asyncPrintUIRequest>
   child elements
 </asyncPrintUIRequest>
@@ -77,7 +77,7 @@ Examples
 
 The following code example shows how to use the **asyncPrintUIRequest** element.
 
-```
+```xml
 <?xml version="1.0" ?>
    <asyncPrintUIRequest
     xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
@@ -95,7 +95,7 @@ The following code example shows how to use the **asyncPrintUIRequest** element.
   </asyncPrintUIRequest>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**requestClose**](requestclose.md)

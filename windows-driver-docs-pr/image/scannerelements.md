@@ -25,7 +25,7 @@ The required **ScannerElements** contains all of the scanner information that is
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScannerElements>
   child elements
 </wscn:ScannerElements>
@@ -79,7 +79,7 @@ Remarks
 
 The WSD Scan Service returns the **ScannerElements** element in the [**GetScannerElementsResponse**](getscannerelementsresponse.md) operation.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ElementData for ScannerElements Element**](elementdata-for-scannerelements-element.md)

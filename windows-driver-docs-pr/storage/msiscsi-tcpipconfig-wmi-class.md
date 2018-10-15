@@ -19,7 +19,7 @@ Because the MSiSCSI\_TCPIPConfig class is associated with a particular instance 
 
 The MSiSCSI\_TCPIPConfig class is defined in *Config.mof*.
 
-```
+```cpp
 class MSiSCSI_TCPIPConfig {
   [key] string  InstanceName;
   boolean  Active;

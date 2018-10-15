@@ -31,7 +31,7 @@ Before discussing Execution Groups, it is important to note and remember that **
 
 Consider a native example:
 
-```
+```cpp
 1     class ExecutionDependencyExample
 2     {
 3         BEGIN_TEST_CLASS(ExecutionDependencyExample)
@@ -122,7 +122,7 @@ The message also says that Test3 should be run in the same environment as Test2.
 
 Let's consider another example: Examples\\TAEF\\CSharp\\ExecutionDependentGroupsExample (please refer to the latest TAEF release share)
 
-```
+```cpp
 1     [TestClass]
 2     public class CSharpExecutionDependentGroupsExample
 3     {

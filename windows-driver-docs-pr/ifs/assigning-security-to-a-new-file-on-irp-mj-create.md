@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 
 The final task in create handling is assigning security to the new file. While the Windows security model supports inheritance (individual ACE entries are marked in such a way that they are inherited when new files or directories are created) this is implemented outside the file system. Thus, the bulk of the logic within the file system is dedicated to storing the new security descriptor. Here is a sample routine:
 
-```
+```cpp
 NTSTATUS FsdAssignInitialSecurity( PIRP_CONTEXT IrpContext, 
         PFCB Fcb, PFCB Directory)
 {

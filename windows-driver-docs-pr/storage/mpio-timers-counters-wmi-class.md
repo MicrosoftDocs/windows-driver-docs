@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 A WMI client uses the MPIO\_TIMERS\_COUNTERS WMI class to query MPIO for all global timer values.
 
-```
+```cpp
 class MPIO_TIMERS_COUNTERS
 {
 

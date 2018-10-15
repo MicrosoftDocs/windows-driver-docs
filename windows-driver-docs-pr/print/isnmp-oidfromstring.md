@@ -86,7 +86,7 @@ Remarks
 
 This method calls the **SnmpMgrStrToOid** function to convert the SNMP OID string to its corresponding internal object-identifier structure. For more information about this function, see the Windows SDK documentation.
 
-```
+```cpp
     Dim StrIP, strCommunity, objSNMP, OIDArray
     strIP = Session("MS_IPaddress")
     strCommunity = Session ("MS_Community")

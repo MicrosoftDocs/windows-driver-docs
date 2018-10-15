@@ -44,7 +44,7 @@ For the complete command line syntax, see [**AgeStore Command-Line Options**](ag
 
 ### <span id="running_agestore_on_windows_vista_and_later"></span><span id="RUNNING_AGESTORE_ON_WINDOWS_VISTA_AND_LATER"></span>Running AgeStore on Windows Vista and Later
 
-Because AgeStore deletes files based on the last time that they were accessed, it can run successfully only if your your file system stores Last Access Time (LAT) data. In the NTFS file system, LAT data storage can be either enabled or disabled. If it is disabled, AgeStore will not run, but will display the following error message instead:
+Because AgeStore deletes files based on the last time that they were accessed, it can run successfully only if your file system stores Last Access Time (LAT) data. In the NTFS file system, LAT data storage can be either enabled or disabled. If it is disabled, AgeStore will not run, but will display the following error message instead:
 
 ```
 Last-Access-Time support is disabled on this computer.

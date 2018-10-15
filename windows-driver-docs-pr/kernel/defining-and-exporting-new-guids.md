@@ -34,7 +34,7 @@ You define a new GUID for an item the driver exports to other system components,
 
     **Example 1: Defining GUIDs in a GUID-Only Header File**
 
-    ```
+    ```cpp
     :
      
     DEFINE_GUID( GUID_BUS_TYPE_PCMCIA, 0x09343630L, 0xaf9f, 0x11d0, 
@@ -49,7 +49,7 @@ You define a new GUID for an item the driver exports to other system components,
 
     **Example 2: Defining GUIDs in a Mixed Header File**
 
-    ```
+    ```cpp
     #ifndef _NTDDSER_    // this ex. is from a serial driver .h file
     #define _NTDDSER_
      

@@ -69,7 +69,7 @@ Once the driver has finished its manipulations, it must call [**ZwClose**](https
 
 The following code example illustrates how to open a handle for a key named **\\Registry\\Machine\\Software\\***MyCompany*\\*MyApp*, then retrieve key data and close the handle.
 
-```
+```cpp
 //
 // Get the frame location from the registry key
 // HKLM\SOFTWARE\MyCompany\MyApp.

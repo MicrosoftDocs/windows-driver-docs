@@ -25,7 +25,7 @@ The required **DeviceSettings** element describes the basic capabilities of the 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:DeviceSettings>
   child elements
 </wscn:DeviceSettings>
@@ -103,7 +103,7 @@ Remarks
 
 The **DeviceSettings** element contains the supported values for many of the imaging options that can be set in a [**ScanTicket**](scanticket.md) element for a scan operation. A client can use the values that are returned in **DeviceSettings** to create valid **ScanTicket** elements.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**AutoExposureSupported**](autoexposuresupported.md)

@@ -56,7 +56,7 @@ Examples
 
 The following code example increments an object's reference count.
 
-```
+```cpp
 WdfObjectReference(Object); 
 ```
 

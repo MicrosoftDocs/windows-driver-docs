@@ -15,7 +15,7 @@ An HBA miniport driver that supports the T11 committee's *Fibre Channel HBA API*
 
 The HBAScsiID class is defined as follows in Hbaapi.mof:
 
-```
+```cpp
 class HBAScsiID { 
   [WmiDataId(1)] uint32  ScsiBusNumber;
   [WmiDataId(2)] uint32  ScsiTargetNumber;

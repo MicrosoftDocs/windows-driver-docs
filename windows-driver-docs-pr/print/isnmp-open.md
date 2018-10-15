@@ -99,7 +99,7 @@ This method calls the **SnmpMgrOpen** function, which has the same parameters as
 
 After the `ISNMP::Open` call, the communication path to the SNMP agent remains open until the [**ISNMP::Close**](isnmp-close.md) method is called, or until `ISNMP::Open` is called again.
 
-```
+```cpp
     Dim StrIP, strCommunity, objSNMP
     strIP = Session("MS_IPaddress")
     strCommunity = Session ("MS_Community")
@@ -131,7 +131,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ISNMP::Close**](isnmp-close.md)

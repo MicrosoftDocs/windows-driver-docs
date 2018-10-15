@@ -24,13 +24,13 @@ ms.localizationpriority: medium
 
 For example, in a call to **GetOptions**, suppose that the *pmszFeaturesRequested* input buffer contains this string (in MULTI\_SZ format):
 
-```
+```cpp
 "PageSize\0Duplex\0Resolution\0\0"
 ```
 
 After the **GetOptions** method returns, the output *pmszFeatureOptionBuf* could contain the following string (also in MULTI\_SZ format):
 
-```
+```cpp
 "PageSize\0Letter\0Duplex\0DuplexTumble\0Resolution\0300dpi\0\0"
 ```
 

@@ -24,7 +24,7 @@ If a macro definition omits references to one or more formal arguments, the para
 
 For example, the following macro reference uses only the fifth argument. The first four are omitted.
 
-```
+```cpp
 *Attribute: =Macro(,,,, =PassedInMacroRef)
 ```
 
@@ -34,7 +34,7 @@ For value macros, no whitespace is allowed between the macro reference and its p
 
 For example, consider the following code example.
 
-```
+```cpp
 *Attrib:   =Macro1 (=Macro2)       *%  is 2 separate macro references
     while
 *Attrib:   =Macro1(=Macro2)        *% you are passing Macro2 as a 
@@ -45,7 +45,7 @@ If macro definitions are nested, the formal arguments can be used only by the co
 
 Macro references that occur within a macro definition can contain parameter lists that name macros that themselves require parameters lists. However, a parameter list cannot be supplied for references to formal arguments. For example, the following entry within a block macro definition is acceptable.
 
-```
+```cpp
 *Attrib1: =Macro1(=Macro2(=Macro3(=Arg1, =Arg2)))
 ```
 
@@ -53,7 +53,7 @@ In the preceding example, =MacroN represents a reference to a previously defined
 
 However, the following code example is not an acceptable entry.
 
-```
+```cpp
 *Attrib2: =Arg1(=Arg2, =Arg3(=Macro1, =Macro2))   *%  Not Valid !
 ```
 
@@ -63,7 +63,7 @@ For value macros, if no formal argument list was declared in the \*Macros constr
 
 For example, consider if =Macro1 is defined by the following code example.
 
-```
+```cpp
 *Macros:   NoArgList
 {
 Macro1:  "a Value macro with no argument list"
@@ -74,7 +74,7 @@ Macro3:  "a Value macro with no argument list"
 
 Then, the following macro reference will be interpreted as three separate and unrelated macro references.
 
-```
+```cpp
 *attribute:  =Macro1(=Macro2, =Macro3)
 ```
 

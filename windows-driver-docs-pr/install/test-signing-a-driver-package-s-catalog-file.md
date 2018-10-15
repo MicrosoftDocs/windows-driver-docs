@@ -29,7 +29,7 @@ The following command line shows how to run SignTool to do the following:
 
 To test-sign the *tstamd64.cat* catalog file, run the following command line:
 
-```
+```cpp
 Signtool sign /v /s PrivateCertStore /n Contoso.com(Test) /t http://timestamp.verisign.com/scripts/timstamp.dll tstamd64.cat
 ```
 

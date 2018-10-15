@@ -66,7 +66,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_IPS\_PAGE\_HEIGHT**](wia-ips-page-height.md)

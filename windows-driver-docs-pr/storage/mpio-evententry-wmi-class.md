@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 An MPIO driver uses the MPIO\_EventEntry WMI class to report any MPIO-related events. This class is currently not implemented.
 
-```
+```cpp
 class MPIO_EventEntry : WMIEvent
 {
         [key, read]

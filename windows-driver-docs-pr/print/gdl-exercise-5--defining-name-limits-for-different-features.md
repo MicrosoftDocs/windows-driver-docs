@@ -30,7 +30,7 @@ Make this change without deleting or modifying any of the previously defined tem
 
 The following template satisfies the conditions.
 
-```
+```cpp
 *Template:  PAPER_SIZE_OPT_NAME
 {
 *Name:  "*Name"  *% isolate this branch from base templates

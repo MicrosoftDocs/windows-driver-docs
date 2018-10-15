@@ -85,7 +85,7 @@ The runtime calls the driver's [**RecycleCreateCommandList**](https://msdn.micro
 
 These recycling DDI functions provide optimization opportunities to help recycle resources for small-memory-amount command lists. The following pseudocode shows the implementation of the runtime through the flow of function calls from the API to the DDI :
 
-```
+```cpp
 ::FinishCommandList()
 {
   // Empty InterlockedSList, integrating into the cache

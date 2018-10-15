@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The following code example shows how a simple segmentation filter can be implemented. The segmentation filter in the example does not use the [**WIA\_IPS\_DESKEW\_X**](https://msdn.microsoft.com/library/windows/hardware/ff552581) and [**WIA\_IPS\_DESKEW\_Y**](https://msdn.microsoft.com/library/windows/hardware/ff552587) properties. For clarity, error checking code has been omitted.
 
-```
+```cpp
 typedef struct _SUB_RECT
 {
     LONG  xpos;

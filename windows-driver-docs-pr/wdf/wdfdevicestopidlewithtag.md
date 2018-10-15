@@ -94,7 +94,7 @@ You can view the tag, line number, and file name values by using the [**!wdftagt
 
 Use [**!wdfkd.wdfdevice**](https://msdn.microsoft.com/library/windows/hardware/ff565703) with verbose flags on and locate the link to [**!wdftagtracker**](https://msdn.microsoft.com/library/windows/hardware/ff566126) in the output:
 
-```
+```cpp
 kd> !wdfdevice <handle> f 
 ```
 

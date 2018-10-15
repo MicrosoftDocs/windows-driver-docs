@@ -21,7 +21,7 @@ The **dpinstTitle** XML element customizes the text that appears on the title ba
 
 ### Element Tag
 
-```
+```cpp
 <dpinstTitle>
 ```
 
@@ -62,7 +62,7 @@ None
 
 The following code example of a **dpinstTitle** element customizes the title bar text. The text that specifies the custom DPInst title is shown in bold font style.
 
-```
+```cpp
 <dpinst>
   ...
   <language code="0x0409">

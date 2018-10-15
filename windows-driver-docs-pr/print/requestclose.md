@@ -70,7 +70,7 @@ Examples
 
 The following code example shows how to close an event notification after a button-click on the message box has been captured for the **OK** button.
 
-```
+```cpp
 <?xml version="1.0" ?>
    <asyncPrintUIResponse
     xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/response">
@@ -84,7 +84,7 @@ The following code example shows how to close an event notification after a butt
   </asyncPrintUIResponse>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**asyncPrintUIRequest**](asyncprintuirequest.md)

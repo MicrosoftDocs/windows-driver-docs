@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The MSiSCSI\_RedirectPortalInfoClass WMI class contains a collection of sessions for an adapter ID. Additionally, it contains the portal redirect information for each of the sessions. This class is defined as follows in *Mgmt.mof.*
 
-```
+```cpp
 class MSiSCSI_RedirectPortalInfoClass
 {
     [read,key] String InstanceName;

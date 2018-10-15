@@ -25,7 +25,7 @@ The required **Severity** element specifies the severity level of the current [*
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Severity>
   text
 </wscn:Severity>
@@ -104,7 +104,7 @@ The WSD Scan Service determines the **Severity** level that is assigned to each 
 
 You can both extend and subset the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ConditionHistoryEntry**](conditionhistoryentry.md)

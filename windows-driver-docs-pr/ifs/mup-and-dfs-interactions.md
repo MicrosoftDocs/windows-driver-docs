@@ -25,7 +25,7 @@ When a Universal Naming Convention (UNC) path is used by an application, a reque
 
 The default behavior is that the DFS client is enabled. The DFS client is disabled depending on the value of a registry entry located below the following:
 
-```
+```cpp
 HKLM\System\CurrentControlSet\Services\Mup
 ```
 

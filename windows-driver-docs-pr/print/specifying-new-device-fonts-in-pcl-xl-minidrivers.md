@@ -39,7 +39,7 @@ A correctly formatted font selection command must be placed in the correct locat
 
 Following is an example of how a font selection command would appear in a UFM file. (The numbers in the second line show the position of each character in the font selection command.)
 
-```
+```cpp
 CG Omega    BdIt 629
 12345678901234567890
 ```
@@ -48,7 +48,7 @@ The font name and style, CG Omega BdIt (bold/italic) take up the first 16 bytes.
 
 The font name and symbol set number discussed in the previous example are two of the three attributes required for the **SetFont** operator, which would appear in the output data from the driver. In the following example, the **FontName** and **SymbolSet** attributes of this operator are set to the same values as in the preceding example. The third attribute, **CharSize**, is set to the value 100.
 
-```
+```cpp
 ubyte_array (CG Omega    BdIt) FontName
 real32 100 CharSize
 uint16 629 SymbolSet

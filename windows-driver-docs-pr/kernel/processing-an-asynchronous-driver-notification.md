@@ -19,7 +19,7 @@ When the operating system calls a registered callback function, it passes a poin
 
 The following code example shows an implementation of a callback function that processes asynchronous driver notifications for processors:
 
-```
+```cpp
 // Asynchronous processor notification callback function
 NTSTATUS
   AsyncProcessorCallback(
@@ -74,7 +74,7 @@ NTSTATUS
 
 The following code example shows an implementation of a callback function that processes asynchronous driver notifications for memory:
 
-```
+```cpp
 // Asynchronous memory notification callback function
 NTSTATUS
   AsyncMemoryCallback(

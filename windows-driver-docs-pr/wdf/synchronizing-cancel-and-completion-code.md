@@ -34,7 +34,7 @@ If your driver does not use the framework's automatic synchronization, it can us
 
 Whether the driver uses framework's automatic synchronization or provides its own synchronization, the driver's [*EvtRequestCancel*](https://msdn.microsoft.com/library/windows/hardware/ff541817) callback function must call [**WdfRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff549945) to cancel a request. The driver's [*EvtInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/ff541721) callback function should call [**WdfRequestUnmarkCancelable**](https://msdn.microsoft.com/library/windows/hardware/ff550035) as follows:
 
-```
+```cpp
 Status = WdfRequestUnmarkCancelable(Request);
 if( Status != STATUS_CANCELLED ) {
     WdfRequestComplete(Request, RequestStatus);

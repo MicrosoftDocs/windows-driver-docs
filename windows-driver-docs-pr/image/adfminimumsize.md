@@ -25,7 +25,7 @@ The required **ADFMinimumSize** element specifies the smallest size original tha
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ADFMinimumSize>
   child elements
 </wscn:ADFMinimumSize>
@@ -89,7 +89,7 @@ If the parent element of the **ADFMinimumSize** element is [**ADFFront**](adffro
 
 All media dimensions are measured in one thousandths (1/1000) of an inch. The possible values for both **Width** and **Height** range from 1 through 2147483648.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ADFBack**](adfback.md)

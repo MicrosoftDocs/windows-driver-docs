@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-```
+```cpp
 int stdcall PollRoutine( int type, LPJOYOEMPOLLDATA pojd );
 ```
 

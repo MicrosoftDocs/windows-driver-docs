@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 Use the following example code to create instances of DirectX VA device objects. This code is an implementation of the [*DdMoCompCreate*](https://msdn.microsoft.com/library/windows/hardware/ff549656) callback function. The **CreateMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](https://msdn.microsoft.com/library/windows/hardware/ff551660) structure points to the callback function.
 
-```
+```cpp
 // Determine that the passed in GUID is valid. 
 BOOL
 ValidDXVAGuid(LPGUID lpGuid) {

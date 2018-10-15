@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 To compile a MOF file that defines WMI data and event blocks, use the MOF compiler, called Mofcomp, that is included with the Microsoft Windows operating systems. Use the following syntax:
 
-```
+```cpp
  mofcomp -WMI -B:filename.bmf filename.mof
 ```
 

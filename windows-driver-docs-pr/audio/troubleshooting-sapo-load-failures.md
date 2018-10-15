@@ -45,7 +45,7 @@ For [**CoCreateInstance**](https://msdn.microsoft.com/library/windows/desktop/ms
 
 The audio engine does not load unsigned sAPOs into the audio processing graph. So while you are testing your sAPO, you must disable the protected process for Audiodg.exe. To disable the protected process, set the value of the **DisableProtectedAudioDG** registry key to '1'. The following registry excerpt shows this.
 
-```
+```cpp
 ...
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Audio
  "DisableProtectedAudioDG" = dword:00000001

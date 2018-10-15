@@ -48,7 +48,7 @@ Specify the **MfCardConfig** entries using the syntax described in [**INF LogCon
 
 For example, consider the following excerpt from a custom INF for a multifunction PC Card device that contains a modem and a network adapter:
 
-```
+```cpp
 ;...
  
 [DDInstall.LogConfigOverride]

@@ -31,7 +31,7 @@ In the preceding figure, the WMCDC device contains a single logical handset: an 
 
 The USB stack does not automatically support WMCDC. You must provide an INF file that loads an instance of Usbccgp.sys. The INF file must contain an **AddReg** section that sets the **EnumeratorClass** registry value in the software key that is associated with Usbccgp.sys to a REG\_BINARY value that is constructed from three numbers: 0x02, 0x00, and 0x 00. The following code example from an example INF file illustrates how to set **EnumeratorClass** to the appropriate value.
 
-```
+```cpp
 [CCGPDriverInstall.NT]
 Include=usb.inf
 Needs=Composite.Dev.NT

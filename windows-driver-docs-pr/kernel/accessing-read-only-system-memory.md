@@ -32,7 +32,7 @@ Some drivers intercept system calls by overwriting the driver's own code and ins
 
 If a global string is to be modified, it must not be declared as a pointer to a constant value:
 
-```
+```cpp
 CHAR *myString = "This string cannot be modified.";
 ```
 
@@ -40,7 +40,7 @@ In this case, the linker might put the string in a read-only memory segment. The
 
 Instead, the string should be explicitly declared as an array of L-value characters:
 
-```
+```cpp
 CHAR myString[] = "This string can be modified.";
 ```
 

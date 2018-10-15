@@ -25,7 +25,7 @@ The Stream class interface sends an [**SRB\_OPEN\_STREAM**](https://msdn.microso
 
 The following example code obtains the stream index, kernel streaming data format, and kernel streaming video info header.
 
-```
+```cpp
 int StreamNumber = pSrb->StreamObject->StreamNumber;
 PKS_DATAFORMAT_VIDEOINFOHEADER  pKSDataFormat = 
     (PKS_DATAFORMAT_VIDEOINFOHEADER) pSrb->CommandData.OpenFormat;
@@ -43,7 +43,7 @@ Special rules apply when the output buffer is a DirectDraw surface. In this case
 
 To determine the requested image width, use the following code example:
 
-```
+```cpp
 if (IsRectEmpty(&pVideoInfoHdrRequested->rcTarget) {
     Width =  pVideoInfoHdrRequested->bmiHeader.biWidth;
     Height = pVideoInfoHdrRequested->bmiHeader.biHeight;

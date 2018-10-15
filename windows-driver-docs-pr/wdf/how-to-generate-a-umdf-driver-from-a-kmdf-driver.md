@@ -28,7 +28,7 @@ This topic describes how to convert a Kernel-Mode Driver Framework (KMDF) driver
 
     Optionally, use the **\_KERNEL\_MODE** preprocessor macro to add the right system header conditionally:
 
-    ```
+    ```cpp
     #ifndef _KERNEL_MODE
     // This is a user-mode driver
     #include <windows.h>
@@ -47,7 +47,7 @@ This topic describes how to convert a Kernel-Mode Driver Framework (KMDF) driver
 4.  Update the source code to either remove or conditionally compile (using the **\_KERNEL\_MODE** macro) any functionality that is not supported in the target driver model. For example:
 
     -   If your driver uses WPP tracing, update the [WPP\_INIT\_TRACING](https://msdn.microsoft.com/library/windows/hardware/ff556191) macro. This macro takes different parameters in user mode and kernel mode.
-        ```
+        ```cpp
         WPP_INIT_TRACING ( DriverObject, RegistryPath ); // KMDF
         WPP_INIT_TRACING ( “<MyDriverNameString>” ); // UMDF
         ```

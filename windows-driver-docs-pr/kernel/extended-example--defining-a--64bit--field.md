@@ -26,7 +26,7 @@ The following is the 32-bit version of the driver:
 
 ### Header File
 
-```
+```cpp
 #define REGISTER_FUNCTION 0     // Define the IOCTL function code
 
 #define IOCTL_REGISTER   CTL_CODE(FILE_DEVICE_UNKNOWN, \
@@ -41,7 +41,7 @@ typedef struct _IOCTL_PARAMETERS {
 
 ### DeviceControl Dispatch Routine
 
-```
+```cpp
 NTSTATUS
 TestdrvDeviceControl(
     IN PDEVICE_OBJECT DeviceObject,
@@ -101,7 +101,7 @@ The following is the 64-bit version of the driver:
 
 ### Header File
 
-```
+```cpp
 #define REGISTER_FUNCTION 0     // Define the IOCTL function code
 
 #ifdef  _WIN64
@@ -123,7 +123,7 @@ typedef struct _IOCTL_PARAMETERS {
 
 ### DeviceControl Dispatch Routine
 
-```
+```cpp
 #ifdef _WIN64
 #define IOCTL_REGISTER_32   CTL_CODE(FILE_DEVICE_UNKNOWN, \
   REGISTER_FUNCTION, METHOD_BUFFERED, FILE_ANY_ACCESS)

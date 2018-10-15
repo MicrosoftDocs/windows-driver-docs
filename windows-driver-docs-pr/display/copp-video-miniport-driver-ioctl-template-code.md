@@ -22,7 +22,7 @@ This section applies only to Windows Server 2003 SP1 and later, and Windows XP S
 
 The video miniport driver must implement a [*HwVidStartIO*](https://msdn.microsoft.com/library/windows/hardware/ff567367) function to process the I/O requests that originate in the display driver. The following example code shows only how the video miniport driver processes COPP IOCTLs:
 
-```
+```cpp
 BOOLEAN
 HwVidStartIO(
     PHW_DEVICE_EXTENSION pHwDeviceExtension,

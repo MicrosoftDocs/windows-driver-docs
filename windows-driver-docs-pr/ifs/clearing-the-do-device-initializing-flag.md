@@ -25,7 +25,7 @@ ms.localizationpriority: medium
 
 After attaching a filter device object to a file system or volume, always be sure to clear the DO\_DEVICE\_INITIALIZING flag on the filter device object. (For more information about this flag, see [**DEVICE\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff543147) in the Kernel Reference.) This can be done as follows using the **ClearFlag** macro defined in *ntifs.h*:
 
-```
+```cpp
 ClearFlag(NewDeviceObject->Flags, DO_DEVICE_INITIALIZING);
 ```
 

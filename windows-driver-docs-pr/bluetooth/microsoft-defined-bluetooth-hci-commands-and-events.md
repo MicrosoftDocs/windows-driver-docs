@@ -47,7 +47,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\<Device instance path>\Device P
 
 This example command adds the registry value from the command line.
 
-```
+```cpp
 REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\<Device instance path>\Device Parameters" /v VsMsftOpCode /t REG_DWORD /d <Vendor specific command code>
 
 ```
@@ -55,7 +55,7 @@ REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\<Device instance path>
 ### Using INF to set the VsMsftOpCode registry key
 The vendor-specific command code can also be added via INF Files. This sample shows how and where to add the vendor specific command code so that it is automatically added to the registry.
 
-``` 
+```cpp
 [radio.NTamd64.HW]
 AddReg=radio.NTamd64.HW.AddReg
 [radio.NTamd64.HW.AddReg]

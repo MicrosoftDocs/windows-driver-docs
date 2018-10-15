@@ -184,7 +184,7 @@ The following code example shows how an audio miniport driver defines and initia
 
 For a sampling rate of 48 KHz, an audio miniport driver uses the following code to define and initialize a [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537096) structure. This code shows the data ranges that the audio miniport driver exposes:
 
-```
+```cpp
 //Define and initialize KSDATARANGE_AUDIO structure
 // for use with a sample rate of 48 KHz.
 KSDATARANGE_AUDIO drDDPlus48;
@@ -204,7 +204,7 @@ drDDPlus48.MaximumSampleFrequency = 192000;
 
 For a sampling rate of 44.1 KHz, an audio miniport driver uses the following code to define and initialize a [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537096) structure:
 
-```
+```cpp
 //Define and initialize KSDATARANGE_AUDIO structure
 // for use with a sample rate of 41.1 KHz.
 KSDATARANGE_AUDIO drDDPlus44;

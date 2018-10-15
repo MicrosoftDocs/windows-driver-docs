@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 The ISCSI\_IP\_Address class provides a definition of IP addresses that is independent of the version of the IP protocol that is in use. This class is defined in *Common.mof*.
 
-```
+```cpp
 class ISCSI_IP_Address {
   [WmiDataId(1), read, write, DisplayName("Address Format")
     : amended, description("Type of address specified. 

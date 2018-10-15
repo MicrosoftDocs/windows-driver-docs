@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The MSiSCSI\_RequestTimeStatistics WMI class provides statistics about iSCSI requests. This class is defined as follows in *Mgmt.mof.*
 
-```
+```cpp
 class MSiSCSI_RequestTimeStatistics : Win32_PerfRawData
 {
     [read,key] String InstanceName;

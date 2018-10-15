@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 To set a custom property, your application or custom UI might have code that looks similar to the following:
 
-```
+```cpp
     IWiaPropertyStorage *pItemPropertyStorage = NULL;
  
     //

@@ -15,7 +15,7 @@ A WMI client uses the MSFC\_FibrePortHBAStatistics class to query an HBA minipor
 
 The MSFC\_FibrePortHBAStatistics class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MSFC_FibrePortHBAStatistics
 {
     [key] 

@@ -4,7 +4,7 @@ description: This lab provides hands-on exercises that demonstrate how to debug 
 ms.assetid: 4A31451C-FC7E-4C5F-B4EB-FBBAC8DADF9E
 keywords: ["debug lab", "step-by-step", "SYSVAD"]
 ms.author: domars
-ms.date: 10/11/2018
+ms.date: 10/12/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -145,7 +145,7 @@ For example if the target is running 32 bit Windows, run a 32 version of the deb
 
 3. On the target computer, open a Command Prompt window as Administrator. Enter this command to validate that the NIC on the target PC is suported.
 
-```
+```console
 C:\KDNET>kdnet
 
 Network debugging is supported on the following NICs:
@@ -154,7 +154,7 @@ busparams=0.25.0, Intel(R) 82579LM Gigabit Network Connection, KDNET is running 
 
 4. Type this command to set the IP address of the host system. Use the actual IP address of the host system you recorded instead of 169.182.1.1 that is shown in the sample output. Pick a unique port address for each target/host pair that you work with, such as 50010.
 
-```
+```console
 C:\>kdnet 169.182.1.1 50010
 
 Enabling network debugging on Intel(R) 82577LM Gigabit Network Connection.
@@ -167,7 +167,7 @@ Key=2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
 
 5. Type this command to confirm that the dbgsettings are set properly.
 
-```
+```console
 C:\> bcdedit /dbgsettings
 busparams               0.25.0
 key                     2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p

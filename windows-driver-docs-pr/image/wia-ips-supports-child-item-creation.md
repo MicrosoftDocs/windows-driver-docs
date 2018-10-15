@@ -55,7 +55,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_IPS\_SEGMENTATION**](wia-ips-segmentation.md)

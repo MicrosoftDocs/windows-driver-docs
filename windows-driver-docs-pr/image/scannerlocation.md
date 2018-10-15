@@ -25,7 +25,7 @@ The optional **ScannerLocation** element specifies the administratively assigned
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScannerLocation xml:lang="..."
   lang = "xs:string">
   text
@@ -100,23 +100,12 @@ Examples
 
 The following code example shows how you can use the ScannerLocation element.
 
-```
+```xml
 <wscn:ScannerLocation xml:lang="en-AU, en-CA, en-GB, en-US">
   LA Campus - Building 1
 </wscn:ScannerLocation>
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**ScannerDescription**](scannerdescription.md)
-
- 
-
- 
-
-
-
-
-
-

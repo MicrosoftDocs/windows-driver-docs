@@ -47,7 +47,7 @@ TAEF has built-in support for the following Runtime Parameters:
 
 Runtime Parameters are available in Setup, Cleanup and test methods. Use the RuntimeParameters::TryGetValue API to obtain them:
 
-```
+```cpp
 String value;
 VERIFY_SUCCEEDED(RuntimeParameters::TryGetValue(L"ParameterName3", value));
 ```
@@ -60,7 +60,7 @@ Runtime Parameters are available in setup and test methods. To obtain them, use 
 
 Example (class or assembly setup):
 
-```
+```cpp
 [ClassInitialize]
 
 public static void ClassSetup(TestContext context)
@@ -72,7 +72,7 @@ public static void ClassSetup(TestContext context)
 
 Similarly, from a test:
 
-```
+```cpp
 [TestMethod]
 
 public void VerifyRuntimeParametersTest()
@@ -96,13 +96,13 @@ public TestContext TestContext
 
 Runtime parameters are available in the setup, cleanup and the test methods. To retrieve runtime parameters, define and instantiate the RuntimeParameters object from Te.Common:
 
-```
+```cpp
 <object id="RuntimeParameters" progid="Te.Common.RuntimeParameters" />
 ```
 
 Once the RuntimeParameters object is instantiated, you can use RuntimeParameters.Contains("&lt;runtime parameter name&gt;") method to query if a runtime parameter was supplied and is available to the test. If it returns true, you can then use RuntimeParameters.GetValue("&lt;runtime parameter name&gt;") to retrieve it. Note that RuntimeParameters.GetValue(...) will throw if the runtime parameter is not available. The following example is from our VBScript example:
 
-```
+```cpp
        <script language="VBScript">
             <![CDATA[
                 Function TestOne()

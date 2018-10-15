@@ -25,7 +25,7 @@ The required **JobOriginatingUserName** element specifies the name of the user w
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobOriginatingUserName>
   text
 </wscn:JobOriginatingUserName>
@@ -80,7 +80,7 @@ The WSD Scan Service can provide a default **JobOriginatingUserName** name in it
 
 The name of the job is specified in the [**JobName**](jobname.md) element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DefaultScanTicket**](defaultscanticket.md)

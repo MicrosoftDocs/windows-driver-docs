@@ -24,7 +24,7 @@ TAEF offers a variety of options for authoring data-driven tests. Let's understa
 
 **Table based data-driven testing** solution allows you fine grained controlled on the data parameter variations as well as defining the parameter types. The DataSource in this case is a table defined in an XML file. You can specify the parameter types(int, unsigned int, size\_t, bool, double, DWORD, \_\_int64 etc and their homogeneous array variant), or have the type default to WEX::Common::String (native) or string (managed). Each Row in the table is a set of variation on the parameter values. The test method will be re-invoked for every Row in the table. Here is a snippet of an XML DataSource for table based data-driven testing:
 
-```
+```cpp
 1  <?xml version="1.0"?>
 2   <Data>
 3     <Table Id ="Table1">

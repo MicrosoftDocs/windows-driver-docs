@@ -48,7 +48,7 @@ XML values with such incompatible syntaxes, or whose syntax is incompatible with
 
 For example, consider the following template.
 
-```
+```cpp
 *Template:  USAddress
 {
     *Type:  DATATYPE
@@ -81,7 +81,7 @@ In the following example, the **zipCode** type is referenced in the declaration 
 
 The preceding template definition will cause the creation of the following XML schema entry (it is the value of \*XSDTypeDefinition unchanged).
 
-```
+```cpp
     <complexType name="USAddress">
         <sequence>
             <element name="name"   type="string"/>
@@ -104,7 +104,7 @@ The parser automatically constructs another data type that defines a new type th
 
 The following code example shows the additional data type definition.
 
-```
+```cpp
     <complexType name = "GDLW_USAddress">
         <complexContent>
             <extension base="gdl:USAddress">
@@ -121,7 +121,7 @@ The following code example shows the additional data type definition.
 
 Consider the following GDL entry.
 
-```
+```cpp
 *Address: <BeginValue:XML> 
    <name>Alice Smith</name>
    <street>123 Maple Street</street>
@@ -133,7 +133,7 @@ Consider the following GDL entry.
 
 And consider the ADDRESS template, which declares the \*Address GDL aAttribute to have a \*ValueType that is defined by the template **USAddress**, as the following code example shows.
 
-```
+```cpp
 *Template:  ADDRESS
 {
     *Name: "*Address"
@@ -144,7 +144,7 @@ And consider the ADDRESS template, which declares the \*Address GDL aAttribute t
 
 If the earlier GDL entry is interpreted by using the ADDRESS template, the resulting XML output would occur.
 
-```
+```cpp
     <GDL_ATTRIBUTE Name="*Address"  xsi:type="GDLW_USAddress" >
     <name>Ben Smith</name>
     <street>123 Maple Street</street>

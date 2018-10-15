@@ -42,7 +42,7 @@ where *FeatureName* is the name of a feature and *OptionName* is the name of an 
 
 The options listed in a single \*InvalidCombination entry indicate a set of options that cannot be used in combination. For example, the following entry specifies that [*CMYK*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-cmyk) color mode cannot be used with plain paper and 720 DPI.
 
-```
+```cpp
 *InvalidCombination: LIST(Resolution.720dpi, MediaType.Plain, ColorMode.CMYK)
 ```
 
@@ -65,7 +65,7 @@ If you only need to indicate an invalid combination relationship between two opt
 
 where *FeatureName* is the name of a feature and *OptionName* is the name of an option associated with the feature. A \*Constraints entry must be placed inside an \*Option entry. For example, to indicate that letter-sized and A4-sized paper cannot be used with the envelope feeder, you can use the following entries:
 
-```
+```cpp
 *Feature: InputBin
 {
     *Option: ENVFEED
@@ -78,7 +78,7 @@ where *FeatureName* is the name of a feature and *OptionName* is the name of an 
 
 or, equivalently:
 
-```
+```cpp
 *Feature: InputBin
 {
     *Option: ENVFEED

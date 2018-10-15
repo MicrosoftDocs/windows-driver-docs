@@ -44,7 +44,7 @@ A PSHED plug-in's INF file must also include an [**AddReg**](https://msdn.micros
 
 For example:
 
-```
+```cpp
 ;
 ; Example PSHED plug-in INF file
 ;

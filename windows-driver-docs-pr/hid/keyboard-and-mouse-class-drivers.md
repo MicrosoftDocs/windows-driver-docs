@@ -288,7 +288,7 @@ For an absolute pointing device, the device's function driver must set the **Las
 
 -   In addition to dividing the device input value by the maximum capability of the device, the driver scales the device input value by 0xFFFF:
 
-    ```
+    ```cpp
     LastX = ((device input x value) * 0xFFFF ) / (Maximum x capability of the device)
     LastY = ((device input y value) * 0xFFFF ) / (Maximum y capability of the device)
     ```

@@ -25,7 +25,7 @@ The **SourceDisksFiles** section names the source files that are used during ins
 
 In order for a driver file or an application file to be included as part of a signed [driver package](driver-packages.md), the file must have a corresponding INF **SourceDisksFiles** section entry and a corresponding [**INF CopyFiles directive**](inf-copyfiles-directive.md).
 
-```
+```cpp
 [SourceDisksFiles] | 
 [SourceDisksFiles.x86] | 
 [SourceDisksFiles.arm] | (Windows 8 and later versions of Windows)
@@ -76,7 +76,7 @@ Examples
 
 The following example shows a [**SourceDisksNames**](inf-sourcedisksnames-section.md) section and a corresponding SourceDisksFiles section.  Note that this example has only a **SourceDisksFiles.x86** section, specifying the files for the x86 architecture.  An INF that supports another architecture will need a corresponding **SourceDisksFiles** section for that architecture, or the use of an undecorated [**SourceDisksFiles**] section, which supports all architectures.
 
-```
+```cpp
 [SourceDisksNames]
 ;
 ; diskid = description[, [tagfile] [, <unused>, subdir]]

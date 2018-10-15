@@ -73,7 +73,7 @@ The following pseudocode example demonstrates how to set up an IRP\_MN\_QUERY\_I
 
  
 
-```
+```cpp
 #include <bthddi.h>
 
 ...

@@ -21,7 +21,7 @@ The **language** XML element localizes and customizes the items that DPInst disp
 
 ### Element Tag
 
-```
+```cpp
 <language>
 ```
 
@@ -97,7 +97,7 @@ To customize the items that appear on the wizard pages in the English-only versi
 
 The following code example demonstrates a **language** element that specifies the English (Standard) language and includes customized **dpinstTitle** and **welcomeTitle** XML child elements. The text that specifies the custom text is shown in bold font type.
 
-```
+```cpp
 <dpinst>
   ...
   <language code="0x0409">

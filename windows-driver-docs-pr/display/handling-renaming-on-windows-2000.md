@@ -29,7 +29,7 @@ It may be helpful to think of AGP heaps as residing in a conceptual address spac
 
 Given a surface (**pSurface**), a kernel-mode AGP heap (**pvmHeap**) and a mapping of the heap into a particular user-mode process (**pMap**), the following formula is used to compute the actual, user-mode **fpVidMem** for a surface:
 
-```
+```cpp
 fpVidMem = pMap->pvVirtAddr +
     (pSurface->fpHeapOffset âˆ’ pvmHeap->fpStart)
 ```
@@ -40,7 +40,7 @@ Your driver is notified of the conceptual base address of AGP heaps through the 
 
 The following code fragment demonstrates computing a new **fpVidMem** for an AGP surface in a lock call.
 
-```
+```cpp
 // Get the vertex buffer&#39;s surface local and global from the
 // lock data
 LPDDRAWI_DDRAWSURFACE_LCL*pLcl = pLockData->lpDDSurface;

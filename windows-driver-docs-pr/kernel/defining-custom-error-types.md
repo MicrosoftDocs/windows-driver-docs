@@ -40,7 +40,7 @@ For an example of a message text file, see the Serlog.mc file in the [Serial dri
 
 The header section must contain this line:
 
-```
+```cpp
 MessageIdTypedef=NTSTATUS
 ```
 
@@ -52,7 +52,7 @@ The **SeverityNames** and **FacilityNames** directives define symbolic values fo
 
 Here is an example of a header declaration of symbolic names for severity codes:
 
-```
+```cpp
 SeverityNames = (
   Success       = 0x0:STATUS_SEVERITY_SUCCESS
   Informational = 0x1:STATUS_SEVERITY_INFORMATIONAL
@@ -104,7 +104,7 @@ The first keyword must always be **MessageId**.
 
 The rest of the message definition consists of one or more localized versions of the error message. Each version is of the form:
 
-```
+```cpp
 Language=language_name
 localized_message
 ```
@@ -119,7 +119,7 @@ If you define custom error messages, you should not use insertion strings unless
 
 Use the Message Compiler (mc.exe) to compile your message text file into a resource script file (which has an .rc file name extension). A command of the form
 
-```
+```cpp
 mc filename.mc
 ```
 

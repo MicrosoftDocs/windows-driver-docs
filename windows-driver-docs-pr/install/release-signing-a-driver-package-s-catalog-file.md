@@ -31,7 +31,7 @@ The following command line shows how to run SignTool to do the following:
 
 To release-sign the *tstamd64.cat* catalog file, run the following command line:
 
-```
+```cpp
 Signtool sign /v /ac MSCV-VSClass3.cer /s MyPersonalStore /n contoso.com /t http://timestamp.verisign.com/scripts/timstamp.dll tstamd64.cat
 ```
 

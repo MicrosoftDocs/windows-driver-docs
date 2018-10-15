@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The following example shows selected fragments from a system-supplied class installer's INF file to show how any INF file is made up of sections, each of which contains zero or more lines, some of which are entries that reference additional INF-writer-defined sections:
 
-```
+```cpp
 [Version]
 Signature="$Windows NT$"
 Class=Mouse

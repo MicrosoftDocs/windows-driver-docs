@@ -22,7 +22,7 @@ Some drivers must manipulate objects passed to them by callers or must handle tw
 
 For example, in the following code snippet, the driver has been passed the handle **AscInfo-&gt;AddressHandle**, but has not validated it before calling [**ObReferenceObjectByHandle**](https://msdn.microsoft.com/library/windows/hardware/ff558679):
 
-```
+```cpp
    //
    // This handle is embedded in a buffered request.
    //
@@ -43,7 +43,7 @@ Although the call to **ObReferenceObjectByHandle** succeeds, the code fails to e
 
 Even if all the parameters for the call to **ObReferenceObjectByHandle** are correct, and the call succeeds, a driver can still get unexpected results if the file object is not intended for its driver. In the following code fragment, the driver assumes that a successful call returns a pointer to the file object it expected:
 
-```
+```cpp
    status = ObReferenceObjectByHandle (
                              AcpInfo->Handle,
                              0L,
