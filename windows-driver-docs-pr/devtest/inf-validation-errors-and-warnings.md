@@ -277,6 +277,10 @@ AddReg = HKR,,CoInstallers32,0x00010000,"MyCoinstaller.dll"
 <td align="left"><p><span id="1313_missing_includes_"></span><span id="1313_MISSING_INCLUDES_"></span><strong>1313-1314: Missing includes directive</strong></p></td>
 <td align="left"><p>In each section that uses a Needs directive, there must be a corresponding Includes directive to reference the INF that contains the target section.  Previously the Needs directive would be valid if the Include directive was in another INF section.</p></td>
 </tr>
+<tr class="even">
+<td align="left"><p><span id="133x_functional_errors_"></span><span id="133x_FUNCTIONAL_ERRORS_"></span><strong>133x: Functional errors</strong></p></td>
+<td align="left"><p>In some cases the OS needs to process all of the registry operations up front without knowledge of the devices or the system. This means that different sections writing different data values to the same global key will conflict. For example you cannot have a service that is set to different serivce configuations in different sections, a global registry key set to different data values in different sections, or a destination file set to different source files in different copyfile sections. If we process this whole INF up front, one of these configurations will overwrite the other one resulting in one of the configurations not working as expected.</p></td>
+</tr>
 </tbody>
 </table>
 
