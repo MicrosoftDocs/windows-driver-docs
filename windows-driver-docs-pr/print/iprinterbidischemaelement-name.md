@@ -24,7 +24,7 @@ The Name method returns the Bidi schema element name.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT Name(
   [out, retval] BSTR *pbstrSchema
 );

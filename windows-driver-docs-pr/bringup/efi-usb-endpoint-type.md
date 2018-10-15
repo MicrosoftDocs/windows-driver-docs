@@ -19,7 +19,7 @@ The **EFI\_USB\_ENDPOINT\_TYPE** enumeration contains values used to indicate th
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef enum _EFI_USB_ENDPOINT_TYPE{
   UsbEndpointControl = 0x00,
   UsbEndpointIsochronous = 0x01,

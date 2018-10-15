@@ -19,7 +19,7 @@ The **EFI\_USB\_DEVICE\_INFO** structure is used to define the USB function devi
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef struct 
 {
     EFI_USB_DEVICE_DESCRIPTOR           *DeviceDescriptor;

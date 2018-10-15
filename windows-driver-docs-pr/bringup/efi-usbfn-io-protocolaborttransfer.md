@@ -19,7 +19,7 @@ The **AbortTransfer** function aborts transfer on the specified endpoint.
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_IO_ABORT_TRANSFER) (

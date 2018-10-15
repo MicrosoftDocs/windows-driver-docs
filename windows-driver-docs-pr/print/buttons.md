@@ -28,7 +28,7 @@ The **buttons** element is defined in the *asyncui* namespace at this URI: http:
 Usage
 -----
 
-``` syntax
+```xml
 <buttons>
   child elements
 </buttons>
@@ -92,15 +92,6 @@ See [**button**](button.md) for a code exapmle that shows how to use the **butto
 
 ## See also
 
+[button](button.md)
 
-[**button**](button.md)
-
-[**messageBoxUI**](messageboxui.md)
-
- 
-
- 
-
-
-
-
+[messageBoxUI](messageboxui.md)

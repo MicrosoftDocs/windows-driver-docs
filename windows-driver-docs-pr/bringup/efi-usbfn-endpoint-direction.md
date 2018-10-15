@@ -19,7 +19,7 @@ The **EFI\_USBFN\_ENDPOINT\_DIRECTION** enumeration is used to identify directio
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef enum _EFI_USBFN_ENDPOINT_DIRECTION 
 {
     EfiUsbEndpointDirectionHostOut  = 0,

@@ -27,7 +27,7 @@ The **EncodeUnicodeName** property enables an ASP Web page to translate an ANSI 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 [propget, id(2), helpstring("property EncodeUnicodeName")] HRESULT EncodeUnicodeName(
   [in]          BSTR bstrSrcName,
   [out, retval] BSTR *pVal

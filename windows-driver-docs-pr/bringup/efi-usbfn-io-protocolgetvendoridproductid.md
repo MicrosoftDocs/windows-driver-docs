@@ -19,7 +19,7 @@ The **GetVendorIdProductId** function returns the vendor-id and product-id of th
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_IO_GET_VENDOR_ID_PRODUCT_ID) (

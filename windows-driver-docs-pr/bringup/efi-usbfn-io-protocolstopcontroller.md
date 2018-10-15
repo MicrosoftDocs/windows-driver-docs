@@ -19,7 +19,7 @@ The **StopController** function disables the hardware device by resetting the ru
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_IO_STOP_CONTROLLER) (

@@ -65,7 +65,7 @@ This registration is only necessary on first install. The following example show
 **Note**  **\[OfflineRoot\]** is used as shorthand for HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Print\\OfflinePrinterExtensions.
 
 
-``` syntax
+```Registry
 [OfflineRoot]
     \[PrinterExtensionId] {GUID}
            AppPath=[PrinterExtensionAppPath] {String}
@@ -87,7 +87,7 @@ This registration is only necessary on first install. The following example show
 
 For example, the following set of keys would register a printer extension with the {*PrinterExtensionIDGuid*} PrinterExtensionID and a fully-qualified path to the "C:\\Program Files\\Fabrikam\\pe.exe" executable for the {*PrinterDriverID1Guid*} and {*PrinterDriverID2Guid*} PrinterDriverIDs, with the printer preferences and printer notifications reasons.
 
-``` syntax
+```Registry
 [OfflineRoot]
     \{PrinterExtensionIDGuid}
            AppPath="C:\Program Files\Fabrikam\pe.exe"
@@ -105,7 +105,7 @@ For example, the following set of keys would register a printer extension with t
 
 To uninstall the same printer extension, the following set of keys should be specified.
 
-``` syntax
+```Registry
 [OfflineRoot]
     \{PrinterExtensionIDGuid}
            AppPath="C:\Program Files\Fabrikam\pe.exe"
@@ -125,7 +125,7 @@ Since printer extensions can run in both a user-launched context and an event-la
 
 When the printer extension registers for the current PrinterDriverID, it must include the PrinterDriverID in the AppPath. For example, for a printer extension app with the name *printerextension.exe*, and a PrinterDriverID value of *{GUID}*, the \[PrinterExtensionAppPath\] would look like the following:
 
-``` syntax
+```console
 "C:\program files\fabrikam\printerextension.exe {GUID}"
 ```
 
@@ -133,7 +133,7 @@ When the printer extension registers for the current PrinterDriverID, it must in
 
 So the application should create a new PrinterExtensionManager for the current PrinterDriverID, register a delegate to handle the OnDriverEvent event, and call the EnableEvents method with the PrinterDriverID. The following code snippet illustrates this approach.
 
-```CSharp
+```csharp
 PrinterExtensionManager mgr = new PrinterExtensionManager();
 mgr.OnDriverEvent += OnDriverEvent;
 mgr.EnableEvents(new Guid(PrinterDriverID1));
@@ -149,7 +149,7 @@ If an app does not call EnableEvents within 5 seconds, Windows will timeout and 
 
 **DriverEvent handler**. After an OnDriverEvent handler is registered and events are enabled, if the printer extension was launched to handle print preferences or printer notifications, then the handler will be invoked. In the preceding code snippet, a method called OnDriverEvent was registered as the event handler. In the following code snippet, the *PrinterExtensionEventArgs* parameter is the object that enables the print preferences and printer notifications scenarios to be constructed. *PrinterExtensionEventArgs* is a wrapper for [**IPrinterExtensionEventArgs**](https://msdn.microsoft.com/library/windows/hardware/hh973207).
 
-```CSharp
+```csharp
 static void OnDriverEvent(object sender, PrinterExtensionEventArgs eventArgs)
 {
     //
@@ -223,7 +223,7 @@ If the process for the printer extension has closed and not called the Complete 
 
 In order to retrieve device status information, printer extensions can use Bidi to query the print device. For example, to show ink status or other kinds of status about the device, printer extensions can use the IPrinterExtensionEventArgs.PrinterQueue.SendBidiQuery method to issue Bidi queries to the device. Getting the latest Bidi status is a two-step process involving setting up an event handler for the OnBidiResponseReceived event, and calling the SendBidiQuery method with a valid Bidi query. The following code snippet shows this two-step process.
 
-```CSharp
+```csharp
 PrinterQueue.OnBidiResponseReceived += new
 EventHandler<PrinterQueueEventArgs>(OnBidiResponseReceived);
 PrinterQueue.SendBidiQuery("\\Printer.consumables");
@@ -231,7 +231,7 @@ PrinterQueue.SendBidiQuery("\\Printer.consumables");
 
 When the Bidi response is received, the following event handler is invoked. Note that this event handler also has a mocked ink status implementation, which may be useful for development when a device is unavailable. The PrinterQueueEventArgs object includes both an HRESULT and a Bidi XML response. For more information on Bidi XML responses, see [Bidi Request and Response Schemas](http://msdn.microsoft.com/library/windows/desktop/dd183368.aspx).
 
-```CSharp
+```csharp
 private void OnBidiResponseReceived(object sender, PrinterQueueEventArgs e)
 {
     if (e.StatusHResult != (int)HRESULT.S_OK)
@@ -265,13 +265,13 @@ The most important attribute from the IPrinterExtensionEventArgs object for noti
 
 **Managing printers**. In order to support the role of a printer extension as an app that can be used as a hub for managing/maintaining printers, it is possible to enumerate the print queues for which the current printer extension is registered, and get the status for each queue. This is not demonstrated in the PrinterExtensionSample project, but the following code snippet could be added into the Main method of App.xaml.cs to register an event handler.
 
-```CSharp
+```csharp
 mgr.OnPrinterQueuesEnumerated += new EventHandler<PrinterQueuesEnumeratedEventArgs>(mgr_OnPrinterQueuesEnumerated);
 ```
 
 Once the queues are enumerated, the event handler is called and status operations can take place. This event fires periodically during the lifetime of the app in order to ensure that the list of enumerated print queues is current, even if the user has installed more queues since it was opened. As a result, it is important that the event handler does not create a new window each time it is executed, and this is shown in the following code snippet.
 
-```CSharp
+```csharp
 static void mgr_OnPrinterQueuesEnumerated(object sender, PrinterQueuesEnumeratedEventArgs e)
 {
     foreach (IPrinterExtensionContext pContext in e)
@@ -283,7 +283,7 @@ static void mgr_OnPrinterQueuesEnumerated(object sender, PrinterQueuesEnumerated
 
 In order to perform maintenance tasks using a printer extension, Microsoft recommends that the legacy WritePrinter API is used as outlined by the following pseudo code.
 
-``` syntax
+```Pseudocode
 OpenPrinter
     StartDocPrinter
         StartPagePrinter

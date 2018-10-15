@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 Here is a sample PrintCapabilities file to show how to specify personal ID number (PIN) protected printing.
 
-```XML
+```xml
 <?xml version="1.0"?>
 <psf:PrintCapabilities
    xmlns:psf="http://schemas.microsoft.com/windows/2003/08/printing/printschemaframework" 

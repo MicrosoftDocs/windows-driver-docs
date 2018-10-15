@@ -27,7 +27,7 @@ The **AspPage** property enables an ASP Web page to obtain the directory path to
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_AspPage(
   [in]  DWORD dwPage,
   [out] BSTR  *pVal

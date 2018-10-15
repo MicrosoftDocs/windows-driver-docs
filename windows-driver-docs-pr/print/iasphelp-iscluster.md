@@ -27,7 +27,7 @@ The **IsCluster** property enables an ASP Web page to determine whether the Clus
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_IsCluster(
   [out] BOOL *pVal
 );

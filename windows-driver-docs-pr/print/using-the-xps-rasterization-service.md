@@ -22,7 +22,7 @@ The XPS rasterization service is implemented in the system file Xpsrasterservice
 
 To be available for use by an XPSDrv filter, the XPS rasterization service must be specified in the [filter pipeline configuration file](filter-pipeline-configuration-file.md) that describes the filters in the print filter pipeline. Specifically, the configuration file must contain a **FilterServiceProvider** element with a **dll** attribute set to the service DLL name, as shown in the following XML example:
 
-```XML
+```xml
   <FilterServiceProvider dll = "XpsRasterService.dll" />
 ```
 

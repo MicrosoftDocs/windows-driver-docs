@@ -29,7 +29,7 @@ The `GetTree` method enables an ASP Web page to obtain the values associated wit
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT GetTree(
   [in]  BSTR    varTree,
   [out] VARIANT *varValue

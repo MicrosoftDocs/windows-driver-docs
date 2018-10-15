@@ -19,7 +19,7 @@ The **EFI\_USB\_SUPERSPEED\_ENDPOINT\_DESCRIPTOR** structure is used to describe
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef struct
 {
     EFI_USB_ENDPOINT_DESCRIPTOR                         *EndpointDescriptor;

@@ -28,7 +28,7 @@ The **messageBoxUI** element is defined in the *asyncui* namespace at this URI: 
 Usage
 -----
 
-``` syntax
+```xml
 <messageBoxUI>
   child elements
 </messageBoxUI>
@@ -110,7 +110,7 @@ Examples
 
 The following code example shows how to notify the printer driver that the **OK** button was clicked on the message box.
 
-```cpp
+```xml
 <?xml version="1.0" ?> 
   <asyncPrintUIResponse xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/response">
     <v1>
@@ -125,23 +125,14 @@ The following code example shows how to notify the printer driver that the **OK*
 
 ## See also
 
+[bitmap](bitmap.md)
 
-[**bitmap**](bitmap.md)
+[body](body.md)
 
-[**body**](body.md)
+[button](button.md)
 
-[**button**](button.md)
+[buttons](buttons.md)
 
-[**buttons**](buttons.md)
+[requestOpen](requestopen.md)
 
-[**requestOpen**](requestopen.md)
-
-[**title**](title.md)
-
- 
-
- 
-
-
-
-
+[title](title.md)

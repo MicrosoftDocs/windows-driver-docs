@@ -29,7 +29,7 @@ The `Get` method enables an ASP Web page to obtain the value identified by an SN
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT Get(
   [in]  BSTR    bstrOID,
   [out] VARIANT *varValue

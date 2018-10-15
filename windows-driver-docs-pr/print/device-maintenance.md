@@ -44,7 +44,7 @@ After the operation is completed, the callback object is invoked on the IPrinter
 
 The following C# snippet outlines how to issue a device maintenance task from a UWP device app.
 
-```CSharp
+```csharp
 //
 // Declare a global constant that will be used
 // to determine whether method calls were successful

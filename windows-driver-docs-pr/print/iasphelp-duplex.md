@@ -27,7 +27,7 @@ The **Duplex** property enables an ASP Web page to determine if a printer suppor
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_Duplex(
   [out] BOOL *pVal
 );

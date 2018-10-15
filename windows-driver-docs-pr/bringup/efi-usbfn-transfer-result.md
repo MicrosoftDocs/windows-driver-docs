@@ -19,7 +19,7 @@ The **EFI\_USBFN\_TRANSFER\_RESULT** structure contains information about data t
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef struct _EFI_USBFN_TRANSFER_RESULT 
 {
     UINTN                         BytesTransferred;

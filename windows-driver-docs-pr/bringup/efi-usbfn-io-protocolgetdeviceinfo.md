@@ -21,7 +21,7 @@ Specifying **EfiUsbDeviceInfoUnknown** as Id is treated as an invalid parameter.
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_IO_GET_DEVICE_INFO) (

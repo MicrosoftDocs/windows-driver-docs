@@ -27,7 +27,7 @@ The **SNMPDevice** property enables an ASP Web page to obtain a printer's SNMP d
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_SNMPDevice(
   [out] DWORD *pVal
 );

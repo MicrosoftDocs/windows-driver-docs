@@ -24,7 +24,7 @@ Sets the number of bytes that the IHV JavaScript function has processed at the t
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT ProcessedByteCount(
   [in]  UINT32 value
 );

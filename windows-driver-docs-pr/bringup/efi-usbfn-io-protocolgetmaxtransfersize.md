@@ -19,7 +19,7 @@ The **GetMaxTransferSize** function returns the maximum transfer size as support
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_IO_GET_MAXTRANSFER_SIZE) (

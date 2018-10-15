@@ -23,7 +23,7 @@ Notice that the sample v4 print driver INF file presented in this topic does not
 
 The following sample INF file assumes that a fictional company, Fabrikam, has manufactured print devices that will be installed to run with the v4 print driver.
 
-```Text
+```INF
 [Version]
 Signature="$Windows NT$"
 Provider="Fabrikam"

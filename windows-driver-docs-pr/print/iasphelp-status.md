@@ -27,7 +27,7 @@ The **Status** property enables an ASP Web page to determine the printer status.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_Status(
   [out] long *pVal
 );

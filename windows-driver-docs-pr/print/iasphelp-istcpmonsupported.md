@@ -27,7 +27,7 @@ The **IsTCPMonSupported** property enables an ASP Web page to determine if Micro
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_IsTCPMonSupported(
   [out] BOOL *pVal
 );

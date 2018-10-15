@@ -27,7 +27,7 @@ The **ToUtf8** property enables an ASP Web page to translate a string of Unicode
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 [propget, id(1), helpstring("property ToUtf8")] HRESULT ToUtf8(
   [in]          BSTR bstrUnicode,
   [out, retval] BSTR *pVal

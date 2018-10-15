@@ -29,7 +29,7 @@ The `Set` method enables an ASP Web page to associate a value with an SNMP OID.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT Set(
   [in]  BSTR    bstrOID,
   [out] VARIANT varValue

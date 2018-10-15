@@ -19,7 +19,7 @@ The **EFI\_USB\_CONFIG\_INFO** structure is used to define the supported USB por
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef struct 
 {
     EFI_USB_CONFIG_DESCRIPTOR           *ConfigDescriptor;

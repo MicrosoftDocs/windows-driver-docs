@@ -27,7 +27,7 @@ The **AvgJobSize** property enables an ASP Web page to determine the average job
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_AvgJobSize(
   [out] long *pVal
 );

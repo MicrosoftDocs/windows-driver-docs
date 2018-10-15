@@ -19,7 +19,7 @@ Is enumeration contains values used to indicate the bus speed.
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef enum _EFI_USB_BUS_SPEED 
 {
     UsbBusSpeedUnknown = 0,

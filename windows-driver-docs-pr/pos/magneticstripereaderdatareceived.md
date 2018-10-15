@@ -16,7 +16,7 @@ This event is raised after a successful magnetic stripe reader (MSR) scan event.
 
 ## Syntax
 
-``` syntax
+```cpp
 typedef struct _MSR_DATA_RECEIVED {
     MsrCardType CardType;
     unsigned char Track1EncryptedDataLength;

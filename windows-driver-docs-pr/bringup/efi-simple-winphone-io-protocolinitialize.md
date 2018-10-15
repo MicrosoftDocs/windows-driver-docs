@@ -19,7 +19,7 @@ The **Initialize** function waits for a connection from the host computer for th
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS(EFIAPI * EFI_SIMPLE_WINPHONE_IO_INITIALIZE) 
 (

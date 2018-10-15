@@ -19,7 +19,7 @@ The **EFI\_USB\_INTERFACE\_INFO** structure Used to define the supported USB int
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef struct 
 {
     EFI_USB_INTERFACE_DESCRIPTOR        *InterfaceDescriptor;

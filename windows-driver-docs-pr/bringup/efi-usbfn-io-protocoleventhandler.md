@@ -19,7 +19,7 @@ The **EventHandler** function is called repeatedly to receive updates on USB bus
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_IO_EVENTHANDLER) (

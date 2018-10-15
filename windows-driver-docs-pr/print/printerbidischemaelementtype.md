@@ -24,7 +24,7 @@ Specifies the possible values of data transferred in a bidi operation
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef enum _PRINTERBIDISCHEMAELEMENTTYPE { 
   PrinterBidiSchemaElementType_Null    = 0,
   PrinterBidiSchemaElementType_Int     = 1,

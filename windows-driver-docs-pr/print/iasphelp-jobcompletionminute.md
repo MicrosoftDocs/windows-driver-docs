@@ -27,7 +27,7 @@ The **JobCompletionMinute** property enables an ASP Web page to determine when t
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_JobCompletionMinute(
   [out] long *pVal
 );

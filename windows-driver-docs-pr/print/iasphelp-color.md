@@ -27,7 +27,7 @@ The **Color** property enables an ASP Web page to determine if a printer support
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_Color(
   [out] BOOL *pVal
 );

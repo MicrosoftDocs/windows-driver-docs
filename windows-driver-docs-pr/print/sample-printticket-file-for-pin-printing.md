@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 Here is a sample PrintTicket file to show how to specify PIN printing.
 
-```XML
+```xml
 <?xml version="1.0"?>
    <psf:PrintTicket xmlns:psf="http://schemas.microsoft.com/windows/2003/08/printing/printschemaframework" 
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 

@@ -24,7 +24,7 @@ The AddRequeryKey method adds a new QueryKey to re-query upon return from the ge
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT AddRequeryKey(
   [in] BSTR   bstrQueryKey
 );

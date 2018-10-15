@@ -19,7 +19,7 @@ The **Read** function reads data from the device.
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_SIMPLE_WINPHONE_IO_READ) (

@@ -24,7 +24,7 @@ The AddString method adds a new response of type BIDI\_STRING to the collection.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT AddString(
   [in] BSTR bstrSchema,
   [in] BSTR bstrValue

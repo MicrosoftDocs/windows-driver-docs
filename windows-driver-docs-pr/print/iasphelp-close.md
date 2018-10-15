@@ -27,7 +27,7 @@ The **Close** method enables an ASP Web page to close access to a printer.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT Close();
 ```
 

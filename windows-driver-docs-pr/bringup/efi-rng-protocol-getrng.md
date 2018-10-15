@@ -19,7 +19,7 @@ Retrieves a Random Number Generation (RNG) value.
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef EFI_STATUS (EFIAPI *EFI_RNG_GET_RNG) (
     IN  struct _EFI_RNG_PROTOCOL    *This,
     IN  EFI_RNG_ALGORITHM           *RNGAlgorithm, OPTIONAL

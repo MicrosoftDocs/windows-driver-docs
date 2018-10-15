@@ -24,7 +24,7 @@ The AddText method adds a new response of type BIDI\_TEXT to the collection.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT AddText(
   [in] BSTR bstrSchema,
   [in] BSTR bstrValue

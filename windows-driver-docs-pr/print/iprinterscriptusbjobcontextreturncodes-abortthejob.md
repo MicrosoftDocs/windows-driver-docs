@@ -24,7 +24,7 @@ Returns a value of '4' to inform USBMon that the print job must be aborted.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT AbortTheJob(
   [out, retval] UINT32 *value
 );

@@ -28,7 +28,7 @@ The **title** element is defined in the *asyncui* namespace at this URI: http://
 Usage
 -----
 
-``` syntax
+```xml
 <title
   stringID = "xs:string"
   resourceDll = "xs:string"/>
@@ -130,15 +130,6 @@ The following code example shows how to use the **title** element to indicate th
 
 ## See also
 
+[balloonUI](balloonui.md)
 
-[**balloonUI**](balloonui.md)
-
-[**parameter**](parameter.md)
-
- 
-
- 
-
-
-
-
+[parameter](parameter.md)

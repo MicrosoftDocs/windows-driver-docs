@@ -27,7 +27,7 @@ The **IPAddress** property enables an ASP Web page to obtain a printer's IP addr
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_IPAddress(
   [out] BSTR *pVal
 );

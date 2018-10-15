@@ -24,7 +24,7 @@ Returns an array of [IPrinterScriptableSequentialStream](https://msdn.microsoft.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT TemporaryStreams(
   [out, retval] IDispatch **ppArray
 );

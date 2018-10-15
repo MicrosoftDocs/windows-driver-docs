@@ -19,7 +19,7 @@ This enumeration specifies the USB port type.
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef enum _EFI_USBFN_PORT_TYPE 
 {
     EfiUsbUnknownPort = 0,

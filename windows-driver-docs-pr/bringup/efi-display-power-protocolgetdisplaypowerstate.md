@@ -19,7 +19,7 @@ Returns the current power state of the display and backlight.
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef EFI_STATUS (EFIAPI * EFI_DISPLAY_POWER_GETDISPLAYPOWERSTATE) (
     IN EFI_DISPLAY_POWER_PROTOCOL *This,
     OUT EFI_DISPLAY_POWER_STATE *PowerState 

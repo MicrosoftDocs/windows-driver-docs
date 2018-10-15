@@ -41,7 +41,7 @@ The PrinterExtensionLibrary project that is shipped in the Microsoft Store devic
 
 4. Right-click your Portable Class Library project and choose **Unload**. Then open the .csproj file and add the following section to your file, just prior to the last tag in the document.
 
-```XML
+```xml
   <ItemGroup>
     <COMReference Include="PrinterExtensionLib">
       <Guid>{91CE54EE-C67C-4B46-A4FF-99416F27A8BF}</Guid>
@@ -57,7 +57,7 @@ The PrinterExtensionLibrary project that is shipped in the Microsoft Store devic
 
 5. If you see warnings as a result of COM references, add the following to the &lt;PropertyGroup&gt; tag:
 
-```XML
+```xml
 <ResolveComReferenceSilent>true</ResolveComReferenceSilent>
 ```
 

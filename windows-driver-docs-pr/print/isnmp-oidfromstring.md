@@ -29,7 +29,7 @@ The `OIDFromString` method enables an ASP Web page to convert an SNMP OID string
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT OIDFromString(
   [in]  BSTR    bstrOID,
   [out] VARIANT *varOID

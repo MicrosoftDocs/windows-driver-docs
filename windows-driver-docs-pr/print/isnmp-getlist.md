@@ -29,7 +29,7 @@ The `GetList` method enables an ASP Web page to obtain the values associated wit
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT GetList(
   [in]  VARIANT *varList,
   [out] VARIANT *varValue

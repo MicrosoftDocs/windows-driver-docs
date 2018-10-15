@@ -24,7 +24,7 @@ Sets the number of pages that have been printed by the print device in the curre
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT PrintedPageCount(
   [in] UINT32 value
 );

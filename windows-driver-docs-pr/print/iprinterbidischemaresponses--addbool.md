@@ -24,7 +24,7 @@ The AddBool method adds a new response of type BIDI\_BOOL to the collection.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT  AddBool(
   [in] BSTR bstrSchema,
   [in] BOOL bValue

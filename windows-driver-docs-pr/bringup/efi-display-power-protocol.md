@@ -19,7 +19,7 @@ This protocol allows the UEFI battery charging application to turn off the scree
 ## Syntax
 
 
-``` syntax
+```cpp
 #define EFI_DISPLAY_POWER_PROTOCOL_GUID \
   {0xf352021d, 0x9593, 0x4432, {0xbf, 0x4, 0x67, 0xb9, 0xf3, 0xb7, 0x60, 0x8};
 

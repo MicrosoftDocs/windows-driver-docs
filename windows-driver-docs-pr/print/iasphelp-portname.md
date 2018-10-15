@@ -27,7 +27,7 @@ The **PortName** property enables an ASP Web page to obtain a printer's port nam
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_PortName(
   [out] BSTR *pVal
 );

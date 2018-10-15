@@ -27,7 +27,7 @@ The **AvgJobSizeUnit** property enables an ASP Web page to determine the units o
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_AvgJobSizeUnit(
   [out] long *pVal
 );

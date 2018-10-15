@@ -28,7 +28,7 @@ The **customUI** element is defined in the *asyncui* namespace at this URI: http
 Usage
 -----
 
-``` syntax
+```xml
 <customUI
   dll = "xs:string"
   entrypoint = "xs:string"

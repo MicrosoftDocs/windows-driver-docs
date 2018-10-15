@@ -24,7 +24,7 @@ The AddEnum method adds a new response of type BIDI\_ENUM to the collection.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT AddEnum(
   [in] BSTR bstrSchema,
   [in] BSTR bstrValue

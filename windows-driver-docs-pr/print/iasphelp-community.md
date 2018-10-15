@@ -27,7 +27,7 @@ The **Community** property enables an ASP Web page to obtain a print server's Si
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_Community(
   [out] BSTR *pVal
 );

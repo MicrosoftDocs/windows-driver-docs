@@ -27,7 +27,7 @@ The **ShareName** property enables an ASP Web page to obtain the printer's share
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_ShareName(
   [out] BSTR *pVal
 );

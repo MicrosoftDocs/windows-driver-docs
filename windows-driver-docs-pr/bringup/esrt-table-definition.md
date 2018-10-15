@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The pointer to the ESRT table is identified via its corresponding GUID in the EFI\_CONFIGURATION\_TABLE.
 
-``` syntax
+```cpp
 #define EFI_SYSTEM_RESOURCE_TABLE_GUID   \
 { 0xb122a263, 0x3661, 0x4f68,  0x99, 0x29, 0x78, 0xf8, 0xb0, 0xd6, 0x21, 0x80  }
 ```
