@@ -65,7 +65,7 @@ The following settings apply to desktop COSA only. These entries will be used if
 
 | Setting name | Description | Optional or required | Notes | Minimum supported Windows version |
 | --- | --- | --- | --- | --- |
-| SupportDataMarketplace | A true/false string describing whether a profile entry supports Mobile Plans. | Optional | Before enable this please ensure that your Mobile Operator is part of th Mobile Plans program. <p></p> <p>If left blank, defaults to "false."</p> | Windows 10, version 1703 |
+| SupportDataMarketplace | A true/false string describing whether a profile entry supports Mobile Plans. | Optional | <p>Before enabling this setting, please ensure that your Mobile Operator is part of the Mobile Plans program.</p><p>If left blank, defaults to "false."</p> | Windows 10, version 1703 |
 | SPN | An identifier string for the Service Provider Name (SPN) | Optional | Helps to identify the MO/MVNO's network. If left blank, defaults to empty string and does nothing. | Windows 10, version 1703 |
 | AlwaysOn | Describes whether the connection is always on or not. | Required | If left blank, defaults to "true." | Windows 10, version 1703 |
 | PurposeGroups | A string specifying the purposes of the connection by a comma-separated list of GUIDs representing purpose values. | Required | The following purpose values are available: <ul><li>**Internet**</li><li>**MMS**</li><li>**IMS**</li><li>**SUPL**</li><li>**Purchase**</li><li>**Administrative**</li><li>**Application**</li><li>**eSIM provisioning**</li></ul> <p> If left blank, defaults to "Internet."</p> | Windows 10, version 1703 |
