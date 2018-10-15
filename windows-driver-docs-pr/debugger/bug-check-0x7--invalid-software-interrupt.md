@@ -20,13 +20,16 @@ ms.localizationpriority: medium
 # Bug Check 0x7: INVALID\_SOFTWARE\_INTERRUPT
 
 
-The INVALID\_SOFTWARE\_INTERRUPT bug check has a value of 0x00000007.
+The INVALID\_SOFTWARE\_INTERRUPT bug check has a value of 0x00000007. It indicates a level not within the software range.
 
 This bug check appears very infrequently.
 
 **Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
- 
+Remarks
+-------
+
+The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be very helpful in determining the root cause. 
 
  
 
