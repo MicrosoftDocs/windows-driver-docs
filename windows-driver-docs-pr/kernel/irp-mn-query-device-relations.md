@@ -66,7 +66,7 @@ A driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS or to a failure sta
 
 On success, a driver sets **Irp-&gt;IoStatus.Information** to a PDEVICE\_RELATIONS pointer that points to the requested relations information. The **DEVICE\_RELATIONS** structure is defined as follows:
 
-```
+```cpp
 typedef struct _DEVICE_RELATIONS {
   ULONG  Count;
   PDEVICE_OBJECT  Objects[1];  // variable length

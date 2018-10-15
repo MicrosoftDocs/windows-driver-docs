@@ -32,7 +32,7 @@ The value of the \*Production directive can be one of the following symbols: EXA
 
 The following example shows a production directive.
 
-```
+```cpp
 *Production: EXACTLY_ONE
 {   ... child Productions ... }
 ```

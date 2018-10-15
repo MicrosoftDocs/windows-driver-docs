@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-```
+```cpp
 int __stdcall JoyIdRoutine( int joyid, BOOL used );
 ```
 

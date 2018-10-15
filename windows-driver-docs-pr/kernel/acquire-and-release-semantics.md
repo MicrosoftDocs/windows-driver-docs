@@ -22,7 +22,7 @@ An operation has *acquire semantics* if other processors will always see its eff
 
 Consider the following code example:
 
-```
+```cpp
  a++;
  b++;
  c++;
@@ -34,7 +34,7 @@ Atomic operations, such as those that the **Interlocked*Xxx*** routines perform,
 
 For example, the [**InterlockedIncrementAcquire**](https://msdn.microsoft.com/library/windows/hardware/ff547916) routine uses acquire semantics to increment a variable. If you rewrote the preceding code example as follows:
 
-```
+```cpp
  InterlockedIncrementAcquire(&a);
  b++;
  c++;
@@ -44,7 +44,7 @@ other processors would always see the increment of `a` before the increments of 
 
 Likewise, the [**InterlockedIncrementRelease**](https://msdn.microsoft.com/library/windows/hardware/ff547919) routine uses release semantics to increment a variable. If you rewrote the code example once again, as follows:
 
-```
+```cpp
  a++;
  b++;
  InterlockedIncrementRelease(&c);

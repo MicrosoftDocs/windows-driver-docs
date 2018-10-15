@@ -66,7 +66,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_IPA\_PIXELS\_PER\_LINE**](wia-ipa-pixels-per-line.md)

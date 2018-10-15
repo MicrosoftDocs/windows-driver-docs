@@ -29,7 +29,7 @@ Starting with Windows 8, WHEA policies can be managed either though [**WHEAPoli
 
 The WHEA PFA configuration settings are located in the following registry key:
 
-```
+```cpp
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WHEA\Policy
 ```
 

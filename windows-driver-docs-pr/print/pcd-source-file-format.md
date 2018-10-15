@@ -30,7 +30,7 @@ All plotter device characteristics are specified using the following format:
 
 where *keyword* is one of the PCD source file keywords and *value* is a quoted string or numeric value. For example, the following statement specifies that the plotter supports color:
 
-```
+```cpp
 ColorCap {1}
 ```
 
@@ -268,7 +268,7 @@ Each pen description must have the following format:
 
 where *Pen Number* identifies the pen's slot number and *Color* is a PC\_IDX\_-prefixed color identifier. Following are example pen descriptions:
 
-```
+```cpp
 PlotPenData {1, PC_IDX_WHITE}
 PlotPenData {2, PC_IDX_BLACK}
 PlotPenData {3, PC_IDX_RED}
@@ -282,7 +282,7 @@ Each form description must have the following format:
 
 where *Form Description* is a string describing the form, *Width* and *Length* specify the form size in 1/1000 mm units, and the margins are also specified in 1/1000 mm units. Following are three examples:
 
-```
+```cpp
 FormInfo {"Roll Paper 24 in",    609600,      0, 0, 0, 0, 0}
 FormInfo {"ANSI A 8.5 x 11 in",  215900, 279400, 0, 0, 0, 0}
 FormInfo {"ISO A4 210 x 297 mm", 210000, 297000, 0, 0, 0, 0}

@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 The ISCSI\_LoginOptions class describes the characteristics of a target logon session. This class is defined as follows in *Common.mof*.
 
-```
+```cpp
 class ISCSI_LoginOptions {
   [WmiDataId(1),
      description("Bit flags that specify which login 

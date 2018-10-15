@@ -137,7 +137,7 @@ Note that the RenderMoComp function will be called without the display driver-su
 
 The following code provides an example of how you can implement your *ProcAmpControlQueryRange* function:
 
-```
+```cpp
 HRESULT
 DXVA_DeinterlaceContainerDeviceClass::ProcAmpControlQueryRange(
     DWORD VideoProperty,

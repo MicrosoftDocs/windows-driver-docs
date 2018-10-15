@@ -117,7 +117,7 @@ To specify that the hardware ID is for a computer device container, use the foll
 
 The following is an example of a [**HardwareID**](https://msdn.microsoft.com/library/windows/hardware/ff546114) XML element for the computer:
 
-```
+```cpp
 DOID:ComputerMetadata\{c20d5449-511e-4cb5-902a-a541239322aa}
 ```
 

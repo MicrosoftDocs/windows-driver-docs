@@ -16,29 +16,16 @@ ms.localizationpriority: medium
 
 This function is reserved for system use.
 
-
-
-
-
 Information in the registry's service key for the driver is invalid.
 
-### Error Code
+## Error Code
 
 40
 
-### Display Message (Windows XP and later versions of Windows)
+### Display Message
 
 "Windows cannot access this hardware because its service key information in the registry is missing or recorded incorrectly. (Code 40)"
 
-### Recommended Resolution (Windows XP and later versions of Windows)
+### Recommended Resolution
 
 Reinstall the driver.
-
- 
-
- 
-
-
-
-
-

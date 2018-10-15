@@ -32,7 +32,7 @@ ms.technology: windows-devices
 
 ## Related sections
 
--   [Sensors DDI reference](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/_sensors/)
+-   [Sensors DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_sensors/)
 
  
 

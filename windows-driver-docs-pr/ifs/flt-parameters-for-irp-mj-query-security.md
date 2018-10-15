@@ -1,5 +1,5 @@
 ---
-title: FLT\_PARAMETERS for IRP\_MJ\_QUERY\_SECURITY union
+title: FLT_PARAMETERS for IRP_MJ_QUERY_SECURITY union
 description: Union component used when the MajorFunction field of the FLT\_IO\_PARAMETER\_BLOCK structure for the operation is IRP\_MJ\_QUERY\_SECURITY.
 ms.assetid: 7707fec2-9fe8-40f6-9f34-f43403551440
 keywords: ["FLT_PARAMETERS for IRP_MJ_QUERY_SECURITY union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]

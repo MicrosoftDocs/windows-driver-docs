@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 Use the following example code to define the deinterlace container device class:
 
-```
+```cpp
 // Deinterlace container device class.
 struct DXVA_DeinterlaceContainerDeviceClass : public DXVA_DeviceBaseClass
 {

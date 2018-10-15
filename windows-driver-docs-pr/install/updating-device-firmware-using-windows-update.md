@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This topic describes how to update a removable or in-chassis device's firmware using the Windows Update (WU) service.  For information about updating system firmware, see [Windows UEFI firmware update platform](../bringup/windows-uefi-firmware-update-platform.md).
 
-To do this, you'll provide an update mechanism, implemented as a device driver, that includes the firmware payload.  If your device uses a vendor-supplied driver, you have the option of adding the firmware update logic and payload to your existing function driver, or providing a separate firmware update driver package.  If your device uses a Microsoft-supplied driver, you must provide a separate firmware update driver package.  In both cases, the firmware update driver package must be universal.  For more info about universal drivers, see [Getting Started with Universal Windows drivers](../develop/getting-started-with-universal-drivers.md).  The driver binary can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md) or the [Windows Driver Model](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/windows-driver-model). 
+To do this, you'll provide an update mechanism, implemented as a device driver, that includes the firmware payload.  If your device uses a vendor-supplied driver, you have the option of adding the firmware update logic and payload to your existing function driver, or providing a separate firmware update driver package.  If your device uses a Microsoft-supplied driver, you must provide a separate firmware update driver package.  In both cases, the firmware update driver package must be universal.  For more info about universal drivers, see [Getting Started with Universal Windows drivers](../develop/getting-started-with-universal-drivers.md).  The driver binary can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md) or the [Windows Driver Model](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model). 
 
 Because WU cannot execute software, the firmware update driver must hand the firmware to Plug and Play (PnP) for installation.
 
@@ -61,7 +61,7 @@ There are a couple ways to create a second device node.  Certain device types ha
 
 In this case, use an extension INF that specifies the [AddComponent](../install/inf-addcomponent-directive.md) directive to create a device node that can be targeted by Windows Update and install the firmware update driver on it.  The following snippet from an INF file shows how you can do this:
 
-```
+```cpp
 [Manufacturer]
 %Contoso%=Standard,NTamd64
 [Standard.NTamd64]
@@ -86,7 +86,7 @@ To update firmware for devices that use a Microsoft-supplied driver, you need to
 
 * In your firmware update driver INF, specify [DIRID 13](using-dirids.md) to cause PnP to leave the files in the driver package in the DriverStore:
 
-    ```
+    ```cpp
     [Firmware_AddReg]
     ; Store location of firmware payload
     HKR,,FirmwareFilename,,"%13%\firmware_payload.bin"
@@ -96,7 +96,7 @@ To update firmware for devices that use a Microsoft-supplied driver, you need to
 
 * Firmware update drivers should specify the following INF entries:
 
-    ```
+    ```cpp
     Class=Firmware
     ClassGuid={f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
     ```

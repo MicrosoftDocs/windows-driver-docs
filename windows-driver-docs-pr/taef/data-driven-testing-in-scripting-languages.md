@@ -29,7 +29,7 @@ Data-driven testing in TAEF allows you to specify the **DataSource** at the clas
 
 The following example shows how to specify the **DataSource** property.
 
-```
+```cpp
 1   <?xml version="1.0" ?>
 2   <?component error="true" debug="true"?>
 3   <package>

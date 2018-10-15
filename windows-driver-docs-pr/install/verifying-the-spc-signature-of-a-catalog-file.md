@@ -15,13 +15,13 @@ ms.localizationpriority: medium
 
 To verify that a [catalog file](catalog-files.md) is signed by a valid [Software Publisher Certificate (SPC)](software-publisher-certificate.md) and corresponding cross-certificate, use the following [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) command:
 
-```
+```cpp
 SignTool verify /v /kp CatalogFileName.cat 
 ```
 
 To verify that a file that is listed in a [driver package's](driver-packages.md) [catalog file](catalog-files.md) is signed by a [Software Publisher Certificate (SPC)](software-publisher-certificate.md) and corresponding cross-certificate, use the following SignTool command:
 
-```
+```cpp
 SignTool verify /v /kp /c CatalogFileName.cat DriverFileName
 ```
 
@@ -41,13 +41,13 @@ Where:
 
 For example, the following command verifies that *Tstamd64.cat* has a digital signature that complies with the kernel-mode code signing policy and the PnP device installation signing requirements for Windows Vista and later versions of Windows. In this example, *Tstam64.cat* is in the same directory in which the command is run.
 
-```
+```cpp
 SignTool verify /kp tstamd64.cat
 ```
 
 In the next example, the following command verifies that *Toastpkg.inf*, which has an entry in the catalog file *Tstamd64.cat*, has a digital signature that complies with the kernel-mode code signing policy and the PnP device installation signing requirements of Windows Vista and later versions of Windows. In this example, *Tstam64.cat* and *Toastpkg.inf* are in the same directory in which the command is run.
 
-```
+```cpp
 SignTool verify /kp /c tstamd64.cat toastpkg.inf
 ```
 

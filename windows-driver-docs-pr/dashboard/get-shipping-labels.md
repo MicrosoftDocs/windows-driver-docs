@@ -269,7 +269,7 @@ This object has the following values
 
 ### Hardware ID object
 
-This object represents the details of the hardware ID which needs to be targeted by the shipping label. Refer [hardware IDs](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/hardware-ids) for more details.
+This object represents the details of the hardware ID which needs to be targeted by the shipping label. Refer [hardware IDs](https://docs.microsoft.com/windows-hardware/drivers/install/hardware-ids) for more details.
 
 ```json
 {
@@ -296,7 +296,7 @@ The hardware ID object should contain a valid combination of bundle ID, PNP ID, 
 
 ### CHIDs object
 
-This object represents the CHID (computer hardware ID) which needs to be targeted by the shipping label. Refer [using CHIDs](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/using-chids) for more details.
+This object represents the CHID (computer hardware ID) which needs to be targeted by the shipping label. Refer [using CHIDs](https://docs.microsoft.com/windows-hardware/drivers/dashboard/using-chids) for more details.
 ```json
 {
 	"chid": "346511cf-ccee-5c6d-8ee9-3c70fc7aae83",
@@ -328,7 +328,7 @@ This object has the following values
 |flooring|string|Use this option when you want a driver to be offered only at and above the listed Windows 10 operating system. For example, selecting an RS4 flooring would mean only systems running Windows 10 1803 (RS4) and later will be offered this driver. Possible values are: <ul><li>TH</li><li>RS1</li><li>RS2</li><li>RS3</li><li>RS4</li><li>RS5</li></ul> Note that the possible values will expand to include the current version of the OS (which is RS5 at the time of this document)|
 |ceiling|string|*Access to this feature is limited*. Use this option when you want a driver to be offered only for the listed operating system and earlier systems. For example, selecting an RS3 ceiling on a Windows 10 1607 RS1 certified driver would mean your driver would never be offered to systems running Windows 10 1803 (RS4) or above.Possible values are: <ul><li>TH</li><li>RS1</li><li>RS2</li><li>RS3</li><li>RS4</li><li>RS5</li></ul> Note that the possible values will expand to include the current version of the OS (which is RS5 at the time of this document)|
 
-For more info about these values, see [Limiting driver distribution by Windows versions](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/limit-driver-distribution).
+For more info about these values, see [Limiting driver distribution by Windows versions](https://docs.microsoft.com/windows-hardware/drivers/dashboard/limit-driver-distribution).
 
 ### Co-Engineering Driver Publish Information object
 
@@ -346,7 +346,7 @@ This object has the following values
 |flooringBuildNumber|number|The build number of the release when you want a driver to only be offered at and above this build number. For example, if the floor needs to be 10.1.17135, the input needs to be 17135. The major version (10.1) always defaults to the appropriate version automatically.|
 |ceiling|number|The build number of the release when you want a driver to only be offered at or below this build number. For example, if the ceiling needs to be 10.1.17139, the input needs to be 17139. The major version (10.1) always defaults to the appropriate version automatically.|
 
-For more info, see [Limiting driver distribution by Windows versions](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/limit-driver-distribution).
+For more info, see [Limiting driver distribution by Windows versions](https://docs.microsoft.com/windows-hardware/drivers/dashboard/limit-driver-distribution).
 
 ### Shipping Label Workflow Status object
 
@@ -371,3 +371,7 @@ This object has the following values
 ## Error codes
 
 For info about the errors codes, see [Error codes](get-product-data.md#error-codes).
+
+## See also
+
+- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

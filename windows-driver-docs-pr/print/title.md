@@ -110,7 +110,7 @@ Examples
 
 The following code example shows how to use the **title** element to indicate the string location in the resource DLL (in this example, stringID="1234") that contains the text to be used for the title.
 
-```
+```cpp
 <?xml version="1.0" ?>
    <asyncPrintUIRequest
     xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
@@ -128,7 +128,7 @@ The following code example shows how to use the **title** element to indicate th
   </asyncPrintUIRequest>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**balloonUI**](balloonui.md)

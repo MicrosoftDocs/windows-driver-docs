@@ -31,7 +31,7 @@ The following steps explain how the VMR initiates calls to the ProcAmp Control D
 1.  When the VMR is added to a filter graph, it initiates a call to the driver-supplied [*DdMoCompGetGuids*](https://msdn.microsoft.com/library/windows/hardware/ff550236) callback function to retrieve the list of devices supported by the driver. The **GetMoCompGuids** member of DD\_MOTIONCOMPCALLBACKS points to this callback function. For more information about a filter graph, see [KS Minidriver Architecture](https://msdn.microsoft.com/library/windows/hardware/ff567656).
 
 2.  If the deinterlace container device GUID is present, the VMR initiates a call to the [*DdMoCompCreate*](https://msdn.microsoft.com/library/windows/hardware/ff549656) callback function to create an instance of the device. The **CreateMoComp** member of DD\_MOTIONCOMPCALLBACKS points to the callback function. In the **DdMoCompCreate** call, a pointer to the container device GUID is specified in the **lpGuid** member of the [**DD\_CREATEMOCOMPDATA**](https://msdn.microsoft.com/library/windows/hardware/ff550529) structure. The container device GUID is defined as follows:
-    ```
+    ```cpp
     DEFINE_GUID(DXVA_DeinterlaceContainerDevice, 0x0e85cb93,0x3046,0x4ff0,0xae,0xcc,0xd5,0x8c,0xb5,0xf0,0x35,0xfd);
     ```
 
@@ -45,7 +45,7 @@ The following steps explain how the VMR initiates calls to the ProcAmp Control D
 
 5.  After the VMR has determined the ProcAmp adjustment capabilities of the hardware, it initiates a call to [*DdMoCompCreate*](https://msdn.microsoft.com/library/windows/hardware/ff549656) to create an instance of the ProcAmp control device. In the *DdMoCompCreate* call, a pointer to the ProcAmp control device GUID is specified in the **lpGuid** member of DD\_CREATEMOCOMPDATA. The ProcAmp control device GUID is defined as follows:
 
-    ```
+    ```cpp
     DEFINE_GUID(DXVA_ProcAmpControlDevice, 0x9f200913,0x2ffd,0x4056,0x9f,0x1e,0xe1,0xb5,0x08,0xf2,0x2d,0xcf); 
     ```
 

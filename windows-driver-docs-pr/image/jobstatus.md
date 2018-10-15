@@ -25,7 +25,7 @@ The required **JobStatus** element contains all information about the status of 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobStatus>
   child elements
 </wscn:JobStatus>
@@ -98,7 +98,7 @@ The WSD Scan Service notifies a client about changes to a job's status through a
 
 A client can query for job status through the [**GetJobElementsRequest**](getjobelementsrequest.md) operation.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CancelJobRequest**](canceljobrequest.md)

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 A WMI client uses the MPIO\_GET\_DESCRIPTOR WMI class to query MPIO for the device-path pairing of an MPIO disk.
 
-```
+```cpp
 class MPIO_GET_DESCRIPTOR
 {
     [key, read]

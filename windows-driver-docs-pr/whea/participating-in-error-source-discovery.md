@@ -26,7 +26,7 @@ To participate in error source discovery, a PSHED plug-in must implement a [*Get
 
 The following code example shows how to implement these callback functions.
 
-```
+```cpp
 //
 // The PSHED plug-in&#39;s GetAllErrorSources callback function
 //

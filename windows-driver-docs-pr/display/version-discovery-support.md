@@ -24,7 +24,7 @@ Windows 7 provides a way for Direct3D applications to discover the DDI versions 
 
 [**OpenAdapter10\_2**](https://msdn.microsoft.com/library/windows/hardware/ff568603) returns a table of the driver's adapter-specific functions in the **pAdapterFuncs\_2** member of the [**D3D10DDIARG\_OPENADAPTER**](https://msdn.microsoft.com/library/windows/hardware/ff541724) structure. **pAdapterFuncs\_2** points to a [**D3D10\_2DDI\_ADAPTERFUNCS**](https://msdn.microsoft.com/library/windows/hardware/ff541900) structure. The Direct3D runtime calls the driver's adapter-specific [**GetSupportedVersions**](https://msdn.microsoft.com/library/windows/hardware/ff566807) function to query for the DDI versions and hardware capabilities that the driver supports. **GetSupportedVersions** returns the DDI versions and hardware capabilities in an array of 64-bit values. The following code example shows a **GetSupportedVersions** implementation:
 
-```
+```cpp
 // Array of 64-bit values that are defined in D3d10umddi.h
 const UINT64 c_aSupportedVersions[] = {
     D3D10_0_7_DDI_SUPPORTED, // 10.0 on Windows 7

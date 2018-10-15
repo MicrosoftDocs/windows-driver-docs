@@ -21,7 +21,7 @@ The **eulaYesButton** XML element customizes the text that is associated with th
 
 ### **Element Tag**
 
-```
+```cpp
 <eulaYesButton>
 ```
 
@@ -62,7 +62,7 @@ None
 
 The following code example demonstrates a **eulaYesButton** element that customizes the accept option button text on a DPInst EULA page. The text that specifies the custom text of the accept option button is shown in bold font style.
 
-```
+```cpp
 <dpinst>
   ...
   <language code="0x0409">

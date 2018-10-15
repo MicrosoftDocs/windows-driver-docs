@@ -78,14 +78,14 @@ Due to the ratification of deferred destruction, the Direct3D runtime advocates 
 Those applications that require a form of synchronous destruction must use one of the following patterns, depending on how heavyweight a destruction they require:
 
 -   After the application ensures that all dependencies on that object are released (that is, command lists, views, middle ware, and so on), the application uses the following pattern:
-    ```
+    ```cpp
     Object::Release(); // Final release
     ImmediateContext::ClearState(); // Remove all ImmediateContext references as well.
     ImmediateContext::Flush(); // Destroy all objects as quickly as possible.
     ```
 
 -   The following pattern is a more heavywight destruction:
-    ```
+    ```cpp
     Object::Release(); // Final release
     ImmediateContext::ClearState(); // Remove all ImmediateContext references as well.
     ImmediateContext::Flush();

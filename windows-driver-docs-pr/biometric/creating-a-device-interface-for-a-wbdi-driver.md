@@ -20,13 +20,13 @@ After the device callback object has been initialized and returned to the driver
 
 Specifically, WBDI drivers must expose the GUID\_DEVINTERFACE\_BIOMETRIC\_READER device interface by calling [**IWDFDevice::CreateDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff557016):
 
-```
+```cpp
 hr = m_FxDevice->CreateDeviceInterface(&GUID_DEVINTERFACE_BIOMETRIC_READER, NULL);
 ```
 
 This call is followed by a call to [**IWDFDevice::AssignDeviceInterfaceState**](https://msdn.microsoft.com/library/windows/hardware/ff557006):
 
-```
+```cpp
 hr = m_FxDevice->AssignDeviceInterfaceState(&GUID_DEVINTERFACE_BIOMETRIC_READER,
  NULL,
  TRUE);

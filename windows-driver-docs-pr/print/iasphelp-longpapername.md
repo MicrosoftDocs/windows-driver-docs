@@ -85,7 +85,7 @@ Win32 error codes can also be returned.
 Remarks
 -------
 
-```
+```cpp
     Dim objPrinter, LongName
     Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
     LongName = objPrinter.LongPaperName("iso-a0")

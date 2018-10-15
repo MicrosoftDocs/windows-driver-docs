@@ -4,7 +4,7 @@ author: windows-driver-content
 description: WIA with Web Services for Devices
 ms.assetid: e1f91963-503b-4766-a6f1-c334465f0e73
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date:
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,13 +14,13 @@ ms.localizationpriority: medium
 # WIA with Web Services for Devices
 
 
-In Windows Vista and later versions of Windows, the operating system supports network-connected image scanner devices that implement Web Services for Devices (WSD).
+In Windows, the operating system supports network-connected image scanner devices that implement Web Services for Devices (WSD).
 
-The WSD Scan driver is an inbox Microsoft Windows Image Acquisition (WIA) class driver for web services scanners. This driver is compliant with the Windows Device Protocol (WDP) for scanners and is new with Windows Vista.
+The WSD Scan driver is an inbox Microsoft Windows Image Acquisition (WIA) class driver for web services scanners. This driver is compliant with the Windows Device Protocol (WDP) for scanners.
 
 The WSD Scan driver package contains a reusable kernel driver component, *WSDScan.sys*, that is intended specifically to install web services scanner devices. 
 
-Windows Vista also includes the *WSD Challenger*, which is a module that enables web services clients to challenge disconnected devices to reestablish device communication when the device comes back online.
+Windows also includes the *WSD Challenger*, which is a module that enables web services clients to challenge disconnected devices to reestablish device communication when the device comes back online.
 
 > [!IMPORTANT]  
 > WSD Challenger functionality has been deprecated and all WSD Challenger-related documentation will be removed in 2018.
@@ -32,21 +32,4 @@ The following sections describe how to use *WSDScan.sys* to install a WIA driver
 [SOAP Communications for WIA Scanners](soap-communications-for-wia-scanners.md)
 
 [Challenging a Disconnected Scanner with WSD](challenging-a-disconnected-scanner-with-the-wsd-challenger.md)
-
-Although WDP for scanners is well suited for a home office or small office environment, it cannot conveniently handle more than a few users. In Windows Server 2008 R2, the operating system supports WSD Distributed Scan Management. This feature augments WDP with a new WSD protocol to enable IT administrators to provide scanning services to large organizations. A web services scanner device that supports WSD Distributed Scan Management must implement the following two web services protocols:
-
--   The WSD Enterprise Scan Web Service (EWS) protocol, which is a subset of WDP.
-
--   The WSD Repository Processing Web Service (RPWS) protocol.
-
-The following section provides more information about WSD Distributed Scan Management:
-
-[Web Services for Devices Distributed Scan Management](distributed-scan-management--dsm-.md)
-
- 
-
- 
-
-
-
 

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 A WMI client uses the MPIO\_DISK\_INFO WMI class to query MPIO so that it gathers information regarding every MPIO disk that is configured in the system.
 
-```
+```cpp
 class MPIO_DISK_INFO
 {
     [key, read]

@@ -25,7 +25,7 @@ The required **ClearTime** element specifies the time at which a condition was c
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ClearTime>
   text
 </wscn:ClearTime>
@@ -70,7 +70,7 @@ Remarks
 
 The specified time is according to the internal clock of the scanner.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ConditionHistoryEntry**](conditionhistoryentry.md)

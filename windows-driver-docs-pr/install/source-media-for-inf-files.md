@@ -55,7 +55,7 @@ Please note that **Includes** entries can only be used to specify system-supplie
 
 An INF file that uses a section in another INF file by using the **Include** and **Needs** entries might have to use an accompanying section to maintain consistency. For example, if an INF file references the installation section (*DDInstall*) of another INF file in order to install the driver, it must reference an [**INF *DDInstall*.Services section**](inf-ddinstall-services-section.md) to install the accompanying service. Such an INF file might have the following sections:
 
-```
+```cpp
 [DDInstall]
 Include = AnotherINFFile.inf
 Needs = AnotherINFFileDDInstall

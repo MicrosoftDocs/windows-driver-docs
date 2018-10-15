@@ -169,7 +169,7 @@ Indicates the register number and the [register type](https://msdn.microsoft.com
 
 Note that several DCL instructions, which describe the output, can use the same register offset. However, the write mask components for each DCL instruction must be different. For example, the following is valid in a vertex shader 3\_0 and later:
 
-```
+```cpp
        DCL   o10.xy
        DCL   o10.zw
 ```

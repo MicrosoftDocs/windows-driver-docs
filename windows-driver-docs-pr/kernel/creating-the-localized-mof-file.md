@@ -26,7 +26,7 @@ The amended declaration includes the modified property declarations. Each locali
 
 Here is an example of a declaration of the basic class, followed by its amendment for American English.
 
-```
+```cpp
 [guid(xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx)]
 class MyClass
 {

@@ -19,7 +19,7 @@ You can use the following TDR-related registry keys for testing or debugging pur
 
     Specifies the initial level of recovery. The default value is to recover on timeout (**TdrLevelRecover**).
 
-    ```
+    ```cpp
     KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
     KeyValue  : TdrLevel
     ValueType : REG_DWORD
@@ -33,7 +33,7 @@ You can use the following TDR-related registry keys for testing or debugging pur
 
     Specifies the number of seconds that the GPU can delay the preempt request from the GPU scheduler. This is effectively the timeout threshold. The default value is 2 seconds.
 
-    ```
+    ```cpp
     KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
     KeyValue  : TdrDelay
     ValueType : REG_DWORD
@@ -44,7 +44,7 @@ You can use the following TDR-related registry keys for testing or debugging pur
 
     Specifies the number of seconds that the operating system allows threads to leave the driver. After a specified time, the operating system bug-checks the computer with the code VIDEO\_TDR\_FAILURE (0x116). The default value is 5 seconds.
 
-    ```
+    ```cpp
     KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
     KeyValue  : TdrDdiDelay
     ValueType : REG_DWORD
@@ -55,7 +55,7 @@ You can use the following TDR-related registry keys for testing or debugging pur
 
     Reserved. Do not use.
 
-    ```
+    ```cpp
     KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
     KeyValue  : TdrTestMode
     ValueType : REG_DWORD
@@ -66,7 +66,7 @@ You can use the following TDR-related registry keys for testing or debugging pur
 
     Specifies the debugging-related behavior of the TDR process. The default value is TDR\_DEBUG\_MODE\_RECOVER\_NO\_PROMPT, which indicates not to break into the debugger.
 
-    ```
+    ```cpp
     KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
     KeyValue  : TdrDebugMode
     ValueType : REG_DWORD
@@ -82,7 +82,7 @@ You can use the following TDR-related registry keys for testing or debugging pur
 
     Specifies the default time within which a specific number of TDRs (specified by the **TdrLimitCount** key) are allowed without crashing the computer. The default value is 60 seconds.
 
-    ```
+    ```cpp
     KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
     KeyValue  : TdrLimitTime
     ValueType : REG_DWORD
@@ -95,7 +95,7 @@ You can use the following TDR-related registry keys for testing or debugging pur
 
     Specifies the default number of TDRs (0x117) that are allowed during the time specified by the **TdrLimitTime** key without crashing the computer. The default value is 5.
 
-    ```
+    ```cpp
     KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
     KeyValue  : TdrLimitCount
     ValueType : REG_DWORD

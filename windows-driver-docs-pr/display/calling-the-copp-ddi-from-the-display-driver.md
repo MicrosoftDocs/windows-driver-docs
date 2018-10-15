@@ -25,7 +25,7 @@ The display driver initiates calls to the video miniport driver's [COPP DDI](htt
 
 The following sample data structure and IOCTLs can be used to transfer COPP information between the display driver and the video miniport driver. Your drivers can either use the data structure and IOCTLs or create new ones, as appropriate.
 
-```
+```cpp
 typedef struct {
     PVOID* ppThis;
     PVOID InputBuffer;

@@ -61,7 +61,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_IPA\_ITEM\_NAME**](wia-ipa-item-name.md)

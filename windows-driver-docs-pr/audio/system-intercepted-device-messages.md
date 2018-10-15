@@ -56,7 +56,7 @@ For information about other types of device messages, see the Windows SDK docume
 
 An *Xxx*Message function has the following syntax:
 
-```
+```cpp
 DWORD XxxMessage(
 <device ID>,
     UINT  uMsg,

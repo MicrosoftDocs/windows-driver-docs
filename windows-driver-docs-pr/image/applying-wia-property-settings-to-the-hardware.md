@@ -27,7 +27,7 @@ When this method is called, the WIA minidriver has been committed to performing 
 
 The following example shows an implementation of the [**IWiaMiniDrv::drvWriteItemProperties**](https://msdn.microsoft.com/library/windows/hardware/ff545020) method:
 
-```
+```cpp
 HRESULT _stdcall CWIADevice::drvWriteItemProperties(
   BYTE                      *pWiasContext,
   LONG                      lFlags,

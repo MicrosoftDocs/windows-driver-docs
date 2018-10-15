@@ -67,7 +67,7 @@ The TCP/IP `Value` construct allows you to extend the bidi communications schema
 
 The following code example extends the bidi communications schema by adding a new property, **System**, to the **Printer** property. The **System** property has a `Value` construct, with **name**, **type**, and **oid** attributes.
 
-```
+```cpp
 <Property name="Printer">
   <Property name="System">
     <Value name="Name" type="BIDI_STRING" oid="1.3.6.1.2.1.1.5"/>
@@ -77,7 +77,7 @@ The following code example extends the bidi communications schema by adding a ne
 
 The preceding example results in the following query:
 
-```
+```cpp
 \Printer.System:Name
 ```
 

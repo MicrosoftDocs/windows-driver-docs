@@ -16,13 +16,3 @@ ms.localizationpriority: medium
 # CM_Register_Device_Interface
 
 This function is reserved for system use.
-
-
- 
-
- 
-
-
-
-
-

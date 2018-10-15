@@ -1,5 +1,5 @@
 ---
-title: FLT\_FILE\_NAME\_OPTIONS
+title: FLT_FILE_NAME_OPTIONS
 description: FLT\_FILE\_NAME\_OPTIONS
 ms.assetid: 6e21c11e-d2c8-4c57-8225-1fbc365cbbac
 ms.author: windowsdriverdev
@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The FLT\_FILE\_NAME\_OPTIONS type is a bitmask of flags that specify the name format, query method, and flags for a file name information query.
 
-```
+```cpp
 typedef ULONG FLT_FILE_NAME_OPTIONS; 
 #define FLT_VALID_FILE_NAME_FORMATS 0x000000ff
     #define FLT_FILE_NAME_NORMALIZED    0x01

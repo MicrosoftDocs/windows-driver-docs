@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 Use the following example code to define the ProcAmp control device class:
 
-```
+```cpp
 // ProcAmp control device class.
 struct DXVA_ProcAmpControlDeviceClass : public DXVA_DeviceBaseClass
 {

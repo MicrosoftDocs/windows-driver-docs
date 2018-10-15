@@ -93,7 +93,7 @@ To determine where to find the page's ASP file, the method uses the algorithm de
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::AspPage** property can be queried.
 
-```
+```cpp
     Dim objPrinter, strPrinter, str
     strPrinter = Session("MS_printer")
     Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
@@ -121,7 +121,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Iasphelp::Open**](iasphelp-open.md)

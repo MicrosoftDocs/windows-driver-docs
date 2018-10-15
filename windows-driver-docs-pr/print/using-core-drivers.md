@@ -18,7 +18,7 @@ Print driver writers can use core drivers that they have written by listing the 
 
 For example:
 
-```
+```cpp
 [Version]
 Signature="$Windows NT$"
 ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}

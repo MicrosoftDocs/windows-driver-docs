@@ -398,7 +398,7 @@ The following example uses the [**s (Search Memory)**](s--search-memory-.md) com
 . . .
 ```
 
-In kernel mode, the output of **!address** is similar to the user mode output but contains less information. The following example example shows the kernel mode output.
+In kernel mode, the output of **!address** is similar to the user mode output but contains less information. The following example shows the kernel mode output.
 
 ```console
 kd> !address

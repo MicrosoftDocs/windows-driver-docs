@@ -55,7 +55,7 @@ You can further extend an implicit bin extension by using the special construct,
 
 The following code example shows how a **BinValue** construct can be used to add a new property, **Security**. This has the effect of extending an implicit bin extension.
 
-```
+```cpp
 <Property name="Layout">
   <Property name="InputBins">
     <InputBin name="TopBin" mibName="TRAY 1">
@@ -67,13 +67,13 @@ The following code example shows how a **BinValue** construct can be used to add
 
 The preceding example results in the following query:
 
-```
+```cpp
 \Printer.Layout.InputBins.TopBin:Security
 ```
 
 The following code example shows how a **BinValue** construct can be used to add a Status value. As in the preceding example, this has the effect of extending an implicit bin extension.
 
-```
+```cpp
 <Property name="Finishing">
   <Property name="OutputBins">
     <OutputBin name="TopBin" mibName="STANDARD BIN">
@@ -85,7 +85,7 @@ The following code example shows how a **BinValue** construct can be used to add
 
 The preceding example results in the following query:
 
-```
+```cpp
 \Printer.Finishing.OutputBins.TopBin:Status
 ```
 

@@ -19,7 +19,7 @@ Use the following [**SignTool**](https://msdn.microsoft.com/library/windows/hard
 
  
 
-```
+```cpp
 SignTool sign /v /s CertificateStore /n CertificateName /t http://timestamp.verisign.com/scripts/timstamp.dll CatalogFileName.cat
 ```
 

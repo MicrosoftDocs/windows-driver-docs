@@ -21,7 +21,7 @@ The WIA service can test a device's functionality status by calling the [**IStiU
 
 The following example shows an implementation of the **IStiUSD::Diagnostic** method.
 
-```
+```cpp
 STDMETHODIMP CWIADevice::Diagnostic(LPSTI_DIAG pBuffer)
 {
   //

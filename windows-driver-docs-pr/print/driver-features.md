@@ -229,7 +229,7 @@ The following table lists the currently supported driver features. Each row in t
 
     For **GetOptions**, the output buffer pointed to by *pmszFeatureOptionBuf* is as described in the previous paragraph. In the following example, the value for x is 612, the value for y is 792, the values for WidthOffset and HeightOffset are both 0, and the value for FeedDirection is "ShortEdge".
 
-    ```
+    ```cpp
     "%CustomPageSize\0612 792 0 0 ShortEdge\0"
     ```
 
@@ -316,13 +316,13 @@ When **GetOptions** is called on driver feature keywords, if a requested feature
 
 For example, suppose the **GetOptions** method is called, and the *pmszFeaturesRequested* input buffer contains the following string (in MULTI\_SZ format):
 
-```
+```cpp
 "Resolution\0%CustomPageSize\0Unknown_Name\0%Orientation\0\0"
 ```
 
 After **GetOption** returns, the *pmszFeatureOptionBuf* output buffer could contain this string (also in MULTI\_SZ format):
 
-```
+```cpp
 "Resolution\0300dpi\0%CustomPageSize\0612 792 0 0 ShortEdge\0%Orientation\0RotatedLandscape\0\0"
 ```
 

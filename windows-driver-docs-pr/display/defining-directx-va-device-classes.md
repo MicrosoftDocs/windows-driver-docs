@@ -23,7 +23,7 @@ Use the example code in this section to define device classes for the deinterlac
 
 Use the following example code to define each device type and a base class that applies to each device type:
 
-```
+```cpp
 // These enumerated types specify the DirectX VA device class.
 enum DXVA_DeviceType {
     DXVA_DeviceContainer        = 0x0001,

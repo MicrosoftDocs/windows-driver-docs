@@ -16,29 +16,16 @@ ms.localizationpriority: medium
 
 This function is reserved for system use.
 
-
-
-
-
 The device is disabled.
 
-### Error Code
+## Error Code
 
 22
 
-### Display Message (Windows 2000 and later versions of Windows)
+### Display Message
 
 "This device is disabled. (Code 22)"
 
-### Recommended Resolution (Windows 2000 and later versions of Windows)
+### Recommended Resolution
 
 The device is disabled because the user disabled it using Device Manager. Select **Enable Device**, which will enable the device.
-
- 
-
- 
-
-
-
-
-

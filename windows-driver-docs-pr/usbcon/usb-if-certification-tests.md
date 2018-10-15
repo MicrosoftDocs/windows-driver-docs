@@ -22,7 +22,7 @@ If you manufacture USB hardware, specifically USB device or host controller, you
 
 Earlier versions of the Windows Hardware Certification Kit required hardware manufacturers to submit their devices to the USB-IF for testing. However, that requirement has changed. You are no longer required to submit their devices to the USB-IF for testing.
 
-The new version of the HCK, USB-IF testing requirements allows vendors to download and run tests from the USB-IF website, the results are consumed by the HCK. If your device has already been certified by the USB-IF, you need to provide the USB-IF Test ID (TID) for the device to the HCK. This enables partners who get their devices USB-IF certified to avoid any test duplication. Partners who do not get their devices USB-IF certified simply need to run a few of the USB-IF tests on their own and then provide the logs from those tests to the HCK.
+The new version of the HLK, USB-IF testing requirements allows vendors to download and run tests from the USB-IF website, then assert that these tests have passed in the HLK. If your device has already been certified by the USB-IF, you need to provide the USB-IF Test ID (TID) for the device to the HLK.
 
 Even if USB devices pass current Microsoft Windows Certification Program requirements, many of those devices do not fully comply with the USB specification. Most common examples are:
 
@@ -34,20 +34,20 @@ Even if USB devices pass current Microsoft Windows Certification Program require
 -   **Audio**: Commonly fail because they do not resume from standby.
 
 A non-compliant USB device can cause a poor user experience, difficult public relations, product returns and loss of revenue, high product support call volume, and increased costs that are associated with servicing bugs in shipped products.
-## Windows HCK requirements for USB-IF tests
+## Windows HLK requirements for USB-IF tests
 
 
 -   Devices (**Device.Connectivity.UsbDevices.UsbifCertification)**
 
-    We strongly recommend USB-IF certification; however, the Windows HCK requirement **Device.Connectivity.UsbDevices.UsbifCertification** no longer requires USB-IF certification for USB devices. The requirement states that the device can be either USB-IF certified, or that a subset of the USB-IF’s certification tests can be run on the device.
+    We strongly recommend USB-IF certification; however, the Windows HLK requirement **Device.Connectivity.UsbDevices.UsbifCertification** no longer requires USB-IF certification for USB devices. The requirement states that the device can be either USB-IF certified, or that a subset of the USB-IF’s certification tests can be run on the device.
 
 -   Host controllers (**Device.BusController.UsbController.UsbifCertification**)
 
-    USB host controller manufacturers must obtain full USB-IF certification in order to meet their respective Windows HCK requirements.
+    USB host controller manufacturers must obtain full USB-IF certification in order to meet their respective Windows HLK requirements.
 
 -   Hubs (**Device.Connectivity.UsbDevices.UsbifCertification**)
 
-    USB hub manufacturers must obtain full USB-IF certification in order to meet their respective Windows HCK requirements.
+    USB hub manufacturers must obtain full USB-IF certification in order to meet their respective Windows HLK requirements.
 
 System manufacturers should be aware of those requirements when they select USB host controllers to integrate into their systems. These requirements can significantly improve the customer experience with USB devices. They can help to prevent key reasons for crashes and hangs, and reduce the time spent to troubleshoot and debug non-compliance issues.
 
@@ -71,13 +71,13 @@ You can submit USB devices for Windows Certification qualification to meet the n
 
     -   To submit a USB device to an authorized independent test lab for USB-IF certification, the manufacturer must register with the lab and have a valid vendor ID (VID).
 
-    After a device successfully passes the USB-IF certification tests, you you have the following privileges for the device:
+    After a device successfully passes the USB-IF certification tests, you have the following privileges for the device:
 
     -   You can use the USB logo for brochures, packaging, and product information for your device.
     -   You can be listed on the USB-IF Integrators List.
     -   Bring the device to a [USB-IF-sponsored Compliance Workshop](http://www.usb.org/developers/events/compshop/). Each year, four workshops are held in the USA, and one workshop is held in Asia.
 
-    After a device passes the USB-IF certification tests, you receive a Test ID number (TID) from the test lab or workshop. You provide this TID number to the Windows HCK when you run the remainder of the Windows HCK tests for the device.
+    After a device passes the USB-IF certification tests, you receive a Test ID number (TID) from the test lab or workshop. You provide this TID number to the Windows HLK when you run the remainder of the Windows HLK tests for the device.
 
     The cost of testing and certifying a USB device at an authorized independent test lab can vary from lab to lab. Some authorized independent test labs offer volume discounts or discounts for some affiliated businesses. There is no cost to test and certify a USB device at any USB-IF-sponsored compliance workshop. You must be a member of the USB-IF to attend a USB-IF sponsored compliance workshop.
 
@@ -87,14 +87,12 @@ You can submit USB devices for Windows Certification qualification to meet the n
 
     **Note**  USB host controllers and hubs are not eligible for the USB-IF self-testing option and must obtain full USB-IF certification.
 
-     
-
     If you decide to use the USB-IF self-test option to obtain Windows Certification, you must at minimum perform the following USB-IF tests:
 
     -   USB command verifier tests: The USB command verifier tests verify the ability of a device to understand and accept common USB commands.
     -   USB interoperability tests: The USB interoperability tests target the functionality and the ability of a device to coexist with other USB peripherals.
 
-    These tests are downloaded and run outside of the Windows HCK. After the tests are run, the Windows HCK consumes the log files that are generated by the tests. Note that these tests must be run on the latest version of Windows only (as specified by the USB-IF), even if you are submitting your USB device for Windows Certification qualification for multiple versions of Windows. The test results apply to all Windows Certification submissions for all versions of Windows.
+    These tests are downloaded and run outside of the Windows HLK. Note that these tests must be run on the latest version of Windows only (as specified by the USB-IF), even if you are submitting your USB device for Windows Certification qualification for multiple versions of Windows. The test results apply to all Windows Certification submissions for all versions of Windows.
 
     The following steps describe how to perform the required USB-IF tests to qualify a device for Windows Certification.
 
@@ -125,11 +123,11 @@ You can submit USB devices for Windows Certification qualification to meet the n
         </tr>
         </tbody>
         </table>
-
-         
+    
+    3. If the tests are passing, enter the string "SELFTEST" as the Test ID (TID) input to the USB-IF Certification Validation Test in the HLK.
 
 ## Related topics
-[Windows Hardware Certification Kit Tests for USB](windows-hardware-certification-kit-tests-for-usb.md)  
+[Windows Hardware Lab Kit Tests for USB](windows-hardware-certification-kit-tests-for-usb.md)  
 
 
 

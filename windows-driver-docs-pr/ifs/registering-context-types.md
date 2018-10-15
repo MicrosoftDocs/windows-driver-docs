@@ -43,7 +43,7 @@ A minifilter driver can optionally define its own callback routines for allocati
 
 The following code example, which is taken from the CTX sample minifilter driver, shows an array of FLT\_CONTEXT\_REGISTRATION structures that are used to register instance, file, stream, and file object (stream handle) contexts.
 
-```
+```cpp
 const FLT_CONTEXT_REGISTRATION contextRegistration[] =
 {
     { FLT_INSTANCE_CONTEXT,              //ContextType

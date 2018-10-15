@@ -17,7 +17,7 @@ To enable support for a user-mode display driver DLL's version 10 DDI, the INF f
 
 The [Installation Requirements for Display Miniport and User-Mode Display Drivers](installing-display-miniport-and-user-mode-display-drivers.md) section describes how a user-mode display driver is installed and used according to the Windows Vista display driver model. To also enable support for the Direct3D version 10 DDI, you must specify the name of the DLL that contains the version 10 DDI as the second entry in the list of user-mode display driver names even if the version 10 DDI exists in the same DLL as the version 9 DDI. The following example shows how support for the version 10 DDI is enabled if the version 10 DDI is contained in *Umd10*.dll (that is, a separate DLL from the version 9 DDI):
 
-```
+```cpp
 [Xxx_SoftwareDeviceSettings]
 ...
  HKR,, UserModeDriverName,    %REG_MULTI_SZ%, umd9.dll, umd10.dll
@@ -26,7 +26,7 @@ The [Installation Requirements for Display Miniport and User-Mode Display Driver
 
 The following example shows how support for the version 10 DDI is enabled if the version 10 DDI is contained in *Umd*.dll (that is, the same DLL as the version 9 DDI):
 
-```
+```cpp
 [Xxx_SoftwareDeviceSettings]
 ...
  HKR,, UserModeDriverName,    %REG_MULTI_SZ%, umd.dll, umd.dll

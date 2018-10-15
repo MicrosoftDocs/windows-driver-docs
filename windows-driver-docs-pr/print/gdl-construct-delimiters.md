@@ -22,7 +22,7 @@ The *construct delimiter* characters are the curly braces: { and }. Construct de
 
 The following two code examples show the use of construct delimiters. The first example has the value spread over several lines.
 
-```
+```cpp
 *Person: FlorenceF
 {
  *Company:Contoso Pharmaceuticals
@@ -34,7 +34,7 @@ The following two code examples show the use of construct delimiters. The first 
 
 The second example combines the value into one line but still uses the curly braces to delimit the parts of the value.
 
-```
+```cpp
 *Person: FlorenceF{*Company:Contoso Pharmaceuticals{*Location: Redmond, WA}}
 ```
 

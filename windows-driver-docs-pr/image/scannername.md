@@ -25,7 +25,7 @@ The required **ScannerName** element specifies the administratively assigned use
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScannerName xml:lang="..."
   lang = "xs:string">
   text
@@ -102,23 +102,12 @@ Examples
 
 The following code example shows how you can use the ScannerName element.
 
-```
+```xml
 <wscn:ScannerName xml:lang="en-AU, en-CA, en-GB, en-US">
   Accounting Scanner in Copy Room 2
 </wscn:ScannerName>
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**ScannerDescription**](scannerdescription.md)
-
- 
-
- 
-
-
-
-
-
-

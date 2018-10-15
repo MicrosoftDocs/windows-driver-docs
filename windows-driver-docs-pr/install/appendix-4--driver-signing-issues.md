@@ -31,7 +31,7 @@ To resolve the issue, you may ask VeriSign to provide a replacement certificate 
 
 Alternatively, you can buy another SHA1 certificate and sign the file with two signatures as shown below if you want to keep both certificates. Note that only .sys files can be dual signed because they are PE files.
 
-```
+```cpp
 Signtool sign /fd sha256 /ac C:\MyCrossCert\Crosscert.cer /s my /n “MyCompany Inc. “ /ph /as /sha1 XX...XX C:\DriverDir\toaster.SYS
 ```
 

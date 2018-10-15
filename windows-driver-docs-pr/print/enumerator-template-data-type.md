@@ -36,7 +36,7 @@ The value to be parsed as an ENUMERATOR data type must match one of the tokens t
 
 Consider the following template.
 
-```
+```cpp
 *Template:  COLORS
 {
     *Type:  DATATYPE
@@ -48,7 +48,7 @@ Consider the following template.
 
 The preceding template will cause the parser filter to create the following XML schema entry.
 
-```
+```cpp
     <simpleType name = "colors">
         <restriction base="string">
             <enumeration value="YELLOW"/>
@@ -64,7 +64,7 @@ The preceding template will cause the parser filter to create the following XML 
 
 The parser filter will also create the corresponding wrapped data type.
 
-```
+```cpp
     <complexType name = "GDLW_colors">
         <simpleContent>
             <extension base="gdl:colors">
@@ -77,13 +77,13 @@ The parser filter will also create the corresponding wrapped data type.
 
 Consider the following GDL entry.
 
-```
+```cpp
 *Color: GREEN
 ```
 
 And consider the ACOLOR template, which declares the **\*Color** GDL attribute to have a **\*ValueType** that is defined by the template COLORS, as the following code example shows.
 
-```
+```cpp
 *Template:  ACOLOR
 {
     *Name:  "*Color"
@@ -95,7 +95,7 @@ And consider the ACOLOR template, which declares the **\*Color** GDL attribute t
 
 If the earlier GDL entry is interpreted by using the ACOLOR template, the resulting XML output would occur.
 
-```
+```cpp
     <GDL_ATTRIBUTE Name="*Color"  xsi:type="GDLW_colors" >GREEN</GDL_ATTRIBUTE>
 ```
 

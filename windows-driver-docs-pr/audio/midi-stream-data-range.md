@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 This example uses a [**KSDATARANGE\_MUSIC**](https://msdn.microsoft.com/library/windows/hardware/ff537097) structure to describe the data range for a MIDI stream.
 
-```
+```cpp
   DataRange.FormatSize  = sizeof(KSDATARANGE_MUSIC);
  DataRange.Flags       = 0;
   DataRange.SampleSize  = 0;

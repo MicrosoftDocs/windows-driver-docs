@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 To enable the Microsoft Direct3D runtime to emulate state blocks, the registry can be configured in the following way:
 
-```
+```cpp
 KeyPath   : HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Direct3D
 KeyValue  : EmulateStateBlocks
 ValueType : REG_DWORD

@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 The following code example shows how a driver inherits from the [IPnpCallbackHardware](https://msdn.microsoft.com/library/windows/hardware/ff556764) interface to define a device callback object.
 
-```
+```cpp
 class CMyDevice :
        // Callback interface exposed to the framework
        public IPnpCallbackHardware 

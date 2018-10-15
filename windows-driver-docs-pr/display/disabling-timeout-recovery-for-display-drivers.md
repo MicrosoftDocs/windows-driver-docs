@@ -22,7 +22,7 @@ Because timeout recovery code is complex, it might cause incompatibility with di
 
 To disable timeout recovery, create the following REG\_DWORD entry in the registry, and set its value to 0:
 
-```
+```cpp
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Watchdog\Display\EaRecovery
 ```
 

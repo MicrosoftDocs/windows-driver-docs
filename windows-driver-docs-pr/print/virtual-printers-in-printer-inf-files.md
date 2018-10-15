@@ -18,7 +18,7 @@ A virtual printer is a print destination, such as a fax server or electronic doc
 
 To insert a null hardware ID in an INF file, add a second comma in the models section of the INF between the Install section name and the Compatible ID. The following example shows how to create a null hardware ID for the indicated fax printer.
 
-```
+```cpp
 "Objectworld Fax Printer"=OWFAX,,Objectworld_Fax_Printer
 ```
 

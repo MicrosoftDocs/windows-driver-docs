@@ -25,7 +25,7 @@ The required **RequestedElements** element identifies the elements that the clie
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:RequestedElements>
   child elements
 </wscn:RequestedElements>
@@ -82,7 +82,7 @@ Remarks
 
 The **RequestedElements** element contains one or more **Name** elements for parent **RequestedElements** elements that identify the data that the client is querying.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**GetJobElementsRequest**](getjobelementsrequest.md)

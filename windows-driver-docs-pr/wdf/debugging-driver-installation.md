@@ -29,7 +29,7 @@ Additionally, the co-installer writes its debugging messages to the [Setup actio
 
 The following output in the Setup action log is from the successful installation of a KMDF driver:
 
-```
+```cpp
 WdfCoInstaller: DIF_INSTALLDEVICE: Pre-Processing
 WdfCoInstaller: ReadComponents:  WdfSection for Driver Service ECHO using KMDF lib version Major 0x1, minor 0x9 
 WdfCoInstaller: DIF_INSTALLDEVICE: Coinstaller version: 1.9.7100
@@ -44,7 +44,7 @@ In the above scenario, no update was necessary because the on-disk version and i
 
 Consider the following output, which details an unsuccessful installation:
 
-```
+```cpp
 WdfCoInstaller: ReadComponents:  WdfSection for Driver Service ECHO using KMDF lib version Major 0x1, minor 0x9  
 WdfCoInstaller: DIF_INSTALLDEVICE: Coinstaller version: 1.9.7100
 WdfCoInstaller: DIF_INSTALLDEVICE: KMDF in-memory version: 1.7.6000
@@ -67,7 +67,7 @@ You can also check the system event log for errors related to the dynamic bindin
 
 The following output in the Setup action log describes a successful UMDF driver installation.
 
-```
+```cpp
 WudfUpdate: installing version (1,9,0,7100).
 WudfUpdate: Checking for presence of previous UMDF installation.
 WudfUpdate: Found binary %WINDIR%\system32\drivers\wudfrd.sys version (1.9.0.7100)
@@ -89,7 +89,7 @@ In the above scenario, no update is necessary because the on-disk version of the
 
 Consider the following output, which details an unsuccessful installation.
 
-```
+```cpp
 WudfUpdate: installing version (1,9,0,7100).
 WudfUpdate: Checking for presence of previous UMDF installation.
 WudfUpdate: Found binary %WINDIR%\system32\drivers\wudfrd.sys version (1.5.0.6000)

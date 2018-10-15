@@ -41,7 +41,7 @@ This section describes tools that you can use to test your USB hardware or softw
 </tr>
 <tr class="odd">
 <td><p>[Test USB Type-C systems with USB Type-C ConnEx](test-usb-type-c-systems-with-mutt-connex-c.md)</p></td>
-<td><p>The MUTT Connection Exerciser Type-C (USB Type-C ConnEx) hardware board is a custom shield for the Arduino board. The shield provides a four-to-one switch to automate interoperability tests for USB Type-C scenarios.</p></td>
+<td><p>The USB Type-C Connection Exerciser (USB Type-C ConnEx) hardware board is a custom shield for the Arduino board. The shield provides a four-to-one switch to automate interoperability tests for USB Type-C scenarios.</p></td>
 </tr>
 <tr class="even">
 <td><p>[USB Type-C manual interoperability test procedures](type.md)</p></td>
@@ -53,7 +53,7 @@ This section describes tools that you can use to test your USB hardware or softw
 </tr>
 <tr class="even">
 <td><p>[How to run stress and transfer performance tests for MUTT devices](how-to-run-stress-and-transfer-and-super-mutt-performance-tests-for-mutt-devices.md)</p></td>
-<td><p>Read how to run stress and transfer and Super MUTT performance tests.</p>
+<td><p>Read how to run stress and transfer and SuperMUTT performance tests.</p>
 <p>Stress and transfer tests are geared towards saturating the bus protocol and the host controller software. These tests perform several simultaneous I/O transfers and cancellations to the MUTT device. The MUTT firmware is programmed to fail transfers during these tests. These failures emulate error conditions that the controller or USB driver stack are exposed to under stressful USB conditions.</p></td>
 </tr>
 <tr class="odd">
@@ -67,7 +67,7 @@ This section describes tools that you can use to test your USB hardware or softw
 </tr>
 <tr class="odd">
 <td><p>[Test USB hubs with MUTT devices](how-to-run-hub-testing-with-the-mutt-device.md)</p></td>
-<td><p>The goal of hub testing is to generate a complete set of possible traffic patterns from devices. You can test disconnect scenarios by adding an upstream SuperMUTT pack.</p></td>
+<td><p>The goal of hub testing is to generate a complete set of possible traffic patterns from devices. You can test disconnect scenarios by adding an upstream SuperMUTT Pack.</p></td>
 </tr>
 <tr class="even">
 <td><p>[Test USB host controllers with MUTT devices](how-to-run-controller-and-device-testing-with-the-mutt-device.md)</p></td>
@@ -78,8 +78,8 @@ This section describes tools that you can use to test your USB hardware or softw
 <td><p>The goal of device testing is to test device usage against various hub scenarios and systems power states. The MUTT Pack and SuperMUTT Pack devices can provide a way to expose the device to connect/disconnect scenarios across different hub and system power state scenarios. Test the device when it is attached to a USB 2.0 and 3.0 hubs in the MUTT Pack and SuperMUTT Pack devices, respectively.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Windows Hardware Certification Kit Tests for USB](windows-hardware-certification-kit-tests-for-usb.md)</p></td>
-<td><p>The Windows Hardware Certification Kit (HCK) tests can be used for additional testing of Systems, USB host controllers, hubs, and devices. These tests cover basic device functionality, reliability, and compatibility with Windows.</p></td>
+<td><p>[Windows Hardware Lab Kit Tests for USB](windows-hardware-certification-kit-tests-for-usb.md)</p></td>
+<td><p>The Windows Hardware Lab Kit (HLK) tests can be used for additional testing of Systems, USB host controllers, hubs, and devices. These tests cover basic device functionality, reliability, and compatibility with Windows.</p></td>
 </tr>
 </tbody>
 </table>

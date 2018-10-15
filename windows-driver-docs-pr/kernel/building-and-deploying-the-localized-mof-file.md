@@ -34,7 +34,7 @@ Driver writers can use one master MOF text file to contain the basic class, and 
 
 You can use the [MOF compiler](compiling-a-driver-s-mof-file.md) to generate a file containing the language-neutral classes as well as a file to contain the amended classes for a particular language.
 
-```
+```cpp
 mofcomp -amendment:namespace [ -MOF:mof] [ -MFL:mfl] masterfile
 ```
 
@@ -42,7 +42,7 @@ The *namespace* parameter is of the form MS\_*XXX*, where *XXX* is the LCID for 
 
 When building your driver on NT-based operating systems, you can merge the two files by using the copy command. On Windows 98/Me, the copy command does not correctly append Unicode files, but the following command can be used.
 
-```
+```cpp
 wmimofck localizedfile -ymof -zmfl
 ```
 
@@ -50,7 +50,7 @@ You can combine any number of languages into a single text file.
 
 The localized file can then be compiled into a binary file by the same method as for the MOF files that have not been localized:
 
-```
+```cpp
 mofcomp -B:binaryfile localizedfile
 ```
 
@@ -64,19 +64,19 @@ If the driver image will contain every supported language, there is a simpler wa
 
 When writing the combined MOF text file, driver writers must precede each amended class declaration with a **\#pragma** directive as follows
 
-```
+```cpp
 #pragma namespace ("namespace")
 ```
 
 where `namespace` is the correct namespace for the declaration. For example, the amended class declaration for American English must be preceded with a declaration of the form:
 
-```
+```cpp
 #pragma namespace ("\\\\.\\root\\wmi\\ms_409")
 ```
 
 For example, you declare a class and its amendments as follows.
 
-```
+```cpp
 #pragma namespace ("\\\\.\\root\\wmi)
 
 [guid(xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx)]

@@ -24,7 +24,7 @@ Starting with Windows XP, the kernel-mode safe string library is available as a
 
 Include the header file, as shown.
 
-```
+```cpp
 #include <ntstrsafe.h>
 ```
 
@@ -34,7 +34,7 @@ You can make available only the byte-counted or only the character-counted safe 
 
 Include the following line in your code before including the Ntstrsafe.h header file.
 
-```
+```cpp
 #define NTSTRSAFE_NO_CCH_FUNCTIONS
 ```
 
@@ -42,7 +42,7 @@ Include the following line in your code before including the Ntstrsafe.h header 
 
 Include the following line in your code before including the Ntstrsafe.h header file.
 
-```
+```cpp
 #define NTSTRSAFE_NO_CB_FUNCTIONS
 ```
 
@@ -54,7 +54,7 @@ You can make the [**UNICODE\_STRING**](https://msdn.microsoft.com/library/window
 
 Include the following line in your code before including the Ntstrsafe.h header file.
 
-```
+```cpp
 #define NTSTRSAFE_NO_UNICODE_STRING_FUNCTIONS
 ```
 
@@ -62,7 +62,7 @@ The maximum number of characters that any ANSI or Unicode string can contain is 
 
 Your driver can assign smaller values to NTSTRSAFE\_MAX\_CCH and NTSTRSAFE\_UNICODE\_STRING\_MAX\_CCH by including the following lines in your code before including Ntstrsafe.h.
 
-```
+```cpp
 #define NTSTRSAFE_MAX_CCH  <new-value>
 #define NTSTRSAFE_UNICODE_STRING_MAX_CCH  <new-value>
 ```

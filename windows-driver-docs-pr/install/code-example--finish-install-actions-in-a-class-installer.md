@@ -44,7 +44,7 @@ In this example, a class installer performs the following operations to support 
 
 The following class installer code example shows the basic structure of class installer code that implements finish-install actions:
 
-```
+```cpp
 DWORD CALLBACK
 SampleClassInstaller(
   IN DI_FUNCTION  InstallFunction,

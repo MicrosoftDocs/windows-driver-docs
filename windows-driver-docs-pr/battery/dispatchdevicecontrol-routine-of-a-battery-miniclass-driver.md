@@ -30,7 +30,7 @@ The [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardwar
 
 2.  If the IOCTL is not a private IOCTL defined by the miniclass driver, call **BatteryClassIoctl**, passing the IRP and the class handle returned by [**BatteryClassInitializeDevice**](https://msdn.microsoft.com/library/windows/hardware/ff536266). For example:
 
-    ```
+    ```cpp
     Status = BatteryClassIoctl (NewBattNP->ClassHandle, Irp);
     ```
 

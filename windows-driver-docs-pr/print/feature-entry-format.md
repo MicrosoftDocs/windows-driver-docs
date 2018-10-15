@@ -39,7 +39,7 @@ where *FeatureName* is the name of either one of the predefined [standard featur
 
 For example, a GPD file might contain the following specification of the standard InputBin feature.
 
-```
+```cpp
 *Feature: InputBin
 {
     *Name: "Paper Bin"

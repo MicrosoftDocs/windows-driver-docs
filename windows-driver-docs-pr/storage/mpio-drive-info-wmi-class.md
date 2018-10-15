@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 An MPIO driver uses the MPIO\_DRIVE\_INFO WMI class to identify each MPIO disk on a system that it manages.
 
-```
+```cpp
 class MPIO_DRIVE_INFO
 {
     //

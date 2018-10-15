@@ -95,7 +95,7 @@ This method calls the **SnmpMgrRequest** function to obtain SNMP OID values. For
 
 The [**ISNMP::Open**](isnmp-open.md) method must be called before the `ISNMP::GetList` method can be called.
 
-```
+```cpp
     Dim StrIP, strCommunity, objSNMP, OIDArray, OIDValueArray
     strIP = Session("MS_IPaddress")
     strCommunity = Session ("MS_Community")
@@ -129,7 +129,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ISNMP::Open**](isnmp-open.md)

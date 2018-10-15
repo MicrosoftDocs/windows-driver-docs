@@ -37,7 +37,7 @@ In addition, the system should support memory-mapped configuration space accesse
 
 The following code example shows how to query for the power management capability data of a device:
 
-```
+```cpp
 #define LSZ sizeof(ULONG)
 #define HEADERSIZE (FIELD_OFFSET (PCI_COMMON_CONFIG, DeviceSpecific)) / LSZ
 

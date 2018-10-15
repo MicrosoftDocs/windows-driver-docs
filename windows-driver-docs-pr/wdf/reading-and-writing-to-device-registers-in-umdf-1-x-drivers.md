@@ -20,7 +20,7 @@ Starting in UMDF version 1.11, the framework provides a set of routines to acces
 
 This example shows how to write to a memory-mapped register.
 
-```
+```cpp
 VOID
 CMyQueue::WriteToDevice(
     __in IWDFDevice3* pWdfDevice,

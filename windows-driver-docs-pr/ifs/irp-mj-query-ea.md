@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_QUERY\_EA
+title: IRP_MJ_QUERY_EA
 description: IRP\_MJ\_QUERY\_EA
 ms.assetid: 5d60a6e9-e940-44cf-844b-86837b36237a
 keywords: ["IRP_MJ_QUERY_EA Installable File System Drivers"]

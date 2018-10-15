@@ -26,7 +26,7 @@ The I/O manager does no validation whatsoever for METHOD\_NEITHER IOCTLs and FSC
 
 In the following example, the driver assumes that the value passed in the **Type3InputBuffer** represents a valid address.
 
-```
+```cpp
    case IOCTL_GET_HANDLER:
    {
       PULONG EntryPoint;
@@ -40,7 +40,7 @@ In the following example, the driver assumes that the value passed in the **Type
 
 The following code avoids this problem:
 
-```
+```cpp
    case IOCTL_GET_HANDLER:
    {
       PULONG_PTR EntryPoint;
@@ -72,7 +72,7 @@ Note also that the correct code casts **DriverEntryPoint** to a ULONG\_PTR, inst
 
 Often drivers embed pointers within buffered requests, as in the following example:
 
-```
+```cpp
    struct ret_buf
    {
       void  *arg;  // Pointer embedded in request

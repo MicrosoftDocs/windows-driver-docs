@@ -44,7 +44,7 @@ You can create a default font substitution table by using a series of \*TTFS ent
 
 where *FontName* is a symbol specifying the entry name, *TTFontNameString* is a text string identifying the TrueType font to be replaced, and *DeviceFontNameString* is a text string identifying the hardware-resident or cartridge font to be used. Following is an example table:
 
-```
+```cpp
 *TTFS: Arial
 {
     *TTFontName: "Arial"
@@ -91,7 +91,7 @@ The \*TTFSEnable? entry is relocatable, but \*TTFS entries are not. (For informa
 
 A default table of TrueType font substitutions is provided in the file named ttfsub.gpd. To use it, add the following entry at the GPD file's root level (that is, not within braces):
 
-```
+```cpp
 *Include: "ttfsub.gpd"
 ```
 

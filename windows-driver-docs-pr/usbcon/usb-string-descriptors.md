@@ -26,7 +26,7 @@ Because the string descriptor consists of variable-length data, the driver must 
 
 The following code demonstrates how to request the *i*-th string descriptor, with language ID *langID*:
 
-```
+```cpp
 USB_STRING_DESCRIPTOR USD, *pFullUSD;
 UsbBuildGetDescriptorRequest(
     pURB, // points to the URB to be filled in

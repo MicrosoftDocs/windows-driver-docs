@@ -16,17 +16,13 @@ ms.localizationpriority: medium
 
 This function is reserved for system use.
 
-
-
-
-
 The device failed to start.
 
-### Error Code
+## Error Code
 
 10
 
-### Display Message (Windows 2000 and later versions of Windows)
+### Display Message
 
 If the device's hardware key contains a "FailReasonString" value, the value string is displayed as the error message. (A driver or enumerator supplies this registry string value.) If the hardware key does not contain a "FailReasonString" value, the following generic error message is displayed:
 
@@ -34,17 +30,8 @@ If the device's hardware key contains a "FailReasonString" value, the value stri
 
 "Try upgrading the device drivers for this device."
 
-### Recommended Resolution (Windows 2000 and later versions of Windows)
+### Recommended Resolution
 
 Select **Update Driver**, which starts the Hardware Update wizard.
 
 This error code is set when one of the drivers in the device's driver stack fails IRP_MN_START_DEVICE. If there are many drivers in the stack, it can be difficult to determine the one that failed.
-
- 
-
- 
-
-
-
-
-

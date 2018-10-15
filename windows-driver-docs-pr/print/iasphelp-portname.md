@@ -83,7 +83,7 @@ Remarks
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::PortName** property can be queried.
 
-```
+```cpp
     Dim objPrinter, PtrPortName
     strPrinter = Session("MS_printer")
     Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
@@ -111,7 +111,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Iasphelp::Open**](iasphelp-open.md)

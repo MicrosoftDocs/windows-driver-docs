@@ -34,7 +34,7 @@ This screenshot shows the SDT running after the SpbAccelerometer sample driver a
 
 ![sensors diagnostic tool](images/sdt2.png)
 
-For more information about using the SDT, see to the [Sensor Driver Documentation](https://docs.microsoft.com/en-us/windows-hardware/drivers/sensors/).
+For more information about using the SDT, see to the [Sensor Driver Documentation](https://docs.microsoft.com/windows-hardware/drivers/sensors/).
 
  
 

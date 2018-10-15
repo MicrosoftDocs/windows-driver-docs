@@ -56,7 +56,7 @@ The macro is defined as follows:
 
 Here is an example from the Toaster sample (toaster\\func\\featured\\wmi.c). In the example, the driver calls **WDF_PTR_ADD_OFFSET** to add an offset to an address to determine a destination buffer address to pass to the [**WDF_WMI_BUFFER_APPEND_STRING**](https://msdn.microsoft.com/library/windows/hardware/ff553057) function.
 
-```
+```cpp
         //
         // Write the instance name
         //

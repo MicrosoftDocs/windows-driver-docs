@@ -56,10 +56,9 @@ To write a filter driver that handles charging through proprietary chargers, you
 <p>Understand the behavior of UFX, how it interacts with the client driver, and the features that the client driver is expected to implement.</p>
 <p>[Tasks for a function controller client driver](function-client-driver.md)</p>
 <p><strong>Programming reference sections</strong></p>
-<p>[User mode services to UFX programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188014)</p>
-<p>[USB function class driver to UFX programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188008)</p>
-<p>[USB function controller client driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188010)</p>
-<p>[USB filter driver for supporting proprietary chargers](https://msdn.microsoft.com/library/windows/hardware/mt188012)</p></td>
+<p>[USB function class driver to UFX programming reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#function-class-driver-reference)</p>
+<p>[USB function controller client driver programming reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#usb-function-controller-client-driver-reference)</p>
+<p>[USB filter driver for supporting proprietary chargers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#filter-driver-for-supporting-usb-chargers)</p></td>
 </tr>
 </tbody>
 </table>

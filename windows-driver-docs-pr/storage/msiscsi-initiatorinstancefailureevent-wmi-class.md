@@ -17,7 +17,7 @@ Because this class is associated with a particular instance of a storage minipor
 
 The MSiSCSI\_InitiatorInstanceFailureEvent class is defined in *Mgmt.mof*.
 
-```
+```cpp
 class MSiSCSI_InitiatorInstanceFailureEvent : WMIEvent {
   [read,key] String  InstanceName;
   [read] boolean  Active;

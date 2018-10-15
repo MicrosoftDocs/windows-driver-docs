@@ -32,7 +32,7 @@ To participate in error source control, a PSHED plug-in must implement the follo
 
 The following code example shows how to implement these callback functions.
 
-```
+```cpp
 //
 // The PSHED plug-in&#39;s SetErrorSourceInfo callback function
 //

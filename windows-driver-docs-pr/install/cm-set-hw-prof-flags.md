@@ -17,13 +17,3 @@ ms.localizationpriority: medium
 # CM_Set_HW_Prof_Flags
 
 This function is reserved for system use.
-
-
- 
-
- 
-
-
-
-
-

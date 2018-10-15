@@ -29,7 +29,7 @@ After the driver manager starts the driver host process for the device, you can 
 
 -   If a single device is attached, run the following command:
 
-    ```
+    ```cpp
     windbg -pn WUDFHost.exe
     ```
 
@@ -37,7 +37,7 @@ After the driver manager starts the driver host process for the device, you can 
 
 -   If multiple devices are attached, determine the process identifier (PID) of a particular host and run the following command:
 
-    ```
+    ```cpp
     windbg -p PID
     ```
 

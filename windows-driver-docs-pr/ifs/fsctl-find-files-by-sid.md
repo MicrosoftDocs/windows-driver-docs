@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_FIND\_FILES\_BY\_SID control code
+title: FSCTL_FIND_FILES_BY_SID control code
 description: The FSCTL\_FIND\_FILES\_BY\_SID control code searches a directory for a file whose creator and owner matche the specified SID.
 ms.assetid: fe0953d3-a009-431b-b03b-5d827dc732a1
 keywords: ["FSCTL_FIND_FILES_BY_SID control code Installable File System Drivers"]
@@ -38,7 +38,7 @@ A control code for the operation. Use FSCTL\_FIND\_FILES\_BY\_SID for this opera
 <a href="" id="inputbuffer"></a>*InputBuffer*  
 A pointer to an input buffer that is described by the FIND\_BY\_SID\_DATA structure. The FIND\_BY\_SID\_DATA structure is defined as follows:
 
-```
+```cpp
 typedef struct {
   DWORD  ;
   SID  ;
@@ -59,7 +59,7 @@ The length, in bytes, of the buffer at *InputBuffer*.
 <a href="" id="outputbuffer"></a>*OutputBuffer*  
 A pointer to a caller-allocated array of quad-aligned FIND\_BY\_SID\_OUTPUT structures that receive the fully qualified path names for each file. The FIND\_BY\_SID\_OUTPUT structure is defined as follows:
 
-```
+```cpp
 typedef struct _FIND_BY_SID_OUTPUT {
   DWORD  ;
   DWORD  ;

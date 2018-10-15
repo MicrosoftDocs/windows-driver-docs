@@ -37,7 +37,7 @@ The Windows DDK ships with an example INF that installs scanning functionality i
 
     The INF for your device must have an [**INF DDInstall.CoInstallers Section**](https://msdn.microsoft.com/library/windows/hardware/ff547321) to be able to register the co-installer for device installation. This section should appear similar to the following:
 
-    ```
+    ```INF
     [OEMMFP.GPD.CoInstallers]
     AddReg=WIA.CoInstallers.AddReg
 
@@ -47,7 +47,7 @@ The Windows DDK ships with an example INF that installs scanning functionality i
 
 2.  2.Include a **WIASection** entry in the [**INF DDInstall Section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) that refers to the section containing all of the WIA-related settings. The section containing the WIA-related settings must appear in the same INF file.
 
-    ```
+    ```INF
     [OEMMFP.GPD]
     CopyFiles=@OEMMFP.DLL,@OEMPRT1.DLL,@OEMUI.DLL,OEMMFP.GPD.WIA.CopyFiles
     WIASection=OEMMFP.GPD.WIA

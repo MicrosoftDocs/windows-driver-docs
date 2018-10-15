@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 The INF file also needs to set up registry entries in the section selected by the AddReg entry of the install section. For devices requiring a minidriver, the following need to be set up to make sure that the driver is properly associated with the multimedia system drivers:
 
-```
+```cpp
 HKR,,DevLoader,,mmdevldr.vxd
 HKR,Drivers,,,
 HKR,Drivers,MIGRATED,,0

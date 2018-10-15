@@ -36,7 +36,7 @@ If the driver calls [**WdfRequestCompleteWithInformation**](https://msdn.microso
 
 These steps are illustrated in the following code example, taken from the [PLX9x5x](http://go.microsoft.com/fwlink/p/?linkid=256157) sample’s [*EvtInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/ff541721) callback function in the *Isrdpc.c* file:
 
-```
+```cpp
 if (readComplete) {
     BOOLEAN              transactionComplete;
     WDFDMATRANSACTION    dmaTransaction;

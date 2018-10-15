@@ -24,7 +24,7 @@ To remain backward compatible with older implementations, NDIS supports processo
 
 To support more than 64 processors, NDIS 6.20 and later provide updated versions of these interfaces:
 
--   [Receive Side Scaling (RSS)](https://msdn.microsoft.com/library/windows/hardware/ff567232)
+-   [Receive Side Scaling (RSS)](ndis-receive-side-scaling2.md)
 
 -   Processor information device driver interfaces (see [NDIS System Information Functions](https://msdn.microsoft.com/library/windows/hardware/ff564816))
 

@@ -37,7 +37,7 @@ The host can also obtain the device descriptor by sending an URB. This method on
 
 This code example shows a UsbBuildGetDescriptorRequest call that formats the buffer pointed to by pURB with the appropriate URB:
 
-```
+```cpp
 UsbBuildGetDescriptorRequest(
     pURB,                                                 // Points to the URB to be formatted
     sizeof(struct _URB_CONTROL_DESCRIPTOR_REQUEST),

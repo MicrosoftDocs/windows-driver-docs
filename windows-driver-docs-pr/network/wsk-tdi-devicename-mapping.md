@@ -65,12 +65,6 @@ To map combinations of address family, socket type, and protocol to device names
 </tbody>
 </table>
 
- 
-
-```
-
-```
-
 For more information about using TDI transports, see [Using TDI Transports](https://msdn.microsoft.com/library/windows/hardware/ff571015).
 
 The *Irp* parameter must be **NULL** for this client control operation.

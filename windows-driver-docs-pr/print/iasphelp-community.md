@@ -85,7 +85,7 @@ If the printer is not supported by the TCP/IP port monitor, the returned string 
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::Community** property can be queried.
 
-```
+```cpp
     Dim objPrinter, CommName
     strPrinter = Session("MS_printer")
     Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
@@ -113,7 +113,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Iasphelp::Open**](iasphelp-open.md)

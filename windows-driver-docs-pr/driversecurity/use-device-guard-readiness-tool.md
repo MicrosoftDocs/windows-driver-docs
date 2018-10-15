@@ -108,7 +108,7 @@ To use Device Guard Readiness Tool, complete the following steps:
 
     Alternatively, there is also a WMI interface for checking using management tools that can be used to display information in PowerShell.
 
-    ```
+    ```cpp
     Get-CimInstance –ClassName Win32_DeviceGuard –Namespace root\Microsoft\Windows\DeviceGuard
     ```
 
@@ -118,7 +118,7 @@ To use Device Guard Readiness Tool, complete the following steps:
 
     *Optionaly Enable Test Signing* - To allow for the installation of unsigned development drivers, you may want to enable test signing using BCDEdit.
 
-    ```
+    ```cpp
     bcdedit /set TESTSIGNING ON 
     ```
 
@@ -147,7 +147,7 @@ To use Device Guard Readiness Tool, complete the following steps:
 
     If Execution-Policy is not already set to allow running script, then you should manually set it as shown here.
 
-    ```
+    ```cpp
     Set-ExecutionPolicy Unrestricted
     ```
 
@@ -157,7 +157,7 @@ To use Device Guard Readiness Tool, complete the following steps:
 
     2. Run the Readiness Tool to enable HVCI.
 
-    ```
+    ```cpp
     DG_Readiness_Tool.ps1 -Enable HVCI
     ```
 
@@ -167,7 +167,7 @@ To use Device Guard Readiness Tool, complete the following steps:
 
     1. Run the Readiness Tool to evaluate the ability of the drivers to support HVCI.
 
-    ```
+    ```cpp
     DG_Readiness_Tool.ps1 -Capable HVCI
     ```
 
@@ -187,7 +187,7 @@ To use Device Guard Readiness Tool, complete the following steps:
 
     There are five steps (or sections) in the output of the Device Guard Readiness Tool. Step 1 contains the is the driver compatibility information.
 
-    ```
+    ```cpp
      ====================== Step 1 Driver Compat ====================== 
     ```
 
@@ -195,7 +195,7 @@ To use Device Guard Readiness Tool, complete the following steps:
 
     Locate the "InCompatible HVCI Kernel Driver Modules" section shown below, towards the end of the log.
 
-    ```
+    ```cpp
     InCompatible HVCI Kernel Driver Modules found
 
     Module: TestDriver1.sys
@@ -208,7 +208,7 @@ To use Device Guard Readiness Tool, complete the following steps:
 
     The statistics for the seven types of device driver incompatibilities are also available using the !verifier debugger extension. For more information on the !verifier extension, see [**!verifier**](https://msdn.microsoft.com/library/windows/hardware/ff565591).
 
-    ```
+    ```cpp
             Execute Pool Type Count:                3
             Execute Page Protection Count:          0
             Execute Page Mapping Count:             0
@@ -291,7 +291,7 @@ Unsupported Relocs
 
 
 
-```
+```cpp
 #include <pshpack1.h>
 
 typedef struct _BAD_STRUCT {
@@ -357,7 +357,7 @@ There are other situations involving the use of assembler code, where this issue
 
 Below is the list of Regkeys and their values for customization of the script to Device Guard and Credential Guard without UEFI Lock.
 
-```
+```cpp
 For RS1 and RS2 – to enable HVCI and CG without UEFI Lock:
 &#39;REG ADD "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f&#39; 
 &#39;REG ADD "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f&#39; 
@@ -367,14 +367,14 @@ For RS1 and RS2 – to enable HVCI and CG without UEFI Lock:
 
 Use the Driver Verifier code integrity option flag (0x02000000) to enable extra checks that validate compliance with this feature. To enable this from the command line, use the following command.
 
-```
+```cpp
 verifier.exe /flags 0x02000000 /driver <driver.sys>
 ```
 To choose this option if using the verifier GUI, select *Create custom settings* (for code developers), select *Next*, and then select _Code integrity checks_.
 
 You can use the verifier command line /query option to display the current driver verifier information.
 
-```
+```cpp
 verifier /query 
 ```
 

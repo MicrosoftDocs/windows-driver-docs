@@ -32,7 +32,7 @@ To provide customized halftoning capabilities, you must do the following:
 
 The following example defines two color formats and four halftoning methods. The example uses [option constraints](option-constraints.md) to specify which halftoning methods Unidrv should allow a user to select for each color format.
 
-```
+```cpp
 *Feature: ColorMode
 {
     *Option: ColorFormat1

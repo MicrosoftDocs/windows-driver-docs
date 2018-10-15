@@ -52,13 +52,13 @@ Examples
 
 The following code example calls the **WDF_DECLARE_CUSTOM_TYPE** macro to declare the MY_CUSTOM_TYPE custom type name. The driver must put this line in an area of the driver that declares global data, typically a header file.
 
-```
+```cpp
 WDF_DECLARE_CUSTOM_TYPE(MY_CUSTOM_TYPE)
 ```
 
 The following code example creates a request object, and then it uses the [**WdfObjectAddCustomType**](wdfobjectaddcustomtype.md) method to associate the **MY_CUSTOM_TYPE** custom type with the request object.
 
-```
+```cpp
 WDFREQUEST Request;
 WDF_OBJECT_ATTRIBUTES MyRequestObjectAttributes;
 

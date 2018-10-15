@@ -47,7 +47,7 @@ To use this method, you need to first do the following:
 
 | Method | Request URI                                                          |
 |--------|----------------------------------------------------------------------|
-| GET    | ```https://manage.devcenter.microsoft.com/v1.0/my/analytics/driver/cabdownload``` |
+| GET    | `https://manage.devcenter.microsoft.com/v1.0/my/analytics/driver/cabdownload` |
 
 
 ### Request header
@@ -80,5 +80,5 @@ This method returns a 302 (redirect) response code, and the **Location** header 
 
 ## Related topics
 
-* [Get error reporting data for Windows 10 drivers](get-error-reporting-data-for-windows-10-drivers.md)
-* [Get details for a Windows 10 driver error](get-details-for-a-windows-10-driver-error.md)
+- [Get error reporting data for Windows 10 drivers](get-error-reporting-data-for-windows-10-drivers.md)
+- [Get details for a Windows 10 driver error](get-details-for-a-windows-10-driver-error.md)

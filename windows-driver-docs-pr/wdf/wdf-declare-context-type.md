@@ -50,7 +50,7 @@ Examples
 
 The following code example defines a context structure (MY_REQUEST_CONTEXT) for a request object, registers the structure, and then invokes the WDF_DECLARE_CONTEXT_TYPE macro. The macro creates an accessor method for the context structure and names the method **WdfObjectGet_MY_REQUEST_CONTEXT**.
 
-```
+```cpp
 typedef struct _MY_REQUEST_CONTEXT {
   LIST_ENTRY ListEntry;
   WDFMEMORY Memory;
@@ -61,7 +61,7 @@ WDF_DECLARE_CONTEXT_TYPE(MY_REQUEST_CONTEXT)
 
 The following code example creates a request object, and then it uses the **WdfObjectGet_MY_REQUEST_CONTEXT** accessor method to obtain a pointer to the object's context space.
 
-```
+```cpp
 WDFREQUEST Request;
 WDF_OBJECT_ATTRIBUTES MyRequestObjectAttributes;
 PMY_REQUEST_CONTEXT pMyContext;

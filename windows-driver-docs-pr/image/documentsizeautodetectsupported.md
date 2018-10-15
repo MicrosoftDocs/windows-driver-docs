@@ -25,7 +25,7 @@ The required **DocumentSizeAutoDetectSupported** element indicates whether the s
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:DocumentSizeAutoDetectSupported>
   text
 </wscn:DocumentSizeAutoDetectSupported>
@@ -72,7 +72,7 @@ If the scan device can detect the size of the original media, the WSD Scan Servi
 
 You cannot extend the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DeviceSettings**](devicesettings.md)

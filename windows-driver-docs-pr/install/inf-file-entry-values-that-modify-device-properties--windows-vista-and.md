@@ -49,7 +49,7 @@ Many system-defined device properties have corresponding system-defined registry
 
 For example, the following **AddReg** directive would set the **DeviceCharacteristics** registry entry value and the corresponding DEVPKEY_Device_Characteristics property for a device instance that is installed by the "Abc_Device_Install.HW" section.
 
-```
+```cpp
 [Abc_Device_Install.HW]
 ...
 AddReg = Xxx_AddReg

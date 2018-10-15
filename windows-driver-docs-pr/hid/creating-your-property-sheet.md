@@ -21,7 +21,7 @@ Creating a custom property sheet from scratch is a relatively simple process.
 
 1.  Create a GUID to identify your property page:
     -   Using the GuidGen tool (which is included in the Microsoft Windows SDK), create a GUID for your property page (only one, no matter how many pages). Define this in your application-specific include file. It should look something like:
-        ```
+        ```cpp
         
         ```
 

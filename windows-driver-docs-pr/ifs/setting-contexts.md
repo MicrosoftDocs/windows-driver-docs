@@ -28,7 +28,7 @@ If the *Operation* parameter is set to FLT\_SET\_CONTEXT\_REPLACE\_IF\_EXISTS, *
 
 In the following code example, taken from the CTX sample minifilter driver, the **CtxInstanceSetup** routine creates and sets an instance context:
 
-```
+```cpp
 status = FltAllocateContext(
            FltObjects->Filter,           //Filter
            FLT_INSTANCE_CONTEXT,         //ContextType

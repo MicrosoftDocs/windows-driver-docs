@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_ENUM\_EXTERNAL\_BACKING control code
+title: FSCTL_ENUM_EXTERNAL_BACKING control code
 description: The FSCTL\_ENUM\_EXTERNAL\_BACKING control code begins or continues an enumeration of files on a volume that have a backing source.
 ms.assetid: 86B07858-2F10-48EF-AEB5-7F4A23A55F7F
 keywords: ["FSCTL_ENUM_EXTERNAL_BACKING control code Installable File System Drivers"]

@@ -39,7 +39,7 @@ where *CommandName* is one of the predefined [command names](command-names.md), 
 
 For example, a GPD file might contain the following specification of the CmdStartPage command, which initializes a page for printing.
 
-```
+```cpp
 *Command: CmdStartPage
 {
     *Order: PAGE_SETUP.100
@@ -66,7 +66,7 @@ where *CommandString* is a text string representing a printer command escape seq
 
 For example, a GPD file might contain the following specification of the CmdBoldOn command, which turns on bold text:
 
-```
+```cpp
 *Command: CmdBoldOn: "<1B>(s3B"
 ```
 

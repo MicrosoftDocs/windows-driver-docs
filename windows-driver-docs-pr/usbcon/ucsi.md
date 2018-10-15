@@ -32,12 +32,12 @@ ms.localizationpriority: medium
 -   [USB Type-C Connector System Software Interface Specification](http://go.microsoft.com/fwlink/p/?LinkId=703713)
 -   [Hardware design: USB Type-C components for systems with embedded controllers](hardware-design-of-a-usb-type-c-system.md#emb)
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
 
-Microsoft provides a USB Type-C Connector System Software Interface (UCSI) Specification-compliant driver. If your design includes an embedded controller, implement UCSI in your system's BIOS/EC and load the in-box UCSI driver (UcmUcsi.sys). Otherwise, you need to [write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md).
+Microsoft provides a USB Type-C Connector System Software Interface (UCSI) Specification-compliant driver for ACPI transport. If your design includes an embedded controller with ACPI transport, implement UCSI in your system's BIOS/EC and load the in-box UCSI driver (UcmUcsi.sys and UcmUcsiAcpiClient.sys).
+
+If your UCSI-compliant hardware uses a transport other than ACPI, you need to [write a UCSI client driver](write-a-ucsi-driver.md).
 
 ## Drivers for supporting USB Type-C components for systems with embedded controllers
-
 
 Here is an example of a system with an embedded controller.
 
@@ -85,6 +85,7 @@ In addition to the commands marked as "Required", Windows requires these command
     -   Negotiated Power Level Change
 
 For information about the tasks required to implement UCSI in the BIOS, see [Intel BIOS Implementation of UCSI](http://go.microsoft.com/fwlink/p/?LinkId=760658).
+
 ## Example flow for UCSI
 
 
@@ -113,7 +114,7 @@ The examples given in this section describe interaction between the USB Type-C h
 ## How to test UCSI
 
 
-There are a number of ways to test your UCSI implementation. To test individual commands in your UCSI BIOS/EC implementation, use UCSIControl.exe, which is provided in the[MUTT Software Pack](mutt-software-package.md). To test your complete UCSI implementation, use both the UCSI tests that can be found in the Windows Hardware Lab Kit (HLK) and the steps in the [Type-C Manual Interop Procedures](https://msdn.microsoft.com/library/windows/hardware/mt422725).
+There are a number of ways to test your UCSI implementation. To test individual commands in your UCSI BIOS/EC implementation, use UCSIControl.exe, which is provided in the [MUTT Software Pack](mutt-software-package.md). To test your complete UCSI implementation, use both the UCSI tests that can be found in the Windows Hardware Lab Kit (HLK) and the steps in the [Type-C Manual Interop Procedures](https://msdn.microsoft.com/library/windows/hardware/mt422725).
 
 **UCSIControl.exe**
 

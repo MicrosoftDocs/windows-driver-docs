@@ -62,7 +62,7 @@ In addition to altering the bounds values, the display driver sets the OC\_BANK\
 
 GDI must also be made to draw with reference to the beginning of the standard frame buffer. When called to draw, GDI simply gets a pointer to a SURFOBJ, which includes the **pvScan0**, **lDelta**, and **iBitmapFormat** members. GDI calculates where to draw on the surface by using these values as follows:
 
-```
+```cpp
 start_draw_point = pvScan0 + (y*lDelta) + (x*PixelSize(iBitmapFormat))
 ```
 

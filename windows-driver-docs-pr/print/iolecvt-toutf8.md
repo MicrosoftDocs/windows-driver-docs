@@ -83,7 +83,7 @@ UTF-8 is an alternative coded-representation form for all of the characters of t
 
 In the following example, function **Write** returns a string converted to UTF-8 format, provided that the global variable `bUTF8` is **TRUE**. Otherwise **Write** returns the unmodified string.
 
-```
+```cpp
     Function Write (strUnicode)
         If bUTF8 Then
             Write = OleCvt.ToUtf8 (strUnicode)

@@ -28,7 +28,7 @@ To enable HP-GL/2 vector support on Windows XP, you must do two things:
 
 You can set the personality attribute in this way:
 
-```
+```cpp
 *Personality: =PERSONALITY_HPGL2
 ```
 
@@ -36,7 +36,7 @@ The PERSONALITY\_HPGL2 constant is defined in stdnames.gpd.
 
 The following GPD example demonstrates setting the \***Personality** attribute and defining a GraphicsMode customized feature with both a vector graphics mode, as well as a raster graphics mode. Note that the entire block is guarded by an \*Ifdef GPD compiler directive.
 
-```
+```cpp
 *Ifdef: WINNT_51
 *Personality: =PERSONALITY_HPGL2
 *Feature: GraphicsMode
@@ -61,7 +61,7 @@ The WINNT\_51 parameter used in the above directive applies to versions of Unidr
 
 A GPD file for a color printer should also define a ColorMode feature, as shown in the following generic sample. Note that specific details of your printer might require changes to certain values.
 
-```
+```cpp
 *Feature: ColorMode
 {
   *rcNameID: =COLOR_PRINTING_MODE_DISPLAY

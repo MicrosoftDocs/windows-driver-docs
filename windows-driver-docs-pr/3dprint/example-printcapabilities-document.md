@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The keywords used in the following example are for illustration only, although they generally conform to the Print Schema keywords for 3D manufacturing.
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <psf:PrintCapabilities
     xmlns:psf="http://schemas.microsoft.com/windows/2003/08/printing/printschemaframework"

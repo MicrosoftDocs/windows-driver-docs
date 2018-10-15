@@ -20,7 +20,7 @@ To make the contents of the core driver package accessible to the PnP installer,
 
 The following example shows how to use the **expand** command, which should be executed in the directory that contains the MSU file:
 
-```
+```cpp
 expand Windows6.0-KB123456-x86.MSU [dest directory] -F:*
 expand Windows6.0-KB123456-x86.CAB [dest directory] -F:*
 ```

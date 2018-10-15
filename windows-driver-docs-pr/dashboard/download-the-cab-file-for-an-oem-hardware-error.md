@@ -47,7 +47,7 @@ To use this method, you need to first do the following:
 
 | Method | Request URI                                                          |
 |--------|----------------------------------------------------------------------|
-| GET    | ```https://manage.devcenter.microsoft.com/v1.0/my/analytics/hardware/cabdownload``` |
+| GET    | `https://manage.devcenter.microsoft.com/v1.0/my/analytics/hardware/cabdownload` |
 
 
 ### Request header
@@ -79,5 +79,5 @@ This method returns a 302 (redirect) response code, and the **Location** header 
 
 ## Related topics
 
-* [Get OEM hardware error reporting data](get-oem-hardware-error-reporting-data.md)
-* [Get details for an OEM hardware error](get-details-for-an-oem-hardware-error.md)
+- [Get OEM hardware error reporting data](get-oem-hardware-error-reporting-data.md)
+- [Get details for an OEM hardware error](get-details-for-an-oem-hardware-error.md)

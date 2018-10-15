@@ -30,7 +30,7 @@ If you're looking for info about UWP mobile broadband apps, see [Mobile Broadban
 
 To develop a UWP device app: you need Microsoft Visual Studio, for developing UWP apps, and the Device Metadata Authoring Wizard, for developing device metadata.
 
-**Note**  To develop UWP device apps in Windows 10, download Microsoft Visual Studio 2015 and Windows Driver Kit (WDK) 10. [Become a Windows Insider to get kits and tools](http://go.microsoft.com/fwlink/p/?LinkId=526775)
+**Note**  To develop UWP device apps in Windows 10, download Microsoft Visual Studio 2017 and Windows Driver Kit (WDK) 10. [Become a Windows Insider to get kits and tools](http://go.microsoft.com/fwlink/p/?LinkId=526775)
 
  
 

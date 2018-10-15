@@ -53,7 +53,7 @@ Specifies the registry value type for *ValueName*. *Type* is an integer that cor
 
 The following example shows a one-to-many device ID mapping:
 
-```
+```cpp
 [OemAdapters]
 DATAFIREU=0, DATAFIREU
 

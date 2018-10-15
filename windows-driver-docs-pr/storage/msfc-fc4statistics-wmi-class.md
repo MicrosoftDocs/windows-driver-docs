@@ -15,7 +15,7 @@ An HBA miniport driver that supports the T11 committee's *Fibre Channel HBA API*
 
 The MSFC\_FC4STATISTICS class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MSFC_FC4STATISTICS {
   [WmiDataId(1)] uint64  InputRequests;
   [WmiDataId(2)] uint64  OutputRequests;

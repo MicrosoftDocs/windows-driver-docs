@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 Add entries to the GDL file for any hard drive-related features in your GPD file. For example, if you have a Collate feature that depends on whether a hard drive is installed, you can use autoconfiguration to automatically determine whether the printer is able to collate. Consider the following code example from a GPD file.
 
-```
+```GPD
 *% Printer supports collation only if PrinterHardDisk is installed
 *Feature: Collate
 {
@@ -94,7 +94,7 @@ Add entries to the GDL file for any hard drive-related features in your GPD file
 
 To automatically detect whether a hard disk is installed, and enable or disable collating accordingly, simply add the following code example to the GDL file.
 
-```
+```GDL
 *%The GDL parser merges this code with the corresponding feature construct in the GPD file
 *Feature: PrinterHardDisk
 {

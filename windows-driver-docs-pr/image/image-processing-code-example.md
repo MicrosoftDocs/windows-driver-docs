@@ -23,7 +23,7 @@ The following code example shows how to implement a simple image processing filt
 
  
 
-```
+```cpp
 ///
 ///  Constructor
 ///

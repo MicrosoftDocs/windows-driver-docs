@@ -19,7 +19,7 @@ Charges the main battery to the specified target level with a maximum charge cur
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef EFI_STATUS (EFIAPI * EFI_BATTERY_CHARGING_CHARGE_BATTERY) (
     IN EFI_BATTERY_CHARGING_PROTOCOL *This,
     IN UINT32 MaximumCurrent, 
@@ -89,12 +89,10 @@ To detect errors, the event type contained in *CompletionToken* must be EVT\_NOT
 
 ## Requirements
 
-
 **Header:** User generated
 
 ## Related topics
+
 [EFI\_BATTERY\_CHARGING\_PROTOCOL](efi-battery-charging-protocol.md)  
+
 [EFI\_BATTERY\_CHARGING\_COMPLETION\_TOKEN](efi-battery-charging-completion-token.md)  
-
-
-

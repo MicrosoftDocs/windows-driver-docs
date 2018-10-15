@@ -22,7 +22,7 @@ A user-mode application can inject a hardware error into the hardware platform b
 
 The following code example shows how to inject a hardware error.
 
-```
+```cpp
 IWbemServices *pIWbemServices;
 ULONG ErrorType;
 BSTR ClassName;

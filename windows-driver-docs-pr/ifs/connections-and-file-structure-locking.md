@@ -150,7 +150,7 @@ A network mini-redirector should have an exclusive lock on the NetName table in 
 
 To execute a Create on one of these data structures, a network mini-redirector driver should do something similar to the following:
 
-```
+```cpp
     getshared();lookup();
     if (failed) {
         release(); getexclusive(); lookup();

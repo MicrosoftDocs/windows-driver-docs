@@ -17,7 +17,7 @@ Because this class is associated with a particular instance of a storage minipor
 
 The MSiSCSI\_HBASessionConfig class is defined as follows in *Mgmt.mof*.
 
-```
+```cpp
 class MSiSCSI_HBASessionConfig {
   [key] string  InstanceName;
   boolean  Active;

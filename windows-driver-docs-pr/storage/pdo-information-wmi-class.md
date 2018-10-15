@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 An MPIO driver uses the PDO\_INFORMATION WMI class to identify the device-to-path mapping of a physical device.
 
-```
+```cpp
 class PDO_INFORMATION
 {
 

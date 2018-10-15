@@ -102,9 +102,9 @@ You can verify that WDTF was installed correctly by running a command script on 
 
 ## How to uninstall the WDTF runtime library
 
-When you set up a test computer for deployment, following the instructions [Provision a computer for driver deployment and testing (WDK 10)](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1), the WDTF runtime library is installed on the target computer.
+When you set up a test computer for deployment, following the instructions [Provision a computer for driver deployment and testing (WDK 10)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1), the WDTF runtime library is installed on the target computer.
 
-You can remove the WDTF runtime library by removing provisioning from the target computer. For more information, see [Removing provisioning from the target computer](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/what-happens-when-you-provision-a-computer--wdk-8-1-#span-idremovingprovisioningfromthetargetcomputerspanspan-idremovingprovisioningfromthetargetcomputerspanspan-idremovingprovisioningfromthetargetcomputerspanremoving-provisioning-from-the-target-computer).
+You can remove the WDTF runtime library by removing provisioning from the target computer. For more information, see [Removing provisioning from the target computer](https://docs.microsoft.com/windows-hardware/drivers/develop/what-happens-when-you-provision-a-computer--wdk-8-1-#span-idremovingprovisioningfromthetargetcomputerspanspan-idremovingprovisioningfromthetargetcomputerspanspan-idremovingprovisioningfromthetargetcomputerspanremoving-provisioning-from-the-target-computer).
 
 You can also uninstall the WDTF runtime library manually.
 

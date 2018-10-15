@@ -21,7 +21,7 @@ The ACPI\_METHOD\_ARGUMENT\_LENGTH macro calculates the size, in bytes, of a var
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 void ACPI_METHOD_ARGUMENT_LENGTH(
     DataLength
 );

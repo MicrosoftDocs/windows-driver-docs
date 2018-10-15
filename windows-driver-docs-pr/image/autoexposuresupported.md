@@ -25,7 +25,7 @@ The required **AutoExposureSupported** element specifies whether the scan device
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:AutoExposureSupported>
   text
 </wscn:AutoExposureSupported>
@@ -74,7 +74,7 @@ If the scan device supports automatic adjustment of various [**Exposure**](expos
 
 You cannot extend the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DeviceSettings**](devicesettings.md)

@@ -108,7 +108,7 @@ The User Mode Monitor surfaces 'events' that can apply one of the 'actions' that
 
 In order to illustrate the use of the UMM functionality, let's take a look at a (slightly contrived) example of a test that automates 'MSPaint':
 
-```
+```cpp
 namespace UserModeMonitorExample
 {
     using System;

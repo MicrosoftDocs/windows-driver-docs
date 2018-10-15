@@ -27,7 +27,7 @@ For example, a kernel-mode client could use the following sample code to free a 
 Remarks
 -------
 
-```
+```cpp
 Method.Identifier.Set = KSMETHODSETID_StreamAllocator;
 Method.Identifier.Id = KSMETHOD_STREAMALLOCATOR_FREE;
 Method.Flags = KSMETHOD_TYPE_READ;

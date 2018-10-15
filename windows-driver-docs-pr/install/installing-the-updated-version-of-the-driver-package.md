@@ -17,13 +17,13 @@ After you [configure Windows to rank driver signatures equally](configuring-wind
 
 1.  Add the [driver package](driver-packages.md) to the driver store by using the [PnPUtil](https://msdn.microsoft.com/library/windows/hardware/ff550419) utility that is provided in Windows Vista and later versions of Windows. For example:
 
-    ```
+    ```cpp
     pnputil.exe -a  sample.inf
     ```
 
 2.  Use the DevCon Remove command to remove the device or device class that is installed by the updated driver package. The device or device class is specified through all or part of a [hardware ID](hardware-ids.md), [compatible ID](compatible-ids.md), or device instance ID of a device. For example:
 
-    ```
+    ```cpp
     devcon remove "PCI\VEN_8086&DEV_7110"
     ```
 

@@ -17,7 +17,7 @@ Because this class is associated with a particular instance of a storage minipor
 
 The MSiSCSI\_HBAInformation class is defined as follows in *Mgmt.mof*.
 
-```
+```cpp
 class MSiSCSI_HBAInformation {
   [key] string  InstanceName;
   boolean  Active;

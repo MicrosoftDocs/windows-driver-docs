@@ -25,7 +25,7 @@ The optional **JobCompletedTime** element specifies the time at which the scan j
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobCompletedTime>
   text
 </wscn:JobCompletedTime>
@@ -75,7 +75,7 @@ A scan job is *complete* when all processing has completed, either because scann
 
 The specified time refers to the internal clock of the scan device and does not need to be a real time clock.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**JobEndState**](jobendstate.md)

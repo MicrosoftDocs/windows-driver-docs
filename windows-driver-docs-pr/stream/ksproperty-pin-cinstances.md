@@ -64,7 +64,7 @@ Remarks
 
 This property returns a structure of type KSPIN\_CINSTANCES:
 
-```
+```cpp
 typedef struct {
     ULONG PossibleCount;
     ULONG CurrentCount;

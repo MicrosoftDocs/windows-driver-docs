@@ -36,7 +36,7 @@ An application can include activity ID GUIDs by calling [**EventActivityIdContro
 
 This example code shows how an application can set an activity ID GUID and send it to the ETW provider, a UMDF driver.
 
-```
+```cpp
 EventActivityIdControl(EVENT_ACTIVITY_CTRL_CREATE_ID, &activityIdStruct.ActivityId); 
 EventActivityIdControl(EVENT_ACTIVITY_CTRL_SET_ID,    &activityIdStruct.ActivityId); 
                 
@@ -80,7 +80,7 @@ A user-mode driver creates and sets activity ID GUIDs by calling [**EventActivit
 
 This example code shows how a UMDF driver sets the activity ID GUID that was created and specified by the application through an IOCTL.
 
-```
+```cpp
 VOID
 STDMETHODCALLTYPE
 CMyControlQueue::OnDeviceIoControl(

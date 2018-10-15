@@ -23,7 +23,7 @@ This section applies only to Windows 7 and later operating systems.
 
 The following code shows how to convert XR\_BIAS to float:
 
-```
+```cpp
 float XRtoFloat( UINT XRComponent ) {
 // The & 0x3ff shows that only 10 bits contribute to the conversion. 
  return (float)( (XRComponent & 0x3ff) - 0x180 ) / 510.f;

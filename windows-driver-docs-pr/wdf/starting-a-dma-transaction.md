@@ -31,7 +31,7 @@ Before your driver calls **WdfDmaTransactionExecute**, the driver must store the
 
 The following code example from the [PLX9x5x](http://go.microsoft.com/fwlink/p/?linkid=256157) sample shows how to initialize and then execute a DMA transaction. This code appears in the *Read.c* file.
 
-```
+```cpp
 VOID PLxEvtIoRead(
     IN WDFQUEUE         Queue,
     IN WDFREQUEST       Request,

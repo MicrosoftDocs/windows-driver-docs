@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 When the files in the driver package are uniquely named and do not occur in any other driver package, add a PrinterPackageInstallation section to the INF file. In that section, add the **PackageAware**=TRUE keyword as shown in line 23 of the following example:
 
-```
+```cpp
 [Version]
 Signature="$Windows NT$"
 ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}

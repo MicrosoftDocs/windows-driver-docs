@@ -30,7 +30,7 @@ where *CommentString* is any string of characters ending with a line terminator.
 
 The following are examples of valid comments:
 
-```
+```cpp
 *% This section of the GPD file
 *% contains macro definitions.
 *Macros: HP4L
@@ -61,7 +61,7 @@ where *IgnoredEntries* is a set of GPD file entries, containing an equal number 
 
 In the following example, the GPD parser ignores the GPD entries describing the LANDSCAPE\_CC90 option.
 
-```
+```cpp
 *Feature: Orientation
 {
     *Name: "Orientation"

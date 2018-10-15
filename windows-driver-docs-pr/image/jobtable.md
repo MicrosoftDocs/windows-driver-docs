@@ -25,7 +25,7 @@ The required **JobTable** element contains current and historical information ab
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobTable>
   child elements
 </wscn:JobTable>
@@ -68,7 +68,7 @@ Remarks
 
 The WSD Scan Service uses a **JobTable** element to track all current and finished scan jobs that are submitted to the WSD Scan Service. Current jobs are tracked in the [**ActiveJobs**](activejobs.md) child element; finished jobs are optionally tracked in the [**JobHistory**](jobhistory2.md) child element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ActiveJobs**](activejobs.md)

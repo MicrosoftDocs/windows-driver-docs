@@ -105,7 +105,7 @@ If the device is installed manually, the class installer creates the **CreateFil
 
  
 
-```
+```INF
      PortSelect=NO
 ```
 

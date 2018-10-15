@@ -51,7 +51,7 @@ Each device metadata package has its components compressed into a single file by
 
 The file name of the device metadata package uses the following naming convention:
 
-```
+```cpp
 <GUID>.devicemetadata-ms
 ```
 

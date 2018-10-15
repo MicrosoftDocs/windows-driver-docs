@@ -25,7 +25,7 @@ This topic contains sample code that demonstrates how to support autoupdate even
 
 Include the following code in the application source, arbitrarily named TestApp.cpp:
 
-```
+```cpp
 hEvent = CreateEvent(NULL, FALSE, FALSE, NULL);
 if (!hEvent)
 {

@@ -72,7 +72,7 @@ For example, if an emulated ActiveBoth pin is connected to a pushbutton device, 
 
 The following ASL code example identifies a set of GPIO pins that have initial polarity of ActiveHigh.
 
-```
+```asl
 //
 // _DSM - Device-Specific Method
 //

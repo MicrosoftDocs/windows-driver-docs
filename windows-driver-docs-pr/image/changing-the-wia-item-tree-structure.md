@@ -37,7 +37,7 @@ Because the WIA service verifies these criteria, it is not necessary for the WIA
 
 The following code example shows an implementation of **IWiaMiniDrv::drvDeleteItem**:
 
-```
+```cpp
 HRESULT _stdcall CWIADevice::drvDeleteItem(BYTE *pWiasContext,
                                            LONG lFlags,
                                            LONG *plDevErrVal)

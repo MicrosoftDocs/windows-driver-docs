@@ -27,7 +27,7 @@ For each object, generate a GUID for the class identifier (CLSID) and provide an
 
 The array must be named g\_Templates:
 
-```
+```cpp
 CFactoryTemplate g_Templates[] =
 {
     {
@@ -42,7 +42,7 @@ CFactoryTemplate g_Templates[] =
 
 Your property page should derive from the class [CBasePropertyPage](http://go.microsoft.com/fwlink/p/?linkid=106449) and should override several of the methods of **CBasePropertyPage**:
 
-```
+```cpp
 class CMyPropPage: public CBasePropertyPage
 {
 public:

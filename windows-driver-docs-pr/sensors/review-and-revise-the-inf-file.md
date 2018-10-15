@@ -32,7 +32,7 @@ Although you must review the INX file in its entirety, these steps will point ou
    ClassGuid   = {5175D334-C371-4806-B3BA-71FD53C9258D}
 ```
 
-Note that the device class is set to “sensor” and the appropriate GUID is provided. For more information about device class GUIDS for Windows, see [System-Defined Device Setup Classes Available to Vendors](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
+Note that the device class is set to “sensor” and the appropriate GUID is provided. For more information about device class GUIDS for Windows, see [System-Defined Device Setup Classes Available to Vendors](https://docs.microsoft.com/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
 
 2. Find the \[ADXL345Acc\_Device.NT$ARCH$\] section.
 ```cpp

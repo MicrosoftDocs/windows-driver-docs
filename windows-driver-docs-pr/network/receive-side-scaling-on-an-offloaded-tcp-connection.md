@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 
 
 
-An offload target can implement receive side scaling (RSS). For more information about RSS processing, see [NDIS 6.0 Receive-Side Scaling](https://msdn.microsoft.com/library/windows/hardware/ff567232).
+An offload target can implement receive side scaling (RSS). For more information about RSS processing, see [NDIS 6.0 Receive-Side Scaling](ndis-receive-side-scaling2.md).
 
 In standard RSS processing, the network interface card (NIC) calculates the RSS hash value for each incoming packet. An offload target, however, does not need to calculate an RSS hash value. Instead, the host stack calculates an RSS hash value for each TCP connection when that connection is established. When the host stack offloads a TCP connection to an offload target, the host stack supplies the RSS hash value for the connection. The RSS hash value is the value of the **HashValue** member of the [**TCP\_OFFLOAD\_STATE\_CONST**](https://msdn.microsoft.com/library/windows/hardware/ff570938) structure. The RSS hash value that is supplied by the host stack applies to all data that is received on the offloaded TCP connection.
 

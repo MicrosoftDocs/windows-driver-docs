@@ -85,7 +85,7 @@ The handler for this property obtains the list of paper forms by calling the pri
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::PaperNames** property can be queried.
 
-```
+```cpp
     Dim objPrinter, PaperNameArray
     strPrinter = Session("MS_printer")
     Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
@@ -113,7 +113,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DrvDeviceCapabilities**](https://msdn.microsoft.com/library/windows/hardware/ff548539)

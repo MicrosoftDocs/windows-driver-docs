@@ -25,7 +25,7 @@ The optional **CompressionQualityFactor** element specifies an idealized integer
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:CompressionQualityFactor wscn:MustHonor=""                               wscn:Override=""                               wscn:UsedDefault=""
   MustHonor = "xs:string"
   Override = "xs:string"
@@ -122,7 +122,7 @@ The WSD Scan Service can specify the optional **Override** and **UsedDefault** a
 
 You can subset the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)

@@ -82,13 +82,13 @@ Refer to the [Extension Unit Plug-In Architecture](extension-unit-plug-in-archit
 
 To register a UVC device under **KSCATEGORY\_SENSOR\_CAMERA**, the sensor camera promotion flag should be specified:
 
-```
+```INF
 HKR,,SensorCameraMode,0x00010001,0x00000001
 ```
 
 To hide this camera from a regular camera app because it has no RGB streams, use the skip enumeration flag as follows:
 
-```
+```INF
 HKR,,SkipCameraEnumeration,0x00010001,0x00000001
 ```
 
@@ -156,6 +156,3 @@ If the HLK tests listed above are not passed, Microsoft will not issue a signed 
 [Capture photos and video with MediaCapture](https://msdn.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-mediacapture)  
 
 [Windows.Media.Capture namespace](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.aspx)  
-
-
-

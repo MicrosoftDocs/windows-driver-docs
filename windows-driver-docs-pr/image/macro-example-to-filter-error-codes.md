@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The following macro example filters communication failure error codes.
 
-```
+```cpp
 //
 // Example of a macro to filter device communication errors
 //

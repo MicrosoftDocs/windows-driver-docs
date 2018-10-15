@@ -19,7 +19,7 @@ If referenced software fails to install, the system tries again when the referen
 
 An **AddSoftware** directive is used within an [**INF *DDInstall*.Software**](inf-ddinstall-software-section.md) section.
 
-```
+```cpp
 [DDInstall.Software]
 AddSoftware=SoftwareName,[flags],software-install-section
 ```
@@ -50,7 +50,7 @@ Each INF-writer-created section name must be unique within the INF file and must
 
 An **AddSoftware** directive must reference a named *software-install-section* elsewhere in the INF file.  Each such section has the following form:
 
-```
+```cpp
 [software-install-section]
 
 SoftwareType=type-code
@@ -105,7 +105,7 @@ The system replaces the string above with the device instance ID of the software
 
 For example:
 
-```
+```cpp
 	[DDInstall.Software]
 	AddSoftware=ContosoControlPanel,,Contoso_ControlPanel_Software
 
@@ -122,7 +122,7 @@ The above example results in a command line like this:
 
 If SoftwareArguments contains multiple arguments:
 
-```
+```cpp
 	SoftwareArguments=arg1,<<DeviceInstanceID>>,arg2
 ```
 

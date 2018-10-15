@@ -49,7 +49,7 @@ KSPROPERTY\_CAMERACONTROL\_EXTENDED\_VIDEOHDR is used to enable or disable high 
 
 The following flags can be placed in the KSCAMERA\_EXTENDEDPROP\_HEADER.Flags field to control video HDR. By default, driver should be set to VIDEOHDR\_OFF.
 
-``` syntax
+```cpp
 #define KSCAMERA_EXTENDEDPROP_VIDEOHDR_OFF      0x0000000000000000
 #define KSCAMERA_EXTENDEDPROP_VIDEOHDR_ON       0x0000000000000001 
 #define KSCAMERA_EXTENDEDPROP_VIDEOHDR_AUTO     0x0000000000000002 

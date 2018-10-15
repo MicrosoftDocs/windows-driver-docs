@@ -56,7 +56,7 @@ To generate the signature hash, run `C:\Windows\System32\certutil.exe -dump Cert
 
 Look for the signature hash near the bottom and ensure it's SHA256.  Otherwise, use a SHA256 cert to sign your app.  The result should look like this:
 
-```
+```cpp
 Signature Hash:
 ca9fc964db7e0c2938778f4559946833e7a8cfde0f3eaa07650766d4764e86c4
 ```

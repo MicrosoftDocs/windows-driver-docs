@@ -25,7 +25,7 @@ A user-mode application can get information about the error injection capabiliti
 
 The following code example shows how to retrieve the error injection capabilities information.
 
-```
+```cpp
 IWbemServices *pIWbemServices;
 BSTR ClassName;
 BSTR MethodName;

@@ -24,7 +24,7 @@ When the Microsoft Direct3D runtime calls the user-mode display driver's [**Crea
 
 The driver excludes many functions for deferred contexts by setting the following members of [**D3D11DDI\_DEVICEFUNCS**](https://msdn.microsoft.com/library/windows/hardware/ff542141) or [**D3D11\_1DDI\_DEVICEFUNCS**](https://msdn.microsoft.com/library/windows/hardware/hh406443) to **NULL**:
 
-```
+```cpp
 typedef struct D3D11DDI_DEVICEFUNCS {
 ...
   PFND3D10DDI_RESOURCEMAP  pfnStagingResourceMap;
@@ -63,7 +63,7 @@ typedef struct D3D11DDI_DEVICEFUNCS {
 } D3D11DDI_DEVICEFUNCS;
 ```
 
-```
+```cpp
 typedef struct D3D11_1DDI_DEVICEFUNCS {
 ...
   PFND3D10DDI_RESOURCEMAP  pfnStagingResourceMap;

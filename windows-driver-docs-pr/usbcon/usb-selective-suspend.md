@@ -28,9 +28,9 @@ Client drivers, for an interface on a composite device, that enable the interfac
 
 For information about remote wakeup, see:
 
-[Remote Wakeup of USB Devices](https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/remote-wakeup-of-usb-devices)
+[Remote Wakeup of USB Devices](https://docs.microsoft.com/windows-hardware/drivers/usbcon/remote-wakeup-of-usb-devices)
 
-[Overview of Wait/Wake Operation](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/overview-of-wait-wake-operation)
+[Overview of Wait/Wake Operation](https://docs.microsoft.com/windows-hardware/drivers/kernel/overview-of-wait-wake-operation)
 
 The version of the Windows operating system determines the way drivers for non-composite devices enable selective suspend.
 
@@ -71,7 +71,7 @@ The following restrictions apply to the use of idle request IRPs:
 The following WDM example code illustrates the steps that a device driver takes to send a USB idle request IRP. Error checking has been omitted in the following code example.
 
 1.  Allocate and initialize the [**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://msdn.microsoft.com/library/windows/hardware/ff537270) IRP
-    ```
+    ```cpp
     irp = IoAllocateIrp (DeviceContext->TopOfStackDeviceObject->StackSize, FALSE);
     nextStack = IoGetNextIrpStackLocation (irp);
     nextStack->MajorFunction = IRP_MJ_INTERNAL_DEVICE_CONTROL;
@@ -81,7 +81,7 @@ The following WDM example code illustrates the steps that a device driver takes 
     ```
 
 2.  Allocate and initialize the idle request information structure (USB\_IDLE\_CALLBACK\_INFO).
-    ```
+    ```cpp
     idleCallbackInfo = ExAllocatePool (NonPagedPool,
     sizeof(struct _USB_IDLE_CALLBACK_INFO));
     idleCallbackInfo->IdleCallback = IdleNotificationCallback;
@@ -95,7 +95,7 @@ The following WDM example code illustrates the steps that a device driver takes 
 
     The client driver must associate a completion routine with the idle request IRP. For more information about the idle notification completion routine and example code, see "USB Idle Request IRP Completion Routine".
 
-    ```
+    ```cpp
     IoSetCompletionRoutine (irp,
      IdleNotificationRequestComplete,
        DeviceContext,
@@ -106,13 +106,13 @@ The following WDM example code illustrates the steps that a device driver takes 
     ```
 
 4.  Store the idle request in the device extension.
-    ```
+    ```cpp
     deviceExtension->PendingIdleIrp = irp;
      
     ```
 
 5.  Send the Idle request to the parent driver.
-    ```
+    ```cpp
     ntStatus = IoCallDriver (DeviceContext->TopOfStackDeviceObject, irp);
     ```
 
@@ -408,7 +408,7 @@ Alternatively, you can enable or disable selective suspend by setting the value 
 
 For instance, the following lines in Usbport.inf disable selective suspend for a Hydra OHCI controller:
 
-```
+```cpp
 [OHCI_NOSS.AddReg.NT]
 HKR,,"HcDisableSelectiveSuspend",0x00010001,1
 ```

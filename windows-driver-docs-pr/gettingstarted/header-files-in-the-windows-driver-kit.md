@@ -86,7 +86,7 @@ Here are the predefined constant values that represent versions of the Microsoft
 
 You can see many examples of version-specific DDI elements in the WDK header files. This conditional declaration appears in Wdm.h, which is a header file that might be included by a kernel-mode driver.
 
-```
+```cpp
 #if (NTDDI_VERSION >= NTDDI_WIN7)
 _Must_inspect_result_
 NTKERNELAPI

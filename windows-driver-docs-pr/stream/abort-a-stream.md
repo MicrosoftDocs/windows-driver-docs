@@ -29,7 +29,7 @@ In the abort work item routine, AV/C Streaming will first stop the isochronous d
 
 To issue this request, an AV/C Streaming request is initialized with the **AVCSTRM\_ABORT\_STREAMING** request and the data stream context.
 
-```
+```cpp
 INIT_AVCSTRM_HEADER(pAVCStrmReq, AVCSTRM_ABORT_STREAMING);
 pAVCStrmReq->AVCStreamContext = pStrmExt->AVCStreamContext;  // From cached context saved in OPEN_STREAM request
 

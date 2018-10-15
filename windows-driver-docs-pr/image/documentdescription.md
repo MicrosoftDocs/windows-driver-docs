@@ -25,7 +25,7 @@ The required **DocumentDescription** element defines all of the description attr
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:DocumentDescription>
   child elements
 </wscn:DocumentDescription>
@@ -77,7 +77,7 @@ There are no attributes.
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Document**](document.md)

@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:DefaultScanTicket>
   child elements
 </wscn:DefaultScanTicket>
@@ -90,7 +90,7 @@ Examples
 
 The following code example shows a sample DefaultScanTicket.
 
-```
+```xml
 <wscn:DefaultScanTicket>
   <wscn:JobDescription>
     <wscn:JobName>Scan Job</wscn:JobName>
@@ -137,7 +137,7 @@ The following code example shows a sample DefaultScanTicket.
 </wscn:DefaultScanTicket>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)

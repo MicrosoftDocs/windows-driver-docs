@@ -20,10 +20,19 @@ New Direct3D 11.1 resource trim and map default performance improvements are als
 ## <span id="Rendering_performance_reference"></span><span id="rendering_performance_reference"></span><span id="RENDERING_PERFORMANCE_REFERENCE"></span>Rendering performance reference
 
 
-This reference section describes the user-mode device driver interfaces (DDIs):
+This reference section describes the user-mode device driver interfaces (DDIs).
 
-<span id="Direct3D_rendering_performance_functions_implemented_by_the_user-mode_driver"></span><span id="direct3d_rendering_performance_functions_implemented_by_the_user-mode_driver"></span><span id="DIRECT3D_RENDERING_PERFORMANCE_FUNCTIONS_IMPLEMENTED_BY_THE_USER-MODE_DRIVER"></span>[Direct3D rendering performance functions implemented by the user-mode driver](https://msdn.microsoft.com/library/windows/hardware/dn449220)  
-All functions that user-mode display drivers must implement in order to improve rendering performance for Direct3D Level 9 hardware.
+### Direct3D rendering performance functions implemented by the user-mode driver
+
+This section contains functions that a Windows Display Driver Model (WDDM) 1.3 and later user-mode display driver implements in order to support Microsoft Direct3D rendering performance improvements.
+
+
+|||
+|:--|:--|
+|[PFND3DDDI_FLUSH1](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_flush1)| [PFND3DDDI_CHECKCOUNTERINFO](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_checkcounterinfo)|
+|[PFND3DDDI_CHECKCOUNTER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_checkcounter) |[PFND3DDDI_UPDATESUBRESOURCEUP](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_updatesubresourceup)|
+
+### Direct3D rendering performance structures and enumerations
 
 These user-mode structures and enumerations support rendering performance improvements and are new or updated for Windows 8.1. All apply to Direct3D Level 9 drivers except for [**D3D11\_1\_DDI\_FLUSH\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/hh451049).
 

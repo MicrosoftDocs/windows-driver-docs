@@ -47,7 +47,7 @@ An *access violation* is an attempt to perform an operation on a page that is no
 
 If an operation might cause an exception, the driver should enclose the operation in a **try/except** block. Accesses of locations in user-mode are typical causes of exceptions. For example, the [**ProbeForWrite**](https://msdn.microsoft.com/library/windows/hardware/ff559879) routine checks that the driver can actually write to a user-mode buffer. If it cannot, the routine raises a STATUS\_ACCESS\_VIOLATION exception. In the following code example, the driver calls **ProbeForWrite** in a **try/except** so that it can handle the resulting exception, if one should occur.
 
-```
+```cpp
 try {
     ...
     ProbeForWrite(Buffer, BufferSize, BufferAlignment);

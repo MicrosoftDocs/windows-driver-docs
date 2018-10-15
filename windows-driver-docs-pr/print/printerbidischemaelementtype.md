@@ -64,7 +64,7 @@ Data is a Unicode string.
 <span id="PrinterBidiSchemaElementType_Blob"></span><span id="printerbidischemaelementtype_blob"></span><span id="PRINTERBIDISCHEMAELEMENTTYPE_BLOB"></span>**PrinterBidiSchemaElementType\_Blob**  
 Data is binary data.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**BidiType**](iprinterbidischemaelement-biditype.md)

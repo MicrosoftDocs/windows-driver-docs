@@ -18,7 +18,7 @@ Storport Idle Power Management (IPM) is not enabled by default. It can be enable
 
 The following sample text shows what you need to add to your device's INF file to enable the Storport Idle Power Management feature.
 
-```
+```cpp
           [DDInstall.HW]
           ; Enables Storport IPM for this adapter
           HKR, "StorPort", "EnableIdlePowerManagement", 0x00010001, 0x01

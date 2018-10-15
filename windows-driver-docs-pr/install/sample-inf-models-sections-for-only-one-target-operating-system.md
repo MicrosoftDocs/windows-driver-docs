@@ -17,7 +17,7 @@ It is possible to use decorated [**INF *Models* sections**](inf-models-section.m
 
 The following example shows an [**INF Manufacturer section**](inf-manufacturer-section.md) with various [**INF *Models* sections**](inf-models-section.md) that will prevent Windows from installing a device on x86-based systems not running Windows Vista.
 
-```
+```cpp
 [Manufacturer]
 %Msft% = Msft, NTx86.6.0, NT.6.1
 

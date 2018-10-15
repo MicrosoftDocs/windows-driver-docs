@@ -29,7 +29,7 @@ For Windows Vista and later operating systems, a driver can use the CONNECT\_MES
 
 The following code example demonstrates how to register an *InterruptMessageService* routine by using CONNECT\_MESSAGE\_BASED.
 
-```
+```cpp
 IO_CONNECT_INTERRUPT_PARAMETERS params;
 
 // deviceExtension is a pointer to the driver&#39;s device extension. 

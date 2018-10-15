@@ -28,7 +28,7 @@ The NFC CX driver supports device power states D0 and D3. The state diagram belo
 
 Furthermore, the built-in idle detection logic of UMDF is used to power manager the device. During initialization, the WdfDevice is assigned its S0 Idle settings as follows:
 
-```
+```cpp
 WdfDeviceAssignS0IdleSettings(
     IdleCannotWakeFromS0,
     PowerDeviceD3,

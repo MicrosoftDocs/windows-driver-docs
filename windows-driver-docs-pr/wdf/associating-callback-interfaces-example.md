@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The following code example shows how a driver implements a create-instance method that the driver uses to [create the device callback object](creating-callback-objects-example.md). The driver allocates the callback context and associates the supplied **IUnknown** with one or more callback interfaces. The framework can subsequently use **QueryInterface** to discover the callback interfaces supported by the driver.
 
-```
+```cpp
 static HRESULT CreateInstance(
                   IUnknown **ppUnknown, 
                   IWDFDeviceInitialize *pDeviceInit,

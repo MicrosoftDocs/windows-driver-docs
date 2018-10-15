@@ -24,7 +24,7 @@ The required, ordered responsibilities of a [**DriverEntry**](https://msdn.micro
 
     The driver stores entry points for many of its standard routines in the driver object or driver extension. Such entry points include those for the driver's [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine, dispatch routines, [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) routine, and [*Unload*](https://msdn.microsoft.com/library/windows/hardware/ff564886) routine. For example, a driver would set the entry points for its *AddDevice*, [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341), and [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routines with statements like the following (*Xxx* is a placeholder for a vendor-supplied prefix identifying the driver):
 
-    ```
+    ```cpp
         :
     DriverObject->DriverExtension->AddDevice = XxxAddDevice;
     DriverObject->MajorFunction[IRP_MJ_PNP] = XxxDispatchPnp;

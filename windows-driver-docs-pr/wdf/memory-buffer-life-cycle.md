@@ -44,7 +44,7 @@ When the driver [completes the request](completing-i-o-requests.md), the framewo
 
 In this scenario, the driver [forwards the request](forwarding-i-o-requests.md) to an I/O target. The following sample code shows how a driver retrieves a handle to the memory object from an incoming request object, formats the request to send to the I/O target, and sends the request:
 
-```
+```cpp
 VOID
 EvtIoRead(
     IN WDFQUEUE Queue,
@@ -94,7 +94,7 @@ End:
 
 When the I/O target has completed the request, the framework calls the completion callback that the driver set for the request. The following code shows a simple completion callback:
 
-```
+```cpp
 VOID
 RequestCompletionRoutine(
     IN WDFREQUEST                  Request,

@@ -33,7 +33,7 @@ The driver specifies a value of CONNECT\_LINE\_BASED for *Parameters*-&gt;**Vers
 
 The following code example demonstrates how to register an *InterruptService* routine using CONNECT\_LINE\_BASED:
 
-```
+```cpp
 IO_CONNECT_INTERRUPT_PARAMETERS params;
 
 // deviceExtension is a pointer to the driver&#39;s device extension. 

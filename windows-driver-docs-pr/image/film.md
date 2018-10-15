@@ -25,7 +25,7 @@ The optional **Film** element describes the capabilities of the film scanning op
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Film>
   child elements
 </wscn:Film>
@@ -89,7 +89,7 @@ There are no attributes.
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**FilmColor**](filmcolor.md)

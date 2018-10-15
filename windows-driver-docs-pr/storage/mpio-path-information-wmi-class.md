@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 A WMI client uses the MPIO\_PATH\_INFORMATION WMI class to query the MPIO driver for information regarding all paths that are associated with an MPIO disk.
 
-```
+```cpp
 class MPIO_PATH_INFORMATION
 {
 

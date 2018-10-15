@@ -22,7 +22,7 @@ Starting in KMDF version 1.19, a KMDF driver using DMA v3 can specify that it re
 To set single transfer for a single transaction, use the following sequence:
 
 1. Call [**WdfDmaTransactionCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547027) or [**WdfDmaTransactionRelease**](https://msdn.microsoft.com/library/windows/hardware/ff547114).
-2. Call [**WdfDmaTransactionSetSingleTransferRequirement**](https://msdn.microsoft.com/en-us/library/windows/hardware/988c7e70-3b2a-4a0f-91cf-dfab3ea07f05).
+2. Call [**WdfDmaTransactionSetSingleTransferRequirement**](https://msdn.microsoft.com/library/windows/hardware/988c7e70-3b2a-4a0f-91cf-dfab3ea07f05).
 3. Call [**WdfDmaTransactionInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff547099).  
     If initialization fails due to transaction fragmentation, a driver can fail the I/O request or it can rearrange the transaction's memory buffers and reinitialize the transaction.
 4. Call [**WdfDmaTransactionExecute**](https://msdn.microsoft.com/library/windows/hardware/ff547062).
@@ -33,7 +33,7 @@ When debugging your driver, you can use the [**!wdfkd.wdfdmatransaction**](https
 
 To set single transfer for all transactions created with a given enabler, specify the **WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER** flag in [**WDF_DMA_ENABLER_CONFIG_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/hh439491) when calling [**WdfDmaEnablerCreate**](https://msdn.microsoft.com/library/windows/hardware/guid).  
 
-A driver that uses this flag does not need to call [**WdfDmaTransactionSetSingleTransferRequirement**](https://msdn.microsoft.com/en-us/library/windows/hardware/988c7e70-3b2a-4a0f-91cf-dfab3ea07f05) each time it creates or reuses a transaction object.
+A driver that uses this flag does not need to call [**WdfDmaTransactionSetSingleTransferRequirement**](https://msdn.microsoft.com/library/windows/hardware/988c7e70-3b2a-4a0f-91cf-dfab3ea07f05) each time it creates or reuses a transaction object.
 
 This setting also persists if the driver [reuses the transaction object](reusing-dma-transaction-objects.md).
 

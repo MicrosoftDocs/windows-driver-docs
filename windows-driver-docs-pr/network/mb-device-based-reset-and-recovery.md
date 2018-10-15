@@ -85,7 +85,7 @@ The following flow diagram illustrates the UDE device reset process.
 
 To support FLDR on a device, inside the Device() scope there must be a `_RST` method defined. When executed, the method must reset only that device, and should not touch another device. The device must also stay on the bus, connected. 
 
-```
+```cpp
 Device(PCI0)  
 {  
 Device(USB0)  
@@ -108,7 +108,7 @@ Device(USB0)  
 
 In PLDR, devices that are affected by the reset of other device are expressed as sharing a `PowerResource` for reset. The devices declare their dependency on the `PowerResource` for reset, and that `PowerResource` implements the `_RST` method. 
 
-```
+```cpp
 Device(PCI0)  
 {  
 PowerResource(URST, 0x5, 0x0)  

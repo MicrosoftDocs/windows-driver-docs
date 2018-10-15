@@ -12,7 +12,7 @@ ms.technology: windows-devices
 
 Use the following method in *Microsoft Hardware APIs* to get the audiences applicable to your organization. Audiences allow you to restrict a publication to machines with a particular configuration. As an example, a test deployment can be delivered only to clients with a particular registry key installed.
 
-```
+```cpp
 https://manage.devcenter.microsoft.com/v1.0/my/hardware/audiences
 ```
 
@@ -79,7 +79,7 @@ Do not provide a request body for this method.
 
 The following example demonstrates how to retrieve information about audiences applicable to your organization.
 
-```
+```cpp
 GET https://manage.devcenter.microsoft.com/v1.0/my/hardware/audience HTTP/1.1
 Authorization: Bearer <your access token>
 ```
@@ -120,3 +120,7 @@ This resource has the following values
 |:--|:--|:--|
 | value | array | An array of objects that contain information about each audience. For more information about the data in each object, see [audience resource](#audience-resource). |
 | links | array | An array of objects with helpful links about the containing entity. See the [Link object](get-product-data.md#link-object) for more details.|
+
+## See also
+
+- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

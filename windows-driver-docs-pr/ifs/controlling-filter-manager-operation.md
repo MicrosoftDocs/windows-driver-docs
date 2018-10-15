@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The operation of filter manager on versions of Windows earlier than Windows Vista is controlled by the REG\_DWORD *AttachWhenLoaded* registry value stored under the following key:
 
-```
+```cpp
 HKLM\System\CurrentControlSet\Services\FltMgr
 ```
 

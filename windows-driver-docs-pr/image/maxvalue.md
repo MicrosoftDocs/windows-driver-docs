@@ -25,7 +25,7 @@ The required **MaxValue** element specifies the maximum value that the scan devi
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:MaxValue>
   text
 </wscn:MaxValue>
@@ -76,7 +76,7 @@ Remarks
 
 The value of the **MaxValue** element depends on its parent element. For the possible values, see the appropriate parent element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CompressionQualityFactorSupported**](compressionqualityfactorsupported.md)

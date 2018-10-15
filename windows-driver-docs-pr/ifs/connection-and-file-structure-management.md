@@ -43,7 +43,7 @@ These six fundamental data structures are as follows:
 
 These data structures are organized in the following hierarchy:
 
-```
+```cpp
                 SRV_CALL 
      FCB   <------> NET_ROOT
         SRV_OPEN  <---> V_NET_ROOT

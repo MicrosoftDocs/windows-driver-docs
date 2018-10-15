@@ -24,7 +24,7 @@ This section applies only to Windows 7 and later, and Windows Server 2008 R2 and
 
 The following pseudocode shows how to use the CCD APIs to set clone view:
 
-```
+```cpp
 SetCloneView
 {
     // Determine the size of the path array that is required to hold all valid paths.

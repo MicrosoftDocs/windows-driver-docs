@@ -117,7 +117,7 @@ Query this property to determine the units in which the [**Iasphelp::PageRate**]
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::PageRateUnit** property can be queried.
 
-```
+```cpp
     Dim objPrinter, PtrPageRateUnit
     strPrinter = Session("MS_printer")
     Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
@@ -145,7 +145,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Iasphelp::PageRate**](iasphelp-pagerate.md)

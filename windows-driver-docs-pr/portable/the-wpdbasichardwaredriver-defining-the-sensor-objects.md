@@ -44,13 +44,13 @@ Because the sample sensors do not support a storage, folder, or file object, the
 
 In WPD, objects are identified by strings. The string identifier for the device object is defined in the *Portabledevice.h* file:
 
-```
+```cpp
 #define WPD_DEVICE_OBJECT_ID  L"DEVICE"
 ```
 
 The string identifiers for the sensor objects are defined in the *WpdObjectProperties.h* file for the WpdBasicHardwareDriver:
 
-```
+```cpp
 #define SENSOR_OBJECT_ID             L"Sensor"
 #define SENSOR_OBJECT_NAME_VALUE          L"Parallax Sensor"
 #define COMPASS_SENSOR_OBJECT_ID              L"Compass"
@@ -75,7 +75,7 @@ The string identifiers for the sensor objects are defined in the *WpdObjectPrope
 
 These object identifier constants are passed to the methods in source modules that handle object enumeration (*WpdObjectEnum.cpp*), property handling (*WpdObjectProperties.cpp*), and device-capability retrieval (*WpdCapabilities.cpp*). The following excerpt from the **WpdObjectEnumerator::OnFindNext** method shows how these identifiers are used in object enumeration for the sample driver:
 
-```
+```cpp
 // If the enumeration context reports that there are more objects to return, then continue, if not,
     // return an empty results set.
     if ((hr == S_OK) && (pEnumeratorContext != NULL) && (pEnumeratorContext->HasMoreChildrenToEnumerate() == TRUE))

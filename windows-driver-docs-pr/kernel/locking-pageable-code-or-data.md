@@ -32,7 +32,7 @@ The name of a pageable code section must start with the four letters "PAGE" and 
 
 The shortest valid name for a pageable code section in a driver file is simply PAGE. For example, the pragma directive in the following code example identifies `RdrCreateConnection` as an entry point in a pageable code section named PAGE.
 
-```
+```cpp
 #ifdef  ALLOC_PRAGMA 
 #pragma alloc_text(PAGE, RdrCreateConnection) 
 #endif 
@@ -50,7 +50,7 @@ Avoid assigning identical names to code and data sections. To make source code m
 
 For example, the first two pragma directives in the following code example define two pageable data sections, PAGEDATA and PAGEBSS. PAGEDATA is declared using the data\_seg pragma directive and contains initialized data. PAGEBSS is declared using the bss\_seg pragma directive and contains uninitialized data.
 
-```
+```cpp
 #pragma data_seg("PAGEDATA")
 #pragma bss_seg("PAGEBSS")
 

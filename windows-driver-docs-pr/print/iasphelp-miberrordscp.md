@@ -85,7 +85,7 @@ Win32 error codes can also be returned.
 Remarks
 -------
 
-```
+```cpp
     Dim objPrinter, MIBErrorCode, MIBErrorString
     Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
     ...

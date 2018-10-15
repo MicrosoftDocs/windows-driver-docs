@@ -17,7 +17,7 @@ Because this class is associated with a particular instance of a storage minipor
 
 The MSiSCSI\_MMIPSECStats class is defined in *Iscsiprf.mof*.
 
-```
+```cpp
 class MSiSCSI_QMIPSECStats : Win32_PerfRawData {
   [read,key] String  InstanceName;
   [read] boolean  Active;

@@ -15,7 +15,7 @@ The ISCSI\_TargetPortalGroup class defines a target portal group.
 
 This class is defined as follows in *Common.mof*.
 
-```
+```cpp
 class ISCSI_TargetPortalGroup {
   [WmiDataId(1), description("Number of portals in group") :
     amended]

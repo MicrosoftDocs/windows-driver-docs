@@ -15,7 +15,7 @@ A WMI provider uses the MSFC\_TargetEvent WMI class to report target events.
 
 The MSFC\_TargetEvent class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MSFC_TargetEvent : WmiEvent {
   [key] 
   string InstanceName;

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 MPIO publishes the DSM\_QueryUniqueId WMI class but expects the DSM to register the GUID and handle its implementation. A WMI client uses the DSM\_QueryUniqueId WMI class to query the unique identifier for a path.
 
-```
+```cpp
 class DSM_QueryUniqueId
 {
 

@@ -24,7 +24,7 @@ The [**IPrintTicketProvider::BindPrinter**](https://msdn.microsoft.com/library/w
 
 The following sample code illustrates the method's arguments.
 
-``` syntax
+```cpp
 STDMETHODIMP 
 CPrintTicketProvider::
 BindPrinter( THIS_ HANDLE    hPrinter,
@@ -34,11 +34,3 @@ BindPrinter( THIS_ HANDLE    hPrinter,
                    INT      *pcNamespaces,
                    BSTR    **ppNamespaces)
 ```
-
- 
-
- 
-
-
-
-

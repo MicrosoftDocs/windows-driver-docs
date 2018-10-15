@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 
 The Windows Hardware Compatibility Program (for Windows 10) and the Windows Hardware Certification Program (for Windows 8/8.1 and older operating systems) enable you to design, create, and test your hardware and drivers before you submit the final version through the Windows Hardware Dev Center dashboard. For more information, see the [Windows hardware certification](http://go.microsoft.com/fwlink/p/?LinkId=224782) page. By certifying your hardware device, system, and drivers for Windows, you gain the support of Microsoft marketing resources in the form of compatibility and reliability listings, logo artwork, and promotional partnerships.
 
-To develop your device, download the [Windows Driver Kit (WDK)](https://docs.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk).
+To develop your device, download the [Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
 
-To test your device, download the [Windows Hardware Lab Kit (Windows HLK)](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/windows-hardware-lab-kit) for Windows 10. For previous operating systems, download the [Windows Hardware Certification Kit (Windows HCK)](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/windows-hardware-lab-kit) or [Windows Logo Kit (WLK)](http://go.microsoft.com/fwlink/p/?LinkId=219237).
+To test your device, download the [Windows Hardware Lab Kit (Windows HLK)](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) for Windows 10. For previous operating systems, download the [Windows Hardware Certification Kit (Windows HCK)](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) or [Windows Logo Kit (WLK)](http://go.microsoft.com/fwlink/p/?LinkId=219237).
 
 After you develop and test your product, you can submit the results with a hardware submission.
 
@@ -237,10 +237,9 @@ The status graphic displays the publish status for each shipping label. A green 
 
 ## <span id="In_this_section"></span><span id="in_this_section"></span><span id="IN_THIS_SECTION"></span>In this section
 
+- [Create a new hardware submission](create-a-new-hardware-submission.md)
 
--   [Create a new hardware submission](create-a-new-hardware-submission.md)
-
--   [Manage hardware submissions](manage-your-hardware-submissions.md)
+- [Manage hardware submissions](manage-your-hardware-submissions.md)
 
  
 

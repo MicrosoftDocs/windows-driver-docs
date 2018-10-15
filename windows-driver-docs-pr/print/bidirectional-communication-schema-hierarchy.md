@@ -17,7 +17,6 @@ ms.localizationpriority: medium
 
 # Bidirectional Communication Schema Hierarchy
 
-
 The bidirectional communication schema contains the following hierarchy or tree of properties and values.
 
 -   Properties are shown in plain text (for example, DeviceInfo).
@@ -26,7 +25,7 @@ The bidirectional communication schema contains the following hierarchy or tree 
 
 -   Values are shown in italic text (for example, FriendlyName).
 
-```
+```cpp
 Printer
   DeviceInfo
  FriendlyName

@@ -77,7 +77,7 @@ This method can return one of these values.
 Remarks
 -------
 
-```
+```cpp
     Dim objPrinter, CompName
     strPrinter = Session("MS_printer")
     Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")

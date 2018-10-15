@@ -42,7 +42,7 @@ The KMDF driver is published by the partner and consists of components shown in 
 
 ##### MS3DPrintUSB.sys
 
-The kernel mode device driver that creates the 3D printer dev node under Enum\\3DPrint. It is invoked by the PnP subsystem via a direct match of the VID & PID based on the device node created by Winusb.sys. The driver .inf file sets up the custom DLL used to set the the **3DPrintService** (if not already installed on the system).
+The kernel mode device driver that creates the 3D printer dev node under Enum\\3DPrint. It is invoked by the PnP subsystem via a direct match of the VID & PID based on the device node created by Winusb.sys. The driver .inf file sets up the custom DLL used to set the **3DPrintService** (if not already installed on the system).
 
 ##### 3dmon.dll
 
@@ -108,11 +108,9 @@ This API is used by third-party manufacturers to print the document on their pri
 >
 > **ppPartnerData** - pointer to pointer that isused to store partner specific data setup during the InitializePrint API call.
 >
-> **printerName** can be obtained from the registry using the port name. Third-party manufacturers maynot be able to use the port name to communicate with their device. The printer name is unique on a Windows machine and their software will be capable of identifying which printer to print the job on. All printers active on a machine can be found at the following  registry key:
+> **printerName** can be obtained from the registry using the port name. Third-party manufacturers maynot be able to use the port name to communicate with their device. The printer name is unique on a Windows machine and their software will be capable of identifying which printer to print the job on. All printers active on a machine can be found at the following registry key:
 
-```
-    HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Print\\Printers
-```
+    **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Print\\Printers**
 
 ![3d printer registry](images/3d-printer-registry.png)
 
@@ -150,7 +148,7 @@ The commands below must be supported by the manufacturer:
 
 The following print device capabilities XML can be used as an example:
 
-```
+```xml
 <?xml version="1.0"?>
 <PrintDeviceCapabilities
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

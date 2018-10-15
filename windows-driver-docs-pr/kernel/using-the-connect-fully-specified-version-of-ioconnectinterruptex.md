@@ -81,7 +81,7 @@ A driver will only receive **CM\_PARTIAL\_RESOURCE\_DESCRIPTOR** structures for 
 
 The following code example demonstrates how to register an *InterruptService* routine using CONNECT\_FULLY\_SPECIFIED.
 
-```
+```cpp
 IO_CONNECT_INTERRUPT_PARAMETERS params;
 
 // deviceExtension is a pointer to the driver&#39;s device extension. 

@@ -285,7 +285,7 @@ The check for a valid **StartFrame** member is slightly more complicated in high
 
 The following code example shows how to create an URB for an isochronous transfer for full speed, high speed, and SuperSpeed transmission.
 
-```
+```cpp
 #define MAX_SUPPORTED_PACKETS_FOR_HIGH_OR_SUPER_SPEED 1024
 #define MAX_SUPPORTED_PACKETS_FOR_FULL_SPEED 255
 

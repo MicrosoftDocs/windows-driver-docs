@@ -39,7 +39,7 @@ The following pseudocode example demonstrates how to set up a L2CAP Ping BRB for
 
  
 
-```
+```cpp
 #include <bthddi.h>
 
 // Code for obtaining the BthInterface pointer

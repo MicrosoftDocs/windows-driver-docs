@@ -65,7 +65,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_IPS\_YSCALING**](wia-ips-yscaling.md)

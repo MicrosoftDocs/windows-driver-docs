@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 Kernel-mode drivers must validate the size of any I/O buffer passed in from a user-mode application. If a 32-bit application passes a buffer containing pointer-precision data types to a 64-bit driver, and no thunking takes place, the driver will expect the buffer to be larger than it actually is. This is because pointer precision is 32 bits on 32-bit Microsoft Windows and 64 bits on 64-bit Windows. For example, consider the following structure definition:
 
-```
+```cpp
 typedef struct _DRIVER_DATA
 {
     HANDLE           Event;
@@ -69,7 +69,7 @@ If a 64-bit driver receives 12 bytes of DRIVER\_DATA when it expected 24 bytes, 
 
 For example, a thunked version of the above DRIVER\_DATA structure could be defined as follows:
 
-```
+```cpp
 typedef struct _DRIVER_DATA32
 {
     VOID *POINTER_32   Event;

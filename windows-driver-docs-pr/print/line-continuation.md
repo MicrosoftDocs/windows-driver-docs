@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 
 [GPD file entries](gpd-file-entries.md) that are too long to fit onto a single line can be continued on subsequent lines. To continue an entry, each line after the first must be preceded by a plus sign (+). The plus sign must be the first character on the line, without preceding white space, as illustrated in the following example:
 
-```
+```cpp
 *DeviceFonts:
 +    LIST(
 +        =RC_FONT_Courier_10pt_regular,

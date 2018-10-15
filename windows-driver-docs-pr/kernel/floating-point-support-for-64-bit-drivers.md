@@ -36,7 +36,7 @@ These registers correspond to the XSTATE\_MASK\_LEGACY\_SSE flag and are used by
 
 These registers correspond to the XSTATE\_MASK\_GSSE or XSTATE\_MASK\_AVX masks. New x86 processors, such as the Intel Sandy Bridge (formerly Gesher) processor, support the AVX instructions and register set (YMM0-YMM15). In Windows 7 with Service Pack 1 (SP1), Windows Server 2008 R2, and newer versions of Windows, both x86 and x64 versions of the operating system preserve the AVX registers across thread (and process) switches. To use the AVX registers in kernel mode, drivers (x86 and x64) must explicitly save and restore the AVX registers. AVX registers cannot be used in an interrupt service routine, and arithmetic exceptions are turned off by default.
 
-```
+```cpp
 include ksamd64.inc
 
         subttl "Set YMM State."
@@ -70,7 +70,7 @@ LEAF_END SetYmmValues, _TEXT$00
         end
 ```
 
-```
+```cpp
 typedef DECLSPEC_ALIGN(32) struct _YMM_REGISTERS {
     ULONG64 Ymm4Registers[16];
 } YMM_REGISTERS, *PYMM_REGISTERS;

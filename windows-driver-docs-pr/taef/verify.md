@@ -60,7 +60,7 @@ If your source code is compiled with C++ exceptions enabled (by specifying the "
 
 Optionally, if you would like to perform a series of verifications in a row rather than having the test abort on the first verification failure, you can use the **DisableVerifyExceptions** class. The object's lifetime controls the amount of time that exceptions are disabled.
 
-```
+```cpp
 if (NULL != m_key)
 {
     DisableVerifyExceptions disable;
@@ -79,7 +79,7 @@ If your source code is ***not*** compiled with C++ exceptions enabled, the Verif
 
 In this model, you must perform a series of nested if statements in order to control the flow of your test case, rather than relying on C++ exceptions.
 
-```
+```cpp
 if (VERIFY_WIN32_SUCCEEDED(::RegDeleteKey(HKEY_CURRENT_USER, zTempName)))
 {
     ...
@@ -90,7 +90,7 @@ if (VERIFY_WIN32_SUCCEEDED(::RegDeleteKey(HKEY_CURRENT_USER, zTempName)))
 
 If you would like to customize the output produced by the Verify APIs, you can use the **SetVerifyOutput** class. The object's lifetime controls the amount of time that the output settings are set. The **SetVerifyOutput** class is ref-counted, and functions on a per-thread basis.
 
-```
+```cpp
 if (NULL != m_key)
 {
     SetVerifyOutput verifySettings(VerifyOutputSettings::LogOnlyFailures);
@@ -118,7 +118,7 @@ Log the values of parameters passed in, even when the Verify call succeeds.
 
 Verify output settings can be OR'd together to enable multiple settings:
 
-```
+```cpp
 SetVerifyOutput verifySettings(VerifyOutputSettings::LogOnlyFailures | VerifyOutputSettings::LogFailuresAsBlocked);
 ```
 
@@ -128,7 +128,7 @@ The C++ Verify framework provides the ability to generate detailed output for an
 
 The **WEX::TestExecution::VerifyOutputTraits** class template specialization must exist in the **WEX::TestExecution** namespace. It is also expected to provide a public static method called **ToString**, which takes a reference to your class, and returns a **WEX::Common::NoThrowString** containing a string representation of its value.
 
-```
+```cpp
     class MyClass
     {
     public:
@@ -166,7 +166,7 @@ The C++ Verify framework provides the ability to define comparators for custom t
 
 The **WEX::TestExecution::VerifyCompareTraits** class template specialization must exist in the **WEX::TestExecution** namespace. It is also expected to provide a public static methods called **AreEqual**, **AreSame**, **IsLessThan**, **IsGreaterThan**, and **IsNull**.
 
-```
+```cpp
     class MyClass
     {
     public:
@@ -269,7 +269,7 @@ When Verification failures occur in C# test cases, an error is written to the lo
 
 Optionally, if you would like to perform a series of verifications in a row rather than having the test abort on the first verification failure, you can use the **DisableVerifyExceptions** class. The object's lifetime controls the amount of time that exceptions are disabled. The **DisableVerifyExceptions** class is ref-counted, and functions on a per-thread basis.
 
-```
+```cpp
 using (new DisableVerifyExceptions())
 {
     Verify.AreSame(item1, item2);
@@ -281,7 +281,7 @@ In the example above, if the first verify call fails, the second verify call is 
 
 Alternatively, you can achieve the same result by setting **Verify.DisableVerifyExceptions = true** before the Verify operations such as the example shown below.
 
-```
+```cpp
 Verify.DisableVerifyExceptions = true;
 try
 {
@@ -302,7 +302,7 @@ If you want to stop in the debugger when a verification error occurs bring up th
 
 If you would like to customize the output produced by the Verify APIs, you can use the **SetVerifyOutput** class. The object's lifetime controls the amount of time that the output settings are set. The **SetVerifyOutput** class is ref-counted, and functions on a per-thread basis.
 
-```
+```cpp
 using (new SetVerifyOutput(VerifyOutputSettings.LogOnlyFailures))
 {
     Log.Comment("Only the following error should be logged:");
@@ -316,7 +316,7 @@ In the example above, only the second verify call should be logged since it's th
 
 Alternatively, you can achieve the same result by setting **Verify.OutputSettings = VerifyOutputSettings.LogOnlyFailures** before the Verify operations such as the example shown below.
 
-```
+```cpp
 Verify.OutputSettings = VerifyOutputSettings.LogFailuresAsWarnings
 try
 {
@@ -344,7 +344,7 @@ Log all failures as warnings rather than logging an error.
 
 Verify output settings can be OR'd together to enable multiple settings:
 
-```
+```cpp
 using (new SetVerifyOutput(VerifyOutputSettings.LogFailuresAsBlocked | VerifyOutputSettings.LogOnlyFailures))
 {
 ...
@@ -371,7 +371,7 @@ When deploying TAEF using a deployment file for lab execution, Te.Common.dll is 
 
 The scriptable Verify API's are surfaced through the 'TE.Common.Verify' COM class - simply instantiate that class and call methods on it - the Verify class will automatically work with WEXLogger to write pass and fail verifications to the log.
 
-```
+```cpp
 1   <?xml version="1.0" ?>
 2   <?component error="false" debug="false"?>
 3   <package>
@@ -465,19 +465,19 @@ Exceptions will not be thrown when a validation fails.
 
 The Verify API provides settings to configure it's behavior. The 'EnableSettings' and 'DisableSettings' methods can be used to enable or disable specific settings that the Verify class maintains. The methods take one or more settings to enable or disable.
 
-```
+```cpp
     Verify.EnableSettings(VerifySettings_LogOnlyFailures);
 ```
 
 To enable or disable multiple settings in one call, you can include multiple 'VerifySettings' flags:
 
-```
+```cpp
     Verify.EnableSettings(VerifySettings_LogOnlyFailures | VerifySettings_DisableExceptions);
 ```
 
 The EnableSettings and DisableSettings methods return an object that can be used to restore the original settings, allowing settings to be enabled or disabled for a given scope;
 
-```
+```cpp
 1    var guard = Verify.EnableSettings(VerifySettings_LogOnlyFailures);
 2    try
 3    {
@@ -495,7 +495,7 @@ In this example, the Verify.EnableSettings method is passed 'VerifySettings\_Log
 
 By default the Verify methods will throw an exception when a verification fails. When running under TAEF if the exception is thrown out of the test method, the test will be failed. For example:
 
-```
+```cpp
 1    var guard = Verify.EnableSettings(VerifySettings_CoerceTypes);
 2    try
 3    {
@@ -510,7 +510,7 @@ By default the Verify methods will throw an exception when a verification fails.
 
 In this example, the second Verify call will never be made, since the first will throw an exception and fail the test. The settings support on the Verify API can be used to change this behavior, so that failed verifications do not throw, which would allow subsequent Verify calls to be made. This is particularly useful to Verify a set of parameters, and make sure that all verifications are written out.
 
-```
+```cpp
 1    var guard = Verify.EnableSettings(VerifySettings_CoerceTypes | VerifySettings_DisableExceptions);
 2    try
 3    {
@@ -529,7 +529,7 @@ Because exceptions were disabled, both verifications will be written to the log.
 
 The scriptable Verify API can be used outside TAEF. Make sure that the Te.Common.dll is registered, as called out in the [Installation section](#installation), and simple create the "TE.Common.Verify" class.
 
-```
+```cpp
 var VerifySettings_DisableExceptions = 0x2000;
 
 var Verify = new ActiveXObject("TE.Common.Verify");

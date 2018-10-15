@@ -19,16 +19,8 @@ ms.localizationpriority: medium
 # \#Else Conditional Preprocessor Directive
 
 
-```
+```GDL
 #Else:
 ```
 
 The \#Else directive defines the end of the previous section and the start of a new conditional section. The section is preserved if no previous section in the construct has been preserved. Otherwise, it is deleted. No symbol is used.
-
- 
-
- 
-
-
-
-

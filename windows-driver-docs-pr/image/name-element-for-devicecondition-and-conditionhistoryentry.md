@@ -25,7 +25,7 @@ The required **Name** element names the current error condition that is specifie
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Name>
   text
 </wscn:Name>
@@ -128,7 +128,7 @@ Some error names are valid for only certain [**Component**](component.md) elemen
 
 You can both extend and subset the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Component**](component.md)

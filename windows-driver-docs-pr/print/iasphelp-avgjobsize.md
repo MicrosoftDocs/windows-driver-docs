@@ -53,7 +53,7 @@ The average job size can be expressed as either the number of pages per job or t
 
 Before you query this property, call the [**Iasphelp::CalcJobETA**](iasphelp-calcjobeta.md) method to initialize the property value.
 
-```
+```cpp
     Dim objPrinter, strPrinter, JobSizeAvg
     strPrinter = Session("MS_printer")
     Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
@@ -82,7 +82,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Iasphelp::AvgJobSizeUnit**](iasphelp-avgjobsizeunit.md)

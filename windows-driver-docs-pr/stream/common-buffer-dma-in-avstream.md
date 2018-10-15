@@ -46,7 +46,7 @@ Within the vendor-supplied [*AVStrMiniPinProcess*](https://msdn.microsoft.com/li
 
 1.  Call [**KsPinGetLeadingEdgeStreamPointer**](https://msdn.microsoft.com/library/windows/hardware/ff563513):
 
-    ```
+    ```cpp
     KSSTREAM_POINTER *Leading = KsPinGetLeadingEdgeStreamPointer (
                     Pin,
                     State

@@ -41,7 +41,7 @@ If your device metadata package supports multiple device models or model IDs, yo
 
 The following is an example of a [**ModelIDList**](https://msdn.microsoft.com/library/windows/hardware/ff549303) element that has multiple **ModelID** elements:
 
-```
+```cpp
 <ModelIDList>
 <ModelID>825AAB98-18EE-4FE2-9472-197D1D00FE31</ModelID>
 <ModelID>23F64715-AC4A-4DC4-B554-C8D56E43FE8B</ModelID>

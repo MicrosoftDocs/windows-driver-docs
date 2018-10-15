@@ -25,7 +25,7 @@ The required **ValidateScanTicketRequest** operation element enables a client to
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ValidateScanTicketRequest>
   child elements
 </wscn:ValidateScanTicketRequest>
@@ -91,7 +91,7 @@ Examples
 
 The following code example shows a validation request for a valid scan ticket.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
@@ -146,7 +146,7 @@ The following code example shows a validation request for a valid scan ticket.
 
 The following code example shows a validation request for an invalid scan ticket.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
@@ -195,19 +195,8 @@ The following code example shows a validation request for an invalid scan ticket
 </soap:Envelope>
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**ScanTicket**](scanticket.md)
 
 [**ValidateScanTicketRequest**](validatescanticketrequest.md)
-
- 
-
- 
-
-
-
-
-
-

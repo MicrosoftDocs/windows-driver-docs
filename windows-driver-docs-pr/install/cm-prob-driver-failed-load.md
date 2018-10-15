@@ -16,35 +16,22 @@ ms.localizationpriority: medium
 
 This function is reserved for system use.
 
-
-
-
-
 The driver could not be loaded.
 
-### Error Code
+## Error Code
 
 39
 
-### Display Message (Windows XP and later versions of Windows)
+### Display Message
 
 "Windows cannot load the device driver for this hardware. The driver may be corrupted or missing. (Code 39)"
 
-### Recommended Resolution (Windows XP and later versions of Windows)
+### Recommended Resolution
 
 Reinstall or obtain a new driver.
 
 Reasons for this error include the following:
 
--   A driver file that is not present, a binary file that is corrupted, a file I/O problem, or a driver that references an entry point in another binary that could not be loaded.
+- A driver file that is not present, a binary file that is corrupted, a file I/O problem, or a driver that references an entry point in another binary that could not be loaded.
 
--   Starting with Windows Vista, the driver does not comply with [kernel-mode code signing policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md).
-
- 
-
- 
-
-
-
-
-
+- Starting with Windows Vista, the driver does not comply with [kernel-mode code signing policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md).

@@ -40,7 +40,7 @@ When the miniport driver is initialized, it must fill a [**SCSI\_WMILIB\_CONTEXT
 
 The **GuidList** member of the SCSI\_WMILIB\_CONTEXT structure must point to an array of elements of type [**SCSIWMIGUIDREGINFO**](https://msdn.microsoft.com/library/windows/hardware/ff564941) that contain information about the GUIDs that uniquely identify the supported WMI classes defined in the MOF file. The following code snippet illustrates the definition of an array of such elements:
 
-```
+```cpp
 SCSIWMIGUIDREGINFO GuidList[] = 
 {
   {

@@ -16,29 +16,16 @@ ms.localizationpriority: medium
 
 This function is reserved for system use.
 
-
-
-
-
 The device has been stopped.
 
-### Error Code
+## Error Code
 
 44
 
-### Display Message (Windows XP and later versions of Windows)
+### Display Message
 
 "An application or service has shut down this hardware device. (Code 44)"
 
-### Recommended Resolution (Windows XP and later versions of Windows)
+### Recommended Resolution
 
 You must restart the computer.
-
- 
-
- 
-
-
-
-
-

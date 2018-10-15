@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The following code example shows the implementation of the helper methods that are used to initialize the WSD Challenge interface and register the device challenge.
 
-```
+```cpp
 /**************************************************************************\
 * CWSDDevice::InitializeChallengeInterface
 *

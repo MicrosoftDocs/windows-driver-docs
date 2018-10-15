@@ -137,7 +137,7 @@ ii. If no match is found, or if the PPD feature name does not begin with “Job�
 
 d. If the **OrderDependency** section is PageSetup, and the PPD feature name does not begin with “Page”, then “Page” is prepended to the PPD feature name before attempting to match.
 
-e. Any character that is not \[A-Z\], \[a-z\], \[0-9\] or ‘\_’ is replaced with an ‘\_’ character before attempting to match. However, if the \*MSNoPunctuationCharSubstitute? String is set to TRUE, the the filter does not replace ‘.’ or ‘-‘ with an ‘\_’ character.
+e. Any character that is not \[A-Z\], \[a-z\], \[0-9\] or ‘\_’ is replaced with an ‘\_’ character before attempting to match. However, if the \*MSNoPunctuationCharSubstitute? String is set to TRUE, the filter does not replace ‘.’ or ‘-‘ with an ‘\_’ character.
 
 GPD and PPD Options are mapped in the following order:
 1. A PrintSchemaKeywordMap value is specified and it matches the PrintTicket option name.

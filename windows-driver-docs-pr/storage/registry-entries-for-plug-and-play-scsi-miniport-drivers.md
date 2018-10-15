@@ -35,7 +35,7 @@ Unless a miniport driver is installed as a service for an HBA, the **PnPInterfac
 
 The **PnPInterface** registry entry should be made under the **Services** key for the miniport driver. For example, the following registry entry enables Plug and Play for a fictitious miniport driver called Twiddle.
 
-```
+```cpp
 HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services
     \Twiddle
         \Parameters

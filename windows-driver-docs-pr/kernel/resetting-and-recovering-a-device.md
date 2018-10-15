@@ -85,7 +85,7 @@ If the _PRR object exists in the Device scope, the ACPI driver will use the _RST
 ## Verifying ACPI firmware on the test system
 To test your driver that supports device reset and recovery, follow this procedure. This procedure assumes you are using this example ASL file. 
 
-``` 
+```cpp
 DefinitionBlock("SSDT.AML", "SSDT", 0x01, "XyzOEM", "TestTabl", 0x00001000)
 {
     Scope(\_SB_)
@@ -135,7 +135,7 @@ Asl <test>.asl
 5. Reboot the test system. 
 6. Verify that the table is loaded. In Windows Debugger, use these commands. 
 
-```
+```cpp
 !acpicache 
 dt _DESCRIPTION_HEADER address of the SSDT table 
 

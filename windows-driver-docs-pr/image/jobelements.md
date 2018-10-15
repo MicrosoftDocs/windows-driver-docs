@@ -25,7 +25,7 @@ The required **JobElements** element contains all of the job-related elements th
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobElements>
   child elements
 </wscn:JobElements>
@@ -79,7 +79,7 @@ Remarks
 
 The WSD Scan Service returns the **JobElements** element in [**GetJobElementsResponse**](getjobelementsresponse.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ElementData for parent JobElements**](elementdata-for-jobelements-element.md)

@@ -34,13 +34,13 @@ To build a driver as an export driver you must define several Build utility macr
 
 First, you must assign the appropriate value to the **TARGETTYPE** macro, as follows:
 
-```
+```cpp
 TARGETTYPE=EXPORT_DRIVER
 ```
 
 You must also specify a module-definition (.def) file using the **DLLDEF** macro. For example:
 
-```
+```cpp
 DLLDEF="c:\project\driver.def"
 ```
 
@@ -52,7 +52,7 @@ For instance, the entry point for a kernel-mode DLL is always **DllInitialize**.
 
 You cannot specify the entry point using the **DLLENTRY** macro. 
 
-```
+```cpp
 NTSTATUS DllInitialize(
   _In_ PUNICODE_STRING RegistryPath
 );
@@ -67,7 +67,7 @@ The build process generates an export library with a .lib extension, and an expo
 
 To import functions that are exported by an export driver, you should declare the functions using the DECLSPEC\_IMPORT macro, which is defined in Ntdef.h. For example:
 
-```
+```cpp
 DECLSPEC_IMPORT int LoadPrinterDriver (int arg1); 
 ```
 
@@ -81,7 +81,7 @@ Export drivers must be installed in the %Windir%\\System32\\Drivers directory. S
 
 The system calls a kernel-mode DLL's DllUnload routine when it unloads the DLL.
 
-```
+```cpp
 NTSTATUS DllUnload(void);
  
 ```

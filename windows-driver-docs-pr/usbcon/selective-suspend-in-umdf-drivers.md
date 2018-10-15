@@ -77,7 +77,7 @@ To create the queue, the driver calls the driver-defined **CMyQueue::Initialize*
 
 The following code snippet shows the driver’s call to the **CMyQueue::Initialize** method as part of read-write queue creation:
 
-```
+```cpp
 #if defined(_NOT_POWER_POLICY_OWNER_)
     powerManaged = false;
 #else
@@ -92,7 +92,7 @@ hr = __super::Initialize(WdfIoQueueDispatchParallel,
 
 **CMyQueue::Initialize** then calls [**IWDFDevice::CreateIoQueue**](https://msdn.microsoft.com/library/windows/hardware/ff557020) to create the queue as follows:
 
-```
+```cpp
 hr = m_FxDevice->CreateIoQueue(
                                callback,
                                Default,
@@ -124,7 +124,7 @@ To support selective suspend, a UMDF USB driver that is the PPO for its device s
 
 The following example shows how the IdleWake\_PPO driver calls this method in its internal CMyDevice::SetPowerManagement method:
 
-```
+```cpp
 hr = m_FxDevice->AssignS0IdleSettings( IdleUsbSelectiveSuspend,
                                 PowerDeviceMaximum,
                                 IDLE_TIMEOUT_IN_MSEC,
@@ -161,7 +161,7 @@ For an example of how to implement USB selective suspend in a UMDF USB function 
 
 To notify WinUSB.sys that the device can support USB selective suspend, the device INF must add the DeviceIdleEnabled value to the device’s hardware key and set the value to 1. The following example shows how the Fx2\_Driver sample adds and sets this value in the WUDFOsrUsbFx2\_IdleWakeNon-PPO.Inx file:
 
-```
+```cpp
 [OsrUsb_Device_AddReg]
 ...
 HKR,,"DeviceIdleEnabled",0x00010001,1
@@ -172,7 +172,7 @@ HKR,,"DeviceIdleEnabled",0x00010001,1
 A UMDF USB driver can enable USB selective suspend either at runtime or during installation in the INF.
 
 -   To enable support at runtime, the function driver calls [**IWDFUsbTargetDevice::SetPowerPolicy**](https://msdn.microsoft.com/library/windows/hardware/ff560385) and sets the PolicyType parameter to AUTO\_SUSPEND and the Value parameter to TRUE or 1. The following example shows how the Fx2\_Driver sample enables selective suspend in the DeviceNonPpo.cpp file:
-    ```
+    ```cpp
     BOOL AutoSuspend = TRUE;
     hr = m_pIUsbTargetDevice->SetPowerPolicy( AUTO_SUSPEND,
                                               sizeof(BOOL),
@@ -180,7 +180,7 @@ A UMDF USB driver can enable USB selective suspend either at runtime or during i
     ```
 
 -   To enable support during installation, the INF includes an AddReg directive that adds the DefaultIdleState value to the device’s hardware key and sets the value to 1. For example:
-    ```
+    ```cpp
     HKR,,"DefaultIdleState",0x00010001,1
     ```
 
@@ -189,12 +189,12 @@ A UMDF USB driver can enable USB selective suspend either at runtime or during i
 By default, WinUSB suspends the device after 5 seconds if no transfers are pending or if the only pending transfers are IN transfers on an interrupt or bulk endpoint. A UMDF driver can change this idle time-out value either at installation in the INF or at runtime.
 
 -   To set an idle time-out at installation, the INF includes an AddReg directive that adds the DefaultIdleTimeout value to the device’s hardware key and sets the value to the time-out interval in milliseconds. The following example sets the time-out to 7 seconds:
-    ```
+    ```cpp
     HKR,,"DefaultIdleTimeout",0x00010001,7000
     ```
 
 -   To set an idle time-out at runtime, the driver calls **IWDFUsbTargetDevice::SetPowerPolicy** with PolicyType set to SUSPEND\_DELAY and Value to the idle time-out value, in milliseconds. In the following example from the Device.cpp file, the Fx2\_Driver sample sets the time-out to 10 seconds:
-    ```
+    ```cpp
     HRESULT hr;
     ULONG value;
     value = 10 * 1000;
@@ -207,7 +207,7 @@ By default, WinUSB suspends the device after 5 seconds if no transfers are pendi
 
 UMDF USB drivers that use WinUSB selective suspend support can optionally allow the user to enable or disable selective suspend. To do so, include an AddReg directive in the INF that adds the UserSetDeviceIdleEnabled value to the device’s hardware key and sets the value to 1. The following shows the string to use for the AddReg directive:
 
-```
+```cpp
 HKR,,"UserSetDeviceIdleEnabled",0x00010001,1
 ```
 
@@ -232,7 +232,7 @@ Call the [**IWDFDevice2::AssignSxWakeSettings**](https://msdn.microsoft.com/libr
 
 The following example shows how the IdleWake\_PPO driver calls this method in its internal **CMyDevice::SetPowerManagement** method:
 
-```
+```cpp
 hr = m_FxDevice->AssignSxWakeSettings( PowerDeviceMaximum,
                                        WakeAllowUserControl,
                                        WdfUseDefault);
@@ -242,7 +242,7 @@ hr = m_FxDevice->AssignSxWakeSettings( PowerDeviceMaximum,
 
 To enable system wake through WinUSB, the driver’s INF adds the registry value SystemWakeEnabled to the device’s hardware key and sets it to 1. The IdleWake\_Non-PPO sample enables system wake as follows:
 
-```
+```cpp
 [OsrUsb_Device_AddReg]
 ...
 HKR,,"SystemWakeEnabled",0x00010001,1

@@ -110,7 +110,7 @@ A SAN service provider must support these control codes if it supports QoS. Othe
 <a href="" id="sio-address-list-query"></a>SIO\_ADDRESS\_LIST\_QUERY  
 Retrieves the list of local IP addresses that are assigned to the network interface cards (NICs) that the SAN service provider controls. The SAN service provider uses a SOCKET\_ADDRESS\_LIST structure, defined as follows, to return the list in **WSPIoctl**'s output buffer:
 
-```
+```C++
 typedef struct _SOCKET_ADDRESS_LIST {
     INT             iAddressCount; 
     SOCKET_ADDRESS  Address[1]; 

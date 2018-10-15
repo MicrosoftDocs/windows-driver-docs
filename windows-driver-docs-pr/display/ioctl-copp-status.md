@@ -29,7 +29,7 @@ Returns status on a protected video session.
 
 The [**VIDEO\_REQUEST\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff570547) (VRP) **InputBuffer** contains information passed from the display driver. For example, the display driver can pass a pointer to a COPP\_IO\_InputBuffer structure defined as follows:
 
-```
+```cpp
 typedef struct {
     PVOID* ppThis;
     PVOID InputBuffer;

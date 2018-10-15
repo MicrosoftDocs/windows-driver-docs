@@ -30,7 +30,7 @@ The root element of any request or response identifies its type. The &lt;EnumSch
 
 Each &lt;Query&gt; has a schema= attribute that points to the property or property value that is being read/written. The values of these schema= attributes are paths in the tree of the Bidirectional Communications Schema.
 
-For example, each &lt;Get&gt; response repeats the original set of queries and adds a result to each of them. Each &lt;Set&gt; response repeats the original set of of "queries," but provides nothing more for queries that succeed. If any query fails for either a &lt;Get&gt; or &lt;Set&gt; request, the result is an error message.
+For example, each &lt;Get&gt; response repeats the original set of queries and adds a result to each of them. Each &lt;Set&gt; response repeats the original set of "queries," but provides nothing more for queries that succeed. If any query fails for either a &lt;Get&gt; or &lt;Set&gt; request, the result is an error message.
 
 For more information about constructing requests, see [Constructing a Bidi Communications Schema Query](constructing-a-bidi-communication-schema-query.md).
 

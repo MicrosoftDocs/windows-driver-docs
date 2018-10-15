@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The ISCSI\_RedirectSessionInfo WMI class contains a collection of connections for an iSCSI session. This class is defined as follows in *Mgmt.mof.*
 
-```
+```cpp
 class ISCSI_RedirectSessionInfo
 {
     [read,

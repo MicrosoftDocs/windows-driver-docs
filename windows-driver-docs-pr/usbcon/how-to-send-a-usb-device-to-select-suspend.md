@@ -43,7 +43,7 @@ The USB client driver verifier is automatically enabled when you enable the [Dri
 
  
 
-```
+```cpp
 HKEY_LOCAL_MACHINE
    SYSTEM
       CurrentControlSet
@@ -62,7 +62,7 @@ When the verifier is enabled, the USB driver stack keeps track of URBs that the 
 
 Additionally and optionally, you can configure the USB client driver verifier to modify or fail specific routines and specify how often the routine must fail. To configure the verifier, set the registry entries as shown here:
 
-```
+```cpp
 HKEY_LOCAL_MACHINE
    SYSTEM
       CurrentControlSet

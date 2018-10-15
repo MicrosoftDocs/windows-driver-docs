@@ -128,7 +128,7 @@ The following table contains Windows kernel macros:
 <p>On platforms on which address 0 is an invalid address, a driver that accesses address 0 at IRQL &lt; DISPATCH_LEVEL causes an exception (access violation) that can be inadvertently caught by a <code>try/except</code> statement. Thus, the driver's exception handling code might mask the invalid access and prevent it from being detected during debugging. However, an access of the <strong>MM_BAD_POINTER</strong> address is guaranteed to cause a bug check, which cannot be masked by an exception handler.</p>
 <p>The following code example shows how to assign the value <strong>MM_BAD_POINTER</strong> to a pointer variable named <code>ptr</code>. The Ntdef.h header file defines the PUCHAR type to be a pointer to an <code>unsigned char</code>.</p>
 <div class="code">
-```
+```cpp
 PUCHAR ptr = (PUCHAR)MM_BAD_POINTER;  // Now *ptr is guaranteed to fault.
 ```
 </div>
@@ -177,7 +177,7 @@ Available starting with Windows 8.1. Compatible with previous versions of Windo
 <p><strong>PPFN_NUMBER</strong></p>
 <p>A pointer to the beginning of the array of physical page numbers associated with the MDL. The number of entries in the array is <strong>ADDRESS_AND_SIZE_TO_SPAN_PAGES</strong>(<strong>MmGetMdlVirtualAddress</strong>(<em>Mdl</em>), <strong>MmGetMdlByteCount</strong>(<em>Mdl</em>)). Each array element is an integer value of type PFN_NUMBER, which is defined in Wdm.h as follows:</p>
 <div class="code">
-```
+```cpp
 typedef ULONG PFN_NUMBER, *PPFN_NUMBER;
 ```
 </div>

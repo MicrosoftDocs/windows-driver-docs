@@ -25,7 +25,7 @@ The required **JobToken** element contains the device-created token for a new sc
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobToken>
   text
 </wscn:JobToken>
@@ -73,7 +73,7 @@ Remarks
 
 The **JobToken** element is paired with the [**JobId**](jobid.md) element to uniquely represent a specific scan job. **JobToken** is passed to the scan device in the [**RetrieveImageRequest**](retrieveimagerequest.md) operation element to enable the device to verify that the scan requester actually created the scan job.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobResponse**](createscanjobresponse.md)

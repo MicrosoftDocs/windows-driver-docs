@@ -27,7 +27,7 @@ The following command-line example uses MakeCert to complete the following tasks
 
 Use the following MakeCert command to create the *Contoso.com(Test)* certificate:
 
-```
+```cpp
 makecert -r -pe -ss PrivateCertStore -n CN=Contoso.com(Test) -eku 1.3.6.1.5.5.7.3.3 ContosoTest.cer
 ```
 

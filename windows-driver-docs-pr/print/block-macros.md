@@ -59,7 +59,7 @@ where *BlockMacroName* is a unique name, and *BlockMacroBody* is a set of one or
 
 For example, you might define a block macro named EnvelopeDefaults, which is defined as follows:
 
-```
+```cpp
 *BlockMacro: EnvelopeDefaults
 {
     *PrintableArea: PAIR(4646, 6738)
@@ -89,7 +89,7 @@ where *BlockMacroName* is a unique name, previously specified in the **\*BlockMa
 
 For example, to reference the EnvelopeDefaults macro within an option specification, you could use the following entries:
 
-```
+```cpp
 *Option: Env9
 {
     *InsertBlock: =EnvelopeDefaults

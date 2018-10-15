@@ -23,7 +23,7 @@ Win32-based applications process the messages that are sent to the application's
 
 The following code example shows how to process WM\_DEVICECHANGE messages in a Win32-based application:
 
-```
+```cpp
 // Prototype for the function that handles the
 // processing of WM_DEVICECHANGE messages.
 LRESULT
@@ -164,7 +164,7 @@ The MFC framework processes the messages that are sent to an MFC-based applicati
 
 The following code example shows how to implement an **OnDeviceChange** member function in an MFC-based application:
 
-```
+```cpp
 afx_msg BOOL
 CAppWnd::OnDeviceChange(
   UINT nEventType,

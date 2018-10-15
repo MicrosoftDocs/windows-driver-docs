@@ -96,7 +96,7 @@ The audio application can initiate the connection in shared mode or exclusive mo
 
 In shared mode, an audio application shares the audio hardware with other audio applications that are running in other processes. The audio engine mixes the streams from these applications and plays the resulting mix through the hardware. Any application that opens a stream in shared mode must select the mix format that is used by the audio engine. The advantage of using shared mode is that the Windows Vista audio engine provides a built-in Audio Processing Object (APO) to provide the necessary supporting functionality. The disadvantage of using shared mode is that audio stream latency is higher than it is in exclusive mode. The following code example shows the syntax for initializing an audio stream in shared mode.
 
-```
+```cpp
  hResult = pAudioClient->Initialize(
         AUDCLNT_SHAREMODE_SHARED, 
         0,
@@ -110,7 +110,7 @@ In shared mode, an audio application shares the audio hardware with other audio 
 
 In contrast, when an application opens a stream in exclusive mode, the application has exclusive access to the audio hardware. In this mode the application can select any audio format that the endpoint supports. The advantage of using exclusive mode is that audio stream latency is lower than it is in shared mode. The disadvantage of using exclusive mode is that you must provide your own APO to handle the supporting functionality of the audio engine. Only a small number of professional level applications require this mode of operation. The following code example shows the syntax for initializing an audio stream in exclusive mode.
 
-```
+```cpp
  hResult = pAudioClient->Initialize(
             AUDCLNT_SHAREMODE_EXCLUSIVE,
             0,

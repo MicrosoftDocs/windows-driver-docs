@@ -23,7 +23,7 @@ Windows Plug and Play finds and loads device drivers based on a device identifie
 
 The [Windows ACPI driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/acpi-driver), Acpi.sys, assembles the values found in these objects into a variety of device identifier strings that can identify a device very specifically, or quite generically, depending on the needs of the driver. Some of the string patterns created to identify ACPI-enumerated devices are:
 
-``` syntax
+```syntax
 ACPI\VEN_vvv[v]&DEV_dddd&SUBSYS_sss[s]nnnn&REV_rrrr
 ACPI\VEN_vvv[v]&DEV_dddd&SUBSYS_sss[s]nnnn
 ACPI\VEN_vvv[v]&DEV_dddd&REV_rrrr

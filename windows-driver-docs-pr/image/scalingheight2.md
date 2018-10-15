@@ -25,7 +25,7 @@ The required **ScalingHeight** element contains the range of allowable values fo
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScalingHeight>
   child elements
 </wscn:ScalingHeight>
@@ -84,7 +84,7 @@ The **ScalingHeight** element contains the [**MinValue**](minvalue.md) and [**Ma
 
 **MinValue** and **MaxValue** must be integers from 1 through 1000, with **MinValue** less than or equal to **MaxValue**. A value of 100 means that the scan device should not make any adjustments to the height of the scanned image. At a minimum, the WSD Scan Service must support the value of 100.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**MaxValue**](maxvalue.md)

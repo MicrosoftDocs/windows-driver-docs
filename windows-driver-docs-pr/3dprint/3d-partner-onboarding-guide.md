@@ -65,7 +65,7 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
     - If the printer is using the Microsoft Slicer, the Hardware ID that it creates must be **Enum\\3DPrint\\MS3DPrint**
 
 > [!NOTE]
-> If the the printer is using a custom slicer, continue with steps 4-7.
+> If the printer is using a custom slicer, continue with steps 4-7.
 
 4. Build the Fabrikam driver (slicer template only)
 
@@ -85,7 +85,7 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
     - Replace the entries hardware IDs:
 
-        ```
+        ```INF
         %DeviceName%=FabrikamPrintDriverV4\_Install,3DPRINTER\\Fabrikam1
 
         %DeviceNamePlus%=FabrikamPrintDriverV4\_Install,3DPRINTER\\Fabrikam2

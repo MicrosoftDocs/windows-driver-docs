@@ -21,7 +21,7 @@ The **DownloadPreviewImage** function downloads image data from the scanner by c
 
 In this example, the application user sets the *m\_bUseSegmentationFilter* parameter by clicking a check box. If the application supports this, it should first check that the driver has a segmentation filter by calling **IWiaItem2::CheckExtension**. For information about **CheckImgFilter**, which is used in this example, see the **IWiaPreview::GetNewPreview** method in the Microsoft Windows SDK documentation.
 
-```
+```cpp
 HRESULT
 DownloadPreviewImage(
   IN IWiaItem2 *pWiaFlatbedItem2)

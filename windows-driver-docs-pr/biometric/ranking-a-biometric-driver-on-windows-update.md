@@ -30,7 +30,7 @@ If a customer decides to opt into a legacy stack, the customer can install a hig
 
 Feature Score is represented in the third and fourth digit of the overall driver rank. For instance, *GG* is the feature score from the following driver rank:
 
-```
+```cpp
 0x00GG0000 
 ```
 
@@ -42,7 +42,7 @@ The feature score for a driver is set by an INF FeatureScore directive in the [*
 
 For example, the following code sets the feature score of a driver to 0x20:
 
-```
+```cpp
 [DDInstallSectionName]
 . . .
 FeatureScore=x20

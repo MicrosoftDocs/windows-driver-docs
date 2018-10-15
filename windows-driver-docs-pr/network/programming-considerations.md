@@ -23,7 +23,7 @@ A network module should use some form of reference counting to keep track of the
 
 For example, a client module might use an implementation similar to the following for tracking the number of in-progress calls to an attached provider module's NPI functions:
 
-```
+```C++
 // Context structure for the client&#39;s binding to a provider module
 typedef struct CLIENT_BINDING_CONTEXT_ {
   LIST_ENTRY Link;

@@ -24,7 +24,7 @@ This section uses example WMI classes that contain WMI methods and describes wha
 
 The following example WMI classes contain WMI methods:
 
-```
+```cpp
 class MSFC_HBAAdapterMethods
 {
     [key] 
@@ -79,7 +79,7 @@ When the SCSI Port WMI library dispatch routine calls your miniport driver's exe
 
 The following example shows how the execute method callback routine might handle the methods in the previous example.
 
-```
+```cpp
 HwScsiWmiExecuteMethod (
     IN PVOID Context,
     IN PSCSIWMI_REQUEST_CONTEXT DispatchContext,
@@ -138,7 +138,7 @@ The **wmimofck** tool forms the name of the structure that contains the method's
 
 The following code snippet shows how an execute method callback routine could validate the size of the input and output buffers for a method called **GetDiscoveredPortAttributes** in a class called **MSFC\_HBAPortMethods**:
 
-```
+```cpp
 case MSFC_HBAPortMethodsGuidIndex:
   switch(MethodId) {
     case GetDiscoveredPortAttributes:

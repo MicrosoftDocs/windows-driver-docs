@@ -37,7 +37,7 @@ In addition, file attributes must be compatible. A file with the read-only attri
 
 The following code example is specific to the FAT semantics. A file system that implements DACLs as well, would do an additional security check using the Security Reference Monitor routines ([**SeAccessCheck**](https://msdn.microsoft.com/library/windows/hardware/ff563674), for example.)
 
-```
+```cpp
     //
     //  check for a read-only Dirent
     //
@@ -76,7 +76,7 @@ A more subtle check implemented by FASTFAT is to ensure that the access requeste
 
 The following code example demonstrates an important concept for file system security. Check to ensure that what is passed to your file system does not fall outside the bounds of what you expect. The conservative and proper approach from the perspective of security is that if you do not understand an access request, you should reject that request.
 
-```
+```cpp
     //
     // Check the desired access for the object. 
     // Reject what we do not understand.

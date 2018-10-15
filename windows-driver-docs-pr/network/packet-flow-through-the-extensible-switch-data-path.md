@@ -158,12 +158,3 @@ The extensible switch data path has the following parts, listed in the order tha
 7.  Once the packet has been forwarded, the interface completes the packet through the same path in reverse. First, the interface calls the extension's [*FilterReturnNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/ff549964) function to complete packets forwarded on the egress data path. Then, the interface calls the extension's [*FilterSendNetBufferListsComplete*](https://msdn.microsoft.com/library/windows/hardware/ff549967) function to complete packets forwarded on the ingress data path.
 
     When the packet is completed on both the egress and ingress data path, the extension performs any necessary packet cleanup and post-processing that may be required.
-
- 
-
- 
-
-
-
-
-

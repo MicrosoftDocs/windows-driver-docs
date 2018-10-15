@@ -34,7 +34,7 @@ A driver or other system component sends this IRP at IRQL &lt; DISPATCH\_LEVEL i
 
 **Parameters.ReadWriteConfig** is a structure containing the following information:
 
-```
+```cpp
 ULONG WhichSpace;
 PVOID Buffer;
 ULONG Offset;

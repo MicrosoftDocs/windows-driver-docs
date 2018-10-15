@@ -74,7 +74,7 @@ As an example, suppose that an HP Color LaserJet printer is installed on a print
 
 An installation application would call the ICM API function **AssociateColorProfileWithDevice**, which in turn calls **SetPrinterDataEx** to create the following server registry entries:
 
-```
+```cpp
 CopyFiles\ICM\Directory: Color
 CopyFiles\ICM\Files: hpclrsr.icm
 CopyFiles\ICM\Module: mscms.dll

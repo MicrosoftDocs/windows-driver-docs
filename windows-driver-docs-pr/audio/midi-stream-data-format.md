@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 This example uses a [**KSDATAFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff561656) structure to describe the data format of a MIDI stream.
 
-```
+```cpp
   DataFormat.FormatSize  = sizeof(KSDATAFORMAT);
   DataFormat.Flags       = 0;
   DataFormat.SampleSize  = 0;

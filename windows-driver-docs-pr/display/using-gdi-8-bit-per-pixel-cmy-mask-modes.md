@@ -38,7 +38,7 @@ The following steps are required for all Windows XP and later drivers that use W
 
 2.  Set *pPaletteEntry*\[0\] as follows prior to a call to **HT\_Get8BPPMaskPalette**:
 
-    ```
+    ```cpp
     pPaletteEntry[0].peRed   = &#39;R&#39;;
     pPaletteEntry[0].peGreen = &#39;G&#39;;
     pPaletteEntry[0].peBlue  = &#39;B&#39;;
@@ -47,7 +47,7 @@ The following steps are required for all Windows XP and later drivers that use W
 
     To do this, a caller should use the **HT\_SET\_BITMASKPAL2RGB** macro (defined in *winddi.h*). Here is an example showing the use of this macro:
 
-    ```
+    ```cpp
     HT_SET_BITMASKPAL2RGB(pPaletteEntry)
     ```
 
@@ -55,7 +55,7 @@ The following steps are required for all Windows XP and later drivers that use W
 
 3.  Check the *pPaletteEntry* parameter returned from the call to [**HT\_Get8BPPMaskPalette**](https://msdn.microsoft.com/library/windows/hardware/ff567320) using the **HT\_IS\_BITMASKPALRGB** macro, which is defined in *winddi.h*. Here is an example showing the use of this macro.
 
-    ```
+    ```cpp
     InvCMYSupported = HT_IS_BITMASKPALRGB(pPaletteEntry)
     ```
 
@@ -454,7 +454,7 @@ In the product above, C, M, and Y represent the number of levels of cyan, magent
 
 -   If the requested palette is a CMY mode palette (not a CMY\_INVERTED mode palette), then for values of *CMYMask* from 3 to 255, the rendered 8-bit-per-pixel byte index bits have the following meaning. In this case, the bit patterns represent ink levels that can be used directly without translation. This also applies when a CMY\_INVERTED mode byte index is mapped to CMY mode using a translation table's **CMY332Idx** member. See [Translating 8-Bit-Per-Pixel Halftone Indexes to Ink Levels](translating-8-bit-per-pixel-halftone-indexes-to-ink-levels.md) for more information.
 
-```
+```cpp
   Bit     7 6 5 4 3 2 1 0
           |   | |   | | |
           +---+ +---+ +-+

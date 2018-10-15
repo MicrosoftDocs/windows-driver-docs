@@ -25,7 +25,7 @@ The required **PlatenResolutions** element contains a list of resolutions at whi
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:PlatenResolutions>
   child elements
 </wscn:PlatenResolutions>
@@ -84,7 +84,7 @@ The resolution is specified as a [**Width**](width.md) x [**Height**](height.md)
 
 The WSD Scan Service should list all possible widths that the scan device supports within the Widths child element and all possible heights that the scan device supports within the Heights child element. All Width and Height values are independent of each other, and most devices will support them being paired in any combination within a [**ScanTicket**](scanticket.md) element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Height**](height.md)

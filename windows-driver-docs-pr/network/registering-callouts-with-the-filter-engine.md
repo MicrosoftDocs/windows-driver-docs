@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 After a callout driver has created a device object, it can then register its callouts with the filter engine. A callout driver can register its callouts with the filter engine at any time, even if the filter engine is currently not running. To register a callout with the filter engine, a callout driver calls the [**FwpsCalloutRegister0**](https://msdn.microsoft.com/library/windows/hardware/ff551140) function. For example:
 
-```
+```C++
 // Prototypes for the callout's callout functions
 VOID NTAPI
  ClassifyFn(

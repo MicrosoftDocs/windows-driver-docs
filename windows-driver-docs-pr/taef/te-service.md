@@ -86,7 +86,7 @@ To subscribe:
 
 Example:
 
-```
+```cpp
     // define a call back function
     DWORD WINAPI HandlerEx(DWORD dwControl, DWORD dwEventType, LPVOID, LPVOID)
     {

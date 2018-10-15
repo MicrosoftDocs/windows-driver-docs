@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 This section creates one or more new [device interface classes](device-interface-classes.md). After a new class is created, subsequently installed devices/drivers can be registered to support the new device interface class by using [**INF *DDInstall*.Interfaces sections**](inf-ddinstall-interfaces-section.md) in their respective INF files, or by calling [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506).
 
-```
+```cpp
 [InterfaceInstall32]
  
 {InterfaceClassGUID}=install-interface-section[,flags]
@@ -55,7 +55,7 @@ Each *install-interface-section* name must be unique within the INF file and mus
 
 Any specified *install-interface-section* has the following general form:
 
-```
+```cpp
 [interface-install-section] | 
 [interface-install-section.nt] | 
 [interface-install-section.ntx86] | 
