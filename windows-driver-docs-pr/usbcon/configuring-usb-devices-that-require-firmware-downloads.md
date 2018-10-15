@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 
 Firmware is internal to a device and is independent of the operating system. However, firmware downloads can cause operating system errors.
 
--   In Windows XP, attaching your device to the system might cause multiple plug and unplug sounds, leading to the poor end user experience.
+-   In Windows XP, attaching your device to the system might cause multiple plug and unplug sounds, leading to a poor end user experience.
 
--   Because the firmware is downloaded every time the device starts, it might not function immediately after it has been plugged in, or after the operating system resumes from an S3 or S4 power state.
+-   Because firmware is downloaded every time the device starts, it might not function immediately after it has been plugged in, or after the operating system resumes from an S3 or S4 power state.
 
 -   On a resume from S3 or S4, your device might cause the surprise removal dialog box to pop up because most machines cut off power to self-powered devices in S4 mode.
 
