@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 This topic provides information on implementation of a Custom Media Source within the Frame Server architecture. 
 
-## AV Stream vs. Custom Media Source
+## AV Stream and Custom Media Source options
 
 When deciding how to provide video capture stream support within the Frame Server architecture, there are two main options: AV Stream and Custom Media Source.
 
@@ -27,7 +27,7 @@ The main benefit of an AV Stream Driver approach is that the PnP and Power Manag
 
 However, it also means the underlying source must be a physical device with a kernel mode driver to interface with the hardware. For UVC devices, a Windows UVC 1.5 class driver is provided in box so devices simply need to implement their firmware.
 
-But for MIPI based devices, the vendor will need to implement their own AV Stream miniport driver.
+For MIPI based devices, the vendor will need to implement their own AV Stream miniport driver.
 
 ### Custom Media Source
 
@@ -37,7 +37,7 @@ In such situations, a Custom Media Source using the Frame Server model would be 
 
 | Features | Custom Media Source | AV Stream Driver |
 |---|---|---|
-| PnP / Power Management | Must be implemented by the source and/or stub driver | Provided by the AV Stream framework |
+| PnP and Power Management | Must be implemented by the source and/or stub driver | Provided by the AV Stream framework |
 | User mode plugin       | Not available. Custom Media Source incorporates the OEM/IHV specific user mode logic. | DMFT, Platform DMFT, and MFT0 for legacy implementation |
 | Sensor Group | Supported | Supported |
 | Camera Profile V2 | Supported | Supported |
@@ -75,7 +75,7 @@ As a part of the Frame Server model, there are two cases in how Custom Media Sou
 
 -   During "camera" activation
 
-The Sensor Group generation is typically done during device installation and/or power cycle. Given this, we strongly recommended that Custom Media Sources avoid any significant processing during its creation and defer any such activity to the IMFMediaSource::Start function. The Sensor Group generation will not attempt to start the Custom Media Source, merely query the various available streams/media types and source/stream attribute information.
+The Sensor Group generation is typically done during device installation and/or power cycle. Given this, we strongly recommended that Custom Media Sources avoid any significant processing during its creation and defer any such activity to the [IMFMediaSource::Start](https://docs.microsoft.com/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-start) function. The Sensor Group generation will not attempt to start the Custom Media Source, merely query the various available streams/media types and source/stream attribute information.
 
 ## Stub Driver
 
@@ -85,18 +85,18 @@ The stub driver can be written using either the WDF (UMDF or KMDF) or the WDM dr
 
 The driver requirements are:
 
--   Register your "camera" (the Custom Media Source) device interface under the KSCATEGORY\_VIDEO\_CAMERA category so it can be enumerated.
+-   Register your "camera" (the Custom Media Source) device interface under the [KSCATEGORY_VIDEO_CAMERA](https://docs.microsoft.com/windows-hardware/drivers/install/kscategory-video-camera) category so it can be enumerated.
 
 > [!NOTE]
-> To allow enumeration by legacy DirectShow applications, your driver will need to also register under the KCATEGORY\_VIDEO and KSCATEGORY\_CAPTURE.
+> To allow enumeration by legacy DirectShow applications, your driver will need to also register under the [KSCATEGORY_VIDEO](https://docs.microsoft.com/windows-hardware/drivers/install/kscategory-video) and [KSCATEGORY_CAPTURE](https://docs.microsoft.com/windows-hardware/drivers/install/kscategory-capture).
 
--   Add a registry entry under the device interface node (use the AddReg directive in your driver INF's DDInstall.Interface section) which declares the CoCreate-able CLSID of your Custom Media Source's COM object. This must be added using the following registry value name: CustomCaptureSourceClsid.
+-   Add a registry entry under the device interface node (use the AddReg directive in your driver INF DDInstall.Interface section) which declares the CoCreate-able CLSID of your Custom Media Source COM object. This must be added using the following registry value name: CustomCaptureSourceClsid.
 
 This allows the "camera" source to be discovered by applications and when activated, informs the Frame Server service to intercept the activation call and re-route it to the CoCreated Custom Media Source.
 
 ### Sample INF
 
-Here's a sample of how a typical INF would look for a Custom Media Source stub driver:
+The following sample shows a typical INF for a Custom Media Source stub driver:
 
 ```INF
 ;/*++
@@ -208,7 +208,7 @@ ServiceBinary=%12%\UMDF\SimpleMediaSourceDriver.dll
 ProviderString = "Microsoft Corporation"
 StdMfg = "(Standard system devices)"
 DiskId1 = "SimpleMediaSource Disk \#1"
-SimpleMediaSource.DeviceDesc = "SimpleMediaSource Capture Source" ; what you'll see under SimpleMediaSource dummy devices
+SimpleMediaSource.DeviceDesc = "SimpleMediaSource Capture Source" ; what you will see under SimpleMediaSource dummy devices
 ClassName = "SimpleMediaSource dummy devices" ; device type this driver will install as in device manager
 WudfRdDisplayName="Windows Driver Foundation - User-mode Driver Framework Reflector"
 KSCATEGORY_VIDEO_CAMERA = "{E5323777-F976-4f5b-9B55-B94699C46E44}"
@@ -225,7 +225,7 @@ REG_EXPAND_SZ = 0x00020000
 
 The above Custom Media Source registers under KSCATEGORY\_VIDEO, KSCATEGORY\_CAPTURE and KSCATEGORY\_VIDEO\_CAMERA to ensure the "camera" is discoverable by any UWP and non-UWP apps searching for a standard RGB camera.
 
-If the Custom Media Source also exposes non-RGB streams (IR, Depth, and so on) it may optionally also register under the KSCATEGORY\_SENSOR\_CAMERA.
+If the Custom Media Source also exposes non-RGB streams (IR, Depth, and so on) it may optionally also register under the [KSCATEGORY_SENSOR_CAMERA](https://docs.microsoft.com/windows-hardware/drivers/install/kscategory-sensor-camera).
 
 > [!NOTE]
 > Most USB based webcams will expose YUY2 and MJPG formats. Because of this behavior, many DirectShow/legacy applications are written with the assumption that YUY2/MJPG is available. To ensure compatibility with such application, it is recommended that YUY2 media type is made available from your Custom Media Source if legacy app compatibility is desired.
@@ -344,7 +344,7 @@ Arguments:
 
     DeviceInit - Pointer to an opaque init structure. Memory for this
                     structure will be freed by the framework when the WdfDeviceCreate
-                    succeeds. So don't access the structure after that point.
+                    succeeds. Do not access the structure after that point.
 
 Return Value:
 
@@ -591,7 +591,7 @@ SimpleMediaSource::GetEvent(
     )
 {
     // NOTE:
-    // GetEvent can block indefinitely, so we don't hold the lock.
+    // GetEvent can block indefinitely, so we do not hold the lock.
     // This requires some juggling with the event queue pointer.
 
     HRESULT hr = S_OK;
@@ -666,7 +666,7 @@ SimpleMediaSource::KsProperty(
     // ERROR_SET_NOT_FOUND is the standard error code returned
     // by the AV Stream driver framework when a miniport
     // driver does not register a handler for a KS operation.
-    // We want to mimic the driver behavior here if we don't
+    // We want to mimic the driver behavior here if we do not
     // support controls.
     return HRESULT_FROM_WIN32(ERROR_SET_NOT_FOUND);
 }
@@ -747,7 +747,7 @@ SimpleMediaSource::Start(
                                                             hr,
                                                             &startTime));
 
-    // We're hardcoding this to the first descriptor
+    // We are hardcoding this to the first descriptor
     // since this sample is a single stream sample. For
     // multiple streams, we need to walk the list of streams
     // and for each selected stream, send the MEUpdatedStream
