@@ -30,7 +30,7 @@ This section describes the device-class-specific information that a vendor shoul
 
 The description of the required INF file entries in this section is based on a hypothetical XYZ Audio Device. The driver for this device is contained in a file named Xyzaudio.sys. Example **Manufacturer** and **Models** sections for the device are shown in the following:
 
-```cpp
+```inf
   [VendorName]  ; Manufacturer section
   %XYZ-Audio-Device-Description%=XYZ-Audio-Device, <Plug and Play hardware ID>
   [XYZ-Audio-Device]  ; Models section

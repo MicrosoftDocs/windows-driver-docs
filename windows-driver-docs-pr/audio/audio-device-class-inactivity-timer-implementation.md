@@ -36,7 +36,7 @@ Vendors can override the default values of the following power-idle parameters:
 
     This parameter specifies the idle time-out interval when the system is running in power-conservation mode. This is the mode that is typically used when the system is running on battery power. The default value for this parameter is 0, which disables the power-idle timer in conservation mode. The hardware vendor can override the default by writing a DWORD value to the following driver-specific registry key:
 
-    ```cpp
+    ```inf
     \HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\xxxx\yyyy\PowerSettings\ConservationIdleTime
     ```
 
@@ -46,7 +46,7 @@ Vendors can override the default values of the following power-idle parameters:
 
     This parameter specifies the idle time-out interval when the system is running in performance mode. This is the mode that is typically used when the system is running on AC power. The default value for this parameter is 0, which disables the power-idle timer in performance mode. The hardware vendor can override the default by writing a DWORD value to the following driver-specific registry key:
 
-    ```cpp
+    ```inf
     \HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\xxxx\yyyy\PowerSettings\PerformanceIdleTime
     ```
 
@@ -56,7 +56,7 @@ Vendors can override the default values of the following power-idle parameters:
 
     This parameter specifies the power state that the device will be placed in if the idle time-out period expires. The default value for this parameter is 0, corresponding to device power state D0 (full power). The hardware vendor can override the default by writing a DWORD value to the following driver-specific registry key:
 
-    ```cpp
+    ```inf
     \HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\xxxx\yyyy\PowerSettings\IdlePowerState
     ```
 
@@ -70,7 +70,7 @@ For more information about specifying the *ConservationIdleTime*, *PerformanceId
 
 For example, a hardware vendor might want to specify the following power-idle parameters for an audio device: *ConservationIdleTime* = 0x0000001e (30 seconds), *PerformanceIdleTime* = 0x0000012c (300 seconds), and *IdlePowerState* = 0x00000003 (device power state D3). To enable these settings, the device-installation file can include an [**INF AddReg section**](https://msdn.microsoft.com/library/windows/hardware/ff546320) containing the following directives:
 
-```cpp
+```inf
 [MyAudioDevice.AddReg]
 HKR,PowerSettings,ConservationIdleTime,1,1e,00,00,00
 HKR,PowerSettings,PerformanceIdleTime,1,2c,01,00,00
@@ -79,7 +79,7 @@ HKR,PowerSettings,IdlePowerState,1,03,00,00,00
 
 HKR represents the driver's root key in the registry:
 
-```cpp
+```inf
 \HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\xxxx\yyyy
 ```
 

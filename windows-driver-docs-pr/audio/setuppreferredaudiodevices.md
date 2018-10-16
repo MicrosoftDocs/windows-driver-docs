@@ -38,7 +38,7 @@ When upgrading or reinstalling the driver for a device that has already been ins
 
 The following example is a part of an INF file that shows how to use the SetupPreferredAudioDevices keyword:
 
-```cpp
+```inf
   AddReg = XYZ-Audio-Device.AddReg
   ...
   [XYZ-Audio-Device.AddReg]

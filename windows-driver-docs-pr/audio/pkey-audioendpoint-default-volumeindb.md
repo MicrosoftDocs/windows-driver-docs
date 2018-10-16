@@ -33,7 +33,7 @@ The data is stored as a 16.16 fixed point value. The upper 16 bits are used for 
 ## <span id="INF_File_Sample"></span><span id="inf_file_sample"></span><span id="INF_FILE_SAMPLE"></span>INF File Sample
 
 
-```cpp
+```inf
 ; The following line overrides the default volume (in dB) for an endpoint. 
 ; It is only applicable when hardware volume is not implemented. 
 ; Decimal value expressed in fixed point 16.16 format and stored as a DWORD. 
