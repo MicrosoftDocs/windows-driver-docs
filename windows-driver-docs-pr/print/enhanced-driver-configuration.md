@@ -59,9 +59,9 @@ Extension for Reading the PPD File
 The following XML fragment demonstrates the correct syntax for using the drvPrinterEvent attribute:
 
 ```xml
-<?xml version=&#39;1.0&#39;?>
+<?xml version='1.0'?>
 ...
-  <Property name=&#39;DeviceInfo&#39;>
+  <Property name='DeviceInfo'>
      <Const name="Category" type="BIDI_STRING" value="DeviceCategory"/> 
      <Value name="QueueProperty" type="BIDI_STRING" accessType="Get" queryKey="Configuration" refreshInterval="60" drvPrinterEvent="true"/> 
   </Property> 

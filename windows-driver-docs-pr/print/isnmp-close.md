@@ -46,7 +46,7 @@ The method always returns S\_OK.
 ## <span id="ddk_isnmp_close_gg"></span><span id="DDK_ISNMP_CLOSE_GG"></span>
 
 
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
+## VBScript Example
 
 Remarks
 -------

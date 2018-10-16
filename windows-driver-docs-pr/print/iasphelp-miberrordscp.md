@@ -16,11 +16,15 @@ api_name:
 - Iasphelp.get_MibErrorDscp
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_MibErrorDscp method
-
 
 The **MibErrorDscp** property enables an ASP Web page to convert a Simple Network Management Protocol (SNMP) management information base (MIB) error code into a text description of the error.
 
@@ -75,23 +79,15 @@ Win32 error codes can also be returned.
 </tbody>
 </table>
 
- 
+## VBScript Example
 
-## <span id="ddk_iasphelp_miberrordscp_gg"></span><span id="DDK_IASPHELP_MIBERRORDSCP_GG"></span>
-
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
-
-```cpp
-    Dim objPrinter, MIBErrorCode, MIBErrorString
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    ...
- &#39; Get error code from MIB.
-    ...
-    MIBErrorString = objPrinter.MibErrorDscp(ErrorCodeMIB)
+```vb
+Dim objPrinter, MIBErrorCode, MIBErrorString
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+...
+' Get error code from MIB.
+...
+MIBErrorString = objPrinter.MibErrorDscp(ErrorCodeMIB)
 ```
 
 Requirements
@@ -107,17 +103,5 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-

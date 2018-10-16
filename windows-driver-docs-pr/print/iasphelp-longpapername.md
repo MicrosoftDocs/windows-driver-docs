@@ -16,11 +16,15 @@ api_name:
 - Iasphelp.get_LongPaperName
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_LongPaperName method
-
 
 The **LongPaperName** property enables an ASP Web page to convert a short paper name to a long paper name.
 
@@ -75,20 +79,12 @@ Win32 error codes can also be returned.
 </tbody>
 </table>
 
- 
+## VBScript Example
 
-## <span id="ddk_iasphelp_longpapername_gg"></span><span id="DDK_IASPHELP_LONGPAPERNAME_GG"></span>
-
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
-
-```cpp
-    Dim objPrinter, LongName
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    LongName = objPrinter.LongPaperName("iso-a0")
+```vb
+Dim objPrinter, LongName
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+LongName = objPrinter.LongPaperName("iso-a0")
 ```
 
 Requirements
@@ -104,17 +100,5 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-

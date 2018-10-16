@@ -16,11 +16,15 @@ api_name:
 - Iasphelp.get_ComputerName
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_ComputerName method
-
 
 The **ComputerName** property enables an ASP Web page to obtain a print server's name.
 
@@ -67,21 +71,13 @@ This method can return one of these values.
 </tbody>
 </table>
 
- 
+## VBScript Example
 
-## <span id="ddk_iasphelp_computername_gg"></span><span id="DDK_IASPHELP_COMPUTERNAME_GG"></span>
-
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
-
-```cpp
-    Dim objPrinter, CompName
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    CompName = objPrinter.ComputerName
+```vb
+Dim objPrinter, CompName
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+CompName = objPrinter.ComputerName
 ```
 
 Requirements
@@ -97,17 +93,5 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-

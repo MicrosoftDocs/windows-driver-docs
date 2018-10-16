@@ -13,11 +13,15 @@ api_name:
 - IPrinterBidiSchemaResponses.AddRequeryKey
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaResponses::AddRequeryKey method
-
 
 The AddRequeryKey method adds a new QueryKey to re-query upon return from the getSchemas call.
 
@@ -56,20 +60,11 @@ Requirements
 </tr>
 <tr class="even">
 <td><p>Version</p></td>
-<td><p>Windows 8</p></td>
+<td><p>Windows 8 and later</p></td>
 </tr>
 </tbody>
 </table>
 
 ## See also
 
-
 [**IPrinterBidiSchemaResponses**](iprinterbidischemaresponses.md)
-
- 
-
- 
-
-
-
-

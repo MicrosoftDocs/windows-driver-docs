@@ -83,7 +83,7 @@ This method returns one of the values in the following table.
 
  
 
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
+## VBScript Example
 
 Remarks
 -------

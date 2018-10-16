@@ -63,12 +63,12 @@ In the following code example, the filter lookup algorithm uses an XPath query t
 
 ```cpp
 <Schema>
-  <Property name=&#39;Printer&#39;>
-    <Property name=&#39;Configuration&#39;>
-      <Property name=&#39;HardDisk&#39;>
-        <Installed name=&#39;Installed&#39;
-            query=&#39;wprt:PrinterConfiguration&#39;
-            filter=&#39;wprt:PrinterConfiguration/wprt:Storage/wprt:StorageEntry[wprt:Type="HardDisk"]&#39;/>
+  <Property name='Printer'>
+    <Property name='Configuration'>
+      <Property name='HardDisk'>
+        <Installed name='Installed'
+            query='wprt:PrinterConfiguration'
+            filter='wprt:PrinterConfiguration/wprt:Storage/wprt:StorageEntry[wprt:Type="HardDisk"]'/>
       </Property>
     </Property>
   </Property>

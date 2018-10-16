@@ -74,7 +74,7 @@ result5: restrained
 
 adverb1: very =arg1 and =arg2
    adverb2: while remaining =arg1
-   String1:  The audience was =arg1 with today&#39;s performance.
+   String1:  The audience was =arg1 with today's performance.
 }
 ```
 
@@ -88,8 +88,8 @@ The following code shows how to use macro references with parameters.
 The parser will expand the preceding macro references to produce the following code.
 
 ```cpp
-*BadOutput: The audience was disappointed with today&#39;s performance.
-*GoodOutput: The audience was very very pleased and impressed and while remaining restrained with today&#39;s performance.
+*BadOutput: The audience was disappointed with today's performance.
+*GoodOutput: The audience was very very pleased and impressed and while remaining restrained with today's performance.
 ```
 
 Value macro references are not recognized in all value contexts. For example, value macros are not recognized within the arbitrary value or quoted string contexts. But value macros are recognized within hex string contexts that might reside within the quoted string context.

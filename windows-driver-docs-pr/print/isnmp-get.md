@@ -86,7 +86,7 @@ Win32 error codes can also be returned.
 ## <span id="ddk_isnmp_get_gg"></span><span id="DDK_ISNMP_GET_GG"></span>
 
 
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
+## VBScript Example
 
 Remarks
 -------

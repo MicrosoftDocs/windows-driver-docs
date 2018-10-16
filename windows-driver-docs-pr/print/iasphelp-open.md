@@ -16,11 +16,15 @@ api_name:
 - Iasphelp.Open
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Iasphelp::Open method
-
 
 The **Open** method enables an ASP Web page to open access to a printer.
 
@@ -71,25 +75,17 @@ Win32 error codes can also be returned.
 </tbody>
 </table>
 
- 
-
-## <span id="ddk_iasphelp_open_gg"></span><span id="DDK_IASPHELP_OPEN_GG"></span>
-
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 This method obtains access to the specified printer by calling the print spooler's **OpenPrinter** function. For more information about this function, see the Windows SDK Documentation.
 
 After the **Iasphelp::Open** call, the printer remains open until the [**Iasphelp::Close**](iasphelp-close.md) method is called, or until **Iasphelp::Open** is called again with a different printer name.
 
-```cpp
-    Dim objPrinter
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
+```vb
+Dim objPrinter
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
 ```
 
 Requirements
@@ -105,22 +101,9 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
 
 ## See also
 
-
 [**Iasphelp::Close**](iasphelp-close.md)
-
- 
-
- 
-
-
-
-

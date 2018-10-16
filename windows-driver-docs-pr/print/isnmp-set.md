@@ -86,7 +86,7 @@ Win32 error codes can also be returned.
 ## <span id="ddk_isnmp_set_gg"></span><span id="DDK_ISNMP_SET_GG"></span>
 
 
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
+## VBScript Example
 
 Remarks
 -------
@@ -102,7 +102,7 @@ The [**ISNMP::Open**](isnmp-open.md) method must be called before the `ISNMP::Se
     Set objSNMP = Server.CreateObject("OlePrn.OleSNMP")
     objSNMP.Open strIP, strCommunity, 2, 1000
     ...
- &#39; Determine value to assign to OID; store it in OIDValue.
+ ' Determine value to assign to OID; store it in OIDValue.
     ...
     objSNMP.Set ("43.18.1.1.2", OIDValue)
 ```

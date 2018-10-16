@@ -16,6 +16,11 @@ api_name:
 - Iasphelp.get_AspPage
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -79,21 +84,13 @@ This method can return one of these values.
 </tbody>
 </table>
 
- 
+## VBScript Example
 
-## <span id="ddk_iasphelp_asppage_gg"></span><span id="DDK_IASPHELP_ASPPAGE_GG"></span>
-
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
-
-To determine where to find the page's ASP file, the method uses the algorithm described in [Which Printer Details Page is Displayed?](https://msdn.microsoft.com/library/windows/hardware/ff563765).
+To determine where to find the page's ASP file, the method uses the algorithm described in [Which Printer Details Page is Displayed?](https://docs.microsoft.com/windows-hardware/drivers/print/which-printer-details-page-is-displayed-).
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::AspPage** property can be queried.
 
-```cpp
+```vb
     Dim objPrinter, strPrinter, str
     strPrinter = Session("MS_printer")
     Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
@@ -114,22 +111,9 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
 
 ## See also
 
-
 [**Iasphelp::Open**](iasphelp-open.md)
-
- 
-
- 
-
-
-
-
