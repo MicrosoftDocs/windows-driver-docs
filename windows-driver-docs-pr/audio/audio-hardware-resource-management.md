@@ -33,7 +33,7 @@ To specify constraints complete these two steps.
 
 The XML constraints file is made up of three sections. The first required section is defined by &lt;Limits&gt; &lt;/Limits&gt;. This section can be used to define up to fifteen resource restraints. For example you could define constraints for the maximum number of rendering stream and the maximum number of streams that can be off loaded.
 
-```cpp
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <ConstraintModel>
   
@@ -57,7 +57,7 @@ For example, if the audio hardware has both HandsetSpeaker and WiredHeadsetSpeak
 
 This section can have multiple &lt;ExclusiveEndpoints&gt; nodes. Each ExclusiveEndpoints node contains two or more Endpoint nodes. Each Endpoint node contains HWID, TopologyName, and PinId.
 
-```cpp
+```xml
   <ExclusiveEndpoints>
     <Endpoint>
       <HWID>Root\sysvad_PhoneAudioSample</HWID>
@@ -80,7 +80,7 @@ This section can have multiple &lt;ExclusiveEndpoints&gt; nodes. Each ExclusiveE
 
 The last required section of the XML file defines various resource consumers. This section of the file contains multiple &lt;ResourceConsumer&gt; entries. Each entry identifies information about a resource consumer and their associated resources use. Each resource that is used, must be previously defined in the &lt;Limits&gt; section.
 
-```cpp
+```xml
   <ResourceConsumer>
     <!-- Active Phone call -->
     <ConsumerInfo>
@@ -186,13 +186,13 @@ The following table summarizes the capture audio stream priorities, listed from 
 
 The full path to the concurrency constraints XML file needs to be specified in the following registry key.
 
-```cpp
+```inf
 HKLM\System\MultiMedia\DeviceCapability\ResourceSettings\XMLConfig
 ```
 
 In this registry key, provide a value containing the path to the XML. It is recommended that the name of the XML file and regkey value name be unique since there is potential for other subsystems/audio devices providing their own set of constraints in XML files. The regkey can be set in the audio driver INF file or preferably through the phone Package schema as shown here.
 
-```cpp
+```xml
 <RegKeys> 
         <RegKey KeyName="$(hklm.system)\MultiMedia\DeviceCapability\ResourceSettings\XMLConfig"> 
         <RegValue Name="AudioResourceConstraintExamplePath" Type="REG_SZ" 
@@ -206,7 +206,7 @@ In this registry key, provide a value containing the path to the XML. It is reco
 
 This is an example XML constraints file from the SYSVAD virtual audio driver sample.
 
-```cpp
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <ConstraintModel>
 

@@ -22,7 +22,7 @@ The INF file property key instruct audio endpoint builder to set the CLSIDs for 
 
 An INF file specifies the default format for an audio endpoint device in the add-registry sections for that device. The following INF example shows the strings and add-registry section that loads the APO for an endpoint effect into the registry.
 
-```cpp
+```inf
 [Strings]
 PKEY_FX_EndpointEffectClsid = "{D04E05A6-594B-4fb6-A80D-01AF5EED7D1D},7"
 ...
