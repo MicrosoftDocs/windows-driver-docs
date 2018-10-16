@@ -13,11 +13,15 @@ api_name:
 - IPrinterScriptUsbJobContext.ReturnCodes
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbJobContext::ReturnCodes method
-
 
 Returns an object that can supply return code values that an IHV has defined for their JavaScript functions.
 
@@ -72,15 +76,6 @@ Requirements
 
 ## See also
 
-
 [**IPrinterScriptUsbJobContext**](iprinterscriptusbjobcontext.md)
 
 [**IPrinterScriptUsbJobContextReturnCodes**](iprinterscriptusbjobcontextreturncodes.md)
-
- 
-
- 
-
-
-
-

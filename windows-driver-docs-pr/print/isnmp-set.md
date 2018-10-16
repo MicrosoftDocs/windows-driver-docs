@@ -18,11 +18,15 @@ api_location:
 - olesnmp.h
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # ISNMP::Set method
-
 
 The `Set` method enables an ASP Web page to associate a value with an SNMP OID.
 
@@ -81,30 +85,22 @@ Win32 error codes can also be returned.
 </tbody>
 </table>
 
- 
-
-## <span id="ddk_isnmp_set_gg"></span><span id="DDK_ISNMP_SET_GG"></span>
-
-
 ## VBScript Example
-
-Remarks
--------
 
 This method calls the **SnmpMgrRequest** function to set SNMP OID values. For more information, see the Windows SDK Documentation.
 
 The [**ISNMP::Open**](isnmp-open.md) method must be called before the `ISNMP::Set` method can be called.
 
-```cpp
-    Dim StrIP, strCommunity, objSNMP, OIDValue
-    strIP = Session("MS_IPaddress")
-    strCommunity = Session ("MS_Community")
-    Set objSNMP = Server.CreateObject("OlePrn.OleSNMP")
-    objSNMP.Open strIP, strCommunity, 2, 1000
-    ...
- ' Determine value to assign to OID; store it in OIDValue.
-    ...
-    objSNMP.Set ("43.18.1.1.2", OIDValue)
+```vb
+Dim StrIP, strCommunity, objSNMP, OIDValue
+strIP = Session("MS_IPaddress")
+strCommunity = Session ("MS_Community")
+Set objSNMP = Server.CreateObject("OlePrn.OleSNMP")
+objSNMP.Open strIP, strCommunity, 2, 1000
+...
+' Determine value to assign to OID; store it in OIDValue.
+...
+objSNMP.Set ("43.18.1.1.2", OIDValue)
 ```
 
 Requirements
@@ -120,10 +116,6 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 <tr class="odd">
 <td><p>Header</p></td>
 <td>Olesnmp.h</td>
@@ -133,13 +125,4 @@ Requirements
 
 ## See also
 
-
 [**ISNMP::Open**](isnmp-open.md)
-
- 
-
- 
-
-
-
-

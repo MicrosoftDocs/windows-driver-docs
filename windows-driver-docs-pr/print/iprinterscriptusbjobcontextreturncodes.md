@@ -13,11 +13,15 @@ api_name:
 - IPrinterScriptUsbJobContextReturnCodes
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbJobContextReturnCodes interface
-
 
 The IPrinterScriptUsbJobContextReturnCodes interface represents an array of return codes that an IHV has defined for their JavaScript functions.
 
@@ -26,11 +30,11 @@ This interface is returned by the [**IPrinterScriptUsbJobContext::ReturnCodes**]
 Members
 -------
 
-The **IPrinterScriptUsbJobContextReturnCodes** interface inherits from the [**IUnknown**](https://msdn.microsoft.com/library/windows/desktop/ms680509) interface. **IPrinterScriptUsbJobContextReturnCodes** also has these types of members:
+The **IPrinterScriptUsbJobContextReturnCodes** interface inherits from the [**IUnknown**](https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown) interface. **IPrinterScriptUsbJobContextReturnCodes** also has these types of members:
 
 -   [Methods](#methods)
 
-### <span id="methods"></span>Methods
+### Methods
 
 The **IPrinterScriptUsbJobContextReturnCodes** interface has these methods.
 
@@ -69,8 +73,6 @@ The **IPrinterScriptUsbJobContextReturnCodes** interface has these methods.
 </tbody>
 </table>
 
- 
-
 Requirements
 ------------
 
@@ -90,11 +92,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-

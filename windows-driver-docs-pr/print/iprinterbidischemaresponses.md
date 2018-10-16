@@ -32,7 +32,7 @@ The **IPrinterBidiSchemaResponses** interface inherits from the [**IUnknown**](h
 
 -   [Methods](#methods)
 
-### <span id="methods"></span>Methods
+### Methods
 
 The **IPrinterBidiSchemaResponses** interface has these methods.
 
