@@ -411,7 +411,7 @@ Return Value:
         // it will return NULL and assert if run under framework verifier mode.
         //
         deviceContext = WdfObjectGet_DEVICE_CONTEXT(device);
-        deviceContext-&gt;PrivateDeviceData = 0;
+        deviceContext->PrivateDeviceData = 0;
 
         //
         // Create a device interface so that application can find and talk
@@ -420,7 +420,7 @@ Return Value:
         status = WdfDeviceCreateDeviceInterface(
             device,
             &CAMERA_CATEGORY,
-            &szReference // ReferenceString*
+            &szReference // ReferenceString
             );
 
         if (NT_SUCCESS(status)) {
@@ -564,7 +564,7 @@ SimpleMediaSource::BeginGetEvent(
     auto lock = _critSec.Lock();
 
     RETURN_IF_FAILED (_CheckShutdownRequiresLock());
-    RETURN_IF_FAILED (_spEventQueue-&gt;BeginGetEvent(pCallback, punkState));
+    RETURN_IF_FAILED (_spEventQueue->BeginGetEvent(pCallback, punkState));
 
     return hr;
 }
@@ -579,7 +579,7 @@ SimpleMediaSource::EndGetEvent(
     auto lock = _critSec.Lock();
 
     RETURN_IF_FAILED (_CheckShutdownRequiresLock());
-    RETURN_IF_FAILED (_spEventQueue-&gt;EndGetEvent(pResult, ppEvent));
+    RETURN_IF_FAILED (_spEventQueue->EndGetEvent(pResult, ppEvent));
 
     return hr;
 }
@@ -596,7 +596,7 @@ SimpleMediaSource::GetEvent(
 
     HRESULT hr = S_OK;
 
-    ComPtr&lt;IMFMediaEventQueue&gt; spQueue;
+    ComPtr<IMFMediaEventQueue> spQueue;
 
     {
         auto lock = _critSec.Lock();
@@ -606,7 +606,7 @@ SimpleMediaSource::GetEvent(
     }
 
     // Now get the event.
-    RETURN_IF_FAILED (_spEventQueue-&gt;GetEvent(dwFlags, ppEvent));
+    RETURN_IF_FAILED (_spEventQueue->GetEvent(dwFlags, ppEvent));
 
     return hr;
 }
@@ -623,7 +623,7 @@ SimpleMediaSource::QueueEvent(
     auto lock = _critSec.Lock();
 
     RETURN_IF_FAILED (_CheckShutdownRequiresLock());
-    RETURN_IF_FAILED (_spEventQueue-&gt;QueueEventParamVar(eventType, guidExtendedType, hrStatus, pvValue));
+    RETURN_IF_FAILED (_spEventQueue->QueueEventParamVar(eventType, guidExtendedType, hrStatus, pvValue));
 
     return hr;
 }
@@ -713,7 +713,7 @@ SimpleMediaSource::Start(
     DWORD count = 0;
     PROPVARIANT startTime;
     BOOL selected = false;
-    ComPtr&lt;IMFStreamDescriptor&gt; streamDesc;
+    ComPtr<IMFStreamDescriptor> streamDesc;
     DWORD streamIndex = 0;
 
     if (pPresentationDescriptor == nullptr || pvarStartPos == nullptr)
@@ -738,11 +738,11 @@ SimpleMediaSource::Start(
     // have defined internally and that at least one stream is selected
 
     RETURN_IF_FAILED (_ValidatePresentationDescriptor(pPresentationDescriptor));
-    RETURN_IF_FAILED (pPresentationDescriptor-&gt;GetStreamDescriptorCount(&count));
+    RETURN_IF_FAILED (pPresentationDescriptor->GetStreamDescriptorCount(&count));
     RETURN_IF_FAILED (InitPropVariantFromInt64(MFGetSystemTime(), &startTime));
 
     // Send event that the source started. Include error code in case it failed.
-    RETURN_IF_FAILED (_spEventQueue-&gt;QueueEventParamVar(MESourceStarted,
+    RETURN_IF_FAILED (_spEventQueue->QueueEventParamVar(MESourceStarted,
                                                             GUID_NULL,
                                                             hr,
                                                             &startTime));
@@ -753,37 +753,37 @@ SimpleMediaSource::Start(
     // and for each selected stream, send the MEUpdatedStream
     // or MENewStream event along with the MEStreamStarted
     // event.
-    RETURN_IF_FAILED (pPresentationDescriptor-&gt;GetStreamDescriptorByIndex(0,
+    RETURN_IF_FAILED (pPresentationDescriptor->GetStreamDescriptorByIndex(0,
                                                                             &selected,
                                                                             &streamDesc));
 
-    RETURN_IF_FAILED (streamDesc-&gt;GetStreamIdentifier(&streamIndex));
-    if (streamIndex &gt;= NUM_STREAMS)
+    RETURN_IF_FAILED (streamDesc->GetStreamIdentifier(&streamIndex));
+    if (streamIndex >= NUM_STREAMS)
     {
         return MF_E_INVALIDSTREAMNUMBER;
     }
 
     if (selected)
     {
-        ComPtr&lt;IUnknown&gt; spunkStream;
+        ComPtr<IUnknown> spunkStream;
         MediaEventType met = (_wasStreamPreviouslySelected ? MEUpdatedStream : MENewStream);
 
         // Update our internal PresentationDescriptor
-        RETURN_IF_FAILED (_spPresentationDescriptor-&gt;SelectStream(streamIndex));
-        RETURN_IF_FAILED (_stream.Get()-&gt;SetStreamState(MF_STREAM_STATE_RUNNING));
+        RETURN_IF_FAILED (_spPresentationDescriptor->SelectStream(streamIndex));
+        RETURN_IF_FAILED (_stream.Get()->SetStreamState(MF_STREAM_STATE_RUNNING));
         RETURN_IF_FAILED (_stream.As(&spunkStream));
 
         // Send the MEUpdatedStream/MENewStream to our source event
         // queue.
 
-        RETURN_IF_FAILED (_spEventQueue-&gt;QueueEventParamUnk(met,
+        RETURN_IF_FAILED (_spEventQueue->QueueEventParamUnk(met,
                                                                 GUID_NULL,
                                                                 S_OK,
                                                                 spunkStream.Get()));
 
         // But for our stream started (MEStreamStarted), we post to our
         // stream event queue.
-        RETURN_IF_FAILED (_stream.Get()-&gt;QueueEvent(MEStreamStarted,
+        RETURN_IF_FAILED (_stream.Get()->QueueEvent(MEStreamStarted,
                                                         GUID_NULL,
                                                         S_OK,
                                                         &startTime));
@@ -881,13 +881,13 @@ IFACEMETHODIMP
 {
     HRESULT hr = S_OK;
     auto lock = _critSec.Lock();
-    ComPtr&lt;IMFSample&gt; sample;
-    ComPtr&lt;IMFMediaBuffer&gt; outputBuffer;
+    ComPtr<IMFSample> sample;
+    ComPtr<IMFMediaBuffer> outputBuffer;
     LONG pitch = IMAGE_ROW_SIZE_BYTES;
     BYTE *bufferStart = nullptr; // not used
     DWORD bufferLength = 0;
     BYTE *pbuf = nullptr;
-    ComPtr&lt;IMF2DBuffer2&gt; buffer2D;
+    ComPtr<IMF2DBuffer2> buffer2D;
 
     RETURN_IF_FAILED (_CheckShutdownRequiresLock());
     RETURN_IF_FAILED (MFCreateSample(&sample));
@@ -897,21 +897,21 @@ IFACEMETHODIMP
                                             false,
                                             &outputBuffer));
     RETURN_IF_FAILED (outputBuffer.As(&buffer2D));
-    RETURN_IF_FAILED (buffer2D-&gt;Lock2DSize(MF2DBuffer_LockFlags_Write,
+    RETURN_IF_FAILED (buffer2D->Lock2DSize(MF2DBuffer_LockFlags_Write,
                                                 &pbuf,
                                                 &pitch,
                                                 &bufferStart,
                                                 &bufferLength));
     RETURN_IF_FAILED (WriteSampleData(pbuf, pitch, bufferLength));
-    RETURN_IF_FAILED (buffer2D-&gt;Unlock2D());
-    RETURN_IF_FAILED (sample-&gt;AddBuffer(outputBuffer.Get()));
-    RETURN_IF_FAILED (sample-&gt;SetSampleTime(MFGetSystemTime()));
-    RETURN_IF_FAILED (sample-&gt;SetSampleDuration(333333));
+    RETURN_IF_FAILED (buffer2D->Unlock2D());
+    RETURN_IF_FAILED (sample->AddBuffer(outputBuffer.Get()));
+    RETURN_IF_FAILED (sample->SetSampleTime(MFGetSystemTime()));
+    RETURN_IF_FAILED (sample->SetSampleDuration(333333));
     if (pToken != nullptr)
     {
-        RETURN_IF_FAILED (sample-&gt;SetUnknown(MFSampleExtension_Token, pToken));
+        RETURN_IF_FAILED (sample->SetUnknown(MFSampleExtension_Token, pToken));
     }
-    RETURN_IF_FAILED (_spEventQueue-&gt;QueueEventParamUnk(MEMediaSample,
+    RETURN_IF_FAILED (_spEventQueue->QueueEventParamUnk(MEMediaSample,
                                                             GUID_NULL,
                                                             S_OK,
                                                             sample.Get()));
@@ -1015,8 +1015,8 @@ SimpleMediaSource::GetSourceAttributes(
     *sourceAttributes = nullptr;
     if (_spAttributes.Get() == nullptr)
     {
-        ComPtr&lt;IMFSensorProfileCollection&gt; profileCollection;
-        ComPtr&lt;IMFSensorProfile&gt; profile;
+        ComPtr<IMFSensorProfileCollection> profileCollection;
+        ComPtr<IMFSensorProfile> profile;
 
         // Create our source attribute store
         RETURN_IF_FAILED (MFCreateAttributes(_spAttributes.GetAddressOf(), 1));
@@ -1032,17 +1032,17 @@ SimpleMediaSource::GetSourceAttributes(
         // feature sets.
         RETURN_IF_FAILED (MFCreateSensorProfile(KSCAMERAPROFILE_Legacy, 0, nullptr,
                                                 profile.ReleaseAndGetAddressOf()));
-        RETURN_IF_FAILED (profile-&gt;AddProfileFilter(0, L"((RES==;FRT&lt;=30,1;SUT==))"));
-        RETURN_IF_FAILED (profileCollection-&gt;AddProfile(profile.Get()));
+        RETURN_IF_FAILED (profile->AddProfileFilter(0, L"((RES==;FRT<=30,1;SUT==))"));
+        RETURN_IF_FAILED (profileCollection->AddProfile(profile.Get()));
 
-        // High Frame Rate profile will only allow &gt;=60fps
+        // High Frame Rate profile will only allow >=60fps
         RETURN_IF_FAILED (MFCreateSensorProfile(KSCAMERAPROFILE_HighFrameRate, 0, nullptr,
                                                 profile.ReleaseAndGetAddressOf()));
-        RETURN_IF_FAILED (profile-&gt;AddProfileFilter(0, L"((RES==;FRT&gt;=60,1;SUT==))"));
-        RETURN_IF_FAILED (profileCollection-&gt;AddProfile(profile.Get()));
+        RETURN_IF_FAILED (profile->AddProfileFilter(0, L"((RES==;FRT>=60,1;SUT==))"));
+        RETURN_IF_FAILED (profileCollection->AddProfile(profile.Get()));
 
         // See the profile collection to the attribute store of the IMFTransform
-        RETURN_IF_FAILED (_spAttributes-&gt;SetUnknown(MF_DEVICEMFT_SENSORPROFILE_COLLECTION,
+        RETURN_IF_FAILED (_spAttributes->SetUnknown(MF_DEVICEMFT_SENSORPROFILE_COLLECTION,
                                                         profileCollection.Get()));
     }
 
