@@ -22,7 +22,7 @@ The INF file property key instructs the audio endpoint builder to set the CLSIDs
 
 An INF file specifies settings for an audio endpoint device in the add-registry section for that device. The following INF example shows the strings and add-registry sections that loads the APO for a keyword detector stream effect into the registry.
 
-```cpp
+```inf
 [Strings]
 PKEY_FX_KeywordDetector_StreamEffectClsid   = "{D04E05A6-594B-4fb6-A80D-01AF5EED7D1D},8"
 ...

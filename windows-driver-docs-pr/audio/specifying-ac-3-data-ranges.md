@@ -26,7 +26,7 @@ ms.localizationpriority: medium
 ## <span id="specifying_ac_3_data_ranges"></span><span id="SPECIFYING_AC_3_DATA_RANGES"></span>
 
 
-In the Windows SDK for Windows 2000 and later, Windows Me, and Windows 98 SE, the header file Mmreg.h defines the value 0x0092 to be the wave-format tag for AC-3-over-S/PDIF:
+The header file Mmreg.h defines the value 0x0092 to be the wave-format tag for AC-3-over-S/PDIF:
 
 ```cpp
     #define WAVE_FORMAT_DOLBY_AC3_SPDIF  0x0092

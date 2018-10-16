@@ -66,7 +66,7 @@ To design and implement the custom property page provider, perform the following
 
     The following INF file fragment shows how to modify the INF file to register your custom property page.
 
-    ```cpp
+    ```inf
     [SysFx.AddReg]
     ...
     HKR,"FX\\0",%PKEY_SYSFX_UiClsid%,,%SYSFX_UI_CLSID%
@@ -78,7 +78,7 @@ To design and implement the custom property page provider, perform the following
 
     And as a result of the preceding INF file instructions, the installation process modifies the appropriate registry key as follows.
 
-    ```cpp
+    ```text
     HKLM
      SOFTWARE
       Microsoft
@@ -100,7 +100,7 @@ To design and implement the custom property page provider, perform the following
 
     The sample INF file sections, taken from the SYSVAD tabletaudiosample.inf file, shows how to do this. The \[SWAPAPO.AddReg\] section is in the global AddReg section. The \[SWAPAPO.I.Association0.AddReg\] is part of the AddReg section for the specific KSCATEGORY\_AUDIO interfaces.
 
-    ```cpp
+    ```inf
     [SWAPAPO.AddReg]
     …
 

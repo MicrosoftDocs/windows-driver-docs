@@ -25,7 +25,7 @@ ms.localizationpriority: medium
 ## <span id="specifying_wma_pro_data_ranges"></span><span id="SPECIFYING_WMA_PRO_DATA_RANGES"></span>
 
 
-In the Microsoft Windows SDK for Windows XP SP2 and later, the header file Mmreg.h defines the value 0x0164 to be the wave-format tag for WMA Pro-over-S/PDIF:
+The header file Mmreg.h defines the value 0x0164 to be the wave-format tag for WMA Pro-over-S/PDIF:
 
 ```cpp
   #define WAVE_FORMAT_WMASPDIF  0x0164
