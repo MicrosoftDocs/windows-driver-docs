@@ -158,7 +158,7 @@ APO Hardware IDs incorporate both standard information and vendor-defined string
 
 They are constructed as follows: 
 
-```cpp
+```syntax
 APO\VEN_v(4)&AID_a(4)&SUBSYS_ n(4)s(4) &REV_r(4) 
 APO\VEN_v(4)&AID_a(4)&SUBSYS_ n(4)s(4) 
 APO\VEN_v(4)&AID_a(4) 

@@ -343,7 +343,7 @@ This sample illustrates this combination of system effects:
 
 This sample code supports Bluetooth hands-free and stereo devices.
 
-```cpp
+```inf
 ; wdma_bt.inf – example usage
 ...
 [BthA2DP]
@@ -379,7 +379,7 @@ This sample INF file illustrates the following combination of system effects:
 
 -   PKEY\_FX\_EndpointEffectClsid without PKEY\_EFX\_ProcessingModes\_Supported\_For\_Streaming
 
-```cpp
+```inf
 [MyDevice.Interfaces]
 AddInterface=%KSCATEGORY_AUDIO%,%MyFilterName%,MyAudioInterface
  
@@ -409,7 +409,7 @@ This INF file sample also illustrates the use of this combination of system effe
 
 -   PKEY\_FX\_EndpointEffectClsid without PKEY\_EFX\_ProcessingModes\_Supported\_For\_Streaming
 
-```cpp
+```inf
 ;wdma_bt.inf
 [BthHfAud]
 Include=ks.inf, wdmaudio.inf, BtaMpm.inf
@@ -430,7 +430,7 @@ HKR,"FX\\0",%PKEY_FX_EndpointEffectClsid%,,%FX_DISCOVER_EFFECTS_APO_CLSID%
 
 This sample INF file shows the \[MsApoFxProxy.Registration\] and \[MsApoFxProxy.AddReg\] sections. This registers the well-known GUID with COM using the \[MsApoFxProxy.CopyList\] section. This section copies MsApoFxProxy.dll into C:\\Windows\\system32.
 
-```cpp
+```inf
 ; wdmaudio.inf – this is where WmaLfxGfxDsp.dll is registered
 ...
 ;; MsApoFxProxy.Registration section can be called by OEM&#39;s to install the discover-effects APO
@@ -494,20 +494,20 @@ Only Microsoft inbox class drivers (which can be wrapped by a third-party develo
 
 The following INF file sample illustrates setting the PKEY\_FX\_Association key to a GUID associated with the APO.
 
-```cpp
+```inf
 ;; Property Keys
 PKEY_FX_Association = "{D04E05A6-594B-4fb6-A80D-01AF5EED7D1D},0"
 "
 ```
 
-```cpp
+```inf
 ;; Key value pairs
 HKR,"FX\\0",%PKEY_FX_Association%,,%KSNODETYPE_ANY%
 ```
 
 Because an audio adapter is capable of supporting multiple inputs and outputs, you must explicitly indicate the type of kernel streaming (KS) node type that your custom APO is compatible with. In the preceding INF file fragment, the APO is shown to be associated with a KS node type of %KSNODETYPE\_ANY%. Later in this INF file, KSNODETYPE\_ANY is defined as follows:
 
-```cpp
+```inf
 [Strings]
 ;; Define the strings used in MyINF.inf
 ...
@@ -518,7 +518,7 @@ KSNODETYPE_SPEAKER  = "{DFF21CE1-F70F-11D0-B917-00A0C9223196}"
 
 A value of **NULL** for KSNODETYPE\_ANY means that this APO is compatible with any type of KS node type. To indicate, for example, that your APO is only compatible with a KS node type of KSNODETYPE\_SPEAKER, the INF file would show the KS node type and APO association as follows:
 
-```cpp
+```inf
 ;; Key value pairs
 ...
 HKR,"FX\\0",%PKEY_FX_Association%,,%KSNODETYPE_SPEAKER%

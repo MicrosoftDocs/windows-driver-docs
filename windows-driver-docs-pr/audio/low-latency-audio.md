@@ -597,7 +597,7 @@ Notes:
 
 Finally, drivers that link-in PortCls for the sole purpose of registering resources must add the following two lines in their inf's DDInstall section. Audio miniport drivers do not need this because they already have include/needs in wdmaudio.inf.
 
-```cpp
+```inf
 [<install-section-name>]
 Include=wdmaudio.inf
 Needs=WDMPORTCLS.CopyFilesOnly

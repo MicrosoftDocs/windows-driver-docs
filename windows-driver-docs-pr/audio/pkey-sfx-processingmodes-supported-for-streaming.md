@@ -22,7 +22,7 @@ The INF file property key instructs the audio endpoint builder to set the CLSIDs
 
 An INF file specifies settings for an audio processing mode effect in the add-registry section for that device. The following INF example shows the strings and add-registry sections that loads the mode effect processing modes into the registry.
 
-```cpp
+```inf
 [Strings]
 PKEY_SFX_ProcessingModes_Supported_For_Streaming = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},5"
 ...

@@ -102,7 +102,7 @@ The following example installs four common system-defined device interfaces that
 
 In this example, the device-install section for the XYZ Audio Device uses the [**INF AddInterface directive**](https://msdn.microsoft.com/library/windows/hardware/ff546310) to install four audio adapter interfaces. In the following, each of the four directives assigns a unique reference string to an interface, which the adapter driver can use to distinguish between instances of each interface class.
 
-```cpp
+```inf
   [XYZ-Audio-Device.Interfaces]
   AddInterface=%KSCATEGORY_AUDIO%,%KSName_Wave%,XYZ-Audio-Device.Wave
   AddInterface=%KSCATEGORY_RENDER%,%KSName_Wave%,XYZ-Audio-Device.Wave
@@ -118,7 +118,7 @@ The first three **AddInterface** directives specify an add-interface section nam
 
 The two add-interface sections appear in the following example, which contains INF file entries that add each interface's FriendlyName and CLSID to the registry:
 
-```cpp
+```inf
   [XYZ-Audio-Device.Wave]
   AddReg=XYZ-Audio-Device.Wave.AddReg
   [XYZ-Audio-Device.Wave.AddReg]
@@ -136,7 +136,7 @@ The keyword HKR in this example denotes the system-supplied registry path for th
 
 The following is the Strings section for this example.
 
-```cpp
+```inf
   [Strings]
   KSCATEGORY_AUDIO="{6994AD04-93EF-11D0-A3CC-00A0C9223196}"
   KSCATEGORY_RENDER="{65E8773E-8F56-11D0-A3B9-00A0C9223196}"
@@ -149,7 +149,7 @@ The following is the Strings section for this example.
 
 The string name that an **AddInterface** directive specifies for a KSCATEGORY\_*XXX* device interface cannot be localized because the adapter driver uses the same name internally as a string constant. The sample adapter drivers in the Windows Driver Kit (WDK) use the following string names for their audio device interfaces:
 
-```cpp
+```inf
   KSNAME_Wave="Wave"
   KSNAME_UART="UART"
   KSNAME_FMSynth="FMSynth"
