@@ -238,7 +238,7 @@ See the [DRIVER_ADD_DEVICE](https://docs.microsoft.com/windows-hardware/drivers/
 
 The following is a code snip of a UMDF driver stub which handles this operation:
 
-```C++
+```cpp
 NTSTATUS
 DriverEntry(
     IN PDRIVER_OBJECT DriverObject,
@@ -505,7 +505,7 @@ Refer to the [Writing a Custom Media Source](https://docs.microsoft.com/windows/
 
 The following example show an **IMFGetService** implementation with no support service interfaces:
 
-```C++
+```cpp
 _Use_decl_annotations_
 IFACEMETHODIMP
 SimpleMediaSource::GetService(
@@ -540,7 +540,7 @@ For implementing IMFMediaEventGenerator, the Custom Media Source must use the [M
 
 **IMFMediaEventGenerator** has the following methods:
 
-```C++
+```cpp
 // IMFMediaEventGenerator
 IFACEMETHOD(BeginGetEvent)(_In_ IMFAsyncCallback *pCallback, _In_ IUnknown *punkState);
 IFACEMETHOD(EndGetEvent)(_In_ IMFAsyncResult *pResult, _COM_Outptr_ IMFMediaEvent **ppEvent);
@@ -552,7 +552,7 @@ The following code shows the recommended implementation of the **IMFMediaEventGe
 
 In the code below, **\_spEventQueue** object is the **IMFMediaEventQueue** created using the **MFCreateEventQueue** function:
 
-```C++
+```cpp
 // IMFMediaEventGenerator methods
 IFACEMETHODIMP
 SimpleMediaSource::BeginGetEvent(
@@ -651,7 +651,7 @@ The controls are optional and if not supported, the recommended error code to re
 
 The following code is an example **IKsControl** implementation with no supported controls:
 
-```C++
+```cpp
 // IKsControl methods
 _Use_decl_annotations_
 IFACEMETHODIMP
@@ -700,7 +700,7 @@ IFACEMETHODIMP SimpleMediaSource::KsEvent(
 
 As explained in [Writing a Custom Media Source](https://docs.microsoft.com/windows/desktop/medfound/writing-a-custom-media-source), the **IMFMediaStream2** interface is provided to the frame work from your Custom Media Source via a [MENewStream](https://docs.microsoft.com/windows/desktop/medfound/menewstream) media event posted to the source event queue during the completion of the [IMFMediaSource::Start](https://docs.microsoft.com/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-start) method:
 
-```C++
+```cpp
 IFACEMETHODIMP
 SimpleMediaSource::Start(
     _In_ IMFPresentationDescriptor *pPresentationDescriptor,
@@ -873,7 +873,7 @@ While it is possible to use the same **IMFMediaEventQueue** for both the Custom 
 
 The following code snip shows a sample implementation of the media stream:
 
-```C++
+```cpp
 IFACEMETHODIMP
     SimpleMediaStream::RequestSample(
     _In_ IUnknown *pToken
@@ -954,7 +954,7 @@ If the Custom Media Source does not implement the **IMFActivate** and **IMFAttri
 
 A Custom Media Source may expose compressed media types (HEVC or H264 elementary streams) and the OS pipeline fully supports the source and configuration of the encoding parameters on the Custom Media Source (the encoding parameters are communicated through the [ICodecAPI](https://docs.microsoft.com/windows/desktop/api/strmif/nn-strmif-icodecapi), which is routed as an [IKsControl::KsProperty](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksproxy/nf-ksproxy-ikscontrol-ksproperty) call):
 
-```C++
+```cpp
 // IKsControl methods
 _Use_decl_annotations_
 IFACEMETHODIMP
@@ -969,9 +969,11 @@ SimpleMediaSource::KsProperty(
 
 The **KSPROPERTY** structure passed into the **IKsControl::KsProperty** method will have the following information:
 
-    KSPROPERTY.Set = Encoder Property GUID
-    KSPROPERTY.Id = 0
-    KSPROPERTY.Flags = (KSPROPERTY\_TYPE\_SET or KSPROPERTY\_TYPE\_GET)
+```cpp
+KSPROPERTY.Set = Encoder Property GUID
+KSPROPERTY.Id = 0
+KSPROPERTY.Flags = (KSPROPERTY_TYPE_SET or KSPROPERTY_TYPE_GET)
+```
 
 Where Encoder Property GUID is the list of available properties defined in [Codec API Properties](https://docs.microsoft.com/windows/desktop/DirectShow/codec-api-properties).
 
@@ -994,7 +996,7 @@ Camera Profile support is available for Custom Media Sources. The recommended me
 
 The **MF\_DEVICEMFT\_SENSORPROFILE\_COLLECTION** attribute is an **IUnknown** of the [IMFSensorProfileCollection](https://docs.microsoft.com/windows/desktop/api/mfidl/nn-mfidl-imfsensorprofilecollection) interface. **IMFSensorProfileCollection** can be obtained using the [MFCreateSensorProfileCollection](https://docs.microsoft.com/windows/desktop/api/mfidl/nf-mfidl-mfcreatesensorprofilecollection) function:
 
-```C++
+```cpp
 IFACEMETHODIMP
 SimpleMediaSource::GetSourceAttributes(
     _COM_Outptr_ IMFAttributes** sourceAttributes
