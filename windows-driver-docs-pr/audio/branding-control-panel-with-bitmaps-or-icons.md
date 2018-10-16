@@ -85,7 +85,7 @@ The proprietary device name that appears in the previously mentioned pages is th
 
 The following example shows a couple of directives from the add-registry-section of a vendor's INF file:
 
-```cpp
+```inf
   [XYZ-Audio-Device.AddReg]
   HKR,Branding,icon,,"foo.sys,102"
   HKR,Branding,bitmap,,"c:\mydir\myimage.bmp"
@@ -101,7 +101,7 @@ In the case of the "file,resourceid" format, the control-panel software searches
 
 The following example applies to Windows Vista and later versions of Windows. This example shows a directive from the add-registry-section of a vendor's INF file. This example uses the "imagefile" format:
 
-```cpp
+```inf
 [ABC-Audio-Device.AddReg]
   HKR,Branding,icon,,"c:\mydir\myicon.ico"
 ```

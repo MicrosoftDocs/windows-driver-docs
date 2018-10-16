@@ -24,7 +24,7 @@ Because end point effects (EFX) are after the sum or before the tee, there canno
 
 An INF file specifies settings for an audio processing mode effect in the add-registry section for that device. The following INF example shows the strings and add-registry sections that loads the streaming processing modes supported into the registry.
 
-```cpp
+```inf
 [Strings]
 PKEY_EFX_ProcessingModes_Supported_For_Streaming = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},7"
 ...

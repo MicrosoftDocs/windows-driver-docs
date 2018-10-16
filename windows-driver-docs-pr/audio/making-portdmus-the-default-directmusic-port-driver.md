@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 To make the DMus port driver the default for all DirectMusic applications, generate a GUID (using uuidgen.exe or guidgen.exe, which are included in the Microsoft Windows SDK) to uniquely identify your synth. Your [**KSPROPERTY\_SYNTH\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff537389) property handler should copy this GUID into the **Guid** member of the [**SYNTHCAPS**](https://msdn.microsoft.com/library/windows/hardware/ff538424) structure. Also, modify your driver's INF file to set up the following registry entry:
 
-```cpp
+```inf
 Key:    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectMusic\Defaults
 String Value:    DefaultOutputPort
  

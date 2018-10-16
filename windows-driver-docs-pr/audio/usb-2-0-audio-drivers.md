@@ -197,14 +197,14 @@ There is not any specific partner customization that is associated with the in-b
 
 This INF file entry (provided in a update to Windows Release 1703), is used to indentify that the in-box driver is a generic device driver. 
 
-```cpp
+```inf
 GenericDriverInstalled,,,,1
 ```
 
 
 The in-box driver registers for the following compatible IDs with usbaudio2.inf.
 
-```cpp
+```inf
 USB\Class_01&SubClass_00&Prot_20
 USB\Class_01&SubClass_01&Prot_20
 USB\Class_01&SubClass_02&Prot_20
@@ -217,13 +217,13 @@ USB Audio 2.0 Devices with MIDI (subclass 0x03 above) will enumerate the MIDI fu
 
 The USB Audio 1.0 class driver registers this compatible ID with wdma_usb.inf.
  
-```cpp
+```inf
 USB\Class_01
 ```
  
 And has these exclusions:
  
-```cpp
+```inf
 USB\Class_01&SubClass_00&Prot_20
 USB\Class_01&SubClass_01&Prot_20
 USB\Class_01&SubClass_02&Prot_20
