@@ -3,6 +3,7 @@ title: MSFC\_AdapterEvent WMI Class
 description: MSFC\_AdapterEvent WMI Class
 ms.assetid: 83077288-e3f6-4b21-80ed-677aad7d2979
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSFC\_AdapterEvent WMI Class

@@ -4,6 +4,7 @@ author: windows-driver-content
 description: What Does the Zw Prefix Mean
 ms.assetid: 9529cce9-9c46-4906-854d-d0aef9118a90
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # What Does the Zw Prefix Mean?

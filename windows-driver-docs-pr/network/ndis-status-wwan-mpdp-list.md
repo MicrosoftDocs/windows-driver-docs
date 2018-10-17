@@ -11,6 +11,7 @@ api_location:
 - ndis.h
 api_type:
 - HeaderDef
+ms.date: 10/17/2018
 ---
 
 # NDIS_STATUS_WWAN_MPDP_LIST

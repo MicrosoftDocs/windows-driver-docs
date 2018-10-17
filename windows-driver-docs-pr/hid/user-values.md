@@ -5,6 +5,7 @@ description: User Values
 ms.assetid: 42b57fc2-fda0-464a-83dc-3e63ef693e9f
 keywords: ["user registry settings WDK joysticks"]
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # User Values

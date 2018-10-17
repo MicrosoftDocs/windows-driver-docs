@@ -4,6 +4,7 @@ author: windows-driver-content
 description: This topic describes tests for touchscreen laptop systems.
 ms.assetid: 0DD7865F-C31C-48AD-8775-4AC1E469176F
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Touchscreen laptop system testing

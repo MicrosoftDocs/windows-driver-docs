@@ -3,6 +3,7 @@ title: 'Hdpi.h Macros'
 author: windows-driver-content
 description: 'Macros contained in the Hdpi.h header.'
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Hdpi.h Macros

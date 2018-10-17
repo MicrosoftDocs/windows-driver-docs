@@ -4,6 +4,7 @@ author: windows-driver-content
 description: This topic discusses how a kernel-mode driver should use IRP_MJ_READ requests as its main approach for continuously obtaining HID input reports.
 ms.assetid: 017481f1-8021-4fd5-ab8e-f09f6006e616
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Obtaining HID Reports by Kernel-Mode Drivers

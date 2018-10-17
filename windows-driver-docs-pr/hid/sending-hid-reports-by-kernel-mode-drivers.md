@@ -4,6 +4,7 @@ author: windows-driver-content
 description: Sending HID Reports by Kernel-Mode Drivers
 ms.assetid: ff3d090f-cf76-40a7-9215-8440a592f303
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Sending HID Reports by Kernel-Mode Drivers

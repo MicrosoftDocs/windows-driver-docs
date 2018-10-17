@@ -3,6 +3,7 @@ title: XR_BIAS Color Channel Conversion Rules
 description: XR_BIAS Color Channel Conversion Rules
 ms.assetid: B3014241-A86A-4B6E-BC9D-50057B924D98
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # XR\_BIAS Color Channel Conversion Rules

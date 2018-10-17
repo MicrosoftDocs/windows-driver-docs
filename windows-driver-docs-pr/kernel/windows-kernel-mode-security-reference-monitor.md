@@ -4,6 +4,7 @@ author: windows-driver-content
 description: Windows Kernel-Mode Security Reference Monitor
 ms.assetid: 80c63d9c-cb8e-47c0-8afd-ca78dbc43327
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Windows Kernel-Mode Security Reference Monitor

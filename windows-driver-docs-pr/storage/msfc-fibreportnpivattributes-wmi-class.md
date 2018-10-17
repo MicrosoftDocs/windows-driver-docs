@@ -3,6 +3,7 @@ title: MSFC\_FibrePortNPIVAttributes WMI Class
 description: MSFC\_FibrePortNPIVAttributes WMI Class
 ms.assetid: A778E00A-476C-4763-B652-3312B7913F9C
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSFC\_FibrePortNPIVAttributes WMI Class

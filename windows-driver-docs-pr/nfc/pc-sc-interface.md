@@ -4,6 +4,7 @@ description: This topic describes the ATR format for different NFC card types.
 ms.assetid:
 ms.author: eliotgra
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # PC/SC interface for smart cards

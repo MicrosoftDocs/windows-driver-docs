@@ -4,6 +4,7 @@ author: windows-driver-content
 description: Windows Kernel-Mode Object Manager
 ms.assetid: f10561a3-d831-4c13-9edf-be40fb1db403
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Windows Kernel-Mode Object Manager

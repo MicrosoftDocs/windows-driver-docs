@@ -14,6 +14,7 @@ keywords:
 - export WDK Static Driver Verifier
 - Static Driver Verifier Report WDK
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Saving Defect Traces

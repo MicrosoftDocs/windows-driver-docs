@@ -4,6 +4,7 @@ author: windows-driver-content
 description: Synchronous I/O Programming
 ms.assetid: ef021dd2-bd1d-4fb0-853f-014c62bda76b
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Synchronous I/O Programming

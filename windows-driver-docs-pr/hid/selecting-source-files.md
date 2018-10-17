@@ -5,6 +5,7 @@ description: Selecting Source Files
 ms.assetid: 259a7092-1197-4521-853a-6064aaa0c037
 keywords: ["INF files WDK joysticks , source files"]
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Selecting Source Files

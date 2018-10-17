@@ -3,6 +3,7 @@ title: Working with Extension INFs in the Windows Hardware Dashboard
 description: You can create shipping labels for your Extension INF files on the Windows Hardware Dev Center, enabling you to share and publish them like other submissions.
 ms.assetid: 
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Working with Extension INFs in the Windows Hardware Dev Center Dashboard
