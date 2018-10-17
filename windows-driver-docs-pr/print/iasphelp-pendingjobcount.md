@@ -80,12 +80,12 @@ This property returns one of the values in the following table.
 Before you query this property, call the [**Iasphelp::CalcJobETA**](iasphelp-calcjobeta.md) method to initialize the property value.
 
 ```vb
-    Dim objPrinter
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
-    objPrinter.CalcJobETA
-    PendingJobs = objPrinter.PendingJobCount
+Dim objPrinter
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
+objPrinter.CalcJobETA
+PendingJobs = objPrinter.PendingJobCount
 ```
 
 Requirements

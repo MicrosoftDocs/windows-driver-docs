@@ -81,12 +81,12 @@ The property value is a printer status code that is either 0 or the bitwise OR o
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::Status** property can be queried.
 
-```cpp
-    Dim objPrinter, PtrStatus
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
-    PtrStatus = objPrinter.Status
+```vb
+Dim objPrinter, PtrStatus
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
+PtrStatus = objPrinter.Status
 ```
 
 Requirements
