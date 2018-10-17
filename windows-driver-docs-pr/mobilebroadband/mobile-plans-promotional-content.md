@@ -27,6 +27,8 @@ Windows includes support for interactive toast notifications that include text, 
 
 The Mobile Plans app includes a landing page for every mobile operator. The landing page can be customized with promotional content to highlight a brand or campaign message.
 
+### Promotional gateway content
+
 Promotional gateway content is defined using a JSON file with the following elements:
 
 ```JSON
