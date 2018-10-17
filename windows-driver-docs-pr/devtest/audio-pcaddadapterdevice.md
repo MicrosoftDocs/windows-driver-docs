@@ -2,11 +2,7 @@
 title: PcAddAdapterDevice rule (audio)
 description: The PcAddAdapterDevice rule specifies that a PortCls miniport driver correctly uses the PcAddAdapterDevice function, specifically that the DeviceExtensionSize should be either zero (0) or no less than PORT\_CLASS\_DEVICE\_EXTENSION\_SIZE.
 ms.assetid: AD020D31-9994-4AD1-A937-E29A594FC9D4
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["PcAddAdapterDevice rule (audio)"]
 topic_type:
 - apiref

@@ -4,11 +4,7 @@ description: COPP Video Miniport Driver Key Exchange Template Code
 ms.assetid: 5c0de949-e460-4f01-a762-706eac3abee0
 keywords:
 - key exchange WDK COPP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

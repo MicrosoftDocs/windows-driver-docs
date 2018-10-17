@@ -3,9 +3,6 @@ title: DEBUG\_ATTACH\_XXX
 description: The DEBUG\_ATTACH\_*XXX* bit-flags described in this topic control how the debugger engine attaches to a user-mode process.
 ms.author: domars
 ms.date: 08/10/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

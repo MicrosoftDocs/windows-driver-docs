@@ -8,11 +8,7 @@ keywords:
 - sending I/O requests WDK KMDF
 - sending I/O requests WDK KMDF , asynchronous
 - asynchronously sending I/O requests WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

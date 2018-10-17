@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Introduction to MS-DOS Device Names
 ms.assetid: 44b2f871-56e1-46d3-aab4-c38f498d089d
 keywords: ["MS-DOS device names WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

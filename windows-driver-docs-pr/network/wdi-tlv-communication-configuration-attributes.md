@@ -3,11 +3,7 @@ title: WDI_TLV_COMMUNICATION_CONFIGURATION_ATTRIBUTES
 author: windows-driver-content
 description: WDI_TLV_COMMUNICATION_CONFIGURATION_ATTRIBUTES is a TLV that contains the host-adapter communication protocol configuration attributes.
 ms.assetid: A779FA2D-D3E0-4FC9-9A8A-09B6E3CFF758
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - WDI_TLV_COMMUNICATION_CONFIGURATION_ATTRIBUTES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

@@ -6,11 +6,7 @@ keywords:
 - DMA buffers WDK display , guaranteed contract mode
 - guaranteed contract DMA buffers WDK display
 - patch-location lists WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

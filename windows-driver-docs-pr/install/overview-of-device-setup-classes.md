@@ -2,11 +2,7 @@
 title: Overview of Device Setup Classes
 description: Overview of Device Setup Classes
 ms.assetid: 318ec3f4-f2c2-437c-a767-494ac240cb89
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

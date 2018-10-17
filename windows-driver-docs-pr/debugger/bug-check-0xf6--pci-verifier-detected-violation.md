@@ -5,9 +5,6 @@ ms.assetid: 8d2be46d-52fd-41dc-b33c-67fea7e0e501
 keywords: ["Bug Check 0xF6 PCI_VERIFIER_DETECTED_VIOLATION", "PCI_VERIFIER_DETECTED_VIOLATION"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

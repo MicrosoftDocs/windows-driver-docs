@@ -5,9 +5,6 @@ ms.assetid: 6d0b5294-b086-4b33-ac0d-0428521a3489
 keywords: ["XML data in CAB files", "sysdata.xml", "findxmldata Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

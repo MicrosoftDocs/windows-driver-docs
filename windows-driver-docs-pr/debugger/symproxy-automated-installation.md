@@ -4,9 +4,6 @@ description: These steps along with the Install.cmd script below can help automa
 ms.assetid: 9E5433D8-D024-4E2B-AEAA-2271C133FD0E
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,11 +5,7 @@ ms.assetid: 7e997f6b-fec4-4aa4-b0ed-0d02cb3f844d
 keywords:
 - DC origin WDK GDI
 - surface negotiation WDK GDI , DC origin
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

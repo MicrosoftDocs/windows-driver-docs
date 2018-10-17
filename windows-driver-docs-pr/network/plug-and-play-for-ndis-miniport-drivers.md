@@ -7,11 +7,7 @@ keywords:
 - NDIS miniport drivers WDK , Plug and Play
 - Plug and Play WDK NDIS miniport , about miniport driver Plug and Play
 - Plug and Play WDK NDIS miniport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

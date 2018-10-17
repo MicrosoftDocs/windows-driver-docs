@@ -5,9 +5,6 @@ ms.assetid: 9dbae9e7-c181-491e-9566-6f5e8182aae0
 keywords: ["performance-optimized code"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

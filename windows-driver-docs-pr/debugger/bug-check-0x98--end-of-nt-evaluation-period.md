@@ -5,9 +5,6 @@ ms.assetid: e49ea686-27b9-4743-9339-766b4748e29b
 keywords: ["Bug Check 0x98 END_OF_NT_EVALUATION_PERIOD", "END_OF_NT_EVALUATION_PERIOD"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

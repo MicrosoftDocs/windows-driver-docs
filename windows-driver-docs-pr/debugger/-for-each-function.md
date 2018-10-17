@@ -5,9 +5,6 @@ ms.assetid: D51C3562-3D49-4528-A208-71A8756EBC8E
 keywords: ["for_each_function Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

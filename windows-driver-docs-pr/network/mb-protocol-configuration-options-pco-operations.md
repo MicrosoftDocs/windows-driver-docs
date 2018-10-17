@@ -4,11 +4,7 @@ description: MB Protocol Configuration Options (PCO) operations
 ms.assetid: 682C507C-5B2C-45E3-99D2-EEC68F8FC715
 keywords:
 - MB PCO options, Mobile Broadband PCO options, MB Protocol Configuration Options, Mobile Broadband Protocol Configuration Options, WDK network drivers, MBB miniport drivers
-ms.author: windowsdriverdev
 ms.date: 09/11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

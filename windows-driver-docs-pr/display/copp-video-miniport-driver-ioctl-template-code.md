@@ -4,11 +4,7 @@ description: COPP Video Miniport Driver IOCTL Template Code
 ms.assetid: 55a77261-016e-4ba6-8cb6-c45171759035
 keywords:
 - IOCTLs WDK COPP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

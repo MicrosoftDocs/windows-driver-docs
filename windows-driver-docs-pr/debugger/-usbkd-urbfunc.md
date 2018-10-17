@@ -5,9 +5,6 @@ ms.assetid: 111DD6CD-D7DB-4772-B6DD-8EA88587FD1F
 keywords: ["usbkd.urbfunc Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

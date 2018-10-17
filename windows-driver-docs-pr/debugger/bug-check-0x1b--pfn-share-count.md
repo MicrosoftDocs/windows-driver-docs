@@ -5,9 +5,6 @@ ms.assetid: 7af4f639-2412-4312-84a7-66354d300ec6
 keywords: ["Bug Check 0x1B PFN_SHARE_COUNT", "PFN_SHARE_COUNT"]
 ms.author: domars
 ms.date: 09/14/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

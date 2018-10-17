@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Accessing Read-Only System Memory
 ms.assetid: d2c1f933-3a7e-4e82-b96d-4f019b27abd5
 keywords: ["memory management WDK kernel , read-only memory", "read-only memory WDK kernel", "intercepting system calls", "global strings WDK memory"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

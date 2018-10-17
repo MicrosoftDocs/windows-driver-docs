@@ -5,9 +5,6 @@ ms.assetid: 9e489cfc-2105-4605-b94d-88eea7883420
 keywords: ["dp ( ntsdexts.dp) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

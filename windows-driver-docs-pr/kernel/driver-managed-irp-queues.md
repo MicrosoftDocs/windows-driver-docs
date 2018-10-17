@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Driver-Managed IRP Queues
 ms.assetid: b701e4aa-96ba-44af-96a5-b6cecf075bac
 keywords: ["device queues WDK IRPs , objects", "IRPs WDK kernel , queuing", "queuing IRPs", "dequeuing IRPs", "internal IRP queues WDK kernel", "cancel-safe IRP queues WDK kernel", "driver-managed IRP queues WDK kernel", "supplemental IRP queues WDK kernel", "interlocked IRP queues WDK kernel", "device queues WDK IRPs", "device queues WDK IRPs , about device queues"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

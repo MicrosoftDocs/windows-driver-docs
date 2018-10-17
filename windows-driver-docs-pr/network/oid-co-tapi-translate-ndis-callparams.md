@@ -5,11 +5,7 @@ description: This topic describes the OID_CO_TAPI_TRANSLATE_NDIS_CALLPARAMS obje
 ms.assetid: a56affc9-4118-4322-85bc-f979b70e0dad
 keywords:
 - OID_CO_TAPI_TRANSLATE_NDIS_CALLPARAMS
-ms.author: windowsdriverdev
 ms.date: 11/03/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

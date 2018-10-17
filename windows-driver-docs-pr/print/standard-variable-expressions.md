@@ -9,11 +9,7 @@ keywords:
 - strings WDK Unidrv
 - standard variable expressions WDK Unidrv
 - max_repeat
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

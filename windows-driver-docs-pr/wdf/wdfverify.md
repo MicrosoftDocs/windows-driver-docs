@@ -5,11 +5,7 @@ description: The WDFVERIFY macro tests a logical expression and, if the expressi
 ms.assetid: 9dc19299-7eda-42fb-811e-ba8dc5c1cdb5
 keywords:
  - WDFVERIFY macro
-ms.author: windowsdriverdev
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

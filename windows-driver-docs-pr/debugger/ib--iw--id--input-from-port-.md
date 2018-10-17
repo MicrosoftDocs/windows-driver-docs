@@ -5,9 +5,6 @@ ms.assetid: 68f9e0c2-3cfd-46e1-a513-5a96c93de63c
 keywords: ["ib, iw, id (Input from Port) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

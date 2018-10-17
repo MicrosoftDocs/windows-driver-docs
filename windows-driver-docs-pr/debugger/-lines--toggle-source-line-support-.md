@@ -5,9 +5,6 @@ ms.assetid: 5d923592-7aba-42a0-893b-2c6621e4b87f
 keywords: [".lines (Toggle Source Line Support) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

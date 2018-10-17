@@ -5,9 +5,6 @@ ms.assetid: 488bbc40-0f67-4d13-8615-944ff8a6a177
 keywords: ["acpicache Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

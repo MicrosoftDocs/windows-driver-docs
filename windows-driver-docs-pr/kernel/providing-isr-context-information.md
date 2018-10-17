@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Providing ISR Context Information
 ms.assetid: 216c3111-3638-4410-a720-ff3d65a1eadd
 keywords: ["interrupt service routines WDK kernel , context information", "ISRs WDK kernel , context information", "interrupt objects WDK kernel , context information", "context information WDK interrupts", "pointers WDK interrupts"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

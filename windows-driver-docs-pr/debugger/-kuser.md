@@ -5,9 +5,6 @@ ms.assetid: 352a2f96-ff66-41be-94ee-045edbb1f81f
 keywords: ["kuser Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

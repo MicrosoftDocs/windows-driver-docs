@@ -7,11 +7,7 @@ keywords:
 - Windows Vista display driver model WDK , architecture
 - architecture WDK display
 - user-mode display drivers WDK Windows Vista , architecture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

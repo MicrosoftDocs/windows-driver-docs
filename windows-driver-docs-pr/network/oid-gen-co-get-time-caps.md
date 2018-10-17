@@ -5,11 +5,7 @@ description: This topic describes the OID_GEN_CO_GET_TIME_CAPS object identifier
 ms.assetid: 6381cfc4-b070-4bd4-90de-6de8a4656cbb
 keywords:
 - OID_GEN_CO_GET_TIME_CAPS
-ms.author: windowsdriverdev
 ms.date: 11/02/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

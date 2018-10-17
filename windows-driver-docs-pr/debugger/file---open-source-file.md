@@ -5,9 +5,6 @@ ms.assetid: 27007865-7517-40df-a30a-26ecf3cec9f5
 keywords: ["File Open Source File", "source debugging, File Open Source File"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

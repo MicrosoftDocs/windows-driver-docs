@@ -5,9 +5,6 @@ ms.assetid: 8caa501e-3bb7-4af8-a7ea-e8b255b9f24c
 keywords: ["I/O Bus", "CARD_INFORMATION", "isainfo Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

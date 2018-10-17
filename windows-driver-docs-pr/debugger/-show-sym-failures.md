@@ -5,9 +5,6 @@ ms.assetid: cf0b6cfd-aad2-482f-a382-a3909f5f3cd4
 keywords: [".show_sym_failures Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

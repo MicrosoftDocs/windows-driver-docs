@@ -5,9 +5,6 @@ ms.assetid: 9e34eadf-1f68-4eec-ad6b-d70163d5d876
 keywords: [".create (Create Process) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -2,9 +2,6 @@
 title: Supported smart card attributes
 description: This topic describes supported smart card attributes.
 ms.assetid:
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 # Supported smart card attributes

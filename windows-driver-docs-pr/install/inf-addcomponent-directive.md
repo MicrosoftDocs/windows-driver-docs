@@ -1,10 +1,6 @@
 ---
 title: INF AddComponent Directive
 description: An AddComponent directive creates a software component device underneath the current device.
-ms.author: windowsdriverdev
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

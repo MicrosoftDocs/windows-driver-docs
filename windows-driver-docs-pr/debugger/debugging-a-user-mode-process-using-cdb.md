@@ -4,9 +4,6 @@ description: You can use CDB to attach to a running process or to spawn and atta
 ms.assetid: 0C56F6B5-0FBC-45C9-8AB7-218C00F90521
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

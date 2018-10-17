@@ -5,9 +5,6 @@ ms.assetid: 9c9a1e81-03c2-4b7c-b0da-b25942548aa9
 keywords: ["TList, TList examples"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

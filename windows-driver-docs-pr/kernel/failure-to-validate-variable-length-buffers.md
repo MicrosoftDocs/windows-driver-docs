@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Failure to Validate Variable-Length Buffers
 ms.assetid: 0cc4be22-8197-421a-a5a6-2e7b89a79a38
 keywords: ["input buffers WDK kernel", "variable-length input buffers WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

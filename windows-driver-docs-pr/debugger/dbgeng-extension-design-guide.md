@@ -5,9 +5,6 @@ ms.assetid: c7046c2a-9cda-4cae-b47a-f36cca44e82d
 keywords: ["DbgEng Extensions, Design Guide"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

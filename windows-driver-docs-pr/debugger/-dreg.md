@@ -5,9 +5,6 @@ ms.assetid: a54ed14e-eb9d-48fd-877d-d6d0fe4a8d3f
 keywords: ["dreg Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

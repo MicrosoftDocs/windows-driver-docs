@@ -4,11 +4,7 @@ author: windows-driver-content
 description: DriverEntry's Optional Responsibilities
 ms.assetid: 859282f7-6b40-47a8-b845-cdb7c26585dd
 keywords: ["DriverEntry WDK kernel , optional responsibilities", "claiming hardware resources", "executive worker threads WDK kernel", "worker threads WDK kernel", "system-space memory allocations WDK kernel", "system resource storage WDK kernel", "storing system resources", "hardware resource claiming WDK kernel", "resource claiming WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

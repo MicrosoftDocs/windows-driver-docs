@@ -5,9 +5,6 @@ ms.assetid: d8669a91-4361-41d6-a7ba-a6d1a706ff66
 keywords: ["SrcSrv, SrcTool utility", "SrcTool utility"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

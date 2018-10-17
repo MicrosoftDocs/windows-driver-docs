@@ -5,9 +5,6 @@ ms.assetid: 2260255d-813b-4b89-8dbe-6ce7e5596ccf
 keywords: ["IRP", "IRP", "IO Request Packet", "irp Windows Debugging"]
 ms.author: domars
 ms.date: 08/23/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -8,11 +8,7 @@ keywords:
 - UVC INF files WDK USB Video Class
 - UVC INF files WDK USB Video Class , sample code
 - sample code WDK USB Video Class , UVC INF files
-ms.author: windowsdriverdev
 ms.date: 9/12/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

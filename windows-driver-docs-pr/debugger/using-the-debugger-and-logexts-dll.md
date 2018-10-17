@@ -5,9 +5,6 @@ ms.assetid: 7f7d3ca2-9b40-41ce-b66c-4367b93a7ff7
 keywords: ["Logger, logexts.dll", "Logger, CDB", "Logger, WinDbg", "logexts.dll"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

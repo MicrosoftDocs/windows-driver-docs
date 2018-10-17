@@ -3,11 +3,7 @@ title: NDIS_STATUS_WDI_INDICATION_DELETE_PORT_COMPLETE
 author: windows-driver-content
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_DELETE_PORT_COMPLETE to indicate the completion of OID_WDI_TASK_DELETE_PORT.
 ms.assetid: 56156ba2-1ee1-445f-a413-6fa4b3092357
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - NDIS_STATUS_WDI_INDICATION_DELETE_PORT_COMPLETE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

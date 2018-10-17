@@ -5,9 +5,6 @@ ms.assetid: 8b524665-0471-4634-aa31-1c82d6cc8569
 keywords: ["Find Image Headers (.imgscan) command", ".imgscan (Find Image Headers) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

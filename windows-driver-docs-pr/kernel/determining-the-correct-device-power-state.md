@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Determining the Correct Device Power State
 ms.assetid: 4acefe93-1d7a-4c12-8701-03c2a8929591
 keywords: ["DEVICE_CAPABILITIES structure", "correct device power states WDK power management", "device power states WDK power management"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

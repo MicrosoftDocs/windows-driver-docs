@@ -8,11 +8,7 @@ keywords:
 - file system filter drivers WDK , attaching filters
 - attaching filters to file system or volume
 - volumes WDK file system , attaching filters
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

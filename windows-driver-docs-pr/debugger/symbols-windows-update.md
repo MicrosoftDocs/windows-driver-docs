@@ -4,9 +4,6 @@ description: This topic describes how you can work with off line symbols for Win
 keywords: ["symbols", "setup, symbols", "symbols, setup"]
 ms.author: domars
 ms.date: 10/12/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

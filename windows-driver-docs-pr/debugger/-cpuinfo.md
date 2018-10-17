@@ -5,9 +5,6 @@ ms.assetid: 1e7c348b-0de8-4925-b0a9-300391b6064e
 keywords: ["cpuinfo Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

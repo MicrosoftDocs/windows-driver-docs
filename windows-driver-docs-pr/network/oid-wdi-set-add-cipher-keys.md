@@ -3,11 +3,7 @@ title: OID_WDI_SET_ADD_CIPHER_KEYS
 author: windows-driver-content
 description: OID_WDI_SET_ADD_CIPHER_KEYS adds or overwrites cipher keys in the key table of a port. This is a set-only property.
 ms.assetid: d10fc976-9e51-4bbb-8f29-caf8c600618a
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - OID_WDI_SET_ADD_CIPHER_KEYS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

@@ -5,9 +5,6 @@ ms.assetid: c6e37cf1-42cc-4f82-9eb8-d252f0b6e196
 keywords: [".allow_exec_cmds (Allow Execution Commands) Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

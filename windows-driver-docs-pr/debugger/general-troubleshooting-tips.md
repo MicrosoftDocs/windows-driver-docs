@@ -5,9 +5,6 @@ ms.assetid: 692bd17f-16bf-4611-9ada-e524d9246a09
 keywords: ["bug check, troubleshooting"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: 747194d0-0aac-487a-acdc-ff27721606d4
 keywords: ["dump file, creating without a system crash"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

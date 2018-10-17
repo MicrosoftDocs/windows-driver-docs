@@ -5,9 +5,6 @@ ms.assetid: 94debe5f-d125-44d0-99c4-90d8794525df
 keywords: ["wmitrace.dumpminievent Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

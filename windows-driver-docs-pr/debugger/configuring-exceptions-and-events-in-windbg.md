@@ -4,9 +4,6 @@ description: You can configure WinDbg to react to specified exceptions and event
 ms.assetid: B91DD7B6-5206-4BA6-8B49-8ECCA2FA730B
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

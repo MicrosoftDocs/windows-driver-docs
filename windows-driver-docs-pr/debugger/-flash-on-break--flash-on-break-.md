@@ -5,9 +5,6 @@ ms.assetid: b2f0a8c5-5b32-44f4-9546-c75859476ce0
 keywords: [".flash_on_break (Flash on Break) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

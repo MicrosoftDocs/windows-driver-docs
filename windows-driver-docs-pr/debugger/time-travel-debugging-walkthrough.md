@@ -3,9 +3,6 @@ title: Time Travel Debugging - Sample App Walkthrough
 description: This section contains a walk through of a small C++ app. 
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

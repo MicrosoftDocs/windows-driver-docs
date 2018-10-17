@@ -12,11 +12,7 @@ keywords:
 - audio adapters WDK
 - audio adapters WDK , constructing
 - adapter drivers WDK audio , constructing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: E25DAE56-E42A-4A56-B36F-8B0B1D826524
 keywords: ["wdfkd_wdfumtriage Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

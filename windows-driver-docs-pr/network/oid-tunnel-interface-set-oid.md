@@ -5,11 +5,7 @@ description: The OID_TUNNEL_INTERFACE_SET_OID object identifier (OID) is reserve
 ms.assetid: 11C56042-1D7E-426A-8F55-098B6F2FA5C9
 keywords:
 - OID_TUNNEL_INTERFACE_SET_OID
-ms.author: windowsdriverdev
 ms.date: 11/01/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

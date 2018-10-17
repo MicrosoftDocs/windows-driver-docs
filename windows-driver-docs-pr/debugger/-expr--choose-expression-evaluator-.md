@@ -5,9 +5,6 @@ ms.assetid: 96d246c2-10fe-4688-a04f-1325ac51e4b3
 keywords: [".expr (Choose Expression Evaluator) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

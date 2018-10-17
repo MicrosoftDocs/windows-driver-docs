@@ -9,11 +9,7 @@ keywords:
 - near field proximity
 - NFP
 description: Information about meeting the requirements for NFP devices on connected standby. platforms
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

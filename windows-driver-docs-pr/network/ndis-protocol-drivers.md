@@ -7,11 +7,7 @@ keywords:
 - network drivers WDK , protocol drivers
 - NDIS WDK , protocol drivers
 - NDIS protocol drivers WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: ff4b5708-b9d0-4809-9fe4-9a22d4cacbc0
 keywords: ["pct (Step to Next Call or Return) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

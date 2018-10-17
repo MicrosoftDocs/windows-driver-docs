@@ -5,9 +5,6 @@ ms.assetid: B1DE8C2B-FBE3-4EFC-8DD8-4222AD5E1E36
 keywords: ["Bug Check 0xB1 BGI_DETECTED_VIOLATION", "BGI_DETECTED_VIOLATION"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

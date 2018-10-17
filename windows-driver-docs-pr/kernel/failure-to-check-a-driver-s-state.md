@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Failure to Check a Driver's State
 ms.assetid: 963f79f6-2282-41bd-9cf4-bd5bc02a510e
 keywords: ["reliability WDK kernel , driver state checking", "checking driver states", "driver state checking", "verifying driver states", "correct device states WDK kernel", "device states WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

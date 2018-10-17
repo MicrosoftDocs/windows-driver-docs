@@ -3,9 +3,6 @@ title: TTD Memory Objects
 description: This section describes the memory model objects associated with time travel debugging.
 ms.author: domars
 ms.date: 01/16/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

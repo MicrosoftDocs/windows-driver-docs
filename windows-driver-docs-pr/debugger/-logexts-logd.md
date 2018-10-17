@@ -5,9 +5,6 @@ ms.assetid: d3c3403d-f86b-4f2a-a261-c00eb0b2b756
 keywords: ["logexts.logd Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

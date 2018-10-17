@@ -5,9 +5,6 @@ ms.assetid: 86fbbcee-c752-4425-a330-4d95a4069b0d
 keywords: ["~f (Freeze Thread) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

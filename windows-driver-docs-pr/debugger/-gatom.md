@@ -5,9 +5,6 @@ ms.assetid: effaf07a-4a5f-477c-8d4f-8f955b38cb6a
 keywords: ["gatom Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

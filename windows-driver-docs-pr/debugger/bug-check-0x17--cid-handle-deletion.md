@@ -5,9 +5,6 @@ ms.assetid: 84012928-655c-4b99-b940-dad4f0caf249
 keywords: ["Bug Check 0x17 CID_HANDLE_DELETION", "CID_HANDLE_DELETION"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

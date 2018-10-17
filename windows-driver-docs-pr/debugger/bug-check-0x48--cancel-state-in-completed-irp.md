@@ -5,9 +5,6 @@ ms.assetid: e706cf9b-8800-41ce-9bad-e4b9a8503051
 keywords: ["Bug Check 0x48 CANCEL_STATE_IN_COMPLETED_IRP", "CANCEL_STATE_IN_COMPLETED_IRP"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -5,9 +5,6 @@ ms.assetid: d34eebb7-bc91-4bff-9787-d92f74195ee1
 keywords: ["db extension", "dc extension", "dd extension", "dp extension", "dq extension", "du extension", "dw extension", "memory, Display Physical ( d ) extensions", "db, dc, dd, dp, dq, du, dw Windows Debugging"]
 ms.author: domars
 ms.date: 01/18/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

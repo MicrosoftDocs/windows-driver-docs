@@ -5,9 +5,6 @@ ms.assetid: BBB96770-A575-4E31-AE8B-9226BB61727D
 keywords: [".prefer_dml (Prefer Debugger Markup Language) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

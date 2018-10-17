@@ -3,11 +3,7 @@ title: WDI_TLV_P2P_SEND_RESPONSE_ACTION_FRAME_RESULT
 author: windows-driver-content
 description: WDI_TLV_P2P_SEND_RESPONSE_ACTION_FRAME_RESULT is an unused TLV.
 ms.assetid: E1014E02-C17B-4161-82EF-47C880411A57
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - WDI_TLV_P2P_SEND_RESPONSE_ACTION_FRAME_RESULT Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

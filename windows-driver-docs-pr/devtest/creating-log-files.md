@@ -5,11 +5,7 @@ ms.assetid: dad0f9fc-1a88-4bee-800a-5a4464fff600
 keywords:
 - log files WDK Driver Verifier
 - Driver Verifier WDK , log files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

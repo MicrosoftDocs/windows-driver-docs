@@ -5,9 +5,6 @@ ms.assetid: 33f275b8-1f7a-49ed-af4b-8686b73d64f9
 keywords: ["Bug Check 0x28 CORRUPT_ACCESS_TOKEN", "CORRUPT_ACCESS_TOKEN"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

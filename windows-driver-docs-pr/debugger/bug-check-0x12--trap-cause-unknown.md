@@ -5,9 +5,6 @@ ms.assetid: 43cbcc34-9df0-4d5f-b823-1cc3cafaa811
 keywords: ["Bug Check 0x12 TRAP_CAUSE_UNKNOWN", "TRAP_CAUSE_UNKNOWN"]
 ms.author: domars
 ms.date: 06/26/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -5,9 +5,6 @@ ms.assetid: 64dcc364-53b5-41d3-9266-abcfe4b328f4
 keywords: commands, debugger commands, meta-commands
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

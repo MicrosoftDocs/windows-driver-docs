@@ -5,9 +5,6 @@ ms.assetid: 01783b6b-0117-49ca-87ca-bbe3c1b0e730
 keywords: ["poolfind Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

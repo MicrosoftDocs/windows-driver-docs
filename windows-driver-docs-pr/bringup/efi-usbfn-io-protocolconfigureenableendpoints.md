@@ -3,11 +3,7 @@ title: EFI_USBFN_IO_PROTOCOL.ConfigureEnableEndpoints
 author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.ConfigureEnableEndpoints
 ms.assetid: 31bc58a0-ec2b-4b5e-ad1b-e6107cc083b1
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Failing a System Query-Power IRP in a Filter or Function Driver
 ms.assetid: 7c4ceb8e-94f4-4ff7-9d45-1094e9a861fd
 keywords: ["query-power IRPs WDK power management", "filter drivers WDK power management", "function drivers WDK power management", "failing query-power IRPs"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

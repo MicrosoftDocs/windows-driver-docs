@@ -5,9 +5,6 @@ ms.assetid: 510d5f9a-cde8-4dc8-8e2f-80f84ad44fce
 keywords: ["Searching for Debugging Servers Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

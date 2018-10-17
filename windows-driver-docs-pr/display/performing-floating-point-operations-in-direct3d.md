@@ -6,11 +6,7 @@ keywords:
 - floating-point operations WDK Direct3D
 - Direct3D WDK Windows 2000 display , floating-point operations
 - callback functions WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

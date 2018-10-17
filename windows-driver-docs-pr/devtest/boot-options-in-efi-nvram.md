@@ -8,11 +8,7 @@ keywords:
 - boot options WDK , EFI NVRAM
 - Extensible Firmware Interface WDK boot options
 - Itanium processor boot options WDK
-ms.author: windowsdriverdev
 ms.date: 07/03/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

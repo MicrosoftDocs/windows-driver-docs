@@ -2,11 +2,7 @@
 Description: This topic describes the Microsoft-provided driver framework for USB devices that do not have their own USB device class specification.
 title: Microsoft-Defined USB Driver Frameworks
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 05/08/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

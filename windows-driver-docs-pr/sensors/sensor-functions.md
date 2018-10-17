@@ -3,11 +3,7 @@ title: Sensor Functions
 author: windows-driver-content
 description: Sensor Functions
 ms.assetid: 270FF517-4980-4D9B-AA28-F5EEB2A38A7B
-ms.author: windowsdriverdev
 ms.date: 07/20/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

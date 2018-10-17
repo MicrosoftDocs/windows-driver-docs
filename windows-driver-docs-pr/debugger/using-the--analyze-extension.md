@@ -5,9 +5,6 @@ ms.assetid: 0aa74153-e992-4d1c-b734-ccc60cff452c
 keywords: ["analyze extension, examples"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

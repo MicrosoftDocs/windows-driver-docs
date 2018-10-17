@@ -1,11 +1,7 @@
 ---
 title: IrqlKeApcLte1 rule (wdm)
 ms.assetid: d88e3c0f-574b-41df-97ee-282a9f1eb6f4
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 description: 
 keywords: ["IrqlKeApcLte1 rule (wdm)"]
 topic_type:

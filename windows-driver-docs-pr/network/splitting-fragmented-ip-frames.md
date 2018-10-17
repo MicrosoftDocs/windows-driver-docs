@@ -5,11 +5,7 @@ ms.assetid: faee7ec8-a49e-4107-a83f-d97391d69b43
 keywords:
 - Ethernet frame splitting WDK networking , fragmented IP frames
 - fragmented IP frames WDK header-data split
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

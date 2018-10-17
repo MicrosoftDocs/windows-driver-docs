@@ -7,11 +7,7 @@ keywords:
 - backfill space allocations WDK header-data split
 - pre-allocated backfill storage WDK header-data split
 - data backfill space WDK header-data split
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

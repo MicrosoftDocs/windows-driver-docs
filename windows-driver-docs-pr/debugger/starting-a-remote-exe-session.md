@@ -5,9 +5,6 @@ ms.assetid: 2b70e54e-ab02-46f1-9af1-e7379c89cf3c
 keywords: ["remote debugging through remote.exe, starting the session"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

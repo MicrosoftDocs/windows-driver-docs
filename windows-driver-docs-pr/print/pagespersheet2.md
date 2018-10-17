@@ -3,11 +3,7 @@ title: PagesPerSheet
 author: windows-driver-content
 description: PagesPerSheet
 ms.assetid: 019c9344-7661-4c39-a441-469d340e61cb
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,11 +5,7 @@ description: This topic describes the NDIS_STATUS_OFFLOAD_PAUSE status indicatio
 ms.assetid: 1ccb6b72-97fb-4b1c-ac61-5d5dad903a30
 keywords:
 - NDIS_STATUS_OFFLOAD_PAUSE, TCP chimney offload NDIS status indications, NDIS_STATUS_OFFLOAD_PAUSE WDK, NDIS_STATUS_OFFLOAD_PAUSE networking
-ms.author: windowsdriverdev
 ms.date: 11/10/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

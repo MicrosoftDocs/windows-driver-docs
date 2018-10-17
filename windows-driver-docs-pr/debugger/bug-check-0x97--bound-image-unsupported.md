@@ -5,9 +5,6 @@ ms.assetid: 51d96612-d7a4-4e0f-b83b-208311cf1e1a
 keywords: ["Bug Check 0x97 BOUND_IMAGE_UNSUPPORTED", "BOUND_IMAGE_UNSUPPORTED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

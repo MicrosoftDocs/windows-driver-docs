@@ -5,9 +5,6 @@ ms.assetid: BDCD8A3A-1F26-41A4-95B0-9B2CEBD333AC
 keywords: ["Bug Check 0x13C INVALID_IO_BOOST_STATE", "INVALID_IO_BOOST_STATE"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

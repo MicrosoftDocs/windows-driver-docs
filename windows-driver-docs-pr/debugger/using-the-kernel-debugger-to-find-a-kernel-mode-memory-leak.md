@@ -5,9 +5,6 @@ ms.assetid: eeadd505-b887-498d-9369-877156526355
 keywords: ["memory leak, kernel-mode, kernel debugger"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

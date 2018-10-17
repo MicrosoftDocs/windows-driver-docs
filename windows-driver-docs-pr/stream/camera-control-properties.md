@@ -7,11 +7,7 @@ keywords:
 - camera control properties WDK video capture
 - control properties WDK video capture
 - PROPSETID_VIDCAP_CAMERACONTROL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

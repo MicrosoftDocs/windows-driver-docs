@@ -5,9 +5,6 @@ ms.assetid: 2215f166-2053-4525-80cd-be3817510dbd
 keywords: ["devstack Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

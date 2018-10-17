@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Handling Overlapped I/O Operations
 ms.assetid: d13a9fa2-9f68-4c35-af79-dd3f8cec2805
 keywords: ["deferred procedure calls WDK kernel", "DPCs WDK kernel", "DpcForIsr", "CustomDpc", "overlapped I/O WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

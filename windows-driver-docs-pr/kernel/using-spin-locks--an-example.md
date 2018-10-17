@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Using Spin Locks An Example
 ms.assetid: 0f3cd7fe-d3e6-4024-9b2f-7140c6ddd1ea
 keywords: ["spin locks WDK kernel", "interrupt spin locks WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

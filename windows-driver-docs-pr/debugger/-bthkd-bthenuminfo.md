@@ -5,9 +5,6 @@ ms.assetid: 6280EA4C-1A1B-477C-AB6C-EB53177FA88E
 keywords: ["bthkd.bthenuminfo Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

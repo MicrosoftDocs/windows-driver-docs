@@ -5,9 +5,6 @@ ms.assetid: 855c50ed-361e-4236-a1b0-e1b2a3ae2a62
 keywords: ["interrupt vector table", "ivt Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

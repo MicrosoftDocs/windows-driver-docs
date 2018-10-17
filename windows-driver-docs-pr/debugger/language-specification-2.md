@@ -4,9 +4,6 @@ description: Language Specification 2
 ms.assetid: 4555ab3c-5bfa-458e-bb22-3fdaedbf3bca
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

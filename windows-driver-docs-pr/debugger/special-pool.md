@@ -5,9 +5,6 @@ ms.assetid: 8904913d-78ed-4e5f-acef-3c21eeb87b8d
 keywords: ["Special Pool", "Special Pool, overview", "GFlags, Special Pool"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

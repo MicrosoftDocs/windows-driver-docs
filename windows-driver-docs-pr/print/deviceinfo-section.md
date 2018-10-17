@@ -3,11 +3,7 @@ title: DeviceInfo Section
 author: windows-driver-content
 description: DeviceInfo Section
 ms.assetid: 54cf58b2-9f3d-4548-826b-02d44511de05
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -2,11 +2,7 @@
 title: IrqlExPassive rule (wdm)
 description: The IrqlExPassive rule specifies that the driver calls the following executive support routines only at IRQL�  PASSIVE\_LEVEL ExCreateCallbackExIsProcessorFeaturePresentExRaiseAccessViolationExRaiseDatatypeMisalignmentExRaiseStatusExUuidCreateThe IrqlExPassive rule also specifies that the driver calls ExRaiseStatus at IRQL APC\_LEVEL.
 ms.assetid: 92d73bd9-ce79-4be8-9ea2-a5aef2ea6edb
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["IrqlExPassive rule (wdm)"]
 topic_type:
 - apiref

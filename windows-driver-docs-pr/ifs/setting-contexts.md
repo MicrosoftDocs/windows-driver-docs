@@ -6,11 +6,7 @@ ms.assetid: 3daa23e6-14d7-4d35-8bc8-695296cd289d
 keywords:
 - contexts WDK file system minifilter , setting
 - attaching contexts
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

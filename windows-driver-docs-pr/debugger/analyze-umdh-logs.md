@@ -5,9 +5,6 @@ ms.assetid: 66e559b2-0335-4a1d-ba6c-dde6b826dc5f
 keywords: ["Analyze UMDH Logs Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

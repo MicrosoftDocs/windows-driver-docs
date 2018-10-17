@@ -5,9 +5,6 @@ ms.assetid: e975ee10-cd2f-4944-8d00-b2eda2dd099a
 keywords: ["amli bc Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

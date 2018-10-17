@@ -5,9 +5,6 @@ ms.assetid: 46845a5c-6ec4-4ae4-b89d-886df367dc5e
 keywords: [".dvfree (Free Memory) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -5,9 +5,6 @@ ms.assetid: 7fbca028-8d11-42b5-b64e-41eb3edc56cc
 keywords: ["dt Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

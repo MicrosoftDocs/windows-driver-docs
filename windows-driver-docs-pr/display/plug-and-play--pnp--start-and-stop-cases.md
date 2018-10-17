@@ -4,11 +4,7 @@ description: All Windows Display Driver Model (WDDM) 1.2 and later display minip
 ms.assetid: A95DCFEA-BC1B-4A13-9850-13814725D53E
 keywords:
 - Plug and Play in display drivers WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

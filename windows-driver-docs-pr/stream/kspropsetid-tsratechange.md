@@ -2,11 +2,7 @@
 title: KSPROPSETID\_TSRateChange
 description: KSPROPSETID\_TSRateChange
 ms.assetid: bd2855e5-dd90-4ae3-a96e-e2163e94c7d6
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

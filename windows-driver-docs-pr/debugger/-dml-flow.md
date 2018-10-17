@@ -5,9 +5,6 @@ ms.assetid: 32B50228-05A5-4BA7-88B1-54D4E502EB85
 keywords: [".dml_flow (Unasemmble with Links) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

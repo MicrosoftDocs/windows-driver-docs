@@ -2,11 +2,7 @@
 title: Purchase
 description: Purchase
 ms.assetid: e753ba12-650e-4116-bb2e-dc17fc7bddee
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

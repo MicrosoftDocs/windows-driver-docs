@@ -5,9 +5,6 @@ ms.assetid: d6898025-9ba2-4b3b-819b-d7b23d8ee525
 keywords: ["regkcb Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

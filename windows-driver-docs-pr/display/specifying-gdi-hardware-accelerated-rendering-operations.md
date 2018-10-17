@@ -4,11 +4,7 @@ description: Specifying GDI Hardware-Accelerated Rendering Operations
 ms.assetid: 71eb9cdf-0448-48d1-835a-84bbbba13670
 keywords:
 - rendering operations with GDI hardware acceleration WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

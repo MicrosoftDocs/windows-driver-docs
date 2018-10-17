@@ -9,11 +9,7 @@ keywords:
 - stop streaming WDK AV/C streaming
 - stream aborts WDK AV/C streaming
 - canceling streams
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

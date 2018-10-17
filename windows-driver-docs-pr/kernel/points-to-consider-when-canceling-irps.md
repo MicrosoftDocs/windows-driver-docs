@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Points to Consider When Canceling IRPs
 ms.assetid: 16a47033-7147-43a2-a9f8-a215f7e90ff1
 keywords: ["canceling IRPs, guidelines", "Cancel routines, guidelines", "cancelable IRPs WDK kernel", "current states WDK IRPs"]
-ms.author: windowsdriverdev
 ms.date: 05/08/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

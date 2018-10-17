@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Dedicated CLFS Logs
 ms.assetid: c6ca580c-b7f4-493a-8bd6-35d0aa932b1a
 keywords: ["Common Log File System WDK kernel , dedicated logs", "CLFS WDK kernel , dedicated logs", "dedicated logs WDK CLFS", "stable storage WDK CLFS", "storage WDK CLFS"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

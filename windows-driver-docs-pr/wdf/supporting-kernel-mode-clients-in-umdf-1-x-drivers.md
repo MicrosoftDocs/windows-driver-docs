@@ -9,11 +9,7 @@ keywords:
 - user-mode drivers WDK UMDF , kernel-mode clients
 - UMDF WDK , kernel-mode clients
 - User-Mode Driver Framework WDK , kernel-mode clients
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: cc1054e2-b824-4fcf-b353-9ee8c0d3dbf3
 keywords: ["PAE (physical address extension)", "chklowmem Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

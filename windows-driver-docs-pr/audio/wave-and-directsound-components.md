@@ -16,11 +16,7 @@ keywords:
 - wave-capturing applications WDK audio
 - wave-out applications WDK audio
 - wave-in applications WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: 7db937ba-109f-4f4e-8dd3-4aa5d0dc13b2
 keywords: ["amli dns Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

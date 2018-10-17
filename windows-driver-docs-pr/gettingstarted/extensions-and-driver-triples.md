@@ -2,11 +2,7 @@
 title: KMDF extensions and driver triples
 description: In this topic, we discuss class-based extensions to the Kernel Mode Driver Framework (KMDF).
 ms.assetid: 49207485-AFDF-4E84-B39C-A14FC7E2CF60
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

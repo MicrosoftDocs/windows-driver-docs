@@ -7,11 +7,7 @@ keywords:
 - Plug and Play manager WDK print
 - duplicate installation detection WDK print
 - detecting duplicate printer installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -9,11 +9,7 @@ keywords:
 - Switched 56K framing WDK WAN
 - WAN packet framing WDK networking , ISDN framing
 - WAN packet framing WDK networking , Switched 56K framing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

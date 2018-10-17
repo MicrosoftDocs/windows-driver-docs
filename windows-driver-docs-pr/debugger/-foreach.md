@@ -5,9 +5,6 @@ ms.assetid: 646c86c2-a436-43d6-b0d8-32dbd423120e
 keywords: [".foreach Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

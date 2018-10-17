@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Extended Example Using IoIs32bitProcess
 ms.assetid: bb73d16c-9f9f-41ff-ac0b-8af31c6f55f4
 keywords: ["32-bit I/O support WDK 64-bit , IoIs32bitProcess", "IoIs32bitProcess"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

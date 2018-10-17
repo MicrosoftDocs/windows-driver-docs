@@ -4,11 +4,7 @@ description: Summary of NetAdapterCx objects
 ms.assetid: 1635C737-42C6-4957-A3E0-1184A5545441
 keywords:
 - Summary of NetAdapterCx objects, NetCx summary of objects
-ms.author: windowsdriverdev
 ms.date: 08/07/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

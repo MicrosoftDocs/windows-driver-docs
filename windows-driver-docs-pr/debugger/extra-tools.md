@@ -4,9 +4,6 @@ description: Debugging Tools for Windows includes several tools in addition to t
 ms.assetid: f5d761b9-866e-4948-978e-e95f8aed8b21
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

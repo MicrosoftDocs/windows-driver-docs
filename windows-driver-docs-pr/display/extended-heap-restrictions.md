@@ -7,11 +7,7 @@ keywords:
 - DirectDraw extended surface capabilities WDK Windows 2000 display , heaps
 - extended surface capabilities WDK DirectDraw , heaps
 - heaps WDK DirectDraw
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

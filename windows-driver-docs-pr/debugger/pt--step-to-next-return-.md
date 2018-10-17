@@ -5,9 +5,6 @@ ms.assetid: f4388953-4cb2-4df5-af8b-150e50ce765b
 keywords: ["pt (Step to Next Return) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -4,11 +4,7 @@ description: This topic describes how to write a Universal Windows driver using 
 ms.assetid: 1E15A136-94BB-46C1-A438-9562C6BDCE7E
 keywords:
 - Write a KMDF driver
-ms.author: windowsdriverdev
 ms.date: 04/20/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

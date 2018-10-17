@@ -2,11 +2,7 @@
 title: ServiceInfo XML Schema Definition
 description: ServiceInfo XML Schema Definition
 ms.assetid: c5d6aa78-b494-4931-bdfc-6acaab5c570f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

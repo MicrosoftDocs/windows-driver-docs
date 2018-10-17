@@ -5,9 +5,6 @@ ms.assetid: ca5cd2f7-4920-4d36-b338-c934451bc511
 keywords: ["ls, lsa (List Source Lines) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

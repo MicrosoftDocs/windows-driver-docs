@@ -5,9 +5,6 @@ ms.assetid: 2727d429-82f5-44a6-943b-0a3f2d3385a3
 keywords: ["IPI (interprocessor interrupt)", "ipi Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

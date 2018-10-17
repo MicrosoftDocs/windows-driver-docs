@@ -4,11 +4,7 @@ description: Multifunction Device Limits
 ms.assetid: 9375c451-b83f-4655-b1e2-cbd693eaaf5f
 keywords:
 - multifunction audio devices WDK , limits
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

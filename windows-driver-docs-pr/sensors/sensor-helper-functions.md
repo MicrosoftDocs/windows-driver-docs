@@ -3,11 +3,7 @@ title: Sensor Helper Functions
 author: windows-driver-content
 description: Sensor Helper Functions
 ms.assetid: 68DBA705-235B-4D74-9E03-A6B934A6ED68
-ms.author: windowsdriverdev
 ms.date: 07/20/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

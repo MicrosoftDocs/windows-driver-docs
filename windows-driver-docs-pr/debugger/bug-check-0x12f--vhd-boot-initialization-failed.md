@@ -5,9 +5,6 @@ ms.assetid: CC4CD97B-FCBA-4B73-AB9E-D56387D4CB07
 keywords: ["Bug Check 0x12F VHD_BOOT_INITIALIZATION_FAILED", "VHD_BOOT_INITIALIZATION_FAILED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

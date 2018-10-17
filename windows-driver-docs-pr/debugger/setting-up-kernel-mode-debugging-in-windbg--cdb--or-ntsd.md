@@ -5,9 +5,6 @@ ms.assetid: 268DF246-46AA-4F4E-BCBB-FCA37A3C0353
 keywords: ["Kernel-mode debugging", "Setting up kernel-mode debugging"]
 ms.author: domars
 ms.date: 06/22/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

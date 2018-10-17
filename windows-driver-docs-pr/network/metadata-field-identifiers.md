@@ -5,11 +5,7 @@ description: This section describes metadata field identifiers for Windows Filte
 ms.assetid: 2157bace-9fae-41e8-a435-c4a412873ee1
 keywords:
 - Metadata field identifiers network drivers
-ms.author: windowsdriverdev
 ms.date: 11/09/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -4,9 +4,6 @@ description: The ACPI_FIRMWARE_WATCHDOG_TIMEOUT bug check has a value of 0x00000
 keywords: ["Bug Check 0x1D0 ACPI_FIRMWARE_WATCHDOG_TIMEOUT",  "ACPI_FIRMWARE_WATCHDOG_TIMEOUT"]
 ms.author: domars
 ms.date: 04/19/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

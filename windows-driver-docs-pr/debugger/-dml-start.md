@@ -5,9 +5,6 @@ ms.assetid: 1CFCACDC-B253-4E9B-9877-EE9F1E91395F
 keywords: [".dml_start (Display DML Starting Point) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -9,11 +9,7 @@ keywords:
 - PINNAME_VIDEO_TELETEXT
 - World Standard Teletext data WDK video capture
 - WST data WDK video capture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

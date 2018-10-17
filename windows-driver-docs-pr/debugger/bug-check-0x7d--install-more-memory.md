@@ -5,9 +5,6 @@ ms.assetid: 560cfa2b-f000-4dc9-8505-f539f3f56fd6
 keywords: ["Bug Check 0x7D INSTALL_MORE_MEMORY", "INSTALL_MORE_MEMORY"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

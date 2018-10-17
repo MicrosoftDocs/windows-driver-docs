@@ -2,11 +2,7 @@
 title: QueuedSpinLockRelease rule (wdm)
 description: The QueuedSpinLockRelease rule specifies that calls to KeAcquireInStackQueuedSpinLock and KeReleaseInStackQueuedSpinLock are used in strict alternation.
 ms.assetid: 1d6ec912-ca38-4e8c-93c7-1c7aa4792676
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["QueuedSpinLockRelease rule (wdm)"]
 topic_type:
 - apiref

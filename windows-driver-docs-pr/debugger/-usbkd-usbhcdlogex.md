@@ -5,9 +5,6 @@ ms.assetid: 47274AEE-0BDB-4C25-9158-6213366434E0
 keywords: ["usbkd.usbhcdlogex Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

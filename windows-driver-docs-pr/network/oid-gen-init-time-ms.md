@@ -3,11 +3,7 @@ title: OID_GEN_INIT_TIME_MS
 author: windows-driver-content
 description: As a query, the OID_GEN_INIT_TIME_MS OID returns the time in milliseconds that a driver required to initialize.
 ms.assetid: 044e7a4f-b4d5-4a47-81c0-571fdd2ae5bb
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_INIT_TIME_MS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

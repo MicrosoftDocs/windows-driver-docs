@@ -5,9 +5,6 @@ ms.assetid: e97d114e-c6f1-44f1-a2ad-bfa8d03dc3c7
 keywords: ["Bug Check 0xCB DRIVER_LEFT_LOCKED_PAGES_IN_PROCESS", "DRIVER_LEFT_LOCKED_PAGES_IN_PROCESS"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

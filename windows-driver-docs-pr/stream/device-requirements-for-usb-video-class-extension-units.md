@@ -9,11 +9,7 @@ keywords:
 - descriptors WDK USB Video Class
 - Extension Unit controls WDK USB Video Class
 - controls WDK USB Video Class
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

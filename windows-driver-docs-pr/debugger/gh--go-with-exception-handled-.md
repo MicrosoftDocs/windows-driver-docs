@@ -5,9 +5,6 @@ ms.assetid: 3e06a3ff-b57d-435f-9625-011f38d7b26a
 keywords: ["gh (Go with Exception Handled) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -5,9 +5,6 @@ ms.assetid: 5a3ed1c4-723a-4902-bfbf-d4a44d2cd0b5
 keywords: ["dds, dps, dqs (Display Words and Symbols) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

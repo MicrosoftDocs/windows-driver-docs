@@ -5,9 +5,6 @@ ms.assetid: bd169c73-0a46-41b5-bd7b-71adf7747069
 keywords: ["WinDbg Command-Line Options Windows Debugging"]
 ms.author: domars
 ms.date: 08/10/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

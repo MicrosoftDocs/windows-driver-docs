@@ -5,11 +5,7 @@ description: The WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE macro initializes a dri
 ms.assetid: 83e397b1-e37d-451d-9007-3b34993187c3
 keywords:
  - WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE macro
-ms.author: windowsdriverdev
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

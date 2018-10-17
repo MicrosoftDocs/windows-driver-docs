@@ -5,9 +5,6 @@ ms.assetid: 8A9D76F2-7A36-4458-83A4-EDCB153EC45A
 keywords: ["hidkd.hidrd Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

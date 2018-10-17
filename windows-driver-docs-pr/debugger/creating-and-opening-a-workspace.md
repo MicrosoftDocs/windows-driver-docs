@@ -5,9 +5,6 @@ ms.assetid: 0163f380-f982-4635-a450-ed83f0b52e03
 keywords: ["workspaces, creating", "workspaces, opening", "workspaces, named workspaces", "workspaces, default workspaces", "workspaces, types of workspaces"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

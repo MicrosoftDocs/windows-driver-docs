@@ -5,9 +5,6 @@ ms.assetid: 6be6c774-fe6b-4bd4-8174-55ef207db3e6
 keywords: [".endsrv (End Debugging Server) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

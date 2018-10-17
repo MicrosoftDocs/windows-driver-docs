@@ -5,9 +5,6 @@ ms.assetid: 9bbde680-8523-4db2-bb7e-fdacdaf1aa89
 keywords: ["address Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

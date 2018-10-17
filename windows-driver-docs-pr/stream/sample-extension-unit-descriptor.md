@@ -8,11 +8,7 @@ keywords:
 - descriptors WDK USB Video Class
 - descriptors WDK USB Video Class , sample code
 - sample code WDK USB Video Class , extension unit descriptors
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

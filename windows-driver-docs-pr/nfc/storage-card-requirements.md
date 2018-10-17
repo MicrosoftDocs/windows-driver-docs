@@ -2,9 +2,6 @@
 title: Storage card requirements
 description: This topic describes the APDU requirements for storage cards
 ms.assetid:
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

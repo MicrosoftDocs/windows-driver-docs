@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Managing Memory Sections
 ms.assetid: 620ba31d-596f-493a-b97f-65a27d50cc9a
 keywords: ["memory sections WDK kernel", "section objects WDK kernel", "views WDK memory section", "mapping section views"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

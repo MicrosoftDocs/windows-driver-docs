@@ -4,11 +4,7 @@ description: INF files for NetAdapterCx client drivers
 ms.assetid: B885CDF7-B399-440B-A385-27F1090B9C56
 keywords:
 - INF files for NetAdapterCx client drivers, NetCx INF files, NetAdapterCx INF
-ms.author: windowsdriverdev
 ms.date: 08/13/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

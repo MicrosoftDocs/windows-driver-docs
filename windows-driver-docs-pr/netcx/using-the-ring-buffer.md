@@ -4,11 +4,7 @@ description: Using the ring buffer
 ms.assetid: 8A56AA21-264C-4C1A-887E-92C9071E8AB8
 keywords:
 - NetAdapterCx using the ring buffer, NetCx using the ring buffer, NetAdapterCx PCI devices ring buffer, NetAdapterCx asynchronous I/O
-ms.author: windowsdriverdev
 ms.date: 03/18/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

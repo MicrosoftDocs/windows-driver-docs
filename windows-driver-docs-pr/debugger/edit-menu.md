@@ -5,9 +5,6 @@ ms.assetid: fb3c8b71-93ba-4811-ba86-abc5aef81faa
 keywords: ["Edit Menu (complete listing)", "graphical interface, edit menu"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

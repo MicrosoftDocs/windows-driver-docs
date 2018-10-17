@@ -5,9 +5,6 @@ ms.assetid: 6bebd7df-03d8-4413-8a0c-a0d5ad913173
 keywords: ["homedir Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

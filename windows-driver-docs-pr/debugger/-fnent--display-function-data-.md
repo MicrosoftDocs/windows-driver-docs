@@ -5,9 +5,6 @@ ms.assetid: 914caf55-2fbf-4f30-af6e-e666dc47c7da
 keywords: ["Display Function Data (.fnent) command", ".fnent (Display Function Data) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

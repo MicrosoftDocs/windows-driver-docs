@@ -5,9 +5,6 @@ ms.assetid: ab5f5164-7666-48ac-aeba-5f238c2625f6
 keywords: ["ecb, ecd, ecw Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

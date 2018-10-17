@@ -5,9 +5,6 @@ ms.assetid: 4fec7170-7480-4a8a-b060-1c8a8c3fb9dc
 keywords: ["breaking into the debugger", "DebugBreak function", "DbgBreakPoint function", "KdBreakPoint function", "DbgBreakPointWithStatus function", "KdBreakPointWithStatus function", "ASSERT macro", "ASSERTMSG macro"]
 ms.author: domars
 ms.date: 08/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

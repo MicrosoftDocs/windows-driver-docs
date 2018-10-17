@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Queued Spin Locks
 ms.assetid: 7ccec366-5436-4e69-9fb7-f0090cf2adcb
 keywords: ["queued spin locks WDK kernel", "first-come first-served spin locks WDK kernel", "KeAcquireInStackQueuedSpinLock"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

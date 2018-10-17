@@ -5,9 +5,6 @@ ms.assetid: 987ee868-5622-44e4-979c-3ae93a98b5b1
 keywords: ["Bug Check 0x8E KERNEL_MODE_EXCEPTION_NOT_HANDLED", "KERNEL_MODE_EXCEPTION_NOT_HANDLED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

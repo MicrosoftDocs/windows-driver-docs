@@ -8,11 +8,7 @@ keywords:
 - Web pages WDK printer , updating information
 - customized print Web pages WDK , updating information
 - updating print Web page information
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

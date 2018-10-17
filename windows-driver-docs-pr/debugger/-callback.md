@@ -5,9 +5,6 @@ ms.assetid: afbd7884-d63d-4e37-a437-91bc910a3ae2
 keywords: ["callback data for system traps", "callback Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

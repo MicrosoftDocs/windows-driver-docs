@@ -5,9 +5,6 @@ ms.assetid: 4D37FE16-0189-426C-8015-9F14DA3C52F6
 keywords: ["Bug Check 0x178 ELAM_DRIVER_DETECTED_FATAL_ERROR", "ELAM_DRIVER_DETECTED_FATAL_ERROR"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

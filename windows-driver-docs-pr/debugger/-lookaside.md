@@ -5,9 +5,6 @@ ms.assetid: ec343563-f293-4ddf-96c8-69fc7b9b4377
 keywords: ["lookaside list", "lookaside Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

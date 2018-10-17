@@ -5,9 +5,6 @@ ms.assetid: 368937e4-0989-4dca-983a-65bc63142108
 keywords: ["eb extension", "ed extension", "memory, Write Physical ( e ) extensions", "eb, ed Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

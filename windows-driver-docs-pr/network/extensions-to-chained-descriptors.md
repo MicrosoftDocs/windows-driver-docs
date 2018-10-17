@@ -10,11 +10,7 @@ keywords:
 - NetDMA WDK networking , descriptor handling
 - NetDMA 2.0 WDK networking , descriptor handling
 - NetDMA 2.0 WDK networking , chained descriptors
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

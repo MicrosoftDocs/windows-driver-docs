@@ -3,11 +3,7 @@ title: WDI_TLV_DEVICE_SERVICE_PARAMS_GUID
 author: windows-driver-content
 description: WDI_TLV_DEVICE_SERVICE_PARAMS_GUID is a TLV that contains a GUID that identifies the device service to which this status indication belongs.
 ms.assetid: BBD64E6F-A2E2-4601-A231-4FCB4574EFC7
-ms.author: windowsdriverdev 
 ms.date: 06/15/2018 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - WDI_TLV_DEVICE_SERVICE_PARAMS_GUID Network Drivers Starting with Windows Vista
 ---

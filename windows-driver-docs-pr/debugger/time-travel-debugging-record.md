@@ -3,9 +3,6 @@ title: Time Travel Debugging - Record a trace
 description: This section describes how to record time travel traces.
 ms.author: domars
 ms.date: 09/22/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

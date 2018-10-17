@@ -5,9 +5,6 @@ ms.assetid: 41b1c93b-77e0-4baa-8eed-7a956e45d144
 keywords: ["Bug Check 0x21 QUOTA_UNDERFLOW", "QUOTA_UNDERFLOW"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

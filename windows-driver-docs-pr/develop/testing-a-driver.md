@@ -2,11 +2,7 @@
 ms.assetid: bb73768e-0ac9-4377-9caa-c0cce1d10bb8
 title: Testing a Driver
 description: Testing a Driver
-ms.author: windowsdriverdev
 ms.date: 06/28/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

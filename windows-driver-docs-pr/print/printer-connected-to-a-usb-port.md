@@ -6,11 +6,7 @@ ms.assetid: 85e238e1-4dc1-4720-b383-d6aaed72e560
 keywords:
 - USB printers WDK
 - bus-type printer driver WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

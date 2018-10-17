@@ -2,11 +2,7 @@
 title: Submit a Device Metadata Package (Dashboard help)
 description: Submit a Device Metadata Package (Dashboard help)
 ms.assetid: dcd35784-51c3-410a-8704-94f07fa8959a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -2,11 +2,7 @@
 title: Obtaining an HDAUDIO_BUS_INTERFACE_V2 DDI Object
 description: Obtaining an HDAUDIO_BUS_INTERFACE_V2 DDI Object
 ms.assetid: 3aad8c7a-8c89-499a-bfe8-e3facdffcd15
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

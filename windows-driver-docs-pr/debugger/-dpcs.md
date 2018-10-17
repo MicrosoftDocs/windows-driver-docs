@@ -5,9 +5,6 @@ ms.assetid: b5f71fb5-6fc7-4e8f-a439-1edb188e9876
 keywords: ["DPC (deferred procedure call)", "dpcs Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

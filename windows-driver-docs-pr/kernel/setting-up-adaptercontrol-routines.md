@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Setting Up AdapterControl Routines
 ms.assetid: 0d2add25-711a-4e5d-8409-b7ce60b08858
 keywords: ["AdapterControl routines, setting up", "AdapterControl routines, writing", "adapter objects WDK kernel , writing AdapterControl routines", "DMA transfers WDK kernel , writing AdapterControl routines"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

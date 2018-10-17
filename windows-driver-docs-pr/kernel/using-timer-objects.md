@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Using Timer Objects
 ms.assetid: b3ee9d92-87b9-47b7-ab13-11e42bec7997
 keywords: ["timer objects WDK kernel , waiting on", "waiting on timer objects", "notification timers WDK kernel", "KeDelayExecutionThread", "KeWaitForSingleObject", "KeInitializeTimer", "KeSetTimer", "DueTime values"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

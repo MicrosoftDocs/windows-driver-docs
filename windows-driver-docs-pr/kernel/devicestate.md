@@ -4,11 +4,7 @@ author: windows-driver-content
 description: DeviceState
 ms.assetid: 4cf650ea-cccf-411c-809f-0a01e2ceb067
 keywords: ["DeviceState"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

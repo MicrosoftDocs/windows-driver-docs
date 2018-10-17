@@ -5,9 +5,6 @@ ms.assetid: c0e6074f-8afe-4526-a30f-427aac67ab99
 keywords: ["Deadlock Detection (Driver Verifier)", "deadlock Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

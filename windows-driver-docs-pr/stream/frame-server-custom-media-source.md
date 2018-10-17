@@ -1,11 +1,7 @@
 ---
 title: Frame Server Custom Media Source
 description: Provides information on implementation of a Custom Media Source within the Frame Server architecture. 
-ms.author: windowsdriverdev
 ms.date: 10/2/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

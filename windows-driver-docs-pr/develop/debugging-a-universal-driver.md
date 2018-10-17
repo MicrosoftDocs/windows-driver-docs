@@ -1,11 +1,7 @@
 ---
 title: Debugging a Universal Windows driver
 description: Describes debugging techniques you can use with a Universal Windows driver.
-ms.author: windowsdriverdev
 ms.date: 06/09/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

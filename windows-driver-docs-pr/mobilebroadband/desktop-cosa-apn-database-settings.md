@@ -2,11 +2,7 @@
 title: Desktop COSA/APN database settings
 description: Desktop COSA/APN database settings
 ms.assetid: 860B8587-1D70-466A-A6E7-836380AA4DFA
-ms.author: windowsdriverdev
 ms.date: 09/22/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: a238b291-8c6e-4a4c-adc3-3be5a9916a29
 keywords: ["Show CPU Number (.echocpunum) command", "multiprocessor computer, Show CPU Number (.echocpunum) command", ".echocpunum (Show CPU Number) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -9,11 +9,7 @@ keywords:
 - UART WDK serial devices
 - 16550 UART-compatible interfaces WDK serial devices
 - initializing 16550 UART-compatible interfaces
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

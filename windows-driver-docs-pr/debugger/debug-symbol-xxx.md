@@ -4,9 +4,6 @@ description: The DEBUG\_SYMBOL\_XXX constants are used for the symbol flags bit-
 ms.assetid: de1988f8-6a4d-43a3-856a-0543ecaaf06f
 ms.author: domars
 ms.date: 12/07/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

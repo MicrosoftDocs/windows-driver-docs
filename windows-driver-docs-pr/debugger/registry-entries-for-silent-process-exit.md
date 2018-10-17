@@ -4,9 +4,6 @@ description: Beginning with Windows 7, you can use the Silent Process Exit tab 
 ms.assetid: 116B2053-7F48-48B4-AEAC-333B7D9C38C7
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

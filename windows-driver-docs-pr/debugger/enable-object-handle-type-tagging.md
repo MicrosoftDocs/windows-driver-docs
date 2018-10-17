@@ -5,9 +5,6 @@ ms.assetid: 7a9e96c3-7ef7-4a23-9602-a09ff9b3d02f
 keywords: ["Enable object handle type tagging (global flag)"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: 70fea630-9fb2-47e8-a099-9eee8c41b334
 keywords: ["Bug Check 0x56 INSTRUCTION_COHERENCY_EXCEPTION", "INSTRUCTION_COHERENCY_EXCEPTION"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

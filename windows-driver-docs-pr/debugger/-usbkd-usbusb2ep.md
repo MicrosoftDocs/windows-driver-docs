@@ -5,9 +5,6 @@ ms.assetid: 0298D7A2-C121-4B09-8542-CCD10323D573
 keywords: ["usbkd.usbusb2ep Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

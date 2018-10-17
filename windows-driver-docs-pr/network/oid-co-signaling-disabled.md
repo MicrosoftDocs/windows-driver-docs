@@ -5,11 +5,7 @@ description: This topic describes the OID_CO_SIGNALING_DISABLED object identifie
 ms.assetid: 8206ca17-5758-46a2-a525-d6ed9911de1b
 keywords:
 - OID_CO_SIGNALING_DISABLED
-ms.author: windowsdriverdev
 ms.date: 11/03/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

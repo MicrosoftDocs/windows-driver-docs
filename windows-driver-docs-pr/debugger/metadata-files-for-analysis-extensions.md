@@ -4,9 +4,6 @@ description: When you write an analysis extension plug-in, you also write a meta
 ms.assetid: 13B9B7A5-1D68-49A3-825B-454AC070FCC1
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

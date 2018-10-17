@@ -5,9 +5,6 @@ ms.assetid: 736ec6e9-e822-49aa-8f1c-7e5e43779dbd
 keywords: ["critical section, debugging critical section time outs"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

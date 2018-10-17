@@ -5,9 +5,6 @@ ms.assetid: 09f8c2f6-4df7-4039-bb92-66d42015c3dc
 keywords: [".exepath (Set Executable Path) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

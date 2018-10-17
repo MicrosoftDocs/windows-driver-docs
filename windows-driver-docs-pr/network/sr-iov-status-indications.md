@@ -3,11 +3,7 @@ title: SR-IOV status indications
 description: This section describes Single Root I/O Virtualization (SR-IOV) status indications.
 keywords: ["SR-IOV status indications", "Single Root I/O Virtualization status indications", "WDK SR-IOV status indications", "SR-IOV object identifiers"]
 ms.assetid: B13FECA3-FBD1-4B95-8400-ECDDC3FD09FC
-ms.author: windowsdriverdev
 ms.date: 08/21/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

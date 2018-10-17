@@ -5,9 +5,6 @@ ms.assetid: 3dbd1079-d129-4e17-8d06-18b25fdd17c9
 keywords: ["cpuid Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

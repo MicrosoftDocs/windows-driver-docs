@@ -4,9 +4,6 @@ description: For Windows 10, Debugging Tools for Windows includes these new fea
 ms.assetid: DCF1222F-6A67-463E-8C31-B7753CAFFC20
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

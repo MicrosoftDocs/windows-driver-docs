@@ -5,9 +5,6 @@ ms.assetid: fec1f3ee-5405-49c2-8082-75adfdabd6b8
 keywords: ["Bug Check 0x73 CONFIG_LIST_FAILED", "CONFIG_LIST_FAILED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -2,11 +2,7 @@
 title: Identity (SoftwareInfo - priviliged applications)
 description: Identity (SoftwareInfo - priviliged applications)
 ms.assetid: 405ec2ee-ea4a-468b-b75b-365ffce03cdb
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

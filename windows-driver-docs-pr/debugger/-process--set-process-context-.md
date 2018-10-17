@@ -5,9 +5,6 @@ ms.assetid: f454faef-bc28-43f1-b511-bcee0c12fc24
 keywords: ["Set Process Context (.process) command", "addresses, Set Process Context (.process) command", "context, Set Process Context (.process) command", "Process, Set Process Context (.process) command", ".process (Set Process Context) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

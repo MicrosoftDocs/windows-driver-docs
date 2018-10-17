@@ -5,9 +5,6 @@ ms.assetid: e03be533-5768-40f9-899b-16adbcb49de5
 keywords: ["Edit Paste", "text, Edit Paste"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

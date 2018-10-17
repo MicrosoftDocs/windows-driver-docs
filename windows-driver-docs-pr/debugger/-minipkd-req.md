@@ -5,9 +5,6 @@ ms.assetid: 5edc00dd-9a0b-4576-a3ec-11ce22163e95
 keywords: ["minipkd.req Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

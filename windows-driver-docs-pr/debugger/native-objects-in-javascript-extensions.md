@@ -4,9 +4,6 @@ description: Native debugger objects represent various constructs and behaviors 
 ms.assetid: A8E12564-D083-43A7-920E-22C4D627FEE8
 ms.author: domars
 ms.date: 12/22/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

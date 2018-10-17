@@ -3,11 +3,7 @@ title: WDI_TLV_P2P_SERVICE_INFORMATION
 author: windows-driver-content
 description: WDI_TLV_P2P_SERVICE_INFORMATION is a TLV that contains Wi-Fi Direct Service Information.
 ms.assetid: C377FA31-1D78-4087-A600-18F10D9022B6
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - WDI_TLV_P2P_SERVICE_INFORMATION Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

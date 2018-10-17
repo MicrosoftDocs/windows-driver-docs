@@ -3,11 +3,7 @@ title: WSK_RELEASE_SD
 author: windows-driver-content
 description: WSK_RELEASE_SD
 ms.assetid: de8cc759-c778-464e-9e19-984ea20c0d29
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - WSK_RELEASE_SD Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

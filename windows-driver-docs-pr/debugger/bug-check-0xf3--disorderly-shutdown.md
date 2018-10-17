@@ -5,9 +5,6 @@ ms.assetid: e113cd2f-96b2-43b8-a67e-a851cc5c0da8
 keywords: ["Bug Check 0xF3 DISORDERLY_SHUTDOWN", "DISORDERLY_SHUTDOWN"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

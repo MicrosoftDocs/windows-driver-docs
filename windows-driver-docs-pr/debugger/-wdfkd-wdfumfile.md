@@ -5,9 +5,6 @@ ms.assetid: AAE9E003-829D-4A52-8F67-58DFE15D5D3C
 keywords: ["wdfkd.wdfumfile Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

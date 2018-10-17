@@ -5,9 +5,6 @@ ms.assetid: 3cce0e30-ea04-4587-9208-b6a7d51fd44a
 keywords: ["wudfext.umdevstack Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

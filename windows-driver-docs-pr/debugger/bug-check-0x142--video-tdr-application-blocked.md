@@ -5,9 +5,6 @@ ms.assetid: B97FCA51-C368-4144-A364-50135A8DE836
 keywords: ["Bug Check 0x142 VIDEO_TDR_APPLICATION_BLOCKED", "VIDEO_TDR_APPLICATION_BLOCKED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

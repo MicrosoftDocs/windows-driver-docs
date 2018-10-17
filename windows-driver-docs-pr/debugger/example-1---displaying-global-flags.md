@@ -4,9 +4,6 @@ description: Example 1 Displaying Global Flags
 ms.assetid: c1a1eafd-d70a-43f9-af90-33ddc33758fe
 ms.author: domars
 ms.date: 10/12/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

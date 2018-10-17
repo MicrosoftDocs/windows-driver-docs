@@ -5,9 +5,6 @@ ms.assetid: 7a6e1796-08e0-414e-a092-326b30c8ce8f
 keywords: ["envvar Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

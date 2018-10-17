@@ -13,11 +13,7 @@ keywords:
 - synthesizers WDK audio , filters
 - filters WDK audio , MIDI
 - filters WDK audio , DirectMusic
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: 2767987e-e247-4319-bc8e-0ff6906f2a5a
 keywords: security vulnerabilities, debugger, security
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -2,11 +2,7 @@
 title: Porting NDIS 6.x drivers to NDIS 6.82
 description: NDIS 6.82 is substantially the same as NDIS 6.81. For detailed information about new features for NDIS 6.82, see Introduction to NDIS 6.82.
 ms.assetid: D0BF7BB0-D9FD-434A-A02E-0667083485D2
-ms.author: windowsdriverdev
 ms.date: 08/16/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: 8ecd000d-34e6-4471-a040-b50627915a20
 keywords: ["processor hog", "hogging a processor", "starving applications"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

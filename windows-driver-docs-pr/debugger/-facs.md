@@ -5,9 +5,6 @@ ms.assetid: eb6f5eb6-c1ef-479d-95fa-6faa9ca9d097
 keywords: ["facs Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

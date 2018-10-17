@@ -3,11 +3,7 @@ title: WDI_TLV_P2P_ACTION_FRAME_DEVICE_CONTEXT
 author: windows-driver-content
 description: WDI_TLV_P2P_ACTION_FRAME_DEVICE_CONTEXT is an unused TLV.
 ms.assetid: 7CF83378-BBCA-4A51-ACDE-8F52FC825C5D
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - WDI_TLV_P2P_ACTION_FRAME_DEVICE_CONTEXT Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

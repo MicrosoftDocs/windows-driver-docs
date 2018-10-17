@@ -5,9 +5,6 @@ ms.assetid: b9725499-9db3-422f-850b-97db4865b74d
 keywords: ["ks.graph Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -4,11 +4,7 @@ description: Power Management for Old Miniport Drivers
 ms.assetid: 676c8c4c-3fd7-4063-a704-2bbfdd03a94e
 keywords:
 - power management WDK NDIS miniport , old miniport drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: 112795a9-57c0-43a4-9f21-2a8655b65d1b
 keywords: UMDH, User-Mode Dump Heap
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: 525eb1eb-4b96-46da-90ae-d3c5f8d7511a
 keywords: ["ks.pciks Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

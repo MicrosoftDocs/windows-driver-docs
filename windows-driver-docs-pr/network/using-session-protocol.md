@@ -4,11 +4,7 @@ description: Using Session Protocol
 ms.assetid: 355286f9-ef85-4ba6-b21a-fc51e0b93fed
 keywords:
 - session protocol WDK SANs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

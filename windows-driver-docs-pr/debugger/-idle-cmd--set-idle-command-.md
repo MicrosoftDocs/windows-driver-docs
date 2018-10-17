@@ -5,9 +5,6 @@ ms.assetid: 8cfe7aa8-4e31-4e97-b61d-9e8bb1b7be61
 keywords: [".idle_cmd (Set Idle Command) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

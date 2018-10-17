@@ -5,9 +5,6 @@ ms.assetid: 4516252d-b6c9-4bf4-b435-6c0b3cb0fbc3
 keywords: ["failure analysis entries, display", "failure analysis entries", "dumpfa Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

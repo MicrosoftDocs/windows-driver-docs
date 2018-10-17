@@ -5,9 +5,6 @@ ms.assetid: ffb1ff13-fc4c-4aaf-a8fe-b473b51b9db0
 keywords: ["RPC debugging, stuck threads"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,11 +5,7 @@ description: This section describes filtering condition flags.
 ms.assetid: a2493fc5-614f-47df-a818-cdec06dc9f4a
 keywords:
 - Filtering condition flags network drivers
-ms.author: windowsdriverdev
 ms.date: 11/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

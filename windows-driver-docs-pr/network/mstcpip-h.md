@@ -5,11 +5,7 @@ description: This section contains kernel mode network driver topics for the Mst
 ms.assetid: 5623EB2D-CA8D-4176-922E-29B8C66AA2CF
 keywords:
 - Mstcpip.h network drivers
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

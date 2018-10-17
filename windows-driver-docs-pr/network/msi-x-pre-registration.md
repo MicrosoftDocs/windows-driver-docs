@@ -7,11 +7,7 @@ keywords:
 - message-signaled interrupts WDK networking , resource-requirements filter function
 - MSIs WDK networking , resource-requirements filter function
 - resource-requirements filter function WDK net
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

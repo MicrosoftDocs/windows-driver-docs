@@ -5,9 +5,6 @@ ms.assetid: 4b453b5a-4a3c-4056-92e7-b6a17f987fa4
 keywords: [".bugcheck (Display Bug Check Data) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

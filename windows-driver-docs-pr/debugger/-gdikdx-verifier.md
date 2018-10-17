@@ -5,9 +5,6 @@ ms.assetid: a7e189bb-ed63-4da3-ab7a-bf502ec131ed
 keywords: ["gdikdx.verifier Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

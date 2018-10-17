@@ -3,11 +3,7 @@ title: CPSUI Option Types
 author: windows-driver-content
 description: CPSUI Option Types
 ms.assetid: 3b3c002c-a201-4f81-b208-30864343409b
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

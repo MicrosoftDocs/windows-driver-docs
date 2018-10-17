@@ -5,9 +5,6 @@ ms.assetid: 9d816df7-2b20-4be3-90d7-7a11b0f30238
 keywords: ["debugging information windows, Locals window", "Locals window", "memory, Locals window"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

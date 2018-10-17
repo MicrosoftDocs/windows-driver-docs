@@ -5,9 +5,6 @@ ms.assetid: A669256B-737D-4215-8E0E-5500D7704F4E
 keywords: ["Bug Check 0x11F INVALID_DRIVER_HANDLE", "INVALID_DRIVER_HANDLE"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

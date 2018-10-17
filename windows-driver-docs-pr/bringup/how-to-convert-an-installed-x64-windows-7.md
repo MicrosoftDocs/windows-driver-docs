@@ -2,11 +2,7 @@
 title: How to convert an installed x64 Windows 7 system
 description: How to convert an installed x64 Windows 7 system
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 05/07/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

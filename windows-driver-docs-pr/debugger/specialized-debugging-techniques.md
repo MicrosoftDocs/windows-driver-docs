@@ -4,9 +4,6 @@ description: This section describes debugging techniques that apply to particula
 ms.assetid: ADCEC5D6-5CA1-4F46-AAFD-D4BFD27D8A29
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

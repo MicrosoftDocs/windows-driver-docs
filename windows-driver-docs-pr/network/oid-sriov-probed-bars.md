@@ -3,11 +3,7 @@ title: OID_SRIOV_PROBED_BARS
 author: windows-driver-content
 description: NDIS issues an object identifier (OID) query request of OID_SRIOV_PROBED_BARS to obtain the values of a network adapter's PCI Express (PCIe) Base Address Registers (BARs).
 ms.assetid: 81C3A5B5-58D5-41F4-A000-79F3F4E00DAD
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_SRIOV_PROBED_BARS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

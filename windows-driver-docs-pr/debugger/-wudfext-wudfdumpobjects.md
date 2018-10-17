@@ -5,9 +5,6 @@ ms.assetid: 2ede7f2e-124c-494d-9188-5a28617a0bdb
 keywords: ["wudfext.wudfdumpobjects Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

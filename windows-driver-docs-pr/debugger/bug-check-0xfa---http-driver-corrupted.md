@@ -5,9 +5,6 @@ ms.assetid: f7e3c1bf-2259-4aa6-af19-267b537dedfe
 keywords: ["Bug Check 0xFA HTTP_DRIVER_CORRUPTED", "HTTP_DRIVER_CORRUPTED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

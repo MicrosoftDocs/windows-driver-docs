@@ -10,11 +10,7 @@ keywords:
 - registering network modules
 - Network Module Registrar WDK , attaching network modules
 - NMR WDK , attaching network modules
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

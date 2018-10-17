@@ -2,11 +2,7 @@
 ms.assetid: EB2264A4-BAE8-446B-B9A5-19893936DDCA
 title: Target platform on driver reference pages
 description: In the Requirements block at the bottom of Microsoft driver reference pages, you''ll see an entry called Target Platform.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

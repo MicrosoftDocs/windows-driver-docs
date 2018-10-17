@@ -5,9 +5,6 @@ ms.assetid: 70e19e56-4fad-40fe-a1fe-8bc638e094e3
 keywords: ["Bug Check 0x82 DFS_FILE_SYSTEM", "DFS_FILE_SYSTEM"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

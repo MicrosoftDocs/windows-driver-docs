@@ -5,9 +5,6 @@ ms.assetid: 27254b36-b413-45f0-9834-ff55fbb787c7
 keywords: ["wmitrace.eventlogdump Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

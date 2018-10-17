@@ -3,11 +3,7 @@ title: OID_GEN_BYTES_XMIT
 author: windows-driver-content
 description: As a query, NDIS and overlying drivers use the OID_GEN_BYTES_XMIT OID to determine the total bytes that a miniport adapter transmitted.
 ms.assetid: 95b89a01-39e0-4e13-b960-32923e47a88d
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_BYTES_XMIT Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

@@ -1,11 +1,7 @@
 ---
 title: ZwRegistryOpen rule (wdm)
 ms.assetid: c98682c3-0d38-4d5b-9649-7574106f9ce3
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 description: 
 keywords: ["ZwRegistryOpen rule (wdm)"]
 topic_type:

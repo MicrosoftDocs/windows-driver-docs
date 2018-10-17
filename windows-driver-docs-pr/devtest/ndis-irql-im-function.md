@@ -2,11 +2,7 @@
 title: Irql\_IM\_Function rule (ndis)
 description: The Irql\_IM\_Function rule specifies that the NDIS functions for Intermediate (IM) drivers must be called at correct IRQL levels.
 ms.assetid: f13ee05d-41d5-48e1-aa53-8904d99f94da
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["Irql_IM_Function rule (ndis)"]
 topic_type:
 - apiref

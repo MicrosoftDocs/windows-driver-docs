@@ -5,9 +5,6 @@ ms.assetid: ad25aac3-0052-47b6-a9b6-064f781473e9
 keywords: ["kernel streaming debugging, extensions (ks.dll)", "ks.dll (kernel streaming extensions)", "extensions, kernel streaming"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

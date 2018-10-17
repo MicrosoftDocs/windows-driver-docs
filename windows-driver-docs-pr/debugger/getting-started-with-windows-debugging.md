@@ -4,9 +4,6 @@ description: This section covers how to get started with Windows Debugging. If y
 ms.assetid: 4981928E-A33D-4F60-AAA0-124C360B7E03
 ms.author: domars
 ms.date: 08/23/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

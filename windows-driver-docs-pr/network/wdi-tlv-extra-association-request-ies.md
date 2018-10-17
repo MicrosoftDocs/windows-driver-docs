@@ -3,11 +3,7 @@ title: WDI_TLV_EXTRA_ASSOCIATION_REQUEST_IES
 author: windows-driver-content
 description: WDI_TLV_EXTRA_ASSOCIATION_REQUEST_IES is a TLV that contains Information Elements (IEs) that must be included in association requests sent by the port.
 ms.assetid: 2275B8F2-1FE4-4518-AD67-E9A65F2F37DA
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - WDI_TLV_EXTRA_ASSOCIATION_REQUEST_IES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

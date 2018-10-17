@@ -10,11 +10,7 @@ keywords:
 - Pscript WDK print , XPSDrv print drivers
 - Unidrv, XPSDrv print drivers
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

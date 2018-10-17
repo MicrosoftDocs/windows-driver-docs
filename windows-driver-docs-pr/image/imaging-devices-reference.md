@@ -2,11 +2,7 @@
 title: Imaging Devices Reference
 description: Imaging Devices Reference
 ms.assetid: 2ee6ce92-44dc-4c59-a438-f65b41f3b43a
-ms.author: windowsdriverdev
 ms.date:
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

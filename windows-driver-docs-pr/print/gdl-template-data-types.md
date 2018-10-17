@@ -7,11 +7,7 @@ keywords:
 - templates WDK GDL , data types
 - GDL WDK , templates
 - data types WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

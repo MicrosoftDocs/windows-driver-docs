@@ -5,9 +5,6 @@ ms.assetid: 0e3b9c98-1f02-4fff-9a91-d3a7470df882
 keywords: ["dbgerr005", "Private symbols required (dbgerr005)"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

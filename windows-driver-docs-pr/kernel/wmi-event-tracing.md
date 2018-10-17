@@ -4,11 +4,7 @@ author: windows-driver-content
 description: WMI Event Tracing
 ms.assetid: 72505a9a-830a-4529-ba73-31af0fedfeec
 keywords: ["WMI WDK kernel , event tracking", "events WDK WMI", "tracing WDK WMI", "WMI WDK kernel , WDM drivers", "WDM drivers WDK WMI"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

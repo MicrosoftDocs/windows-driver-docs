@@ -12,11 +12,7 @@ keywords:
 - mapping video memory to banked frame buffer
 - spanning multiple banks
 - multiple banks in frame buffer WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

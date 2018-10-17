@@ -5,9 +5,6 @@ ms.assetid: bd036a25-1e3c-4b57-9c7c-5f1730008cd7
 keywords: ["Change Current Processor (~s) command", "multiprocessor computer, Change Current Processor (~s) command", "processors", "~s (Change Current Processor) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

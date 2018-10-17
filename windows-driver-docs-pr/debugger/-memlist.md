@@ -5,9 +5,6 @@ ms.assetid: 9d5307df-5e46-4d95-8c96-ab6da0f54cd0
 keywords: ["PFN database", "memlist Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -4,9 +4,6 @@ description: There are two ways you can use WinDbg to initiate a live kernel-mod
 ms.assetid: CC911199-A16D-4B06-A5BE-FA476F916F21
 ms.author: domars
 ms.date: 06/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

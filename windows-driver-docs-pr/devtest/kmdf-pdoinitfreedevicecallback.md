@@ -2,11 +2,7 @@
 title: PdoInitFreeDeviceCallback rule (kmdf)
 description: The PdoInitFreeDeviceCallback rule specifies that the driver must call WdfDeviceInitFree if an error occurs when the driver calls any framework device object initialization function.
 ms.assetid: ec38eccc-435e-4758-8bf1-27b062cf2a18
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["PdoInitFreeDeviceCallback rule (kmdf)"]
 topic_type:
 - apiref

@@ -2,11 +2,7 @@
 title: Determining SR-IOV Capabilities
 description: Determining SR-IOV Capabilities
 ms.assetid: 61895987-2469-471E-BB29-FF1CDD2869DC
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
