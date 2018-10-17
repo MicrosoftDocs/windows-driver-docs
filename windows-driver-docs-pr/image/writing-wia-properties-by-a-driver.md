@@ -96,7 +96,7 @@ HRESULT _stdcall CWIADevice::drvValidateItemProperties(
 
   //
   // create a WIA property context, to gain access to
-  // the WIA application&#39;s intended settings.
+  // the WIA application's intended settings.
   //
 
   hr = wiasCreatePropContext(nPropSpec,

@@ -135,7 +135,7 @@ STDMETHODIMP CWIADevice::Initialize(
       // This is where you read registry entries for your device.
       // The DeviceData section is the proper place to put this 
       // information. Information about your device should
-      // have been written using the WIA device&#39;s .INF installation
+      // have been written using the WIA device's .INF installation
       // file.
       // You can access this information from this location in the
       // Registry. The WIA service owns the hParameters HKEY. 

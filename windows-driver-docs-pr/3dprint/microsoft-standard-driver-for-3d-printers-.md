@@ -91,7 +91,7 @@ static const uint8_t PROGMEM ms3dprint_descriptor[40] = {
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,        // RESERVED
     0x00,                                            // bFirstInterfaceNumber
     0x01,                                            // RESERVED
-    &#39;3&#39;, &#39;D&#39;, &#39;P&#39;, &#39;R&#39;, &#39;I&#39;, &#39;N&#39;, &#39;T&#39;, 0x00,         // compatibleID ("3DPRINT")
+    '3', 'D', 'P', 'R', 'I', 'N', 'T', 0x00,         // compatibleID ("3DPRINT")
                                                  // subCompatibleID
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00   /*        */  
 ,
@@ -101,7 +101,7 @@ static const uint8_t PROGMEM ms3dprint_descriptor[40] = {
 
 This line in the code above is the compatible ID of a 3D Printer:
 
-`&#39;3&#39;, &#39;D&#39;, &#39;P&#39;, &#39;R&#39;, &#39;I&#39;, &#39;N&#39;, &#39;T&#39;, 0x00,         // compatibleID ("3DPRINT")`
+`'3', 'D', 'P', 'R', 'I', 'N', 'T', 0x00,         // compatibleID ("3DPRINT")`
 
 With this specific configuration, IHVs can compile their firmware and flash the device. Then when the device is plugged in, the 3D Print Standard Driver will automatically get downloaded from Windows Update.
 
@@ -137,10 +137,10 @@ static const uint8_t PROGMEM ms3dprint_properties_descriptor[] = {
     0x07, 0x00, 0x00, 0x00,                             // dwPropertyDataType  (1=REG_SZ, 4=REG_DWORD, 7=REG_MULTI_SZ)
 
     0x20, 0x00,                                         // wPropertyNameLength
-    &#39;M&#39;, 0x0, &#39;S&#39;, 0x0, &#39;3&#39;, 0x0, &#39;D&#39;, 0x0,             // bPropertyName
-    &#39;P&#39;, 0x0, &#39;r&#39;, 0x0, &#39;i&#39;, 0x0, &#39;n&#39;, 0x0,
-    &#39;t&#39;, 0x0, &#39;C&#39;, 0x0, &#39;o&#39;, 0x0, &#39;n&#39;, 0x0,
-    &#39;f&#39;, 0x0, &#39;i&#39;, 0x0, &#39;g&#39;, 0x0, 0x0, 0x0,
+    'M', 0x0, 'S', 0x0, '3', 0x0, 'D', 0x0,             // bPropertyName
+    'P', 0x0, 'r', 0x0, 'i', 0x0, 'n', 0x0,
+    't', 0x0, 'C', 0x0, 'o', 0x0, 'n', 0x0,
+    'f', 0x0, 'i', 0x0, 'g', 0x0, 0x0, 0x0,
 
     SIZE_TO_DW(MS3DPRINT_CONFIG_SIZE),                  // dwPropertyDataLength
 

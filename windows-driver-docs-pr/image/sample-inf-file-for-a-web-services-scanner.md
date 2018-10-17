@@ -62,7 +62,7 @@ DefaultDestDir = 11
 ; Replace UMB\PnPX_YourDevice_HardwareID in the three Models 
 ; sections below to match the actual hardware IDs and compatible 
 ; IDs from the metadata that is supplied by the device, as it 
-; is described in the PNP-X Implementer&#39;s Guide for the 
+; is described in the PNP-X Implementer's Guide for the 
 ; PKEY_Device_HardwareIds property:
 ;
 

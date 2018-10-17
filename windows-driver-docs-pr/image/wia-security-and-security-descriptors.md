@@ -37,7 +37,7 @@ The following code example illustrates how to set the security descriptor. This 
 //
 //  Allocate appropriate security attributes for the named event
 //  to be shared between driver and app running under 
-//  interactive user&#39;s account.
+//  interactive user's account.
 //
 SECURITY_ATTRIBUTES sa = { sizeof(sa), FALSE, NULL };
 if(ConvertStringSecurityDescriptorToSecurityDescriptor(

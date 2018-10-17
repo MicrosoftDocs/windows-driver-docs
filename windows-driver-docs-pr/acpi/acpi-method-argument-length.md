@@ -6,7 +6,7 @@ ms.assetid: 8329c2eb-a787-4590-8de9-95078bbb85da
 keywords: 
 - ACPI_METHOD_ARGUMENT_LENGTH macro ACPI Devices
 ms.author: windowsdriverdev
-ms.date:
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
