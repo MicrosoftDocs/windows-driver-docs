@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 # Bug Check 0x53: NO\_BOOT\_DEVICE
 
 
-The NO\_BOOT\_DEVICE bug check has a value of 0x00000053.
+The NO\_BOOT\_DEVICE bug check has a value of 0x00000053. It indicates no boot device driver was successfully initialized.
 
 This bug check appears very infrequently.
 
