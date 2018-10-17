@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.extpath** command sets or displays the extension DLL search path.
 
-```
+```dbgcmd
 .extpath[+] [Directory[;...]]
 ```
 
@@ -73,7 +73,7 @@ During live kernel-mode debugging, a reboot of the target computer results in th
 
 The default value of the extension DLL search path contains all the extension paths known to the debugger and all the paths in the %PATH% environment variable. For example, suppose your %PATH% environment variable has a value of `C:\Windows\system32;C:\Windows`. Then the default value of the DLL extension search path might look like this.
 
-```
+```dbgcmd
 0:000> .extpath
 Extension search path is: C:\Program Files\Debugging Tools for Windows (x64)\WINXP;C:\Program Files\
 Debugging Tools for Windows (x64)\winext;C:\Program Files\Debugging Tools for Windows (x64)\winext\

@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.enumtag** command displays secondary bug check callback data and all data tags.
 
-```
+```dbgcmd
 .enumtag 
 ```
 
@@ -67,7 +67,7 @@ For each block of secondary bug check callback data, the **.enumtag** command di
 
 Consider the following example.
 
-```
+```dbgcmd
 kd> .enumtag
 {87654321-0000-0000-0000000000000000} - 0xf9c bytes
   4D 5A 90 00 03 00 00 00 04 00 00 00 FF FF 00 00  MZ..............

@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.else** token behaves like the **else** keyword in C.
 
-```
+```dbgcmd
 .if (Condition) { Commands } .else { Commands } 
 
 .if (Condition) { Commands } .elsif (Condition) { Commands } .else { Commands } 

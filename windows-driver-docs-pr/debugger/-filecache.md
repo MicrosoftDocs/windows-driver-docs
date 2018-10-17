@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!filecache** extension displays information regarding the system file cache memory and PTE use.
 
-```
+```dbgcmd
 !filecache [Flags]
 ```
 
@@ -50,7 +50,7 @@ Each line of this extension's output represents a virtual address control block 
 
 Here is an example of the output from this extension from a Windows XP system:
 
-```
+```dbgcmd
 kd> !filecache
 ***** Dump file cache******
   Reading and sorting VACBs ...

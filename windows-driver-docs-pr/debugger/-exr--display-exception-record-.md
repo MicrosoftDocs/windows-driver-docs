@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.exr** command displays the contents of an exception record.
 
-```
+```dbgcmd
 .exr Address 
 .exr -1
 ```

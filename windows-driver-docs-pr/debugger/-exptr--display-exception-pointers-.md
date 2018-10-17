@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.exptr** command displays an EXCEPTION\_POINTERS structure.
 
-```
+```dbgcmd
 .exptr Address
 ```
 
