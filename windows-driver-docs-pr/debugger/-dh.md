@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!dh** extension displays the headers for the specified image.
 
-```
+```dbgcmd
 !dh [Options] Address 
 !dh -h
 ```

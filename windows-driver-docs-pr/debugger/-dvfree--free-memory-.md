@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.dvfree** command frees a memory allocation owned by the target process.
 
-```
+```dbgcmd
 .dvfree [/d] BaseAddress Size 
 ```
 

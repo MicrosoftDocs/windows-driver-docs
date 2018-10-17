@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!bthkd.l2capinterface** command displays information about the L2CAP interface.
 
-```
+```dbgsyntax
 !bthkd.l2capinterface
 ```
 

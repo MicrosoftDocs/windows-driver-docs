@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!cbreg** extension displays CardBus Socket registers and CardBus Exchangable Card Architecture (ExCA) registers.
 
-```
+```dbgsyntax
     !cbreg [%%]Address 
 ```
 

@@ -24,7 +24,7 @@ The **!dt** extension displays information about a CSR thread.
 
 This extension command should not be confused with the [**dt (Display Type)**](dt--display-type-.md) command.
 
-```
+```dbgcmd
 !dt [v] CSR-Thread 
 ```
 

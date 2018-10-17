@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!bugdump** extension formats and displays the information contained in the bug check callback buffers.
 
-```
+```dbgsyntax
     !bugdump [Component] 
 ```
 

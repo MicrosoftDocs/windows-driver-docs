@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!bthkd.bthhelp** command displays help for the Bluetooth debug extension commands.
 
-```
+```dbgsyntax
 !bthkd.bthhelp
 ```
 

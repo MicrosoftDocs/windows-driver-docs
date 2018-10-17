@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!bthkd.rfcommchannel** command displays information about a given RFCOMM channel CB.
 
-```
+```dbgsyntax
 !bthkd.rfcommchannel addr 
 ```
 

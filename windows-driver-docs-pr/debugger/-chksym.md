@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!chksym** extension tests the validity of a module against a symbol file.
 
-```
+```dbgsyntax
     !chksym Module [Symbol] 
 ```
 

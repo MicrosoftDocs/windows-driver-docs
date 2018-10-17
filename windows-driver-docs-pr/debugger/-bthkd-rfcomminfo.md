@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!bthkd.rfcomminfo** command displays information about the RFCOMM FDO and the TDI Device Object.
 
-```
+```dbgsyntax
 !bthkd.rfcomminfo
 ```
 

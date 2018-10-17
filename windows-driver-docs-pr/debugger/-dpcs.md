@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!dpcs** extension displays the deferred procedure call (DPC) queues for a specified processor.
 
-```
+```dbgcmd
 !dpcs [Processor]
 ```
 

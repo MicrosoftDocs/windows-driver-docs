@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!devobj** extension displays detailed information about a DEVICE\_OBJECT structure.
 
-```
+```dbgcmd
 !devobj DeviceObject 
 ```
 
@@ -68,7 +68,7 @@ The address of a device object can be obtained using the [**!drvobj**](-drvobj.m
 
 Here is one example:
 
-```
+```dbgcmd
 kd> !devnode
 Dumping IopRootDeviceNode (= 0x80e203b8)
 DevNode 0x80e203b8 for PDO 0x80e204f8

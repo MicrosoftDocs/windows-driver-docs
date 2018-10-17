@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.detach** command ends the debugging session, but leaves any user-mode target application running.
 
-```
+```dbgcmd
 .detach [ /h | /n ]
 ```
 

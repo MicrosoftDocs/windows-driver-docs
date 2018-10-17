@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!devnode** extension displays information about a node in the device tree.
 
-```
+```dbgcmd
 !devnode Address [Flags] [Service]  
 !devnode 1 
 !devnode 2
