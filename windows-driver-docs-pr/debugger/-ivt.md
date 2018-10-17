@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The !ivt extension displays the Itanium interrupt vector table.
 
-```
+```dbgcmd
 !ivt [-v] [-a] [Vector] 
 !ivt -? 
 ```
@@ -78,7 +78,7 @@ Remarks
 
 Here is an example of the output from this extension:
 
-```
+```dbgcmd
 kd> !ivt
 
 Dumping IA64 IVT:

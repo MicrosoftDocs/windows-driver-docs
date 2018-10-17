@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!for\_each\_frame** extension executes a debugger command one time for each frame in the stack of the current thread.
 
-```
+```dbgcmd
 !for_each_frame ["CommandString"] 
 !for_each_frame -?
 ```
@@ -72,7 +72,7 @@ If you include *CommandString*, the debugger displays the frame and its index be
 
 The following command displays all local variables for the current stack.
 
-```
+```dbgcmd
 !for_each_frame !for_each_local dt @#Local
 ```
 

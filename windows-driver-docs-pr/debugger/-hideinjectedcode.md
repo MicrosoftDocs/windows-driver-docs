@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.hideinjectedcode** command turns on, or off, the hiding of injected code.
 
-```
+```dbgcmd
 .hideinjectedcode { on | off } 
 .hideinjectedcode help 
 .hideinjectedcode

@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!for\_each\_register** extension executes a specified command for each register.
 
-```
+```dbgcmd
 !for_each_register -c:CommandString
 !for_each_register -?
 ```
@@ -46,7 +46,7 @@ Ext.dll
 
 This example lists the name of each register.
 
-```
+```dbgcmd
 0:000> !for_each_register -c:.echo @#RegisterName
 rax
 rcx
@@ -57,7 +57,7 @@ rbx
 
 This example executes [**!address**](-address.md) for each register value.
 
-```
+```dbgcmd
 0:000> !for_each_register -c:!address ${@#RegisterValue}
 ...
 Usage:                  Stack

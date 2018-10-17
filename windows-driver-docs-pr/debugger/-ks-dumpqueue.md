@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ks.dumpqueue** extension displays information about the queues associated with a given AVStream object, or the stream associated with a port class object.
 
-```
+```dbgcmd
 !ks.dumpqueue Object [Level] 
 ```
 

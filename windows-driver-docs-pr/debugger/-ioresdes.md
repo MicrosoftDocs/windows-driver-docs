@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ioresdes** extension displays the IO\_RESOURCE\_DESCRIPTOR structure at the specified address.
 
-```
+```dbgcmd
 !ioresdes Address 
 ```
 

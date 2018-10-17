@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ioreslist** extension displays an IO\_RESOURCE\_REQUIREMENTS\_LIST structure.
 
-```
+```dbgcmd
 !ioreslist Address 
 ```
 
@@ -62,7 +62,7 @@ Remarks
 
 Here is an example of the output from this extension:
 
-```
+```dbgcmd
 kd> !ioreslist 0xe122b768
 
 IoResList at 0xe122b768 : Interface 0x5  Bus 0  Slot 0xe

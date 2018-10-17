@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ks.graph** extension command displays a textual description of the kernel mode graph in topologically sorted order.
 
-```
+```dbgcmd
 !ks.graph Object [Level] [Flags] 
 ```
 
@@ -81,7 +81,7 @@ Issue a **!ks.graph** command with no arguments for help.
 
 Here is an example of the **!ks.graph** display, with the address of a filter object:
 
-```
+```dbgcmd
 kd> !graph 829493c4
 Attempting a graph build on 829493c4...  Please be patient...
 

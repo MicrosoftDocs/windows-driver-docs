@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!gdikdx.verifier** extension displays the status of Driver Verifier during the verification of a graphics driver.
 
-```
+```dbgcmd
 !gdikdx.verifier [-Flags] 
 ```
 

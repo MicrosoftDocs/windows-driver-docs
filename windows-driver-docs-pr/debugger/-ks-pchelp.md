@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ks.pchelp** extension displays a help text showing PortCls-specific Ks.dll extension commands.
 
-```
+```dbgcmd
 !ks.pchelp 
 ```
 

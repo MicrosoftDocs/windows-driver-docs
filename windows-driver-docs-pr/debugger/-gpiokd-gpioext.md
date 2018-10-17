@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!gpiokd.gpioext** command displays information about a GPIO controller.
 
-```
+```dbgcmd
 !gpiokd.gpioext ExtensionAddress [Flags]
 ```
 

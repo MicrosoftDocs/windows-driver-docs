@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ks.pciaudio** extension displays a list of FDOs currently attached to PortCls.
 
-```
+```dbgcmd
 !ks.pciaudio [Options] [Level]  
 ```
 

@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ipi** extension displays the interprocessor interrupt (IPI) state for a specified processor.
 
-```
+```dbgcmd
 !ipi [Processor]
 ```
 
@@ -64,7 +64,7 @@ Remarks
 
 Here is an example of the output from this extension:
 
-```
+```dbgcmd
 0: kd> !ipi
 IPI State for Processor 0
   Worker Routine:  nt!KiFlushTargetMultipleTb [Stale]

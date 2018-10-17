@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!job** extension displays a job object.
 
-```
+```dbgcmd
 !job [Process [Flags]] 
 ```
 
@@ -71,7 +71,7 @@ Remarks
 
 Here is an example of the output from this extension:
 
-```
+```dbgcmd
 kd> !process 52c
 Searching for Process with Cid == 52c
 PROCESS 8276c550  SessionId: 0  Cid: 052c    Peb: 7ffdf000  ParentCid: 0060

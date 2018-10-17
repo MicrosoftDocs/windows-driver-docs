@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!gpiokd.pininfo** command displays information about a specified GPIO pin.
 
-```
+```dbgcmd
 !gpiokd.pininfo PinAddress
 ```
 

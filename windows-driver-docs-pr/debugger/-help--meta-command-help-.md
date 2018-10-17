@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.help** command displays a list of all meta-commands.
 
-```
+```dbgcmd
 .help
 .help /D 
 ```

@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!findfilelockowner** extension attempts to find the owner of a file object lock by examining all threads for a thread that is blocked in an IopSynchronousServiceTail assert and that has the file object as a parameter.
 
-```
+```dbgcmd
 !findfilelockowner [FileObject]
 ```
 

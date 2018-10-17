@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ks.topology** extension displays a sorted graph of the internal topology of the filter closest to *Object*.
 
-```
+```dbgcmd
 !ks.topology Object [Level] [Flags] 
 ```
 

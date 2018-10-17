@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!gpiokd.pintable** command displays information about an array of GPIO pins.
 
-```
+```dbgcmd
 !gpiokd.pintable PinBase PinCount [Flags]
 ```
 

@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ks.help** extension displays a help text showing all AVStream-specific Ks.dll extension commands.
 
-```
+```dbgcmd
 !ks.help 
 ```
 

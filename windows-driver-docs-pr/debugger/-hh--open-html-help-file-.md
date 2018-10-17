@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.hh** command opens the Debugging Tools for Windows documentation.
 
-```
+```dbgcmd
 .hh [Text] 
 ```
 

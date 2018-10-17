@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ks.dumpcircuit** extension lists details of the transport circuit associated with the given object.
 
-```
+```dbgcmd
 !ks.dumpcircuitextension Object [Level] 
 ```
 
@@ -71,7 +71,7 @@ You can first use [**!ks.graph**](-ks-graph.md) with a filter address to list pi
 
 Here is an example of the **!ks.dumpcircuit** display:
 
-```
+```dbgcmd
 kd> !dumpcircuit 8293f4f0
 Pin8293f4f0 0 (snk, out)
 Queue82990e20 r/w/c=2489/2/0
