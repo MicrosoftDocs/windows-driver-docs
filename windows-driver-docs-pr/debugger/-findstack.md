@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!findstack** extension locates all of the stacks that contain a specified symbol or module.
 
-```
+```dbgcmd
 !findstack Symbol [DisplayLevel]
 !findstack -?
 ```

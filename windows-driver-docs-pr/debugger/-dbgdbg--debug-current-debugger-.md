@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.dbgdbg** command launches a new instance of CDB; this new debugger takes the current debugger as its target.
 
-```
+```dbgcmd
 .dbgdbg 
 ```
 

@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ks.dumpbag** extension displays the contents of the object bag for the specified object.
 
-```
+```dbgcmd
 !ks.dumpbag Object [Level]  
 ```
 
@@ -65,7 +65,7 @@ Remarks
 
 Here is an example of the **!ks.dumpbag** display for a filter:
 
-```
+```dbgcmd
 kd> !dumpbag 829493c4
 Filter 829493c4 [CKsFilter = 82949350]:
     Object Bag 829493d0:

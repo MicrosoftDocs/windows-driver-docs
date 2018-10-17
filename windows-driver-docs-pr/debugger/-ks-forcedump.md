@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ks.forcedump** command displays information about memory contents at a caller-supplied address.
 
-```
+```dbgcmd
 !ks.forcedump Object Type [Level] 
 ```
 
@@ -84,7 +84,7 @@ A listing of all supported objects can be retrieved by issuing a **!ks.forcedump
 
 Here are two examples of the output from **!ks.forcedump**, using the address of a filter for the *Object* argument but with different levels of detail:
 
-```
+```dbgcmd
 kd> !forcedump 829493c4 KSFILTER
 WARNING: I am dumping 829493c4 as a KSFILTER.
          No checking has been performed to ensure that it is this type!!!

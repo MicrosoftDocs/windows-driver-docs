@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.do** token behaves like the **do** keyword in C, except that the word "while" is not used before the condition.
 
-```
+```dbgcmd
 .do { Commands } (Condition) 
 ```
 

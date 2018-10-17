@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!hidkd.hidpdo** command displays HID information associated with a physical device object (PDO).
 
-```
+```dbgcmd
 !hidkd.hidpdo pdo
 ```
 
@@ -42,7 +42,7 @@ Examples
 
 Here is an example of the output of the **!hidpdo** command. The example first calls [**!hidtree**](-hidkd-hidtree.md) to get the address of a PDO.
 
-```
+```dbgcmd
 0: kd> !hidkd.hidtree
 HID Device Tree
 ...

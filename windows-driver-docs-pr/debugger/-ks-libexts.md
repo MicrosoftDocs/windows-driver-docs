@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ks.libexts** extension provides access to Microsoft-supplied library extensions that are statically linked to the extension module.
 
-```
+```dbgcmd
 !ks.libexts [Command] [Libext] 
 ```
 

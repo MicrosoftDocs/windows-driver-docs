@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!bthkd.hciinterface** command displays the bthport!\_HCI\_INTERFACE structure.
 
-```
+```dbgsyntax
 !bthkd.hciinterface
 ```
 

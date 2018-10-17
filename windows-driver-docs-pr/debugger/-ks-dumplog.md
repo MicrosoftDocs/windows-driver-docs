@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ks.dumplog** extension displays the internal kernel streaming debug log.
 
-```
+```dbgcmd
 !ks.dumplog [Entries] 
 ```
 

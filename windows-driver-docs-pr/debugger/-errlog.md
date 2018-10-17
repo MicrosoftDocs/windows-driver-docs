@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!errlog** extension displays the contents of any pending entries in the I/O system's error log.
 
-```
+```dbgcmd
 !errlog 
 ```
 

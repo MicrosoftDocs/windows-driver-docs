@@ -24,7 +24,7 @@ The **!fadt** extension displays a Fixed ACPI Description Table (FADT).
 
 Syntax
 
-```
+```dbgcmd
 !fadt Address
 ```
 

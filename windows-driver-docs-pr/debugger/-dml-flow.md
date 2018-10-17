@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.dml\_flow** command displays a disassembled code block and provides links that you can use to construct a code flow graph.
 
-```
+```dbgcmd
 .dml_flow Start Target
 ```
 
@@ -40,7 +40,7 @@ Remarks
 
 Consider the call stack shown in the following example.
 
-```
+```dbgcmd
 0: kd> kL
 Child-SP          RetAddr           Call Site
 fffff880`0335c688 fffff800`01b41f1c nt!IofCallDriver
@@ -51,7 +51,7 @@ fffff880`0335c700 fffff800`01b4195e nt!MiFlushSectionInternal+0x9b8
 
 Suppose you want to examine all code paths from the start of **nt!MiFlushSectionInternal** to the code block that contains the return adress, `` fffff800`01b3b6b4 ``. The following command gets you started.
 
-```
+```dbgcmd
 .browse .dml_flow nt!MiFlushSectionInternal fffff800`01b3b6b4
 ```
 

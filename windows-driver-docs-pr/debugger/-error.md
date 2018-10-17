@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!error** extension decodes and displays information about an error value.
 
-```
+```dbgcmd
 !error Value [Flags]
 ```
 
@@ -69,7 +69,7 @@ Remarks
 
 The following example shows you how to use **!error**.
 
-```
+```dbgcmd
 0:000> !error 2
 Error code: (Win32) 0x2 (2) - The system cannot find the file specified.
 0:000> !error 2 1

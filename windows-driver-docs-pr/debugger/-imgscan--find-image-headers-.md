@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.imgscan** command scans virtual memory for image headers.
 
-```
+```dbgcmd
 .imgscan [Options] 
 ```
 
@@ -75,7 +75,7 @@ The **.imgscan** command displays any image headers that it finds and the header
 
 The following example shows the **.imgscan** command.
 
-```
+```dbgcmd
 0:000> .imgscan
 MZ at 00400000, prot 00000002, type 01000000 - size 2d000
 MZ at 77f80000, prot 00000002, type 01000000 - size 7d000

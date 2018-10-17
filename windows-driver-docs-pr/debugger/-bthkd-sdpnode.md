@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!bthkd.sdpnode** command displays information about a node in an sdp tree.
 
-```
+```dbgsyntax
 !bthkd.sdpnode addr [flags]
 ```
 

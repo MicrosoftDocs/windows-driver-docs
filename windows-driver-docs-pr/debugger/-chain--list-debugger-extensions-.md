@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.chain** command lists all loaded debugger extensions in their default search order.
 
-```
+```dbgsyntax
 .chain
 .chain /D
 ```

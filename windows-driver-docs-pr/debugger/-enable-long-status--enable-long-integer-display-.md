@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.enable\_long\_status** command specifies whether the debugger displays long integers in decimal format or in the default radix.
 
-```
+```dbgcmd
 .enable_long_status 0 
 .enable_long_status 1
 ```

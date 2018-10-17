@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.copysym** command copies the current symbol files to the specified directory.
 
-```
+```dbgsyntax
     .copysym [/l] Path
 ```
 

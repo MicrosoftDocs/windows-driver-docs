@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!chkimg** extension detects corruption in the images of executable files by comparing them to the copy on a symbol store or other file repository.
 
-```
+```dbgsyntax
 !chkimg [Options] [-mmw LogFile LogOptions] [Module]
 ```
 

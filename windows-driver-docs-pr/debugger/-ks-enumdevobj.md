@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ks.enumdevobj** extension displays the KSDEVICE associated with a given WDM device object, and lists the filter types and filters currently instantiated on this device.
 
-```
+```dbgcmd
 !ks.enumdevobj DeviceObject 
 ```
 

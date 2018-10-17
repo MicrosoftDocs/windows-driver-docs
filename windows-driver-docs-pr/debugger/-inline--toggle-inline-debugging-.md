@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.inline** command enables or disables inline function debugging.
 
-```
+```dbgcmd
 .inline 0
 .inline 1
 ```

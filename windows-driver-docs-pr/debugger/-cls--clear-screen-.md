@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.cls** command clears the Debugger Command window display.
 
-```
+```dbgsyntax
     .cls 
 ```
 

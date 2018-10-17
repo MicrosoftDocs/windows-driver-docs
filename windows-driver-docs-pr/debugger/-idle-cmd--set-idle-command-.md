@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.idle\_cmd** command sets the *idle command*. This is a command that is executed whenever control returns from the target to the debugger. For example, when the target reaches a breakpoint, this command executes.
 
-```
+```dbgcmd
 .idle_cmd
 .idle_cmd String 
 .idle_cmd /d
@@ -73,7 +73,7 @@ In WinDbg, idle commands are stored in workspaces.
 
 Here is an example. The idle command is set to [**r eax**](r--registers-.md). Then, because the debugger is already idle, this command immediately executes, displaying the **eax** register:
 
-```
+```dbgcmd
 windbg> .idle_cmd r eax 
 Execute when idle: r eax
 eax=003b0de8

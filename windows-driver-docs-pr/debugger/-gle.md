@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!gle** extension displays the last error value for the current thread.
 
-```
+```dbgcmd
 !gle [-all]
 ```
 

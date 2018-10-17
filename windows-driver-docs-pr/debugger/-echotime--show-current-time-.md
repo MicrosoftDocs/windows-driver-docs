@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.echotime** command displays the current time.
 
-```
+```dbgcmd
 .echotime 
 ```
 

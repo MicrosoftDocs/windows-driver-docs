@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.childdbg** command controls the debugging of child processes.
 
-```
+```dbgsyntax
 .childdbg 0 
 .childdbg 1 
 .childdbg 

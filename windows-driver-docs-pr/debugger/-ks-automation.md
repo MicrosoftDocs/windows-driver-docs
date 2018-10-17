@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ks.automation** extension displays any automation items associated with the given object.
 
-```
+```dbgcmd
 !ks.automation Object
 ```
 
@@ -64,7 +64,7 @@ You can use this command with a filter address obtained from [**!ks.enumdevobj**
 
 Here is an example of the **!ks.automation** display. The argument is the address of a filter:
 
-```
+```dbgcmd
 kd> !automation 829493c4
 Filter 829493c4 has the following automation items:
     Property Items:

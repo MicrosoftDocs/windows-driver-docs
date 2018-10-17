@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!dlls** extension displays the table entries of all loaded modules or all modules that a specified thread or process are using.
 
-```
+```dbgcmd
 !dlls [Options] [LoaderEntryAddress] 
 !dlls -h
 ```
@@ -97,7 +97,7 @@ In kernel mode, this extension displays the modules for the current [process con
 
 The following examples shows you how to use the **!dlls** extension.
 
-```
+```dbgcmd
 kd> !dlls -c 77f60000
 Dump dll containing 0x77f60000:
 

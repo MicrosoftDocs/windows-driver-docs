@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!for\_each\_function** extension executes a debugger command for each function, in a specified module, whose name matches a specified pattern.
 
-```
+```dbgcmd
 !for_each_function -m:ModuleName -p:Pattern -c:CommandString
 !for_each_function -?
 ```
@@ -92,7 +92,7 @@ Remarks
 
 The following example shows how to list all function names, in the PCI module, that match the pattern \*read\*.
 
-```
+```dbgcmd
 1: kd> !for_each_function -m:pci -p:*read* -c:.echo @#FunctionName
 
 PciReadDeviceConfig
@@ -117,7 +117,7 @@ The following example shows how to list all symbols, in all modules, whose funct
 
  
 
-```
+```dbgcmd
 1: kd> !for_each_module !for_each_function -m:${@#ModuleName} -p:*CreateFile* -c:.echo @#SymbolName
 nt!BiCreateFileDeviceElement
 nt!NtCreateFile
@@ -137,7 +137,7 @@ srv!SrvIoCreateFile
 
 You can put a sequence of commands in a command file, and use [**$$&gt;&lt; (Run Script File)**](-----------------------a---run-script-file-.md) to execute those commands for each function that matches the pattern. Suppose that a file named Commands.txt contains the following commands:
 
-```
+```dbgcmd
 .echo
 .echo @#FunctionName
 u @#SymbolAddress L1
@@ -145,7 +145,7 @@ u @#SymbolAddress L1
 
 In the following example, the commands in the Commands.text file are executed for each function, in the PCI module, that matches the pattern \*read\*.
 
-```
+```dbgcmd
 1: kd> !for_each_function -m:pci -p:*read* -c:$$><Commands.txt
 
 PciReadDeviceConfig

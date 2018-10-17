@@ -22,10 +22,10 @@ ms.localizationpriority: medium
 
 The **!driveinfo** extension displays volume information for the specified drive.
 
-```
+```dbgcmd
 !driveinfo Drive[:] 
 !driveinfo 
-```
+```dbgcmd
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -62,7 +62,7 @@ Remarks
 
 The drive information displayed by this extension is obtained by querying the underlying file system; for example:
 
-```
+```dbgcmd
 kd> !driveinfo c:
 Drive c:, DriveObject e136cd88
     Directory Object: e1001408  Name: C:

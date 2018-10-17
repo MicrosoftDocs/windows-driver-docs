@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.flash\_on\_break** command specifies whether the WinDbg taskbar entry flashes when WinDbg is minimized and the target breaks.
 
-```
+```dbgcmd
 .flash_on_break on 
 .flash_on_break off 
 .flash_on_break 

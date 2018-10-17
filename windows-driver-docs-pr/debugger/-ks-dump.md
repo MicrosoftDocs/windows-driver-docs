@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ks.dump** extension displays the specified object.
 
-```
+```dbgcmd
 !ks.dump Object [Level] [Flags]  
 ```
 
@@ -82,7 +82,7 @@ The **!ks.dump** command recognizes most AVStream objects, including pins, filte
 
 Following is an example of the **!ks.dump** display for a filter:
 
-```
+```dbgcmd
 kd> !dump 829493c4
 Filter object 829493c4 [CKsFilter = 82949350]
     Descriptor     f7a233c8:
@@ -91,7 +91,7 @@ Filter object 829493c4 [CKsFilter = 82949350]
 
 Following is an example of the **!ks.dump** display for a pin:
 
-```
+```dbgcmd
 kd> !dump 8160DDE0 7
 Pin object 8160DDE0 [CKsPin = 8160DD50]
     DeviceState    KSSTATE_RUN
@@ -141,7 +141,7 @@ Some important parts of this display are included in the following table.
 
 Following is an example of the **!ks.dump** display for a stream class driver:
 
-```
+```dbgcmd
 kd> !dump 81a0a170 7
 Device Extension 81a0a228:
     Device Object          81a0a170 [\Driver\TESTCAP]

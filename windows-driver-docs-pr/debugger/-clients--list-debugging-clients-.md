@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.clients** command lists all debugging clients currently connected to the debugging session.
 
-```
+```dbgsyntax
     .clients 
 ```
 

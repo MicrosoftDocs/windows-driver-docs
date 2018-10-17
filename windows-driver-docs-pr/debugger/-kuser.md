@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!kuser** extension displays the shared user-mode page (KUSER\_SHARED\_DATA).
 
-```
+```dbgcmd
 !kuser 
 ```
 
@@ -59,7 +59,7 @@ The KUSER\_SHARED\_DATA page gives resource and other information about the user
 
 Here is an example. Note that, in this example, the tick count is displayed in both its raw form and in a more user-friendly form, which is in parentheses. The user-friendly display is available only in Windows XP and later.
 
-```
+```dbgcmd
 kd> !kuser
 _KUSER_SHARED_DATA at 7ffe0000
 TickCount:    fa00000 * 00482006 (0:20:30:56.093)

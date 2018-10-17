@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!hidkd.hidppd** command displays HID preparsed data.
 
-```
+```dbgcmd
 !hidkd.hidppd ppd
 ```
 
@@ -42,7 +42,7 @@ Examples
 
 This example shows how to use [**!hidpdo**](-hidkd-hidpdo.md) followed by **!hidppd**. The output of **!hidpdo** shows the address of a **HIDP\_PREPARSED\_DATA** structure.
 
-```
+```dbgcmd
 
 0: kd> !hidpdo 0xffffe000029f6060
 ## PDO 0xffffe000029f6060  (!devobj/!devstack)

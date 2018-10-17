@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!callback** extension displays the callback data related to the trap for the specified thread.
 
-```
+```dbgsyntax
 !callback Address [Number]
 ```
 

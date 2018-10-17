@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!filetime** extension converts a 64-bit FILETIME structure into a human-readable time.
 
-```
+```dbgcmd
 !filetime Time
 ```
 
@@ -58,7 +58,7 @@ Remarks
 
 Here is an example of the output from this extension:
 
-```
+```dbgcmd
 kd> !filetime 1c4730984712348
  7/26/2004 04:10:18.712 (Pacific Standard Time)
 ```

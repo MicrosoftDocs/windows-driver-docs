@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.event\_code** command displays the current event instructions.
 
-```
+```dbgcmd
 .event_code 
 ```
 

@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!ks.ohdr** extension displays details of a kernel streaming object header.
 
-```
+```dbgcmd
 !ks.ohdr Object [Level] [Flags]  
 ```
 

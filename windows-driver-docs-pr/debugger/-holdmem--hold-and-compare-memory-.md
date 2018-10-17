@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.holdmem** command saves memory ranges and compares them to other memory ranges.
 
-```
+```dbgcmd
 .holdmem -a Range 
 .holdmem -d { Range | Address } 
 .holdmem -D 

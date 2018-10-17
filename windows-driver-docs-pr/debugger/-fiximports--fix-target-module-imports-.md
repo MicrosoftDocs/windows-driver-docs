@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.fiximports** command validates and corrects all static import links for a target module.
 
-```
+```dbgcmd
 .fiximports Module
 ```
 

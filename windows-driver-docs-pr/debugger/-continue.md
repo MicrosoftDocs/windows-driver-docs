@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **.continue** token behaves like the **continue** keyword in C.
 
-```
+```dbgsyntax
 .for (...) { ... ; .if (Condition) .continue ; ... } 
 
 .while (...) { ... ; .if (Condition) .continue ; ... } 

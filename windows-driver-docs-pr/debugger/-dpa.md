@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The **!dpa** extension displays pool allocation information.
 
-```
+```dbgcmd
 !dpa Options 
 !dpa -?
 ```
