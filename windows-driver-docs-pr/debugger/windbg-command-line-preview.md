@@ -2,7 +2,7 @@
 title: WinDbg Preview - Command line startup options
 description: This section covers the command line startup options for the WinDbg Preview debugger.
 ms.author: domars
-ms.date: 10/16/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -75,7 +75,7 @@ Option | Description
 -psn *ServiceName*| Specifies the name of the service contained in the process to be debugged. This is used to debug a process that is already running.
 -pn *ProcessName* | Specifies the name of the process to be debugged.
 -z *DumpFile* | Specifies the name of a crash dump file to debug. If the path and file name contain spaces, this must be surrounded by quotation marks. 
-openPrivateDumpByHandle *Handle* | Specifies the handle of a crash dump file to debug.
+openPrivateDumpByHandle *Handle* | _Microsoft internal use only_. Specifies the handle of a crash dump file to debug.
 -debugArch x86 -or- amd64 | Override the autodetect behavior and set the target bitness for the debugger.
 
 **Symbol Options**
