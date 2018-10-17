@@ -64,7 +64,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_IPA\_MIN\_BUFFER\_SIZE**](wia-ipa-min-buffer-size.md)

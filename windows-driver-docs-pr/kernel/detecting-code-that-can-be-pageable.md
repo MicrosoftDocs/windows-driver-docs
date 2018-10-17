@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 To detect code that runs at IRQL &gt;= DISPATCH\_LEVEL, use the [**PAGED\_CODE**](https://msdn.microsoft.com/library/windows/hardware/ff558773) macro. In debug mode, this macro generates a message if the code runs at IRQL &gt;= DISPATCH\_LEVEL. Add the macro as the first statement in a routine to mark the whole routine as paged code, as the following example shows:
 
-```
+```cpp
 NTSTATUS 
 MyDriverXxx( 
     IN OUT PVOID ParseContext OPTIONAL, 

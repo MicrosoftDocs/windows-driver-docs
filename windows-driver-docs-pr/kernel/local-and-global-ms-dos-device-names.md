@@ -40,7 +40,7 @@ A driver that must create its MS-DOS device names in the global **\\DosDevices**
 
 Note that **\\DosDevices\\Global** does not exist on platforms that do not support local and global versions of **\\DosDevices**, such as Windows 98/Me. The following code example creates a global symbolic link that works on Windows 98/Me as well as Windows 2000 and later operating systems:
 
-```
+```cpp
 UNICODE_STRING deviceName; // Already initialized.
 UNICODE_STRING symbolicLinkName; // Initializing below.
 NTSTATUS status;

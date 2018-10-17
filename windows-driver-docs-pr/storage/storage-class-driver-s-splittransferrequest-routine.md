@@ -28,7 +28,7 @@ Most class drivers store a pointer to this configuration data in the device exte
 
 For example, such a *DispatchReadWrite* routine could have code similar to the following:
 
-```
+```cpp
 PSTORAGE_ADAPTER_DESCRIPTOR adapterDescriptor = 
     commonExtension->PartitionZeroExtension->AdapterDescriptor;
 ULONG transferPages;

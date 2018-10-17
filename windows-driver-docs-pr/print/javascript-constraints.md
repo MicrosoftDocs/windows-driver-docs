@@ -102,7 +102,7 @@ This API is called in order to validate that a PrintTicket object is valid for a
 
 Syntax
 
-```JavaScript
+```javascript
 function validatePrintTicket(printTicket, scriptContext)
 ```
 
@@ -131,7 +131,7 @@ This API is called to allow the PrintCapabilities object to be modified. This sh
 
 Syntax
 
-```JavaScript
+```javascript
 function completePrintCapabilities(printTicket, scriptContext, printCapabilities)
 ```
 
@@ -157,7 +157,7 @@ This API is called to convert values from the DEVMODE property bag into a PrintT
 
 Syntax
 
-```JavaScript
+```javascript
 function convertDevModeToPrintTicket(devModeProperties, scriptContext, printTicket)
 ```
 
@@ -183,7 +183,7 @@ This API is called to convert values from a PrintTicket into the DEVMODE propert
 
 Syntax
 
-```JavaScript
+```javascript
 function convertPrintTicketToDevMode(printTicket, scriptContext, devModeProperties)
 ```
 

@@ -116,7 +116,7 @@ To allocate your own memory, use **CoTaskMemAlloc** (described in the Microsoft 
 
 The following example shows an implementation of the **IWiaMiniDrv::drvAcquireItemData** method. This example can handle both memory allocation cases.
 
-```
+```cpp
 HRESULT _stdcall CWIADevice::drvAcquireItemData(
   BYTE                      *pWiasContext,
   LONG                      lFlags,

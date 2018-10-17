@@ -19,7 +19,7 @@ The **FreeTransferBuffer** function de-allocates the memory allocated for the tr
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_IO_FREE_TRANSFER_BUFFER) (

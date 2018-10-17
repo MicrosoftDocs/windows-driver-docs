@@ -28,7 +28,7 @@ This method handles Bidi GET queries such as \\Printer.Consumables.YellowInk:Lev
 
 Syntax
 
-```JavaScript
+```javascript
 function getSchemas(scriptContext, printerStream, schemaRequests, printerBidiSchemaResponses);
 ```
 
@@ -120,7 +120,7 @@ USBMon calls this method during StartDocPort. Calling **startPrintJob** allows t
 
 Syntax
 
-```JavaScript
+```javascript
 function startPrintJob(jobScriptContext, printerStream, printerBidiSchemaResponses);
 ```
 
@@ -151,7 +151,7 @@ USBMon calls this method during writePort. Calling **writePrintData** allows the
 
 -   Via an object which can return Bidi Schema responses for USBMon to process
 
-```JavaScript
+```javascript
 function writePrintData(jobScriptContext, writePrintDataProgress, printData, printerStream, printerBidiSchemaResponses);
 ```
 
@@ -222,7 +222,7 @@ USBMon calls this method during endDocPort. Calling **endPrintJob** allows the d
 
 -   Access an object that can pass Bidi Schema responses for USBMon to process
 
-```JavaScript
+```javascript
 function endPrintJob(jobScriptContext, printerStream, printerBidiSchemaResponses);
 ```
 

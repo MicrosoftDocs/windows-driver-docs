@@ -22,7 +22,7 @@ Drivers should initialize all output buffers with zeros before returning them to
 
 In the following example, a driver returns garbage in unused bytes.
 
-```
+```cpp
    case IOCTL_GET_NAME: {
       ...
       ...

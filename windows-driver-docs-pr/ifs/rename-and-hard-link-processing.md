@@ -28,7 +28,7 @@ An area of particular concern for file systems is the proper handling of rename 
 
 When looking at the control structure for a rename operation, one of the structure fields is the **ReplaceIfExists** option:
 
-```
+```cpp
 typedef struct _FILE_RENAME_INFORMATION {
     BOOLEAN ReplaceIfExists;
     HANDLE RootDirectory;
@@ -39,7 +39,7 @@ typedef struct _FILE_RENAME_INFORMATION {
 
 Similarly, in the hard link operation's control structure, one of the structure fields is the **ReplaceIfExists** option:
 
-```
+```cpp
 typedef struct _FILE_LINK_INFORMATION {
     BOOLEAN ReplaceIfExists;
     HANDLE RootDirectory;
@@ -52,7 +52,7 @@ In both cases, the option is to replace the target of the operation, if it exist
 
 The following code example to handle a rename operation mimics the file system checks for deleting the file. For a file system with a more robust security model (NTFS, for example), this check would also require security checking to ensure that the caller was allowed to delete the given file (the caller had the appropriate permissions required for deletion).
 
-```
+```cpp
     //
     //  The name already exists. Check if the user wants
     //  to overwrite the name and has access to do the overwrite.

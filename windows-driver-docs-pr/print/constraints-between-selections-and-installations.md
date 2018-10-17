@@ -44,7 +44,7 @@ where *FeatureName* is the name of a feature and *OptionName* is the name of an 
 
 An \***InstalledConstraints** or \***NotInstalledConstraints** entry must be placed inside a \*Feature or \*Option entry. For example, to indicate that a user should not be able to select tabloid paper if a printer's large format paper tray is not installed, the following entries can be used:
 
-```
+```cpp
 *Feature: InputBin
 {
     *Option: LARGEFMT

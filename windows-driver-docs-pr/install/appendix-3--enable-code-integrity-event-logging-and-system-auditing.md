@@ -68,7 +68,7 @@ To enable security audit policy to capture load failures in the audit logs, foll
 
 2.  In the elevated Command Prompt window, run the following command:
 
-    ```
+    ```cpp
     Auditpol /set /Category:System /failure:enable
     ```
 

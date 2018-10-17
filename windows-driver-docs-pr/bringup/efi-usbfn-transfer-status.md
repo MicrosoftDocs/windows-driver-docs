@@ -19,7 +19,7 @@ This enumeration indicates the USB transfer status.
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef enum _EFI_USBFN_TRANSFER_STATUS 
 {
     UsbTransferStatusUnknown = 0,

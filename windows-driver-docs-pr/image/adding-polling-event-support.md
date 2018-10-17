@@ -54,7 +54,7 @@ This WIA driver should set the *m\_guidLastEvent* class member variable to the p
 
 The following example shows an implementation of the [**IStiUSD::GetStatus**](https://msdn.microsoft.com/library/windows/hardware/ff543823) method.
 
-```
+```cpp
 STDMETHODIMP CWIADevice::GetStatus(PSTI_DEVICE_STATUS pDevStatus)
 {
   //

@@ -13,18 +13,22 @@ api_name:
 - IPrinterBidiSchemaResponses.AddInt32
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaResponses::AddInt32 method
-
 
 The AddInt32 method adds a new response of type BIDI\_INT to the collection.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT  AddInt32(
   [in] BSTR bstrSchema,
   [in] LONG lValue
@@ -60,20 +64,11 @@ Requirements
 </tr>
 <tr class="even">
 <td><p>Version</p></td>
-<td><p>Windows 8</p></td>
+<td><p>Windows 8 and later</p></td>
 </tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**IPrinterBidiSchemaResponses**](iprinterbidischemaresponses.md)
-
- 
-
- 
-
-
-
-

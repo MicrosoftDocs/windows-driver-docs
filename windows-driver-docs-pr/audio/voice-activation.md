@@ -217,7 +217,7 @@ Implement the following methods.
 
 The [**KEYWORDID**](https://msdn.microsoft.com/library/windows/hardware/dn957510) enumeration identifies the phrase text/function of a keyword and is also used in the Windows Biometric Service adapters. For more information, see [Biometric Framework Overview - Core Platform Components](https://msdn.microsoft.com/library/windows/desktop/dd560897.aspx)
 
-```
+```cpp
 typedef enum  { 
   KwInvalid              = 0,
   KwHeyCortana           = 1,
@@ -229,7 +229,7 @@ typedef enum  {
 
 The [**KEYWORDSELECTOR**](https://msdn.microsoft.com/library/windows/hardware/dn957511) struct is a set of IDs that uniquely select a particular keyword and language.
 
-```
+```cpp
 typedef struct
 {
     KEYWORDID KeywordId;

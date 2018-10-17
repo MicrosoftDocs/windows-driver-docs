@@ -13,18 +13,22 @@ api_name:
 - IPrinterBidiSchemaElement.BidiType
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaElement::BidiType method
-
 
 The BidiType method returns the Bidi schema element type.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT BidiType(
   [out, retval] PrinterBidiSchemaElementType *pType
 );
@@ -56,22 +60,13 @@ Requirements
 </tr>
 <tr class="even">
 <td><p>Version</p></td>
-<td><p>Windows 8</p></td>
+<td><p>Windows 8 and later</p></td>
 </tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**IPrinterBidiSchemaElement**](iprinterbidischemaelement-interface.md)
 
 [**PrinterBidiSchemaElementType**](printerbidischemaelementtype.md)
-
- 
-
- 
-
-
-
-

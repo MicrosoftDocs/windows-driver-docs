@@ -19,8 +19,7 @@ The service number uniquely identifies the given mobile operator and is a requir
 
 ## <span id="related_topics"></span>Related topics
 
-
-[Create a mobile broadband experience](https://msdn.microsoft.com/library/windows/hardware/dn236414.aspx)
+- [Create a mobile broadband experience](https://msdn.microsoft.com/library/windows/hardware/dn236414.aspx)
 
  
 

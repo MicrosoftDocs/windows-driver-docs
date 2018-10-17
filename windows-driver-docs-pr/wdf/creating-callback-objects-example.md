@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 The following code example shows how a driver creates a device callback object in the implementation of its [**IDriverEntry::OnDeviceAdd**](https://msdn.microsoft.com/library/windows/hardware/ff554896) method and then passes a pointer to the device callback interface in its call to the [**IWDFDriver::CreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff558899) method to create the device.
 
-```
+```cpp
    HRESULT CMyDriver::OnDeviceAdd(
               IWDFDriver*           pDriver,
               IWDFDeviceInitialize* pDeviceInit

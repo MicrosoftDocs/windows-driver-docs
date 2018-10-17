@@ -59,7 +59,7 @@ The TCP/IP Installed construct contains the object ID (OID) of the MIB table's r
 
 In the following code example, the lookup algorithm retrieves the MIB table row from 1.3.6.1.2.1.43.13.4.1.9.&lt;**deviceIndex**&gt;. If this table row contains either 3 or 4, the query returns **TRUE**; otherwise the query returns **FALSE**.
 
-```
+```cpp
 <Property name="DuplexUnit">
   <Installed name="Installed" oid="1.3.6.1.2.1.43.13.4.1.9" deviceIndex="true">
     <Lookup value="3"/>
@@ -70,7 +70,7 @@ In the following code example, the lookup algorithm retrieves the MIB table row 
 
 The preceding example results in the following query:
 
-```
+```cpp
 \Printer.Configuration.DuplexUnit:Installed
 ```
 

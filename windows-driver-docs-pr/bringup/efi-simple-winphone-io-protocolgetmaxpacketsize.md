@@ -19,7 +19,7 @@ The **GetMaxPacketSize** function returns the maximum number of bytes that can b
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef 
 EFI_STATUS 
 (EFIAPI * EFI_SIMPLE_WINPHONE_IO_GET_MAXPACKET_SIZE) ( 

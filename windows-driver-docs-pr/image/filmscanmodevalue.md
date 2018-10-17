@@ -25,7 +25,7 @@ The required **FilmScanModeValue** element identifies a specific film exposure t
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:FilmScanModeValue>
   text
 </wscn:FilmScanModeValue>
@@ -103,7 +103,7 @@ Remarks
 
 You can both extend and subset the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DefaultScanTicket**](defaultscanticket.md)

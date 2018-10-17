@@ -17,7 +17,7 @@ The Direct3D version 10 kernel handle life spans are typically controlled by the
 
 The following shows an example of a kernel handle for a resource:
 
-```
+```cpp
 // Strongly typed handle to identify a resource object to the driver: 
 typedef struct D3D10DDI_HKMRESOURCE
 {

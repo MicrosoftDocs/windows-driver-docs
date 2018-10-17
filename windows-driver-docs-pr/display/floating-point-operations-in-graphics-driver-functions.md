@@ -26,7 +26,7 @@ If a graphics driver function contains code that uses the floating-point unit (F
 
 If an FPU is available, it will be used by any code that assigns a value to a floating-point variable or performs calculations that involve floating-point numbers. For example, each of the following lines of code uses the FPU.
 
-```
+```cpp
 double myDouble = 5;
 int myInt = 5 * 4.3;
 int myInt = 50 * cos(2);
@@ -34,7 +34,7 @@ int myInt = 50 * cos(2);
 
 Suppose you are writing a [**DrvAlphaBlend**](https://msdn.microsoft.com/library/windows/hardware/ff556176) function that uses the FPU. The following example demonstrates how you should save and restore the floating-point state.
 
-```
+```cpp
 #define DRIVER_TAG // Put your driver tag here, for example &#39;zyxD&#39;
 
 BOOL DrvAlphaBlend(...)

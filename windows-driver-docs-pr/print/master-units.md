@@ -51,13 +51,13 @@ To specify a printer's master units, use the \***MasterUnits** attribute. The at
 
 where *X\_Denominator* is the LCM of the denominators for the horizontal resolutions, and *Y\_Denominator* is the LCM of the denominators for the vertical resolutions. The following GPD entry specifies the master units for the example:
 
-```
+```cpp
 *MasterUnits: PAIR(320, 576)
 ```
 
 Generally, position and size values used in GPD file entries must be specified in master units. For example, to specify that the maximum custom page size for our example printer is 9 inches by 12 inches, the following entry would be used, where 9x320=2880 and 12x576=6912:
 
-```
+```cpp
 *MaxSize: PAIR(2880, 6912)
 ```
 
@@ -65,7 +65,7 @@ When calculating values for master units, use only the device resolutions that y
 
 If your printer supports [cursor commands](cursor-commands.md) for moving the cursor position, then the values specified for the \***XMoveUnit** and \***YMoveUnit**[cursor attributes](cursor-attributes.md) must be included in master unit calculations. Suppose, for example, that a GPD file contains the following entries:
 
-```
+```cpp
 *XMoveUnit: 60
 *YMoveUnit: 60
 ```

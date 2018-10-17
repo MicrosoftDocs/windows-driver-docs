@@ -40,7 +40,7 @@ Verify that:
 
 Include the following code in the registry script, arbitrarily named *Xusample.rgs*:
 
-```
+```cpp
 HKLM
 {
     NoRemove SYSTEM
@@ -69,7 +69,7 @@ HKLM
 
 To support installation by registering the plug-in DLL, add the following code to your registry script:
 
-```
+```cpp
 HKCR
 {
     NoRemove CLSID
@@ -85,11 +85,3 @@ HKCR
     }
 }
 ```
-
- 
-
- 
-
-
-
-

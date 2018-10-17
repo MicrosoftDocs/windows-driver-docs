@@ -82,7 +82,7 @@ For information on using Windows Services, see [Services](https://msdn.microsoft
 
 **Security checklist item \#2:** *Use the driver frameworks to reduce the size of your code and increase it's reliability and security.*
 
-Use the [Windows Driver Frameworks](https://docs.microsoft.com/windows-hardware/drivers/wdf/) to reduce the size of your code and increase it's reliability and security.  To get started, review [Using WDF to Develop a Driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-the-framework-to-develop-a-driver). For information on using the lower risk user mode framework driver (UMDF), see [Choosing a driver model](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/choosing-a-driver-model).
+Use the [Windows Driver Frameworks](https://docs.microsoft.com/windows-hardware/drivers/wdf/) to reduce the size of your code and increase it's reliability and security.  To get started, review [Using WDF to Develop a Driver](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-the-framework-to-develop-a-driver). For information on using the lower risk user mode framework driver (UMDF), see [Choosing a driver model](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/choosing-a-driver-model).
 
 Writing an old fashion [Windows Driver Model (WDM)](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model) driver is more time consuming, costly, and almost always involves recreating code that is available in the driver frameworks.
 
@@ -324,7 +324,7 @@ The following section describes the risk hierarchy of the common SIDs used in dr
 
 It is important to understand that if lower privilege callers are allowed to access the kernel, code risk is increased. In this summary diagram, the risk increases as you allow lower privilege SIDs access to your driver functionality.
 
-```
+```cpp
 SY (System)
 \/
 BA (Built-in Administrators)
@@ -537,7 +537,7 @@ Follow these steps to validate that the security compile options are properly co
 
 4. Open a command prompt window and execute the following command to examine a compiled driver binary. Update the path to point to your complied driver .sys file.
 
-```
+```cpp
 C:\Program Files\Microsoft BinScope 2014>binscope "C:\Samples\KMDF_Echo_Driver\echo.sys" /verbose /html /logfile c:\mylog.htm 
 ```
 
@@ -553,7 +553,7 @@ There are three categories that may be output into a log file:
 
 Note that passed checks are not written to the log by default and must be enabled by using the /verbose switch.
 
-```
+```cpp
 Results for Microsoft BinScope 2014 run on MyPC at 2017-01-28T00:18:48.3828242Z
 
 Failed Checks

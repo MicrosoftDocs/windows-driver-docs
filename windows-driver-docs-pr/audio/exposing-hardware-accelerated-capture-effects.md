@@ -129,7 +129,7 @@ The pin IDs in the preceding table are defined in the header file Ksmedia.h.
 
 The following code example shows how an adapter driver can specify the internal topology of an AEC filter that contains both an AEC node and an NS node:
 
-```
+```cpp
     // AEC Filter Topology
 
     // Pin IDs for external pins on AEC filter

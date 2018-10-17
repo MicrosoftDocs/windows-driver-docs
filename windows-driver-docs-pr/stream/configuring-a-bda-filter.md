@@ -26,7 +26,7 @@ A BDA minidriver processes method requests of the [KSMETHODSETID\_BdaDeviceConfi
 
 In the following code snippet, two of the methods of the KSMETHODSETID\_BdaDeviceConfiguration method set are dispatched directly to the BDA support library and the remaining method is first intercepted by the BDA minidriver before dispatching to the BDA support library.
 
-```
+```cpp
 //
 //  BDA Device Configuration Method Set
 //

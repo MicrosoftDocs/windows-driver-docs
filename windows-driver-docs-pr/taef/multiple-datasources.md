@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 Multiple DataSources are useful when you are looking for a combinatorial expansion of one or more DataSources ([Table based DataSource](table-data-source.md), [PICT based DataSource](pict-data-source.md), or [WMI based DataSource](wmi-data-source.md)).
 
-Crafting your test design to make efficient use of this feature is paramount. Let's see with the aid of an example why this is so. Say as a part of multiple DataSource, you want to specify two Table based DataSources, one WMI based DataSource and one PICT Based DataSource. For the sake of argument, let's say that that the first table has 4 rows, the second has 5 rows, the WMI query returns 2 results and the PICT DataSource generated 6 pairwise combinations. TAEF will come up with a combinatorial expansion of these sets of parameters. This means the test method in question will be invoked (4 X 5 X 2 X 6 =) **240** times! Increasing the number of invocations of the test method with varying combinations of parameters may yield diminishing results as far as test coverage goes. This makes it important to design the test using multiple DataSources with care and by weighing out other alternatives. Following are some points you may want to consider:
+Crafting your test design to make efficient use of this feature is paramount. Let's see with the aid of an example why this is so. Say as a part of multiple DataSource, you want to specify two Table based DataSources, one WMI based DataSource and one PICT Based DataSource. For the sake of argument, let's say that the first table has 4 rows, the second has 5 rows, the WMI query returns 2 results and the PICT DataSource generated 6 pairwise combinations. TAEF will come up with a combinatorial expansion of these sets of parameters. This means the test method in question will be invoked (4 X 5 X 2 X 6 =) **240** times! Increasing the number of invocations of the test method with varying combinations of parameters may yield diminishing results as far as test coverage goes. This makes it important to design the test using multiple DataSources with care and by weighing out other alternatives. Following are some points you may want to consider:
 
 -   Make sure it adds value to have multiple tables. If you don't need them to be separate, you could come up with an efficient combination of parameters yourself.
 -   Check if you can use a PICT model file with constraints, instead of multiple tables.
@@ -28,7 +28,7 @@ The key aspect here is how to specify the DataSource. Let's take a look at the c
 
 ### <span id="Native"></span><span id="native"></span><span id="NATIVE"></span>Native
 
-```
+```cpp
 1   namespace WEX { namespace TestExecution { namespace Examples
 2   {
 3       class AdvancedDataDrivenTests
@@ -54,7 +54,7 @@ See lines 11, 15, and 16 in the example above. In general, the pattern to follow
 
 ### <span id="Managed"></span><span id="managed"></span><span id="MANAGED"></span>Managed
 
-```
+```cpp
 [TestMethod]
 [DataSource(@"Table:CSharpAdvancedDataDrivenTests.xml#FirstTable;
     WMI:SELECT ProcessId FROM Win32_Service WHERE Name=&#39;Themes&#39;")]
@@ -87,7 +87,7 @@ The examples also demonstrate the ways to specify multiple DataSources in multip
 ## <span id="Specifying_DataSource_on_a_single_line"></span><span id="specifying_datasource_on_a_single_line"></span><span id="SPECIFYING_DATASOURCE_ON_A_SINGLE_LINE"></span>Specifying DataSource on a single line
 
 
-```
+```cpp
 [DataSource("Table:CSharpAdvancedDataDrivenTests.xml#FirstTable;WMI:SELECT ProcessId FROM Win32_Service WHERE Name=&#39;Themes&#39;")]
 ```
 

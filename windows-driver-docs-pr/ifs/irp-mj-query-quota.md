@@ -138,7 +138,7 @@ Length, in bytes, of the buffer pointed to by *Irp-&gt;UserBuffer*.
 <a href="" id="irpsp--parameters-queryquota-sidlist"></a>*IrpSp-&gt;Parameters.QueryQuota.SidList*  
 Optional pointer to a list of SIDs whose quota information is to be returned. Each entry in the list is a [**FILE\_GET\_QUOTA\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540298) structure. This structure is defined as follows:
 
-```
+```cpp
 typedef struct _FILE_GET_QUOTA_INFORMATION {
     ULONG NextEntryOffset;
     ULONG SidLength;

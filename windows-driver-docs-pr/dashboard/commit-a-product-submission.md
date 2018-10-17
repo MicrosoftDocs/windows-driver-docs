@@ -49,7 +49,7 @@ Do not provide request body for this method.
 
 The following example demonstrates how to commit a submission.
 
-```
+```cpp
 POST https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14631253285588838/submissions/1152921504621465124/commit HTTP/1.1
 Authorization: Bearer <your access token>
 ```
@@ -75,3 +75,7 @@ After this step, use the method [get submission details](get-a-submission.md)  t
 ## Error codes
 
 For more info, see [Error codes](get-product-data.md#error-codes).
+
+# See also
+
+[Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

@@ -48,7 +48,7 @@ Length, in bytes, of the input buffer at *InputBuffer*.
 <a href="" id="outputbuffer"></a>*OutputBuffer*  
 A pointer to a buffer of paged pool memory that contains an array of elements of the following type:
 
-```
+```cpp
 struct {
  LONGLONG  SectorLengthInBytes;
  LONGLONG  StartingLogicalOffsetInBytes;

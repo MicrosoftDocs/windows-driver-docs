@@ -53,7 +53,7 @@ KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEDETECTION is a property ID that is used
 
 The following flags can be placed in the KSCAMERA\_EXTENDEDPROP\_HEADER.Flags field to control face detection in the driver. By default, the driver should have FACEDETECTION\_OFF.
 
-``` syntax
+```cpp
 #define KSCAMERA_EXTENDEDPROP_FACEDETECTION_PREVIEW         0x0000000000000001
 #define KSCAMERA_EXTENDEDPROP_FACEDETECTION_VIDEO           0x0000000000000002
 #define KSCAMERA_EXTENDEDPROP_FACEDETECTION_PHOTO           0x0000000000000004

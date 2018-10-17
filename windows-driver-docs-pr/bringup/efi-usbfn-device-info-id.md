@@ -19,7 +19,7 @@ This enumeration is used to identify a specific string in a request to the drive
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef enum _EFI_USBFN_DEVICE_INFO_ID   
 {
     EfiUsbDeviceInfoUnknown = 0,

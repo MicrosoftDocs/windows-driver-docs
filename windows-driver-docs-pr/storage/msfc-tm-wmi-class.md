@@ -15,7 +15,7 @@ A WMI provider uses the MSFC\_TM WMI class to time stamp events.
 
 The MSFC\_TM class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MSFC_TM {
   [WmiDataId(1)] uint32  tm_sec;
   [WmiDataId(2)] uint32  tm_min;

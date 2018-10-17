@@ -42,7 +42,7 @@ Do not define any keywords in your schema; just include the framework for the fu
 
 The following code example demonstrates one way to complete this exercise.
 
-```
+```cpp
 *Template:  ATTRIBUTE
 {
     *Type:  ATTRIBUTE

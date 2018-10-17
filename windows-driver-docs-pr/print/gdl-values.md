@@ -47,7 +47,7 @@ For more information about GDL contexts, see [GDL Contexts](gdl-contexts.md).
 
 The following code examples show values that are acceptable to the GDL parser.
 
-```
+```cpp
 *Value: *%  Null Value - only a comment
 
 *Value: "Quoted String"

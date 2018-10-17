@@ -41,7 +41,7 @@ To install device metadata packages through a [driver package](driver-packages.m
 
 The following example shows how to copy device metadata packages to locale-specific directory paths by using an INF file for the device metadata store within the [**DestinationDirs Section**](inf-destinationdirs-section.md) and [**DDInstall**](inf-ddinstall-section.md) INF sections:
 
-```
+```cpp
 [SourceDisksNames]
 1 = %Media_Description%,,,\MetadataPackage ;
 

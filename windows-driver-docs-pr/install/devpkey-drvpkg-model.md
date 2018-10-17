@@ -53,7 +53,7 @@ You can set the value of DEVPKEY_DrvPkg_Model by an [**INF AddProperty directive
 
 The following is an example of how to use an INF **AddProperty** directive to set the value of DEVPKEY_DrvPkg_Model for a device that is installed by an INF *DDInstall* section "SampleDDInstallSection":
 
-```
+```cpp
 [SampleDDinstallSection]
 ...
 AddProperty=SampleAddPropertySection

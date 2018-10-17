@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 An MPIO driver uses the PDOSCSI\_ADDR WMI class to identify the SCSI address of a physical device.
 
-```
+```cpp
 class PDOSCSI_ADDR
 {
     //

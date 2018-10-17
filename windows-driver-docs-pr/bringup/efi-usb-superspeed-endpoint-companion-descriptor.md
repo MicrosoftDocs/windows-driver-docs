@@ -19,7 +19,7 @@ The **EFI\_USB\_SUPERSPEED\_ENDPOINT\_COMPANION\_DESCRIPTOR** structure provides
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef struct
 {
     UINT8          Length;

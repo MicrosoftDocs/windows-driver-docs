@@ -30,7 +30,7 @@ The "ThreadingModel" metadata property is used to request a threading model. The
 
 Example: To request MTA threading model from C++ mark-up:
 
-```
+```cpp
 class ThreadModelTests
 {
 
@@ -44,7 +44,7 @@ class ThreadModelTests
 
 You can also request threading model property for a class or a module. For example,
 
-```
+```cpp
 class ThreadModelTestsWithMTADefault
 {
 
@@ -58,7 +58,7 @@ class ThreadModelTestsWithMTADefault
 
 Similarly, you can also request threading model for managed tests:
 
-```
+```cpp
 [TestClass]
 
 public class SimpleTests

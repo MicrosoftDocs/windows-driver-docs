@@ -25,7 +25,7 @@ Include the following code in the application source, arbitrarily named TestApp.
 
 Also include in TestApp.cpp the code shown in [Supporting Autoupdate Events with Extension Units](supporting-autoupdate-events-with-extension-units.md).
 
-```
+```cpp
   // pUnkOuter is the unknown associated with the base filter
   hr = pUnkOuter->QueryInterface(__uuidof(IKsTopologyInfo), 
                                (void **) &pKsTopologyInfo);

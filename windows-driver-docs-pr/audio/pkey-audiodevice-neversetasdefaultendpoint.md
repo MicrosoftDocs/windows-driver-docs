@@ -17,7 +17,7 @@ You might decide to set up certain devices so that they can never be selected as
 
 The following INF file excerpt shows how to use **PKEY\_AudioDevice\_NeverSetAsDefaultEndpoint** to set up an endpoint so that it can never be selected as default.
 
-```
+```inf
 [Version]
 Signature="$Windows NT$"
 Class=MEDIA
@@ -53,7 +53,7 @@ In the preceding example, NeverSetAsDefaultEndpointMaskValue represents a DWORD 
 
 The following INF file snippet shows how an undefined output device (KSNODETYPE\_OUTPUT\_UNDEFINED) is set up so that its endpoint is never selected as default, regardless of the device role and the data flow direction.
 
-```
+```inf
 [Version]
 Signature="$Windows NT$"
 Class=MEDIA

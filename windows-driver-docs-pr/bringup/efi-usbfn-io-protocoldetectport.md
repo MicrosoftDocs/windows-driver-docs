@@ -19,7 +19,7 @@ The **DetectPort** function returns the type of device attached to the USB port.
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_IO_DETECT_PORT) (

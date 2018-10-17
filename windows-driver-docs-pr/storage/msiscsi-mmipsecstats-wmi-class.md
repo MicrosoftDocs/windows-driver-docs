@@ -17,7 +17,7 @@ Because this class is associated with a particular instance of a storage minipor
 
 The MSiSCSI\_MMIPSECStats class is defined in *Iscsiprf.mof*.
 
-```
+```cpp
 class MSiSCSI_MMIPSECStats : Win32_PerfRawData {
   // instance name is pnp id
   [read,key] String  InstanceName;

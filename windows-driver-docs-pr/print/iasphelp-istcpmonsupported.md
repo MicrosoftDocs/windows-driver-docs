@@ -16,18 +16,22 @@ api_name:
 - Iasphelp.get_IsTCPMonSupported
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_IsTCPMonSupported method
 
-
-The **IsTCPMonSupported** property enables an ASP Web page to determine if Microsoft's standard TCP/IP [*port monitor*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-port-monitor) is being used with a printer.
+The **IsTCPMonSupported** property enables an ASP Web page to determine if Microsoft's standard TCP/IP [port monitor](https://docs.microsoft.com/windows-hardware/drivers/print/port-monitors) is being used with a printer.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_IsTCPMonSupported(
   [out] BOOL *pVal
 );
@@ -71,24 +75,16 @@ Win32 error codes can also be returned.
 </tbody>
 </table>
 
- 
-
-## <span id="ddk_iasphelp_istcpmonsupported_gg"></span><span id="DDK_IASPHELP_ISTCPMONSUPPORTED_GG"></span>
-
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::IsTCPMonSupported** property can be queried.
 
-```
-    Dim objPrinter, UseStdMon
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
-    UseStdMon = objPrinter.IsTCPMonSupported
+```vb
+Dim objPrinter, UseStdMon
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
+UseStdMon = objPrinter.IsTCPMonSupported
 ```
 
 Requirements
@@ -104,22 +100,9 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**Iasphelp::Open**](iasphelp-open.md)
-
- 
-
- 
-
-
-
-

@@ -15,13 +15,3 @@ ms.localizationpriority: medium
 # CM_Open_DevNode_Key_Ex
 
 This function is reserved for system use.
-
-
- 
-
- 
-
-
-
-
-

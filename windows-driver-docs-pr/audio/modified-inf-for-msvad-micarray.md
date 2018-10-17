@@ -17,7 +17,7 @@ This topic shows how to modify the Micarray.inf sample file to provide setup inf
 
 Navigate to Src\\Audio\\Msvad to locate Micarray.inf. Make a copy of the original file under a new name, and then edit Micarray.inf as follows:
 
-```
+```inf
 // Modified micarray.inf file tailored for a microphone array
 [Version]
 Signature="$CHICAGO$"

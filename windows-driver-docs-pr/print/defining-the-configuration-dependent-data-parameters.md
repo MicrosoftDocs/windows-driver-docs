@@ -27,7 +27,7 @@ The content of the **\*Features** construct can consist of one or more **\*Optio
 
 For example,you can define a parameter named *Today* that can take a day of the week as its value, as the following code example shows.:
 
-```
+```cpp
 *Feature: Today
 {
   *Option: Sunday{}

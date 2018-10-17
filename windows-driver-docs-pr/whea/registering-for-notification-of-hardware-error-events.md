@@ -34,7 +34,7 @@ The channel to which the WHEA provider raises the hardware error events is as fo
 
 The following code example shows how to register for the notification of new hardware error events for this version of Windows.
 
-```
+```cpp
 // Prototype for the notification callback function
 DWORD WINAPI HwErrorEventCallback(
   EVT_SUBSCRIBE_NOTIFY_ACTION Action,
@@ -96,7 +96,7 @@ VOID UnsubscribeHwErrorEvents(EVT_HANDLE SubHandle)
 
 The following code example shows how to register for the notification of new hardware error events for these versions of Windows.
 
-```
+```cpp
 // Prototype for the notification callback function
 DWORD WINAPI HwErrorEventCallback(
   EVT_SUBSCRIBE_NOTIFY_ACTION Action,

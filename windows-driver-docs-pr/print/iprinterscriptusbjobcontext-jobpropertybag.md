@@ -13,18 +13,22 @@ api_name:
 - IPrinterScriptUsbJobContext.JobPropertyBag
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbJobContext::JobPropertyBag method
-
 
 Returns the property bag associated with the current print job.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT JobPropertyBag(
   [out, retval] IPrinterScriptablePropertyBag **ppPropertyBag
 );
@@ -70,15 +74,6 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**IPrinterScriptUsbJobContext**](iprinterscriptusbjobcontext.md)
-
- 
-
- 
-
-
-
-

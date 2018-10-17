@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 Use the following example code to perform ProcAmp control and deinterlacing operations. This code is an implementation of the [*DdMoCompRender*](https://msdn.microsoft.com/library/windows/hardware/ff550248) callback function. The **RenderMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](https://msdn.microsoft.com/library/windows/hardware/ff551660) structure points to the callback function.
 
-```
+```cpp
 DWORD APIENTRY
   MOCOMPCB_RENDER(
     PDD_RENDERMOCOMPDATA  lpData

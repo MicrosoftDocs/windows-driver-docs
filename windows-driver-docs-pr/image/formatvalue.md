@@ -25,7 +25,7 @@ The required **FormatValue** element specifies a single supported file format an
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:FormatValue>
   text
 </wscn:FormatValue>
@@ -157,7 +157,7 @@ You can both extend and subset the allowed values for this element.
 
 Although the WSD Scan Service supports the JBIG file format (ISO/IEC 11544:1993), it does *not* currently support JBIG2 (ISO/IEC 14492:2001).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**FormatsSupported**](formatssupported.md)

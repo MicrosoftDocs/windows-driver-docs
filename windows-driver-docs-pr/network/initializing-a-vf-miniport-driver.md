@@ -50,7 +50,7 @@ In addition to these steps, the VF miniport driver must follow these additional 
 
 -   The VF miniport driver must not advertise virtual machine queue (VMQ) capabilities. However, the driver can advertise support for other NDIS technologies, such as power management and receive side scaling (RSS).
 
-    For more information about RSS, see [Receive Side Scaling](https://msdn.microsoft.com/library/windows/hardware/ff567232).
+    For more information about RSS, see [Receive Side Scaling](ndis-receive-side-scaling2.md).
 
  
 

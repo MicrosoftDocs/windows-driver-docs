@@ -31,7 +31,7 @@ When you submit a device for certification, you can also submit a device metadat
 ## <span id="related_topics"></span>Related topics
 
 
-[Get Started](https://msdn.microsoft.com/library/windows/hardware/br230779.aspx)
+- [Get Started](https://msdn.microsoft.com/library/windows/hardware/br230779.aspx)
 
  
 

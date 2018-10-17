@@ -75,7 +75,7 @@ Represents a bug fix or service pack release. Increment this value on release of
 
 Here is a monolithic driver example:
 
-```
+```cpp
 #define VER_FILEVERSION    0, 3, 0X0100, 0X0002
 ```
 
@@ -83,13 +83,13 @@ In order, left to right, the first WORD value is zero, which it must be. The val
 
 Here are some Unidrv-/Pscript5-based minidriver examples:
 
-```
+```cpp
 #define VER_FILEVERSION    0, 3, 0X0501, 0X0001
 ```
 
 In order, left to right, the first WORD value is zero, as before. The value of the second WORD is three, indicating that this is a user-mode driver. In the third WORD, the high byte and low byte values (0X05 and 0x01, respectively) denote that this is a release for Windows XP. The fourth WORD (0x0001) indicates that this is the first bug fix or service pack release.
 
-```
+```cpp
 #define VER_FILEVERSION    0, 3, 0X0502, 0X0000
 ```
 
@@ -98,21 +98,21 @@ As before, the first WORD is zero, and the second WORD indicates that this is a 
 <a href="" id="ver-filedescription-str"></a>VER\_FILEDESCRIPTION\_STR  
 This constant should be set to a name that identifies the driver, as in the following example.
 
-```
+```cpp
 #define VER_FILEDESCRIPTION_STR    "Sample Printer Driver Resource DLL"
 ```
 
 <a href="" id="ver-internalname-str"></a>VER\_INTERNALNAME\_STR  
 Set this constant to a name that specifies the internal name of the file (not including the path), as in the following example. For more information, see the Windows SDK documentation.
 
-```
+```cpp
 #define VER_INTERNALNAME_STR    "SAMPLERES.DLL"
 ```
 
 <a href="" id="ver-originalfilename-str"></a>VER\_ORIGINALFILENAME\_STR  
 Set this constant to a name that specifies the original name of the file (not including the path), as in the following example. For more information, see the Windows SDK documentation.
 
-```
+```cpp
 #define VER_ORIGINALFILENAME_STR    "SAMPLERES.DLL"
 ```
 

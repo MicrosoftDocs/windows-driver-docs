@@ -23,7 +23,7 @@ If the KE\_PROCESSOR\_CHANGE\_ADD\_EXISTING flag was specified when the device d
 
 The following code example shows an implementation of a callback function that processes synchronous driver notifications:
 
-```
+```cpp
 // Synchronous notification callback function
 VOID
   SyncProcessorCallback(

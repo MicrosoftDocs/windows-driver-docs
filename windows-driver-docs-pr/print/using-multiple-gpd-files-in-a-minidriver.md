@@ -24,7 +24,7 @@ Unidrv minidrivers can consist of more than one GPD file. This allows you to pla
 
 To include additional GPD files, you use \*Include directives, which are described in [Preprocessor Directives](preprocessor-directives.md). You can use multiple \*Include directives, as shown in the following example:
 
-```
+```cpp
 *Include: "common1.gpd"
 *Include: "common2.gpd"
 *Include: "common3.gpd"

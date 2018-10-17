@@ -21,7 +21,7 @@ To opt out of volume persistence using an INF file, use the [**AddProperty**](ht
 
 The following INF file fragment shows how to opt out of volume persistence:
 
-```
+```inf
  
 ;; INF file fragment to show how to use AddProperty
 ;; to opt out of volume persistence

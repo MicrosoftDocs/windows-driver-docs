@@ -51,7 +51,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_DPS\_DEVICE\_ID**](wia-dps-device-id.md)

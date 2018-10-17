@@ -41,7 +41,7 @@ ms.localizationpriority: medium
 7.  The color of a hatch brush is ignored for monochrome printers. It is always printed as black.
 
 8.  For color printers, HP-GL/2 supports only 24 bpp/600 dpi. For monochrome printers, HP-GL/2 supports only 600 dpi. If your printer supports other values, constrain HP-GL/2 mode to be chosen only when color depth is 24 bpp and resolution is 600 dpi. The following example shows how the GraphicsMode feature can be modified to accomplish this. In this example, the first \*Constraints entry causes Unidrv to reject a mode change to HPGL2MODE if the Resolution feature's Option2 value is not 600x600 dpi. (In the example, it is assumed that the Option2 value is some lower resolution, such as 300x300 dpi.) The second \*Constraints entry causes Unidrv to reject the mode change if the ColorMode feature's options are Color or 8bpp.
-    ```
+    ```cpp
     *Feature: GraphicsMode
     {
       *rcNameID: =GRAPHICSMODE_DISPLAY

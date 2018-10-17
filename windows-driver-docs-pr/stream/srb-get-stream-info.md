@@ -46,7 +46,8 @@ The class driver normally issues this request only once. The minidriver may forc
 **When the SRB\_GET\_STREAM\_INFO command is received by the minidriver, the minidriver should:**
 
 1.  Retrieve the pointers for the stream header and the stream information data structures. For example:
-    ```
+
+    ```cpp
      PHW_STREAM_HEADER pstrhdr =
       (PHW_STREAM_HEADER)&amp;(pSrb->CommandData.StreamBuffer->StreamHeader);
      PHW_STREAM_INFORMATION pstrinfo =
@@ -57,12 +58,3 @@ The class driver normally issues this request only once. The minidriver may forc
 2.  Verify that the buffer is large enough to hold the returned data.
 
 3.  Write the information to the buffer.
-
- 
-
- 
-
-
-
-
-

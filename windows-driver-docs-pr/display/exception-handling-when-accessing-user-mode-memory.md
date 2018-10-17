@@ -43,7 +43,7 @@ A display driver can use the **try/except** mechanism to implement exception han
 
 The following code example shows how the driver can use the **try/except** mechanism to throw an exception if an error occurs due to accessing invalid memory.
 
-```
+```cpp
 __try
 {
     // Access user-mode memory.

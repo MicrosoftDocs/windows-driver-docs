@@ -59,13 +59,13 @@ The `List` construct is defined in WsdBidi.xsd.
 
 In the following code example, a comma-separated list is composed that contains the allowable number of page images per sheet for N-up printing, for instance "1,2,4".
 
-```
-<Property name=&#39;Layout&#39;>
-  <Property name=&#39;NumberUp&#39;>
-    <Property name=&#39;PagesPerSheet&#39;>
-      <List name=&#39;Supported
-        query=&#39;wprt:PrinterCapabilities&#39;
-        filter=&#39;wprt:PrinterCapabilites/wprt:JobValues/wprt:DocumentProcessing/wprt:NumberUp/wprt:NUpPagesPerSheet/wprt:AllowedValue&#39;/>
+```cpp
+<Property name='Layout'>
+  <Property name='NumberUp'>
+    <Property name='PagesPerSheet'>
+      <List name='Supported
+        query='wprt:PrinterCapabilities'
+        filter='wprt:PrinterCapabilites/wprt:JobValues/wprt:DocumentProcessing/wprt:NumberUp/wprt:NUpPagesPerSheet/wprt:AllowedValue'/>
     </Property>
   </Property>
 </Property>
@@ -73,7 +73,7 @@ In the following code example, a comma-separated list is composed that contains 
 
 The preceding example results in the following query:
 
-```
+```cpp
 \Printer.Layout.NumberUp.PagesPerSheet:Supported
 ```
 

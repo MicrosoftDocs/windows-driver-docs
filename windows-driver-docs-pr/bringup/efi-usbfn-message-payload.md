@@ -19,7 +19,7 @@ The **EFI\_USBFN\_MESSAGE\_PAYLOAD** union contains additional payload (device r
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef union _EFI_USBFN_MESSAGE_PAYLOAD
 {
     EFI_USB_DEVICE_REQUEST      udr;

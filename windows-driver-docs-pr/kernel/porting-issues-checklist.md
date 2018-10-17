@@ -28,7 +28,7 @@ ms.localizationpriority: medium
 
     The following assumption is no longer valid:
 
-    ```
+    ```cpp
     #ifdef _WIN32  // 32-bit Windows code
     ...
     #else          // 16-bit Windows code
@@ -40,7 +40,7 @@ ms.localizationpriority: medium
 
     Also, the following assumption is no longer valid:
 
-    ```
+    ```cpp
     #ifdef _WIN16  // 16-bit Windows code
     ...
     #else          // 32-bit Windows code
@@ -70,7 +70,7 @@ ms.localizationpriority: medium
 
     Consider the following:
 
-    ```
+    ```cpp
     ULONG x;
     LONG y;
     LONG *pVar1;
@@ -85,7 +85,7 @@ ms.localizationpriority: medium
 
     The following assertion is not true on 64-bit systems:
 
-    ```
+    ```cpp
     ~((UINT64)(PAGE_SIZE-1)) == (UINT64)~(PAGE_SIZE-1)
     PAGE_SIZE = 0x1000UL  // Unsigned long - 32 bits
     PAGE_SIZE - 1 = 0x00000fff
@@ -93,21 +93,21 @@ ms.localizationpriority: medium
 
     LHS expression:
 
-    ```
+    ```cpp
     // Unsigned expansion(UINT64)(PAGE_SIZE -1 ) = 0x0000000000000fff
     ~((UINT64)(PAGE_SIZE -1 )) = 0xfffffffffffff000
     ```
 
     RHS expression:
 
-    ```
+    ```cpp
     ~(PAGE_SIZE-1) = 0xfffff000
     (UINT64)(~(PAGE_SIZE - 1)) = 0x00000000fffff000
     ```
 
     Hence:
 
-    ```
+    ```cpp
     ~((UINT64)(PAGE_SIZE-1)) != (UINT64)(~(PAGE_SIZE-1))
     ```
 
@@ -115,14 +115,14 @@ ms.localizationpriority: medium
 
     Consider the following:
 
-    ```
+    ```cpp
     UINT_PTR a; ULONG b;
     a = a & ~(b - 1); 
     ```
 
     The problem is that ~(b−1) produces 0x0000 0000 *xxxx xxxx* and not 0xFFFF FFFF *xxxx xxxx*. The compiler will not detect this. To fix this, change the code as follows:
 
-    ```
+    ```cpp
     a = a & ~((UINT_PTR)b - 1);
     ```
 
@@ -130,7 +130,7 @@ ms.localizationpriority: medium
 
     Consider the following:
 
-    ```
+    ```cpp
     len = ptr2 - ptr1 
     /* len could be greater than 2**32 */
     ```
@@ -153,7 +153,7 @@ ms.localizationpriority: medium
 
     For example:
 
-    ```
+    ```cpp
     DWORD index = 0;
     CHAR *p;
 
@@ -162,13 +162,13 @@ ms.localizationpriority: medium
 
     On 32-bit machines:
 
-    ```
+    ```cpp
     p[index-1] == p[0xffffffff] == p[-1] 
     ```
 
     On 64-bit machines:
 
-    ```
+    ```cpp
     p[index-1] == p[0x00000000ffffffff] != p[-1]
     ```
 
@@ -186,7 +186,7 @@ ms.localizationpriority: medium
 
     Do not do this:
 
-    ```
+    ```cpp
     void GetBufferAddress(OUT PULONG *ptr);
     {
       *ptr=0x1000100010001000;
@@ -207,13 +207,13 @@ ms.localizationpriority: medium
 
     If you must cast a pointer to test some bits, set or clear bits, or otherwise manipulate its contents, use the **UINT**\_**PTR** or **INT**\_**PTR** type. These types are integral types that scale to the size of a pointer for both 32-bit and 64-bit Windows (for example, **ULONG** for 32-bit Windows and **\_int64** for 64-bit Windows). For example, assume you are porting the following code:
 
-    ```
+    ```cpp
     ImageBase = (PVOID)((ULONG)ImageBase | 1);
     ```
 
     As a part of the porting process, you would change the code as follows:
 
-    ```
+    ```cpp
     ImageBase = (PVOID)((ULONG_PTR)ImageBase | 1);
     ```
 
@@ -245,7 +245,7 @@ ms.localizationpriority: medium
 
     For example:
 
-    ```
+    ```cpp
     struct xx {
        DWORD NumberOfPointers;
        PVOID Pointers[1];
@@ -255,14 +255,14 @@ ms.localizationpriority: medium
 
     The following allocation is incorrect in 64-bit Windows because the compiler will pad the structure with an additional 4 bytes to make the 8-byte alignment requirement:
 
-    ```
+    ```cpp
     malloc(sizeof(DWORD)+100*sizeof(PVOID)); 
      
     ```
 
     Here is how to do it correctly:
 
-    ```
+    ```cpp
     malloc(FIELD_OFFSET(struct xx, Pointers) +100*sizeof(PVOID));
     ```
 
@@ -270,20 +270,20 @@ ms.localizationpriority: medium
 
     The **TYPE\_ALIGNMENT** macro returns the alignment requirement for a given data type on the current platform. For example:
 
-    ```
+    ```cpp
     TYPE_ALIGNMENT(KFLOATING_SAVE) == 4 on x86, 8 on Itanium
     TYPE_ALIGNMENT(UCHAR) == 1 everywhere
     ```
 
     As an example, code such as this:
 
-    ```
+    ```cpp
     ProbeForRead(UserBuffer, UserBufferLength, sizeof(ULONG));
     ```
 
     becomes more portable when changed to:
 
-    ```
+    ```cpp
     ProbeForRead(UserBuffer, UserBufferLength, TYPE_ALIGNMENT(ULONG));
     ```
 
@@ -295,7 +295,7 @@ ms.localizationpriority: medium
 
     On 64-bit Windows, if a data structure is misaligned, routines that manipulate the structure, such as [**RtlCopyMemory**](https://msdn.microsoft.com/library/windows/hardware/ff561808) and **memcpy**, will not fault. Instead, they will raise an exception. For example:
 
-    ```
+    ```cpp
     #pragma pack (1)  /* also set by /Zp switch */
     struct Buffer {
         ULONG size;
@@ -311,7 +311,7 @@ ms.localizationpriority: medium
 
     You could use the **UNALIGNED** macro to fix this:
 
-    ```
+    ```cpp
     void SetPointer(void *p) {
         struct Buffer s;
         *(UNALIGNED void *)&s.ptr = p;

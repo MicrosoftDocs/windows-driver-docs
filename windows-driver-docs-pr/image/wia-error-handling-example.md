@@ -20,7 +20,7 @@ For an example of a driver that sends device status messages, please see the Ext
 
 The following code snippet shows how a simple error handing extension can be implemented. This error handling extension only handles the WIA\_ERROR\_COVER\_OPEN device status error and shows a modal dialog box. Note that some of the code has been omitted to simplify this example.
 
-```
+```cpp
 STDMETHODIMP
 
 CErrHandler::ReportStatus(

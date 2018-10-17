@@ -66,7 +66,7 @@ To design and implement the custom property page provider, perform the following
 
     The following INF file fragment shows how to modify the INF file to register your custom property page.
 
-    ```
+    ```inf
     [SysFx.AddReg]
     ...
     HKR,"FX\\0",%PKEY_SYSFX_UiClsid%,,%SYSFX_UI_CLSID%
@@ -78,7 +78,7 @@ To design and implement the custom property page provider, perform the following
 
     And as a result of the preceding INF file instructions, the installation process modifies the appropriate registry key as follows.
 
-    ```
+    ```text
     HKLM
      SOFTWARE
       Microsoft
@@ -100,7 +100,7 @@ To design and implement the custom property page provider, perform the following
 
     The sample INF file sections, taken from the SYSVAD tabletaudiosample.inf file, shows how to do this. The \[SWAPAPO.AddReg\] section is in the global AddReg section. The \[SWAPAPO.I.Association0.AddReg\] is part of the AddReg section for the specific KSCATEGORY\_AUDIO interfaces.
 
-    ```
+    ```inf
     [SWAPAPO.AddReg]
     …
 
@@ -129,7 +129,7 @@ If you are using the Windows-provided effects directly or wrapping them, complet
 
 2.  Follow step 4 above, to register the CLSID with COM. In addition, you will need to invoke the supplied wdmaudio.inf via *Include* and *Needs* statements in your INF file as shown below.
 
-    ```
+    ```cpp
     [YourGlobalSection]
     Include=wdmaudio.inf
     Needs=mssysfx.CopyFilesAndRegister

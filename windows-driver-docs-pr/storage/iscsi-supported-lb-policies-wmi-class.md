@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The ISCSI\_Supported\_LB\_Policies WMI class contains information about the supported load balance policy for a multi connection iSCSI session. This class is defined as follows in *Mgmt.mof.*
 
-```
+```cpp
 class ISCSI_Supported_LB_Policies {
 
     [WmiDataId(1),

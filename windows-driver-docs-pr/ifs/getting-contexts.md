@@ -23,7 +23,7 @@ Once a minifilter driver has set a context for an object, it can get the context
 
 In the following code example, taken from the SwapBuffers sample minifilter driver, the minifilter driver calls [**FltGetVolumeContext**](https://msdn.microsoft.com/library/windows/hardware/ff543189) to get a volume context:
 
-```
+```cpp
 status = FltGetVolumeContext(
  FltObjects->Filter,    //Filter
  FltObjects->Volume,    //Volume

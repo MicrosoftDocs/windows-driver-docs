@@ -63,7 +63,7 @@ The following table list the operations that drivers can perform by calling the 
 
 The following code example illustrates how to set *ValueName* for **\\Registry\\Machine\\System\\***KeyName* to a ULONG value of 0xFF. Compare this example with the corresponding one in the [Registry Key Object Routines](registry-key-object-routines.md) section.
 
-```
+```cpp
 NTSTATUS status;
 ULONG data = 0xFF;
 

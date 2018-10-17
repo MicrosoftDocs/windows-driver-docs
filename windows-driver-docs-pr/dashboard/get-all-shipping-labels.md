@@ -44,7 +44,7 @@ Do not provide a request body for this method.
 
 The following example demonstrates how to retrieve information about all products that are registered to your account.
 
-```
+```cpp
 GET https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/ HTTP/1.1
 Authorization: Bearer <your access token>
 ```
@@ -180,3 +180,7 @@ This resource has the following values
 ## Error codes
 
 For info, about error codes, see [Error codes](get-product-data.md#error-codes).
+
+## See also
+
+- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

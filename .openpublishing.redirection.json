@@ -5128,6 +5128,1171 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "windows-driver-docs-pr/image/active-directory.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/architecture.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/cancelpostscanjob.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/cancelpostscanjobrequest-example.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/cancelpostscanjobrequest-jobtoken.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/cancelpostscanjobrequest.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/cancelpostscanjobresponse-example.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/cancelpostscanjobresponse.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/certificate-management.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/common-distributed-scan-processing-web-service-operation-error-codes.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/createpostscanjob.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/createpostscanjobrequest-example.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/createpostscanjobrequest-postscaninstructions.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/createpostscanjobrequest-psp-identifier.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/createpostscanjobrequest-useridentifier.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/createpostscanjobrequest.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/createpostscanjobresponse-example.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/createpostscanjobresponse-jobtoken.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/createpostscanjobresponse.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/distributed-scan-device-web-service--ws-dsd-schema.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/distributed-scan-device-web-service-protocol-summary.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/distributed-scan-management--dsm--schemas.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/distributed-scan-management--dsm-.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/distributed-scan-processing-web-service--ws-dsp--schema.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/distributed-scan-processing-web-service-operation-error-reporting.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/distributed-scan-processing-web-service-protocol-summary.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/dsm-device-requirements.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/dsm-model-events.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/dsm-model-localization.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/dsm-model-operations.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/dsm-model-scenarios.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/dsm-model-security.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/dsm-operation-phases-.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/dsm-scan-job-sequence-diagram.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/dsm-schemas.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/dsm-terminology.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/email-filter-instructions-schema.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/emailconfig-sendtoaddresses-canaddaddresses.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/emailconfig-sendtoaddresses-emailaddress.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/emailconfig-sendtoaddresses.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/emailconfig-sendtoscanuser.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/emailconfig.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/endpostscanjob.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/endpostscanjobrequest-example.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/endpostscanjobrequest-jobtoken.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/endpostscanjobrequest.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/endpostscanjobresponse-example.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/endpostscanjobresponse.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/fileshare-filter-instructions-schema.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/fileshareconfig-fileshares-shareunc.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/fileshareconfig-fileshares.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/fileshareconfig.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getactivejobs.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getactivejobsrequest2.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getactivejobsresponse-activejobs-jobsummary.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getactivejobsresponse-activejobs.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getactivejobsresponse2.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getjobelements.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getjobelementsrequest-jobid.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getjobelementsrequest-requestedelements-name.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getjobelementsrequest-requestedelements.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getjobelementsrequest2.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getjobelementsresponse-jobelements-elementdata.mdgetjobelementsresponse-jobelements-elementdata.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getjobelementsresponse-jobelements.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getjobelementsresponse3.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getjobhistory.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getjobhistoryrequest2.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getjobhistoryresponse-jobhistory-jobsummary.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getjobhistoryresponse-jobhistory.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getjobhistoryresponse4.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getpostscanjobelementrequest.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getpostscanjobelementresponse.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getpostscanjobelements.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getpostscanjobelementsrequest-example.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getpostscanjobelementsrequest-jobtoken.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getpostscanjobelementsrequest-requestedelements.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getpostscanjobelementsresponse-example.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getpostscanjobelementsresponse-jobelements-elementdata-name.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getpostscanjobelementsresponse-jobelements-elementdata-valid.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getpostscanjobelementsresponse-jobelements-elementdata.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getpostscanjobelementsresponse-jobelements.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getscannerelements.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getscannerelementsrequest-requestedelements-name.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getscannerelementsrequest-requestedelements.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getscannerelementsrequest4.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getscannerelementsresponse-scannerelements-elementdata.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getscannerelementsresponse-scannerelements.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/getscannerelementsresponse4.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/how-to-locate-an-active-directory-domain-controller.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/jobendstateevent-example.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/jobendstateevent-jobendstate-jobcompletedstate.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/jobendstateevent-jobendstate-jobcompletedstatereasons.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/jobendstateevent-jobendstate-jobcompletedtime.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/jobendstateevent-jobendstate-jobid.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/jobendstateevent-jobendstate-jobname.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/jobendstateevent-jobendstate-joboriginatingusername.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/jobendstateevent-jobendstate-scanscompleted.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/jobendstateevent-jobendstate.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/jobendstateevent11.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/jobstatusevent-jobstatus-jobcompletedtime.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/jobstatusevent-jobstatus-jobcreatedtime.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/jobstatusevent-jobstatus-jobid.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/jobstatusevent-jobstatus-jobstate.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/jobstatusevent-jobstatus-jobstatereasons.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/jobstatusevent-jobstatus-jobstatusevent-example.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/jobstatusevent-jobstatus-scanscompleted.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/jobstatusevent-jobstatus.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/jobstatusevent6.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/ldap-and-active-directory-queries.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/ldap-bind.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/ldap-connect.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/ldap-search-for-psps.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/overview.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/post-scan-job-execution.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/post-scan-processing-filter-schemas.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscaninstructions-continueonerror.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscaninstructions-documentrootname.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscaninstructions-filterstoprocess-filter-dialect.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscaninstructions-filterstoprocess-filter-instructions.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscaninstructions-filterstoprocess-filter.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscaninstructions-filterstoprocess.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobendstateevent-postscanjobendstate-filtercompletedstatuses-f.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobendstateevent-postscanjobendstate-filtercompletedstatuses-f2.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobendstateevent-postscanjobendstate-filtercompletedstatuses-f3.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobendstateevent-postscanjobendstate-filtercompletedstatuses-f4.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobendstateevent-postscanjobendstate-filtercompletedstatuses-f5.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobendstateevent-postscanjobendstate-filtercompletedstatuses.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobendstateevent-postscanjobendstate-imagesreceived.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobendstateevent-postscanjobendstate-jobcompletedstate.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobendstateevent-postscanjobendstate-jobcompletedstatereasons-.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobendstateevent-postscanjobendstate-jobcompletedstatereasons.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobendstateevent-postscanjobendstate-jobcompletedtime.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobendstateevent-postscanjobendstate-joboriginatingusername.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobendstateevent-postscanjobendstate-jobtoken.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobendstateevent-postscanjobendstate-psp-displayname.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobendstateevent-postscanjobendstate-psp-identifier.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobendstateevent-postscanjobendstate.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobendstateevent.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobstatusevent-jobstatus-filterstatuses-filterstatus-dialect.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobstatusevent-jobstatus-filterstatuses-filterstatus-filtersta.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobstatusevent-jobstatus-filterstatuses-filterstatus-filtersta2.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobstatusevent-jobstatus-filterstatuses-filterstatus-filtersta3.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobstatusevent-jobstatus-filterstatuses-filterstatus.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobstatusevent-jobstatus-filterstatuses.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobstatusevent-jobstatus-imagesreceived.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobstatusevent-jobstatus-jobcompletedtime.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobstatusevent-jobstatus-jobcreatedtime.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobstatusevent-jobstatus-jobstate.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobstatusevent-jobstatus-jobstatereasons-jobstatereason.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobstatusevent-jobstatus-jobstatereasons.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobstatusevent-jobstatus-jobtoken.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobstatusevent-jobstatus.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanjobstatusevent.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanprocess-postscaninstructions.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanprocess-scanrepository.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanprocess-scanticket-documentparameters.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanprocess-scanticket-jobdescription.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanprocess-scanticket.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/postscanprocess.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/requestedelements-name.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scan-job-execution.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scan-job-setup.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scan-process-schema.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scan-processing-filters.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scannerelementschangeevent-elementchanges-defaultscanticket.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scannerelementschangeevent-elementchanges-scannerconfiguration.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scannerelementschangeevent-elementchanges-scannerdescription.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scannerelementschangeevent-elementchanges.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scannerelementschangeevent-example.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scannerelementschangeevent3.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scannerstatusconditionclearedevent-deviceconditoncleared-conditionclea.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scannerstatusconditionclearedevent-deviceconditoncleared-conditionid.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scannerstatusconditionclearedevent-deviceconditoncleared.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scannerstatusconditionclearedevent-example.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scannerstatusconditionclearedevent3.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scannerstatusconditionevent-devicecondition-component.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scannerstatusconditionevent-devicecondition-id.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scannerstatusconditionevent-devicecondition-name.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scannerstatusconditionevent-devicecondition-severity.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scannerstatusconditionevent-devicecondition-time.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scannerstatusconditionevent-devicecondition.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scannerstatusconditionevent-example.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scannerstatusconditionevent6.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scannerstatussummaryevent-example.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scannerstatussummaryevent-statussummary-scannerstate.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scannerstatussummaryevent-statussummary-scannerstatereasons.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scannerstatussummaryevent-statussummary.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/scannerstatussummaryevent6.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/security.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/sendimage.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/sendimagerequest-documentdescription-documentid.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/sendimagerequest-documentdescription-format.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/sendimagerequest-documentdescription.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/sendimagerequest-example.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/sendimagerequest-imagedata.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/sendimagerequest-jobtoken.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/sendimagerequest.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/sendimageresponse-example.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/sendimageresponse.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/sharepoint-filter-instructions-schema.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/sharepointconfig-savetomysite.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/sharepointconfig-savetosharepointsites-savetosharepointsiteurl.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/sharepointconfig-savetosharepointsites.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/sharepointconfig.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/strong-authentication.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/theory-of-operation.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/tutorials.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/user-interfaces.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/validatescanticket.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/validatescanticketrequest-scanticket-documentparameters.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/validatescanticketrequest-scanticket-jobdescription.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/validatescanticketrequest-scanticket.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/validatescanticketrequest4.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/validatescanticketresponse-validationinfo-imageinformation.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/validatescanticketresponse-validationinfo-validscanticket.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/validatescanticketresponse-validationinfo-validticket.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/validatescanticketresponse-validationinfo.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/validatescanticketresponse3.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/weak-authentication.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/web-services.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/ws-dsd-event-elements.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/ws-dsd-events.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/ws-dsd-operation-elements.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/ws-dsd-operations.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/ws-dsd-scenario--create-a-scan-process.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/ws-dsd-scenario--manage-a-dsm-device.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/ws-dsd-scenarios.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/ws-dsp-event-elements.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/ws-dsp-events.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/image/ws-dsp-operation-elements.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/image/ws-dsp-operations.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/image/ws-dsp-scenario--device-initiated-scan.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/image/ws-dsp-scenarios.md",
+      "redirect_URL": "/windows-hardware/drivers/image/index",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/network/mb-protocol-configuration-operations--pco-.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/network/mb-protocol-configuration-options-pco-operations",
       "redirect_document_id": true
@@ -5136,31 +6301,6 @@
       "source_path": "windows-driver-docs-pr/stream/ksproperty-cameracontrol-extended-focusmode2.md",
       "redirect_URL": "/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-focusmode",
       "redirect_document_id": true
-    },
-    {
-      "source_path": "windows-driver-docs-pr/devtest/chkinf.md",
-      "redirect_URL": "/windows-hardware/drivers/devtest/infverif",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows-driver-docs-pr/devtest/chkinf-components.md",
-      "redirect_URL": "/windows-hardware/drivers/devtest/infverif",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows-driver-docs-pr/devtest/requirements-and-limitations.md",
-      "redirect_URL": "/windows-hardware/drivers/devtest/infverif",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows-driver-docs-pr/devtest/chkinf-command-syntax.md",
-      "redirect_URL": "/windows-hardware/drivers/devtest/infverif",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows-driver-docs-pr/devtest/chkinf-results.md",
-      "redirect_URL": "/windows-hardware/drivers/devtest/infverif",
-      "redirect_document_id": false
     }
   ]
 }

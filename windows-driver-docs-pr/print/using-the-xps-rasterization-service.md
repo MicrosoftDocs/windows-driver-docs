@@ -22,7 +22,7 @@ The XPS rasterization service is implemented in the system file Xpsrasterservice
 
 To be available for use by an XPSDrv filter, the XPS rasterization service must be specified in the [filter pipeline configuration file](filter-pipeline-configuration-file.md) that describes the filters in the print filter pipeline. Specifically, the configuration file must contain a **FilterServiceProvider** element with a **dll** attribute set to the service DLL name, as shown in the following XML example:
 
-```XML
+```xml
   <FilterServiceProvider dll = "XpsRasterService.dll" />
 ```
 
@@ -40,7 +40,7 @@ When the factory object is no longer needed, the filter should release the objec
 
 The following code example shows how to obtain an **IXpsRasterizationFactory** interface instance from an **IPrintPipelinePropertyBag** interface instance:
 
-```
+```cpp
 //
 // Retrieve a reference to the XPS rasterization factory
 // from the print pipeline property bag.
@@ -74,7 +74,7 @@ HRESULT CreateRasterizationFactory(
         assert(var.vt == VT_UNKNOWN && var.punkVal != NULL);
 
         //
-        // Get the factory object&#39;s IXpsRasterizationFactory interface.
+        // Get the factory object's IXpsRasterizationFactory interface.
         //
  IUnknown *pUnknown = var.punkVal;
 

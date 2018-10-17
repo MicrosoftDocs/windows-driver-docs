@@ -25,7 +25,7 @@ Use an [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/har
 
 The following code example shows how to set the **MSISupported** entry under **Interrupt Management\\MessageSignaledInterruptProperties** for the device. Note that you must first create the **Interrupt Management** and **Interrupt Management\\MessageSignaledInterruptProperties** keys before you can set the **MSISupported** entry.
 
-```
+```cpp
 [mydevice.HW]
 AddReg = mydevice_addreg
 

@@ -12,7 +12,7 @@ An HBA miniport driver that supports the T11 committee's *Fibre Channel HBA API*
 
 The MSFC\_HbaApiVersion class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MSFC_HbaApiVersion
 {
     uint32 WmiHbaApiVersion;

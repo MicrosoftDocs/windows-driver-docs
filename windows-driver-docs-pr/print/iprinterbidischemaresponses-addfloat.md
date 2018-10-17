@@ -13,18 +13,22 @@ api_name:
 - IPrinterBidiSchemaResponses.AddFloat
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaResponses::AddFloat method
-
 
 The AddFloat method adds a new response of type BIDI\_FLOAT to the collection.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT AddFloat(
   [in] BSTR    bstrSchema,
   [in] FLOAT  fValue 
@@ -60,20 +64,11 @@ Requirements
 </tr>
 <tr class="even">
 <td><p>Version</p></td>
-<td><p>Windows 8</p></td>
+<td><p>Windows 8 and later</p></td>
 </tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**IPrinterBidiSchemaResponses**](iprinterbidischemaresponses.md)
-
- 
-
- 
-
-
-
-

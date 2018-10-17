@@ -45,7 +45,7 @@ The INF section that *Wdf-install-section* identifies must contain the following
 
 For example, the following INF *DDInstall***.Wdf** section specifies **Echo\_wdfsect** as the *Wdf-install-section* name.
 
-```
+```cpp
 [ECHO_Device.NT.Wdf]
 KmdfService = Echo, Echo_wdfsect
 [Echo_wdfsect]
@@ -64,7 +64,7 @@ You should attempt to match the section layout that the *Echo.inf* sample uses. 
 
 Before you have modified *echo.inf*, the sections that install the co-installer are as follows:
 
-```
+```cpp
 =============== Top of Echo.inf ====================
 ....
 ....
@@ -96,7 +96,7 @@ KmdfLibraryVersion = 1.0
 
 After you have changed all **ECHO\_Device** substrings, your *MyDevice.inf* file should appear as follows:
 
-```
+```cpp
 =============== Top of MyDevice.inf ===============
 ....
 ....

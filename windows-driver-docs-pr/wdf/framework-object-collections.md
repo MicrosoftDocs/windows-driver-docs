@@ -70,7 +70,7 @@ Framework-based drivers can perform the following operations on object collectio
 
 Sometimes a driver must examine all of the objects within a collection. The following code example demonstrates this situation:
 
-```
+```cpp
 WdfWaitLockAcquire(CollectionLockHandle, NULL);
 ItemCount = WdfCollectionGetCount(CollectionHandle);
 for (i=0; i<ItemCount; i++) {

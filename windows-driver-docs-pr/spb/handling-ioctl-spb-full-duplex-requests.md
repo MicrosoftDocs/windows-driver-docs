@@ -54,7 +54,7 @@ Typically, the SPB controller driver validates the parameter values in an **IOCT
 -   The first entry in the transfer list is for a write buffer, and the second is for a read buffer.
 -   The **DelayInUs** value for both entries is zero.
 
-```
+```cpp
 //
 // Validate the transfer count.
 //

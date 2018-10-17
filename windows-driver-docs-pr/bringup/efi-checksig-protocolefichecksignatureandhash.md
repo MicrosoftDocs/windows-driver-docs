@@ -19,7 +19,7 @@ This function verifies the signature on the catalog file in the FFU against the 
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef EFI_STATUS
 (EFIAPI * EFI_CHECK_SIG_AND_HASH) (
   IN EFI_CHECKSIG_PROTOCOL *This,

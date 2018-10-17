@@ -21,7 +21,7 @@ The **legacyMode** XML element is an empty element that sets the **legacyMode** 
 
 **Element Tag**
 
-```
+```cpp
 <legacyMode>
 ```
 
@@ -64,7 +64,7 @@ By default, DPInst installs only signed [driver packages](https://msdn.microsoft
 
 The following code example demonstrates a **legacyMode** element.
 
-```
+```cpp
 <dpinst>
   ...
   <legacyMode/>

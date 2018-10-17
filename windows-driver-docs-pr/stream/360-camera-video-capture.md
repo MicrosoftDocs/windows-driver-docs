@@ -121,7 +121,7 @@ If the application implements its own custom spherical projection component, the
 
 ## .INF file example to publish a DMFT
 
-```
+```INF
 ;=================================================================================
 ; Microsoft Sample Extension INF for USB Camera SampleDeviceMFT installation
 ; Copyright (C) Microsoft Corporation. All rights reserved.

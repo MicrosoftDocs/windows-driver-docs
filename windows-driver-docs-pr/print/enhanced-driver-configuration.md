@@ -58,10 +58,10 @@ Extension for Reading the PPD File
 
 The following XML fragment demonstrates the correct syntax for using the drvPrinterEvent attribute:
 
-```XML
-<?xml vesrion=&#39;1.0&#39;?>
+```xml
+<?xml version='1.0'?>
 ...
-  <Property name=&#39;DeviceInfo&#39;>
+  <Property name='DeviceInfo'>
      <Const name="Category" type="BIDI_STRING" value="DeviceCategory"/> 
      <Value name="QueueProperty" type="BIDI_STRING" accessType="Get" queryKey="Configuration" refreshInterval="60" drvPrinterEvent="true"/> 
   </Property> 
@@ -69,6 +69,7 @@ The following XML fragment demonstrates the correct syntax for using the drvPrin
 ```
 
 ## Related topics
+
 [V4 Printer Driver Connectivity](v4-printer-driver-connectivity.md)  
 
 

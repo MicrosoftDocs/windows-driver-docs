@@ -44,7 +44,7 @@ If you do set **Minimum Required**, the following requirements apply:
 
 Prior to every use of an API, structure, or member that may or may not be present, you must call one of the following macros, which are defined in WdfFuncEnum.h:
 
-```
+```cpp
 BOOLEAN
 WDF_IS_FUNCTION_AVAILABLE (
     FunctionName
@@ -64,7 +64,7 @@ WDF_IS_FIELD_AVAILABLE (
 
 Consider the following example.  When WDF v29 is released, it adds a new API: **WdfSomeNewFeature**. If you set **Target Version** to 29 and **Minimum Required** to 25, the resulting driver loads on any framework version from 25 through 29 (and beyond, as long as major version doesn't change), calls version 25 APIs like before, and makes the following check before each call of any v29 API:
 
-```
+```cpp
 if (WDF_IS_FUNCTION_AVAILABLE(WdfSomeNewFeature)) {
     WdfSomeNewFeature();
 }

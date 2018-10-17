@@ -27,7 +27,7 @@ The KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOMODE property allows a submode to 
 
 The following submodes are defined as follows.
 
-``` syntax
+```cpp
 #define KSCAMERA_EXTENDEDPROP_PHOTOMODE_SEQUENCE_SUB_NONE       0x00000000
 #define KSCAMERA_EXTENDEDPROP_PHOTOMODE_SEQUENCE_SUB_VARIABLE   0x00000001
 ```
@@ -38,7 +38,7 @@ KSCAMERA\_EXTENDEDPROP\_PHOTOMODE\_SEQUENCE\_SUB\_VARIABLE is used to indicate a
 
 The following is a definition of the KSCAMERA\_EXTENDEDPROP\_PHOTOMODE structure defined in ksmedia.h
 
-``` syntax
+```cpp
 typedef struct tagKSCAMERA_EXTENDEDPROP_PHOTOMODE {  
     ULONG       RequestedHistoryFrames;  
     ULONG       MaxHistoryFrames;  

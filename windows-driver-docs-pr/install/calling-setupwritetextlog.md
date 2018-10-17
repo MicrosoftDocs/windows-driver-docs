@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 As described in [Format of a Text Log Section Body](format-of-a-text-log-section-body.md), the format of a log entry consists of the following fields:
 
-```
+```cpp
 entry_prefix time_stamp event_category indentation formatted_message
 ```
 

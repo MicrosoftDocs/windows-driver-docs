@@ -30,7 +30,7 @@ This section applies only to Windows 7 and later, and Windows Server 2008 R2 and
 
 The user-mode display driver can associate a crypto session with a DirectX Video Accelerator (VA) 2.0 decode device to make the DirectX VA 2.0 decode device use the session key of the crypto session. If the Direct3D runtime specifies a valid decode GUID in the **DecodeProfile** member of the [**D3DDDIARG\_CREATECRYPTOSESSION**](https://msdn.microsoft.com/library/windows/hardware/ff542923) structure when the runtime calls the driver's [**CreateCryptoSession**](https://msdn.microsoft.com/library/windows/hardware/ff540609) function to create the crypto session, the runtime can subsequently call the driver's [**ConfigureAuthenticatedChannel**](https://msdn.microsoft.com/library/windows/hardware/ff539572) function with D3DAUTHETICATEDCONFIGURE\_CRYPTOSESSION set to configure the crypto session with the DirectX VA 2.0 decode device. Before configuring the crypto session with the DirectX VA 2.0 decode device, the runtime must call the driver's [**DecodeExtensionExecute**](https://msdn.microsoft.com/library/windows/hardware/ff551811) function to retrieve a driver handle for the DirectX VA 2.0 decode device. The runtime sets the members of the [**D3DDDIARG\_DECODEEXTENSIONEXECUTE**](https://msdn.microsoft.com/library/windows/hardware/ff543009) structure to the following values to retrieve the driver handle for the DirectX VA 2.0 decode device:
 
-```
+```cpp
 #define DXVA2_DECODE_GET_DRIVER_HANDLE    0x725
 D3DDDIARG_DECODEEXTENSIONEXECUTE.Function = DXVA2_DECODE_GET_DRIVER_HANDLE;
 D3DDDIARG_DECODEEXTENSIONEXECUTE.pPrivateInput->pData = NULL;
@@ -53,7 +53,7 @@ The initialization vector for each encrypted buffer appears in the **pCipherCoun
 
 If the runtime must partially encrypt the buffers, it calls the driver's [**DecodeExtensionExecute**](https://msdn.microsoft.com/library/windows/hardware/ff551811) function and sets the members of the [**D3DDDIARG\_DECODEEXTENSIONEXECUTE**](https://msdn.microsoft.com/library/windows/hardware/ff543009) structure to the following values to specify which blocks the driver should encrypt:
 
-```
+```cpp
 #define DXVA2_DECODE_SPECIFY_ENCRYPTED_BLOCKS    0x724
 D3DDDIARG_DECODEEXTENSIONEXECUTE.Function = DXVA2_DECODE_SPECIFY_ENCRYPTED_BLOCKS;
 D3DDDIARG_DECODEEXTENSIONEXECUTE.pPrivateInput->pData = D3DENCRYPTED_BLOCK_INFO*;

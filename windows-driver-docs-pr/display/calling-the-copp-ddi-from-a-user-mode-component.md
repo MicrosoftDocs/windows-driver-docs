@@ -33,7 +33,7 @@ The following steps explain how the VMR initiates calls to the COPP DDI:
 
 2.  If the DirectX VA COPP device GUID is present, then the VMR initiates a call to the [*DdMoCompCreate*](https://msdn.microsoft.com/library/windows/hardware/ff549656) callback function to initialize a COPP device on the current video session. The **CreateMoComp** member of DD\_MOTIONCOMPCALLBACKS points to the callback function. In the *DdMoCompCreate* call, a pointer to the COPP device GUID is specified in the **lpGuid** member of the [**DD\_CREATEMOCOMPDATA**](https://msdn.microsoft.com/library/windows/hardware/ff550529) structure. The COPP device GUID is defined as follows:
 
-    ```
+    ```cpp
     DEFINE_GUID(DXVA_COPPDevice, 0xd2457add,0x8999,0x45ed,0x8a,0x8a,0xd1,0xaa,0x04,0x7b,0xa4,0xd5);
     ```
 

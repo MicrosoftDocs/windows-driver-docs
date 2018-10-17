@@ -71,7 +71,7 @@ When specifying a **PcCardConfig** entry for a multifunction device, the format 
 
 The following example shows an INF file for installing a multifunction device that uses mf.sys as its bus driver and has incomplete configuration registers.
 
-```
+```cpp
 ; MFSupra.inf
 ; This file installs the Supra Dual 56K modem
 ; Copyright 1999 Microsoft Corporation

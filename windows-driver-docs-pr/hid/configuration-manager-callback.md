@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-```
+```cpp
 CONFIGRET CM_HANDLER CfgRoutine( CONFIGFUNC cfFuncName, 
     SUBCONFIGFUNC scfSubFuncName, DEVNODE dnToDevNode, 
     ULONG dwRefData, ULONG ulFlags );

@@ -60,13 +60,13 @@ The following table lists the modes for values of the **InitSafeBootMode** varia
 
 To use the **InitSafeBootMode** variable, you must declare it in your driver, as the following code example shows.
 
-```
+```cpp
 extern PULONG InitSafeBootMode;
 ```
 
 After you declare **InitSafeBootMode**, you can use the following code example to determine whether the operating system is running in Safe Mode.
 
-```
+```cpp
 if (*InitSafeBootMode > 0) {
     // The operating system is in Safe Mode.
     // Take appropriate action.

@@ -17,7 +17,7 @@ All in-box display driver INF files in Windows Server 2008, Windows Vista SP1, a
 
 In Windows 7, Windows Vista SP1, Windows Server 2008, and Windows Server 2008 R2, the **Manufacturer** directive must be followed by a string in the following form:
 
-```
+```cpp
 NT<platform>...1 
 ```
 
@@ -25,7 +25,7 @@ In this string, platform is x86 or amd64.
 
 The following example shows the **Manufacturer** directive, and the section that follows it for drivers for x86 systems:
 
-```
+```cpp
 [Manufacturer]
 %ATI% = ATI.Mfg,NTx86...1
 
@@ -34,7 +34,7 @@ The following example shows the **Manufacturer** directive, and the section that
 
 The following example shows the **Manufacturer** directive, and the section that follows it for drivers for x64 systems:
 
-```
+```cpp
 [Manufacturer]
 %ATI% = ATI.Mfg,NTamd64...1
 

@@ -24,7 +24,7 @@ A user-mode application can get information about all of the [error sources](har
 
 The following code example shows how to get the error source information for all of the error sources in the system.
 
-```
+```cpp
 IWbemServices *pIWbemServices;
 BSTR ClassName;
 BSTR MethodName;

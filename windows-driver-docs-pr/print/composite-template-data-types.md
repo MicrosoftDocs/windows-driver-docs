@@ -50,7 +50,7 @@ The following directives are used to define the COMPOSITE data type:
 
 Consider he following template.
 
-```
+```cpp
 *Template:  QUALNAME_EX
 {
     *Type:  DATATYPE
@@ -67,7 +67,7 @@ The preceding template defines a fixed-size, COMPOSITE of two SYMBOL data types 
 
 For example, consider a SYMBOL template that is defined as follows.
 
-```
+```cpp
 *Template:  SYMBOL
 {
     *Type:  DATATYPE
@@ -79,19 +79,19 @@ For example, consider a SYMBOL template that is defined as follows.
 
 And consider the following GDL entry.
 
-```
+```cpp
 *rcNameID:     ( RESDLL.stdname.467 )  
 ```
 
 Or consider the following GDL entry that does not have the optional parentheses.
 
-```
+```cpp
 *rcNameID:     RESDLL.stdname.467 
 ```
 
 Assume that the GDL entry is interpreted by using the following RC\_NAME\_ID template.
 
-```
+```cpp
 *Template:  RC_NAME_ID
 {
     *Name:  "*rcNameID"
@@ -103,7 +103,7 @@ Assume that the GDL entry is interpreted by using the following RC\_NAME\_ID tem
 
 The resulting XML output will be as follows.
 
-```
+```cpp
     <GDL_ATTRIBUTE Name="*rcNameID"  >
         <feature  xsi:type="GDLW_string">RESDLL</feature>
         <option  xsi:type="GDLW_string">stdname</option>
@@ -115,7 +115,7 @@ The following example shows nested compound data types by using an INTERVAL data
 
 ### Month Template
 
-```
+```cpp
 *Template:  MONTHS
 {
     *Type:  DATATYPE
@@ -127,7 +127,7 @@ The following example shows nested compound data types by using an INTERVAL data
 
 ### Day Template
 
-```
+```cpp
 *Template:  DAY
 {
 *Inherits: INTEGER
@@ -138,7 +138,7 @@ The following example shows nested compound data types by using an INTERVAL data
 
 ### Year Template
 
-```
+```cpp
 *Template:  YEAR
 {
 *Inherits: INTEGER
@@ -149,7 +149,7 @@ The following example shows nested compound data types by using an INTERVAL data
 
 ### Date Template
 
-```
+```cpp
 *Template:  DATE
 {
     *Type:  DATATYPE
@@ -162,7 +162,7 @@ The following example shows nested compound data types by using an INTERVAL data
 
 ### Interval Template
 
-```
+```cpp
 *Template:  INTERVAL
 {
     *Type:  DATATYPE
@@ -177,7 +177,7 @@ The following example shows nested compound data types by using an INTERVAL data
 
 ### Vacation Template
 
-```
+```cpp
 *Template:  VACATION
 {
     *Name:  "*VacationDates"
@@ -188,13 +188,13 @@ The following example shows nested compound data types by using an INTERVAL data
 
 Consider the following GDL entry.
 
-```
+```cpp
 *VacationDates:  Dec-20-2001 to Jan-3-2002
 ```
 
 If this GDL entry is interpreted by using the VACATION template, the resulting XML output will be as follows.
 
-```
+```cpp
     <GDL_ATTRIBUTE Name="*VacationDates"  >
         <start_date >
             <month  xsi:type="GDLW_months">Dec</month>

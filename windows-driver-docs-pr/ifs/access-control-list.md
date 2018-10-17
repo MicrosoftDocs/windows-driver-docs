@@ -47,7 +47,7 @@ A driver constructing an ACL would follow a few key steps:
 
 The following code examples demonstrate how to construct an ACL:
 
-```
+```cpp
     dacl = ExAllocatePool(PagedPool, PAGE_SIZE);
     if (!dacl) {
         return;
@@ -63,7 +63,7 @@ The previous code fragment creates an empty ACL. The code sample allocates a sig
 
 At this point, the ACL is empty because it has no ACE entries. An empty ACL denies access to anyone trying to access the object because there are no entries that grant such access. The following code fragment adds an ACE to this ACL:
 
-```
+```cpp
     status = RtlAddAccessAllowedAce(dacl, ACL_REVISION,  FILE_ALL_ACCESS, SeExports->SeWorldSid);
     if (!NT_SUCCESS(status)) {
         ExFreePool(dacl);

@@ -17,7 +17,7 @@ There are likely to be scenarios where a complete XML DataSource and Table based
 
 The data for the light weight data-driven test is expressed as a set of metadata (at the test, class or module level). For each of the values in this set, the test methods in concern, along with the associated setup and teardown methods will be executed for each value in the set. Let's take a look at how to author this in native code:
 
-```
+```cpp
 1  #include "WexString.h"
 2  #include "WexTestClass.h"
 3
@@ -41,7 +41,7 @@ Notice the parameter values for TEST\_METHOD\_PROPERTY in line 14. The test meta
 
 Also notice that the metadata name starts with a "Data:". This implies that the metadata set is really specifying variations for the data-driven test parameters and would be available to the actual test method much like data parameters from a Table based data-driven test like so:
 
-```
+```cpp
 11     ...
 12
 13     void SimpleDataDrivenExample::SetsOfDataTest()
@@ -57,7 +57,7 @@ Also notice that the metadata name starts with a "Data:". This implies that the 
 
 While working with managed code, the specification and retrieval of data set is much like the native example. Let's take a look:
 
-```
+```cpp
 1  namespace WEX.Examples
 2  {
 3      using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -130,7 +130,7 @@ Execution of tests containing sets of data is quite intuitive. Let's take a look
 
 Notice lines 7, 12, and 17 in the example above. A metadata set index gets appended to each invocation of the test method with the value in the data set. This index is of the form:
 
-```
+```cpp
 <namespace qualified test method name>#metadataSet<metadataIndex>
 ```
 

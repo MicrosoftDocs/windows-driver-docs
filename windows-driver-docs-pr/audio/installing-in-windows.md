@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 In the following example of an INF device-driver-installation section, the two directives add the system-driver information that installs the core system components for an audio adapter in Windows:
 
-```
+```inf
   [XYZ-Audio-Device.Registration.NTX86]
   Include=ks.inf, wdmaudio.inf
   Needs=KS.Registration, WDMAUDIO.Registration

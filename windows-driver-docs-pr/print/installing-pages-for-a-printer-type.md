@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 If the standard TCP/IP port monitor is used with your printer, you can install a printer details page that is specific to the printer type. To do so, include the page's ASP file, along with all subordinate files (such as .gif files or ASP files for linked pages), in the [printer INF file](printer-inf-files.md) for the printer type. Following is a sample section of a printer INF file:
 
-```
+```cpp
 [Manufacturer]
 "ACME"
  

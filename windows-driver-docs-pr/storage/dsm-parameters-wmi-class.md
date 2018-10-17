@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 An MPIO driver users the DSM\_PARAMETERS WMI class to identify a DSM and all its associated timer values.
 
-```
+```cpp
 class DSM_PARAMETERS
 {
     //

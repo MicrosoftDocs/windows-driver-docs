@@ -30,7 +30,7 @@ In the call to **FltDelete***Xxx***Context**, the old context is returned in the
 
 The following code example shows how to delete a stream context:
 
-```
+```cpp
 status = FltDeleteStreamContext(
  FltObjects->Instance,      //Instance
  FltObjects->FileObject,    //FileObject

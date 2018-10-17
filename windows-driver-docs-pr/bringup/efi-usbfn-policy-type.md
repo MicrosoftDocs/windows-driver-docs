@@ -19,7 +19,7 @@ The **EFI\_USBFN\_POLICY\_TYPE** enumeration contains values used to indicate th
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef enum _EFI_USBFN_POLICY_TYPE{
   EfiUsbPolicyUndefined = 0, 
   EfiUsbPolicyMaxTransactionSize, 

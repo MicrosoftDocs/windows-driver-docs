@@ -21,7 +21,7 @@ WIA supports video and video cameras. A video camera that is going to work with 
 
 Only a few modifications to the INF file of a DirectShow driver are necessary for WIA to recognize it as a supported camera. The necessary changes are:
 
-```
+```INF
 [Device]
 Include= sti.inf
 Needs= STI.WIAVideo.Registration

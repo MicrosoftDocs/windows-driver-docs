@@ -40,7 +40,7 @@ The 64-bit compiler does not use the MMX/x87 registers for floating point operat
 
 The following example shows how a WDM driver should wrap its FPU access:
 
-```
+```cpp
 __declspec(noinline)
 VOID
 DoFloatingPointCalculation(

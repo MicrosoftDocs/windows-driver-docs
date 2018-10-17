@@ -62,7 +62,7 @@ Examples
 
 The following code example increments an object's reference count and assigns a tag value to the reference.
 
-```
+```cpp
 WdfObjectReferenceWithTag(
                           object,
                           pTag

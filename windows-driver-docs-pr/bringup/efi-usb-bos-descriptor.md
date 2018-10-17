@@ -19,7 +19,7 @@ The **EFI\_USB\_BOS\_DESCRIPTOR** structure provides information about the Binar
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef struct
 {
     UINT8   Length;

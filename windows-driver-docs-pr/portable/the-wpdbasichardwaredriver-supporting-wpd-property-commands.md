@@ -36,7 +36,7 @@ Because the sample device does not support the Storage, Folder, or File objects 
 
 The following code is taken from the revised **AddSupportedPropertyKeys** method. This method calls two supporting methods (**AddDevicePropertyKeys** and **AddSensorPropertyKeys**) to retrieve the keys for the requested object:
 
-```
+```cpp
 HRESULT AddSupportedPropertyKeys(
     LPCWSTR                        wszObjectID,
     IPortableDeviceKeyCollection*  pKeys)
@@ -85,7 +85,7 @@ The code that returned properties for the Device object remained intact. This is
 
 Although this code was unchanged, the device model (and other similar properties) that was returned by the sample driver differ from the property values that were returned by the WpdHelloWorldSample driver. This is because we updated the definitions in *WpdObjectProperties.h*:
 
-```
+```cpp
 #define DEVICE_PROTOCOL_VALUE                L"Sensor Protocol ver 1.00"
 #define DEVICE_FIRMWARE_VERSION_VALUE        L"1.0.0.0"
 #define DEVICE_POWER_LEVEL_VALUE             100
@@ -117,7 +117,7 @@ In addition, this code also retrieves the current sensor reading and the sensor-
 
 The following excerpt from the **GetPropertyValuesForObject** method contains the code that retrieves the properties for the sensor object:
 
-```
+```cpp
 // Retrieve the sensor properties
 
         else if (
@@ -231,7 +231,7 @@ CHECK_HR(hr, "Failed to set WPD_OBJECT_CONTENT_TYPE");
 
 The **GetSensorReading** helper function retrieves the most recent sensor reading in numeric (DWORD) format:
 
-```
+```cpp
 LONGLONG WpdObjectProperties::GetSensorReading()
 {    
     // Ensure that this value isn&#39;t currently being accessed by another thread
@@ -270,7 +270,7 @@ The handler first examines the object identifier for the given property and then
 
 The **SendUpdateIntervalToDevice** helper function performs the write operation by checking for a valid input value, formatting a write request with that value, and then sending the write request to the device.
 
-```
+```cpp
 HRESULT WpdObjectProperties::SendUpdateIntervalToDevice(DWORD dwNewInterval)
 {
     HRESULT      hr                           = S_OK;

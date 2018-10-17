@@ -91,7 +91,7 @@ For each color format, you specify both the bits per pixel that the printer hard
 
 For example, suppose you want to define a ColorMode option that causes images to be rendered as 24 bits/pixel bitmaps, but then you want the bitmap to be sent to the printer as [*CMYK*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-cmyk) data. You might define this mode as follows:
 
-```
+```cpp
 *Feature: ColorMode
 {
     *Option: 24toCMYK

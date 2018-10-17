@@ -51,7 +51,7 @@ The **IStiUSD::GetNotificationData** method is called for polled events and inte
 
 The following example shows an implementation of the **IStiUSD::GetStatus** method.
 
-```
+```cpp
 STDMETHODIMP CWIADevice::GetStatus(PSTI_DEVICE_STATUS pDevStatus)
 {
   //

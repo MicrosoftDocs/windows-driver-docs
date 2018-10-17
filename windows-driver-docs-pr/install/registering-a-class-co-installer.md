@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 To register a co-installer for every device of a particular setup class, create a registry entry like the following under the **HKLM\\System\\CurrentControlSet\\Control\\CoDeviceInstallers** subkey:
 
-```
+```cpp
 {setup-class-GUID}: [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) : "XyzCoInstall.dll,XyzCoInstallEntryPoint\0\0"
 ```
 
@@ -39,7 +39,7 @@ The class co-installer is available to be called for relevant devices and servic
 
 Rather than manually creating the registry entry to register a class co-installer, you can register it using an INF file like the following:
 
-```
+```cpp
 [version]
 signature = "$Windows NT$"
  

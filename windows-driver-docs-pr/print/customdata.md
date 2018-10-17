@@ -28,7 +28,7 @@ The **customData** element is defined in the *asyncui* namespace at this URI: ht
 Usage
 -----
 
-``` syntax
+```xml
 <customData
   dll = "xs:string"
   entryPoint = "xs:string"
@@ -136,7 +136,7 @@ Examples
 
 The following code example shows how you can use the **customData** element to obtain your custom data.
 
-```
+```xml
 <?xml version="1.0"?>
   <asyncPrintUIRequest xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request"
       xmlns:myco="http://www.myprintercompany.com">
@@ -149,15 +149,6 @@ The following code example shows how you can use the **customData** element to o
 </asyncPrintUIRequest>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
-
-[**requestOpen**](requestopen.md)
-
- 
-
- 
-
-
-
-
+[requestOpen](requestopen.md)

@@ -25,7 +25,7 @@ The required **DeviceConditionCleared** element contains information about a pre
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:DeviceConditionCleared>
   child elements
 </wscn:DeviceConditionCleared>
@@ -82,7 +82,7 @@ Remarks
 
 The **DeviceConditionCleared** element contains the [**ConditionId**](conditionid.md) and [**ConditionClearTime**](conditioncleartime.md) elements, which specify the condition identifier and time at which the condition was cleared, respectively. The WSD Scan Service sends the **DeviceConditionCleared** element to a client in a [**ScannerStatusConditionClearedEvent**](scannerstatusconditionclearedevent.md) event element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ConditionClearTime**](conditioncleartime.md)

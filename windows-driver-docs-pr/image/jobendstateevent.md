@@ -25,7 +25,7 @@ The required **JobEndStateEvent** element informs the client that the scanner ha
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobEndStateEvent>
   child elements
 </wscn:JobEndStateEvent>
@@ -70,7 +70,7 @@ Examples
 
 The following code example shows how the scan device notifies the client of the final state and status of Job 253.
 
-```
+```xml
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
   xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
@@ -104,7 +104,7 @@ The following code example shows how the scan device notifies the client of the 
 </soap:Envelope>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**JobEndState**](jobendstate.md)

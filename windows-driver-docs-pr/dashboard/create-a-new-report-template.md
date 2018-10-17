@@ -354,3 +354,5 @@ You can manage your existing reports using the methods shown in [Manage report t
 - [Manage report templates](manage-report-templates-and-scheduled-reports.md)
 
 - [Sample report templates](sample-report-templates.md)
+
+- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

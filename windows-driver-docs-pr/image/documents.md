@@ -25,7 +25,7 @@ The required **Documents** element contains the actual scan characteristics that
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Documents>
   child elements
 </wscn:Documents>
@@ -77,7 +77,7 @@ There are no attributes.
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Document**](document.md)

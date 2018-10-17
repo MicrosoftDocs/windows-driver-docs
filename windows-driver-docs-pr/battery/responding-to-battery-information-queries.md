@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 The battery class driver calls the [*BatteryMiniQueryInformation*](https://msdn.microsoft.com/library/windows/hardware/ff536273) routine to get a variety of information about the current battery. This routine is declared as follows:
 
-```
+```cpp
 typedef 
 NTSTATUS
 (*BCLASS_QUERY_INFORMATION)(

@@ -69,7 +69,7 @@ For Windows XP, each log entry includes a message identifier consisting of a let
 
 The following segments are from a Windows XP error log:
 
-```
+```cpp
 [2001/02/27 20:14:30 1148.173]
 #-198 Command line processed: C:\WINDOWS\system32\mmc.exe "C:\WINDOWS\system32\devmgmt.msc" 
 #-147 Loading class installer module for "Communications Port".

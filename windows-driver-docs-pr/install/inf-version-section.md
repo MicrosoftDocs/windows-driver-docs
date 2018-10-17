@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 By convention, the **Version** section appears first in INF files. Every INF file must have this section.
 
-```
+```cpp
 [Version]
  
 Signature="signature-name"
@@ -168,7 +168,7 @@ Examples
 
 The following example shows a **Version** section typical of a simple device-driver INF, followed by the required [**SourceDisksNames**](inf-sourcedisksnames-section.md) and [**SourceDisksFiles**](inf-sourcedisksfiles-section.md) sections implied by the entries specified in this sample **Version** section:
 
-```
+```cpp
 [Version]
 Signature="$Windows NT$"
 Class=SCSIAdapter

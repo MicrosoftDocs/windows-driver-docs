@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 This example uses a [**KSDATARANGE**](https://msdn.microsoft.com/library/windows/hardware/ff561658) structure to describe the data range for an analog audio stream.
 
-```
+```cpp
   DataRange.FormatSize  = sizeof(KSDATARANGE);
   DataRange.Flags       = 0;
   DataRange.SampleSize  = 0;

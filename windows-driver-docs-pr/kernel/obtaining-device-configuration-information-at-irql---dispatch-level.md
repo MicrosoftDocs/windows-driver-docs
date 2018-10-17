@@ -41,7 +41,7 @@ Three steps are required when accessing the configuration space of a PCI device 
 
 The following code sample demonstrates how to implement these three steps:
 
-```
+```cpp
 NTSTATUS
 GetPCIBusInterfaceStandard(
     IN  PDEVICE_OBJECT DeviceObject,
@@ -103,7 +103,7 @@ End:
 
 The following code snippet shows how to use the [*GetBusData*](https://msdn.microsoft.com/library/windows/hardware/gg604850) interface routine to get the configuration space data (step 2).
 
-```
+```cpp
  bytes = busInterfaceStandard.GetBusData(
                     busInterfaceStandard.Context,
                     PCI_WHICHSPACE_CONFIG,
@@ -114,7 +114,7 @@ The following code snippet shows how to use the [*GetBusData*](https://msdn.micr
 
 When the driver is done with the interface, it can use code similar to the following snippet to dereference the interface (step 3). Drivers must not call interface routines after dereferencing the interface.
 
-```
+```cpp
     (busInterfaceStandard.InterfaceDereference)(
                     (PVOID)busInterfaceStandard.Context);
 ```
@@ -123,7 +123,7 @@ The interface synchronizes the caller's access to the bus hardware with the PCI 
 
 Note, that if all that is needed are bus, function, and device numbers, it is usually unnecessary to resort to a bus interface to obtain this information. This data can be retrieved indirectly by passing the PDO of the target device to the [**IoGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff549203) function as follows:
 
-```
+```cpp
     ULONG   propertyAddress, length;
     USHORT  FunctionNumber, DeviceNumber;
 

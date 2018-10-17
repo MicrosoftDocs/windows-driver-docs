@@ -36,7 +36,7 @@ For more information on OS descriptors, see [Microsoft OS Descriptors for USB De
 
 2.  Execute these two commands from an elevated command prompt:
 
-    ``` syntax
+    ```console
     pnputil -a {PathToSDK}\Bin\MS3DPrintUSB_{architecture}\MS3DPrintUSB.inf
     pnputil -a {PathToSDK}\Bin\RenderFilters_{architecture}\MS3DPrinter.inf
     ```

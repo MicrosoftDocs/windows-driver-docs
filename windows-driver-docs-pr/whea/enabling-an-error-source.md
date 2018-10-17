@@ -25,7 +25,7 @@ A user-mode application can enable an [error source](hardware-errors-and-error-s
 
 The following code example shows how to enable an error source.
 
-```
+```cpp
 IWbemServices *pIWbemServices;
 ULONG ErrorSourceID;
 BSTR ClassName;

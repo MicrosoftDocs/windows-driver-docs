@@ -12,7 +12,7 @@ An HBA miniport driver that supports the Storage Management API uses the MS\_SM\
 
 The MS\_SM\_HbaApiVersion class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MS_SM_HbaApiVersion
 {
     uint32 WmiHbaApiVersion;  

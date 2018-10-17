@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 
 The *DriverObject* parameter of the filter driver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine supplies a pointer to the filter driver's [**driver object**](https://msdn.microsoft.com/library/windows/hardware/ff544174). To register I/O request packet (IRP) dispatch routines, you must store the entry points of these routines into the **MajorFunction** member of the driver object. For example, a hypothetical "MyLegacyFilter" driver can set the entry points for its dispatch routine as follows:
 
-```
+```cpp
 for (i = 0; i <= IRP_MJ_MAXIMUM_FUNCTION; i++) {
     DriverObject->MajorFunction[i] = MyLegacyFilterDispatch;
 }

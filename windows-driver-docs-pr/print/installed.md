@@ -61,14 +61,14 @@ The Installed construct is defined in WsdBidi.xsd.
 
 In the following code example, the filter lookup algorithm uses an XPath query to confirm that a hard disk is installed.
 
-```
+```cpp
 <Schema>
-  <Property name=&#39;Printer&#39;>
-    <Property name=&#39;Configuration&#39;>
-      <Property name=&#39;HardDisk&#39;>
-        <Installed name=&#39;Installed&#39;
-            query=&#39;wprt:PrinterConfiguration&#39;
-            filter=&#39;wprt:PrinterConfiguration/wprt:Storage/wprt:StorageEntry[wprt:Type="HardDisk"]&#39;/>
+  <Property name='Printer'>
+    <Property name='Configuration'>
+      <Property name='HardDisk'>
+        <Installed name='Installed'
+            query='wprt:PrinterConfiguration'
+            filter='wprt:PrinterConfiguration/wprt:Storage/wprt:StorageEntry[wprt:Type="HardDisk"]'/>
       </Property>
     </Property>
   </Property>
@@ -77,7 +77,7 @@ In the following code example, the filter lookup algorithm uses an XPath query t
 
 The preceding example results in the following query:
 
-```
+```cpp
 \Printer.Configuration.HardDisk:Installed
 ```
 

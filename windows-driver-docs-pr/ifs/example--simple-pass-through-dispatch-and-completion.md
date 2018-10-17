@@ -31,7 +31,7 @@ This technique is illustrated in the following code example:
 
 ### <span id="Dispatch_Routine"></span><span id="dispatch_routine"></span><span id="DISPATCH_ROUTINE"></span>Dispatch Routine
 
-```
+```cpp
 IoCopyCurrentIrpStackLocationToNext( Irp ); 
 IoSetCompletionRoutine( Irp,                                 // Irp
                         MyLegacyFilterPassThroughCompletion, // CompletionRoutine
@@ -52,7 +52,7 @@ The last three parameters passed to [**IoSetCompletionRoutine**](https://msdn.mi
 
 If a dispatch routine sets a completion routine and immediately returns after calling [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) (as shown in the above dispatch routine), the corresponding completion routine must check the IRP's PendingReturned flag and, if it is set, call **IoMarkIrpPending**. Then it should return STATUS\_SUCCESS, as shown in the following example:
 
-```
+```cpp
 if (Irp->PendingReturned) {
     IoMarkIrpPending( Irp );
 }

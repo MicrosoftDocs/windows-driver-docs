@@ -28,7 +28,7 @@ A BDA minidriver is initialized similarly to other AVStream minidrivers. The BDA
 
 The following code snippet shows examples of an array of filter descriptors, a dispatch table for the BDA device, and the descriptor for the BDA device:
 
-```
+```cpp
 //
 //  Array containing descriptors for all filter factories
 //  available on the device.

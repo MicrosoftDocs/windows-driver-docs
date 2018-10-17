@@ -22,7 +22,7 @@ The battery tag is a ULONG counter initialized and incremented by the miniclass 
 
 This miniclass driver routine is declared as follows:
 
-```
+```cpp
 typedef
 NTSTATUS
 (*BCLASS_QUERY_TAG)(

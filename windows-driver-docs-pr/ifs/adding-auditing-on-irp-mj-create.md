@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 Another important aspect of the security checks within a file system is to add auditing (if necessary). Typically, this is done as part of the same set of routines that make security decisions, since the purpose of auditing is to record the security decisions made by the system. For example, the following code could be used to implement auditing within a file system after completing the access checks:
 
-```
+```cpp
 {
 UNICODE_STRING FileAuditObjectName;
 

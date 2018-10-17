@@ -35,7 +35,7 @@ The GUIDs and friendly names for both Category and Name GUIDs are stored under t
 
 If none of the friendly names and pin categories defined by the audio subsystem adequately describes your device, you can define your own pin category and name GUIDs and associate friendly names with them in your INF. To ensure that your pin-category GUID is unique, use a utility such as Uuidgen.exe to generate the GUID. Next, modify the INF file that installs your audio adapter to write the pin-category GUID and friendly name to the registry path HKR\\MediaCategories. The following code example shows a fragment of an INF file that adds two pin-category GUIDs and their associated friendly names to the registry:
 
-```
+```inf
 [Manufacturer]
 MyOEMName=Unicorn,NTamd64
 
@@ -76,7 +76,7 @@ An **IPropertyStore** interface instance maintains a persistent property store f
 
 1.  To run Mmsys.cpl, open a Command Prompt window and enter the following command:
 
-    ```
+    ```console
     mmsys.cpl
     ```
 

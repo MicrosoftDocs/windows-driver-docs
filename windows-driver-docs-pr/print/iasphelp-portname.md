@@ -16,18 +16,22 @@ api_name:
 - Iasphelp.get_PortName
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_PortName method
-
 
 The **PortName** property enables an ASP Web page to obtain a printer's port name.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_PortName(
   [out] BSTR *pVal
 );
@@ -71,24 +75,16 @@ Win32 error codes can also be returned.
 </tbody>
 </table>
 
- 
-
-## <span id="ddk_iasphelp_portname_gg"></span><span id="DDK_IASPHELP_PORTNAME_GG"></span>
-
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::PortName** property can be queried.
 
-```
-    Dim objPrinter, PtrPortName
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
-    PtrPortName = objPrinter.PortName
+```vb
+Dim objPrinter, PtrPortName
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
+PtrPortName = objPrinter.PortName
 ```
 
 Requirements
@@ -104,22 +100,9 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**Iasphelp::Open**](iasphelp-open.md)
-
- 
-
- 
-
-
-
-

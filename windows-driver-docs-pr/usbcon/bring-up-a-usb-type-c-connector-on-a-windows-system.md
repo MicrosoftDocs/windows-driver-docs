@@ -16,7 +16,7 @@ You need to write a USB Type-C connector driver in these scenarios:
 
 -   If your USB Type-C hardware has the capability of handling the power delivery (PD) state machine. Otherwise, consider writing a USB Type-C port controller driver. For more information, see [Write a USB Type-C port controller driver](write-a-usb-type-c-port-controller-driver.md).
 
--   If your hardware is UCSI-compliant over a transport other than ACPI. Otherwise, load the load the Microsoft provided in-box driver, UcmUcsi.sys. (See [UCSI driver](ucsi.md)). 
+-   If your hardware does not have an embedded controller. Otherwise load the Microsoft provided in-box driver, UcmUcsi.sys. (See [UCSI driver](ucsi.md)) for ACPI transports or [write a UCSI client driver](write-a-ucsi-driver.md) for non-ACPI transports. 
 
 **Summary**
 
@@ -44,7 +44,7 @@ You need to write a USB Type-C connector driver in these scenarios:
 
 **Important APIs**
 
--   [USB Type-C connector driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188011)
+-  [USB Type-C connector driver programming reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#type-c-driver-reference)
 
 Describes the USB connector manager (UCM) that manages a USB Type-C connector and the expected behavior of a connector driver.
 
@@ -101,6 +101,8 @@ The UCM class extension keeps the operating system informed about the changes in
 
     The operating system might decide that the current data role is not correct. In that case the class extension calls your driver's callback function to perform necessary role swap operations.
 
+> The Microsoft-provided USB Type-C Policy Manager monitors the activities of USB Type-C connectors. Windows, version 1809, introduces a set of programming interfaces that you can use to write a client driver to Policy Manager. The client driver can participate in the policy decisions for USB Type-C connectors. With this set, you can choose to write a kernel-mode export driver or a user-mode driver. For more information, see [Write a USB Type-C Policy Manager client driver](policy-manager-client.md).
+
 ## Expected behavior of the client driver
 
 
@@ -141,7 +143,7 @@ Here is the summary of the sequence in which the client driver retrieves a UCMCO
 
 4.  Call [**UcmConnectorCreate**](https://msdn.microsoft.com/library/windows/hardware/mt187909) and retrieve a UCMCONNECTOR handle for the connector. Make sure you call this method after the client driver has created the framework device object by calling [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926). An appropriate place for this call can be in driver's [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](https://msdn.microsoft.com/library/windows/hardware/ff540880) or [**EVT_WDF_DEVICE_D0_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/ff540848).
 
-```
+```cpp
 EVT_UCM_CONNECTOR_SET_DATA_ROLE     EvtSetDataRole;
     
 NTSTATUS
@@ -236,7 +238,7 @@ The client driver must call [**UcmConnectorTypeCAttach**](https://msdn.microsoft
 
 The UCM class extension also notifies the USB role-switch drivers (URS). Based on the type of partner, URS configures the controller in host role or function role. Before calling this method, make sure the Mux on your system is configured correctly. Otherwise, if the system is in function role, it will connect at an incorrect speed (high-speed instead of SuperSpeed).
 
-```
+```cpp
         UCM_CONNECTOR_TYPEC_ATTACH_PARAMS attachParams;
 
         UCM_CONNECTOR_TYPEC_ATTACH_PARAMS_INIT(
@@ -315,7 +317,7 @@ The client driver performs role swap operations by using hardware interfaces.
     1.  Send a PD DR\_Swap message to the port-partner.
     2.  Call [**UcmConnectorDataDirectionChanged**](https://msdn.microsoft.com/library/windows/hardware/mt187910) to notify the class extension that the message sequence has completed successfully or unsuccessfully.
 
-    ```
+    ```cpp
     EVT_UCM_CONNECTOR_SET_DATA_ROLE     EvtSetDataRole;  
 
     NTSTATUS  
@@ -343,7 +345,7 @@ The client driver performs role swap operations by using hardware interfaces.
     1.  Send a PD PR\_Swap message to the port-partner.
     2.  Call [**UcmConnectorPowerDirectionChanged**](https://msdn.microsoft.com/library/windows/hardware/mt187914) to notify the class extension that the message sequence has completed successfully or unsuccessfully.
 
-    ```
+    ```cpp
     EVT_UCM_CONNECTOR_SET_POWER_ROLE     EvtSetPowerRole;  
 
     NTSTATUS  

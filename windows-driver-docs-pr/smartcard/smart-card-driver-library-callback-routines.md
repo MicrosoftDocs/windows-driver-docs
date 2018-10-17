@@ -28,7 +28,7 @@ A reader driver must make these callback routines available for the driver libra
 
 For instance, if you want [**SmartcardDeviceControl**](https://msdn.microsoft.com/library/windows/hardware/ff548939) to call a callback routine in your reader driver named **DriverCardPower** whenever it finishes processing an [**IOCTL\_SMARTCARD\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff548907) request, you must use the [*RDF\_CARD\_POWER*](https://msdn.microsoft.com/library/windows/hardware/ff548919) constant to initialize the device extension in the following manner:
 
-```
+```cpp
 SmartcardExtension->ReaderFunction[RDF_CARD_POWER] = 
 DriverCardPower;
 ```

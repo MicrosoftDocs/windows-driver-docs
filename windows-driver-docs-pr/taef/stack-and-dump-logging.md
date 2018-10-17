@@ -33,7 +33,7 @@ The optional dump type parameter specifies what the taken mini dump should conta
 
 Example (save dump into a cab along with its pdbs):
 
-```
+```cpp
 NoThrowString savedDumpFilePath;
 HRESULT hr = Debug::SaveDump(MiniDumpFormat::WriteCab | MiniDumpFormat::WriteCabSecondaryFiles, savedDumpFilePath);
 ```
@@ -48,7 +48,7 @@ The optional stack type parameter specifies what the stack trace should contain.
 
 Example:
 
-```
+```cpp
 NoThrowString stackText;
 HRESULT hr = Debug::GetStack(CallStackFormat::ColumnNames | CallStackFormat::FrameAddress |
                              CallStackFormat::SourceLine, stackText);

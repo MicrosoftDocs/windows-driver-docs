@@ -25,7 +25,7 @@ The required **JobStateReasons** element contains all additional information abo
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobStateReasons>
   child elements
 </wscn:JobStateReasons>
@@ -82,7 +82,7 @@ Remarks
 
 The **JobStateReasons** element contains a list of [**JobStateReason**](jobstatereason.md) elements, each of which specifies one reason why a job is in its current state.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**JobStateReason**](jobstatereason.md)

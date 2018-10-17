@@ -24,7 +24,7 @@ The [Windows.Devices.HumanInterfaceDevice](https://msdn.microsoft.com/library/wi
 
 The following short video describes an end-to-end sample solution for HID that's available for download on the MSDN samples gallery. (This solution includes a sample app created using the new HID WinRT API.)
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/2d4da9fc-c2ea-4933-949d-eb0cff3c9c4e]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/2d4da9fc-c2ea-4933-949d-eb0cff3c9c4e]
 
 ## Design Guide
 

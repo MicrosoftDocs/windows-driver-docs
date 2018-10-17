@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 An MPIO driver uses the MPIO\_CONTROLLER\_INFO WMI class to identify a storage controller and its associated DSM.
 
-```
+```cpp
 class MPIO_CONTROLLER_INFO
 {
 

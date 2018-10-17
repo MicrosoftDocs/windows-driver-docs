@@ -59,7 +59,7 @@ This is done through an ACPI method defined in the ACPI 6.0 specification
 
 Use the new values defined in ACPI 6.0 to indicate the correct type of USB Type-C connector, such as "Type-C USB2" and "Type-C USB2 and SS with switch". The function driver communicates this information to CAD.sys, so that it uses USB Type-C-specific arbitration logic to determine an appropriate charging source.
 
-```
+```cpp
 Device (UFN0)
 {
     ...

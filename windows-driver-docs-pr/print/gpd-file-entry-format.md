@@ -36,7 +36,7 @@ Each GPD entry is terminated by end-of-line or a right brace ( **}** ).
 
 An example of a simple GPD file entry, which does not accept subentries, is the following attribute entry:
 
-```
+```cpp
 *MaxCopies: 99
 ```
 
@@ -44,7 +44,7 @@ This entry specifies that the maximum number of copies the printer can handle is
 
 Following is a more complex example, describing a printer that can print pages in either of two page orientations (portrait or landscape). The example also specifies the commands the driver must send to select each orientation.
 
-```
+```cpp
 *Feature: Orientation
 {
     *Name: "Orientation"

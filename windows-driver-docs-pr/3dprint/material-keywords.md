@@ -60,7 +60,7 @@ This parameter MUST define the number of materials currently loaded in the devic
 
 Job3DMaterialCount keyword usage
 
-```
+```cpp
 <psf:Property name="psk3d:Job3DMaterialCount">
     <psf:Value xsi:type="xsd:integer">2</psf:Value>
 </psf:Property>
@@ -138,7 +138,7 @@ Each Material SHOULD specify the following child Properties.
 <td>xsd:string</td>
 <td><p>Devices MAY define this Property to specify the color of the material. If specified, the Value MUST be an sRGB color conforming to the description below:</p>
 <div class="code">
-```
+```cpp
 sRGBColorText = "#" hR hG hB hA
 hR = hG = hB = hA = hexpair
 hexpair = hexdigit hexdigit
@@ -159,7 +159,7 @@ hexdigit = "0" / "1" / "2" / "3" /
 
 Job3DMaterials keyword usage
 
-```
+```cpp
 <psf:Property name="psk3d:Job3DMaterials">
     <psf:Property name="vnd:ABS_RED">
         <psf:Property name="psk:DisplayName">
@@ -229,7 +229,7 @@ The psk3d:Job3DSupports keyword specifies whether this job should include *suppo
 
 Job3DSupports keyword usage
 
-```
+```cpp
 <psf:Feature name="psk3d:Job3DSupports">
     <psf:Property name="SelectionType">
         <psf:Value xsi:type="xsd:QName">psk:PickOne</psf:Value>
@@ -327,7 +327,7 @@ Job3DSupportsMaterial keyword usage
 
 The Parameter definition is as follows:
 
-```
+```cpp
 <psf:ParameterDef name="psk3d:Job3DSupportsMaterial">
     <psf:Property name="psf:DataType">
         <psf:Value xsi:type="xsd:QName">xsd:QName</psf:Value>
@@ -352,7 +352,7 @@ The Parameter definition is as follows:
 
 This Parameter is initialized as follows:
 
-```
+```cpp
 <psf:ParameterInit name="psk3d:Job3DSupportsMaterial">
     <psf:Value xsi:type="xsd:QName">vnd:PLA_TEAL</psf:Value>
 </psf:ParameterInit>
@@ -407,7 +407,7 @@ The psk3d:Job3DRaft keyword specifies whether this job should include a *raft* g
 
 Job3DRaft keyword usage
 
-```
+```cpp
 <psf:Feature name="psk3d:Job3DRaft">
     <psf:Property name="SelectionType">
         <psf:Value xsi:type="xsd:QName">psk:PickOne</psf:Value>
@@ -505,7 +505,7 @@ Job3DRaftMaterial keyword usage
 
 The Parameter definition is as follows:
 
-```
+```cpp
 <psf:ParameterDef name="psk3d:Job3DRaftMaterial">
     <psf:Property name="psf:DataType">
         <psf:Value xsi:type="xsd:QName">xsd:QName</psf:Value>
@@ -530,7 +530,7 @@ The Parameter definition is as follows:
 
 This Parameter is initialized as follows:
 
-```
+```cpp
 <psf:ParameterInit name="psk3d:Job3DRaftMaterial">
     <psf:Value xsi:type="xsd:QName">vnd:PLA_TEAL</psf:Value>
 </psf:ParameterInit>
@@ -626,7 +626,7 @@ Material Mapping Parameter keyword usage
 
 The Parameter definition is as follows:
 
-```
+```cpp
    <psf:ParameterDef name="vnd:Job3DABS_REDMap">
        <psf:Property name="psf:DataType">
           <psf:Value xsi:type="xsd:QName">xsd:string</psf:Value>
@@ -671,7 +671,7 @@ The Parameter definition is as follows:
 
 This Parameter is initialized as follows:
 
-```
+```cpp
    psf:ParameterInit name="vnd:Job3DABS_REDMap">
       <psf:Value xsi:type="xsd:string">1:0;1:2</psf:Value>
    </psf:ParameterInit>

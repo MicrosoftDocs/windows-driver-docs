@@ -64,7 +64,7 @@ Possible other return values include:
 
 This function uses the **SetConnectInfo** member of the AVC\_MULTIFUNC\_IRB structure as shown below.
 
-```
+```cpp
 typedef struct _AVC_MULTIFUNC_IRB {
   AVC_IRB  Common;
   union {

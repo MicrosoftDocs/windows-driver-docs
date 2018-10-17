@@ -50,7 +50,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_IPS\_MIN\_VERTICAL\_SIZE**](wia-ips-min-vertical-size.md)

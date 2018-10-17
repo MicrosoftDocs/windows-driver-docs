@@ -23,7 +23,7 @@ Because the MSiSCSI\_RADIUSConfig WMI class is associated with a particular inst
 
 The MSiSCSI\_RADIUSConfig class is defined in *Config.mof*.
 
-```
+```cpp
 class MSiSCSI_RADIUSConfig {
   [key] string  InstanceName;
   boolean  Active;

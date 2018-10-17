@@ -89,7 +89,7 @@ Examples
 
 This example code shows how to add a custom type to a queue.
 
-```
+```cpp
 NTSTATUS                status;
 WDF_IO_QUEUE_CONFIG     queueConfig;
 WDFQUEUE                queue;  

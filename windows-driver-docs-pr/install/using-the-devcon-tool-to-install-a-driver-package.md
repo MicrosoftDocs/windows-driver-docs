@@ -21,7 +21,7 @@ To install the driver package through DevCon, do the following:
 
 2.  From the elevated, Command Prompt window, enter the following:
 
-    ```
+    ```cpp
     devcon.exe install c:\toaster\toastpkg.inf {b85b7c50-6a01-11d2-b841-00c04fad5171}\mstoaster
     ```
 

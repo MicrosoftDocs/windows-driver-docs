@@ -21,7 +21,7 @@ The **package** XML element specifies an INF file for a [driver package](https:/
 
 **Element Tag**
 
-```
+```cpp
 <package>
 ```
 
@@ -75,7 +75,7 @@ The **package** XML element specifies an INF file for a [driver package](https:/
 
 The following code example demonstrates a **package** element that specifies DirAbc\\Abc.inf as the INF file for the [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840).
 
-```
+```cpp
 <dpinst>
   ...
   <group>

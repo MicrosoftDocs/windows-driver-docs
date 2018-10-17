@@ -77,7 +77,7 @@ This procedure describes how to write a simple HID source driver that reports he
 2.  Link to vhfkm.lib, included in the WDK.
 3.  Create a HID Report Descriptor that your device wants to report to the operating system. In this example, the HID Report Descriptor describes the headset buttons. The report specifies a HID Input Report, size 8 bits (1 byte). The first three bits are for the headset middle, volume-up, and volume-down buttons. The remaining bits are unused.
 
-```
+```cpp
 UCHAR HeadSetReportDescriptor[] = {
     0x05, 0x01,         // USAGE_PAGE (Generic Desktop Controls)
     0x09, 0x0D,         // USAGE (Portable Device Buttons)
@@ -139,7 +139,7 @@ The virtual HID device is deleted by calling the [**VhfDelete**](https://msdn.mi
 
 **Note**  After an asynchronous operation completes, the driver must call [**VhfAsyncOperationComplete**](https://msdn.microsoft.com/library/windows/hardware/dn925060) to set the results of the operation. You can call the method from the event callback or at a later time after returning from the callback.
 
-```
+```cpp
 NTSTATUS
 VhfSourceCreateDevice(
 _Inout_ PWDFDEVICE_INIT DeviceInit
@@ -196,7 +196,7 @@ Typically, a HID device sends information about state changes by sending input r
 
 The HID source driver can submit input reports by implementing the buffering policy for pending reports. To avoid duplicate buffering, the HID source driver can implement the [*EvtVhfReadyForNextReadReport*](https://msdn.microsoft.com/library/windows/hardware/dn897135) callback function and keep track of whether VHF invoked this callback. If it was previously invoked, the HID source driver can call [**VhfReadReportSubmit**](https://msdn.microsoft.com/library/windows/hardware/dn925040) to submit a report. It must wait for *EvtVhfReadyForNextReadReport* to get invoked before it can call **VhfReadReportSubmit** again.
 
-```
+```cpp
 VOID
 MY_SubmitReadReport(
     PMY_CONTEXT  Context,
@@ -233,7 +233,7 @@ Delete the virtual HID device by calling [**VhfDelete**](https://msdn.microsoft.
 5.  When the device is reported as a missing device, VHF invokes [*EvtVhfCleanup*](https://msdn.microsoft.com/library/windows/hardware/dn897134) if the HID source driver registered its implementation.
 6.  After [*EvtVhfCleanup*](https://msdn.microsoft.com/library/windows/hardware/dn897134) returns, VHF performs its cleanup.
 
-```
+```cpp
 VOID
 VhfSourceDeviceCleanup(
 _In_ WDFOBJECT DeviceObject
@@ -259,7 +259,7 @@ _In_ WDFOBJECT DeviceObject
 
 In the INF file that installs the HID source driver, make sure that you declare Vhf.sys as a lower filter driver to your HID source driver by using the [**AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320).
 
-```
+```cpp
 [HIDVHF_Inst.NT.HW]
 AddReg = HIDVHF_Inst.NT.AddReg
 

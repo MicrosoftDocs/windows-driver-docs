@@ -21,7 +21,7 @@ You can write an interface handler plug-in to provide programmatic user-mode acc
 
 Your interface plug-in class could derive from [CUnknown](http://go.microsoft.com/fwlink/p/?linkid=106451):
 
-```
+```cpp
 class CMyPluginInterface : public CUnknown 
 {
 public:
@@ -39,7 +39,7 @@ Specifically, the **CreateInstance** method of the plug-in receives a pointer to
 
 You can then query this outer object for a pointer to the MS-provided [IKsPropertySet](https://msdn.microsoft.com/library/windows/hardware/ff560718) interface:
 
-```
+```cpp
 hResult = piOuterUnknown->QueryInterface(
                 __uuidof( piKsPropertySet ),
                  &piKsPropertySet );

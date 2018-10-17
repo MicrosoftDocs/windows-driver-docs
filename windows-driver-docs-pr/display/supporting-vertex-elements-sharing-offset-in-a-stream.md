@@ -27,7 +27,7 @@ A DirectX 9.0 version driver indicates that its device lets multiple vertex elem
 
 If a DirectX 9.0 driver for a device that supports pixel shader (PS) versions earlier than 3.0 sets D3DDEVCAPS2\_VERTEXELEMENTSCANSHARESTREAMOFFSET, the driver can handle most vertex declarations with elements that specify the D3DDECLUSAGE\_POSITIONT (0) usage type. This pre PS 3.0-driver converts vertex declarations with D3DDECLUSAGE\_POSITIONT (0) to valid flexible vertex format (FVF). However, this pre PS 3.0-driver cannot handle vertex declarations with elements that specify the D3DDECLUSAGE\_POSITIONT (0) usage type if the declarations have gaps in texture coordinates. For example, this pre PS 3.0-driver cannot handle the following vertex declaration:
 
-```
+```cpp
 {0,0,D3DDECLTYPE_FLOAT4, D3DDECLMETHOD_DEFAULT, D3DDECLUSAGE_POSITIONT, 0}
 {0,16,D3DDECLTYPE_FLOAT2, D3DDECLMETHOD_DEFAULT, D3DDECLUSAGE_TEXCOORD, 0}
 {0,24,D3DDECLTYPE_FLOAT2, D3DDECLMETHOD_DEFAULT, D3DDECLUSAGE_TEXCOORD, 5}

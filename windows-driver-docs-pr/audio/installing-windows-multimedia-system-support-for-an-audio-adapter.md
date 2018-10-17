@@ -26,7 +26,7 @@ An INF add-registry section creates or modifies driver-specific information in t
 
 The following example presents the add-registry section, XYZ-Audio-Device.AddReg, that was named in an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) in a previous example (see [Installing a Port Class Audio Adapter](installing-a-port-class-audio-adapter.md)):
 
-```
+```cpp
   [XYZ-Audio-Device.AddReg]
   HKR,,AssociatedFilters,,"wdmaud,swmidi,redbook"
   HKR,,Driver,,xyzaud.sys 

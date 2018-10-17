@@ -67,21 +67,21 @@ If the driver does not support **KSCAMERA\_EXTENDEDPROP\_ISO\_MANUAL**, the Valu
 
 The following shows how the item header and Value payload should look like when the per-frame settings ISO capability is **KSCAMERA\_EXTNDEDPROP\_ISO\_AUTO**, **KSCAMERA\_EXTENDEDPROP\_ISO\_MANUAL** (min = 30, max = 210, step =20)as follows:
 
-``` syntax
+```cpp
 KSCAMERA_EXTNDEDPROP_ISO_AUTO, 
 KSCAMERA_EXTENDEDPROP_ISO_MANUAL (min = 30, max = 210, step =20)
 ```
 
 1.  If the ISO speed is 70
 
-    ``` syntax
+    ```cpp
     KSCAMERA_PERFRAMESETTING_ITEM_HEADER.Flags = KSCAMERA_EXTENDEDPROP_ISO_MANUAL
     KSCAMERA_EXTENDEDPROP_VALUE.Value.ul = 70
     ```
 
 2.  If the ISO speed is 50
 
-    ``` syntax
+    ```cpp
     KSCAMERA_PERFRAMESETTING_ITEM_HEADER.Flags = KSCAMERA_EXTENDEDPROP_ISO_MANUAL
     KSCAMERA_EXTENDEDPROP_VALUE.Value.ul = 50
     ```
@@ -192,7 +192,7 @@ If the loop count is L (L = 1), the frame count is 1, and the item count is 0, i
 
 The variable photo sequence is further simplified to not request any past frames. The pipeline will hardcode the requested past photo count, (for example, RequestedHistoryFrames) to 0. The driver delivers only future frames in a variable photo sequence. The following figure illustrates the expected number of frames to be delivered by the driver in a variable photo sequence. The past photo count is specified in **KSCAMERA\_EXTENDEDPROP\_PHOTOMODE.RequestedHistoryFrames** by the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOMODE**](ksproperty-cameracontrol-extended-photomode2.md) extended property control that is hardcoded to 0 by the pipeline.
 
-``` syntax
+```cpp
 N : Frame Count
 L : Loop Count
 P : Past Photos Requested

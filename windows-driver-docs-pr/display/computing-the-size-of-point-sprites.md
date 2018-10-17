@@ -62,7 +62,7 @@ Sₛ otherwise
 
 Note that for the application to be drawing single pixel vertices, rather than point sprites, it must have the following render states set:
 
-```
+```cpp
 SetRenderState (D3DRS_POINTSCALEENABLE, FALSE)
 // All textures must be turned off.
 SetTexture (0, NULL); 

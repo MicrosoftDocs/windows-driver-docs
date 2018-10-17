@@ -26,7 +26,7 @@ If the WMI class contains data fields, then the WMI tool suite will generate a s
 
 For example, suppose we compile the following WMI class definition with **mofcomp** and generate a .h file with **wmimofck**.
 
-```
+```cpp
 class HBAFCPBindingEntry
 {
   [HBAType("HBA_FCPBINDINGTYPE"),
@@ -48,7 +48,7 @@ class HBAFCPBindingEntry
 
 The resulting .h file will contain the following structure declaration.
 
-```
+```cpp
 typedef struct _HBAFCPBindingEntry
 {
   ULONG  Type;

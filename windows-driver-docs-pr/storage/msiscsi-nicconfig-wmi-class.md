@@ -17,7 +17,7 @@ The miniport driver for the HBA initiator must create one instance of the MSiSCS
 
 The MSiSCSI\_NICConfig class is defined in *Config.mof*.
 
-```
+```cpp
 class MSiSCSI_NICConfig {
   [key] string  InstanceName;
   boolean  Active;

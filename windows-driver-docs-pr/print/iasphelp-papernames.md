@@ -16,18 +16,22 @@ api_name:
 - Iasphelp.get_PaperNames
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_PaperNames method
-
 
 The **PaperNames** property enables an ASP Web page to obtain a set of strings that name all the paper forms for the printer.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_PaperNames(
   [out] VARIANT *pVal
 );
@@ -71,26 +75,18 @@ This property returns one of the values in the following table.
 </tbody>
 </table>
 
- 
+## VBScript Example
 
-## <span id="ddk_iasphelp_papernames_gg"></span><span id="DDK_IASPHELP_PAPERNAMES_GG"></span>
-
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
-
-The handler for this property obtains the list of paper forms by calling the printer driver's [**DrvDeviceCapabilities**](https://msdn.microsoft.com/library/windows/hardware/ff548539) function with the DC\_PAPERNAMES flag set.
+The handler for this property obtains the list of paper forms by calling the printer driver's [**DrvDeviceCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvdevicecapabilities) function with the DC\_PAPERNAMES flag set.
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::PaperNames** property can be queried.
 
-```
-    Dim objPrinter, PaperNameArray
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
-    PaperNameArray = objPrinter.PaperNames
+```vb
+Dim objPrinter, PaperNameArray
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
+PaperNameArray = objPrinter.PaperNames
 ```
 
 Requirements
@@ -106,24 +102,11 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
-
-[**DrvDeviceCapabilities**](https://msdn.microsoft.com/library/windows/hardware/ff548539)
+[**DrvDeviceCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvdevicecapabilities)
 
 [**Iasphelp::Open**](iasphelp-open.md)
-
- 
-
- 
-
-
-
-

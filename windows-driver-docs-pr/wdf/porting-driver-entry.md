@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 In both WDM and framework-based drivers, the [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff540807) function is the primary entry point. The function prototype is the same in both models. In a WDM driver, the system calls **DriverEntry** when the driver is first loaded into memory. DriverEntry sets a pointer to the driver’s [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine in the **DriverExtension-&gt;AddDevice** field of the [**DRIVER\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff544174) structure, sets pointers to its I/O dispatch routines in the **MajorFunction** array of the DRIVER\_OBJECT structure, and then returns. In a framework-based driver, the system calls the framework’s internal **FxDriverEntry** function upon loading the driver. This internal function initializes the framework and then calls the driver’s **DriverEntry** function. **DriverEntry** sets a pointer to the driver’s [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback and calls [**WdfDriverCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547175) to create the WDFDRIVER object, as the following example shows:
 
-```
+```cpp
 NTSTATUS
 DriverEntry(
     IN PDRIVER_OBJECT  DriverObject

@@ -32,7 +32,7 @@ If the XML syntax conflicts with the basic GDL syntax rules, the entire value (o
 
 For example, consider the following example template.
 
-```
+```cpp
 *Template:  ELEMENT_CONTENT
 {
     *Type:  DATATYPE
@@ -44,7 +44,7 @@ With the preceding template, the parser filter does not create an XSD schema dat
 
 Consider the following GDL entry.
 
-```
+```cpp
 *InLineXML:  <BeginValue:XML>
  <Cell CellOrdinal="0">
          <Value xsi:type="xsd:double">16890</Value>
@@ -56,7 +56,7 @@ Consider the following GDL entry.
 
 If the preceding entry is interpreted by using the earlier example template, the following XML output would occur.
 
-```
+```cpp
 <GDL_ATTRIBUTE Name="*InLineXML"  >
   <Cell CellOrdinal="0">
     <Value xsi:type="xsd:double">16890</Value>

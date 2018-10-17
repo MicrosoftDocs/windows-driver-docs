@@ -18,7 +18,7 @@ A GPIO I/O resource is a set of one or more GPIO pins that are configured as dat
 
 The following code example shows how the kernel-mode driver framework (KMDF) driver for a peripheral device can obtain a description of the GPIO I/O resource that the Plug and Play (PnP) manager has assigned to the driver.
 
-```
+```cpp
 NTSTATUS
   EvtDevicePrepareHardware(
     _In_ WDFDEVICE Device,
@@ -63,7 +63,7 @@ In the preceding code example, the `DeviceExtension` variable is a pointer to th
 
 The following code example shows how the peripheral device driver can use the GPIO resource description that it obtained in the previous code example to open a WDFIOTARGET handle to the driver's GPIO I/O resource.
 
-```
+```cpp
 NTSTATUS IoRoutine(WDFDEVICE Device, BOOLEAN ReadOperation) 
 {
     WDFIOTARGET IoTarget;
@@ -113,7 +113,7 @@ In the preceding code example, the `Device` variable is a WDFDEVICE handle to th
 
 After the peripheral device driver has obtained a handle to a GPIO I/O resource, this driver can send I/O control requests to read data from or write data to the GPIO pins. A driver that opens a GPIO I/O resource for reads uses [**IOCTL\_GPIO\_READ\_PINS**](https://msdn.microsoft.com/library/windows/hardware/hh406483) I/O control requests to read data from the pins in the resource. A driver that opens a GPIO I/O resource for writes uses [**IOCTL\_GPIO\_WRITE\_PINS**](https://msdn.microsoft.com/library/windows/hardware/hh406487) I/O control requests to write data to the pins in the resource. The following code example shows how to perform a GPIO read or write operation.
 
-```
+```cpp
     WDF_OBJECT_ATTRIBUTES RequestAttributes;
     WDF_OBJECT_ATTRIBUTES Attributes;
     WDF_REQUEST_SEND_OPTIONS SendOptions;

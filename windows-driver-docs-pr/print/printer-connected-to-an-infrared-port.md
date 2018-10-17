@@ -24,7 +24,7 @@ Printers connected over an infrared (IR) port do not support Plug and Play using
 
 The [**INF Manufacturer section**](https://msdn.microsoft.com/library/windows/hardware/ff547454) entries for a printer that supports Plug and Play over LPT and IR ports should appear similar to the following:
 
-```
+```cpp
  
 "Model Name XYZ" = Install_Section_XYZ, LPTENUM\Company_NameModelNam1234, Company_NameModelNam1234, Model_Name_XYZ
 "Model Name XYZ" = Install_Section_XYZ, HWP9876, Model_Name_XYZ

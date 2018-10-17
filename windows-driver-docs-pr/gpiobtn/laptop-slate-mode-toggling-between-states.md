@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This topic contains sample code that toggles the laptop/slate mode indicator state.
 
-```
+```cpp
 int __cdecl ToggleConversionIndicator(
     __in int argc,
     __in_ecount(argc) char **argv)

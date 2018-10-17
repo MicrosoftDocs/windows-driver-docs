@@ -56,7 +56,7 @@ Examples
 
 The following code example defines a context structure (MY_REQUEST_CONTEXT) for a request object and then registers the structure.
 
-```
+```cpp
 typedef struct _MY_REQUEST_CONTEXT {
   LIST_ENTRY ListEntry;
   WDFMEMORY Memory;
@@ -67,7 +67,7 @@ WDF_DECLARE_CONTEXT_TYPE(MY_REQUEST_CONTEXT)
 
 The following code example creates a request object and obtains a pointer to its context space.
 
-```
+```cpp
 WDFREQUEST Request;
 WDF_OBJECT_ATTRIBUTES MyRequestObjectAttributes;
 PMY_REQUEST_CONTEXT pMyContext;

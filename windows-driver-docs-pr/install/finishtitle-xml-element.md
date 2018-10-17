@@ -21,7 +21,7 @@ The **finishTitle** XML element customizes the text of the finish title that app
 
 ### **Element Tag**
 
-```
+```cpp
 <finishTitle>
 ```
 
@@ -62,7 +62,7 @@ None
 
 The following code example demonstrates a **finishTitle** element that customizes the title text at the top of a finish page. The text that specifies the custom title text is shown in bold font style.
 
-```
+```cpp
 dpinst>
   ...
   <language code="0x0409">

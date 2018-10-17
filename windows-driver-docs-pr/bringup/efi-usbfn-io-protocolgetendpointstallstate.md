@@ -19,7 +19,7 @@ The **GetEndpointStallState** function returns the stall state on the specified 
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_IO_GET_ENDPOINT_STALL_STATE) (

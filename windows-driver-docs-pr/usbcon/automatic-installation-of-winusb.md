@@ -43,7 +43,7 @@ In Windows 8, the in-box Winusb.inf file has been updated to enable Windows to 
 
 In Windows 8, the in-box Winusb.inf file has been updated. The INF includes an install section that references a compatible ID called "USB\\MS\_COMP\_WINUSB".
 
-```
+```cpp
 [Generic.Section.NTamd64]
 %USB\MS_COMP_WINUSB.DeviceDesc%=WINUSB,USB\MS_COMP_WINUSB 
 ```
@@ -58,7 +58,7 @@ Do not use the &quot;USB&quot; setup class for unclassified devices. That class 
 
 In Windows 8, to use &quot;USBDevice&quot; device class, simply add this to your INF:
 
-```
+```cpp
   …
   [Version] 
   Class=USBDevice 
@@ -69,7 +69,7 @@ In Windows 8, to use &quot;USBDevice&quot; device class, simply add this to your
 In Device Manager you will see a new node **USB Universal Serial Bus devices** and your device appears under that node.
 <p>In Windows 7, in addition to the preceding lines, you need to create these registry settings in the INF:
 
-```
+```cpp
   ;---------- Add Registry Section ----------
   [USBDeviceClassReg] 
   HKR,,,,"Universal Serial Bus devices"

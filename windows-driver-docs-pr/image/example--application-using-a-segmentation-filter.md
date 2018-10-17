@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The following code example shows how a simple application could use the segmentation filter. For clarity, error-checking code has been omitted, as well as code to release and free interface pointers and memory.
 
-```
+```cpp
 IWiaSegmentationFilter *pWiaSegmentationFilter = NULL;
 IWiaTransferCallback *pMyWiaTransferCallback = NULL;
 IWiaTransfer  *pWiaTransfer = NULL;

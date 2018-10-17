@@ -29,7 +29,7 @@ Logical operators in GDL preprocessor conditionals are not currently supported, 
 
 You might typically use the NOT operator as the following code example shows.
 
-```
+```cpp
 #Ifdef:  symbol
 --do this--
 #Endif: 
@@ -37,7 +37,7 @@ You might typically use the NOT operator as the following code example shows.
 
 However, you should use the following code example instead.
 
-```
+```cpp
 #Ifdef:  symbol
 #Else:
 --do this--
@@ -48,7 +48,7 @@ However, you should use the following code example instead.
 
 You might typically use the AND operator as the following code example shows.
 
-```
+```cpp
 #Ifdef:  (symbolA  *AND* symbolB)
 --do this--
 #Endif: 
@@ -56,7 +56,7 @@ You might typically use the AND operator as the following code example shows.
 
 However, you should use the following code example instead.
 
-```
+```cpp
 #Ifdef:  symbolA
 #Ifdef:  symbolB
 --do this--
@@ -68,7 +68,7 @@ However, you should use the following code example instead.
 
 You might typically use the OR operator as the following code example shows.
 
-```
+```cpp
 #Ifdef:  (symbolA  *OR* symbolB)
 --do this--
 #Endif: 
@@ -76,7 +76,7 @@ You might typically use the OR operator as the following code example shows.
 
 However, you should use the following code example instead.
 
-```
+```cpp
 #Ifdef:  symbolA
 #Define: TempSymbol
 #Elseifdef: symbolB

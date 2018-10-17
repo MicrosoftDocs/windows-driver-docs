@@ -22,7 +22,7 @@ A co-installer's interface consists of an exported entry point function and an a
 
 A co-installer must export an entry point function that has the following prototype:
 
-```
+```cpp
 typedef DWORD 
   (CALLBACK* COINSTALLER_PROC) (
     IN DI_FUNCTION  InstallFunction,
@@ -63,7 +63,7 @@ A co-installer does not set a return status of ERROR_DI_DO_DEFAULT. This status 
 
 COINSTALLER_CONTEXT_DATA is a co-installer-specific context structure that describes an installation request. The format of the structure is:
 
-```
+```cpp
 typedef struct 
   _COINSTALLER_CONTEXT_DATA {
       BOOLEAN  PostProcessing;

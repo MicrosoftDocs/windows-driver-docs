@@ -31,7 +31,7 @@ The *Unload* routine should first check to ensure that all its devices have been
 
 3.  Delete the device object for the device by calling [**IoDeleteDevice**](https://msdn.microsoft.com/library/windows/hardware/ff549083), as follows:
 
-    ```
+    ```cpp
         IoDeleteDevice (NewBatt->DeviceObject);
     ```
 

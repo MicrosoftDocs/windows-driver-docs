@@ -24,13 +24,13 @@ To install test certificates on a test computer by using [**CertMgr**](https://m
 
 The following CertMgr command adds the certificate in the certificate file *CertificateFileName.cer* to the Trusted Root Certification Authorities certificate store on the test computer:
 
-```
+```cpp
 CertMgr.exe /add CertificateFileName.cer /s /r localMachine root
 ```
 
 The following CertMgr command adds the certificate in the certificate file *CertificateFileName.cer* to the Trusted Publishers certificate store on the test computer:
 
-```
+```cpp
 CertMgr.exe /add CertificateFileName.cer /s /r localMachine trustedpublisher
 ```
 

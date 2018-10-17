@@ -25,7 +25,7 @@ The required **ScanAvailableEvent** element informs a client that a scan device 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScanAvailableEvent>
   child elements
 </wscn:ScanAvailableEvent>
@@ -81,7 +81,7 @@ Examples
 
 The following code example shows how a client subscribes to receive ScanAvailableEvent events from the WSD Scan Service.
 
-```
+```xml
 <soap:Envelope
     xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
     xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
@@ -124,7 +124,7 @@ The following code example shows how a client subscribes to receive ScanAvailabl
 
 The following code example shows the WSD Scan Service's response to a client's subscription request.
 
-```
+```xml
 <soap:Envelope
     xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
     xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
@@ -158,7 +158,7 @@ The following code example shows the WSD Scan Service's response to a client's s
 
 The following code example shows how the WSD Scan Service sends a ScanAvailableEvent to a client.
 
-```
+```xml
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
   xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
@@ -183,7 +183,7 @@ The following code example shows how the WSD Scan Service sends a ScanAvailableE
 </soap:Envelope>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ClientContext**](clientcontext.md)

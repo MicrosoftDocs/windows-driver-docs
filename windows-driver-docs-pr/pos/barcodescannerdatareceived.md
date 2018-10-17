@@ -19,7 +19,7 @@ The scanned data is variable length and consists of the [PosBarcodeScannerDataRe
 
 ## Syntax
 
-``` syntax
+```cpp
 typedef struct _PosBarcodeScannerDataReceivedEventData
 {
     PosEventDataHeader Header;

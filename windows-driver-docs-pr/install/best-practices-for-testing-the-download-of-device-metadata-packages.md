@@ -19,13 +19,13 @@ Because of how the device metadata retrieval client ([DMRC](device-metadata-retr
 
     Windows 7:
 
-    ```
+    ```cpp
     %LOCALAPPDATA%\Microsoft\Device Metadata\
     ```
 
     Windows 8:
 
-    ```
+    ```cpp
     %PROGRAMDATA%\Microsoft\Windows\DeviceMetadataCache\
     ```
 

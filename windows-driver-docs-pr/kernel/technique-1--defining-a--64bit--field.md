@@ -85,7 +85,7 @@ To accommodate 64-bit callers, the driver defines a Function field that is short
 
 The following code example shows how to define a "64Bit" field in a driver header file:
 
-```
+```cpp
 #define REGISTER_FUNCTION 0     // Define the IOCTL function code
 
 #ifdef  _WIN64

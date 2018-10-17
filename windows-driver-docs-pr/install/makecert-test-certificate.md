@@ -26,7 +26,7 @@ To test-sign a [catalog file](catalog-files.md) or embed a signature in a driver
 
 Use the [**CertMgr**](../devtest/certmgr.md) tool, as follows, to install a test certificate in the Trusted Root Certification Authorities certificate store of the local computer that you use to sign drivers:
 
-```
+```cpp
 CertMgr /add CertFileName.cer /s /r localMachine root
 ```
 

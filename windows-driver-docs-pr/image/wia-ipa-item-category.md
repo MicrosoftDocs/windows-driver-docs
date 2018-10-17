@@ -322,7 +322,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_IPA\_ITEM\_FLAGS**](wia-ipa-item-flags.md)

@@ -19,7 +19,7 @@ The **EFI\_USBFN\_MESSAGE** enumeration is used to indicate the event that initi
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef enum _EFI_USBFN_MESSAGE
 {
 EfiUsbMsgNone = 0,

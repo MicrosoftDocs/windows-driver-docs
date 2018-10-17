@@ -43,7 +43,7 @@ The *value-entry-name* string is omitted from a **RunOnce** registry entry. The 
 
 The *value* parameter in a **RunOnce** key specifies the command to be executed. This parameter is a quoted string that has the following format:
 
-```
+```cpp
 Rundll32[.exe] DllName,EntryPoint[Arguments]
 ```
 
@@ -65,7 +65,7 @@ Consider the following guidelines when you create a *value* string entry:
 
 The following code example shows the *add-registry-section* entry that stores a command and its arguments under the **RunOnce** key:
 
-```
+```cpp
 ;; WDMAud swenum install
 
 HKLM,%RunOnce%,"WDM_WDMAUD",,\

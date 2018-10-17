@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 For a DirectX 8.0 level driver to report support for programmable pixel shader hardware, it must set the **PixelShaderVersion** field of the D3DCAPS8 structure to a valid, nonzero pixel shader version number. The **PixelShaderVersion** is a DWORD where the most significant word must have the value 0xFFFF and the least significant word holds the actual version number. This least significant byte of this word holds the minor version number and the most significant byte holds the major version number. Because the format of this DWORD is complex, the driver must set the value of **PixelShaderVersion** using the macro D3DPS\_VERSION defined in *d3d8types.h*. For example, the following code fragment sets the **PixelShaderVersion** to indicate support for 1.0 level functionality.
 
-```
+```cpp
 myD3DCaps8.PixelShaderVersion = D3DPS_VERSION(1, 0);
 ```
 

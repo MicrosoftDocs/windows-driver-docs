@@ -15,7 +15,7 @@ A WMI provider uses the MSFC\_LinkEvent WMI class to report link events.
 
 The MSFC\_LinkEvent class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MSFC_LinkEvent : WMIEvent {
   [key] 
   string InstanceName;

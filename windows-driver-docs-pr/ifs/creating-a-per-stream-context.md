@@ -30,7 +30,7 @@ A file system filter driver typically creates a [per-stream context structure](f
 
 Per-stream context structures can be allocated from paged or nonpaged pool. To allocate a per-stream context, call [**ExAllocatePoolWithTag**](https://msdn.microsoft.com/library/windows/hardware/ff544520) as shown in the following example:
 
-```
+```cpp
 contextSize = sizeof(SPY_STREAM_CONTEXT) + fileName.Length;
 ctx = ExAllocatePoolWithTag(NonPagedPool, 
                             contextSize,

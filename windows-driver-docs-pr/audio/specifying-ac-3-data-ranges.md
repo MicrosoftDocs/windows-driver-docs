@@ -26,9 +26,9 @@ ms.localizationpriority: medium
 ## <span id="specifying_ac_3_data_ranges"></span><span id="SPECIFYING_AC_3_DATA_RANGES"></span>
 
 
-In the Windows SDK for Windows 2000 and later, Windows Me, and Windows 98 SE, the header file Mmreg.h defines the value 0x0092 to be the wave-format tag for AC-3-over-S/PDIF:
+The header file Mmreg.h defines the value 0x0092 to be the wave-format tag for AC-3-over-S/PDIF:
 
-```
+```cpp
     #define WAVE_FORMAT_DOLBY_AC3_SPDIF  0x0092
 ```
 
@@ -36,14 +36,14 @@ Wave-format tags 0x0240 and 0x0241 are synonymous with 0x0092 and many DVD appli
 
 The corresponding format-subtype GUID can be specified in terms of the wave-format tag by using the DEFINE\_WAVEFORMATEX\_GUID macro from the header file Ksmedia.h as follows:
 
-```
+```cpp
   #define KSDATAFORMAT_SUBTYPE_AC3_SPDIF    \
                       DEFINE_WAVEFORMATEX_GUID(WAVE_FORMAT_DOLBY_AC3_SPDIF)
 ```
 
 The following code example shows how a WaveCyclic or WavePci miniport driver can specify the [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537096) table entries for a pin that supports the AC-3-over-S/PDIF format:
 
-```
+```cpp
 static KSDATARANGE_AUDIO PinDataRangesAC3Stream[] =
 {
   // 48-kHz AC-3 over S/PDIF

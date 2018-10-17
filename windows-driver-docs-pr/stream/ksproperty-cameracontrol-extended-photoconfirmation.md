@@ -49,7 +49,7 @@ The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOCONFIRMATION** property ID that 
 
 For the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header), the following flag values are used to turn photo confirmation on or off. By default, the driver should have **KSPROPERTY\_PHOTOCONFIRMATION\_ON** set. The flag values are defined as follows.
 
-``` syntax
+```cpp
 #define KSCAMERA_EXTENDEDPROP_PHOTOCONFIRMATION_OFF     0x0000000000000000 
 #define KSCAMERA_EXTENDEDPROP_PHOTOCONFIRMATION_ON      0x0000000000000001
 ```

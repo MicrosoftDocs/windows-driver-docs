@@ -24,7 +24,7 @@ The WPD\_COMMAND\_OBJECT\_PROPERTIES\_GET\_ATTRIBUTES command is first handled i
 
 The following excerpt from the **WpdObjectProperties::DispatchWpdMessage** method in *WpdObjectProperties.cpp* shows the call to the **WpdObjectProperties::OnGetPropertyAttributes** handler for the retrieval of property attributes. The **DispatchWpdMessage** method passes the command parameters to the handler. These parameters include an object identifier for the object whose properties the driver should retrieve. Additionally, the parameters include a collection of property keys that identify the attributes to be retrieved.
 
-```
+```cpp
 HRESULT WpdObjectProperties::DispatchWpdMessage(
     const PROPERTYKEY&     Command,
     IPortableDeviceValues* pParams,

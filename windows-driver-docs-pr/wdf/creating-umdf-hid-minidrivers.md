@@ -38,7 +38,7 @@ You can write a HID minidriver using either KMDF or UMDF. We recommend starting 
 
     For example:
 
-    ```
+    ```cpp
     [hidumdf.NT.Wdf]
     UmdfKernelModeClientPolicy = AllowKernelModeClients
     UmdfMethodNeitherAction=Copy

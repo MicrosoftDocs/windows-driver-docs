@@ -18,7 +18,7 @@ The data buffer for this event is as follows.
 
 ## Syntax
 
-``` syntax
+```cpp
 typedef struct _PosStatusUpdatedEventData
 {
     PosEventDataHeader Header;

@@ -58,7 +58,7 @@ Examples
 
 The following code example decrements an object's reference count.
 
-```
+```cpp
 WdfObjectDereference(Object); 
 ```
 

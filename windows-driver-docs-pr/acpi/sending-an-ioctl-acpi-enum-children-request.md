@@ -38,7 +38,7 @@ After the example code obtains the required size of the output buffer, it perfor
 
 4.  Processes the array of child object names in the output buffer.
 
-```
+```cpp
 #define MY_TAG &#39;gTyM&#39;   // Pool tag for memory allocation
 
  ACPI_ENUM_CHILDREN_INPUT_BUFFER  inputBuffer;

@@ -24,7 +24,7 @@ The DLL must export two functions:
 
 -    BluetoothEnableRadio: The radio support DLL implements BluetoothEnableRadio to enable Windows to turn power to the radio on or off.
 
-```
+```cpp
 C++ 
 DWORD WINAPI BluetoothEnableRadio(
    BOOL fEnable
@@ -37,7 +37,7 @@ Return value: Return ERROR_SUCCESS if current state was changed to state of fEna
 
 -    IsBluetoothRadioEnabled: The radio support DLL implements IsBluetoothRadioEnabled to enable Windows to determine if power to the radio is on or off.
 
-```
+```cpp
 C++ 
 DWORD WINAPI IsBluetoothRadioEnabled(
    BOOL* pfEnabled
@@ -97,7 +97,7 @@ Windows Registry Editor Version 5.00
 
 
 MAKEFILE
-```
+```cpp
 ###### --------------------------------------------------------------------
 
 ######

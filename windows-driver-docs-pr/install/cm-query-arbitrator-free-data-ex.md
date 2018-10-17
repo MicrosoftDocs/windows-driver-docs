@@ -15,13 +15,3 @@ ms.localizationpriority: medium
 # CM_Query_Arbitrator_Free_Data_Ex
 
 This function is reserved for system use.
-
-
- 
-
- 
-
-
-
-
-

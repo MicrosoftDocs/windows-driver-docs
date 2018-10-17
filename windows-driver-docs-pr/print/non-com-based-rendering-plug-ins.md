@@ -30,7 +30,7 @@ An IHV can implement **OEMLineTo**, or any of the other hook-out functions descr
 
 **OEMLineTo** could be implemented as shown in the following pseudocode example:
 
-```
+```cpp
 BOOL APIENTRY
   OEMLineTo(
     SURFOBJ  *pso,
@@ -48,7 +48,7 @@ if ( OEM intends to handle the call ) {
  code to handle the call
 }
 else
-// OEM calls Unidrv&#39;s DrvLineTo DDI
+// OEM calls Unidrv's DrvLineTo DDI
   bRetVal = (((PFN_DrvLineTo)(poempdev->pfnUnidrv[UD_DrvLineTo])) (
  pso,
             pco,
@@ -64,7 +64,7 @@ else
 
 In the preceding example, the expression
 
-```
+```cpp
 poempdev->pfnUnidrv[UD_DrvLineTo]
 ```
 

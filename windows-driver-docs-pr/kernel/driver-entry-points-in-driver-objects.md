@@ -34,7 +34,7 @@ The I/O manager maintains information about driver-created device objects in the
 
 When a driver is loaded, its [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine is called with a pointer to the driver object. When a driver's **DriverEntry** routine is called, it sets *Dispatch*, *StartIo* (if any), and *Unload* (if any) entry points directly in the driver object as follows:
 
-```
+```cpp
 DriverObject->MajorFunction[IRP_MJ_xxx] = DDDispatchXxx; 
               :    : 
 DriverObject->MajorFunction[IRP_MJ_yyy] = DDDispatchYyy; 
@@ -46,7 +46,7 @@ DriverObject->DriverUnload = DDUnload;
 
 The **DriverEntry** routine also sets the entry point of its *AddDevice* routine, in the **DriverExtension** of its driver object, as follows:
 
-```
+```cpp
 DriverObject->DriverExtension->AddDevice = DDAddDevice; 
 ```
 

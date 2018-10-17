@@ -756,6 +756,8 @@
       href: flt-parameters-for-irp-mj-query-ea.md
     - name: "FLT_PARAMETERS for IRP_MJ_QUERY_INFORMATION"
       href: flt-parameters-for-irp-mj-query-information.md
+    - name: "FLT_PARAMETERS for IRP_MJ_QUERY_OPEN"
+      href: flt-parameters-for-irp-mj-query-open.md
     - name: "FLT_PARAMETERS for IRP_MJ_QUERY_QUOTA"
       href: flt-parameters-for-irp-mj-query-quota.md
     - name: "FLT_PARAMETERS for IRP_MJ_QUERY_SECURITY"

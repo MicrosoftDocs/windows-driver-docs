@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 
 Call [**IoAttachDeviceToDeviceStackSafe**](https://msdn.microsoft.com/library/windows/hardware/ff548236) to attach the filter device object to the filter driver stack for the target file system or volume.
 
-```
+```cpp
 devExt = myLegacyFilterDeviceObject->DeviceExtension;
 
 status = IoAttachDeviceToDeviceStackSafe(
@@ -39,7 +39,7 @@ Note that the device object pointer received by the *AttachedToDeviceObject* out
 
 Every file system is required to create one or more named control device objects. To attach to a particular file system directly, a file system filter driver passes the name of the appropriate file system control device object to [**IoGetDeviceObjectPointer**](https://msdn.microsoft.com/library/windows/hardware/ff549198) to get a device object pointer. The following code snippet shows how to get such a pointer to one of the two control device objects for the RAW file system:
 
-```
+```cpp
 RtlInitUnicodeString(&nameString, L"\\Device\\RawDisk");
 
 status = IoGetDeviceObjectPointer(

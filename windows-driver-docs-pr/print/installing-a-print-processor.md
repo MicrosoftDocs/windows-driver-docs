@@ -36,7 +36,7 @@ To associate the print processor with the print queue for Plug and Play installa
 
 The following code example sets the **pPrintProcessor** member of the PRINTER\_INFO\_2 structure to the name of your print processor, and then calls the **SetPrinter** function (described in the Windows SDK documentation) to update the printer's settings. Note that the name of the print processor in *gszPrintProc* must be the same as that in the PrintProcessor entry in your INF file.
 
-```
+```cpp
 BOOL
 DrvPrinterEvent(
                LPWSTR  pPrinterName,
@@ -104,7 +104,7 @@ DrvPrinterEvent(
 
 When a printer driver is updated, the print processor of the updated print queue is not changed. If the new printer driver requires a particular print processor, the printer interface DLL's [**DrvUpgradePrinter**](https://msdn.microsoft.com/library/windows/hardware/ff548648) function must set the **pPrintProcessor** member of the PRINTER\_INFO\_2 structure to the name of the new print processor. After this occurs, this function calls **SetPrinter** to update the printer's settings. The spooler calls the **DrvUpgradePrinter** function once for each printer, which ensures that all printers using that driver also use the required print processor. The following code example demonstrates these points.
 
-```
+```cpp
 BOOL
 DrvUpgradePrinter(
                  DWORD   Level,
@@ -141,7 +141,7 @@ DrvUpgradePrinter(
       //
       // This function is called for every printer queue that uses a driver
       // for which one or more files were updated. However, we only want to
-      // update the printer queue&#39;s "driver" by a particular driver.
+      // update the printer queue's "driver" by a particular driver.
       //
       if ( !lstrcmpi(pInfo->pDriverName, gszPrintDriver) )
       {

@@ -25,14 +25,14 @@ First and foremost, a potential problem to look for in existing 32-bit driver co
 
 For example, the [**IRP**](https://msdn.microsoft.com/library/windows/hardware/ff550694) pointer field **IoStatus**.**Information** is of type ULONG\_PTR. The following code shows what not to do when copying a 64-bit pointer value to this field:
 
-```
+```cpp
     PDEVICE_RELATIONS pDeviceRelations;
     Irp->IoStatus.Information = (ULONG)pDeviceRelations;  // wrong
 ```
 
 This code sample erroneously casts the `pDeviceRelations` pointer to type ULONG, which can truncate the pointer value if `sizeof(pDeviceRelations) > sizeof(ULONG)`. The correct approach is to cast the pointer to ULONG\_PTR, as shown in the following:
 
-```
+```cpp
     PDEVICE_RELATIONS pDeviceRelations;
     Irp->IoStatus.Information = (ULONG_PTR)pDeviceRelations;  // correct
 ```
@@ -41,13 +41,13 @@ This preserves all 64 bits of the pointer value.
 
 A resource list stores the physical address of a resource in a structure of type PHYSICAL\_ADDRESS (see [IResourceList](https://msdn.microsoft.com/library/windows/hardware/ff536976)). To avoid truncating a 64-bit address, you should access the structure's **QuadPart** member rather than its **LowPart** member when copying an address into the structure or reading an address from the structure. For example, the **FindTranslatedPort** macro returns a pointer to a [**CM\_PARTIAL\_RESOURCE\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff541977) structure that contains the base address of an I/O port. The **u**.**Port**.**Start** member of this structure is a PHYSICAL\_ADDRESS pointer to the base address. The following code shows what not to do:
 
-```
+```cpp
     PUSHORT pBase = (PUSHORT)FindTranslatedPort(0)->u.Port.Start.LowPart;  // wrong
 ```
 
 Again, this can truncate the pointer. Instead, you should access the **QuadPart** of this member, as shown in the following:
 
-```
+```cpp
     PUSHORT pBase = (PUSHORT)FindTranslatedPort(0)->u.Port.Start.QuadPart;  // correct
 ```
 
@@ -55,14 +55,14 @@ This copies the entire 64-bit pointer.
 
 Inline Win64 functions such as **PtrToUlong** and **UlongToPtr** safely convert between pointer and integer types without relying on assumptions about the relative sizes of these types. If one type is shorter than the other, it must be extended when converting to the longer type. Whether the shorter type is extended by filling with the sign bit or with zeros is well defined for each Win64 function. This means that any code snippets such as
 
-```
+```cpp
     ULONG ulSlotPhysAddr[NUM_PHYS_ADDRS];
     ulSlotPhysAddr[0] = ULONG(pulPhysDmaBuffer) + DMA_BUFFER_SIZE;  // wrong
 ```
 
 should be replaced by
 
-```
+```cpp
     ULONG_PTR ulSlotPhysAddr[NUM_PHYS_ADDRS];
     ulSlotPhysAddr[0] = PtrToUlong(pulPhysDmaBuffer) + DMA_BUFFER_SIZE;  // correct
 ```

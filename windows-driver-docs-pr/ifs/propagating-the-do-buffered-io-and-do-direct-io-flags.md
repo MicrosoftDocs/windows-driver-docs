@@ -28,7 +28,7 @@ ms.localizationpriority: medium
 
 After attaching a filter device object to a file system or volume, always be sure to set or clear the DO\_BUFFERED\_IO and DO\_DIRECT\_IO flags as needed so that they match the values of the next-lower device object on the driver stack. (For more information about these flags, see [Methods for Accessing Data Buffers](https://msdn.microsoft.com/library/windows/hardware/ff554436).) An example of this follows:
 
-```
+```cpp
 if (FlagOn( DeviceObject->Flags, DO_BUFFERED_IO )) {
     SetFlag( myLegacyFilterDeviceObject->Flags, DO_BUFFERED_IO );
 }

@@ -15,6 +15,9 @@ ms.localizationpriority: medium
 
 This topic highlights the new features and improvements for Universal Serial Bus (USB) in Windows 10.
 
+-  **UCSI driver extension** 
+    Starting in Windows 10, version 1809, a new class extension for UCSI (UcmUcsiCx.sys) has been added,which implements the UCSI specification in a transport agnostic way. With minimal amount of code, your driver, which is a client to UcmUcsiCx, can communicate with the USB Type-C hardware over non-ACPI transport. This topic describes the services provided by the UCSI class extension and the expected behavior of the client driver.
+
 -   **USB Type-C Port Controller Interface** 
 
     Windows 10 version 1703 provides a class extension (UcmTcpciCx.sys) that supports the Universal Serial Bus Type-C Port Controller Interface Specification. A USB Type-C connector driver does not need to maintain any internal PD/Type-C state. 

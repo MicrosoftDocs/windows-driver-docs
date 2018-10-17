@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The following code shows constant definitions and common variables that are used in the code examples in this section.
 
-```
+```cpp
 //
 // WSD Challenge DLL name (including a forward path separator) and public API names
  

@@ -22,7 +22,7 @@ The following example shows how to modify a 32-bit driver for 64-bit by adding a
 
 ### Original Driver Code
 
-```
+```cpp
 typedef struct _TESTDRV_EVENT_BUFFER {
      HANDLE Handle;
      ULONG Key;
@@ -60,7 +60,7 @@ TestdrvFsControl (
 
 ### Driver Code With Thunking Support
 
-```
+```cpp
 typedef struct _TESTDRV_EVENT_BUFFER {
      HANDLE Handle;
      ULONG Key;

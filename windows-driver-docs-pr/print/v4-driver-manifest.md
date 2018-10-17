@@ -442,7 +442,7 @@ The following table shows the directives that are used in the PrinterExtensions 
 
 The following is a sample of a v4 print driver manifest.
 
-```Text
+```INF
 [DriverConfig]
 DataFile=FAPDL.xml
 RequiredFiles=UNIRES.DLL,STDNAMES.GPD,STDDTYPE.GDL,STDSCHEM.GDL,STDSCHMX.GDL,XPSSVCS.DLL,MSXPSINC.GPD,PWGRRenderFilter.DLL

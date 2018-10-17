@@ -48,7 +48,7 @@ ms.localizationpriority: medium
 <p>Understand the behavior of UDE, how it interacts with the client driver, and the features that the client driver is expected to implement.</p>
 <p>[Write a UDE client driver](writing-a-ude-client-driver.md)</p>
 <p><strong>Programming reference sections</strong></p>
-<p>[Emulated USB host controller driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt628025)</p>
+<p>[Emulated USB host controller driver programming reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#emulated-host-controller-driver-reference)</p>
 <p>[WDF Reference](https://msdn.microsoft.com/library/windows/hardware/dn265590)</p></td>
 </tr>
 </tbody>

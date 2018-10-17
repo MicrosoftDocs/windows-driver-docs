@@ -25,7 +25,7 @@ The optional **ADF** element describes the capabilities of the automatic documen
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ADF>
   child elements
 </wscn:ADF>
@@ -85,7 +85,7 @@ Remarks
 
 If the scan device has an ADF, the WSD Scan Service must provide configuration information for all **ADF** child elements.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ADFBack**](adfback.md)

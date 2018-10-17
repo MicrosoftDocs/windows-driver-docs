@@ -44,7 +44,7 @@ The following components are blocked from executing on Windows 10 S:
 -   dnx.exe
 -   fsi.exe
 -   hh.exe
--   infdefaultinstall.exe (new addition for Fall Creators update)
+-   infdefaultinstall.exe (new addition for Windows 10, version 1709)
 -   kd.exe
 -   lxssmanager.exe
 -   msbuild.exe
@@ -65,4 +65,4 @@ The following components are blocked from executing on Windows 10 S:
 -   wsl.exe
 
 > [!NEXT]
-> To ensure your Windows app will operate correctly on devices that run Windows 10 in S mode, please review the [test guidance](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-test-windows-s) for apps. 
+> To ensure your Windows app will operate correctly on devices that run Windows 10 in S mode, please review the [test guidance](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-test-windows-s) for apps. 

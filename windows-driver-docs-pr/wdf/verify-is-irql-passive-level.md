@@ -57,7 +57,7 @@ Examples
 
 The following code example breaks into the kernel debugger if the driver is not executing at IRQL = PASSIVE_LEVEL.
 
-```
+```cpp
 VERIFY_IS_IRQL_PASSIVE_LEVEL();
 ```
 

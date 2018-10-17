@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 An MPIO driver uses the MPIO\_DEVINSTANCE\_HEALTH\_INFO WMI class to report health statistics of an MPIO disk by using underlying different paths.
 
-```
+```cpp
 class MPIO_DEVINSTANCE_HEALTH_INFO
 {
     [key, read]

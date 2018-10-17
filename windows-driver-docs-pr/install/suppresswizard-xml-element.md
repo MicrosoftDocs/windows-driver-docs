@@ -21,7 +21,7 @@ The **suppressWizard** XML element is an empty element that sets the **suppressW
 
 **Element Tag**
 
-```
+```cpp
 <suppressWizard>
 ```
 
@@ -64,7 +64,7 @@ By default, the **suppressWizard** flag is set to OFF. You can set the **suppres
 
 The following code example demonstrates a **supressWizard** element.
 
-```
+```cpp
 <dpinst>
   ...
   <suppressWizard/>

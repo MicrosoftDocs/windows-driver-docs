@@ -116,7 +116,7 @@ Each Converter construct will include one or more Conversion elements to define 
 
 The following code example extends the bidi communications schema by adding new properties and Converter constructs.
 
-```
+```cpp
 <Property name="Printer">
   <Property name="Layout">
     <Property name="InputBins">
@@ -151,7 +151,7 @@ The following code example extends the bidi communications schema by adding new 
 
 The preceding example results in the following queries.
 
-```
+```cpp
 \Printer.Layout.InputBins.Bin###:BinType
 \Printer.Layout.Orientation:CurrentValue
 \Printer.Custom.HostResourceMIB:InterfaceName

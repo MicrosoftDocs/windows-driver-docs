@@ -131,9 +131,11 @@ If the driver had been signed by attestation, then the OID would end with a 1:
 
 ## Related topics
 
-   *  [Create a new hardware submission](create-a-new-hardware-submission.md)
-   *  [Managing hardware submissions in the Windows Hardware Dev Center dashboard](manage-your-hardware-submissions.md)
-   *  [Driver flighting](driver-flighting.md)
+- [Create a new hardware submission](create-a-new-hardware-submission.md)
+
+- [Managing hardware submissions in the Windows Hardware Dev Center dashboard](manage-your-hardware-submissions.md)
+
+- [Driver flighting](driver-flighting.md)
 
  
 

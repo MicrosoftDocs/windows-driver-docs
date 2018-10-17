@@ -249,7 +249,7 @@ For more information, see the discussion of the **IDirectMusicPort::DownloadInst
 
 The KSPROPERTY\_SYNTH\_DLS\_DOWNLOAD property request specifies the location of the DLS download data with a user memory address. The miniport driver should probe and lock the user memory containing the DLS data before attempting to access it. The following example code shows how to do this:
 
-```
+```cpp
   NTSTATUS Status = STATUS_UNSUCCESSFUL;
   PSYNTH_BUFFER pDlsBuffer = (PSYNTH_BUFFER)pRequest->Instance;
   PMDL pMdl = IoAllocateMdl(pDlsBuffer->BufferAddress, pDlsBuffer->BufferSize,

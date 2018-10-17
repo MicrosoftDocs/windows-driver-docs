@@ -78,7 +78,7 @@ Follow the process described in [Download kits and tools for Windows 10](https:/
 
 To create a CAB file that can be submitted to the dashboard, complete the following steps:
 
-1. Gather the binaries that you will submit to be signed in a single directory. In this example, we will use C:\\Echo. The steps described here will reference the [echo driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/echo/kmdf/driver/AutoSync) available available from GitHub.
+1. Gather the binaries that you will submit to be signed in a single directory. In this example, we will use C:\\Echo. The steps described here will reference the [echo driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/echo/kmdf/driver/AutoSync) available from GitHub.
 
 Typical CAB file submissions contain the following:
 
@@ -97,7 +97,7 @@ Open a Command Prompt window as Administrator. Then enter the following command 
 
 MakeCab /?
 
-```
+```cpp
 C:\Echo> MakeCab /?
 Cabinet Maker - Lossless Data Compression Tool
 
@@ -117,7 +117,7 @@ MAKECAB [/V[n]] [/D var=value ...] /F directive_file [...]
 
 3. Prepare a cab file DDF input file. For our Echo driver it might look something like this.
 
-```
+```cpp
 ;*** Echo.ddf example
 ;
 .OPTION EXPLICIT     ; Generate errors
@@ -144,13 +144,13 @@ C:\Echo\Echo.Sys
 
 4. Call the makecab utility and provide the ddf file as input using the /f option.
 
-```
+```cpp
 C:\Echo> MakeCab /f "C:\Echo\Echo.ddf
 ```
 
 The output of makecab should display the number of files in the created cabinet, in our example 2.
 
-```
+```cpp
 C:\Echo> MakeCab /f Echo.ddf
 Cabinet Maker - Lossless Data Compression Tool
 
@@ -170,7 +170,7 @@ Throughput:              86.77 Kb/second
 
 1. Use the process recommended by the EV cert provider to sign the cab file with your EV cert. For example, you might use the signtool and if you are using Verisign, you might specify their timestamp server.
 
-```
+```cpp
 C:\Echo> SignTool sign /v /ac "C:\MyEVCert.cer" /s MY /n "Company Name" /t http://timestamp.verisign.com/scripts/timstamp.dll "C:\Echo\Disk1\Echo.cab"
 ```
 
@@ -200,13 +200,13 @@ Complete the following steps to ensure that the driver was properly signed.
 
 2. Open a Command Prompt window as Administrator. Then enter the following command to verify that the driver was signed as expected.
 
-```
+```cpp
 C:\Echo> SignTool verify Echo.Sys
 ```
 
 3.To list additional information and have signtool verify all signatures in a file with multiple signatures, type the following.
 
-```
+```cpp
 C:\Echo> SignTool verify /pa /ph /v /d Echo.Sys
 ```
 
@@ -229,7 +229,7 @@ Use the following instructions to install the sample driver.
 
 2. Alternatively, open a Command Prompt window as Administrator and use devcon to install the driver. Navigate to your driver package folder, and enter the following command.
 
-```
+```cpp
 C:\Echo> devcon install echo.inf root\ECHO
 ```
 
@@ -243,7 +243,7 @@ To submit multiple drivers at the same time create a sub directory for each driv
 
 Prepare a CAB file DDF input file that references the subdirectories. It might look something like this:
 
-```
+```cpp
 ;*** Submission.ddf multiple driver example
 ;
 .OPTION EXPLICIT     ; Generate errors

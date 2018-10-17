@@ -18,18 +18,22 @@ api_location:
 - olesnmp.h
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # ISNMP::GetAsByte method
-
 
 The `GetAsByte` method enables an ASP Web page to get the value identified by an SNMP OID and to convert the value to an unsigned integer.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT GetAsByte(
   [in]  BSTR  bstrOID,
   [out] PUINT puValue
@@ -81,12 +85,7 @@ This method returns one of the values in the following table.
 </tbody>
 </table>
 
- 
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 This method calls the **SnmpMgrRequest** function to retrieve the value identified by an SNMP OID. Before the method passes the value to the caller, it converts the caller to an unsigned integer. For more information about **SnmpMgrRequest**, see the Windows SDK documentation.
 
@@ -116,13 +115,13 @@ The method does not currently support conversions from data types other than tho
 
 The [**ISNMP::Open**](isnmp-open.md) method must be called before the `ISNMP::GetAsByte` method can be called.
 
-```
-    Dim StrIP, strCommunity, objSNMP, OIDValue
-    strIP = Session("MS_IPaddress")
-    strCommunity = Session ("MS_Community")
-    Set objSNMP = Server.CreateObject("OlePrn.OleSNMP")
-    objSNMP.Open strIP, strCommunity, 2, 1000
-    OIDValue = objSNMP.GetAsByte ("25.3.5.1.2")
+```vb
+Dim StrIP, strCommunity, objSNMP, OIDValue
+strIP = Session("MS_IPaddress")
+strCommunity = Session ("MS_Community")
+Set objSNMP = Server.CreateObject("OlePrn.OleSNMP")
+objSNMP.Open strIP, strCommunity, 2, 1000
+OIDValue = objSNMP.GetAsByte ("25.3.5.1.2")
 ```
 
 Requirements
@@ -138,10 +137,6 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows XP and later versions of the Windows operating systems.</p></td>
-</tr>
 <tr class="odd">
 <td><p>Header</p></td>
 <td>Olesnmp.h</td>
@@ -149,15 +144,6 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**ISNMP::Open**](isnmp-open.md)
-
- 
-
- 
-
-
-
-

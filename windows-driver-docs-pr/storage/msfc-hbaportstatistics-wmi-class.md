@@ -15,7 +15,7 @@ A WMI client uses the MSFC\_HBAPortStatistics class to query an HBA miniport dri
 
 The MSFC\_HBAPPortStatistics class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MSFC_HBAPortStatistics
 {
   [ WmiDataId(1) ]

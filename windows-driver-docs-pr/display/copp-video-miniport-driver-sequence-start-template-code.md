@@ -22,7 +22,7 @@ This section applies only to Windows Server 2003 SP1 and later, and Windows XP S
 
 Use the following example code to set the current video session to protected mode for the COPP DirectX VA device object.
 
-```
+```cpp
 VP_STATUS
 IoctlCOPPStartSeqence(
     PHW_DEVICE_EXTENSION pHwDeviceExtension,

@@ -41,7 +41,7 @@ Each value under the Virtual Device List key is a packed subunit address (subuni
 
 For example, to create a single virtual tuner subunit through an INF file, use the following **AddReg** directive:
 
-```
+```INF
 [Subunit_Device.NT.HW.AddReg]
 HKR,%VirtualAvc.DeviceList%,Tuner,0x00000001,0x28 ;0x00000001 = Binary value, 0x28 = Registry key value
 ```
@@ -49,13 +49,3 @@ HKR,%VirtualAvc.DeviceList%,Tuner,0x00000001,0x28 ;0x00000001 = Binary value, 0x
 This directive adds a REG\_BINARY value of 0x28 (subunit type 0x5 packed into the most significant five bits and maximum identifier of 0x0 packed into the least significant three bits). A maximum identifier of 0x0 here means that there will be a single subunit of that type.
 
 **Note**  : It is also necessary to define the `%VirtualAvc.DeviceList%` token in the `[Strings]` section of the subunit's INF file.
-
- 
-
- 
-
- 
-
-
-
-

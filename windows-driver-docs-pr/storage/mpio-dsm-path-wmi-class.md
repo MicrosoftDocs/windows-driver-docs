@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 MPIO publishes the MPIO\_DSM\_Path\_V2 WMI class but expects the DSM to register the GUID and handle its implementation. An MPIO driver uses the MPIO\_DSM\_Path\_V2 WMI class to identify a path ID as reported by a DSM.
 
-```
+```cpp
 class MPIO_DSM_Path
 {
 

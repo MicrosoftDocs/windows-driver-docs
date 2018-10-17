@@ -15,7 +15,7 @@ The MSiSCSI\_BootConfiguration WMI class describes how a boot device is configur
 
 This class is defined as follows in *Config.mof*.
 
-```
+```cpp
 class MSiSCSI_BootConfiguration {
   [key] string  InstanceName;
   boolean  Active;

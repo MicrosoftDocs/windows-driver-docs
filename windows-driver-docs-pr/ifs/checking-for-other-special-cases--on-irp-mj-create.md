@@ -38,7 +38,7 @@ The cases you may wish to consider in your file system:
 
 The following code example demonstrates the special case handling for FILE\_SUPERSEDE and FILE\_OVERWRITE, both cases where additional access is implicitly required by the caller, even if it was not requested.
 
-```
+```cpp
 {
 ULONG NewAccess = Supersede ? DELETE : FILE_WRITE_DATA;
 ACCESS_MASK AddedAccess = 0;

@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The keywords in this example are for illustration only, although they reflect the Print Schema keywords for 3D manufacturing. This PrintTicket is constructed specifically for a hypothetical device represented by the [PrintCapabilities document example](example-printcapabilities-document.md).
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <psf:PrintTicket
     xmlns:psf="http://schemas.microsoft.com/windows/2003/08/printing/printschemaframework"

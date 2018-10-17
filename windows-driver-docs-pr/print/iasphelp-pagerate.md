@@ -16,18 +16,22 @@ api_name:
 - Iasphelp.get_PageRate
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_PageRate method
-
 
 The **PageRate** property enables an ASP Web page to determine a printer's page rate.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_PageRate(
   [out] long *pVal
 );
@@ -71,26 +75,19 @@ This property returns one of the values in the following table.
 </tbody>
 </table>
 
- 
+## VBScript Example
 
-## <span id="ddk_iasphelp_pagerate_gg"></span><span id="DDK_IASPHELP_PAGERATE_GG"></span>
-
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
 
 To determine the units in which the page rate is measured, query the [**Iasphelp::PageRateUnit**](iasphelp-pagerateunit.md) property.
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::PageRate** property can be queried.
 
-```
-    Dim objPrinter, PtrPageRate
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
-    PtrPageRate = objPrinter.PageRate
+```vb
+Dim objPrinter, PtrPageRate
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
+PtrPageRate = objPrinter.PageRate
 ```
 
 Requirements
@@ -106,24 +103,11 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**Iasphelp::PageRateUnit**](iasphelp-pagerateunit.md)
 
 [**Iasphelp::Open**](iasphelp-open.md)
-
- 
-
- 
-
-
-
-

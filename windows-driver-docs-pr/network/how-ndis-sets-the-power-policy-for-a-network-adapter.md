@@ -103,7 +103,7 @@ NDIS uses the DEVICE\_CAPABILITIES information to determine if:
 
 The **DeviceState** array indicates, for each system power state, the highest-powered device power state in which the NIC can be and still support that system power state. For example, consider the following array values.
 
-```
+```cpp
 DeviceState[PowerSystemWorking] PowerDeviceD0
 DeviceState[PowerSystemSleeping1] PowerDeviceD1
 DeviceState[PowerSystemSleeping2] PowerDeviceD2

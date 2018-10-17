@@ -71,7 +71,7 @@ The following table lists the [**IRQ\_DEVICE\_POLICY**](https://msdn.microsoft.c
 
 A driver's INF file can provide default settings for the registry values. Here is an example of how to set the **DevicePolicy** value to **IrqPolicyOneCloseProcessor** in the INF file. For more information, see [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320).
 
-```
+```cpp
 [install-section-name.HW]
 AddReg=add-registry-section 
 
@@ -110,7 +110,7 @@ The following table gives the correspondence between registry settings and membe
 
 The KAFFINITY type is an affinity mask that represents a set of logical processors in a group.
 
-```
+```cpp
 typedef ULONG_PTR  KAFFINITY;
 ```
 
@@ -120,11 +120,11 @@ If a group contains n logical processors, the processors are numbered from 0 to 
 
 For example, if a KAFFINITY value identifies the active processors in a group, the mask bit for a processor is one if the processor is active, and is zero if the processor is not active.
 
-The number of bits in the affinity mask determines the maximum number of logical processors in a group. For a 64-bit version of Windows, the maximum number of processors per group is 64. For a 32-bit version of Windows, the maximum number of processors per group is 32. Call the [**KeQueryMaximumProcessorCountEx**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-kequerymaximumprocessorcountex) routine to obtain the maximum number of processors per group. This number depends on the hardware configuration of the multiprocessor system, but can never exceed the fixed 64-processor and 32-processor limits that are set by the 64-bit and 32-bit versions of Windows, respectively.
+The number of bits in the affinity mask determines the maximum number of logical processors in a group. For a 64-bit version of Windows, the maximum number of processors per group is 64. For a 32-bit version of Windows, the maximum number of processors per group is 32. Call the [**KeQueryMaximumProcessorCountEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-kequerymaximumprocessorcountex) routine to obtain the maximum number of processors per group. This number depends on the hardware configuration of the multiprocessor system, but can never exceed the fixed 64-processor and 32-processor limits that are set by the 64-bit and 32-bit versions of Windows, respectively.
 
-The [**GROUP_AFFINITY**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/miniport/ns-miniport-_group_affinity) structure contains an affinity mask and a group number. The group number identifies the group to which the affinity mask applies.
+The [**GROUP_AFFINITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/miniport/ns-miniport-_group_affinity) structure contains an affinity mask and a group number. The group number identifies the group to which the affinity mask applies.
 
-Kernel routines that use the KAFFINITY type include [**IoConnectInterrupt**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioconnectinterrupt), [**KeQueryActiveProcessorCount**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-kequeryactiveprocessorcount), and [**KeQueryActiveProcessors**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-kequeryactiveprocessors). 
+Kernel routines that use the KAFFINITY type include [**IoConnectInterrupt**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioconnectinterrupt), [**KeQueryActiveProcessorCount**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-kequeryactiveprocessorcount), and [**KeQueryActiveProcessors**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-kequeryactiveprocessors). 
 
  
 

@@ -28,7 +28,7 @@ The **requestOpen** element is defined in the *asyncui* namespace at this URI: h
 Usage
 -----
 
-``` syntax
+```xml
 <requestOpen>
   child elements
 </requestOpen>
@@ -100,7 +100,7 @@ Examples
 
 The following code example opens an event notification message.
 
-```
+```xml
 <?xml version="1.0" ?>
    <asyncPrintUIRequest
     xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
@@ -118,23 +118,14 @@ The following code example opens an event notification message.
   </asyncPrintUIRequest>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
+[asyncPrintUIRequest](asyncprintuirequest.md)
 
-[**asyncPrintUIRequest**](asyncprintuirequest.md)
+[balloonUI](balloonui.md)
 
-[**balloonUI**](balloonui.md)
+[customUI](customui.md)
 
-[**customUI**](customui.md)
+[messageBoxUI](messageboxui.md)
 
-[**messageBoxUI**](messageboxui.md)
-
-[**requestClose**](requestclose.md)
-
- 
-
- 
-
-
-
-
+[requestClose](requestclose.md)

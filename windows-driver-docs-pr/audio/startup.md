@@ -19,7 +19,7 @@ For each paired HFP device that arrives in the audio system, the Windows HFP dri
 
 When the audio driver calls IoRegisterPlugPlayNotification, the call is made using the following parameters.
 
--   EventCategory is set to to EventCategoryDeviceInterfaceChange.
+-   EventCategory is set to EventCategoryDeviceInterfaceChange.
 
 -   EventCategoryFlags is typically set to PNPNOTIFY\_DEVICE\_INTERFACE\_INCLUDE\_EXISTING\_INTERFACES in order to receive immediate notifications of existing interfaces. However some alternate audio driver designs might find existing interfaces through other means.
 

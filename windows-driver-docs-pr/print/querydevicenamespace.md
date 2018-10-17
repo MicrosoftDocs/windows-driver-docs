@@ -20,7 +20,7 @@ The [**IPrintTicketProvider::QueryDeviceNamespace**](https://msdn.microsoft.com/
 
 The following sample code illustrates how this method could be implemented.
 
-```
+```cpp
 STDMETHODIMP
 CPrintTicketProvider::QueryDeviceNamespace(BSTR *pDefaultNamespace)
 {

@@ -62,7 +62,7 @@ Secure Digital (SD) card drivers use property requests to read or set card prope
 
 The following code example illustrates how a driver for a function on a multifunction card might request its function number from the bus driver:
 
-```
+```cpp
  sdrp = ExAllocatePool(NonPagedPool, 
  sizeof(SDBUS_REQUEST_PACKET));
  if (!sdrp) {

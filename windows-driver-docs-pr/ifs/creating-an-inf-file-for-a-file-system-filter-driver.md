@@ -81,7 +81,7 @@ An INF file for a file system filter driver generally contains the following sec
 
 The [**Version**](https://msdn.microsoft.com/library/windows/hardware/ff547502) section specifies a class and GUID that are determined by the type of filter, as shown in the following code example.
 
-```
+```cpp
 [Version]
 Signature   = "$WINDOWS NT$"
 Class       = "ActivityMonitor"
@@ -140,7 +140,7 @@ The [**DestinationDirs**](https://msdn.microsoft.com/library/windows/hardware/ff
 
 In this section and in the **ServiceInstall** section, you can specify well-known system directories by using system-defined numeric values. For a list of these values, see [**INF DestinationDirs Section**](https://msdn.microsoft.com/library/windows/hardware/ff547383). In the following code example, the value "12" refers to the Drivers directory (%windir%\\system32\\drivers), and the value "10" refers to the Windows directory (%windir%).
 
-```
+```cpp
 [DestinationDirs]
 DefaultDestDir             = 12
 MyLegacyFilter.DriverFiles = 12
@@ -153,7 +153,7 @@ The [**SourceDisksNames**](https://msdn.microsoft.com/library/windows/hardware/f
 
 In the following code example, the [**SourceDisksNames**](https://msdn.microsoft.com/library/windows/hardware/ff547478) section lists a single distribution media. The unique identifier for the media is 1. The name of the media is specified by the %Disk1% token, which is defined in the [**Strings**](https://msdn.microsoft.com/library/windows/hardware/ff547485) section of the INF file.
 
-```
+```cpp
 [SourceDisksNames]
 1 = %Disk1%
 ```
@@ -164,7 +164,7 @@ The [**SourceDisksFiles**](https://msdn.microsoft.com/library/windows/hardware/f
 
 In the following code example, the [**SourceDisksFiles**](https://msdn.microsoft.com/library/windows/hardware/ff547472) section lists the files to be copied for the driver and specifies that the files can be found on the media whose unique identifier is 1 (This identifier is defined in the [**SourceDisksNames**](https://msdn.microsoft.com/library/windows/hardware/ff547478) section of the INF file.)
 
-```
+```cpp
 [SourceDisksFiles]
 myLegacyFilter.exe = 1
 myLegacyFilter.sys = 1
@@ -182,7 +182,7 @@ You can create a single INF file to install your driver on multiple versions of 
 
 In the following code example, the [**CopyFiles**](https://msdn.microsoft.com/library/windows/hardware/ff546346) directive copies the files that are listed in the MyLegacyFilter.DriverFiles and MyLegacyFilter.UserFiles sections of the INF file.
 
-```
+```cpp
 [DefaultInstall]
 OptionDesc = %MyLegacyFilterServiceDesc%
 CopyFiles = MyLegacyFilter.DriverFiles, MyLegacyFilter.UserFiles
@@ -194,7 +194,7 @@ The [**DefaultInstall.Services**](https://msdn.microsoft.com/library/windows/har
 
 In the following code example, the [**AddService**](https://msdn.microsoft.com/library/windows/hardware/ff546326) directive adds the MyLegacyFilter service to the operating system. The %MyLegacyFilterServiceName% token contains the service name string, which is defined in the [**Strings**](https://msdn.microsoft.com/library/windows/hardware/ff547485) section of the INF file. MyLegacyFilter.Service is the name of the example driver's **ServiceInstall** section.
 
-```
+```cpp
 [DefaultInstall.Services]
 AddService = %MyLegacyFilterServiceName%,,MyLegacyFilter.Service
 ```
@@ -205,7 +205,7 @@ The **ServiceInstall** section adds subkeys or value names to the registry and s
 
 The following code example shows the **ServiceInstall** section for the MyLegacyFilter example driver.
 
-```
+```cpp
 [MyLegacyFilter.Service]
 DisplayName    = %MyLegacyFilterServiceName%
 Description    = %MyLegacyFilterServiceDesc%
@@ -348,7 +348,7 @@ The [**AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/f
 
  
 
-```
+```cpp
 [ExampleFileSystem.AddRegistry]
 HKR,Parameters,ExampleParameter,0x00010003,1
 ```
@@ -359,7 +359,7 @@ The **DefaultUninstall** section is optional but recommended if your driver can 
 
 In the following code example, the [**DelFiles**](https://msdn.microsoft.com/library/windows/hardware/ff547363) directive removes the files that are listed in the MyLegacyFilter.DriverFiles and MyLegacyFilter.UserFiles sections of the driver's INF file:
 
-```
+```cpp
 [DefaultUninstall]
 DelFiles   = MyLegacyFilter.DriverFiles, MyLegacyFilter.UserFiles
 DelReg     = MyLegacyFilter.DelRegistry
@@ -373,7 +373,7 @@ The **DefaultUninstall.Services** section is optional but recommended if your dr
 
 In the following code example, the [**DelService**](https://msdn.microsoft.com/library/windows/hardware/ff547377) directive removes the MyLegacyFilter service from the operating system.
 
-```
+```cpp
 [DefaultUninstall.Services]
 DelService = MyLegacyFilter,0x200
 ```
@@ -386,7 +386,7 @@ DelService = MyLegacyFilter,0x200
 
 The [**Strings**](https://msdn.microsoft.com/library/windows/hardware/ff547485) section defines each %strkey% token that is used in the INF file, as shown in the following example.
 
-```
+```cpp
 [Strings]
 Msft                      = "Microsoft Corporation"
 MyLegacyFilterServiceDesc = "MyLegacyFilterFilter Driver"

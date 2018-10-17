@@ -19,7 +19,7 @@ The mapping that this class defines is associated with a particular target logon
 
 This class is defined as follows in *Common.mof*.
 
-```
+```cpp
 class ISCSI_TargetMapping {
   [WmiDataId(1), description("OS Scsi bus number target 
     is mapped to. If 0xffffffff then any value can be picked

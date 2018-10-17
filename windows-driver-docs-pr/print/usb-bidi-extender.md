@@ -68,7 +68,7 @@ The USBMon Bidi Extension file uses the same basic structure as the SNMP Bidi Ex
 
 -   Bidi values are immediately polled if they are requested in a Bidi API call. The refreshInterval value is the initial value that indicates when to poll the device for updates on a particular Bidi schema value. After each poll, the refreshInterval increases until we stop polling. The following formula shows how refreshInterval is incremented:
 
-    ```JavaScript
+    ```javascript
     currentRefreshInterval = refreshInterval * (3 * numPolls);
     ```
 

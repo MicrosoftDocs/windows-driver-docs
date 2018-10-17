@@ -17,7 +17,7 @@ The initiator should implement one instance of the MSiSCSI\_NICPerformance class
 
 The MSiSCSI\_NICPerformance class is defined in *Iscsiprf.mof*.
 
-```
+```cpp
 class MSiSCSI_NICPerformance : Win32_PerfRawData {
   [key] string  InstanceName;
   boolean  Active;

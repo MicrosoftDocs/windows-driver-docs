@@ -16,7 +16,7 @@ This event occurs when another client attempts to claim a device. The data buffe
 
 ## Syntax
 
-```C++
+```cpp
 typedef struct _PosEventDataHeader
 {
     // Event enumeration value

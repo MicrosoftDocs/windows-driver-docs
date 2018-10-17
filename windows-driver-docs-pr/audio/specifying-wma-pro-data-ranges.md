@@ -25,22 +25,22 @@ ms.localizationpriority: medium
 ## <span id="specifying_wma_pro_data_ranges"></span><span id="SPECIFYING_WMA_PRO_DATA_RANGES"></span>
 
 
-In the Microsoft Windows SDK for Windows XP SP2 and later, the header file Mmreg.h defines the value 0x0164 to be the wave-format tag for WMA Pro-over-S/PDIF:
+The header file Mmreg.h defines the value 0x0164 to be the wave-format tag for WMA Pro-over-S/PDIF:
 
-```
+```cpp
   #define WAVE_FORMAT_WMASPDIF  0x0164
 ```
 
 The corresponding format-subtype GUID can be specified in terms of the wave-format tag by using the DEFINE\_WAVEFORMATEX\_GUID macro from the header file Ksmedia.h as follows:
 
-```
+```cpp
   #define KSDATAFORMAT_SUBTYPE_WMA_SPDIF    \
                       DEFINE_WAVEFORMATEX_GUID(WAVE_FORMAT_WMASPDIF)
 ```
 
 The following code example shows how a WaveCyclic or WavePci miniport driver can specify the [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537096) table entries for a pin that supports the WMA Pro-over-S/PDIF and AC-3-over-S/PDIF formats:
 
-```
+```cpp
 static KSDATARANGE_AUDIO PinDataRangesSpdifOut[] =
 {
   // 48-kHz WMA Pro over S/PDIF

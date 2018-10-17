@@ -98,7 +98,7 @@ Note that the RenderMoComp function will be called without the display driver-su
 
 The following code provides an example of how you can implement your *ProcAmpControlQueryCaps* function:
 
-```
+```cpp
 HRESULT
 DXVA_DeinterlaceContainerDeviceClass::ProcAmpControlQueryCaps(
     LPDXVA_VideoDesc lpVideoDesc,

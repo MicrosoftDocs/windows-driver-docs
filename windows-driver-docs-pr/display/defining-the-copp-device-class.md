@@ -26,7 +26,7 @@ This section applies only to Windows Server 2003 SP1 and later, and Windows XP S
 
 Use the following example code to define the COPP device class:
 
-```
+```cpp
 // COPP device class.
 struct DXVA_COPPDeviceClass : public DXVA_DeviceBaseClass
 {

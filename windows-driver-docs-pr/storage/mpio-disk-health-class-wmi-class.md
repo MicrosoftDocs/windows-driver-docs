@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 An MPIO driver uses the MPIO\_DISK\_HEALTH\_CLASS WMI class to report health statistics of an MPIO disk.
 
-```
+```cpp
 class MPIO_DISK_HEALTH_CLASS
 {
     //

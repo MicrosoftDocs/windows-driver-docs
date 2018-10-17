@@ -53,7 +53,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_DPS\_OPTICAL\_YRES**](wia-dps-optical-yres.md)

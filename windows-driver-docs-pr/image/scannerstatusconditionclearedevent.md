@@ -25,7 +25,7 @@ The required **ScannerStatusConditionClearedEvent** element informs the client t
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScannerStatusConditionClearedEvent>
   child elements
 </wscn:ScannerStatusConditionClearedEvent>
@@ -70,7 +70,7 @@ Examples
 
 The following code example shows how the device notifies a client that the previous condition that ConditionId 1543 identified has cleared:
 
-```
+```xml
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
   xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
@@ -99,8 +99,7 @@ The following code example shows how the device notifies a client that the previ
 </soap:Envelope>
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**ConditionId**](conditionid.md)
 
@@ -109,13 +108,3 @@ The following code example shows how the device notifies a client that the previ
 [**DeviceConditionCleared**](deviceconditioncleared.md)
 
 [**ScannerStatusConditionEvent**](scannerstatusconditionevent.md)
-
- 
-
- 
-
-
-
-
-
-

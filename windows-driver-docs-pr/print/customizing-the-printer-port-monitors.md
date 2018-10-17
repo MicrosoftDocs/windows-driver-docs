@@ -51,7 +51,7 @@ A bidi extension file is well-formed XML that must be valid according to the Tcp
 
 The following is an incomplete example of a TCP/IP bidi extension file that shows its basic structure. The structure of a WSD bidi extension file is similar.
 
-```
+```cpp
 <?xml version="1.0" encoding="US-ASCII"?>
 <bidi:Schema xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi">
   <Schema>

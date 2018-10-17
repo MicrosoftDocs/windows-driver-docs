@@ -46,7 +46,7 @@ For more information about these macros, see the Microsoft Windows SDK documenta
 
 The following example code shows how to complete a request with a suitable error code:
 
-```
+```cpp
 VOID
 STDMETHODCALLTYPE
 CMyQueue::OnWrite(

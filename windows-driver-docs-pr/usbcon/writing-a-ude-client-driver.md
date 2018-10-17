@@ -78,7 +78,7 @@ Here is the summary of the sequence in which the client driver retrieves a WDFDE
     [*EVT\_UDECX\_WDF\_DEVICE\_RESET*](https://msdn.microsoft.com/library/windows/hardware/mt595920)  
     Optional. Resets the host controller and/or the connected devices.
 
-    ```
+    ```cpp
     
     EVT_WDF_DRIVER_DEVICE_ADD                 Controller_WdfEvtDeviceAdd;
 
@@ -261,7 +261,7 @@ During initialization, the UDE client driver exposes the GUID\_DEVINTERFACE\_USB
 
 To handle those requests, the client driver registers the [*EvtIoDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff541758) event callback. In the implementation, instead of handling the request, the driver can opt to forward the request to the UDE class extension for processing. To forward the request, the driver must call [**UdecxWdfDeviceTryHandleUserIoctl**](https://msdn.microsoft.com/library/windows/hardware/mt627992). If the received IOCTL control code corresponds to a standard request, such as retrieving device descriptors, the class extension processes and completes the request successfully. In this case, **UdecxWdfDeviceTryHandleUserIoctl** completes with TRUE as the return value. Otherwise, the call returns FALSE and the driver must determine how to complete the request. In a simplest implementation, the driver can complete the request with an appropriate failure code by calling [**WdfRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff549945).
 
-```
+```cpp
 
 EVT_WDF_IO_QUEUE_IO_DEVICE_CONTROL        Controller_EvtIoDeviceControl;
 
@@ -314,7 +314,7 @@ Before upper layer drivers can use the capabilities of a USB host controller, th
 
 In the implementation, the client driver must report whether it supports the requested capability. Certain capabilities are not supported by UDE such as static streams.
 
-```
+```cpp
 NTSTATUS
 Controller_EvtControllerQueryUsbCapability(
     WDFDEVICE     UdeWdfDevice,
@@ -412,7 +412,7 @@ Here is the summary of the sequence in which the client driver creates a UDECXUS
 
 In this example, the descriptor declarations are assumed to be global variables, declared as shown here for a HID device just as an example:
 
-```
+```cpp
 const UCHAR g_UsbDeviceDescriptor[] = {
     // Device Descriptor
     0x12, // Descriptor Size
@@ -435,7 +435,7 @@ const UCHAR g_UsbDeviceDescriptor[] = {
 
 Here is an example in which the client driver specifies initialization parameters by registering callback functions, setting device speed, indicating the type of endpoints, and finally setting some device descriptors.
 
-```
+```cpp
 
 NTSTATUS
 Usb_Initialize(
@@ -630,7 +630,7 @@ Here is the summary of the sequence in which the client driver creates a UDECXUS
 
 In this example, the client driver creates the default control endpoint.
 
-```
+```cpp
 EVT_WDF_IO_QUEUE_IO_INTERNAL_DEVICE_CONTROL IoEvtControlUrb;
 EVT_UDECX_USB_ENDPOINT_RESET UsbEndpointReset;
 EVT_UDECX_USB_ENDPOINT_PURGE UsEndpointEvtPurge;
@@ -737,7 +737,7 @@ Here is the summary of the sequence in which the client driver creates a UDECXUS
 
 In this example implementation, the client driver creates a dynamic default control endpoint.
 
-```
+```cpp
 NTSTATUS
 UsbDevice_EvtUsbDeviceDefaultEndpointAdd(
     _In_
@@ -820,6 +820,7 @@ In the [*EVT\_UDECX\_USB\_ENDPOINT\_START*](https://msdn.microsoft.com/library/w
 
 ## Handling data transfer requests (URBs)
 
+
 To process USB I/O requests sent to the client device's endpoints, intercept the [EVT_WDF_IO_QUEUE_IO_INTERNAL_DEVICE_CONTROL](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_internal_device_control) callback on the queue object used with [**UdecxUsbEndpointInitSetCallbacks**](https://msdn.microsoft.com/library/windows/hardware/mt627985) when associating the queue with the endpoint. In that callback, process I/O for the [IOCTL\_INTERNAL\_USB\_SUBMIT\_URB](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_urb) IoControlCode (see sample code under [URB handling methods](#urb-handling-methods)).
 
 
@@ -847,7 +848,7 @@ Completes the URB request with an NTSTATUS code.
 
 Below is the flow of typical I/O processing for the URB of an USB OUT transfer.
 
-```
+```cpp
 static VOID
 IoEvtSampleOutUrb(
 	_In_ WDFQUEUE Queue,

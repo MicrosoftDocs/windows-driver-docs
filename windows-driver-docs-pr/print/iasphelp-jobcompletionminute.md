@@ -16,18 +16,22 @@ api_name:
 - Iasphelp.get_JobCompletionMinute
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_JobCompletionMinute method
-
 
 The **JobCompletionMinute** property enables an ASP Web page to determine when the print jobs that are currently pending will be finished.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_JobCompletionMinute(
   [out] long *pVal
 );
@@ -71,22 +75,17 @@ This property returns one of the values in the following table.
 </tbody>
 </table>
 
- 
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 Before you query this property, call the [**Iasphelp::CalcJobETA**](iasphelp-calcjobeta.md) method to initialize the property value. To determine the number of pending print jobs, query the [**Iasphelp::PendingJobCount**](iasphelp-pendingjobcount.md) property.
 
-```
-    Dim objPrinter, EndMinute
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
-    objPrinter.CalcJobETA
-    EndMinute = objPrinter.JobCompletionMinute
+```vb
+Dim objPrinter, EndMinute
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
+objPrinter.CalcJobETA
+EndMinute = objPrinter.JobCompletionMinute
 ```
 
 Requirements
@@ -102,26 +101,13 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**Iasphelp::Open**](iasphelp-open.md)
 
 [**Iasphelp::CalcJobETA**](iasphelp-calcjobeta.md)
 
 [**Iasphelp::PendingJobCount**](iasphelp-pendingjobcount.md)
-
- 
-
- 
-
-
-
-

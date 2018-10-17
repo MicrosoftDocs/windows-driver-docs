@@ -18,18 +18,22 @@ api_location:
 - olesnmp.h
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # ISNMP::GetTree method
-
 
 The `GetTree` method enables an ASP Web page to obtain the values associated with a set of subnodes beneath a specified root SNMP OID.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT GetTree(
   [in]  BSTR    varTree,
   [out] VARIANT *varValue
@@ -81,27 +85,19 @@ Win32 error codes can also be returned.
 </tbody>
 </table>
 
- 
-
-## <span id="ddk_isnmp_gettree_gg"></span><span id="DDK_ISNMP_GETTREE_GG"></span>
-
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 This method calls the **SnmpMgrRequest** function to obtain the SNMP OID values for the subnodes. For more information about this function, see the Windows SDK documentation.
 
 The [**ISNMP::Open**](isnmp-open.md) method must be called before the `ISNMP::GetTree` method can be called.
 
-```
-    Dim StrIP, strCommunity, objSNMP, OIDValueArray
-    strIP = Session("MS_IPaddress")
-    strCommunity = Session ("MS_Community")
-    Set objSNMP = Server.CreateObject("OlePrn.OleSNMP")
-    objSNMP.Open strIP, strCommunity, 2, 1000
-    OIDValueArray = objSNMP.GetTree ("43.18.1.1.2")
+```vb
+Dim StrIP, strCommunity, objSNMP, OIDValueArray
+strIP = Session("MS_IPaddress")
+strCommunity = Session ("MS_Community")
+Set objSNMP = Server.CreateObject("OlePrn.OleSNMP")
+objSNMP.Open strIP, strCommunity, 2, 1000
+OIDValueArray = objSNMP.GetTree ("43.18.1.1.2")
 ```
 
 Requirements
@@ -117,10 +113,6 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 <tr class="odd">
 <td><p>Header</p></td>
 <td>Olesnmp.h</td>
@@ -128,15 +120,6 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**ISNMP::Open**](isnmp-open.md)
-
- 
-
- 
-
-
-
-

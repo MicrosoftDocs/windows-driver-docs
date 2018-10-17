@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 This code demonstrates how to provide an Extension Unit descriptor at the hardware level.
 
-```
+```cpp
 BYTE  Length:            0x1a    
 BYTE  DescriptorType:    0x24               
 BYTE  DescriptorSubtype: 0x06             

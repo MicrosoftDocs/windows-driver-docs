@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The following code example shows how to read device properties from a Property Store. For an example of how to open a Property Store for the current Function Instance object, see [Code Example for Opening a Property Store](code-example-for-opening-a-property-store.md).
 
-```
+```cpp
 /**************************************************************************\
 * CWSDDevice::ReadDeviceProperty
 *

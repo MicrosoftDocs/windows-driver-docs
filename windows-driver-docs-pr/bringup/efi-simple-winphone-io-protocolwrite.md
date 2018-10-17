@@ -21,7 +21,7 @@ This function will block until the requested amount of data is written to the de
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_SIMPLE_WINPHONE_IO_WRITE) (

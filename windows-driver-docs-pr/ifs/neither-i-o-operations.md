@@ -48,7 +48,7 @@ Using neither I/O, the file system is responsible for handling its own data tran
 
 There are several ways for a file system to handle this situation. One mechanism is to lock down the physical memory that corresponds to the user's address and create a second mapping in the operating system's address space. This ensures that the file system uses a virtual address that it controls. So even if the user address becomes invalid, the address created by the file system will remain valid. The FASTFAT file system code uses two different functions to achieve this. The first function locks down the user's buffer:
 
-```
+```cpp
 VOID
 FatLockUserBuffer (
     IN PIRP_CONTEXT IrpContext,
@@ -113,7 +113,7 @@ Return Value:
 
 This routine ensures that the physical memory that backs a user's address will not be reused for any other purpose while the operation is ongoing. A file system might do this in order to send the I/O operation to the underlying volume management or disk class layer to satisfy a non-cached user I/O. In such a case, the file system does not need its own virtual address to the buffer. A second function creates the file system's mapping into the kernel address space:
 
-```
+```cpp
 PVOID
 FatMapUserBuffer (
     IN PIRP_CONTEXT IrpContext,

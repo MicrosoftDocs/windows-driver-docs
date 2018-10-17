@@ -60,7 +60,7 @@ To allow access to a driver to a UWP app with the custom capability, add a few l
 
 In the INF file, specify your custom capability as follows:
 
-```
+```cpp
 [WDMPNPB003_Device.NT.Interfaces] 
 AddInterface= {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz},,AddInterfaceSection 
  

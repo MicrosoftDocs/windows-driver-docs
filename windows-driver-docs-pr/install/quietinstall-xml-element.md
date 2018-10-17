@@ -21,7 +21,7 @@ The **quietInstall** XML element is an empty element that sets the **quietInstal
 
 ### **Element Tag**
 
-```
+```cpp
 <quietInstall>
 ```
 
@@ -64,7 +64,7 @@ By default, the **quietInstall** flag is set to OFF. You can set the **quietInst
 
 The following code example demonstrates a **quietInstall** element
 
-```
+```cpp
 <dpinst>
   ...
   <quietInstall/>

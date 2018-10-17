@@ -45,7 +45,7 @@ The MakeCat tool does the following when it processes the .*.cdf* file:
 
 Use the following MakeCat command to create a catalog file.
 
-```
+```cpp
 MakeCat -v CatalogDefinitionFileName..cdf
 ```
 
@@ -59,7 +59,7 @@ Where:
 
 The following example shows the contents of a typical catalog definition file that is named Good..cdf. The package to be cataloged contains two files, *File1* and *File2*. The resulting catalog file is named Good.cat.
 
-```
+```cpp
 [CatalogHeader]
 Name=Good.cat
 PublicVersion=0x0000001
@@ -113,7 +113,7 @@ Specifies a reference tag for the file, File2, which is referenced through the c
 
 The following example shows how to generate the [catalog file](catalog-files.md), *Good.cat,* from a corresponding catalog definition file *Good..cdf*. Makecat saves *Good.cat* in the same folder where *File1* and *File2* are located.
 
-```
+```cpp
 MakeCat -v Good.cdf
 ```
 

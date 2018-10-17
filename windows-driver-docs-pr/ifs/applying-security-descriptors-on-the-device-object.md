@@ -33,13 +33,13 @@ The basic format of a security descriptor using the Security Descriptor Definiti
 
 Thus, the description within an INF script for a security descriptor is:
 
-```
+```cpp
 O:owner-sidG:group-sidD:dacl-flags(ace)(ace)S:sacl-flags(ace)(ace)
 ```
 
 The individual access control entries describe the access to be granted or denied to a particular group or user as specified by the security identifier or SID. For example, an INF file might contain a line such as:
 
-```
+```cpp
 "D:P(A;CI;GR;;;BU)(A;CI;GR;;;PU)(A;CI;GA;;;BA)(A;CI;GA;;;SY)(A;CI;GA;;;NS)(A;CI;GA;;;LS)(A;CI;CCDCLCSWRPSDRC;;;S-1-5-32-556)"
 ```
 

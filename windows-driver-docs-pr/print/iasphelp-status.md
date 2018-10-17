@@ -16,18 +16,22 @@ api_name:
 - Iasphelp.get_Status
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_Status method
-
 
 The **Status** property enables an ASP Web page to determine the printer status.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_Status(
   [out] long *pVal
 );
@@ -71,23 +75,18 @@ Win32 error codes can also be returned.
 </tbody>
 </table>
 
- 
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 The property value is a printer status code that is either 0 or the bitwise OR of one or more of the PRINTER\_STATUS\_*XXX* flags that are defined in header file Winspool.h for the **Status** member of the PRINTER\_INFO\_2 structure. For more information about this structure, see the Windows SDK documentation.
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::Status** property can be queried.
 
-```
-    Dim objPrinter, PtrStatus
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
-    PtrStatus = objPrinter.Status
+```vb
+Dim objPrinter, PtrStatus
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
+PtrStatus = objPrinter.Status
 ```
 
 Requirements
@@ -103,22 +102,9 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**Iasphelp::Open**](iasphelp-open.md)
-
- 
-
- 
-
-
-
-

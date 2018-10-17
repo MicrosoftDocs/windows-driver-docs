@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 The MSiSCSI\_ConnectionStatistics WMI class expose connection statistics. This class is defined as follows in Iscsiprf.mof.
 
-```
+```cpp
 class MSiSCSI_ConnectionStatistics : Win32_PerfRawData {
   [read,key] String  InstanceName;
   [read] boolean  Active;
@@ -76,7 +76,7 @@ When the WMI tool suite compiles the preceding class definition, it produces the
 
 Initiators must register the MSiSCSI\_ConnectionStatistics WMI class with the following target instance name:
 
-```
+```cpp
 targetname_#:#
 ```
 

@@ -39,7 +39,7 @@ The following are recommended settings. You can set these manually, or use the [
 
 -   Enable Application Verifier on WUDFHost.exe:
 
-    ```
+    ```cpp
     AppVerif –enable Heaps Exceptions Handles Locks Memory TLS Leak –for WudfHost.exe
     ```
 

@@ -17,7 +17,7 @@ This topic describes how to view a USB event trace in Xperf.
 
 To analyze performance and timing issues, you can use Xperf to view a USB event trace. For example, if you have an event trace log file that is named usb.etl and you have downloaded the Xperf tool, issue the following command to analyze the trace:
 
-```
+```cpp
 xperf usb.etl
 
 ```

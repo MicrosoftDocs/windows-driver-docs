@@ -17,7 +17,7 @@ The Windows audio engine runs at predetermined intervals that are referred to as
 
 The following excerpt from an INF file shows how to use the [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) to customize the periodicity for an audio device driver.
 
-```
+```inf
 [Version]
 Signature="$CHICAGO$"
 Class=MEDIA

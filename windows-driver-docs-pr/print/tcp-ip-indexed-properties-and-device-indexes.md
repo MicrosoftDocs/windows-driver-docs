@@ -32,7 +32,7 @@ A query can also involve another index: a device index. A network device that su
 
 The following code example extends the TCP/IP bidi communications schema by adding a **Display** property to the **Printer** property. In addition, the **Display** property has an indexed property, **Row**, and has **deviceIndex** set to **TRUE**. The schema shown here produces a query that retrieves text from a particular row of the printer's display.
 
-```
+```cpp
 <Property name="Printer">
   <Property name="Display">
     <IndexedProperty name="Row">
@@ -45,7 +45,7 @@ The following code example extends the TCP/IP bidi communications schema by addi
 
 The preceding example results in the following query:
 
-```
+```cpp
 \Printer.Display.Row1:Text
 ```
 

@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The Advanced Configuration and Power Interface (ACPI) Operating System Capabilities (\_OSC) method is used to communicate which of the features or capabilities that are available in the platform can be controlled by the operating system. This method is defined in the ACPI Specification, Revision 4.0.
 
-The following table lists the PCI Express features that can be controlled by the PCI Express Native Control feature in Windows Vista, Windows Sever 2008 and later versions of Windows. These features are defined in the PCI Express Base Specification and are controlled by the operating system via the ACPI \_OSC method.
+The following table lists the PCI Express features that can be controlled by the PCI Express Native Control feature in Windows Vista, Windows Server 2008 and later versions of Windows. These features are defined in the PCI Express Base Specification and are controlled by the operating system via the ACPI \_OSC method.
 
 | PCI Express Feature                        | PCI Express Native Control |
 | ------------------------------------------ | -------------------------- |

@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The Finishing section consists of the [Finishing](finishing.md) property and several child properties and values that control operations that occur after printing.
 
-```
+```cpp
 Printer
  Finishing
  CollationSupported

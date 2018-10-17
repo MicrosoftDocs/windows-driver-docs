@@ -19,7 +19,7 @@ High definition (HD) audio codecs are able to receive and respond to verbs. Thes
 
 In Windows 7 and later versions of the Windows operating systems, the HD audio class driver uses the IOCTL\_AZALIABUS\_SENDVERBS IOCTL to communicate verbs with the audio codec. IOCTL\_AZALIABUS\_SENDVERBS is defined as shown in the following example:
 
-```
+```cpp
 #define IOCTL_AZALIABUS_SENDVERBS CTL_CODE(FILE_DEVICE_UNKNOWN, 1, METHOD_BUFFERED, FILE_ANY_ACCESS)
 ```
 
@@ -27,7 +27,7 @@ For more information about FILE\_DEVICE\_UNKNOWN, METHOD\_BUFFERED, and FILE\_AN
 
 To initiate communication with the audio codec, the class driver calls the [DeviceIoControl](http://go.microsoft.com/fwlink/p/?linkid=124239) function with the following parameters.
 
-```
+```cpp
 BOOL DeviceIoControl(
   (HANDLE) hDevice,                      // handle to device
   IOCTL_AZALIABUS_SENDVERBS,             // dwIoControlCode
@@ -46,7 +46,7 @@ When the audio driver must change pin configuration defaults, it can use IOCTL\_
 
 The following example shows a function that takes an AzCorbeEntry structure and a HANDLE as parameters and returns the AzRirbResponse from the codec.
 
-```
+```cpp
 AzRirbEntry SendVerb(HANDLE handle, AzCorbEntry verb)
 {
   UserModeCodecCommandPacket c;
@@ -78,7 +78,7 @@ The data types and structures that are used in the previous code example are def
 
 ### <span id="azcorbentry"></span><span id="AZCORBENTRY"></span> AzCorbEntry
 
-```
+```cpp
 struct AzCorbEntry
 {
   ULONG Verb        : 20; // 0:19
@@ -101,7 +101,7 @@ struct AzCorbEntry
 
 ### <span id="azrirbentry"></span><span id="AZRIRBENTRY"></span> AzRirbEntry
 
-```
+```cpp
 struct AzRirbEntry
 {
   union
@@ -140,7 +140,7 @@ The following two structures are used together with the verb transfer IOCTL to e
 
 ### <span id="usermodecodeccommandpacket"></span><span id="USERMODECODECCOMMANDPACKET"></span> UserModeCodecCommandPacket
 
-```
+```cpp
 typedef struct _UserModeCodecCommandPacket
 {
   ULONG NumCommands;      // number of commands in this packet
@@ -150,7 +150,7 @@ typedef struct _UserModeCodecCommandPacket
 
 ### <span id="usermodecodecresponsepacket"></span><span id="USERMODECODECRESPONSEPACKET"></span> UserModeCodecResponsePacket
 
-```
+```cpp
 typedef struct _UserModeCodecResponsePacket
 {
   ULONG NumResponses;       // on successful IOCTL, this will be updated with the number of responses.

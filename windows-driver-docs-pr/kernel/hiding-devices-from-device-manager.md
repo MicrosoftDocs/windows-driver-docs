@@ -35,7 +35,7 @@ You can mark a device as hidden in the ACPI BIOS. The BIOS can expose a \_STA me
 
 For example, the following code example shows how a USB controller on the root bus would be hidden.
 
-```
+```cpp
 Device(PCI0) // Root PCI bus
 _HID *PNP0A03 
 ...
@@ -46,7 +46,7 @@ _HID *PNP0A03
 
 In Microsoft Windows 2000, you can hide only started, working devices. In Windows XP and later versions of Windows, you can also hide broken devices. Bit 3 (mask 0x8) that is returned by the \_STA method indicates whether a device is working properly. This bit is 1 if the device is working properly and is 0 otherwise. For example, the following code example shows how a BIOS would indicate a USB controller is broken and should be hidden:
 
-```
+```cpp
 Device(PCI0) // Root PCI bus 
 _HID *PNP0A03 
 ...

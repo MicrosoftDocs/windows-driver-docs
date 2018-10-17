@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 Customized features are those that are specific to your hardware. You create unique names for these features. For each customized feature, you must specify a set of [customized options](customized-options.md). For example, suppose your printer provides an economy mode of operation. Because the GPD language does not provide a feature for describing this capability, you must define a customized feature and its options. The feature's specification might appear as follows:
 
-```
+```cpp
 *Feature: EconoMode
 {
     *Name: "Economy Mode"

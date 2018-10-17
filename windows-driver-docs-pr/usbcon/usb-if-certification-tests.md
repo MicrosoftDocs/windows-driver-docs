@@ -71,7 +71,7 @@ You can submit USB devices for Windows Certification qualification to meet the n
 
     -   To submit a USB device to an authorized independent test lab for USB-IF certification, the manufacturer must register with the lab and have a valid vendor ID (VID).
 
-    After a device successfully passes the USB-IF certification tests, you you have the following privileges for the device:
+    After a device successfully passes the USB-IF certification tests, you have the following privileges for the device:
 
     -   You can use the USB logo for brochures, packaging, and product information for your device.
     -   You can be listed on the USB-IF Integrators List.

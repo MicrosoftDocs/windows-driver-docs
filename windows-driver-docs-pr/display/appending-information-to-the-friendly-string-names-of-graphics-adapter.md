@@ -22,13 +22,13 @@ You must append information to the string names of graphics adapters. This infor
 
 For the Windows 2000 Display Driver Model, you must append "(Microsoft Corporation)":
 
-```
+```cpp
 XDDM Foo Device Name (Microsoft Corporation)
 ```
 
 For the Windows Display Driver Model (WDDM), you must append "(Microsoft Corporation - WDDM)":
 
-```
+```cpp
 New Driver Model Foo Device Name (Microsoft Corporation - WDDM)
 ```
 

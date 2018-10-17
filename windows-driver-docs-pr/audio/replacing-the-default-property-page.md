@@ -27,7 +27,7 @@ To design and implement the custom property page provider, perform the following
 
 The following INF file fragment shows how to modify the INF file to register your custom property page.
 
-```
+```inf
 [SysFx.AddReg]
 ...
 HKR,"FX\\0",%PKEY_SYSFX_UiClsid%,,%SYSFX_UI_CLSID%
@@ -39,7 +39,7 @@ SYSFX_UI_CLSID     = "{YOUR GUID GOES HERE}"
 
 And as a result of the preceding INF file instructions, the installation process modifies the appropriate registry key as follows.
 
-```
+```text
 HKLM
  SOFTWARE
   Microsoft

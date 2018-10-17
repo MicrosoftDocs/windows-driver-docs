@@ -33,7 +33,7 @@ Before connecting a configurable pin to serve as a sink or source for a wave or 
 
 For each type of configurable pin, a miniport driver describes the various stream data formats that the pin can handle. These parameter ranges can be specified as an array of data-range descriptors, as shown in the following code example.
 
-```
+```cpp
 static KSDATARANGE_AUDIO PinDataRangesPcm[] =
 {
     {

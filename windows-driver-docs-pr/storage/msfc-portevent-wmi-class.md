@@ -15,7 +15,7 @@ A WMI provider uses the MSFC\_PortEvent WMI class to report port events.
 
 The MSFC\_PortEvent class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MSFC_PortEvent : WMIEvent {
   [key] 
   string InstanceName;

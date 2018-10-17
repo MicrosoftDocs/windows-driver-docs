@@ -25,7 +25,7 @@ This section provides installation information, specific to changer miniclass dr
 
 Vendors supplying their own controller minidriver should make that minidriver a member of the MediumChanger setup class in the [**INF Version Section**](https://msdn.microsoft.com/library/windows/hardware/ff547502) of the driver's INF file. For example:
 
-```
+```cpp
 [version]
 Signature="$WINDOWS NT$"
 Class=MediumChanger

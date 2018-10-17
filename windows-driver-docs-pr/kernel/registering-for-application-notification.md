@@ -27,7 +27,7 @@ These GUIDs are defined in the header file, Poclass.h.
 
 The following code example shows how to register for both notifications:
 
-```
+```cpp
 HWND hWnd;
 DEV_BROADCAST_DEVICEINTERFACE ProcessorFilter;
 DEV_BROADCAST_DEVICEINTERFACE MemoryFilter;
@@ -87,7 +87,7 @@ MemoryNotifyHandle =
 
 When an application no longer has to receive notification of processor or memory events, it can unregister the window from receiving WM\_DEVICECHANGE messages for these events by calling the [UnregisterDeviceNotification](http://go.microsoft.com/fwlink/p/?linkid=97893) function. The following code example shows how to unregister for the application notifications:
 
-```
+```cpp
 // Unregister the application window from receiving
 // WM_DEVICECHANGE messages for processor events.
 UnregisterDeviceNotification(ProcessorNotifyHandle);

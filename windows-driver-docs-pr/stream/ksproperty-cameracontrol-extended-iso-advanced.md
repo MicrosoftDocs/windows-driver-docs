@@ -49,7 +49,7 @@ KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ISO\_ADVANCED is an extended property contr
 
 The new KSCAMERA\_EXTENDEDPROP\_ISO\_MANUAL flag is defined in ksmedia\_phone.h as follows.
 
-``` syntax
+```cpp
 #define KSCAMERA_EXTENDEDPROP_ISO_MANUAL          0x0080000000000000
 ```
 

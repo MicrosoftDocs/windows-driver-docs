@@ -33,7 +33,7 @@ File system filter drivers use completion routines that are similar to those use
 
 Every IRP completion routine is defined as follows:
 
-```
+```cpp
 NTSTATUS 
 (*PIO_COMPLETION_ROUTINE) ( 
     IN PDEVICE_OBJECT DeviceObject, 

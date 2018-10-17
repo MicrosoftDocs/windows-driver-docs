@@ -166,7 +166,7 @@ The main.cpp file contains the application entry point, \_tmain. The device.cpp 
 
 The template also has a header file named device.h. This file contains definitions for the device interface GUID (discussed later) and a DEVICE\_DATA structure that stores information obtained by the application. For example, it stores the WinUSB interface handle obtained by OpenDevice and used in subsequent operations.
 
-```
+```cpp
 typedef struct _DEVICE_DATA {
 
     BOOL                    HandlesOpen;
@@ -181,7 +181,7 @@ typedef struct _DEVICE_DATA {
 
 To access a USB device, the application creates a valid file handle for the device by calling **CreateFile**. For that call, the application must obtain the device path instance. To obtain the device path, the app uses [SetupAPI](https://msdn.microsoft.com/library/windows/hardware/ff550855) routines and specifies the device interface GUID in the INF file that was used to install Winusb.sys. Device.h declares a GUID constant named GUID\_DEVINTERFACE\_USBApplication1. By using those routines, the application enumerates all devices in the specified device interface class and retrieves the device path of the device.
 
-```
+```cpp
 HRESULT
 RetrieveDevicePath(
     _Out_bytecap_(BufLen) LPTSTR DevicePath,
@@ -361,7 +361,7 @@ In the preceding function, the application gets the device path by calling these
 
 To interact with the device, the needs a WinUSB interface handle to the first (default) interface on the device. The template code obtains the file handle and the WinUSB interface handle and stores them in the DEVICE\_DATA structure.
 
-```
+```cpp
 HRESULT
 OpenDevice(
     _Out_     PDEVICE_DATA DeviceData,
@@ -449,7 +449,7 @@ The template code implements code to release the file handle and the WinUSB inte
 -   **CloseHandle** to release the handle that was created by **CreateFile**, as described in the [Create a File Handle for the Device](#filehandle) section of this walkthrough.
 -   [**WinUsb\_Free**](https://msdn.microsoft.com/library/windows/hardware/ff540233) to release the WinUSB interface handle for the device, which is returned by [**WinUsb\_Initialize**](https://msdn.microsoft.com/library/windows/hardware/ff540277).
 
-```
+```cpp
 VOID
 CloseDevice(
     _Inout_ PDEVICE_DATA DeviceData

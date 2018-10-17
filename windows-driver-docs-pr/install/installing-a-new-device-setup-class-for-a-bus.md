@@ -19,7 +19,7 @@ To install a new device setup class for the bus, set related directives in the [
 
 The following annotated example illustrates the basic INF file entries you need to include to install a [device setup class](device-setup-classes.md). For information about the possible configuration settings of a device setup class, see [**INF ClassInstall32 section**](inf-classinstall32-section.md).
 
-```
+```cpp
 [Version]
 signature="$CHICAGO$"
 ; Specify a unique class name that identifies the manufacturer and the bus type

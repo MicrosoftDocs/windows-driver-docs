@@ -33,7 +33,7 @@ In this example, the application calls [**SetupWriteTextLog**](https://msdn.micr
 
 The following code calls [**SetupWriteTextLog**](https://msdn.microsoft.com/library/windows/hardware/ff552218) to write a log entry for this example:
 
-```
+```cpp
 //The LogToken value was previously returned by call to
 //SetupGetThreadLogToken or one of the system-defined log token values
 DWORD Category = TXTLOG_VENDOR; 
@@ -45,7 +45,7 @@ SetupWriteTextLog(LogToken, Category, Flags, TEXT("Application Error (%d)"),Erro
 
 If the TXTLOG_VENDOR event category is enabled and the TXTLOG_ERROR event level is set for the text log, this code would create an entry in the text log that would be formatted as follows:
 
-```
+```cpp
 !!!  2005/02/13 22:06:28.109:    :  Application error (1111) 
 ```
 
@@ -55,7 +55,7 @@ The *entry_prefix* field "!!! " indicates that the log entry is an error message
 
 Logging a warning message is almost identical to logging an error message. The difference is the settings for the event level. Set *Flags* to TXTLOG_WARNING instead of TXTLOG_ERROR. If **SetupWriteTextLog** is called as described in [Logging an Error Message](#logging-an-error-message), except that *Flags* is set to a bitwise OR of TXTLOG_WARNING and TXTLOG_TIMESTAMP, [**SetupWriteTextLog**](https://msdn.microsoft.com/library/windows/hardware/ff552218) would write the following log entry:
 
-```
+```cpp
 !  2005/02/13 22:06:28.109:    :  Application error (1111) 
 ```
 

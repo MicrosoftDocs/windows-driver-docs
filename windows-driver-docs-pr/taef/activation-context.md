@@ -20,7 +20,7 @@ Providing the 'Activation context' enables users to choose a particular version 
 ## <span id="Sample_Activation_Context_manifest_file"></span><span id="sample_activation_context_manifest_file"></span><span id="SAMPLE_ACTIVATION_CONTEXT_MANIFEST_FILE"></span>Sample Activation Context manifest file
 
 
-```
+```cpp
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
   <dependency>
@@ -49,7 +49,7 @@ This command executes all the tests in 'MyUnitTest.dll' by using the activation 
 
 If you intend to run only specific test cases under a given activation context, you can do that by setting the value of the 'ActivationContext' property to your manifest file on the test method. For example the following test method declaration runs only the test method 'MyTestMethod' under the specified activation context while running other tests under the default context:
 
-```
+```cpp
         BEGIN_TEST_METHOD(MyTestMethod)
             TEST_METHOD_PROPERTY(L"ActivationContext", L"ComctlV6.manifest")
         END_TEST_METHOD()

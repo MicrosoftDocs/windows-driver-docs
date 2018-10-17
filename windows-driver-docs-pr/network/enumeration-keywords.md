@@ -98,7 +98,7 @@ Otherwise, if the Tx flag is disabled, then:
 A value that describes whether the device enabled or disabled interrupt moderation. Interrupt moderation algorithms are device-dependent. The device manufacturer can use non-standardized keywords to support algorithmic settings. For more information about interrupt moderation, see [Interrupt Moderation](interrupt-moderation.md).
 
 <a href="" id="-rss"></a>**\*RSS**  
-A value that describes whether the device enabled or disabled receive side scaling (RSS). For more information about RSS, see [NDIS 6.0 Receive Side Scaling](https://msdn.microsoft.com/library/windows/hardware/ff567232).
+A value that describes whether the device enabled or disabled receive side scaling (RSS). For more information about RSS, see [Receive Side Scaling](ndis-receive-side-scaling2.md).
 
 <a href="" id="-headerdatasplit"></a>**\*HeaderDataSplit**  
 A value that describes whether the device enabled or disabled header-data split. For more information about header-data split, see [Header-Data Split](header-data-split.md).
