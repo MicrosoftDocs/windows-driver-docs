@@ -13,11 +13,15 @@ api_name:
 - IPrinterScriptUsbJobContext.JobPropertyBag
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbJobContext::JobPropertyBag method
-
 
 Returns the property bag associated with the current print job.
 
@@ -72,13 +76,4 @@ Requirements
 
 ## See also
 
-
 [**IPrinterScriptUsbJobContext**](iprinterscriptusbjobcontext.md)
-
- 
-
- 
-
-
-
-

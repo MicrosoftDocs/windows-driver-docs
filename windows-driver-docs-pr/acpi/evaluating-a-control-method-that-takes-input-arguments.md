@@ -34,7 +34,7 @@ In addition, if the 'ABCD' control method was not an immediate child object, the
 
 ```cpp
     // Fill in the input data
-    inputBuffer.MethodNameAsUlong = (ULONG) (&#39;DCBA&#39;);
+    inputBuffer.MethodNameAsUlong = (ULONG) ('DCBA');
     inputBuffer.IntegerArgument  =  Argument1;
     inputBuffer.Signature = ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_SIGNATURE;
 ```
@@ -72,7 +72,7 @@ EvaluateABCDWithInputArgument(
     )
 /*
 Routine Description:
-    Called to evaluate the example &#39;ABCD&#39; method with a single integer input argument
+    Called to evaluate the example 'ABCD' method with a single integer input argument
 
 Parameters:
     Pdo             - For the device.
@@ -97,7 +97,7 @@ Return Value:
     *ReturnStatus = 0x0;
 
     // Fill in the input data
-    inputBuffer.MethodNameAsUlong = (ULONG) (&#39;DCBA&#39;);
+    inputBuffer.MethodNameAsUlong = (ULONG) ('DCBA');
     inputBuffer.IntegerArgument  =  Argument1;
     inputBuffer.Signature = ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_SIGNATURE;
 

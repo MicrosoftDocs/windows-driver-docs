@@ -70,7 +70,7 @@ DownloadPreviewImage(
          {
             // If the call to GetNewPreview was successful, the
             // preview component calls AddRef on the callback so
-            // this call doesn&#39;t delete the object.
+            // this call doesn't delete the object.
 
             pAppWiaTransferCallback->Release();
          }

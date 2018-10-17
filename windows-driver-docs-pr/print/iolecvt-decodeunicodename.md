@@ -16,11 +16,15 @@ api_name:
 - IOleCvt.DecodeUnicodeName
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # IOleCvt::DecodeUnicodeName method
-
 
 The **DecodeUnicodeName** property enables an ASP Web page to translate a Unicode string to its ANSI equivalent.
 
@@ -69,21 +73,13 @@ Return value
 </tbody>
 </table>
 
- 
+## VBScript Example
 
-## <span id="ddk_iolecvt_decodeunicodename_gg"></span><span id="DDK_IOLECVT_DECODEUNICODENAME_GG"></span>
-
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
-
-```cpp
-    Dim OleCvt, strPrinter, strEncodedPrinter
-    Set OleCvt = Server.CreateObject("OlePrn.OleCvt")
-    strEncodedPrinter = Request ( "eprinter" )
-    strPrinter = OleCvt.DecodeUnicodeName (strEncodedPrinter)
+```vb
+Dim OleCvt, strPrinter, strEncodedPrinter
+Set OleCvt = Server.CreateObject("OlePrn.OleCvt")
+strEncodedPrinter = Request ( "eprinter" )
+strPrinter = OleCvt.DecodeUnicodeName (strEncodedPrinter)
 ```
 
 Requirements
@@ -99,17 +95,5 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-

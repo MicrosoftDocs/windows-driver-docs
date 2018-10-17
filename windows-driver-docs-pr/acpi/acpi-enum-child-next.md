@@ -6,7 +6,7 @@ ms.assetid: 1ff37770-b0ea-4275-9568-611ec125a0b6
 keywords: 
 - ACPI_ENUM_CHILD_NEXT macro ACPI Devices
 ms.author: windowsdriverdev
-ms.date:
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

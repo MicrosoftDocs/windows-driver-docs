@@ -13,11 +13,15 @@ api_name:
 - IPrinterScriptUsbWritePrintDataProgress.ProcessedByteCount
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbWritePrintDataProgress::ProcessedByteCount method
-
 
 Returns the number of bytes that the IHV JavaScript function has processed by the time this method was called.
 
@@ -67,13 +71,4 @@ Requirements
 
 ## See also
 
-
 [**IPrinterScriptUsbWritePrintDataProgress**](iprinterscriptusbwriteprintdataprogress.md)
-
- 
-
- 
-
-
-
-

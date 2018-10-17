@@ -162,14 +162,14 @@ static void OnDriverEvent(object sender, PrinterExtensionEventArgs eventArgs)
         printPreferenceWindow.Initialize(eventArgs);
 
         //
-        // Set the caller application&#39;s window as parent/owner of the newly created printing preferences window.
+        // Set the caller application's window as parent/owner of the newly created printing preferences window.
         //
 
         WindowInteropHelper wih = new WindowInteropHelper(printPreferenceWindow);
         wih.Owner = eventArgs.WindowParent;
 
         //
-        // Display a modal/non-modal window based on the &#39;WindowModal&#39; parameter.
+        // Display a modal/non-modal window based on the 'WindowModal' parameter.
         //
 
         if (eventArgs.WindowModal)

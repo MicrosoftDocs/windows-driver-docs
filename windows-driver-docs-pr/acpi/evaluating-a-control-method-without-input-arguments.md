@@ -32,7 +32,7 @@ If the 'ABCD' control method was not an immediate child object, the required cha
 
 ```cpp
     // Fill in the input data
-    inputBuffer.MethodNameAsUlong = (ULONG) (&#39;DCBA&#39;);
+    inputBuffer.MethodNameAsUlong = (ULONG) ('DCBA');
     inputBuffer.Signature = ACPI_EVAL_INPUT_BUFFER_SIGNATURE;
 ```
 
@@ -90,7 +90,7 @@ Return Value:
     *ReturnStatus = 0x0;
 
     // Fill in the input data
-    inputBuffer.MethodNameAsUlong = (ULONG) (&#39;DCBA&#39;);
+    inputBuffer.MethodNameAsUlong = (ULONG) ('DCBA');
     inputBuffer.Signature = ACPI_EVAL_INPUT_BUFFER_SIGNATURE;
 
     // Send the request along

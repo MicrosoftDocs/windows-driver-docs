@@ -78,7 +78,7 @@ The following code example shows a response to a client when it has submitted a 
   xmlns:xop="http://www.w3.org/2003/12/xop/include"
   xmlns:xop-mime="http://www.w3.org/2003/12/xop/mime"
   xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle=&#39;http://www.w3.org/2002/12/soap-encoding&#39; >
+  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
 
   <soap:Header>
     <wsa:To>
@@ -118,7 +118,7 @@ The following code example shows a response to a client when it has submitted an
   xmlns:xop="http://www.w3.org/2003/12/xop/include"
   xmlns:xop-mime="http://www.w3.org/2003/12/xop/mime"
   xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle=&#39;http://www.w3.org/2002/12/soap-encoding&#39; >
+  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
 
   <soap:Header>
     <wsa:To>

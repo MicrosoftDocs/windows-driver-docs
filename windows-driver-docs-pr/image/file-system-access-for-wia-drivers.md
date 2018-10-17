@@ -28,7 +28,7 @@ The following code example shows how a WIA driver can use the %*userprofile*% di
 ```cpp
 #define MY_DRIVER_FILE_NAME_W L"%userprofile%\\MyDriverFile.ext";
 HANDLE hMyDriverFile         = INVALID_HANDLE_VALUE;
-WCHAR  wszFileName[MAX_PATH] = {L&#39;\0&#39;};
+WCHAR  wszFileName[MAX_PATH] = {L'\0'};
 DWORD  dwMaxChars            = sizeof(wszExpandedName) /                     
                                sizeof(wszExpandedName[0]);
 if (ExpandEnvironmentStringsW(MY_DRIVER_FILE_NAME_W, 
@@ -49,7 +49,7 @@ if (ExpandEnvironmentStringsW(MY_DRIVER_FILE_NAME_W,
             wszFileName,           // Contains file name and path
             dwDesiredAccess,       // E.g. GENERIC_WRITE
             dwShareMode,           // E.g. FILE_SHARE_WRITE
-            lpSecurityAttributes,  // Don&#39;t forget to ACL your file            
+            lpSecurityAttributes,  // Don't forget to ACL your file            
                                    //   appropriately!
             dwCreationDisposition, // E.g. CREATE_ALWAYS
             dwFlagsAndAttributes,  // E.g. FILE_ATTRIBUTE_NORMAL

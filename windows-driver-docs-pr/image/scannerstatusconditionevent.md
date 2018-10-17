@@ -78,7 +78,7 @@ The following code example shows how the scan device notifies the client about a
   xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
   xmlns:wse="http://schemas.xmlsoap.org/ws/2004/08/eventing"
   xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle=&#39;http://www.w3.org/2002/12/soap-encoding&#39;>
+  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding'>
 
   <soap:Header>
     <wsa:To>AddressofEventSink</wsa:To>

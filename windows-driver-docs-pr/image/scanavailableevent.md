@@ -87,7 +87,7 @@ The following code example shows how a client subscribes to receive ScanAvailabl
     xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
     xmlns:wse="http://schemas.xmlsoap.org/ws/2004/08/eventing"
     xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan>
-    soap:encodingStyle=&#39;http://www.w3.org/2002/12/soap-encoding&#39; >
+    soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
   <soap:Header>
     <wsa:To>AddressofScannerService</wsa:To>
       <wsa:Action>
@@ -130,7 +130,7 @@ The following code example shows the WSD Scan Service's response to a client's s
     xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
     xmlns:wse="http://schemas.xmlsoap.org/ws/2004/08/eventing"
     xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan">
-    soap:encodingStyle=&#39;http://www.w3.org/2002/12/soap-encoding&#39; >
+    soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
   <soap:Header>
     <wsa:To>http://schemas.xmlsoap.org/ws/2003/03/addressing/role/anonymous</wsa:To>
     <wsa:Action>
@@ -164,7 +164,7 @@ The following code example shows how the WSD Scan Service sends a ScanAvailableE
   xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
   xmlns:wse="http://schemas.xmlsoap.org/ws/2004/08/eventing"
   xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle=&#39;http://www.w3.org/2002/12/soap-encoding&#39;>
+  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding'>
 
   <soap:Header>
     <wsa:To>AddressofEventSink</wsa:To>

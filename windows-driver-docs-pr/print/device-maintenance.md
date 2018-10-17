@@ -82,7 +82,7 @@ public class BidiSetResultCallback :
     {
         if (S_OK == hr)
         {
-            // parse and interpret &#39;bidiResponse&#39;
+            // parse and interpret 'bidiResponse'
         }
     }
 } 

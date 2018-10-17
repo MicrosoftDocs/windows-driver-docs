@@ -48,7 +48,7 @@ if ( OEM intends to handle the call ) {
  code to handle the call
 }
 else
-// OEM calls Unidrv&#39;s DrvLineTo DDI
+// OEM calls Unidrv's DrvLineTo DDI
   bRetVal = (((PFN_DrvLineTo)(poempdev->pfnUnidrv[UD_DrvLineTo])) (
  pso,
             pco,

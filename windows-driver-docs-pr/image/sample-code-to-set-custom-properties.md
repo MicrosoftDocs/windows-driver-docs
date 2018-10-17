@@ -23,7 +23,7 @@ To set a custom property, your application or custom UI might have code that loo
     IWiaPropertyStorage *pItemPropertyStorage = NULL;
  
     //
-    //  Get the item&#39;s Property Storage
+    //  Get the item's Property Storage
     //
     hr = pMyItem->QueryInterface(IID_IWiaPropertyStorage, (void**)&pItemPropertyStorage);
     if (SUCCEEDED(hr)) {

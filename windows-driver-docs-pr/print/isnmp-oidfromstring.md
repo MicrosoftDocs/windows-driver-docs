@@ -18,11 +18,15 @@ api_location:
 - olesnmp.h
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # ISNMP::OIDFromString method
-
 
 The `OIDFromString` method enables an ASP Web page to convert an SNMP OID string to a numeric array.
 
@@ -77,22 +81,17 @@ Win32 error codes can also be returned.
 </tbody>
 </table>
 
- 
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 This method calls the **SnmpMgrStrToOid** function to convert the SNMP OID string to its corresponding internal object-identifier structure. For more information about this function, see the Windows SDK documentation.
 
-```cpp
-    Dim StrIP, strCommunity, objSNMP, OIDArray
-    strIP = Session("MS_IPaddress")
-    strCommunity = Session ("MS_Community")
-    Set objSNMP = Server.CreateObject("OlePrn.OleSNMP")
-    objSNMP.Open strIP, strCommunity, 2, 1000
-    OIDArray = objSNMP.OIDFromString (". 43.18.1.1.2")
+```vb
+Dim StrIP, strCommunity, objSNMP, OIDArray
+strIP = Session("MS_IPaddress")
+strCommunity = Session ("MS_Community")
+Set objSNMP = Server.CreateObject("OlePrn.OleSNMP")
+objSNMP.Open strIP, strCommunity, 2, 1000
+OIDArray = objSNMP.OIDFromString (". 43.18.1.1.2")
 ```
 
 Requirements
@@ -108,21 +107,9 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 <tr class="odd">
 <td><p>Header</p></td>
 <td>Olesnmp.h</td>
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-

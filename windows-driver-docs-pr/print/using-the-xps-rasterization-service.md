@@ -74,7 +74,7 @@ HRESULT CreateRasterizationFactory(
         assert(var.vt == VT_UNKNOWN && var.punkVal != NULL);
 
         //
-        // Get the factory object&#39;s IXpsRasterizationFactory interface.
+        // Get the factory object's IXpsRasterizationFactory interface.
         //
  IUnknown *pUnknown = var.punkVal;
 

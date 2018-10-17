@@ -13,11 +13,15 @@ api_name:
 - IPrinterScriptUsbJobContextReturnCodes.Failure
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbJobContextReturnCodes::Failure method
-
 
 Returns a value of '1' to inform USBMon that the method call failed.
 
@@ -72,13 +76,4 @@ Requirements
 
 ## See also
 
-
 [**IPrinterScriptUsbJobContextReturnCodes**](iprinterscriptusbjobcontextreturncodes.md)
-
- 
-
- 
-
-
-
-

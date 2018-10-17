@@ -53,7 +53,7 @@ if (ReadPropertyLong(WIA_IPS_SEGMENTATION_FILTER, &lUseSegFilter) &&
                            (void**)& pWiaSegmentationFilter);
 
 //
-// m_pInputStream is a pointer to the IStream that the application&#39;s
+// m_pInputStream is a pointer to the IStream that the application's
 // implementation of MyWiaTransferCallback::GetNextStream
 // returns.
 //

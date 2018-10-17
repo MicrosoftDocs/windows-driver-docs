@@ -16,11 +16,15 @@ api_name:
 - Iasphelp.get_Duplex
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_Duplex method
-
 
 The **Duplex** property enables an ASP Web page to determine if a printer supports duplex printing.
 
@@ -71,24 +75,16 @@ Win32 error codes can also be returned.
 </tbody>
 </table>
 
- 
-
-## <span id="ddk_iasphelp_duplex_gg"></span><span id="DDK_IASPHELP_DUPLEX_GG"></span>
-
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::Duplex** property can be queried.
 
-```cpp
-    Dim objPrinter, DoesDuplex
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
-    DoesDuplex = objPrinter.Duplex
+```vb
+Dim objPrinter, DoesDuplex
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
+DoesDuplex = objPrinter.Duplex
 ```
 
 Requirements
@@ -104,22 +100,9 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
 
 ## See also
 
-
 [**Iasphelp::Open**](iasphelp-open.md)
-
- 
-
- 
-
-
-
-

@@ -16,11 +16,15 @@ api_name:
 - Iasphelp.get_PageRateUnit
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_PageRateUnit method
-
 
 The **PageRateUnit** enables an ASP Web page to determine the units in which the page rate is expressed.
 
@@ -70,8 +74,6 @@ A caller-supplied pointer to a memory location that receives a value that indica
 </tbody>
 </table>
 
- 
-
 These values correspond to the constants PRINTRATEUNIT\_PPM, PRINTRATEUNIT\_CPS, PRINTRATEUNIT\_LPM, and PRINTRATEUNIT\_IPM, which are defined in the Wingdi.h header file. For more information about these constants, see the description of the **DeviceCapabilities** function in the Windows SDK documentation.
 
 Return value
@@ -106,23 +108,18 @@ This property returns one of the values in the following table.
 </tbody>
 </table>
 
- 
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 Query this property to determine the units in which the [**Iasphelp::PageRate**](iasphelp-pagerate.md) property value is expressed.
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::PageRateUnit** property can be queried.
 
-```cpp
-    Dim objPrinter, PtrPageRateUnit
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
-    PtrPageRate = objPrinter.PageRateUnit
+```vb
+Dim objPrinter, PtrPageRateUnit
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
+PtrPageRate = objPrinter.PageRateUnit
 ```
 
 Requirements
@@ -138,24 +135,11 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
 
 ## See also
 
-
 [**Iasphelp::PageRate**](iasphelp-pagerate.md)
 
 [**Iasphelp::Open**](iasphelp-open.md)
-
- 
-
- 
-
-
-
-

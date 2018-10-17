@@ -60,7 +60,7 @@ HRESULT _stdcall CWIADevice::drvDeleteItem(BYTE *pWiasContext,
     // Two pieces of information are needed to queue an event:
     // 1. Full item name
     // 2. Device ID (passed in from drvInitializeWia,
-    //    or read from the ROOT item&#39;s property set)
+    //    or read from the ROOT item's property set)
     //
 
     BSTR bstrFullItemName = NULL;
@@ -83,7 +83,7 @@ HRESULT _stdcall CWIADevice::drvDeleteItem(BYTE *pWiasContext,
         }
 
         //
-        // Free item&#39;s full item name, read above.
+        // Free item's full item name, read above.
         //
 
         if (bstrFullItemName)

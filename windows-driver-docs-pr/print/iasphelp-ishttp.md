@@ -16,11 +16,15 @@ api_name:
 - Iasphelp.get_IsHTTP
 api_type:
 - COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_IsHTTP method
-
 
 The **IsHTTP** property enables an ASP Web page to determine whether the printer is connected to an HTTP port.
 
@@ -71,21 +75,16 @@ The property return one of the values in the following table.
 </tbody>
 </table>
 
- 
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::IsHTTP** property can be queried.
 
-```cpp
-    Dim objPrinter, IsHTTPPort
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
-    IsHTTPPort = objPrinter.IsHTTP
+```vb
+Dim objPrinter, IsHTTPPort
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
+IsHTTPPort = objPrinter.IsHTTP
 ```
 
 Requirements
@@ -101,22 +100,9 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
 
 ## See also
 
-
 [**Iasphelp::Open**](iasphelp-open.md)
-
- 
-
- 
-
-
-
-

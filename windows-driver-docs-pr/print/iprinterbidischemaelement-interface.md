@@ -6,11 +6,15 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 93AE5FDD-DD77-4F9C-B402-C650ACDD7641
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaElement Interface
-
 
 The IPrinterBidiSchemaElement interface is passed as a parameter to the USB Extension JavaScript method **setSchema**. This interface represents a single Bidi schema element.
 
@@ -21,11 +25,3 @@ This interface has three methods:
 [Name](iprinterbidischemaelement-name.md)
 
 [Value](iprinterbidischemaelement-value.md)
-
- 
-
- 
-
-
-
-
