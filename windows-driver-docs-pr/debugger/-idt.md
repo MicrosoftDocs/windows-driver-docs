@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!idt** extension displays the interrupt service routines (ISRs) for a specified interrupt dispatch table (IDT).
 
-```
+```dbgcmd
 !idt IDT 
 !idt [-a] 
 !idt -? 
@@ -71,7 +71,7 @@ Remarks
 
 Here is an example of the output from this extension:
 
-```
+```dbgcmd
 0: kd> !idt
 
 Dumping IDT:

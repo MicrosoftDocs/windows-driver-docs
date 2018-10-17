@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.createdir** command controls the starting directory and handle inheritance for any processes created by the debugger.
 
-```
+```dbgsyntax
 .createdir [-i | -I] [Path] 
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!bthkd.bthtree** command displays the complete Bluetooth device tree.
 
-```
+```dbgsyntax
 !bthkd.bthtree
 ```
 

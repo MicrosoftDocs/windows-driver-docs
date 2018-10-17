@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ks.objhdr** extension displays the kernel streaming object header associated with the specified file object.
 
-```
+```dbgcmd
 !ks.objhdr FileObject [Level] [Flags]  
 ```
 
@@ -67,7 +67,7 @@ Levels and flags for **!ks.objhdr** are identical to those described in [**!ks.d
 
 The output from [**!ks.allstreams**](-ks-allstreams.md) and [**!ks.enumdevobj**](-ks-enumdevobj.md) can be used as the input for **!ks.objhdr**. To do this with the *avssamp* sample, for instance, issue the following commands:
 
-```
+```dbgcmd
 kd> !ks.allstreams
 6 Kernel Streaming FDOs found:
     Functional Device 8299be18 [\Driver\smwdm]
@@ -88,7 +88,7 @@ The results of this command might be lengthy. Issue a Ctrl-BREAK (WinDbg) or Ctr
 
 Here's a separate example:
 
-```
+```dbgcmd
 kd> !ks.objhdr 81D828B8 7
 Adjusting file object 81D828B8 to object header 81BC1008
 

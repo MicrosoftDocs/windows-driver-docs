@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ca** extension displays information about a control area.
 
-```
+```dbgsyntax
 !ca [Address | 0 | -1] [Flags]
 ```
 

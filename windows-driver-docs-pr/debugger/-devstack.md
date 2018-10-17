@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!devstack** extension displays a formatted view of the device stack associated with a device object.
 
-```
+```dbgcmd
 !devstack DeviceObject 
 ```
 
@@ -61,7 +61,7 @@ If *DeviceObject* specifies the name of the device but supplies no prefix, the p
 
 Here is an example:
 
-```
+```dbgcmd
 kd> !devstack e000000085007b50
  !DevObj   !DrvObj            !DevExt   ObjectName
   e0000165fff32040  \Driver\kmixer     e0000165fff32190  

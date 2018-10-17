@@ -21,7 +21,7 @@ The **~f** command freezes the given thread, causing it to stop and wait until i
 
 Do not confuse this command with the [**f (Fill Memory)**](f--fp--fill-memory-.md) command.
 
-```
+```dbgcmd
 ~Thread f 
 ```
 
@@ -69,25 +69,25 @@ The **~f** command causes the specified thread to freeze. When the debugger enab
 
 The following examples show you how to use this command. The following command displays the current status of all threads.
 
-```
+```dbgcmd
 0:000> ~* k
 ```
 
 The following command freezes the thread that caused the current exception.
 
-```
+```dbgcmd
 0:000> ~# f
 ```
 
 The following command checks that the status of this thread is suspended.
 
-```
+```dbgcmd
 0:000> ~* k
 ```
 
 The following command unfreezes thread number 123.
 
-```
+```dbgcmd
 0:000> ~123 u
 ```
 

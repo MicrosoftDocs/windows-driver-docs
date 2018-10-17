@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!bthkd.bthinfo** command displays details about the BTHPORT FDO. This command is a good starting point for Bluetooth investigations as it displays address information that can be used to access many of the other Bluetooth debug extension commands.
 
-```
+```dbgsyntax
 !bthkd.bthinfo 
 ```
 

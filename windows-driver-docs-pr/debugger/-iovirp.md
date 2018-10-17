@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!iovirp** extension displays detailed information for a specified I/O Verifier IRP.
 
-```
+```dbgcmd
 !iovirp [IRP]
 ```
 
@@ -55,7 +55,7 @@ Remarks
 
 Here is an example of the output from this extension:
 
-```
+```dbgcmd
 kd> !iovirp 947cef68
 IovPacket       84509af0
 TrackedIrp      947cef68

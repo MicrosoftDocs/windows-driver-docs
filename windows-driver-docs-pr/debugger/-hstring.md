@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!hstring** extension displays the fields of an **HSTRING**. The last item in the display is the string itself.
 
-```
+```dbgcmd
 !hstring Address
 ```
 

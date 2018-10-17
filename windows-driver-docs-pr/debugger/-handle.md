@@ -21,14 +21,14 @@ The **!handle** extension displays information about a handle or handles that on
 
 User-Mode
 
-```
+```dbgcmd
 !handle [Handle [UMFlags [TypeName]]] 
 !handle -?
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
     !handle [Handle [KMFlags [Process [TypeName]]]] 
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!critsec** extension displays a critical section.
 
-```
+```dbgsyntax
 !critsec Address 
 ```
 
@@ -61,7 +61,7 @@ If you do not know the address of the critical section, you should use the [**!n
 
 Here is an example:
 
-```
+```dbgcmd
 0:000> !critsec 3a8c0e9c
 
 CritSec +3a8c0e9c at 3A8C0E9C

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!calldata** extension displays performance information in the form of procedure call statistics from the named table.
 
-```
+```dbgsyntax
     !calldata Table 
 ```
 

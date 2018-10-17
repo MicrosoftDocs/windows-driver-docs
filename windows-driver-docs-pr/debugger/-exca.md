@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!exca** extension displays PC-Card Interrupt Controller (PCIC) Exchangable Card Architecture (ExCA) registers.
 
-```
+```dbgcmd
 !exca BasePort.SocketNumber
 ```
 

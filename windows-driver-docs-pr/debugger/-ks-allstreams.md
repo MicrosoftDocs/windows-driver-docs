@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ks.allstreams** extension walks the entire device tree and finds every kernel streaming device in the system.
 
-```
+```dbgcmd
 !ks.allstreams [Flags] [Level] 
 ```
 
@@ -79,7 +79,7 @@ This command can take some time to execute (a minute is not unusual).
 
 Here is an example of the **!ks.allstreams** display:
 
-```
+```dbgcmd
 kd> !allstreams 
 6 Kernel Streaming FDOs found:
     Functional Device 82a17690 [\Driver\smwdm]

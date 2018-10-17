@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!elog\_str** extension adds a string to the event log.
 
-```
+```dbgcmd
 !elog_str String
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!bushnd** extension displays a HAL BUS\_HANDLER structure.
 
-```
+```dbgsyntax
     !bushnd [Address] 
 ```
 

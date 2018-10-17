@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.if** token behaves like the **if** keyword in C.
 
-```
+```dbgcmd
 .if (Condition) { Commands } 
 
 .if (Condition) { Commands } .else { Commands } 

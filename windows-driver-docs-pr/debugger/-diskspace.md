@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!diskspace** extension displays the amount of free space on a hard disk of the target computer.
 
-```
+```dbgcmd
 !diskspace Drive[:]
 ```
 
@@ -55,7 +55,7 @@ Remarks
 
 Here is an example:
 
-```
+```dbgcmd
 kd> !diskspace c:
 Checking Free Space for c: ..........
    Cluster Size 0 KB

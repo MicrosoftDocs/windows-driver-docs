@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!fpsearch** extension searches the freed special pool for a specified address.
 
-```
+```dbgcmd
 !fpsearch [Address] [Flag]
 ```
 

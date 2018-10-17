@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!bthkd.bthusbtransfer** command displays the Bluetooth usb transfer context including Irp, Bip and transfer buffer information.
 
-```
+```dbgsyntax
 !bthkd.bthusbtransfer addr 
 ```
 

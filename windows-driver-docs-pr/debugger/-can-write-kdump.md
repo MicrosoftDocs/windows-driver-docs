@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!can\_write\_kdump** extension verifies that there is enough disk space on the target computer to write a kernel dump file of the specified type.
 
-```
+```dbgsyntax
 !can_write_kdump [-dn] [Options]
 ```
 

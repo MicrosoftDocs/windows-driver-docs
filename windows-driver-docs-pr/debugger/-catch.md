@@ -21,7 +21,7 @@ The **.catch** token is used to prevent a program from terminating if an error o
 
 It does not behave like the **catch** keyword in C++.
 
-```
+```dbgsyntax
     Commands ; .catch { Commands } ; Commands 
 ```
 

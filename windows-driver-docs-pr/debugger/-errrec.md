@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!errrec** extension displays the contents of a Windows Hardware Error Architecture (WHEA) error record.
 
-```
+```dbgcmd
 !errrec Address 
 ```
 
@@ -69,7 +69,7 @@ Remarks
 
 The following example shows how the [**!whea**](-whea.md) extension can be used to obtain the address of an error record, and then the contents of this record can be displayed by the **!errrec** extension:
 
-```
+```dbgcmd
 3: kd> !whea 
 Error Source Table @ fffff800019ca250
 13 Error Sources

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!bth** extension displays the Itanium-based branch traces history for the specified processor.
 
-```
+```dbgsyntax
 !bth [Processor]
 ```
 

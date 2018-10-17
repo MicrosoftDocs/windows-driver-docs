@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The !isr extension displays the Itanium Interruption Status Register (ISR) at the specified address.
 
-```
+```dbgcmd
 !isr Expression [DisplayLevel]
 ```
 
@@ -73,7 +73,7 @@ Remarks
 
 Here are a couple of examples of output from this extension:
 
-```
+```dbgcmd
 kd> !isr @isr
 isr:ed ei so ni ir rs sp na r w x vector code
   0  0  0  0  0  0  0  0 0 0 0      0   0

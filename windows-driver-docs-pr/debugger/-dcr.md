@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!dcr** extension displays the default control register (DCR) at the specified address.
 
-```
+```dbgcmd
 !dcr Expression [DisplayLevel]
 ```
 
@@ -75,7 +75,7 @@ The DCR specifies default parameters for the processor status register values on
 
 Here are a couple of examples:
 
-```
+```dbgcmd
 kd> !dcr @dcr
 dcr:pp be lc dm dp dk dx dr da dd
 1 0 1 1 1 1 1 1 1 1

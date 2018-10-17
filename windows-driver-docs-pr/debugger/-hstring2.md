@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!hstring2** extension displays an entire **HSTRING** including any embedded NULL characters in the string itself.
 
-```
+```dbgcmd
 !hstring2 Address
 ```
 

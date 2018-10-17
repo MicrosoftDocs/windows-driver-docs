@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!homedir** extension sets the default directory used by the symbol server and the source server.
 
-```
+```dbgcmd
 !homedir Directory
 !homedir
 ```

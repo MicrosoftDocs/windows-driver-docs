@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!gpiokd.clientlist** command displays all registered GPIO controllers.
 
-```
+```dbgcmd
 !gpiokd.clientlist [Flags] 
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!bthkd.bthdevinfo** command displays the information about a given BTHENUM created device PDO.
 
-```
+```dbgsyntax
 !bthkd.bthdevinfo addr
 ```
 

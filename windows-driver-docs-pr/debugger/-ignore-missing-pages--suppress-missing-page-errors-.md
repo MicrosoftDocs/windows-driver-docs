@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.ignore\_missing\_pages** command suppresses the error messages when a Kernel Memory Dump has missing pages.
 
-```
+```dbgcmd
 .ignore_missing_pages 0
 .ignore_missing_pages 1
 .ignore_missing_pages 

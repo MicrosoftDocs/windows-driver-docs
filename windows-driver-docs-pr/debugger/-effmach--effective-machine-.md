@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.effmach** command displays or changes the processor mode that the debugger uses.
 
-```
+```dbgcmd
 .effmach [MachineType]
 ```
 

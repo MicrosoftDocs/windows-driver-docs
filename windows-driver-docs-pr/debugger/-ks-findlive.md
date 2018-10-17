@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ks.findlive** extension searches the internal Ks.sys debug log to attempt to find live objects of a specified type.
 
-```
+```dbgcmd
 !ks.findlive Type [Entries] [Level] 
 ```
 

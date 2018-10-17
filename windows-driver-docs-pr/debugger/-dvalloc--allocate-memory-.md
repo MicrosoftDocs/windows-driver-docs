@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.dvalloc** command causes Windows to allocate additional memory to the target process.
 
-```
+```dbgcmd
 .dvalloc [Options] Size 
 ```
 

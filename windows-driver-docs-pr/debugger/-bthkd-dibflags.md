@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!bthkd.dibflags** command displays DEVICE\_INFO\_BLOCK.DibFlags dumps flags set in \_DEVICE\_INFO\_BLOCK.DibFlags.
 
-```
+```dbgsyntax
 !bthkd.dibflags flags
 ```
 

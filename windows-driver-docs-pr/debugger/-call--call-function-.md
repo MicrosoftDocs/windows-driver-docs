@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.call** command causes the target process to execute a function.
 
-```
+```dbgsyntax
 .call [/v] Function( Arguments ) 
 .call /s Prototype Function( Arguments ) 
 .call /c 

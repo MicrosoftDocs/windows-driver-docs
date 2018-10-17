@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.endpsrv** command causes the current process server or KD connection server to close.
 
-```
+```dbgcmd
 .endpsrv 
 ```
 

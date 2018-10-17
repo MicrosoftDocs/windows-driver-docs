@@ -21,7 +21,7 @@ The **!irpfind** extension displays information about all I/O request packets (I
 
 Syntax
 
-```
+```dbgcmd
 !irpfind [-v][PoolType[RestartAddress[CriteriaData]]]
 ```
 
@@ -109,13 +109,13 @@ Remarks
 
 This example finds the IRP in the nonpaged pool that is going to set user event FF9E4F48 upon completion:
 
-```
+```dbgcmd
 kd> !irpfind 0 0 userevent ff9e4f48
 ```
 
 The following example produces a full listing of all IRPs in the nonpaged pool:
 
-```
+```dbgcmd
 kd> !irpfind
 Searching NonPaged pool (8090c000 : 8131e000) for Tag: Irp
 8097c008 Thread 8094d900 current stack belongs to  \Driver\symc810

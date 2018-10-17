@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!gflag** extension sets or displays the global flags.
 
-```
+```dbgcmd
 !gflag [+|-] Value 
 !gflag {+|-} Abbreviation 
 !gflag -? 

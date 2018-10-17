@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!exchain** extension displays the current exception handler chain.
 
-```
+```dbgcmd
 !exchain [Options]
 ```
 

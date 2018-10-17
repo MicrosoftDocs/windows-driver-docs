@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.f+** command shifts the frame index to the next frame in the current stack. The **.f-** command shifts the frame index to the previous frame in the current stack.
 
-```
+```dbgcmd
 .f+  
 .f-  
 ```

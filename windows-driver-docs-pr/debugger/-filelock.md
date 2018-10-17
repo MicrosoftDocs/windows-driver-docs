@@ -21,7 +21,7 @@ The **!filelock** extension displays a file lock structure.
 
 Syntax
 
-```
+```dbgcmd
 !filelock FileLockAddress 
 !filelock ObjectAddress 
 ```

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!dflink** extension displays a linked list in the forward direction.
 
-```
+```dbgcmd
 !dflink Address [Count] [Bias]  
 ```
 

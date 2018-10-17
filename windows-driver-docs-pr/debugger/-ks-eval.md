@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ks.eval** extension evaluates an expression using an extension-specific expression evaluator.
 
-```
+```dbgcmd
 !ks.eval Expression 
 ```
 
@@ -71,7 +71,7 @@ Note that all operators supported by **!ks.eval** are also supported by all othe
 
 Here is an example of the **!ks.eval** extension being used with the address of a filter. Note the presence of the 0x8241C020 address in the [**!ks.allstreams**](-ks-allstreams.md) output:
 
-```
+```dbgcmd
 kd> !eval fdo(829493c4)
 Resulting Evaluation: 8241c020
 

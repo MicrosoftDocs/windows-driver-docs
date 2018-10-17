@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.fnret** command displays information about a function's return value.
 
-```
+```dbgcmd
 .fnret [/s] Address [Value] 
 ```
 

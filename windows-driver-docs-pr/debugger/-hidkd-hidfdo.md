@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!hidkd.hidfdo** command displays HID information associated with a functional device object (FDO).
 
-```
+```dbgcmd
 !hidkd.hidfdo fdo
 ```
 
@@ -39,7 +39,7 @@ Examples
 
 Here is an example of the output of the **!hidfdo** command. The example first calls [**!hidtree**](-hidkd-hidtree.md) to get the address of an FDO.
 
-```
+```dbgcmd
 0: kd> !hidkd.hidtree
 HID Device Tree
 ...

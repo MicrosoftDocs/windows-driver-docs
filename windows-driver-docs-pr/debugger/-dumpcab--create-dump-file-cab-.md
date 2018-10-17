@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.dumpcab** command creates a CAB file containing the current dump file.
 
-```
+```dbgcmd
 .dumpcab [-a] CabName 
 ```
 

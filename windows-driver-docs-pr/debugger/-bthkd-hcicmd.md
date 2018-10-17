@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!bthkd.hcicmd** command displays a list of the currently pending commands.
 
-```
+```dbgsyntax
 !bthkd.hcicmd
 ```
 

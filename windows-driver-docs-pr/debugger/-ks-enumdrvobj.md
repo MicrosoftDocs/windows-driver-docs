@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ks.enumdrvobj** extension displays all KSDEVICE structures associated with a given WDM driver object, and lists the filter types and filters currently instantiated on these devices.
 
-```
+```dbgcmd
 !ks.enumdrvobj DriverObject
 ```
 

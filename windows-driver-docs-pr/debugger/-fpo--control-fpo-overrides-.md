@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.fpo** command controls the frame pointer omission (FPO) overrides.
 
-```
+```dbgcmd
 .fpo -s [-fFlag] Address 
 .fpo -d Address 
 .fpo -x Address 

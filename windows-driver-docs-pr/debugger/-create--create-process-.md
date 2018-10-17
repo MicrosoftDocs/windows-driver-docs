@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.create** command creates a new target application.
 
-```
+```dbgsyntax
 .create [-premote RemoteOptions] [-f] CommandLine 
 ```
 

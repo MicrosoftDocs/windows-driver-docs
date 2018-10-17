@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.expr** command specifies the default expression evaluator.
 
-```
+```dbgcmd
 .expr /s masm 
 .expr /s c++ 
 .expr /q 

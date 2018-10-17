@@ -23,7 +23,7 @@ For more information about PoFX, see [Overview of the Power Management Framework
 
 Syntax
 
-```
+```dbgcmd
 !fxdevice[<FxDevice Address>]
 ```
 
@@ -62,7 +62,7 @@ The !fxdevice extension displays the following information when it is present on
 
 The following is example out from the !fxdevice extension with a supplied device address.
 
-```
+```dbgcmd
 kd> !fxdevice ffffe0012ccbda60
 !fxdevice 0xffffe0012ccbda60
     DevNode: 0xffffe0012bbb09f0
@@ -88,7 +88,7 @@ kd> !fxdevice ffffe0012ccbda60
 
 The following is the default output from the !fxdevice extension.
 
-```
+```dbgcmd
 kd> !fxdevice 
 ********************************************************************************
 Dumping non-idle PoFx devices

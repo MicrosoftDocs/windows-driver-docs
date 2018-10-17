@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!for\_each\_process** extension executes the specified debugger command once for each process in the target.
 
-```
+```dbgcmd
 !for_each_process ["CommandString"] 
 !for_each_process -? 
 ```

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.foreach** token parses the output of one or more debugger commands and uses each value in this output as the input to one or more additional commands.
 
-```
+```dbgcmd
 .foreach [Options] ( Variable  { InCommands } ) { OutCommands } 
 
 .foreach [Options] /s ( Variable  "InString" ) { OutCommands } 

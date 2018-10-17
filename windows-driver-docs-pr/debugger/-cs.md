@@ -19,14 +19,14 @@ ms.localizationpriority: medium
 
 The **!cs** extension displays one or more critical sections or the whole critical section tree.
 
-```
+```dbgsyntax
 !cs [-s] [-l] [-o] 
 !cs [-s] [-o] Address 
 !cs [-s] [-l] [-o] StartAddress EndAddress 
 !cs [-s] [-o] -d InfoAddress 
 !cs [-s] -t [TreeAddress] 
 !cs -? 
-```
+```dbgsyntax
 
 ## <span id="ddk__cs_dbg"></span><span id="DDK__CS_DBG"></span>Parameters
 
@@ -96,7 +96,7 @@ The **!cs** extension requires full symbols (including type information) for the
 
 The following examples shows you how to use **!cs**. The following command displays information about the critical section at address 0x7803B0F8 and shows its initialization stack trace.
 
-```
+```dbgcmd
 0:001> !cs -s 0x7803B0F8
 Critical section   = 0x7803B0F8 (MSVCRT!__app_type+0x4)
 DebugInfo          = 0x6A262080
@@ -114,7 +114,7 @@ Stack trace for DebugInfo = 0x6A262080:
 
 The following command displays information about the critical section whose DebugInfo is at address 0x6A262080.
 
-```
+```dbgcmd
 0:001> !cs -d 0x6A262080
 DebugInfo          = 0x6A262080
 Critical section   = 0x7803B0F8 (MSVCRT!__app_type+0x4)
@@ -125,7 +125,7 @@ SpinCount          = 0x0
 
 The following command displays information about all of the active critical sections in the current process.
 
-```
+```dbgcmd
 ## 0:001> !cs
 
 DebugInfo          = 0x6A261D60
@@ -163,7 +163,7 @@ LockSemaphore      = 0x0
 
 The following command displays the critical section tree.
 
-```
+```dbgcmd
 0:001> !cs -t
 
 Tree root 00bb08c0

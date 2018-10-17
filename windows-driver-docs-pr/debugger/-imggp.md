@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!imggp** extension displays the global pointer (GP) directory entry value for a 64-bit image.
 
-```
+```dbgcmd
 !imggp Address 
 ```
 

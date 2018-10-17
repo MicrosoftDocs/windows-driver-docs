@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.kframes** command sets the default length of a stack trace display.
 
-```
+```dbgcmd
 .kframes FrameCountDefault 
 ```
 

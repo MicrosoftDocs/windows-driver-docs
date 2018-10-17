@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!dumpfa** extension displays the contents of a failure analysis entry.
 
-```
+```dbgcmd
 !dumpfa Address
 ```
 

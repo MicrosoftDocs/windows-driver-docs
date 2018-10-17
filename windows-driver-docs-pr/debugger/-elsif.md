@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.elsif** token behaves like the **else if** keyword combination in C.
 
-```
+```dbgcmd
 .if (Condition) { Commands } .elsif (Condition) { Commands } 
 
 .if (Condition) { Commands } .elsif (Condition) { Commands } .else { Commands } 

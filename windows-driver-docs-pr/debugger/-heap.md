@@ -21,7 +21,7 @@ The **!heap** extension displays heap usage information, controls breakpoints in
 
 This extension supports the segment heap and the NT heap. Use !heap with no parameter to list all heaps and their type.
 
-```
+```dbgcmd
 !heap [HeapOptions] [ValidationOptions] [Heap] 
 !heap -b [{alloc|realloc|free} [Tag]] [Heap | BreakAddress] 
 !heap -B {alloc|realloc|free} [Heap | BreakAddress] 
@@ -445,7 +445,7 @@ The **!heap -stat** command displays heap usage statistics.
 
 Here is an example of the standard **!heap** command:
 
-```
+```dbgcmd
 0:000> !ntsdexts.heap -a
 Index   Address  Name      Debugging options enabled
   1:   00250000 
@@ -564,7 +564,7 @@ Address   Size    Size  flags       (Bytes used)    (Tag name)
 
 Here is an example of the **!heap -l** command:
 
-```
+```dbgcmd
 1:0:011> !heap -l
 1:Heap 00170000
 Heap 00280000
@@ -607,7 +607,7 @@ The table in this example contains all 21 leaks found.
 
 Here is an example of the **!heap -x** command:
 
-```
+```dbgcmd
 0:011> !heap 002057b8 -x
 ## Entry     User      Heap      Segment       Size  PrevSize  Flags
 
@@ -616,7 +616,7 @@ Here is an example of the **!heap -x** command:
 
 Here is an example of the **!heap -x -v** command:
 
-```
+```dbgcmd
 1:0:011> !heap 002057b8 -x -v
 ## 1:Entry     User      Heap      Segment       Size  PrevSize  Flags
 
@@ -629,7 +629,7 @@ In this example, there is a pointer to this heap block at address 0x00205990.
 
 Here is an example of the **!heap -flt s** command:
 
-```
+```dbgcmd
 0:001>!heap -flt s 0x50
 ```
 
@@ -637,7 +637,7 @@ This will display all of the allocations of size 0x50.
 
 Here is an example of the **!heap -flt r** command:
 
-```
+```dbgcmd
 0:001>!heap -flt r 0x50 0x80
 ```
 
@@ -645,7 +645,7 @@ This will display each allocation whose size is between 0x50 and 0x7F.
 
 Here is an example of the **!heap -srch** command.
 
-```
+```dbgcmd
 0:001> !heap -srch 77176934
     _HEAP @ 00090000
    in HEAP_ENTRY: Size : Prev Flags - UserPtr UserSize - state
@@ -661,7 +661,7 @@ The following diagrams show the arrangement of heap blocks.
 
 Light page heap block -- allocated:
 
-```
+```dbgcmd
  +-----+---------------+---+                                  
  |     |               |   |                                  
  +-----+---------------+---+                                  
@@ -673,7 +673,7 @@ Light page heap block -- allocated:
 
 Light page heap block -- freed:
 
-```
+```dbgcmd
  +-----+---------------+---+                                  
  |     |               |   |                                  
  +-----+---------------+---+                                  
@@ -685,7 +685,7 @@ Light page heap block -- freed:
 
 Full page heap block -- allocated:
 
-```
+```dbgcmd
  +-----+---------+---+-------                                 
  |     |         |   |  ... N/A page                          
  +-----+---------+---+-------                                 
@@ -698,7 +698,7 @@ Full page heap block -- allocated:
 
 Full page heap block -- freed:
 
-```
+```dbgcmd
  +-----+---------+---+-------                                 
  |     |         |   |  ... N/A page                          
  +-----+---------+---+-------                                 

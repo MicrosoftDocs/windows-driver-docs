@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 
 The **!drvobj** extension displays detailed information about a DRIVER\_OBJECT.
 
-```
+```dbgcmd
 !drvobj DriverObject [Flags] 
-```
+```dbgcmd
 
 ## <span id="ddk__drvobj_dbg"></span><span id="DDK__DRVOBJ_DBG"></span>Parameters
 
@@ -77,7 +77,7 @@ This extension command will display a list of all device objects created by a sp
 
 The following is an example for the Symbios Logic 810 SCSI miniport driver:
 
-```
+```dbgcmd
 kd> bp DriverEntry          //  breakpoint at DriverEntry
 
 kd> g

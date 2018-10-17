@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!cppexr** extension displays the contents of a C++ exception record.
 
-```
+```dbgsyntax
     !cppexr Address 
 ```
 

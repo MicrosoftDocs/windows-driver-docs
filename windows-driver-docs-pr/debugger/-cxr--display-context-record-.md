@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.cxr** command displays the context record saved at the specified address. It also sets the register context.
 
-```
+```dbgsyntax
 .cxr [Options] [Address]  
 ```
 

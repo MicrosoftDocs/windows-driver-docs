@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!icpleak** extension examines all I/O completion objects in the system for the object with the largest number of queued entries.
 
-```
+```dbgcmd
 !icpleak [HandleFlag]
 ```
 

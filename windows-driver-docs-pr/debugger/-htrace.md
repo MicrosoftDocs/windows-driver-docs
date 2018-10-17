@@ -21,7 +21,7 @@ The **!htrace** extension displays stack trace information for one or more handl
 
 User-Mode Syntax
 
-```
+```dbgcmd
 !htrace [Handle [Max_Traces]] 
 !htrace -enable [Max_Traces]
 !htrace -snapshot
@@ -32,7 +32,7 @@ User-Mode Syntax
 
 Kernel-Mode Syntax
 
-```
+```dbgcmd
     !htrace [Handle [Process [Max_Traces]]] 
 !htrace -? 
 ```
@@ -104,7 +104,7 @@ Some of the traces reported by **!htrace** may be from a different process conte
 
 The following example displays information about all handles in process 0x81400300:
 
-```
+```dbgcmd
 kd> !htrace 0 81400300
 Process 0x81400300
 ObjectTable 0xE10CCF60

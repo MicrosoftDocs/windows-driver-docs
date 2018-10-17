@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!bthkd.sdpinterface** command displays information about the SDP interface.
 
-```
+```dbgsyntax
 !bthkd.sdpinterface
 ```
 

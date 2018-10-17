@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!frozen** extension displays the state of each processor.
 
-```
+```dbgcmd
 !frozen
 ```
 

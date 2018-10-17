@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.closehandle** command closes a handle owned by the target application.
 
-```
+```dbgsyntax
 .closehandle Handle 
 .closehandle -a 
 ```

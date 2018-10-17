@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.dump** command creates a user-mode or kernel-mode crash dump file.
 
-```
+```dbgcmd
 .dump Options FileName 
 .dump /?
 ```
@@ -231,7 +231,7 @@ The **/xc**, **/xr**, **/xp**, and **/xt** options are used to store exception a
 
 The following example will create a user-mode minidump, containing full memory and handle information:
 
-```
+```dbgcmd
 0:000> .dump /mfh myfile.dmp 
 ```
 

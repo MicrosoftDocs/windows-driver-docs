@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!hidkd.hidrd** command displays a HID report descriptor in both raw and parsed format.
 
-```
+```dbgcmd
 !hidkd.hidrd rd Length
 ```
 
@@ -42,7 +42,7 @@ Examples
 
 This example shows how to use the [**!hidfdo**](-hidkd-hidfdo.md) command followed by the **!hidrd** command. The output of **!hidfdo** shows both the address and length of the raw report descriptor data.
 
-```
+```dbgcmd
 0: kd> !hidfdo 0xffffe00004f466e0
 # FDO 0xffffe00004f466e0  (!devobj/!devstack)
 

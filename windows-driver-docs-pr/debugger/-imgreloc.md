@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!imgreloc** extension displays the addresses of each loaded module and indicates their former addresses before they were relocated.
 
-```
+```dbgcmd
 !imgreloc Address 
 ```
 

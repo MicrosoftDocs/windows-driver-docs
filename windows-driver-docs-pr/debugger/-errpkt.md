@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!errpkt** extension displays the contents of a Windows Hardware Error Architecture (WHEA) hardware error packet.
 
-```
+```dbgcmd
 !errpkt Address 
 ```
 
@@ -69,7 +69,7 @@ Remarks
 
 The following example shows the output of the **!errpkt** extension:
 
-```
+```dbgcmd
 3: kd> !errpkt fffffa8007cf44da 
    WHEA Error Packet Info Section (@ fffffa8007cf44da)
    Flags            : 0x00000000

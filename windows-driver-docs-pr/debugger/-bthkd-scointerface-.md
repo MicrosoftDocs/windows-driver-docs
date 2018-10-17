@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!bthkd.scointerface** command displays information about the SCO interface.
 
-```
+```dbgsyntax
 !bthkd.scointerface
 ```
 

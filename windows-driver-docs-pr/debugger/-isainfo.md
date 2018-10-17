@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!isainfo** extension displays information about PNPISA cards or devices present in the system..
 
-```
+```dbgcmd
 !isainfo [Card]
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.excr** command displays the context record that is associated with the current exception.
 
-```
+```dbgcmd
 .excr
 ```
 

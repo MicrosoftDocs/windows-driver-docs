@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!bthkd.bthenuminfo** command displays information about the BTHENUM FDO.
 
-```
+```dbgsyntax
 !bthkd.bthenuminfo
 ```
 

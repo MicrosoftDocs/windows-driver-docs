@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 
 The **!devext** extension displays bus-specific device extension information for devices on a variety of buses.
 
-```
+```dbgcmd
 !devext Address TypeCode
-```
+```dbgcmd
 
 ## <span id="ddk__devext_dbg"></span><span id="DDK__DEVEXT_DBG"></span>Parameters
 
@@ -119,7 +119,7 @@ For those object types that are no longer supported by **!devext**, use the [**d
 
 Here is an example for an ISA PnP device extension:
 
-```
+```dbgcmd
 kd> !devext e0000165fff32190 ISAPNP
 ISA PnP FDO @ 0x00000000, DevExt @ 0xe0000165fff32190, Bus # 196639
 Flags (0x854e2530)  DF_ACTIVATED, DF_QUERY_STOPPED, 
@@ -141,7 +141,7 @@ DevicePowerState     - Unspecified
 
 Here is an example for a PCI device:
 
-```
+```dbgcmd
 kd> !devext e0000000858c31b0 PCI
 PDO Extension, Bus 0x0, Device 0, Function 0.
   DevObj 0xe0000000858c3060 PCI Parent Bus FDO DevExt 0xe0000000858c4960

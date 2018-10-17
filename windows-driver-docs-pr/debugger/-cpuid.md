@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!cpuid** extension displays information about the processors on the system.
 
-```
+```dbgsyntax
 !cpuid [Processor]
 ```
 
@@ -63,7 +63,7 @@ If you are debugging in user mode, the **!cpuid** extension describes the comput
 
 The following example shows this extension.
 
-```
+```dbgcmd
 kd> !cpuid 
 CP  F/M/S  Manufacturer        MHz 
  0  6,5,1  GenuineIntel        700 

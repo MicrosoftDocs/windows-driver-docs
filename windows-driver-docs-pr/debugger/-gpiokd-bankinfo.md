@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!gpiokd.bankinfo** command displays information about a GPIO bank.
 
-```
+```dbgcmd
 !gpiokd.bankinfo BankAddress [Flags]
 ```
 

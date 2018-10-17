@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.extmatch** command displays extension commands exported by the currently loaded extension DLLs that match the specified pattern.
 
-```
+```dbgcmd
 .extmatch [Options] Pattern 
 ```
 
@@ -73,7 +73,7 @@ To display a list of loaded extension DLLs, use the [**.chain**](-chain--list-de
 
 Here is an example of this command, showing all the loaded extension DLLs that have an export named !help:
 
-```
+```dbgcmd
 0:000> .extmatch help 
 !ext.help
 !exts.help
@@ -83,7 +83,7 @@ Here is an example of this command, showing all the loaded extension DLLs that h
 
 The following example lists all extension commands beginning with the string "he" that are exported by extension DLLs whose names begin with the string "ex":
 
-```
+```dbgcmd
 0:000> .extmatch /e ext* he* 
 !ext.heap
 !ext.help

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ks.pciks** extension lists functional devices for kernel streaming devices that are attached to the PCI bus. Optionally, it can display information about active streams on those functional devices.
 
-```
+```dbgcmd
 !ks.pciks [Flags] [Level] 
 ```
 

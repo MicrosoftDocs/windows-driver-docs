@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!bthkd.rfcommconnection** command displays information about a given RFCOMM connection object.
 
-```
+```dbgsyntax
 !bthkd.rfcommconnection addr 
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!gs** extension analyzes a /GS stack overflow.
 
-```
+```dbgcmd
 !gs
 ```
 
@@ -49,7 +49,7 @@ Remarks
 
 The **!gs**extension helps debug buffer overruns. Run **!gs**when you encounter a STATUS\_STACK\_BUFFER\_OVERRUN error, as the following example shows.
 
-```
+```dbgcmd
 0:000> !gs
 Corruption occurred in mshtml!CDoc::OnPaint or one of its callers
 Real canary not found at 0x74866010

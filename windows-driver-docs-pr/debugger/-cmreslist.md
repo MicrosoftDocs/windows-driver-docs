@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!cmreslist** extension displays the CM\_RESOURCE\_LIST structure for the specified device object.
 
-```
+```dbgsyntax
 !cmreslist Address
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.echo** command displays a comment string.
 
-```
+```dbgcmd
 .echo String 
 .echo "String" 
 ```
@@ -62,7 +62,7 @@ The **.echo** command causes the debugger to display *String* immediately after 
 
 An **.echo** command is ended if the debugger encounters a semicolon (unless the semicolon occurs within a quoted string). This restriction enables you to use **.echo** in complex constructions such as [conditional breakpoints](setting-a-conditional-breakpoint.md), as the following example shows.
 
-```
+```dbgcmd
 0:000> bp `:143` "j (poi(MyVar)>5) '.echo MyVar Too Big'; '.echo MyVar Acceptable; gc' " 
 ```
 

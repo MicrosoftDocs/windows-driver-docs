@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.force\_tb** command forces the processor to trace branches early in the boot process.
 
-```
+```dbgcmd
 .force_tb 
 ```
 

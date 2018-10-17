@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!dblink** extension displays a linked list in the backward direction.
 
-```
+```dbgcmd
 !dblink Address [Count] [Bias]  
 ```
 

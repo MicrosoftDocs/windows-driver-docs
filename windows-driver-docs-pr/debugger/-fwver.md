@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!fwver** extension displays the Itanium firmware version.
 
-```
+```dbgcmd
 !fwver 
 ```
 

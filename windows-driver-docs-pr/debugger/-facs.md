@@ -21,7 +21,7 @@ The **!facs** extension displays a Firmware ACPI Control Structure (FACS).
 
 Syntax
 
-```
+```dbgcmd
 !facs Address
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.frame** command specifies which local context (scope) is used to interpret local variables or displays the current local context.
 
-```
+```dbgcmd
 .frame [/c] [/r] [FrameNumber] 
 .frame [/c] [/r] = BasePtr [FrameIncrement] 
 .frame [/c] [/r] = BasePtr StackPtr InstructionPtr 

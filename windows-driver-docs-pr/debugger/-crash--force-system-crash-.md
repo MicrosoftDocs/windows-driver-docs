@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.crash** command causes the target computer to issue a bug check.
 
-```
+```dbgsyntax
 .crash
 ```
 

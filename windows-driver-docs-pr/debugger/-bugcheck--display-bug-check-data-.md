@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.bugcheck** command displays the data from a bug check on the target computer.
 
-```
+```dbgsyntax
     .bugcheck 
 ```
 

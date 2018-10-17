@@ -21,7 +21,7 @@ The **!gentable** extension displays an RTL\_GENERIC\_TABLE.
 
 Syntax
 
-```
+```dbgcmd
 !gentable Address[Flag]
 ```
 

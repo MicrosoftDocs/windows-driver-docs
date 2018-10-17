@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!hidppd** extension displays the contents of the HIDP\_PREPARSED\_DATA structure.
 
-```
+```dbgcmd
 !hidppd Address
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.fiber** command specifies which fiber is used for the fiber context.
 
-```
+```dbgcmd
 .fiber [Address]
 ```
 

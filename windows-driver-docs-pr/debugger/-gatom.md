@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!gatom** extension displays the global atom table.
 
-```
+```dbgcmd
 !gatom 
 ```
 

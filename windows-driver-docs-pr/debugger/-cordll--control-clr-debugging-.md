@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.cordll** command controls managed code debugging and the Microsoft .NET common language runtime (CLR).
 
-```
+```dbgsyntax
 .cordll [Options]
 ```
 
@@ -95,13 +95,13 @@ Remarks
 
 To debug a managed application, the debugger must load a data access component (DAC) that corresponds to the CLR that the application has loaded. However, in some cases, the application loads more than one CLR. In that case, you can use the **I** parameter to specify which DAC the debugger should load. Version 2 of the CLR is named Mscorwks.dll, and version 4 of the CLR is named Clr.dll. The following example shows how to specify that the debugger should load the DAC for version 2 (mscorwks).
 
-```
+```dbgcmd
 .cordll -I mscorwks -lp c:\dacFolder
 ```
 
 If you omit the **I** parameter, the debugger uses version 4 by default. For example, the following two commands are equivalent.
 
-```
+```dbgcmd
 .cordll -lp c:\dacFolder
 .cordll -I clr -lp c:\dacFolder
 ```

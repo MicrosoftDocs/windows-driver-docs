@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!igrep** extension searches for a pattern in disassembly.
 
-```
+```dbgcmd
 !igrep [Pattern [StartAddress]] 
 ```
 

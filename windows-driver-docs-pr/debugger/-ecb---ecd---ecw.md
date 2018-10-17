@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ecb**, **!ecd**, and **!ecw** extensions write to the PCI configuration space.
 
-```
+```dbgcmd
 !ec Bus.Device.Function Offset Data 
 ```
 

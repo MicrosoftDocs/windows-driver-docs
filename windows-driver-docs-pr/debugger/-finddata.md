@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!finddata** extension displays the cached data at a given offset within a specified file object.
 
-```
+```dbgcmd
 !finddata FileObject Offset
 ```
 

@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 
 The **!defwrites** extension displays the values of the kernel variables used by the cache manager.
 
-```
+```dbgcmd
 !defwrites
-```
+```dbgcmd
 
 ## <span id="ddk__defwrites_dbg"></span><span id="DDK__DEFWRITES_DBG"></span>
 
@@ -60,7 +60,7 @@ When the number of deferred writes ("dirty pages") becomes too large, page writi
 
 Here is an example:
 
-```
+```dbgcmd
 kd> !defwrites 
 *** Cache Write Throttle Analysis ***
 

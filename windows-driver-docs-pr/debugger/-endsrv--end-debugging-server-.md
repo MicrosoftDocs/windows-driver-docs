@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.endsrv** command causes the debugger to cancel an active debugging server.
 
-```
+```dbgcmd
 .endsrv ServerID 
 ```
 
@@ -73,7 +73,7 @@ If you cancel a debugging server, you prevent any future debugging clients from 
 
 Consider the following situation. Suppose that you start some debugging servers, as the following example shows.
 
-```
+```dbgcmd
 0:000> .server npipe:pipe=rabbit
 Server started with 'npipe:pipe=rabbit'
 0:000> .server tcp:port=7
@@ -82,14 +82,14 @@ Server started with 'tcp:port=7'
 
 Then, you decide to use a password, as the following example shows.
 
-```
+```dbgcmd
 0:000> .server npipe:pipe=tiger,password=hardtoguess
 Server started with 'npipe:pipe=tiger,password=hardtoguess'
 ```
 
 But the earlier servers are still running, so you should cancel them, as the following example shows.
 
-```
+```dbgcmd
 0:000> .servers
 0 - Debugger Server - npipe:Pipe=rabbit
 1 - Debugger Server - tcp:Port=7
@@ -108,7 +108,7 @@ the next connection attempt.
 
 Finally, to make sure that nothing attached to your computer while the earlier servers were active, use the [**.clients (List Debugging Clients)**](-clients--list-debugging-clients-.md) command.
 
-```
+```dbgcmd
 0:000> .clients
 HotMachine\HostUser, last active Mon Mar 04 16:05:21 2002
 ```

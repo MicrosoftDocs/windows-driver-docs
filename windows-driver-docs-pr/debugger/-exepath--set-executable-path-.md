@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.exepath** command sets or displays the executable file search path.
 
-```
+```dbgcmd
 .exepath[+] [Directory [; ...]] 
 ```
 

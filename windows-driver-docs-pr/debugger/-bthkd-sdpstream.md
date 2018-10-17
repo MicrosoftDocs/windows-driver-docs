@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!bthkd.sdpstream** command displays the contents of a SDP stream.
 
-```
+```dbgsyntax
 !bthkd.sdpstream streamaddr streamlength
 ```
 

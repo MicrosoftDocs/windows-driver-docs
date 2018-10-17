@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.cache** command sets the size of the cache used to hold data obtained from the target. Also sets a number of cache and memory options.
 
-```
+```dbgsyntax
 .cache Size 
 .cache Option 
 .cache 

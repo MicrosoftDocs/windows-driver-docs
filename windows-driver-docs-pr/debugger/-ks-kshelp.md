@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ks.kshelp** extension displays a help text showing original KS 1.0-specific Ks.dll extension commands.
 
-```
+```dbgcmd
 !ks.kshelp 
 ```
 
