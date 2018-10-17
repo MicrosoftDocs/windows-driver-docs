@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 # Bug Check 0x22: FILE\_SYSTEM
 
 
-The FILE\_SYSTEM bug check has a value of 0x00000022.
+The FILE\_SYSTEM bug check has a value of 0x00000022. This indicates a generic file system problem.
 
 This bug check appears very infrequently.
 
