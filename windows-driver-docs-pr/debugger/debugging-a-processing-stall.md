@@ -78,7 +78,7 @@ Because the gate count is one, the And gate is open. In this case, investigate t
 
 -   The process dispatch incorrectly returned STATUS\_PENDING.
 
--   The data availability case is missing a [KsPinAttemptProcessing](http://go.microsoft.com/fwlink/p/?linkid=56545) call.
+-   The data availability case is missing a [KsPinAttemptProcessing](https://go.microsoft.com/fwlink/p/?linkid=56545) call.
 
  
 

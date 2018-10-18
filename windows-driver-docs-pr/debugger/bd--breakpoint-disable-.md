@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **bd** command disables, but does not delete, previously set breakpoints.
 
-```
+```dbgcmd
 bd Breakpoints
 ```
 

@@ -61,7 +61,7 @@ Arg4: ffffe000027b83f8, Address of supplemental states (third argument to !rulei
 DV_VIOLATED_CONDITION:  This OID should only be completed with NDIS_STATUS_NOT_ACCEPTED, 
                         NDIS_STATUS_SUCCESS, or NDIS_STATUS_PENDING.
 
-DV_MSDN_LINK: http://go.microsoft.com/fwlink/p/?linkid=278802
+DV_MSDN_LINK: https://go.microsoft.com/fwlink/p/?linkid=278802
 
 DRIVER_OBJECT: ffffe0000277a2b0
 ...
@@ -95,7 +95,7 @@ Check RULE_STATE for Oid ( use !ndiskd.oid ), which can be one of the following:
 2) Pending OID, or
 3) Previous OID if no OID is pending.
 
-MSDN_LINK: http://go.microsoft.com/fwlink/p/?linkid=278802
+MSDN_LINK: https://go.microsoft.com/fwlink/p/?linkid=278802
 
 CONTEXT: Miniport 0xFFFFE0000283F1A0
 

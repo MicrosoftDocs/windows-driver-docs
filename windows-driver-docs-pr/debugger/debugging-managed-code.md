@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # Debugging Managed Code Using the Windows Debugger
 
 
-You can use the Windows debuggers (WinDbg, CDB, and NTSD) to debug target applications that contain managed code. To debug managed code, you must load the [SOS debugging extension (sos.dll)](http://go.microsoft.com/fwlink/p/?linkid=223345) and a data access component (mscordacwks.dll).
+You can use the Windows debuggers (WinDbg, CDB, and NTSD) to debug target applications that contain managed code. To debug managed code, you must load the [SOS debugging extension (sos.dll)](https://go.microsoft.com/fwlink/p/?linkid=223345) and a data access component (mscordacwks.dll).
 
 The Windows debuggers are separate from the Visual Studio debugger. For information about the distinction between the Windows debuggers and the Visual Studio debugger, see [Windows Debugging](index.md).
 
@@ -43,7 +43,7 @@ The CLR is not updated every time the .NET Framework is updated. For example, ve
 To debug managed code, the debugger must load these two components.
 
 -   Data access component (DAC) (mscordacwks.dll)
--   [SOS debugging extension (sos.dll)](http://go.microsoft.com/fwlink/p/?linkid=223345)
+-   [SOS debugging extension (sos.dll)](https://go.microsoft.com/fwlink/p/?linkid=223345)
 
 **Note**  For all versions of the .NET Framework, the filename of the DAC is mscordacwks.dll, and the filename of the SOS debugging extension is sos.dll.
 
@@ -59,10 +59,10 @@ For version 1.*x* of the .NET Framework, sos.dll is not included in the .NET Fra
 
 Windows 7 Debugging Tools for Windows is included in the Windows SDK for Windows 7, which is available at these two places:
 
--   [Windows SDK for Windows 7 and .NET Framework 4.0](http://go.microsoft.com/fwlink/p?LinkId=320327)
--   [Windows SDK for Windows 7 and .NET Framework 4.0 (ISO)](http://go.microsoft.com/fwlink/p?LinkId=320328)
+-   [Windows SDK for Windows 7 and .NET Framework 4.0](https://go.microsoft.com/fwlink/p?LinkId=320327)
+-   [Windows SDK for Windows 7 and .NET Framework 4.0 (ISO)](https://go.microsoft.com/fwlink/p?LinkId=320328)
 
-If you are running an x64 version of Windows, use the [ISO](http://go.microsoft.com/fwlink/p?LinkID=320328) site, so that you can specify that you want the 32-bit version of the SDK. Sos.dll is included only in the 32-bit version of Windows 7 Debugging Tools for Windows.
+If you are running an x64 version of Windows, use the [ISO](https://go.microsoft.com/fwlink/p?LinkID=320328) site, so that you can specify that you want the 32-bit version of the SDK. Sos.dll is included only in the 32-bit version of Windows 7 Debugging Tools for Windows.
 
 ### <span id="Loading_mscordacwks.dll_and_sos.dll__live_debugging_"></span><span id="loading_mscordacwks.dll_and_sos.dll__live_debugging_"></span><span id="LOADING_MSCORDACWKS.DLL_AND_SOS.DLL__LIVE_DEBUGGING_"></span>Loading mscordacwks.dll and sos.dll (live debugging)
 

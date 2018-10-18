@@ -110,7 +110,7 @@ Device Tree:
 
 [**!usb3kd.ucx\_controller\_list**](-usb3kd-ucx-controller-list.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

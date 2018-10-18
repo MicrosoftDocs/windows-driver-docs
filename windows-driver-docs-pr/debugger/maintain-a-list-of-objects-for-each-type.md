@@ -45,7 +45,7 @@ The **Maintain a list of objects for each type** flag collects and maintains a l
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
-To display the object list, use Open Handles (oh.exe), a tool included in the Windows 2000 Resource Kit, and now available for download from the [Microsoft Windows 2000 Resource Kit](http://go.microsoft.com/fwlink/p/?linkid=11233) Web site. Because Open Handles automatically sets the OTL flag, but does not clear it, use **GFlags -otl** to clear the flag.
+To display the object list, use Open Handles (oh.exe), a tool included in the Windows 2000 Resource Kit, and now available for download from the [Microsoft Windows 2000 Resource Kit](https://go.microsoft.com/fwlink/p/?linkid=11233) Web site. Because Open Handles automatically sets the OTL flag, but does not clear it, use **GFlags -otl** to clear the flag.
 
 **Note**   The linked lists created when you set this flag use eight bytes of overhead for each object. Remember to clear this flag when your analysis is complete.
 

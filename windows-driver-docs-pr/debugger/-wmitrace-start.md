@@ -65,7 +65,7 @@ This extension is available in Windows 7 and later versions of Windows.
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For more details on the parameters of this extension, see [StartTrace Function](http://go.microsoft.com/fwlink/p/?linkid=139652) and [EVENT\_TRACE\_PROPERTIES](http://go.microsoft.com/fwlink/p/?linkid=139653). For a conceptual overview of event tracing, see the Microsoft Windows SDK. For information about tracing tools, see the Windows Driver Kit (WDK).
+For more details on the parameters of this extension, see [StartTrace Function](https://go.microsoft.com/fwlink/p/?linkid=139652) and [EVENT\_TRACE\_PROPERTIES](https://go.microsoft.com/fwlink/p/?linkid=139653). For a conceptual overview of event tracing, see the Microsoft Windows SDK. For information about tracing tools, see the Windows Driver Kit (WDK).
 
 Remarks
 -------

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **bc** command permanently removes previously set breakpoints from the system.
 
-```
+```dbgcmd
 bc Breakpoints 
 ```
 

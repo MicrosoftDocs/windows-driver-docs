@@ -88,7 +88,7 @@ Remarks
 
 You must call **plmdebug /enableDebug** before you call any of the suspend, resume, or terminate functions.
 
-The PLMDebug tool calls the methods of the [IPackageDebugSettings interface](http://go.microsoft.com/fwlink/p/?LinkID=267918). This interface enables you to take manual control of the process lifecycle management for your apps. Through this interface (and as a result, through this tool), you can suspend, resume, and terminate your Windows app. Note that the methods of the [IPackageDebugSettings interface](http://go.microsoft.com/fwlink/p/?LinkID=267918) apply to an entire package. Suspend, resume, and terminate affect all currently running apps in the package.
+The PLMDebug tool calls the methods of the [IPackageDebugSettings interface](https://go.microsoft.com/fwlink/p/?LinkID=267918). This interface enables you to take manual control of the process lifecycle management for your apps. Through this interface (and as a result, through this tool), you can suspend, resume, and terminate your Windows app. Note that the methods of the [IPackageDebugSettings interface](https://go.microsoft.com/fwlink/p/?LinkID=267918) apply to an entire package. Suspend, resume, and terminate affect all currently running apps in the package.
 
 Examples
 --------
@@ -162,7 +162,7 @@ Finally, decrement the debug reference count for the package.
 ## <span id="see_also"></span>See also
 
 
-[How to trigger suspend, resume, and background events in Windows Apps](http://go.microsoft.com/fwlink/p/?LinkID=267916)
+[How to trigger suspend, resume, and background events in Windows Apps](https://go.microsoft.com/fwlink/p/?LinkID=267916)
 
 [Tools Included in Debugging Tools for Windows](extra-tools.md)
 

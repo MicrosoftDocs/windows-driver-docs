@@ -139,7 +139,7 @@ Topology
 
 [**!usb3kd.device\_info**](-usb3kd-device-info.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

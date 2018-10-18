@@ -63,15 +63,15 @@ Note the following points:
 
      
 
-    If \_NT\_TARGET\_VERSION is not set, the extension will only run on the version of Windows for which the build window was opened (and later versions). For example, putting the following line in your Sources file will build an extension that will run on Windows XP and later versions of Windows:
+    If \_NT\_TARGET\_VERSION is not set, the extension will only run on the version of Windows for which the build window was opened (and later versions). For example, putting the following line in your Sources file will build an extension that will run on Windows:
 
-    ```
+    ```console
     _NT_TARGET_VERSION = $(_NT_TARGET_VERSION_WINXP) 
     ```
 
 3.  3.Set the DBGSDK\_INC\_PATH and DBGSDK\_LIB\_PATH environment variables to specify the paths to the debugger SDK headers and the debugger SDK libraries, respectively. If *%debuggers%* represents the root of your Debugging Tools for Windows installation, these variables should be set as follows:
 
-    ```
+    ```console
     set DBGSDK_INC_PATH=%debuggers%\sdk\inc
     set DBGSDK_LIB_PATH=%debuggers%\sdk\lib
     ```
@@ -81,7 +81,8 @@ Note the following points:
 4.  4.Change the current directory to the directory that contains your extension's Dirs file or Sources file.
 
 5.  5.Run the Build utility:
-    ```
+
+    ```console
     build -cZMg
     ```
 

@@ -112,7 +112,7 @@ To enable kernel debugging using a COM port on a generation 2 virtual machine, f
 
 4. Re-enable secure boot, once you are done updating the configuration changes.
 
-For more information about Generation 2 VMs, see [Generation 2 Virtual Machine Overview](http://go.microsoft.com/fwlink/p/?Linkid=331326).
+For more information about Generation 2 VMs, see [Generation 2 Virtual Machine Overview](https://go.microsoft.com/fwlink/p/?Linkid=331326).
 
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
