@@ -1,20 +1,26 @@
 ---
-title: Using the ring buffer
-description: Using the ring buffer
+title: Using the Net Ring Iterator interface
+description: Using the Net Ring Iterator interface
 ms.assetid: 8A56AA21-264C-4C1A-887E-92C9071E8AB8
 keywords:
-- NetAdapterCx using the ring buffer, NetCx using the ring buffer, NetAdapterCx PCI devices ring buffer, NetAdapterCx asynchronous I/O
-ms.date: 03/18/2018
+- NetAdapterCx Using the Net Ring Iterator interface, NetCx Using the Net Ring Iterator interface, NetAdapterCx PCI devices net ring, NetAdapterCx asynchronous I/O
+ms.date: 10/17/2018
 ms.localizationpriority: medium
 ---
 
-# Using the ring buffer
+# Using the Net Ring Iterator interface
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-A [**NET_RING_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringbuffer/ns-netringbuffer-_net_ring_buffer) is a circular buffer of one or more [**NET_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet) structures that is shared between NetAdapterCx and a client. To access a queue's packet ring buffer, first call **NetRx(Tx)QueueGetDatapathDescriptor** to get the queue's datapath descriptor structure, then call the [NET_DATAPATH_DESCRIPTOR_GET_PACKET_RING_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/nf-netdatapathdescriptor-net_datapath_descriptor_get_packet_ring_buffer) macro to get the ring buffer.
+A **NET_RING** is a circular buffer that contains network data. Each packet queue in a NetAdapterCx client driver has two rings: a *packet ring* for packet descriptors, and a *fragment ring* for packet fragment descriptors. NetAdapterCx client drivers access elements and perform operations on net rings by calling into the Net Ring Iterator interface.
 
-Each element in the packet ring buffer is owned by either the client driver or NetAdapterCx. The values of the index members control ownership. Specifically, the client driver owns every element from **BeginIndex** to **EndIndex - 1** inclusive.
+This topic describes the Net Ring Iterator interface and its underlying post and drain concepts. For more information about packets, fragments, and net rings in general, see [Packet descriptors and extensions](packet-descriptors-and-extensions.md).
+
+## NET_RING post and drain semantics
+
+Each element in a **NET_RING** is owned by either the client driver or NetAdapterCx.
+
+The values of the index members control ownership. Specifically, the client driver owns every element from **BeginIndex** to **EndIndex - 1** inclusive.
 
 For example, if **BeginIndex** is 2 and **EndIndex** is 5, the client driver owns three elements: the elements with index values 2, 3, and 4.
 If **BeginIndex** is equal to **EndIndex**, the client driver does not own any elements.

@@ -35,13 +35,13 @@ The second figure shows a packet stored across two memory fragments, with both R
 
 ## Storage of packet descriptors
 
-The core descriptors and fragment descriptors are stored indepenently in two separate ring buffers, the *packet ring* and *fragment ring*. Every core descriptor in the packet ring has indices into the fragment ring for locating that packet's fragment descriptors. Another data structure, [NET_DATAPATH_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/ns-netdatapathdescriptor-_net_datapath_descriptor), groups the packet ring and fragment ring together for a given packet queue.
+The core descriptors and fragment descriptors are stored independently in two separate ring buffers, the *packet ring* and *fragment ring*. Every core descriptor in the packet ring has indices into the fragment ring for locating that packet's fragment descriptors. Another data structure, the **NET_RING_COLLECTION**, groups the packet ring and fragment ring together for a given packet queue.
 
 ![multi-ring layout](images/multi-ring.png) 
 
-Every packet queue has its own [NET_DATAPATH_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/ns-netdatapathdescriptor-_net_datapath_descriptor) structure, and, consequently, its own packet ring, fragment ring, and descriptors in those rings. Therefore, the network data transfer operation of each packet queue is completely independent. To learn more about packet queues, see [Transmit and receive queues](transmit-and-receive-queues.md).
+Every packet queue has its own **NET_RING_COLLECTION** structure, and, consequently, its own packet ring, fragment ring, and descriptors in those rings. Therefore, the network data transfer operation of each packet queue is completely independent. To learn more about packet queues, see [Transmit and receive queues](transmit-and-receive-queues.md).
 
-Client drivers are advised to use predefined convenient macros to access the packet ring, the fragment ring and the descriptors they contain. To learn more about these macros, see [Using the ring buffer](using-the-ring-buffer.md).
+Client drivers call Net Ring Iterator methods to access the packet ring, the fragment ring and the descriptors they contain. To learn more about using Net Ring Iterators, see [Using the Net Ring Iterator interface](using-the-net-ring-iterator-interface.md).
 
 ## Packet descriptor extensibility
 
