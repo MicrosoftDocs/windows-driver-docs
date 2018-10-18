@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wmitrace.start** extension starts the Event Tracing for Windows (ETW) logger on the target computer.
 
-```
+```dbgcmd
 !wmitrace.start LoggerName [-cir Size | -seq Size] [-f File] [-b Size] [-max Num] [-min Num] [-kd] [-ft Time] 
 ```
 

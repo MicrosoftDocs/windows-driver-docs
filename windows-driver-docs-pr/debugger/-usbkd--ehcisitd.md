@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.\_ehcisitd** command displays information from a **usbehci!\_HCD\_SI\_TRANSFER\_DESCRIPTOR**
 
-```
+```dbgcmd
 !usbkd._ehcisitd StructAddr
 ```
 

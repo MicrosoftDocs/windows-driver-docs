@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!pat** extension displays the Page Attribute Table (PAT) registers for the target processor.
 
-```
+```dbgcmd
 !pat Flag 
 !pat 
 ```

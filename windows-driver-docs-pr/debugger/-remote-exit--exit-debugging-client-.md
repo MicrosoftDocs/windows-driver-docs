@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.remote\_exit** command exits the debugging client but does not end the debugging session.
 
-```
+```dbgcmd
 .remote_exit [FinalCommands]
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!mtrr** extension displays the contents of the MTRR register.
 
-```
+```dbgcmd
 !mtrr
 ```
 

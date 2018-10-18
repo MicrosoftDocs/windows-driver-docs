@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.symopt** command sets or displays the symbol options.
 
-```
+```dbgcmd
 .symopt+ Flags 
 .symopt- Flags 
 .symopt 

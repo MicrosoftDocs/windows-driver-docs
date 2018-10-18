@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 The **!lookaside** extension displays information about look-aside lists, resets the counters of look-aside lists, or modifies the depth of a look-aside list.
 
-```
+```dbgcmd
 !lookaside [Address [Options [Depth]]]
 !lookaside [-all]
 !lookaside 0 [-all]

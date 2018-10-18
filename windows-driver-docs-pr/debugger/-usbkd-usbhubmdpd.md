@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbhubmdpd** command displays a **usbhub!\_HUB\_PORT\_DATA** structure if one is present in a crash dump that was generated as a result of [**Bug Check 0xFE**](bug-check-0xfe--bugcode-usb-driver.md).
 
-```
+```dbgcmd
 !usbkd.usbhubmdpd [PortNum]
 ```
 

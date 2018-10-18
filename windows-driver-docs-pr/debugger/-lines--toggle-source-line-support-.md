@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.lines** command enables or disables support for source-line information.
 
-```
+```dbgcmd
 .lines [-e|-d|-t]
 ```
 

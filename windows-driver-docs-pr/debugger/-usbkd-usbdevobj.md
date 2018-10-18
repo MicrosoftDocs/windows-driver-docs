@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbdevobj** command displays information from a USB device object.
 
-```
+```dbgcmd
 !usbkd.usbdevobj DeviceObject
 ```
 

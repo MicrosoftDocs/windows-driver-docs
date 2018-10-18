@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.netuse** command adds a connection to a network share.
 
-```
+```dbgcmd
 .netuse /a "[Local]" "Remote" "[User]" "[Password]" 
 ```
 
@@ -75,7 +75,7 @@ If you use **.netuse** during a remote debugging session, this command affects t
 
 The following example shows this command.
 
-```
+```dbgcmd
 0:000> .netuse "m:" "\\myserver\myshare" "" "" 
 ```
 

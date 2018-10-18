@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfdevice** extension displays information that is associated with a WDFDEVICE-typed object handle.
 
-```
+```dbgcmd
 !wdfkd.wdfdevice Handle [Flags]
 ```
 
@@ -64,7 +64,7 @@ Remarks
 
 The following example uses the **!wdfkd.wdfdevice** extension on a WDFDEVICE handle that represents a physical device object (PDO), without specifying any flags.
 
-```
+```dbgcmd
 kd> !wdfdevice 0x7cad31c8 
 
 # Dumping WDFDEVICE 0x7cad31c8
@@ -88,7 +88,7 @@ Device is the power policy owner for the stack
 
 The following example displays the same device object as the preceding example, but this time with a flag value of 0xF. This flag value, a combination of the bits 0x1, 0x2, 0x4, and 0x8, causes the display to include verbose device information, power state information, power policy state information, and PnP state information.
 
-```
+```dbgcmd
 kd> !wdfdevice 0x7cad31c8 f 
 
 # Dumping WDFDEVICE 0x7cad31c8

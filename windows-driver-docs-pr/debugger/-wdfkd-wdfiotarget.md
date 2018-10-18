@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfiotarget** extension displays information about a specified I/O target object.
 
-```
+```dbgcmd
 !wdfkd.wdfiotarget Handle [Flags]
 ```
 

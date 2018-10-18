@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbpnp** command displays state context information about a USB hub.
 
-```
+```dbgcmd
 !usbkd.usbpnp DeviceExtension
 ```
 

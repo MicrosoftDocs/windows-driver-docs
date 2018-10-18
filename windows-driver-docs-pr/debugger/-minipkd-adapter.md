@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!minipkd.adapter** extension displays information about the specified adapter.
 
-```
+```dbgcmd
 !minipkd.adapter Address 
 ```
 

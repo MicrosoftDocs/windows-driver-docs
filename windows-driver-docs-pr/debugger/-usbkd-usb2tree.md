@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usb2tree** command displays [USB 2.0 tree](usb-2-0-extensions.md#usb-2-tree).
 
-```
+```dbgcmd
 !usbkd.usb2tree
 ```
 

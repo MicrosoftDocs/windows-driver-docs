@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The [**!usb3kd.ucx\_controller\_list**](-usb3kd-device-info.md) command displays information about all USB 3.0 host controllers on the computer. The display is based on data structures maintained by the USB host controller extension driver (Ucx*Version*.sys).
 
-```
+```dbgcmd
 !usb3kd.ucx_controller_list
 ```
 

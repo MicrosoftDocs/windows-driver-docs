@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbpo** command displays the internal list of outstanding USB power requests.
 
-```
+```dbgcmd
 !usbkd.usbpo
 ```
 

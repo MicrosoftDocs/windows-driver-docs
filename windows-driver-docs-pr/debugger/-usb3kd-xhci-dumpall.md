@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The [**!usb3kd.xhci\_dumpall**](-usb3kd-device-info.md) command displays information about all USB 3.0 host controllers on the computer. The display is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys).
 
-```
+```dbgcmd
 !usb3kd.xhci_dumpall [1]
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ppmsettings** command displays currently active ppm settings for the processor.
 
-```
+```dbgcmd
 !ppmsettings
 ```
 

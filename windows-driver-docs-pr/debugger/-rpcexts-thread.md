@@ -21,7 +21,7 @@ The **!rpcexts.thread** extension displays the per-thread RPC information.
 
 This extension command should not be confused with the [**.thread (Set Register Context)**](-thread--set-register-context-.md) command or the [**!thread**](-thread.md) (!kdextx86.thread and !kdexts.thread) extension.
 
-```
+```dbgcmd
 !rpcexts.thread TEB
 ```
 
@@ -63,7 +63,7 @@ This extension displays the per-thread RPC information. A field in the per-threa
 
 Here is an example:
 
-```
+```dbgcmd
 0:001> !rpcexts.thread 7ffdd000
 RPC TLS at 692e70
 

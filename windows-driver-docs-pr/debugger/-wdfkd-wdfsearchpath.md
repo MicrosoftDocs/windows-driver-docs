@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfsearchpath** extension sets the search path to formatting files for Kernel-Mode Driver Framework (KMDF) error log records.
 
-```
+```dbgcmd
 !wdfkd.wdfsearchpath Path
 ```
 

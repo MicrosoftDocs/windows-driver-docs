@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbusb2tt** command displays information from a **usbport!\_TT** structure.
 
-```
+```dbgcmd
 !usbkd.usbusb2tt StructAddr
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The [**!usb3kd.xhci\_resourceusage**](-usb3kd-device-info.md) extension displays the resources used by a USB 3.0 host controller.
 
-```
+```dbgcmd
 !usb3kd.xhci_resourceusage DeviceExtension
 ```
 
@@ -44,7 +44,7 @@ Examples
 
 To obtain the address of the device extension, look at the output of the [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md) command. In the following example, the address of the device extension is 0xfffffa800536e2d0.
 
-```
+```dbgcmd
 3: kd> !xhci_dumpall
 
 ## Dumping all the XHCI controllers - DrvObj 0xfffffa80053072f0
@@ -66,7 +66,7 @@ To obtain the address of the device extension, look at the output of the [**!xhc
 
 Now you can pass the address of the device extension to the **!xhci\_resourceusage** command.
 
-```
+```dbgcmd
  3: kd> !xhci_resourceusage 0xfffffa800536e2d0
 
 ## Dumping CommonBuffer Resources

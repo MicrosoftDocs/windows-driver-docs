@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbportisasyncadv** command checks all EHCI miniport drivers for an EHCI Interrupt on Async Advance issue.
 
-```
+```dbgcmd
 !usbkd.usbportisasyncadv
 ```
 

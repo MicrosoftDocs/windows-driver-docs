@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdffindobjects** extension searches memory for WDF objects.
 
-```
+```dbgcmd
 !wdfkd.wdffindobjects [StartAddress [Flags]]
 ```
 

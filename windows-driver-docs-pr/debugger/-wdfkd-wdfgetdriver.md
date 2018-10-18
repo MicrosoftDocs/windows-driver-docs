@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfgetdriver** extension displays the name of the current default driver.
 
-```
+```dbgcmd
 !wdfkd.wdfgetdriver
 ```
 

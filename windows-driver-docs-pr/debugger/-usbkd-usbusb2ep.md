@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbusb2ep** command displays information from a **usbport!\_USB2\_EP** structure.
 
-```
+```dbgcmd
 !usbkd.usbusb2ep StructAddr
 ```
 

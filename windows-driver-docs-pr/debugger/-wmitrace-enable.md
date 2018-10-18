@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wmitrace.enable** extension enables a provider for the specified Event Tracing for Windows (ETW) trace session.
 
-```
+```dbgcmd
 !wmitrace.enable { LoggerID | LoggerName } GUID [-level Num] [-matchallkw Num] [-matchanykw Num] [-enableproperty Num] [-flag Num] 
 ```
 

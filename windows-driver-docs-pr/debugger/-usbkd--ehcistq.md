@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.\_ehcistq** command displays a **usbehci!\_HCD\_QUEUEHEAD\_DESCRIPTOR** structure.
 
-```
+```dbgcmd
 !usbkd._ehciep StructAddr
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfdeviceinterrupts** extension displays all the interrupt objects for a specified device handle.
 
-```
+```dbgcmd
 !wdfkd.wdfdeviceinterrupts Handle
 ```
 

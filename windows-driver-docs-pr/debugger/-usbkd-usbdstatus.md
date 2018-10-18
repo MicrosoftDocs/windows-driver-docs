@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbdstatus** command displays the name of a USBD status code.
 
-```
+```dbgcmd
 !usbkd.usbdstatus StatusCode
 ```
 
@@ -39,7 +39,7 @@ Examples
 
 Here is an example of the output of **!usbdstatus**.
 
-```
+```dbgcmd
 1: kd> !usbkd.usbdstatus 0xC0000008
 
 USBD_STATUS_DATA_OVERRUN (0xC0000008)

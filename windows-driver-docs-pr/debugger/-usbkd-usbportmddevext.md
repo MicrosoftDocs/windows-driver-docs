@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbportmddevext** command displays a **usbport!\_DEVICE\_EXTENSION** structure if one is present in a crash dump that was generated as a result [**Bug Check 0xFE**](bug-check-0xfe--bugcode-usb-driver.md).
 
-```
+```dbgcmd
 !usbkd.usbportmddevext
 ```
 

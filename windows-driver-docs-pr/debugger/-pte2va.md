@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!pte2va** extension displays the virtual address that corresponds to the specified page table entry (PTE).
 
-```
+```dbgcmd
 !pte2va Address
 ```
 
@@ -61,7 +61,7 @@ To examine the contents of a specific PTE, use the [**!pte**](-pte.md) extension
 
 Here is an example of the output from the **!pte2va** extension:
 
-```
+```dbgcmd
 kd> !pte2va 9230
 000800000248c000 
 ```

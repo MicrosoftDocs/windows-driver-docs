@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The [**!usb3kd.usbanalyze**](-usb3kd-device-info.md) extension analyzes a USB 3.0 bug check.
 
-```
+```dbgcmd
 !usb3kd.usbanalyze [-v]
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfobject** extension displays information about a specified framework object.
 
-```
+```dbgcmd
 !wdfkd.wdfobject FrameworkObject
 ```
 
@@ -46,7 +46,7 @@ Remarks
 
 If the Kernel-Mode Driver Framework (KMDF) verifier is enabled for a driver and the public handle type was marked for tracking, the display from the **!wdfkd.wdfobject** extension includes the tag tracker (that is, the tracking object), as in the following example.
 
-```
+```dbgcmd
 kd> !wdfobject 0x83584e38 
 
 The type for object 0x83584e38 is FxDevice

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfsetdriver** extension sets the name of the default Kernel-Mode Driver Framework (KMDF) driver to which debugger extension commands apply.
 
-```
+```dbgcmd
 !wdfkd.wdfsetdriver DriverName
 ```
 

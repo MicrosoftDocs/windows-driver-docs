@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.typeopt** command sets or displays the type options.
 
-```
+```dbgcmd
 .typeopt +Flags 
 .typeopt -Flags 
 .typeopt +FlagName 

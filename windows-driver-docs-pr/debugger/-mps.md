@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!mps** extension displays BIOS information for the Intel Multiprocessor Specification (MPS) of the target computer.
 
-```
+```dbgcmd
 !mps [Address] 
 ```
 

@@ -21,7 +21,7 @@ The !powertriage extension displays summary information about the system and dev
 
 Syntax
 
-```
+```dbgcmd
 !powertriage
 ```
 
@@ -58,7 +58,7 @@ The !powertriage extension displays the following information.
 4. Links to !fxdevice for PoFx devices. For more information about PoFX, see [Overview of the Power Management Framework](https://msdn.microsoft.com/library/windows/hardware/hh406637).
 Here is example output from the !powertriage command.
 
-```
+```dbgcmd
 kd> !powertriage
 
 System Capabilities :

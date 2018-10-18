@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.reload** command deletes all symbol information for the specified module and reloads these symbols as needed. In some cases, this command also reloads or unloads the module itself.
 
-```
+```dbgcmd
 .reload [Options] [Module[=Address[,Size[,Timestamp]]]] 
 .reload -?
 ```
@@ -131,7 +131,7 @@ If the image header is incorrect for some reason, such as the module being unloa
 
 The **.reload /u** command performs a broad search. The debugger first tries to match *Module* with an exact module name, regardless of path. If the debugger cannot find this match, *Module* is treated as the name of the loaded image. For example, if the HAL that resides in memory has the module name of halacpi.dll, both of the following commands unload its symbols.
 
-```
+```dbgcmd
 kd> .reload /u halacpi.dll
 
 kd> .reload /u hal
@@ -139,7 +139,7 @@ kd> .reload /u hal
 
 If you are performing user-mode debugging and want to load a module that is not part of the target application's module list, you must include the **/s** option, as the following example shows.
 
-```
+```dbgcmd
 0:000> .reload /u ntdll.dll
 Unloaded ntdll.dll
 

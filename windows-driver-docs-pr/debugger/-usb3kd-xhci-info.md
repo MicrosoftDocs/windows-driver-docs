@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The [**!usb3kd.xhci\_info**](-usb3kd-device-info.md) extension displays all the XHCI commands for an individual USB 3.0 host controller.
 
-```
+```dbgcmd
 !usb3kd.xhci_info DeviceExtension
 ```
 
@@ -44,7 +44,7 @@ Examples
 
 You can get address of the device extension from the [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md) command or from a variety of other debugger commands. For example, the [**!devstack**](-devstack.md) command displays the address of the device extension. In the following example, the address of the device extension for the host controller's FDO is fffffa800536e2d0.
 
-```
+```dbgcmd
 3: kd> !devnode 0 1 usbxhci
 Dumping IopRootDeviceNode (= 0xfffffa8003609cc0)
 DevNode 0xfffffa8003df3010 for PDO 0xfffffa8003dd5870
@@ -62,7 +62,7 @@ DevNode 0xfffffa8003df3010 for PDO 0xfffffa8003dd5870
 
 Now you can pass the address of the device extension to the **!xhci\_info** command.
 
-```
+```dbgcmd
 3: kd> !xhci_info 0xfffffa80`0536e2d0
 
 ## Dumping XHCI controller commands - DeviceExtension 0xfffffa800536e2d0

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wmitrace.traceoperation** extension displays the progress messages from the tracing components in Windows.
 
-```
+```dbgcmd
 !wmitrace.traceoperation {0 | 1 | 2} 
 ```
 

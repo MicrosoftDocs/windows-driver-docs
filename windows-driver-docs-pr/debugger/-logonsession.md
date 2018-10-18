@@ -21,13 +21,13 @@ The **!logonsession** extension displays information about a specified logon ses
 
 Free Build Syntax
 
-```
+```dbgcmd
 !logonsession LUID
 ```
 
 Checked Build Syntax
 
-```
+```dbgcmd
 !logonsession LUID [InfoLevel]
 ```
 

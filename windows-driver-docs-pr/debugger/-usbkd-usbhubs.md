@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbhubs** command displays information about USB hubs.
 
-```
+```dbgcmd
 !usbkd.usbhubs a[v]
 !usbkd.usbhubs x[v]
 !usbkd.usbhubs r[v]
@@ -50,7 +50,7 @@ Examples
 
 Here is an example of verbose output from the **!usbhubs** command.
 
-```
+```dbgcmd
 0: kd> !usbkd.usbhubs rv
 
 args 'rv'

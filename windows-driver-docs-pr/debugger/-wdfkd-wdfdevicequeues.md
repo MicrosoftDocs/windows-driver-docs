@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfdevicequeues** extension displays information about all of the framework queue objects that belong to a specified device.
 
-```
+```dbgcmd
 !wdfkd.wdfdevicequeues Handle
 ```
 
@@ -46,7 +46,7 @@ Remarks
 
 The following example shows the display from the **!wdfkd.wdfdevicequeues** extension.
 
-```
+```dbgcmd
 kd> !wdfdevicequeues 0x7cad31c8 
 
 # Dumping queues of WDFDEVICE 0x7cad31c8

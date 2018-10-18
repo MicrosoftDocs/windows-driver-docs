@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbportmdportlog** command displays the USBPORT debug log if it is present in a crash dump that was generated as a result of [**Bug Check 0xFE**](bug-check-0xfe--bugcode-usb-driver.md).
 
-```
+```dbgcmd
 !usbkd.usbportmdportlog
 ```
 

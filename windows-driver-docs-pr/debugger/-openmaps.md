@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!openmaps** extension displays the referenced buffer control blocks (BCBs) and virtual address control blocks (VACBs) for the specified shared cache map.
 
-```
+```dbgcmd
 !openmaps Address [Flag]
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!mapped\_file** extension displays the name of the file that backs the file mapping that contains a specified address.
 
-```
+```dbgcmd
 !mapped_file Address
 ```
 
@@ -61,7 +61,7 @@ Remarks
 
 Here are three examples. The first two addresses used are mapped from a file, and the third is not.
 
-```
+```dbgcmd
 0:000> !mapped_file 4121ec 
 Mapped file name for 004121ec: '\Device\HarddiskVolume2\CODE\TimeTest\Debug\TimeTest.exe'
 

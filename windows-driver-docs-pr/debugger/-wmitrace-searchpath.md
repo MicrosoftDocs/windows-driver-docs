@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wmitrace.searchpath** extension specifies the location of the trace message format files for messages in the trace buffers.
 
-```
+```dbgcmd
 !wmitrace.searchpath [+] TMFPath 
 !wmitrace.searchpath
 ```

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!rpcexts.getthreadinfo** extension searches the system's RPC state information for thread information.
 
-```
+```dbgcmd
 !rpcexts.getthreadinfo ProcessID [ThreadID] 
 !rpcexts.getthreadinfo -? 
 ```
@@ -68,7 +68,7 @@ This extension can only be used with CDB or with user-mode WinDbg.
 
 Here is an example:
 
-```
+```dbgcmd
 0:002> !rpcexts.getthreadinfo 26c
 Searching for thread info ...
 ## PID  CELL ID   ST TID      LASTTIME

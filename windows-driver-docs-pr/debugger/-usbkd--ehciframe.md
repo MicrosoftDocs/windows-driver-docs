@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.\_ehciframe** command displays an EHCI miniport FrameListBaseAddress periodic list entry chain indexed by a frame number.
 
-```
+```dbgcmd
 !usbkd._ehciframe StructAddr, FrameNumber
 ```
 

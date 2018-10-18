@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!minipkd.exports** extension displays the addresses of the miniport exports for the specified adapter.
 
-```
+```dbgcmd
 !minipkd.exports Adapter 
 ```
 

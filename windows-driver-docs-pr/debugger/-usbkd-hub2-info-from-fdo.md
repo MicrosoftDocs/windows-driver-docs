@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.hub2\_info\_from\_fdo** command displays information about a USB hub.
 
-```
+```dbgcmd
 !usbkd.hub2_info_from_fdo FDO
 ```
 
@@ -39,7 +39,7 @@ Examples
 
 Here is one way to find the address of the FDO for a USB hub. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
-```
+```dbgcmd
 0: kd> !usbkd.usb2tree
 ...
 2)!ehci_info ffffe00001ca11a0 !devobj ffffe00001ca1050 PCI: VendorId 8086 DeviceId 293c RevisionId 0002 
@@ -50,7 +50,7 @@ In the preceding output, the address of the FDO for the hub appears as the argum
 
 Now pass the address of the FDO to the **!hub2\_info\_from\_fdo** command.
 
-```
+```dbgcmd
 0: kd> !usbkd.hub2_info_from_fdo ffffe00002320050
 usbhubext
 *****************************************************************************

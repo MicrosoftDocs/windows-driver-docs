@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!npx** extension displays the contents of the floating-point register save area.
 
-```
+```dbgcmd
 !npx Address
 ```
 

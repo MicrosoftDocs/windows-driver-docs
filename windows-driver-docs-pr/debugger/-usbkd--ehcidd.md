@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.\_ehcidd** command displays information from a **usbehci!\_DEVICE\_DATA** structure.
 
-```
+```dbgcmd
 !usbkd._ehcidd StructAddr
 ```
 
@@ -39,7 +39,7 @@ Examples
 
 Here is one way to get the address of a **usbehci!\_DEVICE\_DATA** structure. First enter [**!usbkd.usbhcdlist**](-usbkd-usbhcdlist.md).
 
-```
+```dbgcmd
 0: kd> !usbkd.usbhcdlist
 
 MINIPORT List @ fffff80001e5bbd0
@@ -60,7 +60,7 @@ In the preceding output, `ffffe0000781bda0` is the address of a **\_DEVICE\_DATA
 
 Now pass the structure address to **!\_ehcidd**
 
-```
+```dbgcmd
 0: kd> !usbkd._ehcidd ffffe0000781bda0
 
 *USBEHCI DEVICE DATA ffffe0000781bda0

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!popolicy** extension displays the power policy of the target computer.
 
-```
+```dbgcmd
 !popolicy [Address]
 ```
 
@@ -59,7 +59,7 @@ Remarks
 
 Here is an example of this command's output:
 
-```
+```dbgcmd
 kd> !popolicy
 SYSTEM_POWER_POLICY (R.1) @ 0x80164d58
   PowerButton:      Shutdown  Flags: 00000003   Event: 00000000   Query UI

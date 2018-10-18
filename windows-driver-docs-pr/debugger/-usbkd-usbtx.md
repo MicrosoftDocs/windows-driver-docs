@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbtx** command displays information from a **usbport!\_HCD\_TRANSFER\_CONTEXT** structure.
 
-```
+```dbgcmd
 !usbkd.usbtx StructAddr
 ```
 
@@ -39,7 +39,7 @@ Examples
 
 Here is one way to find the address of a **usbport!\_HCD\_TRANSFER\_CONTEXT** structure. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
-```
+```dbgcmd
 0: kd> !usbkd.usb2tree
 ...
 4)!uhci_info ffffe00001c8f1a0 !devobj ffffe00001c8f050 PCI: VendorId 8086 DeviceId 2938 RevisionId 0002 
@@ -50,7 +50,7 @@ In the preceding output, the address of the device extension of the FDO is displ
 
 Either click the DML command or pass the address of the device extension to [**!usbhcdext**](https://msdn.microsoft.com/library/windows/hardware/dn367072) to get the transfer list.
 
-```
+```dbgcmd
 0: kd> !usbkd.usbhcdext ffffe00001c8f1a0
 ...
 ## I/O TRANSFER LIST(s)
@@ -65,7 +65,7 @@ Either click the DML command or pass the address of the device extension to [**!
 
 In the preceding output, `ffffe0000653401c` is the address of an **\_HCD\_TRANSFER\_CONTEXT**structure. Pass this address to **!usbtx**.
 
-```
+```dbgcmd
 0: kd> !usbkd.usbtx ffffe0000653401c
 
 dt usbport!_HCD_TRANSFER_CONTEXT ffffe0000653401c

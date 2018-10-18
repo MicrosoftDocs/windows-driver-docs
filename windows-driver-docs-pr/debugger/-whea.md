@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!whea** extension displays top-level Windows Hardware Error Architecture (WHEA) information.
 
-```
+```dbgcmd
 !whea 
 ```
 
@@ -66,7 +66,7 @@ Remarks
 
 The following example shows the (truncated) output of the **!whea** extension:
 
-```
+```dbgcmd
 3: kd> !whea 
 Error Source Table @ fffff800019ca250
 13 Error Sources

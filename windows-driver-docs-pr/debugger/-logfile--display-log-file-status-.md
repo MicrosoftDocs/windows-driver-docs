@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.logfile** command determines whether a log file exists and displays the file's status.
 
-```
+```dbgcmd
     .logfile 
 ```
 

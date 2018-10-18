@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The [**!usb3kd.xhci\_transferring**](-usb3kd-device-info.md) extension displays a transfer ring (used by a USB 3.0 host controller) until it detects a cycle bit change.
 
-```
+```dbgcmd
 !usb3kd.xhci_transferring VirtualAddress
 !usb3kd.xhci_transferring PhysicalAddress 1
 ```
@@ -53,7 +53,7 @@ Examples
 
 To obtain the address of the transfer ring, look at the output of the [**!xhci\_deviceslots**](-usb3kd-xhci-deviceslots.md) command. In the following example, the virtual address of the transfer ring is 0xfffffa8005b2fe00.
 
-```
+```dbgcmd
 3: kd> !usb3kd.xhci_deviceslots 0xfffffa800523a2d0
 
 ## Dumping dt _DEVICESLOT_DATA 0xfffffa80051a3300
@@ -81,7 +81,7 @@ DeviceContextBase: VA 0xfffffa8005a41000 LA 0x116841000 !wdfcommonbuffer 0x57ffa
 
 Now you can pass the address of the transfer ring to the **!xhci\_transferring** command.
 
-```
+```dbgcmd
 kd> !xhci_transferring 0xfffffa8005b2fe00
 
         [  0] NORMAL       0x000000011692fe00 CycleBit 1 IOC 0 BEI 0 InterrupterTarget 0 TransferLength    13 TDSize  0
