@@ -19,12 +19,14 @@ You can use *control flow tokens* to create conditional execution and execution 
 Control flow tokens behave like their counterparts in C and C++, with the following general exceptions:
 
 -   You must enclose each block of commands that is executed conditionally or repeatedly in braces, even if there is only one such command. For example, you cannot omit the braces in the following command.
-    ```
+
+    ```dbgcmd
     0:000> .if (ebx>0) { r ebx }
     ```
 
 -   Each condition must be a expression. Commands are not permitted. For example, the following example produces a syntax error.
-    ```
+
+    ```dbgcmd
     0:000> .while (r ebx) { .... }
     ```
 

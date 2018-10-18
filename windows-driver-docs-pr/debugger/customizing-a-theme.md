@@ -28,13 +28,13 @@ Here are examples of how to set the symbol and source path. The executable image
 
 To set your symbol path:
 
-```
+```text
 SRV*c:\MySymCache*\\CompanySymbolServer\Symbols;SRV*c:\WinSymCache*https://msdl.microsoft.com/download/symbols
 ```
 
 To set your source path:
 
-```
+```text
 SRV*;d:\MySourceRoot
 ```
 
