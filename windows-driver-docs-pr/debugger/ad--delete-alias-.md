@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **ad** command deletes an alias from the alias list.
 
-```
+```dbgcmd
 ad [/q] Name 
 ad * 
 ```

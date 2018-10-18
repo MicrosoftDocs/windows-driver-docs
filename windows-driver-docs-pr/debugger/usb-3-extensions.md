@@ -66,7 +66,7 @@ The following extension commands display information from data structures mainta
 -   [**!usb3kd.xhci\_resourceusage**](-usb3kd-xhci-resourceusage.md)
 -   [**!usb3kd.xhci\_trb**](-usb3kd-xhci-trb.md)
 -   [**!usb3kd.xhci\_transferring**](-usb3kd-xhci-transferring.md)
--   [**!usb3kd.xhci\_findowner**](-xhci-findowner.md)
+-   [**!usb3kd.xhci\_findowner**](-usb3kd-xhci-findowner.md)
 
 ## <span id="Miscellaneous_commands"></span><span id="miscellaneous_commands"></span><span id="MISCELLANEOUS_COMMANDS"></span>Miscellaneous commands
 
