@@ -5,9 +5,6 @@ ms.assetid: bc60b4b3-aded-4c67-bbaa-aad1b6b38d30
 keywords: ["Bug Check 0x44 MULTIPLE_IRP_COMPLETE_REQUESTS", "MULTIPLE_IRP_COMPLETE_REQUESTS"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

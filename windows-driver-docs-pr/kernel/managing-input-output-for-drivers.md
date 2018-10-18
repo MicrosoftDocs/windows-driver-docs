@@ -4,6 +4,7 @@ author: windows-driver-content
 description: Managing Input/Output for Drivers
 ms.assetid: 09f23775-8c98-4344-9f68-43297ef50849
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Managing Input/Output for Drivers

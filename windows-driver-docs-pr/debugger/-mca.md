@@ -5,9 +5,6 @@ ms.assetid: 452bfbf2-fcab-4a71-bfd0-b02afe30df74
 keywords: ["machine check architecture (MCA)", "MCA (machine check architecture)", "mca Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

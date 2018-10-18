@@ -5,11 +5,7 @@ description: This topic describes the NDIS_STATUS_OFFLOAD_RESUME status indicati
 ms.assetid: 5b7b9056-4f3a-4469-b73a-0bbf3608207a
 keywords:
 - NDIS_STATUS_OFFLOAD_RESUME, TCP chimney offload NDIS status indications, NDIS_STATUS_OFFLOAD_RESUME WDK, NDIS_STATUS_OFFLOAD_RESUME networking
-ms.author: windowsdriverdev
 ms.date: 11/10/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

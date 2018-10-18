@@ -5,9 +5,6 @@ ms.assetid: 55de0cbd-c6ba-40af-a932-2f9e57f1e8ec
 keywords: extension commands, debugger extensions
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

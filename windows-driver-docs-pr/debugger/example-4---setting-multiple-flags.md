@@ -4,9 +4,6 @@ description: Example 4 Setting Multiple Flags
 ms.assetid: b8c7301b-4a34-4f03-8c5e-ba43a1fb3681
 ms.author: domars
 ms.date: 10/12/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

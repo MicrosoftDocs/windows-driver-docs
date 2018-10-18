@@ -3,6 +3,7 @@ title: MS\_SMHBA\_FC\_PHY WMI Class
 description: MS\_SMHBA\_FC\_PHY WMI Class
 ms.assetid: 8256eb6a-511f-4954-875e-755bd2bb3d65
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MS\_SMHBA\_FC\_PHY WMI Class

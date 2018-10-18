@@ -5,9 +5,6 @@ ms.assetid: 0ab28a16-979d-4b40-812a-a31fac3f6be8
 keywords: ["Bug Check 0x2B PANIC_STACK_SWITCH", "PANIC_STACK_SWITCH"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

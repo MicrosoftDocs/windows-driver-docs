@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Guidelines for Writing DPC Routines
 ms.assetid: 570219be-d152-4826-855a-737bbed67ffd
 keywords: ["deferred procedure calls WDK kernel", "DPCs WDK kernel", "DpcForIsr", "CustomDpc"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

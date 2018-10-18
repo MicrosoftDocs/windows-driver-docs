@@ -3,11 +3,7 @@ title: OID_TCP_RSC_STATISTICS
 author: windows-driver-content
 description: As a query, NDIS and overlying drivers or user-mode applications use the OID_TCP_RSC_STATISTICS OID to get the receive-segment coalescing (RSC) statistics of a miniport adapter.
 ms.assetid: CD289868-1925-4222-8A4D-359118124325
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_TCP_RSC_STATISTICS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

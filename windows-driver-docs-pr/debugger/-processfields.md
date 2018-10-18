@@ -5,9 +5,6 @@ ms.assetid: d1d4c49e-3566-4cf6-8b08-656668c92d6c
 keywords: ["processfields Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

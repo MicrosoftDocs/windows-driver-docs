@@ -5,9 +5,6 @@ ms.assetid: caa18221-6128-4d77-ab61-ef3c28cfba38
 keywords: ["(Developer Content) Bug Check 0xEF CRITICAL_PROCESS_DIED", "CRITICAL_PROCESS_DIED"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -5,9 +5,6 @@ ms.assetid: 4A31451C-FC7E-4C5F-B4EB-FBBAC8DADF9E
 keywords: ["debug lab", "step-by-step", "SYSVAD"]
 ms.author: domars
 ms.date: 10/12/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

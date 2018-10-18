@@ -3,6 +3,7 @@ title: HBAFCPScsiEntry WMI Class
 description: HBAFCPScsiEntry WMI Class
 ms.assetid: b20b1e07-38b4-47b0-a870-51e0865fd256
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # HBAFCPScsiEntry WMI Class

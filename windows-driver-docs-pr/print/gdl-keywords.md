@@ -7,11 +7,7 @@ keywords:
 - GDL WDK , keywords
 - keywords WDK GDL , about GDL keywords
 - keywords WDK GDL , characters
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -6,11 +6,7 @@ keywords:
 - ports WDK NDIS , creating NDIS interfaces
 - NDIS ports WDK , creating NDIS interfaces
 - registering NDIS interface providers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

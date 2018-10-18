@@ -15,11 +15,7 @@ keywords:
 - sink pins WDK audio
 - source pins WDK audio
 - KS pins WDK audio , translating
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

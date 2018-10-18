@@ -4,11 +4,7 @@ author: windows-driver-content
 description: When to Complete an IRP in a Dispatch Routine
 ms.assetid: 24159535-927f-490c-9472-05ea565b7ae5
 keywords: ["completing IRPs WDK kernel , dispatch routines", "dispatch routines WDK kernel , completing IRPs"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,11 +5,7 @@ description: The WdfObjectGetTypedContext macro returns a pointer to an object's
 ms.assetid: de0edae4-7c05-4419-972e-c106875dfff1
 keywords:
  - WdfObjectGetTypedContext macro
-ms.author: windowsdriverdev
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

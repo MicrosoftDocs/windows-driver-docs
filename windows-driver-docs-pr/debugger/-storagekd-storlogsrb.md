@@ -5,9 +5,6 @@ ms.assetid: 9E742636-DD19-4D8D-BDA1-C9BB8C293D8C
 keywords: ["storagekd.storlogsrb Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

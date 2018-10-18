@@ -4,11 +4,7 @@ description: NDIS-WDF function equivalents
 ms.assetid: 28C8DFA3-5602-422D-89AA-6EA05F501E15
 keywords:
 - NetAdapterCx NDIS-WDF function equivalents, NetCx NDIS-WDF function equivalents
-ms.author: windowsdriverdev
 ms.date: 06/05/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

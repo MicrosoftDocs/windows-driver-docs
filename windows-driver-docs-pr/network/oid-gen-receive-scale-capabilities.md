@@ -3,11 +3,7 @@ title: OID_GEN_RECEIVE_SCALE_CAPABILITIES
 author: windows-driver-content
 description: As a query, overlying drivers can use the OID_GEN_RECEIVE_SCALE_CAPABILITIES OID to query the receive side scaling (RSS) capabilities of a NIC and its miniport driver.
 ms.assetid: b7640ec3-248c-4db2-818d-3976df2dcb9b
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_RECEIVE_SCALE_CAPABILITIES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

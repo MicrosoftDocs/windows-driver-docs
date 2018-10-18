@@ -4,11 +4,7 @@ author: windows-driver-content
 description: A Single DispatchCreateClose Routine
 ms.assetid: 6127d696-2409-49fc-9cbd-ba1b13c0c672
 keywords: ["dispatch routines WDK kernel , DispatchCreateClose routine", "DispatchCreateClose routine", "IRP_MJ_CREATE I/O function code", "IRP_MJ_CLOSE I/O function code", "create dispatch routines WDK kernel", "close dispatch routines WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

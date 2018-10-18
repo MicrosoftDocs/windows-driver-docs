@@ -1,9 +1,6 @@
 ---
 title: Driver flighting
 description: Driver flighting in the Windows Hardware Dev Center dashboard enables you to distribute your driver within defined Windows Insider rings, and provides automatic monitoring and evaluation.
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.date: 07/27/2018 
 ms.localizationpriority: medium
 ---

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Required Support for Device Power States
 ms.assetid: f7218f2a-d4ad-4b9a-af90-057801e714a2
 keywords: ["continuous power WDK kernel", "delays WDK power management", "device power states WDK kernel", "hardware WDK power management", "legacy power management WDK kernel", "class drivers WDK power management", "port drivers WDK power management"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

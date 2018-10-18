@@ -8,11 +8,7 @@ keywords:
 - request sense WDK storage
 - errors WDK storage
 - retrying requests WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

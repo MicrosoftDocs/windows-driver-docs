@@ -8,11 +8,7 @@ keywords:
 - custom audio drivers WDK
 - vendor-supplied drivers WDK audio
 - PortCls WDK audio , custom audio drivers
-ms.author: windowsdriverdev
 ms.date: 05/08/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

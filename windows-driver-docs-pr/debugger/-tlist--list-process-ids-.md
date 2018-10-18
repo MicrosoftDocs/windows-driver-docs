@@ -5,9 +5,6 @@ ms.assetid: 44d46b74-5cf1-4384-b468-baec5a87eaed
 keywords: ["List Process IDs (.tlist) command", "process, List Process IDs (.tlist) command", ".tlist (List Process IDs) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

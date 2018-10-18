@@ -10,11 +10,7 @@ keywords:
 - StaticDV WDK , verification results
 - SDV WDK , verification results
 - verification results WDK Static Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/02/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

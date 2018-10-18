@@ -1,11 +1,7 @@
 ---
 title: RequestForUrbXrb rule (kmdf)
 ms.assetid: 8BFFB73D-106A-4CD0-93F2-D295D969729E
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 description: 
 keywords: ["RequestForUrbXrb rule (kmdf)"]
 topic_type:

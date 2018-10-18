@@ -4,9 +4,6 @@ description: .
 ms.assetid: 4751D53D-A7CD-4645-B6E9-A8E06ABF4C6D
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -4,9 +4,6 @@ description: In KD, you can view the call stack by entering one of the k (Displa
 ms.assetid: 81F5D9EA-48CE-4F29-B74E-282824E690F6
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

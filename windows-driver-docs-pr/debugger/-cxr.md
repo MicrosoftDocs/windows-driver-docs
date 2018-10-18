@@ -5,9 +5,6 @@ ms.assetid: c1e05916-25ab-48b2-8855-78b619b45192
 keywords: ["cxr extension (obsolete)"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

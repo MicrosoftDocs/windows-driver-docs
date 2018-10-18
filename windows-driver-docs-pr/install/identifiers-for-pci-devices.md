@@ -9,11 +9,7 @@ keywords:
 - PCI device identifiers WDK device installations
 - hardware IDs WDK device installations
 - compatible IDs WDK device installations
-ms.author: windowsdriverdev
 ms.date: 05/29/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

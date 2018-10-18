@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Example I/O Request - An Overview
 ms.assetid: ffc9030e-4b03-4899-88a0-ed6ffd79fd58
 keywords: ["opening file objects", "named file objects WDK kernel", "file objects WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

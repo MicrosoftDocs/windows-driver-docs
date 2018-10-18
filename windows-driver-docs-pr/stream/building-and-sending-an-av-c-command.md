@@ -10,11 +10,7 @@ keywords:
 - AV/C WDK , commands
 - IRPs WDK AV/C
 - I/O WDK AV/C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,8 +38,8 @@ The following procedure outlines the process to build and send an AV/C command:
     ```cpp
     #include <avc.h>
     ...
-    /* Define a custom pool tag to identify your subunit driver&#39;s memory allocations */
-    #define CUSTOM_DRIVER_POOL_TAG &#39;C/VA&#39;
+    /* Define a custom pool tag to identify your subunit driver's memory allocations */
+    #define CUSTOM_DRIVER_POOL_TAG 'C/VA'
     ...
     PAVC_COMMAND_IRB  AvcIrb;
     ...
@@ -80,7 +76,7 @@ The following procedure outlines the process to build and send an AV/C command:
     PIRP Irp;
     PIO_STACK_LOCATION NextIrpStack;
     ...
-    AvcIrb = ExAllocatePoolWithTag(NonPagedPool, sizeof(AVC_COMMAND_IRB), &#39;C/VA&#39;);
+    AvcIrb = ExAllocatePoolWithTag(NonPagedPool, sizeof(AVC_COMMAND_IRB), 'C/VA');
     ...
     Irp = IoAllocateIrp(DeviceExtension->ParentDeviceObject->StackSize, FALSE);
     ...

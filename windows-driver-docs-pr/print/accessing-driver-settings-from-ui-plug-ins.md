@@ -7,11 +7,7 @@ keywords:
 - user interface plug-ins WDK print , accessing driver settings
 - UI plug-ins WDK print , accessing driver settings
 - status information WDK print plug-ins
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

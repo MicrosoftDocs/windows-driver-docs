@@ -5,9 +5,6 @@ ms.assetid: d8720446-58c1-4792-9e16-0facfe8fa39f
 keywords: ["wdfkd.wdftagtracker Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

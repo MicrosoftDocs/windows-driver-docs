@@ -5,9 +5,6 @@ ms.assetid: 7cb5a947-0830-4208-a6de-cdb7812179c0
 keywords: ["GFlags, dialog box (opening)"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

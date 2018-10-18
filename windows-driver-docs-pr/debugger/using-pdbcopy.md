@@ -5,9 +5,6 @@ ms.assetid: f8207b09-5a1b-4ff3-b99d-20daa88cfe10
 keywords: ["PDBCopy, using"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

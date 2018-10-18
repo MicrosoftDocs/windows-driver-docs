@@ -5,9 +5,6 @@ ms.assetid: ffef2d3d-43e9-48aa-a905-8656207da6a8
 keywords: ["Bug Check 0x10 SPIN_LOCK_NOT_OWNED", "SPIN_LOCK_NOT_OWNED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

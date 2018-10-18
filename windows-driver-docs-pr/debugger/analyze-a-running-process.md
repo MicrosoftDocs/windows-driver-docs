@@ -5,9 +5,6 @@ ms.assetid: 65a8b510-f5f1-4622-87ff-b44d5855787d
 keywords: ["Analyze a Running Process Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

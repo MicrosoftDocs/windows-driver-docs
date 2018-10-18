@@ -3,11 +3,7 @@ title: Testing Location Functionality
 author: windows-driver-content
 description: The Sensor Diagnostic Tool includes a separate Location tab that logs properties that are specific to location.
 ms.assetid: A96AF9C7-69FA-492C-941E-4E296488875C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

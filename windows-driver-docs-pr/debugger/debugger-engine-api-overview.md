@@ -5,9 +5,6 @@ ms.assetid: ea8beca6-93b7-4537-af89-78d599b8b982
 keywords: ["Debugger Engine API, overview"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

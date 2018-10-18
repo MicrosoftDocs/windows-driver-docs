@@ -5,9 +5,6 @@ ms.assetid: a98b9141-72e1-4957-a65c-36e677d159a6
 keywords: ["DbgRpc", "DbgRpc, basic use"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

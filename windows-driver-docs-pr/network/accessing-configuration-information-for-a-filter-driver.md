@@ -5,11 +5,7 @@ ms.assetid: 7d6bd7d4-3c06-4fc3-874b-fb8369ac227e
 keywords:
 - filter drivers WDK networking , configuration information
 - NDIS filter drivers WDK , configuration information
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

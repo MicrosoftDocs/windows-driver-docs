@@ -4,9 +4,6 @@ description: You can configure CDB to react to specified exceptions and events i
 ms.assetid: EA23057E-3241-43F2-84D3-CA5E56721583
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

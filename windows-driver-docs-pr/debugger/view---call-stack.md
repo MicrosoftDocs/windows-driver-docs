@@ -5,9 +5,6 @@ ms.assetid: a62332fd-f2d2-4715-bda5-4e8d73250d14
 keywords: ["View Call Stack"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

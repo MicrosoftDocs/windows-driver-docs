@@ -4,9 +4,6 @@ description: Setting Symbol and Executable Image Paths in CDB
 ms.assetid: 6BBB7DC4-716E-4717-8C48-7E778907E85B
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: 46ed532e-5ef3-4893-b2eb-da8eb52121f0
 keywords: ["dual-boot machines"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

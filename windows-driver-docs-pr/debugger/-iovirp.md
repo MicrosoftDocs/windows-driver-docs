@@ -5,9 +5,6 @@ ms.assetid: 9b05061c-2a57-4e01-bbe0-2e2f5f676947
 keywords: ["I/O Verifier", "iovirp Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!iovirp** extension displays detailed information for a specified I/O Verifier IRP.
 
-```
+```dbgcmd
 !iovirp [IRP]
 ```
 
@@ -58,7 +55,7 @@ Remarks
 
 Here is an example of the output from this extension:
 
-```
+```dbgcmd
 kd> !iovirp 947cef68
 IovPacket       84509af0
 TrackedIrp      947cef68

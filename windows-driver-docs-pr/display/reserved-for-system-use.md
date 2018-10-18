@@ -2,11 +2,7 @@
 title: Reserved For System Use
 description: Reserved For System Use
 ms.assetid: F8181743-8547-4B6C-9F02-7D3BFC4B5258
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

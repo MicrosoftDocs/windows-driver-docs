@@ -7,11 +7,7 @@ keywords:
 - DXVA-HD DDI WDK Server 2008 R2 display
 - high-definition video WDK Windows 7 display , DXVA-HD DDI
 - high-definition video WDK Server 2008 R2 display , DXVA-HD DDI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

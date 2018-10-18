@@ -5,9 +5,6 @@ ms.assetid: 34dbb695-19e4-4efc-83c7-3a94e5fcf269
 keywords: ["CDB Command-Line Options Windows Debugging"]
 ms.author: domars
 ms.date: 08/01/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

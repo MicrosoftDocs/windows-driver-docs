@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Calling PoStartNextPowerIrp from a Bus Driver
 ms.assetid: 4e23ebe1-c939-48e1-82bf-cdb4980a5a7b
 keywords: ["bus drivers WDK power management", "power IRPs WDK kernel , PoStartNextPowerIrp", "PoStartNextPowerIrp"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

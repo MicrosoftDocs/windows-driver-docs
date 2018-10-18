@@ -9,11 +9,7 @@ keywords:
 - ISA WDK multifunction devices
 - USB WDK multifunction devices
 - IEEE 1394 WDK multifunction devices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

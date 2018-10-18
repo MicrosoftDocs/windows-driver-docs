@@ -10,11 +10,7 @@ keywords:
 - context storage WDK tape
 - driver-specific minitape extensions WDK tape
 - command-specific command extensions WDK tape
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: 6AA3E41C-5838-4425-B1CE-37A13E8F755E
 keywords: ["xhci_findowner Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

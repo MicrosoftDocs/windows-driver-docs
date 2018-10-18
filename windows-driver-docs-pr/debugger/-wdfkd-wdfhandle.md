@@ -5,9 +5,6 @@ ms.assetid: 9365218e-2647-4e54-baba-8774d4ab3ae1
 keywords: ["wdfkd.wdfhandle Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

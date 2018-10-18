@@ -5,9 +5,6 @@ ms.assetid: 6ACE4AD9-5318-4c96-A560-D247033CB500
 keywords: bug check, blue screen, kernel error, stop error, stop code
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

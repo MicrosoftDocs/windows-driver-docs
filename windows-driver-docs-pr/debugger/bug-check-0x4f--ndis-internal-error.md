@@ -5,9 +5,6 @@ ms.assetid: e71916b3-3bb5-4595-a333-81ed2785b495
 keywords: ["Bug Check 0x4F NDIS_INTERNAL_ERROR", "NDIS_INTERNAL_ERROR"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

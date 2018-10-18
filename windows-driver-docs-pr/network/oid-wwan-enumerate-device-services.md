@@ -3,11 +3,7 @@ title: OID_WWAN_ENUMERATE_DEVICE_SERVICES
 author: windows-driver-content
 description: OID_WWAN_ENUMERATE_DEVICE_SERVICES returns the list of device services supported by the miniport driver.NDIS_STATUS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS status notification containing a NDIS_WWAN_SUPPORTED_DEVICE_SERVICES structure that provides the list of supported device service GUIDs.
 ms.assetid: 12AB2235-DDF8-44CB-BD3D-61D0FFCB4080
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_WWAN_ENUMERATE_DEVICE_SERVICES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

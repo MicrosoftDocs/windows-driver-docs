@@ -5,9 +5,6 @@ ms.assetid: f13372b9-604e-4ea5-96e2-d8b7e916c8e5
 keywords: ["Enable system critical breaks (global flag)"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

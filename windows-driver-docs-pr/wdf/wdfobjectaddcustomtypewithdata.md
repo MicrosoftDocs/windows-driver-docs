@@ -5,11 +5,7 @@ description: The WdfObjectAddCustomTypeWithData macro associates a framework obj
 ms.assetid: 237F9BAA-A2E2-4F20-B52E-8F093B326E45
 keywords:
  - WdfObjectAddCustomTypeWithData macro
-ms.author: windowsdriverdev
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

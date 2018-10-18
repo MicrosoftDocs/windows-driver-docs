@@ -4,9 +4,6 @@ description: Canceling Requests for Special Pool
 ms.assetid: fb18cb15-33ee-4e6d-856e-70c4ffbf8383
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

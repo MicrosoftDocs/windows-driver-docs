@@ -8,11 +8,7 @@ keywords:
 - 1394 WDK buses , bridges
 - bridges WDK IEEE 1394 bus
 - 1394 bridges WDK IEEE 1394 bus
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

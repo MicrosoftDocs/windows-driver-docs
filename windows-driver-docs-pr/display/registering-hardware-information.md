@@ -5,11 +5,7 @@ ms.assetid: 1fec9fcf-3ec7-4926-9ceb-ef1f7f42e963
 keywords:
 - registry WDK display
 - hardware information in registry WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

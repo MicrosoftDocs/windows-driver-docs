@@ -4,9 +4,6 @@ description: How to schedule a custom error report based on the report template 
 author: EliotSeattle
 ms.author: shganesh
 ms.date: 09/01/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

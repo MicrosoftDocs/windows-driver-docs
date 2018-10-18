@@ -5,9 +5,6 @@ ms.assetid: B7CC72A5-7D3F-4DE5-878D-ABD08BAF227C
 keywords: ["processirps Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

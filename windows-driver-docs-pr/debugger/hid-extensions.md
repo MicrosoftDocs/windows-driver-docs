@@ -4,9 +4,6 @@ description: This section describes the Human Interface Device (HID) debugger ex
 ms.assetid: 796DB87B-1E04-40FA-90F9-699EE7032B3C
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

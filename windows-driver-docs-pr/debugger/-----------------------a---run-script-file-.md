@@ -5,9 +5,6 @@ ms.assetid: b3584680-765d-4aaf-ad43-c7d73552e5fb
 keywords: ["$ (Run Script File) command", "$$ (Run Script File) command", "$$ (Run Script File) command", "Run Script File ($ ) command", "Run Script File ($ ) command", "Run Script File ($$ ) command", "Run Script File ($$ ) comm", "$ , $ , $$ , $$ , $$ a (Run Script File) Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

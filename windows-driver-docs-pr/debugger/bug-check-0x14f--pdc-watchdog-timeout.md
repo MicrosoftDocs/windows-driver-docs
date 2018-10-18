@@ -5,9 +5,6 @@ ms.assetid: 347D31C2-7027-44BD-A0E8-60C6EC3A2030
 keywords: ["Bug Check 0x14F PDC_WATCHDOG_TIMEOUT", "PDC_WATCHDOG_TIMEOUT"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

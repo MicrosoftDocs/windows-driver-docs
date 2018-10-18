@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Starting a Device in a Bus Driver
 ms.assetid: 1babeabb-1866-4ca5-b5a3-380c246596e5
 keywords: ["bus drivers WDK PnP"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

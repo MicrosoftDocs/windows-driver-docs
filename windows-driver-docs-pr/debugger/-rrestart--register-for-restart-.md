@@ -5,9 +5,6 @@ ms.assetid: 8984DBD8-380D-4EB2-95B1-16764153FCF7
 keywords: [".rrestart (Register for Restart) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

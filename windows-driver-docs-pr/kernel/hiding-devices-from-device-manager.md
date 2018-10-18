@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Hiding Devices from Device Manager
 ms.assetid: dd362ae1-ab14-44ee-982e-f972454c2623
 keywords: ["Device Manager WDK , hidden devices", "devices WDK , hiding from Device Manager", "hidden devices WDK", "hiding devices WDK", "NoDisplayClass value WDK device installations"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

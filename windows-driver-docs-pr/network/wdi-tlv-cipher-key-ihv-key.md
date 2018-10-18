@@ -3,11 +3,7 @@ title: WDI_TLV_CIPHER_KEY_IHV_KEY
 author: windows-driver-content
 description: WDI_TLV_CIPHER_KEY_IHV_KEY is a TLV that contains an IHV key.
 ms.assetid: 5814DEA6-038A-4CA6-8518-E8830BBA6B7F
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - WDI_TLV_CIPHER_KEY_IHV_KEY Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

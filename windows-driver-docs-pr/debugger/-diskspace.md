@@ -5,9 +5,6 @@ ms.assetid: 9153cdc0-addf-4804-a898-1e4280ac60ea
 keywords: ["diskspace Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!diskspace** extension displays the amount of free space on a hard disk of the target computer.
 
-```
+```dbgcmd
 !diskspace Drive[:]
 ```
 
@@ -58,7 +55,7 @@ Remarks
 
 Here is an example:
 
-```
+```dbgcmd
 kd> !diskspace c:
 Checking Free Space for c: ..........
    Cluster Size 0 KB

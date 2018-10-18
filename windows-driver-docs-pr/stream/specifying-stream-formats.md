@@ -8,11 +8,7 @@ keywords:
 - capturing video WDK AVStream , stream formats
 - stream formats WDK video capture
 - formats WDK video capture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,8 +45,8 @@ For example, the following GUID corresponds to the YVU9 FOURCC video format:
 
 ```Text
 39555659-0000-0010-8000-00AA00389B71
-      59 = &#39;Y&#39;
-    56 = &#39;V&#39;
-  55 = &#39;U&#39;
-39 = &#39;9&#39;
+      59 = 'Y'
+    56 = 'V'
+  55 = 'U'
+39 = '9'
 ```

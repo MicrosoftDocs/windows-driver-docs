@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Failure to Validate Object Handles
 ms.assetid: 67d52ca8-4e86-4fe2-a541-f7a0e4040b93
 keywords: ["reliability WDK kernel , object handle validation", "validation failures WDK kernel", "object handles WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

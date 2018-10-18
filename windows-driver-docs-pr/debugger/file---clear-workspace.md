@@ -5,9 +5,6 @@ ms.assetid: 21d60ff7-0c62-4018-9dc6-51036816780b
 keywords: ["File Clear Workspace", "workspaces, File Clear Workspace"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

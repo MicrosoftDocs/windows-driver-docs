@@ -5,9 +5,6 @@ ms.assetid: 641443b9-465f-4c7e-a13d-47a991304b46
 keywords: ["WdbgExts extensions, 32-bit pointers", "WdbgExts extensions, 64-bit pointers"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

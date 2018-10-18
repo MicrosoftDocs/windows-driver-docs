@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Controlling Device Namespace Access
 ms.assetid: e5312297-849f-4b4e-835d-0ce5295c7ce2
 keywords: ["device objects WDK kernel , security", "security WDK device objects", "device namespace access WDK kernel", "namespaces WDK device objects", "file open requests WDK device objects", "open requests WDK device objects"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

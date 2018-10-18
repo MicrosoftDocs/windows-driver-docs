@@ -8,11 +8,7 @@ keywords:
 - paging buffers WDK display
 - segments WDK display
 - address space WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

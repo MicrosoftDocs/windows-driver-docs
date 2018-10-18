@@ -5,9 +5,6 @@ ms.assetid: 8712af44-f231-48f6-97ac-56a1d737cd6b
 keywords: ["wmitrace.setprefix Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

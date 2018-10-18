@@ -3,11 +3,7 @@ title: WIA RAW Data Header
 author: windows-driver-content
 description: WIA RAW Data Header
 ms.assetid: a2cb3835-7879-4f69-9784-9487df40730a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ ms.localizationpriority: medium
 The header for RAW data is as follows:
 
 ```cpp
-DWORD Tag;         // must contain &#39;WRAW&#39; (single byte ASCII characters)
+DWORD Tag;         // must contain 'WRAW' (single byte ASCII characters)
 DWORD Version;        // must contain 0x00010000
 DWORD HeaderSize;       // contains amount of valid bytes in header
 DWORD XRes;              // X (horizontal) resolution, in DPI

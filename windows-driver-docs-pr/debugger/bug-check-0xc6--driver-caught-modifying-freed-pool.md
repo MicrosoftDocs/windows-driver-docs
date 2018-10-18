@@ -5,9 +5,6 @@ ms.assetid: a5df3612-549d-4cf1-b3e1-4e5efad8ce88
 keywords: ["Bug Check 0xC6 DRIVER_CAUGHT_MODIFYING_FREED_POOL", "DRIVER_CAUGHT_MODIFYING_FREED_POOL"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

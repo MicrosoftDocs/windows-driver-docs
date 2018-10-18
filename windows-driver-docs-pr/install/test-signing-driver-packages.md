@@ -12,11 +12,7 @@ keywords:
 - test signing drivers WDK , driver packages
 - test signing driver packages WDK
 - test signing driver packages WDK , about test signing driver packages
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

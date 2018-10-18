@@ -6,11 +6,7 @@ keywords:
 - IOCTLs WDK smart card
 - callback parameters WDK smart card
 - vendor-supplied drivers WDK smart card , IOCTL request management
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

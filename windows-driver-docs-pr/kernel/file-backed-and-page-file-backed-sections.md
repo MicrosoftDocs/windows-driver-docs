@@ -4,11 +4,7 @@ author: windows-driver-content
 description: File-Backed and Page-File-Backed Sections
 ms.assetid: 5967678a-cbc3-4db0-86d8-14ffc79f610e
 keywords: ["file-backed sections WDK kernel", "page-file-backed sections WDK kernel", "backed memory sections WDK kernel", "paged file backups WDK kernel", "temporarily shared data WDK kernel", "permanently shared data WDK kernel", "memory sections WDK kernel", "section objects WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

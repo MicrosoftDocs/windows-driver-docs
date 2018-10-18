@@ -2,11 +2,7 @@
 title: ELAM Prerequisites
 description: Early Launch Antimalware (ELAM) drivers can be submitted using the listed steps to ensure validation and adherence to documented requirements
 ms.assetid:
-ms.author: windowsdriverdev
 ms.date: 04/27/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 # ELAM driver submission Process

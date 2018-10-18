@@ -5,9 +5,6 @@ ms.assetid: 1B4F586A-2DFB-421A-863B-CC706FB4795B
 keywords: ["Bug Check 0x189 BAD_OBJECT_HEADER", "BAD_OBJECT_HEADER"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

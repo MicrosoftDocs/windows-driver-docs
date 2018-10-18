@@ -5,9 +5,6 @@ ms.assetid: 26ee9219-ad37-4b0e-b204-5ed6d93355b0
 keywords: ["FILETIME", "filetime Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!filetime** extension converts a 64-bit FILETIME structure into a human-readable time.
 
-```
+```dbgcmd
 !filetime Time
 ```
 
@@ -58,7 +55,7 @@ Remarks
 
 Here is an example of the output from this extension:
 
-```
+```dbgcmd
 kd> !filetime 1c4730984712348
  7/26/2004 04:10:18.712 (Pacific Standard Time)
 ```

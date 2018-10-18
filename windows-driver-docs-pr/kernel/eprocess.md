@@ -4,6 +4,7 @@ author: windows-driver-content
 description: Windows kernel opaque structures
 ms.assetid: 4053d82e-78ae-4945-ad5b-44ba41229a5d
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Windows kernel opaque structures

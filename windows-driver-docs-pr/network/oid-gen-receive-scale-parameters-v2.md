@@ -3,11 +3,7 @@ title: OID_GEN_RECEIVE_SCALE_PARAMETERS_V2
 description: This topic describes OID_GEN_RECEIVE_SCALE_PARAMETERS_V2
 ms.assetid: 3897A898-2B00-45DF-AC05-7EC719EB7353
 keywords: OID_GEN_RECEIVE_SCALE_PARAMETERS_V2, OID_GEN_RECEIVE_SCALE_PARAMETERS_V2 RSSv2
-ms.author: windowsdriverdev
 ms.date: 10/11/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

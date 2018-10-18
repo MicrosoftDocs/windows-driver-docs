@@ -3,11 +3,7 @@ title: Wi-Fi Hotspot Offloading Enumerations
 author: windows-driver-content
 description: Wi-Fi Hotspot Offloading Enumerations
 ms.assetid: f8f5f13a-30e4-4a7a-9ea7-ca0e9c3746f7
-ms.author: windowsdriverdev
 ms.date: 07/31/2017 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: e0ef7d0e-8a3e-41ca-b0c1-c0f0bb298ef1
 keywords: ["Bug Check 0xBA SESSION_HAS_VALID_VIEWS_ON_EXIT", "SESSION_HAS_VALID_VIEWS_ON_EXIT"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

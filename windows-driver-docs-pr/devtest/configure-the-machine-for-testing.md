@@ -4,11 +4,7 @@ description: Outline of the steps required to install WDTF and TAEF, copy the Sy
 keywords:
 - Sysfund tests
 - data-driven tests
-ms.author: windowsdriverdev
 ms.date: 10/12/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

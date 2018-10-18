@@ -5,11 +5,7 @@ description: This section describes filtering condition identifiers.
 ms.assetid: 53321aea-6406-426a-a541-2626faad2232
 keywords:
 - Filtering condition identifiers network drivers
-ms.author: windowsdriverdev
 ms.date: 11/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

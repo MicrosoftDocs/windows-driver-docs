@@ -4,11 +4,7 @@ description: Power-down sequence for a NetAdapterCx client driver
 ms.assetid: 9E16172C-9E45-4ED7-B6D2-7539DF4718B5
 keywords:
 - Power-down sequence for a NetAdapterCx client driver
-ms.author: windowsdriverdev
 ms.date: 08/07/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

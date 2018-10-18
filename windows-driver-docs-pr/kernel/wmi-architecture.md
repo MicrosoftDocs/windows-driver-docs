@@ -4,11 +4,7 @@ author: windows-driver-content
 description: WMI Architecture
 ms.assetid: cdc8f318-1931-426e-bd9c-da7aa6a11036
 keywords: ["WMI WDK kernel , architecture"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

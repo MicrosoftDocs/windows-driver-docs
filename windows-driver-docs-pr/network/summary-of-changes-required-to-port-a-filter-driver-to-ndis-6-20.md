@@ -7,11 +7,7 @@ keywords:
 - porting filter drivers to NDIS 6.20 WDK
 - filter drivers WDK
 - filter drivers WDK , porting to NDIS 6.20
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

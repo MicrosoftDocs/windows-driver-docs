@@ -7,11 +7,7 @@ keywords:
 - registry WDK USB Video Class
 - extension units WDK USB Video Class , samples, registry entry
 - sample code WDK USB Video Class , registry entry for UVC extension units
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,13 +48,13 @@ HKLM
                 NoRemove NodeInterfaces
                 {
                     ForceRemove {xxxxxxxx-xxxx-xxxx-xxxx-
-                       xxxxxxxxxxxx} = s &#39;Extension Unit 
-                       Property Set&#39;
+                       xxxxxxxxxxxx} = s 'Extension Unit 
+                       Property Set'
                     {
-                        val IID = b &#39;yyyyyyyyyyyyyyyyyyy
-                           yyyyyyyyyyyyy&#39;
-                        val CLSID = b &#39;zzzzzzzzzzzzzzzzz
-                           zzzzzzzzzzzzzzz&#39;
+                        val IID = b 'yyyyyyyyyyyyyyyyyyy
+                           yyyyyyyyyyyyy'
+                        val CLSID = b 'zzzzzzzzzzzzzzzzz
+                           zzzzzzzzzzzzzzz'
                     }             
                 }
             }
@@ -74,11 +70,11 @@ HKCR
 {
     NoRemove CLSID
     {
-         ForceRemove {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz} = s &#39;CompanyName Extension Unit Interface&#39;
+         ForceRemove {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz} = s 'CompanyName Extension Unit Interface'
         {
-            InprocServer32 = s &#39;%MODULE%&#39;
+            InprocServer32 = s '%MODULE%'
                                                 {
-                                val ThreadingModel = s &#39;Both&#39;
+                                val ThreadingModel = s 'Both'
                                                 }
         }
  

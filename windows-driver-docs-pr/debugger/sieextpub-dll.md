@@ -4,9 +4,6 @@ description: SieExtPub.dll
 ms.assetid: 7f917fb0-a951-42df-a618-428c42bc972a
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

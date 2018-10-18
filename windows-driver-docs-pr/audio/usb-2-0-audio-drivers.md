@@ -1,11 +1,7 @@
 ---
 title: USB Audio 2.0 Drivers
 description: Starting with Windows 10, release 1703, a USB Audio 2.0 driver is shipped with Windows. This driver provides basic functionality.
-ms.author: windowsdriverdev
 ms.date: 5/14/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

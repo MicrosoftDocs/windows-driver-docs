@@ -5,9 +5,6 @@ ms.assetid: 4d5a3d95-de39-4e15-aba8-33257a6f0677
 keywords: ["Bug Check 0xC1 SPECIAL_POOL_DETECTED_MEMORY_CORRUPTION", "SPECIAL_POOL_DETECTED_MEMORY_CORRUPTION"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

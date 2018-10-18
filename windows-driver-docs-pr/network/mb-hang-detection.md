@@ -5,11 +5,7 @@ author: duncanmacmichael # Original committer did not have GitHub account so add
 ms.assetid: D3D222F7-96BE-48F7-8074-8820E43E3C7B
 keywords:
 - MB hang detection, Mobile Broadband hang detection, Mobile Broadband miniport driver hang detection
-ms.author: windowsdriverdev
 ms.date: 08/09/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

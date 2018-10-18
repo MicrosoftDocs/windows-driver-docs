@@ -8,11 +8,7 @@ keywords:
 - customizing printer drivers WDK , installing components
 - installing custom printer driver components WDK
 - INF files WDK print , customized driver components
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

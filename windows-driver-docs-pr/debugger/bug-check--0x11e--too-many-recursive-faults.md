@@ -5,9 +5,6 @@ ms.assetid: E945719A-ACFA-4DDF-8176-7ABEF41E1C47
 keywords: ["Bug Check 0x11E TOO_MANY_RECURSIVE_FAULTS", "TOO_MANY_RECURSIVE_FAULTS"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

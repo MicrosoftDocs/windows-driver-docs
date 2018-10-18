@@ -5,9 +5,6 @@ ms.assetid: 05D09B0D-4ED8-4333-B4BC-5BE28C63312C
 keywords: ["wdfkd.wdfumdevstacks Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

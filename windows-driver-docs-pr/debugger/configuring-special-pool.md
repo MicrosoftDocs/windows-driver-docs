@@ -5,9 +5,6 @@ ms.assetid: a6c90e88-8d67-47e8-8862-b7585a5d8bec
 keywords: ["GFlags, configuring kernel special pool", "kernel special pool", "special pool", "pool tags and special pool"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

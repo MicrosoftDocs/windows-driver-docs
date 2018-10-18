@@ -5,9 +5,6 @@ ms.assetid: befd6c0b-dd16-40a1-bc6b-634b354d2a75
 keywords: ["Debugger Engine API, targets, state"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

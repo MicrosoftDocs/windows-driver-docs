@@ -4,9 +4,6 @@ description: The MANUALLY_INITIATED_POWER_BUTTON_HOLD bug check has a value of 0
 keywords: ["Bug Check 0x1C8 MANUALLY_INITIATED_POWER_BUTTON_HOLD", "MANUALLY_INITIATED_POWER_BUTTON_HOLD"]
 ms.author: domars
 ms.date: 09/24/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

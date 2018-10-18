@@ -5,9 +5,6 @@ ms.assetid: 16df2592-0e7d-4cd3-bc35-5323578cf555
 keywords: ["shell commands", "shell commands, overview"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

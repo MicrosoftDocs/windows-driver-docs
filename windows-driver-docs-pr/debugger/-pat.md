@@ -5,9 +5,6 @@ ms.assetid: 41583410-08cc-49b5-96b2-b59d935f623e
 keywords: ["PAT", "pat Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

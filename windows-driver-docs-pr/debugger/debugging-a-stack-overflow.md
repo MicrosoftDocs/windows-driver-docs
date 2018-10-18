@@ -5,9 +5,6 @@ ms.assetid: fc67effa-88c9-4915-a5a8-8c094595c6c5
 keywords: ["stack overflow", "call stack, debugging a stack overflow"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -3,11 +3,7 @@ title: WDI_TLV_CONNECTION_QUALITY_PARAMETERS
 author: windows-driver-content
 description: WDI_TLV_CONNECTION_QUALITY_PARAMETERS is a TLV that contains the desired Wi-Fi Connection Quality Hint.
 ms.assetid: A371FD3A-5BF9-4921-AB8E-1651789FA9A1
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - WDI_TLV_CONNECTION_QUALITY_PARAMETERS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

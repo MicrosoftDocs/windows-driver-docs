@@ -2,11 +2,7 @@
 title: NdisOpenConfigurationEx rule (ndis)
 description: This rule checks that NdisOpenConfigurationEx and NdisCloseConfiguration are called in alternate order. The ultimate goal is to make sure that configuration handles are closed when MiniportHaltEx exits.
 ms.assetid: 3E23D8AE-5EBC-4C2F-9EE3-42718D86B97C
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["NdisOpenConfigurationEx rule (ndis)"]
 topic_type:
 - apiref

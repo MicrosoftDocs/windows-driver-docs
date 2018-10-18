@@ -5,9 +5,6 @@ ms.assetid: 38E57F45-71D9-4467-BECF-42769563751E
 keywords: ["Kernel-mode debugging, Visual Studio", "Setting up kernel-mode debugging, Visual Studio"]
 ms.author: domars
 ms.date: 04/10/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

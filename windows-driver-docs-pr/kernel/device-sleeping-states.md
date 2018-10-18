@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Device Low-Power States
 ms.assetid: f594a63f-10ce-439d-abe3-d342555d98f0
 keywords: ["device power states WDK kernel", "device low-power states WDK power management", "sleep power management WDK kernel", "Dx names WDK power management", "asleep devices WDK power management", "lowest-powered device state WDK kernel", "highest-powered device low-power state WDK kernel", "intermediate sleeping state WDK kernel", "low power modes WDK kernel", "power saving modes WDK kernel", "continuous power WDK kernel", "delays WDK power management", "state transition delays WDK power management"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

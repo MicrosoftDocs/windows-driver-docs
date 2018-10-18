@@ -4,9 +4,6 @@ description: This document contains information about how to create or update sh
 author: balapv
 ms.author: balapv
 ms.date: 08/23/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 # Manage Shipping Labels
 

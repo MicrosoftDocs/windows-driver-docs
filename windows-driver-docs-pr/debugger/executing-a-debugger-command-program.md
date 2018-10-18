@@ -5,9 +5,6 @@ ms.assetid: ad28a5d6-0d6a-42c0-82f3-6760a8c773ab
 keywords: ["debugger command program, execution"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

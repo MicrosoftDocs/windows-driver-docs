@@ -5,9 +5,6 @@ ms.assetid: cbea92de-e45b-416c-87f1-6faba95788d0
 keywords: ["bugdump Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!bugdump** extension formats and displays the information contained in the bug check callback buffers.
 
-```
+```dbgsyntax
     !bugdump [Component] 
 ```
 

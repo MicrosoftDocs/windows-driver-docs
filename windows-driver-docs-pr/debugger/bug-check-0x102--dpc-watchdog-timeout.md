@@ -5,9 +5,6 @@ ms.assetid: 1BEC2701-3127-4FB9-AD0F-DD54A9F2C2C3
 keywords: ["Bug Check 0x102 DPC_WATCHDOG_TIMEOUT", "DPC_WATCHDOG_TIMEOUT"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -5,9 +5,6 @@ ms.assetid: 509b25cd-d69a-442d-bd5b-a69266d341c3
 keywords: ["Remote Tool, Remote Tool Concepts"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

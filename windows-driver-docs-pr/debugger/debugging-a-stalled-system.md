@@ -5,9 +5,6 @@ ms.assetid: 83679dca-2477-4d03-9a89-5a5aebc7b9d9
 keywords: ["stalled system debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

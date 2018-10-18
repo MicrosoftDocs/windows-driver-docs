@@ -5,9 +5,6 @@ ms.assetid: ba9a1364-173b-4258-9894-09271e47786e
 keywords: ["ndiskd.help Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

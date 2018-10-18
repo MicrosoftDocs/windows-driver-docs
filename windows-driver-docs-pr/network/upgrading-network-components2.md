@@ -9,11 +9,7 @@ keywords:
 - upgrading network components WDK , notify objects
 - notifications WDK networking , upgrading network components
 - upgrading network components WDK , steps
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

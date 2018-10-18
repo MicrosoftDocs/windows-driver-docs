@@ -4,9 +4,6 @@ description: This topic provides hands-on exercises that will help you get start
 ms.assetid: 1B61591F-0D48-4FBD-B242-68BB90D27FAF
 ms.author: domars
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

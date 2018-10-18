@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Storage Requirements for ControllerControl Routines
 ms.assetid: 1ee69144-5f52-4d61-ad30-02e8fbe1f91e
 keywords: ["controller objects WDK kernel , writing ControllerControl routines", "ControllerControl routines, writing", "ControllerControl routines, storage", "storage WDK controller objects"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

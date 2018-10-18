@@ -5,9 +5,6 @@ ms.assetid: 9ced92d9-b37c-4db5-b3f9-fa2fe5325e57
 keywords: ["GFlags, GFlags and PageHeap", "PageHeap (pageheap.exe)"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

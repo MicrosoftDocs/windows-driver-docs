@@ -3,9 +3,6 @@ title: Hardware dashboard API
 description: The Microsoft Hardware APIs programmatically query and create submissions for hardware products within your organization's Windows Dev Center account.
 ms.author: EliotSeattle
 ms.date: 09/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

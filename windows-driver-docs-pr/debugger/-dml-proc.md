@@ -5,9 +5,6 @@ ms.assetid: 35B5B2E7-07CE-4F44-819D-9B7C76273F9A
 keywords: ["dml_proc Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!dml\_proc** extension displays a list of processes and provides links for obtaining more detailed information about processes.
 
-```
+```dbgcmd
 !dml_proc
 ```
 

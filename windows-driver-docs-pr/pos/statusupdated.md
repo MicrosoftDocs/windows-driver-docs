@@ -2,11 +2,7 @@
 title: StatusUpdated
 description: The device-specific StatusUpdated event represents events such as a power change notification.
 ms.assetid: 'e5d04e61-859a-49ee-bc54-58be4133b38a'
-ms.author: windowsdriverdev
 ms.date: 9/7/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,11 +5,7 @@ description: The HS_HOST_ALLOCATE_MEMORY function returns an amount of memory sp
 ms.assetid: afa59680-d85b-4be5-8642-152ff653a0b0
 keywords: 
 - (WINAPI HS_HOST_ALLOCATE_MEMORY) function Network Drivers Starting with Windows Vista
-ms.author: windowsdriverdev
 ms.date: 07/31/2017 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

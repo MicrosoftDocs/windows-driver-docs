@@ -5,6 +5,7 @@ description: Driver Interface
 ms.assetid: cb5e06c3-6add-4eba-b794-861d567a3047
 keywords: ["force feedback drivers WDK HID , methods supported"]
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Driver Interface

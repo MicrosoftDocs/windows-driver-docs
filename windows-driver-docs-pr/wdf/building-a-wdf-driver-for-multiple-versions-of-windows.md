@@ -1,11 +1,7 @@
 ---
 title: Building a WDF driver for multiple versions of Windows
 description: Describes how to buid a WDF driver for multiple versions of Windows.
-ms.author: windowsdriverdev
 ms.date: 04/06/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

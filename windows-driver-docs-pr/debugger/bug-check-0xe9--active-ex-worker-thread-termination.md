@@ -5,9 +5,6 @@ ms.assetid: dd68f07f-fab1-402c-9a81-f43722f91b69
 keywords: ["Bug Check 0xE9 ACTIVE_EX_WORKER_THREAD_TERMINATION", "ACTIVE_EX_WORKER_THREAD_TERMINATION"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -2,11 +2,7 @@
 title: MagneticStripeReaderErrorOccured
 description: The MagneticStripeReaderErrorOccured event occurs when there is a magnetic stripe reader (MSR) error, such as a scanning error.
 ms.assetid: 'c2402411-1bbf-44c1-bf7f-813f6d967822'
-ms.author: windowsdriverdev
 ms.date: 9/7/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

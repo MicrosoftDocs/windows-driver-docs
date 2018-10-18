@@ -5,9 +5,6 @@ ms.assetid: CE9A4CBF-0016-42F7-A9EE-56DF6E61593A
 keywords: ["Bug Check 0x133 DPC_WATCHDOG_VIOLATION", "DPC_WATCHDOG_VIOLATION"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

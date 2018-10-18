@@ -5,9 +5,6 @@ ms.assetid: f14b6361-9962-4fa3-bb1a-dfde066754b9
 keywords: ["Debugger Engine API, symbols, symbol groups", "symbol group, scopes", "Debugger Engine API, symbols, scopes", "scopes"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

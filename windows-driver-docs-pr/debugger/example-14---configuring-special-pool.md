@@ -4,9 +4,6 @@ description: Example 14 Configuring Special Pool
 ms.assetid: a89f8a08-30e4-4d04-9689-c665b2175780
 ms.author: domars
 ms.date: 10/12/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

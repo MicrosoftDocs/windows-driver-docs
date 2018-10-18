@@ -4,9 +4,6 @@ description: Stop on unhandled user-mode exception
 ms.assetid: BD8E1000-29B0-425D-BEA1-D4FD55CF0E4F
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

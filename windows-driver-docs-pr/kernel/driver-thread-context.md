@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Driver Thread Context
 ms.assetid: 8795811d-a5f6-4f90-9fa0-edd4b37fd269
 keywords: ["driver thread context WDK kernel", "thread context WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

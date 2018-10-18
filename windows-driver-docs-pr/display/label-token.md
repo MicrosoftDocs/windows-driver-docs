@@ -2,11 +2,7 @@
 title: Label Token
 description: Label Token
 ms.assetid: 29b2b4b1-c599-4bea-9d83-3a10eedac4a6
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

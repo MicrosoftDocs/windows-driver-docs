@@ -6,11 +6,7 @@ ms.assetid: cc7ad05b-d03b-463a-9d22-1982aee882e8
 keywords: 
 - HS_PLUGIN_CELLULAR_EXCEPTION_HOSTS structure Network Drivers Starting with Windows Vista
 - PHS_PLUGIN_CELLULAR_EXCEPTION_HOSTS structure pointer Network Drivers Starting with Windows Vista
-ms.author: windowsdriverdev
 ms.date: 07/31/2017 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

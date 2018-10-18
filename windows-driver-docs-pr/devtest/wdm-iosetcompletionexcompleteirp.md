@@ -2,11 +2,7 @@
 title: IoSetCompletionExCompleteIrp rule (wdm)
 description: The IoSetCompletionExCompleteIrp rule specifies that the IoSetCompletionRoutineEx routine returns an NTSTATUS value.
 ms.assetid: 892ADDF3-9FC0-48A9-AECC-71722A10B2BE
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["IoSetCompletionExCompleteIrp rule (wdm)"]
 topic_type:
 - apiref

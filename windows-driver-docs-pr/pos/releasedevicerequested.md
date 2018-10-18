@@ -2,11 +2,7 @@
 title: ReleaseDeviceRequested
 description: The ReleaseDeviceRequested event occurs when another client attempts to claim a device.
 ms.assetid: '0fcb8905-1370-4260-9456-6c80e2186dfc'
-ms.author: windowsdriverdev
 ms.date: 9/28/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

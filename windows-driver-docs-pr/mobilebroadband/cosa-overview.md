@@ -2,11 +2,7 @@
 title: COSA overview
 description: COSA overview
 ms.assetid: 45D69B8D-69C1-488B-AC52-D8DEB337F878
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

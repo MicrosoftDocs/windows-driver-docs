@@ -5,9 +5,6 @@ ms.assetid: 832b7269-623a-4f32-8bda-1059087bab09
 keywords: ["GFlags Commands Windows Debugging"]
 ms.author: domars
 ms.date: 06/12/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -4,9 +4,6 @@ description: The UCMUCSI_LIVEDUMP live dump has a value of 0x000001D4.
 keywords: ["Bug Check 0x1D4 UCMUCSI_LIVEDUMP",  "UCMUCSI_LIVEDUMP"]
 ms.author: domars
 ms.date: 05/23/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

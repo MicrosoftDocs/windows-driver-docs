@@ -4,9 +4,6 @@ description: A memory dump file can be placed in a cabinet (CAB) file along with
 ms.assetid: 89B54522-1B21-4E4E-9AF3-1F637E3BA50F
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

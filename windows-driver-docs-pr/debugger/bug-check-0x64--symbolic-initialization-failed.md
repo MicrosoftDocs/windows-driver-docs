@@ -5,9 +5,6 @@ ms.assetid: 0f4fa80b-a04b-4482-952d-8f124d185b41
 keywords: ["Bug Check 0x64 SYMBOLIC_INITIALIZATION_FAILED", "SYMBOLIC_INITIALIZATION_FAILED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

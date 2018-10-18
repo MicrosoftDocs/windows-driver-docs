@@ -3,9 +3,6 @@ title: Time travel debugging extensions
 description: This section describes how to use the time travel debugger extension commands.
 ms.author: domars
 ms.date: 09/22/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -9,11 +9,7 @@ keywords:
 - kernel debugging support WDK boot options
 - Debugging Mode WDK boot options
 - skipping boot options
-ms.author: windowsdriverdev
 ms.date: 07/02/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

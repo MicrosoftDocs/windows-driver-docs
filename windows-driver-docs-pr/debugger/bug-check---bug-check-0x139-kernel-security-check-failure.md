@@ -5,9 +5,6 @@ ms.assetid: C0E5C625-13DB-4B3A-8080-69CEB963A299
 keywords: ["Bug Check 0x139 KERNEL_SECURITY_CHECK_FAILURE", "Bug Check 0x139 KERNEL_SECURITY_CHECK_FAILURE"]
 ms.author: domars
 ms.date: 06/27/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

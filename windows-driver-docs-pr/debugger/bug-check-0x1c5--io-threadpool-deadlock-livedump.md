@@ -5,9 +5,6 @@ ms.assetid: CBAB931F-E2A9-4843-9565-DC1CA3B557E6
 keywords: ["Bug Check 0x1C5 IO_THREADPOOL_DEADLOCK_LIVEDUMP", "IO_THREADPOOL_DEADLOCK_LIVEDUMP"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

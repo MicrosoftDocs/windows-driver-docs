@@ -5,9 +5,6 @@ ms.assetid: 521fa305-8073-4d94-bc28-fdb35cbc2acd
 keywords: ["amli set Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

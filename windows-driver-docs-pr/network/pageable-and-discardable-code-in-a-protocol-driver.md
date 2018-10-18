@@ -6,11 +6,7 @@ keywords:
 - protocol drivers WDK networking , pageable and discardable code
 - NDIS protocol drivers WDK , pageable and discardable code
 - pageable and discardable code WDK NDIS protocol
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

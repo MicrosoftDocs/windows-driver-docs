@@ -8,11 +8,7 @@ keywords:
 - child devices WDK video present network
 - display adapter child devices WDK video present network
 - enumerating child devices WDK video present network
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

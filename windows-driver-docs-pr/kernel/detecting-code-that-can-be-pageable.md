@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Detecting Code That Can Be Pageable
 ms.assetid: 5e8a021d-09c3-4e63-b5a8-7559c384ae3d
 keywords: ["pageable drivers WDK kernel , code detection", "detecting pageable code"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Unload Routine Environment
 ms.assetid: 4acf66f1-7b97-494e-9f84-14292e971542
 keywords: ["Unload routines WDK kernel , environment"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

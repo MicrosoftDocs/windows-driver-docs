@@ -9,11 +9,7 @@ keywords:
 - message-signaled interrupts WDK networking , porting
 - MSIs WDK networking , porting operations
 - porting miniport driv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

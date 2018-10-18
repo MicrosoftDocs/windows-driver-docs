@@ -5,9 +5,6 @@ ms.assetid: c1f5322e-847a-424f-b117-1714b8572a4f
 keywords: ["Bug Check 0x104 AGP_INVALID_ACCESS", "AGP_INVALID_ACCESS"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

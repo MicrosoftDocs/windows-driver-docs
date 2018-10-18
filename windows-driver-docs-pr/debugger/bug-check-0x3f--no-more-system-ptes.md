@@ -5,9 +5,6 @@ ms.assetid: b8164ec3-87c3-4629-ab70-6addbf368b76
 keywords: ["Bug Check 0x3F NO_MORE_SYSTEM_PTES", "NO_MORE_SYSTEM_PTES"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

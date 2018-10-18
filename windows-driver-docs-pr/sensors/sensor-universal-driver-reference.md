@@ -3,11 +3,7 @@ title: Sensor Universal Driver Reference
 author: windows-driver-content
 description: Sensor Universal Driver Reference
 ms.assetid: D92223D2-AA97-45B8-831C-DD20EB965567
-ms.author: windowsdriverdev
 ms.date: 02/16/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

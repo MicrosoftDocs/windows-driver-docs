@@ -5,9 +5,6 @@ ms.assetid: c164a446-1f6c-4d37-8ad6-aa254d3268bc
 keywords: ["debugging information windows, navigating"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

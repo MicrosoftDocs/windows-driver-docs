@@ -5,9 +5,6 @@ ms.assetid: aba75d2d-4077-415f-b847-023e47239e2e
 keywords: ["Activating a Debugging Server Windows Debugging"]
 ms.author: domars
 ms.date: 03/02/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

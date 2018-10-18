@@ -5,9 +5,6 @@ ms.assetid: 4D442355-526A-4F39-8341-614BB7A41A3E
 keywords: ["network debugging visual studio", "ethernet debugging visual studio", "debugging over ethernet visual studio"]
 ms.author: domars
 ms.date: 05/16/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

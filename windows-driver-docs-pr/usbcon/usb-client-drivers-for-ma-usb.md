@@ -2,11 +2,7 @@
 Description: 'USB device driver that sends MA-USB packets.'
 title: USB client drivers for Media-Agnostic (MA-USB)
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 09/26/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

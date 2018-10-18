@@ -5,9 +5,6 @@ ms.assetid: 0100684b-cde6-4f15-93da-78d200fa2f80
 keywords: ["Bug Check 0xEC SESSION_HAS_VALID_SPECIAL_POOL_ON_EXIT", "SESSION_HAS_VALID_SPECIAL_POOL_ON_EXIT"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

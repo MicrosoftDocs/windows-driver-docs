@@ -2,11 +2,7 @@
 title: Using the Enterprise WDK 10
 description: Describes how to set up a command-line based environment for organization use of the WDK.
 author: Dansimp
-ms.author: windowsdriverdev
 ms.date: 08/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

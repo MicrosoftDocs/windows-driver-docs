@@ -10,11 +10,7 @@ keywords:
 - device stacks WDK file system
 - device trees WDK file system
 - PnP device trees WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

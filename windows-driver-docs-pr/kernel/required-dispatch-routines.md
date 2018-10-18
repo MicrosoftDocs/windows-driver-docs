@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Required Dispatch Routines
 ms.assetid: 9b760ac7-7f31-47ad-bf84-7d79c6b24ebd
 keywords: ["dispatch routines WDK kernel , required", "required dispatch routines WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

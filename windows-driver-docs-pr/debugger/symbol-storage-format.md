@@ -5,9 +5,6 @@ ms.assetid: 4aeaa644-9da4-4567-9dc7-86db38b7e93c
 keywords: ["SymStore, storage format"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

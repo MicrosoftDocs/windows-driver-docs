@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Using Wmimofck.exe
 ms.assetid: cbf735c4-1c0d-4ff3-8a5c-b9d1de84bca4
 keywords: ["WMI WDK kernel , Wmimofck.exe utility", "Wmimofck.exe utility"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

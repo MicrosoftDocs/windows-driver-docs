@@ -3,11 +3,7 @@ title: OID_GEN_RECEIVE_SCALE_PARAMETERS
 author: windows-driver-content
 description: As a query, NDIS and overlying drivers can use the OID_GEN_RECEIVE_SCALE_PARAMETERS OID to query the current receive side scaling (RSS) parameters of a NIC.
 ms.assetid: a54190f7-0d2e-4f85-84c2-05fc9ec4994a
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_RECEIVE_SCALE_PARAMETERS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

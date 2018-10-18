@@ -5,9 +5,6 @@ ms.assetid: 5182ed99-259e-4e58-8d69-38a702bd8113
 keywords: ["$ (Alias Interpreter) Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

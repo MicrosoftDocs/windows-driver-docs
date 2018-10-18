@@ -11,11 +11,7 @@ keywords:
 - hardware resource assignments WDK audio
 - start up resource assignments WDK audio
 - start-device routines WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

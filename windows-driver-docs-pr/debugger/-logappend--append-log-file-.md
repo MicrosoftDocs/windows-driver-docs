@@ -5,9 +5,6 @@ ms.assetid: e1c58c34-1fc5-4ec3-bd37-6c7816735aec
 keywords: ["Append Log File (.logappend) command", "log file, Append Log File (.logappend) command", ".logappend (Append Log File) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

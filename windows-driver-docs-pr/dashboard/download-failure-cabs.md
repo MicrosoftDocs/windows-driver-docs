@@ -4,9 +4,6 @@ description: Use the report delivered as part of the Get Report Data API to retr
 author: balapv
 ms.author: balapv
 ms.date: 08/20/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

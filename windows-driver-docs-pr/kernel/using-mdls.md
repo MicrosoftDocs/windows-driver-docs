@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Using MDLs
 ms.assetid: 60652eb8-cfdb-4591-88ff-cf9dc4b9743d
 keywords: ["memory management WDK kernel ,"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

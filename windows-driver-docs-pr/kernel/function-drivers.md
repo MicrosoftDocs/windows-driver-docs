@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Function Drivers
 ms.assetid: a6ac329b-ffb0-4bd3-9d54-195fa025d532
 keywords: ["function drivers WDK WDM", "raw mode WDK WDM", "WDM function drivers WDK"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

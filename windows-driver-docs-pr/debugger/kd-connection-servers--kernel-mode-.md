@@ -5,9 +5,6 @@ ms.assetid: fe0c9110-8fbf-46ae-ae1d-75ab5231aef3
 keywords: ["remote debugging through a KD connection server", "KD connection server", "KD connection server, overview", "smart client (kernel mode)", "KdSrv", "KdSrv, overview"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

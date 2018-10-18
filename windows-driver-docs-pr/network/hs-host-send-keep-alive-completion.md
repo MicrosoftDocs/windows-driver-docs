@@ -5,11 +5,7 @@ description: The HS_HOST_SEND_KEEP_ALIVE_COMPLETION function indicates the succe
 ms.assetid: 19fc1210-2c3a-46ca-96fb-dccafa9e9eef
 keywords: 
 - typedef DWORD (WINAPI HS_HOST_SEND_KEEP_ALIVE_COMPLETION) function Network Drivers Starting with Windows Vista
-ms.author: windowsdriverdev
 ms.date: 07/31/2017 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: d85169d8-a226-4bc4-a4f3-6eb88d1fad2c
 keywords: ["Debugger Engine, connecting to targets", "targets", "targets, connecting to"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

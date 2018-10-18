@@ -5,9 +5,6 @@ ms.assetid: bae1a20c-7e85-4878-af4c-9840b64aec7b
 keywords: ["scsikd.help Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

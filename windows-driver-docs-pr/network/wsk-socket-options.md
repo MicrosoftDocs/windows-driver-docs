@@ -3,11 +3,7 @@ title: WSK Socket Options
 author: windows-driver-content
 description: WSK Socket Options
 ms.assetid: 640681a3-ea68-44c5-be2b-a3bc21bfdb7c
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - WSK Socket Options Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Errors in Referencing User-Space Addresses
 ms.assetid: 87944805-e4ba-431e-b673-b0125dc9ec24
 keywords: ["reliability WDK kernel , user-space addresses", "user-space address referencing WDK kernel", "referencing user-space address", "embedded pointers WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: b3e00741-9d39-4078-a758-e71d224a62b1
 keywords: x64 processor, AMD64 processor, x86-64 processor", AMD x86-64 processor
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

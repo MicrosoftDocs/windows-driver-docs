@@ -2,11 +2,7 @@
 title: Barcode scanner events
 description: Describes the events that are passed from the device driver to the Point of Service (POS) API layer by using ReadFile.
 ms.assetid: 'f0a7a525-8fea-4bce-a817-25c69cd47ddd'
-ms.author: windowsdriverdev
 ms.date: 9/7/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -2,11 +2,7 @@
 title: MB eSIM MBIM ready state guidance
 description: MB eSIM MBIM ready state guidance
 ms.assetid: E7EB5E6D-1858-4B94-AF91-05333CC93D8B
-ms.author: windowsdriverdev
 ms.date: 08/10/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

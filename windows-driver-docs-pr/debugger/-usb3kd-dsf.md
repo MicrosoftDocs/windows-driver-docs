@@ -5,9 +5,6 @@ ms.assetid: 1A1A7B9A-B05C-4AE8-8C26-A340DFC9613E
 keywords: ["usb3kd.dsf Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

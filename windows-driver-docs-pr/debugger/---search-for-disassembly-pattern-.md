@@ -5,9 +5,6 @@ ms.assetid: 834dd432-94b8-4bf6-9318-09a118eab5ab
 keywords: ["(Search for Disassembly Pattern) Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

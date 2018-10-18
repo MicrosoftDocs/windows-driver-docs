@@ -4,9 +4,6 @@ description: The General Purpose Input/Output (GPIO) extension commands display 
 ms.assetid: 1703C402-D770-4D3F-AB70-F2D30712A5D9
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

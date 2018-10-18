@@ -5,9 +5,6 @@ ms.assetid: 8ec98fa5-4939-49cb-8678-e412b9cbe7e3
 keywords: ["ate Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

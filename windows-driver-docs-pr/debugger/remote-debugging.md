@@ -5,9 +5,6 @@ ms.assetid: fa87b55c-c339-4b8c-8614-c7355d203a6e
 keywords: remote debugging
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

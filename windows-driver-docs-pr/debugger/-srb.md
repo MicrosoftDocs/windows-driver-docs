@@ -5,9 +5,6 @@ ms.assetid: 38f40a78-c991-465e-9203-a8171d1a86f6
 keywords: ["srb Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -5,9 +5,6 @@ ms.assetid: 877A6361-0DB9-4089-AF85-BABFBED8C440
 keywords: ["usbkd.usbhcdlist Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -5,9 +5,6 @@ ms.assetid: 0008c6eb-3add-4169-b29a-6fe4d77c5c9e
 keywords: ["Bug Check 0xBF MUTEX_ALREADY_OWNED", "MUTEX_ALREADY_OWNED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -5,9 +5,6 @@ ms.assetid: 7f75b5bd-cc25-4f09-9d60-55b86969d16b
 keywords: ["Load image using large pages if possible (global flag)"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

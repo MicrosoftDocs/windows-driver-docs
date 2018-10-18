@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Levels of Support for PnP
 ms.assetid: 33e0b4c6-858c-4822-ba49-38eb87a5923d
 keywords: ["PnP WDK kernel , device support", "Plug and Play WDK kernel , device support", "full PnP WDK kernel", "partial PnP WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

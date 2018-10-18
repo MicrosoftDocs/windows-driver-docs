@@ -5,9 +5,6 @@ ms.assetid: cf78aecb-80d3-4637-a2b5-a2511999c5e3
 keywords: ["Bug Check 0x4E PFN_LIST_CORRUPT", "PFN_LIST_CORRUPT"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

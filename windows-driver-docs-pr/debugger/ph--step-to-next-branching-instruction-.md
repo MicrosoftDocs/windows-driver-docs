@@ -5,9 +5,6 @@ ms.assetid: ba4699d3-9872-4deb-96c7-e8b54c1d8ec6
 keywords: ["ph (Step to Next Branching Instruction) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

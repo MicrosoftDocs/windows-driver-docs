@@ -5,9 +5,6 @@ ms.assetid: 7D55F7CE-5DDB-4C80-8C27-F619F2FB7F15
 keywords: ["ndiskd.netadapter Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

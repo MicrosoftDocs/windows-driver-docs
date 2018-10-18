@@ -5,9 +5,6 @@ ms.assetid: 855efeeb-9182-43f5-b617-e056a6ad4bb7
 keywords: ["Window Close All Source Windows"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

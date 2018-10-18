@@ -5,9 +5,6 @@ ms.assetid: ac742239-ed6b-4813-80d6-7b8eb84a0cb4
 keywords: ["symbols, debugging without symbols"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

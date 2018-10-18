@@ -4,9 +4,6 @@ description: In KD, you can view and edit registers by entering the r (Registers
 ms.assetid: 42306338-6E11-4724-B62F-D1E0BDBA7F8D
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

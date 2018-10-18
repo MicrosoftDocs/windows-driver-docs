@@ -5,9 +5,6 @@ ms.assetid: a473dd58-1571-4969-b8b7-f7a71128d824
 keywords: ["devhandles Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!devhandles** extension displays the open handles for the specified device.
 
-```
+```dbgcmd
 !devhandles Address 
 ```
 
@@ -62,7 +59,7 @@ The address of a device object can be obtained using the [**!drvobj**](-drvobj.m
 
 Here is a truncated example:
 
-```
+```dbgcmd
 lkd> !devhandles 0x841153d8
 
 Checking handle table for process 0x840d3940

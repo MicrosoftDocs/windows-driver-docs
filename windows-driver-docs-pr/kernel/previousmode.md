@@ -4,11 +4,7 @@ author: windows-driver-content
 description: PreviousMode
 ms.assetid: 1251cca9-604c-48c0-a136-21dd1fe4fa72
 keywords: ["PreviousMode", "RequestorMode"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

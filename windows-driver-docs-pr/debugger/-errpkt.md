@@ -5,9 +5,6 @@ ms.assetid: cf4b1dfa-3b15-45d4-b5e2-1da7cdbca350
 keywords: ["errpkt Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!errpkt** extension displays the contents of a Windows Hardware Error Architecture (WHEA) hardware error packet.
 
-```
+```dbgcmd
 !errpkt Address 
 ```
 
@@ -72,7 +69,7 @@ Remarks
 
 The following example shows the output of the **!errpkt** extension:
 
-```
+```dbgcmd
 3: kd> !errpkt fffffa8007cf44da 
    WHEA Error Packet Info Section (@ fffffa8007cf44da)
    Flags            : 0x00000000

@@ -4,11 +4,7 @@ description: Device and adapter initialization
 ms.assetid: EBBEF0FB-6CDB-4899-AAE9-71812EE20AFB
 keywords:
 - NetAdapterCx device initialization, NetCx device initialization, NetAdapterCx adapter initialization, NetCx adapter initialization
-ms.author: windowsdriverdev
 ms.date: 08/02/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

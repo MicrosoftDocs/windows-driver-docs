@@ -10,11 +10,7 @@ keywords:
 - printer descriptions WDK Unidrv
 - GPD files WDK Unidrv , Unidrv capabilities
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

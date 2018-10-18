@@ -2,10 +2,8 @@
 title: LSA and UEFI file signing
 description: LSA plug-in and UEFI firmware signing
 ms.author: eliotgra
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # File signing LSA plugins and UEFI firmware

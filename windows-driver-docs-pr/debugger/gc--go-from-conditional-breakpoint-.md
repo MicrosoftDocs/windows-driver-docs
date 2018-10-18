@@ -5,9 +5,6 @@ ms.assetid: 7850269a-3fc7-48b6-a369-bb020a5e11c3
 keywords: ["gc (Go from Conditional Breakpoint) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

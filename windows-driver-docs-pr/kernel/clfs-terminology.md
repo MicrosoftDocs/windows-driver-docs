@@ -5,11 +5,7 @@ description: The following list gives definitions of key terms used in the Commo
 Robots: noindex, nofollow
 ms.assetid: d8511c5a-0181-4c54-acdc-e8a5892bb620
 keywords: ["Common Log File System WDK kernel , terminology", "CLFS WDK kernel , terminology"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

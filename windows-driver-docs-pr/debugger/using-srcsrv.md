@@ -5,9 +5,6 @@ ms.assetid: 2696e5e9-343f-49a2-bdab-23a54f8c9e5c
 keywords: ["source servers, SrcSrv (srcsrv.dll)", "SrcSrv, overview"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: WMI Class Examples
 ms.assetid: 5b0ef39a-32bd-4f62-ad8f-fdab74409294
 keywords: ["classes WDK WMI", "WMI WDK kernel , classes"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

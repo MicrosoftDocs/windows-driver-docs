@@ -7,11 +7,7 @@ keywords:
 - Static Driver Verifier Report WDK , Trace Tree pane
 - Trace Tree pane WDK Static Driver Verifier
 - tracing WDK Static Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

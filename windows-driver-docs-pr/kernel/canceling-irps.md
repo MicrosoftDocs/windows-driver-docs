@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Canceling IRPs
 ms.assetid: da199435-f6c3-44f4-b1ed-0280f39ee452
 keywords: ["IRPs WDK kernel , canceling", "canceling IRPs", "Cancel routines", "user-canceled I/O requests WDK kernel", "completing IRPs WDK kernel , canceling IRPs", "unprocessed IRP cancellations WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

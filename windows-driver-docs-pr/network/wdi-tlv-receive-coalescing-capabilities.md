@@ -3,11 +3,7 @@ title: WDI_TLV_RECEIVE_COALESCING_CAPABILITIES
 author: windows-driver-content
 description: WDI_TLV_RECEIVE_COALESCING_CAPABILITIES is a TLV that contains hardware assisted receive filter capabilities.
 ms.assetid: 87BC1F55-90C6-4B22-9E8E-A54FF42515F3
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - WDI_TLV_RECEIVE_COALESCING_CAPABILITIES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

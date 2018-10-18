@@ -4,11 +4,7 @@ description: Querying a Connection-Oriented Miniport Driver
 ms.assetid: 9e9926f6-cf90-48af-885f-59725721948d
 keywords:
 - connection-oriented drivers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

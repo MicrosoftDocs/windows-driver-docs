@@ -5,9 +5,6 @@ ms.assetid: 7AC3DBBF-1D62-492E-B46E-C193579DE1E3
 keywords: ["usb3kd.ucx_device Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

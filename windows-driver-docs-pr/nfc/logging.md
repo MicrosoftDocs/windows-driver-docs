@@ -9,11 +9,7 @@ keywords:
 - near field proximity
 - NFP
 description: NFC logging for functions/methods, NCI packets/protocols, and other verbose logging.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

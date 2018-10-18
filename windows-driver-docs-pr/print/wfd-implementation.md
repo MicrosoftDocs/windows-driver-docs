@@ -3,11 +3,7 @@ title: Wi-Fi Direct Printing implementation
 author: windows-driver-content
 description: Provides information on device requirements for a Wi-Fi Direct Printing implementation.
 ms.assetid: 03266F8F-4C91-49E7-9CAF-2D08AF5E3E18
-ms.author: windowsdriverdev
 ms.date: 01/30/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: 528c997c-007c-4046-92cc-169c7720b3fe
 keywords: ["wmitrace.searchpath Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

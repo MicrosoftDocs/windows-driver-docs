@@ -4,11 +4,7 @@ description: NetAdapterCx offloads
 ms.assetid: 85A819E2-6352-4DE9-9689-3DCEB9B0AAD8
 keywords:
 - WDF Network Adapter Class Extension Offloads, NetAdapterCx hardware offloads, NetAdapterCx Offloads, NetAdapter Offloads
-ms.author: windowsdriverdev
 ms.date: 07/31/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # NetAdapterCx hardware offloads

@@ -3,11 +3,7 @@ title: Maintenance
 author: windows-driver-content
 description: Maintenance
 ms.assetid: 228759ed-f6de-4680-adf2-ca88b83ff4a0
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

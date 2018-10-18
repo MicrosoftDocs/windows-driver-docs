@@ -4,11 +4,7 @@ description: Overview of the System Fundamentals tests and associated utilities 
 keywords:
 - Sysfund tests
 - data-driven tests
-ms.author: windowsdriverdev
 ms.date: 06/28/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

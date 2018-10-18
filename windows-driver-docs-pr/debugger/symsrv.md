@@ -5,9 +5,6 @@ ms.assetid: 43bcb5b5-cf00-4fc9-99cc-fb5c122fbde1
 keywords: ["SymSrv, using", "symbol servers, SymSrv (symsrv.dll)"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

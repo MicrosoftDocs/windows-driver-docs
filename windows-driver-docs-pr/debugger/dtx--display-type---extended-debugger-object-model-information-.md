@@ -5,9 +5,6 @@ ms.assetid: 758D752E-65A0-4F1D-BB56-06E4ECEC6D48
 keywords: ["dtx (Display Type - Extended Debugger Object Model Information) Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

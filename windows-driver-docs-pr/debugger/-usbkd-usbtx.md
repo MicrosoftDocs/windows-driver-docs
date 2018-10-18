@@ -5,9 +5,6 @@ ms.assetid: 603AD207-69D5-4DED-80B5-ADA21E191D47
 keywords: ["usbkd.usbtx Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

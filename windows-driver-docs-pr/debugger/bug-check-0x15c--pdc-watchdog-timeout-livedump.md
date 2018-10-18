@@ -5,9 +5,6 @@ ms.assetid: 4FBB884D-99B5-4564-95D5-396323651C5A
 keywords: ["Bug Check 0x15C PDC_WATCHDOG_TIMEOUT_LIVEDUMP", "PDC_WATCHDOG_TIMEOUT_LIVEDUMP"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

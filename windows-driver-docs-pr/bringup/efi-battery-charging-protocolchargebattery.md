@@ -3,11 +3,7 @@ title: EFI_BATTERY_CHARGING_PROTOCOL.ChargeBattery
 author: windows-driver-content
 description: EFI_BATTERY_CHARGING_PROTOCOL.ChargeBattery
 ms.assetid: 362b812f-b64b-4b6c-84a6-61c09a60f8a3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

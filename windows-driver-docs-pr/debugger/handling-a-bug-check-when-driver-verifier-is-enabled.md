@@ -5,9 +5,6 @@ ms.assetid: 4226B62B-0AA5-4D04-A32D-7DD22FD694E3
 keywords: ["Driver Verifier", "Verifier"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

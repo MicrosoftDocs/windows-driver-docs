@@ -5,9 +5,6 @@ ms.assetid: 93c46047-ab04-41ca-ad13-89741735c055
 keywords: ["breakpoints", "breakpoints, overview"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

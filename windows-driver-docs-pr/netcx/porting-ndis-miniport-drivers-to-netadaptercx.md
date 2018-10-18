@@ -4,11 +4,7 @@ description: Porting NDIS miniport drivers to NetAdapterCx
 ms.assetid: F5C798C6-B746-43CB-BF63-DBA7DD0975ED
 keywords:
 - Porting miniport drivers to the Network Adapter Class Extension, porting to the Network Adapter WDF Class Extension, porting NDIS 6.x to NetAdapterCx
-ms.author: windowsdriverdev
 ms.date: 06/05/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

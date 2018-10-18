@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Providing IoTimer Context Information
 ms.assetid: a92a7c3d-1602-430b-8ae1-c79bfc9ac7f9
 keywords: ["IoTimer", "IoInitializeTimer"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

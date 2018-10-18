@@ -4,9 +4,6 @@ description: There are two user-mode debuggers available in the Microsoft Visual
 ms.assetid: D36220DF-1ACB-4D8B-BC4C-1A6FCB54CA15
 ms.author: domars
 ms.date: 05/11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

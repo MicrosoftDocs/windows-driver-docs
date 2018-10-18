@@ -4,6 +4,7 @@ author: windows-driver-content
 description: Improving System Startup Performance
 ms.assetid: 9fce451c-73b3-4e3b-875d-319aaa8765ff
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Improving System Startup Performance

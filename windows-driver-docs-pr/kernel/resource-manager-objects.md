@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Resource Manager Objects
 ms.assetid: b44f2035-ee9f-453b-b12d-89ca36a8b280
 keywords: ["resource managers WDK KTM , objects", "resource managers WDK KTM", "resource managers WDK KTM , routines", "Kernel Transaction Manager WDK , resource managers", "KTM WDK , resource managers", "resource manager objects WDK KTM"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

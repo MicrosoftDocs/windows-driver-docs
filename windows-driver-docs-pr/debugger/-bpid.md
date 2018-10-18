@@ -5,9 +5,6 @@ ms.assetid: 47091651-3b39-4e3d-86cf-a8e95779a025
 keywords: ["bpid Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

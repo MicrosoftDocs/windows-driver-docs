@@ -5,9 +5,6 @@ ms.assetid: bcff336e-092a-4fa0-86b1-b08d69f9230f
 keywords: ["Edit Select All", "text, Edit Select All"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

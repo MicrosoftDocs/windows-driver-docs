@@ -5,9 +5,6 @@ ms.assetid: a1328e9a-2910-4446-938d-1b2d1434ff10
 keywords: DbgEng API, dbgeng.h header file, dbgeng.h
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

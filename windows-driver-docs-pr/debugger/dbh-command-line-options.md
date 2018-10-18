@@ -5,9 +5,6 @@ ms.assetid: fd333c2d-1f07-4a47-8653-e10cf58417a5
 keywords: ["DBH Command-Line Options Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

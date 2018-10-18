@@ -4,11 +4,7 @@ description: CM_PROB_NORMAL_CONFLICT
 ms.assetid: 18c5ca02-0a4c-4a0e-8b33-5c685a73d4c8
 keywords:
 - CM_PROB_NORMAL_CONFLICT
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

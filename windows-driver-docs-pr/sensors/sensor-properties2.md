@@ -3,11 +3,7 @@ title: Sensor properties
 author: windows-driver-content
 description: Starting with Windows 10, the new sensor driver model supports the use of properties that characterize the driver that is installed on the Windows device.
 ms.assetid: 1BF1568D-A889-4158-9C6D-160D9B06F0DE
-ms.author: windowsdriverdev
 ms.date: 07/20/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

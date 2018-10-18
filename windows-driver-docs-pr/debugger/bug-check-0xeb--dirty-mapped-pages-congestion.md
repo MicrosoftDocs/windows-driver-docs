@@ -5,9 +5,6 @@ ms.assetid: 7a73dc74-fe40-4c0c-9c33-b0af3709bf43
 keywords: ["Bug Check 0xEB DIRTY_MAPPED_PAGES_CONGESTION", "DIRTY_MAPPED_PAGES_CONGESTION"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

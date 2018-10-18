@@ -5,9 +5,6 @@ ms.assetid: 8dd0703a-ddcd-461f-b164-1c079a93bb3a
 keywords: ["setup, making a USB 2.0 cable connection", "cable connection, USB 2.0 debug cable", "USB 2.0 debugging connection", "USB 2.0 debugging connection, setting up the hardware", "USB 2.0 debugging connection, software requirements"]
 ms.author: domars
 ms.date: 07/11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

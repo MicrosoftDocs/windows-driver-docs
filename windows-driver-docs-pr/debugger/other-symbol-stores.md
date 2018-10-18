@@ -5,9 +5,6 @@ ms.assetid: 65bb4291-c56a-4837-ac45-6751ebdbd579
 keywords: ["symbol stores, writing your own symbol store"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

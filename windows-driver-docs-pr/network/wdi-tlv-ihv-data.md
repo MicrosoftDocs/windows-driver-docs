@@ -3,11 +3,7 @@ title: WDI_TLV_IHV_DATA
 author: windows-driver-content
 description: WDI_TLV_IHV_DATA is a TLV that contains IHV-specific information that is used by the IHV extensibility module.
 ms.assetid: 50D80D9E-C3FF-41E5-A054-A5A28ED499FD
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - WDI_TLV_IHV_DATA Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

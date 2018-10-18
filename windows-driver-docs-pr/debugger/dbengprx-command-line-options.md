@@ -5,9 +5,6 @@ ms.assetid: 3c0675a4-93f0-4aaa-9f33-9a45c48c1ff4
 keywords: ["DbEngPrx Command-Line Options Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

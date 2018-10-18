@@ -2,11 +2,7 @@
 title: XpsConverter
 description: XPS Converter (XpsConverter.exe) is a command-line tool for converting XML Paper Specification (XPS) documents from Microsoft XPS (MSXPS) to standardized OpenXPS.
 ms.assetid: A51F818E-AECD-4EBD-99AC-F3BD026C19D6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

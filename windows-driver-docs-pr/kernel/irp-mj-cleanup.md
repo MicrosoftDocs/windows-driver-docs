@@ -2,11 +2,7 @@
 title: IRP_MJ_CLEANUP
 author: windows-driver-content
 description: Drivers that maintain process-specific context information must handle cleanup requests in DispatchCleanup routines.
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: 097f5f1d-3e88-4db0-bb79-db2267bdaf38
 keywords:
  - IRP_MJ_CLEANUP Kernel-Mode Driver Architecture

@@ -5,9 +5,6 @@ ms.assetid: d19dc242-1043-4e61-9fcb-eadac0ab63c8
 keywords: ["RPC debugging, identifying the caller"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

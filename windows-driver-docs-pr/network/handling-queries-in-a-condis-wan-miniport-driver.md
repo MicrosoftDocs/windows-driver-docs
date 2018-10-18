@@ -8,11 +8,7 @@ keywords:
 - OID_WAN_CO_GET_LINK_INFO
 - OID_WAN_CO_GET_STATS_INFO
 - queries WDK CoNDIS WAN
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

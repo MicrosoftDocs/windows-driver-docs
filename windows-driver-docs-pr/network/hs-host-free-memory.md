@@ -5,11 +5,7 @@ description: The HS_HOST_FREE_MEMORY function frees any memory that was allocate
 ms.assetid: 2090ecf8-e1d5-4410-acbf-1b97f418e185
 keywords: 
 - typedef VOID (WINAPI HS_HOST_FREE_MEMORY) function Network Drivers Starting with Windows Vista
-ms.author: windowsdriverdev
 ms.date: 07/31/2017 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

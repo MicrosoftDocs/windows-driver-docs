@@ -5,9 +5,6 @@ ms.assetid: 0fbf47fc-1216-4eaa-b4b9-96e206194b54
 keywords: ["remote debugging, symbols on third machine"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

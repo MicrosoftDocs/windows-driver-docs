@@ -5,9 +5,6 @@ ms.assetid: 3a9f760f-f511-412f-aca0-3c415b3e5dc2
 keywords: ["AMLI Debugger, debugging examples"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

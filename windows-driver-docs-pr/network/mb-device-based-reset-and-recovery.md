@@ -5,11 +5,7 @@ author: duncanmacmichael # Original committer did not have GitHub account so add
 ms.assetid: CA75B63B-53EE-41BF-B2B6-E008F5598399
 keywords:
 - MB Device-based Reset and Recovery, Mobile Broadband Device-based Reset and Recovery, Mobile Broadband miniport driver Device-based Reset and Recovery
-ms.author: windowsdriverdev
 ms.date: 08/09/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

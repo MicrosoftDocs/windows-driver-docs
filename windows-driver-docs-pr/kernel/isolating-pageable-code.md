@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Isolating Pageable Code
 ms.assetid: 86189154-606a-4df8-b3a9-040bbaffaa2f
 keywords: ["pageable drivers WDK kernel , isolating code", "isolating pageable code", "spin locks WDK memory"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

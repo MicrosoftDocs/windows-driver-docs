@@ -8,11 +8,7 @@ keywords:
 - COPP WDK DirectX VA , signal protection
 - protected video WDK COPP , signal protection
 - signal protection WDK COPP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

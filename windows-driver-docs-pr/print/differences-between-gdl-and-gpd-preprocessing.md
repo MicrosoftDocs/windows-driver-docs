@@ -10,11 +10,7 @@ keywords:
 - preprocessor directives WDK GDL , vs. GDL preprocessing
 - directives WDK GDL , source file preprocessor directives
 - source files WDK GDL , preprocessor directives
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

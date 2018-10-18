@@ -2,11 +2,7 @@
 title: Introductions to NDIS 6.0 and later
 description: This section introduces each version of NDIS 6.X, starting with NDIS 6.0
 ms.assetid: 4DEB69E1-8843-4E42-A01B-9932A42226BA
-ms.author: windowsdriverdev
 ms.date: 06/01/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -2,11 +2,7 @@
 title: Jack Description Property
 description: Jack Description Property
 ms.assetid: 6398efc9-4435-4234-bd72-1ed0f96c9f9f
-ms.author: windowsdriverdev
 ms.date: 05/08/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

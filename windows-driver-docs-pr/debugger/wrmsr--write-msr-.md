@@ -5,9 +5,6 @@ ms.assetid: fe90b984-e2d6-4af7-b708-56fbcd2bbadd
 keywords: ["wrmsr (Write MSR) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

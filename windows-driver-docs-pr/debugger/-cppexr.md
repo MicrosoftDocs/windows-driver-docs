@@ -5,9 +5,6 @@ ms.assetid: 568c98e9-31d9-4c49-9b7a-bc8eccfed24a
 keywords: ["exception records", "cppexr Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!cppexr** extension displays the contents of a C++ exception record.
 
-```
+```dbgsyntax
     !cppexr Address 
 ```
 

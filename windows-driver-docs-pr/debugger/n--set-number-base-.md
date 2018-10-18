@@ -5,9 +5,6 @@ ms.assetid: a2af7cf4-b0f1-4ceb-b9c0-7517a9517c3e
 keywords: ["n (Set Number Base) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

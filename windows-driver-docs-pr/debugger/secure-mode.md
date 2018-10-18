@@ -5,9 +5,6 @@ ms.assetid: 6f233eb2-b2e6-478f-8127-4c6fbc46d613
 keywords: ["Secure Mode"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

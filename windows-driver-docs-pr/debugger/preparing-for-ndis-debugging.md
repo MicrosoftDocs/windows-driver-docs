@@ -5,9 +5,6 @@ ms.assetid: 9a23cc3a-5940-46c3-928f-7fac46dfaba2
 keywords: ["NDIS debugging, setup"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

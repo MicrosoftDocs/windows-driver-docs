@@ -3,11 +3,7 @@ title: PropVariant helpers
 author: windows-driver-content
 description: The PropVariant helper functions are used by the v2 sensor drivers for manipulating the PROPVARIANT structures associated with the sensors.
 ms.assetid: 5A5A008A-399F-4464-ADD0-7F2DDACB6D4B
-ms.author: windowsdriverdev
 ms.date: 01/04/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

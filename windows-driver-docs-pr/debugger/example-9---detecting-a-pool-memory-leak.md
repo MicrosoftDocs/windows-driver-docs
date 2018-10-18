@@ -5,9 +5,6 @@ ms.assetid: 3f634593-a024-46d1-9f3d-9d39b28bab03
 keywords: ["PoolMon, PoolMon and GFlags"]
 ms.author: domars
 ms.date: 10/12/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

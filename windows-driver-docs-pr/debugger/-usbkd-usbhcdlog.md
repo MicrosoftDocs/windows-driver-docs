@@ -5,9 +5,6 @@ ms.assetid: 78FDC557-7791-422A-AB7B-5C9B6A1DF481
 keywords: ["usbkd.usbhcdlog Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

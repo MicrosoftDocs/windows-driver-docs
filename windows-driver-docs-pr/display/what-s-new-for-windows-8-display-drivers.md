@@ -5,11 +5,7 @@ description: Features new in Windows 8 for display drivers.
 keywords:
 - new for Windows 8 WDK display
 - WDDM 1.2, new for Windows 8 WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

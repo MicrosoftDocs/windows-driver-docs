@@ -5,9 +5,6 @@ ms.assetid: 7de0283e-82fe-4443-bb11-e6378d2bb533
 keywords: ["debugging techniques"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

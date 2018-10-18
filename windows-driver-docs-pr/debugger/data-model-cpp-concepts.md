@@ -3,9 +3,6 @@ title: Debugger Data Model C++ Concepts
 description: This topic describes concepts in Debugger C++ Data Model.
 ms.author: domars
 ms.date: 10/04/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Debugger Data Model C++ Concepts

@@ -5,9 +5,6 @@ ms.assetid: 624c9a30-a0d8-49bd-aba6-a46250022677
 keywords: ["bs (Update Breakpoint Command) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -5,9 +5,6 @@ ms.assetid: 50FD5526-3B0E-4585-BFFD-72ED363D007A
 keywords: ["hidkd.hidtree Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!hidkd.hidtree** command displays a list of all device nodes that have a HID function driver along with their child nodes. The child nodes have a physical device object (PDO) that was created by the parent node's HID function driver.
 
-```
+```dbgcmd
 !hidkd.hidtree
 ```
 

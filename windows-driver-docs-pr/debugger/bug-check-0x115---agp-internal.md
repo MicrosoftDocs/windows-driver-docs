@@ -5,9 +5,6 @@ ms.assetid: 5fc7e627-ca37-4fb3-a80b-24a9ef265cc5
 keywords: ["Bug Check 0x115 AGP_INTERNAL", "AGP_INTERNAL"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

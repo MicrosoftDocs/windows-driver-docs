@@ -5,9 +5,6 @@ ms.assetid: 4c6abce5-e2a3-4033-897b-ddecb00d4cdf
 keywords: ["Bug Check 0x6E SESSION2_INITIALIZATION_FAILED", "SESSION2_INITIALIZATION_FAILED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,11 +3,7 @@ title: WDI_TLV_DATAPATH_ATTRIBUTES
 author: windows-driver-content
 description: WDI_TLV_DATAPATH_ATTRIBUTES is a TLV that contains datapath attributes.
 ms.assetid: 3477054B-01CE-4D08-8A58-49FD8840B237
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - WDI_TLV_DATAPATH_ATTRIBUTES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

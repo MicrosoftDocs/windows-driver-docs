@@ -5,9 +5,6 @@ ms.assetid: 9720538e-0e47-4e7f-89d0-aeef353d00b8
 keywords: ["Bug Check 0x1D NO_SPIN_LOCK_AVAILABLE", "NO_SPIN_LOCK_AVAILABLE"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

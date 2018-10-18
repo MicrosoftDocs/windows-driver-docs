@@ -4,6 +4,7 @@ author: windows-driver-content
 description: This topic provides information about using platform extension plug-ins (PEPs) for ACPI services.
 ms.assetid: 80ED3B80-A1FF-4A41-BA88-EC1C832C4639
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Using PEPs for ACPI services

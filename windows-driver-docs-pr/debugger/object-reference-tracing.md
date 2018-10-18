@@ -5,9 +5,6 @@ ms.assetid: b5af0ab0-954b-4da1-a074-df88d2d039f8
 keywords: ["Object Reference Tracing", "Object Reference Tracing, overview", "GFlags, Object Reference Tracing"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

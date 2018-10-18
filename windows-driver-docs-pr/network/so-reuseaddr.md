@@ -3,11 +3,7 @@ title: SO_REUSEADDR
 author: windows-driver-content
 description: SO_REUSEADDR
 ms.assetid: 9436492b-0bfb-4234-bcf3-c44657a846d7
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -SO_REUSEADDR Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

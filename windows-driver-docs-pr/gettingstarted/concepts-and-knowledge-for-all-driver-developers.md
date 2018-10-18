@@ -4,11 +4,7 @@ description: In this section, concepts needed for all driver developers are desc
 ms.assetid: 639bba8d-d0de-401b-aeb4-c9ad43760e54
 keywords:
 - driver fundamentals
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

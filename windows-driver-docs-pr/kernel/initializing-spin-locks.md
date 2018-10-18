@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Initializing Spin Locks
 ms.assetid: 7ed27e43-4406-4e64-b2c9-42b8a883efdb
 keywords: ["initializing spin locks", "spin locks WDK kernel", "KeInitializeSpinLock", "executive spin locks WDK kernel", "interrupt spin locks WDK kernel", "queued spin locks WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
