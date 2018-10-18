@@ -4,6 +4,7 @@ author: windows-driver-content
 description: The kernel-mode safe integer functions are available as inline code that is contained in ntintsafe.h or in a library that you link your code to.
 ms.assetid: C6696C4E-952A-4162-B2BE-F262496FFBD2
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Importing Kernel-Mode Safe Integer Functions

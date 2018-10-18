@@ -13,6 +13,7 @@ api_location:
 api_type:
 - LibDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # SetBindingSupport function

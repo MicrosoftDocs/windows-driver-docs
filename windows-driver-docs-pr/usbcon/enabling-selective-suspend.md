@@ -3,6 +3,7 @@ Description: Selective suspend is disabled for upgrade versions of Microsoft Win
 title: Enabling Selective Suspend
 author: windows-driver-content
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Enabling Selective Suspend

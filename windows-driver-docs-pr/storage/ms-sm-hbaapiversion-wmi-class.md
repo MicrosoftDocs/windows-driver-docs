@@ -3,6 +3,7 @@ title: MS\_SM\_HbaApiVersion WMI Class
 description: MS\_SM\_HbaApiVersion WMI Class
 ms.assetid: 3d0591e5-ed95-4509-bd27-e122ac9186d2
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MS\_SM\_HbaApiVersion WMI Class

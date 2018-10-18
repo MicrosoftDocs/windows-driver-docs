@@ -3,6 +3,7 @@ title: MSiSCSI\_InitiatorInstanceStatistics WMI Class
 description: MSiSCSI\_InitiatorInstanceStatistics WMI Class
 ms.assetid: 5cb20302-e3f9-40fe-b501-7c23d284c120
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_InitiatorInstanceStatistics WMI Class

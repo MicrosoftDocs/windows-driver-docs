@@ -3,6 +3,7 @@ title: HBAFCPBindingEntry WMI Class
 description: HBAFCPBindingEntry WMI Class
 ms.assetid: 58993d0d-2044-430d-b8f6-5ea3b68d460b
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # HBAFCPBindingEntry WMI Class

@@ -4,6 +4,7 @@ author: windows-driver-content
 description: Initial support for application hives was introduced in Windows Vista.
 ms.assetid: A8D06E25-7CC6-476A-AB55-DAFE19954347
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Filtering Registry Operations on Application Hives

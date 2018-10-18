@@ -10,6 +10,7 @@ api_name:
 api_type:
 - COM
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # CreateVirtualPort method

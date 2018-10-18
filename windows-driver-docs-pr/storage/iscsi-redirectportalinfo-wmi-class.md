@@ -3,6 +3,7 @@ title: ISCSI\_RedirectPortalInfo WMI Class
 description: ISCSI\_RedirectPortalInfo WMI Class
 ms.assetid: 55730446-7c8b-4c9d-9473-f9bb6edd603e
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # ISCSI\_RedirectPortalInfo WMI Class

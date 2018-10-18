@@ -3,6 +3,7 @@ title: MSFC\_FibrePortHBAMethods WMI Class
 description: MSFC\_FibrePortHBAMethods WMI Class
 ms.assetid: 7c9f5c94-0c50-4a7a-b05e-41e93409d1e3
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSFC\_FibrePortHBAMethods WMI Class
