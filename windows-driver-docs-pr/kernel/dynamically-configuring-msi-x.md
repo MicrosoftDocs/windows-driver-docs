@@ -4,6 +4,7 @@ author: windows-driver-content
 description: Dynamically Configuring MSI-X
 ms.assetid: 53051239-e00f-41e8-b95d-9618693e696d
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Dynamically Configuring MSI-X

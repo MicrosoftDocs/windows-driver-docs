@@ -5,6 +5,7 @@ description: Extracting Value Data by Specifying Its Usage
 ms.assetid: 043cdb68-ead8-4ccf-ae00-1165fe2988f4
 keywords: ["HID reports WDK , extracting control data", "reports WDK HID , extracting control data", "extracting HID control data", "data usage extractions WDK HID"]
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Extracting Value Data by Specifying Its Usage

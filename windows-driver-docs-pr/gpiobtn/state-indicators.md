@@ -4,6 +4,7 @@ author: windows-driver-content
 description: This section describes the states of the mode and docking indicators.
 ms.assetid: F21DDC60-296E-4F3B-A063-431D87BF28A2
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # State indicators

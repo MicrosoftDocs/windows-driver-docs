@@ -5,6 +5,7 @@ description: Configuration Manager Callback
 ms.assetid: a8d33bed-3a06-4d61-be42-b9ae195b79f9
 keywords: ["callbacks WDK joysticks", "configuration manager callbacks WDK joysticks"]
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Configuration Manager Callback

@@ -4,6 +4,7 @@ author: windows-driver-content
 description: Sending HID Reports by User-Mode Applications
 ms.assetid: 265d7393-62be-41ad-8f87-efcfa462de1f
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Sending HID Reports by User-Mode Applications

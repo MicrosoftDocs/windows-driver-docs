@@ -4,6 +4,7 @@ author: windows-driver-content
 description: It is important to perform integration testing to ensure an optimal end-to-end user experience.
 ms.assetid: 61C1AC15-498B-432B-8D26-0303425114FF
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Integration testing

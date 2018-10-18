@@ -5,6 +5,7 @@ description: Saved Settings
 ms.assetid: fa3eb2c9-b0ae-4872-b0f4-13fdd3745265
 keywords: ["saved registry settings WDK joysticks"]
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Saved Settings
