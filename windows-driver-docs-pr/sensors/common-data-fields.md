@@ -3,7 +3,7 @@ title: Common data fields
 author: windows-driver-content
 description: This topic shows the common data fields that are included in all sensor-specific data fields.
 ms.assetid: 5F9F7987-E898-404A-96F9-F5CF88F01393
-ms.date: 01/04/2018
+ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
 

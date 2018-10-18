@@ -3,7 +3,7 @@ title: Architecture Overview for Sensor Drivers
 author: windows-driver-content
 description: Sensor device drivers are COM objects that are implemented by using the Windows User Mode Driver Framework (UMDF)
 ms.assetid: 6d1b15ea-ba27-4bde-8000-d31f014ab47d
-ms.date: 04/20/2017
+ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
 
