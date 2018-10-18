@@ -5,11 +5,7 @@ description: This topic describes the OID_GEN_CO_MEDIA_SUPPORTED object identifi
 ms.assetid: 688d5054-f92d-4054-bf6e-dcf43fcfeb06
 keywords:
 - OID_GEN_CO_MEDIA_SUPPORTED
-ms.author: windowsdriverdev
 ms.date: 11/02/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

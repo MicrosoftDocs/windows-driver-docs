@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Errors in a Multiprocessor Environment
 ms.assetid: 8a76b8d6-14d8-4709-8b15-e8b6b5094a1b
 keywords: ["reliability WDK kernel , race conditions", "race conditions WDK kernel", "reliability WDK kernel , multiprocessor environment errors", "multiprocessor environment errors WDK kernel", "locking WDK kernel", "multiple I/O request handling WDK kernel", "I/O requests WDK kernel", "thread conflicts WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ Specifically, whenever a driver changes global or file object data, it must use 
 
 In the following code snippet, a race condition could occur when the driver accesses the global data at **Data.LpcInfo**:
 
-```
+```cpp
    PLPC_INFO pLpcInfo = &Data.LpcInfo; //Pointer to global data
    ...
    ...
@@ -41,7 +37,7 @@ Multiple threads entering this code as a result of an IOCTL call could cause a m
 
 The following example attempts to reallocate a file-specific buffer (**Endpoint-&gt;LocalAddress**) to hold the endpoint address:
 
-```
+```cpp
    Endpoint = FileObject->FsContext;
 
     if ( Endpoint->LocalAddress != NULL &&

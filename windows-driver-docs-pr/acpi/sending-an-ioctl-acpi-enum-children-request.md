@@ -3,11 +3,7 @@ title: Sending an IOCTL_ACPI_ENUM_CHILDREN Request
 author: windows-driver-content
 description: Sending an IOCTL_ACPI_ENUM_CHILDREN Request
 ms.assetid: cbad53dd-4320-4920-9d16-231d0aaae839
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,8 +34,8 @@ After the example code obtains the required size of the output buffer, it perfor
 
 4.  Processes the array of child object names in the output buffer.
 
-```
-#define MY_TAG &#39;gTyM&#39;   // Pool tag for memory allocation
+```cpp
+#define MY_TAG 'gTyM'   // Pool tag for memory allocation
 
  ACPI_ENUM_CHILDREN_INPUT_BUFFER  inputBuffer;
     ACPI_ENUM_CHILDREN_OUTPUT_BUFFER outputSizeBuffer = { 0 };

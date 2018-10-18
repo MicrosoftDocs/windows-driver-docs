@@ -5,9 +5,6 @@ ms.assetid: 83fb6753-a6c1-4899-9b06-a6331b3c31a8
 keywords: ["targets, dump files", "dump files"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

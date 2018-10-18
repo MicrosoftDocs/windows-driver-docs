@@ -5,9 +5,6 @@ ms.assetid: 73b053af-6ecb-48a3-b09d-e28d39390d11
 keywords: ["Bug Check 0xF8 RAMDISK_BOOT_INITIALIZATION_FAILED", "RAMDISK_BOOT_INITIALIZATION_FAILED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -7,11 +7,7 @@ keywords:
 - serial devices WDK , device control requests
 - device control requests WDK serial devices
 - Serial driver WDK , device control requests
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

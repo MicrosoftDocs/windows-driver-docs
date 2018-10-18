@@ -2,11 +2,7 @@
 title: 3D print partner onboarding guide
 author: windows-driver-content
 description: This topic describes how to implement 3D printer drivers that are then published on Windows Update.
-ms.author: windowsdriverdev
 ms.date: 05/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -85,7 +81,7 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
     - Replace the entries hardware IDs:
 
-        ```
+        ```INF
         %DeviceName%=FabrikamPrintDriverV4\_Install,3DPRINTER\\Fabrikam1
 
         %DeviceNamePlus%=FabrikamPrintDriverV4\_Install,3DPRINTER\\Fabrikam2

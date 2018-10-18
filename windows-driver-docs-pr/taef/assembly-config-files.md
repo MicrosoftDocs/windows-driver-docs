@@ -2,11 +2,7 @@
 title: Assembly Config Files
 description: Assembly Config Files
 ms.assetid: 53BAC457-BB6A-44a8-AD8D-3B621F41A245
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ The configuration file should be placed in the same directory as your test assem
 
 The .NET Configuration files are XML files in the following form:
 
-```
+```cpp
 <configuration>
     <appSettings>
         <add key="AssemblySetup" value="Assembly setup configuration information"/>
@@ -40,7 +36,7 @@ Note, the configuration file is a collection of name / value pairs.
 
 You can use the **System.Configuration.ConfigurationManager** class to read data from your configuration files. For example,
 
-```
+```cpp
 NameValueCollection appStgs = ConfigurationManager.AppSettings;
 Log.Comment(appStgs["AssemblySetup"]);
 ```

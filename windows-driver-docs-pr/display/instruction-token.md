@@ -2,11 +2,7 @@
 title: Instruction Token
 description: Instruction Token
 ms.assetid: bfeee1ad-aaf3-41d0-a667-15d22eccd1e9
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ An instruction token informs the driver of a specific operation to perform and i
 <span id="_15_00_"></span>**\[15:00\]**
 Bits 0 through 15 indicate an [operation code](https://msdn.microsoft.com/library/windows/hardware/ff569706). D3DSIO\_\* is an example of an operation code, where \* represents the instruction. For example, the following code snippet shows an [ADD instruction](https://msdn.microsoft.com/library/windows/hardware/ff538212):
 
-```
+```cpp
 // D3DSIO_ADD d, s1, s2
 ```
 

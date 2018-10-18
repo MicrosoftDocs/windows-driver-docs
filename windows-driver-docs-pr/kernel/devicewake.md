@@ -4,11 +4,7 @@ author: windows-driver-content
 description: DeviceWake
 ms.assetid: 3b82c095-1ee7-41e9-991e-ac0bcf959024
 keywords: ["DeviceWake"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

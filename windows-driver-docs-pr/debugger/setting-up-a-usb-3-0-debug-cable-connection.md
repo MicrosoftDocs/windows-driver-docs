@@ -4,9 +4,6 @@ description: Debugging Tools for Windows supports kernel debugging over a USB 3.
 ms.assetid: 9A9F5DA0-B98A-4C19-A723-67D06B2409B5
 ms.author: domars
 ms.date: 07/11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

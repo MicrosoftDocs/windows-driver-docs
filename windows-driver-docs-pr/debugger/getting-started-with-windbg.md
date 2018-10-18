@@ -4,9 +4,6 @@ description: WinDbg is a kernel-mode and user-mode debugger that is included in 
 ms.assetid: 8C2D2D0C-7E54-4711-A6FD-970E040F1C50
 ms.author: domars
 ms.date: 10/09/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

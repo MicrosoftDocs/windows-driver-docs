@@ -8,11 +8,7 @@ keywords:
 - action interfaces WDK WDTF
 - COM interfaces WDK WDTF
 - interfaces WDK WDTF
-ms.author: windowsdriverdev
 ms.date: 04/24/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

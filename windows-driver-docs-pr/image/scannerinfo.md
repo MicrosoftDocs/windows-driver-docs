@@ -9,11 +9,7 @@ api_name:
 - wscn ScannerInfo xml lang "..."
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **ScannerInfo** element contains any administratively assigned desc
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScannerInfo xml:lang="..."
   lang = "xs:string">
   text
@@ -100,24 +96,13 @@ Examples
 
 The following code example shows how you can use the ScannerInfo element.
 
-```
+```xml
 <wscn:ScannerInfo xml:lang="en-AU, en-CA, en-GB, en-US">
   Out of courtesy to others, please scan only
   small (1-5 page) jobs at this scanner.
 </wscn:ScannerInfo>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
-
-[**ScannerDescription**](scannerdescription.md)
-
- 
-
- 
-
-
-
-
-
-
+Description**](scannerdescription.md)

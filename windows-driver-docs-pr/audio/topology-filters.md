@@ -18,11 +18,7 @@ keywords:
 - PCCONNECTION_DESCRIPTOR array
 - audio jacks WDK
 - digital connectors WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,7 +58,7 @@ Similar to other types of audio filters, a topology filter uses an array of [**P
 
 A typical audio adapter can play wave and MIDI files through a speaker, and can capture audio signals from a microphone and a MIDI synthesizer. The code example below contains the PCCONNECTION\_DESCRIPTOR array for a topology filter that exposes these capabilities:
 
-```
+```cpp
     // topology pins
     enum
     {

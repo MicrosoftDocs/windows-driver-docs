@@ -3,11 +3,7 @@ title: WIA Driver Command Support
 author: windows-driver-content
 description: WIA Driver Command Support
 ms.assetid: 9c552316-7dd6-4102-88d3-fab9732d1e5d
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -79,15 +75,3 @@ The WIA service calls the [**IWiaMiniDrv::drvDeviceCommand**](https://msdn.micro
 The WIA driver should determine the WIA item that is to receive the device command by using the *pWiasContext* pointer. The WIA driver should then process the received device command targeted to the incoming WIA item. Any command sent to the WIA driver that is not supported should be failed with an E\_INVALIDARG error code.
 
 For an example implementation of the **IWiaMiniDrv::drvDeviceCommand** method, see [Informing an Application of Item Tree Changes](informing-an-application-of-item-tree-changes.md).
-
-```
-
-```
-
- 
-
- 
-
-
-
-

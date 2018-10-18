@@ -2,11 +2,7 @@
 Description: This topic describes how a client driver can build a USB Request Block (URB) to transfer data to and from isochronous endpoints in a USB device.
 title: How to transfer data to USB isochronous endpoints
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -285,7 +281,7 @@ The check for a valid **StartFrame** member is slightly more complicated in high
 
 The following code example shows how to create an URB for an isochronous transfer for full speed, high speed, and SuperSpeed transmission.
 
-```
+```cpp
 #define MAX_SUPPORTED_PACKETS_FOR_HIGH_OR_SUPER_SPEED 1024
 #define MAX_SUPPORTED_PACKETS_FOR_FULL_SPEED 255
 

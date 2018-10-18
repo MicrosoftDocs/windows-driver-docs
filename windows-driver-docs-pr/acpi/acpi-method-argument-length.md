@@ -5,11 +5,7 @@ description: The ACPI_METHOD_ARGUMENT_LENGTH macro calculates the size, in bytes
 ms.assetid: 8329c2eb-a787-4590-8de9-95078bbb85da
 keywords: 
 - ACPI_METHOD_ARGUMENT_LENGTH macro ACPI Devices
-ms.author: windowsdriverdev
-ms.date:
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ The ACPI\_METHOD\_ARGUMENT\_LENGTH macro calculates the size, in bytes, of a var
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 void ACPI_METHOD_ARGUMENT_LENGTH(
     DataLength
 );

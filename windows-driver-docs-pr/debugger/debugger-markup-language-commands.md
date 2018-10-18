@@ -5,9 +5,6 @@ ms.assetid: 70DDC56F-614F-43B7-B325-91984B74AECF
 keywords: ["Debugger Markup Language", "DML", "Enhanced debugger commands"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -9,11 +9,7 @@ api_name:
 - wscn JobInformation
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **JobInformation** element describes the intended use of the job.
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobInformation>
   text
 </wscn:JobInformation>
@@ -70,7 +66,7 @@ Remarks
 
 The **JobInformation** value is useful when the client will reuse the scan ticket that is used to create the job.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**JobDescription**](jobdescription.md)

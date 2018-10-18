@@ -2,11 +2,7 @@
 title: DeploymentItem Metadata
 description: DeploymentItem Metadata
 ms.assetid: 7F18CD71-F000-4231-9093-82980EB7584D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,13 +31,13 @@ is a folder path relative to the directory where the test dll is and where the d
 
 If you just want to deploy to the folder where your test dll is, **DestinationFolder** could be omitted:
 
-```
+```cpp
 [DeploymentItem("FileOrFolderToDeploy")]
 ```
 
 Multiple pieces of the property are supported. For example:
 
-```
+```cpp
 [TestClass]
 [DeploymentItem("file1.xml")]
 [DeploymentItem("file2.xml")]
@@ -73,7 +69,7 @@ Deploys the file myFile.txt if that file exists in the directory to which %myDir
 
 The **DeploymentItem** (aka DeploymentItemAttribute) attribute can be applied to a test method (decorated by \[TestMethod\] attribute), test class (decorated by \[TestClass\] attribute) or test assembly. However, since VSTS does not support this property on assembly level, to apply this property on assembly level, you have to apply it to assembly setup (decorated by AssemblyInitialize attribute):
 
-```
+```cpp
 [AssemblyInitialize]
 [DeploymentItem("file1.xml")]
 [DeploymentItem("file2.xml")]
@@ -90,7 +86,7 @@ public  static AssemblySetup(TestContext testContext)
 
 For native tests, the property format is similar to the managed code format. However, since native properties only have a single value, the item path and optional destination are specified in the property value, separated with a **'&gt;'** character:
 
-```
+```cpp
 BEGIN_TEST_CLASS(TestClassExample)
     TEST_CLASS_PROPERTY(L"DeploymentItem", L"C:\\Dependencies\\>Dependencies")
 END_TEST_CLASS()
@@ -102,7 +98,7 @@ END_TEST_CLASS()
 
 For script tests, the property format is the same as for native tests:
 
-```
+```cpp
 <method name="TestOne">
     <TestMethodProperty name="DeploymentItem" value="C:\\Dependencies\\>Dependencies"/>
 </method>

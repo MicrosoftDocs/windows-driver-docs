@@ -1,11 +1,7 @@
 ---
 title: 360 camera video capture
 description: Provides information about 360 camera video capture.
-ms.author: windowsdriverdev
 ms.date: 07/20/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -121,7 +117,7 @@ If the application implements its own custom spherical projection component, the
 
 ## .INF file example to publish a DMFT
 
-```
+```INF
 ;=================================================================================
 ; Microsoft Sample Extension INF for USB Camera SampleDeviceMFT installation
 ; Copyright (C) Microsoft Corporation. All rights reserved.

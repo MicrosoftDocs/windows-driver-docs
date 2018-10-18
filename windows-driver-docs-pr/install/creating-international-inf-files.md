@@ -8,11 +8,7 @@ keywords:
 - locale-specific INF files WDK
 - locale-specific driver files WDK
 - Unicode INF files WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,7 +38,7 @@ You can create a single INF file that supports several locales, or you can creat
 
 If you have to provide locale-specific versions of driver files for Windows 2000 and later versions of Windows, mark each version of each file with its locale. Be sure to mark files that are not locale-specific as language-neutral. You can do this by adding the following macro definition to your resource file:
 
-```
+```cpp
 #define VER_LANGNEUTRAL
 ```
 
@@ -66,7 +62,7 @@ Put the locale-specific files in separate, locale-specific subdirectories of the
 
 For example:
 
-```
+```cpp
 [SourceDisksNames]
 1=%DiskName%,,,%LocaleSubDir%
 

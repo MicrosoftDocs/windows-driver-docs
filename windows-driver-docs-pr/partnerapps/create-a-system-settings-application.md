@@ -2,11 +2,7 @@
 title: Create a partner settings app
 description: Create a partner settings app
 ms.assetid: 3b549c11-f8b2-46e8-9d22-4edc787743ee
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -81,13 +77,13 @@ Partner settings apps have the following characteristics:
 	      </rescap:SettingsApp>
 	    </rescap:Extension>
     </Extensions>
-    ```
+    ```cpp
  Note that this package cannot have an entry in the all apps list. To accomplish this, set the [AppListEntry](https://docs.microsoft.com/uwp/api/windows.applicationmodel.core.applistentry) property to **none**.   
   ```
      <uap:VisualElements AppListEntry="none" DisplayName="OptionalPackage"
        ....
      </uap:VisualElements>
-  ```
+  ```cpp
 3. To be configured as a preinstalled application, submit your settings application to the Windows Dev Center. After receiving a signed .appx file and obtaining a license file, include the application in the device image.
 
 ## <span id="Updating_system_settings_applications"></span><span id="updating_system_settings_applications"></span><span id="UPDING_SYSTEM_SETTINGS_APPLICATIONS"></span>Updating system settings applications

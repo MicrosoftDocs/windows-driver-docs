@@ -18,18 +18,18 @@ api_location:
 - olesnmp.h
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # ISNMP::Close method
-
 
 The `Close` method enables an ASP Web page to close a communication path to an SNMP agent.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT Close();
 ```
 
@@ -43,24 +43,18 @@ Return value
 
 The method always returns S\_OK.
 
-## <span id="ddk_isnmp_close_gg"></span><span id="DDK_ISNMP_CLOSE_GG"></span>
-
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 This method calls the **SnmpMgrClose** function, which is described in the Windows SDK documentation, to close the communication path that was created by the previous call to the [**ISNMP::Open**](isnmp-open.md) method.
 
-```
-    Dim StrIP, strCommunity, objSNMP
-    strIP = Session("MS_IPaddress")
-    strCommunity = Session ("MS_Community")
-    Set objSNMP = Server.CreateObject("OlePrn.OleSNMP")
-    objSNMP.Open strIP, strCommunity, 2, 1000
-    ...
-    objSNMP.Close
+```vb
+Dim StrIP, strCommunity, objSNMP
+strIP = Session("MS_IPaddress")
+strCommunity = Session ("MS_Community")
+Set objSNMP = Server.CreateObject("OlePrn.OleSNMP")
+objSNMP.Open strIP, strCommunity, 2, 1000
+...
+objSNMP.Close
 ```
 
 Requirements
@@ -76,10 +70,6 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 <tr class="odd">
 <td><p>Header</p></td>
 <td>Olesnmp.h</td>
@@ -87,15 +77,6 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**ISNMP::Open**](isnmp-open.md)
-
- 
-
- 
-
-
-
-

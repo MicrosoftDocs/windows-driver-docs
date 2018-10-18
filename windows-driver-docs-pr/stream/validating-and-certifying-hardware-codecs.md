@@ -7,11 +7,7 @@ keywords:
 - hardware codecs WDK AVStream , validating
 - hardware codecs WDK AVStream , certifying
 - hardware codec support WDK AVStream , validating and certifying
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ ms.localizationpriority: medium
 
 If your vendor-supplied AVStream minidriver includes hardware-based codec support, or you have implemented a custom MFT to support your hardware, you must supply an X.509 certificate chain, specify a merit value in the driver INF file, and implement KSPROPSETID\_OPMVideoOutput in the driver.
 
-### <a href="" id="obtaining-an-x-509-certificate"></a>**Obtaining an X.509 Certificate**
+### **Obtaining an X.509 Certificate**
 
 A Media Foundation Transform (MFT) encoder or decoder that is backed by hardware must provide a valid, Microsoft-signed X.509 certificate that specifies the CodecMeritCertificationPolicy EKU (Extended Key Usage) certificate extension. To license a hardware accelerated codec, you must participate in the PVP-OPM licensing program. To request licensing materials, please contact the [Windows Media License Agreements](mailto://wmla@microsoft.com) alias.
 
@@ -28,20 +24,20 @@ A Media Foundation Transform (MFT) encoder or decoder that is backed by hardware
 
 In the AddReg section of your INF file, set the DWORD-typed MFTMerit registry value:
 
-```
+```INF
 [myVideoDecoder.Reader.AddReg]
 HKR,,CLSID,,%Proxy.CLSID%
 HKR,,FriendlyName,,%shedVideoDecoder.Reader.FriendlyName%
 HKR,,MFTMerit,0x00010001,7
 ```
 
-### <a href="" id="implementing-kspropsetid-opmvideooutput"></a>**Implementing KSPROPSETID\_OPMVideoOutput**
+### **Implementing KSPROPSETID\_OPMVideoOutput**
 
 The KSPROPSETID\_OPMVideoOutput property set is exposed in the *Ksopmapi.h* and *Opmapi.h* header files, which ship in the Windows SDK for Windows 7 and later.
 
 The property set and methods are defined in the following excerpt from the *Ksopmapi.h* file:
 
-```
+```cpp
 #ifdef DEFINE_GUIDSTRUCT
 #define STATIC_KSPROPSETID_OPMVideoOutput \
 0x6f414bb, 0xf43a, 0x4fe2, 0xa5, 0x66, 0x77, 0x4b, 0x4c, 0x81, 0xf0, 0xdb                         
@@ -67,11 +63,3 @@ typedef enum
 User-mode components access KSPROPSETID\_OPMVideoOutput through the **IKsControl** interface on the AVStream proxy MFT. For code examples that show an implementation of the OPMVideoOutput method handler routines, see [Codec Merit Validation](codec-merit-validation.md).
 
 For driver-specific information about OPM, see [Supporting Output Protection Manager](https://msdn.microsoft.com/library/windows/hardware/ff569879). For application-specific information about OPM, see [Using Output Protection Manager](http://go.microsoft.com/fwlink/p/?linkid=155059).
-
- 
-
- 
-
-
-
-

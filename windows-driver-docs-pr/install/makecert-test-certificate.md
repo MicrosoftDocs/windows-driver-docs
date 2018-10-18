@@ -5,11 +5,7 @@ ms.assetid: 17f63c42-a563-4a57-a3be-ac3b2e97ee3b
 keywords:
 - MakeCert test certificates WDK
 - digital certificates WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ To test-sign a [catalog file](catalog-files.md) or embed a signature in a driver
 
 Use the [**CertMgr**](../devtest/certmgr.md) tool, as follows, to install a test certificate in the Trusted Root Certification Authorities certificate store of the local computer that you use to sign drivers:
 
-```
+```cpp
 CertMgr /add CertFileName.cer /s /r localMachine root
 ```
 

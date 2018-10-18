@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Introduction to MS-DOS Device Names
 ms.assetid: 44b2f871-56e1-46d3-aab4-c38f498d089d
 keywords: ["MS-DOS device names WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +24,7 @@ Drivers are required to supply an MS-DOS device name only if the device is requi
 
 A driver supplies an MS-DOS device name for a device object by using the [**IoCreateSymbolicLink**](https://msdn.microsoft.com/library/windows/hardware/ff549043) routine to create a symbolic link to the device. For example, the following code example creates a symbolic link from **\\DosDevices\\***DosDeviceName* to **\\Device\\***DeviceName*.
 
-```
+```cpp
 UNICODE_STRING DeviceName;
 UNICODE_STRING DosDeviceName;
 NTSTATUS status;
@@ -47,7 +43,7 @@ To access the **DosDevices** namespace from user mode, specify **\\\\.\\** when 
 
 For example, the following code example opens the \\\\DosDevices\\\\*DosDeviceName* device in user mode.
 
-```
+```cpp
 file = CreateFileW(L"\\\\.\\DosDeviceName",
   GENERIC READ | GENERIC WRITE,
     0,

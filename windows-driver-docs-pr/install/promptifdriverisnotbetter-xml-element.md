@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # promptIfDriverIsNotBetter XML Element
@@ -21,7 +22,7 @@ The **promptIfDriverIsNotBetter** XML element is an empty element that sets the 
 
 ### Element Tag
 
-```
+```cpp
 <promptIfDriverIsNotBetter>
 ```
 
@@ -64,7 +65,7 @@ By default, the **promptIfDriverIsNotBetter** flag is set to OFF. You can set th
 
 The following code example demonstrates a **promptIfDriverIsNotBetter** element.
 
-```
+```cpp
 <dpinst>
   ...
   <promptIfDriverIsNotBetter/>

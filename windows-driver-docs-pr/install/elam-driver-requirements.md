@@ -2,11 +2,7 @@
 title: ELAM Driver Requirements
 description: Driver installation must use existing tools for online and offline installation, registering a driver through typical INF processing.
 ms.assetid: B00B4361-B531-4D28-A521-0F8B3B48CEA4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ To ensure driver install compatibility, an ELAM driver advertises itself as a bo
 
 The following is an example of the driver install section of an ELAM driver INF.
 
-```
+```cpp
 [SampleAV.Service]
 DisplayName    = %SampleAVServiceName%
 Description    = %SampleAVServiceDescription%
@@ -41,7 +37,7 @@ To provide a recovery mechanism in the event that the ELAM driver is inadvertent
 
 The installer reads the backup file location from the **BackupPath** key stored in
 
-```
+```cpp
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\EarlyLaunch
 ```
 
@@ -96,7 +92,7 @@ An image is treated as unknown when an error is returned from the initialize ima
 
 The malware signature data is determined by the AM ISV, but should include, at a minimum, an approved list of driver hashes. The signature data is stored in the registry in a new “Early Launch Drivers” hive under HKLM that is loaded by Winload. Each AM driver has a unique key in which to store their signature binary large object (BLOB). The registry path and key has the format:
 
-```
+```cpp
 HKLM\ELAM\<VendorName>\
 ```
 
@@ -172,12 +168,12 @@ The driver must meet the performance requirements defined in the following table
 
 Once the boot drivers are evaluated by the ELAM driver, the Kernel uses the classification returned by ELAM to decide whether to initialize the driver. This decision is dictated by policy and is stored here in the registry at:
 
-```
+```cpp
 HKLM\System\CurrentControlSet\Control\EarlyLaunch\DriverLoadPolicy
 ```
 
 This can be configured through Group Policy on a domain-joined client. An antimalware solution may want to expose this functionality to the end user in nonmanaged scenarios. The following values are defined for DriverLoadPolicy:
-```
+```cpp
 PNP_INITIALIZE_DRIVERS_DEFAULT 0x0  (initializes known Good drivers only)
 PNP_INITIALIZE_UNKNOWN_DRIVERS 0x1  
 PNP_INITIALIZE_BAD_CRITICAL_DRIVERS 0x3 (this is the default setting)

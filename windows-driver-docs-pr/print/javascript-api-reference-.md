@@ -3,11 +3,7 @@ title: JavaScript API Reference
 author: windows-driver-content
 description: Use the JavaScript API in combination with a Bidi XML file to provide support over a USB connection to a print device.
 ms.assetid: 604DF74E-AEF1-43DC-81B2-566A94B1CE8E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +24,7 @@ This method handles Bidi GET queries such as \\Printer.Consumables.YellowInk:Lev
 
 Syntax
 
-```JavaScript
+```javascript
 function getSchemas(scriptContext, printerStream, schemaRequests, printerBidiSchemaResponses);
 ```
 
@@ -120,7 +116,7 @@ USBMon calls this method during StartDocPort. Calling **startPrintJob** allows t
 
 Syntax
 
-```JavaScript
+```javascript
 function startPrintJob(jobScriptContext, printerStream, printerBidiSchemaResponses);
 ```
 
@@ -151,7 +147,7 @@ USBMon calls this method during writePort. Calling **writePrintData** allows the
 
 -   Via an object which can return Bidi Schema responses for USBMon to process
 
-```JavaScript
+```javascript
 function writePrintData(jobScriptContext, writePrintDataProgress, printData, printerStream, printerBidiSchemaResponses);
 ```
 
@@ -222,7 +218,7 @@ USBMon calls this method during endDocPort. Calling **endPrintJob** allows the d
 
 -   Access an object that can pass Bidi Schema responses for USBMon to process
 
-```JavaScript
+```javascript
 function endPrintJob(jobScriptContext, printerStream, printerBidiSchemaResponses);
 ```
 

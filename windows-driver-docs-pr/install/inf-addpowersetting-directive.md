@@ -10,11 +10,7 @@ api_name:
 - INF AddPowerSetting Directive
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ ms.localizationpriority: medium
 
 An **AddPowerSetting** directive references one or more sections that are used to modify or create power setting information. Each *add-power-setting-section* defines a power setting, the allowed values for the power setting, the friendly name of the power setting, and the description of the power setting. An *add-power-setting-section* also specifies the default value for each power scheme personality. For more information about power settings and power scheme personalities, see [Managing Device Performance States](https://msdn.microsoft.com/library/windows/hardware/ff554353).
 
-```
+```cpp
 [DDInstall] | 
 [DDInstall.HW] | 
 [DDInstall.CoInstallers] | 
@@ -46,7 +42,7 @@ An *add-power-setting-section* takes one of the following two possible forms:
 
 -   If the allowed power settings values can best be defined as a set of two or more discrete values, use a list of **Value** directives to specify the allowed values, as follows:
 
-    ```
+    ```cpp
     [add-power-setting-section]
 
     [SubGroup = {subgroup-guid}] | SubGroup = {subgroup-guid}, subgroup-name, subgroup-description, subgroup-icon
@@ -64,7 +60,7 @@ An *add-power-setting-section* takes one of the following two possible forms:
 
 -   If the allowed power settings values can best be defined as an incremented sequence of nonnegative integer values within a specified range, use one **ValueRange** directive to specify allowed values, as follows:
 
-    ```
+    ```cpp
     [add-power-setting-section]
 
     [SubGroup = {subgroup-guid}] | 
@@ -172,7 +168,7 @@ A required entry that supplies the data for the corresponding setting value, the
 <a href="" id="valuerange"></a>**ValueRange**  
 Use the **ValueRange** directive if the allowed power settings values can best be defined as an incremented sequence of non-negative integer values within a specified range. The power manager validates that a setting that a user selects in **Power Options** in Control Panel is one of these allowed values. The set of allowed values is determined by a minimum allowed value, a maximum allowed value, and an increment between the allowed values within the range. A value is allowed if it satisfies the following:
 
-```
+```cpp
 range-minimum-value + k*range-increment
 ```
 
@@ -240,7 +236,7 @@ Except for *value-data* entries of type [REG_SZ](https://docs.microsoft.com/wind
 
 Language-neutral registry values are used to support Windows Multilingual User Interface (MUI) and are specified as follows:
 
-```
+```cpp
 "@file-path,-resourceID[;comment]"
 ```
 
@@ -262,7 +258,7 @@ Examples
 
 The following two examples define power settings that control the brightness of an LCD. The first example shows how to use the **Value** directive to define a minimum, a medium, and a maximum LCD brightness value.
 
-```
+```cpp
 // Within a DDinstall or ClassInstall23 section
 AddPowerSetting=LCDDim
 ...
@@ -294,7 +290,7 @@ FLG_ADDREG_TYPE_DWORD = 0x00010001
 
 The second example shows how to use the **ValueRange** directive to define a range of allowed LCD brightness values that varies from 0% through 100%, with an increment of 1% between allowed values.
 
-```
+```cpp
 // Within a DDinstall or a ClassInstall23 section
 AddPowerSetting=LCDDimRange
 ...

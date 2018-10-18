@@ -8,11 +8,7 @@ keywords:
 - filter drivers WDK file system , initializing
 - file system filter drivers WDK , initializing
 - DriverEntry WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +24,7 @@ The [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff5441
 
 The [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine is defined as follows:
 
-```
+```cpp
 NTSTATUS 
 (*PDRIVER_INITIALIZE) ( 
     IN PDRIVER_OBJECT DriverObject, 

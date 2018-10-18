@@ -4,9 +4,6 @@ description: Using LINQ With the debugger objects. LINQ syntax can be used with 
 keywords: ["Using LINQ With the debugger objects"]
 ms.author: domars
 ms.date: 08/10/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

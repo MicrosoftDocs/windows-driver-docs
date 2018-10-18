@@ -5,9 +5,6 @@ ms.assetid: 625d174d-7011-4b15-aad7-1b39aa3742a4
 keywords: [".crash (Force System Crash) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.crash** command causes the target computer to issue a bug check.
 
-```
+```dbgsyntax
 .crash
 ```
 

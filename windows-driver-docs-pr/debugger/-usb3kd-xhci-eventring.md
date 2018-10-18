@@ -5,9 +5,6 @@ ms.assetid: D3A40372-5473-48B0-94C7-5D3B80801F16
 keywords: ["usb3kd.xhci_eventring Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

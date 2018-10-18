@@ -5,9 +5,6 @@ ms.assetid: e056a556-8201-47e5-9a21-dbd5277c15c2
 keywords: ["debugging information windows, opening"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

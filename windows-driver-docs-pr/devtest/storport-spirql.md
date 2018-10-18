@@ -2,11 +2,7 @@
 title: SpIrql rule (storport)
 description: This rule verifies that the routines TdiRegisterPnPHandlers and TdiDeregisterPnPHandlers are only called at IRQL lower than DISPATCH\_LEVEL. However, if ExFreeToNPagedLookasideList is called, the rule passes.
 ms.assetid: 895E3982-F50E-4B7A-9904-8D0D742A9B64
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["SpIrql rule (storport)"]
 topic_type:
 - apiref

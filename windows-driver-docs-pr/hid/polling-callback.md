@@ -5,6 +5,7 @@ description: Polling Callback
 ms.assetid: d86ed391-19c6-47e4-83df-cc2f2298846a
 keywords: ["polling WDK joysticks", "callbacks WDK joysticks", "joysticks WDK HID , polling", "virtual joystick drivers WDK HID , polling", "VJoyD WDK HID , polling", "joysticks WDK HID , positions", "locations WDK joysticks", "positions WDK joysticks"]
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Polling Callback
@@ -13,7 +14,7 @@ ms.localizationpriority: medium
 
 
 
-```
+```cpp
 int stdcall PollRoutine( int type, LPJOYOEMPOLLDATA pojd );
 ```
 

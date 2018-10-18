@@ -5,9 +5,6 @@ ms.assetid: 646c86c2-a436-43d6-b0d8-32dbd423120e
 keywords: [".foreach Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.foreach** token parses the output of one or more debugger commands and uses each value in this output as the input to one or more additional commands.
 
-```
+```dbgcmd
 .foreach [Options] ( Variable  { InCommands } ) { OutCommands } 
 
 .foreach [Options] /s ( Variable  "InString" ) { OutCommands } 

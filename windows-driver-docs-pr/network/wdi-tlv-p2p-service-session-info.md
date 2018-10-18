@@ -3,11 +3,7 @@ title: WDI_TLV_P2P_SERVICE_SESSION_INFO
 author: windows-driver-content
 description: WDI_TLV_P2P_SERVICE_SESSION_INFO is a TLV that contains Service Session information.
 ms.assetid: ED1FF2F5-82BA-48AC-A986-8B75F099DCA0
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - WDI_TLV_P2P_SERVICE_SESSION_INFO Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

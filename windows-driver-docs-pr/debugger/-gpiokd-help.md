@@ -5,9 +5,6 @@ ms.assetid: 02F66960-8B4F-49A7-93EB-DF80C4A5D011
 keywords: ["gpiokd.help Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

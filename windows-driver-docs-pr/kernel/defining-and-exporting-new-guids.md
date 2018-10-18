@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Defining and Exporting New GUIDs
 ms.assetid: a7deb283-7cab-4f3c-ad96-f8085222456e
 keywords: ["globally unique identifiers WDK kernel", "GUIDs WDK kernel", "identifiers WDK GUIDs", "exporting GUIDs"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,7 +30,7 @@ You define a new GUID for an item the driver exports to other system components,
 
     **Example 1: Defining GUIDs in a GUID-Only Header File**
 
-    ```
+    ```cpp
     :
      
     DEFINE_GUID( GUID_BUS_TYPE_PCMCIA, 0x09343630L, 0xaf9f, 0x11d0, 
@@ -49,7 +45,7 @@ You define a new GUID for an item the driver exports to other system components,
 
     **Example 2: Defining GUIDs in a Mixed Header File**
 
-    ```
+    ```cpp
     #ifndef _NTDDSER_    // this ex. is from a serial driver .h file
     #define _NTDDSER_
      

@@ -9,11 +9,7 @@ api_name:
 - wscn Exposure wscn MustHonor ""
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **Exposure** element specifies the exposure settings of the documen
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Exposure wscn:MustHonor=""
   MustHonor = "xs:string">
   child elements
@@ -112,7 +108,7 @@ The **Exposure** element can contain a [**AutoExposure**](autoexposure.md) or [*
 
 The client can specify the optional **MustHonor** attribute only when the **Exposure** element is contained within a **CreateScanJobRequest** hierarchy. For more information about **MustHonor** and its usage, see [**CreateScanJobRequest**](createscanjobrequest.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**AutoExposure**](autoexposure.md)

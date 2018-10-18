@@ -3,11 +3,7 @@ title: Reparse Point Tag Request
 author: windows-driver-content
 description: This is the mechanism to obtain a Reparse Point tag, for those file system filter drivers that need one.
 ms.assetid: B4E4382B-4FB8-4E21-8FC4-EDDE8DD4AC77
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,7 +38,7 @@ The following list details some requirements for submitting a request.
 
 -   For those who do not wish to use their own name and e-mail address in this publicly-viewable database, create an e-mail address for this use (for other companies which have products that include file system/filter drivers, which have interoperability issues with yours, and need to get the test/development teams of the two companies to communicate with each other). A suggested name is *"ntifskit@YourCompanyName.com"*.
 
--   If the "high latency" bit is enabled, this means the driver tags files and are expected to have a long latency. For example, this would be set by drivers drivers which use Reparse Points to implement heirarchical storage solutions, etc.
+-   If the "high latency" bit is enabled, this means the driver tags files and are expected to have a long latency. For example, this would be set by drivers which use Reparse Points to implement heirarchical storage solutions, etc.
 
 -   If the "name surrogate" bit is enabled, this means the driver represents another named entity in the system. For example, the name of a volume mount point or of a directory junction.
 

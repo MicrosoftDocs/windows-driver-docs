@@ -9,11 +9,7 @@ api_name:
 - wscn InputSource wscn MustHonor "" wscn Override "" wscn UsedDefault ""
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **InputSource** element specifies the source of the original docume
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:InputSource wscn:MustHonor=""                  wscn:Override=""                  wscn:UsedDefault=""
   MustHonor = "xs:string"
   Override = "xs:string"
@@ -151,7 +147,7 @@ The WSD Scan Service can specify the optional **Override** and **UsedDefault** a
 
 You can both extend and subset the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)

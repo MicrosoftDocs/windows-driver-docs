@@ -6,11 +6,7 @@ ms.assetid: 3f99bec7-e657-4de7-bce4-36a779cc0442
 keywords:
 - IEEE 1394 WDK buses , driver installations
 - 1394 WDK buses , driver installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ This section provides installation information, specific to IEEE 1394 device dri
 
 Vendors supplying their own IEEE 1394 device driver should make that driver a member of the Base setup class in the [**INF Version Section**](https://msdn.microsoft.com/library/windows/hardware/ff547502) of the driver's INF file. For example:
 
-```
+```cpp
 [Version]
 Signature="$WINDOWS NT$"
 Class = Base

@@ -5,9 +5,6 @@ ms.assetid: 7bff1956-d38f-43ac-89a2-ad0afd9e2919
 keywords: ["View Scratch Pad"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

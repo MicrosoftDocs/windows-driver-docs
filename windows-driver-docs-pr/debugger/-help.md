@@ -5,9 +5,6 @@ ms.assetid: 9d01856e-4906-43cb-a445-71cce011a973
 keywords: ["help Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +21,7 @@ The **!help** extension displays help text that describes the extension commands
 
 Do not confuse this extension command with the [**? (Command Help)**](---command-help-.md) or [**.help (Meta-Command Help)**](-help--meta-command-help-.md) commands.
 
-```
+```dbgcmd
 ![ExtensionDLL.]help [-v] [CommandName] 
 ```
 

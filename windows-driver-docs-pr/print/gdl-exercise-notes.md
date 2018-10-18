@@ -10,11 +10,7 @@ keywords:
 - GDL WDK , tutorials
 - GDL WDK , index tree
 - parser WDK GDL , index tree
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ ms.localizationpriority: medium
 
 The following code example shows the index tree that the parser generates for all of the GDL exercises.
 
-```
+```cpp
       <:ROOT2>
     *PFeature : InputTray    <:INPUTTRAY_FEATURE>
         *POption : Lower    <:INPUTTRAY_OPTION2>
@@ -77,7 +73,7 @@ The \*Name and \*POption entries map to several templates, each with different s
 
 The exercise answers that are shown are not unique. For example, you could have derived the templates MIN\_SIZE and MAX\_SIZE from PAPERDIMENSIONS in the following manner.
 
-```
+```cpp
 *Template:  MIN_SIZE
 {
     *Name: "*MinSize"

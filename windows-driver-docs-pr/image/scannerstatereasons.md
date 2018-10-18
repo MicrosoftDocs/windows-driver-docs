@@ -9,11 +9,7 @@ api_name:
 - wscn ScannerStateReasons
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ScannerStateReasons** element is a list of [**ScannerStateReason*
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScannerStateReasons>
   child elements
 </wscn:ScannerStateReasons>
@@ -89,7 +85,7 @@ The **ScannerStateReasons** element is a list of **ScannerStateReason** elements
 
 The WSD Scan Service informs a client about changes to the scanner's status by sending a [**ScannerStatusSummaryEvent**](scannerstatussummaryevent.md) event. A client can directly query the scanner's state by calling the [**GetScannerElementsRequest**](getscannerelementsrequest.md) operation.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**GetScannerElementsRequest**](getscannerelementsrequest.md)

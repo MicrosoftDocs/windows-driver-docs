@@ -2,11 +2,7 @@
 Description: This topic discusses static streams capability and explains how a USB client driver can open and close streams in a bulk endpoint of a USB 3.0 device.
 title: How to open and close static streams in a USB bulk endpoint
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -165,7 +161,7 @@ In the case of stream transfers, both abort-pipe and reset-pipe requests are not
 
 The following code example shows how to open streams.
 
-```
+```cpp
 NTSTATUS
     OpenStreams (
     _In_ WDFDEVICE Device,

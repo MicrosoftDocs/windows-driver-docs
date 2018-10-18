@@ -5,9 +5,6 @@ ms.assetid: f964e358-2f3f-4780-87ea-e1374ae861e6
 keywords: ["debugger command program, elements"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

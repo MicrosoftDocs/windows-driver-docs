@@ -5,9 +5,6 @@ ms.assetid: 3d216d17-f2af-48f7-9d91-e12c3c305a67
 keywords: [".allow_image_mapping (Allow Image Mapping) Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

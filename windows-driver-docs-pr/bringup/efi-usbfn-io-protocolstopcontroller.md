@@ -3,11 +3,7 @@ title: EFI_USBFN_IO_PROTOCOL.StopController
 author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.StopController
 ms.assetid: 531fd280-bcb1-4b6f-a2fa-9052318171b3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ The **StopController** function disables the hardware device by resetting the ru
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_IO_STOP_CONTROLLER) (

@@ -2,11 +2,7 @@
 title: IRP_MN_SURPRISE_REMOVAL
 author: windows-driver-content
 description: All PnP drivers must handle this IRP.
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: 19d6847c-6b64-4552-b8b8-fef1d9b13fc7
 keywords:
  - IRP_MN_SURPRISE_REMOVAL Kernel-Mode Driver Architecture

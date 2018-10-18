@@ -10,11 +10,7 @@ keywords:
 - preprocessor directives WDK GDL , vs. GDL preprocessing
 - directives WDK GDL , source file preprocessor directives
 - source files WDK GDL , preprocessor directives
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ In addition, the **\#Undefine** directive now also accepts no argument. The abse
 
 We recommend that you do not use these new directives if the GDL file is also intended to be parsed by the GPD parser. If you want tp incorporate the new preprocessor directives into a GDL file that is also intended for use by GPD parsers, an alternate (backward compatibility) path must be provided that allows the older preprocessor to avoid executing these new directives. Each path should be enclosed within a **\#Ifdef:**, **\#Else**, **\#Endif** construct, as the following code example shows.
 
-```
+```cpp
 #Ifdef: NewParserVersion
 *%   Use new preprocessor directives if the parser supports them.
 *%   Lock out this entire code path by changing the prefix.

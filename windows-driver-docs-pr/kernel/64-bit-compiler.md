@@ -4,11 +4,7 @@ author: windows-driver-content
 description: 64-Bit Compiler
 ms.assetid: c119d6b3-03e2-4ffc-b0a9-8077b141a2f1
 keywords: ["64-bit WDK kernel , porting drivers to", "porting drivers to 64-bit Windows", "compilers WDK 64-bit"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,20 +18,20 @@ After you convert your 32-bit driver source code to use the [new data types](the
 
 The following is an example of such a warning:
 
-```
+```cpp
 warning C4311: &#39;type cast&#39; : pointer truncation from &#39;unsigned char *&#39; to &#39;unsigned long &#39;
 ```
 
 For example, the following code can generate the C4311 warning:
 
-```
+```cpp
 buffer = (PUCHAR)srbControl;
 (ULONG)buffer += srbControl->HeaderLength;
 ```
 
 To correct the code, make the following changes:
 
-```
+```cpp
 buffer = (PUCHAR)srbControl;
 (ULONG_PTR)buffer += srbControl->HeaderLength;
 ```

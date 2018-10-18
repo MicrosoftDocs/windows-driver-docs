@@ -2,11 +2,7 @@
 title: Container IDs for UPnP Devices
 description: Container IDs for UPnP Devices
 ms.assetid: 29d2ed0e-e746-4f0a-88f3-bd07d5750485
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ Starting with Windows 7, a device that supports PnP extensions (PnP-X) and Unive
 
 The **X_containerId** XML element is declared as follows:
 
-```
+```cpp
 <df:X_containerId xmlns:df="">
   xs:string
 </df:X_containerId>
@@ -27,7 +23,7 @@ The **X_containerId** XML element type is a string, for which the value is a glo
 
 The following is an example of an **X_containerId** XML element.
 
-```
+```cpp
 <df:X_containerId xmlns:df="">
   {101392d0-5e91-11dd-ad8b-0800200c9a66}
 </df:X_containerId>
@@ -39,7 +35,7 @@ The **X_containerId** XML element is required to be in the &lt;device&gt; sectio
 
  
 
-```
+```cpp
 <?xml version="1.0" ?> 
 <root 
  xmlns="urn:schemas-upnp-org:device-1-0"

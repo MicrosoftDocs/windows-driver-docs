@@ -7,11 +7,7 @@ keywords:
 - hardware codec support WDK AVStream , data type negotiation
 - data type negotiation WDK AVStream
 - AVStream hardware codec support WDK , handling data type negotiation
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,7 +34,7 @@ To enable successful data type negotiation, the minidriver must follow these ste
 
 1.  Supply a list of supported data ranges in the **DataRanges** member of [**KSPIN\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff563533) for each exposed pin included in the hardware codec filters. For example:
 
-    ```
+    ```cpp
     const PKSDATARANGE VideoDecoderInputPinDataRanges[8] = {
         (PKSDATARANGE)&H264DataFormat,
         (PKSDATARANGE)&VC_1DataFormat,

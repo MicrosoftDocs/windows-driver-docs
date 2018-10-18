@@ -9,11 +9,7 @@ keywords:
 - CapabilityOverride
 - INF files WDK Windows 2000 display
 - display INF file sections WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +27,7 @@ A *DDInstall*.**SoftwareSettings** section contains an [**AddReg**](https://msdn
 
 For example, the following code shows an **AddReg** directive that points to a writer-defined add-registry section named **ACME-1234\_SoftwareDeviceSettings**. The **DelReg** directive points to a delete-registry section named **ACME-1234\_DeleteSWSettings**.
 
-```
+```cpp
 [ACME-1234.SoftwareSettings]
 AddReg=ACME-1234_SoftwareDeviceSettings
 DelReg=ACME-1234_DeleteSWSettings
@@ -39,7 +35,7 @@ DelReg=ACME-1234_DeleteSWSettings
 
 The add-registry section adds four entries to the registry and sets their values, as shown in the following code.
 
-```
+```cpp
 [ACME-1234_SoftwareDeviceSettings]
 HKR,, InstalledDisplayDrivers, %REG_MULTI_SZ%, Acme1
 HKR,, OverRideMonitorPower, %REG_DWORD%, 0
@@ -53,7 +49,7 @@ Third, the code sets the value of the **MultiFunctionSupported** entry to 1 (in 
 
 Most video miniport drivers are not VGA-compatible and require no **VgaCompatible** entry in the registry. If your video miniport driver is VGA-compatible, add the **VgaCompatible** entry to the registry and set its value to 1 (**TRUE**) in the add registry section, as shown here:
 
-```
+```cpp
 [ACME-1234_SoftwareDeviceSettings]
 HKR,, VgaCompatible, %REG_DWORD%, 1
 ```
@@ -62,7 +58,7 @@ For more information about VGA-compatible video miniport drivers, see [VGA-Compa
 
 The following delete-registry section deletes three registry entries: **GraphicsClocking**, **MemClocking**, and **CapabilityOverride**.
 
-```
+```cpp
 [ACME-1234_DeleteSWSettings]
 HKR,, GraphicsClocking
 HKR,, MemClocking
@@ -166,26 +162,26 @@ The *regstr.h* header file, which is shipped with the Windows Driver Kit (WDK), 
 
 Two types of settings exist: global and platform-specific. The registry contains the global entries at the following location:
 
-```
+```cpp
 HKLM,"SYSTEM\CurrentControlSet\Control\AGP"
 ```
 
 You can find the platform-specific entries under "Parameters" in the filter-driver service key. For example, these entries exist for the hypothetical AcmeAGP adapter in the following location in the registry:
 
-```
+```cpp
 HKLM,"SYSTEM\CurrentControlSet\Services\AcmeAGP\Parameters"
 ```
 
 To disable sideband addressing for a device that has a DeviceID of 0x012A (Nuclear3D) and a VendorID of 0x1AD0 on VIA Technologies platforms, add a **Nuclear3D\_Install.HW** section to your INF file. (For more information about this type of INF Install section, see [**INF DDInstall.HW Section**](https://msdn.microsoft.com/library/windows/hardware/ff547330).) In this section, include an [**AddReg**](https://msdn.microsoft.com/library/windows/hardware/ff546320) directive similar to the following:
 
-```
+```cpp
 [Nuclear3D_Install.HW] 
 AddReg = Nuclear3D_Reg 
 ```
 
 Next, create the following section, which the **AddReg** directive points to:
 
-```
+```cpp
 [Nuclear3D_Reg] 
 HKLM,"SYSTEM\CurrentControlSet\Services\viaagp\Parameters","1AD0012A",0x00030003,00,01,00,00,00,00,00,00 
 ```
@@ -198,7 +194,7 @@ The preceding entry indicates that the subkey identified by the string following
 
 Suppose you determine that AGP 4X is broken on every chipset for this same device. To indicate this fact, add a second entry to the Nuclear3D\_Reg section:
 
-```
+```cpp
 [Nuclear3D_Reg] 
 HKLM,"SYSTEM\CurrentControlSet\Services\viaagp\Parameters","1AD0012A",0x00030003,00,01,00,00,00,00,00,00 
 HKLM,"SYSTEM\CurrentControlSet\Control\AGP","1AD0012A",0x00030003,04,00,00,00,00,00,00,00 

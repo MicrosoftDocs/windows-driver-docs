@@ -3,6 +3,7 @@ title: ISCSI\_Supported\_LB\_Policies WMI Class
 description: ISCSI\_Supported\_LB\_Policies WMI Class
 ms.assetid: c11eebe8-519a-473d-9e9c-8a787333223e
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # ISCSI\_Supported\_LB\_Policies WMI Class
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 
 The ISCSI\_Supported\_LB\_Policies WMI class contains information about the supported load balance policy for a multi connection iSCSI session. This class is defined as follows in *Mgmt.mof.*
 
-```
+```cpp
 class ISCSI_Supported_LB_Policies {
 
     [WmiDataId(1),

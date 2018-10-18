@@ -5,9 +5,6 @@ ms.assetid: 466d4864-8840-47b2-9a9a-302a125bf095
 keywords: ["Bug Check 0x7A KERNEL_DATA_INPAGE_ERROR", "KERNEL_DATA_INPAGE_ERROR"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -5,9 +5,6 @@ ms.assetid: F1D378E9-CD5D-4DA3-A200-DAED66284534
 keywords: ["Bug Check 0x12D VOLSNAP_OVERLAPPED_TABLE_ACCESS", "VOLSNAP_OVERLAPPED_TABLE_ACCESS"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

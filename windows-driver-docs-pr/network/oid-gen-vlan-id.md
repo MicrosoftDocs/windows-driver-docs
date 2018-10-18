@@ -3,11 +3,7 @@ title: OID_GEN_VLAN_ID
 author: windows-driver-content
 description: As a query, the OID_GEN_VLAN_ID OID reports the configured VLAN identifier (ID) for a NIC.
 ms.assetid: 4e024951-a578-4f69-873d-879aecc96e68
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_VLAN_ID Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

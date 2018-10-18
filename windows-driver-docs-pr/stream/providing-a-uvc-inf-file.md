@@ -8,11 +8,7 @@ keywords:
 - UVC INF files WDK USB Video Class
 - UVC INF files WDK USB Video Class , sample code
 - sample code WDK USB Video Class , UVC INF files
-ms.author: windowsdriverdev
 ms.date: 9/12/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +24,7 @@ Be aware, however, that you must install this specific sample by using an INF fi
 
 To do so, include the following code in the INF file, here arbitrarily named *Xuplgin.inf*:
 
-```
+```INF
 ; Copyright (c) CompanyName. All rights reserved.
 
 [Version]
@@ -56,7 +52,7 @@ MyDevice.CopyList=11    ; %systemroot%\system32 on
 
 The device-specific INF file is matched with the device based on the VID/PID identifier. In this case, the device-specific INF file takes precedence over *Usbvideo.inf*.
 
-```
+```INF
 [CompanyName]
 %MyDevice.DeviceDesc%=MyDevice,USB\Vid_XXXX&Pid_XXXX&MI_XX
 
@@ -70,7 +66,7 @@ CopyFiles=MyDevice.CopyList
 
 The following portion of the INF file shows the registry entries for a node-based Extension Unit plug-in. Refer to *Usbvideo.inf* for similar examples.
 
-```
+```INF
 [MyDevice.PlugIns]
 HKCR,CLSID\%Plugin.CLSID%,,,%PlugIn_IExtensionUnit%
 HKCR,CLSID\%Plugin.CLSID%\InprocServer32,,,MyPlugin.ax
@@ -87,7 +83,7 @@ HKLM,System\CurrentControlSet\Control\NodeInterfaces\%XU_GUID%,
    CLSID,1,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz
 ```
 
-```
+```INF
 [MyDevice.NT.Interfaces]
 AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,MyDevice.Interface
 AddInterface=%KSCATEGORY_RENDER%,GLOBAL,MyDevice.Interface
@@ -150,7 +146,7 @@ You can also define an optional registry value called **UvcFlags**. **UvcFlags**
 
 Include a line similar to the following example to specify the bitmask to be applied:
 
-```
+```INF
 HKR,,UvcFlags,0x00010001,0x00000010
 ```
 
@@ -160,7 +156,7 @@ In low frame rate conditions, the EOF bit might report completion faster than th
 
 For more information about the positional syntax of AddReg directives, see [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320).
 
-```
+```INF
 [MyDevice.NT.Services]
 AddService = usbvideo,0x00000002,MyDevice.ServiceInstall
 
@@ -175,7 +171,7 @@ ServiceBinary = %10%\System32\Drivers\usbvideo.sys
 MyPlugin.ax
 ```
 
-```
+```INF
 [Strings]
 ; Non-localizable
 Plugin.CLSID="{zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz}"
@@ -196,11 +192,3 @@ USBVideo.SvcDesc="USB Video Device (WDM)"
 
 PlugIn_IMyExtensionUnit="CompanyName Extension Unit Interface"
 ```
-
- 
-
- 
-
-
-
-

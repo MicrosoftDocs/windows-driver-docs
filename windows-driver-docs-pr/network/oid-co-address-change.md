@@ -5,11 +5,7 @@ description: This topic describes the OID_CO_ADDRESS_CHANGE object identifier (O
 ms.assetid: 18b185dd-b282-4182-a761-008e5d0c88d7
 keywords:
 - OID_CO_ADDRESS_CHANGE
-ms.author: windowsdriverdev
 ms.date: 11/03/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -3,11 +3,7 @@ title: SO_WSK_SECURITY
 author: windows-driver-content
 description: SO_WSK_SECURITY
 ms.assetid: 169680ba-6486-48fe-89d7-dcd4e5930605
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - SO_WSK_SECURITY Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

@@ -5,11 +5,7 @@ ms.assetid: a55192c6-3de4-4433-8825-3393f2bce04a
 keywords:
 - video miniport drivers WDK Windows 2000 , multiple Windows versions, converting a Windows NT 4.0 driver
 - converting video miniport drivers WDK Windows 2000
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,7 +32,7 @@ A good Windows NT 4.0 and previous miniport driver can easily become a Windows 2
 
 -   Update the **.Mfg** section of the driver's INF file to include the device and vendor ID. This is required so that the PnP manager can associate the device with its INF file. Samples of the Windows NT 4.0 and updated Windows 2000 and later **.Mfg** sections follow:
 
-    ```
+    ```cpp
     [ABC.Mfg]   ; Windows NT V4.0 INF
     %ABC% ABC Graphics Accelerator A = abc
     %ABC% ABC Graphics Accelerator B = abc

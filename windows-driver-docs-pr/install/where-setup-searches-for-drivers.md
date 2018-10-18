@@ -6,11 +6,7 @@ keywords:
 - driver selections WDK device installations , where Device setupsearches
 - locating drivers for device installation WDK device installations , where Device setupsearches
 - searching for drivers during device installation WDK device installations , where Device setupsearches
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -61,7 +57,7 @@ After a device is attached, Windows first attempts to locate and install a drive
 
     Windows also searches for driver packages that were preloaded in the locations that are specified by the **DevicePath** registry value. This value is under the following subkey of the registry.
 
-    ```
+    ```cpp
     HKEY_LOCAL_MACHINE
        Software
           Microsoft

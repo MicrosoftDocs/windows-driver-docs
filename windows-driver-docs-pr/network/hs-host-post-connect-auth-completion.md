@@ -5,11 +5,7 @@ description: The HS_HOST_POST_CONNECT_AUTH_COMPLETION function indicates the suc
 ms.assetid: 2c69802b-968b-400c-b02c-c2d39fa51d5a
 keywords: 
 - typedef DWORD (WINAPI HS_HOST_POST_CONNECT_AUTH_COMPLETION) function Network Drivers Starting with Windows Vista
-ms.author: windowsdriverdev
 ms.date: 07/31/2017 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

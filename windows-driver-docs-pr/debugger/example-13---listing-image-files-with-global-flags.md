@@ -3,10 +3,7 @@ title: Example 13 Listing Image Files with Global Flags
 description: Example 13 Listing Image Files with Global Flags
 ms.assetid: 1b1285d5-ed73-49c4-a123-de9cbdb3090c
 ms.author: domars
-ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---
 
@@ -24,13 +21,13 @@ To determine which image files have flags set, use Reg (reg.exe), a tool include
 
 The following Reg **Query** command searches for the **GlobalFlag** registry entry in the specified registry path. The **-v** parameter specifies the **GlobalFlag** registry entry. The **/s** parameter makes the search recursive.
 
-```
+```console
 reg query "HKLM\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options" /v GlobalFlag /s
 ```
 
 In response, Reg displays all instances of the **GlobalFlag** registry entry in the path and the value of the entry.
 
-```
+```console
 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\notepad.exe
     GlobalFlag    REG_SZ    0x00001000
 

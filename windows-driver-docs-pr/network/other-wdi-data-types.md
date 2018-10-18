@@ -5,11 +5,7 @@ description: This topic describes other data types for WDI miniport drivers.
 ms.assetid: 33103199-03ED-4DF9-A3EB-C0E154747C78
 keywords:
 - Other WDI data types, WDK other WDI data types network drivers
-ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

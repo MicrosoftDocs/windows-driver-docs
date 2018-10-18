@@ -4,9 +4,6 @@ description: You can use Microsoft Visual Studio to set up and perform kernel-mo
 ms.assetid: E7A289CA-29CE-4C6F-AD08-529E58379715
 ms.author: domars
 ms.date: 10/08/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

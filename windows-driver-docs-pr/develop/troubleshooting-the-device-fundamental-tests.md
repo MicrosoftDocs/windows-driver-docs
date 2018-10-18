@@ -2,11 +2,7 @@
 ms.assetid: 52505804-4367-43F4-858D-966255CA121D
 title: Troubleshooting the Device Fundamentals tests using the WDK
 description: This topic provides suggestions for fixing problems you might encounter when you use the WDK to run the Device Fundamentals Tests.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -66,7 +62,7 @@ You might see several messages before you see the message **The network path was
 
  
 
-```
+```cpp
 Connecting to computer "MyComputer"
 Installing driver test automation service
 Getting computer system information
@@ -84,7 +80,7 @@ You might see several messages before you see the message **The network name can
 
  
 
-```
+```cpp
 Connecting to computer "NonExistentComputer"
 Installing driver test automation service
 Getting computer system information
@@ -97,7 +93,7 @@ The messages that are displayed when you enter an incorrect target computer name
 
  
 
-```
+```cpp
 Connecting to computer "NonExistentComputer"
 Installing driver test automation service
 Could not access remote machine "NonExistentComputer" over the network. 
@@ -108,7 +104,7 @@ target machine.
 
 Or you might be prompted to enter credentials.
 
-```
+```cpp
 Enter your password to connect to: NonExistentComputer
 ```
 
@@ -123,7 +119,7 @@ When you start to provision a target computer, you might see a message that says
 1.  Deploy the driver with breakpoints disabled. 
 2.  Manually break into the kernel-mode debugger. 
 3.  Set an exception on load of the module:
-```
+```cpp
 sxe ld <DriverName>
 ``` 
 4.  Enable the breakpoint and resume execution. 

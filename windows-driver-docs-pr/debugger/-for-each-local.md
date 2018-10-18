@@ -5,9 +5,6 @@ ms.assetid: 2b1d65e6-6322-404e-a94b-90a46035fe9e
 keywords: ["for_each_local Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!for\_each\_local** extension executes a debugger command one time for each local variable in the current frame.
 
-```
+```dbgcmd
 !for_each_local ["CommandString"] 
 !for_each_local -? 
 ```

@@ -2,11 +2,7 @@
 Description: Device, configuration, and interface descriptors may contain references to string descriptors. This topic describes how to get a particular string descriptor from the device.
 title: USB String Descriptors
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ Because the string descriptor consists of variable-length data, the driver must 
 
 The following code demonstrates how to request the *i*-th string descriptor, with language ID *langID*:
 
-```
+```cpp
 USB_STRING_DESCRIPTOR USD, *pFullUSD;
 UsbBuildGetDescriptorRequest(
     pURB, // points to the URB to be filled in

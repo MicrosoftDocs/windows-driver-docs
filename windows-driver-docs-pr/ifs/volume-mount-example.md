@@ -8,11 +8,7 @@ keywords:
 - file system filter drivers WDK , volume mount process
 - mounting volumes WDK file systems
 - volumes WDK file system , mounting
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

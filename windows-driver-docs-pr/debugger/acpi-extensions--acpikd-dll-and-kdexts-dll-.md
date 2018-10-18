@@ -5,9 +5,6 @@ ms.assetid: 1b1df290-b65b-4066-baf5-0f283990467f
 keywords: ["ACPI debugging, extensions (acpikd.dll and kdexts.dll)", "acpikd.dll (ACPI extensions)", "extensions, ACPI"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

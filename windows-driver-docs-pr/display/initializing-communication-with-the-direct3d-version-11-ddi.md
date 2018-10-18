@@ -5,11 +5,7 @@ ms.assetid: 3b383f78-da88-4979-b55f-8e234f230df7
 keywords:
 - Direct3D version 11 WDK Windows 7 display , initializing DDI communication
 - Direct3D version 11 WDK Windows Server 2008 R2 display , initializing DDI communication
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +28,7 @@ To initialize communication with the user-mode display driver DLL's version 11 D
 
 There are at least two new DDI versions for the Direct3D 11 DDI functions. Each DDI version distinguishes whether the DDI runs on Windows Vista or Windows 7. However, support of the Direct3D 11 DDI does not necessarily indicate full support of the hardware features that are associated with D3D\_FEATURE\_LEVEL\_11. Drivers can support the new threading features of the Direct3D 11 DDI with hardware that does not support the other features that are exposed by the Direct3D 11 DDI, like tessellation, and so on. The following code shows how each DDI version is distinguished:
 
-```
+```cpp
 // D3D11.0 on Vista
 #define D3D11_DDI_MAJOR_VERSION 11
 #define D3D11_0_DDI_MINOR_VERSION ...

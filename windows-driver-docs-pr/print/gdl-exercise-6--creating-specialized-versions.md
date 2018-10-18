@@ -9,11 +9,7 @@ keywords:
 - tutorials WDK GDL
 - GDL WDK , tutorials
 - constructs WDK GDL , creating specialized versions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,7 +32,7 @@ Make this change without deleting or modifying any of the previously defined tem
 
 The following code example shows one possible answer.
 
-```
+```cpp
 *Template:  MIN_SIZE
 {
     *Name: "*MinSize"
@@ -79,7 +75,7 @@ The following code example shows one possible answer.
 
 The following code example shows a sample GDL data file for verification.
 
-```
+```cpp
 *PFeature: random
 {
     *Name:  "Generic Feature"

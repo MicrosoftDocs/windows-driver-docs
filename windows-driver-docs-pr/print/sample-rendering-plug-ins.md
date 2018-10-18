@@ -5,11 +5,7 @@ description: Sample Rendering Plug-Ins
 ms.assetid: 347c5105-345d-4129-8bb2-7ce1770f83a4
 keywords:
 - rendering plug-ins WDK print , samples
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -6,11 +6,7 @@ keywords:
 - deinterlacing WDK DirectX VA , 64-bit
 - 64-bit WDK DirectX VA
 - DXVA_DeinterlaceBltEx
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +24,7 @@ With two extra DWORD members included in DXVA\_VideoSample2 for 64-bit compile, 
 
 The following example code demonstrates how the driver should handle the thunk:
 
-```
+```cpp
 switch (lpData->dwFunction) {
 case DXVA_DeinterlaceBltExFnCode:
     {   DXVA_DeinterlaceBltEx* pBlt = (DXVA_DeinterlaceBltEx*)lpData->lpInputData; 

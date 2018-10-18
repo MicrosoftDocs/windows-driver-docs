@@ -10,11 +10,7 @@ keywords:
 - configurable pins WDK audio drivers
 - formats WDK audio , pin data ranges
 - intersections WDK audio drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +29,7 @@ Before connecting a configurable pin to serve as a sink or source for a wave or 
 
 For each type of configurable pin, a miniport driver describes the various stream data formats that the pin can handle. These parameter ranges can be specified as an array of data-range descriptors, as shown in the following code example.
 
-```
+```cpp
 static KSDATARANGE_AUDIO PinDataRangesPcm[] =
 {
     {

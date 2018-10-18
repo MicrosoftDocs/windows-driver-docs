@@ -1,11 +1,7 @@
 ---
 Description: Supporting Device Events
 title: Supporting Device Events
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +28,7 @@ The event GUID for this custom event is defined in *Stdafx.h*. In **WpdBaseDrive
 2.  Serializes the **IPortableDeviceValues** into a BYTE buffer.
 3.  Calls **IWDFDevice::PostEvent** that has the EventGuid set to WPD\_EVENT\_NOTIFICATION, the event type set to WdfEventBroadcast, and the serialized BYTE buffer of the event parameters:
 
-```
+```cpp
 if (hr == S_OK)
 {
     // Initialize the event parameters

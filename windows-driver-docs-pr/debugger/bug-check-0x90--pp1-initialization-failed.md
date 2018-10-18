@@ -5,9 +5,6 @@ ms.assetid: 8dd46d24-0174-4310-953e-7b451ae34c71
 keywords: ["Bug Check 0x90 PP1_INITIALIZATION_FAILED", "PP1_INITIALIZATION_FAILED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

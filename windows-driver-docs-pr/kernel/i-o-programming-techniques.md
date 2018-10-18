@@ -4,11 +4,7 @@ author: windows-driver-content
 description: I/O Programming Techniques
 ms.assetid: 642746ba-d94e-4ffb-ba58-bb8a5650bea3
 keywords: ["I/O WDK kernel", "kernel-mode drivers WDK , I/O techniques", "IO WDK See I/O WDK", "transferring data WDK kernel", "data transfers WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

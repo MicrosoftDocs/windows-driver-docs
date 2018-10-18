@@ -5,11 +5,7 @@ description: This topic describes the OID_802_3_XMIT_LATE_COLLISIONS object iden
 ms.assetid: AD3D984C-8E07-48B2-9B96-30272AEFEE64
 keywords:
 - OID_802_3_XMIT_LATE_COLLISIONS
-ms.author: windowsdriverdev
 ms.date: 11/01/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

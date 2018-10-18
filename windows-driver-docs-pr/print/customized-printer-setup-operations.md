@@ -6,11 +6,7 @@ ms.assetid: 888125e9-a057-4e86-9df8-0086cedb368d
 keywords:
 - customized printer setup operations WDK
 - INF files WDK print , customized setup operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,7 +35,7 @@ where *FileName* is the name of a DLL containing a setup function, and *Function
 
 To copy one or more files to the %windir%\\system32 directory, you can add the name of an INF-writer-defined section to the INF **DestinationDirs** section. In the following example, the OEMVendorFiles section lists all of the files that are to be copied.
 
-```
+```cpp
 [DestinationDirs]
 OEMVendorFiles = 11
 ...

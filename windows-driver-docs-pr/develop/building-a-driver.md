@@ -2,11 +2,7 @@
 ms.assetid: f5676c9c-b582-47d0-9b7c-02b6443103ad
 title: Building a Driver with the WDK
 description: This topic describes how to build a driver with the Windows Driver Kit (WDK).
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,19 +58,19 @@ You can build a driver from the command line using the **Visual Studio Command P
 
     For example, to perform a clean build of a Visual Studio driver project called MyDriver.vcxproj using the default Platform and Configuration, navigate to the project directory and enter the following MSBuild command:
 
-    ```
+    ```cpp
     msbuild /t:clean /t:build .\MyDriver.vcxproj
     ```
 
     **Syntax** - To specify a specific configuration and platform, use the following command syntax:
 
-    ```
+    ```cpp
     msbuild /t:clean /t:build ProjectFile /p:Configuration=<Debug|Release> /p:Platform=architecture /p:TargetPlatformVersion=a.b.c.d /p:TargetVersion=OS    
     ```
 
     For example, the following command builds a Universal Windows driver for the "Debug" configuration, "Win32" platform, and for Windows 10.
 
-    ```
+    ```cpp
     msbuild /t:clean /t:build .\MyDriver.vcxproj /p:Configuration="Debug" /p:Platform=Win32 /p:TargetVersion=”Windows10” /p:TargetPlatformVersion=”10.0.10010.0”
     ```
 

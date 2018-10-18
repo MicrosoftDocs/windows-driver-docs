@@ -5,9 +5,6 @@ ms.assetid: c0d0af2f-1852-47a4-8f01-95f6ec198112
 keywords: ["r (Registers) Windows Debugging"]
 ms.author: domars
 ms.date: 07/11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

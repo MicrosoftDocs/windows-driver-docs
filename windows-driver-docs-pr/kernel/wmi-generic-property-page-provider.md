@@ -4,11 +4,7 @@ author: windows-driver-content
 description: WMI Generic Property Page Provider
 ms.assetid: 44cfafdf-c8e2-4175-95e5-3c5d03dc206d
 keywords: ["WMI WDK kernel , property sheets", "property sheets WDK WMI", "generic property page providers WDK WMI", "property pages WDK WMI", "property qualifiers WDK WMI", "device property sheets WDK WMI"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,7 +48,7 @@ Each device that exposes classes to be used by Wmiprop.dll must enable Wmiprop.d
 
 For example:
 
-```
+```cpp
 ; This section is defined in the Co-installer section, as follows.
 ; [Co-installer]
 ; AddReg = CoInstaller_AddReg
@@ -66,7 +62,7 @@ HKLM, System\CurrentControlSet\Control\CoDeviceInstallers, ClassGUID,
 
 You must also specify the particular WMI classes to be exposed through the generic property provider. To do this, set the **WmiConfigClasses** value-entry to be a comma-separated list of the WMI classes in the *add-registry-section* of the device class or device hardware instance.
 
-```
+```cpp
 ; the device class AddReg section.
 [device_class_AddReg]
 HKR,,"WmiConfigClasses",0x00000000,"class1,class2"

@@ -9,11 +9,7 @@ api_name:
 - wscn ExposureSettings
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ExposureSettings** element contains individual adjustment values 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ExposureSettings>
   child elements
 </wscn:ExposureSettings>
@@ -80,7 +76,7 @@ There are no attributes.
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Brightness**](brightness.md)

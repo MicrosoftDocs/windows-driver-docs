@@ -7,11 +7,7 @@ keywords:
 - INF files WDK display , CatalogFile directive
 - CatalogFile directive WDK display
 - LayoutFile directive WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ ms.localizationpriority: medium
 
 You must not specify any information for the **LayoutFile** and **CatalogFile** directives in the **Version** section. The following example shows a typical **Version** section:
 
-```
+```cpp
 [Version]
 Signature="$Windows NT$"
 Provider=%MSFT%

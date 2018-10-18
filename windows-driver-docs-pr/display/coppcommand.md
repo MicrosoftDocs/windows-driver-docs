@@ -8,11 +8,7 @@ keywords:
 - protected video WDK COPP , video miniport driver code template
 - video miniport drivers WDK Windows 2000 , COPP code template
 - certified output protection protocol
-ms.author: windowsdriverdev
 ms.date: 02/16/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

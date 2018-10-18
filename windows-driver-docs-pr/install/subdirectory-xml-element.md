@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # subDirectory XML Element
@@ -21,7 +22,7 @@ The **subDirectory** XML element specifies one or all the subdirectories under t
 
 ### Element Tag
 
-```
+```cpp
 <subDirectory>
 ```
 
@@ -66,7 +67,7 @@ None
 
 The following code example demonstrates a **search** element that contains one **subDirectory** element that specifies an *i386* subdirectory under the DPInst working directory. The text that specifies the custom subdirectory is shown in bold font style.
 
-```
+```cpp
 <dpinst>
   ...
   <search>
@@ -78,7 +79,7 @@ The following code example demonstrates a **search** element that contains one *
 
 The following code example demonstrates a **search** element that contains a **subDirectory** element that specifies all of the subdirectories under the DPInst working directory. The wildcard character (\*) that specifies all of the subdirectories is shown in bold font style.
 
-```
+```cpp
 <search>
   <subDirectory>*</subDirectory>
 </search>

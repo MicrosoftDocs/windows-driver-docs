@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # scanHardware XML Element
@@ -21,7 +22,7 @@ The **scanHardware** XML element is an empty element that sets the **scanHardwar
 
 ### Element Tag
 
-```
+```cpp
 <scanHardware>
 ```
 
@@ -64,7 +65,7 @@ By default, the **scanHardware** flag is set to OFF. You can set the **scanHardw
 
 The following code example demonstrates a **scanHardware** element.
 
-```
+```cpp
 <dpinst>
   ...
   <scanHardware/>

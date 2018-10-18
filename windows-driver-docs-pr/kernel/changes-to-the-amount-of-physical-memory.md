@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Changes to the Amount of Physical Memory
 ms.assetid: 5ab1d598-e702-4fc7-aab4-7b7726c3a552
 keywords: ["dynamic hardware partitioning WDK , physical memory", "hardware partitioning WDK dynamic , physical memory", "partitions WDK dynamic hardware , physical memory", "physical memory WDK dynamic hardware partitioning", "memory WDK dynamic hardware partitioning"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

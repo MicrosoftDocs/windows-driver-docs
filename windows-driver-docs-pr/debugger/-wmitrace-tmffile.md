@@ -5,9 +5,6 @@ ms.assetid: 37ad335b-7604-466b-b328-7aebbc2fb5c1
 keywords: ["wmitrace.tmffile Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

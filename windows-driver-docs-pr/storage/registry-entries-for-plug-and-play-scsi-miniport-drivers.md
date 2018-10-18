@@ -9,11 +9,7 @@ keywords:
 - Plug and Play WDK SCSI
 - PnPInterface
 - registry WDK SCSI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,7 +31,7 @@ Unless a miniport driver is installed as a service for an HBA, the **PnPInterfac
 
 The **PnPInterface** registry entry should be made under the **Services** key for the miniport driver. For example, the following registry entry enables Plug and Play for a fictitious miniport driver called Twiddle.
 
-```
+```cpp
 HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services
     \Twiddle
         \Parameters

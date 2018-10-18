@@ -5,9 +5,6 @@ ms.assetid: e49c816f-963c-4383-a3bf-c03b2c0cfa39
 keywords: ["desktops", "dskheap Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!dskheap** extension displays desktop heap information for a specified session.
 
-```
+```dbgcmd
 !dskheap [-v] [-s SessionID]
 ```
 
@@ -67,7 +64,7 @@ The desktop heap information for the session is arranged by window station.
 
 Here are a couple of examples:
 
-```
+```dbgcmd
 kd> !dskheap -s 3
 ##   Winstation\Desktop            Heap Size(KB)   Used Rate(%)
 

@@ -8,11 +8,7 @@ keywords:
 - DeviceProperties_RunDLL WDK device installations
 - machine-name-parameter field WDK device installations
 - device-instance-ID-parameter field WDK device inst
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ ms.localizationpriority: medium
 
 The DeviceProperties_RunDLL function opens the device properties dialog box for a specified device that is installed on a local or remote computer.
 
-```
+```cpp
 void DeviceProperties_RunDLL(
   HWND       hwndStub,
   HINSTANCE  hAppInstance,
@@ -67,17 +63,17 @@ On Windows XP, the *machine-name-parameter* field is required only for a remote 
 The following are examples of command-line strings:
 
 -   (Windows XP and later) Specifying the local computer is optional, in which case the command-line string is required to include only the device instance identifier. For example, the following command-line specifies the local computer by default and the device instance identifier "root\\system\\0000".
-    ```
+    ```cpp
     /DeviceId root\system\0000
     ```
 
 -   (Windows 2000 and later) The following command-line string supplies the remote computer name "\\\\RemoteMachineAbc" and the device instance identifier "root\\system\\0000".
-    ```
+    ```cpp
     /MachineName \\RemoteMachineAbc /DeviceId root\system\0000
     ```
 
 -   (Windows 2000 and later) The following command-line string specifies a local computer, which is specified by a pair of quotation marks (""), and supplies the device instance identifier "root\\system\\0000".
-    ```
+    ```cpp
     /MachineName "" /DeviceId root\system\0000
     ```
 

@@ -9,11 +9,7 @@ api_name:
 - wscn ScalingRangeSupported
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ScalingRangeSupported** element describes the range of values tha
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScalingRangeSupported>
   child elements
 </wscn:ScalingRangeSupported>
@@ -82,7 +78,7 @@ Remarks
 
 The [**ScalingWidth**](scalingwidth2.md) and [**ScalingHeight**](scalingheight2.md) elements specify the scaling range for the width and height of an image, respectively.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DeviceSettings**](devicesettings.md)

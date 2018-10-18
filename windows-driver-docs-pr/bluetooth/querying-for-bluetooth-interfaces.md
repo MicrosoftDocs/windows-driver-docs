@@ -6,11 +6,7 @@ keywords:
 - Bluetooth WDK , interface queries
 - querying Bluetooth interfaces
 - interfaces WDK Bluetooth
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -73,7 +69,7 @@ The following pseudocode example demonstrates how to set up an IRP\_MN\_QUERY\_I
 
  
 
-```
+```cpp
 #include <bthddi.h>
 
 ...

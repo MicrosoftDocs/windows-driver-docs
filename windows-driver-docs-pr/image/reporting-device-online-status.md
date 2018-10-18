@@ -3,11 +3,7 @@ title: Reporting Device Online Status
 author: windows-driver-content
 description: Reporting Device Online Status
 ms.assetid: 59ce747a-bb5e-4e8c-ab4a-d3f4432f17e6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,7 +47,7 @@ The **IStiUSD::GetNotificationData** method is called for polled events and inte
 
 The following example shows an implementation of the **IStiUSD::GetStatus** method.
 
-```
+```cpp
 STDMETHODIMP CWIADevice::GetStatus(PSTI_DEVICE_STATUS pDevStatus)
 {
   //

@@ -6,11 +6,7 @@ keywords:
 - Direct3D version 10.1 WDK display , version numbers
 - version numbers WDK display
 - version numbers WDK display , Direct3D version 10.1
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ Direct3D versions 10.0 and 10.1 supply \#defines that the user-mode display driv
 
 The user-mode display driver should only examine the most significant 16 bits of the **Version** member of the [**D3D10DDIARG\_OPENADAPTER**](https://msdn.microsoft.com/library/windows/hardware/ff541724), [**D3D10DDIARG\_CREATEDEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff541664), and [**D3D10DDIARG\_CALCPRIVATEDEVICESIZE**](https://msdn.microsoft.com/library/windows/hardware/ff541649) structures to determine when the Direct3D runtime is built. This value is manually bumped every time there is a non-breaking Direct3D DDI change. The driver might come to depend on each non-breaking DDI change over time. Therefore, the driver should ensure that the passed in DDI build version is greater than or equal to the \*\_BUILD\_VERSION of the current driver and fail out if the driver is incompatible (perhaps while also providing a registry workaround). The least significant 16 bits of the **Version** member is the DDI revision version. The least significant 16 bits of **Version** is typically used to special case the driver based on bugs that are present in the Direct3D API. The driver must succeed creation for all values. However, the driver can change behavior depending on certain values. You should compare with these values by using &gt;= because the numbers might rise arbitrarily due to runtime fixes. Also, you should not use "&gt; (previous broken version)" (rather than "&gt;= working version") because new revisions might appear that have version numbers between the two known numbers and do not contain the required fixes. The following \#defines are for Direct3D DDI versioning:
 
-```
+```cpp
 #define D3D10_DDI_MAJOR_VERSION 10
 #define D3D10_0_DDI_MINOR_VERSION 1
 #define D3D10_0_DDI_INTERFACE_VERSION ((D3D10_DDI_MAJOR_VERSION << 16) | D3D10_0_DDI_MINOR_VERSION)

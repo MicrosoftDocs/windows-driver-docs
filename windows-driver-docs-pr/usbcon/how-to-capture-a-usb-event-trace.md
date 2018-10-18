@@ -2,11 +2,7 @@
 Description: This topic provides information about using the Logman tool to capture a USB ETW event trace. 
 title: How to capture a USB event trace with Logman
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,7 +30,7 @@ Instructions
 1.  Open a command-prompt window that has administrative privileges. To do so, click Start, type **cmd** in the search box, right-click cmd.exe, and then select **Run as administrator**.
 2.  In the command-prompt window, enter these commands to start a capture session:
 
-    ```
+    ```cpp
     logman create trace -n usbtrace -o %SystemRoot%\Tracing\usbtrace.etl -nb 128 640 -bs 128
     logman update trace -n usbtrace -p Microsoft-Windows-USB-USBXHCI (Default,PartialDataBusTrace)
     logman update trace -n usbtrace -p Microsoft-Windows-USB-UCX (Default,PartialDataBusTrace)
@@ -53,7 +49,7 @@ Instructions
 
     You can stop USB hub and port event collection by running the following command:
 
-    ```
+    ```cpp
     logman stop -n usbtrace 
     logman delete -n usbtrace
     move /Y %SystemRoot%\Tracing\usbtrace_000001.etl %SystemRoot%\Tracing\usbtrace.etl
@@ -136,7 +132,7 @@ You can filter events based on keywords depending on your requirements. Here are
 
 As an example, here is a sequence of commands that start a session to capture USB device power transitions. Due to the selection of providers (the USB 3.0 driver stack), events are captured only for devices that are connected downstream of a USB 3.0 host controller.
 
-```
+```cpp
 logman create trace -n usbtrace -o %SystemRoot%\Tracing\usbtrace.etl -nb 128 640 -bs 128
 logman update trace -n usbtrace -p Microsoft-Windows-USB-USBXHCI (Rundown,Power)
 logman update trace -n usbtrace -p Microsoft-Windows-USB-UCX (Rundown,Power)
@@ -150,7 +146,7 @@ logman start -n usbtrace
 
 A useful ETW keyword for USB devices is the USB port driver’s PowerDiagnostics flag. When you use this keyword, the port driver logs host-controller and endpoint information but omits all events that describe transfers. If you do not need to see the transfer events, you can use the PowerDiagnostics keyword to reduce the size of a trace log by as much as 85 percent. Specify the PowerDiagnostics keyword when you start the trace, as shown in the following example:
 
-```
+```cpp
 Logman start Usbtrace -p Microsoft-Windows-USB-USBPORT PowerDiagnostics -o usbtrace.etl -ets -nb 128 640 -bs 128
 
 Logman update Usbtrace -p Microsoft-Windows-USB-USBHUB –ets
@@ -159,7 +155,7 @@ Logman update Usbtrace -p Microsoft-Windows-USB-USBHUB –ets
 
 If your filtered trace log has many host controller asynchronous schedule enable and disable events, you can filter them out when viewing the log by using a Netmon filter, as shown in the following example:
 
-```
+```cpp
 NOT (Description == "USBPort_MicrosoftWindowsUSBUSBPORT:Host Controller Async Schedule Enable" 
 OR Description == "USBPort_MicrosoftWindowsUSBUSBPORT:Host Controller Async Schedule Disable")
 ```

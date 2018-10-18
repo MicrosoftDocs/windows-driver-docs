@@ -5,9 +5,6 @@ ms.assetid: 44009878-8f8a-4301-b075-eb0164b4f3a3
 keywords: ["SymStore Command-Line Options Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -6,11 +6,7 @@ ms.assetid: 4940e38d-107b-45c4-aa71-6e8543330f39
 keywords:
 - postoperation callback routines WDK file system minifilter , writing
 - writing callback routines
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,7 +32,7 @@ Minifilter drivers receive only those types of I/O operations for which they hav
 
 Every postoperation callback routine is defined as follows:
 
-```
+```cpp
 typedef FLT_POSTOP_CALLBACK_STATUS 
 (*PFLT_POST_OPERATION_CALLBACK) ( 
     IN OUT PFLT_CALLBACK_DATA Data, 

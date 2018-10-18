@@ -3,11 +3,7 @@ title: Interfaces for Segmentation Filters
 author: windows-driver-content
 description: Interfaces for Segmentation Filters
 ms.assetid: 428f6fce-d76c-4485-aa92-39f2b608160d
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,7 +35,7 @@ A segmentation filter must support all the image formats supported by the driver
 
 To create the child items, the segmentation filter calls the **IWiaItem2::CreateChildItem** method. The following is an example of such a call:
 
-```
+```cpp
 lItemFlags = WiaItemTypeGenerated | WiaItemTypeTransfer | WiaItemTypeImage | WiaItemTypeFile |
  WiaItemTypeProgrammableDataSource;
 

@@ -12,11 +12,7 @@ keywords:
 - IRPs WDK IEEE 1394 bus
 - transferring data WDK IEEE 1394 bus
 - PDOs WDK IEEE 1394 bus
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

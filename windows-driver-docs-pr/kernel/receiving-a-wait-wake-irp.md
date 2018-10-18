@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Receiving a Wait/Wake IRP
 ms.assetid: 88fa7189-4897-484a-9cf4-b35e56e99d61
 keywords: ["power management WDK kernel , wake-up capabilities", "external wake signals WDK", "awakening devices", "wake-up capabilities WDK power management", "device wake ups WDK power management", "IRP_MN_WAIT_WAKE", "receiving wait/wake IRPs", "wait/wake IRPs WDK power management , receiving"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -11,11 +11,7 @@ keywords:
 - GenerateInkLevels
 - INKLEVELS
 - translating 8-bit-per-pixel halftone indexes WDK GDI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +27,7 @@ This function can be used to generate either a Windows 2000 CMY mode or a post-W
 
 ### <span id="inklevels_structure"></span><span id="INKLEVELS_STRUCTURE"></span>INKLEVELS Structure
 
-```
+```cpp
 typedef struct _INKLEVELS {
    BYTE  Cyan;          // Cyan level from 0 to max
    BYTE  Magenta;       // Magenta level from 0 to max
@@ -46,7 +42,7 @@ The **GenerateInkLevels** function computes an 8-bit-per-pixel translation table
 
 When this function is called, the *pInkLevels* parameter must point to a valid memory location of 256 INKLEVELS entries. If the function returns **TRUE**, then *pInkLevels* can be used to translate 8-bit-per-pixel indexes to ink levels, or to map to the older CMY332 indexes. If the function is called with *CMYMask* set to an invalid value (a value from 3 to 255 in which any of the cyan, magenta, or yellow levels is zero), the function returns **FALSE**.
 
-```
+```cpp
 BOOL
 GenerateInkLevels(
     PINKLEVELS  pInkLevels,  // Pointer to 256 INKLEVELS table

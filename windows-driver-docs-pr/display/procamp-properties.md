@@ -4,11 +4,7 @@ description: ProcAmp Properties
 ms.assetid: 412c9144-dd52-4b36-bea1-b17c9c2c95b3
 keywords:
 - ProcAmp WDK DirectX VA , properties
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -84,13 +80,13 @@ The driver should ensure that the following relationships hold:
 -   The maximum range value is greater than the minimum range value. This implies that the difference between the maximum and minimum value is greater than 0.0.
 
 -   The default and maximum values fall on valid locations as specified by the step size increment, as shown in the following expressions:
-    ```
+    ```cpp
     min + (int((default - min) / increment) * increment) == default
     min + (int((max - min) / increment) * increment) == max
     ```
 
 -   Because applications usually use Windows' slider controls to display ProcAmp settings, and because the maximum range of Windows' slider controls is 65536, drivers should keep the number of distinct ProcAmp values to fewer than 65536. The following inequality should be true for the values chosen:
-    ```
+    ```cpp
     int((max - min) / increment) < 65536.
     ```
 

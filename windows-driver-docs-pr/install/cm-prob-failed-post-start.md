@@ -4,11 +4,7 @@ description: CM_PROB_FAILED_POST_START
 ms.assetid: 82d43c8b-d5de-4395-9ca0-34d2258b9772
 keywords:
 - CM_PROB_FAILED_POST_START
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

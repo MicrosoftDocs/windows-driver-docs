@@ -5,11 +5,7 @@ ms.assetid: 1ede9f1c-f5bb-4f41-8152-63d8663fd99e
 keywords:
 - emulating state blocks WDK display
 - state block emulation WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +14,7 @@ ms.localizationpriority: medium
 
 To enable the Microsoft Direct3D runtime to emulate state blocks, the registry can be configured in the following way:
 
-```
+```cpp
 KeyPath   : HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Direct3D
 KeyValue  : EmulateStateBlocks
 ValueType : REG_DWORD

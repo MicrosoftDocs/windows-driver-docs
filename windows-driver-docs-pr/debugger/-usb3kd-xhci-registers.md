@@ -5,9 +5,6 @@ ms.assetid: C695C23D-B617-4D1E-87F8-62CF99426CA3
 keywords: ["usb3kd.xhci_registers Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

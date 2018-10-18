@@ -9,11 +9,7 @@ keywords:
 - user-mode debugging WDK printer
 - macros WDK printer
 - global variables WDK debugging
-ms.author: windowsdriverdev
 ms.date: 05/17/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -71,13 +67,13 @@ The following procedure will get you ready to debug the Oemuni sample.
 
 You can enable verbose debugging by turning on the giDebugLevel variable. Its default value is 3, which denotes WARNING. If set to 1, it denotes VERBOSE. To set the latter value with Unidrv.dll, type the following command in the debugger:
 
-```
+```cpp
 > ed unidrv!giDebugLevel 1
 ```
 
 When you are running the Oemuni sample, the same debugging variable also applies, so to enable verbose debugging, type the following command:
 
-```
+```cpp
 > ed oemuni!giDebugLevel 1
 ```
 
@@ -95,7 +91,7 @@ The giDebugLevel global variable is declared by the Oemui and Oemuni samples in 
 
 You can set giDebugLevel to any of the following values:
 
-```
+```cpp
 #define DBG_VERBOSE 1
 #define DBG_TERSE   2
 #define DBG_WARNING 3
@@ -116,7 +112,7 @@ Verifies whether the Boolean expression in *cond* is **TRUE**. If it is not, the
 <a href="" id="err--msg--"></a>**ERR**((*msg*))
 Displays the message in *msg* if the current debug level is &lt;= DBG\_ERROR. The message format is:
 
-```
+```cpp
 ERR filename (linenumber): msg
 ```
 
@@ -132,7 +128,7 @@ Displays the message in *msg* if the current debug level is &lt;= DBG\_VERBOSE.
 <a href="" id="warning--msg--"></a>**WARNING**((*msg*))
 Displays the message in *msg* if the current debug level is &lt;= DBG\_WARNING. The message format is:
 
-```
+```cpp
 WRN filename (linenumber): msg
 ```
 

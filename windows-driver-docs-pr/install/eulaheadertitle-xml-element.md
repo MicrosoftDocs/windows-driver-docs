@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # eulaHeaderTitle XML Element
@@ -21,7 +22,7 @@ The **eulaHeaderTitle** XML element customizes the text of the EULA header title
 
 ### Element Tag
 
-```
+```cpp
 <eulaHeaderTitle>
 ```
 
@@ -62,7 +63,7 @@ None
 
 The following code example demonstrates a **eulaHeaderTitle** element that customizes the header title of a DPInst EULA page. The text that specifies the custom header title is shown in bold font style.
 
-```
+```cpp
 <dpinst>
   ...
   <language code="0x0409">

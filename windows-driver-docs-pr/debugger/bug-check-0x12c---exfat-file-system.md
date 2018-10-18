@@ -5,9 +5,6 @@ ms.assetid: f55bbe88-d96f-494f-b84b-eda7c4e6bdfc
 keywords: ["Bug Check 0x12C EXFAT_FILE_SYSTEM", "EXFAT_FILE_SYSTEM"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

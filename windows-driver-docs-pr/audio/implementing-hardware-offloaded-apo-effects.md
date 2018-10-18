@@ -2,11 +2,7 @@
 title: Implementing Hardware Offloaded APO Effects
 description: Hardware offloading of audio processing objects (APOs) provides possible performance enhancements, as well as power savings.
 ms.assetid: 159DFFD2-2434-4EDC-A83C-455BA80F74C6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,7 +44,7 @@ For hardware offloaded APOs, some additional consideration must be given to supp
 
 Each APO implements [**IAudioProcessingObject::IsInputFormatSupported**](https://msdn.microsoft.com/library/windows/hardware/ff536511) method which is used during audio graph building to determine the output audio format and whether any format conversion is needed.
 
-```
+```cpp
 HRESULT IsInputFormatSupported(
   [in, optional]  IAudioMediaType *pOppositeFormat,
   [in, optional]  IAudioMediaType *pRequestedInputFormat,

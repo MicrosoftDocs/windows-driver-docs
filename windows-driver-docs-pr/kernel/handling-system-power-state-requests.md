@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Handling System Power State Requests
 ms.assetid: c4547b72-107e-4335-a7bd-081376962da0
 keywords: ["power states WDK kernel", "power management WDK kernel , power state requests", "system power states WDK kernel , power state requests", "requests WDK power management", "IRPs WDK power management", "I/O request packets WDK power management", "power requests WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

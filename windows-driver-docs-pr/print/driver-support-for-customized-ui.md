@@ -3,11 +3,7 @@ title: Driver Support for Customized UI
 author: windows-driver-content
 description: The v4 print driver model was developed with built-in support for UI customization using printer extensions or UWP device apps for printing.
 ms.assetid: 91B0E824-1EE3-40B0-A24E-5A66C158972E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,7 +42,7 @@ The following diagram shows the protocol utilization.
 
 **Driver Event XML Sample**. The following XML code snippet specifies one driver event. The event checks for yellow ink to be less than 21% of the total capacity as reported by Bidi. If this occurs, an AsyncUIBalloon message is created with the string that is referenced by resourceID 132. In other words, the message would say that "'%1' is low on toner/ink." where Resource 2002 ("Yellow"), would be substituted for %1.
 
-```XML
+```xml
 <de:DriverEvents xmlns:de="http://schemas.microsoft.com/windows/2011/08/printing/driverevents" schemaVersion="4.0">
   <DriverEvent eventId="{A04CF0FC-1CEB-4C62-B967-6F0AE5C5F81E}">
     <Transport>USB</Transport>

@@ -3,10 +3,7 @@ title: Example 3 Setting a Flag by Using Its Hexadecimal Value
 description: Example 3 Setting a Flag by Using Its Hexadecimal Value
 ms.assetid: 64fa0b2e-9fe7-47d0-bf83-8ae7c06252b6
 ms.author: domars
-ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---
 
@@ -22,13 +19,13 @@ The command uses the **/r** parameter to indicate system-wide registry mode. To 
 
 Although the command sets a flag, it omits the plus (+) sign. When using hexadecimal values, the sign is optional and add (+) is the default.
 
-```
+```console
 gflags /r 2000000 
 ```
 
 In response, GFlags displays the system-wide flags set in the registry. The display indicates that the command is successful. The **Enable page heap** feature will be enabled for all processes when Windows restarts.
 
-```
+```console
 Current Boot Registry Settings are: 02000000
     hpa - Enable page heap
 ```

@@ -16,6 +16,7 @@ api_name:
 - Iasphelp.get_AvgJobSize
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +28,7 @@ The **AvgJobSize** property enables an ASP Web page to determine the average job
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_AvgJobSize(
   [out] long *pVal
 );
@@ -44,22 +45,19 @@ Return value
 
 This method returns S\_OK on success.
 
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 The average job size can be expressed as either the number of pages per job or the number of bytes per job. Use the [**Iasphelp::AvgJobSizeUnit**](iasphelp-avgjobsizeunit.md) property to determine which unit applies to the **Iasphelp::AvgJobSize** property.
 
 Before you query this property, call the [**Iasphelp::CalcJobETA**](iasphelp-calcjobeta.md) method to initialize the property value.
 
-```
-    Dim objPrinter, strPrinter, JobSizeAvg
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
- objPrinter.CalcJobETA
-    JobSizeAvg = objPrinter.AvgJobSize
+```vb
+Dim objPrinter, strPrinter, JobSizeAvg
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
+objPrinter.CalcJobETA
+JobSizeAvg = objPrinter.AvgJobSize
 ```
 
 Requirements
@@ -75,24 +73,11 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**Iasphelp::AvgJobSizeUnit**](iasphelp-avgjobsizeunit.md)
 
 [**Iasphelp::CalcJobETA**](iasphelp-calcjobeta.md)
-
- 
-
- 
-
-
-
-

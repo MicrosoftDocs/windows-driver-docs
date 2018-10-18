@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Implementing an IoCompletion Routine
 ms.assetid: 669860b1-5e85-4b28-a9b1-1ccf8c689b7a
 keywords: ["IoCompletion routines", "IoCompleteRequest routine", "priority boosts WDK IRPs"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

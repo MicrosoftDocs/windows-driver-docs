@@ -3,11 +3,7 @@ title: Example Usage of WIA Item Flags and Categories
 author: windows-driver-content
 description: Example Usage of WIA Item Flags and Categories
 ms.assetid: 8c9f7d85-6c84-4df9-9db3-6554d7eddf93
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,7 +47,7 @@ For a complete list of all WIA item flags see [**WIA\_IPA\_ITEM\_FLAGS**](https:
 
 The following code example demonstrates how an application could use the combination of the WIA\_IPA\_ITEM\_FLAGS and WIA\_IPA\_ITEM\_CATEGORY properties for classifying a WIA item found in the WIA item tree.
 
-```
+```cpp
 HRESULT hr = S_OK;
 PROPSPEC ps[2] = {{PRSPEC_PROPID,WIA_IPA_ITEM_FLAGS},
                   {PRSPEC_PROPID, WIA_IPA_ITEM_CATEGORY}};

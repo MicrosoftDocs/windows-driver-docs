@@ -9,11 +9,7 @@ api_name:
 - FSCTL_FIND_FILES_BY_SID
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,7 +34,7 @@ A control code for the operation. Use FSCTL\_FIND\_FILES\_BY\_SID for this opera
 <a href="" id="inputbuffer"></a>*InputBuffer*  
 A pointer to an input buffer that is described by the FIND\_BY\_SID\_DATA structure. The FIND\_BY\_SID\_DATA structure is defined as follows:
 
-```
+```cpp
 typedef struct {
   DWORD  ;
   SID  ;
@@ -59,7 +55,7 @@ The length, in bytes, of the buffer at *InputBuffer*.
 <a href="" id="outputbuffer"></a>*OutputBuffer*  
 A pointer to a caller-allocated array of quad-aligned FIND\_BY\_SID\_OUTPUT structures that receive the fully qualified path names for each file. The FIND\_BY\_SID\_OUTPUT structure is defined as follows:
 
-```
+```cpp
 typedef struct _FIND_BY_SID_OUTPUT {
   DWORD  ;
   DWORD  ;

@@ -9,11 +9,7 @@ api_name:
 - wscn RetrieveImageResponse
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **RetrieveImageResponse** operation element returns the scan data t
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:RetrieveImageResponse>
   child elements
 </wscn:RetrieveImageResponse>
@@ -81,7 +77,7 @@ Examples
 
 The following code example shows how the WSD Scan Service sends image data to the client.
 
-```
+```xml
 mime-version: 1.0
 Content-Type: multipart/related;
     type=application/xop+xml;
@@ -102,7 +98,7 @@ Content-ID: <14629f74-2047-436c-8046-5cac76d280fc@uuid>
   xmlns:wsa="http://schemas.xmlsoap.org/ws/2003/03/addressing"
   xmlns:xop="http://www.w3.org/2003/12/xop/include"
   xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle=&#39;http://www.w3.org/2002/12/soap-encoding&#39; >
+  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
 
   <soap:Header>
     <wsa:To>http://schemas.xmlsoap.org/ws/2003/03/addressing/role/anonymous</wsa:To>
@@ -132,8 +128,7 @@ Binary Scan Data
 --4aa7d814-adc1-47a2-8e1c-07585b9892a4--
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**Format**](format.md)
 
@@ -146,13 +141,3 @@ Binary Scan Data
 [**ScanData**](scandata.md)
 
 [**ScanTicket**](scanticket.md)
-
- 
-
- 
-
-
-
-
-
-

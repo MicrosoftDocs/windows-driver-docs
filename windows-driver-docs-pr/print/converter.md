@@ -3,11 +3,7 @@ title: Converter
 author: windows-driver-content
 description: Converter
 ms.assetid: eadbbaf5-3fe3-484f-b3f1-3d543ddc817f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -116,7 +112,7 @@ Each Converter construct will include one or more Conversion elements to define 
 
 The following code example extends the bidi communications schema by adding new properties and Converter constructs.
 
-```
+```cpp
 <Property name="Printer">
   <Property name="Layout">
     <Property name="InputBins">
@@ -151,7 +147,7 @@ The following code example extends the bidi communications schema by adding new 
 
 The preceding example results in the following queries.
 
-```
+```cpp
 \Printer.Layout.InputBins.Bin###:BinType
 \Printer.Layout.Orientation:CurrentValue
 \Printer.Custom.HostResourceMIB:InterfaceName

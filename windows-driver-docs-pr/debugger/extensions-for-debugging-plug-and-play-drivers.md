@@ -5,9 +5,6 @@ ms.assetid: 0b60c4ce-5c2d-4cce-a1e6-8275186aa147
 keywords: ["Plug and Play (PnP), extensions", "extensions, plug and play"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

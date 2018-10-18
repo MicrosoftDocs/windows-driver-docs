@@ -12,11 +12,7 @@ keywords:
 - ranges WDK video capture
 - default video capture property sets WDK AVStream
 - capture property sets WDK video capture
-ms.author: windowsdriverdev
 ms.date: 06/11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

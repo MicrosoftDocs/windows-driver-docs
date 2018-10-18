@@ -2,11 +2,7 @@
 title: Enable Code Integrity Event Logging and System Auditing
 description: Describes how to Enable Code Integrity Event Logging and System Auditing.
 ms.assetid: D17C64F1-B295-4EC1-B0D0-F1A119D77F64
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -68,7 +64,7 @@ To enable security audit policy to capture load failures in the audit logs, foll
 
 2.  In the elevated Command Prompt window, run the following command:
 
-    ```
+    ```cpp
     Auditpol /set /Category:System /failure:enable
     ```
 

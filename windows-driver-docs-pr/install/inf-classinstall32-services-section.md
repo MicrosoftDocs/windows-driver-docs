@@ -10,11 +10,7 @@ api_name:
 - INF ClassInstall32.Services Section
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ ms.localizationpriority: medium
 
 A **ClassInstall32** section installs a new [device setup class](device-setup-classes.md) (and possibly a class installer) for devices in the new class.
 
-```
+```cpp
 [ClassInstall32.Services] | 
 [ClassInstall32.nt.Services] | 
 [ClassInstall32.ntx86.Services] | 

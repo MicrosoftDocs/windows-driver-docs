@@ -3,6 +3,7 @@ title: ScsiInquiry
 description: ScsiInquiry
 ms.assetid: a4f6f21c-b096-4a2f-a207-e8618682e780
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # ScsiInquiry

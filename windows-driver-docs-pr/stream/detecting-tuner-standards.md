@@ -8,11 +8,7 @@ keywords:
 - TV signal formats WDK video capture
 - KSPROPERTY_TUNER_STANDARD_MODE
 - detecting tuner standards WDK video capture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

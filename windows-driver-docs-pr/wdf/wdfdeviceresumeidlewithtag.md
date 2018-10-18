@@ -5,11 +5,7 @@ description: The WdfDeviceResumeIdleWithTag macro decrements the power reference
 ms.assetid: 065393BE-CEDF-4B82-AE43-844DDB932DF0
 keywords:
  - WdfDeviceResumeIdleWithTag macro
-ms.author: windowsdriverdev
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -57,7 +53,7 @@ You can view the tag, line number, and file name values by using the [**!wdfkd.w
 
 Use [**!wdfkd.wdfdevice**](https://msdn.microsoft.com/library/windows/hardware/ff565703) with verbose flags on and locate the link to [**!wdftagtracker**](https://msdn.microsoft.com/library/windows/hardware/ff566126) in the output:
 
-```
+```cpp
 kd> !wdfdevice <handle> f 
 ```
 

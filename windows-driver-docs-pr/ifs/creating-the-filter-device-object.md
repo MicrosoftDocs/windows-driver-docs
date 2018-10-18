@@ -10,11 +10,7 @@ keywords:
 - volumes WDK file system , attaching filters
 - IoCreateDevice
 - filter DOs WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ ms.localizationpriority: medium
 
 Call [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397) to create a filter device object to attach to a volume or file system stack, as in the following example:
 
-```
+```cpp
 status = IoCreateDevice(
           gFileSpyDriverObject,                     //DriverObject
           sizeof(MYLEGACYFILTER_DEVICE_EXTENSION),  //DeviceExtensionSize
@@ -41,7 +37,7 @@ In the above code snippet, *DeviceObject* is a pointer to the target device obje
 
 Setting the *DeviceExtensionSize* parameter to **sizeof**(MYLEGACYFILTER\_DEVICE\_EXTENSION) causes a MYLEGACYFILTER\_DEVICE\_EXTENSION structure to be allocated for the filter device object. The newly created filter device object's **DeviceExtension** member is set to point to this structure. File system filter drivers usually define and allocate memory for a device extension for each filter device object. The structure and contents of the device extension are driver-specific. However, on Microsoft Windows XP and later, filter drivers should define a DEVICE\_EXTENSION structure for filter driver objects that contains at least the following member:
 
-```
+```cpp
 PDEVICE_OBJECT AttachedToDeviceObject;
 ```
 

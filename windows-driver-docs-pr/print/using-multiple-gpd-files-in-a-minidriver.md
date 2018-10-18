@@ -6,11 +6,7 @@ ms.assetid: 2ec08b46-a286-4af8-a5d4-e0306f731b3f
 keywords:
 - GPD files WDK Unidrv , multiple
 - multiple GPD files WDK Unidrv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ Unidrv minidrivers can consist of more than one GPD file. This allows you to pla
 
 To include additional GPD files, you use \*Include directives, which are described in [Preprocessor Directives](preprocessor-directives.md). You can use multiple \*Include directives, as shown in the following example:
 
-```
+```cpp
 *Include: "common1.gpd"
 *Include: "common2.gpd"
 *Include: "common3.gpd"

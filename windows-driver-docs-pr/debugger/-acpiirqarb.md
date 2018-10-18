@@ -5,9 +5,6 @@ ms.assetid: c57884cd-c70c-4091-871d-c2a35db8d73f
 keywords: ["acpiirqarb Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

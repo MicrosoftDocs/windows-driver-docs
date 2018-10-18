@@ -5,9 +5,6 @@ ms.assetid: 89b61021-43a4-46b7-ae43-a52dd9d40948
 keywords: ["(Command Help) Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,11 +3,7 @@ title: NDIS_STATUS_WWAN_AUTH_RESPONSE
 author: windows-driver-content
 description: Miniport drivers use the NDIS_STATUS_WWAN_AUTH_RESPONSE notification to inform the MB Service of a challenge response received from a previous challenge request issued using an OID_WWAN_AUTH_CHALLENGE query request.NDIS_WWAN_AUTH_RESPONSE structure.
 ms.assetid: 24831764-4F6D-481B-A440-4F9CAE1F7501
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - NDIS_STATUS_WWAN_AUTH_RESPONSE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

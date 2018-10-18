@@ -3,6 +3,7 @@ title: MSiSCSI\_ManagementOperations WMI Class
 description: MSiSCSI\_ManagementOperations WMI Class
 ms.assetid: 1037be46-6cae-458d-8549-927c7a053195
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_ManagementOperations WMI Class
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 
 The MSiSCSI\_MangementOperations WMI class contains ping methods to perform ICMP ping requests to the destination addresses. This class is defined as follows in Mgmt.mof.
 
-```
+```cpp
 class MSiSCSI_ManagementOperations
 {
     //

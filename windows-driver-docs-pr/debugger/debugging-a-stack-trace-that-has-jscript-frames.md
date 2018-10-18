@@ -5,9 +5,6 @@ ms.assetid: A470809F-55AA-4A49-B181-EC8D22C84F31
 keywords: ["JScript", "jscript9diagdump.dll"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

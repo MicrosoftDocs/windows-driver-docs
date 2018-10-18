@@ -2,11 +2,7 @@
 title: Comment Token
 description: Comment Token
 ms.assetid: b1e5f8c8-4d7d-49ce-876d-4a6cbccc550d
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

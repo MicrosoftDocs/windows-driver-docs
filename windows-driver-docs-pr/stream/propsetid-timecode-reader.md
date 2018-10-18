@@ -2,11 +2,7 @@
 title: PROPSETID\_TIMECODE\_READER
 description: PROPSETID\_TIMECODE\_READER
 ms.assetid: 7f115ba5-a6b7-4bae-a562-7e84a98ef420
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

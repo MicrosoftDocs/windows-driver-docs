@@ -5,9 +5,6 @@ ms.assetid: 647edb27-e9dc-4e6f-afa5-ea11c1c24e57
 keywords: ["dump file, KAnalyze", "KAnalyze", "OEM Support Tools, KAnalyze"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

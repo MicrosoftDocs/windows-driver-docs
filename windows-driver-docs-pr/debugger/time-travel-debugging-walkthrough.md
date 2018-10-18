@@ -3,9 +3,6 @@ title: Time Travel Debugging - Sample App Walkthrough
 description: This section contains a walk through of a small C++ app. 
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -61,7 +58,7 @@ The lab has the following three sections.
 
 *In Section 1, you will build the sample code using Visual Studio.*
 
-**Create the sample app in in Visual Studio**
+**Create the sample app in Visual Studio**
 
 1.  In Microsoft Visual Studio, click **File** &gt; **New** &gt; **Project/Solution...** and click on the Visual **C++** templates. 
     
@@ -431,7 +428,7 @@ Note that you can only set four data breakpoints at any given time and it is up 
     ![Screenshot of WinDbg Preview stack window](images/ttd-time-travel-walkthrough-stack-window.png)
 
 
-As it is very unlikely that the Microsoft provided wscpy_s() function would have a code bug like this, we look further in the stack. The stack shows that that Greeting!main calls Greeting!GetCppConGreeting. In our very small code sample we could just open the code at this point and likely find the error pretty easily. But to illustrate the techniques that can be used with larger, more complex program, we will set a new breakpoint to investigate further. 
+As it is very unlikely that the Microsoft provided wscpy_s() function would have a code bug like this, we look further in the stack. The stack shows that Greeting!main calls Greeting!GetCppConGreeting. In our very small code sample we could just open the code at this point and likely find the error pretty easily. But to illustrate the techniques that can be used with larger, more complex program, we will set a new breakpoint to investigate further. 
 
 
 **Set the break on access breakpoint for the GetCppConGreeting function**        

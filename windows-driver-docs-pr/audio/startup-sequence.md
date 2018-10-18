@@ -6,11 +6,7 @@ keywords:
 - adapter drivers WDK audio , startup sequences
 - startup sequences WDK audio
 - audio adapters WDK , startup sequences
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ Because the adapter driver is installed as a kernel-mode driver service, the ope
 
 In the following example, the driver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) function passes the function pointer `MyAddDevice`, which points to the driver's [**AddDevice**](https://msdn.microsoft.com/library/windows/hardware/ff540521) function, as the third parameter to the [**PcInitializeAdapterDriver**](https://msdn.microsoft.com/library/windows/hardware/ff537703) routine.
 
-```
+```cpp
 NTSTATUS 
   DriverEntry( 
     PDRIVER_OBJECT  DriverObject,
@@ -39,7 +35,7 @@ The [**PcInitializeAdapterDriver**](https://msdn.microsoft.com/library/windows/h
 
 The following code is an example implementation of the driver's `MyAddDevice` function.
 
-```
+```cpp
 #define MAX_MINIPORTS 6    // maximum number of miniports
 NTSTATUS
   MyAddDevice(
@@ -56,7 +52,7 @@ This function calls the PortCls function [**PcAddAdapterDevice**](https://msdn.m
 
 After the operating system determines what resources (interrupts, DMA channels, I/O port addresses, and so on) to assign to the device, it sends the device a request to start ([**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749)). In response to this request, the request handler in the PortCls driver calls the adapter driver's `MyStartDevice` function, which is shown in the following example code:
 
-```
+```cpp
 NTSTATUS
   MyStartDevice(
     PDEVICE_OBJECT DeviceObject,

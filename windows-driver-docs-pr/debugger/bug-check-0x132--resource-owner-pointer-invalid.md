@@ -5,9 +5,6 @@ ms.assetid: 0DEFEFF0-A88C-4797-BF36-0D1E532FA371
 keywords: ["Bug Check 0x132 RESOURCE_OWNER_POINTER_INVALID", "RESOURCE_OWNER_POINTER_INVALID"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

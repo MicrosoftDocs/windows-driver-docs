@@ -4,9 +4,6 @@ description: The dx command displays a C++ expression using the NatVis extension
 keywords: [Native Debugger Objects in NatVis"]
 ms.author: domars
 ms.date: 08/10/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

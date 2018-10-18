@@ -3,6 +3,7 @@ title: MSFC\_HbaApiVersion WMI Class
 description: MSFC\_HbaApiVersion WMI Class
 ms.assetid: 642b8313-d1ca-4c07-9c39-b49ef65b4438
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSFC\_HbaApiVersion WMI Class
@@ -12,7 +13,7 @@ An HBA miniport driver that supports the T11 committee's *Fibre Channel HBA API*
 
 The MSFC\_HbaApiVersion class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MSFC_HbaApiVersion
 {
     uint32 WmiHbaApiVersion;

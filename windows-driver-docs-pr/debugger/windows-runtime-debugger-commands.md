@@ -5,9 +5,6 @@ ms.assetid: 8E8F6255-D362-4BD0-AE6C-18E2D4DCD1F7
 keywords: ["Windows Runtime", "WinRT", "HSTRING"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

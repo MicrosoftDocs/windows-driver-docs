@@ -9,11 +9,7 @@ api_name:
 - IOCTL_COPP_Command
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +25,7 @@ Performs an operation on a COPP DirectX VA device.
 
 The [**VIDEO\_REQUEST\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff570547) (VRP) **InputBuffer** contains information passed from the display driver. For example, the display driver can pass a pointer to a COPP\_IO\_InputBuffer structure defined as follows:
 
-```
+```cpp
 typedef struct {
     PVOID* ppThis;
     PVOID InputBuffer;

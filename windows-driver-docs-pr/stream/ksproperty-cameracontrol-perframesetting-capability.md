@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 9/11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,7 +52,7 @@ This must be **KSCAMERA\_PERFRAMESETTING\_ITEM\_EXPOSURE\_TIME**.
 
 This contains the available flags. This field must contain the flags available by doing a bit-wise OR of the flags defined in ksmedia.h.
 
-``` syntax
+```cpp
 #define KSCAMERA_PERFRAMESETTING_AUTO       0x0000000100000000
 #define KSCAMERA_PERFRAMESETTING_MANUAL     0x0000000200000000
 ```
@@ -79,7 +75,7 @@ This must be **KSCAMERA\_PERFRAMESETTING\_ITEM\_TYPE.KSCAMERA\_PERFRAMESETTING\_
 
 This contains the available flags. This field must contain the flags available by doing a bit-wise OR of the FLASH flags defined below in ksmedia.h.
 
-``` syntax
+```cpp
 #define KSCAMERA_EXTENDEDPROP_FLASH_OFF                                 0x0000000000000000  
 #define KSCAMERA_EXTENDEDPROP_FLASH_ON                                  0x0000000000000001  
 #define KSCAMERA_EXTENDEDPROP_FLASH_ON_ADJUSTABLEPOWER                  0x0000000000000002  
@@ -106,7 +102,7 @@ This must be **KSCAMERA\_PERFRAMESETTING\_ITEM\_TYPE.KSCAMERA\_PERFRAMESETTING\_
 
 This contains the available flags. This field must contain the flags available by doing a bit-wise OR of the EVCOMP flags defined below in ksmedia.h or the AUTO flag defined below in ksmedia\_phone.h.
 
-``` syntax
+```cpp
 #define KSCAMERA_PERFRAMESETTING_AUTO               0x0000000100000000
 #define KSCAMERA_EXTENDEDPROP_EVCOMP_SIXTHSTEP      0x0000000000000001  
 #define KSCAMERA_EXTENDEDPROP_EVCOMP_QUARTERSTEP    0x0000000000000002  
@@ -133,11 +129,11 @@ This must be **KSCAMERA\_PERFRAMESETTING\_ITEM\_TYPE.KSCAMERA\_PERFRAMESETTING\_
 
 This field contains the available flags. This field must contain the flags available by doing a bit-wise OR of the ISO flags defined below in ksmedia.h and ksmedia\_phone.h. If per-frame ISO is supported, the driver must support at least one of the following capabilities, ISO\_AUTO and ISO\_MANUAL, in which ISO\_AUTO is mandatory. If ISO\_MANUAL is advertised, the driver must further advertise the supported ISO speed min\\max\\step in **KSPROPERTY\_STEPPING\_LONG.ISO\_MANUAL** must be supported if manual ISO is desired.
 
-``` syntax
+```cpp
 #define KSCAMERA_EXTENDEDPROP_ISO_MANUAL    0x0080000000000000
 ```
 
-``` syntax
+```cpp
 #define KSCAMERA_EXTENDEDPROP_ISO_AUTO      0x0000000000000001
 ```
 
@@ -159,7 +155,7 @@ This must be [**KSCAMERA\_PERFRAMESETTING\_ITEM\_TYPE.KSCAMERA\_PERFRAMESETTING\
 
 This contains the available flags. This field must be set by doing a bit-wise OR of the flag defined below in ksmedis.h.
 
-``` syntax
+```cpp
 #define KSCAMERA_PERFRAMESETTING_MANUAL     0x0000000200000000
 ```
 

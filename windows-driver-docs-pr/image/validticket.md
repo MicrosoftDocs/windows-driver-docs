@@ -9,11 +9,7 @@ api_name:
 - wscn ValidTicket
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ValidTicket** element indicates whether a client's [**ScanTicket*
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ValidTicket>
   text
 </wscn:ValidTicket>
@@ -70,7 +66,7 @@ Remarks
 
 A client submits a [**ScanTicket**](scanticket.md) for validation through the [**ValidateScanTicketRequest**](validatescanticketrequest.md) operation. The WSD Scan Service returns validation information, which includes **ValidTicket**, in [**ValidateScanTicketResponse**](validatescanticketresponse.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ScanTicket**](scanticket.md)

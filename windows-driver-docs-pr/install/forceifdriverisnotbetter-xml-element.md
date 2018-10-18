@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # forceIfDriverIsNotBetter XML Element
@@ -21,7 +22,7 @@ The **forceIfDriverIsNotBetter** XML element is an empty element that sets the *
 
 ### Element Tag
 
-```
+```cpp
 <forceIfDriverIsNotBetter>
 ```
 
@@ -64,7 +65,7 @@ By default, the **forceIfDriverIsNotBetter** flag is set to OFF. You can set the
 
 The following code example demonstrates a **forceIfDriverIsNotBetter** element.
 
-```
+```cpp
 <dpinst>
   ...
   <forceIfDriverIsNotBetter/>

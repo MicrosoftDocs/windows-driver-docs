@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Writing SynchCritSection Routines
 ms.assetid: b02e230e-48f1-43dc-b5aa-368cd7b5436f
 keywords: ["SynchCritSection", "critical section routines WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

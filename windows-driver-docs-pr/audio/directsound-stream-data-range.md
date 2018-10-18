@@ -4,11 +4,7 @@ description: DirectSound Stream Data Range
 ms.assetid: cc31eb2d-7421-4748-b14c-f4d3d15f9884
 keywords:
 - DirectSound WDK audio , stream data ranges
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ ms.localizationpriority: medium
 
 This example uses a [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537096) structure to describe the data range for a DirectSound stream.
 
-```
+```cpp
   DataRange.FormatSize  = sizeof(KSDATARANGE_AUDIO);
   DataRange.Flags       = 0;
   DataRange.SampleSize  = 0;

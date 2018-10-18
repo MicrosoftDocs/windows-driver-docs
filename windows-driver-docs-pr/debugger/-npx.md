@@ -5,9 +5,6 @@ ms.assetid: 1601e4fe-0aba-4507-90a1-402c02fba59d
 keywords: ["registers, floating-point register save area", "npx Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

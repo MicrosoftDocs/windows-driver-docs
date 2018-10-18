@@ -3,6 +3,7 @@ title: 'Hdpi.h Macros'
 author: windows-driver-content
 description: 'Macros contained in the Hdpi.h header.'
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Hdpi.h Macros
@@ -21,7 +22,7 @@ This topic documents the following macros:
 
 The **HidP\_GetButtons** macro is a mnemonic alias for the [**HidP\_GetUsages**](https://msdn.microsoft.com/library/windows/hardware/ff539742) routine.
 
-```
+```cpp
 #define HidP_GetButtons(Rty, UPa, LCo, ULi, ULe, Ppd, Rep, RLe) \
         HidP_GetUsages(Rty, UPa, LCo, ULi, ULe, Ppd, Rep, RLe)
 ```
@@ -31,7 +32,7 @@ The **HidP\_GetButtons** macro is a mnemonic alias for the [**HidP\_GetUsages**]
 
 The **HidP\_GetButtonsEx** macro is an mnemonic alias for the [**HidP\_GetUsagesEx**](https://msdn.microsoft.com/library/windows/hardware/ff539745) routine.
 
-```
+```cpp
 #define HidP_GetButtonsEx(Rty, LCo, BLi, ULe, Ppd, Rep, RLe)  \
          HidP_GetUsagesEx(Rty, LCo, BLi, ULe, Ppd, Rep, RLe)
 ```
@@ -42,7 +43,7 @@ The **HidP\_GetButtonsEx** macro is an mnemonic alias for the [**HidP\_GetUsages
 
 The **HidP\_SetButtons** macro is a mnemonic alias for the [**HidP\_SetUsages**](https://msdn.microsoft.com/library/windows/hardware/ff539792) routine.
 
-```
+```cpp
 #define HidP_SetButtons(Rty, Up, Lco, ULi, ULe, Ppd, Rep, Rle) \
         HidP_SetUsages(Rty, Up, Lco, ULi, ULe, Ppd, Rep, Rle)
 ```
@@ -52,7 +53,7 @@ The **HidP\_SetButtons** macro is a mnemonic alias for the [**HidP\_SetUsages**]
 
 The **HidP\_UnsetButtons** macro is a mnemonic alias for the [**HidP\_UnsetUsages**](https://msdn.microsoft.com/library/windows/hardware/ff539819) routine.
 
-```
+```cpp
 #define HidP_UnsetButtons(Rty, Up, Lco, ULi, ULe, Ppd, Rep, Rle) \
         HidP_UnsetUsages(Rty, Up, Lco, ULi, ULe, Ppd, Rep, Rle)
 ```

@@ -5,9 +5,6 @@ ms.assetid: 8127d6c9-ad63-47cb-8975-b2671d896e44
 keywords: ["View WinDbg Command Line"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

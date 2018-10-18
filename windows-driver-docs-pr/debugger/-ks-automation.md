@@ -5,9 +5,6 @@ ms.assetid: a8fd790f-2793-4e6e-a500-f61646be2c89
 keywords: ["ks.automation Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ks.automation** extension displays any automation items associated with the given object.
 
-```
+```dbgcmd
 !ks.automation Object
 ```
 
@@ -64,7 +61,7 @@ You can use this command with a filter address obtained from [**!ks.enumdevobj**
 
 Here is an example of the **!ks.automation** display. The argument is the address of a filter:
 
-```
+```dbgcmd
 kd> !automation 829493c4
 Filter 829493c4 has the following automation items:
     Property Items:

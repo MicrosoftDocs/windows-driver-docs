@@ -8,11 +8,7 @@ keywords:
 - system-intercepted device messages WDK audio
 - messages WDK audio
 - intercepted device messages WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,7 +52,7 @@ For information about other types of device messages, see the Windows SDK docume
 
 An *Xxx*Message function has the following syntax:
 
-```
+```cpp
 DWORD XxxMessage(
 <device ID>,
     UINT  uMsg,

@@ -5,9 +5,6 @@ ms.assetid: 33ad3a63-166f-4669-868c-49100c9b4d8c
 keywords: ["s (Set Current System) Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

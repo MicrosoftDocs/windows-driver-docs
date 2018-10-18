@@ -2,11 +2,7 @@
 title: Kiosk apps for assigned access Best practices
 description: Kiosk apps for assigned access Best practices
 ms.assetid: 2405B5BB-2214-4B40-B3A1-C47073390B21
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -113,7 +109,7 @@ If the kiosk app is meant to run both above lock in assigned access and also in 
 The following sample demonstrates how to do this. AssignedAccessPage.xaml is predefined, and the app navigates to AssignedAccessPage.xaml once it detects that is running in above lock mode. As a result, the normal page would display only in the under lock scenario.
 
 You can use this method to determine if the app is running above lock screen anytime in the app lifecycle and react accordingly.
-```
+```cpp
 using Windows.ApplicationModel.LockScreen;
 
 // inside the override OnLaunched function in App.xaml.cs
@@ -153,7 +149,7 @@ When a kiosk app has the **windows.aboveLockScreen** extension, and is running a
 
 You can run the following code in the main window of your app (in assigned access mode) to see the view count and whether the current screen is the main view.
 
-```
+```cpp
 using Windows.ApplicationModel.Core;
 
 CoreApplication.GetCurrentView().IsMain //false
@@ -164,7 +160,7 @@ CoreApplication.Views.Count //2
 
 Each view or window has its own dispatcher. Because the main view is hidden to the user, use **GetCurrentView()** to access the app’s secondary view running above the lock instead of MainView(). 
 
-```
+```cpp
 using Windows.ApplicationModel.Core;
 
 private async void Button_Click(object sender, RoutedEventArgs e)
@@ -193,7 +189,7 @@ private async void Button_Click(object sender, RoutedEventArgs e)
 
 When the app has windows.aboveLockScreen and runs as a kiosk experience, creating new views will cause an exception within the app:
 
-```
+```cpp
 Windows.ApplicationModel.Core.CoreApplication.CreateNewView(); //causes exception
 ```
 
@@ -204,7 +200,7 @@ Because of this, you cannot have multiple views or run on multiple monitors. If 
 
 In some situations, the power button, escape button, or other buttons used to stop an application may not be enabled or available on the keyboard. In these situations, provide a way to stop assigned access, for instance a software key. The following event handler shows how to stop assigned access mode by responding to button click event that could be triggered by a software key.
 
-```
+```cpp
 LockApplicationHost^ lockHost = LockApplicationHost::GetForCurrentView();
     if (lockHost != nullptr)
     {
@@ -218,7 +214,7 @@ A kiosk app's lifecycle is handled by the assigned access framework. If the app 
 
 Your kiosk app can also register a handler for this event and perform actions before exiting. Saving any data is an example of this. See the code below for an example of registering a handler.
 
-```
+```cpp
 using Windows.ApplicationModel.LockScreen;
 
 public AssignedAccessPage()
@@ -248,7 +244,7 @@ After the user presses Ctrl+Alt+Del and a login screen is shown, two things coul
 
 The following function call will end up with a runtime exception if it’s invoked in assigned access mode. If the same app, when used under lock, calls the function, it does not cause a runtime exception. It’s helpful to use [LockApplicationHost](http://go.microsoft.com/fwlink/?LinkId=691219) to determine the app's assigned access mode, and code your app accordingly, such as not creating new views if the app is in assigned access mode.
 
-```
+```cpp
 Windows.ApplicationModel.Core.CoreApplication.CreateNewView(); //causes exception
 
 ```
@@ -262,7 +258,7 @@ The following sample application manifest uses the **windows.aboveLockScreen**UW
 > Starting in Windows 10, version 1607, there is no longer a restriction on the Universal Windows Platform (UWP) extension, so most apps can be shown in **Settings** when user configures assigned access.
 
 
-```
+```cpp
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
   <Identity Name="bd4df68b-dc18-4748-a14e-bc21dac13736" Publisher="Contoso" Version="1.0.0.0" />
   <mp:PhoneIdentity PhoneProductId="bd4df68b-dc18-4748-a14e-bc21dac13736" PhonePublisherId="00000000-0000-0000-0000-000000000000" />

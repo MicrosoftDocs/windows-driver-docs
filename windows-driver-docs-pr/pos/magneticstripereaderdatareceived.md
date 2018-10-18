@@ -2,11 +2,7 @@
 title: MagneticStripeReaderDataReceived
 description: The MagneticStripeReaderDataReceived event is raised after a successful magnetic stripe reader (MSR) scan event.
 ms.assetid: '5074669c-3914-4d15-983b-d979c7f88b21'
-ms.author: windowsdriverdev
 ms.date: 9/7/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -16,7 +12,7 @@ This event is raised after a successful magnetic stripe reader (MSR) scan event.
 
 ## Syntax
 
-``` syntax
+```cpp
 typedef struct _MSR_DATA_RECEIVED {
     MsrCardType CardType;
     unsigned char Track1EncryptedDataLength;

@@ -12,11 +12,7 @@ keywords:
 - redistributable coinstallers WDK UMDF
 - update coinstallers WDK UMDF
 - INF files WDK UMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -58,7 +54,7 @@ In your INF file, you must always reference either the update co-installer or th
 
 Your driver's INF file must include an [**INF DDInstall.CoInstallers section**](https://msdn.microsoft.com/library/windows/hardware/ff547321). If you redistribute the update co-installer, your **DDInstall.CoInstallers** section must include both an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) and an [**INF CopyFiles directive**](https://msdn.microsoft.com/library/windows/hardware/ff546346), as the following example shows.
 
-```
+```cpp
 [MyDriver_Install.CoInstallers]
 AddReg = MyDriver_Install.CoInstallers_AddReg
 CopyFiles = MyDriver_CoInstallers_CopyFiles
@@ -66,21 +62,21 @@ CopyFiles = MyDriver_CoInstallers_CopyFiles
 
 The INF **AddReg** directive identifies an INF section that creates a **CoInstallers32** registry entry.
 
-```
+```cpp
 [MyDriver_Install.CoInstallers_AddReg]
 HKR,,CoInstallers32,0x00010000,"WudfUpdate_01011.dll"
 ```
 
 The INF **CopyFiles** directive identifies an INF section that copies the co-installer from the installation device to the system device.
 
-```
+```cpp
 [MyDriver_CoInstallers_CopyFiles]
 WudfUpdate_01011.dll
 ```
 
 If you redistribute an MSU package, your **DDInstall.CoInstallers** section must specify an **AddReg** directive that references the configuration co-installer.
 
-```
+```cpp
 [Echo_Install.NT.CoInstallers]
 AddReg=CoInstallers_AddReg
 [CoInstaller.AddReg]

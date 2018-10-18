@@ -15,11 +15,7 @@ keywords:
 - communication WDK spooler notification
 - all listener notifications WDK print spooler
 - per-user listener filtering WDK spooler notification
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,7 +31,7 @@ This section describes the interface between the spooler process and printing co
 
 The PrintAsyncNotifyUserFilter enumerated type is used for two situations. In the first of these a print component running inside the spooler calls the [CreatePrintAsyncNotifyChannel](http://go.microsoft.com/fwlink/p/?linkid=124750) function to create a notification channel. The caller passes one enumerator of the PrintAsyncNotifyUserFilter enumerated type to specify which listening clients are permitted to receive notifications. In the second situation, a listening client calls the [RegisterForPrintAsyncNotifications](http://go.microsoft.com/fwlink/p/?linkid=124752) function to register for notification. The caller passes one of the PrintAsyncNotifyUserFilter enumerators to indicate which notifications it should receive.
 
-```
+```cpp
 typedef enum 
 {
   kPerUser,
@@ -69,7 +65,7 @@ In the following figure, Joe sends a notification on a channel with a **kPerUser
 
 By specifying a communication type, the printing component indicates whether a response is expected from the listener client, as well as the way the spooler handles the case when notifications are sent back from multiple clients.
 
-```
+```cpp
 typedef enum 
 {
   kBidirectional = 1, 
@@ -101,7 +97,7 @@ On the listener side of the channel, a listening client can ask to receive one t
 
 The spooler defines a special notification type used to announce to listening clients that the service or the application has died.
 
-```
+```cpp
 const GUID NOTIFICATION_RELEASE;
 ```
 

@@ -3,11 +3,7 @@ title: Code Example for Implementing Helper Methods
 author: windows-driver-content
 description: Code Example for Implementing Helper Methods
 ms.assetid: 4f9710c2-3741-4048-9b6c-b21241b72c91
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +14,7 @@ ms.localizationpriority: medium
 
 The following code example shows the implementation of the helper methods that are used to initialize the WSD Challenge interface and register the device challenge.
 
-```
+```cpp
 /**************************************************************************\
 * CWSDDevice::InitializeChallengeInterface
 *

@@ -2,11 +2,7 @@
 title: Opting Out of Volume Level Persistence
 description: Opting Out of Volume Level Persistence
 ms.assetid: e96533be-25e8-49ae-8e56-7105dfa92b5a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ To opt out of volume persistence using an INF file, use the [**AddProperty**](ht
 
 The following INF file fragment shows how to opt out of volume persistence:
 
-```
+```inf
  
 ;; INF file fragment to show how to use AddProperty
 ;; to opt out of volume persistence

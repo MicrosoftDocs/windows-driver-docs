@@ -9,11 +9,7 @@ keywords:
 - codecs WDK AVStream , merit validation
 - codecs WDK AVStream , hardware
 - codecs WDK AVStream , hardware, merit validation
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,7 +34,7 @@ The remainder of this topic includes a sample implementation of these three meth
 
 To use this code, you must include the following header files*:*
 
-```
+```cpp
 #include <initguid.h>
 #include <ksopmapi.h>
 #include "testcert.h"
@@ -50,13 +46,13 @@ To use this code, you must include the following header files*:*
 
 You must also add *Ksecdd.lib* to the TARGETLIBS section of your *Sources* file:
 
-```
+```make
 $(DDK_LIB_PATH)\ksecdd.lib
 ```
 
 The sample handlers follow:
 
-```
+```cpp
 class CBaseKsFilter{
 protected:
  
@@ -708,7 +704,7 @@ CBaseKsFilter::OPMVideoOutputGetInformation(
         CodecInfoParameters = (OPM_GET_CODEC_INFO_PARAMETERS *)Parameters->abParameters;
 
     // Define parameters prior to calling IoGetDeviceInterfaces
-    // Class interface GUID is decoder/encoder KS filter&#39;s interface GUID
+    // Class interface GUID is decoder/encoder KS filter's interface GUID
     // PDO should be the device object of the device for which the driver
     // is the functional driver
 
@@ -819,7 +815,7 @@ DEFINE_KSAUTOMATION_TABLE(SHEDFilterAutomationTable)
 
 *Testcert.h* appears as follows:
 
-```
+```cpp
 #ifndef _TESTCERT_H_
 #define _TESTCERT_H_
 

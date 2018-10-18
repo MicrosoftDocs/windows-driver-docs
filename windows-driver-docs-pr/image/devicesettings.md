@@ -9,11 +9,7 @@ api_name:
 - wscn DeviceSettings
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **DeviceSettings** element describes the basic capabilities of the 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:DeviceSettings>
   child elements
 </wscn:DeviceSettings>
@@ -103,7 +99,7 @@ Remarks
 
 The **DeviceSettings** element contains the supported values for many of the imaging options that can be set in a [**ScanTicket**](scanticket.md) element for a scan operation. A client can use the values that are returned in **DeviceSettings** to create valid **ScanTicket** elements.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**AutoExposureSupported**](autoexposuresupported.md)

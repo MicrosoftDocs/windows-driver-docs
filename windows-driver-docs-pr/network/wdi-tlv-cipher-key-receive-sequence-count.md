@@ -3,11 +3,7 @@ title: WDI_TLV_CIPHER_KEY_RECEIVE_SEQUENCE_COUNT
 author: windows-driver-content
 description: WDI_TLV_CIPHER_KEY_RECEIVE_SEQUENCE_COUNT is a TLV that contains the receive sequence count.
 ms.assetid: 29AA9D90-834F-4043-B12A-87705EDC1DF0
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - WDI_TLV_CIPHER_KEY_RECEIVE_SEQUENCE_COUNT Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

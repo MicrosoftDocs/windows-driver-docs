@@ -5,9 +5,6 @@ ms.assetid: 8075007a-42a2-4973-bb04-cca9a4a1b9b6
 keywords: [".eventlog (Display Recent Events) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.eventlog** command displays the recent Microsoft Win32 debug events, such as module loading, process creation and termination, and thread creation and termination.
 
-```
+```dbgcmd
 .eventlog 
 ```
 
@@ -58,7 +55,7 @@ The **.eventlog** command shows only 1024 characters.
 
 The following example shows the **.eventlog** command.
 
-```
+```dbgcmd
 0:000> .eventlog
 0904.1014: Load module C:\Windows\system32\ADVAPI32.dll at 000007fe`fed80000
 0904.1014: Load module C:\Windows\system32\RPCRT4.dll at 000007fe`fe8c0000

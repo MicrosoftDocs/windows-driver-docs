@@ -2,11 +2,7 @@
 Description: This topic describes how KMDF function drivers support USB selective suspend.
 title: Selective suspend in USB KMDF function drivers
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 05/09/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -103,7 +99,7 @@ After the driver initializes the [**WDF\_DEVICE\_POWER\_POLICY\_IDLE\_SETTINGS**
 
 The following code snippet is from the Osrusbfx2 sample driver’s Device.c file:
 
-```
+```cpp
 WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS idleSettings;
 NTSTATUS    status = STATUS_SUCCESS;
 //
@@ -139,7 +135,7 @@ Sometimes, a USB device should not be powered down even if no I/O requests are p
 
 KMDF upper filter drivers for USB HID devices must indicate in the INF that they support selective suspend so that the Microsoft-supplied HIDClass.sys port driver can enable selective suspend for the HID stack. The INF should include an AddReg directive that adds the SelectiveSuspendEnabled key and set its value to 1, as the following string shows:
 
-```
+```cpp
 HKR,,"SelectiveSuspendEnabled",0x00000001,0x1
 ```
 
@@ -167,7 +163,7 @@ In the call to [**WdfUsbTargetDeviceRetrieveInformation**](https://msdn.microsof
 
 The following example from the Osrusbfx2 KMDF sample shows how to call this method to determine whether a device supports remote wake. After these lines of code have run, the waitWakeEnable variable contains TRUE if the device supports remote wake and FALSE if it does not:
 
-```
+```cpp
     WDF_USB_DEVICE_INFORMATION          deviceInfo;
 // Retrieve USBD version information, port driver capabilities and device
 // capabilites such as speed, power, etc.
@@ -192,7 +188,7 @@ In USB terminology, a USB device is enabled for remote wakeup when its DEVICE\_R
 
 The following code snippet from the Osrusbfx2 sample shows how to initialize wake settings to their default values:
 
-```
+```cpp
 WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS wakeSettings;
 
 WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS_INIT(&wakeSettings);

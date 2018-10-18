@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Starting in Windows 10, you can use the Windows Performance Toolkit (WPT) to view performance data for a KMDF or UMDF 2 driver.
 Search.SourceType: Video
 ms.assetid: 0442E4E2-DBC7-4EB0-BEB6-49EFF5132A1D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -155,7 +151,7 @@ Finally, to determine callback duration for PnP/Power callbacks, the framework r
 -   Be sure to reboot after you run the WdfPerfEnhancedVerifier.cmd script.
 -   To determine if your driver is configured to record an event log, use the **!WdfKd.wdfdriverinfo** kernel debugger command. If the driver is configured for performance tracing, you will see output like this:
 
-    ```
+    ```cpp
     !WdfKd.WdfDriverInfo Echo.sys
     …
     …

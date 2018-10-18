@@ -5,9 +5,6 @@ ms.assetid: bf25ac2a-5a07-43df-946b-3b2237b1816b
 keywords: ["dbgprint Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!dbgprint** extension displays a string that was previously sent to the **DbgPrint** buffer.
 
-```
+```dbgcmd
 !dbgprint
 ```
 

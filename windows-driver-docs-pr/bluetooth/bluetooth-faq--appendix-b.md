@@ -2,11 +2,7 @@
 title: An Example of a Vendor-Provided INF File in Windows Vista
 description: This appendix includes an example of how to implement a vendor-provided INF file that references Bth.inf.
 ms.assetid: 37865571-D632-4A69-A2AB-D0B2570A6F9D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ This INF file can be used to install the device on the following versions of Win
 
 For an explanation of the highlighted sections and directives, see the numbered notes after the following sample:
 
-```
+```cpp
 ; XYZ Vendor INF File for Bluetooth Radio
 ;
 ; A sample INF for a stand-alone Bluetooth radio that does not

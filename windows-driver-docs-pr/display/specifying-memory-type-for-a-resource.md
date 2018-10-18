@@ -6,11 +6,7 @@ keywords:
 - video memory types WDK display
 - memory types WDK display
 - resource memory types WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

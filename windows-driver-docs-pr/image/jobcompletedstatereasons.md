@@ -9,11 +9,7 @@ api_name:
 - wscn JobCompletedStateReasons
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **JobCompletedStateReasons** element is a collection of all additio
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobCompletedStateReasons>
   child elements
 </wscn:JobCompletedStateReasons>
@@ -79,7 +75,7 @@ Remarks
 
 The **JobCompletedStateReasons** element contains zero or more [**JobStateReason**](jobstatereason.md) elements, each of which contains a reason for how or why the scan job completed. The WSD Scan Service sends the **JobCompletedStateReasons** element to the client through the [**JobEndStateEvent**](jobendstateevent.md) event element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**JobEndState**](jobendstate.md)

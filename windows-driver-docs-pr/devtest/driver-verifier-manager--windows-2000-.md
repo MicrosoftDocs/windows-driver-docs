@@ -5,11 +5,7 @@ ms.assetid: d1266d2d-2388-472d-a1c4-875ed24913d4
 keywords:
 - Driver Verifier Manager
 - Verifier utility
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

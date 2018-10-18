@@ -8,11 +8,7 @@ keywords:
 - postprocessing IRPs WDK KMDF
 - WDM IRPs WDK KMDF , preprocessing and postprocessing
 - IRPs WDK KMDF , preprocessing and postprocessing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,7 +33,7 @@ Because the I/O manager adds an additional I/O stack location to the IRP, the [*
 
 If your driver is preprocessing an IRP, but not postprocessing the IRP, the driver does not need to set an [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine for the IRP and can call [**IoSkipCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff550355), as the following code example shows.
 
-```
+```cpp
 NTSTATUS
   EvtDeviceMyIrpPreprocess(
     IN WDFDEVICE Device,
@@ -58,7 +54,7 @@ return WdfDeviceWdmDispatchPreprocessedIrp(Device, Irp);
 
 If your driver is postprocessing the IRP, the driver must call [**IoCopyCurrentIrpStackLocationToNext**](https://msdn.microsoft.com/library/windows/hardware/ff548387), and then it must call [**IoSetCompletionRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff549679) to set an [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine for the IRP, as the following code example shows.
 
-```
+```cpp
 NTSTATUS
   EvtDeviceMyIrpPreprocess(
     IN WDFDEVICE Device,

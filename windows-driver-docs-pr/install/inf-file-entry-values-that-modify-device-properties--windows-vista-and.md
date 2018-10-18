@@ -2,11 +2,7 @@
 title: INF File Entry Values That Modify Device Properties
 description: INF File Entry Values That Modify Device Properties
 ms.assetid: 5ce0875f-2687-42d9-b980-ed184b552a62
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,7 +45,7 @@ Many system-defined device properties have corresponding system-defined registry
 
 For example, the following **AddReg** directive would set the **DeviceCharacteristics** registry entry value and the corresponding DEVPKEY_Device_Characteristics property for a device instance that is installed by the "Abc_Device_Install.HW" section.
 
-```
+```cpp
 [Abc_Device_Install.HW]
 ...
 AddReg = Xxx_AddReg

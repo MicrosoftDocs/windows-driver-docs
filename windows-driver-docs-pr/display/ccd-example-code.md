@@ -9,11 +9,7 @@ keywords:
 - configuring displays WDK Windows Server 2008 R2 display , CCD APIs, example code
 - CCD APIs WDK Windows 7 display , example code
 - CCD APIs WDK Windows Server 2008 R2 display , example code
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ This section applies only to Windows 7 and later, and Windows Server 2008 R2 and
 
 The following pseudocode shows how to use the CCD APIs to set clone view:
 
-```
+```cpp
 SetCloneView
 {
     // Determine the size of the path array that is required to hold all valid paths.

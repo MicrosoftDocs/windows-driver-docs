@@ -8,11 +8,7 @@ keywords:
 - compressed texture surfaces WDK DirectDraw , creating
 - surfaces WDK DirectDraw , compressed textures
 - textures WDK DirectDraw , compressed
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

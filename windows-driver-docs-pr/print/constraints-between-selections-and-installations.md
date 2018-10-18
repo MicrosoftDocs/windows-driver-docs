@@ -6,11 +6,7 @@ ms.assetid: abb6004f-daae-4f28-b36c-102d0b8c9f55
 keywords:
 - installation constraints WDK Unidrv
 - selection constraints WDK Unidrv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,7 +40,7 @@ where *FeatureName* is the name of a feature and *OptionName* is the name of an 
 
 An \***InstalledConstraints** or \***NotInstalledConstraints** entry must be placed inside a \*Feature or \*Option entry. For example, to indicate that a user should not be able to select tabloid paper if a printer's large format paper tray is not installed, the following entries can be used:
 
-```
+```cpp
 *Feature: InputBin
 {
     *Option: LARGEFMT

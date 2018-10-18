@@ -11,11 +11,7 @@ keywords:
 - CCD concepts WDK Windows Server 2008 R2 display , scaling the desktop image
 - scaling the desktop image WDK Windows 7 display
 - scaling the desktop image WDK Windows Server 2008 R2 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

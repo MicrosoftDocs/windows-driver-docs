@@ -3,11 +3,7 @@ title: Troubleshooting UMDF 2.0 Driver Crashes
 author: windows-driver-content
 description: Starting in User-Mode Driver Framework (UMDF) version 2, you can use a subset of the debugger extension commands implemented in Wdfkd.dll to debug a UMDF driver.
 ms.assetid: df1bfc10-379b-457f-a9c8-40fa10048f81
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ To investigate, first set up a kernel-mode debugging session as described in [Ho
 
 -   If **HostFailKdDebugBreak** is set, the reflector breaks into the kernel-mode debugger when the timeout threshold is exceeded. In the debugger output, you will see several suggestions on how to begin, including links you can click on. For example:
 
-    ```
+    ```cpp
     **** Problem detected in UMDF driver "WUDFOsrUsbFx2". !process 0xFFFFE0000495B080 0x1f, !devstack 0xFFFFE000032BFA10, Problem code 3 ****
     **** Dump UMDF driver image name and stack: !wdfkd.wdfumdevstack 0x000000BEBB49AE20
     **** Dump UM Irps for this stack: !wdfkd.wdfumirps 0x000000BEBB49AE20

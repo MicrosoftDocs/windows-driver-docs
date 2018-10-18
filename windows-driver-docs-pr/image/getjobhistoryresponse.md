@@ -9,11 +9,7 @@ api_name:
 - wscn GetJobHistoryResponse
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **GetJobHistoryResponse** element returns a summary of completed jo
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:GetJobHistoryResponse>
   child elements
 </wscn:GetJobHistoryResponse>
@@ -74,13 +70,13 @@ Examples
 
 The following code example shows how to return no job history in response to a client's request for job history.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
   xmlns:wsa="http://schemas.xmlsoap.org/ws/2003/03/addressing"
   xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle=&#39;http://www.w3.org/2002/12/soap-encoding&#39; >
+  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
 
   <soap:Header>
     <wsa:To>
@@ -103,13 +99,13 @@ The following code example shows how to return no job history in response to a c
 
 The following code example returns a list of jobs and associated data for the last two completed jobs.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
   xmlns:wsa="http://schemas.xmlsoap.org/ws/2003/03/addressing"
   xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle=&#39;http://www.w3.org/2002/12/soap-encoding&#39; >
+  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
 
   <soap:Header>
     <wsa:To>
@@ -152,7 +148,7 @@ The following code example returns a list of jobs and associated data for the la
 
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**GetJobHistoryRequest**](getjobhistoryrequest.md)

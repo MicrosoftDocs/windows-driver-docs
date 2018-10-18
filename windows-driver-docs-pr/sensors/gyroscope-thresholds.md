@@ -3,11 +3,7 @@ title: Gyroscope thresholds
 author: windows-driver-content
 description: This topic provides information about the gyroscope thresholds.
 ms.assetid: 68B11108-CA1A-4A49-BC44-4E9FE09955A9
-ms.author: windowsdriverdev
 ms.date: 07/20/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

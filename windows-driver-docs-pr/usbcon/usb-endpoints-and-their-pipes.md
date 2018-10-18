@@ -2,11 +2,7 @@
 Description: A USB device has endpoints that are used to for data transfers. 
 title: USB endpoints and their pipes
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

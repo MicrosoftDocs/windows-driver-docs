@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 9/11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,7 +45,7 @@ KSPROPERTY\_CAMERACONTROL\_EXTENDED\_VFR is a property ID that will be used to s
 
 The following flags can be placed in the **KSCAMERA\_EXTENDEDPROP\_HEADER.Flags** field, which are used to turn on and off variable frame rate for video. The default is up to the driver.
 
-``` syntax
+```cpp
 #define KSCAMERA_EXTENDEDPROP_VFR_OFF   0x0000000000000000  
 #define KSCAMERA_EXTENDEDPROP_VFR_ON    0x0000000000000001
 ```

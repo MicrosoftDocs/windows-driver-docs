@@ -6,11 +6,7 @@ ms.assetid: 57dd0bc3-2aab-42a2-b0c5-7f6ecaefd300
 keywords:
 - Extension Unit controls WDK USB Video Class
 - controls WDK USB Video Class
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,7 +39,8 @@ Use these steps to build the control:
     [Providing a UVC INF File](providing-a-uvc-inf-file.md)
 
 3.  Create a *sources* file as follows:
-    ```
+
+    ```make
     TARGETNAME= uvcxuplgn
     TARGETTYPE= DYNLINK
     TARGETPATH= obj
@@ -80,7 +77,8 @@ Use these steps to build the control:
     ```
 
 4.  Create a *makefile* file as follows:
-    ```
+
+    ```make
     #############################################################################
     #
     #       Copyright (C) Microsoft Corporation 1995
@@ -107,7 +105,8 @@ Use these steps to build the control:
     -   Use the third GUID as the class GUID (clsid) for your extension unit. Replace the z-based GUID placeholder with the new GUID in *Xuplgin.inf, Xuproxy.h*, and *Xusample.rgs.*
 
 6.  Copy *Extend.def* from the WIA extend sample and edit it. *Uvcxuplugn.def* should contain:
-    ```
+
+    ```make
     LIBRARY uvcxuplgn
 
     EXPORTS
@@ -118,7 +117,8 @@ Use these steps to build the control:
     ```
 
 7.  Create *Uvcxuplgn.cpp* as follows:
-    ```
+
+    ```cpp
     #include "stdafx.h"
     CComModule _Module;
     #include <initguid.h>
@@ -173,7 +173,8 @@ Use these steps to build the control:
     ```
 
 8.  Create *Stdafx.h* as follows:
-    ```
+
+    ```cpp
     // stdafx.h : include file for standard system include files,
     //      or project specific include files that are used frequently,
     //      but are changed infrequently
@@ -205,7 +206,8 @@ Use these steps to build the control:
     ```
 
 9.  Create *Stdafx.cpp* as follows:
-    ```
+
+    ```cpp
     // stdafx.cpp : source file that includes just the standard includes
     //  stdafx.pch will be the pre-compiled header
     //  stdafx.obj will contain the pre-compiled type information
@@ -221,11 +223,3 @@ Use these steps to build the control:
     ```
 
 10. Build the sample by invoking Build -cZg in the WDK build environment.
-
- 
-
- 
-
-
-
-

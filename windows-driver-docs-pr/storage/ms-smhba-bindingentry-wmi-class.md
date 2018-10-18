@@ -3,6 +3,7 @@ title: MS\_SMHBA\_BINDINGENTRY WMI Class
 description: MS\_SMHBA\_BINDINGENTRY WMI Class
 ms.assetid: b7b2315f-21db-41a4-8390-3c413cb39f5b
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MS\_SMHBA\_BINDINGENTRY WMI Class
@@ -12,7 +13,7 @@ An HBA miniport driver that supports the Storage Management API uses the MS\_SMH
 
 The MS\_SMHBA\_BINDINGENTRY class is defined as follows in Hbaapi.mof:
 
-```
+```cpp
 class MS_SMHBA_BINDINGENTRY
 {
     [SMHBA_BIND_TYPE_QUALIFIERS, WmiDataId(1)]

@@ -2,11 +2,7 @@
 title: WMI Data Source
 description: WMI Data Source
 ms.assetid: 1C9D0EEC-6542-4249-B7E0-CA3ED63FB120
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,13 +31,13 @@ That would have hopefully given you some idea on where and how you can leverage 
 
 The only special metadata you need to make your test a WMI DataSource test is the "DataSource". The DataSource syntax must look as follows:
 
-```
+```cpp
 [DataSource("WMI:<WQL query>")]
 ```
 
 Or in native code:
 
-```
+```cpp
 TEST_METHOD_PROPERTY(L"DataSource", L"WMI:<WQL query>")]
 ```
 
@@ -60,7 +56,7 @@ Run the test for each process that gets run at Windows startup. For each process
 
 You can find more examples in the documentation mentioned above as well as in the .cs file and header file in the examples you have opened. The general, over-simplified syntax is as follows:
 
-```
+```cpp
 SELECT <comma separated properties> FROM <WMI Class name> [WHERE <add condition on some properties>]
 ```
 
@@ -87,7 +83,7 @@ By now you have an idea of how to come up with a WMI query for a test method and
 
 The basics on retrieving this information are very similar to retrieving values for your data-driven test. For example, in managed code this would look as follows:
 
-```
+```cpp
 1 namespace WEX.Examples
 2 {
 3     using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -127,7 +123,7 @@ Lines 24-30 in the example above are exactly what is required for a managed data
 
 The native code for retrieving the WMI properties is very similar. Like with native data-driven tests, you will use TestData to get the property values. For example, let's consider the test for getting properties of the default printer. The header file authors this test like so:
 
-```
+```cpp
 1        // Test on the default printer and its driver name
 2        BEGIN_TEST_METHOD(DefaultPrinterTest)
 3            TEST_METHOD_PROPERTY(L"DataSource",
@@ -137,7 +133,7 @@ The native code for retrieving the WMI properties is very similar. Like with nat
 
 For this, our retrieval code, in the cpp file looks as follows:
 
-```
+```cpp
 1     void WmiExample::DefaultPrinterTest()
 2     {
 3         String deviceId;
@@ -165,7 +161,7 @@ The part to keep in mind is that the WMI query may not always return a non-null 
 
 In managed test code for example, TestContext will store the null values as an object of type DBNull. You must check if the object is of type DBNull before trying to cast the resultant value to the type you expect it to be. Let's take a look:
 
-```
+```cpp
 1 namespace WEX.Examples
 2 {
 3     using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -237,7 +233,7 @@ For example, in the above test, "Compressed", "MaximumComponentLength" and "Avai
 
 The same is true with native retrievals APIs as well - the property value returned could be NULL. This means that you need to check if the TestData successfully retrieved the value without using a verify call (since not being able to retrieve could be because the value is null). For example, you may have a test method that depends on a WMI query:
 
-```
+```cpp
 1        // Test on only local (drive type = 3) or removable (drive type = 2) harddrive
 2        BEGIN_TEST_METHOD(LocalOrRemovableHardDriveTest)
 3            TEST_METHOD_PROPERTY(L"DataSource", L"WMI:SELECT DeviceId, DriveType, Availability,
@@ -247,7 +243,7 @@ The same is true with native retrievals APIs as well - the property value return
 
 You may have "Availability and "MaximumComponentLength" returned as NULL values. So write the test to account for this like so:
 
-```
+```cpp
 1     void WmiExample::LocalOrRemovableHardDriveTest()
 2     {
 3         String deviceId;

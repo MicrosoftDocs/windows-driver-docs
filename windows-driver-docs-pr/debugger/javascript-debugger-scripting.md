@@ -4,9 +4,6 @@ description: This topic describes how to use JavaScript to create scripts that u
 ms.assetid: 3442E2C4-4054-4698-B7FB-8FE19D26C171
 ms.author: domars
 ms.date: 12/22/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

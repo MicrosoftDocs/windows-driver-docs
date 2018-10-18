@@ -3,11 +3,7 @@ title: WDI_TLV_CIPHER_KEY_TYPE_INFO
 author: windows-driver-content
 description: WDI_TLV_CIPHER_KEY_TYPE_INFO is a TLV that contains cipher key type information for OID_WDI_SET_ADD_CIPHER_KEYS and OID_WDI_SET_DELETE_CIPHER_KEYS.
 ms.assetid: 1168D53D-A837-4E3F-8E31-FB86CF866BA3
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - WDI_TLV_CIPHER_KEY_TYPE_INFO Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

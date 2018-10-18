@@ -4,11 +4,7 @@ description: WLAN Device Driver Interface (WDI) is the new WLAN Universal Window
 ms.assetid: E1666D5E-1932-4378-B4F6-61F28716183E
 keywords:
 - wi-fi drivers, wi-fi drivers Windows 10, wireless drivers, wireless drivers windows 10, wlan drivers, wlan drivers windows 10, wlan driver interface, WDI drivers, WDI network drivers, WDI Windows 10
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: 82aba13e-6604-46ca-b3e5-bb865ecf3f1f
 keywords: ["dt (Display Type) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -9,11 +9,7 @@ keywords:
 - deferred contexts WDK Windows Server 2008 R2 display , using context-local DDI handles
 - context-local DDI handles WDK Windows 7 display
 - context-local DDI handles WDK Windows Server 2008 R2 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,7 +48,7 @@ For objects that have dependencies (for example, views have a dependency relatio
 
 The following example code shows how the Direct3D runtime translates an application's create request and the first use of deferred context to calls to the user-mode display driver to create immediate versus deferred contexts. The application's call to **ID3D11Device::CreateTexture2D** initiates the runtime code in the following "Resource Create" section. The application's call to **ID3D11Device::CopyResource** initiates the runtime code in the following "Deferred Context Resource Usage" section.
 
-```
+```cpp
 // Device Create
  IC::pfnCheckDeferredContextHandleSizes( hIC, &u, NULL );
 pArray = malloc( u * ... );

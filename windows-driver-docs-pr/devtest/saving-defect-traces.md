@@ -13,11 +13,8 @@ keywords:
 - errors WDK Static Driver Verifier
 - export WDK Static Driver Verifier
 - Static Driver Verifier Report WDK
-ms.author: windowsdriverdev
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Saving Defect Traces

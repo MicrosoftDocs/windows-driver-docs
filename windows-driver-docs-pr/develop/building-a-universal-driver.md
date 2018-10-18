@@ -2,11 +2,7 @@
 title: Building a Universal Windows driver
 author: windows-driver-content
 description: Guide to building a universal driver
-ms.author: windowsdriverdev
 ms.date: 10/03/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,7 +34,7 @@ In contrast, existing user-mode drivers may require modification to compile as U
     **Note**  You cannot build a Universal Windows driver for Windows versions earlier than Windows 10.
 3.  You might need to modify the .inf file to specify the provider, specified as an %*ManufacturerName*% token that is expanded later in the INF file's [**Strings**](https://msdn.microsoft.com/Library/Windows/Hardware/Ff547485) section. For example:
 
-    ```
+    ```cpp
     Provider="Contoso"
     ```
 

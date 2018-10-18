@@ -2,11 +2,7 @@
 title: PKEY\_FX\_ModeEffectClsid
 description: In Windows 8.1 and later, the PKEY\_FX\_ModeEffectClsid property key identifies the mode effect (MFX) supported by the driver. The driver developer should specify the list of supported processing modes that their driver supports.
 ms.assetid: 0B15A817-5F49-45B6-AD82-95738C4FF59C
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ The INF file property key instructs the audio endpoint builder to set the CLSIDs
 
 An INF file specifies settings for an audio mode effect in the add-registry section for that device. The following INF example shows the strings and add-registry section that loads the APO for a mode effect into the registry.
 
-```
+```inf
 [Strings]
 PKEY_FX_ModeEffectClsid     = "{D04E05A6-594B-4fb6-A80D-01AF5EED7D1D},6"
 ...

@@ -2,11 +2,7 @@
 Description: This topic describes the USB client driver verifier feature of the USB 3.0 driver stack that enables the client driver to test certain failure cases.
 title: USB client driver verifier
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,7 +39,7 @@ The USB client driver verifier is automatically enabled when you enable the [Dri
 
  
 
-```
+```cpp
 HKEY_LOCAL_MACHINE
    SYSTEM
       CurrentControlSet
@@ -62,7 +58,7 @@ When the verifier is enabled, the USB driver stack keeps track of URBs that the 
 
 Additionally and optionally, you can configure the USB client driver verifier to modify or fail specific routines and specify how often the routine must fail. To configure the verifier, set the registry entries as shown here:
 
-```
+```cpp
 HKEY_LOCAL_MACHINE
    SYSTEM
       CurrentControlSet

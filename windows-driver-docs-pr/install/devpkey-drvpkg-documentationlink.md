@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DEVPKEY_DrvPkg_DocumentationLink
@@ -53,7 +54,7 @@ The documentation link URL should be a link to a file that contains information 
 
 The URL can contain parameters. For example, the following URL contains a **prod** parameter that supplies the value "DSC530", a **rev** parameter that supplies the value "34", and a **type** parameter that supplies the value "doc":
 
-```
+```cpp
 http://www.microsoft.com/redirect?prod=DSC530&rev=34&type=docs
 ```
 
@@ -71,7 +72,7 @@ When a user clicks the website link that is displayed in Setup-generated end-use
 
 For privacy reasons, user information and the serial number of device is not included in the HTTP request.
 
-```
+```cpp
 The following example shows the type of HTTP request that would be sent to a web server: http://www.microsoft.com/redirect?prod=DSC530&rev34&type=docs&pver=6.0&spb=pro&olcid=0x409&pnpid=PCI%5CVEN_8086%26DEV_2533%26SUBSYS_00000000%26REV_04
 ```
 
@@ -79,7 +80,7 @@ You can set the value of DEVPKEY_DrvPkg_DocumentationLink by an [**INF AddProper
 
 The following is an example of how to use an INF **AddProperty** directive to set the value of DEVPKEY_DrvPkg_DocumentationLink for a device that is installed by an INF *DDInstall* section "SampleDDInstallSection":
 
-```
+```cpp
 [SampleDDinstallSection]
 ...
 AddProperty=SampleAddPropertySection

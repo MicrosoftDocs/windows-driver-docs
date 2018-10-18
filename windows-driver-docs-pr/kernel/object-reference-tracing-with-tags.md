@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Object Reference Tracing with Tags
 ms.assetid: f6c3d7b2-09b1-4055-b066-cce8831efab2
 keywords: ["object referencing with tags WDK"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,7 +41,7 @@ To view an object reference trace in the Windows debugging tools, use the [!obtr
 
 After object reference tracing is enabled, the output that is produced by the [!obtrace](http://go.microsoft.com/fwlink/p/?linkid=153600) extension includes a "Tag" column, as the following example shows:
 
-```
+```cpp
 0: kd> !obtrace 0x8a226130
 Object: 8a226130
  Image: leakyapp.exe
@@ -88,7 +84,7 @@ The last line in this example indicates that the reference and dereference count
 
 If the result were instead an under-reference, the last line of the [!obtrace](http://go.microsoft.com/fwlink/p/?linkid=153600) output might be as follows:
 
-```
+```cpp
 Tag: Lky8 References: 1 Dereferences: 2 Under reference by: 1
 ```
 

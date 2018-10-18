@@ -3,11 +3,7 @@ title: WDI_TLV_RECEIVE_FILTER_FIELD (0x65)
 author: windows-driver-content
 description: WDI_TLV_RECEIVE_FILTER_FIELD is a TLV that contains a receive filter test criterion for one field in a network header.
 ms.assetid: 9037CD08-742E-4A99-A37B-9969A2BC666A
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - WDI_TLV_RECEIVE_FILTER_FIELD (0x65) Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

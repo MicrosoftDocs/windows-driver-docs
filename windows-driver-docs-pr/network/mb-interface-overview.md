@@ -2,11 +2,7 @@
 title: MB Interface Overview
 description: MB Interface Overview
 ms.assetid: fcb79029-4225-4759-a130-6ef8b3f2d25d
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -2,11 +2,7 @@
 title: Voice Activation
 description: Cortana, the personal assistant technology introduced on Windows Phone, is supported on Windows 10 devices.
 ms.assetid: 0684EF32-AA76-418B-9027-1C067A8140E3
-ms.author: windowsdriverdev
 ms.date: 05/14/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -217,7 +213,7 @@ Implement the following methods.
 
 The [**KEYWORDID**](https://msdn.microsoft.com/library/windows/hardware/dn957510) enumeration identifies the phrase text/function of a keyword and is also used in the Windows Biometric Service adapters. For more information, see [Biometric Framework Overview - Core Platform Components](https://msdn.microsoft.com/library/windows/desktop/dd560897.aspx)
 
-```
+```cpp
 typedef enum  { 
   KwInvalid              = 0,
   KwHeyCortana           = 1,
@@ -229,7 +225,7 @@ typedef enum  {
 
 The [**KEYWORDSELECTOR**](https://msdn.microsoft.com/library/windows/hardware/dn957511) struct is a set of IDs that uniquely select a particular keyword and language.
 
-```
+```cpp
 typedef struct
 {
     KEYWORDID KeywordId;

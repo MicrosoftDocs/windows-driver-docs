@@ -5,9 +5,6 @@ ms.assetid: a639c5e0-111c-45c7-ac7d-6b7e70c1de4f
 keywords: ["ubd Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -9,11 +9,7 @@ keywords:
 - security identifiers WDK file systems
 - SIDs WDK file systems
 - well known identifiers WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -59,7 +55,7 @@ While there are several other RTL functions, these are the primary functions nec
 
 The following code example demonstrates how to create a SID for the "local system" entity:
 
-```
+```cpp
 {
     //
     // temporary stack-based storage for an SID
@@ -93,7 +89,7 @@ Note that this could have also been done using the simpler function **SecLookupW
 
 The following code example demonstrates how to create a SID using the **SecLookupWellKnownSid** function for the "local system" entity:
 
-```
+```cpp
 {
     UCHAR sidBuffer[128];
     PISID localSid = (PISID) sidBuffer;

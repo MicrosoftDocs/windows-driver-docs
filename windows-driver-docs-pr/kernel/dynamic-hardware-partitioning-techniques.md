@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Dynamic Hardware Partitioning Techniques
 ms.assetid: 6a99e848-a0db-40e1-81b4-fd73a0e1c321
 keywords: ["dynamic hardware partitioning WDK", "hardware partitioning WDK dynamic", "partitions WDK dynamic hardware"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -2,11 +2,7 @@
 title: Access to non-resident allocation
 description: GPU access to allocations which are not resident is illegal and will result in a device removed for the application that generated the error.
 ms.assetid: 698ECD53-861A-4750-B33C-DF0611B87829
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

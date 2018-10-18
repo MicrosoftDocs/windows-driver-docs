@@ -4,11 +4,7 @@ author: windows-driver-content
 description: StartIo Routines in Higher-Level Drivers
 ms.assetid: 8b0e3bef-4a73-4cf8-b71a-6aedf451d648
 keywords: ["StartIo routines, higher-level drivers"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

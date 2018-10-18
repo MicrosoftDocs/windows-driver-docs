@@ -9,11 +9,7 @@ api_name:
 - SRB_GET_STREAM_INFO
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,7 +42,8 @@ The class driver normally issues this request only once. The minidriver may forc
 **When the SRB\_GET\_STREAM\_INFO command is received by the minidriver, the minidriver should:**
 
 1.  Retrieve the pointers for the stream header and the stream information data structures. For example:
-    ```
+
+    ```cpp
      PHW_STREAM_HEADER pstrhdr =
       (PHW_STREAM_HEADER)&amp;(pSrb->CommandData.StreamBuffer->StreamHeader);
      PHW_STREAM_INFORMATION pstrinfo =
@@ -57,12 +54,3 @@ The class driver normally issues this request only once. The minidriver may forc
 2.  Verify that the buffer is large enough to hold the returned data.
 
 3.  Write the information to the buffer.
-
- 
-
- 
-
-
-
-
-

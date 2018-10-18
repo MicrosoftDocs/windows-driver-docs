@@ -4,11 +4,7 @@ description: Indicating TCP Chimney-Specific Events
 ms.assetid: 98b22b7f-8881-4029-9558-d5d94bb7878e
 keywords:
 - events WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

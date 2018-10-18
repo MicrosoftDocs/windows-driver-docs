@@ -4,11 +4,7 @@ description: Responding to Battery Tag Queries
 ms.assetid: ac22a1d3-413c-4991-ac9c-fbfb2c6f16c6
 keywords:
 - battery tags WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ The battery tag is a ULONG counter initialized and incremented by the miniclass 
 
 This miniclass driver routine is declared as follows:
 
-```
+```cpp
 typedef
 NTSTATUS
 (*BCLASS_QUERY_TAG)(

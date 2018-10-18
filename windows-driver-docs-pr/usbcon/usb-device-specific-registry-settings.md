@@ -2,11 +2,7 @@
 Description: This topic describes the device-specific registry entries.
 title: USB Device Registry Entries
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,7 +39,7 @@ This topic describes the device-specific registry entries.
 
 The registry entries described in this topic are found under this key:
 
-```
+```cpp
 HKEY_LOCAL_MACHINE
    SYSTEM
       CurrentControlSet

@@ -10,11 +10,7 @@ keywords:
 - IRPs WDK file system
 - completing I/O requests WDK file system
 - IRP completion routines WDK file system , about IRP completion routines
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +29,7 @@ File system filter drivers use completion routines that are similar to those use
 
 Every IRP completion routine is defined as follows:
 
-```
+```cpp
 NTSTATUS 
 (*PIO_COMPLETION_ROUTINE) ( 
     IN PDEVICE_OBJECT DeviceObject, 

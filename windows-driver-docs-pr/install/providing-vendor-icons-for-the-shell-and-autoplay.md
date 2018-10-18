@@ -12,11 +12,7 @@ keywords:
 - no-media-inserted icons WDK
 - icons WDK AutoPlay
 - copying icon files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -54,7 +50,7 @@ If a system-supplied driver handles your device, you do not have to supply a ful
 
 -   Include an [**INF AddReg directive**](inf-addreg-directive.md) under an [**INF DDInstall.HW section**](inf-ddinstall-hw-section.md) for the device. In the **AddReg** section, specify **Icons** and **NoMediaIcons** value entries, as indicated in the following example:
 
-    ```
+    ```cpp
     [DDInstall.NT.HW]
     AddReg = IconInformation
 

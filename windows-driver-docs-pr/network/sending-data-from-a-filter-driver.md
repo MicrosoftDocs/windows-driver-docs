@@ -4,11 +4,7 @@ description: Sending Data from a Filter Driver
 ms.assetid: 09189010-d12c-43d6-ac9b-8fc7424edfd5
 keywords:
 - sending data WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -9,11 +9,7 @@ keywords:
 - notification data object WDK print spooler
 - IPrintAsyncNotifyDataObject
 - data object WDK spooler notification
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ ms.localizationpriority: medium
 
 The notification data is handled as an object that exposes the [IPrintAsyncNotifyDataObject](http://go.microsoft.com/fwlink/p/?linkid=124761) interface. Clients of the spooler notification pipe can define their own data schema and can send any data type back and forth. However, the spooler queries the notification data object for a BYTE\* pointer, the length of the data, and the notification type. The notification type is a GUID, as described in [Notification Types](notification-filtering-and-communication-styles.md#notification-types).
 
-```
+```cpp
 #define INTERFACE IPrintAsyncNotifyDataObject
 DECLARE_INTERFACE_(IPrintAsyncNotifyDataObject, IUnknown)
 {

@@ -8,11 +8,7 @@ keywords:
 - namespaces WDK GDL
 - namespaces WDK GDL , examples
 - unnamed namespaces WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +29,7 @@ A template or macro name can be referenced in a qualified or unqualified form in
 
 For example, after a template that is named "TEMPNAME" has been defined within a namespace that is named "NSName", that template can be referenced by another template definition by using the namespace qualified form, as the following code example shows.
 
-```
+```cpp
 *DefineInNameSpace: NSName
 {
     *Template:  TEMPNAME
@@ -45,7 +41,7 @@ For example, after a template that is named "TEMPNAME" has been defined within a
 
 This template can now be referenced from another template by using the namespace qualified syntax, as the following code example shows.
 
-```
+```cpp
 *Template:  ANOTHER_TEMPLATE
 {
     *Inherits: NSName:TEMPNAME
@@ -68,7 +64,7 @@ For example, the template that was defined earlier showed two namespaces that ha
 
 The following code example shows how to specify the "unnamed" namespace to define the search order.
 
-```
+```cpp
 *UsingNameSpace: NSName2
 {
     *UsingNameSpace:  *%%%%%  omitting symbol specifies the  Unnamed 

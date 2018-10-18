@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Setting Up the System DMA Controller for Packet-Based DMA
 ms.assetid: 3a646169-1ea3-4844-b771-d08f4ddec460
 keywords: ["system DMA WDK kernel , packet-based", "packet-based DMA WDK kernel", "DMA transfers WDK kernel , packet-based", "AllocateAdapterChannel", "MapTransfer"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

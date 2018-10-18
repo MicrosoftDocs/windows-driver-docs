@@ -2,11 +2,7 @@
 title: Creating Test Certificates
 description: Creating Test Certificates
 ms.assetid: 4e6daa96-029c-4e1c-b483-b900cb836858
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ The following command-line example uses MakeCert to complete the following tasks
 
 Use the following MakeCert command to create the *Contoso.com(Test)* certificate:
 
-```
+```cpp
 makecert -r -pe -ss PrivateCertStore -n CN=Contoso.com(Test) -eku 1.3.6.1.5.5.7.3.3 ContosoTest.cer
 ```
 

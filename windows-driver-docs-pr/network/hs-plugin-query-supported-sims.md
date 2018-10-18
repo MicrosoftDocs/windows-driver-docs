@@ -5,11 +5,7 @@ description: The HS_PLUGIN_QUERY_SUPPORTED_SIMS function returns the list of SIM
 ms.assetid: e1b41bb1-7f82-4298-b070-20cb557fa0fc
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_QUERY_SUPPORTED_SIMS) function Network Drivers Starting with Windows Vista
-ms.author: windowsdriverdev
 ms.date: 07/31/2017 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

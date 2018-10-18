@@ -4,6 +4,7 @@ author: windows-driver-content
 description: This topic describes how to set the unattended Windows Setup component setting.
 ms.assetid: 593F8E05-F886-45FE-83EB-8DDD204F7900
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Implement the unattended Windows Setup setting

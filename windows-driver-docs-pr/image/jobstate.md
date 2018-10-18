@@ -9,11 +9,7 @@ api_name:
 - wscn JobState
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **JobState** element specifies the current state of the job.
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobState>
   text
 </wscn:JobState>
@@ -128,7 +124,7 @@ When the **JobState** element is contained in a [**JobEndStateEvent**](jobendsta
 
 You can both extend and subset the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CancelJobRequest**](canceljobrequest.md)

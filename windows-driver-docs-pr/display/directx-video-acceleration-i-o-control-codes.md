@@ -2,11 +2,7 @@
 title: DirectX Video Acceleration I/O Control Codes
 description: DirectX Video Acceleration I/O Control Codes
 ms.assetid: 704d8462-6698-4850-b993-7fa0a540fdec
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

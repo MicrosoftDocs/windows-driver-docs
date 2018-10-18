@@ -10,11 +10,7 @@ api_name:
 - bitmap
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +24,7 @@ The **bitmap** element is defined in the *asyncui* namespace at this URI: http:/
 Usage
 -----
 
-``` syntax
+```xml
 <bitmap
   bitmapID = "xs:string"
   resourceDll = "xs:string"/>
@@ -103,7 +99,7 @@ Examples
 
 The following code example shows how to use the **bitmap** element.
 
-```
+```xml
 <?xml version="1.0" ?>
    <asyncPrintUIRequest xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
     <v1>
@@ -121,15 +117,6 @@ The following code example shows how to use the **bitmap** element.
   </asyncPrintUIRequest>
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**messageBoxUI**](messageboxui.md)
-
- 
-
- 
-
-
-
-

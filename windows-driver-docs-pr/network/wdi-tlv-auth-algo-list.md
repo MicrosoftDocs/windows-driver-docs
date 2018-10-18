@@ -3,11 +3,7 @@ title: WDI_TLV_AUTH_ALGO_LIST
 author: windows-driver-content
 description: WDI_TLV_AUTH_ALGO_LIST is a TLV that contains a list of authentication algorithms.
 ms.assetid: 6F5EC21B-C923-45ED-B62E-302D916AABE5
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - WDI_TLV_AUTH_ALGO_LIST Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

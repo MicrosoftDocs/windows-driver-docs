@@ -5,9 +5,6 @@ ms.assetid: 82c4900f-846b-41fb-afdc-3c73b524af9c
 keywords: ["File Connect to Remote Session", "remote debugging through the debugger, File Connect to Remote Session"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

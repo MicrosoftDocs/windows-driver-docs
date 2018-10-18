@@ -4,11 +4,7 @@ author: windows-driver-content
 description: ACPI _DSD methods for supporting Modern Standby and PCI hot plug scenarios
 ms:assetid: 44ad67da-f374-4a8e-80bd-d531853088a2
 keywords: ACPI, ACPI \_DSD method
-ms.author: windowsdriverdev
 ms.date: 04/10/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ In Windows 10 (Version 1803), new ACPI _DSD methods have been added to support M
 
  This ACPI object must be implemented in the ACPI scope of every PCIe Root Port/slot that is accessible to the user on Modern Standby-enabled desktop systems. 
 
-```
+```cpp
 Name (_DSD, Package () {
  
           ToUUID("FDF06FAD-F744-4451-BB64-ECD792215B10"),
@@ -38,7 +34,7 @@ This ACPI object allows the operating system to identify and power manage PCIe R
 
 This object must be implemented on all PCIe Root Ports of Thunderbolt™ hierarchies, on Runtime D3 (RTD3) capable systems, in the Root Port ACPI device scope.
 
-```
+```cpp
 Name (_DSD, Package () {  
 
         ToUUID("6211E2C0-58A3-4AF3-90E1-927A4E0C55A4"),  
@@ -58,7 +54,7 @@ This ACPI object allows the operating system to identify externally exposed PCIe
 
 Note: On systems shipping with Windows 10 1803, this should only be implemented on PCIe Root Ports of Thunderbolt™ hierarchies.
 
-```
+```cpp
 Name (_DSD, Package () {  
 
 ToUUID("EFCC06CC-73AC-4BC3-BFF0-76143807C389"),

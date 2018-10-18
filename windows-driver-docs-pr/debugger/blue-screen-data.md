@@ -5,9 +5,6 @@ ms.assetid: 8cc42643-e231-49dd-96b0-6cb528d5d7a9
 keywords: ["Blue Screen Data Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

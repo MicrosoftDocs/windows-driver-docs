@@ -6,11 +6,7 @@ ms.assetid: 3f863c44-152e-43c9-8ef5-ec426986a3fe
 keywords:
 - preoperation callback routines WDK file system minifilter , writing
 - writing callback routines
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,7 +35,7 @@ The following table shows the preoperation callback routine implementation for a
 
 Every preoperation callback routine is defined as follows:
 
-```
+```cpp
 typedef FLT_PREOP_CALLBACK_STATUS 
 (*PFLT_PRE_OPERATION_CALLBACK) ( 
     IN OUT PFLT_CALLBACK_DATA Data, 

@@ -5,9 +5,6 @@ ms.assetid: E3F5A971-64FB-4826-8DC0-59F3615C106A
 keywords: ["usbkd.usbver Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

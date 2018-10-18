@@ -5,9 +5,6 @@ ms.assetid: 1b36e922-9079-4dc5-911a-f635ec026084
 keywords: ["threadfields Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

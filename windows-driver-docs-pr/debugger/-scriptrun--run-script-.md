@@ -5,9 +5,6 @@ ms.assetid: 6481B852-F0B4-4B02-BF7F-81DA21457A40
 keywords: [".scriptrun (Run Script) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,11 +3,7 @@ title: WDI_TLV_BITMAP_PATTERN
 author: windows-driver-content
 description: WDI_TLV_BITMAP_PATTERN is a TLV that contains the byte array of a pattern.
 ms.assetid: 44A18754-3D04-4B62-B8C2-861A47129F08
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - WDI_TLV_BITMAP_PATTERN Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

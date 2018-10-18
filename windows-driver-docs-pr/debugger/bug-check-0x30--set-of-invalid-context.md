@@ -5,9 +5,6 @@ ms.assetid: 77e86390-e387-4ffd-96dd-c32a98939c3a
 keywords: ["Bug Check 0x30 SET_OF_INVALID_CONTEXT", "SET_OF_INVALID_CONTEXT"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

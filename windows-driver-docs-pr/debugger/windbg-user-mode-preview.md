@@ -3,9 +3,6 @@ title: WinDbg Preview - Start a user mode session
 description: This section describes how to start a user mode session with the WinDbg preview debugger.
 ms.author: domars
 ms.date: 08/04/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,7 +33,7 @@ Browse to the desired executable in the provided file dialog and open it.
 
 ## Launch Executable (advanced)
 
-Use this option to start an executable and attach to it it using a set of text boxes with advanced options. 
+Use this option to start an executable and attach to it using a set of text boxes with advanced options. 
 
 Specify the following options:
 - Path to the executable, such as *C:\Windows\notepad.exe*

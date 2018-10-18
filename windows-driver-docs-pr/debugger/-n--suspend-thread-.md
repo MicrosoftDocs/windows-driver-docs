@@ -5,9 +5,6 @@ ms.assetid: 4b1063ad-edba-4cd3-9084-dc6c08c69f55
 keywords: ["~n (Suspend Thread) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

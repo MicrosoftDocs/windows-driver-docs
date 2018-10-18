@@ -2,11 +2,7 @@
 title: Requirements for Property Page Extension DLLs
 description: Specific Requirements for Device Property Page Providers (Property Page Extension DLLs)
 ms.assetid: bc48d848-a216-442e-97ca-f990f8d243ac
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,7 +30,7 @@ A property page extension DLL is installed by using the following directives in 
 
     The following code example shows an *add-registry-section* that adds the **EnumPropPages32** entry that specifies the name of the DLL (*MyPropProvider.dll*) and callback function (*MyCallbackFunction*):
 
-    ```
+    ```cpp
     HKR, , EnumPropPages32, 0, "MyPropProvider.dll, MyCallbackFunction"
     ```
 

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Managing Interlocked Queues with a Driver-Created Thread
 ms.assetid: e2712d52-e98a-4450-b010-9278db3a7a1e
 keywords: ["interlocked IRP queues WDK kernel", "driver-created threads WDK IRPs", "doubly linked IRPs WDK kernel", "driver-dedicated threads WDK IRPs"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

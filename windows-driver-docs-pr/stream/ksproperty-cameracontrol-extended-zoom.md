@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 9/11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,7 +45,7 @@ ms.localizationpriority: medium
 
 The following flags can be placed in the **KSCAMERA\_EXTENDEDPROP\_HEADER.Flags** field to control smooth zoom vs. direct zoom. The default is defined by the driver.
 
-``` syntax
+```cpp
 #define KSCAMERA_EXTENDEDPROP_ZOOM_DEFAULT  0x0000000000000000
 #define KSCAMERA_EXTENDEDPROP_ZOOM_DIRECT   0x0000000000000001
 #define KSCAMERA_EXTENDEDPROP_ZOOM_SMOOTH   0x0000000000000002

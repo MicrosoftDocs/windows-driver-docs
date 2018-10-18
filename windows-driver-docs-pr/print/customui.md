@@ -10,11 +10,7 @@ api_name:
 - customUI
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +24,7 @@ The **customUI** element is defined in the *asyncui* namespace at this URI: http
 Usage
 -----
 
-``` syntax
+```xml
 <customUI
   dll = "xs:string"
   entrypoint = "xs:string"
@@ -136,7 +132,7 @@ Examples
 
 The following code example shows how to use the **customUI** element to call and display a custom user interface on a client computer.
 
-```
+```cpp
 <?xml version="1.0"?>
   <asyncPrintUIRequest xmlns="http://schemas.microsoft.com/2003/print/asyncui/1.0"
       xmlns:myco="http://www.myprintercompany.com">
@@ -149,7 +145,7 @@ The following code example shows how to use the **customUI** element to call and
   </asyncPrintUIRequest>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**requestOpen**](requestopen.md)

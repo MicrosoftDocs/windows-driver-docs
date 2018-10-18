@@ -5,9 +5,6 @@ ms.assetid: 911fa821-5e59-4f20-a31b-148064e6c113
 keywords: ["Bug Check 0x18 REFERENCE_BY_POINTER", "REFERENCE_BY_POINTER"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

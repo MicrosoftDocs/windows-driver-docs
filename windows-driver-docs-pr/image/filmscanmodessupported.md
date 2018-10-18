@@ -9,11 +9,7 @@ api_name:
 - wscn FilmScanModesSupported
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **FilmScanModesSupported** element contains a list of film exposure
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:FilmScanModesSupported>
   child elements
 </wscn:FilmScanModesSupported>
@@ -79,7 +75,7 @@ Remarks
 
 The **FilmScanModesSupported** element contains one or more [**FilmScanModeValue**](filmscanmodevalue.md) child elements. Each **FilmScanModeValue** element identifies a film exposure type that the film scanning option supports.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Film**](film.md)

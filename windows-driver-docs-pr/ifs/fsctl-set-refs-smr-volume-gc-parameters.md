@@ -11,11 +11,7 @@ api_location:
 - WinIoctl.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,7 +42,7 @@ A handle to the device. To obtain a device handle, call the [**CreateFile**](htt
 The control code for the operation. Use **FSCTL\_SET\_REFS\_SMR\_VOLUME\_GC\_PARAMETERS** for this operation.
 
 *lpInBuffer*   
-A pointer to a a caller-allocated [**REFS\_SMR\_VOLUME\_GC\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/mt842917) structure.
+A pointer to a caller-allocated [**REFS\_SMR\_VOLUME\_GC\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/mt842917) structure.
 
 *nInBufferSize* \[in\]  
 The size of the input buffer, in bytes.

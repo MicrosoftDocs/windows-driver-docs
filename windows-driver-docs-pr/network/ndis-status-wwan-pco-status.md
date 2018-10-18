@@ -5,11 +5,7 @@ description: Miniport drivers use the NDIS_STATUS_WWAN_PCO_STATUS notification t
 ms.assetid: E0F70FAE-B7C6-4BE4-B89A-88084463EEA5
 keywords:
 - NDIS_STATUS_WWAN_PCO_STATUS, PCO status notification, Mobile Broadband PCO status notification, MB PCO status notification
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -13,11 +13,7 @@ keywords:
 - slicing WDK DirectDraw
 - volume textures WDK DirectDraw
 - volumetric rendering WDK DirectDraw
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,7 +41,7 @@ A DXV*N* surface stored in the 1-deep arrangement contains one set of 4x4 DXT*N*
 
 Given a texel coordinate *(u, v, p)* where *u* {0,1,...,*width*-1}, *v* {0, 1, ..., *height*-1}, and *p* {0, 1, ..., *depth*-1}, the following can be used to compute the corresponding address of the compressed block and subblock in memory containing that texel. As mentioned above, the subblock format matches the existing DXT*N* format:
 
-```
+```cpp
 subblock_size = 8 (for DXT1)
 subblock_size = 16 (for DXT2,...,DXT5)
 block_size = MIN(p, 4) * subblock_size

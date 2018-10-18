@@ -3,11 +3,7 @@ title: NDIS network interface OIDs
 description: This section describes network interface OIDs for all NDIS drivers
 keywords: ["NDIS network interface OIDs", "WDK NDIS network interface OIDs", "WDK network interface OIDs"]
 ms.assetid: A66B5AC6-9EAF-4234-8614-0EBF179B3DDE
-ms.author: windows-driver-content
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

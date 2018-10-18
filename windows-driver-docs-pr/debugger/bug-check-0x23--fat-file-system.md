@@ -5,9 +5,6 @@ ms.assetid: 5a10e650-2fca-4836-b407-ded8b41c43a1
 keywords: ["Bug Check 0x23 FAT_FILE_SYSTEM", "FAT_FILE_SYSTEM"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

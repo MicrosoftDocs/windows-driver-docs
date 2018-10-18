@@ -10,11 +10,7 @@ keywords:
 - capturing video WDK AVStream , closing streams
 - opening streams WDK AVStream
 - closing streams WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The Stream class interface sends an [**SRB\_OPEN\_STREAM**](https://msdn.microso
 
 The following example code obtains the stream index, kernel streaming data format, and kernel streaming video info header.
 
-```
+```cpp
 int StreamNumber = pSrb->StreamObject->StreamNumber;
 PKS_DATAFORMAT_VIDEOINFOHEADER  pKSDataFormat = 
     (PKS_DATAFORMAT_VIDEOINFOHEADER) pSrb->CommandData.OpenFormat;
@@ -43,7 +39,7 @@ Special rules apply when the output buffer is a DirectDraw surface. In this case
 
 To determine the requested image width, use the following code example:
 
-```
+```cpp
 if (IsRectEmpty(&pVideoInfoHdrRequested->rcTarget) {
     Width =  pVideoInfoHdrRequested->bmiHeader.biWidth;
     Height = pVideoInfoHdrRequested->bmiHeader.biHeight;

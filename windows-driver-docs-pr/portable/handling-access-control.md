@@ -1,11 +1,7 @@
 ---
 Description: Handling Access Control
 title: Handling Access Control
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -156,7 +152,7 @@ HRESULT CQueue::ProcessWpdMessage(
         CHECK_HR(hr, "Failed to deserialize command parameters from input buffer");
     }
 
-    // Verify that that command was sent with the appropriate access
+    // Verify that the command was sent with the appropriate access
     if (hr == S_OK)
     {
         hr = VERIFY_WPD_COMMAND_ACCESS(ControlCode, pParams, g_WpdCommandAccessMap);

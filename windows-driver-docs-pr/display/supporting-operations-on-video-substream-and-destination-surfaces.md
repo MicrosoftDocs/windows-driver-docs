@@ -9,11 +9,7 @@ keywords:
 - substream surfaces WDK DirectX VA
 - color filling destination surfaces WDK DirectX VA
 - color filling substream surfaces WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,7 +34,7 @@ For video substream surfaces with the AYUV [*FOURCC*](https://msdn.microsoft.com
 
 The AYUV color for transparent black is set as follows:
 
-```
+```cpp
 DXVA_AYUVsample2 clr; 
 clr.bCrValue = 0x80;
 clr.bCbValue = 0x80;
@@ -69,7 +65,7 @@ For YUV packed surface types, the VMR sets the fill color DWORD to the appropria
 
 For planar surface types, the VMR sets the AYUV color for opaque black as follows:
 
-```
+```cpp
 DXVA_AYUVsample2 clr; 
 clr.bCrValue = 0x80;
 clr.bCbValue = 0x80;

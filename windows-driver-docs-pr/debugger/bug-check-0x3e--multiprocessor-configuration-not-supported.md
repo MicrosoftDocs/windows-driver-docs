@@ -5,9 +5,6 @@ ms.assetid: 187da73d-0d8a-4e25-9668-229539758f9c
 keywords: ["Bug Check 0x3E MULTIPROCESSOR_CONFIGURATION_NOT_SUPPORTED", "MULTIPROCESSOR_CONFIGURATION_NOT_SUPPORTED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -2,11 +2,7 @@
 title: Writing drivers for different versions of Windows
 description: Writing drivers for different versions of Windows
 ms.assetid: 7519235c-46c5-49aa-8b11-9e9ac5a51026
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,7 +37,7 @@ A kernel-mode driver can dynamically determine which version of Windows it is ru
 
 [**RtlIsNtDdiVersionAvailable**](https://msdn.microsoft.com/library/windows/hardware/ff561954) is a function that drivers can use to determine, at run time, if the features that are provided by a particular version of Windows are available. The prototype for this function is as follows:
 
-```
+```cpp
 BOOLEAN RtlIsNtDdiVersionAvailable(IN ULONG Version)
 ```
 
@@ -51,7 +47,7 @@ In this prototype, *Version* is a value that indicates the required version of t
 
 Your driver can also check for a specific service pack by calling the [**RtlIsServicePackVersionInstalled**](https://msdn.microsoft.com/library/windows/hardware/ff561956) function. The prototype for this function is as follows:
 
-```
+```cpp
 BOOLEAN RtlIsServicePackVersionInstalled(IN ULONG Version)
 ```
 
@@ -71,7 +67,7 @@ After a driver determines that a specific operating system version is available 
 
 This code example, which is from a driver's header file, defines the PAISQSL type as a pointer to the [**KeAcquireInStackQueuedSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff551899) function. The example then declares a `AcquireInStackQueuedSpinLock` variable with this type.
 
-```
+```cpp
 ...
  //
 // Pointer to the ordered spin lock function.
@@ -85,7 +81,7 @@ PAISQSL AcquireInStackQueued = NULL;
 
 This code example, which is from the driver's initialization code, determines whether the driver is running on Windows 7 or a later operating system. If it is, the code retrieves a pointer to [**KeAcquireInStackQueuedSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff551899).
 
-```
+```cpp
 ...
  
 //

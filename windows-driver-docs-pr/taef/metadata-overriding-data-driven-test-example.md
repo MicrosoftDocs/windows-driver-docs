@@ -2,11 +2,7 @@
 title: Metadata Overriding Data Driven Test Example
 description: Metadata Overriding Data Driven Test Example
 ms.assetid: F39A556F-1816-4272-ABDE-62164AE09685
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ If you compare the examples that are covered on this section to the ones that ar
 
 In the native example, observe lines 5 and 10 in the code example below:
 
-```
+```cpp
 1   class MetadataOverridingDataDrivenExample
 2   {
 3      BEGIN_TEST_CLASS(MetadataOverridingDataDrivenExample)
@@ -44,7 +40,7 @@ So all tests defined in Class "MetadataOverridingDataDrivenExample" has priority
 
 Let's look at the XML file to understand how.
 
-```
+```cpp
     1  <?xml version="1.0"?>
     2  <Data>
     3    <Table Id="MetadataTable">
@@ -75,7 +71,7 @@ In the first 3 rows, the example overrides some metadata by explicitly specifyin
 
 Let's take a look at the managed code before looking into the selection and execution of these tests.
 
-```
+```cpp
 1   [TestClass]
 2   public class DataDrivenMetadataOverridingExample
 3   {

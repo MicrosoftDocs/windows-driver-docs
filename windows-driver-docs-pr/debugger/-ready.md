@@ -5,9 +5,6 @@ ms.assetid: 1dc94ceb-7d06-4874-999c-059c86f51ea0
 keywords: ["thread, ready threads", "ready Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

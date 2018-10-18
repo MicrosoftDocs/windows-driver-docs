@@ -5,9 +5,6 @@ ms.assetid: 914caf55-2fbf-4f30-af6e-e666dc47c7da
 keywords: ["Display Function Data (.fnent) command", ".fnent (Display Function Data) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.fnent** command displays information about the function table entry for a specified function.
 
-```
+```dbgcmd
 .fnent Address
 ```
 
@@ -66,7 +63,7 @@ If the nearest symbol is not in the function table, no information is displayed.
 
 The following example shows a possible display.
 
-```
+```dbgcmd
 0:001> .fnent 77f9f9e7
 Debugger function entry 00b61f50 for:
 (77f9f9e7)   ntdll!RtlpBreakWithStatusInstruction   |  (77f9fa98)   ntdll!DbgPrintReturnControlC

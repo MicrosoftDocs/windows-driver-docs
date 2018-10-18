@@ -4,9 +4,6 @@ description: This method in the Microsoft Hardware API retrieves data for a spec
 author: balapv
 ms.author: balapv
 ms.date: 04/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,7 +43,7 @@ Do not provide a request body for this method.
 
 The following example demonstrates how to retrieve information about a specific product registered to your account.
 
-```
+```cpp
 GET https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14039471039847257 HTTP/1.1
 Authorization: Bearer <your access token>
 ```

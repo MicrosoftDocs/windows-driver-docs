@@ -4,9 +4,6 @@ description: These methods from the Microsoft Hardware APIs get data for shippin
 author: balapv
 ms.author: balapv
 ms.date: 08/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Get a shipping label
@@ -48,7 +45,7 @@ Do not provide a request body for this method.
 
 The following example demonstrates how to retrieve information about a specific product registered to your account.
 
-```
+```cpp
 GET https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14461751976964156/submissions/1152921504621467600/shippingLabels/1152921504606980300 HTTP/1.1
 Authorization: Bearer <your access token>
 ```

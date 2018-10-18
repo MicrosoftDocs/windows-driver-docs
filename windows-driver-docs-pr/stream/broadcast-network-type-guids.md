@@ -2,11 +2,7 @@
 title: Broadcast Network Type GUIDs
 description: Broadcast Network Type GUIDs
 ms.assetid: 3501cb1f-10f7-481b-bd2f-1f77156a676a
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

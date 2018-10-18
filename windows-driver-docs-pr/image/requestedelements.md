@@ -9,11 +9,7 @@ api_name:
 - wscn RequestedElements
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **RequestedElements** element identifies the elements that the clie
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:RequestedElements>
   child elements
 </wscn:RequestedElements>
@@ -82,7 +78,7 @@ Remarks
 
 The **RequestedElements** element contains one or more **Name** elements for parent **RequestedElements** elements that identify the data that the client is querying.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**GetJobElementsRequest**](getjobelementsrequest.md)

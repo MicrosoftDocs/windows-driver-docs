@@ -6,11 +6,7 @@ ms.assetid: c5d5b589-09a3-4f58-83bf-2876b37b0937
 keywords:
 - general I/O targets WDK KMDF , initializing
 - initializing general I/O targets WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,7 +32,7 @@ Rarely, a driver might identify a remote I/O target by supplying a pointer to a 
 
 The following example shows how the Ndisedge sample driver uses the above technique to create and open a remote I/O target:
 
-```
+```cpp
 status = WdfIoTargetCreate(Adapter->WdfDevice,
                         WDF_NO_OBJECT_ATTRIBUTES,
                         &Adapter->IoTarget);

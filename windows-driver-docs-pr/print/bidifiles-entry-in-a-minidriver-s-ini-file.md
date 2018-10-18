@@ -8,11 +8,7 @@ keywords:
 - INF files WDK print , bidi extension file information
 - bidi extension files WDK printer autoconfig
 - in-box autoconfiguration support WDK printer , bidi extension files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,18 +19,10 @@ A printer minidriver communicates information about the bidi extension file to t
 
 The following sample shows the `BidiFiles` section of the INI file. The `BidiSPMFile` entry would be used for a standard TCP/IP port monitor, and the `BidiWSDFile` entry would be used for a Web Services for Devices (WSD) port monitor.
 
-```
+```INI
 # OEM Mapping & Extension GDL files 
 # 
 [BidiFiles]
 BidiSPMFile = BidiSPM_AcmeXXX.XML
 BidiWSDFile  = BidiWSD_AcmeXXX.XML
 ```
-
- 
-
- 
-
-
-
-

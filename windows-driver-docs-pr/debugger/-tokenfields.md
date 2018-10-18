@@ -5,9 +5,6 @@ ms.assetid: dfadfdb0-1ed8-4c21-9207-dc02d7435475
 keywords: ["token", "tokenfields Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,6 +3,7 @@ title: DSM\_VERSION WMI Class
 description: DSM\_VERSION WMI Class
 ms.assetid: 79239921-169d-496d-a52b-f4b6b0cb0c80
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DSM\_VERSION WMI Class
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 
 An MPIO driver uses the DSM\_VERSION WMI class to identify the version of a configured DSM.
 
-```
+```cpp
 class DSM_VERSION
 {
     //

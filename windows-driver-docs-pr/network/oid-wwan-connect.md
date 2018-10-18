@@ -3,11 +3,7 @@ title: OID_WWAN_CONNECT
 author: windows-driver-content
 description: OID_WWAN_CONNECT activates or deactivates a particular packet context and reads the activation state of a context.
 ms.assetid: 51be35fe-750b-4c2b-aab3-a9df59711f7d
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_WWAN_CONNECT Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

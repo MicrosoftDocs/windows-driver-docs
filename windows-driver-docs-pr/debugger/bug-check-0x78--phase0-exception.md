@@ -5,9 +5,6 @@ ms.assetid: 2f306296-a7f4-47f8-b077-7acc623a538f
 keywords: ["Bug Check 0x78 PHASE0_EXCEPTION", "PHASE0_EXCEPTION"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,11 +3,7 @@ title: JavaScript Constraints
 author: windows-driver-content
 description: The v4 printer driver model supports extended constraint and PrintTicket handling derived from the v3 IPrintOemPrintTicketProvider interface.
 ms.assetid: CD2EF726-CF0F-4BB6-9F41-794699568F17
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -102,7 +98,7 @@ This API is called in order to validate that a PrintTicket object is valid for a
 
 Syntax
 
-```JavaScript
+```javascript
 function validatePrintTicket(printTicket, scriptContext)
 ```
 
@@ -131,7 +127,7 @@ This API is called to allow the PrintCapabilities object to be modified. This sh
 
 Syntax
 
-```JavaScript
+```javascript
 function completePrintCapabilities(printTicket, scriptContext, printCapabilities)
 ```
 
@@ -157,7 +153,7 @@ This API is called to convert values from the DEVMODE property bag into a PrintT
 
 Syntax
 
-```JavaScript
+```javascript
 function convertDevModeToPrintTicket(devModeProperties, scriptContext, printTicket)
 ```
 
@@ -183,7 +179,7 @@ This API is called to convert values from a PrintTicket into the DEVMODE propert
 
 Syntax
 
-```JavaScript
+```javascript
 function convertPrintTicketToDevMode(printTicket, scriptContext, devModeProperties)
 ```
 

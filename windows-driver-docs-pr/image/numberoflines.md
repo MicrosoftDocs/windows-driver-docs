@@ -9,11 +9,7 @@ api_name:
 - wscn NumberOfLines
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **NumberOfLines** element describes the exact height, in pixels, of
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:NumberOfLines>
   text
 </wscn:NumberOfLines>
@@ -73,7 +69,7 @@ Remarks
 
 The specified value describes the exact height, in pixels, or the number of lines, of the final output image that would be generated for the current [**ScanTicket**](scanticket.md) settings that are being validated. This height includes rotation and any adjustment that the scanner might perform on the scanned image before transferring it to the client.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**MediaBackImageInfo**](mediabackimageinfo.md)

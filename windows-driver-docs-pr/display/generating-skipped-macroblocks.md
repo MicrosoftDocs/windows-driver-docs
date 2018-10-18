@@ -5,11 +5,7 @@ ms.assetid: 98ea004b-347d-4299-a23c-da0a9d0e844f
 keywords:
 - macroblocks WDK DirectX VA , skipped macroblocks
 - skipped macroblocks WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +29,7 @@ The following conditions are required when generating and using skipped macroblo
 
 Because of the first three preceding conditions, an accelerator may implement motion compensation (when *Motion4MV* is zero) by applying the specified motion vectors to a rectangle of width equal to the following expression in the luminance component, and to a similarly specified rectangle in the chrominance components. This rectangular-area motion compensation method can be performed by the accelerator rather than by using *MBskipsFollowing*+1 repetitions of the same macroblock control operation.
 
-```
+```cpp
 (bMacroblockWidthMinus1+1) X (MBskipsFollowing+1)
 ```
 

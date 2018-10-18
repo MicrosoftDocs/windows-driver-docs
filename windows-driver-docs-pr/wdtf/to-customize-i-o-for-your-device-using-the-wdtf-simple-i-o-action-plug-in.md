@@ -3,11 +3,7 @@ title: Customize device I/O using a WDTF simple I/O action plug-in
 author: windows-driver-content
 description: To get the most benefit from the Device Fundamental tests and tests you might have written using the Visual Studio test templates, your device should be supported by a Simple I/O plug-in.
 ms.assetid: 96BC880B-79DC-4CB1-BD79-87B0A4717634
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -68,7 +64,7 @@ This [**Open**](https://msdn.microsoft.com/library/windows/hardware/hh451153) me
 
 -   Open the implementation file for your project, for example, CWDTFmyDeviceTypeSimpleIoActionImpl.cpp, and locate the instance of [**Open**](https://msdn.microsoft.com/library/windows/hardware/hh451153) method. This method has a section marked with comments and TODO:
 
-    ```
+    ```cpp
     //
        //   TODO: Add code for your implementation of Open() here.
        //
@@ -91,7 +87,7 @@ This method should close your previously opened test context. You should clear y
 
 -   Open the implementation file for your project, for example, CWDTFmyDeviceTypeSimpleIoActionImpl.cpp, and locate the instance of the [**Close**](https://msdn.microsoft.com/library/windows/hardware/hh451151) method. This method has a section marked with comments and TODO:
 
-    ```
+    ```cpp
     //
        //  //
        //   TODO: Add code for your implmentation of Close() here.
@@ -118,7 +114,7 @@ This method should perform a small number of input and output operations on the 
 
 -   Open the implementation file for your project, for example, CWDTFmyDeviceTypeSimpleIoActionImpl.cpp, and locate the instance of the RunIO method. This method has a section marked with comments and TODO:
 
-    ```
+    ```cpp
     //
        //  //
        //   TODO: Add code for your implmentaiton of RunIO() here.

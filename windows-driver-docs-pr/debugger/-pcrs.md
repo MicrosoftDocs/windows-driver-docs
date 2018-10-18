@@ -5,9 +5,6 @@ ms.assetid: 45a84a95-86df-4176-ba30-ac93b509f7f7
 keywords: ["processor control register (PCR)", "PCR (processor control register)", "pcrs Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

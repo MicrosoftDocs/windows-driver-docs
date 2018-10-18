@@ -8,11 +8,7 @@ keywords:
 - kernel-mode video transport WDK DirectDraw , user-mode handles
 - video transport kernel-mode WDK DirectDraw , user-mode handles
 - user-mode handles WDK DirectDraw
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,7 +32,7 @@ A user-mode component can also call the [**IDirectDrawKernel::GetCaps**](https:/
 
 ### <span id="code_sample"></span><span id="CODE_SAMPLE"></span>Code Sample
 
-```
+```cpp
 ddRVal = IDirectDraw_QueryInterface( lpDD, &IID_IDirectDrawKernel, &pDDK );
 if( ( ddRVal == DD_OK ) && ( pDDK != NULL ) )
 {
@@ -59,7 +55,7 @@ The **IDirectDrawSurfaceKernel::GetKernelHandle** method returns a kernel-mode h
 
 ### <span id="code_sample2"></span><span id="CODE_SAMPLE2"></span>Code Sample
 
-```
+```cpp
 ddRVal = IDirectDraw_QueryInterface( lpSurface,
              &IID_IDirectDrawSurfaceKernel, &pDDSK );
 if( ( ddRVal == DD_OK ) && ( pDDK != NULL ) )

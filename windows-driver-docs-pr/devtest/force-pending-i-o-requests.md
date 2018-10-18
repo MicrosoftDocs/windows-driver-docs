@@ -5,11 +5,7 @@ ms.assetid: 0255fc5c-0e75-4108-ba29-f1a61ce9b0dd
 keywords:
 - Force Pending I/O Requests option WDK Driver Verifier
 - STATUS_PENDING WDK Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -115,7 +111,7 @@ For example, the following stack trace of Pci.sys shows its response to Force Pe
 
 ```
 kd> !verifier 40
-# Size of the log is is 0x40
+# Size of the log is 0x40
 ========================================================
 IRP: 8f84ef00 - forced pending from stack trace:
 

@@ -3,6 +3,7 @@ title: DSM\_QuerySupportedLBPolicies\_V2 WMI Class
 description: DSM\_QuerySupportedLBPolicies\_V2 WMI Class
 ms.assetid: d60cf06d-595b-425d-bf22-f0986267ba09
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DSM\_QuerySupportedLBPolicies\_V2 WMI Class
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 
 MPIO publishes the DSM\_QuerySupportedLBPolicies\_V2 WMI class but expects the DSM to register the GUID and handle its implementation. A WMI client uses the DSM\_QuerySupportedLBPolicies\_V2 WMI class to query all the load balance policies that a DSM supports.
 
-```
+```cpp
 class DSM_QuerySupportedLBPolicies_V2
 {
 

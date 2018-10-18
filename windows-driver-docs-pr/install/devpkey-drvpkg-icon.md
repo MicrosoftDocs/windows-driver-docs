@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DEVPKEY_DrvPkg_Icon
@@ -59,7 +60,7 @@ The icon list is a NULL-separated list of icon specifiers. An icon specifier is 
 
 -   An icon-resource specifier has the following entries:
 
-    ```
+    ```cpp
     @executable-file-path,resource-identifier
     ```
 
@@ -79,7 +80,7 @@ You can set the value of DEVPKEY_DrvPkg_Icon by an [**INF AddProperty directive*
 
 The following is an example of how to use an INF **AddProperty** directive to set DEVPKEY_DrvPkg_Icon for a device that is installed by an INF *DDInstall* section "SampleDDInstallSection":
 
-```
+```cpp
 [SampleDDinstallSection]
 ...
 AddProperty=SampleAddPropertySection

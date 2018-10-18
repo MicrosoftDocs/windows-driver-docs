@@ -5,6 +5,7 @@ description: Special Case Mappings
 ms.assetid: 1691e0e5-7b05-40e1-8747-40926f2eba9c
 keywords: ["joysticks WDK HID , axes", "virtual joystick drivers WDK HID , axes", "VJoyD WDK HID , axes", "axes WDK joysticks", "special case mappings WDK joysticks", "case mappings WDK joysticks", "Z-axis case mapping WDK joysticks", "car controller case mapping WDK joysticks", "mapping axes"]
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Special Case Mappings
@@ -68,7 +69,7 @@ The default mapping for devices reporting through HID has not changed except tha
 
 Another set of special-case mappings are those needed for car controllers that declare more than two axes. Unfortunately, there is little consistency within the industry in this area. There presently exist three common ways to represent separate accelerator and brake pedals. DirectInput attempts to detect which method a car controller is using with logic similar to that shown in the following pseudocode:
 
-```
+```cpp
     if( has_r and has_Z )
         use mappings:
         X => GUID_XAxis

@@ -8,11 +8,7 @@ keywords:
 - descriptors WDK USB Video Class
 - descriptors WDK USB Video Class , sample code
 - sample code WDK USB Video Class , extension unit descriptors
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ ms.localizationpriority: medium
 
 This code demonstrates how to provide an Extension Unit descriptor at the hardware level.
 
-```
+```cpp
 BYTE  Length:            0x1a    
 BYTE  DescriptorType:    0x24               
 BYTE  DescriptorSubtype: 0x06             

@@ -2,11 +2,7 @@
 title: Meet UWP device apps
 description: This topic provides an overview of the features and capabilities that make a UWP device app uniquely different from a regular UWP app.
 ms.assetid: 395745E6-7A97-4B26-A82C-0729E7B999C6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

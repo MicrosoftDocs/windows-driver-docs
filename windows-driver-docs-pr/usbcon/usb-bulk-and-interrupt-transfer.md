@@ -2,11 +2,7 @@
 Description: This topic provides a brief overview about USB bulk transfers. 
 title: How to send USB bulk transfer requests
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -186,7 +182,7 @@ In the completion routine, perform these tasks:
 
 This example code shows how the client driver can submit a bulk transfer request. The driver sets a completion routine. That routine is shown in the next code block.
 
-```
+```cpp
 /*++
 
 Routine Description:
@@ -273,7 +269,7 @@ Exit:
 
 This example code shows the completion routine implementation for a bulk transfer. The client driver completes the request in the completion routine and sets this request information: status and the number of bytes transferred.
 
-```
+```cpp
 /*++
 
 Routine Description:

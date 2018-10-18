@@ -5,9 +5,6 @@ ms.assetid: 8cda10c3-860c-453d-9fdd-0dfc74d71c53
 keywords: [".pcmd (Set Prompt Command) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

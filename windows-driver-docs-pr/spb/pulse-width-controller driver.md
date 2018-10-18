@@ -3,11 +3,7 @@ title: PWM driver for an on-SoC PWM module
 author: windows-driver-content
 description: PWM controller is part of the SoC and memory-mapped to the SoC address space. Write a kernel-mode driver that manipulates the PWM registers and provides access to applications. 
 ms.assetid: 911375A9-6761-45C1-BB5E-79BC0E4409AC
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -60,7 +56,7 @@ A PWM waveform can be categorized by 2 parameters: waveform period (T) and duty 
 The PWM driver must register  
 GUID_DEVINTERFACE_PWM_CONTROLLER as the device interface GUID for exposing and accessing PWM devices. 
 
-```
+```cpp
 // {60824B4C-EED1-4C9C-B49C-1B961461A819} 
 
 DEFINE_GUID(GUID_DEVINTERFACE_PWM_CONTROLLER, 0x60824b4c, 0xeed1, 0x4c9c, 0xb4, 0x9c, 0x1b, 0x96, 0x14, 0x61, 0xa8, 0x19); 
@@ -76,19 +72,19 @@ An application or another driver can control either the controller or the pins t
 
 
 Here is an example of the symbolic path for the controller:
-```
+```cpp
 \??\ACPI#FSCL000E#1#{60824b4c-eed1-4c9c-b49c-1b961461a819}  
 ```
 Similarly, the format of the pins is as follows:
 The format of the path is as follows:
 
-```
+```cpp
 <DeviceInterfaceSymbolicLinkName>\<PinNumber>
 ```
 where <PinNumber> is the 0-based index of the pin to open. 
 
 Here is an example of the symbolic path for pins:
-```
+```cpp
 \??\ACPI#FSCL000E#1#{60824b4c-eed1-4c9c-b49c-1b961461a819}\0 ; Opens pin 0 
 
 \??\ACPI#FSCL000E#1#{60824b4c-eed1-4c9c-b49c-1b961461a819}\0001 ; Opens pin 1 with the leading 0s have no effect.
@@ -119,7 +115,7 @@ The properties can be set in one of two ways:
 1. Using the INF file for the PWM driver
    
    Use the **AddProperty** directive to set device properties. The INF file should be allow setting different values for the same property on one or subset of the PWM device instances. Here is an example of setting DEVPKEY_DeviceInterface_Restricted.
-    ```
+    ```cpp
     ;***************************************** 
     ; Device interface installation 
     ;***************************************** 
@@ -178,7 +174,7 @@ In the preceding set of tasks, the second task of validation can be performed in
 
 Here is a sample code the implements the previously mentioned validation steps for an EVT_WDF_DEVICE_FILE_CREATE handler: 
 
-```
+```cpp
 EVT_WDF_DEVICE_FILE_CREATE PwmEvtDeviceFileCreate;
 
 VOID 
@@ -268,7 +264,7 @@ If the controller/pin is already opened for write, then deny access, and complet
 
 Here is an example shows how to extract Desired Access and Share Access from a create request: 
 
-```
+```cpp
 void 
 PwmCreateRequestGetAccess( 
     _In_ WDFREQUEST WdfRequest, 
@@ -356,7 +352,7 @@ Any transition that is not mentioned for a given state implies that such transit
     If the request has write desired access and the controller/pin is already opened for write, then complete the request with STATUS_SHARING_VIOLATION, else mark the controller/pin as opened for write (Is-Opened-For-Write = true), grant access and continue processing.
 
     This example implements the previously mentioned access validation steps for an EVT_WDF_DEVICE_FILE_CREATE handler where the necessary locking logic to handle concurrent file create requests is omitted: 
-    ```
+    ```cpp
     //
     // Verify request desired access
     //
@@ -430,7 +426,7 @@ Any transition that is not mentioned for a given state implies that such transit
     If the file object belongs to a controller/pin which opened that controller/pin for write, then reset the controller/pin to the default state and unmark that controller/pin from being opened for write (Is-Opened-For-Write = false).
 
     This example implements the previously mentioned access validation steps for an EVT_WDF_DEVICE_FILE_CLOSE handler where the necessary locking logic to handle concurrent file close requests is omitted.
-    ```
+    ```cpp
     EVT_WDF_DEVICE_FILE_CLOSE PwmEvtFileClose;
 
     VOID

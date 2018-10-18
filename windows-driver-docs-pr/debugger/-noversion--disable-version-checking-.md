@@ -5,9 +5,6 @@ ms.assetid: ce7fbff4-7936-4bef-8236-a13957ada7f4
 keywords: ["Disable Version Checking (.noversion) command", ".noversion (Disable Version Checking) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

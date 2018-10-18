@@ -4,6 +4,7 @@ author: windows-driver-content
 description: This topic contains ACPI descriptor samples.
 ms.assetid: E091DF59-2E9F-4652-801C-3F55CBB910FE
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # ACPI descriptor samples

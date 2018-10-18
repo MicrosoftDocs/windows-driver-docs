@@ -6,11 +6,7 @@ ms.assetid: 55e8786c-d7b8-48f3-9e54-312183cf8fb3
 keywords: 
 - HS_NETWORK_PROFILE structure Network Drivers Starting with Windows Vista
 - PHS_NETWORK_PROFILE structure pointer Network Drivers Starting with Windows Vista
-ms.author: windowsdriverdev
 ms.date: 07/31/2017 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -4,9 +4,6 @@ description: Windows Error Reporting (WER) is included in Windows Vista and late
 ms.assetid: 1602C45E-AB27-4578-AC78-A1C91D3A207B
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

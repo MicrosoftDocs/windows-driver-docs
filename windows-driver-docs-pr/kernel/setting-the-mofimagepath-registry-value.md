@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Setting the MofImagePath Registry Value
 ms.assetid: b8c43cd3-d4f4-4f1e-b692-8005d845d64a
 keywords: ["WMI WDK kernel , publishing schema", "publishing WMI schema WDK", "schema publishing WDK WMI", "MOF files WDK WMI", "MofImagePath"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +24,7 @@ To publish a driver's schema in a separate file:
 
 3.  Add the **MofImagePath** registry value under the driver's Services key. For example, the following shows the registry value for a driver named *DriverName*:
 
-    ```
+    ```cpp
     HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
         \DriverName
             MofImagePath    "\SystemRoot\System32\Drivers\DriverNameMof.dll"
@@ -36,7 +32,7 @@ To publish a driver's schema in a separate file:
 
 You can set this key in the driver's INF file, as follows:
 
-```
+```cpp
 ; This is the Services section for the driver
 [Driver_service_install_section]
 AddReg=Driver_AddReg

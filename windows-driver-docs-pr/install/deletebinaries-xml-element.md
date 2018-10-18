@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # deleteBinaries XML Element
@@ -21,7 +22,7 @@ The **deleteBinaries** XML element is an empty element that sets the **deleteBin
 
 **Element Tag**
 
-```
+```cpp
 <deleteBinaries>
 ```
 
@@ -64,7 +65,7 @@ By default, the **deleteBinaries** flag is set to OFF. To set the **deleteBinari
 
 The following code example demonstrates a **deleteBinaries** element.
 
-```
+```cpp
 <dpinst>
   ...
    <deleteBinaries/>

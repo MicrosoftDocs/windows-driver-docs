@@ -3,11 +3,7 @@ title: Performing Diagnostics on a WIA Device
 author: windows-driver-content
 description: Performing Diagnostics on a WIA Device
 ms.assetid: 15962c49-f03c-409b-b138-033893a50ec2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ The WIA service can test a device's functionality status by calling the [**IStiU
 
 The following example shows an implementation of the **IStiUSD::Diagnostic** method.
 
-```
+```cpp
 STDMETHODIMP CWIADevice::Diagnostic(LPSTI_DIAG pBuffer)
 {
   //

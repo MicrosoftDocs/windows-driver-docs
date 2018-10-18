@@ -7,11 +7,7 @@ keywords:
 - GPD file entries WDK Unidrv , standard variables
 - variables WDK GPD files
 - standard variables WDK GPD files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ All standard variables are stored as DWORD integers.
 
 The following [printer command](printer-commands.md) entry specifies the command string that is sent to an HP LaserJet 4P when a block of raster data is ready:
 
-```
+```cpp
 *Command: CmdSendBlockData: "<1B>*b" %d{NumOfDataBytes} "W"
 ```
 

@@ -5,9 +5,6 @@ ms.assetid: ef0c0294-a010-439b-82dd-25148e05a7f1
 keywords: ["RPC debugging, tracking contention"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

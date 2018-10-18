@@ -9,11 +9,7 @@ api_name:
 - wscn Platen
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **Platen** element describes the capabilities of the flatbed platen
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Platen>
   child elements
 </wscn:Platen>
@@ -91,7 +87,7 @@ Remarks
 
 If the scan device has a flatbed platen, the WSD Scan Service must provide configuration information for all **Platen** child elements.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**PlatenColor**](platencolor.md)

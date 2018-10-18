@@ -5,9 +5,6 @@ ms.assetid: d2589163-8c82-4416-a378-a0c72360a9fb
 keywords: ["Bug Check 0x10F RESOURCE_MANAGER_EXCEPTION_NOT_HANDLED", "RESOURCE_MANAGER_EXCEPTION_NOT_HANDLED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

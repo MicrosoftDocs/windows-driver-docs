@@ -3,6 +3,7 @@ title: MSiSCSI\_HBAInformation WMI Class
 description: MSiSCSI\_HBAInformation WMI Class
 ms.assetid: 24c44f97-5ff3-46fa-a5bf-aa76f7f0d3f2
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_HBAInformation WMI Class
@@ -17,7 +18,7 @@ Because this class is associated with a particular instance of a storage minipor
 
 The MSiSCSI\_HBAInformation class is defined as follows in *Mgmt.mof*.
 
-```
+```cpp
 class MSiSCSI_HBAInformation {
   [key] string  InstanceName;
   boolean  Active;

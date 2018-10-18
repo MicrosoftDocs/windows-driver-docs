@@ -5,11 +5,7 @@ description: Implicit Bin Extensions
 ms.assetid: 2aaa9e48-59f9-4c87-b592-ed60469cf747
 keywords:
 - implicit bin extensions WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,13 +16,13 @@ Each InputBin or OutputBin construct extends the schema with two or more queries
 
 These schemas are defined in the Tcpbidi.xsd file under the **InputBins** and **OutputBins** properties.
 
-```
+```cpp
 <InputBin name="TopBin" mibName="TRAY 1"/>
 ```
 
 The preceding InputBin construct results in the following four queries:
 
-```
+```cpp
 \Printer.Layout.InputBins.TopBin:Installed
 \Printer.Layout.InputBins.TopBin:Level
 \Printer.Layout.InputBins.TopBin:MediaType
@@ -37,7 +33,7 @@ The preceding InputBin construct results in the following four queries:
 
 The preceding OutputBin construct results in the following two queries:
 
-```
+```cpp
 \Printer.Finishing.OutputBins.TopBin:Installed
 \Printer.Finishing.OutputBins.TopBin:Level
 ```

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Handling Stop IRPs (Windows 2000 and Later)
 ms.assetid: 5148ca15-07f0-4a93-aa65-45b13184184b
 keywords: ["stop IRPs WDK PnP", "IRPs WDK PnP", "I/O request packets WDK PnP"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

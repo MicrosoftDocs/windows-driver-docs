@@ -13,22 +13,22 @@ api_name:
 - IPrinterScriptUsbWritePrintDataProgress
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbWritePrintDataProgress interface
-
 
 The IPrinterScriptUsbWritePrintDataProgress interface is passed as a parameter in the **writePrintData** JavaScript function call.
 
 Members
 -------
 
-The **IPrinterScriptUsbWritePrintDataProgress** interface inherits from the [**IUnknown**](https://msdn.microsoft.com/library/windows/desktop/ms680509) interface. **IPrinterScriptUsbWritePrintDataProgress** also has these types of members:
+The **IPrinterScriptUsbWritePrintDataProgress** interface inherits from the [**IUnknown**](https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown) interface. **IPrinterScriptUsbWritePrintDataProgress** also has these types of members:
 
 -   [Methods](#methods)
 
-### <span id="methods"></span>Methods
+### Methods
 
 The **IPrinterScriptUsbWritePrintDataProgress** interface has these methods.
 
@@ -54,13 +54,3 @@ The **IPrinterScriptUsbWritePrintDataProgress** interface has these methods.
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-

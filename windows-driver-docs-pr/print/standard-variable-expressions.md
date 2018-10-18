@@ -9,11 +9,7 @@ keywords:
 - strings WDK Unidrv
 - standard variable expressions WDK Unidrv
 - max_repeat
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -96,13 +92,13 @@ Standard variable expressions do not modify the values assigned to the standard 
 
 The use of **max\_repeat** is best explained with an example. Suppose a GPD file contains the following entry:
 
-```
+```cpp
 *Command:CmdXMoveRelRight{*Cmd:"<1B>["%d[0,9600]{max_repeat((DestXRel/4))}"a"}
 ```
 
 This command contains a single argument, of type **%d**. It also contains an argument range specification. Whenever Unidrv sends this command to the printer, it first calculates DestXRel/4 and determines if it is within the specified range. If the calculated value is greater than 9600, Unidrv sends the command repeatedly, with a maximum value of 9600, until the specified value has been sent. Thus if DestXRel/4 equals 20,000, Unidrv sends the following commands:
 
-```
+```cpp
 <1B>[9600
 <1B>[9600
 <1B>[800

@@ -5,9 +5,6 @@ ms.assetid: cc0962f0-4d2b-4092-821c-a47a59bedbf0
 keywords: ["Bug Check 0x94 KERNEL_STACK_LOCKED_AT_EXIT", "KERNEL_STACK_LOCKED_AT_EXIT"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

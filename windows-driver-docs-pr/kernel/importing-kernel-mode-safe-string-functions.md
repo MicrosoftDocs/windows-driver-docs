@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Importing Kernel-Mode Safe String Functions
 ms.assetid: f1cee7e0-151b-4e03-bf4d-400f328083fa
 keywords: ["importing safe string functions", "inline safe string function versions WDK kernel", "library safe string function versions WDK kernel", "byte-counted functions WDK kernel", "character-counted functions WDK kernel", "safe string functions WDK"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ Starting with Windows XP, the kernel-mode safe string library is available as a
 
 Include the header file, as shown.
 
-```
+```cpp
 #include <ntstrsafe.h>
 ```
 
@@ -34,7 +30,7 @@ You can make available only the byte-counted or only the character-counted safe 
 
 Include the following line in your code before including the Ntstrsafe.h header file.
 
-```
+```cpp
 #define NTSTRSAFE_NO_CCH_FUNCTIONS
 ```
 
@@ -42,7 +38,7 @@ Include the following line in your code before including the Ntstrsafe.h header 
 
 Include the following line in your code before including the Ntstrsafe.h header file.
 
-```
+```cpp
 #define NTSTRSAFE_NO_CB_FUNCTIONS
 ```
 
@@ -54,7 +50,7 @@ You can make the [**UNICODE\_STRING**](https://msdn.microsoft.com/library/window
 
 Include the following line in your code before including the Ntstrsafe.h header file.
 
-```
+```cpp
 #define NTSTRSAFE_NO_UNICODE_STRING_FUNCTIONS
 ```
 
@@ -62,7 +58,7 @@ The maximum number of characters that any ANSI or Unicode string can contain is 
 
 Your driver can assign smaller values to NTSTRSAFE\_MAX\_CCH and NTSTRSAFE\_UNICODE\_STRING\_MAX\_CCH by including the following lines in your code before including Ntstrsafe.h.
 
-```
+```cpp
 #define NTSTRSAFE_MAX_CCH  <new-value>
 #define NTSTRSAFE_UNICODE_STRING_MAX_CCH  <new-value>
 ```

@@ -4,11 +4,7 @@ description: COPP Video Miniport Driver Key Exchange Template Code
 ms.assetid: 5c0de949-e460-4f01-a762-706eac3abee0
 keywords:
 - key exchange WDK COPP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ This section applies only to Windows Server 2003 SP1 and later, and Windows XP S
 
 Use the following example code to retrieve the digital certificate used by the graphics hardware for the COPP DirectX VA device object.
 
-```
+```cpp
 VP_STATUS
 IoctlCOPPKeyExchange(
     PHW_DEVICE_EXTENSION pHwDeviceExtension,

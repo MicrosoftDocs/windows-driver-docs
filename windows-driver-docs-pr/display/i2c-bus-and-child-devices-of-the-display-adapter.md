@@ -8,11 +8,7 @@ keywords:
 - child devices WDK video miniport
 - I2CRead
 - I2CWrite
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -55,12 +51,8 @@ Each of the functions (implemented, but not exported by the video port driver) i
 For example, the **I2CRead** function reads a sequence of bytes over the I²C data line, but reading each byte requires reading eight individual bits, a task that only the video miniport driver can do. The **I2CRead** function can obtain assistance from the video miniport driver because it receives pointers (in an *I2CCallbacks* structure) to the four I²C functions implemented by the video miniport driver (*ReadClockLine*, *WriteClockLine*, *ReadDataLine*, and *WriteDataLine*). Similarly, **I2CStart**, **I2CRead**, and **I2CWrite** each receive an *I2CCallbacks* structure that contains pointers to all four of the video miniport driver's I²C functions.
 
 
-
-For more information about the I²C functions implemented by the video miniport driver and video port driver, see the following topics:
-
-[I2C Functions](i2c-functions.md)
-
-For an overview of all video miniport driver functions and how those functions are registered, see [Video Miniport Driver Functions](https://msdn.microsoft.com/library/windows/hardware/ff570512).
+For an overview of all video miniport driver functions and how those functions are registered,
+ see [Video Miniport Driver Functions](https://msdn.microsoft.com/library/windows/hardware/ff570512).
 
 For details on the I²C bus, see the I²C Bus Specification published by Philips Semiconductors.
 

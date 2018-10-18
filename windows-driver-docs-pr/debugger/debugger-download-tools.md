@@ -4,9 +4,6 @@ description: This page provides downloads for the Windows Debugging tools, such 
 keywords: ["Windows Debugging Downloads", "WinDbg", "Download"]
 ms.author: domars
 ms.date: 06/12/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

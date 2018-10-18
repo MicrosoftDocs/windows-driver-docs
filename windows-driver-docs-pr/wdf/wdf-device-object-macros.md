@@ -3,11 +3,7 @@ title: WDF Device Object Macros
 author: windows-driver-content
 description: This section documents macros that support WDF device objects.
 ms.assetid: D91C16EB-5E31-4AB2-984E-A0B35C3B1BA1
-ms.author: windowsdriverdev
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

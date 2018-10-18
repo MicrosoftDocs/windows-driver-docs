@@ -5,9 +5,6 @@ ms.assetid: 5a322457-51d7-4832-8eeb-1fdc99f313e8
 keywords: ["Bug Check 0x11C ATTEMPTED_WRITE_TO_CM_PROTECTED_STORAGE", "ATTEMPTED_WRITE_TO_CM_PROTECTED_STORAGE"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

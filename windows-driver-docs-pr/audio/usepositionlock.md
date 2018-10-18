@@ -2,11 +2,7 @@
 title: UsePositionLock
 description: The UsePositionLock registry value changes how PortCls serializes its I/O.
 ms.assetid: AD5AF873-4129-4C82-B251-0469CF6149E9
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ The *UsePositionLock* registry value changes how PortCls serializes its I/O. Ena
 
 Use the following INF setting to enable this behavior.
 
-```
+```inf
  
 [MyAudioDevice.AddReg]
 HKR, DispatchSettings, UsePositionLock, 3, 01, 00, 00, 00
@@ -25,7 +21,7 @@ HKR, DispatchSettings, UsePositionLock, 3, 01, 00, 00, 00
 
 This INF setting creates the following registry value. The media GUID of {4d36e96c-e325-11ce-bfc1-08002be10318} and the &lt;instance\#&gt; of your audio device are used in the registry entry path.
 
-```
+```text
 \HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e96c-e325-11ce-bfc1-08002be10318}\<instance#>\DispatchSettings\UsePositionLock 
 ```
 

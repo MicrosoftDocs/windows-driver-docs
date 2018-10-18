@@ -1,11 +1,8 @@
 ---
 title: Using a Component INF File
 description: Describes how to use software components to include user-mode software that is specific to a device.
-ms.author: windowsdriverdev
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Using a Component INF File
@@ -47,7 +44,7 @@ You can find an example of a component INF in the [Driver package installation t
 
 **Note**: In order for a software-enumerated component device to function, its parent must be started. If there is no driver available for the parent device, driver developers can create their own and optionally leverage the pass-through driver "umpass.sys". This driver is included in Windows and, effectively, does nothing other than start the device. In order to use umpass.sys, developers should use the Include/Needs INF directives in the [DDInstall section](inf-ddinstall-section.md) for each possible [DDInstall.\*] section to the corresponding [UmPass.\*] sections as shown below, regardless of whether the INF specifies any directives for that section or not:
 
-```
+```cpp
 [DDInstall]
 Include=umpass.inf
 Needs=UmPass
@@ -93,7 +90,7 @@ The following example shows how you might use a software component to install a 
 
 ### Driver package INF file
 
-```
+```cpp
 [Version]
 Signature   = "$WINDOWS NT$"
 Class       = Extension
@@ -125,7 +122,7 @@ ContosoGrfx.DeviceDesc = "Contoso Graphics Card Extension"
 
 ### Software component INF file
 
-```
+```cpp
 [Version]
 Signature   = "$WINDOWS NT$"
 Class       = SoftwareComponent

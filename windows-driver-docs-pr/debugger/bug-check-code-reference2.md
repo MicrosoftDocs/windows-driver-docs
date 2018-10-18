@@ -4,9 +4,6 @@ description: This section contains descriptions of the common bug checks, includ
 ms.assetid: DBA85578-97CF-4BD7-A67D-1C7AD2E9B2BB
 ms.author: domars
 ms.date: 09/24/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

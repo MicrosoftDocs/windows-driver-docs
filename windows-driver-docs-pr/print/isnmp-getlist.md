@@ -18,18 +18,18 @@ api_location:
 - olesnmp.h
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # ISNMP::GetList method
-
 
 The `GetList` method enables an ASP Web page to obtain the values associated with an array of SNMP OIDs.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT GetList(
   [in]  VARIANT *varList,
   [out] VARIANT *varValue
@@ -81,28 +81,20 @@ Win32 error codes can also be returned.
 </tbody>
 </table>
 
- 
-
-## <span id="ddk_isnmp_getlist_gg"></span><span id="DDK_ISNMP_GETLIST_GG"></span>
-
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 This method calls the **SnmpMgrRequest** function to obtain SNMP OID values. For more information about this function, see the Windows SDK Documentation.
 
 The [**ISNMP::Open**](isnmp-open.md) method must be called before the `ISNMP::GetList` method can be called.
 
-```
-    Dim StrIP, strCommunity, objSNMP, OIDArray, OIDValueArray
-    strIP = Session("MS_IPaddress")
-    strCommunity = Session ("MS_Community")
-    Set objSNMP = Server.CreateObject("OlePrn.OleSNMP")
-    objSNMP.Open strIP, strCommunity, 2, 1000
-    OIDArray = Array("25.3.2.1.5", "25.3.5.1.1")
-    OIDValueArray = objSNMP.GetList (OIDArray)
+```vb
+Dim StrIP, strCommunity, objSNMP, OIDArray, OIDValueArray
+strIP = Session("MS_IPaddress")
+strCommunity = Session ("MS_Community")
+Set objSNMP = Server.CreateObject("OlePrn.OleSNMP")
+objSNMP.Open strIP, strCommunity, 2, 1000
+OIDArray = Array("25.3.2.1.5", "25.3.5.1.1")
+OIDValueArray = objSNMP.GetList (OIDArray)
 ```
 
 Requirements
@@ -118,10 +110,6 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 <tr class="odd">
 <td><p>Header</p></td>
 <td>Olesnmp.h</td>
@@ -129,15 +117,6 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**ISNMP::Open**](isnmp-open.md)
-
- 
-
- 
-
-
-
-

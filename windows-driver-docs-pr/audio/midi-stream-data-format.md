@@ -4,11 +4,7 @@ description: MIDI Stream Data Format
 ms.assetid: c179cf74-7493-4c27-97bd-5eb4d0dffbe6
 keywords:
 - MIDI stream data formats WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ ms.localizationpriority: medium
 
 This example uses a [**KSDATAFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff561656) structure to describe the data format of a MIDI stream.
 
-```
+```cpp
   DataFormat.FormatSize  = sizeof(KSDATAFORMAT);
   DataFormat.Flags       = 0;
   DataFormat.SampleSize  = 0;

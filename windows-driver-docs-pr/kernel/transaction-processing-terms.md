@@ -5,11 +5,7 @@ description: Before you begin to use KTM, you should know the definitions of the
 Robots: noindex, nofollow
 ms.assetid: c8a8806f-a228-4d02-9995-c8cf45e57935
 keywords: ["Kernel Transaction Manager WDK , terminology", "KTM WDK , terminology", "transactions WDK KTM , definition", "resource managers WDK KTM , definition", "transactional clients WDK KTM , definition", "transaction managers WDK KTM , definition", "log streams WDK KTM , definition", "enlistments WDK KTM , definition", "transaction processing systems WDK KTM , definition", "TPS WDK KTM , definition", "transactions WDK KTM , terminology", "transaction managers WDK KTM"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

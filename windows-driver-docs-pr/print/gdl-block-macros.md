@@ -9,11 +9,7 @@ keywords:
 - block macros WDK GDL
 - BlockMacros directive WDK GDL
 - macros WDK GDL , examples
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,7 +34,7 @@ References to block macros can nest parameter lists to arbitrary depth. Block ma
 
 The following code example shows how to use block macros.
 
-```
+```cpp
 *Macros:
 {
   LetterName: Letter

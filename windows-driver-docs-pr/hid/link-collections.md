@@ -10,11 +10,7 @@ keywords:
 - aliased collections WDK HID
 - link collection nodes WDK HID
 - arrays WDK HID
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -112,7 +108,7 @@ An application or driver can determine all a parent collection's children by, st
 
 The following code shows how to use a link collection node index to find the first child of link collection seven:
 
-```
+```cpp
 HIDP_LINK_COLLECTION_NODE Collection[10] ;
 HIDP_LINK_COLLECTION_NODE Node1 ;
  

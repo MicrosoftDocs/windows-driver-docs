@@ -2,11 +2,7 @@
 title: IoctlReqs rule (kmdf)
 description: The IoctlReqs rule specifies that IOCTL requests must not be passed to inappropriate KMDF request or send device driver interfaces (DDIs).
 ms.assetid: f13aef5a-61e7-4b99-b86e-e1857de3c2f1
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["IoctlReqs rule (kmdf)"]
 topic_type:
 - apiref

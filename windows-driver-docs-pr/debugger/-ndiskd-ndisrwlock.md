@@ -5,9 +5,6 @@ ms.assetid: 853CBAFE-3899-4983-BFC7-933D3BC7ADA1
 keywords: ["ndiskd.ndisrwlock Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -5,9 +5,6 @@ ms.assetid: 7878c79f-9de6-4fd2-9641-c636212429eb
 keywords: ["ks.dump Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ks.dump** extension displays the specified object.
 
-```
+```dbgcmd
 !ks.dump Object [Level] [Flags]  
 ```
 
@@ -30,7 +27,7 @@ The **!ks.dump** extension displays the specified object.
 
 
 <span id="_______Object______"></span><span id="_______object______"></span><span id="_______OBJECT______"></span> *Object*   
-Specifies a pointer to an AVStream structure, an AVStream class object, or a PortCls object. Can also specify a pointer to an an IRP or a file object.
+Specifies a pointer to an AVStream structure, an AVStream class object, or a PortCls object. Can also specify a pointer to an IRP or a file object.
 
 <span id="_______Level______"></span><span id="_______level______"></span><span id="_______LEVEL______"></span> *Level*   
 Optional. Specifies the level of detail to display on a 0-7 scale with progressively more information displayed for higher values. To display all available details, supply a value of 7. You can see more information about levels by issuing a **!ks.dump** command with no arguments.
@@ -82,7 +79,7 @@ The **!ks.dump** command recognizes most AVStream objects, including pins, filte
 
 Following is an example of the **!ks.dump** display for a filter:
 
-```
+```dbgcmd
 kd> !dump 829493c4
 Filter object 829493c4 [CKsFilter = 82949350]
     Descriptor     f7a233c8:
@@ -91,7 +88,7 @@ Filter object 829493c4 [CKsFilter = 82949350]
 
 Following is an example of the **!ks.dump** display for a pin:
 
-```
+```dbgcmd
 kd> !dump 8160DDE0 7
 Pin object 8160DDE0 [CKsPin = 8160DD50]
     DeviceState    KSSTATE_RUN
@@ -141,7 +138,7 @@ Some important parts of this display are included in the following table.
 
 Following is an example of the **!ks.dump** display for a stream class driver:
 
-```
+```dbgcmd
 kd> !dump 81a0a170 7
 Device Extension 81a0a228:
     Device Object          81a0a170 [\Driver\TESTCAP]

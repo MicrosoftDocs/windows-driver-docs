@@ -5,9 +5,6 @@ ms.assetid: 55d605bd-0621-4366-8b37-62d462ee1f34
 keywords: ["processor minstate save area", "pmssa Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

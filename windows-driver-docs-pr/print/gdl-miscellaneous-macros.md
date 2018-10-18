@@ -10,11 +10,7 @@ keywords:
 - macros WDK GDL , examples
 - constructs WDK GDL , disabling processing of constructs
 - disabling processing of GDL constructs WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ GDL uses a **\*IgnoreBlock** directive to disable processing of the contents of 
 
 The following code example shows how to use **\*IgnoreBlock**.
 
-```
+```cpp
 *IgnoreBlock: <BeginValue:garbage> The code in between does not even need to be valid GDL. }{ " % !!! 
 This directive is great for large blocks of comments 
 or when you do not want to mark each line with *%  <EndValue:garbage> {}

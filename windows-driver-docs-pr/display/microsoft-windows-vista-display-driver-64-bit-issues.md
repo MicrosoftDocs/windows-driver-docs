@@ -6,11 +6,7 @@ keywords:
 - 64-bit WDK display
 - display driver model WDK Windows Vista , 64-bit
 - Windows Vista display driver model WDK , 64-bit
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ To allow 32-bit applications to run on a 64-bit operating system, a 32-bit user-
 
 To install a 32-bit user-mode display driver on a 64-bit operating system, the following entry must be set in an add-registry section of the INF file for the graphics device's display miniport driver. This must happen so that the 32-bit user-mode display driver's DLL name is added to the registry during driver installation:
 
-```
+```cpp
  [Xxx_SoftwareDeviceSettings]
 ...
  HKR,, UserModeDriverNameWow, %REG_MULTI_SZ%, Xxx.dll

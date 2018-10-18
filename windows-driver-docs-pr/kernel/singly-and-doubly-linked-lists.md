@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Singly and Doubly Linked Lists
 ms.assetid: 3a305f54-7866-4163-a3e4-e078d1927adc
 keywords: ["singly linked lists WDK kernel", "doubly linked lists WDK kernel", "sequenced singly linked lists WDK kernel", "SINGLE_LIST_ENTRY", "LIST_ENTRY"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,7 +32,7 @@ Suppose that the *ListHead* variable is a pointer to the **SINGLE\_LIST\_ENTRY**
 
 A **SINGLE\_LIST\_ENTRY**, by itself, only has a **Next** member. To store your own data in the lists, embed the **SINGLE\_LIST\_ENTRY** as a member of the structure that describes the list entry, as follows.
 
-```
+```cpp
 typedef struct {
   // driver-defined members
   .
@@ -53,7 +49,7 @@ typedef struct {
 
 To add a new entry to the list, allocate an **XXX\_ENTRY** structure, and then pass a pointer to the **SingleListEntry** member to [**PushEntryList**](https://msdn.microsoft.com/library/windows/hardware/ff559964). To convert a pointer to the **SINGLE\_LIST\_ENTRY** back to an **XXX\_ENTRY**, use [**CONTAINING\_RECORD**](https://msdn.microsoft.com/library/windows/hardware/ff542043). Here is an example of routines that insert and remove driver-defined entries from a singly linked list.
 
-```
+```cpp
 typedef struct {
   PVOID DriverData1;
   SINGLE_LIST_ENTRY SingleListEntry;
@@ -117,7 +113,7 @@ Suppose that the *ListHead* variable is a pointer to the **LIST\_ENTRY** structu
 
 A [**LIST\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/ff554296), by itself, only has **Blink** and **Flink** members. To store your own data in the lists, embed the **LIST\_ENTRY** as a member of the structure that describes the list entry, as follows.
 
-```
+```cpp
 typedef struct {
   // driver-defined members
   .
@@ -160,7 +156,7 @@ A driver manipulates the list as follows:
 
 A [**SLIST\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/ff563805), by itself, only has a **Next** member. To store your own data in the lists, embed the **SLIST\_ENTRY** as a member of the structure that describes the list entry, as follows.
 
-```
+```cpp
 typedef struct 
 {
   // driver-defined members
@@ -184,7 +180,7 @@ To add a new entry to the list, allocate an **XXX\_ENTRY** structure, and then p
 
 Windows XP and later versions of Windows provide optimized versions of the sequenced singly linked list functions that are not available in Windows 2000. If your driver uses these functions and also must run with Windows 2000, the driver must define the \_WIN2K\_COMPAT\_SLIST\_USAGE flag, as follows:
 
-```
+```cpp
 #define _WIN2K_COMPAT_SLIST_USAGE
 ```
 

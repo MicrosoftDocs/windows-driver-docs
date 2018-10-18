@@ -9,11 +9,7 @@ api_name:
 - wscn InputMediaSize
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **InputMediaSize** element specifies the size of the media to be sc
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:InputMediaSize>
   child elements
 </wscn:InputMediaSize>
@@ -84,7 +80,7 @@ The **InputMediaSize** element contains the width and height of the input media 
 
 The **Width** element contains the width of the original media in the fast scan direction, and the **Height** element contains the height of the original media in the slow scan direction. Both **Width** and **Height** must be in the range from 1 through 2147483648 and are in units of one-thousandths (1/1000) of an inch.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Height**](height.md)

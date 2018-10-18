@@ -2,11 +2,7 @@
 title: Sample configuration XML
 author: windows-driver-content
 description: Use the sample configuration XML in this topic to develop configuration files for your device.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -14,7 +10,7 @@ ms.localizationpriority: medium
 
 You can use the following example configuration XML to develop the configuration files for your device.
 
-```
+```xml
 <?xml version="1.0"?>
 <PrintDeviceCapabilities
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

@@ -5,9 +5,6 @@ ms.assetid: 4cc4c96e-6e0e-4bf1-8e72-4e6f39848914
 keywords: ["Bug Check 0xE0 ACPI_BIOS_FATAL_ERROR", "ACPI_BIOS_FATAL_ERROR"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

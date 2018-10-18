@@ -4,9 +4,6 @@ description: Use this method in the Microsoft Hardware API to create a new submi
 author: balapv
 ms.author: balapv
 ms.date: 04/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -58,7 +55,7 @@ For details about the fields in the request, refer to [Submission resource](get-
 
 The following example demonstrates how to create a new submission.
 
-```
+```cpp
 POST https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14631253285588838/submissions HTTP/1.1
 Authorization: Bearer <your access token>
 ```

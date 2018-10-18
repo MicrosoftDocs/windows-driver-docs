@@ -3,11 +3,7 @@ title: Allocating Memory for Data
 author: windows-driver-content
 description: Allocating Memory for Data
 ms.assetid: 15df5616-ddce-44ec-bd10-65cae0d95cf4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -116,7 +112,7 @@ To allocate your own memory, use **CoTaskMemAlloc** (described in the Microsoft 
 
 The following example shows an implementation of the **IWiaMiniDrv::drvAcquireItemData** method. This example can handle both memory allocation cases.
 
-```
+```cpp
 HRESULT _stdcall CWIADevice::drvAcquireItemData(
   BYTE                      *pWiasContext,
   LONG                      lFlags,

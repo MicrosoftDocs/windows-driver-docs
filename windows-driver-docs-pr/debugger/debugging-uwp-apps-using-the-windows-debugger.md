@@ -4,9 +4,6 @@ description: You can use the Windows debuggers (WinDbg, CDB, and NTSD) to debug 
 ms.assetid: 87AA23A1-AB70-48CC-8F96-350C121F250E
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

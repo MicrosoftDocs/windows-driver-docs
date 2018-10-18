@@ -5,6 +5,7 @@ description: Game Controller Control Panel
 ms.assetid: fb68102a-24d6-4dda-8f27-69366a2129bc
 keywords: ["property sheets WDK DirectInput , control panel structure", "game controllers WDK DirectInput , control panel structure", "control panels WDK DirectInput , architecture"]
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Game Controller Control Panel

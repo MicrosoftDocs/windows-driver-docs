@@ -9,11 +9,7 @@ api_name:
 - wscn ScannerState
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ScannerState** element identifies the current state of the scanni
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScannerState>
   text
 </wscn:ScannerState>
@@ -85,7 +81,7 @@ The WSD Scan Service informs a client about changes to the scanner's status by s
 
 You can both extend and subset the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**GetScannerElementsRequest**](getscannerelementsrequest.md)

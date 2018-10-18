@@ -9,11 +9,7 @@ api_name:
 - wscn CancelJobRequest
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **CancelJobRequest** operation enables a client to cancel a scan jo
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:CancelJobRequest>
   child elements
 </wscn:CancelJobRequest>
@@ -82,7 +78,7 @@ This operation can return all of the [**common WSD Scan Service operation error 
 
 -   **ClientErrorJobIdNotFound**
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CancelJobResponse**](canceljobresponse.md)

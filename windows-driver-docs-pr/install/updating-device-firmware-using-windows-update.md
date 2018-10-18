@@ -2,11 +2,7 @@
 title: Updating Device Firmware using Windows Update
 description: This topic describes how to update your device's firmware using the Windows Update (WU) service.
 ms.assetid: 778c5ab5-572f-43b9-8e9a-9dd608de17a9
-ms.author: windowsdriverdev
 ms.date: 08/24/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -61,7 +57,7 @@ There are a couple ways to create a second device node.  Certain device types ha
 
 In this case, use an extension INF that specifies the [AddComponent](../install/inf-addcomponent-directive.md) directive to create a device node that can be targeted by Windows Update and install the firmware update driver on it.  The following snippet from an INF file shows how you can do this:
 
-```
+```cpp
 [Manufacturer]
 %Contoso%=Standard,NTamd64
 [Standard.NTamd64]
@@ -86,7 +82,7 @@ To update firmware for devices that use a Microsoft-supplied driver, you need to
 
 * In your firmware update driver INF, specify [DIRID 13](using-dirids.md) to cause PnP to leave the files in the driver package in the DriverStore:
 
-    ```
+    ```cpp
     [Firmware_AddReg]
     ; Store location of firmware payload
     HKR,,FirmwareFilename,,"%13%\firmware_payload.bin"
@@ -96,7 +92,7 @@ To update firmware for devices that use a Microsoft-supplied driver, you need to
 
 * Firmware update drivers should specify the following INF entries:
 
-    ```
+    ```cpp
     Class=Firmware
     ClassGuid={f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
     ```

@@ -2,11 +2,7 @@
 title: IRP_MN_QUERY_DEVICE_RELATIONS
 author: windows-driver-content
 description: The PnP manager sends this request to determine certain relationships among devices.
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: 32437c5a-ad92-433c-8255-83775751a44d
 keywords:
  - IRP_MN_QUERY_DEVICE_RELATIONS Kernel-Mode Driver Architecture
@@ -66,7 +62,7 @@ A driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS or to a failure sta
 
 On success, a driver sets **Irp-&gt;IoStatus.Information** to a PDEVICE\_RELATIONS pointer that points to the requested relations information. The **DEVICE\_RELATIONS** structure is defined as follows:
 
-```
+```cpp
 typedef struct _DEVICE_RELATIONS {
   ULONG  Count;
   PDEVICE_OBJECT  Objects[1];  // variable length

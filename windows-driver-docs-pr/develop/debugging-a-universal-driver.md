@@ -1,11 +1,7 @@
 ---
 title: Debugging a Universal Windows driver
 description: Describes debugging techniques you can use with a Universal Windows driver.
-ms.author: windowsdriverdev
 ms.date: 06/09/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ In addition, if you used the Visual Studio KMDF template, your driver uses Windo
 
 To send a trace message from your driver binary, use this code:
 
-   ```
+   ```cpp
    TraceEvents(TRACE_LEVEL_INFORMATION, TRACE_DRIVER, &quot;%!FUNC! Entry&quot;);
    ```
        
@@ -28,7 +24,7 @@ To use Tracelog on a phone:
 1.  Establish a kernel-mode debugging session between a host computer and the phone.
 2.  On the host computer, in TShell, enter this command:
 
-       ```
+       ```cpp
        exec-device tracelog -addautologger MyLogger05 -guid c:\SteveGuid.txt -level 4 -flag 0xF –kd
        ```
        

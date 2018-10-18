@@ -9,11 +9,7 @@ api_name:
 - wscn MediaFront
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **MediaFront** element contains all parameters that are specific to
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:MediaFront>
   child elements
 </wscn:MediaFront>
@@ -85,7 +81,7 @@ Remarks
 
 If the **MediaFront** element does not contain a [**ScanRegion**](scanregion.md) element, the WSD Scan Service should use 0 as the offsets and the width and height of the [**InputMediaSize**](inputmediasize.md), if given. If **ScanRegion** is missing and **InputMediaSize** is not specified or cannot be determined by the scan device, you can determine the implementation.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ColorProcessing**](colorprocessing.md)

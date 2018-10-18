@@ -10,11 +10,7 @@ keywords:
 - hardware WDK AVStream
 - DMA services WDK AVStream
 - Direct Memory Access WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,7 +42,7 @@ Within the vendor-supplied [*AVStrMiniPinProcess*](https://msdn.microsoft.com/li
 
 1.  Call [**KsPinGetLeadingEdgeStreamPointer**](https://msdn.microsoft.com/library/windows/hardware/ff563513):
 
-    ```
+    ```cpp
     KSSTREAM_POINTER *Leading = KsPinGetLeadingEdgeStreamPointer (
                     Pin,
                     State

@@ -5,9 +5,6 @@ ms.assetid: d55971f6-9112-417d-8fb6-e299c7fc90a7
 keywords: ["critical section", "critical section, overview"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

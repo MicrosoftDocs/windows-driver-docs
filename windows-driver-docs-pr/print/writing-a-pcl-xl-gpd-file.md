@@ -8,11 +8,7 @@ keywords:
 - GPD files WDK Unidrv , PCL XL
 - command ordering WDK PCL XL
 - writing PCL XL GPD files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,7 +38,7 @@ In addition to the preceding files, include the standard GPD files, stdnames.gpd
 
 The following example shows how these files would be included in a GPD file.
 
-```
+```cpp
 *Include: stdnames.gpd
 *Include: ttfsub.gpd
 *Include: pclxl.gpd
@@ -55,7 +51,7 @@ The following example shows how these files would be included in a GPD file.
 
 To enable PCL XL vector support, you only need to set the \*Personality attribute. This is done in the following way:
 
-```
+```cpp
 *Personality: = PERSONALITY_PCLXL
 ```
 
@@ -69,7 +65,7 @@ The order of the commands is more critical in PCL XL than in PCL-5. A small erro
 
 A PCL XL stream has a form similar to the following. (The indentation shown is used only to emphasize the point that these operators come in pairs.)
 
-```
+```cpp
 PJL commands
 BeginSession
   OpenDataSource

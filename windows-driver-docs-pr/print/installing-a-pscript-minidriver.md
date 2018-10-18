@@ -6,11 +6,7 @@ ms.assetid: 9c48b2b0-c293-4606-bbaa-3fcaca01c300
 keywords:
 - minidrivers WDK Pscript , installing
 - INF files WDK print , Pscript
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 Installation of a Pscript minidriver requires a [printer INF file](printer-inf-files.md) that identifies the minidriver's files. If a printer model is not supported by Microsoft's printer INF file, ntprint.inf, a vendor-supplied INF file is required. The INF file should reference [printer INF file data sections](printer-inf-file-data-sections.md) and [printer INF file install sections](printer-inf-file-install-sections.md), which are defined in ntprint.inf. For a minidriver named abc100, the following INF file entries are typically needed:
 
-```
+```cpp
 [Manufacturer]
 "ABC Printers"
  

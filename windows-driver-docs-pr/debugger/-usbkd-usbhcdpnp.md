@@ -5,9 +5,6 @@ ms.assetid: 1153F3C2-5878-4223-AA18-5AE6FA056851
 keywords: ["usbkd.usbhcdpnp Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

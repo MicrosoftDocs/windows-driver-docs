@@ -8,11 +8,7 @@ keywords:
 - debugging drivers WDK UMDF , software tracing
 - tracing WDK , framework-based drivers
 - WPP software tracing WDK , framework-based driver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,7 +45,7 @@ To add tracing messages to your framework-based driver, you must:
 
 -   Open the Property Pages for your driver project. Right-click the driver project in Solution Explorer and select **Properties**. In the Property Pages for the driver, click **Configuration Properties**, and then **Wpp**. Under the **General** menu, set **Run WPP Tracing** to Yes. Under the **File Options** menu, you should also specify the framework's WPP template file, for example:
 
-    ```
+    ```cpp
     {km-WdfDefault.tpl}*.tmh
     ```
 
@@ -84,7 +80,7 @@ You can also use the [**!wmitrace**](https://msdn.microsoft.com/library/windows/
 
 3.  Use the [**!wmitrace.logdump**](https://msdn.microsoft.com/library/windows/hardware/ff566159) command to display the contents of the trace buffers:
 
-    ```
+    ```cpp
     !wmitrace.logdump WudfTrace
     ```
 

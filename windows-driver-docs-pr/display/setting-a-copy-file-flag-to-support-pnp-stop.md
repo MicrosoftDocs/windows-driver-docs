@@ -7,11 +7,7 @@ keywords:
 - copy-file flags WDK display
 - PnP stop WDK display
 - Plug and Play stop WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ A new copy-file flag is required for display drivers that are written to the Win
 
 The following example shows the new copy-file flag that is added to just the copy-file section for user-mode display drivers and not display miniport drivers:
 
-```
+```cpp
 ;
 ; File sections
 ;

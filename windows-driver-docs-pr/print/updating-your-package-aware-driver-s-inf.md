@@ -3,11 +3,7 @@ title: Updating Your Package-Aware Driver's INF
 author: windows-driver-content
 description: Updating Your Package-Aware Driver's INF
 ms.assetid: d0bf489d-d084-40df-b5aa-69cdf679993f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ The INF file for your package-aware driver needs to reference the updated core d
 
 First, specify the minimum acceptable version of the core driver so that only the updated version will be used. Specifying a minimum version eliminates the possibility of your package-aware driver being installed with an older, incompatible version of the core driver package. To specify the minimum version, use the INF InboxVersionRequired directive, as shown in the following example:
 
-```
+```cpp
 [PrinterPackageInstallation.x86]
 PackageAware=TRUE
 CoreDriverDependencies={D20EA372-DD35-4950-9ED8-A6335AFE79F0}

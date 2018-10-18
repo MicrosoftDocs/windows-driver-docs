@@ -8,11 +8,7 @@ keywords:
 - GDL WDK , schemas
 - construct element WDK GDL
 - snapshots WDK GDL , structure
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ ms.localizationpriority: medium
 
 The XSD schema that is produced by the GDL parser defines a construct element as follows:
 
-```
+```cpp
     <complexType name="GDL_ConstructType">
         <sequence>
             <any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
@@ -36,7 +32,7 @@ The preceding definition is similar to the definition of the [&lt;SnapshotRoot&g
 
 For example, consider the following GDL entry.
 
-```
+```cpp
 *Feature:  PaperSize
 {
    *Option:  Letter
@@ -47,7 +43,7 @@ For example, consider the following GDL entry.
 
 The preceding entry results in the following XML snapshot.
 
-```
+```cpp
      <CONSTRUCT Name="*Feature" Instance="PaperSize">
         <CONSTRUCT Name="*Option" Instance="Letter" Constrained="FALSE" >
         </CONSTRUCT>

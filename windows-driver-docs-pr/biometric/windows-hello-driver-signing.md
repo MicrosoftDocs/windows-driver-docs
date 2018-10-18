@@ -7,9 +7,6 @@ keywords:
 - signing biometric drivers
 ms.author: dawnwood
 ms.date: 07/19/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,7 +35,7 @@ When you submit your driver, the Windows 10, version 1703 Fingerprint HLK test w
 **updateExistingSubmission**: true if the submission serves as an update to a previous submission that has undergone the security review and false if otherwise.
 
 #### Example
- ```
+ ```cpp
 <?xml version="1.0" encoding="utf-8"?>
 <bioTestConfiguration version="0" runOptional="false" runInteractive="true" abortOnFailure="false" manualStep="false" priority="3" logType="WTT">
   <vendorCompliance>
@@ -71,7 +68,7 @@ Biometric driver packages will need to be submitted to the new DevCenter portal 
 
 For example, if the driver package contained a sensor, engine, and storage adaptor named sensor.dll, engine.dll, and storage.dll respectively, and one loaded stringparser.dll, then to obtain the bio signature on each one, the INF file would have to include the following components:
 
-```
+```cpp
 [SignatureAttributes]
 sensor.dll = SignatureAttributes.WindowsHello
 engine.dll = SignatureAttributes.WindowsHello

@@ -3,11 +3,7 @@ title: Example Application Using a Segmentation Filter
 author: windows-driver-content
 description: Example Application Using a Segmentation Filter
 ms.assetid: 3f7de6a2-5684-4c37-97bc-47f4727114ab
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ ms.localizationpriority: medium
 
 The following code example shows how a simple application could use the segmentation filter. For clarity, error-checking code has been omitted, as well as code to release and free interface pointers and memory.
 
-```
+```cpp
 IWiaSegmentationFilter *pWiaSegmentationFilter = NULL;
 IWiaTransferCallback *pMyWiaTransferCallback = NULL;
 IWiaTransfer  *pWiaTransfer = NULL;
@@ -53,7 +49,7 @@ if (ReadPropertyLong(WIA_IPS_SEGMENTATION_FILTER, &lUseSegFilter) &&
                            (void**)& pWiaSegmentationFilter);
 
 //
-// m_pInputStream is a pointer to the IStream that the application&#39;s
+// m_pInputStream is a pointer to the IStream that the application's
 // implementation of MyWiaTransferCallback::GetNextStream
 // returns.
 //

@@ -2,11 +2,7 @@
 title: Data Driven Testing
 description: Data Driven Testing
 ms.assetid: 409CC5FD-1632-4120-95C6-60574C9BAD32
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -15,7 +11,7 @@ ms.localizationpriority: medium
 
 Data-driven Testing is a testing methodology where a Test's input and output values are separated from the code. This formalism typically means that a small investment in making the test code a little bit more generic allows for a large number of test cases to be written by simply identifying the data that's involved.
 
-Data Driven Testing is great for testing areas that work with a set of input values that define their behavior - for example, when testing an API, the input and output parameters can be defined as a a source of data, and the test code consumes the data, makes the API calls and validates the results.
+Data Driven Testing is great for testing areas that work with a set of input values that define their behavior - for example, when testing an API, the input and output parameters can be defined as a source of data, and the test code consumes the data, makes the API calls and validates the results.
 
 ## <span id="Data-driven_Testing_support_in_TAEF"></span><span id="data-driven_testing_support_in_taef"></span><span id="DATA-DRIVEN_TESTING_SUPPORT_IN_TAEF"></span>Data-driven Testing support in TAEF
 
@@ -24,7 +20,7 @@ TAEF offers a variety of options for authoring data-driven tests. Let's understa
 
 **Table based data-driven testing** solution allows you fine grained controlled on the data parameter variations as well as defining the parameter types. The DataSource in this case is a table defined in an XML file. You can specify the parameter types(int, unsigned int, size\_t, bool, double, DWORD, \_\_int64 etc and their homogeneous array variant), or have the type default to WEX::Common::String (native) or string (managed). Each Row in the table is a set of variation on the parameter values. The test method will be re-invoked for every Row in the table. Here is a snippet of an XML DataSource for table based data-driven testing:
 
-```
+```cpp
 1  <?xml version="1.0"?>
 2   <Data>
 3     <Table Id ="Table1">

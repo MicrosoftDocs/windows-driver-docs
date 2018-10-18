@@ -3,11 +3,7 @@ title: OID_GEN_PROMISCUOUS_MODE
 author: windows-driver-content
 description: As a query, use the OID_GEN_PROMISCUOUS_MODE OID to determine whether a network interface is promiscuous or not (ifPromiscuousMode from RFC 2863).
 ms.assetid: c3ba0908-724c-4149-a66f-5c3d41751165
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_PROMISCUOUS_MODE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

@@ -5,9 +5,6 @@ ms.assetid: 3062d914-4fd4-4e33-8cf0-562484380184
 keywords: ["wdfkd.wdfforwardprogress Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

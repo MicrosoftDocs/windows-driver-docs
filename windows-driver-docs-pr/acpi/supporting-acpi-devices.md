@@ -12,11 +12,7 @@ keywords:
 - operation region handlers WDK ACPI
 - function drivers WDK ACPI
 - WDM function drivers WDK ACPI
-ms.author: windowsdriverdev
-ms.date:
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 

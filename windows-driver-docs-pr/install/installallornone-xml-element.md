@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # installAllOrNone XML Element
@@ -21,7 +22,7 @@ The **installAllOrNone** XML element is an empty element that sets the **install
 
 ### **Element Tag**
 
-```
+```cpp
 <installAllOrNone>
 ```
 
@@ -64,7 +65,7 @@ By default, the **installAllOrNone** flag is set to OFF. To set the **installAll
 
 The following code example demonstrates an **installAllOrNone** element that is a child element of a **dpinst** element.
 
-```
+```cpp
 <dpinst>
   ...
   <installAllOrNone/>
@@ -74,7 +75,7 @@ The following code example demonstrates an **installAllOrNone** element that is 
 
 The following code example demonstrates an **installAllOrNone** element that is a child element of a **group** element.
 
-```
+```cpp
 <dpinst>
   ...
   <group>

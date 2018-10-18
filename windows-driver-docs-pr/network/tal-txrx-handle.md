@@ -5,11 +5,7 @@ description: This topic describes the TAL_TXRX_HANDLE data type for WDI miniport
 ms.assetid: 65C35CAA-72DB-442A-8483-3089E705764E
 keywords:
 - TAL_TXRX_HANDLE, WDK TAL_TXRX_HANDLE network drivers
-ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

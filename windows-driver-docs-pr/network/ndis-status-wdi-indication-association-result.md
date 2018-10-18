@@ -3,11 +3,7 @@ title: NDIS_STATUS_WDI_INDICATION_ASSOCIATION_RESULT
 author: windows-driver-content
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_ASSOCIATION_RESULT to indicate association results.
 ms.assetid: dc025aec-30f4-4a78-b449-acc49d13b507
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - NDIS_STATUS_WDI_INDICATION_ASSOCIATION_RESULT Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

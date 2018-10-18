@@ -2,11 +2,7 @@
 title: COSA/APN database
 description: COSA/APN database
 ms.assetid: 0E3DA610-090D-4D1E-B67E-A4747252E8BE
-ms.author: windowsdriverdev
 ms.date: 06/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -2,11 +2,7 @@
 title: IRP_MN_ENABLE_EVENTS
 author: windows-driver-content
 description: Any WMI driver that registers one or more event blocks must handle this IRP.
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: 35b95ba0-efd0-420a-abe0-664fc6311d02
 keywords:
  - IRP_MN_ENABLE_EVENTS Kernel-Mode Driver Architecture

@@ -5,9 +5,6 @@ ms.assetid: C7022CD7-6F3A-485B-8686-A686A5305DA5
 keywords: ["ndiskd.wdiminidriver Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

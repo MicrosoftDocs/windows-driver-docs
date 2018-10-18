@@ -10,11 +10,7 @@ keywords:
 - WPP software tracing WDK , invoking preprocessor
 - Windows software trace preprocessor WDK , build process
 - WPP software tracing WDK , build process
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,7 +46,7 @@ You can also run the preprocessor separate from the build environment by using t
 ## <span id="WPP_Tracing_General_Options"></span><span id="wpp_tracing_general_options"></span><span id="WPP_TRACING_GENERAL_OPTIONS"></span>WPP Tracing General Options
 
 
-The following tables describe the options for the WPP preprocessor. You can configure these options in Visual Studio using the WPP Tracing property page for your project, or or as parameters to the TraceWPP tool.
+The following tables describe the options for the WPP preprocessor. You can configure these options in Visual Studio using the WPP Tracing property page for your project, or as parameters to the TraceWPP tool.
 
 <table>
 <colgroup>

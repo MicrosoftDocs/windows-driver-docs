@@ -6,11 +6,7 @@ ms.assetid: b63c48bb-3321-45e0-b37c-a9612a95cc24
 keywords:
 - GPD files WDK Unidrv , resource DLLs
 - resource DLLs WDK Unidrv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +24,7 @@ To use resource DLLs in a Unidrv minidriver, you must identify the resources in 
 
     An example usage of the RESDLL feature is as follows:
 
-    ```
+    ```cpp
     *Feature: RESDLL
     {
         *Option: FirstRes
@@ -48,7 +44,7 @@ To use resource DLLs in a Unidrv minidriver, you must identify the resources in 
 
     To reference a resource contained in this resource DLL, simply specify the appropriate resource identifier, as illustrated in the following example:
 
-    ```
+    ```cpp
     *rcNameID: 288
     ```
 
@@ -60,7 +56,7 @@ Additionally, if your printer contains hardware-resident fonts, you must provide
 
 Microsoft supplies one resource DLL, unires.dll, which contains string resources for the [standard features](standard-features.md) and [standard options](standard-options.md). The Microsoft-supplied GPD file, stdnames.gpd, assigns a macro symbol name to each resource identifier. This allows you to reference these resources by their macro name, as illustrated in the following example:
 
-```
+```cpp
 *rcNameID: =LETTERSMALL_DISPLAY
 ```
 

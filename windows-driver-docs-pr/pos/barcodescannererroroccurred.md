@@ -2,11 +2,7 @@
 title: BarcodeScannerErrorOccurred
 description: The BarcodeScannerErrorOccurred event occurs when there is an error, such as a scanning error.
 ms.assetid: '38cfbd87-0526-49d1-8580-96f4e1adf7bb'
-ms.author: windowsdriverdev
 ms.date: 9/7/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +14,7 @@ The data buffer for this event is as follows.
 
 ## Syntax
 
-``` syntax
+```cpp
 // Error occurred data should fill the ReadFile buffer in this order:
 //    PosBarcodeScannerErrorOccurredEventData structure (length = sizeof(PosBarcodeScannerErrorOccurredEventData))
 //    Error Message (length = MessageLength)

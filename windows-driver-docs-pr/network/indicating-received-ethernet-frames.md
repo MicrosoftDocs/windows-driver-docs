@@ -6,11 +6,7 @@ keywords:
 - Ethernet WDK networking
 - frames WDK networking
 - TCP/IP transport of Ethernet frames WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

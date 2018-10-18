@@ -5,9 +5,6 @@ ms.assetid: 776A459F-A698-4BF6-8DAD-BEB15858AD7F
 keywords: ["ndiskd.rcvqueue Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

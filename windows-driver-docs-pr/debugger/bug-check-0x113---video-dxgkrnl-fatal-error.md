@@ -5,9 +5,6 @@ ms.assetid: 916b78de-3030-4a9c-b7a7-fa1c20c5c739
 keywords: ["Bug Check 0x113 VIDEO_DXGKRNL_FATAL_ERROR", "VIDEO_DXGKRNL_FATAL_ERROR"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

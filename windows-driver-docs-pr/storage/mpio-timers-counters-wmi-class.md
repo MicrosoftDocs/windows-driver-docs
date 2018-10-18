@@ -3,6 +3,7 @@ title: MPIO\_TIMERS\_COUNTERS WMI Class
 description: MPIO\_TIMERS\_COUNTERS WMI Class
 ms.assetid: 386110f8-504c-4617-b8ae-557ea504d41d
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MPIO\_TIMERS\_COUNTERS WMI Class
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 
 A WMI client uses the MPIO\_TIMERS\_COUNTERS WMI class to query MPIO for all global timer values.
 
-```
+```cpp
 class MPIO_TIMERS_COUNTERS
 {
 

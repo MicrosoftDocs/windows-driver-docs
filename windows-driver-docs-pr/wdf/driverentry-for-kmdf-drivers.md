@@ -8,6 +8,7 @@ topic_type:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DriverEntry for WDF Drivers routine
@@ -95,7 +96,7 @@ Examples
 
 The following code example shows the Serial (KMDF) sample driver's **DriverEntry** routine.
 
-```
+```cpp
 NTSTATUS
 DriverEntry(
     IN PDRIVER_OBJECT  DriverObject,

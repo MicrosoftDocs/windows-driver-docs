@@ -5,9 +5,6 @@ ms.assetid: 4137b54b-f784-412d-bffd-e8a71a54155e
 keywords: ["teb Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

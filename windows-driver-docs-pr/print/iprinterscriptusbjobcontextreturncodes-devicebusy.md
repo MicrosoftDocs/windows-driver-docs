@@ -13,18 +13,18 @@ api_name:
 - IPrinterScriptUsbJobContextReturnCodes.DeviceBusy
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbJobContextReturnCodes::DeviceBusy method
-
 
 Returns a value of '3' to inform USBMon that the device communication channel is not accepting data at this time.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT DeviceBusy(
   [out, retval] UINT32 *value
 );
@@ -70,15 +70,6 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**IPrinterScriptUsbJobContextReturnCodes**](iprinterscriptusbjobcontextreturncodes.md)
-
- 
-
- 
-
-
-
-

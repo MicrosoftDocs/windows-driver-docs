@@ -8,11 +8,7 @@ keywords:
 - XPS filters WDK XPSDrv
 - filters WDK XPS
 - asynchronous notifications WDK XPS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +27,7 @@ This topic describes how to use the asynchronous notification feature in a print
 
 The [IPrintClassObjectFactory](https://msdn.microsoft.com/library/windows/hardware/ff551955) interface provides access to the notification interfaces. The following code example illustrates how a filter can obtain this interface from the property bag.
 
-```
+```cpp
 // This interface is defined as a private member variable in the filter class
 IPrintClassObjectFactory  *m_pPrintClassFactory;
 
@@ -55,7 +51,7 @@ if (SUCCEEDED(hr))
 
 With the IPrintClassObjectFactory interface, the filter can create a unidirectional or a bidirectional notification channel, depending on the needs of the filter. The following code example continues from the preceding example and shows how a filter establishes a unidirectional notification channel.
 
-```
+```cpp
 // Create a unidirectional notification channel
 IPrintAsyncNotifyChannel  *pIAsyncNotifyChannel;
 IPrintAsyncNotify  *pIAsyncNotify;
@@ -81,7 +77,7 @@ if (SUCCEEDED(hr))
 
 To create a bidirectional notification channel, you would use the following code example in place of the preceding example.
 
-```
+```cpp
 // Create a bidirectional notification channel
 IPrintAsyncNotifyChannel *pIAsyncNotifyChannel;
 IPrintAsyncNotify *pIAsyncNotify;
@@ -121,7 +117,7 @@ The filter must not impersonate the user account when it calls the IPrintAsyncNo
 
 You can adapt the notification sample from the WDK sample code to work in a print filter by replacing the RouterCreatePrintAsyncNotificationChannel call with the following code example.
 
-```
+```cpp
 IPrintAsyncNotify  *pIAsyncNotify;
 
 HRESULT hr = m_pPrintClassFactory->GetPrintClassObject(

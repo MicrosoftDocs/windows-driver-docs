@@ -13,18 +13,18 @@ api_name:
 - IPrinterBidiSchemaElement.Name
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaElement::Name method
-
 
 The Name method returns the Bidi schema element name.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT Name(
   [out, retval] BSTR *pbstrSchema
 );
@@ -56,20 +56,11 @@ Requirements
 </tr>
 <tr class="even">
 <td><p>Version</p></td>
-<td><p>Windows 8</p></td>
+<td><p>Windows 8 and later</p></td>
 </tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**IPrinterBidiSchemaElement**](iprinterbidischemaelement-interface.md)
-
- 
-
- 
-
-
-
-

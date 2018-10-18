@@ -8,11 +8,7 @@ keywords:
 - Plug and Play WDK video miniport
 - PnP WDK video miniport
 - power management WDK video miniport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

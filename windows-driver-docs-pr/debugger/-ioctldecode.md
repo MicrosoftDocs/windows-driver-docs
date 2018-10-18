@@ -5,9 +5,6 @@ ms.assetid: 50B12034-E5C7-43F2-A31E-AAC824A05D46
 keywords: ["ioctldecode Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ioctldecode** extension displays the *Device Type*, *Required Access*, *Function Code* and *Transfer Type* as specified by the given IOCTL code. For more information about IOCTL control codes, see [Defining I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff543023).
 
-```
+```dbgcmd
 !ioctldecode IoctlCode 
 ```
 
@@ -53,7 +50,7 @@ To see information on the IOCTL, we first locate an IRP of interest. You can use
 
 Use the [**!irp**](-irp.md) command to display information about the irp.
 
-```
+```dbgcmd
 0: kd> !irp ffffd581a6c6cd30
 Irp is active with 6 stacks 6 is current (= 0xffffd581a6c6cf68)
 No Mdl: No System Buffer: Thread 00000000:  Irp stack trace.  
@@ -86,7 +83,7 @@ No Mdl: No System Buffer: Thread 00000000:  Irp stack trace.
 
 The third argument displayed, in this case *0x220003*, is the IOCTL code. Use the IOCTL code to display information about the IOCTL, in this case [**IOCTL\_INTERNAL\_USB\_SUBMIT\_URB**](https://msdn.microsoft.com/library/windows/hardware/ff537271).
 
-```
+```dbgcmd
 0: kd> !ioctldecode 0x220003
 
 IOCTL_INTERNAL_USB_SUBMIT_URB
@@ -99,7 +96,7 @@ Function       : 0x0
 
 If you provide an IOCTL code that is not available, you will see this type of output.
 
-```
+```dbgcmd
 0: kd> !ioctldecode 0x1280ce
 
 Unknown IOCTL  : 0x1280ce 

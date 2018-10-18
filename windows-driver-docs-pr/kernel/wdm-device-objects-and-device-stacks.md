@@ -4,11 +4,7 @@ author: windows-driver-content
 description: WDM Device Objects and Device Stacks
 ms.assetid: 1ca151b4-40f8-43e4-a9f7-e754234609ce
 keywords: ["stacks WDK , kernel-mode"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

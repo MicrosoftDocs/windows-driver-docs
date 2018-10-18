@@ -12,11 +12,7 @@ keywords:
 - idle power-down WDK KMDF
 - power management WDK KMDF , idle power-down
 - system sleeping states WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

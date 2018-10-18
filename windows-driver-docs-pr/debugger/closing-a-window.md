@@ -5,9 +5,6 @@ ms.assetid: efa37441-460a-4023-8d8a-7ac19ddf6f16
 keywords: ["debugging information windows, closing"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -15,11 +15,7 @@ keywords:
 - Driver Verifier options, Checking on Driver Unload
 - Driver Verifier options, Monitoring Driver Dispatch Routines
 - Driver Verifier options, Monitoring Memory Dispatch List (MDL) Usage
-ms.author: windowsdriverdev
 ms.date: 10/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

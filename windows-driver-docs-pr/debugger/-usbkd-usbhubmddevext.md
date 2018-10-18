@@ -5,9 +5,6 @@ ms.assetid: 2A3C1AD4-0537-43B1-BD87-734047D242B9
 keywords: ["usbkd.usbhubmddevext Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

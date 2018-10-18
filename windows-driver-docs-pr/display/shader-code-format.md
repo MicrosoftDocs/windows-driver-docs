@@ -2,11 +2,7 @@
 title: Shader Code Format
 description: Shader Code Format
 ms.assetid: 62377d19-8e45-4d0c-b974-0c0417d1a948
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

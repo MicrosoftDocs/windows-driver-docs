@@ -3,6 +3,7 @@ title: HBAFCPID WMI Class
 description: HBAFCPID WMI Class
 ms.assetid: 6b0d0f79-a7a8-4341-955b-2c3068936a1d
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # HBAFCPID WMI Class
@@ -17,7 +18,7 @@ The miniport driver uses this identifier to construct a binding between the info
 
 The HBAFCPID class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class HBAFCPID {
   [WmiDataId(1)] uint32  Fcid;
   [HBAType("HBA_WWN"), WmiDataId(2)] uint8  NodeWWN[8];

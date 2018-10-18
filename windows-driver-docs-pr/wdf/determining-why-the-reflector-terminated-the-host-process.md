@@ -7,11 +7,7 @@ keywords:
 - debugging scenarios WDK UMDF , reflector terminates the host process
 - UMDF WDK , debugging scenarios, reflector terminates the host process
 - UMDF WDK , reflector terminates the host process
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,7 +30,7 @@ For many crashes, dump file details are sufficient to determine why the terminat
      
 
 2.  Load the latest .dmp file into the debugger by using the following command:
-    ```
+    ```cpp
     WinDbg -z <path to the .dmp file>
     ```
 

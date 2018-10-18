@@ -3,11 +3,7 @@ title: Installing a PTP Camera
 author: windows-driver-content
 description: Installing a PTP Camera
 ms.assetid: bf18a245-1344-47f1-83bc-3c369627bcdf
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ The USB Device Working Group has assigned class ID 0x06 for still image cameras.
 
 Example INF file for a PTP camera:
 
-```
+```INF
 ; PTPCAMERA.INF  -- PTP Camera setup file
 ; Copyright (c) 2002 PTP Camera Company
 ; Manufacturer:  PTP Camera Company

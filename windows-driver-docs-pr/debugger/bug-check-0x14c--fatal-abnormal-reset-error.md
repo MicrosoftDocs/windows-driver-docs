@@ -5,9 +5,6 @@ ms.assetid: 46E624EE-CA84-443E-95C2-E128E8D03188
 keywords: ["Bug Check 0x14C FATAL_ABNORMAL_RESET_ERROR", "FATAL_ABNORMAL_RESET_ERROR"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

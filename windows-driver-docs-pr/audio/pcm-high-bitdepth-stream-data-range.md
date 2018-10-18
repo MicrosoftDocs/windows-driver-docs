@@ -5,11 +5,7 @@ ms.assetid: 4f3d48ff-e01d-4c80-b493-253afdba6fd7
 keywords:
 - PCM high-bitdepth stream data ranges WDK
 - high-bitdepth stream data ranges WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ ms.localizationpriority: medium
 
 This example uses a [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537096) structure to describe the data range for a PCM high-bitdepth stream.
 
-```
+```cpp
   DataRange.FormatSize  = sizeof(KSDATARANGE_AUDIO);
   DataRange.Flags       = 0;
   DataRange.SampleSize  = 0;

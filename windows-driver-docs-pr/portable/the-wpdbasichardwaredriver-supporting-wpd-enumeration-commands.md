@@ -1,11 +1,7 @@
 ---
 Description: Support for enumeration commands (WpdBasicHardwareDriverSample)
 title: Support for enumeration commands (WpdBasicHardwareDriverSample)
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +29,7 @@ The driver calls the **WpdObjectEnumerator::OnStartFind** handler in response to
 
 The modifications to both the **OnStartFind** handler and the **InitializeEnumerationContext** helper function included removing support for objects that were no longer supported (the storage, folder, and file objects) and adding support for the sensor object. The following is the code for the **InitalizeEnumerationContext** helper function:
 
-```
+```cpp
 VOID WpdObjectEnumerator::InitializeEnumerationContext(
     WpdObjectEnumeratorContext* pEnumeratorContext,
     CAtlStringW                 strParentObjectID)

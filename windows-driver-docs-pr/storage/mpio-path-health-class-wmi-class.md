@@ -3,6 +3,7 @@ title: MPIO\_PATH\_HEALTH\_CLASS WMI Class
 description: MPIO\_PATH\_HEALTH\_CLASS WMI Class
 ms.assetid: fcbc86a4-9035-489e-a406-9901c5af0a32
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MPIO\_PATH\_HEALTH\_CLASS WMI Class
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 
 A WMI client uses the MPIO\_PATH\_HEALTH\_CLASS WMI class to query the MPIO subsystem so that it gathers health statistics for a particular path that is associated with an MPIO disk.
 
-```
+```cpp
 class MPIO_PATH_HEALTH_CLASS
 {
     //

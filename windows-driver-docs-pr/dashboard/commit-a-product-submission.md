@@ -4,9 +4,6 @@ description: Use this method in the Microsoft Hardware API to commit a new submi
 author: balapv
 ms.author: balapv
 ms.date: 04/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,7 +46,7 @@ Do not provide request body for this method.
 
 The following example demonstrates how to commit a submission.
 
-```
+```cpp
 POST https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14631253285588838/submissions/1152921504621465124/commit HTTP/1.1
 Authorization: Bearer <your access token>
 ```

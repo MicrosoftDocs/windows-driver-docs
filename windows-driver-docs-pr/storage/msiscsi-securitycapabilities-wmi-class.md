@@ -3,6 +3,7 @@ title: MSiSCSI\_SecurityCapabilities WMI Class
 description: MSiSCSI\_SecurityCapabilities WMI Class
 ms.assetid: 50f7aa98-0743-4775-808b-c5a90dc1d0fe
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_SecurityCapabilities WMI Class
@@ -19,7 +20,7 @@ Because the MSiSCSI\_SecurityCapabilities class is associated with a particular 
 
 The MSiSCSI\_SecurityCapabilities class is defined in *Config.mof*.
 
-```
+```cpp
 class MSiSCSI_SecurityCapabilities {
   [key] string  InstanceName;
   boolean  Active;

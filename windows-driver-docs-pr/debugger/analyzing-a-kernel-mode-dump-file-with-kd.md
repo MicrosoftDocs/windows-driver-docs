@@ -5,9 +5,6 @@ ms.assetid: 7e8fbf6e-0adc-434c-ba93-f83f49a4af92
 keywords: ["KD, analyzing a dump file", "CAB file containing a dump file, analyzing kernel-mode dump file with KD"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

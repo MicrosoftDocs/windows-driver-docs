@@ -1,11 +1,7 @@
 ---
 title: Installing a driver on Windows 10 Mobile
 description: Describes driver installation on Windows 10 Mobile.
-ms.author: windowsdriverdev
 ms.date: 06/02/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,7 +34,7 @@ To install a mobile driver package (.spkg file), you have two options.
 
     Attach your mobile device to the PC. Then, from an elevated command prompt, issue the following command:
 
-       ```
+       ```cpp
        IUTool -p MyKmdfDriver.spkg
        ```
 

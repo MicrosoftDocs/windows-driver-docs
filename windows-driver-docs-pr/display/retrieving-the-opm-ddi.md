@@ -4,11 +4,7 @@ description: Retrieving the OPM DDI
 ms.assetid: 84218245-f5f3-4a6f-88ed-9cd5db224e30
 keywords:
 - OPM WDK display , retrieving DDI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

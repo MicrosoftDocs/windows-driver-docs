@@ -4,9 +4,6 @@ description: Function aliases are a quick unique short name by which a user of t
 keywords: ["Debugger Data Model Function Aliases"]
 ms.author: domars
 ms.date: 03/21/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

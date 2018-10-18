@@ -5,9 +5,6 @@ ms.assetid: ff11a51f-4e25-4cf3-be19-d38361c441e9
 keywords: ["performance count", "whatperftime Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

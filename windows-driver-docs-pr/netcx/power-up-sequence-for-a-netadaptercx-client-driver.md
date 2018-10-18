@@ -4,11 +4,7 @@ description: Power-up sequence for a NetAdapterCx client driver
 ms.assetid: 86694F6B-9AE4-4FDB-A4BB-9B7ACBC0B1DA
 keywords:
 - Power-up sequence for a NetAdapterCx client driver, Power-up sequence for a NetAdapterCx client driver, Power-up sequence for a NetCx client driver
-ms.author: windowsdriverdev
 ms.date: 08/07/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

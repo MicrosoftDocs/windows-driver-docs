@@ -2,11 +2,7 @@
 title: Initializing a VF Miniport Driver
 description: Initializing a VF Miniport Driver
 ms.assetid: 23EB2086-E882-4CB6-A910-D8E99E0212E5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,7 +46,7 @@ In addition to these steps, the VF miniport driver must follow these additional 
 
 -   The VF miniport driver must not advertise virtual machine queue (VMQ) capabilities. However, the driver can advertise support for other NDIS technologies, such as power management and receive side scaling (RSS).
 
-    For more information about RSS, see [Receive Side Scaling](https://msdn.microsoft.com/library/windows/hardware/ff567232).
+    For more information about RSS, see [Receive Side Scaling](ndis-receive-side-scaling2.md).
 
  
 

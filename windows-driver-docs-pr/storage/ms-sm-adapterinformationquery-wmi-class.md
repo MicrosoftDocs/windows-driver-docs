@@ -3,6 +3,7 @@ title: MS\_SM\_AdapterInformationQuery WMI Class
 description: MS\_SM\_AdapterInformationQuery WMI Class
 ms.assetid: 3a396a73-6ade-455a-ac3f-fd0175cc704e
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MS\_SM\_AdapterInformationQuery WMI Class
@@ -12,7 +13,7 @@ An HBA miniport driver that supports the Storage Management API uses the MS\_SM\
 
 The MS\_SM\_AdapterInformationQuery class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MS_SM_AdapterInformationQuery
 {
     [key] 

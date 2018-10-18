@@ -4,9 +4,6 @@ description: Creating a floor or ceiling for a driver submission in order to cha
 ms.assetid: 
 ms.author: 
 ms.date: 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

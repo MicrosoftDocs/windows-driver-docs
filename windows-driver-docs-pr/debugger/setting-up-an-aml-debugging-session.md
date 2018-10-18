@@ -5,9 +5,6 @@ ms.assetid: 04a44b92-215c-4735-9724-2b9f173f76a2
 keywords: ["AMLI Debugger, setup", "checked build (debug build), of acpi.sys", "acpi.sys"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

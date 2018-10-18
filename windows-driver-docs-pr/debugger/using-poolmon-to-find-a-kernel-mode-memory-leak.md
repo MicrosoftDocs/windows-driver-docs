@@ -5,9 +5,6 @@ ms.assetid: 383b5d9a-3e99-4dc5-bce9-bd44f2ef1dc0
 keywords: ["memory leak, kernel-mode, PoolMon", "PoolMon", "PoolMon, finding a memory leak"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

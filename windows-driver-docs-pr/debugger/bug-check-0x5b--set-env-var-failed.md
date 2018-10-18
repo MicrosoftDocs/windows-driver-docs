@@ -5,9 +5,6 @@ ms.assetid: 0161bfca-48d2-4991-b6e0-15c96c167295
 keywords: ["Bug Check 0x5B SET_ENV_VAR_FAILED", "SET_ENV_VAR_FAILED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

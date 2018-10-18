@@ -2,11 +2,7 @@
 title: Attestation Signing a Kernel Driver for Public Release
 author: DOMARS
 redirect_url: https://msdn.microsoft.com/library/windows/hardware/mt786448
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -303,7 +299,7 @@ To submit multiple drivers at the same time, create a sub directory for each dri
 
 Prepare a cab file DDF input file that references the subdirectories. It might look something like this.
 
-```
+```cpp
 ;*** Submission.ddf multiple driver example
 ;
 .OPTION EXPLICIT     ; Generate errors

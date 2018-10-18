@@ -4,9 +4,6 @@ description: Overview of the process for creating and scheduling error reports f
 author: EliotSeattle
 ms.author: shganesh
 ms.date: 09/01/20181
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

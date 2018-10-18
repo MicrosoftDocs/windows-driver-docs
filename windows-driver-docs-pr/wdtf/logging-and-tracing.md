@@ -6,11 +6,7 @@ ms.assetid: A99E62D1-31A2-46B5-841B-F3969854E39A
 keywords:
 - logging WDK WDTF
 - tracing WDK WDTF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,14 +22,14 @@ By default WDTF object logging is disabled. You enable object logging by calling
 
 The log messages that the WDTF writes to the log file have common patterns.
 
-```
+```cpp
 <OBJECT_NAME> : <TYPE> : - <METHOD_NAME>(<METHOD_PARAMS>) <Additional Info>
 <OBJECT_NAME> : <TYPE> : Target: <DisplayName>
 ```
 
 The following example shows the logging output for a call to **DeviceDepot.Query("Volume::")** when logging is enabled for an example system.
 
-```
+```cpp
 [ Ouput ]
 
 WDTF_TARGETS    : INFO  :  - Query("Volume::")

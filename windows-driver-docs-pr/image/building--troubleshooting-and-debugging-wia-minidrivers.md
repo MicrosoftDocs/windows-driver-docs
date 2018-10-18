@@ -3,11 +3,7 @@ title: Building, Troubleshooting and Debugging WIA Minidrivers
 author: windows-driver-content
 description: Building, Troubleshooting and Debugging WIA Minidrivers
 ms.assetid: ed1e5809-aa4a-47d3-9673-eb6b63a034af
-ms.author: windowsdriverdev
 ms.date: 01/24/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

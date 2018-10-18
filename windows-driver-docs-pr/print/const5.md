@@ -5,11 +5,7 @@ description: The Web Services for Devices (WSD) Const construct defines the data
 ms.assetid: e9bcf007-0117-48a9-9873-a9bbc5702e29
 keywords:
 - Const construct
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,7 +47,7 @@ The Web Services for Devices (WSD) Const construct defines the data type and val
 
 The following code example returns a constant value that has been defined in the bidi extension file for the particular bidi schema query.
 
-```
+```cpp
 <Property name="Printer">
   <Property name="Extension">
     <Const name="Version" type="BIDI_INT">1</Const>
@@ -61,7 +57,7 @@ The following code example returns a constant value that has been defined in the
 
 This example results in the following query:
 
-```
+```cpp
 \Printer.Extension.Version:1
 ```
 

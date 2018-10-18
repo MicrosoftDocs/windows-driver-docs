@@ -13,11 +13,7 @@ keywords:
 - ElementTags directive WDK GDL
 - ArraySize directive WDK GDL
 - ArrayLabel directive WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,7 +48,7 @@ The following directives are used to define the ARRAY data type:
 
 Consider the following template.
 
-```
+```GDL
 *Template:  RECTANGLE
 {
     *Type:  DATATYPE
@@ -72,13 +68,13 @@ This template defines a fixed-size, array of four integers. The array is assigne
 
 Consider the following GDL entry.
 
-```
+```GDL
 *ImageableArea:   rect( - 10, 20 , +30, 0x40  )  
 ```
 
 And consider the IMAGERECT template.
 
-```
+```GDL
 *Template:  IMAGERECT
 {
     *Name:  "*ImageableArea"
@@ -89,7 +85,7 @@ And consider the IMAGERECT template.
 
 If the GDL entry is interpreted by the IMAGERECT template, the resulting XML output will be.
 
-```
+```xml
 <GDL_ATTRIBUTE Name="*ImageableArea"  >
 <left  xsi:type="GDLW_int">-10</left>
    <top  xsi:type="GDLW_int">20</top>
@@ -99,11 +95,3 @@ If the GDL entry is interpreted by the IMAGERECT template, the resulting XML out
 ```
 
 Note that the reference is to the wrapped type **GDLW\_int** rather than the original **int**.
-
- 
-
- 
-
-
-
-

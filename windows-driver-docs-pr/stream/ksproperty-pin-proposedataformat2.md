@@ -11,11 +11,7 @@ api_location:
 - ks.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -138,7 +134,7 @@ The following table provides a description of the KSPROPERTY\_PIN\_PROPOSEDATAFO
 
 To use **KSPROPERTY\_PIN\_PROPOSEDATAFORMAT2** define the following structure.
 
-```
+```cpp
 typedef struct
 {
     KSP_PIN                                 PinProperty;
@@ -149,7 +145,7 @@ typedef struct
 
 This code sample shows how to initialize the structure.
 
-```
+```cpp
     ProposeDataformat2Input input = {0};
 
     input.PinProperty.Property.Set = KSPROPSETID_Pin;  

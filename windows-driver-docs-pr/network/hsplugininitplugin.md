@@ -5,11 +5,7 @@ description: The HSPluginInitPlugin function is exported by the plugin DLL and i
 ms.assetid: db51267c-4f38-47bd-bde2-7b27a93dd2a7
 keywords: 
 - HSPluginInitPlugin function Network Drivers Starting with Windows Vista
-ms.author: windowsdriverdev
 ms.date: 07/31/2017 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

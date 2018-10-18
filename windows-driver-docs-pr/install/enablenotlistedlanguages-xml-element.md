@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # enableNotListedLanguages XML Element
@@ -21,7 +22,7 @@ The **enableNotListedLanguages** XML element is an empty element that sets the *
 
 ### Element Tag
 
-```
+```cpp
 <enableNotListedLanguages>
 ```
 
@@ -64,7 +65,7 @@ By default, all of the DPInst-supported languages are enabled if a *DPInst.xml* 
 
 The following code example demonstrates an **enableNotListedLanguages** element.
 
-```
+```cpp
 <dpinst>
   ...
   <enableNotListedLanguages/>

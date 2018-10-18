@@ -5,9 +5,6 @@ ms.assetid: 0fb1cb56-e542-4b9e-9b06-f4dfc7657bb8
 keywords: ["Bug Check 0x1C PFN_REFERENCE_COUNT", "PFN_REFERENCE_COUNT"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

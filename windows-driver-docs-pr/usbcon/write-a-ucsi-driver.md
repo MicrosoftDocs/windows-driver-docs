@@ -2,11 +2,7 @@
 Description: Describes the behavior of the UCSI class extension that implements the UCSI specification in a transport agnostic way. 
 title: Write a UCSI client driver
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 09/30/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -123,7 +119,7 @@ In your implementation of [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](https://docs.mic
     1. Create the connector collection by calling [**UcmUcsiConnectorCollectionCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmucsippm/nf-ucmucsippm-ucmucsiconnectorcollectioncreate).
     2. Enumerate the connectors on the device and add them to the collection by calling [**UcmUcsiConnectorCollectionAddConnector**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmucsippm/nf-ucmucsippm-ucmucsiconnectorcollectionaddconnector)
 
-    ```
+    ```cpp
     // Create the connector collection.
 
     UCMUCSI_CONNECTOR_COLLECTION* ConnectorCollectionHandle;
@@ -151,7 +147,7 @@ In your implementation of [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](https://docs.mic
     3. Set your event callbacks in WDF_OBJECT_ATTRIBUTES.
     4. Call [**UcmUcsiPpmCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmucsippm/nf-ucmucsippm-ucmucsippmcreate) by passing all the configured structures.
 
-    ```
+    ```cpp
     UCMUCSIPPM ppmObject = WDF_NO_HANDLE;
     PUCMUCSI_PPM_CONFIG UcsiPpmConfig;
     WDF_OBJECT_ATTRIBUTES attrib;
@@ -179,7 +175,7 @@ UcmUcsiCx guarantees that there can be at most one outstanding request in the WD
 
 Typically the driver sets up queues in its implementation of [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware).
 
-```
+```cpp
 WDFQUEUE UcsiCommandRequestQueue = WDF_NO_HANDLE;
 WDF_OBJECT_ATTRIBUTES attrib;
 WDF_IO_QUEUE_CONFIG queueConfig;
@@ -224,7 +220,7 @@ Similar to Get Connector Status command, when Get PDOs command completes success
 
 The client driver's handler for [EVT_WDF_IO_QUEUE_IO_DEVICE_CONTROL](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_device_control) is similar to this example code. For information about handling requests, see [Request Handlers](https://docs.microsoft.com/windows-hardware/drivers/wdf/request-handlers)
 
-```
+```cpp
 void EvtIoDeviceControl(
     _In_ WDFREQUEST Request,
     _In_ ULONG IoControlCode

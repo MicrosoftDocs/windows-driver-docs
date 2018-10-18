@@ -5,9 +5,6 @@ ms.assetid: D5DB5166-A173-409E-A6A1-3872A22D19E1
 keywords: ["gpiokd.gpioext Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!gpiokd.gpioext** command displays information about a GPIO controller.
 
-```
+```dbgcmd
 !gpiokd.gpioext ExtensionAddress [Flags]
 ```
 

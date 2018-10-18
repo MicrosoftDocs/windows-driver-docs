@@ -9,11 +9,7 @@ api_name:
 - wscn PlatenOpticalResolution
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **PlatenOpticalResolution** element specifies the maximum optical r
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:PlatenOpticalResolution>
   child elements
 </wscn:PlatenOpticalResolution>
@@ -84,7 +80,7 @@ Resolution is specified as a [**Width**](width.md) x [**Height**](height.md) pai
 
 If the Height element is not specified, the WSD Scan Service should assume a square image resolution. For example, if only a **Width** element of 100 is provided, assume a resolution is 100 x 100 pixels per square inch.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Height**](height.md)

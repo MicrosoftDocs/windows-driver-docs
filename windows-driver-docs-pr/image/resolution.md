@@ -9,11 +9,7 @@ api_name:
 - wscn Resolution wscn MustHonor ""
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **Resolution** element specifies the resolution of the scanned imag
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Resolution wscn:MustHonor=""
   MustHonor = "xs:string">
   child elements
@@ -114,7 +110,7 @@ The **Resolution** element contains a single [**Width**](width.md) x [**Height**
 
 The client can specify the optional **MustHonor** attribute only when the **Resolution** element is contained within a **CreateScanJobRequest** hierarchy. For more information about **MustHonor** and its usage, see [**CreateScanJobRequest**](createscanjobrequest.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)

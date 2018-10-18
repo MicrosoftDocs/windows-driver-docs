@@ -11,11 +11,7 @@ keywords:
 - writing IRP dispatch routines
 - IRP dispatch routines WDK file system , about writing IRP dispatch routines
 - IRPs WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,7 +30,7 @@ File system filter drivers use dispatch routines that are similar to those used 
 
 Every IRP dispatch routine is defined as follows:
 
-```
+```cpp
 NTSTATUS 
 (*PDRIVER_DISPATCH) ( 
     IN PDEVICE_OBJECT DeviceObject, 

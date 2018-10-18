@@ -9,11 +9,7 @@ api_name:
 - wscn Width wscn Override "" wscn UsedDefault ""
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **Width** element specifies a width value that the scan device supp
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Width wscn:Override="" wscn:UsedDefault=""
   Override = "xs:string"
   UsedDefault = "xs:string">
@@ -120,7 +116,7 @@ The **Width** element is a required child element for all of its parent elements
 
 The WSD Scan Service can specify the optional **Override** and **UsedDefault** attributes only when the **Width** element is contained within a **DocumentFinalParameters** hierarchy. For more information about **Override** and **UsedDefault** and about their usage, see [**DocumentFinalParameters**](documentfinalparameters.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ADFOpticalResolution**](adfopticalresolution.md)

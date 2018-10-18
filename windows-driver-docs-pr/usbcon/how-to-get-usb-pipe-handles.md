@@ -2,11 +2,7 @@
 Description: This topic provides an overview of USB pipes and describes the steps required by a USB client driver to obtain pipe handles from the USB driver stack.
 title: How to enumerate USB pipes
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -79,7 +75,7 @@ For information about sending control transfers and the KMDF methods, see [How t
 
     If you know the endpoints in your device, extend your device context structure by adding WDFUSBPIPE members to store the associated USB pipe handles. For example, you can extend the device context structure as shown here:
 
-    ```
+    ```cpp
     typedef struct _DEVICE_CONTEXT {  
         WDFUSBDEVICE    UsbDevice;  
         WDFUSBINTERFACE UsbInterface;  
@@ -99,7 +95,7 @@ For information about sending control transfers and the KMDF methods, see [How t
 
     Each pipe can store endpoint-related characteristics in another structure called the *pipe context*. Similar to a device context, a pipe context is a data structure (defined by the client driver) for storing information about pipes associated with endpoints. During device configuration, the client driver passes a pointer to its pipe context to the framework. The framework allocates a block of memory based on the size of the structure, and stores a pointer to that memory location with the framework USB target pipe object. The client driver can use the pointer to access and store pipe information in members of the pipe context.
 
-    ```
+    ```cpp
     typedef struct _PIPE_CONTEXT {  
 
         ULONG MaxPacketSize;
@@ -129,7 +125,7 @@ The following code example enumerates the pipes in the current setting. It obtai
 
 To determine whether a particular bulk endpoint supports static streams, the client driver examines the endpoint descriptor. That code is implemented in a helper routine named, RetrieveStreamInfoFromEndpointDesc, shown in the next code block.
 
-```
+```cpp
 NTSTATUS  
     FX3EnumeratePipes(  
     _In_ WDFDEVICE Device)
@@ -297,7 +293,7 @@ The following code example shows a helper routine named, RetrieveStreamInfoFromE
 
 In following code example, the client driver calls the preceding helper routine, RetrieveStreamInfoFromEndpointDesc, while enumerating pipes. The routine examines first gets the configuration descriptor and parses it to retrieve endpoint descriptors. If the endpoint descriptor for the pipe contains a USB\_SUPERSPEED\_ENDPOINT\_COMPANION\_DESCRIPTOR\_TYPE descriptor, the driver retrieves the maximum number of streams supported by the endpoint.
 
-```
+```cpp
 /*++
 
 Routine Description:
@@ -500,7 +496,7 @@ The following code example extends the USB UMDF template that is provided with V
 
 Extend the CDevice class declaration as shown here. This example code assumes that the device is the OSR FX2 board. For information about its descriptor layout, see [USB Device Layout](usb-device-layout.md).
 
-```
+```cpp
 class CMyDevice :
     public CComObjectRootEx<CComMultiThreadModel>,
     public IPnpCallbackHardware
@@ -591,7 +587,7 @@ public:
 
 In the CDevice class definition, implement a helper method called CreateUsbIoTargets. This method is called from the IPnpCallbackHardware::OnPrepareHardware implementation after the driver has obtained a pointer to the target device object.
 
-```
+```cpp
 
 HRESULT  CMyDevice::CreateUsbIoTargets()  
 

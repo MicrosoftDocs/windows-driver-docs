@@ -2,11 +2,7 @@
 title: Parallel
 description: Parallel
 ms.assetid: E2AF7B3A-B614-4fe1-9CFB-0860F68E895C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +25,7 @@ TAEF provides a mechanism to execute tests in parallel across multiple processor
 
 Example (native code):
 
-```
+```cpp
 class MyTests
 {
 
@@ -43,7 +39,7 @@ class MyTests
 
 As with other general metadata in TAEF, this can be specified at the class or module level & will be inherited by all tests contained within that class or module. For example, to mark an entire assembly as parallelizable you could do the following (outside any class or test specification) in a cpp file compiled into your test DLL:
 
-```
+```cpp
 BEGIN_MODULE()
     MODULE_PROPERTY(L"Parallel", L"true");
 END_MODULE()
@@ -51,7 +47,7 @@ END_MODULE()
 
 This wider-scope can then be overriden at smaller scopes to disable parallelism for particular test cases or classes as follows:
 
-```
+```cpp
 class MyTests
 {
     TEST_CLASS(MyTests);

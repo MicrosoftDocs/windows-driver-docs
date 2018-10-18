@@ -5,9 +5,6 @@ ms.assetid: 57f55632-8320-47cc-8a20-5a2cf3b42b3a
 keywords: ["process Windows Debugging"]
 ms.author: domars
 ms.date: 08/02/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

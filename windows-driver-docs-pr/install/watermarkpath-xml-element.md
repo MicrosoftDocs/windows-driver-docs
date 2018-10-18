@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # watermarkPath XML Element
@@ -21,7 +22,7 @@ The **watermarkPath** element specifies the source file for a custom watermark b
 
 ### Element Tag
 
-```
+```cpp
 <watermarkPath>
 ```
 
@@ -64,7 +65,7 @@ A **watermarkPath** element is customized, but not localized, if it is a child e
 
 The following code example demonstrates a **watermarkPath** element that specifies *Data\\Watermark.bmp* as the source of the watermark bitmap that DPInst displays on the left side of the welcome and finish pages. The text that specifies the custom watermark bitmap file is shown in bold font style.
 
-```
+```cpp
 <dpinst>
   ...
   <watermarkPath>Data\Watermark.bmp</watermarkPath>

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Registry Run-Time Library Routines
 ms.assetid: 53e55969-3c8e-44ab-8ba7-6abb0ddbfc24
 keywords: ["registry WDK kernel , run-time library routines", "driver registry information WDK kernel , run-time library routines", "run-time library routines WDK kernel", "RtlXxxRegistryYyy routines"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -63,7 +59,7 @@ The following table list the operations that drivers can perform by calling the 
 
 The following code example illustrates how to set *ValueName* for **\\Registry\\Machine\\System\\***KeyName* to a ULONG value of 0xFF. Compare this example with the corresponding one in the [Registry Key Object Routines](registry-key-object-routines.md) section.
 
-```
+```cpp
 NTSTATUS status;
 ULONG data = 0xFF;
 

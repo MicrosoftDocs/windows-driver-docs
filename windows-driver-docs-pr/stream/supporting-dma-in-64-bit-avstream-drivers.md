@@ -10,11 +10,7 @@ keywords:
 - Direct Memory Access WDK AVStream
 - 64-bit WDK AVStream
 - 32-bit addressable devices WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +28,7 @@ All drivers compiled for Win64 platforms should use [**IKsDeviceFunctions::Regis
 
 The following code example illustrates how to support DMA on both the x64-based client release and 32-bit platforms:
 
-```
+```cpp
 NTSTATUS MyDeviceStart (...) {
 // Get the DMA adapter object and store it in the Context member of the I/O stack location.
 Context -> AdapterObject = IoGetDmaAdapter (

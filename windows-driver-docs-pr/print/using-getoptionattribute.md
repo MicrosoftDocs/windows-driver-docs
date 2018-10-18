@@ -5,11 +5,7 @@ description: Using GetOptionAttribute
 ms.assetid: d35f0811-d572-422c-8672-ffd29bf69efa
 keywords:
 - GetOptionAttribute
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -196,7 +192,7 @@ This option attribute is available to any option of the "InstalledMemory" PPD fe
 
 Here is some sample code that shows how to obtain the PPD file's original order, min, and max values of the "\*ParamCustomPageSize Width" entry. The CUSTOMPARAM\_WIDTH constant, which is defined in printoem.h, indicates the offset of the [**CUSTOMSIZEPARAM**](https://msdn.microsoft.com/library/windows/hardware/ff547337) structure that contains the information related to the Width entry. This structure is one of CUSTOMPARAM\_MAX CUSTOMSIZEPARAM structures that form an array of such structures. The printoem.h header defines a set of constants named CUSTOMPARAM\_XXX listing the offsets of the structures in this array (Width, Height, WidthOffset, HeightOffset, and Orientation).
 
-```
+```cpp
 PCUSTOMSIZEPARAM  pCSParam;
 
 pCSParam = (PCUSTOMSIZEPARAM)pbData + CUSTOMPARAM_WIDTH;

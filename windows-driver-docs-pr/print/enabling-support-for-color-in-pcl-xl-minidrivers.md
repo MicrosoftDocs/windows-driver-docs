@@ -5,11 +5,7 @@ description: Enabling Support for Color in PCL XL Minidrivers
 ms.assetid: 3287b070-76e3-4a28-a516-aa58905af224
 keywords:
 - PCL XL vector graphics WDK Unidrv , enabling color support
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ Developing a GPD file for color PCL XL is similar to developing a GPD file for m
 
     That is, the GPD file must contain a ColorMode [standard feature](standard-features.md). Note that the current implementation of PCL XL supports only 24 bits-per-pixel color. The following example shows a ColorMode feature that has two \*Option entries: Mono and 24bpp color.
 
-```
+```cpp
 *Feature: ColorMode
 {
     *rcNameID: =COLOR_PRINTING_MODE_DISPLAY
@@ -58,7 +54,7 @@ Developing a GPD file for color PCL XL is similar to developing a GPD file for m
 
     For example, if the GPD file allows the user to choose between printing color and monochrome (as in the previous example), the page setup command will be dependent on whether the user is printing in monochrome or in color. In this case the **CmdStartPage** command (see [Printer Configuration Commands](printer-configuration-commands.md)) must be placed within a \*Switch: ColorMode statement, as in the following example. (Note that the number 4 in the \*Order: PAGE\_SETUP.4 command attribute may need to be modified, depending on your GPD file and device.) For more information about the PAGE\_SETUP syntax, see [Command Execution Order](command-execution-order.md).
 
-```
+```cpp
 *Switch: ColorMode
 {
   *Case: Mono

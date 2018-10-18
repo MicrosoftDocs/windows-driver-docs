@@ -8,11 +8,7 @@ keywords:
 - Stream.sys class driver WDK Windows 2000 Kernel , initializing minidrivers
 - streaming minidrivers WDK Windows 2000 Kernel , initializing
 - minidrivers WDK Windows 2000 Kernel Streaming , initializing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -6,11 +6,7 @@ ms.assetid: da2f6161-072a-4d3c-94a8-1020520de524
 keywords:
 - block macros WDK GPD files
 - referencing macros
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -59,7 +55,7 @@ where *BlockMacroName* is a unique name, and *BlockMacroBody* is a set of one or
 
 For example, you might define a block macro named EnvelopeDefaults, which is defined as follows:
 
-```
+```cpp
 *BlockMacro: EnvelopeDefaults
 {
     *PrintableArea: PAIR(4646, 6738)
@@ -89,7 +85,7 @@ where *BlockMacroName* is a unique name, previously specified in the **\*BlockMa
 
 For example, to reference the EnvelopeDefaults macro within an option specification, you could use the following entries:
 
-```
+```cpp
 *Option: Env9
 {
     *InsertBlock: =EnvelopeDefaults

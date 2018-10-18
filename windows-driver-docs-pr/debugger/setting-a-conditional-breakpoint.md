@@ -5,9 +5,6 @@ ms.assetid: 9fa5b417-8904-48bc-ad5c-62ba35d70b73
 keywords: ["breakpoints, conditional", "conditional breakpoints"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

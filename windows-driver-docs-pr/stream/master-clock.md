@@ -11,11 +11,7 @@ keywords:
 - onboard clock WDK DVD decoder
 - current stream time WDK DVD decoder
 - time WDK DVD decoder
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: dc263ec2-72bf-4cb1-8583-4e9142d0bbdb
 keywords: ["object manager", "obja Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

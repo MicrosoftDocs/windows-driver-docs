@@ -3,6 +3,7 @@ title: MSFC\_AdapterEvent WMI Class
 description: MSFC\_AdapterEvent WMI Class
 ms.assetid: 83077288-e3f6-4b21-80ed-677aad7d2979
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSFC\_AdapterEvent WMI Class
@@ -15,7 +16,7 @@ An HBA miniport driver that supports the T11 committee's *Fibre Channel HBA API*
 
 The MSFC\_AdapterEvent class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MSFC_AdapterEvent : WMIEvent  {
   [key] string InstanceName; boolean  Active;
   [WmiDataId(1), Description("Event Type") : amended, 

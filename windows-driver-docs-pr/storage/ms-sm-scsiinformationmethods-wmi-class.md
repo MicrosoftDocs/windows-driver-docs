@@ -3,6 +3,7 @@ title: MS\_SM\_ScsiInformationMethods WMI Class
 description: MS\_SM\_ScsiInformationMethods WMI Class
 ms.assetid: 13e70e48-5364-4a63-8a83-d5ac02c8d17f
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MS\_SM\_ScsiInformationMethods WMI Class
@@ -20,7 +21,7 @@ The MOF syntax for each method that belongs to this class is described in the re
 
 The MS\_SM\_ScsiInformationMethods class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MS_SM_ScsiInformationMethods
 {
     [key]

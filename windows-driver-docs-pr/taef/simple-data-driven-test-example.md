@@ -2,11 +2,7 @@
 title: Simple Data Driven Test Example
 description: Simple Data Driven Test Example
 ms.assetid: 59A897C3-C9CD-4e1c-B4BA-F81B3B3E4532
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ The first example, is a basic data driven test, called SimpleDataDrivenExample.
 
 In the managed example, you will find an XML file which looks like this:
 
-```
+```cpp
     1  <?xml version="1.0"?>
     2  <Data>
     3    <Table Id="Table1">
@@ -53,7 +49,7 @@ Within the &lt;Table&gt; tag, you have an optional **&lt;ParameterTypes&gt;** se
 
 If you compare the Managed and Native examples, you will notice that the only difference between the two is the **&lt;ParameterTypes&gt;** block. The native XML file specifies Size to be of the native integer type "int" and uses the default type WEX::Common::String to be the type for Color by not specifying it. For your convenience, the following example shows the XML file from the native example.
 
-```
+```cpp
     1  <?xml version="1.0"?>
     2  <Data>
     3    <Table Id="SimpleTable">
@@ -101,7 +97,7 @@ Once again, lets take a quick look at the code that covers the above aspects.
 
 ### <span id="Native_code"></span><span id="native_code"></span><span id="NATIVE_CODE"></span>Native code
 
-```
+```cpp
 1   class SimpleDataDrivenExample
 2   {
 3      BEGIN_TEST_CLASS(SimpleDataDrivenExample)
@@ -119,7 +115,7 @@ Once again, lets take a quick look at the code that covers the above aspects.
 
 ### <span id="Managed_code"></span><span id="managed_code"></span><span id="MANAGED_CODE"></span>Managed code
 
-```
+```cpp
     1 [TestMethod]
     2 [DataSource("Table:CSharpDataDrivenSimpleExample.xml#SimpleTable")]
     3 public void DataDrivenTest()
@@ -132,7 +128,7 @@ Once again, lets take a quick look at the code that covers the above aspects.
 
 In addition to the above, you need some extra steps for data driven tests in managed code. You also need to define a private TestContext property - like VSTS recommends (<http://msdn2.microsoft.com/library/ms404699(VS.80).aspx>). You also define public assessors to this property. Internally TAEF sets this TestContext property so you can access the data through it. Lets take a quick look at this portion of code:
 
-```
+```cpp
     1 public TestContext TestContext
     2 {
     3     get;
@@ -146,7 +142,7 @@ In addition to the above, you need some extra steps for data driven tests in man
 
 The retrieval APIs are different in managed and native code. Let's start with understanding the **native retrieval API**:
 
-```
+```cpp
     1  void SimpleDataDrivenExample::DataDrivenTest()
     2  {
     3          int size;
@@ -176,7 +172,7 @@ This retrieval API is defined in **TestData.h** and included by the WexTestClass
 
 To retrieve the data in **managed code**, make use of the TestContext property that you defined. Take a look at the code below (or in example):
 
-```
+```cpp
     1  public void DataDrivenTest()
     2  {
     3     int size = (int)m_testContext.DataRow["Size"];

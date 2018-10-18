@@ -2,11 +2,7 @@
 title: Kernel Streaming Event Sets
 description: Kernel Streaming Event Sets
 ms.assetid: 424b3262-2e38-4748-8a6c-35dea25935a4
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

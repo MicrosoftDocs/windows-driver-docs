@@ -5,9 +5,6 @@ ms.assetid: 344e3afd-6b8d-48f2-9e07-dd7e1937f71b
 keywords: ["uf (Unassemble Function) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

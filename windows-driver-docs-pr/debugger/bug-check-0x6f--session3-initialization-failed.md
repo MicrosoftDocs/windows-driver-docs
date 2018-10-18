@@ -5,9 +5,6 @@ ms.assetid: 5ee76f2c-026f-4b38-a7ee-ad5d45b132f7
 keywords: ["Bug Check 0x6F SESSION3_INITIALIZATION_FAILED", "SESSION3_INITIALIZATION_FAILED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

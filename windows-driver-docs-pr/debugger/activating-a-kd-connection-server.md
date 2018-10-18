@@ -5,9 +5,6 @@ ms.assetid: 1b6f6f72-2679-45c7-bf1b-9607bf7e7d89
 keywords: ["Activating a KD Connection Server Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

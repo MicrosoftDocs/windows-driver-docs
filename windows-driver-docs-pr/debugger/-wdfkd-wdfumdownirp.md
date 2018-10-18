@@ -5,9 +5,6 @@ ms.assetid: 98DFF193-950A-46CF-875E-B2907743F5D4
 keywords: ["wdfkd.wdfumdownirp Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

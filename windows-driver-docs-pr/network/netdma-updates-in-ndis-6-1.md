@@ -4,11 +4,7 @@ description: NetDMA Updates in NDIS 6.1
 ms.assetid: ec19ac6e-78b3-4da5-baef-e02fc9947c0e
 keywords:
 - NetDMA WDK networking , about NetDMA interface
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,11 +5,7 @@ description: This topic describes the OID_802_3_XMIT_MAX_COLLISIONS object ident
 ms.assetid: 5C1349FC-073D-4DDB-9829-CCBF75E92A6A
 keywords:
 - OID_802_3_XMIT_MAX_COLLISIONS
-ms.author: windowsdriverdev
 ms.date: 11/01/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

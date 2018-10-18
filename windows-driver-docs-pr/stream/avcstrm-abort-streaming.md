@@ -9,11 +9,7 @@ api_name:
 - AVCSTRM_ABORT_STREAMING
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -76,7 +72,7 @@ A subunit should call this when its target device is removed or the original dat
 
 This function does not use any member of the **CommandData** union in the AVC\_STREAM\_REQUEST\_BLOCK structure.
 
-```
+```cpp
 typedef struct _AVC_STREAM_REQUEST_BLOCK {
   ULONG  SizeOfThisBlock;
   ULONG  Version;

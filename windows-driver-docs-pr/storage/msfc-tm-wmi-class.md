@@ -3,6 +3,7 @@ title: MSFC\_TM WMI Class
 description: MSFC\_TM WMI Class
 ms.assetid: c81b9b2a-6381-4ff9-a579-bee53ac8678d
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSFC\_TM WMI Class
@@ -15,7 +16,7 @@ A WMI provider uses the MSFC\_TM WMI class to time stamp events.
 
 The MSFC\_TM class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MSFC_TM {
   [WmiDataId(1)] uint32  tm_sec;
   [WmiDataId(2)] uint32  tm_min;

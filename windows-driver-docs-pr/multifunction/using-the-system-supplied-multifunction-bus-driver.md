@@ -11,11 +11,7 @@ keywords:
 - FDOs WDK multifunction devices
 - physical device objects WDK multifunction devices
 - PDOs WDK multifunction devices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,7 +41,7 @@ In either case, the vendor also supplies drivers and INF files for the individua
 
 The following skeleton of a custom multifunction INF illustrates the required syntax for specifying mf.sys as the driver for a multifunction device:
 
-```
+```cpp
 [Version]
 Signature = "$Windows NT$"
 ; ...

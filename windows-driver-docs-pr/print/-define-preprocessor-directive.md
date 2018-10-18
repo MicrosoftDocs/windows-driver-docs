@@ -8,27 +8,14 @@ keywords:
 - keywords WDK GDL
 - reserved keywords WDK
 - Define directive WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # \#Define Preprocessor Directive
 
-
-```
+```GDL
 #Define: symbol
 ```
 
 The \#Define directive adds the *symbol* value to the preprocessor symbol dictionary. *symbol* can be any value token and is required. You can add the same symbol more than once.
-
- 
-
- 
-
-
-
-

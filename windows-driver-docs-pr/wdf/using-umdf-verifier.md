@@ -3,11 +3,7 @@ title: Using UMDF Verifier
 author: windows-driver-content
 description: Using UMDF Verifier
 ms.assetid: 95D85894-86AF-4312-B5BD-F1C9E8F8B2E5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,7 +32,7 @@ Starting in UMDF 2.0, UMDF Verifier issues breakpoints in some cases, and causes
 
 We strongly recommend doing all development and testing of your driver after enabling [Application Verifier (AppVerif.exe)](../debugger/debugger-download-tools.md) on WUDFHost.exe. Use the following command, attach a debugger and then reboot.
 
-```
+```cpp
 AppVerif –enable Heaps Exceptions Handles Locks Memory TLS Leak –for WudfHost.exe
 ```
 

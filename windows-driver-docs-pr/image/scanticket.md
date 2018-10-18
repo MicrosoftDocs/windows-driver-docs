@@ -9,11 +9,7 @@ api_name:
 - wscn ScanTicket
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ScanTicket** element defines all of the description and processin
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScanTicket>
   child elements
 </wscn:ScanTicket>
@@ -92,7 +88,7 @@ The member elements of **ScanTicket** map directly to an instance of a [**Job**]
 
 The client can request the **ScanTicket** element for a particular job by calling.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)

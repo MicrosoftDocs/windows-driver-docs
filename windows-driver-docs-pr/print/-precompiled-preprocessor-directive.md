@@ -11,18 +11,14 @@ keywords:
 - GDL WDK , source files
 - source files WDK GDL
 - precompiled source files WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # \#PreCompiled Preprocessor Directive
 
 
-```
+```GDL
 #PreCompiled:  BOOL
 ```
 
@@ -37,11 +33,3 @@ Files that are marked as precompiled will be parsed in a root context. That is, 
 Also note that precompiled files must be unique and they must be independent of the host that includes them. Precompiled files do not rely on any included content that the host file references or any content that might be defined in the host file.
 
 This preprocessor directive is new for GDL.
-
- 
-
- 
-
-
-
-

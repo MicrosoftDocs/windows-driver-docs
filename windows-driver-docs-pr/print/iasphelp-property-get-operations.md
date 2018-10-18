@@ -9,14 +9,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: f454b544-a17f-4542-b930-4e52b6667d55
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Iasphelp Property Get Operations
-
-
-## <span id="ddk_iasphelp_property_get_operations_gg"></span><span id="DDK_IASPHELP_PROPERTY_GET_OPERATIONS_GG"></span>
-
 
 This section describes the "property get" operations for the **Iasphelp** object. The operations are:
 
@@ -73,11 +70,3 @@ This section describes the "property get" operations for the **Iasphelp** object
 [**Iasphelp::SNMPSupported**](iasphelp-snmpsupported.md)
 
 [**Iasphelp::Status**](iasphelp-status.md)
-
- 
-
- 
-
-
-
-

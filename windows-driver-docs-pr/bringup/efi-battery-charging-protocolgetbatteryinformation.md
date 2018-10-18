@@ -3,11 +3,7 @@ title: EFI_BATTERY_CHARGING_PROTOCOL.GetBatteryInformation
 author: windows-driver-content
 description: EFI_BATTERY_CHARGING_PROTOCOL.GetBatteryInformation
 ms.assetid: 497cd001-5180-4dee-a070-ccf8c987bd71
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ Returns information about the current state of the main battery including the st
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef EFI_STATUS (EFIAPI * EFI_BATTERY_CHARGING_GET_BATTERY_INFORMATION) (
     IN EFI_BATTERY_CHARGING_PROTOCOL *This,
     OUT UINT32 *StateOfCharge,

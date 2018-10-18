@@ -5,9 +5,6 @@ ms.assetid: 24ff0e2f-d40a-4f52-91ef-e766b9387a8a
 keywords: ["Searching for KD Connection Servers Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

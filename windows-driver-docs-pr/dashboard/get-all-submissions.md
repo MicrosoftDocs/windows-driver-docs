@@ -4,9 +4,6 @@ description: This method in the Microsoft Hardware API retrieves data for all su
 author: balapv
 ms.author: balapv
 ms.date: 04/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,7 +43,7 @@ Do not provide a request body for this method.
 The following example demonstrates how to retrieve information about all submissions of a product.
 
 
-```
+```cpp
 GET https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/13635057453741329/submissions HTTP/1.1
 Authorization: Bearer <your access token>
 ```

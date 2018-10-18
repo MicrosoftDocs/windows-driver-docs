@@ -5,9 +5,6 @@ ms.assetid: 36437a0e-d56f-4454-9b1c-c57d98e1450a
 keywords: ["Bug Check 0x72 ASSIGN_DRIVE_LETTERS_FAILED", "ASSIGN_DRIVE_LETTERS_FAILED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

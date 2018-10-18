@@ -2,11 +2,7 @@
 title: PICT Data Source
 description: PICT Data Source
 ms.assetid: 75D3E086-C277-410d-B474-742A47ABB6AC
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,7 +38,7 @@ One you are done authoring your model file (and seed file) for PICT and have ver
 
 Native code:
 
-```
+```cpp
 1     class PictExample
 2     {
 3         TEST_CLASS(PictExample)
@@ -65,7 +61,7 @@ Native code:
 
 Managed code:
 
-```
+```cpp
 1     [TestClass]
 2     public class CSharpPictExample
 3     {
@@ -119,7 +115,7 @@ te.exe <test dll> /Pict:Order=3 /Pict:SeedingFile=test.seed
 
 To set metadata in the DataSource property, append the model file name with a question mark character (?) then a set of ampersand-separated metadata name = metadata value pairs. When using this method, the "Pict:" prefix for metadata names is optional. Here is an example:
 
-```
+```cpp
 TEST_METHOD_PROPERTY(L"DataSource", L"Pict:model.txt?Order=3&CaseSensitive=true&Random=true")
 ```
 
@@ -133,7 +129,7 @@ You can access the data values during a given invocation from your test method a
 
 Native code:
 
-```
+```cpp
 1     void PictExample::SimpleTest()
 2     {
 3         String valueA;
@@ -164,7 +160,7 @@ Native code:
 
 Managed code:
 
-```
+```cpp
 1      [TestClass]
 2      public class CSharpPictExample
 3      {
@@ -297,7 +293,7 @@ You can add PICT models and seeding files as resources in your test module.
 
 In native code, this is done by specifying the resource name instead of the file name in the DataSource metadata. Here is an example:
 
-```
+```cpp
 BEGIN_TEST_METHOD(ResourceNameDataSource)
     TEST_METHOD_PROPERTY(L"DataSource", L"Pict:MyModelResourceName?SeedingFile=MySeedingResourceName")
 END_TEST_METHOD()
@@ -305,7 +301,7 @@ END_TEST_METHOD()
 
 "MyModelResourceName" and "MySeedingResourceName" are the resource names defined in a .rc file. The resource type needs to be DATAFILE, unlike in [table data sources](table-data-source.md) where the resource type needs to be DATASOURCE\_XML.
 
-```
+```cpp
 MyModelResourceName DATAFILE "model.txt"
 MySeedingResourceName DATAFILE "seed.txt"
 ```

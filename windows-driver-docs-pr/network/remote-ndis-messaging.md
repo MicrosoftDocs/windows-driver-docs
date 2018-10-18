@@ -4,11 +4,7 @@ description: Remote NDIS Messaging
 ms.assetid: 6364a9a1-c65f-463d-971b-cf94cd2a5cde
 keywords:
 - Remote NDIS WDK networking , messaging
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

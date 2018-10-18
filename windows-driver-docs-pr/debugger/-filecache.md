@@ -5,9 +5,6 @@ ms.assetid: 38dbff14-5144-455c-a9b8-1ac6292f4200
 keywords: ["file cache", "filecache Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!filecache** extension displays information regarding the system file cache memory and PTE use.
 
-```
+```dbgcmd
 !filecache [Flags]
 ```
 
@@ -50,7 +47,7 @@ Each line of this extension's output represents a virtual address control block 
 
 Here is an example of the output from this extension from a Windows XP system:
 
-```
+```dbgcmd
 kd> !filecache
 ***** Dump file cache******
   Reading and sorting VACBs ...

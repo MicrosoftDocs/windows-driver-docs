@@ -8,11 +8,7 @@ keywords:
 - ACPI devices WDK , enumerating control methods
 - ACPI namespaces WDK
 - ACPI control methods WDK , enumerating
-ms.author: windowsdriverdev
-ms.date:
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ ms.localizationpriority: medium
 
 In an ACPI namespace, an object that is a device--for example, a device named 'ABCD'--can have child objects that are child devices of the device or that are control methods that are supported by the device. Any child object that is a child device of a parent device can, in turn, recursively have child objects that are child devices or control methods. For example, in the following simplified ACPI namespace, the root of the ACPI namespace is designated by '\\' and the object 'ABCD' is a device that is an immediate child of the root of the ACPI namespace. In addition, device 'ABCD' has two immediate child devices named 'CHL1' and 'CHL2' and a child object that is a control method named '\_FOO.' In addition, the child device 'CHL2' has a child device named 'CHL3' and device "CHL3" has a child object that is a control method named '\_FOO.'
 
-``` syntax
+```syntax
 \     root of ACPI namespace
  ABCD            parent device 
     CHL1         child device of ABCD

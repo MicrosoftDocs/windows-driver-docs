@@ -10,11 +10,7 @@ keywords:
 - events WDK USB Video Class , autoupdate with extension units
 - extension units WDK USB Video Class , samples
 - sample code WDK USB Video Class , autoupdate events
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ This topic contains sample code that demonstrates how to support autoupdate even
 
 Include the following code in the application source, arbitrarily named TestApp.cpp:
 
-```
+```cpp
 hEvent = CreateEvent(NULL, FALSE, FALSE, NULL);
 if (!hEvent)
 {

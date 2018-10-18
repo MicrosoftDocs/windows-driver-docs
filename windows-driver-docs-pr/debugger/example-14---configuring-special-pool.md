@@ -3,10 +3,7 @@ title: Example 14 Configuring Special Pool
 description: Example 14 Configuring Special Pool
 ms.assetid: a89f8a08-30e4-4d04-9689-c665b2175780
 ms.author: domars
-ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---
 
@@ -23,13 +20,13 @@ The following command requests special pool for all allocations with the **Tag1*
 
 This command uses the **/k** parameter to specify a kernel flag (run time) setting and the +spp abbreviation to set a special pool request.
 
-```
+```console
 gflags /k +spp Tag1
 ```
 
 Gflags responds by printing:
 
-```
+```console
 Special Pool set to 0x31676154
 PoolTagOverruns set to 0x1
 Current Running Kernel Settings are: 00000000
@@ -47,13 +44,13 @@ The following command requests special pool for all allocations with the **Tag1*
 
 This command uses the **/r** parameter to specify a registry setting and the +spp abbreviation to set a special pool request.
 
-```
+```console
 gflags /r +spp Tag1
 ```
 
 Gflags responds by printing:
 
-```
+```console
 Special Pool set to 0x31676154
 PoolTagOverruns set to 0x1
 Current Boot Registry Settings are: 00000000
@@ -67,7 +64,7 @@ To verify that the value has been added to the registry, use Reg or Regedit to d
 
 For example:
 
-```
+```console
 c:>reg query "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" -v PoolTag
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management
     PoolTag    REG_DWORD    0x31676154
@@ -81,13 +78,13 @@ This command uses the **/k** parameter to specify a kernel flag (run time) setti
 
 The value, 0x10, is calculated by adding the allocation granularity (8 bytes) to the largest size in the range (8 bytes) for a total of 16 bytes (0x10). For help in determining the correct value to enter, see "Selecting an Allocation Size" in [Special Pool](special-pool.md).
 
-```
+```console
 gflags /k +spp 0x10
 ```
 
 Gflags responds by printing:
 
-```
+```console
 Special Pool set to 0x10
 PoolTagOverruns set to 0x1
 Current Running Kernel Settings are: 00000000
@@ -105,13 +102,13 @@ This command uses the **/r** parameter to specify a system-wide registry setting
 
 The value, 0x420, is calculated by adding the allocation granularity (16 bytes) to the largest size in the range (1040 bytes) for a total of 1056 bytes (0x420). For help in determining the correct value to enter, see "Selecting an Allocation Size" in [Special Pool](special-pool.md).
 
-```
+```console
 gflags /r +spp 0x420
 ```
 
 Gflags responds by printing:
 
-```
+```console
 Special Pool set to 0x420
 PoolTagOverruns set to 0x1
 Current Boot Registry Settings are: 00000000
@@ -125,7 +122,7 @@ To verify that the value has been added to the registry, use Reg or Regedit to d
 
 For example:
 
-```
+```console
 c:>reg query "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" -v PoolTag
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management
     PoolTag    REG_DWORD    0x420
@@ -135,19 +132,19 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Manag
 
 The following command cancels a request for Special Pool as a kernel flag (run time) setting. The command is the same for a request by pool tag or by size.
 
-```
+```console
 gflags /k -spp
 ```
 
 The following command cancels a request for Special Pool as a registry setting. The command is the same for a request by pool tag or by size.
 
-```
+```console
 gflags /r -spp
 ```
 
 When the command is successful, Gflags responds by printing:
 
-```
+```console
 Special Pool value has been deleted.
 ```
 

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Additional Transactional Interfaces
 ms.assetid: cbd88c96-6445-436b-8e02-09dd9cf40d77
 keywords: ["transactions WDK KTM , non-KTM interfaces", "transactional interfaces WDK"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ description: Use this method in the Microsoft Store analytics API to get aggrega
 title: Get OEM hardware error reporting data
 ms.author: mcleans
 ms.date: 06/04/2018
-ms.topic: article
-ms.prod: windows
-ms.technology: uwp
 keywords: windows 10, uwp, Store services, Microsoft Store analytics API, errors
 ms.localizationpriority: medium
 ---
@@ -44,7 +41,7 @@ To use this method, you need to first do the following:
 
 | Method | Request URI                                                          |
 |--------|----------------------------------------------------------------------|
-| GET    | ```https://manage.devcenter.microsoft.com/v1.0/my/analytics/hardware/failurehits``` |
+| GET    | `https://manage.devcenter.microsoft.com/v1.0/my/analytics/hardware/failurehits` |
 
 <span/> 
 

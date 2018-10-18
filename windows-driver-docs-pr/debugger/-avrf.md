@@ -5,9 +5,6 @@ ms.assetid: e9313954-a1fa-45a9-bc1a-78be2451f5aa
 keywords: ["avrf Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

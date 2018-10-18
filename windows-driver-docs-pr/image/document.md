@@ -9,11 +9,7 @@ api_name:
 - wscn Document
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **Document** element contains the details about one of the document
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Document>
   child elements
 </wscn:Document>
@@ -74,7 +70,7 @@ There are no attributes.
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DocumentDescription**](documentdescription.md)

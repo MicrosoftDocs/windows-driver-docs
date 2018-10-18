@@ -5,9 +5,6 @@ ms.assetid: fd40e642-beba-4da0-a072-6493588980de
 keywords: [".quit_lock (Prevent Accidental Quit) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

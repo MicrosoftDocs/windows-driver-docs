@@ -2,11 +2,7 @@
 title: PowerUpFail rule (wdm)
 description: The PowerUpFail rule specifies a FDO or FIDO driver should not fail a IRP\_MN\_SET\_POWER request when the device is powering up.
 ms.assetid: 48998C82-91F6-42F9-AF7A-4E5ECAB823E1
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["PowerUpFail rule (wdm)"]
 topic_type:
 - apiref

@@ -5,9 +5,6 @@ ms.assetid: 82951e2b-cbb2-45d2-a6b8-4fddece035ce
 keywords: ["kernel streaming debugging, video stream stall, bug check 0xcb"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

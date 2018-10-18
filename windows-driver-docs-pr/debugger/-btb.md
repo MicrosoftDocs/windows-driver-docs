@@ -5,9 +5,6 @@ ms.assetid: ca09198a-3c3e-4a1b-90be-158d4ecac7c4
 keywords: ["branch tree buffer", "btb Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!btb** extension displays the Itanium-based processor, branch traces buffer (BTB) configuration and trace registers for the current processor.
 
-```
+```dbgsytax
 !btb
 ```
 

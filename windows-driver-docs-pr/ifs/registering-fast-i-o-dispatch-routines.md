@@ -7,11 +7,7 @@ keywords:
 - registering fast I/O dispatch routines
 - dispatch routines WDK file system
 - fast I/O dispatch routines WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ To register the file system filter driver's fast I/O dispatch routines, you must
 
 For example, a hypothetical "MyLegacyFilter" driver can set the entry points for its fast I/O dispatch routines as follows:
 
-```
+```cpp
 RtlZeroMemory(fastIoDispatch, sizeof(FAST_IO_DISPATCH));
 fastIoDispatch->SizeOfFastIoDispatch = sizeof(FAST_IO_DISPATCH);
 fastIoDispatch->FastIoCheckIfPossible = MyLegacyFilterIoCheckIfPossible;

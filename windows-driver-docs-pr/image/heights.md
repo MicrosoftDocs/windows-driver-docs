@@ -9,11 +9,7 @@ api_name:
 - wscn Heights
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **Heights** element contains the list of heights at which the scann
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Heights>
   child elements
 </wscn:Heights>
@@ -87,7 +83,7 @@ Each [**Height**](height.md) child element specifies a valid number of vertical 
 
 The [**Widths**](widths.md) element contains the list of widths that the scanner supports.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ADFResolutions**](adfresolutions.md)

@@ -16,18 +16,18 @@ api_name:
 - IOleCvt.ToUnicode
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # IOleCvt::ToUnicode method
-
 
 The **ToUnicode** property enables an ASP Web page to convert one Unicode string to another using a specified code page.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 [propget, id(4), helpstring("property ToUnicode")] HRESULT ToUnicode(
   [in]          BSTR bstrString,
   [in]          Long lCodePage,
@@ -73,12 +73,7 @@ Return value
 </tbody>
 </table>
 
- 
-
-## <span id="ddk_iolecvt_tounicode_gg"></span><span id="DDK_IOLECVT_TOUNICODE_GG"></span>
-
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
+## VBScript Example
 
 Remarks
 -------
@@ -89,7 +84,7 @@ Although most applications now use Unicode (UTF-16) encoding for character data,
 
 Convert to Unicode using the Japanese code page, if applicable.
 
-```
+```vb
 If strLang = "JP" Then
     tmpStr = OleCvt.ToUnicode (str, 932)
 Else
@@ -110,17 +105,5 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-

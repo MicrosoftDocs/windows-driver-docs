@@ -8,11 +8,7 @@ keywords:
 - configuration space WDK buses
 - IRP_MN_READ_CONFIG
 - IRP_MN_WRITE_CONFIG
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,7 +33,7 @@ In addition, the system should support memory-mapped configuration space accesse
 
 The following code example shows how to query for the power management capability data of a device:
 
-```
+```cpp
 #define LSZ sizeof(ULONG)
 #define HEADERSIZE (FIELD_OFFSET (PCI_COMMON_CONFIG, DeviceSpecific)) / LSZ
 

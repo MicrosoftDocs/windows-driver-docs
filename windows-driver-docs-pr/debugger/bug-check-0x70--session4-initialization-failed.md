@@ -5,9 +5,6 @@ ms.assetid: 05de773c-19eb-44dd-b6ef-3efa43d703ef
 keywords: ["Bug Check 0x70 SESSION4_INITIALIZATION_FAILED", "SESSION4_INITIALIZATION_FAILED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

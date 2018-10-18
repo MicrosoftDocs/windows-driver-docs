@@ -5,9 +5,6 @@ ms.assetid: 128D45A2-A891-42BC-9E3E-FCDC5B4504A2
 keywords: ["usbkd.usbhubmdpd Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

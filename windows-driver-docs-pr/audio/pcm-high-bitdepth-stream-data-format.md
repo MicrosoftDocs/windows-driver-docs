@@ -5,11 +5,7 @@ ms.assetid: 0ad63f01-4fcf-4eca-b8d6-b0b65f384455
 keywords:
 - PCM high-bitdepth stream data formats WDK
 - high-bitdepth stream data formats WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ ms.localizationpriority: medium
 
 This example uses an extended version of a [**KSDATAFORMAT\_WAVEFORMATEX**](https://msdn.microsoft.com/library/windows/hardware/ff537095) structure to describe the data format of a PCM high-bitdepth stream. This is similar to the PCM multichannel example, with the exception of the values for `Format.wBitsPerSample` and `Format.wValidBitsPerSample` that appear below.
 
-```
+```cpp
   DataFormat.FormatSize  = sizeof(KSDATAFORMAT) + sizeof(WAVEFORMATEXTENSIBLE);
  DataFormat.Flags       = 0;
   DataFormat.SampleSize  = 0;

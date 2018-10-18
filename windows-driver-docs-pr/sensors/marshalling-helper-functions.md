@@ -3,11 +3,7 @@ title: Marshalling helper functions
 author: windows-driver-content
 description: This topic provides information about the marshaling helper functions in the sensorsutils.h header file.
 ms.assetid: AE5C70E4-1971-4BAF-AE7D-315A15F030DD
-ms.author: windowsdriverdev
 ms.date: 01/04/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

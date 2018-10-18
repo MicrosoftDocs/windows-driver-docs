@@ -4,11 +4,7 @@ author: windows-driver-content
 description: MOF Syntax for WMI Data and Event Blocks
 ms.assetid: 247037b7-d62e-4f74-8fa4-57e74f6c412f
 keywords: ["WMI WDK kernel , event blocks", "event blocks WDK WMI", "data blocks WDK WMI", "WMI WDK kernel , data blocks", "blocks WDK WMI", "MOF files WDK WMI"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

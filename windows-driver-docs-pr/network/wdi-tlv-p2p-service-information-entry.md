@@ -3,11 +3,7 @@ title: WDI_TLV_P2P_SERVICE_INFORMATION_ENTRY
 author: windows-driver-content
 description: WDI_TLV_P2P_SERVICE_INFORMATION_ENTRY is an unused TLV.
 ms.assetid: E9848752-DC4B-44A2-96FA-C81E9E5795AA
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - WDI_TLV_P2P_SERVICE_INFORMATION_ENTRY Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

@@ -9,11 +9,7 @@ api_name:
 - wscn StatusSummary
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **StatusSummary** element contains a summary of the scan device's c
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:StatusSummary>
   child elements
 </wscn:StatusSummary>
@@ -82,7 +78,7 @@ Remarks
 
 The WSD Scan Service must include the **StatusSummary** element when it sends a [**ScannerStatusSummaryEvent**](scannerstatussummaryevent.md) event element to the client. The scanner's current state and reasons for why it is in this state are specified in the [**ScannerState**](scannerstate.md) and [**ScannerStateReasons**](scannerstatereasons.md) elements, respectively.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ScannerStateReasons**](scannerstatereasons.md)

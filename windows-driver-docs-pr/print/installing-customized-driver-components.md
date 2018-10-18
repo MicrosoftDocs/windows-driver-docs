@@ -8,11 +8,7 @@ keywords:
 - customizing printer drivers WDK , installing components
 - installing custom printer driver components WDK
 - INF files WDK print , customized driver components
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,7 +32,7 @@ where *n* specifies the order in which the installer installs the files. Numbers
 
 For example, if you are providing two rendering plug-ins and one user interface plug-in, and your printer model is XYZ, your .ini file might appear as follows:
 
-```
+```cpp
 [OEMFiles]
 OEMDriverFile1=XYZDRV1.DLL
 OEMConfigFile1=XYZUI1.DLL

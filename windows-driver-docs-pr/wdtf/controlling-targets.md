@@ -17,11 +17,7 @@ keywords:
 - synchronous tests WDK WDTF
 - asynchronous tests WDK WDTF
 - test scripts WDK WDTF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +28,7 @@ WDTF includes a set of interfaces that perform specific actions on targets. WDTF
 
 Your scenario can attempt to locate an implementation for one of these interfaces by calling the [**IWDTFTarget2::GetInterface**](https://msdn.microsoft.com/library/windows/hardware/hh439398) method. Note that not all target objects support every action interface. The following VBScript code example retrieves an interface that can disable and enable (and more) the device that the target represents.
 
-```
+```cpp
 Set Action = Device.GetInterface("PNP")
 ```
 

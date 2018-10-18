@@ -4,9 +4,6 @@ description: Describes the structure of the driver package metadata for Hardware
 author: balapv
 ms.author: balapv
 ms.date: 08/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Driver package metadata

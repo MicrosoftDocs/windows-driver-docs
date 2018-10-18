@@ -3,6 +3,7 @@ Description: Selective suspend is disabled for upgrade versions of Microsoft Win
 title: Enabling Selective Suspend
 author: windows-driver-content
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Enabling Selective Suspend
@@ -16,7 +17,7 @@ Alternatively, you can enable or disable selective suspend by setting the value 
 
 For instance, the following lines in Usbport.inf disable selective suspend for a Hydra OHCI controller:
 
-```
+```cpp
 [OHCI_NOSS.AddReg.NT]
 HKR,,"HcDisableSelectiveSuspend",0x00010001,1
 ```

@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 9/11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,7 +45,7 @@ ms.localizationpriority: medium
 
 The following flags can be placed in the **KSCAMERA\_EXTENDEDPROP\_HEADER.Flags** field to control optical image stabilization. The default should be AUTO if AUTO is supported, or ON otherwise.
 
-``` syntax
+```cpp
 #define KSCAMERA_EXTENDEDPROP_OIS_OFF   0x0000000000000000
 #define KSCAMERA_EXTENDEDPROP_OIS_ON    0x0000000000000001
 #define KSCAMERA_EXTENDEDPROP_OIS_AUTO  0x0000000000000002 

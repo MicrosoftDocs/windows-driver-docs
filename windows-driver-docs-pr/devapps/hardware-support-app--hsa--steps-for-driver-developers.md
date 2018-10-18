@@ -8,11 +8,7 @@ keywords:
 - custom capabilities
 - UWP
 - Hardware
-ms.author: windowsdriverdev
 ms.date: 08/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -60,7 +56,7 @@ To allow access to a driver to a UWP app with the custom capability, add a few l
 
 In the INF file, specify your custom capability as follows:
 
-```
+```cpp
 [WDMPNPB003_Device.NT.Interfaces] 
 AddInterface= {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz},,AddInterfaceSection 
  

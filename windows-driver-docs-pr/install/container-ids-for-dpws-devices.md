@@ -2,11 +2,7 @@
 title: Container IDs for DPWS Devices
 description: Container IDs for DPWS Devices
 ms.assetid: b613a25e-bedf-481c-8c86-9486af01b2ba
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ Starting with Windows 7, a device that supports PnP extensions (PnP-X) and Devic
 
 The **ContainerId** XML element is declared as follows:
 
-```
+```cpp
 <df:ContainerId xmlns:df="">
   xs:string
 </df:ContainerId>
@@ -31,7 +27,7 @@ The **ContainerId** XML element type is a string, for which the value is a globa
 
 The following is an example of a **ContainerId** XML element.
 
-```
+```cpp
 <df:ContainerId xmlns:df="">
   {101392d0-5e91-11dd-ad8b-0800200c9a66}
 </df:ContainerId>
@@ -43,7 +39,7 @@ The &lt;ContainerId&gt; XML element is required to be in the &lt;ThisDevice&gt; 
 
  
 
-```
+```cpp
 <soap:Envelope
     xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
     xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"

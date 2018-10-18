@@ -5,9 +5,6 @@ ms.assetid: 2FFC6E17-F257-4EE3-B5F0-F81684E9B290
 keywords: ["bthkd.bthdevinfo Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!bthkd.bthdevinfo** command displays the information about a given BTHENUM created device PDO.
 
-```
+```dbgsyntax
 !bthkd.bthdevinfo addr
 ```
 

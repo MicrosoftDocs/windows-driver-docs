@@ -2,11 +2,7 @@
 title: Selection
 description: Selection
 ms.assetid: 5DFE5B52-4D58-491c-9363-95E4A2FD680C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ This section describes the TE.exe **/select:***selection criteria* option. For m
 
 The selection criteria gets applied globally to all the test binaries that have been mentioned at the command prompt. Let's consider two test\_binaries: **Examples\\CPP.SelectionCriteria1.Example.dll** and **Examples\\CPP.SelectionCriteria2.Example.dll** . The following example shows the properties, or metadata, specifed at the various levels in these test\_binaries. You can also obtain this by specifying the **/listproperties** option in the Command Prompt window.
 
-```
+```cpp
 CPP.SelectionCriteria1.Example.dll (Owner="C1", Priority=3)
 class11 (Owner="C2")
 method111(Priority=1)

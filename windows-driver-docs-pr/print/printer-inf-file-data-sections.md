@@ -8,11 +8,7 @@ keywords:
 - data sections WDK printer
 - Previous Names data section WDK printer
 - sections WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -60,7 +56,7 @@ The format for each entry in this section is:
 
 The following are sample entries:
 
-```
+```cpp
 [Previous Names]
 "HP Color LaserJet" = "HP Color LaserJet (MS)"
 "HP DeskJet 1200C" = "HP DeskJet 1200C (MS)"

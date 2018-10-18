@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Guidelines for Writing Dispatch(Internal)DeviceControl Routines
 ms.assetid: e64ab28e-2904-41c2-a262-405bc129b9bb
 keywords: ["dispatch routines WDK kernel , DispatchDeviceControl routine", "dispatch routines WDK kernel , DispatchInternalDeviceControl routine", "DispatchDeviceControl routine", "DispatchInternalDeviceControl routine", "IRP_MJ_DEVICE_CONTROL I/O function code", "IRP_MJ_INTERNAL_DEVICE_CONTROL I/O function code", "internal device control dispatch routines WDK kernel", "device control dispatch routines WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,14 +24,14 @@ The underlying device driver must process device control requests unless it has 
 
 A lower-level device driver should check the parameters passed in with the request and fail the IRP with an appropriate error if any parameter is invalid. The most common check on the validity of parameters to these requests has the form:
 
-```
+```cpp
     if (Irp->Parameters.DeviceIoControl.InputBufferLength < 
             (sizeof(IOCTL_SPECIFIC_STRUCTURE))) { 
         status = STATUS_XXX;
 ```
 
 or
-```
+```cpp
     if (Irp->Parameters.DeviceIoControl.OutputBufferLength < 
             (sizeof(IOCTL_SPECIFIC_STRUCTURE))) { 
         status = STATUS_XXX; 

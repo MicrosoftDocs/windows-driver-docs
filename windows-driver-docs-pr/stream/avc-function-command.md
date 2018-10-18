@@ -9,11 +9,7 @@ api_name:
 - AVC_FUNCTION_COMMAND
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -68,7 +64,7 @@ Possible other return values include:
 
 This function uses the AVC\_COMMAND\_IRB structure as shown below.
 
-```
+```cpp
 typedef struct _AVC_COMMAND_IRB {
   AVC_IRB  Common;
   UCHAR  SubunitAddrFlag : 1;

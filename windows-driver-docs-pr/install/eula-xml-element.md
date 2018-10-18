@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # eula XML Element
@@ -21,7 +22,7 @@ The **eula** XML element is an empty XML element that includes two attributes th
 
 ### Element Tag
 
-```
+```cpp
 <eula>
 ```
 
@@ -79,7 +80,7 @@ The **eula** XML element is an empty XML element that includes two attributes th
 
 The following code example demonstrates a **eula** element that specifies that *Data\\Eula409.txt* contains custom EULA text. The *Eula409.txt* file is in the *Data* directory, which must be a subdirectory under the DPInst root directory. The text that specifies the custom EULA file is shown below using the &lt;eula&gt; tag.
 
-```
+```cpp
 <dpinst>
   ...
   <language code="0x0409">

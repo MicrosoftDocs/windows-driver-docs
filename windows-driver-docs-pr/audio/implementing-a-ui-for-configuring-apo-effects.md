@@ -2,11 +2,7 @@
 title: Implementing a UI for Configuring APO Effects
 description: This topic describes how to implement a user interface (UI) that allows a user to configure the effects. 
 ms.assetid: C8D1CB20-2E77-430A-9933-4BDFFB997158
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -66,7 +62,7 @@ To design and implement the custom property page provider, perform the following
 
     The following INF file fragment shows how to modify the INF file to register your custom property page.
 
-    ```
+    ```inf
     [SysFx.AddReg]
     ...
     HKR,"FX\\0",%PKEY_SYSFX_UiClsid%,,%SYSFX_UI_CLSID%
@@ -78,7 +74,7 @@ To design and implement the custom property page provider, perform the following
 
     And as a result of the preceding INF file instructions, the installation process modifies the appropriate registry key as follows.
 
-    ```
+    ```text
     HKLM
      SOFTWARE
       Microsoft
@@ -100,7 +96,7 @@ To design and implement the custom property page provider, perform the following
 
     The sample INF file sections, taken from the SYSVAD tabletaudiosample.inf file, shows how to do this. The \[SWAPAPO.AddReg\] section is in the global AddReg section. The \[SWAPAPO.I.Association0.AddReg\] is part of the AddReg section for the specific KSCATEGORY\_AUDIO interfaces.
 
-    ```
+    ```inf
     [SWAPAPO.AddReg]
     …
 
@@ -129,7 +125,7 @@ If you are using the Windows-provided effects directly or wrapping them, complet
 
 2.  Follow step 4 above, to register the CLSID with COM. In addition, you will need to invoke the supplied wdmaudio.inf via *Include* and *Needs* statements in your INF file as shown below.
 
-    ```
+    ```cpp
     [YourGlobalSection]
     Include=wdmaudio.inf
     Needs=mssysfx.CopyFilesAndRegister

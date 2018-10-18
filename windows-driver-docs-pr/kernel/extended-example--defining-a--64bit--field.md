@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Shows how to modify a 32-bit driver for 64-bit by adding a "64Bit" field to the IOCTL control code.
 ms.assetid: 642b67eb-880c-4057-b5de-c89ef8e8601e
 keywords: ["32-bit I/O support WDK 64-bit , 64Bit field defined", "64Bit field defined WDK kernel", "bitfields WDK 64-bit", "separate control codes WDK 64-bit", "control codes WDK 64-bit", "file system control codes WDK 64-bit", "FSCTL WDK 64-bit", "I/O control codes WDK kernel , 32-bit I/O in 64-bit drivers", "IOCTLs WDK kernel , 32-bit I/O in 64-bit drivers"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ The following is the 32-bit version of the driver:
 
 ### Header File
 
-```
+```cpp
 #define REGISTER_FUNCTION 0     // Define the IOCTL function code
 
 #define IOCTL_REGISTER   CTL_CODE(FILE_DEVICE_UNKNOWN, \
@@ -41,7 +37,7 @@ typedef struct _IOCTL_PARAMETERS {
 
 ### DeviceControl Dispatch Routine
 
-```
+```cpp
 NTSTATUS
 TestdrvDeviceControl(
     IN PDEVICE_OBJECT DeviceObject,
@@ -101,7 +97,7 @@ The following is the 64-bit version of the driver:
 
 ### Header File
 
-```
+```cpp
 #define REGISTER_FUNCTION 0     // Define the IOCTL function code
 
 #ifdef  _WIN64
@@ -123,7 +119,7 @@ typedef struct _IOCTL_PARAMETERS {
 
 ### DeviceControl Dispatch Routine
 
-```
+```cpp
 #ifdef _WIN64
 #define IOCTL_REGISTER_32   CTL_CODE(FILE_DEVICE_UNKNOWN, \
   REGISTER_FUNCTION, METHOD_BUFFERED, FILE_ANY_ACCESS)

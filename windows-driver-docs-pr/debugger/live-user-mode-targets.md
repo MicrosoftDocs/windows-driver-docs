@@ -5,9 +5,6 @@ ms.assetid: 2709dd01-6486-471d-afa1-a8441665da8d
 keywords: ["Debugger Engine API, targets, user-mode", "Debugger Engine API, disconnecting from a process", "Debugger Engine API, process options"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

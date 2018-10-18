@@ -2,11 +2,7 @@
 title: Test Signing
 description: Windows 64-bit editions require all software running in kernel mode, including drivers, to be digitally signed in order to be loaded.
 ms.assetid: 52F309E4-9553-456B-BBD6-217318FC7222
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,7 +30,7 @@ The following boot option screen will appear during reboot providing the option 
 
 Attaching an active kernel debugger to a development or test computer disables load-time signature enforcement for kernel-mode drivers. To use this debugging configuration, attach a debugging computer to a development or test computer, and enable kernel debugging on the development or test computer by running the following command:
 
-```
+```cpp
 bcdedit -debug on
 ```
 
@@ -92,7 +88,7 @@ The following procedure describes the steps to test sign a driver package:
 
     Use the following MakeCert command to create the *Contoso.com(Test)* certificate:
 
-    ```
+    ```cpp
     makecert -r -pe -ss PrivateCertStore -n CN=Contoso.com(Test) ContosoTest.cer
     ```
 
@@ -130,13 +126,13 @@ The following procedure describes the steps to test sign a driver package:
 
 5.  Create a catalog file (.cat extension). Use the inf2cat tool as shown below to create the catalog file. Please note that no space is allowed for the switches, /driver:&lt;no space&gt;&lt;full path&gt;, /os: :&lt;no space&gt;&lt;os1 name&gt;,:&lt;no space&gt;&lt;os2 name&gt;.
 
-    ```
+    ```cpp
     inf2cat  /v  /driver:C:\DriverTestPackage  /os:7_64,7_x86 ,XP_X86
     ```
 
     This creates a catalog file with the name given in the driver’s .inf file. Additional comma separated OSes can be added selectively or all as shown below with no spaces.
 
-    ```
+    ```cpp
     /os:2000,XP_X86,XP_X64,Server2003_X64,Vista_X64,Vista_X86,7_x86,7_64,Server2008_x86,Server2008_x64,Sever2008_IA64,Server2008R2_x86,Server2008R2_x64,Server2008R2_IA64,8_x86,8_x64, 8_ARM, Server8_x64
     ```
 
@@ -144,7 +140,7 @@ The following procedure describes the steps to test sign a driver package:
 
     Example of INF file for the Version section.
 
-    ```
+    ```cpp
     [Version]
     Signature="$WINDOWS NT$"
     Class=TOASTER
@@ -160,19 +156,19 @@ The following procedure describes the steps to test sign a driver package:
 
     Inf2Cat creates the catalog file tstamd64.cat if the command-line argument /os:7_X64 is used. Similarly, the tool creates the catalog file toastx86.cat if the /os:XP_X86, option is used, similarly for Server2008R2_IA64. In case, only one catalog file is desired, then only one entry in the INF file as shown below will suffice.
 
-    ```
+    ```cpp
     CatalogFile.NT  = toaster.cat
     ```
 
     Or,
 
-    ```
+    ```cpp
     CatalogFile = toaster.cat
     ```
 
     If the date in the INF file is not greater than the OS release date, then the following error will be reported by the inf2cat tool if the /os parameter was for Windows 7 and date set in the INF file was an earlier date.
 
-    ```
+    ```cpp
     Signability test failed.
     Errors:
     22.9.7: DriverVer set to incorrect date (must be postdated to 4/21/2009 for newest OS) in \toaster.inf
@@ -182,7 +178,7 @@ The following procedure describes the steps to test sign a driver package:
 
     The cat file can be opened from explorer by double click or right clicking on the file and selecting Open. The Security tab will show some entries with GUID values. Selecting a GUID value will display details including the driver files of the driver package and the OSes added as shown below:
 
-    ```
+    ```cpp
     OSAttr  2:5.1,6.1
     ```
 
@@ -202,7 +198,7 @@ The following procedure describes the steps to test sign a driver package:
 
     To test-sign the *tstamd64.cat* catalog file, run the following command line:
 
-    ```
+    ```cpp
     Signtool sign /v /s PrivateCertStore /n Contoso.com(Test) /t http://timestamp.verisign.com/scripts/timstamp.dll tstamd64.cat
     ```
 
@@ -231,7 +227,7 @@ The following procedure describes the steps to test sign a driver package:
 
     Below is the command to embed sign a kernel mode driver binary file.
 
-    ```
+    ```cpp
     signtool sign  /v  /s  PrivateCertStore  /n  Contoso.com(Test)  /t http://timestamp.verisign.com/scripts/timestamp.dll   amd64\toaster.sys
     ```
 
@@ -255,7 +251,7 @@ The following procedure describes the steps to use on either machine to test the
 
 1.  In an elevated command window run the following command:
 
-    ```
+    ```cpp
     bcdedit  /set  testsigning  on
     ```
 
@@ -267,13 +263,13 @@ The following procedure describes the steps to use on either machine to test the
 
     The following CertMgr command adds the certificate in the certificate file *CertificateFileName.cer* to the Trusted Root Certification Authorities certificate store on the test computer:
 
-    ```
+    ```cpp
     CertMgr.exe /add CertificateFileName.cer /s /r localMachine root
     ```
 
     The following CertMgr command adds the certificate in the certificate file *CertificateFileName.cer* to the Trusted Publishers certificate store on the test computer:
 
-    ```
+    ```cpp
     CertMgr.exe /add CertificateFileName.cer /s /r localMachine trustedpublisher
     ```
 
@@ -301,7 +297,7 @@ The following procedure describes the steps to use on either machine to test the
 
     From [Verifying the SPC Signature of a Catalog File](verifying-the-spc-signature-of-a-catalog-file.md):
 
-    ```
+    ```cpp
     signtool  verify  /v  /kp  /c  tstamd64.cat  toaster.inf
     ```
 
@@ -309,13 +305,13 @@ The following procedure describes the steps to use on either machine to test the
 
     From [Verifying the Signature of a Release-Signed Driver File](verifying-the-signature-of-a-release-signed-driver-file.md):
 
-    ```
+    ```cpp
     signtool  verify  /v  /kp  toaster.sys
     ```
 
     The two commands above will generate one error as it is test signed and the certificate was not a trusted certificate.
 
-    ```
+    ```cpp
     SignTool Error: A certificate chain processed, but terminated in a root certificate which is not trusted by the trust provider.
     ```
 
@@ -323,7 +319,7 @@ The following procedure describes the steps to use on either machine to test the
 
     The driver is now ready to be installed and tested in the test computer. It is always advisable that the following registry key is set correctly to gather verbose logs in setupapi.dev.log file (for Windows Vista and later operating systems) during the installation process.
 
-    ```
+    ```cpp
     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\Loglevel=0x4800FFFF
     ```
 
@@ -348,7 +344,7 @@ Dpinst and Pnputil pre installs the driver package, whereas with Devcon and Wind
 1.  Open an elevated command window and set the default directory to c:\\toaster.
 2.  Dpinst.exe is provided in the WDK redist directory the x86 version, the amd64 version and the ia64 version. Copy the relevant version to the c:\\toaster directory and run the following command.
 
-    ```
+    ```cpp
     dpinst.exe  /PATH  c:\toaster
     ```
 
@@ -356,7 +352,7 @@ Dpinst and Pnputil pre installs the driver package, whereas with Devcon and Wind
 
     The /U switch on the driver inf file will remove the driver package from the DriverStore’s FileRepository (%SystemRoot%\\System32\\ DriverStore\\FileRepository) directory provided the device associated with the driver has been removed. With Dpinst tool a driver can be removed just by referring to the inf file of the driver.
 
-    ```
+    ```cpp
     dpinst.exe  /U  toaster.inf
     ```
 
@@ -365,19 +361,19 @@ Dpinst and Pnputil pre installs the driver package, whereas with Devcon and Wind
 1.  Open an elevated command window and set the default directory to c:\\toaster.
 2.  Devcon.exe is provided in the WDK tool directory the x86 version, the amd64 version and the ia64 version. Copy the relevant version to the c:\\toaster directory and run the following command. This command will install the driver as well as the device.
 
-    ```
+    ```cpp
     devcon.exe  install <inf> <hwid>
     ```
 
     It is advisable to use quotes around &lt;hwid&gt;. For the toaster sample, it will be:
 
-    ```
+    ```cpp
     devcon.exe  install  c:\toaster\toaster.inf  “{b85b7c50-6a01-11d2-b841-00c04fad5171}\MsToaster”
     ```
 
     A device can be removed using the Devcon tool using the “remove” switch. “devcon.exe /?” shows all the switches for this tool. To get specific information, on using a switch “help” should be added as shown below for the “remove” switch.
 
-    ```
+    ```cpp
     devcon.exe help remove
     ```
 
@@ -385,7 +381,7 @@ Dpinst and Pnputil pre installs the driver package, whereas with Devcon and Wind
 
     Removes devices with the specified hardware or instance ID. Valid only on the local computer. (To reboot when necessary, Include -r .)
 
-    ```
+    ```cpp
     devcon [-r] remove <id> [<id>...]
     devcon [-r] remove =<class> [<id>...]
     <class>      Specifies a device setup class.
@@ -399,13 +395,13 @@ Dpinst and Pnputil pre installs the driver package, whereas with Devcon and Wind
 
     After a device has been removed, to remove the driver, two commands are necessary. Use the first command with “dp_enum” switch to find the driver inf file name corresponding to the driver package installed in the computer.
 
-    ```
+    ```cpp
     devcon  dp_enum
     ```
 
     This command will show the list of all oemNnn.inf files corresponding to a driver package, where Nnn is a decimal number with the Class information and the Provide information as shown below.
 
-    ```
+    ```cpp
     oem39.inf
         Provider: Intel
         Class: Network adapters
@@ -416,7 +412,7 @@ Dpinst and Pnputil pre installs the driver package, whereas with Devcon and Wind
 
     To remove the corresponding driver package from the DriverStore, use the next command shown below for the Intel “Network Adapters” driver:
 
-    ```
+    ```cpp
     devcon.exe dp_delete oem39.inf
     ```
 
@@ -424,7 +420,7 @@ Dpinst and Pnputil pre installs the driver package, whereas with Devcon and Wind
 
 1.  Open an elevated command window and set the default directory to c:\\toaster.
 2.  Run the following command which will show all the available switches. Use of the switches is self-explanatory, no need to show any examples.
-    ```
+    ```cpp
     C:\Windows\System32\pnputil.exe /?
 
     Microsoft PnP Utility

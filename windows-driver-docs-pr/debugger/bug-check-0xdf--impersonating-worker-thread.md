@@ -5,9 +5,6 @@ ms.assetid: d8a68b5b-3aa8-4d02-8063-420834a47f1b
 keywords: ["Bug Check 0xDF IMPERSONATING_WORKER_THREAD", "IMPERSONATING_WORKER_THREAD"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

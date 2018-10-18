@@ -5,9 +5,6 @@ ms.assetid: cb599656-2e0a-41ec-8358-a42047974dea
 keywords: ["ioreslist Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ioreslist** extension displays an IO\_RESOURCE\_REQUIREMENTS\_LIST structure.
 
-```
+```dbgcmd
 !ioreslist Address 
 ```
 
@@ -62,7 +59,7 @@ Remarks
 
 Here is an example of the output from this extension:
 
-```
+```dbgcmd
 kd> !ioreslist 0xe122b768
 
 IoResList at 0xe122b768 : Interface 0x5  Bus 0  Slot 0xe

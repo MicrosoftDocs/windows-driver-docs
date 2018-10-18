@@ -5,9 +5,6 @@ ms.assetid: 3551CAC5-EFC4-4CD8-B4C9-07CB5818B507
 keywords: ["usbkd.usbhelp Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

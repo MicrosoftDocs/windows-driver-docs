@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Power IRPs for the System
 ms.assetid: a37e8dda-af7a-4f28-bf04-908a74bb5b2f
 keywords: ["power IRPs WDK kernel , system", "system power IRPs WDK kernel", "IRP_MJ_POWER", "IRP_MN_SET_POWER", "IRP_MN_QUERY_POWER", "inrush power WDK kernel", "system inrush power WDK kernel", "change power states WDK kernel", "reaffirming power states", "idle time-outs WDK power management", "expired batteries WDK power management", "battery expirations WDK power management", "user-requested power changes WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
