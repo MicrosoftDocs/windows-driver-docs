@@ -91,6 +91,7 @@ SetLuxChangeSensitivity(PROPVARIANT var)
 ```
 
 ## Related topics
+
 [Sensor Driver Development Basics](sensor-driver-development-basics.md)
 
 

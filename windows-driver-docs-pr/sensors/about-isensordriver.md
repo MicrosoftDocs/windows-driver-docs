@@ -3,7 +3,7 @@ title: About ISensorDriver
 author: windows-driver-content
 description: About ISensorDriver
 ms.assetid: 2c51c235-e402-4f89-bff5-39af87d95e19
-ms.date: 04/20/2017
+ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
 

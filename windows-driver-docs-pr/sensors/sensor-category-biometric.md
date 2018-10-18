@@ -12,7 +12,7 @@ api_location:
 - Sensors.h
 api_type:
 - HeaderDef
-ms.date: 01/04/2018
+ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
 

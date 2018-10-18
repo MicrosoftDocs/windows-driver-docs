@@ -4,7 +4,7 @@ author: windows-driver-content
 description: Sensor device driver design guide
 ms.assetid: 74e8ae08-3e61-41be-aed0-e733dc6072cf
 ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 10/18/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -22,7 +22,7 @@ ms.technology: windows-devices
 -   [Programming guide](programming-guide-v2.md)
 -   [Sensor driver model for Windows 8.1](sensor-driver-model-for-windows-8-1.md)
 
-### Whitepapers
+## Whitepapers
 
 | Title | Description |
 | -- | -- |
@@ -33,6 +33,7 @@ ms.technology: windows-devices
 ## Related sections
 
 -   [Sensors DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_sensors/)
+-   [Sensors Blogs](https://techcommunity.microsoft.com/t5/Microsoft-Sensors-Blog/bg-p/MicrosoftSensorsBlog)
 
  
 
