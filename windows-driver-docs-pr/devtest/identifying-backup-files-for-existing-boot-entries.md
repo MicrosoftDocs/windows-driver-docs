@@ -10,11 +10,7 @@ keywords:
 - existing boot entry searches WDK
 - boot entry backups WDK
 - identifying backup files for boot entries
-ms.author: windowsdriverdev
 ms.date: 07/09/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

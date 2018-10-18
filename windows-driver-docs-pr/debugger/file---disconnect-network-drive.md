@@ -5,9 +5,6 @@ ms.assetid: 65d78f9b-0c3c-4ec8-906d-afdfa64beebb
 keywords: ["File Disconnect Network Drive", "shell commands, File Disconnect Network Drive"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

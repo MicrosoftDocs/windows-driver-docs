@@ -5,9 +5,6 @@ ms.assetid: D48424B0-DE50-46E5-B63C-76B653C9176B
 keywords: ["Bug Check 0x150 TCPIP_AOAC_NIC_ACTIVE_REFERENCE_LEAK", "TCPIP_AOAC_NIC_ACTIVE_REFERENCE_LEAK"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

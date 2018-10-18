@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Object-Based
 ms.assetid: 53024912-5e6e-4738-81b5-dacc59c22c3f
 keywords: ["object-based drivers WDK kernel", "object opacity WDK kernel", "opacity WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

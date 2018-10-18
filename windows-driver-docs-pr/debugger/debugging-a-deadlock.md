@@ -5,9 +5,6 @@ ms.assetid: ee7990d9-2d4e-4e48-9214-539eebd1d8db
 keywords: ["deadlocks", "thread, no ready threads"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

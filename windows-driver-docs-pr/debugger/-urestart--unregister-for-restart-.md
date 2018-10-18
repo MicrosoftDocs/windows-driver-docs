@@ -5,9 +5,6 @@ ms.assetid: B3881CD6-F5F4-40E2-B0E1-BAC7D19E8724
 keywords: [".urestart (Unregister for Restart) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

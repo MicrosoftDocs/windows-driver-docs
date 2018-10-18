@@ -9,11 +9,7 @@ keywords:
 - request processing WDK KMDF , request objects
 - framework objects WDK KMDF , I/O request objects
 - request objects WDK KMDF , about request objects
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: 100917dc-9ce9-48d6-a285-58ea78a4c2f4
 keywords: ["wdfkd.wdfqueue Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

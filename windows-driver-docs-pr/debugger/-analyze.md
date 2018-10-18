@@ -5,9 +5,6 @@ ms.assetid: dec760fb-0af6-4504-9855-8fe63c1c9783
 keywords: ["analyze Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

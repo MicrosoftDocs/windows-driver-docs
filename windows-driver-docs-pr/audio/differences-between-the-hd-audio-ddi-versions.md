@@ -7,11 +7,7 @@ keywords:
 - High Definition Audio (HD Audio), DDI version differences
 - HDAUDIO_BUS_INTERFACE structure
 - HDAUDIO_BUS_INTERFACE_BDL structure
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

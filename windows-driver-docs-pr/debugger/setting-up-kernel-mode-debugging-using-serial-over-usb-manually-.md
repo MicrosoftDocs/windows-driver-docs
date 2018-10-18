@@ -4,9 +4,6 @@ description: This topic describes setting up Kernel-Mode Debugging manually for 
 ms.assetid: E6157263-74E8-4704-9668-B845043737A7
 ms.author: domars
 ms.date: 05/03/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

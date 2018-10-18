@@ -4,6 +4,7 @@ author: windows-driver-content
 description: Introduction to Application Notification
 ms.assetid: c115eb29-8bd2-40f7-b979-cff386bdc9aa
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Introduction to Application Notification

@@ -8,11 +8,7 @@ keywords:
 - Version 3 XPS drivers WDK XPSDrv , PPD files
 - GPD files WDK XPSDrv
 - PPD files WDK XPSDrv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

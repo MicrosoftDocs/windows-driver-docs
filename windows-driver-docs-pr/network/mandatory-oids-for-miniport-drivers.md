@@ -5,11 +5,7 @@ description: This topic describes mandatory OIDs for miniport drivers
 ms.assetid: e4a620b4-de8f-4c1a-be94-b0ec97fa9791
 keywords:
 - Mandatory OIDs for miniport drivers, mandatory NDIS OIDs, mandatory OIDs WDK, mandatory OIDs networking
-ms.author: windowsdriverdev
 ms.date: 11/01/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

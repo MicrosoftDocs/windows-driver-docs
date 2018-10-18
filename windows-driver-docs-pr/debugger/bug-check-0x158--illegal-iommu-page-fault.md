@@ -5,9 +5,6 @@ ms.assetid: E26C9B67-A332-4AE9-9325-9A3378EC9B36
 keywords: ["Bug Check 0x158 ILLEGAL_IOMMU_PAGE_FAULT", "ILLEGAL_IOMMU_PAGE_FAULT"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

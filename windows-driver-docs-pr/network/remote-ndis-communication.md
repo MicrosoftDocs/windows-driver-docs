@@ -3,11 +3,7 @@ title: 'Remote NDIS Communication'
 author: windows-driver-content
 Description: 'Remote NDIS Communication'
 ms.assetid: abaa4434-4043-4265-92b9-81383c2080ce
-ms.author: windowsdriverdev
 ms.date: 07/31/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

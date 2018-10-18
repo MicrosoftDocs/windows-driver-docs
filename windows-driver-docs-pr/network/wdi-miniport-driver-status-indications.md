@@ -3,11 +3,7 @@ title: WDI Miniport Driver Status Indications
 author: windows-driver-content
 description: This section contains WDI status notifications.
 ms.assetid: CD873C33-72ED-4F99-A584-5C307F4FB65E
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 ms.localizationpriority: medium
 ---
 

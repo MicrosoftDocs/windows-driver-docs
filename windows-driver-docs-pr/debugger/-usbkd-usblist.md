@@ -5,9 +5,6 @@ ms.assetid: 503466EE-2246-4CE3-BCE7-6DC7D42DB86A
 keywords: ["usbkd.usblist Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

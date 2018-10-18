@@ -5,9 +5,6 @@ ms.assetid: 0DA42FDD-41D6-4234-9D9C-36872F0CE0C1
 keywords: ["usbkd._ehciep Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

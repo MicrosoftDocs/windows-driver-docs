@@ -9,11 +9,7 @@ api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_WARMSTART
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 9//11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

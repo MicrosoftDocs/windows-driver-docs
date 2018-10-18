@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Reporting Device Power Capabilities
 ms.assetid: 67a504d0-2c41-4c74-a912-4f0771885f7d
 keywords: ["reporting device power capabilities", "device power capabilities WDK kernel", "DEVICE_CAPABILITIES structure", "query-capabilities IRPs WDK power management", "IRPs WDK power management", "I/O request packets WDK power management"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

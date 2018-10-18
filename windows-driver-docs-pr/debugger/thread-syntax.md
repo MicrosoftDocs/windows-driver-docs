@@ -5,9 +5,6 @@ ms.assetid: f3eaa0ee-7c4f-47a4-aba9-c1d21c1529d1
 keywords: ["thread, command syntax", "~ (thread identifier)", "thread, thread identifier ( ~ )", "thread, thread ID", "~ (thread identifier)", "syntax rules for commands, ~ (thread identifier)", "syntax rules for commands, ~ (thread identifier)", "syntax rules for commands, threads"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

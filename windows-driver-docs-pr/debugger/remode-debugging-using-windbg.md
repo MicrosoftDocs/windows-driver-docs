@@ -4,9 +4,6 @@ description: Remote debugging involves two debuggers running at two different lo
 ms.assetid: 3030CEE4-DF10-4F84-A32D-38613D7EE072
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

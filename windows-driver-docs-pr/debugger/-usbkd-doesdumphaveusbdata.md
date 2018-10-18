@@ -5,9 +5,6 @@ ms.assetid: 5E475E9F-BC8E-4185-9F63-5BAD49A83904
 keywords: ["usbkd.doesdumphaveusbdata Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

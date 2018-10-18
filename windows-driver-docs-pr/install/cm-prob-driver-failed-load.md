@@ -4,11 +4,7 @@ description: CM_PROB_DRIVER_FAILED_LOAD
 ms.assetid: 84d88db9-338b-4318-ba05-696521c96dd6
 keywords:
 - CM_PROB_DRIVER_FAILED_LOAD
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: aafd873d-3280-4873-8149-d43f684ec01d
 keywords: [".help (Meta-Command Help) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.help** command displays a list of all meta-commands.
 
-```
+```dbgcmd
 .help
 .help /D 
 ```

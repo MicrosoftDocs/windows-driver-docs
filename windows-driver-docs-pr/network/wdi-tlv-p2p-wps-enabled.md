@@ -3,11 +3,7 @@ title: WDI_TLV_P2P_WPS_ENABLED
 author: windows-driver-content
 description: WDI_TLV_P2P_WPS_ENABLED is a TLV that specifies if Wi-Fi Protected Setup is enabled.
 ms.assetid: B923DA17-451C-4BF1-8B8B-C2846EDE9774
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - WDI_TLV_P2P_WPS_ENABLED Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

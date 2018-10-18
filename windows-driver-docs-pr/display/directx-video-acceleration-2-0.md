@@ -8,11 +8,7 @@ keywords:
 - Video Acceleration WDK DirectX , version 2
 - VA WDK DirectX , version 2
 - DirectX Video Acceleration WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

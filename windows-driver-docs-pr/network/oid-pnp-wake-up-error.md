@@ -3,11 +3,7 @@ title: OID_PNP_WAKE_UP_ERROR
 author: windows-driver-content
 description: OID_PNP_WAKE_UP_ERROR
 ms.assetid: e6386a35-7077-45b3-bc0c-164477168a55
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_PNP_WAKE_UP_ERROR Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

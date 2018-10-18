@@ -3,11 +3,7 @@ title: General-purpose I/O (GPIO)
 author: windows-driver-content
 description: System on a Chip (SoC) integrated circuits make extensive use of general-purpose I/O (GPIO) pins.
 ms.assetid: 9EB4EFC3-B94E-42C9-9FC7-12DF4AD01622
-ms.author: windowsdriverdev
 ms.date: 07/09/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Using the Registry in a Driver
 ms.assetid: 69d2d491-3cc1-4fd0-a1c9-0cc8e73e69b2
 keywords: ["registry WDK kernel", "driver registry information WDK kernel", "storage WDK registry", "storing registry information", "registry WDK kernel , about registry in drivers", "driver registry information WDK kernel , about registry in drivers", "manipulating registry entries WDK kernel", "keys WDK kernel registry", "subkeys WDK kernel registry", "kernel-mode drivers WDK , registry"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

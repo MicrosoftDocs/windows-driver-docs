@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Using Custom WMI Events
 ms.assetid: 00354e0b-a652-44e9-8b2b-fd755cc05fec
 keywords: ["WMI WDK kernel , event tracking", "events WDK WMI", "tracing WDK WMI", "sending WMI events", "event blocks WDK WMI", "notifications WDK WMI", "event consumer providers WDK WMI", "custom events WDK WMI"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

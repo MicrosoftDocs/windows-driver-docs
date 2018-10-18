@@ -8,11 +8,7 @@ keywords:
 - filter drivers WDK storage , device-type-specific functionality
 - SFD WDK storage , device-type-specific functionality
 - device-type-specific functionality WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

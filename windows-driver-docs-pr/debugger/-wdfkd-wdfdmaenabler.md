@@ -5,9 +5,6 @@ ms.assetid: fb1d9106-2a5d-4262-b76f-8bf0c6c611a8
 keywords: ["wdfkd.wdfdmaenabler Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -2,11 +2,7 @@
 title: DIFx Guidelines
 description: DIFx Guidelines
 ms.assetid: de34f810-0e90-4626-b84d-160ac61541ad
-ms.author: windowsdriverdev
 ms.date: 05/24/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

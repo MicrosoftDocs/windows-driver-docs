@@ -5,9 +5,6 @@ ms.assetid: 6feb922f-0016-468c-8dd2-963db6874977
 keywords: ["wdfkd.wdfextendwatchdog Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

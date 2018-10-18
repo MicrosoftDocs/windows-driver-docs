@@ -5,9 +5,6 @@ ms.assetid: 76c11b45-8469-4f27-840d-06477d8922b8
 keywords: ["KD Command-Line Options Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

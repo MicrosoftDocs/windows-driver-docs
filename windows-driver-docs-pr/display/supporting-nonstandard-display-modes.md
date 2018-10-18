@@ -4,11 +4,7 @@ description: Supporting Nonstandard Display Modes
 ms.assetid: 33a10aed-dfc9-4b64-97fb-e4b7c744dc0d
 keywords:
 - nonstandard display modes WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

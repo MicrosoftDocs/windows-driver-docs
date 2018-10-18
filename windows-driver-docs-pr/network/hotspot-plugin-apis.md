@@ -6,11 +6,7 @@ ms.assetid: eee56f84-2c7f-4218-b7ec-b4fc0181d767
 keywords: 
 - HOTSPOT_PLUGIN_APIS structure Network Drivers Starting with Windows Vista
 - PHOTSPOT_PLUGIN_APIS structure pointer Network Drivers Starting with Windows Vista
-ms.author: windowsdriverdev
 ms.date: 07/31/2017 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

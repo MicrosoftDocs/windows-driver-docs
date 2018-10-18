@@ -4,11 +4,7 @@ author: windows-driver-content
 description: DriverEntry's Required Responsibilities
 ms.assetid: 6e997875-e7b7-43e2-8398-f0574f3a5816
 keywords: ["DriverEntry WDK kernel , required responsibilities"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

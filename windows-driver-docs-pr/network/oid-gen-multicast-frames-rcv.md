@@ -3,11 +3,7 @@ title: OID_GEN_MULTICAST_FRAMES_RCV
 author: windows-driver-content
 description: As a query, the OID_GEN_MULTICAST_FRAMES_RCV OID specifies the number of multicast/functional packets that are received without errors.
 ms.assetid: 6001dc07-43ab-420d-b29b-1138485ce218
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_MULTICAST_FRAMES_RCV Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

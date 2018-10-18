@@ -5,11 +5,7 @@ description: This section describes run-time filtering layer identifiers.
 ms.assetid: 21c466a3-cdfc-4e94-83d3-1c2c7a58a2ca
 keywords:
 - Run-time filtering layer identifiers network drivers
-ms.author: windowsdriverdev
 ms.date: 11/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

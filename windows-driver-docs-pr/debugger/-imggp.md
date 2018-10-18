@@ -5,9 +5,6 @@ ms.assetid: fa566b11-ac41-442a-b843-decd64bd596e
 keywords: ["global pointer (GP)", "GP (global pointer)", "imggp Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!imggp** extension displays the global pointer (GP) directory entry value for a 64-bit image.
 
-```
+```dbgcmd
 !imggp Address 
 ```
 

@@ -2,11 +2,7 @@
 title: Multiplane overlay VidPN presentation
 ms.assetid: BAD7FD48-905D-4547-8C69-133240B39FA3
 description: Requirements that apply to functions used to present on multiple surfaces.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

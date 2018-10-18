@@ -5,9 +5,6 @@ ms.assetid: 2727d429-82f5-44a6-943b-0a3f2d3385a3
 keywords: ["IPI (interprocessor interrupt)", "ipi Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ipi** extension displays the interprocessor interrupt (IPI) state for a specified processor.
 
-```
+```dbgcmd
 !ipi [Processor]
 ```
 
@@ -64,7 +61,7 @@ Remarks
 
 Here is an example of the output from this extension:
 
-```
+```dbgcmd
 0: kd> !ipi
 IPI State for Processor 0
   Worker Routine:  nt!KiFlushTargetMultipleTb [Stale]

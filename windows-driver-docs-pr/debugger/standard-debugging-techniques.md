@@ -4,9 +4,6 @@ description: This section discusses standard debugging techniques that you can a
 ms.assetid: D7752D63-E2A7-418C-A06F-6D5CCF3EDAEB
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: c24a42d3-cb06-4ce5-bf90-c8a224bf7d01
 keywords: ["Create user mode stack trace database (global flag)"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

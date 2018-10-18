@@ -4,6 +4,7 @@ author: windows-driver-content
 description: Synchronizing Cancellation in Driver Routines that Process IRPs
 ms.assetid: 0b252ebd-b9d5-4747-9a27-c1ecffdbae18
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Synchronizing Cancellation in Driver Routines that Process IRPs

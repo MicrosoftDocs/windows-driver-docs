@@ -3,11 +3,7 @@ title: Sensor categories
 author: windows-driver-content
 description: Sensor categories
 ms.assetid: 609C57BA-1C3E-435B-BAAE-C01C3669D59D
-ms.author: windowsdriverdev
 ms.date: 07/20/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -3,11 +3,7 @@ title: Component
 author: windows-driver-content
 description: Component
 ms.assetid: 15cc741e-5919-4d71-802b-519494827722
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

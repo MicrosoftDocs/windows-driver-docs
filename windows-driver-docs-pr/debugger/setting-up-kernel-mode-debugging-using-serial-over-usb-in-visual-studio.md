@@ -4,9 +4,6 @@ description: This topic describes setting up Kernel-Mode Debugging USB in Visual
 ms.assetid: D909CA2C-3870-4521-8F23-FBF93738F338
 ms.author: domars
 ms.date: 04/10/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

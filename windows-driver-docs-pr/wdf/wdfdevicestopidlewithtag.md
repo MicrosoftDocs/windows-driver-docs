@@ -5,11 +5,7 @@ description: The WdfDeviceStopIdleWithTag macro increments the power reference c
 ms.assetid: 792A5EA8-5273-4284-B0EE-01BE1DCB9863
 keywords:
  - WdfDeviceStopIdleWithTag macro
-ms.author: windowsdriverdev
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

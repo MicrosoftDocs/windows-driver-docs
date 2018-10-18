@@ -4,9 +4,6 @@ author: dimanjar
 description: Learn how to find a specific Windows hardware submission by searching with text or by selecting driver attributes in a keyword search.
 ms.author: dimanjar
 ms.date: 09/24/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

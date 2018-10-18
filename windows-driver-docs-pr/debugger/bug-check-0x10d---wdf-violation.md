@@ -5,9 +5,6 @@ ms.assetid: 2d8c9730-cd24-4f8c-8f8b-252644737847
 keywords: ["Bug Check 0x10D WDF_VIOLATION", "WDF_VIOLATION"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

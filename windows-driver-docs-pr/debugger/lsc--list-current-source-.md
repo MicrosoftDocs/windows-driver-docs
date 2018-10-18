@@ -5,9 +5,6 @@ ms.assetid: 5c500974-c405-4335-94bd-a36e7389667b
 keywords: ["lsc (List Current Source) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

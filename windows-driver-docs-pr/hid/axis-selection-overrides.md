@@ -5,6 +5,7 @@ description: Axis Selection Overrides
 ms.assetid: 151c3d19-2f80-4d71-a004-10c16c691fb9
 keywords: ["joysticks WDK HID , axes", "virtual joystick drivers WDK HID , axes", "VJoyD WDK HID , axes", "axes WDK joysticks", "overriding axis selections WDK joysticks", "usage pages WDK HID"]
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Axis Selection Overrides

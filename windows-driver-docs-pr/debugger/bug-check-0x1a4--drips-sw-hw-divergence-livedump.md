@@ -4,9 +4,6 @@ description: The DRIPS_SW_HW_DIVERGENCE_LIVEDUMP live dump has a value of 0x0000
 keywords: ["Bug Check 0x1A4 DRIPS_SW_HW_DIVERGENCE_LIVEDUMP",  "DRIPS_SW_HW_DIVERGENCE_LIVEDUMP"]
 ms.author: domars
 ms.date: 05/25/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

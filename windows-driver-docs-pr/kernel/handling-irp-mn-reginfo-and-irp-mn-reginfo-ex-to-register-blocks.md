@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Handling IRP_MN_REGINFO and IRP_MN_REGINFO_EX to Register Blocks
 ms.assetid: 2c17fc63-3c33-4d03-8c46-8d56242556d1
 keywords: ["WMI WDK kernel , registering with WMI", "registering WMI data providers", "data providers WDK WMI", "driver registrations WDK WMI", "event blocks WDK WMI", "blocks WDK WMI", "IRP_MN_REGINFO", "IRP_MN_REGINFO_EX", "registering blocks"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

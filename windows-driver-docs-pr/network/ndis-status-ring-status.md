@@ -3,11 +3,7 @@ title: NDIS_STATUS_RING_STATUS
 author: windows-driver-content
 description: The NDIS_STATUS_RING_STATUS status indicates the ring status of a line. A WAN-capable miniport driver can use this status to report a ring failure.
 ms.assetid: 8971eeea-13ff-47d5-8167-83c061cad054
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - NDIS_STATUS_RING_STATUS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

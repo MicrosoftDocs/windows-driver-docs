@@ -4,9 +4,6 @@ description: This section describes tools that are related to debugging but are 
 ms.assetid: A121BF0C-53BF-48E0-9000-3BDA255FD884
 ms.author: domars
 ms.date: 02/22/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

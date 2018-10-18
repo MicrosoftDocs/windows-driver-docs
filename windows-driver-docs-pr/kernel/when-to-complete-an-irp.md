@@ -4,11 +4,7 @@ author: windows-driver-content
 description: When to Complete an IRP
 ms.assetid: 6986b24c-e7e5-43f2-861d-b84e4c131a8a
 keywords: ["completing IRPs WDK kernel , when to complete"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

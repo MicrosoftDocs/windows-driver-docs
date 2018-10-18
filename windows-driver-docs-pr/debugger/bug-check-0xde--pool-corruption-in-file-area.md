@@ -5,9 +5,6 @@ ms.assetid: 6394e0fa-76ee-4924-8aa3-d10a4d57c6e8
 keywords: ["Bug Check 0xDE POOL_CORRUPTION_IN_FILE_AREA", "POOL_CORRUPTION_IN_FILE_AREA"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

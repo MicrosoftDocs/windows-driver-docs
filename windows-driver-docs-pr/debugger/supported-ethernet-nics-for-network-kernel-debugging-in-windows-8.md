@@ -4,9 +4,6 @@ description: You can do kernel debugging over an Ethernet network cable when the
 ms.assetid: 92FEEBAF-9978-4BDE-BB4F-81454D84A7E7
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

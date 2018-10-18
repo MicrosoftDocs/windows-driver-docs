@@ -8,11 +8,7 @@ keywords:
 - MSIs WDK networking , registering interrupts
 - interrupts WDK networking , registering
 - MSI-X WDK networking , deregistering interrupts
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -3,11 +3,7 @@ title: OID_SRIOV_BAR_RESOURCES
 author: windows-driver-content
 description: NDIS issues an object identifier (OID) method request of OID_SRIOV_BAR_RESOURCES to determine the memory resources that were allocated to a PCI Express (PCIe) Base Address Register (BAR) of a PCIe Virtual Function (VF).
 ms.assetid: CA29591B-EBFB-4B12-A980-F3FAD65207E2
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_SRIOV_BAR_RESOURCES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

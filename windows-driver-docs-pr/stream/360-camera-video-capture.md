@@ -1,11 +1,7 @@
 ---
 title: 360 camera video capture
 description: Provides information about 360 camera video capture.
-ms.author: windowsdriverdev
 ms.date: 07/20/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

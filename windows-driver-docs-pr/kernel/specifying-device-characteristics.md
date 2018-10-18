@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Specifying Device Characteristics
 ms.assetid: 8b73ed62-d611-4515-b9d0-8e0a37555a1a
 keywords: ["device objects WDK kernel , device characteristics", "device characteristics WDK device objects", "flags WDK device objects", "device stacks WDK kernel , device characteristics"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

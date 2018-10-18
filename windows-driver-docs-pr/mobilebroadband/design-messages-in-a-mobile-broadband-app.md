@@ -2,11 +2,7 @@
 title: Design messages in a mobile broadband app
 description: Design messages in a mobile broadband app
 ms.assetid: 314fd479-7dcf-4559-a195-26e4c020446c
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

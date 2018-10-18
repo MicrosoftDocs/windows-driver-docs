@@ -5,11 +5,7 @@ description: This topic describes the GUID_NDIS_TCP_OFFLOAD_ADMIN_SETTINGS GUID 
 ms.assetid: 8648c75a-dcb3-4723-a2d0-d406d3a073d6
 keywords:
 - GUID_NDIS_TCP_OFFLOAD_ADMIN_SETTINGS, WDK GUID_NDIS_TCP_OFFLOAD_ADMIN_SETTINGS network drivers
-ms.author: windowsdriverdev
 ms.date: 11/22/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

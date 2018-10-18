@@ -5,9 +5,6 @@ ms.assetid: 322789f5-0564-4518-89a6-2c6cc9aa9020
 keywords: ["Bug Check 0x11A EM_INITIALIZATION_FAILURE", "EM_INITIALIZATION_FAILURE"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

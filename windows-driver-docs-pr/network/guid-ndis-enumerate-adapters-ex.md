@@ -5,11 +5,7 @@ description: This topic describes the GUID_NDIS_ENUMERATE_ADAPTERS_EX GUID for t
 ms.assetid: 46c4c127-a9f6-4555-82d1-3c537fbb7914
 keywords:
 - GUID_NDIS_ENUMERATE_ADAPTERS_EX, WDK GUID_NDIS_ENUMERATE_ADAPTERS_EX network drivers
-ms.author: windowsdriverdev
 ms.date: 11/22/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

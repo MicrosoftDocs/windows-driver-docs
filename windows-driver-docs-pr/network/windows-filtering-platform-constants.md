@@ -5,11 +5,7 @@ description: This section describes Windows Filtering Platform constants.
 ms.assetid: 9ebf1db2-fae2-427d-9c9d-6fae707da55a
 keywords:
 - Windows Filtering Platform constants network drivers
-ms.author: windowsdriverdev
 ms.date: 11/07/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

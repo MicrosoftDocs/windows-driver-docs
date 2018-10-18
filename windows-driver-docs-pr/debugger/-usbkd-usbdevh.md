@@ -5,9 +5,6 @@ ms.assetid: 463DAA72-F3EB-4C76-BB63-DA2EFA1EE9B1
 keywords: ["usbkd.usbdevh Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

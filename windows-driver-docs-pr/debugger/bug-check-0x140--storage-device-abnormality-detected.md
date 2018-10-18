@@ -5,9 +5,6 @@ ms.assetid: 7D0C8F15-EC9C-47A5-9EF4-3FB8E21CAD9A
 keywords: ["Bug Check 0x140 STORAGE_DEVICE_ABNORMALITY_DETECTED", "STORAGE_DEVICE_ABNORMALITY_DETECTED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

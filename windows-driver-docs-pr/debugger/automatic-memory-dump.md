@@ -4,9 +4,6 @@ description: Automatic Memory Dump
 ms.assetid: A2C71497-7865-4DC8-B760-6121B224737A
 ms.author: domars
 ms.date: 05/08/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

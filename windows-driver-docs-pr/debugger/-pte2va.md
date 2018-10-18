@@ -5,9 +5,6 @@ ms.assetid: 9a94ce3a-dbbc-4566-9ef5-3ec76c1505eb
 keywords: ["pte2va Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

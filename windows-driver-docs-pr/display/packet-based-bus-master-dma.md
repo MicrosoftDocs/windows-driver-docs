@@ -7,11 +7,7 @@ keywords:
 - DMA bus-master WDK video miniport , packet based
 - packet-based DMA WDK video miniport , description
 - VideoPortStartDma
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

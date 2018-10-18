@@ -5,9 +5,6 @@ ms.assetid: B4583F32-BBC9-4182-A403-9C43BBD9BA4F
 keywords: ["usb3kd.urb Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

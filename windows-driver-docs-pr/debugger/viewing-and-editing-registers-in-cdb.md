@@ -4,9 +4,6 @@ description: In CDB, you can view registers by entering the r (Registers) comman
 ms.assetid: 33A2AF32-B4A6-430A-AD08-73B51D5D6301
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

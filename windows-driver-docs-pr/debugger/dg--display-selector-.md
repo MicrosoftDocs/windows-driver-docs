@@ -5,9 +5,6 @@ ms.assetid: bf680931-f4f9-4b72-bb25-42d095514d2a
 keywords: ["dg (Display Selector) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

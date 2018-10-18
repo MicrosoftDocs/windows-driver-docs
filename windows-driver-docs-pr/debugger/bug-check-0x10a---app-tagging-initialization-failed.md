@@ -5,9 +5,6 @@ ms.assetid: 4ec74094-8b9a-4c04-9e40-6e9c1a45ae60
 keywords: ["Bug Check 0x10A APP_TAGGING_INITIALIZATION_FAILED", "APP_TAGGING_INITIALIZATION_FAILED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

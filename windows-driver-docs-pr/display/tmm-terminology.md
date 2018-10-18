@@ -9,11 +9,7 @@ keywords:
 - TMM WDK display , external only display configuration
 - TMM WDK display , single view
 - TMM WDK display , topology
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

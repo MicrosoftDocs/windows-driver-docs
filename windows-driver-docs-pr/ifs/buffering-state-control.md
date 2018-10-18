@@ -10,11 +10,7 @@ keywords:
 - distributed cache coherency WDK RDBSS
 - cache WDK RDBSS
 - SRV_OPEN structure
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

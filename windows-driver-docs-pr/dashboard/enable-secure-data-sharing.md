@@ -4,9 +4,6 @@ description: Steps required to use the Hardware dashboard APIs to download drive
 author: EliotSeattle
 ms.author: shganesh
 ms.date: 09/28/20181
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

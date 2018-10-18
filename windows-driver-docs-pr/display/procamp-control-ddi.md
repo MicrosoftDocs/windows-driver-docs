@@ -2,11 +2,7 @@
 title: ProcAmp Control DDI
 description: ProcAmp Control DDI
 ms.assetid: 102e21eb-bad4-4ab5-8630-9ac37c33f20a
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

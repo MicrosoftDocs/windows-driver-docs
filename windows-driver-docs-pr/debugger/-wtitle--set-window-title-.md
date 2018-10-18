@@ -5,9 +5,6 @@ ms.assetid: 9ff74a70-22fd-4bb7-b124-f262a37cfd1f
 keywords: [".wtitle (Set Window Title) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -5,9 +5,6 @@ ms.assetid: CA3C6945-B93B-4717-9349-0968DCD50A5B
 keywords: ["hstring2 Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!hstring2** extension displays an entire **HSTRING** including any embedded NULL characters in the string itself.
 
-```
+```dbgcmd
 !hstring2 Address
 ```
 

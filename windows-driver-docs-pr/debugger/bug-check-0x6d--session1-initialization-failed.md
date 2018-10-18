@@ -5,9 +5,6 @@ ms.assetid: e4f9280b-1cdd-4536-88bf-b216cc70129f
 keywords: ["Bug Check 0x6D SESSION1_INITIALIZATION_FAILED", "SESSION1_INITIALIZATION_FAILED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

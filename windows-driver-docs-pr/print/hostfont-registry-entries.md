@@ -7,11 +7,7 @@ keywords:
 - PostScript Printer Driver WDK print , HostFontXxx registry entries
 - Pscript WDK print , HostFontXxx registry entries
 - HostFontXxx registry entries WDK Pscript
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

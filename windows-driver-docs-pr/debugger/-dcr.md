@@ -5,9 +5,6 @@ ms.assetid: 294fc3a9-5182-47ae-a261-53be6389bcf1
 keywords: ["DCR (default control register)", "dcr Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!dcr** extension displays the default control register (DCR) at the specified address.
 
-```
+```dbgcmd
 !dcr Expression [DisplayLevel]
 ```
 
@@ -78,7 +75,7 @@ The DCR specifies default parameters for the processor status register values on
 
 Here are a couple of examples:
 
-```
+```dbgcmd
 kd> !dcr @dcr
 dcr:pp be lc dm dp dk dx dr da dd
 1 0 1 1 1 1 1 1 1 1

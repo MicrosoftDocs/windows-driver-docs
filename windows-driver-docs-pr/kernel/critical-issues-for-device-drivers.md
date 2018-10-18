@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Critical Issues for Device Drivers
 ms.assetid: af09c548-02f6-448e-bdd8-7521b4ed7c96
 keywords: ["dynamic hardware partitioning WDK , critical issues", "hardware partitioning WDK dynamic , critical issues", "partitions WDK dynamic hardware , critical issues", "dynamically partitionable servers WDK dynamic hardware partitioning", "servers WDK dynamic hardware partitioning"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

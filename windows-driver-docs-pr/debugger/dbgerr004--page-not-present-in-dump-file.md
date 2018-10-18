@@ -5,9 +5,6 @@ ms.assetid: e76d11fc-857b-4a40-8f41-f34f3bcade57
 keywords: ["dbgerr004", "Page not present in dump file (dbgerr004)"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

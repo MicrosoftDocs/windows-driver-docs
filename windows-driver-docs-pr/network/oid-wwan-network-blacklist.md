@@ -3,11 +3,7 @@ title: OID_WWAN_NETWORK_BLACKLIST
 author: windows-driver-content
 description: OID_WWAN_NETWORK_BLACKLIST gets or sets information about network blacklists for a mobile broadband (MBB) device.
 ms.assetid: CD5F0913-73E4-4A04-BB56-76A59D886FF1
-ms.author: windowsdriverdev
 ms.date: 08/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_WWAN_NETWORK_BLACKLIST Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

@@ -4,11 +4,7 @@ description: CM_PROB_DRIVER_FAILED_PRIOR_UNLOAD
 ms.assetid: c7639fd7-738f-4115-9abc-0bafca097b9e
 keywords:
 - CM_PROB_DRIVER_FAILED_PRIOR_UNLOAD
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

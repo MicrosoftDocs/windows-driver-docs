@@ -4,6 +4,7 @@ author: windows-driver-content
 description: Sharing Processor Resources During Startup from a Low-Power State
 ms.assetid: 2b2e6a1b-7c2d-4f38-9407-a417b75daa6a
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Sharing Processor Resources During Startup from a Low-Power State

@@ -5,9 +5,6 @@ ms.assetid: 03532c7e-3bfc-4e37-8a0a-0a7c5a9963a8
 keywords: ["watchdog timer", "swd Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

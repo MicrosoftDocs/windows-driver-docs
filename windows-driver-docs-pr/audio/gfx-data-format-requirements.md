@@ -7,11 +7,7 @@ keywords:
 - stream formats WDK audio , GFX filters
 - formats WDK audio , GFX filters
 - data formats WDK audio , GFX filters
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -6,11 +6,7 @@ ms.assetid: d113159a-766e-44c3-a1b1-2975e803d7e2
 keywords:
 - printer graphics DLL WDK , samples
 - graphics DLL WDK printer , samples
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: 7db57605-b6ff-49b9-8a79-3325512825b9
 keywords: ["Bug Check 0x8B MBR_CHECKSUM_MISMATCH", "MBR_CHECKSUM_MISMATCH"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

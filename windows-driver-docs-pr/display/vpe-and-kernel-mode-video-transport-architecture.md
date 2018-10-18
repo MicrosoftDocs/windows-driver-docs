@@ -8,11 +8,7 @@ keywords:
 - kernel-mode video transport WDK DirectDraw , architecture
 - video transport kernel-mode WDK DirectDraw , architecture
 - video capture WDK video transport kernel-mode
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

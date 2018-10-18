@@ -10,11 +10,7 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA
 - hardware error driver plug-ins WDK WHEA
 - PSHED plug-ins WDK WHEA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

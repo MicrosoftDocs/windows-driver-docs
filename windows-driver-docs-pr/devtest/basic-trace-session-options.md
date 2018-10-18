@@ -6,11 +6,7 @@ keywords:
 - trace sessions WDK , basic options
 - tracing WDK , basic options
 - software tracing WDK , basic options
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: 3dddbf19-34ec-4cb0-b427-854ae7622fa1
 keywords: ["themes, customizing"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

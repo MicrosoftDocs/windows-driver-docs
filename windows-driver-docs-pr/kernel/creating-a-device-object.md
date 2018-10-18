@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Creating a Device Object
 ms.assetid: 3eda8eb2-8a83-4753-a099-2531bfb9aeeb
 keywords: ["device objects WDK kernel , creating", "non-WDM driver device objects WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

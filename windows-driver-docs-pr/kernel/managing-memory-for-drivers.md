@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Kernel-mode drivers allocate memory for purposes such as storing internal data, buffering data during I/O operations, and sharing memory with other kernel-mode and user-mode components.
 ms.assetid: e030a37c-26ab-4177-9980-4336928975e1
 keywords: ["memory management WDK kernel", "available space WDK kernel", "free space WDK kernel", "space WDK See memory WDK"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -2,11 +2,7 @@
 Description: One of the main tasks of interacting with a USB device is to get information about it.
 title: How to get USB descriptors (UWP app)
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

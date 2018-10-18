@@ -5,6 +5,7 @@ description: Creating Your Property Sheet
 ms.assetid: 04fa34fd-86d6-4017-a6da-9882d65674e3
 keywords: ["property sheets WDK DirectInput , creating", "game controllers WDK DirectInput , property sheet creation", "control panels WDK DirectInput , property sheet creation", "sample property sheet applications WDK DirectInput", "custom property sheets WDK DirectInput", "templates WDK DirectInput"]
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Creating Your Property Sheet

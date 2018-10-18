@@ -10,11 +10,7 @@ keywords:
 - nonblocking mode WDK SANs
 - WSPListen
 - SAN sockets WDK , listening for connections
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

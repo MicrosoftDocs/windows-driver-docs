@@ -5,9 +5,6 @@ ms.assetid: 2146ebb9-96ce-4eb0-8c23-c9aaa5ed7f73
 keywords: [".enumtag (Enumerate Secondary Callback Data) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.enumtag** command displays secondary bug check callback data and all data tags.
 
-```
+```dbgcmd
 .enumtag 
 ```
 
@@ -67,7 +64,7 @@ For each block of secondary bug check callback data, the **.enumtag** command di
 
 Consider the following example.
 
-```
+```dbgcmd
 kd> .enumtag
 {87654321-0000-0000-0000000000000000} - 0xf9c bytes
   4D 5A 90 00 03 00 00 00 04 00 00 00 FF FF 00 00  MZ..............

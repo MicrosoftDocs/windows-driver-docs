@@ -4,11 +4,7 @@ description: WDF verification for Driver Verifier
 ms.assetid: 9ee72369-878f-4710-a38b-1c93042178bd
 keywords:
 - WDF verification for Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

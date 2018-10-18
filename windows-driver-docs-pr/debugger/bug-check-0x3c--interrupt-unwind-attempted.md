@@ -5,9 +5,6 @@ ms.assetid: 000fbbf0-e70e-4d78-a637-0a466bf5c69c
 keywords: ["Bug Check 0x3C INTERRUPT_UNWIND_ATTEMPTED", "INTERRUPT_UNWIND_ATTEMPTED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

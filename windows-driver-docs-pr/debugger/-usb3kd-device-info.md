@@ -5,9 +5,6 @@ ms.assetid: BD6D1562-2606-42C1-9EE6-D38D93D685DE
 keywords: ["usb3kd.device_info Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

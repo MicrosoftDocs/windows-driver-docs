@@ -7,11 +7,7 @@ keywords:
 - multiprotocol WAN NIC WDK networking
 - WAN NIC WDK networking
 - NIC multiprotocol WAN WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

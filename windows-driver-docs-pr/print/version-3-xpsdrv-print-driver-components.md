@@ -10,11 +10,7 @@ keywords:
 - conversion rendering modules WDK XPSDrv
 - Version 3 XPS drivers WDK XPSDrv , about Version 3 XPS drivers
 - XPSDrv printer drivers WDK , Version 3 XPS drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

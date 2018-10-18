@@ -5,9 +5,6 @@ ms.assetid: 5250947b-bae0-4981-8e52-b8337a72a4ee
 keywords: ["Bug Check 0x114 VIDEO_SHADOW_DRIVER_FATAL_ERROR", "VIDEO_SHADOW_DRIVER_FATAL_ERROR"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

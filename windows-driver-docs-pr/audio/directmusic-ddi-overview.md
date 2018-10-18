@@ -11,11 +11,7 @@ keywords:
 - kernel-mode interfaces WDK audio
 - custom synths WDK audio
 - DMus miniport drivers WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

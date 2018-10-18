@@ -5,9 +5,6 @@ ms.assetid: 4cba525f-12f0-45c9-8dee-c3e0ab9fd944
 keywords: TList, Task List Viewer, Task List Viewer, See TList
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

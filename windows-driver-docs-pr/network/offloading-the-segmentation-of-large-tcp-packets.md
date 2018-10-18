@@ -6,11 +6,7 @@ keywords:
 - task offload WDK TCP/IP transport , large packet segmentation
 - large TCP packet segmentation WDK networking
 - segmentation of large TCP packets WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

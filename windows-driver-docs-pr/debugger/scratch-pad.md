@@ -5,9 +5,6 @@ ms.assetid: a0f6ce9c-7fad-4df6-bad8-0ea1bc5bfc52
 keywords: ["debugging information windows, Scratch Pad", "Scratch Pad"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

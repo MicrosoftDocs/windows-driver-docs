@@ -2,11 +2,7 @@
 title: C28644
 description: Warning C28644 Return value from DPA_InsertPtr not checked.
 ms.assetid: F145330F-E597-405F-935E-B12D65F64DDB
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

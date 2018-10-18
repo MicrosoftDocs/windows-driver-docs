@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Access Rights
 ms.assetid: 518e60db-7058-4ebe-8640-eb8f6b9e7645
 keywords: ["access rights WDK objects", "generic access rights WDK objects", "standard access rights WDK objects", "specific access rights WDK objects", "object access rights WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

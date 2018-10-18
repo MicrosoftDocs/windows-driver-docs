@@ -9,11 +9,7 @@ keywords:
 - display drivers WDK Windows 2000 , compatibility testing
 - compatibility testing WDK Windows 2000 display
 - testing compatibility WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

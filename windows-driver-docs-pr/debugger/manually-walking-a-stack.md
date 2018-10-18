@@ -5,9 +5,6 @@ ms.assetid: 9235fe4d-3e94-4143-867f-18b696e489d0
 keywords: ["stack trace, walking the stack manually", "walking the stack"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -6,11 +6,7 @@ ms.assetid: 59d15b37-e31e-45fc-bdb0-fed6f791839c
 keywords:
 - registering callback routines
 - callback routines WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Security Issues for I/O Control Codes
 ms.assetid: cab8aed2-7185-4622-9a8f-bc8eab3c8c59
 keywords: ["I/O control codes WDK kernel , security", "control codes WDK IOCTLs , security", "IOCTLs WDK kernel , security", "security WDK IOCTLs"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -2,11 +2,7 @@
 title: Managing User Roles
 ms.assetid: 000D3756-7110-4E9F-91CA-86F91EECCFCA
 description: Managing user roles in the Windows hardware dev center dashboard
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

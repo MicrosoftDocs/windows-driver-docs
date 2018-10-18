@@ -5,9 +5,6 @@ ms.assetid: 4039e240-2660-42a8-97bd-4a4907eb5773
 keywords: ["Bug Check 0x62 OBJECT1_INITIALIZATION_FAILED", "OBJECT1_INITIALIZATION_FAILED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

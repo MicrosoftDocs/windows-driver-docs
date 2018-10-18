@@ -4,6 +4,7 @@ author: windows-driver-content
 description: Windows Kernel-Mode Kernel Library
 ms.assetid: e62264ee-5d52-4ae1-bd54-51e93c34762f
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Windows Kernel-Mode Kernel Library

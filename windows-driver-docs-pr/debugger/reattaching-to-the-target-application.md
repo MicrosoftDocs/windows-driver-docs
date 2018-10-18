@@ -5,9 +5,6 @@ ms.assetid: cc137185-58a7-44bf-b262-2698c46730f6
 keywords: ["re-attaching to the target application", "process, re-attaching debugger to"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

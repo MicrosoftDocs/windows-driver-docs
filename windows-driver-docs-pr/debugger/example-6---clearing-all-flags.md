@@ -4,9 +4,6 @@ description: Example 6 Clearing All Flags
 ms.assetid: 07a6af3d-3ef7-429d-9afa-439b20915ab1
 ms.author: domars
 ms.date: 10/12/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

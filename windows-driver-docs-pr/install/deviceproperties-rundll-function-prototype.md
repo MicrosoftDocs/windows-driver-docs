@@ -8,11 +8,7 @@ keywords:
 - DeviceProperties_RunDLL WDK device installations
 - machine-name-parameter field WDK device installations
 - device-instance-ID-parameter field WDK device inst
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

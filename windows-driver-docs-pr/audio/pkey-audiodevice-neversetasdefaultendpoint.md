@@ -2,11 +2,7 @@
 title: PKEY\_AudioDevice\_NeverSetAsDefaultEndpoint
 description: PKEY\_AudioDevice\_NeverSetAsDefaultEndpoint
 ms.assetid: cb619972-d9d9-4f33-bb4a-720bfc29e3e8
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -4,9 +4,6 @@ description: Starting with Windows Driver Kit (WDK) 8, the driver development e
 ms.assetid: B961B0C9-FF6C-4F6B-AC15-CA1B405A4C4C
 ms.author: domars
 ms.date: 05/11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

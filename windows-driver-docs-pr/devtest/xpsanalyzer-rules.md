@@ -4,11 +4,7 @@ description: XpsAnalyzer Rules
 ms.assetid: 4f617665-4cc4-475d-ae66-abc2f00309fd
 keywords:
 - XpsAnalyzer WDK , rules
-ms.author: windowsdriverdev
 ms.date: 9/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

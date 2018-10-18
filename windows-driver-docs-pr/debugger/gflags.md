@@ -5,9 +5,6 @@ ms.assetid: e268af2e-90a9-411e-8e29-ab486d2aac48
 keywords: GFlags, Global Flags Editor, gflags.exe
 ms.author: domars
 ms.date: 06/12/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

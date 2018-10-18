@@ -2,11 +2,7 @@
 title: BarcodeScannerDataReceived
 description: The BarcodeScannerDataReceived event occurs after a successful scan event.
 ms.assetid: '3dd7699a-5e2b-484b-bd83-c37ee7f0e851'
-ms.author: windowsdriverdev
 ms.date: 9/7/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

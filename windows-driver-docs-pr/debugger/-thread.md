@@ -5,9 +5,6 @@ ms.assetid: 5d3cf2f7-02bf-4a94-b542-826ad2b66a6f
 keywords: ["thread Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

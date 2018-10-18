@@ -3,11 +3,7 @@ title: Sensor types
 author: windows-driver-content
 description: Universal Sensor Type GUIDs
 ms.assetid: AD1112ED-4EA8-429D-82E6-D1878447D5E3
-ms.author: windowsdriverdev
 ms.date: 07/20/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

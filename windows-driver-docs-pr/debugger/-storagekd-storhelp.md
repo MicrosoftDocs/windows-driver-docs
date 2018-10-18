@@ -5,9 +5,6 @@ ms.assetid: 17FFB5CC-1FA3-4D13-AA30-6D48D2435CDC
 keywords: ["storagekd.storhelp Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

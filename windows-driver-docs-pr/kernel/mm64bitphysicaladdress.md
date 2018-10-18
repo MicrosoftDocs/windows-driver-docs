@@ -4,6 +4,7 @@ author: windows-driver-content
 description: Kernel global variables.
 ms.assetid: 1ea5c4e3-ed70-449c-a49e-b1e3c892e981
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Windows kernel global variables

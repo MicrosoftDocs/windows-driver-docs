@@ -2,11 +2,7 @@
 title: How do I redefine an fprintf function as a tracing call
 description: How do I redefine an fprintf function as a tracing call
 ms.assetid: def82d48-454b-421b-a63d-695dae733fd0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -7,11 +7,7 @@ keywords:
 - adapter drivers WDK audio , service installations
 - Port Class audio adapters WDK , service installations
 - adapter services WDK audio
-ms.author: windowsdriverdev
 ms.date: 10/26/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

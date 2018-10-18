@@ -5,9 +5,6 @@ ms.assetid: fa5c48bf-c0d0-4010-a101-381c692082bf
 keywords: ["GFlags, overview"]
 ms.author: domars
 ms.date: 06/12/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

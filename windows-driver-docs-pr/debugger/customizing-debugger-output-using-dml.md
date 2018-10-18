@@ -4,9 +4,6 @@ description: The debugger markup language (DML) provides a mechanism for enhanci
 ms.assetid: 04984510-B95F-405F-81DF-E9D0673210B4
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

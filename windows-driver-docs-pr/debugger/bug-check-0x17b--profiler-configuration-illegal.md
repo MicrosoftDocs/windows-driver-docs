@@ -4,9 +4,6 @@ description: The PROFILER_CONFIGURATION_ILLEGAL bug check has a value of 0x00000
 keywords: ["Bug Check 0x17B PROFILER_CONFIGURATION_ILLEGAL",  "PROFILER_CONFIGURATION_ILLEGAL"]
 ms.author: domars
 ms.date: 04/18/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

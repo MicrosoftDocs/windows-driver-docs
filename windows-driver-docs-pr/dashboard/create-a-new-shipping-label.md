@@ -4,9 +4,6 @@ description: This method shows how to create a new shipping label in the Microso
 author: balapv
 ms.author: balapv
 ms.date: 08/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Create a new shipping label

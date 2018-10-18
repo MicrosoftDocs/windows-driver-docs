@@ -4,9 +4,6 @@ description: Running a SMB Symbol Server is simply a matter of creating a file s
 ms.assetid: C5CF9665-9289-48EB-AA12-8881F812488A
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

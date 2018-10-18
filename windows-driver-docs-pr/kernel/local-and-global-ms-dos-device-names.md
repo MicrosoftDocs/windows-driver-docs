@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Local and Global MS-DOS Device Names
 ms.assetid: bfb7e41c-0f80-4cb9-b036-d1b44473f9fb
 keywords: ["MS-DOS device names WDK kernel", "local MS-DOS device names WDK kernel", "global MS-DOS device names WDK kernel", "DosDevices contexts WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

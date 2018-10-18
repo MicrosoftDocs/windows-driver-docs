@@ -5,6 +5,7 @@ description: Setting the Manufacturer-Specific Data
 ms.assetid: 57787e7a-2a80-476c-8027-b7c154b2f407
 keywords: ["INF files WDK joysticks , manufacturer-specific data"]
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Setting the Manufacturer-Specific Data

@@ -5,11 +5,7 @@ description: This topic describes the GUID_NDIS_STATUS_NETWORK_CHANGE GUID for t
 ms.assetid: 4be2b79d-dc99-4096-bf13-54e75deeee56
 keywords:
 - GUID_NDIS_STATUS_NETWORK_CHANGE, WDK GUID_NDIS_STATUS_NETWORK_CHANGE network drivers
-ms.author: windowsdriverdev
 ms.date: 11/22/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: PCI Express features that can be controlled by the PCI Express Native Control feature in Windows
 ms:assetid: 0E3A4408-CBF7-494F-9F25-7C78E04526B4
 keywords: ACPI, ACPI \_OSC method
-ms.author: windowsdriverdev
 ms.date: 06/01/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

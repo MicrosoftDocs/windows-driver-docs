@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Using Kernel Transaction Manager
 ms.assetid: b558ace9-b416-4572-ac94-58a083c9d33b
 keywords: ["Kernel Transaction Manager WDK", "KTM WDK", "transactions WDK KTM"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

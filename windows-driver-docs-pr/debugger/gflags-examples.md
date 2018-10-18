@@ -5,9 +5,6 @@ ms.assetid: 0aeb4a55-22b7-4eb9-a4d9-a1dd4f661ba8
 keywords: ["GFlags, examples"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

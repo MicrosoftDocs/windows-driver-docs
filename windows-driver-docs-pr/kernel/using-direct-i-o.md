@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Using Direct I/O
 ms.assetid: e40b4657-833f-404c-8472-2e33564129a5
 keywords: ["direct I/O WDK kernel", "buffers WDK I/O , direct I/O", "data buffers WDK I/O , direct I/O", "I/O WDK kernel , direct I/O"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

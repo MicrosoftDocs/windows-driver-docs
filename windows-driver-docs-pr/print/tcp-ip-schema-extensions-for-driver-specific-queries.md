@@ -7,11 +7,7 @@ keywords:
 - TCP/IP schema extensions WDK printer
 - schema extensions WDK TCP/IP
 - driver-specific queries WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

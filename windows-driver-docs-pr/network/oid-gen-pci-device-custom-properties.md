@@ -3,11 +3,7 @@ title: OID_GEN_PCI_DEVICE_CUSTOM_PROPERTIES
 author: windows-driver-content
 description: As a query, overlying drivers use the OID_GEN_PCI_DEVICE_CUSTOM_PROPERTIES OID to get the PCI custom properties of a device.
 ms.assetid: fe94884b-f5e3-4c60-8f52-e61d0df81a2a
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_PCI_DEVICE_CUSTOM_PROPERTIES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

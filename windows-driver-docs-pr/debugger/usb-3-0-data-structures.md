@@ -4,9 +4,6 @@ description: This topic describes the data structures used by the USB 3.0 host c
 ms.assetid: 39BD7413-48A5-4199-BA8E-D2A77E4D23F1
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Rules for Handling Power IRPs
 ms.assetid: ea4a1c57-6184-4160-bf23-b86e3e403388
 keywords: ["power management WDK kernel , IRPs", "IRPs WDK power management", "power IRPs WDK kernel", "power IRPs WDK kernel , rules", "I/O request packets WDK power management"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

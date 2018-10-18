@@ -2,11 +2,7 @@
 title: Trusted Platform Module (TPM) Considerations
 description: Trusted Platform Module (TPM) Considerations
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 05/07/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

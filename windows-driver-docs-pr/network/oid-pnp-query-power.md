@@ -3,11 +3,7 @@ title: OID_PNP_QUERY_POWER
 author: windows-driver-content
 description: OID_PNP_QUERY_POWER
 ms.assetid: 62675042-3339-48de-97bb-58bfa05e1b39
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_PNP_QUERY_POWER Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

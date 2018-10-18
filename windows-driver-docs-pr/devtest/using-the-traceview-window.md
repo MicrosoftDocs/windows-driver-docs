@@ -10,11 +10,7 @@ keywords:
 - TraceView WDK , displaying logs
 - displaying trace logs
 - log files WDK TraceView , displaying
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

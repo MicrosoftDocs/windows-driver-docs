@@ -5,9 +5,6 @@ ms.assetid: 2EFAC774-C400-4218-BF48-2D5DC557A83B
 keywords: ["usbkd.usbpdos Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

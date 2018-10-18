@@ -5,9 +5,6 @@ ms.assetid: 9391fcd4-c64f-4c2b-89c2-da09be7646d1
 keywords: ["remote debugging through a process server", "process server", "process server, overview", "smart client (user mode)", "DbgSrv", "DbgSrv, overview"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

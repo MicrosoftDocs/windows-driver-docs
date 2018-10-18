@@ -5,9 +5,6 @@ ms.assetid: fb3843fe-451f-444c-a690-862253df944e
 keywords: ["Show loader snaps (global flag)"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

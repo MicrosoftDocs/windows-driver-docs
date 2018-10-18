@@ -5,11 +5,7 @@ description: This topic describes the GUID_NDIS_TCP_OFFLOAD_HW_CAPABILITIES GUID
 ms.assetid: 5918fcb0-ebcf-4021-99a5-9ecfd2fdb987
 keywords:
 - GUID_NDIS_TCP_OFFLOAD_HW_CAPABILITIES, WDK GUID_NDIS_TCP_OFFLOAD_HW_CAPABILITIES network drivers
-ms.author: windowsdriverdev
 ms.date: 11/22/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

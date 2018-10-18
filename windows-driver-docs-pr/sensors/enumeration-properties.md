@@ -3,11 +3,7 @@ title: Enumeration properties
 author: windows-driver-content
 description: This topic describes the static sensor properties that are available from the PnP Driver Store.
 ms.assetid: E4663410-375F-48B9-A9E4-6E608FA8D2FF
-ms.author: windowsdriverdev
 ms.date: 01/04/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Registering and Enabling an IoTimer Routine
 ms.assetid: d06a6430-5098-492a-8114-d6f390083718
 keywords: ["IoTimer", "IoInitializeTimer", "IoStartTimer", "registering IoTimer routines"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

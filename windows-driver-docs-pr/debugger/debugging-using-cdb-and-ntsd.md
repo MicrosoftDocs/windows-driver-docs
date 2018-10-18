@@ -4,9 +4,6 @@ description: This section describes how to perform basic debugging tasks using t
 ms.assetid: 770D8A69-9B0C-4745-B7E8-D461760C851B
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

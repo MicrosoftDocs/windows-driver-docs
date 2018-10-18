@@ -6,11 +6,7 @@ keywords:
 - header-data split WDK , configuration
 - current header-data split configuration WDK networking
 - status information WDK header-data split
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

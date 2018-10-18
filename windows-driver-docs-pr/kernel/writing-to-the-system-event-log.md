@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Writing to the System Event Log
 ms.assetid: 19be8bb4-8736-4d1a-92e5-b63a5f04e254
 keywords: ["NTSTATUS values WDK kernel", "dump data WDK kernel", "predefined error codes WDK kernel", "system event logs WDK kernel", "property sheets WDK errors", "Event Viewer WDK kernel", "sample log entry property sheets WDK kernel", "log entries WDK kernel", "entries WDK error logs"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

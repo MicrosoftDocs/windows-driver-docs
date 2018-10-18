@@ -1,11 +1,8 @@
 ---
 title: INF AddSoftware Directive
 description: An AddSoftware directive describes the installation of standalone software.
-ms.author: windowsdriverdev
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # INF AddSoftware Directive

@@ -3,11 +3,7 @@ title: Evaluating a Control Method Without Input Arguments
 author: windows-driver-content
 description: Evaluating a Control Method Without Input Arguments
 ms.assetid: dd989b4d-46db-4fe3-aa7b-8dbfe37057cb
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +28,7 @@ If the 'ABCD' control method was not an immediate child object, the required cha
 
 ```cpp
     // Fill in the input data
-    inputBuffer.MethodNameAsUlong = (ULONG) (&#39;DCBA&#39;);
+    inputBuffer.MethodNameAsUlong = (ULONG) ('DCBA');
     inputBuffer.Signature = ACPI_EVAL_INPUT_BUFFER_SIGNATURE;
 ```
 
@@ -90,7 +86,7 @@ Return Value:
     *ReturnStatus = 0x0;
 
     // Fill in the input data
-    inputBuffer.MethodNameAsUlong = (ULONG) (&#39;DCBA&#39;);
+    inputBuffer.MethodNameAsUlong = (ULONG) ('DCBA');
     inputBuffer.Signature = ACPI_EVAL_INPUT_BUFFER_SIGNATURE;
 
     // Send the request along

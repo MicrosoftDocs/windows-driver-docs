@@ -2,11 +2,7 @@
 title: IrpCancelField rule (wdm)
 description: The IrpCancelField rule specifies that the driver check the value of the Irp- Cancel member when setting a cancel routine on an IRP that it has pended.
 ms.assetid: e9221436-21ca-47f0-9dc4-e8b1a7a44854
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["IrpCancelField rule (wdm)"]
 topic_type:
 - apiref

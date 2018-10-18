@@ -1,11 +1,7 @@
 ---
 title: ZwRegistryCreate rule (wdm)
 ms.assetid: 7855d9f0-c8f2-42a3-941b-623038c03840
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 description: 
 keywords: ["ZwRegistryCreate rule (wdm)"]
 topic_type:

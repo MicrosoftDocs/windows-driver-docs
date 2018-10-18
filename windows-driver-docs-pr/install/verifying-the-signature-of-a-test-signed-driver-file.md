@@ -10,11 +10,7 @@ keywords:
 - validating test certificates WDK
 - driver file test signing WDK
 - test signing driver packages WDK , driver files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

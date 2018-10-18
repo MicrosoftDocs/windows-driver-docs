@@ -4,9 +4,6 @@ description: DBG\_DUMP\_FIELD\_XXX
 ms.assetid: c168c1b7-c4ef-4a70-9060-611b86120635
 ms.author: domars
 ms.date: 12/07/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["DBG_DUMP_FIELD_XXX Windows Debugging"]
 topic_type:
 - apiref

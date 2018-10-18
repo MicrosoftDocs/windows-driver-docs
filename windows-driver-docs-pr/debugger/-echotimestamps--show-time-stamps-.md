@@ -5,9 +5,6 @@ ms.assetid: c70dc71b-83c2-41de-90f3-638e231c0476
 keywords: ["Show Time Stamps (.echotimestamps) command", "time stamps", "DbgPrint time stamps", ".echotimestamps (Show Time Stamps) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.echotimestamps** command turns on or turns off the display of time stamp information.
 
-```
+```dbgcmd
 .echotimestamps 0 
 .echotimestamps 1 
 .echotimestamps 

@@ -5,9 +5,6 @@ ms.assetid: 17de082d-a252-46e6-a0ca-9f8d4273c1c4
 keywords: ["GFlags, global flag reference"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

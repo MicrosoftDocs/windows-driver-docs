@@ -4,9 +4,6 @@ description: You can extend the capabilities of the analyze debugger command by 
 ms.assetid: 7648F789-85D5-4247-90DD-2EAA43543483
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

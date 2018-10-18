@@ -6,11 +6,7 @@ ms.assetid: 58e181ff-c792-41a5-967d-a69a8ff5a041
 keywords:
 - GDI printer drivers WDK ,
 - DLLs WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -4,11 +4,7 @@ description: Obtaining an HDAUDIO_BUS_INTERFACE_BDL DDI Object
 ms.assetid: 142eb2f0-6c6d-4441-8ad7-0875546c1ab2
 keywords:
 - HDAUDIO_BUS_INTERFACE_BDL structure
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

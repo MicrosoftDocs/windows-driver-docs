@@ -4,11 +4,7 @@ author: windows-driver-content
 description: ControllerControl Routine Requirements
 ms.assetid: b311c0b0-f7b1-4276-a165-5c658657b198
 keywords: ["controller objects WDK kernel , writing ControllerControl routines", "ControllerControl routines, writing", "ControllerControl routines, requirements"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

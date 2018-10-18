@@ -6,11 +6,7 @@ keywords:
 - GDI WDK Windows 2000 display , utility services
 - graphics drivers WDK Windows 2000 display , utility services
 - drawing WDK GDI , utility services
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

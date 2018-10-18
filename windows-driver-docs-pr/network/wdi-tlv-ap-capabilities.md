@@ -3,11 +3,7 @@ title: WDI_TLV_AP_CAPABILITIES
 author: windows-driver-content
 description: WDI_TLV_AP_CAPABILITIES is a TLV that contains the capabilities of an access point.
 ms.assetid: 2DE866C8-9414-46D8-A156-3A35F1E325EF
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - WDI_TLV_AP_CAPABILITIES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

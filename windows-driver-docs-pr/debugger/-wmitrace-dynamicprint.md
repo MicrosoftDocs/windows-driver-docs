@@ -5,9 +5,6 @@ ms.assetid: 458a9dfa-e3cc-4652-a9e5-5098a962f1c7
 keywords: ["wmitrace.dynamicprint Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

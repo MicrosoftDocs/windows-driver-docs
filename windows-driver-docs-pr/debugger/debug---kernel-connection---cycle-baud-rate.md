@@ -5,9 +5,6 @@ ms.assetid: 5d7f13ff-738d-498c-88cb-ad2d6fe596ac
 keywords: ["Debug Kernel Connection Cycle Baud Rate"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

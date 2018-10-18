@@ -7,11 +7,7 @@ keywords:
 - Storport driver support routines
 - storage WDK
 - storage support routines
-ms.author: windowsdriverdev
 ms.date: 06/11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

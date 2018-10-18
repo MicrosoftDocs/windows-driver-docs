@@ -7,11 +7,7 @@ keywords:
 - initializing video miniport drivers
 - HwVidInitialize
 - one-time initialization WDK video miniport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

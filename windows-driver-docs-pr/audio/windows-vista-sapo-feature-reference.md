@@ -7,11 +7,7 @@ keywords:
 - speakerfill WDK
 - swap sample WDK audio
 - compress sample WDK audio
-ms.author: windowsdriverdev
 ms.date: 06/18/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

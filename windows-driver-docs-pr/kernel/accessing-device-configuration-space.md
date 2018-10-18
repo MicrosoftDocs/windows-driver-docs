@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Accessing Device Configuration Space
 ms.assetid: 082500ae-9df2-4f8b-8be3-ff2b95067a12
 keywords: ["I/O WDK kernel , device configuration space", "device configuration space WDK I/O", "configuration space WDK I/O", "space WDK I/O", "resource information WDK I/O", "driver stacks WDK configuration info"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

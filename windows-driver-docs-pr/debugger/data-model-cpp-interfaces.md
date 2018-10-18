@@ -3,9 +3,6 @@ title: Debugger Data Model C++ Interfaces
 description: This topic describes how to use Debugger Data Model C++ Interfaces to extend and customize the capabilities of the debugger.
 ms.author: domars
 ms.date: 10/08/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Debugger Data Model C++ Interfaces 

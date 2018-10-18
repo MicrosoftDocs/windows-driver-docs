@@ -3,11 +3,7 @@ title: SIO_ADDRESS_LIST_QUERY
 author: windows-driver-content
 description: SIO_ADDRESS_LIST_QUERY
 ms.assetid: c50520a3-6ba3-448e-bbb4-bf3425dcbc41
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -SIO_ADDRESS_LIST_QUERY Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

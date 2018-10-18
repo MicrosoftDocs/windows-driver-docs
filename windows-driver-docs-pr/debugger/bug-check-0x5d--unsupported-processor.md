@@ -5,9 +5,6 @@ ms.assetid: 6d483759-7d02-4635-9622-437862165683
 keywords: ["Bug Check 0x5D UNSUPPORTED_PROCESSOR", "UNSUPPORTED_PROCESSOR"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

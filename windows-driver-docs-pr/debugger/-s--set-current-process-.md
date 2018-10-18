@@ -5,9 +5,6 @@ ms.assetid: 6b4d8e00-426c-496b-9c52-c60faeb0c975
 keywords: ["s (Set Current Process) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -5,9 +5,6 @@ ms.assetid: 92c1007b-f871-48e9-a215-4d36ed1371ea
 keywords: ["breakpoints, risks"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

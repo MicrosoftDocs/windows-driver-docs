@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Avoiding Misalignment of Fixed-Precision Data Types
 ms.assetid: 4e214bd8-b622-447a-b484-bd1d5d239de7
 keywords: ["file system control codes WDK 64-bit", "FSCTL WDK 64-bit", "control codes WDK 64-bit", "I/O control codes WDK kernel , 32-bit I/O in 64-bit drivers", "IOCTLs WDK kernel , 32-bit I/O in 64-bit drivers", "pointer precision WDK 64-bit", "fixed-precision data types WDK 64-bit", "misaligned fixed-precision data types"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

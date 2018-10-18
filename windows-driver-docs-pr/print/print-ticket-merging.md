@@ -8,11 +8,7 @@ keywords:
 - render modules WDK XPSDrv , Print Tickets
 - Print Tickets WDK , XPSDrv printer drivers
 - merging Print Ticket objects
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

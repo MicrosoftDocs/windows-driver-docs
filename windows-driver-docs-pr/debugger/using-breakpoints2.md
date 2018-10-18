@@ -5,9 +5,6 @@ ms.assetid: d1880895-dc01-429b-af48-762cb24539f1
 keywords: ["Debugger Engine, breakpoints", "breakpoints"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

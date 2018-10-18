@@ -5,9 +5,6 @@ ms.assetid: 06e3e57b-f486-4165-87ea-37d80a00c34c
 keywords: ["acpiinf Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Including GUIDs in Driver Code
 ms.assetid: 9235f9e6-9c40-4c4b-a98b-99e6b46a11ce
 keywords: ["globally unique identifiers WDK kernel", "GUIDs WDK kernel", "identifiers WDK GUIDs"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

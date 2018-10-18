@@ -5,9 +5,6 @@ ms.assetid: 0a62e3d4-40a3-4886-9696-7fa7f50d2c21
 keywords: ["Bug Check 0x5C HAL_INITIALIZATION_FAILED", "HAL_INITIALIZATION_FAILED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

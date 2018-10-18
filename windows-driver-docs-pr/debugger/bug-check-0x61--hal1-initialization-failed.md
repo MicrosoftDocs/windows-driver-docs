@@ -5,9 +5,6 @@ ms.assetid: bf91dce3-072b-427e-9ef1-c6dfc2e37a4f
 keywords: ["Bug Check 0x61 HAL1_INITIALIZATION_FAILED", "HAL1_INITIALIZATION_FAILED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

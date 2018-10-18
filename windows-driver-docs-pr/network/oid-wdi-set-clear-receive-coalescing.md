@@ -3,11 +3,7 @@ title: OID_WDI_SET_CLEAR_RECEIVE_COALESCING
 author: windows-driver-content
 description: OID_WDI_SET_CLEAR_RECEIVE_COALESCING is used by the host to remove a packet filter for packet coalescing.
 ms.assetid: 1c2848c4-c412-4f33-9fc6-bf900a89c65d
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - OID_WDI_SET_CLEAR_RECEIVE_COALESCING Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

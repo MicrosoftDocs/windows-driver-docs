@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Using Message-Signaled Interrupts
 ms.assetid: 5e1f8648-378f-4d5b-b936-4396d13cf002
 keywords: ["message-signaled interrupts WDK kernel , filtering", "filtering message-signaled interrupts WDK kernel", "MSIs WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: 81EEC1ED-367A-477D-B008-2295C7D7D1B4
 keywords: ["Bug Check 0x160 WIN32K_ATOMIC_CHECK_FAILURE", "WIN32K_ATOMIC_CHECK_FAILURE"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

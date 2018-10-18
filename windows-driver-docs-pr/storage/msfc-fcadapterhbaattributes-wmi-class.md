@@ -3,6 +3,7 @@ title: MSFC\_FCAdapterHBAAttributes WMI Class
 description: MSFC\_FCAdapterHBAAttributes WMI Class
 ms.assetid: fa0ff9c2-e7cc-4000-bd18-ade953e57dcc
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSFC\_FCAdapterHBAAttributes WMI Class

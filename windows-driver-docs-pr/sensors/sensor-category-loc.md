@@ -54,11 +54,7 @@ api_name:
 - SENSOR_DATA_TYPE_VERTICAL_DILUTION_OF_PRECISION
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 01/04/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -4,9 +4,6 @@ description: Online Crash Analysis (OCA) is the reporting facility for Windows E
 ms.assetid: 56F4202D-6A5F-4177-BBFD-70DA717FF24A
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

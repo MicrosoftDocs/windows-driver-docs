@@ -8,11 +8,7 @@ keywords:
 - registry settings WDK WHEA
 - registry settings WDK WHEA , predictive failure analysis (PFA)
 - policy settings WDK WHEA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: efc2201f-b2e5-458b-a2b0-26abaa46f1a4
 keywords: ["Bug Check 0xDC DRIVER_INVALID_STACK_ACCESS", "DRIVER_INVALID_STACK_ACCESS"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

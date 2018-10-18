@@ -7,11 +7,7 @@ keywords:
 - Production directive WDK GDL
 - constructs WDK GDL , valid combinations
 - templates WDK GDL , host template
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

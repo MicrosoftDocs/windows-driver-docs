@@ -4,9 +4,6 @@ description: Viewing and Editing Memory in CDB
 ms.assetid: EE2424F3-A692-4AEA-9F09-337C5758D8AD
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

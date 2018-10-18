@@ -4,11 +4,7 @@ description: Accessing configuration information
 ms.assetid: ABEC75AE-9CE3-4574-B388-BC48D2BC8154
 keywords:
 - NetAdapterCx accessing configuration information, NetCx accessing configuration information
-ms.author: windowsdriverdev
 ms.date: 06/05/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Summary of Kernel-Mode Safe String Functions
 ms.assetid: 71b67d88-2a9a-4c9d-b64c-5fd7fe7e5cda
 keywords: ["safe string functions WDK"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

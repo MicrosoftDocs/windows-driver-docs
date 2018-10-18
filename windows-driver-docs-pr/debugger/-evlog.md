@@ -5,9 +5,6 @@ ms.assetid: 72038e3e-ff12-4df1-8f55-c02258d764aa
 keywords: ["event log", "evlog Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!evlog** extension displays, changes, or backs up the event log.
 
-```
+```dbgcmd
 !evlog addsource [-d] [-s Source] [-t Type] [-f MsgFile] 
 !evlog backup [-d] [-l EventLog] [-f BackupFile] 
 !evlog clear [-!] [-d] [-l EventLog] [-f BackupFile] 
@@ -145,7 +142,7 @@ Remarks
 
 After you have added an event source to the registry with **!evlog addsource**, you can view the values with [**!dreg**](-dreg.md). For example:
 
-```
+```dbgcmd
 0:000> !dreg hklm\system\currentcontrolset\services\eventlog\Application\<source>!* 
 ```
 
@@ -155,7 +152,7 @@ Before using **!evlog report**, you should use **!evlog addsource** to configure
 
 Here is an example of the **!evlog info** extension:
 
-```
+```dbgcmd
 ## 0:000> !evlog info -?
 
 Application Event Log:

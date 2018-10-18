@@ -7,11 +7,7 @@ keywords:
 - querying miniport drivers
 - miniport drivers WDK networking , querying information
 - NDIS miniport drivers WDK , querying information
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

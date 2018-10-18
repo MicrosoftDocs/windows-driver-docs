@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Using IoCompletion Routines
 ms.assetid: 07a6e930-eef0-4408-9f71-55a827aa558e
 keywords: ["IoCompletion routines", "completing IRPs WDK kernel , IoCompletion routines", "completing IRPs WDK kernel , dispatch routines", "dispatch routines WDK kernel , completing IRPs"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

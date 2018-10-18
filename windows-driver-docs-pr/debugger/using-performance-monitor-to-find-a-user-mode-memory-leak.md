@@ -5,9 +5,6 @@ ms.assetid: 07ba4c55-299c-4558-b4c7-4ffe5c47f496
 keywords: ["memory leak, user-mode, performance monitor"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

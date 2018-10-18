@@ -5,9 +5,6 @@ ms.assetid: 6359FC98-F070-410E-AFE7-C2C67A4F7C98
 keywords: ["usbkd._ehciframe Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

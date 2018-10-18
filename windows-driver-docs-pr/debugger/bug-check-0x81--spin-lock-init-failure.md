@@ -5,9 +5,6 @@ ms.assetid: 0af215f5-e7f6-47bd-86e7-9cb3dd1524be
 keywords: ["Bug Check 0x81 SPIN_LOCK_INIT_FAILURE", "SPIN_LOCK_INIT_FAILURE"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

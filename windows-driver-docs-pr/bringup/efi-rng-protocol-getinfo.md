@@ -3,11 +3,7 @@ title: EFI_RNG_PROTOCOL.GetInfo
 author: windows-driver-content
 description: EFI_RNG_PROTOCOL.GetInfo
 ms.assetid: 11E9927B-8BC6-4B01-A12D-C75B636E3988
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

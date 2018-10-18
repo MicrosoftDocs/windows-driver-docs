@@ -5,9 +5,6 @@ ms.assetid: e8dcfba1-94ed-499c-ae00-e0dfaf7f5094
 keywords: ["Bug Check 0x2A INCONSISTENT_IRP", "INCONSISTENT_IRP"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,9 +3,6 @@ title: WinDbg Preview - File Menu
 description: This section describes how to use the file menu in the WinDbg preview debugger.
 ms.author: domars
 ms.date: 08/04/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

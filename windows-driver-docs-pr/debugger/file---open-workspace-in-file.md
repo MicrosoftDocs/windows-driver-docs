@@ -5,9 +5,6 @@ ms.assetid: 902be727-a418-4d84-b20b-39af8e7dd417
 keywords: ["File Open Workspace in File", "workspaces, File Open Workspace in File"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

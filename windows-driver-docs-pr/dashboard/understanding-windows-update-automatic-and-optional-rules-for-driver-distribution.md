@@ -2,11 +2,7 @@
 title: Using Windows Update to Install Drivers
 author: windows-driver-content
 description: This topic describes how you can control when Windows Update distributes your driver.
-ms.author: windowsdriverdev
 ms.date: 6/15/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

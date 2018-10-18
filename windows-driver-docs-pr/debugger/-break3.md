@@ -5,9 +5,6 @@ ms.assetid: 577e74d1-824f-424a-b30e-a82fe2d682f1
 keywords: [".break Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

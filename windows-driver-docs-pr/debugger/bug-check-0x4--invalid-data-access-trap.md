@@ -5,9 +5,6 @@ ms.assetid: 98c7052d-37ff-4ad8-b9c4-afa4226ed1b0
 keywords: ["Bug Check 0x4 INVALID_DATA_ACCESS_TRAP", "INVALID_DATA_ACCESS_TRAP"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

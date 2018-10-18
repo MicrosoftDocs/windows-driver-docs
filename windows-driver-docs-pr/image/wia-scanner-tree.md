@@ -3,11 +3,7 @@ title: WIA Scanner Tree
 author: windows-driver-content
 description: WIA Scanner Tree
 ms.assetid: bd1452b9-1926-4dd6-b94c-e44f07573266
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

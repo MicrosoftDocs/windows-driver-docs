@@ -7,11 +7,7 @@ keywords:
 - I/O WDK TCP chimney offload , 802.1Q and 802.1p information
 - received data processing WDK TCP chimney offload , 802.1Q and 802.1p information
 - 802.1Q and 802.1p information WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

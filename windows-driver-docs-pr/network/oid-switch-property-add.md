@@ -3,11 +3,7 @@ title: OID_SWITCH_PROPERTY_ADD
 author: windows-driver-content
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID_SWITCH_PROPERTY_ADD to notify extensible switch extensions about the addition of a switch policy property.
 ms.assetid: 63A6D2BE-81F4-4D27-B5DF-68466EFF306E
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_SWITCH_PROPERTY_ADD Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

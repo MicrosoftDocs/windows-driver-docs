@@ -9,11 +9,7 @@ keywords:
 - video transport kernel-mode WDK DirectDraw , DxApi interface
 - DxApi interface WDK DirectDraw
 - video capture WDK video transport kernel-mode
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

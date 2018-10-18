@@ -3,11 +3,7 @@ title: Generate ACPI tables by using AcpiGenFx
 author: windows-driver-content
 description: Use the ACPI Generation Framework (AcpiGenFx) library to write an app that generates ACPI tables.
 ms.assetid: 46A725C3-609E-45B9-A4BD-033656208E92
-ms.author: windowsdriverdev
 ms.date: 06/26/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -2,11 +2,7 @@
 title: IrqlIoDispatch rule (wdm)
 description: The IrqlIoDispatch rule specifies that the driver calls the following I/O Manager routines only when it is executing at IRQL DISPATCH\_LEVEL IoGetDeviceToVerify, IoSetDeviceToVerify.
 ms.assetid: 4794123F-EB8E-4B3D-A7DE-8E6B145AE816
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["IrqlIoDispatch rule (wdm)"]
 topic_type:
 - apiref

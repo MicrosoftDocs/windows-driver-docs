@@ -2,11 +2,7 @@
 title: Support for headless systems
 description: Windows 8 supports booting without any graphics hardware.
 ms.assetid: 6351F6F9-6666-4040-A82A-3813ACCE8DEA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

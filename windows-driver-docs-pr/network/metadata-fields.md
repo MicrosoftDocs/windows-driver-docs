@@ -5,11 +5,7 @@ description: This section describes metadata fields for Windows Filtering Platfo
 ms.assetid: 6a40cfd3-8820-4247-b3ad-558899c91aa6
 keywords:
 - Metadata fields network drivers
-ms.author: windowsdriverdev
 ms.date: 11/09/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

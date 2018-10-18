@@ -5,9 +5,6 @@ ms.assetid: f36a26b6-18a8-4a01-96c7-99826e6b662f
 keywords: ["ndiskd.dbgsystems Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -5,9 +5,6 @@ ms.assetid: 25a85b38-c299-4bf8-a7ed-f516adb5fcb1
 keywords: ["Bug Check 0xC7 TIMER_OR_DPC_INVALID", "TIMER_OR_DPC_INVALID"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

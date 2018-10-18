@@ -5,9 +5,6 @@ ms.assetid: 99b4d1c7-8639-4e4c-905e-b9a351c101a1
 keywords: ["Bug Check 0x16 CID_HANDLE_CREATION", "CID_HANDLE_CREATION"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

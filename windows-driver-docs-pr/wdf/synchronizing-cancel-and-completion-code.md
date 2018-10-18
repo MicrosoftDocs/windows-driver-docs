@@ -10,11 +10,7 @@ keywords:
 - completing I/O requests WDK KMDF
 - request processing WDK KMDF , synchronization
 - I/O requests WDK KMDF , synchronization
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

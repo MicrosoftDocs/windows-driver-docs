@@ -8,11 +8,7 @@ keywords:
 - privately-defined IOCTL_VIDEO_XXX requests WDK video miniport
 - IOCTL_VIDEO_XXX requests WDK video miniport
 - I/O WDK video miniport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

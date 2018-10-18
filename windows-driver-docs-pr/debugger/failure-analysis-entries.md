@@ -4,9 +4,6 @@ description: A DebugFailureAnalysis object has a collection of failure analysis 
 ms.assetid: 759DE159-F2A8-4BB1-AAF5-B2B91C4F91B0
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

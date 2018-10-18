@@ -5,9 +5,6 @@ ms.assetid: 0878695D-E7ED-498D-AD37-994371C319C4
 keywords: ["usbkd._ehciitd Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

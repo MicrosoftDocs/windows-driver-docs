@@ -5,9 +5,6 @@ ms.assetid: e1cb2415-64a5-4c8a-902a-dbf78019243c
 keywords: ["Edit Cut", "text, Edit Cut"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

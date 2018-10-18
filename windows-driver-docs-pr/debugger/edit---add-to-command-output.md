@@ -5,9 +5,6 @@ ms.assetid: 6c71bdc8-bf3a-49e7-8cbe-0ed378b98413
 keywords: ["Edit Add to Command Output", "Debugger Command window, Edit Add to Command Output"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

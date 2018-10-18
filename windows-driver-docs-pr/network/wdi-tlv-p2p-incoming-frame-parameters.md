@@ -3,11 +3,7 @@ title: WDI_TLV_P2P_INCOMING_FRAME_PARAMETERS
 author: windows-driver-content
 description: WDI_TLV_P2P_INCOMING_FRAME_PARAMETERS is a TLV that contains incoming Wi-Fi Direct action frame parameters.
 ms.assetid: 8E530962-E4DC-4845-8A5F-87AC4E000DA8
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - WDI_TLV_P2P_INCOMING_FRAME_PARAMETERS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

@@ -8,11 +8,7 @@ keywords:
 - custom capabilities
 - UWP
 - Hardware
-ms.author: windowsdriverdev
 ms.date: 08/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

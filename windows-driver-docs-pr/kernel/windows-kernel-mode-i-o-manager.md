@@ -4,6 +4,7 @@ author: windows-driver-content
 description: Windows Kernel-Mode I/O Manager
 ms.assetid: 8652f37d-0ece-4c08-9bce-499f0fedb0dd
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Windows Kernel-Mode I/O Manager

@@ -5,9 +5,6 @@ ms.assetid: c305acba-48b9-4597-925a-8b1ded4f0048
 keywords: ["SCSI Miniport Debugging, hangs and time-outs"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

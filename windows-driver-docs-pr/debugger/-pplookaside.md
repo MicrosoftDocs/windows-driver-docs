@@ -5,9 +5,6 @@ ms.assetid: AA5DD47A-849F-462E-AFA6-E743E9737E1A
 keywords: ["pplookaside Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

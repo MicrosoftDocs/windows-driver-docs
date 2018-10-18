@@ -5,9 +5,6 @@ ms.assetid: 7b169af0-e799-47eb-b197-c4408a755702
 keywords: ["l+, l- (Set Source Options) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

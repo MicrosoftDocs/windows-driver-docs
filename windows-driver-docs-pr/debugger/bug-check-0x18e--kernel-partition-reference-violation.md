@@ -4,9 +4,6 @@ description: The KERNEL_PARTITION_REFERENCE_VIOLATION bug check has a value of 0
 keywords: ["Bug Check 0x18E KERNEL_PARTITION_REFERENCE_VIOLATION",  "KERNEL_PARTITION_REFERENCE_VIOLATION"]
 ms.author: domars
 ms.date: 05/23/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

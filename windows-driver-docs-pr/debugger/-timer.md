@@ -5,9 +5,6 @@ ms.assetid: 795bdfe1-1ee4-4bf2-9fcd-80415fe84754
 keywords: ["timer Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

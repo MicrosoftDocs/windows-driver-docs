@@ -5,9 +5,6 @@ ms.assetid: 5BB87FA2-0531-400C-95B3-325EE4DDB649
 keywords: ["usbkd.usbhuberr Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

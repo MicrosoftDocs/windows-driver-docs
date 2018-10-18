@@ -5,9 +5,6 @@ ms.assetid: bef29d75-6620-4219-b402-36fbddc4fe1f
 keywords: ["dump file, user-mode"]
 ms.author: domars
 ms.date: 08/01/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

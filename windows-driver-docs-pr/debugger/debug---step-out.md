@@ -5,9 +5,6 @@ ms.assetid: 628a9f15-745a-4502-9999-a9139d4a91de
 keywords: ["Debug Step Out", "controlling the target, Debug Step Out"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: 49a83e46-1390-4b60-bd61-a5da80c513e3
 keywords: [".noshell (Prohibit Shell Commands) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

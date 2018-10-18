@@ -3,11 +3,7 @@ title: OID_WAN_CO_SET_LINK_INFO
 author: windows-driver-content
 description: The OID_WAN_CO_SET_LINK_INFO OID requests the miniport driver to set PPP framing information for a specific virtual connection (VC). A protocol uses an NDIS_WAN_CO_SET_LINK_INFO structure, defined as follows, to indicate this PPP framing information.
 ms.assetid: 4487289a-01f6-4ae1-b660-3011d66acb29
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_WAN_CO_SET_LINK_INFO Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

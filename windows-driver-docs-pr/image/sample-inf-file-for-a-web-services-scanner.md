@@ -3,11 +3,7 @@ title: Sample INF File for a Web Services Scanner
 author: windows-driver-content
 description: Sample INF File for a Web Services Scanner
 ms.assetid: 1e65739f-9216-4962-9108-60ba291ff052
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,7 +58,7 @@ DefaultDestDir = 11
 ; Replace UMB\PnPX_YourDevice_HardwareID in the three Models 
 ; sections below to match the actual hardware IDs and compatible 
 ; IDs from the metadata that is supplied by the device, as it 
-; is described in the PNP-X Implementer&#39;s Guide for the 
+; is described in the PNP-X Implementer's Guide for the 
 ; PKEY_Device_HardwareIds property:
 ;
 

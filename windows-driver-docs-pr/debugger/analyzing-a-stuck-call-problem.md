@@ -5,9 +5,6 @@ ms.assetid: e1a80cde-cf83-4a16-ae4b-5ddd5eb77b6d
 keywords: ["RPC debugging, stuck call"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

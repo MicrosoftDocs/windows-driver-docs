@@ -4,9 +4,6 @@ description: The CALL_HAS_NOT_RETURNED_WATCHDOG_TIMEOUT_LIVEDUMP live dump has a
 keywords: ["Bug Check 0x1A3 CALL_HAS_NOT_RETURNED_WATCHDOG_TIMEOUT_LIVEDUMP", "CALL_HAS_NOT_RETURNED_WATCHDOG_TIMEOUT_LIVEDUMP"]
 ms.author: domars
 ms.date: 05/25/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -7,11 +7,7 @@ keywords:
 - GPD file entries WDK Unidrv , standard variables
 - variables WDK GPD files
 - standard variables WDK GPD files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

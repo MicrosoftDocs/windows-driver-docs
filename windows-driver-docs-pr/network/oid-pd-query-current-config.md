@@ -3,11 +3,7 @@ title: OID_PD_QUERY_CURRENT_CONFIG
 author: windows-driver-content
 description: An NDIS protocol or filter driver sends an object identifier (OID) method request of OID_PD_QUERY_CURRENT_CONFIG to a PD-capable miniport driver to retrieve the PD status and capabilities. All PD-capable miniport drivers must handle this OID request.
 ms.assetid: 1BF09EAE-9D03-4655-98CD-D3A10BF48A48
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_PD_QUERY_CURRENT_CONFIG Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

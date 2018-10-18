@@ -5,9 +5,6 @@ ms.assetid: 6a77b76b-c970-447c-a8dd-e1ceb7add611
 keywords: ["wdfkd.wdfpoolusage Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

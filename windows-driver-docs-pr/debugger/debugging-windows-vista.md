@@ -4,9 +4,6 @@ description: To use WinDbg to debug Windows Vista, get the Windows 7 Debugging 
 ms.assetid: 1E4FC9D9-7F84-4F67-8FBC-4283C69AB0AC
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

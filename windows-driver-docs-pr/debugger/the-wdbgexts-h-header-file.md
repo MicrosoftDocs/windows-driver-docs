@@ -5,9 +5,6 @@ ms.assetid: a2c59657-b151-41e3-aa44-bdd8303eaf49
 keywords: WdbgExts API, wdbgexts.h, wdbgexts.h header file
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

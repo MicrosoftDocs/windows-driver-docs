@@ -3,11 +3,7 @@ title: OID_WDI_TASK_SET_RADIO_STATE
 author: windows-driver-content
 description: OID_WDI_TASK_SET_RADIO_STATE is used to set the Wi-Fi radio state for the adapter.
 ms.assetid: d7981df2-d3e5-49fd-8414-ca350775828b
-ms.author: windowsdriverdev 
 ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 keywords:
  - OID_WDI_TASK_SET_RADIO_STATE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

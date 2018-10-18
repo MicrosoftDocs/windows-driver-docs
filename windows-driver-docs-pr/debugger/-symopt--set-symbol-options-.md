@@ -5,9 +5,6 @@ ms.assetid: 0793baa3-14f7-48df-8773-736b6a5470e6
 keywords: [".symopt (Set Symbol Options) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

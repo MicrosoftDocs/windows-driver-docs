@@ -5,9 +5,6 @@ ms.assetid: 4a5d1d84-a958-45a6-9511-b5b4ecd4c067
 keywords: ["Bug Check 0x121 DRIVER_VIOLATION", "DRIVER_VIOLATION"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

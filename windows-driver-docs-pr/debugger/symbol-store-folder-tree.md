@@ -4,9 +4,6 @@ description: The symbol store backing SMB and HTTP requests is a folder tree res
 ms.assetid: AB23A180-71C3-4EBE-A3DE-765D264EF130
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

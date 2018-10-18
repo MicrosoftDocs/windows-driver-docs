@@ -5,9 +5,6 @@ ms.assetid: 83811F9F-5899-4EC8-83D7-39EE884C0A01
 keywords: ["usbkd.usbhcdext Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,11 +3,7 @@ title: SIO_QUERY_WFP_CONNECTION_REDIRECT_RECORDS control code
 author: windows-driver-content
 description: The SIO_QUERY_WFP_CONNECTION_REDIRECT_RECORDS socket I/O control operation allows a Winsock client to retrieve the redirect record for a redirected connection.
 ms.assetid: D04C63B8-DD08-4943-9F83-B5D05F4F2CCF
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -SIO_QUERY_WFP_CONNECTION_REDIRECT_RECORDS control code Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

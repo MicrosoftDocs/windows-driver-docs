@@ -5,11 +5,7 @@ description: This section describes Data offset positions for Windows Filtering 
 ms.assetid: cf4656cf-b978-4539-9fff-8f0aa5de1b5e
 keywords:
 - Data offset positions network drivers
-ms.author: windowsdriverdev
 ms.date: 11/09/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

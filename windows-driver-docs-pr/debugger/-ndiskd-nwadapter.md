@@ -5,9 +5,6 @@ ms.assetid: 6CDB8F35-B686-45FD-A940-A770D4D62E51
 keywords: ["ndiskd.nwadapter Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

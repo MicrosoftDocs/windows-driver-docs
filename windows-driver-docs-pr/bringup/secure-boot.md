@@ -2,11 +2,7 @@
 title: Secure Boot
 description: Secure Boot
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 08/06/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

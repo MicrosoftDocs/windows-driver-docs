@@ -4,11 +4,7 @@ description: Describes the behavior of MBB-NetAdapter class extension and tasks 
 ms.assetid: FE69E832-848F-475A-9BF1-BBB198D08A86
 keywords:
 - Mobile Broadband (MBB) WDF class extension, MBBCx, Mobile Broadband NetAdapterCx
-ms.author: windowsdriverdev
 ms.date: 03/19/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

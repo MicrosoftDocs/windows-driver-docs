@@ -3,11 +3,7 @@ title: 'REMOTE_NDIS_QUERY_MSG'
 author: windows-driver-content
 Description: 'This message is sent to a Remote NDIS device from a host when it needs to query the device for its characteristics, statistics information, or status.'
 ms.assetid: 9cf79495-a115-49ce-a0cf-fa4fa2183a8a
-ms.author: windowsdriverdev
 ms.date: 07/31/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

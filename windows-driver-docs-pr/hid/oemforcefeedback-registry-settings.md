@@ -5,6 +5,7 @@ description: OEMForceFeedback Registry Settings
 ms.assetid: c29fe1e8-1cd9-4b32-96d7-1afae5a49d42
 keywords: ["force feedback drivers WDK HID , OEMForceFeedback settiings", "OEMForceFeedback key WDK HID", "registry WDK force feedback", "Effects subkey WDK force feedback"]
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # OEMForceFeedback Registry Settings
