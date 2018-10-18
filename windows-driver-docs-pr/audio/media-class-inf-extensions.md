@@ -11,10 +11,9 @@ ms.localizationpriority: medium
 
 ## <span id="ddk_media_class_inf_extensions_ks"></span><span id="DDK_MEDIA_CLASS_INF_EXTENSIONS_KS"></span>
 
-
 The following INF file keywords are defined for installing media-class device drivers and configuring audio processing modes:
 
-[**SetupPreferredAudioDevices**](setuppreferredaudiodevices.md)
+[**PKEY\_APO\_SWFallback\_ProcessingModes**](pkey-apo-swfallback-processingmodes.md)
 
 [**PKEY\_AudioDevice\_EnableEndpointByDefault**](pkey-audiodevice-enableendpointbydefault.md)
 
@@ -49,6 +48,8 @@ The following INF file keywords are defined for installing media-class device dr
 [**PKEY\_MFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming**](pkey-mfx-keyworddetector-processingmodes-supported-for-streaming.md)
 
 [**PKEY\_EFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming**](pkey-efx-keyworddetector-processingmodes-supported-for-streaming.md)
+
+[**SetupPreferredAudioDevices**](setuppreferredaudiodevices.md)
 
 [**UsePositionLock**](usepositionlock.md)
 
