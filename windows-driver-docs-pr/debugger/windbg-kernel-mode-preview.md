@@ -6,12 +6,6 @@ ms.date: 08/15/2017
 ms.localizationpriority: medium
 ---
 
-
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
-
-
 # WinDbg Preview - Starting a kernel mode session 
 
 This topic describes how to start a kernel mode session with WinDbg Preview.

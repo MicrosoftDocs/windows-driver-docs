@@ -21,13 +21,13 @@ The **th** command executes the program until it reaches any kind of branching i
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] th [r] [= StartAddress] [Count] 
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 th [r] [= StartAddress] [Count] 
 ```
 

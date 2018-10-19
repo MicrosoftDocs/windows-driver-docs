@@ -21,13 +21,13 @@ The **pa** command executes the program until the specified address is reached, 
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] pa [r] [= StartAddress] StopAddress ["Command"]
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 pa [r] [= StartAddress] StopAddress ["Command"]
 ```
 
@@ -93,13 +93,13 @@ During this execution, all steps are displayed explicitly. Called functions are 
 
 For example, the following command explicitly steps through the target code until the return address of the current function is reached.
 
-```
+```dbgcmd
 0:000> pa @$ra 
 ```
 
 The following example demonstrates using the **pa** command along with the **kb** command to display the stack trace:
 
-```
+```dbgcmd
 0:000> pa 70b5d2f1 "kb"
 ```
 

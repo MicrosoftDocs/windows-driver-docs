@@ -24,7 +24,7 @@ When you write a WdbgExts extension DLL, you can export certain functions:
 
     For example, you could create global variables named ExtensionApis, SavedMajorVersion, and SavedMinorVersion as shown in the following example.
 
-    ```ManagedCPlusPlus
+    ```cpp
     WINDBG_EXTENSION_APIS64 ExtensionApis;
     USHORT SavedMajorVersion;
     USHORT SavedMinorVersion;

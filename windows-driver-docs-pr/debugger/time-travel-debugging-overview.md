@@ -6,10 +6,6 @@ ms.date: 09/18/2017
 ms.localizationpriority: medium
 ---
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
-
 # ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) Time Travel Debugging - Overview
 
 
@@ -62,7 +58,7 @@ Index files can also be large, typically twice as large as the trace file.
 
 You can recreate the index file from the trace file using the !tt.index command.
 
-```
+```dbgcmd
 0:000> !tt.index
 Successfully created the index in 10ms.
 ```
@@ -71,7 +67,7 @@ Recording errors and other recording output is written to a WinDbg log file.
 
 All of the output files are stored in a location configured by the user. The default location is in the users document folder. For example, for User1 the TTD files would be stored here:
 
-```
+```console
 C:\Users\User1\Documents
 ```
 

@@ -18,7 +18,7 @@ SymSrv can be used with WinDbg, KD, NTSD, or CDB.
 
 To use this symbol server with the debugger, simply include the text **srv\*** in the symbol path. For example:
 
-```
+```console
 set _NT_SYMBOL_PATH = srv*DownstreamStore*SymbolStoreLocation
 ```
 
@@ -26,7 +26,7 @@ where *DownstreamStore* specifies the local directory or network share that will
 
 Microsoft has a Web site that makes Windows symbols publicly available. You can refer directly to this site in your symbol path in the following manner:
 
-```
+```console
 set _NT_SYMBOL_PATH=srv*DownstreamStore*https://msdl.microsoft.com/download/symbols
 ```
 

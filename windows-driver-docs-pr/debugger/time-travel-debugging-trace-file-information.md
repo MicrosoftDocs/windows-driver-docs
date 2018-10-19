@@ -6,11 +6,6 @@ ms.date: 09/21/2017
 ms.localizationpriority: medium
 ---
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
-
-
 # ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) Time Travel Debugging - Working with Trace Files
 
 This section describes how to work with files created and consumed by time travel debugging.
@@ -34,7 +29,7 @@ Trace .RUN files can be opened after they are recorded using **File** > **Start 
 
 All of the trace output files are stored in the users document folder by default. For example, for User1 the TTD files would be stored here:
 
-```
+```console
 C:\Users\User1\Documents
 ```
 You can change the location of the trace files when you start to record. For more information, see [Time Travel Debugging - Recording](time-travel-debugging-record.md).
@@ -51,9 +46,9 @@ An index .IDX file is created for the associated trace .RUN file automatically w
 IDX files can also be large, typically twice the size of the  .RUN file.  
 
 ## Recreating the .IDX file
-You can recreate the .IDX file from the .RUN file, using the ```!index``` command. For more information, see [Time Travel Debugging - !index (time travel)](time-travel-debugging-extension-index.md).
+You can recreate the .IDX file from the .RUN file, using the `!index` command. For more information, see [Time Travel Debugging - !index (time travel)](time-travel-debugging-extension-index.md).
 
-```
+```dbgcmd
 0:0:001> !index
 Indexed 3/3 keyframes
 Successfully created the index in 49ms.
@@ -69,7 +64,7 @@ The .IDX file does not need to be copied as it can be re-created using the !inde
 
 
 > [!TIP]
-> When collaborating with others, pass on any relevant trace positions related to the problem at hand. The collaborator can use the ```!tt x:y``` command to move to that exact point in time in the execution of the code. Time position ranges can be included in bug descriptions to track where the possible issue may be occurring.
+> When collaborating with others, pass on any relevant trace positions related to the problem at hand. The collaborator can use the `!tt x:y` command to move to that exact point in time in the execution of the code. Time position ranges can be included in bug descriptions to track where the possible issue may be occurring.
 >
 
 
@@ -79,7 +74,7 @@ Recording errors and other recording output is written to the debugger log file.
 
 This example shows the error log text when attempting to launch and record an executable named Foo.exe that is not in the C:\Windows directory.
 
-```
+```console
 2017-09-21:17:18:10:320 : Information : DbgXUI.dll : TTD: Output: 
 Microsoft (R) TTD 1.01.02
 Release: 10.0.16366.1000

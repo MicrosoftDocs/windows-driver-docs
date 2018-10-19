@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **tb** command executes the program until a branch instruction is reached.
 
-```
+```dbgcmd
 tb [r] [= StartAddress] [Count] 
 ```
 

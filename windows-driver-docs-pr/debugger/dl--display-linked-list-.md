@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **dl** command displays a LIST\_ENTRY or SINGLE\_LIST\_ENTRY linked list.
 
-```
+```dbgcmd
 dl[b] Address MaxCount Size
 ```
 

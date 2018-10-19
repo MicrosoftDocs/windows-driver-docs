@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **ur** command displays an assembly translation of the specified 16-bit real-mode code.
 
-```
+```dbgcmd
 ur Range 
 ur Address
 ur 

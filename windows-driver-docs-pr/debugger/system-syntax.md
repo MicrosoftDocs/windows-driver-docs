@@ -59,7 +59,7 @@ Example
 -------
 This example shows three dump files are loaded. System 1 is active and system 2 caused the debug event.
 
-```
+```dbgcmd
 ||1:1:017> ||
    0 User mini dump: c:\notepad.dmp
 .  1 User mini dump: c:\paint.dmp

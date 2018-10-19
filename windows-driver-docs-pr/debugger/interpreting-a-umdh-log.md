@@ -18,13 +18,13 @@ User-Mode Dump Heap (UMDH) log files display the list of heap allocations in the
 
 This example shows how to generate a log for a process that has ID 1204. The log is written to the file log1.txt.
 
-```
+```console
 umdh -p:1204 -f:log1.txt
 ```
 
 The log file is not readable because the symbols are not resolved. UMDH resolves symbols when you analyze the log. This example shows how to analyze log1.txt and store the result in result.txt.
 
-```
+```console
 umdh -v log1.txt  > result.txt
 ```
 

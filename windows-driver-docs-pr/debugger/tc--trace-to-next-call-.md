@@ -21,13 +21,13 @@ The **tc** command executes the program until a call instruction is reached.
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] tc [r] [= StartAddress] [Count] 
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 tc [r] [= StartAddress] [Count] 
 ```
 

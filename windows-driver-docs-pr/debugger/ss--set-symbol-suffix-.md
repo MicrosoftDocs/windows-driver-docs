@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **ss** command sets or displays the current suffix value that is used for symbol matching in numeric expressions.
 
-```
+```dbgcmd
 ss [a|w|n] 
 ```
 

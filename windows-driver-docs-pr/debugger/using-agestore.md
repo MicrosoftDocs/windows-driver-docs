@@ -19,19 +19,19 @@ There are three ways to specify which files within the target directory or targe
 
 For example, the following command deletes all files in C:\\MyDir that were last accessed prior to January 7, 2008:
 
-```
+```console
 agestore c:\mydir -date=01-07-2008
 ```
 
 The following command deletes all files in the directory tree subordinate to C:\\symbols\\downstreamstore that were last accessed over thirty days ago:
 
-```
+```console
 agestore c:\symbols\downstreamstore -days=30 -s
 ```
 
 The following command deletes files in the directory tree subordinate to C:\\symbols\\downstreamstore, beginning with those accessed longest ago, until the total size of all files in this tree is less than or equal to 50,000 bytes:
 
-```
+```console
 agestore c:\symbols\downstreamstore -size=50000 -s
 ```
 
@@ -43,22 +43,22 @@ For the complete command line syntax, see [**AgeStore Command-Line Options**](ag
 
 Because AgeStore deletes files based on the last time that they were accessed, it can run successfully only if your file system stores Last Access Time (LAT) data. In the NTFS file system, LAT data storage can be either enabled or disabled. If it is disabled, AgeStore will not run, but will display the following error message instead:
 
-```
+```console
 Last-Access-Time support is disabled on this computer.
 Please read the documentation for more details.
 ```
 
-In Windows 2000, Windows XP, and Windows Server 2003, LAT data storage is enabled by default. In Windows Vista and later versions of Windows, LAT data storage is disabled by default, and therefore AgeStore will not run unless you first enable this data.
+In Windows Vista and later versions of Windows, LAT data storage is disabled by default, and therefore AgeStore will not run unless you first enable this data.
 
 In Windows Vista and later versions of Windows, you can use the FSUtil (Fsutil.exe) tool to enable the gathering of LAT data. From a Command Prompt window, issue the following command:
 
-```
+```console
 fsutil behavior set disablelastaccess 0 
 ```
 
 To disable the gathering of LAT data, using the following command:
 
-```
+```console
 fsutil behavior set disablelastaccess 1 
 ```
 

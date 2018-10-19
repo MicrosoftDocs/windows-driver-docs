@@ -13,13 +13,13 @@ ms.localizationpriority: medium
 
 In Microsoft Windows XP and later operating systems, it is possible to do local kernel debugging by starting the kernel debugger (KD) or WinDbg with the **-kl** command line option:
 
-```
+```console
 kd [-y SymbolPath] -kl 
 ```
 
 or
 
-```
+```console
 windbg [-y SymbolPath] -kl 
 ```
 

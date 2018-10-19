@@ -21,7 +21,7 @@ The **f** and **fp** commands fill the specified memory range with a repeating p
 
 These commands should not be confused with the [**~F (Freeze Thread)**](-f--freeze-thread-.md) command.
 
-```
+```dbgcmd
 f Range Pattern 
 fp [MemoryType] PhysicalRange Pattern
 ```
@@ -102,27 +102,27 @@ If *pattern* has more values than the number of bytes in the range, the debugger
 
 Here are some examples. Assuming the current radix is 16, the following command will fill memory locations 0012FF40 through 0012FF5F with the pattern "ABC", repeated several times:
 
-```
+```dbgcmd
 0:000> f 0012ff40 L20 'A' 'B' 'C'
 ```
 
 The following command has the exact same effect:
 
-```
+```dbgcmd
 0:000> f 0012ff40 L20 41 42 43
 ```
 
 The following examples show how you can use the physical memory types (**c**, **uc**, and **wc**) with the **fp** command in kernel mode:
 
-```
+```dbgcmd
 kd> fp [c] 0012ff40 L20 'A' 'B' 'C'
 ```
 
-```
+```dbgcmd
 kd> fp [uc] 0012ff40 L20 'A' 'B' 'C'
 ```
 
-```
+```dbgcmd
 kd> fp [wc] 0012ff40 L20 'A' 'B' 'C'
 ```
 

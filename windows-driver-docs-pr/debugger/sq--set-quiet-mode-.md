@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **sq** command turns quiet mode on or off.
 
-```
+```dbgcmd
 sq 
 sq{e|d} 
 ```

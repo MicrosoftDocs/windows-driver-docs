@@ -33,7 +33,7 @@ A number from 0x80000000 through 0xFFFFFFFF is sign extended based on the follow
 -   Pseudo-registers are always stored as 64-bit values. They are not sign extended when they are evaluated. When a pseudo-register is *assigned* a value, the expression that is used is evaluated according to the standard C++ criteria.
 
 -   Individual numbers and registers in an expression can be sign extended, but no other calculations during expression evaluation are sign extended. As a result, you can mask the high bits of a number or register by using the following syntax.
-    ```
+    ```console
     ( 0x0`FFFFFFFF & expression )
     ```
 

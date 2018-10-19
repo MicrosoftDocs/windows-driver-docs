@@ -28,7 +28,7 @@ The **-s** command-line option is used to specify the server name, and the **-p*
 
 Here is an example:
 
-```
+```console
 G:\>dbgrpc -s MyServer -p ncacn_ip_tcp -l -P 1e8 -L 0.1
 Getting remote cell info ...
 Endpoint

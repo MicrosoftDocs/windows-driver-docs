@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **ob**, **ow**, and **od** commands send a byte, word, or double word to the selected port.
 
-```
+```dbgcmd
 ob Address Value 
 ow Address Value 
 od Address Value 

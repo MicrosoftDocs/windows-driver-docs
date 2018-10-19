@@ -15,7 +15,7 @@ To use [SrcSrv](srcsrv.md) with WinDbg, KD, NTSD, or CDB, verify that you have i
 
 For example:
 
-```
+```dbgcmd
 .srcpath srv*;c:\someSourceCode
 ```
 

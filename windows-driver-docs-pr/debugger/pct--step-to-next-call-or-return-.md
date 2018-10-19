@@ -21,13 +21,13 @@ The **pct** command executes the program until it reaches a call instruction or 
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] pct [r] [= StartAddress] [Count] 
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 pct [r] [= StartAddress] [Count] 
 ```
 
