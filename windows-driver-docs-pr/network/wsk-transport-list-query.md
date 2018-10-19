@@ -3,7 +3,7 @@ title: WSK_TRANSPORT_LIST_QUERY
 author: windows-driver-content
 description: WSK_TRANSPORT_LIST_QUERY
 ms.assetid: feb6aed2-fac9-4d3f-a36b-f721c737aacf
-ms.date: 07/18/2017 
+ms.date: 07/18/2017
 keywords:
  - WSK_TRANSPORT_LIST_QUERY Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

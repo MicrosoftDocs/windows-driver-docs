@@ -8,7 +8,7 @@ keywords:
 - UVC INF files WDK USB Video Class
 - UVC INF files WDK USB Video Class , sample code
 - sample code WDK USB Video Class , UVC INF files
-ms.date: 9/12/2018
+ms.date: 09/12/2018
 ms.localizationpriority: medium
 ---
 

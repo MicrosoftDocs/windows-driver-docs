@@ -5,7 +5,7 @@ description: The eHS_UPDATE_RESULT enumeration indicates the result of a “chec
 ms.assetid: 7b9b8ddc-3101-466a-9640-b936f6d14de4
 keywords: 
 - eHS_UPDATE_RESULT enumeration Network Drivers Starting with Windows Vista
-ms.date: 07/31/2017 
+ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
 

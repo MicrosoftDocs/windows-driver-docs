@@ -3,7 +3,7 @@ title: OID_WDI_SET_ENCAPSULATION_OFFLOAD
 author: windows-driver-content
 description: OID_WDI_SET_ENCAPSULATION_OFFLOAD is sent by the OS to indicate that the lower edge driver (LE) should start doing the TCP Checksum/LSO offloads.
 ms.assetid: 1095DBE0-2C6B-40F4-8E01-39F4BBA2FDBC
-ms.date: 07/18/2017 
+ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_ENCAPSULATION_OFFLOAD Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

@@ -3,7 +3,7 @@ title: WDI_TLV_PHY_CAPABILITIES
 author: windows-driver-content
 description: WDI_TLV_PHY_CAPABILITIES is a TLV that contains PHY capabilities.
 ms.assetid: 8F482ED6-6594-4DB5-B53B-4424DAD32D36
-ms.date: 07/18/2017 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PHY_CAPABILITIES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

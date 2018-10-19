@@ -5,7 +5,7 @@ description: The HS_HOST_UPDATE_CONFIGURATION_COMPLETION function indicates the 
 ms.assetid: 7e9eda04-db8e-4181-90e3-8716a99429a8
 keywords: 
 - typedef DWORD (WINAPI HS_HOST_UPDATE_CONFIGURATION_COMPLETION) function Network Drivers Starting with Windows Vista
-ms.date: 07/31/2017 
+ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
 
