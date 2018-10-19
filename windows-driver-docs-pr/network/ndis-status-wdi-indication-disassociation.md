@@ -3,7 +3,7 @@ title: NDIS_STATUS_WDI_INDICATION_DISASSOCIATION
 author: windows-driver-content
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_DISASSOCIATION to indicate that a port disconnected from the network.
 ms.assetid: 4e3ed3ed-1b96-49ea-b60f-a36d2a3fc082
-ms.date: 07/18/2017 
+ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_DISASSOCIATION Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
