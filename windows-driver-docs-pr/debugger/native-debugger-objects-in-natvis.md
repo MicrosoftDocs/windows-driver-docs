@@ -52,7 +52,7 @@ Refer to these resources for general information about working with NatVis.
 
 Create a simple C++ application that has an instance of the class **CDog**.
 
-```ManagedCPlusPlus
+```cpp
 class CDog
 {
 public:
@@ -86,7 +86,7 @@ C:\\Program Files\\Debugging Tools for Windows (x64)\\Visualizers
 
 Run your program, and break in at the main function. Take a step so that the variable `MyDog` gets initialized. Display `MyDog` using [**??**](----evaluate-c---expression-.md) and again using **dx**.
 
-```
+```dbgcmd
 0:000> ??MyDog
 class CDog
    +0x000 m_age        : 0n8

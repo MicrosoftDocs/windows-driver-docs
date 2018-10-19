@@ -21,13 +21,13 @@ The **pt** command executes the program until a return instruction is reached.
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] pt [r] [= StartAddress] [Count] ["Command"]
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 pt [r] [= StartAddress] [Count] ["Command"]
 ```
 
@@ -91,7 +91,7 @@ In source mode, you can associate one source line with multiple assembly instruc
 
 The following example demonstrates using the **pt** command along with the **kb** command to display the stack trace:
 
-```
+```dbgcmd
 0:000> pt "kb"
 ```
 

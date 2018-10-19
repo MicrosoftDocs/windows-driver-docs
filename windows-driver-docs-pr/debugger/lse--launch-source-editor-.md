@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **lse** command opens an editor for the current source file.
 
-```
+```dbgcmd
 lse 
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The KDbgCtrl command line uses the following syntax:
 
-```
+```dbgcmd
 kdbgctrl [-e|-d|-c] [-ea|-da|-ca] [-eu|-du|-cu] [-eb|-db|-cb] [-sdb Size | -cdb] 
 
 kdbgctrl -cx 

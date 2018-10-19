@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 To extract all of the source files from all the modules for which you want to provide source, use the command:
 
-```
+```console
 srctool.exe -x
 ```
 
@@ -23,7 +23,7 @@ This tool must be executed on .pdb files that have already been source-indexed f
 
 The Walk (Walk.cmd) script is included in Debugging Tools for Windows. This script searches recursively through a directory tree and executes any specified command on any file that matches a specified file mask. The syntax is:
 
-```
+```console
 walk.cmd FileMask Command
 ```
 
@@ -31,7 +31,7 @@ where *FileMask* specifies a file mask, with or without an accompanying starting
 
 Here is an example that runs the srctool.exe file extraction command on all .pdb files in c:\\symbols and its subdirectories:
 
-```
+```console
 walk.cmd c:\symbols\*.pdb srctool.exe -x
 ```
 

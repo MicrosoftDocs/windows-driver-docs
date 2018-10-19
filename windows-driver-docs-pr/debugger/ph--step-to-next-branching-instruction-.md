@@ -21,13 +21,13 @@ The **ph** command executes the program until any kind of branching instruction 
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] ph [r] [= StartAddress] [Count] 
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 ph [r] [= StartAddress] [Count] 
 ```
 

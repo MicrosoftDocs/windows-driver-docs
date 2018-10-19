@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **lsc** command displays the current source file name and line number.
 
-```
+```dbgcmd
 lsc 
 ```
 

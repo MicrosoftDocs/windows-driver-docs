@@ -22,7 +22,7 @@ If you need to determine the name of the computer on which the crash dump was ma
 
 Or you can use the following command:
 
-```
+```dbgcmd
 0: kd> x srv!SrvComputerName
 be8ce2e8  srv!SrvComputerName  = _UNICODE_STRING "AIGM-MYCOMP-PUB01"
 ```

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The ENTER key repeats the last command that you typed.
 
-```
+```dbgcmd
 ENTER
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The PDBCopy command line uses the following syntax. The parameters can be included in any order.
 
-```
+```dbgcmd
 pdbcopy OldPDB NewPDB [Options] 
 
 pdbcopy OldPDB NewPDB -p [-f:Symbol] [-f:@TextFile] [Options] 
