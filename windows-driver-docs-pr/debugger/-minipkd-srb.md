@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!minipkd.srb** extension displays the specified SCSI request block (SRB) data structure.
 
-```
+```dbgcmd
 !minipkd.srb SRB 
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!pcrs** extension displays the Intel Itanium-specific processor control registers.
 
-```
+```dbgcmd
 !pcrs Address
 ```
 

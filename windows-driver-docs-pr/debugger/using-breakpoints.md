@@ -8,7 +8,7 @@ ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
 
-# Using Breakpoints
+# Using Breakpoints - Debugging Techniques
 
 
 A *breakpoint* is a location in executable code at which the operating system stops execution and breaks into the debugger. This allows you to analyze the target and issue debugger commands.

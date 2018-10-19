@@ -21,13 +21,13 @@ The CTRL+D key toggles debugger internal information flow on and off. This is us
 
 KD Syntax
 
-```
+```dbgcmd
 CTRL+D  ENTER 
 ```
 
 WinDbg Syntax
 
-```
+```dbgcmd
 CTRL+ALT+D 
 ```
 

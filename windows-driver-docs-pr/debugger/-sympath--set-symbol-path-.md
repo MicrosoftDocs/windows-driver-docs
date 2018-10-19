@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.sympath** command sets or alters the symbol path. The symbol path specifies locations where the debugger looks for symbol files.
 
-```
+```dbgcmd
 .sympath[+] [Path [; ...]]
 ```
 

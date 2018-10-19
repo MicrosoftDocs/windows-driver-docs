@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.logclose** command closes any open log file.
 
-```
+```dbgcmd
     .logclose 
 ```
 

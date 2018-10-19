@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!zombies** extension displays all dead ("zombie") processes or threads.
 
-```
+```dbgcmd
 !zombies [Flags [RestartAddress]]
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!rpcexts.rpcreadstack** extension reads an RPC client-side stack and retrieves the call information.
 
-```
+```dbgcmd
 !rpcexts.rpcreadstack ThreadStackPointer
 ```
 
@@ -61,7 +61,7 @@ For a common use of this extension, see [Analyzing a Stuck Call Problem](analyzi
 
 Here is an example:
 
-```
+```dbgcmd
 0:001> !rpcexts.rpcreadstack 68fba4
 CallID: 1
 IfStart: 19bb5061

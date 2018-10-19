@@ -18,7 +18,7 @@ Kernel Memory Space Analyzer (KAnalyze, Kanalyze.exe) is another tool that can e
 
 KAnalyze and its documentation are part of the OEM Support Tools package.
 
-To download these tools, go to [Microsoft Support Article 253066](http://go.microsoft.com/fwlink/p/?linkid=241339) and follow the instructions on that page.
+To download these tools, go to [Microsoft Support Article 253066](https://go.microsoft.com/fwlink/p/?linkid=241339) and follow the instructions on that page.
 
  
 

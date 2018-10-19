@@ -23,7 +23,7 @@ Each of these bug checks indicates that a paging error has occurred. There are t
 
 To determine the precise cause of the failure, begin by using the [**!scsikd.classext**](-scsikd-classext.md) extension, which displays information about recently failed requests, including the SRB status, SCSI status, and sense data of the request.
 
-```
+```dbgcmd
 kd> !scsikd.classext 816e96b0
 Storage class device 816e96b0 with extension at 816e9768
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.shell** command launches a shell process and redirects its output to the debugger, or to a specified file.
 
-```
+```dbgcmd
 .shell [Options] [ShellCommand] 
 .shell -i InFile [-o OutFile [-e ErrFile]] [Options] ShellCommand
 ```

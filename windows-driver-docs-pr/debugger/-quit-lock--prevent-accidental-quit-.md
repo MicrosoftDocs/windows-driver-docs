@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.quit\_lock** command sets a password to prevent you from accidentally ending the debugging session.
 
-```
+```dbgcmd
 .quit_lock /s NewPassword 
 .quit_lock /q Password 
 .quit_lock 

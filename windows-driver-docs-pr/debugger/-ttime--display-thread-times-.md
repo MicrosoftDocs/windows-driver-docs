@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.ttime** command displays the running times for a thread.
 
-```
+```dbgcmd
 .ttime 
 ```
 
@@ -60,7 +60,7 @@ The **.ttime** command shows the creation time of the thread, as well as the amo
 
 Here is an example:
 
-```
+```dbgcmd
 0:000> .ttime
 Created: Sat Jun 28 17:58:42 2003
 Kernel:  0 days 0:00:00.131

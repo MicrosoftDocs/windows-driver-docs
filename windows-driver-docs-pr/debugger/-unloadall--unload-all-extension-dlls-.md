@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.unloadall** command unloads all extension DLLs from the debugger on the host system.
 
-```
+```dbgcmd
 .unloadall
 ```
 

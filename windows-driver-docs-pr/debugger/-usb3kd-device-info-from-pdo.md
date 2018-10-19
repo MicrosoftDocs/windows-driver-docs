@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usb3kd.device\_info\_from\_pdo** command displays information about a USB device in the [USB 3.0 tree](usb-3-extensions.md#usb-3-tree).
 
-```
+```dbgcmd
 !usb3kd.device_info_from_pdo DeviceObject
 ```
 
@@ -44,7 +44,7 @@ Examples
 
 You can get the address of the PDO from the output of [**!usb\_tree**](-usb3kd-usb-tree.md) or from a variety of other debugger commands. For example, the [**!devnode**](-devnode.md) command displays the addresses of PDOs. In the following example, the USBSTOR device node is the direct child of the USBHUB3 node. The address of the PDO for the USBSTOR node is 0xfffffa80059c3800.
 
-```
+```dbgcmd
 3: kd> !devnode 0 1 usbhub3
 
 Dumping IopRootDeviceNode (= 0xfffffa8003609cc0)
@@ -69,7 +69,7 @@ DevNode 0xfffffa8005981730 for PDO 0xfffffa8004ffc550
 
 Now you can pass the address of the PDO to the **!usb3kd.device\_info\_from\_pdo** command.
 
-```
+```dbgcmd
 3: kd> !device_info_from_pdo 0xfffffa80059c3800
 
 ## Dumping Device Information fffffa80059c3800
@@ -109,7 +109,7 @@ Device Event History:
 
 The following example shows some of the output of the [**!usb\_tree**](-usb3kd-usb-tree.md) command. You can see the address of the PDO of one of the child device nodes as the argument to the [**!devstack**](-devstack.md) command. (**!devstack fffffa80059c3800**)
 
-```
+```dbgcmd
 3: kd> !usb_tree
 
 ## Dumping HUB Tree - !drvObj 0xfffffa800597f770
@@ -139,7 +139,7 @@ Topology
 
 [**!usb3kd.device\_info**](-usb3kd-device-info.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

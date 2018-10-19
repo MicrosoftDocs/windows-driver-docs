@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.leave** token is used to exit from a [**.catch**](-catch.md) block.
 
-```
+```dbgcmd
 .catch { ... ; .if (Condition) .leave ; ... } 
 ```
 

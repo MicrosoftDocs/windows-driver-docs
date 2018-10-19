@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbdpc** command displays information stored in an **\_XDPC\_CONTEXT** structure.
 
-```
+```dbgcmd
 !usbkd.usbdpc StructAddr
 ```
 
@@ -39,7 +39,7 @@ Examples
 
 Here is one way to find the address of a **usbport!\_XDPC\_CONTEXT** structure. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
-```
+```dbgcmd
 0: kd> !usbkd.usb2tree
 ...
 UHCI MINIPORT(s) dt usbport!_USBPORT_MINIPORT_DRIVER ffffe00001e77010
@@ -52,7 +52,7 @@ In the preceding output, the address of the device extension of the FDO is displ
 
 Either click the DML command or pass the address of the device extension to [**!usbhcdext**](https://msdn.microsoft.com/library/windows/hardware/dn367072) to get the XDPC list.
 
-```
+```dbgcmd
 0: kd> !usbkd.usbhcdext ffffe00001c7d1a0
 ...
 ## XDPC List
@@ -66,7 +66,7 @@ Either click the DML command or pass the address of the device extension to [**!
 
 In the preceding output, `ffffe00001c7df18` is the address of an **\_XDPC\_CONTEXT** structure. Pass this address to **!usbdpc**.
 
-```
+```dbgcmd
 0: kd> !usbkd.usbdpc ffffe00001c7df18
 
 dt USBPORT!_XDPC_CONTEXT ffffe00001c7df18
@@ -90,7 +90,7 @@ dt USBPORT!_XDPC_CONTEXT ffffe00001c7df18
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

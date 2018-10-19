@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.ocommand** command enables the target application to send commands to the debugger.
 
-```
+```dbgcmd
 .ocommand  String 
 .ocommand -d 
 .ocommand 
@@ -78,13 +78,13 @@ The comparison between the command prefix string and the target output is not ca
 
 For this example, assume that you enter the following command in the debugger.
 
-```
+```dbgcmd
 0:000> .ocommand magiccommand
 ```
 
 Then, the target application executes the following line.
 
-```
+```dbgcmd
 OutputDebugString("MagicCommand kb;g");
 ```
 
@@ -92,7 +92,7 @@ The debugger recognizes the command string prefix and executes **kb;g** immediat
 
 However, the following line does not cause any commands to be executed.
 
-```
+```dbgcmd
 OutputDebugString("Command on next line.\nmagiccommand kb;g");
 ```
 

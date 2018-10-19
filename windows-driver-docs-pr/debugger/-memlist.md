@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!memlist** extension scans physical memory lists from the page frame number (PFN) database in order to check them for consistency.
 
-```
+```dbgcmd
 !memlist Flags
 ```
 
@@ -58,7 +58,7 @@ Remarks
 
 At present, this extension will only check the zeroed pages list to make sure that all pages in that list are zeroed. The appropriate syntax is:
 
-```
+```dbgcmd
 kd> !memlist 1
 ```
 

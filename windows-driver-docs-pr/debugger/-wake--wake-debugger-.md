@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.wake** command causes sleep mode to end. This command is used only when you are controlling the user-mode debugger from the kernel debugger.
 
-```
+```dbgcmd
 .wake PID
 ```
 

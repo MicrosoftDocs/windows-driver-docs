@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfdmatransaction** extension displays information about a WDF direct memory access (DMA) transaction object.
 
-```
+```dbgcmd
 !wdfkd.wdfdmatransaction Handle
 ```
 

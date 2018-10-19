@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!storagekd.storhelp** extension displays help text for Storagekd.dll extension commands.
 
-```
+```dbgcmd
 !storagekd.storhelp 
 ```
 
@@ -48,7 +48,7 @@ Here is an example of the **!storagekd.storhelp** display:
 
 **0: kd&gt; !storagekd.storhelp**
 
-```
+```dbgcmd
 # Storage Debugger Extension
 ===============================================
 ## General Commands

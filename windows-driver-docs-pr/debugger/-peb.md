@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!peb** extension displays a formatted view of the information in the process environment block (PEB).
 
-```
+```dbgcmd
 !peb [PEB-Address]
 ```
 
@@ -65,7 +65,7 @@ If the **!peb** extension with no argument gives you an error in kernel mode, yo
 
 The exact output displayed depends on the Windows version and on whether you are debugging in kernel mode or user mode. The following example is taken from a kernel debugger attached to a Windows Server 2003 target:
 
-```
+```dbgcmd
 kd> !peb
 PEB at 7ffdf000
     InheritedAddressSpace:    No

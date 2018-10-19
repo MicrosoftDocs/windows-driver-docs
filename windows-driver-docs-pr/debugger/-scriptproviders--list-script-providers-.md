@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.scriptproviders** command lists the active script providers.
 
-```
+```dbgcmd
 .scriptproviders 
 ```
 
@@ -60,7 +60,7 @@ The .scriptproviders command will list all the script languages which are presen
 
 In the example below, the JavaScript and NatVis providers are loaded.
 
-```
+```dbgcmd
 0:000> .scriptproviders
 Available Script Providers:
     NatVis (extension '.NatVis')
@@ -71,7 +71,7 @@ Available Script Providers:
 
 Before using any of the .script commands, a scripting provider needs to be loaded. Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
 
-```
+```dbgcmd
 0:000> .load jsprovider.dll
 ```
 

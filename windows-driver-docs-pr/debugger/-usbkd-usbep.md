@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbep** command displays information about a USB endpoint.
 
-```
+```dbgcmd
 !usbkd.usbep StructAddr
 ```
 
@@ -39,7 +39,7 @@ Examples
 
 Here is one way to find the address of a **usbport!\_HCD\_ENDPOINT** structure. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
-```
+```dbgcmd
 0: kd> !usbkd.usb2tree
 ...
 2)!ehci_info ffffe00001ca11a0 !devobj ffffe00001ca1050 PCI: VendorId 8086 DeviceId 293c RevisionId 0002 
@@ -50,7 +50,7 @@ In the preceding output, the address of the device extension of the FDO is displ
 
 Either click the DML command or pass the address of the device extension to [**!usbhcdext**](https://msdn.microsoft.com/library/windows/hardware/dn367072) to get the global endpoint list.
 
-```
+```dbgcmd
 0: kd> !usbkd.usbhcdext ffffe00001ca11a0
 ...
 DeviceHandleList: !usblist ffffe00001ca23b8, DL 
@@ -61,7 +61,7 @@ GlobalEndpointList: !usblist ffffe00001ca2388, EP
 
 Now use the [**!usbkd.usblist**](-usbkd-usblist.md) command to get the addresses of **\_HCD\_ENDPOINT** structures.
 
-```
+```dbgcmd
 0: kd> !usblist ffffe00001ca2388, EP
 
 list: ffffe00001ca2388 EP
@@ -74,7 +74,7 @@ dt usbport!_ENDPOINT_PARAMETERS ffffe000020f6b18    RootHub Endpoint
 
 In the preceding output, `ffffe000020f6970 `is the address of an **\_HCD\_ENDPOINT**structure. Pass this address to **!usbkd.usbep**.
 
-```
+```dbgcmd
 0: kd> !usbep ffffe000020f6970
 Device Address: 0x00, Endpoint Address 0x00 Endpoint Type: Control 
 dt USBPORT!_HCD_ENDPOINT ffffe000020f6970
@@ -103,7 +103,7 @@ RootHub Endpoint
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

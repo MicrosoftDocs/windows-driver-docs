@@ -21,13 +21,13 @@ The CTRL+K key changes the conditions on which the debugger will automatically b
 
 KD Syntax
 
-```
+```dbgcmd
 CTRL+K  ENTER 
 ```
 
 WinDbg Syntax
 
-```
+```dbgcmd
 CTRL+ALT+K 
 ```
 

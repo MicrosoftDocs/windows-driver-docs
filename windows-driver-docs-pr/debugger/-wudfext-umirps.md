@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wudfext.umirps** extension displays the list of pending user-mode I/O request packets (UM IRPs) in the host process.
 
-```
+```dbgcmd
 !wudfext.umirps NumberOfIrps Flags
 ```
 
@@ -69,7 +69,7 @@ By default, **!wudfext.umirps** shows all UM IRPs. However, you can use the *Num
 
 The following is an example of the **!wudfext.umirps** display:
 
-```
+```dbgcmd
 kd> !umirps 0xa 
 Number of pending IRPS: 0xc8
 ####  CWudfIrp          Type        UniqueId          KernelIrp

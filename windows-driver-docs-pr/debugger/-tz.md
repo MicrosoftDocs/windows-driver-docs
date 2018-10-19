@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!tz** extension displays the specified power thermal zone structure.
 
-```
+```dbgcmd
 !tz [Address]
 ```
 

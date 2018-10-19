@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wmitrace.dumpmini** extension displays the system trace fragment, which is stored in a dump file.
 
-```
+```dbgcmd
 !wmitrace.dumpmini
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wmitrace.disable** extension disables a provider for the specified Event Tracing for Windows (ETW) trace session.
 
-```
+```dbgcmd
 !wmitrace.disable { LoggerID | LoggerName } GUID 
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ustr** extension displays a UNICODE\_STRING structure.
 
-```
+```dbgcmd
 !ustr Address
 ```
 
@@ -59,7 +59,7 @@ Remarks
 
 Unicode strings are counted 16-bit character strings, as defined in the following structure:
 
-```
+```cpp
 typedef struct _UNICODE_STRING {
     USHORT Length;
     USHORT MaximumLength;

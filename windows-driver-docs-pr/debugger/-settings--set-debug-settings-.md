@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.settings** command sets, modifies, displays, loads and saves settings in the Debugger.Settings namespace.
 
-```
+```dbgcmd
 .settings set  namespace.setting=value
 .settings set namespace.setting+=value 
 .settings save [file path] 

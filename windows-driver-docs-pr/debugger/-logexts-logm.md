@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!logexts.logm** extension creates or displays a module inclusion list or a module exclusion list.
 
-```
+```dbgcmd
 !logexts.logm i Modules 
 !logexts.logm x Modules 
 !logexts.logm 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbpdoxls** command displays information about all physical device objects (PDOs) created by the USB hub driver. For each PDO, this command displays a row of comma-separated values.
 
-```
+```dbgcmd
 !usbkd.usbpdoxls
 ```
 
@@ -33,7 +33,7 @@ Usbkd.dll
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

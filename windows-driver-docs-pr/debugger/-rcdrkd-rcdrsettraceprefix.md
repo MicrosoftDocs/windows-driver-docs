@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!rcdrkd.rcdrsettraceprefix** extension sets the trace message prefix.
 
-```
+```dbgcmd
 !rcdrkd.rcdrsettraceprefix TracePrefixString 
 ```
 
@@ -44,7 +44,7 @@ Examples
 
 In the following example, the trace message prefix is originally **%7!u!: %!FUNC! -** . The parameter **%7!u!** specifies that the prefix includes the message sequence number. The parameter **%!FUNC!** specifies that the prefix includes the name of the function that generated the message. The example calls **!rcdrsettraceprefix** to change the prefix string to **%7!u!**. After that, the log display includes message sequence numbers, but does not include function names.
 
-```
+```dbgcmd
 0: kd> !rcdrlogdump USBXHCI -a 0xfffffa8010737b60
 Trace searchpath is: 
 

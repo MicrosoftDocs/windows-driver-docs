@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The [**!rcdrkd.rcdrcrashdump**](-usb3kd-device-info.md) extension is used with a minidump file to display the recorder log (if the log is present in the minidump).
 
-```
+```dbgcmd
 !rcdrkd.rcdrcrashdump TraceProviderGuid
 !rcdrkd.rcdrcrashdump DriverName
 ```

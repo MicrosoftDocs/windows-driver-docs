@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.srcfix** and **.lsrcfix** commands automatically set the source path to indicate that a source server will be used.
 
-```
+```dbgcmd
 .srcfix[+] [Paths] 
 .lsrcfix[+] [Paths] 
 ```
@@ -73,14 +73,14 @@ When this command is issued from a debugging client, **.srcfix** sets the source
 
 These commands are the same as the [**.srcpath (Set Source Path)**](-srcpath---lsrcpath--set-source-path-.md) and **.lsrcpath (Set Local Source Path)** commands followed by the **srv\*** source path element. Thus, the following two commands are equivalent:
 
-```
+```dbgcmd
 .srcfix[+] [Paths] 
 .srcpath[+] srv*[;Paths] 
 ```
 
 Similarly, the following two commands are equivalent:
 
-```
+```dbgcmd
 .lsrcfix[+] [Paths] 
 .lsrcpath[+] srv*[;Paths] 
 ```

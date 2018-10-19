@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!tp** extension displays thread pool information.
 
-```
+```dbgcmd
 !tp pool Address [Flags] 
 !tp tqueue Address [Flags] 
 !tp ItemType Address [Flags] 

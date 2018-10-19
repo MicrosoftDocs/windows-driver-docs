@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **bs** command changes the command executed when the specified breakpoint is encountered.
 
-```
+```dbgcmd
 bs ID ["CommandString"] 
 ```
 

@@ -72,7 +72,7 @@ When you set a prompt command by using **.pcmd -s**, the specified *CommandStrin
 
 In the following example, the first use of **.pcmd** sets a fixed string that appears with the prompt. The second use of **.pcmd** causes the debugger to display the target's current process ID and thread ID every time that the prompt appears. The special prompt does not appear after the [**.ttime**](-ttime--display-thread-times-.md) command is used, because that command does not involve execution.
 
-```
+```dbgcmd
 0:000> .pcmd
 No per-prompt command
 

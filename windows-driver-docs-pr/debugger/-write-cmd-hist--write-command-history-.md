@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.write\_cmd\_hist** command writes the entire history of the Debugger Command window to a file.
 
-```
+```dbgcmd
 .write_cmd_hist Filename 
 ```
 

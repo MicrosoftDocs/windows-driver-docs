@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!runaway** extension displays information about the time consumed by each thread.
 
-```
+```dbgcmd
 !runaway [Flags]
 ```
 
@@ -78,7 +78,7 @@ The display identifies each thread by the debugger's internal thread numbering a
 
 Here is an example:
 
-```
+```dbgcmd
 0:001> !runaway 7
 
  User Mode Time

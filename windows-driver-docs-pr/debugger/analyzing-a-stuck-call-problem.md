@@ -20,7 +20,7 @@ When examined through the debugger, RPC is on top of the stack of the thread own
 
 Here is one example of such a stack. Many variations are possible.
 
-```
+```dbgcmd
 0:002> ~1k
 ChildEBP RetAddr
 0068fba0 77e9e8eb ntdll!ZwWaitForSingleObject+0xb
@@ -51,7 +51,7 @@ Here's how to troubleshoot this problem.
 
 3.  Get the call information for this thread. In order to do that, use the [**!rpcexts.rpcreadstack**](-rpcexts-rpcreadstack.md) extension with the thread stack pointer as its parameter, as follows:
 
-    ```
+    ```dbgcmd
     0:001> !rpcexts.rpcreadstack 68fba0
     CallID: 1
     IfStart: 19bb5061
@@ -64,7 +64,8 @@ Here's how to troubleshoot this problem.
     The information displayed here will allow you to trace the call.
 
 4.  The network address is empty, which indicates the local machine. The endpoint is 1120. You need to determine which process hosts this endpoint. This can be done by passing this endpoint number to the [**!rpcexts.getendpointinfo**](-rpcexts-getendpointinfo.md) extension, as follows:
-    ```
+
+    ```dbgcmd
     0:001> !rpcexts.getendpointinfo 1120
     Searching for endpoint info ...
     PID  CELL ID   ST PROTSEQ        ENDPOINT
@@ -73,7 +74,8 @@ Here's how to troubleshoot this problem.
     ```
 
 5.  From the preceding information, you can see that process 0x278 contains this endpoint. You can determine if this process knows anything about this call by using the [**!rpcexts.getcallinfo**](-rpcexts-getcallinfo.md) extension. This extension needs four parameters: *CallID*, *IfStart*, and *ProcNum* (which were found in step 3), and the *ProcessID* of 0x278:
-    ```
+
+    ```dbgcmd
     0:001> !rpcexts.getcallinfo 1 19bb5061 0 278
     Searching for call info ...
     PID  CELL ID   ST PNO IFSTART  TIDNUMBER CALLFLAG CALLID   LASTTIME CONN/CLN
@@ -83,7 +85,7 @@ Here's how to troubleshoot this problem.
 
 6.  The information in step 5 is useful, but somewhat abbreviated. The cell ID is given in the second column as 0000.0004. If you pass the process ID and this cell number to the [**!rpcexts.getdbgcell**](-rpcexts-getdbgcell.md) extension, you will see a more readable display of this cell:
 
-    ```
+    ```dbgcmd
     0:001> !rpcexts.getdbgcell 278 0.4
     Getting cell info ...
     Call
@@ -99,7 +101,7 @@ Here's how to troubleshoot this problem.
 
     This shows that the call is in state "dispatched", which means is has left the RPC Run-Time. The last update time is 470.25. You can learn the current time by using the [**!rpcexts.rpctime**](-rpcexts-rpctime.md) extension:
 
-    ```
+    ```dbgcmd
     0:001> !rpcexts.rpctime
     Current time is: 6003, 422
     ```
@@ -108,7 +110,7 @@ Here's how to troubleshoot this problem.
 
 7.  As a last step before you attach a debugger to the server process, you can isolate the thread that should currently service the call by using the Servicing thread identifier. This is another cell number; it appeared in step 6 as "0x0.2". You can use it as follows:
 
-    ```
+    ```dbgcmd
     0:001> !rpcexts.getdbgcell 278 0.2
     Getting cell info ...
     Thread

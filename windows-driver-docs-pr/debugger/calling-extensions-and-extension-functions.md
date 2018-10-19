@@ -29,14 +29,14 @@ To obtain a pointer to an extension function, use [**GetExtensionFunction**](htt
 
 If the following extension function was included in an extension library and loaded into the debugger engine:
 
-```
+```cpp
 HRESULT CALLBACK
 _EFN_GetObject(IDebugClient * client, SomeObject * obj);
 ```
 
 It could be called using:
 
-```
+```cpp
 typedef ULONG (CALLBACK * GET_OBJECT)(IDebugClient * client, SomeObject * obj);
 
 

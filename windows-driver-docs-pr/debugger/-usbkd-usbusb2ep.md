@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbusb2ep** command displays information from a **usbport!\_USB2\_EP** structure.
 
-```
+```dbgcmd
 !usbkd.usbusb2ep StructAddr
 ```
 
@@ -39,7 +39,7 @@ Usbkd.dll
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

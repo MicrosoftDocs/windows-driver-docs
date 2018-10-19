@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfinterrupt** extension displays information about a WDFINTERRUPT object.
 
-```
+```dbgcmd
 !wdfkd.wdfinterrupt Handle [Flags]
 ```
 

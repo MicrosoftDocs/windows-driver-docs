@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The CTRL+B key causes the debugger to terminate abruptly. This does not end a remote debugging session.
 
-```
+```dbgcmd
 CTRL+B  ENTER 
 ```
 

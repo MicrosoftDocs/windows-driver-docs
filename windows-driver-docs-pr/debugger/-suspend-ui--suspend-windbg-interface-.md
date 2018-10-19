@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.suspend\_ui** command suspends the refresh of WinDbg debugging information windows.
 
-```
+```dbgcmd
 .suspend_ui 0 
 .suspend_ui 1 
 .suspend_ui 

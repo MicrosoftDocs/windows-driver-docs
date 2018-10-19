@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usb3kd.device\_info** command displays information about a USB device in the [USB 3.0 tree](usb-3-extensions.md#usb-3-tree).
 
-```
+```dbgcmd
 !usb3kd.device_info DeviceContext
 ```
 
@@ -44,7 +44,7 @@ Examples
 
 You can obtain the address of the device context structure by looking at the output of the [**!usb\_tree**](-usb3kd-usb-tree.md) command. In the following example, the address of the device context structure is 0xfffffa8005abd0c0.
 
-```
+```dbgcmd
 3: kd> !usb_tree
 
 ## Dumping HUB Tree - !drvObj 0xfffffa800597f770
@@ -67,7 +67,7 @@ Topology
 
 Now you can pass the address of the device context to the **!device\_info** command.
 
-```
+```dbgcmd
 3: kd> !device_info 0xfffffa8005abd0c0
 
 ## Dumping Device Information fffffa8005abd0c0
@@ -110,7 +110,7 @@ Device Event History:
 
 [**!usb3kd.device\_info\_from\_pdo**](-usb3kd-device-info-from-pdo.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

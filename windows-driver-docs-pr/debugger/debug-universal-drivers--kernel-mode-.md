@@ -105,7 +105,7 @@ Ethernet adapter Ethernet:
 
 4. Open a command prompt on the target system and use the **ping** command to confirm network connectivity between the two systems. Use the actual IP address of the host system you recorded instead of 169.182.1.1 that is shown in the sample output.
 
-```cosnole
+```console
 C:\> ping 169.182.1.1
 
 Pinging 169.182.1.1 with 32 bytes of data:

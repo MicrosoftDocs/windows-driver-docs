@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 The **!ppmperf** command displays power and performance constraint information. 
 
 
-```
+```dbgcmd
 !ppmperf
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.urestart** command unregisters the debugging session for restart in case of a reboot or an application failure.
 
-```
+```dbgcmd
 .urestart
 ```
 

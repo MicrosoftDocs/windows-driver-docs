@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbver** command displays the USBD interface version of the USB driver stack.
 
-```
+```dbgcmd
 !usbkd.usbver
 ```
 
@@ -38,7 +38,7 @@ Examples
 
 Here is an example of the output of **!usbkd.usbver**.
 
-```
+```dbgcmd
 1: kd> !usbkd.usbver
 
 USBD VER 600 USB stack is VISTA
@@ -49,7 +49,7 @@ USBD VER 600 USB stack is VISTA
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
 **USBD\_IsInterfaceVersionSupported**
  

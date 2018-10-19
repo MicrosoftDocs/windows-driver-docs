@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ppmidlepolicy** command displays C-state policy.
 
-```
+```dbgcmd
 !ppmidlepolicy
 ```
 

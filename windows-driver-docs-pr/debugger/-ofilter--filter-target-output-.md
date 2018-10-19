@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.ofilter** command filters the output from the target application or target computer.
 
-```
+```dbgcmd
 .ofilter [/!] String 
 .ofilter "" 
 .ofilter 

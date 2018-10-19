@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!pnpevent** extension displays the Plug and Play device event queue.
 
-```
+```dbgcmd
 !pnpevent [DeviceEvent]
 ```
 

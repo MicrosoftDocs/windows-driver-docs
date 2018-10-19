@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!processfields** extension displays the names and offsets of the fields within the executive process (EPROCESS) block.
 
-```
+```dbgcmd
 !processfields
 ```
 
@@ -56,13 +56,13 @@ Remarks
 
 This extension command is not available in Windows XP or later versions of Windows. Instead, use the [**dt (Display Type)**](dt--display-type-.md) command to show the EPROCESS structure directly:
 
-```
+```dbgcmd
 kd> dt nt!_EPROCESS 
 ```
 
 Here is an example of **!processfields** from a Windows 2000 system:
 
-```
+```dbgcmd
 kd> !processfields
  EPROCESS structure offsets:
 

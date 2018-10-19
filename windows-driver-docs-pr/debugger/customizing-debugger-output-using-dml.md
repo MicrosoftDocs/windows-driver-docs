@@ -50,7 +50,7 @@ DML content roughly follows the XML/HTML rules for special characters. The chara
 
 would be converted to the following DML.
 
-```
+```text
 &quot;Alice & Bob think 3 &lt 4&quot;
 ```
 
@@ -63,14 +63,14 @@ A significant departure from XML/HTML rules is that DML text can include C progr
 
 Suppose the file C:\\Dml\_Experiment.txt contains the following lines.
 
-```
+```text
 My DML Experiment
 <link cmd="lmD musb*">List modules that begin with usb.</link>
 ```
 
 The following command displays the text and link in the Command Browser window.
 
-```
+```dbgcmd
 .browse .dml_start c:\Dml_Experiment.txt
 ```
 
@@ -85,7 +85,7 @@ If you click the **List modules that begin with usb** link, you see output simil
 
 Right-click behavior is available in DML. This sample shows how to define right click behavior using &lt;altlink&gt; to send a breakpoint [**bp (Set Breakpoint)**](bp--bu--bm--set-breakpoint-.md) command and send the [**u (Unassemble)**](u--unassemble-.md) with a regular click.
 
-```
+```text
 <link cmd="u MyProgram!memcpy">
 <altlink name="Set Breakpoint (bp)" cmd="bp MyProgram!memcpy" />
 u MyProgram!memcpy
@@ -107,7 +107,7 @@ Conversion to plain text drops the tags.
 
 **Example**
 
-```
+```text
 <b> Handy Links </b>
 <link cmd="!dml_proc">Display process information with DML rendering.</link>
 <link cmd="kM">Display stack information with DML rendering.</link>
@@ -117,7 +117,7 @@ Conversion to plain text drops the tags.
 
 This example shows the use of the alt attribute to create text that will appear when you hover over the DML link.
 
-```
+```text
 <b>Hover Example</b>
 <link cmd="lmD" alt="This link will run the list modules command and display the output in DML format">LmD</link>
 ```
@@ -134,7 +134,7 @@ Conversion to plain text drops the tags.
 
 This example shows how to define right click behavior using &lt;altlink&gt; to send a breakpoint [**bp (Set Breakpoint)**](bp--bu--bm--set-breakpoint-.md) command and send the [**u (Unassemble)**](u--unassemble-.md) with a regular click.
 
-```
+```text
 <link cmd="u MyProgram!memcpy">
 <altlink name="Set Breakpoint (bp)" cmd="bp MyProgram!memcpy" />
 u MyProgram!memcpy
@@ -153,7 +153,7 @@ Conversion to plain text drops the tags.
 
 This example shows how to define two commands with a regular click.
 
-```
+```text
 <b>Exec Sample</b>
 <exec cmd="!dml_proc">Display process information with DML rendering.</exec>
 <exec cmd="kM">Display stack information with DML rendering.</exec>
@@ -171,7 +171,7 @@ Conversion to plain text drops the tags.
 
 This example shows how to bold text.
 
-```
+```text
 <b>This is bold Text</b>
 ```
 
@@ -187,7 +187,7 @@ Conversion to plain text drops the tags.
 
 This example shows how to italicize text.
 
-```
+```text
 <i>This is italicized Text</i>
 ```
 
@@ -203,7 +203,7 @@ Conversion to plain text drops the tags.
 
 This example shows how to underlined text.
 
-```
+```text
 <u>This is underlined Text</u>
 ```
 
@@ -211,7 +211,7 @@ This example shows how to underlined text.
 
 This example shows how to combine tags to bold, underline and italicize text.
 
-```
+```text
 <b><u><i>This is bold, underlined and italizized text. </i></u></b> 
 ```
 
@@ -510,7 +510,7 @@ The following table summarizes the use of the %Y format specifier.
 
 This code snippet illustrates the use of the %Y format specifier.
 
-```
+```cpp
 HRESULT CALLBACK testout(_In_ PDEBUG_CLIENT pClient, _In_ PCWSTR /*pwszArgs*/)
 {
     HRESULT hr = S_OK;
@@ -544,7 +544,7 @@ HRESULT CALLBACK testout(_In_ PDEBUG_CLIENT pClient, _In_ PCWSTR /*pwszArgs*/)
 
 This sample code would generate the following output.
 
-```
+```dbgcmd
 0:004> !testout
 DML/NORMAL Y{t}: "Hello <World>"
 DML/NORMAL Y{T}: "Hello <World>"
@@ -564,7 +564,7 @@ DML/NORMAL Y{l}: [d:\th\minkernel\kernelbase\debug.c @ 443]
 
 An additional control flag, DEBUG\_OUTCTL\_AMBIENT\_DML, allows specification of DML context text without modifying any out output control attributes. DEBUG\_OUTCTL\_AMBIENT\_TEXT has been added also as a more-descriptive alias for the previously-existing DEBUG\_OUTCTL\_AMBIENT. The output control flags are defined in dbgeng.h.
 
-```
+```cpp
 #define DEBUG_OUTCTL_DML               0x00000020
 
 // Special values which mean leave the output settings
@@ -582,7 +582,7 @@ The dbgeng has been enhanced to scan debuggee output for a special marker – �
 
 This example shows a mix of plain and DML output.
 
-```
+```text
 OutputDebugString(“This is plain text\n<?dml?>This is <col fg=\”emphfg\”>DML</col> text\n”);
 ```
 
@@ -603,7 +603,7 @@ The new methods are:
 
     The flags are defined in dbgeng.h as shown here.
 
-    ```
+    ```cpp
     // IDebugOutputCallbacks2 interest mask flags.
     //
 

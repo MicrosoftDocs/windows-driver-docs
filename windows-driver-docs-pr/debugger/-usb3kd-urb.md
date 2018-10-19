@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The [**!usb3kd.urb**](-usb3kd-device-info.md) extension displays information about a USB request block (URB).
 
-```
+```dbgcmd
 !usb3kd.urb UrbAddress
 ```
 
@@ -39,7 +39,7 @@ Examples
 
 The following example shows the address of a URB (0xfffffa8005a2cbe8) in the output of the [**!xhci\_deviceslots**](-usb3kd-xhci-deviceslots.md) command.
 
-```
+```dbgcmd
 3: kd> !xhci_deviceslots 0xfffffa800520d2d0
 
 ## Dumping dt _DEVICESLOT_DATA 0xfffffa8003612e80
@@ -58,7 +58,7 @@ DeviceContextBase: VA 0xfffffa8005a64000 LA 0x116864000 !wdfcommonbuffer 0x57ffa
 
 The following example passes the address of the URB to the **!usb3kd.urb** command.
 
-```
+```dbgcmd
 3: kd> !urb 0xfffffa8005a2cbe8
 
 ## Dumping URB 0xfffffa8005a2cbe8
@@ -83,7 +83,7 @@ TransferBufferMDL:     0xfffffa8005848930
 
 [USB 3.0 Extensions](usb-3-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

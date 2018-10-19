@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!pcitree** extension displays information about PCI device objects, including child PCI buses and CardBus buses, and the devices attached to them.
 
-```
+```dbgcmd
 !pcitree
 ```
 
@@ -56,7 +56,7 @@ Remarks
 
 Here is an example:
 
-```
+```dbgcmd
 kd> !pcitree
 
 Bus 0x0 (FDO Ext fe517338)
@@ -79,7 +79,7 @@ The number after "d=" is the device number; the number after "f=" is the functio
 
 To obtain more information about a device, use the [**!devext**](-devext.md) extension command with the device extension address as the argument. For this particular device, the command to use would be:
 
-```
+```dbgcmd
 kd> !devext fe4f4428 pci 
 ```
 

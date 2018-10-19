@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!pocaps** extension displays the power capabilities of the target computer.
 
-```
+```dbgcmd
 !pocaps
 ```
 
@@ -56,7 +56,7 @@ Remarks
 
 Here is an example of this command's output:
 
-```
+```dbgcmd
 kd> !pocaps
 PopCapabilities @ 0x8016b100
   Misc Supported Features:  S4 FullWake

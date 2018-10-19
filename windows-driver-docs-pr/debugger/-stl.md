@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!stl** extension displays some of the known Standard Template Library (STL) templates.
 
-```
+```dbgcmd
 !stl [Options] Template 
 !stl -?
 ```

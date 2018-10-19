@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wmitrace.eventlogdump** extension displays the contents of the specified logger. The display is formatted like an event log.
 
-```
+```dbgcmd
 !wmitrace.eventlogdump { LoggerID | LoggerName }
 ```
 
