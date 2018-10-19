@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdftmffile** extension sets the trace message format (.tmf) file to use when the debugger is formatting Kernel-Mode Driver Framework (KMDF) error log records for the [**!wdfkd.wdflogdump**](-wdfkd-wdflogdump.md) or [**!wdfkd.wdfcrashdump**](-wdfkd-wdfcrashdump.md) extensions.
 
-```
+```dbgcmd
 !wdfkd.wdftmffile TMFpath
 ```
 
@@ -50,7 +50,7 @@ Starting in KMDF version 1.11, the framework library's symbol file (for example 
 
 The following example shows how to use the **!wdfkd.wdftmffile** extension from the root WDK directory, for KMDF version 1.5.
 
-```
+```dbgcmd
 kd> !wdftmffile tools\tracing\<platform>\wdf1005.tmf
 ```
 

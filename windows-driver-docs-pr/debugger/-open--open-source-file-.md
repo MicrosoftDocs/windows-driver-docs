@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.open** command searches the source path for a source file and opens this file.
 
-```
+```dbgcmd
 .open [-m Address] FileName 
 .open -a Address 
 ```

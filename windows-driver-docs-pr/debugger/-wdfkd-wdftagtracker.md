@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdftagtracker** extension displays all available tag information (including tag value, line, file, and time) for a specified tag tracker.
 
-```
+```dbgcmd
 !wdfkd.wdftagtracker TagObjectPointer [Flags]
 ```
 
@@ -61,7 +61,7 @@ To enable the KMDF verifier, set a nonzero value for **VerifierOn**.
 
 To enable handle tracking, set the value of **TrackHandles** to the name of one or more object types, or specify an asterisk (\*) to track all object types. For example, the following example specifies the tracking of references to all WDFDEVICE and WDFQUEUE objects.
 
-```
+```text
 TrackHandles: MULTI_SZ: WDFDEVICE WDFQUEUE
 ```
 

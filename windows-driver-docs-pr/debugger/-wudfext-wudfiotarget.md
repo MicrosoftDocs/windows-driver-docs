@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wudfext.wudfiotarget** extension displays information about an I/O target including the target's state and list of sent requests.
 
-```
+```dbgcmd
 !wudfext.wudfiotarget pWDFTarget TypeName
 ```
 

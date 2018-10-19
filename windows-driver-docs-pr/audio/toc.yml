@@ -1,4 +1,4 @@
-- name: "Design Guide"
+- name: "Audio Drivers Design Guide"
   href: index.md
   items: 
   - name: "Windows 10: What's New for Audio"
@@ -1001,6 +1001,8 @@
     items: 
     - name: "SetupPreferredAudioDevices"
       href: setuppreferredaudiodevices.md
+    - name: "PKEY_APO_SWFallback_ProcessingModes"
+      href: pkey-apo-swfallback-processingmodes.md
     - name: "PKEY_AudioDevice_EnableEndpointByDefault"
       href: pkey-audiodevice-enableendpointbydefault.md
     - name: "PKEY_AudioDevice_NeverSetAsDefaultEndpoint"

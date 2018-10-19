@@ -21,7 +21,7 @@ The **!mapic** extension displays an ACPI Multiple APIC table.
 
 Syntax
 
-```
+```dbgcmd
 !mapic Address
 ```
 

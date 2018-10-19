@@ -81,14 +81,14 @@ DML defines a small set of tags that can be included in command output. One exam
 
 Suppose the file c:\\DmlExperiment.txt contains the following lines.
 
-```
+```text
 My DML Experiment
 <link cmd="lmD musb*">List modules that begin with usb.</link>
 ```
 
 The following command displays the text and link in the Command Browser window.
 
-```
+```dbgcmd
 .browse .dml_start c:\Dml_Experiment.txt
 ```
 

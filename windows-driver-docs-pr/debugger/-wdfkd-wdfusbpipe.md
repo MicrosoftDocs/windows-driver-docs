@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfusbpipe** extension displays information about a Kernel-Mode Driver Framework (KMDF) USB pipe object's I/O target.
 
-```
+```dbgcmd
 !wdfkd.wdfusbpipe Handle [Flags]
 ```
 

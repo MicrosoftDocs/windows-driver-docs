@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ready** extension displays summary information about each thread in the system in a READY state.
 
-```
+```dbgcmd
 !ready [Flags]
 ```
 

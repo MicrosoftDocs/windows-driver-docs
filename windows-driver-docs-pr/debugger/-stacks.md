@@ -21,7 +21,7 @@ The **!stacks** extension displays information about the kernel stacks.
 
 Syntax
 
-```
+```dbgcmd
 !stacks [Detail [FilterString]] 
 ```
 
@@ -74,7 +74,7 @@ The [**!findstack**](-findstack.md) user-mode extension also displays informatio
 
 Here is an example of the simplest **!stacks** display:
 
-```
+```dbgcmd
 kd> !stacks 0
 Proc.Thread  .Thread  ThreadState  Blocker
                                      [System]
@@ -99,7 +99,7 @@ The fourth column shows the top address on the thread's stack.
 
 Here are examples of more detailed **!stacks** output:
 
-```
+```dbgcmd
 kd> !stacks 1
 Proc.Thread  .Thread  ThreadState  Blocker
                                      [System]

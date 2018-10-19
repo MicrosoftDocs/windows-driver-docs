@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wmitrace.tmffile** extension specifies a trace message format (TMF) file. The file specified by this extension is used to format trace messages displayed or written by other WMI tracing extensions.
 
-```
+```dbgcmd
 !wmitrace.tmffile TMFFile 
 ```
 

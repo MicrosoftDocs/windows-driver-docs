@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!loadermemorylist** extension displays the memory allocation list that the Windows boot loader passes to Windows.
 
-```
+```dbgcmd
 !loadermemorylist ListHeadAddress
 ```
 

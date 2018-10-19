@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wmitrace.stop** extension stops the Event Tracing for Windows (ETW) logger on the target computer.
 
-```
+```dbgcmd
 !wmitrace.stop { LoggerID | LoggerName } 
 ```
 

@@ -91,7 +91,7 @@ There is a variation of the CDB debugger named Microsoft NT Symbolic Debugger (N
 
 Since the **start** command can also be used to spawn a new console window, the following two constructions will give the same results:
 
-```
+```console
 start cdb parameters 
 ntsd parameters
 ```

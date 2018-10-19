@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!lmi** extension displays detailed information about a module.
 
-```
+```dbgcmd
 !lmi Module
 ```
 
@@ -69,7 +69,7 @@ This command shows a number of fields, each with a different title. Some of thes
 
 Here is an example:
 
-```
+```dbgcmd
 0:000> lm 
 start    end        module name
 00400000 0042d000   Prymes     C (pdb symbols)              Prymes.pdb

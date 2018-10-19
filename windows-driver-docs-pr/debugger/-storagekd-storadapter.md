@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!storagekd.storadapter** extension displays information about the specified Storport adapter.
 
-```
+```dbgcmd
 !storagekd.storadapter [Address]  
 ```
 
@@ -53,7 +53,7 @@ Here is an example of the **!storagekd.storadapter** display:
 
 **1: kd&gt; ! storagekd.storadapter**
 
-```
+```dbgcmd
 # STORPORT adapters:
 ==================
 ## Driver                 Object            Extension          State
@@ -63,7 +63,7 @@ Here is an example of the **!storagekd.storadapter** display:
 
 **1: kd&gt; ! storagekd.storadapter fffffa800649a050**
 
-```
+```dbgcmd
 ADAPTER
    DeviceObj : fffffa800649a050   AdapterExt: fffffa800649a1a0   DriverObj :  fffffa800507fcb0   
 DeviceState : Working

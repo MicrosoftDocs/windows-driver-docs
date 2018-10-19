@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!smt** extension displays a summary of the simultaneous multithreaded processor information.
 
-```
+```dbgcmd
 !smt
 ```
 
@@ -49,7 +49,7 @@ Remarks
 
 Here is an example:
 
-```
+```dbgcmd
 lkd> !smt 
 SMT Summary:
 ------------

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!uniqstack** extension displays all of the stacks for all of the threads in the current process, excluding stacks that appear to have duplicates.
 
-```
+```dbgcmd
 !uniqstack [ -b | -v | -p ] [ -n ]
 ```
 
@@ -66,7 +66,7 @@ This extension is similar to the [**k, kb, kc, kd, kp, kP, kv (Display Stack Bac
 
 For example:
 
-```
+```dbgcmd
 0:000> !uniqstack
 Processing 14 threads, please wait
 

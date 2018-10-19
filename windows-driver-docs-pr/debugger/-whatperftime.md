@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!whatperftime** extension converts a high-resolution performance counter value into a standard time value.
 
-```
+```dbgcmd
 !whatperftime Count
 ```
 
@@ -57,7 +57,7 @@ You can use **!whatperftime** to convert values retrieved by calling **QueryPerf
 
 The output is displayed as *HH:MM:SS.mmm*. Here is an example:
 
-```
+```dbgcmd
 kd> !whatperftime 304589
 3163529 Performance Counter in Standard Time: .004.313s
 ```

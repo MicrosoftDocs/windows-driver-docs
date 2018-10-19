@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!minipkd.help** extension displays help text for the Minipkd.dll extension commands.
 
-```
+```dbgcmd
 !minipkd.help 
 ```
 

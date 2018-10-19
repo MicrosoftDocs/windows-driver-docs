@@ -2,7 +2,7 @@
 title: Debugging Using WinDbg Preview
 description: This section describes how to perform basic debugging tasks using the WinDbg preview debugger.
 ms.author: domars
-ms.date: 08/06/2018
+ms.date: 10/18/2018
 ms.localizationpriority: medium
 ---
 
@@ -147,7 +147,7 @@ For more information, see [WinDbg Preview - Scripting](windbg-scripting-preview.
 
 Because the underling debugger engine is the same, all of the previous debugger commands and debugger extensions continue to work.
 
-## <span id="providingfeedback"></span>Providing feedback
+## <span id="providing-feedback"></span>Providing feedback
 
 Your feedback will help guide WinDbg's development going forward. 
 

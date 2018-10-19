@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wudfext.umfile** extension displays information about a UMDF intra-stack file.
 
-```
+```dbgcmd
 !wudfext.umfile Address
 ```
 

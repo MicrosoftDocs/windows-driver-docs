@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!rcdrkd.rcdrtraceprtdebug** extension turns TracePrt diagnostic mode on or off. This extension should be used under the direction of support.
 
-```
+```dbgcmd
 !rcdrkd.rcdrtraceprtdebug {on|off}
 ```
 

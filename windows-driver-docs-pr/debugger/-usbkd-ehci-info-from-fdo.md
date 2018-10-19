@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The [**!usbkd.ehci\_info\_from\_fdo**](https://msdn.microsoft.com/library/windows/hardware/dn367058) command displays information about a USB host controller.
 
-```
+```dbgcmd
 !usbkd.ehci_info_from_fdo fdo
 ```
 
@@ -39,7 +39,7 @@ Examples
 
 First use the [**!usb2tree**](-usbkd-usb2tree.md) command to get the address of the FDO.
 
-```
+```dbgcmd
 0: kd> !usbkd.usb2tree
 
 EHCI MINIPORT(s) dt usbport!_USBPORT_MINIPORT_DRIVER ffffe00001f48bd0
@@ -90,7 +90,7 @@ BusContextHead: !usblist ffffe00001ca16b0, BC
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

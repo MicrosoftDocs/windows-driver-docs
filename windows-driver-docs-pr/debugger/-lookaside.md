@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 The **!lookaside** extension displays information about look-aside lists, resets the counters of look-aside lists, or modifies the depth of a look-aside list.
 
-```
+```dbgcmd
 !lookaside [Address [Options [Depth]]]
 !lookaside [-all]
 !lookaside 0 [-all]
@@ -54,7 +54,7 @@ Specifies the new maximum depth of the specified look-aside list. This parameter
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For information about look-aside lists, see the [Windows Driver Kit (WDK) documentation](http://go.microsoft.com/fwlink/p/?linkid=201141) and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. (These resources may not be available in some languages and countries.)
+For information about look-aside lists, see the [Windows Driver Kit (WDK) documentation](https://go.microsoft.com/fwlink/p/?linkid=201141) and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. (These resources may not be available in some languages and countries.)
 
 Remarks
 -------

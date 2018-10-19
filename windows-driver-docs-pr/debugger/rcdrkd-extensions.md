@@ -39,9 +39,9 @@ The [**!rcdrkd.rcdrhelp**](-rcdrkd-rcdrhelp.md) displays help for the RCDRKD com
 ## <span id="related_topics"></span>Related topics
 
 
-[WPP Software Tracing](http://go.microsoft.com/fwlink/p?LinkID=251984)
+[WPP Software Tracing](https://go.microsoft.com/fwlink/p?LinkID=251984)
 
-[Using the Framework's Event Logger](http://go.microsoft.com/fwlink/p?LinkID=251985)
+[Using the Framework's Event Logger](https://go.microsoft.com/fwlink/p?LinkID=251985)
 
 [USB 3.0 Extensions](usb-3-extensions.md)
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!minipkd.req** extension displays information about all of the currently active requests on the specified adapter or device.
 
-```
+```dbgcmd
 !minipkd.req Adapter 
 !minipkd.req Device 
 ```

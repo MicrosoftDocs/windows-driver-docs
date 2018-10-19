@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usb2tree** command displays [USB 2.0 tree](usb-2-0-extensions.md#usb-2-tree).
 
-```
+```dbgcmd
 !usbkd.usb2tree
 ```
 
@@ -53,14 +53,14 @@ The **!usb2tree** command is the parent command for many of the [USB 2.0 debugge
 -   usbport.sys (port driver for USB 2 host controller)
 -   usbhub.sys (USB 2 hub driver)
 
-For more information about these drivers, see [USB Driver Stack Architecture](http://go.microsoft.com/fwlink/p/?LinkId=251983).
+For more information about these drivers, see [USB Driver Stack Architecture](https://go.microsoft.com/fwlink/p/?LinkId=251983).
 
 ## <span id="see_also"></span>See also
 
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!rpcexts.getendpointinfo** extension searches the system's RPC state information for endpoint information.
 
-```
+```dbgcmd
     !rpcexts.getendpointinfo [EndpointName] 
 !rpcexts.getendpointinfo -? 
 ```
@@ -65,7 +65,7 @@ This extension can only be used with CDB or with user-mode WinDbg.
 
 Here is an example:
 
-```
+```dbgcmd
 0:002> !rpcexts.getendpointinfo
 Searching for endpoint info ...
 ## PID  CELL ID   ST PROTSEQ        ENDPOINT

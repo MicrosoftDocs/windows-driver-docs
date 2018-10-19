@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.scriptload** command will load and execute the specified script file.
 
-```
+```dbgcmd
 .scriptload ScriptFile
 ```
 
@@ -58,14 +58,14 @@ Specifies the name of the script file to load. *ScriptFile* should include the .
 
 The .scriptload command will load a script and execute a script. The following command shows the successful load of TestScript.js.
 
-```
+```dbgcmd
 0:000> .scriptload C:\WinDbg\Scripts\TestScript.js
 JavaScript script successfully loaded from 'C:\WinDbg\Scripts\TestScript.js'
 ```
 
 If there are any errors in the initial load and execution of the script, the errors will be displayed to console, including the line number and error message.
 
-```
+```dbgcmd
 0:000:x86> .scriptload C:\WinDbg\Scripts\TestScript.js
 0:000> "C:\WinDbg\Scripts\TestScript.js" (line 11 (@ 1)): Error (0x80004005): Syntax error
 Error: Unable to execute JavaScript script 'C:\WinDbg\Scripts\TestScript.js'
@@ -86,7 +86,7 @@ For more information about working with JavaScript, see [JavaScript Debugger Scr
 
 Before using any of the .script commands, a scripting provider needs to be loaded. Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
 
-```
+```dbgcmd
 0:000> .load jsprovider.dll
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ppmlpscenarios** command displays per-scenario policy overrides.
 
-```
+```dbgcmd
 !ppmlpscenarios
 ```
 

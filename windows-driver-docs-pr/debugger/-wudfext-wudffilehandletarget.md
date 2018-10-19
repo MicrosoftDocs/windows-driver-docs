@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wudfext.wudffilehandletarget** extension displays information about a file-handle-based I/O target.
 
-```
+```dbgcmd
 !wudfext.wudffilehandletarget pWDFFileHandleTarget TypeName
 ```
 

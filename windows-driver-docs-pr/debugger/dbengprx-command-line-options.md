@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The DbEngPrx command line uses the following syntax.
 
-```
+```dbgcmd
 dbengprx [-p] -c ClientTransport -s ServerTransport 
 
 dbengprx -? 

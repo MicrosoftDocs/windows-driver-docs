@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The .nvunloadall command unloads all of the NatVis files from the debugger environment.
 
-```
+```dbgcmd
  .nvunloadall 
 ```
 

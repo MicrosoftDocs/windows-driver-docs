@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The CTRL+F key cancels commands or breaks into the debugger. (This control key is particularly useful when you are using CDB to debug KD itself.)
 
-```
+```dbgcmd
 CTRL+F  ENTER 
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.server** command starts a debugging server, allowing a remote connection to the current debugging session.
 
-```
+```dbgcmd
 .server npipe:pipe=PipeName[,hidden][,password=Password][,IcfEnable] 
 .server tcp:port=Socket[,hidden][,password=Password][,ipversion=6][,IcfEnable] 
 .server tcp:port=Socket,clicon=Client[,password=Password][,ipversion=6] 

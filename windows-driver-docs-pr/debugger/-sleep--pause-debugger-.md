@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.sleep** command causes the user-mode debugger to pause and the target computer to become active. This command is only used when you are controlling the user-mode debugger from the kernel debugger.
 
-```
+```dbgcmd
 .sleep milliseconds
 ```
 
@@ -67,7 +67,7 @@ If you use this command in any other scenario, it will simply freeze the debugge
 
 The sleep time is in milliseconds and interpreted according to the default radix, unless a prefix such as **0n** is used. Thus, if the default radix is 16, the following command will cause about 65 seconds of sleep:
 
-```
+```dbgcmd
 0:000> .sleep 10000
 ```
 

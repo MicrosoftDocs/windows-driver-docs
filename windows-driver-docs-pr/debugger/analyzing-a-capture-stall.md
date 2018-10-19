@@ -19,7 +19,7 @@ The application shows running, but the stream position is not advancing. Positio
 
 Since the primary capture device on this machine is a PCI sound card, first use the [**!ks.pciaudio**](-ks-pciaudio.md) command to try and determine a starting point. Use a flag value of 1 to request a display of all running streams:
 
-```
+```dbgcmd
 kd> !pciaudio 1
 
 1 Audio FDOs found:
@@ -30,7 +30,7 @@ kd> !pciaudio 1
 
 In this case, there is only one PCI audio device and it is serviced by the Intel emu10k driver (\\Driver\\emu10k). This driver currently has a single running stream (0x812567C0). Now you can use [**!ks.graph**](-ks-graph.md) to view the kernel graph. Set *Level* and *Flags* both to 7 to obtain maximum detail on the stall:
 
-```
+```dbgcmd
 kd> !graph 812567c0 7 7
 Attempting a graph build on 812567c0...  Please be patient...
 Graph With Starting Point 812567c0:
@@ -42,7 +42,7 @@ Graph With Starting Point 812567c0:
 
 The above shows the details for factory 0. The emu10k output pin 0x812567C0 is connected to the splitter input pin 0x811DF960. There are eight IRPs queued to emu10k's output pin. The output from [**!ks.graph**](-ks-graph.md) continues as follows:
 
-```
+```dbgcmd
 "splitter" Filter ffb18890, Child Factories 2
     Output Factory 0:
         Pin 811df430 (File ffa55f90) Irps(q/p) = 10, 0
@@ -51,7 +51,7 @@ The above shows the details for factory 0. The emu10k output pin 0x812567C0 is c
 
 There are ten IRPs queued to splitter's output pin.
 
-```
+```dbgcmd
     Input Factory 1:
         Pin 811df960 (File 81187820, <- "emu10k" 812567c0) Irps(q/p) = 0, 8
             Pending: 81255418 811df008 81252008 81255280 81250b30 ffa1fe70 81252e70 ffa01d98 
@@ -59,7 +59,7 @@ There are ten IRPs queued to splitter's output pin.
 
 Splitter's input pin has no queued IRPs; however, it is waiting for the eight from emu10k to enter the queue.
 
-```
+```dbgcmd
 Analyzing a Hung Graph From 812567c0:
 
 Suspect Filters (For a Hung Graph):

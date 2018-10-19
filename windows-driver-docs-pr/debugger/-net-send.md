@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!net\_send** extension sends a message over a local network.
 
-```
+```dbgcmd
 !net_send SendingMachine TargetMachine Sender Message
 ```
 

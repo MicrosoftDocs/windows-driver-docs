@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!minipkd.adapters** extension displays all of the adapters that work with the SCSI Port driver that have been identified in the system, and the individual devices associated with each adapter.
 
-```
+```dbgcmd
 !minipkd.adapters 
 ```
 

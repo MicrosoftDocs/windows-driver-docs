@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.pagein** command pages in the specified region of memory.
 
-```
+```dbgcmd
 .pagein [Options] Address
 ```
 

@@ -21,7 +21,7 @@ The **!nstree** extension displays an ACPI namespace object and its children in 
 
 Syntax
 
-```
+```dbgcmd
 !nstree [Address]
 ```
 

@@ -21,7 +21,7 @@ The **!nsobj** extension displays an ACPI namespace object.
 
 Syntax
 
-```
+```dbgcmd
 !nsobj [Address]
 ```
 

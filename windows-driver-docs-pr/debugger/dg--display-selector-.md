@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **dg** command shows the segment descriptor for the specified selector.
 
-```
+```dbgcmd
 dg FirstSelector [LastSelector]
 ```
 

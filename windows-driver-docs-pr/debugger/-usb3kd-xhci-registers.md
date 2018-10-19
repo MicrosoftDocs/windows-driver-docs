@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The [**!usb3kd.xhci\_registers**](-usb3kd-device-info.md) extension displays the registers of a USB 3.0 host controller.
 
-```
+```dbgcmd
 !usb3kd.xhci_registers DeviceExtension
 ```
 
@@ -37,14 +37,14 @@ Usb3kd.dll
 Remarks
 -------
 
-The output the **!xhci\_registers** command is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys). For more information about the USB 3.0 host controller driver and other drivers in the USB stack, see [USB Driver Stack Architecture](http://go.microsoft.com/fwlink/p?LinkID=251983).
+The output the **!xhci\_registers** command is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys). For more information about the USB 3.0 host controller driver and other drivers in the USB stack, see [USB Driver Stack Architecture](https://go.microsoft.com/fwlink/p?LinkID=251983).
 
 Examples
 --------
 
 To obtain the address of the device extension, look at the output of the [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md) command. In the following example, the address of the device extension is 0xfffffa800536e2d0.
 
-```
+```dbgcmd
 3: kd> !xhci_dumpall
 
 ## Dumping all the XHCI controllers - DrvObj 0xfffffa80053072f0
@@ -62,7 +62,7 @@ To obtain the address of the device extension, look at the output of the [**!xhc
 
 Now you can pass the address of the device extension to the **!xhci\_registers** command.
 
-```
+```dbgcmd
 3: kd> !xhci_registers 0xfffffa800536e2d0
 
 ## Dumping controller registers
@@ -108,7 +108,7 @@ Now you can pass the address of the device extension to the **!xhci\_registers**
 
 [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

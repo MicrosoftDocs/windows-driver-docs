@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfmemory** extension displays the address and size of the buffer that is associated with a framework memory object.
 
-```
+```dbgcmd
 !wdfkd.wdfmemory Handle
 ```
 

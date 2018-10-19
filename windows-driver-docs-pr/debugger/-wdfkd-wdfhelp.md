@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfhelp** extension displays help information about all Wdfkd.dll extension commands.
 
-```
+```dbgcmd
 !wdfkd.wdfhelp
 ```
 

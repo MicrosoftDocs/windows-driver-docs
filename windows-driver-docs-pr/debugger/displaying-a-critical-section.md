@@ -22,7 +22,7 @@ Critical sections can be displayed by the **!ntsdexts.locks** extension, the **!
 
 The [**!ntsdexts.locks**](-locks---ntsdexts-locks-.md) extension displays a list of critical sections associated with the current process. If the **-v** option is used, all critical sections are displayed. Here is an example:
 
-```
+```dbgcmd
 0:000> !locks
 
 CritSec ntdll!FastPebLock+0 at 77FC49E0
@@ -39,7 +39,7 @@ Scanned 37 critical sections
 
 If you know the address of the critical section you wish to display, you can use the [**!critsec**](-critsec.md) extension. This displays the same collection of information as **!ntsdexts.locks**. For example:
 
-```
+```dbgcmd
 0:000> !critsec 77fc49e0
 
 CritSec ntdll!FastPebLock+0 at 77FC49E0
@@ -51,11 +51,11 @@ ContentionCount    0
 *** Locked
 ```
 
-The [**!cs**](-cs.md) extension is only available in Microsoft Windows XP and later versions of Windows. It can display a critical section based on its address, search an address range for critical sections, and even display the stack trace associated with each critical section. Some of these features require full Windows symbols to work properly. If Application Verifier is active, **!cs -t** can be used to display the critical section tree. See the **!cs** reference page for details and examples.
+The [**!cs**](-cs.md) extension can display a critical section based on its address, search an address range for critical sections, and even display the stack trace associated with each critical section. Some of these features require full Windows symbols to work properly. If Application Verifier is active, **!cs -t** can be used to display the critical section tree. See the **!cs** reference page for details and examples.
 
 The information displayed by **!cs** is slightly different than that shown by **!ntsdexts.locks** and **!critsec**. For example:
 
-```
+```dbgcmd
 ## 0:000> !cs 77fc49e0
 
 Critical section   = 0x77fc49e0 (ntdll!FastPebLock+0x0)
@@ -70,7 +70,7 @@ SpinCount          = 0x00000000
 
 The [**dt (Display Type)**](dt--display-type-.md) command can be used to display the literal contents of the RTL\_CRITICAL\_SECTION structure. For example:
 
-```
+```dbgcmd
 0:000> dt RTL_CRITICAL_SECTION 77fc49e0
    +0x000 DebugInfo        : 0x77fc3e00 
    +0x004 LockCount        : 0
@@ -92,7 +92,7 @@ The most important fields of the critical section structure are as follows:
 
 A newly initialized critical section looks like this:
 
-```
+```dbgcmd
 0:000> !critsec 433e60
 CritSec mymodule!cs+0 at 00433E60
 LockCount          NOT LOCKED 

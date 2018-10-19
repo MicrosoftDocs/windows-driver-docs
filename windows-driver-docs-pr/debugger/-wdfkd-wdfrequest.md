@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfrequest** extension displays information about a specified framework request object and the WDM I/O request packet (IRP) that is associated with the request object.
 
-```
+```dbgcmd
 !wdfkd.wdfrequest Handle
 ```
 

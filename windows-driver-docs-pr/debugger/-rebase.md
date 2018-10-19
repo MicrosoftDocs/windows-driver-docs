@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!rebase** extension searches in a rebase.log file for a specified address or symbol.
 
-```
+```dbgcmd
 !rebase [-r] Address [Path]
 !rebase Symbol [Path]
 !rebase -stack [Path]

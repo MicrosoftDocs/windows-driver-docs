@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ppmperfpolicy** command is no longer supported, use the [!ppmsettings](-ppmsettings.md) command instead.
 
-```
+```dbgcmd
 !ppmperfpolicy
 ```
 

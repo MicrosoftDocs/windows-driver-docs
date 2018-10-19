@@ -22,7 +22,7 @@ A similar problem can result if a faulty driver prevents IRPs from completing an
 
 If you suspect that one of these problems may be occurring, use DbgRpc with the **-t** switch (or use the [**!rpcexts.getthreadinfo**](-rpcexts-getthreadinfo.md) extension). The process ID should be used as a parameter. In the following example, assume the process ID is 0xC4:
 
-```
+```dbgcmd
 D:\wmsg>dbgrpc -t -P c4
 Searching for thread info ...
 ## PID  CELL ID   ST TID      LASTTIME

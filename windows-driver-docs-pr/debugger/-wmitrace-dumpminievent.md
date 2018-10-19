@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wmitrace.dumpminievent** extension displays the system event log trace fragment, which is stored in a dump file.
 
-```
+```dbgcmd
 !wmitrace.dumpminievent
 ```
 

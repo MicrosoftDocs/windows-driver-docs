@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfcommonbuffer** extension displays information about a WDF common buffer object.
 
-```
+```dbgcmd
 !wdfkd.wdfcommonbuffer Handle
 ```
 

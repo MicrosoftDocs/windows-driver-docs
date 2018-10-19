@@ -115,7 +115,7 @@ The **.cordll** command is supported in kernel-mode debugging. However, this com
 
 [Debugging Managed Code Using the Windows Debugger](debugging-managed-code.md)
 
-[SOS Debugging Extension](http://go.microsoft.com/fwlink/p/?linkid=223345)
+[SOS Debugging Extension](https://go.microsoft.com/fwlink/p/?linkid=223345)
 
  
 

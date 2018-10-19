@@ -24,7 +24,7 @@ Consider the following example. Suppose that you want to examine the `MyCounter`
 
 You can obtain this variable's address and then display it as follows.
 
-```
+```dbgcmd
 0:000> ? MyCounter 
 Evaluate expression: 1244892 = 0012fedc
 0:000> dd 0x0012fedc L1 
@@ -35,20 +35,20 @@ The first command output tells you that the address of `MyCounter` is 0x0012FEDC
 
 You could also perform these steps in the following command.
 
-```
+```dbgcmd
 0:000> dd MyCounter L1 
 0012fedc  00000052
 ```
 
 To change the value of `MyCounter` to decimal 83, use the following command.
 
-```
+```dbgcmd
 0:000> ed MyCounter 83 
 ```
 
 This example uses decimal input, because that format seems more natural for an integer. However, the output of the [**d\***](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command is still in hexadecimal format.
 
-```
+```dbgcmd
 0:000> dd MyCounter L1 0012fedc  00000053
 ```
 

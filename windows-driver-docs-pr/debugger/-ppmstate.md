@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ppmstate** command displays power state information.
 
-```
+```dbgcmd
 !ppmstate
 ```
 

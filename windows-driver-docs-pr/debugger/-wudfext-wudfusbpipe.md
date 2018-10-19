@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wudfext.wudfusbpipe** extension displays information about a USB pipe object.
 
-```
+```dbgcmd
 !wudfext.wudfusbpipe pWDFUSBPipe TypeName
 ```
 

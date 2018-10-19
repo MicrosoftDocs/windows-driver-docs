@@ -23,7 +23,7 @@ If one of the symbol stores that SymSrv is configured to obtain files from is do
 
 For example, we recommend the following settings:
 
-```
+```ini
 [timeouts]
 trigger=10
 count=5
@@ -35,7 +35,8 @@ In this example, the store access is turned off if five timeouts are experienced
 **To control symbol store access using the registry**
 
 1.  Create a key named
-    ```
+
+    ```text
     HKLM\ Software\Microsoft\Symbol Server\Timeouts
     ```
 

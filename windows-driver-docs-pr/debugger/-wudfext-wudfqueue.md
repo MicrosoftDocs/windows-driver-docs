@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wudfext.wudfqueue** extension displays information about an I/O queue.
 
-```
+```dbgcmd
 !wudfext.wudfqueue pWDFQueue
 ```
 
@@ -59,7 +59,7 @@ Remarks
 
 The following is an example of the **!wudfext.wudfqueue** display:
 
-```
+```dbgcmd
 kd> !wudfqueue 0x000f3500 
     WdfIoQueueDispatchSequential, POWER MANAGED, WdfIoQueuePowerOn, CAN ACCEPT, CAN DISPATCH
     Number of driver owned requests: 1

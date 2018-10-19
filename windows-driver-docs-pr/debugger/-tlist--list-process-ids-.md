@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.tlist** command lists all processes running on the system.
 
-```
+```dbgcmd
 .tlist [Options][FileNamePattern]
 ```
 

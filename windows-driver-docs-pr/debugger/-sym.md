@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!sym** extension controls noisy symbol loading and symbol prompts.
 
-```
+```dbgcmd
 !sym 
 !sym noisy 
 !sym quiet 

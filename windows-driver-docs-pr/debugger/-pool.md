@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!pool** extension displays information about a specific pool allocation or about the entire system-wide pool.
 
-```
+```dbgcmd
 !pool [Address [Flags]]
 ```
 

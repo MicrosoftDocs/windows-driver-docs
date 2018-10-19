@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!vprot** extension displays virtual memory protection information.
 
-```
+```dbgcmd
 !vprot [Address]
 ```
 
@@ -63,7 +63,7 @@ The **!vprot** extension command can be used for both live debugging and dump fi
 
 Here is an example:
 
-```
+```dbgcmd
 0:000> !vprot 30c191c
 BaseAddress: 030c1000
 AllocationBase: 030c0000

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.prefer\_dml** command sets the default behavior for commands that are capable of providing output in the Debugger Markup Language (DML) format.
 
-```
+```dbgcmd
 .prefer_dml 0
 .prefer_dml 1
 ```

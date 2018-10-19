@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!minipkd.portconfig** extension displays information about the specified PORT\_CONFIGURATION\_INFORMATION data structure.
 
-```
+```dbgcmd
 !minipkd.portconfig PortConfig 
 ```
 

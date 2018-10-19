@@ -21,13 +21,13 @@ The **ba** command sets a processor breakpoint (often called, less accurately, a
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] ba[ID] Access Size [Options] [Address [Passes]] ["CommandString"]
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 ba[ID] Access Size [Options] [Address [Passes]] ["CommandString"]
 ```
 
@@ -168,13 +168,13 @@ For more details on processor breakpoints, and additional restrictions that appl
 
 The following examples show the **ba** command. The following command sets a breakpoint for read access on 4 bytes of the variable myVar.
 
-```
+```dbgcmd
 0:000> ba r4 myVar
 ```
 
 The following command adds a breakpoint on all serial ports with addresses from 0x3F8 through 0x3FB. This breakpoint is triggered if anything is read or written to these ports.
 
-```
+```dbgcmd
 kd> ba i4 3f8
 ```
 

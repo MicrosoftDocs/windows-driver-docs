@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.wtitle** command sets the title in the main WinDbg window or in the NTSD, CDB, or KD window.
 
-```
+```dbgcmd
 .wtitle Title 
 ```
 

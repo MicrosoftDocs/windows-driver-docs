@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.lastevent** command displays the most recent exception or event that occurred.
 
-```
+```dbgcmd
 .lastevent 
 ```
 

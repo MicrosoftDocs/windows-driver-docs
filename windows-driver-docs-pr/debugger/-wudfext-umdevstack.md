@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wudfext.umdevstack** extension displays detailed information about a device stack in the host process.
 
-```
+```dbgcmd
 !wudfext.umdevstack DevstackAddress [Flags] 
 ```
 

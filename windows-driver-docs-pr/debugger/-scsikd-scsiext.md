@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!scsikd.scsiext** extension displays detailed information about the specified SCSI port extension.
 
-```
+```dbgcmd
 !scsikd.scsiext Device 
 ```
 
@@ -59,7 +59,7 @@ Remarks
 
 Here is an example of the **!scsikd.scsiext** display, where the SCSI port extension has been specified by a functional device object (FDO); this can be obtained from the **DO** field or **DevExt** field in the [**!minipkd.adapters**](-minipkd-adapters.md) display:
 
-```
+```dbgcmd
 kd> !scsikd.scsiext 816f9a40 
 Scsiport functional device extension at address 816f9af8
 Common Extension:
@@ -97,7 +97,7 @@ Adapter Extension:
 
 Here is an example of the **!scsikd.scsiext** display, where the SCSI port extension has been specified by a physical device object (PDO); this can be obtained from the **DevObj** field or **LUN** field in the [**!minipkd.adapters**](-minipkd-adapters.md) display:
 
-```
+```dbgcmd
 kd> !scsikd.scsiext 816ea030
 Scsiport physical device extension at address 816ea0e8
 Common Extension:

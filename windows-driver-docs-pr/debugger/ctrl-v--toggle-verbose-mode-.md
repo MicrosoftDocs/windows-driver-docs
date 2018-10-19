@@ -21,13 +21,13 @@ The CTRL+V key toggles verbose mode on and off.
 
 CDB / KD Syntax
 
-```
+```dbgcmd
 CTRL+V  ENTER 
 ```
 
 WinDbg Syntax
 
-```
+```dbgcmd
 CTRL+ALT+V 
 ```
 
