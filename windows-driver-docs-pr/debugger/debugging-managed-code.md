@@ -74,7 +74,7 @@ The debugger must load a version of the DAC that is the same as the version of t
 
 The output should be similar to this.
 
-```
+```dbgcmd
 CLRDLL: Loaded DLL C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscordacwks.dll
 CLR DLL status: Loaded DLL C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscordacwks.dll
 ```
@@ -87,7 +87,7 @@ To verify that the version of mscordacwks.dll matches the version of the CLR tha
 
 The output should be similar to this.
 
-```
+```dbgcmd
 start             end                 module name
 000007ff`26710000 000007ff`2706e000   clr        (deferred)             
     Image path: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\clr.dll
@@ -132,7 +132,7 @@ Enter these commands.
 
 The output will be similar to this.
 
-```
+```dbgcmd
 CLRDLL: Unable to get version info for 'C:\Windows\Microsoft.NET
    \Framework64\v4.0.30319\mscordacwks.dll', Win32 error 0n87
 
@@ -162,7 +162,7 @@ To verify that the version of mscordacwks.dll matches the version of the CLR tha
 
 The output should be similar to this.
 
-```
+```dbgcmd
 start             end                 module name
 000007ff`26710000 000007ff`2706e000   clr        (deferred)             
     Image path: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\clr.dll
@@ -175,7 +175,7 @@ In the preceding example, notice that the version of the CLR (clr.dll) matches t
 
 To verify that the SOS debugging extension loaded correctly, enter the [**.chain**](-chain--list-debugger-extensions-.md) command.
 
-```
+```dbgcmd
 0:000> .chain
 Extension DLL search Path:
 ...

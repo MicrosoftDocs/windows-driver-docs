@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The DBH command line uses the following syntax.
 
-```
+```console
 dbh [Options] -p:PID [Command] 
 
 dbh [Options] ExecutableName [Command] 
