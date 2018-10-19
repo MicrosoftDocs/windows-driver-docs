@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wudfext.wudffile** extension displays information about a framework file.
 
-```
+```dbgcmd
 !wudfext.wudffile pWDFFile [TypeName] 
 ```
 

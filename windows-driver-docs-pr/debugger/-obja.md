@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!obja** extension displays the attributes of an object in the object manager.
 
-```
+```dbgcmd
 !obja Address
 ```
 
@@ -61,7 +61,7 @@ Remarks
 
 The attributes pertaining to the specified object are listed. Valid attributes are:
 
-```
+```cpp
 #define OBJ_INHERIT             0x00000002L
 #define OBJ_PERMANENT           0x00000010L
 #define OBJ_EXCLUSIVE           0x00000020L
@@ -73,7 +73,7 @@ The attributes pertaining to the specified object are listed. Valid attributes a
 
 Here is an example:
 
-```
+```dbgcmd
 kd> !obja 80967768
 Obja +80967768 at 80967768:
         OBJ_INHERIT

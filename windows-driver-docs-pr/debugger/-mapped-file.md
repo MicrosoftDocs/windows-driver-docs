@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!mapped\_file** extension displays the name of the file that backs the file mapping that contains a specified address.
 
-```
+```dbgcmd
 !mapped_file Address
 ```
 
@@ -54,14 +54,14 @@ The **!mapped\_file** extension can only be used during live, nonremote debuggin
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For more information about file mapping, see [MapViewOfFile](http://go.microsoft.com/fwlink/p/?linkid=123354) in the Windows SDK.
+For more information about file mapping, see [MapViewOfFile](https://go.microsoft.com/fwlink/p/?linkid=123354) in the Windows SDK.
 
 Remarks
 -------
 
 Here are three examples. The first two addresses used are mapped from a file, and the third is not.
 
-```
+```dbgcmd
 0:000> !mapped_file 4121ec 
 Mapped file name for 004121ec: '\Device\HarddiskVolume2\CODE\TimeTest\Debug\TimeTest.exe'
 

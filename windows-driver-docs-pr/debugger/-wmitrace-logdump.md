@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wmitrace.logdump** extension displays the contents of the trace buffers for a trace session. You can limit the display to trace messages from specified providers.
 
-```
+```dbgcmd
 !wmitrace.logdump [-t Count] [{LoggerID|LoggerName} [GUIDFile]] 
 ```
 

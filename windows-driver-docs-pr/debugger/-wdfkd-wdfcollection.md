@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfcollection** extension displays all of the objects that are stored in a WDFCOLLECTION structure.
 
-```
+```dbgcmd
 !wdfkd.wdfcollection Handle
 ```
 

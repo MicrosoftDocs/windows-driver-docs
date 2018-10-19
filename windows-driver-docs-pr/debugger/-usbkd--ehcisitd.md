@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.\_ehcisitd** command displays information from a **usbehci!\_HCD\_SI\_TRANSFER\_DESCRIPTOR**
 
-```
+```dbgcmd
 !usbkd._ehcisitd StructAddr
 ```
 
@@ -39,7 +39,7 @@ Usbkd.dll
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

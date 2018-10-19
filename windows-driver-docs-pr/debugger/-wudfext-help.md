@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wudfext.help** extension displays all Wudfext.dll extension commands.
 
-```
+```dbgcmd
 !wudfext.help
 ```
 

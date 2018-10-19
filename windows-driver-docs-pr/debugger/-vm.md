@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!vm** extension displays summary information about virtual memory use statistics on the target system.
 
-```
+```dbgcmd
 !vm [Flags]
 ```
 
@@ -85,7 +85,7 @@ Remarks
 
 Here is an example of the short output produced when *Flags* is 1:
 
-```
+```dbgcmd
 kd> !vm 1
 
 *** Virtual Memory Usage ***

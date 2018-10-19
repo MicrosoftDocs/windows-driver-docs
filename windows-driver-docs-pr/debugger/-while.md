@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.while** token behaves like the **while** keyword in C.
 
-```
+```dbgcmd
 .while (Condition) { Commands } 
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ube** extension re-enables a user-space breakpoint.
 
-```
+```dbgcmd
 !ube BreakpointNumber 
 ```
 

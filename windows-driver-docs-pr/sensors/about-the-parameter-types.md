@@ -3,7 +3,7 @@ title: About Sensor Parameter Types
 author: windows-driver-content
 description: About the Parameter Types
 ms.assetid: 392ea7b9-df6f-4d47-9367-a167c0656dd4
-ms.date: 04/20/2017
+ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
 

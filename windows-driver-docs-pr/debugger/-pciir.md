@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!pciir** extension displays the contents of the hardware routing of peripheral component interconnect (PCI) devices to interrupt controller inputs.
 
-```
+```dbgcmd
 !pciir
 ```
 

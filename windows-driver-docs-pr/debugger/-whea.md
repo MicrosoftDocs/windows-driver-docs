@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!whea** extension displays top-level Windows Hardware Error Architecture (WHEA) information.
 
-```
+```dbgcmd
 !whea 
 ```
 
@@ -59,14 +59,14 @@ This extension can be used only in Windows Vista and later versions of Windows.
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-The [**!errrec**](-errrec.md) and [**!errpkt**](-errpkt.md) extensions can be used to display additional WHEA information. For general information about WHEA, see [Windows Hardware Error Architecture (WHEA)](http://go.microsoft.com/fwlink/p/?linkid=153571) in the Windows Driver Kit (WDK) documentation.
+The [**!errrec**](-errrec.md) and [**!errpkt**](-errpkt.md) extensions can be used to display additional WHEA information. For general information about WHEA, see [Windows Hardware Error Architecture (WHEA)](https://go.microsoft.com/fwlink/p/?linkid=153571) in the Windows Driver Kit (WDK) documentation.
 
 Remarks
 -------
 
 The following example shows the (truncated) output of the **!whea** extension:
 
-```
+```dbgcmd
 3: kd> !whea 
 Error Source Table @ fffff800019ca250
 13 Error Sources

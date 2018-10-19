@@ -21,7 +21,7 @@ First-time users of CDB or NTSD should begin with the [Debugging Using CDB and N
 
 The CDB command line uses the following syntax:
 
-```
+```dbgcmd
 cdb  [ -server ServerTransport | -remote ClientTransport ] 
 [ -premote SmartClientTransport ] [-log{a|au|o|ou} LogFile]
 [-2] [-d] [-ddefer] [-g] [-G] [-hd] [-lines] [-myob] [-bonc] 
@@ -51,7 +51,7 @@ cdb -?
 
 The NTSD command-line syntax is identical to that of CDB:
 
-```
+```dbgcmd
 ntsd  [ -server ServerTransport | -remote ClientTransport ] 
 [ -premote SmartClientTransport ] [-log{a|au|o|ou} LogFile]
 [-2] [-d] [-ddefer] [-g] [-G] [-hd] [-lines] [-myob] [-bonc] 
@@ -81,7 +81,7 @@ ntsd -?
 
 The only difference between NTSD and CDB is that NTSD spawns a new console window while CDB inherits the window from which it was invoked. Since the **start** command can also be used to spawn a new console window, the following two constructions will give the same results:
 
-```
+```dbgcmd
 start cdb [parameters]
 ntsd [parameters]
 ```
@@ -418,7 +418,7 @@ Displays command-line help text.
 
 When you are starting the debugger from **Start | Run** or from a Command Prompt window, specify arguments for the target application after the application's file name. For instance:
 
-```
+```dbgcmd
 cdb myexe arg1arg2
 ```
 

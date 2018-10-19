@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **be** command restores one or more breakpoints that were previously disabled.
 
-```
+```dbgcmd
 be Breakpoints 
 ```
 

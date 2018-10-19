@@ -20,7 +20,7 @@ The following section will walk you through a disassembly example.
 
 The following is the code for the function that will be analyzed.
 
-```
+```cpp
 HRESULT CUserView::CloseView(void)
 {
     if (m_fDestroyed) return S_OK;
@@ -103,7 +103,7 @@ This section contains the annotated disassembly example.
 
 Functions which use the **ebp** register as a frame pointer start out as follows:
 
-```
+```dbgcmd
 HRESULT CUserView::CloseView(void)
 SAMPLE!CUserView__CloseView:
 71517134 55               push    ebp
@@ -114,14 +114,14 @@ This sets up the frame so the function can access its parameters as positive off
 
 This is a method on a private COM interface, so the calling convention is **\_\_stdcall**. This means that parameters are pushed right to left (in this case, there are none), the "this" pointer is pushed, and then the function is called. Thus, upon entry into the function, the stack looks like this:
 
-```
+```dbgcmd
 [esp+0] = return address
 [esp+4] = this
 ```
 
 After the two preceding instructions, the parameters are accessible as:
 
-```
+```dbgcmd
 [ebp+0] = previous ebp pushed on stack
 [ebp+4] = return address
 [ebp+8] = this
@@ -129,7 +129,7 @@ After the two preceding instructions, the parameters are accessible as:
 
 For a function that uses **ebp** as a frame pointer, the first pushed parameter is accessible at \[**ebp**+8\]; subsequent parameters are accessible at consecutive higher DWORD addresses.
 
-```
+```dbgcmd
 71517137 51               push    ecx
 71517138 51               push    ecx
 ```
@@ -138,27 +138,27 @@ This function requires only two local stack variables, so a **sub esp**, 8 instr
 
 For a function that uses **ebp** as a frame pointer, stack local variables are accessible at negative offsets from the **ebp** register.
 
-```
+```dbgcmd
 71517139 56               push    esi
 ```
 
 Now the compiler saves the registers that are required to be preserved across function calls. Actually, it saves them in bits and pieces, interleaved with the first line of actual code.
 
-```
+```dbgcmd
 7151713a 8b7508           mov     esi,[ebp+0x8]     ; esi = this
 7151713d 57               push    edi               ; save another registers
 ```
 
 It so happens that CloseView is a method on ViewState, which is at offset 12 in the underlying object. Consequently, **this** is a pointer to a ViewState class, although when there is possible confusion with another base class, it will be more carefully specified as (ViewState\*)**this**.
 
-```
+```dbgcmd
     if (m_fDestroyed)
 7151713e 33ff             xor     edi,edi           ; edi = 0
 ```
 
 XORing a register with itself is a standard way of zeroing it out.
 
-```
+```dbgcmd
 71517140 39beac000000     cmp     [esi+0xac],edi    ; this->m_fDestroyed == 0?
 71517146 7407             jz      NotDestroyed (7151714f)  ; jump if equal
 ```
@@ -167,7 +167,7 @@ The **cmp** instruction compares two values (by subtracting them). The **jz** in
 
 The cmp instruction compares two values; a subsequent j instruction jumps based on the result of the comparison.
 
-```
+```dbgcmd
     return S_OK;
 71517148 33c0             xor     eax,eax           ; eax = 0 = S_OK
 7151714a e972010000       jmp     ReturnNoEBX (715172c1) ; return, do not pop EBX
@@ -175,14 +175,14 @@ The cmp instruction compares two values; a subsequent j instruction jumps based 
 
 The compiler delayed saving the EBX register until later in the function, so if the program is going to "early-out" on this test, then the exit path needs to be the one that does not restore EBX.
 
-```
+```dbgcmd
     BOOL fViewObjectChanged = FALSE;
     ReleaseAndNull(&m_pdtgt);
 ```
 
 The execution of these two lines of code is interleaved, so pay attention.
 
-```
+```dbgcmd
 NotDestroyed:
 7151714f 8d86c0000000     lea     eax,[esi+0xc0]    ; eax = &m_pdtgt
 ```
@@ -191,19 +191,19 @@ The **lea** instruction computes the effect address of a memory access and store
 
 The lea instruction takes the address of a variable.
 
-```
+```dbgcmd
 71517155 53               push    ebx
 ```
 
 You should save that EBX register before it is damaged.
 
-```
+```dbgcmd
 71517156 8b1d10195071     mov ebx,[_imp__ReleaseAndNull]
 ```
 
 Because you will be calling **ReleaseAndNull** frequently, it is a good idea to cache its address in EBX.
 
-```
+```dbgcmd
 7151715c 50               push    eax               ; parameter to ReleaseAndNull
 7151715d 897dfc           mov     [ebp-0x4],edi     ; fViewObjectChanged = FALSE
 71517160 ffd3             call    ebx               ; call ReleaseAndNull
@@ -214,7 +214,7 @@ Because you will be calling **ReleaseAndNull** frequently, it is a good idea to 
 
 Remember that you zeroed out the EDI register a while back and that EDI is a register preserved across function calls (so the call to **ReleaseAndNull** did not change it). Therefore, it still holds the value zero and you can use it to quickly test for zero.
 
-```
+```dbgcmd
         m_psb->EnableModelessSB(FALSE);
 7151716b 8b4638           mov     eax,[esi+0x38]    ; eax = this->m_psb
 7151716e 57               push    edi               ; FALSE
@@ -227,7 +227,7 @@ The above pattern is a telltale sign of a COM method call.
 
 COM method calls are pretty popular, so it is a good idea to learn to recognize them. In particular, you should be able to recognize the three IUnknown methods directly from their Vtable offsets: QueryInterface=0, AddRef=4, and Release=8.
 
-```
+```dbgcmd
         if(m_pws) m_pws->ViewReleased();
 71517175 8b8614010000     mov     eax,[esi+0x114]   ; eax = this->m_pws
 7151717b 3bc7             cmp     eax,edi           ; eax == 0?
@@ -242,7 +242,7 @@ NoWS:
 
 Indirect calls through globals is how function imports are implemented in Microsoft Win32. The loader fixes up the globals to point to the actual address of the target. This is a handy way to get your bearings when you are investigating a crashed machine. Look for the calls to imported functions and in the target. You will usually have the name of some imported function, which you can use to determine where you are in the source code.
 
-```
+```dbgcmd
         if (hwndCapture && hwndCapture == m_hwnd) {
             SendMessage(m_hwnd, WM_CANCELMODE, 0, 0);
         }
@@ -252,7 +252,7 @@ Indirect calls through globals is how function imports are implemented in Micros
 
 The function return value is placed in the EAX register.
 
-```
+```dbgcmd
 7151718f 8b4e44           mov     ecx,[esi+0x44]    ; ecx = this->m_hwnd
 71517192 3bc1             cmp     eax,ecx           ; hwndCapture = ecx?
 71517194 750b             jnz     No_Capture (715171a1) ; jump if not
@@ -278,7 +278,7 @@ No_Capture:
 
 Notice how you had to change your "this" pointer when calling a method on a different base class from your own.
 
-```
+```dbgcmd
         m_fRecursing = FALSE;
 715171b9 80a60d0100007f   and     byte ptr [esi+0x10d],0x7f
         m_psv->UIActivate(SVUIA_DEACTIVATE);
@@ -296,7 +296,7 @@ Notice how you had to change your "this" pointer when calling a method on a diff
 
 The first local variable is **psv**.
 
-```
+```dbgcmd
         ReleaseAndNull(&_pctView);
 715171d3 8d466c           lea     eax,[esi+0x6c]    ; eax = &_pctView
 715171d6 50               push    eax               ; parameter
@@ -310,7 +310,7 @@ The first local variable is **psv**.
 
 Note that the compiler speculatively prepared the address of the **m\_pvo** member, because you are going to use it frequently for a while. Thus, having the address handy will result in smaller code.
 
-```
+```dbgcmd
             if (SUCCEEDED(m_pvo->GetAdvise(NULL, NULL, &pSink)) && pSink) {
 715171e9 8b08             mov     ecx,[eax]         ; ecx = m_pvo->lpVtbl
 715171eb 8d5508           lea     edx,[ebp+0x8]     ; edx = &pSink
@@ -332,13 +332,13 @@ If the function uses an EBP frame, then incoming parameters arrive at positive o
 
 If you are paying close attention, you will see that the compiler could have optimized this code a little better. It could have delayed the **lea edi, \[esi+0xa8\]** instruction until after the two **push 0x0** instructions, replacing them with **push edi**. This would have saved 2 bytes.
 
-```
+```dbgcmd
                 if (pSink == (IAdviseSink *)this)
 ```
 
 These next several lines are to compensate for the fact that in C++, (IAdviseSink \*)**NULL** must still be **NULL**. So if your "this" is really "(ViewState\*)NULL", then the result of the cast should be **NULL** and not the distance between IAdviseSink and IBrowserService.
 
-```
+```dbgcmd
 71517202 8d46ec           lea     eax,[esi-0x14]    ; eax = -(IAdviseSink*)this
 71517205 8d5614           lea     edx,[esi+0x14]    ; edx = (IAdviseSink*)this
 71517208 f7d8             neg     eax               ; eax = -eax (sets carry if != 0)
@@ -350,7 +350,7 @@ Although the Pentium has a conditional move instruction, the base i386 architect
 
 The general pattern for a conditional evaluation is the following:
 
-```
+```dbgcmd
         neg     r
         sbb     r, r
         and     r, (val1 - val2)
@@ -373,14 +373,14 @@ Thus, the ultimate result of this series of instructions is to set **r** to **va
 
 In this particular instance, you can see that **val2 = 0** and **val1 = (IAdviseSink\*)this**. (Notice that the compiler elided the final **add eax, 0** instruction because it has no effect.)
 
-```
+```dbgcmd
 7151720e 394508           cmp     [ebp+0x8],eax ; pSink == (IAdviseSink*)this?
 71517211 750b             jnz     No_SetAdvise (7151721e) ; jump if not equal
 ```
 
 Earlier in this section, you set EDI to the address of the **m\_pvo** member. You are going to be using it now. You also zeroed out the ECX register earlier.
 
-```
+```dbgcmd
                     m_pvo->SetAdvise(0, 0, NULL);
 71517213 8b07             mov     eax,[edi]         ; eax = m_pvo
 71517215 51               push    ecx               ; NULL
@@ -402,7 +402,7 @@ All these COM method calls should look very familiar.
 
 The evaluation of the next two statements is interleaved. Do not forget that EBX contains the address of **ReleaseAndNull**.
 
-```
+```dbgcmd
             fViewObjectChanged = TRUE;
             ReleaseAndNull(&m_pvo);
 71517227 57               push    edi               ; &m_pvo
@@ -421,7 +421,7 @@ No_Pvo:
 
 Here are more COM method calls.
 
-```
+```dbgcmd
             psv->DestroyViewWindow();
 7151723e 8b07             mov     eax,[edi]         ; eax = psv->lpVtbl
 71517240 57               push    edi               ; "this" for callee
@@ -437,7 +437,7 @@ No_Psv2:
 
 ANDing a memory location with zero is the same as setting it to zero, because anything AND zero is zero. The compiler uses this form because, even though it is slower, it is much shorter than the equivalent **mov** instruction. (This code was optimized for size, not speed.)
 
-```
+```dbgcmd
         m_fHandsOff = FALSE;
 7151724e 83a60c010000fe   and     dword ptr [esi+0x10c],0xfe
         if (m_pcache) {
@@ -461,7 +461,7 @@ No_Cache:
 
 In order to call **CancelPendingActions**, you have to move from (ViewState\*)this to (CUserView\*)this. Note also that **CancelPendingActions** uses the \_\_thiscall calling convention instead of \_\_stdcall. According to \_\_thiscall, the "this" pointer is passed in the ECX register instead of being passed on the stack.
 
-```
+```dbgcmd
 71517272 8d4eec           lea     ecx,[esi-0x14]    ; ecx = (CUserView*)this
 71517275 e832fbffff       call CUserView::CancelPendingActions (71516dac) ; __thiscall
     ReleaseAndNull(&_psf);
@@ -493,7 +493,7 @@ NoNotifyViewClients:
 
 Remember that EDI is still zero and EBX is still &m\_pszTitle, because those registers are preserved by function calls.
 
-```
+```dbgcmd
 715172ab 893b             mov     [ebx],edi         ; m_pszTitle = 0
 No_Title:
     SetRect(&m_rcBounds, 0, 0, 0, 0);
@@ -508,14 +508,14 @@ No_Title:
 
 Notice that you do not need the value of "this" any more, so the compiler uses the **add** instruction to modify it in place instead of using up another register to hold the address. This is actually a performance win due to the Pentium u/v pipelining, because the v pipe can do arithmetic, but not address computations.
 
-```
+```dbgcmd
     return S_OK;
 715172be 33c0             xor     eax,eax           ; eax = S_OK
 ```
 
 Finally, you restore the registers you are required to preserve, clean up the stack, and return to your caller, removing the incoming parameters.
 
-```
+```dbgcmd
 715172c0 5b               pop     ebx               ; restore
 ReturnNoEBX:
 715172c1 5f               pop     edi               ; restore

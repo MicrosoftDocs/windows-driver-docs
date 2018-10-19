@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **bsc** command changes the condition under which a breakpoint occurs or changes the command executed when the specified conditional breakpoint is encountered.
 
-```
+```dbgcmd
 bsc ID Condition ["CommandString"] 
 ```
 

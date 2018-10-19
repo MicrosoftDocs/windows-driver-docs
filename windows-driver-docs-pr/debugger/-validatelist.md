@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!validatelist** extension verifies that the backward and forward links in a doubly-linked list are valid.
 
-```
+```dbgcmd
 !validatelist Address
 ```
 

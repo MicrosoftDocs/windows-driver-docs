@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.load** and **.loadby** commands load a new extension DLL into the debugger.
 
-```
+```dbgcmd
 .load DLLName  
 !DLLName.load 
 .loadby DLLName ModuleName

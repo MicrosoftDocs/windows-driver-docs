@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!timer** extension displays a detailed listing of all system timer use.
 
-```
+```dbgcmd
 !timer 
 ```
 
@@ -58,7 +58,7 @@ The **!timer** extension displays the timer tree, which stores all timer objects
 
 Here is an example:
 
-```
+```dbgcmd
 kd> !timer
 Dump system timers
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.opendump** command opens a dump file for debugging.
 
-```
+```dbgcmd
 .opendump DumpFile 
 .opendump /c "DumpFileInArchive" [CabFile] 
 ```

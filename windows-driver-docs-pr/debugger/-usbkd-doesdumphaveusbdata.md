@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.doesdumphaveusbdata** command checks to see which types of USB data are in a crash dump file that was generated as a result of [**Bug Check 0xFE**](bug-check-0xfe--bugcode-usb-driver.md).
 
-```
+```dbgcmd
 !usbkd.doesdumphaveusbdata
 ```
 
@@ -38,7 +38,7 @@ Examples
 
 Here is an example of the output of **!doesdumphaveusbdata**
 
-```
+```dbgcmd
 1: kd> !analyze -v
 *** ...
 BUGCODE_USB_DRIVER (fe) 
@@ -70,7 +70,7 @@ GuidUsbPortExt Exists (DEVICE_EXTENSION + DeviceDataSize ) = 2250
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

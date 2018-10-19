@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!sprocess** extension displays information about the specified session process, or about all processes in the specified session.
 
-```
+```dbgcmd
 !sprocess Session [Flags [ImageName]] 
 !sprocess -?
 ```

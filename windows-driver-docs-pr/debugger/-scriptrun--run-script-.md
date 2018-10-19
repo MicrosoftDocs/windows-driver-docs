@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The .scriptrun command will load and run a JavaScript.
 
-```
+```dbgcmd
 .scriptrun ScriptFile  
 ```
 
@@ -64,7 +64,7 @@ The .scriptrun command will load a script and, execute the following code.
 
 A confirmation message is displayed when the code is loaded and executed.
 
-```
+```dbgcmd
 0:000> .scriptrun C:\WinDbg\Scripts\helloWorld.js
 JavaScript script successfully loaded from 'C:\WinDbg\Scripts\helloWorld.js'
 Hello World!  We are in JavaScript!
@@ -113,7 +113,7 @@ This table summarizes which functions are executed by .scriptload and .scriptrun
 
 You can use this code to see which functions are called with the .script run command.
 
-```
+```dbgcmd
 // Root of Script
 host.diagnostics.debugLog("***>; Code at the very top (root) of the script is always run \n");
 
@@ -141,7 +141,7 @@ For more information about working with JavaScript, see [JavaScript Debugger Scr
 
 Before using any of the .script commands, a scripting provider needs to be loaded. Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider dll.
 
-```
+```dbgcmd
 0:000> .load C:\ScriptProviders\jsprovider.dll
 ```
 

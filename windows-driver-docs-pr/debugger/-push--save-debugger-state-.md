@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.push** command saves the current state of the debugger.
 
-```
+```dbgcmd
 .push
 .push /r
 .push /r /q

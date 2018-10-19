@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.logopen** command sends a copy of the events and commands from the [Debugger Command window](debugger-command-window.md) to a new log file.
 
-```
+```dbgcmd
 .logopen [Options] [FileName] 
 .logopen /d
 ```
@@ -74,7 +74,7 @@ If you already have a log file open when you run the **.logopen** command, the d
 
 The **.logopen /t** command appends the process ID, date, and time to the log file name. In the following example, the process ID in hexadecimal is 0x02BC, the date is February 28, 2005, and the time is 9:05:50.935.
 
-```
+```dbgcmd
 0:000> .logopen /t c:\logs\mylogfile.txt
 Opened log file 'c:\logs\mylogfile_02BC_2005-02-28_09-05-50-935.txt'
 ```

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!searchpte** extension searches physical memory for the specified page frame number (PFN).
 
-```
+```dbgcmd
 !searchpte PFN 
 !searchpte -?
 ```

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfspinlock** extension displays information about a framework spin-lock object. This information includes the spin lock's acquisition history and the length of time that the lock was held.
 
-```
+```dbgcmd
 !wdfkd.wdfspinlock Handle
 ```
 

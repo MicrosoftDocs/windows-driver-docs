@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wudfext.wudfdumpobjects** extension displays outstanding UMDF objects.
 
-```
+```dbgcmd
 !wudfext.wudfdumpobjects ObjTrackerAddress
 ```
 
@@ -65,7 +65,7 @@ This extension can be used at any time, even if UMDF has not broken in to the de
 
 If UMDF is version 1.9 or above, you can use either [**!wudfext.umdevstack**](-wudfext-umdevstack.md) or [**!wudfext.umdevstacks**](-wudfext-umdevstacks.md) to determine the address of the object tracker. This address can then be passed to **!wudfext.wudfdumpobjects**. Here is an example:
 
-```
+```dbgcmd
 0: kd> !umdevstacks 
 Number of device stacks: 1
   Device Stack: 0x038c6f08    Pdo Name: \Device\USBPDO-11

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.trap** command displays the trap frame register state and also sets the register context.
 
-```
+```dbgcmd
 .trap [Address]
 ```
 

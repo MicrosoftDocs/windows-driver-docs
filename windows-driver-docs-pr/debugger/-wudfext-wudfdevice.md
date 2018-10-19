@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wudfext.wudfdevice** extension displays the Plug and Play (PnP) and power-management state systems for a device.
 
-```
+```dbgcmd
 !wudfext.wudfdevice pWDFDevice
 ```
 
@@ -61,7 +61,7 @@ You can use the **!wudfext.wudfdevice** extension to determine the current PnP o
 
 The following is an example of the **!wudfext.wudfdevice** display:
 
-```
+```dbgcmd
 kd> !wudfdevice 0xf2f80 
 Pnp Driver Callbacks:
   IPnpCallback: 0x0

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!scm** extension displays the specified shared cache map.
 
-```
+```dbgcmd
 !scm Address
 ```
 

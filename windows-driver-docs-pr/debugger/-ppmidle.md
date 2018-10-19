@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ppmidle** command displays processor idle states.
 
-```
+```dbgcmd
 !ppmidle
 ```
 

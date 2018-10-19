@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.logappend** command appends a copy of the events and commands from the [Debugger Command window](debugger-command-window.md) to the specified log file.
 
-```
+```dbgcmd
 .logappend [/u] [FileName]
 ```
 

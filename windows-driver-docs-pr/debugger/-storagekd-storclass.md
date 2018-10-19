@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!storagekd.storclass** extension displays information about the specified *classpnp* device.
 
-```
+```dbgcmd
 !storagekd.storclass [Address [Level]] 
 ```
 
@@ -56,7 +56,7 @@ Here is an example of the **!storagekd.storclass** display:
 
 **1: kd&gt; !storagekd.storclass**
 
-```
+```dbgcmd
 Storage class devices:
 
 * !storclass fffffa80043dc060 [1,2] ST3160812AS Paging Disk       

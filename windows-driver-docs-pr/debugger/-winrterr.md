@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!winrterr** sets the debugger reporting mode for Windows Runtime errors.
 
-```
+```dbgcmd
 !winrterr Mode
 !winrterr
 ```

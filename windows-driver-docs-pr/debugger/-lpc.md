@@ -18,25 +18,12 @@ ms.localizationpriority: medium
 
 
 **Important**  
-This extension is not supported in Windows Vista and later versions of Windows. Lpc is now emulated in alpc, use the !alpc extension instead.
+Lpc is now emulated in alpc, use the !alpc extension instead.
 
  
-
 The **!lpc** extension displays information about all local procedure call (LPC) ports and messages in the target system.
 
-Syntax in Windows 2000
-
-```
-!lpc message MessageID 
-!lpc port Port 
-!lpc scan Port 
-!lpc thread Thread 
-!lpc
-```
-
-Syntax in Windows Server 2003 and Windows XP
-
-```
+```dbgcmd
 !lpc message MessageID 
 !lpc port Port 
 !lpc scan Port 
@@ -115,7 +102,7 @@ Here are several examples of the output from this extension from a Windows XP sy
 
 In this example, all port LPC ports are displayed.
 
-```
+```dbgcmd
 kd> !lpc port
 Scanning 225 objects
        1  Port: 0xe1405650 Connection: 0xe1405650  Communication: 0x00000000  'SeRmCommandPort' 
@@ -130,7 +117,7 @@ Scanning 225 objects
 
 In the previous example, the port at address e14ae238 has no messages; that is, all messages have been picked up and no new messages have arrived.
 
-```
+```dbgcmd
 kd> !lpc port e14ae238
 
 Server connection port e14ae238  Name: ApiPort
@@ -144,7 +131,7 @@ Server connection port e14ae238  Name: ApiPort
 
 In the previous example, the port at 0xe14ae238 has messages which have been queued, but not yet picked up by the server.
 
-```
+```dbgcmd
 kd> !lpc port 0xe14ae238
 
 Server connection port e14ae238  Name: ApiPort
@@ -162,7 +149,7 @@ Server connection port e14ae238  Name: ApiPort
 
 The remaining Windows XP examples concern the other options that can be used with this extension.
 
-```
+```dbgcmd
 kd> !lpc message 222be
 Searching message 222be in threads ...
 Client thread 842a4db0 waiting a reply from 222be
@@ -187,7 +174,7 @@ Server connection port e14ae238  Name: ApiPort
 Done.
 ```
 
-```
+```dbgcmd
 kd> !lpc thread 842a4db0
 Searching thread 842a4db0 in port rundown queues ...
 
@@ -209,7 +196,7 @@ Server connection port e14ae238  Name: ApiPort
     The LpcDataInfoChainHead queue is empty
 ```
 
-```
+```dbgcmd
 kd> !lpc scan e13d8830
 Scanning 225 objects
        3  Port: 0xe13d8830 Connection: 0xe141ef50  Communication: 0xe13d8910  ' 

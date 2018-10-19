@@ -21,7 +21,7 @@ The **!locks** extension in Ntsdexts.dll displays a list of critical sections as
 
 This extension command should not be confused with the [**!kdext\*.locks**](-locks---kdext--locks-.md) extension command.
 
-```
+```dbgcmd
     !locks [Options] 
 ```
 
@@ -69,7 +69,7 @@ This extension command shows all critical sections that have been initialized by
 
 Here is an example:
 
-```
+```dbgcmd
 0:000> !locks
 
 CritSec w3svc!g_pWamDictator+a0 at 68C2C298

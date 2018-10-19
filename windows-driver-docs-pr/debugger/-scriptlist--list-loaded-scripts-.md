@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.scriptlist** command lists the loaded scripts.
 
-```
+```dbgcmd
 .scriptlist 
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!vadump** extension displays all virtual memory ranges and their corresponding protection information.
 
-```
+```dbgcmd
     !vadump [-v] 
 ```
 
@@ -59,7 +59,7 @@ Remarks
 
 Here is an example:
 
-```
+```dbgcmd
 0:000> !vadump
 BaseAddress:       00000000
 RegionSize:        00010000
@@ -82,7 +82,7 @@ The Type line shows the memory type. The possible values are MEM\_IMAGE, MEM\_MA
 
 Here is an example using the **-v** parameter:
 
-```
+```dbgcmd
 0:000> !vadump -v
 BaseAddress:       00000000
 AllocationBase:    00000000

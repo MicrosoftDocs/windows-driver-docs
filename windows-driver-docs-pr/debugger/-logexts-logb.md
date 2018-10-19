@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!logexts.logb** extension displays or flushes the output buffer.
 
-```
+```dbgcmd
 !logexts.logb p 
 !logexts.logb f 
 ```

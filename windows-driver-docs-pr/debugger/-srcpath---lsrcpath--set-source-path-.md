@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.srcpath** and **.lsrcpath** commands set or display the source file search path.
 
-```
+```dbgcmd
 .srcpath[+] [Directory [; ...]] 
 .lsrcpath[+] [Directory [; ...]] 
 ```

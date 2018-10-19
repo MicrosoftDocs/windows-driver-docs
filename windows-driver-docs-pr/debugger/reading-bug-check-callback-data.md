@@ -13,20 +13,20 @@ ms.localizationpriority: medium
 
 Many drivers supply *bug check callback routines*. When Windows issues a bug check, it calls these routines before shutting down the system. These routines can specify and write to areas of memory known as *callback data* and *secondary callback data*.
 
-<span id="BugCheckCallback"></span><span id="bugcheckcallback"></span><span id="BUGCHECKCALLBACK"></span>[BugCheckCallback](http://go.microsoft.com/fwlink/p/?LinkID=254479)  
+<span id="BugCheckCallback"></span><span id="bugcheckcallback"></span><span id="BUGCHECKCALLBACK"></span>[BugCheckCallback](https://go.microsoft.com/fwlink/p/?LinkID=254479)  
 Data written by this routine becomes part of callback data. The data is not included in the crash dump file. (See [Earlier Versions of Windows](#earlier-versions-of-windows) for an exception.)
 
-<span id="BugCheckSecondaryDumpDataCallback"></span><span id="bugchecksecondarydumpdatacallback"></span><span id="BUGCHECKSECONDARYDUMPDATACALLBACK"></span>[BugCheckSecondaryDumpDataCallback](http://go.microsoft.com/fwlink/p/?LinkID=254481)  
+<span id="BugCheckSecondaryDumpDataCallback"></span><span id="bugchecksecondarydumpdatacallback"></span><span id="BUGCHECKSECONDARYDUMPDATACALLBACK"></span>[BugCheckSecondaryDumpDataCallback](https://go.microsoft.com/fwlink/p/?LinkID=254481)  
 Data written by this routine becomes part of secondary callback data. The data is included in the crash dump file.
 
-<span id="BugCheckAddPagesCallback"></span><span id="bugcheckaddpagescallback"></span><span id="BUGCHECKADDPAGESCALLBACK"></span>[BugCheckAddPagesCallback](http://go.microsoft.com/fwlink/p/?LinkID=254480)  
+<span id="BugCheckAddPagesCallback"></span><span id="bugcheckaddpagescallback"></span><span id="BUGCHECKADDPAGESCALLBACK"></span>[BugCheckAddPagesCallback](https://go.microsoft.com/fwlink/p/?LinkID=254480)  
 Pages specified by this routine become part of callback data. The data in those pages is included in the crash dump file.
 
 The amount of callback and secondary callback data that is available to the debugger depends on several factors:
 
--   If you are performing live debugging of a crashed system, callback data that has already been written by [BugCheckCallback](http://go.microsoft.com/fwlink/p/?LinkID=254479) or specified by [BugCheckAddPagesCallback](http://go.microsoft.com/fwlink/p/?LinkID=254480) will be available. Secondary callback data will not be available, because it is not stored in any fixed memory location.
+-   If you are performing live debugging of a crashed system, callback data that has already been written by [BugCheckCallback](https://go.microsoft.com/fwlink/p/?LinkID=254479) or specified by [BugCheckAddPagesCallback](https://go.microsoft.com/fwlink/p/?LinkID=254480) will be available. Secondary callback data will not be available, because it is not stored in any fixed memory location.
 
--   If you are debugging a Complete Memory Dump or Kernel Memory Dump, callback data specified by [BugCheckAddPagesCallback](http://go.microsoft.com/fwlink/p/?LinkID=254480) and secondary callback data written by [BugCheckSecondaryDumpDataCallback](http://go.microsoft.com/fwlink/p/?LinkID=254481) will be available. Callback data written by [BugCheckCallback](http://go.microsoft.com/fwlink/p/?LinkID=254479) will not be available. (See [Earlier Versions of Windows](#earlier-versions-of-windows) for an exception.)
+-   If you are debugging a Complete Memory Dump or Kernel Memory Dump, callback data specified by [BugCheckAddPagesCallback](https://go.microsoft.com/fwlink/p/?LinkID=254480) and secondary callback data written by [BugCheckSecondaryDumpDataCallback](https://go.microsoft.com/fwlink/p/?LinkID=254481) will be available. Callback data written by [BugCheckCallback](https://go.microsoft.com/fwlink/p/?LinkID=254479) will not be available. (See [Earlier Versions of Windows](#earlier-versions-of-windows) for an exception.)
 
 -   If you are debugging a Small Memory Dump, callback data will not be available. Secondary callback data will be available.
 
@@ -35,7 +35,7 @@ See [Varieties of Kernel-Mode Dump Files](varieties-of-kernel-mode-dump-files.md
 ## <span id="earlier-versions-of-windows"></span><span id="EARLIER-VERSIONS-OF-WINDOWS"></span>Earlier Versions of Windows
 
 
-In versions of Windows earlier than Windows XP SP1, callback data written by [BugCheckCallback](http://go.microsoft.com/fwlink/p/?LinkID=254479) is included in the crash dump file.
+In versions of Windows earlier than Windows XP SP1, callback data written by [BugCheckCallback](https://go.microsoft.com/fwlink/p/?LinkID=254479) is included in the crash dump file.
 
 ## <span id="ddk_reading_bug_check_callback_data_dbg"></span><span id="DDK_READING_BUG_CHECK_CALLBACK_DATA_DBG"></span>
 
@@ -52,7 +52,7 @@ To view data for one specific callback routine, use [**!bugdump**](-bugdump.md)*
 
 There are two methods for displaying secondary callback data in Windows XP SP1, Windows Server 2003, and later versions of Windows. You can use the **.enumtag** command or you can write your own debugger extension.
 
-Each block of secondary callback data is identified by a GUID tag. This tag is specified by the **Guid** field of the **(KBUGCHECK\_SECONDARY\_DUMP\_DATA)ReasonSpecificData** parameter passed to [BugCheckSecondaryDumpDataCallback](http://go.microsoft.com/fwlink/p/?LinkID=254481).
+Each block of secondary callback data is identified by a GUID tag. This tag is specified by the **Guid** field of the **(KBUGCHECK\_SECONDARY\_DUMP\_DATA)ReasonSpecificData** parameter passed to [BugCheckSecondaryDumpDataCallback](https://go.microsoft.com/fwlink/p/?LinkID=254481).
 
 The [**.enumtag (Enumerate Secondary Callback Data)**](-enumtag--enumerate-secondary-callback-data-.md) command is not a very precise instrument. It displays every secondary data block, showing the tag and then showing the data in hexadecimal and ASCII format. It is generally useful only to determine what tags are actually being used for secondary data blocks.
 

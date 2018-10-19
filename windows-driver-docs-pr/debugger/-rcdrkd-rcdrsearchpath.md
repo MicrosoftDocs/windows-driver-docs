@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!rcdrkd.rcdrsearchpath** extension sets the search path for trace message format (TMF) and trace message control (TMC) files.
 
-```
+```dbgcmd
 !rcdrkd.rcdrsearchpath FilePath
 ```
 

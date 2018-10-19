@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.remote** command starts a [Remote.exe Server](starting-a-remote-exe-session.md), enabling a remote connection to the current debugging session.
 
-```
+```dbgcmd
 .remote session
 ```
 

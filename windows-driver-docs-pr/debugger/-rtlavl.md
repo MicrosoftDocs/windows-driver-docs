@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!rtlavl** extension displays the entries of an RTL\_AVL\_TABLE structure.
 
-```
+```dbgcmd
 !rtlavl Address [Module!Type]
 !rtlavl -?
 ```

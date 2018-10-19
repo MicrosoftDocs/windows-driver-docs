@@ -3,7 +3,7 @@ title: Proximity sensor data fields
 author: windows-driver-content
 description: This topic provides information about the data fields that are specific to the proximity sensor.
 ms.assetid: 03B561DB-FAF2-4404-AA49-6A0DA139AA11
-ms.date: 01/04/2018
+ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
 

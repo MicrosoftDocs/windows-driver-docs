@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # User-Mode Driver Framework Debugging
 
 
-For an overview of how to debug User-Mode Driver Framework (UMDF) drivers, including information on how to start this kind of debugging session, see the [Debugging UMDF Drivers](http://go.microsoft.com/fwlink/p/?linkid=153578) section of the Windows Driver Kit (WDK) documentation.
+For an overview of how to debug User-Mode Driver Framework (UMDF) drivers, including information on how to start this kind of debugging session, see the [Debugging UMDF Drivers](https://go.microsoft.com/fwlink/p/?linkid=153578) section of the Windows Driver Kit (WDK) documentation.
 
 ### <span id="umdf_debugging_extensions"></span><span id="UMDF_DEBUGGING_EXTENSIONS"></span>UMDF Debugging Extensions
 

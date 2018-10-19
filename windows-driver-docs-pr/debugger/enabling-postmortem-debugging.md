@@ -36,7 +36,7 @@ Based on configuration values and which debuggers are active, Windows handles us
 
 4.  If the conditions in steps 1, 2, and 3 do not apply, Windows will activate a debugging tool configured in the AeDebug registry values. Any program can be selected in advance as the tool to use in this situation. The chosen program is referred to as the *postmortem debugger*.
 
-5.  If the conditions in steps 1, 2, and 3 do not apply, and there is no postmortem debugger registered, Windows Error Reporting (WER) displays a message and provides solutions if any are available. WER also writes a memory dump file if the appropriate values are set in the Registry. For more information, see [Using WER](http://go.microsoft.com/fwlink/p?LinkID=257799) and [Collecting User-Mode Dumps](http://go.microsoft.com/fwlink/p?LinkID=257798).
+5.  If the conditions in steps 1, 2, and 3 do not apply, and there is no postmortem debugger registered, Windows Error Reporting (WER) displays a message and provides solutions if any are available. WER also writes a memory dump file if the appropriate values are set in the Registry. For more information, see [Using WER](https://go.microsoft.com/fwlink/p?LinkID=257799) and [Collecting User-Mode Dumps](https://go.microsoft.com/fwlink/p?LinkID=257798).
 
 **DebugBreak Function**
 

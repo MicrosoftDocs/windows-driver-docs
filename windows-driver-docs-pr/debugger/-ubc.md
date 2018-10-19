@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ubc** extension clears a user-space breakpoint.
 
-```
+```dbgcmd
 !ubc BreakpointNumber 
 ```
 

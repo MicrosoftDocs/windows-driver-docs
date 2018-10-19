@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!logexts.logi** extension initializes logging by injecting Logger into the target application.
 
-```
+```dbgcmd
     !logexts.logi [OutputDirectory] 
 ```
 

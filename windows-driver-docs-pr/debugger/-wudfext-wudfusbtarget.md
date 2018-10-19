@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wudfext.wudfusbtarget** extension displays information about a USB I/O target.
 
-```
+```dbgcmd
 !wudfext.wudfusbtarget pWDFUSBTarget TypeName
 ```
 

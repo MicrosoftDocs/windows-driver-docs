@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.noshell** command prevents you from using [**.shell**](-shell--command-shell-.md) commands.
 
-```
+```dbgcmd
 .noshell 
 ```
 

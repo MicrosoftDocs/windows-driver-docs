@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfsettraceprefix** extension sets the trace prefix format string.
 
-```
+```dbgcmd
 !wdfkd.wdfsettraceprefix String
 ```
 

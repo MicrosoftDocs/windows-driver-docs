@@ -124,7 +124,7 @@ For **TRUE** or **FALSE** values, "FALSE" is the only false value. Anything else
 
 A sample \[NTSD\] section in the tools.ini file follows:
 
-```
+```inf
 [NTSD]
 sxe: 3c
 sxe: cc

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!rellist** extension displays a Plug and Play relation list.
 
-```
+```dbgcmd
 !rellist Address [Flags] 
 ```
 

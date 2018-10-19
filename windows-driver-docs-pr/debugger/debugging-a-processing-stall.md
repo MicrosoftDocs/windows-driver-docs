@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 Begin by finding the relevant pin. In a hypothetical case, the relevant video capture pin has address **8160DDE0**, so we use the [**!ks.dump**](-ks-dump.md) extension command on this address to get more details:
 
-```
+```dbgcmd
 kd> !ks.dump 8160DDE0 7
 Pin object 8160DDE0 [CKsPin = 8160DD50]
     DeviceState    KSSTATE_RUN
@@ -27,7 +27,7 @@ Pin object 8160DDE0 [CKsPin = 8160DD50]
 
 First, determine if the pin is in the appropriate state and whether the processing mutex is being held by another thread. In this case, the pin state is **KSSTATE\_RUN**, as it should be, and the processing mutex is not being held, so we next use the [**!ks.dumpqueue**](-ks-dumpqueue.md) extension to determine if there are frames available:
 
-```
+```dbgcmd
 kd> !ks.dumpqueue 8160DDE0 7
 Queue 8172D5D8:
  Frames Received  : 763
@@ -62,7 +62,7 @@ If, as in our example, all of the frames are ahead of the leading edge, the prob
 
 The pin's And gate controls processing. If the gate count is one, processing can occur. Obtain the current status of the And gate by using the **!ks.dump** extension:
 
-```
+```dbgcmd
 kd> !ks.dump 8160DDE0 7
 Pin object 8160DDE0 [CKsPin = 8160DD50]
     DeviceState    KSSTATE_RUN
@@ -78,7 +78,7 @@ Because the gate count is one, the And gate is open. In this case, investigate t
 
 -   The process dispatch incorrectly returned STATUS\_PENDING.
 
--   The data availability case is missing a [KsPinAttemptProcessing](http://go.microsoft.com/fwlink/p/?linkid=56545) call.
+-   The data availability case is missing a [KsPinAttemptProcessing](https://go.microsoft.com/fwlink/p/?linkid=56545) call.
 
  
 

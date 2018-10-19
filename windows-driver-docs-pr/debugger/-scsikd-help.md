@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!scsikd.help** extension displays help text for Scsikd.dll extension commands.
 
-```
+```dbgcmd
 !scsikd.help 
 ```
 

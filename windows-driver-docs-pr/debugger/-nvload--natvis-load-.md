@@ -19,9 +19,8 @@ ms.localizationpriority: medium
 
 The .nvload command loads a NatVis file into the debugger environment. After the visualization is loaded, it will be used to render data defined in the visualization.
 
-```
-.nvload FileName|ModuleName 
-   
+```dbgcmd
+.nvload FileName|ModuleName   
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

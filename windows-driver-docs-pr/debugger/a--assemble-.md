@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **a** command assembles 32-bit x86 instruction mnemonics and puts the resulting instruction codes into memory.
 
-```
+```dbgcmd
 a [Address]
 ```
 

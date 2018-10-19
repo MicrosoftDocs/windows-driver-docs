@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbhcdlistlogs** command displays a list of all functional device objects (FDOs) associated with the USB port driver (Usbport.sys). The command also displays the complete debug logs for all EHCI Host Controllers.
 
-```
+```dbgcmd
 !usbkd.usbhcdlistlogs
 ```
 
@@ -33,7 +33,7 @@ Examples
 
 This example shows a portion of the output of the **!usbhcdlistlogs** command.
 
-```
+```dbgcmd
 0: kd> !usbkd.usbhcdlistlogs
 
 MINIPORT List @ fffff80001e5bbd0
@@ -71,7 +71,7 @@ The command output shows two FDOs that represent UHCI host controlers and one FD
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

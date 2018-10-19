@@ -21,9 +21,9 @@ The **!wsle** extension displays all working set list entries (WSLEs).
 
 Syntax
 
-```
+```dbgcmd
 !wsle [Flags [Address]] 
-```
+```dbgcmd
 
 ## <span id="ddk__wsle_dbg"></span><span id="DDK__WSLE_DBG"></span>Parameters
 
@@ -58,7 +58,7 @@ This extension can take a significant amount of time to execute.
 
 Here is an example from an x86 target computer running Windows Server 2003:
 
-```
+```dbgcmd
 kd> !wsle 3
 
 Working Set @ c0503000

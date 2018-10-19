@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.writemem** command writes a section of memory to a file.
 
-```
+```dbgcmd
 .writemem FileName Range 
 ```
 

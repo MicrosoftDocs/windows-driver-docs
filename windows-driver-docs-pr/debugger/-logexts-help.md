@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!logexts.help** extension displays a Help text in the Command Prompt window showing all Logexts.dll extension commands.
 
-```
+```dbgcmd
 !logexts.help 
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: !index
+title: Time Travel Debugging Extension !index Command
 description: The !index extension indexes time travel traces or displays index status information.
 ms.author: domars
 ms.date: 10/12/2018

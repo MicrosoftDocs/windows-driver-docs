@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.setdll** command changes the default extension DLL for the debugger.
 
-```
+```dbgcmd
 .setdll DLLName 
 !DLLName.setdll 
 ```

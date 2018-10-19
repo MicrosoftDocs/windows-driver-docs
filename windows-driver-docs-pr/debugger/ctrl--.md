@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **CTRL+\\** key launches a new instance of CDB; this new debugger takes the current debugger as its target.
 
-```
+```dbgcmd
 CTRL+\  ENTER 
 ```
 

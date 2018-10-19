@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **dda**, **ddp**, **ddu**, **dpa**, **dpp**, **dpu**, **dqa**, **dqp**, and **dqu** commands display the pointer at the specified location, dereference that pointer, and then display the memory at the resulting location in a variety of formats.
 
-```
+```dbgcmd
 ddp [Options] [Range] 
 dqp [Options] [Range] 
 dpp [Options] [Range] 

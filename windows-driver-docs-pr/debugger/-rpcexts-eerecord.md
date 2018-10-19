@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!rpcexts.eerecord** extension displays the contents of an extended error information record.
 
-```
+```dbgcmd
 !rpcexts.eerecord EERecordAddress
 ```
 
@@ -61,7 +61,7 @@ This extension displays the contents of one extended error information record in
 
 Here is an example:
 
-```
+```dbgcmd
 0:001> !rpcexts.eerecord 0xb015f0
 Computer Name: (null)
 ProcessID: 708 (0x2C4)

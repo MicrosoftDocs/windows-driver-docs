@@ -22,7 +22,7 @@ This section includes:
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 
-**Note**  These topic are for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://go.microsoft.com/fwlink/p/?linkid=183646).
+**Note**  These topic are for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://go.microsoft.com/fwlink/p/?linkid=183646).
 
  
 
