@@ -7,11 +7,7 @@ keywords:
 - plug-in DLL WDK USB Video Class
 - extension units WDK USB Video Class , samples, plug-in DLL
 - sample code WDK USB Video Class , extension unit plug-in DLL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +26,7 @@ In Windows Vista and later releases, *Vidcap.h* is included as part of the Micro
 
 Include the following code in the class header file, arbitrarily named *Xuproxy.h*:
 
-```
+```cpp
 #include <ks.h>
 #include <ksproxy.h>
 #include <C:\Program Files\Microsoft DirectX 9.0 SDK (February 2005)\Extras\DirectShow\Include\vidcap.h>
@@ -108,7 +104,7 @@ Implement the two virtual methods from **IKsNodeControl** in **CNodeControl**. T
 
 The following code is in a source file arbitrarily named *Xuproxy.cpp*:
 
-```
+```cpp
 STDMETHODIMP
 CNodeControl::put_NodeId(
    DWORD dwNodeId)
@@ -137,7 +133,7 @@ CNodeControl::put_KsControl(
 
 Also include implementations of **CExtension**'s methods in the same *Xuproxy.cpp* file:
 
-```
+```cpp
 CExtension::CExtension()
 {
     m_pKsControl = NULL;

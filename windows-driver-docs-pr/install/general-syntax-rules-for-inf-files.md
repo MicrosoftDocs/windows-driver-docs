@@ -8,11 +8,7 @@ keywords:
 - sections WDK INF files
 - INF files WDK device installations , directives
 - directives WDK INF files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -90,21 +86,21 @@ The following syntax rules govern the required and optional contents of INF file
 
     -   For a directive that spans two lines, one of which is an entry that contains a backslash, use quotation marks to delimit the entry that contains the backslash.
 
-        ```
+        ```cpp
         CopyFiles = "SomeDirectory\"\
         ,SomeFile
         ```
 
     -   Avoid using the backslash character in the manner shown in the following example. Windows ignores the first backslash and interprets the second backslash as a line continuator.
 
-        ```
+        ```cpp
         CopyFiles = SomeDirectory\\
         ,SomeFile
         ```
 
     -   The following syntax is valid and is equivalent to `CopyFiles = "SomeDirectory\",SomeFile ; comment`.
 
-        ```
+        ```cpp
         CopyFiles = "SomeDirectory\"\ ; comment 
         ,SomeFile
         ```

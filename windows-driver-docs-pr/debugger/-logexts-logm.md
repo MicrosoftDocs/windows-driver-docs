@@ -5,9 +5,6 @@ ms.assetid: 1037ba25-ffa6-4edd-99fd-bd0e249f4b37
 keywords: ["logexts.logm Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!logexts.logm** extension creates or displays a module inclusion list or a module exclusion list.
 
-```
+```dbgcmd
 !logexts.logm i Modules 
 !logexts.logm x Modules 
 !logexts.logm 

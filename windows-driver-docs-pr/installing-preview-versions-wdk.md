@@ -9,15 +9,12 @@ keywords:
 - drivers
 ms.author: eliotgra
 ms.date: 07/11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Installing preview versions of the Windows Driver Kit (WDK)
 
-This page contains installation instructions for Insider Preview (pre-release) versions of the Windows Driver Kit (WDK). The  download links for the latest pre-release version of the WDK and the EWDK are on  [https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK).  
+This page contains installation instructions for Insider Preview (pre-release) versions of the Windows Driver Kit (WDK). The  download links for the latest pre-release version of the WDK and the EWDK are on  [https://www.microsoft.com/software-download/windowsinsiderpreviewWDK](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK).  
 
 For info about the latest **released** versions of the WDK, see [Download the Windows Driver Kit (WDK)](download-the-wdk.md). For downloads of earlier versions of the WDK, see [Other WDK downloads](other-wdk-downloads.md).  
 
@@ -35,7 +32,7 @@ For info about the latest **released** versions of the WDK, see [Download the Wi
 
 The WDK Visual Studio Extensions are currently not strong name signed. Run the following commands from an elevated command prompt to disable strong name validation: 
 
-```
+```cpp
 reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\StrongName\Verification\*,31bf3856ad364e35 /v TestPublicKey /t REG_SZ /d 00240000048000009400000006020000002400005253413100040000010001003f8c902c8fe7ac83af7401b14c1bd103973b26dfafb2b77eda478a2539b979b56ce47f36336741b4ec52bbc51fecd51ba23810cec47070f3e29a2261a2d1d08e4b2b4b457beaa91460055f78cc89f21cd028377af0cc5e6c04699b6856a1e49d5fad3ef16d3c3d6010f40df0a7d6cc2ee11744b5cfb42e0f19a52b8a29dc31b0 /f
 
 reg add HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\StrongName\Verification\*,31bf3856ad364e35 /v TestPublicKey /t REG_SZ /d 00240000048000009400000006020000002400005253413100040000010001003f8c902c8fe7ac83af7401b14c1bd103973b26dfafb2b77eda478a2539b979b56ce47f36336741b4ec52bbc51fecd51ba23810cec47070f3e29a2261a2d1d08e4b2b4b457beaa91460055f78cc89f21cd028377af0cc5e6c04699b6856a1e49d5fad3ef16d3c3d6010f40df0a7d6cc2ee11744b5cfb42e0f19a52b8a29dc31b0 /f 
@@ -54,17 +51,17 @@ reg add HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\StrongName\Verificatio
 
 ## Install Enterprise WDK (EWDK) Insider Preview
 
-The EWDK is a standalone self-contained command-line environment for building drivers.  It includes Build Tools for Visual Studio 2017, the SDK, the WDK and support for ARM64 driver development. See more at [Installing the Enterprise WDK](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/installing-the-enterprise-wdk). 
+The EWDK is a standalone self-contained command-line environment for building drivers.  It includes Build Tools for Visual Studio 2017, the SDK, the WDK and support for ARM64 driver development. See more at [Installing the Enterprise WDK](https://docs.microsoft.com/windows-hardware/drivers/develop/installing-the-enterprise-wdk). 
 
-[Get the Enterprise Windows Driver Kit (EWDK) Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK)
+[Get the Enterprise Windows Driver Kit (EWDK) Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK)
 
 To get started mount the ISO and click LaunchBuildEnv. 
 
 ## Run-time requirements for the WDK and the EWDK
 
-The WDK requires Visual Studio. For more info about system requirements for Visual Studio, see [Visual Studio 2017 System Requirements](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs).
+The WDK requires Visual Studio. For more info about system requirements for Visual Studio, see [Visual Studio 2017 System Requirements](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs).
 
-In addition, the EWDK requires .NET 4.6.1. For more info about what .NET runs on, see [.NET Framework system requirements](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs).
+In addition, the EWDK requires .NET 4.6.1. For more info about what .NET runs on, see [.NET Framework system requirements](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs).
 
 You can use the WDK Insider Preview and the EWDK Insider Preview to develop drivers for these operating systems: 
 

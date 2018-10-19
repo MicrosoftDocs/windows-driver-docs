@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Writing a Bug Check Callback Routine
 ms.assetid: 62aefe67-e197-4c45-b994-19bd7369dbc1
 keywords: ["bug check callback routines WDK kernel", "callback routines WDK bug checks", "registering callback routines", "KeRegisterBugCheckCallback", "BugCheckCallback"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

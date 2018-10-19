@@ -3,11 +3,7 @@ title: OID_GEN_PHYSICAL_MEDIUM
 author: windows-driver-content
 description: As a query, the OID_GEN_PHYSICAL_MEDIUM OID specifies the types of physical media that the NIC supports.
 ms.assetid: 84d7231b-8af2-4bdb-8df5-37088767f708
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_PHYSICAL_MEDIUM Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

@@ -3,11 +3,7 @@ title: Creating Push-Model Aware Applications
 author: windows-driver-content
 description: Creating Push-Model Aware Applications
 ms.assetid: 0f554b2c-0217-4109-8ef6-99c5400dfed6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ A push-model aware application is one that has registered itself with Microsoft 
 
 -   Including an entry in the application's setup information (INF) file. The entry should be referenced by an [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) in the INF file. The syntax of the entry is illustrated in the following example:
 
-    ```
+    ```INF
     ; Register Application "Imaging" as a push-model aware application for use with the still image event monitor
     HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\StillImage\Registered Applications",Imaging,,"%25%\KodakImg.Exe /StiDevice:%%1 /StiEvent:%%2"
     ```

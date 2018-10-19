@@ -7,11 +7,7 @@ keywords:
 - virtual miniports WDK networking
 - NDIS intermediate drivers WDK , virtual miniports
 - intermediate drivers WDK networking , virtual miniports
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

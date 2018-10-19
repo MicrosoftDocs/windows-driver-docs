@@ -2,11 +2,7 @@
 Description: Learn about the source code for a UMDF-based USB client driver.
 title: USB client driver code structure (UMDF)
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -929,7 +925,7 @@ EXPORTS
         DllGetClassObject   PRIVATE
 ```
 
-In the preceding code snippet from Export.def included with the driver project, the client provides the the name of the driver module as the LIBRARY, and [**DllGetClassObject**](https://msdn.microsoft.com/library/windows/desktop/ms680760) under EXPORTS. For more information, see [Exporting from a DLL Using DEF Files](http://msdn.microsoft.com/library/d91k01sh(VS.80).aspx).
+In the preceding code snippet from Export.def included with the driver project, the client provides the name of the driver module as the LIBRARY, and [**DllGetClassObject**](https://msdn.microsoft.com/library/windows/desktop/ms680760) under EXPORTS. For more information, see [Exporting from a DLL Using DEF Files](http://msdn.microsoft.com/library/d91k01sh(VS.80).aspx).
 
  
 

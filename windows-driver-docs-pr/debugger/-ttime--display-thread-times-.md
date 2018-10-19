@@ -5,9 +5,6 @@ ms.assetid: ff48310f-3eb9-4112-b5ab-b7c16878ac8f
 keywords: [".ttime (Display Thread Times) Windows Debugging"]
 ms.author: domars
 ms.date: 08/01/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.ttime** command displays the running times for a thread.
 
-```
+```dbgcmd
 .ttime 
 ```
 
@@ -63,7 +60,7 @@ The **.ttime** command shows the creation time of the thread, as well as the amo
 
 Here is an example:
 
-```
+```dbgcmd
 0:000> .ttime
 Created: Sat Jun 28 17:58:42 2003
 Kernel:  0 days 0:00:00.131

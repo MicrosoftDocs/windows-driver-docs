@@ -5,9 +5,6 @@ ms.assetid: 1b6f6f72-2679-45c7-bf1b-9607bf7e7d89
 keywords: ["Activating a KD Connection Server Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -30,7 +27,7 @@ KdSrv supports several transport protocols: named pipe (NPIPE), TCP, COM port, s
 
 The syntax for the KdSrv command line depends on the protocol used. The following options exist:
 
-```
+```console
 kdsrv -t npipe:pipe=PipeName[,hidden][,password=Password][,IcfEnable] 
 
 kdsrv -t tcp:port=Socket[,hidden][,password=Password][,ipversion=6][,IcfEnable] 

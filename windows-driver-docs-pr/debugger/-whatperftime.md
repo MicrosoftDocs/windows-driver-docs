@@ -5,9 +5,6 @@ ms.assetid: ff11a51f-4e25-4cf3-be19-d38361c441e9
 keywords: ["performance count", "whatperftime Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!whatperftime** extension converts a high-resolution performance counter value into a standard time value.
 
-```
+```dbgcmd
 !whatperftime Count
 ```
 
@@ -60,7 +57,7 @@ You can use **!whatperftime** to convert values retrieved by calling **QueryPerf
 
 The output is displayed as *HH:MM:SS.mmm*. Here is an example:
 
-```
+```dbgcmd
 kd> !whatperftime 304589
 3163529 Performance Counter in Standard Time: .004.313s
 ```

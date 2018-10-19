@@ -16,6 +16,7 @@ api_name:
 - Iasphelp.get_AvgJobSizeUnit
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +28,7 @@ The **AvgJobSizeUnit** property enables an ASP Web page to determine the units o
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_AvgJobSizeUnit(
   [out] long *pVal
 );
@@ -69,24 +70,21 @@ Return value
 
 This method returns S\_OK on success.
 
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 Query the **Iasphelp::AvgJobSizeUnit** property to determine the units in which the [**Iasphelp::AvgJobSize**](iasphelp-avgjobsize.md) property value is expressed.
 
 Before you query this property, call the [**Iasphelp::CalcJobETA**](iasphelp-calcjobeta.md) method to initialize the property value.
 
-```
-    Dim objPrinter, strPrinter, JobUnits
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
- objPrinter.CalcJobETA
-    JobUnits = objPrinter.AvgJobSizeUnit
-    &#39; If JobUnits = 1 then job size is in units of pages
-    &#39; If JobUnits = 2 then job size is in units of bytes
+```vb
+Dim objPrinter, strPrinter, JobUnits
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
+objPrinter.CalcJobETA
+JobUnits = objPrinter.AvgJobSizeUnit
+' If JobUnits = 1 then job size is in units of pages
+' If JobUnits = 2 then job size is in units of bytes
 ```
 
 Requirements
@@ -102,24 +100,11 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**Iasphelp::AvgJobSize**](iasphelp-avgjobsize.md)
 
 [**Iasphelp::CalcJobETA**](iasphelp-calcjobeta.md)
-
- 
-
- 
-
-
-
-

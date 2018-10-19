@@ -2,11 +2,7 @@
 title: PKEY\_EFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming
 description: In Windows 10 and later, the PKEY\_EFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming property key identifies the end point keyword detector processing modes supported for streaming supported by the driver.
 ms.assetid: 517B7321-5726-4ADB-9FCD-82776B143FF9
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ Because end point effects (EFX) are after the sum or before the tee, there canno
 
 An INF file specifies settings for an audio processing mode effect in the add-registry section for that device. The following INF example shows the strings and add-registry sections that loads the keyword detector streaming processing modes supported into the registry.
 
-```
+```inf
 [Strings]
 PKEY_EFX_KeywordDetector_ProcessingModes_Supported_For_Streaming = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},10"
 ...

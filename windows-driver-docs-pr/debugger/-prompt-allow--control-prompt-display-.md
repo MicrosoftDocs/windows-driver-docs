@@ -5,9 +5,6 @@ ms.assetid: 916114f9-0a68-4423-ba28-a5f0da8a1af9
 keywords: [".prompt_allow (Control Prompt Display) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.prompt\_allow** command controls what information is displayed during stepping and tracing and whenever the target's execution stops.
 
-```
+```dbgcmd
 .prompt_allow {+|-}Item [...] 
 .prompt_allow 
 ```
@@ -96,7 +93,7 @@ If you have used the l+os option, this option overrides any of the **.prompt\_al
 
 You can also use a complex command such as the following example.
 
-```
+```dbgcmd
 0:000> .prompt_allow -reg -dis +ea 
 Allow the following information to be displayed at the prompt:
 (Other settings can affect whether the information is actually displayed)

@@ -6,11 +6,7 @@ keywords:
 - INF files WDK device installations , structure
 - INF files WDK device installations , sections
 - sections WDK INF files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The following example shows selected fragments from a system-supplied class installer's INF file to show how any INF file is made up of sections, each of which contains zero or more lines, some of which are entries that reference additional INF-writer-defined sections:
 
-```
+```cpp
 [Version]
 Signature="$Windows NT$"
 Class=Mouse

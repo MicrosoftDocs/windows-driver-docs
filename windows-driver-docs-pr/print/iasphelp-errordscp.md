@@ -16,18 +16,18 @@ api_name:
 - Iasphelp.get_ErrorDscp
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_ErrorDscp method
-
 
 The **ErrorDscp** property enables an ASP Web page to convert an error code to a descriptive string.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_ErrorDscp(
   [in]  long lErrCode,
   [out] BSTR *pVal
@@ -79,24 +79,19 @@ Win32 error codes can also be returned.
 </tbody>
 </table>
 
- 
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::ErrorDscp** property can be queried.
 
-```
-    Dim objPrinter, ErrorCode, ErrorString
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
-    ...
- &#39; Get error code.
-    ...
-    ErrorString = objPrinter.ErrorDscp(ErrorCode)
+```vb
+Dim objPrinter, ErrorCode, ErrorString
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
+...
+' Get error code.
+...
+ErrorString = objPrinter.ErrorDscp(ErrorCode)
 ```
 
 Requirements
@@ -112,22 +107,9 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**Iasphelp::Open**](iasphelp-open.md)
-
- 
-
- 
-
-
-
-

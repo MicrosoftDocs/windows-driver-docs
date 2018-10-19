@@ -9,11 +9,7 @@ api_name:
 - wscn CancelJobResponse /
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **CancelJobResponse** operation element acknowledges a client's job
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:CancelJobResponse />
 </wscn:CancelJobResponse />
 ```
@@ -57,7 +53,7 @@ Remarks
 
 The WSD Scan Service sends a **CancelJobResponse** operation to a client when it successfully processes a client's [**CancelJobRequest**](canceljobrequest.md) operation.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CancelJobRequest**](canceljobrequest.md)

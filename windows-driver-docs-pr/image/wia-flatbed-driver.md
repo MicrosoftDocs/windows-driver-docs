@@ -3,11 +3,7 @@ title: WIA Flatbed Driver
 author: windows-driver-content
 description: WIA Flatbed Driver
 ms.assetid: 83c35b1f-10e0-47e1-97cc-5a7a79fb8088
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,7 +47,7 @@ By default, the following resolutions are supported: 75, 100, 150, 200, 300, and
 
 Because the range of resolutions varies based on the device, you can specify the list of possible resolutions by adding an entry such as the following to your setup information (INF) file:
 
-```
+```INF
 [DeviceData]
 Resolutions="75, 100, 300, 600, 1200"
 ```

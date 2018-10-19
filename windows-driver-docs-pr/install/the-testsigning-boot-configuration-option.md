@@ -2,11 +2,7 @@
 title: The TESTSIGNING Boot Configuration Option
 description: The TESTSIGNING Boot Configuration Option
 ms.assetid: 4898595e-20c9-4607-aad7-792f7d1074e4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,13 +17,13 @@ The TESTSIGNING boot configuration option determines whether Windows Vista and l
 
 The TESTSIGNING boot configuration option is enabled or disabled through the BCDEdit command. To enable test-signing, use the following BCDEdit command:
 
-```
+```cpp
 Bcdedit.exe -set TESTSIGNING ON
 ```
 
 To disable test-signing, use the following BCDEdit command:
 
-```
+```cpp
 Bcdedit.exe -set TESTSIGNING OFF
 ```
 

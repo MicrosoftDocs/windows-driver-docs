@@ -3,11 +3,7 @@ title: WDI_TLV_PROBE_RESPONSE_FRAME
 author: windows-driver-content
 description: WDI_TLV_PROBE_RESPONSE_FRAME is a TLV that contains a probe response frame.
 ms.assetid: 600019AB-55D2-4EE1-9500-0AFCB07C3AB2
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PROBE_RESPONSE_FRAME Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

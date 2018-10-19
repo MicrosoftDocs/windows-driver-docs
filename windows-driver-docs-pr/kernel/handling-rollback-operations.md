@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Handling Rollback Operations
 ms.assetid: d36bfac8-47dc-4fcd-a6e2-feb27d244630
 keywords: ["transactions WDK KTM , rolling back transactions", "rolling back transactions WDK KTM", "resource managers WDK KTM , rolling backing transactions", "transactional clients WDK KTM , rolling back transactions"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

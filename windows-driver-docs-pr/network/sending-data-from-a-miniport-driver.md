@@ -4,11 +4,7 @@ description: Sending Data from a Miniport Driver
 ms.assetid: f82475ff-8d32-4448-9b19-b6fa97a93d32
 keywords:
 - sending data WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

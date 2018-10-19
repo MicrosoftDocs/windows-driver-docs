@@ -3,11 +3,7 @@ title: EFI_DISPLAY_POWER_PROTOCOL.GetDisplayPowerState
 author: windows-driver-content
 description: EFI_DISPLAY_POWER_PROTOCOL.GetDisplayPowerState
 ms.assetid: 8c5fe55f-903e-4ef0-b3cf-8b764af767cf
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ Returns the current power state of the display and backlight.
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef EFI_STATUS (EFIAPI * EFI_DISPLAY_POWER_GETDISPLAYPOWERSTATE) (
     IN EFI_DISPLAY_POWER_PROTOCOL *This,
     OUT EFI_DISPLAY_POWER_STATE *PowerState 

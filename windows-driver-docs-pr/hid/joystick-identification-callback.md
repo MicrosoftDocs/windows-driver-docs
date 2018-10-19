@@ -5,6 +5,7 @@ description: Joystick Identification Callback
 ms.assetid: d5e859d2-bfe4-41ef-9d09-ebb945d299bd
 keywords: ["callbacks WDK joysticks", "joysticks WDK HID , ID requests", "ID requests WDK joysticks", "identification callbacks WDK joysticks"]
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Joystick Identification Callback
@@ -13,7 +14,7 @@ ms.localizationpriority: medium
 
 
 
-```
+```cpp
 int __stdcall JoyIdRoutine( int joyid, BOOL used );
 ```
 

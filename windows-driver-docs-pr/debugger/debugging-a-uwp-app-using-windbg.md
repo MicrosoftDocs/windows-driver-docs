@@ -4,9 +4,6 @@ description: You can debug Universal Windows Platform (UWP) app using WinDbg.
 ms.assetid: 1CE337AC-54C0-4EF5-A374-3ECF1D72BA60
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +24,7 @@ A UWP app will not be suspended in the same ways that it does when not being deb
 
 The -plmPackage and -plmApp command line parameters instruct the debugger to launch an app under the debugger.
 
-```
+```console
 windbg.exe -plmPackage <PLMPackageName> -plmApp <ApplicationId> [<parameters>]
 ```
 
@@ -73,7 +70,7 @@ Use the .querypackages command to locate the full package name and the AppId. Ty
 
 Example:
 
-```
+```dbgcmd
 0:000>  .querypackages 
 ...
 Package Full Name: e24caf14-8483-4743-b80c-ca46c28c75df_1.0.0.0_x86__97ghe447vaan8
@@ -96,7 +93,7 @@ To locate the base package name in Visual Studio, click on the ApplicationManife
 
 To use notepad to locate the base package name, open the ApplicationManifest.xml file and locate the **Identity Name** tag.
 
-```
+```xml
   <Identity
     Name="e24caf14-8483-4743-b80c-ca46c28c75df"
     Publisher="CN= User1"
@@ -109,7 +106,7 @@ To locate the Application Id in the manifest file for an installed UWP app, look
 
 For example, for the hello world app the Application ID is *App*.
 
-```
+```xml
 <Application Id="App"
       Executable="$targetnametoken$.exe"
       EntryPoint="HelloWorld.App">
@@ -119,7 +116,7 @@ For example, for the hello world app the Application ID is *App*.
 
 This is an example command line loading the HelloWorld app under the debugger using the full package name and AppId.
 
-```
+```console
 windbg.exe -plmPackage e24caf14-8483-4743-b80c-ca46c28c75df_1.0.0.0_x86__97ghe447vaan8 -plmApp App
 ```
 
@@ -128,7 +125,7 @@ windbg.exe -plmPackage e24caf14-8483-4743-b80c-ca46c28c75df_1.0.0.0_x86__97ghe44
 
 A background task can be explicitly launched under the debugger from the command line using the TaskId. To do this, use the -plmPackage and -plmBgTaskId command line parameters:
 
-```
+```console
 windbg.exe -plmPackage <PLMPackageName> -plmBgTaskId <BackgroundTaskId>
 ```
 
@@ -158,7 +155,7 @@ windbg.exe -plmPackage <PLMPackageName> -plmBgTaskId <BackgroundTaskId>
 
 This is an example of loading the SDKSamples.BackgroundTask code under the debugger.
 
-```
+```console
 windbg.exe -plmPackage Microsoft.SDKSamples.BackgroundTask.CPP_1.0.0.0_x64__8wekyb3d8bbwe -plmBgTaskId {ee4438ee-22db-4cdd-85e4-8ad8a1063523}
 ```
 
@@ -166,7 +163,7 @@ You can experiment with the Background task sample code to become familiar with 
 
 Use the .querypackages command to locate the BackgroundTaskId. Use CTRL-F to locate the app and then locate the *Background Task Id* field. The background task must be running to display the associated background task name and task Id.
 
-```
+```dbgcmd
 0:000> .querypackages
 ...
 Package Full Name: Microsoft.SDKSamples.BackgroundTask.CPP_1.0.0.0_x86__8wekyb3d8bbwe
@@ -187,7 +184,7 @@ If you know the full package name you can use .querypackage to display the *Back
 
 You can also locate the BackgroundTaskId by using the enumerateBgTasks option of the PLMDebug. For more information about the PMLDebug utiltity, see [**PLMDebug**](plmdebug.md).
 
-```
+```console
 C:\Program Files\Debugging Tools for Windows (x64)>PLMDebug /enumerateBgTasks Microsoft.SDKSamples.BackgroundTask.CPP_1.0.0.0_x64__8wekyb3d8bbwe
 Package full name is Microsoft.SDKSamples.BackgroundTask.CPP_1.0.0.0_x64__8wekyb3d8bbwe.
 Background Tasks:
@@ -201,7 +198,7 @@ SUCCEEDED
 
 All of the -plm\* commands work correctly with dbgsrv. To debug using dbgsrv, use the -premote switch with the connection string for dbgsrv:
 
-```
+```console
 windbg.exe -premote npipe:pipe=fdsa,server=localhost -plmPackage e24caf14-8483-4743-b80c-ca46c28c75df_1.0.0.0_x86__97ghe447vaan8 -plmApp App
 ```
 
@@ -218,13 +215,13 @@ This section provides a summary of UWP app debugger commands
 
 The .querypackage displays the state of a UWP application. For example, if the app is running, it can be in the *Active* state.
 
-```
+```dbgcmd
 .querypackage <PLMPackageName>
 ```
 
 Example:
 
-```
+```dbgcmd
 0:000> .querypackage e24caf14-8483-4743-b80c-ca46c28c75df_1.0.0.0_x86__97ghe447vaan8
 Package Full Name: e24caf14-8483-4743-b80c-ca46c28c75df_1.0.0.0_x86__97ghe447vaan8
 Package Display Name: HelloWorld
@@ -242,13 +239,13 @@ Executable: HelloWorld.exe
 
 The .querypackages command lists all the installed UWP applications and their current state.
 
-```
+```dbgcmd
 .querypackages
 ```
 
 Example:
 
-```
+```dbgcmd
 0:000> .querypackages
 ...
 Package Full Name: Microsoft.MicrosoftSolitaireCollection_3.9.5250.0_x64__8wekyb3d8bbwe
@@ -291,7 +288,7 @@ AppId: BackgroundTask.App
 
 The .createpackageapp command enables debugging and launches a UWP application.
 
-```
+```dbgcmd
 .createpackageapp <PLMPackageName> <ApplicationId> [<parameters>] 
 ```
 
@@ -327,7 +324,7 @@ This table lists the parameters for .createpackageapp.
 
 Example:
 
-```
+```dbgcmd
 .createpackageapp e24caf14-8483-4743-b80c-ca46c28c75df_1.0.0.0_x86__97ghe447vaan8 App
 ```
 
@@ -339,13 +336,13 @@ The .enablepackagedebug command enables debugging for UWP application. You must 
 
 Note that the .createpackageapp command also enables debugging of the app.
 
-```
+```dbgcmd
 .enablepackagedebug <PLMPackageName>
 ```
 
 Example:
 
-```
+```dbgcmd
 .enablepackagedebug e24caf14-8483-4743-b80c-ca46c28c75df_1.0.0.0_x86__97ghe447vaan8
 ```
 
@@ -353,13 +350,13 @@ Example:
 
 The .disablepackagedebug command disables debugging for UWP application.
 
-```
+```dbgcmd
 .disablepackagedebug <PLMPackageName>
 ```
 
 Example:
 
-```
+```dbgcmd
 .disablepackagedebug e24caf14-8483-4743-b80c-ca46c28c75df_1.0.0.0_x86__97ghe447vaan8
 ```
 
@@ -371,13 +368,13 @@ Note that suspend, resume, and terminate affect all currently running apps in th
 
 The .suspendpackage command, suspends a UWP application.
 
-```
+```dbgcmd
 .suspendpackage <PLMPackageName> 
 ```
 
 Example:
 
-```
+```dbgcmd
 0:024> .suspendpackage e24caf14-8483-4743-b80c-ca46c28c75df_1.0.0.0_x86__97ghe447vaan8
 ```
 
@@ -385,13 +382,13 @@ Example:
 
 The .resumepackage command resumes a UWP application.
 
-```
+```dbgcmd
 .resumepackage <PLMPackageName> 
 ```
 
 Example:
 
-```
+```dbgcmd
 .resumepackage e24caf14-8483-4743-b80c-ca46c28c75df_1.0.0.0_x86__97ghe447vaan8
 ```
 
@@ -399,13 +396,13 @@ Example:
 
 The .terminatepackageapp command terminates the all of the UWP applications in the package.
 
-```
+```dbgcmd
 .terminatepackageapp <PLMPackageName> 
 ```
 
 Example:
 
-```
+```dbgcmd
 .terminatepackageapp e24caf14-8483-4743-b80c-ca46c28c75df_1.0.0.0_x86__97ghe447vaan8
 ```
 
@@ -415,13 +412,13 @@ Example:
 
 The .activatepackagebgtask command enables debugging and launches a UWP background task.
 
-```
+```dbgcmd
  .activatepackagebgtask <PLMPackageName> <bgTaskId>
 ```
 
 Example:
 
-```
+```dbgcmd
 .activatepackagebgtask Microsoft.SDKSamples.BackgroundTask.CPP_1.0.0.0_x64__8wekyb3d8bbwe {C05806B1-9647-4765-9A0F-97182CEA5AAD}
 ```
 
@@ -432,7 +429,7 @@ Example:
 
 Suppose you have an app named HelloWorld that is in a package named e24caf14-8483-4743-b80c-ca46c28c75df\_1.0.0.0\_x86\_\_97ghe447vaan8. Verify that your package is installed by displaying the full names and running states all installed packages. In a Command Prompt window, enter the following command. You can use CTRL+F to search the command output for the app name of HelloWorld.
 
-```
+```dbgcmd
 .querypackages 
 ...
 
@@ -451,13 +448,13 @@ AppId: App
 
 Use .createpackageapp to launch and attach to the app. The .createpackageapp command also enables debugging of the app.
 
-```
+```dbgcmd
 .createpackageapp e24caf14-8483-4743-b80c-ca46c28c75df_1.0.0.0_x86__97ghe447vaan8 App
 ```
 
 When you have finished debugging, decrement the debug reference count for the package using the .disablepackagedebug command.
 
-```
+```dbgcmd
 .disablepackagedebug e24caf14-8483-4743-b80c-ca46c28c75df_1.0.0.0_x86__97ghe447vaan8
 ```
 
@@ -465,7 +462,7 @@ When you have finished debugging, decrement the debug reference count for the pa
 
 Suppose you want to attach WinDbg to MyApp, which is already running. In WinDbg, on the **File** menu, choose **Attach to a Process**. Note the process ID for MyApp. Let's say the process ID is 4816. Increment the debug reference count for the package that contains MyApp.
 
-```
+```dbgcmd
 .enablepackagedebug e24caf14-8483-4743-b80c-ca46c28c75df_1.0.0.0_x86__97ghe447vaan8
 ```
 
@@ -473,7 +470,7 @@ In WinDbg, in the **Attach to Process** dialog box, select process 4816, and cli
 
 When you have finished debugging, decrement the debug reference count for the package using the .disablepackagedebug command.
 
-```
+```dbgcmd
 .disablepackagedebug e24caf14-8483-4743-b80c-ca46c28c75df_1.0.0.0_x86__97ghe447vaan8
 ```
 
@@ -481,25 +478,25 @@ When you have finished debugging, decrement the debug reference count for the pa
 
 Follow these steps to manually suspend and resume your app. First, increment the debug reference count for the package that contains your app.
 
-```
+```dbgcmd
 .enablepackagedebug  e24caf14-8483-4743-b80c-ca46c28c75df_1.0.0.0_x86__97ghe447vaan8
 ```
 
 Suspend the package. Your app's suspend handler is called, which can be helpful for debugging.
 
-```
+```dbgcmd
 .suspendpackage e24caf14-8483-4743-b80c-ca46c28c75df_1.0.0.0_x86__97ghe447vaan8
 ```
 
 When you have finished debugging, resume the package.
 
-```
+```dbgcmd
 .resumepackage e24caf14-8483-4743-b80c-ca46c28c75df_1.0.0.0_x86__97ghe447vaan8
 ```
 
 Finally, decrement the debug reference count for the package.
 
-```
+```dbgcmd
 .disablepackagedebug e24caf14-8483-4743-b80c-ca46c28c75df_1.0.0.0_x86__97ghe447vaan8
 ```
 

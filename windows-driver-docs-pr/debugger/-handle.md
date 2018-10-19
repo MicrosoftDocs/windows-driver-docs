@@ -5,9 +5,6 @@ ms.assetid: ae3b7e7e-cdc1-4b83-88d7-63fe207044e3
 keywords: ["handle", "handle, handle extension", "handle Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,14 +21,14 @@ The **!handle** extension displays information about a handle or handles that on
 
 User-Mode
 
-```
+```dbgcmd
 !handle [Handle [UMFlags [TypeName]]] 
 !handle -?
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
     !handle [Handle [KMFlags [Process [TypeName]]]] 
 ```
 
@@ -117,7 +114,7 @@ For more information about handles, see the [**!htrace**](-htrace.md) extension,
 Remarks
 -------
 
-You can use the **!handle** extension during user-mode and kernel-mode live debugging. You can also use this extension on kernel-mode dump files. However, you cannot use this extension on user-mode dump files, unless you specifically created them with handle information. (You can create create such dump files by using the [**.dump /mh (Create Dump File)**](-dump--create-dump-file-.md) command.)
+You can use the **!handle** extension during user-mode and kernel-mode live debugging. You can also use this extension on kernel-mode dump files. However, you cannot use this extension on user-mode dump files, unless you specifically created them with handle information. (You can create such dump files by using the [**.dump /mh (Create Dump File)**](-dump--create-dump-file-.md) command.)
 
 During live user-mode debugging, you can use the [**.closehandle (Close Handle)**](-closehandle--close-handle-.md) command to close one or more handles.
 

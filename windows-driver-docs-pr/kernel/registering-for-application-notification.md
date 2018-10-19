@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Registering for Application Notification
 ms.assetid: e8f76014-6068-4012-96c6-88ea2bbd9bbf
 keywords: ["dynamic hardware partitioning WDK , application notification", "hardware partitioning WDK dynamic , application notification", "partitions WDK dynamic hardware , application notification", "application notification WDK dynamic hardware partitioning , registering", "notification WDK dynamic hardware partitioning , application", "registering for application notifications WDK dynamic hardware partitioning"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ These GUIDs are defined in the header file, Poclass.h.
 
 The following code example shows how to register for both notifications:
 
-```
+```cpp
 HWND hWnd;
 DEV_BROADCAST_DEVICEINTERFACE ProcessorFilter;
 DEV_BROADCAST_DEVICEINTERFACE MemoryFilter;
@@ -87,7 +83,7 @@ MemoryNotifyHandle =
 
 When an application no longer has to receive notification of processor or memory events, it can unregister the window from receiving WM\_DEVICECHANGE messages for these events by calling the [UnregisterDeviceNotification](http://go.microsoft.com/fwlink/p/?linkid=97893) function. The following code example shows how to unregister for the application notifications:
 
-```
+```cpp
 // Unregister the application window from receiving
 // WM_DEVICECHANGE messages for processor events.
 UnregisterDeviceNotification(ProcessorNotifyHandle);

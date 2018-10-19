@@ -3,11 +3,7 @@ title: WDI_TLV_PMKID
 author: windows-driver-content
 description: WDI_TLV_PMKID is a TLV that contains a PMKID value.
 ms.assetid: 6873928B-7843-434F-AB80-6A7895D751A4
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PMKID Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

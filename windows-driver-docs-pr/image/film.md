@@ -9,11 +9,7 @@ api_name:
 - wscn Film
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **Film** element describes the capabilities of the film scanning op
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Film>
   child elements
 </wscn:Film>
@@ -89,7 +85,7 @@ There are no attributes.
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**FilmColor**](filmcolor.md)

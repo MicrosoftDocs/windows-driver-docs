@@ -3,11 +3,7 @@ title: WDI_TLV_P2P_INVITATION_RESPONSE_INFO
 author: windows-driver-content
 description: WDI_TLV_P2P_INVITATION_RESPONSE_INFO is a TLV that contains Wi-Fi Direct Invitation Response information.
 ms.assetid: DFF1649A-1CBE-4E0B-8EB2-6E10F539C72F
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_INVITATION_RESPONSE_INFO Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

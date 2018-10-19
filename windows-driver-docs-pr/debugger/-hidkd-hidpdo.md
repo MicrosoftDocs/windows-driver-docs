@@ -5,9 +5,6 @@ ms.assetid: B7FF3B62-AC41-4CFC-A9D6-609B1204E4CA
 keywords: ["hidkd.hidpdo Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!hidkd.hidpdo** command displays HID information associated with a physical device object (PDO).
 
-```
+```dbgcmd
 !hidkd.hidpdo pdo
 ```
 
@@ -42,7 +39,7 @@ Examples
 
 Here is an example of the output of the **!hidpdo** command. The example first calls [**!hidtree**](-hidkd-hidtree.md) to get the address of a PDO.
 
-```
+```dbgcmd
 0: kd> !hidkd.hidtree
 HID Device Tree
 ...

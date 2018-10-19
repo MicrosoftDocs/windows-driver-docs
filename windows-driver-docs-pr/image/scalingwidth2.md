@@ -9,11 +9,7 @@ api_name:
 - wscn ScalingWidth
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ScalingWidth** element contains the range of allowable values for
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScalingWidth>
   child elements
 </wscn:ScalingWidth>
@@ -84,7 +80,7 @@ The **ScalingWidth** element contains [**MinValue**](minvalue.md) and [**MaxValu
 
 **MinValue** and **MaxValue** must be integers from 1 through 1000, with **MinValue** less than or equal to **MaxValue**. A value of 100 means that the scan device should not make any adjustments to the width of the scanned image. At a minimum, the WSD Scan Service must support the value of 100.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**MaxValue**](maxvalue.md)

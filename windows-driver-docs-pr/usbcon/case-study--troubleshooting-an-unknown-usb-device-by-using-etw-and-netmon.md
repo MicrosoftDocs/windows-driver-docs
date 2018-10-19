@@ -2,11 +2,7 @@
 Description: Provides an example of how to use USB ETW and Netmon to troubleshoot a USB device that Windows does not recognize.
 title: Case Study - Troubleshooting an unknown USB device
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -77,7 +73,7 @@ In this example, the device of interest was not connected to the system when we 
 
 In the sample log, the first event after the device summary events is a USB Hub Wait Wake IRP Completed event. We plugged in a device, and a host controller or a hub is waking up in response. To determine which component is waking up, look at the event's data. The data is in the Frame Details pane, which is shown in a tree structure in approximately the following form:
 
-```
+```cpp
 Frame information
 ETW event header information
     ETW event descriptor (Constant information about the event ID such
@@ -211,14 +207,14 @@ The next previous event is Endpoint Close. This event means that an endpoint is 
 
 The next previous event is a completed USB control transfer. The event data shows that the target of the transfer is the device (the port path is 1). The fid\_USBPORT\_Endpoint\_Descriptor structure indicates that the endpoint's address is 0, so this is the USB-defined default control endpoint. The URB status is 0xC0000004. Because the status is not zero, the transfer was probably not successful. For more details about this USBD\_STATUS value, see usb.h and [Understanding Error Events and Status Codes](#status-codes).
 
-```
+```cpp
 #define USBD_STATUS_STALL_PID ((USBD_STATUS)0xC0000004L)
 
 ```
 
 Meaning: The device returned a stall packet identifier. What request was stalled by the endpoint? The other data that was logged for the event indicates that the request was a standard device control request. Here is the parsed request:
 
-```
+```cpp
   Frame: Number = 184, Captured Frame Length = 252, MediaType = NetEvent 
 + NetEvent: 
 - MicrosoftWindowsUSBUSBPORT: Complete Internal URB_FUNCTION_CONTROL_TRANSFER 

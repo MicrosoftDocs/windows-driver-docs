@@ -5,9 +5,6 @@ ms.assetid: b86e55d2-122f-40ac-adb3-092511d3274e
 keywords: ["Bug Check 0xD5 DRIVER_PAGE_FAULT_IN_FREED_SPECIAL_POOL", "DRIVER_PAGE_FAULT_IN_FREED_SPECIAL_POOL"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

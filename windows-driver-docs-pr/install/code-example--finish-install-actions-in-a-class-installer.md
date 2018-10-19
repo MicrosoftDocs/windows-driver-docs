@@ -5,11 +5,7 @@ ms.assetid: 394f321c-2ce4-4773-b5df-e30ce23b7207
 keywords:
 - finish-install actions WDK device installations
 - class installers WDK device installations , finish-install actions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,7 +40,7 @@ In this example, a class installer performs the following operations to support 
 
 The following class installer code example shows the basic structure of class installer code that implements finish-install actions:
 
-```
+```cpp
 DWORD CALLBACK
 SampleClassInstaller(
   IN DI_FUNCTION  InstallFunction,

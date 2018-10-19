@@ -3,6 +3,7 @@ title: MSiSCSI\_InitiatorInstanceFailureEvent WMI Class
 description: MSiSCSI\_InitiatorInstanceFailureEvent WMI Class
 ms.assetid: 58ddfaf7-d2ec-4b06-8eef-f7b07285963d
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_InitiatorInstanceFailureEvent WMI Class
@@ -17,7 +18,7 @@ Because this class is associated with a particular instance of a storage minipor
 
 The MSiSCSI\_InitiatorInstanceFailureEvent class is defined in *Mgmt.mof*.
 
-```
+```cpp
 class MSiSCSI_InitiatorInstanceFailureEvent : WMIEvent {
   [read,key] String  InstanceName;
   [read] boolean  Active;

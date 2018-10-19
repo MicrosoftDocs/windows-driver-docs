@@ -2,18 +2,14 @@
 title: Signing WBDI Drivers
 description: Signing WBDI Drivers
 ms.assetid: 1BE83F60-4A04-457E-BD31-5E6F104A3505
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Signing WBDI Drivers
 
 
-The specific code-signing requirements for WBDI drivers depend on whether the WBDI driver is implemented by using the user-mode driver framework (UMDF), the kernel-mode driver framework (KMDF), or the Windows Driver Model (WDM). In addition to the catalog file that needs to be signed, certain dlls need to be signed with a specific attribute. For more information, see [Steps to submit a fingerprint driver](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-driver-signing).
+The specific code-signing requirements for WBDI drivers depend on whether the WBDI driver is implemented by using the user-mode driver framework (UMDF), the kernel-mode driver framework (KMDF), or the Windows Driver Model (WDM). In addition to the catalog file that needs to be signed, certain dlls need to be signed with a specific attribute. For more information, see [Steps to submit a fingerprint driver](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-driver-signing).
 
 All WBDI driver packages must be signed through the WHQL portal, to ensure that it has not been tampered with. Such a signature is required whether the driver runs in kernel mode or in user mode. You are not required to sign every individual file in the package. Instead, you create a catalog file that contains a hash value for every file in the package, and you sign the catalog file. The CatalogFile directive in the INF indicates the name of this file. For most WBDI drivers, the catalog file signature is the only type of signature that you need.
 

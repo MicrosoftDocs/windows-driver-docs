@@ -3,6 +3,7 @@ title: MPIO\_DISK\_INFO WMI Class
 description: MPIO\_DISK\_INFO WMI Class
 ms.assetid: 75c66c84-d815-43a5-a70d-1952bf0e8d44
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MPIO\_DISK\_INFO WMI Class
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 
 A WMI client uses the MPIO\_DISK\_INFO WMI class to query MPIO so that it gathers information regarding every MPIO disk that is configured in the system.
 
-```
+```cpp
 class MPIO_DISK_INFO
 {
     [key, read]

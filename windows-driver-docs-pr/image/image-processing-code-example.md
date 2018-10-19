@@ -3,11 +3,7 @@ title: Image Processing Code Example
 author: windows-driver-content
 description: Image Processing Code Example
 ms.assetid: fe5ac3db-46e0-4162-9add-c3b0ae736926
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ The following code example shows how to implement a simple image processing filt
 
  
 
-```
+```cpp
 ///
 ///  Constructor
 ///
@@ -169,7 +165,7 @@ CImageFilter::FilterPreviewImage(
         // deskewed) image into pAppStream.
         //
         // Note: A "real" implementation of DoFiltering should send
-        // WIA_TRANSFER_MSG_STATUS messages to the application&#39;s
+        // WIA_TRANSFER_MSG_STATUS messages to the application's
         // callback interface, m_pAppWiaTransferCallback.
         // DoFiltering should preferably also be able to
         // work on bands of data in the case where there is no
@@ -199,13 +195,13 @@ CImageFilter::FilterPreviewImage(
 //
 // Our simple image processing filter implementation always
 // caches all data internally, and it does not write data back
-// to the application&#39;s stream until it receives
+// to the application's stream until it receives
 // WIA_TRANSFER_MSG_END_OF_STREAM. A "real" image-processing
 // filter should be able to work on bands of data -- at least
 // if there is no rotation or deskew set into the item.
 //
 // In order to find out how many bytes have been written
-// into the application&#39;s stream, we store an interface
+// into the application's stream, we store an interface
 // pointer to the current filtering stream, m_pCurrentStream.
 // When we reach the end of the stream, we must notify the
 // filtering stream that it should filter and write all of
@@ -227,7 +223,7 @@ CImageFilter::TransferCallback(
         // Note: The percent reflects the amount of scanning
         // the driver reports, whereas the "BytesWritten" member
         // is the actual number of bytes that we have written
-        // to the application&#39;s stream.
+        // to the application's stream.
         // We do not modify the percent, however we have to
         // modify the ulBytesWrittenToCurrentStream member.
         //
@@ -259,7 +255,7 @@ CImageFilter::TransferCallback(
 
 //
 // GetNextStream creates a filtering stream whose Write method
-// writes to the application&#39;s stream. Because the item
+// writes to the application's stream. Because the item
 // represented by bstrFullItemName might be a child item of
 // the item passed into InitializeFilter, we have to call
 // FindItemByName to retrieve the actual item.
@@ -431,7 +427,7 @@ CMyFilterStream::~CMyFilterStream()
 // The only IStream method of interest here is Write.
 // For this simple ImageProcesing filter, we always write the
 // data into the "caching stream". The filtered image data is
-// not written into the application&#39;s stream until we receive
+// not written into the application's stream until we receive
 // an end-of-stream message.
 //
 STDMETHODIMP
@@ -443,7 +439,7 @@ CMyFilterStream::Write(const void *pv, ULONG cb, ULONG *pcbWritten)
 //
 // Flush is called when our callback routine receives
 // WIA_TRANSFER_MSG_END_OF_STREAM. In this simple implementation,
-// this is when we first write the data to the application&#39;s
+// this is when we first write the data to the application's
 // stream, m_pAppStream.
 //
 HRESULT

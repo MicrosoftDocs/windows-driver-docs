@@ -9,11 +9,7 @@ keywords:
 - printer memory configurations WDK Unidrv
 - memory configurations WDK Unidrv
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +27,7 @@ Within a GPD file, you can use two methods to describe a printer's possible memo
 
     For example, to specify that a printer can have two memory configurations, a 1-megabyte configuration with 450 kilobytes available and a 2-megabyte configuration with 1350 kilobytes available, you can use the following GPD entries:
 
-    ```
+    ```cpp
     *Feature: Memory
     {
         *Name: "Printer Memory"
@@ -54,7 +50,7 @@ Within a GPD file, you can use two methods to describe a printer's possible memo
 
     For example, to specify the same two configurations, a 1-megabyte configuration with 450 kilobytes available and a 2-megabyte configuration with 1350 kilobytes available, you can use the following GPD entries:
 
-    ```
+    ```cpp
     *Feature: Memory
     {
         *Name: "Printer Memory"

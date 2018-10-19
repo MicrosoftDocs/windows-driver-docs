@@ -5,9 +5,6 @@ description: Use this method in the Microsoft Store analytics API to get aggrega
 title: Get error reporting data for Windows 7 and Windows 8.x drivers
 ms.author: mcleans
 ms.date: 08/28/2018
-ms.topic: article
-ms.prod: windows
-ms.technology: uwp
 keywords: windows 10, uwp, Store services, Microsoft Store analytics API, errors
 ms.localizationpriority: medium
 ---
@@ -44,7 +41,7 @@ To use this method, you need to first do the following:
 
 | Method | Request URI                                                          |
 |--------|----------------------------------------------------------------------|
-| GET    | ```https://manage.devcenter.microsoft.com/v1.0/my/analytics/ihvdriver/failurehits``` |
+| GET    | `https://manage.devcenter.microsoft.com/v1.0/my/analytics/ihvdriver/failurehits` |
 
 
 ### Request header
@@ -147,5 +144,6 @@ The following example demonstrates an example JSON response body for this reques
 
 ## Related topics
 
-* [Get details for a Windows 7 or Windows 8.x driver error](get-details-for-a-windows-7-or-windows-8.x-driver-error.md)
-* [Download the CAB file for a Windows 7 or Windows 8.x driver error](download-the-cab-file-for-a-windows-7-or-windows-8.x-driver-error.md)
+- [Get details for a Windows 7 or Windows 8.x driver error](get-details-for-a-windows-7-or-windows-8.x-driver-error.md)
+
+- [Download the CAB file for a Windows 7 or Windows 8.x driver error](download-the-cab-file-for-a-windows-7-or-windows-8.x-driver-error.md)

@@ -5,11 +5,7 @@ description: The ACPI_ENUM_CHILD_LENGTH_FROM_CHILD macro calculates the size, in
 ms.assetid: 62be7cb5-4b71-4b8e-bad5-807623cd812a
 keywords: 
 - ACPI_ENUM_CHILD_LENGTH_FROM_CHILD macro ACPI Devices
-ms.author: windowsdriverdev
-ms.date:
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ The ACPI\_ENUM\_CHILD\_LENGTH\_FROM\_CHILD macro calculates the size, in bytes, 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 void ACPI_ENUM_CHILD_LENGTH_FROM_CHILD(
     Child
 );

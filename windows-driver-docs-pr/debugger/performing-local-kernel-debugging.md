@@ -5,9 +5,6 @@ ms.assetid: e66dc23b-9254-4148-9828-d27c30bfa492
 keywords: ["local kernel debugging", "local kernel debugging, commands available", "local kernel debugging, LiveKD tool", "LiveKD tool"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -76,7 +73,7 @@ Kernel-mode drivers and the Windows operating system frequently send messages to
 
 The LiveKD tool simulates local kernel debugging. This tool creates a "snapshot" dump file of the kernel memory, without actually stopping the kernel while this snapshot is made. (Therefore, the snapshot might not actually show a single instant state of the computer.)
 
-LiveKD is not part of the Debugging Tools for Windows package. You can download [LiveKd](http://go.microsoft.com/fwlink/p/?linkid=56552) from the Windows Sysinternals site.
+LiveKD is not part of the Debugging Tools for Windows package. You can download [LiveKd](https://go.microsoft.com/fwlink/p/?linkid=56552) from the Windows Sysinternals site.
 
  
 

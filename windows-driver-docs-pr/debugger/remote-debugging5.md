@@ -5,13 +5,10 @@ ms.assetid: e52cc5fb-9f10-415e-9fe8-6eba71daab6d
 keywords: ["Debugger Engine, remote debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-# Remote Debugging
+# Remote Debugging (Debugger Engine)
 
 
 Remote debugging occurs when a client's communication with a target is indirect, for example, through a network connection. When remote debugging, more than one instance of the debugger engine can be involved in debugging a target. However, exactly one of these instances is responsible for the debugging session; this instance is called the *host engine*.

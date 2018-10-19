@@ -5,9 +5,6 @@ Robots: noindex, nofollow
 ms.assetid: bbafe8f0-f77e-4fb4-ad28-7e57f866869a
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

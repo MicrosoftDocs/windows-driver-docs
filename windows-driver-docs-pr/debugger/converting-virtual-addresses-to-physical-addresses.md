@@ -5,9 +5,6 @@ ms.assetid: 5b3d19df-09cc-4131-ae64-5ce64d986df3
 keywords: ["virtual address", "virtual address, converting to physical address", "physical address", "physical address, converting from virtual address", "addresses", "addresses, converting virtual to physical", "memory, virtual addresses", "memory, physical addresses"]
 ms.author: domars
 ms.date: 05/04/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +17,7 @@ Most debugger commands use virtual addresses, not physical addresses, as their i
 
 There are two ways to convert a virtual address to a physical address: by using the **!vtop** extension, and by using the **!pte** extension.
 
-For an overview of virtual address in Windows, see [Virtual address spaces](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/virtual-address-spaces). 
+For an overview of virtual address in Windows, see [Virtual address spaces](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/virtual-address-spaces). 
 
 
 ### <span id="address_conversion_using__vtop"></span><span id="ADDRESS_CONVERSION_USING__VTOP"></span>Address Conversion Using !vtop
@@ -35,7 +32,7 @@ Suppose you are debugging a target computer on which the MyApp.exe process is ru
 
 3.  Determine the *directory base* of the address by using the [**!process**](-process.md) extension:
 
-    ```
+    ```dbgcmd
     kd> !process 0 0
     **** NT ACTIVE PROCESS DUMP ****
     ....
@@ -48,7 +45,7 @@ Suppose you are debugging a target computer on which the MyApp.exe process is ru
 
 5.  Use the [**!vtop**](-vtop.md) extension. The first parameter of this extension should be the page frame number. The second parameter of **!vtop** should be the virtual address in question:
 
-    ```
+    ```dbgcmd
     kd> !vtop 98fd 12f980
     Pdi 0 Pti 12f
     0012f980 09de9000 pfn(09de9)
@@ -60,7 +57,7 @@ Suppose you are debugging a target computer on which the MyApp.exe process is ru
 
 You can verify that this computation was done correctly by displaying the memory at each address. The [**!d\***](-db---dc---dd---dp---dq---du---dw.md) extension displays memory at a specified physical address:
 
-```
+```dbgcmd
 kd> !dc 9de9980
 # 9de9980 6d206e49 726f6d65 00120079 0012f9f4 In memory.......
 # 9de9990 0012f9f8 77e57119 77e8e618 ffffffff .....q.w...w....
@@ -70,7 +67,7 @@ kd> !dc 9de9980
 
 The [**d\* (Display Memory)**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command uses a virtual address as its argument:
 
-```
+```dbgcmd
 kd> dc 12f980
 0012f980  6d206e49 726f6d65 00120079 0012f9f4  In memory.......
 0012f990  0012f9f8 77e57119 77e8e618 ffffffff  .....q.w...w....
@@ -92,7 +89,7 @@ Again, assume you are investigating the virtual address 0x0012F980 belonging to 
 
 3.  Set the [process context](changing-contexts.md#process-context) to the desired process:
 
-    ```
+    ```dbgcmd
     kd> !process 0 0
     **** NT ACTIVE PROCESS DUMP ****
     ....
@@ -107,7 +104,7 @@ Again, assume you are investigating the virtual address 0x0012F980 belonging to 
 
 4.  Use the [**!pte**](-pte.md) extension with the virtual address as its argument. This displays information in two columns. The left column describes the page directory entry (PDE) for this address; the right column describes its page table entry (PTE):
 
-    ```
+    ```dbgcmd
     kd> !pte 12f980
                    VA 0012f980
     PDE at   C0300000        PTE at C00004BC
@@ -129,7 +126,7 @@ Memory structures vary in size, depending on the processor and the hardware conf
 
 Using 0x0012F980 again as the virtual address, you first need to convert it to binary, either by hand or by using the [**.formats (Show Number Formats)**](-formats--show-number-formats-.md) command:
 
-```
+```dbgcmd
 kd> .formats 12f980
 Evaluate expression:
   Hex:     0012f980
@@ -144,7 +141,7 @@ Evaluate expression:
 
 This virtual address is a combination of three fields. Bits 0 to 11 are the byte index. Bits 12 to 21 are the page table index. Bits 22 to 31 are the page directory index. Separating the fields, you have:
 
-```
+```dbgcmd
 0x0012F980  =  0y  00000000 00   010010 1111   1001 10000000
 ```
 
@@ -166,7 +163,7 @@ You then need three additional pieces of information for your system.
 
 Using this data, you can compute the address of the PTE itself:
 
-```
+```dbgcmd
 PTE address   =   PTE_BASE  
                 + (page directory index) * PAGE_SIZE
                 + (page table index) * sizeof(MMPTE)
@@ -178,7 +175,7 @@ PTE address   =   PTE_BASE
 
 This is the address of the PTE. The PTE is a 32-bit DWORD. Examine its contents:
 
-```
+```dbgcmd
 kd> dd 0xc00004bc L1
 c00004bc  09de9067
 ```

@@ -9,11 +9,7 @@ api_name:
 - wscn Job
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **Job** element contains all elements that are associated with a sc
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Job>
   child elements
 </wscn:Job>
@@ -85,7 +81,7 @@ Remarks
 
 A scan job (which the **Job** element represents) can contain one or more documents. The WSD Scan Service's processing instructions for both a job and its documents are executed at the **Job** level.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ActiveJobs**](activejobs.md)

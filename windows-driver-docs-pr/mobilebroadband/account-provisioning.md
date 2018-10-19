@@ -2,11 +2,7 @@
 title: Account provisioning
 description: Account provisioning
 ms.assetid: 3ffcd769-253f-4918-8095-a9206445a201
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -661,7 +657,7 @@ You can define a provisioning XML document by using a **WlanProfiles** section.
 </CarrierProvisioning>
 ```
 
-The child elements of **MSM** define how to connect to the network. This includes any necessary EAP configuration. All child elements elements of the MSM element in the [WLAN\_profile Schema](https://msdn.microsoft.com/library/windows/desktop/ms707341) are supported. See the provisioning XML schema reference for more details.
+The child elements of **MSM** define how to connect to the network. This includes any necessary EAP configuration. All child elements of the MSM element in the [WLAN\_profile Schema](https://msdn.microsoft.com/library/windows/desktop/ms707341) are supported. See the provisioning XML schema reference for more details.
 
 ### Provision the device to connect automatically to a WISPr-enabled hotspot
 

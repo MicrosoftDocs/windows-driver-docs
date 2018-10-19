@@ -3,6 +3,7 @@ title: MSFC\_FC4STATISTICS WMI Class
 description: MSFC\_FC4STATISTICS WMI Class
 ms.assetid: 49cd4104-1fe8-46ec-9216-c5c078666c02
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSFC\_FC4STATISTICS WMI Class
@@ -15,7 +16,7 @@ An HBA miniport driver that supports the T11 committee's *Fibre Channel HBA API*
 
 The MSFC\_FC4STATISTICS class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MSFC_FC4STATISTICS {
   [WmiDataId(1)] uint64  InputRequests;
   [WmiDataId(2)] uint64  OutputRequests;

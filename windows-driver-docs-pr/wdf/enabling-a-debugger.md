@@ -11,11 +11,7 @@ keywords:
 - user-mode drivers WDK UMDF , enabling a debugger
 - debugging drivers WDK UMDF , enabling a debugger
 - driver debugging WDK UMDF , enabling a debugger
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,7 +35,7 @@ The following are recommended settings. You can set these manually, or use the [
 
 -   Enable Application Verifier on WUDFHost.exe:
 
-    ```
+    ```cpp
     AppVerif –enable Heaps Exceptions Handles Locks Memory TLS Leak –for WudfHost.exe
     ```
 

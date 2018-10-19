@@ -9,11 +9,7 @@ api_name:
 - wscn DestinationResponse
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **DestinationResponse** element contains the response information f
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:DestinationResponse>
   child elements
 </wscn:DestinationResponse>
@@ -85,7 +81,7 @@ Remarks
 
 The **DestinationResponse** element contains the [**ClientContext**](clientcontext.md) element from its matching [**ScanDestination**](scandestination.md) element so that the client can identify the response. **DestinationResponse** also contains a [**DestinationToken**](destinationtoken.md) element for use in all [**CreateScanJobRequest**](createscanjobrequest.md) operation elements from this destination.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ClientContext**](clientcontext.md)

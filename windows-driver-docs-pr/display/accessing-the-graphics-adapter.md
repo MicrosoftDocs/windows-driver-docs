@@ -7,11 +7,7 @@ keywords:
 - Windows 2000 display driver model WDK , graphics
 - display drivers WDK Windows 2000 , graphics
 - graphics card access WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

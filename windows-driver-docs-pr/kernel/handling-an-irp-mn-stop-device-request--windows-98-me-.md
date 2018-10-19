@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Handling an IRP_MN_STOP_DEVICE Request (Windows 98/Me)
 ms.assetid: 8e44561a-f494-48ce-ab61-aa47cd4e1c64
 keywords: ["IRP_MN_STOP_DEVICE"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

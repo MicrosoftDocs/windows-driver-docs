@@ -3,11 +3,7 @@ title: Driver Support for Protected Printing
 author: windows-driver-content
 description: Windows 8.1 includes support for protected printing, which allows users to specify a personal identification number (PIN) that is then used at the printer, prior to the job being printed out.
 ms.assetid: 43569030-224F-46C6-963F-FC3BE24A0FB3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -176,7 +172,7 @@ JobPasscode
 
 Here's an example of a GPD file specifying JobPasscode with an Installable Hardware Constraint.
 
-```Text
+```GDP
 *%
 *GPDSpecVersion: "1.0"
 *GPDFileVersion: "1.0"
@@ -240,7 +236,7 @@ Here's an example of a GPD file specifying JobPasscode with an Installable Hardw
 
 Here's an example of a PPD file specifying JobPasscode with an Installable Hardware Constraint.
 
-```Text
+```PPD
 *MSJobPasscodeMinLength: "4"
 *MSJobPasscodeMaxLength: "15"
 

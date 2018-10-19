@@ -3,6 +3,7 @@ title: DSM\_Load\_Balance\_Policy\_V2 WMI Class
 description: DSM\_Load\_Balance\_Policy\_V2 WMI Class
 ms.assetid: 8895d0ca-b9bd-4f8d-bf8f-4ba2f459c264
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DSM\_Load\_Balance\_Policy\_V2 WMI Class
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 
 MPIO publishes the DSM\_LOAD\_Balance\_Policy\_V2 WMI class but expects the DSM to register the GUID and handle its implementation. An MPIO driver uses the DSM\_LOAD\_Balance\_Policy\_V2 WMI class to identify the load balance policy that is applied to an MPIO disk.
 
-```
+```cpp
 class DSM_Load_Balance_Policy_V2
 {
 

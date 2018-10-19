@@ -9,11 +9,7 @@ api_name:
 - wscn ADFFront
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ADFFront** element describes the capabilities of the front side o
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ADFFront>
   child elements
 </wscn:ADFFront>
@@ -91,7 +87,7 @@ Remarks
 
 If the scanner has an ADF the WSD Scan Service must provide details for it in the **ADFFront** element, regardless of the ADF's duplexing capabilities.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ADF**](adf.md)

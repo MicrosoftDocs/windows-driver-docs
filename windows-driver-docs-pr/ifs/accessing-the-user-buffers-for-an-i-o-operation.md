@@ -10,11 +10,7 @@ keywords:
 - MDLs WDK file systems
 - I/O WDK file systems
 - IRP-based I/O operations WDK file system minifilter
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

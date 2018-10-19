@@ -2,11 +2,7 @@
 title: Installing a New Device Setup Class for a Bus
 description: Installing a New Device Setup Class for a Bus
 ms.assetid: a94899b6-02e0-4181-bb14-5552806a8c9e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ To install a new device setup class for the bus, set related directives in the [
 
 The following annotated example illustrates the basic INF file entries you need to include to install a [device setup class](device-setup-classes.md). For information about the possible configuration settings of a device setup class, see [**INF ClassInstall32 section**](inf-classinstall32-section.md).
 
-```
+```cpp
 [Version]
 signature="$CHICAGO$"
 ; Specify a unique class name that identifies the manufacturer and the bus type

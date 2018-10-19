@@ -4,9 +4,6 @@ description: These methods from the Microsoft Hardware APIs get data for hardwar
 author: balapv
 ms.author: balapv
 ms.date: 04/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -14,7 +11,7 @@ ms.localizationpriority: medium
 
 Use the following methods in *Microsoft Hardware APIs* to get data for hardware products registered to your Dev Center Account. For an introduction to Microsoft Hardware APIs, including prerequisites for using the API, see [Manage hardware submissions using APIs](dashboard-api.md).
 
-```
+```cpp
 https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/
 ```
 Before you can use these methods, the product must already exist in your Dev Center account. To create or manage submissions for products, see the methods in [Manage product submissions](manage-product-submissions.md).
@@ -91,7 +88,7 @@ This resource has the following values
 | isExtensionInf | Boolean | (DEPRECATED) Indicates whether the product is an extension driver. This field is deprecated and should no longer be used. isExtensionInf has been moved to submission level property. |
 | deviceMetadataIds | array of GUIDs | GUIDs which map device metadata submissions to the driver |
 | deviceType | String | Indicates the type of device. Possible values are:<ul><li>“internal” - An internal component, device is part of a system and connects inside the PC</li><li>“external” - An external component, device is an external device (peripheral) that connects to a PC</li><li>“internalExternal” - Both, device can be connected internally (inside a PC) and externally (peripheral)</li><li>“notSet” – no data available</li></ul>|
-| isTestSign | Boolean | Indicates whether the product is a test signed driver. For more information about test-signing driver packages, see [WHQL Test Signature Program](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/whql-test-signature-program)  |
+| isTestSign | Boolean | Indicates whether the product is a test signed driver. For more information about test-signing driver packages, see [WHQL Test Signature Program](https://docs.microsoft.com/windows-hardware/drivers/install/whql-test-signature-program)  |
 | isFlightSign | Boolean | Indicates whether the product is a flight signed driver. Flight signed drivers are test drivers which can be published via Windows Update. They can be published/installed only on machines which have signed up for Windows Insider Program. They can be installed on machines without disbaling secure boot. They cannot be installed on retail machines which are not part of Windows Insider Program.|
 | marketingNames | array of strings | Marketing names or aliases of the product |
 | productName | String | The name of the driver as specified during creation |
@@ -191,7 +188,7 @@ This object represents the downloads for a given submission.
     },
     {
       "type": "certificationReport",
-      "url": "https:// manage.devcenter.microsoft.com/en-us/dashboard/hardware/Driver/DownloadCertificationReport/29963920/13635057453741329/1152921504621441930"
+      "url": "https:// manage.devcenter.microsoft.com/dashboard/hardware/Driver/DownloadCertificationReport/29963920/13635057453741329/1152921504621441930"
     }
   ],
   "messages": []
@@ -498,3 +495,7 @@ If there are functional validation failures, the response body will contain one 
 | InvalidInput | Cannot update the shipping label when another workflow is in progress. Please retry. | Returned when a shipping label is updated when a previous workflow is still in progress. |
 | RequestInvalidForCurrentState | Cannot create Publishing shipping label for inbox or system type. One can only share the shipping label. | Returned when windows update Shipping label is created on an inbox driver or a system. |
 | RequestInvalidForCurrentState | Submission is not yet ready to create shipping label. Please retry after some time. | Returned when a shipping label is created without waiting for preparation or pre-processing to complete. |
+
+## See also
+
+- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

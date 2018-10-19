@@ -5,9 +5,6 @@ ms.assetid: 5ad56234-5150-4acb-828d-198c2e5fb9b6
 keywords: ["Bug Check 0x9E USER_MODE_HEALTH_MONITOR", "USER_MODE_HEALTH_MONITOR"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -2,11 +2,7 @@
 title: NdisMIndicateStatusEx rule (ndis)
 description: The driver must not call NdisMIndicateStatusEx after it returns from the MiniportHaltEx function.
 ms.assetid: 488882DB-F294-40A1-BF35-E65262554E11
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["NdisMIndicateStatusEx rule (ndis)"]
 topic_type:
 - apiref

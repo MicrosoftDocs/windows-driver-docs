@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # welcomeTitle XML Element
@@ -21,7 +22,7 @@ The **welcomeTitle** XML element customizes the bold text of the welcome title t
 
 ### Element Tag
 
-```
+```cpp
 <welcomeTitle>
 ```
 
@@ -62,7 +63,7 @@ None
 
 The following code example demonstrates a **welcomeTitle** element customizes the title text on a welcome page. The text that specifies the custom welcome title is shown in bold font style.
 
-```
+```cpp
 <dpinst>
   ...
   <language code="0x0409">

@@ -5,9 +5,6 @@ ms.assetid: 85957afe-f73e-4533-af5c-5ee55b35ac84
 keywords: ["rpcexts.getcallinfo Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!rpcexts.getcallinfo** extension searches the system's RPC state information for server-side call (SCALL) information.
 
-```
+```dbgcmd
 !rpcexts.getcallinfo [ CallID | 0 [ IfStart | 0 [ ProcNum | 0xFFFF [ProcessID|0] ] ] ] 
 !rpcexts.getcallinfo -? 
 ```
@@ -79,7 +76,7 @@ The parameters are parsed from left to right. To skip a parameter, supply the va
 
 Here is an example:
 
-```
+```dbgcmd
 0:002> !rpcexts.getcallinfo
 Searching for call info ...
 ## PID  CELL ID   ST PNO IFSTART  TIDNUMBER CALLFLAG CALLID   LASTTIME CONN/CLN

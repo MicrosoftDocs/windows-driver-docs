@@ -5,11 +5,7 @@ ms.assetid: dc7c9f75-835b-4646-b30b-24c9dcb6ed2d
 keywords:
 - battery miniclass drivers WDK , routines
 - DriverEntry WDK battery
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,21 +23,21 @@ The miniclass driver's [*DriverEntry*](https://msdn.microsoft.com/library/window
 
 -   The driver's [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine in *DriverObject*-&gt;**DriverExtension**-&gt;**AddDevice**
 
--   The [*DRIVER_DISPATCH*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) callback function in *DriverObject*-&gt;**MajorFunction**\[[**IRP\_MJ\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff550784)\]
+-   The [*DRIVER_DISPATCH*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) callback function in *DriverObject*-&gt;**MajorFunction**\[[**IRP\_MJ\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff550784)\]
 
--   The [*DRIVER_DISPATCH*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) callback function in *DriverObject*-&gt;**MajorFunction**\[[**IRP\_MJ\_PNP**](https://msdn.microsoft.com/library/windows/hardware/ff550772)\]
+-   The [*DRIVER_DISPATCH*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) callback function in *DriverObject*-&gt;**MajorFunction**\[[**IRP\_MJ\_PNP**](https://msdn.microsoft.com/library/windows/hardware/ff550772)\]
 
--   The [*DRIVER_DISPATCH*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) callback function in *DriverObject*-&gt;**MajorFunction**\[[**IRP\_MJ\_CREATE**](https://msdn.microsoft.com/library/windows/hardware/ff550729)\]
+-   The [*DRIVER_DISPATCH*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) callback function in *DriverObject*-&gt;**MajorFunction**\[[**IRP\_MJ\_CREATE**](https://msdn.microsoft.com/library/windows/hardware/ff550729)\]
 
--   The [*DRIVER_DISPATCH*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) callback function in *DriverObject*-&gt;**MajorFunction**\[[**IRP\_MJ\_CLOSE**](https://msdn.microsoft.com/library/windows/hardware/ff550720)\]
+-   The [*DRIVER_DISPATCH*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) callback function in *DriverObject*-&gt;**MajorFunction**\[[**IRP\_MJ\_CLOSE**](https://msdn.microsoft.com/library/windows/hardware/ff550720)\]
 
--   The [*DRIVER_DISPATCH*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) callback function in *DriverObject*-&gt;**MajorFunction**\[[**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744)\]
+-   The [*DRIVER_DISPATCH*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) callback function in *DriverObject*-&gt;**MajorFunction**\[[**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744)\]
 
--   The [*DRIVER_DISPATCH*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) callback function in *DriverObject*-&gt;**MajorFunction**\[[**IRP\_MJ\_SYSTEM\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550813)\].
+-   The [*DRIVER_DISPATCH*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) callback function in *DriverObject*-&gt;**MajorFunction**\[[**IRP\_MJ\_SYSTEM\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550813)\].
 
 The following sample code initializes these entry points for a hypothetical NewBatt miniclass driver:
 
-```
+```cpp
 DriverObject->DriverUnload = NewBattUnload;
 DriverObject->DriverExtension->AddDevice = NewBattAddDevice; 
 DriverObject->MajorFunction[IRP_MJ_DEVICE_CONTROL] = NewBattDispatchDeviceControl;
@@ -68,7 +64,7 @@ For additional routine-specific requirements, see the following topics:
 
 [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341)
 
-[*DRIVER_DISPATCH*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
+[*DRIVER_DISPATCH*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
 [*DispatchClose*](https://msdn.microsoft.com/library/windows/hardware/ff543255)
 

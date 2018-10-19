@@ -11,11 +11,7 @@ keywords:
 - user-mode header files WDK
 - kernel-mode header files WDK
 - files WDK header files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -86,7 +82,7 @@ Here are the predefined constant values that represent versions of the Microsoft
 
 You can see many examples of version-specific DDI elements in the WDK header files. This conditional declaration appears in Wdm.h, which is a header file that might be included by a kernel-mode driver.
 
-```
+```cpp
 #if (NTDDI_VERSION >= NTDDI_WIN7)
 _Must_inspect_result_
 NTKERNELAPI

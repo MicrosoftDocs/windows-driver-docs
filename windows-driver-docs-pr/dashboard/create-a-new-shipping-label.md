@@ -4,9 +4,6 @@ description: This method shows how to create a new shipping label in the Microso
 author: balapv
 ms.author: balapv
 ms.date: 08/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Create a new shipping label
@@ -120,7 +117,7 @@ The hardware ID object should contain a valid combination of bundle ID, PNP ID, 
 
 The following example demonstrates how to create a new product.
 
-```
+```cpp
 POST https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions/{submissionId}/shippingLabels HTTP/1.1
 Authorization: Bearer <your access token>
 ```
@@ -187,3 +184,7 @@ For details about the response body, see [shipping label resource](get-shipping-
 ## Error codes
 
 For info about error codes, see [Error codes](get-product-data.md#error-codes).
+
+## See also
+
+[Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

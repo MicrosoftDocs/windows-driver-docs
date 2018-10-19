@@ -2,11 +2,7 @@
 title: IrqlExFree1 rule (wdm)
 description: The IrqlExFree1 rule specifies that ExFreePool and ExFreePoolWithTag are called at proper IRQL.
 ms.assetid: D0ECF4C3-8207-4618-949E-D80DBC38DBE3
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["IrqlExFree1 rule (wdm)"]
 topic_type:
 - apiref

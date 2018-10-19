@@ -3,11 +3,7 @@ title: 3D manufacturing keywords overview
 author: windows-driver-content
 description: The Print Schema 3D manufacturing keywords identify possible settings for a device’s capabilities or selected settings for a device configuration.
 ms.assetid: D78EB9E6-584A-419C-B320-8962CDCC966E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ Keyword instances appearing within a PrintCapabilities or PrintTicket document S
 
 The namespace URI for the Print Schema keywords for 3D manufacturing is:
 
-```
+```xml
 http://schemas.microsoft.com/3dmanufacturing/2013/01/pskeywords3d
 ```
 

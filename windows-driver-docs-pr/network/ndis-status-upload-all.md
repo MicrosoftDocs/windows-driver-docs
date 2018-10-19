@@ -5,11 +5,7 @@ description: This topic describes the NDIS_STATUS_UPLOAD_ALL status indication.
 ms.assetid: 88a756a6-04a0-410b-9bc7-50e7a67b3685
 keywords:
 - NDIS_STATUS_UPLOAD_ALL, TCP chimney offload NDIS status indications, NDIS_STATUS_UPLOAD_ALL WDK, NDIS_STATUS_UPLOAD_ALL networking
-ms.author: windowsdriverdev
 ms.date: 11/10/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

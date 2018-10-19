@@ -3,11 +3,7 @@ title: WDI_TLV_CONNECTION_SETTINGS
 author: windows-driver-content
 description: WDI_TLV_CONNECTION_SETTINGS is a TLV that contains connection settings for OID_WDI_TASK_CONNECT.
 ms.assetid: E08E895D-BFD6-496E-82FE-881FDDB0B88E
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CONNECTION_SETTINGS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

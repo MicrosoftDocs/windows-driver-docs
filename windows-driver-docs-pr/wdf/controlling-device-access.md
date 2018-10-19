@@ -3,11 +3,7 @@ title: Controlling Device Access
 author: windows-driver-content
 description: Controlling Device Access
 ms.assetid: E4FF73B3-87D0-458E-A042-E5A8F3DB1677
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ Starting in Windows 8, the operating system includes a security identifier (SID
 
 The SID for UMDF drivers is SDDL\_USER\_MODE\_DRIVERS, and the definition is in sddl.h. The full representation of this SID is:
 
-```
+```cpp
 S-1-5-84-0-0-0-0-0
 ```
 
@@ -35,13 +31,13 @@ In the INF file, you can use either the abbreviated form or the fully specified 
 
 The abbreviated form is available starting in Windows 8:
 
-```
+```cpp
 HKR,,Security,,"D:P(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;UD)"   
 ```
 
 On operating systems earlier than Windows 8, you must use the fully specified form:
 
-```
+```cpp
 HKR,,Security,,"D:P(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;S-1-5-84-0-0-0-0-0)"       
 ```
 
@@ -50,7 +46,7 @@ HKR,,Security,,"D:P(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;S-1-5-84-0-0-0-0-0)"
 
 To specify security requirements in the driver, you must use the abbreviated form, which is only available starting in Windows 8. For example, a KMDF driver could enable access to its device from UMDF drivers by using the following:
 
-```
+```cpp
 RtlInitUnicodeString(&sddlString, L"D:P(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;UD)");
 status = WdfDeviceInitAssignSDDLString(DeviceInit, &sddlString);
 ```

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Cancel-Safe IRP Queues
 ms.assetid: a759d1e0-120f-4db9-9b84-ff921f2f5ba4
 keywords: ["cancel-safe IRP queues WDK kernel", "callback routines WDK IRPs", "synchronization WDK IRPs"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -68,7 +64,7 @@ The following diagram illustrates the flow of control for IRP cancellation.
 
 A basic implementation of [*CsqCompleteCanceledIrp*](https://msdn.microsoft.com/library/windows/hardware/ff542940) is as follows.
 
-```
+```cpp
 VOID CsqCompleteCanceledIrp(PIO_CSQ Csq, PIRP Irp) {
   Irp->IoStatus.Status = STATUS_CANCELLED;
   Irp->IoStatus.Information = 0;
@@ -81,7 +77,7 @@ Drivers can use any of the operating system's synchronization primitives to impl
 
 Here is an example of how a driver can implement locking using spin locks.
 
-```
+```cpp
 /* 
   The driver has previously initialized the SpinLock variable with
   KeInitializeSpinLock.
@@ -136,26 +132,26 @@ The following diagram illustrates the flow of control for [**IoCsqInsertIrpEx**]
 
 There are several natural ways to use the **IoCsq*Xxx*** routines to queue and dequeue IRPs. For example, a driver could simply queue IRPs to be processed in the order in which they are received. The driver could queue an IRP as follows:
 
-```
+```cpp
     status = IoCsqInsertIrpEx(IoCsq, Irp, NULL, NULL);
 ```
 
 If the driver is not required to distinguish between particular IRPs, it could then simply dequeue them in the order in which they were queued, as follows:
 
-```
+```cpp
     IoCsqRemoveNextIrp(IoCsq, NULL);
 ```
 
 Alternatively, the driver could queue and dequeue specific IRPs. The routines use the opaque [**IO\_CSQ\_IRP\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff550567) structure to identify particular IRPs in the queue. The driver queues the IRP as follows:
 
-```
+```cpp
     IO_CSQ_IRP_CONTEXT ParticularIrpInQueue;
     IoCsqInsertIrp(IoCsq, Irp, &ParticularIrpInQueue);
 ```
 
 The driver can then dequeue the same IRP by using the **IO\_CSQ\_IRP\_CONTEXT** value.
 
-```
+```cpp
     IoCsqRemoveIrp(IoCsq, Irp, &ParticularIrpInQueue);
 ```
 

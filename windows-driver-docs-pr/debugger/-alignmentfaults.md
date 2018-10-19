@@ -5,9 +5,6 @@ ms.assetid: 6720a4de-ba75-4449-ab47-559bc7323002
 keywords: ["alignmentfaults Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

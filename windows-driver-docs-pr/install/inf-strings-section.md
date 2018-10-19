@@ -10,11 +10,7 @@ api_name:
 - INF Strings Section
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ ms.localizationpriority: medium
 
 An INF file must have at least one **Strings** section to define every %*strkey*% token specified elsewhere in that INF.
 
-```
+```cpp
 [Strings] | 
 [Strings.LanguageID] ...
  
@@ -113,7 +109,7 @@ Examples
 
 The following example shows a fragment of a **Strings** section from a system-supplied locale-specific *dvd.inf* for installations in English-speaking countries/regions.
 
-```
+```cpp
 [Strings]
 Msft="Microsoft"
 MfgToshiba="Toshiba"
@@ -123,7 +119,7 @@ Tosh404.DeviceDesc="Toshiba DVD decoder card"
 
 The following example shows string concatenation.
 
-```
+```cpp
 [OEM Windows System Component Verification]
 OID = 1.3.6.1.4.1.311.10.3.7    ; WHQL OEM OID 
 Notice = "%A% %B% %C% %D% %E%" 

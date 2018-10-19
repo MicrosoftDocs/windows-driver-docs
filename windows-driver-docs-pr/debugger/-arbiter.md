@@ -5,9 +5,6 @@ ms.assetid: 95149538-6fcd-4638-b35f-4e1a562e5231
 keywords: ["arbiter Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

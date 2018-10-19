@@ -2,11 +2,7 @@
 title: Using the INF AddProperty Directive and INF DelProperty Directive
 description: Using the INF AddProperty Directive and the INF DelProperty Directive
 ms.assetid: e5ae8d66-b2dc-409e-bdac-9034a9e24672
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,7 +58,7 @@ The value that is used to modify the property value.
 
 The following example of an **AddProperty** directive includes two line entries. The first line includes the *property-name* entry value "DeviceModel" and the *value* entry value "Sample Device Model Name." This entry sets the DEVPKEY_DrvPkg_Model property. The second line entry sets a custom property in a custom property category. The *property-category-guid* entry value is "c22189e4-8bf3-4e6d-8467-8dc6d95e2a7e" and the *property-identifier* entry value is "2." The optional *Flags* entry value is not present and the *type* entry value is "18" (DEVPROP_TYPE_STRING). The *value* entry value is "String value for property 1."
 
-```
+```cpp
 [Root_Install.NT]
 AddProperty=Root_AddProperty
 
@@ -107,7 +103,7 @@ The following example of a *del-property-section* includes two line entries.
 
 The first line includes the *property-name* entry value "DeviceModel", which deletes the DEVPKEY_DrvPkg_Model property. The second line entry deletes the string "DeleteThisString" from a custom device property value whose data type is DEVPROP_TYPE_STRING_LIST. In the second line, the *property-category-guid* entry value is "c22189e4-8bf3-4e6d-8467-8dc6d95e2a7e", the *property-identifier* entry value is "2", and the *Flags* entry value is "0x00000001."
 
-```
+```cpp
 [SampleDelPropertySection]
 DeviceModel
 {c22189e4-8bf3-4e6d-8467-8dc6d95e2a7e}, 2, 0x00000001, "DeleteThisString"

@@ -3,11 +3,7 @@ title: Simple device orientation sensor data fields
 author: windows-driver-content
 description: This topic provides information about the data fields that are specific to the simple device orientation sensor.
 ms.assetid: 62E0517B-10CC-4561-B7D4-5536CC3FFCE1
-ms.author: windowsdriverdev
 ms.date: 01/04/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

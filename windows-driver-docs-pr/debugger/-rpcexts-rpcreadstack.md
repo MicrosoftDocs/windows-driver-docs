@@ -5,9 +5,6 @@ ms.assetid: e0988ac9-dc6e-4a4f-9096-6af2e70dcd42
 keywords: ["rpcexts.rpcreadstack Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!rpcexts.rpcreadstack** extension reads an RPC client-side stack and retrieves the call information.
 
-```
+```dbgcmd
 !rpcexts.rpcreadstack ThreadStackPointer
 ```
 
@@ -64,7 +61,7 @@ For a common use of this extension, see [Analyzing a Stuck Call Problem](analyzi
 
 Here is an example:
 
-```
+```dbgcmd
 0:001> !rpcexts.rpcreadstack 68fba4
 CallID: 1
 IfStart: 19bb5061

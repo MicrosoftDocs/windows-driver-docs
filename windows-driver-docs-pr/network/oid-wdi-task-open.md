@@ -3,11 +3,7 @@ title: OID_WDI_TASK_OPEN
 author: windows-driver-content
 description: OID_WDI_TASK_OPEN requests that the IHV component initializes the adapter.
 ms.assetid: f4a77e08-1a1e-4d75-a559-a5cb01d825ee
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_OPEN Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # suppressAddRemovePrograms XML Element
@@ -25,7 +26,7 @@ The **suppressAddRemovePrograms** XML element is an empty element that sets the 
 
 ### Element Tag
 
-```
+```cpp
 <suppressAddRemovePrograms>
 ```
 
@@ -68,7 +69,7 @@ By default, the **suppressAddRemovePrograms** flag is set to OFF. To set the **s
 
 The following code example demonstrates a **suppressAddRemovePrograms** element that is child element of a **dpinst** element.
 
-```
+```cpp
 <dpinst>
   ...
    <suppressAddRemovePrograms/>
@@ -78,7 +79,7 @@ The following code example demonstrates a **suppressAddRemovePrograms** element 
 
 The following code example demonstrates a **suppressAddRemovePrograms** element that is child element of a **group** element.
 
-```
+```cpp
 <dpinst>
   ...
   <group>

@@ -7,11 +7,7 @@ keywords:
 - constructs WDK printer autoconfig
 - PPD files WDK autoconfiguration , constructs
 - in-box autoconfiguration support WDK printer , constructs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

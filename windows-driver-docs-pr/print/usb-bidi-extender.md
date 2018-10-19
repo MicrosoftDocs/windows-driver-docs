@@ -3,11 +3,7 @@ title: USB Bidi Extender
 author: windows-driver-content
 description: Describes Bidi support for USB device using a combination of a Bidi XML file and a Javascript file known as a USB Bidi extender.
 ms.assetid: C4012369-F1C6-4EBC-8DAE-F4E551DE782D
-ms.author: windowsdriverdev
 ms.date: 06/11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -68,7 +64,7 @@ The USBMon Bidi Extension file uses the same basic structure as the SNMP Bidi Ex
 
 -   Bidi values are immediately polled if they are requested in a Bidi API call. The refreshInterval value is the initial value that indicates when to poll the device for updates on a particular Bidi schema value. After each poll, the refreshInterval increases until we stop polling. The following formula shows how refreshInterval is incremented:
 
-    ```JavaScript
+    ```javascript
     currentRefreshInterval = refreshInterval * (3 * numPolls);
     ```
 

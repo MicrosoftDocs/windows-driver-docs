@@ -8,11 +8,7 @@ keywords:
 - COPP WDK DirectX VA , error codes
 - protected video WDK COPP , error codes
 - error codes WDK COPP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

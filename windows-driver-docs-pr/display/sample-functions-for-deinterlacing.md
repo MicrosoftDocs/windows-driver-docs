@@ -4,11 +4,7 @@ description: Sample Functions for Deinterlacing
 ms.assetid: a91c0267-7a3e-4206-8680-6e87778a329d
 keywords:
 - deinterlacing WDK DirectX VA , sample functions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

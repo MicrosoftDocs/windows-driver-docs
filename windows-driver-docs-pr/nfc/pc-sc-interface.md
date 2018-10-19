@@ -2,11 +2,9 @@
 title: PC/SC interface for smart cards
 description: This topic describes the ATR format for different NFC card types. 
 ms.assetid:
-ms.topic: article
 ms.author: eliotgra
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # PC/SC interface for smart cards

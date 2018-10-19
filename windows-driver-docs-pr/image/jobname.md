@@ -9,11 +9,7 @@ api_name:
 - wscn JobName
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **JobName** element specifies the client-supplied, user-friendly na
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobName>
   text
 </wscn:JobName>
@@ -80,7 +76,7 @@ The WSD Scan Service can provide a default **JobName** name in its [**DefaultSca
 
 The name of the user who submitted the job is specified in the [**JobOriginatingUserName**](joboriginatingusername.md) element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DefaultScanTicket**](defaultscanticket.md)

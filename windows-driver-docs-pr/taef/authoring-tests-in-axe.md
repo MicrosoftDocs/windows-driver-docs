@@ -2,11 +2,7 @@
 title: Authoring Tests in AXE
 description: Authoring Tests in AXE
 ms.assetid: B042FE1B-98E4-48ae-BE2C-15C71EC6640A
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,7 +41,7 @@ For AXE tests, TAEF uses the AXE assessment manifest file format.
 
 The AXE assessment manifest schema is designed to support very rich descriptions of complex assessment for sophisticated scenarios. However, the manifests can also be very simple as there are very few mandatory nodes. The following example shows a minimal manifest that includes all of the mandatory tags.
 
-```
+```cpp
 1<?xml version="1.0" encoding="utf-8"?>
 2<AxeAssessmentManifest xmlns="http://www.microsoft.com/axe/assessment/manifest">
 3  <VersionedId>
@@ -133,7 +129,7 @@ Finally, **lines 28 - 32** instruct AXE to use the Win32 API CreateProcess() to 
 
 As with any other TAEF test, you can also apply metadata to a TAEF AXE test. Consider the example that is shown below.
 
-```
+```cpp
 1<?xml version="1.0" encoding="utf-8"?>
 2<AxeAssessmentManifest xmlns="http://www.microsoft.com/axe/assessment/manifest">
 3  <VersionedId>
@@ -177,7 +173,7 @@ As with any other TAEF test, you can also apply metadata to a TAEF AXE test. Con
 
 **Lines 25 - 29** demonstrate how TAEF standard and custom metadata can be applied to an AXE test. Under the **AxeAssessmentManifest** XML node is a **Properties** node. Single level XML tags under the **Properties** node are recognized as metadata (properties). All single level XML tags under **Properties** are interpreted as property names and their text values are interpreted as the property values. In the above example, **Owner** is interpreted as a property name and **Someone** as a property value. XML tags with no text in these elements are interpreted as elements whose value equals the empty string (for example, **&lt;SimpleTagWithNoText/&gt;**). Multilevel XML tags under **Properties** are ignored (for example, a multilevel tag like
 
-```
+```cpp
 <VerifyOSVersion>
     <Major>6</Major>
     <Minor>0</Minor>
@@ -226,7 +222,7 @@ It is beyond the scope of this document to describe all of the possible AXE mani
 
 The following example shows a more complex AXE assessment manifest.
 
-```
+```cpp
 1<?xml version="1.0" encoding="utf-8"?>
 2<AxeAssessmentManifest xmlns="http://www.microsoft.com/axe/assessment/manifest">
 3  <VersionedId>

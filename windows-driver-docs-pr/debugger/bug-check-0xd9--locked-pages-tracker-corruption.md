@@ -5,9 +5,6 @@ ms.assetid: 81011ce6-159c-448f-9f68-7b1eb949ff68
 keywords: ["Bug Check 0xD9 LOCKED_PAGES_TRACKER_CORRUPTION", "LOCKED_PAGES_TRACKER_CORRUPTION"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

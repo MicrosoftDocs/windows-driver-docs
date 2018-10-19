@@ -2,11 +2,7 @@
 title: Data-driven Testing in Scripting Languages
 description: Data-driven Testing in Scripting Languages
 ms.assetid: CF60C594-8877-4f09-AF82-9F4CA27123C7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +25,7 @@ Data-driven testing in TAEF allows you to specify the **DataSource** at the clas
 
 The following example shows how to specify the **DataSource** property.
 
-```
+```cpp
 1   <?xml version="1.0" ?>
 2   <?component error="true" debug="true"?>
 3   <package>

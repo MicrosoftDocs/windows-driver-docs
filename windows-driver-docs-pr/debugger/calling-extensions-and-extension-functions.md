@@ -5,9 +5,6 @@ ms.assetid: 0582cdc2-7059-42db-878b-28767a6fe850
 keywords: ["Debugger Engine API, calling extensions"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,14 +29,14 @@ To obtain a pointer to an extension function, use [**GetExtensionFunction**](htt
 
 If the following extension function was included in an extension library and loaded into the debugger engine:
 
-```
+```cpp
 HRESULT CALLBACK
 _EFN_GetObject(IDebugClient * client, SomeObject * obj);
 ```
 
 It could be called using:
 
-```
+```cpp
 typedef ULONG (CALLBACK * GET_OBJECT)(IDebugClient * client, SomeObject * obj);
 
 

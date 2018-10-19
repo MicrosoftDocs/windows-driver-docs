@@ -5,9 +5,6 @@ ms.assetid: d6247828-09ae-4071-9b4f-917af29265bc
 keywords: ["Bug Check 0xBE ATTEMPTED_WRITE_TO_READONLY_MEMORY", "ATTEMPTED_WRITE_TO_READONLY_MEMORY"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

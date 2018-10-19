@@ -11,11 +11,7 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , error injection
 - PSHED plug-ins WDK WHEA , error injection
 - error injection WDK WHEA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +26,7 @@ To participate in error information retrieval, a PSHED plug-in must implement th
 
 The following code example shows how to implement these callback functions.
 
-```
+```cpp
 //
 // The PSHED plug-in&#39;s GetInjectionCapabilities callback function
 //

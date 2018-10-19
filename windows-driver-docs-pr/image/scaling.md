@@ -9,11 +9,7 @@ api_name:
 - wscn Scaling wscn MustHonor ""
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **Scaling** element specifies the scaling of both the width and hei
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Scaling wscn:MustHonor=""
   MustHonor = "xs:string">
   child elements
@@ -112,7 +108,7 @@ The **Scaling** element must contain both the [**ScalingWidth**](scalingwidth.md
 
 The client can specify the optional **MustHonor** attribute only when the **Scaling** element is contained within a **CreateScanJobRequest** hierarchy. For more information about **MustHonor** and its usage, see [**CreateScanJobRequest**](createscanjobrequest.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)

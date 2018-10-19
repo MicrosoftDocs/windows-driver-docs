@@ -72,6 +72,22 @@ This version includes these updates.
 - Faster source window
 - Minor changes and bug fixes
 
+## 1.0.1807.11002 
+
+This version includes these updates.
+
+- Automatic saving and loading of breakpoints
+- Minor changes and bug fixes
+
+## 1.0.1810.2001 
+
+This version includes these updates.
+
+- New Settings dialog that is accessed from the File menu or the Home ribbon. 
+- Events and exceptions settings dialog
+- Improved TTD indexer with better performance
+- New *debugArch* launch flag for specifying architecture
+- Minor changes and bug fixes
 
 ---
  

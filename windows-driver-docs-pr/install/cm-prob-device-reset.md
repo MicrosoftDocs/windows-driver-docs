@@ -2,11 +2,7 @@
 title: CM_PROB_DEVICE_RESET
 description: CM_PROB_DEVICE_RESET
 ms.assetid: 6d536e79-66fa-495b-ad0b-1714a56450b2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -14,7 +10,7 @@ ms.localizationpriority: medium
 
 This function is reserved for system use.
 
-### Error
+## Error
 
 54
 
@@ -24,6 +20,4 @@ This function is reserved for system use.
 
 ### Recommended Resolution (Windows 10 and later versions of Windows)
 
-This is an intermittent problem code assigned while an ACPI reset method is being executed. If the device never restarts due to a failure, it will be stuck in this state and the system should be rebooted. 
-
-
+This is an intermittent problem code assigned while an ACPI reset method is being executed. If the device never restarts due to a failure, it will be stuck in this state and the system should be rebooted.

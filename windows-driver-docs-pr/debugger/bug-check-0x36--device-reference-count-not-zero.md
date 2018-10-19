@@ -5,9 +5,6 @@ ms.assetid: 8379d034-44fd-412a-8a2d-d234d41227ac
 keywords: ["Bug Check 0x36 DEVICE_REFERENCE_COUNT_NOT_ZERO", "DEVICE_REFERENCE_COUNT_NOT_ZERO"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

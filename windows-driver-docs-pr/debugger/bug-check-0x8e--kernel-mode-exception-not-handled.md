@@ -5,9 +5,6 @@ ms.assetid: 987ee868-5622-44e4-979c-3ae93a98b5b1
 keywords: ["Bug Check 0x8E KERNEL_MODE_EXCEPTION_NOT_HANDLED", "KERNEL_MODE_EXCEPTION_NOT_HANDLED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -98,7 +95,7 @@ If exception code 0x80000002 occurs, the trap frame supplies additional informat
 
 If you do not know the specific cause of the exception, consider the following items:
 
--   Hardware incompatibility. Make sure that any new hardware that is installed is compatible with the installed version of Windows. For example, you can get information about compatibility with Windows 7 at the [Windows 7 Compatibility Center](http://go.microsoft.com/fwlink/p/?LinkID=246806).
+-   Hardware incompatibility. Make sure that any new hardware that is installed is compatible with the installed version of Windows. For example, you can get information about compatibility with Windows 7 at the [Windows 7 Compatibility Center](https://go.microsoft.com/fwlink/p/?LinkID=246806).
 
 -   Faulty device driver or system service. A faulty device driver or system service might be responsible for this error. Hardware issues, such as BIOS incompatibilities, memory conflicts, and IRQ conflicts can also generate this error.
 

@@ -14,11 +14,7 @@ keywords:
 - DestinationDirs section WDK file system
 - Version section WDK file system
 - creating INF files WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -82,7 +78,7 @@ An INF file for a file system driver generally contains the following sections.
 
 The [**Version**](https://msdn.microsoft.com/library/windows/hardware/ff547502) section specifies the driver version information, as shown in the following code example.
 
-```
+```cpp
 [Version]
 Signature   = "$WINDOWS NT$"
 Provider    = %Msft%
@@ -131,7 +127,7 @@ The [**DestinationDirs**](https://msdn.microsoft.com/library/windows/hardware/ff
 
 In this section and in the **ServiceInstall** section, you can specify well-known system directories by using system-defined numeric values. For a list of these values, see [**INF DestinationDirs Section**](https://msdn.microsoft.com/library/windows/hardware/ff547383). In the following code example, the value "12" refers to the Drivers directory (%windir%\\system32\\drivers).
 
-```
+```cpp
 [DestinationDirs]
 DefaultDestDir = 12
 ExampleFileSystem.DriverFiles = 12
@@ -143,7 +139,7 @@ The [**SourceDisksNames**](https://msdn.microsoft.com/library/windows/hardware/f
 
 In the following code example, the [**SourceDisksNames**](https://msdn.microsoft.com/library/windows/hardware/ff547478) section lists a single distribution media for the file system driver. The unique identifier for the media is 1. The name of the media is specified by the %Disk1% token, which is defined in the **Strings** section of the INF file.
 
-```
+```cpp
 [SourceDisksNames]
 1 = %Disk1%
 ```
@@ -154,7 +150,7 @@ The [**SourceDisksFiles**](https://msdn.microsoft.com/library/windows/hardware/f
 
 In the following code example, the [**SourceDisksFiles**](https://msdn.microsoft.com/library/windows/hardware/ff547472) section lists the file to be copied for the file system driver and specifies that the files can be found on the media whose unique identifier is 1 (This identifier is defined in the [**SourceDisksNames**](https://msdn.microsoft.com/library/windows/hardware/ff547478) section of the INF file.)
 
-```
+```cpp
 [SourceDisksFiles]
 examplefilesystem.sys = 1
 ```
@@ -171,7 +167,7 @@ You can create a single INF file to install your driver on multiple versions of 
 
 In the following code example, the [**CopyFiles**](https://msdn.microsoft.com/library/windows/hardware/ff546346) directive copies the files that are listed in the ExampleFileSystem.DriverFiles section of the INF file.
 
-```
+```cpp
 [DefaultInstall]
 OptionDesc = %ServiceDesc%
 CopyFiles = ExampleFileSystem.DriverFiles
@@ -186,7 +182,7 @@ The [**DefaultInstall.Services**](https://msdn.microsoft.com/library/windows/har
 
 In the following code example, the [**AddService**](https://msdn.microsoft.com/library/windows/hardware/ff546326) directive adds the file system service to the operating system. The %ServiceName% token contains the service name string, which is defined in the **Strings** section of the INF file. ExampleFileSystem.Service is the name of the file system driver's **ServiceInstall** section.
 
-```
+```cpp
 [DefaultInstall.Services]
 AddService = %ServiceName%,,ExampleFileSystem.Service
 ```
@@ -197,7 +193,7 @@ The **ServiceInstall** section adds subkeys or value names to the registry and s
 
 The following code example shows the **ServiceInstall** section for the file system driver.
 
-```
+```cpp
 [ExampleFileSystem.Service]
 DisplayName    = %ServiceName%
 Description    = %ServiceDesc%
@@ -340,7 +336,7 @@ The [**AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/f
 
  
 
-```
+```cpp
 [ExampleFileSystem.AddRegistry]
 HKR,Parameters,ExampleParameter,0x00010003,1
 ```
@@ -351,7 +347,7 @@ The **DefaultUninstall** section is optional but recommended if your driver can 
 
 In the following code example, the [**DelFiles**](https://msdn.microsoft.com/library/windows/hardware/ff547363) directive removes the files that are listed in the ExampleFileSystem.DriverFiles section of the INF file.
 
-```
+```cpp
 [DefaultUninstall]
 DelFiles   = ExampleFileSystem.DriverFiles
 DelReg     = ExampleFileSystem.DelRegistry
@@ -365,7 +361,7 @@ The **DefaultUninstall.Services** section is optional but recommended if your dr
 
 In the following code example, the [**DelService**](https://msdn.microsoft.com/library/windows/hardware/ff547377) directive removes the file system driver's service from the operating system.
 
-```
+```cpp
 [DefaultUninstall.Services]
 DelService = %ServiceName%,0x200
 ```
@@ -384,7 +380,7 @@ The [**Strings**](https://msdn.microsoft.com/library/windows/hardware/ff547485) 
 
 For example, the file system driver defines the following strings in its INF file.
 
-```
+```cpp
 [Strings]
 Msft        = "Microsoft Corporation"
 ServiceDesc = "Example File System Driver"

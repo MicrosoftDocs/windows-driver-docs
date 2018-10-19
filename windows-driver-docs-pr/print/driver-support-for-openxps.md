@@ -3,11 +3,7 @@ title: Driver Support for OpenXPS
 author: windows-driver-content
 description: OpenXPS is the Open XML Paper Specification format for documents, and it’s based on the Ecma International standard specification.
 ms.assetid: 9BC9787E-A54D-4A11-B256-57BE5D206404
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -71,28 +67,28 @@ Here are some examples of how to update the DriverRender section.
 
 Indicating support for OpenXPS only:
 
-``` syntax
+```Manifest
 [DriverRender]
 XpsFormat = OpenXPS
 ```
 
 Indicating support for MSXPS only:
 
-``` syntax
+```Manifest
 [DriverRender]
 XpsFormat = XPS
 ```
 
 Indicating support for both formats, with a preference for OpenXPS:
 
-``` syntax
+```Manifest
 [DriverRender]
 XpsFormat = OpenXPS,XPS
 ```
 
 Indicating support for both formats, with a preference for MSXPS:
 
-``` syntax
+```Manifest
 [DriverRender]
 XpsFormat = XPS,OpenXPS
 ```
@@ -123,7 +119,7 @@ The print system makes various decisions based on the DriverRender information i
 
 Example:
 
-``` syntax
+```Manifest
 [FileSave]
 xps=0
 oxps=0
@@ -137,9 +133,9 @@ This will ensure that when the user sends a print job to this driver, and the po
 For additional information about other options for the File Save section of the manifest, see [V4 Driver Manifest](v4-driver-manifest.md).
 
 ## Related topics
-[App Support for OpenXPS Printing](http://msdn.microsoft.com/library/windows/desktop/dn495653.aspx)  
-[Open XML Paper Specification](http://www.ecma-international.org/publications/standards/Ecma-388.htm)  
+
+[App Support for OpenXPS Printing](https://docs.microsoft.com/windows/desktop/printdocs/app-support-for-openxps-printing)  
+
+[Open XML Paper Specification](http://www.ecma-international.org/publications/standards/Ecma-388.htm) 
+
 [V4 Driver Manifest](v4-driver-manifest.md)  
-
-
-

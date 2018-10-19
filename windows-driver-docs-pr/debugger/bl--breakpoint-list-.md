@@ -5,9 +5,6 @@ ms.assetid: 3e7c31d4-5c76-4609-91be-c6b0fc1cb292
 keywords: ["bl (Breakpoint List) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **bl** command lists information about existing breakpoints.
 
-```
+```dbgcmd
 bl [/L] [Breakpoints]
 ```
 
@@ -93,7 +90,7 @@ The following example shows the output of a **bl** command.
 
 Example
 
-```
+```dbgcmd
 0:000> bl
  0 e 010049e0     0001 (0001)  0:**** stst!main
 ```

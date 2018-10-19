@@ -3,11 +3,7 @@ title: Diagnosing problems running WDTF-based tests
 author: windows-driver-content
 description: To help you troubleshoot problems running WDTF-based test, you can use a debugger.
 ms.assetid: 24257B50-ED9C-4D45-A245-1EC855463D33
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -58,7 +54,7 @@ You can diagnose problems with these commands.
 [**!process**](https://msdn.microsoft.com/library/windows/hardware/ff564717) (to examine processes to locate associated threads)
 [**!thread**](https://msdn.microsoft.com/library/windows/hardware/ff565440) (to view information about threads)
 [**!wdfkd.wdfdevice**](https://msdn.microsoft.com/library/windows/hardware/ff565703) (for WDF driver information)
-After confirming that there are active PnP or power management threads that are stuck (examine TickCount for this), follow up with the right component owners. (You can locate the the component owners from looking at the stacks of the stuck threads).
+After confirming that there are active PnP or power management threads that are stuck (examine TickCount for this), follow up with the right component owners. (You can locate the component owners from looking at the stacks of the stuck threads).
 
  
 

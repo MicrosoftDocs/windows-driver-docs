@@ -3,11 +3,7 @@ title: OID_GEN_SUPPORTED_PACKET_FILTERS
 author: windows-driver-content
 description: NDIS and overlying drivers obtain the types of net packets that the miniport adapter can filter during initialization.
 ms.assetid: c19cecf3-ae47-4fd1-b5dc-1f3de469e548
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_SUPPORTED_PACKET_FILTERS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

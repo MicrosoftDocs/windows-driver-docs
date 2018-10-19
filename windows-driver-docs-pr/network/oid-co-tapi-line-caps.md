@@ -5,11 +5,7 @@ description: This topic describes the OID_CO_TAPI_LINE_CAPS object identifier (O
 ms.assetid: 82c2bcb4-fb58-4e14-b1d4-2bcc0c4fcd1d
 keywords:
 - OID_CO_TAPI_LINE_CAPS
-ms.author: windowsdriverdev
 ms.date: 11/03/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Obtaining Device Configuration Information at IRQL PASSIVE_LEVEL
 ms.assetid: 672fb3d8-6e64-425b-a035-8f8ecfd624f1
 keywords: ["I/O WDK kernel , device configuration space", "device configuration space WDK I/O", "configuration space WDK I/O", "space WDK I/O", "PASSIVE_LEVEL WDK", "driver stacks WDK configuration info"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ To access device configuration space at IRQL = PASSIVE\_LEVEL, you must use [**I
 
 The following code sample demonstrates how to access a device's configuration space.
 
-```
+```cpp
 NTSTATUS
 ReadWriteConfigSpace(
     IN PDEVICE_OBJECT  DeviceObject,

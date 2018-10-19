@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Introduction to Plug and Play
 ms.assetid: 2ad9663b-ea47-4f7a-a382-53de3719214b
 keywords: ["PnP WDK kernel , about Plug and Play", "Plug and Play WDK kernel , about Plug and Play"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

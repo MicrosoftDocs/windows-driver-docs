@@ -5,9 +5,6 @@ ms.assetid: cb9398fb-24f5-4692-9a08-543bf1317b19
 keywords: ["wudfext.wudfobject Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wudfext.wudfobject** extension displays information about a WDF object, as well as its parent and child relationships.
 
-```
+```dbgcmd
 !wudfext.wudfobject pWDFObject Flags TypeName
 ```
 
@@ -83,7 +80,7 @@ The **!wudfext.wudfobject** extension also displays the callback functions and c
 
 The following are some examples. In the first example, [**!wudfext.umdevstacks**](-wudfext-umdevstack.md) gives 0x03050E70 as the address of a device object, and this address is then passed to **!wudfext.wudfobject**. The 0x1 flag is included to display all the children of this object.
 
-```
+```dbgcmd
 0: kd> !umdevstacks 
 Number of device stacks: 1
   Device Stack: 0x038f6f08    Pdo Name: \Device\USBPDO-11
@@ -132,7 +129,7 @@ IWDFDevice 0x3050e70 Fx: 0x3050e30 [Ref 2]
 
 Here is an example of **!wudfext.wudfobject** displaying a file object:
 
-```
+```dbgcmd
 kd> !wudfobject 0xf5060 
 IWDFFile 0xf5060 Fx: 0xf4fe8 [Ref 1]
   State: Created   Parent: 0xf2f80
@@ -141,7 +138,7 @@ IWDFFile 0xf5060 Fx: 0xf4fe8 [Ref 1]
 
 Here is an example of **!wudfext.wudfobject** displaying a driver object:
 
-```
+```dbgcmd
 kd> !wudfobject 0xf2db8 0x01 
 IWDFDriver 0xf2db8 Fx: 0xf2d40 [Ref 2]
   Callback: (WUDFEchoDriver!CMyDriver, 0xf2c68)

@@ -5,9 +5,6 @@ ms.assetid: f454faef-bc28-43f1-b511-bcee0c12fc24
 keywords: ["Set Process Context (.process) command", "addresses, Set Process Context (.process) command", "context, Set Process Context (.process) command", "Process, Set Process Context (.process) command", ".process (Set Process Context) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.process** command specifies which process is used for the process context.
 
-```
+```dbgcmd
 .process [/i] [/p [/r]] [/P] [Process]
 ```
 
@@ -98,7 +95,7 @@ If you want to use the kernel debugger to set breakpoints in user space, use the
 
 The following example shows how to use the [**!process**](-process.md) extension to find the address of the EPROCESS block for the desired process.
 
-```
+```dbgcmd
 kd> !process 0 0
 **** NT ACTIVE PROCESS DUMP ****
 PROCESS fe5039e0  SessionId: 0  Cid: 0008    Peb: 00000000  ParentCid: 0000
@@ -114,21 +111,21 @@ PROCESS fe3c0d60  SessionId: 0  Cid: 0208    Peb: 7ffdf000  ParentCid: 00d4
 
 Now the example uses the **.process** command with this process address.
 
-```
+```dbgcmd
 kd> .process fe3c0d60
 Implicit process is now fe3c0d60
 ```
 
 Notice that this command makes the [**.context**](-context--set-user-mode-address-context-.md) command unnecessary. The user-mode address context already has the desired value.
 
-```
+```dbgcmd
 kd> .context 
 User-mode page directory base is 11f000
 ```
 
 This value enables you to examine the address space in various ways. For example, the following example shows the output of the [**!peb**](-peb.md) extension.
 
-```
+```dbgcmd
 kd> !peb
 PEB at 7FFDF000
     InheritedAddressSpace:    No

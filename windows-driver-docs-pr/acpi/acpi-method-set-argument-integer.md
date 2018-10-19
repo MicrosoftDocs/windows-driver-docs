@@ -5,11 +5,7 @@ description: The ACPI_METHOD_SET_ARGUMENT_INTEGER macro sets the members of an A
 ms.assetid: a79f9149-0ffe-483f-a45e-427b05ff0a11
 keywords: 
 - ACPI_METHOD_SET_ARGUMENT_INTEGER macro ACPI Devices
-ms.author: windowsdriverdev
-ms.date:
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ The ACPI\_METHOD\_SET\_ARGUMENT\_INTEGER macro sets the members of an [**ACPI\_M
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 void ACPI_METHOD_SET_ARGUMENT_INTEGER(
     MethodArgument,
     IntData

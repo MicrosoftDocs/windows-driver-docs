@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Device-Dedicated Threads
 ms.assetid: 2e11e2c9-aefd-4b7b-8d80-7eb1da9f7cce
 keywords: ["thread objects WDK kernel", "device-dedicated threads WDK kernel", "run-time priority inversions WDK kernel", "PsCreateSystemThread", "KeSetBasePriorityThread"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

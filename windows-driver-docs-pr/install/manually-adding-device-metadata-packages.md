@@ -2,11 +2,7 @@
 title: Manually Adding Device Metadata Packages
 description: Manually Adding Device Metadata Packages
 ms.assetid: 1d0cee1f-8aa7-4fa9-b3c7-797cd09a07f4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ Device metadata packages can be installed on a computer in the following ways:
 
 The following path shows the location of the [device metadata store](device-metadata-store.md):
 
-```
+```cpp
 %PROGRAMDATA%\Microsoft\Windows\DeviceMetadataStore
 ```
 
@@ -35,7 +31,7 @@ To copy device metadata packages to the [device metadata store](device-metadata-
 
     For example, if the locale of the package is EN-US, you must first create the following directory if it does not currently exist:
 
-    ```
+    ```cpp
     %PROGRAMDATA%\Microsoft\Windows\DeviceMetadataStore\EN-US
     ```
 

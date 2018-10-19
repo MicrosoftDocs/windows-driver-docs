@@ -3,11 +3,7 @@ title: OID_SWITCH_NIC_DELETE
 author: windows-driver-content
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID_SWITCH_NIC_DELETE to the extensible switch driver stack.
 ms.assetid: 7564EA39-09F5-45A3-81A0-F8DD2B23B639
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_SWITCH_NIC_DELETE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

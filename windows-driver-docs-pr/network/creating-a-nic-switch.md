@@ -2,11 +2,7 @@
 title: Creating a NIC Switch
 description: Creating a NIC Switch
 ms.assetid: 5A184EBD-95F4-4C11-AACD-49DF04578CA0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

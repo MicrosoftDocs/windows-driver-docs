@@ -3,11 +3,7 @@ title: OID_GEN_MEDIA_SUPPORTED
 author: windows-driver-content
 description: As a query, the OID_GEN_MEDIA_SUPPORTED OID specifies the media types that a NIC can support but not necessarily the media types that the NIC currently uses.
 ms.assetid: e7b8d2b1-4e84-416f-aeb3-75591ed44b22
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_MEDIA_SUPPORTED Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

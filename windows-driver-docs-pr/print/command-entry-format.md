@@ -6,11 +6,7 @@ ms.assetid: f2b14c12-3c34-45b2-9ead-8cd57d657e9e
 keywords:
 - printer commands WDK Unidrv , entry format
 - formats WDK printer commands
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,7 +35,7 @@ where *CommandName* is one of the predefined [command names](command-names.md), 
 
 For example, a GPD file might contain the following specification of the CmdStartPage command, which initializes a page for printing.
 
-```
+```cpp
 *Command: CmdStartPage
 {
     *Order: PAGE_SETUP.100
@@ -66,7 +62,7 @@ where *CommandString* is a text string representing a printer command escape seq
 
 For example, a GPD file might contain the following specification of the CmdBoldOn command, which turns on bold text:
 
-```
+```cpp
 *Command: CmdBoldOn: "<1B>(s3B"
 ```
 

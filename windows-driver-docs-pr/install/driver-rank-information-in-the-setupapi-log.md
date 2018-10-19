@@ -5,11 +5,7 @@ ms.assetid: 169a1963-3fb3-4254-9634-78034cda2924
 keywords:
 - SetupAPI logging WDK Windows Vista , driver rank information
 - signature indicators WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ Windows uses a signature indicator to represent the signature type. Windows save
 
 When Windows installs a driver, SetupAPI adds a *Rank* entry that logs the driver rank in hexadecimal format and a Signer Score entry that logs the signature type. The following is an excerpt from a SetupAPI device log that shows, in bold font style, an example of a Rank entry and an example of a Signer Score entry. In this excerpt, the Rank entry indicates that the driver has a rank of "0x0dff0000" and the Signer Score entry indicates that the driver is an inbox driver.
 
-```
+```cpp
      dvi:      Created Driver Node:
      dvi:           HardwareID   - ROOT\UPDATE
      dvi:           InfName      - D:\Windows\System32\DriverStore\FileRepository\machine.inf_36c3d8da\machine.inf

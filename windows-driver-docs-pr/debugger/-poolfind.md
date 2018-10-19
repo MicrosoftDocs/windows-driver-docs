@@ -5,9 +5,6 @@ ms.assetid: 01783b6b-0117-49ca-87ca-bbe3c1b0e730
 keywords: ["poolfind Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!poolfind** extension finds all instances of a specific pool tag in either nonpaged or paged memory pools.
 
-```
+```dbgcmd
 !poolfind TagString [PoolType] 
 !poolfind TagValue [PoolType] 
 ```
@@ -85,7 +82,7 @@ The pool tag is the same tag passed to the **ExAllocate***Xxx* family of routine
 
 Here is an example. The entire nonpaged pool is searched and then the paged pool is searched, but the command is terminated before completion (after an hour of operation):
 
-```
+```dbgcmd
 kd> !poolfind SeSd 0
 
 Scanning large pool allocation table for Tag: SeSd (827d1000 : 827e9000)

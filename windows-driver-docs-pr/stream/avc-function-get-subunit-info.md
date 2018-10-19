@@ -9,11 +9,7 @@ api_name:
 - AVC_FUNCTION_GET_SUBUNIT_INFO
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +29,7 @@ This function always sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
 
 This function uses the **Subunits** member of the AVC\_MULTIFUNC\_IRB structure as shown below.
 
-```
+```cpp
 typedef struct _AVC_MULTIFUNC_IRB {
   AVC_IRB  Common;
   union {

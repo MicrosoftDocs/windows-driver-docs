@@ -2,11 +2,7 @@
 title: BarcodeScannerImagePreviewReceived
 description: The BarcodeScannerImagePreviewReceived event occurs when the device receives a bitmap image of the scan.
 ms.assetid: 'ec05bffb-95e6-4d9c-b632-adee1cbd5bad'
-ms.author: windowsdriverdev
-ms.date: 9/7/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/07/2018
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +14,7 @@ The data buffer for this event is as follows.
 
 ## Syntax
 
-``` syntax
+```cpp
 typedef struct _PosEventDataHeader
 {
     // Event enumeration value

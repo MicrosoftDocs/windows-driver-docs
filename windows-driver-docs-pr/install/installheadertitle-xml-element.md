@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # installHeaderTitle XML Element
@@ -21,7 +22,7 @@ The **installHeaderTitle** XML element customizes the bold text of the installat
 
 ### Element Tag
 
-```
+```cpp
 <installHeaderTitle>
 ```
 
@@ -62,7 +63,7 @@ None
 
 The following code example demonstrates an **installHeaderTitle** element that customizes the title text of an installation page. The text that specifies the custom install header title is shown in bold font style.
 
-```
+```cpp
 <dpinst>
   ...
   <language code="0x0409">

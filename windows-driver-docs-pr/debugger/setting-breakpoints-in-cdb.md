@@ -4,9 +4,6 @@ description: Setting Breakpoints in CDB
 ms.assetid: 7FCD6540-6593-42CB-A148-8974F25F3886
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

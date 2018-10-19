@@ -5,9 +5,6 @@ ms.assetid: b094cf4b-1d01-4b84-9032-aa865d680df4
 keywords: ["logexts.logo Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!logexts.logo** extension sets or displays the Logger output options.
 
-```
+```dbgcmd
 !logexts.logo {e|d} {d|t|v} 
 !logexts.logo 
 ```

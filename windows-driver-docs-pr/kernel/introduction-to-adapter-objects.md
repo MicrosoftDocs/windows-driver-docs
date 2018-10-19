@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Introduction to Adapter Objects
 ms.assetid: a1a0d516-dee0-484a-b971-c7a595fef155
 keywords: ["AdapterControl routines, about AdapterControl routines", "DMA transfers WDK kernel , adapter objects", "adapter objects WDK kernel , about adapter objects"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

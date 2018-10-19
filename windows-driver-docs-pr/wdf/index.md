@@ -12,7 +12,7 @@ keywords:
 - objects WDK KMDF
 - framework objects WDK KMDF
 ms.author: windowsdriverdev
-ms.date: 04/06/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

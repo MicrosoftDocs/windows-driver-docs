@@ -10,11 +10,7 @@ api_name:
 - INF RenFiles Directive
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ ms.localizationpriority: medium
 
 A **RenFiles** directive references an INF-writer-defined section elsewhere in the INF file, which causes that list of files to be renamed in the context of operations on the section in which the referring **RenFiles** directive is specified.
 
-```
+```cpp
 [DDInstall] | 
 [DDInstall.CoInstallers] | 
 [ClassInstall32] | 
@@ -45,7 +41,7 @@ A **RenFiles** directive can be specified within any of the sections shown in th
 
 Each named section referenced by a **RenFiles** directive has one or more entries of the following form:
 
-```
+```cpp
 [file-list-section]
  
 new-dest-file-name,old-source-file-name 
@@ -88,7 +84,7 @@ Examples
 
 This example shows a section referenced by a **RenFiles** directive.
 
-```
+```cpp
 [RenameOldFilesSec]
 devfile41.sav, devfile41.sys
 ```

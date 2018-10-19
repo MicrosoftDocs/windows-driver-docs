@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Event Objects
 ms.assetid: da9df4a2-26cf-4861-80ca-1790ca059e45
 keywords: ["kernel dispatcher objects WDK , event objects", "dispatcher objects WDK kernel , event objects", "event objects WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

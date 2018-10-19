@@ -2,11 +2,7 @@
 title: Specifying Hardware IDs for a Multifunction Device
 description: Specifying Hardware IDs for a Multifunction Device
 ms.assetid: e45f7564-89a7-49c0-8011-69e5da3d5651
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ You can specify more than one [**HardwareID**](https://msdn.microsoft.com/librar
 
 For example, consider a single-function USB printer from the company Contoso, Ltd. The following **HardwareID** elements can be used to define the device:
 
-```
+```cpp
 <HardwareIDList>
   <HardwareID>DOID:USB\VID_1234&PID_1234&REV_0000</HardwareID>
   <HardwareID>DOID:USB\VID_1234&PID_1234</HardwareID>

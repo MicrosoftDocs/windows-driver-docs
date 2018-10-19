@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Introduction to WMI
 ms.assetid: 9ee0ecbb-05fc-42ab-8bad-7c647f30c82c
 keywords: ["WMI WDK kernel , about Windows Management Instrumentation"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

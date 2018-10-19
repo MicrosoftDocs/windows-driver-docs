@@ -5,9 +5,6 @@ ms.assetid: fc4eec45-2a28-4571-abf5-3896b77a52c9
 keywords: ["~m (Resume Thread) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +21,7 @@ The **~m** command resumes execution of the specified thread.
 
 Do not confuse this command with the [**m (Move Memory)**](m--move-memory-.md) command.
 
-```
+```dbgcmd
 ~Thread m 
 ```
 

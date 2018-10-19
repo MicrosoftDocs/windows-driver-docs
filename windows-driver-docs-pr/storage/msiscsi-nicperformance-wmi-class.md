@@ -3,6 +3,7 @@ title: MSiSCSI\_NICPerformance WMI Class
 description: MSiSCSI\_NICPerformance WMI Class
 ms.assetid: e5894b20-8ea7-46ec-9960-3d9891b06ac4
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_NICPerformance WMI Class
@@ -17,7 +18,7 @@ The initiator should implement one instance of the MSiSCSI\_NICPerformance class
 
 The MSiSCSI\_NICPerformance class is defined in *Iscsiprf.mof*.
 
-```
+```cpp
 class MSiSCSI_NICPerformance : Win32_PerfRawData {
   [key] string  InstanceName;
   boolean  Active;

@@ -3,6 +3,7 @@ title: MPIO\_REGISTERED\_DSM WMI Class
 description: MPIO\_REGISTERED\_DSM WMI Class
 ms.assetid: 3be335bd-e5d8-4611-9ccf-bd7fb0457b61
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MPIO\_REGISTERED\_DSM WMI Class
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 
 A WMI client uses the MPIO\_REGISTERED\_DSM WMI class to query all the DSMs that are configured in a system.
 
-```
+```cpp
 class MPIO_REGISTERED_DSM
 {
     [key, read]

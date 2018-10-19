@@ -9,11 +9,7 @@ api_name:
 - wscn BrightnessSupported
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **BrightnessSupported** element specifies whether the scan device s
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:BrightnessSupported>
   text
 </wscn:BrightnessSupported>
@@ -72,7 +68,7 @@ If the scan device allows user control of the scan brightness setting, the WSD S
 
 You cannot extend the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DeviceSettings**](devicesettings.md)

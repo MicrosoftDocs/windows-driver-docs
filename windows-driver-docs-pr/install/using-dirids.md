@@ -7,11 +7,7 @@ keywords:
 - INF files WDK device installations , directory identifiers
 - directory identifiers WDK INF files
 - directories WDK INF files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +29,7 @@ If you intend to use *dirids* in your INF file, consider the following two guide
 
     The following example demonstrates this syntax:
 
-    ```
+    ```cpp
     [DestinationDirs]
     DefaultDestDir = 11  ;  \system32 directory on Windows 2000 and later versions
     ```
@@ -46,7 +42,7 @@ If you intend to use *dirids* in your INF file, consider the following two guide
 
     The following example demonstrates this syntax:
 
-    ```
+    ```cpp
     [aic78xx_Service_Inst]
     ServiceBinary = %12%\aic78xx.sys
     ```
@@ -55,7 +51,7 @@ If you intend to use *dirids* in your INF file, consider the following two guide
 
     The two following examples show how string substitution should *not* be used.
 
-    ```
+    ```cpp
     [DestinationDirs]
     DefaultDestDir = %11%  ; Error! - number expected
 
@@ -100,7 +96,7 @@ The following table shows several commonly used *dirids*, and the directories th
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>13</strong></p></td>
-<td align="left"><p>Driver package's <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/install/driver-store">Driver Store</a> directory.</p>
+<td align="left"><p>Driver package's <a href="https://msdn.microsoft.com/windows/hardware/drivers/install/driver-store">Driver Store</a> directory.</p>
 <p>For Windows 8.1 and later versions of Windows, specifies the path to the Driver Store directory where the driver package was imported.
 
 Don't use [DelFiles](inf-delfiles-directive.md) on a file for which **DestinationDirs** includes *dirid* 13.

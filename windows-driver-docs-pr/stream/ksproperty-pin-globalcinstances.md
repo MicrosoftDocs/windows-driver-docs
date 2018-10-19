@@ -11,11 +11,7 @@ api_location:
 - ks.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -66,7 +62,7 @@ Specify this property using KSP\_PIN, where the **PinId** member specifies the p
 
 KSPIN\_CINSTANCES is a data structure of the form:
 
-```
+```cpp
 typedef struct {
     ULONG PossibleCount;
     ULONG CurrentCount;

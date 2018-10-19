@@ -7,11 +7,7 @@ keywords:
 - INF files WDK print , install sections
 - install sections WDK printer
 - sections WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -57,7 +53,7 @@ Microsoft's printer INF file, Ntprint.inf, contains the following [**INF DDInsta
 
 To reference these Install sections from your INF file, the file must use the Include and Needs directives, as illustrated in the following example:
 
-```
+```cpp
 [Manufacturer]
 "ABC Printers"
  

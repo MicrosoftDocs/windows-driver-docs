@@ -11,11 +11,7 @@ api_location:
 - N/A
 api_type:
 - COM
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -137,7 +133,7 @@ Note that the RenderMoComp function will be called without the display driver-su
 
 The following code provides an example of how you can implement your *ProcAmpControlQueryRange* function:
 
-```
+```cpp
 HRESULT
 DXVA_DeinterlaceContainerDeviceClass::ProcAmpControlQueryRange(
     DWORD VideoProperty,

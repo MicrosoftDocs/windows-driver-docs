@@ -2,11 +2,7 @@
 Description: Guidelines for hardware vendors and device manufacturers to prepare USB devices and host controllers for Windows Hardware Certification Program submission.
 title: USB-IF Certification Tests
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -71,7 +67,7 @@ You can submit USB devices for Windows Certification qualification to meet the n
 
     -   To submit a USB device to an authorized independent test lab for USB-IF certification, the manufacturer must register with the lab and have a valid vendor ID (VID).
 
-    After a device successfully passes the USB-IF certification tests, you you have the following privileges for the device:
+    After a device successfully passes the USB-IF certification tests, you have the following privileges for the device:
 
     -   You can use the USB logo for brochures, packaging, and product information for your device.
     -   You can be listed on the USB-IF Integrators List.

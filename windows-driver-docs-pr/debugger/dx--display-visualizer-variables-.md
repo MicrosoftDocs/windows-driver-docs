@@ -5,9 +5,6 @@ ms.assetid: 93047911-5195-4FB9-A015-5349084EDC0A
 keywords: ["dx (Display Debugger Object Model Expression) Windows Debugging"]
 ms.author: domars
 ms.date: 12/22/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

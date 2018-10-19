@@ -5,9 +5,6 @@ ms.assetid: f33a68e8-1ddc-4d49-bb22-8f8b097c8ada
 keywords: ["locks ( ntsdexts.locks) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +21,7 @@ The **!locks** extension in Ntsdexts.dll displays a list of critical sections as
 
 This extension command should not be confused with the [**!kdext\*.locks**](-locks---kdext--locks-.md) extension command.
 
-```
+```dbgcmd
     !locks [Options] 
 ```
 
@@ -72,7 +69,7 @@ This extension command shows all critical sections that have been initialized by
 
 Here is an example:
 
-```
+```dbgcmd
 0:000> !locks
 
 CritSec w3svc!g_pWamDictator+a0 at 68C2C298

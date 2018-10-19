@@ -7,11 +7,7 @@ keywords:
 - display drivers WDK Windows 2000 , pointers
 - pointers WDK Windows 2000 display
 - color pointers WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

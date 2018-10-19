@@ -3,11 +3,7 @@ title: 'REMOTE_NDIS_INDICATE_STATUS_MSG'
 author: windows-driver-content
 Description: 'This message is sent from a Remote NDIS device to a host to indicate a change in the status of the device.'
 ms.assetid: 768aad13-3da6-436c-a7ba-d420af34643e
-ms.author: windowsdriverdev
 ms.date: 07/31/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

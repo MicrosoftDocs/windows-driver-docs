@@ -5,9 +5,6 @@ ms.assetid: a9d82aa4-57de-4170-80fd-b7cd5b82f1e5
 keywords: ["processor control region (PCR)", "pcr Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!pcr** extension displays the current status of the Processor Control Region (PCR) on a specific processor.
 
-```
+```dbgcmd
 !pcr [Processor]
 ```
 
@@ -64,7 +61,7 @@ The processor control block (PRCB) is an extension of the PCR. It can be display
 
 Here is an example of the **!pcr** extension on an x86 target computer:
 
-```
+```dbgcmd
 kd> !pcr 0
 KPCR for Processor 0 at ffdff000:
     Major 1 Minor 1

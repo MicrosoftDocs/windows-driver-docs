@@ -5,9 +5,6 @@ ms.assetid: f7fbce79-456a-4643-ad31-8cb2e6449ecf
 keywords: ["zombies Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!zombies** extension displays all dead ("zombie") processes or threads.
 
-```
+```dbgcmd
 !zombies [Flags [RestartAddress]]
 ```
 

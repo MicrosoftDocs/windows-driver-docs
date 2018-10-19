@@ -4,9 +4,6 @@ description: Use these APIs to view and modify existing Windows driver submissio
 author: EliotSeattle
 ms.author: shganesh
 ms.date: 09/01/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -301,3 +298,5 @@ Use this method to resume a scheduled report.
 ## See also
 
 - [Analytics Reporting APIs (Swagger )](https://apidocs.microsoft.com/services/analyticsreportingapis)
+
+- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

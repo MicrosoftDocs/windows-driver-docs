@@ -2,11 +2,7 @@
 ms.assetid: 3FC63BAD-4B95-40AB-BFBE-88A3274B76E8
 title: How to run the HCK Test Suites in WDK 8.1
 description: To make testing Windows drivers easier in the WDK, starting with WDK 8.1 you can now select HCK test suites to run on the test computers.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ You can run the HCK test from a Command Prompt window or from Visual Studio. In 
 ## <span id="run_hck_from_vs"></span><span id="RUN_HCK_FROM_VS"></span>Running the HCK Test Suites on a test computer using Visual Studio
 
 
-If you have not already done so, follow the instructions in [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909). After you have configured a test computer, the name of the test computer appears in the toolbar. Be sure you have select the test computer that you have configured for device you are testing with the HCK Test Suite.
+If you have not already done so, follow the instructions in [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/Library/Windows/Hardware/Dn745909). After you have configured a test computer, the name of the test computer appears in the toolbar. Be sure you have select the test computer that you have configured for device you are testing with the HCK Test Suite.
 
 Prepare the test computer as needed, by installing the device and driver and any additional requirements for test topology (see the HCK test prerequisites for the device you are testing). In place of the HCK Studio and HCK controller, you run the tests using Visual Studio and WDK 8.1.
 
@@ -54,7 +50,7 @@ You can also copy one of the provided HCK Test Suites and export it, along with 
 1.  Open a Visual Studio Command Prompt window. Navigate to the %WindowsSdkDir%\\Testing\\Tests\\HCK Tests\\Basic directory. For example, C:\\Program Files (x86)\\Windows Kits\\8.1\\Testing\\Tests\\HCK Tests\\Basic
 2.  Run the **CopyMe.cmd** script and specify the name of test suite and destination directory. The script has the following syntax:
 
-    ```
+    ```cpp
     CopyMe.cmd testSuite destinationPath
     ```
 
@@ -74,7 +70,7 @@ You can also copy one of the provided HCK Test Suites and export it, along with 
 
     The *destinationPath* can be any valid path, including UNC paths. For example, you can copy an HCK Test Suite to a USB flash drive, or to a share on a server.
 
-    ```
+    ```cpp
     C:\Program Files (x86)\Windows Kits\8.1\Testing\Tests\HCK Tests\Basic>CopyMe "De
     vice.Device Fundamentals" d:\temp\devfund
     Copying test target setup installers
@@ -102,13 +98,13 @@ You can also copy one of the provided HCK Test Suites and export it, along with 
 
 2.  Run the **RunMe.cmd** script and specify the path and name of the INF file. The script has the following syntax:
 
-    ```
+    ```cpp
     RunMe.cmd infFileName
     ```
 
     For example:
 
-    ```
+    ```cpp
     RunMe.cmd myDriver.inf
     ```
 
@@ -309,7 +305,7 @@ Use this test suite to test Wireless LAN (802.11) devices. Follow the guidelines
 * [How to test a driver a runtime using Visual Studio](testing-a-driver-at-runtime.md)
 * [How to select and configure the Device Fundamentals Tests](how-to-select-and-configure-the-device-fundamental-tests.md)
 * [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
-* [Setting Up Kernel-Mode Debugging in Visual Studio](https://msdn.microsoft.com/en-us/windows/hardware/hh439376)
+* [Setting Up Kernel-Mode Debugging in Visual Studio](https://msdn.microsoft.com/windows/hardware/hh439376)
 * [Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016)
 * [Windows Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=254893)
 * [How to test a driver at runtime from a Command Prompt](how-to-test-a-driver-at-runtime-from-a-command-prompt.md)

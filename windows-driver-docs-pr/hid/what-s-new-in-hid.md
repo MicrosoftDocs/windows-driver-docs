@@ -4,11 +4,7 @@ author: windows-driver-content
 description: This topic summarizes the new features and improvements for Human Interface Devices (HID) in Windows 10.
 Search.SourceType: Video
 ms.assetid: AA8590B4-AAEA-4D41-972F-38149CE328E2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ The [Windows.Devices.HumanInterfaceDevice](https://msdn.microsoft.com/library/wi
 
 The following short video describes an end-to-end sample solution for HID that's available for download on the MSDN samples gallery. (This solution includes a sample app created using the new HID WinRT API.)
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/2d4da9fc-c2ea-4933-949d-eb0cff3c9c4e]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/2d4da9fc-c2ea-4933-949d-eb0cff3c9c4e]
 
 ## Design Guide
 

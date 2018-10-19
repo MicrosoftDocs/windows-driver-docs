@@ -5,9 +5,6 @@ description: Use this method in the Microsoft Store analytics API to download th
 title: Download the CAB file for an OEM hardware error
 ms.author: mcleans
 ms.date: 03/17/2017
-ms.topic: article
-ms.prod: windows
-ms.technology: uwp
 keywords: windows 10, uwp, Microsoft Store analytics API, download CAB
 ms.localizationpriority: medium
 ---
@@ -47,7 +44,7 @@ To use this method, you need to first do the following:
 
 | Method | Request URI                                                          |
 |--------|----------------------------------------------------------------------|
-| GET    | ```https://manage.devcenter.microsoft.com/v1.0/my/analytics/hardware/cabdownload``` |
+| GET    | `https://manage.devcenter.microsoft.com/v1.0/my/analytics/hardware/cabdownload` |
 
 
 ### Request header
@@ -79,5 +76,5 @@ This method returns a 302 (redirect) response code, and the **Location** header 
 
 ## Related topics
 
-* [Get OEM hardware error reporting data](get-oem-hardware-error-reporting-data.md)
-* [Get details for an OEM hardware error](get-details-for-an-oem-hardware-error.md)
+- [Get OEM hardware error reporting data](get-oem-hardware-error-reporting-data.md)
+- [Get details for an OEM hardware error](get-details-for-an-oem-hardware-error.md)

@@ -3,10 +3,7 @@ title: Example 15 Using Object Reference Tracing
 description: Example 15 Using Object Reference Tracing
 ms.assetid: 3c6102e6-4dac-4d90-ab8f-162dd6d8adf9
 ms.author: domars
-ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +30,7 @@ These examples show how to use Gflags to enable and disable object reference tra
 
 The following command enables Object Reference Tracing at the command prompt. The command uses the **/ko** parameter to enable Object Reference Tracing as a kernel flag (run time) setting. The command uses the **/t** parameter to specify the pool tags **Tag1** and **Fred**. As a result, all objects that are created with **Tag1** or **Fred** are traced.
 
-```
+```console
 gflags /ko /t Tag1;Fred
 ```
 
@@ -41,7 +38,7 @@ Because the command changes the kernel flag (run-time) settings, object referenc
 
 Gflags responds by printing the following message:
 
-```
+```console
 Running Kernel Settings :
 Object Ref Tracing Enabled
         Temporary Traces
@@ -57,7 +54,7 @@ The following command adds an Object Reference Tracing configuration to the regi
 
 The command uses the **/ro** parameter to enable Object Reference Tracing as a registry setting. The command uses the **/i** to specify the process for notepad.exe and the **/t** parameter to specify the pool tags **Tag1** and **Fred**. As a result, all objects that are created by the Notepad process with the **Tag1** or **Fred** pool tags are traced. The command also uses the **/p** parameter, which retains the trace data until the tracing is disabled.
 
-```
+```console
 gflags /ro /t Tag1;Fred /i Notepad.exe /p
 ```
 
@@ -65,7 +62,7 @@ When you submit the command, Gflags stores the information in the registry. Howe
 
 Gflags responds by printing the following message:
 
-```
+```console
 Boot Registry Settings :
 Object Ref Tracing Enabled
         Permanent Traces
@@ -83,11 +80,11 @@ In this example, there is one Object Reference Tracing configuration stored in t
 
 The following command displays the run time Object Reference Tracing configuration. It uses the **/ko** parameter with no other parameters.
 
-```
+```console
 gflags /ko
 ```
 
-```
+```console
 Running Kernel Settings :
 Object Ref Tracing Enabled
         Temporary Traces
@@ -99,13 +96,13 @@ If Object Reference Tracing is enabled, as it is in this example, the settings t
 
 The following command displays the Object Reference Tracing configuration data stored in the registry. It uses the **/ro** parameter with no other parameters.
 
-```
+```console
 gflags /ro
 ```
 
 In response, Gflags displays the data stored in the registry:
 
-```
+```console
 Boot Registry Settings :
 Object Ref Tracing Enabled
         Permanent Traces
@@ -121,13 +118,13 @@ When you disable run-time (kernel flag) Object Reference Tracing settings, the t
 
 The following command disables run-time Object Reference Tracing. It uses the **/d** parameter to disable all settings. You cannot disable settings selectively.
 
-```
+```console
 gflags /ko -d
 ```
 
 When the command succeeds, Gflags responds with the following message:
 
-```
+```console
 Running Kernel Settings :
 Object Ref Tracing Disabled
 ```
@@ -136,13 +133,13 @@ The following command disables run-time Object Reference Tracing.
 
 The following command disables Object Reference Tracing settings in the registry. It uses the **/d** parameter to disable all settings. You cannot disable settings selectively. This command is effective when you restart the computer.
 
-```
+```console
 gflags /ro -d
 ```
 
 When the command succeeds, Gflags responds with the following message:
 
-```
+```console
 Boot Registry Settings :
 Object Ref Tracing Disabled
 ```

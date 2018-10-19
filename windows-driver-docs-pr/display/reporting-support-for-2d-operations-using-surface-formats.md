@@ -7,11 +7,7 @@ keywords:
 - 2D operations WDK DirectX 9.0 , surface formats
 - surface formats WDK DirectX 9.0
 - surface formats WDK DirectX 9.0 , reporting support for 2D operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -4,11 +4,7 @@ description: OID_WWAN_UICC_RESET
 ms.assetid: D6654B8D-8700-437B-A944-BB273C7D31A1
 keywords:
 - MB UICC reset, Mobile Broadband UICC reset, Mobile Broadband miniport driver UICC reset
-ms.author: windowsdriverdev
 ms.date: 08/17/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

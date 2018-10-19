@@ -4,15 +4,12 @@ description: This document contains information about how to create or update sh
 author: balapv
 ms.author: balapv
 ms.date: 08/23/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 # Manage Shipping Labels
 
 Use the following methods to manage shipping labels for your Windows Hardware dashboard submissions. For an introduction to the Microsoft Hardware dashboard APIs, including the prerequisites for using the API, see [Hardware dashboard API](dashboard-api.md).
 
-```
+```cpp
 https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels
 ```
 
@@ -33,7 +30,7 @@ Methods for managing shipping labels
 
 4. [Create a new shipping label](create-a-new-shipping-label.md) for this submission by executing the following method.  Use the ProductID and SubmissionID created in [Manage product submissions](manage-product-submissions.md) during the previous step.
 
-    ```
+    ```cpp
     https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels
     ```
     The response body contains a [shipping label resource](get-shipping-labels.md#shippinglabel-resource) which includes the ID for the newly created shipping label and other details.
@@ -53,3 +50,7 @@ The Microsoft Hardware APIs methods for creating and managing product data use t
 ## Error codes
 
 For info about error codes, see [Error codes](get-product-data.md#error-codes).
+
+## See also
+
+- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

@@ -8,11 +8,7 @@ keywords:
 - data types WDK GDL , defining data types by using templates
 - defining data types WDK GDL
 - data type template WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,7 +35,7 @@ A template is designated as a *data type template* (one that defines a data type
 
 **\*ElementTags:** *list*. This directive defines a list of symbols to be used for element tags.
 
-**\*EnumeratorList:** *list*. This directive defines a list list of symbols to be used for an enumerator list.
+**\*EnumeratorList:** *list*. This directive defines a list of symbols to be used for an enumerator list.
 
 **\*XSDTypeDefinition:** *symbol*. This directive defines an arbitrary value, enclosed by &lt;Begin/EndValue&gt; elements, to be used for an XSD type definition.
 
@@ -65,13 +61,13 @@ In general, if no template can be bound to the GDL attribute entry, the value of
 
 For example, assume that the parser cannot find a template that describes the following GDL attribute entry.
 
-```
+```cpp
 *ModelName: "OEMName LaserJet "
 ```
 
 Then, the entry will appear in the snapshot as follows.
 
-```
+```cpp
     <GDL_ATTRIBUTE Name="*ModelName" 
         <![CDATA["OEMName LaserJet "]]></GDL_ATTRIBUTE>
 ```

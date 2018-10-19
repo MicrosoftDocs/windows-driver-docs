@@ -8,11 +8,7 @@ keywords:
 - UMDF WDK , version information
 - revision history WDK UMDF
 - version information WDK UMDF
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 10/02/2018
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: 9b008c76-65c8-4de4-b7a0-96d8732c7b7e
 keywords: ["Bug Check 0xF5 FLTMGR_FILE_SYSTEM", "FLTMGR_FILE_SYSTEM"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

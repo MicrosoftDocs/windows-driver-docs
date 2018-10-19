@@ -4,9 +4,6 @@ description: Use Debugging Tools for Windows to debug drivers, applications, and
 ms.assetid: F2111416-EC6C-4967-B123-9A6101040561
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,15 +20,15 @@ Use Debugging Tools for Windows to debug drivers, applications, and services on 
 ## <span id="Installing_Debugging_Tools_for_Windows"></span><span id="installing_debugging_tools_for_windows"></span><span id="INSTALLING_DEBUGGING_TOOLS_FOR_WINDOWS"></span>Installing Debugging Tools for Windows
 
 
--   [Download and Install Debugging Tools for Windows](http://msdn.microsoft.com/en-US/windows/hardware/gg463009)
+-   [Download and Install Debugging Tools for Windows](http://msdn.microsoft.com/windows/hardware/gg463009)
 
 ## <span id="Debugger_How-Tos"></span><span id="debugger_how-tos"></span><span id="DEBUGGER_HOW-TOS"></span>Debugger How-Tos
 
 
 -   [Advanced Driver Debugging: Part 1 \[media file\]](http://download.microsoft.com/download/B/1/6/B161948D-EDE1-4AEF-8776-AD485CDDCD9E/TDDR05003.wvx)
 -   [Advanced Driver Debugging: Part 2 \[media file\]](http://download.microsoft.com/download/B/1/6/B161948D-EDE1-4AEF-8776-AD485CDDCD9E/TDDR05004.wvx)
--   [Avoiding debugger searches for unneeded symbols](http://msdn.microsoft.com/en-US/library/windows/hardware/gg463239)
--   [Debugging Kernel-Mode Driver Framework Drivers](http://msdn.microsoft.com/en-US/library/windows/hardware/gg463020)
+-   [Avoiding debugger searches for unneeded symbols](http://msdn.microsoft.com/library/windows/hardware/gg463239)
+-   [Debugging Kernel-Mode Driver Framework Drivers](http://msdn.microsoft.com/library/windows/hardware/gg463020)
 -   [Debugging WDF Drivers](https://msdn.microsoft.com/library/windows/hardware/ff540790)
 -   [How to Enable Verbose Debug Tracing in Various Drivers and Subsystems](http://support.microsoft.com/default.aspx?scid=kb;en-us;q314743)
 -   [Debugging a Driver](https://msdn.microsoft.com/windows-drivers/develop/debugging_a_driver)
@@ -68,11 +65,11 @@ A number of [Knowledge Base articles](https://support.microsoft.com) are availab
 
 [DebugView Monitoring Tool](http://technet.microsoft.com/sysinternals/bb896647.aspx)
 
-[Driver Developer Community Resources](http://msdn.microsoft.com/en-US/windows/hardware/gg454517)
+[Driver Developer Community Resources](http://msdn.microsoft.com/windows/hardware/gg454517)
 
-[Driver Signing Requirements for Windows](http://msdn.microsoft.com/en-US/library/windows/hardware/gg487317)
+[Driver Signing Requirements for Windows](http://msdn.microsoft.com/library/windows/hardware/gg487317)
 
-[Support for Developer Kits and Tools](http://msdn.microsoft.com/en-US/windows/hardware/gg454528)
+[Support for Developer Kits and Tools](http://msdn.microsoft.com/windows/hardware/gg454528)
 
  
 

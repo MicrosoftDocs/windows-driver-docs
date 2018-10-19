@@ -3,11 +3,7 @@ title: Code Example for Challenging a Potentially Disconnected Device
 author: windows-driver-content
 description: Code Example for Challenging a Potentially Disconnected Device
 ms.assetid: 74633481-229f-4074-a84e-cc515eaaacd0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +14,7 @@ ms.localizationpriority: medium
 
 The following code example shows a call to the **RegisterDeviceToChallenge** function (which is listed in the code example in [Sample Code for Implementing Helper Methods](code-example-for-implementing-helper-methods.md)) to challenge a potentially disconnected device.
 
-```
+```cpp
 HRESULT hr = S_OK;
 
 if (SUCCEEDED(hr))

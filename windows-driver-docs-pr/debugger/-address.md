@@ -5,9 +5,6 @@ ms.assetid: 9bbde680-8523-4db2-bb7e-fdacdaf1aa89
 keywords: ["address Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -398,7 +395,7 @@ The following example uses the [**s (Search Memory)**](s--search-memory-.md) com
 . . .
 ```
 
-In kernel mode, the output of **!address** is similar to the user mode output but contains less information. The following example example shows the kernel mode output.
+In kernel mode, the output of **!address** is similar to the user mode output but contains less information. The following example shows the kernel mode output.
 
 ```console
 kd> !address

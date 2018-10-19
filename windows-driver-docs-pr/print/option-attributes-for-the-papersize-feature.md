@@ -5,11 +5,7 @@ description: Option Attributes for the PaperSize Feature
 ms.assetid: cfd82bc5-b89b-41c2-b542-28cb5905e37a
 keywords:
 - PaperSize Feature
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -159,7 +155,7 @@ Within the expression's **StandardVariableExpression** segment, the following re
 
 Following are example expressions:
 
-```
+```cpp
 *CustCursorOriginX: %d{((PhysPaperWidth-14040)/2)+300}
 *CustCursorOriginY: %d{180}
 *CustPrintableOriginX: %d{300}

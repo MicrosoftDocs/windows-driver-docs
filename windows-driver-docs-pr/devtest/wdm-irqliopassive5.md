@@ -2,11 +2,7 @@
 title: IrqlIoPassive5 rule (wdm)
 description: The IrqlIoPassive5 rule specifies that the driver calls specific I/O Manager routines only when it is executing at IRQL�  PASSIVE\_LEVEL.
 ms.assetid: 07037cf2-37eb-4045-9588-ac10e79b9c5c
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["IrqlIoPassive5 rule (wdm)"]
 topic_type:
 - apiref

@@ -6,11 +6,7 @@ ms.assetid: 897072bb-e481-4c8d-a2bf-57b19c69ac0e
 keywords:
 - INF files WDK print , entries
 - dependent files WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -111,7 +107,7 @@ For Windows 2000 and later, a dependent file is a printer driver file that is in
 
 The following example shows excerpts from an INF file that installs three dependent files by copying them to the printer-driver directory (that is, to the directory specified by dirid 66000):
 
-```
+```cpp
 [Contoso]
 %PRINTER_MODEL_123%=Contoso_Install_Section,LPTENUM\Contoso_1284.4_P29C5
 ...

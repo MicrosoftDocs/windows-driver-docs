@@ -8,11 +8,7 @@ keywords:
 - render modules WDK XPSDrv , Print Tickets
 - Print Tickets WDK , XPSDrv printer drivers
 - merging Print Ticket objects
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +25,7 @@ Each of the Print Ticket levels in the hierarchy has a different scope. The prin
 
 As the document parts are read by the filter, the Print Ticket objects are read, merged and validated and cached by the filter for configuring how the filter will process each document part. The previous diagram illustrates how the different Print Ticket levels are logically merged and the pseudo code below illustrates how this merge might be implemented.
 
-```
+```cpp
 class Filter
 {
  PrintTicket Saved_FDS_PT;

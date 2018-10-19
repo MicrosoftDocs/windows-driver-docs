@@ -5,9 +5,6 @@ ms.assetid: 128cbea1-5fb5-4685-8587-f814f94cc658
 keywords: [".readmem (Read Memory from File) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.readmem** command reads raw binary data from the specified file and copies the data to the target computer's memory.
 
-```
+```dbgcmd
 .readmem FileName Range 
 ```
 

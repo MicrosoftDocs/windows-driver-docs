@@ -8,11 +8,7 @@ keywords:
 - transferring data WDK NetDMA , installing provider drivers
 - NetDMA WDK networking , installing provider drivers
 - NetDMA p
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +28,7 @@ During the boot process, the Plug and Play (PnP) manager detects a dynamic memor
 
 Set the **Class** INF file entry to **System** in the DMA engine INF file. The following example shows a sample **Class** entry for the INF file.
 
-```
+```cpp
 Class = System
 ```
 

@@ -5,9 +5,6 @@ ms.assetid: 9596eea9-d19e-4e67-b7a3-0d6b7fd34f17
 keywords: ["Bug Check 0x52 MAILSLOT_FILE_SYSTEM", "MAILSLOT_FILE_SYSTEM"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -2,11 +2,7 @@
 title: Submit a PC device manifest package
 description: Submit a PC device manifest package
 ms.assetid: b96b02b8-8804-403e-9513-7a5d1b730fcd
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -121,7 +117,7 @@ N .\PCFiles\ GUID.devicemanifest-ms
 .\PcPackages\LocaleInfo.xml
 ```
 
-You can find more information about this tool in in the [Cabarc Overview](http://go.microsoft.com/fwlink/p/?LinkId=248843).
+You can find more information about this tool in the [Cabarc Overview](http://go.microsoft.com/fwlink/p/?LinkId=248843).
 
 ## <span id="creating_pcmetadatasubmission.xml"></span><span id="CREATING_PCMETADATASUBMISSION.XML"></span>Creating PcMetadataSubmission.xml
 

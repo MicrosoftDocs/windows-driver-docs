@@ -5,9 +5,6 @@ ms.assetid: d070f5ba-97c0-47f8-869f-54a3d3395476
 keywords: ["wudfext.wudfdevice Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wudfext.wudfdevice** extension displays the Plug and Play (PnP) and power-management state systems for a device.
 
-```
+```dbgcmd
 !wudfext.wudfdevice pWDFDevice
 ```
 
@@ -64,7 +61,7 @@ You can use the **!wudfext.wudfdevice** extension to determine the current PnP o
 
 The following is an example of the **!wudfext.wudfdevice** display:
 
-```
+```dbgcmd
 kd> !wudfdevice 0xf2f80 
 Pnp Driver Callbacks:
   IPnpCallback: 0x0

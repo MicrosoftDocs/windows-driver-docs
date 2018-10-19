@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Creating IRPs for Lower-Level Drivers
 ms.assetid: 2d298eb1-6169-4742-80c1-200223a2d4fa
 keywords: ["IRPs WDK kernel , creating", "asynchronous requests WDK IRPs", "IRPs WDK kernel , asynchronous requests"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

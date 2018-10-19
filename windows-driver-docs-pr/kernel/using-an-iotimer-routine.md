@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Using an IoTimer Routine
 ms.assetid: 9de2d2ec-31c5-4a60-96bf-5da067d2d9db
 keywords: ["IoTimer"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -3,11 +3,7 @@ title: Provided WDTF Simple I/O plug-ins
 author: windows-driver-content
 description: Simple I/O plug-ins are extensions to the Windows Driver Test Framework (WDTF) that implement generic device-specific I/O functionality.
 ms.assetid: 948E8CF5-24A1-4A7C-BD18-374F989AD053
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -295,7 +291,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 **Type of I/O plug-in performs:**
 
--   Creates a directory called WDTF\_Volume\_IO and creates a file called SimpleIO.tmp. The I/O is performed by calling [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467) and [**WriteFile**](https://msdn.microsoft.com/en-us/library/aa365747) APIs to this file.
+-   Creates a directory called WDTF\_Volume\_IO and creates a file called SimpleIO.tmp. The I/O is performed by calling [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467) and [**WriteFile**](https://msdn.microsoft.com/library/aa365747) APIs to this file.
 
 **How to triage test failures:**
 

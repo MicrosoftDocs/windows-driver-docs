@@ -8,11 +8,7 @@ keywords:
 - queue-specific files WDK printer
 - print queues WDK , Point and Print
 - queues WDK printer , Point and Print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -74,7 +70,7 @@ As an example, suppose that an HP Color LaserJet printer is installed on a print
 
 An installation application would call the ICM API function **AssociateColorProfileWithDevice**, which in turn calls **SetPrinterDataEx** to create the following server registry entries:
 
-```
+```cpp
 CopyFiles\ICM\Directory: Color
 CopyFiles\ICM\Files: hpclrsr.icm
 CopyFiles\ICM\Module: mscms.dll

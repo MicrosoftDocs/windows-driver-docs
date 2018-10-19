@@ -5,9 +5,6 @@ ms.assetid: 8cc42643-e231-49dd-96b0-6cb528d5d7a9
 keywords: ["Blue Screen Data Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -20,7 +17,7 @@ ms.localizationpriority: medium
 # Blue Screen Data
 
 
-**Note**  This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://go.microsoft.com/fwlink/p/?linkid=183646).
+**Note**  This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://go.microsoft.com/fwlink/p/?linkid=183646).
 
  
 
@@ -67,7 +64,7 @@ There are multiple ways to gather the four stop code parameters.
 
 -   Attach a kernel debugger to the faulting PC. When the stop code occurs, the debugger output will include the four parameters after the stop code hex value.
 
-    ```
+    ```dbgcmd
     *******************************************************************************
     *                                                                             *
     *                        Bugcheck Analysis                                    *
@@ -142,7 +139,7 @@ For general troubleshooting of Windows bug check codes, follow these suggestions
 -   Use the scan disk utility to confirm that there are no file system errors. Right click on the drive you want to scan and select **Properties**. Click on **Tools**. Click the **Check now** button.
 -   Use the System File Checker tool to repair missing or corrupted system files. The System File Checker is a utility in Windows that allows users to scan for corruptions in Windows system files and restore corrupted files. Use the following command to run the System File Checker tool (SFC.exe).
 
-    ```
+    ```console
     SFC /scannow
     ```
 

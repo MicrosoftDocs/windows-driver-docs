@@ -3,11 +3,7 @@ title: Writing a location sensor driver for Windows 8.1
 author: windows-driver-content
 description: Writing a location sensor driver for Windows 8.1
 ms.assetid: 18852282-6529-4934-a448-b699e01987de
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,7 +48,7 @@ The rest of this section describes these minimum requirements
 
 When it is called through [**ISensorDriver::OnGetProperties**](https://msdn.microsoft.com/library/windows/hardware/ff545610), set the **WPD\_FUNCTIONAL\_OBJECT\_CATEGORY** property value to **SENSOR\_CATEGORY\_LOCATION**. The following code example shows how to set this constant through a pointer to [IPortableDeviceValues](http://go.microsoft.com/fwlink/p/?linkid=131486) named pValues.
 
-```ManagedCPlusPlus
+```cpp
 hr = pValues->SetGuidValue(WPD_FUNCTIONAL_OBJECT_CATEGORY, SENSOR_CATEGORY_LOCATION);
 ```
 
@@ -60,7 +56,7 @@ hr = pValues->SetGuidValue(WPD_FUNCTIONAL_OBJECT_CATEGORY, SENSOR_CATEGORY_LOCAT
 
 When it is called through [**ISensorDriver::OnGetProperties**](https://msdn.microsoft.com/library/windows/hardware/ff545610), set the **SENSOR\_PROPERTY\_TYPE** property value to the correct value. The following code example shows how to set the sensor type by using the **SENSOR\_TYPE\_LOCATION\_GPS** constant through a pointer to [IPortableDeviceValues](http://go.microsoft.com/fwlink/p/?linkid=131486) named pValues.
 
-```ManagedCPlusPlus
+```cpp
 hr = pValues->SetGuidValue(SENSOR_PROPERTY_TYPE, SENSOR_TYPE_LOCATION_GPS);
 ```
 
@@ -82,7 +78,7 @@ To support a civic address report, at least one of the following data fields is 
 
 When they are called through [**ISensorDriver::OnGetSupportedDataFields**](https://msdn.microsoft.com/library/windows/hardware/ff545620), add the supported data field property key constants to the [IPortableDeviceKeyCollection](http://go.microsoft.com/fwlink/p/?linkid=131484) that you return through the *ppSupportedDataFields* parameter. The following code example shows how to add the postal code data field to [IPortableDeviceKeyCollection](http://go.microsoft.com/fwlink/p/?linkid=131484) through a variable named pKeyCollection.
 
-```ManagedCPlusPlus
+```cpp
 pKeyCollection->Add(SENSOR_DATA_TYPE_POSTALCODE);
 ```
 

@@ -7,11 +7,7 @@ keywords:
 - loading drivers WDK display
 - ICD WDK display
 - installable client driver WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +29,7 @@ The OpenGL runtime accesses the registry to determine which OpenGL installable c
 
 To locate the name of the OpenGL ICD, [**D3DKMTQueryAdapterInfo**](https://msdn.microsoft.com/library/windows/hardware/ff547100) searches the registry in the following key:
 
-```
+```cpp
 HKLM/System/CurrentControlSet/Control/Class/{Adapter GUID}/0000/
 ```
 

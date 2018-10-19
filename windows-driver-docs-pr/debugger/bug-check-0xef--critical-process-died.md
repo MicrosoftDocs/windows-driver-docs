@@ -5,9 +5,6 @@ ms.assetid: caa18221-6128-4d77-ab61-ef3c28cfba38
 keywords: ["(Developer Content) Bug Check 0xEF CRITICAL_PROCESS_DIED", "CRITICAL_PROCESS_DIED"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -23,7 +20,7 @@ This indicates that a critical system process died. A critical process is one th
 
 Built in Windows critical system services include csrss.exe, wininit.exe, logonui.exe, smss.exe, services.exe, conhost.exe, and winlogon.exe. 
 
-A developer can also create a service and set its recovery option to Restart the Computer for more information see [Set up Recovery Actions to Take Place When a Service Fails](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753662(v=ws.11)).
+A developer can also create a service and set its recovery option to Restart the Computer for more information see [Set up Recovery Actions to Take Place When a Service Fails](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753662(v=ws.11)).
 
 
 **Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).

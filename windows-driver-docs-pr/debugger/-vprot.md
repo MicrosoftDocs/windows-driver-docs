@@ -5,9 +5,6 @@ ms.assetid: 7ee863ef-abfd-4ee7-9bac-34472e60f3fa
 keywords: ["memory, memory protection", "vprot Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!vprot** extension displays virtual memory protection information.
 
-```
+```dbgcmd
 !vprot [Address]
 ```
 
@@ -66,7 +63,7 @@ The **!vprot** extension command can be used for both live debugging and dump fi
 
 Here is an example:
 
-```
+```dbgcmd
 0:000> !vprot 30c191c
 BaseAddress: 030c1000
 AllocationBase: 030c0000

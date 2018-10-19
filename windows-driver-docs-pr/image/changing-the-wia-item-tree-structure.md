@@ -3,11 +3,7 @@ title: Changing the WIA Item Tree Structure
 author: windows-driver-content
 description: Changing the WIA Item Tree Structure
 ms.assetid: fa6c9d25-4435-43ee-a262-9e267b9a0a69
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,7 +33,7 @@ Because the WIA service verifies these criteria, it is not necessary for the WIA
 
 The following code example shows an implementation of **IWiaMiniDrv::drvDeleteItem**:
 
-```
+```cpp
 HRESULT _stdcall CWIADevice::drvDeleteItem(BYTE *pWiasContext,
                                            LONG lFlags,
                                            LONG *plDevErrVal)
@@ -60,7 +56,7 @@ HRESULT _stdcall CWIADevice::drvDeleteItem(BYTE *pWiasContext,
     // Two pieces of information are needed to queue an event:
     // 1. Full item name
     // 2. Device ID (passed in from drvInitializeWia,
-    //    or read from the ROOT item&#39;s property set)
+    //    or read from the ROOT item's property set)
     //
 
     BSTR bstrFullItemName = NULL;
@@ -83,7 +79,7 @@ HRESULT _stdcall CWIADevice::drvDeleteItem(BYTE *pWiasContext,
         }
 
         //
-        // Free item&#39;s full item name, read above.
+        // Free item's full item name, read above.
         //
 
         if (bstrFullItemName)

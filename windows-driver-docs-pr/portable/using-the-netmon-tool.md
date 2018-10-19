@@ -1,11 +1,7 @@
 ---
 Description: The Network Monitor tool (NetMon.exe) is a Windows-based application that you can use to view traces from WPD components.
 title: Using the Network Monitor Tool
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -96,7 +92,7 @@ The following image shows a WPDAPI request at API level. The request travels thr
 
 ![viewing traces](images/framedetails1.png)
 
--   You can click to expand the items and see that the **Frame Details** window displays WPD/MTP friendly messages. The convention followed when writing the WPD parsers is that you will be able to see summary of the details at the header level. For example, in a GetServiceCapabilities call, the **DataSetOfDataPhase** field shows next it it, the number of formats in that dataset.
+-   You can click to expand the items and see that the **Frame Details** window displays WPD/MTP friendly messages. The convention followed when writing the WPD parsers is that you will be able to see summary of the details at the header level. For example, in a GetServiceCapabilities call, the **DataSetOfDataPhase** field shows next to it, the number of formats in that dataset.
 -   You can remove the **Source** and **Destination** columns in the **Frame Summary** window to improve clarity
 -   When you click on a field in **Frame Details** window, the corresponding value is highlighted in the **Hex Details** window.
 

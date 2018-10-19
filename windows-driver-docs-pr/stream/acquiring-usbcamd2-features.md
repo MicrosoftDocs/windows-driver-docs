@@ -11,11 +11,7 @@ keywords:
 - USB-based streaming cameras WDK USBCAMD2
 - cameras WDK USBCAMD2
 - IRP_MN_QUERY_INTERFACE
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ You must acquire a pointer to the [**USBCAMD\_INTERFACE**](https://msdn.microsof
 
 The following code demonstrates how to build and send the IRP\_MN\_QUERY\_INTERFACE request from the camera minidriver:
 
-```
+```cpp
 KeInitializeEvent(&Event, NotificationEvent, FALSE);
 Irp = IoBuildSynchronousFsdRequest(
     IRP_MJ_PNP,

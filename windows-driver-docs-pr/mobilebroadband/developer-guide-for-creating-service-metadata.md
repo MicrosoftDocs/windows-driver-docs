@@ -2,11 +2,7 @@
 title: Developer guide for creating service metadata
 description: Developer guide for creating service metadata
 ms.assetid: 2d250bce-2dd2-4bd8-aa0f-432dde7783e1
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +27,7 @@ To create a successful service metadata package, you must complete the steps inc
 
 ### <span id="Register_your_company_with_the_Windows_Dev_Center_hardware_dashboard"></span><span id="register_your_company_with_the_windows_dev_center_hardware_dashboard"></span><span id="REGISTER_YOUR_COMPANY_WITH_THE_WINDOWS_DEV_CENTER_HARDWARE_DASHBOARD"></span>Register your company with the Windows Dev Center hardware dashboard
 
--   Your company has an active account on the Windows Dev Center hardware dashboard. If your company does not have an account on the Windows Dev Center hardware dashboard, you can create a new account and add your user account to you company. For more info, see [Administration](https://msdn.microsoft.com/library/windows/hardware/mt786447) in the Widows Dev Center hardware dashboard help.
+-   Your company has an active account on the Windows Dev Center hardware dashboard. If your company does not have an account on the Windows Dev Center hardware dashboard, you can create a new account and add your user account to you company. For more info, see [Administration](https://msdn.microsoft.com/library/windows/hardware/mt786447) in the Windows Dev Center hardware dashboard help.
 
 -   Your company has a VeriSign code signing certificate to sign the packages.
 

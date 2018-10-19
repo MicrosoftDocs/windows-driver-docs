@@ -5,11 +5,7 @@ description: This topic describes the OID_OFFLOAD_ENCAPSULATION object identifie
 ms.assetid: 8B5BE43C-1004-427A-B16D-5A2AA34C96CD
 keywords:
 - OID_OFFLOAD_ENCAPSULATION, WDK OIDs, WDK networking object identifiers, WDK networking OIDs
-ms.author: windowsdriverdev
 ms.date: 11/01/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

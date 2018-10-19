@@ -2,11 +2,7 @@
 title: Destination Parameter Token
 description: Destination Parameter Token
 ms.assetid: 1a9842c5-0ea9-47ee-a341-77e705ab5e25
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

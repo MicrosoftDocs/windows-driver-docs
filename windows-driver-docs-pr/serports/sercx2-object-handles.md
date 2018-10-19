@@ -2,9 +2,8 @@
 title: SerCx2 Object Handles
 author: windows-driver-content
 description: This topic describes object handle types that are specifically defined for version 2 of the serial framework extension (SerCx2). 
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # SerCx2 Object Handles
@@ -13,7 +12,7 @@ This topic describes object handle types that are specifically defined for versi
 The SerCx2 device driver interface (DDI) uses these handle types to refer to objects that have features and capabilities that are specific to SerCx2.
 
 Additionally, the SerCx2 DDI uses two of the generic object handle types, WDFDEVICE and WDFREQUEST, that are defined by the Kernel-Mode Driver Framework (KMDF). 
-For more information about framework handle types, see [Summary of Framework Objects](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/summary-of-framework-objects).
+For more information about framework handle types, see [Summary of Framework Objects](https://docs.microsoft.com/windows-hardware/drivers/wdf/summary-of-framework-objects).
 
 This topic describes the following object handles:
 
@@ -59,7 +58,7 @@ SerCx2 uses this object to manage I/O transactions that use a custom data-transf
 This object is opaque to serial controller drivers. 
 [SerCx2CustomReceiveTransactionCreate](https://msdn.microsoft.com/library/windows/hardware/dn265251) supplies, as an output parameter, a SERCX2CUSTOMRECEIVETRANSACTION handle to the newly created custom-receive-transaction object. 
 SerCx2 and the serial controller driver use this handle to refer to the object in subsequent custom-receive transactions. 
-For more information, see [SerCx2 Custom-Receive Transactions](https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/sercx2-custom-receive-transactions).
+For more information, see [SerCx2 Custom-Receive Transactions](https://docs.microsoft.com/windows-hardware/drivers/serports/sercx2-custom-receive-transactions).
 
 After [SerCx2CustomReceiveTransactionCreate](https://msdn.microsoft.com/library/windows/hardware/dn265251) creates the custom-receive-transaction object, this object exists for the lifetime of the framework device object that represents the serial controller device. 
 The custom-receive-transaction object is automatically deleted when the device object is deleted. 
@@ -105,7 +104,7 @@ SerCx2 uses this object to manage I/O transactions that use a custom data-transf
 This object is opaque to serial controller drivers. 
 [SerCx2CustomTransmitTransactionCreate](https://msdn.microsoft.com/library/windows/hardware/dn265259) supplies, as an output parameter, a SERCX2CUSTOMTRANSMITTRANSACTION handle to the newly created custom-transmit-transaction object. 
 SerCx2 and the serial controller driver use this handle to refer to the object in subsequent custom-transmit transactions. 
-For more information, see [SerCx2 Custom-Transmit Transactions](https://msdn.microsoft.com/en-us/library/windows/hardware/dn265320).
+For more information, see [SerCx2 Custom-Transmit Transactions](https://msdn.microsoft.com/library/windows/hardware/dn265320).
 
 After [SerCx2CustomTransmitTransactionCreate](https://msdn.microsoft.com/library/windows/hardware/dn265259) creates the custom-transmit-transaction object, this object exists for the lifetime of the framework device object that represents the serial controller device. 
 The custom-transmit-transaction object is automatically deleted when the device object is deleted. 
@@ -125,14 +124,14 @@ Despite the similar lifetimes of custom-transmit and custom-transmit-transaction
 ##  SERCX2PIORECEIVE Object Handle
 A SERCX2PIORECEIVE object handle is an opaque reference to a PIO-receive object in version 2 of the serial framework extension (SerCx2).
 
-The [SerCx2PioReceiveCreate](https://msdn.microsoft.com/en-us/library/windows/hardware/dn265264) method creates a PIO-receive object. 
+The [SerCx2PioReceiveCreate](https://msdn.microsoft.com/library/windows/hardware/dn265264) method creates a PIO-receive object. 
 SerCx2 uses object to manage programmed I/O (PIO) transactions that read data from the serial controller. 
 This object is opaque to serial controller drivers. 
  supplies, as an output parameter, a SERCX2PIORECEIVE handle to the newly created PIO-receive object. 
 SerCx2 and the serial controller driver use this handle to refer to the object in subsequent PIO-receive transactions. 
 
-For more information, see [SerCx2 PIO-Receive Transactions](https://msdn.microsoft.com/en-us/library/windows/hardware/dn265332).
-After [SerCx2PioReceiveCreate](https://msdn.microsoft.com/en-us/library/windows/hardware/dn265264) creates the PIO-receive object, this object exists for the lifetime of the framework device object that represents the serial controller device. 
+For more information, see [SerCx2 PIO-Receive Transactions](https://msdn.microsoft.com/library/windows/hardware/dn265332).
+After [SerCx2PioReceiveCreate](https://msdn.microsoft.com/library/windows/hardware/dn265264) creates the PIO-receive object, this object exists for the lifetime of the framework device object that represents the serial controller device. 
 The PIO-receive object is automatically deleted when the device object is deleted. 
 The serial controller driver must _not_ try to delete the PIO-receive object by calling a method such as [WdfObjectDelete](https://msdn.microsoft.com/library/windows/hardware/ff548734).
 
@@ -190,7 +189,7 @@ SerCx2 uses this object to manage system DMA transactions that write data to the
 This object is opaque to serial controller drivers. 
 [SerCx2SystemDmaTransmitCreate](https://msdn.microsoft.com/library/windows/hardware/dn265288) supplies, as an output parameter, a SERCX2SYSTEMDMATRANSMIT handle to the newly created system-DMA-transmit object. 
 SerCx2 and the serial controller driver use this handle to refer to the object in subsequent system-DMA-transmit transactions. 
-For more information, see [SerCx2 System-DMA-Transmit Transactions](https://msdn.microsoft.com/en-us/library/windows/hardware/dn265338).
+For more information, see [SerCx2 System-DMA-Transmit Transactions](https://msdn.microsoft.com/library/windows/hardware/dn265338).
 
 After [SerCx2SystemDmaTransmitCreate](https://msdn.microsoft.com/library/windows/hardware/dn265288) creates the system-DMA-transmit object, this object exists for the lifetime of the framework device object that represents the serial controller device. 
 The system-DMA-transmit object is automatically deleted when the device object is deleted. 
@@ -207,17 +206,17 @@ For more information about custom-transmit objects, see [SERCX2CUSTOMTRANSMIT Ob
 
 ## Related topics
 
-[SerCx2 Custom-Receive Transactions](https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/sercx2-custom-receive-transactions)
+[SerCx2 Custom-Receive Transactions](https://docs.microsoft.com/windows-hardware/drivers/serports/sercx2-custom-receive-transactions)
 
-[SerCx2 Custom-Transmit Transactions](https://msdn.microsoft.com/en-us/library/windows/hardware/dn265320)
+[SerCx2 Custom-Transmit Transactions](https://msdn.microsoft.com/library/windows/hardware/dn265320)
 
-[SerCx2 PIO-Receive Transactions](https://msdn.microsoft.com/en-us/library/windows/hardware/dn265332)
+[SerCx2 PIO-Receive Transactions](https://msdn.microsoft.com/library/windows/hardware/dn265332)
 
 [SerCx2 PIO-Transmit Transactions](https://msdn.microsoft.com/library/windows/hardware/dn265336)
 
 [SerCx2 System-DMA-Receive Transactions](https://msdn.microsoft.com/library/windows/hardware/dn265343)
 
-[SerCx2 System-DMA-Transmit Transactions](https://msdn.microsoft.com/en-us/library/windows/hardware/dn265338)
+[SerCx2 System-DMA-Transmit Transactions](https://msdn.microsoft.com/library/windows/hardware/dn265338)
 
 [SerCx2CustomReceiveTransactionCreate](https://msdn.microsoft.com/library/windows/hardware/dn265251)
 
@@ -225,9 +224,9 @@ For more information about custom-transmit objects, see [SERCX2CUSTOMTRANSMIT Ob
 
 [SerCx2CustomTransmitTransactionCreate](https://msdn.microsoft.com/library/windows/hardware/dn265259)
 
-[SerCx2PioReceiveCreate](https://msdn.microsoft.com/en-us/library/windows/hardware/dn265264)
+[SerCx2PioReceiveCreate](https://msdn.microsoft.com/library/windows/hardware/dn265264)
 
-[SerCx2PioReceiveCreate](https://msdn.microsoft.com/en-us/library/windows/hardware/dn265264)
+[SerCx2PioReceiveCreate](https://msdn.microsoft.com/library/windows/hardware/dn265264)
 
 [SerCx2PioTransmitCreate](https://msdn.microsoft.com/library/windows/hardware/dn265269)
 
@@ -235,7 +234,7 @@ For more information about custom-transmit objects, see [SERCX2CUSTOMTRANSMIT Ob
 
 [SerCx2SystemDmaTransmitCreate](https://msdn.microsoft.com/library/windows/hardware/dn265288)
 
-[Summary of Framework Objects](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/summary-of-framework-objects)
+[Summary of Framework Objects](https://docs.microsoft.com/windows-hardware/drivers/wdf/summary-of-framework-objects)
 
 [WdfObjectDelete](https://msdn.microsoft.com/library/windows/hardware/ff548734)
 

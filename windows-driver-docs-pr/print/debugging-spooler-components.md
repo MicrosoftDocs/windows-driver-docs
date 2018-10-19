@@ -7,11 +7,7 @@ keywords:
 - debugging spooler components WDK printer
 - spooler component debugging WDK print
 - trace messages WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: DAD68FA5-21EF-4A5C-8E5E-0C763CD28C44
 keywords: [".settings (Set Debug Settings) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.settings** command sets, modifies, displays, loads and saves settings in the Debugger.Settings namespace.
 
-```
+```dbgcmd
 .settings set  namespace.setting=value
 .settings set namespace.setting+=value 
 .settings save [file path] 

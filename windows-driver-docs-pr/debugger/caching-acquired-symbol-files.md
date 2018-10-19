@@ -5,9 +5,6 @@ ms.assetid: 2aedc67f-27f3-46f4-8369-504e525b8c18
 keywords: ["SymProxy, caching"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -16,7 +13,7 @@ ms.localizationpriority: medium
 
 Typically, SymProxy caches the files that it acquires in the directory designated within Internet Information Services (IIS) as the virtual root for the associated Web site. Then IIS makes the file available to the client debugger. Because the debugger cannot open a file directly from HTTP, it copies the file to a local cache, specified by the symbol path:
 
-```
+```text
 srv*c:\localcache*http://server/symbols
 ```
 
@@ -50,7 +47,7 @@ This causes IIS to return **file not found** to the debugging client for all tra
 
 After you remove the IIS configuration for MIME types, configure the debugger clients to look for symbols first in the HTTP store and in the share that maps to the virtual root of the store with the command:
 
-```
+```text
 srv**http://server/symbols;srv*\\server\symbols
 ```
 

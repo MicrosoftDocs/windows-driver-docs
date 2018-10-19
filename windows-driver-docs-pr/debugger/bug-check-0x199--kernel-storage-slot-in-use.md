@@ -5,9 +5,6 @@ ms.assetid: 5C561976-DD3C-4593-AAF0-F46618242D28
 keywords: ["Bug Check 0x199 KERNEL_STORAGE_SLOT_IN_USE", "KERNEL_STORAGE_SLOT_IN_USE"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

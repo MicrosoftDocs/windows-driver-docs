@@ -8,11 +8,7 @@ keywords:
 - RSS WDK networking
 - miniport drivers WDK networking , scaling receive-packet processing
 - NDIS miniport drivers WDK , scaling receive-packet processing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +26,7 @@ The miniport driver or NIC assigns the received data to a receive queue that is 
 
 NDIS schedules a DPC on each of the specified target processors. Each DPC processes a particular receive queue on the specified target processor.
 
-For more information about NDIS 6.0 receive side scaling, see [NDIS 6.0 Receive Side Scaling](https://msdn.microsoft.com/library/windows/hardware/ff567232).
+For more information about NDIS 6.0 receive side scaling, see [Receive Side Scaling](ndis-receive-side-scaling2.md).
 
  
 

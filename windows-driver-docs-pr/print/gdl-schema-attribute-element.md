@@ -11,11 +11,7 @@ keywords:
 - GDL_UntypedAtt WDK GDL
 - untyped attribute WDK GDL
 - snapshots WDK GDL , structure
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ ms.localizationpriority: medium
 
 The data type of all &lt;GDL\_ATTRIBUTE&gt; elements is specified on a per-instance basis by using **xsi:type**. Attributes without a specific data type definition are designated instances of the generic attribute element (&lt;GDL\_UntypedAtt&gt;), which is defined in the GDL-produced schema as follows:
 
-```
+```cpp
     <complexType name="GDL_UntypedAtt"  mixed="true">
         <sequence>
             <any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>

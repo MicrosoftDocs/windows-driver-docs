@@ -2,11 +2,7 @@
 title: Shader Code Tokens
 description: Shader Code Tokens
 ms.assetid: 123c25a2-015d-41f2-b24d-ed63e932dd16
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

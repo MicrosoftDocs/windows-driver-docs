@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Creating a Resource Manager
 ms.assetid: b2841d56-650a-487c-a002-2521cd1b461b
 keywords: ["resource managers WDK KTM , creating resource managers", "enlistments WDK KTM , read-only enlistments", "read-only enlistments WDK KTM", "resource managers WDK KTM , volatile resource managers", "volatile resource managers WDK KTM", "resource managers WDK KTM , adding to a TPS", "transaction processing systems WDK KTM , adding resource managers", "TPS WDK KTM , adding resource managers"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

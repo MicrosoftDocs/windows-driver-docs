@@ -9,11 +9,7 @@ api_name:
 - wscn ScanIdentifier
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ScanIdentifier** element contains a device-specific string that t
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScanIdentifier>
   text
 </wscn:ScanIdentifier>
@@ -75,7 +71,7 @@ The client can send the **ScanIdentifier** element to the WSD Scan Service in a 
 
 The **ScanIdentifier** value must be unique for every [**ScanAvailableEvent**](scanavailableevent.md) instance.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)

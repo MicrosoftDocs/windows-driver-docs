@@ -3,11 +3,7 @@ title: EFI_USBFN_IO_PROTOCOL.GetEndpointPolicy
 author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.GetEndpointPolicy
 ms.assetid: 143ee448-2c29-46f4-b62c-6429a4a1d890
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ The **GetEndpointPolicy** function retrieves the configuration policy for the sp
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_GET_ENDPOINT_POLICY) (

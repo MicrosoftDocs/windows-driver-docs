@@ -5,9 +5,6 @@ ms.assetid: 4b9b786c-2ecc-44a6-a82b-0641d7991abc
 keywords: ["pc (Step to Next Call) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

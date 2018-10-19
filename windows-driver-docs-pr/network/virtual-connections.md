@@ -7,11 +7,7 @@ keywords:
 - CoNDIS WDK networking , virtual connections
 - virtual connections WDK CoNDIS
 - virtual connections WDK CoNDIS , about virtual connections
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

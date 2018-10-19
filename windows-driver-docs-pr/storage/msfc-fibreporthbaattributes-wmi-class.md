@@ -3,6 +3,7 @@ title: MSFC\_FibrePortHBAAttributes WMI Class
 description: MSFC\_FibrePortHBAAttributes WMI Class
 ms.assetid: 028afadf-1a2d-4792-8b6c-d53359af64c1
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSFC\_FibrePortHBAAttributes WMI Class
@@ -15,7 +16,7 @@ An HBA miniport driver that supports the FCbre channel HBA API uses the MSFC\_Fi
 
 The MSFC\_FibrePortHBAAttributes class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MSFC_FibrePortHBAAttributes {
   [key] 
   string InstanceName;

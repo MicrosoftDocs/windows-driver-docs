@@ -5,9 +5,6 @@ ms.assetid: badf8948-356c-4728-b34e-02f1638630a6
 keywords: ["Bug Check 0xE6 DRIVER_VERIFIER_DMA_VIOLATION", "DRIVER_VERIFIER_DMA_VIOLATION"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -6,11 +6,7 @@ ms.assetid: cf5f5861-1670-413c-9c42-c1b6eb6d719a
 keywords:
 - Kernel Streaming Proxy WDK AVStream , property page
 - property page WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ For each object, generate a GUID for the class identifier (CLSID) and provide an
 
 The array must be named g\_Templates:
 
-```
+```cpp
 CFactoryTemplate g_Templates[] =
 {
     {
@@ -42,7 +38,7 @@ CFactoryTemplate g_Templates[] =
 
 Your property page should derive from the class [CBasePropertyPage](http://go.microsoft.com/fwlink/p/?linkid=106449) and should override several of the methods of **CBasePropertyPage**:
 
-```
+```cpp
 class CMyPropPage: public CBasePropertyPage
 {
 public:

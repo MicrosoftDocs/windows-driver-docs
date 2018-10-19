@@ -5,9 +5,6 @@ ms.assetid: 98DFF193-950A-46CF-875E-B2907743F5D4
 keywords: ["wdfkd.wdfumdownirp Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfumdownirp** extension displays the kernel-mode I/O request packet (IRP) that is associated with a specified user-mode IRP. This command is used in two steps. See Remarks.
 
-```
+```dbgcmd
 !wdfkd.wdfumdownirp UmIrp [FileObject] 
 ```
 

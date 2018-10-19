@@ -5,9 +5,6 @@ ms.assetid: 9365218e-2647-4e54-baba-8774d4ab3ae1
 keywords: ["wdfkd.wdfhandle Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfhandle** extension displays information about a specified framework object handle, such as the handle type, object context pointers, and the underlying framework object pointer.
 
-```
+```dbgcmd
 !wdfkd.wdfhandle Handle [Flags]
 ```
 
@@ -67,7 +64,7 @@ Remarks
 
 The following example shows the output of the **!wdfhandle** extension with bit 4 set in the *Flags* parameter (so the output displays information about the child objects).
 
-```
+```dbgcmd
 kd> !wdfhandle 0x7ca7b1c0 10 
 
 handle 0x7ca7b1c0, type is WDFDEVICE

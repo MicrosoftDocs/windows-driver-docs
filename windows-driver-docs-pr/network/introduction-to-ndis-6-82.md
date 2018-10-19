@@ -2,11 +2,7 @@
 title: Introduction to NDIS 6.82
 description: This section introduces NDIS 6.82 and describes changes from NDIS 6.81. NDIS 6.82 is included in Windows 10, version 1809.
 ms.assetid: 6BB75BC5-0E49-4467-B030-E0A23D0ED2DA
-ms.author: windowsdriverdev
 ms.date: 08/16/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

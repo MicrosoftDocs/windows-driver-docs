@@ -10,11 +10,7 @@ keywords:
 - values WDK GDL , value macros
 - Macros directive WDK GDL
 - macros WDK GDL , examples
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,7 +34,7 @@ All value macro definitions must be recognized as complete, valid value entity.
 
 The following code example shows how to use value macros.
 
-```
+```cpp
 *Macros:
 {
     InvalidMacro: "First Half of a string
@@ -49,7 +45,7 @@ InvalidMacro is not valid because the quoted string context must be terminated w
 
 If you want to represent an incomplete value entity, use the following code example.
 
-```
+```cpp
 *Macros:
 {
     FirstHalf: <BeginValue:Q>"This is the first half <EndValue:Q>
@@ -62,7 +58,7 @@ If you want to represent an incomplete value entity, use the following code exam
 
 The following code shows how to use macro arguments.
 
-```
+```cpp
 *Macros: FormalArgs(=arg1, =arg2)
 {
 result1: disappointed
@@ -74,22 +70,22 @@ result5: restrained
 
 adverb1: very =arg1 and =arg2
    adverb2: while remaining =arg1
-   String1:  The audience was =arg1 with today&#39;s performance.
+   String1:  The audience was =arg1 with today's performance.
 }
 ```
 
 The following code shows how to use macro references with parameters.
 
-```
+```cpp
 *BadOutput: =String1(=result1)
 *GoodOutput: =String1(=adverb1(=adverb1(=result2, =result3), =adverb2(=result5)))
 ```
 
 The parser will expand the preceding macro references to produce the following code.
 
-```
-*BadOutput: The audience was disappointed with today&#39;s performance.
-*GoodOutput: The audience was very very pleased and impressed and while remaining restrained with today&#39;s performance.
+```cpp
+*BadOutput: The audience was disappointed with today's performance.
+*GoodOutput: The audience was very very pleased and impressed and while remaining restrained with today's performance.
 ```
 
 Value macro references are not recognized in all value contexts. For example, value macros are not recognized within the arbitrary value or quoted string contexts. But value macros are recognized within hex string contexts that might reside within the quoted string context.
@@ -102,7 +98,7 @@ You should think of the parser as acting on a single input stream. When a macro 
 
 Consider the following macro.
 
-```
+```cpp
 *Macros:
 {
 quote: <BeginValue:x>"<EndValue:x>
@@ -118,7 +114,7 @@ whole_string: =first_half <not a hex string!> =second_half
 
 The preceding macro will expand to the following code.
 
-```
+```cpp
 *Print1:  "
 *Print2:  " This is enclosed
 *Print3:  by quotes."

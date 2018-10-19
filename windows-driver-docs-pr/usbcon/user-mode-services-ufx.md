@@ -2,11 +2,7 @@
 Description: Create a user-mode service that communicates with GenericUSBFn.sys by sending I/O control code (IOCTL) requests.
 title: Communicating with GenericUSBFn.sys from a user-mode service
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -15,7 +11,7 @@ ms.localizationpriority: medium
 
 All user-mode requests are sent to the Microsoft-provided kernel-mode driver GenericUSBFn.sys. You can create a user-mode service that communicates with GenericUSBFn.sys by sending these I/O control code (IOCTL), and GenericUSBFn.sys handles kernel-mode communication with the USB function drivers.
 
-The IOCTLs declared in [Genericusbfnioctl.h](https://docs.microsoft.com/en-us/windows/desktop/api/genericusbfnioctl/) are used for communicating with GenericUSBFn.sys from a user-mode service.
+The IOCTLs declared in [Genericusbfnioctl.h](https://docs.microsoft.com/windows/desktop/api/genericusbfnioctl/) are used for communicating with GenericUSBFn.sys from a user-mode service.
 
 
 The following steps describe how you can define a USB interface service that interacts with GenericUSBFn.sys to communicate with the USB function drivers:

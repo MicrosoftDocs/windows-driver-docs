@@ -7,11 +7,7 @@ keywords:
 - injecting hardware errors WDK WHEA
 - errors WDK WHEA , injecting, WHEA WDK , injecting
 - Windows Hardware Error Architecture WDK , injecting
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ A user-mode application can inject a hardware error into the hardware platform b
 
 The following code example shows how to inject a hardware error.
 
-```
+```cpp
 IWbemServices *pIWbemServices;
 ULONG ErrorType;
 BSTR ClassName;

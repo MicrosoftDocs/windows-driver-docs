@@ -9,11 +9,7 @@ api_name:
 - wscn Rotation wscn MustHonor "" wscn Override "" wscn UsedDefault ""
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **Rotation** element specifies the amount to rotate each image of t
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Rotation wscn:MustHonor=""               wscn:Override=""               wscn:UsedDefault=""
   MustHonor = "xs:string"
   Override = "xs:string"
@@ -118,7 +114,7 @@ The client can specify the optional **MustHonor** attribute only when the **Rota
 
 The WSD Scan Service can specify the optional **Override** and **UsedDefault** attributes only when the **Rotation** element is contained within a **DocumentFinalParameters** hierarchy. For more information about **Override** and **UsedDefault** and their usage, see [**DocumentFinalParameters**](documentfinalparameters.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)

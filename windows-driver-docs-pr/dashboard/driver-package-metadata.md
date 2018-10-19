@@ -4,9 +4,6 @@ description: Describes the structure of the driver package metadata for Hardware
 author: balapv
 ms.author: balapv
 ms.date: 08/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Driver package metadata
@@ -70,3 +67,7 @@ The file has the following values:
 |Manufacturer|string|Manufacturer of the hardware ID|
 |DeviceDescription|string|Description of the hardware ID|
 |FeatureScore|string|Feature score for the driver|
+
+## See also
+
+- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

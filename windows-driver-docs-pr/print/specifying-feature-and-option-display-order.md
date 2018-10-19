@@ -8,11 +8,7 @@ keywords:
 - display order of features/options WDK Unidrv
 - property sheet pages WDK print , feature and option display order
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ To control the order in which features and options are displayed on Unidrv-gener
 
 Following is an example of a set of empty \*Feature and \*Option entries:
 
-```
+```cpp
 *Feature: EconoMode
 {
     *Option: Off{}

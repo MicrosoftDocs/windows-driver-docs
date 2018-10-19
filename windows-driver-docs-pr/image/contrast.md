@@ -9,11 +9,7 @@ api_name:
 - wscn Contrast wscn Override "" wscn UsedDefault ""
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **Contrast** element specifies the relative amount to reduce or enh
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Contrast wscn:Override="" wscn:UsedDefault=""
   Override = "xs:string"
   UsedDefault = "xs:string">
@@ -107,7 +103,7 @@ All WSD Scan Services must support all values between, and including, -1000 to 1
 
 The WSD Scan Service can specify the optional **Override** and **UsedDefault** attributes only when the **Contrast** element is contained within a **DocumentFinalParameters** hierarchy. For more information about **Override** and **UsedDefault** and their usage, see [**DocumentFinalParameters**](documentfinalparameters.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DocumentFinalParameters**](documentfinalparameters.md)

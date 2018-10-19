@@ -5,9 +5,6 @@ ms.assetid: 0c3ec6f3-d233-46e4-b599-1a0f89318ed2
 keywords: ["boot process, causing system crash from keyboard", "CTRL+SCROLL LOCK", "system crash, causing from keyboard", "bug check, causing from keyboard", "keyboard-caused system crash", "USB keyboard and system crash", "PS/2 keyboard and system crash", "forcing system crash from keyboard"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,15 +22,15 @@ This feature is available in Windows 2000 and later versions of Windows operatin
 <span id="________USB_keyboards_______"></span><span id="________usb_keyboards_______"></span><span id="________USB_KEYBOARDS_______"></span> USB keyboards   
 This feature is available in:
 
--   Windows Server 2003 Service Pack 1 if the hotfix available with [KB 244139](http://go.microsoft.com/fwlink/p/?linkid=106065) is installed.
+-   Windows Server 2003 Service Pack 1 if the hotfix available with [KB 244139](https://go.microsoft.com/fwlink/p/?linkid=106065) is installed.
 
 -   Windows Server 2003 (with Service Pack 2 or later).
 
--   Windows Vista Service Pack 1 if the hotfix available with [KB 971284](http://go.microsoft.com/fwlink/p/?LinkId=241349) is installed.
+-   Windows Vista Service Pack 1 if the hotfix available with [KB 971284](https://go.microsoft.com/fwlink/p/?LinkId=241349) is installed.
 
 -   Windows Vista Service Pack 2.
 
--   Windows Server 2008 Service Pack 1 if the hotfix available with [KB 971284](http://go.microsoft.com/fwlink/p/?LinkId=241349) is installed.
+-   Windows Server 2008 Service Pack 1 if the hotfix available with [KB 971284](https://go.microsoft.com/fwlink/p/?LinkId=241349) is installed.
 -   Windows Server 2008 (with Service Pack 2 or later).
 -   Windows 7 and later versions of Windows operating system.
 
@@ -57,7 +54,7 @@ The system then calls **KeBugCheck** and issues [**bug check 0xE2**](bug-check-0
 
 If a kernel debugger is attached to the crashed machine, the machine will break into the kernel debugger after the crash dump file has been written.
 
-For more information on using this feature, refer to the article [Generate a memory dump file by using the keyboard (KB 244139)](http://go.microsoft.com/fwlink/p/?linkid=106065).
+For more information on using this feature, refer to the article [Generate a memory dump file by using the keyboard (KB 244139)](https://go.microsoft.com/fwlink/p/?linkid=106065).
 
 ### <span id="defining_alternate_keyboard_shortcuts_to_force_a_system_crash_from_the"></span><span id="DEFINING_ALTERNATE_KEYBOARD_SHORTCUTS_TO_FORCE_A_SYSTEM_CRASH_FROM_THE"></span>Defining Alternate Keyboard Shortcuts to Force a System Crash from the Keyboard
 

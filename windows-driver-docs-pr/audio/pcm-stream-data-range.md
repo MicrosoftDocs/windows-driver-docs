@@ -4,11 +4,7 @@ description: PCM Stream Data Range
 ms.assetid: e8a9b681-3bd2-46ed-970f-5217dbfb2e4e
 keywords:
 - PCM stream data ranges WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ ms.localizationpriority: medium
 
 This example uses a [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537096) structure to describe the data range for a PCM stream.
 
-```
+```cpp
   DataRange.FormatSize  = sizeof(KSDATARANGE_AUDIO);
   DataRange.Flags       = 0;
   DataRange.SampleSize  = 0;

@@ -5,9 +5,6 @@ ms.assetid: f5a50b54-443e-425e-98cb-cff8d31ac897
 keywords: ["process", "process, choosing", "thread", "thread, choosing", "thread, freezing", "thread, unfreezing (thawing)", "thread, suspending", "suspend count of threads", "freezing threads"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -81,7 +78,7 @@ You can add thread specifiers or process specifiers before many other commands. 
 
 You can add the [**~e (Thread-Specific Command)**](-e--thread-specific-command-.md) qualifier before many commands and extension commands. This qualifier causes the command to be executed with respect to the specified thread. This qualifier is especially useful if you want to apply a command to more than one thread. For example, the following command repeats the [**!gle**](-gle.md) extension command for every thread that is being debugged.
 
-```
+```dbgcmd
 ~*e !gle 
 ```
 

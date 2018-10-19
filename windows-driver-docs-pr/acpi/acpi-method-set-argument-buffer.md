@@ -5,11 +5,7 @@ description: The ACPI_METHOD_SET_ARGUMENT_BUFFER macro sets the members of an AC
 ms.assetid: 1f335814-fa9f-45c6-b970-10884e971ec1
 keywords: 
 - ACPI_METHOD_SET_ARGUMENT_BUFFER macro ACPI Devices
-ms.author: windowsdriverdev
-ms.date:
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ The ACPI\_METHOD\_SET\_ARGUMENT\_BUFFER macro sets the members of an [**ACPI\_ME
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 void ACPI_METHOD_SET_ARGUMENT_BUFFER(
     Argument,
     BuffData,

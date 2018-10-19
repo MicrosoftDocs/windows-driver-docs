@@ -5,9 +5,6 @@ ms.assetid: 6aa06283-9cd7-4579-9e5d-40bbaf53f782
 keywords: ["arbiter", "arbinst Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

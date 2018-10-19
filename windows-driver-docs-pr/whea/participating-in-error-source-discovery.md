@@ -11,11 +11,7 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , error source discovery
 - PSHED plug-ins WDK WHEA , error source discovery
 - error source discovery WDK WHEA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ To participate in error source discovery, a PSHED plug-in must implement a [*Get
 
 The following code example shows how to implement these callback functions.
 
-```
+```cpp
 //
 // The PSHED plug-in&#39;s GetAllErrorSources callback function
 //

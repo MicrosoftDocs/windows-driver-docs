@@ -5,9 +5,6 @@ ms.assetid: 6248355f-6b27-44ac-8772-8599630a8245
 keywords: ["Bug Check 0xE2 MANUALLY_INITIATED_CRASH", "MANUALLY_INITIATED_CRASH"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -11,11 +11,7 @@ keywords:
 - kernel-mode driver signing WDK
 - driver package digital signatures WDK
 - package digital signatures WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -76,7 +72,7 @@ Note that Secure Boot does not apply to Windows Vista and Windows 7.
 
 In addition to driver code signing, you also need to meet the PnP device installation signing requirements for installing a driver.  For more info, see [Plug and Play (PnP) device installation signing requirements](pnp-device-installation-signing-requirements--windows-vista-and-later-.md).
 
-For info about signing an ELAM driver, see [Early launch antimalware](http://msdn.microsoft.com/en-us/library/windows/desktop/hh848061(v=vs.85).aspx).
+For info about signing an ELAM driver, see [Early launch antimalware](http://msdn.microsoft.com/library/windows/desktop/hh848061(v=vs.85).aspx).
 
 ## See Also
 

@@ -9,11 +9,7 @@ api_name:
 - wscn ScalingHeight wscn Override "" wscn UsedDefault ""
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ScalingHeight** element specifies the document scaling in the slo
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScalingHeight wscn:Override=""                    wscn:UsedDefault=""
   Override = "xs:string"
   UsedDefault = "xs:string">
@@ -109,7 +105,7 @@ The WSD Scan Service can specify the optional **Override** and **UsedDefault** a
 
 You can subset the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DocumentFinalParameters**](documentfinalparameters.md)

@@ -5,9 +5,6 @@ ms.assetid: c305acba-48b9-4597-925a-8b1ded4f0048
 keywords: ["SCSI Miniport Debugging, hangs and time-outs"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +21,7 @@ When debugging a SCSI miniport driver, the three most common causes for hangs an
 
 If you suspect that the SCSI miniport DPC is not running, use [**!pcr**](-pcr.md) to display the DPC queue for the current processor. If the SCSI port DPC routine is in the DPC queue, place a breakpoint on this routine to determine whether this routine is ever called. Otherwise, use [**!scsikd.scsiext**](-scsikd-scsiext.md) on each device. Consider the following sample output from the **!scsikd.scsiext** extension:
 
-```
+```dbgcmd
 0: kd> !scsikd.scsiext 86353040 
 Common Extension:
    < ..omitted.. >

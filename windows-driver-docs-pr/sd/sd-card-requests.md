@@ -11,11 +11,7 @@ keywords:
 - asynchronous requests WDK SD bus
 - SdBusSubmitRequest
 - SdBusSubmitRequestAsync
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,7 +58,7 @@ Secure Digital (SD) card drivers use property requests to read or set card prope
 
 The following code example illustrates how a driver for a function on a multifunction card might request its function number from the bus driver:
 
-```
+```cpp
  sdrp = ExAllocatePool(NonPagedPool, 
  sizeof(SDBUS_REQUEST_PACKET));
  if (!sdrp) {

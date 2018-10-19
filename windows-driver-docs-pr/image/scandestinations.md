@@ -9,11 +9,7 @@ api_name:
 - wscn ScanDestinations
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ScanDestinations** element is a collection of all of the scan des
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScanDestinations>
   child elements
 </wscn:ScanDestinations>
@@ -86,7 +82,7 @@ The client must send the **ScanDestinations** element in the **&lt;wse:Subscribe
 
 The **ScanDestinations** element give clients the flexibility to register for multiple unique scan destinations at once.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ScanDestination**](scandestination.md)

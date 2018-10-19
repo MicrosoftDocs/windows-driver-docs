@@ -5,11 +5,7 @@ ms.assetid: d8f533f8-3037-47c0-986b-bd283bb3804d
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , vertex buffers, renaming on Windows 2000
 - vertex buffers WDK DirectX 8.0 , renaming on Windows 2000
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +25,7 @@ It may be helpful to think of AGP heaps as residing in a conceptual address spac
 
 Given a surface (**pSurface**), a kernel-mode AGP heap (**pvmHeap**) and a mapping of the heap into a particular user-mode process (**pMap**), the following formula is used to compute the actual, user-mode **fpVidMem** for a surface:
 
-```
+```cpp
 fpVidMem = pMap->pvVirtAddr +
     (pSurface->fpHeapOffset âˆ’ pvmHeap->fpStart)
 ```
@@ -40,7 +36,7 @@ Your driver is notified of the conceptual base address of AGP heaps through the 
 
 The following code fragment demonstrates computing a new **fpVidMem** for an AGP surface in a lock call.
 
-```
+```cpp
 // Get the vertex buffer&#39;s surface local and global from the
 // lock data
 LPDDRAWI_DDRAWSURFACE_LCL*pLcl = pLockData->lpDDSurface;

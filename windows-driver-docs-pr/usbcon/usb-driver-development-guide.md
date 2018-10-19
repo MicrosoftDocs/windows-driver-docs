@@ -2,11 +2,7 @@
 Description: PurposeThis section describes Universal Serial Bus (USB) support in the Windows operating system, so that you can develop USB device drivers that are interoperable with Windows.
 title: Developing Windows client drivers for USB devices
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +28,7 @@ ms.localizationpriority: medium
 <p>[Download kits and tools for Windows](http://go.microsoft.com/fwlink/p/?linkid=617155)</p>
 <p><strong>USB programming reference</strong></p>
 <p>Gives specifications for I/O requests, support routines, structures, and interfaces used by USB client drivers. Those routines and related data structures are defined in the WDK headers.</p>
-<p>[Universal Serial Bus (USB) programming reference](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/_usbref/#common-usb-client-driver-reference).</p>
+<p>[Universal Serial Bus (USB) programming reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#common-usb-client-driver-reference).</p>
 <p><strong>USB driver samples</strong></p>
 <p>Use these samples to get started with USB client driver programming.</p>
 <ul>

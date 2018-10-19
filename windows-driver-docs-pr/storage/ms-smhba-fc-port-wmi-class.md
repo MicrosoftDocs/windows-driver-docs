@@ -3,6 +3,7 @@ title: MS\_SMHBA\_FC\_Port WMI Class
 description: MS\_SMHBA\_FC\_Port WMI Class
 ms.assetid: 671f14e4-c591-4df2-85a1-2db3f802ef5e
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MS\_SMHBA\_FC\_Port WMI Class
@@ -12,7 +13,7 @@ An HBA miniport driver that supports the Storage Management API uses the MS\_SMH
 
 The MS\_SMHBA\_FC\_Port class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MS_SMHBA_FC_Port 
 {
     [HBAType("HBA_WWN"), WmiDataId(1)]

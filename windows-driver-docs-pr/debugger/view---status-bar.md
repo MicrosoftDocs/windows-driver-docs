@@ -5,9 +5,6 @@ ms.assetid: e8b38975-46ca-4a27-aff7-f5f0d03e9158
 keywords: ["View Status Bar", "status bar, View Status Bar"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

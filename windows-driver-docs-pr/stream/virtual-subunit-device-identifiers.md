@@ -10,11 +10,7 @@ keywords:
 - Avc.sys function driver WDK , identifiers
 - virtual subunit device identifiers WDK AV/C
 - subunit support WDK AV/C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

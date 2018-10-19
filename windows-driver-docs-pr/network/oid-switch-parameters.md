@@ -3,11 +3,7 @@ title: OID_SWITCH_PARAMETERS
 author: windows-driver-content
 description: A Hyper-V extensible switch extension issues an object identifier (OID) query request of OID_SWITCH_PARAMETERS to obtain the configuration data of the extensible switch.
 ms.assetid: F2CA0BE5-ED21-4ACF-B26A-4F512D4B15C7
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_SWITCH_PARAMETERS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

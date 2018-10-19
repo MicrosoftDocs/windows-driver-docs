@@ -18,11 +18,7 @@ keywords:
 - GUIDGen WDK
 - GUID Generator WDK
 - GUIDGen.exe WDK
-ms.author: windowsdriverdev
 ms.date: 05/09/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -443,12 +439,13 @@ The information in the following tables describes the tools that are useful for 
 </tr>
 <tr class="even">
 <td align="left"><p>ChkINF</p>
-<p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x86\Chkinf</p></td>
-<td align="left"><p>A set of Perl scripts that verify the structure and syntax of setup information (INF) files for drivers.</p>
+<p><strong>WDK tool:</strong> Deprecated</p></td>
+<td align="left"><p>Previous path:</p>
+<p>%WindowsSdkDir%\tools\x86\Chkinf</p></td>
+<td align="left"><p>ChkInf has been deprecated. Instead, use [InfVerif](infverif.md)</p>
 <p>WDK Documentation:</p>
-<p>[ChkINF](chkinf.md)</p>
-<p>[Using ChkINF with Modem INF Files](https://msdn.microsoft.com/library/windows/hardware/ff542789)</p></td>
+<p>[InfVerif](infverif.md)</p>
+</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Computer Hardware Identification Tool (ComputerHardwareIds.exe)</p>
@@ -546,6 +543,18 @@ The information in the following tables describes the tools that are useful for 
 <p>WDK Documentation:</p>
 <p>[<strong>Inf2Cat</strong>](inf2cat.md)</p></td>
 </tr>
+<tr class="even">
+<td align="left"><p>InfVerif (InfVerif.exe)</p>
+<p><strong>WDK tool:</strong> Yes</p></td>
+<td align="left"><p>c:\Program Files(x86)\Windows Kits\10\tools\arm\infverif.exe</p>
+<p>c:\Program Files(x86)\Windows Kits\10\tools\arm64\infverif.exe</p>
+<p>c:\Program Files(x86)\Windows Kits\10\tools\x86\infverif.exe</p>
+<p>c:\Program Files(x86)\Windows Kits\10\tools\x64\infverif.exe</p>
+<td align="left"><p>Tests a driver INF file. In addition to reporting INF syntax problems, the tool reports if the INF file is universal.</p>
+<p>WDK Documentation:</p>
+<p>[InfVerif](infverif.md)</p></td>
+</tr>
+
 <tr class="even">
 <td align="left"><p>MakeCat (MakeCat.exe)</p>
 <p><strong>WDK tool:</strong> Yes</p></td>

@@ -9,11 +9,7 @@ keywords:
 - source paths WDK INF files
 - original source paths WDK INF files
 - retrieving INF file path information
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,7 +30,7 @@ To use this method to retrieve the original source path of an installed INF file
 
 For example, *toasterpkg.inf* includes the following \[ToasterCoInfo\] section with a custom OriginalInfSourcePath entry whose first field is the %1% string key token.
 
-```
+```cpp
 [ToastCoInfo]
 ; Used by the toaster co-installer to figure out where the original media is
 ; located (so it can start value-added setup programs).
@@ -43,7 +39,7 @@ OriginalInfSourcePath = %1%
 
 If an INF is configured as illustrated by the toaster sample, you can then retrieve the original source path after installing the INF file in the system INF directory. To retrieve the original source path, first call **SetupOpenInfFile** to open the installed INF file. For example, the following code example from *toastco.c* opens the installed *toasterpkg.inf* file.
 
-```
+```cpp
 // Since the INF is already in %SystemRoot%\Inf, we need to find out where it
 // originally came from.  There is no direct way to ascertain an INF&#39;s
 // path of origin, but we can indirectly determine it by retrieving a field
@@ -58,7 +54,7 @@ hInf = SetupOpenInfFile(DriverInfoDetailData->InfFileName,
 
 After opening the installed INF file, call **SetupFindFirstLine** to retrieve the first line of the section that contains the entry whose first field is the %1% string key token. Next, call **SetupGetStringField** to retrieve the first field of this entry and retrieve the original source path of the INF file. For example, the following code example from *toastco.c* retrieves the line that contains the custom OriginalInfSourcePath entry and then retrieves the first field of this entry. Because the first field in the original INF is the %1% string key token, **SetupGetStringField** returns the original source path of the INF file.
 
-```
+```cpp
 // Contained within our INF should be a [ToastCoInfo] section with the
 // following entry:
 //

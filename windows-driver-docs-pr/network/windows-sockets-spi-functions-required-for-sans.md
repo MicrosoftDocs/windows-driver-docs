@@ -5,11 +5,7 @@ ms.assetid: b41bd7e0-bb6c-4933-a5d0-18e4d067601b
 keywords:
 - SAN service providers WDK , required functions
 - functions WDK SANs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

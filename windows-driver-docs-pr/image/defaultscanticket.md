@@ -9,11 +9,7 @@ api_name:
 - wscn DefaultScanTicket
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ ms.localizationpriority: medium
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:DefaultScanTicket>
   child elements
 </wscn:DefaultScanTicket>
@@ -90,7 +86,7 @@ Examples
 
 The following code example shows a sample DefaultScanTicket.
 
-```
+```xml
 <wscn:DefaultScanTicket>
   <wscn:JobDescription>
     <wscn:JobName>Scan Job</wscn:JobName>
@@ -137,7 +133,7 @@ The following code example shows a sample DefaultScanTicket.
 </wscn:DefaultScanTicket>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)

@@ -2,11 +2,7 @@
 title: Create a new hardware submission
 description: Create a new hardware submission
 ms.assetid: 3F433F0A-422C-46E5-B59E-8DB4AC537F01
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +14,7 @@ To prepare your hardware for the Windows Hardware Compatibility Program for Wind
 ## <span id="To_create_a_submission_file"></span><span id="to_create_a_submission_file"></span><span id="TO_CREATE_A_SUBMISSION_FILE"></span>To create a submission file
 
 
-For information about creating and digitally signing an **.hlkx** file, see the [Windows HLK Getting Started Guide](https://docs.microsoft.com/en-us/previous-versions/windows/hardware/hck/jj123537(v=vs.85)).
+For information about creating and digitally signing an **.hlkx** file, see the [Windows HLK Getting Started Guide](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
 
 For information about creating and digitally signing an **.hckx** file, see the [Windows HCK Getting Started Guide](http://go.microsoft.com/fwlink/p/?LinkId=248436).
 
@@ -32,7 +28,7 @@ For information about creating and digitally signing an **.hckx** file, see the 
 3.  Either drag and drop, or browse to the **.hlkx/.hckx** file that you want to submit. The file will begin to upload.
     ![screenshot that shows the driver name field](images/drivers-name.png)
 
-4. If you wish to test a driver prior to release, you can select the checkbox labled "Perform test-signing for Win10 and above" OR "Perform test-signing for OS below Win10 (legacy)". Test-signed drivers are similar to drivers signed for public release, but do not require HLK testing. They are also not distributed through Windows Update, but can be downloaded from the hardware submission site. They can be installed on test machines only. For more information about test-signing driver packages, see [WHQL Test Signature Program](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/whql-test-signature-program) and [How to test-sign a driver package](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/how-to-test-sign-a-driver-package).
+4. If you wish to test a driver prior to release, you can select the checkbox labled "Perform test-signing for Win10 and above" OR "Perform test-signing for OS below Win10 (legacy)". Test-signed drivers are similar to drivers signed for public release, but do not require HLK testing. They are also not distributed through Windows Update, but can be downloaded from the hardware submission site. They can be installed on test machines only. For more information about test-signing driver packages, see [WHQL Test Signature Program](https://docs.microsoft.com/windows-hardware/drivers/install/whql-test-signature-program) and [How to test-sign a driver package](https://docs.microsoft.com/windows-hardware/drivers/install/how-to-test-sign-a-driver-package).
 
 5. If you wish to flight sign a driver prior to release, you can select the checkbox labled "Perform flight signing only". Flight signed drivers are signed with Microsoft Developer Test certificate used and trusted by all “Insider” builds. Retail systems do NOT have this certificate. Drivers that are Flight signed can only be installed on *Windows 10 Insider Builds*. This means it will not be offered or installable on RETAIL builds of Windows 10. Flight signed drivers work with “Secure Boot” enabled. Flight signing is only applicable to Windows 10 RS2 and above and will not work on lower versions of Windows. _this feature is currently being rolled out gradually and might not yet be visible to everyone. If you do not yet see it, please wait and you will see it in a few more weeks._
 

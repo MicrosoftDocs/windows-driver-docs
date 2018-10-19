@@ -3,11 +3,7 @@ title: Code Example for Reading Device Properties
 author: windows-driver-content
 description: Code Example for Reading Device Properties
 ms.assetid: 9ff3f30d-fd1c-4241-a068-1af2160e9296
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -16,7 +12,7 @@ ms.localizationpriority: medium
 
 The following code example shows how to read device properties from a Property Store. For an example of how to open a Property Store for the current Function Instance object, see [Code Example for Opening a Property Store](code-example-for-opening-a-property-store.md).
 
-```
+```cpp
 /**************************************************************************\
 * CWSDDevice::ReadDeviceProperty
 *

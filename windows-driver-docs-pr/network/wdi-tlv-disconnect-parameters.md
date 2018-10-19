@@ -3,11 +3,7 @@ title: WDI_TLV_DISCONNECT_PARAMETERS
 author: windows-driver-content
 description: WDI_TLV_DISCONNECT_PARAMETERS is a TLV that contains parameters for OID_WDI_TASK_DISCONNECT.
 ms.assetid: D0FF83A0-CD3B-47A6-BB08-842927F1D3BC
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_DISCONNECT_PARAMETERS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

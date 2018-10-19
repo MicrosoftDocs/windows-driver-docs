@@ -5,9 +5,6 @@ ms.assetid: 8f9ea2df-c172-43e0-98c5-0983f68a66f4
 keywords: ["GFlags, image file flags"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

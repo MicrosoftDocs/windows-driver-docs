@@ -2,10 +2,8 @@
 title: LSA and UEFI file signing
 description: LSA plug-in and UEFI firmware signing
 ms.author: eliotgra
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # File signing LSA plugins and UEFI firmware
@@ -16,7 +14,7 @@ The Hardware Dev Center Dashboard lets you to digitally sign [Local Security Aut
 > [!IMPORTANT]
 
 > Use the file-signing technique described in this topic for **UEFI** and **LSA** signing. 
-> For information about **driver** signing, see [Hardware submissions](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/hardware-certification-submissions).
+> For information about **driver** signing, see [Hardware submissions](https://docs.microsoft.com/windows-hardware/drivers/dashboard/hardware-certification-submissions).
 
 > [!IMPORTANT]
 > * File signing requires an [extended validation (EV) code signing certificate](get-a-code-signing-certificate.md).
@@ -51,6 +49,6 @@ After signing in to the Hardware Dev Center Dashboard, you can [manage your firm
 
 ## Related topics
 
-[Microsoft UEFI CA Signing Policy Updates](http://blogs.msdn.com/b/windows_hardware_certification/archive/2013/12/03/microsoft-uefi-ca-signing-policy-updates.aspx)
+- [Microsoft UEFI CA Signing Policy Updates](http://blogs.msdn.com/b/windows_hardware_certification/archive/2013/12/03/microsoft-uefi-ca-signing-policy-updates.aspx)
 
-[Pre-Submission Testing for UEFI Submissions](http://blogs.msdn.com/b/windows_hardware_certification/archive/2013/12/03/pre-submission-testing-for-uefi-submissions.aspx)
+- [Pre-Submission Testing for UEFI Submissions](http://blogs.msdn.com/b/windows_hardware_certification/archive/2013/12/03/pre-submission-testing-for-uefi-submissions.aspx)

@@ -9,11 +9,7 @@ api_name:
 - wscn Name
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ This required **Name** element identifies the section of the WSD Scan Service sc
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Name>
   text
 </wscn:Name>
@@ -140,7 +136,7 @@ Remarks
 
 The Qname must identify the top-level element within the WSD Scan Service schema that the client wants information for. The client must specify both the schema namespace and element name.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**GetJobElementsRequest**](getjobelementsrequest.md)

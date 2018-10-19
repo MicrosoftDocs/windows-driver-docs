@@ -4,11 +4,7 @@ description: How to Analyze IRP Coverage Data
 ms.assetid: 71b87948-8e69-4b4a-9546-ea27e96a4bf8
 keywords:
 - Driver Coverage Toolkit WDK , analyzing data
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

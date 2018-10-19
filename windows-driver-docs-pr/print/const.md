@@ -5,11 +5,7 @@ description: The TCP/IP Const construct defines the data type and value that mus
 ms.assetid: a0ede11d-ada4-4dc4-87a4-68c96635c0fd
 keywords:
 - Const construct
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,7 +47,7 @@ The TCP/IP Const construct defines the data type and value that must be returned
 
 The following code example extends the bidi communications schema by adding an `Extension` property to the `Printer` property, and a `Version` property to the `Extension` property. In the example, `Extension` contains a constant **value** entry, `Category`. Also, `Version` has two constant **value** entries, `Major` and `Minor`.
 
-```
+```cpp
 <Property name="Printer">
   <Property name="Extension">
     <Const name="Category" type="BIDI_STRING" value="Extension"/>
@@ -65,7 +61,7 @@ The following code example extends the bidi communications schema by adding an `
 
 The preceding example results in the following queries:
 
-```
+```cpp
 \Printer.Extension:Category
 \Printer.Extension.Version:Major
 \Printer.Extension.Version:Minor

@@ -10,11 +10,7 @@ keywords:
 - hardware IDs WDK AVStream
 - identifiers WDK AVStream
 - compatible IDs WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,7 +30,7 @@ In releases earlier than DirectX 9.0, AVStream creates a child device hardware I
 
 For example, the vendor specifies the following in the **AddReg** section of the INF file:
 
-```
+```INF
 [MyTVDevice.AddReg]
 HKR,"ENUM\CrossbarDevice",pnpid,,"MyCrossbar"
 HKR,"ENUM\TunerDevice",pnpid,,"MyTuner"

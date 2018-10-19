@@ -5,9 +5,6 @@ ms.assetid: 111DD6CD-D7DB-4772-B6DD-8EA88587FD1F
 keywords: ["usbkd.urbfunc Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.urbfunc** command displays the name of a URB function code.
 
-```
+```dbgcmd
 !usbkd.urbfunc FunctionCode
 ```
 
@@ -42,7 +39,7 @@ Examples
 
 Here is an example of the output of **!urbfunc**.
 
-```
+```dbgcmd
 0: kd> !usbkd.urbfunc 0xA
 
 URB_FUNCTION_ISOCH_TRANSFER (0xA)
@@ -53,7 +50,7 @@ URB_FUNCTION_ISOCH_TRANSFER (0xA)
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

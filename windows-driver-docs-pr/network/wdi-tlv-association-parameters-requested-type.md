@@ -3,11 +3,7 @@ title: WDI_TLV_ASSOCIATION_PARAMETERS_REQUESTED_TYPE
 author: windows-driver-content
 description: WDI_TLV_ASSOCIATION_PARAMETERS_REQUESTED_TYPE is a TLV that contains the requested Association Parameter TLV types.
 ms.assetid: BF4FE327-56A6-4EEE-B6C2-9B93D5C1DD47
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ASSOCIATION_PARAMETERS_REQUESTED_TYPE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

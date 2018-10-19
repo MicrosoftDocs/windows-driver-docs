@@ -2,11 +2,7 @@
 title: Container IDs Generated from Removable Device Capability Override
 description: Container IDs Generated from a Removable Device Capability Override
 ms.assetid: 8b1bf9d4-1aea-4d82-b783-f6dc62b9f8f3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -98,7 +94,7 @@ In this example, the override will disable the removable device capability, and 
 
 The following is an example of the registry table format for this override.
 
-```
+```cpp
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceOverrides
     USB#VID_1234&PID_5678
         LocationPaths
@@ -126,7 +122,7 @@ In this example, the override will enable the removable device capability, and t
 
 The following is a high-level description of the registry table format for this override.
 
-```
+```cpp
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceOverrides
     USB#VID_062A&PID_00001
         LocationPaths

@@ -8,11 +8,7 @@ keywords:
 - KS filters WDK kernel streaming
 - mixers WDK kernel streaming
 - kernel streaming WDK , filters
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,7 +34,7 @@ Filters specify internal connections between pins and internal nodes by using th
 
 The [**KSPROPERTY\_TOPOLOGY\_CONNECTIONS**](https://msdn.microsoft.com/library/windows/hardware/ff565802) property queries all connections between nodes of a KS filter. This property returns an array of [**KSTOPOLOGY\_CONNECTION**](https://msdn.microsoft.com/library/windows/hardware/ff567148). Each KSTOPOLOGY\_CONNECTION structure represents a single data-path connection inside a filter. In the mixer diagram above, the sequence of KSTOPOLOGY\_CONNECTION structures could be as follows:
 
-```
+```cpp
 //    FromNode,       FromNodePin,     ToNode,        ToNodePin,
 {
  {  KSFILTER_NODE,        0,            0,               0     },

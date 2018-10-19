@@ -5,9 +5,6 @@ ms.assetid: 015703C2-31E2-46B4-8F89-1EA52DB7E6FC
 keywords: [".scriptunload (Unload Script) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.scriptunload** command unloads the specified script.
 
-```
+```dbgcmd
 .scriptunload ScriptFile
 ```
 
@@ -61,7 +58,7 @@ Specifies the name of the script file to unload. *ScriptFile* should include the
 
 The .scriptunload command unloads a loaded script. Use the following command syntax to unload a script
 
-```
+```dbgcmd
 0:000:x86> .scriptunload C:\WinDbg\Scripts\TestScript.js
 JavaScript script unloaded from 'C:\WinDbg\Scripts\TestScript.js'
 ```
@@ -74,7 +71,7 @@ For more information about working with JavaScript, see [JavaScript Debugger Scr
 
 Before using any of the .script commands, a scripting provider needs to be loaded. Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider dll.
 
-```
+```dbgcmd
 0:000> .load C:\ScriptProviders\jsprovider.dll
 ```
 

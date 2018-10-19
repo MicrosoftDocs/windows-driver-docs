@@ -3,9 +3,6 @@ title: WinDbg Preview - keyboard shortcuts
 description: This section provides the keyboard shortcuts for the WinDbg preview debugger.
 ms.author: domars
 ms.date: 08/02/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: 3c861842-d3ac-4c7d-88e3-d00233189b74
 keywords: ["rpcexts.eerecord Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!rpcexts.eerecord** extension displays the contents of an extended error information record.
 
-```
+```dbgcmd
 !rpcexts.eerecord EERecordAddress
 ```
 
@@ -64,7 +61,7 @@ This extension displays the contents of one extended error information record in
 
 Here is an example:
 
-```
+```dbgcmd
 0:001> !rpcexts.eerecord 0xb015f0
 Computer Name: (null)
 ProcessID: 708 (0x2C4)

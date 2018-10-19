@@ -5,9 +5,6 @@ ms.assetid: 1153F3C2-5878-4223-AA18-5AE6FA056851
 keywords: ["usbkd.usbhcdpnp Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbhcdpnp** command displays the Plug and Play (PnP) state history for a USB host controller or root hub.
 
-```
+```dbgcmd
 !usbkd.usbhcdpnp DeviceExtension
 ```
 
@@ -45,7 +42,7 @@ Examples
 
 Here is one way to find the address of the device extension for the FDO of USB host controller. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
-```
+```dbgcmd
 0: kd> !usbkd.usb2tree
 
 UHCI MINIPORT(s) dt usbport!_USBPORT_MINIPORT_DRIVER ffffe0000090c3d0
@@ -58,7 +55,7 @@ In the preceding output, the address of the device extension of the FDO is displ
 
 Now pass the address of the device extension to the **!usbhcdpnp** command.
 
-```
+```dbgcmd
 0: kd> !usbkd.usbhcdpnp ffffe00001c8f1a0
 
 ## PNP STATE LOG (latest at bottom)
@@ -71,14 +68,14 @@ Now pass the address of the device extension to the **!usbhcdpnp** command.
 
 Here is one way to find the address of the device extension for the PDO of a root hub. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
-```
+```dbgcmd
 4)!uhci_info ffffe00001c8f1a0 !devobj ffffe00001c8f050 PCI: VendorId 8086 DeviceId 2938 RevisionId 0002 
     RootHub !hub2_info ffffe00000d941a0 !devstack ffffe00000d94050
 ```
 
 In the preceding output, you can see the address of the FDO of the root hub displayed as the argument to the command **!devstack ffffe00000d94050**. Use the [**!devstack**](-devstack.md) command to find the address of the PDO and the PDO device extension.
 
-```
+```dbgcmd
 0: kd> !kdexts.devstack ffffe00000d94050
   !DevObj           !DrvObj            !DevExt           ObjectName
 > ffffe00000d94050  \Driver\usbhub     ffffe00000d941a0  0000006b
@@ -89,7 +86,7 @@ In the preceding output, you can see that the address of the device extension fo
 
 Now pass the address of the device extension to the **!usbhcdpnp** command.
 
-```
+```dbgcmd
 0: kd> !usbkd.usbhcdpnp ffffe00000ed41a0
 
 ## PNP STATE LOG (latest at bottom)
@@ -104,7 +101,7 @@ Now pass the address of the device extension to the **!usbhcdpnp** command.
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

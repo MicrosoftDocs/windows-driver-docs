@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
-ms.date: 9/10/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/10/2018
 ms.localizationpriority: medium
 ---
 
@@ -53,7 +49,7 @@ KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ADVANCEDPHOTO is used to control photo HDR,
 
 The following are flags that can be placed in the KSCAMERA\_EXTENDEDPROP\_HEADER.Flags field to control photo HDR, flash no flash, and ultra low light fusion. The default should be KSCAMERA\_EXTENDEDPROP\_ADVANCEDPHOTO\_OFF.
 
-``` syntax
+```cpp
 #define KSCAMERA_EXTENDEDPROP_ADVANCEDPHOTO_OFF             0x0000000000000000
 #define KSCAMERA_EXTENDEDPROP_ADVANCEDPHOTO_AUTO            0x0000000000000001
 #define KSCAMERA_EXTENDEDPROP_ADVANCEDPHOTO_HDR             0x0000000000000002

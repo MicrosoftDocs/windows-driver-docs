@@ -3,6 +3,7 @@ title: MPIO\_DRIVE\_INFO WMI Class
 description: MPIO\_DRIVE\_INFO WMI Class
 ms.assetid: 4c116157-5f5b-4213-abdd-9128ebbfa341
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MPIO\_DRIVE\_INFO WMI Class
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 
 An MPIO driver uses the MPIO\_DRIVE\_INFO WMI class to identify each MPIO disk on a system that it manages.
 
-```
+```cpp
 class MPIO_DRIVE_INFO
 {
     //

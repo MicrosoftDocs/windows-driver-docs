@@ -7,11 +7,7 @@ keywords:
 - Direct3D version 11 WDK Windows Server 2008 R2 display , deferred contexts, excluding DDI functions
 - deferred contexts WDK Windows 7 display , excluding DDI functions
 - deferred contexts WDK Windows Server 2008 R2 display , excluding DDI functions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ When the Microsoft Direct3D runtime calls the user-mode display driver's [**Crea
 
 The driver excludes many functions for deferred contexts by setting the following members of [**D3D11DDI\_DEVICEFUNCS**](https://msdn.microsoft.com/library/windows/hardware/ff542141) or [**D3D11\_1DDI\_DEVICEFUNCS**](https://msdn.microsoft.com/library/windows/hardware/hh406443) to **NULL**:
 
-```
+```cpp
 typedef struct D3D11DDI_DEVICEFUNCS {
 ...
   PFND3D10DDI_RESOURCEMAP  pfnStagingResourceMap;
@@ -63,7 +59,7 @@ typedef struct D3D11DDI_DEVICEFUNCS {
 } D3D11DDI_DEVICEFUNCS;
 ```
 
-```
+```cpp
 typedef struct D3D11_1DDI_DEVICEFUNCS {
 ...
   PFND3D10DDI_RESOURCEMAP  pfnStagingResourceMap;

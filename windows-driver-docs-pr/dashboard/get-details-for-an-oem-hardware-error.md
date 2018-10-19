@@ -5,9 +5,6 @@ description: Use this method in the Microsoft Store analytics API to get detaile
 title: Get details for an OEM hardware error
 ms.author: mcleans
 ms.date: 06/04/2018
-ms.topic: article
-ms.prod: windows
-ms.technology: uwp
 keywords: windows 10, uwp, Store services, Microsoft Store analytics API, errors, details
 ms.localizationpriority: medium
 ---
@@ -46,7 +43,7 @@ To use this method, you need to first do the following:
 
 | Method | Request URI                                                          |
 |--------|----------------------------------------------------------------------|
-| GET    | ```https://manage.devcenter.microsoft.com/v1.0/my/analytics/hardware/failuredetails``` |
+| GET    | `https://manage.devcenter.microsoft.com/v1.0/my/analytics/hardware/failuredetails` |
 
 
 ### Request header
@@ -148,5 +145,6 @@ The following example demonstrates an example JSON response body for this reques
 
 ## Related topics
 
-* [Get OEM hardware error reporting data](get-oem-hardware-error-reporting-data.md)
-* [Download the CAB file for an OEM hardware error](download-the-cab-file-for-an-oem-hardware-error.md)
+- [Get OEM hardware error reporting data](get-oem-hardware-error-reporting-data.md)
+
+- [Download the CAB file for an OEM hardware error](download-the-cab-file-for-an-oem-hardware-error.md)

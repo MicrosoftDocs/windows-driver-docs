@@ -6,11 +6,7 @@ keywords:
 - audio driver objects WDK
 - COM object creation WDK audio
 - objects WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ The audio driver model uses the concept of the COM interface, as defined by the 
 
 By convention, the function used to create a particular class of objects always takes the same form:
 
-```
+```cpp
 NTSTATUS CreateMyObject(
    OUT PUNKNOWN  *Unknown,
    IN REFGUID ClassId,
@@ -53,7 +49,7 @@ The first three parameters are identical to the parameters of the COM **CoCreate
 
 Another convention is to supply a New*Xxx* function for a class. Such functions provide an easy way to instantiate (create and initialize) an object, as shown in the following example:
 
-```
+```cpp
 NTSTATUS NewMyObject(
  OUT PMYINTERFACE  *InterfacePointer,
  IN PUNKNOWN  OuterUnknown OPTIONAL,

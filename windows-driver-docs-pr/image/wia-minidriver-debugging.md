@@ -3,11 +3,7 @@ title: WIA Minidriver Debugging
 author: windows-driver-content
 description: WIA Minidriver Debugging
 ms.assetid: 6466d0db-a2f9-4b3e-aa3e-8030b243f862
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -59,7 +55,7 @@ Most debuggers require the PID of the running process in order to attach to it a
 
 If you downloaded the debugger package from the Microsoft site (www.microsoft.com), it includes a utility program named *tlist.exe*. *Tlist.exe* displays all running processes. If you execute *tlist.exe* using the s switch, this utility also shows which processes are hosting which services. For example, running *tlist.exe -s* produces output similar to the following:
 
-```
+```console
    0 System Process
    4 System
  160 smss.exe
@@ -91,11 +87,3 @@ to the following string value:
 "**%SystemRoot%\\System32\\stisvc.exe -k imgsvc**"
 
 Now, when the WIA service starts, it runs under *stisvc.exe* instead of *svchost.exe*. Finding this process is simpler, because there is only a single instance of *stisvc.exe*. You do not have to look for the PID to find it. Thus, for example, if you are developing the driver using Microsoft Visual Studio, you can go to the **Start Debug** menu item under the **Build** menu, click **Attach to Process...**, and select *stisvc.exe* in the list.
-
- 
-
- 
-
-
-
-

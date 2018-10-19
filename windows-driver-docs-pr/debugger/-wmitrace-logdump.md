@@ -5,9 +5,6 @@ ms.assetid: 073338c6-68c4-4ae0-b69e-392256277236
 keywords: ["wmitrace.logdump Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wmitrace.logdump** extension displays the contents of the trace buffers for a trace session. You can limit the display to trace messages from specified providers.
 
-```
+```dbgcmd
 !wmitrace.logdump [-t Count] [{LoggerID|LoggerName} [GUIDFile]] 
 ```
 

@@ -5,9 +5,6 @@ ms.assetid: 6c1222c7-448c-4a99-be30-cf2c43c41cb9
 keywords: ["Bug Check 0x4B STREAMS_INTERNAL_ERROR", "STREAMS_INTERNAL_ERROR"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

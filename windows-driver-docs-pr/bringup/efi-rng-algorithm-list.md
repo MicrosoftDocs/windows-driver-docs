@@ -12,11 +12,7 @@ api_name:
 - EFI_RNG_ALGORITHM_LIST
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +24,7 @@ This data structure contains a list of the supported Random Number Generation (R
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef struct _EFI_RNG_ALGORITHM_LIST {
   UINT32     AlgorithmsCount;
   EFI_GUID * Algorithms;
@@ -51,7 +47,7 @@ An implementation may support one or more ways to provide RNG values. The list o
 
 The following list provides EFI GUID values for a selection of EFI\_RNG\_PROTOCOL algorithms. The list is not meant to be exhaustive and may be augmented by vendors or other industry standards.
 
-```
+```cpp
 #define EFI_RNG_ALGORITHM_SP800_90_HASH_256_GUID   \
   {0xa7af67cb, 0x603b, 0x4d42, 0xba, 0x21, 0x70, 0xbf, 0xb6, 0x29,\
    0x3f, 0x96}
@@ -62,11 +58,3 @@ The following list provides EFI GUID values for a selection of EFI\_RNG\_PROTOCO
   {0x44f0de6e, 0x4d8c, 0x4045, 0xa8, 0xc7, 0x4d, 0xd1, 0x68, 0x85,\
    0x6b, 0x9e}
 ```
-
- 
-
- 
-
-
-
-

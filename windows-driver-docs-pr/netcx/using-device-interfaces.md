@@ -1,6 +1,7 @@
 ---
 title: Using Device Interfaces
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Using Device Interfaces

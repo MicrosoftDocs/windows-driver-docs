@@ -5,11 +5,7 @@ ms.assetid: 04400213-9bd4-4dbe-b302-24917450829f
 keywords:
 - network drivers WDK , security
 - security WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -85,7 +81,7 @@ Most Set OIDs can be issued by a usermode application running in the Administrat
     }
     ```
 
-2. Whenever validating an OID with an embedded offset, you must validate that the embedded buffer is within the OID payload. This requires several checks. For example, [OID_PM_ADD_WOL_PATTERN](https://msdn.microsoft.com/en-us/library/windows/hardware/ff569764) may deliver an embedded pattern, that needs to be checked. Correct validation requires checking:
+2. Whenever validating an OID with an embedded offset, you must validate that the embedded buffer is within the OID payload. This requires several checks. For example, [OID_PM_ADD_WOL_PATTERN](https://msdn.microsoft.com/library/windows/hardware/ff569764) may deliver an embedded pattern, that needs to be checked. Correct validation requires checking:
 
     1. InformationBufferSize >= sizeof(NDIS_PM_PACKET_PATTERN)
 
@@ -151,11 +147,11 @@ Method OIDs can be issued by a usermode application running in the Administrator
 
 ## Other network driver security issues
 
-- Many NDIS miniport drivers expose a control device by using NdisRegisterDeviceEx. Those that do this must audit their IOCTL handlers, with all the same security rules as a WDM driver. For more information, see [Security Issues for I/O Control Codes](https://msdn.microsoft.com/en-us/library/windows/hardware/ff563700(v=vs.85).aspx).
+- Many NDIS miniport drivers expose a control device by using NdisRegisterDeviceEx. Those that do this must audit their IOCTL handlers, with all the same security rules as a WDM driver. For more information, see [Security Issues for I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff563700(v=vs.85).aspx).
 
 - Well-designed NDIS miniport drivers should not rely on being called in a particular process context, nor interact very closely with usermode (with IOCTLs & OIDs being the exception). It would be a red flag to see a miniport that opened usermode handles, performed usermode waits, or allocated memory against usermode quota. That code should be investigated.
 
 - Most NDIS miniport drivers should not be involved in parsing packet payloads. In some cases, though, it may be necessary. If so, this code should be audited very carefully, as the driver is parsing data from an untrusted source.
 
-- As is standard when allocating kernel-mode memory, NDIS drivers should use appropriate [NX Pool Opt-In Mechanisms](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/nx-pool-opt-in-mechanisms). In WDK 8 and newer, the `NdisAllocate*` family of functions are properly opted in.
+- As is standard when allocating kernel-mode memory, NDIS drivers should use appropriate [NX Pool Opt-In Mechanisms](https://docs.microsoft.com/windows-hardware/drivers/kernel/nx-pool-opt-in-mechanisms). In WDK 8 and newer, the `NdisAllocate*` family of functions are properly opted in.
 

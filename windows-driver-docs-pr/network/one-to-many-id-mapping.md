@@ -7,11 +7,7 @@ keywords:
 - ID mapping WDK netmap.inf
 - one-to-many ID mapping WDK networking
 - preupgrade IDs WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -53,7 +49,7 @@ Specifies the registry value type for *ValueName*. *Type* is an integer that cor
 
 The following example shows a one-to-many device ID mapping:
 
-```
+```cpp
 [OemAdapters]
 DATAFIREU=0, DATAFIREU
 

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Using a Handle to a Registry-Key Object
 ms.assetid: 25982249-31dc-4542-9ebb-139991619b40
 keywords: ["handle to registry-key object WDK kernel", "registry WDK kernel , object routines", "driver registry information WDK kernel , object routines", "object routines WDK kernel", "registry-key objects WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -69,7 +65,7 @@ Once the driver has finished its manipulations, it must call [**ZwClose**](https
 
 The following code example illustrates how to open a handle for a key named **\\Registry\\Machine\\Software\\***MyCompany*\\*MyApp*, then retrieve key data and close the handle.
 
-```
+```cpp
 //
 // Get the frame location from the registry key
 // HKLM\SOFTWARE\MyCompany\MyApp.

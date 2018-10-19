@@ -5,11 +5,7 @@ description: Creating Callback Objects Example
 ms.assetid: 4476c2f0-12ba-4678-b20e-bde7e81df01d
 keywords:
 - callback objects WDK UMDF , example of creating
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ ms.localizationpriority: medium
 
 The following code example shows how a driver creates a device callback object in the implementation of its [**IDriverEntry::OnDeviceAdd**](https://msdn.microsoft.com/library/windows/hardware/ff554896) method and then passes a pointer to the device callback interface in its call to the [**IWDFDriver::CreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff558899) method to create the device.
 
-```
+```cpp
    HRESULT CMyDriver::OnDeviceAdd(
               IWDFDriver*           pDriver,
               IWDFDeviceInitialize* pDeviceInit

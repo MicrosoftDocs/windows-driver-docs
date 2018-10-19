@@ -10,11 +10,7 @@ keywords:
 - PICKMANY parameters WDK GDL
 - PICKONE parameters WDK GDL
 - null-value parameters WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ The content of the **\*Features** construct can consist of one or more **\*Optio
 
 For example,you can define a parameter named *Today* that can take a day of the week as its value, as the following code example shows.:
 
-```
+```cpp
 *Feature: Today
 {
   *Option: Sunday{}

@@ -5,9 +5,6 @@ ms.assetid: 666fa9d7-f723-4745-95fc-17aa20993b42
 keywords: ["symsrv Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!symsrv** extension closes the symbol server client.
 
-```
+```dbgcmd
 !symsrv close
 ```
 

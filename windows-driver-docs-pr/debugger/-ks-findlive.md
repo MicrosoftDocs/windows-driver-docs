@@ -5,9 +5,6 @@ ms.assetid: 71372144-3f39-460b-859c-ac4cba0c766d
 keywords: ["ks.findlive Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ks.findlive** extension searches the internal Ks.sys debug log to attempt to find live objects of a specified type.
 
-```
+```dbgcmd
 !ks.findlive Type [Entries] [Level] 
 ```
 

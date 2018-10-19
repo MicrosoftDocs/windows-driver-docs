@@ -13,18 +13,18 @@ api_name:
 - IPrinterBidiSchemaResponses.AddBlob
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaResponses::AddBlob method
-
 
 The AddBlob method adds a new response of type BIDI\_BLOB to the collection.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT AddBlob(
   [in] BSTR      bstrSchema,
   [in] IDispatch *pArray
@@ -60,20 +60,11 @@ Requirements
 </tr>
 <tr class="even">
 <td><p>Version</p></td>
-<td><p>Windows 8</p></td>
+<td><p>Windows 8 and later</p></td>
 </tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**IPrinterBidiSchemaResponses**](iprinterbidischemaresponses.md)
-
- 
-
- 
-
-
-
-

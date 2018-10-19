@@ -3,11 +3,7 @@ title: Example DownloadPreviewImage
 author: windows-driver-content
 description: Example DownloadPreviewImage
 ms.assetid: 9b27492e-0725-4c8b-9101-3aaf5c9291d9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ The **DownloadPreviewImage** function downloads image data from the scanner by c
 
 In this example, the application user sets the *m\_bUseSegmentationFilter* parameter by clicking a check box. If the application supports this, it should first check that the driver has a segmentation filter by calling **IWiaItem2::CheckExtension**. For information about **CheckImgFilter**, which is used in this example, see the **IWiaPreview::GetNewPreview** method in the Microsoft Windows SDK documentation.
 
-```
+```cpp
 HRESULT
 DownloadPreviewImage(
   IN IWiaItem2 *pWiaFlatbedItem2)
@@ -70,7 +66,7 @@ DownloadPreviewImage(
          {
             // If the call to GetNewPreview was successful, the
             // preview component calls AddRef on the callback so
-            // this call doesn&#39;t delete the object.
+            // this call doesn't delete the object.
 
             pAppWiaTransferCallback->Release();
          }

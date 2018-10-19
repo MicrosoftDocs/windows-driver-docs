@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Providing Storage for Spin Locks and Protected Data
 ms.assetid: bde18474-10c3-4d9a-b120-6cbd5fc675cc
 keywords: ["storage WDK spin locks", "storing spin-lock-protected data", "spin locks WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

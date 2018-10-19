@@ -5,9 +5,6 @@ ms.assetid: f7311928-bab1-4692-8dd6-5e464dd7127a
 keywords: ["setup, making a debug cable connection", "null-modem cable", "debug cable", "cable connection", "cable connection, debug (null-modem) cable)"]
 ms.author: domars
 ms.date: 07/11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

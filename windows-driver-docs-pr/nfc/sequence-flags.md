@@ -19,11 +19,7 @@ api_name:
 - NFC_CX_SEQUENCE_PRE_SHUTDOWN_FLAG_SKIP_RESET
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

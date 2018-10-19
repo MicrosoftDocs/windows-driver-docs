@@ -9,11 +9,7 @@ api_name:
 - wscn ADFResolutions
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ADFResolutions** element contains a list of resolutions at which 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ADFResolutions>
   child elements
 </wscn:ADFResolutions>
@@ -89,7 +85,7 @@ If the parent element of the **ADFResolutions** element is [**ADFFront**](adffro
 
 The WSD Scan Service should list all possible widths that the scan device supports within the **Widths** child element and all possible heights that the scan device supports within the **Heights** child element. All **Width** and **Height** values are independent of each other, and most devices will support them being paired in any combination within a [**ScanTicket**](scanticket.md) element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ADFBack**](adfback.md)

@@ -5,16 +5,13 @@ ms.assetid: eb4cc883-71ac-4a57-8654-07c3120310c0
 keywords: debugging, debug, Windbg, managed code debugging, .NET common language runtime, common language runtime, CLR , JIT compiler, JITted code
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Debugging Managed Code Using the Windows Debugger
 
 
-You can use the Windows debuggers (WinDbg, CDB, and NTSD) to debug target applications that contain managed code. To debug managed code, you must load the [SOS debugging extension (sos.dll)](http://go.microsoft.com/fwlink/p/?linkid=223345) and a data access component (mscordacwks.dll).
+You can use the Windows debuggers (WinDbg, CDB, and NTSD) to debug target applications that contain managed code. To debug managed code, you must load the [SOS debugging extension (sos.dll)](https://go.microsoft.com/fwlink/p/?linkid=223345) and a data access component (mscordacwks.dll).
 
 The Windows debuggers are separate from the Visual Studio debugger. For information about the distinction between the Windows debuggers and the Visual Studio debugger, see [Windows Debugging](index.md).
 
@@ -46,7 +43,7 @@ The CLR is not updated every time the .NET Framework is updated. For example, ve
 To debug managed code, the debugger must load these two components.
 
 -   Data access component (DAC) (mscordacwks.dll)
--   [SOS debugging extension (sos.dll)](http://go.microsoft.com/fwlink/p/?linkid=223345)
+-   [SOS debugging extension (sos.dll)](https://go.microsoft.com/fwlink/p/?linkid=223345)
 
 **Note**  For all versions of the .NET Framework, the filename of the DAC is mscordacwks.dll, and the filename of the SOS debugging extension is sos.dll.
 
@@ -62,10 +59,10 @@ For version 1.*x* of the .NET Framework, sos.dll is not included in the .NET Fra
 
 Windows 7 Debugging Tools for Windows is included in the Windows SDK for Windows 7, which is available at these two places:
 
--   [Windows SDK for Windows 7 and .NET Framework 4.0](http://go.microsoft.com/fwlink/p?LinkId=320327)
--   [Windows SDK for Windows 7 and .NET Framework 4.0 (ISO)](http://go.microsoft.com/fwlink/p?LinkId=320328)
+-   [Windows SDK for Windows 7 and .NET Framework 4.0](https://go.microsoft.com/fwlink/p?LinkId=320327)
+-   [Windows SDK for Windows 7 and .NET Framework 4.0 (ISO)](https://go.microsoft.com/fwlink/p?LinkId=320328)
 
-If you are running an x64 version of Windows, use the [ISO](http://go.microsoft.com/fwlink/p?LinkID=320328) site, so that you can specify that you want the 32-bit version of the SDK. Sos.dll is included only in the 32-bit version of Windows 7 Debugging Tools for Windows.
+If you are running an x64 version of Windows, use the [ISO](https://go.microsoft.com/fwlink/p?LinkID=320328) site, so that you can specify that you want the 32-bit version of the SDK. Sos.dll is included only in the 32-bit version of Windows 7 Debugging Tools for Windows.
 
 ### <span id="Loading_mscordacwks.dll_and_sos.dll__live_debugging_"></span><span id="loading_mscordacwks.dll_and_sos.dll__live_debugging_"></span><span id="LOADING_MSCORDACWKS.DLL_AND_SOS.DLL__LIVE_DEBUGGING_"></span>Loading mscordacwks.dll and sos.dll (live debugging)
 
@@ -77,7 +74,7 @@ The debugger must load a version of the DAC that is the same as the version of t
 
 The output should be similar to this.
 
-```
+```dbgcmd
 CLRDLL: Loaded DLL C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscordacwks.dll
 CLR DLL status: Loaded DLL C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscordacwks.dll
 ```
@@ -90,7 +87,7 @@ To verify that the version of mscordacwks.dll matches the version of the CLR tha
 
 The output should be similar to this.
 
-```
+```dbgcmd
 start             end                 module name
 000007ff`26710000 000007ff`2706e000   clr        (deferred)             
     Image path: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\clr.dll
@@ -135,7 +132,7 @@ Enter these commands.
 
 The output will be similar to this.
 
-```
+```dbgcmd
 CLRDLL: Unable to get version info for 'C:\Windows\Microsoft.NET
    \Framework64\v4.0.30319\mscordacwks.dll', Win32 error 0n87
 
@@ -165,7 +162,7 @@ To verify that the version of mscordacwks.dll matches the version of the CLR tha
 
 The output should be similar to this.
 
-```
+```dbgcmd
 start             end                 module name
 000007ff`26710000 000007ff`2706e000   clr        (deferred)             
     Image path: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\clr.dll
@@ -178,7 +175,7 @@ In the preceding example, notice that the version of the CLR (clr.dll) matches t
 
 To verify that the SOS debugging extension loaded correctly, enter the [**.chain**](-chain--list-debugger-extensions-.md) command.
 
-```
+```dbgcmd
 0:000> .chain
 Extension DLL search Path:
 ...

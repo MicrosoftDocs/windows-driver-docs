@@ -6,11 +6,7 @@ keywords:
 - cross-platform INF files WDK
 - INF files WDK device installations , cross-platform
 - operating systems WDK , cross-operating system INF files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,7 +37,7 @@ To create a single cross-operating system and cross-platform INF file for a devi
 
 2.  Include an INF **Manufacturer** section that includes a *manufacturer-identifier* that specifies the *Models* section name for a device and a platform extension entry for each platform that the device supports. For example, the following Manufacturer section specifies a *Models* section name of "AbcModelSection" and the platform extensions **.ntia64** and **.ntamd64**. (Do not specify the **.ntx86** platform extension.)
 
-    ```
+    ```cpp
     [Manufacturer]
     ; The manufacturer-identifier for the Abc device.
     %ManufacturerName%=AbcModelSection,ntia64,ntamd64
@@ -49,28 +45,28 @@ To create a single cross-operating system and cross-platform INF file for a devi
 
 3.  Include a *Models* section whose name does not include a platform extension. Starting with Windows 2000, the operating system processes this section for x86-based systems. For example, the following AbcModelSection section specifies an *install-section-name* of "AbcInstallSection" for an Abc device.
 
-    ```
+    ```cpp
     [AbcModelSection]
     %AbcDeviceName%=AbcInstallSection,Abc-hw-id
     ```
 
 4.  Include a *Models***.ntia64** section. Windows Server 2003 SP1 and later versions require a *Models***.ntia64** section for Itanium-based systems. If a *Models***.ntia64** section exists, Windows Server 2003 and Windows XP also use this section for Itanium-based systems. For example, the following AbcModelSection**.ntia64** section specifies an *install-section-name* of "AbcInstallSection.ntia64" for an Abc device.
 
-    ```
+    ```cpp
     [AbcModelSection.ntia64]
     %AbcDeviceName%=AbcInstallSection.ntia64,Abc-hw-id
     ```
 
 5.  Include a *Models***.ntamd64** section. Windows Server 2003 SP1 and later versions require a *Models***.ntamd64** section for x64-based systems. If a *Models***.ntamd64** section exists, Windows Server 2003 and Windows XP also use this section for x64-based systems. For example, the following AbcModelSection**.ntamd64** section specifies an *install-section-name* of "AbcInstallSection.ntamd64" for an Abc device.
 
-    ```
+    ```cpp
     AbcModelSectionName.ntamd64
     %AbcDeviceName%=AbcInstallSection.ntamd64,Abc-hw-id
     ```
 
 6.  Include a *DDInstall* section whose name is the same as the *install-section-name* that is specified by the *Models* section that does not include a platform extension. For example, the AbcModelSection section specifies the following AbcInstallSection section. Windows processes this section to install the Abc device on x86-based systems that run Windows 2000 or later versions of Windows.
 
-    ```
+    ```cpp
     [AbcInstallSection]
     ; Install section entries go here.
     ...
@@ -78,7 +74,7 @@ To create a single cross-operating system and cross-platform INF file for a devi
 
 7.  Include a *DDInstall***.ntia64** section whose name is the same as the *install-section-name* that is specified by the *Models***.ntia64** section. For example, the AbcModelSection**.ntia64** section specifies the following AbcInstallSection**.ntia64** section. Windows processes this section to install the Abc device on Itanium-based systems that run Windows XP or later versions of Windows.
 
-    ```
+    ```cpp
     [AbcInstallSection.ntia64]
     ; Install section entries go here.
     ...
@@ -86,7 +82,7 @@ To create a single cross-operating system and cross-platform INF file for a devi
 
 8.  Include a *DDInstall***.ntamd64** section whose name is the same as the *install-section-name* that is specified by the *Models***.ntamd64** section. For example, the AbcModelSection**.ntamd64** section specifies the following AbcInstallSection**.ntamd64** section. Windows processes this section to install the Abc device on x64-based systems that run Windows XP or later versions of Windows.
 
-    ```
+    ```cpp
     [AbcInstallSection.ntamd64]
     ; Install section entries go here.
     ...

@@ -13,11 +13,7 @@ keywords:
 - PDOs WDK monitors
 - FDOs WDK monitors
 - filter DOs WDK monitors
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -74,25 +70,23 @@ The following table shows the device stack for a video output that has a connect
 
 User-mode applications use WMI to invoke the services of the monitor class function driver. Those services include exposing a monitor's identification data and (in the case of an ACPI display) setting the brightness of the display.
 
-A monitor stores its identification and capability information in an Extended Display Identification Data ([*EDID*](https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-edid)) structure. A request, from a user-mode application, to read a monitor's EDID is processed by the function driver (Monitor.sys) in that monitor's device stack. When the monitor function driver receives a request to retrieve the monitor's EDID, it sends a request to the display port/miniport driver pair that is represented by the physical device object (PDO) at the bottom of the monitor's device stack. The display port/miniport driver pair uses the Display Data Channel (DDC) protocol to read the monitor's EDID over the I²C bus, which is a simple two-wire bus built into all standard monitor cables.
+A monitor stores its identification and capability information in an Extended Display Identification Data (EDID) structure, a format that lets the display supply the host with information about its identity and capabilities independent of the communications protocol used between the monitor and host. A request, from a user-mode application, to read a monitor's EDID is processed by the function driver (Monitor.sys) in that monitor's device stack. When the monitor function driver receives a request to retrieve the monitor's EDID, it sends a request to the display port/miniport driver pair that is represented by the physical device object (PDO) at the bottom of the monitor's device stack. The display port/miniport driver pair uses the Display Data Channel (DDC) protocol to read the monitor's EDID over the I²C bus, which is a simple two-wire bus built into all standard monitor cables.
 
-The [*EDID*](https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-edid) can be obtained using the ACPI\_METHOD\_OUTPUT\_DDC method whose alias is defined in Dispmprt.h. This method is required for integrated LCDs that do not have another standard mechanism for returning EDID data.
+The EDID can be obtained using the [ACPI_METHOD_OUTPUT_DDC](https://docs.microsoft.com/windows-hardware/drivers/bringup/other-acpi-namespace-objects) method whose alias is defined in [Dispmprt.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/). This method is required for integrated LCDs that do not have another standard mechanism for returning EDID data.
 
-For more information about communication between display adapters and monitors, see the following topics:
+For more information about communication between display adapters and monitors, see the following topic:
 
 [I2C Bus and Child Devices of the Display Adapter](i2c-bus-and-child-devices-of-the-display-adapter.md)
 
-[I2C Functions](https://msdn.microsoft.com/library/windows/hardware/ff567383)
-
-[I2C Functions Implemented by the Video Port Driver](https://msdn.microsoft.com/library/windows/hardware/ff567384)
-
 For details about EDID structures and the DDC protocol, see the following standards published by the Video Electronics Standards Association (VESA):
 
--   Enhanced Display Data Channel Standard
+-   Enhanced Display Data Channel Standard (E-DDC)
 
--   Enhanced EDID Standard
+-   Enhanced EDID Standard (E-EDID)
 
-For details about the I²C bus, see the I²C Bus Specification published by Philips Semiconductors.
+You can download these standards from [vesa.org](https://vesa.org/vesa-standards/) in the *Free Standards* section.
+
+For details about the I²C bus, see the [I²C Bus Specification](https://www.i2c-bus.org/specification/) published by Philips Semiconductors.
 
  
 

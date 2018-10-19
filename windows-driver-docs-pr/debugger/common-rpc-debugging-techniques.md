@@ -5,9 +5,6 @@ ms.assetid: 4439ba40-909d-4fa8-a96d-8ffaf90e22d9
 keywords: ["RPC debugging, common techniques"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

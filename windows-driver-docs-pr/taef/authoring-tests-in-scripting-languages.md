@@ -2,11 +2,7 @@
 title: Authoring Tests in Scripting Languages
 description: Authoring Tests in Scripting Languages
 ms.assetid: 4F5328E4-4817-4391-BF56-EC9E7F469AA7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ Out of the box, Windows supports JScript and VBScript only.
 
 For script language tests, TAEF uses a slightly modified [Windows Script Components](http://msdn.microsoft.com/library/07zhfkh8.aspx) file format. The following examples shows a test file that contains VBScript and JScript test classes.
 
-```
+```cpp
 1   <?xml version="1.0" ?>
 2
 3   <!-- Debugging helpers -->
@@ -139,13 +135,13 @@ For script language tests, TAEF uses a slightly modified [Windows Script Compone
 
 This example is an XML file and starts with an ordinary XML header:
 
-```
+```cpp
 <?xml version="1.0" ?>
 ```
 
 You configure debug settings for your file by setting the attributes **error** and **debug**:
 
-```
+```cpp
 <?component error="true" debug="true"?>
 ```
 
@@ -154,7 +150,7 @@ You configure debug settings for your file by setting the attributes **error** a
 
 The **&lt;package&gt;** element encloses test class definitions in a **.wsc** file. After this element, you can insert module level metadata by adding **ModuleProperty** elements:
 
-```
+```cpp
 <ModuleProperty name = "Owner" value = "Someone"/>
 ```
 

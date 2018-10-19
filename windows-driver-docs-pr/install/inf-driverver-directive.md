@@ -10,11 +10,7 @@ api_name:
 - INF DriverVer Directive
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ ms.localizationpriority: medium
 
 A **DriverVer** directive specifies version information for drivers installed by this INF.
 
-```
+```cpp
 [Version] |
 [DDInstall]
  
@@ -60,7 +56,7 @@ When the operating system searches for drivers, it selects a driver that has a m
 Examples
 --------
 
-```
+```cpp
 [Version]
 ...
 DriverVer=09/28/1999,5.00.2136.1

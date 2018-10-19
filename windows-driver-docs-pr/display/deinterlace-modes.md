@@ -4,11 +4,7 @@ description: Deinterlace Modes
 ms.assetid: 0418ab48-94f3-4914-b07a-ed22dc893544
 keywords:
 - deinterlacing WDK DirectX VA , modes
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

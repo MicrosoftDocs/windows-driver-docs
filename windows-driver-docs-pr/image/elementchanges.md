@@ -9,11 +9,7 @@ api_name:
 - wscn ElementChanges
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ElementChanges** element contains the changes to the [**ScannerDe
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ElementChanges>
   child elements
 </wscn:ElementChanges>
@@ -85,7 +81,7 @@ Remarks
 
 The WSD Scan Service must include an **ElementChanges** element when it generates a [**ScannerElementsChangeEvent**](scannerelementschangeevent.md) element. Each child element of **ElementChanges** must contain all of its required child elements. If an optional element is missing from the returned XML, the WSD Scan Service is indicating to the client that the service no longer supports that element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DefaultScanTicket**](defaultscanticket.md)

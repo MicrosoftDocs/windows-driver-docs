@@ -2,11 +2,7 @@
 title: Microsoft-defined Bluetooth HCI commands and events
 description: The Bluetooth Host-Controller Interface (HCI) specifies all interactions between a host and a Bluetooth radio controller.
 ms.assetid: 68E34B92-155B-401E-8D90-5BD1AF036B4D
-ms.author: windowsdriverdev
-ms.date: 02/0720/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 02/07/2018
 ms.localizationpriority: medium
 ---
 
@@ -47,7 +43,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\<Device instance path>\Device P
 
 This example command adds the registry value from the command line.
 
-```
+```cpp
 REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\<Device instance path>\Device Parameters" /v VsMsftOpCode /t REG_DWORD /d <Vendor specific command code>
 
 ```
@@ -55,7 +51,7 @@ REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\<Device instance path>
 ### Using INF to set the VsMsftOpCode registry key
 The vendor-specific command code can also be added via INF Files. This sample shows how and where to add the vendor specific command code so that it is automatically added to the registry.
 
-``` 
+```cpp
 [radio.NTamd64.HW]
 AddReg=radio.NTamd64.HW.AddReg
 [radio.NTamd64.HW.AddReg]
@@ -479,7 +475,7 @@ Subcommand_opcode (1 octet):
 
 | Value  |  Parameter description |
 |---|---|
-|0x04| The subcommand opcode for  for HCI_VS_MSFT_LE_Cancel_Monitor_Adver. |
+|0x04| The subcommand opcode for HCI_VS_MSFT_LE_Cancel_Monitor_Adver. |
 
 
 #### Events_generated__unless_masked_away

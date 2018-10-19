@@ -9,11 +9,7 @@ api_name:
 - wscn ScannerName xml lang "..."
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ScannerName** element specifies the administratively assigned use
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScannerName xml:lang="..."
   lang = "xs:string">
   text
@@ -102,23 +98,12 @@ Examples
 
 The following code example shows how you can use the ScannerName element.
 
-```
+```xml
 <wscn:ScannerName xml:lang="en-AU, en-CA, en-GB, en-US">
   Accounting Scanner in Copy Room 2
 </wscn:ScannerName>
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**ScannerDescription**](scannerdescription.md)
-
- 
-
- 
-
-
-
-
-
-

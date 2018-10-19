@@ -2,11 +2,7 @@
 title: Sample INF Models Sections for Target Operating Systems
 description: Sample INF Models Sections for One or More Target Operating Systems
 ms.assetid: bc1d9a5f-573f-4773-8716-8ac53478d0ee
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +25,7 @@ This topic shows a sample INF file that installs a driver package on various ope
 
 -   [**INF CopyFiles directives**](inf-copyfiles-directive.md) that copies platform-specific files to the target x86- and AMD64-based systems.
 
-```
+```cpp
 [Version]
 Signature       = "$Windows NT$"
 Class           = Net

@@ -10,11 +10,7 @@ api_name:
 - INF DefaultInstall.Services Section
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ ms.localizationpriority: medium
 
 A **DefaultInstall.Services** section contains one or more [**AddService**](inf-addservice-directive.md) directives referencing additional INF-writer-defined sections in an INF file. This section is equivalent to the [**INF *DDInstall*.Services**](inf-ddinstall-services-section.md) section, and is used in association with an [**INF DefaultInstall**](inf-defaultinstall-section.md) section.
 
-```
+```cpp
 [DefaultInstall.Services] |
 [DefaultInstall.nt.Services] |
 [DefaultInstall.ntx86.Services] |

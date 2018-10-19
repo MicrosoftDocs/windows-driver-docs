@@ -3,11 +3,7 @@ title: Informing an Application of Item Tree Changes
 author: windows-driver-content
 description: Informing an Application of Item Tree Changes
 ms.assetid: 6b3cb1d0-ab9f-4895-8c3f-f66c398960bb
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ Note that when the minidriver sends out the event that indicates that the tree h
 
 The following example shows an implementation of the **IWiaMiniDrv::drvDeviceCommand** method.
 
-```
+```cpp
 HRESULT _stdcall CWIADevice::drvDeviceCommand(
   BYTE        *pWiasContext,
   LONG        lFlags,

@@ -2,11 +2,7 @@
 title: Step 3 The Driver for the Device is Installed
 description: Step 3 The Driver for the Device is Installed
 ms.assetid: 292c5ffe-fbdf-42b8-9642-024c78709843
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

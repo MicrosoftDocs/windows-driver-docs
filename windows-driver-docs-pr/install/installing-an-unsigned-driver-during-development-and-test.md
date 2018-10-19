@@ -12,11 +12,7 @@ keywords:
 - kernel debuggers WDK driver signing
 - kernel-mode driver signing WDK
 - F8 key WDK drvier signing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +29,7 @@ Windows Vista and later versions of Windows support the F8 Advanced Boot Option
 
 Attaching an active kernel debugger to a development or test computer disables load-time signature enforcement for kernel-mode drivers. To use this debugging configuration, attach a debugging computer to a development or test computer, and enable kernel debugging on the development or test computer by running the following command:
 
-```
+```cpp
 bcdedit -debug on
 ```
 
@@ -45,7 +41,7 @@ However, there are situations in which a developer might need to have a kernel d
 
 In order to facilitate debugging such issues, the [kernel-mode code signing policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md) supports the following registry value:
 
-```
+```cpp
 HKLM\SYSTEM\CurrentControlSet\Control\CI\DebugFlags
 ```
 

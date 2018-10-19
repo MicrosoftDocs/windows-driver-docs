@@ -5,9 +5,6 @@ ms.assetid: 297336c2-85fb-4235-a7ab-0bbf571b8b98
 keywords: ["kernel streaming debugging, video stream stall, logging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +21,7 @@ In general, data is moved downstream only by triggering events, the minidriver's
 
 -   Look for problems in the code related to the processing dispatch, in particular where it queues to hardware and where clone pointers are created.
 
--   Look for problems in the code related to the driver's deferred procedure call (DPC), especially where buffers are completed or any calls are made to [KsStreamPointerDelete](http://go.microsoft.com/fwlink/p/?linkid=56550).
+-   Look for problems in the code related to the driver's deferred procedure call (DPC), especially where buffers are completed or any calls are made to [KsStreamPointerDelete](https://go.microsoft.com/fwlink/p/?linkid=56550).
 
 -   Look for problems in the startup code for the stream.
 

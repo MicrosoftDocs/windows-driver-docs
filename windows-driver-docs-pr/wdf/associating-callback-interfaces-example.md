@@ -7,11 +7,7 @@ keywords:
 - callback objects WDK UMDF
 - callback interfaces WDK UMDF
 - associating callback interfaces WDK UMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The following code example shows how a driver implements a create-instance method that the driver uses to [create the device callback object](creating-callback-objects-example.md). The driver allocates the callback context and associates the supplied **IUnknown** with one or more callback interfaces. The framework can subsequently use **QueryInterface** to discover the callback interfaces supported by the driver.
 
-```
+```cpp
 static HRESULT CreateInstance(
                   IUnknown **ppUnknown, 
                   IWDFDeviceInitialize *pDeviceInit,

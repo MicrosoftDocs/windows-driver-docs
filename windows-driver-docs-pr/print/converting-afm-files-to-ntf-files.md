@@ -11,11 +11,7 @@ keywords:
 - AFM files
 - converting AFM files to NTF files
 - Adobe Font Metrics WDK Pscript
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,7 +43,7 @@ Verbose. This option creates a command output stream that contains a textual dis
 <a href="" id="-o"></a>**-o**  
 Omit standard Western glyph sets. By default, Makentf.exe includes the standard Western glyph sets when generating an .ntf file. If you are creating multiple .ntf files, you only need to include the Western glyph sets in one of the files, as long as all the files will be used together. For example, suppose you are creating one .ntf file that contains Roman font metrics and another that contains Japanese font metrics. You might use the following commands:
 
-```
+```cpp
 makentf -win32 roman.ntf roman1.afm roman2.afm roman3.afm
 makentf -win32 -o jpn.ntf jpn1.afm jpn2.afm jpn3.afm
 ```
@@ -64,7 +60,7 @@ An additional file, PSFamily.dat, is provided with the WDK and must reside in th
 
 Before a standard .afm file can be converted, you must add a line similar to the following:
 
-```
+```cpp
 Comment UniqueID IDnumber
 ```
 

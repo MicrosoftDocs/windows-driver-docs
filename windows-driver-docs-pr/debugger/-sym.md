@@ -5,9 +5,6 @@ ms.assetid: 84551b24-740c-4289-acc4-8a0053f80b41
 keywords: ["symbols, noisy symbol loading", "symbols, prompts", "sym Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!sym** extension controls noisy symbol loading and symbol prompts.
 
-```
+```dbgcmd
 !sym 
 !sym noisy 
 !sym quiet 

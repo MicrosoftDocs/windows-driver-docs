@@ -5,9 +5,6 @@ ms.assetid: ceba1694-ed12-4e7a-85c9-9ad73a046bf3
 keywords: ["Bug Check 0x7 INVALID_SOFTWARE_INTERRUPT", "INVALID_SOFTWARE_INTERRUPT"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

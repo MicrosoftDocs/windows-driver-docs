@@ -6,11 +6,7 @@ ms.assetid: 31c540ec-c1d0-48e3-9eab-b458a5213f7e
 keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , about platform-specific hardware error driver plug-ins
 - PSHED plug-ins WDK WHEA , about platform-specific hardware error driver plug-ins
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ Platform vendors can supplement the default PSHED functionality by providing PSH
 
 A PSHED plug-in is implemented as a [Windows Driver Model](https://msdn.microsoft.com/library/windows/hardware/ff565698) (WDM) device driver that is loaded by the Plug and Play (PnP) manager when a specific hardware identifier is enumerated during system startup. The platform vendor specifies the hardware identifier that initiates loading of the PSHED plug-in. This hardware identifier can be in the ACPI namespace or it can be in another device namespace.
 
-PSHED plug-ins do not handle any I/O requests that are initiated by a user-mode application or by a higher level driver. Therefore, a PSHED plug-in is only required to implement driver dispatch routines (see [**DRIVER_DISPATCH**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)) to handle [IRP_MJ_PNP](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-pnp) and [IRP_MJ_POWER](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-power) IRPs. PSHED plug-ins do not have to register device interfaces or create symbolic links for their device objects.
+PSHED plug-ins do not handle any I/O requests that are initiated by a user-mode application or by a higher level driver. Therefore, a PSHED plug-in is only required to implement driver dispatch routines (see [**DRIVER_DISPATCH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)) to handle [IRP_MJ_PNP](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-pnp) and [IRP_MJ_POWER](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-power) IRPs. PSHED plug-ins do not have to register device interfaces or create symbolic links for their device objects.
 
 A PSHED plug-in participates in one or more of the following [functional areas](functional-areas.md) that are associated with the handling of hardware errors:
 

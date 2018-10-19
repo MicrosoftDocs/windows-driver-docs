@@ -5,9 +5,6 @@ ms.assetid: 1b838238-63b3-4618-bc59-6b4d74274b9c
 keywords: ["rpcexts.getclientcallinfo Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!rpcexts.getclientcallinfo** extension searches the system's RPC state information for client call (CCALL) information.
 
-```
+```dbgcmd
 !rpcexts.getclientcallinfo [ CallID | 0 [ IfStart | 0 [ ProcNum | 0xFFFF [ProcessID|0] ] ] ] 
 !rpcexts.getclientcallinfo -? 
 ```
@@ -77,7 +74,7 @@ This extension can only be used with CDB or with user-mode WinDbg. It is only av
 
 Here is an example:
 
-```
+```dbgcmd
 0:002> !rpcexts.getclientcallinfo
 Searching for call info ...
 ## PID  CELL ID   PNO  IFSTART  TIDNUMBER CALLID   LASTTIME PS CLTNUMBER ENDPOINT

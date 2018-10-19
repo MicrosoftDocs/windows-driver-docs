@@ -5,9 +5,6 @@ ms.assetid: 8c7ce3f8-46c4-408c-aab5-00d654bddfcd
 keywords: ["EngExtCpp extensions, libraries"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

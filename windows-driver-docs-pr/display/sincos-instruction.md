@@ -2,11 +2,7 @@
 title: SINCOS Instruction Format
 description: SINCOS Instruction Format
 ms.assetid: df9b51ef-5a9f-4222-a0be-a40d5b577f9a
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -64,7 +60,7 @@ The maximum absolute error is 0.002.
 
 The following shows the Taylor series for sin(x) and cos(x):
 
-```
+```cpp
 (1) cos(x) = 1 - x2/2! + x4/4! - x6/6!
 sin(x) = x - x3/3! + x5/5! - x7/7! = x*(1 - x2/3! + x4/5! - x6/7!)
 To increase precision we compute cos(x) using cos(x/2):
@@ -80,7 +76,7 @@ a + x2*b + x4*c + x6*d = a+x2*(b + x2*(c + x2*d)
 
 The following shows the implementation for SINCOS:
 
-```
+```cpp
 SRC2 should be constant (1.f/(7!*128), 1.f/(6!*64), 1.f/(4!*16), 1.f/(5!*32) )
 SRC3 should be constant (1.f/(3!*8), 1.f/(2!*8), 1.f, 0.5f )
 VECTOR v1 = EvalSource(SRC1);
@@ -100,7 +96,7 @@ WriteResult(v, DST);
 
 If an application must compute SINCOS for an arbitrary angle, the angle can be mapped to the range -Pi...+Pi by using the following macro (r0.x holds the original angle):
 
-```
+```cpp
 def c0, Pi, 0.5f, 2*Pi, 1/(2*Pi)
 mad r0.x, r.x, c0.w, c0.y
 frc r0.x, r0.x

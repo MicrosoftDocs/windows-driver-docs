@@ -5,9 +5,6 @@ ms.assetid: dee75298-903d-438f-a66e-fddcfcd74ec7
 keywords: ["File Open Executable", "starting the debugger, File Open Executable"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

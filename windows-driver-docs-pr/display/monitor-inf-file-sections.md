@@ -9,11 +9,7 @@ keywords:
 - DDInstall section WDK Windows 2000 display
 - Models section WDK Windows 2000 display
 - SourceDisksFiles section WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +29,7 @@ You can also use an INF file to override the monitor Extended Display Identifica
 
 Files that must be copied during monitor installation should be placed in the **\[SourceDisksFiles\]** section. The following example identifies an .*icm* file that is on distribution disk 1.
 
-```
+```cpp
 [SourceDisksFiles]
 profile1.icm=1
 ```
@@ -44,7 +40,7 @@ For more general information, see [**INF SourceDisksFiles Section**](https://msd
 
 Information about each model that is supported by a given manufacturer should be placed in the *Models* section. The following example identifies two models manufactured by ACME:
 
-```
+```cpp
 [ACME]
 %ACME-1234%=ACME-1234.Install, Monitor\MON12AB
 %ACME-5678%=ACME-5678.Install, Monitor\MON34CD
@@ -64,7 +60,7 @@ For more general information, see [**INF Models Section**](https://msdn.microsof
 
 The *DDInstall* section provides information to the driver about the operations to be performed when it installs the specified device. Each line in this section provides a link or links to different INF writer-defined sections that appear later in the INF file. The following example shows the *DDInstall* section for the ACME-1234 model:
 
-```
+```cpp
 [ACME-1234.Install]
 DelReg=DEL_CURRENT_REG
 AddReg=ACME-1234.AddReg, 1280, DPMS
@@ -84,7 +80,7 @@ For more general information, see [**INF DDInstall Section**](https://msdn.micro
 An INF writer-defined section can have any name, provided it is unique within the INF file. These sections are pointed to by directives in other sections. The following bullet items discuss some of the INF writer-defined sections from *monsamp.inf*:
 
 -   **DEL\_CURRENT\_REG** section -- identifies four registry keys whose values will be deleted: **MODES**, **MaxResolution**, **DPMS**, and **ICMProfile**. These keys will be updated appropriately with new values in subsequent sections.
-    ```
+    ```cpp
     [DEL_CURRENT_REG]
     HKR,MODES
     HKR,,MaxResolution
@@ -93,13 +89,13 @@ An INF writer-defined section can have any name, provided it is unique within th
     ```
 
 -   **1280** section -- updates the **MaxResolution** registry key to the string value shown.
-    ```
+    ```cpp
     [1280]
     HKR,,MaxResolution,,"1280, 1024"
     ```
 
 -   **DPMS** section -- updates the **DPMS** registry key to 1 (TRUE). For a monitor that does not support power management, the following line should instead set the **DPMS** key value to 0 (FALSE).
-    ```
+    ```cpp
     [DPMS]
     HKR,,DPMS,,1
     ```
@@ -108,7 +104,7 @@ An INF writer-defined section can have any name, provided it is unique within th
 
     Each subkey to the **MODES** key specifies a resolution and can contain up to nine values that are used to specify specific timings or timing ranges. The resolution for each subkey name must be a combination of two integer values--width and height--separated by a comma. The specific timings are named from **Mode1** to **Mode9**. The naming must be contiguous. The string values allow frequencies for horizontal and vertical sync pulses to be specified, either as single values or as ranges, where a range is given as a minimum value, followed by a dash (-), followed by a maximum value. The frequency values are currently interpreted only as integers with any digits that follow the decimal place ignored. The string allows the polarity of the horizontal and vertical sync pulses to be specified. However, these polarity values are currently ignored. Only the maximum horizontal sync pulse value is required in each string. For example, the following shows that for each subkey string, the information in square brackets is optional:
 
-    ```
+    ```cpp
     [{MinHSync}-]{MaxHSync}[,{MinVSync}-{MaxVSynx}] 
     ```
 
@@ -116,7 +112,7 @@ An INF writer-defined section can have any name, provided it is unique within th
 
     The first line of the following sets the **"MODES\\1280,1024"** subkey to the string value that is shown. The same line also identifies a value name for this subkey, **Mode1**. The first pair of numbers in the string following the **Mode1** subkey specifies the range of horizontal synchronization frequencies, in KHz. The next pair of numbers in this string specifies the range of vertical synchronization frequencies, in Hz. In the second line, the **PreferredMode** registry key is set to the values shown in the accompanying string. The values in the string are used to set both the horizontal and the vertical resolution, in pixels, and the screen refresh rate, in hertz (Hz), for the preferred screen mode. Only the horizontal and the vertical resolution values are required in the **PreferredMode** string. For example, the following shows that for the **PreferredMode** string, the information in square brackets is optional:
 
-    ```
+    ```cpp
     {Width},{Height}[,{Frequency}]
     ```
 
@@ -124,7 +120,7 @@ An INF writer-defined section can have any name, provided it is unique within th
 
     The third line sets the **ICMProfile** key to the string value **"profile1.icm"**.
 
-    ```
+    ```cpp
     [ACME-1234.AddReg]
     HKR,"MODES\1280,1024",Mode1,,"27.0-106.0,55.0-160.0,+,+"
     HKR,,PreferredMode,,"1024,768,70"

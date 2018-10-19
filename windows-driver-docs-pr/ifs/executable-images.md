@@ -8,11 +8,7 @@ keywords:
 - semantic model checks WDK file systems , executable images
 - executable images WDK file systems
 - memory mapped files WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ ms.localizationpriority: medium
 
 Executable files are loaded into the address space of a process using a memory mapped image file. The file itself is not required to be opened nor does a handle need to be created because the mapping is done by means of a section. File systems must check to enforce these special semantics, assuming that they support memory mapped files. For example, the FASTFAT file system code to check for this case can be found in the **FatOpenExistingFCB** function in the Create.c source file from the fastfat samples that the WDK contains:
 
-```
+```cpp
     //
     //  If the user wants write access to the file, make sure there
     //  is not a process mapping this file as an image. Any attempt to

@@ -5,9 +5,6 @@ ms.assetid: fcea61b1-2ec5-4c80-abd7-269b95d56cd4
 keywords: ["(System Status) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

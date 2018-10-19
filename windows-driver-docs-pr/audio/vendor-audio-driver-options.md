@@ -5,11 +5,7 @@ ms.assetid: 4306c027-28ae-4299-83c0-29d892bf64ca
 keywords:
 - WDM audio drivers WDK , vendor options
 - audio drivers WDK , vendor options
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Reading Restart Records from a CLFS Stream
 ms.assetid: 310545f6-d10d-481e-829d-287b045b98cd
 keywords: ["Common Log File System WDK kernel , restart records", "CLFS WDK kernel , restart records", "restart records WDK CLFS", "reading restart records"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

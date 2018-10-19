@@ -5,9 +5,6 @@ ms.assetid: 9FE3E885-98BC-4FCC-9E1C-DBECD070F92A
 keywords: ["ndiskd.filterdriver Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

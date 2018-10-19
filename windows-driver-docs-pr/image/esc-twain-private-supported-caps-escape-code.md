@@ -3,11 +3,7 @@ title: ESC_TWAIN_PRIVATE_SUPPORTED_CAPS Escape Code
 author: windows-driver-content
 description: ESC_TWAIN_PRIVATE_SUPPORTED_CAPS Escape Code
 ms.assetid: 99b9f180-018b-47c4-ab8d-dc037e3f637a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ In order to determine private TWAIN-supported capabilities, a TWAIN application 
 
  
 
-```
+```cpp
 STDMETHODIMP CWIADevice::Escape(STI_RAW_CONTROL_CODE EscapeFunction,
   LPVOID               lpInData,
   DWORD                cbInDataSize,

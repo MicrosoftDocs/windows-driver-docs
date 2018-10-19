@@ -1,11 +1,8 @@
 ---
-title: !tt 
-description: The the !tt time travel debugger extension that allows you to navigate forward and backwards in time.
+title: Time Travel Debugging Extension !tt Command 
+description: The !tt time travel debugger extension that allows you to navigate forward and backwards in time.
 ms.author: domars
 ms.date: 09/22/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +14,7 @@ ms.localizationpriority: medium
 
 # ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) !tt (time travel)
 
-The the !tt (time travel) debugger extension that allows you to navigate forward and backwards in time.
+The !tt (time travel) debugger extension that allows you to navigate forward and backwards in time.
 
 
 ## !tt navigation commands

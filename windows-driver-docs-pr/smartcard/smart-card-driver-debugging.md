@@ -7,11 +7,7 @@ keywords:
 - debugging drivers WDK smart card
 - DebugLevel
 - vendor-supplied drivers WDK smart card , debugging
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ ms.localizationpriority: medium
 
 The smart card driver libraries support several debugging features. Each debugging feature is represented by one of the following constants, which are defined in the *Smclib.h* header file:
 
-```
+```cpp
 DEBUG_IOCTL
 DEBUG_ATR
 DEBUG_PROTOCOL
@@ -40,7 +36,7 @@ There are two ways to set the debugging level. First, you can use the smart card
 
 In both cases, you must pass the value for the debugging level you want to the program or routine that sets the debugging level. For instance, to set the debugging level from the driver by using a smart card library routine, make the following call:
 
-```
+```cpp
 SmartcardSetDebugLevel(DebugLevel);
 ```
 
@@ -50,7 +46,7 @@ SmartcardSetDebugLevel(DebugLevel);
 
 To write debugging messages from a reader driver, the driver must call the following routine:
 
-```
+```cpp
 SmartcardDebug(
  ULONG DebugLevel,
  PCHAR Message

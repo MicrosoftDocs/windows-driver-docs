@@ -5,9 +5,6 @@ ms.assetid: 0c5a9d1e-ab61-4b14-b06b-25cde582cc73
 keywords: ["apc Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -5,9 +5,6 @@ ms.assetid: b9725499-9db3-422f-850b-97db4865b74d
 keywords: ["ks.graph Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ks.graph** extension command displays a textual description of the kernel mode graph in topologically sorted order.
 
-```
+```dbgcmd
 !ks.graph Object [Level] [Flags] 
 ```
 
@@ -81,7 +78,7 @@ Issue a **!ks.graph** command with no arguments for help.
 
 Here is an example of the **!ks.graph** display, with the address of a filter object:
 
-```
+```dbgcmd
 kd> !graph 829493c4
 Attempting a graph build on 829493c4...  Please be patient...
 

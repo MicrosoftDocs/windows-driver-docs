@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Using the Current File Position
 ms.assetid: d342d973-8fff-4d00-a275-114012c17727
 keywords: ["files WDK kernel", "file objects WDK kernel", "objects WDK file objects", "file handles WDK kernel", "handle to file WDK kernel", "current file positions WDK kernel", "file positions WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

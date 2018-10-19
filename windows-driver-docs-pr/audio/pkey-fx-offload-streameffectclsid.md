@@ -2,11 +2,7 @@
 title: PKEY\_FX\_Offload\_StreamEffectClsid
 description: In Windows 10, version 1511 and later, the PKEY\_FX\_Offload\_StreamEffectClsid property key identifies the stream effect (SFX) supported by the driver that will be loaded during offload playback.
 ms.assetid: 2258E1F8-A96E-4991-B882-00197C2DB0B3
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ The INF file property key instructs the audio endpoint builder to set the CLSIDs
 
 An INF file specifies settings for an audio processing mode effect in the add-registry section for that device. The following INF example shows the strings and add-registry sections that loads the streaming processing modes supported into the registry.
 
-```
+```inf
 [Strings]
 PKEY_FX_Offload_StreamEffectClsid   = "{D04E05A6-594B-4fb6-A80D-01AF5EED7D1D},11"
 ...

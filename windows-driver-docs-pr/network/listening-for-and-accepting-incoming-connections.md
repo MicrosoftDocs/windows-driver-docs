@@ -12,11 +12,7 @@ keywords:
 - SO_CONDITIONAL_ACCEPT
 - accepting connections WDK Winsock Kernel
 - WskAccept
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -138,7 +134,7 @@ As an alternative to calling the [**WskAccept**](https://msdn.microsoft.com/libr
 
 The following code example shows how a WSK application can accept an incoming connection by the WSK subsystem calling a listening socket's *WskAcceptEvent* event callback function.
 
-```
+```cpp
 // Dispatch table of event callback functions for accepted sockets
 const WSK_CLIENT_CONNECTION_DISPATCH ConnectionDispatch =
 {

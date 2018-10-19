@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # legacyMode XML Element
@@ -21,7 +22,7 @@ The **legacyMode** XML element is an empty element that sets the **legacyMode** 
 
 **Element Tag**
 
-```
+```cpp
 <legacyMode>
 ```
 
@@ -64,7 +65,7 @@ By default, DPInst installs only signed [driver packages](https://msdn.microsoft
 
 The following code example demonstrates a **legacyMode** element.
 
-```
+```cpp
 <dpinst>
   ...
   <legacyMode/>

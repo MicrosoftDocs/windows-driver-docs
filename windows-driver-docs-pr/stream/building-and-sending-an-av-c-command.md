@@ -10,11 +10,7 @@ keywords:
 - AV/C WDK , commands
 - IRPs WDK AV/C
 - I/O WDK AV/C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +24,7 @@ The following procedure outlines the process to build and send an AV/C command:
 
      
 
-    ```
+    ```cpp
     PIRP Irp;
     Irp = IoAllocateIrp(DeviceExtension->ParentDeviceObject->StackSize, FALSE);
     ```
@@ -39,11 +35,11 @@ The following procedure outlines the process to build and send an AV/C command:
 
     The following is a code sample that shows how the AVC\_COMMAND\_IRB structure might be allocated and initialized for an AV/C control command that consists of a single operand byte:
 
-    ```
+    ```cpp
     #include <avc.h>
     ...
-    /* Define a custom pool tag to identify your subunit driver&#39;s memory allocations */
-    #define CUSTOM_DRIVER_POOL_TAG &#39;C/VA&#39;
+    /* Define a custom pool tag to identify your subunit driver's memory allocations */
+    #define CUSTOM_DRIVER_POOL_TAG 'C/VA'
     ...
     PAVC_COMMAND_IRB  AvcIrb;
     ...
@@ -73,14 +69,14 @@ The following procedure outlines the process to build and send an AV/C command:
 
     The following code sample shows how to set up the IRP for *Avc.sys* to process:
 
-    ```
+    ```cpp
     #include <avc.h>
     ...
     PAVC_COMMAND_IRB  AvcIrb; 
     PIRP Irp;
     PIO_STACK_LOCATION NextIrpStack;
     ...
-    AvcIrb = ExAllocatePoolWithTag(NonPagedPool, sizeof(AVC_COMMAND_IRB), &#39;C/VA&#39;);
+    AvcIrb = ExAllocatePoolWithTag(NonPagedPool, sizeof(AVC_COMMAND_IRB), 'C/VA');
     ...
     Irp = IoAllocateIrp(DeviceExtension->ParentDeviceObject->StackSize, FALSE);
     ...
@@ -99,7 +95,8 @@ The following procedure outlines the process to build and send an AV/C command:
     If, however, the subunit driver is sending a request that is likely to involve interim processing, the completion routine is responsible for handling the response and freeing the IRP and IRB resources. The main code path relinquishes all IRP processing responsibility to the completion routine.
 
 5.  The subunit driver then calls [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) and passes the next lower driver (as returned by the call to [**IoAttachDeviceToDeviceStack**](https://msdn.microsoft.com/library/windows/hardware/ff548300) in the subunit driver's **AddDevice** routine) and the IRP to be processed to *Avc.sys*.
-    ```
+
+    ```cpp
     status = IoCallDriver( DeviceExtension->NextLowerDriver, Irp );
     ```
 

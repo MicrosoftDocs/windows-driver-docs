@@ -2,11 +2,7 @@
 title: Device Metadata
 description: Device Metadata
 ms.assetid: b3546d53-d51f-46d2-9dfb-ec63da4809e2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +27,7 @@ When you submit a device for certification, you can also submit a device metadat
 ## <span id="related_topics"></span>Related topics
 
 
-[Get Started](https://msdn.microsoft.com/library/windows/hardware/br230779.aspx)
+- [Get Started](https://msdn.microsoft.com/library/windows/hardware/br230779.aspx)
 
  
 

@@ -9,11 +9,7 @@ keywords:
 - in-box autoconfiguration support WDK printer , autodetecting duplex unit
 - detecting duplex unit
 - duplex unit WDK printer autoconfiguration
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 Suppose that your GPD file has a Duplex feature that is defined like the following example, such that the duplex unit is installable:
 
-```
+```GPD
 *Feature: Duplex
 {
    *rcNameID: =TWO_SIDED_PRINTING_DISPLAY
@@ -80,7 +76,7 @@ Suppose that your GPD file has a Duplex feature that is defined like the followi
 
 The following GDL code example provides the ability to autodetect the existence of a duplex unit (which is described in the preceding GPD code example) and set the appropriate option. In this example, the spooler sends the query that is shown in the \***BidiQuery** construct. When the printer receives the query, it responds with one of the two possible \***Option** construct values.
 
-```
+```GDL
 *Feature: DuplexUnit
 {
   *% Note that the *BidiQuery and *BidiResponse constructs must have the same names

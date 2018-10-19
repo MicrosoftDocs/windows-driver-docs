@@ -9,11 +9,7 @@ keywords:
 - tutorials WDK GDL
 - GDL WDK , tutorials
 - templates WDK GDL , defining name limits
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +26,7 @@ Make this change without deleting or modifying any of the previously defined tem
 
 The following template satisfies the conditions.
 
-```
+```cpp
 *Template:  PAPER_SIZE_OPT_NAME
 {
 *Name:  "*Name"  *% isolate this branch from base templates

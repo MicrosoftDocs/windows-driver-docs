@@ -4,9 +4,6 @@ description: Debugging the Service Application Manually
 ms.assetid: 9be3976f-dd56-42f2-ac85-1c5a1f87a4ee
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +18,7 @@ If the service application you want to debug is combined with other services in 
 
 To determine the new PID of the service, issue the following Service Configuration tool (Sc.exe) command, where *ServiceName* is the name of the service:
 
-```
+```console
 sc queryex ServiceName 
 ```
 
@@ -29,7 +26,7 @@ Now start WinDbg or CDB with this service application as the target. There are t
 
 For example, if the process SpoolSv.exe has a PID of 651 and contains the service named *Spooler*, the following three commands are equivalent:
 
-```
+```console
 windbg -p 651 [AdditionalOptions] 
 windbg -pn spoolsv.exe [AdditionalOptions] 
 windbg -psn spooler [AdditionalOptions] 

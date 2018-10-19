@@ -5,11 +5,7 @@ ms.assetid: 5e346e7e-7460-41d9-aee1-dcc72fc642c1
 keywords:
 - vertex declarations WDK DirectX 9.0
 - texture coordinates WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ A display driver whose display device supports a programmable pixel shader must 
 
 The exception for [source parameter tokens](https://msdn.microsoft.com/library/windows/hardware/ff569716) is with the following instruction:
 
-```
+```cpp
 // D3DSIO_DEF c#,f0,f1,f2,f2
 ```
 

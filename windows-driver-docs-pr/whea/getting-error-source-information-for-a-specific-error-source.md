@@ -9,11 +9,7 @@ keywords:
 - WHEA WDK , getting error source information
 - Windows Hardware Error Architecture WDK , getting error source information
 - hardware error sources WDK WHEA , getting information
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ A user-mode application can get information about a particular [error source](ha
 
 The following code example shows how to get the error source information for a particular error source.
 
-```
+```cpp
 IWbemServices *pIWbemServices;
 ULONG ErrorSourceID;
 BSTR ClassName;

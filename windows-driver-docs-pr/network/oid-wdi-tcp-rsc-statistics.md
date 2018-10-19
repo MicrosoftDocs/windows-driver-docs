@@ -3,11 +3,7 @@ title: OID_WDI_TCP_RSC_STATISTICS
 author: windows-driver-content
 description: OID_WDI_TCP_RSC_STATISTICS is a get command that queries the RSC statistics of the hardware.
 ms.assetid: 9079DD03-597D-4B6D-8515-ECF5DAC2A41A
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - OID_WDI_TCP_RSC_STATISTICS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

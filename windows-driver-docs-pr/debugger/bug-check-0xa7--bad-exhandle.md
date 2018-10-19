@@ -5,9 +5,6 @@ ms.assetid: 9f485894-2653-40d2-b5fe-56e46ba26c1b
 keywords: ["Bug Check 0xA7 BAD_EXHANDLE", "BAD_EXHANDLE"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

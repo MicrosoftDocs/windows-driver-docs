@@ -8,11 +8,7 @@ keywords:
 - Bluetooth WDK , request blocks
 - sending BRBs
 - return values WDK Bluetooth
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,7 +35,7 @@ The following pseudocode example demonstrates how to set up a L2CAP Ping BRB for
 
  
 
-```
+```cpp
 #include <bthddi.h>
 
 // Code for obtaining the BthInterface pointer

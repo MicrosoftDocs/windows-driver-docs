@@ -5,9 +5,6 @@ ms.assetid: EE2325CC-CDC0-4963-A0E8-B8EAB9A633BE
 keywords: ["storagekd.storlogirp Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!storagekd.storlogirp** extension displays the Storport’s internal log entries for the adapter filtered for the IRP provided.
 
-```
+```dbgcmd
 !storagekd.storlogirp <Address> <irp> [<starting_entry> [<ending_entry>]] [L <count>]  
 ```
 

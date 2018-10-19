@@ -4,9 +4,6 @@ description: This topic describes how to use JavaScript to create scripts that u
 ms.assetid: 3442E2C4-4054-4698-B7FB-8FE19D26C171
 ms.author: domars
 ms.date: 12/22/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -1201,7 +1198,7 @@ The following are JavaScript resources that may be useful as you develop JavaScr
 
 -   [JScript Language Tour](https://msdn.microsoft.com/library/t895bwkh.aspx)
 
--   [Mozilla JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+-   [Mozilla JavaScript Reference](https://developer.mozilla.org/docs/Web/JavaScript)
 
 -   [WinJS: The Windows library for JavaScript](https://developer.microsoft.com/windows/develop/winjs)
 

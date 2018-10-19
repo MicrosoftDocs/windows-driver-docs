@@ -5,9 +5,6 @@ ms.assetid: 8680d924-3041-4927-a228-52b281bbc267
 keywords: ["Bug Check 0x6B PROCESS1_INITIALIZATION_FAILED", "PROCESS1_INITIALIZATION_FAILED"]
 ms.author: domars
 ms.date: 06/27/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,11 +3,7 @@ title: OID_PM_REMOVE_WOL_PATTERN
 author: windows-driver-content
 description: As a set, NDIS and protocol drivers use the OID_PM_REMOVE_WOL_PATTERN OID to remove a power management wake on LAN (WOL) pattern from a network adapter.
 ms.assetid: fdaa2646-6f41-4f51-9c27-6194270f26ed
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_PM_REMOVE_WOL_PATTERN Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

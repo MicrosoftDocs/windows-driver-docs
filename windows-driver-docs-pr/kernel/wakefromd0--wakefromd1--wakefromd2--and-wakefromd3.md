@@ -4,11 +4,7 @@ author: windows-driver-content
 description: WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3
 ms.assetid: f01aaceb-babf-42da-bc4b-1a846c84a313
 keywords: ["WakeFromD0", "WakeFromD1", "WakeFromD2", "WakeFromD3"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

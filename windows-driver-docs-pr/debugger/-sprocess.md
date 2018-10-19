@@ -5,9 +5,6 @@ ms.assetid: 03c69f3c-501a-44e4-98e0-bf851ca6d24e
 keywords: ["sprocess Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!sprocess** extension displays information about the specified session process, or about all processes in the specified session.
 
-```
+```dbgcmd
 !sprocess Session [Flags [ImageName]] 
 !sprocess -?
 ```

@@ -1,12 +1,8 @@
 ---
 title: WDI_TLV_CONFIGURED_CIPHER_KEY
-description: WDI_TLV_CONFIGURED_CIPHER_KEY is a TLV that contains contains a list of configured ciphers to be set in OID_WDI_GET_PM_PROTOCOL_OFFLOAD.
+description: WDI_TLV_CONFIGURED_CIPHER_KEY is a TLV that contains a list of configured ciphers to be set in OID_WDI_GET_PM_PROTOCOL_OFFLOAD.
 ms.assetid: 8C7C77F7-FF62-485C-94C4-EE0F1E57D771
-ms.author: windowsdriverdev 
-ms.date: 04/02/2018 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 04/02/2018
 keywords:
  - WDI_TLV_CONFIGURED_CIPHER_KEY Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -14,7 +10,7 @@ ms.localizationpriority: medium
 
 # WDI_TLV_CONFIGURED_CIPHER_KEY
 
-WDI_TLV_CONFIGURED_CIPHER_KEY is a TLV that contains contains a list of configured ciphers to be set in [OID_WDI_GET_PM_PROTOCOL_OFFLOAD](oid-wdi-get-pm-protocol-offload.md). Drivers must return any GTK or iGTK keys that are currently configured. This TLV is a value of the [WDI_TLV_PM_PROTOCOL_OFFLOAD_80211RSN_REKEY](wdi-tlv-pm-protocol-offload-80211rsn-rekey.md) TLV.
+WDI_TLV_CONFIGURED_CIPHER_KEY is a TLV that contains a list of configured ciphers to be set in [OID_WDI_GET_PM_PROTOCOL_OFFLOAD](oid-wdi-get-pm-protocol-offload.md). Drivers must return any GTK or iGTK keys that are currently configured. This TLV is a value of the [WDI_TLV_PM_PROTOCOL_OFFLOAD_80211RSN_REKEY](wdi-tlv-pm-protocol-offload-80211rsn-rekey.md) TLV.
 
 ## TLV Type
 

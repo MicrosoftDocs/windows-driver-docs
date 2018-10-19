@@ -2,11 +2,7 @@
 title: SpinLock rule (storport)
 description: This rule verifies that a call to KeAcquireSpinLock is promptly followed by a call to KeReleaseSpinlock.
 ms.assetid: 7D06327F-CE74-4337-8B5C-79189FE15F2F
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["SpinLock rule (storport)"]
 topic_type:
 - apiref

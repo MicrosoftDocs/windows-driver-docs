@@ -5,9 +5,6 @@ ms.assetid: d250643e-13cb-4657-9235-5fdeb1eab89a
 keywords: ["Plug and Play (PnP), device status", "Plug and Play (PnP), device tree", "device status", "device tree"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +16,7 @@ ms.localizationpriority: medium
 
 To display the entire device tree, starting with the root, use **!devnode 0 1**:
 
-```
+```dbgcmd
 kd> !devnode 0 1 
 ```
 
@@ -31,7 +28,7 @@ In the example for the **!devnode** command in the [Extensions for Debugging Plu
 
 The following example shows a device that was created by the PCI bus. This device does not have the DNF\_MADEUP flag set.
 
-```
+```dbgcmd
 0: kd> !devnode 0xfffffa8004483490
 DevNode 0xfffffa8004483490 for PDO 0xfffffa800448d060
   Parent 0xfffffa80036766d0   Sibling 0xfffffa8004482010   Child 0xfffffa80058ad720
@@ -55,7 +52,7 @@ DevNode 0xfffffa8004483490 for PDO 0xfffffa800448d060
 
 1. A devnode for a device with insufficient resources:
 
-```
+```dbgcmd
 kd> !devnode 0xff0d06e8 6
 
 DevNode 0xff0d06e8 for PDO 0xff0d07d0 at level 0x3
@@ -87,7 +84,7 @@ Note that the devnode has no CM Resource List, because it is not started and is 
 
 2. Note that there are no resources stored in this devnode for a legacy driver.
 
-```
+```dbgcmd
 kd> !devnode 0xff0d1648 6
 
 DevNode 0xff0d1648 for PDO 0xff0d22d0 at level 0x2
@@ -104,7 +101,7 @@ DevNode 0xff0d1648 for PDO 0xff0d22d0 at level 0x2
 
 You can retrieve the device object list for the driver for the following types of devices:
 
-```
+```dbgcmd
 kd> !drvobj mga_mil
 
 Driver object (ff0bbc10) is for:
@@ -117,7 +114,7 @@ ff0bb900
 
 You can then dump the data for this device object:
 
-```
+```dbgcmd
 kd> !devobj ff0bb900
 
 Device object (ff0bb900) is for:
@@ -129,7 +126,7 @@ Device queue is not busy.
 
 Finally, you can dump the devnode referred by the device object. This devnode is not linked in the device tree. It represents a "pseudo-devnode" used to claim resources for the legacy device. Note the DNF\_RESOURCE\_REPORTED flag that indicates the device is a reported detected device.
 
-```
+```dbgcmd
 kd> !devnode ff0bb808 6
 
 DevNode 0xff0bb808 for PDO 0xff0bb900 at level 0xffffffff

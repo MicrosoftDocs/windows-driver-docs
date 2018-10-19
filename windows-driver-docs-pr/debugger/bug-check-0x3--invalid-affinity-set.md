@@ -5,9 +5,6 @@ ms.assetid: e58a872e-8cf8-4d3c-ae54-fe19fadcd57e
 keywords: ["Bug Check 0x3 INVALID_AFFINITY_SET", "INVALID_AFFINITY_SET"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

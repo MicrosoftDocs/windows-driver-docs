@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Managing Power for Individual Devices
 ms.assetid: 95c7e900-5d51-4eb7-8780-1c40befa3599
 keywords: ["power management WDK kernel , device management", "device power management WDK kernel", "system power states WDK kernel", "conserving power WDK kernel", "change power states WDK kernel", "IRPs WDK power management", "I/O request packets WDK power management"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

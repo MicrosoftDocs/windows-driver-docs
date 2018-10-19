@@ -2,11 +2,7 @@
 title: WDDM display miniport driver tasks to support Miracast wireless displays
 description: To support Miracast wireless displays, Windows Display Driver Model (WDDM) display miniport drivers that run in kernel mode need to do the following tasks.
 ms.assetid: D67CAC4F-0409-4E8D-A31A-78C3EB473556
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -103,7 +99,7 @@ The driver should not report more than one Miracast target on any full WDDM grap
 
 The driver also needs to report a correct [**DXGK\_MIRACAST\_DISPLAY\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/dn448486) structure, with pointers to functions that are in kernel-mode address space, when the DirectX graphics kernel subsystem calls the [*DxgkDdiQueryInterface*](https://msdn.microsoft.com/library/windows/hardware/ff559764) function.
 
-When a Miracast session is starting, and a monitor is connected the the Miracast sink, the display miniport driver should set the [**DXGK\_CHILD\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff561010).**Type** member to the **StatusMiracast** constant value, and should also set **DXGK\_CHILD\_STATUS**.**Miracast**.**Connected** to **TRUE**, to report a monitor arrival HPD to the operating system. The driver should set the **DXGK\_CHILD\_STATUS**.**Miracast**.**MiracastMonitorType** member to the correct monitor type that's connected to the sink. If the sink is part of the monitor, this member should be set to **D3DKMDT\_VOT\_MIRACAST**.
+When a Miracast session is starting, and a monitor is connected the Miracast sink, the display miniport driver should set the [**DXGK\_CHILD\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff561010).**Type** member to the **StatusMiracast** constant value, and should also set **DXGK\_CHILD\_STATUS**.**Miracast**.**Connected** to **TRUE**, to report a monitor arrival HPD to the operating system. The driver should set the **DXGK\_CHILD\_STATUS**.**Miracast**.**MiracastMonitorType** member to the correct monitor type that's connected to the sink. If the sink is part of the monitor, this member should be set to **D3DKMDT\_VOT\_MIRACAST**.
 
 If the driver knows the EDID of the monitor, it should report this EDID when the operating system calls the [*DxgkDdiQueryDeviceDescriptor*](https://msdn.microsoft.com/library/windows/hardware/ff559761) function.
 

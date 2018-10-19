@@ -3,6 +3,7 @@ title: HBAFCPScsiEntry WMI Class
 description: HBAFCPScsiEntry WMI Class
 ms.assetid: b20b1e07-38b4-47b0-a870-51e0865fd256
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # HBAFCPScsiEntry WMI Class
@@ -15,7 +16,7 @@ An HBA miniport driver that supports the T11 committee's *Fibre Channel HBA API*
 
 The HBAFCPScsiEntry class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class HBAFCPScsiEntry {
   [HBAType("HBA_FCPID"), WmiDataId(1)] HBAFCPID  FCPId;
   [HBAType("HBA_LUID"), WmiDataId(2)] uint8  Luid[256];

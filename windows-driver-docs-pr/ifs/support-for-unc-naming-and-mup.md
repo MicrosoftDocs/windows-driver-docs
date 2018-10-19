@@ -14,11 +14,7 @@ keywords:
 - prefix cache WDK network redirectors
 - serial prefix resolution WDK network redirectors
 - parallel prefix resolution WDK network redirectors
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ ms.localizationpriority: medium
 
 The multiple UNC provider (MUP) is a kernel-mode component responsible for channeling all remote file system accesses using a Universal Naming Convention (UNC) name to a network redirector (the UNC provider) that is capable of handling the remote file system requests. MUP is involved when a UNC path is used by an application as illustrated by the following example that could be executed from a command line:
 
-```
+```cpp
 notepad \\server\public\readme.txt
 ```
 
@@ -96,7 +92,7 @@ Network redirectors should only allow kernel-mode senders of this IOCTL, by veri
 
 MUP uses the QUERY\_PATH\_REQUEST data structure for the request information.
 
-```
+```cpp
 typedef struct _QUERY_PATH_REQUEST {
     ULONG                PathNameLength;
     PIO_SECURITY_CONTEXT SecurityContext;
@@ -135,7 +131,7 @@ typedef struct _QUERY_PATH_REQUEST {
 
 UNC providers should use the QUERY\_PATH\_RESPONSE data structure for the response information.
 
-```
+```cpp
 typedef struct _QUERY_PATH_RESPONSE {
     ULONG  LengthAccepted;
 } QUERY_PATH_RESPONSE, *PQUERY_PATH_RESPONSE;
@@ -214,7 +210,7 @@ There is one case where a network mini-redirector could receive this IOCTL direc
 
 The order in which providers are queried during prefix resolution is controlled by the REG\_SZ ProviderOrder registry value stored under the following key:
 
-```
+```cpp
 HKLM\System\CurrentControlSet\Control\NetworkProvider\Order
  
 ```
@@ -223,7 +219,7 @@ Individual provider names in the ProviderOrder registry value are separated by c
 
 For example, this value could contain the string:
 
-```
+```cpp
 RDPNP,LanmanWorkstation,WebClient
 ```
 
@@ -239,7 +235,7 @@ Changes to the ProviderOrder registry value require a reboot to take effect in M
 
 MUP uses each provider name listed to find the provider's registry key under the following registry key:
 
-```
+```cpp
 HKLM\System\CurrentControlSet\Services\<ProviderName>
 ```
 

@@ -5,9 +5,6 @@ ms.assetid: 82352d12-4e81-4746-9333-b2cc98eb7a9d
 keywords: ["ptov Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ptov** extension displays the entire physical-to-virtual map for a given process.
 
-```
+```dbgcmd
 !ptov DirBase
 ```
 
@@ -58,7 +55,7 @@ Remarks
 
 Here is an example. First, use [**.process**](-process--set-process-context-.md) and [**!process**](-process.md) to determine the directory base of the current process:
 
-```
+```dbgcmd
 1: kd> .process
 Implicit process is now 852b4040
 1: kd> !process 852b4040 1
@@ -70,7 +67,7 @@ PROCESS 852b4040  SessionId: none  Cid: 0004    Peb: 00000000  ParentCid: 0000
 
 In this case, the directory base is 0x00185000. Pass this address to **!ptov**:
 
-```
+```dbgcmd
 1: kd> !ptov 185000
 X86PtoV: pagedir 185000, PAE enabled.
 15e11000 10000
@@ -92,7 +89,7 @@ The total display is very long.
 
 Here is a 64-bit example.
 
-```
+```dbgcmd
 3: kd> .process
 Implicit process is now fffffa80`0361eb30
 3: kd> !process fffffa80`0361eb30 1

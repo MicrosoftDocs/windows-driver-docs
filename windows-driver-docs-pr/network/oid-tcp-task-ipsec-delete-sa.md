@@ -5,11 +5,7 @@ description: This topic describes the OID_TCP_TASK_IPSEC_DELETE_SA object identi
 ms.assetid: 5f3b1f30-ab44-4d1c-96ff-b70ae6cfe324
 keywords:
 - OID_TCP_TASK_IPSEC_DELETE_SA
-ms.author: windowsdriverdev
 ms.date: 11/06/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

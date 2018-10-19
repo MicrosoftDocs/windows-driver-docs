@@ -5,9 +5,6 @@ ms.assetid: 5f70fbf8-1313-4238-a917-c3fba8c80927
 keywords: ["pnpevent Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!pnpevent** extension displays the Plug and Play device event queue.
 
-```
+```dbgcmd
 !pnpevent [DeviceEvent]
 ```
 

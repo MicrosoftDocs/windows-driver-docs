@@ -5,9 +5,6 @@ ms.assetid: 352a2f96-ff66-41be-94ee-045edbb1f81f
 keywords: ["kuser Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!kuser** extension displays the shared user-mode page (KUSER\_SHARED\_DATA).
 
-```
+```dbgcmd
 !kuser 
 ```
 
@@ -59,7 +56,7 @@ The KUSER\_SHARED\_DATA page gives resource and other information about the user
 
 Here is an example. Note that, in this example, the tick count is displayed in both its raw form and in a more user-friendly form, which is in parentheses. The user-friendly display is available only in Windows XP and later.
 
-```
+```dbgcmd
 kd> !kuser
 _KUSER_SHARED_DATA at 7ffe0000
 TickCount:    fa00000 * 00482006 (0:20:30:56.093)

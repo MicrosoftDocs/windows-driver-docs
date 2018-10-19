@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Creating Export Drivers
 ms.assetid: 60ce7d0d-0eab-4af6-890a-45ab206816aa
 keywords: ["export drivers WDK kernel", "loading export drivers WDK kernel", "importing export driver functions", "module-definition files WDK kernel", ".def files", "def files", "kernel-mode drivers WDK , export drivers"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,13 +30,13 @@ To build a driver as an export driver you must define several Build utility macr
 
 First, you must assign the appropriate value to the **TARGETTYPE** macro, as follows:
 
-```
+```cpp
 TARGETTYPE=EXPORT_DRIVER
 ```
 
 You must also specify a module-definition (.def) file using the **DLLDEF** macro. For example:
 
-```
+```cpp
 DLLDEF="c:\project\driver.def"
 ```
 
@@ -52,7 +48,7 @@ For instance, the entry point for a kernel-mode DLL is always **DllInitialize**.
 
 You cannot specify the entry point using the **DLLENTRY** macro. 
 
-```
+```cpp
 NTSTATUS DllInitialize(
   _In_ PUNICODE_STRING RegistryPath
 );
@@ -67,7 +63,7 @@ The build process generates an export library with a .lib extension, and an expo
 
 To import functions that are exported by an export driver, you should declare the functions using the DECLSPEC\_IMPORT macro, which is defined in Ntdef.h. For example:
 
-```
+```cpp
 DECLSPEC_IMPORT int LoadPrinterDriver (int arg1); 
 ```
 
@@ -81,7 +77,7 @@ Export drivers must be installed in the %Windir%\\System32\\Drivers directory. S
 
 The system calls a kernel-mode DLL's DllUnload routine when it unloads the DLL.
 
-```
+```cpp
 NTSTATUS DllUnload(void);
  
 ```

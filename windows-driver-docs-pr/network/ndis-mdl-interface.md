@@ -3,11 +3,7 @@ title: NDIS MDL Interface
 author: windows-driver-content
 description: NDIS MDL Interface
 ms.assetid: d15cbda8-fda5-40e6-ab7f-120d2d26e7ef
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 ms.localizationpriority: medium
 ---
 

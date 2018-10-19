@@ -8,11 +8,7 @@ keywords:
 - events WDK XPSDrv
 - notifications WDK XPSDrv
 - DrvDocumentEvent
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +29,7 @@ The following subsections in this topic describes only the XPS Document processi
 
 The **DrvDocumentEvent** event handler has the following calling format. The code and parameter definitions in this section are only for information.
 
-```
+```cpp
 INT
   DrvDocumentEvent(
     HANDLE  hPrinter,
@@ -248,7 +244,7 @@ The driver does not support the escape code that *iEsc* identified.
 
 The following code example shows the structures and constants that the new XPS Document events use.
 
-```
+```cpp
 //
 // structures used in XPS Document events
 //
@@ -303,7 +299,7 @@ The structures in the preceding code example are defined in Winspool.h.
 
 The following escape codes are defined in Winddiui.h.
 
-```
+```cpp
 //
  // Escape code for XPS Document events
 //

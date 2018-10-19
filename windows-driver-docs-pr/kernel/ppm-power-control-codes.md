@@ -4,11 +4,7 @@ author: windows-driver-content
 description: The power control codes described in this topic are used by platform extension plug-ins (PEPs). 
 ms.assetid: 4BA89D0F-78F0-44DF-BC9B-0F9F3256CD59
 keywords: [PPM power control codes]
-ms.author: windowsdriverdev
 ms.date: 01/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

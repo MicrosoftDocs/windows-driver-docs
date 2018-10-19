@@ -4,9 +4,6 @@ description: The storage kernel debugger extensions (storagekd) are used for deb
 ms.assetid: 8EF83BC8-6ABB-496C-98A6-EF0298D78F76
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

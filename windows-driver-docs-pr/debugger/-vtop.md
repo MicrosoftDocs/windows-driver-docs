@@ -5,9 +5,6 @@ ms.assetid: 41f4accc-3eb9-4406-a6cc-a05022166e14
 keywords: ["vtop Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +21,7 @@ The **!vtop** extension converts a virtual address to the corresponding physical
 
 Syntax
 
-```
+```dbgcmd
 !vtop PFN VirtualAddress 
 !vtop 0 VirtualAddress 
 ```
@@ -59,7 +56,7 @@ To use this command, first use the [**!process**](-process.md) extension to dete
 
 Here is an example:
 
-```
+```dbgcmd
 kd> !process 0 0
 **** NT ACTIVE PROCESS DUMP ****
 ....
@@ -70,7 +67,7 @@ PROCESS ff779190  SessionId: 0  Cid: 04fc    Peb: 7ffdf000  ParentCid: 0394
 
 Since the directory base is 0x098FD000, its PFN is 0x098FD.
 
-```
+```dbgcmd
 kd> !vtop 98fd 12f980
 Pdi 0 Pti 12f
 0012f980 09de9000 pfn(09de9)
@@ -82,7 +79,7 @@ If you want to convert the virtual address 0x0012F980 to a physical address, you
 
 If you forget to remove the three zeros, and pass the full directory base to **!vtop** instead of the PFN, the results will usually be correct. This is because when **!vtop** receives a number too large to be a PFN, it right-shifts it twelve bits and uses that number instead:
 
-```
+```dbgcmd
 kd> !vtop 98fd 12f980
 Pdi 0 Pti 12f
 0012f980 09de9000 pfn(09de9)

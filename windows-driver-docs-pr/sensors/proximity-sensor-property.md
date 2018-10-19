@@ -3,11 +3,7 @@ title: Proximity Sensor Property
 author: windows-driver-content
 description: This property is an optional enumeration property.
 ms.assetid: 574955CC-F8BF-4E8C-9A9A-E06802C5DB0C
-ms.author: windowsdriverdev
-ms.date: 01/04/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
 

@@ -20,11 +20,7 @@ keywords:
 - Boot.ini files WDK , viewing
 - editors WDK boot options
 - boot options WDK , editing
-ms.author: windowsdriverdev
 ms.date: 07/03/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

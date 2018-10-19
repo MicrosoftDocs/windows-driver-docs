@@ -3,11 +3,7 @@ title: WDI_TLV_P2P_SERVICE_INFORMATION_DISCOVERY_ENTRY
 author: windows-driver-content
 description: WDI_TLV_P2P_SERVICE_INFORMATION_DISCOVERY_ENTRY is a TLV that contains a Service Information Discovery Entry.
 ms.assetid: 344A1E76-26E0-4816-8BA5-24F4784B48A1
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_SERVICE_INFORMATION_DISCOVERY_ENTRY Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

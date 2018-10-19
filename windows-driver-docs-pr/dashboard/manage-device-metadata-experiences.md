@@ -2,11 +2,7 @@
 title: Manage Device Metadata Experiences
 description: Manage Device Metadata Experiences
 ms.assetid: aede9597-4b67-4c1a-8ae4-924d39c88b53
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -146,7 +142,7 @@ On the **Manage experiences** page, you can add, remove, or promote (from previe
 
 3. To update an existing package, select the package, click **Delete**, and then create and upload a new package.
 
-    For more information about creating a new package, see the [Device Metadata Authoring Wizard](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/device-metadata-authoring-wizard-portal), available in the [Windows Driver Kit](https://docs.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk).
+    For more information about creating a new package, see the [Device Metadata Authoring Wizard](https://docs.microsoft.com/windows-hardware/drivers/devtest/device-metadata-authoring-wizard-portal), available in the [Windows Driver Kit](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
 
 4. To add a new package, under **Add more metadata**, browse for the file or files that you want to add, create a friendly name if you want, and then click **Submit**.
 
@@ -155,12 +151,12 @@ On the **Manage experiences** page, you can add, remove, or promote (from previe
 
 ## Related topics
 
-[Create a Device Metadata Experience](create-a-device-metadata-experience.md)
+- [Create a Device Metadata Experience](create-a-device-metadata-experience.md)
 
-[Submit a Bulk Metadata Package](submit-a-bulk-metadata-package.md)
+- [Submit a Bulk Metadata Package](submit-a-bulk-metadata-package.md)
 
-[Creating a Preview Package](creating-a-preview-package.md)
+- [Creating a Preview Package](creating-a-preview-package.md)
 
-[Errors and Solutions When Submitting Device Metadata Experiences](errors-and-solutions-when-submitting-device-metadata-experiences.md)
+- [Errors and Solutions When Submitting Device Metadata Experiences](errors-and-solutions-when-submitting-device-metadata-experiences.md)
 
-[Device Metadata Business Rules](device-metadata-business-rules.md)
+- [Device Metadata Business Rules](device-metadata-business-rules.md)

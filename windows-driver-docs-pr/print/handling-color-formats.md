@@ -10,11 +10,7 @@ keywords:
 - printer color formats WDK Unidrv
 - color management WDK print , formats
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -91,7 +87,7 @@ For each color format, you specify both the bits per pixel that the printer hard
 
 For example, suppose you want to define a ColorMode option that causes images to be rendered as 24 bits/pixel bitmaps, but then you want the bitmap to be sent to the printer as [*CMYK*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-cmyk) data. You might define this mode as follows:
 
-```
+```cpp
 *Feature: ColorMode
 {
     *Option: 24toCMYK

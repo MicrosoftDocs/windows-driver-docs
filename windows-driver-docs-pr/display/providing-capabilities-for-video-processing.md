@@ -13,11 +13,7 @@ keywords:
 - D3DDDICAPS_GETVIDEOPROCESSORRTSUBSTREAMFORMATCOUNT
 - D3DDDICAPS_GETVIDEOPROCESSORRTSUBSTREAMFORMATS
 - D3DDDICAPS_FILTERPROPERTYRANGE
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +25,7 @@ When its [**GetCaps**](https://msdn.microsoft.com/library/windows/hardware/ff566
 <span id="D3DDDICAPS_GETVIDEOPROCESSORDEVICEGUIDCOUNT_and_D3DDDICAPS_GETVIDEOPROCESSORDEVICEGUIDS_request_types"></span><span id="d3dddicaps_getvideoprocessordeviceguidcount_and_d3dddicaps_getvideoprocessordeviceguids_request_types"></span><span id="D3DDDICAPS_GETVIDEOPROCESSORDEVICEGUIDCOUNT_AND_D3DDDICAPS_GETVIDEOPROCESSORDEVICEGUIDS_REQUEST_TYPES"></span>D3DDDICAPS\_GETVIDEOPROCESSORDEVICEGUIDCOUNT and D3DDDICAPS\_GETVIDEOPROCESSORDEVICEGUIDS request types  
 The user-mode display driver returns the number and a list of the following GUIDs that it supports for video processing. The Microsoft Direct3D runtime specifies the [**DXVADDI\_VIDEODESC**](https://msdn.microsoft.com/library/windows/hardware/ff562944) structure for a particular video stream to process in a variable that the **pInfo** member of D3DDDIARG\_GETCAPS points to. The runtime first requests the number of supported GUIDs followed by a request for the list of supported GUIDs.
 
-```
+```cpp
 DEFINE_GUID(DXVADDI_VideoProcProgressiveDevice,  0x5a54a0c9,0xc7ec,0x4bd9,0x8e,0xde,0xf3,0xc7,0x5d,0xc4,0x39,0x3b);
 DEFINE_GUID(DXVADDI_VideoProcBobDevice,  0x335aa36e,0x7884,0x43a4,0x9c,0x91,0x7f,0x87,0xfa,0xf3,0xe3,0x7e);
 ```

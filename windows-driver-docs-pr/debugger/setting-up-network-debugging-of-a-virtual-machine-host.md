@@ -4,9 +4,6 @@ description: This topic describes how to configure a kernel debugging connection
 ms.assetid: E4C4D2A1-2FB0-4028-8A52-30B8F4F738D0
 ms.author: domars
 ms.date: 07/02/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +18,7 @@ To debug a Gen 2 Hyper-V Virtual Machine (VM) complete the following steps.
 
 **1. Create a VM with Windows installed**
 
-For information on how to create a VM, see [Create a Virtual Machine with Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine).
+For information on how to create a VM, see [Create a Virtual Machine with Hyper-V](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine).
 
 **2. Define an external virtual switch is defined** 
 

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: WMI Class Names and Base Classes
 ms.assetid: 6c3f74a3-e596-4694-8619-db38d67e030c
 keywords: ["base classes WDK WMI", "names WDK WMI", "classes WDK WMI", "WMI WDK kernel , classes"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ WMI class names must be unique within the WMI namespace. Consequently a driver's
 
 To help prevent name collisions, a driver writer can define a driver-specific base class and derive all of the driver's WMI classes from that base class. The class name and base class name together are more likely to yield a unique name. For example, the following shows an abstract base class for a serial driver's data blocks:
 
-```
+```cpp
 // Serial driver&#39;s base class for data blocks
 [abstract]
 class MSSerial {
@@ -44,7 +40,7 @@ class MSSerial_StandardSerialInformation : MSSerial
 
 Device-specific custom data blocks should include the manufacturer, model, and type of driver or device in the base class name. For example:
 
-```
+```cpp
 [abstract]
 class Adaptec1542 {
 }
@@ -60,7 +56,7 @@ class Adaptec1542_Speed : Adaptec1542 {
 
 WMI allows only one abstract base class in a given class hierarchy. Classes that define event blocks must derive from **WmiEvent**, which is an abstract base class, so the **abstract** qualifier cannot be used in a driver-defined base class for event blocks. Instead, derive a nonabstract base class from **WmiEvent**, then derive individual event classes from that base class. For example:
 
-```
+```cpp
 //Serial driver&#39;s base class for event blocks
 class MSSerialEvent : WmiEvent 
 {

@@ -7,11 +7,7 @@ keywords:
 - blended pictures WDK DirectX VA , DVD 704-wide non-pan-scan example
 - DVD 704-wide non-pan-scan example WDK DirectX VA
 - 704-wide non-pan-scan example WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

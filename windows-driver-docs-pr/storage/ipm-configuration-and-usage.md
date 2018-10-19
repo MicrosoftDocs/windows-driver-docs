@@ -3,11 +3,7 @@ title: IPM Configuration and Usage
 author: windows-driver-content
 description: IPM Configuration and Usage
 ms.assetid: 95057785-e5b5-40ae-86e4-50bbf0014cef
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +14,7 @@ Storport Idle Power Management (IPM) is not enabled by default. It can be enable
 
 The following sample text shows what you need to add to your device's INF file to enable the Storport Idle Power Management feature.
 
-```
+```cpp
           [DDInstall.HW]
           ; Enables Storport IPM for this adapter
           HKR, "StorPort", "EnableIdlePowerManagement", 0x00010001, 0x01

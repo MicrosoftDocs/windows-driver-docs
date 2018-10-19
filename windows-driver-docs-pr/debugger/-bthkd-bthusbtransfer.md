@@ -5,9 +5,6 @@ ms.assetid: 61323238-E741-4291-A03C-F4060820D384
 keywords: ["bthkd.bthusbtransfer Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!bthkd.bthusbtransfer** command displays the Bluetooth usb transfer context including Irp, Bip and transfer buffer information.
 
-```
+```dbgsyntax
 !bthkd.bthusbtransfer addr 
 ```
 

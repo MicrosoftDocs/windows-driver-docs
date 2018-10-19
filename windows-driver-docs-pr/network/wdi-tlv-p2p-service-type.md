@@ -3,11 +3,7 @@ title: WDI_TLV_P2P_SERVICE_TYPE
 author: windows-driver-content
 description: WDI_TLV_P2P_SERVICE_TYPE is a TLV that contains the Service Type of the service.
 ms.assetid: D9C3F099-DED1-400E-9D3F-7AF6D2D286DF
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_SERVICE_TYPE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

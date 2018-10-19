@@ -5,9 +5,6 @@ ms.assetid: 97944c84-da2e-4859-bf99-75d05413314d
 keywords: ["reg Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!reg** extension displays and searches through registry data.
 
-```
+```dbgcmd
 !reg {querykey|q} FullKeyPath
 !reg keyinfo HiveAddress KeyNodeAddress
 !reg kcb Address 
@@ -158,7 +155,7 @@ Remarks
 
 Here is an example. First use **!reg hivelist** to get a list of hive addresses.
 
-```
+```dbgcmd
 00: kd> !reg hivelist
 ## 
 
@@ -184,7 +181,7 @@ Here is an example. First use **!reg hivelist** to get a list of hive addresses.
 
 Use the third hive address in the preceding output (fffff8a00004f010) as an argument to **!reg openkeys**.
 
-```
+```dbgcmd
 0: kd> !reg openkeys fffff8a00004f010
 
 # Hive: \REGISTRY\MACHINE\HARDWARE
@@ -200,7 +197,7 @@ Index 160:   96d26a30 kcb=fffff8a00007e6f8 cell=00000020 f=002c0000 \REGISTRY\MA
 
 Use the first full key path in the preceding output (\\REGISTRY\\MACHINE\\HARDWARE\\DESCRIPTION\\SYSTEM) as an argument to **!reg querykey**.
 
-```
+```dbgcmd
 0: kd> !reg querykey \REGISTRY\MACHINE\HARDWARE\DESCRIPTION\SYSTEM
 
 Found KCB = fffff8a00007eb98 :: \REGISTRY\MACHINE\HARDWARE\DESCRIPTION\SYSTEM
@@ -231,7 +228,7 @@ REG_MULTI_SZ        VideoBiosVersion              Hardware Version 0.0\0\0
 
 Here is another example:
 
-```
+```dbgcmd
 kd> !reg hivelist
 ## 
 

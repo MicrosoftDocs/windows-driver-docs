@@ -9,11 +9,7 @@ api_name:
 - wscn JobStateReason
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **JobStateReason** element specifies one reason why a job is in its
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobStateReason>
   text
 </wscn:JobStateReason>
@@ -140,7 +136,7 @@ You must support the values that represent conditions that WSD Scan Service impl
 
 You can extend the allowed values, but extending this list has implications on the client. The client typically localizes the **JobStateReason** value (as with other string variable values) to the language of the user. However, the client will not recognize a vendor-extended value. The client can display the value that is received "as is", but this value will appear in English, so some users might not understand the value.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)

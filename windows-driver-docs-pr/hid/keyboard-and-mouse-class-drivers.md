@@ -3,11 +3,7 @@ title: Keyboard and mouse class drivers
 author: windows-driver-content
 description: Non-HID keyboards and mice can connect over multiple legacy buses but still use the same class driver. 
 ms.assetid: 0771D802-4F1D-4612-8376-ED3113DCC652
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -288,7 +284,7 @@ For an absolute pointing device, the device's function driver must set the **Las
 
 -   In addition to dividing the device input value by the maximum capability of the device, the driver scales the device input value by 0xFFFF:
 
-    ```
+    ```cpp
     LastX = ((device input x value) * 0xFFFF ) / (Maximum x capability of the device)
     LastY = ((device input y value) * 0xFFFF ) / (Maximum y capability of the device)
     ```

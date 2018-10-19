@@ -3,11 +3,7 @@ title: V4 Driver INF
 author: windows-driver-content
 description: The v4 print driver setup model continues to use INF files, but also employs a new manifest file to capture the printer specific setup directives.
 ms.assetid: 48F19796-43F9-4A69-B042-1305245C9CB9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ Notice that the sample v4 print driver INF file presented in this topic does not
 
 The following sample INF file assumes that a fictional company, Fabrikam, has manufactured print devices that will be installed to run with the v4 print driver.
 
-```Text
+```INF
 [Version]
 Signature="$Windows NT$"
 Provider="Fabrikam"

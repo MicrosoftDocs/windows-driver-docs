@@ -5,9 +5,6 @@ ms.assetid: c74fd4b3-3335-4e03-a57a-6a9aa883dd9f
 keywords: [".apply_dbp (Apply Data Breakpoint to Context) Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -10,11 +10,7 @@ keywords:
 - child function hardware IDs WDK multifunction devices
 - system-supplied multifunction bus drivers WDK
 - mf.sys
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,7 +48,7 @@ The vendor of a multifunction PC Card device that conforms to the standard must 
 
 For a true multifunction PC Card device, the PCMCIA bus driver, together with mf.sys, creates hardware IDs for the child functions. Those IDs have the format:
 
-```
+```cpp
     <Manufacturer-name>-<Product-ID-string>-DEV<number>-CRC
 ```
 
@@ -60,7 +56,7 @@ In this format, &lt;*number*&gt; is a zero-based number for the function.
 
 For example, the PCMCIA bus driver creates child function hardware IDs such as the following:
 
-```
+```cpp
     3COM_Corporation-3C562D/3C563D-DEV0-4893
     3COM_Corporation-3C562D/3C563D-DEV1-4893
 ```

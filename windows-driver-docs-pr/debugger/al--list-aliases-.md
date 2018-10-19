@@ -5,9 +5,6 @@ ms.assetid: 40e20edb-4545-4c5a-bb56-61e00b064efc
 keywords: ["al (List Aliases) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **al** command displays a list of all currently defined user-named aliases.
 
-```
+```dbgcmd
 al
 ```
 

@@ -4,9 +4,6 @@ description: Typed Data
 ms.assetid: 44a84dfd-03f8-4d7b-8d71-e4b3ee23d105
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

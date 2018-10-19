@@ -9,24 +9,14 @@ keywords:
 - print providers WDK , flow paths
 - OpenPrinter
 - jobs WDK print , print providers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Introduction to Print Providers
 
-
-
-
-
-**Warning**  
-Starting with Windows 10, the APIs which support third-party print providers are deprecated. Microsoft does not recommend any investment into third-party print providers. Additionally, on Windows 8 and newer products where the v4 print driver model is available, third-party print providers may not create or manage queues which use v4 print drivers.
-
- 
+> [!WARNING]
+> Starting with Windows 10, the APIs which support third-party print providers are deprecated. Microsoft does not recommend any investment into third-party print providers. Additionally, on Windows 8 and newer products where the v4 print driver model is available, third-party print providers may not create or manage queues which use v4 print drivers.
 
 Print providers are responsible for directing print jobs to local or remote print devices. They are also responsible for print queue management operations, such as starting, stopping, and enumerating a server's print queues. Print providers define a high-level, machine-independent, operating system-independent view of a print server.
 
@@ -36,16 +26,16 @@ Most functions defined by print providers require a printer handle as input. A s
 
 Microsoft provides the following print providers with Windows 2000 and later:
 
-<a href="" id="localspl-dll"></a>**Localspl.dll**  
+**Localspl.dll**  
 [Local print provider](local-print-provider.md). Handles all print jobs directed to printers that are managed from the local server.
 
-<a href="" id="win32spl-dll"></a>**Win32spl.dll**  
+**Win32spl.dll**  
 Windows network print provider. Handles print jobs directed to remote Win32 (NT-based-operating system or Windows for Workgroups) servers. When the job arrives at the remote server, it is passed to the server's local print provider.
 
-<a href="" id="nwprovau-dll"></a>**Nwprovau.dll**  
+**Nwprovau.dll**  
 Novell NetWare print provider. Handles print jobs directed to Novell NetWare print servers.
 
-<a href="" id="inetpp-dll"></a>**Inetpp.dll**  
+**Inetpp.dll**  
 HTTP print provider. Handles print jobs sent to a URL.
 
 Vendors can create additional network print providers. For more information, see [Writing a Network Print Provider](writing-a-network-print-provider.md).
@@ -62,12 +52,4 @@ When viewing the diagram, you should consider the following points:
 
 -   If the printer is located on some other type of server, it can be accessed by either the local print provider or by a network print provider that supports that server type, using data formats and network protocols supported by the server.
 
--   For the local print provider to access a remote printer, it must contain a [*port monitor*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-port-monitor) that can use network protocols recognized by the remote printer or server.
-
- 
-
- 
-
-
-
-
+-   For the local print provider to access a remote printer, it must contain a [port monitor](https://docs.microsoft.com/windows-hardware/drivers/print/port-monitors) that can use network protocols recognized by the remote printer or server.

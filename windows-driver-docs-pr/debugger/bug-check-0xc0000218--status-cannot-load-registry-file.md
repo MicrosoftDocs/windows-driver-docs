@@ -5,9 +5,6 @@ ms.assetid: cdcf68fa-8beb-4e21-bc6b-7a9f4c6e9e80
 keywords: ["Bug Check 0xC0000218 STATUS_CANNOT_LOAD_REGISTRY_FILE", "STATUS_CANNOT_LOAD_REGISTRY_FILE"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -72,7 +69,7 @@ In rare instances, this error can be caused by a driver that has corrupted the r
 Resolution
 ----------
 
-Try using the the startup recovery mechanism (for example Startup Repair, Recovery Console, or Emergency Recovery Disk) provided by the operating system. If the problem is a missing or corrupt registry file, that usually fixes the problem.
+Try using the startup recovery mechanism (for example Startup Repair, Recovery Console, or Emergency Recovery Disk) provided by the operating system. If the problem is a missing or corrupt registry file, that usually fixes the problem.
 
  
 

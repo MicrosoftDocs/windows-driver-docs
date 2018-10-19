@@ -3,6 +3,7 @@ title: MPIO\_DISK\_HEALTH\_CLASS WMI Class
 description: MPIO\_DISK\_HEALTH\_CLASS WMI Class
 ms.assetid: 4595f74e-586d-4411-acfd-e93e00778b67
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MPIO\_DISK\_HEALTH\_CLASS WMI Class
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 
 An MPIO driver uses the MPIO\_DISK\_HEALTH\_CLASS WMI class to report health statistics of an MPIO disk.
 
-```
+```cpp
 class MPIO_DISK_HEALTH_CLASS
 {
     //

@@ -2,11 +2,7 @@
 title: Making the Most of TAEF
 description: Making the Most of TAEF
 ms.assetid: DCB06C5A-DF2C-4e1c-A297-C9AA5496D162
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ Similarly, if you have a VERIFY (depends on the return type and what determines 
 
 Metadata lookup is hierarchical. This means if your select statement is **/select:"@Priority=2"**, and if your TestMethod does not specify Priority, TAEF will look up at the class that contains it. If the Class level metadata does not specify it, TAEF looks up at the assembly level.
 
-So, if you want all or most of the tests in your class to have the same "Priority", or say "Owner, you can get by by just specifying it at the class level. For the one or few tests that are an exception to this rule, you can explicitly provide the metadata at the "TestMethod" level. See the following test for details:
+So, if you want all or most of the tests in your class to have the same "Priority", or say "Owner, you can get that by just specifying it at the class level. For the one or few tests that are an exception to this rule, you can explicitly provide the metadata at the "TestMethod" level. See the following test for details:
 
-```
+```cpp
 1    namespace WEX { namespace UnitTests { namespace Samples
 2    {
 3        //

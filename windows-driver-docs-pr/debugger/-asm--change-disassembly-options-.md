@@ -5,9 +5,6 @@ ms.assetid: c963c4f2-3bfc-4551-9b7b-74473a63eb11
 keywords: ["Change Disassembly Options (.asm) command", "assembly debugging, Change Disassembly Options (.asm) command", ".asm (Change Disassembly Options) Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

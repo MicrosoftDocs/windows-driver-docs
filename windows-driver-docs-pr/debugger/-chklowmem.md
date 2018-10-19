@@ -5,9 +5,6 @@ ms.assetid: cc1054e2-b824-4fcf-b353-9ee8c0d3dbf3
 keywords: ["PAE (physical address extension)", "chklowmem Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!chklowmem** extension determines whether physical memory pages below 4 GB are filled with the required fill pattern on a computer that was booted with the [**/pae**](https://msdn.microsoft.com/library/windows/hardware/ff557168) and [**/nolowmem**](https://msdn.microsoft.com/library/windows/hardware/ff557144) options.
 
-```
+```dbgsyntax
 !chklowmem
 ```
 

@@ -2,11 +2,7 @@
 title: Direct3D Version 10 Runtime and Driver Handles
 description: Direct3D Version 10 Runtime and Driver Handles
 ms.assetid: 1e50afe1-7103-45c4-8f58-a08d51423b22
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -15,7 +11,7 @@ ms.localizationpriority: medium
 
 The Direct3D version 10 runtime and driver handles share the same life span. The Direct3D runtime specifies the lifetime of an object between calls to create-type functions (for example, [**CreateResource(D3D10)**](https://msdn.microsoft.com/library/windows/hardware/ff540691)) and calls to destroy-type functions (for example, [**DestroyResource(D3D10)**](https://msdn.microsoft.com/library/windows/hardware/ff552797)). The runtime provides driver-handle values as well as runtime-handle values. These handles are essentially pointers that are wrapped with a strong type to identify the object that is being operated on. The following are examples of runtime and driver handles for resources:
 
-```
+```cpp
 // Strongly typed handle to identify a resource object to the driver: 
 typedef struct D3D10DDI_HRESOURCE
 {

@@ -5,9 +5,6 @@ ms.assetid: 2e01830f-56dc-435a-81e9-14e2b4d093d2
 keywords: ["wudfext.wudfusbtarget Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wudfext.wudfusbtarget** extension displays information about a USB I/O target.
 
-```
+```dbgcmd
 !wudfext.wudfusbtarget pWDFUSBTarget TypeName
 ```
 

@@ -5,9 +5,6 @@ ms.assetid: 73990217-4af2-478c-aa5e-39e6bc5811cf
 keywords: ["Bug Check 0xA2 MEMORY_IMAGE_CORRUPT", "MEMORY_IMAGE_CORRUPT"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

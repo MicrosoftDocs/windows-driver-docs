@@ -5,11 +5,7 @@ description: Creating Contexts
 ms.assetid: da62d79d-064b-4ea4-abed-ffb13a9cc13d
 keywords:
 - contexts WDK file system minifilter , creating
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ Once a minifilter driver has registered the context types that it uses, it can c
 
 In the following code example, taken from the CTX sample minifilter driver, the **CtxInstanceSetup** routine calls [**FltAllocateContext**](https://msdn.microsoft.com/library/windows/hardware/ff541710) to create an instance context:
 
-```
+```cpp
 status = FltAllocateContext(
  FltObjects->Filter,           //Filter
            FLT_INSTANCE_CONTEXT,         //ContextType
@@ -34,7 +30,7 @@ status = FltAllocateContext(
 
 In the CTX sample, the following context definition is registered for instance contexts:
 
-```
+```cpp
 { FLT_INSTANCE_CONTEXT,              //ContextType
   0,                                 //Flags
  CtxContextCleanup,                 //ContextCleanupCallback

@@ -5,11 +5,7 @@ ms.assetid: 7a80bc60-e2f0-4447-bd73-4ce12fcfc2e3
 keywords:
 - device-specific co-installers WDK device installations
 - registering device-specific co-installers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ ms.localizationpriority: medium
 
 To register a device-specific co-installer, add the following sections to the device's INF file:
 
-```
+```cpp
 ;  :
 ;  :
 [DestinationDirs]
@@ -49,7 +45,7 @@ The entry in the *Xxx***_AddReg** section creates a **CoInstallers32** value ent
 
 To register more than one device-specific co-installer for a device, copy the files for each co-installer and include more than one string in the registry entry. For example, to register two co-installers, create INF sections like the following:
 
-```
+```cpp
 ;   :
 ;   :
 [DestinationDirs]

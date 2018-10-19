@@ -2,11 +2,7 @@
 title: PnPUtil Return Values
 description: PnPUtil Return Values
 ms.assetid: c26ecf54-b3d4-4559-9ec1-ff535cf03d77
-ms.author: windowsdriverdev
 ms.date: 02/08/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

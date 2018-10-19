@@ -7,11 +7,7 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , registering
 - registering PSHED plug-ins WDK WHEA
 - PSHED plug-ins WDK WHEA , registering
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ After a PSHED plug-in has successfully registered itself with the PSHED, it cann
 
 The following code example demonstrates registering a PSHED plug-in that participates in error information retrieval and error record persistence.
 
-```
+```cpp
 // Prototypes for the callback functions for
 // participating in error information retrieval
 NTSTATUS

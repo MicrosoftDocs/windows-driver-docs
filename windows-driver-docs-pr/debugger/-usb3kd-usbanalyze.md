@@ -5,9 +5,6 @@ ms.assetid: 4BC5687B-D8C8-4E5E-B9AD-ECDC63858345
 keywords: ["usb3kd.usbanalyze Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The [**!usb3kd.usbanalyze**](-usb3kd-device-info.md) extension analyzes a USB 3.0 bug check.
 
-```
+```dbgcmd
 !usb3kd.usbanalyze [-v]
 ```
 
@@ -42,7 +39,7 @@ Usb3kd.dll
 
 [USB 3.0 Extensions](usb-3-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
 [**BUGCODE\_USB3\_DRIVER**](bug-check-0x144--bugcode-usb3-driver.md)
 

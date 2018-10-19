@@ -5,9 +5,6 @@ ms.assetid: f2ab0f4d-493c-4b8b-a7a0-82c10586d485
 keywords: [".event_code (Display Event Code) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.event\_code** command displays the current event instructions.
 
-```
+```dbgcmd
 .event_code 
 ```
 

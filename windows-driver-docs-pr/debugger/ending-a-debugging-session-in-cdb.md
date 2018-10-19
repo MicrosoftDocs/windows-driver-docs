@@ -4,9 +4,6 @@ description: You can exit CDB by entering the q (Quit) command. This command als
 ms.assetid: B32AD09D-7F88-420E-94BD-59FAE6EC1720
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

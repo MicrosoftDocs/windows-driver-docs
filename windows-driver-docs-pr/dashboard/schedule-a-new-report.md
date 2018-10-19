@@ -4,9 +4,6 @@ description: How to schedule a custom error report based on the report template 
 author: EliotSeattle
 ms.author: shganesh
 ms.date: 09/01/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -135,3 +132,5 @@ If you set up a Callback URL to get notified when the report data is ready, you 
 - [Manage report templates](manage-report-templates-and-scheduled-reports.md)
 
 - [Sample report templates](sample-report-templates.md)
+
+- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

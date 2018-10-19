@@ -2,11 +2,7 @@
 title: Adding New Digital Formats to Control Panel
 description: Adding New Digital Formats to Control Panel
 ms.assetid: ce36738c-6471-4b68-82ad-80b8509c052b
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ In Windows Vista and later versions of Windows, you can develop a third-party di
 
 After you develop your digital audio format, define a new GUID for the format and use an INF file to install the associated audio driver. The following code from an INF file shows how to add the necessary information about your new digital audio format to the registry:
 
-```
+```inf
 [Version]
 Signature=$WindowsNT$
 ...

@@ -5,9 +5,6 @@ ms.assetid: 3dddbf19-34ec-4cb0-b427-854ae7622fa1
 keywords: ["themes, customizing"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,13 +28,13 @@ Here are examples of how to set the symbol and source path. The executable image
 
 To set your symbol path:
 
-```
+```text
 SRV*c:\MySymCache*\\CompanySymbolServer\Symbols;SRV*c:\WinSymCache*https://msdl.microsoft.com/download/symbols
 ```
 
 To set your source path:
 
-```
+```text
 SRV*;d:\MySourceRoot
 ```
 

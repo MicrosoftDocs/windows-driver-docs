@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Handling IRP_MN_QUERY_POWER for System Power States
 ms.assetid: 1904a1cb-a220-41cc-8894-5f90919e7383
 keywords: ["IRP_MN_QUERY_POWER", "system power states WDK kernel , IRP_MN_QUERY_POWER", "query-power IRPs WDK power management"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

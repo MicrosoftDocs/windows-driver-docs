@@ -2,11 +2,7 @@
 ms.assetid: D4B7FC2A-259F-4B72-A52B-03CBF712D5C5
 title: Validating Universal Windows drivers
 description: You can use the ApiValidator.exe tool to verify that the APIs that your driver calls are valid for a Universal Windows driver.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ To view all the messages displayed by ApiValidator, navigate to **Tools &gt; Opt
 
 For the umdf2\_fx2 driver sample, API validation errors look this:
 
-```
+```cpp
 Warning  1   warning : API DecodePointer in kernel32.dll is not supported. osrusbfx2um.dll calls this API.   C:\Program Files (x86)\Windows Kits\10\src\usb\umdf2_fx2\driver\ApiValidator.exe    osrusbfx2um
 Warning 2   warning : API DisableThreadLibraryCalls in kernel32.dll is not supported. osrusbfx2um.dll calls this API.   C:\Program Files (x86)\Windows Kits\10\src\usb\umdf2_fx2\driver\ApiValidator.exe    osrusbfx2um
 Warning 3   warning : API EncodePointer in kernel32.dll is not supported. osrusbfx2um.dll calls this API.   C:\Program Files (x86)\Windows Kits\10\src\usb\umdf2_fx2\driver\ApiValidator.exe    osrusbfx2um
@@ -40,7 +36,7 @@ Error   10  error MSB3721: The command ""C:\Program Files (x86)\Windows Kits\10\
 
 1.  If you switched a legacy desktop UMDF driver project to universal, verify that you are including the correct libraries when building your binaries. Right click the project and choose properties. Navigate to **Linker-&gt;Input**. The **Additional Dependencies** should contain:
 
-    ```
+    ```cpp
     %AdditionalDependencies);$(SDK_LIB_PATH)\OneCoreUAP.lib
     ```
 
@@ -52,7 +48,7 @@ Error   10  error MSB3721: The command ""C:\Program Files (x86)\Windows Kits\10\
 
 If you see errors like the following, please refer to the guidance in [Building for OneCore](building-for-onecore.md).
 
-```
+```cpp
 ApiValidation: Error: FlexLinkTest.exe has a dependency on 'wtsapi32.dll!WTSEnumerateSessionsW' but is missing: IsApiSetImplemented("ext-ms-win-session-wtsapi32-l1-1-0")
 ApiValidation: Error: FlexLinkTest.exe has a dependency on 'wtsapi32.dll!WTSFreeMemory' but is missing: IsApiSetImplemented("ext-ms-win-session-wtsapi32-l1-1-0")
 ApiValidation: NOT all binaries are Universal
@@ -72,7 +68,7 @@ For example, to verify the APIs called by the Activity sample in the WDK, first 
 
 The command produces the following output:
 
-```
+```cpp
 ApiValidator.exe: Warning: API DecodePointer in kernel32.dll is not supported. osrusbfx2um.dll calls this API.
 ApiValidator.exe: Warning: API DisableThreadLibraryCalls in kernel32.dll is not supported. osrusbfx2um.dll calls this API.
 ApiValidator.exe: Warning: API EncodePointer in kernel32.dll is not supported. osrusbfx2um.dll calls this API.
@@ -93,7 +89,7 @@ The XML files that enumerate the valid APIs for Universal Windows drivers are lo
 
 If ApiValidator.exe outputs an incorrect format error such as the following:
 
-```
+```cpp
 Error      1              error : AitStatic output file has incorrect format or analysis run on incorrect file types.     C:\Program Files (x86)\Windows Kits\10\src\usb\umdf2_fx2\driver\ApiValidator.exe            osrusbfx2um
 ```
 
@@ -101,7 +97,7 @@ Use this workaround:
 
 1.  Open Project properties, navigate to **General**, and rename **Output Directory** to the following:
 
-    ```
+    ```cpp
     $(SolutionDir)$(Platform)\$(ConfigurationName)\
     ```
 

@@ -5,9 +5,6 @@ ms.assetid: 8dd0703a-ddcd-461f-b164-1c079a93bb3a
 keywords: ["setup, making a USB 2.0 cable connection", "cable connection, USB 2.0 debug cable", "USB 2.0 debugging connection", "USB 2.0 debugging connection, setting up the hardware", "USB 2.0 debugging connection, software requirements"]
 ms.author: domars
 ms.date: 07/11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -152,7 +149,7 @@ In a case like this, you might still be able to establish kernel-mode debugging 
 
 ### <span id="software-setup"></span><span id="SOFTWARE_SETUP"></span>Additional Support
 
-For troubleshooting tips and detailed instructions on setting up kernel debugging over USB, see [Setting Up Kernel Debugging with USB 2.0](http://go.microsoft.com/fwlink/p?linkid=389435).
+For troubleshooting tips and detailed instructions on setting up kernel debugging over USB, see [Setting Up Kernel Debugging with USB 2.0](https://go.microsoft.com/fwlink/p?linkid=389435).
 
 ## <span id="related-topics"></span>Related topics
 

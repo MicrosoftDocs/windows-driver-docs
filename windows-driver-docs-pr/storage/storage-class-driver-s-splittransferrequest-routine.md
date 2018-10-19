@@ -8,11 +8,7 @@ keywords:
 - noncontiguous pages WDK storage
 - splitting transfer requests
 - transfer request splitting WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +24,7 @@ Most class drivers store a pointer to this configuration data in the device exte
 
 For example, such a *DispatchReadWrite* routine could have code similar to the following:
 
-```
+```cpp
 PSTORAGE_ADAPTER_DESCRIPTOR adapterDescriptor = 
     commonExtension->PartitionZeroExtension->AdapterDescriptor;
 ULONG transferPages;

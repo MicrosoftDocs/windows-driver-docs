@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Compiling a Driver's MOF File
 ms.assetid: 0a4ab163-3e2c-48e9-9659-756d35ad445f
 keywords: ["WMI WDK kernel , publishing schema", "publishing WMI schema WDK", "schema publishing WDK WMI", "MOF files WDK WMI", "compiling MOF files"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ ms.localizationpriority: medium
 
 To compile a MOF file that defines WMI data and event blocks, use the MOF compiler, called Mofcomp, that is included with the Microsoft Windows operating systems. Use the following syntax:
 
-```
+```cpp
  mofcomp -WMI -B:filename.bmf filename.mof
 ```
 

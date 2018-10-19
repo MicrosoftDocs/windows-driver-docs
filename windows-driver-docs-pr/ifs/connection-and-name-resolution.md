@@ -8,11 +8,7 @@ keywords:
 - mini-redirectors WDK , name resolution
 - names WDK file systems
 - connections WDK mini-redirectors
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,13 +23,13 @@ The original design for RDBSS was that various network mini-redirectors would al
 
 Under the implementation of RDBSS in Windows Server 2003, Windows XP, and Windows 2000, each network mini-redirector has its own copy of RDBSS so there are no competing network redirectors at the RDBSS layer. Each network mini-redirector (network provider) and its local copy of RDBSS is called in turn based on the order in a registry setting: The order in which providers are queried is controlled by the following registry value:
 
-```
+```cpp
 ProviderOrder
 ```
 
 This registry value is located under the following registry key:
 
-```
+```cpp
 HKLM\CurrentControlSet\Control\NetworkProvider\Order
 ```
 

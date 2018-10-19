@@ -13,11 +13,7 @@ keywords:
 - templates WDK GDL , examples
 - inheritance WDK GDL
 - virtual templates WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +28,7 @@ Define a data type that accepts a Unicode string that is encoded by using 2 byte
 
 The following two templates define the Unicode data type.
 
-```
+```cpp
 *Include: MasterTemplate.gdl
  
 *Template:  XML_STRING
@@ -43,7 +39,7 @@ The following two templates define the Unicode data type.
 }
 ```
 
-```
+```cpp
 *Template:  NORMAL_STRING
 {
     *Type:  DATATYPE
@@ -55,7 +51,7 @@ The following two templates define the Unicode data type.
 
 The following template inherits from the templates that are defined in Exercise 1. There is a construct named \*Command and three types of attributes: **\*Name** (which appears at the root level), **\*CommandName** (which can appear within a \*Command construct), and **\*UniName** (which can appear within both contexts).
 
-```
+```cpp
 *Template:  COMMAND
 {
     *Name:  "*Command"
@@ -84,7 +80,7 @@ The following template inherits from the templates that are defined in Exercise 
 
 The following GDL file conforms to the given schema.
 
-```
+```cpp
 *Name: "can only appear at root level"
 *UniName:  "can appear anywhere"
 *Command: X
@@ -101,7 +97,7 @@ The following GDL file conforms to the given schema.
 
 The following GDL file does not conform to the given schema.
 
-```
+```cpp
 *CommandName:  "Error! May only appear within a command"
 *Command: X
 {

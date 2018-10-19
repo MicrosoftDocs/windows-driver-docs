@@ -5,9 +5,6 @@ ms.assetid: 496DC161-D082-4C83-A6B6-6BBCE932BE76
 keywords: ["for_each_register Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!for\_each\_register** extension executes a specified command for each register.
 
-```
+```dbgcmd
 !for_each_register -c:CommandString
 !for_each_register -?
 ```
@@ -46,7 +43,7 @@ Ext.dll
 
 This example lists the name of each register.
 
-```
+```dbgcmd
 0:000> !for_each_register -c:.echo @#RegisterName
 rax
 rcx
@@ -57,7 +54,7 @@ rbx
 
 This example executes [**!address**](-address.md) for each register value.
 
-```
+```dbgcmd
 0:000> !for_each_register -c:!address ${@#RegisterValue}
 ...
 Usage:                  Stack

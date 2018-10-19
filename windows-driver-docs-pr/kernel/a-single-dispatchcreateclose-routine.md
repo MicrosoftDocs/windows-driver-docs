@@ -4,11 +4,7 @@ author: windows-driver-content
 description: A Single DispatchCreateClose Routine
 ms.assetid: 6127d696-2409-49fc-9cbd-ba1b13c0c672
 keywords: ["dispatch routines WDK kernel , DispatchCreateClose routine", "DispatchCreateClose routine", "IRP_MJ_CREATE I/O function code", "IRP_MJ_CLOSE I/O function code", "create dispatch routines WDK kernel", "close dispatch routines WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ Many drivers, particularly lower-level drivers in a chain of layered drivers, me
 
 For example, a port driver for a device controller with one or more closely coupled class drivers that call [**IoGetDeviceObjectPointer**](https://msdn.microsoft.com/library/windows/hardware/ff549198) might have a minimal [*DispatchCreateClose*](https://msdn.microsoft.com/library/windows/hardware/ff543270) routine. The routine might do nothing more than complete the IRP as follows:
 
-```
+```cpp
     :    : 
 { 
     Irp->IoStatus.Status = STATUS_SUCCESS; 

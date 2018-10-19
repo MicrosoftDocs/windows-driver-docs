@@ -3,11 +3,7 @@ title: V4 Driver UI Architecture
 author: windows-driver-content
 description: A high level design goal for the v4 driver architecture was to provide built-in support for the Microsoft Store app user interface.
 ms.assetid: 6318E480-C567-4866-8E88-B19904408C59
-ms.author: windowsdriverdev
-ms.date: 9/28/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/28/2018
 ms.localizationpriority: medium
 ---
 
@@ -41,7 +37,7 @@ The PrinterExtensionLibrary project that is shipped in the Microsoft Store devic
 
 4. Right-click your Portable Class Library project and choose **Unload**. Then open the .csproj file and add the following section to your file, just prior to the last tag in the document.
 
-```XML
+```xml
   <ItemGroup>
     <COMReference Include="PrinterExtensionLib">
       <Guid>{91CE54EE-C67C-4B46-A4FF-99416F27A8BF}</Guid>
@@ -57,7 +53,7 @@ The PrinterExtensionLibrary project that is shipped in the Microsoft Store devic
 
 5. If you see warnings as a result of COM references, add the following to the &lt;PropertyGroup&gt; tag:
 
-```XML
+```xml
 <ResolveComReferenceSilent>true</ResolveComReferenceSilent>
 ```
 

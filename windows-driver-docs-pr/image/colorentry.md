@@ -9,11 +9,7 @@ api_name:
 - wscn ColorEntry
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ColorEntry** element describes a single color-processing mode tha
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ColorEntry>
   text
 </wscn:ColorEntry>
@@ -140,7 +136,7 @@ Each value keyword describes the color data type and encoding, bit depth, and bi
 
 You can both extend and subset the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ADFColor**](adfcolor.md)

@@ -3,6 +3,7 @@ title: MS\_SMHBA\_PORTATTRIBUTES WMI Class
 description: MS\_SMHBA\_PORTATTRIBUTES WMI Class
 ms.assetid: 26f17443-cb89-4c93-9b67-35acb75b6d03
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MS\_SMHBA\_PORTATTRIBUTES WMI Class
@@ -12,7 +13,7 @@ An HBA miniport driver that supports the Storage Management API uses the MS\_SMH
 
 The MS\_SMHBA\_PORTATTRIBUTES class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MS_SMHBA_PORTATTRIBUTES 
 {
     [HBA_PORTTYPE_QUALIFIERS, WmiDataId(1)]

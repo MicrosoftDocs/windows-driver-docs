@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Local and Global MS-DOS Device Names
 ms.assetid: bfb7e41c-0f80-4cb9-b036-d1b44473f9fb
 keywords: ["MS-DOS device names WDK kernel", "local MS-DOS device names WDK kernel", "global MS-DOS device names WDK kernel", "DosDevices contexts WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,7 +36,7 @@ A driver that must create its MS-DOS device names in the global **\\DosDevices**
 
 Note that **\\DosDevices\\Global** does not exist on platforms that do not support local and global versions of **\\DosDevices**, such as Windows 98/Me. The following code example creates a global symbolic link that works on Windows 98/Me as well as Windows 2000 and later operating systems:
 
-```
+```cpp
 UNICODE_STRING deviceName; // Already initialized.
 UNICODE_STRING symbolicLinkName; // Initializing below.
 NTSTATUS status;

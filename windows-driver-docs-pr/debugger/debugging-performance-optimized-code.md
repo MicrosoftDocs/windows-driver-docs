@@ -5,9 +5,6 @@ ms.assetid: 9dbae9e7-c181-491e-9566-6f5e8182aae0
 keywords: ["performance-optimized code"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +26,7 @@ Therefore, a function (or any symbol) plus an offset will not necessarily have t
 
 When debugging, you can see if a module has been performance-optimized by using the [**!lmi**](-lmi.md) extension command on any module for which symbols have been loaded:
 
-```
+```dbgcmd
 0:000> !lmi ntdll
 Loaded Module Info: [ntdll]
          Module: ntdll
@@ -55,7 +52,7 @@ Since the debugger will try to stay close to the original code, you might see so
 
 Here is an example:
 
-```
+```dbgcmd
 kd> bl
  0 e f8640ca6     0001 (0001) tcpip!IPTransmit
  1 e f8672660     0001 (0001) tcpip!IPFragment
@@ -80,7 +77,7 @@ What is happening is this: The debugger is indeed showing a disassembly of the b
 
 On the other hand, if you try to look at **IPTransmit**+0xE48, you will see this:
 
-```
+```dbgcmd
 kd> u tcpip!iptransmit+e48
 tcpip!ARPTransmit+d8:
 f8641aee 0856ff           or      [esi-0x1],dl

@@ -11,11 +11,7 @@ keywords:
 - ElementType directive WDK GDL
 - FilterTypeName directive WDK GDL
 - ElementTags directive WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,7 +52,7 @@ When emitting the XML snapshot, the parser will automatically represent special 
 
 Consider the following template.
 
-```
+```cpp
 *Template:  INTEGER
 {
     *Type:  DATATYPE
@@ -70,7 +66,7 @@ This template specifies a filter type of "HEX\_OR\_INT". According to the inform
 
 In the following example, the XSD\_INT template is named. This template is defined as follows.
 
-```
+```cpp
 *Template:  XSD_INT
 {
     *Type:  DATATYPE
@@ -85,13 +81,13 @@ The XSD\_INT template defines a native XSD type int, which ensures that the inte
 
 Consider the following GDL entry.
 
-```
+```cpp
 *MaxCopies:   0x1ff
 ```
 
 And consider the following template, MAXCOPIES.
 
-```
+```cpp
 *Template:  MAXCOPIES
 {
     *Name:  "*MaxCopies"
@@ -102,7 +98,7 @@ And consider the following template, MAXCOPIES.
 
 If the earlier GDL entry is interpreted by the preceding template, the resulting XML output will be.
 
-```
+```cpp
     <GDL_ATTRIBUTE Name="*MaxCopies"  xsi:type="GDLW_int" >511</GDL_ATTRIBUTE> 
 ```
 

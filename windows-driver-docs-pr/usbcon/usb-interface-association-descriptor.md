@@ -2,11 +2,7 @@
 Description: USB interface association descriptor (IAD) allows the device to group interfaces that belong to a function. 
 title: USB Interface Association Descriptor
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -123,7 +119,7 @@ The descriptor is as follows:
 
 ### Device Descriptor:
 
-```
+```cpp
     BYTE  bLength      0x12
     BYTE  bDescriptorType    0x01
     WORD  bcdUSB      0x0200
@@ -142,7 +138,7 @@ The descriptor is as follows:
 
 ### Configuration Descriptor:
 
-```
+```cpp
     BYTE  bLength      0x09
     BYTE  bDescriptorType    0x02
     WORD  wTotalLength    0x....
@@ -155,7 +151,7 @@ The descriptor is as follows:
 
 ### Interface Association Descriptor:
 
-```
+```cpp
     BYTE  bLength      0x08
     BYTE  bDescriptorType    0x0B
     BYTE  bFirstInterface    0x00
@@ -168,7 +164,7 @@ The descriptor is as follows:
 
 ### Interface Descriptor (Video Control):
 
-```
+```cpp
     BYTE  bLength      0x09
     BYTE  bDescriptorType    0x04
     BYTE  bInterfaceNumber   0x00
@@ -198,7 +194,7 @@ The descriptor is as follows:
 
 ### Interface Descriptor (Video Streaming):
 
-```
+```cpp
     BYTE  bLength      0x09
     BYTE  bDescriptorType    0x04
     BYTE  bInterfaceNumber   0x01
@@ -228,7 +224,7 @@ The descriptor is as follows:
 
 ### Interface Descriptor (Human Input Devices):
 
-```
+```cpp
     BYTE  bLength      0x09
     BYTE  bDescriptorType    0x04
     BYTE  bInterfaceNumber   0x02

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: General Techniques for Testing WMI Driver Support
 ms.assetid: 4d1a9198-2cc7-491d-a803-80f846882a6e
 keywords: ["WMI WDK kernel , testing", "testing WMI support WDK kernel", "WMI WDM provider logs WDK", "errors WDK WMI", "provider logs WDK WMI", "events WDK WMI", "WMI WDK kernel , errors"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -95,7 +91,7 @@ Specifically, KSPROPERTY\_EXTENSION\_UNIT\_INFO returns the extension unit GUID 
 
 The following code example shows how to submit KSPROPERTY\_EXTENSION\_UNIT\_INFO, taken from the complete sample shown in [Sample Extension Unit Plug-in DLL](https://msdn.microsoft.com/library/windows/hardware/ff568134):
 
-```
+```cpp
 ExtensionProp.Property.Set = PROPSETID_VIDCAP_EXTENSION_UNIT;
     ExtensionProp.Property.Id = KSPROPERTY_EXTENSION_UNIT_INFO;
     ExtensionProp.Property.Flags = KSPROPERTY_TYPE_GET | 
@@ -129,12 +125,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

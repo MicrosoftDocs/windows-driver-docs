@@ -5,11 +5,7 @@ description: This topic provides information on how to communicate with the RIL 
 ms.assetid: 612a7f98-053f-4447-bb0e-c6f34969df5d
 keywords:
 - Communicate with the RIL driver by using the IOemCellularModem interface network drivers
-ms.author: windowsdriverdev
 ms.date: 11/07/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

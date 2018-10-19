@@ -5,9 +5,6 @@ ms.assetid: da756906-6243-4cb9-b4e5-5b0b4540533d
 keywords: ["debugger command program, examples"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,19 +20,19 @@ The following sections describe debugger command programs.
 
 The following example uses the [**.foreach**](-foreach.md) token to search for WORD values of 5a4d. For each 5a4d value that is found, the debugger displays 8 DWORD values, starting at the address of where the 5a4d DWORD was found.
 
-```
+```dbgcmd
 0:000> .foreach (place { s-[1]w 77000000 L?4000000 5a4d }) { dc place L8 } 
 ```
 
 The following example uses the [**.foreach**](-foreach.md) token to search for WORD values of 5a4d. For each 5a4d value that is found, the debugger displays 8 DWORD values, starting 4 bytes prior to the address where the 5a4d DWORD was found.
 
-```
+```dbgcmd
 0:000> .foreach (place { s-[1]w 77000000 L?4000000 5a4d }) { dc place -0x4 L8 } 
 ```
 
 The following example displays the same values.
 
-```
+```dbgcmd
 0:000> .foreach (place { s-[1]w 77000000 L?4000000 5a4d }) { dc ( place -0x4 ) L8 } 
 ```
 
@@ -47,7 +44,7 @@ The **-\[1\]** option together with the [**s (Search Memory)**](s--search-memory
 
 The following command displays verbose module information for all modules that are located in the memory range from 0x77000000 through 0x7F000000.
 
-```
+```dbgcmd
 0:000> .foreach (place { lm1m }) { .if ((${place} >= 0x77000000) & (${place} <= 0x7f000000)) { lmva place } } 
 ```
 
@@ -69,7 +66,7 @@ This example illustrates the following features:
 
 -   The **?** flag is used with the [**r (Registers)**](r--registers-.md) command. This flag assigns typed values to the pseudo-register **$t2**.
 
-```
+```dbgcmd
 $$  Get process list LIST_ENTRY in $t0.
 r $t0 = nt!PsActiveProcessHead
 
@@ -110,7 +107,7 @@ This example illustrates the following features:
 
 -   The [**.block**](-block.md) token is used to add an extra alias replacement step. Alias replacement occurs one time for the whole script when it is loaded and one time when each block is entered. Without the **.block** token and its braces, the **.echo** command does not receive the values of the **$Mod** and **$Base** aliases that are assigned in the previous lines.
 
-```
+```dbgcmd
 $$ Get module list LIST_ENTRY in $t0.
 r? $t0 = &@$peb->Ldr->InLoadOrderModuleList
  

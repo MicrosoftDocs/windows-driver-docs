@@ -2,11 +2,7 @@
 title: BCDEdit /deletevalue
 description: The BCDEdit /deletevalue command deletes or removes a boot entry option (and its value) from the Windows boot configuration data store (BCD).
 ms.assetid: 70833A12-B1F7-4AF6-952F-02A70718E870
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["BCDEdit /deletevalue Driver Development Tools"]
 topic_type:
 - apiref
@@ -27,7 +23,7 @@ The **BCDEdit /deletevalue** command deletes or removes a boot entry option (and
    
 ```
 
-To delete a boot option value that you have set, use the **BCDEdit /deletevalue** command. A common scenario for using the the **BCDEdit /deletevalue** command is to remove boot entry options when you are testing and debugging a driver. 
+To delete a boot option value that you have set, use the **BCDEdit /deletevalue** command. A common scenario for using the **BCDEdit /deletevalue** command is to remove boot entry options when you are testing and debugging a driver. 
 
 For example, if you use [**BCDEdit /set**](bcdedit--set.md) to change the **groupsize** processor group option to a new value for testing purposes, you can use **BCDEdit /deletevalue** to delete the new value and revert to the default value by typing the following command. Note that you must then restart the computer for the change to take effect.
 

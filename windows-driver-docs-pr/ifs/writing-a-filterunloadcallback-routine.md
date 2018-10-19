@@ -5,11 +5,7 @@ description: Writing a FilterUnloadCallback Routine
 ms.assetid: 2f680770-38af-4dcb-93b8-7f770e0378b2
 keywords:
 - FilterUnloadCallback
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ ms.localizationpriority: medium
 
 The *FilterUnloadCallback* routine is defined as follows:
 
-```
+```cpp
 typedef NTSTATUS
 (*PFLT_FILTER_UNLOAD_CALLBACK) (
     FLT_FILTER_UNLOAD_FLAGS Flags

@@ -5,9 +5,6 @@ ms.assetid: f27e5ae5-1beb-4d2b-987e-5e91d0742e2d
 keywords: [".netuse (Control Network Connections) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.netuse** command adds a connection to a network share.
 
-```
+```dbgcmd
 .netuse /a "[Local]" "Remote" "[User]" "[Password]" 
 ```
 
@@ -78,7 +75,7 @@ If you use **.netuse** during a remote debugging session, this command affects t
 
 The following example shows this command.
 
-```
+```dbgcmd
 0:000> .netuse "m:" "\\myserver\myshare" "" "" 
 ```
 

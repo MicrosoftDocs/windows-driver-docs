@@ -5,9 +5,6 @@ ms.assetid: 2215f166-2053-4525-80cd-be3817510dbd
 keywords: ["devstack Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!devstack** extension displays a formatted view of the device stack associated with a device object.
 
-```
+```dbgcmd
 !devstack DeviceObject 
 ```
 
@@ -64,7 +61,7 @@ If *DeviceObject* specifies the name of the device but supplies no prefix, the p
 
 Here is an example:
 
-```
+```dbgcmd
 kd> !devstack e000000085007b50
  !DevObj   !DrvObj            !DevExt   ObjectName
   e0000165fff32040  \Driver\kmixer     e0000165fff32190  

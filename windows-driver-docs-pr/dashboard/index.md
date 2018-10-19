@@ -75,7 +75,7 @@ The Windows Hardware Dev Center Dashboard enables you to create and manage your 
                         <ul>
                             <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api">Manage hardware submissions using APIs</a></li>
                             <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-product-data">Get product data</a></li>
-                            <li><a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/manage-product-submissions">Manage product submissions</a></li>
+                            <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/manage-product-submissions">Manage product submissions</a></li>
                         </ul>
                     </div>
                 </div>
@@ -96,7 +96,7 @@ The Windows Hardware Dev Center Dashboard enables you to create and manage your 
                         <ul>
                             <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/register-for-the-hardware-program">Register for the hardware program</a></li>
                             <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/adding-or-removing-users">Add or remove users</a></li>
-                            <li><a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/driver-failure-reporting">Report driver failures</a></li>
+                            <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/driver-failure-reporting">Report driver failures</a></li>
                         </ul>
                     </div>
                 </div>

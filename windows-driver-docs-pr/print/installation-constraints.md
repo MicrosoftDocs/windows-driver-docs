@@ -5,11 +5,7 @@ description: Installation Constraints
 ms.assetid: 0adf5a6a-e9de-4bb0-bf1c-fe7eef565840
 keywords:
 - installation constraints WDK Unidrv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,7 +38,7 @@ where *FeatureName* is the name of a feature and *OptionName* is the name of an 
 
 The features and options listed in a single \*InvalidInstallableCombination entry indicate a set of features and options that cannot be used in combination. For example, the following entry specifies that the envelope feeder and the duplexing unit cannot be simultaneously installed.
 
-```
+```cpp
 *InvalidInstallableCombination: LIST(InputBin.ENVFEED, Duplex)
 ```
 

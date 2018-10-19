@@ -5,9 +5,6 @@ ms.assetid: 6b4d8e00-426c-496b-9c52-c60faeb0c975
 keywords: ["s (Set Current Process) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +21,7 @@ The **|s** command sets or displays the current process number.
 
 Do not confuse this command with the [**s (Search Memory)**](s--search-memory-.md), [**~s (Change Current Processor)**](-s--change-current-processor-.md), [**~s (Set Current Thread)**](-s--set-current-thread-.md), or [**||s (Set Current System)**](--s--set-current-system-.md) command.
 
-```
+```dbgcmd
 |Process s 
 | s 
 ```

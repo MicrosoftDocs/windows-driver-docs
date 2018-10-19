@@ -1,11 +1,7 @@
 ---
 Description: Creating the Sensor Devices
 title: Creating the Sensor Devices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ In this diagram, Pin 15 on the BS2 receives the sensor data. The firmware for ea
 
 The code found in the PollSensor function varies from sensor to sensor. In the case of the Ultrasonic distance sensor, the PollSensor function issues a pulse with the ultrasonic transducer, listens for a response, and then measures the time that it takes for the response to occur.
 
-```
+```cpp
 PollSensor:
   PULSOUT 15, 5
   PULSIN 15, 1, time
@@ -32,7 +28,7 @@ RETURN
 
 The RetrieveInterval function is identical for every sensor. This function retrieves a new interval packet from the WPD driver (if one was sent), and then updates the interval property accordingly in the firmware. If no interval was received from the driver, the RetrieveInterval function invokes a default Timeout function. This function transmits the sensor data back to the WPD driver.
 
-```
+```cpp
 RetrieveInterval:
     SERIN 16, 16780, Interval, Timeout, [DEC NewInterval]   &#39;Retrieve interval
     IF NewInterval >= 10 AND NewInterval <= 60000 THEN
@@ -43,7 +39,7 @@ RETURN
 
 The Timeout function has the following format:
 
-```
+```cpp
 Timeout:
   SEROUT 16, 16780, [DEC1 SensorID, DEC1 ElementSize, DEC1 ElementCount, DEC5 cmDistance, DEC5 Interval]
 GOTO Main
@@ -51,7 +47,7 @@ GOTO Main
 
 Be aware that the Timeout function returns to the Main routine, which invokes PollSensor.
 
-```
+```cpp
 Main:
   GOSUB PollSensor                   &#39;Determine distance
   GOSUB RetrieveInterval             &#39;Retrieve interval data
@@ -59,7 +55,7 @@ Main:
 
 The following is the complete source code for the ultrasonic distance sensor:
 
-```
+```cpp
 &#39; Smart Sensors and Applications - PingMeasureCmAndIn.bs2
 &#39; Measure distance with Ping))) sensor and display in both in & cm
 &#39; {$STAMP BS2}

@@ -5,11 +5,7 @@ description: The WDFDEVICE_INIT structure is an opaque structure that is defined
 ms.assetid: 38a8d316-6d66-4c1a-bb1c-93e2893542e8
 keywords:
  - WDFDEVICE_INIT structure
-ms.author: windowsdriverdev
 ms.date: 02/23/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

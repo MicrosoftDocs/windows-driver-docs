@@ -2,11 +2,7 @@
 title: IRP_MJ_FLUSH_BUFFERS
 author: windows-driver-content
 description: Drivers of devices with internal caches for data and drivers that maintain internal buffers for data must handle this request in a DispatchFlushBuffers routine.
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: c1023999-0c80-4c09-a9ea-a9422184bba7
 keywords:
  - IRP_MJ_FLUSH_BUFFERS Kernel-Mode Driver Architecture

@@ -5,9 +5,6 @@ ms.assetid: 32796ada-53ee-465f-b284-db6ee5481878
 keywords: ["memusage Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +21,7 @@ The **!memusage** extension displays summary statistics about physical memory us
 
 Syntax
 
-```
+```dbgcmd
 !memusage [Flags]
 ```
 
@@ -68,7 +65,7 @@ The **!memusage** command can also be used while performing [local kernel debugg
 
 Here is an example of the output from this extension:
 
-```
+```dbgcmd
 kd> !memusage
  loading PFN database
 loading (98% complete)

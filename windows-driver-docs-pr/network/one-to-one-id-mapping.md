@@ -7,11 +7,7 @@ keywords:
 - ID mapping WDK netmap.inf
 - one-to-one ID mapping WDK networking
 - preupgrade IDs WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +27,7 @@ An entry in an **Oem*Xxx*** section of a netmap.inf file that specifies one-to-o
 
 For example:
 
-```
+```cpp
 netservice=netservice_2000
 ```
 

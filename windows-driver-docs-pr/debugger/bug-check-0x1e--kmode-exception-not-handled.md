@@ -5,9 +5,6 @@ ms.assetid: 4a30b770-b2c4-4fdd-b431-95f2b40ef5f7
 keywords: ["Bug Check 0x1E KMODE_EXCEPTION_NOT_HANDLED", "KMODE_EXCEPTION_NOT_HANDLED"]
 ms.author: domars
 ms.date: 08/23/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

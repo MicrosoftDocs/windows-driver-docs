@@ -4,11 +4,7 @@ description: Updating the MiniportInitialize Function for NDIS 6.0
 ms.assetid: 8d21f49f-1710-4bd6-bc92-733580765db6
 keywords:
 - updating MiniportInitialize
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

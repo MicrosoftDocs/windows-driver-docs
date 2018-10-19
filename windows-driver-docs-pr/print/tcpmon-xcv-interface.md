@@ -8,11 +8,7 @@ keywords:
 - transceive (Xcv) interface WDK print
 - Xcv interface WDK print
 - TCPMON Xcv interface WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ This section describes the transceive (Xcv) interface for the standard TCP/IP po
 
 To obtain a handle to an Xcv interface for either a local machine or a remote machine, call the **OpenPrinter** function (described in the Microsoft Windows SDK documentation). The following code example illustrates how to obtain an Xcv handle to a port:
 
-```
+```cpp
 HANDLE hXcv = INVALID_HANDLE_VALUE;
 PRINTER_DEFAULTS Defaults = { NULL, NULL, <Required Access> };
 
@@ -47,7 +43,7 @@ In the code example, *ServerName* and *PortName* represent server and port name 
 
 If the port does not yet exist, the Xcv handle can be obtained from the server by specifying the monitor name. (In the case of the standard TCP/IP port monitor port, this is "Standard TCP/IP Port".) The following code example illustrates how to obtain an Xcv data handle to a port monitor:
 
-```
+```cpp
 HANDLE hXcv = INVALID_HANDLE_VALUE;
 PRINTER_DEFAULTS Defaults = { NULL, NULL, <Required Access> };
 

@@ -8,11 +8,7 @@ keywords:
 - postoperation callback routines WDK file system minifilter , modifying parameters
 - file system minifilter drivers WDK , modifying I/O parameters
 - minifilter drivers WDK , modifying I/O parameters
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: e0839e78-ba14-484c-9570-012a11896ad0
 keywords: ["Bug Check 0x15 LAST_CHANCE_CALLED_FROM_KMODE", "LAST_CHANCE_CALLED_FROM_KMODE"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

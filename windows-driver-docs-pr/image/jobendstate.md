@@ -9,11 +9,7 @@ api_name:
 - wscn JobEndState
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **JobEndState** element describes the final state of the current sc
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobEndState>
   child elements
 </wscn:JobEndState>
@@ -97,7 +93,7 @@ Remarks
 
 The **JobEndState** element contains child elements that describe various aspects about the end state of a scan job. The WSD Scan Service sends a **JobEndState** element to a client through the [**JobEndStateEvent**](jobendstateevent.md) element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**JobCompletedState**](jobcompletedstate.md)

@@ -2,11 +2,7 @@
 title: C30034
 description: Warning C30034 Passing a flag value to an allocating function that could result in executable memory being allocated.
 ms.assetid: 11B06B23-17B4-4B97-A1EE-3351B72B7B1D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

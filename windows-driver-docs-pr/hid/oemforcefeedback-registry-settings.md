@@ -5,6 +5,7 @@ description: OEMForceFeedback Registry Settings
 ms.assetid: c29fe1e8-1cd9-4b32-96d7-1afae5a49d42
 keywords: ["force feedback drivers WDK HID , OEMForceFeedback settiings", "OEMForceFeedback key WDK HID", "registry WDK force feedback", "Effects subkey WDK force feedback"]
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # OEMForceFeedback Registry Settings
@@ -21,7 +22,7 @@ A new **OEMForceFeedback** key has been defined to hold force feedback specific 
 
 Under the **Effects** subkey is a list of subkeys, one for each effect. The name of each subkey is a globally unique identifier (GUID) in the form "{12345678-1234-1234-1234-123456789012}". Beneath the key named "{...}" are two values. The default value is the string friendly name for the effect. The **Attributes** value is the [**DIEFFECTATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff538456) structure.
 
-```
+```cpp
 "{guid1}"
     Default value = friendly name for effect {guid1} (string)
     "Attributes" = DIEFFECTATTRIBUTES structure (binary)
@@ -32,7 +33,7 @@ Under the **Effects** subkey is a list of subkeys, one for each effect. The name
 
 The **OEMForceFeedback** key also includes a value that contains the device attributes and one of two optional values. Of the optional values, use **CLSID** if you are using a ring 3 driver (DLL), and **VJoyD** if you are using a ring 0 driver (VxD).
 
-```
+```cpp
 "Attributes" = DIFFDEVICEATTRIBUTES structure (binary)
 "CLSID" = {GUID} for force feedback effect driver (string)(optional)
 "VJoyD" = zero-length binary (optional)

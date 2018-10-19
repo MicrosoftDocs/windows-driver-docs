@@ -2,11 +2,7 @@
 title: AddDevice rule (wdm)
 description: The AddDevice rule specifies that the driver's AddDevice routine calls IoAttachDeviceToDeviceStack only after calling IoCreateDevice.
 ms.assetid: 6379633a-194f-45b8-8c21-85eecf300aeb
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["AddDevice rule (wdm)"]
 topic_type:
 - apiref

@@ -7,11 +7,7 @@ keywords:
 - changer drivers WDK storage , miniclass drivers
 - storage changer drivers WDK , miniclass drivers
 - miniclass drivers WDK changer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ This section provides installation information, specific to changer miniclass dr
 
 Vendors supplying their own controller minidriver should make that minidriver a member of the MediumChanger setup class in the [**INF Version Section**](https://msdn.microsoft.com/library/windows/hardware/ff547502) of the driver's INF file. For example:
 
-```
+```cpp
 [version]
 Signature="$WINDOWS NT$"
 Class=MediumChanger

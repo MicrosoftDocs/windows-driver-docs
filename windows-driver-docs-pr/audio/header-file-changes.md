@@ -24,11 +24,7 @@ keywords:
 - positions WDK audio
 - WDM audio data formats WDK
 - data formats WDK audio , header files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -74,7 +70,7 @@ In Windows Server 2003, Windows XP with SP1, Windows 2000, and Windows Me/98, Ks
 
 The two channel masks in the preceding table represent the 5.1 speaker configuration and the 7.1 speaker configuration. To identify the same two speaker configurations, Dsound.h defines the following speaker-configuration IDs:
 
-```
+```cpp
   #define DSSPEAKER_5POINT1      0x00000006
   #define DSSPEAKER_7POINT1      0x00000007
 ```
@@ -122,7 +118,7 @@ By comparing the two preceding tables, the following points are apparent:
 
 To represent the same set of speaker configurations, Dsound.h defines the following speaker-configuration IDs:
 
-```
+```cpp
   #define DSSPEAKER_5POINT1             0x00000006
   #define DSSPEAKER_7POINT1             0x00000007
   #define DSSPEAKER_7POINT1_SURROUND    0x00000008

@@ -5,9 +5,6 @@ ms.assetid: 1b36e922-9079-4dc5-911a-f635ec026084
 keywords: ["threadfields Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!threadfields** extension displays the names and offsets of the fields within the executive thread (ETHREAD) block.
 
-```
+```dbgcmd
 !threadfields
 ```
 
@@ -59,13 +56,13 @@ Remarks
 
 This extension command is not available in Windows XP or later versions of Windows. Instead, use the [**dt (Display Type)**](dt--display-type-.md) command to show the ETHREAD structure directly:
 
-```
+```dbgcmd
 kd> dt nt!_ETHREAD 
 ```
 
 Here is an example of **!threadfields** from a Windows 2000 system:
 
-```
+```dbgcmd
 kd> !threadfields
  ETHREAD structure offsets:
 

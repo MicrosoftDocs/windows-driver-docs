@@ -5,9 +5,6 @@ ms.assetid: D14307A3-1D52-4B4E-85B2-2CD0B2442695
 keywords: ["Bug Check 0x16C INVALID_RUNDOWN_PROTECTION_FLAGS", "INVALID_RUNDOWN_PROTECTION_FLAGS"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

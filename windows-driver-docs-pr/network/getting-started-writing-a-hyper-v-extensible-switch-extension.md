@@ -2,11 +2,7 @@
 title: Getting started writing a Hyper-V Extensible Switch extension
 description: This section describes how to start writing a Hyper-V Extensible Switch extension
 ms.assetid: 91C6ED75-1057-4520-8E8E-28817D8F3C81
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -55,10 +51,10 @@ To create a Hyper-V Extensible Switch extension, follow these steps:
 
 6.  Learn about the Windows certification (logo) process for getting an extension signed.
     -   An extension must pass the tests in the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613).
-    -   The requirements for an extension are listed under the Filter.Driver.vSwitchExtension.ExtensionRequirements in the [Windows Hardware Certification Requirements - Filter Driver](http://msdn.microsoft.com/en-US/library/windows/hardware/jj128255) .
+    -   The requirements for an extension are listed under the Filter.Driver.vSwitchExtension.ExtensionRequirements in the [Windows Hardware Certification Requirements - Filter Driver](http://msdn.microsoft.com/library/windows/hardware/jj128255) .
 
 7.  Set up your Windows Hardware Certification Kit environment.
-    -   Download and install the [Windows Hardware Certification Kit](http://msdn.microsoft.com/en-US/windows/hardware/hh852359).
+    -   Download and install the [Windows Hardware Certification Kit](http://msdn.microsoft.com/windows/hardware/hh852359).
 
 8.  Run the WHCK tests for extensions:
     -   Filter.Driver.Fundamentals

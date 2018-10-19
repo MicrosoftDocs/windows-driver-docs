@@ -2,11 +2,7 @@
 title: Stack and Dump Logging
 description: Stack and Dump Logging
 ms.assetid: 5FE6AA76-5299-4d5d-9154-6DB34D93EECB
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +29,7 @@ The optional dump type parameter specifies what the taken mini dump should conta
 
 Example (save dump into a cab along with its pdbs):
 
-```
+```cpp
 NoThrowString savedDumpFilePath;
 HRESULT hr = Debug::SaveDump(MiniDumpFormat::WriteCab | MiniDumpFormat::WriteCabSecondaryFiles, savedDumpFilePath);
 ```
@@ -48,7 +44,7 @@ The optional stack type parameter specifies what the stack trace should contain.
 
 Example:
 
-```
+```cpp
 NoThrowString stackText;
 HRESULT hr = Debug::GetStack(CallStackFormat::ColumnNames | CallStackFormat::FrameAddress |
                              CallStackFormat::SourceLine, stackText);

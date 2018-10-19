@@ -5,9 +5,6 @@ ms.assetid: ff2d54ad-924b-420c-b2f9-716c30cb1ef8
 keywords: ["Bug Check 0x2F INSTRUCTION_BUS_ERROR", "INSTRUCTION_BUS_ERROR"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

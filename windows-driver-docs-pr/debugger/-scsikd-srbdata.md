@@ -5,9 +5,6 @@ ms.assetid: 9c0ba4d9-124f-4e86-a0e1-7f8796b6571a
 keywords: ["scsikd.srbdata Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!scsikd.srbdata** extension displays the specified SRB\_DATA tracking block.
 
-```
+```dbgcmd
 !scsikd.srbdata Address 
 ```
 

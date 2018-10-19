@@ -2,10 +2,7 @@
 title: Debugging Using WinDbg Preview
 description: This section describes how to perform basic debugging tasks using the WinDbg preview debugger.
 ms.author: domars
-ms.date: 08/06/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 10/18/2018
 ms.localizationpriority: medium
 ---
 
@@ -110,7 +107,7 @@ Debugging your universal app or background task is now a single click.
 
 ![Launch App Package Applications tab showing cal in the search box with three apps listed](images/windbgx-launch-app-package.png)
 
-For more information, see [Launch App Package](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/windbg-user-mode-preview#launch-app-package).
+For more information, see [Launch App Package](https://docs.microsoft.com/windows-hardware/drivers/debugger/windbg-user-mode-preview#launch-app-package).
 
 
 ### Attach to a process
@@ -150,7 +147,7 @@ For more information, see [WinDbg Preview - Scripting](windbg-scripting-preview.
 
 Because the underling debugger engine is the same, all of the previous debugger commands and debugger extensions continue to work.
 
-## <span id="providingfeedback"></span>Providing feedback
+## <span id="providing-feedback"></span>Providing feedback
 
 Your feedback will help guide WinDbg's development going forward. 
 

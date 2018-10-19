@@ -5,11 +5,7 @@ description: The WdfObjectDereference macro decrements the reference count for a
 ms.assetid: e945202c-7e6b-47b7-9216-d7a3a694489e
 keywords:
  - WdfObjectDereference macro
-ms.author: windowsdriverdev
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -58,7 +54,7 @@ Examples
 
 The following code example decrements an object's reference count.
 
-```
+```cpp
 WdfObjectDereference(Object); 
 ```
 

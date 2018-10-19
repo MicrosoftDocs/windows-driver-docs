@@ -9,11 +9,7 @@ api_name:
 - wscn ScanData
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ScanData** element contains the binary data that represents the s
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScanData/>
 ```
 
@@ -63,7 +59,7 @@ Remarks
 
 The **ScanData** element contains an **xop:Include** element that specifies the location of the scan data relative to the SOAP Envelope/Body of a [**RetrieveImageResponse**](retrieveimageresponse.md) operation element. The actual scan data is appended to the SOAP Envelope/Body as a binary attachment.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**RetrieveImageResponse**](retrieveimageresponse.md)

@@ -3,11 +3,7 @@ title: WDI_TLV_CHANNEL_NUMBER
 author: windows-driver-content
 description: WDI_TLV_CHANNEL_NUMBER is a TLV that contains a channel number.
 ms.assetid: 254831C8-8AE0-4742-8FCC-0310214696A7
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CHANNEL_NUMBER Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

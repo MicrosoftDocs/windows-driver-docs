@@ -2,11 +2,7 @@
 title: Verifying the Test Signature
 description: Verifying the Test Signature
 ms.assetid: 996ce3d4-76b5-4c78-9ea9-ca8a04cfef99
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ After the test certificate is copied to the Trusted Root Certification Authoriti
 
 The following example verifies the signature for one of the files, *toastpkg.inf*, in the Toastpkg sample's signed catalog file, *tstamd64.cat*. For more information about how this catalog file was created, see [Using Inf2Cat to Create a Catalog File](using-inf2cat-to-create-a-catalog-file.md):
 
-```
+```cpp
 Signtool verify /pa /v /c tstamd64.cat toastpkg.inf
 ```
 
@@ -43,7 +39,7 @@ Where:
 
 The following example verifies the signature of the *Toastpkg* sample's signed catalog file, *Tstamd64.cat*:
 
-```
+```cpp
 Signtool verify /pa /v tstamd64.cat
 ```
 

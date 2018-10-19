@@ -5,9 +5,6 @@ ms.assetid: a4915678-a83f-48f1-8b29-50cf530f9246
 keywords: ["expressions, examples", "MASM expressions, examples", "C++ expressions, examples"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

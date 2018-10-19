@@ -6,11 +6,7 @@ keywords:
 - mic array WDK audio
 - geometry descriptor WDK audio
 - microphone array WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +25,7 @@ After an application discovers a microphone array that is plugged into the corre
 
 The following code example shows a KSAUDIO\_MIC\_ARRAY\_GEOMETRY structure that an audio driver uses to describe an external USB microphone array:
 
-```
+```cpp
 KSAUDIO_MIC_ARRAY_GEOMETRY mic_Array =
 {
  0x100,// usVersion (1.0)
@@ -49,7 +45,7 @@ In the preceding code example, the ar\_mic\_Coordinates variable is an array of 
 
 The following code example shows how the ar\_mic\_Coordinates array is used to describe the geometric locations of the microphones in the microphone array as described in the preceding code example:
 
-```
+```cpp
 KsMicCoord ar_mic_Coordinates[] =
 {
  // Array microphone 1
@@ -79,7 +75,7 @@ To modify the Micarray MSVAD sample driver to provide array geometry information
 
 First, navigate to Src\\Audio\\Msvad\\Micarray and locate the Mintopo.cpp file. Edit the property handler section in Mintopo.cpp so that the KSAUDIO\_MIC\_ARRAY\_GEOMETRY structure contains information about the microphone array. The specific section of code that you must modify is shown in the following code example:
 
-```
+```cpp
 // Modify this portion of PropertyHandlerMicArrayGeometry
 PKSAUDIO_MIC_ARRAY_GEOMETRY pMAG = (PKSAUDIO_MIC_ARRAY_GEOMETRY)PropertyRequest->Value;
 

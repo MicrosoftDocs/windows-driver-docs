@@ -2,11 +2,7 @@
 title: Service number
 description: Service number
 ms.assetid: c09bd5f2-16d7-44d4-b87f-e46961932cfc
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,8 +15,7 @@ The service number uniquely identifies the given mobile operator and is a requir
 
 ## <span id="related_topics"></span>Related topics
 
-
-[Create a mobile broadband experience](https://msdn.microsoft.com/library/windows/hardware/dn236414.aspx)
+- [Create a mobile broadband experience](https://msdn.microsoft.com/library/windows/hardware/dn236414.aspx)
 
  
 

@@ -3,11 +3,7 @@ title: WDI_TLV_NETWORK_LIST_OFFLOAD_CONFIG
 author: windows-driver-content
 description: WDI_TLV_NETWORK_LIST_OFFLOAD_CONFIG is a TLV that contains Network List Offload (NLO) configuration.
 ms.assetid: 8805B31C-7601-4045-AD52-21B91E2D3722
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_NETWORK_LIST_OFFLOAD_CONFIG Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

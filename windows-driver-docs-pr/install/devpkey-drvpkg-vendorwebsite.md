@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DEVPKEY_DrvPkg_VendorWebSite
@@ -51,7 +52,7 @@ Remarks
 
 The URL can be a link to the root of the vendor website, a webpage within a website, or a redirection page. The URL can also contain parameters, for example, the following URL contains a **prod** parameter that supplies the product identifier "DSC530" and a **rev** parameter that supplies the number "34":
 
-```
+```cpp
 http://www.microsoft.com/redirect?prod=DSC530&rev=34
 ```
 
@@ -59,7 +60,7 @@ You can set the value of DEVPKEY_DrvPkg_VendorWebSite by an [**INF AddProperty d
 
 The following is an example of how to use an INF **AddProperty** directive to set the DEVPKEY_DrvPkg_VendorWebSite property value for a device that is installed by an INF *DDInstall* section "SampleDDInstallSection":
 
-```
+```cpp
 [SampleDDinstallSection]
 ...
 AddProperty=SampleAddPropertySection

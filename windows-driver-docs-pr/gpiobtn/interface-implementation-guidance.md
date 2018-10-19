@@ -4,6 +4,7 @@ author: windows-driver-content
 description: This section provides guidance for interface implementation.
 ms.assetid: E97A880F-0422-432C-8567-444CA6FD2980
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Interface implementation guidance

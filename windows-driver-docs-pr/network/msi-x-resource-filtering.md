@@ -7,11 +7,7 @@ keywords:
 - message-signaled interrupts WDK networking , resource-requirements filter function
 - MSIs WDK networking , resource-requirements filter function
 - resource-requirements filter function WDK net
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,11 +21,11 @@ Miniport drivers must register a resource-requirements filter function if they s
 
 NDIS calls the [*MiniportFilterResourceRequirements*](https://msdn.microsoft.com/library/windows/hardware/ff559384) function after NDIS receives the [**IRP\_MN\_FILTER\_RESOURCE\_REQUIREMENTS**](https://msdn.microsoft.com/library/windows/hardware/ff550874) I/O request packet (IRP) for a network interface card (NIC). NDIS calls *MiniportFilterResourceRequirements* after the underlying function drivers in the device stack have completed the IRP.
 
-NDIS will call *MiniportFilterResourceRequirements* after the [*MiniportAddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff559332) function returns NDIS\_STATUS\_SUCCESS. NDIS may call *MiniportFilterResourceRequirements* again at any time before calling [*MiniportRemoveDevice*](https://msdn.microsoft.com/en-us/library/windows/hardware/ff559427). NDIS may call *MiniportFilterResourceRequirements* while the miniport is running. While the miniport may modify the resource list as described below, the miniport should not immediately attempt to use the new resources. NDIS will eventually halt and re-initialize the miniport with the new resources; only then should the miniport attempt to use the new resources.
+NDIS will call *MiniportFilterResourceRequirements* after the [*MiniportAddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff559332) function returns NDIS\_STATUS\_SUCCESS. NDIS may call *MiniportFilterResourceRequirements* again at any time before calling [*MiniportRemoveDevice*](https://msdn.microsoft.com/library/windows/hardware/ff559427). NDIS may call *MiniportFilterResourceRequirements* while the miniport is running. While the miniport may modify the resource list as described below, the miniport should not immediately attempt to use the new resources. NDIS will eventually halt and re-initialize the miniport with the new resources; only then should the miniport attempt to use the new resources.
 
 [**IRP\_MN\_FILTER\_RESOURCE\_REQUIREMENTS**](https://msdn.microsoft.com/library/windows/hardware/ff550874) provides a resource list as an [**IO\_RESOURCE\_REQUIREMENTS\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff550609) structure at **Irp-&gt;IoStatus.Information**. The resources in the list are described by [**IO\_RESOURCE\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff550598) structures.
 
-A miniport driver can modify the interrupt affinity policy for each resource of type **CmResourceTypeInterrupt** that describes an MSI-X message. If an affinity policy requests targeting for a specific set of processors, the miniport driver also sets a [**KAFFINITY**](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/interrupt-affinity-and-priority#about-kaffinity) mask at **Interrupt.TargetedProcessors** in the IO\_RESOURCE\_DESCRIPTOR structure.
+A miniport driver can modify the interrupt affinity policy for each resource of type **CmResourceTypeInterrupt** that describes an MSI-X message. If an affinity policy requests targeting for a specific set of processors, the miniport driver also sets a [**KAFFINITY**](https://docs.microsoft.com/windows-hardware/drivers/kernel/interrupt-affinity-and-priority#about-kaffinity) mask at **Interrupt.TargetedProcessors** in the IO\_RESOURCE\_DESCRIPTOR structure.
 
 A miniport driver can remove all resources of type **CmResourceTypeInterrupt** that are message interrupt resources. The driver can then register for line-based interrupts in the [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function. If the miniport driver does not remove these message interrupt resources, the operating system will fail if the driver tries to register line-based interrupts in *MiniportInitializeEx*.
 

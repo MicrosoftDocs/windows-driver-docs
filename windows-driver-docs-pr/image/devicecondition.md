@@ -9,11 +9,7 @@ api_name:
 - wscn DeviceCondition wscn Id "..."
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **DeviceCondition** element provides details about one of the scann
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:DeviceCondition wscn:Id="..."
   Id = "xs:string">
   child elements
@@ -115,7 +111,7 @@ The WSD Scan Service specifies a unique identifier in the **Id** attribute for t
 
 The WSD Scan Service informs a client about changes to the scanner's status by sending a [**ScannerStatusConditionEvent**](scannerstatusconditionevent.md) event. A client can directly query the scanner's state by calling the [**GetScannerElementsRequest**](getscannerelementsrequest.md) operation.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ActiveConditions**](activeconditions.md)

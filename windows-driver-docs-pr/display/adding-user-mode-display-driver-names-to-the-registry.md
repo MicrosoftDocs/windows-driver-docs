@@ -6,11 +6,7 @@ keywords:
 - INF files WDK display , user-mode driver names
 - user-mode display drivers WDK Windows Vista , names added to registry
 - registry WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ ms.localizationpriority: medium
 
 You must set the following entry in an add-registry section of the INF file so that the names of user-mode display drivers are added to the registry during driver installation:
 
-```
+```cpp
 [Xxx_SoftwareDeviceSettings]
 ...
 HKR,, InstalledDisplayDrivers,    %REG_MULTI_SZ%, UserModeDriverName1, UserModeDriverName2, UserModeDriverNameWow1, UserModeDriverNameWow2
@@ -27,7 +23,7 @@ HKR,, InstalledDisplayDrivers,    %REG_MULTI_SZ%, UserModeDriverName1, UserModeD
 
 For example, for x86 computers:
 
-```
+```cpp
 [Xxx_SoftwareDeviceSettings]
 ...
 HKR,, InstalledDisplayDrivers,    %REG_MULTI_SZ%, r200umd 
@@ -35,7 +31,7 @@ HKR,, InstalledDisplayDrivers,    %REG_MULTI_SZ%, r200umd
 
 For example, for x64 computers:
 
-```
+```cpp
 [Xxx_SoftwareDeviceSettings]
 ...
 HKR,, InstalledDisplayDrivers,    %REG_MULTI_SZ%, r200umd, r200umdva, r200umd64, r200umd64va

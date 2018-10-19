@@ -8,11 +8,7 @@ keywords:
 - registering device interfaces WDK KMDF
 - receiving device interface access requests WDK KMDF
 - device interface classes WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -55,7 +51,7 @@ To register for notification of device interface events, a KMDF driver calls [**
 The following code example shows how a local UMDF 2 driver registers for notifications and then opens the remote I/O target.
 
 1.  The remote driver registers for a device interface by calling [**WdfDeviceCreateDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff545935) from [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693).
-    ```
+    ```cpp
         UNICODE_STRING ref;
         RtlInitUnicodeString(&ref, MY_HID_FILTER_REFERENCE_STRING);
         status = WdfDeviceCreateDeviceInterface(
@@ -72,7 +68,7 @@ The following code example shows how a local UMDF 2 driver registers for notific
     ```
 
 2.  The local driver calls [**CM\_Register\_Notification**](https://msdn.microsoft.com/library/windows/hardware/hh780224) from [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) to register for notification when a device interface is available. Provide a pointer to a notification callback routine that the framework calls when device interfaces are available.
-    ```
+    ```cpp
     DWORD cmRet;
         CM_NOTIFY_FILTER cmFilter;
        
@@ -95,7 +91,7 @@ The following code example shows how a local UMDF 2 driver registers for notific
     ```
 
 3.  The system calls the local driver's notification callback routine each time that the specified device interface arrives or is removed. The callback routine can examine the *EventData* parameter to determine which device interface has arrived. It might then queue a work item to open the device interface.
-    ```
+    ```cpp
     DWORD 
     MyCmInterfaceNotification(
         _In_ HCMNOTIFICATION       hNotify,
@@ -148,7 +144,7 @@ The following code example shows how a local UMDF 2 driver registers for notific
 
     In rare cases, a UMDF 2 driver can call [**CM\_Register\_Notification**](https://msdn.microsoft.com/library/windows/hardware/hh780224) a second time, to register for notification of device removal. For example, if the driver calls [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858) to get a HANDLE to the device interface, it should register for notification of device removal so that it can properly respond to query remove attempts. In most cases, the UMDF 2 driver calls **CM\_Register\_Notification** only once, and relies on WDF support for device removal.
 
-    ```
+    ```cpp
     VOID 
     EvtWorkItem(
         _In_ WDFWORKITEM WorkItem

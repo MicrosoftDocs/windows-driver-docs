@@ -4,9 +4,6 @@ description: Compilation of sample report templates for Windows driver submissio
 author: EliotSeattle
 ms.author: shganesh
 ms.date: 09/01/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -222,3 +219,5 @@ This API request payload calls for an IHV failure report for all drivers. It the
 - [Create a new report template](create-a-new-report-template.md)
 
 - [Analytics Reporting APIs (Swagger )](https://apidocs.microsoft.com/services/analyticsreportingapis)
+
+- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

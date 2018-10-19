@@ -5,6 +5,7 @@ description: Axis Selection Overrides
 ms.assetid: 151c3d19-2f80-4d71-a004-10c16c691fb9
 keywords: ["joysticks WDK HID , axes", "virtual joystick drivers WDK HID , axes", "VJoyD WDK HID , axes", "axes WDK joysticks", "overriding axis selections WDK joysticks", "usage pages WDK HID"]
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Axis Selection Overrides
@@ -58,7 +59,7 @@ For example, imagine a joystick device designed for use on a platform with a com
 
 Because these scenarios are not directly recognized by DirectInput (or JoyHID) they are not very useful to games. To get them recognized as the X and Y axes by DirectInput, the following registry entries could be added:
 
-```
+```cpp
 [DIRECT_INPUT_TYPES\ VID_vvvv&PID_pppp)\Axes\0]
      Binary Attributes = 00 00 00 00 05 00 24 00
 

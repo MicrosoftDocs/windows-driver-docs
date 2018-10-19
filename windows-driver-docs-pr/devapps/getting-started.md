@@ -2,11 +2,7 @@
 title: Getting started with UWP device apps
 description: Start here to begin building UWP device apps.
 ms.assetid: 6280E9CC-422B-4100-8B38-07BADD6A578A
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

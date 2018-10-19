@@ -9,11 +9,7 @@ keywords:
 - NET_BUFFER_LIST
 - task offload WDK TCP/IP transport , out-of-band data
 - connection offload WDK TCP/IP transport , out-of-band data
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

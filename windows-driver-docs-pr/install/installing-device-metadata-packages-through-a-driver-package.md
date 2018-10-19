@@ -2,11 +2,7 @@
 title: Installing Device Metadata Packages through a Driver Package
 description: Installing Device Metadata Packages through a Driver Package
 ms.assetid: fd140583-d4f9-4817-8edc-5bc3c6a2a1d7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,7 +37,7 @@ To install device metadata packages through a [driver package](driver-packages.m
 
 The following example shows how to copy device metadata packages to locale-specific directory paths by using an INF file for the device metadata store within the [**DestinationDirs Section**](inf-destinationdirs-section.md) and [**DDInstall**](inf-ddinstall-section.md) INF sections:
 
-```
+```cpp
 [SourceDisksNames]
 1 = %Media_Description%,,,\MetadataPackage ;
 

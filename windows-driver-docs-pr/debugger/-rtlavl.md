@@ -5,9 +5,6 @@ ms.assetid: b1e19b13-8bb6-4f40-8d51-368fafc38ebc
 keywords: ["avl tables", "rtlavl Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!rtlavl** extension displays the entries of an RTL\_AVL\_TABLE structure.
 
-```
+```dbgcmd
 !rtlavl Address [Module!Type]
 !rtlavl -?
 ```

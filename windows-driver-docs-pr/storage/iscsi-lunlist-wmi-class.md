@@ -3,6 +3,7 @@ title: ISCSI\_LUNList WMI Class
 description: ISCSI\_LUNList WMI Class
 ms.assetid: 2ad0dabe-54b3-4075-966b-491e078f2c8b
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # ISCSI\_LUNList WMI Class
@@ -13,7 +14,7 @@ ms.localizationpriority: medium
 
 The ISCSI\_LUNList WMI class describes a mapping from a logical unit number (LUN) that the operating system defines locally to be a 64-bit number that, together with the name of the target that the logical unit belongs to, uniquely identifies the logical unit and is globally valid anywhere in the network. This class is defined as follows in *Common.mof*.
 
-```
+```cpp
 class ISCSI_LUNList {
   [WmiDataId(1), description("Target LUN") : amended]
     uint64  TargetLUN;

@@ -5,11 +5,7 @@ ms.assetid: 6212502c-183c-4abb-9e56-59dba15fc685
 keywords:
 - INF files WDK device installations , directives
 - directives WDK INF files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -106,7 +102,7 @@ This rarely used directive references one or more *ini-to-registry-section*s spe
 
 The sections under which any of the directives in the previous list can be specified is system-determined. The basic form of each directive is shown in the formal syntax of the reference for each section, as for example:
 
-```
+```cpp
 [DDInstall] | [DDInstall.HW] | [DDInstall.CoInstallers] | 
 [ClassInstall32] | [ClassInstall32.ntx86] | [ClassInstall32.ntia64] | [ClassInstall32.ntamd64]
 

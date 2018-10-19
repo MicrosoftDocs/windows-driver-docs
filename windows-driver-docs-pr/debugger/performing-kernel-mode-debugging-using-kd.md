@@ -4,9 +4,6 @@ description: Live Kernel-Mode Debugging Using KD
 ms.assetid: 4C3DB315-CF92-44FC-A54C-0C100A32EB3C
 ms.author: domars
 ms.date: 06/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

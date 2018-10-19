@@ -5,9 +5,6 @@ ms.assetid: 73A2632C-962E-4075-97B9-5D7D843E9D0F
 keywords: ["storagekd.storunit Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!storagekd.storunit** extension displays information about the specified Storport logical unit.
 
-```
+```dbgcmd
 !storagekd.storunit [Address] 
 ```
 
@@ -56,7 +53,7 @@ Here is an example of the **!storagekd.storunit** display:
 
 **0: kd&gt; !storagekd.storunit**
 
-```
+```dbgcmd
 # STORPORT Units:
 ==================
 ## Product                 SCSI ID  Object            Extension         Pnd Out Ct  State
@@ -66,7 +63,7 @@ Msft       Virtual Di   0  0  1  fffffa800658a060  fffffa800658a1b0    0   0  0 
 
 **0: kd&gt; !storagekd.storunit fffffa800658a060**
 
-```
+```dbgcmd
    DO fffffa800658a060   Ext fffffa800658a1b0   Adapter fffffa800649a1a0   Working
    Vendor: Msft       Product: Virtual Disk       SCSI ID: (0, 0, 1)   
    Claimed Enumerated 

@@ -9,11 +9,7 @@ keywords:
 - formats WDK audio , non-PCM
 - PCM formats WDK audio
 - audio non-PCM formats WDK
-ms.author: windowsdriverdev
 ms.date: 10/27/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

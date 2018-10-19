@@ -4,9 +4,6 @@ description: Describes how to create a new report template for driver failure re
 author: EliotSeattle
 ms.author: shganesh
 ms.date: 09/01/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -354,3 +351,5 @@ You can manage your existing reports using the methods shown in [Manage report t
 - [Manage report templates](manage-report-templates-and-scheduled-reports.md)
 
 - [Sample report templates](sample-report-templates.md)
+
+- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

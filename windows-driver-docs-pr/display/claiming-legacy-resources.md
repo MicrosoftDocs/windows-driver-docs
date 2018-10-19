@@ -8,11 +8,7 @@ keywords:
 - video miniport drivers WDK Windows 2000 , initializing
 - initializing video miniport drivers
 - VIDEO_HW_INITIALIZATION_DATA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -61,7 +57,7 @@ Miniport drivers must do the following to report such legacy resources:
 
 Again, a driver should only include resources that the hardware decodes but that are not claimed by PCI. Code in a driver that needs to claim minimal legacy resources might look something like the following:
 
-```
+```cpp
 //              RangeStart        RangeLength
 //              |                 |      RangeInIoSpace
 //              |                 |      |  RangeVisible

@@ -8,11 +8,7 @@ keywords:
 - AVStream filter-centric filters WDK
 - filter types WDK AVStream
 - AVStrMiniFilterProcess
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,7 +38,7 @@ The following code examples illustrate how to use the process pin structures. Th
 
 The minidriver receives an array of KSPROCESSPIN\_INDEXENTRY structures in its filter process dispatch. In this example, the minidriver extracts the first KSPROCESSPIN structure from the KSPROCESSPIN\_INDEXENTRY structure of index VIDEO\_PIN\_ID:
 
-```
+```cpp
 NTSTATUS
 CCaptureFilter::
 Process (
@@ -60,13 +56,13 @@ The minidriver should not reference **ProcessPinsIndex** \[*n*\].**Pins** \[0\] 
 
 Then, to specify the pin on which to capture frames, the [*AVStrMiniFilterProcess*](https://msdn.microsoft.com/library/windows/hardware/ff556315) callback routine passes a pointer to a KSPROCESSPIN structure to *CaptureFrame*, a vendor-supplied capture routine:
 
-```
+```cpp
 VidCapPin -> CaptureFrame (VideoPin, m_Tick);
 ```
 
 The capture routine can then copy to or from the **Data** member of the KSPROCESSPIN structure. It might also update the **BytesUsed** and **Terminate** members of this structure, as in the following example:
 
-```
+```cpp
 RtlCopyMemory ( ProcessPin -> Data,
                 m_SynthesisBuffer,
                 m_VideoInfoHeader -> bmiHeader.biSizeImage
@@ -77,16 +73,8 @@ ProcessPin -> Terminate = TRUE;
 
 The minidriver can also access the stream header structure corresponding to the current stream pointer and pin:
 
-```
+```cpp
 PKSSTREAM_HEADER StreamHeader = ProcessPin -> StreamPointer -> StreamHeader;
 ```
 
 Most minidrivers that use filter-centric processing use the stream pointer only for stream header access. In the filter-centric model, AVStream manipulates the stream pointer internally. As a result, minidrivers should proceed with caution if they manipulate the stream pointer in a filter-centric driver.
-
- 
-
- 
-
-
-
-

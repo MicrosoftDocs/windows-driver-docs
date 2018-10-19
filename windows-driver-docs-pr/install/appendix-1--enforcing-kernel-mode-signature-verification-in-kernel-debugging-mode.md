@@ -2,11 +2,7 @@
 title: Enforce Kernel-Mode Signature Verification in Kernel Debugging
 description: Describes how to enable load-time signature enforcement when a kernel debugger is attached.
 ms.assetid: D7CB436F-4B89-49E7-BB53-101BDA7046F3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,19 +18,19 @@ In certain cases, developers might have to enable load-time signature enforcemen
 
 In order to facilitate debugging these situations, the kernel-mode code signing policy supports the following registry value:
 
-```
+```cpp
 HKLM\SYSTEM\CurrentControlSet\Control\CI\DebugFlags
 ```
 
 This registry value is of type [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types), and can be assigned a value based on a bitwise OR of one or more of the following flags.
 
-```
+```cpp
 0x00000001
 ```
 
 This flag value configures the kernel to break into the debugger if a driver is unsigned. The developer or tester can then choose to load the unsigned driver by entering g at the debugger prompt.
 
-```
+```cpp
 0x00000010
 ```
 

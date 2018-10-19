@@ -9,11 +9,7 @@ api_name:
 - wscn ElementData Name "" Valid ""
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ElementData** element contains the data that is returned for a jo
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ElementData Name="" Valid=""
   Name = "xs:string"
   Valid = "xs:string">
@@ -121,7 +117,7 @@ Remarks
 
 The WSD Scan Service returns the **ElementData** element in a [**GetJobElementsResponse**](getjobelementsresponse.md) operation element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Documents**](documents.md)

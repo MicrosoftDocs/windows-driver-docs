@@ -8,11 +8,7 @@ keywords:
 - security WDK file systems , adding security checks
 - security checks WDK file systems , IRP_MJ_DIRECTORY_CONTROL
 - directory controls WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +29,7 @@ When a change occurs, the file system indicates this to the file system run-time
 
 Inside the callback function, the file system must perform a traverse check from the directory specified by the *NotifyContext* parameter, to the file that changed, specified by the *TargetContext* parameter. The sample routine below performs such a check.
 
-```
+```cpp
 BOOLEAN 
 FsdNotifyTraverseCheck ( 
     IN PDIRECTORY_CONTEXT OriginalDirectoryContext, 

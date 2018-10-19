@@ -9,11 +9,7 @@ api_name:
 - wscn ADFBack
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **ADFBack** element describes the capabilities of the back side of 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ADFBack>
   child elements
 </wscn:ADFBack>
@@ -91,7 +87,7 @@ Remarks
 
 The WSD Scan Service should specify the **ADFBack** elements and its children only if the scanner's ADF supports duplexing.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ADF**](adf.md)

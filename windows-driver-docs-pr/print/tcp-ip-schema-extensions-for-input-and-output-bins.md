@@ -10,11 +10,7 @@ keywords:
 - InputBin construct
 - output bins WDK printer
 - input bins WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,7 +52,7 @@ The Tcpbidi.xsd file, which is used to extend the bidi schema, defines two const
 
 The following code example shows how the InputBin and OutputBin constructs can be used to identify two input bins and one output bin.
 
-```
+```cpp
 <Property name="Printer">
   <Property name="Layout">
     <Property name="InputBins">

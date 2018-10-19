@@ -12,11 +12,7 @@ keywords:
 - GDI WDK Windows 2000 display , text output, managing and optimizing
 - graphics drivers WDK Windows 2000 display , text output, managing and optimizing fonts
 - drawing WDK GDI , fonts, managing and optimizing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

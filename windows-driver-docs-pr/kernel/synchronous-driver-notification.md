@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Synchronous Driver Notification
 ms.assetid: d40053d7-730a-4e08-a91a-41dccef22fbd
 keywords: ["driver notification WDK dynamic hardware partitioning , synchronous", "synchronous notification WDK dynamic hardware partitioning", "notification WDK dynamic hardware partitioning , synchronous", "synchronous driver notification WDK dynamic hardware partitioning"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

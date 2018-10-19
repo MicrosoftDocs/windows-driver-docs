@@ -8,11 +8,7 @@ keywords:
 - streaming minidrivers WDK Windows 2000 Kernel , child devices
 - minidrivers WDK Windows 2000 Kernel Streaming , child devices
 - child devices WDK streaming minidriver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +28,7 @@ In releases earlier than DirectX 9.0, stream class creates a child device hardwa
 
 For example, the vendor specifies the following in the **AddReg** section of the INF file:
 
-```
+```INF
 [MyTVDevice.AddReg]
 HKR,"ENUM\CrossbarDevice",pnpid,,"MyCrossbar"
 HKR,"ENUM\TunerDevice",pnpid,,"MyTuner"

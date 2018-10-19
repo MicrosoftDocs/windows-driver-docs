@@ -5,9 +5,6 @@ ms.assetid: d08c3dd1-ab2e-4ce6-8bf7-9634c0a5be1f
 keywords: ["Plug and Play (PnP), device manager problem codes", "device manager problem codes", "CM_PROB_XXX"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

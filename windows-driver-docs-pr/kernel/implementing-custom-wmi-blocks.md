@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Implementing Custom WMI Blocks
 ms.assetid: c596924f-9f82-4ca7-b0f0-afc596d7bf99
 keywords: ["WMI WDK kernel , event blocks", "event blocks WDK WMI", "data blocks WDK WMI", "WMI WDK kernel , data blocks", "blocks WDK WMI", "custom blocks WDK WMI"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

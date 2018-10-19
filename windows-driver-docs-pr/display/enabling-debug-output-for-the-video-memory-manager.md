@@ -11,11 +11,7 @@ keywords:
 - low-resource messages WDK display
 - trace messages WDK display
 - events WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ ms.localizationpriority: medium
 
 The video memory manager has an extensive logging mechanism to help catch and debug issues in a driver during its development. To enable debugger output for the video memory manager, driver writers must first modify the debug filter in the kernel debugger. The video memory manager currently uses the same filter as the video port driver. Therefore, driver writers should submit the following command in the kernel debugger so that debug messages received from the video memory manager can be displayed in the kernel debugger:
 
-```
+```cpp
 ed nt!Kd_VIDEOPRT_Mask ff
 ```
 

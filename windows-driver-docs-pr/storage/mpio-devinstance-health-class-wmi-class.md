@@ -3,6 +3,7 @@ title: MPIO\_DEVINSTANCE\_HEALTH\_CLASS WMI Class
 description: MPIO\_DEVINSTANCE\_HEALTH\_CLASS WMI Class
 ms.assetid: d2c77461-d89c-4c1b-86dc-3373de0f11e4
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MPIO\_DEVINSTANCE\_HEALTH\_CLASS WMI Class
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 
 An MPIO driver uses the MPIO\_DEVINSTANCE\_HEALTH\_CLASS WMI class to report health statistics of a device through a specific path.
 
-```
+```cpp
 class MPIO_DEVINSTANCE_HEALTH_CLASS
 {
     //

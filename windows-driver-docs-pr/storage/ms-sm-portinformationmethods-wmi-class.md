@@ -3,6 +3,7 @@ title: MS\_SM\_PortInformationMethods WMI Class
 description: MS\_SM\_PortInformationMethods WMI Class
 ms.assetid: 5bf44288-7e1f-48e6-aa02-1e706b73f046
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MS\_SM\_PortInformationMethods WMI Class
@@ -12,7 +13,7 @@ An HBA miniport driver that supports the Storage Management API uses the MS\_SM\
 
 The MS\_SM\_PortInformationMethods class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MS_SM_PortInformationMethods
 {
     [key]

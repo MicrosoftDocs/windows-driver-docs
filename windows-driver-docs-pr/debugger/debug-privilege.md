@@ -5,9 +5,6 @@ ms.assetid: f3ea9065-6d04-4629-88ed-85428f7915ca
 keywords: ["debug privilege", "debug privilege, overview"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +22,7 @@ Debug privilege is a security policy setting that allows users to attach a debug
 
 The following code example shows how to enable the debug privilege in your process. This enables you to debug other processes that you wouldn't have access to otherwise.
 
-```
+```cpp
 //
 //  SetPrivilege enables/disables process token privilege.
 //
@@ -59,7 +56,7 @@ BOOL SetPrivilege(HANDLE hToken, LPCTSTR lpszPrivilege, BOOL bEnablePrivilege)
 
 The following example shows how to use this function:
 
-```
+```cpp
 HANDLE hProcess=GetCurrentProcess();
 HANDLE hToken;
 

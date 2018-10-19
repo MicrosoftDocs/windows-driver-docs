@@ -5,9 +5,6 @@ ms.assetid: ebb00538-49ec-462e-990e-4c4cb86ae3bd
 keywords: ["ob extension (obsolete)", "od extension (obsolete)", "ow extension (obsolete)"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -1,11 +1,7 @@
 ---
 title: Driver support for camera orientation
 description: Provides information about how to explicitly specify the camera orientation on a device.
-ms.author: windowsdriverdev
 ms.date: 08/06/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ Starting with Window 10, version 1607, all camera drivers are required to explic
 
 Specifically, a camera driver must set a new **Rotation** field in the ACPI \_PLD structure associated with a capture device interface:
 
-```
+```cpp
 typedef struct _ACPI_PLD_V2_BUFFER {
 
     UINT32 Revision:7;

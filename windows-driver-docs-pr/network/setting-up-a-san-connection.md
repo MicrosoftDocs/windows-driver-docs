@@ -8,11 +8,7 @@ keywords:
 - SAN connection setup WDK
 - SAN connection setup WDK , about SAN connection setup
 - SAN service providers WDK , connection setup
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

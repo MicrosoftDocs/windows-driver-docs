@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # dpinst XML Element
@@ -21,7 +22,7 @@ The **dpinst** XML element is the root XML element in a DPInst descriptor file t
 
 ### Element Tag
 
-```
+```cpp
 <dpinst>
 ```
 
@@ -76,7 +77,7 @@ None
 
 The following code example demonstrates an XML declaration element, followed by a **dpinst** element, which contains zero or more child elements.
 
-```
+```cpp
 <?xml version="1.0" ?>
 <dpinst>
   ...

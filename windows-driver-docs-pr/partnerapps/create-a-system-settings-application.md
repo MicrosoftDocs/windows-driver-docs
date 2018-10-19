@@ -2,11 +2,7 @@
 title: Create a partner settings app
 description: Create a partner settings app
 ms.assetid: 3b549c11-f8b2-46e8-9d22-4edc787743ee
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ For example, in the **Devices** tab of the **Settings** app, the following pages
 
 ![Devices list in Settings app](images/devices-list-in-settings.png)
 
-You can find a list of all level two pages in the [Launch the Windows Settings app](https://msdn.microsoft.com/en-us/windows/uwp/launch-resume/launch-settings-app) topic. It is important to note that all links must be relevant to the page they are placed on.
+You can find a list of all level two pages in the [Launch the Windows Settings app](https://msdn.microsoft.com/windows/uwp/launch-resume/launch-settings-app) topic. It is important to note that all links must be relevant to the page they are placed on.
 
 Additionally, you are able to add up to five search terms on each page, which must be relevant to the content on the page. For the best search experience, use specific phrases. Using general and one-word terms may cause your links to not appear in relevant searches.  
 
@@ -55,9 +51,9 @@ Partner settings apps have the following characteristics:
 
 
 > [!NOTE] 
-> Settings applications are Universal Windows Platform apps and should conform to all UWP programming guidelines. See [Guidelines for Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/en-us/library/windows/apps/hh465424.aspx) for more information.
+> Settings applications are Universal Windows Platform apps and should conform to all UWP programming guidelines. See [Guidelines for Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/library/windows/apps/hh465424.aspx) for more information.
 
-1.  Use the Windows Software Development Kit (SDK) to create a Windows Universal app. For more information on creating a Windows Universal app, see [Build UWP apps with Visual Studio](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/dn609832.aspx). 
+1.  Use the Windows Software Development Kit (SDK) to create a Windows Universal app. For more information on creating a Windows Universal app, see [Build UWP apps with Visual Studio](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx). 
     > If you're writing a settings app targeting Windows Phone, you can also create a Windows Phone Silverlight app. 
 
 2. In the application manifest below:
@@ -81,13 +77,13 @@ Partner settings apps have the following characteristics:
 	      </rescap:SettingsApp>
 	    </rescap:Extension>
     </Extensions>
-    ```
- Note that this package cannot have an entry in the all apps list. To accomplish this, set the [AppListEntry](https://docs.microsoft.com/en-us/uwp/api/windows.applicationmodel.core.applistentry) property to **none**.   
+    ```cpp
+ Note that this package cannot have an entry in the all apps list. To accomplish this, set the [AppListEntry](https://docs.microsoft.com/uwp/api/windows.applicationmodel.core.applistentry) property to **none**.   
   ```
      <uap:VisualElements AppListEntry="none" DisplayName="OptionalPackage"
        ....
      </uap:VisualElements>
-  ```
+  ```cpp
 3. To be configured as a preinstalled application, submit your settings application to the Windows Dev Center. After receiving a signed .appx file and obtaining a license file, include the application in the device image.
 
 ## <span id="Updating_system_settings_applications"></span><span id="updating_system_settings_applications"></span><span id="UPDING_SYSTEM_SETTINGS_APPLICATIONS"></span>Updating system settings applications

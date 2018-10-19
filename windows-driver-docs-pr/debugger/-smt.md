@@ -5,9 +5,6 @@ ms.assetid: 28c07f89-6208-4b04-b7b9-825dda4f5f5a
 keywords: ["smt Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!smt** extension displays a summary of the simultaneous multithreaded processor information.
 
-```
+```dbgcmd
 !smt
 ```
 
@@ -52,7 +49,7 @@ Remarks
 
 Here is an example:
 
-```
+```dbgcmd
 lkd> !smt 
 SMT Summary:
 ------------

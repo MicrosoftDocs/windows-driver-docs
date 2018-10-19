@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Introduction to the Common Log File System
 ms.assetid: 2185d834-81f3-4bf9-afa6-897c1515f8b5
 keywords: ["Common Log File System WDK kernel , about Common Log File System", "CLFS WDK kernel , about Common Log File System", "logging service WDK CLFS", "Common Log File System WDK user-mode", "CLFS WDK user-mode", "logs WDK CLFS", "multiplexed logs WDK CLFS", "dedicated logs WDK CLFS", "log sequence numbers WDK CLFS", "LSNs WDK CLFS"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

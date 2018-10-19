@@ -5,9 +5,6 @@ ms.assetid: B0422248-2F5F-4AE6-93C9-D96B5E4A1B5A
 keywords: [DebugBaseEventCallbacks]
 ms.author: domars
 ms.date: 01/10/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

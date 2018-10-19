@@ -11,11 +11,7 @@ keywords:
 - file structures WDK RDBSS
 - structures WDK RDBSS
 - connection information WDK RDBSS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,7 +39,7 @@ These six fundamental data structures are as follows:
 
 These data structures are organized in the following hierarchy:
 
-```
+```cpp
                 SRV_CALL 
      FCB   <------> NET_ROOT
         SRV_OPEN  <---> V_NET_ROOT

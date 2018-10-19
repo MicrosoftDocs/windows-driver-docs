@@ -8,11 +8,7 @@ keywords:
 - clustered print servers WDK
 - print server clustering WDK
 - converting print monitors for clustered print servers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

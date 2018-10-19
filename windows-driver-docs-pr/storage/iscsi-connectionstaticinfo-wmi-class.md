@@ -3,6 +3,7 @@ title: ISCSI\_ConnectionStaticInfo WMI Class
 description: ISCSI\_ConnectionStaticInfo WMI Class
 ms.assetid: 63af8432-3e38-451a-a26d-57b5ad1f29dd
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # ISCSI\_ConnectionStaticInfo WMI Class
@@ -13,7 +14,7 @@ ms.localizationpriority: medium
 
 The ISCSI\_ConnectionStaticInfo class is used to store the static characteristics of a connection. This class is defined as follows in *Mgmt.mof*.
 
-```
+```cpp
 class ISCSI_ConnectionStaticInfo {
   [read, WmiDataId(1), Description("A uniquely generated
     connection ID used only internally.  Do not confuse this

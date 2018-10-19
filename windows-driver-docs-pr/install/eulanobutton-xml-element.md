@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # eulaNoButton XML Element
@@ -21,7 +22,7 @@ The **eulaNoButton** XML element customizes the text that is associated with the
 
 ### Element Tag
 
-```
+```cpp
 <eulaNoButton>
 ```
 
@@ -62,7 +63,7 @@ None
 
 The following code example demonstrates a **eulaNoButton** element that customizes the text of the do-not-accept option button on a DPInst EULA page. The text that specifies the custom text of the do-not-accept option button is shown in bold font style.
 
-```
+```cpp
 <dpinst>
   ...
   <language code="0x0409">

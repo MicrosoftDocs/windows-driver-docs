@@ -7,11 +7,7 @@ keywords:
 - alias single-pixel-wide lines WDK DirectX 9.0
 - antialias single-pixel-wide lines WDK DirectX 9.0
 - line antialiasing WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

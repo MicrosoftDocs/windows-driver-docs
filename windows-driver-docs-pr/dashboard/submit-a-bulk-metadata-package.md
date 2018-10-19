@@ -2,11 +2,7 @@
 title: Submit a Bulk Metadata Package
 description: Submit a Bulk Metadata Package
 ms.assetid: c8e248d4-a419-48e1-839d-1bbb9adda382
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

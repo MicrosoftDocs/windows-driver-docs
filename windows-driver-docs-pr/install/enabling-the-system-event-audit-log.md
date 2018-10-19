@@ -6,11 +6,7 @@ keywords:
 - verbose logging WDK driver signing
 - security audit policy WDK driver signing
 - system audit policy WDK driver signing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +27,7 @@ To enable security audit policy to capture load failures in the audit logs, foll
 
 2.  In the elevated Command Prompt window, run the following command:
 
-    ```
+    ```cpp
     Auditpol /set /Category:System /failure:enable
     ```
 

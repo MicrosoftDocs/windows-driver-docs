@@ -5,11 +5,7 @@ description: Initiating Filtering
 ms.assetid: 79ae93bc-0a6d-412a-80ca-ec4f907fb814
 keywords:
 - filtering I/O operations WDK file system minifilter
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ Every minifilter driver must call [**FltStartFiltering**](https://msdn.microsoft
 
 In the MiniSpy sample driver, [**FltStartFiltering**](https://msdn.microsoft.com/library/windows/hardware/ff544569) is called as shown in the following code example:
 
-```
+```cpp
 status = FltStartFiltering( MiniSpyData.FilterHandle );
 if( !NT_SUCCESS( status )) {
   FltUnregisterFilter( MiniSpyData.FilterHandle );

@@ -5,9 +5,6 @@ ms.assetid: cd952f00-a135-411c-99e0-20153f2539cd
 keywords: ["processor application register", "pars Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!pars** extension displays a specified processor application registers file.
 
-```
+```dbgcmd
 !pars Address
 ```
 

@@ -5,9 +5,6 @@ ms.assetid: b6f69882-b30a-45b7-b777-1b4857719e7f
 keywords: ["gn, gN (Go with Exception Not Handled) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

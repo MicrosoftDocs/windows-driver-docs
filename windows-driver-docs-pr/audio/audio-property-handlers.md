@@ -14,11 +14,7 @@ keywords:
 - filters WDK audio , property handlers
 - pins WDK audio , property handlers
 - nodes WDK audio , property handlers
-ms.author: windowsdriverdev
 ms.date: 08/07/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -76,7 +72,7 @@ If the specified buffer size is too small to receive any of the requested inform
  
 In some cases, PortCls port drivers return STATUS_BUFFER_TOO_SMALL instead of STATUS_BUFFER_OVERFLOW in response to a property request with a non-zero output buffer address and size. Required buffer size is not returned in such cases. 
  
-For more information, see [Using NTSTATUS Values](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/using-ntstatus-values) and these blog posts:
+For more information, see [Using NTSTATUS Values](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-ntstatus-values) and these blog posts:
 
 - [How to return the number of bytes required for a subsequent operation](https://blogs.msdn.microsoft.com/doronh/2006/12/12/how-to-return-the-number-of-bytes-required-for-a-subsequent-operation/)
 

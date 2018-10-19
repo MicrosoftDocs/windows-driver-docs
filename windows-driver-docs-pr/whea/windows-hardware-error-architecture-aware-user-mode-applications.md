@@ -8,11 +8,7 @@ keywords:
 - WHEA WDK , user-mode applications
 - Windows Hardware Error Architecture WDK , user-mode applications
 - errors WDK WHEA , user-mode applications
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

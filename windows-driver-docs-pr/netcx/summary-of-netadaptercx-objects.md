@@ -4,11 +4,7 @@ description: Summary of NetAdapterCx objects
 ms.assetid: 1635C737-42C6-4957-A3E0-1184A5545441
 keywords:
 - Summary of NetAdapterCx objects, NetCx summary of objects
-ms.author: windowsdriverdev
 ms.date: 08/07/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ A WDFDEVICE object is a standard [framework object](../wdf/wdf-objects.md) that 
 The primary NETADAPTER is called the *default adapter*. Most network interface card (NIC) drivers only have one NETADAPTER for their physical device, but some client drivers might have more than one NETADAPTER if they manage a server NIC with multiple slots. As another example, [Mobile Broadband WDF Class Extension (MBBCx)](mobile-broadband-mbb-wdf-class-extension-mbbcx.md) client drivers might manage more than one NETADAPTER object, each representing an additional Packet Data Protocol (PDP) context. 
 
 > [!TIP]
-> Currently, the default adapter is the only one visible to to user mode applications.
+> Currently, the default adapter is the only one visible to user mode applications.
 
 The default adapter must be initialized and created from within the client driver's [*EVT_WDF_DRIVER_DEVICE_ADD*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add
 ) callback function by calling [**NetDefaultAdapterInitAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netdefaultadapterinitallocate) and [**NetAdapterCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptercreate). Then, it must be started from within the driver's [*EVT_WDF_DEVICE_PREPARE_HARDWARE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function by calling [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstart). Before calling **NetAdapterStart**, the driver can optionally set the adapter's capabilities such as link layer capabilities, power capabilities, datapath capabilities, receive scaling capabilities, and hardware offload capabilities.

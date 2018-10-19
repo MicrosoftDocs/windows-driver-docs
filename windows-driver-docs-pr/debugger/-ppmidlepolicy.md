@@ -5,9 +5,6 @@ ms.assetid: FA77159F-95B3-42F9-9452-CE4827DD4EC5
 keywords: ["ppmidlepolicy Windows Debugging"]
 ms.author: domars
 ms.date: 06/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -21,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ppmidlepolicy** command displays C-state policy.
 
-```
+```dbgcmd
 !ppmidlepolicy
 ```
 

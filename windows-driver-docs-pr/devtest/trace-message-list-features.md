@@ -4,11 +4,7 @@ description: Trace Message List Features
 ms.assetid: c640626d-6d64-45c4-861f-6e2f20b7dfb1
 keywords:
 - Trace Message Lists WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

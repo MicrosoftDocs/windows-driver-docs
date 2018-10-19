@@ -3,6 +3,7 @@ title: MSFC\_TargetEvent WMI Class
 description: MSFC\_TargetEvent WMI Class
 ms.assetid: 251f7526-98e6-495d-a987-83257e968bb8
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSFC\_TargetEvent WMI Class
@@ -15,7 +16,7 @@ A WMI provider uses the MSFC\_TargetEvent WMI class to report target events.
 
 The MSFC\_TargetEvent class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MSFC_TargetEvent : WmiEvent {
   [key] 
   string InstanceName;

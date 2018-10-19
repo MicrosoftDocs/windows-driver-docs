@@ -2,11 +2,7 @@
 title: Jack Description Property
 description: Jack Description Property
 ms.assetid: 6398efc9-4435-4234-bd72-1ed0f96c9f9f
-ms.author: windowsdriverdev
 ms.date: 05/08/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ The description for each jack is contained in a [**KSJACK\_DESCRIPTION**](https:
 
 Jack information is particularly useful for helping users to distinguish among the jacks that connect to a multichannel speaker configuration. The following code example shows an array of KSJACK\_DESCRIPTION structures that an audio driver uses to describe the three jacks for a set of 5.1 surround speakers:
 
-```
+```cpp
 KSJACK_DESCRIPTION ar_5dot1_Jacks[] =
 {
     // Jack 1
@@ -71,7 +67,7 @@ The RGB macro that appears in the preceding structures is defined in header file
 
 In addition, an array of jack descriptions can be used to show that two or more jacks are functionally equivalent to each other. In the following code example, the audio driver combines the jack descriptions for a yellow RCA jack and for a black digital-optical jack into one array to indicate to the user that the two jacks carry the same signal:
 
-```
+```cpp
 KSJACK_DESCRIPTION ar_SPDIF_Jacks[] =
 {
     // Jack 1
@@ -136,7 +132,7 @@ The remainder of this topic explains how to modify the Simple MSVAD sample drive
 
 First, the jack information for these pins can be specified as follows:
 
-```
+```cpp
 // Describe MIDI input jack (pin ID = KSPIN_TOPO_SYNTHIN_SOURCE).
 static KSJACK_DESCRIPTION SynthIn_Jack[] =
 {
@@ -184,7 +180,7 @@ The preceding code example sets the **ChannelMapping** members for the two captu
 
 The primary modification to the Simple MSVAD sample is to add the following property handler to the implementation of the topology miniport in sample file Mintopo.cpp:
 
-```
+```cpp
 #define ARRAY_LEN(a)  sizeof(a)/sizeof(a[0]);
 #define MAXIMUM_VALID_PIN_ID  KSPIN_TOPO_WAVEIN_DEST
 
@@ -307,7 +303,7 @@ Two additional modifications to the Simple MSVAD sample are required to support 
 
 To implement the automation table for the filter, insert the following code into header file Toptable.h (before the definition of **MiniportFilterDescriptor**):
 
-```
+```cpp
 static PCPROPERTY_ITEM PropertiesTopoFilter[] =
 {
     {

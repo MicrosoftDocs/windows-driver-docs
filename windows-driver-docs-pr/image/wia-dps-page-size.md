@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -97,7 +93,6 @@ The following four code examples show the following WIA\_DPS\_PAGE\_SIZE scenari
 
 In the following code example, the minidriver sets a custom selection area before an application sets any WIA properties. In this case, the selection area represents the entire flatbed.
 
-```
 WIA_DPS_PAGE_SIZE = WIA_PAGE_CUSTOM
 WIA_DPS_PAGE_WIDTH = 11500
 WIA_DPS_PAGE_HEIGHT = 14000
@@ -108,11 +103,9 @@ WIA_IPS_XEXTENT = 1150
 WIA_IPS_YEXTENT = 1400
 WIA_IPS_XRES = 100
 WIA_IPS_YRES = 100
-```
 
 **Example 2: An application sets the WIA\_DPS\_PAGE\_SIZE property to WIA\_PAGE\_LETTER**
 
-```
 WIA_DPS_PAGE_SIZE = WIA_PAGE_LETTER
 WIA_DPS_PAGE_WIDTH = 8500
 WIA_DPS_PAGE_HEIGHT = 11000
@@ -123,13 +116,11 @@ WIA_IPS_XEXTENT = 850
 WIA_IPS_YEXTENT = 1100
 WIA_IPS_XRES = 100
 WIA_IPS_YRES = 100
-```
 
 **Example 3: An application sets the WIA\_IPS\_ORIENTATION property to LANSCAPE**
 
 The physical bed must be able to acquire a page that was originally in landscape orientation.
 
-```
 WIA_DPS_PAGE_SIZE = WIA_PAGE_LETTER
 WIA_DPS_PAGE_HEIGHT = 11000
 WIA_DPS_PAGE_WIDTH = 8500
@@ -140,13 +131,11 @@ WIA_IPS_XEXTENT = 1100
 WIA_IPS_YEXTENT = 850
 WIA_IPS_XRES = 100
 WIA_IPS_YRES = 100
-```
 
 **Example 4: An application changes the WIA\_IPS\_XEXTENT property to a smaller value**
 
 In the following code example, an application changes the WIA\_IPS\_XEXTENT property to 1000. The minidriver should assume that the new value for WIA\_IPS\_XEXTENT is no longer valid for the WIA\_DPS\_PAGE\_SIZE property and should thus change WIA\_DPS\_PAGE\_SIZE to WIA\_PAGE\_CUSTOM. The minidriver must also adjust [**WIA\_DPS\_PAGE\_WIDTH**](wia-dps-page-width.md).
 
-```
 WIA_DPS_PAGE_SIZE = WIA_PAGE_CUSTOM
 WIA_DPS_PAGE_HEIGHT = 10000
 WIA_DPS_PAGE_WIDTH = 8500
@@ -157,7 +146,6 @@ WIA_IPS_XEXTENT = 1000
 WIA_IPS_YEXTENT = 850
 WIA_IPS_XRES = 100
 WIA_IPS_YRES = 100
-```
 
 Requirements
 ------------
@@ -179,8 +167,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**IWiaMiniDrv::drvValidateItemProperties**](https://msdn.microsoft.com/library/windows/hardware/ff545017)
 
@@ -201,13 +188,3 @@ Requirements
 [**WIA\_IPS\_YEXTENT**](wia-ips-yextent.md)
 
 [**WIA\_IPS\_YPOS**](wia-ips-ypos.md)
-
- 
-
- 
-
-
-
-
-
-

@@ -2,11 +2,7 @@
 title: How USB Devices are Assigned Container IDs
 description: How USB Devices are Assigned Container IDs
 ms.assetid: 769f9486-d179-44f0-9fd1-b3e737143ced
-ms.author: windowsdriverdev
 ms.date: 05/09/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

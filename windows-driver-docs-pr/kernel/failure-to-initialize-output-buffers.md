@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Failure to Initialize Output Buffers
 ms.assetid: 8c038a94-8506-44e3-ac7f-82b58d791124
 keywords: ["output buffers WDK kernel", "initializing output buffers"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ Drivers should initialize all output buffers with zeros before returning them to
 
 In the following example, a driver returns garbage in unused bytes.
 
-```
+```cpp
    case IOCTL_GET_NAME: {
       ...
       ...

@@ -11,11 +11,7 @@ api_location:
 - ks.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -64,7 +60,7 @@ Remarks
 
 This property returns a structure of type KSPIN\_CINSTANCES:
 
-```
+```cpp
 typedef struct {
     ULONG PossibleCount;
     ULONG CurrentCount;

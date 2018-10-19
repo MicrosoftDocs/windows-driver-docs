@@ -2,11 +2,7 @@
 title: Planning your desktop COSA/APN database submission
 description: Planning your desktop COSA/APN database submission
 ms.assetid: 7e974914-c3e5-409e-b0bf-28d6885585b3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,7 +46,7 @@ Note the following only when submitting an APN update using apndatabase.xml, for
   -   For CDMA networks, you can have a new database entry for each Provider ID (also called a SID) or Provider Name.
   -   Certificate information for account provisioning metadata includes **Cert Issuer Name** and **Cert Subject Name** and is used to verify that account provisioning provided by a purchase website comes from the an authorized web service. If the certificate information stored here matches what the purchase website presents, Windows will allow that website to push network-specific configuration information to the PC.
 
-- When submitting an APN database update using apndatabase.xml, the following following values must be included:       
+- When submitting an APN database update using apndatabase.xml, the following values must be included:       
     - A CDMA Provider name
     - A CDMA Provider ID (SID)
 

@@ -2,11 +2,7 @@
 title: StorPortIrql rule (storport)
 description: The StorPortIrql rule checks that StorPort routines are called at the correct IRQL levels.
 ms.assetid: 6A3946AB-DFB6-4447-9EF3-F0A003DB58E9
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["StorPortIrql rule (storport)"]
 topic_type:
 - apiref

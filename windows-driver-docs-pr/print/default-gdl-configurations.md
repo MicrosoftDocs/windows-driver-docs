@@ -10,11 +10,7 @@ keywords:
 - default GDL configurations WDK
 - configurations WDK GDL , examples
 - DefaultOption directive WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ If a client has no specific configuration, it can ask the parser to create and r
 
 For example, assume that the default value of the Weather parameter is Sunny. Then, you could use the following code example to define the default values.
 
-```
+```cpp
 *Feature: Weather
 {
    *DefaultOption: Sunny

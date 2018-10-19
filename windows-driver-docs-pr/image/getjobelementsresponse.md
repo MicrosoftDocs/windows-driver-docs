@@ -9,11 +9,7 @@ api_name:
 - wscn GetJobElementsResponse
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **GetJobElementsResponse** element returns the job-related informat
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:GetJobElementsResponse>
   child elements
 </wscn:GetJobElementsResponse>
@@ -72,13 +68,13 @@ Examples
 
 In the following code example, the Scan Service returns the job status for the job that JobId 1 identifies.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
   xmlns:wsa="http://schemas.xmlsoap.org/ws/2003/03/addressing"
   xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle=&#39;http://www.w3.org/2002/12/soap-encoding&#39; >
+  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
 
   <soap:Header>
     <wsa:To>
@@ -111,7 +107,7 @@ In the following code example, the Scan Service returns the job status for the j
 
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**GetJobElementsRequest**](getjobelementsrequest.md)

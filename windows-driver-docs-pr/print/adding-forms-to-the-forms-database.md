@@ -15,11 +15,7 @@ keywords:
 - paper sizes WDK forms
 - custom forms WDK printer
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +28,7 @@ If you are not using a resource DLL for the localizable strings in the GPD file,
 
 The following code example is an excerpt from a GPD file that uses a resource ID for the display name.
 
-```
+```GDL
 *Feature: PaperSize
 {
     *Option: Option2
@@ -46,7 +42,7 @@ The following code example is an excerpt from a GPD file that uses a resource ID
 
 Inside the Unidrv printer driver that is provided with Windows Vista, the FORM\_INFO\_2 structure is populated by data that is read from the GPD file, as the following table shows. If the GPD file for your printer already contains the information that is required to fill in this structure, you do not need to change anything to use the new features that the Windows Vista Unidrv printer driver provides.
 
-```
+```cpp
 typedef struct _FORM_INFO_2 { 
   DWORD    Flags; 
   LPTSTR   pName; 

@@ -5,9 +5,6 @@ ms.assetid: efa59a34-1d1d-4df4-bbb9-b8066c6f3b3c
 keywords: ["; (Command Separator) Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

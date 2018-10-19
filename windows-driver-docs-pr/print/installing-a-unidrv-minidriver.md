@@ -8,11 +8,7 @@ keywords:
 - minidrivers WDK Unidrv
 - INF files WDK print , Unidrv minidrivers
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ ms.localizationpriority: medium
 
 Installation of a Unidrv minidriver requires a [printer INF file](printer-inf-files.md) that identifies the minidriver's files. If a printer model is not supported by Microsoft's printer INF file, ntprint.inf, a vendor-supplied INF file is required. The INF file should reference [printer INF file data sections](printer-inf-file-data-sections.md) and [printer INF file install sections](printer-inf-file-install-sections.md), which are defined in ntprint.inf. For a minidriver named abc100, the following INF file entries are typically needed, if the printer is bidirectional, supports TrueType font substitution, and uses a single resource DLL:
 
-```
+```cpp
 [Manufacturer]
 "ABC Printers"
  

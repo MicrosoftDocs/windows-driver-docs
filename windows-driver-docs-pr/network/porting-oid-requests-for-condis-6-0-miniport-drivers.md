@@ -4,11 +4,7 @@ description: Porting OID Requests for CoNDIS 6.0 Miniport Drivers
 ms.assetid: f432f149-f066-41ac-b9f9-2dd849da6395
 keywords:
 - porting OID requests WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: 26aaaf11-1005-4ae7-8f27-4ae0812faa81
 keywords: ["32-bit debugger package", "32-bit debugging tools", "64-bit debugger package", "64-bit debugging tools", "installation, choosing between 32-bit and 64-bit packages"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

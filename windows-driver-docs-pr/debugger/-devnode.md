@@ -5,9 +5,6 @@ ms.assetid: 0c8cb743-f756-461e-b92b-352b550706c1
 keywords: ["device node", "device tree", "devnode Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!devnode** extension displays information about a node in the device tree.
 
-```
+```dbgcmd
 !devnode Address [Flags] [Service]  
 !devnode 1 
 !devnode 2

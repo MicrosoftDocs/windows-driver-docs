@@ -5,9 +5,6 @@ ms.assetid: b0839c68-a53e-4f80-bad3-7545b5c78b7a
 keywords: ["wmitrace.help Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wmitrace.help** extension displays the extension commands in Wmitrace.dll.
 
-```
+```dbgcmd
 !wmitrace.help 
 ```
 

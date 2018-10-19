@@ -1,28 +1,25 @@
 ---
-title: xhci_findowner
+title: usb3kd-xhci_findowner
 description: The usb3kd.xhci_findowner command finds the owner a common buffer.
 ms.assetid: 6AA3E41C-5838-4425-B1CE-37A13E8F755E
-keywords: ["xhci_findowner Windows Debugging"]
+keywords: ["usb3kd.xhci_findowner Windows Debugging"]
 ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 10/18/2018
 topic_type:
 - apiref
 api_name:
-- xhci_findowner
+- usb3kd.xhci_findowner
 api_type:
 - NA
 ms.localizationpriority: medium
 ---
 
-# !xhci\_findowner
+# !usb3kd.xhci\_findowner
 
 
 The **!usb3kd.xhci\_findowner** command finds the owner a common buffer.
 
-```
+```dbgcmd
 !usb3kd.xhci_findowner Address
 ```
 
@@ -47,7 +44,7 @@ Examples
 
 The following example calls [**!xhci\_resourceusage**](-usb3kd-xhci-resourceusage.md) to list the addresses of some common buffers.
 
-```
+```dbgcmd
 0: kd> !usb3kd.xhci_resourceusage 0x867fbff0
 
 ## Dumping CommonBuffer Resources
@@ -71,7 +68,7 @@ The following example calls [**!xhci\_resourceusage**](-usb3kd-xhci-resourceusag
 
 One of the virtual addresses listed in the preceding output is 0x868e2000. The following example passes that address to **!xhci\_findowner**. One of the physical addresses listed in the preceding output is 0xdb2e4400. The following example passes 0xdb2e4440 (offset 0x40 bytes from 0xdb2e4400) to **!xhci\_findowner**.
 
-```
+```dbgcmd
 0: kd> !xhci_findowner 0x868e2000 
 
 !xhci_info 0x867fbff0  Texas Instruments - PCI: VendorId 0x104c DeviceId 0x8241 RevisionId 0x02
@@ -94,7 +91,7 @@ One of the virtual addresses listed in the preceding output is 0x868e2000. The f
 
 The **!xhci\_findowner** command is especially useful when you have an address in a transfer request block (TRB), and you want to track it back to the device slot that it belongs to. In the following example, one of the addresses listed in the output of [**!xhci\_transferring**](-usb3kd-xhci-transferring.md) is 0xda452230, which is the physical address of a TRB. The example passes that address to **!xhci\_findowner**. The output shows that the TRB belongs to device slot 8 (**!xhci\_deviceslots 0x8551d370 8**).
 
-```
+```dbgcmd
 0: kd> !usb3kd.xhci_transferring 0x87652200
 
         [  0] NORMAL       0xda452200 CycleBit 1 IOC 0 BEI 0 InterrupterTarget 2 TransferLength     6 TDSize  0
@@ -127,7 +124,7 @@ The **!xhci\_findowner** command is especially useful when you have an address i
 
 [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

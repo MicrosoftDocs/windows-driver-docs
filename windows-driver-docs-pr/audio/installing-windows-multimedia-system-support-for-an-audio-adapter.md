@@ -8,11 +8,7 @@ keywords:
 - Port Class audio adapters WDK , multimedia support
 - multimedia WDK audio
 - Windows multimedia support WDK audio
-ms.author: windowsdriverdev
 ms.date: 10/27/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ An INF add-registry section creates or modifies driver-specific information in t
 
 The following example presents the add-registry section, XYZ-Audio-Device.AddReg, that was named in an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) in a previous example (see [Installing a Port Class Audio Adapter](installing-a-port-class-audio-adapter.md)):
 
-```
+```cpp
   [XYZ-Audio-Device.AddReg]
   HKR,,AssociatedFilters,,"wdmaud,swmidi,redbook"
   HKR,,Driver,,xyzaud.sys 

@@ -14,11 +14,7 @@ keywords:
 - drawing compressed textures WDK DirectDraw , height
 - DirectDraw compressed textures WDK Windows 2000 display , height
 - compressed texture surfaces WDK DirectDraw , height
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,7 +36,7 @@ The driver's *D3dCreateSurfaceEx* function receives the surface's width, pitch, 
 
 The following code snippet shows the calculations that the driver must perform to restore the width and height of the surface:
 
-```
+```cpp
 RealWidth = (Width / Block size) * 4;
 RealHeight = Height * 4;
 ```

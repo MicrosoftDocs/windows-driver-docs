@@ -4,11 +4,7 @@ description: Reasons for Updating Offloaded State Objects
 ms.assetid: 5c2a6330-a6dd-49c0-817b-68b4ae6628bc
 keywords:
 - updating offloaded TCP chimney state, about updating offloaded state
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -9,11 +9,7 @@ api_name:
 - wscn Height wscn Override "" wscn UsedDefault ""
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The **Height** element specifies a height value that the scan device supports fo
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Height wscn:Override="" wscn:UsedDefault=""
   Override = "xs:string"
   UsedDefault = "xs:string">
@@ -119,7 +115,7 @@ The value of the **Height** element depends on its parent element. For more info
 
 The WSD Scan Service can specify the optional **Override** and **UsedDefault** attributes only when the **Height** element is contained within a **DocumentFinalParameters** hierarchy. For more information about **Override** and **UsedDefault** and their usage, see [**DocumentFinalParameters**](documentfinalparameters.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DocumentFinalParameters**](documentfinalparameters.md)

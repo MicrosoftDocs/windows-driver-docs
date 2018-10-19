@@ -9,11 +9,7 @@ api_name:
 - wscn FilmColor
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **FilmColor** element contains the list of color processing capabil
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:FilmColor>
   child elements
 </wscn:FilmColor>
@@ -83,7 +79,7 @@ The amount of information that is needed to describe each pixel depends on the s
 
 Another important aspect of the returned scan data is the photometric interpretation of the acquired data. All image data that the scan device returns is required to be black on white, where black is represented by 0 and white is represented by 1.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ColorEntry**](colorentry.md)

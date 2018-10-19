@@ -7,11 +7,7 @@ keywords:
 - parallel ports WDK , opening
 - parallel ports WDK , closing
 - parallel ports WDK , sharing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

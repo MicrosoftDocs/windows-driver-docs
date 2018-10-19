@@ -5,9 +5,6 @@ ms.assetid: 8D594564-6506-44A8-A109-A76DA5AE7D89
 keywords: ["usbkd._ehcidd Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.\_ehcidd** command displays information from a **usbehci!\_DEVICE\_DATA** structure.
 
-```
+```dbgcmd
 !usbkd._ehcidd StructAddr
 ```
 
@@ -42,7 +39,7 @@ Examples
 
 Here is one way to get the address of a **usbehci!\_DEVICE\_DATA** structure. First enter [**!usbkd.usbhcdlist**](-usbkd-usbhcdlist.md).
 
-```
+```dbgcmd
 0: kd> !usbkd.usbhcdlist
 
 MINIPORT List @ fffff80001e5bbd0
@@ -63,7 +60,7 @@ In the preceding output, `ffffe0000781bda0` is the address of a **\_DEVICE\_DATA
 
 Now pass the structure address to **!\_ehcidd**
 
-```
+```dbgcmd
 0: kd> !usbkd._ehcidd ffffe0000781bda0
 
 *USBEHCI DEVICE DATA ffffe0000781bda0
@@ -83,7 +80,7 @@ AsyncQueueHead ffffd00021cf5000 !_ehciqh ffffd00021cf5000
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

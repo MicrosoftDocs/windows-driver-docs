@@ -3,11 +3,7 @@ title: WDI_TLV_ADDITIONAL_PROBE_RESPONSE_IES
 author: windows-driver-content
 description: WDI_TLV_ADDITIONAL_PROBE_RESPONSE_IES is a TLV that contains probe response IEs.
 ms.assetid: BDEDAD4D-A35B-4AE9-BC90-184CD75002B2
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ADDITIONAL_PROBE_RESPONSE_IES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

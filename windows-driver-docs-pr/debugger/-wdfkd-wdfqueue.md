@@ -5,9 +5,6 @@ ms.assetid: 100917dc-9ce9-48d6-a285-58ea78a4c2f4
 keywords: ["wdfkd.wdfqueue Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfqueue** extension displays information about a specified framework queue object and the framework request objects that are in the queue.
 
-```
+```dbgcmd
 !wdfkd.wdfqueue Handle
 ```
 
@@ -49,7 +46,7 @@ Remarks
 
 The following example shows the display from a **!wdfkd.wdfqueue** extension.
 
-```
+```dbgcmd
 kd> !wdfqueue 0x7ce7d1e8 
 
 # Dumping WDFQUEUE 0x7ce7d1e8

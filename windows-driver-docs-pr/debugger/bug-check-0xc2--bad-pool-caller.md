@@ -5,9 +5,6 @@ ms.assetid: 64803335-ab93-4c4d-9b30-2ec15a13303f
 keywords: ["(Developer Content) Bug Check 0xC2 BAD_POOL_CALLER", "BAD_POOL_CALLER"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -5,9 +5,6 @@ ms.assetid: 5ebb29d4-5d77-475b-ace5-8bc8a4299320
 keywords: ["strings", "ANSI_STRING structure", "str Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!str** extension displays an ANSI\_STRING or OEM\_STRING structure.
 
-```
+```dbgcmd
 !str Address
 ```
 
@@ -62,7 +59,7 @@ Remarks
 
 ANSI strings are counted 8-bit character strings, as defined in the following structure:
 
-```
+```cpp
 typedef struct _STRING {
     USHORT Length;
     USHORT MaximumLength;

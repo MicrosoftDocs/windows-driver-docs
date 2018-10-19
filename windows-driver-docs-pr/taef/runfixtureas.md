@@ -2,11 +2,7 @@
 title: RunFixtureAs
 description: TAEF provides a mechanism to execute test fixtures within a different context than their corresponding tests.
 ms.assetid: FAFF5265-5268-412E-86A5-149B187B1376
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -70,7 +66,7 @@ TAEF runs the fixture in an 'Immersive Broker' process.
  
 
 <span id="UIAccess"></span><span id="uiaccess"></span><span id="UIACCESS"></span>**UIAccess**  
-TAEF runs the fixture in a process marked-up with the UIAccess execution level. For information on UIAccess for UI automation applications, see the [Windows Integrity Mechanism Design](https://msdn.microsoft.com/en-us/library/bb625963).
+TAEF runs the fixture in a process marked-up with the UIAccess execution level. For information on UIAccess for UI automation applications, see the [Windows Integrity Mechanism Design](https://msdn.microsoft.com/library/bb625963).
 
 **Note**  
 -   UIAccess is only supported on Vista and higher operating systems.

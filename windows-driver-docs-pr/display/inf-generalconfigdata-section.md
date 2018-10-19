@@ -5,11 +5,7 @@ ms.assetid: 49b00396-479f-471a-8c79-bb8ef33ebcaa
 keywords:
 - GeneralConfigData section
 - INF files WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ ms.localizationpriority: medium
 
 If your miniport driver maps more than 8 MB of device memory, include a **GeneralConfigData** section in your INF file.
 
-```
+```cpp
 [GeneralConfigData]
  
 [MaximumDeviceMemoryConfiguration = n]

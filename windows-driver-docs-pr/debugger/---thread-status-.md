@@ -5,9 +5,6 @@ ms.assetid: c27e4c72-86da-459d-833f-d27d26bdea0e
 keywords: ["~ (Thread Status) Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,11 +3,7 @@ title: EFI_RNG_PROTOCOL.GetRNG
 author: windows-driver-content
 description: EFI_RNG_PROTOCOL.GetRNG
 ms.assetid: 5C2E0C8F-FF3A-4F57-BC28-3BC540852CB0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ Retrieves a Random Number Generation (RNG) value.
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef EFI_STATUS (EFIAPI *EFI_RNG_GET_RNG) (
     IN  struct _EFI_RNG_PROTOCOL    *This,
     IN  EFI_RNG_ALGORITHM           *RNGAlgorithm, OPTIONAL

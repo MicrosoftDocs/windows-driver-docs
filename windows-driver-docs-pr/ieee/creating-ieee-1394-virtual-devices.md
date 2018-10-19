@@ -7,11 +7,7 @@ keywords:
 - emulation drivers WDK IEEE 1394 bus
 - hardware emulation drivers WDK IEEE 1394 bus
 - virtual devices WDK IEEE 1394 bus
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

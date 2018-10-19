@@ -5,9 +5,6 @@ ms.assetid: 7480e572-05ca-40c6-aa91-b1ab35e4496b
 keywords: debugging, debug, controlling the target, crashing the target computer, rebooting the target computer, reboot, boot process, system crash, bug check
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

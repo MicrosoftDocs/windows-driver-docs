@@ -11,11 +11,7 @@ keywords:
 - text output WDK graphics
 - drawing WDK GDI , fonts
 - drawing WDK GDI , text output
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

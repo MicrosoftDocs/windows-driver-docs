@@ -9,11 +9,7 @@ api_name:
 - wscn ScannerStatus
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ScannerStatus** element contains the current status of the scanne
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScannerStatus>
   child elements
 </wscn:ScannerStatus>
@@ -86,7 +82,7 @@ There are no attributes.
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ActiveConditions**](activeconditions.md)

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Privileges
 ms.assetid: 15deec90-73a3-4443-90b7-de4ec9673169
 keywords: ["privileges WDK objects", "process privileges WDK"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,11 +5,7 @@ ms.assetid: aca377ae-c56b-4f84-8165-4b084bfa9938
 keywords:
 - connection offload WDK TCP/IP transport , current settings
 - current connection offload settings WDK TCP/IP offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

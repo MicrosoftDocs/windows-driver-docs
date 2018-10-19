@@ -8,11 +8,7 @@ keywords:
 - capturing video WDK AVStream , stream formats
 - stream formats WDK video capture
 - formats WDK video capture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ A single KSDATARANGE structure can describe thousands of potential KSDATAFORMAT 
 
 DirectShow uses a structure similar to KSDATAFORMAT to define stream formats. For example:
 
-```
+```cpp
 typedef struct  _AMMediaType    {
     GUID majortype;            // Same as KSDATAFORMAT.MajorFormat
     GUID subtype;              // Same as KSDATAFORMAT.SubFormat
@@ -45,22 +41,12 @@ Despite the differences in naming conventions, the GUIDs used in both the kernel
 
 **Note**  : The low-order four bytes of the **SubFormat** member of the KSDATAFORMAT structure (that is analogous to the **subtype** member of the AM\_MEDIA\_TYPE user-mode structure) should match the FOURCC values used in the **biCompression** member of the [**KS\_BITMAPINFOHEADER**](https://msdn.microsoft.com/library/windows/hardware/ff567305) structure. These bytes hold hexadecimal ASCII characters that describe a format, in reverse order.
 
- 
-
 For example, the following GUID corresponds to the YVU9 FOURCC video format:
 
-```
+```Text
 39555659-0000-0010-8000-00AA00389B71
-      59 = &#39;Y&#39;
-    56 = &#39;V&#39;
-  55 = &#39;U&#39;
-39 = &#39;9&#39;
+      59 = 'Y'
+    56 = 'V'
+  55 = 'U'
+39 = '9'
 ```
-
- 
-
- 
-
-
-
-

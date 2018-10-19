@@ -2,11 +2,7 @@
 title: PKEY\_SFX\_ProcessingModes\_Supported\_For\_Streaming
 description: In Windows 8.1 and later, the PKEY\_SFX\_ProcessingModes\_Supported\_For\_Streaming property key identifies the streaming processing modes supported by the driver.
 ms.assetid: 10E436BC-A4A1-4A2D-A22B-14DDD958FDB3
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ The INF file property key instructs the audio endpoint builder to set the CLSIDs
 
 An INF file specifies settings for an audio processing mode effect in the add-registry section for that device. The following INF example shows the strings and add-registry sections that loads the mode effect processing modes into the registry.
 
-```
+```inf
 [Strings]
 PKEY_SFX_ProcessingModes_Supported_For_Streaming = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},5"
 ...

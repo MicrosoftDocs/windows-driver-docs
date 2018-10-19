@@ -8,11 +8,7 @@ keywords:
 - callback functions WDK Direct3D
 - LPD3DHAL_MYFUNCTIONDATA
 - D3DHAL_MYFUNCTIONDATA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ ms.localizationpriority: medium
 
 A driver that supports Direct3D provides both Direct3D callback functions and DirectDraw DDI functions. The Direct3D DDI callbacks are prototyped as follows:
 
-```
+```cpp
 typedef DWORD (APIENTRY *LPD3DHAL_MYFUNCTIONCB) (LPD3DHAL_MYFUNCTIONDATA);
 ```
 

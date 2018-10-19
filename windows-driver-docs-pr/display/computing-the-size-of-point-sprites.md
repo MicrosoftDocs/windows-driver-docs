@@ -7,11 +7,7 @@ keywords:
 - point sprites WDK DirectX 8.0
 - size WDK point sprites
 - point size WDK DirectX 8.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,7 +58,7 @@ Sₛ otherwise
 
 Note that for the application to be drawing single pixel vertices, rather than point sprites, it must have the following render states set:
 
-```
+```cpp
 SetRenderState (D3DRS_POINTSCALEENABLE, FALSE)
 // All textures must be turned off.
 SetTexture (0, NULL); 

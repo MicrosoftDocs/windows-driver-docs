@@ -6,11 +6,7 @@ ms.assetid: 76454b0c-0e02-4372-97ed-2401a785cef8
 keywords:
 - bidi extension files WDK printer autoconfig
 - in-box autoconfiguration support WDK printer , bidi extension files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ ms.localizationpriority: medium
 
 The following code example is a sample XML file that extends the bidi communications schema for the standard TCP/IP port monitor.
 
-```
+```xml
 <?xml version="1.0" encoding="US-ASCII"?>
 <bidi:Schema xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi">
     <Property name="Printer">
@@ -63,7 +59,7 @@ The following code example is a sample XML file that extends the bidi communicat
 
 The preceding code sample results in the following queries:
 
-```
+```cpp
 \Printer.Layout.InputBins.TopBin:Installed
 \Printer.Layout.InputBins.TopBin:Level
 \Printer.Layout.InputBins.TopBin:MediaSize
@@ -81,11 +77,3 @@ The preceding code sample results in the following queries:
 \Printer.Extension.Channels:Category
 \Printer.Extension.Channels.Channel001:Type
 ```
-
- 
-
- 
-
-
-
-

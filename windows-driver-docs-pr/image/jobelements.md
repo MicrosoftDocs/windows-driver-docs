@@ -9,11 +9,7 @@ api_name:
 - wscn JobElements
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **JobElements** element contains all of the job-related elements th
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobElements>
   child elements
 </wscn:JobElements>
@@ -79,7 +75,7 @@ Remarks
 
 The WSD Scan Service returns the **JobElements** element in [**GetJobElementsResponse**](getjobelementsresponse.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ElementData for parent JobElements**](elementdata-for-jobelements-element.md)

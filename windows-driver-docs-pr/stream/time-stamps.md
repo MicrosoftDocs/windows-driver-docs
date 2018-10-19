@@ -8,11 +8,7 @@ keywords:
 - capturing video WDK AVStream , time stamps
 - time stamps WDK video capture
 - clocks WDK video capture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ Each data packet that is transferred corresponds to a single frame or field of v
 
 If a Stream class minidriver provides master clock, it should specify the following values in the [**HW\_STREAM\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff559697) structure:
 
-```
+```cpp
 PHW_STREAM_OBJECT *pStreamObject;
  
 PStreamObject->HWClockFunction = (PHW_CLOCK_FUNCTION)StreamClockRoutine;

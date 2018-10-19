@@ -7,11 +7,7 @@ keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , volume textures
 - volume textures WDK DirectX 8.0
 - subvolume locking WDK DirectX 8.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +27,7 @@ The left and right coordinates of the locked subvolume are constrained to the lo
 
 The following code shows how to obtain the front and back coordinates:
 
-```
+```cpp
 "real" left = rArea.left && 0xFFFF;
 "real" right = rArea.right && 0xFFFF;
 front = rArea.left >> 16;

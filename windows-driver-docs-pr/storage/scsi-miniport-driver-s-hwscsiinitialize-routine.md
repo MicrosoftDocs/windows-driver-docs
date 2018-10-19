@@ -6,11 +6,7 @@ ms.assetid: 2a776c0a-1bac-4f8c-beab-fd53300f68c8
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiInitialize
 - HwScsiInitialize
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

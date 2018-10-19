@@ -7,11 +7,7 @@ keywords:
 - LPT enumerator WDK printer
 - parallel ports WDK , printer connections
 - parallel enumerators WDk printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,13 +25,13 @@ For a parallel-connected printer, the parallel enumerator creates a [*devnode*](
 
 An example 1284 string is:
 
-```
+```cpp
 "MANUFACTURER:Hewlett-Packard;COMMAND SET:PJL,MLC,PCL,POSTSCRIPT;MODEL:HP Color LaserJet 550;CLASS:PRINTER;COMMENT:HP LaserJet;"
 ```
 
 From this 1284 string the parallel enumerator produces the following hardware ID:
 
-```
+```cpp
 LPTENUM\Hewlett-PackardHP_Co3115
 ```
 
@@ -45,7 +41,7 @@ To read the 1284 ID string from the device, send [**IOCTL\_PAR\_QUERY\_DEVICE\_I
 
 The devnode for a parallel-connected Plug and Play printer is placed under **HKLM\\SYSTEM\\CurrentControlSet\\Enum\\LPTENUM** and has a single hardware ID of the form:
 
-```
+```cpp
 LPTENUM\Company_NameModelNam1234
 ```
 
@@ -53,7 +49,7 @@ The driver stack appears in the figure following the next code sample.
 
 The INF code that will correctly "plug and play" a hardware ID of the form LPTENUM\\*Company\_NameModelNam1234* is shown in the following example. Notice that the "Model Name XYZ" device description appears twice in the [**INF Manufacturer section**](https://msdn.microsoft.com/library/windows/hardware/ff547454). The hardware ID in the first line includes the bus enumerator, while the hardware ID in the second line does not. The two lines guarantee a rank-0 hardware ID match regardless of the type of bus on which the printer is installed. See [Installing a Custom Plug and Play Printer Driver](installing-a-custom-plug-and-play-printer-driver.md) for more information.
 
-```
+```cpp
 [Manufacturer]
 %Company_Name%=Company_Name
 
@@ -73,7 +69,7 @@ Company_Name="Company Name"
 
 For a printer that shares its [*device ID*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-id) with other models, the INF file should be similar to the following:
 
-```
+```cpp
 [Manufacturer]
 %Company_Name%=Company_Name
 

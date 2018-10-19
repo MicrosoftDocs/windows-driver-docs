@@ -3,11 +3,7 @@ title: Handling IOCTL_SPB_FULL_DUPLEX Requests
 author: windows-driver-content
 description: Some buses, such as SPI, enable read and write transfers to simultaneously occur between the bus controller and a device on the bus.
 ms.assetid: B200461F-9F9C-43A7-BA78-0864FD58C64E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -54,7 +50,7 @@ Typically, the SPB controller driver validates the parameter values in an **IOCT
 -   The first entry in the transfer list is for a write buffer, and the second is for a read buffer.
 -   The **DelayInUs** value for both entries is zero.
 
-```
+```cpp
 //
 // Validate the transfer count.
 //

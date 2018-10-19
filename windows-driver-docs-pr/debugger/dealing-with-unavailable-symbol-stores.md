@@ -5,9 +5,6 @@ ms.assetid: 42e3518b-b139-49cd-96cc-ea31f6df7964
 keywords: ["SymProxy, unavailable stores"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +23,7 @@ If one of the symbol stores that SymSrv is configured to obtain files from is do
 
 For example, we recommend the following settings:
 
-```
+```ini
 [timeouts]
 trigger=10
 count=5
@@ -38,7 +35,8 @@ In this example, the store access is turned off if five timeouts are experienced
 **To control symbol store access using the registry**
 
 1.  Create a key named
-    ```
+
+    ```text
     HKLM\ Software\Microsoft\Symbol Server\Timeouts
     ```
 

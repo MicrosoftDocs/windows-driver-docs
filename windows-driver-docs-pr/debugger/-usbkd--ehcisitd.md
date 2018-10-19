@@ -5,9 +5,6 @@ ms.assetid: FA1F61AE-A9D4-429E-97BC-0CCC3A9AF33E
 keywords: ["usbkd._ehcisitd Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.\_ehcisitd** command displays information from a **usbehci!\_HCD\_SI\_TRANSFER\_DESCRIPTOR**
 
-```
+```dbgcmd
 !usbkd._ehcisitd StructAddr
 ```
 
@@ -42,7 +39,7 @@ Usbkd.dll
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

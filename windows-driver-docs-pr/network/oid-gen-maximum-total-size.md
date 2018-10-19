@@ -3,11 +3,7 @@ title: OID_GEN_MAXIMUM_TOTAL_SIZE
 author: windows-driver-content
 description: As a query, the OID_GEN_MAXIMUM_TOTAL_SIZE OID specifies the maximum total packet length, in bytes, the NIC supports.
 ms.assetid: 4973b4bd-58a5-4242-b33f-1ff8c3a7ec4b
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_MAXIMUM_TOTAL_SIZE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

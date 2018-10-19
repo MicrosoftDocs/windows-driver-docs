@@ -2,11 +2,7 @@
 title: Porting NDIS 6.x drivers to NDIS 6.70
 description: For NDIS protocol, filter, and intermediate drivers, NDIS 6.70 is substantially the same as NDIS 6.60. For detailed information about new features for NDIS 6.70, see Introduction to NDIS 6.70.
 ms.assetid: DB099908-E8EF-4D4B-95FF-9B17702D4A7B
-ms.author: windowsdriverdev
 ms.date: 06/01/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

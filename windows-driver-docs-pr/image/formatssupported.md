@@ -9,11 +9,7 @@ api_name:
 - wscn FormatsSupported
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **FormatsSupported** element is a collection of elements that list 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:FormatsSupported>
   child elements
 </wscn:FormatsSupported>
@@ -79,7 +75,7 @@ Remarks
 
 Each [**FormatValue**](formatvalue.md) element specifies a file format that describes both the file type and compression type.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DeviceSettings**](devicesettings.md)

@@ -2,11 +2,7 @@
 title: Switch from Legacy MBR disk to GPT disk with Windows 10
 description: Provides guidance to enable a seamless upgrade and enable the user to leverage new and improved security features of Windows 10.
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 05/07/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +27,7 @@ These four configurations will be used:
 | Windows 7 **x64** installed to BIOS with active partition NTFS HDD (Config \# 3)               | Windows 10 **x64** installed to BIOS with active partition NTFS HDD (Config \# 3)         | Will bootup and run Windows 10 OS               | Only able to leverage Bitlocker                                                           | Not covered in this document                                                                  |
 | Windows 7 **x86** installed to BIOS with active partition NTFS HDD (Config \# 3)               | Windows 10 **x86** installed to BIOS with active partition NTFS HDD = works (Config \# 3) | Will bootup and run Windows 10 OS               | Only able to leverage Bitlocker                                                           | Not covered in this document                                                                  |
 | Windows 7 **x86** installed to BIOS with active partition NTFS (Config \# 3)                   | Windows 10 **x64** installed to BIOS with active partition NTFS HDD (Config \# 3)         | Will need installation media and clean install. | Only able to leverage Bitlocker (other security features require UEFI boot)               | Not covered in this document                                                                  |
-| Windows 7 **x64** installed to BIOS with active partition NTFS (Config \# 3)                   | Widows 10 **x64** installed to UEFI firmware CSM disabled on GPT HDD (Config \# 1)        | Special instructions below                      | OS is able to make use of MS security features supported in firmware                      | See [General overview for switching Legacy BIOS boot+CSM to UEFI+GPT](#_General_overview_for) |
+| Windows 7 **x64** installed to BIOS with active partition NTFS (Config \# 3)                   | Windows 10 **x64** installed to UEFI firmware CSM disabled on GPT HDD (Config \# 1)        | Special instructions below                      | OS is able to make use of MS security features supported in firmware                      | See [General overview for switching Legacy BIOS boot+CSM to UEFI+GPT](#_General_overview_for) |
 
 ## Definition of terms
 

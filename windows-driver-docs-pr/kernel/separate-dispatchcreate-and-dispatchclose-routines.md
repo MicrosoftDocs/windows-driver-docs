@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Separate DispatchCreate and DispatchClose Routines
 ms.assetid: b2e05555-c70d-4293-8622-51eea92091b1
 keywords: ["dispatch routines WDK kernel , DispatchCreate routine", "dispatch routines WDK kernel , DispatchClose routine", "DispatchClose routine", "DispatchCreate routine", "IRP_MJ_CREATE I/O function code", "IRP_MJ_CLOSE I/O function code", "create dispatch routines WDK kernel", "close dispatch routines WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +28,7 @@ Some drivers handle **IRP\_MJ\_CLOSE** requests only for symmetry because, after
 
 If the device controlled by a lower-level driver must be available for the system to continue running, the driver's *DispatchClose* routine generally will not be called. For example, some of the system disk drivers have no *DispatchClose* routine, but these drivers usually have [*DispatchFlushBuffers*](https://msdn.microsoft.com/library/windows/hardware/ff543314) and [*DispatchShutdown*](https://msdn.microsoft.com/library/windows/hardware/ff543405) routines to complete any outstanding file I/O operations before the system is shut down.
 
-While you can implement separate [*DRIVER_DISPATCH*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) and *DispatchClose* routines, drivers sometimes have [a single DispatchCreateClose routine](a-single-dispatchcreateclose-routine.md) for handling both create and close requests.
+While you can implement separate [*DRIVER_DISPATCH*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) and *DispatchClose* routines, drivers sometimes have [a single DispatchCreateClose routine](a-single-dispatchcreateclose-routine.md) for handling both create and close requests.
 
  
 

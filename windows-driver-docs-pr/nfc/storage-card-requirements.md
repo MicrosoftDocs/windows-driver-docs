@@ -2,15 +2,13 @@
 title: Storage card requirements
 description: This topic describes the APDU requirements for storage cards
 ms.assetid:
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Storage card requirements
 
-This section describes the general APDU command set requirements for For non-ISO14443-4 compliant cards (known as storage cards).
+This section describes the general APDU command set requirements for non-ISO14443-4 compliant cards (known as storage cards).
 
 ## General-Authenticate command
 

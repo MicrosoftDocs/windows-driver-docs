@@ -5,9 +5,6 @@ ms.assetid: 3c6ec412-f800-469b-9a9f-ebc2940d00fe
 keywords: ["logexts.logb Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!logexts.logb** extension displays or flushes the output buffer.
 
-```
+```dbgcmd
 !logexts.logb p 
 !logexts.logb f 
 ```

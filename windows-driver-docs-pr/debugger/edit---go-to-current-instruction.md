@@ -5,9 +5,6 @@ ms.assetid: 7bc57ac1-1de6-4534-836b-132e3b072ae5
 keywords: ["Edit Go to Current Instruction"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

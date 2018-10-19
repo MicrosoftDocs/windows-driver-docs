@@ -5,9 +5,6 @@ ms.assetid: ee2283bd-4d3f-4e30-8b32-e286a415bb3a
 keywords: ["lm (List Loaded Modules) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

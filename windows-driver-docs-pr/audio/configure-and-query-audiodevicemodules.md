@@ -6,9 +6,6 @@ label: Configure and query audio device modules
 template: 
 ms.author: drewbat
 ms.date: 06/28/2017
-ms.topic: article
-ms.prod: windows
-ms.technology: uwp
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 ---
@@ -28,7 +25,7 @@ var audioModuleManager = new AudioDeviceModulesManager(endpointId);
 
 ## Query for installed audio device modules
 
-Query for all installed audio device modules by calling the **[FindAll](https://docs.microsoft.com/uwp/api/windows.media.devices.audiodevicemodulesmanager#Windows_Media_Devices_AudioDeviceModulesManager_FindAll)** of the the **[AudioDeviceModulesManager](https://docs.microsoft.com/uwp/api/windows.media.devices.audiodevicemodulesmanager)** class. Query for a specific set of audio device modules by calling **[FindAllById](https://docs.microsoft.com/uwp/api/windows.media.devices.audiodevicemodulesmanager#Windows_Media_Devices_AudioDeviceModulesManager_FindAllById_System_String_)** and passing in the ID of the requested modules. The following example defines an ID for a set of modules, calls **FindAllById** to retrieve a list of **[AudioDeviceModule](https://docs.microsoft.com/uwp/api/windows.media.devices.audiodevicemodule)** objects, and then prints the details of each module to the debug output.
+Query for all installed audio device modules by calling the **[FindAll](https://docs.microsoft.com/uwp/api/windows.media.devices.audiodevicemodulesmanager#Windows_Media_Devices_AudioDeviceModulesManager_FindAll)** of the **[AudioDeviceModulesManager](https://docs.microsoft.com/uwp/api/windows.media.devices.audiodevicemodulesmanager)** class. Query for a specific set of audio device modules by calling **[FindAllById](https://docs.microsoft.com/uwp/api/windows.media.devices.audiodevicemodulesmanager#Windows_Media_Devices_AudioDeviceModulesManager_FindAllById_System_String_)** and passing in the ID of the requested modules. The following example defines an ID for a set of modules, calls **FindAllById** to retrieve a list of **[AudioDeviceModule](https://docs.microsoft.com/uwp/api/windows.media.devices.audiodevicemodule)** objects, and then prints the details of each module to the debug output.
 
 C#
 ```csharp

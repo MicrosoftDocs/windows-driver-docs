@@ -3,11 +3,7 @@ title: Writing WIA Properties by a Driver
 author: windows-driver-content
 description: Writing WIA Properties by a Driver
 ms.assetid: 6d2164ac-0fbc-4ecb-b3bf-a46efbe07f51
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -63,7 +59,7 @@ If a WIA property is invalid, andthe application is not writing to it, the inval
 
 The following example shows an implementation of the **IWiaMiniDrv::drvValidateItemProperties** method:
 
-```
+```cpp
 HRESULT _stdcall CWIADevice::drvValidateItemProperties(
   BYTE           *pWiasContext,
   LONG           lFlags,
@@ -96,7 +92,7 @@ HRESULT _stdcall CWIADevice::drvValidateItemProperties(
 
   //
   // create a WIA property context, to gain access to
-  // the WIA application&#39;s intended settings.
+  // the WIA application's intended settings.
   //
 
   hr = wiasCreatePropContext(nPropSpec,

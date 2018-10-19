@@ -11,11 +11,7 @@ keywords:
 - size WDK Windows 2000 display
 - positions WDK Windows 2000 display
 - tracking window changes WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +29,7 @@ An application calls **ExtEscape(**hdc, WNDOBJ\_SETUP,...**)** and passes a hand
 
 The driver should handle the **ExtEscape** call in a manner similar to the following:
 
-```
+```cpp
 ULONG DrvEscape(
   SURFOBJ *pso,
   ULONG    iEsc,

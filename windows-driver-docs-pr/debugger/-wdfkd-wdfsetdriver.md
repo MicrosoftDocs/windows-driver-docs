@@ -5,9 +5,6 @@ ms.assetid: 90fc99a0-1e78-44bb-ba91-191f116160e7
 keywords: ["wdfkd.wdfsetdriver Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfsetdriver** extension sets the name of the default Kernel-Mode Driver Framework (KMDF) driver to which debugger extension commands apply.
 
-```
+```dbgcmd
 !wdfkd.wdfsetdriver DriverName
 ```
 

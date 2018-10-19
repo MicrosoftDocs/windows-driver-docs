@@ -10,11 +10,7 @@ api_name:
 - buttons
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +24,7 @@ The **buttons** element is defined in the *asyncui* namespace at this URI: http:
 Usage
 -----
 
-``` syntax
+```xml
 <buttons>
   child elements
 </buttons>
@@ -90,17 +86,8 @@ Remarks
 
 See [**button**](button.md) for a code exapmle that shows how to use the **buttons** element to enclose two **button** elements that display an **OK** and a **CANCEL** button.
 
-## <span id="see_also"></span>See also
+## See also
 
+[button](button.md)
 
-[**button**](button.md)
-
-[**messageBoxUI**](messageboxui.md)
-
- 
-
- 
-
-
-
-
+[messageBoxUI](messageboxui.md)

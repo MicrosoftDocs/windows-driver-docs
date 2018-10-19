@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # SetupDiGetWizardPage
@@ -17,7 +18,7 @@ ms.localizationpriority: medium
 
 The **SetupDiGetWizardPage** function is reserved for system use. For information about wizard pages, see the DIF_NEWDEVICEWIZARD_*XXX* requests, for example, [**DIF_NEWDEVICEWIZARD_FINISHINSTALL**](dif-newdevicewizard-finishinstall.md).
 
-```
+```cpp
 HPROPSHEETPAGE
  SetupDiGetWizardPage(
  IN HDEVINFO DeviceInfoSet, 

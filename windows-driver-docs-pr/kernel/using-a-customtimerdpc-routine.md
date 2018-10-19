@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Using a CustomTimerDpc Routine
 ms.assetid: e95d01a2-4d13-40d2-aeb0-44c45e4a49f5
 keywords: ["timer objects WDK kernel , CustomTimerDpc routines", "CustomTimerDpc", "disabling timer objects", "timer objects WDK kernel , disabling", "periodic timers WDK kernel", "queuing timer objects", "timer objects WDK kernel , expirations", "timer expirations WDK kernel", "expired timers WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

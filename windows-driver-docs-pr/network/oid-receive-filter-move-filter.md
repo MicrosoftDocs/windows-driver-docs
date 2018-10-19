@@ -3,11 +3,7 @@ title: OID_RECEIVE_FILTER_MOVE_FILTER
 author: windows-driver-content
 description: An overlying driver issues an object identifier (OID) set request of OID_RECEIVE_FILTER_MOVE_FILTER to move a previously configured receive filter.
 ms.assetid: CC899ABD-EE6B-4932-889F-984C8B5A403F
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_RECEIVE_FILTER_MOVE_FILTER Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

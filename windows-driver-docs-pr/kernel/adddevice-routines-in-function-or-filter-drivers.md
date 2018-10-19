@@ -4,11 +4,7 @@ author: windows-driver-content
 description: AddDevice Routines in Function or Filter Drivers
 ms.assetid: 0a095c17-2295-46df-9908-f306f7fe9f67
 keywords: ["function drivers WDK kernel", "filter drivers WDK kernel", "AddDevice routines WDK kernel , function drivers", "AddDevice routines WDK kernel , filter drivers"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,7 +52,7 @@ An [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) r
 
 9.  Clear the DO\_DEVICE\_INITIALIZING flag in the FDO or filter DO with a statement like the following:
 
-    ```
+    ```cpp
     FunctionalDeviceObject->Flags &= ~DO_DEVICE_INITIALIZING;
     ```
 

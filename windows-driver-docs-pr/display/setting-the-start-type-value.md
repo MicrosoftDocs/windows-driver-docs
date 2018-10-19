@@ -5,11 +5,7 @@ ms.assetid: dcc38a36-4755-472b-94c8-dfed892460ee
 keywords:
 - INF files WDK display , start type values
 - start type values WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ You should set display drivers that are written to the Windows Display Driver Mo
 
 The following example shows a service-install section with the value for the **StartType** entry set to SERVICE\_DEMAND\_START to indicate that the display miniport driver is started on demand:
 
-```
+```cpp
 ;
 ; Service Installation Section
 ;

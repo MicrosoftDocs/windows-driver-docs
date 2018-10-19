@@ -5,9 +5,6 @@ ms.assetid: B7CC72A5-7D3F-4DE5-878D-ABD08BAF227C
 keywords: ["processirps Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!processirps** extension displays information about I/O request packets (IRPs) associated with processes.
 
-```
+```dbgcmd
 !processirps
 !processirps ProcessAddress [Flags]
 ```
@@ -61,7 +58,7 @@ Examples
 
 You can use [**!process**](-process.md) command to get process addresses. For example, you could get the process address for explorer.exe.
 
-```
+```dbgcmd
 2: kd> !process 0 0
 **** NT ACTIVE PROCESS DUMP ****
 ...
@@ -73,7 +70,7 @@ PROCESS fffffa800688c940
 
 Now you can pass the process address for explorer.exe to the **!processirps** command. The following output shows that explorer.exe has IRPs queued to threads and IRPs queued to file objects.
 
-```
+```dbgcmd
 2: kd> !processirps fffffa800688c940
 **** PROCESS fffffa800688c940 (Image: explorer.exe) ****
 

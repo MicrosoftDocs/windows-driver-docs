@@ -5,9 +5,6 @@ ms.assetid: 65cc4eda-7aed-489f-a622-27a42afc0e4a
 keywords: ["Visual SourceSafe, debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,13 +17,13 @@ If the Visual SourceSafe database requires a user and optional password for acce
 
 If Visual SourceSafe is not set in the path of your debugging computer, you can get around this by adding an entry to the [Srcsrv.ini](the-srcsrv-ini-file.md) file that works with your debugger. When using a standard installation of Visual Studio, this file should be located in
 
-```
+```text
 %PROGRAMFILES%\Microsoft Visual Studio 8\Common7\IDE\srcsrv.ini
 ```
 
 In the \[trusted commands\] section of Srcsrv.ini, add an entry of the form
 
-```
+```ini
 ss.exe="Path"
 ```
 

@@ -5,6 +5,7 @@ description: Current Settings
 ms.assetid: 4de99ad0-fcd9-4f8d-8125-8f622443a0c6
 keywords: ["current registry settings WDK joysticks"]
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Current Settings
@@ -19,7 +20,7 @@ A minidriver that is used to poll devices that do not have an associated minidri
 
 The remaining settings are stored under the REGSTR\_KEY\_JOYCURR key. When a device is first configured to a particular joystick ID, Control Panel copies values from the relevant OEM key under REGSTR\_PATH\_JOYOEM to the REGSTR\_KEY\_JOYCURR key. Each of the key value names under this key contains the joystick ID as a part of the name so each joystick has its own settings. The REGSTR\_VAL\_JOYOEMNAME value is copied to the relevant REGSTR\_VAL\_JOYNOEMNAME and, if present, the REGSTR\_VAL\_JOYOEMCALLOUT value is copied to REGSTR\_VAL\_JOYNOEMCALLOUT. The REGSTR\_VAL\_JOYOEMDATA value is used as the first two doublewords of the REGSTR\_VAL\_JOYNCONFIG value, with the whole of that value defined (when expanded) as follows:
 
-```
+```cpp
 struct {
     /* usage settings, copied from REGSTR_VAL_JOYOEMNAME */
     struct {

@@ -5,11 +5,7 @@ description: The ACPI_MANIPULATE_LOCK_BUFFER macro is reserved for internal use 
 ms.assetid: 7af24f15-66e1-4f68-8d8a-d22617616806
 keywords: 
 - ACPI_MANIPULATE_LOCK_BUFFER structure ACPI Devices
-ms.author: windowsdriverdev
-ms.date:
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 

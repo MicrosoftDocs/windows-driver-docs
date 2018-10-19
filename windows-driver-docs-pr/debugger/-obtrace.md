@@ -5,9 +5,6 @@ ms.assetid: 6a124f9f-1c2f-4303-b84f-0032fb912cc1
 keywords: ["obtrace Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!obtrace** extension displays object reference tracing data for the specified object.
 
-```
+```dbgcmd
 !obtrace Object
 ```
 
@@ -66,7 +63,7 @@ Before using this extension to display object reference tracing data, you must u
 
 Here is an example of the output from the **!obtrace** extension:
 
-```
+```dbgcmd
 kd> !obtrace 0xfa96f700
 Object: fa96f700        Image: cmd.exe
 Sequence  (+/-)  Stack

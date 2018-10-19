@@ -3,11 +3,7 @@ title: Barometer data fields
 author: windows-driver-content
 description: This topic provides information about the sensor data fields that are specific to the barometer.
 ms.assetid: 4AF51C94-AD96-4D09-AF8D-3D3D0BC32B3D
-ms.author: windowsdriverdev
-ms.date: 01/04/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
 

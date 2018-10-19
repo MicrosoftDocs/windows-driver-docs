@@ -9,11 +9,7 @@ keywords:
 - tutorials WDK GDL
 - GDL WDK , tutorials
 - schemas WDK GDL , implementing GDL schemas
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,7 +38,7 @@ Do not define any keywords in your schema; just include the framework for the fu
 
 The following code example demonstrates one way to complete this exercise.
 
-```
+```cpp
 *Template:  ATTRIBUTE
 {
     *Type:  ATTRIBUTE

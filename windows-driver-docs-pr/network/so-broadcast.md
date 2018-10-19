@@ -3,11 +3,7 @@ title: SO_BROADCAST
 author: windows-driver-content
 description: SO_BROADCAST
 ms.assetid: 24b93d4e-461d-44c3-b721-85cf41a1680a
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -SO_BROADCAST Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

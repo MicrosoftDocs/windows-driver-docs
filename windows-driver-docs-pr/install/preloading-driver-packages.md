@@ -6,11 +6,7 @@ keywords:
 - installation applications WDK , preloaded driver packages
 - device installation applications WDK , preloaded driver packages
 - preloaded driver packages WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,19 +25,19 @@ After Windows is installed, a [driver package](driver-packages.md) can be preloa
 
 The **DevicePath** value entry is a [REG_EXPAND_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types)-typed entry that contains the *%SystemRoot%\\inf* directory path and zero or more directory path entries. The format of the **DevicePath** value entry is the following, where each directory path is either a local directory path or a path of a shared directory on a network server where the preloaded [driver packages](driver-packages.md) are located:
 
-```
+```cpp
 %SystemRoot%\inf;DirectoryPath1;DirectoryPath2;...
 ```
 
 For example, to preload a driver package for a network adapter in the *%SystemRoot%\\Drivers\\NIC* directory on a local computer, an administrator copies the driver package to that directory and concatenates the path of the **DevicePath** value entry, as follows:
 
-```
+```cpp
 %SystemRoot%\inf;...;%SystemRoot%\inf\Drivers\NIC
 ```
 
 For example, to preload a driver package for a network adapter in the shared directory *\\\\DriverPackageServer\\ShareName\\Drivers\\NIC* on a network, a network administrator copies the driver package to the shared directory and concatenates the shared directory path of the **DevicePath** value entry in the registry of the network computers, as follows:
 
-```
+```cpp
 %SystemRoot%\inf;...;\\DriverPackageServer\ShareName\Drivers\NIC
 ```
 

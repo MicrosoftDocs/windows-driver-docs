@@ -9,11 +9,7 @@ keywords:
 - WHEA WDK , setting error source information
 - Windows Hardware Error Architecture WDK , setting error source information
 - hardware error sources WDK WHEA , setting information
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ A user-mode application can set the information for a particular [error source](
 
 The following code example shows how to set the error source information for a particular error source.
 
-```
+```cpp
 IWbemServices *pIWbemServices;
 WHEA_ERROR_SOURCE_DESCRIPTOR ErrorSourceInfo;
 BSTR ClassName;

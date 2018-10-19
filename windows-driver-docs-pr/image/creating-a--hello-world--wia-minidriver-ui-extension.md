@@ -3,11 +3,7 @@ title: Creating a "Hello World" WIA Minidriver UI Extension
 author: windows-driver-content
 description: Creating a "Hello World" WIA Minidriver UI Extension
 ms.assetid: 8de1f8ca-f618-44d7-b6dd-c02cdee8a556
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,7 +46,7 @@ The following example INF snippet is derived from the WIA minidriver sample in [
 
 It is recommended that all WIA UI extension DLLs should be self-registering COM objects, to promote easier installation. This sample does not contain a self-registering COM object.
 
-```
+```INF
 [WIADevice.DeviceData]
 Server=local
 UI DLL=sti.dll
@@ -59,7 +55,7 @@ UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
 
 The following sample is a complete INF file that sets the **UI Class ID** subkey to the CLSID of the *hellowldui* sample UI Extension.
 
-```
+```INF
 ; HELLOWLD.INF  -- Hello World WIA Minidriver setup file (with a WIA UI extension DLL)
 ; Copyright (c) 2002 Hello World Company
 ; Manufacturer:  Hello World Company
@@ -139,7 +135,7 @@ Location="Hello World WIA Minidriver Installation Source"
 
 The *hellowldui.def* file should contain the following:
 
-```
+```make
 LIBRARY HELLOWLDUI
 
 EXPORTS
@@ -149,7 +145,7 @@ EXPORTS
 
 The *hellowldui.cpp* file should contain the following:
 
-```
+```cpp
 #ifndef WIN32_LEAN_AND_MEAN
 #define WIN32_LEAN_AND_MEAN
 #endif

@@ -5,9 +5,6 @@ ms.assetid: E63BE2B5-291B-4F78-98FF-C1D7663A184E
 keywords: [".nvunload (NatVis Unload) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,9 +19,8 @@ ms.localizationpriority: medium
 
 The .nvunload command unloads a NatVis file from the debugger environment.
 
-```
-.nvunload FileName|ModuleName 
-   
+```dbgcmd
+.nvunload FileName|ModuleName  
 ```
 
 <span id="_______FileName___ModuleName______"></span><span id="_______filename___modulename______"></span><span id="_______FILENAME___MODULENAME______"></span> *FileName | ModuleName*   

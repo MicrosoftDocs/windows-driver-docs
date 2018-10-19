@@ -5,9 +5,6 @@ ms.assetid: 08978751-c4b7-491a-9e1f-de21d74a10a8
 keywords: [".scroll_prefs (Control Source Scrolling Preferences) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.scroll\_prefs** command controls the positioning of the source in a Source window when scrolling to a line.
 
-```
+```dbgcmd
 .scroll_prefs Before After 
 .scroll_prefs 
 ```

@@ -5,9 +5,6 @@ ms.assetid: b4127e4f-a20b-497f-ad84-efea0df0dc80
 keywords: ["atom Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

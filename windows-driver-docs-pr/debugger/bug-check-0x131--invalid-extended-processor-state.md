@@ -5,9 +5,6 @@ ms.assetid: 72EEA46A-1E96-4B07-A7E6-40DAE4641B20
 keywords: ["Bug Check 0x131 INVALID_EXTENDED_PROCESSOR_STATE", "INVALID_EXTENDED_PROCESSOR_STATE"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

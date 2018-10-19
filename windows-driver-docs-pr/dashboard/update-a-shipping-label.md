@@ -4,9 +4,6 @@ description: This method updates a shipping label in the Hardware dashboard API.
 author: balapv
 ms.author: balapv
 ms.date: 08/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Update a shipping label
@@ -122,3 +119,7 @@ After this step, use the method in [Get a shipping label](get-a-shipping-label.m
 ## Error codes
 
 For more info about error codes, see [Error codes](get-product-data.md#error-codes).
+
+## See also
+
+- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

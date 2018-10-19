@@ -2,11 +2,7 @@
 title: Captive portals
 description: Captive portals
 ms.assetid: 6f710440-3012-4bf4-92cc-3743b0f4fd34
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -54,7 +50,7 @@ To avoid false positive or false negative test results, your captive portal shou
 ## <span id="touchfr"></span><span id="TOUCHFR"></span>Touch-friendly web pages
 
 
-The Windows 8, Windows 8.1, and Windows 10 experience is designed to be touch-first. This extends to web pages. Consider laying out your web page with larger, easy-to-target controls for a touch user. Use layouts that do not require excessive scrolling to interact with, and break flows into multiple pages if necessary. For more information on touch-friendly web design, see [Designing for Touch Input](https://msdn.microsoft.com/en-us/library/windows/apps/hh465415.aspx).
+The Windows 8, Windows 8.1, and Windows 10 experience is designed to be touch-first. This extends to web pages. Consider laying out your web page with larger, easy-to-target controls for a touch user. Use layouts that do not require excessive scrolling to interact with, and break flows into multiple pages if necessary. For more information on touch-friendly web design, see [Designing for Touch Input](https://msdn.microsoft.com/library/windows/apps/hh465415.aspx).
 
 ## <span id="pap"></span><span id="PAP"></span>Provision after purchase
 

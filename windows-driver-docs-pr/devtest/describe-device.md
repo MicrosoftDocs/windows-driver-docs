@@ -4,11 +4,7 @@ description: Describe the device in the Device Metadata Authoring Wizard
 ms.assetid: C14E8E3F-FACF-497E-9E6C-17397E6DF9DB
 keywords:
 - Describe the device in the Device Metadata Authoring Wizard
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

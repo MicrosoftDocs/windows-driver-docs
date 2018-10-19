@@ -5,9 +5,6 @@ ms.assetid: abfa1817-41d8-4bb2-a6d2-e9c9027b50df
 keywords: [".restart (Restart Target Application) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +21,7 @@ The **.restart** command restarts the target application.
 
 Do not confuse this command with the [**.restart (Restart Kernel Connection)**](-restart--restart-kernel-connection-.md) command, which works only in kernel mode.
 
-```
+```dbgcmd
 .restart 
 ```
 

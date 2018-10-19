@@ -5,9 +5,6 @@ ms.assetid: 3b0ac8c1-f0bd-4878-9303-23d6999650ee
 keywords: ["Set Driver Replacement Map (.kdfiles) command", "driver replacement map, Set Driver Replacement Map (.kdfiles) command", ".kdfiles (Set Driver Replacement Map) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.kdfiles** command reads a file and uses its contents as the driver replacement map.
 
-```
+```dbgcmd
 .kdfiles MapFile 
 .kdfiles -m OldDriver NewDriver
 .kdfiles -s SaveFile 

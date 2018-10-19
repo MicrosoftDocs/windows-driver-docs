@@ -3,6 +3,7 @@ title: MSiSCSI\_LB\_Operations WMI Class
 description: MSiSCSI\_LB\_Operations WMI Class
 ms.assetid: 75c93040-52bf-4e9c-a503-a87f382ee1c9
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_LB\_Operations WMI Class
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 
 The MSiSCSI\_LB\_Operations WMI class contains methods to set and retrieve the load balance policies. This class is defined as follows in Mgmt.mof.
 
-```
+```cpp
 class MSiSCSI_LB_Operations {
 
     [key, read]

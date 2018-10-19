@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
-ms.date: 9/10/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/10/2018
 ms.localizationpriority: medium
 ---
 
@@ -53,7 +49,7 @@ ms.localizationpriority: medium
 
 The following flags can be placed in the **KSCAMERA\_EXTENDEDPROP\_HEADER.Flags** field to control the histogram metadata in driver. The default is **HISTOGRAM\_OFF**.
 
-``` syntax
+```cpp
 #define KSCAMERA_EXTENDEDPROP_HISTOGRAM_OFF      0x0000000000000000
 #define KSCAMERA_EXTENDEDPROP_HISTOGRAM_ON       0x0000000000000001
 ```

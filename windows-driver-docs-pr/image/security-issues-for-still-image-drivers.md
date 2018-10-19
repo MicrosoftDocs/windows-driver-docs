@@ -3,11 +3,7 @@ title: Security Issues for Still Image Drivers
 author: windows-driver-content
 description: Security Issues for Still Image Drivers
 ms.assetid: ad795cf0-8bff-4b9b-ac43-94c74cc19d60
-ms.author: windowsdriverdev
 ms.date: 07/18/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

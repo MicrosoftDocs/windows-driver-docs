@@ -4,6 +4,7 @@ author: windows-driver-content
 description: This topic describes logging and investigations for GPIO testing.
 ms.assetid: 998BF6BC-D931-4555-A8BC-F860DFA9A18F
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # GPIO logging and investigations

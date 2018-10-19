@@ -3,11 +3,7 @@ title: Minidrivers and the HID class driver
 author: windows-driver-content
 description: Operation of the HID class driver
 ms.assetid: 3A8F5545-F8EB-47E2-989D-7DE83E32110E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -142,7 +138,7 @@ A HID\_DEVICE\_EXTENSION structure contains the following members:
 
 Given a pointer to the FDO of an input device, the following GET\_MINIDRIVER\_DEVICE\_EXTENSION macro returns a pointer to a HID minidriver extension:
 
-```
+```cpp
 #define GET_MINIDRIVER_DEVICE_EXTENSION(DO) ((PDEVICE_EXTENSION) (((PHID_DEVICE_EXTENSION)(DO)->DeviceExtension)->MiniDeviceExtension))
 ```
 

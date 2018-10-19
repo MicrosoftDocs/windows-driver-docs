@@ -2,11 +2,7 @@
 title: Infrared stream support in UVC
 author: windows-driver-content
 description: Provides information on infrared stream support in UVC
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +24,7 @@ These IR format type GUIDs are defined in ksmedia.h:
 
 When these IR format type GUIDs are specified, the capture pipeline automatically marks these streams as IR streams which aids applications in selecting the correct stream for their scenarios.
 
-```
+```cpp
 // Example: Format descriptor for UVC 1.1 frame based uncompressed format
 
 typedef struct _VIDEO_FORMAT_FRAME

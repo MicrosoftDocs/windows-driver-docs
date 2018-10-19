@@ -3,11 +3,7 @@ title: OID_SWITCH_NIC_CREATE
 author: windows-driver-content
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID_SWITCH_NIC_CREATE to notify underlying extensible switch extensions that a new connection is being established between an extensible switch port and an external or virtual network adapter. After the connection is fully established, the protocol edge of the extensible switch issues an OID set request of OID_SWITCH_NIC_CONNECT.
 ms.assetid: 1D6B2C6B-A63E-4A20-B534-AF12714F5FB5
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_SWITCH_NIC_CREATE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

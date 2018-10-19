@@ -2,11 +2,7 @@
 title: Test Isolation
 description: Test Isolation
 ms.assetid: AC2A0060-45B9-45ff-87ED-69842F9A567D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,7 +36,7 @@ Same as Method
 
 The IsolationLevel metadata value that is used is the metadata specified closest to the test level. If the command line IsolationLevel option is also set, the value that is used is the one that provides the most isolation.
 
-```
+```cpp
 BEGIN_MODULE()
     MODULE_PROPERTY(L"IsolationLevel", L"Class")
 END_MODULE()
@@ -70,7 +66,7 @@ In the above example, three different process hosts are used: one for MyTestClas
 
 Note that if a module, class, or test is [metadata-expanded](light-weight-data-driven-testing.md) or [data-driven](data-driven-testing.md) and it is to be isolated, each metadata and/or data expansion is isolated. This can be prevented on the test level by making the test a member of an [execution group](execution-groups.md).
 
-```
+```cpp
 class MyTestClass3 :
 {
     BEGIN_TEST_CLASS(MyTestClass3)

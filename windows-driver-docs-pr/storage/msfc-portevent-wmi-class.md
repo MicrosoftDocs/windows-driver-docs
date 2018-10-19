@@ -3,6 +3,7 @@ title: MSFC\_PortEvent WMI Class
 description: MSFC\_PortEvent WMI Class
 ms.assetid: 38b8e358-b118-4a0c-ac47-2f257d0ed1bf
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSFC\_PortEvent WMI Class
@@ -15,7 +16,7 @@ A WMI provider uses the MSFC\_PortEvent WMI class to report port events.
 
 The MSFC\_PortEvent class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MSFC_PortEvent : WMIEvent {
   [key] 
   string InstanceName;

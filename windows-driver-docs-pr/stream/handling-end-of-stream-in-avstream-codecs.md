@@ -8,11 +8,7 @@ keywords:
 - end of stream WDK AVStream
 - hardware codec support WDK AVStream , end of stream
 - AVStream hardware codec support WDK , handling end of stream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

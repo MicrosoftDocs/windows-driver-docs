@@ -4,9 +4,6 @@ description: Use the report delivered as part of the Get Report Data API to retr
 author: balapv
 ms.author: balapv
 ms.date: 08/20/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,3 +20,5 @@ Additionally, you can download all the available for a failure hash using the [B
 ## See also
 
 - [Analytics Reporting APIs (Swagger )](https://apidocs.microsoft.com/services/analyticsreportingapis)
+
+- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

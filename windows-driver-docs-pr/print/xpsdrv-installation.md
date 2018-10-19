@@ -6,11 +6,7 @@ ms.assetid: 0b5ef114-2862-46f9-bd32-ae09fa4e6a92
 keywords:
 - XPSDrv printer drivers WDK , installing
 - INF files WDK print , XPSDrv printer drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ To be properly installed by the spooler, XPSDrv drivers must include the followi
 
 The following code example illustrates an INF file with the preceding changes.
 
-```
+```cpp
 [Version]
 Signature="$Windows NT$"
 Provider=%MS%

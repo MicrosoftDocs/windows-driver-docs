@@ -3,11 +3,7 @@ title: About Sensor Parameter Types
 author: windows-driver-content
 description: About the Parameter Types
 ms.assetid: 392ea7b9-df6f-4d47-9367-a167c0656dd4
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +27,7 @@ You should understand how the sensor class extension uses some data types as met
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[IWDFFile](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wudfddi/nn-wudfddi-iwdffile)</p></td>
+<td><p>[IWDFFile](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nn-wudfddi-iwdffile)</p></td>
 <td><p>pClientFile</p></td>
 <td><p>This UMDF COM interface represents a file object that the platform associates with a client application. Although sensor method calls always supply this type as a valid interface pointer, it is intended to be used as an ID for the application. The address that the pointer contains is a unique number that can identify the client application. Be aware that this value is distinct from the address of the pointer itself. Do not use the address-of operator (&) to retrieve an ID. Use the pointer itself.</p>
 <p>If you choose to use this pointer to access the underlying object, remember to call AddRef through the pointer initially, and to call Release when you have finished.</p></td>

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Acquire and Release Semantics
 ms.assetid: a0852881-c33f-427a-be8a-5b9edac81f9a
 keywords: ["synchronization WDK kernel , acquire semantics", "synchronization WDK kernel , release semantics", "acquire semantics WDK kernel", "release semantics WDK kernel", "semantics WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ An operation has *acquire semantics* if other processors will always see its eff
 
 Consider the following code example:
 
-```
+```cpp
  a++;
  b++;
  c++;
@@ -34,7 +30,7 @@ Atomic operations, such as those that the **Interlocked*Xxx*** routines perform,
 
 For example, the [**InterlockedIncrementAcquire**](https://msdn.microsoft.com/library/windows/hardware/ff547916) routine uses acquire semantics to increment a variable. If you rewrote the preceding code example as follows:
 
-```
+```cpp
  InterlockedIncrementAcquire(&a);
  b++;
  c++;
@@ -44,7 +40,7 @@ other processors would always see the increment of `a` before the increments of 
 
 Likewise, the [**InterlockedIncrementRelease**](https://msdn.microsoft.com/library/windows/hardware/ff547919) routine uses release semantics to increment a variable. If you rewrote the code example once again, as follows:
 
-```
+```cpp
  a++;
  b++;
  InterlockedIncrementRelease(&c);

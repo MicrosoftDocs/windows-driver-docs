@@ -5,9 +5,6 @@ ms.assetid: 6e42122b-5a18-403b-a19a-1346bea8da12
 keywords: ["as, aS (Set Alias) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **as** and **aS** commands define a new alias or redefine an existing one.
 
-```
+```dbgcmd
 as Name EquivalentLine 
 aS Name EquivalentPhrase 
 aS Name "EquivalentPhrase" 
@@ -125,14 +122,14 @@ If you do not use any switches, the **as** command uses the rest of the line as 
 
 You can end the **aS** command by a semicolon. This technique is useful in a script when you have to put all commands on a single line. Note that if the portion of the line after the semicolon requires expansion of the alias, you must enclose that second portion of the line in a new block. The following example produces the expected output, 0x6.
 
-```
+```dbgcmd
 0:001> aS /x myAlias 5 + 1; .block{.echo myAlias}
 0x6
 ```
 
 If you omit the new block, you do not get the expected output. That is because the expansion of a newly set alias does not happen until a new code block is entered. In the following example, the new block is omitted, and the output is the text "myAlias" instead of the expected value 0x6.
 
-```
+```dbgcmd
 0:001> aS /x myAlias 5 + 1; .echo myAlias
 myAlias
 ```

@@ -5,9 +5,6 @@ ms.assetid: 7a86a8e4-7ab8-46ba-9bd5-4aef81cd1f29
 keywords: ["Edit Write Window Text to File"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

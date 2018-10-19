@@ -3,11 +3,7 @@ title: Accessing UMDF Metadata in WER Reports
 author: windows-driver-content
 description: This topic describes the location and contents of the Windows Error Reporting (WER) reports that the operating system creates when a User-Mode Driver Framework (UMDF) crashes.The system generates WER reports for three different UMDF event types WUDFHostProblem, WUDFUnhandledException, and WUDFVerifierFailure.When the reflector terminates the driver host process, sometimes due to the host timeout threshold being exceeded, the system generates a file called Report.wer, which contains the WER information. Specifically, Report.wer contains UMDF metadata that may be helpful if you are trying to debug a UMDF driver with no access to a live debugging target.
 ms.assetid: ca5fe108-b4fb-4c90-87bc-9901854780d3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ In Windows 8.1, you can find the Report.wer file in the C:\\ProgramData\\Micros
 
 You can also access WER reports for UMDF using the following PowerShell command:
 
-```
+```cpp
 get-winevent -providername "Windows Error Reporting" | where-object {$_.Message -like "*wudf*"} | format-list | out-file UmdfReports.txt
 ```
 
@@ -33,7 +29,7 @@ get-winevent -providername "Windows Error Reporting" | where-object {$_.Message 
 
 The following is a sample UMDF WER report of type **WUDFHostProblem**. It was obtained from the ReportQueue directory described above. If you use PowerShell to retrieve the reports, the fields may be labeled P0, P1, P2 instead of Sig\[0\], Sig\[1\], Sig\[2\]. Otherwise, the fields are the same and contain the same possible values. This sample was generated from one of the WDK samples that use the OSR USB-FX2 hardware reference board.
 
-```
+```cpp
 Sig[0].Name=EventClass
 Sig[0].Value=HostProblem
 Sig[1].Name=Problem
@@ -101,7 +97,7 @@ The following table describes the possible values for the fields in a report of 
 <td align="left">DetectedBy</td>
 <td align="left"><p>Contains one of the following enumeration values:</p>
 <div class="code">
-```
+```cpp
 WdfComponentInvalid = 0,
 WdfComponentPlatform,
 WdfComponentReflector,
@@ -123,7 +119,7 @@ WdfComponentMax
 <td align="left">ExitCode</td>
 <td align="left"><p>Contains one of the following enumeration values:</p>
 <div class="code">
-```
+```cpp
     WdfHostExit_StillActive = 0x103,
     WdfHostExit_CodeUnknown = 0x70000000,
     WdfHostExit_InternalDriverStopReported,
@@ -138,7 +134,7 @@ WdfComponentMax
 <td align="left">Operation</td>
 <td align="left"><p>Contains one of the following enumeration values:</p>
 <div class="code">
-```
+```cpp
     WudfOperation_Invalid,
     WudfOperation_Init,
     WudfOperation_HostShutdown,

@@ -7,16 +7,11 @@ keywords:
 - bidirectional communication schema WDK print
 - bidi communication schema WDK print
 - hierarchy WDK bidi communication
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Bidirectional Communication Schema Hierarchy
-
 
 The bidirectional communication schema contains the following hierarchy or tree of properties and values.
 
@@ -26,7 +21,7 @@ The bidirectional communication schema contains the following hierarchy or tree 
 
 -   Values are shown in italic text (for example, FriendlyName).
 
-```
+```cpp
 Printer
   DeviceInfo
  FriendlyName

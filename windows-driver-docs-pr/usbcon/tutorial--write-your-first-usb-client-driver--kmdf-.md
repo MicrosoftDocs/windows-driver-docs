@@ -2,11 +2,7 @@
 Description: In this topic you'll use the USB Kernel-Mode Driver template provided with Microsoft Visual Studio Professional 2012 to write a simple kernel-mode driver framework (KMDF)-based client driver.
 title: How to write your first USB client driver (KMDF)
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -222,7 +218,7 @@ You can also manually install the driver on the target computer by using Device 
 
 Visual Studio first displays progress in the **Output** window. Then it opens the **Debugger Immediate Window**. Verify that trace messages appear in the debugger on the host computer. The output should look like this, where "MyUSBDriver\_" is the name of the driver module:
 
-```
+```cpp
 [3]0004.0054::00/00/0000-00:00:00.000 [MyUSBDriver_]MyUSBDriver_EvtDriverContextCleanup Entry
 [1]0004.0054::00/00/0000-00:00:00.000 [MyUSBDriver_]MyUSBDriver_EvtDriverDeviceAdd Entry
 [1]0004.0054::00/00/0000-00:00:00.000 [MyUSBDriver_]MyUSBDriver_EvtDriverDeviceAdd Exit

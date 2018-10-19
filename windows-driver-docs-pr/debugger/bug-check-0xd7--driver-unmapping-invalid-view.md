@@ -5,9 +5,6 @@ ms.assetid: 68075aa7-f579-49c7-a30a-a21312625ff9
 keywords: ["Bug Check 0xD7 DRIVER_UNMAPPING_INVALID_VIEW", "DRIVER_UNMAPPING_INVALID_VIEW"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

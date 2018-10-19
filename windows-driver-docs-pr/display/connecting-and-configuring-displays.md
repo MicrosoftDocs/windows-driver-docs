@@ -13,11 +13,7 @@ keywords:
 - connecting displays WDK Windows Server 2008 R2 display
 - configuring displays WDK Windows 7 display
 - configuring displays WDK Windows Server 2008 R2 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ ms.localizationpriority: medium
 
 This section applies only to Windows 7 and later, and Windows Server 2008 R2 and later versions of the Microsoft Windows operating system.
 
-The new Connecting and Configuring Displays (CCD) Win32 APIs that are described in the [Connecting and Configuring Displays reference](https://msdn.microsoft.com/library/windows/hardware/hh406259) section provide more control over the desktop display setup. They can also be used to make your app [display correctly on a portrait device](displaying-app-on-portrait-device.md). For example, in versions of Windows prior to Windows 7, it was impossible to set clone mode by using the **ChangeDisplaySettingsEx** function. The new CCD APIs move away from using Windows Graphics Device Interface (GDI) concepts like view name and toward [Windows Display Driver Model (WDDM)](windows-vista-display-driver-model-design-guide.md) concepts like adapter, source, and target identifiers.
+The new Connecting and Configuring Displays (CCD) Win32 APIs that are described in [CCD DDIs](ccd-ddis.md) provide more control over the desktop display setup. They can also be used to make your app [display correctly on a portrait device](displaying-app-on-portrait-device.md). For example, in versions of Windows prior to Windows 7, it was impossible to set clone mode by using the **ChangeDisplaySettingsEx** function. The new CCD APIs move away from using Windows Graphics Device Interface (GDI) concepts like view name and toward [Windows Display Driver Model (WDDM)](windows-vista-display-driver-model-design-guide.md) concepts like adapter, source, and target identifiers.
 
 The display control panel, new hot keys, and the Hot Plug Detection (HPD) manager can use the CCD APIs. OEMs can use the CCD APIs for their value-add applets instead of using private driver escapes.
 

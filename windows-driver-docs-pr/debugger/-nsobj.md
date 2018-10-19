@@ -5,9 +5,6 @@ ms.assetid: 348aeb42-41c6-42de-bb43-b075f55076c4
 keywords: ["nsobj Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +21,7 @@ The **!nsobj** extension displays an ACPI namespace object.
 
 Syntax
 
-```
+```dbgcmd
 !nsobj [Address]
 ```
 

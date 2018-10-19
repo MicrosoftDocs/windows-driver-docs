@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Handling Stop IRPs (Windows 98/Me)
 ms.assetid: 98eefb69-e321-4cc5-8b4d-79335cd8b06e
 keywords: ["stop IRPs WDK PnP", "IRPs WDK PnP", "I/O request packets WDK PnP"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

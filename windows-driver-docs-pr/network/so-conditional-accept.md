@@ -3,11 +3,7 @@ title: SO_CONDITIONAL_ACCEPT
 author: windows-driver-content
 description: SO_CONDITIONAL_ACCEPT
 ms.assetid: 8aaaa08b-b239-4648-8c4f-8db2efbda551
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -SO_CONDITIONAL_ACCEPT Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

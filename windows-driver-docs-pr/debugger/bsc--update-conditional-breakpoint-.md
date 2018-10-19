@@ -5,9 +5,6 @@ ms.assetid: 4d491797-3ba2-4a63-a575-67df39484bcf
 keywords: ["bsc (Update Conditional Breakpoint) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **bsc** command changes the condition under which a breakpoint occurs or changes the command executed when the specified conditional breakpoint is encountered.
 
-```
+```dbgcmd
 bsc ID Condition ["CommandString"] 
 ```
 

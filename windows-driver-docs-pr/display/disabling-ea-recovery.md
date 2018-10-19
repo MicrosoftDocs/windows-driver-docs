@@ -7,11 +7,7 @@ keywords:
 - debugging drivers WDK Windows 2000 display
 - EA recovery WDK Windows 2000 display
 - disabled EA recovery WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,13 +23,13 @@ Before attempting to recover, the watchdog will break into any debugger that is 
 
 In Windows XP SP1, disable EA recovery by setting the global variable **WdDisableRecovery**, which is located in *watchdog.sys*, to 1. To do so, you can enter the following **WinDbg** command:
 
-```
+```cpp
 ed watchdog!WdDisableRecovery 1
 ```
 
 In Microsoft Windows Server 2003, disable EA recovery by setting the global variable **VpDisableRecovery**, which is located in *videoprt.sys*, to 1. To do so, you can enter the following **WinDbg** command:
 
-```
+```cpp
 ed videoprt!VpDisableRecovery 1
 ```
 

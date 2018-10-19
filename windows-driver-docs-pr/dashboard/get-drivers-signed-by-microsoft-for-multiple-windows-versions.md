@@ -2,11 +2,7 @@
 title: Get drivers signed by Microsoft for multiple Windows versions
 description: How to get a driver signed by Microsoft for multiple versions of Windows
 ms.assetid: 519384F5-986C-4109-8C91-4352DEFF46F9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -131,9 +127,11 @@ If the driver had been signed by attestation, then the OID would end with a 1:
 
 ## Related topics
 
-   *  [Create a new hardware submission](create-a-new-hardware-submission.md)
-   *  [Managing hardware submissions in the Windows Hardware Dev Center dashboard](manage-your-hardware-submissions.md)
-   *  [Driver flighting](driver-flighting.md)
+- [Create a new hardware submission](create-a-new-hardware-submission.md)
+
+- [Managing hardware submissions in the Windows Hardware Dev Center dashboard](manage-your-hardware-submissions.md)
+
+- [Driver flighting](driver-flighting.md)
 
  
 

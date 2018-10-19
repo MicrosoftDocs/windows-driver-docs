@@ -3,11 +3,7 @@ title: WDI_TLV_ANQP_ELEMENTS
 author: windows-driver-content
 description: WDI_TLV_ANQP_ELEMENTS is an unused TLV.
 ms.assetid: 84B0987B-9CF1-432D-A290-1BC75BCAEFED
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ANQP_ELEMENTS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

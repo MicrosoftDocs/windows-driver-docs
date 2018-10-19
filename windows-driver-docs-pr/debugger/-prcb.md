@@ -5,9 +5,6 @@ ms.assetid: 747695a1-8a5d-4d30-9315-91f4bf7f568e
 keywords: ["processor control block", "prcb Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!prcb** extension displays the processor control block (PRCB).
 
-```
+```dbgcmd
 !prcb [Processor]
 ```
 
@@ -64,7 +61,7 @@ The PRCB is an extension of the processor control region (PCR). To display the P
 
 Here is an example:
 
-```
+```dbgcmd
 kd> !prcb
 PRCB for Processor 0 at e0000000818ba000:
 Threads--  Current e0000000818bbe10 Next 0000000000000000 Idle e0000000818bbe10

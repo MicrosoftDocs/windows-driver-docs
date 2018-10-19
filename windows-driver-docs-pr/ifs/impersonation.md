@@ -7,11 +7,7 @@ keywords:
 - security WDK file systems , adding security checks
 - security checks WDK file systems , impersonation
 - impersonation WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,7 +39,7 @@ The key routines needed for impersonation include:
 
 Impersonation is straight-forward to implement. The following code example demonstrates basic impersonation:
 
-```
+```cpp
 NTSTATUS PerformSpecialTask(IN PFSD_CONTEXT Context)
 {
   BOOLEAN CopyOnOpen;

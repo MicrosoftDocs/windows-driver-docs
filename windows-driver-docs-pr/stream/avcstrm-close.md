@@ -9,11 +9,7 @@ api_name:
 - AVCSTRM_CLOSE
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -72,7 +68,7 @@ Possible error return values include:
 
 This function uses the **AVCStreamContext** member of the **CommandData** union in the AVC\_STREAM\_REQUEST\_BLOCK structure as shown below.
 
-```
+```cpp
 typedef struct _AVC_STREAM_REQUEST_BLOCK {
   ULONG  SizeOfThisBlock;
   ULONG  Version;
@@ -99,7 +95,7 @@ Specifies the stream context (handle) of the stream to close. If **AVCSTRM\_CLOS
 
 The following is an example of how to specify the stream to close:
 
-```
+```cpp
     pAVCStrmReq = &amp;pStrmExt->AVCStrmReq;
     RtlZeroMemory(pAVCStrmReq, sizeof(AVC_STREAM_REQUEST_BLOCK));
     INIT_AVCSTRM_HEADER(pAVCStrmReq, AVCSTRM_CLOSE);

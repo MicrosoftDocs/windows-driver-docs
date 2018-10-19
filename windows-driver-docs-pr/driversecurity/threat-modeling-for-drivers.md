@@ -2,11 +2,7 @@
 title: Threat modeling for drivers
 description: Driver writers and architects should make threat modeling an integral part of the design process for any driver. This article provides guidelines for creating threat models for drivers for the Microsoft Windows family of operating systems.
 ms.assetid: 77FB242E-A07C-4298-80ED-866F8D80118C
-ms.author: windowsdriverdev
 ms.date: 06/27/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -305,7 +301,7 @@ For more information about the SDL process, see these additional resources:
 
 -   This blog describes how to download a free copy of *The Security Development Lifecycle: SDL*, by Michael Howard and Steve Lipner. <https://blogs.msdn.microsoft.com/microsoft_press/2016/04/19/free-ebook-the-security-development-lifecycle/>
 
--   This page provides links to additional SDL publications. <https://www.microsoft.com/en-us/SDL/Resources/publications.aspx>
+-   This page provides links to additional SDL publications. <https://www.microsoft.com/SDL/Resources/publications.aspx>
 
 
 

@@ -9,11 +9,7 @@ api_name:
 - wscn PlatenMinimumSize
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **PlatenMinimumSize** element specifies the smallest size document 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:PlatenMinimumSize>
   child elements
 </wscn:PlatenMinimumSize>
@@ -84,7 +80,7 @@ The [**Width**](width.md) child element specifies the minimum size of media that
 
 All media dimensions are measured in one-thousandths (1/1000) of an inch. The possible values for both **Width** and **Height** range from 1 through 2147483648.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Height**](height.md)

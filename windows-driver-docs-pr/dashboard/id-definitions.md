@@ -2,11 +2,7 @@
 title: Windows Hardware Dev Center Dashboard ID Definitions
 description: Windows Hardware Dev Center Dashboard ID Definitions
 ms.assetid: 
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -60,6 +56,7 @@ Shipping Label ID | This identifier is used for internal tracking, and is assign
 Promotion Request ID | If your Shipping Label requires a manual review from Microsoft, it will be given a Promotion Request ID. This represents your unique shipping label in the Driver Shiproom. You should include this Id in any support inquiry.
 
 ## <span id="related_topics"></span>Related topics
-[Manage your hardware submissions](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/manage-your-hardware-submissions)
 
-[Manage driver distribution with shipping labels](https://msdn.microsoft.com/en-us/windows/hardware/drivers/dashboard/manage-driver-distribution-by-submission)
+- [Manage your hardware submissions](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/manage-your-hardware-submissions)
+
+- [Manage driver distribution with shipping labels](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/manage-driver-distribution-by-submission)

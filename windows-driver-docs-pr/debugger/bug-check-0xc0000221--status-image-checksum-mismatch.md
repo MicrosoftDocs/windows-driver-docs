@@ -5,9 +5,6 @@ ms.assetid: d0baccb0-51a2-45c7-ae08-507217d0ac96
 keywords: ["Bug Check 0xC0000221 STATUS_IMAGE_CHECKSUM_MISMATCH", "STATUS_IMAGE_CHECKSUM_MISMATCH"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

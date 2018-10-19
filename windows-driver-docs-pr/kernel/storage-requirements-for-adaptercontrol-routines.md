@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Storage Requirements for AdapterControl Routines
 ms.assetid: 5e5711df-9acd-4ac5-b6b2-4e90299afb24
 keywords: ["AdapterControl routines, storage", "AdapterControl routines, writing", "adapter objects WDK kernel , writing AdapterControl routines", "DMA transfers WDK kernel , writing AdapterControl routines", "storage WDK DMA"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

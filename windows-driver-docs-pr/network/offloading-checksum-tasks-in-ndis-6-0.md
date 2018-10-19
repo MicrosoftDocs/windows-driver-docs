@@ -8,11 +8,7 @@ keywords:
 - TCP/IP offload service porting WDK networking , checksum tasks
 - offload service porting WDK networking , checksum tasks
 - porting task offload services WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: e2cf8a01-2099-4ad7-98ac-1a20c76a2e0a
 keywords: ["DbgEng Extensions, building", "Build utility (build.exe), building DbgEng extensions"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +26,7 @@ To build an extension, use the following procedure:
 
 2.  Check the include and lib file project settings. If *%debuggers%* represents the root of your Debugging Tools for Windows installation, they should be set as follows:
 
-    ```
+    ```text
     Include Path 
     %debuggers%\sdk\inc
     Library Path

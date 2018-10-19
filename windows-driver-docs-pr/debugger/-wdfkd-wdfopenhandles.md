@@ -5,9 +5,6 @@ ms.assetid: 9b62a80a-6f53-4581-98b7-8eb5f9f146c2
 keywords: ["wdfkd.wdfopenhandles Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfopenhandles** extension displays information about all the handles that are open on the specified WDF device.
 
-```
+```dbgcmd
 !wdfkd.wdfopenhandles Handle [Flags]
 ```
 

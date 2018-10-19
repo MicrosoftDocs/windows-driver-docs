@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Including GUIDs in Driver Code
 ms.assetid: 9235f9e6-9c40-4c4b-a98b-99e6b46a11ce
 keywords: ["globally unique identifiers WDK kernel", "GUIDs WDK kernel", "identifiers WDK GUIDs"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +26,7 @@ To use GUIDs in a kernel-mode driver, you must do two things:
 
 The following code excerpt shows the sequence of statements for including GUIDs:
 
-```
+```cpp
 :
 // include system headers here such as wdm.h
  

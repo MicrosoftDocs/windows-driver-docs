@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Using IoConnectInterruptEx Prior to Windows Vista
 ms.assetid: a08b2869-93f8-440b-9fbe-068604c6007d
 keywords: ["IoConnectInterruptEx", "iointex.h", "line-based interrupts WDK kernel", "message-signaled interrupts WDK kernel", "CONNECT_LINE_BASED", "CONNECT_MESSAGE_BASED", "CONNECT_FULLY_SPECIFIED"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ Using this behavior, you can write your driver so that it uses CONNECT\_LINE\_BA
 
 The following code example illustrates the technique:
 
-```
+```cpp
 IO_CONNECT_INTERRUPT_PARAMETERS params;
 
 // deviceExtension is a pointer to the driver&#39;s device extension. 

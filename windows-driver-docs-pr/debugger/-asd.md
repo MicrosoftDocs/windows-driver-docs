@@ -5,9 +5,6 @@ ms.assetid: fb0eeedd-d50b-4385-b35f-4ac46fb97ce0
 keywords: ["failure analysis entries, display from data cache", "asd Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

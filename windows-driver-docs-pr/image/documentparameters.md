@@ -9,11 +9,7 @@ api_name:
 - wscn DocumentParameters
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **DocumentParameters** element specifies the image processing funct
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:DocumentParameters>
   child elements
 </wscn:DocumentParameters>
@@ -116,7 +112,7 @@ A client can optionally provide document processing parameters within the **Scan
 
 The WSD Scan Servie should use its default **DocumentParameters** values if the client does not provide any.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CompressionQualityFactor**](compressionqualityfactor.md)

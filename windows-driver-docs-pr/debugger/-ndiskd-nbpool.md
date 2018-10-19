@@ -5,9 +5,6 @@ ms.assetid: 4FCD48B7-C469-4057-A279-20522B00E80B
 keywords: ["ndiskd.nbpool Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

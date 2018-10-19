@@ -3,6 +3,7 @@ title: ISCSI\_PortalInfo WMI Class
 description: ISCSI\_PortalInfo WMI Class
 ms.assetid: b38aa87c-00a5-483e-aa44-23f359783829
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # ISCSI\_PortalInfo WMI Class
@@ -13,7 +14,7 @@ ms.localizationpriority: medium
 
 The ISCSI\_PortalInfo WMI class contains information that is related to an iSCSI portal. This class is defined as follows in *Mgmt.mof*.
 
-```
+```cpp
 class ISCSI_PortalInfo
 {
     [read,

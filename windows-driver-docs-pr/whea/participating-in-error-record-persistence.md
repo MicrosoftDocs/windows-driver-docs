@@ -11,11 +11,7 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , error record persistence
 - PSHED plug-ins WDK WHEA , error record persistence
 - error record persistence WDK WHEA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +28,7 @@ To participate in error record persistence, a PSHED plug-in must implement the f
 
 The following code example shows how to implement these callback functions.
 
-```
+```cpp
 //
 // The PSHED plug-in&#39;s WriteErrorRecord callback function
 //

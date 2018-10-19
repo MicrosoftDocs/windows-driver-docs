@@ -4,6 +4,7 @@ author: windows-driver-content
 description: Libraries and Headers
 ms.assetid: 0d4d0273-775f-4cbb-8b7f-63b22f3ccdae
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Libraries and Headers

@@ -780,6 +780,19 @@
     href: using-linq-with-the-debugger-objects.md
   - name: "Debugger Data Model Function Aliases"
     href: debugger-data-model-function-aliases.md
+  - name: "Debugger Data Model C++ Overview"
+    href: data-model-cpp-overview.md
+    items: 
+    - name: "Debugger Data Model C++ Interfaces"
+      href: data-model-cpp-interfaces.md
+    - name: "Debugger Data Model C++ Objects"
+      href: data-model-cpp-objects.md
+    - name: "Debugger Data Model C++ Additional Interfaces"
+      href: data-model-cpp-additional-interfaces.md
+    - name: "Debugger Data Model C++ Concepts"
+      href: data-model-cpp-concepts.md
+    - name: "Debugger Data Model C++ Scripting"
+      href: data-model-cpp-scripting.md
   - name: "Glossary"
     href: glossary.md
     items: 
@@ -3730,8 +3743,8 @@
           href: -usb3kd-xhci-dumpall.md
         - name: "!usb3kd.xhci_eventring"
           href: -usb3kd-xhci-eventring.md
-        - name: "!xhci_findowner"
-          href: -xhci-findowner.md
+        - name: "!usb3kd.xhci_findowner"
+          href: -usb3kd-xhci-findowner.md
         - name: "!usb3kd.xhci_info"
           href: -usb3kd-xhci-info.md
         - name: "!usb3kd.xhci_registers"

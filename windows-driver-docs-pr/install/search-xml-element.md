@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # search XML Element
@@ -21,7 +22,7 @@ The **search** XML element directs DPInst to search recursively for INF files in
 
 ### Element Tag
 
-```
+```cpp
 <search>
 ```
 
@@ -62,7 +63,7 @@ None
 
 The following code example demonstrates a **search** element that contains one **subDirectory** XML element that specifies the *i386* subdirectory. DPInst will recursively search for [driver packages](https://msdn.microsoft.com/library/windows/hardware/ff544840) in the *i386* subdirectory of the DPInst working directory. The text that specifies the custom subdirectory is shown in bold font style.
 
-```
+```cpp
 <dpinst>
   ...
   <search>

@@ -5,9 +5,6 @@ ms.assetid: 495faabb-48d1-4d5d-b454-74ecbc200a2e
 keywords: ["Window MDI Emulation"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

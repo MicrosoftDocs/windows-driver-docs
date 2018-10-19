@@ -7,11 +7,7 @@ keywords:
 - printer commands WDK Unidrv , strings
 - command strings WDK Unidrv
 - strings WDK Unidrv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,7 +31,7 @@ Unidrv supports a maximum of 14 quoted text strings and command arguments in a c
 
 As an example, a printer's command to set a rectangle's gray fill percentage might be specified as follows:
 
-```
+```cpp
 *Command: CmdRectGrayFill: "<1B>*c" %d{GrayPercentage} "g2P"
 ```
 

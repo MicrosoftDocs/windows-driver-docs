@@ -5,9 +5,6 @@ ms.assetid: a763e865-8591-4ed3-b3cd-1cdaecad6e97
 keywords: ["Bug Check 0xA0 INTERNAL_POWER_ERROR", "INTERNAL_POWER_ERROR"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -463,7 +460,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>The index of the selected idle state of the processor</p></td>
 <td align="left"><p>The idle synchronization state of the processor</p></td>
 <td align="left"><p>The PRCB address of the hung processor</p></td>
-<td align="left"><p>A processor woke up from a non-interruptible state without the the OS initiating an explicit wake through the PEP (using the necessary PPM idle synchronization).</p></td>
+<td align="left"><p>A processor woke up from a non-interruptible state without the OS initiating an explicit wake through the PEP (using the necessary PPM idle synchronization).</p></td>
 </tr>
 </tbody>
 </table>

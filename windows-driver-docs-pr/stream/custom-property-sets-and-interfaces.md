@@ -10,11 +10,7 @@ keywords:
 - capturing video WDK AVStream , property sets
 - property sets WDK video capture
 - custom interfaces WDK video capture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,7 +37,7 @@ The following code demonstrates an implementation of IAMCameraControl:
 
 **Camera.h**
 
-```
+```cpp
 /*
 Implements IAMCameraControl via KSPROPERTY_VIDCAP_CAMERACONTROL
 */
@@ -79,7 +75,7 @@ private:
 
 **Camera.cpp**
 
-```
+```cpp
 /*
 Implements IAMCameraControl via KSPROPERTY_VIDCAP_CAMERACONTROL
 */
@@ -170,7 +166,7 @@ CCameraControlInterfaceHandler::NonDelegatingQueryInterface(
 
 **MyINF.inf**
 
-```
+```INF
 ;IAMCameraControl
 HKCR,CLSID\{C6E13370-30AC-11d0-A18C-00A0C9118956},,,%PlugIn_IAMCameraControl%
 HKCR,CLSID\{C6E13370-30AC-11d0-A18C-00A0C9118956}\InprocServer32,,,kswdmcap.ax

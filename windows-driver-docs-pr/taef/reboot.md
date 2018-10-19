@@ -2,11 +2,7 @@
 title: Reboot
 description: Reboot
 ms.assetid: 8AB66CAB-9BAA-4911-A143-618627226B78
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,7 +43,7 @@ The **Option** parameter specifies the resume behavior, one of:
 
 Access the Reboot APIs by including the Interruption.h header and calling the functions in the **WEX::TestExecution::Interruption** namespace. The four possible calls are:
 
-```
+```cpp
 using namespace WEX::TestExecution;
 Interruption::Reboot(RebootOption::Rerun);
 Interruption::Reboot(RebootOption::Continue);
@@ -59,7 +55,7 @@ Interruption::RebootCustom(RebootOption::Continue);
 
 Call either of the two methods in the **Interruption** static class in the **WEX.TestExecution** namespace, which is located within **Te.Managed.dll**:
 
-```
+```cpp
 using WEX.TestExecution;
 Interruption.Reboot(RebootOption.Rerun);
 Interruption.Reboot(RebootOption.Continue);
