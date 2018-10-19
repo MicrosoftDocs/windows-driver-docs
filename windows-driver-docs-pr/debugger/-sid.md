@@ -21,7 +21,7 @@ The **!sid** extension displays the security identifier (SID) at the specified a
 
 Syntax
 
-```
+```dbgcmd
 !sid Address [Flags] 
 ```
 
@@ -49,7 +49,7 @@ Remarks
 
 Here are two examples, one without the friendly name shown, and one with:
 
-```
+```dbgcmd
 kd> !sid 0xe1bf35b8
 SID is: S-1-5-21-518066528-515770016-299552555-513
 

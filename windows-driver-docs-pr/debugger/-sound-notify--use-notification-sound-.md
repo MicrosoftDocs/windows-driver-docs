@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.sound\_notify** command causes a sound to be played when WinDbg enters the wait-for-command state.
 
-```
+```dbgcmd
 .sound_notify /ed 
 .sound_notify /ef File 
 .sound_notify /d 

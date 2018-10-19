@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 
 The **!wudfext.umdevstacks** extension displays information about all device stacks in the current host process.
 
-```
+```dbgcmd
 !wudfext.umdevstacks [Flags] 
-```
+```dbgcmd
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -69,7 +69,7 @@ The **!wudfext.umdevstacks** output includes two fields entitled "Object Trackin
 
 Here is an example of the **!wudfext.umdevstacks** display:
 
-```
+```dbgcmd
 0: kd> !umdevstacks 
 Number of device stacks: 1
   Device Stack: 0x038c6f08    Pdo Name: \Device\USBPDO-11

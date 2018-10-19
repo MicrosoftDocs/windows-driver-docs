@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!pars** extension displays a specified processor application registers file.
 
-```
+```dbgcmd
 !pars Address
 ```
 

@@ -19,9 +19,8 @@ ms.localizationpriority: medium
 
 The .nvunload command unloads a NatVis file from the debugger environment.
 
-```
-.nvunload FileName|ModuleName 
-   
+```dbgcmd
+.nvunload FileName|ModuleName  
 ```
 
 <span id="_______FileName___ModuleName______"></span><span id="_______filename___modulename______"></span><span id="_______FILENAME___MODULENAME______"></span> *FileName | ModuleName*   

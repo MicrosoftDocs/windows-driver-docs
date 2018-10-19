@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!rpcexts.eeinfo** extension displays the extended error information chain.
 
-```
+```dbgcmd
 !rpcexts.eeinfo EEInfoAddress
 ```
 

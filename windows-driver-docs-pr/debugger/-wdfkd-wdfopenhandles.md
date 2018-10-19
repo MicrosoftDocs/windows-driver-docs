@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfopenhandles** extension displays information about all the handles that are open on the specified WDF device.
 
-```
+```dbgcmd
 !wdfkd.wdfopenhandles Handle [Flags]
 ```
 

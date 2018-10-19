@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfusbinterface** extension displays information about a specified Kernel-Mode Driver Framework (KMDF) USB interface object, including its possible and current settings.
 
-```
+```dbgcmd
 !wdfkd.wdfusbinterface Handle [Flags]
 ```
 

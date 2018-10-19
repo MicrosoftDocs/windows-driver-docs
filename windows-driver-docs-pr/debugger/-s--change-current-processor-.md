@@ -21,7 +21,7 @@ The **~s** command sets which processor is debugged on a multiprocessor system.
 
 In kernel mode, **~s** changes the current processor. Do not confuse this command with the [**~s (Set Current Thread)**](-s--set-current-thread-.md) command (which works only in user mode), the [**|s (Set Current Process)**](-s--set-current-process-.md) command, the [**||s (Set Current System)**](--s--set-current-system-.md) command, or the [**s (Search Memory)**](s--search-memory-.md) command.
 
-```
+```dbgcmd
 ~Processor s
 ```
 
@@ -63,13 +63,13 @@ You can specify processors only in kernel mode. In user mode, the tilde (~) refe
 
 You can immediately tell when you are working on a multiple processor system by the shape of the kernel debugging prompt. In the following example, 0: means that you are debugging the first processor in the computer.
 
-```
+```dbgcmd
 0: kd>
 ```
 
 Use the following command to switch between processors:
 
-```
+```dbgcmd
 0: kd> ~1s
 1: kd>
 ```

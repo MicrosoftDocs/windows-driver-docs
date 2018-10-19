@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfumdevstack** extension displays detailed information about a UMDF device stack in the [implicit process](controlling-threads-and-processes.md).
 
-```
+```dbgcmd
 !wdfkd.wdfumdevstack DevstackAddress [Flags] 
 ```
 
@@ -62,7 +62,7 @@ This command displays the same information as the user-mode command [**!wudfext.
 
 Here is an example of how to use **!wdfumdevstack**. First use [**!wdfumdevstacks**](-wdfkd-wdfumdevstacks.md) to display the UMDF device stacks in the implicit process.
 
-```
+```dbgcmd
 0: kd> !wdfkd.wdfumdevstacks
 Number of device stacks: 1
   Device Stack: 0x000000a5a3ab5f70     Pdo Name: \Device\00000052
@@ -82,7 +82,7 @@ The preceding output shows that there is one UMDF device stack in the implicit p
 
 The preceding output displays the address of a device stack (0x000000a5a3ab5f70). To get detailed information about the device stack, pass its address to **!wdfumdevstack**. In this example, we set the *Flags* parameter to 0x80 to include information about the framework.
 
-```
+```dbgcmd
 0: kd> !wdfkd.wdfumdevstack 0x000000a5a3ab5f70 0x80
   Device Stack: 0x000000a5a3ab5f70     Pdo Name: \Device\00000052
     Active: Yes

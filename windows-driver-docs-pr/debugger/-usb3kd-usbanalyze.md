@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The [**!usb3kd.usbanalyze**](-usb3kd-device-info.md) extension analyzes a USB 3.0 bug check.
 
-```
+```dbgcmd
 !usb3kd.usbanalyze [-v]
 ```
 
@@ -39,7 +39,7 @@ Usb3kd.dll
 
 [USB 3.0 Extensions](usb-3-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
 [**BUGCODE\_USB3\_DRIVER**](bug-check-0x144--bugcode-usb3-driver.md)
 

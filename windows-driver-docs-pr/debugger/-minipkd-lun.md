@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!minipkd.lun** extension displays detailed information about the specified Logical Unit Extension (LUN).
 
-```
+```dbgcmd
 !minipkd.lun LUN 
 !minipkd.lun Device 
 ```

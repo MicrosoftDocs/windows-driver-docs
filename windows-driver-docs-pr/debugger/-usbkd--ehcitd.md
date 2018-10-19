@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.\_ehcitd** command displays information from a **usbehci!\_TRANSFER\_CONTEXT** structure. Use this command to display information about asynchronous endpoints (that is, control and bulk endpoints).
 
-```
+```dbgcmd
 !usbkd._ehcitd StructAddr
 ```
 
@@ -39,7 +39,7 @@ Examples
 
 This example shows one way to get the address of a **usbehci!\_TRANSFER\_CONTEXT** structure. Use [**!\_ehciep**](-usbkd--ehciep.md) to display information about an endpoint.
 
-```
+```dbgcmd
 0: kd> !_ehciep ffffe000001ab618
 *USBEHCI
 dt usbehci!_ENDPOINT_DATA ffffe000001ab618
@@ -62,7 +62,7 @@ slot[0] dt usbehci!_ENDPOINT_SLOT ffffe000001ab798 - slot_NotBusy
 
 In the preceding output, `ffffd00021e65100` is the address of a **usbehci!\_TRANSFER\_CONTEXT** structure. Pass this address to **!\_ehcitd**.
 
-```
+```dbgcmd
 0: kd> !_ehcitd ffffd00021e65100
 *USBEHCI TD 21e65100
 Sig 20td
@@ -106,7 +106,7 @@ SlotNextHcdTD: 21e65200
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

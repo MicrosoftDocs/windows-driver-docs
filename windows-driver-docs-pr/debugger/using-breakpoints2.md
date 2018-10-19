@@ -8,7 +8,7 @@ ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
 
-# Using Breakpoints
+# Using Breakpoints with the Debugger Engine API
 
 
 ## <span id="ddk_breakpoints_dbx"></span><span id="DDK_BREAKPOINTS_DBX"></span>

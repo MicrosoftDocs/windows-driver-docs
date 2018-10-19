@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wudfext.umirp** extension displays information about a host user-mode I/O request packet (UM IRP).
 
-```
+```dbgcmd
 !wudfext.umirp Address
 ```
 
@@ -65,7 +65,7 @@ Each UM IRP has one or more stack locations. Each stack location corresponds to 
 
 The following is an example of the **!wudfext.umirp** display:
 
-```
+```dbgcmd
 kd> !umirp 3dd480 
 UM IRP: 0x003dd480  UniqueId: 0xde  Kernel Irp: 0x0x85377850
   Type: WudfMsg_READ

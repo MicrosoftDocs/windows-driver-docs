@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfldr** extension displays information about the drivers that are currently dynamically bound to the Windows Driver Frameworks. This includes both the Kernel-Mode Driver Framework (KMDF) and the User-Mode Driver Framework (UMDF).
 
-```
+```dbgcmd
 !wdfkd.wdfldr [DriverName]
 ```
 
@@ -46,7 +46,7 @@ Remarks
 
 Here is an example of the output of **!wdfldr**.
 
-```
+```dbgcmd
 ## 0: kd> !wdfkd.wdfldr
 
 ##  KMDF Drivers
@@ -81,7 +81,7 @@ LIBRARY_MODULE  0xffffe0000039f7c0
 
 Here is another example that supplies a driver name.
 
-```
+```dbgcmd
 0: kd> !wdfldr MyUmdf2Driver.dll
 
 Version    v2.0

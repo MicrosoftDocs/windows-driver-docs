@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!teb** extension displays a formatted view of the information in the thread environment block (TEB).
 
-```
+```dbgcmd
 !teb [TEB-Address] 
 ```
 
@@ -46,7 +46,7 @@ If the **!teb** extension with no argument gives you an error in kernel mode, yo
 
 Here is an example of this command's output in user mode:
 
-```
+```dbgcmd
 0:001> ~
    0  id: 324.458   Suspend: 1 Teb 7ffde000 Unfrozen
 .  1  id: 324.48c   Suspend: 1 Teb 7ffdd000 Unfrozen

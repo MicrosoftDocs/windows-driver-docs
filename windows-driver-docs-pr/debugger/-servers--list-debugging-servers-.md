@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.servers** command lists all debugging servers that have been established by this debugger.
 
-```
+```dbgcmd
 .servers 
 ```
 

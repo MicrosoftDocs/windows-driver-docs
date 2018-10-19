@@ -33,7 +33,7 @@ Use *Source Mode* buttons to toggle between source code and assembly views.
 
 Use *Help* buttons to do the following:
 - Review Help
-- Send Feedback (For more information on sending feedback to improve WinDbg, see [Providing feedback](debugging-using-windbg-preview.md#providingfeedback).) 
+- Send Feedback (For more information on sending feedback to improve WinDbg, see [Providing feedback](debugging-using-windbg-preview.md#providing-feedback).) 
 
  
 ## See Also

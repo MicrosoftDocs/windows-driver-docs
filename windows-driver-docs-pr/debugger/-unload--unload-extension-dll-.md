@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.unload** command unloads an extension DLL from the debugger.
 
-```
+```dbgcmd
 .unload DLLName 
 !DLLName.unload
 ```

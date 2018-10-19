@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!scsikd.srbdata** extension displays the specified SRB\_DATA tracking block.
 
-```
+```dbgcmd
 !scsikd.srbdata Address 
 ```
 

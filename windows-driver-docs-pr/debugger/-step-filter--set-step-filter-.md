@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.step\_filter** command creates a list of functions that are skipped (stepped over) when tracing. This allows you to trace through code and skip only certain functions. It can also be used in source mode to control stepping when there are multiple function calls on one line.
 
-```
+```dbgcmd
 .step_filter "FilterList" 
 .step_filter /c 
 .step_filter 
@@ -70,7 +70,7 @@ If the instruction pointer is located within code that is listed in the filter l
 
 For example, the following command will cause trace commands to skip over all CRT calls:
 
-```
+```dbgcmd
 .step_filter "msvcrt!*" 
 ```
 
@@ -78,7 +78,7 @@ The **.step\_filter** command is most useful when you are debugging in source mo
 
 For example, in the following line, the [**t**](t--trace-.md) command will step into both GetTickCount and printf, while the [**p**](p--step-.md) command will step over both function calls:
 
-```
+```dbgcmd
 printf( "%x\n", GetTickCount() );
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ubp** extension sets a breakpoint in user space.
 
-```
+```dbgcmd
 !ubp Address 
 ```
 

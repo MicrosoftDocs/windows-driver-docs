@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfumirp** extension displays information about a user-mode I/O request packet (UM IRP).
 
-```
+```dbgcmd
 !wdfkd.wdfumirp Address
 ```
 
@@ -55,7 +55,7 @@ You can use [**!process**](-process.md) to get a list of all UMDF host processes
 
 The following shows how to use [**!wdfkd.wdfumirps**](-wdfkd-wdfumirps.md) and **!wdfkd.wdfumirp** to display information about an individual UM IRP.
 
-```
+```dbgcmd
 0: kd> !wdfkd.wdfumirps
 Number of pending IRPS: 0x4
 ####  CWudfIrp     Current Type           UniqueId KernelIrp         Device Stack

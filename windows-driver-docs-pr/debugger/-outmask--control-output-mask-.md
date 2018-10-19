@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.outmask** command controls the current output mask.
 
-```
+```dbgcmd
 .outmask[-] [/l] Expression 
 .outmask /a 
 .outmask /d

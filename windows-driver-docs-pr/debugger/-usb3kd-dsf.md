@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The [**!usb3kd.dsf**](-usb3kd-device-info.md) extension is a toggle command that sets the debugger context to debug the DSF host driver.
 
-```
+```dbgcmd
 !usb3kd.dsf
 ```
 
@@ -33,7 +33,7 @@ Usb3kd.dll
 
 [USB 3.0 Extensions](usb-3-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

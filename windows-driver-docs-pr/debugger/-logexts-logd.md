@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!logexts.logd** extension disables logging.
 
-```
+```dbgcmd
     !logexts.logd 
 ```
 

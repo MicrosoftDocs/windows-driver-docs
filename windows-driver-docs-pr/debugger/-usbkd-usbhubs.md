@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbhubs** command displays information about USB hubs.
 
-```
+```dbgcmd
 !usbkd.usbhubs a[v]
 !usbkd.usbhubs x[v]
 !usbkd.usbhubs r[v]
@@ -50,7 +50,7 @@ Examples
 
 Here is an example of verbose output from the **!usbhubs** command.
 
-```
+```dbgcmd
 0: kd> !usbkd.usbhubs rv
 
 args 'rv'
@@ -109,7 +109,7 @@ On Host Controller (0x8086, 0x2937)
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

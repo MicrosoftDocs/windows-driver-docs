@@ -21,7 +21,7 @@ The **!session** extension controls the session context. It can also display a l
 
 Syntax
 
-```
+```dbgcmd
 !session 
 !session -s DefaultSession 
 !session -?

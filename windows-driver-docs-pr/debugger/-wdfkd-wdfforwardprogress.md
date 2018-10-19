@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfforwardprogress** extension displays information about the forward progress of a specified framework queue object.
 
-```
+```dbgcmd
 !wdfkd.wdfforwardprogress Handle
 ```
 
@@ -48,7 +48,7 @@ This extension will succeed only if the specified framework queue object is conf
 
 The following example shows the display from a **!wdfkd.wdfforwardprogress** extension.
 
-```
+```dbgcmd
 kd> !wdfkd.wdfforwardprogress 0x79af3250 
 
 # Dumping forward progress fields for WDFQUEUE 0x79af3250

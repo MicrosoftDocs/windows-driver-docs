@@ -57,7 +57,7 @@ After you have set up your host and target computer and connected them with a de
 
 4.  Near the bottom of the WinDbg window, in the command line, enter this command:
 
-    [**.sympath srv\***](http://go.microsoft.com/fwlink/p?linkid=399238)
+    [**.sympath srv\***](https://go.microsoft.com/fwlink/p?linkid=399238)
 
     The output is similar to this:
 
@@ -70,11 +70,11 @@ After you have set up your host and target computer and connected them with a de
 
     Enter this command, which tells WinDbg to do its initial finding and loading of symbol files:
 
-    [**.reload**](http://go.microsoft.com/fwlink/p?linkid=399239)
+    [**.reload**](https://go.microsoft.com/fwlink/p?linkid=399239)
 
 5.  To see a list of loaded modules, enter this command:
 
-    [**lm**](http://go.microsoft.com/fwlink/p?linkid=399237)
+    [**lm**](https://go.microsoft.com/fwlink/p?linkid=399237)
 
     The output is similar to this:
 
@@ -93,13 +93,13 @@ After you have set up your host and target computer and connected them with a de
 
 6.  To start target computer running, enter this command:
 
-    [**g**](http://go.microsoft.com/fwlink/p?linkid=399388)
+    [**g**](https://go.microsoft.com/fwlink/p?linkid=399388)
 
 7.  To break in again, choose **Break** from the **Debug** menu.
 
 8.  Enter this command to examine the \_FILE\_OBJECT data type in the nt module:
 
-    [**dt nt!\_FILE\_OBJECT**](http://go.microsoft.com/fwlink/p?linkid=399397)
+    [**dt nt!\_FILE\_OBJECT**](https://go.microsoft.com/fwlink/p?linkid=399397)
 
     The output is similar to this:
 
@@ -116,7 +116,7 @@ After you have set up your host and target computer and connected them with a de
 
 9.  Enter this command to examine some of the symbols in the nt module:
 
-    [**x nt!\*CreateProcess\***](http://go.microsoft.com/fwlink/p?linkid=399240)
+    [**x nt!\*CreateProcess\***](https://go.microsoft.com/fwlink/p?linkid=399240)
 
     The output is similar to this:
 
@@ -131,11 +131,11 @@ After you have set up your host and target computer and connected them with a de
 
 10. Enter this command to put a breakpoint at **MmCreateProcessAddressSpace**:
 
-    [**bu nt!MmCreateProcessAddressSpace**](http://go.microsoft.com/fwlink/p?linkid=399390)
+    [**bu nt!MmCreateProcessAddressSpace**](https://go.microsoft.com/fwlink/p?linkid=399390)
 
     To verify that the breakpoint is set, enter this command:
 
-    [**bl**](http://go.microsoft.com/fwlink/p?linkid=399391)
+    [**bl**](https://go.microsoft.com/fwlink/p?linkid=399391)
 
     The output is similar to this:
 
@@ -145,13 +145,13 @@ After you have set up your host and target computer and connected them with a de
     0 e fffff800`02e03904     0001 (0001) nt!MmCreateProcessAddressSpace
     ```
 
-    Enter [**g**](http://go.microsoft.com/fwlink/p?linkid=399388) to let the target computer run.
+    Enter [**g**](https://go.microsoft.com/fwlink/p?linkid=399388) to let the target computer run.
 
 11. If the target computer doesn't break in to the debugger immediately, perform a few actions on the target computer (for example, open Notepad). The target computer will break in to the debugger when **MmCreateProcessAddressSpace** is called. To see the stack trace, enter these commands:
 
-    [**.reload**](http://go.microsoft.com/fwlink/p?linkid=399239)
+    [**.reload**](https://go.microsoft.com/fwlink/p?linkid=399239)
 
-    [**k**](http://go.microsoft.com/fwlink/p?linkid=399389)
+    [**k**](https://go.microsoft.com/fwlink/p?linkid=399389)
 
     The output is similar to this:
 
@@ -172,13 +172,13 @@ After you have set up your host and target computer and connected them with a de
 
 13. Clear your breakpoint by entering this command:
 
-    [**bc \***](http://go.microsoft.com/fwlink/p?linkid=399401)
+    [**bc \***](https://go.microsoft.com/fwlink/p?linkid=399401)
 
-    Enter [**g**](http://go.microsoft.com/fwlink/p?linkid=399388) to let the target computer run. Break in again by choosing **Break** from the **Debug** menu or pressing **CTRL-Break**.
+    Enter [**g**](https://go.microsoft.com/fwlink/p?linkid=399388) to let the target computer run. Break in again by choosing **Break** from the **Debug** menu or pressing **CTRL-Break**.
 
 14. To see a list of all processes, enter this command:
 
-    [**!process 0 0**](http://go.microsoft.com/fwlink/p?linkid=399241)
+    [**!process 0 0**](https://go.microsoft.com/fwlink/p?linkid=399241)
 
     The output is similar to this:
 
@@ -203,7 +203,7 @@ After you have set up your host and target computer and connected them with a de
 
 15. Copy the address of one process, and enter this command:
 
-    [**!process** *Address* **2**](http://go.microsoft.com/fwlink/p?linkid=399241)
+    [**!process** *Address* **2**](https://go.microsoft.com/fwlink/p?linkid=399241)
 
     For example: **!process ffffe00000d5290 2**
 
@@ -230,7 +230,7 @@ After you have set up your host and target computer and connected them with a de
 
 16. Copy the address of one thread, and enter this command:
 
-    [**!thread** *Address*](http://go.microsoft.com/fwlink/p?linkid=399244)
+    [**!thread** *Address*](https://go.microsoft.com/fwlink/p?linkid=399244)
 
     For example: **!thread ffffe00000e6d080**
 
@@ -257,7 +257,7 @@ After you have set up your host and target computer and connected them with a de
 
 17. To see all the device nodes in the Plug and Play device tree, enter this command:
 
-    [**!devnode 0 1**](http://go.microsoft.com/fwlink/p?linkid=399242)
+    [**!devnode 0 1**](https://go.microsoft.com/fwlink/p?linkid=399242)
 
     ```
     0:000>0: kd> !devnode 0 1
@@ -282,7 +282,7 @@ After you have set up your host and target computer and connected them with a de
 
 18. To see the device nodes along with their hardware resources, enter this command:
 
-    [**!devnode 0 9**](http://go.microsoft.com/fwlink/p?linkid=399242)
+    [**!devnode 0 9**](https://go.microsoft.com/fwlink/p?linkid=399242)
 
     ```
     0:000>...
@@ -306,7 +306,7 @@ After you have set up your host and target computer and connected them with a de
 
 19. To see a device node that has a service name of disk, enter this command:
 
-    [**!devnode 0 1 disk**](http://go.microsoft.com/fwlink/p?linkid=399242)
+    [**!devnode 0 1 disk**](https://go.microsoft.com/fwlink/p?linkid=399242)
 
     ```
     0: kd> !devnode 0 1 disk
@@ -319,9 +319,9 @@ After you have set up your host and target computer and connected them with a de
     ...
     ```
 
-20. The output of [**!devnode 0 1**](http://go.microsoft.com/fwlink/p?linkid=399242) displays the address of the physical device object (PDO) for the node. Copy the address of a physical device object (PDO), and enter this command:
+20. The output of [**!devnode 0 1**](https://go.microsoft.com/fwlink/p?linkid=399242) displays the address of the physical device object (PDO) for the node. Copy the address of a physical device object (PDO), and enter this command:
 
-    [**!devstack** *PdoAddress*](http://go.microsoft.com/fwlink/p?linkid=399245)
+    [**!devstack** *PdoAddress*](https://go.microsoft.com/fwlink/p?linkid=399245)
 
     For example: *PdoAddress***!devstack 0xffffe00001159610**
 
@@ -335,7 +335,7 @@ After you have set up your host and target computer and connected them with a de
 
 21. To get information about the driver disk.sys, enter this command:
 
-    [**!drvobj disk 2**](http://go.microsoft.com/fwlink/p?linkid=399246)
+    [**!drvobj disk 2**](https://go.microsoft.com/fwlink/p?linkid=399246)
 
     ```
     0:000>0: kd> !drvobj disk 2
@@ -357,17 +357,17 @@ After you have set up your host and target computer and connected them with a de
 
 22. The output of !drvobj displays addresses of dispatch routines: for example, CLASSPNP!ClassGlobalDispatch. To set and verify a breakpoint at ClassGlobalDispatch, enter these commands:
 
-    [**bu CLASSPNP!ClassGlobalDispatch**](http://go.microsoft.com/fwlink/p?linkid=399390)
+    [**bu CLASSPNP!ClassGlobalDispatch**](https://go.microsoft.com/fwlink/p?linkid=399390)
 
-    [**bl**](http://go.microsoft.com/fwlink/p?linkid=399391)
+    [**bl**](https://go.microsoft.com/fwlink/p?linkid=399391)
 
     Enter g to let the target computer run.
 
     If the target computer doesn't break in to the debugger immediately, perform a few actions on the target computer (for example, open Notepad and save a file). The target computer will break in to the debugger when **ClassGlobalDispatch** is called. To see the stack trace, enter these commands:
 
-    [**.reload**](http://go.microsoft.com/fwlink/p?linkid=399239)
+    [**.reload**](https://go.microsoft.com/fwlink/p?linkid=399239)
 
-    [**k**](http://go.microsoft.com/fwlink/p?linkid=399389)
+    [**k**](https://go.microsoft.com/fwlink/p?linkid=399389)
 
     The output is similar to this:
 
@@ -386,43 +386,43 @@ After you have set up your host and target computer and connected them with a de
 
 23. To end your debugging session, enter this command:
 
-    [**qd**](http://go.microsoft.com/fwlink/p?linkid=399394)
+    [**qd**](https://go.microsoft.com/fwlink/p?linkid=399394)
 
 ## <span id="Summary_of_commands"></span><span id="summary_of_commands"></span><span id="SUMMARY_OF_COMMANDS"></span>Summary of commands
 
 
 -   **Contents** command on the **Help** menu
--   [.sympath (Set Symbol Path)](http://go.microsoft.com/fwlink/p?linkid=399238)
--   [.reload (Reload Module)](http://go.microsoft.com/fwlink/p?linkid=399239)
--   [x (Examine Symbols)](http://go.microsoft.com/fwlink/p?linkid=399240)
--   [g (Go)](http://go.microsoft.com/fwlink/p?linkid=399388)
--   [dt (Display Type)](http://go.microsoft.com/fwlink/p?linkid=399397)
+-   [.sympath (Set Symbol Path)](https://go.microsoft.com/fwlink/p?linkid=399238)
+-   [.reload (Reload Module)](https://go.microsoft.com/fwlink/p?linkid=399239)
+-   [x (Examine Symbols)](https://go.microsoft.com/fwlink/p?linkid=399240)
+-   [g (Go)](https://go.microsoft.com/fwlink/p?linkid=399388)
+-   [dt (Display Type)](https://go.microsoft.com/fwlink/p?linkid=399397)
 -   **Break** command on the **Debug** menu
--   [lm (List Loaded Modules)](http://go.microsoft.com/fwlink/p?linkid=399237)
--   [k (Display Stack Backtrace)](http://go.microsoft.com/fwlink/p?linkid=399389)
--   [bu (Set Breakpoint)](http://go.microsoft.com/fwlink/p?linkid=399390)
--   [bl (Breakpoint List)](http://go.microsoft.com/fwlink/p?linkid=399391)
--   [bc (Breakpoint Clear)](http://go.microsoft.com/fwlink/p?linkid=399401)
+-   [lm (List Loaded Modules)](https://go.microsoft.com/fwlink/p?linkid=399237)
+-   [k (Display Stack Backtrace)](https://go.microsoft.com/fwlink/p?linkid=399389)
+-   [bu (Set Breakpoint)](https://go.microsoft.com/fwlink/p?linkid=399390)
+-   [bl (Breakpoint List)](https://go.microsoft.com/fwlink/p?linkid=399391)
+-   [bc (Breakpoint Clear)](https://go.microsoft.com/fwlink/p?linkid=399401)
 -   **Step Into** command on the **Debug** menu (**F11**)
--   [!process](http://go.microsoft.com/fwlink/p?linkid=399241)
--   [!thread](http://go.microsoft.com/fwlink/p?linkid=399244)
--   [!devnode](http://go.microsoft.com/fwlink/p?linkid=399242)
--   [!devstack](http://go.microsoft.com/fwlink/p?linkid=399245)
--   [!drvobj](http://go.microsoft.com/fwlink/p?linkid=399246)
--   [qd (Quit and Detach)](http://go.microsoft.com/fwlink/p?linkid=399394)
+-   [!process](https://go.microsoft.com/fwlink/p?linkid=399241)
+-   [!thread](https://go.microsoft.com/fwlink/p?linkid=399244)
+-   [!devnode](https://go.microsoft.com/fwlink/p?linkid=399242)
+-   [!devstack](https://go.microsoft.com/fwlink/p?linkid=399245)
+-   [!drvobj](https://go.microsoft.com/fwlink/p?linkid=399246)
+-   [qd (Quit and Detach)](https://go.microsoft.com/fwlink/p?linkid=399394)
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Getting Started with WinDbg (User-Mode)](getting-started-with-windbg.md)
 
-[Setting Up Kernel-Mode Debugging Manually](http://go.microsoft.com/fwlink/p?linkid=272138)
+[Setting Up Kernel-Mode Debugging Manually](https://go.microsoft.com/fwlink/p?linkid=272138)
 
-[Debugger Operation](http://go.microsoft.com/fwlink/p?linkid=399247)
+[Debugger Operation](https://go.microsoft.com/fwlink/p?linkid=399247)
 
-[Debugging Techniques](http://go.microsoft.com/fwlink/p?linkid=399248)
+[Debugging Techniques](https://go.microsoft.com/fwlink/p?linkid=399248)
 
-[Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](http://go.microsoft.com/fwlink/p?linkid=223405)
+[Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](https://go.microsoft.com/fwlink/p?linkid=223405)
 
  
 

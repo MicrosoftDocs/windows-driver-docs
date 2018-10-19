@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 
 The **!wudfext.wudfrefhist** extension displays the reference count stack history for a UMDF object.
 
-```
+```dbgcmd
 !wudfext.wudfrefhist ObjectAddress
-```
+```dbgcmd
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -69,7 +69,7 @@ If this command does not display the desired information, make sure that the rel
 
 Here is an example of using the **!wudfext.wudfrefhist** command:
 
-```
+```dbgcmd
 0:007> !wudfext.umdevstacks
 ...
       UMDriver Image Path: C:\Windows\System32\drivers\UMDF\WUDFOsrUsbFilter.dll

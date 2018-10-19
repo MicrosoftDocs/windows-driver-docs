@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!qlocks** extension displays the state of all queued spin locks.
 
-```
+```dbgcmd
 !qlocks 
 ```
 
@@ -58,7 +58,7 @@ This command is useful only on a multiprocessor system.
 
 Here is an example:
 
-```
+```dbgcmd
 0: kd> !qlocks
 Key: O = Owner, 1-n = Wait order, blank = not owned/waiting, C = Corrupt
 

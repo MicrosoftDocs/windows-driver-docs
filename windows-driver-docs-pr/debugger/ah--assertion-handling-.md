@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **ah** command controls the assertion handling status for specific addresses.
 
-```
+```dbgcmd
 ahb [Address] 
 ahi [Address] 
 ahd [Address] 

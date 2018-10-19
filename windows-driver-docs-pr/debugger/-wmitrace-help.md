@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wmitrace.help** extension displays the extension commands in Wmitrace.dll.
 
-```
+```dbgcmd
 !wmitrace.help 
 ```
 

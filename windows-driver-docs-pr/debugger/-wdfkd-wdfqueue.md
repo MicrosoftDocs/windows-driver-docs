@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfqueue** extension displays information about a specified framework queue object and the framework request objects that are in the queue.
 
-```
+```dbgcmd
 !wdfkd.wdfqueue Handle
 ```
 
@@ -46,7 +46,7 @@ Remarks
 
 The following example shows the display from a **!wdfkd.wdfqueue** extension.
 
-```
+```dbgcmd
 kd> !wdfqueue 0x7ce7d1e8 
 
 # Dumping WDFQUEUE 0x7ce7d1e8

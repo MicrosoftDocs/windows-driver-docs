@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfumfile** extension displays information about a UMDF intra-stack file.
 
-```
+```dbgcmd
 !wdfkd.wdfumfile Address 
 ```
 

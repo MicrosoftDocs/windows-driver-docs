@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!rcdrkd.rcdrlogsave** extension saves the recorder buffers of a driver.
 
-```
+```dbgcmd
 !rcdrkd.rcdrlogsave DriverName [CaptureFilename ]
 ```
 

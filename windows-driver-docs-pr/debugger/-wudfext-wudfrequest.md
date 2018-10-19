@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 
 The **!wudfext.wudfrequest** extension displays information about an I/O request.
 
-```
+```dbgcmd
 !wudfext.wudfrequest pWDFRequest
-```
+```dbgcmd
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -59,7 +59,7 @@ Remarks
 
 The following is an example of the **!wudfext.wudfrequest** display:
 
-```
+```dbgcmd
 kd> !wudfrequest 0x000fa530 
 CWdfIoRequest  0x000fa4b8
 Type: WdfRequestRead

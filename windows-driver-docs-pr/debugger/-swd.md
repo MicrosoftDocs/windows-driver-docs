@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!swd** extension displays the software watchdog timer states for the specified processor, including the deferred procedure call (DPC) and the watchdog timer states for threads.
 
-```
+```dbgcmd
 !swd [Processor]
 ```
 

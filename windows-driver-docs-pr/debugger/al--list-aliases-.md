@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **al** command displays a list of all currently defined user-named aliases.
 
-```
+```dbgcmd
 al
 ```
 

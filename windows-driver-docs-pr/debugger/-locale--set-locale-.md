@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.locale** command sets the locale or displays the current locale.
 
-```
+```dbgcmd
 .locale [Locale] 
 ```
 
@@ -65,7 +65,7 @@ The locale controls how Unicode strings are displayed.
 
 The following examples show the **.locale** command.
 
-```
+```dbgcmd
 kd> .locale
 Locale: C
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!logexts.logc** extension displays all API categories, displays all APIs in a specific category, or enables and disables the logging of APIs in one or more categories.
 
-```
+```dbgcmd
 !logexts.logc e Categories 
 !logexts.logc d Categories 
 !logexts.logc p Category 

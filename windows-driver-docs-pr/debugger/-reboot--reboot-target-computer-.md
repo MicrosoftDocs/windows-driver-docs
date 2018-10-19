@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.reboot** command restarts the target computer.
 
-```
+```dbgcmd
 .reboot
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!scsikd.classext** extension displays the specified class Plug and Play (PnP) device.
 
-```
+```dbgcmd
 !scsikd.classext [Device [Level]] 
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!storagekd.storloglist** extension displays the Storport adapter’s internal log entries.
 
-```
+```dbgcmd
 !storagekd.storloglist <Address> [<starting_entry> [<ending_entry>]] [L <count>] 
 ```
 
@@ -62,7 +62,7 @@ Here is an example of **!storagekd.storloglist** display:
 
 **0: kd&gt; !storagekd.storloglist ffffe0010f5e01a0**
 
-```
+```dbgcmd
 Storport RaidLogList
     Circular buffer location:  0xffffe0010f5e1720
     Total logs written: 8

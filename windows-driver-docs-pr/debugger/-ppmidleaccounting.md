@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ppmidleaccounting** command displays processor idle state accounting information.
 
-```
+```dbgcmd
 !ppmidleaccounting
 ```
 

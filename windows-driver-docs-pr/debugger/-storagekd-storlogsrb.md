@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!storagekd.storlogsrb** extension displays the Storport’s internal log entries for the adapter filtered for the Storage (or SCSI) Request Block (SRB) provided.
 
-```
+```dbgcmd
 !storagekd.storlogsrb <Address> <srb> [<starting_entry> [<ending_entry>]] [L <count>]
 ```
 

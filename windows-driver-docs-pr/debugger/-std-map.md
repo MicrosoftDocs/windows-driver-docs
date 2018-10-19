@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!std\_map** extension displays the entries of a std::map tree.
 
-```
+```dbgcmd
 !std_map Address [Module!Type [TypeSize]]
 !std_map -?
 ```

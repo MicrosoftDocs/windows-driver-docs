@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfhandle** extension displays information about a specified framework object handle, such as the handle type, object context pointers, and the underlying framework object pointer.
 
-```
+```dbgcmd
 !wdfkd.wdfhandle Handle [Flags]
 ```
 
@@ -64,7 +64,7 @@ Remarks
 
 The following example shows the output of the **!wdfhandle** extension with bit 4 set in the *Flags* parameter (so the output displays information about the child objects).
 
-```
+```dbgcmd
 kd> !wdfhandle 0x7ca7b1c0 10 
 
 handle 0x7ca7b1c0, type is WDFDEVICE

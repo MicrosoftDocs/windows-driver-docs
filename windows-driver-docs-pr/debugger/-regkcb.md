@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!regkcb** extension displays a registry key control block.
 
-```
+```dbgcmd
 !regkcb Address 
 ```
 

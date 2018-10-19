@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfdmaenabler** extension displays information about a WDF direct memory access (DMA) object, and its transaction and common buffer objects.
 
-```
+```dbgcmd
 !wdfkd.wdfdmaenabler Handle
 ```
 

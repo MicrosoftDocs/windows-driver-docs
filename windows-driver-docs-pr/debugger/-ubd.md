@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ubd** extension temporarily disables a user-space breakpoint.
 
-```
+```dbgcmd
 !ubd BreakpointNumber 
 ```
 

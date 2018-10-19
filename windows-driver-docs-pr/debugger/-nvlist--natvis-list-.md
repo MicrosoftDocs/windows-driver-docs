@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The .nvllist command lists the NatVis files loaded into the debugger environment.
 
-```
+```dbgcmd
 .nvlist
 ```
 

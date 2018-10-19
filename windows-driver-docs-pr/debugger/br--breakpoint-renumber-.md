@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **br** command renumbers one or more breakpoints.
 
-```
+```dbgcmd
 br OldID NewID [OldID2 NewID2 ...] 
 ```
 

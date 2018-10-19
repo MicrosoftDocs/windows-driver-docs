@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!storagekd.storlogirp** extension displays the Storport’s internal log entries for the adapter filtered for the IRP provided.
 
-```
+```dbgcmd
 !storagekd.storlogirp <Address> <irp> [<starting_entry> [<ending_entry>]] [L <count>]  
 ```
 

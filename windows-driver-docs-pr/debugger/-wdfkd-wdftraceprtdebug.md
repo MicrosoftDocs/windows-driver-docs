@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdftraceprtdebug** extension enables and disables the Traceprt.dll diagnostic mode, which generates verbose debugging information.
 
-```
+```dbgcmd
 !wdfkd.wdftraceprtdebug {on | off}
 ```
 

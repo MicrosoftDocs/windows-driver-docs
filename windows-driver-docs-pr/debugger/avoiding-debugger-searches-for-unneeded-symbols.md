@@ -7,7 +7,7 @@ ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
 
-# Avoiding debugger searches for unneeded symbols
+# Avoiding debugger searches for un-needed symbols
 
 
 **Last updated:**

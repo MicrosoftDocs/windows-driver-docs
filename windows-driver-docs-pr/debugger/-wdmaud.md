@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 Displays a variety of WDM Audio (WDMAud) structures.
 
-```
+```dbgcmd
 !wdmaud Address Flags
 ```
 

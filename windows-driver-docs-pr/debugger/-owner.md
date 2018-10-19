@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!owner** extension displays the owner of a module or function.
 
-```
+```dbgcmd
 !owner [Module[!Symbol]]
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.secure** command activates or displays the status of Secure Mode.
 
-```
+```dbgcmd
 .secure 1 
 .secure 
 ```

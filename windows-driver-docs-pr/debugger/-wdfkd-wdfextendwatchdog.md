@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfextendwatchdog** extension extends the time-out period (from 10 minutes to 24 hours) of the framework's watchdog timer during power transitions.
 
-```
+```dbgcmd
 !wdfkd.wdfextendwatchdog Handle [Extend]
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The AgeStore command line uses the following syntax. The parameters can be included in any order.
 
-```
+```console
 agestore [PathSpec] -date=Month-Day-Year Options 
 
 agestore [PathSpec] -days=NumberOfDays Options 

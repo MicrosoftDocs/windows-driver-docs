@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.srcnoisy** command controls the verbosity level for source file loading.
 
-```
+```dbgcmd
 .srcnoisy [Options]
 ```
 

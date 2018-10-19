@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!storagekd.storsrb** extension displays information about the specified Storage (or SCSI) Request Block (SRB).
 
-```
+```dbgcmd
 !storagekd.storsrb Address 
 ```
 
@@ -53,7 +53,7 @@ Here is an example of the **!storagekd.storsrb** display:
 
 **0: kd&gt; !storagekd.storsrb ffffe00111fe25b0**
 
-```
+```dbgcmd
     SRB is a STORAGE request block (SRB_EX)
     SRB EX 0xffffe00111fe25b0 Function 28  Version  1, Signature 53524258, SrbStatus: 0x02[Aborted], SrbFunction 0x00 [EXECUTE SCSI]
     Address Type is BTL8

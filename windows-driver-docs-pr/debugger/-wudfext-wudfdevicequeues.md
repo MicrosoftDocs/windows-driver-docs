@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wudfext.wudfdevicequeues** extension displays information about all the I/O queues for a device.
 
-```
+```dbgcmd
 !wudfext.wudfdevicequeues pWDFDevice
 ```
 

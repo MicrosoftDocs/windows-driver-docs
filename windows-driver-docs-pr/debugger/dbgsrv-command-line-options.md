@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The DbgSrv command line uses the following syntax.
 
-```
+```console
 dbgsrv -t ServerTransport [-sifeo image.ext] -c[s] AppCmdLine [-x | -pc] 
 
 dbgsrv -? 

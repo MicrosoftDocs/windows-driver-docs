@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!tzinfo** extension displays the contents of the specified thermal zone information structure.
 
-```
+```dbgcmd
 !tzinfo Address
 ```
 

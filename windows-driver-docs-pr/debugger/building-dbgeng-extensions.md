@@ -26,7 +26,7 @@ To build an extension, use the following procedure:
 
 2.  Check the include and lib file project settings. If *%debuggers%* represents the root of your Debugging Tools for Windows installation, they should be set as follows:
 
-    ```
+    ```text
     Include Path 
     %debuggers%\sdk\inc
     Library Path

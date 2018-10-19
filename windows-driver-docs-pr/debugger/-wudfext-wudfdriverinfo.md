@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wudfext.wudfdriverinfo** extension displays information about a UMDF driver within the current host process.
 
-```
+```dbgcmd
 !wudfext.wudfdriverinfo Name
 ```
 
@@ -63,7 +63,7 @@ You can use **!wudfext.wudfdriverinfo** to quickly find the device object for yo
 
 The following is an example of the **!wudfext.wudfdriverinfo** display:
 
-```
+```dbgcmd
 kd> !wudfdriverinfo wudfechodriver 
 IWDFDriver: 0xf2db8
   !WDFDEVICE 0xf2f80

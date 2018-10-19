@@ -22,7 +22,7 @@ Debug privilege is a security policy setting that allows users to attach a debug
 
 The following code example shows how to enable the debug privilege in your process. This enables you to debug other processes that you wouldn't have access to otherwise.
 
-```
+```cpp
 //
 //  SetPrivilege enables/disables process token privilege.
 //
@@ -56,7 +56,7 @@ BOOL SetPrivilege(HANDLE hToken, LPCTSTR lpszPrivilege, BOOL bEnablePrivilege)
 
 The following example shows how to use this function:
 
-```
+```cpp
 HANDLE hProcess=GetCurrentProcess();
 HANDLE hToken;
 

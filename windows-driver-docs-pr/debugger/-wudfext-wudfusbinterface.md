@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wudfext.wudfusbinterface** extension displays information about a USB interface object.
 
-```
+```dbgcmd
 !wudfext.wudfusbinterface pWDFUSBInterface TypeName
 ```
 
