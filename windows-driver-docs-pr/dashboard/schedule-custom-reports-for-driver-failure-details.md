@@ -3,7 +3,7 @@ title: Schedule Custom Reports for your driver failure details
 description: Overview of the process for creating and scheduling error reports for the Microsoft Hardware Dev Center.
 author: EliotSeattle
 ms.author: shganesh
-ms.date: 09/01/20181
+ms.date: 09/01/2018
 ms.localizationpriority: medium
 ---
 

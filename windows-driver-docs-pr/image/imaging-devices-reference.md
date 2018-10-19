@@ -2,7 +2,7 @@
 title: Imaging Devices Reference
 description: Imaging Devices Reference
 ms.assetid: 2ee6ce92-44dc-4c59-a438-f65b41f3b43a
-ms.date:
+ms.date: 09/14/2017
 ms.localizationpriority: medium
 ---
 
