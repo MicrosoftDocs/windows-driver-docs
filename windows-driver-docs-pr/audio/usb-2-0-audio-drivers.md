@@ -5,7 +5,7 @@ ms.date: 5/14/2018
 ms.localizationpriority: medium
 ---
 
-## USB Audio 2.0 Drivers
+# USB Audio 2.0 Drivers
 
 Starting with Windows 10, release 1703, a USB Audio 2.0 driver is shipped with Windows. It is designed to support the USB Audio 2.0 device class. The driver is a WaveRT audio port class miniport. For more information about the  USB Audio 2.0 device class, see [http://www.usb.org/developers/docs/devclass_docs/](http://www.usb.org/developers/docs/devclass_docs/). 
 
