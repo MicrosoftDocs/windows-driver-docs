@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 One way to activate Logger is to run the stand-alone Logger.exe program. This is essentially a very small debugger that can only take a single target. To run it, include the name of the target application on the command line:
 
-```
+```dbgcmd
 logger Target 
 ```
 

@@ -6,9 +6,7 @@ ms.date: 09/22/2017
 ms.localizationpriority: medium
 ---
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
+
 
 # TTD Event Objects
 ## Description
@@ -33,7 +31,7 @@ ms.localizationpriority: medium
 
 
 
-```
+```dbgcmd
 0:000> dx -r2 @$curprocess.TTD.Events.Where(t => t.Type == "Exception").Select(e => e.Exception)
 @$curprocess.TTD.Events.Where(t => t.Type == "Exception").Select(e => e.Exception)                
     [0x0]            : Exception of type CPlusPlus at PC: 0X777663B0

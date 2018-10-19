@@ -20,19 +20,19 @@ Since the smart client behaves like a regular debugger in every way, it can be u
 
 First, you start a process server on the computer \\\\BOXA:
 
-```
+```console
 dbgsrv -t npipe:pipe=FarPipe 
 ```
 
 The middle machine, named \\\\BOXB, starts the debugger with both the **-premote** and **-server** parameters. Suppose the PID of the target application is 400 and the symbol path is G:\\MySymbols:
 
-```
+```console
 cdb -server npipe:pipe=NearPipe -premote npipe:server=BOXA,pipe=FarPipe -v -y g:\mysymbols -p 400 
 ```
 
 Then a debugging client on a third machine can be started as follows:
 
-```
+```console
 windbg -remote npipe:server=BOXB,pipe=NearPipe 
 ```
 

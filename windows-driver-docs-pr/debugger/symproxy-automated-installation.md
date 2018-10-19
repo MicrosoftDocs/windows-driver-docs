@@ -26,7 +26,7 @@ These steps along with the Install.cmd script below can help automate the instal
 4.  (Optionally) Create an empty file called %WINDIR%\\system32\\inetsrv\\symsrv.yes. This accepts the EULA for the Microsoft Public Symbol Store.
 5.  Determine the parameters for Install.cmd and run it.
 6.  Configure the clients symbol path using the server name that you created.
-    ```
+    ```dbgcmd
     SRV*\\MachineName\Symbols*http://MachineName/Symbols
     ```
 
@@ -40,14 +40,14 @@ To clear the MIME Type inheritance, an XML file is needed to drive the associate
 
 Example Install.Cmd parameter usage:
 
-```
+```console
 Install.cmd D:\SymStore\Symbols CONTOSO\SymProxyService Pa$$word
 ```
 
 ## <span id="install.cmd"></span><span id="INSTALL.CMD"></span>Install.cmd
 
 
-```
+```bat
 @echo off
 
 SET VirDirectory=%1
@@ -102,7 +102,7 @@ rem Add * to the MIME Types of the 'Default Web Site'
 ## <span id="staticcontentclear.xml"></span><span id="STATICCONTENTCLEAR.XML"></span>staticContentClear.xml
 
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <appcmd>
     <CONFIG CONFIG.SECTION="system.webServer/staticContent"                  path="MACHINE/WEBROOT/APPHOST">
@@ -119,7 +119,7 @@ The system should now be ready to acquire and serve files. To test it, start by 
 
 Configure a debugger to use this symbol path:
 
-```
+```dbgcmd
 srv*\\MachineName\Symbols*http://MachineName/Symbols
 ```
 

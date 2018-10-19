@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The syntax of the TList command is as follows:
 
-```
+```dbgcmd
 tlist [/p ProcessName | PID | Pattern | /t | /c | /e | /k | /m [Module] | /s | /v
 ```
 

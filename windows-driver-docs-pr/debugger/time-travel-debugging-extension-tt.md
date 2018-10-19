@@ -7,11 +7,6 @@ ms.localizationpriority: medium
 ---
 
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
-
-
 # ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) !tt (time travel)
 
 The !tt (time travel) debugger extension that allows you to navigate forward and backwards in time.
@@ -21,7 +16,7 @@ The !tt (time travel) debugger extension that allows you to navigate forward and
 
 Use the !tt extension to navigate forward or backwards in time, by traveling to a given position in the trace. 
 
-```
+```dbgcmd
 !tt [position] 
 ```
 

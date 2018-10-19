@@ -19,9 +19,7 @@ ms.localizationpriority: medium
 
 The **ux** command displays the instruction set of the x86-based BIOS code.
 
-```
-ux [Address]
-```
+`ux [Address]`
 
 ## <span id="ddk_cmd_unassemble_x86_bios_dbg"></span><span id="DDK_CMD_UNASSEMBLE_X86_BIOS_DBG"></span>Parameters
 
