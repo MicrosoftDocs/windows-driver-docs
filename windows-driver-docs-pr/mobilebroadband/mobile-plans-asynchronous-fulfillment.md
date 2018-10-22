@@ -137,4 +137,5 @@ function finishPurchaseWithCancellation() {
     }
 ```
 
+NOTE: The cancellation and the balance addition flow using the DataMart.notifyPurchaseResult will still be supported. 
 
