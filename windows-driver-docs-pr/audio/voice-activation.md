@@ -23,8 +23,8 @@ To understand the voice interaction experience available in Windows, review thes
 |                                                                                                   |                                                                       |
 |---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
 | **Topic**                                                                                         | **Description**                                                       |
-| [What is Cortana?](http://windows.microsoft.com/windows-10/getstarted-what-is-cortana)      | Provides and overview and usage direction for Cortana                 |
-| [Make Cortana yours](http://windows.microsoft.com/windows-10/getstarted-make-cortana-yours) | Describes customization available through Cortana's Settings screens. |
+| [What is Cortana?](https://windows.microsoft.com/windows-10/getstarted-what-is-cortana)      | Provides and overview and usage direction for Cortana                 |
+| [Make Cortana yours](https://windows.microsoft.com/windows-10/getstarted-make-cortana-yours) | Describes customization available through Cortana's Settings screens. |
 
  
 

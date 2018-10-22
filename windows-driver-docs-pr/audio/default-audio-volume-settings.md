@@ -84,7 +84,7 @@ The following table shows the volume ranges and default volume levels for audio 
  
 
 \*The term non-microphone describes all playback devices and recording devices other than microphones.
-For information about the operational characteristics of the physical volume sliders that are represented by the software volume sliders in Windows applications, see [Audio-Tapered Volume Controls](http://msdn.microsoft.com/library/windows/desktop/dd370798.aspx).
+For information about the operational characteristics of the physical volume sliders that are represented by the software volume sliders in Windows applications, see [Audio-Tapered Volume Controls](https://msdn.microsoft.com/library/windows/desktop/dd370798.aspx).
 
 ## <span id="related_topics"></span>Related topics
 [Customizing Default Audio Volume Settings](customizing-default-audio-volume-settings.md)  
