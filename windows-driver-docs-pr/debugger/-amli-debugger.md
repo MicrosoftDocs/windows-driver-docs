@@ -21,8 +21,9 @@ The **!amli debugger** extension breaks into the AMLI Debugger.
 
 Syntax
 
+```dbgcmd
     !amli debugger
-
+```
 
 ## <span id="ddk__amli_debugger_dbg"></span><span id="DDK__AMLI_DEBUGGER_DBG"></span>
 

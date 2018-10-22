@@ -19,7 +19,9 @@ ms.localizationpriority: medium
 
 The **.abandon** command ends the debugging session, but leaves the target application in a debugging state. This returns the debugger to dormant mode.
 
-    .abandon [/h|/n] 
+```dbgcmd
+.abandon [/h|/n] 
+```
 
 ## <span id="ddk_meta_abandon_process_dbg"></span><span id="DDK_META_ABANDON_PROCESS_DBG"></span>Parameters
 

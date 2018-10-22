@@ -21,7 +21,7 @@ The **!amli dh** extension displays the AML interpreter's internal heap block.
 
 Syntax
 
-```
+```dbgcmd
 !amli dh [HeapAddress]
 ```
 

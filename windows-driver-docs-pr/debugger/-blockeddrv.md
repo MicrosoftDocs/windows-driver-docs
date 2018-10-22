@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!blockeddrv** extension displays the list of blocked drivers on the target computer.
 
-```
+```dbgcmd
     !blockeddrv
 ```
 

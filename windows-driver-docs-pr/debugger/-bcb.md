@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!bcb** extension displays the specified buffer control block.
 
-```
+```dbgcmd
 !bcb Address
 ```
 

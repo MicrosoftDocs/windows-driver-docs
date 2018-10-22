@@ -281,7 +281,7 @@ BUCKET_ID:  0xD1_W_USBPORT!USBPORT_BadRequestFlush+7c
 The BUCKET\_ID field shows the specific category of failures that the current failure belongs to. This category helps the debugger determine what other information to display in the analysis output.
 
 ```dbgcmd
-INTERNAL_SOLUTION_TEXT:  http://oca.microsoft.com/resredir.asp?sid=62&State=1
+INTERNAL_SOLUTION_TEXT:  https://oca.microsoft.com/resredir.asp?sid=62&State=1
 ```
 
 If you are connected to the internet, the debugger attempts to access a database of crash solutions maintained by Microsoft. This database contains links to a tremendous number of Web pages that have information about known bugs. If a match is found for your problem, the INTERNAL\_SOLUTION\_TEXT field will show a URL that you can access for more information.
@@ -293,7 +293,7 @@ Followup: usbtri
       This problem has a known fix.
       Please connect to the following URL for details:
       ------------------------------------------------
-      http://oca.microsoft.com/resredir.asp?sid=62&State=1
+      https://oca.microsoft.com/resredir.asp?sid=62&State=1
 ```
 
 For information about the FOLLOWUP\_NAME and the Followup fields, see The Followup Field and the triage.ini File:

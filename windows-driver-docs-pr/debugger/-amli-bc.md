@@ -21,8 +21,10 @@ The **!amli bc** extension permanently clears an AML breakpoint.
 
 Syntax
 
+```dbgcmd
     !amli bc Breakpoint 
     !amli bc *
+```
 
 ## <span id="ddk__amli_bc_dbg"></span><span id="DDK__AMLI_BC_DBG"></span>Parameters
 

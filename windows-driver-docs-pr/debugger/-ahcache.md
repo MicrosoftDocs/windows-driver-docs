@@ -19,8 +19,9 @@ ms.localizationpriority: medium
 
 The **!ahcache** extension displays the application compatibility cache.
 
-    !ahcache [Flags] 
-
+```dbgcmd
+!ahcache [Flags] 
+```
 
 ## <span id="ddk__ahcache_dbg"></span><span id="DDK__AHCACHE_DBG"></span>Parameters
 

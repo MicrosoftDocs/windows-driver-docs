@@ -19,10 +19,11 @@ ms.localizationpriority: medium
 
 The **.allow\_exec\_cmds** command controls whether execution commands can be used.
 
-    .allow_exec_cmds 0 
-    .allow_exec_cmds 1 
-    .allow_exec_cmds 
-
+```dbgcmd
+.allow_exec_cmds 0 
+.allow_exec_cmds 1 
+.allow_exec_cmds 
+```
 
 ## <span id="ddk_meta_allow_execution_commands_dbg"></span><span id="DDK_META_ALLOW_EXECUTION_COMMANDS_DBG"></span>Parameters
 

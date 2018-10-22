@@ -19,7 +19,9 @@ ms.localizationpriority: medium
 
 The **!arbinst** extension displays information about a specified arbiter.
 
+```dbgcmd
     !arbinst Address [Flags]
+```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 

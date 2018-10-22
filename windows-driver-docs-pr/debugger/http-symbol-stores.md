@@ -104,7 +104,7 @@ You can edit the web.config file to configure MIME types for Symbols. This appro
 
 1.  Edit the web.config file as shown here.
 
-    ```
+    ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <configuration>
         <system.webServer>
@@ -164,13 +164,13 @@ SymSrv.dll does not support Kerberos authentication when connecting to IIS. As s
 
 2.  To disable Kerberos and force the use of NTLM, use this command:
 
-    ```
+    ```console
     appcmd.exe set config -section:system.webServer/security/authentication/windowsAuthentication /+"providers.[value='NTLM']" /commit:apphost
     ```
 
 3.  To return to the default value with Kerberos enabled, use this command:
 
-    ```
+    ```console
     appcmd.exe set config -section:system.webServer/security/authentication/windowsAuthentication /+"providers.[value='Negotiate,NTLM']" /commit:apphost
     ```
 
@@ -179,13 +179,13 @@ SymSrv.dll does not support Kerberos authentication when connecting to IIS. As s
 
 When SymSrv receives authentication requests, the debugger can either display the authentication dialog box or automatically refuse the request, depending on how it has been configured. You can configure this behavior using !sym prompts on|off. For example to turn prompts on, use this command.
 
-```
+```dbgcmd
 !sym prompts on
 ```
 
 To check the current setting, use this command.
 
-```
+```dbgcmd
 !sym prompts
 ```
 

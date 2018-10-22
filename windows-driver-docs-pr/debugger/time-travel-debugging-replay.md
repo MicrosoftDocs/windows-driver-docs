@@ -6,7 +6,9 @@ ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---
 
-# ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) Time Travel Debugging - Replay a trace 
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) 
+
+# Time Travel Debugging - Replay a trace 
 
 This section describes how to replay time travel traces, navigating forwards and backwards in time.
 

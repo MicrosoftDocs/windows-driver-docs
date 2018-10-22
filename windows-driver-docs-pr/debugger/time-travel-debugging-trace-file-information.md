@@ -6,7 +6,9 @@ ms.date: 09/21/2017
 ms.localizationpriority: medium
 ---
 
-# ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) Time Travel Debugging - Working with Trace Files
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) 
+
+# Time Travel Debugging - Working with Trace Files
 
 This section describes how to work with files created and consumed by time travel debugging.
 

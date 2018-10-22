@@ -21,8 +21,9 @@ The **!amli dl** extension displays a portion of the AML interpreter's event log
 
 Syntax
 
+```dbgcmd
     !amli dl
-
+```
 
 ## <span id="ddk__amli_dl_dbg"></span><span id="DDK__AMLI_DL_DBG"></span>
 

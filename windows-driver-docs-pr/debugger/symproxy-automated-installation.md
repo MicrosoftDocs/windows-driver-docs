@@ -27,7 +27,7 @@ These steps along with the Install.cmd script below can help automate the instal
 5.  Determine the parameters for Install.cmd and run it.
 6.  Configure the clients symbol path using the server name that you created.
     ```dbgcmd
-    SRV*\\MachineName\Symbols*http://MachineName/Symbols
+    SRV*\\MachineName\Symbols*https://MachineName/Symbols
     ```
 
 The Install.cmd script requires 3 parameters:
@@ -120,14 +120,14 @@ The system should now be ready to acquire and serve files. To test it, start by 
 Configure a debugger to use this symbol path:
 
 ```dbgcmd
-srv*\\MachineName\Symbols*http://MachineName/Symbols
+srv*\\MachineName\Symbols*https://MachineName/Symbols
 ```
 
 If *MissTimeout* is enabled (it is set to 300 seconds by default), running the .reload /f command twice should result in much faster execution the second time.
 
 To view the location of the PDBs being referenced, use the lm (list modules) command. The path to the PDBs should all begin with \\\\MachineName\\Symbols.
 
-If directory browsing is enabled on the web site, browse to http://MachineName/Symbols to see the files that are cached.
+If directory browsing is enabled on the web site, browse to https://MachineName/Symbols to see the files that are cached.
 
 Open the Performance Monitor and view the Symbol Proxy counters.
 

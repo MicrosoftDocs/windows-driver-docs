@@ -21,7 +21,9 @@ The **!amli ds** extension displays an AML stack.
 
 Syntax
 
+```dbgcmd
     !amli ds [/v] [Address] 
+```
 
 ## <span id="ddk__amli_ds_dbg"></span><span id="DDK__AMLI_DS_DBG"></span>Parameters
 
