@@ -4,11 +4,7 @@ author: windows-driver-content
 description: DispatchFlushBuffers Routines
 ms.assetid: 091ce55c-e867-4ba4-aa25-5c20af45d9c2
 keywords: ["dispatch routines WDK kernel , DispatchFlushBuffers routine", "DispatchFlushBuffers routine", "IRP_MJ_FLUSH_BUFFERS I/O function code", "flush buffers dispatch routines WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

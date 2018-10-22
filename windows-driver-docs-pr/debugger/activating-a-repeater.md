@@ -5,9 +5,6 @@ ms.assetid: a2409b3d-48eb-46eb-8a53-7c4d505bb6ea
 keywords: ["Activating a Repeater Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -57,7 +54,7 @@ Causes DbEngPrx to continue existing even after all connections to it are droppe
 <span id="ClientTransport"></span><span id="clienttransport"></span><span id="CLIENTTRANSPORT"></span>*ClientTransport*  
 Specifies the protocol settings to be used in connecting to the server. The protocol should match that used when the server was created. The protocol syntaxes are as follows:
 
-```
+```dbgcmd
 npipe:server=Server,pipe=PipeName[,password=Password] 
 tcp:server=Server,port=Socket[,password=Password][,ipversion=6] 
 tcp:clicon=Server,port=Socket[,password=Password][,ipversion=6] 
@@ -96,7 +93,7 @@ If a password was used when the server was created, *Password* must be supplied 
 <span id="ServerTransport"></span><span id="servertransport"></span><span id="SERVERTRANSPORT"></span>ServerTransport  
 Specifies the protocol settings that will be used when the client connects to the repeater. The possible protocol syntaxes are:
 
-```
+```dbgcmd
 npipe:pipe=PipeName[,hidden][,password=Password][,IcfEnable] 
 tcp:port=Socket[,hidden][,password=Password][,IcfEnable] 
 tcp:port=Socket,clicon=Client[,password=Password] 

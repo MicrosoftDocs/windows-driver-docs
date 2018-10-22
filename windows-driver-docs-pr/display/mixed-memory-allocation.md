@@ -4,11 +4,7 @@ description: Mixed Memory Allocation
 ms.assetid: 171efa48-bd1e-4545-a5c2-0b3ad4383448
 keywords:
 - mixed memory allocation WDK DirectDraw
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

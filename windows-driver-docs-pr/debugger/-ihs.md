@@ -5,9 +5,6 @@ ms.assetid: 3b91e8aa-5639-4273-9da4-1927d2ae8c62
 keywords: ["interrupt history record", "ihs Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ihs** extension displays the interrupt history record for the specified processor, using program counter symbols.
 
-```
+```dbgcmd
 !ihs Processor 
 ```
 
@@ -66,7 +63,7 @@ To display the interrupt history record without using program counter symbols, u
 
 Here is an example of the output from this extension:
 
-```
+```dbgcmd
 kd> !ihs
 Total # of interruptions = 2093185
 Vector              IIP                   IPSR          ExtraField            IIP Symbol

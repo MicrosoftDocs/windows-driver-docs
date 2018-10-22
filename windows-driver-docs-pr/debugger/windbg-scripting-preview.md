@@ -3,16 +3,8 @@ title: WinDbg Preview - Scripting Menu
 description: This section describes how to use scripting in the WinDbg preview debugger.
 ms.author: domars
 ms.date: 04/10/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
-
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
-
 
 # WinDbg Preview - Scripting 
 
@@ -52,7 +44,7 @@ For more information about working with JavaScript, see these topics:
 
 Use **New Script** > **NatVis** to open the following blank NatVis template.
 
-```
+```xml
 <AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
   <Type Name="">
   </Type>

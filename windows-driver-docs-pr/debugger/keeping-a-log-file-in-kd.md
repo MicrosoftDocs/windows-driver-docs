@@ -4,9 +4,6 @@ description: Keeping a Log File in KD
 ms.assetid: 8A260D7F-5E05-4DD0-9CDF-56D3A0C4C2B6
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

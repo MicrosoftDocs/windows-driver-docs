@@ -3,11 +3,7 @@ title: Gravity vector data fields
 author: windows-driver-content
 description: This topic provides information about the data fields that are specific to the gravity vector.
 ms.assetid: E9FAE9F1-841F-4E70-A279-7CB5AD80D80B
-ms.author: windowsdriverdev
 ms.date: 01/04/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -13,11 +13,7 @@ keywords:
 - PINNAME_VIDEO_CAPTURE
 - NAME_VIDEO_PREVIEW
 - PINNAME_VIDEO_STILL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

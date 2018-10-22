@@ -14,9 +14,6 @@ api_type:
 - COM
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +25,7 @@ The **Request** method performs a variety of different operations.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT Request(
   [in]            ULONG  Request,
   [in, optional]  PVOID  InBuffer,

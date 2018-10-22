@@ -13,11 +13,7 @@ keywords:
 - timers WDK networking
 - event notifications WDK networking
 - events WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

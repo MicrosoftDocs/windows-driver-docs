@@ -5,9 +5,6 @@ ms.assetid: f0366a3c-a2c4-4fc8-a722-52fdda59eb2b
 keywords: ["Bug Check 0xA5 ACPI_BIOS_ERROR", "ACPI_BIOS_ERROR"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

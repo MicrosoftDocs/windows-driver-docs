@@ -3,6 +3,7 @@ title: MSFC\_FibrePortNPIVMethods WMI Class
 description: MSFC\_FibrePortNPIVMethods WMI Class
 ms.assetid: 7EDBF55D-27C3-4E90-B540-5A2D1EB564BA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSFC\_FibrePortNPIVMethods WMI Class

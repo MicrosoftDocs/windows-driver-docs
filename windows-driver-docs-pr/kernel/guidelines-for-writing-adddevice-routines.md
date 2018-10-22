@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Guidelines for Writing AddDevice Routines
 ms.assetid: 8df36af5-158c-4c14-9fc2-2c3f997c2098
 keywords: ["AddDevice routines WDK kernel , design guidelines"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

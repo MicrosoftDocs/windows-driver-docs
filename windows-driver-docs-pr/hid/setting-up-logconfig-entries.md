@@ -5,6 +5,7 @@ description: Setting Up LogConfig Entries
 ms.assetid: d8317009-f8d0-4020-83b1-4cdf6366a642
 keywords: ["INF files WDK joysticks , LogConfig entries", "LogConfig entries WDK joysticks"]
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Setting Up LogConfig Entries

@@ -11,11 +11,7 @@ keywords:
 - USB-based streaming cameras WDK USBCAMD2
 - cameras WDK USBCAMD2
 - SRBs WDK USBCAMD2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

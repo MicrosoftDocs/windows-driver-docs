@@ -5,9 +5,6 @@ ms.assetid: b9a2f30a-b09c-43eb-b105-a6b0ffdb1342
 keywords: ["WdbgExts extensions, callbacks, using"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +24,7 @@ When you write a WdbgExts extension DLL, you can export certain functions:
 
     For example, you could create global variables named ExtensionApis, SavedMajorVersion, and SavedMinorVersion as shown in the following example.
 
-    ```ManagedCPlusPlus
+    ```cpp
     WINDBG_EXTENSION_APIS64 ExtensionApis;
     USHORT SavedMajorVersion;
     USHORT SavedMinorVersion;

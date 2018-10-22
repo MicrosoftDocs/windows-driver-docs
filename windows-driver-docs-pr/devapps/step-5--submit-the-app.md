@@ -2,11 +2,7 @@
 title: Step 5 Submit the Microsoft Store device app
 description: This topic describes how to submit your UWP device app to the Microsoft Store dashboard.
 ms.assetid: B25F9953-6EFD-4A08-AFD6-B334C46E910F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

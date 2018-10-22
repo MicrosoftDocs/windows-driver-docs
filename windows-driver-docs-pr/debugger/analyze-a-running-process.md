@@ -5,9 +5,6 @@ ms.assetid: 65a8b510-f5f1-4622-87ff-b44d5855787d
 keywords: ["Analyze a Running Process Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 Use the following commands to record and analyze the heap memory allocations in a running process. This analysis focuses on stack traces.
 
-```
+```dbgcmd
 umdh -p:PID [-f:LogFile] [-v[:MsgFile]] | [-g] | [-h]
 ```
 
@@ -60,7 +57,7 @@ On Windows 2000, if UMDH is reporting errors finding the stack trace database, a
 
 ### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
-```
+```dbgcmd
 umdh -?
 umdh -p:2230
 umdh -p:2230  -f:dump_allocations.txt

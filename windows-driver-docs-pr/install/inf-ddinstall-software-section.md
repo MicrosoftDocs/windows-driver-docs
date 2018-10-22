@@ -1,11 +1,8 @@
 ---
 title: INF DDInstall.Software Section
 description: The DDInstall.Software section contains one or more INF AddSoftware directives that reference additional INF-writer-defined sections in a software component INF file.
-ms.author: windowsdriverdev
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # INF DDInstall.Software Section

@@ -5,9 +5,6 @@ ms.assetid: 99741659-dd43-44ea-ac27-06d821b47fbe
 keywords: ["ta (Trace to Address) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,13 +21,13 @@ The **ta** command executes the program until the specified address is reached, 
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] ta [r] [= StartAddress] StopAddress 
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 ta [r] [= StartAddress] StopAddress 
 ```
 
@@ -93,7 +90,7 @@ During this execution, all steps are displayed explicitly. If a function is call
 
 For example, the following command explicitly traces through the target code until the return address of the current function is reached.
 
-```
+```dbgcmd
 0:000> ta @$ra 
 ```
 

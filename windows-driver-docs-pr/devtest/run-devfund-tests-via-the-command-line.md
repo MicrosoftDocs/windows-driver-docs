@@ -4,11 +4,7 @@ description: The WDK provides the test binaries and tools which make it easy to 
 keywords:
 - DevFund tests
 - command line
-ms.author: windowsdriverdev
 ms.date: 06/29/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

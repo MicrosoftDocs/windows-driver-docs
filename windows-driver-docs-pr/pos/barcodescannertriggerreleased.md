@@ -2,11 +2,7 @@
 title: BarcodeScannerTriggerReleased
 description: The BarcodeScannerTriggerReleased event occurs when the barcode scanner trigger is released.
 ms.assetid: '49b655c3-2652-4225-ba4c-5404da672b8e'
-ms.author: windowsdriverdev
-ms.date: 9/7/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/07/2018
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +14,7 @@ The data buffer for this event is as follows.
 
 ## Syntax
 
-``` syntax
+```cpp
 typedef struct _PosEventDataHeader
 {
     // Event enumeration value

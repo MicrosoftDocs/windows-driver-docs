@@ -9,11 +9,7 @@ keywords:
 - registering synthesizers
 - user-mode synths WDK audio , synthesizer registration
 - custom synths WDK audio , synthesizer registration
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ ms.localizationpriority: medium
 
 After your software synthesizer is created, it must be added to the system registry so that it is available to applications as a DirectMusic port that can be enumerated. When the installation program calls your DLL's [**DllRegisterServer**](https://msdn.microsoft.com/library/windows/desktop/ms682162) COM function to tell the DLL to register itself as a COM object, the function can register the synthesizer as well. To do so, the function adds an entry to the list of available software synthesizers by creating a key in the following path:
 
-```cpp
+```inf
   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectMusic\SoftwareSynths
 ```
 

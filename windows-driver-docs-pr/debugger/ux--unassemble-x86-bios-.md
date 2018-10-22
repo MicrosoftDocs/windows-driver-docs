@@ -5,9 +5,6 @@ ms.assetid: d3616255-1a07-4a5d-8171-c8316179a7dc
 keywords: ["ux (Unassemble x86 BIOS) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,9 +19,7 @@ ms.localizationpriority: medium
 
 The **ux** command displays the instruction set of the x86-based BIOS code.
 
-```
-ux [Address]
-```
+`ux [Address]`
 
 ## <span id="ddk_cmd_unassemble_x86_bios_dbg"></span><span id="DDK_CMD_UNASSEMBLE_X86_BIOS_DBG"></span>Parameters
 

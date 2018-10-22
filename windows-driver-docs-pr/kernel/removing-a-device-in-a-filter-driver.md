@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Removing a Device in a Filter Driver
 ms.assetid: f1166240-446d-4f37-871b-baf687e25735
 keywords: ["filter drivers WDK PnP"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -7,11 +7,7 @@ keywords:
 - video copy protection WDK COPP , COPP operation example code
 - COPP WDK DirectX VA , operation example code
 - protected video WDK COPP , COPP operation example code
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

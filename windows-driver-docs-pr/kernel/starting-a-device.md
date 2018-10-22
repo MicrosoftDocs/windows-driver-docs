@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Starting a Device
 ms.assetid: c52588cf-04c8-420d-a68e-a8754a65d546
 keywords: ["PnP WDK kernel , starting devices", "Plug and Play WDK kernel , starting devices", "starting PnP devices", "DispatchPnP routine", "IoCompletion routine", "failed starts WDK PnP"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

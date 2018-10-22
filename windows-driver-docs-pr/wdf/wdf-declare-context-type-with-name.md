@@ -5,11 +5,7 @@ description: The WDF_DECLARE_CONTEXT_TYPE_WITH_NAME macro creates an accessor me
 ms.assetid: e5911bd2-6976-4a91-b9ba-befa7ec93103
 keywords:
  - WDF_DECLARE_CONTEXT_TYPE_WITH_NAME macro
-ms.author: windowsdriverdev
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

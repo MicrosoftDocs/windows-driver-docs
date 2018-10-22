@@ -2,11 +2,7 @@
 title: Power Management Minor IRPs
 author: windows-driver-content
 description: Power Management Minor IRPs
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: 8af0609f-168b-4455-aae8-1a3c9e40ed47
 ms.localizationpriority: medium
 ---

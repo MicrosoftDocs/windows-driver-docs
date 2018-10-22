@@ -4,9 +4,6 @@ description: You can configure the Windows Debugger to react to specified except
 ms.assetid: 531CFE28-B0DA-4B6D-896F-C8F678C7FE00
 ms.author: domars
 ms.date: 05/11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

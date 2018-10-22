@@ -5,9 +5,6 @@ ms.assetid: fdb5059f-e7d9-4e14-aa3d-030e72c30732
 keywords: ["sx, sxd, sxe, sxi, sxn, sxr, sx- (Set Exceptions) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **sx***\** commands control the action that the debugger takes when an exception occurs in the application that is being debugged, or when certain events occur.
 
-```
+```dbgcmd
 sx 
 
 sx{e|d|i|n} [-c "Cmd1"] [-c2 "Cmd2"] [-h] {Exception|Event|*} 
@@ -176,7 +173,7 @@ Using the **-c** or **-c2** options with **hc**, **bpec**, or **ssec** associate
 
 In the following example, the **sxe** command is used to set the break status of access violation events to break on the first chance, and to set the first-chance command that will be executed at that point to **r eax**. Then the **sx-** command is used to alter the first-chance command to **r ebx**, without changing the handling status. Finally, a portion of the **sx** output is shown, indicating the current settings for access violation events:
 
-```
+```dbgcmd
 0:000> sxe -c "r eax" av 
 
 0:000> sx- -c "r ebx" av 

@@ -9,11 +9,7 @@ keywords:
 - digital signatures WDK , Authenticode
 - verifying Authenticode signatures
 - checking Authenticode signatures
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: deb58b77-6648-466d-be00-e2e0a92895b5
 keywords: ["d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **d\*** commands display the contents of memory in the given range.
 
-```
+```dbgcmd
 d{a|b|c|d|D|f|p|q|u|w|W} [Options] [Range] 
 dy{b|d} [Options] [Range] 
 d [Options] [Range] 

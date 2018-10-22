@@ -5,9 +5,6 @@ ms.assetid: cdcf68fa-8beb-4e21-bc6b-7a9f4c6e9e80
 keywords: ["Bug Check 0xC0000218 STATUS_CANNOT_LOAD_REGISTRY_FILE", "STATUS_CANNOT_LOAD_REGISTRY_FILE"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -11,11 +11,8 @@ api_location:
 - NtosKrnl.exe
 api_type:
 - DllExport
-ms.author:
-ms.date: 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.author: eliotgra
+ms.date: 09/14/2017
 ms.localizationpriority: medium
 ---
 

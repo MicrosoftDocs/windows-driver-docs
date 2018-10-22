@@ -5,9 +5,6 @@ ms.assetid: E662D301-6B4D-4E92-BED3-4BB0731DBFD0
 keywords: ["Bug Check 0x129 WORKER_THREAD_RETURNED_WITH_BAD_PAGING_IO_PRIORITY", "WORKER_THREAD_RETURNED_WITH_BAD_PAGING_IO_PRIORITY"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

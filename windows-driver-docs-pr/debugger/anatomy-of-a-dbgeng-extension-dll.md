@@ -5,9 +5,6 @@ ms.assetid: 5131115b-b9a0-479b-9391-7ab384633d92
 keywords: ["DbgEng Extensions, DLL anatomy"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

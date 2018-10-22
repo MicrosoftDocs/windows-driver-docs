@@ -4,6 +4,7 @@ author: windows-driver-content
 description: Windows Kernel-Mode Safe String Library
 ms.assetid: a54cd20c-2c2d-462d-b9fc-112e99562e52
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Windows Kernel-Mode Safe String Library

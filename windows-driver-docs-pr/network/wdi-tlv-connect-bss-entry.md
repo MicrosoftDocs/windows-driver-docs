@@ -3,11 +3,7 @@ title: WDI_TLV_CONNECT_BSS_ENTRY
 author: windows-driver-content
 description: WDI_TLV_CONNECT_BSS_ENTRY is a TLV that contains a list of candidate connect BSS entries.
 ms.assetid: 0D74B2DE-9224-4FDF-8EA8-B22CEC0B5F26
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CONNECT_BSS_ENTRY Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

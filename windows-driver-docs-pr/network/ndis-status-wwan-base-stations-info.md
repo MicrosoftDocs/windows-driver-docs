@@ -5,11 +5,7 @@ description: NDIS_STATUS_WWAN_BASE_STATIONS_INFO
 ms.assetid: 57E22B53-5ECC-4B4C-8A98-C1125314868B
 keywords:
 - NDIS_STATUS_WWAN_BASE_STATIONS_INFO, base stations information query status notification, Mobile Broadband base stations information query status notification, MB base stations information query status notification
-ms.author: windowsdriverdev
 ms.date: 08/21/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

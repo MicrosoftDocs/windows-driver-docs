@@ -4,9 +4,6 @@ description: You can extend the capabilities of the analyze debugger command by 
 ms.assetid: 7648F789-85D5-4247-90DD-2EAA43543483
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +22,7 @@ To write an analysis extension plugin and make it available to [**!analyze**](-a
 
 When the [**!analyze**](-analyze.md) command runs in the debugger, the analysis engine looks in the extension file path for metadata files that have the .alz extension. The analysis engine reads the metadata files to determine which analysis extension plugins should be loaded. For example, suppose the analysis engine is running in response to Bug Check 0xA IRQL\_NOT\_LESS\_OR\_EQUAL, and it reads a metadata file named MyAnalyzer.alz that contains the following entries.
 
-```
+```text
 PluginId       MyPlugin
 DebuggeeClass  Kernel
 BugCheckCode   0xA
@@ -45,7 +42,7 @@ Here is a skeleton example that you can use as a starting point.
 
 1.  Build a DLL named MyAnalyzer.dll that exports the [**\_EFN\_Analyze**](https://msdn.microsoft.com/library/windows/hardware/jj983432) function shown here.
 
-    ```ManagedCPlusPlus
+    ```cpp
     #include <windows.h>
     #define KDEXT_64BIT
     #include <wdbgexts.h>
@@ -95,7 +92,7 @@ Here is a skeleton example that you can use as a starting point.
 
 2.  Create a metadata file named MyAnalyzer.alz that has the following entries.
 
-    ```
+    ```text
     PluginId      MyPlugin
     DebuggeeClass Kernel
     BugCheckCode  0xE2
@@ -119,7 +116,7 @@ Here is a skeleton example that you can use as a starting point.
 
     Verify that you see output similar to the following in the debugger.
 
-    ```
+    ```dbgcmd
     *                        Bugcheck Analysis                                    *
     *                                                                             *
     *******************************************************************************
@@ -142,7 +139,7 @@ The preceding debugger output shows that the analysis engine called the [**\_EFN
 
 The analysis engine creates a [**DebugFailureAnalysis**](https://msdn.microsoft.com/library/windows/hardware/jj983405) object to organize the data related to a particular code failure. A **DebugFailureAnalysis** object has a collection of [failure analysis entries](failure-analysis-entries.md) (FA entries), each of which is represented by an **FA\_ENTRY** structure. An analysis extension plugin uses the **IDebugFailureAnalysis2** interface to get access to this collection of FA entries. Each FA entry has a tag that identifies the kind of information that the entry contains. For example, an FA entry might have the tag **DEBUG\_FLR\_BUGCHECK\_CODE**, which tells us that the entry contains a bug check code. Tags are values in the **DEBUG\_FLR\_PARAM\_TYPE** enumeration (defined in extsfns.h), which is also called the **FA\_TAG** enumeration.
 
-```ManagedCPlusPlus
+```cpp
 typedef enum _DEBUG_FLR_PARAM_TYPE {
     ...
     DEBUG_FLR_BUGCHECK_CODE,
@@ -156,7 +153,7 @@ typedef DEBUG_FLR_PARAM_TYPE FA_TAG;
 
 Most [FA entries](failure-analysis-entries.md) have an associated data block. The **DataSize** member of the **FA\_ENTRY** structure holds the size of the data block. Some FA entries do not have an associated data block; all the information is conveyed by the tag. In those cases, the **DataSize** member has a value of 0.
 
-```ManagedCPlusPlus
+```cpp
 typedef struct _FA_ENTRY
 {
     FA_TAG Tag;
@@ -179,7 +176,7 @@ Each tag has a data type property that you can inspect to determine the data typ
 
 The following line of code gets the data type of the **DEBUG\_FLR\_BUILD\_VERSION\_STRING** tag. In this case, the data type is **DEBUG\_FA\_ENTRY\_ANSI\_STRING**. In the code, `pAnalysis` is a pointer to an [**IDebugFailureAnalysis2**](https://msdn.microsoft.com/library/windows/hardware/jj983405) interface.
 
-```ManagedCPlusPlus
+```cpp
 IDebugFAEntryTags* pTags = pAnalysis->GetDebugFATagControl(&pTags);
 
 if(NULL != pTags)
@@ -192,7 +189,7 @@ If a failure analysis entry has no data block, the data type of the associated t
 
 Recall that a [**DebugFailureAnalysis**](https://msdn.microsoft.com/library/windows/hardware/jj983405) object has a collection of [FA entries](failure-analysis-entries.md). To inspect all the FA entries in the collection, use the **NextEntry** method. The following example shows how to iterate through the entire collection of FA entries. Assume that *pAnalysis* is a pointer to an **IDebugFailureAnalysis2** interface. Notice that we get the first entry by passing **NULL** to **NextEntry**.
 
-```ManagedCPlusPlus
+```cpp
 PFA_ENTRY entry = pAnalysis->NextEntry(NULL);
 
 while(NULL != entry)
@@ -205,7 +202,7 @@ while(NULL != entry)
 
 A tag can have a name and a description. In the following code, *pAnalysis* is a pointer to an [**IDebugFailureAnalysis**](https://msdn.microsoft.com/library/windows/hardware/jj983405) interface, *pControl* is a pointer to an [**IDebugControl**](https://msdn.microsoft.com/library/windows/hardware/ff550508) interface, and `pTags` is a pointer to an [IDebugFAEntryTags](https://msdn.microsoft.com/library/windows/hardware/jj983404) interface. The code shows how to use the **GetProperties** method to get the name and description of the tag associated with an [FA entry](failure-analysis-entries.md).
 
-```ManagedCPlusPlus
+```cpp
 #define MAX_NAME_LENGTH 64
 #define MAX_DESCRIPTION_LENGTH 512
 

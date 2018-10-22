@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Points to Consider about User I/O Requests
 ms.assetid: e8143055-4ad7-4e39-a2f2-64d9e79d33a0
 keywords: ["device-specific I/O control codes WDK kernel", "private I/O control codes WDK kernel", "layered driver IRP processing WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

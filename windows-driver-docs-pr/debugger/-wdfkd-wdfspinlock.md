@@ -5,9 +5,6 @@ ms.assetid: 73e74703-ed9b-460b-a798-41bb56942aa3
 keywords: ["wdfkd.wdfspinlock Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfspinlock** extension displays information about a framework spin-lock object. This information includes the spin lock's acquisition history and the length of time that the lock was held.
 
-```
+```dbgcmd
 !wdfkd.wdfspinlock Handle
 ```
 

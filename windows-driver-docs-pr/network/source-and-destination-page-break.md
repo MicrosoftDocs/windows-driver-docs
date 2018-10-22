@@ -12,11 +12,7 @@ keywords:
 - destination page breaks WDK NetDMA
 - page breaks WDK NetDMA
 - NetDMA 2.0 WDK networking , page breaks
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

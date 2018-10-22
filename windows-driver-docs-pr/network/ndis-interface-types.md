@@ -5,11 +5,7 @@ description: This topic describes types for NDIS Interfaces.
 ms.assetid: 80320da2-d35f-41de-b001-2cb71d202ccc
 keywords:
 - NDIS Interface Types, WDK NDIS Interface Types network drivers
-ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

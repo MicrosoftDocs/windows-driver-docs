@@ -5,9 +5,6 @@ ms.assetid: 497261a9-69fb-4df2-b342-cd62bda8a51f
 keywords: ["pa (Step to Address) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,13 +21,13 @@ The **pa** command executes the program until the specified address is reached, 
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] pa [r] [= StartAddress] StopAddress ["Command"]
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 pa [r] [= StartAddress] StopAddress ["Command"]
 ```
 
@@ -96,13 +93,13 @@ During this execution, all steps are displayed explicitly. Called functions are 
 
 For example, the following command explicitly steps through the target code until the return address of the current function is reached.
 
-```
+```dbgcmd
 0:000> pa @$ra 
 ```
 
 The following example demonstrates using the **pa** command along with the **kb** command to display the stack trace:
 
-```
+```dbgcmd
 0:000> pa 70b5d2f1 "kb"
 ```
 

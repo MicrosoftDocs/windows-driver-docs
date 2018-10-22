@@ -2,11 +2,7 @@
 title: Introduction to NDIS 6.70
 description: This section introduces NDIS 6.70 and describes changes from NDIS 6.60. NDIS 6.70 is included in Windows 10, version 1703.
 ms.assetid: D846EE68-2C84-40E0-91DE-2034F75D576F
-ms.author: windowsdriverdev
 ms.date: 06/01/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

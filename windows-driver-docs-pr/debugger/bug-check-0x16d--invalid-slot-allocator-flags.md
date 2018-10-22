@@ -5,9 +5,6 @@ ms.assetid: 7A26E679-405D-4ABD-9C70-AC3B63E86C4C
 keywords: ["Bug Check 0x16D INVALID_SLOT_ALLOCATOR_FLAGS", "INVALID_SLOT_ALLOCATOR_FLAGS"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

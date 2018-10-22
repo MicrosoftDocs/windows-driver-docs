@@ -3,11 +3,7 @@ title: EFI_USBFN_IO_PROTOCOL.FreeTransferBuffer
 author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.FreeTransferBuffer
 ms.assetid: 236b925f-2c7b-4df8-b5c8-e8c2f7b853d2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ The **FreeTransferBuffer** function de-allocates the memory allocated for the tr
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_IO_FREE_TRANSFER_BUFFER) (

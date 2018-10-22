@@ -3,11 +3,7 @@ title: Activity detection sensor data fields
 author: windows-driver-content
 description: This topic provides information about the data fields that are specific to the activity detection sensor.
 ms.assetid: D123C082-9E20-44C2-A9F2-DAC0E09F61B7
-ms.author: windowsdriverdev
-ms.date: 01/04/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
 

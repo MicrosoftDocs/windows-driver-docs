@@ -4,9 +4,6 @@ description: Modifying the Source Indexing Streams in a .pdb File
 ms.assetid: 9c319667-fc71-4baf-ad12-a20e18b67d40
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +14,7 @@ For the debugger clients to use the SrcSrv Web site, the .pdb files must be modi
 
 Debugging Tools for Windows provides three files to assist in reconfiguring the .pdb files. The Cv2http.cmd and Cv2http.pl files extract the SrcSrv stream, modify it using a Perl script, and put the altered stream back in the .pdb file. The syntax is as follows:
 
-```
+```console
 cv2http.cmd PDB Alias URL
 ```
 
@@ -27,7 +24,7 @@ This script requires that all the standard SrcSrv tools be available in the path
 
 The third file, the Walk (walk.cmd) script, modifies an entire set of .pdb files. For example:
 
-```
+```console
 walk.cmd *.pdb cv2http.cmd HttpAlias https:///source
 ```
 

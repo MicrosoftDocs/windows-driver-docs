@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Allocating System-Space Memory
 ms.assetid: eee425b3-6ddd-4e9d-b51d-1f2c9ea106a5
 keywords: ["memory management WDK kernel , system-allocated space", "system-allocated space WDK kernel", "allocating system-space memory", "allocating I/O buffer memory", "I/O buffer memory allocations WDK kernel", "buffer memory allocations WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

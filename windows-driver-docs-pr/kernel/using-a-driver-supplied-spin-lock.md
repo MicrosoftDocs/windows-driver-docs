@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Using a Driver-Supplied Spin Lock
 ms.assetid: e81d5c93-47d6-407c-80a2-b2d55f9eb717
 keywords: ["spin locks WDK kernel", "driver-supplied spin locks WDK kernel", "global cancel spin locks WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 05/09/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

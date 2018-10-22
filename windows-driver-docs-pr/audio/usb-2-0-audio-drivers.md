@@ -1,15 +1,11 @@
 ---
 title: USB Audio 2.0 Drivers
 description: Starting with Windows 10, release 1703, a USB Audio 2.0 driver is shipped with Windows. This driver provides basic functionality.
-ms.author: windowsdriverdev
-ms.date: 5/14/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 05/14/2018
 ms.localizationpriority: medium
 ---
 
-## USB Audio 2.0 Drivers
+# USB Audio 2.0 Drivers
 
 Starting with Windows 10, release 1703, a USB Audio 2.0 driver is shipped with Windows. It is designed to support the USB Audio 2.0 device class. The driver is a WaveRT audio port class miniport. For more information about the  USB Audio 2.0 device class, see [http://www.usb.org/developers/docs/devclass_docs/](http://www.usb.org/developers/docs/devclass_docs/). 
 
@@ -197,14 +193,14 @@ There is not any specific partner customization that is associated with the in-b
 
 This INF file entry (provided in a update to Windows Release 1703), is used to indentify that the in-box driver is a generic device driver. 
 
-```cpp
+```inf
 GenericDriverInstalled,,,,1
 ```
 
 
 The in-box driver registers for the following compatible IDs with usbaudio2.inf.
 
-```cpp
+```inf
 USB\Class_01&SubClass_00&Prot_20
 USB\Class_01&SubClass_01&Prot_20
 USB\Class_01&SubClass_02&Prot_20
@@ -217,13 +213,13 @@ USB Audio 2.0 Devices with MIDI (subclass 0x03 above) will enumerate the MIDI fu
 
 The USB Audio 1.0 class driver registers this compatible ID with wdma_usb.inf.
  
-```cpp
+```inf
 USB\Class_01
 ```
  
 And has these exclusions:
  
-```cpp
+```inf
 USB\Class_01&SubClass_00&Prot_20
 USB\Class_01&SubClass_01&Prot_20
 USB\Class_01&SubClass_02&Prot_20

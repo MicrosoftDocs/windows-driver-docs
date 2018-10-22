@@ -3,11 +3,7 @@ title: OID_WWAN_PRESHUTDOWN
 author: windows-driver-content
 description: OID_WWAN_PRESHUTDOWN is sent to notify the modem that the system is entering the shutdown phase and the modem should finish its operations so it can be shut down properly.
 ms.assetid: B00A2D70-64E0-4686-92FC-D4095BDD713B
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_WWAN_PRESHUTDOWN Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

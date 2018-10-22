@@ -5,9 +5,6 @@ ms.assetid: c544013d-e925-40bf-b76d-bf9cefb9fd6d
 keywords: ["DBH, using"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +23,7 @@ When DBH starts, it loads the symbols for the specified module, and then present
 
 For example, the following sequence starts DBH by specifying the target process with process ID 4672, then executes the **enum** command at the DBH prompt to display symbols matching a specific pattern, and then executes the **q** command to quit DBH:
 
-```
+```console
 C:\> dbh -p:4672 
             400000 : TimeTest
           77820000 : ntdll
@@ -50,7 +47,7 @@ If you wish to run only a single DBH command, you can specify it at the end of t
 
 For example, the previous example could be replaced with a single command line:
 
-```
+```console
 C:\> dbh -p:4672 enum TimeTest!ma* 
            400000 : TimeTest
          77820000 : ntdll
@@ -68,7 +65,7 @@ This method of running DBH is called *batch mode*, because it can be easily used
 
 DBH can select a target in three ways: by the process ID of a running process, by the name of the executable, or by the name of the symbol file. For example, if there is exactly one instance of MyProg.exe currently running, with process ID 1234, then the following commands are almost equivalent:
 
-```
+```console
 C:\> dbh -v -p:1234 
 C:\> dbh -v c:\mydir\myprog.exe 
 C:\> dbh -v c:\mydir\myprog.pdb 

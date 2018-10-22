@@ -5,9 +5,6 @@ ms.assetid: 57f55632-8320-47cc-8a20-5a2cf3b42b3a
 keywords: ["process Windows Debugging"]
 ms.author: domars
 ms.date: 08/02/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -26,7 +23,7 @@ This extension can be used only during kernel-mode debugging.
 
 Syntax
 
-```
+```dbgcmd
 !process [/s Session] [/m Module] [Process [Flags]]
 !process [/s Session] [/m Module] 0 Flags ImageName
 ```
@@ -81,7 +78,7 @@ Remarks
 
 The following is an example of a **!process 0 0** display:
 
-```
+```dbgcmd
 kd> !process 0 0
 **** NT ACTIVE PROCESS DUMP ****
 PROCESS 80a02a60  Cid: 0002    Peb: 00000000  ParentCid: 0000
@@ -152,7 +149,7 @@ The following table describes some of the elements of the **!process 0 0** outpu
 
 To display full details on one process, set *Flags* to 7. The process itself can be specified by setting *Process* equal to the process address, setting *Process* equal to the process ID, or setting *ImageName* equal to the executable image name. Here is an example:
 
-```
+```dbgcmd
 kd> !process fb667a00 7
 PROCESS fb667a00 Cid: 0002  Peb: 00000000 ParentCid: 0000
   DirBase: 00030000 ObjectTable: e1000f88 TableSize: 112.

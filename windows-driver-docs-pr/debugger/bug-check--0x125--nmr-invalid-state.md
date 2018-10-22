@@ -5,9 +5,6 @@ ms.assetid: DD80FC61-8211-46A0-9D44-CF1E729B12D4
 keywords: ["Bug Check 0x125 NMR_INVALID_STATE", "NMR_INVALID_STATE"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

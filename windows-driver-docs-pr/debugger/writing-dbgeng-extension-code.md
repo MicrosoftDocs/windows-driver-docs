@@ -5,9 +5,6 @@ ms.assetid: b1ee686b-986e-46eb-a4bf-93e2de6d1aeb
 keywords: ["DbgEng Extensions, writing"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +18,7 @@ ms.localizationpriority: medium
 
 If you intend to use functions from wdbgexts.h, you need to define KDEXT\_64BIT before wdbgexts.h is included. For example:
 
-```
+```cpp
 #define KDEXT_64BIT 
 #include wdbgexts.h 
 #include dbgeng.h 

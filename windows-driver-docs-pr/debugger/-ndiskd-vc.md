@@ -5,9 +5,6 @@ ms.assetid: 8F172026-3FBC-4686-A3A4-F54F1A0D08E5
 keywords: ["ndiskd.vc Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

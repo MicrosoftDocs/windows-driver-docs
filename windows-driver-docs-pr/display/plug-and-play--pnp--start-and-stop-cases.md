@@ -4,11 +4,7 @@ description: All Windows Display Driver Model (WDDM) 1.2 and later display minip
 ms.assetid: A95DCFEA-BC1B-4A13-9850-13814725D53E
 keywords:
 - Plug and Play in display drivers WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -101,7 +97,7 @@ These are the return codes that the driver should return after a PnP start proce
 
 A Plug and Play (PnP) stop process on the display device typically occurs when a driver is being upgraded to a new version. In this case the operating system calls the driver's [*DxgkDdiStopDeviceAndReleasePostDisplayOwnership*](https://msdn.microsoft.com/library/windows/hardware/hh451415) function, which requires the driver to provide accurate frame buffer information.
 
-In the [*DxgkDdiStopDeviceAndReleasePostDisplayOwnership*](https://msdn.microsoft.com/library/windows/hardware/hh451415) call the driver must ensure that the source visibility for the active VidPn targets is true ([**DXGKARG\_SETVIDPNSOURCEVISIBILITY**](https://msdn.microsoft.com/library/windows/hardware/ff559486).**Visible** = **TRUE**). In addition, starting in WDDM 1.2 the driver needs to ensure that the surface that the pixel pipeline is programmed to scan out from is filled with black pixels. The driver should complete filling the surface with black pixels before before source visibility is set to true.
+In the [*DxgkDdiStopDeviceAndReleasePostDisplayOwnership*](https://msdn.microsoft.com/library/windows/hardware/hh451415) call the driver must ensure that the source visibility for the active VidPn targets is true ([**DXGKARG\_SETVIDPNSOURCEVISIBILITY**](https://msdn.microsoft.com/library/windows/hardware/ff559486).**Visible** = **TRUE**). In addition, starting in WDDM 1.2 the driver needs to ensure that the surface that the pixel pipeline is programmed to scan out from is filled with black pixels. The driver should complete filling the surface with black pixels before source visibility is set to true.
 
 Be sure to also implement [*DxgkDdiStopDevice*](https://msdn.microsoft.com/library/windows/hardware/ff560781) in your driver. In some cases the operating system might call *DxgkDdiStopDevice* instead of [*DxgkDdiStopDeviceAndReleasePostDisplayOwnership*](https://msdn.microsoft.com/library/windows/hardware/hh451415), or after a call to *DxgkDdiStopDeviceAndReleasePostDisplayOwnership* fails.
 

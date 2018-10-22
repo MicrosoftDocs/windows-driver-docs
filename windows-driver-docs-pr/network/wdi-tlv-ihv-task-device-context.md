@@ -3,11 +3,7 @@ title: WDI_TLV_IHV_TASK_DEVICE_CONTEXT
 author: windows-driver-content
 description: WDI_TLV_IHV_TASK_DEVICE_CONTEXT is a TLV that contains IHV-provided device context for NDIS_STATUS_WDI_INDICATION_IHV_TASK_REQUEST.
 ms.assetid: FBFE8931-DF29-4605-A14D-12CEC0433086
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_IHV_TASK_DEVICE_CONTEXT Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

@@ -5,9 +5,6 @@ ms.assetid: 3efd0cd1-bcdd-4785-aa00-a32a7578219c
 keywords: ["rpcexts.getendpointinfo Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!rpcexts.getendpointinfo** extension searches the system's RPC state information for endpoint information.
 
-```
+```dbgcmd
     !rpcexts.getendpointinfo [EndpointName] 
 !rpcexts.getendpointinfo -? 
 ```
@@ -68,7 +65,7 @@ This extension can only be used with CDB or with user-mode WinDbg.
 
 Here is an example:
 
-```
+```dbgcmd
 0:002> !rpcexts.getendpointinfo
 Searching for endpoint info ...
 ## PID  CELL ID   ST PROTSEQ        ENDPOINT

@@ -5,9 +5,6 @@ ms.assetid: d5f2404e-3e7d-4de2-a772-0d42169eb9ad
 keywords: ["dbgerr002", "Bad pointer (dbgerr002)"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: 2E739F6B-4618-44A5-B060-F2BCB77B82A3
 keywords: ["Bug Check 0x14A KERNEL_WMI_INTERNAL", "KERNEL_WMI_INTERNAL"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

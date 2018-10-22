@@ -3,11 +3,7 @@ title: OID_NIC_SWITCH_HARDWARE_CAPABILITIES
 author: windows-driver-content
 description: An overlying driver issues an object identifier (OID) query request of OID_NIC_SWITCH_HARDWARE_CAPABILITIES to obtain the hardware capabilities of the NIC switch in the network adapter.
 ms.assetid: 2c417a16-68e1-4754-88a5-8bac4653e05d
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_NIC_SWITCH_HARDWARE_CAPABILITIES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

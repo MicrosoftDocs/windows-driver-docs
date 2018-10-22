@@ -4,9 +4,6 @@ description: The INVALID_KERNEL_STACK_ADDRESS bug check has a value of 0x000001C
 keywords: ["Bug Check 0x1CE INVALID_KERNEL_STACK_ADDRESS",  "INVALID_KERNEL_STACK_ADDRESS"]
 ms.author: domars
 ms.date: 05/23/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

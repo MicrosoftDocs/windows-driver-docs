@@ -5,6 +5,7 @@ description: Testing Your Property Sheet
 ms.assetid: 9886a758-392b-451d-874d-5ffcc5f9f5cd
 keywords: ["property sheets WDK DirectInput , testing", "game controllers WDK DirectInput , property sheet testing", "control panels WDK DirectInput , property sheet testing", "testing property sheets WDK DirectInput", "debugging control panel applications WDK DirectInput"]
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Testing Your Property Sheet

@@ -3,11 +3,7 @@ title: EFI_USBFN_IO_PROTOCOL.Transfer
 author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.Transfer
 ms.assetid: 0585de75-9268-4964-8c5f-dcc3338e5287
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,7 +40,7 @@ The **Transfer** function handles transferring data to or from the host on the s
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI *EFI_USBFN_IO_TRANSFER) (

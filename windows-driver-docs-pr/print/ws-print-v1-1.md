@@ -3,11 +3,7 @@ title: Web Services on Devices for Printing (WS-Print)
 author: windows-driver-content
 description: Web services on devices for printing (WS-Print) was introduced in Windows Vista, to provide a connection protocol for printing and scanning peripherals.
 ms.assetid: 4A641EF8-FBD3-46CA-9284-28AF1A4B8226
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -81,7 +77,7 @@ Printers that support WS-Print 1.1 elements must update their PrinterDescription
 
 Print devices that support WS-Print v1.1 must include the following content in their PrinterDescription in order for Windows to query for any other elements in that namespace.
 
-```XML
+```xml
 <soap:Envelope
 ...
   xmlns:wprt11="http://schemas.microsoft.com/windows/2010/06/wdp/printv11">"
@@ -92,7 +88,7 @@ Print devices that support WS-Print v1.1 must include the following content in t
 
 The following XML snippet is derived from the WSD Print Service Specification v1.0, and it shows the proper usage of the content in the preceding section.
 
-```XML
+```xml
 <soap:Envelope
         xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
         xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
@@ -136,7 +132,7 @@ The following XML snippet is derived from the WSD Print Service Specification v1
 
 The following XML snippet shows the schema for a print device that supports WS-Print v1.1.
 
-```XML
+```xml
 <xs:schema targetNamespace="http://schemas.microsoft.com/windows/2010/06/wdp/printv11"
            xmlns:wprt11="http://schemas.microsoft.com/windows/2010/06/wdp/printv11"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -164,7 +160,7 @@ Printers that support WS-Print 1.2 elements must update their PrinterDescription
 
 Print devices that support WS-Print v1.2 must include the following content in their PrinterDescription in order for Windows to query for any other elements in that namespace.
 
-```XML
+```xml
 <soap:Envelope
 …
     xmlns:wprtV12="http://schemas.microsoft.com/windows/2012/10/wdp/printV12">
@@ -176,7 +172,7 @@ Print devices that support WS-Print v1.2 must include the following content in t
 
 The following XML snippet is derived from the WSD Print Service Specification v1.2, and it shows the proper usage of the content in the preceding section.
 
-```XML
+```xml
 <soap:Envelope
      xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
      xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
@@ -222,7 +218,7 @@ The schema examples in the following three sections, show how to use some of the
 
 This schema provides device-specific GPD or PPD configuration files for this device.
 
-```XML
+```xml
    <xs:annotation>
         <xs:documentation>Driver Configuration File definition</xs:documentation>
     </xs:annotation>
@@ -242,7 +238,7 @@ This schema provides device-specific GPD or PPD configuration files for this dev
 
 The following schema describes a ModelID for the device, and is used for device metadata retrieval. For more information on ModelIDs, see [ModelID element](http://msdn.microsoft.com/library/windows/hardware/ff549295.aspx).
 
-```XML
+```xml
     <xs:annotation>
         <xs:documentation> Print Device Model Id value for device differentiation</xs:documentation>
         <xs:documentation> Always represented as a GUID</xs:documentation>
@@ -260,7 +256,7 @@ The following schema describes a ModelID for the device, and is used for device 
 
 The following schema retrieves an RGB triple that represents the color for a particular ink or toner type. This value should be specified for any ink or toner consumables to enable a better representation of the color to be shown in app UI.
 
-```XML
+```xml
     <xs:annotation>
         <xs:documentation>
             Ink/Toner Color Representation definition

@@ -5,9 +5,6 @@ ms.assetid: 2659491F-2257-4553-A7A4-ECA39DD0A0F7
 keywords: ["Bug Check 0x128 WORKER_THREAD_RETURNED_WITH_BAD_IO_PRIORITY", "WORKER_THREAD_RETURNED_WITH_BAD_IO_PRIORITY"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

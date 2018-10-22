@@ -5,9 +5,6 @@ ms.assetid: 13fb651f-f2a2-4591-9316-37bd9616c829
 keywords: ["Bug Check 0x3A SYSTEM_UNWIND_PREVIOUS_USER", "SYSTEM_UNWIND_PREVIOUS_USER"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

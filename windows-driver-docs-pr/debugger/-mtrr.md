@@ -5,9 +5,6 @@ ms.assetid: 6dbaaf48-1434-41aa-a00f-f85112353bbe
 keywords: ["MTRR register", "registers, MTRR register", "mtrr Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!mtrr** extension displays the contents of the MTRR register.
 
-```
+```dbgcmd
 !mtrr
 ```
 

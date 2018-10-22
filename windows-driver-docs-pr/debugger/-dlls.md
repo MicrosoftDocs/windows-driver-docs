@@ -5,9 +5,6 @@ ms.assetid: a47ec828-ba5a-4f0d-be85-18633c4e4185
 keywords: ["DLL table entry", "dlls Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!dlls** extension displays the table entries of all loaded modules or all modules that a specified thread or process are using.
 
-```
+```dbgcmd
 !dlls [Options] [LoaderEntryAddress] 
 !dlls -h
 ```
@@ -97,7 +94,7 @@ In kernel mode, this extension displays the modules for the current [process con
 
 The following examples shows you how to use the **!dlls** extension.
 
-```
+```dbgcmd
 kd> !dlls -c 77f60000
 Dump dll containing 0x77f60000:
 

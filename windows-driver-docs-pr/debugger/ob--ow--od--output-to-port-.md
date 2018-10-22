@@ -5,9 +5,6 @@ ms.assetid: 04133df7-4b60-4709-a9e1-5946c8d30f8c
 keywords: ["ob, ow, od (Output to Port) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **ob**, **ow**, and **od** commands send a byte, word, or double word to the selected port.
 
-```
+```dbgcmd
 ob Address Value 
 ow Address Value 
 od Address Value 

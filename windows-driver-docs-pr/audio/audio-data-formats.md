@@ -14,11 +14,7 @@ keywords:
 - WDM audio data formats WDK
 - formats WDK audio
 - data formats WDK audio , about audio data formats
-ms.author: windowsdriverdev
 ms.date: 02/15/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

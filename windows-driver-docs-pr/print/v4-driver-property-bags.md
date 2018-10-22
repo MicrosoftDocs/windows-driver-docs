@@ -3,11 +3,7 @@ title: V4 Printer Driver Property Bags
 author: windows-driver-content
 description: The v4 print driver model provides a number of property bags that facilitate a data flow from customized UI applications to the rendering process.
 ms.assetid: 4E20303A-BEB3-4928-BA5A-356D978FA2BE
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -105,7 +101,7 @@ The DEVMODE property bag uses an XML file to specify the members of the property
 
 The follwoing code snippet shows a DEVMODE Property Bag Mapping XML Sample.
 
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Properties xmlns="http://schemas.microsoft.com/windows/2011/08/printing/devmodemap">
   <Property Name="FabrikamAccountCode">
@@ -182,7 +178,7 @@ Rendering filters should read the incoming PrintTicket’s PageMediaSize setting
 
 **Queue Property Bag XML Sample**. The following code snippet shows the XML syntax that could be used for three properties, Name1, Name2, Name3 and their child elements:
 
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Properties xmlns= "http://schemas.microsoft.com/windows/2011/08/printing/queueproperties">
   <Property Name="Name1">

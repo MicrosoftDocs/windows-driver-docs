@@ -4,9 +4,6 @@ description: Using Aliases
 ms.assetid: ee0540d0-5bfd-47ef-92b1-ec1d6954aec7
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -129,7 +126,7 @@ You cannot use commands that are available only in WinDbg ([**.open**](-open--op
 
 When you use an alias in a script file, you must take special care to make sure that the alias is expanded at the correct time. Consider the following script:
 
-```
+```text
 .foreach (value {dd 610000 L4})
 {
    as /x ${/v:myAlias} value + 1
@@ -141,7 +138,7 @@ ad myAlias
 
 The first time through the loop, the [**as, aS (Set Alias)**](as--as--set-alias-.md) command assigns a value to the myAlias. The value assigned to myAlias is 1 plus 610000 (the first output of the dd command). However, when the [**.echo (Echo Comment)**](-echo--echo-comment-.md) command is executed, myAlias has not yet been expanded, so instead of seeing 610001, we see the text "myAlias".
 
-```
+```dbgcmd
 0:001> $$>< c:\Script02.txt
 00610000 myAlias
 00905a4d 0x610001
@@ -152,7 +149,7 @@ The first time through the loop, the [**as, aS (Set Alias)**](as--as--set-alias-
 
 The problem is that myAlias is not expanded until a new block of code is entered. The next entry to the loop is a new block, so myAlias gets expanded to 610001. But it is too late: we should have seen 610001 the first time through the loop, not the second time.We can fix this problem by enclosing the [**.echo (Echo Comment)**](-echo--echo-comment-.md) command in a new block as shown in the following script.
 
-```
+```text
 .foreach (value {dd 610000 L4}) 
 {
    as /x ${/v:myAlias} value + 1
@@ -164,7 +161,7 @@ ad myAlias
 
 With the altered script, we get the following correct output.
 
-```
+```dbgcmd
 0:001> $$>< c:\Script01.txt
 00610000 0x610001
 00905a4d 0x905a4e
@@ -179,7 +176,7 @@ For more information, see [**.block**](-block.md) and [**${ } (Alias Interpreter
 
 When you use a [**.foreach**](-foreach.md) token in the definition of an alias, you must take special care to ensure that the token is expanded. Consider the following sequence of commands.
 
-```
+```dbgcmd
 r $t0 = 5
 ad myAlias
 .foreach /pS 2 /ps 2 (Token {?@$t0}) {as myAlias Token}
@@ -188,7 +185,7 @@ al
 
 The first command sets the value of the **$t0** pseudo register to 5. The second command deletes any value that might have been previously assigned to myAlias. The third command takes the third token of the **?@$t0** command and attempts to assign the value of that token to myAlias. The fourth command lists all aliases and their values. We would expect the value of myAlias to be 5, but instead the value is the word "Token".
 
-```
+```dbgcmd
    Alias            Value  
  -------          ------- 
  myAlias          Token 
@@ -196,7 +193,7 @@ The first command sets the value of the **$t0** pseudo register to 5. The second
 
 The problem is that the [**as**](as--as--set-alias-.md) command is at the beginning of the line in the body of the [**.foreach**](-foreach.md) loop. When a line begins with an **as** command, aliases and tokens in that line are not expanded. If we put a semicolon or blank space before the **as** command, then any alias or token that already has a value is expanded. In this example, myAlias is not expanded because it does not already have a value. Token is expanded because it has a value of 5. Here is the same sequence of commands with the addition of a semicolon before the **as** command.
 
-```
+```dbgcmd
 r $t0 = 5
 ad myAlias
 .foreach /pS 2 /ps 2 (Token {?@$t0}) {;as myAlias Token}
@@ -205,7 +202,7 @@ al
 
 Now we get the expected output.
 
-```
+```dbgcmd
   Alias            Value  
  -------          ------- 
  myAlias          5 
@@ -217,7 +214,7 @@ You can use a fixed-name alias in the definition of any alias. You can also use 
 
 When you are using recursive definitions of this type, each alias is translated as soon as it is used. For example, the following example displays **3**, not **7**.
 
-```
+```dbgcmd
 0:000> r $.u2=2 
 0:000> r $.u1=1+$u2 
 0:000> r $.u2=6 
@@ -227,7 +224,7 @@ Evaluate expression: 3 = 00000003
 
 Similarly, the following example displays **3**, not **7**.
 
-```
+```dbgcmd
 0:000> as fred 2 
 0:000> r $.u1= 1 + fred 
 0:000> as fred 6 
@@ -237,7 +234,7 @@ Evaluate expression: 3 = 00000003
 
 The following example is also permitted and displays **9**.
 
-```
+```dbgcmd
 0:000> r $.u0=2 
 0:000> r $.u0=7+$u0 
 0:000> ? $u0
@@ -248,21 +245,21 @@ Evaluate expression: 9 = 00000009
 
 You can use aliases so that you do not have to type long or complex symbol names, as in the following example.
 
-```
+```dbgcmd
 0:000> as Short usersrv!NameTooLongToWantToType
 0:000> dw Short +8
 ```
 
 The following example is similar to the preceding example but it uses a fixed-name alias.
 
-```
+```dbgcmd
 0:000> r $.u0=usersrv!NameTooLongToWantToType
 0:000> dw $u0+8
 ```
 
 You can use aliases as macros for commands that you use frequently. The following example increments the **eax** and **ebx** registers two times.
 
-```
+```dbgcmd
 0:000> as GoUp r eax=eax+1; r ebx=ebx+1
 0:000> GoUp
 0:000> GoUp
@@ -270,21 +267,21 @@ You can use aliases as macros for commands that you use frequently. The followin
 
 The following example uses an alias to simplify typing of commands.
 
-```
+```dbgcmd
 0:000> as Cmd "dd esp 14; g"
 0:000> bp MyApi Cmd 
 ```
 
 The following example is similar to the preceding example but it uses a fixed-name alias.
 
-```
+```dbgcmd
 0:000> r $.u5="dd esp 14; g"
 0:000> bp MyApi $u5 
 ```
 
 Both of the preceding examples are equivalent to the following command.
 
-```
+```dbgcmd
 0:000> bp MyApi "dd esp 14; g"
 ```
 
@@ -292,7 +289,7 @@ Both of the preceding examples are equivalent to the following command.
 
 In CDB (and NTSD), you can predefine fixed-name aliases in the [tools.ini](configuring-tools-ini.md) file. To predefine a fixed-name alias, add the **$u** fields that you want to your \[NTSD\] entry, as in the following example.
 
-```
+```ini
 [NTSD]
 $u1:_ntdll!_RtlRaiseException
 $u2:"dd esp 14;g"

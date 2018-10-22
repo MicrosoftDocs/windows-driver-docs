@@ -5,9 +5,6 @@ ms.assetid: b9bac11e-605b-4064-b078-d3171b59da3b
 keywords: ["searchpte Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!searchpte** extension searches physical memory for the specified page frame number (PFN).
 
-```
+```dbgcmd
 !searchpte PFN 
 !searchpte -?
 ```

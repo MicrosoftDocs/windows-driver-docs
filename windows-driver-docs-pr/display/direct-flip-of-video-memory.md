@@ -5,11 +5,7 @@ ms.assetid: 00A8FCB1-966A-4176-9840-7EB5BA300C8B
 keywords:
 - direct flip
 - DirectFlip
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

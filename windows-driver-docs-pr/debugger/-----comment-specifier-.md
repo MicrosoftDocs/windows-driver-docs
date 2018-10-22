@@ -5,9 +5,6 @@ ms.assetid: bafd5e97-d443-4bfc-b3ee-c2867ed139a2
 keywords: ["comment token ($$)", "$$ (Comment Specifier) Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

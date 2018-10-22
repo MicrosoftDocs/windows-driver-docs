@@ -5,9 +5,6 @@ ms.assetid: 01687f13-9eb7-48f0-a0d6-54fee00084ab
 keywords: ["PEB (process environment block)", "process, process environment block (PEB)", "peb Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!peb** extension displays a formatted view of the information in the process environment block (PEB).
 
-```
+```dbgcmd
 !peb [PEB-Address]
 ```
 
@@ -68,7 +65,7 @@ If the **!peb** extension with no argument gives you an error in kernel mode, yo
 
 The exact output displayed depends on the Windows version and on whether you are debugging in kernel mode or user mode. The following example is taken from a kernel debugger attached to a Windows Server 2003 target:
 
-```
+```dbgcmd
 kd> !peb
 PEB at 7ffdf000
     InheritedAddressSpace:    No

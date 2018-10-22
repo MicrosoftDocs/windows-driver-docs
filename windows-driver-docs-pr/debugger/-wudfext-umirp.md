@@ -5,9 +5,6 @@ ms.assetid: b31b864d-0c94-48b8-9ffd-f14639b9a551
 keywords: ["wudfext.umirp Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wudfext.umirp** extension displays information about a host user-mode I/O request packet (UM IRP).
 
-```
+```dbgcmd
 !wudfext.umirp Address
 ```
 
@@ -68,7 +65,7 @@ Each UM IRP has one or more stack locations. Each stack location corresponds to 
 
 The following is an example of the **!wudfext.umirp** display:
 
-```
+```dbgcmd
 kd> !umirp 3dd480 
 UM IRP: 0x003dd480  UniqueId: 0xde  Kernel Irp: 0x0x85377850
   Type: WudfMsg_READ

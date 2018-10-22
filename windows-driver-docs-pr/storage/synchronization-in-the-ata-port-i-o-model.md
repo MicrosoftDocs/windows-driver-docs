@@ -6,11 +6,7 @@ ms.assetid: 91b95588-8cf7-4833-84c2-a991fd066fb2
 keywords:
 - ATA Port drivers WDK , synchronization
 - synchronization WDK ATA Port driver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: 0e2c230e-d942-4f32-ae8e-7a54aceb4c19
 keywords: ["Bug Check 0x3B SYSTEM_SERVICE_EXCEPTION", "SYSTEM_SERVICE_EXCEPTION"]
 ms.author: domars
 ms.date: 09/12/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

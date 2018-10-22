@@ -5,9 +5,6 @@ ms.assetid: 416c062f-cbf9-4134-aa2c-306147a466b5
 keywords: [".srcpath, .lsrcpath (Set Source Path) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.srcpath** and **.lsrcpath** commands set or display the source file search path.
 
-```
+```dbgcmd
 .srcpath[+] [Directory [; ...]] 
 .lsrcpath[+] [Directory [; ...]] 
 ```

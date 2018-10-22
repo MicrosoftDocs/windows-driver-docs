@@ -3,11 +3,7 @@ title: Protocol Driver Synchronous OID Requests
 description: This topic describes miniport adapter Synchronous OID requests
 ms.assetid: 34B88444-DDF1-4AEA-8277-3EA87CA7004A
 keywords: Protocol driver Synchronous OID Requests Interface, Protocol driverSynchronous OID call, Protocol driverWDK Synchronous OIDs, Protocol driverSynchronous OID request
-ms.author: windowsdriverdev
 ms.date: 09/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

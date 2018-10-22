@@ -16,18 +16,18 @@ api_name:
 - IOleCvt.ToUtf8
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # IOleCvt::ToUtf8 method
-
 
 The **ToUtf8** property enables an ASP Web page to translate a string of Unicode characters to the UTF-8 format.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 [propget, id(1), helpstring("property ToUtf8")] HRESULT ToUtf8(
   [in]          BSTR bstrUnicode,
   [out, retval] BSTR *pVal
@@ -69,28 +69,20 @@ Return value
 </tbody>
 </table>
 
- 
-
-## <span id="ddk_iolecvt_toutf8_gg"></span><span id="DDK_IOLECVT_TOUTF8_GG"></span>
-
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 UTF-8 is an alternative coded-representation form for all of the characters of the UCS (Universal Multibyte Octet-Coded Character Set). It can be used to transmit text data through communication systems which assume that individual octets in the range 0x00 to 0x7F have a definition according to ISO/IEC 4873, including a C0 set of control functions according to the 8-bit structure of ISO/IEC 2022.
 
 In the following example, function **Write** returns a string converted to UTF-8 format, provided that the global variable `bUTF8` is **TRUE**. Otherwise **Write** returns the unmodified string.
 
-```cpp
-    Function Write (strUnicode)
-        If bUTF8 Then
-            Write = OleCvt.ToUtf8 (strUnicode)
-        Else
-            Write = strUnicode
-        End If
-    End Function
+```vb
+Function Write (strUnicode)
+    If bUTF8 Then
+        Write = OleCvt.ToUtf8 (strUnicode)
+    Else
+        Write = strUnicode
+    End If
+End Function
 ```
 
 Requirements
@@ -106,17 +98,5 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-

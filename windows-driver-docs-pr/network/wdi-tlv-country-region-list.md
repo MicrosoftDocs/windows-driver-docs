@@ -3,11 +3,7 @@ title: WDI_TLV_COUNTRY_REGION_LIST
 author: windows-driver-content
 description: WDI_TLV_COUNTRY_REGION_LIST is a TLV that contains a list of country or region codes.
 ms.assetid: 675C176F-EE7A-41E0-9770-4D810F29E7BF
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_COUNTRY_REGION_LIST Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

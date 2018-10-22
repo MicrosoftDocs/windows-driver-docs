@@ -5,9 +5,6 @@ ms.assetid: 82c5cbf7-bccd-4abf-b52a-2db65e0a0c2c
 keywords: [".leave Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.leave** token is used to exit from a [**.catch**](-catch.md) block.
 
-```
+```dbgcmd
 .catch { ... ; .if (Condition) .leave ; ... } 
 ```
 

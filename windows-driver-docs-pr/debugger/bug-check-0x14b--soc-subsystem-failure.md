@@ -5,9 +5,6 @@ ms.assetid: CC42D634-90CE-43F1-8552-E5DE711D2117
 keywords: ["Bug Check 0x14B SOC_SUBSYSTEM_FAILURE", "Bug Check 0x14B SOC_SUBSYSTEM_FAILURE"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

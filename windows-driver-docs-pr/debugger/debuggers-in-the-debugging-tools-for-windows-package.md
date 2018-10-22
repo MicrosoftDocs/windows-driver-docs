@@ -5,9 +5,6 @@ ms.assetid: 13F9D82A-4C04-425A-A063-B349DB5C8E08
 keywords: ["WinDbg", "KD", "CDB", "NTSD"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -94,7 +91,7 @@ There is a variation of the CDB debugger named Microsoft NT Symbolic Debugger (N
 
 Since the **start** command can also be used to spawn a new console window, the following two constructions will give the same results:
 
-```
+```console
 start cdb parameters 
 ntsd parameters
 ```

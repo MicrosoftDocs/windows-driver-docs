@@ -3,15 +3,8 @@ title: TTD Memory Objects
 description: This section describes the memory model objects associated with time travel debugging.
 ms.author: domars
 ms.date: 01/16/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
-
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
 
 # TTD Memory Objects
 ## Description
@@ -58,7 +51,7 @@ Note that this is a function that does computation, so it takes a while to run.
 
 This example shows a grid display of all the positions in the trace where the four bytes of memory starting at 0x00a4fca0 were read access occurred. Click on any entry to drill down on each occurrence of memory access.
 
-```
+```dbgcmd
 dx -g @$cursession.TTD.Memory(0x00a4fca0,0x00a4fca4, "r")
 ```
 
@@ -66,7 +59,7 @@ dx -g @$cursession.TTD.Memory(0x00a4fca0,0x00a4fca4, "r")
 
 You can click on the TimeStart fields in any of the events in the grid display, to display information for that event. 
 
-```
+```dbgcmd
 0:000> dx -r1 @$cursession.TTD.Memory(0x00a4fca0,0x00a4fca4, "r")[16].TimeStart
 @$cursession.TTD.Memory(0x00a4fca0,0x00a4fca4, "r")[16].TimeStart                 : 5D:113 [Time Travel]
     Sequence         : 0x5d
@@ -75,7 +68,7 @@ You can click on the TimeStart fields in any of the events in the grid display, 
 
 To move to the position in the trace that the event occurred, click on [Time Travel].
 
-```
+```dbgcmd
 0:000> dx @$cursession.TTD.Memory(0x00a4fca0,0x00a4fca4, "r")[16].TimeStart.SeekTo()
 @$cursession.TTD.Memory(0x00a4fca0,0x00a4fca4, "r")[16].TimeStart.SeekTo()
 (27b8.3168): Break instruction exception - code 80000003 (first/second chance not available)
@@ -89,7 +82,7 @@ cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000206
 
 In this example, all of the positions in the trace where the four bytes of memory starting at 0x1bf7d0 were read/write accessed are listed. Click on any entry to drill down on each occurrence of memory access.
 
-```
+```dbgcmd
 0:000> dx @$cursession.TTD.Memory(0x1bf7d0,0x1bf7d4, "rw")
 @$cursession.TTD.Memory(0x1bf7d0,0x1bf7d4, "rw")                
     [0x0]           
@@ -101,7 +94,7 @@ In this example, all of the positions in the trace where the four bytes of memor
 ```
 In this example all of the postions in the trace where the four bytes of memory starting at 0x13a1710 were execute/change accessed are listed. Click on any occurance to drill down on for addtional information on each occurance of memory access.  
 
-```
+```dbgcmd
 0:000> dx -r1 @$cursession.TTD.Memory(0x13a1710,0x13a1714, "ec")[0]
 @$cursession.TTD.Memory(0x13a1710,0x13a1714, "ec")[0]                
     EventType        : MemoryAccess

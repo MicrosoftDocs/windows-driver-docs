@@ -5,9 +5,6 @@ ms.assetid: 7e30efd5-2bdc-420c-b3ed-504280ddd8f7
 keywords: ["critsec Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!critsec** extension displays a critical section.
 
-```
+```dbgsyntax
 !critsec Address 
 ```
 
@@ -64,7 +61,7 @@ If you do not know the address of the critical section, you should use the [**!n
 
 Here is an example:
 
-```
+```dbgcmd
 0:000> !critsec 3a8c0e9c
 
 CritSec +3a8c0e9c at 3A8C0E9C

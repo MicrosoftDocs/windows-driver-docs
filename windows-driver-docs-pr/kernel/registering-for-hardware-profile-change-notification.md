@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Registering for Hardware Profile Change Notification
 ms.assetid: 3aaa09f7-ac63-4b56-917a-74cf344f6dd3
 keywords: ["notifications WDK PnP , hardware profile changes", "hardware profile change notifications WDK PnP", "EventCategoryHardwareProfileChange notification", "profile change notifications WDK PnP", "registering hardware profile change notifications", "machine hardware profile change notifications WDK PnP", "IoRegisterPlugPlayNotification"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

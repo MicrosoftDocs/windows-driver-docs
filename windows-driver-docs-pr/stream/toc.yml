@@ -1,5 +1,7 @@
 - name: "Streaming media devices design guide"
   href: index.md
+- name: "Frame Server Custom Media Source"
+  href: frame-server-custom-media-source.md
 - name: "360 camera video capture"
   href: 360-camera-video-capture.md
 - name: "Camera intrinsics"

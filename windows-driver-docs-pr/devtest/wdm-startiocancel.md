@@ -2,11 +2,7 @@
 title: StartIoCancel rule (wdm)
 description: The StartIoCancel rule specifies that the driver must not call IoSetStartIoAttributes with the NonCancelable parameter set to FALSE before calling IoSetCancelRoutine with a non-NULLCancel routine.
 ms.assetid: 08fde0b1-4f4e-473a-9e07-3b39683a3a1b
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["StartIoCancel rule (wdm)"]
 topic_type:
 - apiref

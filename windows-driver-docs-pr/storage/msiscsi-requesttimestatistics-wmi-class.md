@@ -3,6 +3,7 @@ title: MSiSCSI\_RequestTimeStatistics WMI Class
 description: MSiSCSI\_RequestTimeStatistics WMI Class
 ms.assetid: 3e9f3214-3120-41f6-bb06-7ace4f243c5f
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_RequestTimeStatistics WMI Class

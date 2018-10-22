@@ -5,9 +5,6 @@ ms.assetid: 14FE8B69-C260-41DE-AE01-BE127ABB6267
 keywords: ["Bug Check 0x155 OS_DATA_TAMPERING", "OS_DATA_TAMPERING"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

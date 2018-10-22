@@ -3,11 +3,7 @@ title: OID_RECEIVE_FILTER_CURRENT_CAPABILITIES
 author: windows-driver-content
 description: Overlying drivers issue OID query requests of OID_RECEIVE_FILTER_CURRENT_CAPABILITIES to obtain the currently enabled receive filtering capabilities of a network adapter.
 ms.assetid: bd4f5b9b-e33b-42ba-a430-b3b6108c80b1
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_RECEIVE_FILTER_CURRENT_CAPABILITIES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

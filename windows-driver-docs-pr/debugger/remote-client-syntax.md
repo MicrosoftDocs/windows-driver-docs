@@ -5,9 +5,6 @@ ms.assetid: 4728ef17-a365-4024-815c-2719b51b81f6
 keywords: ["Remote Client Syntax Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 To start the client side of the Remote tool, use the following syntax at the command line.
 
-```
+```console
 remote /c Server SessionName [/L Lines] [/f] [/b] [/k ColorFile] 
 ```
 
@@ -68,14 +65,14 @@ To disconnect from a remote session, type **@q**. For more information, see [Rem
 
 The keyword or phrase appears on a line by itself. The colors associated with that keyword appear by themselves on the following line, as shown in the syntax:
 
-```
+```text
 Keyword
 TextColor[, BackgroundColor]
 ```
 
 For example, the following file directs Remote to display lines that include the word "error" in black text on a light red background; to display lines that include the word "warning" in light blue (on the default background), and lines that include the phrase "Windows Vista" in light green on the default background.
 
-```
+```text
 ERROR
 black, lred
 WARNING
@@ -86,7 +83,7 @@ lgreen
 
 ### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
-```
+```console
 remote /c Server01 TestSession
 remote /c Domain1\ComputerA0 "cmd" "My Remote Session"
 remote /c Server01 TestSession /L 50 /f black /b white /k c:\remote_file.txt

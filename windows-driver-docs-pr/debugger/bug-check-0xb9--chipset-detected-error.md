@@ -5,9 +5,6 @@ ms.assetid: 21d92ea9-dae3-41f1-b0e7-3701c420f7ca
 keywords: ["Bug Check 0xB9 CHIPSET_DETECTED_ERROR", "CHIPSET_DETECTED_ERROR"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

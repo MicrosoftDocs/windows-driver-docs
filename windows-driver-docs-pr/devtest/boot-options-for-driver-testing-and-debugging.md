@@ -12,11 +12,7 @@ keywords:
 - driver debugging WDK boot options
 - operating system boot options WDK
 - load configurations WDK boot options
-ms.author: windowsdriverdev
 ms.date: 07/09/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

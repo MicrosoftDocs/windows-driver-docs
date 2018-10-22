@@ -3,10 +3,7 @@ title: Enable secure data sharing
 description: Steps required to use the Hardware dashboard APIs to download driver submission failure data in a secure manner.
 author: EliotSeattle
 ms.author: shganesh
-ms.date: 09/28/20181
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/28/2018
 ms.localizationpriority: medium
 ---
 

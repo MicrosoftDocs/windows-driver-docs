@@ -4,11 +4,7 @@ description: Transmit and receive queues
 ms.assetid: 4BF61CDF-4B62-47EB-936A-7DE81D62678A
 keywords:
 - NetAdapterCx transmit and receive queues, NetCx transmit and receive queues
-ms.author: windowsdriverdev
 ms.date: 03/18/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

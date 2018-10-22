@@ -5,9 +5,6 @@ ms.assetid: 98b9cd6e-b2e1-44bd-aff6-376b9cf2daa2
 keywords: ["AMLI Debugger, AMLI Debugger extensions", "amli extension", "acpikd.amli extension"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,23 +14,18 @@ ms.localizationpriority: medium
 ## <span id="ddk_using_amli_debugger_extensions_dbg"></span><span id="DDK_USING_AMLI_DEBUGGER_EXTENSIONS_DBG"></span>
 
 
-In Windows XP and later versions of Windows, AMLI Debugger extension commands are contained in the extension module Kdexts.dll and use the following syntax:
+The AMLI Debugger extension commands are contained in the extension module Kdexts.dll and use the following syntax:
 
-```
+```dbgcmd
 kd> !amli command [parameters] 
 ```
 
-In Windows 2000, these extension commands are contained in Acpikd.dll and use the following syntax:
-
-```
-kd> !acpikd.amli command [parameters] 
-```
 
 As with any extension module, after it has been loaded you can omit the **acpikd** prefix.
 
 If you are at the AMLI Debugger prompt, you can execute any of these extension commands by simply entering the *command* name without the **!amli** prefix:
 
-```
+```dbgcmd
 AMLI(? for help)-> command [parameters] 
 ```
 

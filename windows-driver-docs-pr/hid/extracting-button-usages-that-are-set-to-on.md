@@ -5,6 +5,7 @@ description: Extracting Button Usages That Are Set to ON
 ms.assetid: 700cdb18-f570-4189-a33c-f57af56a52fd
 keywords: ["HID reports WDK , extracting control data", "reports WDK HID , extracting control data", "extracting HID control data", "button usages WDK HID"]
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Extracting Button Usages That Are Set to ON

@@ -5,9 +5,6 @@ ms.assetid: f0f47af6-cba0-42a0-912b-562f069d5b3e
 keywords: ["Bug Check 0xE3 RESOURCE_NOT_OWNED", "RESOURCE_NOT_OWNED"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

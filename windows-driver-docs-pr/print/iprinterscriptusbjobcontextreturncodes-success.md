@@ -13,18 +13,18 @@ api_name:
 - IPrinterScriptUsbJobContextReturnCodes.Success
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbJobContextReturnCodes::Success method
-
 
 Returns a value of zero (0) to inform USBMon that the function call completed successfully.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT Success(
   [out, retval] UINT32 *value
 );
@@ -72,13 +72,4 @@ Requirements
 
 ## See also
 
-
 [**IPrinterScriptUsbJobContextReturnCodes**](iprinterscriptusbjobcontextreturncodes.md)
-
- 
-
- 
-
-
-
-

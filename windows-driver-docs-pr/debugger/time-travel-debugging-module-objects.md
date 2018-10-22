@@ -3,15 +3,8 @@ title: TTD Module Objects
 description: This section describes the module model objects associated with time travel debugging.
 ms.author: domars
 ms.date: 09/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
-
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
 
 # TTD Module Objects
 ## Description

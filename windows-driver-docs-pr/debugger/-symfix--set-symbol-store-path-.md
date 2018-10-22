@@ -5,9 +5,6 @@ ms.assetid: 9ad80217-e2d1-4776-a620-f2735b2c8f84
 keywords: ["Set Symbol Store Path (.symfix) command", "SymSrv, Set Symbol Store Path (.symfix) command", ".symfix (Set Symbol Store Path) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.symfix** command automatically sets the symbol path to point to the Microsoft symbol store.
 
-```
+```dbgcmd
 .symfix[+] [LocalSymbolCache]
 ```
 
@@ -69,7 +66,7 @@ Remarks
 
 The following example shows how to use **.symfix** to set a new symbol path that points to the Microsoft symbol store.
 
-```
+```dbgcmd
 3: kd> .symfix c:\myCache
 3: kd> .sympath
 Symbol search path is: srv*
@@ -78,7 +75,7 @@ Expanded Symbol search path is: cache*c:\myCache;SRV*https://msdl.microsoft.com/
 
 The following example shows how to use **.symfix+** to append the existing symbol path with a path that points to the Microsoft symbol store.
 
-```
+```dbgcmd
 3: kd> .sympath
 Symbol search path is: c:\someSymbols
 Expanded Symbol search path is: c:\somesymbols

@@ -8,11 +8,7 @@ keywords:
 - file system drivers WDK , installing
 - INF files WDK file system
 - INF files WDK file system , about file system driver installation
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

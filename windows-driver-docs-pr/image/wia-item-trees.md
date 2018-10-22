@@ -3,11 +3,7 @@ title: WIA Item Trees
 author: windows-driver-content
 description: WIA Item Trees
 ms.assetid: 98c43595-8547-4916-8671-86652212ac92
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

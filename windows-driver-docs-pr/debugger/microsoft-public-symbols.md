@@ -5,9 +5,6 @@ ms.assetid: b0d38104-c386-4d20-8d9c-7701347c1643
 keywords: ["SymSrv, public Microsoft symbols", "symbol servers, public Microsoft symbols", "public symbol store", "Microsoft symbol store"]
 ms.author: domars
 ms.date: 04/26/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +15,7 @@ The Microsoft symbol server makes Windows debugger symbols publicly available.
 
 You can refer directly to the public symbol server in your symbol path in the following manner:
 
-```
+```console
 set _NT_SYMBOL_PATH=srv*DownstreamStore*https://msdl.microsoft.com/download/symbols
 ```
 
@@ -26,7 +23,7 @@ set _NT_SYMBOL_PATH=srv*DownstreamStore*https://msdl.microsoft.com/download/symb
 
 To avoid typing this long symbol path, use the [**.symfix (Set Symbol Store Path)**](-symfix--set-symbol-store-path-.md) command. The following command appends the public symbol store to your existing symbol path:
 
-```
+```dbgcmd
 .symfix+ C:\MySymbols
 ```
 
@@ -34,7 +31,7 @@ If local symbol cache location is omitted, the sym subdirectory of the debugger 
 
 Use the [**.sympath (Set Symbol Store Path)**](-symfix--set-symbol-store-path-.md) command to display the full symbol path. This example shows how to use symfix to create a local symbol cache and use the Microsoft http symbol server.
 
-```
+```dbgcmd
 0: kd> .symfix c:\MyCache
 0: kd> .sympath
 Symbol search path is: srv*

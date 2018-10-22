@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Using Controller Objects
 ms.assetid: 74b6685a-018f-4cb1-9332-424631aad85c
 keywords: ["I/O WDK kernel , controller objects", "controller objects WDK kernel", "ControllerControl routines", "objects WDK controller objects", "physical device controllers WDK I/O", "device controllers WDK I/O", "synchronization"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

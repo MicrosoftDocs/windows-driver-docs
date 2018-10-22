@@ -3,15 +3,8 @@ title: WinDbg Preview - View Menu
 description: This section describes how work with the view menu.
 ms.author: domars
 ms.date: 08/09/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
-
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
 
 # WinDbg Preview - View Menu 
 

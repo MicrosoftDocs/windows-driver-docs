@@ -10,11 +10,7 @@ keywords:
 - semantic model checks WDK file systems , hard link operations
 - hard link operations WDK file systems
 - names WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

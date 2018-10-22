@@ -13,22 +13,22 @@ api_name:
 - IPrinterScriptUsbJobContext
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbJobContext interface
-
 
 The IPrinterScriptUsbJobContext interface is passed as a parameter to the **startPrintJob** JavaScript function.
 
 Members
 -------
 
-The **IPrinterScriptUsbJobContext** interface inherits from the [**IUnknown**](https://msdn.microsoft.com/library/windows/desktop/ms680509) interface. **IPrinterScriptUsbJobContext** also has these types of members:
+The **IPrinterScriptUsbJobContext** interface inherits from the [**IUnknown**](https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown) interface. **IPrinterScriptUsbJobContext** also has these types of members:
 
 -   [Methods](#methods)
 
-### <span id="methods"></span>Methods
+### Methods
 
 The **IPrinterScriptUsbJobContext** interface has these methods.
 
@@ -62,12 +62,10 @@ The **IPrinterScriptUsbJobContext** interface has these methods.
 </tr>
 <tr class="odd">
 <td>[<strong>TemporaryStreams</strong>](iprinterscriptusbjobcontext-temporarystreams.md)</td>
-<td><p>Returns an array of [IPrinterScriptableSequentialStream](https://msdn.microsoft.com/library/windows/hardware/hh439697) interfaces for the persistent data streams that can be used by the IHV JavaScript functions for the current job.</p></td>
+<td><p>Returns an array of [IPrinterScriptableSequentialStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprinterscriptablesequentialstream) interfaces for the persistent data streams that can be used by the IHV JavaScript functions for the current job.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
 Requirements
 ------------
@@ -88,11 +86,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-

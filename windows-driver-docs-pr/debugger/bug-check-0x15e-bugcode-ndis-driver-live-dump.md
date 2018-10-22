@@ -5,9 +5,6 @@ ms.assetid: 3663A955-A1D7-4880-BD83-0976012F2CB1
 keywords: ["Bug Check 0x15E BUGCODE_NDIS_DRIVER_LIVE_DUMP", "BUGCODE_NDIS_DRIVER"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

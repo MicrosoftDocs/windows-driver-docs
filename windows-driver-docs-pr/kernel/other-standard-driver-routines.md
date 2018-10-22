@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Other Standard Driver Routines
 ms.assetid: 3dada9cc-7239-47de-8940-bc4cef8be4ca
 keywords: ["driver objects WDK kernel", "standard driver routines WDK kernel , driver objects", "driver routines WDK kernel , driver objects", "routines WDK kernel , driver objects", "objects WDK driver objects"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

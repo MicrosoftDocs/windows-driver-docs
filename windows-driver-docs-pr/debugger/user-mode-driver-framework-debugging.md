@@ -5,16 +5,13 @@ ms.assetid: f59a420e-57d3-4ae0-84e3-58ec6e088b63
 keywords: ["User-Mode Driver Framework debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # User-Mode Driver Framework Debugging
 
 
-For an overview of how to debug User-Mode Driver Framework (UMDF) drivers, including information on how to start this kind of debugging session, see the [Debugging UMDF Drivers](http://go.microsoft.com/fwlink/p/?linkid=153578) section of the Windows Driver Kit (WDK) documentation.
+For an overview of how to debug User-Mode Driver Framework (UMDF) drivers, including information on how to start this kind of debugging session, see the [Debugging UMDF Drivers](https://go.microsoft.com/fwlink/p/?linkid=153578) section of the Windows Driver Kit (WDK) documentation.
 
 ### <span id="umdf_debugging_extensions"></span><span id="UMDF_DEBUGGING_EXTENSIONS"></span>UMDF Debugging Extensions
 

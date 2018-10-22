@@ -4,11 +4,7 @@ author: windows-driver-content
 description: ACPI _DSD methods for supporting Modern Standby and PCI hot plug scenarios
 ms:assetid: 44ad67da-f374-4a8e-80bd-d531853088a2
 keywords: ACPI, ACPI \_DSD method
-ms.author: windowsdriverdev
 ms.date: 04/10/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

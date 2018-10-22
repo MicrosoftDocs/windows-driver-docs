@@ -5,9 +5,6 @@ ms.assetid: c0c63af5-712c-47b6-8811-81e441ddb3df
 keywords: ["CTRL+\ (Debug Current Debugger) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **CTRL+\\** key launches a new instance of CDB; this new debugger takes the current debugger as its target.
 
-```
+```dbgcmd
 CTRL+\  ENTER 
 ```
 

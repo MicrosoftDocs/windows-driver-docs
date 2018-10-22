@@ -4,9 +4,6 @@ description: This topic describes how to configure a kernel debugging connection
 ms.assetid: E4C4D2A1-2FB0-4028-8A52-30B8F4F738D0
 ms.author: domars
 ms.date: 07/02/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -66,7 +63,7 @@ To run the host debugger on the same PC as the target virtual machine, follow th
 
 2. In the command output, locate the Ethernet adapter that you configured as the External Virtual Switch.
 
-    ```
+    ```console
     ...
 
     Ethernet adapter vEthernet (External Virtual Switch):
@@ -82,7 +79,7 @@ To run the host debugger on the same PC as the target virtual machine, follow th
 
 4. To confirm connectivity between the target and the host computer, open an elevated command prompt window on the target computer, and enter the following command, where *YourHostIPAddress* is the IP address of the host computer. 
 
-    ```
+    ```console
     ping -4 <YourHostIPAddress>
     ```
 
@@ -93,7 +90,7 @@ Use the kdnet.exe utility to automatically configure the  debugger settings on t
 
 1. Locate the WDK *kdnet.exe* and *VerifiedNICList.xml* files. By default they are located here.
 
-```
+```console
 C:\Program Files (x86)\Windows Kits\10\Debuggers\x64
 ```
 
@@ -110,7 +107,7 @@ For example, if the target is running 32 bit Windows, run a 32 version of the de
 
 6. On the target computer, open a Command Prompt window as Administrator. Enter this command to verify that the target computer has a supported network adapter.
 
-    ```
+    ```console
     C:\KDNET>kdnet
 
     Network debugging is supported on the following NICs:
@@ -119,7 +116,7 @@ For example, if the target is running 32 bit Windows, run a 32 version of the de
 
 7. Type this command to set the IP address of the host system and generated a unique connection key. Use the IP address of the host system you recorded earlier.  Pick a unique port address for each target/host pair that you work with, with in the range 50000-50039. For this example, we will select 50005.
 
-    ```
+    ```console
     C:\>kdnet <YourIPAddress> <YourDebugPort> 
 
     Enabling network debugging on Microsoft Hypervisor Virtual Machine.
@@ -145,7 +142,7 @@ For example, if the target is running 32 bit Windows, run a 32 version of the de
 
 2. To connect to the target PC, use CTRL+V to paste in the main OS command window the windbg string that was returned by kdnet that you copied earlier.
 
-    ```
+    ```console
     C:\Debuggers\windbg -k net:port=<YourDebugPort>,key=<YourKey> 
     ```
 
@@ -157,7 +154,7 @@ When you first attempt to establish a network debugging connection, you might be
 
 Once the debugger is connected, reboot the target computer. To force the VM to completely restart, use this command, from an administrator's command prompt.
 
-   ```
+   ```console
    shutdown -r -t 0 
    ```
 
@@ -170,7 +167,7 @@ After connecting to the VM, hit break on your debugger and you can start debuggi
 
 If the debugger does not connect, use the ping command from the target VM to verify connectivity. 
 
-    ```
+    ```console
     C:\>Ping <HostComputerIPAddress> 
     ```
 

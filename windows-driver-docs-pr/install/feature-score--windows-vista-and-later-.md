@@ -4,11 +4,7 @@ description: Feature Score
 ms.assetid: cc7f2cd1-85aa-43be-9c4e-abdba3a4310a
 keywords:
 - feature score WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

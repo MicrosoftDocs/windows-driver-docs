@@ -13,18 +13,18 @@ api_name:
 - IPrinterScriptUsbJobContextReturnCodes.Retry
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbJobContextReturnCodes::Retry method
-
 
 Returns a value of '2' to inform USBMon that the method call was successful, with more work to be completed.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT Retry(
   [out, retval] UINT32 *value
 );
@@ -72,13 +72,4 @@ Requirements
 
 ## See also
 
-
 [**IPrinterScriptUsbJobContextReturnCodes**](iprinterscriptusbjobcontextreturncodes.md)
-
- 
-
- 
-
-
-
-

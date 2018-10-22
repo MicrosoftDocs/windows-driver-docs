@@ -3,11 +3,7 @@ title: Collection list helpers
 author: windows-driver-content
 description: The collection list helper functions are used by the v2 sensor drivers, for working with SENSOR\_COLLECTION\_LIST structures.
 ms.assetid: 9BE06FA6-A171-4760-9D3E-C0183F3C3EFA
-ms.author: windowsdriverdev
-ms.date: 01/04/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
 

@@ -4,16 +4,13 @@ description: The General Purpose Input/Output (GPIO) extension commands display 
 ms.assetid: 1703C402-D770-4D3F-AB70-F2D30712A5D9
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # GPIO Extensions
 
 
-The General Purpose Input/Output (GPIO) extension commands display the software state of GPIO controllers. These commands display information from data structures maintained by the GPIO framework extension driver (Msgpioclx.sys). For information about the GPIO framework extension, see [General-Purpose I/O (GPIO) Drivers](http://go.microsoft.com/fwlink/p?LinkID=299823).
+The General Purpose Input/Output (GPIO) extension commands display the software state of GPIO controllers. These commands display information from data structures maintained by the GPIO framework extension driver (Msgpioclx.sys). For information about the GPIO framework extension, see [General-Purpose I/O (GPIO) Drivers](https://go.microsoft.com/fwlink/p?LinkID=299823).
 
 The GPIO debugger extension commands are implemented in gpiokd.dll. To load the GPIO commands, enter **.load gpiokd.dll** in the debugger.
 

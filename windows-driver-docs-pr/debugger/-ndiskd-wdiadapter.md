@@ -5,9 +5,6 @@ ms.assetid: 1AC069E8-CF87-459B-9C56-DDC1A6F765A8
 keywords: ["ndiskd.wdiadapter Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,11 +3,7 @@ title: Registry Access for WIA Drivers
 author: windows-driver-content
 description: Registry Access for WIA Drivers
 ms.assetid: 0e0b7493-858b-4add-9e1d-fd71bae21b6e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,7 +46,7 @@ STDMETHODIMP CWIADevice::Initialize(
       //  m_hMyWritableRegistryKey now contains a handle to the
       //  DeviceData subkey which can be used to store information
       //  in the registry.
-      //  Notice that it isn&#39;t closed here, but instead,
+      //  Notice that it isn't closed here, but instead,
       //  kept open because it is needed later.
      //
   }
@@ -115,7 +111,7 @@ CWIADevice::~CWIADevice(void)
   .
   .
   //
-  // If the writable registry key isn&#39;t closed  yet, do it now,
+  // If the writable registry key isn't closed  yet, do it now,
   // because the driver is about to be unloaded.
   //
   if (m_hMyWritableRegistryKey) 

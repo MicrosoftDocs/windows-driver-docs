@@ -5,9 +5,6 @@ ms.assetid: 17b84bf0-5a5b-47a5-893b-fdc58ca2afc3
 keywords: ["strings", "UNICODE_STRING structure", "ustr Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ustr** extension displays a UNICODE\_STRING structure.
 
-```
+```dbgcmd
 !ustr Address
 ```
 
@@ -62,7 +59,7 @@ Remarks
 
 Unicode strings are counted 16-bit character strings, as defined in the following structure:
 
-```
+```cpp
 typedef struct _UNICODE_STRING {
     USHORT Length;
     USHORT MaximumLength;

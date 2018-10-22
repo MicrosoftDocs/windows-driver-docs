@@ -5,9 +5,6 @@ ms.assetid: ea318d5b-60c6-4d1c-80c7-6bc418ad01ab
 keywords: ["runaway Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!runaway** extension displays information about the time consumed by each thread.
 
-```
+```dbgcmd
 !runaway [Flags]
 ```
 
@@ -81,7 +78,7 @@ The display identifies each thread by the debugger's internal thread numbering a
 
 Here is an example:
 
-```
+```dbgcmd
 0:001> !runaway 7
 
  User Mode Time

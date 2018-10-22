@@ -8,11 +8,7 @@ keywords:
 - VA WDK DirectX , video decoding
 - decoding video WDK DirectX VA , about decoding video
 - video decoding WDK DirectX VA , about decoding video
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

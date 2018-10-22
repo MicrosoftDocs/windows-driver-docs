@@ -5,9 +5,6 @@ ms.assetid: 817f7ede-bdaf-4d4e-a1bd-579c67ea1ab9
 keywords: ["DbgSrv Command-Line Options Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The DbgSrv command line uses the following syntax.
 
-```
+```console
 dbgsrv -t ServerTransport [-sifeo image.ext] -c[s] AppCmdLine [-x | -pc] 
 
 dbgsrv -? 

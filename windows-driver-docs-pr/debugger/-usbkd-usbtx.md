@@ -5,9 +5,6 @@ ms.assetid: 603AD207-69D5-4DED-80B5-ADA21E191D47
 keywords: ["usbkd.usbtx Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbtx** command displays information from a **usbport!\_HCD\_TRANSFER\_CONTEXT** structure.
 
-```
+```dbgcmd
 !usbkd.usbtx StructAddr
 ```
 
@@ -42,7 +39,7 @@ Examples
 
 Here is one way to find the address of a **usbport!\_HCD\_TRANSFER\_CONTEXT** structure. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
-```
+```dbgcmd
 0: kd> !usbkd.usb2tree
 ...
 4)!uhci_info ffffe00001c8f1a0 !devobj ffffe00001c8f050 PCI: VendorId 8086 DeviceId 2938 RevisionId 0002 
@@ -53,7 +50,7 @@ In the preceding output, the address of the device extension of the FDO is displ
 
 Either click the DML command or pass the address of the device extension to [**!usbhcdext**](https://msdn.microsoft.com/library/windows/hardware/dn367072) to get the transfer list.
 
-```
+```dbgcmd
 0: kd> !usbkd.usbhcdext ffffe00001c8f1a0
 ...
 ## I/O TRANSFER LIST(s)
@@ -68,7 +65,7 @@ Either click the DML command or pass the address of the device extension to [**!
 
 In the preceding output, `ffffe0000653401c` is the address of an **\_HCD\_TRANSFER\_CONTEXT**structure. Pass this address to **!usbtx**.
 
-```
+```dbgcmd
 0: kd> !usbkd.usbtx ffffe0000653401c
 
 dt usbport!_HCD_TRANSFER_CONTEXT ffffe0000653401c
@@ -100,7 +97,7 @@ NumberOfElements = 1
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

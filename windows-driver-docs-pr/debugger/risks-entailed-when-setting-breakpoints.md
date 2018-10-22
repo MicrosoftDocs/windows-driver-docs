@@ -5,9 +5,6 @@ ms.assetid: 92c1007b-f871-48e9-a215-4d36ed1371ea
 keywords: ["breakpoints, risks"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +15,7 @@ When you are setting a [breakpoints](using-breakpoints.md) by specifying a memor
 
 For example, consider the following disassembled code.
 
-```
+```dbgcmd
 770000f1 5e               pop     esi
 770000f2 5b               pop     ebx
 770000f3 c9               leave

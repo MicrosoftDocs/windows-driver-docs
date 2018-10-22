@@ -5,9 +5,6 @@ ms.assetid: df16bdb5-0834-4e07-ad5f-a712f9282bb0
 keywords: ["threadtoken Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!threadtoken** extension displays the impersonation state of the current thread.
 
-```
+```dbgcmd
 !threadtoken
 ```
 
@@ -67,7 +64,7 @@ Tokens will be displayed in the same format that [**!handle**](-handle.md) uses 
 
 Here is an example:
 
-```
+```dbgcmd
 0:000> ~
 .  0  id: 1d0.55c   Suspend: 1 Teb 7ffde000 Unfrozen
 #  1  id: 1d0.1a4   Suspend: 1 Teb 7ffdd000 Unfrozen

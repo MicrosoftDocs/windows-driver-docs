@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Using a File Handle
 ms.assetid: f5a4d3f6-b74f-411e-9fa9-a41d83152fd7
 keywords: ["files WDK kernel", "file objects WDK kernel", "objects WDK file objects", "file handles WDK kernel", "handle to file WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

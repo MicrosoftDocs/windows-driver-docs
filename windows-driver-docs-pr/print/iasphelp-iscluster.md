@@ -16,18 +16,18 @@ api_name:
 - Iasphelp.get_IsCluster
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_IsCluster method
-
 
 The **IsCluster** property enables an ASP Web page to determine whether the Cluster service is running on a cluster node.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_IsCluster(
   [out] BOOL *pVal
 );
@@ -44,19 +44,16 @@ Return value
 
 This property always returns S\_OK.
 
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 This method calls the **GetNodeClusterState** function to determine the status of the Cluster service. For more information about this function, see the Windows SDK documentation.
 
-```cpp
-    Dim objPrinter, ClusterRunning
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
-    ClusterRunning = objPrinter.IsCluster
+```vb
+Dim objPrinter, ClusterRunning
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
+ClusterRunning = objPrinter.IsCluster
 ```
 
 Requirements
@@ -72,17 +69,5 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows XP and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-

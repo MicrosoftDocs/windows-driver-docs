@@ -5,9 +5,6 @@ ms.assetid: 74f57775-63ad-4a96-9ba5-bfedd4c8c826
 keywords: ["CTRL+K (Change Post-Reboot Break State) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,13 +21,13 @@ The CTRL+K key changes the conditions on which the debugger will automatically b
 
 KD Syntax
 
-```
+```dbgcmd
 CTRL+K  ENTER 
 ```
 
 WinDbg Syntax
 
-```
+```dbgcmd
 CTRL+ALT+K 
 ```
 

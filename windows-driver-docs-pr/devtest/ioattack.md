@@ -2,11 +2,7 @@
 title: IoAttack
 description: The Penetration Tests (Device Fundamentals) test, Run I/O Attack, performs the fuzz tests
 ms.assetid: ae0eda5c-534e-44c2-a997-66fe1337ca9f
-ms.author: windowsdriverdev
 ms.date: 07/10/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

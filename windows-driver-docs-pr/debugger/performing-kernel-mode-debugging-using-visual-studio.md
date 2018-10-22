@@ -5,9 +5,6 @@ ms.assetid: 6E77843F-4907-4193-B987-92BD0719AE10
 keywords: ["kernel-mode debugging visual studio"]
 ms.author: domars
 ms.date: 05/11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

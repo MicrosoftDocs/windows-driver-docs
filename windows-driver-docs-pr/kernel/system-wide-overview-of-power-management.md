@@ -4,11 +4,7 @@ author: windows-driver-content
 description: System-Wide Overview of Power Management
 ms.assetid: 16313152-3fe2-49d7-8cf1-b369e39e4130
 keywords: ["power management WDK kernel , about power management", "power management WDK kernel , system-wide overview", "software WDK power management", "Control Panel WDK power management", "system-wide power policy WDK kernel", "power policy WDK kernel", "conserving power WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

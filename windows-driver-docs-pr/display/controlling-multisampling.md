@@ -8,11 +8,7 @@ keywords:
 - rendering multisamples WDK DirectX 8.0 , controlling
 - D3DRS_MULTISAMPLEANTIALIAS
 - D3DRS_MULTISAMPLEMASK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

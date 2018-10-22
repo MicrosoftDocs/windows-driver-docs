@@ -10,11 +10,7 @@ keywords:
 - generic rights WDK file systems
 - standard rights WDK file systems
 - specific rights WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

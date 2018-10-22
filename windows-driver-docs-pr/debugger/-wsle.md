@@ -5,9 +5,6 @@ ms.assetid: 9540ac44-a44b-4af6-acdd-baa275e8d004
 keywords: ["wsle Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,9 +21,9 @@ The **!wsle** extension displays all working set list entries (WSLEs).
 
 Syntax
 
-```
+```dbgcmd
 !wsle [Flags [Address]] 
-```
+```dbgcmd
 
 ## <span id="ddk__wsle_dbg"></span><span id="DDK__WSLE_DBG"></span>Parameters
 
@@ -61,7 +58,7 @@ This extension can take a significant amount of time to execute.
 
 Here is an example from an x86 target computer running Windows Server 2003:
 
-```
+```dbgcmd
 kd> !wsle 3
 
 Working Set @ c0503000

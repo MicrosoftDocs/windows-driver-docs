@@ -5,9 +5,6 @@ ms.assetid: 9B14B3B4-EA90-426E-8555-0E5B8F63E0A9
 keywords: [".nvload (NatVis Load) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,9 +19,8 @@ ms.localizationpriority: medium
 
 The .nvload command loads a NatVis file into the debugger environment. After the visualization is loaded, it will be used to render data defined in the visualization.
 
-```
-.nvload FileName|ModuleName 
-   
+```dbgcmd
+.nvload FileName|ModuleName   
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters

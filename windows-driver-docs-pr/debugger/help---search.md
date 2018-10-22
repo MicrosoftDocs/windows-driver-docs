@@ -5,9 +5,6 @@ ms.assetid: 27cc64cc-50bc-4f3b-8346-d95fb3ffdf9c
 keywords: ["Help Search", "help file, Help Search"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

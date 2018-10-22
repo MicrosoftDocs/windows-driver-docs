@@ -5,9 +5,6 @@ ms.assetid: 3c75fb75-50d0-48e4-abf4-e4dba9a080f9
 keywords: ["EngExtCpp extensions, parsing arguments"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,13 +43,13 @@ Overrides the default short description of the command-line arguments. The exten
 
 Here are some examples of directives. The following string is used by an extension command that parses its own arguments. It also provides short and long descriptions for use with the automatic **!help** extension command:
 
-```
+```dbgcmd
 {{custom}}{{s:<arg1> <arg2>}}{{l:arg1 - Argument 1\narg2 - Argument 2}}
 ```
 
 The following string changes the argument option prefix characters to '`/`' or '`-`'. With this directive, the arguments will be specified using '`+arg`' and '`:arg`' instead of '`/arg`' and '`-arg`':
 
-```
+```dbgcmd
 {{opt:+:}}
 ```
 
@@ -64,7 +61,7 @@ Argument descriptions are enclosed by single braces (`'{'` and `'}'`).
 
 Each argument description has the following syntax:
 
-```
+```dbgcmd
 {[optname];[type[,flags]];[argname];[argdesc]}
 ```
 
@@ -120,19 +117,19 @@ A description of the argument. This is the description printed by the automatic 
 
 Here are some examples of argument descriptions. The following expression defines a command which takes a single optional expression argument. The argument must fit in 32 bits. If the argument isn't present on the command line, the default value of 0x100 will be used.
 
-```
+```dbgcmd
 {;e32,o,d=0x100;flags;Flags to control command}
 ```
 
 The following expression defines a command with an optional Boolean "**/v**" argument and a required unnamed string argument.
 
-```
+```dbgcmd
 {v;b;;Verbose mode}{;s;name;Name of object}
 ```
 
 The following expression defines a command that has an optional named expression argument **/oname** *expr* and an optional named string argument **/eol** *str*. If **/eol** is present, its value will be set to the remainder of the command line and no further arguments will be parsed.
 
-```
+```dbgcmd
 {oname;e;expr;Address of object}{eol;x;str;Commands to use}
 ```
 

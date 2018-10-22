@@ -5,9 +5,6 @@ ms.assetid: a5f760d7-f454-49c5-853d-bcb545c0b05e
 keywords: [".clients (List Debugging Clients) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.clients** command lists all debugging clients currently connected to the debugging session.
 
-```
+```dbgsyntax
     .clients 
 ```
 

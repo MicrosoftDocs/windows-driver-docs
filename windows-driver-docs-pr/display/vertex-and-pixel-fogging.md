@@ -12,11 +12,7 @@ keywords:
 - monochromatic lighting WDK Direct3D
 - color fog calculations WDK Direct3D
 - blending fog factor WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

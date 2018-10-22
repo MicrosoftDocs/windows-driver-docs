@@ -3,11 +3,7 @@ title: OID_SWITCH_PROPERTY_ENUM
 author: windows-driver-content
 description: The Hyper-V extensible switch extension issues an object identifier (OID) method request of OID_SWITCH_PROPERTY_ENUM to obtain an array.
 ms.assetid: 45277355-4486-4CE0-ACBF-68D6BC6B79E7
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_SWITCH_PROPERTY_ENUM Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

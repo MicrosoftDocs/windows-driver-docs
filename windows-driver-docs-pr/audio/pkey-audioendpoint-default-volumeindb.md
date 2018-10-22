@@ -2,11 +2,7 @@
 title: PKEY\_AudioEndpoint\_Default\_VolumeInDb
 description: In Windows 10 Version 1605 and later, the PKEY\_AudioEndpoint\_Default\_VolumeInDb property key configures the default volume (in dB) for the software volume node.
 ms.assetid: 9BC8E0D1-F4F3-4FB4-A50F-E4C79317EC30
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +29,7 @@ The data is stored as a 16.16 fixed point value. The upper 16 bits are used for 
 ## <span id="INF_File_Sample"></span><span id="inf_file_sample"></span><span id="INF_FILE_SAMPLE"></span>INF File Sample
 
 
-```cpp
+```inf
 ; The following line overrides the default volume (in dB) for an endpoint. 
 ; It is only applicable when hardware volume is not implemented. 
 ; Decimal value expressed in fixed point 16.16 format and stored as a DWORD. 

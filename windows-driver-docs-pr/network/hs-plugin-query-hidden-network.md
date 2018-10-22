@@ -5,11 +5,7 @@ description: The HS_PLUGIN_QUERY_HIDDEN_NETWORK function returns the network ide
 ms.assetid: edf5ddb0-22f6-4c24-a118-3915a1f2b0af
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_QUERY_HIDDEN_NETWORK) function Network Drivers Starting with Windows Vista
-ms.author: windowsdriverdev
-ms.date: 07/31/2017 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
 

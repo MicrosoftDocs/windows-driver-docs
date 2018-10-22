@@ -5,9 +5,6 @@ ms.assetid: e17dd001-2830-49bd-b727-fcd772ee23b4
 keywords: ["SymChk Command-Line Options Windows Debugging"]
 ms.author: domars
 ms.date: 06/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 SymChk uses the following syntax:
 
-```
+```dbgcmd
 symchk [/r] [/v | /q ] FileNames /s[Opts] SymbolPath Options
 
 symchk [/r] [/v | /q ] /ie ExeFile /s[Opts] SymbolPath Options
@@ -95,14 +92,14 @@ Specifies that a manifest file is created. The manifest file contains informatio
 <span id="________s_Opts__SymbolPath"></span><span id="________s_opts__symbolpath"></span><span id="________S_OPTS__SYMBOLPATH"></span> **/s**\[*Opts*\] *SymbolPath*  
 Specifies the directories containing symbols. Absolute paths, relative paths, and UNC paths are permitted. Any number of directories can be specified -- multiple directories should be separated with semicolons. If *SymbolPath* contains spaces, it must be enclosed in quotation marks. If you wish to specify a symbol server within this path, you should use one of the following syntaxes:
 
-```
+```dbgcmd
 srv*DownstreamStore*\\Server\Share
 srv*\\Server\Share
 ```
 
 It is not recommended that you omit the **/s**\[*Opts*\] *SymbolPath* parameter, but if it is omitted, SymChk will point to the public symbol store by using the following default path:
 
-```
+```dbgcmd
 srv*%SystemRoot%\symbols*https://msdl.microsoft.com/download/symbols
 ```
 

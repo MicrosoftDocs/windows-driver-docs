@@ -5,9 +5,6 @@ ms.assetid: 9f6fe1db-535f-4983-866a-8a5ea035ac80
 keywords: ["Bug Check 0x11 THREAD_NOT_MUTEX_OWNER", "THREAD_NOT_MUTEX_OWNER"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -5,9 +5,6 @@ ms.assetid: fcc5d597-6a3f-4d6c-82f9-3624efb4f434
 keywords: ["CTRL+D (Toggle Debug Info) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,13 +21,13 @@ The CTRL+D key toggles debugger internal information flow on and off. This is us
 
 KD Syntax
 
-```
+```dbgcmd
 CTRL+D  ENTER 
 ```
 
 WinDbg Syntax
 
-```
+```dbgcmd
 CTRL+ALT+D 
 ```
 

@@ -5,9 +5,6 @@ ms.assetid: 37c2d07d-f351-42d0-ba88-9b9a2a3d19f8
 keywords: ["Bug Check 0xB4 VIDEO_DRIVER_INIT_FAILURE", "VIDEO_DRIVER_INIT_FAILURE"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

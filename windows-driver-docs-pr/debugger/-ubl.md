@@ -5,9 +5,6 @@ ms.assetid: c2c40fa5-888f-49bb-a616-a139d7d2874d
 keywords: ["breakpoints, user-space breakpoints", "ubl Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ubl** extension lists all user-space breakpoints and their current status.
 
-```
+```dbgcmd
 !ubl
 ```
 
@@ -55,7 +52,7 @@ Remarks
 
 Here is an example of the use and display of user-space breakpoints:
 
-```
+```dbgcmd
 kd> !ubp 8014a131
 This command is VERY DANGEROUS, and may crash your system!
 If you don't know what you are doing, enter "!ubc *" now!

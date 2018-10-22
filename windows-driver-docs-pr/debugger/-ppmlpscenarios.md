@@ -5,9 +5,6 @@ ms.assetid: B4973314-1A9E-42B8-A2C9-B4069B09C956
 keywords: ["ppmlpscenarios Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ppmlpscenarios** command displays per-scenario policy overrides.
 
-```
+```dbgcmd
 !ppmlpscenarios
 ```
 

@@ -6,11 +6,7 @@ keywords:
 - audio adapters WDK , system components
 - adapter drivers WDK audio , system components
 - Port Class audio adapters WDK , system components
-ms.author: windowsdriverdev
 ms.date: 10/26/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ ms.localizationpriority: medium
 
 In the following example of an INF device-driver-installation section, the two directives add the system-driver information that installs the core system components for an audio adapter in Windows:
 
-```cpp
+```inf
   [XYZ-Audio-Device.Registration.NTX86]
   Include=ks.inf, wdmaudio.inf
   Needs=KS.Registration, WDMAUDIO.Registration

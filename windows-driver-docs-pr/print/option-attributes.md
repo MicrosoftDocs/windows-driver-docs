@@ -7,11 +7,7 @@ keywords:
 - printer attributes WDK Unidrv , options
 - option attributes WDK Unidrv
 - printer options WDK Unidrv , attributes
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

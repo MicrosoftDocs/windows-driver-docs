@@ -2,11 +2,7 @@
 title: Audio Endpoint Builder Algorithm
 description: Audio Endpoint Builder Algorithm
 ms.assetid: 2338bca7-5743-42c3-9baf-ac4a54cf0393
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ The AudioEndpointBuilder service uses an algorithm to discover and enumerate end
 
 In Windows XP, the audio model used the term audio device to refer to a conceptual device in the Plug and Play (PnP) tree. In Windows Vista and later versions of Windows, the concept of an audio device has been redesigned to better represent the device that the user physically interacts with.
 
-With two new APIs in Windows Vista, [MMDevice API](http://go.microsoft.com/fwlink/p/?linkid=130863) and [WASAPI](http://go.microsoft.com/fwlink/p/?linkid=130864), you can access and manipulate these new audio devices. The MMDevice API refers to the new audio devices as endpoints.
+With two new APIs in Windows Vista, [MMDevice API](https://go.microsoft.com/fwlink/p/?linkid=130863) and [WASAPI](https://go.microsoft.com/fwlink/p/?linkid=130864), you can access and manipulate these new audio devices. The MMDevice API refers to the new audio devices as endpoints.
 
 The AudioEndpointBuilder service monitors the [**KSCATEGORY\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff548261) class for device interface arrivals and removals. When an audio device driver registers a new instance of the KSCATEGORY\_AUDIO device interface class, the AudioEndpointBuilder service detects the device interface notification and uses an algorithm to examine the topology of the audio devices in the system and take appropriate action.
 
@@ -45,7 +41,7 @@ The following list summarizes how the algorithm that is used by AudioEndpointBui
 
 7.  Sets this endpoint as the default endpoint, if that is what is specified in the associated INF file.
 
-After the endpoints have been enumerated, clients of the audio system can manipulate them directly by using the new Windows Vista APIs (as indicated previously) or indirectly by using the more familiar APIs such as Wave, [DShow](http://go.microsoft.com/fwlink/p/?linkid=130871) or [DirectSound.](http://go.microsoft.com/fwlink/p/?linkid=130872) New API methods have been provided so that audio clients can start with the MMDevice ID of an endpoint and access the Wave or DirectSound ID for the same endpoint.
+After the endpoints have been enumerated, clients of the audio system can manipulate them directly by using the new Windows Vista APIs (as indicated previously) or indirectly by using the more familiar APIs such as Wave, [DShow](https://go.microsoft.com/fwlink/p/?linkid=130871) or [DirectSound.](https://go.microsoft.com/fwlink/p/?linkid=130872) New API methods have been provided so that audio clients can start with the MMDevice ID of an endpoint and access the Wave or DirectSound ID for the same endpoint.
 
 When you use endpoints, you can take advantage of the following:
 

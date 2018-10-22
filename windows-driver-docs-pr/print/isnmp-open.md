@@ -18,18 +18,18 @@ api_location:
 - olesnmp.h
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # ISNMP::Open method
-
 
 The `Open` method enables an ASP Web page to create a communication path to a specified SNMP agent.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT Open(
   [in] BSTR    bstrHost,
   [in] BSTR    bstrCommunity,
@@ -85,26 +85,18 @@ Win32 error codes can also be returned.
 </tbody>
 </table>
 
- 
-
-## <span id="ddk_isnmp_open_gg"></span><span id="DDK_ISNMP_OPEN_GG"></span>
-
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 This method calls the **SnmpMgrOpen** function, which has the same parameters as `ISNMP::Open`. For more information about this function, see the Windows SDK Documentation.
 
 After the `ISNMP::Open` call, the communication path to the SNMP agent remains open until the [**ISNMP::Close**](isnmp-close.md) method is called, or until `ISNMP::Open` is called again.
 
-```cpp
-    Dim StrIP, strCommunity, objSNMP
-    strIP = Session("MS_IPaddress")
-    strCommunity = Session ("MS_Community")
-    Set objSNMP = Server.CreateObject("OlePrn.OleSNMP")
-    objSNMP.Open strIP, strCommunity, 2, 1000
+```vb
+Dim StrIP, strCommunity, objSNMP
+strIP = Session("MS_IPaddress")
+strCommunity = Session ("MS_Community")
+Set objSNMP = Server.CreateObject("OlePrn.OleSNMP")
+objSNMP.Open strIP, strCommunity, 2, 1000
 ```
 
 Requirements
@@ -120,10 +112,6 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 <tr class="odd">
 <td><p>Header</p></td>
 <td>Olesnmp.h</td>
@@ -133,13 +121,4 @@ Requirements
 
 ## See also
 
-
 [**ISNMP::Close**](isnmp-close.md)
-
- 
-
- 
-
-
-
-

@@ -4,9 +4,6 @@ description: Choosing the Best Method
 ms.assetid: d6069c8c-1da1-4930-b75d-efcee9691e6b
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

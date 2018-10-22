@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Obtaining Device Configuration Information at IRQL DISPATCH_LEVEL
 ms.assetid: e168a12b-f32e-4b8d-8768-dc622b37b421
 keywords: ["I/O WDK kernel , device configuration space", "device configuration space WDK I/O", "configuration space WDK I/O", "space WDK I/O", "DISPATCH_LEVEL WDK", "BUS_INTERFACE_STANDARD", "driver stacks WDK configuration info"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

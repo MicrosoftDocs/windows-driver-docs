@@ -5,11 +5,7 @@ description: This topic describes the OID_GEN_CO_BYTES_XMIT_OUTSTANDING object i
 ms.assetid: 7aa54750-5e4a-4452-9552-05145dc51ae4
 keywords:
 - OID_GEN_CO_BYTES_XMIT_OUTSTANDING
-ms.author: windowsdriverdev
 ms.date: 11/02/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

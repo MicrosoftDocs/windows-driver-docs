@@ -5,9 +5,6 @@ ms.assetid: f2b327cd-8ba5-45f3-9116-756df82358f4
 keywords: ["system, command syntax", "(system identifier)", "system, system identifier ( )", "syntax rules for commands, systems", "syntax rules for commands, (system identifier)"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,7 +59,7 @@ Example
 -------
 This example shows three dump files are loaded. System 1 is active and system 2 caused the debug event.
 
-```
+```dbgcmd
 ||1:1:017> ||
    0 User mini dump: c:\notepad.dmp
 .  1 User mini dump: c:\paint.dmp

@@ -4,9 +4,6 @@ description: The INVALID_CALLBACK_STACK_ADDRESS bug check has a value of 0x00000
 keywords: ["Bug Check 0x1CD INVALID_CALLBACK_STACK_ADDRESS",  "INVALID_CALLBACK_STACK_ADDRESS"]
 ms.author: domars
 ms.date: 05/23/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

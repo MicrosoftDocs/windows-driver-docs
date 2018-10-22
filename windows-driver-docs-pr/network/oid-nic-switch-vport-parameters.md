@@ -3,11 +3,7 @@ title: OID_NIC_SWITCH_VPORT_PARAMETERS
 author: windows-driver-content
 description: An overlying driver can obtain the parameters for a virtual port (VPort) on a NIC switch that has been created on a network adapter that supports single root I/O virtualization (SR-IOV).
 ms.assetid: B22C760E-F2B0-4774-A532-4044C679CD64
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_NIC_SWITCH_VPORT_PARAMETERS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

@@ -5,9 +5,6 @@ ms.assetid: eb843712-204f-4bbd-b711-a10756c9279a
 keywords: ["Set Local Context (.frame) command", "memory, Set Local Context (.frame) command", "context, Set Local Context (.frame) command", ".frame (Set Local Context) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.frame** command specifies which local context (scope) is used to interpret local variables or displays the current local context.
 
-```
+```dbgcmd
 .frame [/c] [/r] [FrameNumber] 
 .frame [/c] [/r] = BasePtr [FrameIncrement] 
 .frame [/c] [/r] = BasePtr StackPtr InstructionPtr 

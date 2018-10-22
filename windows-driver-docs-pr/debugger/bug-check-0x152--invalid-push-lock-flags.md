@@ -5,9 +5,6 @@ ms.assetid: E225CF12-42E8-490B-865D-E8153C388874
 keywords: ["Bug Check 0x152 INVALID_PUSH_LOCK_FLAGS", "INVALID_PUSH_LOCK_FLAGS"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

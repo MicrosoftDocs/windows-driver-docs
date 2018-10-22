@@ -4,11 +4,7 @@ description: Port/Miniport interface checking
 ms.assetid: ad6c4762-354d-446d-bcda-a2e99c37c589
 keywords:
 - Port/Miniport interface checking
-ms.author: windowsdriverdev
-ms.date: 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/14/2017
 ms.localizationpriority: medium
 ---
 

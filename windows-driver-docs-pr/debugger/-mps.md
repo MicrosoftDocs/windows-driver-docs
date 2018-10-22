@@ -5,9 +5,6 @@ ms.assetid: b6ee2eac-ef3c-403a-83ca-fe45506a8c4e
 keywords: ["mps Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!mps** extension displays BIOS information for the Intel Multiprocessor Specification (MPS) of the target computer.
 
-```
+```dbgcmd
 !mps [Address] 
 ```
 

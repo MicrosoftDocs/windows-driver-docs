@@ -5,9 +5,6 @@ ms.assetid: af7f2afc-95cb-4dcd-9b74-1bd46713239f
 keywords: ["Edit Go to Line"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

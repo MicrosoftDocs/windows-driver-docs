@@ -2,11 +2,7 @@
 title: Audio Drivers Event Sets
 description: Audio Drivers Event Sets
 ms.assetid: 9e800f71-9c90-4084-b879-32300e6706fc
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

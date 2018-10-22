@@ -5,9 +5,6 @@ ms.assetid: f7431207-562b-451a-843e-1c2be038e306
 keywords: ["DumpChk"]
 ms.author: domars
 ms.date: 09/17/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +21,7 @@ DumpChk.exe is included in [Debugging Tools for Windows](index.md).
 ## <span id="DumpChk_command-line_options"></span><span id="dumpchk_command-line_options"></span><span id="DUMPCHK_COMMAND-LINE_OPTIONS"></span>DumpChk command-line options
 
 
-```
+```dbgcmd
 DumpChk [-y SymbolPath] DumpFile
 ```
 
@@ -61,7 +58,7 @@ Because this display does not end with the words `Finished dump check`, the dump
 
 Note that other errors may be listed, some of which are actually benign. For example, the following error message does not represent a problem:
 
-```
+```dbgcmd
 error 3 InitTypeRead( nt!_PEB at 7ffd5000) 
 ```
 

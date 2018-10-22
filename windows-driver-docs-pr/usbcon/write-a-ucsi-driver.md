@@ -2,11 +2,7 @@
 Description: Describes the behavior of the UCSI class extension that implements the UCSI specification in a transport agnostic way. 
 title: Write a UCSI client driver
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 09/30/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,11 +5,7 @@ ms.assetid: fc8634ab-0ecd-4390-9834-825f60fe68ce
 keywords:
 - biometric drivers WDK , ranking on Windows Update
 - ranking biometric drivers WDK biometric
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -7,11 +7,7 @@ keywords:
 - audio subdevices WDK
 - registering audio subdevices WDK
 - deregistering audio subdevices WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +28,7 @@ The following steps show what happens when there is an audio device plugged into
 
 5.  The driver sets the IsConnected member of the [**KSJACK\_DESCRIPTION**](https://msdn.microsoft.com/library/windows/hardware/ff537136) structure to **TRUE** to indicate that there is a device plugged into the jack.
 
-**Note**   If the audio device lacks jack presence detection, the **IsConnected** member must always be **TRUE**. To confirm whether the device supports jack presence detection, a client application can call [IKsJackDescription2::GetJackDescription2](http://go.microsoft.com/fwlink/p/?linkid=143698) to read the JackCapabilities flag of the [**KSJACK\_DESCRIPTION2**](https://msdn.microsoft.com/library/windows/hardware/ff537138) structure. If this flag has the JACKDESC2\_PRESENCE\_DETECT\_CAPABILITY bit set, it indicates that the endpoint supports jack presence detection. In that case, the return value of the **IsConnected** member can be interpreted as an accurate reflection of the insertion status of the jack.
+**Note**   If the audio device lacks jack presence detection, the **IsConnected** member must always be **TRUE**. To confirm whether the device supports jack presence detection, a client application can call [IKsJackDescription2::GetJackDescription2](https://go.microsoft.com/fwlink/p/?linkid=143698) to read the JackCapabilities flag of the [**KSJACK\_DESCRIPTION2**](https://msdn.microsoft.com/library/windows/hardware/ff537138) structure. If this flag has the JACKDESC2\_PRESENCE\_DETECT\_CAPABILITY bit set, it indicates that the endpoint supports jack presence detection. In that case, the return value of the **IsConnected** member can be interpreted as an accurate reflection of the insertion status of the jack.
 
  
 

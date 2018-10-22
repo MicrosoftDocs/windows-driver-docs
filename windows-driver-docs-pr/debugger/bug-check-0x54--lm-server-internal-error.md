@@ -5,9 +5,6 @@ ms.assetid: fb39413d-50ba-441a-ab60-4708e59b5e03
 keywords: ["Bug Check 0x54 LM_SERVER_INTERNAL_ERROR", "LM_SERVER_INTERNAL_ERROR"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

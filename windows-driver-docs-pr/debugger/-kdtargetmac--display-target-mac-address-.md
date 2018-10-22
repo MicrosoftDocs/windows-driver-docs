@@ -5,9 +5,6 @@ ms.assetid: 95042682-BD92-44B0-AAA8-AB8661393230
 keywords: [".kdtargetmac (Display Target MAC Address) Windows Debugging"]
 ms.author: domars
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 Display Target MAC Address
 
-```
+```dbgcmd
 .kdtargetmac 
 ```
 
@@ -58,7 +55,7 @@ Display Target MAC Address
 
 Use the .kdtargetmac command to display the MAC (media access control) address of the target system.
 
-```
+```dbgcmd
 0: kd> .kdtargetmac 
 
 The target machine MAC address in open-device format is: XXXXXXXXXXXX
@@ -66,7 +63,7 @@ The target machine MAC address in open-device format is: XXXXXXXXXXXX
 
 The .kdtargetmac is command is available if KDNET is enabled on the target system. Use the BCDEdit command with the /dbgsettings option to display the configuration on the target system. A debugtype of *NET* indicates that KDNET is configured.
 
-```
+```dbgcmd
 C:\WINDOWS\system32>bcdedit /dbgsettings
 key                     1.2.3.4
 debugtype               NET

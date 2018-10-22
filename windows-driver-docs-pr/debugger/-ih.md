@@ -5,9 +5,6 @@ ms.assetid: 4c81bde4-da8b-4c44-8013-6c586c08e22b
 keywords: ["interrupt history record", "ih Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!ih** extension displays the interrupt history record for the specified processor.
 
-```
+```dbgcmd
 !ih Processor
 ```
 
@@ -66,7 +63,7 @@ This extension displays the interrupt history record without referencing the pro
 
 Here is an example of the output from this extension:
 
-```
+```dbgcmd
 kd> !ih
 Total # of interruptions = 2093185
 Vector              IIP                   IPSR          ExtraField 

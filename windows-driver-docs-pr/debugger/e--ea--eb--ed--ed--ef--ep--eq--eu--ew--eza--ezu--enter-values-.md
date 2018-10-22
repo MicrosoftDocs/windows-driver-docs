@@ -5,9 +5,6 @@ ms.assetid: d21b13ac-2268-4218-b562-4c466956b05d
 keywords: ["e, ea, eb, ed, eD, ef, ep, eq, eu, ew, eza (Enter Values) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +21,7 @@ The **e\*** commands enter into memory the values that you specify.
 
 This command should not be confused with the [**~E (Thread-Specific Command)**](-e--thread-specific-command-.md) qualifier.
 
-```
+```dbgcmd
 e{b|d|D|f|p|q|w} Address [Values] 
 e{a|u|za|zu} Address "String" 
 e Address [Values]
@@ -151,7 +148,7 @@ Numeric values will be interpreted as numbers in the current radix (16, 10, or 8
 
 When entering byte values with the **eb** command, you can use single straight quotation marks to specify characters. If you want to include multiple characters, each must be surrounded with its own quotation marks. This allows you to enter a character string that is not terminated by a null character. For example:
 
-```
+```dbgcmd
 eb 'h' 'e' 'l' 'l' 'o'
 ```
 

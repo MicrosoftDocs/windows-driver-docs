@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Building and Deploying the Localized MOF File
 ms.assetid: 3a741dc6-a789-44e1-9d68-cdb41b7161ed
 keywords: ["MOF files WDK WMI", "localizing MOF files", "MUI versions WDK WMI", "master MOF files WDK WMI", "languages WDK WMI"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

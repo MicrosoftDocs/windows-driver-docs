@@ -5,9 +5,6 @@ ms.assetid: da2ec999-4529-49dc-855e-a7d3b15583f7
 keywords: ["Logger, logger.exe", "logger.exe", "Logger, stand-alone"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +16,7 @@ ms.localizationpriority: medium
 
 One way to activate Logger is to run the stand-alone Logger.exe program. This is essentially a very small debugger that can only take a single target. To run it, include the name of the target application on the command line:
 
-```
+```dbgcmd
 logger Target 
 ```
 

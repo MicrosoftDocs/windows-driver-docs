@@ -5,9 +5,6 @@ ms.assetid: 503466EE-2246-4CE3-BCE7-6DC7D42DB86A
 keywords: ["usbkd.usblist Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usblist** command displays a linked list of structures of a specified type.
 
-```
+```dbgcmd
 !usbkd.usblist ListAddr, ListType
 ```
 
@@ -63,7 +60,7 @@ Examples
 
 Here is one way to find the address of a linked list. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
-```
+```dbgcmd
 0: kd> !usbkd.usb2tree
 ...
 2)!ehci_info ffffe00001ca11a0 !devobj ffffe00001ca1050 ...
@@ -74,7 +71,7 @@ In the preceding output, the address of the device extension of the FDO is displ
 
 Either click the DML command or pass the address of the device extension to [**!usbhcdext**](https://msdn.microsoft.com/library/windows/hardware/dn367072).
 
-```
+```dbgcmd
 0: kd> !usbkd.usbhcdext ffffe00001ca11a0
 
 HC Flavor 1000  FDO ffffe00001ca1050
@@ -88,7 +85,7 @@ In the preceding output, ffffe00001ca23b8 is the address of a linked list of **u
 
 Now pass the address of the linked list to **!usblist**.
 
-```
+```dbgcmd
 0: kd> !usblist ffffe00001ca23b8, DL
 list: ffffe00001ca23b8 DL
 ----------
@@ -111,7 +108,7 @@ DriverName :\Driver\USBSTOR      !devstack ffffe000053ef2a0
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

@@ -5,9 +5,6 @@ ms.assetid: 9827d7d3-4b7e-43dd-98c0-0b437bf4bd67
 keywords: x86 processor, i386 processor"
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

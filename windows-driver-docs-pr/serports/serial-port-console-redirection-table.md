@@ -6,11 +6,7 @@ ms.assetid: cbcd2e71-881a-44f6-b3d8-5d2aadb02b27
 keywords:
 - SPCR
 - EMS UART
-ms.author: windowsdriverdev
 ms.date: 07/23/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Serial Port Console Redirection Table  (SPCR)

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Using PnP Hardware Profile Change Notification
 ms.assetid: 341464e4-507d-43da-88a2-5bfecd2dd02a
 keywords: ["notifications WDK PnP , hardware profile changes", "hardware profile change notifications WDK PnP", "EventCategoryHardwareProfileChange notification", "profile change notifications WDK PnP", "machine hardware profile change notifications WDK PnP"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

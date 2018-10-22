@@ -5,9 +5,6 @@ ms.assetid: bef29d75-6620-4219-b402-36fbddc4fe1f
 keywords: ["dump file, user-mode"]
 ms.author: domars
 ms.date: 08/01/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -240,7 +237,7 @@ The UserDump tool (Userdump.exe), also known as User-Mode Process Dump, can crea
 
 UserDump and its documentation are part of the OEM Support Tools package.
 
-For more info and to download these tools, see [How to use the Userdump.exe tool to create a dump file](http://go.microsoft.com/fwlink/p/?LinkId=241339) and follow the instructions on that page. Additionally, When CDB or WinDbg is debugging a user-mode application, you can also use the [.dump (Create Dump File) command](-dump--create-dump-file-.md) to create a dump file.
+For more info and to download these tools, see [How to use the Userdump.exe tool to create a dump file](https://go.microsoft.com/fwlink/p/?LinkId=241339) and follow the instructions on that page. Additionally, When CDB or WinDbg is debugging a user-mode application, you can also use the [.dump (Create Dump File) command](-dump--create-dump-file-.md) to create a dump file.
 
 
 

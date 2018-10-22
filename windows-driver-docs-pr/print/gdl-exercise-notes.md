@@ -10,11 +10,7 @@ keywords:
 - GDL WDK , tutorials
 - GDL WDK , index tree
 - parser WDK GDL , index tree
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

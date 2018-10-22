@@ -5,9 +5,6 @@ ms.assetid: 49D803E3-0D65-48D4-98C5-BFE4DB2C2985
 keywords: ["usbkd.usbhcdpow Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbhcdpow** command displays the power state history for a USB host controller or root hub.
 
-```
+```dbgcmd
 !usbkd.usbhcdpow DeviceExtension
 ```
 
@@ -45,7 +42,7 @@ Examples
 
 Here is one way to find the address of the device extension for the FDO of an EHCI host controller. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
-```
+```dbgcmd
 0: kd> !usbkd.usb2tree
 ...
 
@@ -57,7 +54,7 @@ In the preceding output, the address of the device extension of the FDO is displ
 
 Now pass the address of the device extension to the **!usbhcdpow** command.
 
-```
+```dbgcmd
 0: kd> !usbkd.usbhcdpow ffffe00001ca11a0
 
 dt USBPORT!_FDO_EXTENSION ffffe00001ca15a0
@@ -78,7 +75,7 @@ dt USBPORT!_FDO_EXTENSION ffffe00001ca15a0
 
 Here is one way to find the address of the device extension for the PDO of a root hub. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
-```
+```dbgcmd
 0: kd> !usbkd.usb2tree
 ...
 
@@ -89,7 +86,7 @@ Here is one way to find the address of the device extension for the PDO of a roo
 
 In the preceding output, you can see the address of the FDO of the root hub displayed as the argument to the command **!devstack ffffe00002320050**. Use the [**!devstack**](-devstack.md) command to find the address of the PDO and the PDO device extension.
 
-```
+```dbgcmd
 0: kd> !kdexts.devstack ffffe00002320050
   !DevObj           !DrvObj            !DevExt           ObjectName
 > ffffe00002320050  \Driver\usbhub     ffffe000023201a0  0000002d
@@ -101,7 +98,7 @@ In the preceding output, you can see that the address of the device extension fo
 
 Now pass the address of the device extension to the **!usbhcdpow** command.
 
-```
+```dbgcmd
 0: kd> !usbkd.usbhcdpow ffffe0000213c1a0
 
 dt USBPORT!_FDO_EXTENSION ffffe0000213c5a0
@@ -118,7 +115,7 @@ dt USBPORT!_FDO_EXTENSION ffffe0000213c5a0
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

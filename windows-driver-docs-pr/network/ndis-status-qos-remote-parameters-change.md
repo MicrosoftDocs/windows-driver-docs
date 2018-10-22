@@ -3,11 +3,7 @@ title: NDIS_STATUS_QOS_REMOTE_PARAMETERS_CHANGE
 author: windows-driver-content
 description: The miniport driver that supports NDIS Quality of Service (QoS) issues an NDIS_STATUS_QOS_REMOTE_PARAMETERS_CHANGE status indication when its remote NDIS QoS parameters are either received from a peer for the first time or change later.
 ms.assetid: 3DA5F4FA-193F-4716-8678-7B6FB833E68E
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_QOS_REMOTE_PARAMETERS_CHANGE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

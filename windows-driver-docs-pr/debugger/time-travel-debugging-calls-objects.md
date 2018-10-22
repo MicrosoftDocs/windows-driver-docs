@@ -3,15 +3,9 @@ title: TTD Calls Objects
 description: This section describes the calls model objects associated with time travel debugging.
 ms.author: domars
 ms.date: 09/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
 
 # TTD Calls Objects
 ## Description
@@ -55,7 +49,7 @@ Note that the Calls function does computation, and depending on the size of the 
 
 This example shows the calls object for ucrtbase!initterm.
 
-```
+```dbgcmd
 0:000> dx -r2 @$cursession.TTD.Calls("ucrtbase!initterm")
 @$cursession.TTD.Calls("ucrtbase!initterm")
     [0x0]

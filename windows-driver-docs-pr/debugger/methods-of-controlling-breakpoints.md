@@ -5,9 +5,6 @@ ms.assetid: 69de05e8-1b41-403a-a628-88da9528e1ab
 keywords: ["breakpoints, controlling"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -64,7 +61,7 @@ Each breakpoint has a decimal number called the breakpoint ID associated with it
 
 You can include a command in a breakpoint that is automatically executed when the breakpoint is hit. For example, the following command breaks at MyFunction+0x47, writes a dump file, and then resumes execution.
 
-```
+```dbgcmd
 0:000> bu MyFunction+0x47 ".dump c:\mydump.dmp; g" 
 ```
 

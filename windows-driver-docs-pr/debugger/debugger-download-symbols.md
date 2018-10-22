@@ -4,9 +4,6 @@ description: This page provides downloads for Windows Symbol Packages which are 
 keywords: ["Windows Debugging Downloads", "WinDbg", "Download", "Symbols","Download Symbols"]
 ms.author: domars
 ms.date: 04/26/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

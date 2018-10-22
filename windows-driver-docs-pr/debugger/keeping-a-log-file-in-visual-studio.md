@@ -4,9 +4,6 @@ description: The Windows Debugger can write a log file that records the debuggin
 ms.assetid: 6A7588D0-A477-4BE9-874F-3AFB52561903
 ms.author: domars
 ms.date: 05/11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

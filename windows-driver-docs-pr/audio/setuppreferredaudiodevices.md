@@ -2,11 +2,7 @@
 title: SetupPreferredAudioDevices
 description: SetupPreferredAudioDevices
 ms.assetid: cc6b7da4-335d-4629-ba54-32aa32a1eb09
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,7 +34,7 @@ When upgrading or reinstalling the driver for a device that has already been ins
 
 The following example is a part of an INF file that shows how to use the SetupPreferredAudioDevices keyword:
 
-```cpp
+```inf
   AddReg = XYZ-Audio-Device.AddReg
   ...
   [XYZ-Audio-Device.AddReg]

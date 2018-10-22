@@ -9,11 +9,7 @@ keywords:
 - tutorials WDK GDL
 - GDL WDK , tutorials
 - schemas WDK GDL , implementing GDL schemas
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

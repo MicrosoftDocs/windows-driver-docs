@@ -5,9 +5,6 @@ ms.assetid: eedde484-584b-478b-9429-a9c78bb62c1e
 keywords: ["Bug Check 0xAD VIDEO_DRIVER_DEBUG_REPORT_REQUEST", "VIDEO_DRIVER_DEBUG_REPORT_REQUEST"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

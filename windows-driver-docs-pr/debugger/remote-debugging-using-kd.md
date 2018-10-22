@@ -4,9 +4,6 @@ description: Remote debugging involves two debuggers running at two different lo
 ms.assetid: 274CAB1D-DD3B-4ACD-919C-8B8C253BCE50
 ms.author: domars
 ms.date: 05/03/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,7 +34,7 @@ There are several transport protocols you can use for a remote debugging connect
 
 4.  KD will respond with output similar to the following.
 
-    ```
+    ```dbgcmd
     Server started.  Client can connect with any of these command lines
     0: <debugger> -remote tcp:Port=5005,Server=YourHostComputer
     ```

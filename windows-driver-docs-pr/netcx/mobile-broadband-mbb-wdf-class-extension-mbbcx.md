@@ -4,11 +4,7 @@ description: An overview of the Mobile Broadband (MBB) WDF class extension (MBBC
 ms.assetid: FA4D1C2D-270B-40C4-A922-8ABDDE4D8444
 keywords:
 - Mobile Broadband (MBB) WDF class extension, MBBCx, Mobile Broadband NetAdapterCx
-ms.author: windowsdriverdev
 ms.date: 03/19/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

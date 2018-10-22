@@ -5,9 +5,6 @@ ms.assetid: 763742f3-1cb8-4263-861b-b9d01483245e
 keywords: ["list Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!list** extension executes the specified debugger commands repeatedly, once for every element in a linked list.
 
-```
+```dbgcmd
 !list -t [Module!]Type.Field -x "Commands" [-a "Arguments"] [Options] StartAddress 
 !list " -t [Module!]Type.Field -x \"Commands\" [-a \"Arguments\"] [Options] StartAddress " 
 !list -h 
@@ -97,13 +94,13 @@ Following are two examples of how to use this command in user mode. Note that ke
 
 As a simple example, assume that you have a structure whose type name is **MYTYPE**, and which has links within its **.links.Flink** and **.links.Blink** fields. You have a linked list that begins with the structure at 0x6BC000. The following extension command will go through the list and for each element will execute a [**dd**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) L2 command. Because no address is being specified to the **dd** command, it will take the address of the list head as the desired address. This causes the first two DWORDs in each structure to be displayed.
 
-```
+```dbgcmd
 0:000> !list -t MYTYPE.links.Flink -x "dd" -a "L2" 0x6bc00 
 ```
 
 As a more complex example, consider the case of using **$extret**. It follows the list of type \_LIST\_ENTRY at **RtlCriticalSectionList**. For each element, it displays the first four DWORDS, and then displays the \_RTL\_CRITICAL\_SECTION\_DEBUG structure located at an offset of eight bytes prior to the **Flink** element of the list entry.
 
-```
+```dbgcmd
 0:000> !list "-t ntdll!_LIST_ENTRY.Flink -e -x \"dd @$extret l4; dt ntdll!_RTL_CRITICAL_SECTION_DEBUG @$extret-0x8\" ntdll!RtlCriticalSectionList"
 dd @$extret l4; dt ntdll!_RTL_CRITICAL_SECTION_DEBUG @$extret-0x8
 7c97c0c8  7c97c428 7c97c868 01010000 00000080

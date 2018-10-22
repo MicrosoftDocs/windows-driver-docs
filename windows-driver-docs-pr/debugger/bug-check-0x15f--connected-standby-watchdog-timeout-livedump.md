@@ -5,9 +5,6 @@ ms.assetid: 4C10AAC1-0B8F-4BBE-B470-55A8ED373687
 keywords: ["Bug Check 0x15F CONNECTED_STANDBY_WATCHDOG_TIMEOUT_LIVEDUMP", "CONNECTED_STANDBY_WATCHDOG_TIMEOUT_LIVEDUMP"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -4,9 +4,6 @@ description: Live Kernel-Mode Debugging Using KD
 ms.assetid: 4C3DB315-CF92-44FC-A54C-0C100A32EB3C
 ms.author: domars
 ms.date: 06/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -112,7 +109,7 @@ Causes the debugger to perform local kernel-mode debugging. For more information
 
 The following batch file could be used to set up and start a debugging session over a COM port connection.
 
-```
+```console
 set _NT_SYMBOL_PATH=d:\mysymbols
 set _NT_DEBUG_PORT=com1
 set _NT_DEBUG_BAUD_RATE=115200
@@ -122,7 +119,7 @@ kd
 
 The following batch file could be used to set up and start a debugging session over a 1394 connection.
 
-```
+```console
 set _NT_SYMBOL_PATH=d:\mysymbols
 set _NT_DEBUG_BUS=1394
 set _NT_DEBUG_1394_CHANNEL=44

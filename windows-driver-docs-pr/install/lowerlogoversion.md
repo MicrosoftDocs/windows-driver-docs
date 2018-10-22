@@ -4,11 +4,7 @@ description: LowerLogoVersion
 ms.assetid: b11b9190-9e3f-473d-b78f-b472601c60e2
 keywords:
 - LowerLogoVersion
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

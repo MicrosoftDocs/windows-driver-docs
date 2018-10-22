@@ -8,11 +8,7 @@ keywords:
 - OIDs WDK networking , WMI
 - GUIDs WDK networking
 - Windows Management Instrumentation WDK networking , GUIDs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: fad53a11-d4db-4f2c-b03e-19c5db47975b
 keywords: ["Bug Check 0xD0 DRIVER_CORRUPTED_MMPOOL", "DRIVER_CORRUPTED_MMPOOL"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

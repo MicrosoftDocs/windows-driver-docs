@@ -3,11 +3,7 @@ title: NDIS_STATUS_WAN_CO_LINKPARAMS
 author: windows-driver-content
 description: The NDIS_STATUS_WAN_CO_FRAGMENT status indicates that parameters for a particular VC that is active on a CoNDIS miniport adapter have changed.
 ms.assetid: a28460fc-c9e6-49c4-949a-badd3491cdd6
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WAN_CO_LINKPARAMS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

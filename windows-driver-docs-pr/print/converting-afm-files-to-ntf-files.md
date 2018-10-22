@@ -11,11 +11,7 @@ keywords:
 - AFM files
 - converting AFM files to NTF files
 - Adobe Font Metrics WDK Pscript
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

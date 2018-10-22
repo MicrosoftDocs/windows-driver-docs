@@ -5,9 +5,6 @@ ms.assetid: 4ac3b94c-5d92-4074-bf79-6da151ce52c8
 keywords: ["debugging information windows, Memory window", "Memory window", "memory, Memory window"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

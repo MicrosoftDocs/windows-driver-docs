@@ -5,9 +5,6 @@ ms.assetid: 6614dfeb-77ca-41ce-8108-f078e1bd73d9
 keywords: ["Debugger Engine Reference"]
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

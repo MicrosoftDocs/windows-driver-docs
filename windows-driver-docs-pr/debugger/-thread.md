@@ -5,9 +5,6 @@ ms.assetid: 5d3cf2f7-02bf-4a94-b542-826ad2b66a6f
 keywords: ["thread Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -26,7 +23,7 @@ This extension command is not the same as the [**.thread (Set Register Context)*
 
 Syntax
 
-```
+```dbgcmd
 !thread [-p] [-t] [Address [Flags]]
 ```
 
@@ -70,7 +67,7 @@ Remarks
 
 Here is an example using Windows 10:
 
-```
+```dbgcmd
 0: kd> !thread 0xffffcb088f0a4480            
 THREAD ffffcb088f0a4480  Cid 0e34.3814  Teb: 0000001a27ca6000 Win32Thread: 0000000000000000 RUNNING on processor 0
 Not impersonating

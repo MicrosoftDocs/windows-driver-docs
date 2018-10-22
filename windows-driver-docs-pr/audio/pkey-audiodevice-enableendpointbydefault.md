@@ -2,11 +2,7 @@
 title: PKEY\_AudioDevice\_EnableEndpointByDefault
 description: PKEY\_AudioDevice\_EnableEndpointByDefault
 ms.assetid: bde2c06d-9418-4f6d-960a-0ebec83bf397
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -177,7 +173,7 @@ In Windows 7 and later versions of Windows, endpoints with a form factor of Line
 
 The following INF file snippet shows how to use **PKEY\_AudioDevice\_EnableEndpointByDefault** to enable or disable an endpoint by default.
 
-```cpp
+```inf
 [Version]
 Signature="$Windows NT$"
 Class=MEDIA
@@ -212,7 +208,7 @@ In the preceding example, EnableEndpointByDefaultMaskValue represents a DWORD ma
 
 The following INF file snippet shows how a CD player is set up so that it is enabled by default and is configured as an input device (FLOW\_MASK\_CAPTURE).
 
-```cpp
+```inf
 [Version]
 Signature="$Windows NT$"
 Class=MEDIA

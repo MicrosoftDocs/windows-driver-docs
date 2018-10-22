@@ -2,11 +2,7 @@
 title: Geomagnetic Orientation
 description: This topic provides information about the data fields that are specific to the geomagnetic orientation sensor.
 ms.assetid: C164E5A9-A664-4EE5-91CE-918233DFFB6D
-ms.author: windowsdriverdev
-ms.date: 01/04/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
 

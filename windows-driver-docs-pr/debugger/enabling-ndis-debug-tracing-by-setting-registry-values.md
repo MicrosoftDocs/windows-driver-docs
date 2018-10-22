@@ -5,9 +5,6 @@ ms.assetid: ae01f546-0636-4e67-bfc7-229c3cc24b27
 keywords: ["NDIS debugging, debug tracing, setting registry values"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -16,7 +13,7 @@ ms.localizationpriority: medium
 
 You can enable different levels of debug tracing in various NDIS components by editing the registry. Typically, you should add the following entries and values to the **HKLM\\SYSTEM\\CurrentControlSet\\Services\\NDIS\\Parameters** registry key:
 
-```
+```text
 "DebugLevel"=dword:00000000
 "DebugSystems"=dword:000030F3
 "DebugBreakPoint"=dword:00000001 
@@ -203,7 +200,7 @@ Enables debug tracing for specified NDIS components. This corresponds to using t
 
 You can select more than one NDIS component. If more than one component is selected, combine the data values with an OR operator. For example, to select DBG\_COMP\_PNP, DBG\_COMP\_PM, DBG\_COMP\_INIT and DBG\_COMP\_CONFIG, you would combine the corresponding values (0x1000, 0x2000, 0x1, and 0x2) to obtain the value 0x3003, and then set it in the registry thus:
 
-```
+```text
 "DebugSystems"=dword:00003003
 ```
 

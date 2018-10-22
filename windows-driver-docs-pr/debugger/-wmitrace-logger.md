@@ -5,9 +5,6 @@ ms.assetid: 2bc456db-3e97-49f8-9c57-75ee5fee0f9d
 keywords: ["wmitrace.logger Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wmitrace.logger** extension displays data about the trace session, including the session configuration data. This extension does not display trace messages generated during the session.
 
-```
+```dbgcmd
 !wmitrace.logger [ LoggerID | LoggerName ]
 ```
 

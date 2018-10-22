@@ -8,11 +8,7 @@ keywords:
 - converting BGR8888 to XR_BIAS WDK Windows 7 display
 - BGR8888 WDK Windows 7 display
 - BGR8888 WDK Windows 7 display , conversion to XR_BIAS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

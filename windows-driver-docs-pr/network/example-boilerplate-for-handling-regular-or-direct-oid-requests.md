@@ -2,11 +2,7 @@
 title: Example boilerplate for handling Regular or Direct OID requests
 description: This topic describes example boilerplate code for handling Regular or Direct OID requests
 ms.assetid: 4C8297DD-C237-4437-A0B1-8CE0F3A6225B
-ms.author: windowsdriverdev
 ms.date: 09/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: b5dcb557-b413-401a-be4b-2d45b2597e6c
 keywords: source files and paths, source path
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

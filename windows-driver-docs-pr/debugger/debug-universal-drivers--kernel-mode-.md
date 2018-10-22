@@ -5,9 +5,6 @@ ms.assetid: 4A31451C-FC7E-4C5F-B4EB-FBBAC8DADF9E
 keywords: ["debug lab", "step-by-step", "SYSVAD"]
 ms.author: domars
 ms.date: 10/12/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -108,7 +105,7 @@ Ethernet adapter Ethernet:
 
 4. Open a command prompt on the target system and use the **ping** command to confirm network connectivity between the two systems. Use the actual IP address of the host system you recorded instead of 169.182.1.1 that is shown in the sample output.
 
-```cosnole
+```console
 C:\> ping 169.182.1.1
 
 Pinging 169.182.1.1 with 32 bytes of data:

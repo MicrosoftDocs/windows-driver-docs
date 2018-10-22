@@ -5,9 +5,6 @@ ms.assetid: 90974599-6F8E-4898-B8B6-F9502659AD77
 keywords: [".nvlist (NatVis List) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The .nvllist command lists the NatVis files loaded into the debugger environment.
 
-```
+```dbgcmd
 .nvlist
 ```
 

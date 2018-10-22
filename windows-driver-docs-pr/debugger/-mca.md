@@ -5,9 +5,6 @@ ms.assetid: 452bfbf2-fcab-4a71-bfd0-b02afe30df74
 keywords: ["machine check architecture (MCA)", "MCA (machine check architecture)", "mca Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -19,20 +16,12 @@ ms.localizationpriority: medium
 
 # !mca
 
+The !mca extension displays the machine check architecture (MCA) registers. 
 
-On an x86 target computer, the !mca extension displays the machine check architecture (MCA) registers. On an Itanium target computer, the **!mca** extension displays the MCA error record.
-
-Syntax for x86 target computer
-
-```
+```dbgcmd
 !mca
 ```
 
-Syntax for Itanium target computer
-
-```
-!mca Address [Flags]
-```
 
 ## <span id="ddk__mca_dbg"></span><span id="DDK__MCA_DBG"></span>Parameters
 
@@ -95,7 +84,7 @@ Remarks
 
 On an Itanium target, **!mca** displays the MCA error record from the system abstraction layer (SAL). Here is an example of the output from this extension:
 
-```
+```dbgcmd
 kd> !mca e0000165f3f58000
 hal!HalpFeatureBits: 0xf [HAL_PERF_EVENTS|HAL_MCA_PRESENT|HAL_CMC_PRESENT|HAL_CPE_PRESENT]
  
@@ -597,7 +586,7 @@ CP M/R/F/A Manufacturer     SerialNumber     Features         Speed
 
 On an x86 target, **!mca** displays the machine check registers supported by the active processor. It also displays basic CPU information (identical to that displayed by [**!cpuinfo**](-cpuinfo.md)). Here is an example of the output from this extension:
 
-```
+```dbgcmd
 0: kd> !mca
 MCE: Enabled, Cycle Address: 0x00000001699f7a00, Type: 0x0000000000000000
 
@@ -621,7 +610,7 @@ CP F/M/S Manufacturer   MHz Update Signature Features
 
 Note that this extension requires private HAL symbols. Without these symbols, the extension will display the message "HalpFeatureBits not found" along with basic CPU information. For example:
 
-```
+```dbgcmd
 kd> !mca
 HalpFeatureBits not found
 CP F/M/S Manufacturer  MHz Update Signature Features

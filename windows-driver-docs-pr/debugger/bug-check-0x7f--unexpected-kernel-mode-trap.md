@@ -5,9 +5,6 @@ ms.assetid: f4fcc2a1-891b-44e9-94bf-e712019f538f
 keywords: ["Bug Check 0x7F UNEXPECTED_KERNEL_MODE_TRAP", "UNEXPECTED_KERNEL_MODE_TRAP"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -91,7 +88,7 @@ The memory scanner is especially important. Faulty or mismatched memory can caus
 
 If the error appears on a newly installed system, check the availability of updates for the BIOS, the SCSI controller, or network cards. These kind of updates are typically available on the Web site or BBS of the hardware manufacturer.
 
-Confirm that all hard disk drives, hard disk controllers, and SCSI adapters are compatible with the installed version of Windows. For example, you can get information about compatibility with Windows 7 at the [Windows 7 Compatibility Center](http://go.microsoft.com/fwlink/p/?LinkID=246806).
+Confirm that all hard disk drives, hard disk controllers, and SCSI adapters are compatible with the installed version of Windows. For example, you can get information about compatibility with Windows 7 at the [Windows 7 Compatibility Center](https://go.microsoft.com/fwlink/p/?LinkID=246806).
 
 If the error occurred after the installation of a new or updated device driver, you should remove or replace the driver. If, under this circumstance, the error occurs during the startup sequence and the system partition is formatted with NTFS, you might be able to use Safe Mode to rename or delete the faulty driver. If the driver is used as part of the system startup process in Safe Mode, you have to start the computer by using the Recovery Console in order to access the file.
 

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Handling an IRP_MN_CANCEL_STOP_DEVICE Request (Windows 2000 and later)
 ms.assetid: 2e5e835f-d327-4bde-bdfd-8a71a47b0ac0
 keywords: ["IRP_MN_CANCEL_STOP_DEVICE"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

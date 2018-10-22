@@ -5,9 +5,6 @@ ms.assetid: beffa1ef-7499-44b9-90fb-0c8af7f0f2be
 keywords: ["Bug Check 0xD MUTEX_LEVEL_NUMBER_VIOLATION", "MUTEX_LEVEL_NUMBER_VIOLATION"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

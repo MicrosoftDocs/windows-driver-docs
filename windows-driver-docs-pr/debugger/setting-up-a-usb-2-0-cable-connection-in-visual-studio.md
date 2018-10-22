@@ -4,9 +4,6 @@ description: You can use Microsoft Visual Studio to set up and perform kernel-mo
 ms.assetid: 3BEE43E2-32E5-4E7A-BA71-9ADB224578B1
 ms.author: domars
 ms.date: 04/10/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -16,7 +13,7 @@ ms.localizationpriority: medium
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
-You can use Microsoft Visual Studio to set up and perform kernel-mode debugging over a USB 2.0 cable. To use Visual Studio for kernel-mode debugging, you must have the Windows Driver Kit (WDK) integrated with Visual Studio. For information about how to install the integrated environment, see [Windows Driver Development](http://go.microsoft.com/fwlink/p?linkid=301383).
+You can use Microsoft Visual Studio to set up and perform kernel-mode debugging over a USB 2.0 cable. To use Visual Studio for kernel-mode debugging, you must have the Windows Driver Kit (WDK) integrated with Visual Studio. For information about how to install the integrated environment, see [Windows Driver Development](https://go.microsoft.com/fwlink/p?linkid=301383).
 
 As an alternative to using Visual Studio to set up USB 2.0 debugging, you can do the setup manually. For more information, see [Setting Up Kernel-Mode Debugging over a USB 2.0 Cable Manually](setting-up-a-usb-2-0-debug-cable-connection.md).
 
@@ -37,7 +34,7 @@ Debugging over a USB 2.0 connection requires the following hardware:
 2.  In UsbView, locate all of the host controllers that are compatible with the EHCI specification. For example, you could look for controllers that are listed as Enhanced.
 3.  In UsbView, expand the nodes of the EHCI host controllers. Look for an indication that a host controller supports debugging, and look for the number of the debug port. For example, UsbView displays this output for an EHCI host controller that supports debugging on port 1.
 
-    ```
+    ```console
     Xxx xxx xxx USB2 Enhanced Host Controller - 293A
     ...
     Debug Port Number:  1
@@ -90,7 +87,7 @@ On the target computer, open a Command Prompt window as Administrator, and enter
 
 **bcdedit /enum**
 
-```
+```console
 ...
 targetname              MyUsbTarget
 debugtype               USB

@@ -5,9 +5,6 @@ ms.assetid: FD0720D6-A20D-4ECD-813E-C3AF85C98928
 keywords: ["rcdrkd.rcdrtraceprtdebug Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!rcdrkd.rcdrtraceprtdebug** extension turns TracePrt diagnostic mode on or off. This extension should be used under the direction of support.
 
-```
+```dbgcmd
 !rcdrkd.rcdrtraceprtdebug {on|off}
 ```
 

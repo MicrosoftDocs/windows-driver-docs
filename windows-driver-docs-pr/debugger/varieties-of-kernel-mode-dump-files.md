@@ -5,9 +5,6 @@ ms.assetid: 6db2a755-ed9c-492a-a650-9ae34ae59968
 keywords: ["dump file, kernel-mode file types"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

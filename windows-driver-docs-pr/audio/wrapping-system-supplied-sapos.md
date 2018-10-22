@@ -2,11 +2,7 @@
 title: Wrapping System-supplied sAPOs
 description: Wrapping System-supplied sAPOs
 ms.assetid: fcde6de0-921c-4c73-8e4d-941a447d35af
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -83,7 +79,7 @@ You must provide a user interface to configure the features that you added to th
 
 The Swap sample is the sample that was developed to illustrate some features of audio processing objects. To access this sample and browse the code files, perform the following steps:
 
-1. Follow this link: [Windows Driver Kit (WDK) 8.1 Samples](http://go.microsoft.com/fwlink/p/?LinkId=618052)
+1. Follow this link: [Windows Driver Kit (WDK) 8.1 Samples](https://go.microsoft.com/fwlink/p/?LinkId=618052)
 2. Download the samples and unzip them to a hard drive.
 3. Locate this directory: *..\\Windows Driver Kit (WDK) 8.1 Samples\\Microsoft slate system virtual audio device driver sample\\C++\\SwapAPO*
 4. Open the SwapAPO project in Visual Studio.

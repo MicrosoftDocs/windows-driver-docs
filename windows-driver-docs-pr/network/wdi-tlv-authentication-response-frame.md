@@ -3,11 +3,7 @@ title: WDI_TLV_AUTHENTICATION_RESPONSE_FRAME
 author: windows-driver-content
 description: WDI_TLV_ASSOCIATION_RESPONSE_FRAME is a TLV that contains an authentication response frame.
 ms.assetid: 0BD8BDD9-7D51-413F-8740-FD49F71249B1
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_AUTHENTICATION_RESPONSE_FRAME Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

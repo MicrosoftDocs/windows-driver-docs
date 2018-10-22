@@ -5,11 +5,7 @@ description: This topic describes the GUID_NDIS_GEN_INTERRUPT_MODERATION GUID fo
 ms.assetid: 355e5e4d-61b7-4cc0-8cf7-c95a773e805a
 keywords:
 - GUID_NDIS_GEN_INTERRUPT_MODERATION, WDK GUID_NDIS_GEN_INTERRUPT_MODERATION network drivers
-ms.author: windowsdriverdev
 ms.date: 11/22/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

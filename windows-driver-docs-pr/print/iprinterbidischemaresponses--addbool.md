@@ -13,18 +13,18 @@ api_name:
 - IPrinterBidiSchemaResponses.AddBool
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaResponses::AddBool method
-
 
 The AddBool method adds a new response of type BIDI\_BOOL to the collection.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT  AddBool(
   [in] BSTR bstrSchema,
   [in] BOOL bValue
@@ -60,20 +60,11 @@ Requirements
 </tr>
 <tr class="even">
 <td><p>Version</p></td>
-<td><p>Windows 8</p></td>
+<td><p>Windows 8 and later</p></td>
 </tr>
 </tbody>
 </table>
 
 ## See also
 
-
 [**IPrinterBidiSchemaResponses**](iprinterbidischemaresponses.md)
-
- 
-
- 
-
-
-
-

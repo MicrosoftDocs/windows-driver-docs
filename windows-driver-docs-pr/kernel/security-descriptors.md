@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Security Descriptors
 ms.assetid: a5edd5e8-6fc7-4ab0-aebc-f0cd8e9299b6
 keywords: ["security descriptors WDK objects", "system ACL WDK objects", "SACL WDK objects", "discretionary ACL WDK objects", "DACL WDK objects", "access control lists WDK objects", "ACL WDK objects"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

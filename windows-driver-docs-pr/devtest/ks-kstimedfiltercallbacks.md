@@ -2,11 +2,7 @@
 title: KsTimedFilterCallbacks rule ()
 description: The KsTimedFilterCallbacks rule specifies that a kernel-streaming (KS) miniport driver returns from a filter callback function within 500 ms.
 ms.assetid: 5F631D49-405F-4F1A-A280-FEFB4ADA460D
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["KsTimedFilterCallbacks rule ()"]
 topic_type:
 - apiref

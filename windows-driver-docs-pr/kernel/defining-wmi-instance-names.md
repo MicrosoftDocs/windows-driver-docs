@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Defining WMI Instance Names
 ms.assetid: 0f91710a-7bd2-462a-b677-6dd32160a861
 keywords: ["WMI WDK kernel , event blocks", "event blocks WDK WMI", "data blocks WDK WMI", "WMI WDK kernel , data blocks", "blocks WDK WMI", "dynamic instance names WDK WMI", "static instance names WDK WMI", "instance names WDK WMI", "WMI WDK kernel , instance names"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -2,11 +2,7 @@
 title: Low Latency Audio
 description: This topic discusses audio latency changes in Windows 10. It covers API options for application developers as well as changes in drivers that can be made to support low latency audio.
 ms.assetid: 888AEF01-271D-41CD-8372-A47551348959
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -597,7 +593,7 @@ Notes:
 
 Finally, drivers that link-in PortCls for the sole purpose of registering resources must add the following two lines in their inf's DDInstall section. Audio miniport drivers do not need this because they already have include/needs in wdmaudio.inf.
 
-```cpp
+```inf
 [<install-section-name>]
 Include=wdmaudio.inf
 Needs=WDMPORTCLS.CopyFilesOnly

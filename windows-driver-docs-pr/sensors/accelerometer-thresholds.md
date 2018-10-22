@@ -3,11 +3,7 @@ title: Accelerometer thresholds
 author: windows-driver-content
 description: This topic provides information about the accelerometer thresholds.
 ms.assetid: 7BB8B087-6CE5-4BD2-9286-350AE607B1D7
-ms.author: windowsdriverdev
 ms.date: 07/20/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: a98b9141-72e1-4957-a65c-36e677d159a6
 keywords: ["DbgRpc", "DbgRpc, basic use"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +28,7 @@ The **-s** command-line option is used to specify the server name, and the **-p*
 
 Here is an example:
 
-```
+```console
 G:\>dbgrpc -s MyServer -p ncacn_ip_tcp -l -P 1e8 -L 0.1
 Getting remote cell info ...
 Endpoint

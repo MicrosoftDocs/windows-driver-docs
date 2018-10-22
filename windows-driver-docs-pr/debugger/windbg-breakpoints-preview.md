@@ -3,16 +3,8 @@ title: WinDbg Preview - Breakpoints
 description: This section describes how to set and clear breakpoints using the WinDbg preview debugger.
 ms.author: domars
 ms.date: 08/15/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
-
-
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
 
 # WinDbg Preview - Breakpoints
 

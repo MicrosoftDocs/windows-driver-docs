@@ -3,11 +3,7 @@ title: OID_GEN_NDIS_RESERVED_2
 author: windows-driver-content
 description: The OID_GEN_NDIS_RESERVED_2 OID is reserved for NDIS. NDIS drivers do not use this OID.
 ms.assetid: 1d30604b-e8e2-41aa-ac5b-8e7ba8654a2f
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_NDIS_RESERVED_2 Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

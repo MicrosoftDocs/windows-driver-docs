@@ -5,9 +5,6 @@ ms.assetid: e788a778-e331-4b7b-8aad-072b3d08442b
 keywords: ["lsf, lsf- (Load or Unload Source File) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

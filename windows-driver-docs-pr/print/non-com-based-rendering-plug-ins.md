@@ -6,11 +6,7 @@ ms.assetid: 435f9754-50be-4a4b-a5b4-b2bc8d66f034
 keywords:
 - non-COM-based rendering plug-ins WDK print
 - rendering plug-ins WDK print , non-COM-based
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,7 +44,7 @@ if ( OEM intends to handle the call ) {
  code to handle the call
 }
 else
-// OEM calls Unidrv&#39;s DrvLineTo DDI
+// OEM calls Unidrv's DrvLineTo DDI
   bRetVal = (((PFN_DrvLineTo)(poempdev->pfnUnidrv[UD_DrvLineTo])) (
  pso,
             pco,

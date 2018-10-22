@@ -4,9 +4,6 @@ description: Opening a Dump File Using KD
 ms.assetid: 458E9BA6-6FA0-4FEF-93A0-062C9E11D21F
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

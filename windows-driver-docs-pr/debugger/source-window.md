@@ -5,9 +5,6 @@ ms.assetid: 0f939d29-0d90-442e-96d7-fe756b92a7da
 keywords: ["debugging information windows, Source windows", "Source windows", "source debugging, Source windows"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -77,7 +74,7 @@ Each Source window has a shortcut menu with additional commands. To access the m
 
 -   **Edit this file** opens the source file in a text editor. The editor is determined by the WinDiff editor registry information or by the value of the WINDBG\_INVOKE\_EDITOR environment variable. For example, consider the case when the value of WINDBG\_INVOKE\_EDITOR is the following.
 
-    ```
+    ```console
     c:\my\path\myeditor.exe -file %f -line %l
     ```
 

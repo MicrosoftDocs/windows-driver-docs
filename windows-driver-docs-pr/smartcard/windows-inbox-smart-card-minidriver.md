@@ -2,11 +2,7 @@
 title: Windows Inbox Smart Card Minidriver
 description: Windows Inbox Smart Card Minidriver
 ms.assetid: 4B61607E-090A-4935-B944-110ACE9A4D83
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

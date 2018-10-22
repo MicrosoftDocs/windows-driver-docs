@@ -11,11 +11,7 @@ keywords:
 - aperture-space segments WDK display
 - linear memory-space segments WDK display
 - memory-space segments WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

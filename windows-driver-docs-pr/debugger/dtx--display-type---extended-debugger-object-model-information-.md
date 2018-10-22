@@ -5,9 +5,6 @@ ms.assetid: 758D752E-65A0-4F1D-BB56-06E4ECEC6D48
 keywords: ["dtx (Display Type - Extended Debugger Object Model Information) Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The dtx command displays extended symbolic type information using the debugger object model. The dtx command is similar to the [**dt (Display Type)**](dt--display-type-.md) command.
 
-```
+```dbgcmd
 dtx -DisplayOpts [Module!]Name Address
 ```
 
@@ -78,7 +75,7 @@ The following examples show how to use the dtx command.
 
 Use the address and the name to display extended symbolic type information.
 
-```console
+```dbgcmd
 0: kd> dtx nt!_EPROCESS ffffb607560b56c0
 (*((nt!_EPROCESS *)0xffffb607560b56c0))                 [Type: _EPROCESS]
     [+0x000] Pcb              [Type: _KPROCESS]
@@ -90,7 +87,7 @@ Use the address and the name to display extended symbolic type information.
 
 Display additional information using the -r recursion option.
 
-```console
+```dbgcmd
 0: kd> dtx -r2 HdAudio!CAzMixertopoMiniport fffff806`d24992b8
 (*((HdAudio!CAzMixertopoMiniport *)0xfffff806d24992b8))                 [Type: CAzMixertopoMiniport]
     [+0x018] m_lRefCount      : -766760880 [Type: long]
@@ -120,7 +117,7 @@ Display additional information using the -r recursion option.
 
 Tip: Use the [**x (Examine Symbols)**](x--examine-symbols-.md) command to display the address of an item of interest.
 
-```console
+```dbgcmd
 0: kd> x /d HdAudio!CazMixertopoMiniport*
 ...
 fffff806`d24992b8 HdAudio!CAzMixertopoMiniport::`vftable' = <no type information>

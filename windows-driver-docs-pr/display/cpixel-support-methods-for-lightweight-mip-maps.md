@@ -3,11 +3,7 @@ title: CPixel Support Methods for Lightweight MIP Maps
 description: CPixel Support Methods for Lightweight MIP Maps
 ms.assetid: 79204a0c-c3a8-4059-a1be-9febf20a8cbd
 keywords: ["CPixel interface, described"]
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

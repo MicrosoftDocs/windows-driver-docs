@@ -5,9 +5,6 @@ ms.assetid: f4388953-4cb2-4df5-af8b-150e50ce765b
 keywords: ["pt (Step to Next Return) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,13 +21,13 @@ The **pt** command executes the program until a return instruction is reached.
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] pt [r] [= StartAddress] [Count] ["Command"]
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 pt [r] [= StartAddress] [Count] ["Command"]
 ```
 
@@ -94,7 +91,7 @@ In source mode, you can associate one source line with multiple assembly instruc
 
 The following example demonstrates using the **pt** command along with the **kb** command to display the stack trace:
 
-```
+```dbgcmd
 0:000> pt "kb"
 ```
 

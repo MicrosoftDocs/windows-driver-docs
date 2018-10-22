@@ -5,9 +5,6 @@ ms.assetid: cc137185-58a7-44bf-b262-2698c46730f6
 keywords: ["re-attaching to the target application", "process, re-attaching debugger to"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +26,7 @@ To reattach a debugger to an existing target application, do the following:
 
 2.  Start a new instance of CDB or WinDbg. Use the **-pe** command-line option.
 
-    ```
+    ```console
     Debugger -pe -p PID 
     ```
 

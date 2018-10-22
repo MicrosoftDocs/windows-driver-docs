@@ -9,11 +9,7 @@ keywords:
 - IPropertyPage interface
 - property page objects WDK GFX filters
 - COM user interfaces WDK GFX filters
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ ms.localizationpriority: medium
 ## <span id="vendor_s_gfx_user_interface"></span><span id="VENDOR_S_GFX_USER_INTERFACE"></span>
 
 
-A vendor who provides a GFX filter should also provide a COM-based user interface that supports the [**ISpecifyPropertyPages**](https://msdn.microsoft.com/library/windows/desktop/ms695217) interface. For information about this interface, see [ISpecifyPropertyPages](http://go.microsoft.com/fwlink/p/?linkid=106291).
+A vendor who provides a GFX filter should also provide a COM-based user interface that supports the [**ISpecifyPropertyPages**](https://msdn.microsoft.com/library/windows/desktop/ms695217) interface. For information about this interface, see [ISpecifyPropertyPages](https://go.microsoft.com/fwlink/p/?linkid=106291).
 
 The CLSID of this COM object is specified in the GFX driver's installation INF file. For more information, see the description of the **UserInterface/CLSID** subkey in the [Installing a Device-Specific GFX Filter](installing-a-device-specific-gfx-filter.md) topic.
 

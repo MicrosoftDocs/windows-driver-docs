@@ -6,11 +6,7 @@ keywords:
 - Power Metering and Budgeting WDK , interface
 - Power Meter Interface WDK
 - PMI WDK Power Meter
-ms.author: windowsdriverdev
 ms.date: 10/09/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

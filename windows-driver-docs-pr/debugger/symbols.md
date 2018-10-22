@@ -5,9 +5,6 @@ ms.assetid: 9a6977d9-91c8-4366-a545-064e77cd6600
 keywords: ["symbols", "setup, symbols", "symbols, setup"]
 ms.author: domars
 ms.date: 08/03/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

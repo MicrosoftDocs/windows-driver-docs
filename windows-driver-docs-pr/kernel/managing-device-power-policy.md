@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Managing Device Power Policy
 ms.assetid: f6f9ab40-4d51-4181-ac11-ff7af42370af
 keywords: ["device power policy WDK kernel", "power policy WDK kernel", "device power policy owners WDK kernel", "function drivers WDK power management", "device power states WDK kernel", "initial device power state WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

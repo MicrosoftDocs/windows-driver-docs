@@ -5,11 +5,7 @@ ms.assetid: 439263ec-b28f-41ca-9c69-095216d63f38
 keywords:
 - display drivers WDK Windows, display class
 - threading and synchronization first level
-ms.author: windowsdriverdev
 ms.date: 04/09/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: BFD58E6B-BC51-4F2F-B597-8C815826F931
 keywords: ["usbkd._ehciregs Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.\_ehciregs** command displays the operational and root hub port status registers of a USB EHCI host controller.
 
-```
+```dbgcmd
 !usbkd._ehciregs StructAddr[, NumPorts]
 ```
 
@@ -45,7 +42,7 @@ Examples
 
 Here is one way to get the address of a **usbehci!\_HC\_OPERATIONAL\_REGISTER** structure. First enter [**!usbkd.usbhcdlist**](-usbkd-usbhcdlist.md).
 
-```
+```dbgcmd
 0: kd> !usbkd.usbhcdlist
 MINIPORT List @ fffff80001e5bbd0
 
@@ -63,7 +60,7 @@ In the preceding output,` ffffd000228bf020` is the address of a **\_HC\_OPERATIO
 
 Now pass the structure address to **!\_ehciregs**. In this example, the second argument limits the display to two root hub port status registers.
 
-```
+```dbgcmd
 0: kd> !usbkd._ehciregs ffffd000228bf020, 2
 *(ehci)HC_OPERATIONAL_REGISTER ffffd000228bf020
     USBCMD 00010001
@@ -144,7 +141,7 @@ Now pass the structure address to **!\_ehciregs**. In this example, the second a
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

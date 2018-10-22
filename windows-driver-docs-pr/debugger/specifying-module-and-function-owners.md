@@ -5,9 +5,6 @@ ms.assetid: be227712-7f70-4e74-b090-ca8b3ecd1e13
 keywords: ["executable files and paths, specifying module owner", "function owners", "owners of modules and functions", "triage.ini file", "triage.ini file, syntax", "analyze extension, triage.ini file"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +30,7 @@ Although the Triage.ini file is intended to help you determine the owner of a fu
 
 Each line in this file has the following syntax.
 
-```
+```dbgcmd
 Module[!Function]=Owner 
 ```
 
@@ -45,7 +42,7 @@ For more information about syntax options, see Special Triage.ini Syntax.
 
 The following examples shows a sample Triage.ini file.
 
-```
+```ini
 module1=Person1
 module2!functionA=Person2
 module2!functionB=Person3
@@ -61,7 +58,7 @@ When you pass a module or function name to the [**!owner**](-owner.md) extension
 
 The following example uses the previous sample Triage.ini file.
 
-```
+```dbgcmd
 0:000> !owner module2!functionB
 Followup:  Person3
 ```
@@ -86,7 +83,7 @@ Suppose the third frame is **module2!functionC**. The debugger first looks for a
 
 The debugger then displays output that is similar to the following example.
 
-```
+```dbgcmd
 0:000> !analyze
 *******************************************************************************
 *                                                                             *

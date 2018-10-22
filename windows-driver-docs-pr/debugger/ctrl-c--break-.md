@@ -5,9 +5,6 @@ ms.assetid: ee9df6d7-4a40-4006-90df-478e06899e3a
 keywords: ["CTRL+C (Break) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,19 +21,19 @@ The CTRL+C key breaks into the debugger, stopping the target application or targ
 
 CDB Syntax
 
-```
+```dbgcmd
 CTRL+C 
 ```
 
 KD Syntax
 
-```
+```dbgcmd
 CTRL+C 
 ```
 
 Target Computer Syntax
 
-```
+```dbgcmd
 SYSRQ 
 ALT+SYSRQ 
 F12 
@@ -105,7 +102,7 @@ SYSRQ (or ALT+SYSRQ on an enhanced keyboard) is similar. It works from the host 
 
 The SYSRQ key can be disabled by editing the registry. In the registry key
 
-```
+```text
 HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\i8042prt\Parameters
 ```
 

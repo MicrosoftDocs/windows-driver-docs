@@ -5,11 +5,7 @@ description: The HS_PLUGIN_SEND_KEEP_ALIVE function is called by the host to sen
 ms.assetid: 1db91146-03bb-4513-9c1b-f0dbd5c941f5
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_SEND_KEEP_ALIVE) function Network Drivers Starting with Windows Vista
-ms.author: windowsdriverdev
-ms.date: 07/31/2017 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
 

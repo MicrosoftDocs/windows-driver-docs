@@ -5,9 +5,6 @@ ms.assetid: 469f5ae4-2da8-4bbe-b5c0-75fcef227ba5
 keywords: ["WdbgExts extensions, DECLARE_API macro", "DECLARE_API macro (WdbgExts)"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +18,7 @@ Each extension command in a WdbgExts extension DLL is declared using the DECLARE
 
 The basic format of the code for an extension command is:
 
-```
+```cpp
 DECLARE_API( myextension )
 {
     code for myextension
@@ -32,7 +29,7 @@ The DECLARE\_API macro sets up a standard interface for extension commands. For 
 
 If you are using 64-bit pointers, the DECLARE\_API macro is defined as follows:
 
-```
+```cpp
 #define DECLARE_API(s)                             \
     CPPMOD VOID                                    \
     s(                                             \

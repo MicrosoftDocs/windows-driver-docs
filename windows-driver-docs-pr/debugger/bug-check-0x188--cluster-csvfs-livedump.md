@@ -5,9 +5,6 @@ ms.assetid: 220B0CDB-6E10-4262-A07C-042E8BA21D7F
 keywords: ["Bug Check 0x188 CLUSTER_CSVFS_LIVEDUMP", "CLUSTER_CSVFS_LIVEDUMP"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

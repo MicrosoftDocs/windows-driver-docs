@@ -5,9 +5,6 @@ ms.assetid: 17842897-26e3-4b61-aa65-e5cfe8576324
 keywords: [".typeopt (Set Type Options) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.typeopt** command sets or displays the type options.
 
-```
+```dbgcmd
 .typeopt +Flags 
 .typeopt -Flags 
 .typeopt +FlagName 

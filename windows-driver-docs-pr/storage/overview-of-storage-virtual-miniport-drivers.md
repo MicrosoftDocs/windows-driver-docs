@@ -7,11 +7,7 @@ keywords:
 - storage virtual miniport drivers WDK , about
 - virtual miniport drivers WDK
 - miniport drivers WDK storage , virtual
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

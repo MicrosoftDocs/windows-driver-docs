@@ -4,9 +4,6 @@ description: Debugging Tools For Windows What's New
 ms.assetid: 7F85412E-7A5D-4B1E-83B9-C32EDA7C6B49
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

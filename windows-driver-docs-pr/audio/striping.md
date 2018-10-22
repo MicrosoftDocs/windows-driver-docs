@@ -11,11 +11,7 @@ keywords:
 - bus bandwidth WDK audio
 - bandwidth WDK audio
 - allocating bandwidth
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ The HD Audio architecture supports a technique called *striping* that can reduce
 
 The function driver enables striping through the [**AllocateRenderDmaEngine**](https://msdn.microsoft.com/library/windows/hardware/ff536181) routine's *stripe* call parameter.
 
-For more information about striping, see the *Intel High Definition Audio Specification* at the [Intel HD Audio](http://go.microsoft.com/fwlink/p/?linkid=42508) website.
+For more information about striping, see the *Intel High Definition Audio Specification* at the [Intel HD Audio](https://go.microsoft.com/fwlink/p/?linkid=42508) website.
 
  
 

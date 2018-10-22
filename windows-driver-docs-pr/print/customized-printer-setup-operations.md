@@ -6,11 +6,7 @@ ms.assetid: 888125e9-a057-4e86-9df8-0086cedb368d
 keywords:
 - customized printer setup operations WDK
 - INF files WDK print , customized setup operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

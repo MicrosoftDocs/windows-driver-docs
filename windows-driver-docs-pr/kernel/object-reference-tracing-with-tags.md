@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Object Reference Tracing with Tags
 ms.assetid: f6c3d7b2-09b1-4055-b066-cce8831efab2
 keywords: ["object referencing with tags WDK"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: WDM Driver Layers An Example
 ms.assetid: 64eaa850-6394-4832-b11f-ce4db7f7c37d
 keywords: ["WDM drivers WDK kernel , layered drivers", "layered drivers WDK kernel", "driver layers WDK WDM", "joysticks WDK WDM"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

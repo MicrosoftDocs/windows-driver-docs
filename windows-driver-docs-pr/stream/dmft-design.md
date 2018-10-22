@@ -1,11 +1,7 @@
 ---
 title: Device MFT design guide
 description: This topic outlines the design of a device-wide extension running in user mode that can be used to perform post-processing common to all streams.
-ms.author: windowsdriverdev
 ms.date: 01/30/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

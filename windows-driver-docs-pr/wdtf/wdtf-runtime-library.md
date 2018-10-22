@@ -10,9 +10,6 @@ keywords:
 - Installing WDTF
 - driver testing
 ms.date: 08/14/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
 ms.localizationpriority: medium
 ---
 

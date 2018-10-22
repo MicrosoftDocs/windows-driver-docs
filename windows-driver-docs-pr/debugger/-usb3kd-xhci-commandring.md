@@ -5,9 +5,6 @@ ms.assetid: 3099F3F1-B881-4BBD-90F5-59DC2DFECF3B
 keywords: ["usb3kd.xhci_commandring Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The [**!usb3kd.xhci\_commandring**](-usb3kd-device-info.md) extension displays information about the command ring data structure associated with a USB 3.0 host controller.
 
-```
+```dbgcmd
 !usb3kd.xhci_commandring DeviceExtension
 ```
 
@@ -40,7 +37,7 @@ Usb3kd.dll
 Remarks
 -------
 
-The output the **!xhci\_commandring** command is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys). For more information about the USB 3.0 host controller driver and other drivers in the USB stack, see [USB Driver Stack Architecture](http://go.microsoft.com/fwlink/p?LinkID=251983).
+The output the **!xhci\_commandring** command is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys). For more information about the USB 3.0 host controller driver and other drivers in the USB stack, see [USB Driver Stack Architecture](https://go.microsoft.com/fwlink/p?LinkID=251983).
 
 The command ring is a data structure used by the USB 3.0 host controller driver to pass commands to the host controller.
 
@@ -49,7 +46,7 @@ Examples
 
 To obtain the address of the device extension, look at the output of the [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md) command. In the following example, the address of the device extension is 0xfffffa800536e2d0.
 
-```
+```dbgcmd
 3: kd> !xhci_dumpall
 
 ## Dumping all the XHCI controllers - DrvObj 0xfffffa80053072f0
@@ -68,7 +65,7 @@ To obtain the address of the device extension, look at the output of the [**!xhc
 
 Now you can pass the address of the device extension to the **!xhci\_commandring** command.
 
-```
+```dbgcmd
 3: kd> !xhci_commandring 0xfffffa800536e2d0
 
 ## Dumping dt _COMMAND_DATA 0xfffffa8005362f70 !rcdrlogdump USBXHCI -a 0xfffffa8005a8f010
@@ -98,7 +95,7 @@ DequeueIndex: 24 EnqueueIndex: 24 CycleState: 0
 
 [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

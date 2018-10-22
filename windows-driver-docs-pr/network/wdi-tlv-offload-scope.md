@@ -2,11 +2,7 @@
 title: WDI_TLV_OFFLOAD_SCOPE
 description: WDI_TLV_OFFLOAD_SCOPE is a TLV that contains Rx coalesce offload capabilities.
 ms.assetid: 2E00659F-4A41-4907-AEA6-92EAFBFF2149
-ms.author: windowsdriverdev 
-ms.date: 10/05/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 10/05/2017
 keywords:
  - WDI_TLV_OFFLOAD_SCOPE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

@@ -5,9 +5,6 @@ ms.assetid: 353b9028-7ba4-405e-9ac9-f3c12fd595ab
 keywords: ["Bug Check 0x99 INVALID_REGION_OR_SEGMENT", "INVALID_REGION_OR_SEGMENT"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

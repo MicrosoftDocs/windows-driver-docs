@@ -5,9 +5,6 @@ ms.assetid: da03fafe-4cc8-4da6-9795-828e69e0df20
 keywords: ["wdfkd.wdflogdump Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,13 +21,13 @@ The **!wdfkd.wdflogdump** extension displays the WDF In-flight Recorder log reco
 
 KMDF
 
-```
+```dbgcmd
 !wdfkd.wdflogdump [DriverName][WdfDriverGlobals][-d | -f | -a LogAddress]
 ```
 
 UMDF
 
-```
+```dbgcmd
 !wdfkd.wdflogdump  [DriverName.dll][HostProcessId][-d | -f | -m]
 ```
 

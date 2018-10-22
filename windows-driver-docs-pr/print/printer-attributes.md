@@ -10,11 +10,7 @@ keywords:
 - attributes WDK Unidrv
 - printer attributes WDK Unidrv , about printer attributes
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,11 +5,7 @@ ms.assetid: 8d2bb81c-618e-43e0-9a1a-ff0ceb732d90
 keywords:
 - DxApi miniport drivers WDK DirectDraw , initializing
 - initializing DxApi miniport drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

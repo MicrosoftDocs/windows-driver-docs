@@ -5,9 +5,6 @@ ms.assetid: 7294dc5e-190f-486f-9079-1fb28d6d484b
 keywords: ["for_each_frame Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!for\_each\_frame** extension executes a debugger command one time for each frame in the stack of the current thread.
 
-```
+```dbgcmd
 !for_each_frame ["CommandString"] 
 !for_each_frame -?
 ```
@@ -72,7 +69,7 @@ If you include *CommandString*, the debugger displays the frame and its index be
 
 The following command displays all local variables for the current stack.
 
-```
+```dbgcmd
 !for_each_frame !for_each_local dt @#Local
 ```
 

@@ -3,11 +3,7 @@ title: Linear accelerometer data fields
 author: windows-driver-content
 description: This topic provides information about the data fields that are specific to the linear accelerometer.
 ms.assetid: FD869359-C1C2-4B2F-95F3-01234331DC54
-ms.author: windowsdriverdev
-ms.date: 01/04/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
 

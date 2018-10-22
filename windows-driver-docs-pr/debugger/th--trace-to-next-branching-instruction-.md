@@ -5,9 +5,6 @@ ms.assetid: 42b7ceb6-c507-45b3-9186-0a4014b68a28
 keywords: ["th (Trace to Next Branching Instruction) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,13 +21,13 @@ The **th** command executes the program until it reaches any kind of branching i
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] th [r] [= StartAddress] [Count] 
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 th [r] [= StartAddress] [Count] 
 ```
 

@@ -3,11 +3,7 @@ title: WIA Security and Security Descriptors
 author: windows-driver-content
 description: WIA Security and Security Descriptors
 ms.assetid: 2919f3fc-1eb5-4801-a589-ae3000320763
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,7 +33,7 @@ The following code example illustrates how to set the security descriptor. This 
 //
 //  Allocate appropriate security attributes for the named event
 //  to be shared between driver and app running under 
-//  interactive user&#39;s account.
+//  interactive user's account.
 //
 SECURITY_ATTRIBUTES sa = { sizeof(sa), FALSE, NULL };
 if(ConvertStringSecurityDescriptorToSecurityDescriptor(

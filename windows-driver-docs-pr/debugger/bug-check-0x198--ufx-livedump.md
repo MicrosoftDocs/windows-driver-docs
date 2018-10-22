@@ -5,9 +5,6 @@ ms.assetid: 319F8BA5-8522-43E6-B06F-6BC021FF8411
 keywords: ["Bug Check 0x198 UFX_LIVEDUMP", "UFX_LIVEDUMP"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -2,11 +2,7 @@
 title: UsbDeviceCreate rule (kmdf)
 description: The UsbDeviceCreate rule specifies that the WdfUsbTargetDeviceCreate and WdfUsbTargetDeviceCreateWithParameters methods are not called outside of the EvtDevicePrepareHardware event callback function.
 ms.assetid: 70178dad-149b-4f87-a885-28feed906a5f
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["UsbDeviceCreate rule (kmdf)"]
 topic_type:
 - apiref

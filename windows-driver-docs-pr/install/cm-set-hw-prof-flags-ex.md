@@ -12,6 +12,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # CM_Set_HW_Prof_Flags_Ex

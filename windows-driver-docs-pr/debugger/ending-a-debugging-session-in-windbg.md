@@ -4,9 +4,6 @@ description: Ending a Debugging Session in WinDbg
 ms.assetid: 9C19211B-38CC-482B-B69F-B83B29963B3F
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

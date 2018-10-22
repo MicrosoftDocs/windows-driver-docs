@@ -5,9 +5,6 @@ ms.assetid: 1b5260f7-f47c-481a-b93f-015ab9fa4b58
 keywords: ["dv (Display Local Variables) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **dv** command displays the names and values of all local variables in the current scope.
 
-```
+```dbgcmd
 dv [Flags] [Pattern] 
 ```
 

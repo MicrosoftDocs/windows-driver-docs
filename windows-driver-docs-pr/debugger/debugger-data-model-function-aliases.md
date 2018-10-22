@@ -4,9 +4,6 @@ description: Function aliases are a quick unique short name by which a user of t
 keywords: ["Debugger Data Model Function Aliases"]
 ms.author: domars
 ms.date: 03/21/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +23,7 @@ All function aliases created in WinDbg Preview can be invoked as if they were de
 
 As an example, this function provides two constant values, *pi* and *e*.
 
-```
+```cpp
 function __constants()
 {
     return { math_constants : { pi :  3.1415926535 , e :  2.7182818284}, description : "Archimedes' pi and Euler's number e" };
@@ -41,7 +38,7 @@ function initializeScript()
 
 The results of calling the function alias are shown here. 
 
-```
+```dbgcmd
 0:000> !constants
 @$constants()                 : [object Object]
     math_constants   : [object Object]
@@ -50,7 +47,7 @@ The results of calling the function alias are shown here.
 
 DML links to complex objects will be generated automatically. Clicking the math_constants shown above will result in the following output. 
 
-```
+```dbgcmd
 0:000> dx -r1 @$constants().math_constants
 @$constants().math_constants                 : [object Object]
     pi               : 3.141593
@@ -62,7 +59,7 @@ DML links to complex objects will be generated automatically. Clicking the math_
 If the function has arguments, they can be supplied after the function alias command itself. Note that whatever comes after the function alias command is considered an expression and is evaluated as such. The text string is not passed directly to the function. For a single argument expression, it can come after the function alias command itself. For multiple arguments, they should be parenthesized as if it were a function call as illustrated in this next example.
 
 
-```
+```cpp
 function __oneArgument(x)
 {
     return -x;
@@ -82,7 +79,7 @@ function initializeScript()
 
 These two functions can be called as shown here.
 
-```
+```dbgcmd
 0:000> !neg 42
 @$neg(42)        : -42
 
@@ -95,7 +92,7 @@ These two functions can be called as shown here.
 
 In addition to the debug extension **!** "bang" command syntax for invoking an aliased function, all of the names associated with function aliases are directly available in the dx expression evaluator when prefixed by *@$* as shown here.  
 
-```
+```dbgcmd
 0:000> dx @$neg(42)
 @$neg(42)        : -42
 
@@ -110,7 +107,7 @@ A function alias should never be the sole way in which functionality in the vast
 
 As a kernel mode example, the following query takes the PnP device tree and flattens it into a simple flat list of devices: 
 
-```
+```dbgcmd
 0: kd> dx @$cursession.Devices.DeviceTree.Flatten(n => n.Children),5
 @$cursession.Devices.DeviceTree.Flatten(n => n.Children),5                
     [0x0]            : HTREE\ROOT\0
@@ -123,7 +120,7 @@ As a kernel mode example, the following query takes the PnP device tree and flat
 
 This JavaScript code shows how this can be implemented as a function alias. 
 
-```
+```dbgcmd
 function __flatDevices()
 {
     return host.currentSession.Devices.DeviceTree.Flatten(n => n.Children);
@@ -137,7 +134,7 @@ function initializeScript()
 
 The function alias can then be invoked as a debug extension command. 
 
-```
+```dbgcmd
 0: kd> !devices
 @$devices()                
     [0x0]            : HTREE\ROOT\0
@@ -153,7 +150,7 @@ The function alias can then be invoked as a debug extension command.
 
 One of the advantages with using a function alias, is that it can be further refined using the dx syntax. In this example, a where clause is added to look for device nodes that contain "Harddisk".
 
-```
+```dbgcmd
 0: kd> dx @$devices().Where(n => n.InstancePath.Contains("Harddisk"))
 @$devices().Where(n => n.InstancePath.Contains("Harddisk"))                
     [0x0]            : STORAGE\VolumeSnapshot\HarddiskVolumeSnapshot1
@@ -173,7 +170,7 @@ LINQ commands such as the following can be used with functional aliases -  .All,
 
 As with other dx commands, you can right click on a command after it was executed and click "Display as grid" or add "-g" to the command to get a grid view of the results. You can then click on any column to sort, for example on InstancePath.
 
-```
+```dbgcmd
 0: kd> dx -g @$devices().OrderBy(obj => obj.@"InstancePath")
 
 ```
@@ -188,7 +185,7 @@ Debugger objects are projected into a namespace rooted at "Debugger". Processes,
 
 This example JavaScript shows how to display the thread count for the current sessions processes:
 
-```
+```dbgcmd
 function __Processes()
 {
     return host.currentSession.Processes.Select(p => ({Name: p.Name, ThreadCount: p.Threads.Count()}));
@@ -203,7 +200,7 @@ function initializeScript()
 This shows the example output with the !Processes function alias.
 
 
-```
+```dbgcmd
 0: kd> !Processes
 @$Processes()                
     [0x0]            : [object Object]
@@ -225,7 +222,7 @@ This shows the example output with the !Processes function alias.
 ```
 In this example the top 5 process with the largest thread count are displayed.
 
-```
+```dbgcmd
 0: kd> dx -r1 @$Processes().OrderByDescending(p =>p.ThreadCount),5
 @$Processes().OrderByDescending(p =>p.ThreadCount),5                
     [0x4]            : [object Object]

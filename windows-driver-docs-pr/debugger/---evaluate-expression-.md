@@ -5,9 +5,6 @@ ms.assetid: fae689b3-47c9-44bd-992d-8344805fb4b7
 keywords: ["(Evaluate Expression) Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

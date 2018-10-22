@@ -5,11 +5,7 @@ ms.assetid: aace049a-fc1b-46e0-a13f-1406310226d0
 keywords:
 - NDIS filter intermediate drivers WDK
 - filter intermediate drivers WDK NDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

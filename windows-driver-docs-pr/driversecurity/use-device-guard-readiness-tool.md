@@ -2,11 +2,7 @@
 title: Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility
 description: Follow these steps to use Device Guard Readiness Tool to evaluate HVCI driver compatibility of your driver code.
 ms.assetid: 
-ms.author: windowsdriverdev
 ms.date: 02/22/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

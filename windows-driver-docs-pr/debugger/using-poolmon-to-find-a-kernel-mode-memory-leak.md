@@ -5,9 +5,6 @@ ms.assetid: 383b5d9a-3e99-4dc5-bce9-bd44f2ef1dc0
 keywords: ["memory leak, kernel-mode, PoolMon", "PoolMon", "PoolMon, finding a memory leak"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -16,7 +13,7 @@ ms.localizationpriority: medium
 
 If you suspect there is a kernel-mode memory leak, the easiest way to determine which pool tag is associated with the leak is to use the PoolMon tool.
 
-PoolMon (Poolmon.exe) monitors pool memory usage by pool tag name. This tool is included in the Windows Driver Kit (WDK). For a full description, see [PoolMon](http://go.microsoft.com/fwlink/p/?linkid=122776) in the WDK documentation.
+PoolMon (Poolmon.exe) monitors pool memory usage by pool tag name. This tool is included in the Windows Driver Kit (WDK). For a full description, see [PoolMon](https://go.microsoft.com/fwlink/p/?linkid=122776) in the WDK documentation.
 
 ### <span id="enable_pool_tagging__windows_2000_and_windows_xp_"></span><span id="ENABLE_POOL_TAGGING__WINDOWS_2000_AND_WINDOWS_XP_"></span>Enable Pool Tagging (Windows 2000 and Windows XP)
 
@@ -28,7 +25,7 @@ On Windows Server 2003 and later versions of Windows, pool tagging is always ena
 
 The PoolMon header displays the total paged and non-paged pool bytes. The columns show pool use for each pool tag. The display is updated automatically every few seconds. For example:
 
-```
+```dbgcmd
 Memory: 16224K Avail: 4564K PageFlts: 31 InRam Krnl: 684K P: 680K
 Commit: 24140K Limit: 24952K Peak: 24932K Pool N: 744K P: 2180K
 

@@ -5,9 +5,6 @@ ms.assetid: CBBC9BC7-D1BF-44C2-836B-703F5384D690
 keywords: ["gpiokd.pintable Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!gpiokd.pintable** command displays information about an array of GPIO pins.
 
-```
+```dbgcmd
 !gpiokd.pintable PinBase PinCount [Flags]
 ```
 

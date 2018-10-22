@@ -3,11 +3,7 @@ title: OID_GEN_RCV_CRC_ERROR
 author: windows-driver-content
 description: As a query, the OID_GEN_RCV_CRC_ERROR OID specifies the number of frames that are received with checksum errors.
 ms.assetid: dfa5e568-2b0a-4b26-8100-06ea8b0f1a71
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_RCV_CRC_ERROR Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

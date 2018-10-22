@@ -5,9 +5,6 @@ ms.assetid: bece76bd-03ca-40fd-a69b-f6cc05d09806
 keywords: ["Bug Check 0xFC ATTEMPTED_EXECUTE_OF_NOEXECUTE_MEMORY", "ATTEMPTED_EXECUTE_OF_NOEXECUTE_MEMORY"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -2,11 +2,7 @@
 title: PKEY\_FX\_KeywordDetector\_EndpointEffectClsid
 description: In Windows 10 and later, the PKEY\_FX\_KeywordDetector\_EndpointEffectClsid property key identifies the keyword detector end point effect (EFX) in place.
 ms.assetid: 2D776DB4-A317-4097-B188-65CA495D0F89
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ The INF file property key instruct audio endpoint builder to set the CLSIDs for 
 
 An INF file specifies the default format for an audio endpoint device in the add-registry sections for that device. The following INF example shows the strings and add-registry section that loads the APO for an endpoint keyword detector effect into the registry.
 
-```cpp
+```inf
 [Strings]
 PKEY_FX_KeywordDetector_EndpointEffectClsid = "{D04E05A6-594B-4fb6-A80D-01AF5EED7D1D},10"
 ...

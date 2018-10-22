@@ -18,18 +18,18 @@ api_location:
 - olesnmp.h
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # ISNMP::Get method
-
 
 The `Get` method enables an ASP Web page to obtain the value identified by an SNMP OID.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT Get(
   [in]  BSTR    bstrOID,
   [out] VARIANT *varValue
@@ -81,27 +81,19 @@ Win32 error codes can also be returned.
 </tbody>
 </table>
 
- 
-
-## <span id="ddk_isnmp_get_gg"></span><span id="DDK_ISNMP_GET_GG"></span>
-
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 This method calls the **SnmpMgrRequest** function to obtain the OID value. For more information about this function, see the Windows SDK documentation.
 
 The [**ISNMP::Open**](isnmp-open.md) method must be called before the `ISNMP::Get` method can be called.
 
-```cpp
-    Dim StrIP, strCommunity, objSNMP, OIDValue
-    strIP = Session("MS_IPaddress")
-    strCommunity = Session ("MS_Community")
-    Set objSNMP = Server.CreateObject("OlePrn.OleSNMP")
-    objSNMP.Open strIP, strCommunity, 2, 1000
-    OIDValue = objSNMP.Get ("43.18.1.1.2")
+```vb
+Dim StrIP, strCommunity, objSNMP, OIDValue
+strIP = Session("MS_IPaddress")
+strCommunity = Session ("MS_Community")
+Set objSNMP = Server.CreateObject("OlePrn.OleSNMP")
+objSNMP.Open strIP, strCommunity, 2, 1000
+OIDValue = objSNMP.Get ("43.18.1.1.2")
 ```
 
 Requirements
@@ -117,10 +109,6 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 <tr class="odd">
 <td><p>Header</p></td>
 <td>Olesnmp.h</td>
@@ -130,13 +118,4 @@ Requirements
 
 ## See also
 
-
 [**ISNMP::Open**](isnmp-open.md)
-
- 
-
- 
-
-
-
-

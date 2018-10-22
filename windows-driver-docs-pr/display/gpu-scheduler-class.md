@@ -4,11 +4,7 @@ description: GPU Scheduler Class
 ms.assetid: 39d38787-588d-483b-9b36-14a3bc16df7c
 keywords:
 - GPU scheduler class WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

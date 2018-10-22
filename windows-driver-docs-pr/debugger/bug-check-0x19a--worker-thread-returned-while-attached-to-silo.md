@@ -5,9 +5,6 @@ ms.assetid: D947FF20-4C86-4879-A5CA-934A20BE61C9
 keywords: ["Bug Check 0x19A WORKER_THREAD_RETURNED_WHILE_ATTACHED_TO_SILO", "WORKER_THREAD_RETURNED_WHILE_ATTACHED_TO_SILO"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

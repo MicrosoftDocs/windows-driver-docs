@@ -5,9 +5,6 @@ ms.assetid: e268af2e-90a9-411e-8e29-ab486d2aac48
 keywords: GFlags, Global Flags Editor, gflags.exe
 ms.author: domars
 ms.date: 06/12/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,13 +20,13 @@ GFlags is included in the [Debugging Tools for Windows 10 (WinDbg)](debugger-dow
 
 After the debugging tools are installed, gflags.exe for use on 64 bit Windows is installed by default to the following directory.
 
-```
+```console
 C:\Program Files (x86)\Windows Kits\10\Debuggers\x64
 ```
 
 If you are running a 32 bit version of Windows, use the 32 bit version of gflags.exe located here.
 
-```
+```console
 C:\Program Files (x86)\Windows Kits\10\Debuggers\x86
 ```
 

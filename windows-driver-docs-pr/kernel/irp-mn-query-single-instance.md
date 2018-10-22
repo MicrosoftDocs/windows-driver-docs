@@ -2,11 +2,7 @@
 title: IRP_MN_QUERY_SINGLE_INSTANCE
 author: windows-driver-content
 description: All drivers that support WMI must handle this IRP.
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: 104b6b3e-aa5d-437f-8236-02e4abb1ba46
 keywords:
  - IRP_MN_QUERY_SINGLE_INSTANCE Kernel-Mode Driver Architecture

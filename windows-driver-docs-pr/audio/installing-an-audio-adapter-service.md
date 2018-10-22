@@ -2,11 +2,7 @@
 title: Installing an Audio Adapter Service
 description: Installing an Audio Adapter Service
 ms.assetid: fa7a59b3-377f-4b66-ab1a-4dda1f0052c3
-ms.author: windowsdriverdev
 ms.date: 10/26/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: a793f860-db21-41fb-a0d2-931812400f0d
 keywords: ["PDBCopy Command-Line Options Windows Debugging"]
 ms.author: domars
 ms.date: 04/10/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The PDBCopy command line uses the following syntax. The parameters can be included in any order.
 
-```
+```dbgcmd
 pdbcopy OldPDB NewPDB [Options] 
 
 pdbcopy OldPDB NewPDB -p [-f:Symbol] [-f:@TextFile] [Options] 

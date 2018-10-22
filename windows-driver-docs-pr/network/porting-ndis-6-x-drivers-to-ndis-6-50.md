@@ -2,11 +2,7 @@
 title: Porting NDIS 6.x drivers to NDIS 6.50
 description: NDIS 6.50 is substantially the same as NDIS 6.40. For detailed information about new features for NDIS 6.50, see Introduction to NDIS 6.50.
 ms.assetid: ADB2C602-C115-43ED-B77C-BB18C4AE6E45
-ms.author: windowsdriverdev
 ms.date: 06/01/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

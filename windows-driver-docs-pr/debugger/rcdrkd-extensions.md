@@ -4,9 +4,6 @@ description: This section describes the RCDRKD debugger extension commands. Thes
 ms.assetid: 11CEBCED-2C11-4450-A5FB-BC5B48B1E1A3
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +39,9 @@ The [**!rcdrkd.rcdrhelp**](-rcdrkd-rcdrhelp.md) displays help for the RCDRKD com
 ## <span id="related_topics"></span>Related topics
 
 
-[WPP Software Tracing](http://go.microsoft.com/fwlink/p?LinkID=251984)
+[WPP Software Tracing](https://go.microsoft.com/fwlink/p?LinkID=251984)
 
-[Using the Framework's Event Logger](http://go.microsoft.com/fwlink/p?LinkID=251985)
+[Using the Framework's Event Logger](https://go.microsoft.com/fwlink/p?LinkID=251985)
 
 [USB 3.0 Extensions](usb-3-extensions.md)
 

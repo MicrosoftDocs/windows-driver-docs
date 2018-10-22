@@ -5,9 +5,6 @@ ms.assetid: efc527c4-0340-4976-9126-d3e32286fc64
 keywords: ["minipkd.portconfig Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!minipkd.portconfig** extension displays information about the specified PORT\_CONFIGURATION\_INFORMATION data structure.
 
-```
+```dbgcmd
 !minipkd.portconfig PortConfig 
 ```
 

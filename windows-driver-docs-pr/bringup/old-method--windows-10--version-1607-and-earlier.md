@@ -2,11 +2,7 @@
 title: Old method - Windows 10, version 1607 and earlier
 description: Old method - Windows 10, version 1607 and earlier
 author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 05/07/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

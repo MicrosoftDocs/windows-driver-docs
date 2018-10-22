@@ -5,9 +5,6 @@ ms.assetid: fbc6627f-62e0-4832-8da5-dd4d3323965a
 keywords: ["tt (Trace to Next Return) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,13 +21,13 @@ The **tt** command executes the program until a return instruction is reached.
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] tt [r] [= StartAddress] [Count] 
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 tt [r] [= StartAddress] [Count] 
 ```
 

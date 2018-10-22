@@ -5,9 +5,6 @@ ms.assetid: b6ca4b8c-d673-40c5-890f-3b92fbb99fae
 keywords: ["version Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +21,7 @@ The **!version** extension displays the version information for the extension DL
 
 This extension command should not be confused with the [**version (Show Debugger Version)**](version--show-debugger-version-.md) command.
 
-```
+```dbgcmd
 ![ExtensionDLL.]version
 ```
 

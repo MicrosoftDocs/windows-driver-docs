@@ -5,9 +5,6 @@ ms.assetid: 3fd1c4d5-c3c6-40b5-90f4-e5453bb56b19
 keywords: ["wmitrace.strdump Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wmitrace.strdump** extension displays the WMI event trace structures. You can limit the display to the structures for a particular trace session.
 
-```
+```dbgcmd
 !wmitrace.strdump [ LoggerID | LoggerName ] 
 ```
 

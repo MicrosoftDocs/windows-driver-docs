@@ -8,11 +8,7 @@ keywords:
 - Digital Rights Management WDK audio , debugging
 - DRM WDK audio , debugging
 - debugging drivers WDK DRM
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

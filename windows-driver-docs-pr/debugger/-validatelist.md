@@ -5,9 +5,6 @@ ms.assetid: 3d90d21a-8f86-4047-9313-7205ec1b53a3
 keywords: ["doubly-linked list", "validatelist Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!validatelist** extension verifies that the backward and forward links in a doubly-linked list are valid.
 
-```
+```dbgcmd
 !validatelist Address
 ```
 

@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Failure to Validate Device Objects
 ms.assetid: aa4abc20-0b87-44d7-8987-a5b2be397bb1
 keywords: ["reliability WDK kernel , device object validations", "device objects WDK kernel , validation failures", "validation failures WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

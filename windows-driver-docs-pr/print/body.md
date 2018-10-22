@@ -10,11 +10,7 @@ api_name:
 - body
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +24,7 @@ The **body** element is defined in the *asyncui* namespace at this URI: http://s
 Usage
 -----
 
-``` syntax
+```xml
 <body
   stringID = "xs:string"
   resourceDll = "xs:string">
@@ -151,7 +147,7 @@ Examples
 
 The following code example shows how to use the **body** element.
 
-```cpp
+```xml
 <?xml version="1.0" ?>
    <asyncPrintUIRequest
     xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
@@ -171,17 +167,8 @@ The following code example shows how to use the **body** element.
 
 ## See also
 
+[balloonUI](balloonui.md)
 
-[**balloonUI**](balloonui.md)
+[messageBoxUI](messageboxui.md)
 
-[**messageBoxUI**](messageboxui.md)
-
-[**parameter**](parameter.md)
-
- 
-
- 
-
-
-
-
+[parameter](parameter.md)

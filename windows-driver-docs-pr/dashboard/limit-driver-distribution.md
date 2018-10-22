@@ -1,12 +1,8 @@
 ---
 title: Driver distribution expansion
 description: Creating a floor or ceiling for a driver submission in order to change its distribution.
-ms.assetid: 
-ms.author: 
-ms.date: 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.author: eliotgra 
+ms.date: 10/02/2018
 ms.localizationpriority: medium
 ---
 

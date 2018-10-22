@@ -4,9 +4,6 @@ description: You can use Microsoft Visual Studio to set up and perform kernel-mo
 ms.assetid: F8DD0475-13CE-464A-A491-AEFA962A96DB
 ms.author: domars
 ms.date: 04/10/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -16,7 +13,7 @@ ms.localizationpriority: medium
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
-You can use Microsoft Visual Studio to set up and perform kernel-mode debugging over a USB 3.0 cable. To use Visual Studio for kernel-mode debugging, you must have the Windows Driver Kit (WDK) integrated with Visual Studio. For information about how to install the integrated environment, see [Windows Driver Development](http://go.microsoft.com/fwlink/p?linkid=301383).
+You can use Microsoft Visual Studio to set up and perform kernel-mode debugging over a USB 3.0 cable. To use Visual Studio for kernel-mode debugging, you must have the Windows Driver Kit (WDK) integrated with Visual Studio. For information about how to install the integrated environment, see [Windows Driver Development](https://go.microsoft.com/fwlink/p?linkid=301383).
 
 As an alternative to using Visual Studio to set up USB 3.0 debugging, you can do the setup manually. For more information, see [Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually](setting-up-a-usb-3-0-debug-cable-connection.md).
 
@@ -37,7 +34,7 @@ Debugging over a USB 3.0 connection requires the following hardware:
 2.  In UsbView, locate all of the xHCI host controllers.
 3.  In UsbView, expand the nodes of the xHCI host controllers. Look for an indication that a port on the host controller supports debugging.
 
-    ```
+    ```console
     [Port1] 
 
     Is Port User Connectable:         yes
@@ -52,7 +49,7 @@ Debugging over a USB 3.0 connection requires the following hardware:
 
 4.  Make a note of the bus, device, and function numbers for the xHCI controller that you intend to use for debugging. UsbView displays these number. In the following example, the bus number is 48, the device number is 0, and the function number is 0.
 
-    ```
+    ```console
     USB xHCI Compliant Host Controller
     ...
     DriverKey: {36fc9e60-c465-11cf-8056-444553540000}\0020
@@ -89,7 +86,7 @@ On the target computer, open a Command Prompt window as Administrator, and enter
 
 **bcdedit /enum**
 
-```
+```console
 ...
 targetname              MyUsbTarget
 debugtype               USB

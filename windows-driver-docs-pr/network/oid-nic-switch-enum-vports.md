@@ -3,11 +3,7 @@ title: OID_NIC_SWITCH_ENUM_VPORTS
 author: windows-driver-content
 description: An overlying driver or user-mode application issues an object identifier (OID) method request of OID_NIC_SWITCH_ENUM_VPORTS to obtain an array.
 ms.assetid: 4B9587E0-3CA9-46AF-A80E-969E6D563922
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_NIC_SWITCH_ENUM_VPORTS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

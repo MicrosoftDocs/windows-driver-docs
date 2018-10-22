@@ -5,9 +5,6 @@ ms.assetid: f0bb2f3f-0f6b-4ed6-809e-f55b1c537d7f
 keywords: ["SymStore, transactions"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,32 +36,32 @@ For a full listing of all SymStore parameters, see [**SymStore Command-Line Opti
 
 Here are two examples of SymStore adding symbol pointers for build 2195 of Windows 2000 to \\\\MyDir\\symsrv:
 
-```
+```console
 symstore add /r /p /f \\BuildServer\BuildShare\2195free\symbols\*.* /s \\MyDir\symsrv /t "Windows 2000" /v "Build 2195 x86 free" /c "Sample add"
 symstore add /r /p /f \\BuildServer\BuildShare\2195free\symbols\*.* /s \\MyDir\symsrv /t "Windows 2000" /v "Build 2195 x86 checked" /c "Sample add"
 ```
 
 In the following example, SymStore adds the actual symbol files for an application project in \\\\largeapp\\appserver\\bins to \\\\MyDir\\symsrv:
 
-```
+```console
 symstore add /r /f \\largeapp\appserver\bins\*.* /s \\MyDir\symsrv /t "Large Application" /v "Build 432" /c "Sample add"
 ```
 
 Here is an example of how an index file is used. First, SymStore creates an index file based on the collection of symbol files in \\\\largeapp\\appserver\\bins\\. In this case, the index file is placed on a third computer, \\\\hubserver\\hubshare. You use the **/g** option to specify that the file prefix "\\\\largeapp\\appserver" might change in the future:
 
-```
+```console
 symstore add /r /p /g \\largeapp\appserver /f \\largeapp\appserver\bins\*.* /x \\hubserver\hubshare\myindex.txt
 ```
 
 Now suppose you move all the symbol files off of the machine \\\\largeapp\\appserver and put them on \\\\myarchive\\appserver. You can then create the symbol store itself from the index file \\\\hubserver\\hubshare\\myindex.txt as follows:
 
-```
+```console
 symstore add /y \\hubserver\hubshare\myindex.txt /g \\myarchive\appserver /s \\MyDir\symsrv /p /t "Large Application" /v "Build 432" /c "Sample Add from Index"
 ```
 
 Finally, here is an example of SymStore deleting a file added by a previous transaction. See "The server.txt and history.txt Files" section below for an explanation of how to determine the transaction ID (in this case, 0000000096).
 
-```
+```console
 symstore del /i 0000000096 /s \\MyDir\symsrv
 ```
 
@@ -72,7 +69,7 @@ symstore del /i 0000000096 /s \\MyDir\symsrv
 
 When a transaction is added, several items of information are added to server.txt and history.txt for future lookup capability. The following is an example of a line in server.txt and history.txt for an add transaction:
 
-```
+```text
 0000000096,add,ptr,10/09/99,00:08:32,Windows Vista SP 1,x86 fre 1.156c-RTM-2,Added from \\mybuilds\symbols,
 ```
 
@@ -133,7 +130,7 @@ This is a comma-separated line. The fields are explained as follows:
 
 Here are some sample lines from the transaction file 0000000096. Each line records the directory and the location of the file or pointer that was added to the directory.
 
-```
+```text
 canon800.dbg\35d9fd51b000,\\mybuilds\symbols\sp4\dll\canon800.dbg
 canonlbp.dbg\35d9fd521c000,\\mybuilds\symbols\sp4\dll\canonlbp.dbg
 certadm.dbg\352bf2f48000,\\mybuilds\symbols\sp4\dll\certadm.dbg
@@ -144,7 +141,7 @@ certenc.dbg\352bf2f7f000,\\mybuilds\symbols\sp4\dll\certenc.dbg
 
 If you use a **del** transaction to undo the original **add** transactions, these lines will be removed from server.txt, and the following line will be added to history.txt:
 
-```
+```text
 0000000105,del,0000000096
 ```
 

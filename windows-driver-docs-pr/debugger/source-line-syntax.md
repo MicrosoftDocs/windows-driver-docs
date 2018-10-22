@@ -5,9 +5,6 @@ ms.assetid: a4622a89-6419-4547-9650-eb10c3803462
 keywords: ["expressions, source line numbers", "source files and paths, line number syntax", "line number syntax", "source files and paths, file name syntax", "file name syntax", "syntax rules for commands, source line numbers"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +22,7 @@ You can specify source file line numbers as all or part of an MASM expression. T
 
 You must enclose source file and line number expressions by grave accents ( **\`** ). The following example shows the full format for source file line numbers.
 
-```
+```text
 `[[Module!]Filename][:LineNumber]`
 ```
 

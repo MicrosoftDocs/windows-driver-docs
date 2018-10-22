@@ -5,9 +5,6 @@ ms.assetid: 0c3b3da9-c9e6-443d-9087-9bee9aa1e41a
 keywords: ["Bug Check 0xE NO_USER_MODE_CONTEXT", "NO_USER_MODE_CONTEXT"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

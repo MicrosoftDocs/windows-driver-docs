@@ -7,11 +7,7 @@ keywords:
 - formats WDK SetupAPI logging
 - text logs WDK SetupAPI , sections
 - SetupAPI logging WDK Windows Vista , text log sections
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

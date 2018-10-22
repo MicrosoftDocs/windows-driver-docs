@@ -5,9 +5,6 @@ ms.assetid: 1391fa51-61ce-40e5-8bf5-b5a2215c2bd9
 keywords: ["(Block Delimiter) Windows Debugging"]
 ms.author: domars
 ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

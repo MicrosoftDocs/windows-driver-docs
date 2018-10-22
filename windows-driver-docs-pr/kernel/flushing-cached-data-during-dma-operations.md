@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Flushing Cached Data during DMA Operations
 ms.assetid: 1b984b47-82cc-46b9-acad-73c5ed63e246
 keywords: ["DMA transfers WDK kernel , data integrity", "KeFlushIoBuffers", "FlushAdapterBuffers", "flushing cached data"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: 3575B850-A0F9-4AAE-9432-E970D40069D2
 keywords: ["setup debugging", "configure debugging", "configure debugger", "WinDbg", "Visual Studio debugging", "kernel-mode debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

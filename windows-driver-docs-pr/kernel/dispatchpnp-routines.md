@@ -4,11 +4,7 @@ author: windows-driver-content
 description: DispatchPnP Routines
 ms.assetid: 909d99ac-5bd3-4b12-bfb4-79713cf2a156
 keywords: ["dispatch routines WDK kernel , DispatchPnP routine", "DispatchPnP routine", "PnP dispatch routines WDK kernel", "IRPs WDK kernel , Plug and Play dispatch routines", "Plug and Play dispatch routines WDK kernel", "IRP_MJ_PNP I/O function code"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

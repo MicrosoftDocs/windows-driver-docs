@@ -5,9 +5,6 @@ ms.assetid: bc08b925-2a55-4af6-a5e2-949637a4c7ee
 keywords: ["controlling the target", "controlling the target, overview", "starting and stopping the target", "execution of the target"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -251,7 +248,7 @@ CDB and WinDbg also support the **-G** [command-line option](command-line-option
 
 The following command tries to run the application from start to finish, and the debugger prompt appears only if an error occurs.
 
-```
+```console
 cdb -g -G ApplicationName 
 ```
 

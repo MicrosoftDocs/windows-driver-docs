@@ -2,11 +2,7 @@
 title: Discover whether the network device radio is turned on
 description: Discover whether the network device radio is turned on
 ms.assetid: deded77d-8810-498c-a5ae-44885189c061
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

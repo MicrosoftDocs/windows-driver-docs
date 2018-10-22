@@ -5,9 +5,6 @@ ms.assetid: df6bcf7f-eb2e-4605-87a0-c0a7e9e4776b
 keywords: ["Create Dump File (.dump) command", "dump file, Create Dump File (.dump) command", ".dump (Create Dump File) Windows Debugging"]
 ms.author: domars
 ms.date: 08/01/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.dump** command creates a user-mode or kernel-mode crash dump file.
 
-```
+```dbgcmd
 .dump Options FileName 
 .dump /?
 ```
@@ -234,7 +231,7 @@ The **/xc**, **/xr**, **/xp**, and **/xt** options are used to store exception a
 
 The following example will create a user-mode minidump, containing full memory and handle information:
 
-```
+```dbgcmd
 0:000> .dump /mfh myfile.dmp 
 ```
 

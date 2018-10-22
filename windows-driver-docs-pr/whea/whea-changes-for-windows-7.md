@@ -8,11 +8,7 @@ keywords:
 - WHEA WDK , Windows 7 changes
 - Windows 7 WDK WHEA
 - Windows 7 WDK WHEA , WHEA changes
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

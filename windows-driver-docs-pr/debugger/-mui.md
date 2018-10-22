@@ -5,9 +5,6 @@ ms.assetid: f485450f-0dd2-4f1c-85fe-dbf272c2dbae
 keywords: ["multi-language user interface", "mui Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -20,9 +17,9 @@ ms.localizationpriority: medium
 # !mui
 
 
-The **!mui** extension displays the Multilingual User Interface (MUI) cache information. The implementation of MUI was improved in Windows Vista. As a result, the behavior of this extension on earlier implementations is undefined.
+The **!mui** extension displays the Multilingual User Interface (MUI) cache information. 
 
-```
+```dbgcmd
 !mui -c
 !mui -s
 !mui -r ModuleAddress

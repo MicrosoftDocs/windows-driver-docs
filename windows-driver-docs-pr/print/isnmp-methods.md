@@ -9,14 +9,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: f261446b-3f9e-4fcc-a9a9-d1b7307a18e8
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # ISNMP Methods
-
-
-## <span id="ddk_isnmp_methods_gg"></span><span id="DDK_ISNMP_METHODS_GG"></span>
-
 
 This section describes the methods defined by the Automation interface for the **ISNMP** object. The methods are:
 
@@ -37,11 +34,3 @@ This section describes the methods defined by the Automation interface for the *
 [**ISNMP::Set**](isnmp-set.md)
 
 [**ISNMP::SetList**](isnmp-setlist.md)
-
- 
-
- 
-
-
-
-

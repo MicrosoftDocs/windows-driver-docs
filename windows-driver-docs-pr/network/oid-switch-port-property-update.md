@@ -3,11 +3,7 @@ title: OID_SWITCH_PORT_PROPERTY_UPDATE
 author: windows-driver-content
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID_SWITCH_PORT_PROPERTY_UPDATE to notify extensible switch extensions about the update of a property for an extensible switch port policy.
 ms.assetid: 674CA5EB-BF11-47E8-A2AC-6C789CA4FDB5
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_SWITCH_PORT_PROPERTY_UPDATE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

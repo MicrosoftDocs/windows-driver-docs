@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Using the System's Cancel Spin Lock
 ms.assetid: dd3cf1e7-8ecc-4721-9160-86bf928687e4
 keywords: ["cancel spin locks WDK kernel", "spin locks WDK kernel", "system cancel spin locks WDK kernel", "STATUS_CANCELLED"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

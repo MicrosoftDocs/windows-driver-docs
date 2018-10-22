@@ -9,11 +9,7 @@ keywords:
 - nested contexts WDL GDL
 - GDL WDK , values
 - values WDK GDL , nested contexts
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,8 +36,8 @@ The following code examples shows GDL nested contexts that contain errors.
 *bad_nests: (  ] *%  end nesting delimiter can only be used within its nesting context.
 *bad_nests: (  ]  )
 *bad_nests:   ] [   *%  end nesting delimiter can only be used within its nesting context.
-*bad_nests: (  [  )   ]   *%  end nesting delimiter can only be used within its nesting*% context.  In this case the &#39;)&#39; char cannot be used within the context begun 
-*%by &#39;[&#39; .
+*bad_nests: (  [  )   ]   *%  end nesting delimiter can only be used within its nesting*% context.  In this case the ')' char cannot be used within the context begun 
+*%by '[' .
 *bad_nests:  {  [ ]  }  *% attempt to use construct delimiter to define a nesting context 
 *%  outside of a nesting context.
 ```

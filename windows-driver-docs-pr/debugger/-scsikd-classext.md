@@ -5,9 +5,6 @@ ms.assetid: 2b56966c-7ae1-4d44-ad60-19f31e47efff
 keywords: ["scsikd.classext Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!scsikd.classext** extension displays the specified class Plug and Play (PnP) device.
 
-```
+```dbgcmd
 !scsikd.classext [Device [Level]] 
 ```
 

@@ -4,9 +4,6 @@ description: The procedures covers Entering Debugger Commands in Visual Studio.
 ms.assetid: 0590D849-3885-46D9-A6A1-55F3086B95FF
 ms.author: domars
 ms.date: 05/11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

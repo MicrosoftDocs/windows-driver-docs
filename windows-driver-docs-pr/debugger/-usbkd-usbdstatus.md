@@ -5,9 +5,6 @@ ms.assetid: 9983433E-1D17-47C6-972B-0A02B228A6AE
 keywords: ["usbkd.usbdstatus Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbdstatus** command displays the name of a USBD status code.
 
-```
+```dbgcmd
 !usbkd.usbdstatus StatusCode
 ```
 
@@ -42,7 +39,7 @@ Examples
 
 Here is an example of the output of **!usbdstatus**.
 
-```
+```dbgcmd
 1: kd> !usbkd.usbdstatus 0xC0000008
 
 USBD_STATUS_DATA_OVERRUN (0xC0000008)
@@ -53,7 +50,7 @@ USBD_STATUS_DATA_OVERRUN (0xC0000008)
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 

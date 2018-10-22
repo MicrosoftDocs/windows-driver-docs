@@ -5,11 +5,7 @@ description: This topic describes WFP user mode management functions.
 ms.assetid: 14accd49-5b96-40]()e6-b9d7-6638a4e5c2dc
 keywords:
 - WFP user mode management functions network drivers
-ms.author: windowsdriverdev
-ms.date: 11/0]()7/20]()17
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 11/07/2017
 ms.localizationpriority: medium
 ---
 

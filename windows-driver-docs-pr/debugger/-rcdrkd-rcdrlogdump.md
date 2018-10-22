@@ -5,9 +5,6 @@ ms.assetid: 18A25B5A-F22E-4A01-A130-885D5CA34D4D
 keywords: ["rcdrkd.rcdrlogdump Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!rcdrkd.rcdrlogdump** extension displays the trace messages from all recorder buffers of a driver or set of drivers.
 
-```
+```dbgcmd
 !rcdrkd.rcdrlogdump DriverName [DriverName ...]
 !rcdrkd.rcdrlogdump DriverName -a Address
 ```
@@ -46,7 +43,7 @@ Examples
 
 The following example shows a portion of the output of the **!rcdrlogdump**command.
 
-```
+```dbgcmd
 3: kd> !rcdrlogdump usbxhci.sys
 Trace searchpath is: 
 
@@ -78,7 +75,7 @@ Trying to extract TMF information from - C:\ProgramData\dbg\sym\usbxhci.pdb\D4C8
 
 The preceding output contains messages from several log buffers. To see mesages from a single log buffer, use the **-a** parameter, and specify the address of the log buffer. The following example shows how to display the messages from the log buffer at address fffffa8005ff2b60.
 
-```
+```dbgcmd
 3: kd> !rcdrlogdump  usbxhci -a fffffa8005ff2b60
 Trace searchpath is: 
 

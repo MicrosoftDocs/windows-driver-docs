@@ -5,9 +5,6 @@ ms.assetid: 27aa26ac-6343-412f-a0ed-6d5e3546827b
 keywords: ["vertarget (Show Target Computer Version) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,9 +19,7 @@ ms.localizationpriority: medium
 
 The **vertarget** command displays the current version of the Microsoft Windows operating system of the target computer.
 
-```
-vertarget 
-```
+`vertarget`
 
 ## <span id="ddk_cmd_show_target_computer_version_dbg"></span><span id="DDK_CMD_SHOW_TARGET_COMPUTER_VERSION_DBG"></span>
 

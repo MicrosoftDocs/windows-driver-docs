@@ -10,11 +10,7 @@ keywords:
 - WDM function drivers WDK ACPI , operation regions
 - operation region memory buffer WDK ACPI
 - memory buffers WDK ACPI
-ms.author: windowsdriverdev
 ms.date: 01/24/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: b67ab2d4-c765-4721-81ed-c6b7c9a0ba6d
 keywords: ["poolval Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!poolval** extension analyzes the headers for a pool page and diagnoses any possible corruption. This extension is only available in Windows XP and later versions.
 
-```
+```dbgcmd
 !poolval Address [DisplayLevel]
 ```
 

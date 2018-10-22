@@ -5,9 +5,6 @@ ms.assetid: 6204df00-2de5-41b6-80c1-ba576699fb20
 keywords: ["wudfext.wudfdriverinfo Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wudfext.wudfdriverinfo** extension displays information about a UMDF driver within the current host process.
 
-```
+```dbgcmd
 !wudfext.wudfdriverinfo Name
 ```
 
@@ -66,7 +63,7 @@ You can use **!wudfext.wudfdriverinfo** to quickly find the device object for yo
 
 The following is an example of the **!wudfext.wudfdriverinfo** display:
 
-```
+```dbgcmd
 kd> !wudfdriverinfo wudfechodriver 
 IWDFDriver: 0xf2db8
   !WDFDEVICE 0xf2f80

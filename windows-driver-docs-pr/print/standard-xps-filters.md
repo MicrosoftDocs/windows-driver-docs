@@ -3,11 +3,7 @@ title: Standard XPS Filters
 author: windows-driver-content
 description: Windows provides two (standard) XPS filters to support built-in conversion from XPS to PCL6 and PostScript level 3.
 ms.assetid: 6404D215-8154-4604-A67B-19B20D1CF229
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,7 +33,7 @@ To configure the print filter pipeline to use these filters, you must create con
 
 Sample configuration file that specifies conversion to PCL6.
 
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Filters>
   <Filter dll="MSxpsPCL6.dll" clsid="{3821E518-33AF-4d17-92B3-28EB410D46B6}" name="Microsoft XPS to PCL6">
@@ -49,7 +45,7 @@ Sample configuration file that specifies conversion to PCL6.
 
 Sample configuration file that specifies conversion to PostScript.
 
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Filters>
   <Filter dll="MSxpsPS.dll" clsid="{8636D90A-5E03-4d62-9269-E06493C57473}" name="Microsoft XPS to PS">
@@ -91,7 +87,7 @@ In the v4 driver model that was released with Windows 8, when you added a post-
 
 In Windows 8.1, the user default PrintTicket is merged with the Job-level PrintTicket in the MSxps filters, and the merged PrintTicket then is added to the Print Filter Pipeline’s property bag. The merged PrintTicket is added to Print Filter Pipeline’s property bag in the same manner as the User PrintTicket. The property is named as follows:
 
-```ManagedCPlusPlus
+```cpp
 #define XPS_FP_JOB_LEVEL_PRINTTICKET    "JobPrintTicket"
 ```
 

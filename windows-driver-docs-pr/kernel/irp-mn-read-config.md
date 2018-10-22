@@ -2,11 +2,7 @@
 title: IRP_MN_READ_CONFIG
 author: windows-driver-content
 description: Bus drivers for buses with configuration space must handle this request for their child devices (child PDOs). Filter and function drivers do not handle this request.
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: cbc5b959-0aae-4c86-b490-296965a7f158
 keywords:
  - IRP_MN_READ_CONFIG Kernel-Mode Driver Architecture

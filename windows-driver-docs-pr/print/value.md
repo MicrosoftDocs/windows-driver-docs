@@ -5,11 +5,7 @@ description: The WSD Value construct allows you to extend the bidi communication
 ms.assetid: 8930e012-88ee-44ff-9abc-a15367f04ca3
 keywords:
 - Value construct
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -70,21 +66,21 @@ The `Value` construct is defined in WsdBidi.xsd.
 In the following code example, the WSD monitor determines the size, as an integer value, of RAM memory.
 
 ```cpp
-<Schema xmlns:nprt=&#39;http://schemas.microsoft.com/windows/2005/05/wdp/print&#39;>
-  <Property name=&#39;Printer&#39;>
-    <Property name=&#39;DeviceInfo&#39;>
-      <Value name=&#39;PrinterString&#39; 
- query=&#39;nprt:PrinterDescription&#39;
- filter=&#39;nprt:PrinterDescription/nprt:PrinterName&#39; 
- type=&#39;BIDI_STRING&#39; 
- xmllang=&#39;true&#39;/>
+<Schema xmlns:nprt='http://schemas.microsoft.com/windows/2005/05/wdp/print'>
+  <Property name='Printer'>
+    <Property name='DeviceInfo'>
+      <Value name='PrinterString' 
+ query='nprt:PrinterDescription'
+ filter='nprt:PrinterDescription/nprt:PrinterName' 
+ type='BIDI_STRING' 
+ xmllang='true'/>
     </Property>
-    <Property name=&#39;Configuration&#39;>
-      <Property name=&#39;Memory&#39;>
-        <Value name=&#39;Size&#39;
-          query=&#39;wprt:PrinterConfiguration&#39;
-          filter=&#39;wprt:PrinterConfiguration/wprt:Storage/wprt:StorageEntry[wprt:Type="RAM"]/wprt:Size&#39;
-          type=&#39;BIDI_INT&#39;/>
+    <Property name='Configuration'>
+      <Property name='Memory'>
+        <Value name='Size'
+          query='wprt:PrinterConfiguration'
+          filter='wprt:PrinterConfiguration/wprt:Storage/wprt:StorageEntry[wprt:Type="RAM"]/wprt:Size'
+          type='BIDI_INT'/>
       </Property>
     </Property>
    </Property>

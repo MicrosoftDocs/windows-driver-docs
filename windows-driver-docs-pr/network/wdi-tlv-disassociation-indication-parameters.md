@@ -3,11 +3,7 @@ title: WDI_TLV_DISASSOCIATION_INDICATION_PARAMETERS
 author: windows-driver-content
 description: WDI_TLV_DISASSOCIATION_INDICATION_PARAMETERS is a TLV that contains disassociation indication parameters for NDIS_STATUS_WDI_INDICATION_DISASSOCIATION.
 ms.assetid: AD799DAA-B89D-4015-8DC5-53057C4DA43E
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_DISASSOCIATION_INDICATION_PARAMETERS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

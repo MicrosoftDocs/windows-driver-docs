@@ -8,11 +8,7 @@ keywords:
 - adapter drivers WDK audio , volume settings
 - customize audio volume settings
 - Port Class audio adapters WDK , volume settings
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -70,9 +66,9 @@ The KS DB stepping values are defined as follows:
 
 For more information on the unit of measurement that is used (1/65536 dB), see [**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](https://msdn.microsoft.com/library/windows/hardware/ff537309).
 
-To override the wdmudio.inf file, use the Include and Needs directives as shown in this code segment from the *Microsoft Virtual Audio Device Driver Sample* available as part of the [Windows Driver Kit (WDK) 8.1 Samples](http://go.microsoft.com/fwlink/p/?LinkId=618052).
+To override the wdmudio.inf file, use the Include and Needs directives as shown in this code segment from the *Microsoft Virtual Audio Device Driver Sample* available as part of the [Windows Driver Kit (WDK) 8.1 Samples](https://go.microsoft.com/fwlink/p/?LinkId=618052).
 
-```cpp
+```inf
 ;Copyright (c) Microsoft Corporation. All rights reserved.
 ;
 ...
@@ -86,7 +82,7 @@ For more information about the Include and Needs directives, see [**INF DDInstal
 
 The following is a sample INF wrapper that wraps the INF file for the Audio Class driver.
 
-```Text
+```text
 ;Copyright (c) Microsoft Corporation. All rights reserved.
 ;
 ;Module Name:

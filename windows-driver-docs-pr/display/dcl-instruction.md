@@ -2,11 +2,7 @@
 title: DCL Instruction Format
 description: DCL Instruction Format
 ms.assetid: 2833fe6a-f430-4a34-936f-04e997063671
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -4,11 +4,7 @@ description: Full-Screen-Mode Behavior
 ms.assetid: 43e7fec0-4e4d-401c-80c7-3e0710313214
 keywords:
 - full-screen rotation WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

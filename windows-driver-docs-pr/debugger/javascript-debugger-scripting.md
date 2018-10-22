@@ -4,9 +4,6 @@ description: This topic describes how to use JavaScript to create scripts that u
 ms.assetid: 3442E2C4-4054-4698-B7FB-8FE19D26C171
 ms.author: domars
 ms.date: 12/22/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -66,13 +63,13 @@ JavaScript Debugger Scripting is designed to work with all supported versions of
 
 Before using any of the .script commands, a scripting provider needs to be loaded using the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command. To load the JavaScript provider, use the following command.
 
-```
+```dbgcmd
 0:000> .load jsprovider.dll
 ```
 
 Use the .scriptproviders command to confirm that the JavaScript provider is loaded.
 
-```
+```dbgcmd
 0:000> .scriptproviders
 Available Script Providers:
     NatVis (extension '.NatVis')
@@ -94,7 +91,7 @@ The following commands are available to work with JavaScript Debugger Scripting.
 
 Before using any of the .script commands, a scripting provider needs to be loaded using the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command. To load the JavaScript provider, use the following command.
 
-```
+```dbgcmd
 0:000> .load jsprovider.dll
 ```
 
@@ -105,7 +102,7 @@ The .scriptproviders command will list all the script languages which are presen
 
 In the example below, the JavaScript and NatVis providers are loaded.
 
-```
+```dbgcmd
 0:000> .scriptproviders
 Available Script Providers:
     NatVis (extension '.NatVis')
@@ -121,7 +118,7 @@ For more information, see [**.scriptproviders (List Script Providers)**](-script
 
 The .scriptload command will load a script and execute the root code of a script and the *initializeScript* function. If there are any errors in the initial load and execution of the script, the errors will be displayed to console. The following command shows the successful load of TestScript.js.
 
-```
+```dbgcmd
 0:000> .scriptload C:\WinDbg\Scripts\TestScript.js
 JavaScript script successfully loaded from 'C:\WinDbg\Scripts\TestScript.js'
 ```
@@ -135,7 +132,7 @@ For more information, see [**.scriptload (Load Script)**](-scriptload--load-scri
 
 The .scriptrun command will load a script, execute the root code of the script, the *initializeScript* and the *invokeScript* function. If there are any errors in the initial load and execution of the script, the errors will be displayed to console.
 
-```
+```dbgcmd
 0:000> .scriptrun C:\WinDbg\Scripts\helloWorld.js
 JavaScript script successfully loaded from 'C:\WinDbg\Scripts\helloWorld.js'
 Hello World!  We are in JavaScript!
@@ -150,7 +147,7 @@ For more information, see [**.scriptrun (Run Script)**](-scriptrun--run-script-.
 
 The .scriptunload command unloads a loaded script and calls the *uninitializeScript* function. Use the following command syntax to unload a script
 
-```
+```dbgcmd
 0:000:x86> .scriptunload C:\WinDbg\Scripts\TestScript.js
 JavaScript script unloaded from 'C:\WinDbg\Scripts\TestScript.js'
 ```
@@ -162,7 +159,7 @@ For more information, see [**.scriptunload (Unload Script)**](-scriptunload--unl
 
 The .scriptlist command will list any scripts which have been loaded via the .scriptload or the .scriptrun command. If the TestScript was successfully loaded using .scriptload, the .scriptlist command would display the name of the loaded script.
 
-```
+```dbgcmd
 0:000> .scriptlist
 Command Loaded Scripts:
     JavaScript script from 'C:\WinDbg\Scripts\TestScript.js'
@@ -177,7 +174,7 @@ For more information, see [**.scriptlist (List Loaded Scripts)**](-scriptlist--l
 
 This section describes how to create and execute a simple JavaScript debugger script that prints out, Hello World.
 
-```
+```dbgcmd
 // WinDbg JavaScript sample
 // Prints Hello World
 function initializeScript()
@@ -190,13 +187,13 @@ Use a text editor such as Notepad to create a text file named *HelloWorld.js* th
 
 Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
 
-```
+```dbgcmd
 0:000> .load jsprovider.dll
 ```
 
 Use the .scriptload command to load and execute the script. Because we used the function name *initializeScript*, the code in the function is run when the script is loaded.
 
-```
+```dbgcmd
 0:000> .scriptload c:\WinDbg\Scripts\HelloWorld.js
 JavaScript script successfully loaded from 'c:\WinDbg\Scripts\HelloWorld.js'
 ***> Hello World! 
@@ -204,7 +201,7 @@ JavaScript script successfully loaded from 'c:\WinDbg\Scripts\HelloWorld.js'
 
 After the script is loaded the additional functionality is available in the debugger. Use the [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md) command to display *Debugger.State.Scripts* to see that our script is now resident.
 
-```
+```dbgcmd
 0:000> dx Debugger.State.Scripts
 Debugger.State.Scripts                
     HelloWorld 
@@ -218,7 +215,7 @@ This section describes how to create and execute a simple JavaScript debugger sc
 
 This simple script provides a single function, addTwoValues.
 
-```
+```dbgcmd
 // WinDbg JavaScript sample
 // Adds two functions
 function addTwoValues(a, b)
@@ -231,20 +228,20 @@ Use a text editor such as Notepad to create a text file named *FirstSampleFuncti
 
 Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
 
-```
+```dbgcmd
 0:000> .load jsprovider.dll
 ```
 
 Use the .scriptload command to load the script.
 
-```
+```dbgcmd
 0:000> .scriptload c:\WinDbg\Scripts\FirstSampleFunction.js
 JavaScript script successfully loaded from 'c:\WinDbg\Scripts\FirstSampleFunction.js'
 ```
 
 After the script is loaded the additional functionality is available in the debugger. Use the [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md) command to display *Debugger.State.Scripts* to see that our script is now resident.
 
-```
+```dbgcmd
 0:000> dx Debugger.State.Scripts
 Debugger.State.Scripts                
     FirstSampleFunction    
@@ -252,7 +249,7 @@ Debugger.State.Scripts
 
 We can click on the *FirstSampleFunction*, to see what functions it provides.
 
-```
+```dbgcmd
 0:000> dx -r1 -v Debugger.State.Scripts.FirstSampleFunction.Contents
 Debugger.State.Scripts.FirstSampleFunction.Contents                 : [object Object]
     host             : [object Object]
@@ -262,27 +259,27 @@ Debugger.State.Scripts.FirstSampleFunction.Contents                 : [object Ob
 
 To make the script a bit more convenient to work with, assign a variable in the debugger to hold the contents of the script using the dx command.
 
-```
+```dbgcmd
 0:000> dx @$myScript = Debugger.State.Scripts.FirstSampleFunction.Contents
 ```
 
 Use the dx expression evaluator to call the addTwoValues function.
 
-```
+```dbgcmd
 0:000> dx @$myScript.addTwoValues(10, 41),d
 @$myScript.addTwoValues(10, 41),d : 51
 ```
 
 You can also use the *@$scriptContents* built in alias to work with the scripts. The *@$scriptContents* alias merges all of the .Content of all of the scripts that are loaded.
 
-```
+```dbgcmd
 0:001> dx @$scriptContents.addTwoValues(10, 40),d
 @$scriptContents.addTwoValues(10, 40),d : 50
 ```
 
 When you are done working with the script use the .scriptunload command to unload the script.
 
-```
+```dbgcmd
 0:000> .scriptunload c:\WinDbg\Scripts\FirstSampleFunction.js
 JavaScript script successfully unloaded from 'c:\WinDbg\Scripts\FirstSampleFunction.js'
 ```
@@ -293,7 +290,7 @@ This section describes how to create and execute a simple JavaScript debugger sc
 
 This script provides a single function, RunCommands().
 
-```
+```javascript
 // WinDbg JavaScript sample
 // Shows how to call a debugger command and display results
 "use strict";
@@ -318,20 +315,20 @@ Use a text editor such as Notepad to create a text file named *RunCommands.js*
 
 Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
 
-```
+```dbgcmd
 0:000> .load jsprovider.dll
 ```
 
 Use the .scriptload command to load the RunCommands script.
 
-```
+```dbgcmd
 0:000> .scriptload c:\WinDbg\Scripts\RunCommands.js 
 JavaScript script successfully loaded from 'c:\WinDbg\Scripts\RunCommands.js'
 ```
 
 After the script is loaded the additional functionality is available in the debugger. Use the [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md) command to display *Debugger.State.Scripts.RunCommands* to see that our script is now resident.
 
-```
+```dbgcmd
 0:000>dx -r3 Debugger.State.Scripts.RunCommands
 Debugger.State.Scripts.RunCommands                
     Contents         : [object Object]
@@ -346,7 +343,7 @@ Debugger.State.Scripts.RunCommands
 
 Use the dx command to call the RunCommands function in the RunCommands script.
 
-```
+```dbgcmd
 0:000> dx Debugger.State.Scripts.RunCommands.Contents.RunCommands()
   ***> Displaying command ouput
   ntdll!ExpInterlockedPopEntrySListEnd+0x17 [d:\rs1\minkernel\ntos\rtl\amd64\slist.asm @ 196]:
@@ -379,7 +376,7 @@ When a JavaScript script loads and is executed, it goes through a series of step
 
 As mentioned, initializeScript will be called immediately after the root code of the script is executed. Its job is to return a JavaScript array of registration objects to the provider indicating how to modify the object model of the debugger.
 
-```
+```javascript
 function initializeScript()
 {
     // Add code here that you want to run everytime the script is loaded. 
@@ -392,7 +389,7 @@ function initializeScript()
 
 The invokeScript method is the primary script method and is called when .scriptload and .scriptrun are run.
 
-```
+```javascript
 function invokeScript()
 {
     // Add code here that you want to run everytime the script is executed. 
@@ -407,7 +404,7 @@ The uninitializeScript method is the behavioral opposite of initializeScript. It
 
 If a script neither makes imperative manipulations to the object model nor caches results, it does not need to have an uninitializeScript method. Any changes to the object model performed as indicated by the return value of initializeScript are undone automatically by the provider. Such changes do not require an explicit uninitializeScript method.
 
-```
+```javascript
 function uninitializeScript()
 {
     // Add code here that you want to run everytime the script is unloaded. 
@@ -466,7 +463,7 @@ This table summarizes which functions are called by the script commands
 
 Use this sample code to see when each function is called as the script is loaded, executed and unloaded.
 
-```
+```javascript
 // Root of Script
 host.diagnostics.debugLog("***>; Code at the very top (root) of the script is always run \n");
 
@@ -511,7 +508,7 @@ Custom visualization files allow you to group and organize data in a visualizati
 
 Consider an example of a C++ class which represents a single dimensional array. This class has two members, m\_size which is the overall size of the array, and m\_pValues which is a pointer to a number of ints in memory equal to the m\_size field.
 
-```
+```cpp
 class Simple1DArray
 {
 private:
@@ -523,7 +520,7 @@ private:
 
 We can use the dx command to look at the default data structure rendering.
 
-```
+```dbgcmd
 0:000> dx g_array1D
 g_array1D                 [Type: Simple1DArray]
     [+0x000] m_size           : 0x5 [Type: unsigned __int64]
@@ -534,7 +531,7 @@ g_array1D                 [Type: Simple1DArray]
 
 In order to visualize this type, we need to author a prototype (or ES6) class which has all the fields and properties we want the debugger to show. We also need to have the initializeScript method return an object which tells the JavaScript provider to link our prototype as a visualizer for the given type.
 
-```
+```javascript
 function initializeScript()
 {
     //
@@ -570,20 +567,20 @@ Save the script in a file named arrayVisualizer.js.
 
 Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
 
-```
+```dbgcmd
 0:000> .load C:\ScriptProviders\jsprovider.dll
 ```
 
 Use .scriptload to load the array visualizer script.
 
-```
+```dbgcmd
 0:000> .scriptload c:\WinDbg\Scripts\arrayVisualizer.js
 JavaScript script successfully loaded from 'c:\WinDbg\Scripts\arrayVisualizer.js'
 ```
 
 Now, when the dx command is used the script visualizer will display rows of array content.
 
-```
+```dbgcmd
 0:000> dx g_array1D
 g_array1D                 : [object Object] [Type: Simple1DArray]
     [<Raw View>]     [Type: Simple1DArray]
@@ -596,7 +593,7 @@ g_array1D                 : [object Object] [Type: Simple1DArray]
 
 In addition, this JavaScript visualization provides LINQ functionality, such as Select.
 
-```
+```dbgcmd
 0:000> dx g_array1D.Select(n => n * 3),d
 g_array1D.Select(n => n * 3),d                
     [0]              : 0
@@ -622,7 +619,7 @@ A prototype or class which is made the visualizer for a native type through a re
 
 The bridge between JavaScript and the object model of the debugger is two-way. Native objects can be passed into JavaScript and JavaScript objects can be passed into the Debugger's expression evaluator. As an example of this, consider the addition of the following method in our script:
 
-```
+```javascript
 function multiplyBySeven(val)
 {
     return val * 7;
@@ -631,7 +628,7 @@ function multiplyBySeven(val)
 
 This method can now be utilized in the example LINQ query above. First we load the JavaScript visualization.
 
-```
+```dbgcmd
 0:000> .scriptload c:\WinDbg\Scripts\arrayVisualizer2.js
 JavaScript script successfully loaded from 'c:\WinDbg\Scripts\arrayVisualizer2.js'
 
@@ -640,7 +637,7 @@ JavaScript script successfully loaded from 'c:\WinDbg\Scripts\arrayVisualizer2.j
 
 Then we can use the multiplyBySeven function inline as shown below.
 
-```
+```dbgcmd
 0:000> dx g_array1D.Select(@$myScript.multiplyBySeven),d
 g_array1D.Select(@$myScript.multiplyBySeven),d                
     [0]              : 0
@@ -661,7 +658,7 @@ For general information on working with breakpoints, see [Methods of Controlling
 
 This example will evaluate notepad's open and save dialog: *notepad!ShowOpenSaveDialog*. This script will evaluate the pszCaption variable to determine if the current dialog is an "Open" dialog or if it is a "Save As" dialog. If it's an open dialog, code execution will continue. If it's a save as dialog, code execution will stop, and the debugger will break in.
 
-```
+```javascript
  // Use JavaScript strict mode 
 "use strict";
  
@@ -690,19 +687,19 @@ This example will evaluate notepad's open and save dialog: *notepad!ShowOpenSave
 
 Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
 
-```
+```dbgcmd
 0:000> .load jsprovider.dll
 ```
 
 This command sets a breakpoint on notepad!ShowOpenSaveDialog, and will run the script above whenever that breakpoint is hit.
 
-```
+```dbgcmd
 bp notepad!ShowOpenSaveDialog ".scriptrun C:\\WinDbg\\Scripts\\DebugHandler.js"
 ```
 
 Then when the File &gt; Save option is selected in notepad, the script is run, the g command is not sent, and a break in code execution occurs.
 
-```
+```dbgcmd
 JavaScript script successfully loaded from 'C:\WinDbg\Scripts\DebugHandler.js'
 notepad!ShowOpenSaveDialog:
 00007ff6`f9761884 48895c2408      mov     qword ptr [rsp+8],rbx ss:000000db`d2a9f2f0=0000021985fe2060
@@ -725,7 +722,7 @@ Note that if you use bitwise operators in JavaScript, you are further limited to
 
 This sample code sums two numbers and will be used to test the conversion of 64 bit values.
 
-```
+```javascript
 function playWith64BitValues(a64, b64)
 {
     // Sum two numbers to demonstrate 64-bit behavior.
@@ -757,20 +754,20 @@ Use a text editor such as Notepad to create a text file named *PlayWith64BitValu
 
 Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
 
-```
+```dbgcmd
 0:000> .load jsprovider.dll
 ```
 
 Use the .scriptload command to load the script.
 
-```
+```dbgcmd
 0:000> .scriptload c:\WinDbg\Scripts\PlayWith64BitValues.js
 JavaScript script successfully loaded from 'c:\WinDbg\Scripts\PlayWith64BitValues.js'
 ```
 
 To make the script a bit more convenient to work with, assign a variable in the debugger to hold the contents of the script using the dx command.
 
-```
+```dbgcmd
 0:000> dx @$myScript = Debugger.State.Scripts.PlayWith64BitValues.Contents
 ```
 
@@ -780,21 +777,21 @@ First we will calculate the value of 2^53 =9007199254740992 (Hex 0x2000000000000
 
 First to test, we will use (2^53) - 2 and see that it returns the correct value for the sum.
 
-```
+```dbgcmd
 0:000> dx @$myScript.playWith64BitValues(9007199254740990, 9007199254740990)
 Sum   >> 18014398509481980
 ```
 
 Then we will calculate (2^53) -1 =9007199254740991. This returns the error indicating that the conversion process will lose precision, so this is the largest value that can be used with the sum method in JavaScript code.
 
-```
+```dbgcmd
 0:000> dx @$myScript.playWith64BitValues(9007199254740990, 9007199254740991)
 Error: 64 bit value loses precision on conversion to number
 ```
 
 Call a data model method passing 64-bit values. There is no loss of precision here.
 
-```
+```dbgcmd
 0:001> dx @$myScript.performOp64BitValues( 0x7FFFFFFFFFFFFFFF,  0x7FFFFFFFFFFFFFFF, (x, y) => x + y)
 @$myScript.performOp64BitValues( 0x7FFFFFFFFFFFFFFF,  0x7FFFFFFFFFFFFFFF, (x, y) => x + y) : 0xfffffffffffffffe
 ```
@@ -803,7 +800,7 @@ Call a data model method passing 64-bit values. There is no loss of precision he
 
 The 64-bit library type is a JavaScript object and not a value type such as a JavaScript number. This has some implications for comparison operations. Normally, equality (==) on an object would indicate that operands refer to the same object and not the same value. The JavaScript provider mitigates this by tracking live references to 64-bit values and returning the same "immutable" object for non-collected 64-bit value. This means that for comparison, the following would occur.
 
-```
+```javascript
 // Comparison with 64 Bit Values
 
 function comparisonWith64BitValues(a64, b64)
@@ -829,26 +826,26 @@ Use a text editor such as Notepad to create a text file named *ComparisonWith64B
 
 Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
 
-```
+```dbgcmd
 0:000> .load jsprovider.dll
 ```
 
 Use the .scriptload command to load the script.
 
-```
+```dbgcmd
 0:000> .scriptload c:\WinDbg\Scripts\ComparisonWith64BitValues.js
 JavaScript script successfully loaded from 'c:\WinDbg\Scripts\ComparisonWith64BitValues.js'
 ```
 
 To make the script a bit more convenient to work with, assign a variable in the debugger to hold the contents of the script using the dx command.
 
-```
+```dbgcmd
 0:000> dx @$myScript = Debugger.State.Scripts.comparisonWith64BitValues.Contents
 ```
 
 First to test, we will use (2^53) - 2 and see that it returns the expected values.
 
-```
+```dbgcmd
 0:001> dx @$myScript.comparisonWith64BitValues(9007199254740990, 9007199254740990)
 areEqual   >> true
 areNotEqual   >> false
@@ -858,7 +855,7 @@ isLess   >> false
 
 We will also try the number 42 as the first value to validate the comparison operator is working as it should.
 
-```
+```dbgcmd
 0:001> dx @$myScript.comparisonWith64BitValues(42, 9007199254740990)
 areEqual   >> false
 areNotEqual   >> true
@@ -868,7 +865,7 @@ isLess   >> true
 
 Then we will calculate (2^53) -1 =9007199254740991. This value returns the error indicating that the conversion process will lose precision, so this is the largest value that can be used with the comparison operators in JavaScript code.
 
-```
+```dbgcmd
 0:000> dx @$myScript.playWith64BitValues(9007199254740990, 9007199254740991)
 Error: 64 bit value loses precision on conversion to number
 ```
@@ -908,7 +905,7 @@ This section describes how to use the script debugging capabilities of the debug
 
 Use this sample code to explore debugging a JavaScript. For this walkthrough, we will name it DebuggableSample.js and save it in the C:\MyScripts directory.
 
-```
+```javascript
 "use strict";
 
 class myObj
@@ -1001,13 +998,13 @@ function initializeScript()
 
 Load the sample script.
 
-```
+```dbgcmd
 .scriptload C:\MyScripts\DebuggableSample.js
 ```
 
 Start actively debugging the script using the **.scriptdebug** command.
 
-```
+```dbgcmd
 0:000> .scriptdebug C:\MyScripts\DebuggableSample.js
 >>> ****** DEBUGGER ENTRY DebuggableSample ******
            No active debug event!
@@ -1020,7 +1017,7 @@ inside the script debugger.
 
 Use the **sx** script debugger command to see the list of events we can trap.
                                                         
-```
+```dbgcmd
 >>> Debug [DebuggableSample <No Position>] >sx              
 sx                                                          
     ab  [   inactive] .... Break on script abort            
@@ -1031,7 +1028,7 @@ sx
 
 Use the **sxe** script debugger command to turn on break on entry so that the script will trap into the script debugger as soon as any code within it executes.
                                                             
-```
+```dbgcmd
 >>> Debug [DebuggableSample <No Position>] >sxe en          
 sxe en                                                      
 Event filter 'en' is now active                             
@@ -1040,19 +1037,19 @@ Event filter 'en' is now active
 
 Exit the script debugger and we'll make a function call into the script which will trap into the debugger.
 
-```
+```dbgcmd
 >>> Debug [DebuggableSample <No Position>] >q
 ```
 
 At this point, you are back in the normal debugger.  Execute the following command to call the script.
 
-```
+```dbgcmd
 dx @$scriptContents.outermost()
 ```
 
 Now, you are back in the script debugger and broken in on the first line of the outermost JavaScript function.  
 
-```
+```dbgcmd
 >>> ****** SCRIPT BREAK DebuggableSample [BreakIn] ******   
            Location: line = 73, column = 5                  
            Text: var x = 99                                 
@@ -1065,7 +1062,7 @@ place as well as the relevant snippet of source code: *var x = 99*.
 
 Let's step a few times and get to another place in the script.
 
-```
+```dbgcmd
     p
     t
     p
@@ -1076,7 +1073,7 @@ Let's step a few times and get to another place in the script.
 
 At this point, you should be broken into the throwAndCatch method on line 34.  
 
-```
+```dbgcmd
 ...
 >>> ****** SCRIPT BREAK DebuggableSample [Step Complete] ******                       
            Location: line = 34, column = 5                                            
@@ -1086,7 +1083,7 @@ At this point, you should be broken into the throwAndCatch method on line 34.
 
 You can verify this by executing a stack trace.
 
-```
+```dbgcmd
 >>> Debug [DebuggableSample 34:5] >k                                                  
 k                                                                                     
     ##  Function                         Pos    Source Snippet                        
@@ -1097,7 +1094,7 @@ k
 
 From here, you can investigate the value of variables.
 
-```
+```dbgcmd
 >>> Debug [DebuggableSample 34:5] >??someObj                
 ??someObj                                                   
 someObj          : {...}                                    
@@ -1114,7 +1111,7 @@ someObj.b        : {...}
 
 Let's set a breakpoint on the current line of code and see what breakpoints are now set.
 
-```
+```dbgcmd
 >>> Debug [DebuggableSample 34:5] >bpc                      
 bpc                                                         
 Breakpoint 1 set at 34:5                                    
@@ -1126,7 +1123,7 @@ bl
 
 From here, we'll disable the entry (en) event using the **sxd** script debugger command and then just go and let the script continue to the end.
  
-```                                                                                                                      
+```dbgcmd                                                                                                                      
 >>> Debug [DebuggableSample 34:5] >sxd en                                                                              
 sxd en                                                                                                                 
 Event filter 'en' is now inactive                                                                                      
@@ -1142,7 +1139,7 @@ Test
 
 Execute the script method again and watch our breakpoint be hit.
                                                                                      
-```
+```dbgcmd
 0:000> dx @$scriptContents.outermost()                                                
 inside outer!                                                                         
 >>> ****** SCRIPT BREAK DebuggableSample [Breakpoint 1] ******                        
@@ -1152,7 +1149,7 @@ inside outer!
 
 Display the call stack.
 
-```
+```dbgcmd
 >>> Debug [DebuggableSample 34:5] >k                                                  
 k                                                                                     
     ##  Function                         Pos    Source Snippet                        
@@ -1164,7 +1161,7 @@ k
 At this point, we want to stop debugging this script, so we detach from it and then type q to quit.  
 
 
-```
+```dbgcmd
 >>> Debug [DebuggableSample 34:5] >.detach                  
 .detach                                                     
 Debugger has been detached from script!                     
@@ -1179,7 +1176,7 @@ Test
 
 Executing the function again will no longer break into the debugger.
 
-```
+```dbgcmd
 0:007> dx @$scriptContents.outermost()
 inside outer!
 This is a fun test

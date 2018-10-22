@@ -5,9 +5,6 @@ ms.assetid: 2f66b5c3-1cd6-4641-8dea-5e3a11c87db0
 keywords: ["lse (Launch Source Editor) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **lse** command opens an editor for the current source file.
 
-```
+```dbgcmd
 lse 
 ```
 

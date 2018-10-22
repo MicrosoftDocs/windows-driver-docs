@@ -5,9 +5,6 @@ ms.assetid: 6e6c35e5-d9dd-430a-8fc4-86f24344c24d
 keywords: ["SCSI Miniport Debugging, useful extensions"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +18,7 @@ The **!devobj** extension displays detailed information about a DEVICE\_OBJECT. 
 
 Here is an example:
 
-```
+```dbgcmd
 0: kd> !devobj 8633da70
 Device object (8633da70) is for:
  adpu160m1 \Driver\adpu160m DriverObject 8633eeb8
@@ -40,7 +37,7 @@ The **!object** extension displays information about a system object. This exten
 
 For example:
 
-```
+```dbgcmd
 0: kd> !object \device\scsi
 Object: e12a2520  Type: (863d12c8) Directory
     ObjectHeader: e12a2508
@@ -66,7 +63,7 @@ The **!minipkd.help** extension displays a list of all of the Minipkd.dll extens
 
 If an error message similar to the following appears, it indicates that the symbol path is incorrect and does not point to the correct version of the Scsiport.sys symbols.
 
-```
+```dbgcmd
 minipkd error (0) <path> ... \minipkd\minipkd.c @ line 435
 ```
 
@@ -80,7 +77,7 @@ The **!minipkd.adapters** extension displays all the adapters that work with the
 
 Here is an example:
 
-```
+```dbgcmd
 0: kd> !minipkd.adapters
 Adapter \Driver\lp6nds35     DO 86334a70         DevExt 86334b28
 Adapter \Driver\adpu160m     DO 8633da70         DevExt 8633db28
@@ -93,7 +90,7 @@ Adapter \Driver\adpu160m     DO 86376040         DevExt 863760f8
 
 An error message similar to the following indicates that either the symbol path is incorrect and does not point to the correct version of the Scsiport.sys symbols, or that Windows has not identified any adapters that work with the SCSI Port driver:
 
-```
+```dbgcmd
 minipkd error (0) <path> ... \minipkd\minipkd.c @ line 435
 ```
 
@@ -119,7 +116,7 @@ The **!scsikd.classext** extension displays detailed information about a specifi
 
 Here is an example:
 
-```
+```dbgcmd
 0: kd> !scsikd.classext 
 
  ' !scsikd.classext 8633e3f0 '   (             ) "IBM     " / "DDYS-T09170M    " / "S93E" / "        XBY45906"
@@ -135,7 +132,7 @@ The **!scsikd.scsiext** extension displays detailed information about a specifie
 
 Here are some examples:
 
-```
+```dbgcmd
 0: kd> !scsikd.scsiext 86353040
 Common Extension:
    < ..omitted.. >

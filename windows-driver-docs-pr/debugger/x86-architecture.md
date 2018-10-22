@@ -5,9 +5,6 @@ ms.assetid: 42c62647-7c9a-496e-839f-91283db73a29
 keywords: ["x86 processor, architecture", "registers, on an x86 processor", "x86 processor, registers", "x86 processor, calling conventions", "x86 processor, data types"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -212,7 +209,7 @@ The following is a list of calling conventions used on the x86 architecture:
 
 Here is a sample debugger register display:
 
-```
+```dbgcmd
 eax=00000000 ebx=008b6f00 ecx=01010101 edx=ffffffff esi=00000000 edi=00465000
 eip=77f9d022 esp=05cffc48 ebp=05cffc54 iopl=0         nv up ei ng nz na po nc
 cs=001b  ss=0023  ds=0023  es=0023  fs=0038  gs=0000             efl=00000286
@@ -331,7 +328,7 @@ In the Registers window of WinDbg, the flag code is used to view or alter flags.
 
 Here is an example. In the preceding register display, the flag status **ng** appears. This means that the sign flag is currently set to 1. To change this, use the following command:
 
-```
+```dbgcmd
 r sf=0
 ```
 
@@ -495,7 +492,7 @@ NAE</td>
 
 Conditions are typically used to act on the result of a **cmp** or **test** instruction. For example,
 
-```
+```asm
 cmp eax, 5
 jz equal
 ```

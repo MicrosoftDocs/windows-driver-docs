@@ -5,9 +5,6 @@ ms.assetid: 7fa6ca5c-f960-49eb-b6f0-a6f2d454984f
 keywords: [".suspend_ui (Suspend WinDbg Interface) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.suspend\_ui** command suspends the refresh of WinDbg debugging information windows.
 
-```
+```dbgcmd
 .suspend_ui 0 
 .suspend_ui 1 
 .suspend_ui 

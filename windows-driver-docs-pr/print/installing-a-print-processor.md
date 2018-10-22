@@ -10,11 +10,7 @@ keywords:
 - associating print processor with print queue WDK
 - print processors WDK , associating with print queue
 - print queues WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -141,7 +137,7 @@ DrvUpgradePrinter(
       //
       // This function is called for every printer queue that uses a driver
       // for which one or more files were updated. However, we only want to
-      // update the printer queue&#39;s "driver" by a particular driver.
+      // update the printer queue's "driver" by a particular driver.
       //
       if ( !lstrcmpi(pInfo->pDriverName, gszPrintDriver) )
       {

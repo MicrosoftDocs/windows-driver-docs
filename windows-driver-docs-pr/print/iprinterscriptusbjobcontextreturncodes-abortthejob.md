@@ -13,18 +13,18 @@ api_name:
 - IPrinterScriptUsbJobContextReturnCodes.AbortTheJob
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbJobContextReturnCodes::AbortTheJob method
-
 
 Returns a value of '4' to inform USBMon that the print job must be aborted.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT AbortTheJob(
   [out, retval] UINT32 *value
 );
@@ -72,13 +72,4 @@ Requirements
 
 ## See also
 
-
 [**IPrinterScriptUsbJobContextReturnCodes**](iprinterscriptusbjobcontextreturncodes.md)
-
- 
-
- 
-
-
-
-

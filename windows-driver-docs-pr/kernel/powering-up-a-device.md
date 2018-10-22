@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Powering Up a Device
 ms.assetid: 115cc904-922d-447e-b221-cb3e489dd08d
 keywords: ["I/O WDK power management", "device power ups WDK kernel", "powering up devices WDK kernel", "IRP_MN_SET_POWER", "working state returns WDK power management", "turning on devices WDK power management", "automatic power ups WDK kernel", "on power WDK kernel", "IRPs WDK power management", "startup power management WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

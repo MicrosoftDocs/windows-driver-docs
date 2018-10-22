@@ -5,9 +5,6 @@ ms.assetid: AB19DC1B-009E-445A-B66B-5CC7EF54086F
 keywords: ["rcdrkd.rcdrsearchpath Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!rcdrkd.rcdrsearchpath** extension sets the search path for trace message format (TMF) and trace message control (TMC) files.
 
-```
+```dbgcmd
 !rcdrkd.rcdrsearchpath FilePath
 ```
 

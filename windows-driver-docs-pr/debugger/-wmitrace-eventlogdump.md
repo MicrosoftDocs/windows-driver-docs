@@ -5,9 +5,6 @@ ms.assetid: 27254b36-b413-45f0-9834-ff55fbb787c7
 keywords: ["wmitrace.eventlogdump Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!wmitrace.eventlogdump** extension displays the contents of the specified logger. The display is formatted like an event log.
 
-```
+```dbgcmd
 !wmitrace.eventlogdump { LoggerID | LoggerName }
 ```
 

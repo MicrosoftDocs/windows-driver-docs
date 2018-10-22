@@ -5,9 +5,6 @@ ms.assetid: 4713be6e-fcf4-4fcc-8a50-76af9fd1d5af
 keywords: ["Bug Check 0x53 NO_BOOT_DEVICE", "NO_BOOT_DEVICE"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

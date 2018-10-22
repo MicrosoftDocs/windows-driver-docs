@@ -5,9 +5,6 @@ ms.assetid: cfb40732-6658-43aa-8b83-0ad4b55194ba
 keywords: ["sysptes Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!sysptes** extension displays a formatted view of the system page table entries (PTEs).
 
-```
+```dbgcmd
 !sysptes [Flags]
 ```
 
@@ -72,46 +69,16 @@ Displays detailed information about any system PTEs that are allocated to mappin
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For information about page tables and PTEs, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. (This book may not be available in some languages and countries.)
+For information about page tables and PTEs, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
 Remarks
 -------
 
 To examine a specific PTE, use the [**!pte**](-pte.md) extension.
 
-Here is an example from a Windows 2000 system:
+Here is an example from a Windows system:
 
-```
-kd> !sysptes 1
-
-System PTE Information
-  Total System Ptes 50962
-     SysPtes list of size   1 has 389 free
-     SysPtes list of size   2 has  95 free
-     SysPtes list of size   4 has  55 free
-     SysPtes list of size   8 has  35 free
-     SysPtes list of size  16 has  27 free
- 
-    starting PTE: c03c7000
-    ending PTE:   c03f8c44
-
-loading (99% complete)
-
-      free ptes: c03c8d60   number free: 45134.
-
-  free blocks: 1   total free: 45134    largest free block: 45134
-
-     Page    Count
-       a0        2.
-       a1        2.
-       a2        2.
-       a3        2.
-......
-```
-
-In Windows XP and later versions of Windows, the display is similar, except that the page count statistics at the end are not included. Here is an example from a Windows XP system:
-
-```
+```dbgcmd
 kd> !sysptes 1
 
 System PTE Information

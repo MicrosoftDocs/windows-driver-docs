@@ -5,9 +5,6 @@ ms.assetid: 0f2c2e9c-2889-4d99-b653-0ee1d4c2be0e
 keywords: ["Bug Check 0x7C BUGCODE_NDIS_DRIVER", "BUGCODE_NDIS_DRIVER"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

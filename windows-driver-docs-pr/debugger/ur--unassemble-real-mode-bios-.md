@@ -5,9 +5,6 @@ ms.assetid: 7ea3421a-3841-47ea-ab40-99d10516bb14
 keywords: ["ur (Unassemble Real Mode BIOS) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **ur** command displays an assembly translation of the specified 16-bit real-mode code.
 
-```
+```dbgcmd
 ur Range 
 ur Address
 ur 

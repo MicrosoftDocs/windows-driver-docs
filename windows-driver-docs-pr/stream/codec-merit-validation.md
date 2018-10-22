@@ -9,11 +9,7 @@ keywords:
 - codecs WDK AVStream , merit validation
 - codecs WDK AVStream , hardware
 - codecs WDK AVStream , hardware, merit validation
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -708,7 +704,7 @@ CBaseKsFilter::OPMVideoOutputGetInformation(
         CodecInfoParameters = (OPM_GET_CODEC_INFO_PARAMETERS *)Parameters->abParameters;
 
     // Define parameters prior to calling IoGetDeviceInterfaces
-    // Class interface GUID is decoder/encoder KS filter&#39;s interface GUID
+    // Class interface GUID is decoder/encoder KS filter's interface GUID
     // PDO should be the device object of the device for which the driver
     // is the functional driver
 

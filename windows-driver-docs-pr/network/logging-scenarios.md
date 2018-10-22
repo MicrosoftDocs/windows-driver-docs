@@ -3,11 +3,7 @@ title: Logging scenarios
 author: windows-driver-content
 description: This topic describes logging scenarios for user-initiated feedback with IHV trace logging in WDI drivers.
 ms.assetid: B9E10527-9C25-46B6-ADC2-4CF5AB749E04
-ms.author: windowsdriverdev 
 ms.date: 06/15/2018
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 ms.localizationpriority: medium
 ---
 

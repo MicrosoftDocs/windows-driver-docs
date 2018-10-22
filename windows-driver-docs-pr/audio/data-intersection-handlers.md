@@ -18,11 +18,7 @@ keywords:
 - audio data formats WDK
 - audio data ranges WDK
 - port drivers WDK audio , data-intersection handlers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

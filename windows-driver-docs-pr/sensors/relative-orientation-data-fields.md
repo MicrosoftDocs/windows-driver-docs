@@ -3,11 +3,7 @@ title: Relative orientation sensor data fields
 author: windows-driver-content
 description: This topic provides information about the data fields that are specific to the relative orientation sensor.
 ms.assetid: A48B75DD-5424-48CC-AC8B-251874414FCE
-ms.author: windowsdriverdev
-ms.date: 01/04/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
 

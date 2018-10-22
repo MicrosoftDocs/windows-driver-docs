@@ -5,9 +5,6 @@ ms.assetid: 18d7d8b2-814c-4207-aac9-e3affc2ccebd
 keywords: ["Bug Check 0x96 INVALID_WORK_QUEUE_ITEM", "INVALID_WORK_QUEUE_ITEM"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

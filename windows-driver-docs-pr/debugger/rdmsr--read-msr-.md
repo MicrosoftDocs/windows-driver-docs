@@ -5,9 +5,6 @@ ms.assetid: 693f1be5-f215-4719-ae6f-30e367cefd77
 keywords: ["rdmsr (Read MSR) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **rdmsr** command reads a [Model-Specific Register (MSR)](other-data-spaces.md) value from the specified address.
 
-```
+```dbgcmd
 rdmsr Address 
 ```
 

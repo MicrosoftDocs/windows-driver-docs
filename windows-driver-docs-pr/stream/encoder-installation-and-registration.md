@@ -15,11 +15,7 @@ keywords:
 - metadata WDK encoder
 - KS proxy WDK AVStream
 - Kernel Streaming Proxy WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,7 +39,7 @@ The INF file used to install the driver for an encoder device must reference *ks
 ```INF
 [DefaultInstall]
 include=ks.inf,kscaptur.inf
-needs=[Your driver&#39;s DDInstall section],KS.Registration,KSCAPTUR.Registration.NT
+needs=[Your driver's DDInstall section],KS.Registration,KSCAPTUR.Registration.NT
 ```
 
 ### **Which COM Interface KsProxy Should Expose**
@@ -87,7 +83,7 @@ In the **AddReg** section of your driver's INF file, specify one of the followin
 For example:
 
 ```INF
-[Your driver&#39;s AddReg section]
+[Your driver's AddReg section]
 HKR,Interfaces\{B43C4EEC-8C32-4791-9102-508ADA5EE8E7},,,
 ```
 
@@ -102,7 +98,7 @@ You can specify metadata values in the *Device Parameters\\Capabilities* area of
 For example:
 
 ```INF
-[Your driver&#39;s AddReg section]
+[Your driver's AddReg section]
 HKR,Capabilities,,,
 HKR,Capabilities,"{12345678-1234-1234-1234-12345678abcd}",,guid1
 ```
@@ -149,7 +145,7 @@ Filters indicate their respective categories by specifying one or more of the fo
 To register an encoder filter, specify the KSCATEGORY\_ENCODER GUID in your driver's *DDInstall*.**Interface** INF file section. For example:
 
 ```INF
-[Your Driver&#39;s DDInstall.Interface section]
+[Your Driver's DDInstall.Interface section]
 AddInterface=%KSCATEGORY_ENCODER%,%KSNAME_Filter%,MyEncoderDevice.AddInterface
 
 [MyEncoderDevice.AddInterface]

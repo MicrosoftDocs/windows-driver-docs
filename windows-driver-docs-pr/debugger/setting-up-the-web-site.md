@@ -4,9 +4,6 @@ description: Setting Up the Web Site
 ms.assetid: 9c719557-bca0-4c9c-9208-70e106d976f9
 ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -15,7 +12,7 @@ ms.localizationpriority: medium
 
 Set up a Web site from which to share the source files and note the root directory of the site. Your source is then available from a site such as:
 
-```
+```text
 https://SrcMachineName/source
 ```
 

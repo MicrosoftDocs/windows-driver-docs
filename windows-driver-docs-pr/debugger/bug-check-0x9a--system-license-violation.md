@@ -5,9 +5,6 @@ ms.assetid: 742d864c-46f8-4d7f-8617-061c75fe833a
 keywords: ["Bug Check 0x9A SYSTEM_LICENSE_VIOLATION", "SYSTEM_LICENSE_VIOLATION"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

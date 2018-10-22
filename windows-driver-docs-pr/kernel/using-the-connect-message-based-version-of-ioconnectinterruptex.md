@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Using the CONNECT_MESSAGE_BASED Version of IoConnectInterruptEx
 ms.assetid: 8e06c6aa-85de-4ed2-ac0d-0179201d1272
 keywords: ["IoConnectInterruptEx", "CONNECT_MESSAGE_BASED", "message-signaled interrupts WDK kernel", "automatic interrupt detections WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

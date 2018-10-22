@@ -8,11 +8,7 @@ keywords:
 - UAA WDK
 - Universal Audio Architecture WDK
 - class drivers WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ In Windows Vista, Microsoft provides UAA class drivers for audio devices that co
 
 -   The requirements for the HD Audio codec (to be published).
 
-For information about the requirements for UAA devices on external buses or information about UAA class drivers, see the white paper titled *Universal Audio Architecture* at the [audio technology](http://go.microsoft.com/fwlink/p/?linkid=8751) website.
+For information about the requirements for UAA devices on external buses or information about UAA class drivers, see the white paper titled *Universal Audio Architecture* at the [audio technology](https://go.microsoft.com/fwlink/p/?linkid=8751) website.
 
 The remainder of this discussion refers only to the version of the UAA class driver that controls an audio device that connects to an internal bus, implements the HD Audio hardware registers, and controls a UAA-compliant HD Audio codec. This class driver is a child of the HD Audio bus driver and uses the bus driver's baseline HD Audio DDI to program the UAA-compliant hardware.
 

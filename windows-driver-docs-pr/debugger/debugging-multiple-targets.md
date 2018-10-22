@@ -5,9 +5,6 @@ ms.assetid: 93eb6b49-e7a0-4f30-ade8-94019a1adf43
 keywords: ["multiple targets", "system", "system, overview"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -65,7 +62,7 @@ Example
 
 To  work with three dump files at the same time, you can use the -z option to load them when WinDbg is started. 
 
-```
+```console
 windbg -z c:\notepad.dmp -z c:\paint.dmp -z c:\calc.dmp
 ```
 
@@ -73,7 +70,7 @@ For more infomation see [WinDbg Command-Line Options](windbg-command-line-option
 
 Use the  [|| (System Status)](----system-status-.md) command to confirm that all three systems are present.
 
-```
+```dbgcmd
 ||0:0:007> ||
 .  0 User mini dump: c:\notepad.dmp
    1 User mini dump: C:\paint.dmp
@@ -81,7 +78,7 @@ Use the  [|| (System Status)](----system-status-.md) command to confirm that all
 ```
 
 Use the [**g (Go)**](g--go-.md) command to complete loading of the dump files. 
-```
+```dbgcmd
 ||0:0:007> g
 
 ************* Path validation summary **************
@@ -106,7 +103,7 @@ ntdll!DbgBreakPoint:
 
 Then use the  [||s (Set Current System)](--s--set-current-system-.md) command to set the current system to system 1 and then display the current system.
 
-```
+```dbgcmd
 ||1:1:017> ||1s
 ||1:1:017> ||
    0 User mini dump: c:\notepad.dmp
@@ -117,7 +114,7 @@ Then use the  [||s (Set Current System)](--s--set-current-system-.md) command to
 
 You can use the [.detach](-detach--detach-from-process-.md) command when you are done looking at the current dump file.
 
-```
+```dbgcmd
 ||1:1:017> .detach
 ntdll!DbgBreakPoint:
 00007ff8`aada8d70 cc              int     3

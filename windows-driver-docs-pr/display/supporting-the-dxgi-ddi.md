@@ -2,11 +2,7 @@
 title: Supporting the DXGI DDI
 description: Supporting the DXGI DDI
 ms.assetid: 3a49d7cb-984f-4e4f-a549-5c0442e1c45a
-ms.author: windowsdriverdev
 ms.date: 10/12/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

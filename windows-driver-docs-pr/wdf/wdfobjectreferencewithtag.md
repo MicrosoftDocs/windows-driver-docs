@@ -5,11 +5,7 @@ description: The WdfObjectReferenceWithTag macro increments the reference count 
 ms.assetid: f0206238-c745-48b3-84d0-9f6d6ec9c2e0
 keywords:
  - WdfObjectReferenceWithTag macro
-ms.author: windowsdriverdev
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

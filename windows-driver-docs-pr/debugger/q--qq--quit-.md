@@ -5,9 +5,6 @@ ms.assetid: 94d35997-8b21-4d25-b2ae-4b2a78240153
 keywords: ["q, qq (Quit) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **q** and **qq** commands end the debugging session. (In CDB and KD, this command also exits the debugger itself. In WinDbg, this command returns the debugger to dormant mode.)
 
-```
+```dbgcmd
 q 
 qq 
 ```

@@ -5,9 +5,6 @@ ms.assetid: cb16c193-5420-4900-bf07-44b49859e296
 keywords: ["Logger, restrictions", "Logger, limitations"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

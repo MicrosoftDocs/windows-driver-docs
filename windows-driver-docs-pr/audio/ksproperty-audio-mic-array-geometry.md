@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 05/08/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -75,7 +71,7 @@ The KSPROPERTY\_AUDIO\_MIC\_ARRAY\_GEOMETRY property only supports KSPROPERTY\_T
 
 For more information about how to process a microphone array in Windows, refer to the following resources:
 
-[Microphone Array Support in Windows (white paper)](http://go.microsoft.com/fwlink/p/?linkid=120592)
+[Microphone Array Support in Windows (white paper)](https://go.microsoft.com/fwlink/p/?linkid=120592)
 
 [Microphone Array Geometry Property](https://msdn.microsoft.com/library/windows/hardware/ff537516.aspx)
 

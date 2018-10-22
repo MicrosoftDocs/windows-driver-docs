@@ -6,11 +6,7 @@ ms.assetid: 01c37fed-3b5b-4dd9-bdbd-5c5499a2ddcf
 keywords:
 - ATA Port drivers WDK , power management
 - power management WDK ATA Port driver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

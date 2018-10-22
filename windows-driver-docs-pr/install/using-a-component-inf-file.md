@@ -1,11 +1,8 @@
 ---
 title: Using a Component INF File
 description: Describes how to use software components to include user-mode software that is specific to a device.
-ms.author: windowsdriverdev
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Using a Component INF File

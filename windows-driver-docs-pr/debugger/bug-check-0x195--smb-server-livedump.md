@@ -5,9 +5,6 @@ ms.assetid: 302BA6E0-DC7C-4AE7-BD4D-C6F6A74D82D9
 keywords: ["Bug Check 0x195 SMB_SERVER_LIVEDUMP", "SMB_SERVER_LIVEDUMP"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

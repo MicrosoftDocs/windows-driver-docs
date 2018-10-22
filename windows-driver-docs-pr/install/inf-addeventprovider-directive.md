@@ -11,11 +11,7 @@ api_name:
 - INF AddEventProvider Directive
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 06/04/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

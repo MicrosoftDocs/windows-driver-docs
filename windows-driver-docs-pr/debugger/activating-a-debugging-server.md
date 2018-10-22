@@ -5,9 +5,6 @@ ms.assetid: aba75d2d-4077-415f-b847-023e47239e2e
 keywords: ["Activating a Debugging Server Windows Debugging"]
 ms.author: domars
 ms.date: 03/02/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -30,7 +27,7 @@ The debuggers support several transport protocols: named pipe (NPIPE), TCP, COM 
 
 The general syntax for activating a debugging server depends on the protocol used.
 
-```
+```console
 Debugger -server npipe:pipe=PipeName[,hidden][,password=Password][,IcfEnable] [-noio] [Options]
 
 Debugger -server tcp:port=Socket[,hidden][,password=Password][,ipversion=6][,IcfEnable] [-noio] [Options]
@@ -48,7 +45,7 @@ Debugger -server ssl:proto=Protocol,{certuser=Cert|machuser=Cert},port=Socket,cl
 
 Another method of activating a debugging server is to use the [**.server (Create Debugging Server)**](-server--create-debugging-server-.md) command after the debugger has already been started.
 
-```
+```dbgcmd
 .server npipe:pipe=PipeName[,hidden][,password=Password][,IcfEnable] 
 
 .server tcp:port=Socket[,hidden][,password=Password][,ipversion=6][,IcfEnable] 

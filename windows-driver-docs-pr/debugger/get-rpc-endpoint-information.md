@@ -5,9 +5,6 @@ ms.assetid: 8e852855-896c-4553-8a58-8ca49c7b2e0a
 keywords: ["RPC endpoint Information"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +20,7 @@ If an endpoint number is specified, information about that endpoint is shown. If
 
 The following example displays all endpoints. This is often a useful way to obtain process IDs and cell numbers that can be used as arguments for additional commands:
 
-```
+```console
 D:\wmsg>dbgrpc -e
 Searching for endpoint info ...
 ## PID  CELL ID   ST PROTSEQ        ENDPOINT

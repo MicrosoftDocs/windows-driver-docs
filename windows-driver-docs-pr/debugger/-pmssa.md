@@ -5,9 +5,6 @@ ms.assetid: 55d605bd-0621-4366-8b37-62d462ee1f34
 keywords: ["processor minstate save area", "pmssa Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +21,7 @@ The **!pmssa** extension displays a specified processor Minimal State Save Area 
 
 This extension can only be used with an Itanium-based target computer.
 
-```
+```dbgcmd
 !pmssa Address
 ```
 

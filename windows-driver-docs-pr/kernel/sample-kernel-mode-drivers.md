@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Sample Kernel-Mode Drivers
 ms.assetid: 09d08e07-e991-458f-aedf-018a0dd20af5
 keywords: ["kernel-mode drivers WDK , samples", "sample drivers WDK kernel-mode"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

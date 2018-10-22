@@ -2,11 +2,7 @@
 title: StopAckWithinEvtIoStop rule (kmdf)
 description: The StopAckWithinEvtIoStop rule specifies that the WdfRequestStopAcknowledge function is only called from within EvtIoStop callback function.
 ms.assetid: 10b6278d-a298-41f0-8232-e374bfeb0ab7
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["StopAckWithinEvtIoStop rule (kmdf)"]
 topic_type:
 - apiref

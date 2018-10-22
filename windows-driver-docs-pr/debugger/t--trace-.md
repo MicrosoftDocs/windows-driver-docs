@@ -5,9 +5,6 @@ ms.assetid: 0cb3ac96-5d5c-4ebd-8ef1-2fbb066e6458
 keywords: ["t (Trace) Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,13 +21,13 @@ The **t** command executes a single instruction or source line and optionally di
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] t [r] [= StartAddress] [Count] ["Command"] 
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 t [r] [= StartAddress] [Count] ["Command"] 
 ```
 

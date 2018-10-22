@@ -11,11 +11,7 @@ keywords:
 - Plug and Play WDK KMDF , non-PnP drivers
 - PnP WDK KMDF , non-PnP drivers
 - framework-based drivers WDK KMDF , PnP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

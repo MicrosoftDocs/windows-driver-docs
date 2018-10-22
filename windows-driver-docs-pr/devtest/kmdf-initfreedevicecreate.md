@@ -2,11 +2,7 @@
 title: InitFreeDeviceCreate rule (kmdf)
 description: The InitFreeDeviceCreate rule specifies that a driver must call WdfDeviceInitFree instead of WdfDeviceCreate if an error occurs in one of the device object initialization methods and if the driver received the WDFDEVICE\_INIT structure from a call to WdfControlDeviceInitAllocate.
 ms.assetid: 9d33bd42-8781-442e-9c7d-00b6f04b1634
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["InitFreeDeviceCreate rule (kmdf)"]
 topic_type:
 - apiref

@@ -8,11 +8,7 @@ keywords:
 - printer driver installations WDK , Plug and Play
 - PnP WDK print
 - Plug and Play WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,6 @@ ms.assetid: bb883bb1-3ab8-4702-896d-4ff8076bad68
 keywords: ["RPC call information", "SCALL (server call)"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +20,7 @@ Four optional parameters are permitted. Three of these -- *CallID*, *IfStart*, a
 
 If no parameters are supplied, all known SCALLs in the system will be displayed. The following is an example of this long display:
 
-```
+```console
 D:\wmsg>dbgrpc -c
 Searching for call info ...
 ## PID  CELL ID   ST PNO IFSTART  TIDNUMBER CALLFLAG CALLID   LASTTIME CONN/CLN

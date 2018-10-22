@@ -10,11 +10,7 @@ api_name:
 - requestClose
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +24,7 @@ The **requestClose** element is defined in the *asyncui* namespace at this URI: 
 Usage
 -----
 
-``` syntax
+```xml
 <requestClose/>
 ```
 
@@ -86,15 +82,6 @@ The following code example shows how to close an event notification after a butt
 
 ## See also
 
+[asyncPrintUIRequest](asyncprintuirequest.md)
 
-[**asyncPrintUIRequest**](asyncprintuirequest.md)
-
-[**requestOpen**](requestopen.md)
-
- 
-
- 
-
-
-
-
+[requestOpen](requestopen.md)

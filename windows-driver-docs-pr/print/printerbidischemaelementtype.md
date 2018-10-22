@@ -13,18 +13,18 @@ api_name:
 - PRINTERBIDISCHEMAELEMENTTYPE
 api_type:
 - NA
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # PRINTERBIDISCHEMAELEMENTTYPE enumeration
-
 
 Specifies the possible values of data transferred in a bidi operation
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef enum _PRINTERBIDISCHEMAELEMENTTYPE { 
   PrinterBidiSchemaElementType_Null    = 0,
   PrinterBidiSchemaElementType_Int     = 1,
@@ -40,39 +40,30 @@ typedef enum _PRINTERBIDISCHEMAELEMENTTYPE {
 Constants
 ---------
 
-<span id="PrinterBidiSchemaElementType_Null"></span><span id="printerbidischemaelementtype_null"></span><span id="PRINTERBIDISCHEMAELEMENTTYPE_NULL"></span>**PrinterBidiSchemaElementType\_Null**  
+**PrinterBidiSchemaElementType\_Null**  
 No data.
 
-<span id="PrinterBidiSchemaElementType_Int"></span><span id="printerbidischemaelementtype_int"></span><span id="PRINTERBIDISCHEMAELEMENTTYPE_INT"></span>**PrinterBidiSchemaElementType\_Int**  
+**PrinterBidiSchemaElementType\_Int**  
 Data is an integer.
 
-<span id="PrinterBidiSchemaElementType_Float"></span><span id="printerbidischemaelementtype_float"></span><span id="PRINTERBIDISCHEMAELEMENTTYPE_FLOAT"></span>**PrinterBidiSchemaElementType\_Float**  
+**PrinterBidiSchemaElementType\_Float**  
 Data is a floating-point number.
 
-<span id="PrinterBidiSchemaElementType_Bool"></span><span id="printerbidischemaelementtype_bool"></span><span id="PRINTERBIDISCHEMAELEMENTTYPE_BOOL"></span>**PrinterBidiSchemaElementType\_Bool**  
+**PrinterBidiSchemaElementType\_Bool**  
 Data is a boolean value.
 
-<span id="PrinterBidiSchemaElementType_String"></span><span id="printerbidischemaelementtype_string"></span><span id="PRINTERBIDISCHEMAELEMENTTYPE_STRING"></span>**PrinterBidiSchemaElementType\_String**  
+**PrinterBidiSchemaElementType\_String**  
 Data is a Unicode character string.
 
-<span id="PrinterBidiSchemaElementType_Text"></span><span id="printerbidischemaelementtype_text"></span><span id="PRINTERBIDISCHEMAELEMENTTYPE_TEXT"></span>**PrinterBidiSchemaElementType\_Text**  
+**PrinterBidiSchemaElementType\_Text**  
 Data is a non-localizable Unicode string.
 
-<span id="PrinterBidiSchemaElementType_Enum"></span><span id="printerbidischemaelementtype_enum"></span><span id="PRINTERBIDISCHEMAELEMENTTYPE_ENUM"></span>**PrinterBidiSchemaElementType\_Enum**  
+**PrinterBidiSchemaElementType\_Enum**  
 Data is a Unicode string.
 
-<span id="PrinterBidiSchemaElementType_Blob"></span><span id="printerbidischemaelementtype_blob"></span><span id="PRINTERBIDISCHEMAELEMENTTYPE_BLOB"></span>**PrinterBidiSchemaElementType\_Blob**  
+**PrinterBidiSchemaElementType\_Blob**  
 Data is binary data.
 
 ## See also
 
-
 [**BidiType**](iprinterbidischemaelement-biditype.md)
-
- 
-
- 
-
-
-
-

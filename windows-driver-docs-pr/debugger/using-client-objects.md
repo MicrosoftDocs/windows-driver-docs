@@ -5,9 +5,6 @@ ms.assetid: 07311a2e-86a7-4985-9dfa-55a876cd7899
 keywords: ["Debugger Engine, COM Interfaces"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,7 +31,7 @@ See the Platform SDK for more information about when reference counts should be 
 
 **IUnknown::QueryInterface**, **DebugCreate**, and **DebugConnect** each take an interface ID as one of their arguments. This interface ID can be obtained using the **\_\_uuidof** operator. For example:
 
-```
+```cpp
 IDebugClient * debugClient;
 HRESULT Hr = DebugCreate( __uuidof(IDebugClient), (void **)&debugClient );
 ```

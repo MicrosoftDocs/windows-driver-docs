@@ -4,11 +4,7 @@ author: windows-driver-content
 description: Bus Drivers
 ms.assetid: d1a92c06-882d-49dc-befa-5b9a9e8aecd7
 keywords: ["bus drivers WDK WDM", "enumerating bus devices WDK WDM", "bus controllers WDK WDM", "adapters WDK WDM", "bridges WDK WDM", "WDM bus drivers WDK"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

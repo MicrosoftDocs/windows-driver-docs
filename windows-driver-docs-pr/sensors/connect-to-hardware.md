@@ -3,11 +3,7 @@ title: Connect to hardware
 author: windows-driver-content
 description: This topic shows you how the sensor driver determines the assigned hardware resources and connects to the I2C driver controller.
 ms.assetid: 88D9162B-2B99-4608-B31A-48B1810747A9
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
 

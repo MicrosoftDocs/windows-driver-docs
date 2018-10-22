@@ -7,11 +7,7 @@ keywords:
 - network interface cards WDK networking , starting
 - Plug and Play WDK NDIS miniport , starting NIC
 - starting NICs WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

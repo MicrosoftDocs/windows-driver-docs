@@ -5,9 +5,6 @@ ms.assetid: 41D5E65D-76C2-45E0-9AC7-C2B50D806935
 keywords: ["usbkd.usbhubpd Windows Debugging"]
 ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbhubpd** command displays information about a USB port.
 
-```
+```dbgcmd
 !usbkd.usbhubpd StructAddr
 ```
 
@@ -42,7 +39,7 @@ Examples
 
 Here is one way to find the address of a **usbhub!\_HUB\_PORT\_DATA**. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
-```
+```dbgcmd
 0: kd> !usbkd.usb2tree
 ...
 2)!ehci_info ffffe00001ca11a0 !devobj ffffe00001ca1050 PCI: VendorId 8086 DeviceId 293c RevisionId 0002 
@@ -52,7 +49,7 @@ Here is one way to find the address of a **usbhub!\_HUB\_PORT\_DATA**. First ent
 
 In the preceding output, you can see the suggested command **!devstack ffffe00002320050**. Enter this command.
 
-```
+```dbgcmd
 0: kd> !kdexts.devstack ffffe00002320050
 
   !DevObj           !DrvObj            !DevExt           ObjectName
@@ -65,7 +62,7 @@ In the preceding output, you can see that the address of the device extension fo
 
 Pass the address of the device extension to the [**!usbhubext**](-usbkd-usbhubext.md) command.
 
-```
+```dbgcmd
 0: kd> !usbkd.usbhubext ffffe000023201a0
 
 FDO ffffe00002320050 PDO ffffe0000213c050 HubNumber# 3
@@ -85,7 +82,7 @@ PortData 1: !port2_info ffffe000021bf000 Port State = PS_WAIT_CONNECT PortChange
 
 In the preceding output, `ffffe000021bf000` is the address of a **\_HUB\_PORT\_DATA** structure. Pass this address to **!usbhubpd**.
 
-```
+```dbgcmd
 0: kd> !usbkd.usbhubpd ffffe000021bf000
 PortNumber: 1
 Parent Hub FDO ffffe00002320050
@@ -121,7 +118,7 @@ PortChangelist: !usblist ffffe000021bf1c8, CL [Empty]
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
  
 
