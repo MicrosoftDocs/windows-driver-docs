@@ -210,7 +210,7 @@ The C/C++ compiler does not use the **enter** instruction. (The **enter** instru
 
 The **leave** instruction is equivalent to:
 
-```
+```asm
 mov esp, ebp
 pop ebp
 ```

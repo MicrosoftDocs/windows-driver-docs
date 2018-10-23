@@ -27,7 +27,7 @@ PLMDebug.exe is a tool that enables you to use the Windows debugger to debug Win
 
 PLMDebug.exe is included in [Debugging Tools for Windows](index.md).
 
-```
+```console
 plmdebug /query [Package]
 plmdebug /enableDebug Package [DebuggerCommandLine]
 plmdebug /terminate Package

@@ -3,7 +3,7 @@ title: WDI_TLV_STATION_ATTRIBUTES
 author: windows-driver-content
 description: WDI_TLV_STATION_ATTRIBUTES is a TLV that contains the attributes of a station.
 ms.assetid: CB15D3A4-5B42-44ED-A8A8-3E7F09B65F8B
-ms.date: 07/18/2017 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_STATION_ATTRIBUTES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

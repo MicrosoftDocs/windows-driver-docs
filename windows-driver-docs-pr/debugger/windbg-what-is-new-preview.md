@@ -9,11 +9,6 @@ ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
-
-
 # WinDbg Preview - What's New
 
 This topic provides information on what's new in the WinDbg Preview debugger. 

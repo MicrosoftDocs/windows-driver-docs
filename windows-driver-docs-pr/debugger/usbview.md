@@ -22,7 +22,7 @@ To download  and use USBView complete the following steps:
 
 3. By default on a x64 PC the SDK will install USBView to this directory.
 
-   ```C:\Program Files (x86)\Windows Kits\10\Debuggers\x64```
+   `C:\Program Files (x86)\Windows Kits\10\Debuggers\x64`
 
 4. Navigate to the kits debugger directory for the processor type you are running and click on usbview.exe to start the utility.
 
@@ -45,7 +45,7 @@ The right pane displays the USB data structures that pertain to the selected USB
 
 To use Windows Device Manager to display USB information:
 
-1. Type the Windows Key + R and enter in ```devmgmt.msc``` into the pop-up box and press Enter.
+1. Type the Windows Key + R and enter in `devmgmt.msc` into the pop-up box and press Enter.
 
 2. In Device Manager, click your computer so that it is highlighted.
 

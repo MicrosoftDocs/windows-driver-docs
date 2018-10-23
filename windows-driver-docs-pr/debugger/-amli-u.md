@@ -21,8 +21,9 @@ The **!amli u** extension unassembles AML code.
 
 Syntax
 
+```dbgcmd
     !amli u [ MethodName | CodeAddress ]
-
+```
 
 ## <span id="ddk__amli_u_dbg"></span><span id="DDK__AMLI_U_DBG"></span>Parameters
 

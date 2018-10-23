@@ -21,13 +21,13 @@ The **t** command executes a single instruction or source line and optionally di
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] t [r] [= StartAddress] [Count] ["Command"] 
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 t [r] [= StartAddress] [Count] ["Command"] 
 ```
 

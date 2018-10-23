@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 If you have a machine that has broken into the debugger, but you are unsure whether the crash dump file was successfully written, execute the following command:
 
-```
+```dbgcmd
 dd nt!IopFinalCrashDumpStatus L1
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **up** command displays an assembly translation of the specified program code in physical memory.
 
-```
+```dbgcmd
 up Range 
 up Address 
 up 

@@ -3,7 +3,7 @@ title: WSK Socket IOCTL Operations
 author: windows-driver-content
 description: The WSK subsystem supports the following socket I/O control operations
 ms.assetid: ffdf74d4-4795-4d3f-aaf0-49db89f5ad93
-ms.date: 07/18/2017 
+ms.date: 07/18/2017
 keywords:
  - WSK WDK networking, IOCTL operations
  - Winsock Kernel WDK networking, IOCTL operations

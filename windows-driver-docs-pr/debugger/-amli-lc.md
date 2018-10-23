@@ -21,8 +21,9 @@ The **!amli lc** extension lists all active ACPI contexts.
 
 Syntax
 
+```dbgcmd
    !amli lc
-
+```
 
 ## <span id="ddk__amli_lc_dbg"></span><span id="DDK__AMLI_LC_DBG"></span>
 

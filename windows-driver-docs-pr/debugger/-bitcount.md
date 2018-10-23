@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **!bitcount** extension counts the number of "1" bits in a memory range.
 
-```
+```dbgcmd
 !bitcount StartAddress TotalBits
 ```
 

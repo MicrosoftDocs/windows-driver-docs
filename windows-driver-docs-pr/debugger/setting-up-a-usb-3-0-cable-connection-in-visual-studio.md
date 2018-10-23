@@ -34,7 +34,7 @@ Debugging over a USB 3.0 connection requires the following hardware:
 2.  In UsbView, locate all of the xHCI host controllers.
 3.  In UsbView, expand the nodes of the xHCI host controllers. Look for an indication that a port on the host controller supports debugging.
 
-    ```
+    ```console
     [Port1] 
 
     Is Port User Connectable:         yes
@@ -49,7 +49,7 @@ Debugging over a USB 3.0 connection requires the following hardware:
 
 4.  Make a note of the bus, device, and function numbers for the xHCI controller that you intend to use for debugging. UsbView displays these number. In the following example, the bus number is 48, the device number is 0, and the function number is 0.
 
-    ```
+    ```console
     USB xHCI Compliant Host Controller
     ...
     DriverKey: {36fc9e60-c465-11cf-8056-444553540000}\0020
@@ -86,7 +86,7 @@ On the target computer, open a Command Prompt window as Administrator, and enter
 
 **bcdedit /enum**
 
-```
+```console
 ...
 targetname              MyUsbTarget
 debugtype               USB

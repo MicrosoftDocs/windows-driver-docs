@@ -21,8 +21,9 @@ The **!amli bp** extension places a breakpoint in AML code.
 
 Syntax
 
+```dbgcmd
     !amli bp { MethodName | CodeAddress }
-
+```
 
 ## <span id="ddk__amli_bp_dbg"></span><span id="DDK__AMLI_BP_DBG"></span>Parameters
 

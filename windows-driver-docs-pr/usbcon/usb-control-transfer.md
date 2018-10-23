@@ -296,7 +296,7 @@ Certain types of control requests are not exposed through WDF. For those request
 
 Use the helper macros and structure defined in usb\_hw.h. This header is included with the UMDF Sample Driver for OSR USB Fx2 Learning Kit.
 
-Use this table to determine the best way to send control requests to the USB driver stack. If you are unable to view this table, see the table in [this topic](http://msdn.microsoft.com/library/ff539261(VS.85).aspx).
+Use this table to determine the best way to send control requests to the USB driver stack. If you are unable to view this table, see the table in [this topic](https://msdn.microsoft.com/library/ff539261(VS.85).aspx).
 
 <table>
 <colgroup>

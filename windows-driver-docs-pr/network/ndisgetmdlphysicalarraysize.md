@@ -3,7 +3,7 @@ title: NdisGetMdlPhysicalArraySize macro
 author: windows-driver-content
 description: The NdisGetMdlPhysicalArraySize macro retrieves the number of disconnected physical memory blocks that are associated with an MDL.
 ms.assetid: 25e3f9a3-3057-4081-af74-427102197906
-ms.date: 07/18/2017 
+ms.date: 07/18/2017
 keywords:
  - NdisGetMdlPhysicalArraySize macro Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

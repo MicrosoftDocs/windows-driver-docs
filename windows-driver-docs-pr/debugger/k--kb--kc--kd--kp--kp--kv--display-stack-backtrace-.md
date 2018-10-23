@@ -21,7 +21,7 @@ The **k*\**** commands display the stack frame of the given thread, together wit
 
 User-Mode, x86 Processor
 
-```
+```dbgcmd
 [~Thread] k[b|p|P|v] [c] [n] [f] [L] [M] [FrameCount]
 [~Thread] k[b|p|P|v] [c] [n] [f] [L] [M] = BasePtr [FrameCount]
 [~Thread] k[b|p|P|v] [c] [n] [f] [L] [M] = BasePtr StackPtr InstructionPtr
@@ -30,7 +30,7 @@ User-Mode, x86 Processor
 
 Kernel-Mode, x86 Processor
 
-```
+```dbgcmd
 [Processor] k[b|p|P|v] [c] [n] [f] [L] [M] [FrameCount]
 [Processor] k[b|p|P|v] [c] [n] [f] [L] [M] = StackPtr FrameCount
 [Processor] k[b|p|P|v] [c] [n] [f] [L] [M] = BasePtr StackPtr InstructionPtr
@@ -39,7 +39,7 @@ Kernel-Mode, x86 Processor
 
 User-Mode, x64 Processor
 
-```
+```dbgcmd
 [~Thread] k[b|p|P|v] [c] [n] [f] [L] [M] [FrameCount]
 [~Thread] k[b|p|P|v] [c] [n] [f] [L] [M] = StackPtr FrameCount
 [~Thread] k[b|p|P|v] [c] [n] [f] [L] [M] = StackPtr InstructionPtr FrameCount
@@ -48,7 +48,7 @@ User-Mode, x64 Processor
 
 Kernel-Mode, x64 Processor
 
-```
+```dbgcmd
 [Processor] k[b|p|P|v] [c] [n] [f] [L] [M] [FrameCount]
 [Processor] k[b|p|P|v] [c] [n] [f] [L] [M] = StackPtr FrameCount
 [Processor] k[b|p|P|v] [c] [n] [f] [L] [M] = StackPtr InstructionPtr FrameCount
@@ -57,7 +57,7 @@ Kernel-Mode, x64 Processor
 
 User-Mode, ARM Processor
 
-```
+```dbgcmd
 [~Thread] k[b|p|P|v] [c] [n] [f] [L] [M] [FrameCount]
 [~Thread] k[b|p|P|v] [c] [n] [f] [L] [M] = StackPtr FrameCount
 [~Thread] k[b|p|P|v] [c] [n] [f] [L] [M] = StackPtr InstructionPtr FrameCount
@@ -66,7 +66,7 @@ User-Mode, ARM Processor
 
 Kernel-Mode, ARM Processor
 
-```
+```dbgcmd
 [Processor] k[b|p|P|v] [c] [n] [f] [L] [M] [FrameCount]
 [Processor] k[b|p|P|v] [c] [n] [f] [L] [M] = StackPtr FrameCount
 [Processor] k[b|p|P|v] [c] [n] [f] [L] [M] = StackPtr InstructionPtr FrameCount

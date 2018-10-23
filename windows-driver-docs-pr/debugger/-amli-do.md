@@ -21,8 +21,9 @@ The **!amli do** extension displays an AML data object.
 
 Syntax
 
+```dbgcmd
     !amli do Address
-
+```
 
 ## <span id="ddk__amli_do_dbg"></span><span id="DDK__AMLI_DO_DBG"></span>Parameters
 

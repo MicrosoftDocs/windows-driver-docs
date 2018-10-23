@@ -21,13 +21,13 @@ The **tct** command executes the program until it reaches a call instruction or 
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] tct [r] [= StartAddress] [Count] 
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 tct [r] [= StartAddress] [Count] 
 ```
 

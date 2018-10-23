@@ -26,7 +26,7 @@ The log file holds a copy of everything you see on the Debug screen during your 
 
 A sample batch file for running a debugging session on the local host is:
 
-```
+```bat
 set _NT_DEBUG_PORT=com2
 set _NT_DEBUG_BAUD_RATE=19200
 set _NT_SYMBOL_PATH=c:\winnt\symbols
@@ -40,7 +40,7 @@ remote /s "KD -v" debug
 
 After this batch file is run, anyone with a Windows computer that is networked to the local host computer can connect to the debug session by using the following command:
 
-```
+```console
 remote /c computername debug 
 ```
 

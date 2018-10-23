@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **so** command sets or displays the kernel debugging options.
 
-```
+```dbgcmd
 so [Options] 
 ```
 

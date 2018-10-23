@@ -16,7 +16,7 @@ There are two different ways to exit KD.
 
 -   Press [**CTRL+B**](ctrl-b--quit-local-debugger-.md) and then press ENTER to end the debugger abruptly. If you want the target computer to continue to run after the debugger is ended, you must use this method. Because CTRL+B does not remove breakpoints, you should use the following commands first.
 
-    ```
+    ```dbgcmd
     kd>  bc *
     kd>  g
     ```

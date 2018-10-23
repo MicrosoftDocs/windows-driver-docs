@@ -34,9 +34,9 @@ This topic describes how you can create custom NatVis visualizers to display deb
 
 Refer to these resources for general information about working with NatVis.
 
-[Create custom views of native objects](http://msdn.microsoft.com/library/jj620914.aspx)
+[Create custom views of native objects](https://msdn.microsoft.com/library/jj620914.aspx)
 
-[Writing debugger type visualizers for C++ using .natvis files](http://code.msdn.microsoft.com/windowsdesktop/Writing-type-visualizers-2eae77a2)
+[Writing debugger type visualizers for C++ using .natvis files](https://code.msdn.microsoft.com/windowsdesktop/Writing-type-visualizers-2eae77a2)
 
 [**.nvload**](-nvload--natvis-load-.md)
 
@@ -52,7 +52,7 @@ Refer to these resources for general information about working with NatVis.
 
 Create a simple C++ application that has an instance of the class **CDog**.
 
-```ManagedCPlusPlus
+```cpp
 class CDog
 {
 public:
@@ -73,7 +73,7 @@ Create a file named Dog.natvis that contains this XML:
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+<AutoVisualizer xmlns="https://schemas.microsoft.com/vstudio/debugger/natvis/2010">
    <Type Name="CDog">
       <DisplayString>{{Age = {m_age} years. Weight = {m_weight} pounds.}}</DisplayString>
    </Type>
@@ -86,7 +86,7 @@ C:\\Program Files\\Debugging Tools for Windows (x64)\\Visualizers
 
 Run your program, and break in at the main function. Take a step so that the variable `MyDog` gets initialized. Display `MyDog` using [**??**](----evaluate-c---expression-.md) and again using **dx**.
 
-```
+```dbgcmd
 0:000> ??MyDog
 class CDog
    +0x000 m_age        : 0n8

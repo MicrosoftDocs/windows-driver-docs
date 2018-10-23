@@ -1,7 +1,7 @@
 ---
 title: Camera intrinsics
 description: Provides information about camera intrinsics.
-ms.date: 9/26/2018
+ms.date: 09/26/2018
 ms.localizationpriority: medium
 ---
 

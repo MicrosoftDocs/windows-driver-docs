@@ -5,7 +5,7 @@ description: The HS_PLUGIN_QUERY_CELLULAR_EXCEPTION_HOSTS function queries the l
 ms.assetid: 7f38f146-a637-4ec3-8610-ea4934c4a57a
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_QUERY_CELLULAR_EXCEPTION_HOSTS) function Network Drivers Starting with Windows Vista
-ms.date: 07/31/2017 
+ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
 

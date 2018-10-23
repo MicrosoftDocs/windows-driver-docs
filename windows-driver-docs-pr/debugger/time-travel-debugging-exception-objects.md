@@ -6,9 +6,6 @@ ms.date: 09/24/2017
 ms.localizationpriority: medium
 ---
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
 
 # TTD Exception Objects
 ## Description

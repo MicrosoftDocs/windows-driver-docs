@@ -55,7 +55,7 @@ This section includes the following topics:
 [Windows Hardware Error Architecture Debugger Extensions](windows-hardware-error-architecture-debugger-extensions.md)
 
 ## Related topics
-[Windows Hardware Error Architecture ACPI Table Specification](http://msdn.microsoft.com/windows/hardware/gg463511)  
+[Windows Hardware Error Architecture ACPI Table Specification](https://msdn.microsoft.com/windows/hardware/gg463511)  
 [Hardware Management and Security](https://msdn.microsoft.com/library/windows/hardware/dn614601)  
 [**Bug Check 0x124: WHEA\_UNCORRECTABLE\_ERROR (Windows Debuggers)**](https://msdn.microsoft.com/library/windows/hardware/ff557321)  
 

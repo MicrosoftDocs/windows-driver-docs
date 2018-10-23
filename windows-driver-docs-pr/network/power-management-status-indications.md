@@ -3,7 +3,7 @@ title: Power Management Status Indications
 author: windows-driver-content
 description: Power Management Status Indications
 ms.assetid: f6a8fef7-2bdd-42b1-8afa-c93a7d6dcce6
-ms.date: 07/18/2017 
+ms.date: 07/18/2017
 keywords:
  - NDIS 6.20 WDK 
  - power management status indications

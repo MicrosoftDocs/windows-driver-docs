@@ -19,8 +19,9 @@ ms.localizationpriority: medium
 
 The **!amli set** extension sets or displays the AMLI Debugger options.
 
+```dbgcmd
     !amli set Options
-
+```
 
 ## <span id="ddk__amli_set_dbg"></span><span id="DDK__AMLI_SET_DBG"></span>Parameters
 

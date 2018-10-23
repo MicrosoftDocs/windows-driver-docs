@@ -35,7 +35,7 @@ The SymProxy files are included in the Debuggers directory of the Windows Driver
 
 To install SymProxy on the server, copy symproxy.dll, symsrv.dll and symproxy.man to %WINDIR%\\system32\\inetsrv.
 
-In order to prevent problems that could occur in accessing the Microsoft Symbol Store at http://msdl.microsoft.com/downloads/symbols, create a blank file called %WINDIR%\\system32\\inetsrv\\symsrv.yes. The contents of this file are not important. When symsrv.yes file is present, it automatically accepts the EULA for the Microsoft Public Symbol Store.
+In order to prevent problems that could occur in accessing the Microsoft Symbol Store at https://msdl.microsoft.com/downloads/symbols, create a blank file called %WINDIR%\\system32\\inetsrv\\symsrv.yes. The contents of this file are not important. When symsrv.yes file is present, it automatically accepts the EULA for the Microsoft Public Symbol Store.
 
  
 

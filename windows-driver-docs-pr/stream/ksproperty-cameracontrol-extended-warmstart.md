@@ -9,7 +9,7 @@ api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_WARMSTART
 api_type:
 - NA
-ms.date: 9//11/2018
+ms.date: 09/11/2018
 ms.localizationpriority: medium
 ---
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **uf** command displays an assembly translation of the specified function in memory.
 
-```
+```dbgcmd
 uf [Options] Address
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **ln** command displays the symbols at or near the given address.
 
-```
+```dbgcmd
 ln Address
 ln /D Address 
 ```

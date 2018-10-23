@@ -6,11 +6,6 @@ ms.date: 04/10/2017
 ms.localizationpriority: medium
 ---
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
-
-
 # WinDbg Preview - Scripting 
 
 This section describes how to use the scripting support in the WinDbg Preview.
@@ -49,8 +44,8 @@ For more information about working with JavaScript, see these topics:
 
 Use **New Script** > **NatVis** to open the following blank NatVis template.
 
-```
-<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+```xml
+<AutoVisualizer xmlns="https://schemas.microsoft.com/vstudio/debugger/natvis/2010">
   <Type Name="">
   </Type>
 </AutoVisualizer>

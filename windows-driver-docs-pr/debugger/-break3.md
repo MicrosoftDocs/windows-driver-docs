@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.break** token behaves like the **break** keyword in C.
 
-```
+```dbgcmd
  .for (...) { ... ; .if (Condition) .break ; ...} 
 
 .while (...) { ... ; .if (Condition) .break ; ...} 

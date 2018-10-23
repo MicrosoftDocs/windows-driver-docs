@@ -19,8 +19,10 @@ ms.localizationpriority: medium
 
 The **.asm** command controls how disassembly code will be displayed.
 
+```dbgcmd
     .asm 
     .asm[-] Options
+```
 
 ## <span id="ddk_meta_change_disassembly_options_dbg"></span><span id="DDK_META_CHANGE_DISASSEMBLY_OPTIONS_DBG"></span>Parameters
 

@@ -25,7 +25,7 @@ The **Request** method performs a variety of different operations.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT Request(
   [in]            ULONG  Request,
   [in, optional]  PVOID  InBuffer,

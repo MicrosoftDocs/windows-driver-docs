@@ -27,8 +27,6 @@ All system-supplied and custom sAPOs must have the following general characteris
 
     **Note**  Real-time interfaces are identified by an "RT" at the end of their name, such as [IAudioProcessingObjectRT](https://msdn.microsoft.com/library/windows/hardware/ff536505).
 
-     
-
     Real-time compatible sAPOs can be used in contexts that do not require real-time processing.
 
 -   An sAPO can modify only the audio data that is passed to it through its [**IAudioProcessingObjectRT::APOProcess**](https://msdn.microsoft.com/library/windows/hardware/ff536506) routine. The sAPO cannot change the settings of the underlying logical device, including its KS topology.

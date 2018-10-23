@@ -6,10 +6,6 @@ ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
-
 # TTD Thread Objects
 ## Description
 *TTD Thread* objects are used to give information about threads and their lifetime during a time travel trace.

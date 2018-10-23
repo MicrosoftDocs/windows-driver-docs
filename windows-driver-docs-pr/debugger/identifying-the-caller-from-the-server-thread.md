@@ -25,14 +25,14 @@ Depending on which protocol sequence is used by this particular call, you can ge
 1.  Start a user-mode debugger with the server thread as the target.
 
 2.  Get the process ID by using the [**| (Process Status)**](---process-status-.md) command:
-    ```
+    ```dbgcmd
     0:001> |
       0     id: 3d4 name: rtsvr.exe
     ```
 
 3.  Get the active calls in this process by using the [**!rpcexts.getcallinfo**](-rpcexts-getcallinfo.md) extension. (See the reference page for an explanation of the syntax.) You need to supply the process ID of 0x3D4:
 
-    ```
+    ```dbgcmd
     0:001> !rpcexts.getcallinfo 0 0 FFFF 3d4
     Searching for call info ...
     PID  CELL ID   ST PNO IFSTART  THRDCELL  CALLFLAG CALLID   LASTTIME CONN/CLN
@@ -43,7 +43,7 @@ Depending on which protocol sequence is used by this particular call, you can ge
     Look for calls with status 02 or 01 (dispatched or active). In this example, the process only has one call. If there were more, you would have to use the [**!rpcexts.getdbgcell**](-rpcexts-getdbgcell.md) extension with the cell number in the THRDCELL column. This would allow you to examine the thread IDs so you could determine which call you were interested in.
 
 4.  After you know which call you are interested in, look at the cell number in the CONN/CLN column. This is the cell ID of the connection object. In this case, the cell number is 0000.0003. Pass this cell number and the process ID to **!rpcexts.getdbgcell**:
-    ```
+    ```dbgcmd
     0:001> !rpcexts.getdbgcell 3d4 0.3
     Getting cell info ...
     Connection

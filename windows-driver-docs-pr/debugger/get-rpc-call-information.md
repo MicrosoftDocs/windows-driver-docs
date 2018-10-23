@@ -20,7 +20,7 @@ Four optional parameters are permitted. Three of these -- *CallID*, *IfStart*, a
 
 If no parameters are supplied, all known SCALLs in the system will be displayed. The following is an example of this long display:
 
-```
+```console
 D:\wmsg>dbgrpc -c
 Searching for call info ...
 ## PID  CELL ID   ST PNO IFSTART  TIDNUMBER CALLFLAG CALLID   LASTTIME CONN/CLN

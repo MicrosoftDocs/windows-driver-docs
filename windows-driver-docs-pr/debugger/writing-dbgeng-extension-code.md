@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 If you intend to use functions from wdbgexts.h, you need to define KDEXT\_64BIT before wdbgexts.h is included. For example:
 
-```
+```cpp
 #define KDEXT_64BIT 
 #include wdbgexts.h 
 #include dbgeng.h 

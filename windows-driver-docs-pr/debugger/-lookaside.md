@@ -67,7 +67,7 @@ Note that if the current depth of a look-aside list exceeds the maximum depth of
 
 Here is an example of the output from this extension:
 
-```
+```dbgcmd
 !lookaside 0xfffff88001294f80
 
 Lookaside "" @ 0xfffff88001294f80  Tag(hex): 0x7366744e "Ntfs"

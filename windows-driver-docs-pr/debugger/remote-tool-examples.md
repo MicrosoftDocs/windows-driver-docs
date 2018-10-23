@@ -22,13 +22,13 @@ The following command starts a remote session on the computer.
 
 The command uses the **/s** parameter to indicate a server-side command. It uses the command, **cmd**, to start the Windows command shell (Cmd.exe), and names the session **test1**.
 
-```
+```console
 remote /s cmd test1
 ```
 
 In response, the Remote tool starts the session and displays the command that clients would use to connect to the session.
 
-```
+```console
 **************************************
 ***********     REMOTE    ************
 ***********     SERVER    ************
@@ -43,13 +43,13 @@ Microsoft Windows XP [Version 5.1.2600]
 
 The following command connects to a remote session on the Server01 computer. The command uses the **/c** parameter to indicate a client-side command. It specifies the name of the server computer, **Server01**, and the name of the session on that computer, **test1**.
 
-```
+```console
 remote /c server01 test1
 ```
 
 In response, the Remote tool displays a message reporting that the client computer is connected to the session on the server computer. The message displays the name of the server computer and local user (**Server04 user1**).
 
-```
+```console
 **************************************
 ***********     REMOTE    ************
 ***********     CLIENT    ************
@@ -77,14 +77,14 @@ The command uses the **/u** parameter to permit only administrators of the compu
 
 Finally, the command uses the **/-v** parameter to make the session invisible to user queries. Debugger sessions are visible by default.
 
-```
+```console
 remote /s "ntsd -d -v" DebugIt /u Administrators /u Domain01\User03 
 /f black /b white /-v
 ```
 
 In response, the Remote tool creates a session named DebugIt and starts NTSD with the specified parameters. The message indicates that only the specified users have permission to connect. It also changes the command window to the specified colors.
 
-```
+```console
 **************************************
 ***********     REMOTE    ************
 ***********     SERVER    ************
@@ -107,13 +107,13 @@ The command uses the **/c** parameter to indicate a client-side command. It spec
 
 The command also includes the **/k** parameter to specify the location of a keyword color file.
 
-```
+```console
 remote /c server06 debugit /k c:\remote_client.txt
 ```
 
 The color file includes the following text:
 
-```
+```console
 Registry
 white, blue
 Token
@@ -124,7 +124,7 @@ This text instructs the Remote tool to display lines of output with the word "re
 
 In response, the Remote tool connects the client to the server session and displays the following message.
 
-```
+```console
 **************************************
 ***********     REMOTE    ************
 ***********     CLIENT    ************
@@ -147,20 +147,20 @@ You can query for sessions from the server or client computers. You must specify
 
 The following command queries for sessions on the local computer, **Server04**.
 
-```
+```console
 remote /q Server04
 ```
 
 In response, the Remote tool reports that there are no remote sessions running on the local computer.
 
-```
+```console
 Querying server \\Server04
 No Remote servers running on \\Server04
 ```
 
 In contrast, in response to a query about sessions on a different computer, **Server06**, the Remote tool lists the sessions running on that computer.
 
-```
+```console
 Querying server \\Server06
 
 Visible sessions on server Server06:
@@ -179,31 +179,31 @@ You can use the remote session commands at any time during a remote session.
 
 The following command sends a message to all computers connected to the session.
 
-```
+```console
 @M I think I found the problem.
 ```
 
 As a result, the message appears in the Command Prompt windows of all computers in the session. The message includes the computer name and the day and time of the message.
 
-```
+```console
 @m I think I found the problem.     [SERVER01       Wed 11:53 AM]
 ```
 
 When the message is sent from the server computer, "Local" appears in the label instead of the computer name.
 
-```
+```console
 @m I think I found the problem.     [Local       Wed 11:52 AM]
 ```
 
 The following command generates a pop-up message that appears on the server computer. On all client computers in the session, it writes a message to the Command Prompt window.
 
-```
+```console
 @P Did you see that?
 ```
 
 On client computers, the pop-up message appears in the command window.
 
-```
+```console
 From SERVER02  [Wed 11:58 AM]
 
  Did you see that?
@@ -219,13 +219,13 @@ To disconnect a client computer from a remote session, on the client computer, t
 
 In response, the following message appears on the client computer that disconnected.
 
-```
+```console
 *** SESSION OVER ***
 ```
 
 On all other computers in the session, the Remote tool posts a message with the name of the computer and user who disconnected, and the day and time of the disconnect.
 
-```
+```console
 **Remote:  Disconnected from SERVER04 User01  [Wed 12:01 PM]
 ```
 

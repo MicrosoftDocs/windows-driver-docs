@@ -21,13 +21,13 @@ The **gu** command causes the target to execute until the current function is co
 
 User-Mode Syntax
 
-```
+```dbgcmd
 [~Thread] gu 
 ```
 
 Kernel-Mode Syntax
 
-```
+```dbgcmd
 gu
 ```
 

@@ -6,11 +6,6 @@ ms.date: 08/02/2017
 ms.localizationpriority: medium
 ---
 
-
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
-
 # WinDbg Preview keyboard shortcuts 
 
 This section summarizes the keyboard shortcuts for the  WinDbg preview debugger.

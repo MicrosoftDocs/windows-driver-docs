@@ -19,8 +19,9 @@ ms.localizationpriority: medium
 
 The **!acpikd.help** extension displays a Help text in the Debugger Command window showing all Acpikd.dll extension commands.
 
-    !acpikd.help 
-
+```dbgcmd
+!acpikd.help 
+```
 
 ## <span id="ddk__acpikd_help_dbg"></span><span id="DDK__ACPIKD_HELP_DBG"></span>
 

@@ -6,11 +6,9 @@ ms.date: 09/22/2017
 ms.localizationpriority: medium
 ---
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
 
-# ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) Time Travel Debugging - JavaScript Automation
+#  Time Travel Debugging - JavaScript Automation
 
 Content Pending
 

@@ -5,7 +5,7 @@ description: The eHS_AUTHENTICATION_RESULT enumeration indicates the result of a
 ms.assetid: a61ddc7c-8df8-410c-83df-9058e88bce51
 keywords: 
  - eHS_AUTHENTICATION_RESULT enumeration Network Drivers Starting with Windows Vista
-ms.date: 07/31/2017 
+ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
 

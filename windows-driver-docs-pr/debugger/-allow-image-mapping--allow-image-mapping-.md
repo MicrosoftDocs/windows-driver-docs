@@ -19,10 +19,11 @@ ms.localizationpriority: medium
 
 The **.allow\_image\_mapping** command controls whether image files will be mapped.
 
+```dbgcmd
     .allow_image_mapping [/r] 0 
     .allow_image_mapping [/r] 1 
     .allow_image_mapping 
-
+```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 

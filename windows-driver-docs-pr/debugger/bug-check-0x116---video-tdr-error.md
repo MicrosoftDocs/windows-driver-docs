@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The VIDEO\_TDR\_ ERROR bug check has a value of 0x00000116. This indicates that an attempt to reset the display driver and recover from a timeout failed.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## VIDEO\_TDR\_ERROR Parameters
 
@@ -88,7 +88,7 @@ The GPU is taking more time than permitted to display graphics to your monitor. 
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
 
-```
+```dbgcmd
 1: kd> !analyze -v
 *******************************************************************************
 *                                                                             *
@@ -109,7 +109,7 @@ Arg4: 0000000000000004, Optional internal context dependent data.
 
 Also displayed will be the faulting module name
 
-```
+```dbgcmd
 MODULE_NAME: nvlddmkm
 
 IMAGE_NAME:  nvlddmkm.sys
@@ -117,7 +117,7 @@ IMAGE_NAME:  nvlddmkm.sys
 
 You can use the [**lm (List Loaded Modules)**](lm--list-loaded-modules-.md)command to display information about the faulting driver, including the timestamp.
 
-```
+```dbgcmd
 1: kd> lmvm nvlddmkm
 Browse full module list
 start             end                 module name
@@ -135,7 +135,7 @@ fffff801`63ec0000 fffff801`649a7000   nvlddmkm T (no symbols)
 
 Parameter 1 contains a pointer to the TDR\_RECOVERY\_CONTEXT. As shown in the !analyze output, if you have symbols for the associated code, you can use the dt command to display this data.
 
-```
+```dbgcmd
 1: kd> dt dxgkrnl!_TDR_RECOVERY_CONTEXT ffffe000c2c404c0
    +0x000 Signature        : 0x52445476
    +0x008 pState           : 0xffffe000`c2b12a40 ??
@@ -160,7 +160,7 @@ Parameter 1 contains a pointer to the TDR\_RECOVERY\_CONTEXT. As shown in the !a
 
 Parameter 2 contains a pointer into the responsible device driver module (for example, the owner tag).
 
-```
+```dbgcmd
 1: kd> ub fffff8016470c14c
 nvlddmkm+0x84c132:
 fffff801`6470c132 cc              int     3
@@ -175,7 +175,7 @@ fffff801`6470c14b cc              int     3
 
 You may wish to examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command.
 
-```
+```dbgcmd
 1: kd> k
  # Child-SP          RetAddr           Call Site
 00 ffffd001`7d53d918 fffff801`61ba2b4c nt!KeBugCheckEx [d:\th\minkernel\ntos\ke\amd64\procstat.asm @ 122]

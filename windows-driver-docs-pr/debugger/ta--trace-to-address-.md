@@ -21,13 +21,13 @@ The **ta** command executes the program until the specified address is reached, 
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] ta [r] [= StartAddress] StopAddress 
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 ta [r] [= StartAddress] StopAddress 
 ```
 
@@ -90,7 +90,7 @@ During this execution, all steps are displayed explicitly. If a function is call
 
 For example, the following command explicitly traces through the target code until the return address of the current function is reached.
 
-```
+```dbgcmd
 0:000> ta @$ra 
 ```
 

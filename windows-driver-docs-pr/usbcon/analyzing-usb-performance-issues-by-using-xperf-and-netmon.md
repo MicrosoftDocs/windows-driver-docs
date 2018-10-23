@@ -49,7 +49,7 @@ Xperf merged.etl
 
 ```
 
-Xperf shows specialized graphs for a wide range of kernel events as shown in this image. For more information on Xperf recording options and the Xperf GUI, [The Xperf Command Line Tool in Detail](http://msdn.microsoft.com/library/cc305221.aspx) and [Windows Performance Analyzer (WPA)](http://msdn.microsoft.com/library/cc305187.aspx).
+Xperf shows specialized graphs for a wide range of kernel events as shown in this image. For more information on Xperf recording options and the Xperf GUI, [The Xperf Command Line Tool in Detail](https://msdn.microsoft.com/library/cc305221.aspx) and [Windows Performance Analyzer (WPA)](https://msdn.microsoft.com/library/cc305187.aspx).
 
 ![windows performance analyzer](images/xperf3.png)
 

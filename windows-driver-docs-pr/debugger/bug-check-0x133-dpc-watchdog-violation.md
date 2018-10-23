@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The DPC\_WATCHDOG\_VIOLATION bug check has a value of 0x00000133. This bug check indicates that the DPC watchdog executed, either because it detected a single long-running deferred procedure call (DPC), or because the system spent a prolonged time at an interrupt request level (IRQL) of DISPATCH\_LEVEL or above. The value of Parameter 1 indicates whether a single DPC exceeded a timeout, or whether the system cumulatively spent an extended period of time at IRQL DISPATCH\_LEVEL or above. DPCs should not run longer than 100 microseconds and ISRs should not run longer than 25 microseconds, however the actual timeout values on the system are set much higher.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## DPC\_WATCHDOG\_VIOLATION Parameters
 
@@ -72,7 +72,7 @@ The [**!analyze**](-analyze.md) debug extension displays information about the b
 
 In this example, the tick count of 501 exceeds the DPC time allotment of 500. The image name indicates that this code was executing when the bug check occurred.
 
-```
+```dbgcmd
 0: kd> !analyze -v
 *******************************************************************************
 *                                                                             *
@@ -104,13 +104,13 @@ You may want to use the u, ub, uu (Unassemble) command to look deeper into the s
 
 The [**!pcr**](-pcr.md) extension displays the current status of the Processor Control Region (PCR) on a specific processor. In the output will be the address of the Prcb
 
-```
+```dbgcmd
                      Prcb: fffff80309974180
 ```
 
 You can use the [**dt (Display Type)**](dt--display-type-.md) command to display additional information about the DPCs and the DPC Watchdog. For the address use the Prcb listed in the !pcr output:
 
-```
+```dbgcmd
 dt nt!_KPRCB fffff80309974180 Dpc* 
 ```
 

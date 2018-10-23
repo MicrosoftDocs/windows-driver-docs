@@ -101,7 +101,7 @@ Thus, if you wish to set the bit field to 0x00004000, you can specify *Level* as
 
 The following constants can be useful for setting the value of *Level*. They are defined in the Microsoft Windows Driver Kit (WDK) header ntddk.h and the Windows SDK header ntrtl.h:
 
-```
+```cpp
 #define   DPFLTR_ERROR_LEVEL     0
 #define   DPFLTR_WARNING_LEVEL   1
 #define   DPFLTR_TRACE_LEVEL     2
@@ -153,7 +153,7 @@ Suppose that before the last boot, you created the following values in the **Deb
 
 Now you issue the following commands in the kernel debugger:
 
-```
+```dbgcmd
 kd> ed Kd_IHVVIDEO_Mask 0x8 
 kd> ed Kd_IHVAUDIO_Mask 0x7 
 ```
@@ -164,7 +164,7 @@ However, because these masks are automatically ORed with the **WIN2000** system-
 
 Now suppose that the following function calls occur in various drivers:
 
-```
+```cpp
 DbgPrintEx( DPFLTR_IHVVIDEO_ID,  DPFLTR_INFO_LEVEL,   "First message.\n");
 DbgPrintEx( DPFLTR_IHVAUDIO_ID,  7,                   "Second message.\n");
 DbgPrintEx( DPFLTR_IHVBUS_ID,    DPFLTR_MASK | 0x10,  "Third message.\n");

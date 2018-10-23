@@ -3,7 +3,7 @@ title: NDIS WAN Status Indications
 author: windows-driver-content
 description: NDIS WAN Status Indications
 ms.assetid: 7ee48d2d-0a6f-4d6e-8eda-5af19f7fa313
-ms.date: 07/18/2017 
+ms.date: 07/18/2017
 ms.localizationpriority: medium
 ---
 

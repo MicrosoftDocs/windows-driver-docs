@@ -24,7 +24,7 @@ If you are using C++ expression syntax, the at sign is always required.
 
 The [**r (Registers)**](r--registers-.md) command is an exception to this rule. The debugger always interprets its first argument as a register. (An at sign is not required or permitted.) If there is a second argument for the **r** command, it is interpreted according to the default expression syntax. If the default expression syntax is C++, you must use the following command to copy the **ebx** register to the **eax** register.
 
-```
+```dbgcmd
 0:000> r eax = @ebx
 ```
 

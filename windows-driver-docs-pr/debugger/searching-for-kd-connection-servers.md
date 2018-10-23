@@ -23,7 +23,7 @@ This list may include servers that no longer exist but which were not shut down 
 
 The syntax for this is as follows:
 
-```
+```console
 Debugger -QR \\Server 
 ```
 
