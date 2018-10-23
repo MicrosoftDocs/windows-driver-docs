@@ -21,8 +21,9 @@ The **!amli dns** extension displays an ACPI namespace object.
 
 Syntax
 
+```dbgcmd
     !amli dns [/s] [Name | Address]
-
+```
 
 ## <span id="ddk__amli_dns_dbg"></span><span id="DDK__AMLI_DNS_DBG"></span>Parameters
 

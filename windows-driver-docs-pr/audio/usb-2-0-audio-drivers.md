@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # USB Audio 2.0 Drivers
 
-Starting with Windows 10, release 1703, a USB Audio 2.0 driver is shipped with Windows. It is designed to support the USB Audio 2.0 device class. The driver is a WaveRT audio port class miniport. For more information about the  USB Audio 2.0 device class, see [http://www.usb.org/developers/docs/devclass_docs/](http://www.usb.org/developers/docs/devclass_docs/). 
+Starting with Windows 10, release 1703, a USB Audio 2.0 driver is shipped with Windows. It is designed to support the USB Audio 2.0 device class. The driver is a WaveRT audio port class miniport. For more information about the  USB Audio 2.0 device class, see [https://www.usb.org/developers/docs/devclass_docs/](https://www.usb.org/developers/docs/devclass_docs/). 
 
 The driver is named: _usbaudio2.sys_ and the associated inf file is _usbaudio2.inf_.
 
@@ -30,7 +30,7 @@ The following USB specifications define USB Audio and are referenced in this top
 -	ADC-2 refers to the USB Device Class Definition for Audio Devices, Release 2.0.
 -	FMT-2 refers to the Audio Data Formats specification, Release 2.0.
 
-The USB-IF is a special interest group that maintains the [Official USB Specification](http://www.usb.org/developers/docs/), test specifications and tools. 
+The USB-IF is a special interest group that maintains the [Official USB Specification](https://www.usb.org/developers/docs/), test specifications and tools. 
 
 
 ## Audio formats

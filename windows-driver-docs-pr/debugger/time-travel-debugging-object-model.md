@@ -6,7 +6,9 @@ ms.date: 12/19/2017
 ms.localizationpriority: medium
 ---
 
-# ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) Introduction to Time Travel Debugging objects
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) 
+
+# Introduction to Time Travel Debugging objects
 This section describes how to use the data model to query time travel traces. This can be a powerful tool to answer questions like these about the code that is captured in a time travel trace.
 * What exceptions are in the trace?
 * At what point in time in the trace did a specific code module load?

@@ -46,8 +46,6 @@ The host computer can use any wired or wireless network adapter, but the target 
 
     **Note**  The range of port numbers that can be used for network debugging might be limited by your company's network policy. There is no way to tell from the host computer what the limitations are. To determine whether your company's policy limits the range of ports that can be used for network debugging, check with your network administrators.
 
-     
-
     For **Key**, we strongly recommend that you use the automatically generated default value. However, you can enter your own key if you prefer. For more information, see [Creating your own key](#creating-your-own-key) later in this topic. For **Host IP**, accept the default value. This is the IP address of your host computer.
 
     If your target computer has only one network adapter, you can leave **Bus Parameters** empty. If there is more than one network adapter on the target computer, use Device Manager on the target computer to determine the PCI bus, device, and function numbers for the adapter you want to use for debugging. For **Bus Parameters**, enter *b*.*d*.*f* where *b*, *d*, and *f* are the bus number, device number, and function number of the adapter.

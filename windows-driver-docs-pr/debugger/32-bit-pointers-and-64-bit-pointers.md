@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The WdbgExts.h header file supports both 32-bit and 64-bit pointers. To use 64-bit pointers, simply include the following two lines in your code, in the following order:
 
-```
+```cpp
 #define KDEXT_64BIT 
 #include wdbgexts.h 
 ```
@@ -25,7 +25,7 @@ It is recommended that you always use 64-bit pointers in your code. This allows 
 
 If you intend to use your extension only on 32-bit platforms, you can write a 32-bit extension instead. In that case, you only need to include the following line in your code:
 
-```
+```cpp
 #include wdbgexts.h 
 ```
 

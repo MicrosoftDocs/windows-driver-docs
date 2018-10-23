@@ -19,8 +19,9 @@ ms.localizationpriority: medium
 
 The **!alignmentfaults** extension displays all current type alignment faults by location and image, sorted by frequencies.
 
-    !alignmentfaults
-
+```dbgcmd
+!alignmentfaults
+```
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 

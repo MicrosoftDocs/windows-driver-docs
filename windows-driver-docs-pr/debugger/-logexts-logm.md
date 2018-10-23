@@ -73,7 +73,7 @@ The extensions **!logexts.logm i \*** and **!logexts.logm x** are equivalent: th
 
 Here are some examples:
 
-```
+```dbgcmd
 0:001> !logm
 Excluded modules:
   LOGEXTS.DLL      [mandatory]

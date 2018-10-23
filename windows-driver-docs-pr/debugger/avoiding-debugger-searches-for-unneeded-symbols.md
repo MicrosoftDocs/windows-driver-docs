@@ -54,7 +54,7 @@ A number of options are available to control how the debugger loads and uses sym
 
 [WDK and WinDbg downloads](https://go.microsoft.com/fwlink/p/?LinkId=733614)
 
-[Windows Debugging](http://msdn.microsoft.com/library/windows/hardware/ff551063.aspx)
+[Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063.aspx)
 
  
 

@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 
 The **.attach** command attaches to a new target application.
 
-    
+```dbgcmd    
 .attach [-premote RemoteOptions] AttachOptions PID
-
+```
 
 ## <span id="ddk_meta_attach_to_process_dbg"></span><span id="DDK_META_ATTACH_TO_PROCESS_DBG"></span>Parameters
 

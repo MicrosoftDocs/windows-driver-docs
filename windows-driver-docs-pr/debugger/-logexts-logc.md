@@ -80,25 +80,25 @@ Enabling only certain categories can be useful when you are only interested in a
 
 The following command will enable the logging of all categories:
 
-```
+```dbgcmd
 0:000> !logexts.logc e *
 ```
 
 The following command will disable the logging of category 7:
 
-```
+```dbgcmd
 0:000> !logexts.logc d 7
 ```
 
 The following command will enable the logging of categories 13 and 15:
 
-```
+```dbgcmd
 0:000> !logexts.logc e 13 15
 ```
 
 The following command will display all APIs belonging to category 3:
 
-```
+```dbgcmd
 0:000> !logexts.logc p 3
 ```
 

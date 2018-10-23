@@ -74,7 +74,7 @@ HKLM/Software/Microsoft/Symbol Server Proxy
 
 **To edit the registry key for a symbol store virtual directory**
 
--   Edit the contents of **SymbolPath** to contain all of the symbol stores used by the SymProxy symbol store. If there is more than one symbol store being used, separate them with semicolons. A maximum of 10 stores is supported for each value. HTTP paths must include the **http:// prefix**, and UNC paths must include the **\\\\** prefix.
+-   Edit the contents of **SymbolPath** to contain all of the symbol stores used by the SymProxy symbol store. If there is more than one symbol store being used, separate them with semicolons. A maximum of 10 stores is supported for each value. HTTP paths must include the **https:// prefix**, and UNC paths must include the **\\\\** prefix.
 
 For example, if one of the virtual directories is called Symbols, and the symbols stores that it accesses are located at the UNC store \\\\symbols\\symbols and the HTTP store https://msdl.microsoft.com/download/symbols, create the following registry key.
 
@@ -96,7 +96,7 @@ In this example, SymProxy first searches for symbols in \\\\symbols\\symbols. If
 
 -   UNC paths need to include the “\\\\” prefix
 
--   HTTP paths need to include the “http://” prefix
+-   HTTP paths need to include the “https://” prefix
 
 -   Order the values from least expensive to most expensive.
 

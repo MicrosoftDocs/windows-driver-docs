@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.beep** command makes noise on the computer speaker.
 
-```
+```dbgcmd
     .beep
 ```
 

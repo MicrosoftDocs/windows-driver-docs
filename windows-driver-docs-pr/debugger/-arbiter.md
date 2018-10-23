@@ -19,8 +19,9 @@ ms.localizationpriority: medium
 
 The **!arbiter** extension displays the current system resource arbiters and arbitrated ranges.
 
+```dbgcmd
     !arbiter [Flags] 
-
+```
 
 ## <span id="ddk__arbiter_dbg"></span><span id="DDK__ARBITER_DBG"></span>Parameters
 

@@ -19,8 +19,9 @@ ms.localizationpriority: medium
 
 The **!apicerr** extension displays the local Advanced Programmable Interrupt Controller (APIC) error log.
 
+```dbgcmd
      !apicerr [Format] 
-
+```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 

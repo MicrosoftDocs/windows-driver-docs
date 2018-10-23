@@ -44,8 +44,8 @@ The **KSPROPERTY\_AUDIOSIGNALPROCESSING\_MODES** property returns the list of au
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin factory (via Filter instance)</p></td>
-<td align="left"><p>[KSP_PIN](http://msdn.microsoft.com/library/windows/hardware/ff566722.aspx)</p></td>
-<td align="left"><p>[KSMULTIPLE_ITEM](http://msdn.microsoft.com/library/windows/hardware/ff563441.aspx)</p></td>
+<td align="left"><p>[KSP_PIN](https://msdn.microsoft.com/library/windows/hardware/ff566722.aspx)</p></td>
+<td align="left"><p>[KSMULTIPLE_ITEM](https://msdn.microsoft.com/library/windows/hardware/ff563441.aspx)</p></td>
 </tr>
 </tbody>
 </table>
@@ -101,9 +101,9 @@ Requirements
 
 [**IMiniportAudioSignalProcessing::GetModes**](https://msdn.microsoft.com/library/windows/hardware/dn457660)
 
-[KSMULTIPLE\_ITEM](http://msdn.microsoft.com/library/windows/hardware/ff563441.aspx)
+[KSMULTIPLE\_ITEM](https://msdn.microsoft.com/library/windows/hardware/ff563441.aspx)
 
-[KSP\_PIN](http://msdn.microsoft.com/library/windows/hardware/ff566722.aspx)
+[KSP\_PIN](https://msdn.microsoft.com/library/windows/hardware/ff566722.aspx)
 
  
 

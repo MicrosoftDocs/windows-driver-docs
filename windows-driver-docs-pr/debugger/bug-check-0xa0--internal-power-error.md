@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The INTERNAL\_POWER\_ERROR bug check has a value of 0x000000A0. This bug check indicates that the power policy manager experienced a fatal error.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## INTERNAL\_POWER\_ERROR Parameters
 
@@ -481,7 +481,7 @@ In the preceding table, several of the parameters are pointers to structures. Fo
 
 Some of the structures that appear in the preceding table are not defined in any public header file. You can see the definitions of those structures by using the [**dt**](dt--display-type-.md) debugger command. The following example shows how to use the **dt** command to see the **DEVICE\_OBJECT\_POWER\_EXTENSION** structure.
 
-```
+```dbgcmd
 3: kd> dt nt!DEVICE_OBJECT_POWER_EXTENSION
    +0x000 IdleCount        : Uint4B
    +0x004 BusyCount        : Uint4B
@@ -505,7 +505,7 @@ The following procedures will help you debug certain instances of this bug check
 
 1.  Examine the stack. Look for the **ntoskrnl!PopExceptionFilter** function. This function contains the following code as its first argument.
 
-    ```
+    ```cpp
      (error_code << 16) | _LINE_
     ```
 
@@ -513,7 +513,7 @@ The following procedures will help you debug certain instances of this bug check
 
 2.  Use the [**dt (Display Type)**](dt--display-type-.md) command and specify the value that you found in the previous step as *argument*.
 
-    ```
+    ```dbgcmd
     dt nt!_EXCEPTION_POINTERS argument 
     ```
 
@@ -521,7 +521,7 @@ The following procedures will help you debug certain instances of this bug check
 
 3.  Use the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command and specify the context record that you found in the previous step as *record*.
 
-    ```
+    ```dbgcmd
     .cxr record 
     ```
 
@@ -536,7 +536,7 @@ The following procedures will help you debug certain instances of this bug check
 
 2.  Use the [**dt (Display Type)**](dt--display-type-.md) command and specify the value that you found in the previous step as *argument*.
 
-    ```
+    ```dbgcmd
     dt nt!_EXCEPTION_POINTERS argument 
     ```
 
@@ -544,7 +544,7 @@ The following procedures will help you debug certain instances of this bug check
 
 3.  Use the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command and specify the context record that you found in the previous step as *record*.
 
-    ```
+    ```dbgcmd
     .cxr record 
     ```
 
@@ -557,7 +557,7 @@ The following procedures will help you debug certain instances of this bug check
 
 1.  Use the [**dt (Display Type)**](dt--display-type-.md) command and specify the value of Parameter 3 as *argument*.
 
-    ```
+    ```dbgcmd
     dt nt!_EXCEPTION_POINTERS argument 
     ```
 
@@ -565,7 +565,7 @@ The following procedures will help you debug certain instances of this bug check
 
 2.  Use the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command and specify the context record that you found the previous step as *record*.
 
-    ```
+    ```dbgcmd
     .cxr record 
     ```
 
