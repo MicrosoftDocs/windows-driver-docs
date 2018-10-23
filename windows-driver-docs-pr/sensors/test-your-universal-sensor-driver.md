@@ -39,11 +39,11 @@ After you successfully [connect your sensor to the Sharks Cove board](connect-yo
 If you want to find out about testing drivers in general, see the following resources.
 
 -   **Visual Studio Kernel-Mode Debugging, using Serial over USB**
-    Use this test/debug option, if you want the help of Visual Studio in setting up the debugging session for your sensor and its universal sensor driver. For more information, see [Setting Up Kernel-Mode Debugging using Serial over USB in Visual Studio](http://msdn.microsoft.com/library/windows/hardware/dn745913.aspx).
+    Use this test/debug option, if you want the help of Visual Studio in setting up the debugging session for your sensor and its universal sensor driver. For more information, see [Setting Up Kernel-Mode Debugging using Serial over USB in Visual Studio](https://msdn.microsoft.com/library/windows/hardware/dn745913.aspx).
 -   **Manually set up Kernel-Mode Debugging, using Serial over USB**
-    If you want to test/debug your universal sensor driver, but don't want to use Visual Studio for doing the setup, you can use this option. For instructions on how to do this, see [Setting Up Kernel-Mode Debugging using Serial over USB Manually](http://msdn.microsoft.com/library/windows/hardware/dn745914.aspx).
+    If you want to test/debug your universal sensor driver, but don't want to use Visual Studio for doing the setup, you can use this option. For instructions on how to do this, see [Setting Up Kernel-Mode Debugging using Serial over USB Manually](https://msdn.microsoft.com/library/windows/hardware/dn745914.aspx).
 -   **WDK driver testing interface**
-    You can use the Windows driver kit (WDK) driver testing interface via Microsoft Visual Studio, to test drivers. For information about how to do this, see [Testing a Driver](http://msdn.microsoft.com/library/windows/hardware/ff554820.aspx).
+    You can use the Windows driver kit (WDK) driver testing interface via Microsoft Visual Studio, to test drivers. For information about how to do this, see [Testing a Driver](https://msdn.microsoft.com/library/windows/hardware/ff554820.aspx).
 
 For information about how to monitor the operation of trace providers, see [Collecting and decoding WPP logs](collecting-and-decoding-wpp-logs.md).
 

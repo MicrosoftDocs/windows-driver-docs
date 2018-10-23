@@ -3,7 +3,7 @@ title: WDI_TLV_PHY_TYPE_LIST (unused)
 author: windows-driver-content
 description: WDI_TLV_PHY_TYPE_LIST (0x69) is an unused TLV.
 ms.assetid: FBC425DB-6822-48CA-9340-2436891F7857
-ms.date: 07/18/2017 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PHY_TYPE_LIST (unused) Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

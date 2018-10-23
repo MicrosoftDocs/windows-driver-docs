@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **ls** and **lsa** commands display a series of lines from the current source file and advance the current source line number.
 
-```
+```dbgcmd
 ls [.] [first] [, count] 
 lsa [.] address [, first [, count]] 
 ```

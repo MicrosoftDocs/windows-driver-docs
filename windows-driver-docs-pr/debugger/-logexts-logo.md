@@ -63,7 +63,7 @@ Remarks
 
 If **!logexts.logo** is used without any parameters, then the current logging status, the output directory, and the current settings for the debugger, text file, and verbose log are displayed:
 
-```
+```dbgcmd
 0:000> !logo
 Logging currently enabled.
 
@@ -79,7 +79,7 @@ In the previous example, the output directory is a relative path, so it is locat
 
 To disable verbose logging, you would use the following command:
 
-```
+```dbgcmd
 0:000> !logo d v
   Debugger            Disabled
   Text file           Enabled

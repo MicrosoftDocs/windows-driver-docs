@@ -317,7 +317,7 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <p>[<strong>IWDFUsbTargetDevice::SetPowerPolicy</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560385)</p>
 <p>[<strong>IWDFDevice2::AssignS0IdleSettings</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556920)</p>
 <p>[<strong>IWDFDevice3::AssignS0IdleSettingsEx</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451202)</p>
-<p>See [How to send a device to selective suspend](http://msdn.microsoft.com/windows/hardware/gg463309).</p></td>
+<p>See [How to send a device to selective suspend](https://msdn.microsoft.com/windows/hardware/gg463309).</p></td>
 <td><p>Not supported.</p></td>
 <td><p>[<strong>WinUsb_SetPowerPolicy</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540309)</p>
 <p>See [WinUSB Power Management](winusb-power-management.md).</p></td>

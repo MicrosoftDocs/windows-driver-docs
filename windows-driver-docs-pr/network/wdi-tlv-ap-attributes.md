@@ -3,7 +3,7 @@ title: WDI_TLV_AP_ATTRIBUTES
 author: windows-driver-content
 description: WDI_TLV_AP_ATTRIBUTES is a TLV that contains the attributes of an access point.
 ms.assetid: FD6F635C-85FF-4668-AA17-12677A61F84D
-ms.date: 07/18/2017 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_AP_ATTRIBUTES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

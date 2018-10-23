@@ -15,7 +15,7 @@ The most common bug check code associated with debugging a video stream stall is
 
 The message displayed when the bug check occurs will point to Ks.sys as the cause.
 
-```
+```dbgcmd
 Use !analyze -v to get detailed debugging information.
 BugCheck CB, {f90c6ae0, f9949215, 81861788, 26}
 Probably caused by : ks.sys ( ks!KsProbeStreamIrp+333 )
@@ -23,7 +23,7 @@ Probably caused by : ks.sys ( ks!KsProbeStreamIrp+333 )
 
 As suggested, use [**!analyze -v**](-analyze.md) to get more detailed information.
 
-```
+```dbgcmd
 kd> !analyze -v
 DRIVER_LEFT_LOCKED_PAGES_IN_PROCESS (cb)
 Caused by a driver not cleaning up completely after an I/O.
@@ -35,7 +35,7 @@ Arg3: 81861788, A pointer to the MDL containing the locked pages.
 
 Now, use the [**!search**](-search.md) extension to find the virtual addresses that are associated with the MDL pointer.
 
-```
+```dbgcmd
 kd> !search 81861788
 Searching PFNs in range 00000001 - 0000FF76 for [FFFFFFFF81861788 - FFFFFFFF81861788]
 
@@ -49,7 +49,7 @@ Pfn      Offset   Hit      Va       Pte
 
 For each virtual address (VA) found, look for an IRP signature. Do this by using the [**dd**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command with the VA minus one DWORD.
 
-```
+```dbgcmd
 kd> dd 808A7B0C-4 l4
 808a7b08  f9949215 81861788 00000026 00000000
 kd> $ Not an Irp
@@ -63,7 +63,7 @@ kd> $ Matches signature
 
 After a VA with an IRP signature has been found, use the [**!irp**](-irp.md) extension to find out what driver is pending on this IRP.
 
-```
+```dbgcmd
 kd> !irp 817329b0 7
 Irp is active with 2 stacks 2 is current (= 0x81732a44)
  Mdl = 81861788 System buffer = ffa59220 Thread 00000000:  Irp stack trace.

@@ -3,7 +3,7 @@ title: WDI_TLV_PM_CAPABILITIES (0x42)
 author: windows-driver-content
 description: WDI_TLV_PM_CAPABILITIES is a TLV that contains power management capabilities.
 ms.assetid: DE8A5333-BE2B-4CBB-8C75-45ABBE35A635
-ms.date: 07/18/2017 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PM_CAPABILITIES (0x42) Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

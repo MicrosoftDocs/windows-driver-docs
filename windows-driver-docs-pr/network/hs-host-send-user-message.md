@@ -5,7 +5,7 @@ description: The HS_HOST_SEND_USER_MESSAGE function is called to communicate wit
 ms.assetid: c4ab1fda-18eb-44e4-aa64-f7b37b4147a3
 keywords: 
 - typedef DWORD (WINAPI HS_HOST_SEND_USER_MESSAGE) function Network Drivers Starting with Windows Vista
-ms.date: 07/31/2017 
+ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
 

@@ -6,9 +6,6 @@ ms.date: 08/04/2017
 ms.localizationpriority: medium
 ---
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
 
 # WinDbg Preview - File Menu 
 
@@ -40,7 +37,7 @@ Session connection information is stored in workspace configuration files. Works
 
 The default location for workspace files is: 
 
-```
+```console
 C:\Users\*UserName*\AppData\Local\DBG\targets
 ```
 

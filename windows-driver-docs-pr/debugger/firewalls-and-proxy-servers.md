@@ -44,7 +44,7 @@ To select a default proxy server for Windows, open **Internet Options** in Contr
 
 To select a specific proxy server for symsrv to use, set the \_NT\_SYMBOL\_PROXY environment variable equal to the name or IP of the proxy server, followed by a colon and then the port number. For example:
 
-```
+```console
 set _NT_SYMBOL_PROXY=myproxyserver:80
 ```
 

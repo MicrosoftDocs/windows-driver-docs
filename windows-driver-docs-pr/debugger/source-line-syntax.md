@@ -22,7 +22,7 @@ You can specify source file line numbers as all or part of an MASM expression. T
 
 You must enclose source file and line number expressions by grave accents ( **\`** ). The following example shows the full format for source file line numbers.
 
-```
+```text
 `[[Module!]Filename][:LineNumber]`
 ```
 

@@ -21,7 +21,7 @@ The Device Stage Document Device Developer Kit contains the following informatio
 -   **Document Devices Templates** - Device Stage templates for document devices.
 
 ## Related topics
-[Microsoft Device Experience Development Kit](http://msdn.microsoft.com/library/windows/hardware/gg463154)  
+[Microsoft Device Experience Development Kit](https://msdn.microsoft.com/library/windows/hardware/gg463154)  
 
 
 

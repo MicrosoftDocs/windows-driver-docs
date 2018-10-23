@@ -20,9 +20,9 @@ ms.localizationpriority: medium
 
 This topic includes reference material that will give you more details about some of the topics discussed earlier. 
 
--   This white papers provides reference information on sAPOs, [Custom Audio Effects in Windows Vista](http://go.microsoft.com/fwlink/p/?linkid=106024).
+-   This white papers provides reference information on sAPOs, [Custom Audio Effects in Windows Vista](https://go.microsoft.com/fwlink/p/?linkid=106024).
 
--   [COM](http://go.microsoft.com/fwlink/p/?linkid=106293) and [UI development](http://go.microsoft.com/fwlink/p/?linkid=106294) tutorials and information.
+-   [COM](https://go.microsoft.com/fwlink/p/?linkid=106293) and [UI development](https://go.microsoft.com/fwlink/p/?linkid=106294) tutorials and information.
 
  
 

@@ -21,8 +21,9 @@ The **!amli ln** extension displays the specified method or the method containin
 
 Syntax
 
+```dbgcmd
     !amli ln [ MethodName | CodeAddress ]
-
+```
 
 ## <span id="ddk__amli_ln_dbg"></span><span id="DDK__AMLI_LN_DBG"></span>Parameters
 

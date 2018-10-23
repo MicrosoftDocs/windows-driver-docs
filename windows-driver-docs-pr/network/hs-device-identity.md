@@ -6,7 +6,7 @@ ms.assetid: 4a679fb2-d5b1-4635-9422-a21a316b360c
 keywords: 
 - HS_DEVICE_IDENTITY structure Network Drivers Starting with Windows Vista
 - PHS_DEVICE_IDENTITY structure pointer Network Drivers Starting with Windows Vista
-ms.date: 07/31/2017 
+ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
 

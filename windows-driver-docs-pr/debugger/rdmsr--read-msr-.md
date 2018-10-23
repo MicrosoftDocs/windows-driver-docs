@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **rdmsr** command reads a [Model-Specific Register (MSR)](other-data-spaces.md) value from the specified address.
 
-```
+```dbgcmd
 rdmsr Address 
 ```
 

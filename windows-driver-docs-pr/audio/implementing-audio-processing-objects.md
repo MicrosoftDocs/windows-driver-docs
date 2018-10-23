@@ -246,7 +246,7 @@ When working with APOs in Visual Studio, perform these tasks for each APO projec
 
 Drivers that are targeting Windows 10 should dynamically link against the universal CRT.
 
-If you need to support Windows 8,1, enable static linking by setting the project properties in C/C++, Code Generation. Set "Runtime Library" to */MT* for release builds or */MTd* for debug builds. This change is made, because for a driver it is difficult to redistribute the MSVCRT&lt;n&gt;.dll binary. The solution is to statically link libcmt.dll. For more information see [/MD, /MT, /LD (Use Run-Time Library)](http://msdn.microsoft.com/library/2kzt1wy3.aspx) .
+If you need to support Windows 8,1, enable static linking by setting the project properties in C/C++, Code Generation. Set "Runtime Library" to */MT* for release builds or */MTd* for debug builds. This change is made, because for a driver it is difficult to redistribute the MSVCRT&lt;n&gt;.dll binary. The solution is to statically link libcmt.dll. For more information see [/MD, /MT, /LD (Use Run-Time Library)](https://msdn.microsoft.com/library/2kzt1wy3.aspx) .
 
 **Disable Use of an Embedded Manifest**
 

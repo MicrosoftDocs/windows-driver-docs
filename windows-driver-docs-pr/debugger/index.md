@@ -13,8 +13,6 @@ ms.technology: windows-devices
 # Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)
 
 
-February 2018
-
 Start here for an overview of Debugging Tools for Windows. This tool set includes WinDbg and other debuggers.
 
 ## <span id="3_ways_to_get_Debugging_Tools_for_Windows"></span><span id="3_ways_to_get_debugging_tools_for_windows"></span><span id="3_WAYS_TO_GET_DEBUGGING_TOOLS_FOR_WINDOWS"></span>3 ways to get Debugging Tools for Windows

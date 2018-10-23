@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **lsp** command controls how many source lines are displayed while you step through or execute code or use the [**ls and lsa commands**](ls--lsa--list-source-lines-.md).
 
-```
+```dbgcmd
 lsp [-a] LeadingLines TrailingLines 
 lsp [-a] TotalLines 
 lsp [-a] 

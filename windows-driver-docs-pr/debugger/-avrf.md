@@ -19,6 +19,7 @@ ms.localizationpriority: medium
 
 The **!avrf** extension controls the settings of [Application Verifier](application-verifier.md) and displays a variety of output produced by Application Verifier.
 
+```dbgcmd
     !avrf
     !avrf -vs { Length | -a Address }
     !avrf -hp { Length | -a Address }
@@ -39,7 +40,7 @@ The **!avrf** extension controls the settings of [Application Verifier](applicat
     !avrf -trg [ Start End | dll Module | all ] 
     !avrf -settings 
     !avrf -skp [ Start End | dll Module | all | Time ] 
-
+```
 
 ## <span id="ddk__avrf_dbg"></span><span id="DDK__AVRF_DBG"></span>Parameters
 

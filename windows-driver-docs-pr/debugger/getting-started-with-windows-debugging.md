@@ -83,7 +83,7 @@ The debugger runs on the host system and the code that you want to debug runs on
 13. Review additional debugging resources.
    -   Inside Windows Debugging: A Practical Guide to Debugging and Tracing Strategies in Windows® by Tarik Soulami
    -   Advanced Windows Debugging by Mario Hewardt and Daniel Pravat
-   -   [The Defrag Tools Show WinDbg Episodes 13-29](http://channel9.msdn.com/Shows/Defrag-Tools)
+   -   [The Defrag Tools Show WinDbg Episodes 13-29](https://channel9.msdn.com/Shows/Defrag-Tools)
 
 
 ## See Also

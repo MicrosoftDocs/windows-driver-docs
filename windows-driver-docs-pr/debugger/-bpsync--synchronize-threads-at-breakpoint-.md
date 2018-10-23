@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 When a thread reaches a breakpoint, the **.bpsync** command freezes all other threads, until the thread to which the breakpoint applies has stepped through the breakpoint.
 
-```
+```dbgcmd
 .bpsync 1
 .bpsync 0
 .bpsync 

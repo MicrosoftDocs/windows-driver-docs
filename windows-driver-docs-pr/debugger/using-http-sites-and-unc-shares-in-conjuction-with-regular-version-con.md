@@ -16,7 +16,7 @@ First, extract the source files using SrcTool; see [Extracting Source Files](ext
 
 Now on the computers that will use the HTTP/UNC shares, edit the [Srcsrv.ini](the-srcsrv-ini-file.md) file that is in the debugger directory. In the variables section of the file, add the following three statements:
 
-```
+```ini
 MY_SOURCE_ROOT=\\server\share
  SRCSRVCMD=
  SRCSRVTRG=%MY_SOURCE_ROOT%\%var2%\%var3%\%var4%\%fnfile%(%var1%)

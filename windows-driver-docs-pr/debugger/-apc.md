@@ -19,11 +19,12 @@ ms.localizationpriority: medium
 
 The **!apc** extension formats and displays the contents of one or more asynchronous procedure calls (APCs).
 
+```dbgcmd
     !apc
     !apc proc Process
     !apc thre Thread
     !apc KAPC
-
+```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 

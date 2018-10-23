@@ -15,7 +15,7 @@ The [**!ks.graph**](-ks-graph.md) command is one of most powerful extension comm
 
 Before running [**!ks.graph**](-ks-graph.md), you may want to enable all library extensions that are capable of being active. To do this, issue a [**!ks.libexts enableall**](-ks-libexts.md) command. The output of **!ks.graph** will be a textual description of the kernel mode graph in topologically sorted order. Here is an example:
 
-```
+```dbgcmd
 kd> !graph ffa0c6d4 7
 Attempting a graph build on ffa0c6d4...  Please be patient...
 Graph With Starting Point ffa0c6d4:
@@ -30,7 +30,7 @@ Below each entry, each factory is enumerated and lists the address of each pin i
 
 Connections which have forward direction symbols (-&gt;) indicate that the pin is an output pin and is connected to an input pin. Connections which have reverse direction symbols (&lt;-), on the other hand, are input pins and show the origination of the connection. The output continues as follows:
 
-```
+```dbgcmd
 "splitter" Filter ffa0c660, Child Factories 2
     Output Factory 0:
         Pin 81250008 (File ffb10028, -> "kmixer" 8123c000) Irps(q/p) = 3, 0
@@ -63,7 +63,7 @@ In order to follow the graph, use the following procedure:
 
 The To follow this graph: command can also be used to analyze stalled graphs from any given starting point. To do this, specify 4 in the *Flags* parameter:
 
-```
+```dbgcmd
 kd> !graph 812567c0 7 4
 
 Attempting a graph build on 812567c0...  Please be patient...

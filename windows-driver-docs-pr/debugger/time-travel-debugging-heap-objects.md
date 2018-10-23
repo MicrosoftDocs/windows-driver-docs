@@ -6,10 +6,6 @@ ms.date: 09/24/2017
 ms.localizationpriority: medium
 ---
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
-
 # TTD Heap Objects
 ## Description
 *TTD Heap* objects are used to give information about heap calls that occur over the course of a trace.
@@ -47,7 +43,7 @@ Depending on the heap object, it may have some of the properties below.
 
 Use this dx command to display the heap memory in a grid using the -g option.
 
-```
+```dbgcmd
 0:0:000> dx -g @$cursession.TTD.Data.Heap()
 ==================================================================================================================================
 =           = (+) Function               = (+) FunctionAddress = (+) ReturnValue  = (+) Parameters = (+) TimeStart = (+) TimeEnd =
@@ -64,7 +60,7 @@ Clicking on TimeStart or TimeEnd will navigate you to that point in the trace.
 
 Click on the parameters field next to a specific entry, to display available parameter information.
 
-```
+```dbgcmd
 dx -r1 @$cursession.TTD.Data.Heap()[2].@"Parameters"
 @$cursession.TTD.Data.Heap()[2].@"Parameters"                
     [0x0]            : 0x16c7d780000

@@ -6,7 +6,7 @@ ms.assetid: 3995fff6-6992-4dd6-a94c-a27b2ee44436
 keywords: 
 - HS_PLUGIN_HOST_NAME structure Network Drivers Starting with Windows Vista
 - PHS_PLUGIN_HOST_NAME structure pointer Network Drivers Starting with Windows Vista
-ms.date: 07/31/2017 
+ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
 

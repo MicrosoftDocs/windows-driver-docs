@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **.breakin** command switches from user-mode debugging to kernel-mode debugging. This command is particularly useful when you are controlling the user-mode debugger from the kernel debugger.
 
-```
+```dbgcmd
     .breakin 
 ```
 

@@ -70,7 +70,7 @@ PortMonitorDll = file1.dll
 
 To install a port monitor, open the Printers folder in Control Panel. On the Printers folder's **File** menu, select **Server Properties**. On the **File Server Properties** dialog, click the **Ports** tab, and then click the **Add Port...** button. On the **Printer Ports** dialog, click the **New Port Type...** button. Type the path to the INF file in the text input box, and then click **OK**.
 
-Alternatively, a custom installation application can install the port monitor DLL by a call to the **AddMonitor** function as described in [Port Monitors](http://msdn.microsoft.com/library/windows/desktop/dd162825.aspx).
+Alternatively, a custom installation application can install the port monitor DLL by a call to the **AddMonitor** function as described in [Port Monitors](https://msdn.microsoft.com/library/windows/desktop/dd162825.aspx).
 
  
 

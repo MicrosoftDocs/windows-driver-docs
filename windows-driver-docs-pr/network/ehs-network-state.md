@@ -5,7 +5,7 @@ description: The eHS_NETWORK_STATE enumeration indicates whether a network is a 
 ms.assetid: a833d226-e2cf-41f9-a926-5b1f6daa03af
 keywords: 
  - eHS_NETWORK_STATE enumeration Network Drivers Starting with Windows Vista
-ms.date: 07/31/2017 
+ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
 

@@ -21,7 +21,7 @@ You can achieve the best results by implementing your hardware to perform true s
 
 If you are designing a WaveCyclic device, however, you can improve its performance by making its hardware buffer directly accessible as system memory. This eliminates the overhead of copying data from an intermediate buffer in system memory.
 
-Also, if your device requires an audio format with a channel ordering that is incompatible with the standard WDM audio formats, the driver might have to perform in-place conversion of each audio frame in an intermediate buffer before the hardware can process it. This can degrade performance. For additional information, see the white paper titled Multiple Channel Audio Data and WAVE Files at the [audio technology](http://go.microsoft.com/fwlink/p/?linkid=8751) website.
+Also, if your device requires an audio format with a channel ordering that is incompatible with the standard WDM audio formats, the driver might have to perform in-place conversion of each audio frame in an intermediate buffer before the hardware can process it. This can degrade performance. For additional information, see the white paper titled Multiple Channel Audio Data and WAVE Files at the [audio technology](https://go.microsoft.com/fwlink/p/?linkid=8751) website.
 
  
 

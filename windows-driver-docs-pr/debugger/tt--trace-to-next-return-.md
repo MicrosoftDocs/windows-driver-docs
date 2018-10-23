@@ -21,13 +21,13 @@ The **tt** command executes the program until a return instruction is reached.
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] tt [r] [= StartAddress] [Count] 
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 tt [r] [= StartAddress] [Count] 
 ```
 

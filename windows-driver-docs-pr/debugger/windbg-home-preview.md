@@ -6,10 +6,6 @@ ms.date: 08/04/2017
 ms.localizationpriority: medium
 ---
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
-
 # WinDbg Preview - Home Menu 
 
 This topic describes how to work with the home menu.

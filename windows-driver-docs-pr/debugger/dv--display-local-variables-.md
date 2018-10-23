@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **dv** command displays the names and values of all local variables in the current scope.
 
-```
+```dbgcmd
 dv [Flags] [Pattern] 
 ```
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **qd** command ends the debugging session and leaves any user-mode target application running. (In CDB and KD, this command also exits the debugger itself. In WinDbg, this command returns the debugger to dormant mode.)
 
-```
+```dbgcmd
 qd 
 ```
 

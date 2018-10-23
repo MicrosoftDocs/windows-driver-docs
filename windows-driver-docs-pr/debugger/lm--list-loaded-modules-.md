@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **lm** command displays the specified loaded modules. The output includes the status and the path of the module.
 
-```
+```dbgcmd
 lm Options [a Address] [m Pattern | M Pattern]
 ```
 
@@ -137,7 +137,7 @@ This command shows several columns or fields, each with a different title. Some 
 
 The following code example shows the **lm** command with a Windows Server 2003 target computer. This example includes the m and s\* options, so only modules that begin with "s" are displayed.
 
-```
+```dbgcmd
 kd> lm m s*
 start    end        module name
 f9f73000 f9f7fd80   sysaudio     (deferred)                 
@@ -160,7 +160,7 @@ The following two examples show the **lm** command once without any options and 
 
 Example 1:
 
-```
+```dbgcmd
 0:000> lm
 start    end        module name
 01000000 0100d000   stst       (deferred)
@@ -173,7 +173,7 @@ start    end        module name
 
 Example 2:
 
-```
+```dbgcmd
 0:000> lmsm
 start    end        module name
 77dd0000 77e6b000   ADVAPI32   (deferred)

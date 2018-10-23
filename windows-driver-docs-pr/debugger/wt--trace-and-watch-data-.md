@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **wt** command runs through the whole function and then displays statistics, when you execute this command at the beginning of a function call.
 
-```
+```dbgcmd
 wt [WatchOptions] [= StartAddress] [EndAddress] 
 ```
 

@@ -52,7 +52,7 @@ On the target computer, open a Command Prompt window as Administrator, and enter
 
 **bcdedit /enum**
 
-```
+```console
 ...
 debugtype               1394
 debugport               1

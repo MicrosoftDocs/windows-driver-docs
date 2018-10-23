@@ -1,7 +1,7 @@
 ---
 title: Frame Server Custom Media Source
 description: Provides information on implementation of a Custom Media Source within the Frame Server architecture. 
-ms.date: 10/2/2018
+ms.date: 10/02/2018
 ms.localizationpriority: medium
 ---
 

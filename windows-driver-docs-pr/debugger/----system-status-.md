@@ -21,7 +21,7 @@ The double vertical bar (**||**) command prints status for the specified system 
 
 Do not confuse this command with the [**| (Process Status)**](---process-status-.md) command.
 
-```
+```dbgcmd
 || System 
 ```
 
@@ -65,31 +65,31 @@ Each system listing includes the server name and the protocol details. The syste
 
 The following examples show you how to use this command. The following command displays all systems.
 
-```
+```dbgcmd
 3:2:005> ||
 ```
 
 The following command also displays all systems.
 
-```
+```dbgcmd
 3:2:005> ||*
 ```
 
 The following command displays the currently active system.
 
-```
+```dbgcmd
 3:2:005> ||.
 ```
 
 The following command displays the system that had the most recent exception or break.
 
-```
+```dbgcmd
 3:2:005> ||#
 ```
 
 The following command displays system number 2.
 
-```
+```dbgcmd
 3:2:005> ||2
 ```
 

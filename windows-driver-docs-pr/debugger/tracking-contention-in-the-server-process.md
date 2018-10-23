@@ -20,7 +20,7 @@ If the number of worker threads is above 50, you may have excessive contention i
 
 To see the number of threads in a given server process, use the [**!rpcexts.getthreadinfo**](-rpcexts-getthreadinfo.md) extension, or use DbgRpc with the **-t** switch. Supply the process ID (in the following example, 0xC4):
 
-```
+```console
 D:\wmsg>dbgrpc -t -P c4
 Searching for thread info ...
 ## PID  CELL ID   ST TID      LASTTIME

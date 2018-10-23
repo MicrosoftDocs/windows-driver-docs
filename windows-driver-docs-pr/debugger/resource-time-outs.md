@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 During a resource time out, the thread waiting for the resource will break into the kernel debugger with a message similar to the following:
 
-```
+```console
 Resource @ 800e99c0
  ActiveCount = 0001  Flags = IsOwnedExclusive sharedWaiter
  NumberOfExclusiveWaiters = 0000
@@ -37,7 +37,7 @@ If you get to a thread that is not waiting for another resource, that thread is 
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
-```
+```console
 Resource @ fc664ee0                  // Here's the resource lock address
 
  ActiveCount = 0001  Flags = IsOwnedExclusive ExclusiveWaiter

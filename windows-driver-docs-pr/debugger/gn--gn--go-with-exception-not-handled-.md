@@ -21,14 +21,14 @@ The **gn** and **gN** commands continue execution of the given thread without ma
 
 User-Mode Syntax
 
-```
+```dbgcmd
 [~Thread] gn[a] [= StartAddress] [BreakAddress ... [; BreakCommands]] 
 [~Thread] gN[a] [= StartAddress] [BreakAddress ... [; BreakCommands]] 
 ```
 
 Kernel-Mode Syntax
 
-```
+```dbgcmd
 gn[a] [= StartAddress] [BreakAddress ... [; BreakCommands]] 
 gN[a] [= StartAddress] [BreakAddress ... [; BreakCommands]] 
 ```

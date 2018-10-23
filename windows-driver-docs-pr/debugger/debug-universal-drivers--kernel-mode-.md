@@ -2114,7 +2114,7 @@ Additional information is available on Windows debugging. Note that some of thes
 
 **Video**
 
-The Defrag Tools Show WinDbg Episodes 13-29 <http://channel9.msdn.com/Shows/Defrag-Tools>
+The Defrag Tools Show WinDbg Episodes 13-29 <https://channel9.msdn.com/Shows/Defrag-Tools>
 
 **Training Vendors:**
 

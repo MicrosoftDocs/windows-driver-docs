@@ -270,7 +270,7 @@ On a computer that supports hardware-enabled Data Execution Prevention (DEP) and
 For more information about using the **pae** parameter and the other parameters that affect PAE configuration, see [Boot Parameters to Configure DEP and PAE](https://msdn.microsoft.com/library/windows/hardware/ff542275).
 
 **pciexpress** \[ **default** | **forcedisable**\]  
-Enables or disables PCI Express functionality. If the computer platform supports the PCI Express features and the ACPI \_OSC method grants control of the features to the operating system, Windows enables the advanced features through the PCI Express Native Control feature (this is the default). Use the **forcedisable** option to override the advanced PCI Express features and use legacy PCI Express behavior. For more information, see [Enabling PCI Express Native Control in Windows](http://msdn.microsoft.com/library/windows/hardware/gg487424.aspx).
+Enables or disables PCI Express functionality. If the computer platform supports the PCI Express features and the ACPI \_OSC method grants control of the features to the operating system, Windows enables the advanced features through the PCI Express Native Control feature (this is the default). Use the **forcedisable** option to override the advanced PCI Express features and use legacy PCI Express behavior. For more information, see [Enabling PCI Express Native Control in Windows](https://msdn.microsoft.com/library/windows/hardware/gg487424.aspx).
 
 **quietboot** \[ **on** | **off** \]  
 Controls the display of a high-resolution bitmap in place of the Windows boot screen display and animation. In operating systems prior to Windows Vista, the **/noguiboot** serves a similar function.

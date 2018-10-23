@@ -41,7 +41,7 @@ Typically, a user-mode component calls [**CM_Register_Notification**](https://ms
     <tbody>
     <tr class="odd">
     <td align="left"><strong>CM_NOTIFY_ACTION_DEVICEQUERYREMOVE</strong></td>
-    <td align="left"><p>Call [CloseHandle](http://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) to close the device handle. If you do not do this, your open handle prevents the query remove of this device from succeeding.</p></td>
+    <td align="left"><p>Call [CloseHandle](https://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) to close the device handle. If you do not do this, your open handle prevents the query remove of this device from succeeding.</p></td>
     </tr>
     <tr class="even">
     <td align="left"><strong>CM_NOTIFY_ACTION_DEVICEQUERYREMOVEFAILED</strong></td>

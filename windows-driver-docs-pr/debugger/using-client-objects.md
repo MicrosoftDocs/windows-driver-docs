@@ -31,7 +31,7 @@ See the Platform SDK for more information about when reference counts should be 
 
 **IUnknown::QueryInterface**, **DebugCreate**, and **DebugConnect** each take an interface ID as one of their arguments. This interface ID can be obtained using the **\_\_uuidof** operator. For example:
 
-```
+```cpp
 IDebugClient * debugClient;
 HRESULT Hr = DebugCreate( __uuidof(IDebugClient), (void **)&debugClient );
 ```

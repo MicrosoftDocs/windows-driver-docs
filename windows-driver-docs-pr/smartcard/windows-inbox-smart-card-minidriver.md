@@ -13,7 +13,7 @@ Beginning with Windows 7 with Service Pack 1 (SP1), an inbox generic class min
 
 PIV-compliant smart cards and cards that implement the GIDS card edge. For more information about PIV, see the [About Personal Identity Verification (PIV) of Federal Employees and Contractors](http://csrc.nist.gov/groups/SNS/piv/index.mdl) web page.
 
-For more information about GIDS, see the [Generic Identity Device Specification](http://msdn.microsoft.com/windows/hardware/gg487496) web page.
+For more information about GIDS, see the [Generic Identity Device Specification](https://msdn.microsoft.com/windows/hardware/gg487496) web page.
 
 When a smart card is inserted into the reader and the Base CSP/KSP calls [**CardAcquireContext**](https://msdn.microsoft.com/library/windows/hardware/dn468701), the class minidriver performs the following discovery process to mark the associated card as either PIV- or GIDS-compliant:
 

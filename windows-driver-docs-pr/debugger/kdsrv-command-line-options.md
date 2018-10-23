@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The KdSrv command line uses the following syntax.
 
-```
+```console
 kdsrv -t ServerTransport 
 ```
 

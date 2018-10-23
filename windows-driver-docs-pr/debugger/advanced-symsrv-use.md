@@ -81,13 +81,13 @@ set _NT_SYMBOL_PATH=symsrv*symsrv.dll*c:\localsymbols*\\mybuilds\mysymbols
 To set the symbol path so that the debugger will copy symbol files from the HTTP site www.company.com/manysymbols to a local network directory \\\\localserver\\myshare\\mycache, use:
 
 ```console
-set _NT_SYMBOL_PATH=symsrv*symsrv.dll*\\localserver\myshare\mycache*http://www.company.com/manysymbols
+set _NT_SYMBOL_PATH=symsrv*symsrv.dll*\\localserver\myshare\mycache*https://www.company.com/manysymbols
 ```
 
 This last example can also be shortened as such:
 
 ```console
-set _NT_SYMBOL_PATH=srv*\\localserver\myshare\mycache*http://www.company.com/manysymbols
+set _NT_SYMBOL_PATH=srv*\\localserver\myshare\mycache*https://www.company.com/manysymbols
 ```
 
 In addition, the symbol path can contain several directories or symbol servers, separated by semicolons. This allows you to locate symbols from multiple locations (or even multiple symbol servers). If a binary has a mismatched symbol file, the debugger cannot locate it using the symbol server because it checks only for the exact parameters. However, the debugger may find a mismatched symbol file with the correct name, using the traditional symbol path, and successfully load it. Even though the file is technically not the correct symbol file, it might provide useful information.
@@ -121,7 +121,7 @@ In this scenario, SymSrv will first look in c:\\localcache for a symbol file. If
 A similar behavior would be obtained by using the following path:
 
 ```console
-srv**\\interim\store*http://internetsite
+srv**\\interim\store*https://internetsite
 ```
 
 In this case, the local cache is the default downstream store and the master store is an internet site. A mid-level store of \\\\interim\\store has been specified for use in between the other two.
@@ -174,7 +174,7 @@ srv*C:\Symbols*\\MachineName\Symbols*https://SymProxyName/Symbols
 It is possible to specify multiple chains of symbol servers and cache locations, separated by a semi colon “;”. If the symbols are located in the first chain, the second chain is not traversed. If the symbols are not located in the first chain, the second chain will be traversed and if the symbols are located in the second chain, they will be cached in the specified location. This approach will allow a primary symbol server to normally be used, with a secondary server only being used, if the symbols are not available on the primary symbol server specified in the first chain.
 
 ```console
-srv*C:\Symbols*\\Machine1\Symbols*http://SymProxyName/Symbols;srv*C:\WebSymbols* https://msdl.microsoft.com/download/symbols
+srv*C:\Symbols*\\Machine1\Symbols*https://SymProxyName/Symbols;srv*C:\WebSymbols* https://msdl.microsoft.com/download/symbols
 ```
 
 ### <span id="cache_localsymbolcache"></span><span id="CACHE_LOCALSYMBOLCACHE"></span>cache\**localsymbolcache*

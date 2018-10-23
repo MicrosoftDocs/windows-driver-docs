@@ -5,7 +5,7 @@ description: The HS_PLUGIN_PRE_CONNECT_INIT function is called to notify the plu
 ms.assetid: 799242a0-144f-4d3f-b48c-9e96a851d8c4
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_PRE_CONNECT_INIT) function Network Drivers Starting with Windows Vista
-ms.date: 07/31/2017 
+ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
 

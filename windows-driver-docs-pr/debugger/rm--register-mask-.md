@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **rm** command modifies or displays the register display mask. This mask controls how registers are displayed by the [**r (Registers)**](r--registers-.md) command.
 
-```
+```dbgcmd
 rm 
 rm ? 
 rm Mask 

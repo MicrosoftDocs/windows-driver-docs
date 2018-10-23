@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 
 To display a list of available sessions on a local or Remote Server, use the following syntax.
 
-```
+```console
 remote /q Computer
-```
+```dbgcmd
 
 ## <span id="ddk_remote_server_query_command_dtools"></span><span id="DDK_REMOTE_SERVER_QUERY_COMMAND_DTOOLS"></span>Parameters
 
@@ -42,13 +42,13 @@ The query display includes all visible sessions, including those that restrict u
 
 When there are no remote sessions running on the server, the Remote tool displays the following message:
 
-```
+```console
 No Remote servers running on \\Computer
 ```
 
 However, when the only remote sessions running on the computer are invisible remote sessions, the Remote tool displays the following message:
 
-```
+```console
 No visible sessions on server \\Computer
 ```
 

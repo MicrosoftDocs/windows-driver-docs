@@ -19,8 +19,9 @@ ms.localizationpriority: medium
 
 The **!acpiirqarb** extension displays the contents of the Advanced Configuration and Power Interface (ACPI) IRQ arbiter structure, which contains the configuration of I/O devices to system interrupt controller inputs and processor interrupt dispatch table (IDT) entries.
 
-    !acpiirqarb
-
+```dbgcmd
+!acpiirqarb
+```
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
